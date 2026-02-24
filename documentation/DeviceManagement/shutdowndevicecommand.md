@@ -26,6 +26,11 @@ object ShutDownDeviceCommand
 - [object ShutDownDeviceCommand.Command](shutdowndevicecommand/command-data.dictionary.md)
   The command to remotely and immediately shut down a device.
 
+## Properties
+
+- `Command` (ShutDownDeviceCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ShutDownDeviceResponse](shutdowndeviceresponse.md)

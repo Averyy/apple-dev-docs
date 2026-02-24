@@ -26,7 +26,7 @@ A [`MTL4Compiler`](mtl4compiler.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A   instance that configures the    instance.
+- `descriptor`: A [`MTL4CompilerDescriptor`](mtl4compilerdescriptor.md) instance that configures the [`MTL4Compiler`](mtl4compiler.md) instance.
 
 
 ---

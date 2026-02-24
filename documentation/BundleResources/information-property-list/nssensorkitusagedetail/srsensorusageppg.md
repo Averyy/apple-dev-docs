@@ -10,6 +10,10 @@ A collection of properties that explains your app’s need to observe the person
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Sensor usage keys

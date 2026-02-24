@@ -32,8 +32,8 @@ A Boolean indicating whether the key can be used for the given operation and alg
 ## Parameters
 
 - `key`: The key whose suitability you want to test.
-- `operation`: The operation that you want to perform with the key. Use one of the values from  .
-- `algorithm`: The algorithm that you want to perform with the key. Use one of the values from  .
+- `operation`: The operation that you want to perform with the key. Use one of the values from [`SecKeyOperationType`](seckeyoperationtype.md).
+- `algorithm`: The algorithm that you want to perform with the key. Use one of the values from [`SecKeyAlgorithm`](seckeyalgorithm.md).
 
 
 ---

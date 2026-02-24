@@ -70,6 +70,48 @@ Specify `com.apple.DirectoryService.managed` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `ADAllowMultiDomainAuth` (boolean): If `true`, the system allows authentication from any domain in the namespace.
+- `ADAllowMultiDomainAuthFlag` (boolean): If `true`, the system enables the `ADAllowMultiDomainAuth` key.
+- `ADCreateMobileAccountAtLogin` (boolean): If `true`, the system creates a mobile account at login.
+- `ADCreateMobileAccountAtLoginFlag` (boolean): If `true`, the system enables the `ADCreateMobileAccountAtLogin` key.
+- `ADDefaultUserShell` (string): The default user shell.
+- `ADDefaultUserShellFlag` (boolean): If `true`, the system enables the `ADDefaultUserShell` key.
+- `ADDomainAdminGroupList` ([string]): The list of Active Directory groups with admin access.
+- `ADDomainAdminGroupListFlag` (boolean): If `true`, the system enables the `ADDomainAdminGroupList` key.
+- `ADForceHomeLocal` (boolean): If `true`, the system forces a local home directory.
+- `ADForceHomeLocalFlag` (boolean): If `true`, the system enables the `ADForceHomeLocal` key.
+- `ADMapGGIDAttribute` (string): The map group GID to attribute.
+- `ADMapGGIDAttributeFlag` (boolean): If `true`, the system enables the `ADMapGGIDAttributeFlag` key.
+- `ADMapGIDAttribute` (string): The map GID to attribute.
+- `ADMapGIDAttributeFlag` (boolean): If `true`, the system enables the `ADMapGIDAttribute` key.
+- `ADMapUIDAttribute` (string): The map UID to attribute.
+- `ADMapUIDAttributeFlag` (boolean): If `true`, the system enables the `ADMapUIDAttribute` key.
+- `ADMountStyle` (string): The network home protocol to use: `afp` or `smb`.
+- `ADNamespace` (string): The primary user account naming convention; either `forest` or `domain`.
+- `ADNamespaceFlag` (boolean): If `true`, the system enables the `ADNamespace` key.
+- `ADOrganizationalUnit` (string): The organizational unit to add the joining computer object to.
+- `ADPacketEncrypt` (string): The packet encryption policy.
+- `ADPacketEncryptFlag` (boolean): If `true`, the system enables the `ADPacketEncrypt` key.
+- `ADPacketSign` (string): The packet signing policy.
+- `ADPacketSignFlag` (boolean): If `true`, the system enables the `ADPacketSign` key.
+- `ADPreferredDCServer` (string): The preferred domain server.
+- `ADPreferredDCServerFlag` (boolean): If `true`, the system enables the `ADPreferredDCServer` key.
+- `ADRestrictDDNS` ([string]): An array of strings that represent the interfaces allowed for dynamic DNS updates, such as en0 and en1.
+- `ADRestrictDDNSFlag` (boolean): If `true`, the system enables the `ADRestrictDDNS` key.
+- `ADTrustChangePassIntervalDays` (integer): The number of days before requiring a change of the computer trust account password. Set to `0` to disable the feature.
+- `ADTrustChangePassIntervalDaysFlag` (boolean): If `true`, the system enables the `ADTrustChangePassIntervalDays` key.
+- `ADUseWindowsUNCPath` (boolean): If `true`, the system uses the UNC path from Active Directory to derive the network home location.
+- `ADUseWindowsUNCPathFlag` (boolean): If `true`, the system enables the `ADUseWindowsUNCPath` key.
+- `ADWarnUserBeforeCreatingMA` (boolean): If `true`, the system enables the warning before creating the mobile account.
+- `ADWarnUserBeforeCreatingMAFlag` (boolean): If `true`, the system enables the `ADWarnUserBeforeCreatingMA` key.
+- `ClientID` (string): The client’s identifier.
+- `Description` (string): The directory service description.
+- `HostName` (string) *(required)*: The Active Directory domain to join.
+- `Password` (string): The password of the account for the domain.
+- `UserName` (string): The user name of the account for the domain.
+
 ## See Also
 
 - [object ExtensibleSingleSignOn](extensiblesinglesignon.md)

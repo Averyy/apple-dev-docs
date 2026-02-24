@@ -8,6 +8,10 @@ A Boolean value indicating whether your app may print a document.
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode, and under Hardware, select Printing.

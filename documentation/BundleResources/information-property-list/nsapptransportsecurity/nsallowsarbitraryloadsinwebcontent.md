@@ -11,6 +11,12 @@ A Boolean value indicating whether all App Transport Security restrictions are d
 - macOS 10.12+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Set this key’s value to `YES` to exempt your app’s [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) instances from App Transport Security restrictions without affecting your [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) connections. Domains you specify in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary aren’t affected by this key’s value.

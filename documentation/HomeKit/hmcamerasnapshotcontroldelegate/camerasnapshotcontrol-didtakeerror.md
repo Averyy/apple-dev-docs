@@ -22,8 +22,8 @@ optional func cameraSnapshotControl(_ cameraSnapshotControl: HMCameraSnapshotCon
 ## Parameters
 
 - `cameraSnapshotControl`: The camera snapshot control responsible for the new snapshot.
-- `snapshot`: The snapshot taken by the camera.   if there was a problem.
-- `error`: An error that is populated if there was a problem taking the snapshot;   otherwise.
+- `snapshot`: The snapshot taken by the camera. `nil` if there was a problem.
+- `error`: An error that is populated if there was a problem taking the snapshot; `nil` otherwise.
 
 ## See Also
 

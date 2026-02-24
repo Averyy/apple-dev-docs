@@ -29,6 +29,13 @@ This method applies the color cubes mixed with mask filter to an image. The effe
 
 The color cubes mixed with mask filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`maskImage`**: A mask image with the type [`CIImage`](ciimage.md).
+- **`cube0Data`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
+- **`cube1Data`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the color cubes.
+- **`cubeDimension`**: The dimension of the color cubes
+
 The following code creates a filter that adds colors from the mask image and brightness to the input image:
 
 ```swift

@@ -31,7 +31,7 @@ This method raises an exception if `reminder` belongs to another event store.
 ## Parameters
 
 - `reminder`: The reminder to remove.
-- `commit`: A Boolean value that indicates whether to remove the reminder immediately or to batch the removals; passing   won’t commit the removal from the event store until the   method is invoked.
+- `commit`: A Boolean value that indicates whether to remove the reminder immediately or to batch the removals; passing [`false`](https://developer.apple.com/documentation/Swift/false) won’t commit the removal from the event store until the [`commit()`](ekeventstore/commit().md) method is invoked.
 
 ## See Also
 

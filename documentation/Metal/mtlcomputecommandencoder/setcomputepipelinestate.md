@@ -30,7 +30,7 @@ A compute pipeline state provides information Metal uses to compile and run enco
 
 ## Parameters
 
-- `state`: An   instance.
+- `state`: An [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance.
 
 ## See Also
 

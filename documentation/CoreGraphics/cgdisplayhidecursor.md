@@ -25,7 +25,7 @@ This function hides the cursor regardless of its current location. The `display`
 
 ## Parameters
 
-- `display`: This parameter has no effect. By default, you can pass  .
+- `display`: This parameter has no effect. By default, you can pass `kCGDirectMainDisplay`.
 
 ## See Also
 

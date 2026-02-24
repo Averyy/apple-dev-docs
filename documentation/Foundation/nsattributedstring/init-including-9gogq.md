@@ -23,7 +23,7 @@ convenience init<S>(_ attrStr: AttributedString, including scope: S.Type) throws
 ## Parameters
 
 - `attrStr`: The value-type attributed string that provides the text and attributes of the new object.
-- `scope`: The attribute scope of the attributes in  . This can be a nested scope that contains several scopes.
+- `scope`: The attribute scope of the attributes in `attrStr`. This can be a nested scope that contains several scopes.
 
 ## See Also
 

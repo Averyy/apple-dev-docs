@@ -26,7 +26,7 @@ This may be called before the connection is ready, in which case the receive req
 
 ## Parameters
 
-- `atLeast`: The minimum length to receive from the connection,   until the content is complete.
+- `atLeast`: The minimum length to receive from the connection, until the content is complete.
 - `atMost`: The maximum length to receive from the connection in a single completion.
 
 

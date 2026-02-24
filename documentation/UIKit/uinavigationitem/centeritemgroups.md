@@ -23,7 +23,7 @@ var centerItemGroups: [UIBarButtonItemGroup] { get set }
 
 #### Discussion
 
-Use this property to specify , groups of controls that appear in the navigation bar to provide quick access to your app’s capabilities. Center items appear in the center of the navigation bar for the [`UINavigationItem.ItemStyle.browser`](uinavigationitem/itemstyle/browser.md) and [`UINavigationItem.ItemStyle.editor`](uinavigationitem/itemstyle/editor.md) styles, and in the overflow menu for the [`UINavigationItem.ItemStyle.navigator`](uinavigationitem/itemstyle/navigator.md) style.
+Use this property to specify *center item groups*, groups of controls that appear in the navigation bar to provide quick access to your app’s capabilities. Center items appear in the center of the navigation bar for the [`UINavigationItem.ItemStyle.browser`](uinavigationitem/itemstyle/browser.md) and [`UINavigationItem.ItemStyle.editor`](uinavigationitem/itemstyle/editor.md) styles, and in the overflow menu for the [`UINavigationItem.ItemStyle.navigator`](uinavigationitem/itemstyle/navigator.md) style.
 
 Optionally, you can allow people to customize the layout of center item groups and preserve that customization across app launches. When you create center item groups, you can choose from three types of behaviors:
 

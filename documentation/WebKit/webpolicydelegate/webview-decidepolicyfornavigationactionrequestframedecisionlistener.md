@@ -22,11 +22,11 @@ If you do not implement this method, the default behavior is used. The listener 
 
 ## Parameters
 
-- `webView`: The   object for which this object is the policy delegate.
-- `actionInformation`: A description of the action that triggered the navigation request. The possible key-value pairs in this dictionary are defined in  .
+- `webView`: The `WebView` object for which this object is the policy delegate.
+- `actionInformation`: A description of the action that triggered the navigation request. The possible key-value pairs in this dictionary are defined in `Action Dictionary Keys`.
 - `request`: The request for which the navigation is made.
-- `frame`: The   object in which the action occurred.
-- `listener`: The   object that receives the policy decision.
+- `frame`: The `WebFrame` object in which the action occurred.
+- `listener`: The `WebPolicyDecisionListener` object that receives the policy decision.
 
 
 ---

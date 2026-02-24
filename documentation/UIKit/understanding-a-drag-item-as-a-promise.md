@@ -11,13 +11,13 @@ Use drag items to convey data representation promises between a source app and a
 
 #### Overview
 
-When a user drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, your app associates the underlying data with a . The drag item, in turn, uses an . Your app populates the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registeredTypeIdentifiers) array with [`uniform type identifiers (UTIs)`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html).
+When a user drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, your app associates the underlying data with a *drag item*. The drag item, in turn, uses an *item provider*. Your app populates the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registeredTypeIdentifiers) array with [`uniform type identifiers (UTIs)`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html).
 
 ![A drag item with its contained item provider and array of uniform type identifiers](https://docs-assets.developer.apple.com/published/f3295ba2321f55ef49342ac6d5c16a6e/media-2903721%402x.png)
 
-The array of UTIs constitutes the source app’s promise about the specific data representations it can deliver, on request, to a destination app. The term  means that, at the time your app constructs a drag item, it commits to providing certain data representations but doesn’t yet perform the work to create them. Although it appears to the user that the item itself is being dragged, the drag item instead consists of promises along with a preview image that remains under the user’s touch point onscreen.
+The array of UTIs constitutes the source app’s promise about the specific data representations it can deliver, on request, to a destination app. The term *promise* means that, at the time your app constructs a drag item, it commits to providing certain data representations but doesn’t yet perform the work to create them. Although it appears to the user that the item itself is being dragged, the drag item instead consists of promises along with a preview image that remains under the user’s touch point onscreen.
 
-The portion of your app that constructs the drag item is the  ([`UIDragInteractionDelegate`](uidraginteractiondelegate.md)). On the destination side, an app’s  ([`UIDropInteractionDelegate`](uidropinteractiondelegate.md)) interacts with the drag item to consume promised data.
+The portion of your app that constructs the drag item is the *drag interaction delegate* ([`UIDragInteractionDelegate`](uidraginteractiondelegate.md)). On the destination side, an app’s *drop interaction delegate* ([`UIDropInteractionDelegate`](uidropinteractiondelegate.md)) interacts with the drag item to consume promised data.
 
 This table shows the protocols you implement to support constructing or consuming a drag item, depending on whether a view in your app is acting as a source or destination:
 

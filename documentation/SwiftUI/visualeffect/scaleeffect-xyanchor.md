@@ -26,9 +26,9 @@ An effect that scales the view’s rendered output.
 
 ## Parameters
 
-- `x`: An amount that represents the horizontal amount to scale the   view. The default value is  .
-- `y`: An amount that represents the vertical amount to scale the view.   The default value is  .
-- `anchor`: The point with a default of   that   defines the location within the view from which to apply the   transformation.
+- `x`: An amount that represents the horizontal amount to scale the view. The default value is `1.0`.
+- `y`: An amount that represents the vertical amount to scale the view. The default value is `1.0`.
+- `anchor`: The point with a default of [`center`](unitpoint/center.md) that defines the location within the view from which to apply the transformation.
 
 ## See Also
 

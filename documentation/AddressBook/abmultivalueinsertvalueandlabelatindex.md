@@ -28,10 +28,10 @@ This function takes an index. If you have an identifier, use the [`ABMultiValueG
 
 ## Parameters
 
-- `multiValue`: The multivalue property into which to insert  .
+- `multiValue`: The multivalue property into which to insert `value`.
 - `value`: The value to insert.
 - `label`: The label to insert.
-- `index`: Raises an exception when out of bounds.
+- `index`: The location, in `multiValue`, at which to insert `value` and `label`. Raises an exception when out of bounds.
 - `outIdentifier`: On output, the identifier of the added value.
 
 ## See Also

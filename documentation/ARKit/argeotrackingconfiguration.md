@@ -30,7 +30,7 @@ To keep your users’ focus on the road while traveling, discourage them from lo
 
 ##### Refine the Users Position with Imagery
 
-To place location anchors with precision, geotracking requires a better understanding of the user’s geographic location than is possible with GPS alone. Based on the user’s GPS coordinates, ARKit downloads imagery that depicts the physical environment in that area. Apple collects this  in advance by capturing photos of the view from the street and recording the geographic position at each photo. By comparing the device’s current camera image with this imagery, the session matches the user’s precise geographic location with the scene’s local coordinates. For information about the user’s position in local space, see [`transform`](arcamera/transform.md).
+To place location anchors with precision, geotracking requires a better understanding of the user’s geographic location than is possible with GPS alone. Based on the user’s GPS coordinates, ARKit downloads imagery that depicts the physical environment in that area. Apple collects this *localization imagery* in advance by capturing photos of the view from the street and recording the geographic position at each photo. By comparing the device’s current camera image with this imagery, the session matches the user’s precise geographic location with the scene’s local coordinates. For information about the user’s position in local space, see [`transform`](arcamera/transform.md).
 
 Localization imagery captures views from public streets and routes accessible by car, but doesn’t include images of gated or pedestrian-only areas.
 

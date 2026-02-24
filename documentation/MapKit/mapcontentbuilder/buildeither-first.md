@@ -26,7 +26,7 @@ Returns the conditional map content that meets the conditions the content builde
 
 ## Parameters
 
-- `first`: The content that represents the   content element to compare against.
+- `first`: The content that represents the `true` content element to compare against.
 
 ## See Also
 

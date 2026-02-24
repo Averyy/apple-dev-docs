@@ -22,7 +22,7 @@ init(logger: Logger)
 
 ## Parameters
 
-- `logger`: The logger that provides a subsystem and category for the signposter to use. For more information, see  .
+- `logger`: The logger that provides a subsystem and category for the signposter to use. For more information, see [`Logger`](logger.md).
 
 ## See Also
 

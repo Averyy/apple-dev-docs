@@ -29,6 +29,9 @@ The person-segmentation filter creates a mask that contains red pixels in the ar
 
 The person-segmentation filter takes the following properties:
 
+- **`inputIImage`**: A [`CIImage`](ciimage.md) containing the image to segment.
+- **`qualityLevel`**: The size and quality of the resulting segmentation mask. 0 is accurate, `1` is balanced, and `2` is fast.
+
 The following code applies the person-segmentation filter to an image:
 
 ```swift

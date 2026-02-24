@@ -26,8 +26,8 @@ You cannot call this function until after you have called the `CMSDecoderFinaliz
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
-- `contentOut`: On return, points to the message’s content. Returns   if the content is detached. You must use the   function to free this reference when you are finished using it.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `contentOut`: On return, points to the message’s content. Returns `NULL` if the content is detached. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 ## See Also
 

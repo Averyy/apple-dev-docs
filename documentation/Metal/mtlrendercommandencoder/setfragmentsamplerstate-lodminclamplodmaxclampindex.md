@@ -28,10 +28,10 @@ By default, the sampler state at each index is `nil`.
 
 ## Parameters
 
-- `sampler`: An   instance the command assigns to an entry in the fragment shader argument table for sampler states.
+- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance the command assigns to an entry in the fragment shader argument table for sampler states.
 - `lodMinClamp`: The smallest level of detail value a fragment shader can use when it samples a texture.
 - `lodMaxClamp`: The largest level of detail value a fragment shader can use when it samples a texture.
-- `index`: An integer that represents the entry in the fragment shader argument table for sampler states that stores a record of  .
+- `index`: An integer that represents the entry in the fragment shader argument table for sampler states that stores a record of `sampler`.
 
 ## See Also
 

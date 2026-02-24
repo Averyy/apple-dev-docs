@@ -23,7 +23,7 @@ func chartForegroundStyleScale<Domain, S>(domain: Domain, mapping: @escaping (Do
 
 ## Parameters
 
-- `domain`: The possible data values plotted as foreground style   in the chart.
+- `domain`: The possible data values plotted as foreground style in the chart.
 - `mapping`: Maps data categories to foreground styles.
 
 ## See Also

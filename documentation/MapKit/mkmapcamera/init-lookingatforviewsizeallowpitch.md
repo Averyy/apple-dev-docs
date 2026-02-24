@@ -22,7 +22,7 @@ convenience init(lookingAt mapItem: MKMapItem, forViewSize viewSize: CGSize, all
 
 ## Parameters
 
-- `mapItem`: An   that indicates the location of the camera.
+- `mapItem`: An [`MKMapItem`](mkmapitem.md) that indicates the location of the camera.
 - `viewSize`: The view’s size.
 - `allowPitch`: A Boolean value that indicates if the camera should the use map’s pitch angle.
 

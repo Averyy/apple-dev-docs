@@ -29,7 +29,7 @@ This method is not called for conditional objects until they are actually encode
 ## Parameters
 
 - `archiver`: The archiver that sent the message.
-- `object`: The object that has been encoded.   may be  .
+- `object`: The object that has been encoded. `object` may be `nil`.
 
 ## See Also
 

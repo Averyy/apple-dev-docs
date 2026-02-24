@@ -29,6 +29,9 @@ This method applies the color-dodge blend mode filter to an image. The effect di
 
 The color-dodge mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that darkens the background image:
 
 ```swift

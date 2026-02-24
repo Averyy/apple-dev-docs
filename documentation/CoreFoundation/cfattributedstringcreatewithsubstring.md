@@ -26,9 +26,9 @@ A new attributed string whose string and attributes are copied from the specifie
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new attributed string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new attributed string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `aStr`: The attributed string to copy.
-- `range`: The range of the attributed string to copy.   must not exceed the bounds of  .
+- `range`: The range of the attributed string to copy. `range` must not exceed the bounds of `aStr`.
 
 ## See Also
 

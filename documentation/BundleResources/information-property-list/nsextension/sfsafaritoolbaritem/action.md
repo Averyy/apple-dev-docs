@@ -8,6 +8,10 @@ The properties of an app extension’s toolbar item that’s been added to the S
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [Identifier](information-property-list/nsextension/sfsafaritoolbaritem/identifier.md)

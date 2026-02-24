@@ -23,7 +23,7 @@ func withUnsafeBufferPointer<R>(_ body: (UnsafeBufferPointer<Self.Element>) thro
 
 ## Parameters
 
-- `body`: A closure that receives an   to the sequence’s contiguous storage.
+- `body`: A closure that receives an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeBufferPointer) to the sequence’s contiguous storage.
 
 
 ---

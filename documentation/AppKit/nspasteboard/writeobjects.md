@@ -20,7 +20,7 @@ func writeObjects(_ objects: [any NSPasteboardWriting]) -> Bool
 
 ## Parameters
 
-- `objects`: An array of objects that implement the   protocol (including instances of  ).
+- `objects`: An array of objects that implement the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol (including instances of [`NSPasteboardItem`](nspasteboarditem.md)).
 
 ## See Also
 

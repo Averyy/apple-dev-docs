@@ -26,7 +26,7 @@ mutating func replaceAll<S>(_ entities: S) where S : Sequence, S.Element : Entit
 
 ## Parameters
 
-- `entities`: The sequence of entities that will replace   the collection’s current contents.
+- `entities`: The sequence of entities that will replace the collection’s current contents.
 
 
 ---

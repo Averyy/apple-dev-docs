@@ -20,7 +20,7 @@ A color well configured with the specified style.
 
 ## Parameters
 
-- `style`: The style to use to configure the color well control. For a list of possible values, see  .
+- `style`: The style to use to configure the color well control. For a list of possible values, see [`NSColorWell.Style`](nscolorwell/style.md).
 
 
 ---

@@ -25,7 +25,7 @@ Once the interface or pipe is idle, it defers electrical suspension of the devic
 
 ## Parameters
 
-- `type`: The target of the idle policy. For a list of possible values, see  .
+- `type`: The target of the idle policy. For a list of possible values, see [`USBIdlePolicyType`](usbidlepolicytype.md).
 - `idleTimeMs`: The idle time in milliseconds.
 
 ## See Also

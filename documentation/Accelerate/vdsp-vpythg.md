@@ -22,7 +22,7 @@ extern void vDSP_vpythg(const float *__A, vDSP_Stride __IA, const float *__B, vD
 
 #### Discussion
 
-This function calculates the length of the hypotenuse of  number of triangles, where  is the number of elements in the supplied vectors. The differences between corresponding elements of vectors `x0` and `x1` and vectors `y0` and `y1` define the lengths of the two legs of each triangle.
+This function calculates the length of the hypotenuse of *n* number of triangles, where *n* is the number of elements in the supplied vectors. The differences between corresponding elements of vectors `x0` and `x1` and vectors `y0` and `y1` define the lengths of the two legs of each triangle.
 
 The functions use the following operation:
 
@@ -65,15 +65,15 @@ For example, the following code calculates the hypotenuse of four Pythagorean tr
 ## Parameters
 
 - `__A`: A vector that contains the first values of the first set of legs of the triangles.
-- `__IA`: The distance between the elements in the input vector  .
+- `__IA`: The distance between the elements in the input vector `A`.
 - `__B`: A vector that contains the second values of the first set of legs of the triangles.
-- `__IB`: The distance between the elements in the input vector  .
+- `__IB`: The distance between the elements in the input vector `B`.
 - `__C`: A vector that contains the first values of the second set of legs of the triangles.
-- `__IC`: The distance between the elements in the input vector  .
+- `__IC`: The distance between the elements in the input vector `C`.
 - `__D`: A vector that contains the second values of the second set of legs of the triangles.
-- `__ID`: The distance between the elements in the input vector  .
+- `__ID`: The distance between the elements in the input vector `D`.
 - `__E`: A vector that receives the result of the calculation.
-- `__IE`: The distance between the elements in the output vector  .
+- `__IE`: The distance between the elements in the output vector `E`.
 - `__N`: The number of elements to process.
 
 ## See Also

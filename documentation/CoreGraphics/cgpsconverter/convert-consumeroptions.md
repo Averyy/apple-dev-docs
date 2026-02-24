@@ -29,7 +29,7 @@ The conversion is thread safe, however it is not possible to have more than one 
 
 - `provider`: A Quartz data provider that supplies PostScript data.
 - `consumer`: A Quartz data provider that will receive the resulting PDF data.
-- `options`: This parameter should be  ; it is reserved for future expansion of the API.
+- `options`: This parameter should be `NULL`; it is reserved for future expansion of the API.
 
 ## See Also
 

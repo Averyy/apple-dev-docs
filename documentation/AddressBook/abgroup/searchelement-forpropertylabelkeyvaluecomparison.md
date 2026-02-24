@@ -16,11 +16,11 @@ class func searchElement(forProperty property: String!, label: String!, key: Str
 
 ## Parameters
 
-- `property`: The name of the property to search on. It cannot be  . For a full list of the properties, see    and  .
-- `label`: The label name for a multivalue list. If   does not have multiple values, pass  . If   does have multiple values, pass   to search all the values. By default,   records don’t contain any multivalue list properties.
-- `key`: The key name for a dictionary. Pass   if   is not a dictionary. If   is a dictionary, pass   to search all keys. By default,   records don’t contain any properties that are dictionaries.
-- `value`: What you’re searching for. If  , the only supported value for   is   or  .
-- `comparison`: The type of comparison to perform and is an  , such as   or  .
+- `property`: The name of the property to search on. It cannot be `nil`. For a full list of the properties, see  [`Default Record Properties`](default-record-properties.md) and [`Default Group Properties`](default-group-properties.md).
+- `label`: The label name for a multivalue list. If `property` does not have multiple values, pass `nil`. If `property` does have multiple values, pass `nil` to search all the values. By default, `ABGroup` records don’t contain any multivalue list properties.
+- `key`: The key name for a dictionary. Pass `nil` if `property` is not a dictionary. If `property` is a dictionary, pass `nil` to search all keys. By default, `ABGroup` records don’t contain any properties that are dictionaries.
+- `value`: What you’re searching for. If `nil`, the only supported value for `comparison` is `kABEqual` or `kABNotEqual`.
+- `comparison`: The type of comparison to perform and is an [`ABSearchComparison`](absearchcomparison.md), such as `kABEqual` or `kABPrefixMatchCaseInsensitive`.
 
 
 ---

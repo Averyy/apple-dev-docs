@@ -23,7 +23,7 @@ If `record` is `nil`, this method raises an exception. Your changes are not comm
 ## Parameters
 
 - `record`: The record to be removed.
-- `error`: A pointer to an error object that is set to an   instance if an error occurs.
+- `error`: A pointer to an error object that is set to an `NSError` instance if an error occurs.
 
 ## See Also
 

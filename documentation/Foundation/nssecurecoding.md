@@ -24,12 +24,42 @@ protocol NSSecureCoding : NSCoding
 
 Historically, many classes decoded instances of themselves like this:
 
+**Swift**:
+
+```swift
+if let object = decoder.decodeObjectForKey("myKey") as MyClass {
+    // ...succeeds...
+} else {
+    // ...fail...
+}
+```
+
+**Objective-C**:
+
+```objc
+id obj = [decoder decodeObjectForKey:@"myKey"];
+if (![obj isKindOfClass:[MyClass class]]) { /* ...fail... */ }
+```
+
 This technique is potentially unsafe because by the time you can verify the class type, the object has already been constructed, and if this is part of a collection class, potentially inserted into an object graph.
 
 In order to conform to [`NSSecureCoding`](nssecurecoding.md):
 
 - An object that does not override [`init(coder:)`](nscoding/init(coder:).md) can conform to `NSSecureCoding` without any changes (assuming that it is a subclass of another class that conforms).
 - An object that does override [`init(coder:)`](nscoding/init(coder:).md) must decode any enclosed objects using the [`decodeObjectOfClass:forKey:`](nscoder/decodeobjectofclass:forkey:.md) method. For example:
+
+**Swift**:
+
+```swift
+  let obj = decoder.decodeObject(of:MyClass.self, forKey: "myKey")
+```
+
+**Objective-C**:
+
+```objc
+  id obj = [decoder decodeObjectOfClass:[MyClass class]
+              forKey:@"myKey"];
+```
 
 In addition, the class must override the getter for its [`supportsSecureCoding`](nssecurecoding/supportssecurecoding.md) property to return [`true`](https://developer.apple.com/documentation/Swift/true).
 

@@ -22,7 +22,7 @@ static func result<Intent>(actionButtonIntent: Intent, dialog: IntentDialog) -> 
 
 ## Parameters
 
-- `actionButtonIntent`: The   used perform next
+- `actionButtonIntent`: The `AppIntent` used perform next
 - `dialog`: A custom success dialog
 
 

@@ -28,10 +28,10 @@ This method ends the current match and submits scores and achievements for all o
 
 ## Parameters
 
-- `matchData`: A serialized blob of data reflecting the current state for the match. Do not pass   as an argument.
-- `scores`: An array of   objects containing the final scores for every participant in the match.
-- `achievements`: An array of   objects containing the achievements acquired by each participant in the match.
-- `completionHandler`: The block receives the following parameters:
+- `matchData`: A serialized blob of data reflecting the current state for the match. Do not pass `nil` as an argument.
+- `scores`: An array of `GKScore` objects containing the final scores for every participant in the match.
+- `achievements`: An array of `GKAchievement` objects containing the achievements acquired by each participant in the match.
+- `completionHandler`: A block to be called after the scores are saved to the server. The block receives the following parameters: - ***error***: If an error occurred, this error object describes the error. If the operation was completed successfully, the value is `nil`.
 
 ## See Also
 

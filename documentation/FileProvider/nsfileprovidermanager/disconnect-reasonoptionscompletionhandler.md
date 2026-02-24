@@ -27,8 +27,8 @@ Call the [`reconnect(completionHandler:)`](nsfileprovidermanager/reconnect(compl
 ## Parameters
 
 - `localizedReason`: A localized string that describes the reason for disconnecting the domain.
-- `options`: Options for the disconnection. For a complete list of valid options, see  .
-- `completionHandler`: A block that the system calls after disconnecting the domain. The block takes the following parameter:
+- `options`: Options for the disconnection. For a complete list of valid options, see [`NSFileProviderManager.DisconnectionOptions`](nsfileprovidermanager/disconnectionoptions.md).
+- `completionHandler`: A block that the system calls after disconnecting the domain. The block takes the following parameter: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

@@ -24,8 +24,8 @@ Use this method only if the store supports incremental updates to remove previou
 
 ## Parameters
 
-- `credentialIdentities`: An array of   objects to remove from the store.
-- `completion`: An optional completion handler called after removing the credential identities. If the operation fails, an error with domain   is provided and none of the objects in   is removed from the store.
+- `credentialIdentities`: An array of [`ASPasswordCredentialIdentity`](aspasswordcredentialidentity.md) objects to remove from the store.
+- `completion`: An optional completion handler called after removing the credential identities. If the operation fails, an error with domain [`ASCredentialIdentityStoreErrorDomain`](ascredentialidentitystoreerrordomain.md) is provided and none of the objects in `credentialIdentities` is removed from the store.
 
 ## See Also
 

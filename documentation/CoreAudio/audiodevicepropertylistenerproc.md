@@ -29,7 +29,7 @@ Note that the same functionality is provided by AudioObjectPropertyListenerProc.
 - `inChannel`: The channel of the property that changed where 0 is the main channel.
 - `isInput`: Which section of the AudioDevice changed.
 - `inPropertyID`: The AudioDevicePropertyID of the property that changed.
-- `inClientData`: A pointer to client data established when the listener proc was registered   with the object.
+- `inClientData`: A pointer to client data established when the listener proc was registered with the object.
 
 ## See Also
 

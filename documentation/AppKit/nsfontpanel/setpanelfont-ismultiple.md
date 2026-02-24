@@ -21,7 +21,7 @@ You normally don’t use this method directly; instead, you send [`setSelectedFo
 ## Parameters
 
 - `fontObj`: The font to be selected.
-- `flag`: If  , selects the specified font; otherwise selects no font and displays a message in the preview area indicating that multiple fonts are selected.
+- `flag`: If [`false`](https://developer.apple.com/documentation/Swift/false), selects the specified font; otherwise selects no font and displays a message in the preview area indicating that multiple fonts are selected.
 
 
 ---

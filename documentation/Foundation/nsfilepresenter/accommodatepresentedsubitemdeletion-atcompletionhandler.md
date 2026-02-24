@@ -29,7 +29,7 @@ This method is relevant for applications that present directories. This might oc
 ## Parameters
 
 - `url`: The URL of the item being deleted from the presented directory. The item need not be at the top level of the presented directory but may itself be inside a nested subdirectory.
-- `completionHandler`: The   to call after updating your data structures. Pass   to the block’s   parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
+- `completionHandler`: The [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after updating your data structures. Pass `nil` to the block’s `errorOrNil` parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
 
 ## See Also
 

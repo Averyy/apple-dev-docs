@@ -8,9 +8,17 @@ A keyboard shortcut that invokes the service menu command.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The dictionary key is `default` with a string value.
+
+## Properties
+
+- `default` (string) *(required)*
 
 ## See Also
 

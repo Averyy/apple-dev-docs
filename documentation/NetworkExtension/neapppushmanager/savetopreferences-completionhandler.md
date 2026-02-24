@@ -19,7 +19,7 @@ func saveToPreferences() async throws
 
 ## Parameters
 
-- `completionHandler`: A completion block that the framework calls after it saves the configuration. If saving failed, the   parameter indicates the reason for the failure; otherwise, this parameter is  .
+- `completionHandler`: A completion block that the framework calls after it saves the configuration. If saving failed, the `error` parameter indicates the reason for the failure; otherwise, this parameter is `nil`.
 
 ## See Also
 

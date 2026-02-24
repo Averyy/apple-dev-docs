@@ -26,9 +26,9 @@ A shading instance filled with a radial gradient.
 
 ## Parameters
 
-- `gradient`: A   instance that defines the colors   of the gradient.
-- `center`: The point in the current user space on which SwiftUI   centers the gradient.
-- `startRadius`: The distance from the center where the gradient   starts.
+- `gradient`: A [`Gradient`](gradient.md) instance that defines the colors of the gradient.
+- `center`: The point in the current user space on which SwiftUI centers the gradient.
+- `startRadius`: The distance from the center where the gradient starts.
 - `endRadius`: The distance from the center where the gradient ends.
 - `options`: Options that you use to configure the gradient.
 

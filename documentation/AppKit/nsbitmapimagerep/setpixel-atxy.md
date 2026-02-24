@@ -16,7 +16,7 @@ func setPixel(_ p: UnsafeMutablePointer<Int>, atX x: Int, y: Int)
 
 ## Parameters
 
-- `p`: An array of integers representing the raw pixel values. The values must be in an order appropriate to the object’s bitmap format. Small pixel sample values should be passed as an integer value. Floating point values should be cast  .
+- `p`: An array of integers representing the raw pixel values. The values must be in an order appropriate to the object’s bitmap format. Small pixel sample values should be passed as an integer value. Floating point values should be cast `int[]`.
 - `x`: The x-axis coordinate of the pixel.
 - `y`: The y-axis coordinate of the pixel.
 

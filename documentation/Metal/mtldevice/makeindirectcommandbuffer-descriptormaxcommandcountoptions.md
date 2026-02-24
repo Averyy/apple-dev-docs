@@ -30,9 +30,9 @@ A new [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance if the 
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLIndirectCommandBufferDescriptor`](mtlindirectcommandbufferdescriptor.md) instance.
 - `maxCount`: The largest number of commands you can store in the buffer.
-- `options`: An   instance.
+- `options`: An [`MTLResourceOptions`](mtlresourceoptions.md) instance.
 
 
 ---

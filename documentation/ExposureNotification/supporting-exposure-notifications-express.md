@@ -14,8 +14,8 @@ iOS continues to support dedicated Exposure Notifications apps, and a PHA can of
 
 To support Exposure Notifications Express, a PHA must deploy two different types of servers:
 
-- : Validates positive diagnoses during key upload. For more information, see [`Setting Up an Exposure Notifications Express Test Verification Server`](setting-up-an-exposure-notifications-express-test-verification-server.md).
--  Handles key uploads and downloads. The same key server handles key upload and download for Exposure Notifications apps and Exposure Notifications Express. For more information, see [`Configuring a Key Server for Exposure Notifications Express`](configuring-a-key-server-for-exposure-notifications-express.md). For information on setting up a key server, see [`Setting Up a Key Server`](setting-up-a-key-server.md).
+- **Test verification server**: Validates positive diagnoses during key upload. For more information, see [`Setting Up an Exposure Notifications Express Test Verification Server`](setting-up-an-exposure-notifications-express-test-verification-server.md).
+- **Key server:** Handles key uploads and downloads. The same key server handles key upload and download for Exposure Notifications apps and Exposure Notifications Express. For more information, see [`Configuring a Key Server for Exposure Notifications Express`](configuring-a-key-server-for-exposure-notifications-express.md). For information on setting up a key server, see [`Setting Up a Key Server`](setting-up-a-key-server.md).
 
 > **Note**:  Prior to the introduction of Exposure Notifications Express in iOS 13.7, the Exposure Notifications Key Server was referred to as the “Exposure Notifications Server” or the “EN Server”.
 

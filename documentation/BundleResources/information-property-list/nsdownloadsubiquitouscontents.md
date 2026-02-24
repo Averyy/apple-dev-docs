@@ -8,6 +8,12 @@ A Boolean value that indicates whether the system should download documents befo
 **Availability**:
 - macOS 11.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 By default, the system displays the download progress. Set the value to `YES` if you want your app to display a custom download progress indicator instead.

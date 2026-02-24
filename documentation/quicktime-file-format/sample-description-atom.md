@@ -33,7 +33,13 @@ The sample description atom has an atom type of `'stsd'`. The sample description
 
 While the exact format of the sample description varies by media type, the first four fields of every sample description are the same.
 
+- **Sample description size**: A 32-bit integer indicating the number of bytes in the sample description.
+
 > ❗ **Important**: When parsing sample descriptions in the `‘stsd’` atom, be aware of the sample description size value in order to read each table entry correctly. Some sample descriptions terminate with four zero bytes that are not otherwise indicated.
+
+- **Data format**: A 32-bit integer indicating the format of the stored data. This depends on the media type, but is usually either the compression format or the media type.
+- **Reserved**: Six bytes that must be set to `0`.
+- **Data reference index**: A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description. Data references are stored in data reference atoms.
 
 These four fields may be followed by additional data specific to the media type and data format. See [`Media data atom types`](media_data_atom_types.md) for additional details regarding specific media types and media formats.
 

@@ -16,7 +16,7 @@ func rectForSearchText(whenCentered isCentered: Bool) -> NSRect
 
 ## Parameters
 
-- `isCentered`: A Boolean value that indicates whether the search field’s components are centered within the control. For more information, see  .
+- `isCentered`: A Boolean value that indicates whether the search field’s components are centered within the control. For more information, see [`centersPlaceholder`](nssearchfield/centersplaceholder.md).
 
 ## See Also
 

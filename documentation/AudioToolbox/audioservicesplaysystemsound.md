@@ -41,7 +41,7 @@ In addition, when you use the `AudioServicesPlaySystemSound` function:
 
 ## Parameters
 
-- `inSystemSoundID`: The system sound to play. Before using this function, call the   function to obtain a system sound.
+- `inSystemSoundID`: The system sound to play. Before using this function, call the [`AudioServicesCreateSystemSoundID(_:_:)`](audioservicescreatesystemsoundid(_:_:).md) function to obtain a system sound.
 
 ## See Also
 

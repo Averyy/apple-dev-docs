@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and macOS Monterey 12.3. The Xcode 13.3 release supports on-device debugging for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5 and later. Xcode 13.3 requires a Mac running macOS Monterey 12 or later.
@@ -33,8 +35,8 @@ Xcode 13.3 includes SDKs for iOS 15.4, iPadOS 15.4, tvOS 15.4, watchOS 8.5, and 
 
 ###### Known Issues
 
-- Exporting an app that uses Swift’s concurrency features from an archive with bitcode might fail when the app targets iOS 13.0 – iOS 14.7, watchOS 6.0 – watchOS 7.6, or tvOS 13.0 – 14.7. (89271047) : Either uncheck the box `Rebuild from bitcode` when exporting the app from an archive or disable bitcode (iOS only).
-- Code that uses 16-byte (128-bit) atomic compare/exchange operations (for example with C++ `std::atomic::compare_exchange_*`) on ARM64 processors may corrupt the atomic variable if you do not use the return value. (88127379) : Assign the result to a `volatile` local variable.
+- Exporting an app that uses Swift’s concurrency features from an archive with bitcode might fail when the app targets iOS 13.0 – iOS 14.7, watchOS 6.0 – watchOS 7.6, or tvOS 13.0 – 14.7. (89271047) **Workaround**: Either uncheck the box `Rebuild from bitcode` when exporting the app from an archive or disable bitcode (iOS only).
+- Code that uses 16-byte (128-bit) atomic compare/exchange operations (for example with C++ `std::atomic::compare_exchange_*`) on ARM64 processors may corrupt the atomic variable if you do not use the return value. (88127379) **Workaround**: Assign the result to a `volatile` local variable.
 
 ##### Build System
 
@@ -145,16 +147,16 @@ atos -arch arm64 -o Example.app/Contents/MacOS/Example 0x00fdae30
 
 ###### Known Issues
 
-- Swift Playgrounds projects in Xcode may not launch unless a bundle ID is set in the project. (88832659) : Set a bundle ID in the Signing & Capabilities tab of the project editor.
-- When you add a new Playground to an open workspace via the “File / New Playground …” menu, it may not open properly. (88929244) : Close and re-open the workspace. Or add a Playground using “File / New File …” instead.
-- Adding a macOS capability to a Swift Playgrounds app project may cause the project to fail to load in Swift Playgrounds. : Remove any macOS capabilities.
+- Swift Playgrounds projects in Xcode may not launch unless a bundle ID is set in the project. (88832659) **Workaround**: Set a bundle ID in the Signing & Capabilities tab of the project editor.
+- When you add a new Playground to an open workspace via the “File / New Playground …” menu, it may not open properly. (88929244) **Workaround**: Close and re-open the workspace. Or add a Playground using “File / New File …” instead.
+- Adding a macOS capability to a Swift Playgrounds app project may cause the project to fail to load in Swift Playgrounds. **Workaround**: Remove any macOS capabilities.
 
 ##### Previews
 
 ###### Known Issues
 
-- Previews may fail for a SwiftUI view that’s in a Mac Catalyst framework or package that isn’t also embedded within an app. (88895960) : To preview a SwiftUI view in Mac Catalyst, make sure the view’s framework or package is embedded in the app. Also make sure the active scheme contains both the app target and the view’s framework or package.
-- Text fields in live previews for Mac Catalyst might not initially activate when you click on them. (89029611) : Try clicking again or Control-click in order to activate the text field.
+- Previews may fail for a SwiftUI view that’s in a Mac Catalyst framework or package that isn’t also embedded within an app. (88895960) **Workaround**: To preview a SwiftUI view in Mac Catalyst, make sure the view’s framework or package is embedded in the app. Also make sure the active scheme contains both the app target and the view’s framework or package.
+- Text fields in live previews for Mac Catalyst might not initially activate when you click on them. (89029611) **Workaround**: Try clicking again or Control-click in order to activate the text field.
 
 ##### Project Navigator
 
@@ -168,7 +170,7 @@ atos -arch arm64 -o Example.app/Contents/MacOS/Example 0x00fdae30
 ###### Known Issues
 
 - Apps may terminate unexpectedly when running in a watchOS 5.3 simulator. (89453856)
-- Debugging an app might fail the first time Simulator launches. (78621968) : Try debugging the App Extension again after Simulator launches. You may need to delete your iOS app from Simulator.
+- Debugging an app might fail the first time Simulator launches. (78621968) **Workaround**: Try debugging the App Extension again after Simulator launches. You may need to delete your iOS app from Simulator.
 
 ##### Source Control
 
@@ -179,7 +181,7 @@ atos -arch arm64 -o Example.app/Contents/MacOS/Example 0x00fdae30
 ###### Known Issues
 
 - Multi-line comments containing parentheses may result in inaccurate diffs being displayed on the command-line and in the Code Review in Xcode’s source editor. (61163230)
-- The Changes navigator’s pull request file list may not auto-refresh when you add commits to a branch with an associated pull request. (75502462) : Manually select commit from Pull Request Commit menu or relaunch Xcode.
+- The Changes navigator’s pull request file list may not auto-refresh when you add commits to a branch with an associated pull request. (75502462) **Workaround**: Manually select commit from Pull Request Commit menu or relaunch Xcode.
 
 ##### Source Editor
 
@@ -340,7 +342,7 @@ class Party {
 
 ###### Known Issues
 
-- Applications linking to RealityKit with iOS 15 or macOS Monterey 12 SDKs fail to launch in previous operating systems. (79584511) : Add `OTHER_LDFLAGS = -weak_framework RealityFoundation` to your Xcode project settings to allow running RealityKit apps in older operating systems.
+- Applications linking to RealityKit with iOS 15 or macOS Monterey 12 SDKs fail to launch in previous operating systems. (79584511) **Workaround**: Add `OTHER_LDFLAGS = -weak_framework RealityFoundation` to your Xcode project settings to allow running RealityKit apps in older operating systems.
 
 ##### Swift Package Manager
 
@@ -365,7 +367,7 @@ class Party {
 
 ###### Known Issues
 
-- Making changes to one or more packages in a workspace and then starting a build may cause Xcode to crash. (90286753) :  To avoid this issue, set the following user default in Terminal: ```None
+- Making changes to one or more packages in a workspace and then starting a build may cause Xcode to crash. (90286753) **Workaround**:  To avoid this issue, set the following user default in Terminal: ```None
 defaults write com.apple.dt.Xcode XPMAvoidUpdatingUnchangedPackages No
 ```
 
@@ -389,7 +391,7 @@ xcodebuild test-without-building -testProductPath ./App.xctestproducts -destinat
 
 ###### Known Issues
 
-- When configuring a project or workspace to use Xcode Cloud, the Default workflow may select the wrong scheme for the archive action. (78776640) : Edit the workflow and select the correct scheme.
+- When configuring a project or workspace to use Xcode Cloud, the Default workflow may select the wrong scheme for the archive action. (78776640) **Workaround**: Edit the workflow and select the correct scheme.
 
 ## See Also
 

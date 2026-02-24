@@ -34,9 +34,10 @@ You should not assume that a previous successful evaluation of an access control
 ## Parameters
 
 - `accessControl`: The access control to be evaluated.
-- `operation`: The operation for the access control to be evaluated. For possible values, see  .
+- `operation`: The operation for the access control to be evaluated. For possible values, see [`LAAccessControlOperation`](laaccesscontroloperation.md).
 - `localizedReason`: The app-provided reason for requesting authentication, which displays in the authentication dialog presented to the user.
-- `reply`: A block that is executed when access control evaluation finishes. This block is evaluated on a private queue internal to the framework in an unspecified threading context.
+- `reply`: A block that is executed when access control evaluation finishes. This block is evaluated on a private queue internal to the framework in an unspecified threading context. - **success**: `true` if policy evaluation succeeded, otherwise `false`.
+- **error**: `nil` if policy evaluation succeeded, an error object that should be presented to the user otherwise. See [`LAError.Code`](laerror-swift.struct/code.md) for possible error codes
 
 ## See Also
 

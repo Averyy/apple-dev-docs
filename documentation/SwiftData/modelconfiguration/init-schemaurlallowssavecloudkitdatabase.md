@@ -24,10 +24,10 @@ init(_ name: String? = nil, schema: Schema? = nil, url: URL, allowsSave: Bool = 
 ## Parameters
 
 - `name`: An optional name for the model configuration.
-- `schema`: A schema that maps model classes to the associated data in the   persistent storage. For more information, see  .
+- `schema`: A schema that maps model classes to the associated data in the persistent storage. For more information, see [`Schema`](schema.md).
 - `url`: The on-disk location of the schema’s persistent storage.
-- `allowsSave`: A Boolean value that determines whether the associated   persistent storage is writable. The default value is  .
-- `cloudKitDatabase`: The option to use for detecting the configuration’s   CloudKit database. For possible values, see  .
+- `allowsSave`: A Boolean value that determines whether the associated persistent storage is writable. The default value is `true`.
+- `cloudKitDatabase`: The option to use for detecting the configuration’s CloudKit database. For possible values, see [`ModelConfiguration.CloudKitDatabase`](modelconfiguration/cloudkitdatabase-swift.struct.md).
 
 ## See Also
 

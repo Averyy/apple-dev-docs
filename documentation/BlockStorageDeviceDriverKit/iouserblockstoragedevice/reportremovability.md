@@ -20,7 +20,7 @@ A value that indicates the report-removability result. Return [`kIOReturnSuccess
 
 ## Parameters
 
-- `isRemovable`: An in/out Boolean parameter. On output, set this to   if the hardware supports removable media.
+- `isRemovable`: An in/out Boolean parameter. On output, set this to `true` if the hardware supports removable media.
 
 ## See Also
 

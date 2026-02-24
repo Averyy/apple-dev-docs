@@ -24,7 +24,7 @@ Creates a marker at the given location with the provided title key and monogram.
 ## Parameters
 
 - `titleKey`: The localized string key to use to lookup the title.
-- `monogram`: A   view that contains up to three characters to display on the marker’s balloon.
+- `monogram`: A [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view that contains up to three characters to display on the marker’s balloon.
 - `coordinate`: The coordinate used to display the marker.
 
 ## See Also

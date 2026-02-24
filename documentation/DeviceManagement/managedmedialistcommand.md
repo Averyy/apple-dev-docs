@@ -21,6 +21,11 @@ object ManagedMediaListCommand
 - [object ManagedMediaListCommand.Command](managedmedialistcommand/command-data.dictionary.md)
   The command to get a list of the managed books on a device.
 
+## Properties
+
+- `Command` (ManagedMediaListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ManagedMediaListResponse](managedmedialistresponse.md)

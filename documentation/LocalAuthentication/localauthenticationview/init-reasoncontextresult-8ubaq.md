@@ -19,8 +19,8 @@ Creates a local authentication view with a title.
 
 - `title`: A title that displays below the authentication view.
 - `reason`: A localized reason that describes why your app presents an authentication prompt to the user.
-- `context`: A context used to evaluate authentication policies. If  , the system creates one.
-- `result`: A closure to call when the authentication succeeds or fails.
+- `context`: A context used to evaluate authentication policies. If `nil`, the system creates one.
+- `result`: A closure to call when the authentication succeeds or fails. - **`result`**: A [`Result`](https://developer.apple.com/documentation/Swift/Result) instance that indicates success or failure with a reason.
 
 ## See Also
 

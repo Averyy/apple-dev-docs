@@ -13,9 +13,15 @@ The default language and region for the bundle, as a language ID.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `en-US`
+
 #### Discussion
 
-The system uses this key as the language if it can’t locate a resource for the user’s preferred language. The value should be a  that identifies a language, dialect, or script.
+The system uses this key as the language if it can’t locate a resource for the user’s preferred language. The value should be a *language ID* that identifies a language, dialect, or script.
 
 ##### Languages
 

@@ -24,7 +24,7 @@ Calling this method generates all of the glyphs (as needed) up to and including 
 
 ## Parameters
 
-- `glyphIndex`: The index of the glyph that you want. If the index is out of range, this method raises an exception with the error  .
+- `glyphIndex`: The index of the glyph that you want. If the index is out of range, this method raises an exception with the error [`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException).
 
 ## See Also
 

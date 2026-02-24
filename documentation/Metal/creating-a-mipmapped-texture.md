@@ -10,6 +10,49 @@ In Metal, the same [`MTLTexture`](mtltexture.md) object owns all of the mipmaps 
 
 The code below creates a texture with multiple mipmaps. It calculates the number of mipmaps needed for a full mipmap chain, from the original size down to a `1x1` texture, and sets that number as the mipmap count. Generating a full mipmap chain requires 33% more memory than if you just had the top image. You can choose to create a mipmap chain that has fewer mipmap levels.
 
+**Swift**:
+
+```swift
+/// Create a mipmap texture.
+func makeMipTexture(for device: MTLDevice, with size: MTLSize) -> MTLTexture? {
+    let descriptor = MTLTextureDescriptor()
+
+    descriptor.width = size.width
+    descriptor.height = size.height
+    descriptor.depth = size.depth
+
+    let heightLevels = ceil(log2(Double(size.height)))
+    let widthLevels = ceil(log2(Double(size.width)))
+    let mipCount = (heightLevels > widthLevels) ? heightLevels : widthLevels
+
+    descriptor.mipmapLevelCount = Int(mipCount)
+
+    return device.makeTexture(descriptor: descriptor)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+/// Create a mipmap texture.
+- (id<MTLTexture>) makeMipTextureWithSize: (MTLSize) size
+{
+    MTLTextureDescriptor *descriptor = [MTLTextureDescriptor new];
+    ...
+    descriptor.width = size.width;
+    descriptor.height = size.height;
+    descriptor.depth = size.depth;
+
+    int heightLevels = ceil(log2(size.height));
+    int widthLevels = ceil(log2(size.width));
+    int mipCount = (heightLevels > widthLevels) ? heightLevels : widthLevels;
+
+    descriptor.mipmapLevelCount = mipCount;
+
+    return [_device newTextureWithDescriptor: descriptor];
+}
+```
+
 When you create a texture, Metal doesn’t initialize mipmap levels. You need to provide data for any mipmap levels that the GPU accesses. Further, Metal doesn’t keep track of which mipmaps you’ve filled in, or which contain uninitialized or stale data. You’ll need to keep track of that information yourself.
 
 ##### Load a Mipmapped Texture Using Metalkit

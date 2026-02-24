@@ -10,6 +10,11 @@ The default value is `center`.
 
 ##### Horizontal Alignments
 
+- **`left`**: Left-aligns each line of text.
+- **`center`**: Center-aligns each line of text.
+- **`right`**: Right-aligns each line of text.
+- **`justified`**: Left- and right-aligns the text by adding additional spaces between words.
+
 ##### Declaration
 
 ```other

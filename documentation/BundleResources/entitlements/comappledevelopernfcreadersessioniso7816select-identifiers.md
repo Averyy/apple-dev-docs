@@ -9,6 +9,10 @@ A list of application identifiers that the app supports.
 - iOS 13.0+
 - iPadOS 13.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [Access Wi-Fi Information Entitlement](entitlements/com.apple.developer.networking.wifi-info.md)

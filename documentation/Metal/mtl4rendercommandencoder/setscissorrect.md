@@ -26,7 +26,7 @@ Metal performs a scissor test and discards all fragments outside of the scissor 
 
 ## Parameters
 
-- `rect`:   rectangle to specify. This rectangle needs to lie completely   within the current render attachment.
+- `rect`: [`MTLScissorRect`](mtlscissorrect.md) rectangle to specify. This rectangle needs to lie completely within the current render attachment.
 
 ## See Also
 

@@ -26,7 +26,7 @@ func conforms(to type: UTType) -> Bool
 
 ## Parameters
 
-- `type`: A   instance.
+- `type`: A [`UTType`](uttype-swift.struct.md) instance.
 
 ## See Also
 

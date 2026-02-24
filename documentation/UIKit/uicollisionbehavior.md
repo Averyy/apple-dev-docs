@@ -21,7 +21,7 @@ class UICollisionBehavior
 
 #### Overview
 
-A collision behavior also specifies some characteristics of its items’ collisions, with other characteristics optionally specified by a [`UIDynamicItemBehavior`](uidynamicitembehavior.md) object. A  is any iOS or custom object that conforms to the [`UIDynamicItem`](uidynamicitem.md) protocol. The [`UIView`](uiview.md) and [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can use a custom object as a dynamic item for such purposes as reacting to rotation or position changes computed by a dynamic animator—an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class.
+A collision behavior also specifies some characteristics of its items’ collisions, with other characteristics optionally specified by a [`UIDynamicItemBehavior`](uidynamicitembehavior.md) object. A *dynamic item* is any iOS or custom object that conforms to the [`UIDynamicItem`](uidynamicitem.md) protocol. The [`UIView`](uiview.md) and [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can use a custom object as a dynamic item for such purposes as reacting to rotation or position changes computed by a dynamic animator—an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class.
 
 To use a collision behavior with a dynamic item, perform these two steps:
 
@@ -32,7 +32,7 @@ The coordinate system that pertains to a collision behavior, and the types of dy
 
 You can add multiple collision behaviors to a dynamic animator. A dynamic item can be part of any number of collision behaviors, provided those behaviors belong to the same animator. For example, you can specify a collision behavior for a set of say, blue, items and another for, say, pink items. When you add both behaviors to a dynamic animator, blue items can collide with each other and pink items can collide with each other, but a blue item and a pink item would not collide—they would ignore each other.
 
-By default, a collision behavior’s items can collide with each other  with any boundaries you’ve specified for the behavior. If you want to specify that a behavior’s items collide only with each other, or only with boundaries, explicitly set the [`collisionMode`](uicollisionbehavior/collisionmode.md) property.
+By default, a collision behavior’s items can collide with each other *and* with any boundaries you’ve specified for the behavior. If you want to specify that a behavior’s items collide only with each other, or only with boundaries, explicitly set the [`collisionMode`](uicollisionbehavior/collisionmode.md) property.
 
 You can define a collision boundary with a bezier path (see the [`addBoundary(withIdentifier:for:)`](uicollisionbehavior/addboundary(withidentifier:for:).md) method) or with a line segment (see the [`addBoundary(withIdentifier:from:to:)`](uicollisionbehavior/addboundary(withidentifier:from:to:).md) method). When you use a collision behavior with a dynamic animator you’ve initialized with a reference view or a collection view layout, you can also specify a collision boundary according to the bounds of the dynamic animator’s coordinate system (see the [`setTranslatesReferenceBoundsIntoBoundary(with:)`](uicollisionbehavior/settranslatesreferenceboundsintoboundary(with:).md) method).
 

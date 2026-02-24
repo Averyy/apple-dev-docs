@@ -27,7 +27,7 @@ If `inAttributes` is `nil`, all currently retrieved attributes are returned.
 
 ## Parameters
 
-- `inAttributes`: An array of attributes. Can be  .
+- `inAttributes`: An array of attributes. Can be `nil`.
 
 ## See Also
 

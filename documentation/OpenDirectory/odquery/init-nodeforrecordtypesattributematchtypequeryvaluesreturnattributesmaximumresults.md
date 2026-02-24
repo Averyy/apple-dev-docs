@@ -26,11 +26,11 @@ The initialized query.
 ## Parameters
 
 - `inNode`: The node to query.
-- `inRecordTypeOrList`: The type or types of record to query. Can be an   object for a single type or an   object containing   objects for multiple types.
+- `inRecordTypeOrList`: The type or types of record to query. Can be an `NSString` object for a single type or an `NSArray` object containing `NSString` objects for multiple types.
 - `inAttribute`: The name of the attribute to query.
 - `inMatchType`: The type of query.
-- `inQueryValueOrList`: The value or values to query in the attribute. Can be an   object or an   object for a single value, or an   containing   and   objects for multiple values.
-- `inReturnAttributeOrList`: The attribute or attributes to be returned from the query. Can be an   object for a single attribute or an   object containing   objects for multiple attributes. Passing   is equivalent to passing  .
+- `inQueryValueOrList`: The value or values to query in the attribute. Can be an `NSString` object or an `NSData` object for a single value, or an `NSArray` containing `NSString` and `NSData` objects for multiple values.
+- `inReturnAttributeOrList`: The attribute or attributes to be returned from the query. Can be an `NSString` object for a single attribute or an `NSArray` object containing `NSString` objects for multiple attributes. Passing `nil` is equivalent to passing `kODAttributeTypeStandardOnly`.
 - `inMaximumResults`: The maximum number of values to return.
 
 

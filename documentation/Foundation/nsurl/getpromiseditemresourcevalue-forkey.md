@@ -36,7 +36,7 @@ This method works for any resource value that is not tied to the item’s conten
 
 ## Parameters
 
-- `value`: The location where the value for the resource property identified by   should be stored.
+- `value`: The location where the value for the resource property identified by `key` should be stored.
 - `key`: The name of one of the URL’s resource properties.
 
 ## See Also

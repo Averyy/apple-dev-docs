@@ -24,8 +24,8 @@ An initialized interpolating motion effect object.
 
 ## Parameters
 
-- `keyPath`: The key path of the view that you want to modify. This path must correspond to an animatable property of the view on which this motion effect is applied. For example, to update the   property of the view, specify the string “center”.
-- `type`: The type of motion to track. You can track horizontal or vertical tilt. For a list of possible values, see  .
+- `keyPath`: The key path of the view that you want to modify. This path must correspond to an animatable property of the view on which this motion effect is applied. For example, to update the [`center`](uiview/center.md) property of the view, specify the string “center”.
+- `type`: The type of motion to track. You can track horizontal or vertical tilt. For a list of possible values, see [`UIInterpolatingMotionEffect.EffectType`](uiinterpolatingmotioneffect/effecttype.md).
 
 ## See Also
 

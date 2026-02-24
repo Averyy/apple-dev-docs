@@ -16,6 +16,10 @@ The declaration to configure Math Notes in the calculator app.
 object MathSettingsCalculator_MathNotesModeObject
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: Controls whether the mode is enabled.
+
 ## See Also
 
 - [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)

@@ -9,6 +9,10 @@ A Boolean value that indicates whether you can place domains in testing mode.
 - macOS 11.3+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 You must add this entitlement to your target before assigning a non-empty value to a domain’s [`testingModes`](https://developer.apple.com/documentation/FileProvider/NSFileProviderDomain/testingModes-swift.property) property. You can only use this entitlement during testing and development. If you add it to your app or extension, you must remove it before you submit your app to TestFlight or the Mac App Store.

@@ -37,9 +37,9 @@ If the load operation fails, SwiftUI continues to display the placeholder. To be
 ## Parameters
 
 - `url`: The URL of the image to display.
-- `scale`: The scale to use for the image. The default is  . Set a   different value when loading images designed for higher resolution   displays. For example, set a value of   for an image that you   would name with the   suffix if stored in a file on disk.
-- `content`: A closure that takes the loaded image as an input, and   returns the view to show. You can return the image directly, or   modify it as needed before returning it.
-- `placeholder`: A closure that returns the view to show until the   load operation completes successfully.
+- `scale`: The scale to use for the image. The default is `1`. Set a different value when loading images designed for higher resolution displays. For example, set a value of `2` for an image that you would name with the `@2x` suffix if stored in a file on disk.
+- `content`: A closure that takes the loaded image as an input, and returns the view to show. You can return the image directly, or modify it as needed before returning it.
+- `placeholder`: A closure that returns the view to show until the load operation completes successfully.
 
 ## See Also
 

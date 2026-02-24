@@ -26,7 +26,7 @@ Generally, trace points should not involve expensive operations, however some ci
 
 ## Parameters
 
-- `type`: The type of trace to check. Possible values are   and  .
+- `type`: The type of trace to check. Possible values are [`OS_TRACE_TYPE_DEBUG`](os_trace_type_debug.md) and [`OS_TRACE_TYPE_INFO`](os_trace_type_info.md).
 
 ## See Also
 

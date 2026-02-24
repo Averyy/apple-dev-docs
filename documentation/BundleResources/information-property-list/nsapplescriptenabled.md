@@ -9,6 +9,10 @@ A Boolean value indicating whether AppleScript is enabled.
 - macOS 10.0+
 
 
+
+**Type**: boolean
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplescriptenabled)*

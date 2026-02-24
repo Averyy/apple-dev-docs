@@ -29,6 +29,47 @@ A compositional layout is composed of one or more sections that break up the lay
 
 You combine the components by building up from items into a group, from groups into a section, and finally into a full layout, like in this example of a basic list layout:
 
+**Swift**:
+
+```swift
+func createBasicListLayout() -> UICollectionViewLayout { 
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),                                  
+                                         heightDimension: .fractionalHeight(1.0))    
+    let item = NSCollectionLayoutItem(layoutSize: itemSize)  
+  
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),                                          
+                                          heightDimension: .absolute(44))    
+    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,                                                   
+                                                     subitems: [item])  
+  
+    let section = NSCollectionLayoutSection(group: group)    
+
+
+    let layout = UICollectionViewCompositionalLayout(section: section)    
+    return layout
+}
+```
+
+**Objective-C**:
+
+```objc
+- (UICollectionViewLayout *)createBasicListLayout {
+    NSCollectionLayoutSize *itemSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension fractionalHeightDimension:1.0]];
+    
+    NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSize];
+
+    NSCollectionLayoutSize *groupSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:44.0]];
+
+    NSCollectionLayoutGroup *group = [NSCollectionLayoutGroup horizontalGroupWithLayoutSize:groupSize subitems:@[item]];
+    
+    NSCollectionLayoutSection *section = [NSCollectionLayoutSection sectionWithGroup:group];
+
+    UICollectionViewCompositionalLayout *layout = [[UICollectionViewCompositionalLayout alloc] initWithSection:section];
+    
+    return layout;
+}
+```
+
 ## Topics
 
 ### Creating a layout
@@ -61,8 +102,6 @@ You combine the components by building up from items into a group, from groups i
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

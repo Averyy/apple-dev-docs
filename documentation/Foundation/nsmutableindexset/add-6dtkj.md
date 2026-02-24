@@ -22,7 +22,7 @@ func add(_ value: Int)
 
 ## Parameters
 
-- `value`: Index to add. Must be in the range  .
+- `value`: Index to add. Must be in the range `0 .. NSNotFound - 1`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ convenience init(forModelAt modelURL: URL, trainingData: any MLBatchProvider, pr
 
 ## Parameters
 
-- `modelURL`: The location in the file system of a model file ( ).
+- `modelURL`: The location in the file system of a model file (*ModelName*`.mlmodelc`).
 - `trainingData`: The update data for the model, contained in a batch provider.
 - `progressHandlers`: The closures the task calls during the update process.
 

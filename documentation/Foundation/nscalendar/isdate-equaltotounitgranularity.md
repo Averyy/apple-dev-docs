@@ -28,7 +28,7 @@ func isDate(_ date1: Date, equalTo date2: Date, toUnitGranularity unit: NSCalend
 
 - `date1`: The first date to compare.
 - `date2`: The second date to compare.
-- `unit`: The smallest unit that must, along with all larger units, be equal in the given dates. For possible values, see  .
+- `unit`: The smallest unit that must, along with all larger units, be equal in the given dates. For possible values, see [`NSCalendar.Unit`](nscalendar/unit.md).
 
 ## See Also
 

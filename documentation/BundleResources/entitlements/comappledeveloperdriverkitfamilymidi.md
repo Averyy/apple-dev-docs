@@ -10,6 +10,10 @@ A Boolean value that indicates whether to match the driver against devices that 
 - iPadOS 18.0+
 - macOS 15.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [DriverKit Audio Family](entitlements/com.apple.developer.driverkit.family.audio.md)

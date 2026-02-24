@@ -27,7 +27,7 @@ Use one of the predefined groups [`planarUIInline`](modelsortgroup/planaruiinlin
 
 The scenario below shows a museum scene that has a green planar mesh entity, stacked between two SwiftUI [`View`](https://developer.apple.com/documentation/SwiftUI/View) instances in a [`ZStack`](https://developer.apple.com/documentation/SwiftUI/ZStack).
 
-|  |  |
+| **Actual View** | **Layout Illustration** |
 | --- | --- |
 | ![A screenshot of a museum scene with the red UI layer drawing first, followed by the greenPlane entity drawing second, and the layer with text and symbol drawing third. All 3 are coplanar and overlapping with one another.](https://docs-assets.developer.apple.com/published/4edf2a53d85de8fb8bed0e9a9794b2e6/modelsortgroupcomponent-planarui-green-inline-dark.jpg) | ![A screenshot illustrating the relative layout of the 3 layers in this scenario with the red UI layer at the back, greenPlane entity in the middle, and the UI with text and SF Symbol in front.](https://docs-assets.developer.apple.com/published/983f602fa7218629e360047efa5e2010/modelsortgroupcomponent-planarui-layer-breakdown.jpg) |
 

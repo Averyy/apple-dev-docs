@@ -23,8 +23,8 @@ This method takes a [`AVCaptureDevice.WhiteBalanceTemperatureAndTintValues`](avc
 
 ## Parameters
 
-- `whiteBalanceTemperatureAndTintValues`: The white balance temperature and tint values, as computed from   method,   presets or manual input.
-- `handler`: A block to be called when white balance values have been set to the values specified and   is set to  . If   is called multiple times, the completion handlers are called in FIFO order. The block receives a timestamp which matches that of the first buffer to which all settings have been applied. Note that the timestamp is synchronized to the device clock, and thus must be converted to the   prior to comparison with the timestamps of buffers delivered via an  . This parameter may be   if synchronization is not required.
+- `whiteBalanceTemperatureAndTintValues`: The white balance temperature and tint values, as computed from [`temperatureAndTintValues(for:)`](avcapturedevice/temperatureandtintvalues(for:).md) method, [`AVCaptureDevice.WhiteBalanceTemperatureAndTintValues`](avcapturedevice/whitebalancetemperatureandtintvalues.md) presets or manual input.
+- `handler`: A block to be called when white balance values have been set to the values specified and [`whiteBalanceMode`](avcapturedevice/whitebalancemode-swift.property.md) is set to `AVCaptureWhiteBalanceModeLocked`. If [`setWhiteBalanceModeLocked(whiteBalanceTemperatureAndTintValues:handler:)`](avcapturedevice/setwhitebalancemodelocked(whitebalancetemperatureandtintvalues:handler:).md) is called multiple times, the completion handlers are called in FIFO order. The block receives a timestamp which matches that of the first buffer to which all settings have been applied. Note that the timestamp is synchronized to the device clock, and thus must be converted to the [`synchronizationClock`](avcapturesession/synchronizationclock.md) prior to comparison with the timestamps of buffers delivered via an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md). This parameter may be `nil` if synchronization is not required.
 
 ## See Also
 

@@ -45,7 +45,7 @@ struct WeatherApp: App {
 ## Parameters
 
 - `task`: The type of task with which to associate the provided action.
-- `action`: An async closure that the system runs for the specified task   type.
+- `action`: An async closure that the system runs for the specified task type.
 
 ## See Also
 

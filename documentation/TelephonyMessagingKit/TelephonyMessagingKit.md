@@ -26,7 +26,7 @@ To have access to the TelephonyMessageKit API you must add the [`Default Carrier
 ## Topics
 
 ### Essentials
-- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
   Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 - [class TelephonyMessagingSession](telephonymessagingsession.md)
   An object that coordinates interaction with the TelephonyMessagingKit framework.

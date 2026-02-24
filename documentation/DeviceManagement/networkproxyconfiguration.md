@@ -85,6 +85,10 @@ Specify `com.apple.SystemConfiguration` as the payload type.
 - [object NetworkProxyConfiguration.Proxies](networkproxyconfiguration/proxies-data.dictionary.md)
   The payload for configuring network proxies.
 
+## Properties
+
+- `Proxies` (NetworkProxyConfiguration.Proxies) *(required)*: The dictionary containing all the proxies for this device.
+
 ## See Also
 
 - [object DNSProxy](dnsproxy.md)

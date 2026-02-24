@@ -20,7 +20,7 @@ case labeledDirectories(at: URL)
 
 ## Parameters
 
-- `at`: The URL to a folder in the file system that contains folders of hand action videos. The data source   uses the name of each folder as the classification label for the hand action videos it contains.
+- `at`: The URL to a folder in the file system that contains folders of hand action videos. The data source uses the name of each folder as the classification label for the hand action videos it contains.
 
 ## See Also
 

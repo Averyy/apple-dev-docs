@@ -28,11 +28,11 @@ A CFData object containing a serialized representation of `propertyList` in a th
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new data object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new data object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `propertyList`: The property list to write out.
-- `format`: A CFPropertyListFormat constant to specify the data format. See   for possible values.
-- `options`: This parameter is currently unused and should be set to  .
-- `error`: If this parameter is non-NULL, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the  .
+- `format`: A CFPropertyListFormat constant to specify the data format. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
+- `options`: This parameter is currently unused and should be set to `0`.
+- `error`: If this parameter is non-NULL, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

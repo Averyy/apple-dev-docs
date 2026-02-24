@@ -24,7 +24,7 @@ struct AttributeType
 
 Core Data attribute types explicitly distinguish between bit size. This allows their values to exist independent of the persistent store that contains them. A scalar option is available for a number of attribute types, in some cases by default.
 
-|  |  |  |  |
+| **Attribute type** | **Type** | **Scalar type** | **Scalar by default** |
 | --- | --- | --- | --- |
 | Integer 16 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Int16`](https://developer.apple.com/documentation/Swift/Int16) | Yes |
 | Integer 32 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Int32`](https://developer.apple.com/documentation/Swift/Int32) | Yes |

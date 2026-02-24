@@ -18,6 +18,38 @@ case accessoryBar
 
 Use this style of button to display some kind of toggle or selection state, like a favorites bar or search scope.
 
+**Swift**:
+
+```swift
+// Create an accessory bar style button.
+let rankButton = NSButton()
+rankButton.title = "Search Rank"
+rankButton.bezelStyle = .accessoryBar
+rankButton.setButtonType(.pushOnPushOff)
+
+// Create an accessory bar style button.
+let orderButton = NSButton()
+orderButton.title = "Page Order"
+orderButton.bezelStyle = .accessoryBar
+orderButton.setButtonType(.pushOnPushOff)
+```
+
+**Objective-C**:
+
+```objc
+// Create an accessory bar style button.
+NSButton *rankButton = [[NSButton alloc] init];
+rankButton.title = @"Search Rank";
+rankButton.bezelStyle = NSBezelStyleAccessoryBar;
+[rankButton setButtonType:NSButtonTypePushOnPushOff];
+
+// Create an accessory bar style button.
+NSButton *orderButton = [[NSButton alloc] init];
+orderButton.title = @"Page Order";
+orderButton.bezelStyle = NSBezelStyleAccessoryBar;
+[orderButton setButtonType:NSButtonTypePushOnPushOff];
+```
+
 ![A screenshot of a label, and two accessory bar buttons that display side-by-side. The label on the left says sort by. The buttons that follow on the right side say search rank and page order.](https://docs-assets.developer.apple.com/published/2b28d4da50ab26b6830f3428ceb3c898/media-4307818%402x.png)
 
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).

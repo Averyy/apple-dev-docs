@@ -12,9 +12,19 @@ iOS and macOS have built-in network debugging tools (see [`Analyzing HTTP traffi
 
 ##### Debugging Http Proxies
 
+- **[`Charles HTTP Proxy`](https://developer.apple.comhttps://www.charlesproxy.com/)**: A debugging HTTP proxy that enables a developer to view all of the HTTP and HTTPS traffic between their machine and the internet.
+- **[`mitmproxy`](https://developer.apple.comhttps://mitmproxy.org/)**: A free and open source interactive debugging HTTP proxy. The name stands for *machine-in-the-middle proxy*.
+
 ##### Macos Apps
 
+- **[`Debookee`](https://developer.apple.comhttps://www.iwaxx.com/debookee/)**: A simple and powerful network traffic analyzer for macOS.
+- **[`IPNetMonitorX`](https://developer.apple.comhttp://www.sustworks.com/site/prod_ipmx_overview.html)**: A network troubleshooting toolkit for debugging internet service problems and optimizing performance.
+- **[`Wireshark`](https://developer.apple.comhttps://www.wireshark.org)**: A free and open source packet analyzer that supports macOS.
+
 ##### Command Line Tools
+
+- **[`tcpflow`](https://developer.apple.comhttp://www.circlemud.org/jelson/software/tcpflow/)**: A program that records data transmitted as part of TCP connections (flows), and stores the data in a way that’s convenient for protocol analysis or debugging.
+- **[`tcptrace`](https://developer.apple.comhttp://tcptrace.org/)**: An open source tool for analyzing the TCP connections in a packet trace.
 
 ## See Also
 

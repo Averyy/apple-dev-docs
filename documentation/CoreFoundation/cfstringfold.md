@@ -29,8 +29,8 @@ You can use this function to preprocess strings that are to be compared, searche
 ## Parameters
 
 - `theString`: The string which is to be folded.  If this parameter is not a valid mutable CFString, the behavior is undefined.
-- `theFlags`: Folding with   removes case distinctions in accordance with the mapping specified by  .  Folding with   removes distinctions of accents and other diacritics.  Folding with   removes character width distinctions by mapping characters in the range   to their ordinary equivalents.
-- `theLocale`: The locale argument affects the case mapping algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (Unicode code point U+0131, Latin Small Dotless I), not the normal “i” character.
+- `theFlags`: The equivalency flags which describes the character folding form. See “String Comparison Flags” in [`CFString`](cfstring.md) for possible values. Only those flags containing the word “insensitive” are recognized; other flags are ignored. Folding with `kCFCompareCaseInsensitive` removes case distinctions in accordance with the mapping specified by [`ftp://ftp.unicode.org/Public/UNIDATA/CaseFolding.txt`](https://developer.apple.comftp://ftp.unicode.org/Public/UNIDATA/CaseFolding.txt).  Folding with `kCFCompareDiacriticInsensitive` removes distinctions of accents and other diacritics.  Folding with `kCFCompareWidthInsensitive` removes character width distinctions by mapping characters in the range `U+FF00-U+FFEF` to their ordinary equivalents.
+- `theLocale`: The locale to use for the operation. `NULL` specifies the canonical locale (the return value from [`CFLocaleGetSystem()`](cflocalegetsystem().md)). The locale argument affects the case mapping algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (Unicode code point U+0131, Latin Small Dotless I), not the normal “i” character.
 
 ## See Also
 

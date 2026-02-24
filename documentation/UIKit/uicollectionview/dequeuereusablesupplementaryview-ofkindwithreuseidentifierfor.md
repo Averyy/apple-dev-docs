@@ -32,8 +32,8 @@ If you registered a class for the specified `identifier` and a new cell must be 
 
 ## Parameters
 
-- `elementKind`: The kind of supplementary view to retrieve. This value is defined by the layout object. This parameter must not be  .
-- `identifier`: The reuse identifier for the specified view. This parameter must not be  .
+- `elementKind`: The kind of supplementary view to retrieve. This value is defined by the layout object. This parameter must not be `nil`.
+- `identifier`: The reuse identifier for the specified view. This parameter must not be `nil`.
 - `indexPath`: The index path specifying the location of the supplementary view in the collection view. The data source receives this information when it’s asked for the view and should just pass it along. This method uses the information to perform additional configuration based on the view’s position in the collection view.
 
 ## See Also

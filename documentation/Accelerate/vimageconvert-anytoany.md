@@ -56,11 +56,15 @@ You can use the same workspace memory for a group of images that are different s
 
 ## Parameters
 
-- `converter`: A valid   instance indicating the conversion to perform. You can use the same converter concurrently in multiple threads. To create a converter, you can use  ,  ,  , or  .
-- `srcs`: A pointer to an array of vImage buffer structures that describe the color planes that make up the input image. For the order and number of input buffers, see the description of the function that creates the   instance. You can also determine the order manually using  .
-- `dests`: A pointer to an array of vImage buffer structures that describe the color planes that make up the result image. For the order and number of input buffers, see the description of the function that creates the   instance. You can also determine the order manually using  . The destination buffer may only alias the   buffers if   returns 0 and the respective scanlines of the aliasing buffers start at the same address.
-- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
-- `flags`: The options to use when performing this operation. The following flags are supported:
+- `converter`: A valid [`vImageConverter`](vimageconverter.md) instance indicating the conversion to perform. You can use the same converter concurrently in multiple threads. To create a converter, you can use [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md), [`vImageConverter_CreateWithColorSyncCodeFragment(_:_:_:_:_:_:)`](vimageconverter_createwithcolorsynccodefragment(_:_:_:_:_:_:).md), [`vImageConverter_CreateForCGToCVImageFormat(_:_:_:_:_:)`](vimageconverter_createforcgtocvimageformat(_:_:_:_:_:).md), or [`vImageConverter_CreateForCVToCGImageFormat(_:_:_:_:_:)`](vimageconverter_createforcvtocgimageformat(_:_:_:_:_:).md).
+- `srcs`: A pointer to an array of vImage buffer structures that describe the color planes that make up the input image. For the order and number of input buffers, see the description of the function that creates the [`vImageConverter`](vimageconverter.md) instance. You can also determine the order manually using [`vImageConverter_GetSourceBufferOrder(_:)`](vimageconverter_getsourcebufferorder(_:).md).
+- `dests`: A pointer to an array of vImage buffer structures that describe the color planes that make up the result image. For the order and number of input buffers, see the description of the function that creates the [`vImageConverter`](vimageconverter.md) instance. You can also determine the order manually using [`vImageConverter_GetDestinationBufferOrder(_:)`](vimageconverter_getdestinationbufferorder(_:).md). The destination buffer may only alias the `srcs` buffers if [`vImageConverter_MustOperateOutOfPlace(_:_:_:_:)`](vimageconverter_mustoperateoutofplace(_:_:_:_:).md) returns 0 and the respective scanlines of the aliasing buffers start at the same address.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
+- `flags`: The options to use when performing this operation. The following flags are supported: | [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
+| --- | --- |
+| [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) | No image conversion work is done. If the value returned by the function is less than 0, it represents an error code. A value of 0 or greater represents the size of `tempBuffer` to be passed into the function. |
+| [`kvImageDoNotTile`](kvimagedonottile.md) | Disables internal multithreading.  Pass this flag if you’re doing your own threading and think it might conflict when vImage attempts to do the same. |
+| [`kvImageNoFlags`](kvimagenoflags.md) | Default behavior. |
 
 ## See Also
 

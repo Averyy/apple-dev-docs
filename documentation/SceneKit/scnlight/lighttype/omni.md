@@ -3,7 +3,7 @@
 **Framework**: SceneKit  
 **Kind**: property
 
-An omnidirectional light, also known as a .
+An omnidirectional light, also known as a *point light*.
 
 **Availability**:
 - iOS 8.0+

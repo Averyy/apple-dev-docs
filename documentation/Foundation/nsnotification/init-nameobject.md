@@ -22,7 +22,7 @@ convenience init(name aName: NSNotification.Name, object anObject: Any?)
 
 ## Parameters
 
-- `aName`: The name for the new notification. May not be  .
+- `aName`: The name for the new notification. May not be `nil`.
 - `anObject`: The object for the new notification.
 
 ## See Also

@@ -44,7 +44,7 @@ Both `k24BitFormat` and `k32BitFormat` are integer uncompressed formats. Dependi
 
 ##### Kmicrosoftadpcmformat and Kdviintelimaformat Sound Codecs
 
-The `kMicrosoftADPCMFormat` and the `kDVIIntelIMAFormat` codec provide QuickTime interoperability with AVI and WAV files. The four-character codes used by Microsoft for their formats are numeric. To construct a QuickTime-supported codec format of this type, the Microsoft numeric ID is taken to generate a four-character code of the form `'msxx'` where  takes on the numeric ID.
+The `kMicrosoftADPCMFormat` and the `kDVIIntelIMAFormat` codec provide QuickTime interoperability with AVI and WAV files. The four-character codes used by Microsoft for their formats are numeric. To construct a QuickTime-supported codec format of this type, the Microsoft numeric ID is taken to generate a four-character code of the form `'msxx'` where *xx* takes on the numeric ID.
 
 ##### Kdvaudioformat Sound Codec
 

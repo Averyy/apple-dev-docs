@@ -25,7 +25,7 @@ A connection is not opened to the remote host until data is sent.
 ## Parameters
 
 - `port`: The port to connect to.
-- `hostName`: The host name to connect to.   may be either a host name or an IPv4-style address.
+- `hostName`: The host name to connect to. `hostName` may be either a host name or an IPv4-style address.
 
 ## See Also
 

@@ -30,7 +30,7 @@ These are the flags that control how the text appears.
 
 ## Parameters
 
-- `desc`:   being interrogated.
+- `desc`: `CMFormatDescription` being interrogated.
 - `displayFlagsOut`: On output, receives the display flags.
 
 ## See Also

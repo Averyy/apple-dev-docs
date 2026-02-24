@@ -28,7 +28,7 @@ This method doesn’t apply to classic split view controllers with a [`style`](u
 
 ## Parameters
 
-- `column`: The corresponding column of the split view interface. See   for values.
+- `column`: The corresponding column of the split view interface. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for values.
 
 ## See Also
 

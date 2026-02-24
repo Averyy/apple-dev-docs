@@ -23,7 +23,7 @@ class func setMetadata(_ metadata: [String : Any]?, forPersistentStoreOfType sto
 ## Parameters
 
 - `metadata`: A dictionary containing metadata for the store.
-- `storeType`: The type of the store at  . If this value is  , Core Data will determine which store class should be used to get or set the store file’s metadata by inspecting the file contents.
+- `storeType`: The type of the store at `url`. If this value is `nil`, Core Data will determine which store class should be used to get or set the store file’s metadata by inspecting the file contents.
 - `url`: The location of a persistent store.
 
 ## See Also

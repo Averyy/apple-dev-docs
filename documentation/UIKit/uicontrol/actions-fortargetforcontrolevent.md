@@ -28,8 +28,8 @@ Use this method to determine what action methods are called on the specified obj
 
 ## Parameters
 
-- `target`: The target object—that is, an object that has an action method associated with this control. You must pass an explicit object for this method to return a meaningful result. Specifying   always returns  .
-- `controlEvent`: A single control event constant representing the event for which you want the list of action methods. For a list of possible constants, see 
+- `target`: The target object—that is, an object that has an action method associated with this control. You must pass an explicit object for this method to return a meaningful result. Specifying `nil` always returns `nil`.
+- `controlEvent`: A single control event constant representing the event for which you want the list of action methods. For a list of possible constants, see [`UIControl.Event`](uicontrol/event.md)
 
 ## See Also
 

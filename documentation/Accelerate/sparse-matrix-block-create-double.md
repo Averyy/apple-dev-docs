@@ -32,8 +32,8 @@ Create a sparse matrix object that is stored in block-entry format and is ready 
 
 ## Parameters
 
-- `Mb`: The number of rows in terms of blocks of the matrix. There are a total of   rows in the matrix.  Must be greater than 0.
-- `Nb`: The number of columns in terms of blocks of the matrix.  There are a total of   columns in the matrix.  Must be greater than 0.
+- `Mb`: The number of rows in terms of blocks of the matrix. There are a total of `Mb * k` rows in the matrix.  Must be greater than 0.
+- `Nb`: The number of columns in terms of blocks of the matrix.  There are a total of `Nb * l` columns in the matrix.  Must be greater than 0.
 - `k`: The row dimension of a block in the sparse matrix.  Must be greater than 0.
 - `l`: The column dimension of a block in the sparse matrix.  Must be greater than 0.
 

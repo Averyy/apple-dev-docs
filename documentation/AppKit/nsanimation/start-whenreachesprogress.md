@@ -20,8 +20,8 @@ This method links the running of two animations together. You can set only one `
 
 ## Parameters
 
-- `animation`: The other   object with which the receiver is linked.
-- `startProgress`: A   value (typed as NSAnimationProgress) that specifies a progress mark of the other animation.
+- `animation`: The other `NSAnimation` object with which the receiver is linked.
+- `startProgress`: A `float` value (typed as NSAnimationProgress) that specifies a progress mark of the other animation.
 
 ## See Also
 

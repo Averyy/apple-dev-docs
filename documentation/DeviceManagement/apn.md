@@ -39,6 +39,11 @@ This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
 - [object APN.DefaultsData](apn/defaultsdata-data.dictionary.md)
   An array of access point name dictionaries.
 
+## Properties
+
+- `DefaultsData` (APN.DefaultsData) *(required)*: The list of access point names (APNs).
+- `DefaultsDomainName` (string) *(required)*: The domain name.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

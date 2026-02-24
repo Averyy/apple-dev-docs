@@ -35,7 +35,53 @@ Use the properties of this class to configure the behavior of the operation befo
 
 ##### Long Lived Operations
 
-A  is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](ckoperation/islonglived.md) to [`true`](https://developer.apple.com/documentation/Swift/true), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method that [`CKContainer`](ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
+A *long-lived operation* is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](ckoperation/islonglived.md) to [`true`](https://developer.apple.com/documentation/Swift/true), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method that [`CKContainer`](ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
+
+**Swift**:
+
+```swift
+container.fetchAllLongLivedOperationIDs(completionHandler: { (operationIDs, error) in
+    if let error = error {
+        print("Error fetching long lived operations: \(error)")
+        // Handle error
+        return
+    }
+    guard let identifiers = operationIDs else { return }
+    for operationID in identifiers {
+        container.fetchLongLivedOperation(withID: operationID, completionHandler: { (operation, error) in
+            if let error = error {
+                print("Error fetching operation: \(operationID)\n\(error)")
+                // Handle error
+                return
+            }
+            guard let operation = operation else { return }
+            // Add callback handlers to operation
+            container.add(operation)
+        })
+    }
+})
+```
+
+**Objective-C**:
+
+```objc
+[container fetchAllLongLivedOperationIDsWithCompletionHandler:^(NSArray<NSString *> *_Nullable operationIDs, NSError *_Nullable error) {
+    if (error) {
+        // Handle error
+        return
+    }
+    for (NSString *operationID in operationIDs) {
+        [container fetchLongLivedOperationWithID:operationID completionHandler:^(CKOperation *_Nullable operation, NSError *_Nullable error) {
+            if (error) {
+                // Handle error
+                return
+            }
+            // Add callback handlers to operation
+            [container addOperation:operation];
+        }];
+    }
+}];
+```
 
 The following is the typical life cycle of a long-lived operation:
 

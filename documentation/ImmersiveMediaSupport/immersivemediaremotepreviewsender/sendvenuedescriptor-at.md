@@ -20,7 +20,7 @@ func sendVenueDescriptor(at url: URL) async throws
 
 ## Parameters
 
-- `url`: The url containing a valid venue descriptor file with extension  .
+- `url`: The url containing a valid venue descriptor file with extension `.aime`.
 
 
 ---

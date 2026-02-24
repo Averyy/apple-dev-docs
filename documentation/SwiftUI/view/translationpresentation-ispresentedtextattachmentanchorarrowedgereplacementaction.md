@@ -70,10 +70,10 @@ While this function does support long strings of text, it works best with short 
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the popover.
+- `isPresented`: A binding to a Boolean value that determines whether to present the popover.
 - `text`: The text to be translated. Changing this after the popover presents has no effect.
-- `attachmentAnchor`: The positioning anchor that defines the   attachment point of the popover. The default is   .
-- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow in macOS. The default is  .   iOS ignores this parameter.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is [`bounds`](Anchor/Source/bounds.md).
+- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow in macOS. The default is [`Edge.top`](Edge/top.md). iOS ignores this parameter.
 - `replacementAction`: An optional action to perform when someone interacts with the “Replace with Translation” button. The “Replace with Translation” button appears when you provide this action.
 
 ## See Also

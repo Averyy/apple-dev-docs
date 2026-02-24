@@ -24,7 +24,7 @@ Use the [`stopMonitoringEvent(with:)`](cwwificlient/stopmonitoringevent(with:).m
 
 ## Parameters
 
-- `type`: The type of event notifications to register for. See   for a list of possible values.
+- `type`: The type of event notifications to register for. See [`CWEventType`](cweventtype.md) for a list of possible values.
 
 ## See Also
 

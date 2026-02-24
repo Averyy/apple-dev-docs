@@ -29,7 +29,7 @@ Calling a constructor is equivalent to using the `new` keyword in JavaScript.
 
 ## Parameters
 
-- `arguments`: The parameters to pass to the constructor. The objects in this array must be other   objects or objects that can be converted to JavaScript values using the methods listed in Creating JavaScript Values.
+- `arguments`: The parameters to pass to the constructor. The objects in this array must be other [`JSValue`](jsvalue.md) objects or objects that can be converted to JavaScript values using the methods listed in Creating JavaScript Values.
 
 ## See Also
 

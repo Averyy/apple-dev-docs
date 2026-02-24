@@ -15,7 +15,7 @@ init(name notificationName: NSNotification.Name, object: Any?, notificationCente
 
 - `notificationName`: The notification name to watch for.
 - `object`: The object by which the notification must be posted, or nil if the notification can be posted by any object.
-- `notificationCenter`: The   from which the notification must be posted.
+- `notificationCenter`: The [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) from which the notification must be posted.
 
 ## See Also
 

@@ -20,11 +20,11 @@ For i = 0 to n-1, the elements of `x` are multiplied by `a`[i] and added to the 
 
 ## Parameters
 
-- `n`: Number of elements in vector  ; must be a multiple of 4.
-- `m`: Number of elements in each of the vectors   and  ; must be a multiple of 4.
-- `a`: A vector array of   values.
-- `x`: A second vector array of   values.
-- `y`: A second vector array of   values.
+- `n`: Number of elements in vector `a`; must be a multiple of 4.
+- `m`: Number of elements in each of the vectors `x` and `y`; must be a multiple of 4.
+- `a`: A vector array of `float` values.
+- `x`: A second vector array of `float` values.
+- `y`: A second vector array of `float` values.
 
 ## See Also
 

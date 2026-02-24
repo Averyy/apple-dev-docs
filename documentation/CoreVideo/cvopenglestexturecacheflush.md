@@ -23,7 +23,7 @@ The texture cache automatically flushes currently unused resources when you call
 ## Parameters
 
 - `textureCache`: The texture cache object to flush.
-- `options`: Options for the flush operation. This parameter is currently unused and should be set to  .
+- `options`: Options for the flush operation. This parameter is currently unused and should be set to `0`.
 
 ## See Also
 

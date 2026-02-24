@@ -28,9 +28,9 @@ Use this initializer if you need to explicitly specify the entity type for the r
 ## Parameters
 
 - `entity`: The description of the Core Data entity to fetch.
-- `sortDescriptors`: An array of sort descriptors that define the sort   order of the fetched results.
-- `predicate`: An     instance that defines logical conditions used to filter the fetched   results.
-- `animation`: The animation to use for user interface changes that   result from changes to the fetched results.
+- `sortDescriptors`: An array of sort descriptors that define the sort order of the fetched results.
+- `predicate`: An [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) instance that defines logical conditions used to filter the fetched results.
+- `animation`: The animation to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

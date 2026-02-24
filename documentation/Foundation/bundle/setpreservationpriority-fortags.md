@@ -21,8 +21,8 @@ func setPreservationPriority(_ priority: Double, forTags tags: Set<String>)
 
 ## Parameters
 
-- `priority`: Possible values are between   and  . The default is  . The system will attempt to purge resources with lower priorities first.
-- `tags`: A set of tag names specifying resources stored in the bundle. Must not be  . An exception is thrown if any of the tags in the set do not exist in your app.
+- `priority`: A number specifying the relative priority of preserving the resources in the group specified by `tag`. Possible values are between `0.0` and `1.0`. The default is `0.0`. The system will attempt to purge resources with lower priorities first.
+- `tags`: A set of tag names specifying resources stored in the bundle. Must not be `nil`. An exception is thrown if any of the tags in the set do not exist in your app.
 
 ## See Also
 

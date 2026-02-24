@@ -28,7 +28,7 @@ The new dictionary object.
 
 - `keys`: An array of C-strings that are to be the keys for the values to be inserted. Each element of this array is copied into the dictionary’s internal storage. If any element of this array is NULL, the behavior is undefined.
 - `values`: A C-array that is parallel to the array of keys, consisting of objects that are to be inserted. Each element in this array is retained. Elements in this array may be NULL.
-- `count`: If the count is more than the the actual count of key/value pairs, the behavior is undefined. If one array is NULL and the other is not, the behavior is undefined. If both arrays are NULL and the count is non-0, the behavior is undefined.
+- `count`: The number of key/value pairs in the given arrays. If the count is less than the actual count of values, only that many key/value pairs will be inserted into the dictionary. If the count is more than the the actual count of key/value pairs, the behavior is undefined. If one array is NULL and the other is not, the behavior is undefined. If both arrays are NULL and the count is non-0, the behavior is undefined.
 
 ## See Also
 

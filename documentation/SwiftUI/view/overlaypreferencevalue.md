@@ -28,7 +28,7 @@ A view that layers a second view in front of the view.
 ## Parameters
 
 - `key`: The preference key type whose value is to be read.
-- `transform`: A function that produces the overlay view from   the preference value read from the original view.
+- `transform`: A function that produces the overlay view from the preference value read from the original view.
 
 ## See Also
 

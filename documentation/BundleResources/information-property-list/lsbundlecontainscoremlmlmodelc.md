@@ -14,6 +14,10 @@ A Boolean value indicating whether the app contains a Core ML model to optimize 
 - watchOS 2.0+
 
 
+
+**Type**: boolean
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/lsbundlecontainscoremlmlmodelc)*

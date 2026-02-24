@@ -28,8 +28,8 @@ It’s an error to call this function when multi-pass encoding has not been enab
 ## Parameters
 
 - `session`: The compression session.
-- `furtherPassesRequestedOut`: A pointer to a Boolean that is set to   if the video encoder requests to perform another pass,   otherwise. You may pass   to indicate that the client is certain to use this as the final pass, in which case the video encoder can skip that evaluation step.
-- `reserved`: Reserved for future use and not currently used. Pass   for this argument.
+- `furtherPassesRequestedOut`: A pointer to a Boolean that is set to [`true`](https://developer.apple.com/documentation/Swift/true) if the video encoder requests to perform another pass, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. You may pass `NULL` to indicate that the client is certain to use this as the final pass, in which case the video encoder can skip that evaluation step.
+- `reserved`: Reserved for future use and not currently used. Pass `NULL` for this argument.
 
 ## See Also
 

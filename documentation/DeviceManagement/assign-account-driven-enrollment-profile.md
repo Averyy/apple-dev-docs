@@ -23,6 +23,10 @@ This profile includes the MDM Service Discovery URL, which redirects users to th
 - [object AccountDrivenEnrollmentProfileRequest](accountdrivenenrollmentprofilerequest.md)
   The details for an account-driven enrollment profile.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/account-driven-enrollment/profile`
+
 ## Request Body
 
 The profile request for this account-driven enrollment.

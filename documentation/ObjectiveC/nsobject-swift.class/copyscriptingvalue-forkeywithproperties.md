@@ -28,9 +28,9 @@ The default implementation of this method copies scripting objects by sending `c
 
 ## Parameters
 
-- `value`: For example, if the property is a to-many relationship,   will always be an array of objects to be copied, and this method must therefore return an array of objects.
+- `value`: An object or objects to be copied. The type must match the type of the property identified by `key`. (See also the Discussion section.) For example, if the property is a to-many relationship, `value` will always be an array of objects to be copied, and this method must therefore return an array of objects.
 - `key`: A key that identifies the relationship into which to insert the copied object or objects.
-- `properties`: The properties to be set in the copied object or objects.  Derived from the “with properties” parameter of a   command. (See also the Discussion section.)
+- `properties`: The properties to be set in the copied object or objects.  Derived from the “with properties” parameter of a `duplicate` command. (See also the Discussion section.)
 
 ## See Also
 

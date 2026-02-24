@@ -25,7 +25,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 
 - `context`: An SSL session context reference.
 - `derDN`: A pointer to a buffer containing a DER-encoded distinguished name.
-- `derDNLen`: A value of type   representing the size of the buffer pointed to by the parameter  .
+- `derDNLen`: A value of type `size_t` representing the size of the buffer pointed to by the parameter `derDN`.
 
 
 ---

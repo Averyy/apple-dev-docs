@@ -24,6 +24,39 @@ This method defines the relationship `first attribute <= c`. Where `first attrib
 
 The constraints produced by the following two examples are identical.
 
+**Swift**:
+
+```swift
+// Creating a constraint using NSLayoutConstraint
+NSLayoutConstraint(item: button,
+                   attribute: .Width,
+                   relatedBy: .LessThanOrEqual,
+                   toItem: nil,
+                   attribute: .NotAnAttribute,
+                   multiplier: 1.0,
+                   constant: 40.0).isActive = true
+ 
+// Creating the same constraint using constraintLessThanOrEqualToConstant:
+button.widthAnchor.constraintLessThanOrEqualToConstant(40.0).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// Creating a constraint using NSLayoutConstraint
+[NSLayoutConstraint
+ constraintWithItem:self.button
+ attribute:NSLayoutAttributeWidth
+ relatedBy:NSLayoutRelationLessThanOrEqual
+ toItem:nil
+ attribute:NSLayoutAttributeNotAnAttribute
+ multiplier:1.0
+ constant:40.0].active = YES;
+ 
+// Creating the same constraint using constraintLessThanOrEqualToConstant:
+[self.button.widthAnchor constraintLessThanOrEqualToConstant: 40.0].active = YES;
+```
+
 ## Parameters
 
 - `c`: A constant representing the maximum size of the attribute associated with this dimension anchor.

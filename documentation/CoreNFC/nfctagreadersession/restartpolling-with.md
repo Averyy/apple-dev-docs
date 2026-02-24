@@ -20,7 +20,7 @@ Restart the polling sequence in this session to discover new tags using the prov
 
 ## Parameters
 
-- `configuration`: Reader configuration used for the polling restart.  The configuration does not persist in the current active session, i.e.   would use   the original configuration from session instance initialization.
+- `configuration`: Reader configuration used for the polling restart.  The configuration does not persist in the current active session, i.e. `[NFCTagReaderSession restartPolling]` would use the original configuration from session instance initialization.
 
 
 ---

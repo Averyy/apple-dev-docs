@@ -25,7 +25,7 @@ The `node` being rendered does not need to appear in the interface’s presented
 ## Parameters
 
 - `node`: A node object representing the root node of the tree to be render to the texture.
-- `crop`: A rectangle in the  ’s coordinate system that describes the area to be rendered.
+- `crop`: A rectangle in the `node`’s coordinate system that describes the area to be rendered.
 
 ## See Also
 

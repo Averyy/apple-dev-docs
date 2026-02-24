@@ -30,9 +30,9 @@ If only one size entry is returned, all samples in the buffer are of this size. 
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
-- `sizeArrayEntries`: Number of entries in  .
-- `sizeArrayOut`: Reference to an array of   values to receive the sample sizes.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
+- `sizeArrayEntries`: Number of entries in `sizeArray`.
+- `sizeArrayOut`: Reference to an array of `size_t` values to receive the sample sizes.
 - `sizeArrayEntriesNeededOut`: Number of entries needed for the result.
 
 ## See Also

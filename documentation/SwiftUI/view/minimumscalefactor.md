@@ -44,7 +44,7 @@ HStack {
 
 ## Parameters
 
-- `factor`: A fraction between 0 and 1 (inclusive) you use to   specify the minimum amount of text scaling that this view permits.
+- `factor`: A fraction between 0 and 1 (inclusive) you use to specify the minimum amount of text scaling that this view permits.
 
 ## See Also
 

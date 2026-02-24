@@ -28,10 +28,10 @@ Either share owners or administrators can respond to these access requests.
 
 ##### Responding to Access Requests
 
-- - Fetch the participant information by running [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) with the requester’s [`participantLookupInfo`](ckshare/accessrequester/participantlookupinfo.md).
+- **Approve Requesters:** - Fetch the participant information by running [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) with the requester’s [`participantLookupInfo`](ckshare/accessrequester/participantlookupinfo.md).
 - Add the resulting participant to the share.
-- - Use [`denyRequesters(_:)`](ckshare/denyrequesters(_:).md) to remove the requester from the requesters list.
-- - Use [`blockRequesters(_:)`](ckshare/blockrequesters(_:).md) to block requesters.
+- **Deny Requesters:** - Use [`denyRequesters(_:)`](ckshare/denyrequesters(_:).md) to remove the requester from the requesters list.
+- **Block Requesters:** - Use [`blockRequesters(_:)`](ckshare/blockrequesters(_:).md) to block requesters.
 - Blocking a requester prevents them from sending future access requests to the share.
 
 

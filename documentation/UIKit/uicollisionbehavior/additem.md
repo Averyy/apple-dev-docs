@@ -20,7 +20,7 @@ func addItem(_ item: any UIDynamicItem)
 
 #### Discussion
 
-You can add a dynamic item to one or more collision behaviors. For example, you can use two collision behaviors to specify that item  can collide with item  and that item  can collide with item , but that items  and  ignore items  and .
+You can add a dynamic item to one or more collision behaviors. For example, you can use two collision behaviors to specify that item *A* can collide with item *B* and that item *C* can collide with item *D*, but that items *A* and *B* ignore items *C* and *D*.
 
 There is no hard limit to the number of dynamic items you can add to a collision behavior. However, adding a large number of items might result in a performance impact. Be sure to test your behaviors on the device configurations you are targeting.
 

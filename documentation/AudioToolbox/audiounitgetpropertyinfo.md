@@ -33,8 +33,8 @@ Some properties that have read/write access when an audio unit is uninitialized 
 - `inID`: The identifier for the property.
 - `inScope`: The audio unit scope for the property.
 - `inElement`: The audio unit element for the property.
-- `outDataSize`: On successful output, the maximum size for the audio unit property. Can be   on input, in which case no value is returned.
-- `outWritable`: On successful output, a Boolean value indicating whether the property can be written to ( ) or not ( ). Can be   on input, in which case no value is returned.
+- `outDataSize`: On successful output, the maximum size for the audio unit property. Can be `NULL` on input, in which case no value is returned.
+- `outWritable`: On successful output, a Boolean value indicating whether the property can be written to ([`true`](https://developer.apple.com/documentation/Swift/true)) or not ([`false`](https://developer.apple.com/documentation/Swift/false)). Can be `NULL` on input, in which case no value is returned.
 
 ## See Also
 

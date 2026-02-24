@@ -22,7 +22,7 @@ init(rawValue: String)
 
 ## Parameters
 
-- `rawValue`: A string value that corresponds to a defined  .
+- `rawValue`: A string value that corresponds to a defined [`AVPlayer.WaitingReason`](avplayer/waitingreason.md).
 
 
 ---

@@ -10,7 +10,15 @@ On Apple Watch Ultra, people can specify the action that the system performs whe
 
 For workout apps, you can implement the following protocols:
 
+- **[`StartWorkoutIntent`](startworkoutintent.md)**: Starts a workout session when someone first presses the Action button.
+- **[`AppIntent`](appintent.md)**: Runs a custom action when someone presses the Action button during your app’s active workout session. Donating an intent sets the Action button’s next action. Your app can have only one next action at a time; however, donating a new intent changes the next action.
+- **[`PauseWorkoutIntent`](pauseworkoutintent.md)**: Pauses the current workout session when someone simultaneously presses the Action button and the side button during a workout session.
+- **[`ResumeWorkoutIntent`](resumeworkoutintent.md)**: Resumes the current workout session when someone simultaneously presses the Action button and the side button while a workout session is in a paused state.
+
 For dive apps, you can implement the following protocols:
+
+- **[`StartDiveIntent`](startdiveintent.md)**: Starts a dive session when someone first presses the Action button.
+- **[`AppIntent`](appintent.md)**: Runs a custom action when someone presses the Action button during your app’s active dive session. The system also performs the next action if someone simultaneously presses the Action button and the side button. Donating an intent sets the Action button’s next action. Your app can have only one next action at a time; however, donating a new intent changes the next action.
 
 > ❗ **Important**: When creating intents for the Action button, don’t implement them in an [`AppIntentsExtension`](appintentsextension.md). Always implement the intents directly in your watchOS app.
 

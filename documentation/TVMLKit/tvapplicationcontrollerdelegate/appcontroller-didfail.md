@@ -16,8 +16,8 @@ optional func appController(_ appController: TVApplicationController, didFail er
 
 ## Parameters
 
-- `appController`: The   object that has failed.
-- `error`: An   object describing why the app controller failed.
+- `appController`: The [`TVApplicationController`](tvapplicationcontroller.md) object that has failed.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing why the app controller failed.
 
 ## See Also
 

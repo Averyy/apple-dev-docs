@@ -30,7 +30,7 @@ You can measure the resolved image by looking at its [`size`](graphicscontext/re
 
 ## Parameters
 
-- `image`: The   to resolve.
+- `image`: The [`Image`](image.md) to resolve.
 
 ## See Also
 

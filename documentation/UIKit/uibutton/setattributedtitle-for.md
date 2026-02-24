@@ -27,7 +27,7 @@ At a minimum, you should set the value for the normal state. If a title is not s
 ## Parameters
 
 - `title`: The styled text string so use for the title.
-- `state`: The state that uses the specified title. The possible values are described in  .
+- `state`: The state that uses the specified title. The possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ If you override this method, you must call `super` at some point in your impleme
 
 ## Parameters
 
-- `tabViewItem`: The tab view item to add. The tab view item must have an associated view controller. If this parameter is   or if the tab view item does not have a view controller, this method raises an exception.
+- `tabViewItem`: The tab view item to add. The tab view item must have an associated view controller. If this parameter is `nil` or if the tab view item does not have a view controller, this method raises an exception.
 
 ## See Also
 

@@ -43,7 +43,7 @@ Use this class method whenever you need to submit scores to Game Center, whether
 ## Parameters
 
 - `scores`: An array of scores to report to Game Center.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block that GameKit calls when it reports the scores. The block receives the following parameter: - ***error***: If an error occurred, this parameter holds an error object that describes the problem. If the score was successfully reported, this parameter’s value is `nil`.
 
 ## See Also
 

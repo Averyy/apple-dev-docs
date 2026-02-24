@@ -29,9 +29,9 @@ You can use the reachability reference returned by this function to monitor the 
 
 ## Parameters
 
-- `allocator`: The allocator to use. Pass   or   to use the default allocator.
-- `localAddress`: The local address associated with a network connection. If  , only the remote address is of interest. The value of this parameter is copied into the new object.
-- `remoteAddress`: The remote address associated with a network connection. If  , only the local address is of interest. The value of this parameter is copied into the new object.
+- `allocator`: The allocator to use. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `localAddress`: The local address associated with a network connection. If `NULL`, only the remote address is of interest. The value of this parameter is copied into the new object.
+- `remoteAddress`: The remote address associated with a network connection. If `NULL`, only the local address is of interest. The value of this parameter is copied into the new object.
 
 ## See Also
 

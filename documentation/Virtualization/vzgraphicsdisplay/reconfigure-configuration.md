@@ -24,7 +24,7 @@ Reconfiguration of the display triggers a display state change that you can trac
 
 ## Parameters
 
-- `configuration`: The new   configuration.
+- `configuration`: The new [`VZGraphicsDisplayConfiguration`](vzgraphicsdisplayconfiguration.md) configuration.
 
 ## See Also
 

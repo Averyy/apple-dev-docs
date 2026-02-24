@@ -39,12 +39,12 @@ for t = 0 to T-1
 
 ## Parameters
 
-- `source`: A tensor containing the source data    with the data layout [T,N,I]. In case   and   then the layout is [T,N,4H] and for   and   the layout is [T,N,8H].
-- `recurrentWeight`: A tensor containing the recurrent weights  . For   the layout is [2,4H,H] and otherwise it is [4H,H].
-- `inputWeight`: A tensor containing the input weights matrix   - optional, if missing the operation assumes a diagonal unit-matrix. For   the layout is [8H,I] and otherwise it is [4H,I].
-- `bias`: A tensor containing the bias   - optional, if missing the operation assumes zeroes. For   the layout is [8H] and otherwise it is [4H].
-- `initState`: The initial internal state of the LSTM   - optional, if missing the operation assumes zeroes.   For   the layout is [N,2H] and otherwise it is [N,H].
-- `initCell`: The initial internal cell of the LSTM   - optional, if missing the operation assumes zeroes.   For   the layout is [N,2H] and otherwise it is [N,H].
+- `source`: A tensor containing the source data `x[t]`  with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,4H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,8H].
+- `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,4H,H] and otherwise it is [4H,H].
+- `inputWeight`: A tensor containing the input weights matrix `W` - optional, if missing the operation assumes a diagonal unit-matrix. For `bidirectional` the layout is [8H,I] and otherwise it is [4H,I].
+- `bias`: A tensor containing the bias `b` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [8H] and otherwise it is [4H].
+- `initState`: The initial internal state of the LSTM `h[-1]` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [N,2H] and otherwise it is [N,H].
+- `initCell`: The initial internal cell of the LSTM `h[-1]` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [N,2H] and otherwise it is [N,H].
 - `descriptor`: A descriptor that defines the parameters for the LSTM operation.
 - `name`: The name for the operation.
 

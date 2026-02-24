@@ -30,7 +30,7 @@ When Core Graphics needs to advance forward in the provider’s data stream, you
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(version:getBytes:skipForward:rewind:releaseInfo:)`](cgdataprovidersequentialcallbacks/init(version:getbytes:skipforward:rewind:releaseinfo:).md).
 - `count`: The number of bytes to skip.
 
 ## See Also

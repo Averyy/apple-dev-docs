@@ -43,10 +43,10 @@ This function is thread safe.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default allocator.
 - `theService`: CFNetService to be monitored.
-- `clientCB`: Pointer to callback function that is to be called when a record associated with   changes; cannot be  .
-- `clientContext`: Pointer to user-defined contextual information that is to be passed to the callback specified by   when the callback is called; cannot be  . For details, see  .
+- `clientCB`: Pointer to callback function that is to be called when a record associated with `theService` changes; cannot be `NULL`.
+- `clientContext`: Pointer to user-defined contextual information that is to be passed to the callback specified by `clientCB` when the callback is called; cannot be `NULL`. For details, see [`CFNetServiceClientContext`](cfnetserviceclientcontext.md).
 
 ## See Also
 

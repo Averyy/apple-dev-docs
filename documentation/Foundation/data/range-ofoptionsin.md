@@ -31,8 +31,8 @@ Precondition: `range` must be in the bounds of the Data.
 ## Parameters
 
 - `dataToFind`: The data to be searched for.
-- `options`: Options for the search. Default value is  .
-- `range`: The range of this data in which to perform the search. Default value is  , which means the entire content of this data.
+- `options`: Options for the search. Default value is `[]`.
+- `range`: The range of this data in which to perform the search. Default value is `nil`, which means the entire content of this data.
 
 ## See Also
 

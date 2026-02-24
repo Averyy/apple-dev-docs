@@ -28,7 +28,7 @@ enum NSAttributeType
 
 Core Data supports the following attribute types, which differentiate between bit sizes to enable data-store independence. For some types, a scalar option is available.
 
-|  |  |  |  |
+| **Attribute Type** | **Type** | **Scalar type** | **Scalar by default?** |
 | --- | --- | --- | --- |
 | Integer 16 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`int16_t`](https://developer.apple.com/documentation/kernel/int16_t) | yes |
 | Integer 32 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`int32_t`](https://developer.apple.com/documentation/kernel/int32_t) | yes |

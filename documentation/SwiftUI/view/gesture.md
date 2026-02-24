@@ -21,7 +21,7 @@ A view with an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresent
 
 ## Parameters
 
-- `representable`: The    that creates and manages a gesture recognizer.
+- `representable`: The [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) that creates and manages a gesture recognizer.
 
 ## See Also
 

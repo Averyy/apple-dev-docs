@@ -24,7 +24,7 @@ init(http2RelayEndpoint: NWEndpoint, tlsOptions: NWProtocolTLS.Options = .init()
 
 - `http2RelayEndpoint`: A URL or host endpoint identifying the relay server accessible using HTTP/2.
 - `tlsOptions`: The TLS options to use for the TLS handshake to the relay.
-- `additionalHTTPHeaderFields`: A dictionary of additional HTTP headers to send as part of   requests to the relay.
+- `additionalHTTPHeaderFields`: A dictionary of additional HTTP headers to send as part of `CONNECT` requests to the relay.
 
 ## See Also
 

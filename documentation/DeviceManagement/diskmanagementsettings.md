@@ -53,6 +53,10 @@ This configuration prevents the use of external and network storage devices.
 - [object DiskManagementSettingsRestrictionsObject](diskmanagementsettingsrestrictionsobject.md)
   The restrictions for the disk.
 
+## Properties
+
+- `Restrictions` (DiskManagementSettingsRestrictionsObject): The restrictions for the disk.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

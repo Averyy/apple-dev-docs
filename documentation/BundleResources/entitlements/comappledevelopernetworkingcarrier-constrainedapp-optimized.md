@@ -9,6 +9,10 @@ A Boolean value that indicates whether your app is optimized for a carrier-provi
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Returning `true` indicates to Apple that your app is optimized for a carrier-provided satellite network.

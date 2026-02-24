@@ -26,8 +26,8 @@ If `inRecordType` is `NULL`, this function returns all attribute types supported
 ## Parameters
 
 - `node`: The node.
-- `recordType`: The record type to list supported attribute types for. Can be  .
-- `error`: An error reference for error details. Can be  .
+- `recordType`: The record type to list supported attribute types for. Can be `NULL`.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

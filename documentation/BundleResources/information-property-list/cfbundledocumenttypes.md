@@ -13,6 +13,10 @@ The document types supported by the bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Property List Keys

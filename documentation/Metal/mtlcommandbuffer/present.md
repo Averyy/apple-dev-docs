@@ -28,7 +28,7 @@ This convenience method calls the drawable’s [`present()`](mtldrawable/present
 
 ## Parameters
 
-- `drawable`: An   instance that contains a texture the system can show on a display.
+- `drawable`: An [`MTLDrawable`](mtldrawable.md) instance that contains a texture the system can show on a display.
 
 ## See Also
 

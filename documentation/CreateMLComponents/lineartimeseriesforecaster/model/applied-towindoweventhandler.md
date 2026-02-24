@@ -26,7 +26,7 @@ A shaped array of predictions with shape `[forecastWindowSize, annotationSize]`.
 
 ## Parameters
 
-- `input`: An window of input features with shape  .
+- `input`: An window of input features with shape `[inputWindowSize, featureSize]`.
 - `eventHandler`: An event handler.
 
 ## See Also

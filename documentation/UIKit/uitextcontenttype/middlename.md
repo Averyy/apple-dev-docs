@@ -21,11 +21,11 @@ static let middleName: UITextContentType
 ## See Also
 
 - [static let namePrefix: UITextContentType](uitextcontenttype/nameprefix.md)
-  A property that defines the content in a text input area as a prefix or title, such as .
+  A property that defines the content in a text input area as a prefix or title, such as *Dr*.
 - [static let name: UITextContentType](uitextcontenttype/name.md)
   A property that defines the content in a text input area as a name.
 - [static let nameSuffix: UITextContentType](uitextcontenttype/namesuffix.md)
-  A property that defines the content in a text input area as a suffix, such as .
+  A property that defines the content in a text input area as a suffix, such as *Jr*.
 - [static let givenName: UITextContentType](uitextcontenttype/givenname.md)
   A property that defines the content in a text input area as a first name.
 - [static let familyName: UITextContentType](uitextcontenttype/familyname.md)

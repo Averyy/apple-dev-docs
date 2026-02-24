@@ -47,10 +47,10 @@ If you want to perform a batch read operation on multiple files, use the [`prepa
 
 ## Parameters
 
-- `url`: A URL identifying the file or directory to read. If other objects or processes are acting on the item at the URL, the actual URL passed to the   parameter may be different than the one in this parameter.
-- `options`: One of the reading options described in  . If you pass no options, the   method of relevant file presenters is called before your block executes.
-- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this read operation, that error is returned in this parameter and the block in the   parameter is not executed. If you cancel this operation before the   block is executed, this parameter contains an error object on output.
-- `reader`: A   containing the file operations you want to perform in a coordinated manner. This block receives an   object containing the URL of the item and returns no value. Always use the URL passed into the block instead of the value in the   parameter.
+- `url`: A URL identifying the file or directory to read. If other objects or processes are acting on the item at the URL, the actual URL passed to the `reader` parameter may be different than the one in this parameter.
+- `options`: One of the reading options described in [`NSFileCoordinator.ReadingOptions`](nsfilecoordinator/readingoptions.md). If you pass no options, the [`savePresentedItemChanges(completionHandler:)`](nsfilepresenter/savepresenteditemchanges(completionhandler:).md) method of relevant file presenters is called before your block executes.
+- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this read operation, that error is returned in this parameter and the block in the `reader` parameter is not executed. If you cancel this operation before the `reader` block is executed, this parameter contains an error object on output.
+- `reader`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) containing the file operations you want to perform in a coordinated manner. This block receives an [`NSURL`](nsurl.md) object containing the URL of the item and returns no value. Always use the URL passed into the block instead of the value in the `url` parameter.
 
 ## See Also
 

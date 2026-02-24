@@ -23,7 +23,7 @@ This method is invoked before the animation begins and the view is hidden.
 ## Parameters
 
 - `actionSheet`: The action sheet that is about to be dismissed.
-- `buttonIndex`: The index of the button that was clicked. If this is the cancel button index, the action sheet is canceling. If  , the cancel button index is not set.
+- `buttonIndex`: The index of the button that was clicked. If this is the cancel button index, the action sheet is canceling. If `-1`, the cancel button index is not set.
 
 ## See Also
 

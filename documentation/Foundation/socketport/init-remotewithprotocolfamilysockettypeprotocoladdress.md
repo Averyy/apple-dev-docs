@@ -20,10 +20,10 @@ A connection is not opened to the remote address until data is sent.
 
 ## Parameters
 
-- `family`: The protocol family for the socket port. Possible values are defined in  , such as  ,  , and  .
+- `family`: The protocol family for the socket port. Possible values are defined in `<sys/socket.h>`, such as `AF_LOCAL`, `AF_INET`, and `AF_INET6`.
 - `type`: The type of socket.
 - `protocol`: The specific protocol to use from the protocol family.
-- `address`: The family-specific socket address for the receiver copied into an   object.
+- `address`: The family-specific socket address for the receiver copied into an `NSData` object.
 
 ## See Also
 

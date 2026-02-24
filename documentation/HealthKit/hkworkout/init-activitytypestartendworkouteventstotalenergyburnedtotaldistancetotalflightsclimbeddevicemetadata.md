@@ -31,15 +31,15 @@ If the total energy burned or total distance are non-zero values, create a set o
 
 ## Parameters
 
-- `workoutActivityType`: The type of activity performed during the workout. For the complete list of activity types, see  .
+- `workoutActivityType`: The type of activity performed during the workout. For the complete list of activity types, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
 - `startDate`: The date and time when the activity started.
 - `endDate`: The date and time when the activity ended. This date must be equal to or later than the start date.
 - `workoutEvents`: An array of workout event objects. This array specifies when the user has paused and resumed the workout activity. This method calculates the workout’s duration based on the total amount of active time between the provided start and end dates.
-- `totalEnergyBurned`: A quantity using energy units, or  . This property sets the workout’s   property. It represents the total active energy burned during the workout.
-- `totalDistance`: A quantity using length units, or  . This property sets the workout’s   property.
-- `totalFlightsClimbed`: A quantity unit using count units or  . This property sets the workout’s   property.
+- `totalEnergyBurned`: A quantity using energy units, or `nil`. This property sets the workout’s [`totalEnergyBurned`](hkworkout/totalenergyburned.md) property. It represents the total active energy burned during the workout.
+- `totalDistance`: A quantity using length units, or `nil`. This property sets the workout’s [`totalDistance`](hkworkout/totaldistance.md) property.
+- `totalFlightsClimbed`: A quantity unit using count units or `nil`. This property sets the workout’s [`totalFlightsClimbed`](hkworkout/totalflightsclimbed.md) property.
 - `device`: The device that generated the data for this sample.
-- `metadata`: Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit quantity sample’s capabilities.
+- `metadata`: The metadata dictionary contains extra information describing this workout. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects . The values may be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects. For a complete list of predefined metadata keys, see Metadata Keys. Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit quantity sample’s capabilities.
 
 ## See Also
 

@@ -24,10 +24,10 @@ The default distribution identifier is a multi-value list’sprimary identifier.
 
 ## Parameters
 
-- `group`: The group that   belongs to.
-- `person`: The person whose distribution identifier for   you wish to change. If  , this function raises an exception.
+- `group`: The group that `person` belongs to.
+- `person`: The person whose distribution identifier for `property` you wish to change. If `NULL`, this function raises an exception.
 - `property`: The multi-value list property whose distribution identifier you wish to change.
-- `identifier`: The new distribution identifier, a label used by a multi-value list such as kABAddressHomeLabel for a kABAddressProperty. Pass   to reset the distribution identifier to its default, a multi-value list’s primary identifier.
+- `identifier`: The new distribution identifier, a label used by a multi-value list such as kABAddressHomeLabel for a kABAddressProperty. Pass `NULL` to reset the distribution identifier to its default, a multi-value list’s primary identifier.
 
 ## See Also
 

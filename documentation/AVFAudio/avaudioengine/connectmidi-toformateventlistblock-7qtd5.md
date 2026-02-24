@@ -31,8 +31,8 @@ MIDI connections made with this method specify a single destination connection (
 
 - `sourceNode`: The source node.
 - `destinationNodes`: An array of objects that specify the destination nodes.
-- `format`: If not  , the engine uses this value for the format of the source audio node’s output bus. In all cases, the format of the source node’s output bus has to match with the destination node’s output bus format.
-- `tapBlock`: If not  , the source node’s event list block calls this on the real-time thread. The host can tap the MIDI data of the source node through this block.
+- `format`: If not `NULL`, the engine uses this value for the format of the source audio node’s output bus. In all cases, the format of the source node’s output bus has to match with the destination node’s output bus format.
+- `tapBlock`: If not `NULL`, the source node’s event list block calls this on the real-time thread. The host can tap the MIDI data of the source node through this block.
 
 ## See Also
 

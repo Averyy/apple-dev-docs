@@ -32,9 +32,9 @@ This method is equivalent to invoking [`compare(_:options:range:locale:)`](nsstr
 
 ## Parameters
 
-- `string`: This value must not be  . If this value is  , the behavior is undefined and may change in future versions of macOS.
-- `mask`: See   for details on these options.
-- `rangeOfReceiverToCompare`: The range of the receiver over which to perform the comparison. The range must not exceed the bounds of the receiver.
+- `string`: The string with which to compare the range of the receiver specified by `range`. This value must not be `nil`. If this value is `nil`, the behavior is undefined and may change in future versions of macOS.
+- `mask`: Options for the search—you can combine any of the following using a C bitwise OR operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`, `NSNumericSearch`. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
+- `rangeOfReceiverToCompare`: The range of the receiver over which to perform the comparison. The range must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `range` exceeds the bounds of the receiver.
 
 ## See Also
 

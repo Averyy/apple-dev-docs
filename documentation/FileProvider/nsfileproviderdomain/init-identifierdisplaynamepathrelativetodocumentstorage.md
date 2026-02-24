@@ -20,7 +20,7 @@ init(identifier: NSFileProviderDomainIdentifier, displayName: String, pathRelati
 
 - `identifier`: A string that identifies the domain. The file provider extension can select any string to uniquely identify the domain, as long as it doesn’t contain the colon (:) or slash (/) symbols.
 - `displayName`: The name for the domain that the system shows to the user.
-- `pathRelativeToDocumentStorage`: A path relative to the file provider extension’s   that the system uses to store the domain’s content.
+- `pathRelativeToDocumentStorage`: A path relative to the file provider extension’s [`documentStorageURL`](nsfileproviderextension/documentstorageurl.md) that the system uses to store the domain’s content.
 
 ## See Also
 

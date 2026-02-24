@@ -26,7 +26,7 @@ A Boolean indicating whether the `CMBufferQueue` has been marked with EndOfData,
 
 ## Parameters
 
-- `queue`: The   being interrogated.
+- `queue`: The `CMBufferQueue` being interrogated.
 
 ## See Also
 

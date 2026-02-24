@@ -25,7 +25,7 @@ init(upstream: Upstream, interval: Context.SchedulerTimeType.Stride, scheduler: 
 - `upstream`: The publisher from which this publisher receives elements.
 - `interval`: The interval in which to find and emit the most recent element.
 - `scheduler`: The scheduler on which to publish elements.
-- `latest`: A Boolean value indicating whether to publish the most recent element. If  , the publisher emits the first element received during the interval.
+- `latest`: A Boolean value indicating whether to publish the most recent element. If `false`, the publisher emits the first element received during the interval.
 
 
 ---

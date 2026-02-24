@@ -41,7 +41,7 @@ cancellable = numbers.publisher
 
 ## Parameters
 
-- `count`: The number of elements to omit. The default is  .
+- `count`: The number of elements to omit. The default is `1`.
 
 ## See Also
 

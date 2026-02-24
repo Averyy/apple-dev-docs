@@ -28,7 +28,7 @@ optional func authorizationController(controller: ASAuthorizationController, did
 ## Parameters
 
 - `controller`: The controller that performs the authorization attempt.
-- `error`: An error that explains the failure using one of the codes in  .
+- `error`: An error that explains the failure using one of the codes in [`ASAuthorizationError.Code`](asauthorizationerror-swift.struct/code.md).
 
 ## See Also
 

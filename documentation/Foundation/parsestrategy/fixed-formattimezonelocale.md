@@ -27,8 +27,8 @@ A strategy for parsing a date.
 ## Parameters
 
 - `format`: The string describing the parsing format.
-- `timeZone`: The   used to create the string representation of the date.
-- `locale`: The   used to create the string representation of the date.
+- `timeZone`: The [`TimeZone`](timezone.md) used to create the string representation of the date.
+- `locale`: The [`Locale`](locale.md) used to create the string representation of the date.
 
 ## See Also
 

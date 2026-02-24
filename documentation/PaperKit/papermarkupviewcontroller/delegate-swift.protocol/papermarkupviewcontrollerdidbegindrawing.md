@@ -20,7 +20,7 @@ func paperMarkupViewControllerDidBeginDrawing(_ paperMarkupViewController: Paper
 
 ## Parameters
 
-- `paperMarkupViewController`: The   the user is interacting with.
+- `paperMarkupViewController`: The `PaperMarkupViewController` the user is interacting with.
 
 
 ---

@@ -21,7 +21,7 @@ init(depthPass: ModelSortGroup.DepthPass? = nil)
 
 ## Parameters
 
-- `depthPass`: A depth pass instance that tells the group how to   draw the model entity’s color relative to its depth.
+- `depthPass`: A depth pass instance that tells the group how to draw the model entity’s color relative to its depth.
 
 
 ---

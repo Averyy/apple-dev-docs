@@ -24,7 +24,7 @@ A service can be added to multiple service groups. For example, a light could be
 ## Parameters
 
 - `service`: The service to add.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

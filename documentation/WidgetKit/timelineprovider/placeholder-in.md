@@ -46,7 +46,7 @@ In addition, WidgetKit may render your widget as a placeholder if users choose t
 
 ## Parameters
 
-- `context`: An object that describes the context in which to   show the widget.
+- `context`: An object that describes the context in which to show the widget.
 
 ## See Also
 

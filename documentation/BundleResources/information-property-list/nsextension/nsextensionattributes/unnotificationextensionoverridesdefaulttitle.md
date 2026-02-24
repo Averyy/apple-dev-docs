@@ -9,6 +9,10 @@ A Boolean value indicating whether the title of the app extension’s view contr
 - iOS 10.0+
 - iPadOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

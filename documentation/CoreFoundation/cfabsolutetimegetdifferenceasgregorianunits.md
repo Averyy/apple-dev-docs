@@ -45,8 +45,8 @@ CFShow(output);
 
 - `at1`: An absolute time.
 - `at2`: An absolute time.
-- `tz`: The time zone to use for time correction. Pass   for GMT.
-- `unitFlags`: A mask that specifies which Gregorian unit fields to use when converting the absolute time difference into a Gregorian interval. See   for a list of values from which to construct the mask.
+- `tz`: The time zone to use for time correction. Pass `NULL` for GMT.
+- `unitFlags`: A mask that specifies which Gregorian unit fields to use when converting the absolute time difference into a Gregorian interval. See [`CFGregorianUnitFlags`](cfgregorianunitflags.md) for a list of values from which to construct the mask.
 
 ## See Also
 

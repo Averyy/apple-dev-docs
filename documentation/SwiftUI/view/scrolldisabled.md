@@ -56,7 +56,7 @@ You can also use this modifier to disable scrolling for other kinds of scrollabl
 
 ## Parameters
 
-- `disabled`: A Boolean that indicates whether scrolling is   disabled.
+- `disabled`: A Boolean that indicates whether scrolling is disabled.
 
 ## See Also
 

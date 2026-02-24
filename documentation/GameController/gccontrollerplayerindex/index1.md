@@ -19,6 +19,10 @@ Player one is using the controller.
 case index1
 ```
 
+## Mentions
+
+- [Discovering game controllers](discovering-game-controllers.md)
+
 ## See Also
 
 - [GCControllerPlayerIndex.indexUnset](gccontrollerplayerindex/indexunset.md)

@@ -26,8 +26,8 @@ A locale identifier.
 
 ## Parameters
 
-- `type`: The identifier type used by  , such as   or  .
-- `string`: An identifier string that complies with the standard indicated by  .
+- `type`: The identifier type used by `string`, such as [`Locale.IdentifierType.icu`](locale/identifiertype/icu.md) or [`Locale.IdentifierType.bcp47`](locale/identifiertype/bcp47.md).
+- `string`: An identifier string that complies with the standard indicated by `type`.
 
 ## See Also
 

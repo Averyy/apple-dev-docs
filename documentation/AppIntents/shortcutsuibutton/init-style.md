@@ -20,7 +20,7 @@ Creates a button with the specified style.
 
 ## Parameters
 
-- `style`: The style to use, defaults to  .
+- `style`: The style to use, defaults to [`automatic`](shortcutslinkstyle/automatic.md).
 
 
 ---

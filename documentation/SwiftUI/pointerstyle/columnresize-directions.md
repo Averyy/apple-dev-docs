@@ -24,7 +24,7 @@ You may apply this pointer style to a single view or a view hierarchy using the 
 
 ## Parameters
 
-- `directions`: The horizontal directions in which a column can   be resized. This must not be empty.
+- `directions`: The horizontal directions in which a column can be resized. This must not be empty.
 
 ## See Also
 

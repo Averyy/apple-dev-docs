@@ -20,8 +20,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `attrList`: A pointer to the attribute list to release. Pass   if there is no attribute list to release.
-- `data`: A pointer to the data buffer to release. Pass   if there is no data to release.
+- `attrList`: A pointer to the attribute list to release. Pass `NULL` if there is no attribute list to release.
+- `data`: A pointer to the data buffer to release. Pass `NULL` if there is no data to release.
 
 
 ---

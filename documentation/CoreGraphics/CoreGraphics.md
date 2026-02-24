@@ -72,7 +72,7 @@ In macOS, Core Graphics also includes services for working with display hardware
 - [Quartz Display Services](quartz-display-services.md)
   Provides direct access to features in the macOS window server for configuring and controlling display hardware.
 - [Quartz Event Services](quartz-event-services.md)
-  Provides features for managing —filters for observing and altering the stream of low-level user input events in macOS.
+  Provides features for managing *event taps*—filters for observing and altering the stream of low-level user input events in macOS.
 - [Quartz Window Services](quartz-window-services.md)
   Provides information about the windows managed by the macOS window server.
 ### Reference

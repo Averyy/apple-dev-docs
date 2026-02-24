@@ -16,7 +16,7 @@ func setMaximumLength(_ maxLen: Int)
 
 ## Parameters
 
-- `maxLen`: The maximum number of characters allowed in the annotation string. Pass   to indicate that there is no specified maximum.
+- `maxLen`: The maximum number of characters allowed in the annotation string. Pass `0` to indicate that there is no specified maximum.
 
 ## See Also
 

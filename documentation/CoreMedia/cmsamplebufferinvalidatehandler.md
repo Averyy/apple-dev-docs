@@ -22,7 +22,7 @@ typealias CMSampleBufferInvalidateHandler = (CMSampleBuffer) -> Void
 
 ## Parameters
 
-- `sbuf`: The   being invalidated.
+- `sbuf`: The `CMSampleBuffer` being invalidated.
 
 
 ---

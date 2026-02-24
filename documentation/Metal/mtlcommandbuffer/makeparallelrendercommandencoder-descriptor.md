@@ -26,7 +26,7 @@ An [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) insta
 
 ## Parameters
 
-- `renderPassDescriptor`: An   instance that configures the   the method returns.
+- `renderPassDescriptor`: An [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance that configures the [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) the method returns.
 
 
 ---

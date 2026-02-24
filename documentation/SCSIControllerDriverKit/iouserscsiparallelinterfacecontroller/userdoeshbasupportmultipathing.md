@@ -20,7 +20,7 @@ A value that indicates the result of determining if the driver extension class s
 
 ## Parameters
 
-- `result`: A pointer to a Boolean value. On return, set this value to   if the HBA supports multipathing, and   if it doesn’t.
+- `result`: A pointer to a Boolean value. On return, set this value to `true` if the HBA supports multipathing, and `false` if it doesn’t.
 
 ## See Also
 

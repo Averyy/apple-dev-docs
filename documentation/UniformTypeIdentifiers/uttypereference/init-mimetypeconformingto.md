@@ -27,7 +27,7 @@ This initializer returns `nil` if the system doesn’t know the MIME type.
 ## Parameters
 
 - `mimeType`: A string that represents the MIME type.
-- `supertype`: Another   instance that the resulting type must conform to; for example,  .
+- `supertype`: Another [`UTType`](uttype-swift.struct.md) instance that the resulting type must conform to; for example, [`UTTypeData`](uttypedata.md).
 
 ## See Also
 

@@ -29,8 +29,8 @@ Two new data tables.
 
 ## Parameters
 
-- `proportion`: A value between   and   indicating the fraction of   rows to go into one subset. The remaining rows go into the other subset.
-- `seed`: A random number generator seed. The default value is  .
+- `proportion`: A value between `0.0` and `1.0` indicating the fraction of rows to go into one subset. The remaining rows go into the other subset.
+- `seed`: A random number generator seed. The default value is `1`.
 
 
 ---

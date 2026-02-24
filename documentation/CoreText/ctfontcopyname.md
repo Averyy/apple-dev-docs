@@ -27,7 +27,7 @@ The requested name for the font, or `NULL` if the font does not have an entry fo
 ## Parameters
 
 - `font`: The font reference.
-- `nameKey`: The name specifier. See   for possible values.
+- `nameKey`: The name specifier. See [`Name Specifier Constants`](name-specifier-constants.md) for possible values.
 
 ## See Also
 

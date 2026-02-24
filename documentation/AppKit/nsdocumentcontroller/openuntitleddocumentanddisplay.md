@@ -28,7 +28,7 @@ When `displayDocument` is [`true`](https://developer.apple.com/documentation/Swi
 
 ## Parameters
 
-- `displayDocument`:   if the user interface for the document should be shown, otherwise  .
+- `displayDocument`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user interface for the document should be shown, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -29,10 +29,10 @@ If the color is in a compatible color space, it converts into RGB format and its
 
 ## Parameters
 
-- `red`: On return, the red component of the color object. On applications linked for iOS 10 or later, an extended range sRGB color space specifies the red component and can have any value. Values between   and   are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between   and  .
-- `green`: On return, the green component of the color object. On applications linked for iOS 10 or later,an extended range sRGB color space specifies the green component and can have any value. Values between   and   are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between   and  .
-- `blue`: On return, the blue component of the color object. On applications linked for iOS 10 or later, an extended range sRGB color space specifies the blue component and can have any value. Values between   and   are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between   and  .
-- `alpha`: On return, the opacity component of the color object, specified as a value between   and  .
+- `red`: On return, the red component of the color object. On applications linked for iOS 10 or later, an extended range sRGB color space specifies the red component and can have any value. Values between `0.0` and `1.0` are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between `0.0` and `1.0`.
+- `green`: On return, the green component of the color object. On applications linked for iOS 10 or later,an extended range sRGB color space specifies the green component and can have any value. Values between `0.0` and `1.0` are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between `0.0` and `1.0`.
+- `blue`: On return, the blue component of the color object. On applications linked for iOS 10 or later, an extended range sRGB color space specifies the blue component and can have any value. Values between `0.0` and `1.0` are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between `0.0` and `1.0`.
+- `alpha`: On return, the opacity component of the color object, specified as a value between `0.0` and `1.0`.
 
 ## See Also
 

@@ -34,7 +34,7 @@ It is assumed that the implementation may be expensive, so it will be called onl
 ## Parameters
 
 - `browser`: The browser.
-- `columnIndex`: The index of the column to size. If  , the result is used to resize all columns.
+- `columnIndex`: The index of the column to size. If `-1`, the result is used to resize all columns.
 
 ## See Also
 

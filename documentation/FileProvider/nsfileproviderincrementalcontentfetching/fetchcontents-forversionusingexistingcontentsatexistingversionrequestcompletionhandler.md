@@ -35,7 +35,9 @@ The system can call this method when it has already cached an item and learns th
 - `existingContents`: A URL that points to the content of the currently cached item.
 - `existingVersion`: The version of the currently cached item.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after downloading the update. Pass the following parameters:
+- `completionHandler`: A block that you call after downloading the update. Pass the following parameters: - **`fileContents`**: A URL that points to the new contents, or `nil` if an error occurs.
+- **`item`**: The item’s identifier, or `nil` if an error occurs. The item’s version must match the version of the content passed to the `fileContents` parameter.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

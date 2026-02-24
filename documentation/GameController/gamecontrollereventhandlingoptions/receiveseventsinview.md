@@ -21,7 +21,7 @@ static func receivesEventsInView(_ receivesEventsInView: Bool) -> GameController
 
 If `true`, events are delivered both through the Game Controller framework and as SwiftUI events to your app’s views and gesture recognizers.
 
-If `false`, events are delivered  through the Game Controller framework.
+If `false`, events are delivered **exclusively** through the Game Controller framework.
 
 
 ---

@@ -32,6 +32,10 @@ Start by opening Instruments from your Xcode project:
 
 Before you begin recording a session, consider adding additional instruments that can help you understand the impact your app has on system resources, like Time Profiler, CPU Profiler, and Power Profiler:
 
+- **Time Profiler**: Performs time-based sampling to identify where an app is consuming the most processing time.
+- **CPU Profiler**: Performs fast, low-overhead measurement of CPU time.
+- **Power Profiler**: Performs analysis on the energy consumption across different subsystems.
+
 > **Note**: Some instruments, like Power Profiler, aren’t available to use with Simulator.
 
 After you configure your template for analyzing your Foundation Models usage, choose File > Save As Template, to make it easier to reuse the same configuration when launching Instruments.
@@ -47,6 +51,11 @@ After you perform actions that generate model responses, wait for the responses 
 #### Get to Know the Instrument
 
 The primary timeline consists of events that the instrument measures. The width of each component on the timeline indicates latency. The Foundation Models track appears in your timeline, with several graphs that provide insight into your session and assets:
+
+- **Asset Loading**: The time the system needs to load model data from storage before fulfilling a request.
+- **Response**: The start and end points that reflect the time it takes to perform on overall request.
+- **Inference**: The time the system takes to prepare the generation schema (shown as Prepare Vocabulary), process the input prompt, and compute the output.
+- **Tool Calling**: The time a tool call occurs and the length of time it takes to perform work.
 
 The following image shows the Foundation Models instrument after recording a trace:
 
@@ -77,7 +86,16 @@ The following image shows the details about a single session, including a breakd
 
 The Inference detail area reveals a breakdown of the session calls during the recorded trace. It also includes:
 
+- **Count**: The number of events that occur.
+- **Duration**: The length of processing time for the session.
+- **Max Input Token Count**: An estimate of the required tokens for the prompt, instructions, tools, and so on.
+- **Max Output Token Count**: An estimate of the tokens the model uses for a response.
+
 For each request, Instruments provides additional details:
+
+- **Prompt Processing**: Measures how long it takes to prepare the request.
+- **First Token Inference**: Measures how quickly the model begins generating output. A lower first token latency improves perceived responsiveness.
+- **Extended Inference**: Measures reasoning and verification processing time. A higher latency indicates where the model is spending time “thinking.”
 
 By default, the entire timeline is in a selected state. If you want to focus on a specific time frame to understand more about the performance at a specific point in time, click and drag inside the timeline to select the range you want to analyze, or press Command-Plus Sign to zoom in and Command-Minus Sign to zoom out.
 

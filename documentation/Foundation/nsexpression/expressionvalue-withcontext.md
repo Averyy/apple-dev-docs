@@ -27,7 +27,7 @@ The evaluated object.
 ## Parameters
 
 - `object`: The object against which the expression is evaluated.
-- `context`: Note that   is mutable, and that it can only be accessed during the evaluation of the expression. You must not attempt to retain it for use elsewhere.
+- `context`: A dictionary that the expression can use to store temporary state for one predicate evaluation. Can be `nil`. Note that `context` is mutable, and that it can only be accessed during the evaluation of the expression. You must not attempt to retain it for use elsewhere.
 
 ## See Also
 

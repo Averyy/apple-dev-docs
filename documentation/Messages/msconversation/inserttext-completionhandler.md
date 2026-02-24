@@ -35,7 +35,7 @@ This method operates asynchronously. Although the method returns immediately, th
 ## Parameters
 
 - `text`: The text to be inserted.
-- `completionHandler`: A block that is called as soon as the insertion is complete. This block is passed the following parameter:
+- `completionHandler`: A block that is called as soon as the insertion is complete. This block is passed the following parameter: - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

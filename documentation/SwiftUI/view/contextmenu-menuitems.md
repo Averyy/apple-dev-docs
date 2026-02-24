@@ -62,7 +62,7 @@ If you want to show a different preview, you can use [`contextMenu(menuItems:pre
 
 ## Parameters
 
-- `menuItems`: A closure that produces the menu’s contents. You   can deactivate the context menu by returning nothing from the closure.
+- `menuItems`: A closure that produces the menu’s contents. You can deactivate the context menu by returning nothing from the closure.
 
 ## See Also
 

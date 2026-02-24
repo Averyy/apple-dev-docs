@@ -29,7 +29,7 @@ Use this method to get the alias for an input element. For example, if the user 
 
 ## Parameters
 
-- `inputName`: The name of the physical element. For possible values, see  .
+- `inputName`: The name of the physical element. For possible values, see [`Extended gamepad input names`](extended-gamepad-input-names.md).
 
 ## See Also
 

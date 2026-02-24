@@ -35,9 +35,9 @@ GameKit uses the recipient’s language and region to localize the message. If t
 ## Parameters
 
 - `participants`: The participants who Game Center sends the reminder to.
-- `key`: The identifier for looking up the translated string in the default   file. If you use a formatted string with specifiers, provide the arguments.
+- `key`: The identifier for looking up the translated string in the default `Localized.strings` file. If you use a formatted string with specifiers, provide the arguments.
 - `arguments`: A list of arguments to substitute into the localized string if it’s formatted and contains specifiers.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

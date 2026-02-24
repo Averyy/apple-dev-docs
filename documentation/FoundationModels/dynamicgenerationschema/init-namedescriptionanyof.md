@@ -21,7 +21,7 @@ init(name: String, description: String? = nil, anyOf choices: [DynamicGeneration
 ## Parameters
 
 - `name`: A name this schema can be referenecd by.
-- `description`: A natural language description of this  .
+- `description`: A natural language description of this [`DynamicGenerationSchema`](dynamicgenerationschema.md).
 - `choices`: An array of schemas this one will be a union of.
 
 ## See Also
@@ -29,6 +29,8 @@ init(name: String, description: String? = nil, anyOf choices: [DynamicGeneration
 - [init(arrayOf: DynamicGenerationSchema, minimumElements: Int?, maximumElements: Int?)](dynamicgenerationschema/init(arrayof:minimumelements:maximumelements:).md)
   Creates an array schema.
 - [init(name: String, description: String?, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:properties:).md)
+  Creates an object schema.
+- [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
   Creates an refrence schema.

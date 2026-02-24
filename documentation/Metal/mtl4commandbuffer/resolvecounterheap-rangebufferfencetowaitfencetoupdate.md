@@ -38,8 +38,8 @@ If your app needs to access `buffer` from the CPU, signal an [`MTLSharedEvent`](
 - `counterHeap`: A heap the command resolves.
 - `range`: A range of index values within the heap the command resolves.
 - `buffer`: A buffer the command saves the data it resolves into.
-- `fenceToWait`: A fence the GPU waits for before starting, if applicable; otherwise  .
-- `fenceToUpdate`: A fence the system updates after the command finishes resolving the data; otherwise  .
+- `fenceToWait`: A fence the GPU waits for before starting, if applicable; otherwise `nil`.
+- `fenceToUpdate`: A fence the system updates after the command finishes resolving the data; otherwise `nil`.
 
 
 ---

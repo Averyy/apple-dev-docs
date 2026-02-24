@@ -35,7 +35,7 @@ Your extension has a limited amount of time (no more than 30 seconds) to modify 
 ## Parameters
 
 - `request`: The original notification request. Use this object to get the original content of the notification.
-- `contentHandler`: The block to execute with the modified content. This block has no return value and takes the following parameter:
+- `contentHandler`: The block to execute with the modified content. This block has no return value and takes the following parameter: - **contentToDeliver**: A [`UNNotificationContent`](unnotificationcontent.md) object with the content the system displays to the user.
 
 ## See Also
 

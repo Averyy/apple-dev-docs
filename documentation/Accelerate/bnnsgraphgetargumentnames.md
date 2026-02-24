@@ -31,8 +31,8 @@ This function is the equivalent of the concatenation of [`BNNSGraphGetOutputName
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
-- `argument_names_count`: The number of elements in the   array.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
+- `argument_names_count`: The number of elements in the `argument_names` array.
 - `argument_names`: On output, an array of pointers to strings that contain the argument names.
 
 ## See Also

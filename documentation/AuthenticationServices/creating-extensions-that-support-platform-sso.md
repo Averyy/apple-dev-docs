@@ -30,9 +30,17 @@ The key service registers encryption keys to unlock the Mac at the login window 
 
 Set the following values in the [`ExtensibleSingleSignOnKerberos.ExtensionData`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOnKerberos/ExtensionData-data.dictionary) to enable use of the Platform SSO TGT with the Kerberos SSO extension:
 
+- **`usePlatformSSOTGT`**: If [`true`](https://developer.apple.com/documentation/Swift/true), the Kerberos SSO extension uses the TGT from Platform SSO with the same realm. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`allowPlatformSSOAuthFallback`**: If [`true`](https://developer.apple.com/documentation/Swift/true), the user can continue to sign in to the Kerberos SSO extension when using the TGT from Platform SSO. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
+- **`performKerberosOnly`**: If [`true`](https://developer.apple.com/documentation/Swift/true), the Kerberos SSO extension doesn’t perform password expiration checks, external password change checks, or retrieve the user’s home directory. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+
 ##### Use Diagnostics to Iterate on the Configuration During Development
 
 When you’re developing for Platform SSO, the IdP can generate sample messages that use the current configuration. Perform these actions in Terminal to check the configuration and state of the SSO tokens while you iterate on the configuration:
+
+- **View messages**: Run `app-sso platform --messages`. These messages don’t use the real keys for the device and instead use a key generated for each call. The private key is also included to enable compatibility testing with other systems such as the server.
+- **Check the configuration and see the state of the SSO tokens**: Run `app-sso platform --state`.
+- **See high-level requests and results**: Filter the log on subsystem `com.apple.AppSSO` and category `PODiagnostics`.
 
 ## See Also
 

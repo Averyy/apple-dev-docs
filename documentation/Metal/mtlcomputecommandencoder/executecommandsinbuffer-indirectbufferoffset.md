@@ -21,9 +21,9 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, indirectBuf
 
 ## Parameters
 
-- `buffer`: The   instance containing the commands to execute.
-- `indirectRangeBuffer`: When running on Metal devices that belong to the   GPU family, the maximum value for the   property of that structure is 0x4000 (16,384).   Metal devices that belong to an Apple silicon family, such as  , don’t have this limitation.
-- `offset`: The number of bytes from the start of   containing the execution range to use. Align the offset on a multiple of  .
+- `buffer`: The [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance containing the commands to execute.
+- `indirectRangeBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](mtlindirectcommandbufferexecutionrange.md) structure. When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) GPU family, the maximum value for the [`length`](mtlindirectcommandbufferexecutionrange/length.md) property of that structure is 0x4000 (16,384). Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](mtlgpufamily/apple10.md), don’t have this limitation.
+- `offset`: The number of bytes from the start of `indirectRangeBuffer` containing the execution range to use. Align the offset on a multiple of `4`.
 
 ## See Also
 

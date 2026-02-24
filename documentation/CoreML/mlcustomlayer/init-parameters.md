@@ -33,7 +33,7 @@ If the layer cannot be initialized, your implementation should throw a [`customL
 
 ## Parameters
 
-- `parameters`: The contents of the parameter dictionary from the   file.
+- `parameters`: The contents of the parameter dictionary from the `.mlmodel` file.
 
 
 ---

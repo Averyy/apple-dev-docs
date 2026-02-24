@@ -17,7 +17,7 @@ func sendResponse(_ response: String!, withOK: Bool)
 ## Parameters
 
 - `response`: A string containing the data.
-- `withOK`: If  , send an   message after sending the response.
+- `withOK`: If `true`, send an `OK` message after sending the response.
 
 ## See Also
 

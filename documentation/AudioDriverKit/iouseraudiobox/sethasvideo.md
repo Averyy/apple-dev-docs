@@ -26,7 +26,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_has_video`:   if the box supports video; otherwise,  .
+- `in_has_video`: `true` if the box supports video; otherwise, `false`.
 
 ## See Also
 

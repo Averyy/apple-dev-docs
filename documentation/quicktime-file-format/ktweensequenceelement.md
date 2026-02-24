@@ -13,6 +13,10 @@ The ID of a `kTweenSequenceElement` atom must be unique among the `kTweenSequenc
 
 This atom is a leaf atom. The data type of its data is `TweenSequenceEntryRecord`, a data structure that contains the following fields:
 
+- **endPercent**: A value of type Fixed that specifies the point in the duration of the tween media sample at which the sequence entry ends. This is expressed as a percentage; for example, if the value is `75.0`, the sequence entry ends after three-quarters of the total duration of the tween media sample have elapsed. The sequence entry begins after the end of the previous sequence entry or, for the first entry in the sequence, at the beginning of the tween media sample.
+- **tweenAtomID**: A value of type `QTAtomID` that specifies the `kTweenEntry` atom containing the tween for the sequence element. The `kTweenEntry` atom and the `kTweenSequenceElement` atom must both be a child atoms of the same tween QT atom container.
+- **dataAtomID**: A value of type `QTAtomID` that specifies the `kTweenData` atom containing the data for the tween. This atom must be a child atom of the atom specified by the `tweenAtomID` field.
+
 ## See Also
 
 - [kTweenPictureData](ktweenpicturedata.md)

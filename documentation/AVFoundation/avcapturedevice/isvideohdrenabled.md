@@ -23,7 +23,7 @@ The device ignores the value of this property when [`activeColorSpace`](avcaptur
 
 Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you finish configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock and allow other devices to configure the settings.
 
-Note that setting this property may cause a lengthy reconfiguration of the device, similar to setting a new active format or capture session preset. If you’re setting either the active format or the [`sessionPreset`](avcapturesession/sessionpreset.md)  this property, you should bracket these operations with [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and session [`commitConfiguration()`](avcapturesession/commitconfiguration().md) to minimize reconfiguration time.
+Note that setting this property may cause a lengthy reconfiguration of the device, similar to setting a new active format or capture session preset. If you’re setting either the active format or the [`sessionPreset`](avcapturesession/sessionpreset.md) *and* this property, you should bracket these operations with [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and session [`commitConfiguration()`](avcapturesession/commitconfiguration().md) to minimize reconfiguration time.
 
 This property is key-value observable.
 

@@ -33,6 +33,8 @@ This method applies the minimum component filter to an image. The effect applies
 
 The minimum component filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds darkness and makes the input image grayscale:
 
 ```swift

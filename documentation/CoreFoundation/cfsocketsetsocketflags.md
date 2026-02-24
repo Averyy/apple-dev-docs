@@ -53,7 +53,7 @@ Do not close the underlying native socket without invalidating the CFSocket obje
 ## Parameters
 
 - `s`: The CFSocket object to modify.
-- `flags`: A bitwise-OR combination of flags controlling the behavior of  . See   for the list of available flags.
+- `flags`: A bitwise-OR combination of flags controlling the behavior of `s`. See [`CFSocket Flags`](1560944-cfsocket-flags.md) for the list of available flags.
 
 ## See Also
 

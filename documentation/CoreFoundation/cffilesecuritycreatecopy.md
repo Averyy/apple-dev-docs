@@ -26,8 +26,8 @@ Returns a new `CFFileSecurityRef` object, or `NULL` if an error occurred. Owners
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `fileSec`: The   object to copy.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `fileSec`: The `CFFileSecurityRef` object to copy.
 
 ## See Also
 

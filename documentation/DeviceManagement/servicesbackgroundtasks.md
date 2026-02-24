@@ -66,6 +66,13 @@ If both `ExecutableAssetReference` and `LaunchdConfigurations` are present, and 
 - [object ServicesBackgroundTasksLaunchdItemObject](servicesbackgroundtaskslaunchditemobject.md)
   A dictionary of launchd configurations.
 
+## Properties
+
+- `ExecutableAssetReference` (string): Specifies the identifier of an asset declaration containing a reference to the files to be used for the background task configuration. The corresponding asset must be of type `com.apple.asset.data`. The referenced data must be a zip archive of an entire directory, that will be expanded and stored in a well known location for the background task. The asset’s “ContentType” and “Hash-SHA-256” keys in the “Reference” key are required. This file should contain background task executables, scripts, and configuration files, but not the `launchd` configuration files.
+- `LaunchdConfigurations` ([ServicesBackgroundTasksLaunchdItemObject]): An array of `launchd` configuration files used to run the background tasks.
+- `TaskDescription` (string): A description of the set of background tasks managed by this configuration.
+- `TaskType` (string) *(required)*: The unique identifier of the set of background tasks managed with this configuration. This should be a reverse DNS style identifier. The system uses this identifier to differentiate between tasks in different configurations.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

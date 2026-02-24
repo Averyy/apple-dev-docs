@@ -6,7 +6,7 @@ Filter a multichannel signal with a cascade of biquadratic sections.
 
 #### Overview
 
-The vDSP library implements biquadratic filtering as a cascade of individual infinite impulse response (IIR) filters called  Each section has its own set of feedback and feedforward coefficients, and implements a direct-form 2 filter.
+The vDSP library implements biquadratic filtering as a cascade of individual infinite impulse response (IIR) filters called *sections.* Each section has its own set of feedback and feedforward coefficients, and implements a direct-form 2 filter.
 
 When the biquadratic filter function executes, the sections execute in sequence. Each section processes the entire input signal and passes its output to the next section for further processing.
 

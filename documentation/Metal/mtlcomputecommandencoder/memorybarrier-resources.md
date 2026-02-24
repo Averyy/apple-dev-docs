@@ -27,7 +27,7 @@ To determine whether a GPU supports memory barriers, see the [`Metal feature set
 
 ## Parameters
 
-- `resources`: An array of   instances the barrier applies to.
+- `resources`: An array of [`MTLResource`](mtlresource.md) instances the barrier applies to.
 
 ## See Also
 

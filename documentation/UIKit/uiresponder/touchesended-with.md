@@ -29,13 +29,25 @@ func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
 
 UIKit calls this method when a finger or Apple Pencil is no longer touching the screen. Many UIKit classes override this method and use it to clean up state involved in the handling of the corresponding touch events. The default implementation of this method forwards the message up the responder chain. When creating your own subclasses, call `super` to forward any events that you don’t handle yourself, like in the following code.
 
+**Swift**:
+
+```swift
+super.touchesEnded(touches, with: event)
+```
+
+**Objective-C**:
+
+```objc
+[super touchesEnded:touches withEvent:event];
+```
+
 If you override this method without calling super (a common use pattern), you must also override the other methods for handling touch events, even if your implementations do nothing.
 
 > **Note**:  In iOS 17, Messages allows you to interactively resize iMessage apps with a vertical pan gesture. Messages handles any conflicts between resize gestures and your custom gestures. If your app uses manual touch handling, override those methods in your app’s [`UIView`](uiview.md). You can either change your manual touch handling code to use a gesture recognizer instead, or your [`UIView`](uiview.md) can override [`gestureRecognizerShouldBegin(_:)`](uigesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md) and return NO when your iMessage app doesn’t own the gesture.
 
 ## Parameters
 
-- `touches`: A set of   instances that represent the touches for the ending phase of the event represented by  . For touches in a view, this set contains only one touch by default. To receive multiple touches, you must set the view’s   property to  .
+- `touches`: A set of [`UITouch`](uitouch.md) instances that represent the touches for the ending phase of the event represented by `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, you must set the view’s [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 - `event`: The event to which the touches belong.
 
 ## See Also

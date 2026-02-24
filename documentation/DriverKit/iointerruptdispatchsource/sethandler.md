@@ -23,7 +23,7 @@ virtual kern_return_t SetHandler(OSAction *action);
 
 ## Parameters
 
-- `action`: An   object that specifies the method to call when an interrupt occurs. The system retains this   object until you call this method with a different action object or you cancel the dispatch source.
+- `action`: An [`OSAction`](osaction.md) object that specifies the method to call when an interrupt occurs. The system retains this [`OSAction`](osaction.md) object until you call this method with a different action object or you cancel the dispatch source.
 
 ## See Also
 

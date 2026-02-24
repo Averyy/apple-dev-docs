@@ -6,7 +6,7 @@ Discover and invite other players to participate in a real-time game.
 
 #### Overview
 
-GameKit enables the user of your game, called the , to discover and connect with other players in real-time multiplayer games.
+GameKit enables the user of your game, called the *local player*, to discover and connect with other players in real-time multiplayer games.
 
 For design guidance, see [`Human Interface Guidelines > Technologies > Game Center > Multiplayer`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center#Multiplayer).
 

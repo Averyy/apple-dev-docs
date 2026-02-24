@@ -54,8 +54,8 @@ Do not put a navigation destination modifier inside a “lazy” container, like
 
 ## Parameters
 
-- `item`: A binding to the data presented, or   if nothing is   currently presented.
-- `destination`: A view builder that defines a view to display   when   is not  .
+- `item`: A binding to the data presented, or `nil` if nothing is currently presented.
+- `destination`: A view builder that defines a view to display when `item` is not `nil`.
 
 ## See Also
 

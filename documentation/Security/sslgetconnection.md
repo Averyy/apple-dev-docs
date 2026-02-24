@@ -28,7 +28,7 @@ You can use this function on either the client or server to retrieve the connect
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `connection`: On return, a pointer to a session connection reference. If no connection has been set using the   function, then this parameter is   on return.
+- `connection`: On return, a pointer to a session connection reference. If no connection has been set using the [`SSLSetConnection(_:_:)`](sslsetconnection(_:_:).md) function, then this parameter is `NULL` on return.
 
 
 ---

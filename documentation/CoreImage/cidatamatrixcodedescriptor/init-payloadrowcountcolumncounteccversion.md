@@ -28,7 +28,7 @@ init?(payload errorCorrectedPayload: Data, rowCount: Int, columnCount: Int, eccV
 - `errorCorrectedPayload`: The data to encode in the Data Matrix code symbol.
 - `rowCount`: The number of rows in the Data Matrix code symbol.
 - `columnCount`: The number of columns in the Data Matrix code symbol.
-- `eccVersion`: The   for the Data Matrix code symbol.
+- `eccVersion`: The [`CIDataMatrixCodeDescriptor.ECCVersion`](cidatamatrixcodedescriptor/eccversion-swift.enum.md) for the Data Matrix code symbol.
 
 
 ---

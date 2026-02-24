@@ -26,7 +26,7 @@ The default line width is `1` unit. When stroked, the line straddles the path, w
 
 ## Parameters
 
-- `width`: The new line width to use, in user space units. The value must be greater than  .
+- `width`: The new line width to use, in user space units. The value must be greater than `0`.
 
 ## See Also
 

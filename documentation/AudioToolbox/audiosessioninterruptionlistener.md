@@ -28,8 +28,8 @@ To register your interruption listener callback with your application’s audio 
 
 ## Parameters
 
-- `inClientData`: Data that you specified in the   parameter of the   function. Can be  .
-- `inInterruptionState`: A constant that indicates whether the interruption has just started or just ended. See  .
+- `inClientData`: Data that you specified in the `inClientData` parameter of the [`AudioSessionInitialize(_:_:_:_:)`](audiosessioninitialize(_:_:_:_:).md) function. Can be `NULL`.
+- `inInterruptionState`: A constant that indicates whether the interruption has just started or just ended. See [`Audio Session Interruption States`](1618425-audio-session-interruption-state.md).
 
 ## See Also
 

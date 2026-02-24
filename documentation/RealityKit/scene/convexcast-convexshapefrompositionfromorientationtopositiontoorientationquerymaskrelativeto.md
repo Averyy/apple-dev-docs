@@ -31,13 +31,13 @@ For objects that intersect the convex shape at its starting position and orienta
 ## Parameters
 
 - `convexShape`: The convex shape to cast.
-- `fromPosition`: The starting position of   relative to   .
-- `fromOrientation`: The starting orientation of   relative to   .
-- `toPosition`: The ending position of   relative to   .
-- `toOrientation`: The ending orientation of   relative to   .
+- `fromPosition`: The starting position of `convexShape` relative to `referenceEntity`.
+- `fromOrientation`: The starting orientation of `convexShape` relative to `referenceEntity`.
+- `toPosition`: The ending position of `convexShape` relative to `referenceEntity`.
+- `toOrientation`: The ending orientation of `convexShape` relative to `referenceEntity`.
 - `query`: The query type.
-- `mask`: A collision mask that you can use to prevent collisions with   certain objects.
-- `referenceEntity`: An entity that defines the frame of reference. The   method returns results relative to this entity. Set to   to use the   world space origin  .
+- `mask`: A collision mask that you can use to prevent collisions with certain objects.
+- `referenceEntity`: An entity that defines the frame of reference. The method returns results relative to this entity. Set to `nil` to use the world space origin `(0, 0, 0)`.
 
 ## See Also
 

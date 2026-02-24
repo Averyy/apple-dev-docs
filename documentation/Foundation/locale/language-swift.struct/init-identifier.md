@@ -22,7 +22,7 @@ init(identifier: String)
 
 ## Parameters
 
-- `identifier`: A Unicode language identifier, like  ,  , or  .
+- `identifier`: A Unicode language identifier, like `en-US`, `es-419`, or `zh-Hant-TW`.
 
 ## See Also
 

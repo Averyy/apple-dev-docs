@@ -39,14 +39,14 @@ else {
 
 ## Parameters
 
-- `c0`: The   value in the transfer function.
-- `c1`: The   value in the transfer function.
-- `c2`: The   value in the transfer function.
-- `c3`: The   value in the transfer function.
-- `gamma`: The   value in the transfer function.
-- `cutoff`: The   value in the transfer function.
-- `c4`: The   value in the transfer function.
-- `c5`: The   value in the transfer function.
+- `c0`: The `c0` value in the transfer function.
+- `c1`: The `c1` value in the transfer function.
+- `c2`: The `c2` value in the transfer function.
+- `c3`: The `c3` value in the transfer function.
+- `gamma`: The `gamma` value in the transfer function.
+- `cutoff`: The `cutoff` value in the transfer function.
+- `c4`: The `c4` value in the transfer function.
+- `c5`: The `c5` value in the transfer function.
 
 ## See Also
 

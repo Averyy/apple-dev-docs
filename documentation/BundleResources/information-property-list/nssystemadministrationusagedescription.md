@@ -8,6 +8,10 @@ A message in macOS that tells people why the app is requesting to manipulate the
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use this key if your app uses certain APIs that manipulate system configuration, like [`ODRecordSetValue(_:_:_:_:)`](https://developer.apple.com/documentation/OpenDirectory/ODRecordSetValue(_:_:_:_:)).

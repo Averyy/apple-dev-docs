@@ -22,7 +22,7 @@ static func slice(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Slic
 ## Parameters
 
 - `data`: The source buffer.
-- `bytesPerRow`: The stride in bytes between rows of texture data that RealityKit stores in the source buffer.   The value needs to be a multiple of the destination texture’s pixel size, in bytes.
+- `bytesPerRow`: The stride in bytes between rows of texture data that RealityKit stores in the source buffer. The value needs to be a multiple of the destination texture’s pixel size, in bytes.
 
 ## See Also
 

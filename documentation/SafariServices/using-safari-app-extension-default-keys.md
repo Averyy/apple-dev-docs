@@ -12,6 +12,12 @@ The keys under the `NSExtension` key apply to the Safari app extension point, `c
 
 A Safari app extension includes these entries by default:
 
+- **`NSExtensionPointIdentifier`**: An identifier string to indicate a Safari extension: `com.apple.Safari.extension`.
+- **`NSExtensionPrincipalClass`**: A string to indicate the class with the principal implementation for your extension, with a value of `SafariExtensionHandler`, which the `SafariExtensionHandler.swift` file defines in Swift, and the `SafariExtensionHandler.h` and `SafariExtensionHandler.m` files define in Objective-C.
+- **`SFSafariContentScript`**: An array of dictionaries with a single entry, containing a `Script` key that specifies the `script.js` file in the template. When your extension loads, Safari automatically embeds this script file into every webpage that a user visits and the extension has access to. See [`Injecting a script into a webpage`](injecting-a-script-into-a-webpage.md).
+- **`SFSafariToolbarItem`**: A dictionary describing a toolbar item that uses the `ToolbarItemIcon.pdf` image from the template as the image for the button. See [`Adjusting settings for a toolbar item`](adjusting-settings-for-a-toolbar-item.md).
+- **`SFSafariWebsiteAccess`**: A dictionary with two keys: the `Level` key to indicate the level of access (set to `Some`), and the `Allowed Domains` key, which includes an array of strings to limit the web addresses that your extension works with. For more information, see [`Adjusting website access permissions`](adjusting-website-access-permissions.md).
+
 Although `SFSafariContentScript`, `SFSafariToolbarItem`, and `SFSafariWebsiteAccess` are all default keys, they’re not required because they specify features that may or may not exist in your Safari app extension. To learn more about feature keys, see [`Setting Safari app extension feature keys`](setting-safari-app-extension-feature-keys.md).
 
 ##### Review the Sample Information Property List

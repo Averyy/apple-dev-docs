@@ -30,6 +30,10 @@ Implement this method to create an item in your remote storage that matches the 
 
 The `itemTemplate` parameter describes the item’s intended state, including:
 
+- **[`filename`](nsfileprovideritemprotocol/filename.md)**: The item’s name.
+- **[`contentType`](nsfileprovideritemprotocol/contenttype.md)**: The item’s type. The item can be a file, directory, symlink, or alias. [`UTTypeFolder`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeFolder), [`UTTypeSymbolicLink`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeSymbolicLink), and [`UTTypeAliasFile`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeAliasFile) types typically need special handling.
+- **[`parentItemIdentifier`](nsfileprovideritemprotocol/parentitemidentifier.md)**: The item’s location.
+
 The system sets the template’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md) to a unique value and guarantees that it remains the same for the specified item. For example, the system can reuse the identifier to replay this method after a crash.
 
 In general, set the properties in your `createdItem` to match the `itemTemplate`. One exception is the [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md) property; always provide your own identifier for the item. If you reuse an existing identifier, the system replaces the local copy of the old item with the new one.
@@ -44,10 +48,13 @@ If the attempt to create an item fails because the parent directory doesn’t ex
 
 - `itemTemplate`: An object that defines the state of the new or imported item.
 - `fields`: The fields that you should apply to the new or imported item.
-- `url`: If the item is a file with the   field set, this is the URL to the item’s content. Otherwise, it’s  .
+- `url`: If the item is a file with the [`contents`](nsfileprovideritemfields/contents.md) field set, this is the URL to the item’s content. Otherwise, it’s `nil`.
 - `options`: The item creation options.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after uploading the item to your remote storage. You pass the following parameters:
+- `completionHandler`: A block that you call after uploading the item to your remote storage. You pass the following parameters: - **`createdItem`**: The newly created item.
+- **`stillPendingFields`**: Any fields that you haven’t yet applied. If you can apply all the fields at once, pass an empty `NSFileProviderItemField` instance.
+- **`shouldFetchContent`**: A Boolean value that indicates whether the system should fetch the item’s content from your remote storage.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

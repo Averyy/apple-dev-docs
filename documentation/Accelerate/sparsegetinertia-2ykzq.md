@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Returns the inertia of a double-precision  factorization.
+Returns the inertia of a double-precision *LDLᵀ* factorization.
 
 **Availability**:
 - iOS 16.0+
@@ -26,7 +26,7 @@ func SparseGetInertia(_ Factored: SparseOpaqueFactorization_Double, _ num_positi
 
 #### Discussion
 
-This function returns the number of negative, zero, and positive pivots that the sparse factorization functions, [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md) and [`SparseFactor(_:_:_:_:)`](sparsefactor(_:_:_:_:)-88xmk.md), take during an  factorization.
+This function returns the number of negative, zero, and positive pivots that the sparse factorization functions, [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md) and [`SparseFactor(_:_:_:_:)`](sparsefactor(_:_:_:_:)-88xmk.md), take during an *LDLᵀ* factorization.
 
 In some cases — for example, when the original matrix’s eigenvalues are close to zero — the computed numerical inertia may not be an accurate reflection of the true inertia. In such cases, the computed numerical inertia is dependent on the [`zeroTolerance`](sparsenumericfactoroptions/zerotolerance.md) and [`pivotTolerance`](sparsenumericfactoroptions/pivottolerance.md) values of the [`SparseNumericFactorOptions`](sparsenumericfactoroptions.md) structure.
 
@@ -34,15 +34,15 @@ In some cases — for example, when the original matrix’s eigenvalues are clos
 
 ## Parameters
 
-- `Factored`: The   factorization.
-- `num_positive`: On return, the number of positive pivots the sparse factorization functions take during the factorization of  .
-- `num_zero`: On return, the number of zero pivots the sparse factorization functions take during the factorization of  .
-- `num_negative`: On return, the number of negative pivots the sparse factorization functions take during the factorization of  .
+- `Factored`: The [`SparseFactorizationLDLTTPP`](sparsefactorizationldlttpp.md) factorization.
+- `num_positive`: On return, the number of positive pivots the sparse factorization functions take during the factorization of `Factored`.
+- `num_zero`: On return, the number of zero pivots the sparse factorization functions take during the factorization of `Factored`.
+- `num_negative`: On return, the number of negative pivots the sparse factorization functions take during the factorization of `Factored`.
 
 ## See Also
 
 - [func SparseGetInertia(SparseOpaqueFactorization_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6r90r.md)
-  Returns the inertia of a single-precision  factorization.
+  Returns the inertia of a single-precision *LDLᵀ* factorization.
 - [func SparseGetInertia(SparseOpaqueFactorization_Complex_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-2gc7f.md)
   Returns the inertia of an LDLT factorization in complex double.
 - [func SparseGetInertia(SparseOpaqueFactorization_Complex_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6ca5h.md)

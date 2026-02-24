@@ -12,6 +12,10 @@ App-specific font files located in the bundle and that the system loads at runti
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Set this key to an array of font filenames, including the filename extension, that reside in the app’s bundle.

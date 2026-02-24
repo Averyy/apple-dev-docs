@@ -23,9 +23,9 @@ func CTFontGetVerticalTranslationsForGlyphs(_ font: CTFont, _ glyphs: UnsafePoin
 ## Parameters
 
 - `font`: The font reference.
-- `glyphs`: An array of   number of glyphs.
-- `translations`: On output, the computed origin offsets in an array of   number of   objects.
-- `count`: The capacity of the   and   buffers.
+- `glyphs`: An array of `count` number of glyphs.
+- `translations`: On output, the computed origin offsets in an array of `count` number of [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) objects.
+- `count`: The capacity of the `glyphs` and `translations` buffers.
 
 ## See Also
 

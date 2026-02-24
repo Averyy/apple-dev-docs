@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app has read-write access to the user
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, first enable the Hardened Runtime capability in Xcode. Then, under Resource Access, select Photos Library.

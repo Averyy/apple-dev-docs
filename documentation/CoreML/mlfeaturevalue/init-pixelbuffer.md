@@ -26,7 +26,7 @@ convenience init(pixelBuffer value: CVPixelBuffer)
 
 ## Parameters
 
-- `value`: A   (Swift) or   (Objective-C) instance.
+- `value`: A [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) (Objective-C) instance.
 
 ## See Also
 

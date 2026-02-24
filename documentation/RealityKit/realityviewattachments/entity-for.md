@@ -24,7 +24,7 @@ Attachment entities are not automatically added to your [`RealityView`](realityv
 
 ## Parameters
 
-- `id`: The value that you used to tag the view when you   define it in the   parameter of the    initializer  .
+- `id`: The value that you used to tag the view when you define it in the `attachments` parameter of the [`RealityView`](realityview.md) initializer [`init(make:update:attachments:)`](realityview/init(make:update:attachments:).md).
 
 
 ---

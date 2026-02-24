@@ -11,6 +11,10 @@ A Boolean value that indicates whether your app meets the requirements of the vi
 - macOS 10.14+
 - tvOS 10.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement enables you to use the required APIs for the Apple TV App and Universal Search.

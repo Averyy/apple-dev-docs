@@ -68,6 +68,12 @@ Specify `com.apple.systempolicy.control` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `AllowIdentifiedDevelopers` (boolean): If `true`, enables Gatekeeper’s “Mac App Store and identified developers” option. If `false`, enables Gatekeeper’s “Mac App Store” option. If the value of `EnableAssessment` isn’t set to `true`, this key has no effect.
+- `EnableAssessment` (boolean): If `true`, enables Gatekeeper. If `false`, disables Gatekeeper.
+- `EnableXProtectMalwareUpload` (boolean): If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection.
+
 ## See Also
 
 - [object SystemPolicyKernelExtensions](systempolicykernelextensions.md)

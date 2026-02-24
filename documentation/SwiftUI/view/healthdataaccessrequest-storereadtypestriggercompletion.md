@@ -24,6 +24,88 @@ nonisolated func healthDataAccessRequest(store: HKHealthStore, readTypes: Set<HK
 
 HealthKit performs this request asynchronously when you modify the trigger’s value. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the authorization sheet when you modify the trigger’s value. The authorization sheet lists all the requested permissions. After the user finishes responding, HealthKit calls the completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit calls the completion when you modify the trigger without prompting the user.
 
+**Authenticating on launch**:
+
+```swift
+@State private var trigger = false
+
+var body: some Scene {
+    WindowGroup {
+        ContentView(enabled: $authenticated)
+            .healthDataAccessRequest(store: store,
+                                     readTypes: healthDataTypes,
+                                     trigger: trigger) { result in
+                switch result {
+
+                case .success(_):
+                    authenticated = true
+                case .failure(let error):
+                    // Handle the error here.
+                    fatalError("*** An error occurred while requesting authentication: \(error) ***")
+                }
+
+                logger.debug("Authentication Complete.")
+            }
+            .onAppear() {
+                trigger.toggle()
+            }
+    }
+}
+```
+
+**Full Swift file**:
+
+```swift
+import SwiftUI
+import HealthKit
+import HealthKitUI
+import os
+
+let healthDataTypes: Set = [
+    HKQuantityType.workoutType(),
+    HKQuantityType(.heartRate),
+    HKQuantityType(.activeEnergyBurned),
+    HKQuantityType(.basalEnergyBurned),
+    HKQuantityType(.distanceWalkingRunning),
+    HKQuantityType(.stepCount)
+]
+
+private let logger = Logger(subsystem: "example.com.MyWorkoutApp",
+                            category: "iOS App")
+
+@main
+struct MyApp: App {
+
+    @State private var authenticated = false
+    @State private var trigger = false
+
+    let store = HKHealthStore()
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView(enabled: $authenticated)
+                .healthDataAccessRequest(store: store,
+                                         readTypes: healthDataTypes,
+                                         trigger: trigger) { result in
+                    switch result {
+
+                    case .success(_):
+                        authenticated = true
+                    case .failure(let error):
+                        // Handle the error here.
+                        fatalError("*** An error occurred while requesting authentication: \(error) ***")
+                    }
+
+                    logger.debug("Authentication Complete.")
+                }
+                .onAppear() {
+                    trigger.toggle()
+                }
+        }
+    }
+}
+```
+
 Customize the messages displayed on the permissions sheet by setting the following key:
 
 - [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) customizes the message for reading data.
@@ -37,8 +119,8 @@ After users set the permissions for your app, they can always change them using 
 ## Parameters
 
 - `store`: The HealthKit store where you’re requesting authorization.
-- `readTypes`: An optional set containing the data types you want to read.   This set can contain any concrete subclass of the    class   (any of the  ,   ,   ,   , or     classes ).   If the user grants permission, your app can read these data types from the HealthKit store.
-- `trigger`: A value used to trigger the request. This value must be a    variable.   Any change to the variable triggers a request.
+- `readTypes`: An optional set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](https://developer.apple.com/documentation/HealthKit/HKObjectType) class (any of the [`HKCharacteristicType`](https://developer.apple.com/documentation/HealthKit/HKCharacteristicType), [`HKQuantityType`](https://developer.apple.com/documentation/HealthKit/HKQuantityType), [`HKCategoryType`](https://developer.apple.com/documentation/HealthKit/HKCategoryType), [`HKWorkoutType`](https://developer.apple.com/documentation/HealthKit/HKWorkoutType), or [`HKCorrelationType`](https://developer.apple.com/documentation/HealthKit/HKCorrelationType) classes ). If the user grants permission, your app can read these data types from the HealthKit store.
+- `trigger`: A value used to trigger the request. This value must be a [`State`](State.md) variable. Any change to the variable triggers a request.
 - `completion`: A block that the system calls after the request is complete. The system passes the result parameter.
 
 ## See Also

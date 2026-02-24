@@ -26,14 +26,12 @@ After receiving a content key request and calling [`makeStreamingContentKeyReque
 
 ## Parameters
 
-- `keyResponse`: An   object carrying a response to a content key request.
+- `keyResponse`: An [`AVContentKeyResponse`](avcontentkeyresponse.md) object carrying a response to a content key request.
 
 ## See Also
 
 - [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
   Tells the receiver that the app was unable to obtain a content key response.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
 
 
 ---

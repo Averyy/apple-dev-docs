@@ -30,7 +30,7 @@ A leaderboard object that you initialize with this method ignores the [`playerSc
 
 ## Parameters
 
-- `players`: An array of   objects that holds the player identifiers to retrieve.
+- `players`: An array of [`GKPlayer`](gkplayer.md) objects that holds the player identifiers to retrieve.
 
 ## See Also
 

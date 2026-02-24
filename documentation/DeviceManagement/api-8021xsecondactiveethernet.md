@@ -20,6 +20,10 @@ Specify `com.apple.secondactiveethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
 
+- **Interface (String)**: This payload uses the value `SecondActiveEthernet`.
+- **EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md))**: The dictionary that defines the enterprise profile for the network.
+- **SetupModes (String)**: The type of connection mode, which is either “System” or “Loginwindow.” “System” is the default.
+
 Payloads with `active` in their name apply to Ethernet interfaces that are working at the time of profile installation. If there’s no active Ethernet interface working, this payload configures the interface with the highest service-order priority.
 
 ##### Profile Availability

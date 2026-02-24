@@ -35,7 +35,7 @@ After creating the read stream, you can call [`CFReadStreamGetError(_:)`](https:
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `requestHeaders`: A CFHTTP request header.
 - `requestBody`: Read stream reference for the request body.
 

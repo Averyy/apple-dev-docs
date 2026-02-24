@@ -34,7 +34,7 @@ Locking: same-instance concurrency SAFE, MAY BLOCK
 ## Parameters
 
 - `channelList`: Channels to configure.
-- `action`: Enable/disable/size, etc (see  ).
+- `action`: Enable/disable/size, etc (see `IOReportTypes.h`).
 - `elementCount`: Element count.
 
 ## See Also

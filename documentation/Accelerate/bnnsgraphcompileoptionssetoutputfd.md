@@ -31,7 +31,7 @@ Note that this option overrides the path that [`BNNSGraphCompileOptionsSetOutput
 ## Parameters
 
 - `options`: The compilation options object.
-- `fd`: The file that the descriptor indicates must be open for writing. Graph compilation truncates and completely overwrites the file.
+- `fd`: The destination file descriptor. Pass `-1` to reset to the default behavior of strictly in-memory graph generation or the path that [`BNNSGraphCompileOptionsSetOutputPath(_:_:)`](bnnsgraphcompileoptionssetoutputpath(_:_:).md) specifies. The file that the descriptor indicates must be open for writing. Graph compilation truncates and completely overwrites the file.
 
 ## See Also
 

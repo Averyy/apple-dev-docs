@@ -28,10 +28,10 @@ This function sets credentials for all references to the node. If you only want 
 ## Parameters
 
 - `node`: The node.
-- `recordType`: The record type that uses the credentials. Can be  . The default value is  .
+- `recordType`: The record type that uses the credentials. Can be `NULL`. The default value is `kODRecordTypeUsers`.
 - `recordName`: The username to use to authenticate with the node.
 - `password`: The password to use to authenticate with the node.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

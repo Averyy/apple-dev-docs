@@ -26,7 +26,7 @@ Initialized [`NSIndexSet`](nsindexset.md) object with `index`.
 
 ## Parameters
 
-- `value`: An index. Must be in the range  .
+- `value`: An index. Must be in the range `0 .. NSNotFound - 1`.
 
 ## See Also
 

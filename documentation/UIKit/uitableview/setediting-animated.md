@@ -24,8 +24,8 @@ When you call this method with the value of `editing` set to [`true`](https://de
 
 ## Parameters
 
-- `editing`:   to enter editing mode;   to leave it. The default value is  .
-- `animated`:   to animate the transition to editing mode;   to make the transition immediate.
+- `editing`: [`true`](https://developer.apple.com/documentation/Swift/true) to enter editing mode; [`false`](https://developer.apple.com/documentation/Swift/false) to leave it. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition to editing mode; [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
 
 ## See Also
 

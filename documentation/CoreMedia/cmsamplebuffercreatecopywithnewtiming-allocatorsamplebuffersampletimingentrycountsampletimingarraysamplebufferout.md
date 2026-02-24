@@ -32,11 +32,11 @@ All parameters are copied; on return, the caller can release them, free them, or
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `originalSBuf`:   containing the original samples.
-- `numSampleTimingEntries`: Number of entries in  . Must be 0, 1, or the number of samples in  .
-- `sampleTimingArray`: Array of   structs, one struct per sample. If all samples have the same duration and are in presentation order, you can pass a single   struct with duration set to the duration of one sample,   set to the presentation time of the numerically earliest sample, and   set to  . Behavior is undefined if samples in a   (or even in multiple buffers in the same stream) have the same  . Can be  .
-- `sampleBufferOut`: On output, points to the newly created copy of  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `originalSBuf`: `CMSampleBuffer` containing the original samples.
+- `numSampleTimingEntries`: Number of entries in `sampleTimingArray`. Must be 0, 1, or the number of samples in `originalSBuf`.
+- `sampleTimingArray`: Array of `CMSampleTimingInfo` structs, one struct per sample. If all samples have the same duration and are in presentation order, you can pass a single `CMSampleTimingInfo` struct with duration set to the duration of one sample, `presentationTimeStamp` set to the presentation time of the numerically earliest sample, and `decodeTimeStamp` set to `kCMTimeInvalid`. Behavior is undefined if samples in a `CMSampleBuffer` (or even in multiple buffers in the same stream) have the same `presentationTimeStamp`. Can be `NULL`.
+- `sampleBufferOut`: On output, points to the newly created copy of `CMSampleBuffer`.
 
 ## See Also
 

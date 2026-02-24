@@ -30,8 +30,8 @@ This function does not resolve the URL against its base, nor does it replace per
 
 ## Parameters
 
-- `anURL`: The   object to examine.
-- `isAbsolute`: On return, indicates whether the path of   is absolute.
+- `anURL`: The `CFURL` object to examine.
+- `isAbsolute`: On return, indicates whether the path of `anURL` is absolute.
 
 ## See Also
 

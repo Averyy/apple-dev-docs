@@ -28,7 +28,7 @@ This method updates the state of the image source and its contained images. Call
 
 - `isrc`: The image source to modify.
 - `data`: The updated data for the image source. Each time you call this function, specify all of the accumulated image data so far.
-- `final`: A Boolean value that indicates whether the   parameter represents the complete data set. Specify   if the data is complete or   if it isn’t.
+- `final`: A Boolean value that indicates whether the `data` parameter represents the complete data set. Specify `true` if the data is complete or `false` if it isn’t.
 
 ## See Also
 

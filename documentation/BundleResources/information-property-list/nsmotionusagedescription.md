@@ -11,6 +11,10 @@ A message that tells people why the app is requesting access to the device’s m
 - macOS 10.15+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the device’s motion data, including [`CMSensorRecorder`](https://developer.apple.com/documentation/CoreMotion/CMSensorRecorder), [`CMPedometer`](https://developer.apple.com/documentation/CoreMotion/CMPedometer), [`CMMotionActivityManager`](https://developer.apple.com/documentation/CoreMotion/CMMotionActivityManager), and [`CMMovementDisorderManager`](https://developer.apple.com/documentation/CoreMotion/CMMovementDisorderManager). If you don’t include this key, your app will crash when it attempts to access motion data.

@@ -24,8 +24,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `out_formats`: A pointer to a buffer of type  , with a size of  . On return, this buffer contains the available formats.
-- `in_num_formats`: The size of the   buffer.
+- `out_formats`: A pointer to a buffer of type `IOUserAudioStreamBasicDescription`, with a size of `in_num_formats`. On return, this buffer contains the available formats.
+- `in_num_formats`: The size of the `out_formats` buffer.
 
 ## See Also
 

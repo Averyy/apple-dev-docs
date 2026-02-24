@@ -18,11 +18,15 @@ Build models to analyze text, images, or other types of data your app needs. If 
 
 As you design your models, it’s important to keep the intended experience of your app in mind. The HIG offers [`machine learning guidance and best practices`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/machine-learning) to help you create apps that use machine learning.
 
+---
+
 #### Collect and Prepare Your Data for Training
 
 When you create a new model the starting point is always the same — your training and testing data. The quality of your data determines the quality of your results, so choose data that reflects a wide variety of possibility for your training use case. For example, when you [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/CreateML/creating-an-image-classifier-model#Gather-Your-Data) model to recognize animals, begin by gathering at least 10 images per animal that best represent what you expect the model to see. Create ML supports several types of data sources, each with its [`Creating an Action Classifier Model`](https://developer.apple.com/documentation/CreateML/creating-an-action-classifier-model#Organize-the-Example-Videos) within a parent folder. In you parent folder, organize data into subfolders and use the folder name as your training label.
 
 If you use the [`Create ML`](https://developer.apple.com/documentation/CreateML) framework to programmatically create and train a model — like a text classifier that identifies the sentiment expressed in a sentence — [`Creating a text classifier model`](https://developer.apple.com/documentation/CreateML/creating-a-text-classifier-model#Import-your-data) by using [`TabularData`](https://developer.apple.com/documentation/TabularData).
+
+---
 
 #### Build and Train on Device Models with No Code
 
@@ -34,6 +38,8 @@ Built with the [`Create ML`](https://developer.apple.com/documentation/CreateML)
 
 After training your model, use the Create ML app to visualize and debug your annotations by clicking on the data source. The default view shows a distribution of your data, and the Explore page lets you see into specific object or class labels to visualize your annotations. The app [`Getting a Core ML Model`](https://developer.apple.com/documentation/CoreML/getting-a-core-ml-model) that’s ready to integrate into your app with Core ML.
 
+---
+
 #### Model Conversion and Optimization
 
 Bring any model to the device if you want to experiment with it or deploy it. All you need is the model to be in the Core ML format. [`Core ML`](https://developer.apple.com/documentation/CoreML) is the go-to framework for deploying models on-device, and you can [`download and explore models`](https://developer.apple.comhttps://developer.apple.com/machine-learning/models/) that are already in the Core ML format to experiment with or use for your feature.
@@ -42,6 +48,8 @@ If you created a model using training libraries like [`MLX`](https://developer.a
 
 When you have an optimized and prepared model, you’re ready to integrate it with system frameworks. For example, if your model performs image analysis, [`CoreMLRequest`](https://developer.apple.com/documentation/Vision/CoreMLRequest) with the Vision framework.
 
+---
+
 #### Analyze the Performance of Your Model with Xcode
 
 Evaluating the performance of models is an important task of machine learning. In Xcode, preview your model’s behavior by using sample data files or using the device’s camera and microphone. Review the performance of your model’s predictions directly from Xcode, or profile your app in Instruments to get a thorough performance analysis. After you add a model to your project, select it to get insights about the expected prediction latency, load times, and introspect where a particular operation is supported and run.
@@ -49,6 +57,8 @@ Evaluating the performance of models is an important task of machine learning. I
 ![An Xcode screenshot that shows a selected model file. The UI shows the performance report for the Resnet50 image classification model with median times for prediction, load, and compilation. It also shows the compute unit mapping and that each unit ran on the Neural Engine.](https://docs-assets.developer.apple.com/published/f2802f7da80e540fc2f173f4c4fbd630/xcode-model-performance-tab%402x.png)
 
 To build a deeper understanding of the model you’re working with, Xcode allows you to visualize the structure of the full model architecture and dive into the details of any operation. This visualization helps you debug issues and find performance enhancing opportunities.
+
+---
 
 #### Model Deployment and Execution on Device
 

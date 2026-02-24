@@ -27,7 +27,7 @@ Returns a [`MapProxy`](mapproxy.md) that allows you to introspect the content of
 
 ## Parameters
 
-- `content`: The content of the map reader uses to retrieve information about, it uses the first map the   contains.
+- `content`: The content of the map reader uses to retrieve information about, it uses the first map the `content` contains.
 
 
 ---

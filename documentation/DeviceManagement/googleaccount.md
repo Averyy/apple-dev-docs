@@ -84,6 +84,14 @@ The payload never contains credentials; the system prompts the user to enter cre
 - [object GoogleAccount.CommunicationServiceRules](googleaccount/communicationservicerules-data.dictionary.md)
   The communication service handler rules for this account.
 
+## Properties
+
+- `AccountDescription` (string): A user-visible description of the Google account, shown in the Mail and Settings apps.
+- `AccountName` (string): The user’s full name for the Google account. This name appears in sent messages.
+- `CommunicationServiceRules` (GoogleAccount.CommunicationServiceRules): The communication service handler rules for this account.
+- `EmailAddress` (string) *(required)*: The full Google email address for the account.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## See Also
 
 - [object Accounts](accounts.md)

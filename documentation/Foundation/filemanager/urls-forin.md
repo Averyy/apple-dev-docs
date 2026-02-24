@@ -34,8 +34,8 @@ This method is intended to locate known and common directories in the system. Fo
 
 ## Parameters
 
-- `directory`: The search path directory. The supported values are described in  .
-- `domainMask`: The file system domain to search. The value for this parameter is one or more of the constants described in  .
+- `directory`: The search path directory. The supported values are described in [`FileManager.SearchPathDirectory`](filemanager/searchpathdirectory.md).
+- `domainMask`: The file system domain to search. The value for this parameter is one or more of the constants described in [`FileManager.SearchPathDomainMask`](filemanager/searchpathdomainmask.md).
 
 ## See Also
 

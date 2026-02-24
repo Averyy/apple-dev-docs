@@ -22,7 +22,7 @@ static func result<Value>(value: Value) -> Self where Self == IntentResultContai
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 
 
 ---

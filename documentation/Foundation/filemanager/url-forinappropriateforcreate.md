@@ -34,16 +34,54 @@ You can use this method to create a new temporary directory. To do so, specify [
 
 For example, the following code results in a new temporary directory with a path in the form of `/private/var/folders/d0/h37cw8ns3h1bfr_2gnwq2yyc0000gn/T/TemporaryItems/Untitled/`:
 
+**Swift**:
+
+```swift
+let desktop = URL(fileURLWithPath: "/Users/jappleseed/Desktop/")
+
+do {
+    let temporaryDirectory = try FileManager.default.url(
+        for: .itemReplacementDirectory,
+        in: .userDomainMask,
+        appropriateFor: desktop,
+        create: true
+    )
+    
+    print(temporaryDirectory)
+} catch {
+    // Handle the error.
+}
+```
+
+**Objective-C**:
+
+```objc
+NSURL *desktopURL = [NSURL fileURLWithPath:@"/Users/jappleseed/Desktop/"
+                               isDirectory:YES];
+NSError *error = nil;
+
+NSURL *temporaryDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSItemReplacementDirectory
+                                                                      inDomain:NSUserDomainMask
+                                                             appropriateForURL:desktopURL
+                                                                        create:YES
+                                                                         error:&error];
+NSLog(@"%@", temporaryDirectoryURL);
+
+if (error) {
+    // Handle the error.
+}
+```
+
 > ❗ **Important**:  If you use this method to create a temporary directory, you should not rely on the existence of that temporary directory after the app is exited. It is recommended that you remove any temporary directories that are created after they’re no longer needed.
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
-- `directory`: The search path directory. The supported values are described in  .
-- `domain`: The file system domain to search. The value for this parameter is one of the constants described in  . You should specify only one domain for your search and you may not specify the   constant for this parameter.
-- `url`: This parameter is ignored unless the   parameter contains the value   and the   parameter contains the value  .
-- `shouldCreate`: When creating a temporary directory, this parameter is ignored and the directory is always created.
+- `directory`: The search path directory. The supported values are described in [`FileManager.SearchPathDirectory`](filemanager/searchpathdirectory.md).
+- `domain`: The file system domain to search. The value for this parameter is one of the constants described in [`FileManager.SearchPathDomainMask`](filemanager/searchpathdomainmask.md). You should specify only one domain for your search and you may not specify the [`allDomainsMask`](filemanager/searchpathdomainmask/alldomainsmask.md) constant for this parameter.
+- `url`: The file URL used to determine the location of the returned URL. Only the volume of this parameter is used. This parameter is ignored unless the `directory` parameter contains the value [`FileManager.SearchPathDirectory.itemReplacementDirectory`](filemanager/searchpathdirectory/itemreplacementdirectory.md) and the `domain` parameter contains the value [`userDomainMask`](filemanager/searchpathdomainmask/userdomainmask.md).
+- `shouldCreate`: Whether to create the directory if it does not already exist. When creating a temporary directory, this parameter is ignored and the directory is always created.
 
 ## See Also
 

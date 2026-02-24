@@ -41,7 +41,7 @@ _ = vImageHistogramCalculation_Planar8(&buffer,
 
 - `src`: The source vImage buffer.
 - `histogram`: The collection that contains 256 elements that receives the histogram data.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

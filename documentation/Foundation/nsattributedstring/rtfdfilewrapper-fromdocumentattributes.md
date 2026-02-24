@@ -29,7 +29,7 @@ You can save the file wrapper using the [`write(toFile:atomically:updateFilename
 ## Parameters
 
 - `range`: The range.
-- `dict`: A required dictionary specifying the document attributes. The dictionary contains values from   and must at least contain  .
+- `dict`: A required dictionary specifying the document attributes. The dictionary contains values from `Document Types` and must at least contain `NSDocumentTypeDocumentAttribute`.
 
 ## See Also
 

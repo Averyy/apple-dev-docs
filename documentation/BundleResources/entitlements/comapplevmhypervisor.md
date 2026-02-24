@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app creates and manages virtual machi
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 The entitlement is required to use the Hypervisor APIs in a sandboxed process.

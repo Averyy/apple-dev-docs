@@ -29,6 +29,12 @@ This method applies the accordion fold transition filter to an image. The effect
 
 The accordion fold transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`numberOfFolds`**: A `float` representing the number of accordion folds as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`foldShadowAmount`**: A `float` representing the strength of the shadow as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that produces folds in the input image and fades to the target image:
 
 ```swift

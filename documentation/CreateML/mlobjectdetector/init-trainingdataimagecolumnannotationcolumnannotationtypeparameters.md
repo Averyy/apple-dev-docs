@@ -20,11 +20,11 @@ Use this initializer to create an object detector with an [`MLDataTable`](mldata
 
 ## Parameters
 
-- `trainingData`: An   that contains the annotated images the task uses to train the object   detector.
+- `trainingData`: An [`MLDataTable`](mldatatable.md) that contains the annotated images the task uses to train the object detector.
 - `imageColumn`: The name of the column in the data table that contains the image file URLs.
 - `annotationColumn`: The name of the column in the data table that contains the image annotations.
 - `annotationType`: The format your data table uses for its image annotations.
-- `parameters`: An   instance you use to set the model   configuration settings for the training session.
+- `parameters`: An [`MLObjectDetector.ModelParameters`](mlobjectdetector/modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
 
 ## See Also
 

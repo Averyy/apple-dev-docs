@@ -37,12 +37,12 @@ The following are some details to keep in mind.
 
 ## Parameters
 
-- `origin`: The origin of the ray relative to  .
-- `direction`: The direction of the ray relative to  .
-- `length`: The length of the ray relative to  .
+- `origin`: The origin of the ray relative to `referenceEntity`.
+- `direction`: The direction of the ray relative to `referenceEntity`.
+- `length`: The length of the ray relative to `referenceEntity`.
 - `query`: A query type.
-- `mask`: A collision mask that you can use to prevent collisions with   certain objects.
-- `referenceEntity`: An entity that defines the frame of reference. The   method returns results relative to this entity. Set to   to use the   world space origin  .
+- `mask`: A collision mask that you can use to prevent collisions with certain objects.
+- `referenceEntity`: An entity that defines the frame of reference. The method returns results relative to this entity. Set to `nil` to use the world space origin `(0, 0, 0)`.
 
 ## See Also
 

@@ -30,8 +30,8 @@ This cluster break is similar to a character break, except that it does not brea
 
 ## Parameters
 
-- `typesetter`: The typesetter that creates the line. This parameter is required and cannot be set to  .
-- `startIndex`: The starting point for the typographic cluster-break calculations. The break calculations include the character starting at  .
+- `typesetter`: The typesetter that creates the line. This parameter is required and cannot be set to `NULL`.
+- `startIndex`: The starting point for the typographic cluster-break calculations. The break calculations include the character starting at `startIndex`.
 - `width`: The requested typographic cluster-break width.
 
 ## See Also

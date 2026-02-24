@@ -22,7 +22,7 @@ Your app can send this message to allow recipients to see an “is typing” ind
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of  .
+- `content`: The content of the message to send, as an instance of [`RCSMessage.ComposingIndicator`](rcsmessage/composingindicator.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

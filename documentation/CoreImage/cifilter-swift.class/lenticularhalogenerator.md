@@ -29,6 +29,15 @@ This method generates a lenticular halo image. You commonly combine this effect 
 
 The lenticular halo generator filter uses the following properties:
 
+- **`center`**: A `vector` representing the center of the lens flare as a [`CIVector`](civector.md).
+- **`color`**: A [`CIColor`](cicolor.md) controlling the proportion of red, green, and blue halos.
+- **`haloWidth`**: A `float` representing the halo width as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`haloRadius`**: A `float` representing the halo radius as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`haloOverlap`**: A `float` representing the overlap of red, green, and blue halos as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). A value of 1 results in a full overlap.
+- **`striationStrength`**: A `float` representing the brightness of the rainbow-colored halo area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`striationContrast`**: A `float` representing the contrast of the rainbow-colored halo area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`time`**: A `float` representing the addition of brightness to the halo as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a lenticular halo image:
 
 ```swift

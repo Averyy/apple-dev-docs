@@ -34,11 +34,11 @@ Because `CVImageBuffers` hold visual data, the format description provided is a 
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `imageBuffer`:   already containing the media data. Must not be  .
-- `formatDescription`: A description of the media data’s format. See discussion below for constraints. May not be  .
-- `sampleTiming`: A   struct that provides the timing information for the media represented by the  .
-- `sampleBufferOut`: Returned newly created  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `imageBuffer`: `CVImageBuffer` already containing the media data. Must not be `NULL`.
+- `formatDescription`: A description of the media data’s format. See discussion below for constraints. May not be `NULL`.
+- `sampleTiming`: A `CMSampleTimingInfo` struct that provides the timing information for the media represented by the `CVImageBuffer`.
+- `sampleBufferOut`: Returned newly created `CMSampleBuffer`.
 
 ## See Also
 

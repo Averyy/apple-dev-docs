@@ -21,9 +21,9 @@ init(mass: Float, inertia: SIMD3<Float> = SIMD3<Float>(x: 0.1, y: 0.1, z: 0.1), 
 
 ## Parameters
 
-- `mass`: The mass in kilograms. If you use a mass of   or infinity, the   simulation treats the object as  . That is,   the object doesn’t respond to forces.
-- `inertia`: The inertia in kilograms per square meter. The vector   contains the diagonal elements of the diagonalized inertia matrix.
-- `centerOfMass`: The   defines the principal axes, such the inertia matrix is a diagonal.
+- `mass`: The mass in kilograms. If you use a mass of `0` or infinity, the simulation treats the object as [`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md). That is, the object doesn’t respond to forces.
+- `inertia`: The inertia in kilograms per square meter. The vector contains the diagonal elements of the diagonalized inertia matrix.
+- `centerOfMass`: The center of mass and the orientation of the principal axes, defined in the local space of the rigid body. The `position` defines the center of mass with a default value of `(0, 0, 0)`, which means that the local origin of the model is the center of mass. The `orientation` defines the principal axes, such the inertia matrix is a diagonal.
 
 ## See Also
 

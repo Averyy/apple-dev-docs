@@ -22,7 +22,7 @@ var fileIdentifier: CGPDFArrayRef? { get }
 
 #### Discussion
 
-A PDF file identifier is defined in the PDF specification as an array of two strings, the first of which is a permanent identifier that doesn’t change even when the file is updated. The second string changes each time the file is updated. For more information, see , Adobe Systems Incorporated.
+A PDF file identifier is defined in the PDF specification as an array of two strings, the first of which is a permanent identifier that doesn’t change even when the file is updated. The second string changes each time the file is updated. For more information, see *PDF Reference: Version 1.3 (Second Edition)*, Adobe Systems Incorporated.
 
 ## See Also
 

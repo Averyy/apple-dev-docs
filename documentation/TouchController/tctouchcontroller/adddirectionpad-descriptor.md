@@ -21,7 +21,7 @@ A new `TCDirectionPad` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the direction pad.
+- `descriptor`: The `TCDirectionPadDescriptor` containing the configuration for the direction pad.
 
 ## See Also
 

@@ -10,6 +10,10 @@ A request for user permission to begin an interaction session with nearby device
 - iPadOS 15.0+
 - watchOS 8.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This property defines localizable text that explains your interaction session’s purpose to the user.

@@ -30,7 +30,7 @@ For a description of how `locale` is applied to each element in the receiving ar
 
 ## Parameters
 
-- `locale`: An   object or an   object that specifies options used for formatting each of the array’s elements (where recognized). Specify   if you don’t want the elements formatted.
+- `locale`: An `NSLocale` object or an `NSDictionary` object that specifies options used for formatting each of the array’s elements (where recognized). Specify `nil` if you don’t want the elements formatted.
 
 ## See Also
 

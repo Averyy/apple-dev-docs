@@ -22,12 +22,12 @@ func CFAttributedStringRemoveAttribute(_ aStr: CFMutableAttributedString!, _ ran
 
 #### Discussion
 
-It is  an error of the specified attribute does not exist over the given range.
+It is *not* an error of the specified attribute does not exist over the given range.
 
 ## Parameters
 
 - `aStr`: The mutable attributed string to modify.
-- `range`: The range of   from which to remove the specified attribute.   must not exceed the bounds of  .
+- `range`: The range of `aStr` from which to remove the specified attribute. `range` must not exceed the bounds of `aStr`.
 - `attrName`: The name of the attribute to remove.
 
 ## See Also

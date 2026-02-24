@@ -35,7 +35,7 @@ RealityKit uses the resource name to identify texture resources, and to match te
 ## Parameters
 
 - `name`: The name of the resource. The filename extension is optional.
-- `bundle`: The bundle to search for the resource. Use   to indicate   the app’s bundle.
+- `bundle`: The bundle to search for the resource. Use `nil` to indicate the app’s bundle.
 
 ## See Also
 

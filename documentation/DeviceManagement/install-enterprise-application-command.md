@@ -32,6 +32,47 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>ManifestURL</key>
+        <string>https://yourmdmhost.example.com/files/myenterpriseapp.plist</string>
+        <key>PinningRevocationCheckRequired</key>
+        <false/>
+        <key>RequestType</key>
+        <string>InstallEnterpriseApplication</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallEnterpriseApplication</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallEnterpriseApplication</string>
+    <key>Queued</key>
+    <true/>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>E84CD517-CB37-52F7-988C-DB5137B604B8</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -39,6 +80,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to install an enterprise app on a device.
 - [object InstallEnterpriseApplicationResponse](installenterpriseapplicationresponse.md)
   A response from the device after it processes the command to install an enterprise app on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

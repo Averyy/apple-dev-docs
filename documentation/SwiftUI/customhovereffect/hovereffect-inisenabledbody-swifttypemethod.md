@@ -36,9 +36,9 @@ HoverEffect(
 
 ## Parameters
 
-- `group`: An optional   to add this effect to.
-- `isEnabled`: Whether the effect is enabled or not. If  , the   effect will not become active when hovered.
-- `body`: The closure that constructs a   for   each of the effect’s phases.
+- `group`: An optional [`HoverEffectGroup`](hovereffectgroup.md) to add this effect to.
+- `isEnabled`: Whether the effect is enabled or not. If `false`, the effect will not become active when hovered.
+- `body`: The closure that constructs a `HoverEffectContent` for each of the effect’s phases.
 
 
 ---

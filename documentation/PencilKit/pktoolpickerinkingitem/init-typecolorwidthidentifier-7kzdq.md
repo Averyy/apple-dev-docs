@@ -21,9 +21,9 @@ convenience init(type: PKInkingTool.InkType, color: UIColor? = nil, width: CGFlo
 ## Parameters
 
 - `type`: The ink type for the tool.
-- `color`: The color for the tool. Passing   resolves to a default value based on the  .
-- `width`: The width for the tool. Passing   resolves to a default value based on the  .
-- `identifier`: The identifier for the tool item. Passing   resolves to a default value based on the  .
+- `color`: The color for the tool. Passing `nil` resolves to a default value based on the `InkType`.
+- `width`: The width for the tool. Passing `nil` resolves to a default value based on the `InkType`.
+- `identifier`: The identifier for the tool item. Passing `nil` resolves to a default value based on the `InkType`.
 
 
 ---

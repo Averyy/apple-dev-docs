@@ -26,12 +26,12 @@ A retained array of normalized font descriptors matching the attributes present 
 
 #### Discussion
 
-If `descriptor` itself is normalized, then the array will contain only one item: the original descriptor. In the context of font descriptors,  infers that the input values were matched up with actual existing fonts, and the descriptors for those existing fonts are the returned normalized descriptors.
+If `descriptor` itself is normalized, then the array will contain only one item: the original descriptor. In the context of font descriptors, *normalized* infers that the input values were matched up with actual existing fonts, and the descriptors for those existing fonts are the returned normalized descriptors.
 
 ## Parameters
 
 - `descriptor`: The font descriptor.
-- `mandatoryAttributes`: A set of attribute keys that must be identically matched in any returned font descriptors. May be  .
+- `mandatoryAttributes`: A set of attribute keys that must be identically matched in any returned font descriptors. May be `NULL`.
 
 ## See Also
 

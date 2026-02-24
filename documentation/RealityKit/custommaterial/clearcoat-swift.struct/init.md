@@ -51,7 +51,7 @@ The following Metal code demonstrates how to retrieve the clearcoat `scale` and 
 
 ## Parameters
 
-- `value`: The    property from a  .
+- `value`: The [`clearcoat`](physicallybasedmaterial/clearcoat-swift.property.md) property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
 
 ## See Also
 

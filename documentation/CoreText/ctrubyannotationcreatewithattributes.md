@@ -33,8 +33,8 @@ Use this function to create a ruby annotation object with more precise control o
 - `alignment`: An alignment value that specifies how the ruby text and the base text align relative to each other.
 - `overhang`: An overhang value that specifies how the ruby text overhangs adjacent characters.
 - `position`: The position of the annotation text.
-- `string`: An unformatted string whose attributes derive from the   parameter.
-- `attributes`: An attribute dictionary to combine with  . If you don’t specify  , the system deduces the ruby annotation’s font from the base text and uses a size factor of the   value keyed by  .
+- `string`: An unformatted string whose attributes derive from the `attributes` parameter.
+- `attributes`: An attribute dictionary to combine with `string`. If you don’t specify [`kCTFontAttributeName`](kctfontattributename.md), the system deduces the ruby annotation’s font from the base text and uses a size factor of the [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) value keyed by [`kCTRubyAnnotationSizeFactorAttributeName`](kctrubyannotationsizefactorattributename.md).
 
 ## See Also
 

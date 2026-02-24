@@ -67,6 +67,14 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 - [object AccountMailSMIMEObject](accountmailsmimeobject.md)
   Settings for S/MIME.
 
+## Properties
+
+- `IncomingServer` (AccountMailIncomingServerObject) *(required)*: The settings for the incoming mail server for this account.
+- `OutgoingServer` (AccountMailOutgoingServerObject) *(required)*: The settings for the outgoing mail server for this account.
+- `SMIME` (AccountMailSMIMEObject): Settings for S/MIME.
+- `UserIdentityAssetReference` (string): The identifier of an asset declaration that contains the user identity for this account. Set the corresponding asset type to `UserIdentity`.
+- `VisibleName` (string): The name that apps show to the user for this mail account. If not present, the system generates a suitable default.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

@@ -26,6 +26,11 @@ object UserListCommand
 - [object UserListCommand.Command](userlistcommand/command-data.dictionary.md)
   The command to get a list of users with active accounts on a device.
 
+## Properties
+
+- `Command` (UserListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object UserListResponse](userlistresponse.md)

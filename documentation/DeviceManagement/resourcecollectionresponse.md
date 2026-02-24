@@ -15,6 +15,10 @@ A response that contains the resource objects for the request.
 object ResourceCollectionResponse
 ```
 
+## Properties
+
+- `data` ([Resource]) *(required)*: A resource object for the request.
+
 ## See Also
 
 - [object UnauthorizedResponse](unauthorizedresponse.md)

@@ -25,7 +25,7 @@ The vertex at the specified index.
 
 ## Parameters
 
-- `index`: The index of the vertex to return, between   and the   value.
+- `index`: The index of the vertex to return, between `0` and the [`numPoints`](gkpath/numpoints.md) value.
 
 ## See Also
 

@@ -19,7 +19,7 @@ The group’s value for `property`.
 
 ## Parameters
 
-- `property`: The name of a group property. For valid values, see  .
+- `property`: The name of a group property. For valid values, see [`Group Property Names`](group-property-names.md).
 
 ## See Also
 

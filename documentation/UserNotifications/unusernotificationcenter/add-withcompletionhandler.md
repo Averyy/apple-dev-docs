@@ -45,8 +45,8 @@ do {
 
 ## Parameters
 
-- `request`: The request object containing the notification payload and trigger information. This parameter must not be  .
-- `completionHandler`: The block to execute with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter:
+- `request`: The request object containing the notification payload and trigger information. This parameter must not be `nil`.
+- `completionHandler`: The block to execute with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter: - **error**: An error object indicating whether a problem occurred. If the notification was scheduled successfully, this parameter is `nil`; otherwise, it is set to an error object indicating the reason for the failure.
 
 ## See Also
 

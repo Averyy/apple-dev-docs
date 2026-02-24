@@ -25,7 +25,7 @@ This method also removes the persistent copy of the rules stored on disk.
 ## Parameters
 
 - `identifier`: The unique identifier for the rule list.
-- `completionHandler`: A completion handler block to call after the removal of the content rule list. This block has no return value and takes the following parameter:
+- `completionHandler`: A completion handler block to call after the removal of the content rule list. This block has no return value and takes the following parameter: - **error**: `nil` on success, or an error object if the store encountered an error when deleting the rule list.
 
 ## See Also
 

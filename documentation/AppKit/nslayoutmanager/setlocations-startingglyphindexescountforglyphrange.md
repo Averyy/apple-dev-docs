@@ -23,7 +23,7 @@ This method is used by the layout mechanism and should be invoked only during ty
 ## Parameters
 
 - `locations`: The locations to which the first glyph in each range is set, relative to the origin of the glyph’s line fragment origin.
-- `glyphIndexes`: Indexes in   of the glyphs whose locations are set.
+- `glyphIndexes`: Indexes in `glyphRange` of the glyphs whose locations are set.
 - `count`: The number of glyphs whose locations are set.
 - `glyphRange`: The entire glyph range containing all the glyphs whose locations are set.
 

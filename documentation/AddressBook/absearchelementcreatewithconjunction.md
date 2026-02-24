@@ -20,8 +20,8 @@ A new compound searchelement joining the search elements in `children` using `co
 
 ## Parameters
 
-- `conjunction`: The conjunction used to join the search elements in  . Can be either   or  .
-- `childrenSearchElement`: An array containing ABSearchElement objects to be joined using  . If   this function raises an exception.
+- `conjunction`: The conjunction used to join the search elements in `children`. Can be either [`kABSearchAnd`](kabsearchand.md) or [`kABSearchOr`](kabsearchor.md).
+- `childrenSearchElement`: An array containing ABSearchElement objects to be joined using `conjunction`. If `NULL` this function raises an exception.
 
 ## See Also
 

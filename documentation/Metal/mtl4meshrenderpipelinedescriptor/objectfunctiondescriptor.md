@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-Assigns a function descriptor representing the function this pipeline executes for each  in the object shader stage.
+Assigns a function descriptor representing the function this pipeline executes for each *object* in the object shader stage.
 
 **Availability**:
 - iOS 26.0+

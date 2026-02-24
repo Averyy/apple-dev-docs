@@ -3,7 +3,7 @@
 **Framework**: Audio Toolbox  
 **Kind**: property
 
-Your callback function that provides audio transport state information (, , and so on) to an audio unit. May be `NULL`.
+Your callback function that provides audio transport state information (*play*, *rewind*, and so on) to an audio unit. May be `NULL`.
 
 **Availability**:
 - iOS ?+

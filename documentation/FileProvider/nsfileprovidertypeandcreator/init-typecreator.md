@@ -19,8 +19,8 @@ init(type: OSType, creator: OSType)
 
 ## Parameters
 
-- `type`: The first word of the   structure. It matches the file type code.
-- `creator`: The second word of the   structure. It matches the creator code.
+- `type`: The first word of the `FinderInfo` structure. It matches the file type code.
+- `creator`: The second word of the `FinderInfo` structure. It matches the creator code.
 
 ## See Also
 

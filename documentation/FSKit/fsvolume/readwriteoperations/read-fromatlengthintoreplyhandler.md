@@ -21,11 +21,11 @@ If the number of bytes requested exceeds the number of bytes available before th
 
 ## Parameters
 
-- `item`: The item from which to read. FSKit guarantees this item will be of type  .
+- `item`: The item from which to read. FSKit guarantees this item will be of type [`FSItem.ItemType.file`](fsitem/itemtype/file.md).
 - `offset`: The offset in the file from which to start reading.
 - `length`: The number of bytes to read.
 - `buffer`: A buffer to receive the bytes read from the file.
-- `reply`: A block or closure to indicate success or failure. If reading succeeds, pass the number of bytes read and a   error. If reading fails, pass the number of bytes read prior to the error along with the relevant error. For an   Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
+- `reply`: A block or closure to indicate success or failure. If reading succeeds, pass the number of bytes read and a `nil` error. If reading fails, pass the number of bytes read prior to the error along with the relevant error. For an `async` Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
 
 ## See Also
 

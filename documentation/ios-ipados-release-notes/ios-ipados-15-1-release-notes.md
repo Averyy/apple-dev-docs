@@ -12,14 +12,14 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178)  Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](https://developer.apple.com/documentation/Foundation/NSExpression/expressionValue(with:context:)), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/evaluate(with:substitutionVariables:)). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/withSubstitutionVariables(_:)) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
+- `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178) **Workaround:** Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](https://developer.apple.com/documentation/Foundation/NSExpression/expressionValue(with:context:)), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/evaluate(with:substitutionVariables:)). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/withSubstitutionVariables(_:)) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
 
 ##### Home
 
 ###### Known Issues
 
 - The query for the connected admin list isn’t supported by Matter accessories. (82398328)
-- Matter accessory notifications don’t work. (82634464)  Relaunch the Home app to force a refresh of the Matter accessory state.
+- Matter accessory notifications don’t work. (82634464) **Workaround:** Relaunch the Home app to force a refresh of the Matter accessory state.
 
 ##### Shareplay
 
@@ -31,13 +31,13 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- The [`BorderedButtonStyle`](https://developer.apple.com/documentation/SwiftUI/BorderedButtonStyle) no longer has a default hover effect.  Use the [`HoverEffect`](https://developer.apple.com/documentation/SwiftUI/HoverEffect) modifier on the [`Button`](https://developer.apple.com/documentation/SwiftUI/Button). (81759097)
+- The [`BorderedButtonStyle`](https://developer.apple.com/documentation/SwiftUI/BorderedButtonStyle) no longer has a default hover effect. **Workaround:** Use the [`HoverEffect`](https://developer.apple.com/documentation/SwiftUI/HoverEffect) modifier on the [`Button`](https://developer.apple.com/documentation/SwiftUI/Button). (81759097)
 
 ##### Telephony
 
 ###### Known Issues
 
-- Users might experience loss of audio during calls, followed by the call being dropped in some conditions. (83381816)  Toggle Airplane Mode on and off, or reboot.
+- Users might experience loss of audio during calls, followed by the call being dropped in some conditions. (83381816) **Workaround:** Toggle Airplane Mode on and off, or reboot.
 
 ##### Voiceover
 

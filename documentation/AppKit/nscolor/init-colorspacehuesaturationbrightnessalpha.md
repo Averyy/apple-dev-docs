@@ -20,7 +20,7 @@ The color object.
 
 ## Parameters
 
-- `space`: An   object representing a color space. An exception is raised if the color model of the provided color space is not RGB.
+- `space`: An `NSColorSpace` object representing a color space. An exception is raised if the color model of the provided color space is not RGB.
 - `hue`: The hue (color) component, expressed as a floating-point value in the range 0–1.0.
 - `saturation`: The color saturation component, expressed as a floating-point value in the range 0–1.0.
 - `brightness`: The brightness component, expressed as a floating-point value in the range 0–1.0.

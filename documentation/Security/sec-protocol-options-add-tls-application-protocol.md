@@ -24,7 +24,7 @@ Add an application protocol supported by clients of this protocol instance.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `application_protocol`: A NULL-terminated string defining the application protocol.
 
 

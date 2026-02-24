@@ -25,7 +25,7 @@ static var writableTypeIdentifiersForItemProvider: [String] { get }
 
 Provide uniform type identifiers (UTIs) in order from highest fidelity to lowest. If your app employs a native data representation, place that first in the array.
 
-Implement this version of the property to offer a minimal list of UTIs that  resulting item provider instances can support. For example, using this version of the property for an [`NSURL`](nsurl.md) object, your implementation should return the `public.url` UTI but not `public.file-url`.
+Implement this version of the property to offer a minimal list of UTIs that *all* resulting item provider instances can support. For example, using this version of the property for an [`NSURL`](nsurl.md) object, your implementation should return the `public.url` UTI but not `public.file-url`.
 
 Use the class version of this property when you do not initialize an item provider with an object, thereby deferring the underlying object’s instantiation until the destination app needs it.
 

@@ -27,8 +27,8 @@ An attributed string with the applied transformation to the specified attribute.
 
 ## Parameters
 
-- `k`: The key path to the   that identifies the attribute to transform.
-- `c`: The closure that receives an   that you use to access and alter the attribute’s range and value.
+- `k`: The key path to the [`AttributedStringKey`](attributedstringkey.md) that identifies the attribute to transform.
+- `c`: The closure that receives an [`AttributedString.SingleAttributeTransformer`](attributedstring/singleattributetransformer.md) that you use to access and alter the attribute’s range and value.
 
 ## See Also
 

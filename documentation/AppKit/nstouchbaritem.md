@@ -20,19 +20,19 @@ class NSTouchBarItem
 
 #### Overview
 
-An instance of the [`NSTouchBarItem`](nstouchbaritem.md) class is called an . It appears to the user on the Touch Bar, typically along with other items, within the (invisible) bounds of the view for an [`NSTouchBar`](nstouchbar.md) object, called a .
+An instance of the [`NSTouchBarItem`](nstouchbaritem.md) class is called an *item*. It appears to the user on the Touch Bar, typically along with other items, within the (invisible) bounds of the view for an [`NSTouchBar`](nstouchbar.md) object, called a *bar*.
 
 You use an item by adding it or its identifier to one or another of a bar’s arrays, depending on your app’s architecture and on the user customization you want to support. Because of the close interaction between bars and items, be sure you have read the overview for the [`NSTouchBar`](nstouchbar.md) class before continuing here to learn about items.
 
 AppKit provides a rich set of subclasses of [`NSTouchBarItem`](nstouchbaritem.md), each of which is described in the corresponding class reference document:
 
-- An [`NSCandidateListTouchBarItem`](nscandidatelisttouchbaritem.md) object (a ), along with its delegate, provides a list of textual suggestions for the current text view
-- An [`NSColorPickerTouchBarItem`](nscolorpickertouchbaritem.md) object (a ) provides a system-defined color picker
-- An [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) object (a ) contains a responder of your choice, such as a view, a button, or a scrubber (an instance of the [`NSScrubber`](nsscrubber.md) class)
-- An [`NSGroupTouchBarItem`](nsgrouptouchbaritem.md) object (a ) provides a bar to contain other items
-- An [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) object (a ) provides a two-state control that, when touched or pressed, expands into its second state, showing the contents of a bar it owns
-- An [`NSSharingServicePickerTouchBarItem`](nssharingservicepickertouchbaritem.md) object (a ), along with its delegate, provides a list of objects eligible for sharing
-- An [`NSSliderTouchBarItem`](nsslidertouchbaritem.md) object (a ) provides a slider control for choosing a value in a range
+- An [`NSCandidateListTouchBarItem`](nscandidatelisttouchbaritem.md) object (a *candidate-list item*), along with its delegate, provides a list of textual suggestions for the current text view
+- An [`NSColorPickerTouchBarItem`](nscolorpickertouchbaritem.md) object (a *color picker item*) provides a system-defined color picker
+- An [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) object (a *custom item*) contains a responder of your choice, such as a view, a button, or a scrubber (an instance of the [`NSScrubber`](nsscrubber.md) class)
+- An [`NSGroupTouchBarItem`](nsgrouptouchbaritem.md) object (a *group item*) provides a bar to contain other items
+- An [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) object (a *popover item*) provides a two-state control that, when touched or pressed, expands into its second state, showing the contents of a bar it owns
+- An [`NSSharingServicePickerTouchBarItem`](nssharingservicepickertouchbaritem.md) object (a *sharing service picker item*), along with its delegate, provides a list of objects eligible for sharing
+- An [`NSSliderTouchBarItem`](nsslidertouchbaritem.md) object (a *slider item*) provides a slider control for choosing a value in a range
 
 The two most commonly-used item classes are [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) and [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md).
 
@@ -43,7 +43,7 @@ Refer to the following sample code projects which demonstrate how to use [`NSTou
 
 ##### Custom Items
 
-You typically use a  (an instance of the [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) class) to hold a view. For example, to place a button in the Touch Bar, proceed as follows:
+You typically use a *custom item* (an instance of the [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) class) to hold a view. For example, to place a button in the Touch Bar, proceed as follows:
 
 1. Use an [`NSButton`](nsbutton.md) convenience initializer such as [`init(title:image:target:action:)`](nsbutton/init(title:image:target:action:).md) to create and configure the button.
 2. Set the [`view`](nstouchbaritem/view.md) property for a custom item to point to the new button.
@@ -52,7 +52,7 @@ You typically use a  (an instance of the [`NSCustomTouchBarItem`](nscustomtouchb
 
 ##### Popover Items
 
-A  (an instance of the [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) class) — the second commonly-used type — lets you provide a new bar (an [`NSTouchBar`](nstouchbar.md) object) when a user taps, or presses-and-holds, on the collapsed representation of the popover item.
+A *popover item* (an instance of the [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) class) — the second commonly-used type — lets you provide a new bar (an [`NSTouchBar`](nstouchbar.md) object) when a user taps, or presses-and-holds, on the collapsed representation of the popover item.
 
 In its expanded state, a popover appears as an overlay above other items in the Touch Bar.
 
@@ -60,27 +60,27 @@ To show a bar when a user taps a popover item, specify a bar in the item’s [`p
 
 > **Note**:  If your popover bar requires significant user interaction and contains many items or many scroll views, don’t enable press-and-hold; doing so can result in an awkward user experience.
 
-The system automatically shows a chevron in the popover item under the following conditions: You specify the same [`NSTouchBar`](nstouchbar.md) object for both [`pressAndHoldTouchBar`](nspopovertouchbaritem/pressandholdtouchbar.md) and [`popoverTouchBar`](nspopovertouchbaritem/popovertouchbar.md) properties,  you use the default view for the popover item’s [`collapsedRepresentation`](nspopovertouchbaritem/collapsedrepresentation.md) property.
+The system automatically shows a chevron in the popover item under the following conditions: You specify the same [`NSTouchBar`](nstouchbar.md) object for both [`pressAndHoldTouchBar`](nspopovertouchbaritem/pressandholdtouchbar.md) and [`popoverTouchBar`](nspopovertouchbaritem/popovertouchbar.md) properties, *and* you use the default view for the popover item’s [`collapsedRepresentation`](nspopovertouchbaritem/collapsedrepresentation.md) property.
 
 If you provide a popover item that contains a scrubber (an [`NSScrubber`](nsscrubber.md) instance), you’ll likely want to dismiss both the scrubber and the popover after the user makes their selection in the scrubber. A good approach to achieve this user interaction is to subclass [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md), employing your instance of the subclass as the scrubber’s delegate. You can then configure the delegate object, within its [`didFinishInteracting(with:)`](nsscrubberdelegate/didfinishinteracting(with:).md) method, to call the popover’s [`dismissPopover(_:)`](nspopovertouchbaritem/dismisspopover(_:).md) method.
 
-If you place a segmented control in a bar for a popover item, take care  to use [`NSSegmentedControl.SwitchTracking.momentary`](nssegmentedcontrol/switchtracking/momentary.md) option of the [`NSSegmentedControl.SwitchTracking`](nssegmentedcontrol/switchtracking.md) enumeration because doing so interferes with the user’s operation of the control.
+If you place a segmented control in a bar for a popover item, take care *not* to use [`NSSegmentedControl.SwitchTracking.momentary`](nssegmentedcontrol/switchtracking/momentary.md) option of the [`NSSegmentedControl.SwitchTracking`](nssegmentedcontrol/switchtracking.md) enumeration because doing so interferes with the user’s operation of the control.
 
 ##### Other Common Item Types
 
-To provide a , always use the [`NSSliderTouchBarItem`](nsslidertouchbaritem.md) class, which employs a standard slider but is optimized for user interaction with the Touch Bar. (That is, don’t instead add an [`NSSlider`](nsslider.md) object directly to a custom item.)
+To provide a *slider item*, always use the [`NSSliderTouchBarItem`](nsslidertouchbaritem.md) class, which employs a standard slider but is optimized for user interaction with the Touch Bar. (That is, don’t instead add an [`NSSlider`](nsslider.md) object directly to a custom item.)
 
-A  (an instance of the [`NSGroupTouchBarItem`](nsgrouptouchbaritem.md) class) is a container that provides a bar, in its [`groupTouchBar`](nsgrouptouchbaritem/grouptouchbar.md) property, with its own array of items. You can enable customization for the items in a group’s contained bar, in the same way you would for items directly within a top-level bar. Using a group item lets you provide different user customization rules for different parts of the Touch Bar. Using a group item also lets you enable centering of the group within the Touch Bar.
+A *group item* (an instance of the [`NSGroupTouchBarItem`](nsgrouptouchbaritem.md) class) is a container that provides a bar, in its [`groupTouchBar`](nsgrouptouchbaritem/grouptouchbar.md) property, with its own array of items. You can enable customization for the items in a group’s contained bar, in the same way you would for items directly within a top-level bar. Using a group item lets you provide different user customization rules for different parts of the Touch Bar. Using a group item also lets you enable centering of the group within the Touch Bar.
 
-A  lets you add custom spacing between items in a bar. Specify a spacing item for a bar by assigning the [`fixedSpaceSmall`](nstouchbaritem/identifier-swift.struct/fixedspacesmall.md), [`fixedSpaceLarge`](nstouchbaritem/identifier-swift.struct/fixedspacelarge.md), or [`flexibleSpace`](nstouchbaritem/identifier-swift.struct/flexiblespace.md) identifier to an item, and adding that item to the bar’s items array. The system automatically instantiates and configures spacing items based on the identifiers you specify.
+A *spacing item* lets you add custom spacing between items in a bar. Specify a spacing item for a bar by assigning the [`fixedSpaceSmall`](nstouchbaritem/identifier-swift.struct/fixedspacesmall.md), [`fixedSpaceLarge`](nstouchbaritem/identifier-swift.struct/fixedspacelarge.md), or [`flexibleSpace`](nstouchbaritem/identifier-swift.struct/flexiblespace.md) identifier to an item, and adding that item to the bar’s items array. The system automatically instantiates and configures spacing items based on the identifiers you specify.
 
 ##### Configuration
 
 You must configure each item with a unique identifier, and can optionally assign a visibility priority or tag it as a principal item.
 
- You must provide a unique identifier for each item in the bar, apart from spacing items. Specify an identifier, of type [`NSTouchBarItem.Identifier`](nstouchbaritem/identifier-swift.struct.md) (called an ), for each item when you initialize it. The item identifier serves as a persistable weak reference to the item. The system uses item identifiers to populate bars and to track and record changes for user customization.
+**NSTouchBarItem identification.** You must provide a unique identifier for each item in the bar, apart from spacing items. Specify an identifier, of type [`NSTouchBarItem.Identifier`](nstouchbaritem/identifier-swift.struct.md) (called an *item identifier*), for each item when you initialize it. The item identifier serves as a persistable weak reference to the item. The system uses item identifiers to populate bars and to track and record changes for user customization.
 
- If the system is showing a bar in the Touch Bar, but horizontal space is constrained and the bar defines more items than will fit, the system hides some of the items. You influence this hide/show behavior by setting a value for the [`visibilityPriority`](nstouchbaritem/visibilitypriority.md) property of each item.
+**NSTouchBarItem priority for visibility.** If the system is showing a bar in the Touch Bar, but horizontal space is constrained and the bar defines more items than will fit, the system hides some of the items. You influence this hide/show behavior by setting a value for the [`visibilityPriority`](nstouchbaritem/visibilitypriority.md) property of each item.
 
 Lower-visibility-priority items get hidden by the system, as needed, before higher-visibility-priority items do.
 
@@ -88,7 +88,7 @@ To set visibility priority, use the constants in the [`NSTouchBarItem.Priority`]
 
 The system hides or shows groups of identical-priority items (defined within a single bar) together. The one exception to this rule is for items whose visibility priority is [`normal`](nstouchbaritem/priority/normal.md); these items get hidden one-by-one, with the normal-priority item farthest to the right getting hidden first. If horizontal space later increases in the Touch Bar, and hidden, normal-priority items become eligible for display, the system first shows the most recently-hidden of those items.
 
- Within a bar, you can optionally specify an item as having special significance by employing the [`principalItemIdentifier`](nstouchbar/principalitemidentifier.md) property. The system attempts to center a principal item within the Touch Bar. If you want a group of items to appear centered in the Touch Bar, designate the group item (of type [`NSTouchBarItem`](nstouchbaritem.md)) as the principal item.
+**Principal Items.** Within a bar, you can optionally specify an item as having special significance by employing the [`principalItemIdentifier`](nstouchbar/principalitemidentifier.md) property. The system attempts to center a principal item within the Touch Bar. If you want a group of items to appear centered in the Touch Bar, designate the group item (of type [`NSTouchBarItem`](nstouchbaritem.md)) as the principal item.
 
 If more than one bar in the responder chain is eligible to be visible in the Touch Bar, and more than one of those has a principal item, the system determines which one to center in the Touch Bar.
 

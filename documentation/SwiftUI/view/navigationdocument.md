@@ -29,7 +29,7 @@ Refer to the [`Configure your apps navigation titles`](configure-your-apps-navig
 
 ## Parameters
 
-- `url`: The URL content associated to the   navigation title.
+- `url`: The URL content associated to the navigation title.
 
 ## See Also
 

@@ -82,7 +82,7 @@ Use atomic writes only when needed.
 
 Writing data on iOS adds the data to a unified buffer cache that the system then writes to file storage. Forcing iOS to flush pending filesystem changes from the unified buffer can result in unnecessary writes to the disk, degrading performance and increasing wear on the device. When possible, avoid calling `fsync(_:)`, or using the `fcntl(_:_:)` `F_FULLFSYNC` operation to force a flush.
 
-Some apps require a  to ensure data persistence before subsequent operations can proceed. Most apps can use the `fcntl(_:_:)` `F_BARRIERFSYNC` for this.
+Some apps require a *write barrier* to ensure data persistence before subsequent operations can proceed. Most apps can use the `fcntl(_:_:)` `F_BARRIERFSYNC` for this.
 
 Only use `F_FULLFSYNC` when your app requires a strong expectation of data persistence. Note that `F_FULLFSYNC` represents a best-effort guarantee that iOS writes data to the disk, but data can still be lost in the case of sudden power loss.
 

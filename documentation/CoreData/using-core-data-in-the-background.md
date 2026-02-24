@@ -34,9 +34,9 @@ When you use the [`NSPersistentContainer`](nspersistentcontainer.md), you config
 
 ##### Avoiding Problems
 
- Data processing can be CPU-intensive, and if it’s performed on the main queue, it can result in unresponsiveness in the user interface. If your application processes data, such as importing data into Core Data from JSON, create a private queue context and perform the import on the private context.
+**In general, avoid doing data processing on the main queue that’s not user-related.** Data processing can be CPU-intensive, and if it’s performed on the main queue, it can result in unresponsiveness in the user interface. If your application processes data, such as importing data into Core Data from JSON, create a private queue context and perform the import on the private context.
 
- Doing so can result in corruption of the data and termination of the app. When it’s necessary to hand off a managed object reference from one queue to another, use [`NSManagedObjectID`](nsmanagedobjectid.md) instances.
+**Don’t pass managed object instances between queues.** Doing so can result in corruption of the data and termination of the app. When it’s necessary to hand off a managed object reference from one queue to another, use [`NSManagedObjectID`](nsmanagedobjectid.md) instances.
 
 You retrieve the managed object ID of a managed object by calling the `objectID` accessor on the [`NSManagedObject`](nsmanagedobject.md) instance.
 

@@ -23,7 +23,7 @@ init(coordinates: [CLLocationCoordinate2D], contourStyle: MapPolyline.ContourSty
 ## Parameters
 
 - `coordinates`: The coordinates to trace the path between.
-- `contourStyle`: The   to use.
+- `contourStyle`: The [`MapPolyline.ContourStyle`](mappolyline/contourstyle.md) to use.
 
 ## See Also
 

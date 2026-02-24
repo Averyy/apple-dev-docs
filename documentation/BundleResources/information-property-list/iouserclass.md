@@ -8,6 +8,10 @@ The name of your driver’s main class, which is the entry point for interacting
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Include this key only in the personality dictionary of a DriverKit extension, and use it to specify the name of the custom [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass that provides your driver’s behavior. When it’s time to load your driver, the system instantiates the specified class and begins the initialization and startup processes.

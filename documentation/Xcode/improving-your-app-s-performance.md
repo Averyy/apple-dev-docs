@@ -64,7 +64,7 @@ Find the code that’s causing the performance problem, and create a plan for im
 
 ##### Make the Next Change
 
-Implement the change you plan as a result of your investigation. Create an  profile in Instruments that you can compare with the  profile to ensure your change results in an improvement. Consider writing a performance test in [`XCTest`](https://developer.apple.com/documentation/XCTest) to protect against future regressions in performance, and to serve as a record that the problem existed and you fixed it.
+Implement the change you plan as a result of your investigation. Create an *after* profile in Instruments that you can compare with the *before* profile to ensure your change results in an improvement. Consider writing a performance test in [`XCTest`](https://developer.apple.com/documentation/XCTest) to protect against future regressions in performance, and to serve as a record that the problem existed and you fixed it.
 
 ##### Compare the Changed Behavior with Your Original Data
 
@@ -116,7 +116,7 @@ The following articles, Xcode Help topics, and WWDC session videos contain more 
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
 - [Analyzing the performance of your shipping app](analyzing-the-performance-of-your-shipping-app.md)
   View power and performance metrics for apps you distribute through the App Store.
-- [Creating a performance plan for your visionOS app](../visionOS/creating-a-performance-plan-for-visionos-app.md)
+- [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
 
 

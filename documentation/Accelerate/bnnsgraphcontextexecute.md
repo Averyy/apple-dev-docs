@@ -59,11 +59,11 @@ withUnsafeMutablePointer(to: &inputTensor) { input in
 ## Parameters
 
 - `context`: The graph context. You may only use this context on a single thread at a time.
-- `function`: The function. Specify as   if the graph only contains one function.
-- `argument_count`: The number of elements in the   array.
-- `arguments`: An array of   objects that supply the input data and the outputs. Use the   to derive the argument positions for this parameter. If you supply unallocated output arguments, this function allocates the required memory and reuses that memory for future executions.
-- `workspace_size`: The size of the workspace. Call   to get the required size or pass   and a null   parameter to specify that this function allocates its own workspace.
-- `workspace`: The temporary workspace that the function uses during execution. Call   to get the required size or pass   and a zero   parameter to specify that this function allocates its own workspace.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
+- `argument_count`: The number of elements in the `arguments` array.
+- `arguments`: An array of `bnns_graph_argument_t` objects that supply the input data and the outputs. Use the [`BNNSGraphGetArgumentPosition(_:_:_:)`](bnnsgraphgetargumentposition(_:_:_:).md) to derive the argument positions for this parameter. If you supply unallocated output arguments, this function allocates the required memory and reuses that memory for future executions.
+- `workspace_size`: The size of the workspace. Call [`BNNSGraphContextGetWorkspaceSize(_:_:)`](bnnsgraphcontextgetworkspacesize(_:_:).md) to get the required size or pass `0` and a null `workspace` parameter to specify that this function allocates its own workspace.
+- `workspace`: The temporary workspace that the function uses during execution. Call [`BNNSGraphContextGetWorkspaceSize(_:_:)`](bnnsgraphcontextgetworkspacesize(_:_:).md) to get the required size or pass `nil` and a zero `workspace_size` parameter to specify that this function allocates its own workspace.
 
 ## See Also
 

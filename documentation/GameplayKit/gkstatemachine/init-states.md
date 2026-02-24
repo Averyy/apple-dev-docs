@@ -31,7 +31,7 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## Parameters
 
-- `states`: An array of state objects. Each object in the array must be of a unique subclass of  .
+- `states`: An array of state objects. Each object in the array must be of a unique subclass of [`GKState`](gkstate.md).
 
 
 ---

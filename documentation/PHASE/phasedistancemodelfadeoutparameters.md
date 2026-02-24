@@ -27,6 +27,27 @@ For spatial sound output, the framework stops playing a sound when its distance 
 
 The following code demonstrates a spatial mixer’s additional fade out. By setting `fadeOutLength` to `1.0`, the framework begins to fade out a sound after its distance to the listener surpases `1.0`.
 
+**Swift**:
+
+```swift
+let fadeOut = PHASEDistanceModelFadeOutParameters(maximumDistance: 10.0,
+ fadeOutLength: 1.0,
+ curveType: PHASECurveType.linear)
+piecewiseModel.fadeOutParameters = fadeOut
+spatialMixer.distanceModelParameters = piecewiseModel
+```
+
+**Objective-C**:
+
+```objc
+PHASEDistanceModelFadeOutParameters* fadeOut = 
+    [[PHASEDistanceModelFadeOutParameters alloc] 
+        initWithMaximumDistance:10.f 
+        fadeOutLength:1.f curveType:PHASECurveTypeLinear];
+piecewiseModel.fadeOutParameters = fadeOut;
+spatialMixer.distanceModelParameters = piecewiseModel;
+```
+
 ## Topics
 
 ### Creating the Distance Model Fade-Out Parameters

@@ -35,8 +35,8 @@ Color.red
 
 ## Parameters
 
-- `animation`: The animation to use for the effect transition. If    the effects will not animate.
-- `body`: A block used to specify the effects to animate. You must use   the provided content to build the effects, or behavior is undefined.
+- `animation`: The animation to use for the effect transition. If `nil` the effects will not animate.
+- `body`: A block used to specify the effects to animate. You must use the provided content to build the effects, or behavior is undefined.
 
 
 ---

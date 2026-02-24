@@ -16,7 +16,7 @@ func setColor(_ color: UIColor?)
 
 ## Parameters
 
-- `color`: The custom color to be applied to the slider bar. Specifying   removes the custom color and returns the slider to the color specified in the storyboard file. The default slider bar color is green.
+- `color`: The custom color to be applied to the slider bar. Specifying `nil` removes the custom color and returns the slider to the color specified in the storyboard file. The default slider bar color is green.
 
 ## See Also
 

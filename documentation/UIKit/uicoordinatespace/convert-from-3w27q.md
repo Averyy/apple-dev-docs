@@ -25,7 +25,7 @@ A point specified in the coordinate space of the current object.
 ## Parameters
 
 - `point`: A point in the specified coordinate space.
-- `coordinateSpace`: The coordinate space in which   is specified.
+- `coordinateSpace`: The coordinate space in which `point` is specified.
 
 ## See Also
 

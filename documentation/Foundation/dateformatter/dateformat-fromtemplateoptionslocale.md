@@ -30,9 +30,43 @@ Different locales have different conventions for the ordering of date components
 
 The following example shows the difference between the date formats for British and American English:
 
+**Swift**:
+
+```swift
+let usLocale = Locale(identifier: "en_US")
+let gbLocale = Locale(identifier: "en_GB")
+let template = "yMMMMd"
+ 
+let usDateFormat = DateFormatter.dateFormat(fromTemplate: template, options: 0, locale: usLocale)!
+// Date format for English (United States): "MMMM d, y"
+let gbDateFormat = DateFormatter.dateFormat(fromTemplate: template, options: 0, locale: gbLocale)!
+// Date format for English (United Kingdom): "d MMMM y"
+```
+
+**Objective-C**:
+
+```objc
+NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+NSLocale *gbLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_GB"];
+ 
+NSString *template = @"yMMMMd";
+ 
+NSString *enDateFormat = [NSDateFormatter dateFormatFromTemplate:template options:0 locale:usLocale];
+NSLog(@"Date format for %@: %@",
+    [usLocale displayNameForKey:NSLocaleIdentifier value:[usLocale localeIdentifier]], enDateFormat);
+ 
+NSString *gbDateFormat = [NSDateFormatter dateFormatFromTemplate:template options:0 locale:gbLocale];
+NSLog(@"Date format for %@: %@",
+    [gbLocale displayNameForKey:NSLocaleIdentifier value:[gbLocale localeIdentifier]], gbDateFormat);
+ 
+// Output:
+// Date format for English (United States): MMMM d, y
+// Date format for English (United Kingdom): d MMMM y
+```
+
 ## Parameters
 
-- `tmplate`: For full details, see  .
+- `tmplate`: A string containing date format patterns (such as “MM” or “h”). For full details, see [`Date and Time Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 - `opts`: No options are currently defined.
 - `locale`: The locale for which the template is required.
 

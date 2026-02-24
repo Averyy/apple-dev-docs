@@ -22,9 +22,9 @@ init(_ titleKey: LocalizedStringKey, selection: Binding<Date>, displayedComponen
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of  , describing   its purpose.
+- `titleKey`: The key for the localized title of `self`, describing its purpose.
 - `selection`: The date value being displayed and selected.
-- `displayedComponents`: The date components that user is able to   view and edit. Defaults to  . On watchOS,   if   or   are included with   , only   is displayed.
+- `displayedComponents`: The date components that user is able to view and edit. Defaults to `[.hourAndMinute, .date]`. On watchOS, if `.hourAndMinute` or `.hourMinuteAndSecond` are included with `.date`, only `.date` is displayed.
 
 ## See Also
 

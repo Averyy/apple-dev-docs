@@ -26,7 +26,7 @@ Subclasses can override this method to handle the request in some other way. The
 
 ## Parameters
 
-- `value`: The value for the key identified by  .
+- `value`: The value for the key identified by `key`.
 - `key`: A string that is not equal to the name of any of the receiver’s properties.
 
 ## See Also

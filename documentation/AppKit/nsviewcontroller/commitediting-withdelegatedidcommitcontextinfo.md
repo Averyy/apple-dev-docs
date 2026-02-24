@@ -31,9 +31,9 @@ You may find this method useful in some situations when you want to ensure that 
 
 ## Parameters
 
-- `delegate`: An object that can serve as the receiver’s delegate. It should implement the method specified by  .
+- `delegate`: An object that can serve as the receiver’s delegate. It should implement the method specified by `didCommitSelector`.
 - `didCommitSelector`: A selector that is invoked on delegate.
-- `contextInfo`: Contextual information that is sent as the   argument to delegate when   is invoked.
+- `contextInfo`: Contextual information that is sent as the `contextInfo` argument to delegate when `didCommitSelector` is invoked.
 
 ## See Also
 

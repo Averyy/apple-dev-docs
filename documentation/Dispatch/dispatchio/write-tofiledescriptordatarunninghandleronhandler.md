@@ -33,7 +33,8 @@ The handler you provide is not queued for execution until the write operation fi
 - `toFileDescriptor`: The file descriptor to use for writing the data. The file descriptor must be open and configured for writing.
 - `data`: The data to write.
 - `queue`: The dispatch queue on which to submit the handler block.
-- `handler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameters:
+- `handler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameters: - **data**: A DispatchData object containing the data that was not written to the file descriptor, or `nil` if all of the data was written successfully.
+- **error**: This value is 0 if the data was written successfully. If an error occurred, this parameter contains the error number.
 
 ## See Also
 

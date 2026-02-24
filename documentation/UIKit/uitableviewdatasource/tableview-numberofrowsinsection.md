@@ -26,7 +26,7 @@ The number of rows in `section`.
 ## Parameters
 
 - `tableView`: The table-view object requesting this information.
-- `section`: An index number identifying a section in  .
+- `section`: An index number identifying a section in `tableView`.
 
 ## See Also
 

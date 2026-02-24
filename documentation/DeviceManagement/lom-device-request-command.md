@@ -26,6 +26,66 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestList</key>
+    <array>
+        <dict>
+            <key>DeviceDNSName</key>
+            <string>lomdevice.com</string>
+            <key>DeviceRequestType</key>
+            <string>Reset</string>
+            <key>DeviceRequestUUID</key>
+            <string>0001</string>
+            <key>PrimaryIPv6AddressList</key>
+            <array>
+                <string>fe80::94f6:d6ff:fef3:c05b</string>
+                <string>fe80::94f6:d6ff:fef3:c1a4</string>
+            </array>
+            <key>SecondaryIPv6AddressList</key>
+            <array/>
+        </dict>
+    </array>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_LOMDeviceRequest</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_LOMDeviceRequest</string>
+    <key>ResponseData</key>
+    <array>
+        <dict>
+            <key>DeviceRequestSucess</key>
+            <true/>
+            <key>DeviceRequestUUID</key>
+            <string>0001</string>
+        </dict>
+    </array>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>37CECCAB-99C1-5ADF-8A9A-2AFA3B6387B5</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -33,6 +93,10 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
   The command to send requests to a device using lights-out management (LOM).
 - [object LOMDeviceRequestResponse](lomdevicerequestresponse.md)
   A response from the device after it processes the command to send requests to a device using lights-out management (LOM).
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

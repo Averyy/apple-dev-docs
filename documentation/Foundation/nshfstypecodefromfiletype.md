@@ -21,7 +21,7 @@ The HFS file type code corresponding to `fileTypeString`, or `0` if it cannot be
 
 ## Parameters
 
-- `fileTypeString`: A string of the sort encoded by  .
+- `fileTypeString`: A string of the sort encoded by `NSFileTypeForHFSTypeCode()`.
 
 ## See Also
 

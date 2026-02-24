@@ -19,7 +19,7 @@ class NSUniqueIDSpecifier
 
 This specifier works only for objects that have an ID property. The unique ID object passed to an instance of  `NSUniqueIDSpecifier` must be either an `NSNumber` object or an `NSString` object. The exact type should match the scripting dictionary declaration of the ID attribute for the relevant scripting class.
 
-You can expect that the ID property will be  for any object that supports it. Therefore a scripter can obtain the unique ID for an object and refer to the object by the ID, but cannot set the unique ID.
+You can expect that the ID property will be *read only* for any object that supports it. Therefore a scripter can obtain the unique ID for an object and refer to the object by the ID, but cannot set the unique ID.
 
 You don’t normally subclass `NSUniqueIDSpecifier`.
 

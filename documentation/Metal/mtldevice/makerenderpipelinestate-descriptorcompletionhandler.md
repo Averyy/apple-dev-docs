@@ -26,7 +26,7 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance.
 - `completionHandler`: A Swift closure or an Objective-C block the method calls when it finishes creating the render pipeline state.
 
 ## See Also

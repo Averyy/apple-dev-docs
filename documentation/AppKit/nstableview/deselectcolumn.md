@@ -26,7 +26,7 @@ This method doesn’t check with the delegate before changing the selection.
 
 ## Parameters
 
-- `column`: The index in the   array of the column to deselect.
+- `column`: The index in the [`tableColumns`](nstableview/tablecolumns.md) array of the column to deselect.
 
 ## See Also
 

@@ -16,7 +16,7 @@ init(rootView: Content)
 
 ## Parameters
 
-- `rootView`: The root view of the SwiftUI view hierarchy that   you want to present using this menu.
+- `rootView`: The root view of the SwiftUI view hierarchy that you want to present using this menu.
 
 
 ---

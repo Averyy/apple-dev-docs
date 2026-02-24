@@ -20,7 +20,7 @@ You open a resource map using either [`CFBundleOpenBundleResourceFiles(_:_:_:)`]
 
 ## Parameters
 
-- `bundle`: The bundle whose resource map is referenced by  .
+- `bundle`: The bundle whose resource map is referenced by `refNum`.
 - `refNum`: The reference number for a resource map to close.
 
 ## See Also

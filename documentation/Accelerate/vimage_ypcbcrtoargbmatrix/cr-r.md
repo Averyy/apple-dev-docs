@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-The  value in the conversion matrix.
+The *Cr_R* value in the conversion matrix.
 
 **Availability**:
 - iOS ?+
@@ -23,13 +23,13 @@ var Cr_R: Float
 ## See Also
 
 - [var Yp: Float](vimage_ypcbcrtoargbmatrix/yp.md)
-  The  value in the conversion matrix.
+  The *Yp* value in the conversion matrix.
 - [var Cr_G: Float](vimage_ypcbcrtoargbmatrix/cr_g.md)
-  The  value in the conversion matrix.
+  The *Cr_G* value in the conversion matrix.
 - [var Cb_G: Float](vimage_ypcbcrtoargbmatrix/cb_g.md)
-  The  value in the conversion matrix.
+  The *Cb_G* value in the conversion matrix.
 - [var Cb_B: Float](vimage_ypcbcrtoargbmatrix/cb_b.md)
-  The  value in the conversion matrix.
+  The *Cb_B* value in the conversion matrix.
 
 
 ---

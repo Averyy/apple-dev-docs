@@ -22,7 +22,7 @@ Gets the scale of an entity relative to the given entity.
 
 ## Parameters
 
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

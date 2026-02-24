@@ -23,7 +23,7 @@ func CFCharacterSetAddCharactersInString(_ theSet: CFMutableCharacterSet!, _ the
 ## Parameters
 
 - `theSet`: The character set to modify.
-- `theString`: A string containing the characters to add to  .
+- `theString`: A string containing the characters to add to `theSet`.
 
 ## See Also
 

@@ -28,6 +28,20 @@ Prefetching allows Core Data to obtain related objects in a single fetch (per en
 
 (For more details, see Core Data Performance in Core Data Programming Guide)
 
+**Swift**:
+
+```swift
+let request = NSFetchRequest(entityName: "Employee") as NSFetchRequest<NSManagedObject>
+request.relationshipKeyPathsForPrefetching = ["department"]
+```
+
+**Objective-C**:
+
+```objc
+NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Employee"];
+[request setRelationshipKeyPathsForPrefetching:@[@"department"]];
+```
+
 
 ---
 

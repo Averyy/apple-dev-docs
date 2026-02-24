@@ -33,7 +33,7 @@ When you set this requirement on a connection, the operating system checks that 
 ## Parameters
 
 - `connection`: The XPC connection.
-- `signing_identifier`: The code-signing identifier for the peer process’s executable. This value is typically a Bundle ID for apps and extensions. Pass   to indicate that any Apple-signed binary is acceptable.
+- `signing_identifier`: The code-signing identifier for the peer process’s executable. This value is typically a Bundle ID for apps and extensions. Pass `NULL` to indicate that any Apple-signed binary is acceptable.
 
 ## See Also
 

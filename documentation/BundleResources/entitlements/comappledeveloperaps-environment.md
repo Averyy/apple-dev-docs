@@ -8,6 +8,10 @@ The environment for push notifications in macOS apps.
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key specifies whether to use the development or production Apple Push Notification service (APNs) environment when registering for push notifications with [`registerForRemoteNotifications()`](https://developer.apple.com/documentation/AppKit/NSApplication/registerForRemoteNotifications()).

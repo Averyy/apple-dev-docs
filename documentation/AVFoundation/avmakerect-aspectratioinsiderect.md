@@ -27,6 +27,20 @@ Returns a scaled `CGRect` that maintains the aspect ratio specified by `aspectRa
 
 Use this function when attempting to fit the presentation size of a player item object’s content within the bounds of another [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer). Use the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) as the player layer’s [`frame`](https://developer.apple.com/documentation/QuartzCore/CALayer/frame) property value. For example:
 
+**Swift**:
+
+```swift
+let aspectRatio = CGSize(width: 1920, height: 1080)
+playerLayer.frame = AVMakeRect(aspectRatio: aspectRatio, insideRect: superLayer.bounds)
+```
+
+**Objective-C**:
+
+```objc
+CGSize aspectRatio = CGSizeMake(1920, 1080);
+self.playerLayer.frame = AVMakeRectWithAspectRatioInsideRect(aspectRatio, self.superLayer.bounds);
+```
+
 ## Parameters
 
 - `aspectRatio`: The width and height ratio (aspect ratio) you want to maintain.

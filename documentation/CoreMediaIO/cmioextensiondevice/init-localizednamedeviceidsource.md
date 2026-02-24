@@ -18,7 +18,7 @@ convenience init(localizedName: String, deviceID: UUID, source: any CMIOExtensio
 
 - `localizedName`: A localized name for the device.
 - `deviceID`: A universally unique device identifier value.
-- `source`: An extension-specific object that conforms to the   protocol.
+- `source`: An extension-specific object that conforms to the [`CMIOExtensionDeviceSource`](cmioextensiondevicesource.md) protocol.
 
 ## See Also
 

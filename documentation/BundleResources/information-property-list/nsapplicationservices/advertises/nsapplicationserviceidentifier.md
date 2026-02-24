@@ -10,6 +10,10 @@
 - watchOS 9.0+
 
 
+
+**Type**: string
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplicationservices/advertises/nsapplicationserviceidentifier)*

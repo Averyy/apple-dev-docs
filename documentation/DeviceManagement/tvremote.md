@@ -83,6 +83,11 @@ Specify `com.apple.tvremote` as the payload type.
 - [object TVRemote.AllowedTVsItem](tvremote/allowedtvsitem.md)
   The array of valid Apple TV identifiers that the remote can connect to.
 
+## Properties
+
+- `AllowedRemotes` ([TVRemote.AllowedRemotesItem]): The array of valid devices that Apple TV can connect to.
+- `AllowedTVs` ([TVRemote.AllowedTVsItem]): The array of valid Apple TV identifiers that the remote can connect to.
+
 ## See Also
 
 - [object ConferenceRoomDisplay](conferenceroomdisplay.md)

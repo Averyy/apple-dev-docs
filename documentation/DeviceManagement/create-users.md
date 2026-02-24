@@ -13,6 +13,39 @@ Create users to assign apps and books to.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+{
+    "users": [
+        {
+            "clientUserId": "client-100",
+            "email": "client-100@next.com",
+            "managedAppleId": "maid-100@next.com"
+        },
+        {
+            "clientUserId": "client-101",
+            "email": "client-101@next.com",
+            "managedAppleId": "maid-101@next.com"
+        },
+        {
+            "clientUserId": "client-102",
+            "email": "client-102@next.com"
+        }
+    ]
+}
+```
+
+**Response**:
+
+```json
+{
+    "eventId": "af70eb9b-0ab6-405d-87d8-3b9ed0c4f370",
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+    "uId": "2049025000431439"
+}
+```
+
 ## Topics
 
 ### Request and Response
@@ -22,6 +55,10 @@ Create users to assign apps and books to.
   The response that contains the event identifier.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
+
+## Endpoint
+
+`POST https://vpp.itunes.apple.com/mdm/v2/users/create`
 
 ## Request Body
 

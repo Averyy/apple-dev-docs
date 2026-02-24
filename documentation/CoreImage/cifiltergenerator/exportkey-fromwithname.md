@@ -20,9 +20,9 @@ When you create a [`CIFilter`](cifilter-swift.class.md) object from a [`CIFilter
 
 ## Parameters
 
-- `key`: The key to export from the target object (for example,  ).
+- `key`: The key to export from the target object (for example, `inputImage`).
 - `targetObject`: The object associated with the key (for example, the filter).
-- `exportedKeyName`: A unique name to use for the exported key. Pass   to use the original key name.
+- `exportedKeyName`: A unique name to use for the exported key. Pass `nil` to use the original key name.
 
 ## See Also
 

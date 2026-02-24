@@ -23,7 +23,7 @@ init(mStartOffset: Int64, mVariableFramesInPacket: UInt32, mDataByteSize: UInt32
 ## Parameters
 
 - `mStartOffset`: The number of bytes from the start of the buffer to the beginning of the packet.
-- `mVariableFramesInPacket`: The number of sample frames of data in the packet. For formats with a constant number of frames per packet, set this to  .
+- `mVariableFramesInPacket`: The number of sample frames of data in the packet. For formats with a constant number of frames per packet, set this to `0`.
 - `mDataByteSize`: The number of bytes in the packet.
 
 ## See Also

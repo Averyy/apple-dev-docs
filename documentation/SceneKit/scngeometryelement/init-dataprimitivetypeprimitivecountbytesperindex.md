@@ -33,7 +33,7 @@ To create a custom [`SCNGeometry`](scngeometry.md) object from the geometry elem
 ## Parameters
 
 - `data`: The data describing the element.
-- `primitiveType`: The drawing primitive that connects vertices when rendering the geometry element. For possible values, see  .
+- `primitiveType`: The drawing primitive that connects vertices when rendering the geometry element. For possible values, see [`SCNGeometryPrimitiveType`](scngeometryprimitivetype.md).
 - `primitiveCount`: The number of primitives in the element.
 - `bytesPerIndex`: The number of bytes that represent a single index value in the data.
 

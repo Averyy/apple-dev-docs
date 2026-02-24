@@ -6,7 +6,7 @@ Know the size limits of color render targets in Apple GPUs based on the target�
 
 #### Overview
 
-A  is a texture that’s an output destination for the color data that a render pass generates. Pixel formats that you can assign to these color render targets are .
+A *color render target* is a texture that’s an output destination for the color data that a render pass generates. Pixel formats that you can assign to these color render targets are *color-renderable pixel formats*.
 
 The storage size of each pixel format depends on the sum of its components. For example, the storage size of [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) is 32 bits per pixel (composed of four 8-bit components). The storage size of [`MTLPixelFormat.bgr5A1Unorm`](mtlpixelformat/bgr5a1unorm.md) is 16 bits per pixel (composed of three 5-bit components and one 1-bit component). When you use multiple render targets in a single render pass, the combined storage size for that render pass is equal to the combined size of the pixel formats those render targets use in that pass.
 

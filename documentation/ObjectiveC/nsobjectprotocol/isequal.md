@@ -33,7 +33,7 @@ If two objects are equal, they must have the same hash value. This last point is
 
 ## Parameters
 
-- `object`: The object to be compared to the receiver. May be  , in which case this method returns  .
+- `object`: The object to be compared to the receiver. May be `nil`, in which case this method returns [`NO`](no.md).
 
 ## See Also
 

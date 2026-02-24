@@ -29,8 +29,8 @@ The newly created material property’s value is empty, and its [`type`](mdlmate
 
 ## Parameters
 
-- `name`: A descriptive name for the material property. For details, see the   property.
-- `semantic`: The semantic meaning for the material property’s value. For details, see the   property.
+- `name`: A descriptive name for the material property. For details, see the [`name`](mdlmaterialproperty/name.md) property.
+- `semantic`: The semantic meaning for the material property’s value. For details, see the [`semantic`](mdlmaterialproperty/semantic.md) property.
 
 ## See Also
 

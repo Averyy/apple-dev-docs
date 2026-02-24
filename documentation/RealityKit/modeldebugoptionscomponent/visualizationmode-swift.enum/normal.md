@@ -21,7 +21,7 @@ case normal
 
 #### Discussion
 
-Add a [`ModelDebugOptionsComponent`](modeldebugoptionscomponent.md) with a visualization mode of `normal` to an entity to tell RealityKit to draw that entity’s  as its surface color. A normal vector is an imaginary line perpendicular to the surface of the object at a specific point. RealityKit draws a normal vector by using its `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the color.
+Add a [`ModelDebugOptionsComponent`](modeldebugoptionscomponent.md) with a visualization mode of `normal` to an entity to tell RealityKit to draw that entity’s *surface normal vectors* as its surface color. A normal vector is an imaginary line perpendicular to the surface of the object at a specific point. RealityKit draws a normal vector by using its `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the color.
 
 RealityKit calculates normals for entities with a [`VideoMaterial`](videomaterial.md), [`UnlitMaterial`](unlitmaterial.md), or [`SimpleMaterial`](simplematerial.md) as well as for entities imported from a USDZ file. If an entity doesn’t fall within those parameters, this option has no effect on the rendering.
 

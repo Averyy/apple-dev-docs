@@ -30,9 +30,9 @@ You can attach any Core Foundation object to a `CMAttachmentBearer` to store add
 
 ## Parameters
 
-- `target`: Specifies the   whose attachment you want to retrieve.
-- `key`: Key in the form of a   identifying the desired attachment.
-- `attachmentModeOut`: On output,   points to the mode of the attachment. See  for possible values. May be  .
+- `target`: Specifies the `CMAttachmentBearer` whose attachment you want to retrieve.
+- `key`: Key in the form of a `CFString` identifying the desired attachment.
+- `attachmentModeOut`: On output, `attachmentMode` points to the mode of the attachment. See [`CMAttachmentMode`](cmattachmentmode.md)for possible values. May be `NULL`.
 
 ## See Also
 

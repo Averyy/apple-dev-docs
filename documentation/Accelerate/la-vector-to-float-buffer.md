@@ -37,7 +37,7 @@ If the object is not a matrix or vector, or if it is a matrix with both dimensio
 ## Parameters
 
 - `buffer`: Pointer to the destination buffer.
-- `buffer_stride`: Offset (in floats) between the destinations of consecutive vector elements   in the buffer.  Negative strides are not supported (you can get the same   effect by reversing the vector before calling this function).
+- `buffer_stride`: Offset (in floats) between the destinations of consecutive vector elements in the buffer.  Negative strides are not supported (you can get the same effect by reversing the vector before calling this function).
 - `vector`: The vector to store.
 
 ## See Also

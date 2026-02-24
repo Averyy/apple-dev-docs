@@ -32,7 +32,7 @@ For example, the function returns `aac` for a description of an AAC audio stream
 
 ## Parameters
 
-- `desc`: The   to examine.
+- `desc`: The `CMFormatDescription` to examine.
 
 ## See Also
 

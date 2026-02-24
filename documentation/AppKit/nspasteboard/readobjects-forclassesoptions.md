@@ -35,8 +35,8 @@ Consider the following example: there are five items on the pasteboard, two cont
 
 ## Parameters
 
-- `classArray`: Because this method creates an instance of the first class that can read a given pasteboard item, you can order the classes in   to match your preferred order of representation. Classes in the array must conform to the   protocol.
-- `options`: A dictionary that specifies options to refine the search for pasteboard items, for example to restrict the search to file URLs with particular content types. For valid dictionary keys, see  .
+- `classArray`: An array of class objects. Because this method creates an instance of the first class that can read a given pasteboard item, you can order the classes in `classArray` to match your preferred order of representation. Classes in the array must conform to the [`NSPasteboardReading`](nspasteboardreading.md) protocol.
+- `options`: A dictionary that specifies options to refine the search for pasteboard items, for example to restrict the search to file URLs with particular content types. For valid dictionary keys, see `Pasteboard Reading Options`.
 
 ## See Also
 

@@ -20,7 +20,7 @@ The space uses the specified content builder to form the content.
 
 ## Parameters
 
-- `content`: An immersive space content builder that defines the content   of the space.
+- `content`: An immersive space content builder that defines the content of the space.
 
 
 ---

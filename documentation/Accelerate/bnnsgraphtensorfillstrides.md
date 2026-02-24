@@ -33,9 +33,9 @@ This function requires that you specify the tensor’s sizes. That is, they aren
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
-- `tensor`: The tensor. On output, the first   elements contain the strides that BNNS requires.
+- `tensor`: The tensor. On output, the first [`rank`](bnnstensor/rank.md) elements contain the strides that BNNS requires.
 
 ## See Also
 

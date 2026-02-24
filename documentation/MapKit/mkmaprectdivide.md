@@ -23,9 +23,9 @@ func MKMapRectDivide(_ rect: MKMapRect, _ slice: UnsafeMutablePointer<MKMapRect>
 ## Parameters
 
 - `rect`: The rectangle to divide.
-- `slice`: On input, a pointer to a map rectangle. On output, this parameter contains the portion of   that the method removes.
-- `remainder`: On input, a pointer to a map rectangle. On output, this parameter contains the remaining portion of   that the method doesn’t remove.
-- `amount`: The amount of   to remove along the specified edge. If this value is negative, the system sets it to  .
+- `slice`: On input, a pointer to a map rectangle. On output, this parameter contains the portion of `rect` that the method removes.
+- `remainder`: On input, a pointer to a map rectangle. On output, this parameter contains the remaining portion of `rect` that the method doesn’t remove.
+- `amount`: The amount of `rect` to remove along the specified edge. If this value is negative, the system sets it to `0`.
 - `edge`: The edge from which to remove the specified amount.
 
 ## See Also

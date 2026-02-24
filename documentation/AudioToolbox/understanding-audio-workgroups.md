@@ -14,7 +14,7 @@ An audio workgroup is a collection of real-time threads that work together to pr
 
 ##### Learn About Audio Workgroups
 
-The diagram below shows how Core Audio runs an I/O thread in the audio server as part of the audio device’s workgroup. The thread wakes up at regular intervals and calls its associated client app to retrieve its audio output. When the client finishes rendering its audio, the system writes it to the output hardware, and the I/O thread sleeps. If a client takes too long to produce audio, the thread misses its deadline, which results in an audio overload and an interruption in audio playback. The I/O thread is the  thread of an audio device workgroup, and it informs the kernel of the beginning and end of each work cycle.
+The diagram below shows how Core Audio runs an I/O thread in the audio server as part of the audio device’s workgroup. The thread wakes up at regular intervals and calls its associated client app to retrieve its audio output. When the client finishes rendering its audio, the system writes it to the output hardware, and the I/O thread sleeps. If a client takes too long to produce audio, the thread misses its deadline, which results in an audio overload and an interruption in audio playback. The I/O thread is the *primary* thread of an audio device workgroup, and it informs the kernel of the beginning and end of each work cycle.
 
 ![A diagram that shows how Core Audio runs an I/O thread in the audio server.](https://docs-assets.developer.apple.com/published/85a6bf9ee0a0e8dfb0e606817d65cbab/media-3627695%402x.png)
 

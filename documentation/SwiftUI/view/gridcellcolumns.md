@@ -61,7 +61,7 @@ As a convenience you can cause a view to span all of the [`Grid`](grid.md) colum
 
 ## Parameters
 
-- `count`: The number of columns that the view should consume   when placed in a grid row.
+- `count`: The number of columns that the view should consume when placed in a grid row.
 
 ## See Also
 

@@ -21,6 +21,11 @@ object ApplyRedemptionCodeCommand
 - [object ApplyRedemptionCodeCommand.Command](applyredemptioncodecommand/command-data.dictionary.md)
   The command to complete the installation of an app using a redemption code.
 
+## Properties
+
+- `Command` (ApplyRedemptionCodeCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ApplyRedemptionCodeResponse](applyredemptioncoderesponse.md)

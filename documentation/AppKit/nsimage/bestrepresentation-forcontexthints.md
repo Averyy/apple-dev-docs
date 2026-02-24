@@ -21,8 +21,8 @@ The image representation that most closely matches the specified criteria.
 ## Parameters
 
 - `rect`: The area of the image to return.
-- `referenceContext`: A graphics context. This value can be  .
-- `hints`: An optional dictionary of hints that provide more context for selecting or generating a  , and may override properties of the  . See   for a summary of the possible key-value pairs.
+- `referenceContext`: A graphics context. This value can be `nil`.
+- `hints`: An optional dictionary of hints that provide more context for selecting or generating a `CGImage`, and may override properties of the `referenceContext`. See `Image Hint Dictionary Keys` for a summary of the possible key-value pairs.
 
 ## See Also
 

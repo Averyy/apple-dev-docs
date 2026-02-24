@@ -26,8 +26,8 @@ If you do call this function, you must call it before the first call to the `CMS
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `chainMode`: A constant that indicates which certificate or certificates to include in the message. See  .
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `chainMode`: A constant that indicates which certificate or certificates to include in the message. See [`CMSCertificateChainMode`](cmscertificatechainmode.md).
 
 ## See Also
 

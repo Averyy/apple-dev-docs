@@ -22,7 +22,7 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `flag`:   if the glyphs in   exceed the bounds of the line fragment in which they are laid out,   otherwise.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the glyphs in `glyphRange` exceed the bounds of the line fragment in which they are laid out, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 - `glyphRange`: The range of the glyphs in question.
 
 ## See Also

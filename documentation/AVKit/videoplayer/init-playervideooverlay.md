@@ -24,7 +24,7 @@ Creates a video-player user interface for the player object.
 ## Parameters
 
 - `player`: The player that plays the audiovisual content.
-- `videoOverlay`: A closure that returns a   view to present over the player’s video content. This view is fully interactive, but is placed below the system-provided playback controls, and only receives unhandled events.
+- `videoOverlay`: A closure that returns a `VideoOverlay` view to present over the player’s video content. This view is fully interactive, but is placed below the system-provided playback controls, and only receives unhandled events.
 
 ## See Also
 

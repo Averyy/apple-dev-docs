@@ -40,7 +40,7 @@ The keys and values that represent the locale data from `locale` are used when p
 ## Parameters
 
 - `string`: A string that contains a colloquial specification of a date, such as “last Tuesday at dinner,” “3pm December 31, 2001,” “12/31/01,” or “31/12/01.”
-- `locale`: If you pass   or an instance of  ,   uses the system default locale—this is not the same as the current user’s locale.
+- `locale`: An `NSDictionary` object containing locale data. To use the user’s preferences, you can use `[[NSUserDefaults standardUserDefaults] dictionaryRepresentation]`. If you pass `nil` or an instance of `NSLocale`, `NSDate` uses the system default locale—this is not the same as the current user’s locale.
 
 ## See Also
 

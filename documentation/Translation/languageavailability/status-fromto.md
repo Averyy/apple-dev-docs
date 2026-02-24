@@ -30,7 +30,7 @@ Use this function to check whether the system has installed the required languag
 ## Parameters
 
 - `source`: The source language of the content.
-- `target`: The target language you want to translate content into. When set to  ,   the system picks an appropriate target based on the person’s preferred languages and returns   the status for those languages.
+- `target`: The target language you want to translate content into. When set to `nil`, the system picks an appropriate target based on the person’s preferred languages and returns the status for those languages.
 
 ## See Also
 

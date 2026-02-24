@@ -25,8 +25,8 @@ For device objects, only use this method for state changes that don’t affect I
 ## Parameters
 
 - `in_object_id`: The identifier of the object whose properties changed.
-- `in_properties`: An array of   instances for the changed properties.
-- `in_num_properties`: The number of elements in the   array.
+- `in_properties`: An array of [`IOUserAudioObjectPropertySelector`](audiodriverkit/iouseraudioobjectpropertyselector.md) instances for the changed properties.
+- `in_num_properties`: The number of elements in the `in_properties` array.
 
 ## See Also
 

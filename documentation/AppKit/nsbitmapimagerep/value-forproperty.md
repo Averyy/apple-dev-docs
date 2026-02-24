@@ -24,7 +24,7 @@ Image properties can affect how an image is read in and saved to file. When retr
 
 ## Parameters
 
-- `property`: A string constant used as a key for an image property. These properties are described in  .
+- `property`: A string constant used as a key for an image property. These properties are described in [`NSBitmapImageRep.PropertyKey`](nsbitmapimagerep/propertykey.md).
 
 ## See Also
 

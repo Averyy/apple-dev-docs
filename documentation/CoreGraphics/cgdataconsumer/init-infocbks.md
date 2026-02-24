@@ -26,8 +26,8 @@ A new data consumer object. In Objective-C, you’re responsible for releasing t
 
 ## Parameters
 
-- `info`: A pointer to data of any type or  . When the callback is called, Core Graphics passes this pointer as the   parameter.
-- `cbks`: A pointer to a structure that specifies the callback functions you implement to copy data sent to the consumer and to handle the consumer’s basic memory management. For a complete description, see  .
+- `info`: A pointer to data of any type or `NULL`. When the callback is called, Core Graphics passes this pointer as the `info` parameter.
+- `cbks`: A pointer to a structure that specifies the callback functions you implement to copy data sent to the consumer and to handle the consumer’s basic memory management. For a complete description, see [`CGDataConsumerCallbacks`](cgdataconsumercallbacks.md).
 
 ## See Also
 

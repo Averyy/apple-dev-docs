@@ -70,7 +70,7 @@ func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
 
 #### Inspect Expression Information
 
-In the robot head’s `update(with faceAnchor:)` function, the app reads the user’s current expression by interpreting the anchor’s .
+In the robot head’s `update(with faceAnchor:)` function, the app reads the user’s current expression by interpreting the anchor’s *blend shapes*.
 
 ```swift
 let blendShapes = faceAnchor.blendShapes

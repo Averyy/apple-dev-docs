@@ -9,6 +9,10 @@ Configurations for scenes that you use to display navigation content on a CarPla
 - iOS 13.4+
 - iPadOS 13.4+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 After setting [`CPSupportsDashboardNavigationScene`](information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md) to `YES`, use this key to specify the scene configuration when displaying navigation content in the CarPlay Dashboard.

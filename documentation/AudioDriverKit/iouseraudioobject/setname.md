@@ -24,7 +24,7 @@ If the change succeeds, the framework sends a notification to the host to update
 
 ## Parameters
 
-- `in_name`: The name to set, as an  .
+- `in_name`: The name to set, as an [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString).
 
 ## See Also
 

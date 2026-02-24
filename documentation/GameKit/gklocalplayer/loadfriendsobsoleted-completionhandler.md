@@ -25,7 +25,8 @@ After this call completes, the [`friends`](gklocalplayer/friends.md) property of
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call when the request completes. The block receives the following parameters: - **friendIDs**: An array of `NSString` objects containing the player identifiers for the players who are friends of the local player. If an error occurs, this value can be non-`nil`. In that case, the array contains the data that GameKit downloads before the error occurs.
+- **error**: If an error occurs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

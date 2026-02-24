@@ -16,7 +16,7 @@ func security() -> CWSecurity
 
 #### Discussion
 
-Dynamically queries the interface for the security mode. Returns  in the case of an error, or if the interface is not participating in a network.
+Dynamically queries the interface for the security mode. Returns *kCWSecurityUnknown* in the case of an error, or if the interface is not participating in a network.
 
 ## See Also
 

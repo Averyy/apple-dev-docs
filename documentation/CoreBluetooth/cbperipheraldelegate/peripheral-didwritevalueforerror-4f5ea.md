@@ -28,7 +28,7 @@ Core Bluetooth invokes this method only when your app calls the [`writeValue(_:f
 
 - `peripheral`: The peripheral providing this information.
 - `characteristic`: The characteristic containing the value.
-- `error`: The reason the call failed, or   if no error occurred.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 ## See Also
 

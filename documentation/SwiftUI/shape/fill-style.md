@@ -27,7 +27,7 @@ A shape filled with the foreground color.
 
 ## Parameters
 
-- `style`: The style options that determine how the fill   renders.
+- `style`: The style options that determine how the fill renders.
 
 ## See Also
 

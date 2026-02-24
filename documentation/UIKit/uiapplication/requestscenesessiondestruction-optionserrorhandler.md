@@ -25,8 +25,8 @@ If the specified scene is onscreen, calling this method dismisses it using the s
 ## Parameters
 
 - `sceneSession`: The session whose scene you want to remove from the screen and app switcher.
-- `options`: Information for the system to use when dismissing the scene. For information about how to create this object, see  .
-- `errorHandler`: An error handler block to execute if a problem occurs. The method does not execute this block when it successfully dismisses the scene. This block has no return value and has the following parameter:
+- `options`: Information for the system to use when dismissing the scene. For information about how to create this object, see [`UISceneDestructionRequestOptions`](uiscenedestructionrequestoptions.md).
+- `errorHandler`: An error handler block to execute if a problem occurs. The method does not execute this block when it successfully dismisses the scene. This block has no return value and has the following parameter: - **error**: The [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing the problem that occurred.
 
 ## See Also
 

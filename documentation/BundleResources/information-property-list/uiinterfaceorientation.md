@@ -9,6 +9,12 @@ The initial orientation of the app’s user interface.
 - iOS 2.0+
 - iPadOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `UIInterfaceOrientationPortrait`
+
 #### Discussion
 
 The default value is `UIInterfaceOrientationPortrait`. If you add the [`UISupportedInterfaceOrientations`](information-property-list/uisupportedinterfaceorientations.md) key to the information property list, the system ignores this key.

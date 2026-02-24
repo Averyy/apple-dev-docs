@@ -25,7 +25,7 @@ The system requires that all URL requests use Hypertext Transfer Protocol Secure
 
 - `identifier`: An app-specific string that uniquely identifies the downloadable asset.
 - `request`: A URL request that provides request-specific information, such as URL, request type, and body data.
-- `applicationGroupIdentifier`: The identifier of the App Group where the system stores finished downloads. For more information about App Groups, see  .
+- `applicationGroupIdentifier`: The identifier of the App Group where the system stores finished downloads. For more information about App Groups, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
 
 ## See Also
 

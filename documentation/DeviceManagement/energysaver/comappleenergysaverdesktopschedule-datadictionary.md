@@ -22,6 +22,11 @@ object EnergySaver.Com.apple.EnergySaver.desktop.Schedule
 - [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweron-data.dictionary.md)
   The triggers for turning the device on.
 
+## Properties
+
+- `RepeatingPowerOff` (EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff): The schedule for turning the device off.
+- `RepeatingPowerOn` (EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn): The schedule for turning the device on.
+
 ## See Also
 
 - [object EnergySaver.Com.apple.EnergySaver.desktop.ACPower](energysaver/com.apple.energysaver.desktop.acpower-data.dictionary.md)

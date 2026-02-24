@@ -90,6 +90,10 @@ Specify `com.apple.systemmigration` as the payload type.
 - [object SystemMigration.CustomBehaviorItem](systemmigration/custombehavioritem.md)
   The custom behavior dictionary.
 
+## Properties
+
+- `CustomBehavior` ([SystemMigration.CustomBehaviorItem]): The list of custom behavior dictionaries.
+
 ## See Also
 
 - [object SoftwareUpdate](softwareupdate.md)

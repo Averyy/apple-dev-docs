@@ -26,15 +26,15 @@ The method records the encoder’s current rendering state and resources the com
 
 ## Parameters
 
-- `numberOfPatchControlPoints`: The number of control points for each patch, which needs to be in the range  .
+- `numberOfPatchControlPoints`: The number of control points for each patch, which needs to be in the range `[0, 32]`.
 - `patchStart`: The patch start index.
 - `patchCount`: The number of patches in each instance.
-- `patchIndexBuffer`: An   instance that contains the indices to patches.
-- `patchIndexBufferOffset`: An integer that represents the location, in bytes, from the start of   where the patch indices begin.
-- `controlPointIndexBuffer`: An   instance that contains the indices to control points.
-- `controlPointIndexBufferOffset`: An integer that represents the location, in bytes, from the start of   where the control point indices begin.
-- `instanceCount`: The number of times the command draws   patches.
-- `baseInstance`: For more information about the   argument attribute for vertex shaders, see the  .
+- `patchIndexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the indices to patches.
+- `patchIndexBufferOffset`: An integer that represents the location, in bytes, from the start of `patchIndexBuffer` where the patch indices begin.
+- `controlPointIndexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the indices to control points.
+- `controlPointIndexBufferOffset`: An integer that represents the location, in bytes, from the start of `controlPointIndexBuffer` where the control point indices begin.
+- `instanceCount`: The number of times the command draws `patchCount` patches.
+- `baseInstance`: The lowest value the command passes to your vertex shader’s parameter with the `instance_id` attribute. The command assigns each drawing instance a unique `instance_id` value that increases from `baseInstance` through `(baseInstance + instanceCount - 1)`. Your shader can use that value to identify which instance the vertex belongs to. For more information about the `instance_id` argument attribute for vertex shaders, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 

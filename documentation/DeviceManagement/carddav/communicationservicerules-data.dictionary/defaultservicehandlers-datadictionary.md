@@ -16,6 +16,10 @@ A dictionary defining the default service handlers for this account.
 object CardDAV.CommunicationServiceRules.DefaultServiceHandlers
 ```
 
+## Properties
+
+- `AudioCall` (string): The bundle identifier for the default application that handles audio calls to contacts from this account.
+
 
 ---
 

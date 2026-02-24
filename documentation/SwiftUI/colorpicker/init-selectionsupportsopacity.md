@@ -22,8 +22,8 @@ init(_ titleKey: LocalizedStringKey, selection: Binding<CGColor>, supportsOpacit
 ## Parameters
 
 - `titleKey`: The key for the localized title of the picker.
-- `selection`: A   to the variable that displays the   selected  .
-- `supportsOpacity`: A Boolean value that indicates whether the color   picker allows adjustments to the selected color’s opacity; the   default is  .
+- `selection`: A [`Binding`](binding.md) to the variable that displays the selected `CGColor`.
+- `supportsOpacity`: A Boolean value that indicates whether the color picker allows adjustments to the selected color’s opacity; the default is `true`.
 
 ## See Also
 

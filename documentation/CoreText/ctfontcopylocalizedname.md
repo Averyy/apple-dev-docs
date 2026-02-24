@@ -31,7 +31,7 @@ The name is localized based on the user’s global language preference precedenc
 ## Parameters
 
 - `font`: The font reference.
-- `nameKey`: The name specifier. See   for possible values.
+- `nameKey`: The name specifier. See [`Name Specifier Constants`](name-specifier-constants.md) for possible values.
 - `actualLanguage`: On output, points to the language string of the returned name string. The format of the language identifier conforms to the RFC 3066bis standard.
 
 ## See Also

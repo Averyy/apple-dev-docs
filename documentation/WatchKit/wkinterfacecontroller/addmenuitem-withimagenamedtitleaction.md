@@ -20,9 +20,9 @@ Use this method to append an action to the interface controller’s context menu
 
 ## Parameters
 
-- `imageName`: The name of the image to be loaded from your Watch app’s bundle. Include the filename extension in the name. This parameter must not be  .
-- `title`: The title string to be displayed underneath the image. Title strings should be reasonably short. Any text that cannot be displayed is truncated. This parameter must not be   or an empty string.
-- `action`: The action method to be called when the action is tapped. The method must be defined on the current interface controller object. This parameter must not be  .
+- `imageName`: The name of the image to be loaded from your Watch app’s bundle. Include the filename extension in the name. This parameter must not be `nil`.
+- `title`: The title string to be displayed underneath the image. Title strings should be reasonably short. Any text that cannot be displayed is truncated. This parameter must not be `nil` or an empty string.
+- `action`: The action method to be called when the action is tapped. The method must be defined on the current interface controller object. This parameter must not be `nil`.
 
 ## See Also
 

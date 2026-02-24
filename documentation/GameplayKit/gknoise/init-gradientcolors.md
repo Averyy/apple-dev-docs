@@ -34,7 +34,7 @@ The `gradientColors` parameter specifies a color ramp as metadata to accompany t
 ## Parameters
 
 - `noiseSource`: The noise source defining the style and configuration of noise to generate.
-- `gradientColors`: A dictionary that specifies a gradient ramp for colorizing generated noise. Each key in this dictionary specifies a value in the generated noise field, and the corresponding value for that key is the color to associate with that noise value when generating textures or images from the noise field. For more details, see the   property.
+- `gradientColors`: A dictionary that specifies a gradient ramp for colorizing generated noise. Each key in this dictionary specifies a value in the generated noise field, and the corresponding value for that key is the color to associate with that noise value when generating textures or images from the noise field. For more details, see the [`gradientColors`](gknoise/gradientcolors.md) property.
 
 ## See Also
 

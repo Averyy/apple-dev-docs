@@ -29,7 +29,7 @@ After the method retrieves the search result, the method must call `completionHa
 
 - `searchTemplate`: The current search template.
 - `searchText`: The search criteria text entered by the user.
-- `completionHandler`: The block your implementation calls after retrieving the search result.
+- `completionHandler`: The block your implementation calls after retrieving the search result. - **searchResults**: An array of [`CPListItem`](cplistitem.md) objects—one list item for each search result item.
 
 
 ---

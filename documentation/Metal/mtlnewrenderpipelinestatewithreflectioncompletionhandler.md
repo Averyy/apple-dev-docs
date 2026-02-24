@@ -21,9 +21,9 @@ typealias MTLNewRenderPipelineStateWithReflectionCompletionHandler = ((any MTLRe
 
 ## Parameters
 
-- `renderPipelineState`: An   instance if the method successfully compiles the library without any errors; otherwise  .
-- `reflection`: An   instance if the method completes successfully; otherwise  .
-- `error`: If an error occurs, an error information instance; otherwise  .
+- `renderPipelineState`: An [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance if the method successfully compiles the library without any errors; otherwise `nil`.
+- `reflection`: An [`MTLRenderPipelineReflection`](mtlrenderpipelinereflection.md) instance if the method completes successfully; otherwise `nil`.
+- `error`: If an error occurs, an error information instance; otherwise `nil`.
 
 ## See Also
 

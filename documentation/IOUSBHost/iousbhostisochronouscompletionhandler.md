@@ -18,7 +18,7 @@ typealias IOUSBHostIsochronousCompletionHandler = (IOReturn, UnsafeMutablePointe
 ## Parameters
 
 - `status`: The result code for isochronous transfer.
-- `frameList`: The frame list of   that   passes.
+- `frameList`: The frame list of [`IOUSBHostIsochronousFrame`](iousbhostisochronousframe.md) that [`enqueueIORequest(with:frameList:frameListCount:firstFrameNumber:completionHandler:)`](iousbhostpipe/enqueueiorequest(with:framelist:framelistcount:firstframenumber:completionhandler:).md) passes.
 
 ## See Also
 

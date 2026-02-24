@@ -27,9 +27,9 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field,   describing its purpose.
+- `titleKey`: The key for the localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
-- `prompt`: A   representing the prompt of the text field   which provides users with guidance on what to type into the text   field.
+- `prompt`: A `Text` representing the prompt of the text field which provides users with guidance on what to type into the text field.
 
 ## See Also
 

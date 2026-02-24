@@ -30,7 +30,7 @@ An app intent can present custom SwiftUI views to show people the result of thei
 
 > **Note**: The system can call a `SnippetIntent` multiple times. For more information, refer to [`Displaying static and interactive snippets`](displaying-static-and-interactive-snippets.md).
 
-By conforming your app intent to the `SnippetIntent` protocol, you can provide a , a custom view with interactivity. Similar to widgets and Live Activities, a snippet can include buttons or toggles that use an [`AppIntent`](appintent.md) for their functionality. In many cases, you might be able to reuse views of your interactive widget or Live Activity.
+By conforming your app intent to the `SnippetIntent` protocol, you can provide a *snippet*, a custom view with interactivity. Similar to widgets and Live Activities, a snippet can include buttons or toggles that use an [`AppIntent`](appintent.md) for their functionality. In many cases, you might be able to reuse views of your interactive widget or Live Activity.
 
 The following code snippet shows what the perform method for a task management app could look like. The intent asynchronously loads a list of tasks and presents it using the `TodoListView` that the `perform()` function returns. The `TodoListView` could then offer a toggle for each item in the list to immediately mark a task as completed.
 

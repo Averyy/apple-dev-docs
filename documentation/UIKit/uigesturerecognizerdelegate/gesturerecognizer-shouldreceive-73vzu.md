@@ -28,8 +28,8 @@ UIKit calls this method before the [`pressesBegan(_:with:)`](uigesturerecognizer
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class  .
-- `press`: A   object from the current press sequence.
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md).
+- `press`: A [`UIPress`](uipress.md) object from the current press sequence.
 
 ## See Also
 

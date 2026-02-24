@@ -21,7 +21,7 @@ The value. The data type of returned value depends on the type of the output por
 
 ## Parameters
 
-- `key`: The key associated with an output port for the root patch of a composition. This method throws an exception if   is invalid.
+- `key`: The key associated with an output port for the root patch of a composition. This method throws an exception if `key` is invalid.
 
 ## See Also
 

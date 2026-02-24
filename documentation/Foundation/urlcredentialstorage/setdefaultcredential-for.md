@@ -26,7 +26,7 @@ If you override this method, also override [`setDefaultCredential(_:for:task:)`]
 
 ## Parameters
 
-- `credential`: The URL credential to set as the default for  . If the receiver does not contain   in the specified protection space it will be added.
+- `credential`: The URL credential to set as the default for `space`. If the receiver does not contain `credential` in the specified protection space it will be added.
 - `space`: The protection space whose default credential is being set.
 
 ## See Also

@@ -26,11 +26,23 @@ An object the focus debugger uses to store the results to format for display.
 
 Use this method to better understand how the focus system chooses a default focusable item. You call the method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
+**Swift**:
+
+```swift
+po UIFocusDebugger.preferredFocusEnvironments(for: obj)
+```
+
+**Objective-C**:
+
+```objc
+po [UIFocusDebugger preferredFocusEnvironmentsForEnvironment:obj]
+```
+
 The method returns the heirarchy of preferred environments for the focus environment object provided.
 
 ## Parameters
 
-- `environment`: The object you want to generate a heirarchy of preferred focus environments for. Specify the focus system, view, view controller, or window whose state you want. You can also specify any other object that adopts the   protocol.
+- `environment`: The object you want to generate a heirarchy of preferred focus environments for. Specify the focus system, view, view controller, or window whose state you want. You can also specify any other object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
 ## See Also
 

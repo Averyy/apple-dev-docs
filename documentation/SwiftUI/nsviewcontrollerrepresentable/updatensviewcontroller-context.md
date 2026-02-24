@@ -23,7 +23,7 @@ When the state of your app changes, SwiftUI updates the portions of your interfa
 ## Parameters
 
 - `nsViewController`: Your custom view controller object.
-- `context`: A context structure containing information about the current   state of the system.
+- `context`: A context structure containing information about the current state of the system.
 
 ## See Also
 

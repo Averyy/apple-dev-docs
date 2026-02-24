@@ -18,11 +18,11 @@ init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers:
 
 ## Parameters
 
-- `maneuvers`: An array of   objects.
-- `laneGuidances`: An array of   objects.
-- `currentManeuvers`: An array of   objects that represent the current list of maneuvers.
-- `currentLaneGuidance`: A   object that represents the guidance for the current lane.
-- `maneuverTravelEstimates`: The   that present the estimates for the trip’s maneuvers.
+- `maneuvers`: An array of [`CPManeuver`](cpmaneuver.md) objects.
+- `laneGuidances`: An array of [`CPLaneGuidance`](cplaneguidance.md) objects.
+- `currentManeuvers`: An array of `CPManeuver` objects that represent the current list of maneuvers.
+- `currentLaneGuidance`: A [`CPLaneGuidance`](cplaneguidance.md) object that represents the guidance for the current lane.
+- `maneuverTravelEstimates`: The `CPTravelEstimates` that present the estimates for the trip’s maneuvers.
 
 
 ---

@@ -68,8 +68,8 @@ To control focus using a Boolean, use the [`focused(_:)`](view/focused(_:).md) m
 
 ## Parameters
 
-- `binding`: The state binding to register. When focus moves to the   modified view, the binding sets the bound value to the corresponding   match value. If a caller sets the state value programmatically to the   matching value, then focus moves to the modified view. When focus   leaves the modified view, the binding sets the bound value to   . If a caller sets the value to  , SwiftUI automatically   dismisses focus.
-- `value`: The value to match against when determining whether the   binding should change.
+- `binding`: The state binding to register. When focus moves to the modified view, the binding sets the bound value to the corresponding match value. If a caller sets the state value programmatically to the matching value, then focus moves to the modified view. When focus leaves the modified view, the binding sets the bound value to `nil`. If a caller sets the value to `nil`, SwiftUI automatically dismisses focus.
+- `value`: The value to match against when determining whether the binding should change.
 
 ## See Also
 

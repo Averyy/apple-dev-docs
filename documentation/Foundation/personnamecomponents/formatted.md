@@ -54,7 +54,7 @@ tlc.formatted(.name(style: .abbreviated))
 
 ## Parameters
 
-- `style`: Specifies the   applied to the person name components.
+- `style`: Specifies the [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md) applied to the person name components.
 
 ## See Also
 

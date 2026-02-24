@@ -9,6 +9,10 @@ A Boolean value that indicates whether your app can enable Downlink Time-Differe
 - iOS 26.1+
 - iPadOS 26.1+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, search for and add Time-Difference-of-Arrival ranging in your target’s Signing & Capabilities tab in Xcode.

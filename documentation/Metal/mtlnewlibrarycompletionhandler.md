@@ -25,8 +25,8 @@ The framework reports compiler warnings to the console. The `error` parameter do
 
 ## Parameters
 
-- `library`: An   instance if the method successfully compiles the library without any errors; otherwise  .
-- `error`: An error instance if the compiler generates any errors; otherwise  .
+- `library`: An [`MTLLibrary`](mtllibrary.md) instance if the method successfully compiles the library without any errors; otherwise `nil`.
+- `error`: An error instance if the compiler generates any errors; otherwise `nil`.
 
 ## See Also
 

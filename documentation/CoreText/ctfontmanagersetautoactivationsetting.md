@@ -16,8 +16,8 @@ func CTFontManagerSetAutoActivationSetting(_ bundleIdentifier: CFString?, _ sett
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier used to specify a particular application bundle. If  , the current application bundle is used. If   is specified, sets global auto-activation.
-- `setting`: The new setting. See   for possible values.
+- `bundleIdentifier`: The bundle identifier used to specify a particular application bundle. If `NULL`, the current application bundle is used. If `kCTFontManagerBundleIdentifier` is specified, sets global auto-activation.
+- `setting`: The new setting. See [`CTFontManagerAutoActivationSetting`](ctfontmanagerautoactivationsetting.md) for possible values.
 
 ## See Also
 

@@ -76,9 +76,13 @@ store.execute(anchorQuery)
 ## Parameters
 
 - `queryDescriptors`: An array of descriptors that specify the types of samples that the query returns.
-- `anchor`: Pass   to receive all the matching samples and recently deleted objects currently in the HealthKit store.
-- `limit`: The maximum number of samples that the query returned. If you want to return all matching samples, use  .
-- `handler`: A block that the HealthKit store calls after gathering the initial results. This block takes the following parameters:
+- `anchor`: The anchor that the previous anchored object query returned. The anchor object corresponds to the last object that the previous anchored object query returned. The new query returns only samples and deleted objects that are newer than that object. Pass `nil` to receive all the matching samples and recently deleted objects currently in the HealthKit store.
+- `limit`: The maximum number of samples that the query returned. If you want to return all matching samples, use [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
+- `handler`: A block that the HealthKit store calls after gathering the initial results. This block takes the following parameters: - **`query`**: A reference to the query calling this block.
+- **`sampleObjects`**: An array containing the samples this query returned, or `nil` if an error occurred.
+- **`deletedObjects`**: An array containing the deleted objects this query returned, or `nil` if an error occurred.
+- **`newAnchor`**: An anchor object corresponding to the last object this query returned. Subsequent anchor queries use this value to receive new samples and deleted objects created after the query returned its initial results.
+- **`error`**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 

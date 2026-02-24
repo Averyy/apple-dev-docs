@@ -24,9 +24,9 @@ You can set this customization on the TabView using [`tabViewCustomization(_:)`]
 
 ## Parameters
 
-- `wrappedValue`: The default value if the customization is not   available for the given key.
-- `key`: The key to read and write the value to in the user defaults   store.
-- `store`: The user defaults store to read and write to. A value   of   will use the user default store from the environment.
+- `wrappedValue`: The default value if the customization is not available for the given key.
+- `key`: The key to read and write the value to in the user defaults store.
+- `store`: The user defaults store to read and write to. A value of `nil` will use the user default store from the environment.
 
 ## See Also
 

@@ -22,6 +22,13 @@ struct SparseAttributesComplex_t
 
 #### Overview
 
+- **`transpose`**: If `true`, the matrix is implicitly transposed when used in any functions.
+- **`triangle`**: If `kind` is `SparseOrdinary`, this field is ignored. Otherwise it indicates which triangle (upper or lower) represents the matrix.
+- **`kind`**: Identifies the matrix as being full (`SparseOrdinary`), [unit-] triangular (`SparseTriangular`, `SparseUnitTriangular`), or symmetric (Hermitian) (`SparseSymmetric`, `SparseHermitian`).
+- **`conjugate_transpose`**: If `true`, the matrix is implicitly conjugate transposed, otherwise it is simply transposed. This field has no meaning if `transpose` field is `false`.
+- **`_reserved`**: for future expansion. Must be zero.
+- **`_allocatedBySparse`**: an implementation detail. Should be zero for any matrix you allocate.
+
 ## Topics
 
 ### Initializers

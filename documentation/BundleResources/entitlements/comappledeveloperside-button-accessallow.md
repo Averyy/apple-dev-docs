@@ -9,6 +9,12 @@ A Boolean value that indicates whether a person in Japan can configure the side 
 - iOS 26.2+
 - iPadOS 26.2+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add the Side Button Access entitlement by following these steps:

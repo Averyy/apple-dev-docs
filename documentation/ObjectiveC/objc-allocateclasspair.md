@@ -34,9 +34,9 @@ Instance methods and instance variables should be added to the class itself. Cla
 
 ## Parameters
 
-- `superclass`: The class to use as the new class’s superclass, or   to create a new root class.
+- `superclass`: The class to use as the new class’s superclass, or `Nil` to create a new root class.
 - `name`: The string to use as the new class’s name. The string will be copied.
-- `extraBytes`: The number of bytes to allocate for indexed ivars at the end of the class and metaclass objects. This should usually be  .
+- `extraBytes`: The number of bytes to allocate for indexed ivars at the end of the class and metaclass objects. This should usually be `0`.
 
 ## See Also
 

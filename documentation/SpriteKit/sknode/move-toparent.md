@@ -26,7 +26,7 @@ The node maintains its current position in scene coordinates.
 
 ## Parameters
 
-- `parent`: An   object to move the receiver to. This node must be in the same scene as the node’s current parent.
+- `parent`: An [`SKNode`](sknode.md) object to move the receiver to. This node must be in the same scene as the node’s current parent.
 
 ## See Also
 

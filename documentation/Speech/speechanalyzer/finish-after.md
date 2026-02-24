@@ -25,7 +25,7 @@ In most cases, you can call [`finalizeAndFinish(through:)`](speechanalyzer/final
 
 At the return of this method, the modules’ result streams will have ended and the modules will not accept further input from the input sequence. The analyzer will not be able to resume analysis with a different input sequence and will not accept module changes; most methods will do nothing.
 
-Analysis of input up to and including the given time may or may not have been completed. Modules will not publish  results to their streams, but the application can read any results the modules have  published. To ensure analysis is completed or skipped before finishing, call [`finalize(through:)`](speechanalyzer/finalize(through:).md) or [`cancelAnalysis(before:)`](speechanalyzer/cancelanalysis(before:).md).
+Analysis of input up to and including the given time may or may not have been completed. Modules will not publish *additional* results to their streams, but the application can read any results the modules have *already* published. To ensure analysis is completed or skipped before finishing, call [`finalize(through:)`](speechanalyzer/finalize(through:).md) or [`cancelAnalysis(before:)`](speechanalyzer/cancelanalysis(before:).md).
 
 You do not need to call this method before releasing this analyzer or its modules.
 

@@ -30,7 +30,7 @@ You must implement this method if you are automatically saving expanded items (t
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.
-- `object`: An archived representation of an item in  ’s data source.
+- `object`: An archived representation of an item in `outlineView`’s data source.
 
 ## See Also
 

@@ -35,7 +35,7 @@ let session = ASWebAuthenticationSession(
 
 ## Parameters
 
-- `URL`: The initial URL pointing to the authentication webpage. This initializer only supports URLs with   or   schemes.
+- `URL`: The initial URL pointing to the authentication webpage. This initializer only supports URLs with `http://` or `https://` schemes.
 - `callback`: An object that describes when the session calls its completion handler.
 - `completionHandler`: A completion handler that the system calls when the session completes successfully, or when the person using the app cancels the request.
 

@@ -29,7 +29,7 @@ If the image extent is not finite, then nil will be returned.
 
 ## Parameters
 
-- `image`: An immutable   for which to calculate statistics.
+- `image`: An immutable [`CIImage`](ciimage.md) for which to calculate statistics.
 
 
 ---

@@ -32,7 +32,7 @@ You rarely need to override this method in subclasses, but if you do, be sure to
 
 - `key`: The name of a property that is an unordered to-many relationship
 - `mutationKind`: The type of change that was made.
-- `objects`: The objects that were involved in the change (see  ).
+- `objects`: The objects that were involved in the change (see [`NSKeyValueSetMutationKind`](https://developer.apple.com/documentation/Foundation/NSKeyValueSetMutationKind)).
 
 ## See Also
 

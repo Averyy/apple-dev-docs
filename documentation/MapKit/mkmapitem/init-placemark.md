@@ -30,7 +30,7 @@ Use this method to create a map item for an existing placemark. Don’t use it t
 
 ## Parameters
 
-- `placemark`: The placemark object corresponding to the desired map location. This parameter can’t be  .
+- `placemark`: The placemark object corresponding to the desired map location. This parameter can’t be `nil`.
 
 ## See Also
 

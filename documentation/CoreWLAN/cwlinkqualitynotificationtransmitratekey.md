@@ -14,7 +14,7 @@ let CWLinkQualityNotificationTransmitRateKey: String
 
 #### Discussion
 
-NSNumber containing the current transmit rate value for the WLAN interface. Found in the  dictionary for the .
+NSNumber containing the current transmit rate value for the WLAN interface. Found in the *userInfo* dictionary for the *CWLinkQualityChangedNotification*.
 
 ## See Also
 

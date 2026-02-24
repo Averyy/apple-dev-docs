@@ -30,7 +30,7 @@ The entity at `point`. Returns `nil` if no entity was found.
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
-- `space`: The 2D coordinate space in which to interpret the  .
+- `space`: The 2D coordinate space in which to interpret the `point`.
 
 
 ---

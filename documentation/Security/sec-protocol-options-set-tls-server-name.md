@@ -24,7 +24,7 @@ Set the server name to be used when verifying the peer’s certificate. This wil
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `server_name`: A NULL-terminated string carrying the server name.
 
 

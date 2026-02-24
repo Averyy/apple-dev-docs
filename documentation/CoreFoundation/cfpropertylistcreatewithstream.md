@@ -26,12 +26,12 @@ A new property list created from the data in `stream`. If an error occurs while 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new property list object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new property list object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `stream`: A CFReadStream that contains a serialized representation of a property list.
-- `streamLength`: The number of bytes to read from the stream. Pass   to read until the end of the stream is detected.
-- `options`: A   constant to specify the mutability of the returned property list—see   for possible values.
-- `format`: If this parameter is non- , on return it will be set to the format of the data. See   for possible values.
-- `error`: If this parameter is non- , if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the  .
+- `streamLength`: The number of bytes to read from the stream. Pass `0` to read until the end of the stream is detected.
+- `options`: A [`CFPropertyListMutabilityOptions`](cfpropertylistmutabilityoptions.md) constant to specify the mutability of the returned property list—see [`Property List Mutability Options`](property_list_mutability_options.md) for possible values.
+- `format`: If this parameter is non-`NULL`, on return it will be set to the format of the data. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
+- `error`: If this parameter is non-`NULL`, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

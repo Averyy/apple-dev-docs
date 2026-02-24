@@ -22,7 +22,7 @@ optional func sessionShouldAttemptRelocalization(_ session: ARSession) -> Bool
 
 #### Discussion
 
-When ARKit loses track of the device’s position or orientation, ARKit calls [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) to try to resume the experience where the user left off. This process is called . ARKit relocalizes when it loses access to the camera or other sensors on the device, such as when your app calls [`pause()`](arsession/pause().md), or when the user switches to another app and back.
+When ARKit loses track of the device’s position or orientation, ARKit calls [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) to try to resume the experience where the user left off. This process is called *relocalization*. ARKit relocalizes when it loses access to the camera or other sensors on the device, such as when your app calls [`pause()`](arsession/pause().md), or when the user switches to another app and back.
 
 When relocalization succeeds, your app’s virtual content appears in the same position it was in before the interruption. But if your app fails to relocalize, the world coordinate system and anchor positions are likely out of sync with the real world.
 

@@ -22,7 +22,7 @@ You access the resulting coordinator via the `Context` passed into other methods
 
 ## Parameters
 
-- `converter`: A structure used to convert locations  to/from   coordinate spaces in the hierarchy of the associated SwiftUI view.
+- `converter`: A structure used to convert locations  to/from coordinate spaces in the hierarchy of the associated SwiftUI view.
 
 
 ---

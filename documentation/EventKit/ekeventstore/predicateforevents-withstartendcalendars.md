@@ -35,7 +35,7 @@ Use this method to create a predicate for use with [`events(matching:)`](ekevent
 
 - `startDate`: The start date of the range of events fetched.
 - `endDate`: The end date of the range of events fetched.
-- `calendars`: An array of calendars to search, or   to search all calendars.
+- `calendars`: An array of calendars to search, or `nil` to search all calendars.
 
 ## See Also
 

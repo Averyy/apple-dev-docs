@@ -29,6 +29,10 @@ This method applies the vignette filter to an image. This is a preconfigured eff
 
 The vignette filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`intensity`**: A `float` representing the intensity of the vignette effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the radius of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that darkens the edges of the input image:
 
 ```swift

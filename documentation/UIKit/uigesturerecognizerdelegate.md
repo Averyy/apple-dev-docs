@@ -29,6 +29,41 @@ The delegates receive messages from a gesture recognizer, and their responses to
 
 An example of a situation where dynamic failure requirements are useful is in an app that attaches a screen-edge pan gesture recognizer to a view. In this case, you might want all other relevant gesture recognizers associated with that view’s subtree to require the screen-edge gesture recognizer to fail so you can prevent any graphical glitches that might occur when the other recognizers get canceled after starting the recognition process. To do this, you could use code similar to the following:
 
+**Swift**:
+
+```swift
+let myScreenEdgePanGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action:#selector(handleScreenEdgePan))
+myScreenEdgePanGestureRecognizer.delegate = self
+    // Configure the gesture recognizer and attach it to the view.
+ 
+...
+ 
+func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    guard let myView = myScreenEdgePanGestureRecognizer.view,
+          let otherView = otherGestureRecognizer.view else { return false }
+    
+    return gestureRecognizer == myScreenEdgePanGestureRecognizer &&
+           otherView.isDescendant(of: myView)}
+```
+
+**Objective-C**:
+
+```objc
+UIScreenEdgePanGestureRecognizer *myScreenEdgePanGestureRecognizer;
+...
+myScreenEdgePanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleScreenEdgePan:)];
+myScreenEdgePanGestureRecognizer.delegate = self;
+// Configure the gesture recognizer and attach it to the view.
+...
+ - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    BOOL result = NO;
+    if ((gestureRecognizer == myScreenEdgePanGestureRecognizer) && [[otherGestureRecognizer view] isDescendantOfView:[gestureRecognizer view]]) {
+        result = YES;
+    }
+    return result;
+ }
+```
+
 ## Topics
 
 ### Regulating gesture recognition

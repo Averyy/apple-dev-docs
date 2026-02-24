@@ -54,8 +54,8 @@ let soundClassifier = try MLSoundClassifier(trainingData: trainingData)
 
 ## Parameters
 
-- `trainingData`: An   instance that contains a collection of labeled audio   files.
-- `parameters`: An   instance you use to configure the model   for the training session.
+- `trainingData`: An [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md) instance that contains a collection of labeled audio files.
+- `parameters`: An [`MLSoundClassifier.ModelParameters`](mlsoundclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

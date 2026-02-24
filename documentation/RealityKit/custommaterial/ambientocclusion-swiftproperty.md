@@ -20,7 +20,7 @@ var ambientOcclusion: CustomMaterial.AmbientOcclusion { get set }
 
 #### Discussion
 
-Ambient occlusion (AO) represents the entity’s exposure to ambient light. Specify ambient occlusion using a UV-mapped image called an . In an AO map, black pixels represent parts of the model that receive no ambient light because of a crevice, dent, or recessed area, or another part of the entity blocking ambient light from reaching it. White pixels represent flat portions of the model that receive full ambient light. You generate ambient occlusion maps using a 3D software package.
+Ambient occlusion (AO) represents the entity’s exposure to ambient light. Specify ambient occlusion using a UV-mapped image called an *ambient occlusion map*. In an AO map, black pixels represent parts of the model that receive no ambient light because of a crevice, dent, or recessed area, or another part of the entity blocking ambient light from reaching it. White pixels represent flat portions of the model that receive full ambient light. You generate ambient occlusion maps using a 3D software package.
 
 The following code loads an ambient occlusion map and adds it to the custom material:
 

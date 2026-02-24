@@ -6,7 +6,7 @@ Learn what’s new in the Apple Search Ads iAd Attribution API.
 
 #### Overview
 
-|  |  |
+| **Release date** | **Release details** |
 | --- | --- |
 | February 2023 | After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors.  See [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md). |
 | June 2020 | Updated error responses. See [`ADClientError`](adclienterror-swift.struct.md) enumerations. |

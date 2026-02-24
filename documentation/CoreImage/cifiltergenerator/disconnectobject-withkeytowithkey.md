@@ -16,8 +16,8 @@ func disconnectObject(_ sourceObject: Any, withKey sourceKey: String, to targetO
 
 ## Parameters
 
-- `sourceObject`: A   object, a    object, or the path (an   or   object) to an image.
-- `sourceKey`: The key that specifies the source object. Pass   if the source object is used directly.
+- `sourceObject`: A [`CIFilter`](cifilter-swift.class.md) object, a  [`CIImage`](ciimage.md) object, or the path (an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object) to an image.
+- `sourceKey`: The key that specifies the source object. Pass `nil` if the source object is used directly.
 - `targetObject`: The object from which you want to disconnect the source object.
 - `targetKey`: The key that specifies the target that the source object is currently connected to.
 

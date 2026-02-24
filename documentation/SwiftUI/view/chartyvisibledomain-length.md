@@ -38,7 +38,7 @@ Chart(data) {
 
 ## Parameters
 
-- `length`: The length of the visible domain measured in data units.   For categorical data, this should be the number of visible categories.
+- `length`: The length of the visible domain measured in data units. For categorical data, this should be the number of visible categories.
 
 ## See Also
 

@@ -23,7 +23,7 @@ Applies an angular (torque) impulse to the physics body at its center of mass.
 ## Parameters
 
 - `impulse`: An angular impulse in kilogram square meters per second.
-- `referenceEntity`: The reference entity that defines the coordinate   space in which   is defined.
+- `referenceEntity`: The reference entity that defines the coordinate space in which `impulse` is defined.
 
 ## See Also
 

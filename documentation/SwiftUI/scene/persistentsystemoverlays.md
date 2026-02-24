@@ -46,7 +46,7 @@ Affected non-transient system views can include, but are not limited to:
 
 ## Parameters
 
-- `preferredVisibility`: A value that indicates the visibility of the   non-transient system views overlaying the app.
+- `preferredVisibility`: A value that indicates the visibility of the non-transient system views overlaying the app.
 
 ## See Also
 

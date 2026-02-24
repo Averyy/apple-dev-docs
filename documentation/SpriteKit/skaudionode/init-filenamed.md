@@ -30,7 +30,7 @@ The named file containing the audio asset must reside within the main bundle.
 
 ## Parameters
 
-- `name`: A file containing an  .
+- `name`: A file containing an [`AVAudioNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioNode).
 
 ## See Also
 

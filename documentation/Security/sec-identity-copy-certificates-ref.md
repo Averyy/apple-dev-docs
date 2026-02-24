@@ -28,7 +28,7 @@ Copy a retained reference to the underlying `CFArrayRef` container of `SecCertif
 
 ## Parameters
 
-- `identity`: A   instance.
+- `identity`: A `sec_identity_t` instance.
 
 
 ---

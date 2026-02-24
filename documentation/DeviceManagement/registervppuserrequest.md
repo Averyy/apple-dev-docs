@@ -33,6 +33,13 @@ Thus, it is possible for more than one user record to exist for the same `client
 
 Further, if two user identifiers exist for a given `clientUserIdStr`, one assigned to an iTunes account and the other unassigned, and a user accepts an invitation to be associated, it is possible for the user to use the same iTunes account he or she used previously. If the user does, the unassigned user record gets marked with the `Retired` status, and the formerly retired user record gets moved to the `Associated` status.
 
+## Properties
+
+- `clientUserIdStr` (string) *(required)*: The identifier supplied by the client when registering a user. The identifier must be unique within the organization.
+- `email` (string): The user’s email address.
+- `managedAppleIDStr` (string): The Apple Account associated with the user. This ID’s organization must match the organization of the provided `sToken`. See [`Associating an Apple Account with a Volume Purchase Program (VPP) User`](associating-an-apple-id-with-a-volume-purchase-program-vpp-user.md) for more information.
+- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authentication`](managing-apps-and-books-through-web-services-legacy#Authentication.md).
+
 ## See Also
 
 - [object RegisterVppUserResponse](registervppuserresponse.md)

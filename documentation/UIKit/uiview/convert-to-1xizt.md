@@ -25,7 +25,7 @@ The point converted to the coordinate system of `view`.
 ## Parameters
 
 - `point`: A point specified in the local coordinate system (bounds) of the receiver.
-- `view`: The view into whose coordinate system   is to be converted. If   is  , this method instead converts to window base coordinates. Otherwise, both   and the receiver must belong to the same   object.
+- `view`: The view into whose coordinate system `point` is to be converted. If `view` is `nil`, this method instead converts to window base coordinates. Otherwise, both `view` and the receiver must belong to the same [`UIWindow`](uiwindow.md) object.
 
 ## See Also
 

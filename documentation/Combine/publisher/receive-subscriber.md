@@ -29,7 +29,7 @@ The provided implementation of [`subscribe(_:)`](publisher/subscribe(_:)-4u8kn.m
 
 ## Parameters
 
-- `subscriber`: The subscriber to attach to this  , after which it can receive values.
+- `subscriber`: The subscriber to attach to this [`Publisher`](publisher.md), after which it can receive values.
 
 ## See Also
 

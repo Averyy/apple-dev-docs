@@ -20,7 +20,7 @@ An instance of `NSSharingService` for the specified service name.
 
 ## Parameters
 
-- `serviceName`: The service name. The possible system provided values are listed in  .
+- `serviceName`: The service name. The possible system provided values are listed in `Available Sharing Services`.
 
 ## See Also
 

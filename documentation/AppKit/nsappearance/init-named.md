@@ -24,7 +24,7 @@ When you specify a standard appearance name—such as [`aqua`](nsappearance/name
 
 ## Parameters
 
-- `name`: The name of a standard appearance. See   for the list of standard appearance names.
+- `name`: The name of a standard appearance. See [`NSAppearance.Name`](nsappearance/name-swift.struct.md) for the list of standard appearance names.
 
 ## See Also
 

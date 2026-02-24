@@ -231,7 +231,7 @@ static var lossLayer: BNNS.LossLayer = {
 
 ##### Create the Candidate Input
 
-For each iteration of the training phase, the sample creates a matrix that represents a random digit, and a  encoded tensor of the same digit. The sample places digits randomly in a 20 x 20 matrix, so a `3` might appear in the matrix as the image below. This example renders `0` as `⚪️`, and `1` as `⚫️`.
+For each iteration of the training phase, the sample creates a matrix that represents a random digit, and a *one-hot* encoded tensor of the same digit. The sample places digits randomly in a 20 x 20 matrix, so a `3` might appear in the matrix as the image below. This example renders `0` as `⚪️`, and `1` as `⚫️`.
 
 ```None
 ⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️

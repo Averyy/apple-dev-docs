@@ -36,9 +36,9 @@ You can decrypt this data with the corresponding private key and a call to [`Sec
 ## Parameters
 
 - `key`: The public key to use to perform the encryption.
-- `algorithm`: The encryption algorithm to use. Use one of the encryption algorithms listed in  . You can use the   function to test that the key is suitable for the algorithm.
+- `algorithm`: The encryption algorithm to use. Use one of the encryption algorithms listed in [`SecKeyAlgorithm`](seckeyalgorithm.md). You can use the [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function to test that the key is suitable for the algorithm.
 - `plaintext`: The data to be encrypted.
-- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

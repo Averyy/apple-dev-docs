@@ -20,11 +20,11 @@ These restrictions are in addition to those that you set in the `SFSafariWebsite
 
 ##### Specify Url Patterns
 
-A URL pattern takes the form .
+A URL pattern takes the form *Scheme://Domain/Path*.
 
--  can be `http` or `https`.
--  is the host domain, such as `developer.apple.com` or `www.example.co.jp`.
--  is the directory or webpage, such as `safari/` or `safari/library/navigation/index.html`.
+- *Scheme* can be `http` or `https`.
+- *Domain* is the host domain, such as `developer.apple.com` or `www.example.co.jp`.
+- *Path* is the directory or webpage, such as `safari/` or `safari/library/navigation/index.html`.
 
 A URL pattern can include the asterisk (*) character to match any string. Using an asterisk, you can specify all pages in a particular domain without having to create an exhaustive list.
 

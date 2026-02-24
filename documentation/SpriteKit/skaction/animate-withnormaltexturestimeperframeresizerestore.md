@@ -36,8 +36,8 @@ This action is reversible; the resulting action animates through the same textur
 
 - `textures`: An array of textures to use when animating a sprite.
 - `sec`: The amount of time that each texture is displayed.
-- `resize`: If  , the sprite is resized to match each new texture. If  , the size of the sprite remains at a constant size.
-- `restore`: When the action completes, the sprite’s texture remains set to the final texture in the array.
+- `resize`: If [`true`](https://developer.apple.com/documentation/Swift/true), the sprite is resized to match each new texture. If [`false`](https://developer.apple.com/documentation/Swift/false), the size of the sprite remains at a constant size.
+- `restore`: - If [`true`](https://developer.apple.com/documentation/Swift/true): When the action completes, the sprite’s texture is restored to the texture it had before the action completed. (If the resize parameter is [`true`](https://developer.apple.com/documentation/Swift/true), the sprite is resized to match the size of the original texture.) - If [`false`](https://developer.apple.com/documentation/Swift/false): When the action completes, the sprite’s texture remains set to the final texture in the array.
 
 ## See Also
 

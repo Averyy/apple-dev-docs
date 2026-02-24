@@ -18,6 +18,11 @@ Additionally, when you create Metal resources, specifying their configuration pr
 
 The categories in the top section of the Memory viewer organize memory usage data and provide memory totals based on the following criteria:
 
+- **Volatility**: This category lists *volatile* and *nonvolatile* resources. Nonvolatile memory total is a good indicator of your app’s tracked memory usage for Metal. When you mark a resource as volatile, you give Metal permission to dispose of its contents when memory is scarce. The operating system doesn’t count volatile memory in your app’s total memory footprint. For example, in iOS, a lower footprint reduces the risk that you exceed the jetsam limit and have the operating system terminate your app. If you think that you might use a resource in the future that you’re not currently using, mark it as volatile rather than simply releasing it. That way, you only need to recreate the resource’s contents if Metal discards them. For more information, see [`setPurgeableState(_:)`](https://developer.apple.com/documentation/Metal/MTLResource/setPurgeableState(_:)).
+- **Type**: This category lists resources by type — textures, buffers, and so on. Check this category to determine whether your app is using any particular kind of resource more than others.
+- **Storage mode**: This category lists resources by the modes that you define in [`MTLStorageMode`](https://developer.apple.com/documentation/Metal/MTLStorageMode). Check this category to determine whether an excessive number of resources are marked as [`MTLStorageMode.shared`](https://developer.apple.com/documentation/Metal/MTLStorageMode/shared) or [`MTLStorageMode.managed`](https://developer.apple.com/documentation/Metal/MTLStorageMode/managed).
+- **Use**: This category tracks whether commands accessed resources in the captured frame. Examine this category for a large total of unused resources, which might indicate that you need to release some resources or mark them as volatile.
+
 Each bar graph consists of segments representing the largest resources that it tracks. The final segment of each bar graph shows an aggregate total for its smaller resources. Move your pointer over a segment to view a popover with the name of the resource, its size, and other information. Click a segment to get more information about that specific resource.
 
 ![A screenshot of the Memory viewer’s bar graphs highlighting only texture resources. The texture that consumes the most memory is selected.](https://docs-assets.developer.apple.com/published/6aa9f0a25392c4e58685222d0e9e5fbf/gputools-metal-debugger-mv-bar-graph%402x.png)
@@ -101,6 +106,13 @@ When there are two or more filter terms, you can click the filter button to choo
 By default, the resources table shows all resources in a single list. You can click a column header to sort the table by that column in ascending or descending order. You can also group the resources by certain criteria.
 
 Control-click an entry in the table to group the resources by any of the following criteria:
+
+- **None**: Restores the behavior to the default, which shows all resources in the table without grouping them.
+- **Type**: Groups the resources into buffers, textures, heaps, or indirect command buffers.
+- **Allocated Size**: Groups the resources by their actual size. The groupings are based on a logarithmic scale. Use this criteria to find the largest resources in your app.
+- **Storage Mode**: Groups the resources by the storage mode you select when creating each resource.
+- **Command Buffer**: Groups the resources based on which command buffers reference them. Use this criteria to determine which commands are referencing which resources.
+- **Command Encoder**: Groups the resources according to commands that use a specific command encoder. Use this criteria to understand the behavior of your specific compute and render passes.
 
 From this same context menu, you can also choose to sort by a specific criteria, which is equivalent to clicking a column heading for sorting.
 

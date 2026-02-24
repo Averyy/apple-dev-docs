@@ -26,8 +26,8 @@ Suite preferences allow you to maintain a set of preferences that are common to 
 
 ## Parameters
 
-- `applicationID`: The ID of the application to which to add suite preferences, typically  . Do not pass   or  . Takes the form of a Java package name,  .
-- `suiteID`: The ID of the application suite preferences to add. Takes the form of a Java package name,  .
+- `applicationID`: The ID of the application to which to add suite preferences, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
+- `suiteID`: The ID of the application suite preferences to add. Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 

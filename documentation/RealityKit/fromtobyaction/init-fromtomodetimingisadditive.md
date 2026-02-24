@@ -25,7 +25,7 @@ init(from: Value? = nil, to: Value, mode: FromToByAction<Value>.TransformMode = 
 
 ## Parameters
 
-- `from`: Transform set at the start of the animation, or   to use the default source.
+- `from`: Transform set at the start of the animation, or `nil` to use the default source.
 - `to`: Transform set at the end of the animation.
 - `mode`: Determines what space the transforms are relative to.
 - `timing`: Controls the progress of the animation.

@@ -28,9 +28,9 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `indirectBuffer`: GPUAddress of an   instance with data that matches the layout of the    structure. This address requires 4-byte alignment.
-- `threadsPerObjectThreadgroup`: A   instance that represents the number of threads in an object   shader threadgroup, if applicable.
-- `threadsPerMeshThreadgroup`: A   instance that represents the number of threads in a mesh shader   threadgroup.
+- `indirectBuffer`: GPUAddress of an [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDispatchThreadgroupsIndirectArguments`](mtldispatchthreadgroupsindirectarguments.md) structure. This address requires 4-byte alignment.
+- `threadsPerObjectThreadgroup`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
+- `threadsPerMeshThreadgroup`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
 
 ## See Also
 

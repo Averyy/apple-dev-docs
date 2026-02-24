@@ -29,10 +29,36 @@ Use this convenience method to create a predicate that matches objects based on 
 
 The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let metadataValues =
+    HKQuery.predicateForObjectsWithMetadataKey(HKMetadataKeyFoodType,
+                                               allowedValues: ["Pizza", "Tofu"])
+ 
+ 
+let explicitMetadataKey = NSPredicate(format: "%K.%K IN %@",
+                                      HKPredicateKeyPathMetadata, HKMetadataKeyFoodType, ["Pizza", "Tofu"])
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *metadataValues =
+    [HKQuery predicateForObjectsWithMetadataKey:HKMetadataKeyFoodType
+                                  allowedValues:@[@"Pizza", @"Tofu"]];
+ 
+NSPredicate *explicitMetadataValues =
+    [NSPredicate predicateWithFormat:@"%K.%K in %@",
+     HKPredicateKeyPathMetadata,
+     HKMetadataKeyFoodType,
+     @[@"Pizza", @"Tofu"]];
+```
+
 ## Parameters
 
 - `key`: The metadata key for the value to be matched. For a list of preset keys, see Metadata Keys. You may also search using custom keys.
-- `allowedValues`: An array of valid values. These values must be  ,  , or   instances.
+- `allowedValues`: An array of valid values. These values must be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) instances.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The default scissor rectangle is the same size as the current render attachment,
 
 ## Parameters
 
-- `rect`: An   instance that represents a rectangle that needs to lie completely within the current render attachment.
+- `rect`: An [`MTLScissorRect`](mtlscissorrect.md) instance that represents a rectangle that needs to lie completely within the current render attachment.
 
 ## See Also
 

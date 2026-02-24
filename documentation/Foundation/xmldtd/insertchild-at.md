@@ -18,7 +18,7 @@ func insertChild(_ child: XMLNode, at index: Int)
 ## Parameters
 
 - `child`: An XML-node object that represents the child to insert.
-- `index`: An integer identifying the location in the receiver’s list of children to insert  . The indices of subsequent children in the list are incremented by one.
+- `index`: An integer identifying the location in the receiver’s list of children to insert `child`. The indices of subsequent children in the list are incremented by one.
 
 ## See Also
 

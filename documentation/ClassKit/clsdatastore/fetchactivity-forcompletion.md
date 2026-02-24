@@ -73,7 +73,7 @@ Use these permissions to determine whether your UI needs to be editable or view 
 
 ## Parameters
 
-- `url`: The file URL of the document for which you want to fetch a   instance. A teacher must have previously attached the document to an assignment in the Schoolwork app.
+- `url`: The file URL of the document for which you want to fetch a [`CLSActivity`](clsactivity.md) instance. A teacher must have previously attached the document to an assignment in the Schoolwork app.
 - `completion`: A handler that the method calls to return an activity if possible, and an optional error that describes the reason for a failure.
 
 ## See Also

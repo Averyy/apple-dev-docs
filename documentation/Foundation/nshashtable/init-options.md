@@ -26,7 +26,7 @@ A hash table with given pointer functions options.
 
 ## Parameters
 
-- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see  .
+- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see [`NSHashTableOptions`](nshashtableoptions.md).
 
 ## See Also
 

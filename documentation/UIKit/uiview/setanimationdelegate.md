@@ -27,7 +27,7 @@ Use of this method is discouraged in iOS 4.0 and later. If you are using the blo
 
 ## Parameters
 
-- `delegate`: An object that defines the methods registered using the   and   methods.  The view maintains a strong reference to this object for the duration of the animation.
+- `delegate`: An object that defines the methods registered using the [`setAnimationWillStart(_:)`](uiview/setanimationwillstart(_:).md) and [`setAnimationDidStop(_:)`](uiview/setanimationdidstop(_:).md) methods.  The view maintains a strong reference to this object for the duration of the animation.
 
 ## See Also
 

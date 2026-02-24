@@ -28,7 +28,7 @@ Don’t call this function directly. The system calls it automatically when inte
 
 - `pointer`: The pointer with the contents you want to add to the message.
 - `bytes`: The number of bytes in the pointer data.
-- `format`: The format to apply to the pointer. You format pointers as one of several different options. If you don’t specify this parameter, the system doesn’t format the value. For more information, see  .
+- `format`: The format to apply to the pointer. You format pointers as one of several different options. If you don’t specify this parameter, the system doesn’t format the value. For more information, see [`OSLogPointerFormat`](oslogpointerformat.md).
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 ## See Also

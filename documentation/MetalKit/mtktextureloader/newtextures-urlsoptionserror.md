@@ -26,8 +26,8 @@ An array of Metal textures, each corresponding to a URL listed in the `URLs` par
 ## Parameters
 
 - `URLs`: An array of URLs referencing files to load.
-- `options`: A dictionary describing any additional texture loading steps. See  .
-- `error`: If all textures were fully loaded and initialized, this pointer is   on output. If an error occurs while loading any of the specified URLs, this pointer refers to an   object describing the failure. (Which element in the   array the error corresponds to is undefined.)
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
+- `error`: If all textures were fully loaded and initialized, this pointer is `nil` on output. If an error occurs while loading any of the specified URLs, this pointer refers to an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing the failure. (Which element in the `URLs` array the error corresponds to is undefined.)
 
 ## See Also
 

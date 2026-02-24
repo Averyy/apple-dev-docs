@@ -22,7 +22,7 @@ static func loadReference(at entity: Entity) async throws
 
 ## Parameters
 
-- `entity`: The entity that holds the   to load.
+- `entity`: The entity that holds the [`ReferenceComponent`](referencecomponent.md) to load.
 
 
 ---

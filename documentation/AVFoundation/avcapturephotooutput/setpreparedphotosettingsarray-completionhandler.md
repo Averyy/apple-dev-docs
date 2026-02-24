@@ -36,7 +36,7 @@ After you call this method and your `completionHandler` block has fired, the [`p
 ## Parameters
 
 - `preparedPhotoSettingsArray`: An array of photo capture settings objects indicating the types of capture for which the photo output should prepare resources.
-- `completionHandler`: A completion block to be called on a serial dispatch queue after the photo output has finished preparing resources. Pass   if you do not wish to be notified when preparation is complete.
+- `completionHandler`: A completion block to be called on a serial dispatch queue after the photo output has finished preparing resources. Pass `nil` if you do not wish to be notified when preparation is complete.
 
 ## See Also
 

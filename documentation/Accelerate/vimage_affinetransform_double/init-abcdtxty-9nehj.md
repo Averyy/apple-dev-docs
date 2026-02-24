@@ -24,12 +24,12 @@ init(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double)
 
 ## Parameters
 
-- `a`: The entry at position   in the matrix.
-- `b`: The entry at position   in the matrix.
-- `c`: The entry at position   in the matrix.
-- `d`: The entry at position   in the matrix.
-- `tx`: The entry at position   in the matrix.
-- `ty`: The entry at position   in the matrix.
+- `a`: The entry at position `[1,1]` in the matrix.
+- `b`: The entry at position `[1,2]` in the matrix.
+- `c`: The entry at position `[2,1]` in the matrix.
+- `d`: The entry at position `[2,2]` in the matrix.
+- `tx`: The entry at position `[3,1]` in the matrix.
+- `ty`: The entry at position `[3,2]` in the matrix.
 
 ## See Also
 

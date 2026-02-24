@@ -44,7 +44,8 @@ After the URL has been shared, your app must handle any requests to join the gam
 
 ## Parameters
 
-- `completionHandler`: A block that is called after the shared URL has been retrieved.
+- `completionHandler`: A block that is called after the shared URL has been retrieved. - **url**: An `NSURL` object that contains the URL sent to other players in order to invite them to a game session.
+- **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 
 ---

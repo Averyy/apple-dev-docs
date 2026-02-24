@@ -20,8 +20,8 @@ This method posts [`columnDidMoveNotification`](nstableview/columndidmovenotific
 
 ## Parameters
 
-- `oldIndex`: The current index in the   array of the column to move.
-- `newIndex`: The new index in the   array for the moved column.
+- `oldIndex`: The current index in the [`tableColumns`](nstableview/tablecolumns.md) array of the column to move.
+- `newIndex`: The new index in the [`tableColumns`](nstableview/tablecolumns.md) array for the moved column.
 
 ## See Also
 

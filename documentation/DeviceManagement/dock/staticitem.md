@@ -20,6 +20,11 @@ object Dock.StaticItem
 - [object Dock.StaticItem.Tile-data](dock/staticitem/tile-data-data.dictionary.md)
   The dictionary that contains details about a Dock item.
 
+## Properties
+
+- `tile-data` (Dock.StaticItem.Tile-data) *(required)*: The information about the Dock item.
+- `tile-type` (string) *(required)*: The type of tile.
+
 
 ---
 

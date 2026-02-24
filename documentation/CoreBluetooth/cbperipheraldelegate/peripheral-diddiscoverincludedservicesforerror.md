@@ -27,8 +27,8 @@ Core Bluetooth invokes this method when your app calls the [`discoverIncludedSer
 ## Parameters
 
 - `peripheral`: The peripheral providing this information.
-- `service`: The   object containing the included service.
-- `error`: The reason the call failed, or   if no error occurred.
+- `service`: The [`CBService`](cbservice.md) object containing the included service.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 ## See Also
 

@@ -22,8 +22,8 @@ func setObject(_ anObject: Any, forKey aKey: any NSCopying)
 
 ## Parameters
 
-- `anObject`: The value for  . A strong reference to the object is maintained by the dictionary.
-- `aKey`: The key for  . The key is copied (using  ; keys must conform to the   protocol). If   already exists in the dictionary,   takes its place.
+- `anObject`: The value for `aKey`. A strong reference to the object is maintained by the dictionary. > ❗ **Important**:  Raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if `anObject` is `nil`. If you need to represent a `nil` value in the dictionary, use [`NSNull`](nsnull.md).
+- `aKey`: The key for `value`. The key is copied (using [`copy(with:)`](nscopying/copy(with:).md); keys must conform to the `NSCopying` protocol). If `aKey` already exists in the dictionary, `anObject` takes its place. > ❗ **Important**:  Raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if `aKey` is `nil`.
 
 ## See Also
 

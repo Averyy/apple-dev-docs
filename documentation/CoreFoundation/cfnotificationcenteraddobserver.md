@@ -29,11 +29,11 @@ If you need to control which thread processes a notification, your callback func
 ## Parameters
 
 - `center`: The notification center to which to add the observer.
-- `observer`: The observer. In macOS 10.3 and later, this parameter may be  .
-- `callBack`: The callback function to call when   posts the notification named  .
-- `name`: If   is a Darwin notification center, this value must   be  .
-- `object`: If   is a Darwin notification center, this value is ignored.
-- `suspensionBehavior`: If   is a Darwin notification center, this value is ignored.
+- `observer`: The observer. In macOS 10.3 and later, this parameter may be `NULL`.
+- `callBack`: The callback function to call when `object` posts the notification named `name`.
+- `name`: The name of the notification to observe. If `NULL`, `callback` is called for any notification posted by `object`. If `center` is a Darwin notification center, this value must *not* be `NULL`.
+- `object`: The object to observe. For distributed notifications, `object` must be a CFString object. If `NULL`, `callback` is called when a notification named `name` is posted by any object. If `center` is a Darwin notification center, this value is ignored.
+- `suspensionBehavior`: Flag indicating how notifications should be handled when the application is in the background. See [`CFNotificationSuspensionBehavior`](cfnotificationsuspensionbehavior.md) for the list of available values. If `center` is a Darwin notification center, this value is ignored.
 
 ## See Also
 

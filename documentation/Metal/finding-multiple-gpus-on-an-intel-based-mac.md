@@ -14,13 +14,58 @@ Your app can use multiple GPUs on an Intel-based Mac, including any built-in and
 
 Your app can get an array of [`MTLDevice`](mtldevice.md) instances, each of which represents an available GPU, by calling the [`MTLCopyAllDevices()`](mtlcopyalldevices().md) function.
 
+**Swift**:
+
+```swift
+let devices = MTLCopyAllDevices()
+```
+
+**Objective-C**:
+
+```objective-c
+NSArray<id<MTLDevice>> *devices = MTLCopyAllDevices();
+```
+
 However, that function provides a list of GPUs that are available at that moment in time. To get the current list and register for device update notifications, provide a handler to Metal by calling the [`MTLCopyAllDevicesWithObserver`](mtlcopyalldeviceswithobserver.md) function.
+
+**Swift**:
+
+```swift
+let (devices, observer) = MTLCopyAllDevicesWithObserver() { (device, notification) in
+    self.device(device, issued: notification)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+id<NSObject> deviceObserver = nil;
+NSArray<id<MTLDevice>> *devices = nil;
+
+devices = MTLCopyAllDevicesWithObserver(&deviceObserver,
+                                        ^(id<MTLDevice> device,
+                                          MTLDeviceNotificationName name) {
+    [self device:device hasNotification:name];
+});
+```
 
 Metal calls your handler to tell your app when the system adds or removes an [`MTLDevice`](mtldevice.md) from the system.
 
 > **Note**:  Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [`Handling external GPU additions and removals`](handling-external-gpu-additions-and-removals.md).
 
 Your app can deregister its observer when it no longer needs GPU device updates from the system by calling the [`MTLRemoveDeviceObserver(_:)`](mtlremovedeviceobserver(_:).md) function.
+
+**Swift**:
+
+```swift
+MTLRemoveDeviceObserver(observer)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLRemoveDeviceObserver(deviceObserver);
+```
 
 ##### Identify Each Gpu By Type
 
@@ -34,7 +79,54 @@ Each GPU on a Mac computer’s system can be one of three types: integrated, dis
 
 For example, you can use these properties to build a list of devices for each GPU type.
 
-Some external or discrete GPUs can also be , which means they aren’t connected to a display. Your app can identify whether a GPU is headless by checking a device instance’s [`isHeadless`](mtldevice/isheadless.md) property.
+**Swift**:
+
+```swift
+var externalGPUs = [MTLDevice]()
+var discreteGPUs = [MTLDevice]()
+var integratedGPUs = [MTLDevice]()
+
+for device in devices {
+    if device.isRemovable { externalGPUs.append(device) } else
+    if device.isLowPower { integratedGPUs.append(device) } else {
+        discreteGPUs.append(device)
+    }
+}
+```
+
+**Objective-C**:
+
+```objective-c
+NSMutableArray<id<MTLDevice>> *externalGPUs = [[NSMutableArray alloc] init];
+NSMutableArray<id<MTLDevice>> *discreteGPUs = [[NSMutableArray alloc] init];
+NSMutableArray<id<MTLDevice>> *integratedGPUs = [[NSMutableArray alloc] init];
+
+for (id<MTLDevice> device in devices) {
+    if (device.isRemovable) { [externalGPUs addObject:device]; }
+    else if (device.isLowPower) { [integratedGPUs addObject:device]; }
+    else { [discreteGPUs addObject:device]; }
+}
+```
+
+Some external or discrete GPUs can also be *headless*, which means they aren’t connected to a display. Your app can identify whether a GPU is headless by checking a device instance’s [`isHeadless`](mtldevice/isheadless.md) property.
+
+**Swift**:
+
+```swift
+if device.isHeadless {
+    // This GPU device isn't connected to any displays.
+    ...
+}
+```
+
+**Objective-C**:
+
+```objective-c
+if (device.isHeadless) {
+    // This GPU device isn't connected to any displays.
+    ...
+}
+```
 
 ##### Select the Gpus Suitable for Your Workloads
 

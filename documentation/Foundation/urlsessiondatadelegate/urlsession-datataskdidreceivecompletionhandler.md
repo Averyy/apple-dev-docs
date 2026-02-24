@@ -37,7 +37,9 @@ Each time the [`urlSession(_:dataTask:didReceive:completionHandler:)`](urlsessio
 - `session`: The session containing the data task that received an initial reply.
 - `dataTask`: The data task that received an initial reply.
 - `response`: A URL response object populated with headers.
-- `completionHandler`: A completion handler that your code calls to continue a transfer, passing a   constant to indicate whether the transfer should continue as a data task or should become a download task.
+- `completionHandler`: A completion handler that your code calls to continue a transfer, passing a [`URLSession.ResponseDisposition`](urlsession/responsedisposition.md) constant to indicate whether the transfer should continue as a data task or should become a download task. - If you pass [`URLSession.ResponseDisposition.allow`](urlsession/responsedisposition/allow.md), the task continues as a data task.
+- If you pass [`URLSession.ResponseDisposition.cancel`](urlsession/responsedisposition/cancel.md), the task is canceled.
+- If you pass [`URLSession.ResponseDisposition.becomeDownload`](urlsession/responsedisposition/becomedownload.md), your delegate’s [`urlSession(_:dataTask:didBecome:)`](urlsessiondatadelegate/urlsession(_:datatask:didbecome:)-60op5.md) method is called to provide the new download task that supersedes the current task.
 
 ## See Also
 

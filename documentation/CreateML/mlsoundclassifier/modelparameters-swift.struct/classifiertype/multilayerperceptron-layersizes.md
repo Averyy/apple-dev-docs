@@ -26,7 +26,7 @@ The number of integers in your `layerSizes` array determines the number of hidde
 
 ## Parameters
 
-- `layerSizes`: An array of positive integers. Each element represents the number of units for that hidden   layer.
+- `layerSizes`: An array of positive integers. Each element represents the number of units for that hidden layer.
 
 ## See Also
 

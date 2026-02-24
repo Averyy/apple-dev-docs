@@ -22,9 +22,9 @@ func keepalive(idleTimeInSeconds: UInt32, count: UInt32, intervalInSeconds: UInt
 
 ## Parameters
 
-- `idleTimeInSeconds`: The number of seconds of idleness to wait before keepalive   probes are sent by TCP ( ).
+- `idleTimeInSeconds`: The number of seconds of idleness to wait before keepalive probes are sent by TCP (`TCP_KEEPALIVE`).
 - `count`: The number of keepalive probes to send before terminating.
-- `intervalInSeconds`: The number of seconds of to wait before resending TCP   keepalive probes ( ).
+- `intervalInSeconds`: The number of seconds of to wait before resending TCP keepalive probes (`TCP_KEEPINTVL`).
 
 
 ---

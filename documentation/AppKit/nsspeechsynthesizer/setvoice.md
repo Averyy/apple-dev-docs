@@ -20,7 +20,7 @@ func setVoice(_ voice: NSSpeechSynthesizer.VoiceName?) -> Bool
 
 ## Parameters
 
-- `voice`: Identifier of the voice to set at the receiver’s current voice. When  , the receiver sets the default voice as its current voice.
+- `voice`: Identifier of the voice to set at the receiver’s current voice. When `nil`, the receiver sets the default voice as its current voice.
 
 ## See Also
 

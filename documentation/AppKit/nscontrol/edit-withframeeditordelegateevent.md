@@ -22,8 +22,8 @@ For a receiver that is a control with editable text (such as an [`NSTextField`](
 
 - `rect`: The bounding rectangle of the control’s cell.
 - `textObj`: The field editor to use.
-- `delegate`: The object to use as a delegate for the field editor. This delegate object receives various   delegation and notification methods during the course of editing the cell’s contents.
-- `event`: The   event that initiated the editing behavior.
+- `delegate`: The object to use as a delegate for the field editor. This delegate object receives various [`NSText`](nstext.md) delegation and notification methods during the course of editing the cell’s contents.
+- `event`: The [`NSLeftMouseDown`](nsleftmousedown.md) event that initiated the editing behavior.
 
 ## See Also
 

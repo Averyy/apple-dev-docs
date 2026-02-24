@@ -29,7 +29,7 @@ For example, when this method is passed a layout direction of [`UIUserInterfaceL
 ## Parameters
 
 - `semanticContentAttribute`: The semantic content attribute for a view.
-- `layoutDirection`: The user interface layout direction (  or  ).
+- `layoutDirection`: The user interface layout direction ([`UIUserInterfaceLayoutDirection.leftToRight`](uiuserinterfacelayoutdirection/lefttoright.md) or [`UIUserInterfaceLayoutDirection.rightToLeft`](uiuserinterfacelayoutdirection/righttoleft.md)).
 
 ## See Also
 

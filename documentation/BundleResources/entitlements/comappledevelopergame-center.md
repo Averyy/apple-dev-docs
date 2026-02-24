@@ -12,6 +12,10 @@ A Boolean value that indicates whether users of the app may see and compare achi
 - macOS 10.8+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, enable the Game Center capability in Xcode.

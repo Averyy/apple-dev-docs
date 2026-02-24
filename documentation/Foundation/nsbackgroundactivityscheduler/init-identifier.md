@@ -24,7 +24,7 @@ The string passed to the `identifier` parameter should remain constant for an ac
 
 ## Parameters
 
-- `identifier`: A unique string, in reverse DNS notation, that identifies the activity. For example,  .   and zero-length strings are not allowed.
+- `identifier`: A unique string, in reverse DNS notation, that identifies the activity. For example, `com.example.MyApp.updatecheck`. `nil` and zero-length strings are not allowed.
 
 ## See Also
 

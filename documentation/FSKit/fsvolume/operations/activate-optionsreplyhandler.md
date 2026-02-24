@@ -24,7 +24,7 @@ Volume activation occurs prior to any call to mount the volume.
 ## Parameters
 
 - `options`: Options to apply to the activation. These can include security-scoped file paths. There are no defined options currently.
-- `reply`: A block or closure to indicate success or failure. If activation succeeds, pass the root   and a   error. If activation fails, pass the relevant error as the second parameter; FSKit ignores any   in this case. In Swift,   takes only the   as the parameter; you signal any error with a  . For an   Swift implementation, there’s no reply handler; simply return the   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If activation succeeds, pass the root [`FSItem`](fsitem.md) and a `nil` error. If activation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem`](fsitem.md) in this case. In Swift, `reply` takes only the [`FSItem`](fsitem.md) as the parameter; you signal any error with a `throw`. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](fsitem.md) or throw an error.
 
 ## See Also
 

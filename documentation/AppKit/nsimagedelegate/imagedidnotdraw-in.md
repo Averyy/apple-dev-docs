@@ -29,7 +29,7 @@ The delegate can do one of the following:
 
 ## Parameters
 
-- `sender`: The   object that encountered the problem.
+- `sender`: The `NSImage` object that encountered the problem.
 - `rect`: The rectangle that the image object was attempting to draw.
 
 ## See Also

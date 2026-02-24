@@ -21,7 +21,7 @@ The interface status.
 ## Parameters
 
 - `bondStatus`: The Ethernet bond status.
-- `interface`: The member interface whose status is needed. Pass   to get the status of the Ethernet bond.
+- `interface`: The member interface whose status is needed. Pass `NULL` to get the status of the Ethernet bond.
 
 ## See Also
 

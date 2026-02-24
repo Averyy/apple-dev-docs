@@ -14,7 +14,7 @@ Keep your app content front and center while providing quick access to navigatio
 
 #### Overview
 
-[`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) adopts the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
+[`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) adopts the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
 
 Starting in iPadOS 18, the tab bar appears on the top of the screen floating over your content instead of appearing at the bottom of the screen. This appearance creates an immersive full-screen browsing experience. Tab bars provide people with access to the top-level navigation in your app. However, too many tabs can make it hard for people to locate content. Implementing a sidebar makes it easier to navigate a detailed information hierarchy.
 
@@ -139,6 +139,10 @@ TabView(selection: $selectedTab) {
 
 A `TabView` with the `sidebarAdaptable` style appears differently depending on the platform, as shown in the following images.
 
+**macOS**:
+
+![A screenshot of tab view on macOS](https://docs-assets.developer.apple.com/published/d86d64648482d8e9501242564d8d27ba/Enhancing-your-app-content-with-tab-navigation-macOS%402x.png)
+
 > **Note**: By default, contents in a `ScrollView(.horizontal)` scroll under the sidebar when you use the `sidebarAdaptable` tab view style in iPadOS. You can prevent the content from scrolling under the sidebar by adding the [`clipped(antialiased:)`](view/clipped(antialiased:).md) or [`clipShape(_:style:)`](view/clipshape(_:style:).md) modifier to `ScrollView`.
 
 ##### Enable Customization
@@ -195,6 +199,18 @@ TabSection {
 }
 .defaultVisibility(.hidden, for: .tabBar)
 ```
+
+**iOS**:
+
+![A screenshot of tab view on iOS.](https://docs-assets.developer.apple.com/published/3b94e40a70cf512f26ed1900ff2e5e71/Enhancing-your-app-content-with-tab-navigation-iOS%402x.png)
+
+**macOS**:
+
+![A screenshot of tab view on macOS](https://docs-assets.developer.apple.com/published/d86d64648482d8e9501242564d8d27ba/Enhancing-your-app-content-with-tab-navigation-macOS%402x.png)
+
+**visionOS**:
+
+![An image that shows tab view on visionOS.](https://docs-assets.developer.apple.com/published/0c8e9497ef4f8b04e1a24a43058e293b/Enhancing-your-app-content-with-tab-navigation-visionOS.png)
 
 If you enable customization, the [`defaultVisibility(_:for:)`](tabcontent/defaultvisibility(_:for:).md) modifier still allows people to drag a tab from the sidebar into the tab bar. If you want to restrict tabs to only appear in the sidebar use [`sidebarOnly`](tabplacement/sidebaronly.md) instead of setting the default visibility.
 

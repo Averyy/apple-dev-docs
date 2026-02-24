@@ -23,7 +23,7 @@ func CFBinaryHeapAddValue(_ heap: CFBinaryHeap!, _ value: UnsafeRawPointer!)
 ## Parameters
 
 - `heap`: The binary heap to use.
-- `value`: The value to add to the binary heap. The value is retained by the binary heap using the retain callback provided in the   structure when the binary heap was created.
+- `value`: The value to add to the binary heap. The value is retained by the binary heap using the retain callback provided in the [`CFBinaryHeapCallBacks`](cfbinaryheapcallbacks.md) structure when the binary heap was created.
 
 ## See Also
 

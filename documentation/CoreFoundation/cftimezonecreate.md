@@ -30,9 +30,9 @@ You typically do not call this function directly. Use the [`CFTimeZoneCreateWith
 
 ## Parameters
 
-- `allocator`: The allocator object to use to allocate memory for the new time zone. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator object to use to allocate memory for the new time zone. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `name`: The name of the time zone to create.
-- `data`: The data to use to initialize the time zone. The contents of the data should be the same as that found within the time-zone files located at  .
+- `data`: The data to use to initialize the time zone. The contents of the data should be the same as that found within the time-zone files located at `/usr/share/zoneinfo`.
 
 ## See Also
 

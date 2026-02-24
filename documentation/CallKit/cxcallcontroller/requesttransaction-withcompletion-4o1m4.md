@@ -27,7 +27,8 @@ func requestTransaction(with actions: [CXAction]) async throws
 ## Parameters
 
 - `actions`: The telephony actions.
-- `completion`: Code to be executed after the transaction is completed. The callback is executed on the queue specified when the call controller was initialized.
+- `completion`: Code to be executed after the transaction is completed. The callback is executed on the queue specified when the call controller was initialized. - **transaction**: The requested transaction.
+- **error**: If an error occurred, an error object indicating how the transaction failed, otherwise `nil`.
 
 ## See Also
 

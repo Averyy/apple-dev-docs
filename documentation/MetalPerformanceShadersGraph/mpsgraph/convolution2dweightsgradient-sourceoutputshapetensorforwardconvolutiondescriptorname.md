@@ -30,7 +30,7 @@ If `W` is weights tensor to forward convolution, `R` is the result/returned tens
 ## Parameters
 
 - `outputShapeTensor`: 4D int32 or Int64 Tensor. Shape of the forward pass source tensor
-- `forwardConvolutionDescriptor`: Forward convolution 2D op 
+- `forwardConvolutionDescriptor`: Forward convolution 2D op `descriptor`
 - `name`: The name for the operation.
 
 

@@ -12,9 +12,9 @@ Enable nearby devices to share an AR experience by using a peer-to-peer multiuse
 
 #### Overview
 
-As an AR app runs, ARKit gathers information about a userʼs physical environment by processing the camera feed from the user’s device. To effect a multiuser AR experience in which users learn more about the environment by sharing the information from their device’s camera feed with other users, you enable .
+As an AR app runs, ARKit gathers information about a userʼs physical environment by processing the camera feed from the user’s device. To effect a multiuser AR experience in which users learn more about the environment by sharing the information from their device’s camera feed with other users, you enable *collaboration*.
 
-Throughout a collaborative session, ARKit periodically provides data for you to share with peer users, and you choose a network protocol to send that data. In addition to information about the layout of the physical environment––the ––collaboration data includes an anchor for each participant. These anchors indicate each peer’s approximate location, which you can use, for example, to place virtual content that represents the peer user. ARKit also provides you with any anchors that the peer users create themselves.
+Throughout a collaborative session, ARKit periodically provides data for you to share with peer users, and you choose a network protocol to send that data. In addition to information about the layout of the physical environment––the *world data*––collaboration data includes an anchor for each participant. These anchors indicate each peer’s approximate location, which you can use, for example, to place virtual content that represents the peer user. ARKit also provides you with any anchors that the peer users create themselves.
 
 This sample app allows multiple users to view a common horizontal surface and place blocks on top of the surface, with a unique color for each user.
 

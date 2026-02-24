@@ -26,8 +26,8 @@ The base class returns the custom property value set on the object without looki
 
 ## Parameters
 
-- `in_qualifier_data`: The property qualifier, as an  . The caller retains and releases this object. This value is   if the qualifier data type is  .
-- `out_data`: On output, the property value, as an  . The caller retains and releases this object.
+- `in_qualifier_data`: The property qualifier, as an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject). The caller retains and releases this object. This value is `NULL` if the qualifier data type is `CustomPropertyDataTypeNone`.
+- `out_data`: On output, the property value, as an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject). The caller retains and releases this object.
 
 ## See Also
 

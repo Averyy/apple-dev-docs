@@ -20,6 +20,11 @@ object NSExtensionMappingsCommand
 - [object NSExtensionMappingsCommand.Command](nsextensionmappingscommand/command-data.dictionary.md)
   The command to get a list of the installed extensions for a user on a device.
 
+## Properties
+
+- `Command` (NSExtensionMappingsCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object NSExtensionMappingsResponse](nsextensionmappingsresponse.md)

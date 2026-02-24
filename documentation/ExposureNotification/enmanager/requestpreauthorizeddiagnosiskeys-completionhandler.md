@@ -24,7 +24,7 @@ func requestPreAuthorizedDiagnosisKeys() async throws
 
 If the user authorizes sharing of diagnosis keys and receives a positive test result within five days, call this method to retrieve the preauthorized keys, but only after informing the user of the positive result. [`ENDiagnosisKeysAvailableHandler`](endiagnosiskeysavailablehandler.md) receives the keys when the user unlocks their device. Subsequent calls to this method have no effect. If more than five days pass after the user authorizes sharing of their keys, or if the user declines to share their keys, the completion handler returns an error.
 
-> ❗ **Important**:  Your app must notify a user when their diagnosis keys are shared. The language of the notification must remind the user that they authorized the sharing of their diagnosis keys.  For example: “In accordance with your prior decision to share your keys if your test result was positive, your keys are now being shared with .”
+> ❗ **Important**:  Your app must notify a user when their diagnosis keys are shared. The language of the notification must remind the user that they authorized the sharing of their diagnosis keys.  For example: “In accordance with your prior decision to share your keys if your test result was positive, your keys are now being shared with *[PHA]*.”
 
 ## Parameters
 

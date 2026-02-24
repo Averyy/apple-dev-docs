@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-Specifies that the dynamic items, associated with the collision behavior, collide with each other  with specified collision boundaries.
+Specifies that the dynamic items, associated with the collision behavior, collide with each other *and* with specified collision boundaries.
 
 **Availability**:
 - iOS 7.0+

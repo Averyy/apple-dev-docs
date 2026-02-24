@@ -17,7 +17,7 @@ init(showsMenuIndicator: Bool)
 
 ## Parameters
 
-- `showsMenuIndicator`: A Boolean that indicates whether the   button should include a visual indicator that it represents a menu,   such as an arrow.
+- `showsMenuIndicator`: A Boolean that indicates whether the button should include a visual indicator that it represents a menu, such as an arrow.
 
 ## See Also
 

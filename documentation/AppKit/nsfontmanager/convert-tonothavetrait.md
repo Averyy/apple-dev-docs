@@ -21,7 +21,7 @@ A font with matching traits minus the given traits, or `aFont` if it can’t be 
 ## Parameters
 
 - `fontObj`: The font whose traits are matched.
-- `trait`: The mask for the traits to remove, created using the C bitwise OR operator to combine the traits described in  . Using   or   removes the bold or italic trait, respectively.
+- `trait`: The mask for the traits to remove, created using the C bitwise OR operator to combine the traits described in `Constants`. Using [`boldFontMask`](nsfonttraitmask/boldfontmask.md) or [`italicFontMask`](nsfonttraitmask/italicfontmask.md) removes the bold or italic trait, respectively.
 
 ## See Also
 

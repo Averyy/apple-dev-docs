@@ -30,7 +30,7 @@ The returned value is a pointer to a temporary buffer owned by the receiver. The
 
 ## Parameters
 
-- `key`: A key in the archive within the current decoding scope.   must not be  .
+- `key`: A key in the archive within the current decoding scope. `key` must not be `nil`.
 - `lengthp`: Upon return, contains the number of bytes returned.
 
 ## See Also

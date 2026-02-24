@@ -30,8 +30,8 @@ In macOS, this method creates both standard and high-resolution representations 
 
 ## Parameters
 
-- `queue`: The dispatch queue on which to execute the block that the   parameter specifies.
-- `completionHandler`: The block to call with the resulting snapshot. This block can’t be  .
+- `queue`: The dispatch queue on which to execute the block that the `completionHandler` parameter specifies.
+- `completionHandler`: The block to call with the resulting snapshot. This block can’t be `nil`.
 
 ## See Also
 

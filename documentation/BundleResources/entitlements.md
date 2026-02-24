@@ -14,9 +14,13 @@ Key-value pairs that grant an executable permission to use a service or technolo
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
-An  is a right or privilege that grants particular capabilities to an executable. For example, an app needs the [`HomeKit Entitlement`](entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
+An *entitlement* is a right or privilege that grants particular capabilities to an executable. For example, an app needs the [`HomeKit Entitlement`](entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
 
 You configure entitlements for your app by declaring capabilities for a target in Xcode; see [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
 

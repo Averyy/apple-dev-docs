@@ -8,6 +8,10 @@ A Boolean value indicating whether the physical Apple TV Remote and the Apple TV
 **Availability**:
 - tvOS 9.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If set to `YES`, your app supports multiple remotes with gamepads; otherwise, it doesn’t. If you support the 2nd Generation Siri Remote, set this key to `YES`. If you don’t set this key to `YES`, the combined micro gamepads won’t have the extra inputs of the 2nd Generation Siri Remote.

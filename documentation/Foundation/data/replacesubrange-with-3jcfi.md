@@ -28,7 +28,7 @@ Precondition: The bounds of `subrange` must be valid indices of the collection.
 
 ## Parameters
 
-- `subrange`: The range in the data to replace. If   then this operation is an append.
+- `subrange`: The range in the data to replace. If `subrange.lowerBound == data.count && subrange.count == 0` then this operation is an append.
 - `data`: The replacement data.
 
 ## See Also

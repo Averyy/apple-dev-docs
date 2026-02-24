@@ -30,13 +30,13 @@ Adds a `memoryBlock` to an existing `CMBlockBuffer`. The memory block may be sta
 
 ## Parameters
 
-- `theBuffer`: The existing   to which the new   will be added. Must not be 
-- `memoryBlock`: Block of memory to hold buffered data. If  , a memory block will be allocated when needed (via a call to  ) using the provided   or  . If non- , the block will be used and will be deallocated when the   is finalized (i.e. released for the last time).
-- `blockLength`: Overall length of the memory block in bytes. Must not be zero. This is the size of the supplied   or the size to allocate if   is  .
-- `blockAllocator`: Allocator to be used for allocating the  , if   is  . If   is non- , this allocator will be used to deallocate it, if provided. Passing   will cause the default allocator (as set at the time of the call) to be used. Pass   if no deallocation is desired.
-- `customBlockSource`: If non-NULL, it will be used for the allocation and freeing of the memory block (the   parameter is ignored). If provided, and the   parameter is  , its   routine must be non- . Allocate will be called once, if successful, when the   is allocated.   will be called once when the   is disposed.
-- `offsetToData`: The reference maintained by the existing   will begin after this offset within the   .
-- `dataLength`: Number of relevant data bytes, starting at  , within the memory block.
+- `theBuffer`: The existing `CMBlockBuffer` to which the new `memoryBlock` will be added. Must not be `NULL`
+- `memoryBlock`: Block of memory to hold buffered data. If `NULL`, a memory block will be allocated when needed (via a call to `CMBlockBufferAssureBlockMemory`) using the provided `blockAllocator` or `customBlockSource`. If non-`NULL`, the block will be used and will be deallocated when the `CMBlockBuffer` is finalized (i.e. released for the last time).
+- `blockLength`: Overall length of the memory block in bytes. Must not be zero. This is the size of the supplied `memoryBlock` or the size to allocate if `memoryBlock` is `NULL`.
+- `blockAllocator`: Allocator to be used for allocating the `memoryBlock`, if `memoryBlock` is `NULL`. If `memoryBlock` is non-`NULL`, this allocator will be used to deallocate it, if provided. Passing `NULL` will cause the default allocator (as set at the time of the call) to be used. Pass `kCFAllocatorNull` if no deallocation is desired.
+- `customBlockSource`: If non-NULL, it will be used for the allocation and freeing of the memory block (the `blockAllocator` parameter is ignored). If provided, and the `memoryBlock` parameter is `NULL`, its `AllocateBlock())` routine must be non-`NULL`. Allocate will be called once, if successful, when the `memoryBlock` is allocated. `FreeBlock()` will be called once when the `CMBlockBuffer` is disposed.
+- `offsetToData`: The reference maintained by the existing `CMBlockBuffer` will begin after this offset within the `memoryBlock` .
+- `dataLength`: Number of relevant data bytes, starting at `offsetToData`, within the memory block.
 - `flags`: Feature and control flags
 
 ## See Also

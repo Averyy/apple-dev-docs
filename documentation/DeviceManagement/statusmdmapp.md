@@ -41,6 +41,10 @@ object StatusMDMApp
 - [object StatusMDMAppAppObject](statusmdmappappobject.md)
   A status report that contains details about an MDM-installed app.
 
+## Properties
+
+- `mdm.app` ([StatusMDMAppAppObject]) *(required)*: The list of apps. The response doesn’t include apps that are managed by Declarative Device Management.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

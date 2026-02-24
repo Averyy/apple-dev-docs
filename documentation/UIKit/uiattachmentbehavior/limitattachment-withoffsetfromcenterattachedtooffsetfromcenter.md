@@ -31,9 +31,9 @@ The initial maximum distance between the items is set using the current position
 ## Parameters
 
 - `item1`: The first of two dynamic items connected by the attachment behavior.
-- `offset1`: The offset from the center of   that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify  .
+- `offset1`: The offset from the center of `item1` that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify [`zero`](uioffset/zero.md).
 - `item2`: The second of two dynamic items connected by the attachment behavior.
-- `offset2`: The offset from the center of   that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify  .
+- `offset2`: The offset from the center of `item2` that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify [`zero`](uioffset/zero.md).
 
 ## See Also
 

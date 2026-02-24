@@ -16,7 +16,7 @@ init(tracking capabilities: Set<SpatialTrackingSession.Configuration.AnchorCapab
 
 ## Parameters
 
-- `capabilities`: The set of anchor capabilities   to run with a  .
+- `capabilities`: The set of anchor capabilities to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
 
 
 ---

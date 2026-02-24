@@ -94,7 +94,7 @@ On return, `b0Values` contains the values `[1.0, 2.0, 3.0]`, and `b1Values` cont
 
 ## Parameters
 
-- `SymbolicFactor`: A symbolic factorization that returns by calling  .
+- `SymbolicFactor`: A symbolic factorization that returns by calling [`SparseFactor(_:_:_:_:_:)`](sparsefactor(_:_:_:_:_:)-68hki.md).
 - `Matrix`: The matrix to factorize.
 - `nfoptions`: The numeric factor options, such as pivoting parameters.
 

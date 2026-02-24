@@ -26,7 +26,7 @@ A valid [`MPSImagePyramid`](mpsimagepyramid.md) object or `nil`, if failure.
 ## Parameters
 
 - `device`: The device the filter will run on.
-- `centerWeight`: Defines the form of the filter kernel through the outer product  , where   and   is the value of  .
+- `centerWeight`: Defines the form of the filter kernel through the outer product `ww^T`, where `w = [(1/4 - a/2), 1/4, a, 1/4, (1/4 - a/2)]^T` and `a` is the value of `centerWeight`.
 
 ## See Also
 

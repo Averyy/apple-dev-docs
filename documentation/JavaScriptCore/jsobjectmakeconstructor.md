@@ -30,8 +30,8 @@ The default object constructor takes no arguments, and constructs an object of c
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `jsClass`: A   that is the class your constructor assigns to the objects its constructs. It uses   to set the constructor’s   property, and to evaluate   expressions. Pass   to use the default object class.
-- `callAsConstructor`: A   to invoke when using your constructor in a   expression. Pass   to use the default object constructor.
+- `jsClass`: A [`JSClassRef`](jsclassref.md) that is the class your constructor assigns to the objects its constructs. It uses `jsClass` to set the constructor’s `.prototype` property, and to evaluate `instanceof` expressions. Pass `NULL` to use the default object class.
+- `callAsConstructor`: A [`JSObjectCallAsConstructorCallback`](jsobjectcallasconstructorcallback.md) to invoke when using your constructor in a `new` expression. Pass `NULL` to use the default object constructor.
 
 ## See Also
 

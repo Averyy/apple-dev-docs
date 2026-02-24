@@ -9,6 +9,10 @@ A message that tells people why the app is requesting access to financial data s
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSIdentityUsageDescription](information-property-list/nsidentityusagedescription.md)

@@ -28,7 +28,7 @@ Use this method to describe the value represented by a view, but only if that’
 ## Parameters
 
 - `valueDescription`: The accessibility value to apply.
-- `isEnabled`: If true the accessibility value is applied; otherwise   the accessibility value is unchanged.
+- `isEnabled`: If true the accessibility value is applied; otherwise the accessibility value is unchanged.
 
 ## See Also
 

@@ -36,7 +36,7 @@ where `position` is the user-space coordinates of the destination pixel applied 
 ## Parameters
 
 - `shader`: The shader to apply as a distortion effect.
-- `maxSampleOffset`: The maximum distance in each axis   between the returned source pixel position and the   destination pixel position, for all source pixels.
+- `maxSampleOffset`: The maximum distance in each axis between the returned source pixel position and the destination pixel position, for all source pixels.
 
 ## See Also
 

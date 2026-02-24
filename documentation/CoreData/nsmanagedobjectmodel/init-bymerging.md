@@ -30,7 +30,7 @@ You use this method to combine multiple models (typically from different framewo
 
 ## Parameters
 
-- `models`: An array of instances of  .
+- `models`: An array of instances of `NSManagedObjectModel`.
 
 ## See Also
 

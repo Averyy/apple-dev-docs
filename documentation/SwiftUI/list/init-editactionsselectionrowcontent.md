@@ -39,9 +39,9 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 ## Parameters
 
 - `data`: The identifiable data for computing the list.
-- `editActions`: The edit actions that are synthesized on  .
+- `editActions`: The edit actions that are synthesized on `data`.
 - `selection`: A binding to a non optional selected value.
-- `rowContent`: A view builder that creates the view for a single row of   the list.
+- `rowContent`: A view builder that creates the view for a single row of the list.
 
 ## See Also
 

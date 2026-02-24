@@ -27,7 +27,7 @@ A filter that applies Gaussian blur.
 ## Parameters
 
 - `radius`: The standard deviation of the Gaussian blur.
-- `options`: A set of options controlling the application of the   effect.
+- `options`: A set of options controlling the application of the effect.
 
 
 ---

@@ -21,7 +21,7 @@ init(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.Model
 ## Parameters
 
 - `trainingData`: A style image and a content image, represented by a data source.
-- `parameters`: An   instance you use to configure the model for the training   session.
+- `parameters`: An [`MLStyleTransfer.ModelParameters`](mlstyletransfer/modelparameters.md) instance you use to configure the model for the training session.
 
 
 ---

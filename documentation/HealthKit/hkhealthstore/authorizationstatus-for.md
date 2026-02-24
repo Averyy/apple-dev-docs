@@ -37,7 +37,7 @@ To help prevent possible leaks of sensitive health information, your app cannot 
 
 ## Parameters
 
-- `type`: The type of data. This can be any concrete subclass of the   class (any of the   ,  ,  ,   or   classes).
+- `type`: The type of data. This can be any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md) or [`HKCorrelationType`](hkcorrelationtype.md) classes).
 
 ## See Also
 

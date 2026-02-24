@@ -90,6 +90,9 @@ func build() async throws -> AVVideoComposition {
 
 The configuration includes two key properties for spatial video:
 
+- **[`spatialVideoConfigurations`](avvideocomposition/configuration/spatialvideoconfigurations.md)**: Contains [`AVSpatialVideoConfiguration`](avspatialvideoconfiguration-swift.struct.md) objects describing the video data’s camera baseline and disparity adjustment. Modify this only if your compositor’s output differs from the source.
+- **[`outputBufferDescription`](avvideocomposition/configuration/outputbufferdescription.md)**: Configures tagged buffer output with `CMTag` arrays. Each top-level array element corresponds to one eye, specifying the tags for that eye’s output buffers. For monoscopic output, leave this `nil` and set `spatialVideoConfigurations` to an empty array.
+
 The builder configures the output based on whether the compositor produces stereo or mono output:
 
 ```swift

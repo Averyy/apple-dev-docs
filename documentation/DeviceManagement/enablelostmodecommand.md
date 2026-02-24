@@ -21,6 +21,11 @@ object EnableLostModeCommand
 - [object EnableLostModeCommand.Command](enablelostmodecommand/command-data.dictionary.md)
   The command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 
+## Properties
+
+- `Command` (EnableLostModeCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object EnableLostModeResponse](enablelostmoderesponse.md)

@@ -51,8 +51,8 @@ You can’t assume that class objects you get from this function are classes tha
 
 ## Parameters
 
-- `buffer`: An array of   values. On output, each   value points to one class definition, up to either   or the total number of registered classes, whichever is less. You can pass   to obtain the total number of registered class definitions without actually retrieving any class definitions.
-- `bufferCount`: An integer value. Pass the number of pointers for which you have allocated space in  . On return, this function fills in only this number of elements. If this number is less than the number of registered classes, this function returns an arbitrary subset of the registered classes.
+- `buffer`: An array of `Class` values. On output, each `Class` value points to one class definition, up to either `bufferCount` or the total number of registered classes, whichever is less. You can pass `NULL` to obtain the total number of registered class definitions without actually retrieving any class definitions.
+- `bufferCount`: An integer value. Pass the number of pointers for which you have allocated space in `buffer`. On return, this function fills in only this number of elements. If this number is less than the number of registered classes, this function returns an arbitrary subset of the registered classes.
 
 ## See Also
 

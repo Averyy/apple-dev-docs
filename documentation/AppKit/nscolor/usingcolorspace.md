@@ -24,7 +24,7 @@ If the receiver’s color space is the same as that specified in `space`, this m
 
 ## Parameters
 
-- `space`: The color space of the new   object.
+- `space`: The color space of the new `NSColor` object.
 
 ## See Also
 

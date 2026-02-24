@@ -29,9 +29,9 @@ This method is only intended to be called by an implementation of a custom conta
 - `fromViewController`: A view controller whose view is currently visible in the parent’s view hierarchy.
 - `toViewController`: A child view controller whose view is not currently in the view hierarchy.
 - `duration`: The total duration of the animations, in seconds. If you pass zero, the changes are made without animating them.
-- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see  .
-- `animations`: A block object containing the changes to commit to the views. Here you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be  .
-- `completion`: The block takes the following parameters:
+- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see [`UIView.AnimationOptions`](uiview/animationoptions.md).
+- `animations`: A block object containing the changes to commit to the views. Here you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be `NULL`.
+- `completion`: A block to be called when the animation completes. The block takes the following parameters: - ***finished***: [`true`](https://developer.apple.com/documentation/Swift/true) if the animation finished; [`false`](https://developer.apple.com/documentation/Swift/false) if it was skipped.
 
 ## See Also
 

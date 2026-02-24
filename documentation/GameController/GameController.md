@@ -13,6 +13,10 @@ Support hardware game controllers in your game.
 - tvOS 9.0+
 - visionOS 1.0+
 
+## Mentions
+
+- [Discovering game controllers](discovering-game-controllers.md)
+
 #### Overview
 
 Use Game Controller to support users interacting with your app using a physical or virtual game controller. Game controllers include third-party products, such as the DualShock 4, DualSense, and Xbox, as well as the mouse, keyboard, Siri Remote, and racing wheels.
@@ -37,14 +41,17 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
 ### Essentials
 - [Game Controller updates](../Updates/GameController.md)
   Learn about important changes to Game Controller.
+- [Discovering game controllers](discovering-game-controllers.md)
+  Implement connection and input handling to provide seamless physical controller support for players.
+- [Handling input events](handling-input-events.md)
+  Receive controller input using either polling or callbacks.
+### Configuration
 - [GCSupportsControllerUserInteraction](../BundleResources/Information-Property-List/GCSupportsControllerUserInteraction.md)
   A Boolean value indicating whether the app supports a game controller.
 - [GCSupportedGameControllers](../BundleResources/Information-Property-List/GCSupportedGameControllers.md)
   The types of game controller profiles that the app supports or requires.
 - [GCSupportsMultipleMicroGamepads](../BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
-- [Handling input events](handling-input-events.md)
-  Receive controller input using either polling or callbacks.
 ### View controller
 - [class GCEventViewController](gceventviewcontroller.md)
   A view controller that delivers input either from the responder chain to views, or from game controllers to profiles.

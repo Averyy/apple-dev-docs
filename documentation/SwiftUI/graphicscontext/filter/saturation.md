@@ -30,7 +30,7 @@ This filter is equivalent to the `saturate` filter primitive defined by the Scal
 
 ## Parameters
 
-- `amount`: The amount of the saturation adjustment. A value   of zero to completely desaturates each pixel, while a value of   one makes no change. You can use values greater than one.
+- `amount`: The amount of the saturation adjustment. A value of zero to completely desaturates each pixel, while a value of one makes no change. You can use values greater than one.
 
 ## See Also
 

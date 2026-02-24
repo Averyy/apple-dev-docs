@@ -19,6 +19,10 @@ The additional properties that verify the identity and authenticity of the organ
 object ManagementOrganizationInformationProofObject
 ```
 
+## Properties
+
+- `IdentityToken` (string): A token that verifies the identity of the organization when using this service.
+
 
 ---
 

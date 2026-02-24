@@ -25,7 +25,7 @@ The [`MDLAsset`](mdlasset.md) class infers the data format to export in from the
 
 ## Parameters
 
-- `URL`: A URL specifying the location to export asset data to. This parameter must be a   URL.
+- `URL`: A URL specifying the location to export asset data to. This parameter must be a `file:` URL.
 
 ## See Also
 

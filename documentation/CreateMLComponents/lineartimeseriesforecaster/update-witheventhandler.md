@@ -27,7 +27,7 @@ This method uses a sliding window to chunk the input features into features of [
 ## Parameters
 
 - `model`: The model to update.
-- `input`: A sequence of annotated features. The feature shape must be   and the annotation shape   must be  .
+- `input`: A sequence of annotated features. The feature shape must be `[featureSize]` and the annotation shape must be `[annotationSize]`.
 - `eventHandler`: An event handler.
 
 

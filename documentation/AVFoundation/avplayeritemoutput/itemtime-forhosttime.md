@@ -30,7 +30,7 @@ The timestamp associated with a [`CADisplayLink`](https://developer.apple.com/do
 
 ## Parameters
 
-- `hostTimeInSeconds`: A host time value, specified in seconds. For example, you might specify the time value returned by the   function or the timestamp from a   object for this parameter.
+- `hostTimeInSeconds`: A host time value, specified in seconds. For example, you might specify the time value returned by the [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime()) function or the timestamp from a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) object for this parameter.
 
 ## See Also
 

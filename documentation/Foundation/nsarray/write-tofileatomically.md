@@ -30,8 +30,8 @@ If the array’s contents are all property list objects (`NSString`, `NSData`, `
 
 ## Parameters
 
-- `path`: If   contains a tilde (~) character, you must expand it with   before invoking this method.
-- `useAuxiliaryFile`: If  , the array is written to an auxiliary file, and then the auxiliary file is renamed to  . If  , the array is written directly to  . The   option guarantees that  , if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `path`: The path at which to write the contents of the array. If `path` contains a tilde (~) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the array is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If [`false`](https://developer.apple.com/documentation/Swift/false), the array is written directly to `path`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 
 ## See Also
 

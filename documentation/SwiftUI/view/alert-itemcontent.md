@@ -55,7 +55,7 @@ struct ConfirmImportAlert: View {
 
 ## Parameters
 
-- `item`: A binding to an optional source of truth for the alert.   if   is non- , the system passes the contents to   the modifier’s closure. You use this content to populate the fields   of an alert that you create that the system displays to the user.   If   changes, the system dismisses the currently displayed   alert and replaces it with a new one using the same process.
+- `item`: A binding to an optional source of truth for the alert. if `item` is non-`nil`, the system passes the contents to the modifier’s closure. You use this content to populate the fields of an alert that you create that the system displays to the user. If `item` changes, the system dismisses the currently displayed alert and replaces it with a new one using the same process.
 - `content`: A closure returning the alert to present.
 
 ## See Also

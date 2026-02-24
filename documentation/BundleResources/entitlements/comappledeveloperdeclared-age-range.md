@@ -10,6 +10,12 @@ A Boolean value indicating whether your app may request a person’s age range.
 - iPadOS 26.0+
 - macOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 This entitlement works with the [`Declared Age Range`](https://developer.apple.com/documentation/DeclaredAgeRange) framework, which enables people to share their age range with your app.

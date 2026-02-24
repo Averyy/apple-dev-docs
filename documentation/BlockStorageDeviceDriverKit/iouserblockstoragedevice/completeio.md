@@ -20,7 +20,7 @@ The dext calls this method to indicate completion of an asynchronous read-write 
 
 ## Parameters
 
-- `requestID`: An opaque identifier, originally provided in the corresponding   call.
+- `requestID`: An opaque identifier, originally provided in the corresponding [`DoAsyncReadWrite`](iouserblockstoragedevice/doasyncreadwrite.md) call.
 - `bytesTransferred`: The number of bytes transferred.
 - `IOStatus`: The status of the request.
 

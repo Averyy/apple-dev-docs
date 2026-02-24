@@ -10,7 +10,7 @@ Use leaderboards to record player scores, which they can view in their Game Cent
 
 ![Three images of an iPhone screen in portrait layout, showing the Leaderboards section of Game Center, the best scores of an individual leaderboard, and a notification to a player that their friend passed their score.](https://docs-assets.developer.apple.com/published/6cc8995ce2829bc3a39c7b2057866692/media-4285793%402x.png)
 
-You configure a classic or recurring leaderboard in Xcode and submit scores from your code. A  retains the scores until you delete the leaderboard. A  automatically resets the board on the intervals you specify. For example, use a classic leaderboard for the best all-time scores and a recurring leaderboard for periodic competitions.
+You configure a classic or recurring leaderboard in Xcode and submit scores from your code. A *classic leaderboard* retains the scores until you delete the leaderboard. A *recurring leaderboard* automatically resets the board on the intervals you specify. For example, use a classic leaderboard for the best all-time scores and a recurring leaderboard for periodic competitions.
 
 You can also combine individual leaderboards into sets, creating a hierarchy of leaderboards. For example, use leaderboard sets to aggregate the scores from different levels and configurations in your game. However, once you add a leaderboard set, you need to organize all other individual leaderboards into sets.
 

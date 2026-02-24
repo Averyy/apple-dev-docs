@@ -29,7 +29,7 @@ Calling this function modifies the fade behavior for a single display configurat
 
 ## Parameters
 
-- `config`: A display configuration, acquired by calling  .
+- `config`: A display configuration, acquired by calling [`CGBeginDisplayConfiguration(_:)`](cgbegindisplayconfiguration(_:).md).
 - `fadeOutSeconds`: The time, in seconds, to fade from the normal display to the specified fade color. The fade out is completed before the display configuration is changed. If the interval is 0, Quartz applies the color immediately.
 - `fadeInSeconds`: The time, in seconds, to return from the specified fade color to the normal display. The fade-in is run asynchronously after the display configuration is changed.
 - `fadeRed`: An intensity value in the interval [0, 1] that represents the red component of the desired blend color.

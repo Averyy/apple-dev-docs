@@ -24,7 +24,7 @@ static func computeNormBackward(input: BNNSNDArrayDescriptor, output: BNNSNDArra
 
 - `input`: The descriptor of the input.
 - `output`: The descriptor of the output.
-- `axes`: The indices of the axes over which the function computes the norm. Set to   to specify that the function computes the norm over the entire tensor.
+- `axes`: The indices of the axes over which the function computes the norm. Set to `nil` to specify that the function computes the norm over the entire tensor.
 - `outputGradient`: The descriptor of the output delta.
 - `inputGradient`: The descriptor of the input delta.
 

@@ -30,7 +30,7 @@ The abstract [`NSValue`](nsvalue.md) class is the public interface of a class cl
 
 ###### Methods to Override
 
-Any subclass of [`NSValue`](nsvalue.md)  override the primitive instance methods [`getValue(_:)`](nsvalue/getvalue(_:).md) and [`objCType`](nsvalue/objctype.md). These methods must operate on the storage that you provide for the value.
+Any subclass of [`NSValue`](nsvalue.md) *must* override the primitive instance methods [`getValue(_:)`](nsvalue/getvalue(_:).md) and [`objCType`](nsvalue/objctype.md). These methods must operate on the storage that you provide for the value.
 
 You might want to implement an initializer for your subclass that is suited to the storage you provide. The [`NSValue`](nsvalue.md) class does not have a designated initializer, so your initializer need only invoke the [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method of `super`. The [`NSValue`](nsvalue.md) class adopts the [`NSCopying`](nscopying.md) and [`NSSecureCoding`](nssecurecoding.md) protocols; if you want instances of your own custom subclass created from copying or coding, override the methods in these protocols.
 

@@ -25,8 +25,8 @@ The new font descriptor.
 
 ## Parameters
 
-- `fontName`: The value for  .
-- `size`: The value for  .
+- `fontName`: The value for [`name`](uifontdescriptor/attributename/name.md).
+- `size`: The value for [`size`](uifontdescriptor/attributename/size.md).
 
 ## See Also
 

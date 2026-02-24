@@ -16,9 +16,9 @@ Display a scene from Reality Composer Pro in visionOS.
 
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, create, and design 3D content for your RealityKit apps.
-- [Swift Splash](../visionOS/swift-splash.md)
+- [Swift Splash](../visionos/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Diorama](../visionOS/diorama.md)
+- [Diorama](../visionos/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 - [Object capture](realitykit-object-capture.md)
   Create 3D objects from a series of photographs using photogrammetry.

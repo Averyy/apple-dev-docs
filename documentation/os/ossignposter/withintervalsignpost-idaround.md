@@ -41,7 +41,7 @@ signposter.withIntervalSignpost("Example Signpost", id: signpostID) {
 ## Parameters
 
 - `name`: The signpost’s name.
-- `id`: The signpost’s ID. The default value is  .
+- `id`: The signpost’s ID. The default value is [`exclusive`](ossignpostid/exclusive.md).
 - `task`: The closure around which to create the signposted interval.
 
 ## See Also

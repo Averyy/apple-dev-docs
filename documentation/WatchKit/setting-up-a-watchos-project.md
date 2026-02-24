@@ -43,6 +43,9 @@ Regardless of whether you add a watchOS app to an existing project or create a n
 
 Xcode divides the watchOS app into two sections:
 
+- **WatchKit App**: An app bundle that contains your watchOS app’s storyboard and any assets used by the storyboard.
+- **WatchKit Extension**: An extension that contains your watchOS app’s code.
+
 ![A screenshot of Xcode’s Project navigator, containing an iOS app, both the WatchKit App and WatchKit Extension, and unit tests.](https://docs-assets.developer.apple.com/published/1876fae4eda375f4f78836150db365f0/media-3295999%402x.png)
 
 Xcode sets the bundle IDs for both of the watch targets based on the container’s ID. For a watch-only app, this ID is the bundle ID for the root target. For a watchOS app with an iOS app, this ID is the iOS app’s bundle ID. The root of the WatchKit app and WatchKit extension’s bundle IDs must match the container’s bundle ID. If you change your iOS app’s bundle ID, you must update the other bundle IDs accordingly.

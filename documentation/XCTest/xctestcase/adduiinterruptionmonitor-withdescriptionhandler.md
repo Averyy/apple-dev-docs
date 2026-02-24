@@ -22,7 +22,7 @@ Returns a token that can be used to unregister the handler. Handlers are invoked
 ## Parameters
 
 - `handlerDescription`: An explanation of the behavior and purpose of this handler, mainly used for debugging and analysis.
-- `handler`: A handler block for handling asynchronous UI interruptions such as alerts and other dialogs. Handlers should return   if they handled the UI,   if they did not. The handler is passed an   representing the top level UI element for the alert.
+- `handler`: A handler block for handling asynchronous UI interruptions such as alerts and other dialogs. Handlers should return [`true`](https://developer.apple.com/documentation/Swift/true) if they handled the UI, [`false`](https://developer.apple.com/documentation/Swift/false) if they did not. The handler is passed an [`XCUIElement`](https://developer.apple.com/documentation/XCUIAutomation/XCUIElement) representing the top level UI element for the alert.
 
 ## See Also
 

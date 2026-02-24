@@ -26,8 +26,8 @@ When a child tree is added to another tree, the child tree is retained by its ne
 
 ## Parameters
 
-- `tree`: The tree to which to add  .
-- `newChild`: The child tree to add to  . This value must not be a child of another tree.
+- `tree`: The tree to which to add `newChild`.
+- `newChild`: The child tree to add to `tree`. This value must not be a child of another tree.
 
 ## See Also
 

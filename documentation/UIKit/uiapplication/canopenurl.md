@@ -39,7 +39,7 @@ Using universal links instead of custom URL schemes removes the need to use this
 
 ## Parameters
 
-- `url`: The URL can have a common scheme such as  ,  ,  , or  , or a custom scheme. For information about supported schemes, see  .
+- `url`: A URL (Universal Resource Locator). At runtime, the system determines if the device has an installed app registered to handle the URL’s scheme. The device can have more than one app registered to handle a scheme. The URL can have a common scheme such as `http`, `https`, `tel`, or `facetime`, or a custom scheme. For information about supported schemes, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
 ## See Also
 

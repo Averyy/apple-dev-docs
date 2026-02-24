@@ -29,6 +29,8 @@ This method applies the mask-to-alpha filter to an image. The value of the alpha
 
 The mask-to-alpha filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that makes the input image’s background transparent:
 
 ```swift

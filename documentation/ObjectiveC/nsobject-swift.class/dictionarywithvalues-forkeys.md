@@ -30,7 +30,7 @@ The default implementation invokes [`value(forKey:)`](nsobject-swift.class/value
 
 ## Parameters
 
-- `keys`: An array containing   objects that identify properties of the receiver.
+- `keys`: An array containing `NSString` objects that identify properties of the receiver.
 
 ## See Also
 

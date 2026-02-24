@@ -26,7 +26,7 @@ When Core Spotlight invokes this method, update the properties of the attribute 
 
 ## Parameters
 
-- `attributes`: The attribute set for the file at  .
+- `attributes`: The attribute set for the file at `contentURL`.
 - `contentURL`: The URL of the file to provide attributes for.
 
 

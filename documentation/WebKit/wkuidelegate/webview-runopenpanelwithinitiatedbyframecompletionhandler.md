@@ -30,7 +30,7 @@ Implement this method to customize the upload panel. To disable file uploads, im
 - `webView`: The web view that invokes the delegate method.
 - `parameters`: The parameters that describe the file upload control.
 - `frame`: The frame with the file upload control that initiates the call.
-- `completionHandler`: The completion handler the system calls after a person dismisses the open panel. Pass the selected URLs if the person selects “OK”, otherwise pass  .
+- `completionHandler`: The completion handler the system calls after a person dismisses the open panel. Pass the selected URLs if the person selects “OK”, otherwise pass `nil`.
 
 ## See Also
 

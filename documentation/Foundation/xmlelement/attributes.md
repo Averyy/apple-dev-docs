@@ -21,7 +21,7 @@ To set attributes in an element node using an [`NSDictionary`](nsdictionary.md) 
 
 ## Parameters
 
-- `attributes`: An array of   objects of kind  . If there are attribute nodes with the same name, the first attribute with that name is used. Send this message with   as   to remove all attributes.
+- `attributes`: An array of [`XMLNode`](xmlnode.md) objects of kind [`XMLNode.Kind.attribute`](xmlnode/kind-swift.enum/attribute.md). If there are attribute nodes with the same name, the first attribute with that name is used. Send this message with `attributes` as `nil` to remove all attributes.
 
 ## See Also
 

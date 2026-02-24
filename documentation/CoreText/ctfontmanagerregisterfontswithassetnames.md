@@ -28,10 +28,10 @@ Name the assets using PostScript names for individual faces, or family names for
 ## Parameters
 
 - `fontAssetNames`: An array of font name assets in the asset catalog.
-- `bundle`: A bundle that contains the asset catalog. Passing   resolves to the main bundle.
-- `scope`: A scope constant that defines the availability and lifetime of the registration. On iOS, the only supported scope is  , which means the fonts aren’t automatically available to other processes. Other processes can call   to get access to the fonts. See   for more details.
-- `enabled`: A Boolean value that indicates whether the font assets should be enabled for font descriptor matching and discoverable through  .
-- `registrationHandler`: This block may be called multiple times during the registration process. The   parameter becomes   when the registration process completes. Return   from the block to stop the registration operation, like after receiving an error.
+- `bundle`: A bundle that contains the asset catalog. Passing `NULL` resolves to the main bundle.
+- `scope`: A scope constant that defines the availability and lifetime of the registration. On iOS, the only supported scope is [`CTFontManagerScope.persistent`](ctfontmanagerscope/persistent.md), which means the fonts aren’t automatically available to other processes. Other processes can call [`CTFontManagerRequestFonts(_:_:)`](ctfontmanagerrequestfonts(_:_:).md) to get access to the fonts. See [`CTFontManagerScope`](ctfontmanagerscope.md) for more details.
+- `enabled`: A Boolean value that indicates whether the font assets should be enabled for font descriptor matching and discoverable through [`CTFontManagerRequestFonts(_:_:)`](ctfontmanagerrequestfonts(_:_:).md).
+- `registrationHandler`: A block called as errors arise or upon completion. The block’s `errors` parameter contains an array of [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) references; an empty array indicates no errors. Each error reference contains a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of font asset names corresponding to [`kCTFontManagerErrorFontAssetNameKey`](kctfontmanagererrorfontassetnamekey.md). These represent the font asset names causing the error and failing to register successfully. This block may be called multiple times during the registration process. The `done` parameter becomes [`true`](https://developer.apple.com/documentation/Swift/true) when the registration process completes. Return [`false`](https://developer.apple.com/documentation/Swift/false) from the block to stop the registration operation, like after receiving an error.
 
 ## See Also
 

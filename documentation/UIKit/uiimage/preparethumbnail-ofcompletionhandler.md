@@ -24,10 +24,48 @@ When displaying an image in a [`UIImageView`](uiimageview.md), you can use the v
 
 This method asynchronously creates the thumbnail image on a background thread and calls the completion handler on that thread. If your app updates the UI in the completion handler, schedule the UI update on the main thread.
 
+**Swift**:
+
+```swift
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ItemCell else {
+        fatalError("Unexpected type for cell. Check configuration.")
+    }
+        
+    let item = items[indexPath.item]
+    cell.nameLabel?.text = item.name
+    item.image.prepareThumbnail(of: thumbnailSize) { thumbnail in
+        DispatchQueue.main.async {
+            cell.thumbnailImageView?.image = thumbnail
+        }
+    }
+    return cell
+}
+```
+
+**Objective-C**:
+
+```objc
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.cellIdentifier forIndexPath:indexPath];
+    NSAssert([cell isKindOfClass:[ItemCell class]], @"Unexpected type for cell. Check configuration.\n");
+    
+    Item *item = self.items[indexPath.row];
+    ItemCell *itemCell = (ItemCell *)cell;
+    itemCell.nameLabel.text = item.name;
+    [item.image prepareThumbnailOfSize:self.thumbnailSize completionHandler:^(UIImage *thumbnail) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            itemCell.thumbnailImageView.image = thumbnail;
+        });
+    }];
+    return cell;
+}
+```
+
 ## Parameters
 
 - `size`: The desired size of the thumbnail.
-- `completionHandler`: The completion handler takes the following parameters:
+- `completionHandler`: The completion handler to call when the thumbnail is ready. The handler executes on a background thread. The completion handler takes the following parameters: - **`thumbnail`**: A new thumbnail image. This parameter is `nil` if the original image isn’t backed by a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or if the image data is corrupt or malformed.
 
 ## See Also
 

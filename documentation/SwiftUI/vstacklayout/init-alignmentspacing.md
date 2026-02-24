@@ -22,8 +22,8 @@ init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil)
 
 ## Parameters
 
-- `alignment`: The guide for aligning the subviews in this stack. It   has the same horizontal screen coordinate for all subviews.
-- `spacing`: The distance between adjacent subviews. Set this value   to   to use default distances between subviews.
+- `alignment`: The guide for aligning the subviews in this stack. It has the same horizontal screen coordinate for all subviews.
+- `spacing`: The distance between adjacent subviews. Set this value to `nil` to use default distances between subviews.
 
 
 ---

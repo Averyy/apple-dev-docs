@@ -21,7 +21,7 @@ struct VideoMaterial
 
 #### Overview
 
-In RealityKit, a  is an object that defines the surface properties of a rendered 3D object. A `VideoMaterial` is a material that maps a movie file on to the surface of an entity. Video materials are , which means that scene lighting doesn’t affect them. Video materials support transparency if the source video’s file format also supports transparency.
+In RealityKit, a *material* is an object that defines the surface properties of a rendered 3D object. A `VideoMaterial` is a material that maps a movie file on to the surface of an entity. Video materials are *unlit*, which means that scene lighting doesn’t affect them. Video materials support transparency if the source video’s file format also supports transparency.
 
 Video materials use an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance to control movie playback. You can use any movie file format that [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) supports to create a video material. To control playback of the material’s video, use the [`avPlayer`](videomaterial/avplayer.md) property, which offers methods like [`play()`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/play()) and [`pause()`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/pause()).
 

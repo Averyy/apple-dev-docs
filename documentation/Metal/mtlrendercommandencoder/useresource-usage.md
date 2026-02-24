@@ -22,7 +22,7 @@ func useResource(_ resource: any MTLResource, usage: MTLResourceUsage)
 
 #### Discussion
 
-You can make a resource  (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access `resource` through an argument buffer. The method ensures the resource is in a format that’s compatible with the shaders that depend on it.
+You can make a resource *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access `resource` through an argument buffer. The method ensures the resource is in a format that’s compatible with the shaders that depend on it.
 
 > **Note**:  You don’t need to call this method if you bind a resource to a shader stage.
 
@@ -32,12 +32,12 @@ The method also informs Metal when to apply hazard tracking for a resource you c
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls in the same render pass by calling this method again.
 
-Apps typically call the method for a resource in an argument buffer as a part of their  implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call the method for a resource in an argument buffer as a part of their *bindless* implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 
-- `resource`: An   instance that subsequent draw commands depend on.
-- `usage`: For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting   to  .
+- `resource`: An [`MTLResource`](mtlresource.md) instance that subsequent draw commands depend on.
+- `usage`: All the applicable access types the render pass’s shaders use for `resource`, including [`read`](mtlresourceusage/read.md) and [`write`](mtlresourceusage/write.md). For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting `usage` to [`read`](mtlresourceusage/read.md).
 
 ## See Also
 

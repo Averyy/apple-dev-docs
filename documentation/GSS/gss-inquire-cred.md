@@ -25,11 +25,11 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `cred_handle`: The credential to inspect. Use   to inquire about the default initiator principal.
-- `name_ret`: A pointer the function uses to return the name that the credential asserts. Use   to free the name  object’s memory when you are done with it. Set the parameter to   to ignore this output.
-- `lifetime`: A pointer the function uses to return the number of seconds for which the credential will remain valid, or 0 if the credential is expired. For credentials that do not support expiry, the function returns  . Set to   to ignore this output.
-- `cred_usage`: A pointer the function uses to return the credential usage. The value is one of  ,  , or  . Set to   to ignore this output.
-- `mechanisms`: A pointer the function uses to return the set of mechanisms that the credential supports. Use   to free the set’s memory when you are done with it. Set the parameter to   to ignore this output.
+- `cred_handle`: The credential to inspect. Use [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) to inquire about the default initiator principal.
+- `name_ret`: A pointer the function uses to return the name that the credential asserts. Use [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) to free the name  object’s memory when you are done with it. Set the parameter to `NULL` to ignore this output.
+- `lifetime`: A pointer the function uses to return the number of seconds for which the credential will remain valid, or 0 if the credential is expired. For credentials that do not support expiry, the function returns [`GSS_C_INDEFINITE`](gss_c_indefinite.md). Set to `NULL` to ignore this output.
+- `cred_usage`: A pointer the function uses to return the credential usage. The value is one of [`GSS_C_ACCEPT`](gss_c_accept.md), [`GSS_C_INITIATE`](gss_c_initiate.md), or [`GSS_C_BOTH`](gss_c_both.md). Set to `NULL` to ignore this output.
+- `mechanisms`: A pointer the function uses to return the set of mechanisms that the credential supports. Use [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) to free the set’s memory when you are done with it. Set the parameter to `NULL` to ignore this output.
 
 ## See Also
 

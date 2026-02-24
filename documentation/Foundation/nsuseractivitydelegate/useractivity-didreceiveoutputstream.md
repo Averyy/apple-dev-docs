@@ -28,7 +28,7 @@ Continuation streams are an optional feature of Handoff, and most user activitie
 
 ## Parameters
 
-- `userActivity`: The user activity that is continuing on another device. This user activity’s   property must be  .
+- `userActivity`: The user activity that is continuing on another device. This user activity’s [`supportsContinuationStreams`](nsuseractivity/supportscontinuationstreams.md) property must be [`true`](https://developer.apple.com/documentation/Swift/true).
 - `inputStream`: The stream from which the originating app can read data written from the continuing app.
 - `outputStream`: The stream to which the originating app writes data to be read by the continuing app.
 

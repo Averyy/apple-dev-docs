@@ -18,9 +18,11 @@ The benefit of using the framework-provided types is they automatically adapt to
 
 In Objective-C, integers, floating-point values, and other primitive types map to the language’s built-in representation, but you can still use the types in object-oriented ways. For example, you can include numerical and simple types in collections by wrapping them in an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) or [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object.
 
+---
+
 #### Choose the Best Configuration for Variables
 
-The variables you create are either  or , meaning you can change their values after initialization or you can’t. Mutability is an important consideration when designing data structures because it impacts how you move data around your app. A structure with only immutable data values doesn’t change, so multiple tasks can safely access that structure at the same time. The same isn’t true if the structure contains a mutable value. Tasks must synchronize access to a mutable structure to avoid corrupting the data inside it.
+The variables you create are either *mutable* or *immutable*, meaning you can change their values after initialization or you can’t. Mutability is an important consideration when designing data structures because it impacts how you move data around your app. A structure with only immutable data values doesn’t change, so multiple tasks can safely access that structure at the same time. The same isn’t true if the structure contains a mutable value. Tasks must synchronize access to a mutable structure to avoid corrupting the data inside it.
 
 [`Swift`](https://developer.apple.com/documentation/Swift) types are inherently mutable, but you specify their actual mutability when you declare them as variables. In Swift, you declare variables using either the `let` or `var` keyword. The `let` keyword creates a variable with an immutable version of the type, and the `var` keyword creates a variable with a mutable type. The compiler enforces the mutability of variables you declare. In the following code listing, you can change the value of the `currentLoginAttempt` variable, but the compiler reports an error if you attempt to change the value in `maximumNumberOfLoginAttempts`.
 
@@ -33,6 +35,8 @@ In Objective-C, the mutability of a type depends on the type itself. Integers an
 
 Choose immutable types to represent your data whenever possible. Because their values don’t change, you can pass immutable types safely around your app and access them from any task or thread. As needed, create a mutable copy of a variable to perform intermediate tasks. In Swift, copy the immutable value into a mutable variable. In Objective-C, you can create mutable versions of many immutable types using the methods of the [`NSMutableCopying`](https://developer.apple.com/documentation/Foundation/NSMutableCopying) protocol.
 
+---
+
 #### Prepare to Save Your Apps Data to Disk
 
 At some point, you’re going to want to save your app’s data to disk. The first step of this process is to convert your structured data into a serial stream of bytes that you can write to a file, which you do using the [`Archives and Serialization`](https://developer.apple.com/documentation/Foundation/archives-and-serialization) process. This process converts your in-memory data structures to a stream of bytes that you can then write to disk. When reading content from disk, you reverse this process by recreating your data structures from the serialized stream of bytes.
@@ -40,6 +44,8 @@ At some point, you’re going to want to save your app’s data to disk. The fir
 Most [`Swift`](https://developer.apple.com/documentation/Swift) and [`Foundation`](https://developer.apple.com/documentation/Foundation) types have built-in support for serialization. For custom Swift types, you [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/Foundation/encoding-and-decoding-custom-types), by adopting the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) and [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocols. The default implementation of these protocols automatically encode and decode the properties you specify, but you can also encode and decode properties manually if you prefer.
 
 To serialize types in Objective-C, adopt the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) and [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocols to specify which properties you want to save. To generate a [`Data`](https://developer.apple.com/documentation/Foundation/Data) object with the stream of bytes from your data structure, use a [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) object to encode one or more objects. To recreate your objects later, reverse the process using an [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver) object.
+
+---
 
 #### Format Data for Different Audiences
 
@@ -49,11 +55,13 @@ Before displaying data values in your app’s interface, [`Data Formatting`](htt
 
 To format values in Objective-C, use an instance of the [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) class to generate strings from your data. Foundation defines specific subclasses to format [`DateFormatter`](https://developer.apple.com/documentation/Foundation/DateFormatter), [`DateFormatter`](https://developer.apple.com/documentation/Foundation/DateFormatter) such as distances, [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter), and [`PersonNameComponentsFormatter`](https://developer.apple.com/documentation/Foundation/PersonNameComponentsFormatter), among others.
 
+---
+
 #### Filter Sort and Compare Items
 
 Working on large amounts of data can make it difficult to organize and find that data. As the number of items in an array increases, [`Filters and Sorting`](https://developer.apple.com/documentation/Foundation/filters-and-sorting#Filltering) to locate the items you want. You can also [`Filters and Sorting`](https://developer.apple.com/documentation/Foundation/filters-and-sorting#Sorting) the contents of an array using rules you supply.
 
-At the center of all filter and sort operations are , which are logical tests to apply during the operation. A typical predicate compares a property from a data structure against a value you specify. For example, a predicate might match the name field of a structure to a name string someone specified in your interface. Build predicates in your app using the [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) or [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) type. You can also combine predicates to specify match multiple values. The following code uses a macro to create a [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) structure that matches two fields of a `Message` structure against specific values.
+At the center of all filter and sort operations are *predicates*, which are logical tests to apply during the operation. A typical predicate compares a property from a data structure against a value you specify. For example, a predicate might match the name field of a structure to a name string someone specified in your interface. Build predicates in your app using the [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) or [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) type. You can also combine predicates to specify match multiple values. The following code uses a macro to create a [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) structure that matches two fields of a `Message` structure against specific values.
 
 ```swift
 let messagePredicate = #Predicate<Message> { message in
@@ -64,6 +72,8 @@ let messagePredicate = #Predicate<Message> { message in
 Some types support the use of predicates to generate a filtered list of results. For example, the [`Array`](https://developer.apple.com/documentation/Swift/Array) type contains methods to [`Array`](https://developer.apple.com/documentation/Swift/Array#Finding-Elements) using predicates. Other collection types offer similar methods.
 
 Once you have a filtered list of results, apply sort descriptors to arrange them in a preferred order. Build a sort descriptor from the [`SortDescriptor`](https://developer.apple.com/documentation/Foundation/SortDescriptor) or [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) type, and pass them to methods of your collection types. The sort descriptors arrange elements according to the specified criteria and return a new or modified version of your collection.
+
+---
 
 #### Secure Your Data
 

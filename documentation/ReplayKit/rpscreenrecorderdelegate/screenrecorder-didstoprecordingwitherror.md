@@ -25,9 +25,9 @@ This method is called when recording stops due to an error or a change in record
 
 ## Parameters
 
-- `screenRecorder`: The   instance.
-- `previewViewController`: An   interface object that is returned if anything at all was recorded. The interface allows the user to preview and edit the recording.
-- `error`: An   describing why the recording stopped. This method is   when no error occurs.
+- `screenRecorder`: The [`RPScreenRecorder`](rpscreenrecorder.md) instance.
+- `previewViewController`: An [`RPPreviewViewController`](rppreviewviewcontroller.md) interface object that is returned if anything at all was recorded. The interface allows the user to preview and edit the recording.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) describing why the recording stopped. This method is `nil` when no error occurs.
 
 ## See Also
 

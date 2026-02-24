@@ -29,7 +29,7 @@ func getTimeline(in context: Self.Context, completion: @escaping @Sendable (Time
 ## Parameters
 
 - `context`: An object describing the context to show the widget in.
-- `completion`: The completion handler to call after you create the   timeline.
+- `completion`: The completion handler to call after you create the timeline.
 
 ## See Also
 

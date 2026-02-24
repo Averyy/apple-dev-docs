@@ -25,7 +25,7 @@ The receiver must dismiss `newPersonViewController`.
 
 ## Parameters
 
-- `person`: On Cancel,  .
+- `person`: On Save, the newly created (and saved) person record. On Cancel, `NULL`.
 
 
 ---

@@ -30,8 +30,8 @@ If a delegate implements both this method and [`textView(_:willChangeSelectionFr
 ## Parameters
 
 - `textView`: The text view sending the message. This is the first text view in a series shared by a layout manager, not necessarily the text view displaying the selected text.
-- `oldSelectedCharRanges`: An array containing the original ranges of the selection. This must be a non- , non-empty array of objects responding to the   method  , and in addition its elements must be sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
-- `newSelectedCharRanges`: An array containing the proposed character ranges for the new selection. This must be a non- , non-empty array of objects responding to the   method  , and in addition its elements must be sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
+- `oldSelectedCharRanges`: An array containing the original ranges of the selection. This must be a non-`nil`, non-empty array of objects responding to the `NSValue` method `rangeValue`, and in addition its elements must be sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
+- `newSelectedCharRanges`: An array containing the proposed character ranges for the new selection. This must be a non-`nil`, non-empty array of objects responding to the `NSValue` method `rangeValue`, and in addition its elements must be sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
 
 ## See Also
 

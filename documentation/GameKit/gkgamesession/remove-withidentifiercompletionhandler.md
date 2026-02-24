@@ -26,7 +26,7 @@ After the user has finished a game or decides to abandon a game, you must use th
 ## Parameters
 
 - `identifier`: The unique string that identifies the game session to be removed.
-- `completionHandler`: A block that is called after a game session has been removed from a container.
+- `completionHandler`: A block that is called after a game session has been removed from a container. - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

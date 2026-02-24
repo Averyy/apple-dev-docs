@@ -34,9 +34,9 @@ This method registers with the runloop of its current context, and depends on th
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
-- `arg`: The argument to pass to the method when it is invoked. Pass   if the method does not take an argument.
-- `wait`: If the current thread is also the main thread, and you specify   for this parameter, the message is delivered and processed immediately.
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+- `arg`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
+- `wait`: A Boolean that specifies whether the current thread blocks until after the specified selector is performed on the receiver on the main thread. Specify [`YES`](yes.md) to block this thread; otherwise, specify [`NO`](no.md) to have this method return immediately. If the current thread is also the main thread, and you specify [`YES`](yes.md) for this parameter, the message is delivered and processed immediately.
 
 ## See Also
 

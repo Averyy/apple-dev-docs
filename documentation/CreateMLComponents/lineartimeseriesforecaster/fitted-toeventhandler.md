@@ -30,7 +30,7 @@ This method uses a sliding window to chunk the input features into features of [
 
 ## Parameters
 
-- `input`: A sequence of annotated features. Each feature’s shape should be   and each   annotation’s shape should be  . This method divides the input sequence into windows.
+- `input`: A sequence of annotated features. Each feature’s shape should be `[featureSize]` and each annotation’s shape should be `[annotationSize]`. This method divides the input sequence into windows.
 - `eventHandler`: An event handler.
 
 ## See Also

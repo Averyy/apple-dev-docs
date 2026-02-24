@@ -29,6 +29,22 @@ constant bool a [[ function_constant(0) ]];
 
 The next example sets that Boolean value by providing its specific name.
 
+**Swift**:
+
+```swift
+var a = true
+let constantValues = MTLFunctionConstantValues()
+constantValues.setConstantValue(&a, type: .bool, withName: "a")
+```
+
+**Objective-C**:
+
+```objective-c
+const bool a = true;
+MTLFunctionConstantValues* constantValues = [MTLFunctionConstantValues new];
+[constantValues setConstantValue:&a type:MTLDataTypeBool withName:@"a"];
+```
+
 ## Parameters
 
 - `value`: A pointer to the constant value.

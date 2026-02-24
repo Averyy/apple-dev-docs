@@ -26,7 +26,7 @@ Use this method to create new timeline entries. You can change the values of the
 
 - `date`: The time at which to display the complication data.
 - `complicationTemplate`: The complication template containing the data to display. Specify a template that’s appropriate for the complication family.
-- `timelineAnimationGroup`: The animation group with which to associate the entry. For more information about how this value is used, see  .
+- `timelineAnimationGroup`: The animation group with which to associate the entry. For more information about how this value is used, see [`timelineAnimationGroup`](clkcomplicationtimelineentry/timelineanimationgroup.md).
 
 ## See Also
 

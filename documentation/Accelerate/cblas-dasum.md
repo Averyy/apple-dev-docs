@@ -30,9 +30,9 @@ Returns the sum.
 
 ## Parameters
 
-- `N`: The number of elements in vector  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `N`: The number of elements in vector `x`.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

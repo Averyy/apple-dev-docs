@@ -24,7 +24,7 @@ This class cannot be subclassed.
 A `QCComposition` object has the following information associated with it and that you can obtain by using the appropriate method of the `QCComposition` class:
 
 - Attributes include the name and description of the composition, copyright information, and whether or not its provided by macOS (built-in).
-- The protocols that the composition conforms to. A   defines a set of required and optional input parameters and output results.
+- The protocols that the composition conforms to. A *composition protocol*  defines a set of required and optional input parameters and output results.
 
 Many methods of the [`QCRenderer`](qcrenderer.md), [`QCCompositionLayer`](qccompositionlayer.md), and [`QCView`](qcview.md) classes take a `QCComposition` object as a parameter.
 

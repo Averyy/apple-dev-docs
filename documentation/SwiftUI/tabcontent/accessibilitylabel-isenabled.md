@@ -41,7 +41,7 @@ var body: some View {
 ## Parameters
 
 - `label`: The accessibility label to apply.
-- `isEnabled`: If true the accessibility label is applied; otherwise   the accessibility label is unchanged.
+- `isEnabled`: If true the accessibility label is applied; otherwise the accessibility label is unchanged.
 
 
 ---

@@ -24,7 +24,35 @@ func vvsqrtf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvsqrtf(_:_:_:)`](vvsqrtf(_:_:_:).md).
+
+**Swift**:
+
+```swift
+var x: [Float] = [100, 10000, 64, 144]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvsqrtf(&y, &x, &n)
+ 
+print(y) // [10.0, 100.0, 8.0, 12.0]
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {100, 10000, 64, 144};
+float y[4];
+int n = 4;
+ 
+vvsqrtf(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+```
 
 ## See Also
 

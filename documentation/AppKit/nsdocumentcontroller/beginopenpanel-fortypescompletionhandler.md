@@ -24,7 +24,7 @@ You can also override this method if you want to perform additional cleanup (for
 
 - `openPanel`: The Open dialog to present.
 - `inTypes`: A list of file types that the user can choose from in the Open dialog.
-- `completionHandler`: The block takes the following parameter:
+- `completionHandler`: The completion handler that runs when the user clicks the OK or Cancel button in the Open dialog. The block takes the following parameter: - **`result`**: Either [`NSOKButton`](nsokbutton.md) or [`NSCancelButton`](nscancelbutton.md), depending on which button the user clicks to dismiss the dialog.
 
 ## See Also
 

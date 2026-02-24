@@ -19,8 +19,8 @@ All test assertions use this method to record test failures.
 
 - `description`: A description of the failure.
 - `filePath`: The file path to the source file where the failure occurred.
-- `lineNumber`: The line number in the source file at   where the failure occurred.
-- `expected`:   if the failure was the result of a failed assertion,   if it was the result of an uncaught exception.
+- `lineNumber`: The line number in the source file at `filePath` where the failure occurred.
+- `expected`: [`true`](https://developer.apple.com/documentation/Swift/true) if the failure was the result of a failed assertion, [`false`](https://developer.apple.com/documentation/Swift/false) if it was the result of an uncaught exception.
 
 ## See Also
 

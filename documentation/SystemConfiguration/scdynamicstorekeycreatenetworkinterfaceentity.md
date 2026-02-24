@@ -20,7 +20,7 @@ A string containing the formatted key.
 
 ## Parameters
 
-- `allocator`: The allocator that should be used to allocate memory for this key. This parameter may be   in which case the current default allocator is used. If this value is not a valid  , the behavior is undefined.
+- `allocator`: The allocator that should be used to allocate memory for this key. This parameter may be `NULL` in which case the current default allocator is used. If this value is not a valid [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator), the behavior is undefined.
 - `domain`: The desired domain, such as the requested configuration or the current state.
 - `ifname`: The interface name or a regular expression pattern.
 - `entity`: The specific global entity, such as IPv4 or DNS.

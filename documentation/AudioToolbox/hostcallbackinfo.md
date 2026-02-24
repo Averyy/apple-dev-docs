@@ -32,7 +32,7 @@ struct HostCallbackInfo
 - [var musicalTimeLocationProc: HostCallback_GetMusicalTimeLocation?](hostcallbackinfo/musicaltimelocationproc.md)
   Your callback function that provides musical timeline information to an audio unit. May be `NULL`.
 - [var transportStateProc: HostCallback_GetTransportState?](hostcallbackinfo/transportstateproc.md)
-  Your callback function that provides audio transport state information (, , and so on) to an audio unit. May be `NULL`.
+  Your callback function that provides audio transport state information (*play*, *rewind*, and so on) to an audio unit. May be `NULL`.
 - [var transportStateProc2: HostCallback_GetTransportState2?](hostcallbackinfo/transportstateproc2.md)
 
 ## Relationships

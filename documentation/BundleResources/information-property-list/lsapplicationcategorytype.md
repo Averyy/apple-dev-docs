@@ -8,6 +8,10 @@ The category that best describes your app for the App Store.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundlePackageType](information-property-list/cfbundlepackagetype.md)

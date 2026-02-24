@@ -30,7 +30,7 @@ If `tzName` is a known identifier, this method calls [`init(name:data:)`](nstime
 
 ## Parameters
 
-- `tzName`: The identifier for the time zone. Providing   for this parameter raises an invalid argument exception.
+- `tzName`: The identifier for the time zone. Providing `nil` for this parameter raises an invalid argument exception.
 
 ## See Also
 

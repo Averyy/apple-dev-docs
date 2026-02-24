@@ -175,6 +175,23 @@ Image(systemName: "multiply")
 
 Because of the typographical nature of SF Symbols, when you position an image view containing a symbol image next to a label, you should align the views using their baselines. To align views in your storyboard, select the two views and add a first baseline constraint. Programmatically, you create this constraint by setting the [`firstBaselineAnchor`](uiview/firstbaselineanchor.md) of both views to be equal, as the following code example shows:
 
+**Swift**:
+
+```swift
+NSLayoutConstraint.activate([
+    imageView!.firstBaselineAnchor.constraint(equalTo: label!.firstBaselineAnchor)
+])
+```
+
+**Objective-C**:
+
+```swift
+[NSLayoutConstraint activateConstraints:@[
+    [self.imageView.firstBaselineAnchor
+     constraintEqualToAnchor:self.label.firstBaselineAnchor]
+]];
+```
+
 All system symbol images include baseline information, and `UIImage` exposes the baseline value as an offset from the bottom of the image. Typically, the baseline of a symbol image aligns with the bottom of any text that appears in the image, but even symbol images without text have a baseline. In AppKit, a symbol’s baseline corresponds to the bottom of the [`alignmentRect`](https://developer.apple.com/documentation/AppKit/NSImage/alignmentRect) property, and in UIKit you can add a baseline to any image by calling its [`withBaselineOffset(fromBottom:)`](uiimage/withbaselineoffset(frombottom:).md) method.
 
 ```swift

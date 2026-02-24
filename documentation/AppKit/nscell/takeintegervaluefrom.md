@@ -16,7 +16,7 @@ func takeIntegerValueFrom(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The object from which to take the value. This object must implement the   property.
+- `sender`: The object from which to take the value. This object must implement the [`integerValue`](nscell/integervalue.md) property.
 
 ## See Also
 

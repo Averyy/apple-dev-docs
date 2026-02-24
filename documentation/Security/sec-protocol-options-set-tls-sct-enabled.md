@@ -24,7 +24,7 @@ Enable or disable SCT (signed certificate timestamp) support.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `sct_enabled`: Flag to enable or disable SCT support.
 
 

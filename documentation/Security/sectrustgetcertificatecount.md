@@ -30,7 +30,7 @@ Call the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md)
 
 ## Parameters
 
-- `trust`: The trust management object for the certificate that has been evaluated.  Use the   function to create a trust management object and the   function to evaluate the certificate chain.
+- `trust`: The trust management object for the certificate that has been evaluated.  Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object and the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) function to evaluate the certificate chain.
 
 
 ---

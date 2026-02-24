@@ -18,6 +18,12 @@ A dictionary that contains details about a software update failure.
 object StatusSoftwareUpdateFailureReasonDictionaryObject
 ```
 
+## Properties
+
+- `count` (integer) *(required)*: The number of times the current software update failed. If there are no failures, or no pending software update, this is `0`.
+- `reason` (string): If present, this describes the reason for last software update failure. This key isn’t present if there are no failures or no pending software update.
+- `timestamp` (string): If present, this is the RFC 3339 timestamp of the last software update failure. This key isn’t present if there are no failures or no pending software update.
+
 
 ---
 

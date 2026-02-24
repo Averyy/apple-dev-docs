@@ -25,7 +25,7 @@ func calculateHDRStats(for cgimage: CGImage) -> CGImage
 
 ## Parameters
 
-- `cgimage`: An immutable   for which to calculate statistics.
+- `cgimage`: An immutable `CGImage` for which to calculate statistics.
 
 
 ---

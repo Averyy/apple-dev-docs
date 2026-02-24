@@ -22,7 +22,7 @@ To add a `.stringsdict` file to your project, choose File > New > File from Temp
 
 ##### Provide String Variants for Different Widths
 
-A  specifies variants for different available widths in the user interface. It contains a single dictionary with a single key-value pair. The key in the dictionary is `NSStringVariableWidthRuleType` and the value is another dictionary with key-value pairs for each variant. The key for a variant is a width and the value is a string.
+A *width rule* specifies variants for different available widths in the user interface. It contains a single dictionary with a single key-value pair. The key in the dictionary is `NSStringVariableWidthRuleType` and the value is another dictionary with key-value pairs for each variant. The key for a variant is a width and the value is a string.
 
 In the following `.stringsdict` file, for the `hello `string in the code,` `the width variations are `1`, `22`, and `53`, and the values are `Hi`, `Hello`, and `Greetings and Salutations`:
 
@@ -59,7 +59,7 @@ To get a variant for a specific width in your code, see the [`variantFittingPres
 
 ##### Provide Device Specific String Variants
 
-A  specifies a different string depending on the device. For example, your universal app may present different instructions to the user when running on an iOS device than when running on a Mac.
+A *device rule* specifies a different string depending on the device. For example, your universal app may present different instructions to the user when running on an iOS device than when running on a Mac.
 
 A device rule contains a single dictionary with a single key-value pair. The key is `NSStringDeviceSpecificRuleType` and the value is a dictionary with the following optional key-value pairs:
 

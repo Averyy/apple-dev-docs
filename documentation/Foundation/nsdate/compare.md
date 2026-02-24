@@ -34,7 +34,7 @@ This method detects sub-second differences between dates. If you want to compare
 
 ## Parameters
 
-- `other`: This value must not be  . If the value is  , the behavior is undefined and may change in future versions of macOS.
+- `other`: The date with which to compare the receiver. This value must not be `nil`. If the value is `nil`, the behavior is undefined and may change in future versions of macOS.
 
 ## See Also
 

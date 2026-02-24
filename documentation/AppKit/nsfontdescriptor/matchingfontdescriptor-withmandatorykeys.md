@@ -26,7 +26,7 @@ If more than one font matches the [`NSFontNameAttribute`, `NSFontFamilyAttribute
 
 ## Parameters
 
-- `mandatoryKeys`: Keys that must be identical to be matched. Can be  .
+- `mandatoryKeys`: Keys that must be identical to be matched. Can be `nil`.
 
 ## See Also
 

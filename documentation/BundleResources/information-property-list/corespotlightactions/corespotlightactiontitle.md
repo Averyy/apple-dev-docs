@@ -10,6 +10,10 @@ The user-visible string that Spotlight displays as the title of the action.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CoreSpotlightActionSymbolImage](information-property-list/corespotlightactions/corespotlightactionsymbolimage.md)

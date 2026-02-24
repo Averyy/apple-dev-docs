@@ -22,9 +22,9 @@ The following diagram shows the state changes that occur for a watchOS app and t
 
 In the preceding diagram:
 
--  When transitioning from not running to either the inactive or background state, the system calls the extension delegate’s [`applicationDidFinishLaunching()`](wkextensiondelegate/applicationdidfinishlaunching().md) method.
--  When transitioning between the inactive and active states, the system calls either the [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) or [`applicationWillResignActive()`](wkextensiondelegate/applicationwillresignactive().md) method.
--  When transitioning between the background and inactive states, the system calls either the [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) or [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method.
+- **Transition A.** When transitioning from not running to either the inactive or background state, the system calls the extension delegate’s [`applicationDidFinishLaunching()`](wkextensiondelegate/applicationdidfinishlaunching().md) method.
+- **Transition B.** When transitioning between the inactive and active states, the system calls either the [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) or [`applicationWillResignActive()`](wkextensiondelegate/applicationwillresignactive().md) method.
+- **Transition C.** When transitioning between the background and inactive states, the system calls either the [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) or [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method.
 
 Except for [`applicationDidFinishLaunching()`](wkextensiondelegate/applicationdidfinishlaunching().md), the system only calls the extension delegate’s life cycle methods for the watchOS app’s main interface. The system doesn’t call the delegate methods when it displays any other supplementary interfaces. For example, it doesn’t call the methods when it launches the app to update complications or to display custom notification interfaces. For notifications, use the notification controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) and [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) methods to track the state of the interface.
 
@@ -50,22 +50,22 @@ The app launches when it isn’t running, and the user explicitly starts the app
 2. The system instantiates the initial interface controller and calls its [`awake(withContext:)`](wkinterfacecontroller/awake(withcontext:).md) method.
 3. The app transitions to the [`WKApplicationState.active`](wkapplicationstate/active.md) state. The system calls the extension delegate’s [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) method.
 4. The system calls the initial interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method.
-5.  appears onscreen. The system calls the initial interface controller’s [`didAppear()`](wkinterfacecontroller/didappear().md) method.
+5. *The app* appears onscreen. The system calls the initial interface controller’s [`didAppear()`](wkinterfacecontroller/didappear().md) method.
 
 The app goes to the background when it’s running onscreen in the [`WKApplicationState.active`](wkapplicationstate/active.md) state, and the user lowers their arm or the screen turns off. If the user explicitly closes the app, by pressing the digital crown or covering the screen, the app doesn’t become the frontmost app, and doesn’t remain in the inactive state, but transitions quickly to the background instead.
 
-1.  calls the extension delegate’s [`applicationWillResignActive()`](wkextensiondelegate/applicationwillresignactive().md) method.
-2.  transitions to the [`WKApplicationState.inactive`](wkapplicationstate/inactive.md) state. The app remains in this state as long as it’s the frontmost app (by default, 2 minutes).
-3.  transitions to the [`WKApplicationState.background`](wkapplicationstate/background.md) state.  calls the extension delegate’s [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method.
-4.  calls the presented interface controller’s [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method.
-5.  suspends the app.****
+1. *The system* calls the extension delegate’s [`applicationWillResignActive()`](wkextensiondelegate/applicationwillresignactive().md) method.
+2. *The app* transitions to the [`WKApplicationState.inactive`](wkapplicationstate/inactive.md) state. The app remains in this state as long as it’s the frontmost app (by default, 2 minutes).
+3. *The app* transitions to the [`WKApplicationState.background`](wkapplicationstate/background.md) state. *The system* calls the extension delegate’s [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method.
+4. *The system* calls the presented interface controller’s [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method.
+5. *The system* suspends the app.****
 
 The app resumes when the app is running in the background, or is suspended, and the user activates the app, for example, by tapping its complication on the active watch face.
 
-1. If suspended but in memory,  restarts in the [`WKApplicationState.background`](wkapplicationstate/background.md) state.
-2.  calls the extension delegate’s [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) method.
-3.  transitions to the [`WKApplicationState.active`](wkapplicationstate/active.md) state.  calls the extension delegate’s [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) method.
-4.  calls the initial interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method.
+1. If suspended but in memory, *the app* restarts in the [`WKApplicationState.background`](wkapplicationstate/background.md) state.
+2. *The system* calls the extension delegate’s [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) method.
+3. *The app* transitions to the [`WKApplicationState.active`](wkapplicationstate/active.md) state. *The system* calls the extension delegate’s [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) method.
+4. *The system* calls the initial interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method.
 
 ##### Receive Background Data
 

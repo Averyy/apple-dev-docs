@@ -25,8 +25,8 @@ A labeled value object with the existing identifier.
 
 ## Parameters
 
-- `label`: The label of the copied labeled value object, or   if the contact property value doesn’t have a label.
-- `value`: The copied labeled value object. For valid values, see   properties that are arrays of labeled value objects.
+- `label`: The label of the copied labeled value object, or `nil` if the contact property value doesn’t have a label.
+- `value`: The copied labeled value object. For valid values, see [`CNContact`](cncontact.md) properties that are arrays of labeled value objects.
 
 ## See Also
 

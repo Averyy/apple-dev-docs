@@ -27,7 +27,7 @@ The bit value at index `idx` in `bv`.
 ## Parameters
 
 - `bv`: The bit vector to examine.
-- `idx`: The index of the bit value in   to return.
+- `idx`: The index of the bit value in `bv` to return.
 
 ## See Also
 

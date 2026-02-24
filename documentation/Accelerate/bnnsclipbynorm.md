@@ -77,7 +77,7 @@ static func clipToNorm() {
 - `dest`: The descriptor of the output.
 - `src`: The descriptor of the input.
 - `max_norm`: The maximum Euclidean norm.
-- `axis_flags`: The dimensions that the function uses to compute the Euclidean norm. Set to   for the function to compute the norm over all dimensions.
+- `axis_flags`: The dimensions that the function uses to compute the Euclidean norm. Set to `0` for the function to compute the norm over all dimensions.
 
 ## See Also
 

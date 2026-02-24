@@ -60,7 +60,7 @@ extension SomeProtocol {
 
 // Might be miscompiled, deallocating SomeClass() too early.
 SomeClass().someNonmutatingProperty.x = 42
-```  Break the operation up into multiple statements so that the get and set operations occur in different statements: ```swift
+``` **Workaround:** Break the operation up into multiple statements so that the get and set operations occur in different statements: ```swift
 let someObject = SomeClass()
 // First get the nonmutating property value.
 var temp = someObject.someNonmutatingProperty
@@ -68,7 +68,7 @@ temp.x = 42
 // Then modify it.
 someObject.someNonmutatingProperty = temp
 ```
-- Passing a let property of a generic class that has function type as an argument to another function or method may cause a compiler crash. (41056468)  Assign the property to a local variable, and pass the local variable as an argument instead. ```swift
+- Passing a let property of a generic class that has function type as an argument to another function or method may cause a compiler crash. (41056468) **Workaround:** Assign the property to a local variable, and pass the local variable as an argument instead. ```swift
 class A<B> {
     let function: (B) -> B
 }
@@ -89,7 +89,7 @@ func passFunction(from a: A<Int>) {
 - The compiler may crash or miscompile when forming an array of heterogeneous class objects as an `AnyObject` array (42666956): ```swift
 func f(_: [AnyObject])
 f([NSObject.self, NSString.self]) // May crash or miscompile.
-```  Individually assign the class objects to variables of type AnyObject, then form an array of those variables: ```swift
+``` **Workaround:** Individually assign the class objects to variables of type AnyObject, then form an array of those variables: ```swift
 let myNSObject: AnyObject = NSObject.self
 let myNSString: AnyObject = NSString.self
 
@@ -102,7 +102,7 @@ class X: NSObject {
         f = super.isEqual(to:) // May crash the compiler.
     }
 }
-```  Assign the closure to a non-optional variable first, then assign the non-optional variable to the optional. ```swift
+``` **Workaround:** Assign the closure to a non-optional variable first, then assign the non-optional variable to the optional. ```swift
 class X: NSObject {
     var f: ((Any?) -> Bool)?
 
@@ -113,7 +113,7 @@ class X: NSObject {
     }
 }
 ```
-- Compilation might fail without displaying the errors responsible for the failure. For example, you might see the message “Command CompileSwiftSources failed with a nonzero exit code” without an accompanying failure reason. (43033749)  Disable batch mode by adding a user-defined [`build setting`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev382dac089) named `SWIFT_ENABLE_BATCH_MODE` and set it to `NO`.
+- Compilation might fail without displaying the errors responsible for the failure. For example, you might see the message “Command CompileSwiftSources failed with a nonzero exit code” without an accompanying failure reason. (43033749) **Workaround:** Disable batch mode by adding a user-defined [`build setting`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev382dac089) named `SWIFT_ENABLE_BATCH_MODE` and set it to `NO`.
 - Invoking a mutating method that returns `Self` on a value of protocol type may cause the compiler to crash (43507711): ```swift
 protocol Example {
     mutating func test() -> Self
@@ -122,7 +122,7 @@ protocol Example {
 func foo(x: inout Example) {
     _ = x.test() // May crash the compiler.
 }
-```  If possible, make the method non-mutating, or have the method return `Void` or the protocol type instead of `Self`: ```swift
+``` **Workaround:** If possible, make the method non-mutating, or have the method return `Void` or the protocol type instead of `Self`: ```swift
 protocol Example {
     mutating func test() -> Example // Instead of Self.
 }
@@ -296,7 +296,7 @@ PackageA:
     PackageC@branch
 PackageB:
     PackageC@1.0.0..<2.0.0
-``` According to the package manager’s dependency resolution rules, this should resolve to: PackageA @ branch, PackageB @ branch and PackageC @ branch. However, since the shared dependency PackageC is referenced with a `1.0.0..<2.0.0` requirement, it may result in a crash. (43107896)  Use either versioned or revisioned based requirement for the shared package dependencies.
+``` According to the package manager’s dependency resolution rules, this should resolve to: PackageA @ branch, PackageB @ branch and PackageC @ branch. However, since the shared dependency PackageC is referenced with a `1.0.0..<2.0.0` requirement, it may result in a crash. (43107896) **Workaround:** Use either versioned or revisioned based requirement for the shared package dependencies.
 
 ##### Swift Standard Library
 

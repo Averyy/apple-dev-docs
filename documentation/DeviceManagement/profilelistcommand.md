@@ -29,6 +29,11 @@ object ProfileListCommand
 - [object ProfileListCommand.Command](profilelistcommand/command-data.dictionary.md)
   The command to get a list of installed profiles on a device.
 
+## Properties
+
+- `Command` (ProfileListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ProfileListResponse](profilelistresponse.md)

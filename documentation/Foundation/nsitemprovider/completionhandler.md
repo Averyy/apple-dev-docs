@@ -24,6 +24,9 @@ typealias CompletionHandler = @Sendable ((any NSSecureCoding)?, (any Error)?) ->
 
 Use this block to receive data from a call to the [`loadItem(forTypeIdentifier:options:completionHandler:)`](nsitemprovider/loaditem(fortypeidentifier:options:completionhandler:).md) method. This block takes the following parameters:
 
+- **item**: The item to be loaded. When specifying your block, set the type of this parameter to the specific data type you want. For example, when requesting text data, you might set the type to [`NSString`](nsstring.md) or [`NSAttributedString`](nsattributedstring.md). The item provider attempts to coerce the data to the class you specify.
+- **error**: A pointer to an error object for receiving information about any problems that occurred when loading the data.
+
 ## See Also
 
 - [NSItemProvider.LoadHandler](nsitemprovider/loadhandler.md)

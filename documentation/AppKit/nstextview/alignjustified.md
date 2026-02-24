@@ -16,7 +16,7 @@ func alignJustified(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

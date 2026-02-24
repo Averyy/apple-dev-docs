@@ -3,7 +3,7 @@
 **Framework**: ShazamKit  
 **Kind**: method
 
-Creates an asynchronous iterate that produces results from an asynchronous sequence.
+Creates an asynchronous iterator that produces results from an asynchronous sequence.
 
 **Availability**:
 - iOS 16.0+

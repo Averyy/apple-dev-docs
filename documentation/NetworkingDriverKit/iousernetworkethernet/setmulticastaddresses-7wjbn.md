@@ -25,7 +25,7 @@ Override this method and use it to set up a Ethernet multicast filter on your de
 ## Parameters
 
 - `addresses`: An array of MAC addresses for the devices to monitor.
-- `count`: The number of items in the   parameter.
+- `count`: The number of items in the `addresses` parameter.
 
 ## See Also
 

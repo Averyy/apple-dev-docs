@@ -27,7 +27,7 @@ Calling this method after updating the picker with discovered accessories has no
 
 ## Parameters
 
-- `completionHandler`: A block or closure that executes after this operation completes. The completion handler receives an   instance if the operation encounters an error.
+- `completionHandler`: A block or closure that executes after this operation completes. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the operation encounters an error.
 
 
 ---

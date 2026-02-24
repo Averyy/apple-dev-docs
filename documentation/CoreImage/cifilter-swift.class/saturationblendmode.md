@@ -29,6 +29,9 @@ This method applies the saturation-blend mode filter to an image. The effect use
 
 The saturation-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image taking on the colors of the background image with low saturated values becoming gray.
 
 ```swift

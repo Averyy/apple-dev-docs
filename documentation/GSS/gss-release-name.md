@@ -25,7 +25,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `input_name`: A pointer to the name that should be freed. The name is set to   when the function returns successfully.
+- `input_name`: A pointer to the name that should be freed. The name is set to [`GSS_C_NO_NAME`](gss_c_no_name.md) when the function returns successfully.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Invoked by [`checkText(in:types:options:)`](nstextview/checktext(in:types:option
 - `view`: The text view sending the message.
 - `range`: The range to be checked.
 - `options`: A dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
-- `checkingTypes`: You can change this parameter to alter the types of checking to be performed.
+- `checkingTypes`: The type of checking to be performed, passed by-reference. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/Foundation/NSTextCheckingTypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time. You can change this parameter to alter the types of checking to be performed.
 
 ## See Also
 

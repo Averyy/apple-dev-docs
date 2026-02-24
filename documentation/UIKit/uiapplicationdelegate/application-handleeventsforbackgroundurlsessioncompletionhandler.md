@@ -33,7 +33,7 @@ At launch time, the app does not call this method if there are uploads or downlo
 ## Parameters
 
 - `application`: Your singleton app object.
-- `identifier`: The identifier of the URL session requiring attention. If your app was just launched, you can use this identifier to create a new   object that can receive the events.
+- `identifier`: The identifier of the URL session requiring attention. If your app was just launched, you can use this identifier to create a new [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) object that can receive the events.
 - `completionHandler`: The completion handler to call when you finish processing the events. Calling this completion handler lets the system know that your app’s user interface is updated and a new snapshot can be taken.
 
 ## See Also

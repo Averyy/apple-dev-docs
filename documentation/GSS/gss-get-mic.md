@@ -26,9 +26,9 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context used to send the message.
-- `qop_req`: The quality of protection requested for the message. See Quality of Protection Constants in   for valid values.
+- `qop_req`: The quality of protection requested for the message. See Quality of Protection Constants in [`Object Identifiers`](object-identifiers.md) for valid values.
 - `message_buffer`: A buffer holding the message to be protected.
-- `message_token`: A buffer the function fills with the protection token. Release this buffer with a call to   when you are done with it.
+- `message_token`: A buffer the function fills with the protection token. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

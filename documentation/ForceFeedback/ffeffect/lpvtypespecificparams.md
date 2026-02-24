@@ -58,9 +58,9 @@ If the effect is of type FFEFT_RAMPFORCE, this member contains a pointer to a FF
 - [var lpEnvelope: PFFENVELOPE!](ffeffect/lpenvelope.md)
   Optional pointer to a FFENVELOPE structure that describes the envelope to be used by this effect. Not all effect types use envelopes. If no envelope is to be applied, the member should be set to NULL.
 - [var rgdwAxes: LPDWORD!](ffeffect/rgdwaxes.md)
-  Pointer to a DWORD array (of  elements) containing identifiers or offsets identifying the axes to which the effect is to be applied.
+  Pointer to a DWORD array (of **cAxes** elements) containing identifiers or offsets identifying the axes to which the effect is to be applied.
 - [var rglDirection: LPLONG!](ffeffect/rgldirection.md)
-  Pointer to a LONG array (of  elements) containing either Cartesian coordinates, polar coordinates, or spherical coordinates.
+  Pointer to a LONG array (of **cAxes** elements) containing either Cartesian coordinates, polar coordinates, or spherical coordinates.
 
 
 ---

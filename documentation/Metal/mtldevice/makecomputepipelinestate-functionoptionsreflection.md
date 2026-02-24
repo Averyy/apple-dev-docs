@@ -26,9 +26,9 @@ Use the compute pipeline state to configure a compute pass by calling the [`setC
 
 ## Parameters
 
-- `computeFunction`: An   instance.
-- `options`: An   instance that represents the reflection information you want the method to generate.
-- `reflection`: In Swift, an optional pointer to an   optional.   In Objective-C, a pointer to an   instance.
+- `computeFunction`: An [`MTLFunction`](mtlfunction.md) instance.
+- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
+- `reflection`: In Swift, an optional pointer to an [`MTLAutoreleasedComputePipelineReflection`](mtlautoreleasedcomputepipelinereflection.md) optional. In Objective-C, a pointer to an [`MTLAutoreleasedComputePipelineReflection`](mtlautoreleasedcomputepipelinereflection.md) instance.
 
 ## See Also
 

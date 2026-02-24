@@ -29,7 +29,7 @@ Implement this delegate method when you want to provide a custom, interactive tr
 ## Parameters
 
 - `navigationController`: The navigation controller whose navigation stack is changing.
-- `animationController`: The noninteractive animator object provided by the delegate’s   method.
+- `animationController`: The noninteractive animator object provided by the delegate’s [`navigationController(_:animationControllerFor:from:to:)`](uinavigationcontrollerdelegate/navigationcontroller(_:animationcontrollerfor:from:to:).md) method.
 
 ## See Also
 

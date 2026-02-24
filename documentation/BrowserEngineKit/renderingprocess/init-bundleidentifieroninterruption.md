@@ -24,7 +24,7 @@ The operating system guarantees that the process launched when this initializer 
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier of the rendering extension to launch, or   to use the default bundle identifier for this app’s rendering extension.
+- `bundleIdentifier`: The bundle identifier of the rendering extension to launch, or `nil` to use the default bundle identifier for this app’s rendering extension.
 - `onInterruption`: A block that the operating system calls if the rendering extension process exits abnormally.
 
 ## See Also

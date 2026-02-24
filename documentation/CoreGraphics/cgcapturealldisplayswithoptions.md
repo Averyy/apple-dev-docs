@@ -25,7 +25,7 @@ This function allows you to specify one or more options to use during capture of
 
 ## Parameters
 
-- `options`: The options to use. See  .
+- `options`: The options to use. See [`CGCaptureOptions`](cgcaptureoptions.md).
 
 ## See Also
 

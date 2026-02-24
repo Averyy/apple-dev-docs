@@ -32,8 +32,8 @@ A new [`MTLBuffer`](mtlbuffer.md) instance if the method completes successfully;
 
 - `pointer`: A page-aligned pointer to the starting memory address.
 - `length`: The size of the new buffer, in bytes, that results in a page-aligned region of memory.
-- `options`: An   instance that sets the buffer’s storage and hazard-tracking modes. See   and   for more information.
-- `deallocator`: A block the framework invokes when it deallocates the buffer so that your app can release the underlying memory; otherwise   to opt out.
+- `options`: An [`MTLResourceOptions`](mtlresourceoptions.md) instance that sets the buffer’s storage and hazard-tracking modes. See [`Resource fundamentals`](resource-fundamentals.md) and [`Setting resource storage modes`](setting-resource-storage-modes.md) for more information.
+- `deallocator`: A block the framework invokes when it deallocates the buffer so that your app can release the underlying memory; otherwise `nil` to opt out.
 
 ## See Also
 

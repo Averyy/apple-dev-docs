@@ -25,7 +25,7 @@ True if the system is running under the given performance profile. If the profil
 
 ## Parameters
 
-- `performanceProfile`: The desired performance profile. Choose between:   and  .
+- `performanceProfile`: The desired performance profile. Choose between: [`default`](https://developer.apple.com/documentation/Metal/NSProcessPerformanceProfile/default) and [`sustained`](https://developer.apple.com/documentation/Metal/NSProcessPerformanceProfile/sustained).
 
 ## See Also
 

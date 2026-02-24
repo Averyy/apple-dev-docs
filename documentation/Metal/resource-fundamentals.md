@@ -6,13 +6,17 @@ Control the common attributes of all Metal memory resources, including buffers a
 
 #### Overview
 
-A  is a memory asset, such as an [`MTLBuffer`](mtlbuffer.md) or [`MTLTexture`](mtltexture.md), that a GPU can access (see [`Buffers`](buffers.md) and [`Textures`](textures.md)).
+A *resource* is a memory asset, such as an [`MTLBuffer`](mtlbuffer.md) or [`MTLTexture`](mtltexture.md), that a GPU can access (see [`Buffers`](buffers.md) and [`Textures`](textures.md)).
 
 You can either allocate a resource from an [`MTLDevice`](mtldevice.md) instance or an [`MTLHeap`](mtlheap.md) instance (see [`Memory heaps`](memory-heaps.md)). Metal sets a resource’s [`hazardTrackingMode`](mtlresource/hazardtrackingmode.md) property to [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md) if you don’t select another tracking mode. The default value depends on what Metal instance creates the resource.
 
 > ❗ **Important**: The value of an [`MTLResource`](mtlresource.md) instance’s [`hazardTrackingMode`](mtlresource/hazardtrackingmode.md) property has no effect on the work you submit to an [`MTL4CommandQueue`](mtl4commandqueue.md) (see [`Resource synchronization`](resource-synchronization.md)) or resources that commands access through an argument buffer.
 
 Each resource your app creates typically uses one of these storage modes:
+
+- **[`MTLStorageMode.private`](mtlstoragemode/private.md)**: Apps can only access resources in private storage from the GPU.
+- **[`MTLStorageMode.shared`](mtlstoragemode/shared.md)**: Apps can access resources in shared storage from both the CPU and the GPU.
+- **[`MTLStorageMode.managed`](mtlstoragemode/managed.md)**: Apps can access resources in managed storage from both the CPU and the GPU, just like shared storage. However, the GPU backs resources in managed mode with memory in private storage.
 
 Private mode resources give your app optimization opportunities that shared mode resources don’t. Managed mode resources also give your app the same opportunities and allow your to app access them from the CPU.
 

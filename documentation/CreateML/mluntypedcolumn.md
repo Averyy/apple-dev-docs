@@ -31,7 +31,7 @@ Untyped columns are especially useful when:
 - You’re using columns of a non-Boolean type to filter a data table with [`subscript(_:)`](mldatatable/subscript(_:)-10r4l.md).
 - You don’t need to work directly with the underlying type.
 
-Each element of an untyped column is an [`MLDataValue`](mldatavalue.md), and has an  that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md). The underlying type is hidden from the Swift compiler and is what makes an [`MLUntypedColumn`](mluntypedcolumn.md) untyped. Using an untyped column allows you to quickly write type-agnostic code with Create ML.
+Each element of an untyped column is an [`MLDataValue`](mldatavalue.md), and has an *underlying type* that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md). The underlying type is hidden from the Swift compiler and is what makes an [`MLUntypedColumn`](mluntypedcolumn.md) untyped. Using an untyped column allows you to quickly write type-agnostic code with Create ML.
 
 ```swift
 let column = MLUntypedColumn([2, 3, 5, 7, 11])
@@ -42,7 +42,7 @@ let columnOver2 = column / 2 print(columnOver2)
  */
 ```
 
-However, by avoiding type safety at compile time, you expose your code to errors at runtime. When an error occurs during an operation, Create ML marks the product of that operation  by setting [`isValid`](mluntypedcolumn/isvalid.md) to `false` and by setting [`error`](mluntypedcolumn/error.md) with a value. For example, using a slash (`/`) operator to divide a column of integers with a string produces an invalid column.
+However, by avoiding type safety at compile time, you expose your code to errors at runtime. When an error occurs during an operation, Create ML marks the product of that operation *invalid* by setting [`isValid`](mluntypedcolumn/isvalid.md) to `false` and by setting [`error`](mluntypedcolumn/error.md) with a value. For example, using a slash (`/`) operator to divide a column of integers with a string produces an invalid column.
 
 ```swift
 let column = MLUntypedColumn([2, 3, 5, 7, 11])

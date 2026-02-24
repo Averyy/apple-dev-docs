@@ -14,11 +14,11 @@ This sample code project decomposes an image into three factors using [`singular
 
 ![Two photographs. The first contains a grayscale image of some flowers. The second shows the same image after compression and shows some degradation and compression artifacts.](https://docs-assets.developer.apple.com/published/ac1163eb694e38c9ccbd27ae0f7b1c6b/accelerate-denoising.png)
 
-Any  x  matrix, , has an SVD factorization that decomposes it into three factors:
+Any *m* x *n* matrix, *A*, has an SVD factorization that decomposes it into three factors:
 
-- The  x   matrix  that contains the left singular vectors of matrix 
-- The  x   diagonal matrix  that contains the [`singular values`](https://developer.apple.comhttps://mathworld.wolfram.com/SingularValue.html) of matrix , arranged in descending order
-- The  x   transposed matrix  that contains the right singular vectors of matrix 
+- The *m* x *m*  matrix *U* that contains the left singular vectors of matrix *A*
+- The *m* x *n*  diagonal matrix *Σ* that contains the [`singular values`](https://developer.apple.comhttps://mathworld.wolfram.com/SingularValue.html) of matrix *A*, arranged in descending order
+- The *n* x *n*  transposed matrix *V* that contains the right singular vectors of matrix *A*
 
 The sample uses the Linear Algebra Package (LAPACK) function `sgesvdx_` to compute the SVD.
 
@@ -26,11 +26,11 @@ The figure below shows the SVD of a 5 x 3 matrix:
 
 ![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-three matrix U multiplied by five-times-three diagonal matrix sigma multiplied by five-times-five transposed matrix V.](https://docs-assets.developer.apple.com/published/f2a3240dea2deb68a5dca93d2d47fbbf/accelerate-figure-1.png)
 
-When matrix  contains image information, the magnitude of the singular values correlate to the visual significance of features in the image.
+When matrix *A* contains image information, the magnitude of the singular values correlate to the visual significance of features in the image.
 
-The sample reduces the storage size of the original image by returning the product of submatrices of , , and . The sizes of the submatrices derive from the index of the first low singular value. The code in this sample defines that value as `k`.
+The sample reduces the storage size of the original image by returning the product of submatrices of *U*, *Σ*, and *Vᵀ*. The sizes of the submatrices derive from the index of the first low singular value. The code in this sample defines that value as `k`.
 
-For example, if the diagonal elements of   are `[2000, 1000, 24]` and you define `k` as `2`, the app keeps `[2000, 1000]` and discards `24`. The following figure shows the matrix multiply function for this example, where the first two singular values contain significant values:
+For example, if the diagonal elements of *Σ*  are `[2000, 1000, 24]` and you define `k` as `2`, the app keeps `[2000, 1000]` and discards `24`. The following figure shows the matrix multiply function for this example, where the first two singular values contain significant values:
 
 ![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-two matrix U multiplied by two-times-two diagonal matrix sigma multiplied by two-times-five transposed matrix V.](https://docs-assets.developer.apple.com/published/ab74c9ce63bde8cd4277e2f56d50acdd/accelerate-figure-2.png)
 
@@ -173,7 +173,7 @@ let vt = Matrix(rowCount: k,
 
 ##### Define the Svd Options
 
-The sample requires fully populated  and  matrices, and defines the `JOBU` and `JOBVT` parameters that it passes to `sgesvdx_` as `V`. In order to specify that `sgesvdx_` returns a specified number of singular values, the sample defines the `RANGE` parameter as `I`.
+The sample requires fully populated *U* and *Vᵀ* matrices, and defines the `JOBU` and `JOBVT` parameters that it passes to `sgesvdx_` as `V`. In order to specify that `sgesvdx_` returns a specified number of singular values, the sample defines the `RANGE` parameter as `I`.
 
 ```swift
 var JOBU = Int8("V".utf8.first!)
@@ -237,7 +237,7 @@ var ldu = __LAPACK_int(u.m)
 var ldvt = __LAPACK_int(vt.m)
 ```
 
-The samples creates the `iwork` integer array with a count of 12 times the minimum dimension of matrix .
+The samples creates the `iwork` integer array with a count of 12 times the minimum dimension of matrix *A*.
 
 ```swift
 let iwork = UnsafeMutablePointer<__LAPACK_int>.allocate(capacity: 12 * Int(min(m, n)))
@@ -330,7 +330,7 @@ public static func multiply(a: Matrix,
 }
 ```
 
-The sample uses the matrix multiply function to recreate matrix  from the SVD factors.
+The sample uses the matrix multiply function to recreate matrix *A* from the SVD factors.
 
 ```swift
 /// The matrix that receives `u * sigma`.

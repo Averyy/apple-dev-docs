@@ -26,6 +26,26 @@ Create an instance and then add PDF configuration parameters to the [`documentIn
 
 The following code demonstrates how you can use a PDF renderer format object to specify the author of the PDFs created by a PDF renderer.
 
+**Swift**:
+
+```swift
+let format = UIGraphicsPDFRendererFormat()
+format.documentInfo = [ kCGPDFContextAuthor as String : "Kate Bell" ]
+let renderer =
+  UIGraphicsPDFRenderer(bounds: CGRect(x: 0, y: 0, width: 500, height: 300),
+                        format: format)
+```
+
+**Objective-C**:
+
+```objc
+UIGraphicsPDFRendererFormat *format = [[UIGraphicsPDFRendererFormat alloc] init];
+format.documentInfo = @{ (NSString *)kCGPDFContextAuthor : @"Kate Bell" };
+UIGraphicsPDFRenderer *renderer =
+    [[UIGraphicsPDFRenderer alloc] initWithBounds:CGRectMake(0, 0, 500, 300)
+                                           format:format];
+```
+
 ## Topics
 
 ### Getting the PDF document info

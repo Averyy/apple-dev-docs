@@ -24,7 +24,7 @@ When you set the [`backButtonDisplayMode`](uinavigationitem/backbuttondisplaymod
 
 - [`backButtonTitle`](uinavigationitem/backbuttontitle.md)
 - [`title`](uinavigationitem/title.md)
-- A generic title, such as 
+- A generic title, such as *Back*
 - No title
 
 The navigation item selects the most appropriate title for the Back button according to the available space.

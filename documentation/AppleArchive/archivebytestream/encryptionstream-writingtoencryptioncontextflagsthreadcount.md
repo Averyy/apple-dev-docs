@@ -34,10 +34,10 @@ The stream that the function returns only implements [`read(into:)`](archivebyte
 
 ## Parameters
 
-- `encryptedStream`: An input stream that provides encrypted and compressed data. The stream must implement   and  .
+- `encryptedStream`: An input stream that provides encrypted and compressed data. The stream must implement [`read(into:)`](archivebytestreamprotocol/read(into:).md) and [`read(into:atOffset:)`](archivebytestreamprotocol/read(into:atoffset:).md).
 - `context`: The encryption context that provides options and credentials.
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 
 ## See Also
 

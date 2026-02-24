@@ -34,14 +34,14 @@ To include [`CNContactNoteKey`](cncontactnotekey.md) in the array of keys in iOS
 ## Parameters
 
 - `predicate`: The predicate to match against.
-- `keys`: The properties to fetch in the returned   objects. Fetch only the properties that your app uses. You can combine contact keys and contact key descriptors.
+- `keys`: The properties to fetch in the returned [`CNContact`](cncontact.md) objects. Fetch only the properties that your app uses. You can combine contact keys and contact key descriptors.
 
 ## See Also
 
 - [func enumerateContacts(with: CNContactFetchRequest, usingBlock: (CNContact, UnsafeMutablePointer<ObjCBool>) -> Void) throws](cncontactstore/enumeratecontacts(with:usingblock:).md)
   Returns a Boolean value that indicates whether the enumeration of all contacts matching a contact fetch request executes successfully.
 - [func unifiedMeContactWithKeys(toFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedmecontactwithkeys(tofetch:).md)
-  Fetches the unified contact that’s the  card.
+  Fetches the unified contact that’s the *me* card.
 - [func unifiedContact(withIdentifier: String, keysToFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedcontact(withidentifier:keystofetch:).md)
   Fetches a unified contact for the specified contact identifier.
 

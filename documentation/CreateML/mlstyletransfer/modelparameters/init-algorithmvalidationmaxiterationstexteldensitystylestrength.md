@@ -23,7 +23,7 @@ init(algorithm: MLStyleTransfer.ModelParameters.ModelAlgorithmType = .cnn, valid
 - `algorithm`: The style transfer task’s training algorithm that prioritizes either speed or quality.
 - `validation`: The style transfer model’s validation dataset.
 - `maxIterations`: The largest number of training iterations the style transfer model can use.
-- `textelDensity`: The amount of detail the task applies from the input style image to the stylized image   output.
+- `textelDensity`: The amount of detail the task applies from the input style image to the stylized image output.
 - `styleStrength`: The amount of influence the style image has in the stylized image output.
 
 

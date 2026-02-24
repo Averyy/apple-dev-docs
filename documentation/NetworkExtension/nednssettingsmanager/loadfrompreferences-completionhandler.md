@@ -24,7 +24,7 @@ You must call this method at least once before calling [`saveToPreferences(compl
 
 ## Parameters
 
-- `completionHandler`: A block that takes an   object. This block runs on your application’s main thread after the load operation is complete. If an error occurs while loading the configuration, the block returns an   object.
+- `completionHandler`: A block that takes an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. This block runs on your application’s main thread after the load operation is complete. If an error occurs while loading the configuration, the block returns an `NSError` object.
 
 ## See Also
 

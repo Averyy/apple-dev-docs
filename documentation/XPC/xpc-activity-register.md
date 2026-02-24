@@ -22,7 +22,8 @@ Registers a new activity with the system. The criteria of the activity are descr
 
 - `identifier`: A unique identifier for the activity. Each application has its own namespace.
 - `criteria`: A dictionary of criteria for the activity.
-- `handler`: The handler block is never invoked reentrantly. It will be invoked on a dispatch queue with an appropriate priority to perform the activity.
+- `handler`: The handler block to be called when the activity changes state to one of the following states: - [`XPC_ACTIVITY_STATE_CHECK_IN`](xpc_activity_state_check_in.md) (optional)
+- [`XPC_ACTIVITY_STATE_RUN`](xpc_activity_state_run.md) The handler block is never invoked reentrantly. It will be invoked on a dispatch queue with an appropriate priority to perform the activity.
 
 ## See Also
 

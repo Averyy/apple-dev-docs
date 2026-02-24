@@ -30,9 +30,10 @@ The restored key or `NULL` on failure. In Objective-C, call [`CFRelease`](https:
 
 ## Parameters
 
-- `keyData`: Data representing the key. The format of the data depends on the type of key being created. See the description of the return value of the   function for details.
-- `attributes`: A dictionary containing attributes describing the key to be imported. This dictionary must include at least the following keys:
-- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `keyData`: Data representing the key. The format of the data depends on the type of key being created. See the description of the return value of the [`SecKeyCopyExternalRepresentation(_:_:)`](seckeycopyexternalrepresentation(_:_:).md) function for details.
+- `attributes`: A dictionary containing attributes describing the key to be imported. This dictionary must include at least the following keys: - [`kSecAttrKeyType`](ksecattrkeytype.md)
+- [`kSecAttrKeyClass`](ksecattrkeyclass.md)
+- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

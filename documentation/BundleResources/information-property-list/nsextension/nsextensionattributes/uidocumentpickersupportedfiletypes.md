@@ -9,6 +9,10 @@ The Uniform Type Identifiers that a document picker extension supports.
 - iOS 8.0+
 - iPadOS 8.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

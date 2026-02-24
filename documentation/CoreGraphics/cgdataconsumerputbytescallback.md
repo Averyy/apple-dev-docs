@@ -32,7 +32,7 @@ For information on how to associate your callback function with a data consumer,
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the pointer supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the pointer supplied to [`init(info:cbks:)`](cgdataconsumer/init(info:cbks:).md).
 - `buffer`: The buffer from which you copy the specified number of bytes.
 - `count`: The number of bytes to copy.
 

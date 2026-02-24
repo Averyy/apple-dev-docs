@@ -27,7 +27,7 @@ If your code produces data for the queue, use this method to install a handler s
 
 ## Parameters
 
-- `action`: The   object that contains the callback method to execute. The data queue retains your action object until you install a new handler or cancel the dispatch source. The system executes your callback on the dispatch queue you designated in your   object.
+- `action`: The [`OSAction`](osaction.md) object that contains the callback method to execute. The data queue retains your action object until you install a new handler or cancel the dispatch source. The system executes your callback on the dispatch queue you designated in your [`OSAction`](osaction.md) object.
 
 ## See Also
 

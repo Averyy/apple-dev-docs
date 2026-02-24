@@ -92,6 +92,7 @@ struct PKPaymentNetwork
   Creates a new payment network structure with the string you provide.
 ### Type Properties
 - [static let conecs: PKPaymentNetwork](pkpaymentnetwork/conecs.md)
+- [static let elCorteIngles: PKPaymentNetwork](pkpaymentnetwork/elcorteingles.md)
 - [static let himyan: PKPaymentNetwork](pkpaymentnetwork/himyan.md)
 - [static let jaywan: PKPaymentNetwork](pkpaymentnetwork/jaywan.md)
 - [static let myDebit: PKPaymentNetwork](pkpaymentnetwork/mydebit.md)

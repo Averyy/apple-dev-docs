@@ -6,7 +6,7 @@ Allow people to transfer browsing history, bookmarks, reading lists, and browser
 
 #### Overview
 
-When someone wants to transfer data from your browser to another browser on their device, your app can present a BrowserKit  that walks them through the process. In the sheet, they can choose a destination browser to which to export data. The sheet also supports importing data to your app; the person chooses the source browser from which to import data. In the sheet, the person also selects the type of data they want to transfer, including page visit history, bookmarks, reading list items, and browser extensions.
+When someone wants to transfer data from your browser to another browser on their device, your app can present a BrowserKit *browsing data transfer sheet* that walks them through the process. In the sheet, they can choose a destination browser to which to export data. The sheet also supports importing data to your app; the person chooses the source browser from which to import data. In the sheet, the person also selects the type of data they want to transfer, including page visit history, bookmarks, reading list items, and browser extensions.
 
 To display the framework-provided sheet, call [`requestExport(for:token:completionHandler:)`](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md) when the person requests exporting data from your app, and call [`requestImport(for:completionHandler:)`](bebrowserdataimportmanager/requestimport(for:completionhandler:).md) when the person requests importing data to your app.
 

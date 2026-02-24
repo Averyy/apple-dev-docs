@@ -30,7 +30,7 @@ Typically, you call this function before modifying the metadata information for 
 
 ## Parameters
 
-- `metadata`: The metadata information to copy. This function makes a deep copy of all   structures in this parameter, including the values for the tags.
+- `metadata`: The metadata information to copy. This function makes a deep copy of all [`CGImageMetadataTag`](cgimagemetadatatag.md) structures in this parameter, including the values for the tags.
 
 ## See Also
 

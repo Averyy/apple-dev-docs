@@ -9,6 +9,10 @@ An array of strings that represent the Bluetooth company identifiers for accesso
 - iOS 18.0+
 - iPadOS 18.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Each identifier is a two-byte UUID that represents a company identifier as registered on the [`Bluetooth SIG website`](https://developer.apple.comhttps://www.bluetooth.com/specifications/assigned-numbers/) and database.

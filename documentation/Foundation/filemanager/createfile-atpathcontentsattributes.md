@@ -38,7 +38,7 @@ If a file already exists at `path`, this method overwrites the contents of that 
 
 - `path`: The path for the new file.
 - `data`: A data object containing the contents of the new file.
-- `attr`: A dictionary containing the attributes to associate with the new file. You can use these attributes to set the owner and group numbers, file permissions, and modification date. For a list of keys, see  . If you specify   for  , the file is created with a set of default attributes.
+- `attr`: A dictionary containing the attributes to associate with the new file. You can use these attributes to set the owner and group numbers, file permissions, and modification date. For a list of keys, see [`FileAttributeKey`](fileattributekey.md). If you specify `nil` for `attributes`, the file is created with a set of default attributes.
 
 ## See Also
 

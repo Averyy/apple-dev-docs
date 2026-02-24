@@ -21,7 +21,7 @@ In macOS 10.15 and later, you cannot call this method programmatically to trigge
 
 ## Parameters
 
-- `sender`: The   object that contains the OK button.
+- `sender`: The [`NSSavePanel`](nssavepanel.md) object that contains the OK button.
 
 ## See Also
 

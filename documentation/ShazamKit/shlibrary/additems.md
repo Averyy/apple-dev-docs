@@ -28,7 +28,7 @@ This throws [`SHError.Code.mediaLibrarySyncFailed`](sherror/code/medialibrarysyn
 
 ## Parameters
 
-- `items`: An array containing the   objects to add to the library.
+- `items`: An array containing the [`SHMediaItem`](shmediaitem.md) objects to add to the library.
 
 ## See Also
 

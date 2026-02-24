@@ -26,8 +26,8 @@ A new white point structure.
 
 ## Parameters
 
-- `white_x`: The white point  _ _value according to the CIE 1931 color space.
-- `white_y`: The white point   value according to the CIE 1931 color space.
+- `white_x`: The white point `x`_ _value according to the CIE 1931 color space.
+- `white_y`: The white point `y` value according to the CIE 1931 color space.
 
 ## See Also
 

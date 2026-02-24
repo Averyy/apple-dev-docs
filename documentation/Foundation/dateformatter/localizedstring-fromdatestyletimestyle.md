@@ -39,8 +39,8 @@ NSString *result = [formatter stringForObjectValue:date];
 ## Parameters
 
 - `date`: A date.
-- `dstyle`: A format style for the date. For possible values, see  .
-- `tstyle`: A format style for the time. For possible values, see  .
+- `dstyle`: A format style for the date. For possible values, see [`DateFormatter.Style`](dateformatter/style.md).
+- `tstyle`: A format style for the time. For possible values, see [`DateFormatter.Style`](dateformatter/style.md).
 
 ## See Also
 

@@ -13,6 +13,31 @@ Retire users by client user IDs.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+{
+    "users": [
+        {
+            "clientUserId": "client-100"
+        },
+        {
+            "clientUserId": "client-101"
+        }
+    ]
+}
+```
+
+**Response**:
+
+```json
+{
+    "eventId": "dafdad60-4ef6-49b0-8150-64323f56d88d",
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+    "uId": "2049025000431439"
+}
+```
+
 ## Topics
 
 ### Request and Response
@@ -22,6 +47,10 @@ Retire users by client user IDs.
   The response that contains the event identifier.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
+
+## Endpoint
+
+`POST https://vpp.itunes.apple.com/mdm/v2/users/retire`
 
 ## Request Body
 

@@ -24,7 +24,7 @@ Call this function to ensure that the system buffers the first item in the queue
 
 ## Parameters
 
-- `completionHandler`: A block that the system call after it buffers the first item in the queue and it’s ready to play.
+- `completionHandler`: A block that the system call after it buffers the first item in the queue and it’s ready to play. - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 
 ---

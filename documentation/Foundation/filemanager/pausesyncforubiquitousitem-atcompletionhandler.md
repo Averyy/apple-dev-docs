@@ -31,7 +31,7 @@ Pausing sync is independent of the calling app’s lifecycle; sync doesn’t aut
 ## Parameters
 
 - `url`: The URL of the item for which to pause sync.
-- `completionHandler`: A closure or block that the framework calls when the pause action completes. It receives a single   parameter to indicate an error that prevented pausing; this value is   if the pause succeeded. In Swift, you can omit the completion handler and catch the thrown error instead.
+- `completionHandler`: A closure or block that the framework calls when the pause action completes. It receives a single [`NSError`](nserror.md) parameter to indicate an error that prevented pausing; this value is `nil` if the pause succeeded. In Swift, you can omit the completion handler and catch the thrown error instead.
 
 ## See Also
 

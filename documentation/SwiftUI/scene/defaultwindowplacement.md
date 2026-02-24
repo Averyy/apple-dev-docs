@@ -80,7 +80,8 @@ For more information on configuring how scenes behave with state restoration, se
 
 ## Parameters
 
-- `makePlacement`: A closure to generate the default window placement.
+- `makePlacement`: A closure to generate the default window placement. - **content**: A proxy for the contents of the window.
+- **context**: An instance of a [`WindowPlacementContext`](windowplacementcontext.md) that provides contextual information used to size and position windows.
 
 ## See Also
 

@@ -22,7 +22,7 @@ case failed(OSStatus)
 
 ## Parameters
 
-- `status`: An   value that indicates the cause of the failure.
+- `status`: An `OSStatus` value that indicates the cause of the failure.
 
 ## See Also
 

@@ -27,11 +27,11 @@ If you request capture in a processed format, the photo output calls this method
 ## Parameters
 
 - `output`: The photo output performing the capture.
-- `photoSampleBuffer`: If an error prevented successful capture, this parameter is  —see the   parameter for a description of the failure.
-- `previewPhotoSampleBuffer`: If you requested a thumbnail-sized version of the photo (with the   property of your photo settings object), a sample buffer containing the thumbnail photo in the requested format. If you did not request preview delivery, or if an error prevented capture, this parameter is  .
-- `resolvedSettings`: An object describing the settings used for this capture. Match this object’s   value to the   property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings.
-- `bracketSettings`: If you requested a bracketed capture of multiple images with a  , a bracketed still image settings object describing which image in the bracket this delegate call corresponds to. If you did not request bracketed capture, this parameter is  .
-- `error`: If an the capture process could not proceed successfully, an error object describing the failure; otherwise,  .
+- `photoSampleBuffer`: A sample buffer containing the captured photo, either as uncompressed pixel buffer or compressed image data (see the [`format`](avcapturephotosettings/format.md) property of your photo settings object), along with timing information and other metadata. If an error prevented successful capture, this parameter is `nil`—see the `error` parameter for a description of the failure.
+- `previewPhotoSampleBuffer`: If you requested a thumbnail-sized version of the photo (with the [`previewPhotoFormat`](avcapturephotosettings/previewphotoformat.md) property of your photo settings object), a sample buffer containing the thumbnail photo in the requested format. If you did not request preview delivery, or if an error prevented capture, this parameter is `nil`.
+- `resolvedSettings`: An object describing the settings used for this capture. Match this object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value to the [`uniqueID`](avcapturephotosettings/uniqueid.md) property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings.
+- `bracketSettings`: If you requested a bracketed capture of multiple images with a [`AVCapturePhotoBracketSettings`](avcapturephotobracketsettings.md), a bracketed still image settings object describing which image in the bracket this delegate call corresponds to. If you did not request bracketed capture, this parameter is `nil`.
+- `error`: If an the capture process could not proceed successfully, an error object describing the failure; otherwise, `nil`.
 
 ## See Also
 

@@ -26,9 +26,9 @@ func range(of unit: NSCalendar.Unit, start datep: AutoreleasingUnsafeMutablePoin
 
 ## Parameters
 
-- `unit`: A calendar unit (see   for possible values).
-- `datep`: Upon return, contains the starting time of the calendar unit   that contains the date 
-- `tip`: Upon return, contains the duration of the calendar unit   that contains the date 
+- `unit`: A calendar unit (see [`NSCalendar.Unit`](nscalendar/unit.md) for possible values).
+- `datep`: Upon return, contains the starting time of the calendar unit `unit` that contains the date `date`
+- `tip`: Upon return, contains the duration of the calendar unit `unit` that contains the date `date`
 - `date`: A date.
 
 ## See Also

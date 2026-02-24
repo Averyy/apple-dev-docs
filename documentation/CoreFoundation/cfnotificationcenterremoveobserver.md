@@ -27,9 +27,9 @@ If both `name` and `object` are `NULL`, this function unregisters `observer` fro
 ## Parameters
 
 - `center`: The notification center to modify.
-- `observer`: The observer. This value must not be  .
-- `name`: The name of the notification to stop observing. If  ,   stops receiving callbacks for all notifications posted by  .
-- `object`: If   is a Darwin notification center, this value is ignored.
+- `observer`: The observer. This value must not be `NULL`.
+- `name`: The name of the notification to stop observing. If `NULL`, `observer` stops receiving callbacks for all notifications posted by `object`.
+- `object`: The object to stop observing. For distributed notifications, `object` must be a CFString object. If `NULL`, `observer` stops receiving callbacks for all objects posting notifications named `name`. If `center` is a Darwin notification center, this value is ignored.
 
 ## See Also
 

@@ -27,7 +27,7 @@ An array of [`CTFontDescriptor`](ctfontdescriptor.md) objects that match the col
 ## Parameters
 
 - `collection`: The font collection reference.
-- `options`: The options dictionary. Passing in   returns the same results as calling  , which uses the options specified during the collection’s creation.
+- `options`: The options dictionary. Passing in `NULL` returns the same results as calling [`CTFontCollectionCreateMatchingFontDescriptors(_:)`](ctfontcollectioncreatematchingfontdescriptors(_:).md), which uses the options specified during the collection’s creation.
 
 ## See Also
 

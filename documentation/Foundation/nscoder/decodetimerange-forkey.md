@@ -26,7 +26,7 @@ The `CMTimeRange` structure associated with `key` in the archive.
 
 ## Parameters
 
-- `key`: The key for a   structure encoded in the receiver.
+- `key`: The key for a `CMTimeRange` structure encoded in the receiver.
 
 ## See Also
 

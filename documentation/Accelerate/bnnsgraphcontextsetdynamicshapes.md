@@ -63,9 +63,9 @@ On return, the output shape contains the correct size for the input shape, and a
 ## Parameters
 
 - `context`: The graph context.
-- `function`: The function. Specify as   if the graph only contains one function.
-- `shapes_count`: The number of elements in the   array.
-- `shapes`: On output, the function sets output shapes with a nonzero rank to the upper bounds of the expected output shape. If the function can’t deduce the output shape because it depends on the input data values, the value of   is zero.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
+- `shapes_count`: The number of elements in the `shapes` array.
+- `shapes`: An array of input and output shapes in the same order as you pass to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](bnnsgraphcontextexecute(_:_:_:_:_:_:).md). On input, this function reads input shapes with a nonzero rank, and uses the constant or default value from the source model for input shapes with a zero rank. The function generates an error for shapes with a nonzero value that doesn’t match the source model. On output, the function sets output shapes with a nonzero rank to the upper bounds of the expected output shape. If the function can’t deduce the output shape because it depends on the input data values, the value of `shapes[idx].size[d]` is zero.
 
 ## See Also
 

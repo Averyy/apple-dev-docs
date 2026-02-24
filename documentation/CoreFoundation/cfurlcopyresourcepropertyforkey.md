@@ -41,7 +41,7 @@ If this function returns [`false`](https://developer.apple.com/documentation/Swi
 - `url`: The URL.
 - `key`: The property value key for the requested value.
 - `propertyValueTypeRefPtr`: The output pointer that is populated with the result.
-- `error`: The error that occurred if the property’s value could not be obtained. This parameter is optional. If you are not interested in receiving error information, you can pass  .
+- `error`: The error that occurred if the property’s value could not be obtained. This parameter is optional. If you are not interested in receiving error information, you can pass `NULL`.
 
 ## See Also
 

@@ -28,7 +28,8 @@ When this method is called, you create a new array of [`PKPaymentSummaryItem`](p
 
 - `controller`: The payment authorization view controller.
 - `shippingMethod`: The selected shipping method. This parameter contains one of the shipping methods included in the payment request.
-- `completion`: This block takes the following parameters:
+- `completion`: The completion block to call with the updated payment summary items. This block takes the following parameters: - **`status`**: The authorization status for the payment. For values, see [`PKPaymentAuthorizationStatus`](pkpaymentauthorizationstatus.md).
+- **`summaryItems`**: An array of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) objects that replaces the summary items for the current payment request.
 
 ## See Also
 

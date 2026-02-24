@@ -22,7 +22,7 @@ init(values: [ComponentType], size: vImage.Size)
 
 ## Parameters
 
-- `values`: The kernel weights or structuring element values that must contain   elements.
+- `values`: The kernel weights or structuring element values that must contain `height * width` elements.
 - `size`: The size of the kernel. The width and height of the kernel that must be a positive, odd numbers.
 
 ## See Also

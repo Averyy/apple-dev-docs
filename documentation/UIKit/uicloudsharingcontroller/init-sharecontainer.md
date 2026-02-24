@@ -46,8 +46,8 @@ CKContainer *container = [CKContainer defaultContainer];
 
 ## Parameters
 
-- `share`: An instance of   that was previously saved.
-- `container`: An instance of   that contains the record that is shared.
+- `share`: An instance of [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) that was previously saved.
+- `container`: An instance of [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) that contains the record that is shared.
 
 ## See Also
 

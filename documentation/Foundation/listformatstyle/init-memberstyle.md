@@ -33,7 +33,7 @@ The following example uses a `FloatingPointFormatStyle.Descriptive` member style
 
 ## Parameters
 
-- `memberStyle`: The   applied to elements of the  .
+- `memberStyle`: The [`FormatStyle`](formatstyle.md) applied to elements of the [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence).
 
 
 ---

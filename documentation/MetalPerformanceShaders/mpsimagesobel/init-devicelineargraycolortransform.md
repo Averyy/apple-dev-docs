@@ -26,7 +26,7 @@ An initialized Sobel filter object.
 ## Parameters
 
 - `device`: The Metal device the filter will run on.
-- `transform`: 
+- `transform`: The color transform to use. This matrix is an array of 3 floats that describes the RGB-to-grayscale color transform: `Luminance = transform[0] * pixel.x + transform[1] * pixel.y + transform[2] * pixel.z`
 
 ## See Also
 

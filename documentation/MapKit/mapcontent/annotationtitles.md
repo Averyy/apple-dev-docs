@@ -27,7 +27,7 @@ Returns [`MapContent`](mapcontent.md) whose titles have the visibility setting y
 
 ## Parameters
 
-- `visibility`: One of the   settings. The default is   visibility, that results in the title always being visible.
+- `visibility`: One of the [`Visibility`](https://developer.apple.com/documentation/SwiftUI/Visibility) settings. The default is [`Visibility.automatic`](https://developer.apple.com/documentation/SwiftUI/Visibility/automatic) visibility, that results in the title always being visible.
 
 ## See Also
 

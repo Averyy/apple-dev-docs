@@ -33,7 +33,7 @@ MKMapView.CameraZoomRange(
 
 ## Parameters
 
-- `minDistance`: To increase how far in the user can zoom, use a shorter distance value. To decrease how far in the user can zoom, use a larger distance value.
+- `minDistance`: The minimum distance the user can zoom in on a map based on its center point, measured in meters. To increase how far in the user can zoom, use a shorter distance value. To decrease how far in the user can zoom, use a larger distance value.
 
 ## See Also
 

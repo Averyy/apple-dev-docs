@@ -30,9 +30,9 @@ You call this function to retrieve sample buffers at the end of a multipass comp
 ## Parameters
 
 - `silo`: The frame silo object.
-- `timeRange`: The decode time range of the sample buffers to retrieve. Pass   to retrieve all sample buffers from the 
+- `timeRange`: The decode time range of the sample buffers to retrieve. Pass `kCMTimeRangeInvalid` to retrieve all sample buffers from the `VTFrameSilo.`
 - `refcon`: A reference value.
-- `callback`: A function to be called, in decode order, with each sample buffer that was added. To abort iteration early, return a nonzero status. The   object may write sample buffers and data to the backing file between addition and retrieval;  do not expect to get identical object pointers back.
+- `callback`: A function to be called, in decode order, with each sample buffer that was added. To abort iteration early, return a nonzero status. The `VTFrameSilo` object may write sample buffers and data to the backing file between addition and retrieval;  do not expect to get identical object pointers back.
 
 ## See Also
 

@@ -30,7 +30,7 @@ You can access the current parameter values for an audio queue at any time with 
 ## Parameters
 
 - `inAQ`: The audio queue that you want to get a parameter value from.
-- `inParamID`: The ID of the parameter whose value you want to get. In OS X v10.5, audio queues have one parameter available:  , which controls playback gain.  See 
+- `inParamID`: The ID of the parameter whose value you want to get. In OS X v10.5, audio queues have one parameter available: `kAudioQueueParam_Volume`, which controls playback gain.  See [`Audio Queue Parameters`](1552626-audio-queue-parameters.md)
 - `outValue`: On output, points to the current value of the specified parameter.
 
 ## See Also

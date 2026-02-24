@@ -23,7 +23,7 @@ func setSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 ## Parameters
 
 - `sampler`: A sampler the method encodes.
-- `index`: The index of a sampler within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of a sampler within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 ## See Also
 

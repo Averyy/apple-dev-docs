@@ -8,7 +8,7 @@ Add the ability for players to exchange game data and send messages while waitin
 
 You can increase engagement in turn-based games by letting participants communicate and exchange data while they wait for the current participant to take their turn.
 
-To implement this feature, provide an interface in your game where participants can communicate — for example, exchange items in the game. Then initiate an exchange request from the user of your game instance, called the , to one or more recipients. GameKit handles the requests between participants and the status of the exchange object as participants reply. You implement protocol methods to accept exchanges, display results, and save completed exchanges. When you save completed exchanges, GameKit notifies all other participants.
+To implement this feature, provide an interface in your game where participants can communicate — for example, exchange items in the game. Then initiate an exchange request from the user of your game instance, called the *local player*, to one or more recipients. GameKit handles the requests between participants and the status of the exchange object as participants reply. You implement protocol methods to accept exchanges, display results, and save completed exchanges. When you save completed exchanges, GameKit notifies all other participants.
 
 To receive the protocol messages, register as a listener of the local player, and conform to the [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) protocol. For more information, see [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
 

@@ -30,9 +30,9 @@ A property list object corresponding to the representation in `data`. If data is
 
 ## Parameters
 
-- `stream`: An   object. The stream should be open and configured for reading.
-- `opt`: The options used to create the property list. For possible values, see  .
-- `format`: Upon return, contains the format that the property list was stored in. Pass   if you do not need to know the format.
+- `stream`: An `NSStream` object. The stream should be open and configured for reading.
+- `opt`: The options used to create the property list. For possible values, see [`PropertyListSerialization.MutabilityOptions`](propertylistserialization/mutabilityoptions.md).
+- `format`: Upon return, contains the format that the property list was stored in. Pass `nil` if you do not need to know the format.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The object associated with the key `key`. Returns `nil` if `key` does not exist,
 
 ## Parameters
 
-- `key`: A key in the archive within the current decoding scope.   must not be  .
+- `key`: A key in the archive within the current decoding scope. `key` must not be `nil`.
 
 ## See Also
 

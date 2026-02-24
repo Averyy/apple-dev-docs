@@ -10,6 +10,10 @@ A Boolean value indicating that the app generally supports indirect input mechan
 - iPadOS 13.4+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If the value of this key is `YES`:
@@ -26,7 +30,7 @@ If the value of this key is `NO`:
 - When pinching or rotating using an indirect touch surface, UIKit creates touches a fixed distance apart that simulate the gesture on the indirect touch surface.
 - Because these are normal [`UITouch`](https://developer.apple.com/documentation/UIKit/UITouch) events, they may incidentally activate other gesture recognizers
 
-If you  include this key in your app’s `Info.plist`:
+If you *don’t* include this key in your app’s `Info.plist`:
 
 - In iOS 17 and later, the system defaults to supporting indirect input events, meaning it treats your app the same as if you specify `YES`.
 - In versions of iOS earlier than iOS 17, the system defaults to not supporting indirect input events, meaning it treats your app the same as if you specify `NO`.

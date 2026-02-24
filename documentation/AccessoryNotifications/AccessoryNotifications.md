@@ -64,8 +64,6 @@ Your accessory receives the encrypted notification data and implements [`HPKE (R
 ### Errors
 - [enum AccessoryError](accessoryerror.md)
   Errors the Accessory Notifications framework can throw.
-### Deprecations
-- [typealias Decision](decision.md)
 
 
 ---

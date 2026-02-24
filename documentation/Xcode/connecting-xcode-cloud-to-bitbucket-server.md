@@ -8,7 +8,7 @@ Allow Xcode Cloud to access your Bitbucket Server repository.
 
 When you first configure your project or workspace to use Xcode Cloud, you need to allow Xcode Cloud to access your Git repository. It uses this access to automatically build and test your code when you make changes to the codebase.
 
-The person who first configures a project or workspace to Xcode Cloud must have the  permission for its repository on Bitbucket Server. If you don’t have this permission, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
+The person who first configures a project or workspace to Xcode Cloud must have the *administrator* permission for its repository on Bitbucket Server. If you don’t have this permission, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
 
 To allow Xcode Cloud to access your repository on [`Bitbucket Server`](https://developer.apple.comhttps://bitbucket.org/product/enterprise):
 
@@ -19,7 +19,7 @@ To allow Xcode Cloud to access your repository on [`Bitbucket Server`](https://d
 5. Click “your Bitbucket Server host”. This opens your Bitbucket Server instance and displays your account’s “Personal access tokens” section. Don’t close the tab or window that displays the Xcode Cloud webpage.
 6. Click “Create a token” to start the creation of a personal access token that Xcode Cloud uses to access your repositories.
 7. Enter a name for the access token that’s easy to recognize; for example, `Xcode Cloud`.
-8. Configure the token to have the  permission for projects and the  permission for repositories.
+8. Configure the token to have the *Read* permission for projects and the *Admin* permission for repositories.
 9. Create the token and make sure to copy and store it in a safe place before continuing. Bitbucket Server won’t show this information again. For example, you can create a secure note in Keychain Access and add the token to it.
 10. Switch back to the browser tab or window that displays the App Store Connect website where you started connecting Xcode Cloud to Bitbucket Server.
 11. Paste your personal access token into the corresponding field.

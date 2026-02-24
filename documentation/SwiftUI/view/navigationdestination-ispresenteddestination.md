@@ -52,7 +52,7 @@ Do not put a navigation destination modifier inside a “lazy” container, like
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that indicates whether    is currently presented.
+- `isPresented`: A binding to a Boolean value that indicates whether `destination` is currently presented.
 - `destination`: A view to present.
 
 ## See Also

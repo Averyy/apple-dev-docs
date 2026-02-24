@@ -22,7 +22,7 @@ static func result<Intent>(actionButtonIntent: Intent, activityIdentifier: Strin
 
 ## Parameters
 
-- `actionButtonIntent`: The   used perform next
+- `actionButtonIntent`: The `AppIntent` used perform next
 
 
 ---

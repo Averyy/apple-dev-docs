@@ -39,8 +39,8 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 - `inID`: The identifier for the property.
 - `inScope`: The audio unit scope for the property.
 - `inElement`: The audio unit element for the property.
-- `outData`: On successful output, the current value for the specified audio unit property. Set this parameter to   when calling this function if you only want to determine how much memory to allocate for a variable size property.
-- `ioDataSize`: On input, the expected size of the property value, as pointed to by the   parameter. On output, the size of the data that was returned.
+- `outData`: On successful output, the current value for the specified audio unit property. Set this parameter to `NULL` when calling this function if you only want to determine how much memory to allocate for a variable size property.
+- `ioDataSize`: On input, the expected size of the property value, as pointed to by the `outData` parameter. On output, the size of the data that was returned.
 
 ## See Also
 

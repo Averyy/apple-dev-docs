@@ -20,7 +20,7 @@ Highlighting makes the button appear recessed, displays its alternate title or i
 
 ## Parameters
 
-- `flag`:   to highlight the button;   to unhighlight the button.  If the current state of the button matches  , no action is taken.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to highlight the button; [`false`](https://developer.apple.com/documentation/Swift/false) to unhighlight the button.  If the current state of the button matches `flag`, no action is taken.
 
 ## See Also
 

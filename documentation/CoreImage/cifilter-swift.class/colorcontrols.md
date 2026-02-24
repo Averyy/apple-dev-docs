@@ -29,6 +29,11 @@ This method applies the color controls filter to an image. The effect calculates
 
 The color controls filter uses the following properties:
 
+- **`brightness`**: A `float` representing the amount of brightness applied as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`contrast`**: A `float` `r`epresenting the amount of contrast applied as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`saturation`**: A float representing the amount of saturation applied as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in a darker image:
 
 ```swift

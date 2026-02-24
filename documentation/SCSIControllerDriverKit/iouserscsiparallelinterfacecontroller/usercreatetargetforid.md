@@ -67,7 +67,7 @@ This implementation ensures [`UserStartController`](iouserscsiparallelinterfacec
 ## Parameters
 
 - `targetID`: The ID of the target to create.
-- `targetDict`: An   containing all of the target properties.
+- `targetDict`: An [`OSDictionary`](https://developer.apple.com/documentation/DriverKit/OSDictionary) containing all of the target properties.
 
 ## See Also
 

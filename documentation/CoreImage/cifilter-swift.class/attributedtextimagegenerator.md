@@ -29,6 +29,10 @@ This method generates an attributed-text image. The effect takes the input strin
 
 The attributed-text image generator filter uses the following properties:
 
+- **`text`**: An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString).
+- **`scaleFactor`**: A `float` representing the scale of the font to use for the generated text.
+- **padding**: A `float` representing the value for an additional number of pixels to pad around the text’s bounding box.
+
 The following code creates a filter that generates an attributed-text image:
 
 ```swift

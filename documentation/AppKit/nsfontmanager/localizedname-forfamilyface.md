@@ -24,8 +24,8 @@ The user’s locale is determined from the user’s `NSLanguages` default settin
 
 ## Parameters
 
-- `family`: The font family, for example,  .
-- `faceKey`: The font face, for example,  .
+- `family`: The font family, for example, `@"Times"`.
+- `faceKey`: The font face, for example, `@"Roman"`.
 
 ## See Also
 

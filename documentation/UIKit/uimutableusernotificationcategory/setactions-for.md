@@ -22,8 +22,8 @@ Use this method to set or change the actions associated with a specific context.
 
 ## Parameters
 
-- `actions`: An array of   objects representing the actions to display for the given context. When displaying the notification to the user, the system displays the action buttons using the same order as the items in this array. If you specify   or an empty array, this method removes the actions for the specified context.
-- `context`: The context in which the alert is displayed. For a list of possible values, see  .
+- `actions`: An array of [`UIUserNotificationAction`](uiusernotificationaction.md) objects representing the actions to display for the given context. When displaying the notification to the user, the system displays the action buttons using the same order as the items in this array. If you specify `nil` or an empty array, this method removes the actions for the specified context.
+- `context`: The context in which the alert is displayed. For a list of possible values, see [`UIUserNotificationActionContext`](uiusernotificationactioncontext.md).
 
 ## See Also
 

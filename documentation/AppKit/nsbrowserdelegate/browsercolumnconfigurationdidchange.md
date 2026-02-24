@@ -21,7 +21,7 @@ This method applies only to browsers with resize type [`NSBrowser.ColumnResizing
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`columnConfigurationDidChangeNotification`](nsbrowser/columnconfigurationdidchangenotification.md).
 
 ## See Also
 

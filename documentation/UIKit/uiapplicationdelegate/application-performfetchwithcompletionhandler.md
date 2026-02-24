@@ -30,7 +30,7 @@ When this method is called, your app has up to 30 seconds of wall-clock time to 
 ## Parameters
 
 - `application`: Your singleton app object.
-- `completionHandler`: The block to execute when the download operation is complete. When calling this block, pass in the fetch result value that best describes the results of your download operation. You must call this handler and should do so as soon as possible. For a list of possible values, see the   type.
+- `completionHandler`: The block to execute when the download operation is complete. When calling this block, pass in the fetch result value that best describes the results of your download operation. You must call this handler and should do so as soon as possible. For a list of possible values, see the [`UIBackgroundFetchResult`](uibackgroundfetchresult.md) type.
 
 ## See Also
 

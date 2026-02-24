@@ -14,6 +14,10 @@ If another AR configuration fulfills your requirements with a more concise featu
 
 Some configurations support subfeatures that relate to a session’s frame. Enable these features by setting the following flags in the configuration’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md):
 
+- **[`bodyDetection`](arconfiguration/framesemantics-swift.struct/bodydetection.md)**: Enables 2D human body tracking.
+- **[`personSegmentation`](arconfiguration/framesemantics-swift.struct/personsegmentation.md)**: Enables people occlusion.
+- **[`personSegmentationWithDepth`](arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md)**: Enables people occlusion based on whether the people in the camera feed are closer to the camera than the virtual content.
+
 Use [`supportsFrameSemantics(_:)`](arconfiguration/supportsframesemantics(_:).md) to verify whether the iOS device supports the [`ARConfiguration.FrameSemantics`](arconfiguration/framesemantics-swift.struct.md) you desire before setting [`frameSemantics`](arconfiguration/framesemantics-swift.property.md).
 
 > ❗ **Important**:  To maximize device responsiveness, refrain from turning on people occlusion for single-user experiences when you don’t expect people in the scene.

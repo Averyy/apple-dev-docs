@@ -25,6 +25,11 @@ This block is called by the base class’s AURenderBlock block before and after 
 
 The block takes the following parameters:
 
+- **actionFlags**: The pointer to the action flags.
+- **timestamp**: The HAL time at which the input data will be rendered. If there is a sample rate conversion or time compression/expansion downstream, the sample time will not have a defined correlation with the `AudioDevice` sample time.
+- **frameCount**: The number of sample frames to render.
+- **outputBusNumber**: The index of the output bus to render.
+
 ## See Also
 
 - [struct ScheduledAudioFileRegion](scheduledaudiofileregion.md)

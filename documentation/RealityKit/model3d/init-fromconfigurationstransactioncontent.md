@@ -36,9 +36,9 @@ To add transitions when you change the name, apply an identifier to the [`Model3
 ## Parameters
 
 - `catalog`: A collection of alternative representations for an entity.
-- `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity,   mapping the ID of a configuration set to the ID of a configuration within that set.
+- `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity, mapping the ID of a configuration set to the ID of a configuration within that set.
 - `transaction`: The transaction to use when the phase changes.
-- `content`: A closure that takes the load phase as an input, and   returns the view to display for the specified phase.
+- `content`: A closure that takes the load phase as an input, and returns the view to display for the specified phase.
 
 
 ---

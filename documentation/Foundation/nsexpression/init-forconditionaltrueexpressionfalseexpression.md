@@ -23,8 +23,8 @@ init(forConditional predicate: NSPredicate, trueExpression: NSExpression, falseE
 ## Parameters
 
 - `predicate`: The predicate for determining whether the element belongs in the result collection.
-- `trueExpression`: The expression for evaluation when the predicate evaluates to  .
-- `falseExpression`: The expression for evaluation when the predicate evaluates to  .
+- `trueExpression`: The expression for evaluation when the predicate evaluates to `true`.
+- `falseExpression`: The expression for evaluation when the predicate evaluates to `false`.
 
 
 ---

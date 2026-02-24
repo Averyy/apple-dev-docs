@@ -23,8 +23,8 @@ In some cases, the system may override a call to this method. For example, a For
 
 ## Parameters
 
-- `pattern`: A pattern of feedback to be provided to the user. For possible values, see  .
-- `performanceTime`: The time when the feedback should be provided to the user. For possible values, see  .
+- `pattern`: A pattern of feedback to be provided to the user. For possible values, see [`NSHapticFeedbackManager.FeedbackPattern`](nshapticfeedbackmanager/feedbackpattern.md).
+- `performanceTime`: The time when the feedback should be provided to the user. For possible values, see [`NSHapticFeedbackManager.PerformanceTime`](nshapticfeedbackmanager/performancetime.md).
 
 ## See Also
 

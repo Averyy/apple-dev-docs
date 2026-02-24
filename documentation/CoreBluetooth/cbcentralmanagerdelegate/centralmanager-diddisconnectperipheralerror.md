@@ -30,7 +30,7 @@ All services, characteristics, and characteristic descriptors a peripheral becom
 
 - `central`: The central manager that provides this information.
 - `peripheral`: The now-disconnected peripheral.
-- `error`: The cause of the failure, or   if no error occurred.
+- `error`: The cause of the failure, or `nil` if no error occurred.
 
 ## See Also
 

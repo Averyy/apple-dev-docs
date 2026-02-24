@@ -9,6 +9,10 @@ The key that defines the traffic category entitlement to enable Cellular Network
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To enable Cellular Network Slicing, you need to set the appropriate entitlements and properties.

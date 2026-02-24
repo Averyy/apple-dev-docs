@@ -26,9 +26,9 @@ A new string that represents the given number or value formatted by `formatter`.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `formatter`: The number formatter to use.
-- `numberType`: The type of value that   references. Valid values are listed in  .
+- `numberType`: The type of value that `valuePtr` references. Valid values are listed in [`CFNumberType`](cfnumbertype.md).
 - `valuePtr`: A pointer to the value to be converted.
 
 ## See Also

@@ -21,7 +21,7 @@ func addCollection(_ collectionName: String, options collectionOptions: NSFontCo
 ## Parameters
 
 - `collectionName`: The collection to add.
-- `collectionOptions`: The option described in  . This option is not yet implemented.
+- `collectionOptions`: The option described in `Font Collection Mask`. This option is not yet implemented.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func month(_ format: Date.FormatStyle.Symbol.Month = .abbreviated) -> Date.Forma
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

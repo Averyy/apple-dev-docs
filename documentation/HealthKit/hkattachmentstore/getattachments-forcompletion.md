@@ -38,7 +38,8 @@ do {
 ## Parameters
 
 - `object`: An object from the HealthKit store.
-- `completion`: A completion handler that the system calls to return the attachment. This handler takes the following parameters:
+- `completion`: A completion handler that the system calls to return the attachment. This handler takes the following parameters: - **attachments**: An array of attachments. If an error occurs, the system sets this parameter to `nil`.
+- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 ## See Also
 

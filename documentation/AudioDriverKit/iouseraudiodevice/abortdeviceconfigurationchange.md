@@ -24,8 +24,8 @@ The host calls this method to tell the driver not to perform a configuration cha
 
 ## Parameters
 
-- `in_change_action`: A   indicating the action that the device object takes. This is the same value previously passed to  . This value is purely for the clock device’s usage; the host doesn’t look at this value.
-- `in_change_info`: A pointer to an   about the configuration change. This is the same value previously passed to  . This value is purely for the clock device’s usage; the host doesn’t look at this value. Retain and release this object reference as needed.
+- `in_change_action`: A `uint64_t` indicating the action that the device object takes. This is the same value previously passed to `RequestDeviceConfigurationChange`. This value is purely for the clock device’s usage; the host doesn’t look at this value.
+- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject) about the configuration change. This is the same value previously passed to `RequestDeviceConfigurationChange`. This value is purely for the clock device’s usage; the host doesn’t look at this value. Retain and release this object reference as needed.
 
 ## See Also
 

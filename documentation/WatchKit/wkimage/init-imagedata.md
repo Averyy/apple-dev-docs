@@ -24,7 +24,7 @@ Use this method when you already have raw PNG or JPG data and want to use it for
 
 ## Parameters
 
-- `imageData`: A data object containing the image data in its native format. This parameter must not be  .
+- `imageData`: A data object containing the image data in its native format. This parameter must not be `nil`.
 
 ## See Also
 

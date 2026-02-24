@@ -28,6 +28,11 @@ If Low Power Mode is active, take additional steps to help the system conserve e
 
 In your app, register for [`thermalStateDidChangeNotification`](https://developer.apple.com/documentation/Foundation/ProcessInfo/thermalStateDidChangeNotification) to discover when the device’s thermal state changes. When you receive the notification, adjust your app’s behavior according to the value of [`thermalState`](https://developer.apple.com/documentation/Foundation/ProcessInfo/thermalState-swift.property):
 
+- **[`ProcessInfo.ThermalState.nominal`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ThermalState-swift.enum/nominal)**: Enable all of your app’s functionality.
+- **[`ProcessInfo.ThermalState.fair`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ThermalState-swift.enum/fair)**: Defer work for which a person doesn’t immediately need the results; for example, background video processing.
+- **[`ProcessInfo.ThermalState.serious`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ThermalState-swift.enum/serious)**: Reduce networking and location activity, screen updates, and animations.
+- **[`ProcessInfo.ThermalState.critical`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ThermalState-swift.enum/critical)**: To prevent the device becoming hotter and potentially unusable, reduce or stop all work that your app is doing. Minimize computation, and stop or significantly reduce use of the camera, Bluetooth, location, and other power-intensive subsystems.
+
 ## See Also
 
 - [Scheduling CPU work efficiently](scheduling-cpu-work-efficiently.md)

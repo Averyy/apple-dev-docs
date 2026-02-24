@@ -25,7 +25,7 @@ This function is typically used to obtain the preferred encryption certificate f
 ## Parameters
 
 - `name`: A string containing an email address (RFC 822) or other name for which a preferred certificate is requested.
-- `keyUsage`: An array containing a list of usage attributes ( , for example), or   if you do not want to request a certificate based on a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
+- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](ksecattrcanencrypt.md), for example), or `NULL` if you do not want to request a certificate based on a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
 
 
 ---

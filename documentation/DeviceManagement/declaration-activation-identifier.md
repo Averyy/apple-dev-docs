@@ -16,6 +16,14 @@ The endpoint for fetching an activation declaration.
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
+## Parameters
+
+- `identifier` (string) *(required)*: The identifier of the activation declaration to fetch.
+
 ## See Also
 
 - [declaration/asset/{identifier}](declaration-asset-_identifier_.md)

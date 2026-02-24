@@ -27,7 +27,7 @@ All values in `theArray` with indices larger than `idx` have their indices decre
 ## Parameters
 
 - `theArray`: The array from which the value is removed.
-- `idx`: The index of the value to remove. The index must be in the range 0 to N-1 inclusive, where N is the count of   before the operation.
+- `idx`: The index of the value to remove. The index must be in the range 0 to N-1 inclusive, where N is the count of `theArray` before the operation.
 
 ## See Also
 

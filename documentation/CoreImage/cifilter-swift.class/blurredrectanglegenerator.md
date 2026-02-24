@@ -29,6 +29,10 @@ Creates a [`CIImage`](ciimage.md) containing a blurred rectangle. The resulting 
 
 The blurred rectangle filter uses the following properties:
 
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that defines the extent of the effect.
+- **`color`**: A [`CIColor`](cicolor.md) specifying the color of the rectangle.
+- **`sigma`**: A `float` specifying the sigma for the Gaussian blur.
+
 The following code creates a filter that generates a blurred red rectangle with a width of 200 x 100 pixels.
 
 ```swift

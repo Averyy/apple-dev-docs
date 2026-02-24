@@ -90,10 +90,10 @@ On return, the destination buffer contains a grayscale representation of the red
 - `dests`: A pointer to an array of vImage buffers. Each buffer represents a destination plane.
 - `src_planes`: The number of source planes.
 - `dest_planes`: The number of destination planes.
-- `matrix`: An array of values that contains the   rows multiplied by   columns 2D matrix elements.
-- `pre_bias`: An array of bias values for each source plane. The function adds the corresponding bias value to each source value before the matrix multiplication step. Pass   to specify zero prebias.
-- `post_bias`: An array of bias values for each source plane. The function adds the corresponding bias value to each destination value after the matrix multiplication step. Pass   to specify zero postbias.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `matrix`: An array of values that contains the `src_planes` rows multiplied by `dest_planes` columns 2D matrix elements.
+- `pre_bias`: An array of bias values for each source plane. The function adds the corresponding bias value to each source value before the matrix multiplication step. Pass `nil` to specify zero prebias.
+- `post_bias`: An array of bias values for each source plane. The function adds the corresponding bias value to each destination value after the matrix multiplication step. Pass `nil` to specify zero postbias.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

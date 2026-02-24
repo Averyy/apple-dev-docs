@@ -24,7 +24,7 @@ This method determines which key paths in the entity description can use the sam
 
 ## Parameters
 
-- `keyPaths`: An array of attribute key paths originating at  . The key paths may cross relationships but must terminate in attributes.
+- `keyPaths`: An array of attribute key paths originating at `entityDescription`. The key paths may cross relationships but must terminate in attributes.
 - `entityDescription`: A Core Data entity description.
 
 

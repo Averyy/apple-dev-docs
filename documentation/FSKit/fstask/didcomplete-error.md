@@ -16,7 +16,7 @@ func didComplete(error: (any Error)?)
 
 ## Parameters
 
-- `error`:   if the task completed successfully; otherwise, an error that caused the task to fail.
+- `error`: `nil` if the task completed successfully; otherwise, an error that caused the task to fail.
 
 
 ---

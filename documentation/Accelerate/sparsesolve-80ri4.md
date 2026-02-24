@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the equation  for matrices of single-precision values, treating  as an operator and using the specified iterative method.
+Solves the equation *AX = B* for matrices of single-precision values, treating *A* as an operator and using the specified iterative method.
 
 **Availability**:
 - iOS 11.0+
@@ -26,7 +26,7 @@ A [`SparseIterativeStatus_t`](sparseiterativestatus_t.md) enumeration that repre
 
 #### Discussion
 
-Use this function to solve a system of linear equations using a factored coefficient matrix. Preconditioning the coefficient matrix can reduce the number of iterations the function requires to converge the system. In cases where the matrix  isn’t explicitly available or you need control over the multiplication, this function allows you to provide an apply block.
+Use this function to solve a system of linear equations using a factored coefficient matrix. Preconditioning the coefficient matrix can reduce the number of iterations the function requires to converge the system. In cases where the matrix *A* isn’t explicitly available or you need control over the multiplication, this function allows you to provide an apply block.
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
@@ -104,23 +104,26 @@ On return, x`Values` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.
 ## Parameters
 
 - `method`: The iterative method.
-- `ApplyOperator`: The apply operator block to run. The block takes the following parameters:
-- `B`: The matrix  .
-- `X`: The matrix  .
+- `ApplyOperator`: The apply operator block to run. The block takes the following parameters: - **accumulate**: Indicates whether to perform `Y += op(A)X` (if `true`), or `Y = op(A)X` (if `false`).
+- **trans**: Indicates whether `op(A)` is the application of *A* if `CblasNoTrans`, or *Aᵀ* if `CblasTrans`
+- **X**: The matrix to multiply.
+- **Y**: The matrix for accumulating or storing the result.
+- `B`: The matrix *B*.
+- `X`: The matrix *X*.
 - `Preconditioner`: The preconditioner to apply.
 
 ## See Also
 
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double, SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-5yh8m.md)
-  Solves the equation  for matrices of double-precision values using the specified iterative method and opaque preconditioner.
+  Solves the equation *AX = B* for matrices of double-precision values using the specified iterative method and opaque preconditioner.
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-7vrh0.md)
-  Solves the equation  for matrices of single-precision values using the specified iterative method and opaque preconditioner.
+  Solves the equation *AX = B* for matrices of single-precision values using the specified iterative method and opaque preconditioner.
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double, SparsePreconditioner_t) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-5d7vf.md)
-  Solves the equation  for matrices of double-precision values using the specified iterative method and preconditioner type.
+  Solves the equation *AX = B* for matrices of double-precision values using the specified iterative method and preconditioner type.
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float, SparsePreconditioner_t) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-7apig.md)
-  Solves the equation  for matrices of single-precision values using the specified iterative method and preconditioner type.
+  Solves the equation *AX = B* for matrices of single-precision values using the specified iterative method and preconditioner type.
 - [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void, DenseMatrix_Double, DenseMatrix_Double, SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-8nfbc.md)
-  Solves the equation  for matrices of double-precision values, treating  as an operator and using the specified iterative method.
+  Solves the equation *AX = B* for matrices of double-precision values, treating *A* as an operator and using the specified iterative method.
 
 
 ---

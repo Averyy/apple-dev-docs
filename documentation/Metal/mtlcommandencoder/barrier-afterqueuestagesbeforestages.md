@@ -32,8 +32,8 @@ You can specify `afterQueueStages` and `beforeStages` that contain [`MTLStages`]
 
 ## Parameters
 
-- `afterQueueStages`:   mask that represents the stages of work to wait for.   This argument applies to work corresponding to these stages you   encode in prior command encoders, and not for the current encoder.
-- `beforeStages`:   mask that represents the stages of work that wait.   This argument applies to work you encode in the current command encoder.
+- `afterQueueStages`: [`MTLStages`](mtlstages.md) mask that represents the stages of work to wait for. This argument applies to work corresponding to these stages you encode in prior command encoders, and not for the current encoder.
+- `beforeStages`: [`MTLStages`](mtlstages.md) mask that represents the stages of work that wait. This argument applies to work you encode in the current command encoder.
 
 
 ---

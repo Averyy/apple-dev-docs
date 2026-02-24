@@ -24,7 +24,7 @@ Note that this modifier only sets a preference and ultimately the system will de
 
 ## Parameters
 
-- `preferredVisibility`: A value indicating if the upper limbs should be   visible. Use   for a system-defined standard behavior,    to keep the upper limbs visible, and   to hide   the upper limbs.
+- `preferredVisibility`: A value indicating if the upper limbs should be visible. Use `.automatic` for a system-defined standard behavior, `.visible` to keep the upper limbs visible, and `.hidden` to hide the upper limbs.
 
 
 ---

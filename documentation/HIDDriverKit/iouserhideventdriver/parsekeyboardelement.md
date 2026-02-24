@@ -25,7 +25,7 @@ This method checks the element to determine if it contains keyboard data suitabl
 
 ## Parameters
 
-- `element`: An   object to check.
+- `element`: An `IOHIDElement` object to check.
 
 ## See Also
 

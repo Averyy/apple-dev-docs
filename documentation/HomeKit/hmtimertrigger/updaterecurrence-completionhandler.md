@@ -24,7 +24,7 @@ See [`recurrence`](hmtimertrigger/recurrence.md) for a discussion of how the rec
 ## Parameters
 
 - `recurrence`: The new recurrence interval.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

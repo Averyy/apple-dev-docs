@@ -26,7 +26,7 @@ This is a primitive method used by the `NSGradient` class to draw radial gradien
 - `startRadius`: The radius of the circle that represents the beginning of the gradient.
 - `endCenter`: The center point of the circle that represents the end of the gradient.
 - `endRadius`: The radius of the circle that represents the end of the gradient.
-- `options`: The gradient options, if any. You can use these options to extend the gradient size beyond the start and end circles. For more information, see  .
+- `options`: The gradient options, if any. You can use these options to extend the gradient size beyond the start and end circles. For more information, see [`NSGradient.DrawingOptions`](nsgradient/drawingoptions.md).
 
 ## See Also
 

@@ -20,6 +20,11 @@ object LOMSetupRequestCommand
 - [object LOMSetupRequestCommand.Command](lomsetuprequestcommand/command-data.dictionary.md)
   The command to get information from a device to set up lights-out management (LOM).
 
+## Properties
+
+- `Command` (LOMSetupRequestCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object LOMSetupRequestResponse](lomsetuprequestresponse.md)

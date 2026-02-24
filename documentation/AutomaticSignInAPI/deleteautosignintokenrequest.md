@@ -18,6 +18,10 @@ object DeleteAutoSignInTokenRequest
 
 This is the request object for the [`Delete Sign-In Token`](delete-this-token-for-all-associated-users.md) endpoint.
 
+## Properties
+
+- `autoSignInTokenValue` (string): The token [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value) that needs to be deleted.
+
 ## See Also
 
 - [Delete Sign-In Token](delete-this-token-for-all-associated-users.md)

@@ -30,7 +30,7 @@ The initializer behaves like [`init(x:y:stacking:)`](areamark/init(x:y:stacking:
 - `x`: The horizontal position for the mark.
 - `y`: The vertical position for the mark.
 - `series`: A series to associate the mark with.
-- `stacking`: The way in which the chart stacks area regions. The   default is  .
+- `stacking`: The way in which the chart stacks area regions. The default is [`standard`](markstackingmethod/standard.md).
 
 ## See Also
 

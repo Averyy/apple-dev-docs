@@ -74,6 +74,19 @@ This configuration restricts several Apple Intelligence features.
 - [object IntelligenceSettingsAppsObject](intelligencesettingsappsobject.md)
   If present, configures app-specific Intelligence features.
 
+## Properties
+
+- `AllowAppleIntelligenceReport` (boolean): If `false`, disables Apple Intelligence Report.
+- `AllowGenmoji` (boolean): If `false`, disables Genmoji.
+- `AllowImagePlayground` (boolean): If `false`, disables Image Playground.
+- `AllowImageWand` (boolean): If `false`, disables Image Wand.
+- `AllowPersonalizedHandwritingResults` (boolean): If `false`, disables Personalized Handwriting Results.
+- `AllowVisualIntelligenceSummary` (boolean): If `false`, disables Visual Intelligence Summary.
+- `AllowWritingTools` (boolean): If `false`, disables Writing Tools.
+- `Apps` (IntelligenceSettingsAppsObject): If present, configures app-specific Intelligence features.
+- `ForceOnDeviceOnlyDictation` (boolean): If `true`, forces On-Device Only Dictation.
+- `ForceOnDeviceOnlyTranslation` (boolean): If `true`, forces On-Device Only Translation.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

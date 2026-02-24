@@ -22,7 +22,7 @@ func setIntersectionFunctionTables(_ intersectionFunctionTables: [(any MTLInters
 ## Parameters
 
 - `intersectionFunctionTables`: An array of intersection-function tables the method encodes.
-- `range`: A range of indices within the argument buffer for each element in  .   The values correspond to either the index IDs of declarations in   Metal Shading Language (MSL) or the   property   of   instances.
+- `range`: A range of indices within the argument buffer for each element in `intersectionFunctionTables`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
 
 ## See Also
 

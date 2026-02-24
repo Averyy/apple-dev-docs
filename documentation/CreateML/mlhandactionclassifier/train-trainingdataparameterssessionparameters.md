@@ -24,9 +24,9 @@ An [`MLJob`](mljob.md) that represents the hand action classifier’s training s
 
 ## Parameters
 
-- `trainingData`: An   instance.
-- `parameters`: An    instance you use to configure the model for the training session.
-- `sessionParameters`: An   instance you use   to configure the training session.
+- `trainingData`: An [`MLHandActionClassifier.DataSource`](mlhandactionclassifier/datasource.md) instance.
+- `parameters`: An [`MLHandActionClassifier.ModelParameters`](mlhandactionclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

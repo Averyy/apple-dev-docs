@@ -23,7 +23,7 @@ init(bytesNoCopy bytes: UnsafeRawBufferPointer, deallocator: DispatchData.Deallo
 ## Parameters
 
 - `bytes`: A contiguous buffer of memory containing the initial data.
-- `deallocator`: The deallocator responsible for releasing the memory associated with the data object. For a list of possible options, see  .
+- `deallocator`: The deallocator responsible for releasing the memory associated with the data object. For a list of possible options, see [`DispatchData.Deallocator`](dispatchdata/deallocator.md).
 
 ## See Also
 

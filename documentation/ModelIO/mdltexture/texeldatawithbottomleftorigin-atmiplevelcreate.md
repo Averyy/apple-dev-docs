@@ -33,8 +33,8 @@ This method returns `nil` if the texture was not initialized with image data and
 
 ## Parameters
 
-- `level`: The mipmap level for which to access image data; must be less than or equal to the texture’s   value.
-- `create`: If   and the texture does not contain image data for the specified mipmap level (that is, the level parameter is greater than the texture’s   value) Model I/O generates image data for that mipmap level. If  , this method returns   for mipmap levels where no image data exists.
+- `level`: The mipmap level for which to access image data; must be less than or equal to the texture’s [`mipLevelCount`](mdltexture/miplevelcount.md) value.
+- `create`: If [`true`](https://developer.apple.com/documentation/Swift/true) and the texture does not contain image data for the specified mipmap level (that is, the level parameter is greater than the texture’s [`mipLevelCount`](mdltexture/miplevelcount.md) value) Model I/O generates image data for that mipmap level. If [`false`](https://developer.apple.com/documentation/Swift/false), this method returns `nil` for mipmap levels where no image data exists.
 
 ## See Also
 

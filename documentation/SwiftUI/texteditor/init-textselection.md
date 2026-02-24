@@ -90,8 +90,8 @@ struct StyledTextEditingView: View {
 
 ## Parameters
 
-- `text`: A   to the variable containing the   styled text to edit.
-- `selection`: An optional   to the variable   containing the selection.
+- `text`: A [`Binding`](binding.md) to the variable containing the styled text to edit.
+- `selection`: An optional [`Binding`](binding.md) to the variable containing the selection.
 
 
 ---

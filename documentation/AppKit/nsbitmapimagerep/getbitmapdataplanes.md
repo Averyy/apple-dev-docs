@@ -20,7 +20,7 @@ Color components in planar configuration are arranged in the expected order—fo
 
 ## Parameters
 
-- `data`: On return, a C array of five character pointers. If the bitmap data is in planar configuration, each pointer will be initialized to point to one of the data planes. If there are less than five planes, the remaining pointers will be set to  . If the bitmap data is in meshed configuration, only the first pointer will be initialized; the others will be  .
+- `data`: On return, a C array of five character pointers. If the bitmap data is in planar configuration, each pointer will be initialized to point to one of the data planes. If there are less than five planes, the remaining pointers will be set to `NULL`. If the bitmap data is in meshed configuration, only the first pointer will be initialized; the others will be `NULL`.
 
 ## See Also
 

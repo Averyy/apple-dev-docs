@@ -27,9 +27,21 @@ A HealthKit unit for measuring energy based on joules and the provided prefix.
 
 This method is used to create prefixed versions of joules. HealthKit commonly uses kilojoules to measure food energy in many regions. Kilojoules can be created as shown below.
 
+**Swift**:
+
+```swift
+let kj = HKUnit.jouleUnitWithMetricPrefix(.Kilo)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *kj = [HKUnit jouleUnitWithMetricPrefix:HKMetricPrefixKilo];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

@@ -32,10 +32,10 @@ If the path ends with an unclosed subpath, this method adds a line connecting th
 
 - `center`: The center of the arc, in user space coordinates.
 - `radius`: The radius of the arc, in user space coordinates.
-- `startAngle`: The angle to the starting point of the arc,   measured from the positive x-axis.
-- `endAngle`: The angle to the end point of the arc, measured   from the positive x-axis.
-- `clockwise`: True to make a clockwise arc; false to make a   counterclockwise arc.
-- `transform`: An affine transform to apply to the arc before   adding to the path. Defaults to the identity transform if   not specified.
+- `startAngle`: The angle to the starting point of the arc, measured from the positive x-axis.
+- `endAngle`: The angle to the end point of the arc, measured from the positive x-axis.
+- `clockwise`: True to make a clockwise arc; false to make a counterclockwise arc.
+- `transform`: An affine transform to apply to the arc before adding to the path. Defaults to the identity transform if not specified.
 
 ## See Also
 

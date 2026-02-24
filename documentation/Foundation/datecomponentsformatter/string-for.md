@@ -30,7 +30,7 @@ This method has the same behavior as the [`string(from:)`](datecomponentsformatt
 
 ## Parameters
 
-- `obj`: An object containing the date and time information to format. The object in this parameter must be a   object; if it is not, the method raises an exception. This parameter must not be  .
+- `obj`: An object containing the date and time information to format. The object in this parameter must be a [`NSDateComponents`](nsdatecomponents.md) object; if it is not, the method raises an exception. This parameter must not be `nil`.
 
 ## See Also
 

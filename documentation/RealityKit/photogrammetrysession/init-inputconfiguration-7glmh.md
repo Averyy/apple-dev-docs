@@ -27,7 +27,7 @@ The constructor will only use `makeIterator()` on `input` and will then iterate 
 
 ## Parameters
 
-- `input`: The input   that will be iterated once to yield all input data.
+- `input`: The input `Sequence` that will be iterated once to yield all input data.
 - `configuration`: The session-wide configuration to use for this session.
 
 ## See Also

@@ -30,6 +30,11 @@ color = ambient * al + diffuse * max(0, dot(N, L)) + specular * pow(max(0, dot(H
 
 Some terms refer to the material’s properties: [`ambient`](scnmaterial/ambient.md), [`diffuse`](scnmaterial/diffuse.md), [`specular`](scnmaterial/specular.md), and [`shininess`](scnmaterial/shininess.md). The other terms are as follows:
 
+- **`al`**: The sum of all ambient lights in the scene (a color).
+- **`N`**: The surface normal vector at the point being shaded, as supplied by the geometry’s vertex data, interpolated between vertices, and possibly modified by the material’s [`normal`](scnmaterial/normal.md) property.
+- **`L`**: The (normalized) vector from the point being shaded to the light source.
+- **`H`**: A vector halfway between the light vector `L` and the (normalized) eye vector `E` (the vector from the point being shaded to the viewer), calculated using the formula `H = normalize(L + E)`.
+
 ## See Also
 
 - [static let constant: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/constant.md)

@@ -21,9 +21,9 @@ The unwrapped key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](
 ## Parameters
 
 - `keyToUnwrap`: The wrapped key to unwrap.
-- `unwrappingKey`: The key that must be used to unwrap  .
-- `parameters`: A parameter list for the unwrapping process. This is usually either an empty dictionary or a dictionary containing a value for  .
-- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `unwrappingKey`: The key that must be used to unwrap `keyToUnwrap`.
+- `parameters`: A parameter list for the unwrapping process. This is usually either an empty dictionary or a dictionary containing a value for [`kSecAttrSalt`](ksecattrsalt.md).
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

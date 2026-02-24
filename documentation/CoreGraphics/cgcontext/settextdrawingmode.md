@@ -22,7 +22,7 @@ func setTextDrawingMode(_ mode: CGTextDrawingMode)
 
 ## Parameters
 
-- `mode`: A text drawing mode (such as   or  ) that specifies how Core Graphics renders individual glyphs in a graphics context. See   for a complete list.
+- `mode`: A text drawing mode (such as [`CGTextDrawingMode.fill`](cgtextdrawingmode/fill.md) or [`CGTextDrawingMode.stroke`](cgtextdrawingmode/stroke.md)) that specifies how Core Graphics renders individual glyphs in a graphics context. See [`CGTextDrawingMode`](cgtextdrawingmode.md) for a complete list.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(@ViewBuilder content: @escaping (ScrollViewProxy) -> Content)
 
 ## Parameters
 
-- `content`: The reader’s content, containing one or more   scroll views. This view builder receives a    instance that you use to perform scrolling.
+- `content`: The reader’s content, containing one or more scroll views. This view builder receives a [`ScrollViewProxy`](scrollviewproxy.md) instance that you use to perform scrolling.
 
 
 ---

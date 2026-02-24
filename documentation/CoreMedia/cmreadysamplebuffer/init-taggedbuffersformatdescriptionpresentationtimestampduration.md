@@ -22,9 +22,9 @@ init(taggedBuffers content: Content, formatDescription: CMTaggedBufferGroupForma
 
 ## Parameters
 
-- `formatDescription`: Format description of the content. The format must be have tagged buffer group   media type.
+- `formatDescription`: Format description of the content. The format must be have tagged buffer group media type.
 - `presentationTimeStamp`: The time at which sample will be presented. Must be valid numeric time.
-- `duration`: Duration of the sample. Set to   if not present.
+- `duration`: Duration of the sample. Set to `CMTime/invalid` if not present.
 
 
 ---

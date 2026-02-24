@@ -25,8 +25,8 @@ If a certificate has no trust settings, the certificate must be verified to a kn
 
 ## Parameters
 
-- `certRef`: The certificate whose trust settings you wish to remove. Pass the value   to remove the default root certificate trust settings for the domain.
-- `domain`: The trust settings domain for which you wish to remove the trust settings. For possible values, see  .
+- `certRef`: The certificate whose trust settings you wish to remove. Pass the value [`kSecTrustSettingsDefaultRootCertSetting`](ksectrustsettingsdefaultrootcertsetting.md) to remove the default root certificate trust settings for the domain.
+- `domain`: The trust settings domain for which you wish to remove the trust settings. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
 
 
 ---

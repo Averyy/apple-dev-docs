@@ -30,7 +30,7 @@ The system automatically chooses locale-appropriate text for the button’s labe
 
 ## Parameters
 
-- `action`: A closure to execute when the user taps or presses the   button.
+- `action`: A closure to execute when the user taps or presses the button.
 
 ## See Also
 

@@ -20,7 +20,7 @@ init(_ value: CustomMaterial.Normal)
 
 ## Parameters
 
-- `value`: The   object from a  .
+- `value`: The `normal` object from a `CustomMaterial`.
 
 ## See Also
 

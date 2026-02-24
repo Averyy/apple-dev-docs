@@ -36,7 +36,7 @@ Concatenates all input tensors along specified dimension. All inputs must be bro
 ## Parameters
 
 - `tensors`: The tensors to concatenate.
-- `dimensionIndex`: The dimension to concatenate across, must be in range:  .
+- `dimensionIndex`: The dimension to concatenate across, must be in range: `-rank <= dimension < rank`.
 - `interleave`: A boolean value that specifies whether the operation interleaves input tensors.
 - `name`: The name for the operation.
 

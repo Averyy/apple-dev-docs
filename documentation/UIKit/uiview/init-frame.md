@@ -30,7 +30,7 @@ If you use Interface Builder to design your interface, this method is not called
 
 ## Parameters
 
-- `frame`: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the   and   properties accordingly.
+- `frame`: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the [`center`](uiview/center.md) and [`bounds`](uiview/bounds.md) properties accordingly.
 
 ## See Also
 

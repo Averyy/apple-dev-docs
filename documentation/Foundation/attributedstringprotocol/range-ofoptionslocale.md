@@ -28,7 +28,7 @@ The range where `stringToFind` exists in the attributed string, or `nil` if it i
 
 - `stringToFind`: The string to find.
 - `options`: Options that affect the search behavior, such as case-insensivity, search direction, and regular expression matching.
-- `locale`: The locale to use when searching, or   to use the current locale. The default is  .
+- `locale`: The locale to use when searching, or `nil` to use the current locale. The default is `nil`.
 
 
 ---

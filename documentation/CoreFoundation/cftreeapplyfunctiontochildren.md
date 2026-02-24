@@ -27,7 +27,7 @@ Note that the applier only operates one level deep—it does not operate on desc
 ## Parameters
 
 - `tree`: The tree to operate upon.
-- `applier`: The callback function to call once for each child in  . The function must be able to apply to all the values in the tree.
+- `applier`: The callback function to call once for each child in `tree`. The function must be able to apply to all the values in the tree.
 - `context`: A pointer-sized program-defined value that is passed to the applier function, but is otherwise unused by this function.
 
 

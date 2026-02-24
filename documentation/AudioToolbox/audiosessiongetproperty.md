@@ -32,7 +32,7 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 ## Parameters
 
 - `inID`: The identifier for the audio session property that you want to get the value of.
-- `ioDataSize`: On input, the memory size for the   parameter. On output, the actual size of the property value.
+- `ioDataSize`: On input, the memory size for the `outData` parameter. On output, the actual size of the property value.
 - `outData`: On output, the value of the specified audio session property.
 
 ## See Also
@@ -43,7 +43,7 @@ If you call this function to retrieve a value that is a Core Foundation object, 
   Sets the value of a specified audio session property.
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

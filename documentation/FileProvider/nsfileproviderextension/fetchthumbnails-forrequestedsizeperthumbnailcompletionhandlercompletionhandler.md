@@ -98,8 +98,10 @@ override func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier
 
 - `itemIdentifiers`: The identifiers of the items that need thumbnails.
 - `size`: The size of the thumbnails, in pixels.
-- `perThumbnailCompletionHandler`: The completion handler for each thumbnail. Call this block once for each thumbnail returned. This completion handler takes the following parameters:
-- `completionHandler`: The completion handler for the entire request. Call this block after all thumbnails have been returned. This completion handler takes the following parameter:
+- `perThumbnailCompletionHandler`: The completion handler for each thumbnail. Call this block once for each thumbnail returned. This completion handler takes the following parameters: - **identifier**: The identifier of the item.
+- **imageData**: A data object containing the thumbnail, or `nil` if an error occurred. This data object must be in an image format supported by [`Image I/O`](https://developer.apple.com/documentation/ImageIO).
+- **error**: An error object. If an error occurs for this item, pass in an object that describes the error; otherwise, set it to `nil`.
+- `completionHandler`: The completion handler for the entire request. Call this block after all thumbnails have been returned. This completion handler takes the following parameter: - **error**: An error object. If a global error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 
 ---

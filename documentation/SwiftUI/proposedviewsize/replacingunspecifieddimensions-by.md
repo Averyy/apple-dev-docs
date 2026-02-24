@@ -30,7 +30,7 @@ Use the default value to prevent a flexible view from disappearing into a zero-s
 
 ## Parameters
 
-- `size`: A set of concrete values to use for the size proposal   in place of any unspecified dimensions. The default value is    for both dimensions.
+- `size`: A set of concrete values to use for the size proposal in place of any unspecified dimensions. The default value is `10` for both dimensions.
 
 
 ---

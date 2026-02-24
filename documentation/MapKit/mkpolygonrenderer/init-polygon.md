@@ -25,7 +25,7 @@ An initialized polygon renderer object.
 
 ## Parameters
 
-- `polygon`: The polygon overlay containing information about the area the polygon renderer draws. This object requires at least three points defining the polygon to draw. This parameter can’t be  .
+- `polygon`: The polygon overlay containing information about the area the polygon renderer draws. This object requires at least three points defining the polygon to draw. This parameter can’t be `nil`.
 
 
 ---

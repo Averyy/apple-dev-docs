@@ -22,8 +22,8 @@ func copy(sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)
 
 ## Parameters
 
-- `sourceTexture`: An   instance the command copies data from.
-- `destinationTexture`: Another   instance the command copies the data into that has the same    and   as  .
+- `sourceTexture`: An [`MTLTexture`](mtltexture.md) instance the command copies data from.
+- `destinationTexture`: Another [`MTLTexture`](mtltexture.md) instance the command copies the data into that has the same [`pixelFormat`](mtltexture/pixelformat.md) and [`sampleCount`](mtltexture/samplecount.md) as `sourceTexture`.
 
 ## See Also
 

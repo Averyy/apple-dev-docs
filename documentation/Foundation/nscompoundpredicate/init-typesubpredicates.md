@@ -31,7 +31,7 @@ For applications linked on macOS 10.5 or later, the `subpredicates` array is co
 ## Parameters
 
 - `type`: The type of the new predicate.
-- `subpredicates`: An array of   objects.
+- `subpredicates`: An array of `NSPredicate` objects.
 
 ## See Also
 

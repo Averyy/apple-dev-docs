@@ -24,10 +24,10 @@ To unmute all events from a process, use [`es_unmute_process(_:_:)`](es_unmute_p
 
 ## Parameters
 
-- `client`: A previously-muted client. If the call succeeds, this client begins to receive events that match the types in   from the process indicated by  .
+- `client`: A previously-muted client. If the call succeeds, this client begins to receive events that match the types in `events` from the process indicated by `audit_token`.
 - `audit_token`: The audit token indicating the process to unmute.
 - `events`: An array of event types to unmute.
-- `event_count`: The number of members in the   array.
+- `event_count`: The number of members in the `events` array.
 
 ## See Also
 

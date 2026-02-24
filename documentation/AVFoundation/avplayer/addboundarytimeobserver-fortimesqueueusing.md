@@ -37,13 +37,66 @@ The player does not guarantee the callback block will always be invoked for each
 
 The following example shows how you could define boundary times for each quarter of playback.
 
+**Swift**:
+
+```swift
+func addBoundaryTimeObserver() {
+    var times = [NSValue]()
+    // Set initial time to zero
+    var currentTime = CMTime.zero
+    // Divide the asset's duration into quarters.
+    let interval = CMTimeMultiplyByFloat64(asset.duration, multiplier: 0.25)
+    
+    // Build boundary times at 25%, 50%, 75%, 100%
+    while currentTime < asset.duration {
+        currentTime = currentTime + interval
+        times.append(NSValue(time: currentTime))
+    }
+    
+    // Add time observer. Observe boundary time changes on the main queue.
+    timeObserverToken = player.addBoundaryTimeObserver(forTimes: times,
+                                                       queue: .main) { [weak self] in
+        // Update UI
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)addBoundaryTimeObserver {
+    NSMutableArray *times = [NSMutableArray array];
+ 
+    // Set initial time to zero
+    CMTime currentTime = kCMTimeZero;
+    // Get asset duration
+    CMTime assetDuration = self.asset.duration;
+    // Divide the asset duration into quarters
+    CMTime interval = CMTimeMultiplyByFloat64(assetDuration, 0.25);
+ 
+    // Build boundary times at 25%, 50%, 75%, 100%
+    while (CMTIME_COMPARE_INLINE(currentTime, <, assetDuration)) {
+        currentTime = CMTimeAdd(currentTime, interval);
+        [times addObject:[NSValue valueWithCMTime:currentTime]];
+    }
+    // Add time observer
+    self.timeObserverToken =
+        [self.player addBoundaryTimeObserverForTimes:times
+                                               queue:dispatch_get_main_queue()
+                                          usingBlock:^{
+            // Use weak reference to self
+            // Update user interface state
+        }];
+}
+```
+
 > ❗ **Important**:  Use a `weak` reference to `self` in the callback block to prevent creating a retain cycle.
 
 ## Parameters
 
-- `times`: An array of   objects containing   values that represent the times at which to invoke the callback. The system raises an exception if you pass an empty array.
-- `queue`: If you pass  , the main queue is used.
-- `block`: The block to be invoked when any of the times in   is crossed during normal playback.
+- `times`: An array of `NSValue` objects containing [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) values that represent the times at which to invoke the callback. The system raises an exception if you pass an empty array.
+- `queue`: A *serial* queue onto which `block` should be enqueued. Passing a concurrent queue is not supported and will result in undefined behavior. If you pass `nil`, the main queue is used.
+- `block`: The block to be invoked when any of the times in `times` is crossed during normal playback.
 
 ## See Also
 

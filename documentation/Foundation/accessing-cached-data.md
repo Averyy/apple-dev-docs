@@ -45,7 +45,7 @@ You can write to the cache programmatically, with the [`storeCachedResponse(_:fo
 
 Typically, you manage the caching of a response while it’s being handled by a `URLSessionTask` object. To manage caching on a per-response basis, implement the [`urlSession(_:dataTask:willCacheResponse:completionHandler:)`](urlsessiondatadelegate/urlsession(_:datatask:willcacheresponse:completionhandler:).md) method of the [`URLSessionDataDelegate`](urlsessiondatadelegate.md) protocol. Note that this delegate method is called only for uploads and data tasks, and is not called for sessions with a background or ephemeral configuration.
 
-The delegate receives two parameters: a `CachedURLResponse` object and a completion handler. Your delegate  call this completion handler directly, passing in one of the following:
+The delegate receives two parameters: a `CachedURLResponse` object and a completion handler. Your delegate *must* call this completion handler directly, passing in one of the following:
 
 - The provided `CachedURLResponse` object, to cache the proposed response as-is
 - `nil`, to prevent caching

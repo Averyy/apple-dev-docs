@@ -32,7 +32,7 @@ Unlike with [`dispatch_async`](dispatch_async.md), no retain is performed on the
 
 ## Parameters
 
-- `block`: The block that contains the work to perform. This block has no return value and no parameters. This parameter cannot be  .
+- `block`: The block that contains the work to perform. This block has no return value and no parameters. This parameter cannot be `NULL`.
 
 ## See Also
 

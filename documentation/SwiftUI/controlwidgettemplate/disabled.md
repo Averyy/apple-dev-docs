@@ -44,7 +44,7 @@ struct GarageDoorOpener: ControlWidget {
 
 ## Parameters
 
-- `disabled`: A Boolean value that determines whether users can   interact with this control.
+- `disabled`: A Boolean value that determines whether users can interact with this control.
 
 
 ---

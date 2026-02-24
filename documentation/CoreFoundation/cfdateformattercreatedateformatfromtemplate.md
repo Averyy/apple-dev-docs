@@ -50,9 +50,9 @@ CFStringRef gbDateFormatString =
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `tmplate`: A string containing date format patterns (such as “MM” or “h”).   For full details, see  .
-- `options`: No options are currently defined—pass  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `tmplate`: A string containing date format patterns (such as “MM” or “h”). For full details, see [`Unicode Technical Standard #35`](https://developer.apple.comhttp://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns).
+- `options`: No options are currently defined—pass `0`.
 - `locale`: The locale for which the template is required.
 
 ## See Also

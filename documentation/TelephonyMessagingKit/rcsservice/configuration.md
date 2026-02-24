@@ -31,9 +31,6 @@ struct Configuration
   The maximum duration the service provider allows for delivery notification before it revokes a chat message.
 - [var maximumGroupSize: Int?](rcsservice/configuration/maximumgroupsize.md)
   The maximum number of participants allowed for a group chat.
-### Instance Properties
-- [let supportsEndToEndEncryption: Bool](rcsservice/configuration/supportsendtoendencryption.md)
-  A Boolean value indicating whether the RCS service supports end-to-end encryption.
 
 ## Relationships
 

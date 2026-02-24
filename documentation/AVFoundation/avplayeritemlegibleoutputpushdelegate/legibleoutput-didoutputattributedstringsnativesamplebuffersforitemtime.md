@@ -27,9 +27,9 @@ For all other media subtypes present in the media resource, the delegate receive
 
 ## Parameters
 
-- `output`: The   source instance.
-- `strings`: An array of   objects, each containing both the run of text and the descriptive markup.
-- `nativeSamples`: An array of   objects, for media subtypes included in the array passed to the   object’s   method.
+- `output`: The [`AVPlayerItemLegibleOutput`](avplayeritemlegibleoutput.md) source instance.
+- `strings`: An array of [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects, each containing both the run of text and the descriptive markup.
+- `nativeSamples`: An array of [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects, for media subtypes included in the array passed to the `output` object’s [`init(mediaSubtypesForNativeRepresentation:)`](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md) method.
 - `itemTime`: The item time at which the strings should be presented.
 
 

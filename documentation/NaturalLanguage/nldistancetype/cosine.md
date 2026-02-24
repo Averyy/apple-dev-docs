@@ -22,7 +22,7 @@ case cosine
 
 #### Discussion
 
-The range of a cosine distance is `[0.0, 2.0]`, derived from the expression `1 -` .
+The range of a cosine distance is `[0.0, 2.0]`, derived from the expression `1 -` *cosine similarity*.
 
 
 ---

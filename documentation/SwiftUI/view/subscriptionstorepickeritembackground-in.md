@@ -25,8 +25,8 @@ Use this view modifier to customize the shape of the picker options in a subscri
 
 ## Parameters
 
-- `backgroundStyle`: A   that determines the background style for the   subscription store view picker items.
-- `shape`: An instance of a type that conforms to   and determines the shape of   the subscription store view picker items. Omit the shape parameter to use the   default shape.
+- `backgroundStyle`: A [`ShapeStyle`](shapestyle.md) that determines the background style for the subscription store view picker items.
+- `shape`: An instance of a type that conforms to [`Shape`](shape.md) and determines the shape of the subscription store view picker items. Omit the shape parameter to use the default shape.
 
 ## See Also
 

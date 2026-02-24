@@ -48,7 +48,7 @@ Depending on the surrounding view hierarchy, SwiftUI may not honor an `edgesIgno
 
 ## Parameters
 
-- `edges`: The set of the edges in which to expand the size   requested for this view.
+- `edges`: The set of the edges in which to expand the size requested for this view.
 
 ## See Also
 

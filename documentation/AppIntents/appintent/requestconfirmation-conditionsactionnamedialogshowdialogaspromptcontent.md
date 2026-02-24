@@ -25,8 +25,8 @@ func requestConfirmation<Content>(conditions: ConfirmationConditions = [], actio
 - `conditions`: The preconditions for requesting confirmation.
 - `actionName`: The name for the confirmation action.
 - `dialog`: The confirmation dialog.
-- `showDialogAsPrompt`: Flag indicating whether the confirmation   dialog should be displayed as prompt text with the confirmation.
-- `content`: The   to display for confirmation.
+- `showDialogAsPrompt`: Flag indicating whether the confirmation dialog should be displayed as prompt text with the confirmation.
+- `content`: The `View` to display for confirmation.
 
 ## See Also
 

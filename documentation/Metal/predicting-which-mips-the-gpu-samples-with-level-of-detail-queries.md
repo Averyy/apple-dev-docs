@@ -17,6 +17,22 @@ Before loading any shaders that use LOD queries, make sure the GPU supports them
 - The [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) feature set.
 - The [`MTLGPUFamily.apple7`](mtlgpufamily/apple7.md) feature set.
 
+**Swift**:
+
+```swift
+let macFamily2Support = device.supportsFamily(MTLGPUFamily.mac2)
+let appleFamily7Support = device.supportsFamily(MTLGPUFamily.apple7)
+let supportsCalculateLevelOfDetail = macFamily2Support || appleFamily7Support
+```
+
+**Objective-C**:
+
+```objective-c
+Boolean macFamily2Support = [device supportsFamily: MTLGPUFamilyMac2];
+Boolean appleFamily7Support = [device supportsFamily: MTLGPUFamilyApple7];
+Boolean supportsCalculateLevelOfDetail = macFamily2Support || appleFamily7Support;
+```
+
 ##### Determine Level of Detail
 
 In your shader, the functions that return LOD information have signatures that are similar to those of functions used to sample textures. There are two kinds of these functions: clamped and unclamped. The clamped kind restricts LOD selection by applying the sampler’s range of permitted values, the range of mipmaps provided in the texture, and the sampler’s anisotropy settings. The unclamped kind returns the raw calculation.

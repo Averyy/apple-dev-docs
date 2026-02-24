@@ -22,7 +22,7 @@ init(mappingTransform: @escaping (InputType, InputType) -> ComparatorMappingType
 
 ## Parameters
 
-- `mappingTransform`: Closure that transforms the user-supplied value into the   output type.
+- `mappingTransform`: Closure that transforms the user-supplied value into the `ComparatorMappingType` output type.
 
 
 ---

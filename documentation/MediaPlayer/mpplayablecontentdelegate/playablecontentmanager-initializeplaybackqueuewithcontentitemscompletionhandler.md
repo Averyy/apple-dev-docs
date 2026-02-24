@@ -29,7 +29,7 @@ After preparing content for playing, call the provided `completionHandler` block
 
 - `contentManager`: The content manager that initiated the request.
 - `contentItems`: The content items to load.
-- `completionHandler`: A block that the system calls after content is ready for playback. The block takes the following parameter:
+- `completionHandler`: A block that the system calls after content is ready for playback. The block takes the following parameter: - **error**: Pass [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
 
 ## See Also
 

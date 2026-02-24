@@ -29,7 +29,7 @@ This method may not be appropriate when writing to publicly accessible files. To
 ## Parameters
 
 - `path`: The location to which to write the receiver’s bytes.
-- `writeOptionsMask`: A mask that specifies options for writing the data. Constant components are described in  .
+- `writeOptionsMask`: A mask that specifies options for writing the data. Constant components are described in [`NSData.WritingOptions`](nsdata/writingoptions.md).
 
 ## See Also
 

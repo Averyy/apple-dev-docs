@@ -21,7 +21,7 @@ func timecodeGenerator(_ generator: AVCaptureTimecodeGenerator, transitionedTo s
 
 ## Parameters
 
-- `generator`: The   instance providing the status update.
+- `generator`: The [`AVCaptureTimecodeGenerator`](avcapturetimecodegenerator.md) instance providing the status update.
 - `synchronizationStatus`: The updated synchronization state.
 - `source`: The internal or external source to which the generator synchronizes.
 

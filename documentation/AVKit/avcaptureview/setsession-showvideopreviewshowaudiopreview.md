@@ -23,8 +23,8 @@ The capture view automatically starts and stops the default session. If you set 
 ## Parameters
 
 - `session`: The capture session.
-- `showVideoPreview`: A Boolean value that indicates whether the view displays a video preview. If  , the system adds, removes, or modifies capture inputs for video data based on device availability and user selection.
-- `showAudioPreview`: A Boolean value that indicates whether the view shows an audio preview. If  , the system adds, removes, or modifies capture inputs for audio data based on device availability and user selection.
+- `showVideoPreview`: A Boolean value that indicates whether the view displays a video preview. If `true`, the system adds, removes, or modifies capture inputs for video data based on device availability and user selection.
+- `showAudioPreview`: A Boolean value that indicates whether the view shows an audio preview. If `true`, the system adds, removes, or modifies capture inputs for audio data based on device availability and user selection.
 
 ## See Also
 

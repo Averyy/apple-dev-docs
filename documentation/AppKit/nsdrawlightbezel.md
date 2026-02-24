@@ -16,7 +16,7 @@ func NSDrawLightBezel(_ rect: NSRect, _ clipRect: NSRect)
 
 ## Parameters
 
-- `rect`: The bounding rectangle (in the current coordinate system) in which to draw. Only those parts of   that lie within the   are actually drawn.
+- `rect`: The bounding rectangle (in the current coordinate system) in which to draw. Only those parts of `aRect` that lie within the `clipRect` are actually drawn.
 - `clipRect`: The clipping rectangle to use during drawing.
 
 ## See Also

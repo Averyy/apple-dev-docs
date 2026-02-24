@@ -26,9 +26,9 @@ A copy of `url` appended with `extension`. Ownership follows the create rule. Se
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `url`: The   object to which to append a path extension.
-- `extension`: The extension to append to  .
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `url`: The `CFURL` object to which to append a path extension.
+- `extension`: The extension to append to `url`.
 
 ## See Also
 

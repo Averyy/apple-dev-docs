@@ -29,8 +29,8 @@ OpenGL ES objects such as textures, renderbuffers, framebuffers and vertex buff
 
 ## Parameters
 
-- `api`: The desired version of the OpenGL ES rendering API. For legal values, see  .
-- `sharegroup`: A sharegroup obtained from another   object.
+- `api`: The desired version of the OpenGL ES rendering API. For legal values, see [`EAGLRenderingAPI`](eaglrenderingapi.md).
+- `sharegroup`: A sharegroup obtained from another [`EAGLContext`](eaglcontext.md) object.
 
 
 ---

@@ -17,7 +17,7 @@ optional func windowWillEnterFullScreen(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`willEnterFullScreenNotification`](nswindow/willenterfullscreennotification.md).
 
 ## See Also
 

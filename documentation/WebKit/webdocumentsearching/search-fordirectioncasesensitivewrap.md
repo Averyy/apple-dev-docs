@@ -26,9 +26,9 @@ The receiver should select the string if it is found.
 ## Parameters
 
 - `string`: The string to search for.
-- `forward`: If  , the search is in the forward direction from the current location; otherwise, the search is in the backward direction.
-- `caseFlag`: If   then the search is case sensitive; otherwise, it is not.
-- `wrapFlag`: If  , the search continues from the end of the document to the current location; otherwise, it stops at the end of the document.
+- `forward`: If [`true`](https://developer.apple.com/documentation/Swift/true), the search is in the forward direction from the current location; otherwise, the search is in the backward direction.
+- `caseFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true) then the search is case sensitive; otherwise, it is not.
+- `wrapFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the search continues from the end of the document to the current location; otherwise, it stops at the end of the document.
 
 ## See Also
 

@@ -109,6 +109,10 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
 - [object Identification.PayloadIdentification](identification/payloadidentification-data.dictionary.md)
   The dictionary containing details about the user.
 
+## Properties
+
+- `PayloadIdentification` (Identification.PayloadIdentification) *(required)*: The dictionary that contains details about the user.
+
 ## See Also
 
 - [object DirectoryService](directoryservice.md)

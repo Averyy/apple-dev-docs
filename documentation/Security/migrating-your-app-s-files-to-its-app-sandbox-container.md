@@ -25,6 +25,14 @@ Under the root of the `container-migration.plist` file, create a key called `Mov
 
 The strings you add to the can contain the following variables:
 
+- **`${ApplicationSupport}`**: The folder for application support files.
+- **`${AutosavedInformation}`**: The autosaved documents folder.
+- **`${Caches}`**: The folder for cache files.
+- **`${Document}` or `${Documents}`**: The Documents folder.
+- **`${Home}`**: The home folder.
+- **`${Library}`**: The library folder.
+- **`${BundleId}`**: The app’s bundle identifier.
+
 In source paths, these variables expand relative to the user’s home folder. In destination paths, they expand relative to the top level of the app’s container.
 
 ##### Migrate User Scripts to the Standard Location

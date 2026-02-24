@@ -36,7 +36,7 @@ NSPoint newPoint = NSMakePoint(50.0, 50.0);
 
 ## Parameters
 
-- `points`: A C-style array containing up to three   data types. This parameter must contain the correct number of points for the path element at the specified index. Move, close path, and line segment commands require one point. Curve operations require three points.
+- `points`: A C-style array containing up to three `NSPoint` data types. This parameter must contain the correct number of points for the path element at the specified index. Move, close path, and line segment commands require one point. Curve operations require three points.
 - `index`: The index of the path element you want to modify.
 
 ## See Also

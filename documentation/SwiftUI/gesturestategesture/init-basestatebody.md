@@ -23,8 +23,8 @@ init(base: Base, state: GestureState<State>, body: @escaping (GestureStateGestur
 ## Parameters
 
 - `base`: The originating gesture.
-- `state`: The wrapped value of a   property.
-- `body`: The callback that SwiftUI invokes as the gesture’s value   changes.
+- `state`: The wrapped value of a [`GestureState`](gesturestate.md) property.
+- `body`: The callback that SwiftUI invokes as the gesture’s value changes.
 
 ## See Also
 

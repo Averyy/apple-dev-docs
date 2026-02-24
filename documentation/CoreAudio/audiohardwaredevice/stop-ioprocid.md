@@ -17,7 +17,7 @@ func stop(IOProcID: AudioDeviceIOProcID? = nil) throws
 
 ## Parameters
 
-- `IOProcID`: The AudioDeviceIOProcID to stop. This can be nil to stop the   hardware if a call to start was made with a nil IOProcID.
+- `IOProcID`: The AudioDeviceIOProcID to stop. This can be nil to stop the hardware if a call to start was made with a nil IOProcID.
 
 
 ---

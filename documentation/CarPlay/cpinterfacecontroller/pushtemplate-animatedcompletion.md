@@ -31,7 +31,7 @@ CarPlay throws an exception if it can’t add the template and you don’t provi
 ## Parameters
 
 - `templateToPush`: The template to add to the navigation hierarchy.
-- `animated`: If  , CarPlay animates the transition between templates.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), CarPlay animates the transition between templates.
 - `completion`: The closure CarPlay calls after it adds the template.
 
 ## See Also

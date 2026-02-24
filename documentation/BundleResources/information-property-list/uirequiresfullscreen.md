@@ -9,6 +9,10 @@ A Boolean value that indicates whether the system puts an iPad app into a compat
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 iPad multitasking lets multiple apps appear on screen at the same time. Dragging the resize controls causes the system to change the size of each app’s window. Each app must then adjust its content to fit the newly available space.

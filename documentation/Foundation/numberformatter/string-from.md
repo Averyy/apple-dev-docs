@@ -26,7 +26,7 @@ A string containing the formatted value of `number` using the receiver’s curre
 
 ## Parameters
 
-- `number`: An   object that is parsed to create the returned string object.
+- `number`: An [`NSNumber`](nsnumber.md) object that is parsed to create the returned string object.
 
 ## See Also
 

@@ -23,7 +23,7 @@ To use a network restore image, download the file to disk (using [`URLSession`](
 
 ## Parameters
 
-- `completionHandler`: The system invokes the completion handler on an arbitrary thread. The completion handler returns an   parameter that describes the reason for the failure; the block is   if installation was successful.
+- `completionHandler`: A block called after the restore image fetch has succeeded or failed. The `error` parameter passed to the block is `nil` if the image restoration was successful. The system invokes the completion handler on an arbitrary thread. The completion handler returns an `error` parameter that describes the reason for the failure; the block is `nil` if installation was successful.
 
 ## See Also
 

@@ -27,8 +27,8 @@ The modified view.
 
 ## Parameters
 
-- `binding`: The state binding to register. When accessibility focus moves to the   accessibility element of the modified view, SwiftUI sets the bound value to the corresponding   match value. If you set the state value programmatically to the matching value, then   accessibility focus moves to the accessibility element of the modified view. SwiftUI sets   the value to   if accessibility focus leaves the accessibility element associated with the   modified view, and programmatically setting the value to   dismisses focus automatically.
-- `value`: The value to match against when determining whether the   binding should change.
+- `binding`: The state binding to register. When accessibility focus moves to the accessibility element of the modified view, SwiftUI sets the bound value to the corresponding match value. If you set the state value programmatically to the matching value, then accessibility focus moves to the accessibility element of the modified view. SwiftUI sets the value to `nil` if accessibility focus leaves the accessibility element associated with the modified view, and programmatically setting the value to `nil` dismisses focus automatically.
+- `value`: The value to match against when determining whether the binding should change.
 
 ## See Also
 

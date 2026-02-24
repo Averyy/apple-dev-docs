@@ -30,7 +30,7 @@ You should always use the [`rangeOfComposedCharacterSequence(at:)`](nsstring/ran
 
 ## Parameters
 
-- `index`: The index of the character to retrieve.
+- `index`: The index of the character to retrieve. > ❗ **Important**:  Raises an `NSRangeException` if `index` lies beyond the end of the receiver.
 
 ## See Also
 

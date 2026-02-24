@@ -25,7 +25,7 @@ Match patterns can be granted on a per-tab basis. When the tab is known, access 
 ## Parameters
 
 - `pattern`: The pattern for which to return the status.
-- `tab`: The tab in which to return the permission status, or   if the tab is not known or the global status is desired.
+- `tab`: The tab in which to return the permission status, or `nil` if the tab is not known or the global status is desired.
 
 ## See Also
 

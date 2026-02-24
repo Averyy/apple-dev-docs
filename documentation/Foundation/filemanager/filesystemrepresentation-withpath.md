@@ -32,7 +32,7 @@ This method raises an exception if `path` is `nil` or contains the empty string.
 
 ## Parameters
 
-- `path`: A string object containing a path to a file. This parameter must not be   or contain the empty string.
+- `path`: A string object containing a path to a file. This parameter must not be `nil` or contain the empty string.
 
 ## See Also
 

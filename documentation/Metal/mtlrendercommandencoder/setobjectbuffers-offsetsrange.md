@@ -27,9 +27,9 @@ By default, the texture at each index is `nil`.
 
 ## Parameters
 
-- `buffers`: An array of   instances the command assigns to entries in the object shader argument table for buffers.
-- `offsets`: See the   to check for offset alignment requirements for buffers in   and   address space.
-- `range`: A span of integers that represent the entries in the object shader argument table for buffers. Each entry stores a record of the corresponding element in   and  .
+- `buffers`: An array of [`MTLBuffer`](mtlbuffer.md) instances the command assigns to entries in the object shader argument table for buffers.
+- `offsets`: An array of integers. Each element represents the location, in bytes, from the start of the corresponding [`MTLBuffer`](mtlbuffer.md) element in `buffers` where the object shader argument data begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `range`: A span of integers that represent the entries in the object shader argument table for buffers. Each entry stores a record of the corresponding element in `buffers` and `offsets`.
 
 ## See Also
 

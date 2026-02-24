@@ -32,7 +32,7 @@ Use [`gss_decapsulate_token(_:_:_:)`](gss_decapsulate_token(_:_:_:).md) at the p
 
 - `input_token`: A buffer holding the token to be encapsulated.
 - `oid`: The token’s object identifier.
-- `output_token`: A buffer the function fills with the encapsulated token. Release this buffer’s memory with a call to   when you are done with it.
+- `output_token`: A buffer the function fills with the encapsulated token. Release this buffer’s memory with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

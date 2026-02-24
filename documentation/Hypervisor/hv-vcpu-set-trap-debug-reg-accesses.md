@@ -29,7 +29,7 @@ The equivalent system register is `MDCR_EL2.TDA`.
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.
-- `value`: A Boolean value that if   indicates debug-register accesses in the guest trap to the host.
+- `value`: A Boolean value that if `true` indicates debug-register accesses in the guest trap to the host.
 
 ## See Also
 

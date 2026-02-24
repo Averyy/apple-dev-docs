@@ -26,7 +26,7 @@ A result code. See `Result Codes`.
 
 ## Parameters
 
-- `queue`:   being reset, that may contain multiple buffers.
+- `queue`: `CMBufferQueue` being reset, that may contain multiple buffers.
 - `callback`: Function to be called for each buffer.  The callback should not make other calls to the buffer queue.
 - `refcon`: Reference constant to be passed to the callback function.
 

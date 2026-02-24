@@ -31,7 +31,7 @@ SwiftUI performs the action for key-down and key-repeat events.
 ## Parameters
 
 - `key`: The key to match against incoming hardware keyboard events.
-- `action`: The action to perform. Return   to consume the   event and prevent further dispatch, or   to allow dispatch   to continue.
+- `action`: The action to perform. Return `.handled` to consume the event and prevent further dispatch, or `.ignored` to allow dispatch to continue.
 
 ## See Also
 

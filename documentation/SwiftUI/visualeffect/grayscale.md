@@ -30,7 +30,7 @@ A grayscale effect reduces the intensity of colors in the view.
 
 ## Parameters
 
-- `amount`: The intensity of grayscale to apply from 0.0 to less   than 1.0. Values closer to 0.0 are more colorful, and values closer to   1.0 are less colorful.
+- `amount`: The intensity of grayscale to apply from 0.0 to less than 1.0. Values closer to 0.0 are more colorful, and values closer to 1.0 are less colorful.
 
 ## See Also
 

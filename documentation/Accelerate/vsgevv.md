@@ -20,11 +20,11 @@ The vectors `A` and `B` are multiplied and the result is stored in matrix `M`, t
 
 ## Parameters
 
-- `l`: Number of elements in vector   and the number of rows in matrix  ; must be a multiple of 4.
-- `n`: Number of elements in vector   and the number of columns in matrix  ; must be a multiple of 4.
-- `A`: Vector with   elements.
-- `B`: Vector with   elements.
-- `M`: Matrix with   rows and   columns.
+- `l`: Number of elements in vector `A` and the number of rows in matrix `M`; must be a multiple of 4.
+- `n`: Number of elements in vector `B` and the number of columns in matrix `M`; must be a multiple of 4.
+- `A`: Vector with `l` elements.
+- `B`: Vector with `n` elements.
+- `M`: Matrix with `l` rows and `n` columns.
 
 ## See Also
 

@@ -22,8 +22,8 @@ func encode(_ time: CMTime, forKey key: String)
 
 ## Parameters
 
-- `time`: A   structure.
-- `key`: The key with which to associate   in the archive.
+- `time`: A `CMTime` structure.
+- `key`: The key with which to associate `time` in the archive.
 
 ## See Also
 

@@ -28,8 +28,8 @@ func cblas_cscal(_ N: __LAPACK_int, _ ALPHA: OpaquePointer, _ X: OpaquePointer?,
 
 - `N`: The number of elements in the vector.
 - `ALPHA`: The constant scaling factor.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

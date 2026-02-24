@@ -23,7 +23,7 @@ func nw_quic_set_max_datagram_frame_size(_ options: nw_protocol_options_t, _ max
 ## Parameters
 
 - `options`: A QUIC protocol options instance.
-- `max_datagram_frame_size`: The value of the   transport parameter.
+- `max_datagram_frame_size`: The value of the `max_datagram_frame_size` transport parameter.
 
 ## See Also
 

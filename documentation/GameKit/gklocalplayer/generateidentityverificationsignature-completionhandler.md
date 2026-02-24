@@ -26,7 +26,11 @@ To generate a signature on your server, see the [`fetchItems(forIdentityVerifica
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call when the request completes. The block receives the following parameters: - **publicKeyUrl**: The URL for the public encryption key.
+- **signature**: The verification signature data that GameKit generates.
+- **salt**: A random `NSString` that GameKit uses to compute the hash and randomize it.
+- **timestamp**: The signature’s creation date and time.
+- **error**: If an error occurrs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

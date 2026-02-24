@@ -22,7 +22,7 @@ The switch title is drawn using the font and styling information from your story
 
 ## Parameters
 
-- `title`: The text to be displayed in the switch. Specifying   clears the current text from the switch.
+- `title`: The text to be displayed in the switch. Specifying `nil` clears the current text from the switch.
 
 ## See Also
 

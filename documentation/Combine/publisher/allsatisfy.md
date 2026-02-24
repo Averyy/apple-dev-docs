@@ -46,7 +46,7 @@ With operators similar to [`reduce(_:_:)`](publisher/reduce(_:_:).md), this publ
 
 ## Parameters
 
-- `predicate`: A closure that evaluates each received element. Return   to continue, or   to cancel the upstream and complete.
+- `predicate`: A closure that evaluates each received element. Return `true` to continue, or `false` to cancel the upstream and complete.
 
 ## See Also
 

@@ -32,7 +32,7 @@ The delegate must implement this method.
 
 - `editor`: The rule editor that sent the message.
 - `criterion`: The criterion for which the value is required.
-- `row`: The row number of  .
+- `row`: The row number of `criterion`.
 
 ## See Also
 

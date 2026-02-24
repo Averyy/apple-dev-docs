@@ -23,13 +23,13 @@ init(centered: Bool? = nil, anchor: UnitPoint? = nil, multiLabelAlignment: Align
 
 ## Parameters
 
-- `centered`: Whether to center the label between two axis values.   If  , default to true for discrete data, false to continuous data.
-- `anchor`: The anchor point on the bounding box of the text element that attaches to the  .
+- `centered`: Whether to center the label between two axis values. If `nil`, default to true for discrete data, false to continuous data.
+- `anchor`: The anchor point on the bounding box of the text element that attaches to the `position`.
 - `multiLabelAlignment`: How labels along the axis are aligned with each other.
 - `collisionResolution`: How labels that collide with others are resolved.
 - `offsetsMarks`: Whether to offset marks to accomodate for the space used by the label.
 - `orientation`: The orientation of the label.
-- `horizontalSpacing`: The horizontal spacing of the label.   If  , a default spacing will be used.
+- `horizontalSpacing`: The horizontal spacing of the label. If `nil`, a default spacing will be used.
 - `verticalSpacing`: The vertical spacing of the label.
 - `content`: The label content.
 

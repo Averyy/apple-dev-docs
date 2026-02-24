@@ -28,7 +28,7 @@ Classes derived from the Foundation framework `NSObject` class can set the class
 
 ## Parameters
 
-- `cls`: A pointer to an   data structure. Pass the class definition for which you wish to set the version.
+- `cls`: A pointer to an [`Class`](class.md) data structure. Pass the class definition for which you wish to set the version.
 - `version`: An integer. Pass the new version number of the class definition.
 
 ## See Also

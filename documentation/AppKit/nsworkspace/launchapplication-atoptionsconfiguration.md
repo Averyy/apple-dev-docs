@@ -27,7 +27,7 @@ It is safe to call this method from any thread in your app in macOS 10.6 and lat
 ## Parameters
 
 - `url`: The application URL.
-- `options`: Options to use when launching the application. See   for possible values.
+- `options`: Options to use when launching the application. See [`NSWorkspace.LaunchOptions`](nsworkspace/launchoptions.md) for possible values.
 - `configuration`: A dictionary containing the configuration options.  This dictionary can be used to pass additional options to the app. The configuration dictionary may be empty, in which case default behavior applies.
 
 ## See Also

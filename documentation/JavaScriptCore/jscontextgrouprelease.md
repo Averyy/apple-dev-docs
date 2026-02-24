@@ -21,7 +21,7 @@ func JSContextGroupRelease(_ group: JSContextGroupRef!)
 
 ## Parameters
 
-- `group`: The   to release.
+- `group`: The [`JSContextGroupRef`](jscontextgroupref.md) to release.
 
 ## See Also
 

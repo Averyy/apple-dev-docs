@@ -25,7 +25,7 @@ To play with the sample app:
 
 1. Launch the Health app on your iPhone, select the Browse tab, and tap Medications.
 2. In the Medications view, add Acetaminophen 500 mg Oral Capsule, Carbinoxamine Maleate Biphasic Release Oral Capsule (10 mg), or Ciprofloxacin Injection 200 mg/20 mL as a sample medication. The sample app associates symptoms with these three medications using their RxNorm codes by mapping the codes to their symptoms in the `SideEffects` dictionary in `SideEffects.swift`.
-3. For each medication, log a dose as  in the As Needed Medications section. The sample app forms a predicate to only look for doses marked as `taken`.
+3. For each medication, log a dose as *taken* in the As Needed Medications section. The sample app forms a predicate to only look for doses marked as `taken`.
 4. Build and run the sample app on the iPhone to see the medication list after providing authorization. Tap a medication to see the most-recent dose event and associated symptoms. When tapping a medication, an additional authorization sheet prompts for authorization to access symptoms data.
 5. To add more medications in the Health app and view them in the sample app, add their RxNorm codes to the `SideEffects` dictionary, along with their associated symptoms. For instance, for piroxicam, the RxNorm code is 105929, and the symptoms can be headache, loss of appetite, and nausea. To view the symptoms, modify `SideEffects` by adding the following code:
 

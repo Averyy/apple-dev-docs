@@ -22,7 +22,7 @@ func setRenderPipelineState(_ pipelineState: any MTLRenderPipelineState)
 
 ## Parameters
 
-- `pipelineState`: A non-    instance.
+- `pipelineState`: A non-`nil` [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance.
 
 
 ---

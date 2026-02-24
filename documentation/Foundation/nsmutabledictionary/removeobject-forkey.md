@@ -36,7 +36,7 @@ stations = [[NSMutableDictionary alloc]
 
 ## Parameters
 
-- `aKey`: The key to remove.
+- `aKey`: The key to remove. > ❗ **Important**:  Raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if `aKey` is `nil`.
 
 ## See Also
 

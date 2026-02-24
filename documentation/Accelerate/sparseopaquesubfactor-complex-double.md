@@ -22,6 +22,12 @@ struct SparseOpaqueSubfactor_Complex_Double
 
 #### Overview
 
+- **`attributes`**: Attributes of subfactor. Notably transpose indicates whether it should be considered as the transpose of its underlying contents (e.g. should it count as L or L^T if `.contents=SparseSubfactorL`).
+- **`contents`**: Subfactor this represents, e.g. L or Q.
+- **`factor`**: Underlying factorization this subfactor is part of.
+- **`workspaceRequiredStatic`**: The size of the workspace, in bytes, required to perform `SparseMultiply` or `SparseSolve` with this subfactor is given by the expression: `workspaceRequiredStatic + nrhs*workspaceRequiredPerRhs` where `nrhs` is the number of right-hand side vectors.
+- **`workspaceRequiredPerRHS`**: The size of the workspace, in bytes, required to perform SparseMultiply() or SparseSolve() with this subfactor is given by the expression: workspaceRequiredStatic + nrhs*workspaceRequiredPerRhs where nrhs is the number of right-hand side vectors.
+
 ## Topics
 
 ### Initializers

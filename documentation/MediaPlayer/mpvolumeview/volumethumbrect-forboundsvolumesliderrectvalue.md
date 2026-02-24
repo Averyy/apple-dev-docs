@@ -29,7 +29,7 @@ The rectangle you return should reflect the size of your thumb image and its cur
 ## Parameters
 
 - `bounds`: The bounding rectangle of the thumb image.
-- `rect`: The drawing rectangle for the receiver’s track, as returned by the   method.
+- `rect`: The drawing rectangle for the receiver’s track, as returned by the [`volumeSliderRect(forBounds:)`](mpvolumeview/volumesliderrect(forbounds:).md) method.
 - `value`: The current value of the volume slider.
 
 ## See Also

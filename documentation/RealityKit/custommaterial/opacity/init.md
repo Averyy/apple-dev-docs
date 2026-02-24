@@ -58,7 +58,7 @@ The following Metal code demonstrates how to emulate the blending logic RealityK
 
 ## Parameters
 
-- `value`: The opacity property from the  ’s    property.
+- `value`: The opacity property from the [`PhysicallyBasedMaterial`](physicallybasedmaterial.md)’s [`blending`](physicallybasedmaterial/blending-swift.property.md) property.
 
 ## See Also
 

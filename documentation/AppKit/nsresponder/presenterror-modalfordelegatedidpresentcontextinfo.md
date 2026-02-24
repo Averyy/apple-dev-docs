@@ -29,8 +29,11 @@ It is not recommended that you attempt to override this method.  If you wish to 
 - `error`: The object encapsulating information about the error.
 - `window`: The window object identifying the window owning the document-modal sheet.
 - `delegate`: The modal delegate for the sheet.
-- `didPresentSelector`: A selector identifying the message to be sent to the modal delegate. The   selector must have the signature:
-- `contextInfo`: Supplemental data to be passed to the modal delegate; can be  .
+- `didPresentSelector`: A selector identifying the message to be sent to the modal delegate. The `didPresentSelector` selector must have the signature: ```objc
+- (void)didPresentErrorWithRecovery:(BOOL)didRecover
+   contextInfo:(void *)contextInfo
+```
+- `contextInfo`: Supplemental data to be passed to the modal delegate; can be `NULL`.
 
 ## See Also
 

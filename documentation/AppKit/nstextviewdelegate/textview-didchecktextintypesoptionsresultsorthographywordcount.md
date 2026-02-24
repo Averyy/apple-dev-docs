@@ -27,9 +27,9 @@ Invoked by [`handleTextCheckingResults(_:forRange:types:options:orthography:word
 
 - `view`: The text view sending the message.
 - `range`: The range that was checked.
-- `checkingTypes`: The type of checking that was performed. The possible constants are listed in   and can be combined using the C bit-wise   operator to perform multiple checks at the same time.
+- `checkingTypes`: The type of checking that was performed. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/Foundation/NSTextCheckingTypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
 - `options`: A dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
-- `results`: An array of   instances.
+- `results`: An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult) instances.
 - `orthography`: The orthography of the text.
 - `wordCount`: The number of words checked.
 

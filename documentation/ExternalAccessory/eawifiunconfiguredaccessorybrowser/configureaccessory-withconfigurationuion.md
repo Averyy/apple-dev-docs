@@ -24,7 +24,7 @@ This method stops the search for unconfigured accessories and begins the configu
 ## Parameters
 
 - `accessory`: The accessory the app is configuring.
-- `viewController`: The view controller that will host the system-provided setup UI in the app. Typically,   is the same view controller the app is using to present its user interface at the time it calls this method.
+- `viewController`: The view controller that will host the system-provided setup UI in the app. Typically, `viewController` is the same view controller the app is using to present its user interface at the time it calls this method.
 
 ## See Also
 

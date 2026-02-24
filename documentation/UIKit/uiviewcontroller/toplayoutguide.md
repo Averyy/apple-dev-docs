@@ -23,8 +23,8 @@ The [`topLayoutGuide`](uiviewcontroller/toplayoutguide.md) property comes into p
 
 The value of this property is, specifically, the value of the [`length`](uilayoutsupport/length.md) property of the object returned when you query this property. This value is constrained by either the view controller or by its enclosing container view controller (such as a navigation or tab bar controller), as follows:
 
-- A view controller  a container view controller constrains this property to indicate the bottom of the status bar, if visible, or else to indicate the top edge of the view controller’s view.
-- A view controller  a container view controller does not set this property’s value. Instead, the container view controller constrains the value to indicate:
+- A view controller **not within** a container view controller constrains this property to indicate the bottom of the status bar, if visible, or else to indicate the top edge of the view controller’s view.
+- A view controller **within** a container view controller does not set this property’s value. Instead, the container view controller constrains the value to indicate:
 - The bottom of the navigation bar, if a navigation bar is visible
 - The bottom of the status bar, if only a status bar is visible
 - The top edge of the view controller’s view, if neither a status bar nor navigation bar is visible

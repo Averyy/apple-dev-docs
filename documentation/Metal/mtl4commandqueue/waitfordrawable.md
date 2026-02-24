@@ -30,7 +30,7 @@ Call this method multiple times if you commit your command buffers to multiple c
 
 ## Parameters
 
-- `drawable`:   instance to signal.
+- `drawable`: [`MTLDrawable`](mtldrawable.md) instance to signal.
 
 
 ---

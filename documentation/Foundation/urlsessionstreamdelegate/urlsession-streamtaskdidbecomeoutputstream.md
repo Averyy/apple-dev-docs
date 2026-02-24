@@ -28,8 +28,8 @@ This delegate method will only be called after all enqueued reads and writes for
 
 - `session`: The session of the stream task that has been completed.
 - `streamTask`: The stream task that has been completed.
-- `inputStream`: The created input stream. This   object is unopened.
-- `outputStream`: The created output stream. This   object is unopened
+- `inputStream`: The created input stream. This [`InputStream`](inputstream.md) object is unopened.
+- `outputStream`: The created output stream. This [`OutputStream`](outputstream.md) object is unopened
 
 
 ---

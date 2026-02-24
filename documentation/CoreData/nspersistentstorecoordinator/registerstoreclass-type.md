@@ -26,8 +26,8 @@ You must register the subclass before you load instances of it into the persiste
 
 ## Parameters
 
-- `storeClass`: A subclass of  .
-- `type`: The store type. For possible values, see  .
+- `storeClass`: A subclass of [`NSPersistentStore`](nspersistentstore.md).
+- `type`: The store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
 
 ## See Also
 

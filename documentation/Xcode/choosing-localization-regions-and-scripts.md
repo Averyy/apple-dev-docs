@@ -14,11 +14,11 @@ For information about how the `Bundle` object finds the best match between the l
 
 ##### Understand the Language Identifier
 
-A  is a compound syntax that represents a combination of a language, regional variant, and script. It contains a language code, and, optionally, a region code, and a script code.
+A *language identifier* is a compound syntax that represents a combination of a language, regional variant, and script. It contains a language code, and, optionally, a region code, and a script code.
 
-For a language used in many regions, use just the  that represents the language (`[language code]`). For example, to specify Serbian, use the `sr` language code. Use the two-letter ISO 639-1 standard (preferred) or, if no code is available for a particular language, use the ISO 639-2 standard instead.
+For a language used in many regions, use just the *language code* that represents the language (`[language code]`). For example, to specify Serbian, use the `sr` language code. Use the two-letter ISO 639-1 standard (preferred) or, if no code is available for a particular language, use the ISO 639-2 standard instead.
 
-To distinguish between different languages and regional variants, use a language code with a region code separated by hyphens (`[language code]-[region code]`). A  represents a country or region. Use the ISO 3166-1 standard, a two-letter, capitalized code, such as, `US`, `GB`, `AU`, and `FR`. For example, to specify the Swiss variant of the German language, use `de-CH`. If it’s not possible to create a language identifier using the ISO 3166-1 standard, use the United Nations M.49 standard, which is a numeric code.
+To distinguish between different languages and regional variants, use a language code with a region code separated by hyphens (`[language code]-[region code]`). A *region code* represents a country or region. Use the ISO 3166-1 standard, a two-letter, capitalized code, such as, `US`, `GB`, `AU`, and `FR`. For example, to specify the Swiss variant of the German language, use `de-CH`. If it’s not possible to create a language identifier using the ISO 3166-1 standard, use the United Nations M.49 standard, which is a numeric code.
 
 To specify a script, combine a language code with a script code in the ISO 3166-1 standard, separated by a hyphen (`[language code]-[script code]`), as in `az-Cyrl` for Azerbaijani in the Cyrillic script. To represent Chinese spoken in Taiwan and written in traditional Chinese script, use `zh-Hant-TW`.
 

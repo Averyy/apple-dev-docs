@@ -13,9 +13,9 @@ optional func testCase(_ testCase: XCTestCase, didFailWithDescription descriptio
 
 ## Parameters
 
-- `testCase`: The test case that reported a failure. Additional information about the test case can be retrieved from the test case’s associated  .
+- `testCase`: The test case that reported a failure. Additional information about the test case can be retrieved from the test case’s associated [`XCTestRun`](xctestrun.md).
 - `description`: A textual description of the failure.
-- `filePath`: The path to the file in the failure occurred, or   if the file path is unknown.
+- `filePath`: The path to the file in the failure occurred, or `nil` if the file path is unknown.
 - `lineNumber`: The line number on which the failure was reported.
 
 ## See Also

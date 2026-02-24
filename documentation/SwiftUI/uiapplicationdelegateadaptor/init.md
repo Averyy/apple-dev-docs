@@ -44,7 +44,7 @@ If your delegate isn’t observable, SwiftUI invokes the [`init(_:)`](uiapplicat
 
 ## Parameters
 
-- `delegateType`: The type of application delegate that you   define in your app, which conforms to the     and     protocols.
+- `delegateType`: The type of application delegate that you define in your app, which conforms to the [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) and [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocols.
 
 
 ---

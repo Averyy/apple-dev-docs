@@ -30,6 +30,10 @@ object StatusPasscodeCompliance
 | Allowed in system scope | iOS, Shared iPad, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
+## Properties
+
+- `passcode.is-compliant` (boolean) *(required)*: If `true`, the passcode is in compliance with all passcode policies set on the device. If `false`, the passcode isn’t in compliance with one or more passcode policies set on the device. When there are no passcode policies on the device, this value `true`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

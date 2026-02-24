@@ -51,7 +51,7 @@ TextEditor(text: $text)
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that controls the   presentation of the find and replace interface.
+- `isPresented`: A binding to a Boolean value that controls the presentation of the find and replace interface.
 
 ## See Also
 

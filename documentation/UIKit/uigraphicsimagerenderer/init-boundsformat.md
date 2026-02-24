@@ -29,7 +29,7 @@ Use this initializer to create an image renderer when you want to override the d
 ## Parameters
 
 - `bounds`: The bounds of the image context the image renderer creates and subsequently draws upon. Specify values in points in the Core Graphics coordinate space.
-- `format`: A   object that encapsulates the format used to create the renderer context.
+- `format`: A [`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md) object that encapsulates the format used to create the renderer context.
 
 ## See Also
 

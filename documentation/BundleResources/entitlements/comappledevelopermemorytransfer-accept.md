@@ -9,6 +9,10 @@ An entitlement that grants an alternative browser engine’s web-content extensi
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Add this entitlement to your alternative browser engine’s web-content extension to increase the memory allocation for its rendering extension. Set the value of this entitlement to your browser app’s bundle ID.

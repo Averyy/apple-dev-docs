@@ -69,7 +69,7 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- In automatic reference counting (ARC) mode, the compiler may extend the lifetime of `MLMultiArray` longer than expected when the `.dataPointer` property is used. This may increase memory usage. (80895213)  Enclose `.dataPointer` access in an `@autoreleasepool {... }` block.
+- In automatic reference counting (ARC) mode, the compiler may extend the lifetime of `MLMultiArray` longer than expected when the `.dataPointer` property is used. This may increase memory usage. (80895213) **Workaround:** Enclose `.dataPointer` access in an `@autoreleasepool {... }` block.
 
 ##### Create Ml
 
@@ -83,7 +83,7 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- Using dispatch semaphores in an iOS app running in a device simulator on a Mac with Apple silicon running macOS 11 causes the app to crash. (81783378)  In Xcode, select Product > Scheme > Edit Scheme, then deselect Run > Options > Queue Debugging > “Enable backtrace recording.”
+- Using dispatch semaphores in an iOS app running in a device simulator on a Mac with Apple silicon running macOS 11 causes the app to crash. (81783378) **Workaround:** In Xcode, select Product > Scheme > Edit Scheme, then deselect Run > Options > Queue Debugging > “Enable backtrace recording.”
 
 ##### Find My
 
@@ -95,18 +95,18 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- When using Guided Access with VoiceOver, you might be unable to enter the Guided Access passcode to end Guided Access. (79370792)  If a device passcode is set, force restart your device to end Guided Access.
+- When using Guided Access with VoiceOver, you might be unable to enter the Guided Access passcode to end Guided Access. (79370792) **Workaround:** If a device passcode is set, force restart your device to end Guided Access.
 
 ##### Home
 
 ###### Known Issues
 
 - You can’t pair with Matter accessories that use Thread. (80991829)
-- You can’t pair a third-party app with Matter accessories through the app paring flow if the accessory is already paired with another app. (80059432)  Remove accessory pairing from other apps, then pair the third-party app.
-- You can’t add a flow to a third-party app with Matter accessories if you haven’t created an Apple Home. (80058744)  Launch the Home app to create a Home before you add a flow.
-- Matter accessories aren’t reachable while Apple TV is connected via Wi-Fi. (79582629)  Connect Apple TV via Ethernet.
-- Matter accessories might enter a No Response state after pairing. (76019163)  Remove the accessory from Home, reset the accessory, and add it back to Home. If the issue persists, remove your Home hub from Home and re-add it. If the issue still persists, remove the home and create a new one.
-- The initial pairing attempt with a Matter accessory might take an unexpectedly long time and eventually fail. (77967587)  Retry pairing the accessory.
+- You can’t pair a third-party app with Matter accessories through the app paring flow if the accessory is already paired with another app. (80059432) **Workaround:** Remove accessory pairing from other apps, then pair the third-party app.
+- You can’t add a flow to a third-party app with Matter accessories if you haven’t created an Apple Home. (80058744) **Workaround:** Launch the Home app to create a Home before you add a flow.
+- Matter accessories aren’t reachable while Apple TV is connected via Wi-Fi. (79582629) **Workaround:** Connect Apple TV via Ethernet.
+- Matter accessories might enter a No Response state after pairing. (76019163) **Workaround:** Remove the accessory from Home, reset the accessory, and add it back to Home. If the issue persists, remove your Home hub from Home and re-add it. If the issue still persists, remove the home and create a new one.
+- The initial pairing attempt with a Matter accessory might take an unexpectedly long time and eventually fail. (77967587) **Workaround:** Retry pairing the accessory.
 - You can only pair up to five Matter accessories in a home. (77967671)
 - Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)
 
@@ -114,7 +114,7 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- After canceling a search in the widget gallery, the cancel button remains visible, which might blank out the widget gallery. (78572049)  Dismiss and reopen the widget gallery.
+- After canceling a search in the widget gallery, the cancel button remains visible, which might blank out the widget gallery. (78572049) **Workaround:** Dismiss and reopen the widget gallery.
 
 ##### Icloud
 
@@ -150,7 +150,7 @@ The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and i
 - The APIs support `String` interpolations for the metadata parameter. The `String` interpolations are the same as those accepted by the [`Logger APIs`](https://developer.apple.comhttps://developer.apple.com/documentation/os/osloginterpolation).
 - The OSSignposter API supports all formatting and privacy options — previously offered by the `os_signpost` functions — and follows the same syntax as the Logger APIs.
 - The APIs provide performance improvements over the legacy APIs.
-- The `OSSignposter type` provides a new scoped API for surrounding a block of code by `begin` and `end` signposts, [`withIntervalSignpost(_:id:_:around:)`](https://developer.apple.com/documentation/os/OSSignposter/withIntervalSignpost(_:id:_:around:)).  These APIs are unavailable in iOS 14 and iPadOS 14 and earlier; however, the existing `os_signpost` API remains available. (54756831)
+- The `OSSignposter type` provides a new scoped API for surrounding a block of code by `begin` and `end` signposts, [`withIntervalSignpost(_:id:_:around:)`](https://developer.apple.com/documentation/os/OSSignposter/withIntervalSignpost(_:id:_:around:)). **Note:** These APIs are unavailable in iOS 14 and iPadOS 14 and earlier; however, the existing `os_signpost` API remains available. (54756831)
 
 ##### Maps
 
@@ -195,7 +195,7 @@ if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 2
 
 ###### Known Issues
 
-- You might be unable to create new projects in Reality Composer. (79418400)  Create a new project in Reality Composer on macOS and transfer the `.rcproject` file to your device via AirDrop or Mail.
+- You might be unable to create new projects in Reality Composer. (79418400) **Workaround:** Create a new project in Reality Composer on macOS and transfer the `.rcproject` file to your device via AirDrop or Mail.
 
 ##### Safari
 
@@ -217,7 +217,7 @@ if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 2
 
 ###### Known Issues
 
-- Media items added to the default instance of [`SHMediaLibrary`](https://developer.apple.com/documentation/ShazamKit/SHMediaLibrary) don’t appear in Shazam. (77785557)  Touch and hold the Music Recognition Control Center module to view [`SHMediaLibrary`](https://developer.apple.com/documentation/ShazamKit/SHMediaLibrary) contents.
+- Media items added to the default instance of [`SHMediaLibrary`](https://developer.apple.com/documentation/ShazamKit/SHMediaLibrary) don’t appear in Shazam. (77785557) **Workaround:** Touch and hold the Music Recognition Control Center module to view [`SHMediaLibrary`](https://developer.apple.com/documentation/ShazamKit/SHMediaLibrary) contents.
 
 ##### Siri
 
@@ -245,9 +245,9 @@ for await note in NotificationCenter.default.notifications(named: .MyNote) {
 
 ###### Known Issues
 
-- Swift libraries depending on Combine may fail to build for targets including ARMv7 and i386 architectures. (82183186, 82189214)  Use an updated version of the library that isn’t impacted (if available) or remove ARMv7 and i386 support (for example, increase the deployment target of the library to iOS 11 or higher).
+- Swift libraries depending on Combine may fail to build for targets including ARMv7 and i386 architectures. (82183186, 82189214) **Workaround:** Use an updated version of the library that isn’t impacted (if available) or remove ARMv7 and i386 support (for example, increase the deployment target of the library to iOS 11 or higher).
 
-- Applications linking to RealityKit with the iOS 15 or macOS 12 SDKs will fail to launch on a previous OS. (79584511)  Add `OTHER_LD_FLAGS = -weak_framework RealityFoundation` to your Xcode Project settings to allow running RealityKit apps on an older OS.
+- Applications linking to RealityKit with the iOS 15 or macOS 12 SDKs will fail to launch on a previous OS. (79584511) **Workaround:** Add `OTHER_LD_FLAGS = -weak_framework RealityFoundation` to your Xcode Project settings to allow running RealityKit apps on an older OS.
 
 ##### Settings
 

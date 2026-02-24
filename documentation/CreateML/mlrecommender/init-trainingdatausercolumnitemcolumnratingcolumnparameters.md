@@ -19,7 +19,7 @@ init(trainingData: DataFrame, userColumn: String, itemColumn: String, ratingColu
 - `trainingData`: A data frame containing training data.
 - `userColumn`: Name of the Int or String typed column in the training data containing user identifiers.
 - `itemColumn`: Name of the Int or String typed column in the training data containing item identifiers.
-- `ratingColumn`: Name of an Int or Double typed column optionally in the training data containing scores or   ratings. The default is nil, which corresponds to no rating column.
+- `ratingColumn`: Name of an Int or Double typed column optionally in the training data containing scores or ratings. The default is nil, which corresponds to no rating column.
 - `parameters`: Model training parameters.
 
 ## See Also

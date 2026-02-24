@@ -8,6 +8,9 @@ Select the iPad or the Mac user interface idiom in your Mac app built with Mac C
 
 A Mac app built with Mac Catalyst can run in either [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) or [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) user interface idioms. To choose the idiom in which your app runs, select from the following options after you turn on Mac Catalyst in your Xcode project:
 
+- **Scale Interface to Match iPad**: Run your app in the [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) idiom. Select this option to quickly bring your iPad app to the Mac.
+- **Optimize Interface for Mac**: Run your app in the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) idiom. Select this option to show controls that look and behave like those available in AppKit.
+
 > **Note**:  To learn more about turning on Mac Catalyst in your Xcode project, see [`Creating a Mac version of your iPad app`](creating-a-mac-version-of-your-ipad-app.md).
 
 ##### Start with the Ipad Idiom

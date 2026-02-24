@@ -20,7 +20,7 @@ You can register as many search handlers as you like. If you register the same i
 
 ## Parameters
 
-- `handler`: The class instance that conforms to   and provides help content.
+- `handler`: The class instance that conforms to `NSUserInterfaceItemSearching` and provides help content.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Region events are delivered to the [`locationManager(_:didEnterRegion:)`](clloca
 
 ## Parameters
 
-- `region`: The region object that defines the boundary to monitor. This parameter must not be  .
+- `region`: The region object that defines the boundary to monitor. This parameter must not be `nil`.
 - `accuracy`: The distance past the border (measured in meters) at which to generate notifications. You can use this value to prevent the delivery of multiple notifications when the user is close to the border’s edge.
 
 ## See Also

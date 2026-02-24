@@ -20,7 +20,7 @@ Removing a gesture recognizer also removes the strong reference to it held by th
 
 ## Parameters
 
-- `gestureRecognizer`: The gesture recognizer to remove. This parameter must not be  .
+- `gestureRecognizer`: The gesture recognizer to remove. This parameter must not be `nil`.
 
 ## See Also
 

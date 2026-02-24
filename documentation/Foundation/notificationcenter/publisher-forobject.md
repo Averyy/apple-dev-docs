@@ -27,7 +27,7 @@ A [`Publisher`](https://developer.apple.com/documentation/Combine/Publisher) tha
 ## Parameters
 
 - `name`: The name of the notification to publish.
-- `object`: The object posting the named notification. If  , the publisher emits elements for any object producing a notification with the given name.
+- `object`: The object posting the named notification. If `nil`, the publisher emits elements for any object producing a notification with the given name.
 
 ## See Also
 

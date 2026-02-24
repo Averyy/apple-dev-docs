@@ -24,8 +24,8 @@ A parametric value offset by `distanceStep` from `parametricValue`.
 
 ## Parameters
 
-- `parametricValue`: The floating point   parametric value.
-- `distanceStep`: The distance to offset     can be positive or negative.
+- `parametricValue`: The floating point `[0, count-1]` parametric value.
+- `distanceStep`: The distance to offset `parametricValue;` `distanceStep` can be positive or negative.
 
 ## See Also
 

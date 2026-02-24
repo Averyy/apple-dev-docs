@@ -27,10 +27,10 @@ The number of bytes written to the stream. A return value of `0` indicates that 
 ## Parameters
 
 - `plist`: The property list that you want to write out.
-- `stream`: An   instance that is open and ready to receive the property list data.
-- `format`: One of the property list formats defined in  .
-- `opt`: Currently unused. Set to  .
-- `error`: A pointer that the function may set to an   object when an error occurs to provide additional information about the error.
+- `stream`: An [`OutputStream`](outputstream.md) instance that is open and ready to receive the property list data.
+- `format`: One of the property list formats defined in [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
+- `opt`: Currently unused. Set to `0`.
+- `error`: A pointer that the function may set to an [`NSError`](nserror.md) object when an error occurs to provide additional information about the error.
 
 ## See Also
 

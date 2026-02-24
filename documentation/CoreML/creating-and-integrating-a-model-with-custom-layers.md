@@ -6,7 +6,7 @@ Add models with custom neural-network layers to your app.
 
 #### Overview
 
-New network layers and architectures solve problems that might be difficult or impractical with code. You can support each new layer type before Core ML directly supports it by implementing a . A custom layer is a class that adopts [`MLCustomLayer`](mlcustomlayer.md) and implements the methods to run a neural network layer in code.
+New network layers and architectures solve problems that might be difficult or impractical with code. You can support each new layer type before Core ML directly supports it by implementing a *custom layer*. A custom layer is a class that adopts [`MLCustomLayer`](mlcustomlayer.md) and implements the methods to run a neural network layer in code.
 
 > **Note**:  Core ML supports models with custom layers beginning with these software releases: iOS 11.2, macOS 10.13.2, tvOS 11.2 and watchOS 4.2.
 
@@ -39,6 +39,12 @@ Create a class for each custom layer that the model has in its list of dependenc
 > ❗ **Important**:  Swift classes must subclass [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
 
 Adopt the [`MLCustomLayer`](mlcustomlayer.md) protocol by implementing the following:
+
+- **[`init(parameters:)`](mlcustomlayer/init(parameters:).md)**: An initializer that configures the layer’s parameters that the model defines in its Core ML model file. Core ML initializes each layer once at load time.
+- **[`setWeightData(_:)`](mlcustomlayer/setweightdata(_:).md)**: A method that configures the layer’s weights that the model defines in its Core ML model file. Core ML invokes this method once at load time, after initialization.
+- **[`outputShapes(forInputShapes:)`](mlcustomlayer/outputshapes(forinputshapes:).md)**: A method that defines the layer’s output shapes based on the input shapes at runtime. Core ML invokes this method at load time, after initialization, and again each time the layer’s input shapes change.
+- **[`evaluate(inputs:outputs:)`](mlcustomlayer/evaluate(inputs:outputs:).md)**: A method that defines the computational behavior for your custom layer. Core ML invokes this method each time your model makes a prediction on the CPU.
+- **[`encode(commandBuffer:inputs:outputs:)`](mlcustomlayer/encode(commandbuffer:inputs:outputs:).md)**: An optional method that defines your layer’s computational behavior with GPU commands.
 
 Core ML invokes the appropriate [`MLCustomLayer`](mlcustomlayer.md) methods for each custom layer at runtime when your app calls the [`prediction(from:)`](mlmodel/prediction(from:)-9y2aa.md) method.
 

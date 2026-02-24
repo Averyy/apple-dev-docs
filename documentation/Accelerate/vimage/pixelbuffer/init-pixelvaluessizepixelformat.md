@@ -24,7 +24,7 @@ init<U>(pixelValues: U, size: vImage.Size, pixelFormat: Format.Type = Format.sel
 
 ## Parameters
 
-- `pixelValues`: The source pixel values.   must contain   elements.
+- `pixelValues`: The source pixel values. `pixelValues` must contain `size.width * size.height * channelCount` elements.
 - `size`: The size of the new buffer.
 - `pixelFormat`: The pixel format of the initialized buffer.
 

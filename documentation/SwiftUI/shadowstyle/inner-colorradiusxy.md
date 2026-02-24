@@ -32,8 +32,8 @@ Inner shadows draw on top of the source content by blurring, tinting, inverting 
 
 - `color`: The shadow’s color.
 - `radius`: The shadow’s size.
-- `x`: A horizontal offset you use to position the shadow   relative to this view.
-- `y`: A vertical offset you use to position the shadow   relative to this view.
+- `x`: A horizontal offset you use to position the shadow relative to this view.
+- `y`: A vertical offset you use to position the shadow relative to this view.
 
 ## See Also
 

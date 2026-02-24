@@ -54,6 +54,15 @@ Specify `com.apple.configuration.screensharing.connection` as the declaration ty
 - [object ScreenSharingConnectionDisplayConfigurationObject](screensharingconnectiondisplayconfigurationobject.md)
   The display configuration for this connection.
 
+## Properties
+
+- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the required credentials for this connection to authenticate with the screen-sharing server. Set the corresponding asset type to `com.apple.asset.credential.userpassword`.
+- `ConnectionUUID` (string) *(required)*: A unique identifier for this connection when it’s in a connection group.
+- `DisplayConfiguration` (ScreenSharingConnectionDisplayConfigurationObject) *(required)*: The display configuration for this connection.
+- `DisplayName` (string) *(required)*: The name of the connection.
+- `HostName` (string) *(required)*: The host name or IP address of the Mac that hosts the screen-sharing connection.
+- `Port` (integer): The TCP port number on the host to initiate the connection.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

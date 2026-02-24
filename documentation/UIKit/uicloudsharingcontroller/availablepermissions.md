@@ -25,6 +25,20 @@ Setting the [`availablePermissions`](uicloudsharingcontroller/availablepermissio
 
 Specifying no options for [`availablePermissions`](uicloudsharingcontroller/availablepermissions.md) tells [`UICloudSharingController`](uicloudsharingcontroller.md) to display all options to the user.
 
+**Swift**:
+
+```swift
+// Allow only the invited participants and read/write permission options.
+cloudSharingController.availablePermissions = [.allowPrivate, .allowReadWrite]
+```
+
+**Objective-C**:
+
+```objc
+// Allow only the invited participants and read/write permission options.
+[cloudSharingController setAvailablePermissions:UICloudSharingPermissionAllowPrivate | UICloudSharingPermissionAllowReadWrite];
+```
+
 ##### Display Groupings
 
 The [`UICloudSharingController`](uicloudsharingcontroller.md) displays the permission options to the user based on the options set in the [`availablePermissions`](uicloudsharingcontroller/availablepermissions.md) property. The user interface displays the options in two groups, access options group and permission options group. The [`allowPublic`](uicloudsharingcontroller/permissionoptions/allowpublic.md) and [`allowPrivate`](uicloudsharingcontroller/permissionoptions/allowprivate.md) options control the display of the access options group, while the [`allowReadOnly`](uicloudsharingcontroller/permissionoptions/allowreadonly.md) and [`allowReadWrite`](uicloudsharingcontroller/permissionoptions/allowreadwrite.md) options control the display of the permission options group.

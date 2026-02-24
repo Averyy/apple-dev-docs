@@ -60,7 +60,7 @@ table.addColumn(derivedColumn, named: "Description")
 
 ## Parameters
 
-- `lazyTransform`: The implementation of your transform must accept a row from the data table and return   a type that conforms to  .
+- `lazyTransform`: A thread-safe row transformation function. The implementation of your transform must accept a row from the data table and return a type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md).
 
 
 ---

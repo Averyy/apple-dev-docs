@@ -32,7 +32,7 @@ A number indicating the outcome of the operation:
 
 ## Parameters
 
-- `buffer`: A data buffer. The buffer must be large enough to contain the number of bytes specified by  .
+- `buffer`: A data buffer. The buffer must be large enough to contain the number of bytes specified by `len`.
 - `len`: The maximum number of bytes to read.
 
 ## See Also

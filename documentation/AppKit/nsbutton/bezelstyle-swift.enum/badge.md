@@ -18,6 +18,22 @@ case badge
 
 Use this style of button when you need to provide additional information about something. For example, the count of an item.
 
+**Swift**:
+
+```swift
+let button = NSButton()
+button.title = "Badge"
+button.bezelStyle = .badge
+```
+
+**Objective-C**:
+
+```objc
+NSButton *button = [[NSButton alloc] init];
+button.title = @"Badge";
+button.bezelStyle = NSBezelStyleBadge;
+```
+
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also

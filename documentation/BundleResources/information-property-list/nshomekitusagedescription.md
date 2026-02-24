@@ -11,6 +11,10 @@ A message that tells people why the app is requesting access to their HomeKit co
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s HomeKit configuration data.

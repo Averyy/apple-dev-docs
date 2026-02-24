@@ -29,7 +29,7 @@ Rules created using this method can run arbitrary code in their predicate and ac
 
 ## Parameters
 
-- `action`: A block to be invoked after the rule’s predicate is satisfied. The block takes a single parameter:
+- `action`: A block to be invoked after the rule’s predicate is satisfied. The block takes a single parameter: - **system**: The rule system in whose context the rule is executing its action.
 
 
 ---

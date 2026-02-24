@@ -40,7 +40,7 @@ See [`RuleMark`](rulemark.md) for the setup of the structure containing the `sta
 
 ## Parameters
 
-- `x`: The x position.   If   is  , the rule will be centered horizontally by default.
+- `x`: The x position.   If `x` is `nil`, the rule will be centered horizontally by default.
 - `yStart`: The value plotted with y start.
 - `yEnd`: The value plotted with y end.
 

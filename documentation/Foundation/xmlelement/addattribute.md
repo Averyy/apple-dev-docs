@@ -21,7 +21,7 @@ The order of multiple attributes is preserved if the `NSXMLPreserveAttributeOrde
 
 ## Parameters
 
-- `attribute`: An XML node object representing an attribute. If the receiver already has an attribute with the same name,   replaces the old attribute.
+- `attribute`: An XML node object representing an attribute. If the receiver already has an attribute with the same name, `anAttribute` replaces the old attribute.
 
 ## See Also
 

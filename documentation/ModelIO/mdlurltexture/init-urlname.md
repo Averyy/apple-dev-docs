@@ -30,7 +30,7 @@ This initializer does not load texel data from the URL; the [`MDLURLTexture`](md
 ## Parameters
 
 - `URL`: The URL from which to load texture data.
-- `name`: The   property for the new texture object.
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
 
 
 ---

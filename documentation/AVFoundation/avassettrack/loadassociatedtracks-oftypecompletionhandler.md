@@ -23,7 +23,8 @@ func loadAssociatedTracks(ofType trackAssociationType: AVAssetTrack.AssociationT
 ## Parameters
 
 - `trackAssociationType`: The track association type to load tracks for.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **tracks**: The array of associated tracks, which may be empty if there are no tracks for the specified association type. The value is `nil` if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

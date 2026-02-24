@@ -8,6 +8,14 @@ Provide a seamless, cross-platform user experience by building a native menu bar
 
 On iPadOS and macOS, the menu bar provides access to crucial system-provided actions, such as Cut, Copy, Paste, and window management. The system groups these actions by function into menus and submenus through the menu bar. Apps can add contextual actions, like showing and hiding a sidebar, and can also create custom menus and menu items to allow people to perform app-specific actions from the menu bar. You can also bind menu bar to keyboard shortcuts to make your app quicker and easier to use.
 
+**macOS**:
+
+![The menu bar for Messages on macOS. The File menu is open with active menu items for New Message, Close, Open Conversation in New Window, and Print.](https://docs-assets.developer.apple.com/published/02e8432fcb03ffd89cac34134e89813c/menu-bar-groups-macos%402x.png)
+
+**iPadOS**:
+
+![The menu bar for Messages on iPadOS. The File menu is open with active menu items for New Message, Close Window, and Open Conversation in New Window.](https://docs-assets.developer.apple.com/published/9a75c4c8cefa5666440b552d57a023ae/menu-bar-groups-ipados%402x.png)
+
 Apps include instances of [`Scene`](scene.md) which display the main views of the app. Each scene provides different default menu sets and actions in the menu bar. Contextually relevant menus and actions, and even custom menus and actions, are specified with the [`commands(content:)`](scene/commands(content:).md) modifier.
 
 The order of system-provided menus and menu items is consistent across all apps, but some menus and menu items are added depending on context. For example, document-based apps include options in the File menu for creating and opening documents. Similarly, not all apps include text-formatting capabilities, but those that include text editing views get a Format menu with options for choosing fonts and styling text by including [`TextFormattingCommands`](textformattingcommands.md) in the scene’s commands. The system will then add the appropriate menu groups and items that people expect in this context.
@@ -33,6 +41,14 @@ struct MyApp: App {
 }
 ```
 
+**macOS**:
+
+![The menu bar for MyApp on macOS. The File menu is open with active menu items for New Window and Close.](https://docs-assets.developer.apple.com/published/8d98e2dc3302f6f0815cdeb955d1408f/menu-bar-window-group-macos%402x.png)
+
+**iPadOS**:
+
+![The menu bar for MyApp on iPadOS. The File menu is open with an active menu item for Close Window.](https://docs-assets.developer.apple.com/published/51caa0d56477d872d2c6210e83dd9b16/menu-bar-window-group-ipados%402x.png)
+
 On macOS, the [`Settings`](settings.md) scene includes the same actions as `Window`, but adds an action for presenting the app’s Settings window that people get when they choose App menu > Settings. On iPadOS, this menu bar item doesn’t require an additional scene and when performed; it switches to the app’s settings in the Settings app.
 
 ```swift
@@ -51,6 +67,14 @@ struct MyApp: App {
     }
 }
 ```
+
+**macOS**:
+
+![The menu bar for MyApp on macOS. The MyApp menu is open with active menu items for About MyApp, Settings, a Services submenu, Hide MyApp, and Hide Others. The Settings menu item has been added using the Settings scene.](https://docs-assets.developer.apple.com/published/d6022b5f2086f165e1b9eac30e9b2313/menu-bar-settings-group-macos%402x.png)
+
+**iPadOS**:
+
+![The menu bar for MyApp on iPadOS. The MyApp menu is open with an active menu item for MyApp Settings.](https://docs-assets.developer.apple.com/published/6b86c5a1b8b065b9cab4adffc79dc977/menu-bar-settings-group-ipados%402x.png)
 
 The [`DocumentGroup`](documentgroup.md) scene includes actions that `WindowGroup` includes, as well as a number of actions that support document management capabilities, like Save and Duplicate.
 
@@ -116,6 +140,14 @@ WindowGroup {
 }
 ```
 
+**macOS**:
+
+![The menu bar for MyApp on macOS. The Actions menu is open with menu items for Run and Stop. The Actions menu and menu items have been added using a CommandMenu that has two buttons inside.](https://docs-assets.developer.apple.com/published/f01bf2a665d024b3d28644c644550c77/menu-bar-actions-menu-macos%402x.png)
+
+**iPadOS**:
+
+![The menu bar for MyApp on iPadOS. The Actions menu is open with menu items for Run and Stop. The Actions menu and menu items have been added using a CommandMenu that has two buttons inside.](https://docs-assets.developer.apple.com/published/21ee4a1be5b3759fb4d8752ce8e0f8c5/menu-bar-actions-menu-ipados%402x.png)
+
 #### Modify Standard Menus
 
 Modify system-provided menus using [`CommandGroup`](commandgroup.md). These groups either extend menus with additional menu items or they replace existing menu items in the indicated command group. When you add menu items in this way, you can specify the location of the menu item based on system-provided menu items.
@@ -139,6 +171,14 @@ WindowGroup {
 }
 
 ```
+
+**macOS**:
+
+![The menu bar for MyApp on macOS. The File menu is open with menu items New Window, New from Clipboard, and Close. The New from Clipboard menu item has been added using a CommandGroup.](https://docs-assets.developer.apple.com/published/a0ece36ebb981a61ebd5a17a688ac922/menu-bar-new-item-macos%402x.png)
+
+**iPadOS**:
+
+![The menu bar for MyApp on iPadOS. The File menu is open with menu items New from Clipboard and Close Window. The New from Clipboard menu item has been added using a CommandGroup.](https://docs-assets.developer.apple.com/published/28a8b564e451eeb4697b2cc9a14b36ef/menu-bar-new-item-ipados%402x.png)
 
 #### Update Menus and Menu Items Dynamically
 

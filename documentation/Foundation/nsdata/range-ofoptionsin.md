@@ -27,8 +27,8 @@ An [`NSRange`](nsrange-c.struct.md) structure giving the location and length of 
 ## Parameters
 
 - `dataToFind`: The data for which to search.
-- `mask`: A mask specifying search options. The   options may be specified singly or by combining them with the C bitwise   operator.
-- `searchRange`: The range within the receiver in which to search for  . If this range is not within the data object’s range of bytes,   is raised.
+- `mask`: A mask specifying search options. The [`NSData.SearchOptions`](nsdata/searchoptions.md) options may be specified singly or by combining them with the C bitwise `OR` operator.
+- `searchRange`: The range within the receiver in which to search for `dataToFind`. If this range is not within the data object’s range of bytes, [`rangeException`](nsexceptionname/rangeexception.md) is raised.
 
 ## See Also
 

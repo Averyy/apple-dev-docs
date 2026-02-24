@@ -24,7 +24,7 @@ Your app must present the voice control template using its [`CPInterfaceControll
 
 ## Parameters
 
-- `identifier`: An identifier corresponding to one of the   associated with the template.
+- `identifier`: An identifier corresponding to one of the [`voiceControlStates`](cpvoicecontroltemplate/voicecontrolstates.md) associated with the template.
 
 ## See Also
 

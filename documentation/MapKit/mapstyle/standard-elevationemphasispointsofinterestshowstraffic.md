@@ -26,9 +26,9 @@ A [`MapStyle`](mapstyle.md) with the configuration you specified.
 
 ## Parameters
 
-- `elevation`: One of the   values that determines whether the framework renders map elevation.
-- `emphasis`: One of the   values that controls how the framework emphasizes map features.
-- `pointsOfInterest`: A collection of   displayed on the map.
+- `elevation`: One of the [`MapStyle.Elevation`](mapstyle/elevation.md) values that determines whether the framework renders map elevation.
+- `emphasis`: One of the [`MapStyle.StandardEmphasis`](mapstyle/standardemphasis.md) values that controls how the framework emphasizes map features.
+- `pointsOfInterest`: A collection of [`PointOfInterestCategories`](pointofinterestcategories.md) displayed on the map.
 - `showsTraffic`: A Boolean value that indicates whether the map displays traffic.
 
 ## See Also

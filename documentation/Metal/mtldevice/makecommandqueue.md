@@ -36,6 +36,21 @@ A command queue can only submit commands to the GPU device instance that created
 
 This method is the equivalent of passing `64` to the [`makeCommandQueue(maxCommandBufferCount:)`](mtldevice/makecommandqueue(maxcommandbuffercount:).md) method.
 
+**Swift**:
+
+```swift
+let commandQueue = device.makeCommandQueue(maxCommandBufferCount: 64)
+```
+
+**Objective-C**:
+
+```objective-c
+id<MTLCommandQueue> commandQueue;
+
+NSUInteger capacity = 64;
+commandQueue = [device newCommandQueueWithMaxCommandBufferCount:capacity];
+```
+
 ## See Also
 
 - [func makeCommandQueue(maxCommandBufferCount: Int) -> (any MTLCommandQueue)?](mtldevice/makecommandqueue(maxcommandbuffercount:).md)

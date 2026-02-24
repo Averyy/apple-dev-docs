@@ -3,7 +3,7 @@
 **Framework**: GameKit  
 **Kind**: property
 
-The resource is associated with a release in App Store Connect. This has no relationship with the “archived” state of a resource (i.e., A resource can be release  archived).
+The resource is associated with a release in App Store Connect. This has no relationship with the “archived” state of a resource (i.e., A resource can be release *and* archived).
 
 **Availability**:
 - iOS 18.4+

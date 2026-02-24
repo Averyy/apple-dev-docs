@@ -47,7 +47,7 @@ func fetchRecords(
 ## Parameters
 
 - `configuration`: An interim configuration to apply to the current database.
-- `group`: The group to associate with the methods you execute in the closure. Specifying a group helps the system prioritize those method calls, and helps you identify the calls in the server logs in CloudKit Console. For more information, see  .
+- `group`: The group to associate with the methods you execute in the closure. Specifying a group helps the system prioritize those method calls, and helps you identify the calls in the server logs in CloudKit Console. For more information, see [`CKOperationGroup`](ckoperationgroup.md).
 - `body`: The closure to execute with the temporarily configured database.
 
 ## See Also

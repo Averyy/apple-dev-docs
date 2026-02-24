@@ -3,7 +3,7 @@
 **Framework**: GameplayKit  
 **Kind**: class
 
-A collection of nodes that describes the navigability of a game world and provides  methods to search for routes through that space.
+A collection of nodes that describes the navigability of a game world and provides *pathfinding* methods to search for routes through that space.
 
 **Availability**:
 - iOS 9.0+
@@ -29,7 +29,7 @@ Each set of graph and node classes can generate graphs for different kinds of sp
 - Use the [`GKGridGraph`](gkgridgraph.md) and [`GKGridGraphNode`](gkgridgraphnode.md) classes to describe game worlds that constrain movement to an integer grid, such as tactical role-playing games.
 - Use the [`GKObstacleGraph`](gkobstaclegraph.md) or [`GKMeshGraph`](gkmeshgraph.md) class to describe 2D game worlds that allow continuous movement in open spaces that are interrupted by impassable obstacles ([`GKPolygonObstacle`](gkpolygonobstacle.md) objects). Obstacle graphs automatically generate nodes containing 2D point information ([`GKGraphNode2D`](gkgraphnode2d.md) objects), and you can also add your own such nodes representing locations of interest.
 
-The graphs modeled by this class are always —that is, a connection between two nodes describes one direction of travel between them. To enable travel between two nodes in either direction, you must create a connection in each direction. You can choose to connect both directions at once with the [`connectToLowestCostNode(node:bidirectional:)`](gkgraph/connecttolowestcostnode(node:bidirectional:).md) method (for graphs) or the addConnection:bidirectional: method (for nodes).
+The graphs modeled by this class are always *directed*—that is, a connection between two nodes describes one direction of travel between them. To enable travel between two nodes in either direction, you must create a connection in each direction. You can choose to connect both directions at once with the [`connectToLowestCostNode(node:bidirectional:)`](gkgraph/connecttolowestcostnode(node:bidirectional:).md) method (for graphs) or the addConnection:bidirectional: method (for nodes).
 
 Using a graph for pathfinding typically involves three major steps:
 

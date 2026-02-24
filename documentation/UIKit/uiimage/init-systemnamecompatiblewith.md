@@ -39,7 +39,7 @@ To look up the names of system symbol images, download the SF Symbols app from [
 ## Parameters
 
 - `name`: The name of the system symbol image.
-- `traitCollection`: The traits associated with the intended environment for the image. Use this parameter to ensure that the correct variant of the image is loaded. If you specify  , this method uses the traits associated with the main screen.
+- `traitCollection`: The traits associated with the intended environment for the image. Use this parameter to ensure that the correct variant of the image is loaded. If you specify `nil`, this method uses the traits associated with the main screen.
 
 ## See Also
 

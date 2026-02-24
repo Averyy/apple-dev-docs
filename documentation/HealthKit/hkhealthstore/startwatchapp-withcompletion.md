@@ -111,7 +111,8 @@ extension WorkoutManager {
 ## Parameters
 
 - `workoutConfiguration`: The configuration data for a new workout session on the watch.
-- `completion`: A block that this method calls after launching the Watch app. The system calls this block, passing the following parameters:
+- `completion`: A block that this method calls after launching the Watch app. The system calls this block, passing the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the watch app launched successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
 
 ## See Also
 

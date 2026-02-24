@@ -31,7 +31,7 @@ You can also use the [`interpolatedValue(at:)`](gknoisemap/interpolatedvalue(at:
 
 ## Parameters
 
-- `position`: The position to query in the noise map’s grid of sampled noise values. Must be within the rectangle from   to the noise map’s   value.
+- `position`: The position to query in the noise map’s grid of sampled noise values. Must be within the rectangle from `[0, 0]` to the noise map’s [`sampleCount`](gknoisemap/samplecount.md) value.
 
 ## See Also
 

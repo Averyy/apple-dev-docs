@@ -24,7 +24,7 @@ init(_ titleKey: LocalizedStringKey, isActive: Binding<Bool>, @ViewBuilder desti
 ## Parameters
 
 - `titleKey`: A localized string key for creating a text label.
-- `isActive`: A binding to a Boolean value that indicates whether    is currently presented.
+- `isActive`: A binding to a Boolean value that indicates whether `destination` is currently presented.
 - `destination`: A view for the navigation link to present.
 
 ## See Also

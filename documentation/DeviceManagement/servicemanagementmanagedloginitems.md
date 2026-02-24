@@ -111,6 +111,10 @@ Specify `com.apple.servicemanagement` as the payload type.
 - [object ServiceManagementManagedLoginItems.Rule](servicemanagementmanagedloginitems/rule.md)
   A dictionary that configures a service management rule.
 
+## Properties
+
+- `Rules` ([ServiceManagementManagedLoginItems.Rule]) *(required)*: An array of service management rules.
+
 ## See Also
 
 - [object LoginItemsManagedItems](loginitemsmanageditems.md)

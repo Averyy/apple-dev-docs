@@ -19,8 +19,8 @@ Sent to the gesture recognizer when one or more fingers lift from the associated
 
 ## Parameters
 
-- `touches`: A set of   instances in the event represented by   that represent the touches in the    phase.
-- `event`: A   object representing the event to which the touches belong.
+- `touches`: A set of `UITouch` instances in the event represented by `event` that represent the touches in the `UITouch.Phase.ended` phase.
+- `event`: A `UIEvent` object representing the event to which the touches belong.
 
 ## See Also
 

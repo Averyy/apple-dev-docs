@@ -29,6 +29,11 @@ This method applies the highlight-shadow adjust filter to an image. The effect a
 
 The highlight-shadow adjust filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`shadowAmount`**: A `float` representing the amount of generated shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the radius of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`highlightAmount`**: A `float` representing the strength of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a brighter image with reduced shadows:
 
 ```swift

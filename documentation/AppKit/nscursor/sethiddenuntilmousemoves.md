@@ -23,7 +23,8 @@ Do not try to counter this method by invoking [`unhide()`](nscursor/unhide().md)
 
 ## Parameters
 
-- `flag`:   to hide the cursor until one of the following occurs:
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to hide the cursor until one of the following occurs: - The mouse moves.
+- You invoke the method again, with `flag` set to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

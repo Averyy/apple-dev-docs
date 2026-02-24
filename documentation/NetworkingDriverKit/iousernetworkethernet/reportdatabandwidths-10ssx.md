@@ -22,8 +22,8 @@ virtual kern_return_t ReportDataBandwidths(uint64_t maxInputBandwidth, uint64_t 
 
 - `maxInputBandwidth`: The maximum theoretical data rate for receiving data with the current medium, in bits per second.
 - `maxOutputBandwidth`: The maximum theoretical data rate for sending data with the current medium, in bits per second.
-- `effectiveInputBandwidth`: The effective input bandwidth, in bits per second. If you specify  , the system sets the effective bandwidth to the same value in  .
-- `effectiveOutputBandwidth`: The effective output bandwidth, in bits per second. If you specify  , the system sets the effective bandwidth to the same value in  .
+- `effectiveInputBandwidth`: The effective input bandwidth, in bits per second. If you specify `0`, the system sets the effective bandwidth to the same value in `maxInputBandwidth`.
+- `effectiveOutputBandwidth`: The effective output bandwidth, in bits per second. If you specify `0`, the system sets the effective bandwidth to the same value in `maxOutputBandwidth`.
 
 ## See Also
 

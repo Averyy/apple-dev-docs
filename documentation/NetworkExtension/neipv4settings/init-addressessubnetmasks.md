@@ -26,7 +26,7 @@ The initialized NEIPv4Settings object.
 ## Parameters
 
 - `addresses`: An array of IPv4 address strings. These IPv4 addresses will be assigned to the tunnel’s TUN interface.
-- `subnetMasks`: An array of IPv4 network mask strings. Each mask in this array is combined with the IP address in the corresponding index in   to specify an IPv4 network that the TUN interface is (virtually) connected to.
+- `subnetMasks`: An array of IPv4 network mask strings. Each mask in this array is combined with the IP address in the corresponding index in `addresses` to specify an IPv4 network that the TUN interface is (virtually) connected to.
 
 
 ---

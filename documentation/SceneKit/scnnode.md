@@ -30,7 +30,7 @@ An [`SCNNode`](scnnode.md) object by itself has no visible content when the scen
 
 ##### Nodes Determine the Structure of a Scene
 
-The hierarchy of nodes, or , in a scene defines both the organization of its contents and your ability to present and manipulate those contents using SceneKit. You may create a node hierarchy programmatically using SceneKit, load one from a file created using 3D authoring tools, or combine the two approaches. SceneKit provides many utilities for organizing and searching the scene graph—for details, see the methods in Managing the Node Hierarchy and Searching the Node Hierarchy.
+The hierarchy of nodes, or **scene graph**, in a scene defines both the organization of its contents and your ability to present and manipulate those contents using SceneKit. You may create a node hierarchy programmatically using SceneKit, load one from a file created using 3D authoring tools, or combine the two approaches. SceneKit provides many utilities for organizing and searching the scene graph—for details, see the methods in Managing the Node Hierarchy and Searching the Node Hierarchy.
 
 The [`rootNode`](scnscene/rootnode.md) object in a scene defines the coordinate system of the world rendered by SceneKit. Each child node you add to this root node creates its own coordinate system, which is in turn inherited by its own children. You determine the transformation between coordinate systems using the node’s [`position`](scnnode/position.md), [`rotation`](scnnode/rotation.md), and [`scale`](scnnode/scale.md) properties properties (or directly using its [`transform`](scnnode/transform.md) property).
 

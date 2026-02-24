@@ -21,7 +21,7 @@ func triangulate()
 
 #### Discussion
 
-The [`GKMeshGraph`](gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles  when you call this method. Typically, you add or remove several obstacles, then call the [`triangulate()`](gkmeshgraph/triangulate().md) method to update the graph. You should also call this method after changing the [`triangulationMode`](gkmeshgraph/triangulationmode.md) property.
+The [`GKMeshGraph`](gkmeshgraph.md) class adds, removes, and arranges nodes to describe the navigable areas around obstacles *only* when you call this method. Typically, you add or remove several obstacles, then call the [`triangulate()`](gkmeshgraph/triangulate().md) method to update the graph. You should also call this method after changing the [`triangulationMode`](gkmeshgraph/triangulationmode.md) property.
 
 After triangulating, the graph reflects the navigability of open space around its obstacles and can be used for any number of [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) calls. Changing the list of obstacles requires retriangulating the graph.
 

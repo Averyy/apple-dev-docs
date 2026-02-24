@@ -26,7 +26,7 @@ Use this method to modify the line fragment rectangles associated with the text 
 
 - `layoutManager`: The layout manager doing the work.
 - `lineFragmentRect`: The proposed rectangle that contains the glyphs. You may modify this rectangle as needed.
-- `lineFragmentUsedRect`: The portion of   that actually contains glyphs or other rendered marks, including the text container’s line fragment padding. This rectangle must be equal to   or wholly contained by it. You may modify this rectangle as needed.
+- `lineFragmentUsedRect`: The portion of `lineFragmentRect` that actually contains glyphs or other rendered marks, including the text container’s line fragment padding. This rectangle must be equal to `lineFragmentRect` or wholly contained by it. You may modify this rectangle as needed.
 - `baselineOffset`: The vertical distance (in pixels) from the line fragment origin to the baseline on which the glyphs align.
 - `textContainer`: The text container for the line fragments.
 - `glyphRange`: The range of glyphs being laid out.

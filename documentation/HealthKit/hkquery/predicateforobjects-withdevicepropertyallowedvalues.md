@@ -29,6 +29,18 @@ Use this convenience method to create a predicate that finds all the objects sav
 
 The following sample shows how to create a predicate that matches a list of device model names.
 
+**Swift**:
+
+```swift
+let fromDevices = HKQuery.predicateForObjectsWithDeviceProperty(HKDevicePropertyKeyModel, allowedValues:modelNames)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *fromDevices = [HKQuery predicateForObjectsWithDeviceProperty:HKDevicePropertyKeyModel allowedValues:modelNames];
+```
+
 ## Parameters
 
 - `key`: A string specifying the device’s property. For a list of valid keys, see Valid Device Property Keys.

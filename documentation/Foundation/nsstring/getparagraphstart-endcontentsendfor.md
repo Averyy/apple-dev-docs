@@ -28,9 +28,9 @@ If `aRange` is contained with a single paragraph, of course, the returned indexe
 
 ## Parameters
 
-- `startPtr`: Upon return, contains the index of the first character of the paragraph containing the beginning of  . Pass   if you do not need this value (in which case the work to compute the value isn’t performed).
-- `parEndPtr`: Upon return, contains the index of the first character past the terminator of the paragraph containing the end of  . Pass   if you do not need this value (in which case the work to compute the value isn’t performed).
-- `contentsEndPtr`: Upon return, contains the index of the first character of the terminator of the paragraph containing the end of  . Pass   if you do not need this value (in which case the work to compute the value isn’t performed).
+- `startPtr`: Upon return, contains the index of the first character of the paragraph containing the beginning of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
+- `parEndPtr`: Upon return, contains the index of the first character past the terminator of the paragraph containing the end of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
+- `contentsEndPtr`: Upon return, contains the index of the first character of the terminator of the paragraph containing the end of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
 - `range`: A range within the receiver. The value must not exceed the bounds of the receiver.
 
 ## See Also

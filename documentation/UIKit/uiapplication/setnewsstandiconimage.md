@@ -22,7 +22,7 @@ The Newsstand app icon is typically downloaded from the app’s server for each 
 
 ## Parameters
 
-- `image`: An image to use as the icon of a Newsstand app. Pass   to clear the currently set image and revert to the icon stored in the app bundle.
+- `image`: An image to use as the icon of a Newsstand app. Pass `nil` to clear the currently set image and revert to the icon stored in the app bundle.
 
 ## See Also
 

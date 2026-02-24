@@ -25,7 +25,7 @@ Because this method uses the same rules as mouse-down hit-testing, windows with 
 ## Parameters
 
 - `point`: The location of the mouse-down in screen coordinates.
-- `windowNumber`: If non-0, the search will start below   window in z-order.
+- `windowNumber`: If non-0, the search will start below `windowNumber` window in z-order.
 
 ## See Also
 

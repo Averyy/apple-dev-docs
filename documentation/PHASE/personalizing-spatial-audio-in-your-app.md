@@ -15,11 +15,11 @@ Enhance the realism of spatial audio output by tracking a person’s head moveme
 
 Apps that implement 3D spatial audio in supported frameworks can fine tune the listener experience by automatically updating the listener orientation according to a person’s head movement while wearing compatible AirPods, and using the personal spatial audio profile that they create in Settings.
 
-In iOS 18, iPadOS 18, and tvOS 18, the system adds spatial audio effects for games by default, and offers a Control Center toggle to control the effect. If your game implements custom spatial audio, you need to disable the effect to prevent undesirable artifacts from spatializing an audio stream twice, an effect known as .
+In iOS 18, iPadOS 18, and tvOS 18, the system adds spatial audio effects for games by default, and offers a Control Center toggle to control the effect. If your game implements custom spatial audio, you need to disable the effect to prevent undesirable artifacts from spatializing an audio stream twice, an effect known as *double spatialization*.
 
 #### Apply a Personal Spatial Audio Profile
 
-A person can opt in to  by creating a profile in settings that walks them through scanning their head using the camera on their iPhone. The system constructs a geometric representation of the shape of the person’s head that supporting audio frameworks observe to enhance the simulation of sound traveling through the physical environment.
+A person can opt in to *personalized spatial audio* by creating a profile in settings that walks them through scanning their head using the camera on their iPhone. The system constructs a geometric representation of the shape of the person’s head that supporting audio frameworks observe to enhance the simulation of sound traveling through the physical environment.
 
 When you add the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app and implement custom spatial audio with either of the following frameworks, the system automatically takes the personal spatial audio profile into account as it tailors the audio output:
 
@@ -35,6 +35,10 @@ To enable head tracking:
 
 - Add the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.coremotion.head-pose) entitlement to your app.
 - Configure the API to opt in; the process varies depending on the framework:
+
+- **`AVAudioEngine`**: Adjust the [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode) orientation to match the person’s head pose by setting the [`isListenerHeadTrackingEnabled`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode/isListenerHeadTrackingEnabled) property to `true`.
+- **PHASE**: Adjust the [`PHASEListener`](PHASEListener.md) orientation by setting the  [`automaticHeadTrackingFlags`](PHASEListener/automaticHeadTrackingFlags.md) property to [`orientation`](PHASEAutomaticHeadTrackingFlags/orientation.md).
+- **Audio Toolbox**: Adjust the `AUSpatialMixer` orientation to match the person’s head pose by setting the [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitProperty_SpatialMixerEnableHeadTracking) property to `true`.
 
 #### Disable the System Provided Spatial Audio
 

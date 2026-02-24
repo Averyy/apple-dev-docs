@@ -27,7 +27,8 @@ This method is the logical complement of [`mutableTrack(compatibleWith:)`](avmut
 ## Parameters
 
 - `compositionTrack`: A composition track to request an asset track for.
-- `completionHandler`: A callback the system invokes after it finishes the request. The system calls the completion handler with the following arguments:
+- `completionHandler`: A callback the system invokes after it finishes the request. The system calls the completion handler with the following arguments: - **track**: The compatible asset track, or `nil` if there isn’t one or an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

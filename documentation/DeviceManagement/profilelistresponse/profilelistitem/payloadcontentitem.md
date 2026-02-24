@@ -19,6 +19,16 @@ A dictionary that describes a profile payload content item.
 object ProfileListResponse.ProfileListItem.PayloadContentItem
 ```
 
+## Properties
+
+- `PayloadDescription` (string): A description of the payload.
+- `PayloadDisplayName` (string): The human-readable name of the payload.
+- `PayloadIdentifier` (string) *(required)*: The reverse-DNS-style identifier of the payload, such as `com.example.mypayload`.
+- `PayloadOrganization` (string): The human-readable name of the organization that provided the payload.
+- `PayloadType` (string) *(required)*: The type of payload, such as `com.apple.wifi.managed`.
+- `PayloadUUID` (string) *(required)*: The unique identifier of the payload.
+- `PayloadVersion` (integer) *(required)*: The version of the payload. The value is `1`.
+
 
 ---
 

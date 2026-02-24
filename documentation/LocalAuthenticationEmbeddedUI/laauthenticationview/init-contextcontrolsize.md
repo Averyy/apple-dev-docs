@@ -21,7 +21,7 @@ This initializer behaves like [`init(context:)`](laauthenticationview/init(conte
 ## Parameters
 
 - `context`: A local authentication context to associate with the icon.
-- `controlSize`: The size of the authentication view’s user interface element. Use one of the values   in  .
+- `controlSize`: The size of the authentication view’s user interface element. Use one of the values in [`NSControl.ControlSize`](https://developer.apple.com/documentation/AppKit/NSControl/ControlSize-swift.enum).
 
 ## See Also
 

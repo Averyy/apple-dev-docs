@@ -27,7 +27,7 @@ func BNNSGraphGetFunctionNames(_ graph: bnns_graph_t, _ function_name_count: Int
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function_name_count`: The number of elements in the   array.
+- `function_name_count`: The number of elements in the `function_names` array.
 - `function_names`: On output, an array of pointers to strings that contain the function names.
 
 ## See Also

@@ -20,7 +20,7 @@ Use this method when you already have image data in the raw PNG or JPG format. T
 
 ## Parameters
 
-- `imageData`: A data object containing the image data in its native format. The image is displayed behind the button’s title text. Specifying   removes the existing image. You may specify image data that contains multiple images running as an animation. The image is scaled as needed to fill the button’s content area.
+- `imageData`: A data object containing the image data in its native format. The image is displayed behind the button’s title text. Specifying `nil` removes the existing image. You may specify image data that contains multiple images running as an animation. The image is scaled as needed to fill the button’s content area.
 
 ## See Also
 

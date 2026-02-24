@@ -22,7 +22,7 @@ Depending on the session configuration, ARKit may automatically remove anchors f
 
 ## Parameters
 
-- `view`: The   object rendering the scene.
+- `view`: The [`ARSKView`](arskview.md) object rendering the scene.
 - `node`: The removed SpriteKit node.
 - `anchor`: The AR anchor corresponding to the node.
 

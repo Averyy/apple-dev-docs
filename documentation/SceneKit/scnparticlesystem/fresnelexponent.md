@@ -24,7 +24,7 @@ var fresnelExponent: CGFloat { get set }
 
 This property only takes effect when the [`particleImage`](scnparticlesystem/particleimage.md) property is an array of six images defining a cube map. In this case, SceneKit renders each particle as a reflective sphere.
 
-The  modulates the reflectivity of a surface from different view angles. At the default value of `1.0`, reflections have the same intensity across the entire surface of the particle. At higher values, the edges of the particle are more reflective than the center.
+The *fresnel exponent* modulates the reflectivity of a surface from different view angles. At the default value of `1.0`, reflections have the same intensity across the entire surface of the particle. At higher values, the edges of the particle are more reflective than the center.
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
 

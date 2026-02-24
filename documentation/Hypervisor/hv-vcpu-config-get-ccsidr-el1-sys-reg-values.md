@@ -21,7 +21,7 @@ A [`hv_return_t`](hv_return_t.md) value that indicates that result of the functi
 ## Parameters
 
 - `config`: The vCPU configuration.
-- `cache_type`: The cache type from the available   types.
+- `cache_type`: The cache type from the available [`hv_cache_type_t`](hv_cache_type_t.md) types.
 - `values`: A pointer to the location for the return values.
 
 ## See Also

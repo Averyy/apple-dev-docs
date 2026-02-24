@@ -25,7 +25,8 @@ Call this method to prevent your app from receiving any additional update notifi
 
 ## Parameters
 
-- `completion`: A block that this method calls as soon as the background deliveries are disabled. This block is passed the following parameters:
+- `completion`: A block that this method calls as soon as the background deliveries are disabled. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the background deliveries were successfully disabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

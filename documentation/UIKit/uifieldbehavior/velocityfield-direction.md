@@ -28,7 +28,7 @@ Velocity fields apply their velocity to the item, overriding any other accelerat
 
 ## Parameters
 
-- `direction`: The vector indicating the direction of the velocity force. You can change this value later by modifying the   property.
+- `direction`: The vector indicating the direction of the velocity force. You can change this value later by modifying the [`direction`](uifieldbehavior/direction.md) property.
 
 ## See Also
 

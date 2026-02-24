@@ -23,7 +23,7 @@ case metallic
 
 Add a [`ModelDebugOptionsComponent`](modeldebugoptionscomponent.md) with a visualization mode of `metallic` to an entity to tell RealityKit to draw that entity so the surface color indicates whether that part of the object reflects the surrounding environment.
 
-RealityKit draws the quality of  as a grayscale value from black (`0.0`) to white (`1.0`), rendering the reflective parts of the entity in white and the nonreflective parts in black.
+RealityKit draws the quality of *metallicity* as a grayscale value from black (`0.0`) to white (`1.0`), rendering the reflective parts of the entity in white and the nonreflective parts in black.
 
 RealityKit calculates `metallic` values for entities with a [`SimpleMaterial`](simplematerial.md) and for entities imported from a USDZ file. For other entities, this option has no effect.
 

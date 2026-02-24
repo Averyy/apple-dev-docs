@@ -3,7 +3,7 @@
 **Framework**: Force Feedback  
 **Kind**: property
 
-Region around  in which the condition is not active, in the range from 0 through 10,000. In other words, the condition is not active between  minus  and  plus .
+Region around **lOffset** in which the condition is not active, in the range from 0 through 10,000. In other words, the condition is not active between **lOffset** minus **lDeadBand** and **lOffset** plus **lDeadBand**.
 
 **Availability**:
 - Mac Catalyst 13.0+

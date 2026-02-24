@@ -16,6 +16,13 @@ The command to invite a user to join the Volume Purchase Program (VPP).
 object InviteToProgramCommand.Command
 ```
 
+## Properties
+
+- `InvitationURL` (string) *(required)*: The Volume Purchase Program (VPP) invitation URL.
+- `ProgramID` (string) *(required)*: The program’s identifier, which can only be `com.apple.cloudvpp`.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

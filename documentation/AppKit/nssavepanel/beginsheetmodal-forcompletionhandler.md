@@ -21,7 +21,7 @@ Configure all the relevant properties of the panel before you call this method. 
 ## Parameters
 
 - `window`: The window in which the panel will be presented.
-- `handler`: The block called after the user dismisses the panel. The argument passed in will be   if the user chose the OK button or   if the user chose the Cancel button.
+- `handler`: The block called after the user dismisses the panel. The argument passed in will be [`NSFileHandlingPanelOKButton`](nsfilehandlingpanelokbutton.md) if the user chose the OK button or [`NSFileHandlingPanelCancelButton`](nsfilehandlingpanelcancelbutton.md) if the user chose the Cancel button.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The viewport’s [`originX`](mtlviewport/originx.md) and [`originY`](mtlviewport
 
 ## Parameters
 
-- `viewport`: An   instance the command applies to the render pipeline for transformations and clipping.
+- `viewport`: An [`MTLViewport`](mtlviewport.md) instance the command applies to the render pipeline for transformations and clipping.
 
 ## See Also
 

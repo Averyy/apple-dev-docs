@@ -24,7 +24,7 @@ static kern_return_t Create(uint64_t queueByteCount, IODispatchQueue *queue, IOD
 ## Parameters
 
 - `queueByteCount`: The size of the queue in bytes.
-- `queue`: The dispatch queue to use for executing tasks. Note that the   and   handlers execute on the queue set for the target method of the associated   object, not this queue.
+- `queue`: The dispatch queue to use for executing tasks. Note that the [`DataAvailable`](iodataqueuedispatchsource/dataavailable.md) and [`DataServiced`](iodataqueuedispatchsource/dataserviced.md) handlers execute on the queue set for the target method of the associated [`OSAction`](osaction.md) object, not this queue.
 - `source`: A variable for storing the resulting dispatch source object. On success, the returned object has a retain count of 1, and you must release it when finished.
 
 ## See Also

@@ -35,7 +35,7 @@ If the receiver is not editable, this method automatically returns [`false`](htt
 ## Parameters
 
 - `affectedRanges`: An array of ranges to change.
-- `replacementStrings`: An array of strings containing the characters that replace those in  , one for each range. If only text attributes are being changed,   is  .
+- `replacementStrings`: An array of strings containing the characters that replace those in `affectedRanges`, one for each range. If only text attributes are being changed, `replacementStrings` is `nil`.
 
 ## See Also
 

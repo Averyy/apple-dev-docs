@@ -39,7 +39,7 @@ HStack {
 
 ## Parameters
 
-- `disabled`: A Boolean value that determines whether this view   can display focus effects.
+- `disabled`: A Boolean value that determines whether this view can display focus effects.
 
 ## See Also
 

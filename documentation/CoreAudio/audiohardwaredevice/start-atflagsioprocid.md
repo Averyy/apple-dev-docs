@@ -27,7 +27,7 @@ An AudioHardwareError of kAudioHardwareUnsupportedOperationError will be thrown 
 
 - `time`: An AudioTimeStamp that containing the requested time to start the IOProc.
 - `flags`: A UInt32 containing flags that modify how this function behaves.
-- `IOProcID`: The AudioDeviceIOProcID to start. Note that this can be nil, which starts   the hardware regardless of whether or not there are any IOProcs registered.
+- `IOProcID`: The AudioDeviceIOProcID to start. Note that this can be nil, which starts the hardware regardless of whether or not there are any IOProcs registered.
 
 
 ---

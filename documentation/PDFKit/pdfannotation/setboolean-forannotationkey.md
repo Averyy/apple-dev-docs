@@ -26,7 +26,7 @@ func setBoolean(_ value: Bool, forAnnotationKey key: PDFAnnotationKey) -> Bool
 ## Parameters
 
 - `value`: The Boolean value to set in the annotation’s dictionary.
-- `key`: A   or appropriate string from the Adobe PDF Specification.
+- `key`: A [`PDFAnnotationKey`](pdfannotationkey.md) or appropriate string from the Adobe PDF Specification.
 
 ## See Also
 

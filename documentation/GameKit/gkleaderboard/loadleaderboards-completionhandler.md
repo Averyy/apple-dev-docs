@@ -37,7 +37,8 @@ When you call this method, it creates a new background task to handle the reques
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call when loading the leaderboards. The block receives the following parameters: - ***leaderboards***: An array of `GKLeaderboard` objects that provides the leaderboards for your game. If an error occurs, this value may be non-`nil`. In this case, the array holds whatever data GameKit downloads before the error occurs.
+- ***error***: If an error occurs, this error object describes the error. If the operation completes successfully, the value is `nil`.
 
 ## See Also
 

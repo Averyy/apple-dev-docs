@@ -28,7 +28,7 @@ If you return [`false`](https://developer.apple.com/documentation/Swift/false), 
 
 Not implementing this method is the same as returning [`true`](https://developer.apple.com/documentation/Swift/true).
 
-> ❗ **Important**:  Prior to iOS 7 and OS X v10.9, the `connectionShouldUseCredentialStorage:` method is never called on delegates that implement the [`connection(_:willSendRequestFor:)`](nsurlconnectiondelegate/connection(_:willsendrequestfor:).md) method. In later operating systems, if the delegate implements the [`connection(_:willSendRequestFor:)`](nsurlconnectiondelegate/connection(_:willsendrequestfor:).md) method, the `connectionShouldUseCredentialStorage:` method is called  if the app’s deployment target is at least iOS 7 or OS X v10.9.
+> ❗ **Important**:  Prior to iOS 7 and OS X v10.9, the `connectionShouldUseCredentialStorage:` method is never called on delegates that implement the [`connection(_:willSendRequestFor:)`](nsurlconnectiondelegate/connection(_:willsendrequestfor:).md) method. In later operating systems, if the delegate implements the [`connection(_:willSendRequestFor:)`](nsurlconnectiondelegate/connection(_:willsendrequestfor:).md) method, the `connectionShouldUseCredentialStorage:` method is called *only* if the app’s deployment target is at least iOS 7 or OS X v10.9.
 
 ## Parameters
 

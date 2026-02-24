@@ -8,6 +8,10 @@ A Boolean value indicating whether your app may open outgoing network connection
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Use this key to allow your sandboxed app to connect to a server process running on another machine, or on the same machine.

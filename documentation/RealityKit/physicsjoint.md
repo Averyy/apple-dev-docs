@@ -67,6 +67,8 @@ let windowHingeJoint = PhysicsRevoluteJoint(
 try windowHingeJoint.addToSimulation()
 ```
 
+**Best practices:**
+
 - When creating a joint, make sure that the jointed entities are initially positioned so that they satisfy the joint. If not done so, the physics solver may have difficulty bringing the entities together to satisfy the joint.
 - When connecting a [`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md) and a [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md) entities by a joint, use [`pin0`](physicsjoint/pin0.md) as the pin on the kinematic entity.
 If both are [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), set the heavier entity as [`pin0`](physicsjoint/pin0.md).

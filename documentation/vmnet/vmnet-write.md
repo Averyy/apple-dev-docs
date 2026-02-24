@@ -27,7 +27,7 @@ None of the packet to be written should exceed the size of the value of [`vmnet_
 
 - `interface`: The interface reference.
 - `packets`: An array of packets to be written.
-- `pktcnt`: The number of packets to write.   On return, this parameter is populated with the number of packets written.
+- `pktcnt`: The number of packets to write. On return, this parameter is populated with the number of packets written.
 
 ## See Also
 

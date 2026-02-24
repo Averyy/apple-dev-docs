@@ -11,6 +11,10 @@ A Boolean value that indicates whether the app’s icon contains a shine effect.
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If `YES`, the system doesn’t apply a shine effect to the app icon; otherwise, it does. If your app icon already has a shine, set this key to `YES` to prevent the system from applying the same effect again. The default value is `NO`.

@@ -29,6 +29,9 @@ This method applies the color absolute difference filter to an image. This filte
 
 The absolute difference filter uses the following properties:
 
+- **`inputImage`**: The first [`CIImage`](ciimage.md) for differencing.
+- **`inputImage2`**: The second [`CIImage`](ciimage.md) for differencing.
+
 The following code creates a filter that results in the color difference between two images:
 
 ```swift

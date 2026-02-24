@@ -17,7 +17,7 @@ enum SecItemAttr
 
 #### Overview
 
-Not all of these attributes are used for all types of items. Which set of attributes exist for each type of item is documented in the “Data Storage Library Services” chapter of  from The Open Group ([`http://www.opengroup.org/security/cdsa.htm`](https://developer.apple.comhttp://www.opengroup.org/security/cdsa.htm)) for standard items and in the DL section of the  for Apple-defined item types (if any).
+Not all of these attributes are used for all types of items. Which set of attributes exist for each type of item is documented in the “Data Storage Library Services” chapter of *Common Security: CDSA and CSSM, version 2 (with corrigenda)* from The Open Group ([`http://www.opengroup.org/security/cdsa.htm`](https://developer.apple.comhttp://www.opengroup.org/security/cdsa.htm)) for standard items and in the DL section of the *Security Release Notes* for Apple-defined item types (if any).
 
 To obtain information about a certificate, use the CDSA Certificate Library (CL) API. To obtain information about a key, use the `SecKeyGetCSSMKey` function and the CDSA Cryptographic Service Provider (CSP) API.
 

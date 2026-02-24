@@ -32,8 +32,8 @@ You can call this method repeatedly to create multiple images, each of which has
 
 ## Parameters
 
-- `compressionQuality`: A   value between   and  , representing the compression level the JPEG encoder should use. A value of   specifies lossless compression, and a value of   specifies maximum compression.
-- `actions`: A   block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
+- `compressionQuality`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value between `0.0` and `1.0`, representing the compression level the JPEG encoder should use. A value of `1.0` specifies lossless compression, and a value of `0.0` specifies maximum compression.
+- `actions`: A [`UIGraphicsImageRenderer.DrawingActions`](uigraphicsimagerenderer/drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
 
 ## See Also
 

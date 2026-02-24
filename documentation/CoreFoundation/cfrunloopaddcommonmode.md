@@ -31,7 +31,7 @@ The Add, Contains, and Remove functions for sources, timers, and observers opera
 ## Parameters
 
 - `rl`: The run loop to modify. Each run loop has its own independent list of modes that are in the set of common modes.
-- `mode`: The run loop mode to add to the set of common modes of  .
+- `mode`: The run loop mode to add to the set of common modes of `rl`.
 
 ## See Also
 

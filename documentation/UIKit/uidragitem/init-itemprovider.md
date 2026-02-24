@@ -27,7 +27,7 @@ Provide an [`NSItemProvider`](https://developer.apple.com/documentation/Foundati
 
 ## Parameters
 
-- `itemProvider`: An instance of   that conveys the data or file to share during the drag-and-drop activity.
+- `itemProvider`: An instance of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) that conveys the data or file to share during the drag-and-drop activity.
 
 
 ---

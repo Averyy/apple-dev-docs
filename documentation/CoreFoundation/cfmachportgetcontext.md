@@ -27,7 +27,7 @@ The context version number for CFMachPort objects is currently `0`. Before calli
 ## Parameters
 
 - `port`: The CFMachPort object to examine.
-- `context`: A pointer to the structure into which the context information for   is to be copied. The information being returned is usually the same information you passed to   or   when creating  . However, if   returned a cached CFMachPort object instead of creating a new object,   is filled with information from the original CFMachPort object instead of the information you passed to the function.
+- `context`: A pointer to the structure into which the context information for `port` is to be copied. The information being returned is usually the same information you passed to [`CFMachPortCreate(_:_:_:_:)`](cfmachportcreate(_:_:_:_:).md) or [`CFMachPortCreateWithPort(_:_:_:_:_:)`](cfmachportcreatewithport(_:_:_:_:_:).md) when creating `port`. However, if [`CFMachPortCreateWithPort(_:_:_:_:_:)`](cfmachportcreatewithport(_:_:_:_:_:).md) returned a cached CFMachPort object instead of creating a new object, `context` is filled with information from the original CFMachPort object instead of the information you passed to the function.
 
 ## See Also
 

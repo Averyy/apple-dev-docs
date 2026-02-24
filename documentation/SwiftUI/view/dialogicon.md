@@ -50,7 +50,7 @@ Button("Delete items") {
 
 ## Parameters
 
-- `icon`: The custom icon to use for confirmation dialogs and alerts.   Passing   will use the default app icon.
+- `icon`: The custom icon to use for confirmation dialogs and alerts. Passing `nil` will use the default app icon.
 
 ## See Also
 

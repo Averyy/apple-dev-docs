@@ -14,6 +14,11 @@ The command to disable Remote Desktop on a device.
 object DisableRemoteDesktopCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

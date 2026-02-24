@@ -17,7 +17,7 @@ func changeColor(_ sender: NSColorPanel?)
 
 ## Parameters
 
-- `sender`: The   sending the message.
+- `sender`: The [`NSColorPanel`](nscolorpanel.md) sending the message.
 
 
 ---

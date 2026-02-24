@@ -25,7 +25,7 @@ A set containing all the objects of the specified type in the correlation.
 
 ## Parameters
 
-- `objectType`: The quantity or category type for the data stored inside the correlation. For example, to get all the samples measuring calories from inside a correlation, use an   object created with the   identifier.
+- `objectType`: The quantity or category type for the data stored inside the correlation. For example, to get all the samples measuring calories from inside a correlation, use an [`HKSampleType`](hksampletype.md) object created with the [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) identifier.
 
 ## See Also
 

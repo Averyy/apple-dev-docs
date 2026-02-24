@@ -19,13 +19,13 @@ init(url: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, 
 
 - `url`: The URL of the visited page.
 - `dateOfLastVisit`: The date someone last visited the page.
-- `title`: The title of the visited page, or   if unavailable.
+- `title`: The title of the visited page, or `nil` if unavailable.
 - `loadedSuccessfully`: A Boolean value that indicates whether the page loaded without errors.
 - `httpGet`: A Boolean value that indicates whether the visit used an HTTP GET request.
-- `redirectSourceURL`: A URL that redirects to the visited page, or   if the visit isn’t the destination of a redirect.
-- `redirectSourceDateOfVisit`: The date someone navigates to the source URL, or   if the visit isn’t the destination of a redirect.
-- `redirectDestinationURL`: The URL to which this page redirects, or   if the visit doesn’t redirect.
-- `redirectDestinationDateOfVisit`: The date someone navigates to the redirected destination, or   if the visit doesn’t redirect.
+- `redirectSourceURL`: A URL that redirects to the visited page, or `nil` if the visit isn’t the destination of a redirect.
+- `redirectSourceDateOfVisit`: The date someone navigates to the source URL, or `nil` if the visit isn’t the destination of a redirect.
+- `redirectDestinationURL`: The URL to which this page redirects, or `nil` if the visit doesn’t redirect.
+- `redirectDestinationDateOfVisit`: The date someone navigates to the redirected destination, or `nil` if the visit doesn’t redirect.
 - `visitCount`: The number of times someone visited this page.
 
 

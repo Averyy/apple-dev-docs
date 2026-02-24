@@ -18,9 +18,9 @@ var dwCommand: DWORD
 ## See Also
 
 - [var cbInBuffer: DWORD](ffeffescape/cbinbuffer.md)
-  Specifies the size, in bytes, of the  buffer.
+  Specifies the size, in bytes, of the **lpvInBuffer** buffer.
 - [var cbOutBuffer: DWORD](ffeffescape/cboutbuffer.md)
-  On entry, specifies the size, in bytes, of the  buffer. On exit, specifies the number of bytes actually produced by the command.
+  On entry, specifies the size, in bytes, of the **lpvOutBuffer** buffer. On exit, specifies the number of bytes actually produced by the command.
 - [var dwSize: DWORD](ffeffescape/dwsize.md)
   Size, in bytes, of this structure. This member must be initialized before the structure is used.
 - [var lpvInBuffer: UnsafeMutableRawPointer!](ffeffescape/lpvinbuffer.md)

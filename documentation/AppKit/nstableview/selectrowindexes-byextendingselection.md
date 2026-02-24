@@ -21,7 +21,7 @@ Replaces the deprecated [`selectRow:byExtendingSelection:`](nstableview/selectro
 ## Parameters
 
 - `indexes`: The indexes to select.
-- `extend`:   if the selection should be extended,   if the current selection should be changed.
+- `extend`: [`true`](https://developer.apple.com/documentation/Swift/true) if the selection should be extended, [`false`](https://developer.apple.com/documentation/Swift/false) if the current selection should be changed.
 
 ## See Also
 

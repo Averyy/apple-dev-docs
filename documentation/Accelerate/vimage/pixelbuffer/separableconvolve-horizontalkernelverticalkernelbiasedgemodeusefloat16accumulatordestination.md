@@ -61,8 +61,8 @@ let outputImage = dest.makeCGImage(cgImageFormat: cgImageFormat)
 - `horizontalKernel`: The 1D horizontal convolution kernel.
 - `verticalKernel`: The 1D vertical convolution kernel.
 - `bias`: A value that the operation adds to each element in the convolution result, before performing any clipping.
-- `edgeMode`: The convolution edge mode. The background color must be a single   value.
-- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster but lower-precision internal arithmetic. For more information, see  .
+- `edgeMode`: The convolution edge mode. The background color must be a single `Pixel_16F` value.
+- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster but lower-precision internal arithmetic. For more information, see [`kvImageUseFP16Accumulator`](kvimageusefp16accumulator.md).
 - `destination`: The destination pixel buffer.
 
 ## See Also

@@ -14,13 +14,140 @@ In macOS 13 and later on Mac computers with Apple silicon chips, the Virtualizat
 
 Before trying to install, run, or activate Rosetta, your app should check to ensure that the capability is available in the version of macOS running on the host computer. The [`availability`](vzlinuxrosettadirectoryshare/availability.md) class method returns a value from the [`VZLinuxRosettaAvailability`](vzlinuxrosettaavailability.md) enumeration that describes whether the current host supports Rosetta or if the capability is already installed on the host Mac. The example below shows the process for checking for Rosetta availability:
 
+**Swift**:
+
+```swift
+import Virtualization
+
+let rosettaAvailability = VZLinuxRosettaDirectoryShare.availability
+
+switch rosettaAvailability {
+case notSupported:
+    // Alert the user the capability isn't available; offer 
+    // continuation options according to your app's requirements.
+
+case notInstalled:
+    // Ask the user for permission to install Rosetta, and 
+    // start the installation process if they grant permission.
+
+case installed:
+    break // Ready to go.
+}
+```
+
+**Objective-C**:
+
+```objc
+import <Virtualization/Virtualization.h>
+
+VZLinuxRosettaAvailability rosettaAvailability = VZLinuxRosettaDirectoryShare.availability;
+switch (rosettaAvailability) {
+    case VZLinuxRosettaAvailabilityNotSupported:
+        // Alert the user the capability isn't available; offer 
+        // continuation options according to your app's requirements.
+
+    case VZLinuxRosettaAvailabilityNotInstalled:
+        // Ask the user for permission to install Rosetta, and 
+        // start the installation process if they grant permission.
+
+    case VZLinuxRosettaAvailabilityInstalled:
+        break; // Ready to go.
+}
+```
+
 ##### Install Rosetta
 
 Installing Rosetta is a one-time process per computer that requires the user to grant permission for the system to install Rosetta. If Rosetta is already installed in macOS, the system activates it for use under the Virtualization framework; if Rosetta isn’t installed, the framework downloads the installer from the network and performs the installation. The installer interactively prompts the user for authorization, and your app should handle any of the possible error conditions that could occur during the authorization, download, and installation process. The example below shows how to start the installation:
 
+**Swift**:
+
+```swift
+do {
+    try await VZLinuxRosettaDirectoryShare.installRosetta()
+    // Success: The system installs Rosetta on the host system.
+} catch let error {
+    switch error.code {
+    case networkError:
+        // A network error prevented the download from completing successfully.
+    case outOfDiskSpace:
+        // Not enough disk space on the system volume to complete the installation.
+    case userCancelled:
+        // The user cancelled the installation.
+    case notSupported:
+        // Rosetta isn't supported on the host Mac or macOS version.
+
+    default:
+        break // A non installer-related error occurred.
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+[VZLinuxRosettaDirectoryShare installRosettaWithCompletionHandler:^(NSError *error) {
+    if (!error) {
+        // Success: The system installs Rosetta on the host system.
+    } else {
+        // Handle error if error is not nil:
+        switch error.code {
+             case VSErrorNetworkError:
+                 // A network error prevented the download from completing successfully.
+             case VZErrorOutOfDiskSpace:
+                 // Not enough disk space on the system volume to complete the installation.
+             case VZErrorUserCancelled:
+                 // The user cancelled the installation.
+             case VZErrorNotSupported:
+                // Rosetta isn't supported on the host Mac or macOS version.
+            default:
+               break; // A non installer-related error occurred.
+        }
+    }
+}];
+```
+
 ##### Create the Rosetta Directory Share
 
 After installing Rosetta, your app needs to configure a Rosetta directory share in the Linux guest. The shared directory must have a tag that uniquely identifies the share and that you validate using [`validateTag(_:)`](vzvirtiofilesystemdeviceconfiguration/validatetag(_:).md) to ensure it conforms to the length and format for file system tags:
+
+**Swift**:
+
+```swift
+let tag = "EXAMPLE_TAG"  
+let configuration = VZVirtualMachineConfiguration()
+do {
+    try let validationError = VZVirtioFileSystemDeviceConfiguration.validateTag(tag)
+    let rosettaDirectoryShare = try VZLinuxRosettaDirectoryShare()
+    let fileSystemDevice = VZVirtioFileSystemDeviceConfiguration(tag: tag)
+    fileSystemDevice.share = rosettaDirectoryShare
+
+    configuration.directorySharingDevices = [ fileSystemDevice ]
+} catch VZError.invalidVirtualMachineConfiguration {
+    // Rosetta is unavailable.
+}
+```
+
+**Objective-C**:
+
+```objc
+NSString *tag = @"EXAMPLE_TAG";
+NSError *validationError = [[VZVirtioFileSystemDeviceConfiguration] validateTag: tag];
+if (validationError) {
+    AbortWithErrorMessage("Tag %@", tag.localizedDescription); // tag failed to validate.
+}
+
+VZVirtualMachineConfiguration *configuration = [[VZVirtualMachineConfiguration alloc] init];
+VZVirtioFileSystemDeviceConfiguration *fileSystemDevice = [[VZVirtioFileSystemDeviceConfiguration alloc] initWithTag:tag];
+
+NSError *error = nil;
+VZLinuxRosettaDirectoryShare *rosettaDirectoryShare = [[VZLinuxRosettaDirectoryShare alloc] initWithError:&error];
+if (rosettaDirectoryShare) {
+    fileSystemDevice.share = rosettaDirectoryShare;
+    configuration.directorySharingDevices = @[ fileSystemDevice ];
+} else {
+    // Rosetta is unavailable.
+}
+```
 
 ##### Mount the Shared Directory and Register Rosetta
 
@@ -60,7 +187,90 @@ There are two modes of operation for AOT caching: The first is communication usi
 
 You enable these options after you create the Rosetta directory share by setting one of the [`VZLinuxRosettaDirectoryShare.CachingOptions`](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md) using [`setCachingOptions(_:)`](vzlinuxrosettadirectoryshare/setcachingoptions(_:).md). This example shows how to configure Rosetta’s caching options in a new virtual machine configuration using a Unix Domain Socket though a shared, named file:
 
+**Swift**:
+
+```swift
+    let configuration = VZVirtualMachineConfiguration()
+    do {
+        let rosettaDirectoryShare = try VZLinuxRosettaDirectoryShare()
+        try rosettaDirectoryShare.setCachingOptions(cachingOptions: .unixSocket("/valid/path/rosetta.sock"))
+
+        let fileSystemDevice = VZVirtioFileSystemDeviceConfiguration(tag: "example-tag")
+        fileSystemDevice.share = rosettaDirectoryShare
+
+        configuration.directorySharingDevices = [ fileSystemDevice ]
+    } catch VZError.invalidVirtualMachineConfiguration {
+        // Rosetta for Linux is unavailable or failed to initialize Rosetta caching options.
+        // If Rosetta for Linux is unavailable, clients may install the resources or proceed without them.
+        // If Rosetta caching options failed to initialize, clients may gracefully fail or proceed without caching.
+    }
+```
+
+**Objective-C**:
+
+```objc
+    VZVirtualMachineConfiguration *configuration = [[VZVirtualMachineConfiguration alloc] init];
+    VZVirtioFileSystemDeviceConfiguration *fileSystemDevice = [[VZVirtioFileSystemDeviceConfiguration alloc] initWithTag:@"example-tag"];
+
+    NSError *error = nil;
+    VZLinuxRosettaDirectoryShare *rosettaDirectoryShare = [[VZLinuxRosettaDirectoryShare alloc] initWithError:&error];
+    if (rosettaDirectoryShare) {
+        error = nil;
+        VZLinuxRosettaUnixSocketCachingOptions *rosettaCachingOptions = [[VZLinuxRosettaUnixSocketCachingOptions alloc] initWithPath:@"/valid/path/rosetta.sock" error:&error];
+        if (rosettaCachingOptions) {
+            rosettaDirectoryShare.options = rosettaCachingOptions;
+            fileSystemDevice.share = rosettaDirectoryShare;
+            configuration.directorySharingDevices = @[ fileSystemDevice ];
+        } else {
+            // Failed to initialize Rosetta caching options. Clients may gracefully fail or proceed without caching.
+        }
+    } else {
+        // Rosetta for Linux is unavailable. Clients may install the resources or proceed without them.
+    }
+```
+
 The following example shows how to configure Rosetta’s caching options in a new virtual machine configuration using an abstract socket:
+
+**Swift**:
+
+```swift
+    let configuration = VZVirtualMachineConfiguration()
+    do {
+        let rosettaDirectoryShare = try VZLinuxRosettaDirectoryShare()
+        try rosettaDirectoryShare.setCachingOptions(.abstractSocket("abstractSocketName"))
+
+        let fileSystemDevice = VZVirtioFileSystemDeviceConfiguration(tag: "example-tag")
+        fileSystemDevice.share = rosettaDirectoryShare
+
+        configuration.directorySharingDevices = [ fileSystemDevice ]
+    } catch VZError.invalidVirtualMachineConfiguration {
+        // Rosetta for Linux is unavailable or failed to initialize Rosetta caching options.
+        // If Rosetta for Linux is unavailable, clients may install the resources or proceed without them.
+        // If Rosetta caching options failed to initialize, clients may gracefully fail or proceed without caching.
+    }    
+```
+
+**Objective-C**:
+
+```objc
+    VZVirtualMachineConfiguration *configuration = [[VZVirtualMachineConfiguration alloc] init];
+    VZVirtioFileSystemDeviceConfiguration *fileSystemDevice = [[VZVirtioFileSystemDeviceConfiguration alloc] initWithTag:@"example-tag"];
+
+    NSError *error = nil;
+    VZLinuxRosettaDirectoryShare *rosettaDirectoryShare = [[VZLinuxRosettaDirectoryShare alloc] initWithError:&error];
+    if (rosettaDirectoryShare) {
+        VZLinuxRosettaAbstractSocketCachingOptions *options = [[VZLinuxRosettaAbstractSocketCachingOptions alloc] initWithName:@"abstractSocketName" error:&error];
+        if (rosettaCachingOptions) {
+            rosettaDirectoryShare.options = rosettaCachingOptions;
+            fileSystemDevice.share = rosettaDirectoryShare;
+            configuration.directorySharingDevices = @[ fileSystemDevice ];
+        } else {
+            // Failed to initialize Rosetta caching options. Clients may gracefully fail or proceed without caching.
+        }
+       } else {
+        // Rosetta for Linux is unavailable. Clients may install the resources or proceed without them.
+    }
+```
 
 ## See Also
 

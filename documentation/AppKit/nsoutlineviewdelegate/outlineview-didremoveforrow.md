@@ -23,7 +23,7 @@ The removed `rowView` may be reused by the table, so any additionally inserted v
 
 - `outlineView`: The outline view that sent the message.
 - `rowView`: The row view that was removed.
-- `row`: The number of the row that was removed due to being moved offscreen, or   if the row was removed from the table so it is no longer valid.
+- `row`: The number of the row that was removed due to being moved offscreen, or `-1` if the row was removed from the table so it is no longer valid.
 
 ## See Also
 

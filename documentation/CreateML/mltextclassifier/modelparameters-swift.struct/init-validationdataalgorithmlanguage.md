@@ -20,7 +20,7 @@ init(validationData: MLTextClassifier.DataSource, algorithm: MLTextClassifier.Mo
 
 ## Parameters
 
-- `validationData`: A data source of the labeled directories the text classifier   uses for validation data during training.
+- `validationData`: A data source of the labeled directories the text classifier uses for validation data during training.
 - `algorithm`: An algorithm type for the text classifier.
 - `language`: The language of the text to classify.
 

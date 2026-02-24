@@ -85,6 +85,18 @@ Specify `com.apple.carddav.account` as the payload type.
 - [object CardDAV.CommunicationServiceRules](carddav/communicationservicerules-data.dictionary.md)
   The communication service handler rules for this account.
 
+## Properties
+
+- `CardDAVAccountDescription` (string): The description of the account.
+- `CardDAVHostName` (string) *(required)*: The server’s address.
+- `CardDAVPassword` (string): The user’s password. Only use this in encrypted profiles.
+- `CardDAVPort` (integer): The server’s port.
+- `CardDAVPrincipalURL` (string): The base URL to the user’s address book.
+- `CardDAVUsername` (string): The user name for logins.
+- `CardDAVUseSSL` (boolean): If `true`, the system enables SSL.
+- `CommunicationServiceRules` (CardDAV.CommunicationServiceRules): An array of communication service rules for this account.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## See Also
 
 - [object Accounts](accounts.md)

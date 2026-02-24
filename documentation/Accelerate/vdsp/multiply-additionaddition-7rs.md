@@ -53,8 +53,8 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `additionAB`: A tuple that contains the vectors   and   in  .
-- `additionCD`: A tuple that contains the vectors   and   in  .
+- `additionAB`: A tuple that contains the vectors `A` and `B` in `E = (A + B) * (C + D)`.
+- `additionCD`: A tuple that contains the vectors `C` and `D` in `E = (A + B) * (C + D)`.
 
 ## See Also
 

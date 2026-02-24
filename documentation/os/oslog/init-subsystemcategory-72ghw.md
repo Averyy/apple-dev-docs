@@ -26,7 +26,7 @@ convenience init(subsystem: String, category: OSLog.Category)
 
 ## Parameters
 
-- `subsystem`: An identifier string, in reverse DNS notation, that represents the subsystem that’s performing logging, such as  . The logging system uses this information to categorize and filter related log messages.
+- `subsystem`: An identifier string, in reverse DNS notation, that represents the subsystem that’s performing logging, such as `com.your_company.your_subsystem_name`. The logging system uses this information to categorize and filter related log messages.
 - `category`: A system-defined category within the specified subsystem. The system uses this value to categorize and filter related log messages. A category’s logging settings override those of the containing subsystem.
 
 ## See Also

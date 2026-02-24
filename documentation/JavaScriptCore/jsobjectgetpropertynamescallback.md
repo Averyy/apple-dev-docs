@@ -34,7 +34,7 @@ Use [`JSPropertyNameAccumulatorAddName(_:_:)`](jspropertynameaccumulatoraddname(
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   with the property names to collect.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the property names to collect.
 - `accumulator`: A JavaScript property name accumulator to accumulate the names of the object’s properties in.
 
 ## See Also

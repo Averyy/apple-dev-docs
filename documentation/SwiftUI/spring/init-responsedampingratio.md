@@ -22,8 +22,8 @@ init(response: Double, dampingRatio: Double)
 
 ## Parameters
 
-- `response`: Defines the stiffness of the spring as an approximate   duration in seconds.
-- `dampingRatio`: Defines the amount of drag applied as a fraction the   amount needed to produce critical damping.
+- `response`: Defines the stiffness of the spring as an approximate duration in seconds.
+- `dampingRatio`: Defines the amount of drag applied as a fraction the amount needed to produce critical damping.
 
 ## See Also
 

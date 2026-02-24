@@ -39,7 +39,7 @@ Note: this language does not affect text localization.
 ## Parameters
 
 - `language`: The explicit language to use for typesetting.
-- `isEnabled`: A Boolean value that indicates whether text language is   added
+- `isEnabled`: A Boolean value that indicates whether text language is added
 
 ## See Also
 

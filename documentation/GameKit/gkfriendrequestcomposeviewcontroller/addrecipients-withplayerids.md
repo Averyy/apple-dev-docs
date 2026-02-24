@@ -24,7 +24,7 @@ If you do not add at least once recipient, the recipients field is selected when
 
 ## Parameters
 
-- `playerIDs`: An array with one or more   objects, each containing an player identifier.
+- `playerIDs`: An array with one or more [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each containing an player identifier.
 
 ## See Also
 

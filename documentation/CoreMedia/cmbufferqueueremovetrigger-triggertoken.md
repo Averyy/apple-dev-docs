@@ -30,7 +30,7 @@ Triggers will automatically be removed when a queue is finalized.  However, if m
 
 ## Parameters
 
-- `queue`:   from which the trigger is to be removed.
+- `queue`: `CMBufferQueue` from which the trigger is to be removed.
 - `triggerToken`: Trigger to remove from the queue.
 
 ## See Also

@@ -24,9 +24,43 @@ For more information about how app extensions work, see [`App extensions`](https
 
 When a phone receives an incoming call, the system first checks the person’s contacts to find a matching phone number. If there’s no match, the system then checks your app’s Call Directory app extension to find a matching entry to identify the phone number. This is useful for apps that maintain a contact list that’s separate from the system contacts, such as for a social network, or for identifying incoming calls that may initiate from within the app, such as for customer service support or a delivery notification.
 
-For example, consider a person who is friends with Maria in a social networking app, but who doesn’t have her phone number in their contacts. The social networking app has a Call Directory app extension, which downloads and adds the phone numbers of all of the person’s friends. Because of this, when there’s an incoming call from Maria, the system displays something like  rather than .
+For example, consider a person who is friends with Maria in a social networking app, but who doesn’t have her phone number in their contacts. The social networking app has a Call Directory app extension, which downloads and adds the phone numbers of all of the person’s friends. Because of this, when there’s an incoming call from Maria, the system displays something like *(App Name) Caller ID: Maria Ruiz* rather than *Unknown Caller*.
 
 To provide identifying information about incoming callers, you use the [`addIdentificationEntry(withNextSequentialPhoneNumber:label:)`](cxcalldirectoryextensioncontext/addidentificationentry(withnextsequentialphonenumber:label:).md) method in the implementation of [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md).
+
+**Swift**:
+
+```swift
+class CustomCallDirectoryProvider: CXCallDirectoryProvider {
+    override func beginRequest(with context: CXCallDirectoryExtensionContext) {
+        let labelsKeyedByPhoneNumber: [CXCallDirectoryPhoneNumber: String] = [ … ]
+        for (phoneNumber, label) in labelsKeyedByPhoneNumber.sorted(by: <) {
+            context.addIdentificationEntry(withNextSequentialPhoneNumber: phoneNumber, label: label)        
+        }
+
+        context.completeRequest()
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface CustomCallDirectoryProvider: CXCallDirectoryProvider
+@end
+ 
+@implementation CustomCallDirectoryProvider
+- (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {
+    NSDictionary<NSNumber *, NSString *> *labelsKeyedByPhoneNumber = @{ … };
+    for (NSNumber *phoneNumber in [labelsKeyedByPhoneNumber.allKeys sortedArrayUsingSelector:@selector(compare:)]) {
+       NSString *label = labelsKeyedByPhoneNumber[phoneNumber];
+       [context addIdentificationEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber)[phoneNumber unsignedLongLongValue] label:label];
+    }
+ 
+    [context completeRequestWithCompletionHandler:nil];
+}
+@end
+```
 
 Because the system calls this method only when it launches the app extension and not for each individual call, you need to specify call identification information all at once. For example, you can’t make a request to a web service to find information about an incoming call.
 
@@ -37,6 +71,39 @@ When a phone receives an incoming call, the system first checks the person’s b
 To block incoming calls for a particular phone number, you use the [`addBlockingEntry(withNextSequentialPhoneNumber:)`](cxcalldirectoryextensioncontext/addblockingentry(withnextsequentialphonenumber:).md) method in the implementation of [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md).
 
 > **Note**:  You can specify that your Call Directory app extension adds identification and blocks phone numbers in its implementation of [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md).
+
+**Swift**:
+
+```swift
+class CustomCallDirectoryProvider: CXCallDirectoryProvider {
+    override func beginRequest(with context: CXCallDirectoryExtensionContext) {
+        let blockedPhoneNumbers: [CXCallDirectoryPhoneNumber] = [ … ]
+        for phoneNumber in blockedPhoneNumbers.sorted(by: <) {
+            context.addBlockingEntry(withNextSequentialPhoneNumber: phoneNumber)
+        }
+        
+        context.completeRequest()
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface CustomCallDirectoryProvider: CXCallDirectoryProvider
+@end
+ 
+@implementation CustomCallDirectoryProvider
+- (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {
+    NSArray<NSNumber *> *blockedPhoneNumbers.sorted = @[ … ];
+     for (NSNumber *phoneNumber in [blockedPhoneNumbers.sorted sortedArrayUsingSelector:@selector(compare:)]) {
+        [context addBlockingEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber)[phoneNumber unsignedLongLongValue]];
+     }
+ 
+    [context completeRequestWithCompletionHandler:nil];
+}
+@end
+```
 
 ##### Handle Audio Session Interruptions
 

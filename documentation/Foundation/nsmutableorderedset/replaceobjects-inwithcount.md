@@ -28,7 +28,7 @@ Elements are added to the new array in the same order they appear in objects, up
 
 - `range`: The range of the objects to replace.
 - `objects`: A C array of objects.
-- `count`: The number of values from the objects C array to insert in place of the objects in  . This number will be the count of the new array—it must not be negative or greater than the number of elements in objects.
+- `count`: The number of values from the objects C array to insert in place of the objects in `range`. This number will be the count of the new array—it must not be negative or greater than the number of elements in objects.
 
 ## See Also
 

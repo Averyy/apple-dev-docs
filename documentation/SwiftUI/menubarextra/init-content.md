@@ -22,7 +22,7 @@ When this item is removed from the system menu bar by the user, the application 
 ## Parameters
 
 - `titleKey`: The title key to use for the label of the item.
-- `content`: A   to display when the user selects the item.
+- `content`: A `View` to display when the user selects the item.
 
 ## See Also
 

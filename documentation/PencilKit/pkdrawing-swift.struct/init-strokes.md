@@ -20,7 +20,7 @@ init<S>(strokes: S) where S : Sequence, S.Element == PKStroke
 
 ## Parameters
 
-- `strokes`: A sequence of   elements.
+- `strokes`: A sequence of [`PKStroke`](pkstroke-swift.struct.md) elements.
 
 ## See Also
 

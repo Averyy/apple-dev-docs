@@ -25,7 +25,7 @@ An initialized `UIImage` object. In Objective-C, this method returns `nil` if th
 ## Parameters
 
 - `ciImage`: The Core Image object.
-- `scale`: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the   property.
+- `scale`: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the [`size`](uiimage/size.md) property.
 - `orientation`: The orientation of the image data. You can use this parameter to specify any rotation factors applied to the image.
 
 ## See Also

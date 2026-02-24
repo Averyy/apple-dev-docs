@@ -24,6 +24,10 @@ var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Fl
 
 The block’s parameters are:
 
+- **`element`**: The element whose input changes.
+- **`input`**: The input object that represents the relative or delta value.
+- **`delta`**: The amount that the input changed since the last time the profile called this block.
+
 ## See Also
 
 - [var delta: Float](gcrelativeinput/delta.md)

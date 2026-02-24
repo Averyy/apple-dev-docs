@@ -21,8 +21,8 @@ An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`
 ## Parameters
 
 - `ref`: A custom transform.
-- `action`: The behavior to change. Valid values are  ,  ,  , or  .
-- `newAction`: A   block that implements the behavior.
+- `action`: The behavior to change. Valid values are [`kSecTransformActionCanExecute`](ksectransformactioncanexecute.md), [`kSecTransformActionStartingExecution`](ksectransformactionstartingexecution.md), [`kSecTransformActionFinalize`](ksectransformactionfinalize.md), or [`kSecTransformActionExternalizeExtraData`](ksectransformactionexternalizeextradata.md).
+- `newAction`: A [`SecTransformActionBlock`](sectransformactionblock.md) block that implements the behavior.
 
 
 ---

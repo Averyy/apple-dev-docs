@@ -28,8 +28,9 @@ If your delegate object implements this method, the web view doesn’t call the 
 
 - `webView`: The web view from which the navigation request began.
 - `navigationAction`: Details about the action that triggered the navigation request.
-- `preferences`: The default preferences to use when displaying the new webpage. Specify the default preferences for pages using the   property of   when you create your web view.
-- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameters:
+- `preferences`: The default preferences to use when displaying the new webpage. Specify the default preferences for pages using the [`defaultWebpagePreferences`](wkwebviewconfiguration/defaultwebpagepreferences.md) property of [`WKWebViewConfiguration`](wkwebviewconfiguration.md) when you create your web view.
+- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameters: - **policy**: A constant that indicates whether to cancel or allow the navigation. For a list of possible values, see [`WKNavigationActionPolicy`](wknavigationactionpolicy.md).
+- **preferences**: The set of preferences to apply to the page if the navigation is allowed. You may pass the object from the `preferences` parameter or configure a new preferences object and pass it instead.
 
 ## See Also
 

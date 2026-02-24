@@ -34,7 +34,7 @@ For more information and sample code, see [`Inviting participants to a new share
 
 ## Parameters
 
-- `preparationHandler`: The block invoked by   when it is time for your application to save a newly created   record.
+- `preparationHandler`: The block invoked by [`UICloudSharingController`](uicloudsharingcontroller.md) when it is time for your application to save a newly created [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record.
 
 ## See Also
 

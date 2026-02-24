@@ -30,7 +30,7 @@ If a music player has started playing and has not been explicitly stopped, the `
 ## Parameters
 
 - `inPlayer`: The music player to query.
-- `outIsPlaying`: On output   (nonzero) if playing,   (zero) if not playing.
+- `outIsPlaying`: On output `true` (nonzero) if playing, `false` (zero) if not playing.
 
 ## See Also
 

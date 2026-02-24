@@ -29,7 +29,8 @@ The system calls this method when an app requests a list of supported services. 
 ## Parameters
 
 - `itemIdentifier`: The item’s identifier.
-- `completionHandler`: A block that you call after gathering the service sources. You pass the following parameters:
+- `completionHandler`: A block that you call after gathering the service sources. You pass the following parameters: - **serviceSources**: An array of service sources that lets you communicate with the host app.
+- **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

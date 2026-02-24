@@ -23,13 +23,13 @@ enum AgreementArgumentAttribute
 
 #### Overview
 
-Many languages require grammatical agreement in their sentences. In Spanish, for example, the adjectives and verbs need to agree with the gender of the subject they refer to in the sentence. For example, suppose you need to translate the following sentence into Spanish:  The correct translation is: 
+Many languages require grammatical agreement in their sentences. In Spanish, for example, the adjectives and verbs need to agree with the gender of the subject they refer to in the sentence. For example, suppose you need to translate the following sentence into Spanish: *Your small salad is ready.* The correct translation is: *Tu ensalada pequeña está lista.*
 
-The challenge is that, most often, the localization file only contains masculine forms of translated words. So, in this sentence, the masculine words for  and ,  and , need to inflect and become  and  to agree with the feminine subject of the sentence ().
+The challenge is that, most often, the localization file only contains masculine forms of translated words. So, in this sentence, the masculine words for *small* and *ready*, *pequeño* and *listo*, need to inflect and become *pequeña* and *lista* to agree with the feminine subject of the sentence (*ensalada*).
 
-You can make the first part of the sentence grammatically agree by inflecting the words  and  together using the `inflect` attribute. Because  is the feminine subject of the sentence, masculine  inflects to feminine .
+You can make the first part of the sentence grammatically agree by inflecting the words *ensalada* and *pequeño* together using the `inflect` attribute. Because *ensalada* is the feminine subject of the sentence, masculine *pequeño* inflects to feminine *pequeña*.
 
-The second part of the sentence, however, requires the `agreeWithArgument` attribute. Although  is at the end of the sentence, it needs to inflect on the subject, , which is at the beginning. By wrapping  in an `agreeWithArgument` attribute and pointing it to the feminine word , masculine  inflects to feminine , making the entire sentence agree.
+The second part of the sentence, however, requires the `agreeWithArgument` attribute. Although *listo* is at the end of the sentence, it needs to inflect on the subject, *ensalada*, which is at the beginning. By wrapping *listo* in an `agreeWithArgument` attribute and pointing it to the feminine word *ensalada*, masculine *listo* inflects to feminine *lista*, making the entire sentence agree.
 
 Using `agreeWithArgument` this way eliminates the need for the localization file to include both the masculine and the feminine forms of each word. By wrapping the words needing inflection, and then pointing them to the words they need to agree with, the system achieves agreement in the localized text for you.
 
@@ -37,8 +37,8 @@ The following steps ensure proper gender agreement in the translation:
 
 1. Create a type containing all the words you need for translation. For example, create an `Order` structure containing two localizable string properties for `item` and `size`.
 2. Add the necessary translations for the food items and the sizes into the Spanish localization file.
-3. Create a [`LocalizedStringResource`](localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with placeholder variables representing the words to inflect ( and ).
-4. In the Spanish localization file, add `%@` placeholders for the words you want to substitute as part of the translation. Make the Spanish words for the size and the item grammatically agree using the `inflect` attribute with a value of [`true`](https://developer.apple.com/documentation/Swift/true). Then make the masculine Spanish word for  () agree with the feminine word for  () by wrapping  in an `agreeWithArgument` attribute, pointing to the second replacement in the sentence (). Note how the placeholder attributes for , `%1@` and `%2@`, reverse order in the code example below when translating from English to Spanish.
+3. Create a [`LocalizedStringResource`](localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with placeholder variables representing the words to inflect (*size* and *item*).
+4. In the Spanish localization file, add `%@` placeholders for the words you want to substitute as part of the translation. Make the Spanish words for the size and the item grammatically agree using the `inflect` attribute with a value of [`true`](https://developer.apple.com/documentation/Swift/true). Then make the masculine Spanish word for *ready* (*listo*) agree with the feminine word for *salad* (*ensalada*) by wrapping *listo* in an `agreeWithArgument` attribute, pointing to the second replacement in the sentence (*ensalada*). Note how the placeholder attributes for *small salad*, `%1@` and `%2@`, reverse order in the code example below when translating from English to Spanish.
 5. Inflect the entire sentence by passing the [`LocalizedStringResource`](localizedstringresource.md) instance into a new instance of [`AttributedString`](attributedstring.md).
 
 ```swift

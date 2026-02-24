@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-01-20T08:23:41.686776",
+    "last_updated": "2026-02-24T08:55:21.184758",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -32,7 +32,7 @@
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Protocols.md": "06e6b9cce869cd9986e0780741eb01c8143dc79763c31190f7dcf130027c694a",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/StringsAndCharacters.md": "2bd491271377eedabedfddebb2cece8f292009759ba9836bc43d43ee44634385",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Subscripts.md": "54844cf530c3325708028e1cf88d94f885c3658ec6316f869421d5cbba9b939a",
-    "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "81fa4323b82554c7ddf286d1c14ed2d512a8656509b9575fc3edce547110d5bc",
+    "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "040d4e572b03d1470bf5a0fe199cae13e2c1c679bc1ab577b35056d5b6ae3a96",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TypeCasting.md": "2271c6b1584720d2d44161201c8bee190ba7224b709d3059e50fb00c4a312e55",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/AboutTheLanguageReference.md": "a8f697ca399b79642cb724de1512fe439ff3878054515abe36e5f77a8d0f7a8c",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "edcb3e9ba335a6050c631b2ffe9757625c986a126c9ae76cdbb65052ffcb0655",

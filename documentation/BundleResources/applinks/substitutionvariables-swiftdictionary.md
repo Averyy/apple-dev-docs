@@ -63,6 +63,10 @@ This example code shows how to use universal links substitution variables in an 
 }
 ```
 
+## Properties
+
+- `Any Key` ([string])
+
 
 ---
 

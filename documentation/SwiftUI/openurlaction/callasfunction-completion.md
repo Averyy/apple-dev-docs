@@ -43,12 +43,12 @@ struct OpenURLExample: View {
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in .
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
 - `url`: The URL to open.
-- `completion`: A closure the method calls after determining if   it can open the URL, but possibly before fully opening the URL.   The closure takes a Boolean value that indicates whether the   method can open the URL.
+- `completion`: A closure the method calls after determining if it can open the URL, but possibly before fully opening the URL. The closure takes a Boolean value that indicates whether the method can open the URL.
 
 ## See Also
 

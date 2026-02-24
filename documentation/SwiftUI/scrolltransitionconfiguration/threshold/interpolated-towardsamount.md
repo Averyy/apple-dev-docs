@@ -23,7 +23,7 @@ func interpolated(towards other: ScrollTransitionConfiguration.Threshold, amount
 ## Parameters
 
 - `other`: The second threshold value.
-- `amount`: The ratio with which this threshold is combined with   the given threshold, where zero is equal to this threshold,   1.0 is equal to  , and values in between combine the two   thresholds.
+- `amount`: The ratio with which this threshold is combined with the given threshold, where zero is equal to this threshold, 1.0 is equal to `other`, and values in between combine the two thresholds.
 
 ## See Also
 

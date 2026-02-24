@@ -49,9 +49,9 @@ cancellable = Just(DiceRoll(die1:Int.random(in:1...6),
 
 ## Parameters
 
-- `keyPath0`: The key path of a property on  .
-- `keyPath1`: The key path of a second property on  .
-- `keyPath2`: The key path of a third property on  .
+- `keyPath0`: The key path of a property on `Output`.
+- `keyPath1`: The key path of a second property on `Output`.
+- `keyPath2`: The key path of a third property on `Output`.
 
 ## See Also
 

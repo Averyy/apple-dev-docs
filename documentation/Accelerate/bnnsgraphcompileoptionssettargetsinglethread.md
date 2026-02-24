@@ -27,7 +27,7 @@ The default option is execution on multiple threads.
 ## Parameters
 
 - `options`: The compilation options object.
-- `value`: If  , the options specify single-threaded execution; otherwise, the options specify multi-threaded execution.
+- `value`: If `true`, the options specify single-threaded execution; otherwise, the options specify multi-threaded execution.
 
 ## See Also
 

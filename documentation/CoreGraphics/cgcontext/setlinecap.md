@@ -22,7 +22,7 @@ func setLineCap(_ cap: CGLineCap)
 
 ## Parameters
 
-- `cap`: A line cap style constant—  (the default),  , or  . See  .
+- `cap`: A line cap style constant—[`CGLineCap.butt`](cglinecap/butt.md) (the default), [`CGLineCap.round`](cglinecap/round.md), or [`CGLineCap.square`](cglinecap/square.md). See [`CGPath`](cgpath.md).
 
 ## See Also
 

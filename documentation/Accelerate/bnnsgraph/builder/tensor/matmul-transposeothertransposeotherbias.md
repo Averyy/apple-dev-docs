@@ -26,9 +26,9 @@ This function treats `self` as the LHS of the matrix multiply operation.
 
 ## Parameters
 
-- `transpose`: A Boolean value that specifies whether the operation transposes  .
+- `transpose`: A Boolean value that specifies whether the operation transposes `self`.
 - `other`: The other tensor to be multiplied.
-- `transposeOther`: A Boolean value that specifies whether the operation transposes  .
+- `transposeOther`: A Boolean value that specifies whether the operation transposes `other`.
 - `bias`: The bias.
 
 

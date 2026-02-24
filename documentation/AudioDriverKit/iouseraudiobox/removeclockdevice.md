@@ -24,7 +24,7 @@ If removing the clock device succeeds, the clock device’s reference count decr
 
 ## Parameters
 
-- `in_clock_device`: The   to disassociate from the box.
+- `in_clock_device`: The [`IOUserAudioClockDevice`](iouseraudioclockdevice.md) to disassociate from the box.
 
 ## See Also
 

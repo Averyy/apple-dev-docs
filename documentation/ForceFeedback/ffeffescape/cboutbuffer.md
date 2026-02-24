@@ -3,7 +3,7 @@
 **Framework**: Force Feedback  
 **Kind**: property
 
-On entry, specifies the size, in bytes, of the  buffer. On exit, specifies the number of bytes actually produced by the command.
+On entry, specifies the size, in bytes, of the **lpvOutBuffer** buffer. On exit, specifies the number of bytes actually produced by the command.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -18,7 +18,7 @@ var cbOutBuffer: DWORD
 ## See Also
 
 - [var cbInBuffer: DWORD](ffeffescape/cbinbuffer.md)
-  Specifies the size, in bytes, of the  buffer.
+  Specifies the size, in bytes, of the **lpvInBuffer** buffer.
 - [var dwCommand: DWORD](ffeffescape/dwcommand.md)
   Specifies a plugIn specific command number. Contact the hardware vendor for a list of valid commands and their parameters.
 - [var dwSize: DWORD](ffeffescape/dwsize.md)

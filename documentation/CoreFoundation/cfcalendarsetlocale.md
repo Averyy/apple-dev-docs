@@ -23,7 +23,7 @@ func CFCalendarSetLocale(_ calendar: CFCalendar!, _ locale: CFLocale!)
 ## Parameters
 
 - `calendar`: The calendar to modify.
-- `locale`: The locale to set for  .
+- `locale`: The locale to set for `calendar`.
 
 ## See Also
 

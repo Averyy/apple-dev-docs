@@ -22,6 +22,10 @@ Or, when the app is launched due to a Handoff activity, use the [`handleUserActi
 
 This property contains the following values based on the app’s current state:
 
+- **Just launched**: The app’s [`rootInterfaceController`](wkextension/rootinterfacecontroller.md).
+- **Running in the foreground**: The currently presented interface controller.
+- **Running in the background**: The last interface controller presented by the app.
+
 ## See Also
 
 - [var rootInterfaceController: WKInterfaceController?](wkextension/rootinterfacecontroller.md)

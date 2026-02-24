@@ -29,7 +29,7 @@ func catlas_sset(_ N: __LAPACK_int, _ ALPHA: Float, _ X: UnsafeMutablePointer<Fl
 - `N`: The number of elements in the vector.
 - `ALPHA`: The new value.
 - `X`: The vector to modify.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

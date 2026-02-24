@@ -30,7 +30,7 @@ This method throws an error if the export can’t proceed, which occurs if there
 
 ## Parameters
 
-- `extensionBundleIdentifier`: If your application contains more than one credential provider extension, pass the bundle identifier of the extension performing the export. If your application contains exactly one credential provider extension, you may pass   to indicate you’re exporting on behalf of that extension. If your application contains more than one credential provider extension, it’s an error to pass  .
+- `extensionBundleIdentifier`: If your application contains more than one credential provider extension, pass the bundle identifier of the extension performing the export. If your application contains exactly one credential provider extension, you may pass `nil` to indicate you’re exporting on behalf of that extension. If your application contains more than one credential provider extension, it’s an error to pass `nil`.
 
 ## See Also
 

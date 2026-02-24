@@ -28,7 +28,7 @@ Using this method with an instance of the [`GKGraphNode`](gkgraphnode.md) base c
 ## Parameters
 
 - `node`: A graph node object.
-- `bidirectional`:   to create connections in both directions;   to create just a single connection from the nearest node to the newly added node.
+- `bidirectional`: [`true`](https://developer.apple.com/documentation/Swift/true) to create connections in both directions; [`false`](https://developer.apple.com/documentation/Swift/false) to create just a single connection from the nearest node to the newly added node.
 
 ## See Also
 

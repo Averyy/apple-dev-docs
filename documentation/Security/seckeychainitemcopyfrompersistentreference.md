@@ -25,7 +25,7 @@ A persistent reference may be stored on disk or passed between processes. You us
 ## Parameters
 
 - `persistentItemRef`: A persistent reference for a keychain item.
-- `itemRef`: On return, a keychain item reference for the item for which you provided a persistent reference. You must call the   function to release this object when you are finished using it.
+- `itemRef`: On return, a keychain item reference for the item for which you provided a persistent reference. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

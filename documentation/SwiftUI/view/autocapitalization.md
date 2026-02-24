@@ -34,7 +34,7 @@ The [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/U
 
 ## Parameters
 
-- `style`: One of the autocapitalization modes defined in the     enumeration.
+- `style`: One of the autocapitalization modes defined in the [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/UIKit/UITextAutocapitalizationType) enumeration.
 
 ## See Also
 

@@ -23,7 +23,7 @@ class func isSupportedAttachmentUTI(_ uti: String) -> Bool
 
 ## Parameters
 
-- `uti`: The UTI (Uniform Type Identifier) in question. See 
+- `uti`: The UTI (Uniform Type Identifier) in question. See [`Uniform Type Identifiers Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257)
 
 ## See Also
 

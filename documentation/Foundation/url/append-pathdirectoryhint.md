@@ -27,7 +27,7 @@ This method doesn’t percent-encode any path separators (`/`) in the path compo
 ## Parameters
 
 - `path`: The path component to add.
-- `directoryHint`: A hint to the initializer to indicate whether the path is a directory, or to instruct the method to make this determination. Defaults to  .
+- `directoryHint`: A hint to the initializer to indicate whether the path is a directory, or to instruct the method to make this determination. Defaults to [`URL.DirectoryHint.inferFromPath`](url/directoryhint/inferfrompath.md).
 
 ## See Also
 

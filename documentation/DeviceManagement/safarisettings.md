@@ -34,11 +34,64 @@ Specify `com.apple.configuration.safari.settings` as the declaration type.
 
 ##### Configuration Examples
 
+**Start page**:
+
+This configuration sets the Safari start page to show a specific website.
+
+```json
+{
+    "Type": "com.apple.configuration.safari.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "NewTabStartPage": {
+            "PageType": "Home",
+            "HomepageURL": "https://www.example.com"
+        }
+    }
+}
+```
+
+**Restrictions**:
+
+This configuration restricts several Safari features.
+
+```json
+{
+    "Type": "com.apple.configuration.safari.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "AcceptCookies": "Never",
+        "AllowDisablingFraudWarning": false,
+        "AllowHistoryClearing": false,
+        "AllowJavaScript": false,
+        "AllowPrivateBrowsing": false,
+        "AllowPopups": false,
+        "AllowSummary": false
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object SafariSettingsNewTabStartPageObject](safarisettingsnewtabstartpageobject.md)
   Sets the start page for new tabs in Safari.
+
+## Properties
+
+- `AcceptCookies` (string): The policy Safari uses for managing cookies: - `Never`: Safari always blocks cookies.
+- `CurrentWebsite`: Safari allows cookies only from the current website.
+- `VisitedWebsites`: Safari allows cookies only from visited websites.
+- `Always`: Safari always allows cookies.
+- `AllowDisablingFraudWarning` (boolean): If `false`, the system forces fraud warnings on in Safari.
+- `AllowHistoryClearing` (boolean): If `false`, the system disables clearing history in Safari.
+- `AllowJavaScript` (boolean): If `false`, the system disables JavaScript in Safari.
+- `AllowPopups` (boolean): If `false`, the system disables popups in Safari.
+- `AllowPrivateBrowsing` (boolean): If `false`, the system disables private browsing in Safari.
+- `AllowSummary` (boolean): If `false`, the system disables summarization of content in Safari.
+- `NewTabStartPage` (SafariSettingsNewTabStartPageObject): Sets the start page for new tabs in Safari.
 
 ## See Also
 

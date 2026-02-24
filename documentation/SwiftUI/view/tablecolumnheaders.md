@@ -35,7 +35,7 @@ Table(article.authors) {
 
 ## Parameters
 
-- `visibility`: A value of   will show table columns,    will remove them, and   will defer to default   behavior.
+- `visibility`: A value of `visible` will show table columns, `hidden` will remove them, and `automatic` will defer to default behavior.
 
 ## See Also
 

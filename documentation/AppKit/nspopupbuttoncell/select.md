@@ -20,7 +20,7 @@ By default, selecting or deselecting a menu item from a pop-up menu changes its 
 
 ## Parameters
 
-- `item`: The menu item to select, or   if you want to deselect all menu items.
+- `item`: The menu item to select, or `nil` if you want to deselect all menu items.
 
 ## See Also
 

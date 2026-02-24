@@ -53,12 +53,12 @@ struct FadeOutOnReleaseView: View {
 
 ## Parameters
 
-- `transform`: The binding to a 3D affine transform applied to the view   and updated when a person is manipulating this view.
-- `coordinateSpace`: The coordinate space of the manipulation gesture   event locations.
-- `operations`: The set of allowed operations that can be applied when   a person manipulates this view.
-- `inertia`: The inertia of this view that defines how much it resists   being manipulated.
-- `isEnabled`: The Boolean value that indicates whether the manipulation   gesture added by this view modifier is enabled or not.
-- `onChanged`: The action to perform with each new manipulation gesture   event.
+- `transform`: The binding to a 3D affine transform applied to the view and updated when a person is manipulating this view.
+- `coordinateSpace`: The coordinate space of the manipulation gesture event locations.
+- `operations`: The set of allowed operations that can be applied when a person manipulates this view.
+- `inertia`: The inertia of this view that defines how much it resists being manipulated.
+- `isEnabled`: The Boolean value that indicates whether the manipulation gesture added by this view modifier is enabled or not.
+- `onChanged`: The action to perform with each new manipulation gesture event.
 
 
 ---

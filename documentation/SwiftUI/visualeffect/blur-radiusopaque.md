@@ -30,8 +30,8 @@ Use `blur(radius:opaque:)` to apply a gaussian blur effect to the rendering of t
 
 ## Parameters
 
-- `radius`: The radial size of the blur. A blur is more diffuse when its   radius is large.
-- `opaque`: A Boolean value that indicates whether the blur renderer   permits transparency in the blur output. Set to   to create an   opaque blur, or set to   to permit transparency.
+- `radius`: The radial size of the blur. A blur is more diffuse when its radius is large.
+- `opaque`: A Boolean value that indicates whether the blur renderer permits transparency in the blur output. Set to `true` to create an opaque blur, or set to `false` to permit transparency.
 
 ## See Also
 

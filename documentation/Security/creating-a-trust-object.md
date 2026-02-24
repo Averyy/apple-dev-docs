@@ -16,15 +16,63 @@ All of this activity is facilitated by an instance of the [`SecTrust`](sectrust.
 
 When you have a certificate that you want to evaluate, obtained using one of the methods described in [`Getting a Certificate`](getting-a-certificate.md), you prepare an array containing at least that certificate:
 
+**Swift**:
+
+```swift
+let certificate = <# a certificate #>
+let certArray = [ certificate ]
+```
+
+**Objective-C**:
+
+```objc
+SecCertificateRef certificate = <# a certificate #>;
+NSArray* certArray = @[ (__bridge id)certificate ];
+```
+
 You can also include in this array the root certificate and any intermediates in the chain, but the system automatically looks for these if you don’t include them. It searches the keychain and the operating system’s collection of known root certificates. It may also download intermediate certificates from the network, if appropriate. As a result, explicitly including in the array any intermediate certificates that might otherwise require fetching may speed up the evaluation.
 
 ##### Prepare a Policy
 
 You can construct your own policy from properties defined in the API using [`SecPolicyCreateWithProperties(_:_:)`](secpolicycreatewithproperties(_:_:).md), but the best option is usually to use one of the predefined policies. For example, you can create an SSL policy with the [`SecPolicyCreateSSL(_:_:)`](secpolicycreatessl(_:_:).md) function or the basic X509 policy with the [`SecPolicyCreateBasicX509()`](secpolicycreatebasicx509().md) function. For example, for X509:
 
+**Swift**:
+
+```swift
+let policy = SecPolicyCreateBasicX509()
+```
+
+**Objective-C**:
+
+```objc
+SecPolicyRef policy = SecPolicyCreateBasicX509();
+```
+
 ##### Create a Trust Object
 
 After you have prepared the certificate chain and policy, you then use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust object:
+
+**Swift**:
+
+```swift
+var optionalTrust: SecTrust?
+let status = SecTrustCreateWithCertificates(certArray as AnyObject,
+                                            policy,
+                                            &optionalTrust)
+guard status == errSecSuccess else { return }
+let trust = optionalTrust!    // Safe to force unwrap now
+```
+
+**Objective-C**:
+
+```objc
+SecTrustRef trust;
+OSStatus status = SecTrustCreateWithCertificates((__bridge CFTypeRef)certArray,
+                                                 policy,
+                                                 &trust);
+if (policy) { CFRelease(policy); }   // Done with the policy object
+if (status != errSecSuccess) { return; }
+```
 
 
 ---

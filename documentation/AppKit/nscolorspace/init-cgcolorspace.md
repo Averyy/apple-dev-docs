@@ -24,7 +24,7 @@ Because `NSColorSpace` might retain or copy the `CGColorSpace` object depending 
 
 ## Parameters
 
-- `cgColorSpace`: A reference to a Core Graphics color-space object ( ).
+- `cgColorSpace`: A reference to a Core Graphics color-space object ([`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace)).
 
 ## See Also
 

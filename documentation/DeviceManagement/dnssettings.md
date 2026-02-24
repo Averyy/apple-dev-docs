@@ -45,6 +45,12 @@ When installed manually, this setting also applies to cellular networks.
 - [object DNSSettings.OnDemandRulesElement](dnssettings/ondemandruleselement.md)
   A list of domain strings that determine which DNS queries use the DNS server.
 
+## Properties
+
+- `DNSSettings` (DNSSettings.DNSSettings) *(required)*: A dictionary that defines a configuration for an encrypted DNS server.
+- `OnDemandRules` ([DNSSettings.OnDemandRulesElement]): An array of rules that define the DNS settings. If not set, the system always applies the DNS settings. These rules are identical to the `OnDemandRules` array in VPN payloads.
+- `ProhibitDisablement` (boolean): If `true`, the system prohibits users from disabling DNS settings. This key is only available on supervised devices.
+
 ## See Also
 
 - [object Cellular](cellular.md)

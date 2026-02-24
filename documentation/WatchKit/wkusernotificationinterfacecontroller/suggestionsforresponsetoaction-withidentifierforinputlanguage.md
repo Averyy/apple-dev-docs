@@ -26,7 +26,7 @@ When the user taps an action button that accepts text input, WatchKit calls this
 
 - `identifier`: The identifier associated with the registered action. You specify this identifier when registering your actions from your iOS app.
 - `notification`: The notification object. Use this object to get information about the notification being displayed.
-- `inputLanguage`: The language to use for the returned suggestions. The string contains a canonical language identifier that you can use to initialize an   object or look up localized versions of strings.
+- `inputLanguage`: The language to use for the returned suggestions. The string contains a canonical language identifier that you can use to initialize an [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale) object or look up localized versions of strings.
 
 
 ---

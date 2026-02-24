@@ -26,7 +26,7 @@ When decoding, the receiver’s translation map overrides any translation that m
 
 ## Parameters
 
-- `cls`: The class with which to replace instances of the class named  .
+- `cls`: The class with which to replace instances of the class named `codedName`.
 - `codedName`: The ostensible name of a class in an archive.
 
 ## See Also

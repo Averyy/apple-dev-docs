@@ -23,7 +23,7 @@ class CATransaction
 
 `CATransaction` is the Core Animation mechanism for batching multiple layer-tree operations into atomic updates to the render tree. Every modification to a layer tree must be part of a transaction. Nested transactions are supported.
 
-Core Animation supports two types of transactions:  transactions and  transactions. Implicit transactions are created automatically when the layer tree is modified by a thread without an active transaction and are committed automatically when the thread’s runloop next iterates. Explicit transactions occur when the the application sends the [`CATransaction`](catransaction.md) class a [`begin()`](catransaction/begin().md) message before modifying the layer tree, and a [`commit()`](catransaction/commit().md) message afterwards.
+Core Animation supports two types of transactions: *implicit* transactions and *explicit* transactions. Implicit transactions are created automatically when the layer tree is modified by a thread without an active transaction and are committed automatically when the thread’s runloop next iterates. Explicit transactions occur when the the application sends the [`CATransaction`](catransaction.md) class a [`begin()`](catransaction/begin().md) message before modifying the layer tree, and a [`commit()`](catransaction/commit().md) message afterwards.
 
 [`CATransaction`](catransaction.md) allows you to override default animation properties that are set for animatable properties. You can customize duration, timing function, whether changes to properties trigger animations, and provide a handler that informs you when all animations from the transaction group are completed.
 

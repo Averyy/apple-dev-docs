@@ -60,8 +60,6 @@ A `RoomAnchor` structure describes an approximate representation of the room’s
   A source of real-time information about the room that a person is currently in.
 - [enum SurfaceClassification](surfaceclassification.md)
   A value describing the classification of a surface.
-- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
-  Use room tracking in visionOS to provide custom interactions with physical spaces.
 
 
 ---

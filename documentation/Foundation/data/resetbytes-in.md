@@ -26,7 +26,7 @@ If `range` exceeds the bounds of the data, then the data is resized to fit.
 
 ## Parameters
 
-- `range`: The range in the data to set to  .
+- `range`: The range in the data to set to `0`.
 
 ## See Also
 

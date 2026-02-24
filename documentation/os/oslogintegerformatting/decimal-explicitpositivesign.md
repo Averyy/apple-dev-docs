@@ -26,7 +26,7 @@ A custom decimal format for integers.
 
 ## Parameters
 
-- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus ( ) sign in front of positive integers.
+- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus (`+`) sign in front of positive integers.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKStatisticsOption
 ## Parameters
 
 - `predicate`: A predicate that defines the set of data that the query uses to calculate the statistics.
-- `options`: A list of options that define the type of statistical calculations performed and the way in which HealthKit merges data from multiple sources. For a list of valid options, see  .
+- `options`: A list of options that define the type of statistical calculations performed and the way in which HealthKit merges data from multiple sources. For a list of valid options, see [`HKStatisticsOptions`](hkstatisticsoptions.md).
 
 
 ---

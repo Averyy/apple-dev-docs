@@ -36,7 +36,7 @@ await y.shapedArray(of: Float.self) // is [6.0 7.0]
 ## Parameters
 
 - `axes`: The axes to reduce.
-- `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is  .
+- `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is `false`.
 
 ## See Also
 

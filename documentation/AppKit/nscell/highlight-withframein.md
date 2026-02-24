@@ -20,7 +20,7 @@ Note that the `NSCell` highlighting does not appear when highlighted cells are p
 
 ## Parameters
 
-- `flag`: If  , the cell is redrawn with a highlight; otherwise, if  , the highlight is removed.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the cell is redrawn with a highlight; otherwise, if [`false`](https://developer.apple.com/documentation/Swift/false), the highlight is removed.
 - `cellFrame`: The bounding rectangle of the receiver.
 - `controlView`: The control that manages the cell.
 

@@ -23,8 +23,8 @@ Some applications may want to disable events from some of the local hardware dur
 
 ## Parameters
 
-- `filter`: A mask that specifies the categories of local hardware events to enable during the event suppression interval. See  .
-- `state`: The type of event suppression interval during which the filter is applied. Pass one of the constants listed in  .
+- `filter`: A mask that specifies the categories of local hardware events to enable during the event suppression interval. See [`CGEventFilterMask`](cgeventfiltermask.md).
+- `state`: The type of event suppression interval during which the filter is applied. Pass one of the constants listed in [`CGEventSuppressionState`](cgeventsuppressionstate.md).
 
 ## See Also
 

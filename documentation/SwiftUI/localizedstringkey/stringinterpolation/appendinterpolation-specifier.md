@@ -27,7 +27,7 @@ Don’t call this method directly; it’s used by the compiler when interpreting
 ## Parameters
 
 - `value`: The value to append.
-- `specifier`: A format specifier to convert   to a string   representation, like   for a   , or    to create a hexidecimal representation of a   . For a   list of available specifier strings, see   .
+- `specifier`: A format specifier to convert `subject` to a string representation, like `%f` for a [`Double`](https://developer.apple.com/documentation/Swift/Double), or `%x` to create a hexidecimal representation of a [`UInt32`](https://developer.apple.com/documentation/Swift/UInt32). For a list of available specifier strings, see [`String Format Specifers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265).
 
 ## See Also
 

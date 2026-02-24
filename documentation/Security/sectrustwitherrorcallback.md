@@ -29,7 +29,7 @@ The block provides a pass or fail indicator and an error describing the reason f
 ## Parameters
 
 - `trustRef`: The trust that was evaluated.
-- `result`: A Boolean that’s   if the certificate is trusted, or   if not.
+- `result`: A Boolean that’s `true` if the certificate is trusted, or `false` if not.
 - `error`: An error that indicates the reason for trust failure, if applicable.
 
 

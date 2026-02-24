@@ -8,6 +8,10 @@ A Boolean value that indicates whether the driver provides a HID-related event s
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [com.apple.developer.driverkit.family.hid.device](entitlements/com.apple.developer.driverkit.family.hid.device.md)

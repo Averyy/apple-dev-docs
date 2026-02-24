@@ -23,7 +23,7 @@ Build and run the app on any supported device. Use the play, pause, and scrubber
 
 ##### Visualize the Composition
 
- is looking at a picture of a composition rather than looking at its code. This sample implements the `CompositionDebugView` class to present a visual description on the screen of the underlying [`AVComposition`](avcomposition.md), [`AVVideoComposition`](avvideocomposition.md), and [`AVAudioMix`](avaudiomix.md) objects that form the composition. Developers can drop the `CompositionDebugView` into their own apps. Itʼs a noninteractive view, and developers can extend it to draw their own video instructions. It helps in identifying any overlaps and gaps in the composition tracks, video instructions, and audio mix.
+*Visualization* is looking at a picture of a composition rather than looking at its code. This sample implements the `CompositionDebugView` class to present a visual description on the screen of the underlying [`AVComposition`](avcomposition.md), [`AVVideoComposition`](avvideocomposition.md), and [`AVAudioMix`](avaudiomix.md) objects that form the composition. Developers can drop the `CompositionDebugView` into their own apps. Itʼs a noninteractive view, and developers can extend it to draw their own video instructions. It helps in identifying any overlaps and gaps in the composition tracks, video instructions, and audio mix.
 
 ##### Synchronize the Visualized Composition
 

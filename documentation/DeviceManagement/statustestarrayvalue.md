@@ -38,6 +38,10 @@ object StatusTestArrayValue
 - [object StatusTestArrayValueArrayObject](statustestarrayvaluearrayobject.md)
   A status value for the test status item array.
 
+## Properties
+
+- `test.array-value` ([StatusTestArrayValueArrayObject]) *(required)*: The test status item array value.
+
 ## See Also
 
 - [object StatusTestBooleanValue](statustestbooleanvalue.md)

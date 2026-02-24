@@ -20,8 +20,8 @@ Use one or more cameras with one of the preview macros that takes a `cameras` in
 
 ## Parameters
 
-- `position`: The point to aim the camera at, specified in meters from   the preview center.
-- `from`: The position of the camera, specified in meters from the   preview center.
+- `position`: The point to aim the camera at, specified in meters from the preview center.
+- `from`: The position of the camera, specified in meters from the preview center.
 - `name`: An optional name that the canvas uses to label the camera.
 
 

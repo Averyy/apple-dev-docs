@@ -26,7 +26,7 @@ You can use this method in conjunction with [`schedule(in:forMode:)`](netservice
 ## Parameters
 
 - `aRunLoop`: Run loop from which to remove the receiver.
-- `mode`: Run loop mode in which to perform this operation, such as  . See the Run Loop Modes section of the   class for other run loop mode values.
+- `mode`: Run loop mode in which to perform this operation, such as [`default`](runloop/mode/default.md). See the Run Loop Modes section of the [`RunLoop`](runloop.md) class for other run loop mode values.
 
 ## See Also
 

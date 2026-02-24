@@ -33,7 +33,7 @@ var queueName: String? { get set }
 
 To use matchmaking rules, set the [`queueName`](gkmatchrequest/queuename.md) property to a queue name that you configure in App Store Connect. Then set [`properties`](gkmatchrequest/properties.md) and optionally [`recipientProperties`](gkmatchrequest/recipientproperties.md) to game-specific criteria.
 
-A  is a uniform type identifier (UTI) that contains only alphanumeric characters (A-Z, a-z, 0-9), hyphens (-), or periods (.). The string should be in reverse-DNS format. Queue names are case sensitive.
+A *queue name* is a uniform type identifier (UTI) that contains only alphanumeric characters (A-Z, a-z, 0-9), hyphens (-), or periods (.). The string should be in reverse-DNS format. Queue names are case sensitive.
 
 Matchmaking rules evaluate the properties of match requests in the same queue to find the best match according to the rules that you set in App Store Connect for the queue. An error occurs if the queue doesn’t exist.
 

@@ -22,7 +22,7 @@ func endActivity(_ activity: any NSObjectProtocol)
 
 ## Parameters
 
-- `activity`: An activity object returned by  .
+- `activity`: An activity object returned by [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md).
 
 ## See Also
 

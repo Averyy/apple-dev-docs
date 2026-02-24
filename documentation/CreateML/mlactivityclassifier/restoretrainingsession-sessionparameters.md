@@ -20,7 +20,7 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the activity clas
 
 ## Parameters
 
-- `sessionParameters`: The   instance you used to create the training session   with     or   .
+- `sessionParameters`: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session with `MLActivityClassifier/makeTrainingSession(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)-(DataSource,_,_,_,_,_)` or [`makeTrainingSession(trainingData:featureColumns:labelColumn:recordingFileColumn:parameters:sessionParameters:)`](mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-3ic8k.md).
 
 ## See Also
 

@@ -94,7 +94,7 @@ struct ContentView: View {
 let someBinding: Binding<String> = ...
 let typeErasedBinding = Binding<AnyHashable>(someBinding)
 ``` Attempting to use this API at compile time results in a linker error on watchOS 6. (53769896)
-- A [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/SwiftUI/WKInterfaceObjectRepresentable) instance with no explicit width might expand to the bounds of its container.  Wrap the [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/SwiftUI/WKInterfaceObjectRepresentable) instance in a [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader) to get an explicit width for the view. (53512858)
+- A [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/SwiftUI/WKInterfaceObjectRepresentable) instance with no explicit width might expand to the bounds of its container. **Workaround:** Wrap the [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/SwiftUI/WKInterfaceObjectRepresentable) instance in a [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader) to get an explicit width for the view. (53512858)
 - [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) instances don’t use resizing information configured in asset catalogs. Configure the size of an image using the [`resizable(capInsets:resizingMode:)`](https://developer.apple.com/documentation/SwiftUI/Image/resizable(capInsets:resizingMode:)) modifier instead. (49114577)
 
 ###### Deprecations

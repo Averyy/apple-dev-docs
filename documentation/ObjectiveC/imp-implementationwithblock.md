@@ -26,7 +26,7 @@ The [`IMP`](imp.md) that calls `block`. You must dispose of the returned [`IMP`]
 
 ## Parameters
 
-- `block`: The block that implements this method. The signature of   should be  . The selector of the method is not available to  .   is copied with  .
+- `block`: The block that implements this method. The signature of `block` should be `method_return_type ^(id self, method_args …)`. The selector of the method is not available to `block`. `block` is copied with `Block_copy()`.
 
 ## See Also
 

@@ -9,6 +9,12 @@ An entitlement that grants an alternative browser engine’s extension the abili
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add this entitlement with a value of `true` to your alternative browser engine’s extension that renders web content.

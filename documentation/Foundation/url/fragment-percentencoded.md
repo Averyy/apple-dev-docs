@@ -32,7 +32,7 @@ If the URL doesn’t contain a fragment component according to [`RFC 3986`](http
 
 ## Parameters
 
-- `percentEncoded`: A Boolean value that indicates whether the URL percent-encodes any unreserved characters. Defaults to  .
+- `percentEncoded`: A Boolean value that indicates whether the URL percent-encodes any unreserved characters. Defaults to `true`.
 
 ## See Also
 

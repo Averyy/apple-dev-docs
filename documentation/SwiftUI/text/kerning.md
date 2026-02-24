@@ -41,11 +41,11 @@ The last character in the first case, which uses negative kerning, experiences c
 
 ![Three text views showing character groups, with progressively](https://docs-assets.developer.apple.com/published/8a1af1e199d6c4f2dabecc906d0b2b5b/SwiftUI-Text-kerning-1%402x.png)
 
-Kerning attempts to maintain ligatures. For example, the Hoefler Text font uses a ligature for the letter combination , as in the word , shown here with a small negative and a small positive kerning:
+Kerning attempts to maintain ligatures. For example, the Hoefler Text font uses a ligature for the letter combination *ffl*, as in the word *raffle*, shown here with a small negative and a small positive kerning:
 
 ![Two text views showing the word raffle in the Hoefler Text font, the](https://docs-assets.developer.apple.com/published/e150d2faa87f2502f78816d52bf23e9c/SwiftUI-Text-kerning-2%402x.png)
 
-The  letter combination keeps a constant shape as the other letters move together or apart. Beyond a certain point in either direction, however, kerning does disable nonessential ligatures.
+The *ffl* letter combination keeps a constant shape as the other letters move together or apart. Beyond a certain point in either direction, however, kerning does disable nonessential ligatures.
 
 ![Two text views showing the word raffle in the Hoefler Text font, the](https://docs-assets.developer.apple.com/published/12c156ffa170a7b5e73e033db44cf721/SwiftUI-Text-kerning-3%402x.png)
 
@@ -53,7 +53,7 @@ The  letter combination keeps a constant shape as the other letters move togethe
 
 ## Parameters
 
-- `kerning`: The spacing to use between individual characters in   this text. Value of   sets the kerning to the system default value.
+- `kerning`: The spacing to use between individual characters in this text. Value of `0` sets the kerning to the system default value.
 
 ## See Also
 

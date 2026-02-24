@@ -21,7 +21,7 @@ init(id: IKSolverDefinition.ID, rig: IKRig)
 
 ## Parameters
 
-- `id`: The identifier the solver instance is using.   Use a unique value for each ID in the resource.
+- `id`: The identifier the solver instance is using. Use a unique value for each ID in the resource.
 - `rig`: The solver rig.
 
 

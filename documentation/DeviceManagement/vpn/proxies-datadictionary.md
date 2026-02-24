@@ -19,6 +19,21 @@ The dictionary that contains the Proxies settings.
 object VPN.Proxies
 ```
 
+## Properties
+
+- `HTTPEnable` (integer): If `1`, enables proxy for HTTP traffic.
+- `HTTPPort` (integer): The port number of the HTTP proxy. This field is required if `HTTPProxy` is specified.
+- `HTTPProxy` (string): The host name of the HTTP proxy.
+- `HTTPProxyPassword` (string): The password used for authentication.
+- `HTTPProxyUsername` (string): The user name used for authentication.
+- `HTTPSEnable` (integer): If `true`, enables proxy for HTTPS traffic.
+- `HTTPSPort` (integer): The port number of the HTTPS proxy. This field is required if `HTTPSProxy` is specified.
+- `HTTPSProxy` (string): The host name of the HTTPS proxy.
+- `ProxyAutoConfigEnable` (integer): If `true`, enables automatic proxy configuration.
+- `ProxyAutoConfigURLString` (string): The URL to the location of the proxy auto-configuration file. Used only when `ProxyAutoConfigEnable` is `true`.
+- `ProxyAutoDiscoveryEnable` (integer): If `true`, enables proxy auto discovery.
+- `SupplementalMatchDomains` ([string]): An array of domains that defines which hosts use proxy settings for hosts.
+
 ## See Also
 
 - [object VPN.AlwaysOn](vpn/alwayson-data.dictionary.md)

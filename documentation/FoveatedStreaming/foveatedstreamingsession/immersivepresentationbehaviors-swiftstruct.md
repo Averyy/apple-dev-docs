@@ -23,15 +23,15 @@ Use `ImmersivePresentationBehaviors` to automatically present the immersive spac
 ### Initializers
 - [init()](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/init.md)
 ### Type Methods
-- [static func automatic(OpenFoveatedStreamingSpaceAction, DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/automatic(_:_:).md)
+- [static func automatic(OpenImmersiveSpaceAction, DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/automatic(_:_:).md)
   Opens the immersive space when the session connects or resumes and dismisses the immersive space when the session pauses or disconnects.
 - [static func dismissOnDisconnect(DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissondisconnect(_:).md)
   Dismisses the immersive space when the session disconnects.
 - [static func dismissOnPause(DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissonpause(_:).md)
   Dismisses the immersive space when the session pauses.
-- [static func presentOnConnect(OpenFoveatedStreamingSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonconnect(_:).md)
+- [static func presentOnConnect(OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonconnect(_:).md)
   Opens the immersive space when the session connects.
-- [static func presentOnResume(OpenFoveatedStreamingSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonresume(_:).md)
+- [static func presentOnResume(OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonresume(_:).md)
   Opens the immersive space when the session resumes.
 
 ## Relationships

@@ -30,7 +30,9 @@ The `totalBytesSent` and `totalBytesExpectedToSend` parameters are also availabl
 - `task`: The data task.
 - `bytesSent`: The number of bytes sent since the last time this delegate method was called.
 - `totalBytesSent`: The total number of bytes sent so far.
-- `totalBytesExpectedToSend`: Otherwise, the value is   ( ) if you provided a stream or body data object, or zero ( ) if you did not.
+- `totalBytesExpectedToSend`: The expected length of the body data. The URL loading system can determine the length of the upload data in three ways: - From the length of the `NSData` object provided as the upload body.
+- From the length of the file on disk provided as the upload body of an upload task (*not* a download task).
+- From the `Content-Length` in the request object, if you explicitly set it. Otherwise, the value is [`NSURLSessionTransferSizeUnknown`](nsurlsessiontransfersizeunknown.md) (`-1`) if you provided a stream or body data object, or zero (`0`) if you did not.
 
 ## See Also
 

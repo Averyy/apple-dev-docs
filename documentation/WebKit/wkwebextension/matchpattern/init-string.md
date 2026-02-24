@@ -24,7 +24,7 @@ A pattern object, or `nil` if the pattern string is invalid and an error will be
 
 ## Parameters
 
-- `string`: On output, a pointer to an error object that describes why the method failed, or   if no error occurred. If you are not interested in the error information, pass   for this parameter.
+- `string`: On output, a pointer to an error object that describes why the method failed, or `nil` if no error occurred. If you are not interested in the error information, pass `nil` for this parameter.
 
 
 ---

@@ -26,9 +26,9 @@ You can attach any Core Foundation object to a `CMAttachmentBearer` object to st
 
 ## Parameters
 
-- `target`: The   object on which to add or set attachments.
-- `key`: A   key identifying the desired attachment.
-- `value`: A Core Foundation object attachment. If this parameter is  , the function returns an error.
+- `target`: The `CMAttachmentBearer` object on which to add or set attachments.
+- `key`: A `CFString` key identifying the desired attachment.
+- `value`: A Core Foundation object attachment. If this parameter is `NULL`, the function returns an error.
 - `attachmentMode`: Specifies the attachment mode for this attachment. Any given attachment key may exist in only one mode at a time.
 
 ## See Also

@@ -24,6 +24,10 @@ func vvatanh(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 If `x` is `+/-0`, the result preserves the signed zero.
 
 If `x` is `+/-1`, the result is `+/-inf`.

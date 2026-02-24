@@ -17,7 +17,7 @@ class AMWorkflow
 
 #### Overview
 
-A  consists of one or more actions, discrete tasks which together can perform complex automation tasks. Your app can use workflows to package its own features and to take advantage of features provided by other apps. You create actions with Xcode, while you create workflows with the Automator app.
+A *workflow* consists of one or more actions, discrete tasks which together can perform complex automation tasks. Your app can use workflows to package its own features and to take advantage of features provided by other apps. You create actions with Xcode, while you create workflows with the Automator app.
 
 You can load and run a workflow with minimal overhead by using the class method [`run(at:withInput:)`](amworkflow/run(at:withinput:).md). However, in situations where you need greater control, such as the ability to start and stop the workflow, you can use an instance of the [`AMWorkflowController`](amworkflowcontroller.md) class instead. In that case, you must create and initialize both the workflow and the workflow controller objects.
 

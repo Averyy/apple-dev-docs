@@ -104,9 +104,9 @@ If the system terminated the app while it was suspended, the system relaunches t
 
 With background sessions, the actual transfer is performed by a process that is separate from your app’s process. Because restarting your app’s process is fairly expensive, a few features are unavailable, resulting in the following limitations:
 
-- The session  provide a delegate for event delivery. (For uploads and downloads, the delegates behave the same as for in-process transfers.)
+- The session *must* provide a delegate for event delivery. (For uploads and downloads, the delegates behave the same as for in-process transfers.)
 - Only HTTP and HTTPS protocols are supported (no custom protocols).
-- Redirects are always followed. As a result, even if you have implemented [`urlSession(_:task:willPerformHTTPRedirection:newRequest:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:willperformhttpredirection:newrequest:completionhandler:).md), it is  called.
+- Redirects are always followed. As a result, even if you have implemented [`urlSession(_:task:willPerformHTTPRedirection:newRequest:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:willperformhttpredirection:newrequest:completionhandler:).md), it is *not* called.
 - Only upload tasks from a file are supported (uploads from data instances or a stream fail after the app exits).
 
 ##### Use Background Sessions Efficiently

@@ -42,7 +42,7 @@ let conversionMatrixPointer = withUnsafeBytes(of: cvImageFormat) { bytes in
 ## Parameters
 
 - `format`: The Core Video image format to query.
-- `outType`: A pointer to a  .
+- `outType`: A pointer to a `vImageMatrixType`.
 
 ## See Also
 

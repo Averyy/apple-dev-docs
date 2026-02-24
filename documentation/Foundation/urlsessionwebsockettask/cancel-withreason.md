@@ -26,7 +26,7 @@ If you call [`cancel()`](urlsessiontask/cancel().md) on the task instead of this
 
 ## Parameters
 
-- `closeCode`: A   that indicates the reason for closing the connection.
+- `closeCode`: A [`URLSessionWebSocketTask.CloseCode`](urlsessionwebsockettask/closecode-swift.enum.md) that indicates the reason for closing the connection.
 - `reason`: Optional further information to explain the closing. The value of this parameter is defined by the endpoints, not by the standard.
 
 ## See Also

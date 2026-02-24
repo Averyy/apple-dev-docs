@@ -18,7 +18,7 @@ func changeFileAttributes(_ attributes: [AnyHashable : Any] = [:], atPath path: 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if  changes succeed. If any change fails, returns [`false`](https://developer.apple.com/documentation/Swift/false), but it is undefined whether any changes actually occurred.
+[`true`](https://developer.apple.com/documentation/Swift/true) if *all* changes succeed. If any change fails, returns [`false`](https://developer.apple.com/documentation/Swift/false), but it is undefined whether any changes actually occurred.
 
 #### Discussion
 
@@ -32,7 +32,7 @@ Because this method does not return error information, it has been deprecated as
 
 ## Parameters
 
-- `attributes`: For the   value, specify a file mode from the OR’d permission bit masks defined in  . See the man page for the   function ( ) for an explanation.
+- `attributes`: A dictionary containing as keys the attributes to set for `path` and as values the corresponding value for the attribute. You can set following: `NSFileBusy`, `NSFileCreationDate`, `NSFileExtensionHidden`, `NSFileGroupOwnerAccountID`, `NSFileGroupOwnerAccountName`, `NSFileHFSCreatorCode`, `NSFileHFSTypeCode`, `NSFileImmutable`, `NSFileModificationDate`, `NSFileOwnerAccountID`, `NSFileOwnerAccountName`, `NSFilePosixPermissions`. You can change single attributes or any combination of attributes; you need not specify keys for all attributes. For the `NSFilePosixPermissions` value, specify a file mode from the OR’d permission bit masks defined in `sys/stat.h`. See the man page for the `chmod` function (`man 2 chmod`) for an explanation.
 - `path`: A path to a file or directory.
 
 ## See Also

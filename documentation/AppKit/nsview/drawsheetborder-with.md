@@ -20,7 +20,7 @@ The marks can be such things as crop marks or fold lines of size `borderSize`. T
 
 ## Parameters
 
-- `borderSize`: An   structure that defines a printed sheet.
+- `borderSize`: An `NSSize` structure that defines a printed sheet.
 
 ## See Also
 

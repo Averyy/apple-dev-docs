@@ -34,8 +34,8 @@ Prior to copying each item, the file manager asks its delegate if it should actu
 
 ## Parameters
 
-- `srcURL`: The file URL that identifies the file you want to copy. The URL in this parameter must not be a file reference URL. This parameter must not be  .
-- `dstURL`: The URL at which to place the copy of  . The URL in this parameter must not be a file reference URL and must include the name of the file in its new location. This parameter must not be  .
+- `srcURL`: The file URL that identifies the file you want to copy. The URL in this parameter must not be a file reference URL. This parameter must not be `nil`.
+- `dstURL`: The URL at which to place the copy of `srcURL`. The URL in this parameter must not be a file reference URL and must include the name of the file in its new location. This parameter must not be `nil`.
 
 ## See Also
 

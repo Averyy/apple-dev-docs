@@ -24,7 +24,7 @@ init?(keySet: ArchiveHeader.FieldKeySet, directory: FilePath, path: FilePath, fl
 
 - `keySet`: The fields that the new header includes.
 - `directory`: The base directory of the filesystem object.
-- `path`: The path, relative to  , to the target filesystem object.
+- `path`: The path, relative to `directory`, to the target filesystem object.
 - `flags`: Flags that control the behavior of the operation.
 
 ## See Also

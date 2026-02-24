@@ -23,7 +23,7 @@ This message is sent both when the user taps Print on the printing-options view 
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of   that is managing the print job.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
 
 ## See Also
 

@@ -60,11 +60,11 @@ histogramAlpha.withUnsafeMutableBufferPointer { zeroPtr in
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `histogram`: An array of four collections that contain   elements that receive the histogram data.
+- `histogram`: An array of four collections that contain `histogram_entries` elements that receive the histogram data.
 - `histogram_entries`: The number of histogram entries.
-- `minVal`: The minimum pixel value. The operation assigns pixel values less than   to the first histogram entry.
-- `maxVal`: The maximum pixel value. The operation assigns pixel values greater than   to the last histogram entry.
-- `flags`: To specify that the function doesn’t calculate the alpha channel histogram, set the   flag.
+- `minVal`: The minimum pixel value. The operation assigns pixel values less than `minVal` to the first histogram entry.
+- `maxVal`: The maximum pixel value. The operation assigns pixel values greater than `maxVal` to the last histogram entry.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To specify that the function doesn’t calculate the alpha channel histogram, set the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 

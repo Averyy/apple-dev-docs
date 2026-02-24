@@ -25,7 +25,7 @@ A [`JSPropertyNameArrayRef`](jspropertynamearrayref.md) that is the same as `arr
 
 ## Parameters
 
-- `array`: The   to retain.
+- `array`: The [`JSPropertyNameArrayRef`](jspropertynamearrayref.md) to retain.
 
 ## See Also
 

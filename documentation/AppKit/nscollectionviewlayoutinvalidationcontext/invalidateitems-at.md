@@ -20,7 +20,7 @@ Call this method when you want the layout object to recompute attributes for a s
 
 ## Parameters
 
-- `indexPaths`: A set of   objects. Each index path represents an item whose layout needs to be recomputed.
+- `indexPaths`: A set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects. Each index path represents an item whose layout needs to be recomputed.
 
 ## See Also
 

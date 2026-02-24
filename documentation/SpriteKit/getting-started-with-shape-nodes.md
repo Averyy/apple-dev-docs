@@ -14,6 +14,37 @@ Shape nodes are useful for content that cannot be easily decomposed into simple 
 
 The following code demonstrates how to create a shape node. The example creates a circle with a blue interior and a white outline. The path is created and attached to the shape node’s [`path`](skshapenode/path.md) property.
 
+**Swift**:
+
+```swift
+let path = CGMutablePath()
+path.addArc(center: CGPoint.zero,
+            radius: 15,
+            startAngle: 0,
+            endAngle: CGFloat.pi * 2,
+            clockwise: true)
+let ball = SKShapeNode(path: path)
+ball.lineWidth = 1
+ball.fillColor = .blue
+ball.strokeColor = .white
+ball.glowWidth = 0.5
+```
+
+**Obj-C**:
+
+```objc
+SKShapeNode *ball = [[SKShapeNode alloc] init];
+ 
+CGMutablePathRef myPath = CGPathCreateMutable();
+CGPathAddArc(myPath, NULL, 0,0, 15, 0, M_PI*2, YES);
+ball.path = myPath;
+ 
+ball.lineWidth = 1.0;
+ball.fillColor = [SKColor blueColor];
+ball.strokeColor = [SKColor whiteColor];
+ball.glowWidth = 0.5;
+```
+
 You can see from the code that the shape has three essential elements:
 
 - The interior of the shape is filled. The [`fillColor`](skshapenode/fillcolor.md) property specifies the color used to fill the interior.

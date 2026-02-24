@@ -16,7 +16,7 @@ func setContentResizingMask(_ mask: Int)
 
 ## Parameters
 
-- `mask`: A resizing mask. You specify a mask by combining any of the following options using the C bitwise   operator:  ,  . Other values are ignored.
+- `mask`: A resizing mask. You specify a mask by combining any of the following options using the C bitwise `OR` operator: [`width`](https://developer.apple.com/documentation/AppKit/NSView/AutoresizingMask-swift.struct/width), [`height`](https://developer.apple.com/documentation/AppKit/NSView/AutoresizingMask-swift.struct/height). Other values are ignored.
 
 ## See Also
 

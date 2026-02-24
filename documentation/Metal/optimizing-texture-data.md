@@ -21,6 +21,66 @@ By default, Metal attempts to optimize texture data for GPU access if it meets a
 
 If the texture doesn’t meet any of these conditions, you can optimize your texture data explicitly. After you create your texture and populate its contents, encode and commit an [`optimizeContentsForGPUAccess(texture:)`](mtlblitcommandencoder/optimizecontentsforgpuaccess(texture:).md) or [`optimizeContentsForGPUAccess(texture:slice:level:)`](mtlblitcommandencoder/optimizecontentsforgpuaccess(texture:slice:level:).md) command.
 
+**Swift**:
+
+```swift
+// Create the first texture.
+let texture1GPUOptimized: MTLTexture! = nil
+...
+
+// Put content in the texture.
+...
+
+// Create a command buffer to submit work to the GPU.
+let commandBuffer: MTLCommandBuffer! = commandQueue.makeCommandBuffer()
+
+// Optimize the texture for GPU access by encoding a blit command.
+let blitEncoder: MTLBlitCommandEncoder! = commandBuffer.makeBlitCommandEncoder()
+blitEncoder.optimizeContentsForGPUAccess(texture: texture1GPUOptimized)
+
+// End the encoding.
+blitEncoder.endEncoding()
+
+// Add a completion handler.
+commandBuffer.addCompletedHandler {_ in
+    // The GPU can now optimally access the contents of texture 1.
+    ...
+}
+
+// Commit the command buffer to the command queue.
+commandBuffer.commit()
+```
+
+**Objective-C**:
+
+```objective-c
+// Create the first texture.
+id <MTLTexture> texture1GPUOptimized;
+...
+
+// Put content in the texture.
+...
+
+// Create a command buffer to submit work to the GPU.
+id <MTLCommandBuffer> commandBuffer = [commandQueue commandBuffer];
+
+// Optimize the texture for GPU access by encoding a blit command.
+id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
+[blitEncoder optimizeContentsForGPUAccess:texture1GPUOptimized];
+
+// End the encoding.
+[blitEncoder endEncoding];
+
+// Add a completion handler.
+[commandBuffer addCompletedHandler:^(id<MTLCommandBuffer> commandBuffer) {
+    // The GPU can now optimally access the contents of texture 1.
+    ...
+}];
+
+// Commit the command buffer to the command queue.
+[commandBuffer commit];
+```
+
 To optimize a drawable from an [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) for GPU access, set the view’s [`framebufferOnly`](https://developer.apple.com/documentation/MetalKit/MTKView/framebufferOnly) property to [`true`](https://developer.apple.com/documentation/Swift/true). This property configures the texture exclusively as a render target and displayable resource.
 
 ##### Optimize Texture Data for Cpu Access
@@ -31,6 +91,62 @@ By default, Metal attempts to optimize texture data for CPU access if it meets b
 - You write to the texture with the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) or [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) method.
 
 If you don’t meet both of these conditions, you can optimize your texture data explicitly. After you create your texture and populate its contents, encode and commit an [`optimizeContentsForCPUAccess(texture:)`](mtlblitcommandencoder/optimizecontentsforcpuaccess(texture:).md) or [`optimizeContentsForCPUAccess(texture:slice:level:)`](mtlblitcommandencoder/optimizecontentsforcpuaccess(texture:slice:level:).md) command.
+
+**Swift**:
+
+```swift
+// Create a second texture.
+let texture2CPUOptimized: MTLTexture! = nil
+...
+
+// Put content in the texture.
+...
+
+// Create a command buffer to submit work to the GPU.
+let commandBuffer: MTLCommandBuffer! = commandQueue.makeCommandBuffer()
+
+// Optimize the texture for CPU access by encoding a blit command.
+let blitEncoder: MTLBlitCommandEncoder! = commandBuffer.makeBlitCommandEncoder()
+blitEncoder.optimizeContentsForCPUAccess(texture: texture2CPUOptimized)
+
+// End encoding and commit it to the command buffer with add a completion handler.
+blitEncoder.endEncoding()
+commandBuffer.addCompletedHandler {_ in
+    // The CPU can now optimally access the contents of texture 2.
+    ...
+}
+
+// Commit the command buffer to the command queue.
+commandBuffer.commit()
+```
+
+**Objective-C**:
+
+```objective-c
+// Create a second texture.
+id <MTLTexture> texture2CPUOptimized;
+...
+
+// Put content in the texture.
+...
+
+// Create a command buffer to submit work to the GPU.
+id <MTLCommandBuffer> commandBuffer = [commandQueue commandBuffer];
+
+// Optimize the texture for CPU access by encoding a blit command.
+id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
+[blitEncoder optimizeContentsForCPUAccess:texture2CPUOptimized];
+
+// End encoding and commit it to the command buffer with add a completion handler.
+[blitEncoder endEncoding];
+[commandBuffer addCompletedHandler:^(id<MTLCommandBuffer> commandBuffer) {
+    // The CPU can now optimally access the contents of texture 2.
+    ...
+}];
+
+// Commit the command buffer to the command queue.
+[commandBuffer commit];
+```
 
 ##### Apply Lossless Compression to a Texture on Apple Gpus
 
@@ -53,9 +169,71 @@ In some cases, your texture data may benefit from opting out of optimization for
 
 First, create a texture descriptor and set its [`allowGPUOptimizedContents`](mtltexturedescriptor/allowgpuoptimizedcontents.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
+**Swift**:
+
+```swift
+let textureDescriptor = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: .rgba8Unorm,
+                                                                 width: 512,
+                                                                 height: 512,
+                                                                 mipmapped: false)
+
+// Don't allow the the GPU to optimize the texture.
+textureDescriptor.allowGPUOptimizedContents = false
+```
+
+**Objective-C**:
+
+```objective-c
+MTLTextureDescriptor *textureDescriptor =
+ [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:MTLPixelFormatRGBA8Unorm
+                                                    width:512
+                                                   height:512
+                                                mipmapped:NO];
+
+// Don't allow the the GPU to optimize the texture.
+textureDescriptor.allowGPUOptimizedContents = NO;
+```
+
 Then, set the texture descriptor’s [`storageMode`](mtltexturedescriptor/storagemode.md) property to [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md).
 
+**Swift**:
+
+```swift
+// Set the texture descriptor's storage mode to `shared` or `managed` based on the GPU family.
+if device.supportsFamily(.apple1) {
+    textureDescriptor.storageMode = .shared
+} else {
+    textureDescriptor.storageMode = .managed
+}
+```
+
+**Objective-C**:
+
+```objective-c
+// Set the texture descriptor's storage mode to `shared` or `managed` based on the GPU family.
+
+if ([device supportsFamily:MTLGPUFamilyApple1]) {
+    textureDescriptor.storageMode = MTLStorageModeShared;
+} else {
+    textureDescriptor.storageMode = MTLStorageModeManaged;
+}
+```
+
 Finally, create a texture from the texture descriptor.
+
+**Swift**:
+
+```swift
+// Create a texture using the texture descriptor.
+let texture = device.makeTexture(descriptor: textureDescriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+// Create a texture using the texture descriptor.
+id <MTLTexture> texture = [device newTextureWithDescriptor:textureDescriptor];
+```
 
 ## See Also
 

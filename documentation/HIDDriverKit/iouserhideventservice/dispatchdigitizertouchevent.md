@@ -26,8 +26,8 @@ Call this method from your event service to dispatch a touch event to the system
 ## Parameters
 
 - `timeStamp`: The timestamp of the event. Use the timestamp of the report element that is the source of the event.
-- `touchData`: An array of structures containing the data for the individual touches. For more information, see  .
-- `touchDataCount`: The number of structures in the   parameter.
+- `touchData`: An array of structures containing the data for the individual touches. For more information, see [`IOHIDDigitizerTouchData`](iohiddigitizertouchdata.md).
+- `touchDataCount`: The number of structures in the `touchData` parameter.
 
 ## See Also
 

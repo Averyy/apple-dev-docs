@@ -29,10 +29,10 @@ After creating a key command object, you can:
 ## Parameters
 
 - `title`: The title to display for the key command.
-- `image`: The image to display next to the key command’s title. Only the   menu system supports the display of an image, and only when the app runs in iOS.
+- `image`: The image to display next to the key command’s title. Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app runs in iOS.
 - `action`: The action method to execute on the responder object.
-- `input`: The keys that a person must press. The string must contain one or more characters corresponding to the keys the person pressed. For a list of special characters that don’t have a textual representation, see  .
-- `modifierFlags`: The bit mask of modifier keys that a person must press. You can use this parameter to specify which modifier keys (Command, Option, and so on) a person must also press. You may specify more than one modifier key. For a list of possible values, see  .
+- `input`: The keys that a person must press. The string must contain one or more characters corresponding to the keys the person pressed. For a list of special characters that don’t have a textual representation, see [`Input strings for special keys`](input-strings-for-special-keys.md).
+- `modifierFlags`: The bit mask of modifier keys that a person must press. You can use this parameter to specify which modifier keys (Command, Option, and so on) a person must also press. You may specify more than one modifier key. For a list of possible values, see [`UIKeyModifierFlags`](uikeymodifierflags.md).
 - `propertyList`: An object that contains data to associate with the key command.
 - `alternates`: An array of alternatives for the key command.
 - `discoverabilityTitle`: An elaborated title that explains the purpose of the key command.

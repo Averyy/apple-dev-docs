@@ -28,8 +28,8 @@ You can register one or more property listener callbacks with your applicationâ€
 
 ## Parameters
 
-- `inClientData`: Data that you specified in the   parameter of the   function. Can be  .
-- `inID`: The identifier for the audio session property whose value just changed. See  .
+- `inClientData`: Data that you specified in the `inClientData` parameter of the [`AudioSessionAddPropertyListener(_:_:_:)`](audiosessionaddpropertylistener(_:_:_:).md) function. Can be `NULL`.
+- `inID`: The identifier for the audio session property whose value just changed. See [`Audio Session Property Identifiers`](1618455-audio-session-property-identifie.md).
 - `inDataSize`: The size, in bytes, of the value of the changed property.
 - `inData`: The new value of the changed property.
 

@@ -24,7 +24,7 @@ If `animated` is [`true`](https://developer.apple.com/documentation/Swift/true),
 ## Parameters
 
 - `items`: The items to display on the toolbar.
-- `animated`: A Boolean value if set to   animates the transition to the items; otherwise, does not.
+- `animated`: A Boolean value if set to [`true`](https://developer.apple.com/documentation/Swift/true) animates the transition to the items; otherwise, does not.
 
 ## See Also
 

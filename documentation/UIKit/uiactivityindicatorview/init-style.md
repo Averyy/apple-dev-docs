@@ -28,7 +28,7 @@ An initialized [`UIActivityIndicatorView`](uiactivityindicatorview.md) object.
 
 ## Parameters
 
-- `style`: A constant that specifies the style of the object to be created. See   for descriptions of the style constants.
+- `style`: A constant that specifies the style of the object to be created. See [`UIActivityIndicatorView.Style`](uiactivityindicatorview/style-swift.enum.md) for descriptions of the style constants.
 
 ## See Also
 

@@ -18,6 +18,13 @@ In the Template Selection window, select Game Memory.
 
 ##### Get to Know the Instruments
 
+- **Allocations**: Analyzes the memory life cycle of a process’s allocated blocks, and can record reference-counting events.
+- **Metal Resource Events**: Records Metal GPU resource allocations, such as textures and buffers.
+- **VM Tracker**: Tracks the virtual memory space of a process over time, identifying regions by tag and reporting usage statistics.
+- **Virtual Memory Trace**: Tracks virtual memory activity per thread.
+- **Metal Application**: Records Metal app events.
+- **GPU**: Records GPU events.
+
 ##### Record an Instruments Capture
 
 Begin collecting the data by clicking the Record button.
@@ -39,6 +46,10 @@ The Allocations track provides a detailed view of memory allocations, their size
 ![A screenshot of Instruments with the Allocations track selected. The bottom details pane displays the statistics from the Allocations track.](https://docs-assets.developer.apple.com/published/a7ef7ee3f0561d17f3d618a01e1d21b1/gputools-instruments-game-memory-allocations%402x.png)
 
 The Statistics view in the bottom detail area displays the categories of memory allocations. At the top of the Category column, there are three umbrella categories that summarize all allocations:
+
+- **All Heap & Anonymous VM**: Includes everything.
+- **All Heap Allocations**: Includes dynamically allocated buffers that may contain resources.
+- **All Anonymous VM**: Includes interesting VM regions that may be dirty. You can also find some Metal-related memory here.
 
 Below them, you can find more detailed categories. Metal resource allocations are in the `VM: IOAccelerator` category, and drawables are in `VM: IOSurface`.
 
@@ -66,6 +77,9 @@ The Allocations track and the Metal Resource Events track both highlight memory 
 
 Memory operates on the granularity of pages, and those pages can be either clean or dirty.
 
+- **Clean memory**: Includes memory-mapped files and read-only frameworks.
+- **Dirty memory**: Includes heap-allocated memory and written symbols in frameworks.
+
 To conserve the amount of physical memory that your app uses, the system may compress or swap out some dirty pages that your app hasn’t accessed recently.
 
 > ❗ **Important**: The system charges your app for any compressed/swapped memory based on its orginal size before compression.
@@ -73,6 +87,10 @@ To conserve the amount of physical memory that your app uses, the system may com
 ![A screenshot of Instruments with the VM Tracker track selected. The bottom details pane displays a summary of the VM regions.](https://docs-assets.developer.apple.com/published/8b246e2860af1db08f3942abbdf92ad3/gputools-instruments-game-memory-vm-tracker%402x.png)
 
 The center timeline area graphs the following metrics:
+
+- **Dirty Size**: The amount of noncompressed dirty memory.
+- **Swapped Size**: The amount of compressed/swapped dirty memory in its original size before compression.
+- **Resident Size**: The amount of resident memory.
 
 The corresponding columns are also available in the Summary view of the bottom detail area. There, you can expand the VM region types. In the mapped file type in the screenshot below, you can see the memory-mapped file of the bistro scene that the Modern Renderer app loaded:
 

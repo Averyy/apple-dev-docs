@@ -27,7 +27,7 @@ If the system recognizes the filename extension, the intializer returns the corr
 ## Parameters
 
 - `filenameExtension`: The filename extension.
-- `supertype`: The type the resulting type must conform to, such as   or  .
+- `supertype`: The type the resulting type must conform to, such as [`data`](uttype-swift.struct/data.md) or [`package`](uttype-swift.struct/package.md).
 
 ## See Also
 

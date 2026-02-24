@@ -16,7 +16,7 @@ optional func webViewDidChangeSelection(_ notification: Notification!)
 
 ## Parameters
 
-- `notification`: Always set to  . You can retrieve the   object by sending   to  .
+- `notification`: Always set to [`WebViewDidChangeSelectionNotification`](webviewdidchangeselectionnotification.md). You can retrieve the `WebView` object by sending `object` to `notification`.
 
 ## See Also
 

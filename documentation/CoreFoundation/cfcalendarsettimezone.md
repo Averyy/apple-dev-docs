@@ -23,7 +23,7 @@ func CFCalendarSetTimeZone(_ calendar: CFCalendar!, _ tz: CFTimeZone!)
 ## Parameters
 
 - `calendar`: The calendar to modify.
-- `tz`: The time zone to set for  .
+- `tz`: The time zone to set for `calendar`.
 
 ## See Also
 

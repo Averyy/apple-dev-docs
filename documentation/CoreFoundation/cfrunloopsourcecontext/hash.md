@@ -30,7 +30,7 @@ If a hash callback is not provided for a source, the `info` pointer is used.
 
 ## Parameters
 
-- `info`: The   member of the   or   structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) or [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
 
 ## See Also
 

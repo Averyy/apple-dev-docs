@@ -77,9 +77,9 @@ For speed and efficiency, the BERT model operates on token IDs, which are number
 let subTokenID = BERTVocabulary.tokenID(of: searchTerm)
 ```
 
-If a word token doesn’t exist in the vocabulary, the method looks for subtokens, or . A wordpiece is a component of a larger word token. For example, the word  isn’t in the vocabulary but its wordpieces, , , and  are. Dividing the vocabulary’s large words into wordpieces reduces the vocabulary size and makes the BERT model more flexible. The model can understand words that aren’t explicitly in the vocabulary by combining their wordpieces.
+If a word token doesn’t exist in the vocabulary, the method looks for subtokens, or *wordpieces*. A wordpiece is a component of a larger word token. For example, the word *lethargic* isn’t in the vocabulary but its wordpieces, *let*, *har*, and *gic* are. Dividing the vocabulary’s large words into wordpieces reduces the vocabulary size and makes the BERT model more flexible. The model can understand words that aren’t explicitly in the vocabulary by combining their wordpieces.
 
-Secondary wordpieces, such as  and , each appear in the vocabulary with two leading pound signs, as `##har` and `##gic`.
+Secondary wordpieces, such as *har* and *gic*, each appear in the vocabulary with two leading pound signs, as `##har` and `##gic`.
 
 Continuing the example, the method converts document text into the word and wordpiece token IDs shown in the following figure.
 
@@ -94,12 +94,12 @@ The BERT model has two inputs:
 
 The sample creates the `wordIDs` array by arranging the token IDs in the following order:
 
-1. A  token ID, which has a value of `101` and appears as `"[CLS]"` in the vocabulary file
+1. A *classification start* token ID, which has a value of `101` and appears as `"[CLS]"` in the vocabulary file
 2. The token IDs from the question string
-3. A  token ID, which has a value of `102` and appears as `"[SEP]"` in the vocabulary file
+3. A *separator* token ID, which has a value of `102` and appears as `"[SEP]"` in the vocabulary file
 4. The token IDs from the text string
 5. Another separator token ID
-6. One or more  token IDs for the remaining, unused elements, which have a value of `0` and appear as `"[PAD]"` in the vocabulary file
+6. One or more *padding* token IDs for the remaining, unused elements, which have a value of `0` and appear as `"[PAD]"` in the vocabulary file
 
 ```swift
 // Start the wordID array with the `classification start` token.
@@ -171,7 +171,7 @@ guard let prediction = try? bertModel.prediction(input: modelInput) else {
 
 ##### Find the Answer
 
-You locate the answer to the question by analyzing the output from the BERT model. The model produces two outputs, `startLogits` and `endLogits`. Each  is a raw confidence score of where the BERT model predicts the beginning and the end of an answer is.
+You locate the answer to the question by analyzing the output from the BERT model. The model produces two outputs, `startLogits` and `endLogits`. Each *logit* is a raw confidence score of where the BERT model predicts the beginning and the end of an answer is.
 
 ![Layout diagram showing the arrangement of the two output arrays from the BERT model shown as vertical columns.](https://docs-assets.developer.apple.com/published/3433d10e1e20a7caf2edf3989c5aebe3/bert-logits%402x.png)
 

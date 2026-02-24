@@ -13,6 +13,10 @@
 object Resource.Views
 ```
 
+## Properties
+
+- `Any Key` (View)
+
 ## See Also
 
 - [object View](view.md)

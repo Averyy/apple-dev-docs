@@ -25,8 +25,8 @@ This function is for the use of code hosts that use memory mapping to manage the
 
 ## Parameters
 
-- `code`: A code or static code object representing the signed code whose main executable should be subject to page-in validation. If you provide a code object, the function processes it in the same manner as the    function—that is, whether you provide a code object or a static code object, the function actually takes the signature from the code on disk.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
+- `code`: A code or static code object representing the signed code whose main executable should be subject to page-in validation. If you provide a code object, the function processes it in the same manner as the  [`SecCodeCopyStaticCode(_:_:_:)`](seccodecopystaticcode(_:_:_:).md) function—that is, whether you provide a code object or a static code object, the function actually takes the signature from the code on disk.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
 
 
 ---

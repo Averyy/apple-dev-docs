@@ -32,7 +32,7 @@ RealityKit uses the resource name to identify resources, and to match texture re
 ## Parameters
 
 - `cgImage`: The source image.
-- `resourceName`: A unique name for syncing the texture resource across the network.   The name is empty if you don’t include one.
+- `resourceName`: A unique name for syncing the texture resource across the network. The name is empty if you don’t include one.
 - `options`: A configuration for generating the texture.
 
 ## See Also

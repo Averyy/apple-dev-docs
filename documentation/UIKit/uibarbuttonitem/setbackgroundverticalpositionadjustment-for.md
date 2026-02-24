@@ -24,7 +24,7 @@ This offset is used to adjust the vertical centering of bordered bar buttons wit
 
 ## Parameters
 
-- `adjustment`: The background vertical position offset for  .
+- `adjustment`: The background vertical position offset for `barMetrics`.
 - `barMetrics`: Bar metrics.
 
 ## See Also

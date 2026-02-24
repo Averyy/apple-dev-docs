@@ -21,7 +21,100 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
 
 ##### Example Request and Response with a Serial Number
 
+**Request**:
+
+```None
+{
+  "disassociateClientUserIdStrs": null,
+  "disassociateSerialNumbers": null,
+  "disassociateLicenseIdStrs": null,
+  "associateClientUserIdStrs": null,
+  "associateSerialNumbers": [
+    "MERD1",
+    "MERD2"
+  ],
+  "adamIdStr": "869183446",
+  "pricingParam": null,
+  "notifyDisassociation": true,
+  "sToken": "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2 a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ="
+}
+```
+
+**Response**:
+
+```json
+{
+  "adamIdStr": "869183446",
+  "associations": [
+    {
+      "licenseIdStr": "840999",
+      "serialNumber": "device1"
+    },
+    {
+      "licenseIdStr": "841000",
+      "serialNumber": "device1"
+    }
+  ],
+  "clientContext": "{\"guid\":\"b92\",\"hostname\":\"test.test.org\",\"ac2\":1}",
+  "expirationMillis": 1898103480266,
+  "isIrrevocable": false,
+  "location": {
+    "locationId": 22222222222,
+    "locationName": "LocationName"
+  },
+  "pricingParam": "STDQ",
+  "productTypeId": 8,
+  "productTypeName": "Application",
+  "status": 0,
+  "uId": "103614"
+}
+```
+
 ##### Example Request and Response with a Client User Id String
+
+**Request**:
+
+```None
+{
+  "disassociateClientUserIdStrs": null,
+  "disassociateSerialNumbers": null,
+  "disassociateLicenseIdStrs": null,
+  "associateClientUserIdStrs": [
+    "9a17b450-9820-471e-b232-13a479ddede0"
+  ],
+  "associateSerialNumbers": null,
+  "adamIdStr": "869183446",
+  "pricingParam": null,
+  "notifyDisassociation": null,
+  "sToken": "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2 a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ="
+}
+```
+
+**Response**:
+
+```json
+{
+  "adamIdStr": "869183446",
+  "associations": [
+    {
+      "licenseIdStr": "840998",
+      "clientUserIdStr": "9a17b450-9820-471e-b232-13a479ddede0"
+    }
+  ],
+  "clientContext": "{\"guid\":\"b92\",\"hostname\":\"test.test.org\",\"ac2\":1}",
+  "expirationMillis": 1898103480266,
+  "isIrrevocable": false,
+  "location": {
+    "locationId": 22222222222,
+    "locationName": "LocationName"
+  },
+  "pricingParam": "STDQ",
+  "productTypeId": 8,
+  "productTypeName": "Application",
+  "status": 0,
+  "uId": "103614"
+}
+```
 
 ## Topics
 
@@ -30,6 +123,10 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
   The request to manage licenses.
 - [object ManageVppLicensesByAdamIdResponse](managevpplicensesbyadamidresponse.md)
   The response from managing licenses.
+
+## Endpoint
+
+`POST https://vpp.itunes.apple.com/mdm/manageVPPLicensesByAdamIdSrv`
 
 ## Request Body
 

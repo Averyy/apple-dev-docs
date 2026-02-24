@@ -10,6 +10,10 @@ The name of the app-specific class that you want UIKit to instantiate and use as
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The class you specify for this key must adopt the [`UISceneDelegate`](https://developer.apple.com/documentation/UIKit/UISceneDelegate) protocol. If the class you specify for the [`UISceneClassName`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname.md) key is [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene), your class must adopt the [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/UIKit/UIWindowSceneDelegate) protocol.

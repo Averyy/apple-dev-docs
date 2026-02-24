@@ -24,7 +24,7 @@ This method calls the [`nextEvent(matching:until:inMode:dequeue:)`](nswindow/nex
 
 ## Parameters
 
-- `mask`: The mask that the event to return must match. Events with non-matching masks are left in the queue. See   in   for the list of mask values.
+- `mask`: The mask that the event to return must match. Events with non-matching masks are left in the queue. See [`discardEvents(matching:before:)`](nsapplication/discardevents(matching:before:).md) in [`NSApplication`](nsapplication.md) for the list of mask values.
 
 ## See Also
 

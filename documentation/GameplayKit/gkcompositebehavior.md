@@ -25,6 +25,40 @@ By composing [`GKGoal`](gkgoal.md) objects into subgroups ([`GKBehavior`](gkbeha
 
 For example, you might create a behavior for a set of agents to stay together as a flock (with cohesion, alignment, and separation goals) while loosely following a path. With a single [`GKBehavior`](gkbehavior.md) object, whenever you want to change the importance of the flocking goals relative to the path-following goals, you’d need to individually change the weight of each goal. With a composite behavior, you can adjust the relative influence of a group of goals together, as in the following code.
 
+**Swift**:
+
+```swift
+let flock = GKBehavior(goals: [
+    GKGoal(toAlignWith: agents, maxDistance: 10, maxAngle: .pi/4),
+    GKGoal(toCohereWith: agents, maxDistance: 10, maxAngle: .pi/4),
+    GKGoal(toSeparateFrom: agents, maxDistance: 10, maxAngle: .pi/4),
+])
+let meanderOnPath = GKBehavior(goals: [
+    GKGoal(toFollow: path, maxPredictionTime: 1, forward: true),
+    GKGoal(toWander: 10)
+])
+let composite = GKCompositeBehavior(behaviors: [
+    flock, meanderOnPath
+])
+```
+
+**Objective-C**:
+
+```objc
+GKBehavior *flock = [GKBehavior behaviorWithGoals:@[
+    [GKGoal goalToAlignWithAgents:agents maxDistance:10 maxAngle:M_PI_4],
+    [GKGoal goalToCohereWithAgents:agents maxDistance:10 maxAngle:M_PI_4],
+    [GKGoal goalToSeparateFromAgents:agents maxDistance:10 maxAngle:M_PI_4]
+]];
+GKBehavior *meanderOnPath = [GKBehavior behaviorWithgoals:@[
+    [GKGoal goalToFollowPath:path maxPredictionTime:1.0 forward:YES],
+    [GKGoal goalToWander:10]
+]];
+GKCompositeBehavior *composite = [GKCompositeBehavior behaviorWithBehaviors:@[
+    flock, meanderOnPath
+]];
+```
+
 After constructing this behavior, you can use the [`setWeight(_:for:)`](gkcompositebehavior/setweight(_:for:).md) method to increase or decrease the influence of the `flock` and `meanderOnPath` behaviors relative to one another.
 
 To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).

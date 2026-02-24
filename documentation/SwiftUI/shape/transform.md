@@ -30,7 +30,7 @@ Affine transforms present a mathematical approach to applying combinations of ro
 
 ## Parameters
 
-- `transform`: The affine transformation matrix to apply to this   shape.
+- `transform`: The affine transformation matrix to apply to this shape.
 
 ## See Also
 

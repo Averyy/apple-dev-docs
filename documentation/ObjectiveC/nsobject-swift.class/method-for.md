@@ -30,7 +30,7 @@ If the receiver is an instance, `aSelector` should refer to an instance method; 
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method for which to return the implementation address. The selector must be a valid and non- . If in doubt, use the   method to check before passing the selector to  .
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method for which to return the implementation address. The selector must be a valid and non-`NULL`. If in doubt, use the [`responds(to:)`](nsobjectprotocol/responds(to:).md) method to check before passing the selector to [`method(for:)`](nsobject-swift.class/method(for:).md).
 
 ## See Also
 

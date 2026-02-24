@@ -22,7 +22,7 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 ###### Known Issues
 
-- AirDrop doesn’t work when a VPN is connected with the [`includeAllNetworks`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol/includeAllNetworks) and [`excludeLocalNetworks`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol/excludeLocalNetworks) options enabled. (52618489)  Disconnect the VPN before using AirDrop.
+- AirDrop doesn’t work when a VPN is connected with the [`includeAllNetworks`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol/includeAllNetworks) and [`excludeLocalNetworks`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol/excludeLocalNetworks) options enabled. (52618489) **Workaround:** Disconnect the VPN before using AirDrop.
 
 ##### Appleevents
 
@@ -91,8 +91,8 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 ###### Known Issues
 
 - After updating to macOS Catalina 10.15 Beta 7 or later, iCloud Drive might synchronize for an extended period of time. If you notice any missing files, they can be found inside a Recovered Files folder in your home folder. (54046219)
-- Even when Optimize Storage is switched off, iCloud Drive might fail to automatically download all files. (50667204)  Download files individually.
-- When creating a new Pages, Numbers, or Keynote document in a shared folder, you might see the message “Couldn’t connect to iCloud”. (50827963)  Close and reopen the document.
+- Even when Optimize Storage is switched off, iCloud Drive might fail to automatically download all files. (50667204) **Workaround:** Download files individually.
+- When creating a new Pages, Numbers, or Keynote document in a shared folder, you might see the message “Couldn’t connect to iCloud”. (50827963) **Workaround:** Close and reopen the document.
 
 ##### Launch Daemons and Agents
 
@@ -119,11 +119,11 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 2. In the Identifiers section, select your iOS app identifier to edit.
 3. Check the Mac Catalyst capability to enable it, then click the Configure button.
 4. Choose Use an existing macOS AppID and select the identifier you’d like to use from the popup menu. Click the Save button to finish editing your AppID.
-5. In the Profiles section, click the  button to create a new profile, select ‘macOS App Development’, and click Continue.
+5. In the Profiles section, click the **+** button to create a new profile, select ‘macOS App Development’, and click Continue.
 6. Select your iOS AppID from the popup, click Continue, and complete the rest of the profile creation flow. When finished, click the Download button.
 7. In Xcode, select your project to view the Project Editor and select your app’s target. Then select the Build Settings tab.
 8. Set the Derive Mac Catalyst Product Bundle Identifier setting to No.
-9. Expand the Product Bundle Identifier build setting to view its configurations.Next to the Debug configuration, click the  button to add a conditional value.
+9. Expand the Product Bundle Identifier build setting to view its configurations.Next to the Debug configuration, click the **+** button to add a conditional value.
 10. For the build setting condition, select Any macOS from the popup menu. Edit the value of the conditional build setting to match the macOS bundle identifier you want to use. Repeat this step for all  configurations in your project.
 11. In the Signing & Capabilities tab, uncheck Automatically manage signing.
 12. For your macOS app, select Import Profile from the Provisioning Profile popup and then select the profile you downloaded earlier.
@@ -134,7 +134,7 @@ The macOS 10.15 SDK provides support for developing apps for Macs running macOS 
 
 ###### Known Issues
 
-- If your Mac contains both macOS Mojave 10.14 and macOS 10.15 volumes, you might experience issues searching in Mail. (46611310)  While running macOS Mojave 10.14, open Terminal and execute the following command: `sudo touch /.metadata_never_index_unless_rootfs` Reboot into macOS 10.15, open Terminal and execute the following command: `sudo touch /System/Volumes/Data/.metadata_never_index_unless_rootfs` Reboot into macOS Mojave 10.14, open Terminal and execute the following command: `sudo mdutil -E /` Depending on the size of your Mail database, it might take many hours to reindex all content.
+- If your Mac contains both macOS Mojave 10.14 and macOS 10.15 volumes, you might experience issues searching in Mail. (46611310) **Workaround:** While running macOS Mojave 10.14, open Terminal and execute the following command: `sudo touch /.metadata_never_index_unless_rootfs` Reboot into macOS 10.15, open Terminal and execute the following command: `sudo touch /System/Volumes/Data/.metadata_never_index_unless_rootfs` Reboot into macOS Mojave 10.14, open Terminal and execute the following command: `sudo mdutil -E /` Depending on the size of your Mail database, it might take many hours to reindex all content.
 
 ##### Networking
 
@@ -237,7 +237,7 @@ NavigationView {
 
 ###### Known Issues
 
-- Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729) : When back-deploying to an OS which doesn’t contain the SwiftUI framework, add the `-weak_framework SwiftUI` flag to the Other Linker Flags setting in the Build Settings tab. See [`Frameworks and Weak Linking`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. This workaround doesn’t apply when using dynamically linked Swift packages which import SwiftUI.
+- Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729) **Workaround**: When back-deploying to an OS which doesn’t contain the SwiftUI framework, add the `-weak_framework SwiftUI` flag to the Other Linker Flags setting in the Build Settings tab. See [`Frameworks and Weak Linking`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. This workaround doesn’t apply when using dynamically linked Swift packages which import SwiftUI.
 
 ###### Deprecations
 

@@ -23,6 +23,9 @@ typealias CMGyroHandler = (CMGyroData?, (any Error)?) -> Void
 
 Blocks of type `CMGyroHandler` are called when there is gyroscope data to process. You pass the block into [`startGyroUpdates(to:withHandler:)`](cmmotionmanager/startgyroupdates(to:withhandler:).md) as the second argument. Blocks of this type return no value but take two arguments:
 
+- **`gyroData`**: An object that encapsulates a [`CMRotationRate`](cmrotationrate.md) structure with fields holding rotation-rate values for the three axes of movement.
+- **`error`**: An error object representing an error encountered in providing gyroscope data. If an error occurs, you should stop gyroscope updates and inform the user of the problem. If there is no error, this argument is `nil`. Core Motion errors are of the [`CMErrorDomain`](cmerrordomain.md) domain and the [`CMError`](cmerror.md) type.
+
 ## See Also
 
 - [var gyroUpdateInterval: TimeInterval](cmmotionmanager/gyroupdateinterval.md)

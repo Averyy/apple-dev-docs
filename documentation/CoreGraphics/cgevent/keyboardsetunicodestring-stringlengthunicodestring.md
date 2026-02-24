@@ -21,7 +21,7 @@ By default, the system translates the virtual key code in a keyboard event into 
 
 ## Parameters
 
-- `stringLength`: The length of the array you provide in the   parameter.
+- `stringLength`: The length of the array you provide in the `unicodeString` parameter.
 - `unicodeString`: An array that contains the new Unicode string associated with the specified event.
 
 ## See Also

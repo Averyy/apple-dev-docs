@@ -25,7 +25,7 @@ Constructs a download object to represent the download of a asset located inside
 
 - `identifier`: A unique identifier that is used to track the download across the app and extension.
 - `request`: The request used to perform the download. The URL provided inside of the request must be a https scheme.
-- `fileSize`: The size of the file to download. This field must be accurate in order to show the user accurate progress during app installation.   If the size does not match the file being downloaded, then the download will fail.
+- `fileSize`: The size of the file to download. This field must be accurate in order to show the user accurate progress during app installation. If the size does not match the file being downloaded, then the download will fail.
 - `applicationGroupIdentifier`: The identifier of the application group that should used to store the finished download.
 
 ## See Also

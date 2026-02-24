@@ -21,9 +21,9 @@ convenience init(frequency: HKQuantity, leftEarSensitivity: HKQuantity?, rightEa
 
 ## Parameters
 
-- `frequency`: The frequency tested. This object uses   units.
-- `leftEarSensitivity`: The sensitivity of the left ear, measured in attenuated dB from a baseline of 0 db. This object uses   units.
-- `rightEarSensitivity`: The sensitivity of the right ear, measured in attenuated dB from a baseline of 0 db. This object uses   units.
+- `frequency`: The frequency tested. This object uses [`hertz()`](hkunit/hertz().md) units.
+- `leftEarSensitivity`: The sensitivity of the left ear, measured in attenuated dB from a baseline of 0 db. This object uses [`decibelHearingLevel()`](hkunit/decibelhearinglevel().md) units.
+- `rightEarSensitivity`: The sensitivity of the right ear, measured in attenuated dB from a baseline of 0 db. This object uses [`decibelHearingLevel()`](hkunit/decibelhearinglevel().md) units.
 
 
 ---

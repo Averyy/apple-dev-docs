@@ -25,7 +25,7 @@ This function displays an array of glyphs at the specified position in the user 
 - `x`: A value for the x-coordinate of the user space at which to display the glyphs.
 - `y`: A value for the y-coordinate of the user space at which to display the glyphs.
 - `glyphs`: An array of glyphs to display.
-- `count`: The total number of glyphs passed in the   parameter.
+- `count`: The total number of glyphs passed in the `glyphs` parameter.
 
 ## See Also
 

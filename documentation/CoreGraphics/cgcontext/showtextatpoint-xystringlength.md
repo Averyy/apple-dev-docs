@@ -25,7 +25,7 @@ Core Graphics uses font data provided by the system to map each byte of the arra
 - `x`: A value for the x-coordinate (in user space) at which to display the text.
 - `y`: A value for the y-coordinate (in user space) at which to display the text.
 - `string`: An array of characters to draw.
-- `length`: The length of the array specified in the   parameter.
+- `length`: The length of the array specified in the `string` parameter.
 
 ## See Also
 

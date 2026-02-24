@@ -12,7 +12,7 @@ Xcode previews let you see your app’s interface without building and running y
 
 ##### Select a Build Scheme and Run Destination
 
-Before you build and run your app, select a build scheme that includes the target for your app. A  is a collection of project details and settings that tell Xcode how to build and run a product from your project. Xcode determines where the resulting product can run based on the scheme you select, and populates the run destination menu in the toolbar with the list of available devices. For example, if the scheme contains a tvOS app, Xcode includes only tvOS simulators and devices as potential run destinations.
+Before you build and run your app, select a build scheme that includes the target for your app. A *scheme* is a collection of project details and settings that tell Xcode how to build and run a product from your project. Xcode determines where the resulting product can run based on the scheme you select, and populates the run destination menu in the toolbar with the list of available devices. For example, if the scheme contains a tvOS app, Xcode includes only tvOS simulators and devices as potential run destinations.
 
 If you don’t have platform support installed for your target, you can’t build and run your app on a device. To install platform support, click the Get button that appears next to the `Any [Platform] Device` run destination. Alternatively, manage your downloads later in Components settings (see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md)).
 

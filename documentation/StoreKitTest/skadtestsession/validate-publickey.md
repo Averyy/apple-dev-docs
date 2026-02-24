@@ -24,7 +24,7 @@ For more information about signing ad impressions, see [`Signing and providing a
 
 ## Parameters
 
-- `impression`: An   instance, representing your ad impression.
+- `impression`: An [`SKAdImpression`](https://developer.apple.com/documentation/StoreKit/SKAdImpression) instance, representing your ad impression.
 - `publicKey`: The public key of the elliptic curve cryptographic key pair you used to generate the signature for the ad impression.
 
 ## See Also

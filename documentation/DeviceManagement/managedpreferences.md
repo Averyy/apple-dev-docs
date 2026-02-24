@@ -90,6 +90,10 @@ Specify `com.apple.ManagedClient.preferences` as the payload type.
 - [object ManagedPreferences.PayloadContent](managedpreferences/payloadcontent-data.dictionary.md)
   The dictionary containing app preference domains. The key names are application preference domain identifiers (for example, `com.example.my-app`), or the string `.GlobalPreferences` for the global domain. The values are the corresponding forced and set-once preferences.
 
+## Properties
+
+- `PayloadContent` (ManagedPreferences.PayloadContent) *(required)*: The dictionary containing app preference domains. The key names are application preference domain identifiers (for example, `com.example.my-app`), or the string `.GlobalPreferences` for the global domain. The values are the corresponding forced and set-once preferences.
+
 ## See Also
 
 - [object EducationConfiguration](educationconfiguration.md)

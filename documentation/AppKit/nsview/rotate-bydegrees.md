@@ -22,7 +22,7 @@ This method posts an [`boundsDidChangeNotification`](nsview/boundsdidchangenotif
 
 ## Parameters
 
-- `angle`: A   value specifying the angle of rotation, in degrees.
+- `angle`: A `float` value specifying the angle of rotation, in degrees.
 
 ## See Also
 

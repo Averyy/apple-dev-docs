@@ -18,8 +18,8 @@ class NSVisualEffectView
 
 Use visual effect views primarily as background views for your app’s content. A visual effect view makes your foreground content more prominent by employing the following effects:
 
--  and the blurring of background content adds depth to your interface.
--  is a subtle blending of foreground and background colors to increase the contrast and make the foreground content stand out visually.
+- **Translucency** and the blurring of background content adds depth to your interface.
+- **Vibrancy** is a subtle blending of foreground and background colors to increase the contrast and make the foreground content stand out visually.
 
 The material and blending mode you assign determines the exact appearance of the visual effect. Not all materials support transparency, and materials apply vibrancy in different ways. The appearance and behavior of materials can also change based on system settings, so always pick a material based on its intended use. For example, use the [`NSVisualEffectView.Material.sidebar`](nsvisualeffectview/material-swift.enum/sidebar.md) material when your view serves as the background of your window’s sidebar.  Don’t select materials based on the apparent colors they impart on your interface.
 
@@ -29,8 +29,8 @@ AppKit creates visual effect views automatically for window titlebars, popovers,
 
 For visual effect views you create yourself, use the [`blendingMode`](nsvisualeffectview/blendingmode-swift.property.md) property to specify how and where you want the translucency applied.
 
--  uses the content behind the window as the background for your visual effect view. Behind-window blending makes your entire window stand out above other windows and apps on the desktop. Sheets and popovers use behind-window blending.
--  uses the window’s content as the background for your visual effect view. Typically, you use in-window blending with scrolling content, so that the scrolled content remains partially visible under other parts of your window chrome. Toolbars always use in-window blending.
+- **Behind-window blending** uses the content behind the window as the background for your visual effect view. Behind-window blending makes your entire window stand out above other windows and apps on the desktop. Sheets and popovers use behind-window blending.
+- **In-window blending** uses the window’s content as the background for your visual effect view. Typically, you use in-window blending with scrolling content, so that the scrolled content remains partially visible under other parts of your window chrome. Toolbars always use in-window blending.
 
 ![An illustration of a window whose title bar and side bar use visual effect views with different blending options. The title bar uses in-window blending which blends content from the window with the bar. The side bar uses behind-window blending, which allows part of the desktop to show through. ](https://docs-assets.developer.apple.com/published/153ccb58867a13d8d8a600691c57adf7/media-3198506%402x.png)
 

@@ -22,6 +22,30 @@ Sometimes, this translation means that Simulator may support fewer features or d
 
 In some cases, like those described in the sections below, Metal doesn’t provide an API that you can use to detect the limitations at runtime. In those situations, conditionalize your app’s behavior for Simulator, as the following code shows:
 
+**Swift**:
+
+```swift
+#if os(macOS) || targetEnvironment(simulator)
+    msaaTextureDescriptor.sampleCount = 4
+    msaaTextureDescriptor.storageMode = MTLStorageMode.private
+#else
+    msaaTextureDescriptor.sampleCount = 2
+    msaaTextureDescriptor.storageMode = MTLStorageMode.shared
+#endif
+```
+
+**Objective-C**:
+
+```objective-c
+#if TARGET_MACOS || TARGET_OS_SIMULATOR
+    msaaTextureDescriptor.sampleCount = 4;
+    msaaTextureDescriptor.storageMode = MTLStorageModePrivate;
+#else
+    msaaTextureDescriptor.sampleCount = 2;
+    msaaTextureDescriptor.storageMode = MTLStorageModeShared;
+#endif
+```
+
 For more code examples, see [`Supporting Simulator in a Metal app`](supporting-simulator-in-a-metal-app.md).
 
 ###### Texture Limitations
@@ -56,11 +80,11 @@ Additional limitations that require you to do things differently when running in
 
 Consider the following guiding principles to use Simulator effectively in your Metal app development process:
 
- For example, when prototyping a game, you only care about how the game plays, not whether the pixels match what renders on device or if the game uses the same approach to render its content. Similarly, in other Metal apps, you might need to iterate on your app’s user experience. Simulator lets you test app behavior without needing a device.
+**Use Simulator to prototype and iterate on your app’s workflow and behavior.** For example, when prototyping a game, you only care about how the game plays, not whether the pixels match what renders on device or if the game uses the same approach to render its content. Similarly, in other Metal apps, you might need to iterate on your app’s user experience. Simulator lets you test app behavior without needing a device.
 
- The features that Simulator supports is significantly different from the features Apple GPUs support. To get best performance and battery life on devices with Apple GPUs, you need to use Metal features that Simulator doesn’t support. To develop, test, and profile those code paths, you need to run on a device.
+**Don’t use Simulator to design your iOS, tvOS, or visionOS rendering engine.** The features that Simulator supports is significantly different from the features Apple GPUs support. To get best performance and battery life on devices with Apple GPUs, you need to use Metal features that Simulator doesn’t support. To develop, test, and profile those code paths, you need to run on a device.
 
- Maintaining a separate Metal path for Simulator takes time and effort. A large game development team can have many game designers and engine developers. Supporting Simulator lets designers work in Simulator to perfect gameplay while engineers work with devices to design the game engine and tune its performance. On a smaller team, you might find that your time is better spent focusing on device support rather than devoting resources to keep your game running in Simulator.
+**Decide whether to provide long-term support for Simulator.** Maintaining a separate Metal path for Simulator takes time and effort. A large game development team can have many game designers and engine developers. Supporting Simulator lets designers work in Simulator to perfect gameplay while engineers work with devices to design the game engine and tune its performance. On a smaller team, you might find that your time is better spent focusing on device support rather than devoting resources to keep your game running in Simulator.
 
 For more information about Simulator, see [`Devices and Simulator`](https://developer.apple.com/documentation/Xcode/devices-and-simulator). For more information about the differences between testing on device and testing in Simulator, see [`Testing in Simulator versus testing on hardware devices`](https://developer.apple.com/documentation/Xcode/testing-in-simulator-versus-testing-on-hardware-devices).
 

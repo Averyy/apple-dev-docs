@@ -21,7 +21,8 @@ func queryActivity() async throws -> Int
 
 ## Parameters
 
-- `completionHandler`: This block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`activity`**: The number of match requests for all player groups during the previous 60 seconds.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

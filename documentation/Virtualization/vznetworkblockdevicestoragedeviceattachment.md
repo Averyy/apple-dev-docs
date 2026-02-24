@@ -26,6 +26,33 @@ Using this attachment requires the app to have the [`com.apple.security.network.
 
 To create a device that uses an NBD service, first initialize a `VZNetworkBlockDeviceStorageDeviceAttachment` with the URI of an NBD server, then use the attachment to configure a [`VZStorageDeviceConfiguration`](vzstoragedeviceconfiguration.md) as shown in the example below (the attachment works with any subclass of [`VZStorageDeviceConfiguration`](vzstoragedeviceconfiguration.md), not just [`VZVirtioBlockDeviceConfiguration`](vzvirtioblockdeviceconfiguration.md)):
 
+**Swift**:
+
+```swift
+    let url = try URL(string: "nbd://localhost:10809/myDisk")
+    let attachment = try VZNetworkBlockDeviceStorageDeviceAttachment(url: url, timeout: 5.0, isForcedReadOnly: false, synchronizationMode: .full)
+    let blockDevice = VZVirtioBlockDeviceConfiguration(attachment: attachment)
+```
+
+**Objective-C**:
+
+```objc
+    NSURL *url = [[NSURL alloc] initWithString:@"nbd://localhost:10809/myDisk"]
+    NSError *error = nil;
+    VZNetworkBlockDeviceStorageDeviceAttachment *attachment =
+        [[VZNetworkBlockDeviceStorageDeviceAttachment alloc] initWithURL:url
+                                                                 timeout:5.0
+                                                          forcedReadOnly:NO
+                                                     synchronizationMode:VZDiskSynchronizationModeFull
+                                                                   error:&error];
+    if (!attachment) {
+        // Handle the error.
+    }
+
+    VZVirtioBlockDeviceConfiguration *blockDevice = [[VZVirtioBlockDeviceConfiguration alloc] initWithAttachment:attachment];
+
+```
+
 For more information about Network Block Devices, see the [`Network Block Device Specification`](https://developer.apple.comhttps://github.com/NetworkBlockDevice/nbd/blob/master/doc/proto.md) on GitHub.
 
 For more information about the NBD URL format, see the [`Network Block Device URL specification`](https://developer.apple.comhttps://github.com/NetworkBlockDevice/nbd/blob/master/doc/uri.md) on GitHub.

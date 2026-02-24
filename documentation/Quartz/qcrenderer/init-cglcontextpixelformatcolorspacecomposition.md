@@ -20,10 +20,10 @@ The initialized `QCRenderer` object or `nil` if initialization is not successful
 
 ## Parameters
 
-- `context`: A    object. The object that you supply must have both a color and a depth buffer.
-- `format`: A     object.
-- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass   to use the default RGB color space. For more information on Quartz color spaces, see  .
-- `composition`: A   object.
+- `context`: A  `CGLContextObj` object. The object that you supply must have both a color and a depth buffer.
+- `format`: A  `CGLPixelFormatObj`  object.
+- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass `NULL` to use the default RGB color space. For more information on Quartz color spaces, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
+- `composition`: A [`QCComposition`](qccomposition.md) object.
 
 ## See Also
 

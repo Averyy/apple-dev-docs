@@ -14,9 +14,9 @@ class func show(withParticipant participant: SWPerson, highlight: SWCollaboratio
 
 ## Parameters
 
-- `participant`: The   displayed in the alert.
-- `highlight`: The   related to the request.
-- `window`: The   to host the alert.
+- `participant`: The `SWPerson` displayed in the alert.
+- `highlight`: The `SWCollaborationHighlight` related to the request.
+- `window`: The `NSWindow` to host the alert.
 
 ## See Also
 

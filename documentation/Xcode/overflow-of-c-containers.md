@@ -33,6 +33,9 @@ Add a bounds check before attempting to access a container at a specific index.
 
 You may encounter a false-positive ‘Container overflow’ error when code that isn’t compiled with Address Sanitizer modifies a container. For container overflow checks to work correctly, you need to compile all code with Address Sanitizer. If you can’t do this, turn off container overflow checks using one of the following methods:
 
+- **Set the ASAN_OPTIONS Environment Variable**: Set the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0`, or append `:detect_container_overflow=0` to this environment variable if it has already been set. You should do this under the Scheme for Run targets, or Configurations for Test Plans. Note that for UI tests you may need to set this in the XCUIApplication [`launchEnvironment`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication/launchEnvironment).
+- **Define the __asan_default_options function in your executable**: Use this method when you can’t control your program’s environment variables. Disable container overflow checks by defining the following function in your executable:
+
 ```occ
 #ifdef __cplusplus
 extern "C" {

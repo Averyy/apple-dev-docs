@@ -26,7 +26,7 @@ A new string based on the current string object. If the new string specifies a f
 
 Note that this method only works with file paths. It does not work for string representations of URLs.
 
-For sandboxed apps in macOS, the current home directory is not the same as the user’s home directory. For a sandboxed app, the home directory is the app’s home directory. So if you specified a path of `/Users/``/file.txt` for a sandboxed app, the returned path would be unchanged from the original. However, if you specified the same path for an app not in a sandbox, this method would replace the `/Users/` portion of the path with a tilde.
+For sandboxed apps in macOS, the current home directory is not the same as the user’s home directory. For a sandboxed app, the home directory is the app’s home directory. So if you specified a path of `/Users/`*<current_user>*`/file.txt` for a sandboxed app, the returned path would be unchanged from the original. However, if you specified the same path for an app not in a sandbox, this method would replace the `/Users/`*<current_user>* portion of the path with a tilde.
 
 ## See Also
 

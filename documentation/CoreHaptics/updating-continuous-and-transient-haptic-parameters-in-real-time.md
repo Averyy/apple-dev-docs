@@ -111,7 +111,7 @@ do {
 }
 ```
 
-> **Note**: Sending a dynamic parameter for intensity  the original pattern’s event intensity by the dynamic parameter value. Sending a dynamic parameter for sharpness  the dynamic parameter value to the original pattern’s event sharpness.
+> **Note**: Sending a dynamic parameter for intensity *multiplies* the original pattern’s event intensity by the dynamic parameter value. Sending a dynamic parameter for sharpness *adds* the dynamic parameter value to the original pattern’s event sharpness.
 
 Only when the gesture ends does the app stop the pattern player.
 

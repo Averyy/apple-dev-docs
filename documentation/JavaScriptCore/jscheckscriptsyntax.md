@@ -26,10 +26,10 @@ func JSCheckScriptSyntax(_ ctx: JSContextRef!, _ script: JSStringRef!, _ sourceU
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `script`: A   that contains the script to check for syntax errors.
-- `sourceURL`: A   that contains a URL for the script’s source file. The system only uses this when reporting exceptions. Pass   to omit source file information in exceptions.
-- `startingLineNumber`: An integer value that specifies the script’s starting line number in the file at  . The system only uses this when reporting exceptions.
-- `exception`: A pointer to a   to store a syntax error exception in, if any. Pass   to ignore any syntax error exception.
+- `script`: A [`JSStringRef`](jsstringref.md) that contains the script to check for syntax errors.
+- `sourceURL`: A [`JSStringRef`](jsstringref.md) that contains a URL for the script’s source file. The system only uses this when reporting exceptions. Pass `NULL` to omit source file information in exceptions.
+- `startingLineNumber`: An integer value that specifies the script’s starting line number in the file at `sourceURL`. The system only uses this when reporting exceptions.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store a syntax error exception in, if any. Pass `NULL` to ignore any syntax error exception.
 
 ## See Also
 

@@ -11,6 +11,12 @@ A Boolean value that indicates whether your extension presents a user interface 
 - macOS 14.0+
 
 
+
+**Type**: boolean
+
+**Default**: `NO`
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/showsconfigurationui)*

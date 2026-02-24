@@ -32,9 +32,9 @@ By default, the buffer at each index is `nil`.
 
 ## Parameters
 
-- `bytes`: A pointer to argument data the method copies to an   and assigns to an entry in the vertex shader argument table for buffers.
-- `length`: The number of bytes the method copies from the   pointer.
-- `index`: An integer that represents the entry in the vertex shader argument table for buffers that stores a record of the   the method creates from  .
+- `bytes`: A pointer to argument data the method copies to an [`MTLBuffer`](mtlbuffer.md) and assigns to an entry in the vertex shader argument table for buffers.
+- `length`: The number of bytes the method copies from the `bytes` pointer.
+- `index`: An integer that represents the entry in the vertex shader argument table for buffers that stores a record of the [`MTLBuffer`](mtlbuffer.md) the method creates from `bytes`.
 
 ## See Also
 

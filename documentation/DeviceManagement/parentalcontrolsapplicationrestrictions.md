@@ -103,6 +103,13 @@ To determine if an app can be launched, the app is evaluated with these rules:
 - [object ParentalControlsApplicationRestrictions.ApplicationItem](parentalcontrolsapplicationrestrictions/applicationitem.md)
   A dictionary defining an app for parental control.
 
+## Properties
+
+- `familyControlsEnabled` (boolean) *(required)*: If `true`, enables app access restrictions.
+- `pathBlackList` ([string]): The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later.
+- `pathWhiteList` ([string]): The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later.
+- `whiteList` ([ParentalControlsApplicationRestrictions.ApplicationItem]): The allow list of app item dictionaries.
+
 ## See Also
 
 - [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)

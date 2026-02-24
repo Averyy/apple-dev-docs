@@ -8,6 +8,10 @@ The Service Management clients authorized to add and remove tools.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [SMPrivilegedExecutables](information-property-list/smprivilegedexecutables.md)

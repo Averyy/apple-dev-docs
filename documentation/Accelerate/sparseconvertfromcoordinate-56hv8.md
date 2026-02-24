@@ -47,7 +47,7 @@ For triangular matrices, the conversion drops entries in the triangle that [`tri
 - `column`: The column indices of the matrix structure.
 - `data`: The contents of the structurally nonzero (block) matrix elements.
 - `storage`: A block of memory to store the returned matrix.
-- `workspace`: The workspace of size  .
+- `workspace`: The workspace of size `rowCount * sizeof(int)`.
 
 ## See Also
 

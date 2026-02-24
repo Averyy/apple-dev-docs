@@ -65,8 +65,8 @@ let colorSpace = vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(
 - `primaries`: A set of x, y tristimulus values that define the color primaries for the RGB color space.
 - `tf`: The transfer function to convert from linear RGB (using the above primaries) to nonlinear RGB.
 - `intent`: A rendering intent constant that specifies how to handle colors that aren’t within the gamut of the destination color space.
-- `flags`: The options to use when performing the operation. This function supports only  , which prints diagnostic information to the console in the event of a failure.
-- `error`: A pointer to a  . The function overwrites the pointer to indicate the success or failure of the operation.
+- `flags`: The options to use when performing the operation. This function supports only [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md), which prints diagnostic information to the console in the event of a failure.
+- `error`: A pointer to a [`vImage_Error`](vimage_error.md). The function overwrites the pointer to indicate the success or failure of the operation.
 
 ## See Also
 

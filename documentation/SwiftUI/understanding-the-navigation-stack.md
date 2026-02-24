@@ -14,9 +14,12 @@ A `NavigationPath` is a type-erased collection on which you can store a heteroge
 
 > 💡 **Tip**: Avoid using model types as elements of a navigation path. Make sure the elements of navigation paths are lightweight, and don’t use them as a mode of transport for data models.
 
-Another element of the navigation stack is the , which encapsulates the views people can navigate to within your app.
+Another element of the navigation stack is the *navigation destination*, which encapsulates the views people can navigate to within your app.
 
 You can present destinations on a `NavigationStack` using:
+
+- **View-destination**: Use the [`init(destination:label:)`](navigationlink/init(destination:label:).md) initializer to push a view directly onto the navigation stack. A view-destination link is fire-and-forget: SwiftUI tracks the navigation state, but from your app’s perspective, there are no stateful hooks indicating you pushed a view.
+- **Value–destination**: A value-destination indicates that you are pushing a value onto the path. SwiftUI uses the value you pushed to the path to determine the corresponding view using the [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md)  modifier. You use [`init(value:label:)`](navigationlink/init(value:label:).md) initializer to append a value onto the navigation path and [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) modifier to map the data type of the path appended to a specific destination view. You can also programmatically push views onto a navigation stack using a [`navigationDestination(isPresented:destination:)`](view/navigationdestination(ispresented:destination:).md) modifier. The destination is stateful—the state is explicitly available to your app via the Boolean binding. In cases where the presentation state is better modeled by the absence or presence of a value rather than a Boolean, use [`navigationDestination(item:destination:)`](view/navigationdestination(item:destination:).md). This modifier takes a binding to a nullable data model.
 
 > **Note**: Value-destination and view-destination links don’t describe the visible stack directly; instead, they refer to the data added to the path.
 
@@ -325,6 +328,10 @@ struct ContentView: View {
 ```
 
 After the code in this example runs, and someone clicks each `NavigationLink`, the navigation stack builds up with three views:
+
+- **Root**: The starting view of the `NavigationStack`.
+- **Collection of values**: A sequence of zero or more values, such as `Color.mint`, pushed onto the path. The values serve as identifiers or keys that SwiftUI uses to determine which views to present.
+- **Collection of views**: A sequence of views such as `RecipeDetailView`, added to the path. This view is enclosed in the navigation destination and displayed when someone taps the link.
 
 SwiftUI keeps track of the entire navigation path. The underlying data structure looks like the following example:
 

@@ -39,7 +39,7 @@ case asin
 - [BNNS.ArithmeticUnaryFunction.cosh](bnns/arithmeticunaryfunction/cosh.md)
   An operation that calculates the element-wise hyperbolic cosine of its input.
 - [BNNS.ArithmeticUnaryFunction.exp](bnns/arithmeticunaryfunction/exp.md)
-  An operation that calculates the element-wise result of  raised to the power of its input.
+  An operation that calculates the element-wise result of *e* raised to the power of its input.
 - [BNNS.ArithmeticUnaryFunction.exp2](bnns/arithmeticunaryfunction/exp2.md)
   An operation that calculates the element-wise result of 2 raised to the power of its input.
 - [BNNS.ArithmeticUnaryFunction.floor](bnns/arithmeticunaryfunction/floor.md)

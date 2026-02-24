@@ -22,7 +22,7 @@ var categoryOrder: [String] { get set }
 
 #### Discussion
 
-If your categorical axis represents, for example, blood type data, and the legend lists , , ,  in that order, provide an array that contains the strings `"AB"`, `"A"`, `"B"`, and `"O"` in the same order.
+If your categorical axis represents, for example, blood type data, and the legend lists *AB*, *A*, *B*, *O* in that order, provide an array that contains the strings `"AB"`, `"A"`, `"B"`, and `"O"` in the same order.
 
 
 ---

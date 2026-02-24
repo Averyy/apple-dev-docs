@@ -19,9 +19,9 @@ init(pdfURL: URL, authors: [some UserIdentity], id: String? = nil) throws
 
 ## Parameters
 
-- `pdfURL`: A URL to the PDF document that   is the basis of this assessment document.
+- `pdfURL`: A URL to the PDF document that is the basis of this assessment document.
 - `authors`: The user identities of contributors to this document. Treated as a set.
-- `id`: An optional ID to use for this document.   if one is not provided, a random UUID string will be used.
+- `id`: An optional ID to use for this document. if one is not provided, a random UUID string will be used.
 
 ## See Also
 

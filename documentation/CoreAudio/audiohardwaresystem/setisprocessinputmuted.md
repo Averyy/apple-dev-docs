@@ -17,7 +17,7 @@ func setIsProcessInputMuted(_ muted: Bool) throws
 
 ## Parameters
 
-- `muted`: A Bool where true indicates that all data coming into the process for   all devices will be silent.
+- `muted`: A Bool where true indicates that all data coming into the process for all devices will be silent.
 
 
 ---

@@ -24,7 +24,7 @@ This method is invoked by the [`runPageLayout(_:)`](nsdocument/runpagelayout(_:)
 
 ## Parameters
 
-- `newPrintInfo`: The   object that is the result of the user approving the page layout panel presented by  .
+- `newPrintInfo`: The `NSPrintInfo` object that is the result of the user approving the page layout panel presented by [`runPageLayout(_:)`](nsdocument/runpagelayout(_:).md).
 
 ## See Also
 

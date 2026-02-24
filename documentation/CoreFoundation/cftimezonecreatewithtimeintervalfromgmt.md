@@ -26,7 +26,7 @@ A new time zone whose offset from GMT is given by the interval `ti`. The name of
 
 ## Parameters
 
-- `allocator`: The allocator object to use to allocate memory for the new time zone. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator object to use to allocate memory for the new time zone. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `ti`: The offset, from GMT, of the new time zone.
 
 ## See Also

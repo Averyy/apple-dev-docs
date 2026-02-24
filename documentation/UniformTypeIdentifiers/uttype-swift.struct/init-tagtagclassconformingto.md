@@ -27,8 +27,8 @@ This initializer returns `nil` if the system doesn’t know the tag.
 ## Parameters
 
 - `tag`: The tag, such as a filename extension.
-- `tagClass`: The tag class, such as  .
-- `supertype`: Another type that the resulting type must conform to; for example,  .
+- `tagClass`: The tag class, such as [`UTTagClassFilenameExtension`](uttagclassfilenameextension.md).
+- `supertype`: Another type that the resulting type must conform to; for example, [`UTTypeData`](uttypedata.md).
 
 ## See Also
 

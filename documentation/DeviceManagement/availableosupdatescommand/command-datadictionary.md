@@ -17,6 +17,11 @@ The command to get a list of available operating-system updates for a device.
 object AvailableOSUpdatesCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

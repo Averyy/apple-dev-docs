@@ -20,7 +20,7 @@ Applications typically display a certificate panel in the context of a specific 
 
 ## Parameters
 
-- `policies`: The policies to use when evaluating the certificates’ status. You can pass either a   object or an   (containing one or more   instances) in this parameter. If   is set to  , the Apple X.509 Basic Policy is used.
+- `policies`: The policies to use when evaluating the certificates’ status. You can pass either a [`SecPolicy`](https://developer.apple.com/documentation/Security/SecPolicy) object or an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) (containing one or more [`SecPolicy`](https://developer.apple.com/documentation/Security/SecPolicy) instances) in this parameter. If `policies` is set to `nil`, the Apple X.509 Basic Policy is used.
 
 ## See Also
 

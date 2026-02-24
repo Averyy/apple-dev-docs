@@ -29,6 +29,11 @@ This method applies the glass distortion filter to an image. This effect distort
 
 The glass distortion filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`texture`**: An image with the type [`CIImage`](ciimage.md).
+- **`scale`**: The amount of texturing to apply. Larger values increase the effect. Defaults to 200.
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+
 The following code creates a filter that results in a glass-like distortion applied to the image:
 
 ```swift

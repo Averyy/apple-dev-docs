@@ -33,7 +33,7 @@ To override the layout direction for a specific view, use the [`environment(_:_:
 
 ## Parameters
 
-- `behavior`: A LayoutDirectionBehavior value that indicates   whether this view should mirror in a particular layout direction. By   default, views will adjust their layouts automatically in a   right-to-left context and do not need to be mirrored.
+- `behavior`: A LayoutDirectionBehavior value that indicates whether this view should mirror in a particular layout direction. By default, views will adjust their layouts automatically in a right-to-left context and do not need to be mirrored.
 
 ## See Also
 

@@ -13,6 +13,10 @@ The file containing the bundle’s icon.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundleIcons](information-property-list/cfbundleicons.md)

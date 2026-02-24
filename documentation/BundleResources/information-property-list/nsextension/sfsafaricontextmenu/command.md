@@ -8,6 +8,10 @@ The command to send to the app extension when the user selects the context menu 
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [Text](information-property-list/nsextension/sfsafaricontextmenu/text.md)

@@ -23,9 +23,9 @@ func CFAttributedStringSetAttribute(_ aStr: CFMutableAttributedString!, _ range:
 ## Parameters
 
 - `aStr`: The mutable attributed string to modify.
-- `range`: The range of   over to which the new attributes apply.   must not exceed the bounds of  .
+- `range`: The range of `aStr` over to which the new attributes apply. `range` must not exceed the bounds of `aStr`.
 - `attrName`: The name of the attribute whose value to set.
-- `value`: The value of the attribute   to apply over  . This value may not be  . If you want to remove an attribute, use  .
+- `value`: The value of the attribute `attrName` to apply over `range`. This value may not be `NULL`. If you want to remove an attribute, use [`CFAttributedStringRemoveAttribute(_:_:_:)`](cfattributedstringremoveattribute(_:_:_:).md).
 
 ## See Also
 

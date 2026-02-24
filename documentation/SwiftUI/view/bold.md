@@ -27,7 +27,7 @@ A view with bold text.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates   whether bold font styling is added. The default value is  .
+- `isActive`: A Boolean value that indicates whether bold font styling is added. The default value is `true`.
 
 ## See Also
 

@@ -21,7 +21,7 @@ The initialized object.
 ## Parameters
 
 - `imageProperties`: A dictionary of image properties.
-- `imageUTType`: A string that specifies a uniform type identifier, such as   . See  .
+- `imageUTType`: A string that specifies a uniform type identifier, such as  `JPEG`. See [`Uniform Type Identifiers Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
 
 ## See Also
 

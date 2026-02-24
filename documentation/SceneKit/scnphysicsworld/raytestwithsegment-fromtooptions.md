@@ -48,7 +48,7 @@ if (results.firstObject.node == player) {
 
 - `origin`: An endpoint of the line segment to search, specified in the scene’s world coordinate system.
 - `dest`: The other endpoint of the line segment to search, specified in the scene’s world coordinate system.
-- `options`: A dictionary of options affecting the test, or   to use default options. For applicable keys and the possible values, see  .
+- `options`: A dictionary of options affecting the test, or `nil` to use default options. For applicable keys and the possible values, see `Physics Test Options Keys`.
 
 ## See Also
 

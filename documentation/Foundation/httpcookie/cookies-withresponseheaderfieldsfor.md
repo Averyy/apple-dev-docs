@@ -34,7 +34,7 @@ If `headerFields` doesn’t specify a path for a given cookie, the cookie is cre
 
 ## Parameters
 
-- `headerFields`: The header fields used to create the   objects.
+- `headerFields`: The header fields used to create the [`HTTPCookie`](httpcookie.md) objects.
 - `URL`: The URL associated with the created cookies.
 
 ## See Also

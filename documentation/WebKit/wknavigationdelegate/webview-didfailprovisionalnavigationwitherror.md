@@ -25,7 +25,7 @@ optional func webView(_ webView: WKWebView, didFailProvisionalNavigation navigat
 ## Parameters
 
 - `webView`: The web view that called the delegate method.
-- `navigation`: The navigation object for the operation. This object corresponds to a   object that WebKit returned when the load operation began. You use it to track the progress of that operation.
+- `navigation`: The navigation object for the operation. This object corresponds to a [`WKNavigation`](wknavigation.md) object that WebKit returned when the load operation began. You use it to track the progress of that operation.
 - `error`: The error that occurred.
 
 ## See Also

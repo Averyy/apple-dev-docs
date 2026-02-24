@@ -26,7 +26,7 @@ The image configuration of this page that will be used when producing its repres
 
 - `region`: The region of the page used to generate the image.
 - `allowTransparentBackground`: Indicates whether the image may have a transparent background.
-- `snapshotWidth`: The default value of this parameter is  , which returns an image whose size matches the original size of the captured region.
+- `snapshotWidth`: The width of the captured image, in points. Use this property to scale the generated image to the specified width. The webpage maintains the aspect ratio of the captured content, but scales it to match the width you specify. The default value of this parameter is `nil`, which returns an image whose size matches the original size of the captured region.
 - `afterScreenUpdates`: Indicates whether to take the snapshot after incorporating any pending screen updates.
 
 ## See Also

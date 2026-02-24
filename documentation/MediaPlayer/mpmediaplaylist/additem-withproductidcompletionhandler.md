@@ -24,7 +24,7 @@ The method adds a single media item associated with the product identifier to th
 ## Parameters
 
 - `productID`: The product identifier for the item to add.
-- `completionHandler`: A block that the system calls after it adds the item to the playlist.
+- `completionHandler`: A block that the system calls after it adds the item to the playlist. - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 ## See Also
 

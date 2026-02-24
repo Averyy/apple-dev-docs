@@ -24,7 +24,7 @@ A new action for the specified call UUID and handle.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated   object.
+- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object.
 - `handle`: The handle for the receipient, such as a phone number or email address.
 
 ## See Also

@@ -32,7 +32,7 @@ A result code. See Result Codes.
 - `inSetSizeFunc`: A callback function invoked when the audio file object wants to set the size of the file.
 - `inFileType`: The type of audio file to initialize
 - `inFormat`: The format for the audio data in the file.
-- `inFlags`: Flags for creating or opening the file. Set to  .
+- `inFlags`: Flags for creating or opening the file. Set to `0`.
 - `outAudioFile`: On output, a pointer to the newly initialized audio file.
 
 ## See Also

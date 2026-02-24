@@ -32,8 +32,8 @@ Your app can scan for Bluetooth devices in the background by specifying the `blu
 
 ## Parameters
 
-- `serviceUUIDs`: An array of   objects that the app is interested in. Each   object represents the UUID of a service that a peripheral advertises.
-- `options`: A dictionary of options for customizing the scan. For available options, see  .
+- `serviceUUIDs`: An array of [`CBUUID`](cbuuid.md) objects that the app is interested in. Each [`CBUUID`](cbuuid.md) object represents the UUID of a service that a peripheral advertises.
+- `options`: A dictionary of options for customizing the scan. For available options, see [`Peripheral Scanning Options`](peripheral-scanning-options.md).
 
 ## See Also
 

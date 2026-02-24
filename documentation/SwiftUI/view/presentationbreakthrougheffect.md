@@ -37,7 +37,7 @@ Only popovers allow breakthrough to be disabled altogether. Passing a `.none` va
 
 ## Parameters
 
-- `effect`: The type of effect to apply when a presentation element is   occluded by other content.
+- `effect`: The type of effect to apply when a presentation element is occluded by other content.
 
 
 ---

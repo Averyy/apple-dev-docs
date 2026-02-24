@@ -16,6 +16,10 @@ Create app extensions to manage and report unwanted SMS messages and spam calls.
 
 SMS and Call Reporting provides app extensions to manage unwanted communication.
 
+- ****Message Filter app extension****: Identifies and filters unwanted SMS and MMS messages.
+- ****Unwanted Communication app extension****: Lets people report unwanted SMS messages and calls as spam.
+- ****Live Caller ID Lookup app extension****: Enables up-to-date calling and blocking information.
+
 ## Topics
 
 ### Message filtering

@@ -10,7 +10,7 @@ When iCloud Backup is in an enabled state, it periodically creates a backup of t
 
 ##### Exclude Purgeable Data
 
- is app data that the system can delete without affecting the app’s execution and that the app can re-create if it needs. For example, your app might generate thumbnails of larger images for display in a collection view. If the app saves the thumbnails to disk, consider them purgeable data because, if the system deletes those files, the app can create them again from source.
+*Purgeable data* is app data that the system can delete without affecting the app’s execution and that the app can re-create if it needs. For example, your app might generate thumbnails of larger images for display in a collection view. If the app saves the thumbnails to disk, consider them purgeable data because, if the system deletes those files, the app can create them again from source.
 
 The app container provides two directories for storing purgeable data:
 
@@ -38,7 +38,7 @@ Consider deleting purgeable data as soon as your app is done with it so that it 
 
 ##### Mark Nonpurgeable Data As Excludable
 
- is data the user creates, or data the app requires to function as the user expects. Some nonpurgeable data isn’t appropriate for backup.
+*Nonpurgeable data* is data the user creates, or data the app requires to function as the user expects. Some nonpurgeable data isn’t appropriate for backup.
 
 For example, if your app downloads high-definition movies for offline viewing, exclude those files because they’re typically large in size and the user can download them again on a restored device, if necessary. Conversely, if your app allows the user to import arbitrary files such as PDFs, ebooks, and digital comics, don’t exclude those files because it might be difficult, even impossible, for the user to re-create them on a restored device.
 

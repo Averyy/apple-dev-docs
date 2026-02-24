@@ -18,6 +18,11 @@ The configuration details for an authentication server.
 object WellKnown.AvailableServer
 ```
 
+## Properties
+
+- `BaseURL` (string) *(required)*: The URL where the service resides. This is the base path for subsequent requests.
+- `Version` (string) *(required)*: The server’s version string.
+
 
 ---
 

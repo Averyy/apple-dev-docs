@@ -30,6 +30,20 @@ A segmented control can display a title (an [`NSString`](https://developer.apple
 
 You register the target-action methods for a segmented control using the [`valueChanged`](uicontrol/event/valuechanged.md) constant as shown below.
 
+**Swift**:
+
+```swift
+segmentedControl.addTarget(self, action: "action:", forControlEvents: .valueChanged)
+```
+
+**Objective-C**:
+
+```objc
+[segmentedControl addTarget:self
+                     action:@selector(action:)
+           forControlEvents:UIControlEventValueChanged];
+```
+
 How you configure a segmented control can affect its display behavior:
 
 - If you set a segmented control to have a momentary style, a segment doesn’t show itself as selected (blue background) when the user touches it. The disclosure button is always momentary and doesn’t affect the actual selection.
@@ -44,6 +58,36 @@ When customizing appearance, in general, you should specify a value for the norm
 In the case of the segmented control, appearance properties for [`landscapePhone`](uibarmetrics/landscapephone.md) are only respected for segmented controls in the smaller navigation and toolbars that are used in landscape orientation on the iPhone.
 
 To provide complete customization, you need to provide divider images for different state combinations, using [`setDividerImage(_:forLeftSegmentState:rightSegmentState:barMetrics:)`](uisegmentedcontrol/setdividerimage(_:forleftsegmentstate:rightsegmentstate:barmetrics:).md):
+
+**Swift**:
+
+```swift
+// Image between two unselected segments.
+mySegmentedControl.setDividerImage(myImage, forLeftSegmentState: UIControlState.Normal,
+                                   rightSegmentState: UIControlState.Normal, barMetrics: UIBarMetrics.Default)
+ 
+// Image between segment selected on the left and unselected on the right.
+mySegmentedControl.setDividerImage(myImage, forLeftSegmentState: UIControlState.Selected,
+                                   rightSegmentState: UIControlState.Normal, barMetrics: UIBarMetrics.Default)
+ 
+// Image between segment selected on the right and unselected on the left.
+mySegmentedControl.setDividerImage(myImage, forLeftSegmentState: UIControlState.Normal,
+                                   rightSegmentState: UIControlState.Selected, barMetrics: UIBarMetrics.Default)
+```
+
+**Objective-C**:
+
+```objc
+// Image between two unselected segments.
+[mySegmentedControl setDividerImage:image1 forLeftSegmentState:UIControlStateNormal
+                  rightSegmentState:UIControlStateNormal barMetrics:barMetrics];
+// Image between segment selected on the left and unselected on the right.
+[mySegmentedControl setDividerImage:image1 forLeftSegmentState:UIControlStateSelected
+                  rightSegmentState:UIControlStateNormal barMetrics:barMetrics];
+// Image between segment selected on the right and unselected on the right.
+[mySegmentedControl setDividerImage:image1 forLeftSegmentState:UIControlStateNormal
+                  rightSegmentState:UIControlStateSelected barMetrics:barMetrics];
+```
 
 ## Topics
 

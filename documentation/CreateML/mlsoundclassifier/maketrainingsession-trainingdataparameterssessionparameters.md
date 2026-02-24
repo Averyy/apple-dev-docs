@@ -24,9 +24,9 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the sound classif
 
 ## Parameters
 
-- `trainingData`: A collection of labeled audio files represented by an  .
-- `parameters`: An   instance you use to configure the model   for the training session.
-- `sessionParameters`: An   instance you use to configure the training session.
+- `trainingData`: A collection of labeled audio files represented by an [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md).
+- `parameters`: An [`MLSoundClassifier.ModelParameters`](mlsoundclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

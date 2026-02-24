@@ -25,18 +25,18 @@ The descriptor on autoreleasepool.
 
 ## Parameters
 
-- `kernelWidth`: See   property.
-- `kernelHeight`: See   property.
-- `strideInX`: See   property.
-- `strideInY`: See   property.
-- `dilationRateInX`: See   property.
-- `dilationRateInY`: See   property.
-- `paddingLeft`: See   property.
-- `paddingRight`: See   property.
-- `paddingTop`: See   property.
-- `paddingBottom`: See   property.
-- `paddingStyle`: See   property.
-- `dataLayout`: See   property.
+- `kernelWidth`: See `kernelWidth` property.
+- `kernelHeight`: See `kernelHeight` property.
+- `strideInX`: See `strideInX` property.
+- `strideInY`: See `strideInY` property.
+- `dilationRateInX`: See `dilationRateInX` property.
+- `dilationRateInY`: See `dilationRateInY` property.
+- `paddingLeft`: See `paddingLeft` property.
+- `paddingRight`: See `paddingRight` property.
+- `paddingTop`: See `paddingTop` property.
+- `paddingBottom`: See `paddingBottom` property.
+- `paddingStyle`: See `paddingStyle` property.
+- `dataLayout`: See `dataLayout` property.
 
 
 ---

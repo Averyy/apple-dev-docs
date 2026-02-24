@@ -22,8 +22,8 @@ When inserting or deleting multiple sections and items, you can animate all of y
 
 ## Parameters
 
-- `indexPath`: The index path of the item that you want to move. This parameter must not be  .
-- `newIndexPath`: The index path of the item’s new location. This parameter must not be  .
+- `indexPath`: The index path of the item that you want to move. This parameter must not be `nil`.
+- `newIndexPath`: The index path of the item’s new location. This parameter must not be `nil`.
 
 ## See Also
 

@@ -8,6 +8,10 @@ A Boolean value that indicates whether to match the driver against devices that 
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [DriverKit Audio Family](entitlements/com.apple.developer.driverkit.family.audio.md)

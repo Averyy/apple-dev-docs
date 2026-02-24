@@ -20,7 +20,7 @@ An `OSSharedPtr` to an [`IOUserAudioObject`](iouseraudioobject.md) if `in_object
 
 ## Parameters
 
-- `in_object_id`: The   of an object previously added to the driver.
+- `in_object_id`: The [`IOUserAudioObjectID`](audiodriverkit/iouseraudioobjectid.md) of an object previously added to the driver.
 
 ## See Also
 

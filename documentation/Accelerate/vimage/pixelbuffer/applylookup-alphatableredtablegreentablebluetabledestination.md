@@ -49,10 +49,10 @@ The images below show an example source image on the left and the negative resul
 
 ## Parameters
 
-- `alphaTable`: A lookup table for the alpha channel that contains 256   values. Pass   to specify that the function copies the alpha channel unchanged to the destination buffer.
-- `redTable`: A lookup table for the red channel that contains 256   values. Pass   to specify that the function copies the red channel unchanged to the destination buffer.
-- `greenTable`: A lookup table for the green channel that contains 256   values. Pass   to specify that the function copies the green channel unchanged to the destination buffer.
-- `blueTable`: A lookup table for the blue channel that contains 256   values. Pass   to specify that the function copies the blue channel unchanged to the destination buffer.
+- `alphaTable`: A lookup table for the alpha channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
+- `redTable`: A lookup table for the red channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the red channel unchanged to the destination buffer.
+- `greenTable`: A lookup table for the green channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the green channel unchanged to the destination buffer.
+- `blueTable`: A lookup table for the blue channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the blue channel unchanged to the destination buffer.
 - `destination`: The destination pixel buffer.
 
 ## See Also

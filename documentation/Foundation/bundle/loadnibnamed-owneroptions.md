@@ -30,9 +30,9 @@ If the nib file contains any proxy objects beyond just the File’s Owner proxy 
 
 ## Parameters
 
-- `name`: The name of the nib file, which need not include the   extension.
+- `name`: The name of the nib file, which need not include the `.nib` extension.
 - `owner`: The object to assign as the nib’s File’s Owner object.
-- `options`: A dictionary containing the options to use when opening the nib file. For a list of available keys for this dictionary, see  .
+- `options`: A dictionary containing the options to use when opening the nib file. For a list of available keys for this dictionary, see `UIKit Nib Loading Options`.
 
 ## See Also
 

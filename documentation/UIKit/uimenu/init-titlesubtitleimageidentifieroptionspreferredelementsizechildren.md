@@ -24,10 +24,10 @@ Creates a new menu with the specified title, subtitle, image, identifier, menu o
 - `title`: The title of the menu.
 - `subtitle`: The subtitle of the menu.
 - `image`: The image to display next to the menu’s title.
-- `identifier`: The unique identifier for the menu. When creating standard menus for your app, specify an appropriate constant defined in  . For custom menus, specify a custom reverse domain name value, or specify   to let this method create a unique identifier for you.
-- `options`: Additional configuration options for the menu. For a list of possible values, see  .
-- `preferredElementSize`: The size of the menu’s child elements. For a list of possible values, see  .
-- `children`: The menu elements in the menu. Specify leaf menu elements using   subclasses like  ,  , or  , and specify submenus using   objects. You may specify an empty array if the menu has no child menu elements.
+- `identifier`: The unique identifier for the menu. When creating standard menus for your app, specify an appropriate constant defined in [`UIMenu.Identifier`](uimenu/identifier-swift.struct.md). For custom menus, specify a custom reverse domain name value, or specify `nil` to let this method create a unique identifier for you.
+- `options`: Additional configuration options for the menu. For a list of possible values, see [`UIMenu.Options`](uimenu/options-swift.struct.md).
+- `preferredElementSize`: The size of the menu’s child elements. For a list of possible values, see [`UIMenu.ElementSize`](uimenu/elementsize.md).
+- `children`: The menu elements in the menu. Specify leaf menu elements using [`UIMenuElement`](uimenuelement.md) subclasses like [`UIAction`](uiaction.md), [`UICommand`](uicommand.md), or [`UIKeyCommand`](uikeycommand.md), and specify submenus using [`UIMenu`](uimenu.md) objects. You may specify an empty array if the menu has no child menu elements.
 
 ## See Also
 

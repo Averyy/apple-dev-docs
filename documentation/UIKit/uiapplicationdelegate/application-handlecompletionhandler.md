@@ -28,7 +28,7 @@ Your Intents app extension is still responsible for resolving and confirming the
 
 - `application`: The shared app object.
 - `intent`: The intent object that contains information about the SiriKit request. Use this object to identify what the user intends and what kind of response to provide.
-- `completionHandler`: The handler block to execute with your response. You must execute this handler at some point during your implementation of this method. This handler has no return value and takes the following parameter:
+- `completionHandler`: The handler block to execute with your response. You must execute this handler at some point during your implementation of this method. This handler has no return value and takes the following parameter: - **intentResponse**: The response object you create to report the status of the request. The exact type of this object must correspond to the type of intent delivered. For example, if the `intent` parameter contains an [`INStartWorkoutIntent`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntent) object, you must create an [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentResponse) object. This parameter must not be `nil`.
 
 ## See Also
 

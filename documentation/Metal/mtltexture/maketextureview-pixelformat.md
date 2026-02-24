@@ -26,7 +26,7 @@ A new texture object that shares the same storage allocation of the texture.
 
 #### Discussion
 
-When you create a texture normally, Metal allocates memory for the textureʼs pixel data. These storage allocations can be quite large. You can reduce memory use and avoid copying texture data by using a —a texture object that shares another textureʼs storage allocation, reinterpreting the pixel data in some other format.
+When you create a texture normally, Metal allocates memory for the textureʼs pixel data. These storage allocations can be quite large. You can reduce memory use and avoid copying texture data by using a *texture view*—a texture object that shares another textureʼs storage allocation, reinterpreting the pixel data in some other format.
 
 Not all pixel formats are compatible with one another. Reinterpretation of image data between pixel formats is supported within the following groups:
 

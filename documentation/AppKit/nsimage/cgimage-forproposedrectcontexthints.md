@@ -28,9 +28,9 @@ This method is typically called, not overridden.
 
 ## Parameters
 
-- `proposedDestRect`: On input, the proposed destination rectangle for drawing the image. If  , it defaults to the smallest pixel-integral rectangle containing {{0,0}, [self size]}.  The   is in user space in the reference context.
+- `proposedDestRect`: On input, the proposed destination rectangle for drawing the image. If `NULL`, it defaults to the smallest pixel-integral rectangle containing {{0,0}, [self size]}.  The `proposedDestRect` is in user space in the reference context.
 - `referenceContext`: A graphics context.
-- `hints`: A dictionary of hints that provide more context for selecting or generating a  , and may override properties of the  .
+- `hints`: A dictionary of hints that provide more context for selecting or generating a `CGImage`, and may override properties of the `referenceContext`.
 
 
 ---

@@ -17,7 +17,7 @@ func CTFontManagerEnableFontDescriptors(_ descriptors: CFArray, _ enable: Bool)
 ## Parameters
 
 - `descriptors`: Array of font descriptors.
-- `enable`: If  , the fonts matching the given descriptors are enabled for font descriptor matching; if  , they are not enabled.
+- `enable`: If `true`, the fonts matching the given descriptors are enabled for font descriptor matching; if `false`, they are not enabled.
 
 ## See Also
 

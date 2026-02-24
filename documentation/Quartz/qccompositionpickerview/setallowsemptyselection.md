@@ -16,7 +16,7 @@ func setAllowsEmptySelection(_ flag: Bool)
 
 ## Parameters
 
-- `flag`:   to allow an empty selection. The default value is  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to allow an empty selection. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

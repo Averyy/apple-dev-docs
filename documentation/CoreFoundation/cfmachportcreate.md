@@ -26,10 +26,10 @@ The new CFMachPort object or `NULL` on failure. The CFMachPort object has both s
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `callout`: The callback function invoked when a message is received on the new Mach port.
-- `context`: A structure holding contextual information for the new Mach port. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call.
-- `shouldFreeInfo`: A flag set by the function to indicate whether the   member of   should be freed. The flag is set to   on failure,   otherwise.   can be  .
+- `context`: A structure holding contextual information for the new Mach port. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call.
+- `shouldFreeInfo`: A flag set by the function to indicate whether the `info` member of `context` should be freed. The flag is set to `true` on failure, `false` otherwise. `shouldFreeInfo` can be `NULL`.
 
 ## See Also
 

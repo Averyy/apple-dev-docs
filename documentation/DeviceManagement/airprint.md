@@ -86,6 +86,10 @@ Specify `com.apple.airprint` as the payload type.
 - [object AirPrint.AirPrintItem](airprint/airprintitem.md)
   A dictionary of AirPrint printer details.
 
+## Properties
+
+- `AirPrint` ([AirPrint.AirPrintItem]) *(required)*: An array of AirPrint printers that are presented to the user.
+
 ## See Also
 
 - [object Printing](printing.md)

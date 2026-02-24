@@ -60,9 +60,9 @@ You use object anchors to learn about the position and orientation of a real-wor
 
 - [class ObjectTrackingProvider](objecttrackingprovider.md)
   A source of real-time position of reference objects in a person’s environment.
-- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
-- [Implementing object tracking in your visionOS app](../visionOS/implementing-object-tracking-in-your-visionOS-app.md)
+- [Implementing object tracking in your visionOS app](../visionos/implementing-object-tracking-in-your-visionos-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in your app.
 
 

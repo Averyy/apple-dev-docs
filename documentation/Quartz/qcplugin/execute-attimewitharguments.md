@@ -31,9 +31,9 @@ For example implementations of this method, see [`Quartz Composer Custom Patch P
 
 ## Parameters
 
-- `context`: An opaque object , conforming to the   protocol, that represents the execution context of the   object. Do not retain this object or use it outside of the scope of this method.
+- `context`: An opaque object , conforming to the [`QCPlugInContext`](qcplugincontext.md) protocol, that represents the execution context of the `QCPlugIn` object. Do not retain this object or use it outside of the scope of this method.
 - `time`: The execution interval.
-- `arguments`: A dictionary of arguments that can be used during execution. See  .
+- `arguments`: A dictionary of arguments that can be used during execution. See [`Execution Arguments`](execution-arguments.md).
 
 
 ---

@@ -10,13 +10,129 @@ Metal 3 adds input/output command queues and buffers that make the most of a dev
 
 First, create [`MTLIOCommandQueue`](mtliocommandqueue.md) instances by configuring an [`MTLIOCommandQueueDescriptor`](mtliocommandqueuedescriptor.md) instance and passing it to an [`MTLDevice`](mtldevice.md) instance’s [`makeIOCommandQueue(descriptor:)`](mtldevice/makeiocommandqueue(descriptor:).md) method.
 
+**Swift**:
+
+```swift
+// Create a Metal I/O command queue.
+let commandQueueDescriptor = MTLIOCommandQueueDescriptor()
+
+commandQueueDescriptor.type = .concurrent
+commandQueueDescriptor.priority = .normal
+
+let ioCommandQueue = try device.makeIOCommandQueue(descriptor:
+                                                    commandQueueDescriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+// Create a Metal I/O command queue.
+MTLIOCommandQueueDescriptor *commandQueueDescriptor;
+commandQueueDescriptor = [[MTLIOCommandQueueDescriptor alloc] init];
+
+commandQueueDescriptor.type = MTLIOCommandQueueTypeConcurrent;
+commandQueueDescriptor.priority = MTLIOPriorityNormal;
+
+NSError *error = nil;
+id<MTLIOCommandQueue> ioCommandQueue;
+ioCommandQueue = [device newIOCommandQueueWithDescriptor:commandQueueDescriptor
+                                                   error:&error];
+
+if (error != nil) {
+        // Report the error.
+        ...
+}
+```
+
 For each queue, create one or more [`MTLIOCommandBuffer`](mtliocommandbuffer.md) instances by calling the queue’s [`makeCommandBuffer()`](mtliocommandqueue/makecommandbuffer().md) or [`makeCommandBufferWithUnretainedReferences()`](mtliocommandqueue/makecommandbufferwithunretainedreferences().md) method. For each command buffer, load the assets you want by calling any of the [`MTLIOCommandBuffer`](mtliocommandbuffer.md) protocol’s load methods. For example:
 
 - The [`load(_:offset:size:sourceHandle:sourceHandleOffset:)`](mtliocommandbuffer/load(_:offset:size:sourcehandle:sourcehandleoffset:).md) method loads an asset into an [`MTLBuffer`](mtlbuffer.md).
 - The [`load(_:slice:level:size:sourceBytesPerRow:sourceBytesPerImage:destinationOrigin:sourceHandle:sourceHandleOffset:)`](mtliocommandbuffer/load(_:slice:level:size:sourcebytesperrow:sourcebytesperimage:destinationorigin:sourcehandle:sourcehandleoffset:).md) method loads an asset into an [`MTLTexture`](mtltexture.md).
 - The [`loadBytes(_:size:sourceHandle:sourceHandleOffset:)`](mtliocommandbuffer/loadbytes(_:size:sourcehandle:sourcehandleoffset:).md) method loads an asset, such as an audio file, into a CPU-accessible memory buffer.
 
+**Swift**:
+
+```swift
+// Create a Metal I/O command buffer.
+let ioCommandBuffer = ioCommandQueue.makeCommandBuffer()
+
+// Encode a command that loads a texture.
+ioCommandBuffer.load(texture,
+                     slice: 0,
+                     level: 0,
+                     size: textureSize,
+                     sourceBytesPerRow: bytesPerRow,
+                     sourceBytesPerImage: bytesPerImage,
+                     destinationOrigin: origin,
+                     sourceHandle: fileHandle,
+                     sourceHandleOffset: 0)
+
+// Encode a command that loads a buffer.
+ioCommandBuffer.load(buffer,
+                     offset: 0,
+                     size: bufferSize,
+                     sourceHandle: fileHandle,
+                     sourceHandleOffset: 0)
+
+// Submit the command buffer to run.
+ioCommandBuffer.commit()
+```
+
+**Objective-C**:
+
+```objective-c
+// Create a Metal I/O command buffer.
+id<MTLIOCommandBuffer> ioCommandBuffer = [ioCommandQueue commandBuffer];
+
+// Encode a command that loads a texture.
+[ioCommandBuffer loadTexture:texture
+                       slice:0
+                       level:0
+                        size:textureSize
+           sourceBytesPerRow:bytesPerRow
+         sourceBytesPerImage:bytesPerImage
+           destinationOrigin:origin
+                sourceHandle:textureAssetHandle
+          sourceHandleOffset:0];
+
+// Encode a command that loads a buffer.
+[ioCommandBuffer loadBuffer:buffer
+                     offset:0
+                       size:bufferSize
+               sourceHandle:bufferAssetHandle
+         sourceHandleOffset:0];
+
+
+// Submit the command buffer to run.
+[ioCommandBuffer commit];
+```
+
 For each asset, create an [`MTLIOFileHandle`](mtliofilehandle.md) instance using the input/output command buffer’s load methods. To create a file handle for your asset, call an [`MTLDevice`](mtldevice.md) instance’s [`makeIOHandle(url:)`](mtldevice/makeiohandle(url:).md) or [`makeIOHandle(url:compressionMethod:)`](mtldevice/makeiohandle(url:compressionmethod:).md) method.
+
+**Swift**:
+
+```swift
+func createHandleForFile(at url: URL, with device: MTLDevice) -> MTLIOFileHandle? {
+    return try? device.makeIOHandle(url: url)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+id<MTLIOFileHandle> createHandleForFile(NSURL *url, id<MTLDevice> device)
+{
+    NSError *error = nil;
+    id<MTLIOFileHandle> assetHandle = [device newIOHandleWithURL:url error:&error];
+
+    if (error != nil) {
+        // Report the error.
+        ...
+    }
+
+    return assetHandle;
+}
+```
 
 > **Note**:  You need to create each file handle using the same [`MTLDevice`](mtldevice.md) instance that created the [`MTLIOCommandQueue`](mtliocommandqueue.md) and [`MTLIOCommandBuffer`](mtliocommandbuffer.md) instances that load the files.
 

@@ -35,7 +35,7 @@ Core Image passes the [`CIContext`](cicontext.md) object as the `context` parame
 ## Parameters
 
 - `size`: The size, in default user space units, of the layer relative to the graphics context.
-- `info`: A dictionary, which is passed to   as the   parameter. Pass   because this parameter is reserved for future use.
+- `info`: A dictionary, which is passed to `CGLayerCreateWithContext` as the `auxiliaryInfo` parameter. Pass `NULL` because this parameter is reserved for future use.
 
 ## See Also
 

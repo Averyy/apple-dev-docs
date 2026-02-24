@@ -15,6 +15,12 @@ The requested user in the organization.
 object RequestUser
 ```
 
+## Properties
+
+- `clientUserId` (string) *(required)*: The unique identifier for a user in your organization.
+- `email` (string): The email address for the user.
+- `managedAppleId` (string): The Managed Apple Account for the user.
+
 ## See Also
 
 - [object Asset](asset.md)

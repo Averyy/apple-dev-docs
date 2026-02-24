@@ -30,7 +30,7 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `presses`: A set of   instances that represent the new presses that occurred. The phase of each press is set to  .
+- `presses`: A set of [`UIPress`](uipress.md) instances that represent the new presses that occurred. The phase of each press is set to [`UIPress.Phase.began`](uipress/phase-swift.enum/began.md).
 - `event`: The event to which the presses belong.
 
 ## See Also

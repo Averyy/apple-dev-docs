@@ -68,6 +68,11 @@ Specify `com.apple.desktop` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `locked` (boolean): If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13.
+- `override-picture-path` (string): The path to the desktop picture. If set, this picture is always locked.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

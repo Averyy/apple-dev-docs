@@ -33,7 +33,7 @@ To override the layout direction for a specific view, use the [`environment(_:_:
 
 ## Parameters
 
-- `enabled`: A Boolean value that indicates whether this view   should have its content flipped horizontally when the layout   direction is right-to-left. By default, views will adjust their layouts   automatically in a right-to-left context and do not need to be mirrored.
+- `enabled`: A Boolean value that indicates whether this view should have its content flipped horizontally when the layout direction is right-to-left. By default, views will adjust their layouts automatically in a right-to-left context and do not need to be mirrored.
 
 ## See Also
 

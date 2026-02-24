@@ -29,7 +29,7 @@ The default implementation of this method does nothing. Subclasses must override
 - `reportType`: The report type.
 - `options`: The lower 8 bits of the report ID. The other 24 bits are options to specify the request.
 - `completionTimeout`: The amount of time, in milliseconds, after which to abort the command if the entire command hasn’t finished.
-- `action`: The   object to execute when the request completes. Specify   to execute the request synchronously, which blocks the current thread until the request completes.
+- `action`: The [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object to execute when the request completes. Specify `NULL` to execute the request synchronously, which blocks the current thread until the request completes.
 
 ## See Also
 

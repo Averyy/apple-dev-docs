@@ -15,7 +15,11 @@ typealias ALAssetsLibraryWriteVideoCompletionBlock = (URL?, (any Error)?) -> Voi
 
 The block parameters are defined as follows:
 
+- **assetURL**: An URL that identifies the saved video file.
+
 If the video is not saved, `assetURL` is `nil`.
+
+- **error**: If the video is not saved, an error object that describes the reason for failure, otherwise `nil`.
 
 ## See Also
 

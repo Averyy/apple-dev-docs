@@ -26,7 +26,7 @@ If you override this method, you must call `super` at some point in your impleme
 
 ## Parameters
 
-- `event`: An event object related to touches that occurred in the control. This parameter might be  , indicating that the cancelation was caused by something other than an event, such as the view being removed from the window.
+- `event`: An event object related to touches that occurred in the control. This parameter might be `nil`, indicating that the cancelation was caused by something other than an event, such as the view being removed from the window.
 
 ## See Also
 

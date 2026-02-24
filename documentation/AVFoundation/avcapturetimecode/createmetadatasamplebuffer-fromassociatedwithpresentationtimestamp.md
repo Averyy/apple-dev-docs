@@ -24,8 +24,8 @@ A `CMSampleBufferRef` with the encoded Timecode Media Description metadata for v
 
 ## Parameters
 
-- `timecode`: The   instance providing the timecode details to encode.
-- `presentationTimeStamp`: The presentation time stamp that determines the exact moment in the media timeline where the metadata should be applied. It is embedded in the sample timing info ( ) and ensures that the packaged metadata synchronizes accurately with the corresponding video frame.
+- `timecode`: The [`AVCaptureTimecode`](avcapturetimecode.md) instance providing the timecode details to encode.
+- `presentationTimeStamp`: The presentation time stamp that determines the exact moment in the media timeline where the metadata should be applied. It is embedded in the sample timing info (`CMSampleTimingInfo`) and ensures that the packaged metadata synchronizes accurately with the corresponding video frame.
 
 ## See Also
 

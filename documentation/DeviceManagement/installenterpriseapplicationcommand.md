@@ -20,6 +20,11 @@ object InstallEnterpriseApplicationCommand
 - [object InstallEnterpriseApplicationCommand.Command](installenterpriseapplicationcommand/command-data.dictionary.md)
   The command to install an enterprise app on a device.
 
+## Properties
+
+- `Command` (InstallEnterpriseApplicationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InstallEnterpriseApplicationResponse](installenterpriseapplicationresponse.md)

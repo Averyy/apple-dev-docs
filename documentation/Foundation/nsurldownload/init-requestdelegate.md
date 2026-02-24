@@ -20,8 +20,8 @@ An initialized NSURLDownload object for `request`.
 
 ## Parameters
 
-- `request`: The URL request to download. The   object is deep-copied as part of the initialization process. Changes made to   after this method returns do not affect the request that is used for the loading process.
-- `delegate`: The   class maintains a strong reference to this delegate object.
+- `request`: The URL request to download. The `request` object is deep-copied as part of the initialization process. Changes made to `request` after this method returns do not affect the request that is used for the loading process.
+- `delegate`: The delegate for the download. This object will receive delegate messages as the download progresses. Delegate messages will be sent on the thread which calls this method. For the download to work correctly the calling thread’s run loop must be operating in the default run loop mode. The `NSURLDownload` class maintains a strong reference to this delegate object.
 
 ## See Also
 

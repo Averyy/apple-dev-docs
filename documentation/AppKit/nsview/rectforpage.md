@@ -26,7 +26,7 @@ If an `NSView` object responds [`false`](https://developer.apple.com/documentati
 
 ## Parameters
 
-- `page`: An integer indicating a page number. Page numbers are one-based—that is pages run from one to  .
+- `page`: An integer indicating a page number. Page numbers are one-based—that is pages run from one to *N*.
 
 ## See Also
 

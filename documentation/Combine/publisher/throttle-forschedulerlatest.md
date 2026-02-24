@@ -58,7 +58,7 @@ cancellable = Timer.publish(every: 3.0, on: .main, in: .default)
 
 - `interval`: The interval at which to find and emit either the most recent or the first element, expressed in the time system of the scheduler.
 - `scheduler`: The scheduler on which to publish elements.
-- `latest`: A Boolean value that indicates whether to publish the most recent element. If  , the publisher emits the first element received during the interval.
+- `latest`: A Boolean value that indicates whether to publish the most recent element. If `false`, the publisher emits the first element received during the interval.
 
 ## See Also
 

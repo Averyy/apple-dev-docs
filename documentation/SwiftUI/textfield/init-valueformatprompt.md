@@ -51,8 +51,8 @@ var body: some View {
 
 - `titleKey`: The title of the text field, describing its purpose.
 - `value`: The underlying value to edit.
-- `format`: A format style of type   to use when converting between   the string the user edits and the underlying value of type   . If   can’t perform the conversion, the text   field leaves   unchanged. If the user stops editing   the text in an invalid state, the text field updates the field’s   text to the last known valid value.
-- `prompt`: A   which provides users with guidance on what to type   into the text field.
+- `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the text field leaves `binding.value` unchanged. If the user stops editing the text in an invalid state, the text field updates the field’s text to the last known valid value.
+- `prompt`: A `Text` which provides users with guidance on what to type into the text field.
 
 ## See Also
 

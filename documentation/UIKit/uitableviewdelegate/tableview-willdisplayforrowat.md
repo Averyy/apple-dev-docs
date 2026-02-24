@@ -25,8 +25,8 @@ A table view sends this message to its delegate just before it uses `cell` to dr
 ## Parameters
 
 - `tableView`: The table view informing the delegate of this impending event.
-- `cell`: A cell that   is going to use when drawing the row.
-- `indexPath`: An index path locating the row in  .
+- `cell`: A cell that `tableView` is going to use when drawing the row.
+- `indexPath`: An index path locating the row in `tableView`.
 
 ## See Also
 

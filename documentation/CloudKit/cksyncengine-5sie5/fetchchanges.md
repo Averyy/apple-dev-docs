@@ -30,7 +30,7 @@ Use this method to request the sync engine immediately fetches all pending remot
 
 ## Parameters
 
-- `options`: The options to use when fetching changes. For more information, see  .
+- `options`: The options to use when fetching changes. For more information, see [`CKSyncEngine.FetchChangesOptions`](cksyncengine-5sie5/fetchchangesoptions.md).
 
 ## See Also
 

@@ -40,8 +40,8 @@ The following strings are unacceptable:
 
 ## Parameters
 
-- `numberValue`: Besides digits,   can include an initial   or  ; a single   or  , to indicate the exponent of a number in scientific notation; and a single decimal separator character to divide the fractional from the integral part of the number.
-- `locale`: A dictionary that defines the locale (specifically the  ) to use to interpret the number in  .
+- `numberValue`: A numeric string. Besides digits, `numberValue` can include an initial `+` or `–`; a single `E` or `e`, to indicate the exponent of a number in scientific notation; and a single decimal separator character to divide the fractional from the integral part of the number.
+- `locale`: A dictionary that defines the locale (specifically the [`decimalSeparator`](nslocale/key/decimalseparator.md)) to use to interpret the number in `numberValue`.
 
 ## See Also
 

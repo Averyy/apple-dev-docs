@@ -29,6 +29,14 @@ This method applies the ripple transition filter to an image. The effect transit
 
 The ripple transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`width`**: A `float` representing the width of the ripple effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the ripple effect.
+- **`scale`**: A `float` representing the scale of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that transitions from the input image to the target image with a water-like ripple effect.
 
 ```swift

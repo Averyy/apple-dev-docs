@@ -27,7 +27,7 @@ A view that uses the font width you specify.
 
 ## Parameters
 
-- `width`: One of the available font widths.   Providing   removes the effect of any font width   modifier applied higher in the view hierarchy.
+- `width`: One of the available font widths. Providing `nil` removes the effect of any font width modifier applied higher in the view hierarchy.
 
 ## See Also
 

@@ -22,7 +22,7 @@ struct DenseMatrix_Float
 
 #### Overview
 
-You typically use dense matrices to represent the unknowns matrix, , and the right-hand-side matrix, , in the matrix equation  A [`DenseMatrix_Float`](densematrix_float.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
+You typically use dense matrices to represent the unknowns matrix, *X*, and the right-hand-side matrix, *B*, in the matrix equation *AX = B.* A [`DenseMatrix_Float`](densematrix_float.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
 
 The following code shows an example of how to create a dense matrix structure from an array of double-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](acceleratemutablebuffer/withunsafemutablebufferpointer(_:).md) to pass a pointer to your collection. The [`DenseMatrix_Float`](densematrix_float.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use.
 

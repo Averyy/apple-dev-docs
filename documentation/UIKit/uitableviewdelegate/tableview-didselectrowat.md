@@ -29,7 +29,7 @@ The delegate handles selections in this method. For instance, you can use this m
 ## Parameters
 
 - `tableView`: A table view informing the delegate about the new row selection.
-- `indexPath`: An index path locating the new selected row in  .
+- `indexPath`: An index path locating the new selected row in `tableView`.
 
 ## See Also
 

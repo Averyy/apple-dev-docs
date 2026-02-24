@@ -20,7 +20,7 @@ A customizable [`TVPlayer`](tvplayer.md) object.
 
 ## Parameters
 
-- `appController`: The   object that contains the player object.
+- `appController`: The [`TVApplicationController`](tvapplicationcontroller.md) object that contains the player object.
 
 ## See Also
 

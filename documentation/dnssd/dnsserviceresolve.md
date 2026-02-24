@@ -24,12 +24,12 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any su
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns  , and the resolve operation will run indefinitely until the client terminates it by passing this DNSServiceRef to  .
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the resolve operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
 - `flags`: Specifying kDNSServiceFlagsForceMulticast will cause query to be performed with a link-local mDNS query, even if the name is an apparently non-local name (i.e. a name not ending in “.local.”)
-- `interfaceIndex`: The interface on which to resolve the service. If this resolve call is as a result of a currently active   operation, then the interfaceIndex should be the index reported in the DNSServiceBrowseReply callback. If this resolve call is using information previously saved (e.g. in a preference file) for later use, then use interfaceIndex 0, because the desired service may now be reachable via a different physical interface. See “Constants for specifying an interface index” for more details.
-- `name`: The name of the service instance to be resolved, as reported to the   callback.
-- `regtype`: The type of the service instance to be resolved, as reported to the   callback.
-- `domain`: The domain of the service instance to be resolved, as reported to the   callback.
+- `interfaceIndex`: The interface on which to resolve the service. If this resolve call is as a result of a currently active [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](dnsservicebrowse(_:_:_:_:_:_:_:).md) operation, then the interfaceIndex should be the index reported in the DNSServiceBrowseReply callback. If this resolve call is using information previously saved (e.g. in a preference file) for later use, then use interfaceIndex 0, because the desired service may now be reachable via a different physical interface. See “Constants for specifying an interface index” for more details.
+- `name`: The name of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
+- `regtype`: The type of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
+- `domain`: The domain of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
 - `callBack`: The function to be called when a result is found, or if the call asynchronously fails.
 - `context`: An application context pointer which is passed to the callback function (may be NULL).
 

@@ -28,7 +28,7 @@ You use this interface to create persistent stores that load and save data incre
 
 ###### Methods to Override
 
-In a subclass of `NSIncrementalStore`, you  override the following methods to provide behavior appropriate for your store:
+In a subclass of `NSIncrementalStore`, you *must* override the following methods to provide behavior appropriate for your store:
 
 - [`loadMetadata()`](nsincrementalstore/loadmetadata().md)
 - [`execute(_:with:)`](nsincrementalstore/execute(_:with:).md)

@@ -27,9 +27,9 @@ convenience init?(type convolutionType: BNNS.ConvolutionType, input: BNNSNDArray
 ## Parameters
 
 - `convolutionType`: An enumeration that specifies the convolution type.
-- `input`: The descriptor of the input. The data type of the input must be  .
-- `weights`: The descriptor of the weights. The data type of the weights must be  ,  ,  , or  .
-- `output`: The descriptor of the output. The data type of the output must be  .
+- `input`: The descriptor of the input. The data type of the input must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
+- `weights`: The descriptor of the weights. The data type of the weights must be [`BNNSDataLayoutConvolutionWeightsOIHW`](bnnsdatalayoutconvolutionweightsoihw.md), [`BNNSDataLayoutConvolutionWeightsOIHrWr`](bnnsdatalayoutconvolutionweightsoihrwr.md), [`BNNSDataLayoutConvolutionWeightsIOHrWr`](bnnsdatalayoutconvolutionweightsiohrwr.md), or [`BNNSDataLayoutConvolutionWeightsOIHW_Pack32`](bnnsdatalayoutconvolutionweightsoihw_pack32.md).
+- `output`: The descriptor of the output. The data type of the output must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
 - `bias`: The descriptor of the bias.
 - `padding`: The padding, which is the number of virtual zeros added to the sides of each channel.
 - `activation`: The activation function that the layer applies to the output.

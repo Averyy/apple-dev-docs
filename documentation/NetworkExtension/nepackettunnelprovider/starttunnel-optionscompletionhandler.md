@@ -32,7 +32,7 @@ The domain and code of the [`NSError`](https://developer.apple.com/documentation
 ## Parameters
 
 - `options`: A dictionary passed by the app that requested that the tunnel be started. If the starting app did not specify a dictionary of options then this parameter will be nil. If the tunnel was started via Connect On Demand, then this parameter will be nil.
-- `completionHandler`: A block that must be executed when the tunnel is fully established, or when the tunnel cannot be started due to an error. If the tunnel was successfully established, then the error parameter must be set to nil. If an error occurred, the error parameter passed to this block must be set to a non-nil   object.
+- `completionHandler`: A block that must be executed when the tunnel is fully established, or when the tunnel cannot be started due to an error. If the tunnel was successfully established, then the error parameter must be set to nil. If an error occurred, the error parameter passed to this block must be set to a non-nil [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object.
 
 ## See Also
 

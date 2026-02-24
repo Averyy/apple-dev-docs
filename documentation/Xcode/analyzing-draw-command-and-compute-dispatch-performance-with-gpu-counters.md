@@ -14,6 +14,12 @@ The Performance Statistics viewer displays counters to help you understand the a
 
 Control-click a column header to show and hide counter value columns for median, maximum, and total values. You can view the following columns:
 
+- **Draw**: The statistics for a command. For percentages like Vertex Stage Time, it measures the percentage of samples that the vertex stage uses for that draw.
+- **Encoder**: The statistics for a pass. For percentages like Vertex Stage Time, it measures the percentage of samples that the vertex stage uses for all draws in the render pass.
+- **Median**: The median counter value across all passes in the GPU trace.
+- **Max**: The maximum counter value across all passes in the GPU trace.
+- **Total**: The total of counter values for all passes in the GPU trace.
+
 ##### Check Counters Data for Anomalies
 
 Move the pointer over a counter to reveal its description.

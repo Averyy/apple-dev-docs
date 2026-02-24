@@ -33,7 +33,7 @@ Use these options to configure suspending/resuming render command encoders, whic
 ## Parameters
 
 - `descriptor`: Descriptor for the render pass.
-- `options`:   instance that provide render pass options.
+- `options`: [`MTL4RenderEncoderOptions`](mtl4renderencoderoptions.md) instance that provide render pass options.
 
 
 ---

@@ -23,7 +23,7 @@ The location of the scroll update in the specified view.
 
 ## Parameters
 
-- `view`: The view in which to find the scroll update location. Pass   to get the location in the window’s coordinate system.
+- `view`: The view in which to find the scroll update location. Pass `nil` to get the location in the window’s coordinate system.
 
 ## See Also
 

@@ -28,7 +28,7 @@ func vImageCVImageFormat_CopyConversionMatrix(_ format: vImageCVImageFormat, _ m
 
 ## Parameters
 
-- `format`: The destination   instance.
+- `format`: The destination [`vImageCVImageFormat`](vimagecvimageformat.md) instance.
 - `matrix`: The matrix that the function copies to the destination image format.
 - `inType`: The type of the matrix.
 

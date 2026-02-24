@@ -27,7 +27,7 @@ An initialized [`UISwitch`](uiswitch.md) object.
 
 ## Parameters
 
-- `frame`: A rectangle defining the frame of the   object. The size components of this rectangle are ignored.
+- `frame`: A rectangle defining the frame of the [`UISwitch`](uiswitch.md) object. The size components of this rectangle are ignored.
 
 ## See Also
 

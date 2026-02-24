@@ -20,7 +20,7 @@ init(style: UISplitViewController.Style)
 
 ## Parameters
 
-- `style`: The split view controller’s style, which describes how many columns the split view controller displays. You can pass in any of the   values except  .
+- `style`: The split view controller’s style, which describes how many columns the split view controller displays. You can pass in any of the [`UISplitViewController.Style`](uisplitviewcontroller/style-swift.enum.md) values except [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md).
 
 ## See Also
 

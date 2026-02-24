@@ -46,7 +46,7 @@ let artworkItem = AVMetadataItem(propertiesOf: templateItem) { request in
 
 ## Parameters
 
-- `metadataItem`: The metadata item that provides the  ,  , and other property values that you want the newly created metadata item to share. The system ignores the value of this template metadata item.
+- `metadataItem`: The metadata item that provides the [`identifier`](avmetadataitem/identifier.md), [`extendedLanguageTag`](avmetadataitem/extendedlanguagetag.md), and other property values that you want the newly created metadata item to share. The system ignores the value of this template metadata item.
 - `handler`: A callback the system invokes to load the value for the metadata item.
 
 ## See Also

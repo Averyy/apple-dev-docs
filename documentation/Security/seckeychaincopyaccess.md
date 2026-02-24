@@ -20,7 +20,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `keychain`: A reference to the keychain from which to copy the access object. Pass   to specify the default keychain.
+- `keychain`: A reference to the keychain from which to copy the access object. Pass `NULL` to specify the default keychain.
 - `access`: A pointer to an access object. On return, this points to the access object of the specified keychain.
 
 

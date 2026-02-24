@@ -18,7 +18,7 @@ class NSDiffableDataSourceSnapshotReference
 
 > ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md) instead of `NSDiffableDataSourceSnapshotReference`.
 
-Diffable data sources use  to provide data for collection views and table views. Through a snapshot, you set up the initial state of the data that displays in a view, and later update that data.
+Diffable data sources use *snapshots* to provide data for collection views and table views. Through a snapshot, you set up the initial state of the data that displays in a view, and later update that data.
 
 The data in a snapshot is made up of the sections and items you want to display, in the specific order you want to display them. You configure what to display by adding, deleting, or moving the sections and items.
 
@@ -35,6 +35,34 @@ You can create and configure a snapshot in one of these ways:
 - Get the current snapshot by calling the diffable data source’s [`snapshot()`](nscollectionviewdiffabledatasourcereference/snapshot().md) method, then modify that snapshot to reflect the new state of the data that you want to display.
 
 For example, the following code creates an empty snapshot, and populates it with a single section with three items. Then, it applies the snapshot, animating the UI updates between the previous state and the new state represented in the snapshot.
+
+**Swift**:
+
+```swift
+// Create a snapshot.
+var snapshot = NSDiffableDataSourceSnapshot<Int, UUID>()        
+
+// Populate the snapshot.
+snapshot.appendSections([0])
+snapshot.appendItems([UUID(), UUID(), UUID()])
+
+// Apply the snapshot.
+dataSource.apply(snapshot, animatingDifferences: true)
+```
+
+**Objective-C**:
+
+```objc
+// Create a snapshot.
+NSDiffableDataSourceSnapshot<NSNumber *, NSUUID *> *snapshot = [[NSDiffableDataSourceSnapshot alloc] init];
+
+// Populate the snapshot.
+[snapshot appendSectionsWithIdentifiers:@[@0]];
+[snapshot appendItemsWithIdentifiers:@[[NSUUID UUID], [NSUUID UUID], [NSUUID UUID]]];
+
+// Apply the snapshot.
+[self.dataSource applySnapshot:snapshot animatingDifferences:YES];
+```
 
 For more information, see the diffable data source types:
 

@@ -22,7 +22,7 @@ Changes to the width of an object are animatable.
 
 ## Parameters
 
-- `width`: The new width of the object. Specifying a value of   causes the item to have no width.
+- `width`: The new width of the object. Specifying a value of `0.0` causes the item to have no width.
 
 ## See Also
 

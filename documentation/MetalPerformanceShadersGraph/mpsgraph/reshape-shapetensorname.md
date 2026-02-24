@@ -30,7 +30,7 @@ This operation reshapes the input tensor to the target shape. The shape tensor m
 ## Parameters
 
 - `tensor`: The tensor to be reshaped.
-- `shapeTensor`: A 1D tensor of type   or  , that contains the target shape values.
+- `shapeTensor`: A 1D tensor of type `MPSDataTypeInt32` or `MPSDataTypeInt64`, that contains the target shape values.
 - `name`: The name for the operation.
 
 

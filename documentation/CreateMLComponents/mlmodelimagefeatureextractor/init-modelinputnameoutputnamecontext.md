@@ -22,8 +22,8 @@ init(model: MLModel, inputName: String = "image", outputName: String, context: C
 ## Parameters
 
 - `model`: The CoreML model which will be used for feature extraction.
-- `inputName`: The name of the input which the   expects.
-- `outputName`: The name of the output from the  .
+- `inputName`: The name of the input which the `model` expects.
+- `outputName`: The name of the output from the `model`.
 - `context`: A Core Image context.
 
 ## See Also

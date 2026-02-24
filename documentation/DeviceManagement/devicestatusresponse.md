@@ -18,6 +18,10 @@ object DeviceStatusResponse
 ### Dictionaries
 - [object DeviceStatusResponse.Devices](devicestatusresponse/devices-data.dictionary.md)
 
+## Properties
+
+- `devices` (DeviceStatusResponse.Devices)
+
 ## See Also
 
 - [object DeviceStatusResponse.Devices](devicestatusresponse/devices-data.dictionary.md)

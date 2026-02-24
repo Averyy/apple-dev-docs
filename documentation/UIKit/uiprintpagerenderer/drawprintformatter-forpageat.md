@@ -27,8 +27,8 @@ The system configures this method for drawing to the current graphics context ac
 
 ## Parameters
 
-- `printFormatter`: A   object associated with the page at  .
-- `pageIndex`: The index of the page for   to draw on.
+- `printFormatter`: A [`UIPrintFormatter`](uiprintformatter.md) object associated with the page at `pageIndex`.
+- `pageIndex`: The index of the page for `printFormatter` to draw on.
 
 ## See Also
 

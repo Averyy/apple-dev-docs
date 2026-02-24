@@ -30,7 +30,7 @@ The system calls this method after all of the inbound data for a flow of network
 
 ## Parameters
 
-- `flow`: An   object containing information about the flow.
+- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the flow.
 
 ## See Also
 

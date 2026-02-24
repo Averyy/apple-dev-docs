@@ -23,6 +23,9 @@ typealias AUParameterObserver = (AUParameterAddress, AUValue) -> Void
 
 The block takes the following parameters:
 
+- **address**: The address of the parameter.
+- **value**: The current value of the parameter.
+
 ## See Also
 
 - [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterobserver:).md)

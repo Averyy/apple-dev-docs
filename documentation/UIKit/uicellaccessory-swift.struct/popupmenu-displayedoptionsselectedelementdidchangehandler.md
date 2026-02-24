@@ -25,8 +25,8 @@ A configured popup menu cell accessory that appears as a pair of chevrons that p
 ## Parameters
 
 - `menu`: The menu to display when a user taps the popup menu accessory.
-- `displayed`: The cell-editing states that the popup menu accessory appears in. This parameter has a default value of  .
-- `options`: Configuration options for the popup menu accessory. See   for possible configuration options.
+- `displayed`: The cell-editing states that the popup menu accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
+- `options`: Configuration options for the popup menu accessory. See [`UICellAccessory.PopUpMenuOptions`](uicellaccessory-swift.struct/popupmenuoptions.md) for possible configuration options.
 - `selectedElementDidChangeHandler`: An optional closure that the system calls when a user selects an element in the menu.
 
 ## See Also

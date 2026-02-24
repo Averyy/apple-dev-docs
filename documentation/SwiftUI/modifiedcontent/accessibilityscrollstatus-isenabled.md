@@ -45,7 +45,7 @@ By default, VoiceOver announces “Page X of Y” while scrolling.
 ## Parameters
 
 - `status`: The current status of the scroll view.
-- `isEnabled`: If true the accessibility scroll status is applied;   otherwise the accessibility scroll status is unchanged.
+- `isEnabled`: If true the accessibility scroll status is applied; otherwise the accessibility scroll status is unchanged.
 
 
 ---

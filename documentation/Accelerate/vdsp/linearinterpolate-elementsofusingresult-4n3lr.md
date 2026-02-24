@@ -72,7 +72,7 @@ The following figure visualizes the elements in `result` using hyperbolic tangen
 ## Parameters
 
 - `vector`: An array that contains the values to interpolate.
-- `controlVector`: An array that defines the interpolation: integer parts are indices into   and fractional parts are interpolation constants.
+- `controlVector`: An array that defines the interpolation: integer parts are indices into `vector` and fractional parts are interpolation constants.
 - `result`: An array that receives the result of the calculation.
 
 ## See Also

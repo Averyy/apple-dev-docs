@@ -21,8 +21,8 @@ init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)
 
 ## Parameters
 
-- `detectionOptions`: Instance of   that allows clients to customize the behavior of   beyond its default settings.
-- `reportResults`: Enables the   sequence to report the VAD model’s results (and any relevant errors) back to clients. The default behavior is that   does not report results or errors back to the client and merely enables VAD as a power optimization.
+- `detectionOptions`: Instance of [`SpeechDetector.DetectionOptions`](speechdetector/detectionoptions.md) that allows clients to customize the behavior of [`SpeechDetector`](speechdetector.md) beyond its default settings.
+- `reportResults`: Enables the `SpeechDetector/results` sequence to report the VAD model’s results (and any relevant errors) back to clients. The default behavior is that [`SpeechDetector`](speechdetector.md) does not report results or errors back to the client and merely enables VAD as a power optimization.
 
 ## See Also
 

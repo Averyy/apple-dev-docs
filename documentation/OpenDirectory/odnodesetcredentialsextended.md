@@ -28,12 +28,12 @@ This function sets credentials for all references to the node. If you only want 
 ## Parameters
 
 - `node`: The node.
-- `recordType`: The record type that uses the credentials. Can be  . The default value is  .
+- `recordType`: The record type that uses the credentials. Can be `NULL`. The default value is `kODRecordTypeUsers`.
 - `authType`: The type of authentication to use.
-- `authItems`: An array of   or   objects to be used in the authentication process.
-- `outAuthItems`: An array of   objects returned from the authentication process, if any are returned;   otherwise.
-- `outContext`: The proper context if the authentication attempt requires a context;   otherwise. If not  , then more calls must be made with the Context to continue the authentication.
-- `error`: An error reference for error details. Can be  .
+- `authItems`: An array of `CFString` or `CFData` objects to be used in the authentication process.
+- `outAuthItems`: An array of `CFData` objects returned from the authentication process, if any are returned; `NULL` otherwise.
+- `outContext`: The proper context if the authentication attempt requires a context; `NULL` otherwise. If not `NULL`, then more calls must be made with the Context to continue the authentication.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

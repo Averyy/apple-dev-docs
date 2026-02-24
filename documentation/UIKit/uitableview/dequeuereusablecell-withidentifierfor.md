@@ -37,7 +37,7 @@ When creating new cells from your storyboard or nib file, this method loads the 
 
 ## Parameters
 
-- `identifier`: A string identifying the cell object to be reused. This parameter must not be  .
+- `identifier`: A string identifying the cell object to be reused. This parameter must not be `nil`.
 - `indexPath`: The index path specifying the location of the cell. Always specify the index path provided to you by your data source object. This method uses the index path to perform additional configuration based on the cell’s position in the table view.
 
 ## See Also

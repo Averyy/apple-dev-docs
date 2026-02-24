@@ -20,7 +20,7 @@ func saveOptions(_ saveOptions: IKSaveOptions!, shouldShowUTType utType: String!
 
 ## Parameters
 
-- `saveOptions`: The   instance that called the delegate.
+- `saveOptions`: The `IKSaveOptions` instance that called the delegate.
 - `utType`: The uniform type identifier to test.
 
 

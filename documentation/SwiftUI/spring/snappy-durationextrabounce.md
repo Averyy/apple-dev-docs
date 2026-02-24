@@ -22,8 +22,8 @@ static func snappy(duration: TimeInterval = 0.5, extraBounce: Double = 0.0) -> S
 
 ## Parameters
 
-- `duration`: The perceptual duration, which defines the pace of the   spring. This is approximately equal to the settling duration, but   for very bouncy springs, will be the duration of the period of   oscillation for the spring.
-- `extraBounce`: How much additional bounciness should be added to the   base bounce of 0.15.
+- `duration`: The perceptual duration, which defines the pace of the spring. This is approximately equal to the settling duration, but for very bouncy springs, will be the duration of the period of oscillation for the spring.
+- `extraBounce`: How much additional bounciness should be added to the base bounce of 0.15.
 
 ## See Also
 

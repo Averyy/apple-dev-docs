@@ -22,7 +22,7 @@ static func catmullRom(alpha: CGFloat) -> InterpolationMethod
 
 ## Parameters
 
-- `alpha`: A parameter for the Catmull-Rom spline.   Use 0 for a uniform spline, 0.5 for the centripetal spline,   and 1.0 for the chordal spline.
+- `alpha`: A parameter for the Catmull-Rom spline. Use 0 for a uniform spline, 0.5 for the centripetal spline, and 1.0 for the chordal spline.
 
 
 ---

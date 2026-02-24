@@ -26,7 +26,8 @@ The [`matchData`](gkturnbasedmatch/matchdata.md) property is `nil` until you fet
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - ***matchData***: The match data you pass to `GKTurnBasedMatch` methods that GameKit stores in Game Center, or `nil` if an error occurs.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

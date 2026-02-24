@@ -29,7 +29,7 @@ If you don’t set a value with this method, the default content type is [`plain
 
 ## Parameters
 
-- `value`: The accessibility content type from the available    options.
+- `value`: The accessibility content type from the available [`AccessibilityTextContentType`](accessibilitytextcontenttype.md) options.
 
 ## See Also
 

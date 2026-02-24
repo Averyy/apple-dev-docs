@@ -29,7 +29,7 @@ You should never call this method, but you might override it. The default implem
 ## Parameters
 
 - `rectArray`: The array of rectangles to fill.
-- `rectCount`: The number of rectangles in  .
+- `rectCount`: The number of rectangles in `rectArray`.
 - `charRange`: The range of characters whose background rectangles are filled.
 - `color`: The fill color.
 

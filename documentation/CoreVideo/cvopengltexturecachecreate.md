@@ -20,11 +20,11 @@ Returns [`kCVReturnSuccess`](kcvreturnsuccess.md) on success.
 
 ## Parameters
 
-- `allocator`: The   to use for allocating the cache.  May be NULL.
-- `cacheAttributes`: A dictionary specifying options for the cache’s behavior, or   to use default options. For applicable keys and values, see  .
+- `allocator`: The `CFAllocatorRef` to use for allocating the cache.  May be NULL.
+- `cacheAttributes`: A dictionary specifying options for the cache’s behavior, or `NULL` to use default options. For applicable keys and values, see [`Cache Attributes`](cvopengltexturecache-cache-attributes.md).
 - `cglContext`: The OpenGL context into which the texture objects will be created.
 - `cglPixelFormat`: The OpenGL pixel format object used to create the passed in OpenGL context.
-- `textureAttributes`: A   containing the attributes to be used for creating the   objects.  May be  .
+- `textureAttributes`: A `CFDictionaryRef` containing the attributes to be used for creating the `CVOpenGLTexture` objects.  May be `NULL`.
 - `cacheOut`: Upon return, contains the newly created texture cache.
 
 ## See Also

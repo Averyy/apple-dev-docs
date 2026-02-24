@@ -24,10 +24,10 @@ This method sets the [`image`](nscombobutton/image.md) property to `nil`.
 
 ## Parameters
 
-- `title`: The localized string to display in the button. Use the inherited   property to set the text alignment for the string.
+- `title`: The localized string to display in the button. Use the inherited [`alignment`](nscontrol/alignment.md) property to set the text alignment for the string.
 - `menu`: The menu to display when someone chooses an alternate action.
 - `target`: The object that receives the default action message when someone clicks the button.
-- `action`: The action message to send to the   object.
+- `action`: The action message to send to the `target` object.
 
 ## See Also
 

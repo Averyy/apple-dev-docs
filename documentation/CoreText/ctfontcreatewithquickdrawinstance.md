@@ -24,10 +24,10 @@ This function is provided for compatibility support between Core Text and client
 
 ## Parameters
 
-- `name`: The QuickDraw font name. If zero length,   must be specified.
-- `identifier`: The QuickDraw font identifier. Can be  , but if so,   must be specified.
+- `name`: The QuickDraw font name. If zero length, `identifier` must be specified.
+- `identifier`: The QuickDraw font identifier. Can be `0`, but if so, `name` must be specified.
 - `style`: The QuickDraw font style.
-- `size`: The point size for the font reference. If   is specified, the default size of 12.0 is used.
+- `size`: The point size for the font reference. If `0.0` is specified, the default size of 12.0 is used.
 
 ## See Also
 

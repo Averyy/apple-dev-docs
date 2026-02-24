@@ -20,8 +20,8 @@ When an [`NSBitmapImageRep`](nsbitmapimagerep.md) is created, the instance store
 
 ## Parameters
 
-- `compression`: An   constant that identifies one of the supported compression types as described in  .
-- `factor`: A floating point value that is specific to the compression type. Many types of compression don’t support varying degrees of compression and thus ignore  . JPEG compression allows a compression factor ranging from 0.0 to 1.0, with 0.0 being the lowest and 1.0 being the highest.
+- `compression`: An `enum` constant that identifies one of the supported compression types as described in [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md).
+- `factor`: A floating point value that is specific to the compression type. Many types of compression don’t support varying degrees of compression and thus ignore `factor`. JPEG compression allows a compression factor ranging from 0.0 to 1.0, with 0.0 being the lowest and 1.0 being the highest.
 
 ## See Also
 

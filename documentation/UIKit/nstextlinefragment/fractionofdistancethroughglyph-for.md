@@ -24,7 +24,7 @@ The fraction of distance from the upstream edge.
 
 ## Parameters
 
-- `point`: A   that represents the point inside the line fragment.
+- `point`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) that represents the point inside the line fragment.
 
 ## See Also
 

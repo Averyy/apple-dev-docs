@@ -32,9 +32,9 @@ If your game isn’t running or is in the background on recipient devices, a not
 
 ## Parameters
 
-- `key`: The identifier for looking up the translated cancel message in the default   file. If you use a formatted string with specifiers, provide the arguments.
+- `key`: The identifier for looking up the translated cancel message in the default `Localized.strings` file. If you use a formatted string with specifiers, provide the arguments.
 - `arguments`: A list of arguments to substitute into the localized string if it’s formatted and contains specifiers.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if you previously cancel this exchange request.
 
 
 ---

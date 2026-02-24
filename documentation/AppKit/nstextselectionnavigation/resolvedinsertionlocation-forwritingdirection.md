@@ -21,7 +21,7 @@ Returns an `NSTextLocation` when the `textSelection.isLogical = false AND` `seco
 ## Parameters
 
 - `textSelection`: The text selection.
-- `writingDirection`: The   direction.
+- `writingDirection`: The [`NSTextSelectionNavigation.WritingDirection`](nstextselectionnavigation/writingdirection.md) direction.
 
 
 ---

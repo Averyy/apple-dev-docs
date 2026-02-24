@@ -9,6 +9,10 @@ An array of strings that indicates the wireless technologies AccessorySetupKit u
 - iOS 18.0+
 - iPadOS 18.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [NSAccessorySetupBluetoothCompanyIdentifiers](information-property-list/nsaccessorysetupbluetoothcompanyidentifiers.md)

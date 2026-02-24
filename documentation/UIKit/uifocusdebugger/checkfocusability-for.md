@@ -26,6 +26,18 @@ An object the focus debugger uses to store the results that it will format for d
 
 Call this method from the `lldb` debugger using the following command. In the example, `item` corresponds to an object that adopts the [`UIFocusItem`](uifocusitem.md) protocol.
 
+**Swift**:
+
+```swift
+po UIFocusDebugger.checkFocusability(for: item)
+```
+
+**Objective-C**:
+
+```objc
+po [UIFocusDebugger checkFocusabilityForItem: item]
+```
+
 The method returns the focus-related information, including known issues.
 
 ## Parameters

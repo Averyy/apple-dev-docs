@@ -99,7 +99,7 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
   Requests that the containing list row have its hover effect disabled.
 ### Refreshing a list’s content
 - [func refreshable(action: () async -> Void) -> some View](view/refreshable(action:).md)
-  Marks this view as refreshable.
+  Adds an asynchronous handler that can update the data the view displays when a person initiates a request, such as by pulling to refresh.
 - [var refresh: RefreshAction?](environmentvalues/refresh.md)
   A refresh action stored in a view’s environment.
 - [struct RefreshAction](refreshaction.md)

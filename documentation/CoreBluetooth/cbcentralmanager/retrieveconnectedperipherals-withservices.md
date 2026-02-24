@@ -30,7 +30,7 @@ The list of connected peripherals can include those that other apps have connect
 
 ## Parameters
 
-- `serviceUUIDs`: A list of service UUIDs, represented by   objects.
+- `serviceUUIDs`: A list of service UUIDs, represented by [`CBUUID`](cbuuid.md) objects.
 
 ## See Also
 

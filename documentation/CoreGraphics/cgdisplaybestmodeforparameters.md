@@ -32,7 +32,7 @@ This deprecated function selects a display mode closest to the specified paramet
 - `bitsPerPixel`: Optimal display depth in bits per pixel. Note that this value is not the same as pixel depth, which is the number of bits per channel or component.
 - `width`: Optimal display width in pixel units.
 - `height`: Optimal display height in pixel units.
-- `exactMatch`: A pointer to a Boolean variable. On return, its value is   if an exact match in display depth, width, and height is found; otherwise,  . If this information is not needed, pass  .
+- `exactMatch`: A pointer to a Boolean variable. On return, its value is `true` if an exact match in display depth, width, and height is found; otherwise, `false`. If this information is not needed, pass `NULL`.
 
 ## See Also
 

@@ -8,7 +8,7 @@ Share your documentation directly with Xcode users or host it on a web server.
 
 As soon as you create a project in Xcode, DocC is ready to generate structured documentation for the symbols in your project. Whether you only have documentation comments in your source files, or you craft a full learning experience that includes articles and tutorials, Xcode provides a convenient way to share the documentation in your project with other developers.
 
-To share your documentation, you create a , a self-contained bundle that has everything you need, including:
+To share your documentation, you create a *documentation archive*, a self-contained bundle that has everything you need, including:
 
 - Compiled documentation from in-source comments, articles, tutorials, and resources
 - A single-page web app that renders the documentation

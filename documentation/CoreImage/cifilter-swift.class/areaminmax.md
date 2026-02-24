@@ -29,6 +29,9 @@ This filter returns the maximum and minimum color components in the region defin
 
 The area min max filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+
 The following code creates a filter that results in a 2 x 1 image where the minimum components are in the left pixel and the maximum components are in the right pixel.
 
 ```swift

@@ -21,7 +21,7 @@ After the launch sequence completes, the system displays your app’s user inter
 
 ##### Prepare Your App for Prewarming
 
-In iOS 15 and later, the system may, depending on device conditions,  your app — launch nonrunning application processes to reduce the amount of time the user waits before the app is usable. Prewarming executes an app’s launch sequence up until, but not including, when `main()` calls [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md). This provides the system with an opportunity to build and cache any low-level structures it requires in anticipation of a full launch.
+In iOS 15 and later, the system may, depending on device conditions, *prewarm* your app — launch nonrunning application processes to reduce the amount of time the user waits before the app is usable. Prewarming executes an app’s launch sequence up until, but not including, when `main()` calls [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md). This provides the system with an opportunity to build and cache any low-level structures it requires in anticipation of a full launch.
 
 > **Note**:  For more information about the low-level structures the system requires during app launch, see the WWDC session video [`App Startup Time: Past, Present, and Future`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2017/413).
 

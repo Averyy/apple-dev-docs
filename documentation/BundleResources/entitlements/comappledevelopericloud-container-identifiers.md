@@ -13,6 +13,10 @@ The container identifiers for the iCloud production environment.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this entitlement to your app, enable the iCloud capability in Xcode.

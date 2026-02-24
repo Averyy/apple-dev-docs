@@ -16,7 +16,7 @@ When you update source code to add a new feature or to fix a bug, keep all the c
 
 Before you begin new work, choose a starting point for your branch. To see a list of existing branches and remote repositories, click the Repositories tab in the Source Control navigator, expand your repository, and expand the Branches and Remotes subfolders.
 
-By default, Xcode creates a branch named  when you create a new project with a Git repository. Control-click the branch you want to use as your starting point, choose “Branch from []”, and then enter a name for your branch that identifies the work you’re doing. When you click Create, Xcode creates the branch and makes it current, so any changes you commit and push are part of that branch.
+By default, Xcode creates a branch named *main* when you create a new project with a Git repository. Control-click the branch you want to use as your starting point, choose “Branch from [*branch name*]”, and then enter a name for your branch that identifies the work you’re doing. When you click Create, Xcode creates the branch and makes it current, so any changes you commit and push are part of that branch.
 
 Continue making code changes, and periodically test, stage, commit, and push your changes to the branch. When your new feature or bug fix is complete and you’re ready to include your work in the main branch, review and merge it. For more information, see [`Combining code changes in a source control repository`](combining-code-changes-in-a-source-control-repository.md).
 
@@ -40,7 +40,7 @@ When you no longer need the stashed changes, Control-click the stashed change it
 
 Add tags to commits that represent a significant milestone, like a release or large feature addition, to make them easy to find in the source control history.
 
-To find a branch or commit to tag, click the Repositories tab in the Source Control navigator, expand your repository, and then expand the Branches folder. Control-click either a branch or a branch commit, and choose Tag “[]” or Tag “[]” from the pop-up menu.
+To find a branch or commit to tag, click the Repositories tab in the Source Control navigator, expand your repository, and then expand the Branches folder. Control-click either a branch or a branch commit, and choose Tag “[*branch name*]” or Tag “[*commit-hash*]” from the pop-up menu.
 
 ![A screenshot of the Xcode dialog for creating a new tag from a commit.](https://docs-assets.developer.apple.com/published/b14ab3219fda7831d8731900b5b4b5fb/organizing-your-code-changes-with-source-control-3%402x.png)
 

@@ -19,6 +19,10 @@ The layout of a sample-to-chunk table entry is as follows.
 
 You define a sample-to-chunk table entry by specifying the following data elements.
 
+- **First chunk**: The first chunk number using this table entry.
+- **Samples per chunk**: The number of samples in each chunk.
+- **Sample description ID**: The identification number associated with the sample description for the sample. For details on sample description atoms, see [`Sample description atom ('stsd')`](sample_description_atom.md).
+
 An example of a sample-to-chunk table is as follows.
 
 | First chunk | Samples per chunk | Sample description ID |

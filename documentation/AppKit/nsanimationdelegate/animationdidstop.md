@@ -21,7 +21,7 @@ An `NSAnimation` object stops running when it receives a [`stop()`](nsanimation/
 
 ## Parameters
 
-- `animation`: The   instance that was stopped.
+- `animation`: The `NSAnimation` instance that was stopped.
 
 ## See Also
 

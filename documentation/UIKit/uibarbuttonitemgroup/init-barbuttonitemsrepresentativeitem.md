@@ -31,7 +31,7 @@ When you use this initializer to create a group for the shortcuts bar, use the r
 ## Parameters
 
 - `barButtonItems`: The bar button items to display on the bar. Typically, the items in a group are related to each other in some way, although that need not be the case. You must not specify an empty array.
-- `representativeItem`: A bar button item to display when there isn’t enough room to display the items in  . The object you specify must be distinct from the objects in the   parameter. It’s a programmer error to specify an object that’s also in the array passed to the   parameter. You may specify   for this parameter.
+- `representativeItem`: A bar button item to display when there isn’t enough room to display the items in `barButtonItems`. The object you specify must be distinct from the objects in the `barButtonItems` parameter. It’s a programmer error to specify an object that’s also in the array passed to the `barButtonItems` parameter. You may specify `nil` for this parameter.
 
 ## See Also
 

@@ -20,11 +20,11 @@ Use this initializer to create an activity classifier with an [`MLActivityClassi
 
 ## Parameters
 
-- `trainingData`: An   instance.
+- `trainingData`: An [`MLActivityClassifier.DataSource`](mlactivityclassifier/datasource.md) instance.
 - `featureColumns`: The names of the columns in an annotation file that contain sensor data.
-- `labelColumn`: The initializer ignores this parameter if   uses   .
-- `recordingFileColumn`: The initializer ignores this parameter if   uses   .
-- `parameters`: An   instance you use to configure the   model for the training session.
+- `labelColumn`: The name of the column in an annotation file that contains the activity labels if `trainingData` uses [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md). The initializer ignores this parameter if `trainingData` uses [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
+- `recordingFileColumn`: The name of the column in an annotation file that contains the data filenames if `trainingData` uses [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md). The initializer ignores this parameter if `trainingData` uses [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
+- `parameters`: An [`MLActivityClassifier.ModelParameters`](mlactivityclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

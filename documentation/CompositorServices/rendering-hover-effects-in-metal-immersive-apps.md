@@ -11,7 +11,7 @@ Change the appearance of a rendered onscreen element when a player gazes at it.
 
 #### Overview
 
-In visionOS, both SwiftUI views and RealityKit entities can take advantage of , which change the appearance of a rendered onscreen element when a player gazes at it or highlights it using assistive technologies. In visionOS 26, fully immersive apps that render their own content using Metal can also use hover effects.
+In visionOS, both SwiftUI views and RealityKit entities can take advantage of *hover effects*, which change the appearance of a rendered onscreen element when a player gazes at it or highlights it using assistive technologies. In visionOS 26, fully immersive apps that render their own content using Metal can also use hover effects.
 
 This sample code project demonstrates how to pass in uniforms and attributes to your Metal shaders so your app can implement system-provided hover effects in a privacy-preserving way. On launch, the app opens to an immersive virtual space with a large shape that shatters into several pieces. If a player looks at one of the pieces, it highlights, much like a RealityKit entity with a [`HoverEffectComponent`](https://developer.apple.com/documentation/RealityKit/HoverEffectComponent) does. If the player taps while gazing at the various pieces, they return to their original position, reassembling the original shape.
 
@@ -107,7 +107,7 @@ Then, in the trailing closure, it calls the `render(_:)` function.
 
 The `render(_:)` function creates a high-priority asynchronous task so that the rendering work doesn’t occur on the main thread. Then it creates a `RenderData` object, which is an [`Actor`](https://developer.apple.com/documentation/Swift/Actor) object that holds all of the app’s render-related objects. Using an `actor` ensures that all code affecting the rendering data runs in the same global concurrency thread pool.
 
-The function starts by setting up world tracking, loading assets, and implementing the render pipelines for its shaders. For more information about world tracking, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionOS/tracking-points-in-world-space).
+The function starts by setting up world tracking, loading assets, and implementing the render pipelines for its shaders. For more information about world tracking, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionos/tracking-points-in-world-space).
 
 ```swift
 Task(priority: .high) {
@@ -225,7 +225,7 @@ func setUpMSAA(drawable: LayerRenderer.Drawable,
 
 #### Add a Hover Effect to the Drawables Tracking Area
 
-The sample app then iterates through each of the drawable’s draw calls using `handleDrawCall(encoder:drawable:drawCall:id:)`. A critical step for gaze tracking happens here. When running in visionOS 26 or later, the system creates a tracking area for the drawable and then calls `addHoverEffect()` on it, passing the raw value from the tracking area into a , which is a constant value that the app passes to its shaders.
+The sample app then iterates through each of the drawable’s draw calls using `handleDrawCall(encoder:drawable:drawCall:id:)`. A critical step for gaze tracking happens here. When running in visionOS 26 or later, the system creates a tracking area for the drawable and then calls `addHoverEffect()` on it, passing the raw value from the tracking area into a *uniform*, which is a constant value that the app passes to its shaders.
 
 ```swift
 if #available(visionOS 26.0, *), appModel.withHover, drawCall.hasHover {

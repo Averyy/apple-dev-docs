@@ -30,7 +30,7 @@ Subclasses can override this method and use it to commit editing changes, resign
 
 ## Parameters
 
-- `animated`: If  , the disappearance of the view is being animated.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the disappearance of the view is being animated.
 
 ## See Also
 

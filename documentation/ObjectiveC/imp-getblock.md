@@ -26,7 +26,7 @@ The block called by `anImp`.
 
 ## Parameters
 
-- `anImp`: The   that calls this block.
+- `anImp`: The [`IMP`](imp.md) that calls this block.
 
 ## See Also
 

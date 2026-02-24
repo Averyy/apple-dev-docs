@@ -24,7 +24,7 @@ In its implementation of this method, the receiving `NSSlider` instance invokes 
 
 ## Parameters
 
-- `index`: The index of the tick mark for which to return the value. The minimum-value tick mark has an index of  .
+- `index`: The index of the tick mark for which to return the value. The minimum-value tick mark has an index of `0`.
 
 ## See Also
 

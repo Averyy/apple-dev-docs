@@ -35,7 +35,7 @@ The `textureSize` and `raysPerSample` parameters together control the fidelity a
 
 - `textureSize`: The size of texture image to generate.
 - `raysPerSample`: The number of rays to trace for each texel in the generated texture to test for potential occlusion. Higher numbers produce more accurate output at the cost of more processing time and memory usage.
-- `attenuationFactor`: A value between   and   that scales the strength of the AO effect. Higher values result in higher contrast when the AO texture is used for shading.
+- `attenuationFactor`: A value between `0.0` and `1.0` that scales the strength of the AO effect. Higher values result in higher contrast when the AO texture is used for shading.
 - `objectsToConsider`: An array of other objects in the scene that should affect static ambient lighting for the mesh.
 - `vertexAttributeName`: The name of the vertex attribute for storing generated texture coordinate data.
 - `materialPropertyName`: The name of the material for storing the generated texture image.

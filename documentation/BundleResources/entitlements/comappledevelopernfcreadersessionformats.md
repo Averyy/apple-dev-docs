@@ -9,6 +9,10 @@ The Near Field Communication data formats an app can read.
 - iOS 11.0+
 - iPadOS 11.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this entitlement to your app, enable the Near Field Communication Tag Reading capability in Xcode.

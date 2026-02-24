@@ -8,6 +8,10 @@ A Boolean value indicating whether the app runs only in the background.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [UIBackgroundModes](information-property-list/uibackgroundmodes.md)

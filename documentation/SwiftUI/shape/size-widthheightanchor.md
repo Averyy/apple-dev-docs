@@ -33,7 +33,7 @@ The `anchor` parameter determines how the shape will be positioned within the co
 
 - `width`: The width to constrain the shape to.
 - `height`: The height to constrain the shape to.
-- `anchor`: The anchor to use to determine how to position the new   shape.
+- `anchor`: The anchor to use to determine how to position the new shape.
 
 
 ---

@@ -22,7 +22,7 @@ func setSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 
 ## Parameters
 
-- `sampler`: An   instance to bind to the sampler argument table.
+- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance to bind to the sampler argument table.
 - `index`: The index in the sampler argument table to bind the sampler to.
 
 ## See Also

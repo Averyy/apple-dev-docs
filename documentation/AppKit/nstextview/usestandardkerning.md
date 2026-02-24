@@ -20,7 +20,7 @@ This data is taken from a font’s AFM file
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

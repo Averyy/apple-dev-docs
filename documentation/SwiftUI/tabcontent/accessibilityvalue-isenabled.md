@@ -42,7 +42,7 @@ var body: some View {
 ## Parameters
 
 - `valueDescription`: The accessibility value to apply.
-- `isEnabled`: If true the accessibility value is applied; otherwise   the accessibility value is unchanged.
+- `isEnabled`: If true the accessibility value is applied; otherwise the accessibility value is unchanged.
 
 
 ---

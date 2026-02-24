@@ -25,16 +25,16 @@ The `MPSGraphConvolution3DOpDescriptor` on autoreleasepool.
 
 ## Parameters
 
-- `strideInX`: See   property.
-- `strideInY`: See   property.
-- `strideInZ`: See   property.
-- `dilationRateInX`: See   property.
-- `dilationRateInY`: See   property.
-- `dilationRateInZ`: See   property.
-- `groups`: See   property.
-- `paddingStyle`: See   property.
-- `dataLayout`: See   property.
-- `weightsLayout`: See   property.
+- `strideInX`: See [`strideInX`](mpsgraphconvolution3dopdescriptor/strideinx.md) property.
+- `strideInY`: See [`strideInY`](mpsgraphconvolution3dopdescriptor/strideiny.md) property.
+- `strideInZ`: See [`strideInZ`](mpsgraphconvolution3dopdescriptor/strideinz.md) property.
+- `dilationRateInX`: See [`dilationRateInX`](mpsgraphconvolution3dopdescriptor/dilationrateinx.md) property.
+- `dilationRateInY`: See [`dilationRateInY`](mpsgraphconvolution3dopdescriptor/dilationrateiny.md) property.
+- `dilationRateInZ`: See [`dilationRateInZ`](mpsgraphconvolution3dopdescriptor/dilationrateinz.md) property.
+- `groups`: See [`groups`](mpsgraphconvolution3dopdescriptor/groups.md) property.
+- `paddingStyle`: See [`paddingStyle`](mpsgraphconvolution3dopdescriptor/paddingstyle.md) property.
+- `dataLayout`: See [`dataLayout`](mpsgraphconvolution3dopdescriptor/datalayout.md) property.
+- `weightsLayout`: See [`weightsLayout`](mpsgraphconvolution3dopdescriptor/weightslayout.md) property.
 
 
 ---

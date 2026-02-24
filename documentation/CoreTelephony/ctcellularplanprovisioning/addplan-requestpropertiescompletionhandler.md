@@ -28,8 +28,8 @@ The person may send your app to the background prior to completing eSIM installa
 
 ## Parameters
 
-- `request`: A   that identifies the eSIM to download.
-- `properties`: An optional parameter for  . Use to specify the voice capability and region your eSIM supports.
+- `request`: A [`CTCellularPlanProvisioningRequest`](ctcellularplanprovisioningrequest.md) that identifies the eSIM to download.
+- `properties`: An optional parameter for [`CTCellularPlanProperties`](ctcellularplanproperties.md). Use to specify the voice capability and region your eSIM supports.
 - `completionHandler`: A completion handler that executes after processing the request. The parameter passed to the completion handler indicates whether the request succeeded, failed, or ended in an unknown state.
 
 ## See Also

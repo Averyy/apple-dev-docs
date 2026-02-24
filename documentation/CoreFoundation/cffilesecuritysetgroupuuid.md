@@ -26,7 +26,7 @@ Returns `true` if the group UUID was successfully set, otherwise `false`.
 
 ## Parameters
 
-- `fileSec`: The   object to modify.
+- `fileSec`: The `CFFileSecurityRef` object to modify.
 - `groupUUID`: The group UUID to set.
 
 ## See Also

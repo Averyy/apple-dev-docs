@@ -24,6 +24,18 @@ Use [`WKInterfaceLabel`](wkinterfacelabel.md) to manipulate the contents of a la
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a label object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myLabel: WKInterfaceLabel!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel* myLabel;
+```
+
 During the initialization of your interface controller, WatchKit creates any needed label objects and assigns them to their connected outlets. At that point, you can use those objects to make changes to the onscreen text.
 
 Label objects apply the font and style information specified in your storyboard. You can specify a different set of style attributes by calling the [`setAttributedText(_:)`](wkinterfacelabel/setattributedtext(_:).md) method and providing an appropriately formatted attributed string object. When specifying text with an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object, the only other change you can make is to the text color.

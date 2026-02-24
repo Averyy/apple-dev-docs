@@ -23,8 +23,10 @@ If you have not invoked [`prepareToCaptureStillImageBracket(from:withSettingsArr
 ## Parameters
 
 - `connection`: The connection through which the still image bracket should be captured.
-- `settings`: An array of   objects. All the array items must be of the same   subclass, or an   exception is thrown.
-- `handler`: You should not assume that the completion handler will be called on a specific thread.
+- `settings`: An array of [`AVCaptureBracketedStillImageSettings`](avcapturebracketedstillimagesettings.md) objects. All the array items must be of the same [`AVCaptureBracketedStillImageSettings`](avcapturebracketedstillimagesettings.md) subclass, or an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception is thrown.
+- `handler`: A user provided block that will be called asynchronously as each still image in the bracket is captured. The block has three parameters: - **sampleBuffer**: If the capture request is successful,  contains a valid CMSampleBuffer.
+- **stillImageSettings**: Contains the [`AVCaptureBracketedStillImageSettings`](avcapturebracketedstillimagesettings.md) object corresponding to this still image.
+- **error**: If the bracketed capture fails, `sampleBuffer` is `NULL` and error is non-`nil`. If the count of the `settings` parameter exceeds [`maxBracketedCaptureStillImageCount`](avcapturestillimageoutput/maxbracketedcapturestillimagecount.md), then `AVErrorMaximumStillImageCaptureRequestsExceeded` is returned. You should not assume that the completion handler will be called on a specific thread.
 
 ## See Also
 

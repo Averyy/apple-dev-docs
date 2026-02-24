@@ -20,7 +20,7 @@ init(count: Int, elements: UnsafeMutablePointer<gss_buffer_desc>!)
 
 ## Parameters
 
-- `count`: The number of buffers in the   array.
+- `count`: The number of buffers in the `elements` array.
 - `elements`: An array of buffers to be included in the new set.
 
 ## See Also

@@ -21,7 +21,7 @@ If the current selection is collapsed (a range is selected with the same nodes a
 
 ## Parameters
 
-- `node`: The node that replaces the current selection. If  , a   DOM error is thrown as an exception. Use the   method to delete the selection.
+- `node`: The node that replaces the current selection. If `nil`, a `NOT_FOUND_ERR` DOM error is thrown as an exception. Use the [`deleteSelection()`](webview-swift.class/deleteselection().md) method to delete the selection.
 
 ## See Also
 

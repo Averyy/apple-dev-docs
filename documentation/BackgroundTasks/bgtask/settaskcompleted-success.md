@@ -32,7 +32,7 @@ You can reschedule an unsuccessful required task.
 
 ## Parameters
 
-- `success`: A   indicating if the task completed successfully or not.
+- `success`: A `Boolean` indicating if the task completed successfully or not.
 
 ## See Also
 

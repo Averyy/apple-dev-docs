@@ -28,9 +28,9 @@ By associating a block with one or more particle properties, you can run arbitra
 
 ## Parameters
 
-- `properties`: An array containing one or more of the constants listed in  , each of which specifies a property of the appearance or behaviors of particles in the particle system.
-- `stage`: The stage of SceneKit’s particle simulation during which to call the block. See   for allowed values.
-- `block`: A   block to be called every time SceneKit renders a frame. In this block you can modify the properties of all particles in the system.
+- `properties`: An array containing one or more of the constants listed in `Particle Property Keys`, each of which specifies a property of the appearance or behaviors of particles in the particle system.
+- `stage`: The stage of SceneKit’s particle simulation during which to call the block. See [`SCNParticleModifierStage`](scnparticlemodifierstage.md) for allowed values.
+- `block`: A [`SCNParticleModifierBlock`](scnparticlemodifierblock.md) block to be called every time SceneKit renders a frame. In this block you can modify the properties of all particles in the system.
 
 ## See Also
 

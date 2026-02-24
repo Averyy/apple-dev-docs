@@ -26,7 +26,7 @@ A model created by merging all the models found in `bundles`.
 
 ## Parameters
 
-- `bundles`: An array of instances of   to search. If you specify  , then the main bundle is searched.
+- `bundles`: An array of instances of `NSBundle` to search. If you specify `nil`, then the main bundle is searched.
 
 ## See Also
 

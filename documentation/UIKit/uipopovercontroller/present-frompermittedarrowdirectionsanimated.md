@@ -24,8 +24,8 @@ When presenting the popover, this method adds the toolbar that owns the button t
 ## Parameters
 
 - `item`: The bar button item on which to anchor the popover.
-- `arrowDirections`: The arrow directions the popover is permitted to use. You can use this value to force the popover to be positioned on a specific side of the bar button item. However, it is generally better to specify   and let the popover decide the best placement. You must not specify   for this parameter.
-- `animated`: Specify   to animate the presentation of the popover or   to display it immediately.
+- `arrowDirections`: The arrow directions the popover is permitted to use. You can use this value to force the popover to be positioned on a specific side of the bar button item. However, it is generally better to specify [`any`](uipopoverarrowdirection/any.md) and let the popover decide the best placement. You must not specify [`unknown`](uipopoverarrowdirection/unknown.md) for this parameter.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the presentation of the popover or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
 
 ## See Also
 

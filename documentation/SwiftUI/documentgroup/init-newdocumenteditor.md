@@ -38,7 +38,7 @@ The document types you supply to [`DocumentGroup`](documentgroup.md) must confor
 
 ## Parameters
 
-- `newDocument`: The initial document to use when a user creates   a new document.
+- `newDocument`: The initial document to use when a user creates a new document.
 - `editor`: The editing UI for the provided document.
 
 ## See Also

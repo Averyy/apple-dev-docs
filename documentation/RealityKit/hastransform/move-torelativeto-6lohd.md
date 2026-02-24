@@ -22,8 +22,8 @@ Moves an entity instantly to a new location given by a transform.
 
 ## Parameters
 
-- `transform`: A   instance that indicates the new location.
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `transform`: A [`Transform`](transform.md) instance that indicates the new location.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

@@ -29,6 +29,9 @@ This filter returns the pixel with highest alpha value in the region defined by 
 
 The area maximum alpha filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+
 The following code creates a filter that results in a single pixel image containing the pixel with the highest alpha value:
 
 ```swift

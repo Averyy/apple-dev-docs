@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the equation  in place for the vector of single-precision values .
+Solves the equation *Subfactor * X = B* in place for the vector of single-precision values *X*.
 
 **Availability**:
 - iOS 11.0+
@@ -22,18 +22,18 @@ func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Float, _ B: DenseVector_Floa
 
 ## Parameters
 
-- `Subfactor`: The   in     that   returns.
-- `B`: The vector  .
-- `X`: The vector  .
+- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-4renf.md) returns.
+- `B`: The vector *B*.
+- `X`: The vector *X*.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double)](sparsesolve(_:_:)-87v8w.md)
-  Solves the equation  in place for the vector of double-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float)](sparsesolve(_:_:)-6pxrq.md)
-  Solves the equation  in place for the vector of single-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of single-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double)](sparsesolve(_:_:_:)-g0wb.md)
-  Solves the equation  in place for the vector of double-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of double-precision values *X*.
 
 
 ---

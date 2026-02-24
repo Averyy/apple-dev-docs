@@ -39,7 +39,7 @@ let text = Text("Date is \(company.foundedDate, style: .offset)")
 
 ## Parameters
 
-- `stringInterpolation`: The string interpolation to use as the   localization key.
+- `stringInterpolation`: The string interpolation to use as the localization key.
 
 ## See Also
 

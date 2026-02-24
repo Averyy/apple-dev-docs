@@ -10,7 +10,7 @@ Views and controls are the building blocks of your app’s user interface.
 
 ![A sample macOS app with the view broken down into label, text field, and button control elements.The window has the title New List. Beneath the title is a text field labeled name, with a text box containing the placeholder text Enter text here. Beneath that is a label titled color followed by seven selectable circles of color. In the bottom right hand corner is a enabled Cancel button followed by a disabled OK button side-by-side.](https://docs-assets.developer.apple.com/published/5493c5134f4713caea62664e3709803a/media-4098514%402x.png)
 
-Views can host other views. Embedding one view inside another creates a containment relationship between the host view (known as the ) and the embedded view (known as the ). View hierarchies make it easier to manage views.
+Views can host other views. Embedding one view inside another creates a containment relationship between the host view (known as the *superview*) and the embedded view (known as the *subview*). View hierarchies make it easier to manage views.
 
 You can also use views to do any of the following:
 

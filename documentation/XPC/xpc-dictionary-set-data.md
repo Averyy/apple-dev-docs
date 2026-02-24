@@ -24,7 +24,7 @@ func xpc_dictionary_set_data(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>,
 
 - `xdict`: The dictionary which is to be manipulated.
 - `key`: The key for which the primitive value shall be set.
-- `bytes`: The bytes to insert. After calling this method, the XPC object corresponding to the primitive value inserted may be safely retrieved with  .
+- `bytes`: The bytes to insert. After calling this method, the XPC object corresponding to the primitive value inserted may be safely retrieved with [`xpc_dictionary_get_value(_:_:)`](xpc_dictionary_get_value(_:_:).md).
 - `length`: The length of the data.
 
 ## See Also

@@ -55,8 +55,8 @@ On iOS, tvOS, and watchOS, alerts only support controls with labels that are [`T
 ## Parameters
 
 - `title`: The title of the alert.
-- `isPresented`: A binding to a Boolean value that determines whether to   present the alert. When the user presses or taps one of the alert’s   actions, the system sets this value to   and dismisses.
-- `actions`: A   returning the alert’s actions.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
+- `actions`: A [`ViewBuilder`](viewbuilder.md) returning the alert’s actions.
 
 ## See Also
 

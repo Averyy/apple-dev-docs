@@ -36,8 +36,8 @@ Your app must have access to the network for this call to succeed. If the specif
 
 ## Parameters
 
-- `url`: The URL of the item in the cloud that you want to share. The URL must be prefixed with the base URL returned from the   method that corresponds to the item’s location. The file must be a flat file, not a bundle. The file at the specified URL must already be uploaded to iCloud when you call this method.
-- `outDate`: On input, a pointer to a variable for a date object. On output, this parameter contains the date after which the item is no longer available at the returned URL. You may specify   for this parameter if you are not interested in the date.
+- `url`: The URL of the item in the cloud that you want to share. The URL must be prefixed with the base URL returned from the [`url(forUbiquityContainerIdentifier:)`](filemanager/url(forubiquitycontaineridentifier:).md) method that corresponds to the item’s location. The file must be a flat file, not a bundle. The file at the specified URL must already be uploaded to iCloud when you call this method.
+- `outDate`: On input, a pointer to a variable for a date object. On output, this parameter contains the date after which the item is no longer available at the returned URL. You may specify `nil` for this parameter if you are not interested in the date.
 
 ## See Also
 

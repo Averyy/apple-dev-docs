@@ -22,7 +22,7 @@ Positions and orients the entity such that it looks at certain target from a giv
 
 #### Discussion
 
-This function moves the entity to the specified `position`. It rotates the entity such that the forward direction is pointing towards `target`. It further makes sure that entity’s  direction aligns with the specified `upVector`.
+This function moves the entity to the specified `position`. It rotates the entity such that the forward direction is pointing towards `target`. It further makes sure that entity’s *up* direction aligns with the specified `upVector`.
 
 > **Note**: This method can be used for non-camera entities.
 
@@ -30,9 +30,9 @@ This function moves the entity to the specified `position`. It rotates the entit
 
 - `target`: The target position to look at.
 - `position`: The new position of the entity.
-- `upVector`: The   direction of the entity.
-- `referenceEntity`: The reference entity which defines the frame of reference.   Can be  , which is equivalent to “world space”.
-- `forward`: Use default forward (.negativeZ).   Can be set to .positiveZ for non-camera entities
+- `upVector`: The *up* direction of the entity.
+- `referenceEntity`: The reference entity which defines the frame of reference. Can be `nil`, which is equivalent to “world space”.
+- `forward`: Use default forward (.negativeZ). Can be set to .positiveZ for non-camera entities
 
 ## See Also
 

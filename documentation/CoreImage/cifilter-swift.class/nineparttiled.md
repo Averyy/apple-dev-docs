@@ -29,6 +29,12 @@ This method applies the nine-part tiled filter to an image. This effect distorts
 
 The nine-part tiled filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`flipYTiles`**: A `Boolean` value representing if the y-axis should be flipped.
+- **`growAmount`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the amount of stretching applied.
+- **`breakpoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the upper-right corner of the image to retain after tiling ends.
+- **`breakpoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the lower-left corner of image to retain before stretching begins.
+
 The following code creates a filter that results in distorted tiles of the image becoming flipped:
 
 ```swift

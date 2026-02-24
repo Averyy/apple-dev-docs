@@ -29,7 +29,7 @@ Or, in a state machine that governs a game’s user interface, with Menu, Playin
 
 ## Parameters
 
-- `previousState`: The state the state machine transitioned from to enter this state. If the current state is the initial state of the state machine, this parameter’s value is  .
+- `previousState`: The state the state machine transitioned from to enter this state. If the current state is the initial state of the state machine, this parameter’s value is `nil`.
 
 ## See Also
 

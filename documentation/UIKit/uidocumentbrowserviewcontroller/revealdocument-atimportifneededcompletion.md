@@ -31,7 +31,8 @@ If `importIfNeeded` is [`true`](https://developer.apple.com/documentation/Swift/
 
 - `url`: The URL of the document to reveal.
 - `importIfNeeded`: A Boolean value that determines whether the document browser should import the document.
-- `completion`: A completion block with the following parameters:
+- `completion`: A completion block with the following parameters: - **url**: The new URL of an imported document. Set to `nil` if `shouldImport` is [`false`](https://developer.apple.com/documentation/Swift/false), or if an error occurs.
+- **error**: If an error occurs, this parameter contains the error information; otherwise, set to `nil`.
 
 ## See Also
 

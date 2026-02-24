@@ -128,6 +128,26 @@ Specify `com.apple.vpn.managed` as the payload type.
 - [object VPN.VendorConfig](vpn/vendorconfig-data.dictionary.md)
   The vendor-specific configuration dictionary.
 
+## Properties
+
+- `AlwaysOn` (VPN.AlwaysOn): The dictionary to use when `VPNType` is `AlwaysOn`. Not available in tvOS or watchOS.
+- `DNS` (VPN.DNS): A dictionary to use for all VPN types.
+- `IKEv2` (VPN.IKEv2): The dictionary to use when `VPNType` is `IKEv2`.
+- `IPSec` (VPN.IPSec): The dictionary that contains IPSec settings. Not available in watchOS.
+- `IPv4` (VPN.IPv4): The dictionary that contains IPv4 settings. Not available in watchOS.
+- `PPP` (VPN.PPP): The dictionary to use when `VPNType` is `L2TP` or `PTPP`. Not available in watchOS.
+- `Proxies` (VPN.Proxies): The dictionary to use to configure `Proxies` for use with `VPN`.
+- `TransparentProxy` (VPN.TransparentProxy): The dictionary to use when `VPNType` is `TransparentProxy`. Available in macOS 14 and later.
+- `UserDefinedName` (string) *(required)*: The description of the VPN connection that the system displays on the device. Not available in watchOS.
+- `VendorConfig` (VPN.VendorConfig): The vendor-specific configuration dictionary, which the system reads only when `VPNSubType` has a value. Not available in watchOS.
+- `VPN` (VPN.VPN): The dictionary to use when `VPNType` is `VPN`.
+- `VPNSubType` (string): An identifier for a vendor-specified configuration dictionary when the value for `VPNType` is `VPN`. If `VPNType` is `VPN`, the system requires this field. If the configuration targets a VPN solution that uses a VPN plugin, then this field contains the bundle identifier of the plugin. Here are some examples: - Cisco AnyConnect: `com.cisco.anyconnect.applevpn.plugin`
+- Juniper SSL: `net.juniper.sslvpn`
+- F5 SSL: `com.f5.F5-Edge-Client.vpnplugin`
+- SonicWALL Mobile Connect: `com.sonicwall.SonicWALL-SSLVPN.vpnplugin`
+- ``Aruba VIA: `com.arubanetworks.aruba-via.vpnplugin` If the configuration targets a VPN solution that uses a network extension provider, then this field contains the bundle identifier of the app that contains the provider. Contact the VPN solution vendor for the value of the identifier. If `VPNType` is `IKEv2`, then the `VPNSubType` field is optional and reserved for future use. If it’s specified, it needs to contain an empty string. Not available in watchOS.
+- `VPNType` (string) *(required)*: The type of the VPN, which defines which settings are appropriate for this VPN payload. If the type is `VPN` or `TransparentProxy`, then the system requires a value for `VPNSubType`. `TransparentProxy` is only available in macOS. `L2TP` and `IPSec` aren’t available in tvOS. `AlwaysOn` is only available on iOS and Apple Watch pairing isn’t supported with `AlwaysOn`. For a previously paired Apple Watch, all phone-watch communications cease when `AlwaysOn` is enabled. Not available in watchOS.
+
 ## See Also
 
 - [object AppLayerVPN](applayervpn.md)

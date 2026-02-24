@@ -59,8 +59,8 @@ When the value changes, the new version of the closure will be called, so any ca
 
 ## Parameters
 
-- `value`: The value to check when determining whether to run the   closure. The value must conform to the     protocol.
-- `initial`: Whether the action should be run when this scene initially   appears.
+- `value`: The value to check when determining whether to run the closure. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
+- `initial`: Whether the action should be run when this scene initially appears.
 - `action`: A closure to run when the value changes.
 
 ## See Also

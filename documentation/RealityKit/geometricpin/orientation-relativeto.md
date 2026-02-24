@@ -22,7 +22,7 @@ func orientation(relativeTo referenceEntity: Entity?) -> simd_quatf?
 
 ## Parameters
 
-- `referenceEntity`: Reference   which defines the frame of reference for the returned orientation.   Can be  , which is equivalent to “world space”.
+- `referenceEntity`: Reference `Entity` which defines the frame of reference for the returned orientation. Can be `nil`, which is equivalent to “world space”.
 
 
 ---

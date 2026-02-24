@@ -21,12 +21,12 @@ An [`XMLElement`](xmlelement.md) object or `nil` if the object cannot be created
 
 #### Discussion
 
-The equivalent XML markup is `<``:``name``>``</``:``name``>`.
+The equivalent XML markup is `<`*URI*`:``name``>``</`*URI*`:``name``>`.
 
 ## Parameters
 
 - `name`: A string that is the name (or tag identifier) of an element.
-- `URI`: A URI (Universal Resource Identifier) that qualifies  .
+- `URI`: A URI (Universal Resource Identifier) that qualifies `name`.
 
 ## See Also
 

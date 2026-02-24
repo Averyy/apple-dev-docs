@@ -19,6 +19,10 @@ The declaration for configuring a specific status subscription.
 object ManagementStatusSubscriptionsStatusItemObject
 ```
 
+## Properties
+
+- `Name` (string) *(required)*: The name of the status item to send to subscribers.
+
 
 ---
 

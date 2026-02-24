@@ -27,7 +27,7 @@ The number of bytes in the data object.
 
 - `ctx`: The execution context to use.
 - `object`: The JavaScript array buffer object with the length in bytes to return.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

@@ -75,7 +75,8 @@ VStack {
 
 ## Parameters
 
-- `action`: A closure to run when the scroll phase changes.
+- `action`: A closure to run when the scroll phase changes. - **oldPhase**: The old scroll phase.
+- **newPhase**: The new scroll phase.
 
 ## See Also
 

@@ -30,7 +30,7 @@ Pairs of dictionary values are compared using the comparison method specified by
 
 ## Parameters
 
-- `comparator`: The   method should return   if the dictionary value is smaller than the argument,   if the dictionary value is larger than the argument, and   if they are equal.
+- `comparator`: A selector that specifies the method to use to compare the values in the dictionary. The `comparator` method should return `NSOrderedAscending` if the dictionary value is smaller than the argument, `NSOrderedDescending` if the dictionary value is larger than the argument, and `NSOrderedSame` if they are equal.
 
 ## See Also
 

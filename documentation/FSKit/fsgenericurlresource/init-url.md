@@ -16,7 +16,7 @@ init(url: URL)
 
 ## Parameters
 
-- `url`: A URL that provides the content of the file system. The format of this URL is completely arbitrary. It’s up to your extension to access the contents represented by the URL and make them available as an   that FSKit can load.
+- `url`: A URL that provides the content of the file system. The format of this URL is completely arbitrary. It’s up to your extension to access the contents represented by the URL and make them available as an [`FSVolume`](fsvolume.md) that FSKit can load.
 
 
 ---

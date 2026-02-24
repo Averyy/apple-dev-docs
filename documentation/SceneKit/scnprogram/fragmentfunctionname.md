@@ -22,7 +22,7 @@ var fragmentFunctionName: String? { get set }
 
 #### Discussion
 
-A program’s fragment shader (sometimes called a ) executes at least once for each pixel in rendered output. The fragment shader takes as input the values output by the vertex shader (after those values have been interpolated by the GPU), and uses them to compute a final color for each pixel.
+A program’s fragment shader (sometimes called a *pixel shader*) executes at least once for each pixel in rendered output. The fragment shader takes as input the values output by the vertex shader (after those values have been interpolated by the GPU), and uses them to compute a final color for each pixel.
 
 By default, SceneKit looks for a fragment shader function by this name in the default Metal library. To use shaders from a separate library file, change the [`library`](scnprogram/library.md) property.
 

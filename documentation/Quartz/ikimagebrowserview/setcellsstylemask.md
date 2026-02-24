@@ -16,7 +16,7 @@ func setCellsStyleMask(_ mask: Int)
 
 ## Parameters
 
-- `mask`: An integer bit mask.   A mask can be specified by combining any of the options described in   using the C bitwise   operator.
+- `mask`: An integer bit mask.   A mask can be specified by combining any of the options described in [`Cell Appearance Style Masks`](1564248-cell-appearance-style-masks.md) using the C bitwise `OR` operator.
 
 ## See Also
 

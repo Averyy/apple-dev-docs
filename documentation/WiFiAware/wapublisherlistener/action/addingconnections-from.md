@@ -43,7 +43,7 @@ guard let port = listener.port { return }
 
 ## Parameters
 
-- `pairedDevices`: The remote devices from which to accept connections. The   isn’t activated if the system doesn’t specify any devices.
+- `pairedDevices`: The remote devices from which to accept connections. The `NetworkListener` isn’t activated if the system doesn’t specify any devices.
 
 
 ---

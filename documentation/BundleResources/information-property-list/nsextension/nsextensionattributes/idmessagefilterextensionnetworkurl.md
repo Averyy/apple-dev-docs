@@ -9,6 +9,10 @@ The server that a Message Filter app extension may defer a query to.
 - iOS 11.0+
 - iPadOS 11.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [ILClassificationExtensionSMSReportDestination](information-property-list/nsextension/nsextensionattributes/ilclassificationextensionsmsreportdestination.md)

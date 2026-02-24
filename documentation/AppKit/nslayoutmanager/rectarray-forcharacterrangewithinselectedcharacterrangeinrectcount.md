@@ -33,7 +33,7 @@ Performs glyph generation and layout if needed.
 ## Parameters
 
 - `charRange`: The character range for which to return rectangles.
-- `selCharRange`: Selected characters within  , which can affect the size of the rectangles; it must be equal to or contain  . If the caller is interested in this more from an enclosing point of view rather than a selection point of view, pass   as the selected range.
+- `selCharRange`: Selected characters within `charRange`, which can affect the size of the rectangles; it must be equal to or contain `charRange`. If the caller is interested in this more from an enclosing point of view rather than a selection point of view, pass `{NSNotFound, 0}` as the selected range.
 - `container`: The text container in which the text is laid out.
 - `rectCount`: The number of rectangles returned.
 

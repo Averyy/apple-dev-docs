@@ -31,7 +31,7 @@ To implement this method in your own `AsyncMessage` conformance, use the propert
 
 ## Parameters
 
-- `message`: The posted  .
+- `message`: The posted `AsyncMessage`.
 
 ## See Also
 

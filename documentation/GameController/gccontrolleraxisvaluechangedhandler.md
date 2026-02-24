@@ -22,7 +22,7 @@ typealias GCControllerAxisValueChangedHandler = (GCControllerAxisInput, Float) -
 ## Parameters
 
 - `axis`: The axis that the user changed.
-- `value`: A normalized value for the axis ranging from   to  .
+- `value`: A normalized value for the axis ranging from `-1` to `1`.
 
 ## See Also
 

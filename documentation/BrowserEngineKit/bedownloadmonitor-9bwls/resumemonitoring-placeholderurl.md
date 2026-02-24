@@ -22,7 +22,7 @@ Call this method when your browser resumes the download after an interruption, f
 
 ## Parameters
 
-- `placeholderURL`: The placeholder location your networking extension previously received when it called  .
+- `placeholderURL`: The placeholder location your networking extension previously received when it called [`beginMonitoring()`](bedownloadmonitor-9bwls/beginmonitoring().md).
 
 ## See Also
 

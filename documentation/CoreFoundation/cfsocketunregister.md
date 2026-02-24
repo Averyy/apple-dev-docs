@@ -30,7 +30,7 @@ The value being unregistered was previously registered with [`CFSocketRegisterVa
 
 ## Parameters
 
-- `nameServerSignature`: The socket signature for the name server. If  , this function contacts the default server, which is assumed to be a local process using TCP/IP to listen on the port number returned from  . If   is incomplete, the missing values are replaced with the default server’s values, if appropriate.
+- `nameServerSignature`: The socket signature for the name server. If `NULL`, this function contacts the default server, which is assumed to be a local process using TCP/IP to listen on the port number returned from [`CFSocketGetDefaultNameRegistryPortNumber()`](cfsocketgetdefaultnameregistryportnumber().md). If `nameServerSignature` is incomplete, the missing values are replaced with the default server’s values, if appropriate.
 - `timeout`: The time to wait for the server to accept a connection and to reply to the registration request.
 - `name`: The name of the property-list value or socket signature to unregister.
 

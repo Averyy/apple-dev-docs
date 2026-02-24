@@ -32,7 +32,7 @@ If `stream` is in the process of opening, this function waits until it has compl
 
 - `stream`: The stream to which to write.
 - `buffer`: The buffer holding the data to write.
-- `bufferLength`: The number of bytes from   to write.
+- `bufferLength`: The number of bytes from `buffer` to write.
 
 
 ---

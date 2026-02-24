@@ -23,8 +23,8 @@ func CFBitVectorSetBitAtIndex(_ bv: CFMutableBitVector!, _ idx: CFIndex, _ value
 ## Parameters
 
 - `bv`: The bit vector to modify.
-- `idx`: The index of the bit value to set. The index must be in the range  , where   is the count of the vector.
-- `value`: The bit value to which to set the bit at index  .
+- `idx`: The index of the bit value to set. The index must be in the range `0…N-1`, where `N` is the count of the vector.
+- `value`: The bit value to which to set the bit at index `idx`.
 
 ## See Also
 

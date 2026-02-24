@@ -53,7 +53,7 @@ let soundClassifier = try MLSoundClassifier(trainingData: soundDataSource)
 
 ## Parameters
 
-- `at`: URL : The URL to a folder in the file system that contains folders of audio files. The data source   uses the name of each folder as the classification label for the audio content it contains.
+- `at`: URL : The URL to a folder in the file system that contains folders of audio files. The data source uses the name of each folder as the classification label for the audio content it contains.
 
 ## See Also
 

@@ -24,9 +24,13 @@ View controller management includes:
 
 In macOS 10.10 and later, a view controller offers a full set of life cycle methods, allowing you to manage the content of a window in a way that is on a par with iOS view controller management. These methods, presented in order here to reflect a typical cycle, are:
 
+*View life cycle:*
+
 1. [`viewDidLoad()`](nsviewcontroller/viewdidload().md)
 2. [`viewWillAppear()`](nsviewcontroller/viewwillappear().md)
 3. [`viewDidAppear()`](nsviewcontroller/viewdidappear().md)
+
+*User interaction cycle:*
 
 1. [`updateViewConstraints()`](nsviewcontroller/updateviewconstraints().md)
 2. [`viewWillLayout()`](nsviewcontroller/viewwilllayout().md)

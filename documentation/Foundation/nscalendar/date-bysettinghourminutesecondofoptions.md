@@ -34,7 +34,7 @@ You can use this method to calculate a date at a different time of a particular 
 - `m`: The minute value.
 - `s`: The second value.
 - `date`: The date to use to perform the calculation.
-- `opts`: Options for the calculation. For possible values, see  .
+- `opts`: Options for the calculation. For possible values, see [`NSCalendar.Options`](nscalendar/options.md).
 
 ## See Also
 

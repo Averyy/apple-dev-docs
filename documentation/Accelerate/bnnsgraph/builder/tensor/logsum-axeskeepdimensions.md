@@ -22,7 +22,7 @@ func logSum(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 
 ## Parameters
 
-- `keepDimensions`: A Boolean value that specifies that the operation keeps the   reduced dimension with a size of  .
+- `keepDimensions`: A Boolean value that specifies that the operation keeps the reduced dimension with a size of `1`.
 
 
 ---

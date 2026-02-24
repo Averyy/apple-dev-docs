@@ -14,6 +14,11 @@ A default printer for the user.
 object Printing.DefaultPrinter
 ```
 
+## Properties
+
+- `DeviceURI` (string): The device URI.
+- `DisplayName` (string): The display name.
+
 ## See Also
 
 - [object Printing.UserPrinterList](printing/userprinterlist-data.dictionary.md)

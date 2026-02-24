@@ -21,7 +21,7 @@ An `NSLogicalTest` object initialized to perform an `OR` operation with the `NSS
 
 ## Parameters
 
-- `subTests`: An array of   objects representing Boolean expressions.
+- `subTests`: An array of `NSSpecifierTest` objects representing Boolean expressions.
 
 ## See Also
 

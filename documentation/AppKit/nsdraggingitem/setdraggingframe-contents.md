@@ -26,8 +26,8 @@ This method sets the [`draggingFrame`](nsdraggingitem/draggingframe.md) and [`im
 
 ## Parameters
 
-- `frame`: The item content frame, which is in the same coordinate space as the value of  .
-- `contents`: The item contents to display when dragging. Typically this is an  , but a   will also work.
+- `frame`: The item content frame, which is in the same coordinate space as the value of [`draggingFrame`](nsdraggingitem/draggingframe.md).
+- `contents`: The item contents to display when dragging. Typically this is an `NSImage`, but a `CGImageRef` will also work.
 
 ## See Also
 

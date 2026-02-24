@@ -11,6 +11,10 @@ A message that tells people why the app is trying to install a driver extension 
 - Mac Catalyst 18.4+
 - macOS 10.15+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is required for all [`DriverKit`](https://developer.apple.com/documentation/DriverKit) extensions. Failure to include this key results in an error at activation time. For system extensions that are not DriverKit extensions, use [`NSSystemExtensionUsageDescription`](information-property-list/nssystemextensionusagedescription.md) instead.

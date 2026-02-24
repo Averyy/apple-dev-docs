@@ -54,15 +54,89 @@ When an event occurs that may require your toolbar’s state to change, Safari c
 
 The code below shows one possible implementation of the [`validateToolbarItem(in:validationHandler:)`](sfsafariextensionhandling/validatetoolbaritem(in:validationhandler:).md)method. In this case, the app extension has a list of items that it keeps track of, and it adds a badge to the toolbar item with the number of available items.
 
+**Swift**:
+
+```swift
+override func validateToolbarItem(in window: SFSafariWindow, validationHandler: ((Bool, String) -> Void)) {
+    // The system calls this when Safari's state changes in a way that requires revalidation of the extension's toolbar item.
+    if items.count == 0
+    {
+        validationHandler(false,"")
+    }
+    else
+    {
+        validationHandler(true,"\(items.count)")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)validateToolbarItemInWindow:(SFSafariWindow *)window validationHandler:(void (^)(BOOL enabled, NSString *badgeText))validationHandler {
+    // The system calls this when Safari's state changes in a way that requires revalidation of the extension's toolbar item.
+    if (self.items.count == 0)
+    {
+        validationHandler(NO,nil);
+    }
+    else
+    {
+        validationHandler(YES, [NSString stringWithFormat:@"%lu", (unsigned long)self.items.count] );
+    }
+}
+```
+
 ##### Set the Toolbar Information Explicitly
 
 If you have a reference to an [`SFSafariWindow`](sfsafariwindow.md) object, you can use it to get a proxy object for the toolbar item, and then use that object to set the toolbar’s status directly.
+
+**Swift**:
+
+```swift
+override func toolbarItemClicked(in window: SFSafariWindow) {
+    window.getToolbarItem { (toolbarItem) in
+        toolbarItem?.setEnabled(true, withBadgeText: "1")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)toolbarItemClickedInWindow:(SFSafariWindow *)window
+{
+    [window getToolbarItemWithCompletionHandler:^(SFSafariToolbarItem *toolbarItem)
+     {
+         [toolbarItem setEnabled:NO withBadgeText:@"1"];
+     }];
+}
+```
 
 ##### Add Commands to the Toolbar Item
 
 If you configure your toolbar item to send a command, clicking the toolbar button in Safari calls your extension handler’s [`toolbarItemClicked(in:)`](sfsafariextensionhandling/toolbaritemclicked(in:).md) method. You can then process the event however you like. The window passes in as a parameter, so this code retrieves the toolbar item for that window and updates its badge.
 
 Another common usage when the toolbar item activates is to forward the message to an injected script on the page, so that you can modify the page in some way. The code below shows one possible way to forward the toolbar action. This code retrieves the active tab on the window that the user clicks, uses the tab to retrieve the page, and then dispatches a message to the page.
+
+**Swift**:
+
+```swift
+window.getActiveTab { (activeTab) in
+    activeTab?.getActivePage { (activePage) in
+        activePage?.dispatchMessageToScript(withName: "DoSomethingInteresting", userInfo: nil)
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+[window getActiveTabWithCompletionHandler:^(SFSafariTab *activeTab) {
+    [activeTab getActivePageWithCompletionHandler:^(SFSafariPage *activePage) {
+        [activePage dispatchMessageToScriptWithName:@"DoSomethingInteresting" userInfo:nil];
+    }];
+}];
+```
 
 ##### Display a Popover for a Toolbar Item
 
@@ -73,6 +147,23 @@ In a Safari app extension, you implement the popover content using native view a
 You implement your popover as a subclass of [`SFSafariExtensionViewController`](sfsafariextensionviewcontroller.md). As with other macOS development, typically you add your own outlets and actions to the view controller, and provide an XIB file for its user interface. The Xcode template for a Safari app extension provides some boilerplate code to get you started. Use Auto Layout so that your content adapts to different sizes.
 
 If you configure your toolbar item to display a popover, clicking the toolbar button in Safari calls your extension handler’s [`popoverViewController()`](sfsafariextensionhandling/popoverviewcontroller().md) method. Your app extension instantiates and returns the popover view controller. In the template, the popover implements as a singleton object.
+
+**Swift**:
+
+```swift
+override func popoverViewController() -> SFSafariExtensionViewController {
+    return SafariExtensionViewController.shared
+}
+
+```
+
+**Objective-C**:
+
+```objc
+- (SFSafariExtensionViewController *)popoverViewController {
+    return [SafariExtensionViewController sharedController];
+}
+```
 
 Before displaying the popover, the system calls your handler’s [`popoverWillShow(in:)`](sfsafariextensionhandling/popoverwillshow(in:).md) method. You can use this method to populate the contents of the window with new information. Similarly, after the popover disappears, the system calls the handler’s [`popoverDidClose(in:)`](sfsafariextensionhandling/popoverdidclose(in:).md) method so that you can perform any necessary cleanup.
 

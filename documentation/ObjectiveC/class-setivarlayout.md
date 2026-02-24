@@ -23,7 +23,7 @@ func class_setIvarLayout(_ cls: AnyClass?, _ layout: UnsafePointer<UInt8>?)
 ## Parameters
 
 - `cls`: The class to modify.
-- `layout`: The layout of the  s for  .
+- `layout`: The layout of the `Ivar`s for `cls`.
 
 ## See Also
 

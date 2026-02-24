@@ -18,7 +18,7 @@ The watchOS 9.4 SDK provides support to develop watchOS apps for Apple Watch dev
 
 ###### Known Issues
 
-- Users who were previously on 9.2.1 build may experience issues of missing Medication Schedule on Watch, or Medication dose logged on Watch not appearing on Phone (106108448)  1) On companion iPhone: remove the affected medication schedule and re-add it. Or 2) On affected Watch: erase and reinstall as new device any releases after 9.2.1
+- Users who were previously on 9.2.1 build may experience issues of missing Medication Schedule on Watch, or Medication dose logged on Watch not appearing on Phone (106108448) **Workaround:** 1) On companion iPhone: remove the affected medication schedule and re-add it. Or 2) On affected Watch: erase and reinstall as new device any releases after 9.2.1
 
 ##### Swiftui
 

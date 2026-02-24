@@ -3,7 +3,7 @@
 **Framework**: Metal Performance Shaders  
 **Kind**: property
 
-Specifies the number of histogram entries () for each channel.
+Specifies the number of histogram entries (*bins*) for each channel.
 
 **Availability**:
 - iOS ?+

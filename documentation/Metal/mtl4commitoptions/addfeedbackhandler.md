@@ -21,7 +21,7 @@ func addFeedbackHandler(_ block: @escaping MTL4CommitFeedbackHandler)
 
 ## Parameters
 
-- `block`:   that Metal invokes.
+- `block`: [`MTL4CommitFeedbackHandler`](mtl4commitfeedbackhandler.md) that Metal invokes.
 
 
 ---

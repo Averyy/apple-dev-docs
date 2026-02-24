@@ -30,8 +30,8 @@ Use this function to set the music event type and event data for the event that 
 ## Parameters
 
 - `inIterator`: The music event iterator whose current event you want to set.
-- `inEventType`: The type of music event that you are specifying. For possible event types, see  .
-- `inEventData`: The event data that you are specifying. The size and type of the data must be appropriate for the music event type you specify in the   parameter.
+- `inEventType`: The type of music event that you are specifying. For possible event types, see [`MusicEventType`](musiceventtype.md).
+- `inEventData`: The event data that you are specifying. The size and type of the data must be appropriate for the music event type you specify in the `inEventType` parameter.
 
 ## See Also
 

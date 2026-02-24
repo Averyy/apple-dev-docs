@@ -22,7 +22,7 @@ An array of subnode names.
 ## Parameters
 
 - `node`: The node.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

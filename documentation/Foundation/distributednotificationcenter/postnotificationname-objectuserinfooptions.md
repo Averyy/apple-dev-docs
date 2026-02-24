@@ -21,10 +21,10 @@ The `userInfo` dictionary is serialized as a property list, so it can be passed 
 
 ## Parameters
 
-- `name`: Name of the notification to post. Must not be  .
-- `object`: Sender of the notification. May be  .
-- `userInfo`: Dictionary containing additional information. May be  .
-- `options`: Specifies how the notification is posted to the task and when to deliver it to its observers. See   for details.
+- `name`: Name of the notification to post. Must not be `nil`.
+- `object`: Sender of the notification. May be `nil`.
+- `userInfo`: Dictionary containing additional information. May be `nil`. > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `userInfo` *must* be `nil`.
+- `options`: Specifies how the notification is posted to the task and when to deliver it to its observers. See `Notification Posting Behavior` for details.
 
 ## See Also
 

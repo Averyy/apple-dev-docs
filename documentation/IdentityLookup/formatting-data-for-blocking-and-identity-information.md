@@ -17,6 +17,9 @@ For more information, see the [`Swift homomorphic encryption library`](https://d
 
 The blocking information request is a single byte with two defined values:
 
+- **0**: This value means don’t block the caller.
+- **1**: This value means block the caller.
+
 ##### Identify Caller Information
 
 The identity request displays caller information on the device. This information is a serialized protocol buffer message of type `CallIdentity`. The following example shows the response formatting for an identity request:

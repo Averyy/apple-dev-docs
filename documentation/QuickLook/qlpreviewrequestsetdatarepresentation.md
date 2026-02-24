@@ -29,7 +29,7 @@ Thread-safety: This function should be called in the same thread as the preview 
 - `preview`: The preview request object.
 - `data`: The data of the preview returned to the client.
 - `contentTypeUTI`: The UTI specifying the content type of the preview.
-- `properties`: Additional properties for the preview response. For more on supported keys and values for this dictionary, see  . If the saved data is HTML, you may specify a special set of properties; see the discussion below for more information.
+- `properties`: Additional properties for the preview response. For more on supported keys and values for this dictionary, see `Preview Properties`. If the saved data is HTML, you may specify a special set of properties; see the discussion below for more information.
 
 ## See Also
 

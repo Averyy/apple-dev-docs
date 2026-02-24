@@ -35,7 +35,7 @@ Don’t call this function while existing calls to [`BNNSGraphContextExecute(_:_
 ## Parameters
 
 - `context`: The graph context.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 - `batch_size`: The batch size.
 
 ## See Also

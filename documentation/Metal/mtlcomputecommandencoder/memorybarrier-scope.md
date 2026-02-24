@@ -28,7 +28,7 @@ To determine whether a GPU supports memory barriers, see the [`Metal feature set
 
 ## Parameters
 
-- `scope`: An   instance that represents the resource types the barrier synchronizes operations on.
+- `scope`: An [`MTLBarrierScope`](mtlbarrierscope.md) instance that represents the resource types the barrier synchronizes operations on.
 
 ## See Also
 

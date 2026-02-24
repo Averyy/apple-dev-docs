@@ -37,9 +37,9 @@ This method detects all invalid ranges (including those with negative lengths). 
 ## Parameters
 
 - `searchString`: The string for which to search.
-- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise   operator:  ,  ,  , and  . See   for details on these options.
-- `rangeOfReceiverToSearch`: Raises an   if   is invalid.
-- `locale`: The locale argument affects the equality checking algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” ( ), not the normal “i” character.
+- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise `OR` operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`, `NSBackwardsSearch`, and `NSAnchoredSearch`. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
+- `rangeOfReceiverToSearch`: The range within the receiver for which to search for `aString`. Raises an [`rangeException`](nsexceptionname/rangeexception.md) if `aRange` is invalid.
+- `locale`: The locale to use when comparing the receiver with `aString`. To use the current locale, pass [[`NSLocale`](nslocale.md) [`current`](nslocale/current.md)]. To use the system locale, pass `nil`. The locale argument affects the equality checking algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (`U+0131 LATIN SMALL DOTLESS I`), not the normal “i” character.
 
 ## See Also
 

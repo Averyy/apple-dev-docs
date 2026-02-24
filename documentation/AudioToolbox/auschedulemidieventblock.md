@@ -23,6 +23,11 @@ typealias AUScheduleMIDIEventBlock = (AUEventSampleTime, UInt8, Int, UnsafePoint
 
 The block takes the following parameters:
 
+- **eventSampleTime**: The sample time at which the MIDI event is to occur. When scheduling parameters during the render cycle, this time can be set to the `AUEventSampleTimeImmediate` value plus an optional buffer offset, in which case the event is scheduled at that position in the current render cycle.
+- **cable**: The virtual cable number.
+- **length**: The number of bytes of MIDI data in the provided event(s).
+- **midiBytes**: One or more valid MIDI 1.0 events, except *sysex* which must always be sent as the only event in the chunk. Running status is not allowed.
+
 ## See Also
 
 - [var isMusicDeviceOrEffect: Bool](auaudiounit/ismusicdeviceoreffect.md)

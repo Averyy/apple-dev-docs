@@ -29,6 +29,9 @@ The effect applies a dithering effect to the input image. The effect applies ran
 
 The dither filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that adds desaturation to the input image:
 
 ```swift

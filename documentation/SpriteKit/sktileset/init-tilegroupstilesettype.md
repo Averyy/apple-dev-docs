@@ -26,7 +26,7 @@ A new tile set.
 
 ## Parameters
 
-- `tileGroups`: An array of   objects from which to create the tile set from.
+- `tileGroups`: An array of [`SKTileGroup`](sktilegroup.md) objects from which to create the tile set from.
 - `tileSetType`: The arrangement of the tiles.
 
 ## See Also

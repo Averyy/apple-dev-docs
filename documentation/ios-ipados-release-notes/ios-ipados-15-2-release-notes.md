@@ -70,7 +70,7 @@ The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Known Issues
 
-- A [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) won’t attempt to localize the raw string `TextField("Placeholder", text: $text)` when building against iOS 15 and running on older releases.  Wrap the string in a [`LocalizedStringKey`](https://developer.apple.com/documentation/SwiftUI/LocalizedStringKey). (82076857)
+- A [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) won’t attempt to localize the raw string `TextField("Placeholder", text: $text)` when building against iOS 15 and running on older releases. **Workaround:** Wrap the string in a [`LocalizedStringKey`](https://developer.apple.com/documentation/SwiftUI/LocalizedStringKey). (82076857)
 
 ## See Also
 

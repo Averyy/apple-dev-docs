@@ -20,9 +20,9 @@ This method throws an exception if called from within the [`execute(_:atTime:wit
 
 ## Parameters
 
-- `type`: The port type. See  .
+- `type`: The port type. See [`Port Input and Output Types`](port-input-and-output-types.md).
 - `key`: The key to associate  with the port.
-- `attributes`: A dictionary of attributes for the port. See  . Although the dictionary is optional, it’s recommended that provide attributes to enhance the experience of those who use your custom patch. The attributes appear in a help tag when the user hovers a pointer over the property port on your custom patch. (See  .) Pass    if you do not want to provide attributes.
+- `attributes`: A dictionary of attributes for the port. See [`Input and Output Port Attributes`](input-and-output-port-attributes.md). Although the dictionary is optional, it’s recommended that provide attributes to enhance the experience of those who use your custom patch. The attributes appear in a help tag when the user hovers a pointer over the property port on your custom patch. (See [`attributesForPropertyPort(withKey:)`](qcplugin/attributesforpropertyport(withkey:).md).) Pass  `nil` if you do not want to provide attributes.
 
 ## See Also
 

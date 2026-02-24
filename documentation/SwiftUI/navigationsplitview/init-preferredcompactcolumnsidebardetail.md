@@ -23,7 +23,7 @@ init(preferredCompactColumn: Binding<NavigationSplitViewColumn>, @ViewBuilder si
 
 ## Parameters
 
-- `preferredCompactColumn`: A   to state that controls which   column appears on top when the view collapses.
+- `preferredCompactColumn`: A [`Binding`](binding.md) to state that controls which column appears on top when the view collapses.
 - `sidebar`: The view to show in the leading column.
 - `detail`: The view to show in the detail area.
 

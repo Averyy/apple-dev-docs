@@ -11,6 +11,10 @@ A Boolean value that indicates your app supports CloudKit Sharing.
 - macOS 10.12+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If your app supports CloudKit Sharing, add this key to your app’s `Info.plist` file with a value of [`true`](https://developer.apple.com/documentation/Swift/true). This tells the system to launch your app when the user taps or clicks a share’s URL. For example, one they receive in an email or an iMessage from the share’s owner.

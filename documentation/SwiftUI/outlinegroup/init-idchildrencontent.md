@@ -30,8 +30,8 @@ Make sure that the identifier of a data element only changes if you mean to repl
 
 - `data`: A collection of tree-structured, identified data.
 - `id`: The key path to a data element’s identifier.
-- `children`: A key path to a property whose non-  value gives the   children of  . A non-  but empty value denotes an element   capable of having children that’s currently childless, such as an   empty directory in a file system. On the other hand, if the property   at the key path is  , then the outline group treats   as a   leaf in the tree, like a regular file in a file system.
-- `content`: A view builder that produces a content view based on an   element in  .
+- `children`: A key path to a property whose non-`nil` value gives the children of `data`. A non-`nil` but empty value denotes an element capable of having children that’s currently childless, such as an empty directory in a file system. On the other hand, if the property at the key path is `nil`, then the outline group treats `data` as a leaf in the tree, like a regular file in a file system.
+- `content`: A view builder that produces a content view based on an element in `data`.
 
 ## See Also
 

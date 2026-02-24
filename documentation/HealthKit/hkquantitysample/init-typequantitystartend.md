@@ -27,12 +27,46 @@ A valid quantity sample.
 
 HealthKit uses quantity samples to represent sample data using a numeric value. To create a quantity sample, first create the corresponding quantity type and quantity, and then set its start and end dates. You produce a new quantity sample.
 
+**Swift**:
+
+```swift
+guard let quantityType = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate) else {
+    fatalError("*** Unable to create a heart rate quantity type ***")
+}
+ 
+let bpm = HKUnit(fromString: "count/min")
+let quantity = HKQuantity(unit: bpm, doubleValue: 72.0)
+ 
+let quantitySample = HKQuantitySample(type: quantityType,
+                                      quantity: quantity,
+                                      startDate: start,
+                                      endDate: end)
+```
+
+**Objective-C**:
+
+```objc
+HKQuantityType *quantityType =
+[HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+ 
+HKUnit *bpm = [HKUnit unitFromString:@"count/min"];
+ 
+HKQuantity *quantity = [HKQuantity quantityWithUnit:bpm
+                                        doubleValue:72.0];
+ 
+HKQuantitySample *sample =
+[HKQuantitySample quantitySampleWithType:quantityType
+                                quantity:quantity
+                               startDate:start
+                                 endDate:end];
+```
+
 ## Parameters
 
-- `quantityType`: The type of sample to be created. HealthKit defines a number of different quantity types, representing different types of health and fitness data. For the complete list of quantity type identifiers, see  .
-- `quantity`: The value to be stored in the sample. The quantity object must use units that are compatible with the provided quantity type. If the units are not compatible, this method throws an exception ( ).
-- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
-- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ( ).
+- `quantityType`: The type of sample to be created. HealthKit defines a number of different quantity types, representing different types of health and fitness data. For the complete list of quantity type identifiers, see [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
+- `quantity`: The value to be stored in the sample. The quantity object must use units that are compatible with the provided quantity type. If the units are not compatible, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 
 ## See Also
 

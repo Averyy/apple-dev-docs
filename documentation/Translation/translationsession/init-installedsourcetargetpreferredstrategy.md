@@ -25,7 +25,7 @@ If one or both of the languages aren’t installed on the device already, attemp
 
 ## Parameters
 
-- `preferredStrategy`: Specify the preferred translation strategy to use. If   is specified,   the framework can still fall back to the   strategy in some cases, such as   when Apple Intelligence isn’t available.
+- `preferredStrategy`: Specify the preferred translation strategy to use. If `.highFidelity` is specified, the framework can still fall back to the `.lowLatency` strategy in some cases, such as when Apple Intelligence isn’t available.
 
 ## See Also
 

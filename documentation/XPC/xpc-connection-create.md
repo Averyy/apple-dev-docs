@@ -32,8 +32,8 @@ XPC connections, like dispatch sources, are returned in a suspended state, so yo
 
 ## Parameters
 
-- `name`: If  , an anonymous listener connection will be created. You can embed the ability to create new peer connections in an endpoint, which can be inserted into a message and sent to another process .
-- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be  , in which case the connection’s target queue will be the default target queue of  , defined as  . The target queue may be changed later with a call to  .
+- `name`: If non-`NULL`, the name of the service with which to connect. The returned connection will be a peer. If `NULL`, an anonymous listener connection will be created. You can embed the ability to create new peer connections in an endpoint, which can be inserted into a message and sent to another process .
+- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be `NULL`, in which case the connection’s target queue will be the default target queue of `libdispatch`, defined as `DISPATCH_TARGET_QUEUE_DEFAULT`. The target queue may be changed later with a call to [`xpc_connection_set_target_queue(_:_:)`](xpc_connection_set_target_queue(_:_:).md).
 
 ## See Also
 

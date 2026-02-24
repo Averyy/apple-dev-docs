@@ -29,7 +29,7 @@ An array of tuples that contain neighboring strings and their distances.
 
 - `string`: A string in the embedding vocabulary.
 - `maxCount`: The largest number of neighboring strings that the method can return in an array.
-- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from  .
+- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from `string`.
 
 ## See Also
 

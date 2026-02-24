@@ -25,8 +25,8 @@ func hv_vcpu_write_register(_ vcpu: hv_vcpuid_t, _ reg: hv_x86_reg_t, _ value: U
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.
-- `reg`: The ID of the register. For possible values, see  .
-- `value`: The new value of the register  .
+- `reg`: The ID of the register. For possible values, see [`hv_x86_reg_t`](hv_x86_reg_t.md).
+- `value`: The new value of the register `reg`.
 
 ## See Also
 

@@ -18,6 +18,10 @@ object ServiceConfigResponse.Limits
 - [Managing Assets](managing-assets.md)
 - [Managing Users](managing-users.md)
 
+## Properties
+
+- `Any Key` (int32)
+
 
 ---
 

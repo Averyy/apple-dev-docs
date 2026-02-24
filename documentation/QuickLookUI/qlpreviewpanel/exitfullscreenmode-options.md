@@ -16,7 +16,7 @@ func exitFullScreenMode(options: [AnyHashable : Any]! = [:])
 
 ## Parameters
 
-- `options`: This parameter isn’t used — pass  .
+- `options`: This parameter isn’t used — pass `nil`.
 
 ## See Also
 

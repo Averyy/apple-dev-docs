@@ -32,7 +32,7 @@ You must open the stream, using [`CFWriteStreamOpen(_:)`](cfwritestreamopen(_:).
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `fileURL`: The URL of the file to which to write. The URL must use a file scheme.
 
 ## See Also

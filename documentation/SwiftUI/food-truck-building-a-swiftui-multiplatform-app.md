@@ -134,7 +134,7 @@ Chart {
 }
 ```
 
-The  axis of the chart shows labels with the names and thumbnails of the items that correspond to each data point.
+The *x* axis of the chart shows labels with the names and thumbnails of the items that correspond to each data point.
 
 ```swift
 .chartXAxis {
@@ -277,9 +277,9 @@ Task {
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Backyard Birds: Building an app with SwiftData and widgets](backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.

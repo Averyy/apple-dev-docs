@@ -25,7 +25,7 @@ Errors may be returned as a result of file I/O, iCloud network or iCloud account
 ## Parameters
 
 - `storeURL`: The URL of the store to delete.
-- `options`: A dictionary containing the options normally passed to  .
+- `options`: A dictionary containing the options normally passed to [`addPersistentStore(ofType:configurationName:at:options:)`](nspersistentstorecoordinator/addpersistentstore(oftype:configurationname:at:options:).md).
 
 ## See Also
 

@@ -26,8 +26,8 @@ A configuration set containing the configurations.
 ## Parameters
 
 - `id`: The ID of the configuration set that’s unique across all other configuration sets.
-- `configurations`: An array of configurations you can choose from.   The configuration set stores the array in the    property and doesn’t preserve the order of the array.
-- `defaultConfigurationId`: The ID of one of the configuration elements in the    parameter, which is the default configuration the entity initializer   applies if you don’t choose a configuration from the set.
+- `configurations`: An array of configurations you can choose from. The configuration set stores the array in the [`configurations`](entity/configurationcatalog/configurationset/configurations.md) property and doesn’t preserve the order of the array.
+- `defaultConfigurationId`: The ID of one of the configuration elements in the `configurations` parameter, which is the default configuration the entity initializer applies if you don’t choose a configuration from the set.
 
 
 ---

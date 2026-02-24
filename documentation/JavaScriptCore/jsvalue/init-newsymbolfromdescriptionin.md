@@ -26,7 +26,7 @@ A [`JSValue`](jsvalue.md) that represents a new, unique JavaScript symbol object
 ## Parameters
 
 - `description`: The description of the symbol object to create.
-- `context`: The   the resulting   belongs to.
+- `context`: The [`JSContext`](jscontext.md) the resulting [`JSValue`](jsvalue.md) belongs to.
 
 ## See Also
 

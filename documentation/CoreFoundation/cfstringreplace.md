@@ -27,8 +27,8 @@ Although you can use this function to replace all characters in a CFMutableStrin
 ## Parameters
 
 - `theString`: The string to modify. The characters are adjusted left or right (depending on the length of the substituted string) and the character buffer of the object is resized accordingly. If this value is not a CFMutableString object, an assertion is raised.
-- `range`: The range of characters in   to replace.
-- `replacement`: The replacement string to put into  .
+- `range`: The range of characters in `theString` to replace.
+- `replacement`: The replacement string to put into `theString`.
 
 ## See Also
 

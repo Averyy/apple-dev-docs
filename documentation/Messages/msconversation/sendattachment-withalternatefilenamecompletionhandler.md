@@ -39,8 +39,8 @@ This method operates asynchronously. Although the method returns immediately, th
 ## Parameters
 
 - `URL`: A URL for the media file to send. This URL must refer to a file saved on the device.
-- `filename`: An alternative name for the file. Use an alternative filename to better describe the attachment or to make the name more readable. If you pass a string, the Messages app uses the string as the attachment’s filename. If you pass  , it parses the filename from the URL.
-- `completionHandler`: A block that is called as soon as the message starts sending. This block is passed the following parameter:
+- `filename`: An alternative name for the file. Use an alternative filename to better describe the attachment or to make the name more readable. If you pass a string, the Messages app uses the string as the attachment’s filename. If you pass `nil`, it parses the filename from the URL.
+- `completionHandler`: A block that is called as soon as the message starts sending. This block is passed the following parameter: - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`. An error occurs if the user hasn’t recently interacted with your app.
 
 ## See Also
 

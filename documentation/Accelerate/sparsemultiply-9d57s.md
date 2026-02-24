@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Performs the multiplication  on a vector of double-precision, floating-point values.
+Performs the multiplication *y = Ax* on a vector of double-precision, floating-point values.
 
 **Availability**:
 - iOS 11.0+
@@ -75,18 +75,18 @@ let yValues = [Double](unsafeUninitializedCapacity: xValues.count) {
 
 ## Parameters
 
-- `A`: The sparse matrix   in    .
-- `x`: The dense vector   in    .
-- `y`: The dense vector   in    .
+- `A`: The sparse matrix *A* in *y* *= Ax*.
+- `x`: The dense vector *x* in *y* *= Ax*.
+- `y`: The dense vector *y* in *y* *= Ax*.
 
 ## See Also
 
 - [func SparseMultiply(SparseMatrix_Float, DenseVector_Float, DenseVector_Float)](sparsemultiply(_:_:_:)-4hrs4.md)
-  Performs the multiplication  on a vector of single-precision, floating-point values.
+  Performs the multiplication *y = Ax* on a vector of single-precision, floating-point values.
 - [func SparseMultiply(Double, SparseMatrix_Double, DenseVector_Double, DenseVector_Double)](sparsemultiply(_:_:_:_:)-76o5l.md)
-  Performs the multiply operation   on a vector of double-precision, floating-point values.
+  Performs the multiply operation *y* *= alpha * Ax* on a vector of double-precision, floating-point values.
 - [func SparseMultiply(Float, SparseMatrix_Float, DenseVector_Float, DenseVector_Float)](sparsemultiply(_:_:_:_:)-8yzgo.md)
-  Performs the multiply operation   on a vector of single-precision, floating-point values.
+  Performs the multiply operation *y* *= alpha * Ax* on a vector of single-precision, floating-point values.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: var
 
-The key for an affine matrix. The associated value is an `NSArray` object ([]) that defines the transformation to apply to the sampler.
+The key for an affine matrix. The associated value is an `NSArray` object ([*a b c d tx ty*]) that defines the transformation to apply to the sampler.
 
 **Availability**:
 - iOS 9.0+

@@ -10,11 +10,15 @@ Media files may contain video color space information tags that describe the vid
 
 ##### Video Tags Describe Key Video Parameters
 
-For historical reasons, color scientists defined many permutations of broadcast video color spaces. As a result, you should  your media files with color information that describes the video media. If you don’t, the untagged media content might not match your intentions across all the different configurations and environments your customers encounter.
+For historical reasons, color scientists defined many permutations of broadcast video color spaces. As a result, you should *tag* your media files with color information that describes the video media. If you don’t, the untagged media content might not match your intentions across all the different configurations and environments your customers encounter.
 
-> **Note**:  The term  refers to optional color space information parameters in the media that describe the content. The tags describe video colorimetry in a simplified way.
+> **Note**:  The term *tagging* refers to optional color space information parameters in the media that describe the content. The tags describe video colorimetry in a simplified way.
 
 This color information tagging mechanism supports three key video parameters:
+
+- **Color Primaries**: An index into a table specifying the CIE 1931 xy chromaticity coordinates of the white point and the red, green, and blue primaries. The table of primaries specifies the white point and the red, green, and blue primary color points for a video system.
+- **Transfer Function**: Defines an index into a table specifying the nonlinear transfer function coefficients that translate between RGB color space values and Y´CbCr values. The table of transfer function coefficients specifies the nonlinear function coefficients that translate between the stored Y´CbCr values and a video capture or display system.
+- **Conversion Matrix**: An index into a table specifying the transformation matrix coefficients that translate between RGB color space values and Y´CbCr values. The table of matrixes specifies the matrix for the translation.
 
 > **Note**:  Each represents indices, not actual values. The [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format) and [`Uncompressed Y´CbCr Video in QuickTime Files`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10) describe these indices in the `‘colr’` extension of type `‘nclc’`.
 
@@ -25,7 +29,7 @@ ColorSync uses these video parameters to generate one of the following video col
 - P3 (D65)
 - UHD (Rec. 2020)
 
-[`ISO/IEC 23001-8:2016`](https://developer.apple.comhttps://www.iso.org/standard/69661.html),  defines these standard tag numbers.
+[`ISO/IEC 23001-8:2016`](https://developer.apple.comhttps://www.iso.org/standard/69661.html), *Coding-Independent Code Points* defines these standard tag numbers.
 
 ##### Tag Your Video Using Asset Writer
 

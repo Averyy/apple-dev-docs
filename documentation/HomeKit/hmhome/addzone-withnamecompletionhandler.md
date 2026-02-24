@@ -19,8 +19,9 @@ func addZone(named zoneName: String) async throws -> HMZone
 
 ## Parameters
 
-- `zoneName`: The name of the new zone. Must not be  , and must not be the name of a zone already in the home.
-- `completion`: The block executed after the request is processed.
+- `zoneName`: The name of the new zone. Must not be `nil`, and must not be the name of a zone already in the home.
+- `completion`: The block executed after the request is processed. - **zone**: The newly created zone.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

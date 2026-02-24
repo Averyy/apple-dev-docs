@@ -26,7 +26,7 @@ A tracked ray-cast instance used to update or stop ray casting. The result is `n
 - `point`: A point in the view’s local coordinate system.
 - `target`: The type of target where the ray should terminate.
 - `alignment`: The alignment of the target.
-- `updateHandler`: A closure the method calls to update the list of   results, sorted from nearest to farthest from the camera. The closure is   called on the   instance’s delegate queue.
+- `updateHandler`: A closure the method calls to update the list of results, sorted from nearest to farthest from the camera. The closure is called on the [`session`](arview/session.md) instance’s delegate queue.
 
 ## See Also
 

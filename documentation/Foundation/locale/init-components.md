@@ -34,7 +34,7 @@ let en_GB_US = Locale(components: components)
 
 ## Parameters
 
-- `components`: A   instance that provides the components to create a customized locale.
+- `components`: A [`Locale.Components`](locale/components.md) instance that provides the components to create a customized locale.
 
 ## See Also
 

@@ -25,6 +25,11 @@ object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem
 - [object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration](managedapplicationconfigurationresponse/applicationconfigurationsitem/configuration-data.dictionary.md)
   A dictionary that contains a managed app’s configuration items.
 
+## Properties
+
+- `Configuration` (ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration): The app’s configurations.
+- `Identifier` (string) *(required)*: The app’s bundle identifier. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired.
+
 ## See Also
 
 - [object ManagedApplicationConfigurationResponse.ErrorChainItem](managedapplicationconfigurationresponse/errorchainitem.md)

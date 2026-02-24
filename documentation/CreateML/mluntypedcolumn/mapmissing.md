@@ -25,7 +25,7 @@ A new `MLDataColumn` column.
 
 ## Parameters
 
-- `lazyTransform`: A thread-safe element transformation function. The   implementation of the transform you provide should accept an element of   the column and return a transformed value of a type that conforms to   . If the transform returns   for a given   element, the corresponding element in the new column will have a missing   value.
+- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an element of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md). If the transform returns `nil` for a given element, the corresponding element in the new column will have a missing value.
 
 ## See Also
 

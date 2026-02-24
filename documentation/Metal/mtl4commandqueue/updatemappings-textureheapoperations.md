@@ -29,9 +29,9 @@ You can determine the sparse texture tier by calling `MTLTexture/sparseTextureTi
 
 ## Parameters
 
-- `texture`: A placement sparse  .
-- `heap`:   you allocate with type  .
-- `operations`: An array of   instances to perform.
+- `texture`: A placement sparse [`MTLTexture`](mtltexture.md).
+- `heap`: [`MTLHeap`](mtlheap.md) you allocate with type [`MTLHeapType.placement`](mtlheaptype/placement.md).
+- `operations`: An array of [`MTL4UpdateSparseTextureMappingOperation`](mtl4updatesparsetexturemappingoperation.md) instances to perform.
 
 
 ---

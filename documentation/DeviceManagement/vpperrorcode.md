@@ -15,6 +15,11 @@ An error code.
 object VppErrorCode
 ```
 
+## Properties
+
+- `errorMessage` (string): The human-readable explanation of the error.
+- `errorNumber` (int32): The numeric code of the error.
+
 ## See Also
 
 - [object VppAsset](vppasset.md)

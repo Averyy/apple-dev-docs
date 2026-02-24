@@ -9,6 +9,10 @@ A collection of launch screen configuration dictionaries.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Each dictionary in the array resembles the one you might define for the [`UILaunchScreen`](information-property-list/uilaunchscreen.md) key, with the addition of a [`UILaunchScreenIdentifier`](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uilaunchscreenidentifier.md) key that provides a unique identifier for the dictionary. You use that identifier when associating to the dictionary with a URL scheme in the [`UIURLToLaunchScreenAssociations`](information-property-list/uilaunchscreens/uiurltolaunchscreenassociations.md) array, or to indicate it as the default launch screen with the [`UIDefaultLaunchScreen`](information-property-list/uilaunchscreens/uidefaultlaunchscreen.md) key.

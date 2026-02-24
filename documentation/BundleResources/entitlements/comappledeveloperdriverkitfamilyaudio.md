@@ -10,6 +10,10 @@ A Boolean value that indicates whether the device supports audio functionality.
 - iPadOS 16.0+
 - macOS 12.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add this entitlement to the default entitlements file that Xcode creates for your driver project.

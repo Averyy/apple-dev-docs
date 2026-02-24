@@ -21,7 +21,7 @@ func addAnnotation(_ annotation: any MKAnnotation)
 
 ## Parameters
 
-- `annotation`: The annotation object to add to the receiver. This object must conform to the   protocol. The map view retains the specified object.
+- `annotation`: The annotation object to add to the receiver. This object must conform to the [`MKAnnotation`](mkannotation.md) protocol. The map view retains the specified object.
 
 ## See Also
 

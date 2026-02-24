@@ -32,9 +32,9 @@ If the path ends with an unclosed subpath, this method adds a line connecting th
 
 - `center`: The center of the arc, in user space coordinates.
 - `radius`: The radius of the arc, in user space coordinates.
-- `startAngle`: The angle to the starting point of the arc,   measured from the positive x-axis.
-- `delta`: The difference between the starting angle and ending   angle of the arc. A positive value creates a counter-   clockwise arc (in user space coordinates), and vice versa.
-- `transform`: An affine transform to apply to the arc before   adding to the path. Defaults to the identity transform if   not specified.   /
+- `startAngle`: The angle to the starting point of the arc, measured from the positive x-axis.
+- `delta`: The difference between the starting angle and ending angle of the arc. A positive value creates a counter- clockwise arc (in user space coordinates), and vice versa.
+- `transform`: An affine transform to apply to the arc before adding to the path. Defaults to the identity transform if not specified. /
 
 ## See Also
 

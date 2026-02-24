@@ -26,7 +26,7 @@ A Boolean value that’s `true` if the set contains a component of the given typ
 
 ## Parameters
 
-- `componentType`: A component type, like  .
+- `componentType`: A component type, like `ModelComponent.Self`.
 
 
 ---

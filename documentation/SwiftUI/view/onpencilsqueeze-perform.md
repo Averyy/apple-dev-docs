@@ -78,7 +78,7 @@ var body: some View {
 
 ## Parameters
 
-- `action`: The action to perform when the user squeezes their   Apple Pencil.
+- `action`: The action to perform when the user squeezes their Apple Pencil.
 
 ## See Also
 

@@ -10,15 +10,19 @@ Universal Scene Description (USD) is a comprehensive 3D content-creation technol
 
 #### Use Metallic Workflows for Shading
 
-All three renderers use a physically based rendering (PBR) technique that the USD specification calls the . A metallic workflow shader takes metallic, roughness, and base color values as its core inputs. Most digital content-creation tools (DCCs) support PBR metallic workflow shaders and many of them default to using it.
+All three renderers use a physically based rendering (PBR) technique that the USD specification calls the *metallic workflow*. A metallic workflow shader takes metallic, roughness, and base color values as its core inputs. Most digital content-creation tools (DCCs) support PBR metallic workflow shaders and many of them default to using it.
 
-USD and many DCCs also support a second PBR technique called the  (sometimes also called the ). The specular workflow renders assets by using another algorithm that takes different input values. Only Storm supports the specular workflow, so for maximum compatibility, use metallic workflow shaders in your DCC, or your preview renders won’t accurately represent how your final rendered asset looks.
+USD and many DCCs also support a second PBR technique called the *specular workflow* (sometimes also called the *glossy workflow*). The specular workflow renders assets by using another algorithm that takes different input values. Only Storm supports the specular workflow, so for maximum compatibility, use metallic workflow shaders in your DCC, or your preview renders won’t accurately represent how your final rendered asset looks.
 
 > **Note**: Find more information and an example shader implementation for both of USD’s PBR workflows by reading the [`USDPreviewSurface shader page`](https://developer.apple.comhttps://openusd.org/release/spec_usdpreviewsurface.html) in the USD specification.
 
 #### Target a Renderer
 
 Your app or operating system will use one of three renderers, based on these factors:
+
+- **RealityKit**: The RealityKit renderer is part of the RealityKit framework. It handles drawing for Reality Composer, Reality Composer Pro and RealityKit scenes. Keynote on visionOS, Freeform, QuickLook and Xcode also use RealityKit to render USDZ files.
+- **SceneKit**: The SceneKit renderer is part of the deprecated SceneKit framework. It renders 3D content in iWork for macOS and iOS, Motion, and all other apps that use the SceneKit framework, as well as renders SceneKit scenes in Xcode and Preview.
+- **Storm**: The Storm renderer is a Metal-native implementation of Pixar’s high-performance preview renderer. Quicklook on macOS uses Storm to render USD, USDA and USDC files. Preview on macOS also uses Storm to display all USD file types, as well as files that may be converted to USD.
 
 Use the process outlined below to ensure that your USD assets render correctly and function as expected in your app.
 
@@ -34,7 +38,7 @@ The USD adoption process often results in changes to proposed schemas before the
 
 #### Target Your Use of Subdivision
 
-USD supports a feature called , which tells the renderer to generate additional geometry on-the-fly to make the entity render more smoothly. Target your use of this feature to instances when you most need smooth rendering. Each level of subdivision increases the number of rendered polygons in the model by a factor of four, which can have substantial performance implications.
+USD supports a feature called *subdivision surfaces*, which tells the renderer to generate additional geometry on-the-fly to make the entity render more smoothly. Target your use of this feature to instances when you most need smooth rendering. Each level of subdivision increases the number of rendered polygons in the model by a factor of four, which can have substantial performance implications.
 
 > **Note**: The default `subdivisionScheme` value in USD is `catmullClark`, a subdivision surfaces algorithm. This means subdivision surfaces is automatically enabled for assets that don’t explicitly include a subdivision scheme. To ensure that subdivision surfaces is not enabled for your asset, explicitly set `subdivisionScheme` to `none` when exporting from a DCC. For more information, see the [`documentation for GetSubdivisionSchemeAttr() in the USD specification.`](https://developer.apple.comhttps://openusd.org/release/api/class_usd_geom_mesh.html) You can also use the support scripts below to set `subdivisionScheme` to `none` automatically in your USD files.
 
@@ -46,7 +50,7 @@ USD geometry can be set to render both sides of a surface by setting the `double
 
 #### Limit Rigged Models to a Single Skeleton
 
-USD supports skeletal animation, which you can use to animate a character or other complex model by manipulating a hierarchy of bones or joints to deform the model. Many DCCs allow you to use multiple  (sometimes called  or ), to deform a single mesh. For example, for a character model, you might create one skeleton to handle facial animation and a second one to control general body movement. Before exporting models with multiple skeletons to a USD file, merge all the skeletons into a single joint or bone hierarchy. Models with multiple hierarchies can cause performance and compatibility issues with all three renderers.
+USD supports skeletal animation, which you can use to animate a character or other complex model by manipulating a hierarchy of bones or joints to deform the model. Many DCCs allow you to use multiple *skeletons* (sometimes called *armatures* or *rigs*), to deform a single mesh. For example, for a character model, you might create one skeleton to handle facial animation and a second one to control general body movement. Before exporting models with multiple skeletons to a USD file, merge all the skeletons into a single joint or bone hierarchy. Models with multiple hierarchies can cause performance and compatibility issues with all three renderers.
 
 > **Note**: All DCCs implement skeletal animation using either a hierarchy of bones or joints. Both approaches deform the model for animation, but use different underlying data representations. DCCs that use bone-based skeletons automatically convert the skeleton to joints when exporting to USD, because USD only supports joint-based skeletons.
 

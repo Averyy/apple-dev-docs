@@ -33,9 +33,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `theHost`: The host to modify. The value must not be  .
-- `clientCB`: The callback function to associate with  . The callback function will be called when a resolution completes or is cancelled. If you are calling this function to disassociate a client context and callback from  , p ass  .
-- `clientContext`: Pass   when disassociating a client context and a callback from a host.
+- `theHost`: The host to modify. The value must not be `NULL`.
+- `clientCB`: The callback function to associate with `theHost`. The callback function will be called when a resolution completes or is cancelled. If you are calling this function to disassociate a client context and callback from `theHost`, p`clientCB`ass `NULL`.
+- `clientContext`: A [`CFHostClientContext`](cfhostclientcontext.md) structure whose `info` field will be passed to the callback function specified by `clientCB` when `clientCB` is called. This value must not be `NULL` when setting an association. Pass `NULL` when disassociating a client context and a callback from a host.
 
 ## See Also
 

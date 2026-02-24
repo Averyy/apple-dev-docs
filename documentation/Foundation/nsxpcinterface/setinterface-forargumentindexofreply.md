@@ -26,10 +26,10 @@ If an argument to a method in your protocol should be sent as a proxy object ins
 
 ## Parameters
 
-- `ifc`: The   object that describes the protocol for the proxy object. The interface is configured the same way as the interface for an exported object or remote object proxy.
+- `ifc`: The [`NSXPCInterface`](nsxpcinterface.md) object that describes the protocol for the proxy object. The interface is configured the same way as the interface for an exported object or remote object proxy.
 - `sel`: Specifies which method in the protocol is being configured.
 - `arg`: Specifies the position (starting at index 0) of the parameter for which you are configuring a proxy object. This may be either the position of a parameter in the method itself or the position in its reply block. This argument must be an object.
-- `ofReply`: Pass   if   is an index into the parameters of the reply block, or   if it is an index into the parameters of the method itself.
+- `ofReply`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) if `arg` is an index into the parameters of the reply block, or [`false`](https://developer.apple.com/documentation/Swift/false) if it is an index into the parameters of the method itself.
 
 
 ---

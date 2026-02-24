@@ -31,8 +31,8 @@ It is safe to call this method from any thread in your app in macOS 10.6 and lat
 ## Parameters
 
 - `appName`: The name of the app to open.
-- `showIcon`: If  , the app’s icon is not placed on the screen. (The icon still exists, though.)
-- `autolaunch`: If  , the autolaunch default is set as though the specified app were autolaunched at startup.
+- `showIcon`: If [`false`](https://developer.apple.com/documentation/Swift/false), the app’s icon is not placed on the screen. (The icon still exists, though.)
+- `autolaunch`: If [`true`](https://developer.apple.com/documentation/Swift/true), the autolaunch default is set as though the specified app were autolaunched at startup.
 
 ## See Also
 

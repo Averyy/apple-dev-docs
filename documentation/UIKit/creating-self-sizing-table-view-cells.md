@@ -92,10 +92,10 @@ In order to test how the sample app reacts to different text sizes, run the app 
 To use Accessibility Inspector, follow these steps:
 
 1. Launch Xcode, then run your app.
-2. From the Xcode menu bar, select  to launch the inspector.
-3. In the upper left corner of the Accessibility Inspector, select  as the target.
-4. Click the  icon (shaped like a gear).
-5. Move the  slider to change the size of text displayed in your app.
+2. From the Xcode menu bar, select **Xcode > Open Developer Tool > Accessibility Inspector** to launch the inspector.
+3. In the upper left corner of the Accessibility Inspector, select **Simulator** as the target.
+4. Click the *Settings* icon (shaped like a gear).
+5. Move the *Font size* slider to change the size of text displayed in your app.
 
 ## See Also
 

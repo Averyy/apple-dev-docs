@@ -19,7 +19,7 @@ init(pixelBuffer: CVPixelBuffer, presentationTime: CMTime, layout: ImmersiveVide
 
 - `pixelBuffer`: pixelBuffer containing the video frame.
 - `presentationTime`: Presentation time of the video frame.
-- `layout`: How left and right eye is packed into the pixelBuffer. See   for the valid options.
+- `layout`: How left and right eye is packed into the pixelBuffer. See [`ImmersiveVideoFrame.VideoLayout`](immersivevideoframe/videolayout.md) for the valid options.
 
 
 ---

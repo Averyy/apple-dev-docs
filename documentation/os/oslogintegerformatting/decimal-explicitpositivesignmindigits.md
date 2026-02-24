@@ -26,7 +26,7 @@ A custom decimal format for integers.
 
 ## Parameters
 
-- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus ( ) sign in front of positive integers.
+- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus (`+`) sign in front of positive integers.
 - `minDigits`: The minimum number of digits to display for the integer. If the number of digits in the integer is less than this value, the logging system adds leading zeros.
 
 ## See Also

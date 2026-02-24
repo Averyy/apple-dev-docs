@@ -3,7 +3,7 @@
 **Framework**: CFNetwork  
 **Kind**: var
 
-A Boolean value indicating that the connection should not be established over a cellular (WWAN) connection. This value can only be set  you open the stream.
+A Boolean value indicating that the connection should not be established over a cellular (WWAN) connection. This value can only be set *before* you open the stream.
 
 **Availability**:
 - iOS 5.0+

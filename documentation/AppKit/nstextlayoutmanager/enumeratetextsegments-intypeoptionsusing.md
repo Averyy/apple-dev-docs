@@ -20,9 +20,9 @@ A text segment is a logically and visually contiguous portion of the text conten
 
 ## Parameters
 
-- `textRange`: The range as an  .
-- `type`: One of the available   values.
-- `options`: One or more of the   options.
+- `textRange`: The range as an [`NSTextRange`](nstextrange.md).
+- `type`: One of the available [`NSTextLayoutManager.SegmentType`](nstextlayoutmanager/segmenttype.md) values.
+- `options`: One or more of the [`NSTextLayoutManager.SegmentOptions`](nstextlayoutmanager/segmentoptions.md) options.
 - `block`: A closure you provide to determine if the enumeration finishes early.
 
 ## See Also

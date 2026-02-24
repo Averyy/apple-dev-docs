@@ -31,7 +31,7 @@ If you want to customize the placeholder or apply [`ResolvedModel3D`](resolvedmo
 ## Parameters
 
 - `catalog`: A collection of alternative representations for an entity.
-- `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity,   mapping the ID of a configuration set to the ID of a configuration within that set.
+- `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity, mapping the ID of a configuration set to the ID of a configuration within that set.
 
 
 ---

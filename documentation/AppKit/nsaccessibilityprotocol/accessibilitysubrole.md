@@ -26,9 +26,9 @@ func accessibilitySubrole() -> NSAccessibility.Subrole?
 - [func setAccessibilityRole(NSAccessibility.Role?)](nsaccessibilityprotocol/setaccessibilityrole(_:).md)
   Sets the type of interface element that the accessibility element represents.
 - [func accessibilityRoleDescription() -> String?](nsaccessibilityprotocol/accessibilityroledescription.md)
-  Returns a localized, human-intelligible description of the accessibility element’s role, such as .
+  Returns a localized, human-intelligible description of the accessibility element’s role, such as *radio button*.
 - [func setAccessibilityRoleDescription(String?)](nsaccessibilityprotocol/setaccessibilityroledescription(_:).md)
-  Sets the localized, human-intelligible description of the accessibility element’s role, such as .
+  Sets the localized, human-intelligible description of the accessibility element’s role, such as *radio button*.
 - [func setAccessibilitySubrole(NSAccessibility.Subrole?)](nsaccessibilityprotocol/setaccessibilitysubrole(_:).md)
   Sets the specialized interface element type that the accessibility element represents.
 - [NSAccessibility.Role](nsaccessibility-swift.struct/role.md)

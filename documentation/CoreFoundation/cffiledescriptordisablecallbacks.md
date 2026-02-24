@@ -23,7 +23,7 @@ func CFFileDescriptorDisableCallBacks(_ f: CFFileDescriptor!, _ callBackTypes: C
 ## Parameters
 
 - `f`: A CFFileDescriptor.
-- `callBackTypes`: A bitmask that specifies which callbacks to disable (see   for possible components).
+- `callBackTypes`: A bitmask that specifies which callbacks to disable (see [`Callback Identifiers`](1477595-callback-identifiers.md) for possible components).
 
 ## See Also
 

@@ -22,7 +22,7 @@ func append<T>(bufferReference: T, flags: CMBlockBuffer.Flags = []) throws where
 
 ## Parameters
 
-- `bufferReference`: A block buffer to refer to. The buffer must not be empty unless you also pass the   flag.
+- `bufferReference`: A block buffer to refer to. The buffer must not be empty unless you also pass the [`permitEmptyReference`](cmblockbuffer/flags/permitemptyreference.md) flag.
 - `flags`: Feature and control flags.
 
 ## See Also

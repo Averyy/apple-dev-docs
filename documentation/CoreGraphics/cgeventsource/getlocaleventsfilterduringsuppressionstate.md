@@ -27,7 +27,7 @@ This function lets you specify an event source and a suppression state (event su
 
 ## Parameters
 
-- `state`: The type of event suppression interval during which the filter is applied. Pass one of the constants listed in  .
+- `state`: The type of event suppression interval during which the filter is applied. Pass one of the constants listed in [`CGEventSuppressionState`](cgeventsuppressionstate.md).
 
 ## See Also
 

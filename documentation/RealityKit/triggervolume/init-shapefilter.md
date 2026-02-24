@@ -23,7 +23,7 @@ Creates a trigger volume with the given shape and collision filter.
 ## Parameters
 
 - `shape`: The shape of the trigger volume.
-- `filter`: A collision filter that lets you differentiate among collision   groups.
+- `filter`: A collision filter that lets you differentiate among collision groups.
 
 ## See Also
 

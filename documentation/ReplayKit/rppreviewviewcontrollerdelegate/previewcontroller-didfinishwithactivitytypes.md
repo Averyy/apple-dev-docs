@@ -25,7 +25,7 @@ When the user is finished making changes to a screen recording, your app is resp
 ## Parameters
 
 - `previewController`: The preview view controller to be dismissed.
-- `activityTypes`: A set of activity types as listed in  .
+- `activityTypes`: A set of activity types as listed in [`UIActivity`](https://developer.apple.com/documentation/UIKit/UIActivity).
 
 ## See Also
 

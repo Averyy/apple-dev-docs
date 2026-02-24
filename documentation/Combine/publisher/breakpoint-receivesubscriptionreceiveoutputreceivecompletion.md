@@ -47,9 +47,9 @@ publisher.send("DEBUGGER")
 
 ## Parameters
 
-- `receiveSubscription`: A closure that executes when the publisher receives a subscription. Return   from this closure to raise  , or false to continue.
-- `receiveOutput`: A closure that executes when the publisher receives a value. Return   from this closure to raise  , or false to continue.
-- `receiveCompletion`: A closure that executes when the publisher receives a completion. Return   from this closure to raise  , or false to continue.
+- `receiveSubscription`: A closure that executes when the publisher receives a subscription. Return `true` from this closure to raise `SIGTRAP`, or false to continue.
+- `receiveOutput`: A closure that executes when the publisher receives a value. Return `true` from this closure to raise `SIGTRAP`, or false to continue.
+- `receiveCompletion`: A closure that executes when the publisher receives a completion. Return `true` from this closure to raise `SIGTRAP`, or false to continue.
 
 ## See Also
 

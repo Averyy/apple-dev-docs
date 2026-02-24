@@ -30,9 +30,32 @@ Constants declared contiguously in the Metal shading language (in an array or st
 
 To encode inlined constant data into the argument buffer, perform a memory copy operation from your data’s source pointer to the returned destination pointer.
 
+**Swift**:
+
+```swift
+let sourceConstants: [SourceConstants] = [
+    // Inlined constant data.
+    /* ... */
+]
+let destinationPointer = abEncoder.constantData(: 0)
+destinationPointer.copyBytes(from: sourceConstants, count: MemoryLayout<SourceConstants>.size)
+```
+
+**Objective-C**:
+
+```objective-c
+static const SourceConstants sourceConstants[] =
+{    
+    // Inlined constant data.
+    /* ... */
+};
+void *destinationPointer = [abEncoder constantDataAtIndex:0];
+memcpy(destinationPointer, sourceConstants, sizeof(SourceConstants));
+```
+
 ## Parameters
 
-- `index`: The index of an inline, constant-data argument within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of an inline, constant-data argument within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 
 ---

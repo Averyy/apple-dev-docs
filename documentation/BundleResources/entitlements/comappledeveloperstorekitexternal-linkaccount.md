@@ -10,6 +10,10 @@ A Boolean value that indicates whether your app can link to an external website 
 - iPadOS 15.4+
 - tvOS 16.4+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If your developer account has this entitlement, add it to your app by opening the project’s entitlements file in Xcode. Add the following key and set the corresponding value to `true`:

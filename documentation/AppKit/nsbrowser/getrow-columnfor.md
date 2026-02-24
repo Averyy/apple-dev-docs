@@ -24,8 +24,8 @@ If a row does not exist at `point`, then `-1` is set for the row. If a column do
 
 ## Parameters
 
-- `row`: On output, the row number of the cell at the specified point, or   if there is no cell at the point.
-- `column`: On output, he column number of the cell at the specified point, or   if there is no cell at the point.
+- `row`: On output, the row number of the cell at the specified point, or `-1` if there is no cell at the point.
+- `column`: On output, he column number of the cell at the specified point, or `-1` if there is no cell at the point.
 - `point`: The point to test.
 
 ## See Also

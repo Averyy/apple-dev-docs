@@ -24,8 +24,8 @@ init(capacity: Int, dimensionCount: Int, neighborCount: Int, dataType: BNNSDataT
 
 - `capacity`: The maximum number of data points.
 - `dimensionCount`: The number of features or dimensions of each data point.
-- `neighborCount`: The number of nearest neighbors that a subsequent call to   calculates.
-- `dataType`: The data type of the data points. This must be either   or  .
+- `neighborCount`: The number of nearest neighbors that a subsequent call to [`apply(index:outputIndices:outputDistances:)`](bnns/nearestneighbors/apply(index:outputindices:outputdistances:).md) calculates.
+- `dataType`: The data type of the data points. This must be either `BNNSDataTypeFloat32` or `BNNSDataTypeFloat16`.
 
 
 ---

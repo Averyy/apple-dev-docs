@@ -31,7 +31,7 @@ The `options` dictionary defines behaviors for the context, such as color space 
 
 ## Parameters
 
-- `options`: A dictionary containing options for the context. For applicable keys and values, see  .
+- `options`: A dictionary containing options for the context. For applicable keys and values, see [`CIContextOption`](cicontextoption.md).
 
 
 ---

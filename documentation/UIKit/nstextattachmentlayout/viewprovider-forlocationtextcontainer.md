@@ -30,8 +30,8 @@ The default implementation queries the text attachment view provider class using
 ## Parameters
 
 - `parentView`: The parent view.
-- `location`: An   that indicates that start of the string.
-- `textContainer`: The   that contains the source text.
+- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source text.
 
 ## See Also
 

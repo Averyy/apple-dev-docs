@@ -30,10 +30,10 @@ You must open the stream, using [`CFReadStreamOpen(_:)`](cfreadstreamopen(_:).md
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `bytes`: The memory buffer to read. This memory must exist for the lifetime of the new stream.
-- `length`: The size of  .
-- `bytesDeallocator`: The allocator to use to deallocate   when the stream is deallocated. Pass kCFAllocatorNull to prevent the stream from deallocating  .
+- `length`: The size of `bytes`.
+- `bytesDeallocator`: The allocator to use to deallocate `bytes` when the stream is deallocated. Pass kCFAllocatorNull to prevent the stream from deallocating `bytes`.
 
 ## See Also
 

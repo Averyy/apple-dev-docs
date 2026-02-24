@@ -43,13 +43,13 @@ struct DigitalCrown: View {
 
 ## Parameters
 
-- `binding`: A binding to a value that updates when the user rotates   the  Digital Crown.
+- `binding`: A binding to a value that updates when the user rotates the  Digital Crown.
 - `minValue`: Lower end of the range reported.
 - `maxValue`: Upper end of the range reported.
-- `stride`: The value settles on multiples of  .
-- `sensitivity`: How much the user needs to rotate the  Digital Crown   to move between two integer numbers.
-- `isContinuous`: Controls if the value reported stops at    and  , or if it should wrap around. Default is  .
-- `isHapticFeedbackEnabled`: Controls the generation of haptic feedback   when turning the Digital Crown. Default is  .
+- `stride`: The value settles on multiples of `stride`.
+- `sensitivity`: How much the user needs to rotate the  Digital Crown to move between two integer numbers.
+- `isContinuous`: Controls if the value reported stops at `minValue` and `maxValue`, or if it should wrap around. Default is `false`.
+- `isHapticFeedbackEnabled`: Controls the generation of haptic feedback when turning the Digital Crown. Default is `true`.
 
 ## See Also
 

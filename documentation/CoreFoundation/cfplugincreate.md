@@ -26,7 +26,7 @@ A new plug-in. Ownership follows the [`The Create Rule`](https://developer.apple
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new plug-in. Pass   or kCFAllocatorDefault to use the default allocator.
+- `allocator`: The allocator to use to allocate memory for the new plug-in. Pass `NULL` or kCFAllocatorDefault to use the default allocator.
 - `plugInURL`: The location of the plug-in.
 
 ## See Also

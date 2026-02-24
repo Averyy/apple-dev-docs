@@ -30,7 +30,8 @@ The receiver is app is passed the identifier of the window, which allows it to q
 
 - `identifier`: The unique interface item identifier string that was previously associated with the window. Use this string to determine which window to create.
 - `state`: A coder object containing the window state information. This coder object contains the combined restorable state of the window, which can include the state of the window, its delegate, window controller, and document object. You can use this state to determine which window to create.
-- `completionHandler`: A Block object to execute with the results of creating the window. You must execute this block at some point but may do so after the method returns if needed. This block takes the following parameters:
+- `completionHandler`: A Block object to execute with the results of creating the window. You must execute this block at some point but may do so after the method returns if needed. This block takes the following parameters: - The window that was created or nil if the window could not be created.
+- An error object if the window was not recognized or could not be created for whatever reason; otherwise, specify `nil`. In OS X v10.7, the error parameter is ignored.
 
 ## See Also
 

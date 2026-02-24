@@ -8,6 +8,10 @@ Configurations for scenes you use to display Compositor Services content in an i
 **Availability**:
 - visionOS 1.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Use this key to specify scene configurations for a session role. Each scene corresponds to one you use for content you display on the device. Make the default scene the first entry in the array. Use [`UIApplicationPreferredDefaultSceneSessionRole`](information-property-list/uiapplicationpreferreddefaultscenesessionrole.md) to indicate a preferred initial scene session role.

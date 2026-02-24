@@ -20,10 +20,10 @@ static func corners(topLeftRadius: UICornerRadius?, topRightRadius: UICornerRadi
 
 ## Parameters
 
-- `topLeftRadius`: A   that represents the radius to use for the top-left corner.
-- `topRightRadius`: A   that represents the radius to use for the top-right corner.
-- `bottomLeftRadius`: A   that represents the radius to use for the bottom-left corner.
-- `bottomRightRadius`: A   that represents the radius to use for the bottom-right corner.
+- `topLeftRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the top-left corner.
+- `topRightRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the top-right corner.
+- `bottomLeftRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the bottom-left corner.
+- `bottomRightRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the bottom-right corner.
 
 ## See Also
 

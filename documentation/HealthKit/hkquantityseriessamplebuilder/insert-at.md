@@ -26,7 +26,7 @@ This method calls [`insert(_:for:)`](hkquantityseriessamplebuilder/insert(_:for:
 ## Parameters
 
 - `quantity`: The quantity to insert.
-- `date`: The start date associated with the quantity. If this is the same start date as a previously provided quantity, this quantity replaces the previous one. This method fails with an   error if the   parameter is earlier than the series builder’s   property.
+- `date`: The start date associated with the quantity. If this is the same start date as a previously provided quantity, this quantity replaces the previous one. This method fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error if the `date` parameter is earlier than the series builder’s [`startDate`](hkquantityseriessamplebuilder/startdate.md) property.
 
 ## See Also
 

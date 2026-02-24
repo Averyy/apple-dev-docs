@@ -23,7 +23,7 @@ Marks the control template as containing sensitive, private user data.
 
 The system redacts controls marked with this modifier when those controls are displayed on the Lock Screen and the device is locked.
 
-Controls also respect the [`privacySensitive(_:)`](view/privacysensitive(_:).md) modifier applied to the control’s label. That modifier only redacts the control content, however. To redact the content  the state of the control, apply this modifier to the control template:
+Controls also respect the [`privacySensitive(_:)`](view/privacysensitive(_:).md) modifier applied to the control’s label. That modifier only redacts the control content, however. To redact the content *and* the state of the control, apply this modifier to the control template:
 
 ```swift
 struct GarageDoorOpener: ControlWidget {
@@ -43,7 +43,7 @@ struct GarageDoorOpener: ControlWidget {
 
 ## Parameters
 
-- `sensitive`: A Boolean value that determines whether this   control is sensitive.
+- `sensitive`: A Boolean value that determines whether this control is sensitive.
 
 
 ---

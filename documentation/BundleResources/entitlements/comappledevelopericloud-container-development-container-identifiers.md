@@ -13,6 +13,10 @@ The container identifiers for the iCloud development environment.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [com.apple.developer.icloud-container-environment](entitlements/com.apple.developer.icloud-container-environment.md)

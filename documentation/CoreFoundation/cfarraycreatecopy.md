@@ -30,7 +30,7 @@ The pointer values from `theArray` are copied into the new array; the values are
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `theArray`: The array to copy.
 
 ## See Also

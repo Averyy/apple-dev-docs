@@ -68,7 +68,7 @@ MacSampleFramework.framework/
 
 ##### Add a Privacy Manifest to Your Swift Package
 
-A Swift package’s resources can include its privacy manifest file. For more information about adding resource files to Swift packages, see [`Bundling resources with a Swift package`](https://developer.apple.com/documentation/Xcode/bundling-resources-with-a-swift-package). Source files reside in a subfolder of a package’s `Sources` directory that has the same name as the target they belong to. This is the default location for resources. If your resource files reside in the default location, add the privacy manifest to it. The following example shows a package manifest that declares the `SomeLibrary` target. Place your privacy manifest file in  if you don’t specify an alternative location, as shown below:
+A Swift package’s resources can include its privacy manifest file. For more information about adding resource files to Swift packages, see [`Bundling resources with a Swift package`](https://developer.apple.com/documentation/Xcode/bundling-resources-with-a-swift-package). Source files reside in a subfolder of a package’s `Sources` directory that has the same name as the target they belong to. This is the default location for resources. If your resource files reside in the default location, add the privacy manifest to it. The following example shows a package manifest that declares the `SomeLibrary` target. Place your privacy manifest file in *Sources/SomeLibrary* if you don’t specify an alternative location, as shown below:
 
 ```swift
 SamplePackage/

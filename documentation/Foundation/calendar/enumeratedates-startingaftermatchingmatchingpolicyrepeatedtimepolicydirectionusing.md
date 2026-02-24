@@ -34,11 +34,11 @@ The enumeration is stopped by setting `stop` to `true` in the closure and return
 
 ## Parameters
 
-- `start`: The   at which to start the search.
-- `components`: The   to use as input to the search algorithm.
+- `start`: The `Date` at which to start the search.
+- `components`: The `DateComponents` to use as input to the search algorithm.
 - `matchingPolicy`: Determines the behavior of the search algorithm when the input produces an ambiguous result.
 - `repeatedTimePolicy`: Determines the behavior of the search algorithm when the input produces a time that occurs twice on a particular day.
-- `direction`: Which direction in time to search. The default value is  , which means later in time.
+- `direction`: Which direction in time to search. The default value is `.forward`, which means later in time.
 - `block`: A closure that is called with search results.
 
 ## See Also

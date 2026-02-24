@@ -48,7 +48,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `interaction`: A specification of how people can interact with the   view behind a presentation.
+- `interaction`: A specification of how people can interact with the view behind a presentation.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The pin is added to the entity’s [`GeometricPinsComponent`](geometricpinscompo
 
 ## Parameters
 
-- `name`: Name of the   in the namespace of the owning entity.
+- `name`: Name of the `GeometricPin` in the namespace of the owning entity.
 - `skeletalJointName`: The name of the skeletal joint in the namespace of the owning entity.
 - `position`: The position of the pin, in local space of the joint.
 - `orientation`: The orientation of the pin, in local space of the joint.

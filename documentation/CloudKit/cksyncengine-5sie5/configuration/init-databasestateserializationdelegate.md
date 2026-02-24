@@ -23,7 +23,7 @@ init(database: CKDatabase, stateSerialization: CKSyncEngine.State.Serialization?
 ## Parameters
 
 - `database`: The database to sync — either a person’s private database or their shared database.
-- `stateSerialization`: If this is the first initialization of the associated sync engine, specify  ; otherwise, specify the state from the most recent   event that your delegate handled.
+- `stateSerialization`: If this is the first initialization of the associated sync engine, specify `nil`; otherwise, specify the state from the most recent [`CKSyncEngine.Event.stateUpdate(_:)`](cksyncengine-5sie5/event/stateupdate(_:).md) event that your delegate handled.
 - `delegate`: The object that provides the records to sync and handles any related events.
 
 

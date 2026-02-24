@@ -28,7 +28,7 @@ A view that triggers `action` when `publisher` emits an event.
 ## Parameters
 
 - `publisher`: The publisher to subscribe to.
-- `action`: The action to perform when an event is emitted by   . The event emitted by publisher is passed as a   parameter to  .
+- `action`: The action to perform when an event is emitted by `publisher`. The event emitted by publisher is passed as a parameter to `action`.
 
 ## See Also
 

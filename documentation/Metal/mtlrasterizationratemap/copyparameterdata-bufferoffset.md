@@ -28,7 +28,7 @@ You can convert between screen space and physical fragment space by binding the 
 
 ## Parameters
 
-- `buffer`: The buffer instance to copy the data into. It needs to have an   storage mode, and there needs to be enough room in the buffer to store the data.
+- `buffer`: The buffer instance to copy the data into. It needs to have an [`MTLStorageMode.shared`](mtlstoragemode/shared.md) storage mode, and there needs to be enough room in the buffer to store the data.
 - `offset`: The location in the buffer to copy the data to. The offset needs to be a multiple of the parameter alignment.
 
 ## See Also

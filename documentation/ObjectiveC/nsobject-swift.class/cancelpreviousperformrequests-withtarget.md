@@ -26,7 +26,7 @@ All perform requests having the same target `aTarget` are canceled. This method 
 
 ## Parameters
 
-- `aTarget`: The target for requests previously registered with the   instance method.
+- `aTarget`: The target for requests previously registered with the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) instance method.
 
 ## See Also
 

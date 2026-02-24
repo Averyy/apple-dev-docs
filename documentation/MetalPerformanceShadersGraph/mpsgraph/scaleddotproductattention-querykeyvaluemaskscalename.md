@@ -32,7 +32,7 @@ SDPA Op computes attention by computing softmax(scale * QK^T + M)V. queryTensor 
 - `queryTensor`: A tensor that represents the query projection.
 - `keyTensor`: A tensor that represents the key projection.
 - `valueTensor`: A tensor that represents the value projection.
-- `maskTensor`: An optional tensor that contains a mask that is applied to the scaled, matrix   multiplied query and value matrices. If mask tensor is nil, the QK^T is not element-wise masked.
+- `maskTensor`: An optional tensor that contains a mask that is applied to the scaled, matrix multiplied query and value matrices. If mask tensor is nil, the QK^T is not element-wise masked.
 - `scale`: A scale that is applied to the result of query and value matrix multiply.
 - `name`: The name for the operation.
 

@@ -22,7 +22,7 @@ func setIndirectCommandBuffers(_ buffers: [(any MTLIndirectCommandBuffer)?], ran
 ## Parameters
 
 - `buffers`: An array of indirect command buffers the method encodes.
-- `range`: A range of indices within the argument buffer for each element in  .   The values correspond to either the index IDs of declarations in   Metal Shading Language (MSL) or the   property   of   instances.
+- `range`: A range of indices within the argument buffer for each element in `buffers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
 
 ## See Also
 

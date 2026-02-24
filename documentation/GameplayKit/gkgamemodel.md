@@ -71,9 +71,9 @@ For more information about describing your gameplay model and using a strategist
 - [protocol GKStrategist](gkstrategist.md)
   A general interface for objects that provide artificial intelligence for use in turn-based (and similar) games.
 - [class GKMinmaxStrategist](gkminmaxstrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *deterministic* strategy.
 - [class GKMonteCarloStrategist](gkmontecarlostrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *probabilistic* strategy.
 - [protocol GKGameModelPlayer](gkgamemodelplayer.md)
   Implement this protocol to describe a player in your turn-based game so that a strategist object can plan game moves.
 - [protocol GKGameModelUpdate](gkgamemodelupdate.md)

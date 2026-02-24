@@ -24,6 +24,9 @@ You provide a block of this type when requesting pedometer events from a [`CMPed
 
 This block has no return value and takes the following parameters.
 
+- **`pedometerEvent`**: A [`CMPedometerEvent`](cmpedometerevent.md) object containing the event information. If there was an error retrieving the data, this parameter is nil.
+- **`error`**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if there was a problem or `nil` if the pedometer event was retrieved successfully.
+
 ## See Also
 
 - [func startUpdates(from: Date, withHandler: CMPedometerHandler)](cmpedometer/startupdates(from:withhandler:).md)

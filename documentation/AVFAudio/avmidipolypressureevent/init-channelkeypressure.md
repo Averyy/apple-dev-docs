@@ -21,7 +21,7 @@ init(channel: UInt32, key: UInt32, pressure: UInt32)
 
 ## Parameters
 
-- `channel`: The MIDI channel for the message, between   and  .
+- `channel`: The MIDI channel for the message, between `0` and `15`.
 - `key`: The MIDI key number to apply the pressure to.
 - `pressure`: The poly pressure value.
 

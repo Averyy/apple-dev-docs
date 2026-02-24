@@ -26,7 +26,8 @@ func loadLeaderboards(handler: @escaping ([GKLeaderboard]?, (any Error)?) -> Voi
 
 ## Parameters
 
-- `handler`: The block receives the following parameters:
+- `handler`: A block that GameKit calls when this method completes the request. The block receives the following parameters: - ***leaderboards***: The leaderboards in the leaderboard set.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

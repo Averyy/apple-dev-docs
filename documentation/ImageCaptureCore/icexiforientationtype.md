@@ -20,7 +20,7 @@ enum ICEXIFOrientationType
 
 #### Overview
 
-The meaning of this value is defined by the `EXIF` specification. Here is what the letter  would look like if it were tagged correctly and displayed by a program that ignores the orientation tag (thus showing the stored image):
+The meaning of this value is defined by the `EXIF` specification. Here is what the letter *F* would look like if it were tagged correctly and displayed by a program that ignores the orientation tag (thus showing the stored image):
 
 ```swift
                1             2             3             4

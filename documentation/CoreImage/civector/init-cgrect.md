@@ -29,7 +29,7 @@ The `CGRect` structure’s `x`, `y`, `height` and `width` values are stored in t
 
 ## Parameters
 
-- `r`: The   structure.
+- `r`: The `CGRect` structure.
 
 ## See Also
 

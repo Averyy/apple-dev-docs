@@ -6,7 +6,7 @@ Detect the language in a piece of text by using a language recognizer.
 
 #### Overview
 
- is the task of automatically detecting the language and script of a piece of text. In Natural Language, [`NLLanguageRecognizer`](nllanguagerecognizer.md) performs this task.
+*Language identification* is the task of automatically detecting the language and script of a piece of text. In Natural Language, [`NLLanguageRecognizer`](nllanguagerecognizer.md) performs this task.
 
 Using a language recognizer, you can obtain the most likely language for a piece of input text, or a set of possible language candidates with their associated probabilities. You can also constrain the identification process by providing a list of hints about known probabilities for languages, or a list of languages the predictions are constrained against. You’ll find supported languages in [`NLLanguage`](nllanguage.md), but you can also define and use your own language tags.
 

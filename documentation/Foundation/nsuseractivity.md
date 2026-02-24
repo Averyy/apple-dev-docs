@@ -39,6 +39,10 @@ In iOS 15 and later, a person can share content they’re viewing by asking Siri
 
 Quick Note on macOS and iOS can link to any app content represented as an [`NSUserActivity`](nsuseractivity.md). To appear as a link, the content must be the app’s current activity, and provide at least one of the following identifiers:
 
+- **[`webpageURL`](nsuseractivity/webpageurl.md)**: An `https:` URL, ideally in a canonical form that’s consistent every time a person visits the same content.
+- **[`persistentIdentifier`](nsuseractivity/persistentidentifier.md)**: A string that uniquely identifies the content in this domain. The identifier should identify the same content across devices.
+- **[`targetContentIdentifier`](nsuseractivity/targetcontentidentifier.md)**: A string that uniquely identifies the content in this domain, but also allows disambiguating between multiple scenes of an app. The identifier should identify the same content across devices.
+
 To work well with Quick Note, content must adhere to the following guidelines:
 
 - The activity [`title`](nsuseractivity/title.md) should be clear and concise. This text describes the content of the link, like “Photo taken on July 27, 2020” or “Conversation with Maria”. Use nouns for activity titles.

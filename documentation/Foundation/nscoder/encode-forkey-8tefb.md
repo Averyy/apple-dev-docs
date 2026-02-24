@@ -22,8 +22,8 @@ func encode(_ timeMapping: CMTimeMapping, forKey key: String)
 
 ## Parameters
 
-- `timeMapping`: A   structure.
-- `key`: The key with which to associate   in the archive.
+- `timeMapping`: A `CMTimeMapping` structure.
+- `key`: The key with which to associate `timeMapping` in the archive.
 
 ## See Also
 

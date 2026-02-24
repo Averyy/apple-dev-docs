@@ -27,7 +27,7 @@ If you no longer want an observer to receive any notifications, perhaps because 
 ## Parameters
 
 - `center`: The notification center from which to remove observers.
-- `observer`: The observer. This value must not be  .
+- `observer`: The observer. This value must not be `NULL`.
 
 ## See Also
 

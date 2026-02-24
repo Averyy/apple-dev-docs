@@ -25,6 +25,11 @@ object InstallProfileCommand
 - [object InstallProfileCommand.Command](installprofilecommand/command-data.dictionary.md)
   The command to install a configuration profile on a device.
 
+## Properties
+
+- `Command` (InstallProfileCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InstallProfileResponse](installprofileresponse.md)

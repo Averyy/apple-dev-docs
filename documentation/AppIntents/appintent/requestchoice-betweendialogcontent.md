@@ -34,9 +34,9 @@ The system presents a standard interface — for example, a modal sheet or alert
 
 ## Parameters
 
-- `options`: An array of options to choose from.   The order of options in this array determines the order of options in the UI, excluding the option to cancel the   choice. The system automatically handles the placement of the cancel option according to platform conventions.
+- `options`: An array of options to choose from. The order of options in this array determines the order of options in the UI, excluding the option to cancel the choice. The system automatically handles the placement of the cancel option according to platform conventions.
 - `dialog`: Instructional text or a question to help the person to choose an option.
-- `content`: A closure that provides a view that appears next to options, offering visual context that’s relevant to the decision;   for example, the closure could show a preview of data.
+- `content`: A closure that provides a view that appears next to options, offering visual context that’s relevant to the decision; for example, the closure could show a preview of data.
 
 
 ---

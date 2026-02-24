@@ -25,6 +25,11 @@ object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject
 - [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloads_declarationsobject.md)
   A declaration that the client supports.
 
+## Properties
+
+- `declarations` (StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject) *(required)*: A set of declarations that the client supports.
+- `status-items` ([string]) *(required)*: A list of status items that the client supports.
+
 ## See Also
 
 - [object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject.md)

@@ -23,7 +23,7 @@ When `aString` is an `NSString` object, the receiver is expected to render the m
 
 ## Parameters
 
-- `string`: The string to insert. Can be either an   or   instance.
+- `string`: The string to insert. Can be either an `NSString` or `NSAttributedString` instance.
 - `selectedRange`: The range to set as the selection, computed from the beginning of the inserted string.
 - `replacementRange`: The range to replace, computed from the beginning of the marked text.
 

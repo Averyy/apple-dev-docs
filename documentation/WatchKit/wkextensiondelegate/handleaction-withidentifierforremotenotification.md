@@ -25,7 +25,7 @@ For information about how to support interactive notifications in your iOS app, 
 ## Parameters
 
 - `identifier`: The action selected by the user. The string is the identifier for an action that was registered by the companion iOS app; it identifies which button was tapped by the user. Use the identifier to perform the associated action. This parameter is set to the empty string when the user launches the app without tapping one of the action buttons.
-- `remoteNotification`: The push notification payload dictionary. This parameter contains the data sent with the push notification. For information about the contents of this dictionary, see  .
+- `remoteNotification`: The push notification payload dictionary. This parameter contains the data sent with the push notification. For information about the contents of this dictionary, see [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
 
 ## See Also
 

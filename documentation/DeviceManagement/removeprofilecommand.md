@@ -25,6 +25,11 @@ object RemoveProfileCommand
 - [object RemoveProfileCommand.Command](removeprofilecommand/command-data.dictionary.md)
   The command to remove a previously installed profile from the device.
 
+## Properties
+
+- `Command` (RemoveProfileCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object RemoveProfileResponse](removeprofileresponse.md)

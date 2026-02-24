@@ -25,7 +25,7 @@ An async sequence you use to track the loading progress of the navigation. If th
 
 ## Parameters
 
-- `fromOrigin`: If  , end-to-end revalidation of the content using cache-validating conditionals   is performed, if possible.
+- `fromOrigin`: If `true`, end-to-end revalidation of the content using cache-validating conditionals is performed, if possible.
 
 ## See Also
 

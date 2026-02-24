@@ -20,7 +20,7 @@ Call this method to update specific items in your collection view. You call this
 
 ## Parameters
 
-- `indexPaths`: The index paths of the specific items that you want to reload. Specifying   for this parameter raises an exception.
+- `indexPaths`: The index paths of the specific items that you want to reload. Specifying `nil` for this parameter raises an exception.
 
 ## See Also
 

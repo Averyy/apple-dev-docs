@@ -24,10 +24,10 @@ A run loop source needs to be added to a run loop before it can fire and call it
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `userNotification`: The user notification to use.
 - `callout`: The callback function to invoke when the user notification dialog is dismissed.
-- `order`: A priority index indicating the order in which run loop sources are processed. User notifications currently ignore this parameter. Pass   for this value.
+- `order`: A priority index indicating the order in which run loop sources are processed. User notifications currently ignore this parameter. Pass `0` for this value.
 
 ## See Also
 

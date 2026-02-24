@@ -36,9 +36,9 @@ If this function returns `NULL`, the get request forwards to the object’s stat
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to search for the property.
-- `propertyName`: A   that contains the name of the property to get.
-- `exception`: A pointer to a   to return an exception in, if any.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to search for the property.
+- `propertyName`: A [`JSStringRef`](jsstringref.md) that contains the name of the property to get.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

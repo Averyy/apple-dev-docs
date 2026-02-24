@@ -29,7 +29,7 @@ This is the designated initializer for `UITextView` objects.
 ## Parameters
 
 - `frame`: The frame rectangle of the text view.
-- `textContainer`: The text container to use for the receiver (can be  ).
+- `textContainer`: The text container to use for the receiver (can be `nil`).
 
 ## See Also
 

@@ -183,7 +183,7 @@ As shown above, in the `connectViewToAU()` method, you find the Audio Unit’s p
 
 ##### Add Factory Presets
 
-Most audio plug-ins provide a collection of preset values known as . A factory preset is a preconfigured arrangement of the plug-in’s parameter values that provide a useful starting point for further customization. A host app presents these presets in its user interface so the user can select them.
+Most audio plug-ins provide a collection of preset values known as *factory presets*. A factory preset is a preconfigured arrangement of the plug-in’s parameter values that provide a useful starting point for further customization. A host app presents these presets in its user interface so the user can select them.
 
 The following code example shows how to define the factory presets and their associated values.
 
@@ -256,7 +256,7 @@ public override var currentPreset: AUAudioUnitPreset? {
 
 ##### Package Your Plug in to Run in Process
 
-Like all App Extensions, AUv3 plug-ins run  by default, which means the extension runs in a separate process from the host app, and all communication between the two occurs over interprocess communication (IPC). This model provides increased security and stability for the host app. For example, if an AUv3 plug-in crashes, the host app won’t crash. However, the IPC communication adds a small amount of overhead to each render cycle, which may be unacceptable depending on the needs of a given application. In macOS only, you can package your plug-in to run , which eliminates the IPC communication as your Audio Unit runs as part of the host’s process.
+Like all App Extensions, AUv3 plug-ins run *out-of-process* by default, which means the extension runs in a separate process from the host app, and all communication between the two occurs over interprocess communication (IPC). This model provides increased security and stability for the host app. For example, if an AUv3 plug-in crashes, the host app won’t crash. However, the IPC communication adds a small amount of overhead to each render cycle, which may be unacceptable depending on the needs of a given application. In macOS only, you can package your plug-in to run *in-process*, which eliminates the IPC communication as your Audio Unit runs as part of the host’s process.
 
 Running an in-process plug-in requires an agreement between the host and the Audio Unit. The host requests in-process instantiation by passing the [`loadInProcess`](https://developer.apple.com/documentation/AudioToolbox/AudioComponentInstantiationOptions/loadInProcess) option during the plug-in’s creation, and you need to package your Audio Unit as described and shown below.
 

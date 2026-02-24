@@ -36,10 +36,10 @@ If your callback returns an error, it must return zero packets of data. Upon rec
 ## Parameters
 
 - `inAudioConverter`: The audio converter object that invoked this callback to obtain new data to convert.
-- `ioNumberDataPackets`: On input, the minimum number of packets of input audio data the converter needs for its current conversion cycle. On output, the number of packets of audio data provided for conversion, or   if there is no more data to convert.
-- `ioData`: On output, point the fields of the   structure, passed by this parameter, to the audio data you are providing to be converted.
-- `outDataPacketDescription`: If not   on input,  the audio converter expects this callback to provide an array of   structures on output, one for each packet of audio data you are providing in the   parameter.
-- `inUserData`: On input, the custom application data you provided to the   function.
+- `ioNumberDataPackets`: On input, the minimum number of packets of input audio data the converter needs for its current conversion cycle. On output, the number of packets of audio data provided for conversion, or `0` if there is no more data to convert.
+- `ioData`: On output, point the fields of the `AudioBufferList` structure, passed by this parameter, to the audio data you are providing to be converted.
+- `outDataPacketDescription`: If not `NULL` on input,  the audio converter expects this callback to provide an array of `AudioStreamPacketDescription` structures on output, one for each packet of audio data you are providing in the `ioData` parameter.
+- `inUserData`: On input, the custom application data you provided to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) function.
 
 ## See Also
 

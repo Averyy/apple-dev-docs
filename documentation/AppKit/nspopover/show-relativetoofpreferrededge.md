@@ -20,9 +20,9 @@ This method raises [`internalInconsistencyException`](https://developer.apple.co
 
 ## Parameters
 
-- `positioningRect`: The rectangle within   relative to which the popover should be positioned. Normally set to the bounds of  . May be an empty rectangle, which will default to the bounds of  .
-- `positioningView`: The view relative to which the popover should be positioned. Causes the method to raise    if  .
-- `preferredEdge`: The edge of   the popover should prefer to be anchored to.
+- `positioningRect`: The rectangle within `positioningView` relative to which the popover should be positioned. Normally set to the bounds of `positioningView`. May be an empty rectangle, which will default to the bounds of `positioningView`.
+- `positioningView`: The view relative to which the popover should be positioned. Causes the method to raise  [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if `nil`.
+- `preferredEdge`: The edge of `positioningView` the popover should prefer to be anchored to.
 
 ## See Also
 

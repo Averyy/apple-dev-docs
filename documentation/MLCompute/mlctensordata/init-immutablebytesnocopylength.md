@@ -25,7 +25,7 @@ convenience init(immutableBytesNoCopy bytes: UnsafeRawPointer, length: Int)
 ## Parameters
 
 - `bytes`: A buffer that contains immutable data.
-- `length`: The number of bytes you choose to reference from  . This number must not exceed the length of  .
+- `length`: The number of bytes you choose to reference from `bytes`. This number must not exceed the length of `bytes`.
 
 ## See Also
 

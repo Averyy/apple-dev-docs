@@ -22,8 +22,8 @@ init(insertionPoint: AttributedString.Index, typingAttributes: AttributeContaine
 
 ## Parameters
 
-- `insertionPoint`: The index of the string where the   charet should be positioned.
-- `typingAttributes`: The attributes for the next character   that is typed, or   if they should be inferred from the attributes   on the text.
+- `insertionPoint`: The index of the string where the charet should be positioned.
+- `typingAttributes`: The attributes for the next character that is typed, or `nil` if they should be inferred from the attributes on the text.
 
 
 ---

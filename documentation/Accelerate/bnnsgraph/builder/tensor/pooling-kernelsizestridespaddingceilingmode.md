@@ -29,7 +29,7 @@ This operation assumes the source tensor is in  `(N, C, spatial dimensions...)` 
 - `function`: An enumeration that specifies the pooling function.
 - `kernelSize`: The size of the pooling kernel.
 - `strides`: An array that contains the kernel stride for each spatial dimension.
-- `padding`: An enumeration that specifies that the operation computes the padding from   the input and output shapes. If you specify  , pass twice the number of spatial dimensions.
+- `padding`: An enumeration that specifies that the operation computes the padding from the input and output shapes. If you specify `custom`, pass twice the number of spatial dimensions.
 - `ceilingMode`: An enumeration that specifies how the operation rounds when calculating the output size.
 
 

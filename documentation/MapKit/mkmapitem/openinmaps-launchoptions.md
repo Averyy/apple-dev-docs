@@ -35,7 +35,7 @@ If you don’t include the [`MKLaunchOptionsMapCenterKey`](mklaunchoptionsmapcen
 
 ## Parameters
 
-- `launchOptions`: This parameter may be  .
+- `launchOptions`: Additional information that the Maps app can use to configure the map display. For example, you can use the launch options to specify the visible map region and the map type. For a list of keys you can put into this dictionary, see [`Launch options dictionary keys`](launch-options-dictionary-keys.md). This parameter may be `nil`.
 
 ## See Also
 

@@ -17,7 +17,7 @@ struct FFCONSTANTFORCE
 
 #### Overview
 
-A pointer to a single FFCONSTANTFORCE structure for an effect is passed in the  member of the FFEFFECT structure.
+A pointer to a single FFCONSTANTFORCE structure for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure.
 
 ## Topics
 

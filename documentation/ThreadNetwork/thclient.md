@@ -20,11 +20,11 @@ class THClient
 
 #### Overview
 
-Request credentials for either a specific Thread network or for the  using [`THClient`](thclient.md). The preferred network is the default Thread network chosen by the framework for a home.
+Request credentials for either a specific Thread network or for the *preferred network* using [`THClient`](thclient.md). The preferred network is the default Thread network chosen by the framework for a home.
 
 The ThreadNetwork framework maintains a database of network credentials. The class allows clients to store, list, and delete credentials for a given network from the database.
 
-Some methods in [`THClient`](thclient.md) use the , a string that you store in your application’s `Info.plist`. The ThreadNetwork framework uses the team ID to preserve the privacy of the Thread network credentials across different clients. For example, credentials stored by one client can’t be deleted or modified by another client.
+Some methods in [`THClient`](thclient.md) use the *team ID*, a string that you store in your application’s `Info.plist`. The ThreadNetwork framework uses the team ID to preserve the privacy of the Thread network credentials across different clients. For example, credentials stored by one client can’t be deleted or modified by another client.
 
 > ❗ **Important**: Thread credentials give you the ability to add any device into the Thread network. Use this information responsibly.
 

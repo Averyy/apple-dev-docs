@@ -20,7 +20,7 @@ Some `NSDocument` methods, like those involved in writing, may not immediately d
 
 ## Parameters
 
-- `error`: An   object returned by another   method.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object returned by another `NSDocument` method.
 
 ## See Also
 

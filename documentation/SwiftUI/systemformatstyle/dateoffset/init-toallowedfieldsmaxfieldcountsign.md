@@ -28,10 +28,10 @@ The offset to the `anchor` is “positive” if the formatted `date` is greater 
 
 ## Parameters
 
-- `anchor`: The date the offset is measured to from the format   input.
-- `allowedFields`: The units of time that may be used in the format   to express the offset.
-- `maxFieldCount`: The number of fields that can be shown at once.   For example, 1 hour, 34 minutes, and 23 seconds is shown as    by default, but as   if the    is set to one.
-- `sign`: The strategy for displaying a sign to signal whether the   offset points to ward the future or past.
+- `anchor`: The date the offset is measured to from the format input.
+- `allowedFields`: The units of time that may be used in the format to express the offset.
+- `maxFieldCount`: The number of fields that can be shown at once. For example, 1 hour, 34 minutes, and 23 seconds is shown as `1 hour, 34 minutes` by default, but as `1 hour` if the `maxFieldCount` is set to one.
+- `sign`: The strategy for displaying a sign to signal whether the offset points to ward the future or past.
 
 
 ---

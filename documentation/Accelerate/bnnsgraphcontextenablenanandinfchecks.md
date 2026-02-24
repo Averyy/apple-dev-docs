@@ -27,7 +27,7 @@ Don’t enable this option for production code.
 ## Parameters
 
 - `context`: The graph context.
-- `enable_check_for_nans_inf`: If  , specifies that the context checks intermediate tensors for NaNs and infinities.
+- `enable_check_for_nans_inf`: If `true`, specifies that the context checks intermediate tensors for NaNs and infinities.
 
 ## See Also
 

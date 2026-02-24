@@ -27,7 +27,7 @@ A `CFType` object that is a copy of the property value for `key`. Returns `NULL`
 ## Parameters
 
 - `formatter`: The number formatter to examine.
-- `key`: A property key. See   for valid values.
+- `key`: A property key. See [`Number Formatter Property Keys`](number-formatter-property-keys.md) for valid values.
 
 ## See Also
 

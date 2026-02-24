@@ -32,8 +32,8 @@ Use the typesetter to create lines, perform line breaking, and do other contextu
 
 ## Parameters
 
-- `string`: The attributed string to typeset. This parameter must be a valid   object.
-- `options`: A dictionary of typesetter options, or   if there are none.
+- `string`: The attributed string to typeset. This parameter must be a valid `CFAttributedString` object.
+- `options`: A dictionary of typesetter options, or `NULL` if there are none.
 
 ## See Also
 

@@ -18,7 +18,7 @@ The tvOS 12 SDK provides support for developing tvOS apps for Apple TV devices r
 
 ###### Known Issues
 
-- PIN pairing with a remote Apple TV might not successfully establish the connection on the first attempt. (40228498)  Exit and reenter the Remotes and Devices pairing screen on Apple TV, then reattempt the pair request in Xcode.
+- PIN pairing with a remote Apple TV might not successfully establish the connection on the first attempt. (40228498) **Workaround:** Exit and reenter the Remotes and Devices pairing screen on Apple TV, then reattempt the pair request in Xcode.
 
 ##### Urlsession
 
@@ -34,7 +34,7 @@ The tvOS 12 SDK provides support for developing tvOS apps for Apple TV devices r
 
 ###### Known Issues
 
-- The new build system in Xcode doesn’t support On Demand Resources (ODR). (31508570)  Use the legacy build system for projects requiring ODR (File > Project/Workspace Settings).
+- The new build system in Xcode doesn’t support On Demand Resources (ODR). (31508570) **Workaround:** Use the legacy build system for projects requiring ODR (File > Project/Workspace Settings).
 
 ## See Also
 

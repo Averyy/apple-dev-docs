@@ -23,7 +23,7 @@ class MPSImageConvolution
 
 Filter width and height can be either 3, 5, 7 or 9. If there are multiple channels in the source image, each channel is processed independently.
 
-A  convolution filter may perform better when done in two passes. . A convolution filter is separable if the ratio of filter values between all rows is constant over the whole row. For example, this edge detection filter:
+A *separable* convolution filter may perform better when done in two passes. . A convolution filter is separable if the ratio of filter values between all rows is constant over the whole row. For example, this edge detection filter:
 
 ![None](https://docs-assets.developer.apple.com/published/37c3fd51dec62d6ecc454acaa2cfd116/media-2556905%402x.png)
 

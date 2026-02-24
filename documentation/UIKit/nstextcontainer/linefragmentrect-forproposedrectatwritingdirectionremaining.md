@@ -28,7 +28,7 @@ This method can be overridden by subclasses for further text container region cu
 
 - `proposedRect`: A rectangle in which to lay out text proposed by the layout manager.
 - `characterIndex`: The character location inside the text storage for the line fragment being processed.
-- `baseWritingDirection`: The direction of advancement for line fragments inside a visual horizontal line. The values passed into the method are either   or  .
+- `baseWritingDirection`: The direction of advancement for line fragments inside a visual horizontal line. The values passed into the method are either [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md).
 - `remainingRect`: The remainder of the proposed rectangle that was excluded from returned rectangle. It can be passed in as the proposed rectangle for the next iteration.
 
 ## See Also

@@ -20,7 +20,7 @@ Implement a custom version of this method and use the [`TYPE`](https://developer
 
 ## Parameters
 
-- `action`: A pointer to the   object of the async request.
+- `action`: A pointer to the `OSAction` object of the async request.
 - `status`: The result of the operation.
 - `bytesTransferred`: The byte count of the completed data phase.
 

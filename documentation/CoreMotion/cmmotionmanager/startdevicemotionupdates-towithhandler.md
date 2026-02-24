@@ -25,7 +25,7 @@ This method reports motion relative to the reference frame in the [`attitudeRefe
 ## Parameters
 
 - `queue`: An operation queue provided by the caller. Because the processed events might arrive at a high rate, using the main operation queue is not recommended.
-- `handler`: A block that is invoked with each update to handle new device-motion data. The block must conform to the   type.
+- `handler`: A block that is invoked with each update to handle new device-motion data. The block must conform to the [`CMDeviceMotionHandler`](cmdevicemotionhandler.md) type.
 
 ## See Also
 

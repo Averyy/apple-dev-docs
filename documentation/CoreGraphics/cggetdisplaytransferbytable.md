@@ -23,9 +23,9 @@ A result code. See `Core Graphics Data Types and Constants`.
 
 - `display`: The identifier of the display to be accessed.
 - `capacity`: The number of entries each table can hold.
-- `redTable`: A pointer to an array of type   with size  . On return, the array contains the values of the red channel in the display’s gamma table.
-- `greenTable`: A pointer to an array of type   with size  . On return, the array contains the values of the green channel in the display’s gamma table.
-- `blueTable`: A pointer to an array of type   with size  . On return, the array contains the values of the blue channel in the display’s gamma table.
+- `redTable`: A pointer to an array of type `CGGammaValue` with size `capacity`. On return, the array contains the values of the red channel in the display’s gamma table.
+- `greenTable`: A pointer to an array of type `CGGammaValue` with size `capacity`. On return, the array contains the values of the green channel in the display’s gamma table.
+- `blueTable`: A pointer to an array of type `CGGammaValue` with size `capacity`. On return, the array contains the values of the blue channel in the display’s gamma table.
 - `sampleCount`: The number of samples actually copied into each array.
 
 ## See Also

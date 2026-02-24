@@ -35,7 +35,7 @@ Creating a composition with this method sets values for the following properties
 ## Parameters
 
 - `asset`: The asset whose configuration matches the intended use of the video composition.
-- `applier`: The block takes a single parameter and has no return value:
+- `applier`: A block that AVFoundation calls when processing each video frame. The block takes a single parameter and has no return value: - **request**: An [`AVAsynchronousCIImageFilteringRequest`](avasynchronousciimagefilteringrequest.md) object representing the frame to be processed.
 
 ## See Also
 

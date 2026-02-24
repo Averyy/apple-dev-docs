@@ -40,7 +40,7 @@ For more background, see the first example used in [`PointMark`](pointmark.md) w
 ## Parameters
 
 - `x`: The value plotted with x.
-- `y`: The y position.  If   is  , the bar will be centered vertically by default.
+- `y`: The y position.  If `y` is `nil`, the bar will be centered vertically by default.
 
 ## See Also
 

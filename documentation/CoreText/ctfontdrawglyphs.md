@@ -26,10 +26,10 @@ This function modifies graphics state including font, text size, and text matrix
 
 ## Parameters
 
-- `font`: The font with glyphs to render. If the font has a size or matrix attribute,   is set with these values.
-- `glyphs`: The glyphs to be rendered. The glyphs should be the result of proper Unicode text layout operations (such as with  ). Functions such as   do not perform any Unicode text layout.
-- `positions`: The positions (origins) for each glyph in  . The positions are in user space. The number of positions passed in must match the number of glyphs (in  ).
-- `count`: The number of glyphs to be rendered from the   array.
+- `font`: The font with glyphs to render. If the font has a size or matrix attribute, `context` is set with these values.
+- `glyphs`: The glyphs to be rendered. The glyphs should be the result of proper Unicode text layout operations (such as with `CTLine`). Functions such as [`CTFontGetGlyphsForCharacters(_:_:_:_:)`](ctfontgetglyphsforcharacters(_:_:_:_:).md) do not perform any Unicode text layout.
+- `positions`: The positions (origins) for each glyph in `glyphs`. The positions are in user space. The number of positions passed in must match the number of glyphs (in `glyphs`).
+- `count`: The number of glyphs to be rendered from the `glyphs` array.
 - `context`: The graphics context used to render the glyphs.
 
 ## See Also

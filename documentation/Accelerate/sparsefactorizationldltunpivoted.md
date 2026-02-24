@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-A constant that represents Cholesky-like  factorization with only one-by-one pivots and no pivoting.
+A constant that represents Cholesky-like *LDLᵀ* factorization with only one-by-one pivots and no pivoting.
 
 **Availability**:
 - iOS 11.0+
@@ -23,13 +23,13 @@ var SparseFactorizationLDLTUnpivoted: SparseFactorization_t { get }
 ## See Also
 
 - [var SparseFactorizationCholesky: SparseFactorization_t](sparsefactorizationcholesky.md)
-  A constant that represents Cholesky () factorization.
+  A constant that represents Cholesky (*LLᵀ*) factorization.
 - [var SparseFactorizationLDLT: SparseFactorization_t](sparsefactorizationldlt.md)
-  A constant that represents the default  factorization.
+  A constant that represents the default *LDLᵀ* factorization.
 - [var SparseFactorizationLDLTSBK: SparseFactorization_t](sparsefactorizationldltsbk.md)
-  A constant that represents  factorization with Supernode-Bunch-Kaufman and static pivoting.
+  A constant that represents *LDLᵀ* factorization with Supernode-Bunch-Kaufman and static pivoting.
 - [var SparseFactorizationLDLTTPP: SparseFactorization_t](sparsefactorizationldlttpp.md)
-  A constant that represents  factorization with full-threshold partial pivoting.
+  A constant that represents *LDLᵀ* factorization with full-threshold partial pivoting.
 
 
 ---

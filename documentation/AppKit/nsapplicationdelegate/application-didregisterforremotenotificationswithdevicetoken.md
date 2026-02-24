@@ -24,7 +24,7 @@ For more information about how to implement push notifications in your applicati
 ## Parameters
 
 - `application`: The application that initiated the remote-notification registration process.
-- `deviceToken`: The size of a device token is 32 bytes.
+- `deviceToken`: A token that identifies the device to Apple Push Notification Service (APNS). The token is an opaque data type because that is the form that the provider needs to submit to the APNS servers when it sends a notification to a device. The APNS servers require a binary format for performance reasons. The size of a device token is 32 bytes.
 
 ## See Also
 

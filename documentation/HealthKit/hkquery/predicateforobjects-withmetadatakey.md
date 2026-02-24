@@ -27,6 +27,28 @@ A predicate that matches any object whose metadata contains the provided key.
 
 Use this convenience method to create a predicate that finds all objects with a specific key stored in their metadata. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let metadataKey = HKQuery.predicateForObjectsWithMetadataKey(HKMetadataKeyFoodType)
+ 
+let explicitMetadataKey =
+    NSPredicate(format: "%K.%K != nil",
+                HKPredicateKeyPathMetadata, HKMetadataKeyFoodType)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *metadataKey =
+    [HKQuery predicateForObjectsWithMetadataKey:HKMetadataKeyFoodType];
+ 
+NSPredicate *explicitMetadataKey =
+    [NSPredicate predicateWithFormat:@"%K.%K != nil",
+     HKPredicateKeyPathMetadata,
+     HKMetadataKeyFoodType];
+```
+
 ## Parameters
 
 - `key`: The metadata key to match. For a list of preset keys, see Metadata Keys. You may also search for custom keys.

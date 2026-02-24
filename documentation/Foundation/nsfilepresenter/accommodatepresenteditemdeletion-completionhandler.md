@@ -28,7 +28,7 @@ A file coordinator calls this method when your object’s presented item is abou
 
 ## Parameters
 
-- `completionHandler`: The   to call after updating your data structures. Pass   to the block’s   parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
+- `completionHandler`: The [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after updating your data structures. Pass `nil` to the block’s `errorOrNil` parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
 
 ## See Also
 

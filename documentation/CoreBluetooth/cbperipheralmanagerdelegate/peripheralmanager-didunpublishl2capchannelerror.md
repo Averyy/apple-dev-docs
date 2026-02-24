@@ -28,7 +28,7 @@ The peripheral manager calls this method after you call [`unpublishL2CAPChannel(
 
 - `peripheral`: The peripheral manager that stopped publishing.
 - `PSM`: The Protocol/Service Multiplexer (PSM) of the channel that was unpublished.
-- `error`: The error that occurred, or   if no error occurred.
+- `error`: The error that occurred, or `nil` if no error occurred.
 
 ## See Also
 

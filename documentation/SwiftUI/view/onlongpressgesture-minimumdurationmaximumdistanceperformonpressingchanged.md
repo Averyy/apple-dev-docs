@@ -22,10 +22,10 @@ func onLongPressGesture(minimumDuration: Double = 0.5, maximumDistance: CGFloat 
 
 ## Parameters
 
-- `minimumDuration`: The minimum duration of the long press that must   elapse before the gesture succeeds.
-- `maximumDistance`: The maximum distance that the fingers or cursor   performing the long press can move before the gesture fails.
+- `minimumDuration`: The minimum duration of the long press that must elapse before the gesture succeeds.
+- `maximumDistance`: The maximum distance that the fingers or cursor performing the long press can move before the gesture fails.
 - `action`: The action to perform when a long press is recognized.
-- `onPressingChanged`: A closure to run when the pressing state of the   gesture changes, passing the current state as a parameter.
+- `onPressingChanged`: A closure to run when the pressing state of the gesture changes, passing the current state as a parameter.
 
 ## See Also
 

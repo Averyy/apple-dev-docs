@@ -23,10 +23,10 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>, onEditingChanged: @e
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field,   describing its purpose.
+- `titleKey`: The key for the localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
-- `onEditingChanged`: The action to perform when the user   begins editing   and after the user finishes editing  .   The closure receives a Boolean value that indicates the editing   status:   when the user begins editing,   when they   finish.
-- `onCommit`: An action to perform when the user performs an action   (for example, when the user presses the Return key) while the text   field has focus.
+- `onEditingChanged`: The action to perform when the user begins editing `text` and after the user finishes editing `text`. The closure receives a Boolean value that indicates the editing status: `true` when the user begins editing, `false` when they finish.
+- `onCommit`: An action to perform when the user performs an action (for example, when the user presses the Return key) while the text field has focus.
 
 ## See Also
 

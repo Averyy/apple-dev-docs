@@ -20,10 +20,10 @@ Each element of vector `x` is multiplied by `alpha`, and stored in the correspon
 
 ## Parameters
 
-- `n`: Number of elements in vectors   and  ; must be a multiple of 4.
+- `n`: Number of elements in vectors `x` and `y`; must be a multiple of 4.
 - `alpha`: Multiplier.
-- `x`: Source vector with   elements of type  .
-- `y`: Destination vector with   elements of type  .
+- `x`: Source vector with `n` elements of type `float`.
+- `y`: Destination vector with `n` elements of type `float`.
 
 ## See Also
 

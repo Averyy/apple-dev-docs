@@ -32,7 +32,7 @@ In versions of macOS prior to 10.7 and versions of iOS prior to 4.2, this functi
 
 - `frame`: The frame whose line origin array is copied.
 - `range`: The range of line origins you wish to copy. If the length of the range is 0, then the copy operation continues from the start index of the range to the last line origin.
-- `origins`: The buffer to which the origins are copied. The buffer must have at least as many elements as specified by range’s length. Each   in this array is the origin of the corresponding line in the array of lines returned by   relative to the origin of the path’s bounding box, which can be obtained from  .
+- `origins`: The buffer to which the origins are copied. The buffer must have at least as many elements as specified by range’s length. Each [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in this array is the origin of the corresponding line in the array of lines returned by [`CTFrameGetLines(_:)`](ctframegetlines(_:).md) relative to the origin of the path’s bounding box, which can be obtained from `CGPathGetPathBoundingBox`.
 
 ## See Also
 

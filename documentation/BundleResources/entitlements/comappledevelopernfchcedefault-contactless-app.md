@@ -9,6 +9,10 @@ A Boolean value indicating whether your app can be a default app for contactless
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 A value of `YES` indicates a person can use the iOS settings app to set this app as a default NFC contactless app.

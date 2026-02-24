@@ -22,7 +22,7 @@ The number of properties successfully added.
 
 - `addressBook`: The address book for the logged-in user.
 - `recordType`: The record type you wish to add properties to: kABGroupRecordType or kABPersonRecordType.
-- `propertiesAndTypes`: A CFDictionary object containing the properties to add. In each dictionary entry, the key is a string with the property’s name, and the value is a constant with the property’s type. The property’s name must be unique. You may want to use Java-style package names for your properties, for example,   or  . The property type must be one of the constants described in  .
+- `propertiesAndTypes`: A CFDictionary object containing the properties to add. In each dictionary entry, the key is a string with the property’s name, and the value is a constant with the property’s type. The property’s name must be unique. You may want to use Java-style package names for your properties, for example, `"org.dogclub.dogname"` or `"com.mycompany.customerID"`. The property type must be one of the constants described in [`ABPropertyType`](abpropertytype.md).
 
 ## See Also
 

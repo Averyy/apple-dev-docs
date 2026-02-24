@@ -16,7 +16,7 @@ A single object may produce multiple trajectories. For example, a bouncing ball 
 
 ##### Perform a Request to Detect Trajectories
 
-To detect trajectories in video, use an instance of [`VNDetectTrajectoriesRequest`](vndetecttrajectoriesrequest.md). This is a new  request type that you use to build evidence over time. Most Vision requests are stateless, and because they require limited resources to create, you typically make new instances as needed. Because a request to detect trajectories maintains state, you instead create a single instance of it and perform the request multiple times.
+To detect trajectories in video, use an instance of [`VNDetectTrajectoriesRequest`](vndetecttrajectoriesrequest.md). This is a new *stateful* request type that you use to build evidence over time. Most Vision requests are stateless, and because they require limited resources to create, you typically make new instances as needed. Because a request to detect trajectories maintains state, you instead create a single instance of it and perform the request multiple times.
 
 When you create a [`VNDetectTrajectoriesRequest`](vndetecttrajectoriesrequest.md), you pass it the following arguments:
 
@@ -83,7 +83,7 @@ Because the request builds evidence over time before it produces trajectory obse
 
 ![An illustration showing that a request must build evidence over time before it produces trajectory observations.](https://docs-assets.developer.apple.com/published/6e36239fa3aa111b86502cf27d63be08/media-3625760%402x.png)
 
-The key pieces of data that a [`VNTrajectoryObservation`](vntrajectoryobservation.md) provides are the  and  points the object travels on the parabolic path. The detected points follow the centroids of the object in motion, which may not follow the parabolic path exactly, whereas the projected points represent the path precisely. You can retrieve the equation coefficients for the quadratic equation, f(x) = ax2 + bx + c, from the observation, which it provides as a [`simd_float3`](https://developer.apple.com/documentation/simd/simd_float3) value.
+The key pieces of data that a [`VNTrajectoryObservation`](vntrajectoryobservation.md) provides are the *detected* and *projected* points the object travels on the parabolic path. The detected points follow the centroids of the object in motion, which may not follow the parabolic path exactly, whereas the projected points represent the path precisely. You can retrieve the equation coefficients for the quadratic equation, f(x) = ax2 + bx + c, from the observation, which it provides as a [`simd_float3`](https://developer.apple.com/documentation/simd/simd_float3) value.
 
 Each trajectory provides a [`uuid`](https://developer.apple.com/documentation/Foundation/UUID/uuid) value that you can use to track it over time, which is useful when performing ongoing calculations on the data or drawing visualizations of it. For an example of how you can visualize trajectory data, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
 

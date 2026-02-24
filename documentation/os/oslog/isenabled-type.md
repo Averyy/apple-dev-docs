@@ -26,7 +26,7 @@ func isEnabled(type: OSLogType) -> Bool
 
 ## Parameters
 
-- `type`: A log type constant, such as  ,  ,  ,  , or  , that specifies the level of logging to check.
+- `type`: A log type constant, such as [`OS_LOG_TYPE_DEFAULT`](os_log_type_t/os_log_type_default.md), [`OS_LOG_TYPE_INFO`](os_log_type_t/os_log_type_info.md), [`OS_LOG_TYPE_DEBUG`](os_log_type_t/os_log_type_debug.md), [`OS_LOG_TYPE_ERROR`](os_log_type_t/os_log_type_error.md), or [`OS_LOG_TYPE_FAULT`](os_log_type_t/os_log_type_fault.md), that specifies the level of logging to check.
 
 
 ---

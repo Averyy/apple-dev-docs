@@ -31,7 +31,7 @@ Implement this method if you can provide properties for the recipients of this m
 
 - `viewController`: The view controller that finds players for the match.
 - `recipient`: A player to invite to the match.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that this method calls when it completes the request. The block receives the following parameter: - **`recipientProperties`**: The properties for `recipient` that the local player invites to the match.
 
 
 ---

@@ -9,6 +9,10 @@ A Boolean value that indicates whether the app may exchange audio with other Int
 - iOS 2.2+
 - iPadOS 2.2+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Enabling Inter-App Audio allows your app to send and receive audio from other Inter-App Audio enabled apps and provides access to Audio Unit extensions.

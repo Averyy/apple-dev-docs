@@ -102,6 +102,10 @@ This profile applies a set of declarations to the device. Users use this profile
 </plist>
 ```
 
+## Properties
+
+- `Declarations` ([data]) *(required)*: The set of declarations to apply. The array items are Base64-encoded data representations of the declaration JSON data.
+
 ## See Also
 
 - [object EnergySaver](energysaver.md)

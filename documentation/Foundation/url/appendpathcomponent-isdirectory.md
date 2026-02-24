@@ -27,7 +27,7 @@ New code should use [`append(path:directoryHint:)`](url/append(path:directoryhin
 ## Parameters
 
 - `pathComponent`: The path component to add.
-- `isDirectory`: Use   if the resulting path is a directory.
+- `isDirectory`: Use `true` if the resulting path is a directory.
 
 ## See Also
 

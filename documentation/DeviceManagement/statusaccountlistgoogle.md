@@ -36,6 +36,10 @@ object StatusAccountListGoogle
 - [object StatusAccountListGoogleAccountObject](statusaccountlistgoogleaccountobject.md)
   A status report of the client’s Google account details.
 
+## Properties
+
+- `account.list.google` ([StatusAccountListGoogleAccountObject]) *(required)*: A list of status values for the Google accounts.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

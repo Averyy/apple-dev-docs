@@ -43,7 +43,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `detents`: A set of supported detents for the sheet.   If you provide more that one detent, people can drag the sheet   to resize it.
+- `detents`: A set of supported detents for the sheet. If you provide more that one detent, people can drag the sheet to resize it.
 
 ## See Also
 

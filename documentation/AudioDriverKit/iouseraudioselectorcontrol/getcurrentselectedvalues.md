@@ -24,8 +24,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `out_values`: A pointer to a buffer of type  , with a size of  . On return, this buffer contains the selected values.
-- `in_num_values`: The size of the   array.
+- `out_values`: A pointer to a buffer of type [`IOUserAudioSelectorValue`](iouseraudioselectorvalue.md), with a size of `in_num_values`. On return, this buffer contains the selected values.
+- `in_num_values`: The size of the `out_values` array.
 
 ## See Also
 

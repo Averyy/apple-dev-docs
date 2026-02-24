@@ -6,7 +6,7 @@ Train a machine learning model to predict the class label of time-series signals
 
 #### Overview
 
-Some signals have patterns that repeat over time or have clear trends. For example, the accelerometer data from an Apple Watch while the wearer is exercising. It’s common practice to refer to these signals as . Other examples of time-series data are:
+Some signals have patterns that repeat over time or have clear trends. For example, the accelerometer data from an Apple Watch while the wearer is exercising. It’s common practice to refer to these signals as *time-series data*. Other examples of time-series data are:
 
 - The temperature of a machine in a factory.
 - Your heart rate during a gym session.

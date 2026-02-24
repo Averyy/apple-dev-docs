@@ -22,6 +22,10 @@ struct RepresentationTypes
 
 Thumbnails come in one of three different types:
 
+- **[`icon`](qlthumbnailgenerator/request/representationtypes-swift.struct/icon.md)**: A file icon representation.
+- **[`lowQualityThumbnail`](qlthumbnailgenerator/request/representationtypes-swift.struct/lowqualitythumbnail.md)**: A faster to generate version of the thumbnail that may sacrifice quality for speed.
+- **[`thumbnail`](qlthumbnailgenerator/request/representationtypes-swift.struct/thumbnail.md)**: A high-quality thumbnail.
+
 To request all thumbnail representations, use [`all`](qlthumbnailgenerator/request/representationtypes-swift.struct/all.md).
 
 ## Topics

@@ -32,9 +32,9 @@ The following example shows the basic code to display the picker in response to 
 
 ## Parameters
 
-- `rect`: The rectangle the picker should be showed relative to. The coordinates are in the   coordinate system. Passing   causes the view bounds to be used.
+- `rect`: The rectangle the picker should be showed relative to. The coordinates are in the `view` coordinate system. Passing [`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect) causes the view bounds to be used.
 - `view`: The view.
-- `preferredEdge`: The preferred edge of the view to display the picker. See   for the possible values.
+- `preferredEdge`: The preferred edge of the view to display the picker. See [`NSRectEdge`](https://developer.apple.com/documentation/Foundation/NSRectEdge) for the possible values.
 
 ## See Also
 

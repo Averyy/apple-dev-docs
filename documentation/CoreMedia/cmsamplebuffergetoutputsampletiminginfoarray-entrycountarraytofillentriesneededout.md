@@ -30,9 +30,9 @@ If only one [`CMSampleTimingInfo`](cmsampletiminginfo.md) struct is returned, it
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 - `timingArrayEntries`: Number of entries in timing array.
-- `timingArrayOut`: On output, points to an array of   structs to receive the timing info.
+- `timingArrayOut`: On output, points to an array of `CMSampleTimingInfo` structs to receive the timing info.
 - `timingArrayEntriesNeededOut`: Number of entries needed for the result.
 
 ## See Also

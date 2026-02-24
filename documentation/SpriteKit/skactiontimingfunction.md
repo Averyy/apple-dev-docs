@@ -24,6 +24,8 @@ typealias SKActionTimingFunction = (Float) -> Float
 
 The block parameters are defined as follows:
 
+- **`time`**: The input time, where `0.0` represents the start time of the animation and `1.0` represents the end time of the animation.
+
 The input value will be a value between `0.0` and `1.0`, inclusive. The block must also return a value between `0.0` and `1.0`. When the input time is `0.0`, the output value should be `0.0`. When the input time is `1.0`, the output value should also be `1.0`.
 
 ## See Also

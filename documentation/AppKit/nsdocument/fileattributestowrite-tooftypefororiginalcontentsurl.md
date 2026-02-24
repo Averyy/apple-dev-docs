@@ -38,7 +38,7 @@ The default implementation of [`writeSafely(to:ofType:for:)`](nsdocument/writesa
 - `url`: The location to which the document is being written.
 - `typeName`: The string that identifies the document type.
 - `saveOperation`: The type of save operation.
-- `absoluteOriginalContentsURL`: The location of the previously saved copy of the document (if not  ).
+- `absoluteOriginalContentsURL`: The location of the previously saved copy of the document (if not `nil`).
 
 ## See Also
 

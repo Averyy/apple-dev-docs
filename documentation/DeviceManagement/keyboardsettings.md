@@ -53,6 +53,17 @@ This configuration restricts keyboard features.
 }
 ```
 
+## Properties
+
+- `AllowAutoCorrection` (boolean): If `false`, disables auto-correction.
+- `AllowDefinitionLookup` (boolean): If `false`, disables definition lookup.
+- `AllowDictation` (boolean): If `false`, disables dictation.
+- `AllowMathKeyboardSuggestions` (boolean): If `false`, disables keyboard suggestions that include math solutions. This key is also supported by the math.settings configuration.
+- `AllowPredictiveText` (boolean): If `false`, disables predictive text.
+- `AllowSlideToType` (boolean): If `false`, disables slide to type.
+- `AllowSpellCheck` (boolean): If `false`, disables spell check.
+- `AllowTextReplacement` (boolean): If `false`, disables text replacement.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

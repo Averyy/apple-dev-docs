@@ -21,10 +21,10 @@ Creates a toggle template for a control.
 
 ## Parameters
 
-- `isOn`: A boolean value that describes the current value of the   toggle.
+- `isOn`: A boolean value that describes the current value of the toggle.
 - `action`: The action the toggle performs when pressed.
 - `label`: A view that renders the toggle’s label.
-- `valueLabel`: A view that renders the toggle’s value. The boolean   parameter represents the value.
+- `valueLabel`: A view that renders the toggle’s value. The boolean parameter represents the value.
 
 ## See Also
 

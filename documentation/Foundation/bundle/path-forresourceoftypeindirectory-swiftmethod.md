@@ -32,8 +32,8 @@ Whether this method recurses through subdirectories is dependent on the `extensi
 
 ## Parameters
 
-- `name`: If you specify  , the method returns the first resource file it finds that matches the remaining criteria.
-- `ext`: If you specify an empty string or  , all the files in   and its subdirectories are returned. If an extension is provided the subdirectories are not searched.
+- `name`: The name of the resource file. If you specify `nil`, the method returns the first resource file it finds that matches the remaining criteria.
+- `ext`: The filename extension of the files to locate. If you specify an empty string or `nil`, all the files in `subpath` and its subdirectories are returned. If an extension is provided the subdirectories are not searched.
 - `subpath`: The name of the bundle subdirectory.
 
 ## See Also

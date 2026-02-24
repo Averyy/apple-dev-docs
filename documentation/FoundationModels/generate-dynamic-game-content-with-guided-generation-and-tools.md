@@ -58,7 +58,7 @@ let instructions = """
     """
 ```
 
-When the player provides input text to  to the character, the sample app uses the input as a prompt to the session. When generating a response, the dialog engine includes safety mechanisms to keep conversations on topic. It maintains block lists for words and phrases that characters shouldn’t discuss, ensuring nonplayer characters (NPCs) focus on coffee-related topics. If the app generates content containing blocked terms, it automatically resets the conversation and provides the default error response for the character.
+When the player provides input text to *talk* to the character, the sample app uses the input as a prompt to the session. When generating a response, the dialog engine includes safety mechanisms to keep conversations on topic. It maintains block lists for words and phrases that characters shouldn’t discuss, ensuring nonplayer characters (NPCs) focus on coffee-related topics. If the app generates content containing blocked terms, it automatically resets the conversation and provides the default error response for the character.
 
 ```swift
 let response = try await session.respond(

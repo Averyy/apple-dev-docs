@@ -6,7 +6,7 @@ Customize the Xcode project window and editor area to view and edit project file
 
 #### Overview
 
-The Xcode  is your primary interface for viewing, editing, and managing all parts of your project. You can configure it to fit your work style and adjust it as you work on different tasks. It’s especially helpful to configure the editor area, where you spend most of your time modifying files. Then use features, like the jump bar, minimap, and tab bar, to navigate quickly around your project files.
+The Xcode *project window* is your primary interface for viewing, editing, and managing all parts of your project. You can configure it to fit your work style and adjust it as you work on different tasks. It’s especially helpful to configure the editor area, where you spend most of your time modifying files. Then use features, like the jump bar, minimap, and tab bar, to navigate quickly around your project files.
 
 The main window opens when you create or open a project. To open additional main windows, choose File > New > Window.
 
@@ -14,11 +14,11 @@ The main window opens when you create or open a project. To open additional main
 
 The areas of the main window:
 
-- The  — for building and running your app, viewing the progress of tasks, and configuring the main window — appears at the top of the window.
-- The  — for viewing and editing the contents of your project, including code, user interface files, property lists, project settings, and more — appears in the middle of the window.
-- The  — for viewing the parts of your project, including files, symbols, breakpoints, and build information — appears on the right of the editor area.
-- The  — for controlling the app runtime during debugging, and for displaying variables, register, and status information — appears below an editor pane.
-- The  — for viewing and editing information about the project, or about the selected object in the navigator or editor area — appears on the right of the editor area.
+- The *toolbar* — for building and running your app, viewing the progress of tasks, and configuring the main window — appears at the top of the window.
+- The *editor area* — for viewing and editing the contents of your project, including code, user interface files, property lists, project settings, and more — appears in the middle of the window.
+- The *navigator area* — for viewing the parts of your project, including files, symbols, breakpoints, and build information — appears on the right of the editor area.
+- The *debug area* — for controlling the app runtime during debugging, and for displaying variables, register, and status information — appears below an editor pane.
+- The *inspector area* — for viewing and editing information about the project, or about the selected object in the navigator or editor area — appears on the right of the editor area.
 
 To create an Xcode project, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md).
 
@@ -57,6 +57,18 @@ Use the controls on the editor toolbar to open multiple files in separate editor
 
 You configure editor panes using controls on the editor toolbar. Use the Adjust Editor Options pop-up menu on the right of the editor toolbar to add options to an editor pane and change the layout of it. You can choose from the following editor options:
 
+- **Show Editor Only**: Hides a companion canvas or assistant to show only the editor.
+- **Canvas**: Shows a canvas that displays results of preview and playground macros in a source file.
+- **Assistant**: Shows an assistant that displays information about the file.
+- **Layout**: Changes the location of an editor relative to a companion canvas or assistant.
+- **Inline Comparison**: Shows changes to a file under source control in an editor when you enable code review.
+- **Side By Side Comparison**: Shows changes to a file under source control in a separate view next to an editor when you enable code review.
+- **Minimap**: Provides a miniaturized version of a file that you use to navigate around the file.
+- **Authors**: Shows the commit history of a file under source control.
+- **Code Coverage**: Displays statistics about a source file after you run tests, such as portions of your code not tested.
+- **Invisibles**: Shows invisible characters in a file.
+- **Wrap Line**: Wraps lines that exceed the width of the editor.
+
 ##### Compare File Changes with Previous Versions
 
 For files under source control, you can compare your changes with a previous commit. To toggle the comparsion view, click the Enable/Disable Code Review button on the left of the editor toolbar.
@@ -67,7 +79,7 @@ Then use the controls on the bottom of the comparison view to select versions of
 
 ##### Switch Quickly Between Files Using the Tab Bar
 
-Use the  that appears above an editor pane to open and pin files that you access frequently. To show the tab bar, choose View > Show Editor Tab Bar. Then add, remove, and pin files:
+Use the *tab bar* that appears above an editor pane to open and pin files that you access frequently. To show the tab bar, choose View > Show Editor Tab Bar. Then add, remove, and pin files:
 
 - To add a new tab, choose Tab from the Add button pop-up menu to the right of the tab bar, then enter a filename or select a recent file in the Start Page below.
 - To open one or more files in tabs, select the files in the Project navigator, then choose either File > Open in New Tab or File > Open in New Tabs.

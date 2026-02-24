@@ -30,13 +30,13 @@ Conversion might stop when the buffer fills, but it might also stop when the con
 
 ## Parameters
 
-- `buffer`: A buffer into which to store the bytes from the receiver. The returned bytes are    -terminated.
-- `maxBufferCount`: The maximum number of bytes to write to  .
-- `usedBufferCount`: The number of bytes used from  . Pass   if you do not need this value.
-- `encoding`: The encoding to use for the returned bytes. For possible values, see  .
-- `options`: A mask to specify options to use for converting the receiver’s contents to   (if conversion is necessary).
+- `buffer`: A buffer into which to store the bytes from the receiver. The returned bytes are *not* `NULL`-terminated.
+- `maxBufferCount`: The maximum number of bytes to write to `buffer`.
+- `usedBufferCount`: The number of bytes used from `buffer`. Pass `NULL` if you do not need this value.
+- `encoding`: The encoding to use for the returned bytes. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
+- `options`: A mask to specify options to use for converting the receiver’s contents to `encoding` (if conversion is necessary).
 - `range`: The range of characters in the receiver to get.
-- `leftover`: The remaining range. Pass   If you do not need this value.
+- `leftover`: The remaining range. Pass `NULL` If you do not need this value.
 
 ## See Also
 

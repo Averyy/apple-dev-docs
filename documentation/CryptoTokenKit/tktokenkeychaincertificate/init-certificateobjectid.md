@@ -30,7 +30,7 @@ This is the designated initializer.
 
 ## Parameters
 
-- `certificateRef`: You can create a   value from a data object using the   function.
+- `certificateRef`: The certificate reference. You can create a [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) value from a data object using the [`SecCertificateCreateWithData(_:_:)`](https://developer.apple.com/documentation/Security/SecCertificateCreateWithData(_:_:)) function.
 - `objectID`: The object ID.
 
 

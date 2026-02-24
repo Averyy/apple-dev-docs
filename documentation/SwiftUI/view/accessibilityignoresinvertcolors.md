@@ -27,7 +27,7 @@ Use this modifier to suppress Smart Invert in a view that shouldn’t be inverte
 
 ## Parameters
 
-- `active`: A true value ignores the system Smart Invert   setting. A false value follows the system setting.
+- `active`: A true value ignores the system Smart Invert setting. A false value follows the system setting.
 
 ## See Also
 

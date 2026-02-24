@@ -28,7 +28,7 @@ After calling this function, handle the new transaction in [`updates`](https://d
 
 ## Parameters
 
-- `identifier`: The transaction   of an in-app purchase to get a refund.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of an in-app purchase to get a refund.
 
 ## See Also
 

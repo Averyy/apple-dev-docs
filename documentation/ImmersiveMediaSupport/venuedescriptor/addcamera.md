@@ -24,7 +24,7 @@ final func addCamera(_ camera: ImmersiveCamera) throws
 
 ## Parameters
 
-- `camera`: The   information to add.
+- `camera`: The [`ImmersiveCamera`](immersivecamera.md) information to add.
 
 ## See Also
 

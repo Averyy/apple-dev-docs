@@ -25,8 +25,8 @@ If the hostname is a domain name, such as `www.example.com`, starting a connecti
 
 ## Parameters
 
-- `hostname`: A string representation of the hostname or address, such as   or  .
-- `port`: A string containing the port on the host, such as  .
+- `hostname`: A string representation of the hostname or address, such as `www.example.com` or `10.0.0.1`.
+- `port`: A string containing the port on the host, such as `80`.
 
 
 ---

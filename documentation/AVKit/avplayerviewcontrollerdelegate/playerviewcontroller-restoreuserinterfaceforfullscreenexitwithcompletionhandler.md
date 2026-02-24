@@ -20,7 +20,7 @@ optional func playerViewControllerRestoreUserInterfaceForFullScreenExit(_ player
 ## Parameters
 
 - `playerViewController`: The player view controller.
-- `completionHandler`: The completion handler to call for the system to finish restoring your user interface. You must invoke this callback with a value of  .
+- `completionHandler`: The completion handler to call for the system to finish restoring your user interface. You must invoke this callback with a value of `true`.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The returned decode timestamp is always the decode timestamp of the first sample
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

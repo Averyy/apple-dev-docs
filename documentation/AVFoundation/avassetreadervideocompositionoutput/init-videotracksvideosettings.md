@@ -21,8 +21,8 @@ init(videoTracks: [AVAssetTrack], videoSettings: [String : Any]?)
 
 ## Parameters
 
-- `videoTracks`: An array of asset tracks from which to read video frames for compositing. The media type of each track must be  .
-- `videoSettings`: Specifying a   value configures the output to return samples in an uncompressed format.
+- `videoTracks`: An array of asset tracks from which to read video frames for compositing. The media type of each track must be [`video`](avmediatype/video.md).
+- `videoSettings`: Specifying a `nil` value configures the output to return samples in an uncompressed format.
 
 
 ---

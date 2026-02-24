@@ -25,7 +25,7 @@ Do not use this initializer for creating instances of [`XMLDTDNode`](xmldtdnode.
 
 ## Parameters
 
-- `kind`: An   constant of type   that indicates the type of node. See Constants for a list of valid NSXMLNodeKind constants.
+- `kind`: An `enum` constant of type [`XMLNode.Kind`](xmlnode/kind-swift.enum.md) that indicates the type of node. See Constants for a list of valid NSXMLNodeKind constants.
 - `options`: One or more constants that specify initialization options; if there are multiple constants, bit-OR them together. These options request operations on the represented XML related to fidelity (for example, preserving entities), quoting style, handling of empty elements, and other things. See Constants for a list of valid node-initialization constants.
 
 ## See Also

@@ -25,7 +25,7 @@ convenience init(string representation: String)
 
 ## Parameters
 
-- `representation`: A string that is in one of the formats returned by the   method.
+- `representation`: A string that is in one of the formats returned by the `stringRepresentation` method.
 
 ## See Also
 

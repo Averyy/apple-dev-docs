@@ -21,8 +21,8 @@ init(channel: UInt32, value: UInt32)
 
 ## Parameters
 
-- `channel`: The MIDI channel for the message, between   and  .
-- `value`: The pitch bend value, between   and  .
+- `channel`: The MIDI channel for the message, between `0` and `15`.
+- `value`: The pitch bend value, between `0` and `16383`.
 
 
 ---

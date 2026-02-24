@@ -27,7 +27,7 @@ The character buffer of `theString` is resized according to the length of the ne
 ## Parameters
 
 - `theString`: The string to modify. If this value is not a CFMutableString object, an assertion is raised.
-- `replacement`: The replacement string to put into  .
+- `replacement`: The replacement string to put into `theString`.
 
 ## See Also
 

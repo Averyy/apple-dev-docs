@@ -35,7 +35,7 @@ Note that a given entire day within a calendar is not necessarily all in a weeke
 - `date`: The date at which to begin the search.
 - `start`: Upon return, the starting time of the calendar component that contains the date.
 - `interval`: Upon return, the duration of the calendar component that contains the date.
-- `direction`: Which direction in time to search. The default value is  .
+- `direction`: Which direction in time to search. The default value is `.forward`.
 
 ## See Also
 

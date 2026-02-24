@@ -50,7 +50,7 @@ Your app can configure the attribution window globally, so that the framework ap
 
 #### Configure Your Apps Global Attribution Window
 
-There are two types of global settings the attribution window settings support:  that apply to ad networks, and  that control specific parameters relating to conversions for the ad networks you specify.
+There are two types of global settings the attribution window settings support: *global settings* that apply to ad networks, and *per-ad network settings* that control specific parameters relating to conversions for the ad networks you specify.
 
 To override the built-in, global attribution window settings, follow these steps:
 

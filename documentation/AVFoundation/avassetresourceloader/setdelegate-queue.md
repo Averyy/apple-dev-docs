@@ -25,8 +25,8 @@ You use this method to specify the object to use when handling resource requests
 
 ## Parameters
 
-- `delegate`: The delegate object to query when handling resource requests. You may specify   if you want to clear the delegate object. The resource loader does not store a strong reference to the delegate object.
-- `delegateQueue`: The resource loader maintains a strong reference to the dispatch queue you specify.
+- `delegate`: The delegate object to query when handling resource requests. You may specify `nil` if you want to clear the delegate object. The resource loader does not store a strong reference to the delegate object.
+- `delegateQueue`: The dispatch queue on which to execute resource requests. If the `delegate` parameter is not `nil`, this parameter must also not be `nil` and must contain a valid dispatch queue. However, if `delegate` is `nil`, this parameter may also be `nil`. The resource loader maintains a strong reference to the dispatch queue you specify.
 
 ## See Also
 

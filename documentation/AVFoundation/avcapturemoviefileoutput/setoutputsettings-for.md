@@ -28,7 +28,7 @@ On iOS, the [`outputSettings(for:)`](avcapturemoviefileoutput/outputsettings(for
 
 ## Parameters
 
-- `outputSettings`: A dictionary of output settings. Pass an empty dictionary to specify that the format of the media from the connection shouldn’t change before writing to the file. Pass   to specify that the session preset determines output format.
+- `outputSettings`: A dictionary of output settings. Pass an empty dictionary to specify that the format of the media from the connection shouldn’t change before writing to the file. Pass `nil` to specify that the session preset determines output format.
 - `connection`: The connection delivering the media to encode.
 
 ## See Also

@@ -18,7 +18,7 @@ func complete(didAlert: Bool)
 
 ## Parameters
 
-- `didAlert`: A Boolean value that indicates whether the accessory alerted the person. Pass   if the accessory alerted; otherwise,  .
+- `didAlert`: A Boolean value that indicates whether the accessory alerted the person. Pass `true` if the accessory alerted; otherwise, `false`.
 
 
 ---

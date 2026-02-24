@@ -22,6 +22,10 @@ func vvasinh(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 ## See Also
 
 - [static func acosh<U>(U) -> [Double]](vforce/acosh(_:)-1j3qt.md)

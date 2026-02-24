@@ -24,7 +24,7 @@ Both `object` and `newObject` must be valid objects.
 ## Parameters
 
 - `object`: An object in the object graph being archived.
-- `newObject`: The object with which to replace   in the archive.
+- `newObject`: The object with which to replace `object` in the archive.
 
 ## See Also
 

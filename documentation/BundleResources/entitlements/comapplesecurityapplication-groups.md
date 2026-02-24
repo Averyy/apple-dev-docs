@@ -12,6 +12,10 @@ A list of identifiers specifying the groups your app belongs to.
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 App groups allow multiple apps produced by a single development team to access shared containers and keychain access groups, and communicate using interprocess communication (IPC). Apps may belong to one or more app groups.

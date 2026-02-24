@@ -33,8 +33,9 @@ Your app should present HealthKit data using the current preferred units (see th
 
 ## Parameters
 
-- `quantityTypes`: A set of    identifiers. These identifiers represent the quantity types to be examined. Before calling this method, your app must request read or share access to all the types in this set.
-- `completion`: A block that this method calls as soon as it finishes looking up the preferred units. This block is passed the following parameters:
+- `quantityTypes`: A set of  [`HKQuantityType`](hkquantitytype.md) identifiers. These identifiers represent the quantity types to be examined. Before calling this method, your app must request read or share access to all the types in this set.
+- `completion`: A block that this method calls as soon as it finishes looking up the preferred units. This block is passed the following parameters: - **preferredUnits**: If the lookup is successful, this parameter contains a dictionary with `HKQuantityType` identifiers for the keys and [`HKUnit`](hkunit.md) objects for the values. The keys match those passed to the `quantityTypes` parameter. If an error occurs, this parameter is set to `nil`.
+- **error**: An error object. This method returns an error if the preferred units are inaccessible or if your app has not yet requested permission to access the quantity types; otherwise, this parameter is set to `nil`.
 
 ## See Also
 

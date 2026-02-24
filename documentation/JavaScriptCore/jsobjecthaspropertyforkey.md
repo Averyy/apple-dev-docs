@@ -30,9 +30,9 @@ This function is the same as performing `propertyKey in object` from JavaScript.
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to test.
-- `propertyKey`: A   that contains the property key to use when looking up the property.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to test.
+- `propertyKey`: A [`JSValueRef`](jsvalueref.md) that contains the property key to use when looking up the property.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

@@ -25,9 +25,9 @@ Delegates might implement this method to modify resource requests before they ar
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `identifier`: An identifier object used to track the resource being loaded by  .
+- `identifier`: An identifier object used to track the resource being loaded by `dataSource`.
 - `request`: The request that is sent.
-- `redirectResponse`: The redirect server response. If  , there is no redirect in progress.
+- `redirectResponse`: The redirect server response. If `nil`, there is no redirect in progress.
 - `dataSource`: The data source for this web view.
 
 ## See Also

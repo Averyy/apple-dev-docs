@@ -23,7 +23,7 @@ This method starts a Wi-Fi scan for unconfigured accessories. Note that searchin
 
 ## Parameters
 
-- `predicate`: The desired filter for unconfigured accessory results conforming to the   protocol.
+- `predicate`: The desired filter for unconfigured accessory results conforming to the [`EAWiFiUnconfiguredAccessoryBrowserDelegate`](eawifiunconfiguredaccessorybrowserdelegate.md) protocol.
 
 ## See Also
 

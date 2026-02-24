@@ -24,10 +24,10 @@ You can use this method to customize a storyboard segue in lieu of creating a su
 
 ## Parameters
 
-- `identifier`: The unique identifier for the storyboard segue. See the   property.
+- `identifier`: The unique identifier for the storyboard segue. See the [`identifier`](nsstoryboardsegue/identifier-swift.property.md) property.
 - `sourceController`: The starting/containing view controller or window controller for the storyboard segue.
 - `destinationController`: The ending/contained view controller or window controller for the storyboard segue.
-- `performHandler`: A block of code that you provide, to be run each time the system calls the   method.
+- `performHandler`: A block of code that you provide, to be run each time the system calls the [`perform()`](nsstoryboardsegue/perform().md) method.
 
 ## See Also
 

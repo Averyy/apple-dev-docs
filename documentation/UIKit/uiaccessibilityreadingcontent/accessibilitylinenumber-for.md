@@ -30,7 +30,7 @@ This method is called only when `point` is within the bounds of the view or elem
 
 ## Parameters
 
-- `point`: A point within the bounds of the receiver’s view space, in screen coordinates. That is, a point for which  .
+- `point`: A point within the bounds of the receiver’s view space, in screen coordinates. That is, a point for which `[self pointInside:point withEvent:event] == YES`.
 
 ## See Also
 

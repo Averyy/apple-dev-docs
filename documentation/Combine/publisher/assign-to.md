@@ -51,7 +51,7 @@ While the `to` parameter uses the `inout` keyword, this method doesn’t replace
 
 ## Parameters
 
-- `published`: A property marked with the   attribute, which receives and republishes all elements received from the upstream publisher.
+- `published`: A property marked with the `@Published` attribute, which receives and republishes all elements received from the upstream publisher.
 
 ## See Also
 

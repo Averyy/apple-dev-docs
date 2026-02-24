@@ -29,8 +29,8 @@ This method saves calculated normal data in the vertex attribute named in the `a
 
 ## Parameters
 
-- `attributeName`: The name of the vertex attribute for storing surface normal data. If  , this method writes data into the   attribute by default.
-- `creaseThreshold`: A value between   and   that determines the smoothness of normal generation between adjacent faces. Lower values interpolate sharper angles between faces into smooth surfaces, and higher values smooth only between faces that are nearly parallel. A value of   prevents smoothing, resulting in a faceted appearance.
+- `attributeName`: The name of the vertex attribute for storing surface normal data. If `nil`, this method writes data into the [`MDLVertexAttributeNormal`](mdlvertexattributenormal.md) attribute by default.
+- `creaseThreshold`: A value between `0.0` and `1.0` that determines the smoothness of normal generation between adjacent faces. Lower values interpolate sharper angles between faces into smooth surfaces, and higher values smooth only between faces that are nearly parallel. A value of `1.0` prevents smoothing, resulting in a faceted appearance.
 
 ## See Also
 

@@ -18,7 +18,7 @@ func beginNewScanPass()
 
 #### Discussion
 
-This is intended to be used once the user has completed one scan pass and another scan pass at a different height is desired .  The same object selection box chosen previously is used, so no new box is chosen. This call is particularly useful for the case where the object is not flippable but multiple passes at different heights are needed to fully capture the object.
+This is intended to be used once the user has completed one scan pass and another scan pass at a different height is desired *without flipping the object*.  The same object selection box chosen previously is used, so no new box is chosen. This call is particularly useful for the case where the object is not flippable but multiple passes at different heights are needed to fully capture the object.
 
 This call will throw if the session is not in `.capturing` state (or `.paused` from `.capturing` state).
 

@@ -26,7 +26,7 @@ A new [`MTLSamplerState`](mtlsamplerstate.md) instance if the method completed s
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance.
 
 ## See Also
 

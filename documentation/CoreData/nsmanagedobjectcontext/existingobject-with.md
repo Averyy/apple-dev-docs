@@ -30,7 +30,7 @@ If the context recognizes the specified object, the method returns that object. 
 
 ## Parameters
 
-- `objectID`: The identifier of the object to retrieve. For more information, see  .
+- `objectID`: The identifier of the object to retrieve. For more information, see [`NSManagedObjectID`](nsmanagedobjectid.md).
 
 ## See Also
 

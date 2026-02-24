@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that imitate black-and-white 
 
 The photo effect mono filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that produces a black-and-white image:
 
 ```swift

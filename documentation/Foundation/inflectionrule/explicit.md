@@ -22,7 +22,7 @@ case explicit(Morphology)
 
 ## Parameters
 
-- `Morphology`: The   instance to use when applying this rule.
+- `Morphology`: The [`Morphology`](morphology.md) instance to use when applying this rule.
 
 ## See Also
 

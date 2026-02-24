@@ -37,7 +37,7 @@ Text("Position by passing a CGPoint()")
 
 ## Parameters
 
-- `position`: The point at which to place the center of this   view.
+- `position`: The point at which to place the center of this view.
 
 ## See Also
 

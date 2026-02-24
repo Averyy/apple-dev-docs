@@ -17,7 +17,7 @@ When the system launches your app in the background, you can:
 
 ##### Schedule and Handle Background Refresh Tasks
 
-A watchOS app uses a  to perform work in the background. If your app requires background operations, use one of the following techniques to respond to the task:
+A watchOS app uses a *background refresh task* to perform work in the background. If your app requires background operations, use one of the following techniques to respond to the task:
 
 - Add a [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)) modifier to respond to the background task in your SwiftUI scene.
 - Implement your app delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method to receive and respond to the task. You need to call the task’s [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method to indicate that you’re done.

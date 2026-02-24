@@ -26,10 +26,10 @@ You specify this callback when creating a CFMachPort object with either [`CFMach
 
 ## Parameters
 
-- `port`: The CFMachPort object on which the message   was received.
-- `msg`: The Mach message received on  . The pointer is to a   structure.
-- `size`: Size of the Mach message  , excluding the message trailer.
-- `info`: The   member of the   structure used when creating  .
+- `port`: The CFMachPort object on which the message `msg` was received.
+- `msg`: The Mach message received on `port`. The pointer is to a `mach_msg_header_t` structure.
+- `size`: Size of the Mach message `msg`, excluding the message trailer.
+- `info`: The `info` member of the [`CFMachPortContext`](cfmachportcontext.md) structure used when creating `port`.
 
 ## See Also
 

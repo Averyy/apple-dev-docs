@@ -26,8 +26,8 @@ The receiver context is used to render the image in order to get the facial land
 ## Parameters
 
 - `image`: The image object to apply the depth blur effect to.
-- `disparityImage`: The auxiliary disparity image. For more information, see  .
-- `portraitEffectsMatte`: The portrait effects matte image. For more information, see  .
+- `disparityImage`: The auxiliary disparity image. For more information, see [`auxiliaryDisparity`](ciimageoption/auxiliarydisparity.md).
+- `portraitEffectsMatte`: The portrait effects matte image. For more information, see [`auxiliaryPortraitEffectsMatte`](ciimageoption/auxiliaryportraiteffectsmatte.md).
 - `orientation`: The intended display orientation for the image.
 - `options`: Reserved for future use.
 

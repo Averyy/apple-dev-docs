@@ -30,7 +30,7 @@ Other [`Component`](component.md) types on an [`Entity`](entity.md) may also pro
 
 Entities with skeletal poses expose skeletal pose joints as [`GeometricPin`](geometricpin.md) instances. These pins are not stored in the [`GeometricPinsComponent`](geometricpinscomponent.md) on the [`Entity`](entity.md), but are obtained directly from the skeletal pose.
 
-The name of the [`GeometricPin`](geometricpin.md) is the name of the skeletal pose joint. The pose (position and orientation) of the [`GeometricPin`](geometricpin.md) is the current pose of the joint in the coordinate frame of the [`Entity`](entity.md) (i.e.  relative to the parent joint). While the skeletal pose is animated, the [`GeometricPin`](geometricpin.md) pose change on every frame.
+The name of the [`GeometricPin`](geometricpin.md) is the name of the skeletal pose joint. The pose (position and orientation) of the [`GeometricPin`](geometricpin.md) is the current pose of the joint in the coordinate frame of the [`Entity`](entity.md) (i.e. *not* relative to the parent joint). While the skeletal pose is animated, the [`GeometricPin`](geometricpin.md) pose change on every frame.
 
 The geometric pin’s [`name`](geometricpin/name.md) can be given as either the full skeletal pose joint path name, such as `"root/hips_joint/spine_1_joint/spine_2_joint"`, or as the leaf joint name, like `"spine_2_joint"`.
 

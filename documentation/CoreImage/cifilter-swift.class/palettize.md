@@ -25,9 +25,13 @@ The modified image.
 
 #### Discussion
 
-This method applies the palette filter to an image. The effect uses the palette image that is  x 1 pixels in size containing a set of colors, replacing the image colors.
+This method applies the palette filter to an image. The effect uses the palette image that is *K* x 1 pixels in size containing a set of colors, replacing the image colors.
 
 The palettize filter uses the following properties:
+
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`paletteImage`**: An image with the dimensions of *N* x 1 where *N* represents the colors to add to the image, with type [`CIImage`](ciimage.md).
+- **`perceptual`**: A Boolean value that specifies if the filter applies the color palette in a perceptual color space.
 
 The following code creates a filter that replaces the colors of the input image with the specified colors found in the palette image:
 

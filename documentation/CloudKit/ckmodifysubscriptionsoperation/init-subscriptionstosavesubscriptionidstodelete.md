@@ -27,8 +27,8 @@ The subscriptions that you want to save or delete must reside in the same contai
 
 ## Parameters
 
-- `subscriptionsToSave`: The subscriptions to save or update. You can specify   for this parameter.
-- `subscriptionIDsToDelete`: The IDs of the subscriptions to delete. You can specify   for this parameter.
+- `subscriptionsToSave`: The subscriptions to save or update. You can specify `nil` for this parameter.
+- `subscriptionIDsToDelete`: The IDs of the subscriptions to delete. You can specify `nil` for this parameter.
 
 ## See Also
 

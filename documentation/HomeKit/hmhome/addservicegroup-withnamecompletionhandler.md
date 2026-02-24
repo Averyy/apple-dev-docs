@@ -19,8 +19,9 @@ func addServiceGroup(named serviceGroupName: String) async throws -> HMServiceGr
 
 ## Parameters
 
-- `serviceGroupName`: The name of the new service group. Must not be  , and must not be the name of a service group already in the home.
-- `completion`: The block executed after the request is processed.
+- `serviceGroupName`: The name of the new service group. Must not be `nil`, and must not be the name of a service group already in the home.
+- `completion`: The block executed after the request is processed. - **group**: The newly created service group.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

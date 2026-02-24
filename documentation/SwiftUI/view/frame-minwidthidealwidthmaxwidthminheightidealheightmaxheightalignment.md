@@ -49,7 +49,7 @@ If no minimum or maximum constraint is specified in a given dimension, the frame
 - `minHeight`: The minimum height of the resulting frame.
 - `idealHeight`: The ideal height of the resulting frame.
 - `maxHeight`: The maximum height of the resulting frame.
-- `alignment`: The alignment of this view inside the resulting frame.   Note that most alignment values have no apparent effect when the   size of the frame happens to match that of this view.
+- `alignment`: The alignment of this view inside the resulting frame. Note that most alignment values have no apparent effect when the size of the frame happens to match that of this view.
 
 ## See Also
 

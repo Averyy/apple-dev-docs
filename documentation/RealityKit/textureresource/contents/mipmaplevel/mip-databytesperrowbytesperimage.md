@@ -22,8 +22,8 @@ static func mip(data: Data, bytesPerRow: Int, bytesPerImage: Int) -> TextureReso
 ## Parameters
 
 - `data`: The source buffer.
-- `bytesPerRow`: The stride in bytes between rows of texture data that RealityKit stores in the source buffer.   The value needs to be a multiple of the destination texture’s pixel size, in bytes.
-- `bytesPerImage`: The stride in bytes between image planes of texture data that RealityKit stores in the source buffer,   needed for 3D texture mipmaps.   The value needs to be a multiple of the destination texture’s   pixel size, in bytes.
+- `bytesPerRow`: The stride in bytes between rows of texture data that RealityKit stores in the source buffer. The value needs to be a multiple of the destination texture’s pixel size, in bytes.
+- `bytesPerImage`: The stride in bytes between image planes of texture data that RealityKit stores in the source buffer, needed for 3D texture mipmaps. The value needs to be a multiple of the destination texture’s pixel size, in bytes.
 
 ## See Also
 

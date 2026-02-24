@@ -21,7 +21,7 @@ An array of [`AccountBalance`](accountbalance.md) structures.
 
 ## Parameters
 
-- `query`: An   that describes the kinds of accounts to look for.
+- `query`: An [`AccountQuery`](accountquery.md) that describes the kinds of accounts to look for.
 
 ## See Also
 

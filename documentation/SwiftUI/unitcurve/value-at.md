@@ -26,7 +26,7 @@ The output value (y component) of the curve at the given progress.
 
 ## Parameters
 
-- `progress`: The input progress (x component). The provided value is   clamped to the range [0,1].
+- `progress`: The input progress (x component). The provided value is clamped to the range [0,1].
 
 ## See Also
 

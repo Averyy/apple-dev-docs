@@ -25,7 +25,7 @@ A rectangle specified in the target coordinate space.
 ## Parameters
 
 - `rect`: A rectangle specified in the coordinate system of the current object.
-- `coordinateSpace`: The coordinate space into which   is to be converted.
+- `coordinateSpace`: The coordinate space into which `rect` is to be converted.
 
 ## See Also
 

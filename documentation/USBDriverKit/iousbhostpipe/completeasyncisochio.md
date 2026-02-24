@@ -20,7 +20,7 @@ Implement a custom version of this method and use the [`TYPE`](https://developer
 
 ## Parameters
 
-- `action`: A pointer to the   object of the request.
+- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object of the request.
 - `status`: The result of the operation.
 
 ## See Also

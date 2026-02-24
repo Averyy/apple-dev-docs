@@ -9,6 +9,12 @@ A number that specifies the version of the API to use.
 - iOS 13.7+
 - iPadOS 13.7+
 
+
+
+**Type**: number
+
+**Default**: `1`
+
 #### Discussion
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.7 and later.

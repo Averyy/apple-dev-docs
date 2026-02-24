@@ -22,7 +22,7 @@ Call this method before AppKit loads your application’s main nib file, such as
 
 ## Parameters
 
-- `factoryId`: The new font manager factory class, which must be a subclass of  .
+- `factoryId`: The new font manager factory class, which must be a subclass of [`NSFontManager`](nsfontmanager.md).
 
 ## See Also
 

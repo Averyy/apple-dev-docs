@@ -26,7 +26,7 @@ Attributed strings may not contain any [`NSTextAttachment`](https://developer.ap
 
 ## Parameters
 
-- `attributedText`: The formatted text string to be displayed in the label. Specifying   clears the current text from the label.
+- `attributedText`: The formatted text string to be displayed in the label. Specifying `nil` clears the current text from the label.
 
 ## See Also
 

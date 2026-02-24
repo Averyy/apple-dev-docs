@@ -9,6 +9,10 @@ A list of parent application identifiers for an App Clip with exactly one entry.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The Parent Application Identifiers entitlement establishes a secure association between an App Clip and its corresponding app. Add it only to an App Clip target.

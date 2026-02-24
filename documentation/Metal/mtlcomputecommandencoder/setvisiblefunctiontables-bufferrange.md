@@ -25,8 +25,8 @@ func setVisibleFunctionTables(_ visibleFunctionTables: [(any MTLVisibleFunctionT
 
 ## Parameters
 
-- `visibleFunctionTables`: An array of   instances to bind.
-- `bufferRange`: The buffer argument table indices to bind each of the   to, in the order they appear.
+- `visibleFunctionTables`: An array of [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) instances to bind.
+- `bufferRange`: The buffer argument table indices to bind each of the `visibleFunctionTables` to, in the order they appear.
 
 ## See Also
 

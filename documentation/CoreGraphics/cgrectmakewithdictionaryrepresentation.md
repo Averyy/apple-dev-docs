@@ -26,7 +26,7 @@ func CGRectMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ rect: Unsafe
 
 ## Parameters
 
-- `dict`: A dictionary that was previously returned from the function  .
+- `dict`: A dictionary that was previously returned from the function [`CGRectCreateDictionaryRepresentation(_:)`](cgrectcreatedictionaryrepresentation(_:).md).
 - `rect`: On return, the rectangle created from the specified dictionary.
 
 ## See Also

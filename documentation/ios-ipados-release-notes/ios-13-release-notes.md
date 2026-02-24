@@ -95,7 +95,7 @@ The iOS 13 SDK provides support for developing apps for iPhone devices running i
 ###### Known Issues
 
 - After updating to iOS 13 beta 6 or later, iCloud Drive might synchronize for an extended period of time. If you notice any missing files, they can be found in a Recovered Files folder under On My iPhone within the Files app. (53772753)
-- When creating a new Pages, Numbers, or Keynote document in a shared folder, you might see the message: “Couldn’t connect to iCloud.” (50827963)  Close and reopen the document.
+- When creating a new Pages, Numbers, or Keynote document in a shared folder, you might see the message: “Couldn’t connect to iCloud.” (50827963) **Workaround:** Close and reopen the document.
 
 ##### Mail
 
@@ -159,7 +159,7 @@ The iOS 13 SDK provides support for developing apps for iPhone devices running i
 ###### Known Issues
 
 - Reality Files with object anchors don’t anchor to those objects in AR Quick Look or in applications. (53689364)
-- The camera feed will remain visible at the base of objects loaded from a Reality File when [`ARView.Environment.Background`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/Background-swift.struct) is set to `ARView.Environment.Background.skybox(_:)` (53715030) : Turn off grounding shadows when setting the background to `ARView.Environment.Background.skybox(_:)` by setting [`ARView.RenderOptions`](https://developer.apple.com/documentation/RealityKit/ARView/RenderOptions-swift.struct) to [`disableGroundingShadows`](https://developer.apple.com/documentation/RealityKit/ARView/RenderOptions-swift.struct/disableGroundingShadows).
+- The camera feed will remain visible at the base of objects loaded from a Reality File when [`ARView.Environment.Background`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/Background-swift.struct) is set to `ARView.Environment.Background.skybox(_:)` (53715030) **Workaround**: Turn off grounding shadows when setting the background to `ARView.Environment.Background.skybox(_:)` by setting [`ARView.RenderOptions`](https://developer.apple.com/documentation/RealityKit/ARView/RenderOptions-swift.struct) to [`disableGroundingShadows`](https://developer.apple.com/documentation/RealityKit/ARView/RenderOptions-swift.struct/disableGroundingShadows).
 
 ##### Screen Time
 
@@ -173,7 +173,7 @@ The iOS 13 SDK provides support for developing apps for iPhone devices running i
 
 - Shortcuts automations are temporarily unavailable. (53182885)
 - The [`supportsOnDeviceRecognition`](https://developer.apple.com/documentation/Speech/SFSpeechRecognizer/supportsOnDeviceRecognition) property always returns `false` the first time it’s accessed. After a few seconds, accessing it again returns the correct value. (47822242)
-- Shortcuts opened on iOS 13 are automatically upgraded and can no longer be opened on iOS 12. If a device with iOS 12 and a device with iOS 13 share an iCloud account, shortcuts might become unusable on the device running iOS 12. (50873839)  Disable iCloud Sync between devices running iOS 13 and devices running iOS 12.
+- Shortcuts opened on iOS 13 are automatically upgraded and can no longer be opened on iOS 12. If a device with iOS 12 and a device with iOS 13 share an iCloud account, shortcuts might become unusable on the device running iOS 12. (50873839) **Workaround:** Disable iCloud Sync between devices running iOS 13 and devices running iOS 12.
 - Currently, the only supported response for `INSearchForMediaIntent` is `continueInApp`. (51010311)
 
 ##### Swiftui
@@ -237,7 +237,7 @@ NavigationView {
 ###### Known Issues
 
 - [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) instances don’t use resizing information configured in asset catalogs. Configure the size of an image using the [`resizable(capInsets:resizingMode:)`](https://developer.apple.com/documentation/SwiftUI/Image/resizable(capInsets:resizingMode:)) modifier instead. (49114577)
-- Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729) : When back-deploying to an OS which doesn’t contain the SwiftUI framework, add the `-weak_framework SwiftUI` flag to the Other Linker Flags setting in the Build Settings tab. See [`Frameworks and Weak Linking`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. This workaround doesn’t apply when using dynamically linked Swift packages which import SwiftUI.
+- Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729) **Workaround**: When back-deploying to an OS which doesn’t contain the SwiftUI framework, add the `-weak_framework SwiftUI` flag to the Other Linker Flags setting in the Build Settings tab. See [`Frameworks and Weak Linking`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. This workaround doesn’t apply when using dynamically linked Swift packages which import SwiftUI.
 
 ###### Deprecations
 
@@ -374,7 +374,7 @@ struct LandmarkList: View {
 
 ###### Known Issues
 
-- Donated shortcuts might not appear in Search while using the simulator. (50832782)  Test on a device with Settings > Developer > Display Recent Shortcuts enabled.
+- Donated shortcuts might not appear in Search while using the simulator. (50832782) **Workaround:** Test on a device with Settings > Developer > Display Recent Shortcuts enabled.
 - Changing the volume level in Simulator while a video is playing in Safari mutes the audio. (51207286)
 
 ## See Also

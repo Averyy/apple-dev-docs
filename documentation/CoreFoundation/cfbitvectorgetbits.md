@@ -24,7 +24,7 @@ func CFBitVectorGetBits(_ bv: CFBitVector!, _ range: CFRange, _ bytes: UnsafeMut
 
 - `bv`: The bit vector to examine.
 - `range`: The range of bit values to return.
-- `bytes`: On return, contains the requested bit values from  . This argument must point to enough memory to hold the number of bits requested. The requested bits are left-aligned with the first requested bit stored in the left-most, or most-significant, bit of the byte stream.
+- `bytes`: On return, contains the requested bit values from `bv`. This argument must point to enough memory to hold the number of bits requested. The requested bits are left-aligned with the first requested bit stored in the left-most, or most-significant, bit of the byte stream.
 
 ## See Also
 

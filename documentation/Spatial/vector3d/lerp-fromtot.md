@@ -28,7 +28,7 @@ A new rotation. When `t=0`, the result is the `from` vector. When `t=1.0`, the r
 
 - `from`: The starting vector.
 - `to`: The ending vector.
-- `t`: The value, between   and  , that the function interpolates at.
+- `t`: The value, between `0` and `1`, that the function interpolates at.
 
 
 ---

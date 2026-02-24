@@ -29,6 +29,11 @@ This method applies the Core ML model filter to an image. The effect filters the
 
 The Core ML model filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`headIndex`**: A `float` representing which output of a multihead Core ML model should be used for applying the effect to an image.
+- **`softmaxNormalization`**: A `Boolean` value representing the softmax normalization to be applied to the output image created by the model.
+- **`inputModel`**: The Core ML model to be used for applying effect on the image.
+
 The following code creates a filter that results in the flowers appearing to be glass panes:
 
 ```swift

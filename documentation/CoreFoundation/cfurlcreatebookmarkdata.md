@@ -36,11 +36,20 @@ For a document-scoped bookmark, any sandboxed app that has access to the bookmar
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `url`: The URL that bookmark data is being created for.
-- `options`: If you instead want to create a security-scoped bookmark that, when resolved, enables you to obtain read-only access to a file-system resource, bitwise   this parameter’s value with both the   option and the   option.
-- `resourcePropertiesToInclude`: In addition, the properties can contain the following collection classes:
-- `relativeToURL`: If you are creating a security-scoped bookmark to support App Sandbox, use this parameter as follows:
+- `options`: Options taken into account when creating the bookmark data. To create a security-scoped bookmark to support App Sandbox, include (by way of bitwise `OR` operators with any other options in this parameter) the [`withSecurityScope`](cfurlbookmarkcreationoptions/withsecurityscope.md) option. When you later resolve the bookmark, you can use the resulting security-scoped URL to obtain read/write access to the file-system resource pointed to by the URL. If you instead want to create a security-scoped bookmark that, when resolved, enables you to obtain read-only access to a file-system resource, bitwise `OR` this parameter’s value with both the [`withSecurityScope`](cfurlbookmarkcreationoptions/withsecurityscope.md) option and the [`securityScopeAllowOnlyReadAccess`](cfurlbookmarkcreationoptions/securityscopeallowonlyreadaccess.md) option.
+- `resourcePropertiesToInclude`: An array of names of URL resource properties. The values of these properties must be of a type that the bookmark generation code can serialize. Specifically, the values can contain any of the following primitive types: - `NSString` or `CFString`
+- `NSData` or `CFData`
+- `NSDate` or `CFDate`
+- `NSNumber` or `CFNumber`
+- `CFBoolean`
+- `NSURL` or `CFURL`
+- `CFNull`
+- `CFUUID` In addition, the properties can contain the following collection classes: - `NSArray` or `CFArray` containing only the above primitive types
+- `NSDictionary` or `CFDictionary` with `NSString` or `CFString` keys, in which all values contain only the above primitive types
+- `relativeToURL`: The URL that the bookmark data is relative to. If you are creating a security-scoped bookmark to support App Sandbox, use this parameter as follows: - To create an app-scoped bookmark, use a value of `nil`.
+- To create a document-scoped bookmark, use the *absolute* path (despite this parameter’s name) to the document file that is to own the new security-scoped bookmark.
 - `error`: The error that occurred in the case that the bookmark data cannot be created.
 
 ## See Also

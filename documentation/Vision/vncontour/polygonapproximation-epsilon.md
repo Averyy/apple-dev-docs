@@ -25,7 +25,7 @@ A simplified polygon contour from the points of the original contour.
 
 ## Parameters
 
-- `epsilon`: This parameter defines the distance threshold the algorithm uses. It preserves points whose perpendicular distance to the line segment they are on is greater than  , and removes all others.
+- `epsilon`: This parameter defines the distance threshold the algorithm uses. It preserves points whose perpendicular distance to the line segment they are on is greater than `epsilon`, and removes all others.
 
 ## See Also
 

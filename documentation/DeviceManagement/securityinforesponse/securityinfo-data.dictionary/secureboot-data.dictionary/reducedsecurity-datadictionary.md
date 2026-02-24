@@ -18,6 +18,12 @@ object SecurityInfoResponse.SecurityInfo.SecureBoot.ReducedSecurity
 
 Available in iOS 11 and later.
 
+## Properties
+
+- `AllowsAnyAppleSignedOS` (string): If ‘true’, allows any signed version of trusted system software from Apple to run.
+- `AllowsMDM` (string): If ‘true’, the MDM server controls kernel extensions and software updates.
+- `AllowsUserKextApproval` (string): If ‘true’, the user has control over kernel extensions.
+
 
 ---
 

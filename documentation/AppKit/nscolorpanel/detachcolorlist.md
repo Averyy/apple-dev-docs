@@ -20,7 +20,7 @@ Your application should use this method to remove an `NSColorList` saved with a 
 
 ## Parameters
 
-- `colorList`: The list of   objects to remove from the color pickers in the color panel.
+- `colorList`: The list of `NSColor` objects to remove from the color pickers in the color panel.
 
 ## See Also
 

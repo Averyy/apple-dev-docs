@@ -30,12 +30,12 @@ If the system throws an exception during this function, it always calls the `byt
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `arrayType`: A value that identifies the type of array to create. If   is   or  , this function returns  .
+- `arrayType`: A value that identifies the type of array to create. If `arrayType` is [`kJSTypedArrayTypeNone`](kjstypedarraytypenone.md) or [`kJSTypedArrayTypeArrayBuffer`](kjstypedarraytypearraybuffer.md), this function returns `NULL`.
 - `bytes`: A pointer to the byte buffer to use as the backing store of the typed array object.
-- `byteLength`: The number of bytes that   points to.
+- `byteLength`: The number of bytes that `bytes` points to.
 - `bytesDeallocator`: The allocator to use to deallocate the external buffer when deallocating the typed array object.
 - `deallocatorContext`: A pointer to pass back to the deallocator.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   if you don’t want to store an exception.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` if you don’t want to store an exception.
 
 ## See Also
 

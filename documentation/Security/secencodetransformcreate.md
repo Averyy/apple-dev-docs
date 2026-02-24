@@ -24,8 +24,8 @@ This function creates a transform which computes an encode.
 
 ## Parameters
 
-- `encodeType`: The type of digest to compute. You may pass   for this parameter, in which case an appropriate algorithm will be chosen for you. See   for a list of valid values.
-- `error`: A pointer to a  . This pointer will be set if an error occurred. This value may be   if you do not want an error returned.
+- `encodeType`: The type of digest to compute. You may pass `NULL` for this parameter, in which case an appropriate algorithm will be chosen for you. See `Encoding Types` for a list of valid values.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError). This pointer will be set if an error occurred. This value may be `nil` if you do not want an error returned.
 
 
 ---

@@ -30,7 +30,7 @@ Only the share owner or an administrator can invoke this method. Attempts by oth
 
 ## Parameters
 
-- `blockedIdentities`: An array of   objects to unblock.
+- `blockedIdentities`: An array of [`CKShare.BlockedIdentity`](ckshare/blockedidentity.md) objects to unblock.
 
 
 ---

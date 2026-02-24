@@ -26,7 +26,7 @@ TextField("Enter your username", text: $username)
 
 ## Parameters
 
-- `textContentType`: One of the content types available in the     structure that identify the semantic meaning expected for a text-entry   area.
+- `textContentType`: One of the content types available in the [`NSTextContentType`](https://developer.apple.com/documentation/AppKit/NSTextContentType) structure that identify the semantic meaning expected for a text-entry area.
 
 ## See Also
 

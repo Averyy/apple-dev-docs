@@ -19,7 +19,7 @@ func ABAddressBookUnregisterExternalChangeCallback(_ addressBook: ABAddressBook!
 ## Parameters
 
 - `addressBook`: The address book used to interact with the Address Book database.
-- `callback`: The function to invoke when the Address Book database changes. The signature of the function must match  .
+- `callback`: The function to invoke when the Address Book database changes. The signature of the function must match [`ABExternalChangeCallback`](abexternalchangecallback.md).
 - `context`: The object to pass to the callback function.
 
 ## See Also

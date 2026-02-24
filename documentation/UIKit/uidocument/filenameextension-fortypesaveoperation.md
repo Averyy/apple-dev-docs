@@ -28,7 +28,7 @@ The default implementation queries Launch Services to obtain the file extension 
 ## Parameters
 
 - `typeName`: A Uniform Type Identifier (UTI) that indicates the type of document (for example, PDF or HTML).
-- `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it’s being overwritten. See   for details.
+- `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it’s being overwritten. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for details.
 
 ## See Also
 

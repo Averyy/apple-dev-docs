@@ -26,7 +26,7 @@ The initialized image object, or `nil` if the object could not be initialized.
 ## Parameters
 
 - `data`: The image data. The data you supply must be premultiplied.
-- `options`: A dictionary specifying image options. (See  .)
+- `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also
 

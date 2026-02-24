@@ -24,8 +24,8 @@ init(in_size: Int, out_size: Int, weights: BNNSLayerData, bias: BNNSLayerData, a
 
 - `in_size`: The size of the input vector.
 - `out_size`: The size of the output vector.
-- `weights`: Matrix coefficients, containing       values.
-- `bias`: Layer bias, containing   values, one for each output component.
+- `weights`: Matrix coefficients, containing [`in_size`](bnnsfullyconnectedlayerparameters/in_size.md) `*` [`out_size`](bnnsfullyconnectedlayerparameters/out_size.md) values.
+- `bias`: Layer bias, containing [`out_size`](bnnsfullyconnectedlayerparameters/out_size.md) values, one for each output component.
 - `activation`: The layer activation function.
 
 ## See Also

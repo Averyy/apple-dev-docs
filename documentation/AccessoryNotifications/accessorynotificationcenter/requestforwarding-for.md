@@ -21,7 +21,7 @@ This method prompts the person to select which apps on their device can forward 
 
 ## Parameters
 
-- `accessory`: An accessory object that   provides when your companion app registers the accessory.
+- `accessory`: An accessory object that [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit) provides when your companion app registers the accessory.
 
 
 ---

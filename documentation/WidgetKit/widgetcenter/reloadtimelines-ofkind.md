@@ -21,7 +21,7 @@ func reloadTimelines(ofKind kind: String)
 
 ## Parameters
 
-- `kind`: A string that identifies the widget and matches the   value you used when you created the widget’s configuration.
+- `kind`: A string that identifies the widget and matches the value you used when you created the widget’s configuration.
 
 ## See Also
 

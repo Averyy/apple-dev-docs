@@ -27,7 +27,7 @@ Use of this method is discouraged in iOS 4.0 and later. If you are using the blo
 
 ## Parameters
 
-- `selector`: An optional application-supplied context. This is the context data passed to the   method. This argument can be  .
+- `selector`: The message sent to the animation delegate after animations end. The default value is `NULL`. The selector should be of the form: `- (void)animationDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context`. Your method must take the following arguments: - `animationID` An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) containing an optional application-supplied identifier. This is the identifier that is passed to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) method. This argument can be `nil`. - `finished` An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the animation ran to completion before it stopped or [`false`](https://developer.apple.com/documentation/Swift/false) if it did not. - `context` An optional application-supplied context. This is the context data passed to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) method. This argument can be `nil`.
 
 ## See Also
 

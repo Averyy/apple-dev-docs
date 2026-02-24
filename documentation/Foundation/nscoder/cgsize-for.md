@@ -29,7 +29,7 @@ In general, you should use this function only to convert strings that were previ
 
 ## Parameters
 
-- `string`: A string whose contents are of the form “{ ,  }”, where   is the width and   is the height. The   and   values can be integer or float values. An example of a valid string is @”{3.0,2.5}”. The string is not localized, so items are always separated with a comma.
+- `string`: A string whose contents are of the form “{*w*, *h*}”, where *w* is the width and *h* is the height. The *w* and *h* values can be integer or float values. An example of a valid string is @”{3.0,2.5}”. The string is not localized, so items are always separated with a comma.
 
 ## See Also
 

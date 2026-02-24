@@ -32,7 +32,8 @@ The texture bytes are assumed to be stored as tightly packed 32 bpp, 8bpc (unsig
 
 ## Parameters
 
-- `block`: A block to be called when the texture can be safely modified. The block takes the following parameters:
+- `block`: A block to be called when the texture can be safely modified. The block takes the following parameters: - **pixelData**: A pointer to the start of the current texture data.
+- **lengthInBytes**: The length of the texture data in bytes.
 
 
 ---

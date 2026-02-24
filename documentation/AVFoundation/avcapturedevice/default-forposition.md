@@ -53,9 +53,9 @@ var defaultCamera: AVCaptureDevice? {
 
 ## Parameters
 
-- `deviceType`: The type of capture device to request, such as  .
-- `mediaType`: The type of media to request capture of, such as   or  .
-- `position`: The position of capture device to request relative to system hardware (front- or back-facing). Pass   to search for devices regardless of position.
+- `deviceType`: The type of capture device to request, such as [`builtInWideAngleCamera`](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md).
+- `mediaType`: The type of media to request capture of, such as [`video`](avmediatype/video.md) or [`audio`](avmediatype/audio.md).
+- `position`: The position of capture device to request relative to system hardware (front- or back-facing). Pass [`AVCaptureDevice.Position.unspecified`](avcapturedevice/position-swift.enum/unspecified.md) to search for devices regardless of position.
 
 ## See Also
 

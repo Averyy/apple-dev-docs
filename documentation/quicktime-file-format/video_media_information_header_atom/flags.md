@@ -9,6 +9,8 @@ A 3-byte space for video media information flags.
 
 There is one defined flag.
 
+- **No lean ahead**: This is a compatibility flag that allows QuickTime to distinguish between movies created with QuickTime 1.0 and newer movies. Always set this flag to `1`, unless you are creating a movie intended for playback using version 1.0 of QuickTime. This flag’s value is `0x0001`.
+
 ## See Also
 
 - [Size](video_media_information_header_atom/size.md)

@@ -31,7 +31,7 @@ You can add requests to an analyzer that’s actively analyzing an audio stream.
 ## Parameters
 
 - `request`: A sound analysis request.
-- `observer`: An   instance that receives the analyzer’s results. The analyzer maintains a weak reference to the observer.
+- `observer`: An [`SNResultsObserving`](snresultsobserving.md) instance that receives the analyzer’s results. The analyzer maintains a weak reference to the observer.
 
 ## See Also
 

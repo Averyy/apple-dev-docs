@@ -24,8 +24,8 @@ Append a TLS ciphersuite to the set of enabled ciphersuites.
 
 ## Parameters
 
-- `options`: A   instance.
-- `ciphersuite`: A   value.
+- `options`: A `sec_protocol_options_t` instance.
+- `ciphersuite`: A `tls_ciphersuite_t` value.
 
 
 ---

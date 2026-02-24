@@ -25,10 +25,10 @@ If your [`numberOfItems(in:)`](nsmenudelegate/numberofitems(in:).md) delegate me
 
 ## Parameters
 
-- `menu`: The menu object that owns  .
+- `menu`: The menu object that owns `item`.
 - `item`: The menu-item object that may be updated.
 - `index`: The integer index of the menu item.
-- `shouldCancel`: Set to   if, due to some user action, the menu no longer needs to be displayed before all the menu items have been updated. You can ignore this flag, return  , and continue; or you can save your work (to save time the next time your delegate is called) and return   to stop the updating.
+- `shouldCancel`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) if, due to some user action, the menu no longer needs to be displayed before all the menu items have been updated. You can ignore this flag, return [`true`](https://developer.apple.com/documentation/Swift/true), and continue; or you can save your work (to save time the next time your delegate is called) and return [`false`](https://developer.apple.com/documentation/Swift/false) to stop the updating.
 
 ## See Also
 

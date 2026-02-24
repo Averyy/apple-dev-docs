@@ -24,7 +24,7 @@ This method launches the preview application with the provided URLs and, optiona
 
 ## Parameters
 
-- `urls`: An array of URLs to present in the new   scene.
+- `urls`: An array of URLs to present in the new `PreviewApplication` scene.
 - `selectedURL`: If provided and in the array of passed URLs, the URL to select in the presented collection..
 
 

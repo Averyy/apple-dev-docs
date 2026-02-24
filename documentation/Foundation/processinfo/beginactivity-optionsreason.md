@@ -30,7 +30,7 @@ Indicate completion of the activity by calling [`endActivity(_:)`](processinfo/e
 
 ## Parameters
 
-- `options`: Options for the activity. See   for possible values.
+- `options`: Options for the activity. See [`ProcessInfo.ActivityOptions`](processinfo/activityoptions.md) for possible values.
 - `reason`: A string used in debugging to indicate the reason the activity began.
 
 ## See Also

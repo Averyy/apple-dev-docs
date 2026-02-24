@@ -30,7 +30,7 @@ The delegate receives this message only if `theStream` is scheduled on a run loo
 
 ## Parameters
 
-- `aStream`: The stream on which   occurred.
+- `aStream`: The stream on which `streamEvent` occurred.
 - `eventCode`: The stream event that occurred.
 
 ## See Also

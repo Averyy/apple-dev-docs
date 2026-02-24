@@ -27,11 +27,11 @@ Call this method to play an animation and configure playback options. RealityKit
 ## Parameters
 
 - `animation`: The animation to play.
-- `transitionDuration`: The duration in seconds over which the animation   fades in or cross-fades.
-- `blendLayerOffset`: An integer that specifies the order in which to   apply animations when more than one animation is playing. Valid values   are   or  .
-- `separateAnimatedValue`: When set to false, this value indicates that the   animation will write directly to the entity’s base value. When set to true,   this value indicates that the animation will write to an interim value for   the duration of the animation. If this value is set to true then when the   animation completes, the entity’s value will be reset to the base value.
-- `startsPaused`: A Boolean that pauses the progress of an animation when   set to  .
-- `clock`: An optional clock to drive the animation with a custom   timescale.
+- `transitionDuration`: The duration in seconds over which the animation fades in or cross-fades.
+- `blendLayerOffset`: An integer that specifies the order in which to apply animations when more than one animation is playing. Valid values are `0` or `1`.
+- `separateAnimatedValue`: When set to false, this value indicates that the animation will write directly to the entity’s base value. When set to true, this value indicates that the animation will write to an interim value for the duration of the animation. If this value is set to true then when the animation completes, the entity’s value will be reset to the base value.
+- `startsPaused`: A Boolean that pauses the progress of an animation when set to `true`.
+- `clock`: An optional clock to drive the animation with a custom timescale.
 
 ## See Also
 

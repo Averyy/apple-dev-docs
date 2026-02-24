@@ -24,9 +24,9 @@ If the volume experiences an out-of-space condition, reply with an error of doma
 ## Parameters
 
 - `contents`: A buffer containing the data to write to the file.
-- `item`: The item to which to write. FSKit guarantees this item will be of type  .
+- `item`: The item to which to write. FSKit guarantees this item will be of type [`FSItem.ItemType.file`](fsitem/itemtype/file.md).
 - `offset`: The offset in the file from which to start writing.
-- `reply`: A block or closure to indicate success or failure. If writing succeeds, pass the number of bytes written and a   error. If writing fails, pass the number of bytes written prior to the error along with the relevant error. For an   Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
+- `reply`: A block or closure to indicate success or failure. If writing succeeds, pass the number of bytes written and a `nil` error. If writing fails, pass the number of bytes written prior to the error along with the relevant error. For an `async` Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
 
 ## See Also
 

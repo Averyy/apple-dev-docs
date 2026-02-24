@@ -17,6 +17,10 @@ The get token response details.
 object GetTokenResponse
 ```
 
+## Properties
+
+- `TokenData` (data) *(required)*: The token data. If the token is a string value, it needs to be a UTF-8-encoded string.
+
 ## See Also
 
 - [object GetTokenRequest](gettokenrequest.md)

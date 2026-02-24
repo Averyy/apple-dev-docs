@@ -32,8 +32,8 @@ A scene source can contain objects that are not part of its scene graph. To obta
 
 ## Parameters
 
-- `options`: A dictionary containing options that affect scene loading. See   for available keys and values. Pass   to use default options.
-- `statusHandler`: An   block. SceneKit calls this block periodically to report progress while loading the scene.
+- `options`: A dictionary containing options that affect scene loading. See `Scene Loading Options` for available keys and values. Pass `nil` to use default options.
+- `statusHandler`: An [`SCNSceneSourceStatusHandler`](scnscenesourcestatushandler.md) block. SceneKit calls this block periodically to report progress while loading the scene.
 
 ## See Also
 

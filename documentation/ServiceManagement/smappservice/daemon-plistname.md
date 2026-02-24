@@ -25,7 +25,7 @@ The property list name must correspond to a property list in the calling app’s
 
 ## Parameters
 
-- `plistName`: The name of the property list corresponding to the  .
+- `plistName`: The name of the property list corresponding to the [`SMAppService`](smappservice.md).
 
 ## See Also
 

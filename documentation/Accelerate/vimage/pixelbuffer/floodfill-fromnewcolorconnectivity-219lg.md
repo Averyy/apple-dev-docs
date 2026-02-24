@@ -43,7 +43,7 @@ The image below shows the original line-art image on the left, and the flood-fil
 
 - `seed`: The coordinates that define the position of the seed pixel inside the connected component.
 - `newColor`: The new pixel value that overwrites the pixels in the connected component.
-- `connectivity`: An enumeration that specifies which pixels the operation includes as neighbors. Pass   to specify a four-connected neighborhood of a pixel that includes the pixels to the left and right, and those above and below. Pass   to specify an eight-connected neighborhood that includes the four-connected neighborhood and the pixels on the four diagonals.
+- `connectivity`: An enumeration that specifies which pixels the operation includes as neighbors. Pass [`vImage.FloodFillConnectivity.edges`](vimage/floodfillconnectivity/edges.md) to specify a four-connected neighborhood of a pixel that includes the pixels to the left and right, and those above and below. Pass [`vImage.FloodFillConnectivity.edgesAndCorners`](vimage/floodfillconnectivity/edgesandcorners.md) to specify an eight-connected neighborhood that includes the four-connected neighborhood and the pixels on the four diagonals.
 
 ## See Also
 

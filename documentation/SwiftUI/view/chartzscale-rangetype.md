@@ -21,7 +21,7 @@ func chartZScale<Range>(range: Range, type: ScaleType? = nil) -> some View where
 
 ## Parameters
 
-- `range`: The range of z positions that correspond to the scale   domain. By default the range is determined by the dimension of the plot   area.
+- `range`: The range of z positions that correspond to the scale domain. By default the range is determined by the dimension of the plot area.
 - `type`: The scale type.
 
 

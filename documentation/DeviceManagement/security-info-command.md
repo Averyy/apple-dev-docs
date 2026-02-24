@@ -29,6 +29,61 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>SecurityInfo</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_SecurityInfo</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0011_SecurityInfo</string>
+    <key>SecurityInfo</key>
+    <dict>
+        <key>HardwareEncryptionCaps</key>
+        <integer>3</integer>
+        <key>ManagementStatus</key>
+        <dict>
+            <key>IsUserEnrollment</key>
+            <false/>
+        </dict>
+        <key>PasscodeCompliant</key>
+        <true/>
+        <key>PasscodeCompliantWithProfiles</key>
+        <true/>
+        <key>PasscodeLockGracePeriod</key>
+        <integer>0</integer>
+        <key>PasscodeLockGracePeriodEnforced</key>
+        <integer>0</integer>
+        <key>PasscodePresent</key>
+        <false/>
+    </dict>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -36,6 +91,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to get security-related information about a device.
 - [object SecurityInfoResponse](securityinforesponse.md)
   A response from the device after it processes the command to get security-related information about a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

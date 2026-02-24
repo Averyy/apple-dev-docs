@@ -16,8 +16,8 @@ init(tracking anchorCapabilities: Set<SpatialTrackingSession.Configuration.Ancho
 
 ## Parameters
 
-- `anchorCapabilities`: The set of anchor capabilities to run with a  .
-- `sceneUnderstanding`: The set of scene understanding capabilities   to run with a  .
+- `anchorCapabilities`: The set of anchor capabilities to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
+- `sceneUnderstanding`: The set of scene understanding capabilities to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
 
 
 ---

@@ -30,7 +30,7 @@ You can use this function to create a generic color space. For more information,
 
 ## Parameters
 
-- `name`: A color space name. See   for a list of the valid Quartz-defined names.
+- `name`: A color space name. See [`Accessing System-Defined Color Spaces`](cgcolorspace#Accessing-System-Defined-Color-Spaces.md) for a list of the valid Quartz-defined names.
 
 ## See Also
 

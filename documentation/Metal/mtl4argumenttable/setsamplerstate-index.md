@@ -26,8 +26,8 @@ func setSamplerState(_ resourceID: MTLResourceID, index bindingIndex: Int)
 
 ## Parameters
 
-- `resourceID`: The   of the   instance to bind.
-- `bindingIndex`: A valid binding index in the sampler binding range.   It is an error for this value to match or exceed the value of property    on the descriptor   from which you created this argument table.
+- `resourceID`: The [`MTLResourceID`](mtlresourceid.md) of the [`MTLSamplerState`](mtlsamplerstate.md) instance to bind.
+- `bindingIndex`: A valid binding index in the sampler binding range. It is an error for this value to match or exceed the value of property [`maxSamplerStateBindCount`](mtl4argumenttabledescriptor/maxsamplerstatebindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

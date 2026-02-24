@@ -34,8 +34,8 @@ This method is typically used for “Save As” operations. Performance may vary
 
 - `store`: A persistent store.
 - `URL`: An URL object that specifies the location for the new store.
-- `options`: A dictionary containing key-value pairs that specify whether the store should be read-only, and whether (for an XML store) the XML file should be validated against the DTD before it is read. For key definitions, see  .
-- `storeType`: A string constant (such as  ) that specifies the type of the new store—see  .
+- `options`: A dictionary containing key-value pairs that specify whether the store should be read-only, and whether (for an XML store) the XML file should be validated against the DTD before it is read. For key definitions, see [`Store options`](store-options.md).
+- `storeType`: A string constant (such as `NSSQLiteStoreType`) that specifies the type of the new store—see [`Persistent Store Types`](persistent-store-types.md).
 
 ## See Also
 

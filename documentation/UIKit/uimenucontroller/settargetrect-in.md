@@ -25,7 +25,7 @@ Once it is set, the target rectangle does not track the view; if the view moves 
 ## Parameters
 
 - `targetRect`: A rectangle that defines the area that is to be the target of the menu commands.
-- `targetView`: The view in which   appears.
+- `targetView`: The view in which `targetRect` appears.
 
 ## See Also
 

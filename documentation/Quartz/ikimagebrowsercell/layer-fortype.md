@@ -24,7 +24,7 @@ Subclasses can override this method to add a Core Animation layer to the cell
 
 ## Parameters
 
-- `type`: A string representing the layer location. See   for possible values.
+- `type`: A string representing the layer location. See [`Cell Layer Positions`](cell-layer-positions.md) for possible values.
 
 
 ---

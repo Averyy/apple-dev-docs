@@ -23,9 +23,9 @@ One use of this method might be to visually highlight the word being spoken.
 
 ## Parameters
 
-- `sender`: An   object that’s synthesizing text into speech.
-- `characterRange`: Word that   is about to speak into the sound output device.
-- `string`: Text that is being synthesized by  .
+- `sender`: An [`NSSpeechSynthesizer`](nsspeechsynthesizer.md) object that’s synthesizing text into speech.
+- `characterRange`: Word that `sender` is about to speak into the sound output device.
+- `string`: Text that is being synthesized by `sender`.
 
 ## See Also
 

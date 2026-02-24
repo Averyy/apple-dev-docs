@@ -24,6 +24,11 @@ object ManagedApplicationAttributesCommand
 - [object ManagedApplicationAttributesCommand.Command](managedapplicationattributescommand/command-data.dictionary.md)
   The command to query attributes in managed apps on a device.
 
+## Properties
+
+- `Command` (ManagedApplicationAttributesCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ManagedApplicationAttributesResponse](managedapplicationattributesresponse.md)

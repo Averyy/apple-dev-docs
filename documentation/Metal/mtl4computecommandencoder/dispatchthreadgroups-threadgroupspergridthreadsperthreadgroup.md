@@ -22,8 +22,8 @@ func dispatchThreadgroups(threadgroupsPerGrid: MTLSize, threadsPerThreadgroup: M
 
 ## Parameters
 
-- `threadgroupsPerGrid`: An   instance that represents the number of threadgroups in the grid,   in each dimension.
-- `threadsPerThreadgroup`: An   instance that represents the number of threads in one   threadgroup, in each dimension.
+- `threadgroupsPerGrid`: An [`MTLSize`](mtlsize.md) instance that represents the number of threadgroups in the grid, in each dimension.
+- `threadsPerThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in one threadgroup, in each dimension.
 
 ## See Also
 

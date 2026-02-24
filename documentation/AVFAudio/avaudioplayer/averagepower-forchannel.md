@@ -30,7 +30,7 @@ Before asking the player for its average power value, you must call [`updateMete
 
 ## Parameters
 
-- `channelNumber`: The audio channel with the average power value you want to retrieve. Channel numbers are zero-indexed. A monaural signal, or the left channel of a stereo signal, has channel number  .
+- `channelNumber`: The audio channel with the average power value you want to retrieve. Channel numbers are zero-indexed. A monaural signal, or the left channel of a stereo signal, has channel number `0`.
 
 ## See Also
 

@@ -6,7 +6,7 @@ Build Swift packages with an existing continuous integration setup and prepare a
 
 #### Overview
 
- (CI) is the process of automating and streamlining the building, analyzing, testing, archiving, and publishing of your apps to ensure that they’re always in a releasable state. Use either [`Xcode Cloud`](xcode-cloud.md) or the `xcodebuild` command directly on other CI systems to build Swift packages and apps that use them.
+*Continuous integration* (CI) is the process of automating and streamlining the building, analyzing, testing, archiving, and publishing of your apps to ensure that they’re always in a releasable state. Use either [`Xcode Cloud`](xcode-cloud.md) or the `xcodebuild` command directly on other CI systems to build Swift packages and apps that use them.
 
 Most projects that contain or depend on Swift packages don’t require additional configuration. However, be sure to commit your project’s `Package.resolved` file to your Git repository. This ensures a reliable CI workflow that always uses the expected version of a package dependency. If your project depends on packages that require authentication, or you need to use your Mac’s Git tooling instead of the tooling which comes bundled with Xcode, you may need to perform additional configuration.
 
@@ -16,13 +16,13 @@ Most projects that contain or depend on Swift packages don’t require additiona
 
 To ensure the CI workflow’s reliability, make sure it uses the appropriate version of package dependencies. Xcode stores the exact version of each package dependency in a file called `Package.resolved`. The file automatically updates when package requirements in your Xcode project or in the `Package.swift` manifest file change. Commit this file to your Git repository to ensure it’s always up-to-date on the CI environment to prevent the CI from building your project with unexpected versions of package dependencies.
 
-> 💡 **Tip**: You can find the `Package.resolved` file inside your `.xcodeproj` directory at `.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.
+> 💡 **Tip**: You can find the `Package.resolved` file inside your `.xcodeproj` directory at *[appName]*`.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.
 
 If your CI pipeline uses the `xcodebuild` command directly, also pass the `-disableAutomaticPackageResolution` flag. This flag ensures that the CI pipeline always uses the package dependencies as defined in the `Package.resolved` file.
 
 ##### Provide Credentials
 
-If your Xcode project only depends on publicly available Swift packages, you don’t need to perform additional configuration steps. Xcode Cloud or the `xcodebuild` command automatically resolve package dependencies for you. However, to resolve package dependencies that require authentication, or , you need to provide credentials to your CI setup. For information on granting Xcode Cloud access to private dependencies, see [`Making dependencies available to Xcode Cloud`](making-dependencies-available-to-xcode-cloud.md).
+If your Xcode project only depends on publicly available Swift packages, you don’t need to perform additional configuration steps. Xcode Cloud or the `xcodebuild` command automatically resolve package dependencies for you. However, to resolve package dependencies that require authentication, or *private packages*, you need to provide credentials to your CI setup. For information on granting Xcode Cloud access to private dependencies, see [`Making dependencies available to Xcode Cloud`](making-dependencies-available-to-xcode-cloud.md).
 
 If you’re using the `xcodebuild` command directly, use SSH–based Git URLs for your packages and configure your SSH credentials. Set up your `known_hosts` file in the `~/.ssh` directory of the macOS user that runs your CI tasks. `xcodebuild` honors your SSH configuration — there’s no additional setup required.
 

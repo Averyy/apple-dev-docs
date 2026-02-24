@@ -29,6 +29,11 @@ This method generates an Aztec code as an image. The Aztec barcode code is a low
 
 The Aztec code generator filter uses the following properties:
 
+- **`message`**: The data to be encoded as an Aztec code. An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object whose display name is Message.
+- **`correctionLevel`**: A `float` representing the percentage of redundancy to add to the message data. A higher correction level allows the barcode to be correctly read even when partially damaged.
+- **`layers`**: A `float` representing the number of concentric squares encoding the barcode data. When the value is zero, Core Image automatically determines the appropriate number of layers to encode the message data at the specified correction level.
+- **`compactStyle`**: A `float` determining the use of compact or full-size Aztec barcode format. The compact format can store up to 44 bytes of message data in up to 4 layers. The full-size format can store up to 1914 bytes of message data in up to 32 layers. Leave unset, or set to 0 for automatic.
+
 The following code creates a filter that generates an Aztec barcode:
 
 ```swift

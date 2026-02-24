@@ -12,7 +12,7 @@ When your browser app uses an alternative browser engine, it relies on helper pr
 
 Your browser app acts as the “host” for each of the extensions that support your browser engine. You need to include the code to launch each extension in your browser app; one extension can’t load another extension.
 
-To launch an extension, your browser app creates and initializes an instance of the structure that represents the running extension process. Pass an  to the initializer, to execute cleanup code if the operating system interrupts the extension process or the extension crashes. For example, to launch a web content extension:
+To launch an extension, your browser app creates and initializes an instance of the structure that represents the running extension process. Pass an *interruption handler* to the initializer, to execute cleanup code if the operating system interrupts the extension process or the extension crashes. For example, to launch a web content extension:
 
 ```swift
 let contentProcess = WebContentProcess() {
@@ -36,7 +36,7 @@ The operating system creates a temporary sandbox when it starts your content ext
 
 As your extensions participate in your browser app’s workflow, grant them capabilities that tell the operating system what your browser is using the extensions for. Capabilities act as assertions to the operating system that it needs to schedule the extension to support particular tasks, for example preparing media content to display in a tab that’s in the foreground on the person’s screen.
 
-You identify the capability to grant to the extension by selecting the appropriate value from the [`ProcessCapability`](processcapability.md) enumeration. In your browser app, pass the capability  to the extension process’s `grantCapability()` method to receive a  object of type [`ProcessCapability.Grant`](processcapability/grant.md), indicating that the operating system granted the capability to your extension. When you finish the task that requires the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the grant object to relinquish the capability.
+You identify the capability to grant to the extension by selecting the appropriate value from the [`ProcessCapability`](processcapability.md) enumeration. In your browser app, pass the capability  to the extension process’s `grantCapability()` method to receive a *grant* object of type [`ProcessCapability.Grant`](processcapability/grant.md), indicating that the operating system granted the capability to your extension. When you finish the task that requires the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the grant object to relinquish the capability.
 
 For example, to request and use the [`ProcessCapability.foreground`](processcapability/foreground.md) capability for the networking process:
 

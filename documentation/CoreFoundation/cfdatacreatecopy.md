@@ -32,7 +32,7 @@ Use this function when you need to pass a CFData object into another function by
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `theData`: The CFData object to copy.
 
 ## See Also

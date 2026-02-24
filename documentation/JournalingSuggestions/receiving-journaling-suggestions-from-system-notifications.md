@@ -16,7 +16,7 @@ If a tapped notification refers to a specific moment, the app displays the Journ
 
 #### Add the Notification Url Target Property
 
-When you add the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/JSNotificationURLFormat) target property to your app, the system adds your app as an available option in the Open Notifications With setting. The value you choose needs to be a , which also defines how the system provides notification information to your app. The format of the link is a base URL for your app, followed by the parameter string: `{journaling-suggestion-id}`, which represents the unique journaling suggestion. For example:
+When you add the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/JSNotificationURLFormat) target property to your app, the system adds your app as an available option in the Open Notifications With setting. The value you choose needs to be a *universal link*, which also defines how the system provides notification information to your app. The format of the link is a base URL for your app, followed by the parameter string: `{journaling-suggestion-id}`, which represents the unique journaling suggestion. For example:
 
 ```http
 <base_URL>/{journaling-suggesion-id}

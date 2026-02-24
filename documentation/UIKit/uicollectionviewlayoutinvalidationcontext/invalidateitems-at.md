@@ -24,7 +24,7 @@ Call this method to identify the specific cells of your layout that require upda
 
 ## Parameters
 
-- `indexPaths`: An array of   objects. Each index path represents a cell whose layout needs to be recomputed.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects. Each index path represents a cell whose layout needs to be recomputed.
 
 ## See Also
 

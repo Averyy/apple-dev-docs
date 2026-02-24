@@ -26,7 +26,7 @@ struct CustomMaterial
 
 Custom, or programmable, materials allow you to leverage RealityKit’s existing shader pipeline to render physically based or unlit materials that support custom Metal shader functions. These functions modify how RealityKit renders an entity. Custom materials support two different types of custom Metal shader functions: geometry modifiers and surface shaders.
 
-Use a _surface shader _to calculate or specify all the material attributes that RealityKit uses to render your entity, such as [`baseColor`](custommaterial/basecolor-swift.property.md), [`normal`](custommaterial/normal-swift.property.md), and [`roughness`](custommaterial/roughness-swift.property.md). A  can offset the position of an entity’s vertices to change the size and shape of an entity. It can also change other per-vertex data, such as vertex color and UV texture coordinates, which define how RealityKit maps textures on to the model.
+Use a _surface shader _to calculate or specify all the material attributes that RealityKit uses to render your entity, such as [`baseColor`](custommaterial/basecolor-swift.property.md), [`normal`](custommaterial/normal-swift.property.md), and [`roughness`](custommaterial/roughness-swift.property.md). A *geometry modifier* can offset the position of an entity’s vertices to change the size and shape of an entity. It can also change other per-vertex data, such as vertex color and UV texture coordinates, which define how RealityKit maps textures on to the model.
 
 > ❗ **Important**: For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
 

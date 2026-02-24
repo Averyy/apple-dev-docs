@@ -27,7 +27,7 @@ The absolute time equivalent of `gdate`.
 ## Parameters
 
 - `gdate`: The Gregorian date to convert.
-- `tz`: The time zone to use for time correction. Pass   for GMT.
+- `tz`: The time zone to use for time correction. Pass `NULL` for GMT.
 
 ## See Also
 

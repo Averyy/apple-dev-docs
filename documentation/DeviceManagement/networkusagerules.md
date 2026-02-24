@@ -88,6 +88,11 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 - [object NetworkUsageRules.SIMRulesItem](networkusagerules/simrulesitem.md)
   The policy for individual SIM cards.
 
+## Properties
+
+- `ApplicationRules` ([NetworkUsageRules.ApplicationRulesItem]): An array of application rules, that apply to only managed apps.
+- `SIMRules` ([NetworkUsageRules.SIMRulesItem]): An array of SIM rules, that apply to all apps.
+
 ## See Also
 
 - [object Cellular](cellular.md)

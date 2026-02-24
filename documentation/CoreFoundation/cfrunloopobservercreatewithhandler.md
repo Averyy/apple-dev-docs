@@ -30,11 +30,12 @@ The run loop observer is not automatically added to a run loop. To add the obser
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `activities`: Set of flags identifying the activity stages of the run loop during which the observer is called. See  for the list of stages. To have the observer called at multiple stages in the run loop, combine the   values using the bitwise-OR operator.
-- `repeats`: A flag identifying whether the observer is called only once or every time through the run loop. If   is  , the observer is invalidated after it is called once, even if the observer was scheduled to be called at multiple stages within the run loop.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `activities`: Set of flags identifying the activity stages of the run loop during which the observer is called. See [`CFRunLoopActivity`](cfrunloopactivity.md)for the list of stages. To have the observer called at multiple stages in the run loop, combine the [`CFRunLoopActivity`](cfrunloopactivity.md) values using the bitwise-OR operator.
+- `repeats`: A flag identifying whether the observer is called only once or every time through the run loop. If `repeats` is `false`, the observer is invalidated after it is called once, even if the observer was scheduled to be called at multiple stages within the run loop.
 - `order`: A priority index indicating the order in which run loop observers are processed. When multiple run loop observers are scheduled in the same activity stage in a given run loop mode, the observers are processed in increasing order of this parameter. Pass 0 unless there is a reason to do otherwise.
-- `block`: The block invoked when the observer runs. The block takes two arguments:
+- `block`: The block invoked when the observer runs. The block takes two arguments: - **`observer`**: The run loop observer that is firing.
+- **`activity`**: The current activity stage of the run loop.
 
 ## See Also
 

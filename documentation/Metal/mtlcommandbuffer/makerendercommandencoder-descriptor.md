@@ -26,7 +26,7 @@ Use an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance’s meth
 
 ## Parameters
 
-- `renderPassDescriptor`: An   instance that configures the   the method returns.
+- `renderPassDescriptor`: An [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance that configures the [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) the method returns.
 
 
 ---

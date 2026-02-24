@@ -47,6 +47,9 @@ let archiveFilePath: FilePath = {
 
 Use `fileStream(path:mode:options:permissions:)` to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/System/FileDescriptor/AccessMode/writeOnly) mode. Set the options as:
 
+- **[`create`](https://developer.apple.com/documentation/System/FileDescriptor/OpenOptions/create)**: To specify that the byte stream creates the file if it doesn’t already exist.
+- **[`truncate`](https://developer.apple.com/documentation/System/FileDescriptor/OpenOptions/truncate)**: To specify that if the file exists, the byte stream truncates it to zero bytes before it performs any operations.
+
 ```swift
 guard let writeFileStream = ArchiveByteStream.fileStream(
         path: archiveFilePath,

@@ -25,7 +25,7 @@ Before terminating the object in `provider`, the system calls this method to sto
 
 ## Parameters
 
-- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s   method.
+- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](iouserusbhosthiddevice/start.md) method.
 
 ## See Also
 

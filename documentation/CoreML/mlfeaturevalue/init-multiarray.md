@@ -22,7 +22,7 @@ convenience init(multiArray value: MLMultiArray)
 
 ## Parameters
 
-- `value`: An   instance.
+- `value`: An [`MLMultiArray`](mlmultiarray.md) instance.
 
 ## See Also
 

@@ -24,7 +24,7 @@ The Quartz Composer engine calls this method  when your custom patch starts to r
 
 ## Parameters
 
-- `context`: An opaque object , conforming to the   protocol, that represents the execution context of the   object. Do not retain this object or use it outside of the scope of this method.
+- `context`: An opaque object , conforming to the [`QCPlugInContext`](qcplugincontext.md) protocol, that represents the execution context of the `QCPlugIn` object. Do not retain this object or use it outside of the scope of this method.
 
 ## See Also
 

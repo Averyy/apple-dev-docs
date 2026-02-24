@@ -27,7 +27,7 @@ This method steps through the `objects` and `keys` arrays, creating entries in t
 ## Parameters
 
 - `objects`: An array containing the values for the new dictionary.
-- `keys`: An array containing the keys for the new dictionary. Each key is copied (using  ; keys must conform to the   protocol), and the copy is added to the new dictionary.
+- `keys`: An array containing the keys for the new dictionary. Each key is copied (using [`copy(with:)`](nscopying/copy(with:).md); keys must conform to the `NSCopying` protocol), and the copy is added to the new dictionary.
 
 ## See Also
 

@@ -30,8 +30,8 @@ A 2D point in the view’s coordinate space can refer to any point along a line 
 ## Parameters
 
 - `point`: A point in the view’s coordinate system.
-- `planeTransform`: The transform used to define the coordinate   system of the plane. The coordinate system’s positive y-axis is assumed   to be the normal of the plane.
-- `relativeToCamera`: If the plane transform is relative to camera space   or world space.
+- `planeTransform`: The transform used to define the coordinate system of the plane. The coordinate system’s positive y-axis is assumed to be the normal of the plane.
+- `relativeToCamera`: If the plane transform is relative to camera space or world space.
 
 ## See Also
 

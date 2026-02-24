@@ -35,7 +35,7 @@ To apply a rasterization rate map to a render pass, set the render pass descript
 
 ##### Configuring the Rate Map
 
-A rasterization rate map specifies the size of the viewport coordinate space in logical units and one or more . A layer map partitions the viewport coordinate space into a 2D grid of cells and defines the rasterization rate for each cell. If you aren’t using layered rendering, provide a single layer map; otherwise, provide one layer map for each layer. For more information about layered rendering, see [`Rendering to multiple texture slices in a draw command`](rendering-to-multiple-texture-slices-in-a-draw-command.md).
+A rasterization rate map specifies the size of the viewport coordinate space in logical units and one or more *layer maps*. A layer map partitions the viewport coordinate space into a 2D grid of cells and defines the rasterization rate for each cell. If you aren’t using layered rendering, provide a single layer map; otherwise, provide one layer map for each layer. For more information about layered rendering, see [`Rendering to multiple texture slices in a draw command`](rendering-to-multiple-texture-slices-in-a-draw-command.md).
 
 You can query the physical size requirements for each layer in the render pass by calling the [`physicalSize(layer:)`](mtlrasterizationratemap/physicalsize(layer:).md) method. Your render targets need to be at least this large.
 

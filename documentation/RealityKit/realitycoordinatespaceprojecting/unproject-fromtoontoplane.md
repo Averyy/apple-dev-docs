@@ -32,9 +32,9 @@ A 2D point in the view’s coordinate space can refer to any point along a line 
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
-- `space`: The 2D coordinate space in which to interpret the  .
-- `realitySpace`: The 3D coordinate space in which    interprets the point.
-- `planeTransform`: The transform used to define the coordinate   system of the plane relative to the scene. The coordinate   system’s positive y-axis is assumed to be the normal of the   plane.
+- `space`: The 2D coordinate space in which to interpret the `point`.
+- `realitySpace`: The 3D coordinate space in which `planeTransform` interprets the point.
+- `planeTransform`: The transform used to define the coordinate system of the plane relative to the scene. The coordinate system’s positive y-axis is assumed to be the normal of the plane.
 
 
 ---

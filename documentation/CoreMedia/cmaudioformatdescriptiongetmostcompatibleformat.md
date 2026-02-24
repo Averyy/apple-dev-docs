@@ -30,7 +30,7 @@ This property returns a pointer to the most compatible `AudioFormatListItem` in 
 
 ## Parameters
 
-- `desc`:   being interrogated.
+- `desc`: `CMFormatDescription` being interrogated.
 
 ## See Also
 

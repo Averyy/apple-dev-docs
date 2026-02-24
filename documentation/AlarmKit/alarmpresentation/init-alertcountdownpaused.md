@@ -18,8 +18,8 @@ init(alert: AlarmPresentation.Alert, countdown: AlarmPresentation.Countdown? = n
 ## Parameters
 
 - `alert`: The required content for the alert mode of the alarm.
-- `countdown`: An optional parameter with a default   value.   Provide a   object.
-- `paused`: An optional parameter with a default   value.   Provide a   object.
+- `countdown`: An optional parameter with a default `nil` value. Provide a [`AlarmPresentation.Countdown`](alarmpresentation/countdown-swift.struct.md) object.
+- `paused`: An optional parameter with a default `nil` value. Provide a [`AlarmPresentation.Paused`](alarmpresentation/paused-swift.struct.md) object.
 
 ## See Also
 

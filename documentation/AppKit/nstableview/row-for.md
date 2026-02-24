@@ -22,7 +22,7 @@ The index of the row containing to `view`. This method returns `-1` if the view 
 
 This method is typically called in the action method for an `NSButton` (or `NSControl`) to find out what row (and column) the action should be performed on.
 
-The implementation is `O(n)` where  is the number of visible rows, so this method should generally not be called within a loop.
+The implementation is `O(n)` where *n* is the number of visible rows, so this method should generally not be called within a loop.
 
 ## Parameters
 

@@ -16,7 +16,7 @@ func setSubtaps(_ taps: [AudioHardwareTap]) throws
 
 ## Parameters
 
-- `taps`: An array of AudioHardwareTaps representing all the taps to include in   the aggregate device.
+- `taps`: An array of AudioHardwareTaps representing all the taps to include in the aggregate device.
 
 
 ---

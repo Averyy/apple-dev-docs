@@ -30,7 +30,7 @@ This method stores a copy of the object in the `request` parameter. So, the obje
 
 ## Parameters
 
-- `request`: The search request information. This parameter can’t be  .
+- `request`: The search request information. This parameter can’t be `nil`.
 
 ## See Also
 

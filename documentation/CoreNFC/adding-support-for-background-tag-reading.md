@@ -54,7 +54,7 @@ For more information on URL schemes, see [`Apple URL Scheme Reference`](https://
 
 ##### Configure Your App
 
-Add support for background tag reading to your app by turning on  under the project’s Capabilities tab. This step adds the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) to your project’s entitlement file and to the app ID. Next, enter the domain for each universal link supported by your app.
+Add support for background tag reading to your app by turning on *Associated Domains* under the project’s Capabilities tab. This step adds the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) to your project’s entitlement file and to the app ID. Next, enter the domain for each universal link supported by your app.
 
 ![A screenshot of Xcode highlighting the Associated Domain capabilities setting.](https://docs-assets.developer.apple.com/published/adb2c84b456af9b774dc0de822a8591d/media-3225639%402x.png)
 

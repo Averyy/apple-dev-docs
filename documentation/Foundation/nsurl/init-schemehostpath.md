@@ -30,9 +30,9 @@ This method automatically uses percent encoding to escape the `path` and `host` 
 
 ## Parameters
 
-- `scheme`: The scheme for the NSURL object. For example, in the URL  , the scheme is  .
-- `host`: The host for the NSURL object (for example,  ). May be the empty string.
-- `path`: The path for the NSURL object (for example,  ). If the path begins with a tilde, you must first expand it by calling  .
+- `scheme`: The scheme for the NSURL object. For example, in the URL `http://www.example.com/index.html`, the scheme is `http`.
+- `host`: The host for the NSURL object (for example, `www.example.com`). May be the empty string.
+- `path`: The path for the NSURL object (for example, `/index.html`). If the path begins with a tilde, you must first expand it by calling [`expandingTildeInPath`](nsstring/expandingtildeinpath.md).
 
 ## See Also
 

@@ -27,8 +27,8 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context used to transmit the data.
 - `conf_req_flag`: A flag that you set to a non-zero value to indicate that wrapping function will apply confidentiality in addition to integrity protection or zero if only integrity protection is required.
-- `qop_req`: The required quality of protection. See   for possible values.
-- `req_output_size`: The maximum allowable output token size from the   function.
+- `qop_req`: The required quality of protection. See [`Object Identifiers`](object-identifiers.md) for possible values.
+- `req_output_size`: The maximum allowable output token size from the [`gss_wrap(_:_:_:_:_:_:_:)`](gss_wrap(_:_:_:_:_:_:_:).md) function.
 - `max_input_size`: A  pointer the function uses to return the maximum input size.
 
 ## See Also

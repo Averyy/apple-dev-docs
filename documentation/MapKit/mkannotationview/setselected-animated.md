@@ -25,8 +25,8 @@ Dont call this method directly. An [`MKMapView`](mkmapview.md) object calls this
 
 ## Parameters
 
-- `selected`: Contains the value   if the view displays in a selected state.
-- `animated`: Set to   if the map view animates the change in selection state.
+- `selected`: Contains the value [`true`](https://developer.apple.com/documentation/Swift/true) if the view displays in a selected state.
+- `animated`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) if the map view animates the change in selection state.
 
 ## See Also
 

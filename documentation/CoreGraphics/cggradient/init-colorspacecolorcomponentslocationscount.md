@@ -27,9 +27,9 @@ A CGGradient object.
 ## Parameters
 
 - `space`: The color space to use for the gradient. You cannot use a pattern or indexed color space.
-- `components`: The number of items in this array should be the product of   and the number of components in the color space. For example, if the color space is an RGBA color space and you want to use two colors in the gradient (one for a starting location and another for an ending location), then you need to provide 8 values in  —red, green, blue, and alpha values for the first color, followed by red, green, blue, and alpha values for the second color.
-- `locations`: If    is  , the first color in    is assigned to location  , the last color in   is assigned to location  , and intervening colors are assigned locations that are at equal intervals in between.
-- `count`: The number of locations provided in the   parameters.
+- `components`: The color components for each color that defines the gradient. The components should be in the color space specified by `space`. If you are unsure of the number of components, you can call the function [`numberOfComponents`](cgcolorspace/numberofcomponents.md). The number of items in this array should be the product of `count` and the number of components in the color space. For example, if the color space is an RGBA color space and you want to use two colors in the gradient (one for a starting location and another for an ending location), then you need to provide 8 values in `components`—red, green, blue, and alpha values for the first color, followed by red, green, blue, and alpha values for the second color.
+- `locations`: The location for each color provided in `components`. Each location must be a `CGFloat` value in the range of 0 to 1, inclusive. If 0 and 1 are not in the `locations` array, Quartz uses the colors provided that are closest to 0 and 1 for those locations. If `locations`  is `NULL`, the first color in `colors`  is assigned to location `0`, the last color in`colors`  is assigned to location `1`, and intervening colors are assigned locations that are at equal intervals in between.
+- `count`: The number of locations provided in the `locations` parameters.
 
 ## See Also
 

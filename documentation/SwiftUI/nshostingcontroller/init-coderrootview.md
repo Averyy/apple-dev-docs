@@ -18,7 +18,7 @@ Creates a hosting controller object from an archive and the specified SwiftUI vi
 ## Parameters
 
 - `coder`: The decoder to use during initialization.
-- `rootView`: The root view of the SwiftUI view hierarchy that you want   to manage using this view controller.
+- `rootView`: The root view of the SwiftUI view hierarchy that you want to manage using this view controller.
 
 ## See Also
 

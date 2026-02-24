@@ -16,7 +16,7 @@ func setText(_ text: String?)
 
 ## Parameters
 
-- `text`: The text displayed in the text field. Specifying   clears the current text.
+- `text`: The text displayed in the text field. Specifying `nil` clears the current text.
 
 ## See Also
 

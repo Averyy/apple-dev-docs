@@ -19,8 +19,8 @@ init(domainName: String, roamingEnabled: Bool)
 
 ## Parameters
 
-- `domainName`: The domain name of a Hotspot 2.0 Wi-Fi network. See  .
-- `roamingEnabled`: A Boolean value indicating whether roaming is enabled on the network ( ) or not ( ).
+- `domainName`: The domain name of a Hotspot 2.0 Wi-Fi network. See [`domainName`](nehotspoths20settings/domainname.md).
+- `roamingEnabled`: A Boolean value indicating whether roaming is enabled on the network (`true`) or not (`false`).
 
 
 ---

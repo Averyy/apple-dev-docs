@@ -26,7 +26,7 @@ A new compute pipeline state upon success, otherwise `nil`.
 
 ## Parameters
 
-- `additionalBinaryFunctions`: A non-  array containing binary functions to add to this pipeline.
+- `additionalBinaryFunctions`: A non-`nil` array containing binary functions to add to this pipeline.
 
 
 ---

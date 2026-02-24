@@ -20,7 +20,7 @@ This action causes the text field’s delegate to receive a [`controlTextDidBegi
 
 ## Parameters
 
-- `notification`: The   notification to post to the default notification center.
+- `notification`: The [`textDidBeginEditingNotification`](nscontrol/textdidbegineditingnotification.md) notification to post to the default notification center.
 
 ## See Also
 

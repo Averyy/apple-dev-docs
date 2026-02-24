@@ -13,7 +13,7 @@ optional func testCaseWillStart(_ testCase: XCTestCase)
 
 ## Parameters
 
-- `testCase`: The test case that is about to start. Additional information about the test case can be retrieved from the test case’s associated  .
+- `testCase`: The test case that is about to start. Additional information about the test case can be retrieved from the test case’s associated [`XCTestRun`](xctestrun.md).
 
 ## See Also
 

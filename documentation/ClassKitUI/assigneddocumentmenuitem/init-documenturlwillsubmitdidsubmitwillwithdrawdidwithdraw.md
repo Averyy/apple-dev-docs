@@ -17,9 +17,9 @@ init(documentURL: URL, willSubmit: @escaping @Sendable (URL) async -> Bool = { _
 ## Parameters
 
 - `documentURL`: The URL of the assigned document.
-- `willSubmit`: A closure that executes before submission. Return   to prevent submission.
+- `willSubmit`: A closure that executes before submission. Return `false` to prevent submission.
 - `didSubmit`: A closure that executes after successful submission.
-- `willWithdraw`: A closure that executes before withdrawing. Return   to prevent withdrawal.
+- `willWithdraw`: A closure that executes before withdrawing. Return `false` to prevent withdrawal.
 - `didWithdraw`: A closure that executes after successful withdrawal.
 
 

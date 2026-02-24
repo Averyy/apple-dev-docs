@@ -3,7 +3,7 @@
 **Framework**: Wi-Fi Infrastructure  
 **Kind**: struct
 
-An event that occurred, indicating an update to the available shared access points.
+An event that indicates an update to the available shared access points.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -15,11 +15,11 @@ An event that occurred, indicating an update to the available shared access poin
 struct AccessPointConnectionEvent
 ```
 
-#### Overview
+#### Discussion
 
-An `AccessPointConnectionEvent` provides a snapshot of changes to the currently connected Access Point(s) that might require action from your app extension. Each event contains the complete list of access point(s) the host is currently connected to, and which may be shared with your accessory.
+An `AccessPointConnectionEvent` provides a snapshot of changes to one or more of the currently connected access points that might require action from your app extension. Each event contains the complete list of access points to which the host is currently connected; your app may share this list with your accessory.
 
-Use the sequence number and update counter to track changes and avoid processing duplicate events. The timestamp provides context but shouldn’t be used for precise change detection due to potential clock variations.
+Use the sequence number and update counter to track changes and avoid processing duplicate events. The timestamp provides context but it is recommended you don’t use it for precise change detection due to potential clock variations.
 
 ## Topics
 

@@ -22,7 +22,7 @@ Changes to the height of an object are animatable.
 
 ## Parameters
 
-- `height`: The new height of the object. Specifying a value of   causes the item to have no height.
+- `height`: The new height of the object. Specifying a value of `0.0` causes the item to have no height.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The reduced Boolean tensor.
 
 ## Parameters
 
-- `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is  .
+- `keepRank`: A Boolean indicating whether to keep the reduced axes or not. The default value is `false`.
 
 ## See Also
 

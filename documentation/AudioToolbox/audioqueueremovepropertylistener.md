@@ -26,9 +26,9 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAQ`: The audio queue that you want to remove a property listener callback from.
-- `inID`: The ID of the property whose changes you no longer want to respond to. See  .
+- `inID`: The ID of the property whose changes you no longer want to respond to. See [`AudioQueuePropertyID`](audioqueuepropertyid.md).
 - `inProc`: The callback to be removed.
-- `inUserData`: The same custom data for the property listener callback that you passed when calling  .
+- `inUserData`: The same custom data for the property listener callback that you passed when calling [`AudioQueueAddPropertyListener(_:_:_:_:)`](audioqueueaddpropertylistener(_:_:_:_:).md).
 
 ## See Also
 

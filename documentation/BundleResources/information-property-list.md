@@ -18,6 +18,10 @@ A resource containing key-value pairs that identify and configure a bundle.
 
 - [Placing content in a bundle](placing-content-in-a-bundle.md)
 
+
+
+**Type**: object
+
 #### Discussion
 
 Bundles, which represent executables of different kinds, contain an information property list file. This collection of key-value pairs specifies how the system interprets the associated bundle. Some key-value pairs characterize the bundle itself, and others configure the app, framework, or other entity that the bundle represents. Some keys are required, and others are specific to particular features of the executable.

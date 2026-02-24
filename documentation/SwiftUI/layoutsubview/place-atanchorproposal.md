@@ -32,9 +32,9 @@ If you call this method more than once for a subview, the last call takes preced
 
 ## Parameters
 
-- `position`: The place where the anchor of the subview should   appear in its container view, relative to container’s bounds.
-- `anchor`: The unit point on the subview that appears at  .   You can use a built-in point, like  , or   you can create a custom  .
-- `proposal`: A proposed size for the subview. In SwiftUI,   views choose their own size, but can take a size proposal from   their parent view into account when doing so.
+- `position`: The place where the anchor of the subview should appear in its container view, relative to container’s bounds.
+- `anchor`: The unit point on the subview that appears at `position`. You can use a built-in point, like [`center`](unitpoint/center.md), or you can create a custom [`UnitPoint`](unitpoint.md).
+- `proposal`: A proposed size for the subview. In SwiftUI, views choose their own size, but can take a size proposal from their parent view into account when doing so.
 
 
 ---

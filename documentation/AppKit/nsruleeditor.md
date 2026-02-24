@@ -20,6 +20,11 @@ A rule editor lets the user visually create and configure a list of options that
 
 `NSRuleEditor` exposes one binding, `rows`. You can bind `rows` to an ordered collection (such as an instance of `NSMutableArray`). Each object in the collection should have the following properties:
 
+- **@“rowType”**: An integer representing the type of the row (`NSRuleEditorRowType`).
+- **@“subrows”**: An ordered to-many relation (such as an instance of `NSMutableArray`) containing the directly nested subrows for the given row.
+- **@“displayValues”**: An ordered to-many relation containing the display values for the row.
+- **@“criteria”**: An ordered to-many relation containing the criteria for the row.
+
 > **Note**: If you override [`viewDidMoveToWindow()`](nsview/viewdidmovetowindow().md) in a subclass of [`NSRuleEditor`](nsruleeditor.md), you must invoke super’s implementation.
 
 ## Topics

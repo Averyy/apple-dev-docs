@@ -24,8 +24,8 @@ A configured insert cell accessory. This accessory is a plus sign inside of a ci
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the insert accessory appears in. This parameter has a default value of  .
-- `options`: Configuration options for the insert accessory. See   for possible configuration options.
+- `displayed`: The cell-editing states that the insert accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
+- `options`: Configuration options for the insert accessory. See [`UICellAccessory.InsertOptions`](uicellaccessory-swift.struct/insertoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the insert accessory.
 
 ## See Also

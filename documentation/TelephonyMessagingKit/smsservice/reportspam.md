@@ -22,7 +22,7 @@ final func reportSpam(_ message: SMSMessage) async throws
 
 ## Parameters
 
-- `message`:   to report as spam.
+- `message`: [`SMSMessage`](smsmessage.md) to report as spam.
 
 
 ---

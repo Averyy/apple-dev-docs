@@ -35,10 +35,10 @@ The `kCFCompareAnchored` option assures that only anchored but multiple instance
 ## Parameters
 
 - `theString`: The string to modify.
-- `stringToFind`: The substring to search for in  .
-- `replacementString`: The replacement string for  .
-- `rangeToSearch`: The range within which to search in  .
-- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass  . See   for the available flags.
+- `stringToFind`: The substring to search for in `theString`.
+- `replacementString`: The replacement string for `stringToFind`.
+- `rangeToSearch`: The range within which to search in `theString`.
+- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass `0`. See [`CFStringCompareFlags`](cfstringcompareflags.md) for the available flags.
 
 ## See Also
 

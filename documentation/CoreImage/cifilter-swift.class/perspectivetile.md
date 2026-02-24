@@ -29,6 +29,12 @@ This method applies the perspective tile filter to an image. The effect adjusts 
 
 The perspective tile filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the top-left corner of the tile.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the top-right corner of the tile.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the bottom-left corner of the tile.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the bottom-right corner of the tile.
+
 The following code creates a filter that tiles the image and adjusts the perspective to add depth:
 
 ```swift

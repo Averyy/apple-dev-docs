@@ -22,8 +22,8 @@ After registering your decoration views, you create decoration views by returnin
 
 ## Parameters
 
-- `viewClass`: The class to use for the decoration view. This class must conform to the   protocol. Specify   to unregister a previously registered class or nib file.
-- `elementKind`: The string your layout uses to identify the decoration view’s type. This parameter must not be   and must not be an empty string.
+- `viewClass`: The class to use for the decoration view. This class must conform to the [`NSCollectionViewElement`](nscollectionviewelement.md) protocol. Specify `nil` to unregister a previously registered class or nib file.
+- `elementKind`: The string your layout uses to identify the decoration view’s type. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

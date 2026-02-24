@@ -14,6 +14,10 @@ A data structure that represents the root object in a privacy manifest file.
 - visionOS 1.0+
 - watchOS 10.0+
 
+
+
+**Type**: object
+
 #### Overview
 
 Use the keys and values in this object in the privacy manifest for your app or third-party SDK. For more information, see [`Privacy manifest files`](privacy-manifest-files.md).

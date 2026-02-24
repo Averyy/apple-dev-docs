@@ -31,9 +31,9 @@ On return, the `documentAttributes` dictionary (if provided) contains the variou
 ## Parameters
 
 - `data`: The data object providing text data.
-- `opts`: Keys specifying the types of documents and other document import options. For a list of possible values, see “Option keys for importing documents” in 
-- `dict`: On return, the dictionary (if provided) contains keys representing various document-wide attributes. For a list of possible values, see “Document Attributes” in  .
-- `error`: Upon return, if an error occurs, contains an   object that describes the problem. If you are not interested in possible errors, pass in  .
+- `opts`: Keys specifying the types of documents and other document import options. For a list of possible values, see “Option keys for importing documents” in [`NSAttributedString`](nsattributedstring.md)
+- `dict`: On return, the dictionary (if provided) contains keys representing various document-wide attributes. For a list of possible values, see “Document Attributes” in [`NSAttributedString`](nsattributedstring.md).
+- `error`: Upon return, if an error occurs, contains an `NSError` object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
 
 ## See Also
 

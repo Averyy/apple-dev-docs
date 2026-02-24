@@ -18,7 +18,7 @@ class func withDevice(_ inDevice: IOBluetoothDevice!, channelID inRFCOMMChannelI
 
 Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.
 
- In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.
+*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.
 
 ## Parameters
 

@@ -20,7 +20,7 @@ Raises an `NSInternalInconsistencyException` if periodic events are already bein
 
 ## Parameters
 
-- `delay`: The number of seconds that   should wait before beginning to generate periodic events.
+- `delay`: The number of seconds that `NSEvent` should wait before beginning to generate periodic events.
 - `period`: The period in seconds between the generated events.
 
 ## See Also

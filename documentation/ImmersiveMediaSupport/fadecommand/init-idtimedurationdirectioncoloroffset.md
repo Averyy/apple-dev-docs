@@ -22,10 +22,10 @@ init(id: Int, time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirecti
 
 - `id`: The unique ID of this command.
 - `time`: The time this command starts during playback.
-- `duration`: The duration of the command. This can be   if the command has no duration.
+- `duration`: The duration of the command. This can be `.zero` if the command has no duration.
 - `direction`: The fade direction for this command instance.
 - `color`: The fade color.
-- `offset`: The offset from the start time of this command. This parameter is usually unused and let in control of a  .
+- `offset`: The offset from the start time of this command. This parameter is usually unused and let in control of a `PresentationDescriptorReader`.
 
 
 ---

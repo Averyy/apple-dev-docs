@@ -27,7 +27,7 @@ An [`NEAppPushProvider`](neapppushprovider.md) subclass must override this metho
 
 ## Parameters
 
-- `reason`: An   that indicates why the provider needs to stop.
+- `reason`: An [`NEProviderStopReason`](neproviderstopreason.md) that indicates why the provider needs to stop.
 - `completionHandler`: A block that your provider subclass calls after it completely stops.
 
 ## See Also

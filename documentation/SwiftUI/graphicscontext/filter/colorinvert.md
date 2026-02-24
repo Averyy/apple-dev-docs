@@ -30,7 +30,7 @@ This filter is equivalent to the `invert` filter primitive defined by the Scalab
 
 ## Parameters
 
-- `amount`: The inversion amount. A value of one results in total   inversion, while a value of zero leaves the result unchanged.   Other values apply a linear multiplier effect.
+- `amount`: The inversion amount. A value of one results in total inversion, while a value of zero leaves the result unchanged. Other values apply a linear multiplier effect.
 
 ## See Also
 

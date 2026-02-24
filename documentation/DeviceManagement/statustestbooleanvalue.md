@@ -32,6 +32,10 @@ object StatusTestBooleanValue
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `test.boolean-value` (boolean) *(required)*: The test status Boolean value.
+
 ## See Also
 
 - [object StatusTestArrayValue](statustestarrayvalue.md)

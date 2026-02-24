@@ -6,9 +6,9 @@ Support the installation of alternative distribution apps by creating signed JSO
 
 #### Overview
 
-To enable app downloads from your website or alternative app marketplace using [`MarketplaceKit`](MarketplaceKit.md), your web server supplies a special secure element, or , to the device’s operating system through the app installation process.
+To enable app downloads from your website or alternative app marketplace using [`MarketplaceKit`](MarketplaceKit.md), your web server supplies a special secure element, or *install verification token*, to the device’s operating system through the app installation process.
 
-An install verification token is a JSON web signature (JWS), or  JSON web token (JWT). The token contains data that the system needs to verify the installation, such as the marketplace that installs it, if applicable, and the time the installation occurs. Create the token and sign it with your alternative distribution key set up with App Store Connect. For more information about JWTs, see [`RFC 7519`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc7519).
+An install verification token is a JSON web signature (JWS), or *signed* JSON web token (JWT). The token contains data that the system needs to verify the installation, such as the marketplace that installs it, if applicable, and the time the installation occurs. Create the token and sign it with your alternative distribution key set up with App Store Connect. For more information about JWTs, see [`RFC 7519`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc7519).
 
 The following app download situations require you to create an install verification token:
 
@@ -25,22 +25,22 @@ Use the following table to complete the header details:
 | Header key | Value |
 | --- | --- |
 | `alg` | The signing algorithm, `"ES256"`. |
-| `kid` | . A UUID for the alternative distribution public key associated to the app being downloaded. An alternative app marketplace has a single set of alternative distribution keys. Other apps that install over the web require a set of alternative distribution keys per app. If the app being downloaded installs from an alternative app marketplace, use the marketplace’s distribution keys. Set this value to the `data.id` property of the [`Read an app’s alternative distribution key`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-apps-_id_-alternativeDistributionKey) endpoint response. For more information on alternative distribution keys, see [`Alternative Distribution Keys`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-keys). |
+| `kid` | *key ID*. A UUID for the alternative distribution public key associated to the app being downloaded. An alternative app marketplace has a single set of alternative distribution keys. Other apps that install over the web require a set of alternative distribution keys per app. If the app being downloaded installs from an alternative app marketplace, use the marketplace’s distribution keys. Set this value to the `data.id` property of the [`Read an app’s alternative distribution key`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-apps-_id_-alternativeDistributionKey) endpoint response. For more information on alternative distribution keys, see [`Alternative Distribution Keys`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-keys). |
 | `typ` | The communication type, `"JWT"`. |
 
 Next, define the JWT payload. Among the data to include are the issuer, bundle ID, expiration time, and nonce. Use the following table to fill in the payload:
 
 | Payload key | Value |
 | --- | --- |
-| `iss` | . A `String` representation of the [`AppleItemID`](appleitemid.md) for the installing alternative marketplace, or other app that installs from a website. |
-| `iat` | . The time at which you generate the token, as the `Int` number of seconds since January 1, 1970 00:00:00 UTC. |
-| `exp` | . The time after which the token expires, as the `Int` number of seconds since January 1, 1970 00:00:00 UTC. |
-| `aud` | . The token recipient. Enter `AppleDownloadVerification-v1`. |
+| `iss` | *issuer*. A `String` representation of the [`AppleItemID`](appleitemid.md) for the installing alternative marketplace, or other app that installs from a website. |
+| `iat` | *issued at*. The time at which you generate the token, as the `Int` number of seconds since January 1, 1970 00:00:00 UTC. |
+| `exp` | *expiration*. The time after which the token expires, as the `Int` number of seconds since January 1, 1970 00:00:00 UTC. |
+| `aud` | *audience*. The token recipient. Enter `AppleDownloadVerification-v1`. |
 | `bid` | The bundle identifier of the app to install. |
 | `dtype` | The record of previous downloads. Enter `download` the first time the app installs on a particular device and `redownload` for subsequent installs. Your web server needs to track the `dtype` of every install and set an accurate value. [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) makes this information available to advertisers. |
 | `nonce` | A randomly generated UUID as a `String` that acts as an anti-replay value. |
-| `iid` | (optional). The [`AppleItemID`](appleitemid.md) of the app the system is installing as a `String`. This value enhances app installation performance, when present. |
-| `vid` | (optional). The [`AppleVersionID`](appleversionid.md) of the app the system is installing as a `String`. This value enhances app installation performance, when present. |
+| `iid` | *item ID* (optional). The [`AppleItemID`](appleitemid.md) of the app the system is installing as a `String`. This value enhances app installation performance, when present. |
+| `vid` | *version ID*  (optional). The [`AppleVersionID`](appleversionid.md) of the app the system is installing as a `String`. This value enhances app installation performance, when present. |
 
 An example JWT follows:
 

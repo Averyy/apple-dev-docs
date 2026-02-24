@@ -14,6 +14,11 @@ The widget item dictionary.
 object ParentalControlsDashboardWidgetRestrictions.WhiteListItem
 ```
 
+## Properties
+
+- `ID` (string) *(required)*: The bundle ID of a widget.
+- `Type` (string) *(required)*: The type of allow list item. Set to `bundleID` to use a widget’s bundle ID as its main ID.
+
 
 ---
 

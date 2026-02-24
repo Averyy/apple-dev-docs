@@ -34,7 +34,8 @@ The system considers any other errors to be transient, and automatically retries
 
 - `identifier`: The item’s identifier.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after downloading the item’s metadata. The block takes the following parameters:
+- `completionHandler`: A block that you call after downloading the item’s metadata. The block takes the following parameters: - **`item`**: A new file provider item, containing all the item’s metadata.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

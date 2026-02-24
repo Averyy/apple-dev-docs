@@ -26,7 +26,7 @@ The `timespec` type is declared in the Darwin framework.
 
 ## Parameters
 
-- `timespec`: A   value.
+- `timespec`: A `timespec` value.
 
 
 ---

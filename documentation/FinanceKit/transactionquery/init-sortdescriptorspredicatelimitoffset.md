@@ -17,9 +17,9 @@ init(sortDescriptors: [SortDescriptor<Transaction>] = [], predicate: Predicate<T
 
 ## Parameters
 
-- `sortDescriptors`: An array of   sort descriptors.
-- `predicate`: A   to filter the   records with.
-- `limit`: An integer that indicates the maximum number of   records to return.
+- `sortDescriptors`: An array of [`Transaction`](transaction.md) sort descriptors.
+- `predicate`: A [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) to filter the `Transaction` records with.
+- `limit`: An integer that indicates the maximum number of `Transaction` records to return.
 - `offset`: An integer that indicates the number of records to offset the result by.
 
 

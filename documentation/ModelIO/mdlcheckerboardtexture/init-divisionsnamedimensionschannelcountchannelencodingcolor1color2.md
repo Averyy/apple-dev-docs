@@ -32,10 +32,10 @@ This initializer does not generate texel data; the [`MDLCheckerboardTexture`](md
 ## Parameters
 
 - `divisions`: The number of squares along each dimension in the checkerboard pattern.
-- `name`: The   property for the new texture object.
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
 - `dimensions`: The texel dimensions (width and height) of the texture image.
 - `channelCount`: The number of channels per texel—for example, 1 for a grayscale texture, 3 for an RGB color texture, or 4 for RGBA.
-- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see  .
+- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](mdltexturechannelencoding.md).
 - `color1`: The color for half of the squares in the checkerboard pattern.
 - `color2`: The color for the other half of the squares in the checkerboard pattern.
 

@@ -46,7 +46,7 @@ struct TrailRow: View {
 ## Parameters
 
 - `tip`: The tip to display.
-- `isPresented`: A binding that will automatically update to true when a tip is displayed. This value can be changed to temporarily hide or show a currently displayable tip. If this value is  , the popover will automatically be dismissed based on the tip’s status and display rules.
+- `isPresented`: A binding that will automatically update to true when a tip is displayed. This value can be changed to temporarily hide or show a currently displayable tip. If this value is `nil`, the popover will automatically be dismissed based on the tip’s status and display rules.
 - `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is bounds.
 - `arrowEdge`: The edge of the attachmentAnchor that defines the location of the popover’s arrow. By default, the system will choose the best orientation of the popover’s arrow.
 - `action`: The closure to perform when the user triggers a tip’s action.

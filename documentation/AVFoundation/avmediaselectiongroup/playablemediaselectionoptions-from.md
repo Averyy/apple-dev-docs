@@ -26,7 +26,7 @@ An array containing the media selection options from `array` that are playable.
 
 ## Parameters
 
-- `mediaSelectionOptions`: An array of   objects to be filtered by playability.
+- `mediaSelectionOptions`: An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects to be filtered by playability.
 
 ## See Also
 

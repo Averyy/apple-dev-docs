@@ -42,7 +42,7 @@ There are other helper classes and protocols that you can use to customize the l
 
 ##### Managing the Collection Views Content
 
-Data for the collection view is managed by the —that is an object that adopts the methods of the [`NSCollectionViewDataSource`](nscollectionviewdatasource.md) protocol. You are responsible for defining the data source used by your collection view. The data source provides information about the number of sections and items in the collection view and it provides the visual representation of that data. Every data source object is required to implement the following methods:
+Data for the collection view is managed by the *data source object*—that is an object that adopts the methods of the [`NSCollectionViewDataSource`](nscollectionviewdatasource.md) protocol. You are responsible for defining the data source used by your collection view. The data source provides information about the number of sections and items in the collection view and it provides the visual representation of that data. Every data source object is required to implement the following methods:
 
 - [`collectionView(_:numberOfItemsInSection:)`](nscollectionviewdatasource/collectionview(_:numberofitemsinsection:).md)
 - [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md)

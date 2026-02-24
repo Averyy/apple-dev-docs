@@ -79,7 +79,8 @@ You can call this method multiple times. Each call represents a different query 
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call after retrieving the scores from the server. The block receives the following parameters: - ***scores***: An array of `GKScore` objects that holds the requested scores. If an error occurs, this value may be non-`nil`. In this case, the array holds whatever score data GameKit retrieves from Game Center before the error occurs.
+- ***error***: If an error occurs, this error object describes the error. If the operation completes successfully, the value is `nil`.
 
 ## See Also
 

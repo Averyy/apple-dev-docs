@@ -30,9 +30,9 @@ The CPU can access the updated content from its copy of the texture after the sy
 
 ## Parameters
 
-- `texture`: An   instance with a   property that’s equal to  .
-- `slice`: A slice within  .
-- `level`: A mipmap level within  .
+- `texture`: An [`MTLTexture`](mtltexture.md) instance with a [`storageMode`](mtlresource/storagemode.md) property that’s equal to [`MTLStorageMode.managed`](mtlstoragemode/managed.md).
+- `slice`: A slice within `texture`.
+- `level`: A mipmap level within `texture`.
 
 ## See Also
 

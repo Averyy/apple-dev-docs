@@ -37,8 +37,8 @@ There is no equivalent notification for this delegation method.
 ## Parameters
 
 - `app`: Your singleton app object.
-- `url`: The URL resource to open. This resource can be a network resource or a file. For information about the Apple-registered URL schemes, see  .
-- `options`: A dictionary of URL handling options. For information about the possible keys in this dictionary and how to handle them, see  . By default, the value of this parameter is an empty dictionary.
+- `url`: The URL resource to open. This resource can be a network resource or a file. For information about the Apple-registered URL schemes, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
+- `options`: A dictionary of URL handling options. For information about the possible keys in this dictionary and how to handle them, see `UIApplicationOpenURLOptionsKey`. By default, the value of this parameter is an empty dictionary.
 
 ## See Also
 

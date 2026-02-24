@@ -41,7 +41,7 @@ The [`setScissorRect(_:)`](mtlrendercommandencoder/setscissorrect(_:).md) method
 
 ## Parameters
 
-- `scissorRects`: An array of   instances the command applies to the render pipeline for clipping.
+- `scissorRects`: An array of [`MTLScissorRect`](mtlscissorrect.md) instances the command applies to the render pipeline for clipping.
 
 ## See Also
 

@@ -25,9 +25,9 @@ A valid MPSGraphTensor array with results returned from the conditionBlock depen
 
 ## Parameters
 
-- `initialInputs`: inputTensors to the  , for the 1st iteration will be same as initialInputs passed to the while loop.
-- `before`:  , this will be run first and then call the   with results or return results from the loop.
-- `after`:  , this will execute after the condition evaluation.
+- `initialInputs`: inputTensors to the `beforeBlock`, for the 1st iteration will be same as initialInputs passed to the while loop.
+- `before`: `beforeBlock`, this will be run first and then call the `afterBlock` with results or return results from the loop.
+- `after`: `afterBlock`, this will execute after the condition evaluation.
 - `name`: Name of operation.
 
 

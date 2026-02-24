@@ -29,6 +29,12 @@ This method applies the perspective rotate filter to an image. The effect rotate
 
 The perspective rotate filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`pitch`**: A `float` representing the adjustment along the pitch axis in 3D space as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`yaw`**: A `float` representing the adjustment along the vertical axis as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`roll`**: A `float` representing the amount of horizontal axis in 3D space as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that rotates the image:
 
 ```swift

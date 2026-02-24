@@ -16,7 +16,7 @@ static func below(_ relativeWindow: WindowProxy) -> WindowPlacement.Position
 
 ## Parameters
 
-- `relativeWindow`: The existing window that the new window   will be placed relative to.
+- `relativeWindow`: The existing window that the new window will be placed relative to.
 
 
 ---

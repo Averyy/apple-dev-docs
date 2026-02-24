@@ -30,7 +30,7 @@ This method uses a sliding window to chunk the input features into [`inputWindow
 
 ## Parameters
 
-- `input`: An shaped array of features. The shape must be   where   is the length of the   sequence, which must be at least  .
+- `input`: An shaped array of features. The shape must be `[N, featureSize]` where `N` is the length of the sequence, which must be at least `inputWindowSize`.
 - `eventHandler`: An event handler.
 
 ## See Also

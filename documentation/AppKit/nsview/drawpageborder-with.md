@@ -20,7 +20,7 @@ The marks can be such things as alignment marks or a virtual sheet border of siz
 
 ## Parameters
 
-- `borderSize`: An   structure that defines a logical page.
+- `borderSize`: An `NSSize` structure that defines a logical page.
 
 ## See Also
 

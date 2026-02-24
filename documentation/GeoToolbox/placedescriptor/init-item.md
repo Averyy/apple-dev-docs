@@ -35,7 +35,7 @@ Note that it’s possible for this initialization to fail if the system can’t 
 
 ## Parameters
 
-- `item`: An  .
+- `item`: An `MKMapItem`.
 
 ## See Also
 

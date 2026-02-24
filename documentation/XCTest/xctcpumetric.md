@@ -23,9 +23,9 @@ class XCTCPUMetric
 
 `XCTCPUMetric` captures the following statistics about CPU activity; each metric is captured while the block argument to a [`measure(metrics:block:)`](xctestcase/measure(metrics:block:).md) call runs in a performance test:
 
--  is the length of time, in seconds, that the CPU is active and executing instructions for the measured target. When the CPU switches context to execute a different process or thread or becomes idle, this value doesn’t increase.
--  is the number of clock cycles that occur while the CPU is active and executing instructions for the measured target.
--  is the number of processor instructions that run to completion during execution of the measured target. It’s possible for a CPU to abandon processing an instruction during execution, for example, if the instruction is evaluated out of order and logically follows a branch in the code that the CPU discovers it doesn’t need to take. An abandoned instruction doesn’t contribute to the retired instructions metric.
+- *CPU time* is the length of time, in seconds, that the CPU is active and executing instructions for the measured target. When the CPU switches context to execute a different process or thread or becomes idle, this value doesn’t increase.
+- *CPU cycles* is the number of clock cycles that occur while the CPU is active and executing instructions for the measured target.
+- *CPU instructions retired* is the number of processor instructions that run to completion during execution of the measured target. It’s possible for a CPU to abandon processing an instruction during execution, for example, if the instruction is evaluated out of order and logically follows a branch in the code that the CPU discovers it doesn’t need to take. An abandoned instruction doesn’t contribute to the retired instructions metric.
 
 ## Topics
 

@@ -32,7 +32,7 @@ Alternatively, if you do not implement this method, ARKit creates an empty node,
 
 ## Parameters
 
-- `renderer`: The   object rendering the scene.
+- `renderer`: The [`ARSCNView`](arscnview.md) object rendering the scene.
 - `anchor`: The anchor for which a node is requested.
 
 ## See Also

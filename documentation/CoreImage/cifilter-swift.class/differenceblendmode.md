@@ -29,6 +29,9 @@ This method applies the difference-blend mode filter to an image. The effect cal
 
 The difference-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that blends colors in the background image and input image:
 
 ```swift

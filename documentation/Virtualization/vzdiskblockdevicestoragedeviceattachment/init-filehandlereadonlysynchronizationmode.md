@@ -22,9 +22,9 @@ The `readOnly` parameter affects how the Virtualization framework exposes the di
 
 ## Parameters
 
-- `fileHandle`: The   to a block device to attach to this VM.
+- `fileHandle`: The [`FileHandle`](https://developer.apple.com/documentation/Foundation/FileHandle) to a block device to attach to this VM.
 - `readOnly`: A Boolean value that indicates whether this disk attachment is read-only; otherwise, if the file handle allows writes, the device can write data into it.
-- `synchronizationMode`: The   value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
+- `synchronizationMode`: The [`VZDiskSynchronizationMode`](vzdisksynchronizationmode.md) value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
 
 
 ---

@@ -23,7 +23,7 @@ init(wrappedValue: T, from keyPath: KeyPath<AttributeScopes, ConfigurationProvid
 ## Parameters
 
 - `wrappedValue`: The underlying value to make codable, using data from the configuration provider.
-- `keyPath`: A key path that identifies the type of the configuration provider, which provides additional information to encode  .
+- `keyPath`: A key path that identifies the type of the configuration provider, which provides additional information to encode `wrappedValue`.
 
 ## See Also
 

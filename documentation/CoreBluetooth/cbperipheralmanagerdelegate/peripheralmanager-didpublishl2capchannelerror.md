@@ -28,7 +28,7 @@ The peripheral manager calls this method after you call [`publishL2CAPChannel(wi
 
 - `peripheral`: The peripheral manager that published the channel.
 - `PSM`: The Protocol/Service Multiplexer (PSM) of the published channel.
-- `error`: The error that prevented publishing, or   if no error occurred.
+- `error`: The error that prevented publishing, or `nil` if no error occurred.
 
 ## See Also
 

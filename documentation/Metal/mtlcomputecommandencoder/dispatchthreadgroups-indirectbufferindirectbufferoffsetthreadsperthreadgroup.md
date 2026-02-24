@@ -26,8 +26,8 @@ The GPU fetches parameters from the indirect buffer just before the thread grid 
 
 ## Parameters
 
-- `indirectBuffer`: An   instance providing compute parameters. Lay out the data in this buffer as described in the   structure.
-- `indirectBufferOffset`: Where the data begins, in bytes, from the start of the buffer. This value needs to be a multiple of  .
+- `indirectBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance providing compute parameters. Lay out the data in this buffer as described in the [`MTLDispatchThreadgroupsIndirectArguments`](mtldispatchthreadgroupsindirectarguments.md) structure.
+- `indirectBufferOffset`: Where the data begins, in bytes, from the start of the buffer. This value needs to be a multiple of `4`.
 - `threadsPerThreadgroup`: The number of threads in one threadgroup, in each dimension.
 
 ## See Also

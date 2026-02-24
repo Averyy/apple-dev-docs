@@ -21,7 +21,7 @@ Release and forget unused buffers
 
 ::handleSwapCleanup() is responsible for deallocating the buffers no longer used after a swap.  It must always be called if SwapPrepare() completes successfully.  Because bufers may be swapped in and out of existance, the _swap* variables may be NULL and should be set to NULL when complete.
 
-Locking: The caller must ensure that the  lock is HELD but that the reporter (data) lock is .
+Locking: The caller must ensure that the *config* lock is HELD but that the reporter (data) lock is *NOT HELD*.
 
 ## Parameters
 

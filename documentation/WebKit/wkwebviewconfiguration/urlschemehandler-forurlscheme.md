@@ -24,7 +24,7 @@ The handler object for the specified scheme, or `nil` if the scheme has no handl
 
 ## Parameters
 
-- `urlScheme`: The scheme to look up. Scheme names are case sensitive, must start with an ASCII letter, and may contain only ASCII letters, numbers, the “ ” character, the “ ” character, and the “ ” character. If this parameter contains an empty string or the scheme name includes invalid characters, this method returns  .
+- `urlScheme`: The scheme to look up. Scheme names are case sensitive, must start with an ASCII letter, and may contain only ASCII letters, numbers, the “`+`” character, the “`-`” character, and the “`.`” character. If this parameter contains an empty string or the scheme name includes invalid characters, this method returns `nil`.
 
 ## See Also
 

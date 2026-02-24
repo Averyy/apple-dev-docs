@@ -33,7 +33,7 @@ Returns the value of the given property name. See matrix properties enumeration 
 ## Parameters
 
 - `A`: The sparse matrix object.
-- `pname`: The property name to get the value of.  See   for options.
+- `pname`: The property name to get the value of.  See [`sparse_matrix_property`](sparse_matrix_property.md) for options.
 
 ## See Also
 

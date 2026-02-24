@@ -22,7 +22,7 @@ init(_ first: First, _ second: Second)
 
 ## Parameters
 
-- `first`: The first of two gestures. This gesture has precedence over   the other gesture.
+- `first`: The first of two gestures. This gesture has precedence over the other gesture.
 - `second`: The second of two gestures.
 
 ## See Also

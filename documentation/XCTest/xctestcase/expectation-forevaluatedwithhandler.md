@@ -25,7 +25,7 @@ If a handler isn’t provided, the first successful evaluation of the predicate 
 
 - `predicate`: The predicate to evaluate.
 - `object`: The object XCTest evaluates the predicate against.
-- `handler`: An optional handler that performs custom evaluation when   evaluates as  .
+- `handler`: An optional handler that performs custom evaluation when `predicate` evaluates as [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

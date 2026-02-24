@@ -26,8 +26,8 @@ For more information, see [`Pushing background updates to your App`](https://dev
 
 ## Parameters
 
-- `userInfo`: A dictionary that contains data from the notification payload. The notification originates as a JSON-defined dictionary that WatchKit converts to a dictionary type; the dictionary may contain only property-list objects plus  . For more information about the contents of the notification payload, see  .
-- `completionHandler`: The block to execute after the download operation completes. When calling this block, pass the fetch result that best describes your download operation. For a list of possible values, see the   type.
+- `userInfo`: A dictionary that contains data from the notification payload. The notification originates as a JSON-defined dictionary that WatchKit converts to a dictionary type; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull). For more information about the contents of the notification payload, see [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification).
+- `completionHandler`: The block to execute after the download operation completes. When calling this block, pass the fetch result that best describes your download operation. For a list of possible values, see the [`WKBackgroundFetchResult`](wkbackgroundfetchresult.md) type.
 
 ## See Also
 

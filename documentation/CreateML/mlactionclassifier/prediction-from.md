@@ -20,7 +20,7 @@ An array of predictions.
 
 ## Parameters
 
-- `video`: The location of a video you want the action classifier to   analyze.
+- `video`: The location of a video you want the action classifier to analyze.
 
 ## See Also
 

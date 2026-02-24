@@ -46,6 +46,12 @@ Specify `com.apple.configuration.account.subscribed-calendar` as the declaration
 }
 ```
 
+## Properties
+
+- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account to authenticate with a calendar server. Set the corresponding asset type to `CredentialUserNameAndPassword`.
+- `CalendarURL` (string) *(required)*: The URL of the subscribed calendar, which needs to start with `https://`.
+- `VisibleName` (string): The name that apps show to the user for this calendar account. If not present, the system generates a suitable default.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

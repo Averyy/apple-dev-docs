@@ -25,9 +25,9 @@ init<S, V>(_ title: S, value: Binding<V>, formatter: Formatter, onEditingChanged
 
 - `title`: The title of the text field, describing its purpose.
 - `value`: The underlying value to be edited.
-- `formatter`: A formatter to use when converting between the   string the user edits and the underlying value of type  .   In the event that   is unable to perform the conversion,    isn’t modified.
-- `onEditingChanged`: The action to perform when the user   begins editing   and after the user finishes editing  .   The closure receives a Boolean value that indicates the editing   status:   when the user begins editing,   when they   finish.
-- `onCommit`: An action to perform when the user performs an action   (for example, when the user presses the Return key) while the text   field has focus.
+- `formatter`: A formatter to use when converting between the string the user edits and the underlying value of type `V`. In the event that `formatter` is unable to perform the conversion, `binding.value` isn’t modified.
+- `onEditingChanged`: The action to perform when the user begins editing `text` and after the user finishes editing `text`. The closure receives a Boolean value that indicates the editing status: `true` when the user begins editing, `false` when they finish.
+- `onCommit`: An action to perform when the user performs an action (for example, when the user presses the Return key) while the text field has focus.
 
 ## See Also
 

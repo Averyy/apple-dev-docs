@@ -27,7 +27,7 @@ The current fill color space must be a pattern color space. Otherwise, the resul
 ## Parameters
 
 - `pattern`: A fill pattern. The object is retained; upon return, you may safely release it.
-- `components`: If the pattern is a colored pattern, pass an alpha value.
+- `components`: If the pattern is an uncolored (or a masking) pattern, pass an array of intensity values that specify the color to use when the pattern is painted. The number of array elements must equal the number of components in the base space of the fill pattern color space, plus an additional component for the alpha value. If the pattern is a colored pattern, pass an alpha value.
 
 ## See Also
 

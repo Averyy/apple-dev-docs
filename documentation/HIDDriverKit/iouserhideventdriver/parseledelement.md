@@ -25,7 +25,7 @@ This method checks the element to determine if it contains LED data suitable for
 
 ## Parameters
 
-- `element`: An   object to parse.
+- `element`: An `IOHIDElement` object to parse.
 
 ## See Also
 

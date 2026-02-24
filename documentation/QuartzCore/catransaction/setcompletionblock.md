@@ -25,7 +25,7 @@ The completion block object that is guaranteed to be called (on the main thread)
 
 ## Parameters
 
-- `block`: The block object takes no parameters and returns no value.
+- `block`: A block object called when animations for this transaction group are completed. The block object takes no parameters and returns no value.
 
 ## See Also
 

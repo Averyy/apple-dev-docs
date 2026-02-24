@@ -27,7 +27,7 @@ var albumTrackCount: Int { get }
 - [var albumPersistentID: MPMediaEntityPersistentID](mpmediaitem/albumpersistentid.md)
   The persistent identifier for an album.
 - [var albumTitle: String?](mpmediaitem/albumtitle.md)
-  The title of an album, such as , rather than the title of an individual song on the album, such as “Crater Dance.”
+  The title of an album, such as *Live on Mars*, rather than the title of an individual song on the album, such as “Crater Dance.”
 - [var albumTrackNumber: Int](mpmediaitem/albumtracknumber.md)
   The track number of the media item, for a media item that’s part of an album.
 - [var artist: String?](mpmediaitem/artist.md)

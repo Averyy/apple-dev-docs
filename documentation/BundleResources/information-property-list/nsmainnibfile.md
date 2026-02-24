@@ -13,6 +13,10 @@ The name of an app’s main user interface file.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UIApplicationSceneManifest](information-property-list/uiapplicationscenemanifest.md)

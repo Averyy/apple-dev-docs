@@ -34,6 +34,32 @@ You can register one or more completion handlers for the same command buffer. Th
 
 For example, you can use the command buffer’s [`gpuEndTime`](mtlcommandbuffer/gpuendtime.md) and [`gpuStartTime`](mtlcommandbuffer/gpustarttime.md) properties to calculate how much time the GPU spends running the command buffer.
 
+**Swift**:
+
+```swift
+commandBuffer.addCompletedHandler { commandBuffer in
+    let start = commandBuffer.gpuStartTime
+    let end = commandBuffer.gpuEndTime
+
+    let gpuRuntimeDuration = end - start
+
+    /* ... */
+}
+```
+
+**Objective-C**:
+
+```objective-c
+[commandBuffer addCompletedHandler:^(id<MTLCommandBuffer> commandBuffer) {
+    CFTimeInterval start = commandBuffer.GPUStartTime;
+    CFTimeInterval end = commandBuffer.GPUEndTime;
+
+    CFTimeInterval gpuRuntimeDuration = end - start;
+
+    /* ... */
+}];
+```
+
 The completion handler is also a good place to check the [`status`](mtlcommandbuffer/status.md) property to determine whether the GPU successfully completes the buffer’s commands. If the status is equal to [`MTLCommandBufferStatus.error`](mtlcommandbufferstatus/error.md), you can investigate further by checking the [`error`](mtlcommandbuffer/error.md) and log properties for more details about the issue. See [`Command buffer debugging`](command-buffer-debugging.md) for more methods and properties that can help you isolate the issue.
 
 > ⚠️ **Warning**:  Avoid calling the [`insertDebugCaptureBoundary()`](mtlcommandqueue/insertdebugcaptureboundary().md) method within the completion handler, which can cause a debug-time deadlock if you request GPU frame capture.

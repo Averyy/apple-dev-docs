@@ -25,14 +25,14 @@ A valid MPSGraphStencilOpDescriptor object
 
 ## Parameters
 
-- `reductionMode`: See   property.
-- `offsets`: See   property.
-- `strides`: See   property.
-- `dilationRates`: See   property.
-- `explicitPadding`: See   property.
-- `boundaryMode`: See   property.
-- `paddingStyle`: See   property.
-- `paddingConstant`: See   property.
+- `reductionMode`: See `reductionMode` property.
+- `offsets`: See `offsets` property.
+- `strides`: See `strides` property.
+- `dilationRates`: See `dilationRates` property.
+- `explicitPadding`: See `explicitPadding` property.
+- `boundaryMode`: See `boundaryMode` property.
+- `paddingStyle`: See `paddingStyle` property.
+- `paddingConstant`: See `paddingConstant` property.
 
 
 ---

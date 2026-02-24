@@ -21,8 +21,8 @@ func ABMultiValueReplaceLabel(_ multiValue: ABMutableMultiValueRef!, _ label: CF
 ## Parameters
 
 - `multiValue`: The multi-value list you wish to modify.
-- `label`: The new label at  —it need not be unique. If   is  , this function raises an exception.
-- `index`: The index of the entry to be modified. If   is out of bounds, this function raises an exception.
+- `label`: The new label at `index`—it need not be unique. If `label` is `NULL`, this function raises an exception.
+- `index`: The index of the entry to be modified. If `index` is out of bounds, this function raises an exception.
 
 ## See Also
 

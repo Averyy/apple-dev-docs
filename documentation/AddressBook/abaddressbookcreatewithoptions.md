@@ -35,8 +35,8 @@ If your app syncs information with the database, it must not sync data when it d
 
 ## Parameters
 
-- `options`: Reserved. Pass  .
-- `error`: On error, contains error information. See  .
+- `options`: Reserved. Pass `NULL`.
+- `error`: On error, contains error information. See [`Address Book Errors`](address-book-errors.md).
 
 ## See Also
 

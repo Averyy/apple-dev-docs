@@ -22,7 +22,7 @@ class UIUpdateActionPhase
 
 Each UI update consists of several phases that run in a consistent order, and the [`UIUpdateActionPhase`](uiupdateactionphase.md) object defines constants that represent these phases. When using a [`UIUpdateLink`](uiupdatelink.md), you can use these constants to decide which phase of the UI update process you want its actions to run in.
 
-There are two : standard and low-latency. The standard phase group runs for each UI update. This phase group includes these phases, which run in the following order:
+There are two *phase groups*: standard and low-latency. The standard phase group runs for each UI update. This phase group includes these phases, which run in the following order:
 
 1. [`beforeEventDispatch`](uiupdateactionphase/beforeeventdispatch.md)
 2. [`afterEventDispatch`](uiupdateactionphase/aftereventdispatch.md)

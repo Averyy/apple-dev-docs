@@ -31,8 +31,9 @@ This method calls [`finishSeries(metadata:endDate:completion:)`](hkquantityserie
 
 ## Parameters
 
-- `metadata`: Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
-- `completion`: A completion handler, called by the builder after it creates the samples. The handler takes the following parameters:
+- `metadata`: The metadata dictionary contains extra information describing all the samples created by the builder. The dictionary’s keys are all strings. The values may be strings, numbers, or date objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
+- `completion`: A completion handler, called by the builder after it creates the samples. The handler takes the following parameters: - **`samples`**: The samples returned by the builder, or `nil` if an error occurs.
+- **`error`**: If an error occurs, this contains an object that describes the error. Otherwise, it is `nil`.
 
 ## See Also
 

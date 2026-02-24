@@ -22,7 +22,7 @@ case paymentIdentifier(DataDetector.Match.SemanticDetails.PaymentIdentifier)
 
 ## Parameters
 
-- `PaymentIdentifier`: A   structure.
+- `PaymentIdentifier`: A [`DataDetector.Match.SemanticDetails.PaymentIdentifier`](datadetector/match/semanticdetails/paymentidentifier.md) structure.
 
 
 ---

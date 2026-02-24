@@ -6,13 +6,13 @@ Prepare to deliver data over resource-limited data networks.
 
 #### Overview
 
-Carrier-provided satellite networks are called . An ultra-constrained network has limited throughput, high latency, limited capacity, and intermittent loss of connectivity, all of which directly affect the performance of the apps that run on the network.
+Carrier-provided satellite networks are called *ultra-constrained networks*. An ultra-constrained network has limited throughput, high latency, limited capacity, and intermittent loss of connectivity, all of which directly affect the performance of the apps that run on the network.
 
 With limited bandwidth and availability, ultra-constrained networks aren’t a good choice for a number of data types and activities that are possible on unconstrained networks. Some general best practices to follow while using ultra-constrained networks include:
 
 - Block or delay noncritical uploads and downloads.
 - Use small, infrequent messages.
-- Avoid frequent polling by using retry with  — a process by which you decrease the rate your app attempts to send data over the network in order to conserve network bandwidth.
+- Avoid frequent polling by using retry with *exponential backoff* — a process by which you decrease the rate your app attempts to send data over the network in order to conserve network bandwidth.
 - Cache data and batch requests.
 - Avoid accessing streaming media.
 - Minimize large background downloads and uploads.

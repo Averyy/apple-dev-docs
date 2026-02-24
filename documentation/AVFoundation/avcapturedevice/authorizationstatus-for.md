@@ -37,7 +37,7 @@ After the user grants permission, the system remembers their choice and doesn’
 
 ## Parameters
 
-- `mediaType`: A media type for which to check the authorization status. The supported media types are   and  .
+- `mediaType`: A media type for which to check the authorization status. The supported media types are [`video`](avmediatype/video.md) and [`audio`](avmediatype/audio.md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ This method is called by the system to stop the filter.
 
 ## Parameters
 
-- `reason`: An   code indicating why the filter is being stopped. For a list of possible codes, see  .
+- `reason`: An `NEProviderStopReason` code indicating why the filter is being stopped. For a list of possible codes, see [`NEProvider`](neprovider.md).
 - `completionHandler`: A block that must be executed when the filter is fully stopped.
 
 ## See Also

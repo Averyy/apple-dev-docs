@@ -16,7 +16,7 @@ convenience init(location: any NSTextLocation)
 
 ## Parameters
 
-- `location`: An  .
+- `location`: An [`NSTextLocation`](nstextlocation.md).
 
 ## See Also
 

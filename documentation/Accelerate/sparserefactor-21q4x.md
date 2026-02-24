@@ -30,7 +30,7 @@ The following figure shows two systems of equations where the coefficient matrix
 
 ![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://docs-assets.developer.apple.com/published/7183115249663e3ee5beedf41262d86d/media-3703914%402x.png)
 
-The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix , the code refactors and solves for matrix .
+The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix *A0*, the code refactors and solves for matrix *A1*.
 
 ```swift
 /// Define the sparsity structure of matrices `A0` and `A1`.

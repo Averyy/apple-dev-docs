@@ -26,7 +26,7 @@ class AVPortraitEffectsMatte
 
 #### Overview
 
-Before iOS 11, the iPhone camera software used depth maps to render a shallow depth of field (the  effect) into still images taken in Portrait Mode before discarding the maps. Because the effect was part of the photo, you couldn’t access the maps separately, as metadata, for photos taken by devices running iOS 10 or earlier.
+Before iOS 11, the iPhone camera software used depth maps to render a shallow depth of field (the *bokeh* effect) into still images taken in Portrait Mode before discarding the maps. Because the effect was part of the photo, you couldn’t access the maps separately, as metadata, for photos taken by devices running iOS 10 or earlier.
 
 Starting in iOS 11, apps accessing the photo library can use images containing embedded auxiliary depth maps to render creative depth effects, such as forced perspective, or image projection from 2D to 3D space. These depth maps are low-resolution compared to the full-resolution RGB image. As such, the depth effects you can render are limited by the resolution and accuracy of the maps. Fine detail, such as hair, is challenging to preserve faithfully at the resolution of these depth maps.
 
@@ -34,7 +34,7 @@ Starting in iOS 12, the portrait effects matte helps achieve this fine-grain lev
 
 ![Zoomed in photo showing the fine detail in a portrait effects matte image](https://docs-assets.developer.apple.com/published/c69e91511a8754659f6683c83569e86d/media-3030223%402x.png)
 
-|  |  |  |  |
+| **Camera type** | **RGB image resolution** | **Depth map resolution** | **Portrait effects matte resolution** |
 | --- | --- | --- | --- |
 | Rear dual camera | 4032 x 3024 | 768 x 576 | 2016 x 1512 |
 | TrueDepth camera | 3088 x 2320 | 640 x 480 | 1544 x 1160 |

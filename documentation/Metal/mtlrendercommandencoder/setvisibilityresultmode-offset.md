@@ -32,8 +32,8 @@ The default mode for a render pass is [`MTLVisibilityResultMode.disabled`](mtlvi
 
 ## Parameters
 
-- `mode`: An   that configures which visibility test results the render pass saves to a buffer, or disables visibility testing.
-- `offset`: A location, in bytes, relative to the start of the render pass’s  . The GPU stores the result of a visibility test at  , which needs to be a multiple of 8.
+- `mode`: An [`MTLVisibilityResultMode`](mtlvisibilityresultmode.md) that configures which visibility test results the render pass saves to a buffer, or disables visibility testing.
+- `offset`: A location, in bytes, relative to the start of the render pass’s [`visibilityResultBuffer`](mtlrenderpassdescriptor/visibilityresultbuffer.md). The GPU stores the result of a visibility test at `offset`, which needs to be a multiple of 8.
 
 
 ---

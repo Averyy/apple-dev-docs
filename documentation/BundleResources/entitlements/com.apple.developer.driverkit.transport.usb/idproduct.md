@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: integer
+
 ## See Also
 
 - [bConfigurationValue](entitlements/com.apple.developer.driverkit.transport.usb/bconfigurationvalue.md)

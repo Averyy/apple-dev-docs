@@ -27,6 +27,8 @@ var foundItemsHandler: (([CSSearchableItem]) -> Void)? { get set }
 
 Assign a block to this property that has no return value and takes the following parameter:
 
+- **items**: An array of items that match the specified query.
+
 Specify a value for this property only if you start your query with the [`start()`](cssearchquery/start().md) method. While the query runs, the query object executes the provided closure one or more times to deliver suggested search results for the current search term. Use your handler to retrieve the those results and display them. The query object stops delivering matching items when it reaches the maximum number found in the [`maxResultCount`](csuserquerycontext/maxresultcount.md) property of the query configuration parameters.
 
 Each time the query object calls your handler, it delivers only the new items that it found since the last time it called your handler. However, the query object updates the value of the [`foundItemCount`](cssearchquery/founditemcount.md) property with the total number of items before it calls your handler.

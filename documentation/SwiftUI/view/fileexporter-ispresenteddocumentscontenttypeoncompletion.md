@@ -30,7 +30,7 @@ The `contentType` provided must be included within the document type’s `writab
 - `isPresented`: A binding to whether the interface should be shown.
 - `documents`: The collection of in-memory documents to export.
 - `contentType`: The content type to use for the exported file.
-- `onCompletion`: A callback that will be invoked when the operation has   has succeeded or failed.
+- `onCompletion`: A callback that will be invoked when the operation has has succeeded or failed. - **result**: A `Result` indicating whether the operation succeeded or failed.
 
 ## See Also
 

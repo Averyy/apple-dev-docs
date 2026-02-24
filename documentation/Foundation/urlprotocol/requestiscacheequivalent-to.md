@@ -32,8 +32,8 @@ The [`URLProtocol`](urlprotocol.md) implementation of this method compares the U
 
 ## Parameters
 
-- `a`: The request to compare with  .
-- `b`: The request to compare with  .
+- `a`: The request to compare with `bRequest`.
+- `b`: The request to compare with `aRequest`.
 
 
 ---

@@ -12,9 +12,9 @@ When the user taps an app’s icon on their Home screen, iOS prepares the app fo
 
 ##### Understand App Activations
 
-An  happens when a user clicks on your icon or otherwise goes back to your app.
+An *activation* happens when a user clicks on your icon or otherwise goes back to your app.
 
-On iOS, an activation can either be a launch or a resume. A  is when the process needs to start, and a resume is when your app already had a process alive, even if suspended. A  is generally much faster, and the work to optimize a launch and resume differs.
+On iOS, an activation can either be a launch or a resume. A *launch* is when the process needs to start, and a resume is when your app already had a process alive, even if suspended. A *resume* is generally much faster, and the work to optimize a launch and resume differs.
 
 On macOS, the system will not terminate your process as part of normal use. An activation may require the system to bring in memory from the compressor, swap, and re-render.
 

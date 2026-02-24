@@ -20,7 +20,7 @@ init(_ value: CustomMaterial.ClearcoatNormal)
 
 ## Parameters
 
-- `value`: The   object from a   object.
+- `value`: The `ClearcoatNormal` object from a `CustomMaterial.ClearcoatNormal` object.
 
 
 ---

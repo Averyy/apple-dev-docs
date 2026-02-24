@@ -16,7 +16,7 @@ func removeProgressMark(_ progressMark: NSAnimation.Progress)
 
 ## Parameters
 
-- `progressMark`: A   value (typed as NSAnimationProgress) that indicates the portion of the animation completed. The value should correspond to a progress mark set with   or  .
+- `progressMark`: A `float` value (typed as NSAnimationProgress) that indicates the portion of the animation completed. The value should correspond to a progress mark set with [`addProgressMark(_:)`](nsanimation/addprogressmark(_:).md) or [`NSAnimation`](nsanimation.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@ Learn how find child nodes at a given point by using hit-testing.
 
 #### Overview
 
-When SpriteKit processes touch or mouse events, it walks the scene to find the closest node that will accept the event. If the first node tested won’t accept the event, SpriteKit checks the next closest node, and so on. This process is called , and the order in which it’s processed is essentially the reverse of drawing order.
+When SpriteKit processes touch or mouse events, it walks the scene to find the closest node that will accept the event. If the first node tested won’t accept the event, SpriteKit checks the next closest node, and so on. This process is called *hit-testing*, and the order in which it’s processed is essentially the reverse of drawing order.
 
 For a node to be considered during hit-testing, its [`isUserInteractionEnabled`](sknode/isuserinteractionenabled.md) property must be set to a [`true`](https://developer.apple.com/documentation/Swift/true). The default value is a [`false`](https://developer.apple.com/documentation/Swift/false) for any node except a scene node. A node that will receive events needs to implement the appropriate responder methods from its parent class ([`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) on iOS and [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) on macOS). This is one of the few places where you must implement platform-specific code in SpriteKit.
 

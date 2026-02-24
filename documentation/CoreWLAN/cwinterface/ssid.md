@@ -16,7 +16,7 @@ func ssid() -> String?
 
 #### Discussion
 
-Dynamically queries the interface for the current SSID. Returns  in the case of an error, or if the interface is not participating in a network, or if the SSID can not be encoded as a valid UTF-8 or WinLatin1 string.
+Dynamically queries the interface for the current SSID. Returns *nil* in the case of an error, or if the interface is not participating in a network, or if the SSID can not be encoded as a valid UTF-8 or WinLatin1 string.
 
 ## See Also
 

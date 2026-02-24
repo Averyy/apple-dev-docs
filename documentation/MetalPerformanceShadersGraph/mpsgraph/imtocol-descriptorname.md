@@ -25,7 +25,7 @@ A valid MPSGraphTensor object
 
 ## Parameters
 
-- `source`: The tensor containing the source data. Must be of rank 4. The layout is defined by  .
+- `source`: The tensor containing the source data. Must be of rank 4. The layout is defined by `descriptor.dataLayout`.
 - `descriptor`: The descriptor object that specifies the parameters of the operation.
 - `name`: The name for the operation.
 

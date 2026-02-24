@@ -25,8 +25,8 @@ This function is not recommended for general use because of undocumented special
 ## Parameters
 
 - `keyChar`: The value of the character to generate, or 0 to specify that the system should guess an appropriate value based on the default key mapping.
-- `virtualKey`: The virtual key code for the event. See  .
-- `keyDown`: Pass   to specify that the key position is down; otherwise, pass  .
+- `virtualKey`: The virtual key code for the event. See [`CGKeyCode`](cgkeycode.md).
+- `keyDown`: Pass `true` to specify that the key position is down; otherwise, pass `false`.
 
 ## See Also
 

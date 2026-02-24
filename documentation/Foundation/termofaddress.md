@@ -28,7 +28,7 @@ Many languages rely on gender for their grammar. Without knowing the subject’s
 
 > **Note**:  Not all terms of address exist in all languages.
 
-For example, to substitute the masculine pronoun , for the neutral pronoun , do the following:
+For example, to substitute the masculine pronoun *He*, for the neutral pronoun *They*, do the following:
 
 ```swift
 // Define the resource you want to apply grammatical agreement to.

@@ -55,8 +55,8 @@ print(redLayer.convert(rect, to: yellowLayer)) // prints (-220.0, -140.0, 400.0,
 
 ## Parameters
 
-- `r`: A point specifying a location in the coordinate system of  .
-- `l`: The layer into whose coordinate system   is to be converted. The receiver and   and must share a common parent layer. This parameter may be  .
+- `r`: A point specifying a location in the coordinate system of `l`.
+- `l`: The layer into whose coordinate system `r` is to be converted. The receiver and `l` and must share a common parent layer. This parameter may be `nil`.
 
 ## See Also
 

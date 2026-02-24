@@ -61,7 +61,7 @@ static func clipToNorm() {
 - `threshold`: The maximum Euclidean norm to clip the gradient to.
 - `input`: The descriptor of the input.
 - `output`: The descriptor of the output.
-- `axes`: The dimensions that the function uses to compute the Euclidean norm. Set to   to specify that the function computes the norm over all dimensions.
+- `axes`: The dimensions that the function uses to compute the Euclidean norm. Set to `0` to specify that the function computes the norm over all dimensions.
 
 ## See Also
 

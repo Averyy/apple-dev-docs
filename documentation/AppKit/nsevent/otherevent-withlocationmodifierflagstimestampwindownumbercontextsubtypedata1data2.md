@@ -20,15 +20,18 @@ The created `NSEvent` object or `nil` if the object couldn’t be created.
 
 ## Parameters
 
-- `type`: If   is anything else, an   is raised. Your code should only create events of type  .
-- `location`: The cursor location in the base coordinate system of the window specified by  .
-- `flags`: An integer bit field containing any of the modifier key masks described in  , combined using the C bitwise OR operator.
+- `type`: One of the following event-type constants: - `NSAppKitDefined`
+- `NSSystemDefined`
+- `NSApplicationDefined`
+- `NSPeriodic` If `type` is anything else, an `NSInternalInconsistencyException` is raised. Your code should only create events of type `NSApplicationDefined`.
+- `location`: The cursor location in the base coordinate system of the window specified by `windowNum`.
+- `flags`: An integer bit field containing any of the modifier key masks described in `Getting Unicode Values`, combined using the C bitwise OR operator.
 - `time`: The time the event occurred in seconds since system startup.
-- `wNum`: An integer that identifies the window device associated with the event, which is associated with the   that will receive the event.
-- `unusedPassNil`: The display graphics context of the event. Pass   for this parameter.
-- `subtype`: A numeric identifier that further differentiates custom events of types  ,  , and  .   events don’t use this attribute.
-- `d1`: Additional data associated with the event.   events don’t use these attributes.
-- `d2`: Additional data associated with the event.   events don’t use these attributes.
+- `wNum`: An integer that identifies the window device associated with the event, which is associated with the `NSWindow` that will receive the event.
+- `unusedPassNil`: The display graphics context of the event. Pass `nil` for this parameter.
+- `subtype`: A numeric identifier that further differentiates custom events of types `NSAppKitDefined`, `NSSystemDefined`, and `NSApplicationDefined`. `NSPeriodic` events don’t use this attribute.
+- `d1`: Additional data associated with the event. `NSPeriodic` events don’t use these attributes.
+- `d2`: Additional data associated with the event. `NSPeriodic` events don’t use these attributes.
 
 ## See Also
 

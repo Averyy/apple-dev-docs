@@ -35,9 +35,9 @@ By default, this method pushes two parameters when calling the target. These las
 ## Parameters
 
 - `action`: A selector identifying an action method. See the discussion for information on the permitted selector forms.
-- `target`: The object to receive the action message. If   is  , the app sends the message to the first responder, from whence it progresses up the responder chain until it is handled.
-- `sender`: The object that is sending the action message. The default sender is the   object that invokes this method.
-- `event`: A   object that encapsulates information about the event originating the action message.
+- `target`: The object to receive the action message. If `target` is `nil`, the app sends the message to the first responder, from whence it progresses up the responder chain until it is handled.
+- `sender`: The object that is sending the action message. The default sender is the [`UIControl`](uicontrol.md) object that invokes this method.
+- `event`: A [`UIEvent`](uievent.md) object that encapsulates information about the event originating the action message.
 
 ## See Also
 

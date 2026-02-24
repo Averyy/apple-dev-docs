@@ -26,7 +26,7 @@ A proxy object that forwards messages to the undo manager for recording as undo 
 
 ## Parameters
 
-- `target`: The undo manager maintains a weak reference to  .
+- `target`: The target of the undo operation. The undo manager maintains a weak reference to `target`.
 
 ## See Also
 

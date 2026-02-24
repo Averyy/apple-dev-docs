@@ -28,7 +28,7 @@ Use this method to fetch accelerometer data entries in the specified date range.
 ## Parameters
 
 - `fromDate`: The starting date (inclusive) from which to retrieve data. Entries occurring before this date are excluded from the results.
-- `toDate`: The end date (inclusive) at which to stop retrieving data. Entries occurring after this date are excluded from the results. The difference in time between the   and this parameter must be 12 hours or less.
+- `toDate`: The end date (inclusive) at which to stop retrieving data. Entries occurring after this date are excluded from the results. The difference in time between the `fromDate` and this parameter must be 12 hours or less.
 
 
 ---

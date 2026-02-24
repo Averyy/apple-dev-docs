@@ -23,7 +23,7 @@ func chartSymbolScale(range: [any ChartSymbolShape]) -> some View
 
 ## Parameters
 
-- `range`: The range of symbols that correspond to the   scale domain.
+- `range`: The range of symbols that correspond to the scale domain.
 
 ## See Also
 

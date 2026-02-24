@@ -24,7 +24,7 @@ This method accepts only single plane [`NSBitmapImageRep`](nsbitmapimagerep.md) 
 
 ## Parameters
 
-- `bitmapRep`: The   object to use as the destination.
+- `bitmapRep`: The [`NSBitmapImageRep`](nsbitmapimagerep.md) object to use as the destination.
 
 ## See Also
 

@@ -16,6 +16,10 @@ An access group is a logical collection of apps tagged with a particular group n
 
 You control the groups that your app belongs to by manipulating its entitlements. In particular, an app belongs to all the groups named in a virtual array of strings that the system forms for each app as the concatenation of the following items, evaluated in this order:
 
+- **Keychain access groups**: The optional [`Keychain Access Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/keychain-access-groups) holds an array of strings, each of which names an access group.
+- **Application identifier**: Xcode automatically adds the `application-identifier` entitlement (or the `com.apple.application-identifier` entitlement in macOS) to every app during code signing, formed as the team identifier (team ID) plus the bundle identifier (bundle ID).
+- **Application groups**: When you collect related apps in an application group using the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups), they share access to a group container, and gain the ability to message each other in certain ways. You can use app group names as keychain access group names, without adding them to the Keychain access groups entitlement.
+
 Xcode handles the application identifier (app ID) for you when you set the bundle ID. You set the others by manipulating capabilities in Xcode.
 
 ###### Establish Your Apps Private Access Group

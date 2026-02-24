@@ -90,6 +90,11 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.
 - [object SingleSignOn.Kerberos](singlesignon/kerberos-data.dictionary.md)
   The Kerberos dictionary.
 
+## Properties
+
+- `Kerberos` (SingleSignOn.Kerberos): The Kerberos dictionary.
+- `Name` (string) *(required)*: The human-readable name for the account.
+
 ## See Also
 
 - [object DirectoryService](directoryservice.md)

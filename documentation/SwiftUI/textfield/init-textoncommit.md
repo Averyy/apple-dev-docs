@@ -23,9 +23,9 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>, onCommit: @escaping 
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field,   describing its purpose.
+- `titleKey`: The key for the localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
-- `onCommit`: An action to perform when the user performs an action   (for example, when the user presses the Return key) while the text   field has focus.
+- `onCommit`: An action to perform when the user performs an action (for example, when the user presses the Return key) while the text field has focus.
 
 ## See Also
 

@@ -15,6 +15,13 @@ A geofence for a private network.
 object CellularPrivateNetwork.GeofenceItem
 ```
 
+## Properties
+
+- `GeofenceId` (string) *(required)*: A geofence identifier that’s unique within a list of geofences.
+- `Latitude` (number) *(required)*: The latitude of the geofence.
+- `Longitude` (number) *(required)*: The longitude of the geofence.
+- `Radius` (number) *(required)*: Specifies the radius of the geofence in meters. Set this value slightly greater than the private cellular network coverage area.
+
 
 ---
 

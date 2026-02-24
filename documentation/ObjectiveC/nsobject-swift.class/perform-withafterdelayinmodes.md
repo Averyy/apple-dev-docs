@@ -32,10 +32,10 @@ This method registers with the runloop of its current context, and depends on th
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
-- `anArgument`: The argument to pass to the method when it is invoked. Pass   if the method does not take an argument.
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+- `anArgument`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
 - `delay`: The minimum time before which the message is sent. Specifying a delay of 0 does not necessarily cause the selector to be performed immediately. The selector is still queued on the thread’s run loop and performed as soon as possible.
-- `modes`: An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify   or an empty array for this parameter, this method returns without performing the specified selector. For information about run loop modes, see   in  .
+- `modes`: An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified selector. For information about run loop modes, see [`Run Loops`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16) in [`Threading Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i).
 
 ## See Also
 

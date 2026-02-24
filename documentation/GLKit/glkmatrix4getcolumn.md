@@ -27,8 +27,8 @@ The first three components of column `3` provide the translation values `tx`, `t
 
 ## Parameters
 
-- `matrix`: A   matrix.
-- `column`: The column index, which must be a number between   and  , inclusive.
+- `matrix`: A `4x4` matrix.
+- `column`: The column index, which must be a number between `0` and `3`, inclusive.
 
 ## See Also
 

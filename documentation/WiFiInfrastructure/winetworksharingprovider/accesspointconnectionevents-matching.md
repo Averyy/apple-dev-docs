@@ -25,14 +25,14 @@ Updates will be sent when the host joins or roams to a new Access Point, or when
 
 ## Parameters
 
-- `predicate`: An optional predicate for filtering the access point list. The default is  , meaning   you receive all access point information.
+- `predicate`: An optional predicate for filtering the access point list. The default is `nil`, meaning you receive all access point information.
 
 ## See Also
 
 - [WINetworkSharingProvider.AccessPointConnection](winetworksharingprovider/accesspointconnection.md)
   A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
 - [WINetworkSharingProvider.AccessPointConnectionEvent](winetworksharingprovider/accesspointconnectionevent.md)
-  An event that occurred, indicating an update to the available shared access points.
+  An event that indicates an update to the available shared access points.
 
 
 ---

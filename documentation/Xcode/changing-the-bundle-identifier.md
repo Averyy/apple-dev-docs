@@ -8,7 +8,7 @@ Modify your app’s bundle identifier and update it anywhere it appears.
 
 If you want to change your app’s bundle ID before you upload a build to App Store Connect, you need to change it in multiple locations. It’s particularly important that you update the bundle ID in all the locations below if your app uses certain capabilities that depend on the bundle ID.
 
-The  is an information property list key that uniquely identifies your app throughout the system. Some capabilities use information property list or entitlement keys in your project that contain the main bundle ID.
+The *bundle ID* is an information property list key that uniquely identifies your app throughout the system. Some capabilities use information property list or entitlement keys in your project that contain the main bundle ID.
 
 If you refer to a bundle ID in your code, replace it with the [`bundle()`](https://developer.apple.com/documentation/Foundation/bundle()) macro that returns the bundle for the calling code.
 

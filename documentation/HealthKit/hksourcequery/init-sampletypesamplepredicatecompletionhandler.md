@@ -33,9 +33,11 @@ After instantiating the query, call the [`HKHealthStore`](hkhealthstore.md) clas
 
 ## Parameters
 
-- `sampleType`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the   class (the  ,  ,  ,  and   classes).
-- `objectPredicate`: A predicate that limits the samples matched by the query. Pass   if you want to receive the sources for all the samples of the specified type.
-- `completionHandler`: A block that is called when the query finishes executing. This block takes the following parameters:
+- `sampleType`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the [`HKSampleType`](hksampletype.md) class (the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md),  and [`HKCorrelationType`](hkcorrelationtype.md) classes).
+- `objectPredicate`: A predicate that limits the samples matched by the query. Pass `nil` if you want to receive the sources for all the samples of the specified type.
+- `completionHandler`: A block that is called when the query finishes executing. This block takes the following parameters: - **query**: A reference to the query calling this block.
+- **results**: A set containing the sources for all the samples that match both the sample type and the object predicate, or `nil` if an error occurred.
+- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 

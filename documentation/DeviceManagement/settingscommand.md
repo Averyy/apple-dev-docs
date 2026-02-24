@@ -25,6 +25,11 @@ object SettingsCommand
 - [object SettingsCommand.Command](settingscommand/command-data.dictionary.md)
   The command to configure settings on a device.
 
+## Properties
+
+- `Command` (SettingsCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object SettingsResponse](settingsresponse.md)

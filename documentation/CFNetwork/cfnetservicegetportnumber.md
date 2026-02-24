@@ -25,7 +25,7 @@ The port number of the service.
 
 ## Parameters
 
-- `theService`: The CFNetService whose protocol-specific information is to be obtained; cannot be  . Note that in order to get protocol-specific information, you must resolve   by calling   or   before calling this function.
+- `theService`: The CFNetService whose protocol-specific information is to be obtained; cannot be `NULL`. Note that in order to get protocol-specific information, you must resolve `theService` by calling [`CFNetServiceResolve`](cfnetserviceresolve.md) or [`CFNetServiceResolveWithTimeout(_:_:_:)`](cfnetserviceresolvewithtimeout(_:_:_:).md) before calling this function.
 
 ## See Also
 

@@ -22,9 +22,9 @@ init(rows: [GridItem], alignment: VerticalAlignment = .center, spacing: CGFloat?
 
 ## Parameters
 
-- `rows`: An array of grid items that size and position each column of   the grid.
+- `rows`: An array of grid items that size and position each column of the grid.
 - `alignment`: The alignment of the grid within its parent view.
-- `spacing`: The spacing between the grid and the next item in its   parent view.
+- `spacing`: The spacing between the grid and the next item in its parent view.
 - `pinnedViews`: Views to pin to the bounds of a parent scroll view.
 - `content`: The content of the grid.
 

@@ -29,6 +29,11 @@ This method applies the six-fold reflected tile filter to an image. The effect p
 
 The six-fold rotated tile filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a CGPoint.
+- **`angle`**: A `float` representing the direction of distortion , in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in flowers in the input image becoming rotated by 60 degrees and tiled to create the output:
 
 ```swift

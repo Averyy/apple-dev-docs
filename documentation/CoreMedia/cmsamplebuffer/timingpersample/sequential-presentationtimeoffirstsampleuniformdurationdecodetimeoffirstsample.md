@@ -24,7 +24,7 @@ static func sequential(presentationTimeOfFirstSample: CMTime, uniformDuration: C
 
 - `presentationTimeOfFirstSample`: Time at which the first sample is presented.
 - `uniformDuration`: Duration shared by ever sample in the sample buffer.
-- `decodeTimeOfFirstSample`: Time at which the first sample is decoded. Samples must have the same   decode and presentation order.
+- `decodeTimeOfFirstSample`: Time at which the first sample is decoded. Samples must have the same decode and presentation order.
 
 
 ---

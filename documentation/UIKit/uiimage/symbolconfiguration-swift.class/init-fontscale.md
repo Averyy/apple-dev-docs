@@ -26,7 +26,7 @@ A new symbol configuration object with the specified information.
 ## Parameters
 
 - `font`: The font from which to derive the configuration attributes.
-- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than text that uses the same font. For a list of possible values, see  .
+- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than text that uses the same font. For a list of possible values, see [`UIImage.SymbolScale`](uiimage/symbolscale.md).
 
 ## See Also
 

@@ -12,7 +12,7 @@ Enrich your app’s user experience by supporting standard and custom gesture in
 
 #### Overview
 
-Gesture interaction is one of the most intuitive user experiences on iOS, and gesture recognizers provide an easy way for apps to implement it. iOS defines some [`standard gestures`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/), and apps can use system-provided recognizers to support these standard gestures, or create custom ones for non-standard gestures. This sample demonstrates how to use standard gesture recognizers by adding pan, pinch, and rotation support for three colored views, which this sample calls , and how to implement a custom recognizer to reset the pieces to their initial state.
+Gesture interaction is one of the most intuitive user experiences on iOS, and gesture recognizers provide an easy way for apps to implement it. iOS defines some [`standard gestures`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/), and apps can use system-provided recognizers to support these standard gestures, or create custom ones for non-standard gestures. This sample demonstrates how to use standard gesture recognizers by adding pan, pinch, and rotation support for three colored views, which this sample calls *pieces*, and how to implement a custom recognizer to reset the pieces to their initial state.
 
 ##### Set Up a Gesture Recognizer
 

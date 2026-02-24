@@ -29,8 +29,8 @@ This function is thread safe.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `txtRecord`: TXT record data as returned by  .
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default allocator.
+- `txtRecord`: TXT record data as returned by [`CFNetServiceGetTXTData(_:)`](cfnetservicegettxtdata(_:).md).
 
 ## See Also
 

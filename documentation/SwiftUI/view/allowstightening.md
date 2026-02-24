@@ -51,7 +51,7 @@ VStack {
 
 ## Parameters
 
-- `flag`: A Boolean value that indicates whether the space   between characters compresses when necessary.
+- `flag`: A Boolean value that indicates whether the space between characters compresses when necessary.
 
 ## See Also
 

@@ -27,7 +27,7 @@ MapKit composes a label using available information, such as the `name` property
 
 ## Parameters
 
-- `item`: An   that provides a label for the marker.
+- `item`: An [`MKMapItem`](mkmapitem.md) that provides a label for the marker.
 
 ## See Also
 

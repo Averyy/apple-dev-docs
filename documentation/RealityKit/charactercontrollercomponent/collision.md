@@ -21,7 +21,7 @@ struct Collision
 
 #### Overview
 
-All coordinates are in , the coordinate system of the physics simulation.
+All coordinates are in *physics space*, the coordinate system of the physics simulation.
 
 ## Topics
 

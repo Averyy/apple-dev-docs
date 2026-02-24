@@ -24,7 +24,7 @@ Calling this method removes any text input mode information associated with the 
 
 ## Parameters
 
-- `identifier`: An identifier assigned to the   property of one of your responders.
+- `identifier`: An identifier assigned to the [`textInputContextIdentifier`](uiresponder/textinputcontextidentifier.md) property of one of your responders.
 
 ## See Also
 

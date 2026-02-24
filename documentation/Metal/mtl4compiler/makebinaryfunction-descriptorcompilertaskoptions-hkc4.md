@@ -26,7 +26,7 @@ A binary function upon success, otherwise this function throws.
 ## Parameters
 
 - `descriptor`: A binary function descriptor to use for creating the binary function.
-- `compilerTaskOptions`: A descriptor of the compilation itself, providing parameters that   influence execution of the compilation process.
+- `compilerTaskOptions`: A descriptor of the compilation itself, providing parameters that influence execution of the compilation process.
 
 
 ---

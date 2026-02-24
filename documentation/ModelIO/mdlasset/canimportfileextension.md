@@ -29,6 +29,13 @@ If this method returns [`true`](https://developer.apple.com/documentation/Swift/
 
 The set of supported extensions and formats includes:
 
+- **`.abc`**: Alembic
+- **`.usd`, `.usda`, `.usdc`**: Universal Scene Description
+- **`.usdz`**: Universal Scene Description (Mobile)
+- **`.ply`**: Polygon
+- **`.obj`**: Wavefront Object
+- **`.stl`**: Standard Tessellation Language
+
 Additional formats may be supported as well.
 
 ## Parameters

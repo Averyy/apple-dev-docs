@@ -22,7 +22,7 @@ If you use styled text in your switches, you must provide localized versions of 
 
 ## Parameters
 
-- `attributedTitle`: The formatted text string to be displayed in the switch. Specifying   clears the current text from the switch.
+- `attributedTitle`: The formatted text string to be displayed in the switch. Specifying `nil` clears the current text from the switch.
 
 ## See Also
 

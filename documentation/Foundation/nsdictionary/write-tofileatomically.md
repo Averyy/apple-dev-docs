@@ -36,8 +36,8 @@ For more information about property lists, see [`Property List Programming Guide
 
 ## Parameters
 
-- `path`: If   contains a tilde (~) character, you must expand it with   before invoking this method.
-- `useAuxiliaryFile`: If   is  , the dictionary is written to an auxiliary file, and then the auxiliary file is renamed to  . If   is  , the dictionary is written directly to  . The   option guarantees that  , if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `path`: The path at which to write the file. If `path` contains a tilde (~) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
+- `useAuxiliaryFile`: A flag that specifies whether the file should be written atomically. If `useAuxiliaryFile` is [`true`](https://developer.apple.com/documentation/Swift/true), the dictionary is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If `useAuxiliaryFile` is [`false`](https://developer.apple.com/documentation/Swift/false), the dictionary is written directly to `path`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 
 ## See Also
 

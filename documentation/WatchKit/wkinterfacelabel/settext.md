@@ -26,7 +26,7 @@ Changing the text of the label causes the label to resize itself to accommodate 
 
 ## Parameters
 
-- `text`: The text to be displayed in the label. Specifying   clears the current text from the label.
+- `text`: The text to be displayed in the label. Specifying `nil` clears the current text from the label.
 
 ## See Also
 

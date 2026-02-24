@@ -23,8 +23,8 @@ An initialized `AVCaptureManualExposureBracketedStillImageSettings` instance.
 
 ## Parameters
 
-- `duration`: The exposure duration in seconds. Pass   to leave the duration unchanged for this bracketed image.
-- `ISO`: The film speed in the ISO format. Pass   to leave the ISO unchanged for this bracketed image.
+- `duration`: The exposure duration in seconds. Pass `AVCaptureExposureDurationCurrent` to leave the duration unchanged for this bracketed image.
+- `ISO`: The film speed in the ISO format. Pass `AVCaptureISOCurrent` to leave the ISO unchanged for this bracketed image.
 
 
 ---

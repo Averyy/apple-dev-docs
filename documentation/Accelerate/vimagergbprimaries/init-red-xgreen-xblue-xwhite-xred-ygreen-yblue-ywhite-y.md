@@ -26,14 +26,14 @@ A new RGB primaries structure.
 
 ## Parameters
 
-- `red_x`: The red   value according to the CIE 1931 color space.
-- `green_x`: The green   value according to the CIE 1931 color space.
-- `blue_x`: The blue   value according to the CIE 1931 color space.
-- `white_x`: The white point   value according to the CIE 1931 color space.
-- `red_y`: The red   value according to the CIE 1931 color space.
-- `green_y`: The green   value according to the CIE 1931 color space.
-- `blue_y`: The blue   value according to the CIE 1931 color space.
-- `white_y`: The white point   value according to the CIE 1931 color space.
+- `red_x`: The red `x` value according to the CIE 1931 color space.
+- `green_x`: The green `x` value according to the CIE 1931 color space.
+- `blue_x`: The blue `x` value according to the CIE 1931 color space.
+- `white_x`: The white point `x` value according to the CIE 1931 color space.
+- `red_y`: The red `y` value according to the CIE 1931 color space.
+- `green_y`: The green `y` value according to the CIE 1931 color space.
+- `blue_y`: The blue `y` value according to the CIE 1931 color space.
+- `white_y`: The white point `y` value according to the CIE 1931 color space.
 
 ## See Also
 

@@ -39,7 +39,7 @@ This operation computes the fast Fourier transform of the input tensor according
 
 - `tensor`: A complex or real-valued input tensor.
 - `axes`: An array of numbers that specifies over which axes MPSGraph performs the Fourier transform - all axes must be contained within last four dimensions of the input tensor.
-- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see  .
+- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see [`MPSGraphFFTDescriptor`](mpsgraphfftdescriptor.md).
 - `name`: The name for the operation.
 
 

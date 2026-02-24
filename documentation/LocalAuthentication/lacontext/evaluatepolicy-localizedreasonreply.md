@@ -35,9 +35,10 @@ Don’t assume that a previous successful policy evaluation means that future ev
 
 ## Parameters
 
-- `policy`: The policy to evaluate. For possible values, see  .
+- `policy`: The policy to evaluate. For possible values, see [`LAPolicy`](lapolicy.md).
 - `localizedReason`: The app-provided reason for requesting authentication, which displays in the authentication dialog presented to the user.
-- `reply`: A closure that is executed when policy evaluation finishes. This is evaluated on a private queue internal to the framework in an unspecified threading context. You must not call   in this block, because doing so could lead to deadlock.
+- `reply`: A closure that is executed when policy evaluation finishes. This is evaluated on a private queue internal to the framework in an unspecified threading context. You must not call [`canEvaluatePolicy(_:error:)`](lacontext/canevaluatepolicy(_:error:).md) in this block, because doing so could lead to deadlock. - **success**: [`true`](https://developer.apple.com/documentation/Swift/true) if policy evaluation succeeded, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- **error**: `nil` if policy evaluation succeeded, an error object that should be presented to the user otherwise. See [`LAError.Code`](laerror-swift.struct/code.md) for possible error codes
 
 ## See Also
 

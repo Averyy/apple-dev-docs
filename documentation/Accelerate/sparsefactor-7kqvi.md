@@ -26,7 +26,7 @@ Factorization of Matrix.
 
 ## Parameters
 
-- `SymbolicFactor`: A symbolic factorization, as returned by a call of the   form  .
+- `SymbolicFactor`: A symbolic factorization, as returned by a call of the form `SymbolicFactor = SparseFactor(Matrix.structure)`.
 - `Matrix`: The matrix to factorize.
 - `nfoptions`: Numeric factor options, for example pivoting parameters.
 

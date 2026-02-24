@@ -24,7 +24,7 @@ If you’re converting part of the search field’s text into a token, use [`rep
 ## Parameters
 
 - `token`: The search token to be inserted.
-- `tokenIndex`: Within the   array, the index at which to insert the token.
+- `tokenIndex`: Within the [`tokens`](uisearchtextfield/tokens.md) array, the index at which to insert the token.
 
 ## See Also
 

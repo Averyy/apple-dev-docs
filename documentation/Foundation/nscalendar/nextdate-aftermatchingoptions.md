@@ -32,7 +32,7 @@ To compute a sequence of dates, use the [`enumerateDates(startingAfter:matching:
 
 - `date`: The date for which to perform the calculation.
 - `comps`: The date components to match.
-- `options`: Options for the calculation. For possible values, see  .
+- `options`: Options for the calculation. For possible values, see [`NSCalendar.Options`](nscalendar/options.md).
 
 ## See Also
 

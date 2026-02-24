@@ -37,7 +37,8 @@ do {
 
 - `attachment`: An attachment associated with the specified object.
 - `object`: An object from the HealthKit store.
-- `completion`: A completion handler that the system calls after removing the attachment. This handler takes the following parameters:
+- `completion`: A completion handler that the system calls after removing the attachment. This handler takes the following parameters: - **success**: A Boolean value that indicates whether the system successfully removed the attachment.
+- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 
 ---

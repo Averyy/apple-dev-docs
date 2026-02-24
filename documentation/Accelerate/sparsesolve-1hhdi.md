@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the equation  for the matrix of single-precision values , without any internal memory allocations.
+Solves the equation *Subfactor * X = B* for the matrix of single-precision values *X*, without any internal memory allocations.
 
 **Availability**:
 - iOS 11.0+
@@ -22,19 +22,19 @@ func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Float, _ B: DenseMatrix_Floa
 
 ## Parameters
 
-- `Subfactor`: The   in     that   returns.
-- `B`: The matrix  .
-- `X`: The matrix  .
-- `workspace`: A workspace of size       where   is the number of right-hand-side vectors.
+- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-4renf.md) returns.
+- `B`: The matrix *B*.
+- `X`: The matrix *X*.
+- `workspace`: A workspace of size `workspaceRequiredStatic` `+ nrhs *` `workspaceRequiredPerRHS` where `nrhs` is the number of right-hand-side vectors.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-8k0w9.md)
-  Solves the equation  in place for the matrix of double-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* in place for the matrix of double-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-9kp2g.md)
-  Solves the equation  in place for the matrix of single-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* in place for the matrix of single-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-90z8f.md)
-  Solves the equation  for the matrix of double-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the matrix of double-precision values *X*, without any internal memory allocations.
 
 
 ---

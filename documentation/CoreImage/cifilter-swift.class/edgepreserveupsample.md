@@ -29,6 +29,11 @@ This method applies the edge preserve upsample filter to an image. The effect up
 
 The edge preserve upsample filter uses the following properties:
 
+- **`inputImage`**: An image representing the image to upscale with the type [`CIImage`](ciimage.md).
+- **`scaleImage`**: An image representing the reference for scaling the input image with the type [`CIImage`](ciimage.md).
+- **`spatialSigma`**: A float representing the influence of the input image’s spatial information on the upsampling operation as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`lumaSimga`**: A float representing influence of the input image’s luma information on the upsampling operation as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that upscales the smaller image to the size of the scale image:
 
 ```swift

@@ -23,7 +23,7 @@ To begin playback after establishing a playback queue, call [`prepareToPlay()`](
 
 ## Parameters
 
-- `itemCollection`: A media item collection that you want as the playback queue. See   for a description of media item collections and how to use them.
+- `itemCollection`: A media item collection that you want as the playback queue. See [`MPMediaItemCollection`](mpmediaitemcollection.md) for a description of media item collections and how to use them.
 
 ## See Also
 

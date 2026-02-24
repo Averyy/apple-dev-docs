@@ -47,7 +47,7 @@ When using `CGImageSource` functions to read from a HEIF, JPEG, or DNG file cont
 
 ## Parameters
 
-- `imageSourceAuxDataInfoDictionary`: A dictionary of primitive depth-related information, in the format provided by the    function.
+- `imageSourceAuxDataInfoDictionary`: A dictionary of primitive depth-related information, in the format provided by the  [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)) function.
 
 ## See Also
 

@@ -18,7 +18,7 @@ var maxNumberOfColumns: Int { get set }
 
 When the value of this property is `0`, the collection view has no maximum number of columns. The default value of this property is `0`.
 
-It is possible for a collection view to specify both a maximum number of rows and a maximum number of columns. If the number of content objects exceeds the number of displayable items (=`maxNumberOfRows` * `maxNumberOfColumns`) only the first  items of the content array are displayed.
+It is possible for a collection view to specify both a maximum number of rows and a maximum number of columns. If the number of content objects exceeds the number of displayable items (*n*=`maxNumberOfRows` * `maxNumberOfColumns`) only the first *n* items of the content array are displayed.
 
 ## See Also
 

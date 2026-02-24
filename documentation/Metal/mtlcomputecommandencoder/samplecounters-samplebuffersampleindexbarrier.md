@@ -32,9 +32,9 @@ See [`GPU counters and counter sample buffers`](gpu-counters-and-counter-sample-
 
 ## Parameters
 
-- `sampleBuffer`: An   instance that stores the GPU hardware data.
-- `sampleIndex`: An index within   the command stores the data to.
-- `barrier`: The   parameter for the command has no impact on sampling commands from other passes.
+- `sampleBuffer`: An [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance that stores the GPU hardware data.
+- `sampleIndex`: An index within `sampleBuffer` the command stores the data to.
+- `barrier`: Whether or not the command inserts a barrier before sampling the counter’s data. A barrier ensures that the commands you encode before this one complete before the GPU samples the hardware counters, but can negatively impact runtime performance. Running this command without a barrier means the GPU can sample counters concurrently with other commands from the encoder. The `barrier` parameter for the command has no impact on sampling commands from other passes.
 
 
 ---

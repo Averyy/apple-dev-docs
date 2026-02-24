@@ -34,9 +34,9 @@ To obtain a property value’s size, call this function with the `outData` param
 ## Parameters
 
 - `inTrack`: The music track that you want to get a property value from.
-- `inPropertyID`: The identifier for the music track property that you want to get. See   for possible values.
+- `inPropertyID`: The identifier for the music track property that you want to get. See [`Music Track Properties`](1515456-music-track-properties.md) for possible values.
 - `outData`: On output, the requested property value.
-- `ioLength`: On input, the available size for the retrieved property value. On output, the size of the valid property data that   points to.
+- `ioLength`: On input, the available size for the retrieved property value. On output, the size of the valid property data that `outData` points to.
 
 ## See Also
 

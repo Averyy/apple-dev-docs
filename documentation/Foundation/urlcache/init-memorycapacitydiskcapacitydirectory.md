@@ -28,7 +28,7 @@ A disk cache measured in the tens of megabytes is acceptable in most cases.
 
 - `memoryCapacity`: The memory capacity of the cache, in bytes.
 - `diskCapacity`: The disk capacity of the cache, in bytes.
-- `directory`: The path to an on-disk directory, where the system stores the on-disk cache. If   is  , the cache uses a default directory.
+- `directory`: The path to an on-disk directory, where the system stores the on-disk cache. If `directory` is `nil`, the cache uses a default directory.
 
 ## See Also
 

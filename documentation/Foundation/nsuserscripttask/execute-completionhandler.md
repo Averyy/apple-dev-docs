@@ -22,7 +22,7 @@ If the script completed normally, the completion handler’s `error` parameter w
 
 ## Parameters
 
-- `handler`: The completion handler Block that returns the result or an error. See  .
+- `handler`: The completion handler Block that returns the result or an error. See [`NSUserScriptTask.CompletionHandler`](nsuserscripttask/completionhandler.md).
 
 ## See Also
 

@@ -23,8 +23,8 @@ func chartYScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType? =
 
 ## Parameters
 
-- `domain`: The possible data values along the y axis in the   chart. You can define the domain with a   for number or    values (e.g.,  ), and with an array for categorical   values (e.g.,  )
-- `range`: The range of y positions that correspond to the scale   domain. By default the range is determined by the dimension of the plot   area. You can use    to add padding to the scale range.
+- `domain`: The possible data values along the y axis in the chart. You can define the domain with a `ClosedRange` for number or `Date` values (e.g., `0 ... 500`), and with an array for categorical values (e.g., `["A", "B", "C"]`)
+- `range`: The range of y positions that correspond to the scale domain. By default the range is determined by the dimension of the plot area. You can use `range: .plotDimension(startPadding:, endPadding:)` to add padding to the scale range.
 - `type`: The scale type.
 
 ## See Also

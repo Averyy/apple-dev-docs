@@ -18,7 +18,7 @@ optional func dataServiceIdentifierDidChange(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: The identifier of the service that’s currently providing data. Use this identifier as the key in   to get the value of the new radio access technology for the service.
+- `identifier`: The identifier of the service that’s currently providing data. Use this identifier as the key in [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 
 
 ---

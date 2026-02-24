@@ -28,7 +28,7 @@ Supply a value of `nil` to remove an existing dictionary entry for a specified k
 
 ## Parameters
 
-- `objectOrNil`: The object to set for the specified key, or   to remove an existing entry in the dictionary.
+- `objectOrNil`: The object to set for the specified key, or `nil` to remove an existing entry in the dictionary.
 - `key`: The key for storing the specified object.
 
 ## See Also

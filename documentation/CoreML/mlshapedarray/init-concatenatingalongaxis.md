@@ -53,7 +53,7 @@ let shapedArray3 = MLShapedArray(concatenating: [shapedArray1,shapedArray2],
 ## Parameters
 
 - `shapedArrays`: A sequence of shaped arrays.
-- `alongAxis`: A zero-based axis number the shaped arrays in   merge along.
+- `alongAxis`: A zero-based axis number the shaped arrays in `multiArray` merge along. > 💡 **Tip**:  Select the shaped array’s highest dimension by passing a negative axis number. For example, an axis value of `-1` or `-2` selects the last or second-to-last dimension, respectively.
 
 ## See Also
 

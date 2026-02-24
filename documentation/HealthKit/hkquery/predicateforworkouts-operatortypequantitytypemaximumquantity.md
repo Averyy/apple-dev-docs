@@ -42,7 +42,7 @@ let heartRatePredicate = HKQuery.predicateForWorkouts(
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the maximum quantity.
-- `quantityType`: The type of   objects used to calculate the maximum quantity.
+- `quantityType`: The type of [`HKQuantitySample`](hkquantitysample.md) objects used to calculate the maximum quantity.
 - `maximumQuantity`: The target value for the maximum quantity.
 
 ## See Also

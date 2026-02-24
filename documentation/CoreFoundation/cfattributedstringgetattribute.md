@@ -31,9 +31,9 @@ For performance reasons, a range returned in `effectiveRange` is not necessarily
 ## Parameters
 
 - `aStr`: The attributed string to examine.
-- `loc`: The location in   at which to determine the attributes.   must not exceed the bounds of  .
+- `loc`: The location in `str` at which to determine the attributes. `loc` must not exceed the bounds of `str`.
 - `attrName`: The name of the attribute whose value you want to determine.
-- `effectiveRange`: If not  , upon return contains a range including   over which exactly the same set of attributes apply as at  .
+- `effectiveRange`: If not `NULL`, upon return contains a range including `loc` over which exactly the same set of attributes apply as at `loc`.
 
 ## See Also
 

@@ -33,6 +33,16 @@ This method applies the page curl with shadow transition filter to an image. The
 
 The page curl with shadow transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`backsideImage`**: An image used as the backside of the curl with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CIVector`](civector.md) representing the extent of the effect.
+- **`angle`**: A `float` representing the angle of the motion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowAmount`**: A `float` representing the strength of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowExtent`**: A [`CIVector`](civector.md) representing the rectangular portion of the input image that is used to create the shadow.
+- **`shadowSize`**: A `float` representing the maximum amount of pixels to make up the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a page curling back to reveal the target image with an added shadow.
 
 ```swift

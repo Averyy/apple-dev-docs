@@ -31,7 +31,7 @@ To query only positions within the discrete sample grid, use the [`value(at:)`](
 
 ## Parameters
 
-- `position`: The position to query in the noise map. Must be within the rectangle defined by the noise map’s   and   properties.
+- `position`: The position to query in the noise map. Must be within the rectangle defined by the noise map’s [`origin`](gknoisemap/origin.md) and [`size`](gknoisemap/size.md) properties.
 
 ## See Also
 

@@ -6,6 +6,10 @@
 **Availability**:
 - tvOS 16.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [NSApplicationServiceIdentifier](information-property-list/nsapplicationservices/browses/nsapplicationserviceidentifier.md)

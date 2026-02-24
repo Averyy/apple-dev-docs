@@ -7,6 +7,10 @@
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UIApplicationShortcutItemIconFile](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemiconfile.md)

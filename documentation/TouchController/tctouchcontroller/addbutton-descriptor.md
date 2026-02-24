@@ -21,7 +21,7 @@ A new `TCButton` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the button.
+- `descriptor`: The `TCButtonDescriptor` containing the configuration for the button.
 
 ## See Also
 

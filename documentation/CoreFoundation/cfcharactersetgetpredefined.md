@@ -26,7 +26,7 @@ A predefined character set. This instance is owned by Core Foundation.
 
 ## Parameters
 
-- `theSetIdentifier`: A predefined character set. See   for the list of available character sets.
+- `theSetIdentifier`: A predefined character set. See [`Predefined CFCharacterSet Selector Values`](predefined_cfcharacterset_selector_values.md) for the list of available character sets.
 
 
 ---

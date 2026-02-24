@@ -23,10 +23,10 @@ func replacePersistentStore(at destinationURL: URL, destinationOptions: [AnyHash
 ## Parameters
 
 - `destinationURL`: The location of the store to replace.
-- `destinationOptions`: A dictionary containing key-value pairs that specify the behavior and characteristics of the store to replace. For more information, see  .
+- `destinationOptions`: A dictionary containing key-value pairs that specify the behavior and characteristics of the store to replace. For more information, see [`Store options`](store-options.md).
 - `sourceURL`: The location of the store to use as the replacement.
-- `sourceOptions`: A dictionary containing key-value pairs that specify the behavior and characteristics of the replacement store. For more information, see  .
-- `sourceType`: The store type of the replacement store. For possible values, see  .
+- `sourceOptions`: A dictionary containing key-value pairs that specify the behavior and characteristics of the replacement store. For more information, see [`Store options`](store-options.md).
+- `sourceType`: The store type of the replacement store. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
 
 ## See Also
 

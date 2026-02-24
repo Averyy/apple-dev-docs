@@ -26,8 +26,8 @@ Typically, at least one color should have a location of 0.0 and one should have 
 
 ## Parameters
 
-- `colorArray`: An array of   objects representing the colors in the gradient.
-- `locations`: An array of   values containing the location for each color in the gradient. Each value must be in the range 0.0 to 1.0. There must be the same number of locations as are colors in the   parameter.
+- `colorArray`: An array of `NSColor` objects representing the colors in the gradient.
+- `locations`: An array of `CGFloat` values containing the location for each color in the gradient. Each value must be in the range 0.0 to 1.0. There must be the same number of locations as are colors in the `colorArray` parameter.
 - `colorSpace`: The color space to use for the gradient.
 
 ## See Also

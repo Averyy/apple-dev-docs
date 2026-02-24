@@ -22,7 +22,7 @@ func specifyHistogram(_ histogram: vImage.PixelBuffer<Format>.HistogramFFF, dest
 
 #### Discussion
 
- is a technique that allows you to calculate the histogram of a reference image and apply it to an input image.
+*Histogram specification* is a technique that allows you to calculate the histogram of a reference image and apply it to an input image.
 
 The example below shows a source image (bottom left) and a histogram reference image (top left), with the histogram specification output on the right:
 

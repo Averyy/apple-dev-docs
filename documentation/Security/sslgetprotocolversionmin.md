@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: The SSL context associated with the connection.
-- `minVersion`: The address of an   integer where the minimum version should be stored. See   for a list of possible values.
+- `minVersion`: The address of an [`SSLProtocol`](sslprotocol.md) integer where the minimum version should be stored. See [`SSLProtocol`](sslprotocol.md) for a list of possible values.
 
 
 ---

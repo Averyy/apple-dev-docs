@@ -27,7 +27,7 @@ A new polyline object.
 ## Parameters
 
 - `coords`: The array of coordinates defining the shape. The initializer copies the data in this array to the new object.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `coords` array.
 
 ## See Also
 

@@ -20,7 +20,7 @@ You can use [`removeWindow(_:)`](nswindowtabgroup/removewindow(_:).md) to explic
 
 ## Parameters
 
-- `window`: Raises an   if the window is not a member of the tab group.
+- `window`: The window to remove from the tab group. This window must already be a member of the tab group. Raises an `NSInternalInconsistencyException` if the window is not a member of the tab group.
 
 ## See Also
 

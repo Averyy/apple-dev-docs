@@ -56,8 +56,8 @@ var body: some View {
 
 - `title`: The title of the text field, describing its purpose.
 - `value`: The underlying value to edit.
-- `formatter`: A formatter to use when converting between the   string the user edits and the underlying value of type  .   If   can’t perform the conversion, the text field doesn’t   modify  .
-- `prompt`: A   which provides users with guidance on what to enter   into the text field.
+- `formatter`: A formatter to use when converting between the string the user edits and the underlying value of type `V`. If `formatter` can’t perform the conversion, the text field doesn’t modify `binding.value`.
+- `prompt`: A `Text` which provides users with guidance on what to enter into the text field.
 
 ## See Also
 

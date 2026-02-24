@@ -30,7 +30,7 @@ This method behaves similarly to  [`string(from:)`](cnpostaladdressformatter/str
 ## Parameters
 
 - `postalAddress`: The postal address to format.
-- `attributes`: The default attributes to use. You can specify the   or   attributes.
+- `attributes`: The default attributes to use. You can specify the [`CNPostalAddressPropertyAttribute`](cnpostaladdresspropertyattribute.md) or [`CNPostalAddressLocalizedPropertyNameAttribute`](cnpostaladdresslocalizedpropertynameattribute.md) attributes.
 
 ## See Also
 

@@ -21,7 +21,7 @@ optional func applicationWillFinishLaunching(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  . Calling the   method of this notification returns the   object itself.
+- `notification`: A notification named [`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 

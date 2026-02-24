@@ -26,7 +26,7 @@ A view that specifies how to fill symbol images.
 
 ## Parameters
 
-- `mode`: The color rendering mode, or nil to use the   default mode.
+- `mode`: The color rendering mode, or nil to use the default mode.
 
 
 ---

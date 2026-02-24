@@ -21,7 +21,7 @@ func perform(_ requests: [VNRequest], onImageURL imageURL: URL) throws
 
 ## Parameters
 
-- `requests`: An array of   requests to perform.
+- `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
 - `imageURL`: A URL pointing to the image on which to perform the request.
 
 ## See Also

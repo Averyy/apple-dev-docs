@@ -28,7 +28,7 @@ The default value for the service status is [`PTServiceStatus.ready`](ptservices
 
 - `status`: The service status.
 - `channelUUID`: The channel identifier.
-- `completionHandler`: The completion handler.
+- `completionHandler`: The completion handler. - **`error`**: An error, if any, that indicates the reason why the system couldn’t set the status of the service.
 
 
 ---

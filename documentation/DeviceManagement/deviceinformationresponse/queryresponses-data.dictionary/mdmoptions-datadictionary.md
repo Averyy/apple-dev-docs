@@ -19,6 +19,12 @@ The response dictionary that contains MDM options.
 object DeviceInformationResponse.QueryResponses.MDMOptions
 ```
 
+## Properties
+
+- `ActivationLockAllowedWhileSupervised` (boolean): If `true`, a supervised device registers itself with Activation Lock when the user enables Find My. Unsupervised devices ignore this value. This value is available in iOS 7 and later, macOS 11 and later, and tvOS 9 and later.
+- `BootstrapTokenAllowed` (boolean): If `true`, the server supports Bootstrap Token commands. This value is available in macOS 11 and later.
+- `PromptUserToAllowBootstrapTokenForAuthentication` (boolean): If `true`, the device can accept a Bootstrap Token from the MDM server instead of prompting for user authentication prior to installation. This only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the [`SecurityInfoResponse.SecurityInfo`](securityinforesponse/securityinfo-data.dictionary.md) response. This value is available for a Mac with Apple silicon in macOS 11 and later.
+
 ## See Also
 
 - [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary.md)

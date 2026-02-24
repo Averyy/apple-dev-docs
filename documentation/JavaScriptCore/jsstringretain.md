@@ -25,7 +25,7 @@ A [`JSStringRef`](jsstringref.md) that is the same as `string`.
 
 ## Parameters
 
-- `string`: The   to retain.
+- `string`: The [`JSStringRef`](jsstringref.md) to retain.
 
 ## See Also
 

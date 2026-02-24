@@ -62,9 +62,9 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 
 ## Parameters
 
-- `item`: A binding to an optional source of truth for the popover.   When   is non- , the system passes the contents to   the modifier’s closure. You use this content to populate the fields   of a popover that you create that the system displays to the user.   If   changes, the system dismisses the currently presented   popover and replaces it with a new popover using the same process.
-- `attachmentAnchor`: The positioning anchor that defines the   attachment point of the popover. The default is   .
-- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow. The default is   , which results in the system allowing any arrow edge.
+- `item`: A binding to an optional source of truth for the popover. When `item` is non-`nil`, the system passes the contents to the modifier’s closure. You use this content to populate the fields of a popover that you create that the system displays to the user. If `item` changes, the system dismisses the currently presented popover and replaces it with a new popover using the same process.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is [`bounds`](anchor/source/bounds.md).
+- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow. The default is `nil`, which results in the system allowing any arrow edge.
 - `content`: A closure returning the content of the popover.
 
 ## See Also

@@ -38,7 +38,7 @@ When you receive this method, call [`selectionBoundaryAdjusted(to:touchPhase:fla
 
 - `point`: The new boundary point of the selection.
 - `touch`: The touch phase of the gesture.
-- `boundaryIsStart`:   if the   is at the new start of the selection;   if it’s at the end.
+- `boundaryIsStart`: `true` if the `point` is at the new start of the selection; `false` if it’s at the end.
 - `flags`: Extra information about the selection.
 
 ## See Also

@@ -20,9 +20,9 @@ var faceCulling: CustomMaterial.FaceCulling { get set }
 
 #### Discussion
 
-To improve performance, RealityKit culls polygons, or , that it determines won’t be visible. Discarding faces that aren’t part of the final render eliminates the need to do any calculations for those faces.
+To improve performance, RealityKit culls polygons, or *faces*, that it determines won’t be visible. Discarding faces that aren’t part of the final render eliminates the need to do any calculations for those faces.
 
-RealityKit recognizes when a face aims toward the camera (a ) or away from the camera (a ). This value controls the type of faces RealityKit culls.
+RealityKit recognizes when a face aims toward the camera (a *front face*) or away from the camera (a *back face*). This value controls the type of faces RealityKit culls.
 
 The default for this value is [`MaterialParameterTypes.FaceCulling.back`](materialparametertypes/faceculling/back.md), which means RealityKit removes faces that point away from the camera. Because back faces point away from the camera and are usually obscured by front-facing polygons, the user typically won’t see them. As a result, in most cases, the default setting is desirable because it culls polygons that don’t contribute to the rendered scene.
 

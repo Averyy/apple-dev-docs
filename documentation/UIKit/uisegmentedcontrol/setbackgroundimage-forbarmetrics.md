@@ -30,7 +30,7 @@ Similarly, when a property is dependent on the bar metrics, be sure to specify a
 
 ## Parameters
 
-- `backgroundImage`: The background image to use for   and  .
+- `backgroundImage`: The background image to use for `state` and `barMetrics`.
 - `state`: A control state.
 - `barMetrics`: Bar metrics.
 

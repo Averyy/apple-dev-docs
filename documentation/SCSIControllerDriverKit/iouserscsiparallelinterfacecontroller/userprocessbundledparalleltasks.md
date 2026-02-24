@@ -24,9 +24,9 @@ The framework only calls this method when the dext has successfully mapped comma
 
 ## Parameters
 
-- `parallelRequestSlotIndices`: Indices of shared command buffer slots for   the tasks to process. Entries from zero to    have valid indices.
+- `parallelRequestSlotIndices`: Indices of shared command buffer slots for the tasks to process. Entries from zero to `(parallelRequestSlotIndicesCount - 1)` have valid indices.
 - `parallelRequestSlotIndicesCount`: The number of tasks to process.
-- `completion`: An   object that the dext class uses to complete the request.
+- `completion`: An [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object that the dext class uses to complete the request.
 
 ## See Also
 

@@ -58,9 +58,9 @@ Most apps should, by default, trust the chain. If you ask the user what to do, i
 
 Your app should trust the chain.
 
-- [`SecTrustResultType.deny`](sectrustresulttype/deny.md)—The user explicitly chose to  trust a certificate in the chain (usually by clicking the appropriate button in a certificate trust panel).
+- [`SecTrustResultType.deny`](sectrustresulttype/deny.md)—The user explicitly chose to *not* trust a certificate in the chain (usually by clicking the appropriate button in a certificate trust panel).
 
-Your app should  trust the chain.
+Your app should *not* trust the chain.
 
 - [`SecTrustResultType.confirm`](sectrustresulttype/confirm.md)—The user previously chose to always ask for permission before accepting one of the certificates in the chain. This return value is no longer used, but may occur in older versions of macOS.
 
@@ -91,8 +91,8 @@ Because this function might look on the network for certificates in the certific
 
 ## Parameters
 
-- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.
-- `result`: On return, points to a result type reflecting the result of this evaluation. See   for descriptions of possible values. See the discussion below for an explanation of how to handle specific values.
+- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
+- `result`: On return, points to a result type reflecting the result of this evaluation. See [`SecTrustResultType`](sectrustresulttype.md) for descriptions of possible values. See the discussion below for an explanation of how to handle specific values.
 
 
 ---

@@ -59,6 +59,23 @@ After your app retrieves the attribution dictionary, upload the attribution data
 
 The following list contains the data dictionary keys and data types the iAd framework returns:
 
+- **`iad-attribution`**: Boolean. `True` if the user clicks an Apple Search Ads impression up to 30 days before app download or redownload.
+- **`iad-org-name`**: String. The organization that owns the campaign that the corresponding ad belongs to.
+- **`iad-org-id`**: Integer. The `Id` of the organization that owns the campaign that the corresponding ad belongs to.
+- **`iad-campaign-id`**: Integer. The `Id` of the campaign that the corresponding ad belongs to.
+- **`iad-campaign-name`**: String. The name of the campaign that the corresponding ad belongs to.
+- **`iad-click-date`**: Date/Time string. The date and time when the user clicks a corresponding ad.
+- **`iad-purchase-date`**: Date/Time string. The date and time when the user first downloads your app. When the value of `iad-conversion-type` is `redownload`, this string represents the original purchase date. The purchase may or may not be associated with an Apple Search Ad.
+- **`iad-conversion-date`**: Date/Time string. The date and time when the user downloads or redownloads your app by clicking an Apple Search Ad.
+- **`iad-conversion-type`**: String. The type of conversion is either a `newdownload` or a `redownload`. A `redownload` is a download of an app by users who have previously installed your app.
+- **`iad-adgroup-id`**: Integer. The `Id` of the ad group that the corresponding ad belongs to.
+- **`iad-adgroup-name`**: String. The name of the ad group that the corresponding ad belongs to. See [`Ad Groups`](https://developer.apple.com/documentation/Apple_Ads/ad-groups) for more information.
+- **`iad-country-or-region`**: String. The country or region associated with the campaign that results in an installation.
+- **`iad-keyword`**: String. The keyword for the ad impression that led to the corresponding ad click.
+- **`iad-keyword-id`**: String. The `Id` of the keyword for the ad impression.
+- **`iad-keyword-matchtype`**: String. The match type of the keyword for the ad impression. Values are `Broad`, `Exact`, or search match. See [`Ad Groups`](https://developer.apple.com/documentation/Apple_Ads/ad-groups) for more information.
+- **`iad-ad-id`**: Integer. The `Id` of the ad that the corresponding ad belongs to.
+
 ###### Report Attribution Data
 
 Attribution data reporting helps you track performance of your campaigns. The following conditions apply to attribution data:
@@ -71,7 +88,7 @@ Attribution data reporting helps you track performance of your campaigns. The fo
 If you integrate your data-reporting strategy with a Mobile Measurement Provider (MMP), note the differences with MMP methodology when compared to Apple Search Ads:
 
 - Apple Search Ads uses a 30-day attribution window. Third-party attribution may only allow an attribution window of 7 to 28 days.
--  may be one of the reasons for a difference in the total installation count. App open latency is the delay between an installation and first launch. MMPs typically report an installation when the app opens for the first time. Apple Search Ads reports an installation when a download or redownload is complete.
+- *App open latency* may be one of the reasons for a difference in the total installation count. App open latency is the delay between an installation and first launch. MMPs typically report an installation when the app opens for the first time. Apple Search Ads reports an installation when a download or redownload is complete.
 - Third parties may not count redownloads as installations. Third parties don’t have visibility to know whether an app has been previously removed from a device. They may attribute a redownload as another app open latency or user engagement.
 
 ## See Also

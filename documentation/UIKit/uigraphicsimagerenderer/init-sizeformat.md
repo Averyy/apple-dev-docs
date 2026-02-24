@@ -29,7 +29,7 @@ Use this initializer to create an image renderer when you want to override the d
 ## Parameters
 
 - `size`: The size of images output from the renderer, specified in points.
-- `format`: A   object that encapsulates the format used to create the renderer context.
+- `format`: A [`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md) object that encapsulates the format used to create the renderer context.
 
 ## See Also
 

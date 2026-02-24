@@ -129,7 +129,7 @@ The header row becomes the column names in the data table. If the CSV file doesn
 ## Parameters
 
 - `url`: The URL of the JSON or CSV file to import.
-- `options`: The parsing options to use when importing a CSV file; ignored   when importing JSON files.
+- `options`: The parsing options to use when importing a CSV file; ignored when importing JSON files.
 
 ## Topics
 

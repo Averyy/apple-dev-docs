@@ -10,6 +10,10 @@ The name of the scene class you want UIKit to instantiate.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Specify [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) for scenes meant for your app or an external display. Don’t specify [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene).

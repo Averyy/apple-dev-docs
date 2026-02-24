@@ -26,7 +26,7 @@ The current context state defines the full drawing operation. For example, the c
 
 ## Parameters
 
-- `symbol`: The   to draw. Get a resolved symbol   by calling   with the identifier that you   use to tag the corresponding child view during    initialization.
+- `symbol`: The [`GraphicsContext.ResolvedSymbol`](graphicscontext/resolvedsymbol.md) to draw. Get a resolved symbol by calling [`resolveSymbol(id:)`](graphicscontext/resolvesymbol(id:).md) with the identifier that you use to tag the corresponding child view during [`Canvas`](canvas.md) initialization.
 - `rect`: The rectangle in the current user space to draw the symbol in.
 
 ## See Also

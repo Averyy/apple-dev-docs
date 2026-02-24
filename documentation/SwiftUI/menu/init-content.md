@@ -22,7 +22,7 @@ init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content) where 
 
 ## Parameters
 
-- `titleKey`: The key for the link’s localized title, which describes   the contents of the menu.
+- `titleKey`: The key for the link’s localized title, which describes the contents of the menu.
 - `content`: A group of menu items.
 
 ## See Also

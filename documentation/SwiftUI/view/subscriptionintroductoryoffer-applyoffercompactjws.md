@@ -28,8 +28,8 @@ Determine if the introductory offer should be displayed in the view and applied 
 
 ## Parameters
 
-- `applyOffer`: The system calls this function before drawing the given subscription product on   the subscription store view. Return if the introductory offer should be applied   to a given product, if any, to have system-provided UI reflect the discounted terms under   the selected offer.
-- `compactJWS`: The system calls this function before processing a purchase, with the   product to be purchased provided as a parameter. Return a compact JWS   signature you generate on your server that validates the selected offer eligibility preference.   Errors thrown from this closure will be surfaced via the    modifier.   For information about generating the JWS signature, see   .
+- `applyOffer`: The system calls this function before drawing the given subscription product on the subscription store view. Return if the introductory offer should be applied to a given product, if any, to have system-provided UI reflect the discounted terms under the selected offer.
+- `compactJWS`: The system calls this function before processing a purchase, with the product to be purchased provided as a parameter. Return a compact JWS signature you generate on your server that validates the selected offer eligibility preference. Errors thrown from this closure will be surfaced via the [`onInAppPurchaseCompletion(perform:)`](view/oninapppurchasecompletion(perform:).md) modifier. For information about generating the JWS signature, see [`Generating JWS to sign App Store requests`](https://developer.apple.com/documentation/StoreKit/generating-jws-to-sign-app-store-requests).
 
 
 ---

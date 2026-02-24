@@ -24,7 +24,7 @@ The safety offset indicates the number for frames behind the current hardware po
 
 ## Parameters
 
-- `in_safety_offset`: The input safety offset value, as a  .
+- `in_safety_offset`: The input safety offset value, as a [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t).
 
 ## See Also
 

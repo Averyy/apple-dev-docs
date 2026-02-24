@@ -26,8 +26,8 @@ func CMPropagateAttachments(_ source: CMAttachmentBearer, destination: CMAttachm
 
 ## Parameters
 
-- `source`:   to copy attachments from.
-- `destination`:   to copy attachments to.
+- `source`: `CMAttachmentBearer` to copy attachments from.
+- `destination`: `CMAttachmentBearer` to copy attachments to.
 
 ## See Also
 

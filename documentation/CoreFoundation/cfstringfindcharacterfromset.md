@@ -28,9 +28,9 @@ func CFStringFindCharacterFromSet(_ theString: CFString!, _ theSet: CFCharacterS
 
 - `theString`: The string to search.
 - `theSet`: The character set against which the membership of characters is checked.
-- `rangeToSearch`: The range of characters within   to search. If the range location or end point (defined by the location plus length minus  ) are outside the index space of the string (  to   inclusive, where   is the length of the string), the behavior is undefined. The specified range must not exceed the length of the string. If the range length is negative, the behavior is undefined. The range may be empty (length  ), in which case no search is performed.
-- `searchOptions`: The option flags to control the search behavior. The supported options are   and  . If other option flags are specified, the behavior is undefined.
-- `result`: You may pass   if you don’t need this result.
+- `rangeToSearch`: The range of characters within `theString` to search. If the range location or end point (defined by the location plus length minus `1`) are outside the index space of the string (`0` to `N-1` inclusive, where `N` is the length of the string), the behavior is undefined. The specified range must not exceed the length of the string. If the range length is negative, the behavior is undefined. The range may be empty (length `0`), in which case no search is performed.
+- `searchOptions`: The option flags to control the search behavior. The supported options are [`compareBackwards`](cfstringcompareflags/comparebackwards.md) and [`compareAnchored`](cfstringcompareflags/compareanchored.md). If other option flags are specified, the behavior is undefined.
+- `result`: On return, a pointer to a CFRange structure (supplied by the caller) in which the search result is stored. Note that the length of this range could be more than `1` (if the character in question is a multi-byte character). You may pass `NULL` if you don’t need this result.
 
 ## See Also
 

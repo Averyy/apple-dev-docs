@@ -23,7 +23,7 @@ func shadow(color: Color = Color(.sRGBLinear, white: 0, opacity: 0.33), radius: 
 ## Parameters
 
 - `color`: The shadow’s color.
-- `radius`: A measure of how much to blur the shadow. Larger values   result in more blur.
+- `radius`: A measure of how much to blur the shadow. Larger values result in more blur.
 - `x`: An amount to offset the shadow horizontally from the view.
 - `y`: An amount to offset the shadow vertically from the view.
 

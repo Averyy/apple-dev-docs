@@ -29,7 +29,7 @@ This method searches the asset’s entire child object hierarchy to find all obj
 
 ## Parameters
 
-- `objectClass`: A Model I/O class (that is, a subclass of  ) representing a type of object stored in the asset. For example, pass the   class to find all 3D objects stored in the asset, or the   class to find all light sources.
+- `objectClass`: A Model I/O class (that is, a subclass of [`MDLObject`](mdlobject.md)) representing a type of object stored in the asset. For example, pass the [`MDLMesh`](mdlmesh.md) class to find all 3D objects stored in the asset, or the [`MDLLight`](mdllight.md) class to find all light sources.
 
 ## See Also
 

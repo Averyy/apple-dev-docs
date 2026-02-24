@@ -12,7 +12,7 @@ Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your a
 
 #### Overview
 
-This sample code project demonstrates how to use ARKit to find devices equipped with Apple Ultra Wideband (UWB) chips using a technique known as . Ranging estimates the distance between devices using parameters such as signal strength and packet timing.
+This sample code project demonstrates how to use ARKit to find devices equipped with Apple Ultra Wideband (UWB) chips using a technique known as *ranging*. Ranging estimates the distance between devices using parameters such as signal strength and packet timing.
 
 > **Note**: To use Extended Distance Measurement (EDM) capabilities, you’ll need two iPhone 15 devices or later. In Xcode, set the deployment target for this sample to iOS 17.
 

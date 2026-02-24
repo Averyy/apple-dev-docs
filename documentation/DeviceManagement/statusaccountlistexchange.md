@@ -36,6 +36,10 @@ object StatusAccountListExchange
 - [object StatusAccountListExchangeAccountObject](statusaccountlistexchangeaccountobject.md)
   A status report of the client’s Exchange account details.
 
+## Properties
+
+- `account.list.exchange` ([StatusAccountListExchangeAccountObject]) *(required)*: A list of status values for the Exchange accounts.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

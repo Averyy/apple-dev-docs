@@ -26,7 +26,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_has_midi`:   if the box supports MIDI; otherwise,  .
+- `in_has_midi`: `true` if the box supports MIDI; otherwise, `false`.
 
 ## See Also
 

@@ -73,16 +73,16 @@ The input tensor `x` is of shape `(L, N, Hin)`
 
 ## Parameters
 
-- `initialHiddenStates`: The initial hidden states with the shape  .
-- `inputHiddenWeight`: The input-hidden weight with the shape  .
-- `hiddenHiddenWeight`: The hidden-hidden weight with the shape  .
-- `bias`: The bias (the sum of input-hidden and hidden-hidden biases) with the shape   .
-- `inputBias`: Used when   is  , and is the same shape as  .
+- `initialHiddenStates`: The initial hidden states with the shape `(N, Hout)`.
+- `inputHiddenWeight`: The input-hidden weight with the shape `(3*Hout, Hin)`.
+- `hiddenHiddenWeight`: The hidden-hidden weight with the shape `(3*Hout, Hout)`.
+- `bias`: The bias (the sum of input-hidden and hidden-hidden biases) with the shape  `(3*Hout,)`.
+- `inputBias`: Used when `applyResetGateAfterMatMul` is `true`, and is the same shape as `bias`.
 - `direction`: An enumeration that specifies a forward or reverse GRU op. Reverse GRU computes time steps in the reverse direction.
 - `activation`: An enumeration that controls the output activation function.
 - `recurrentActivation`: An enumeration that controls the recurrent activation function.
 - `applyResetGateAfterMatMul`: An enumeration that specifies that the reset gate is applied after the matrix multiply.
-- `outputSequence`: When   ,   is of shape   and contains hidden states from every step,  . When     is of shape   and contains hidden states from the last step,  .
+- `outputSequence`: When  `true`, `output` is of shape `(L, N, Hout)` and contains hidden states from every step, `h[:, ...]`. When `false` `output` is of shape `(1, N, Hout)` and contains hidden states from the last step, `h[-1, ...]`.
 
 
 ---

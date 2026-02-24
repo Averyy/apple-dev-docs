@@ -10,6 +10,10 @@ A dictionary that contains details about actions available to users for Spotligh
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Action Properties

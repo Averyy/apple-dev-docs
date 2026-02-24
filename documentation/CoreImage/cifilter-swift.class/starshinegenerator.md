@@ -29,6 +29,15 @@ This method generates a star-shine image. The effect is similar to a supernova e
 
 The star-shine generator filter uses the following properties:
 
+- **`center`**: A `vector` representing the center of the flare as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`color`**: A color representing the color of the flare as a [`cgColor`](https://developer.apple.com/documentation/UIKit/UIColor/cgColor).
+- **`radius`**: A `float` representing the radius of the flare as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`crossScale`**: A `float` representing the cross flare size relative to the round central flare as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`crossAngle`**: A `float` representing the angle of the flare as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`crossOpacity`**: A `float` representing the thickness of the cross opacity as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`crossWidth`**: A `float` representing the cross width as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`epsilon`**: A `float` representing the epsilon as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code generates a star-shaped silhouette with a black background.
 
 ```swift

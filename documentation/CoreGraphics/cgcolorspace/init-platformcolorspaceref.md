@@ -30,7 +30,7 @@ Colors in a device-dependent color space are not transformed or otherwise modifi
 
 ## Parameters
 
-- `ref`: A generic pointer to a platform-specific color space. In macOS, pass a  , which is a ColorSync profile. Quartz uses this pointer (and the underlying information) only during the function call.
+- `ref`: A generic pointer to a platform-specific color space. In macOS, pass a `ColorSyncProfileRef`, which is a ColorSync profile. Quartz uses this pointer (and the underlying information) only during the function call.
 
 ## See Also
 

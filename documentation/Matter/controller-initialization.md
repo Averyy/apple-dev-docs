@@ -6,7 +6,7 @@ Initialize the object that controls Matter accessories.
 
 #### Overview
 
-These methods enable the creation and initialization of a device controller ([`MTRDeviceController`](mtrdevicecontroller.md)) on a specific Matter . A fabric is a set of accessories and device controllers that can communicate with each other. You use the device controller to commission and control accessories.
+These methods enable the creation and initialization of a device controller ([`MTRDeviceController`](mtrdevicecontroller.md)) on a specific Matter *fabric*. A fabric is a set of accessories and device controllers that can communicate with each other. You use the device controller to commission and control accessories.
 
 ## Topics
 

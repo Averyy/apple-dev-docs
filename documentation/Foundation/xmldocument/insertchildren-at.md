@@ -17,8 +17,8 @@ func insertChildren(_ children: [XMLNode], at index: Int)
 
 ## Parameters
 
-- `children`: An array of   objects representing comments, processing instructions, or the root element.
-- `index`: An integer identifying the location in the receiver’s children array for insertion. The indexes of children after the new child are increased by  ]. If   is less than zero or greater than the number of children, an out-of-bounds exception is raised.
+- `children`: An array of [`XMLNode`](xmlnode.md) objects representing comments, processing instructions, or the root element.
+- `index`: An integer identifying the location in the receiver’s children array for insertion. The indexes of children after the new child are increased by `[children count`]. If `index` is less than zero or greater than the number of children, an out-of-bounds exception is raised.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Call this method if the user cancels the action or if a failure occurs. The syst
 
 ## Parameters
 
-- `error`: Use an error domain of   and a code of type  .
+- `error`: Use an error domain of [`ASExtensionErrorDomain`](asextensionerrordomain.md) and a code of type [`ASExtensionError.Code`](asextensionerror/code.md).
 
 
 ---

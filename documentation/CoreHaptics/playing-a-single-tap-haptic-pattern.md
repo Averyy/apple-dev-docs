@@ -16,15 +16,69 @@ The [`CHHapticEngine`](chhapticengine.md) is your app’s interface to the hapti
 
 The next step is to create a dictionary literal representing the haptic. The following represents a single haptic tap:
 
+**Swift**:
+
+```swift
+let hapticDict = [
+    CHHapticPattern.Key.pattern: [
+        [CHHapticPattern.Key.event: [
+            CHHapticPattern.Key.eventType: CHHapticEvent.EventType.hapticTransient,
+            CHHapticPattern.Key.time: CHHapticTimeImmediate,
+            CHHapticPattern.Key.eventDuration: 1.0]
+        ]
+    ]
+]
+```
+
+**Objective-C**:
+
+```objc
+NSDictionary* hapticDict = @{
+    CHHapticPatternKeyPattern: @[ 
+        @{ CHHapticPatternKeyEvent: @{
+            CHHapticPatternKeyEventType: CHHapticEventTypeHapticTransient,
+            CHHapticPatternKeyTime: @(CHHapticTimeImmediate),
+            CHHapticPatternKeyEventDuration: @1.0 },
+        },
+    ],
+};
+```
+
 Each entry in the dictionary shown above is a haptic event, with an event type, a start time, and a duration. In this case, the event type is [`hapticTransient`](chhapticevent/eventtype/haptictransient.md) because a single tap is a transient pattern — a quick impulse. The time is `CHHapticTimeImmediate` to indicate that the event begins immediately, right after time `0`. The duration of `1.0` indicates that the event lasts one second.
 
 ##### Create a Haptic Pattern Player From the Dictionary
 
 Initialize a [`CHHapticPattern`](chhapticpattern.md) from the dictionary you just created.
 
+**Swift**:
+
+```swift
+let pattern = try CHHapticPattern(dictionary: hapticDict)
+```
+
+**Objective-C**:
+
+```objc
+NSError* error;
+CHHapticPattern* pattern = [[CHHapticPattern alloc] initWithDictionary:hapticDict error:&error];
+```
+
 When you’re ready to play your haptic, create a player for that pattern. Each player is responsible for playing one pattern. You can reuse a player to play its pattern as many times as you like.
 
 Use one of the haptic engine’s factory methods, like [`makePlayer(with:)`](chhapticengine/makeplayer(with:).md), to create the haptic pattern player.
+
+**Swift**:
+
+```swift
+let player = try engine.makePlayer(with: pattern)
+```
+
+**Objective-C**:
+
+```objc
+NSError* error = nil;
+id<CHHapticPatternPlayer> player = [_engine createPlayerWithPattern:pattern error:&error];
+```
 
 If you call [`start(atTime:)`](chhapticpatternplayer/start(attime:).md) on a player that’s already playing, it restarts itself at the beginning of the pattern.
 
@@ -33,6 +87,32 @@ Haptic players are inexpensive, lightweight objects, so create and discard them 
 ##### Start the Engine and Play the Haptic Pattern
 
 Start the haptic engine before you play a haptic player, and stop the engine once you’ve finished playing all haptic patterns. Play the haptic by calling the player’s [`start(atTime:)`](chhapticpatternplayer/start(attime:).md) method.
+
+**Swift**:
+
+```swift
+// Stop the engine after it completes the playback.
+engine.notifyWhenPlayersFinished { error in
+    return .stopEngine
+}
+
+try engine.start()
+try player.start(atTime: 0)
+```
+
+**Objective-C**:
+
+```objc
+// Stop the engine after it completes the playback.
+[_engine notifyWhenPlayersFinished:^CHHapticEngineFinishedAction(NSError * _Nullable error) {
+    return CHHapticEngineFinishedActionStopEngine;
+}];
+    
+[_engine startWithCompletionHandler:^(NSError* returnedError) {
+    NSError* error;
+    [self.player startAtTime:0 error:&error];
+}];
+```
 
 If the engine is in a running state when you call [`start()`](chhapticengine/start().md), the system plays the haptic at the scheduled time. Playback follows a “fire and forget” model, so your app doesn’t need to keep the player and pattern in memory once you’ve called [`start()`](chhapticengine/start().md). You need to retain your engine so it doesn’t exit scope during your program.
 

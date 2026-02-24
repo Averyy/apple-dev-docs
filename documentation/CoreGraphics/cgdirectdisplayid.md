@@ -17,7 +17,7 @@ typealias CGDirectDisplayID = UInt32
 
 #### Discussion
 
-In Quartz, the term  refers to a graphics hardware system consisting of a framebuffer, a color correction (gamma) table, and possibly an attached monitor. If no monitor is attached, a display is characterized as offline.
+In Quartz, the term *display* refers to a graphics hardware system consisting of a framebuffer, a color correction (gamma) table, and possibly an attached monitor. If no monitor is attached, a display is characterized as offline.
 
 When a monitor is attached, Quartz assigns a unique display identifier (ID). A display ID can persist across processes and typically remains constant until the machine is restarted.
 

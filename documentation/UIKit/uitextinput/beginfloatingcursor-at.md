@@ -26,7 +26,7 @@ If you do not implement this method, UIKit provides visual feedback only when th
 
 ## Parameters
 
-- `point`: The point at which the gesture occurred in your view. This point is in the coordinate space of the view in the   property.
+- `point`: The point at which the gesture occurred in your view. This point is in the coordinate space of the view in the [`textInputView`](uitextinput/textinputview.md) property.
 
 ## See Also
 

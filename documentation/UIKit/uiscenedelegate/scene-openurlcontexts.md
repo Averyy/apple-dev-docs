@@ -25,7 +25,7 @@ optional func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURL
 ## Parameters
 
 - `scene`: The scene that UIKit asks to open the URL.
-- `URLContexts`: One or more   objects. Each object contains one URL to open and any additional information needed to open that URL.
+- `URLContexts`: One or more [`UIOpenURLContext`](uiopenurlcontext.md) objects. Each object contains one URL to open and any additional information needed to open that URL.
 
 
 ---

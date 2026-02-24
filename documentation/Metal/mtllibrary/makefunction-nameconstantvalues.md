@@ -31,7 +31,7 @@ Function constant values are first looked up by their index, then by their name.
 ## Parameters
 
 - `name`: The name of the specialized function.
-- `constantValues`: The set of constant values for the function constants.   The compiler can’t compile the function if any value is invalid for the function constants it requires.
+- `constantValues`: The set of constant values for the function constants. The compiler can’t compile the function if any value is invalid for the function constants it requires.
 
 ## See Also
 

@@ -27,7 +27,7 @@ When initializing a popover controller, you must specify the view controller obj
 
 ## Parameters
 
-- `viewController`: The view controller for managing the popover’s content. This parameter must not be  .
+- `viewController`: The view controller for managing the popover’s content. This parameter must not be `nil`.
 
 
 ---

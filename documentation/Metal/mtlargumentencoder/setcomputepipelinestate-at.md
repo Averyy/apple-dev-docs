@@ -21,7 +21,7 @@ func setComputePipelineState(_ pipeline: (any MTLComputePipelineState)?, at inde
 ## Parameters
 
 - `pipeline`: A pipeline state the method encodes.
-- `index`: The index of a pipeline state within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of a pipeline state within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 ## See Also
 

@@ -26,7 +26,7 @@ For example, in the attribute “bst:id=`12345’”, “bst” is the name qual
 ## Parameters
 
 - `name`: A string that is the name of an attribute.
-- `URI`: A URI (Universal Resource Identifier) that qualifies  .
+- `URI`: A URI (Universal Resource Identifier) that qualifies `name`.
 - `stringValue`: A string that is the value of the attribute.
 
 ## See Also

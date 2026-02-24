@@ -24,7 +24,7 @@ class var weights: MLParameterKey { get }
 
 The value type for the [`weights`](mlparameterkey/weights.md) key is an [`MLMultiArray`](mlmultiarray.md). You must scope this key with the name of the specific neural network layer whose weights you’d like to access. See [`scoped(to:)`](mlparameterkey/scoped(to:).md).
 
-> **Note**:  You can only override the weights of a model’s  layers. Model developers mark these layers as updatable with the [`Core ML Tools`](https://developer.apple.comhttps://coremltools.readme.io/).
+> **Note**:  You can only override the weights of a model’s *updatable* layers. Model developers mark these layers as updatable with the [`Core ML Tools`](https://developer.apple.comhttps://coremltools.readme.io/).
 
 ## See Also
 

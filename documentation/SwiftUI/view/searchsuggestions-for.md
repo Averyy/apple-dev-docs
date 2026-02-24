@@ -48,8 +48,8 @@ var body: some View {
 
 ## Parameters
 
-- `visibility`: The visibility of the search suggestions   for the specified locations.
-- `placements`: The set of locations in which to set the visibility of   search suggestions.
+- `visibility`: The visibility of the search suggestions for the specified locations.
+- `placements`: The set of locations in which to set the visibility of search suggestions.
 
 ## See Also
 

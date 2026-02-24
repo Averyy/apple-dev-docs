@@ -38,10 +38,10 @@ If this callback is `NULL`, using your object as a constructor in a `new` expres
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `constructor`: A   that is the constructor to call.
-- `argumentCount`: An integer count of the number of arguments in  .
-- `arguments`: A   array of the arguments to pass to the function.
-- `exception`: A pointer to a   to return an exception in, if any.
+- `constructor`: A [`JSObjectRef`](jsobjectref.md) that is the constructor to call.
+- `argumentCount`: An integer count of the number of arguments in `arguments`.
+- `arguments`: A [`JSValueRef`](jsvalueref.md) array of the arguments to pass to the function.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

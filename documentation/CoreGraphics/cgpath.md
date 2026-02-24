@@ -24,7 +24,7 @@ class CGPath
 
 Neither `CGPath` nor [`CGMutablePath`](cgmutablepath.md) define functions to draw a path. To draw a Core Graphics path to a graphics context, you add the path to the graphics context by calling [`addPath(_:)`](cgcontext/addpath(_:).md) and then call one of the context’s drawing functions—see [`CGContext`](cgcontext.md).
 
-Each figure in the graphics path is constructed with a connected set of lines and Bézier curves, called a . A subpath has an ordered set of  that represent single steps in the construction of the subpath. (For example, a line segment from one corner of a rectangle to another corner is a path element. Every subpath includes a , which is the first point in the subpath. The path also maintains a , which is the last point in the last subpath.
+Each figure in the graphics path is constructed with a connected set of lines and Bézier curves, called a *subpath*. A subpath has an ordered set of *path elements* that represent single steps in the construction of the subpath. (For example, a line segment from one corner of a rectangle to another corner is a path element. Every subpath includes a *starting point*, which is the first point in the subpath. The path also maintains a *current point*, which is the last point in the last subpath.
 
 ## Topics
 

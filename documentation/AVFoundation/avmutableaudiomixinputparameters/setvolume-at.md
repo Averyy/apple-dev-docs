@@ -26,7 +26,7 @@ This method adds a volume ramp starting at `time`. This volume setting remains i
 
 ## Parameters
 
-- `volume`: The volume. The value must be between   and  .
+- `volume`: The volume. The value must be between `0.0` and `1.0`.
 - `time`: The start time at which to set the volume.
 
 ## See Also

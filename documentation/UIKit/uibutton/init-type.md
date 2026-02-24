@@ -30,7 +30,7 @@ When creating a custom button — a button with the type [`UIButton.ButtonType.c
 
 ## Parameters
 
-- `buttonType`: The button type. See   for the possible values.
+- `buttonType`: The button type. See [`UIButton.ButtonType`](uibutton/buttontype-swift.enum.md) for the possible values.
 
 ## See Also
 

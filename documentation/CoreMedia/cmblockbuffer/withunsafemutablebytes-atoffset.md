@@ -27,7 +27,7 @@ The value, if any, that the body parameter returns
 ## Parameters
 
 - `offset`: An offset within the buffer’s offset range.
-- `body`: A closure the system calls with an   parameter that points to contiguous storage in the block buffer.
+- `body`: A closure the system calls with an [`UnsafeMutableRawBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableRawBufferPointer) parameter that points to contiguous storage in the block buffer.
 
 ## See Also
 

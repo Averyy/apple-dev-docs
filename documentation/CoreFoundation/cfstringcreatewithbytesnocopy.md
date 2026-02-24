@@ -34,12 +34,12 @@ If an error occurs during the creation of the string, then `bytes` is not deallo
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new CFString object. Pass   or   to use the current default allocator.
-- `bytes`: A buffer containing characters in the encoding specified by  . The buffer must   contain a length byte (as in Pascal buffers) or any terminating   character (as in C buffers).
-- `numBytes`: The number of bytes in  .
-- `encoding`: The character encoding of  .
-- `isExternalRepresentation`:   if the characters in the byte buffer are in an “external representation” format—that is, whether the buffer contains a BOM (byte order marker). This is usually the case for bytes that are read in from a text file or received over the network. Otherwise, pass  .
-- `contentsDeallocator`: The allocator to use to deallocate   when it is no longer needed. You can pass   or   to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the string deallocate it), pass  .
+- `alloc`: The allocator to use to allocate memory for the new CFString object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `bytes`: A buffer containing characters in the encoding specified by `encoding`. The buffer must *not* contain a length byte (as in Pascal buffers) or any terminating `NULL` character (as in C buffers).
+- `numBytes`: The number of bytes in `bytes`.
+- `encoding`: The character encoding of `bytes`.
+- `isExternalRepresentation`: `true` if the characters in the byte buffer are in an “external representation” format—that is, whether the buffer contains a BOM (byte order marker). This is usually the case for bytes that are read in from a text file or received over the network. Otherwise, pass `false`.
+- `contentsDeallocator`: The allocator to use to deallocate `bytes` when it is no longer needed. You can pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the string deallocate it), pass [`kCFAllocatorNull`](kcfallocatornull.md).
 
 ## See Also
 

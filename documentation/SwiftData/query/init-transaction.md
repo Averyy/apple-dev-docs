@@ -23,8 +23,8 @@ Create a query with a SwiftData fetch descriptor.
 
 ## Parameters
 
-- `descriptor`: A  .
-- `transaction`: A transaction to use for user interface changes that   result from changes to the fetched results.
+- `descriptor`: A `SwiftData.FetchDescriptor`.
+- `transaction`: A transaction to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

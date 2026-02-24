@@ -28,8 +28,8 @@ Use this method to initialize the timing curve with a custom cubic Bézier curve
 
 ## Parameters
 
-- `point1`: The first control point for the cubic Bézier timing curve. The x and y values of this point must be in the range   to  .
-- `point2`: The second control point for the cubic Bézier timing curve. The x and y values of this point must be in the range   to  .
+- `point1`: The first control point for the cubic Bézier timing curve. The x and y values of this point must be in the range `0.0` to `1.0`.
+- `point2`: The second control point for the cubic Bézier timing curve. The x and y values of this point must be in the range `0.0` to `1.0`.
 
 ## See Also
 

@@ -20,7 +20,7 @@ You can use this method to cause a popup menu to appear under a custom status ba
 
 ## Parameters
 
-- `menu`: The   object to display.
+- `menu`: The `NSMenu` object to display.
 
 ## See Also
 

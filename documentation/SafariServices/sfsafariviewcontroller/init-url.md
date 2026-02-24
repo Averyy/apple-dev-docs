@@ -23,7 +23,7 @@ A newly created Safari view controller.
 
 ## Parameters
 
-- `URL`: The URL to navigate to. The URL must use the   or   scheme.
+- `URL`: The URL to navigate to. The URL must use the `http` or `https` scheme.
 
 ## See Also
 

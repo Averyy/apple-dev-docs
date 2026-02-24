@@ -23,8 +23,8 @@ A spring-loaded interaction that has a specific behavior, visual effect, and act
 
 ## Parameters
 
-- `interactionBehavior`: The interaction behavior object controlling the spring-loaded interaction activation. If the value is  , the default behavior is used.
-- `interactionEffect`: The interaction effect object styling the interaction’s view. If the value is  , the default effect is used.
+- `interactionBehavior`: The interaction behavior object controlling the spring-loaded interaction activation. If the value is `nil`, the default behavior is used.
+- `interactionEffect`: The interaction effect object styling the interaction’s view. If the value is `nil`, the default effect is used.
 - `handler`: The handler that is invoked when the spring-loaded interaction is activated.
 
 ## See Also

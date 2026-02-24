@@ -22,6 +22,11 @@ object StopMirroringCommand
 - [object StopMirroringCommand.Command](stopmirroringcommand/command-data.dictionary.md)
   The command to stop mirroring the display to another device.
 
+## Properties
+
+- `Command` (StopMirroringCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object StopMirroringResponse](stopmirroringresponse.md)

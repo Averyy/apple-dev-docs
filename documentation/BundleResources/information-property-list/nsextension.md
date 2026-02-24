@@ -11,6 +11,10 @@ The properties of an app extension.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Appearance and Presentation

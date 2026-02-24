@@ -45,10 +45,10 @@ To overcome this limitation, use the high-level rotation functions — for examp
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains the source image.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `rotationConstant`: A constant that specifies the rotation angle as a multiple of 90°. See   for the full list of supported rotation constants.
-- `backColor`: A background color. If you set the   flag, pass a pixel value.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `rotationConstant`: A constant that specifies the rotation angle as a multiple of 90°. See [`Rotation constants`](1509228-rotation-constants.md) for the full list of supported rotation constants.
+- `backColor`: A background color. If you set the `kvImageBackgroundColorFill` flag, pass a pixel value.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

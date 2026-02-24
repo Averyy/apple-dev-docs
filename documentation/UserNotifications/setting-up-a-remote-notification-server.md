@@ -6,11 +6,11 @@ Generate notifications and push them to user devices.
 
 #### Overview
 
-Use remote notifications (also known as ) to push small amounts of data to devices that use your app, even when your app isn’t running. Apps use notifications to provide important information to users. For example, a messaging service sends remote notifications when new messages arrive.
+Use remote notifications (also known as *push notifications*) to push small amounts of data to devices that use your app, even when your app isn’t running. Apps use notifications to provide important information to users. For example, a messaging service sends remote notifications when new messages arrive.
 
 The delivery of remote notifications involves several key components:
 
-- Your company’s server, known as the 
+- Your company’s server, known as the *provider server*
 - Apple Push Notification service (APNs)
 - The user’s device
 - Your app running on the user’s device

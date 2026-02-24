@@ -24,7 +24,7 @@ For example, suppose there are two versions of a given font installed that diffe
 
 ## Parameters
 
-- `mandatoryKeys`: Keys that must be identical to be matched. Can be  .
+- `mandatoryKeys`: Keys that must be identical to be matched. Can be `nil`.
 
 ## See Also
 

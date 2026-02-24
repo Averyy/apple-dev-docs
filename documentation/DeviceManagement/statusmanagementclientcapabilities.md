@@ -42,6 +42,10 @@ object StatusManagementClientCapabilities
 - [object StatusManagementClientCapabilitiesCapabilitiesObject](statusmanagementclientcapabilitiescapabilitiesobject.md)
   A collection of the device’s supported features, payloads, and versions.
 
+## Properties
+
+- `management.client-capabilities` (StatusManagementClientCapabilitiesCapabilitiesObject) *(required)*: An object that contains the client’s protocol capabilities. These typically only change when the device upgrades its software. An implicit status subscription for this status item is always present, so the client always reports changes to the server.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

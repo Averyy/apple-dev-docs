@@ -35,9 +35,9 @@ In versions of macOS prior to 10.7 and versions of iOS prior to 4.2, this functi
 ## Parameters
 
 - `framesetter`: The framesetter used to create the frame.
-- `stringRange`: The range, of the attributed string that was used to create the framesetter, that is to be typeset in lines fitted into the frame. If the length portion of the range is set to  , then the framesetter continues to add lines until it runs out of text or space.
+- `stringRange`: The range, of the attributed string that was used to create the framesetter, that is to be typeset in lines fitted into the frame. If the length portion of the range is set to `0`, then the framesetter continues to add lines until it runs out of text or space.
 - `path`: A CGPath object that specifies the shape of the frame. The path may be non-rectangular in versions of macOS 10.7 or later and versions of iOS 4.2 or later.
-- `frameAttributes`: Additional attributes that control the frame filling process can be specified here, or   if there are no such attributes.
+- `frameAttributes`: Additional attributes that control the frame filling process can be specified here, or `NULL` if there are no such attributes.
 
 ## See Also
 

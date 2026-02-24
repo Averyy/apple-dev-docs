@@ -31,7 +31,7 @@ The returned `CGGlyph` object can be used with any of the subsequent glyph data 
 ## Parameters
 
 - `font`: The font reference.
-- `glyphName`: The glyph name as a   object.
+- `glyphName`: The glyph name as a `CFString` object.
 
 ## See Also
 

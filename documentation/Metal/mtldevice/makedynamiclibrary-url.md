@@ -30,7 +30,7 @@ A new [`MTLDynamicLibrary`](mtldynamiclibrary.md) instance if the method complet
 
 ## Parameters
 
-- `url`: A URL to a Metal library file (ending in  ).
+- `url`: A URL to a Metal library file (ending in `.metallib`).
 
 ## See Also
 

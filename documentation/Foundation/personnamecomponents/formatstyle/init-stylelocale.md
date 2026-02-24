@@ -30,8 +30,8 @@ The locale provides linguistic and cultural context to the formatted name. The d
 
 ## Parameters
 
-- `style`: The   used to format the name.
-- `locale`: The   used to create the string representation of the name.
+- `style`: The [`PersonNameComponents.FormatStyle.Style`](personnamecomponents/formatstyle/style-swift.enum.md) used to format the name.
+- `locale`: The [`Locale`](locale.md) used to create the string representation of the name.
 
 
 ---

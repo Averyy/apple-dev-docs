@@ -70,6 +70,39 @@ Each inset defines the portion of the image that doesn’t stretch in the given 
 
 The [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method is the only reliable way to determine whether two image objects contain the same image data. The following code illustrates the correct and incorrect ways to compare images.
 
+**Swift**:
+
+```swift
+// Load the same image twice.
+let image1 = UIImage(named: "MyImage")
+let image2 = UIImage(named: "MyImage") 
+
+// The image objects may be different, but the contents are still equal.
+if image1 != nil && image1!.isEqual(image2) {
+    // Correct. This technique compares the image data correctly.
+} 
+if image1 == image2 {
+    // Incorrect! Direct object comparisons may not work.
+}
+```
+
+**Objective-C**:
+
+```objc
+// Load the same image twice.
+UIImage* image1 = [UIImage imageNamed:@"MyImage"];
+UIImage* image2 = [UIImage imageNamed:@"MyImage"];
+ 
+// The image objects may be different, but the contents are still equal
+if ([image1 isEqual:image2]) {
+   // Correct. This technique compares the image data correctly.
+}
+ 
+if (image1 == image2) {
+   // Incorrect! Direct object comparisons may not work.
+}
+```
+
 ##### Access the Image Data
 
 Image objects don’t provide direct access to their underlying image data. However, you can retrieve the image data in other formats for use in your app. Specifically, you can use the [`cgImage`](uiimage/cgimage.md) and [`ciImage`](uiimage/ciimage.md) properties to retrieve versions of the image that are compatible with Core Graphics and Core Image, respectively. You can also use the [`pngData()`](uiimage/pngdata().md) and [`jpegData(compressionQuality:)`](uiimage/jpegdata(compressionquality:).md) functions to generate an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the image data in either the PNG or JPEG format.

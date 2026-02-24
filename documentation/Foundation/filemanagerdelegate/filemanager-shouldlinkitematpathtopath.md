@@ -33,8 +33,8 @@ This method performs the same task as the [`fileManager(_:shouldLinkItemAt:to:)`
 ## Parameters
 
 - `fileManager`: The file manager object that is attempting to create the link.
-- `srcPath`: The path or a file or directory that   is about to attempt to link.
-- `dstPath`: The path or a file or directory to which   is about to attempt to link.
+- `srcPath`: The path or a file or directory that `fileManager` is about to attempt to link.
+- `dstPath`: The path or a file or directory to which `fileManager` is about to attempt to link.
 
 ## See Also
 

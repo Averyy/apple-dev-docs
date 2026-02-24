@@ -26,7 +26,7 @@ You can also call this method from a block passed to the [`performBatchUpdates(_
 
 ## Parameters
 
-- `sections`: An index set containing the indexes of the sections you want to insert. This parameter must not be  .
+- `sections`: An index set containing the indexes of the sections you want to insert. This parameter must not be `nil`.
 
 ## See Also
 

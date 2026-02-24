@@ -26,8 +26,8 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inFileRef`: The URL of an existing audio file.
-- `inPermissions`: The read-write permissions you want to assign to the file. Use the permission constants in  .
-- `inFileTypeHint`: A hint for the file type of the designated file. For files without filename extensions and with types not easily or uniquely determined from the data (such as ADTS or AC3), use this hint to indicate the file type. Otherwise,  pass  . Only use this hint in macOS versions 10.3.1 or greater. In all earlier versions, any attempt to open these files fails.
+- `inPermissions`: The read-write permissions you want to assign to the file. Use the permission constants in [`AudioFilePermissions`](audiofilepermissions.md).
+- `inFileTypeHint`: A hint for the file type of the designated file. For files without filename extensions and with types not easily or uniquely determined from the data (such as ADTS or AC3), use this hint to indicate the file type. Otherwise,  pass `0`. Only use this hint in macOS versions 10.3.1 or greater. In all earlier versions, any attempt to open these files fails.
 - `outAudioFile`: On output, a pointer to the newly opened audio file.
 
 ## See Also

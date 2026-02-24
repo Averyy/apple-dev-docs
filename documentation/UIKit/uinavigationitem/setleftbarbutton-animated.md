@@ -25,7 +25,7 @@ If two navigation items have the same custom left or right bar button items, tho
 ## Parameters
 
 - `item`: A custom bar item to display on the left side of the navigation bar.
-- `animated`: Specify   to animate the transition to the custom bar item when this item is the top item. Specify   to set the item immediately without animating the change.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition to the custom bar item when this item is the top item. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to set the item immediately without animating the change.
 
 ## See Also
 

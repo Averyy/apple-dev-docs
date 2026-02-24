@@ -29,6 +29,14 @@ This method applies the Droste filter to an image. This effect creates a Droste 
 
 The Droste filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`rotation`**: A `float` representing the angle of the rotation, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`zoom`**: A `float` representing the zoom of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`periodicity`**: A float representing the amount of intervals as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputInsetPoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y position that defines the first inset point.
+- **`inputInsetPoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y position that defines the second inset point.
+- **`inputStrands`**: A float representing the amount of strands as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in the image becoming a repeated, scaled pattern:
 
 ```swift

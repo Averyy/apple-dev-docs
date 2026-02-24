@@ -24,7 +24,7 @@ The framework calls this method to determine the value of the highest SCSI devic
 
 ## Parameters
 
-- `id`: A pointer to a device ID. On return, set this to the highest  .
+- `id`: A pointer to a device ID. On return, set this to the highest [`SCSIDeviceIdentifier`](https://developer.apple.com/documentation/iokit/scsideviceidentifier).
 
 ## See Also
 

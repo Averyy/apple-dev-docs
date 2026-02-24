@@ -27,7 +27,7 @@ Translates the time in the AudioDevice’s time base from one representation to 
 
 - `inDevice`: The AudioDevice whose time base governs the translation.
 - `inTime`: An AudioTimeStamp containing the time to be translated.
-- `outTime`: An AudioTimeStamp into which the translated time is put. On entry, the   mFlags field specifies which representations to translate the input time   into. Because not every device supports all time representations, on exit,   the mFlags field will indicate which translations were actually done.
+- `outTime`: An AudioTimeStamp into which the translated time is put. On entry, the mFlags field specifies which representations to translate the input time into. Because not every device supports all time representations, on exit, the mFlags field will indicate which translations were actually done.
 
 ## See Also
 

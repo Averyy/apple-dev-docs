@@ -15,6 +15,14 @@ An association between a license and a user or device.
 object VppAssociation
 ```
 
+## Properties
+
+- `clientUserIdStr` (string): The client-supplied identifier used when registering a user.
+- `errorMessage` (string): The human-readable explanation of the error.
+- `errorNumber` (int32): The numeric code of the error.
+- `licenseIdStr` (string): The license identifier assigned to a user or device.
+- `serialNumber` (string): The device serial number.
+
 ## See Also
 
 - [object VppAsset](vppasset.md)

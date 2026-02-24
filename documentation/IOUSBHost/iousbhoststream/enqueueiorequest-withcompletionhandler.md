@@ -27,8 +27,8 @@ This method sends an asynchronous request on the stream.
 
 ## Parameters
 
-- `data`: An   object defining the memory to use for the transfer.
-- `completionHandler`: An   that runs when the request completes. The   doesn’t run if the method returns an error.
+- `data`: An [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object defining the memory to use for the transfer.
+- `completionHandler`: An [`IOUSBHostCompletionHandler`](iousbhostcompletionhandler.md) that runs when the request completes. The `completionHandler` doesn’t run if the method returns an error.
 
 ## See Also
 

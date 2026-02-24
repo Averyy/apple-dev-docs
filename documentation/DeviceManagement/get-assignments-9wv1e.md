@@ -20,6 +20,37 @@ Get the set of current assignments for users or devices.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+?adamId=408709785
+```
+
+**Response**:
+
+```json
+{
+    "assignments": [
+        {
+            "adamId": "408709785",
+            "clientUserId": "client-1",
+            "pricingParam": "STDQ"
+        },
+        {
+            "adamId": "408709785",
+            "serialNumber": "serial-1",
+            "pricingParam": "STDQ"
+        }
+    ],
+    "size": 2,
+    "currentPageIndex": 0,
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+    "totalPages": 1,
+    "uId": "2049025000431439",
+    "versionId": "009061cb-87d1-4ea8-ae4c-7849dc49224e"
+}
+```
+
 ## Topics
 
 ### Response
@@ -27,6 +58,18 @@ Get the set of current assignments for users or devices.
   The paginated response that contains requested assignments.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
+
+## Endpoint
+
+`GET https://vpp.itunes.apple.com/mdm/v2/assignments`
+
+## Parameters
+
+- `adamId` (string): The filter for the assignment product’s unique identifier.
+- `clientUserId` (string): The filter for the unique identifier of assigned users in your organization.
+- `pageIndex` (int32): The requested page index.
+- `serialNumber` (string): The filter for the unique identifier of assigned devices in your organization.
+- `sinceVersionId` (string): The filter for modified assignments since the specified version identifier.
 
 ## See Also
 

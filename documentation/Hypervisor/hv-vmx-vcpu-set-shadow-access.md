@@ -26,7 +26,7 @@ func hv_vmx_vcpu_set_shadow_access(_ vcpu: hv_vcpuid_t, _ field: UInt32, _ flags
 
 - `vcpu`: The vCPU ID.
 - `field`: The ID of the shadow VMCS field.
-- `flags`: The new  ,   permissions for the shadow VMCS field.
+- `flags`: The new `READ`, `WRITE` permissions for the shadow VMCS field.
 
 ## See Also
 

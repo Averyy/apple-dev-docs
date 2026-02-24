@@ -22,7 +22,7 @@ func runWorkflow(atPath path: String!, withInput input: Any!) throws -> Any
 ## Parameters
 
 - `path`: A path that specifies the location of the workflow file.
-- `input`: The input for the first action in the workflow. Pass   if the first action doesn’t need input.
+- `input`: The input for the first action in the workflow. Pass `nil` if the first action doesn’t need input.
 
 
 ---

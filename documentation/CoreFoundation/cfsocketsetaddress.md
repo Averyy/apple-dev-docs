@@ -33,7 +33,7 @@ Once `s` is bound to `address`, depending on the socket’s protocol, other proc
 ## Parameters
 
 - `s`: The CFSocket object to modify.
-- `address`: A CFData object containing a   appropriate for the protocol family of   (  or  , for example). This data object is used only for the duration of the function call.
+- `address`: A CFData object containing a `struct sockaddr` appropriate for the protocol family of `s` (`struct sockaddr_in` or `struct sockaddr_in6`, for example). This data object is used only for the duration of the function call.
 
 ## See Also
 

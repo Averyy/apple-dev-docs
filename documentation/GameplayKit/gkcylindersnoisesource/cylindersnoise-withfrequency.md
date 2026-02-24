@@ -29,7 +29,7 @@ To make use of this noise source, create a [`GKNoise`](gknoise.md) object from i
 
 ## Parameters
 
-- `frequency`: The initial value for the   property, which determines the size and spacing of concentric cylinders.
+- `frequency`: The initial value for the `frequency` property, which determines the size and spacing of concentric cylinders.
 
 ## See Also
 

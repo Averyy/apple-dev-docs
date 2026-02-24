@@ -45,7 +45,7 @@ func updateDescendants(of context: CLSContext, completion: @escaping (Error?) ->
 ## Parameters
 
 - `context`: The context whose descendant contexts the method should update.
-- `completion`: A completion block the method calls when it finishes. Pass an optional error to indicate failure, or   to indicate success.
+- `completion`: A completion block the method calls when it finishes. Pass an optional error to indicate failure, or `nil` to indicate success.
 
 
 ---

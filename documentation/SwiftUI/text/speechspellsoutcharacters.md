@@ -29,7 +29,7 @@ Use this modifier when you want VoiceOver to speak text as individual letters, c
 
 ## Parameters
 
-- `value`: A Boolean value that when   indicates   VoiceOver should speak text as individual characters. Defaults   to  .
+- `value`: A Boolean value that when `true` indicates VoiceOver should speak text as individual characters. Defaults to `true`.
 
 ## See Also
 

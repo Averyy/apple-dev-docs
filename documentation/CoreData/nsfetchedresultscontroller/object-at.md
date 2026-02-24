@@ -26,7 +26,7 @@ The object at a given index path in the fetch results.
 
 ## Parameters
 
-- `indexPath`: If   does not describe a valid index path in the fetch results, an exception is raised.
+- `indexPath`: An index path in the fetch results. If `indexPath` does not describe a valid index path in the fetch results, an exception is raised.
 
 ## See Also
 

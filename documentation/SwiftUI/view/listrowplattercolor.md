@@ -45,7 +45,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `color`: The   to apply to the system cell.
+- `color`: The [`Color`](color.md) to apply to the system cell.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A new bit vector holding the same bit values as `bv`. Ownership follows the [`Th
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new bit vector. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new bit vector. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `bv`: The bit vector to copy.
 
 ## See Also

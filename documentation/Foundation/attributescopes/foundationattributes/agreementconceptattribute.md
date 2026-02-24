@@ -27,19 +27,19 @@ Use this formatting attribute for cases where you need to inflect text based on 
 
 ##### Agree with a Term of Address
 
-In languages that rely on gender, the words and phrases in a sentence need to grammatically agree. For example, suppose you need to translate the following sentence into Spanish: 
+In languages that rely on gender, the words and phrases in a sentence need to grammatically agree. For example, suppose you need to translate the following sentence into Spanish: *Anne is busy.*
 
-The challenge is that the system doesn’t know the preferred term of address for the person named . Additionally, most often, the localization file only contains masculine forms of translated words. This means the system can’t correctly inflect other words in the sentence, such as , to agree with Anne’s feminine name. So the resulting translation is: .  is masculine, which isn’t the correct gender agreement for the sentence.
+The challenge is that the system doesn’t know the preferred term of address for the person named *Anne*. Additionally, most often, the localization file only contains masculine forms of translated words. This means the system can’t correctly inflect other words in the sentence, such as *busy*, to agree with Anne’s feminine name. So the resulting translation is: *Anne está occupado*. *Ocupado* is masculine, which isn’t the correct gender agreement for the sentence.
 
-This is where the `agreeWithConcept` attribute can help. By wrapping the word you want to seek agreement on, , in an `agreeWithConcept` attribute pointing to an inflection concept of type [`InflectionConcept.termsOfAddress(_:)`](inflectionconcept/termsofaddress(_:).md), the system makes the masculine word  agree with the [`feminine`](termofaddress/feminine.md) term of address . You don’t need to include masculine and feminine forms of the translated words in your localization files. The system makes the terms agree for you.
+This is where the `agreeWithConcept` attribute can help. By wrapping the word you want to seek agreement on, *ocupado*, in an `agreeWithConcept` attribute pointing to an inflection concept of type [`InflectionConcept.termsOfAddress(_:)`](inflectionconcept/termsofaddress(_:).md), the system makes the masculine word *ocupado* agree with the [`feminine`](termofaddress/feminine.md) term of address *Anne*. You don’t need to include masculine and feminine forms of the translated words in your localization files. The system makes the terms agree for you.
 
 The following steps ensure proper gender agreement in the translation:
 
-1. Create a type associating the name  with a [`feminine`](termofaddress/feminine.md) term of address. For example, create a `Contact` structure containing two properties — one property representing Anne’s name and another (an array) representing Anne’s preferred terms of address.
-2. Create a [`LocalizedStringResource`](localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with the name  as a placeholder variable representing the word to agree with.
-3. Create an instance of [`AttributedString.LocalizationOptions`](attributedstring/localizationoptions.md) and pass an inflection concept of type [`InflectionConcept.termsOfAddress(_:)`](inflectionconcept/termsofaddress(_:).md) containing the term of address associated with the name  into its [`concepts`](attributedstring/localizationoptions/concepts.md) property
-4. In the Spanish localization file, wrap the Spanish term, , in the `agreeWithConcept` attribute, with the index pointing to the first inflection concept instance in the [`concepts`](attributedstring/localizationoptions/concepts.md) property.
-5. Then inflect the masculine word  into its feminine form  by passing the resource and options to a new [`AttributedString`](attributedstring.md).
+1. Create a type associating the name *Anne* with a [`feminine`](termofaddress/feminine.md) term of address. For example, create a `Contact` structure containing two properties — one property representing Anne’s name and another (an array) representing Anne’s preferred terms of address.
+2. Create a [`LocalizedStringResource`](localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with the name *Anne* as a placeholder variable representing the word to agree with.
+3. Create an instance of [`AttributedString.LocalizationOptions`](attributedstring/localizationoptions.md) and pass an inflection concept of type [`InflectionConcept.termsOfAddress(_:)`](inflectionconcept/termsofaddress(_:).md) containing the term of address associated with the name *Anne* into its [`concepts`](attributedstring/localizationoptions/concepts.md) property
+4. In the Spanish localization file, wrap the Spanish term, *ocupado*, in the `agreeWithConcept` attribute, with the index pointing to the first inflection concept instance in the [`concepts`](attributedstring/localizationoptions/concepts.md) property.
+5. Then inflect the masculine word *ocupado* into its feminine form *ocupada* by passing the resource and options to a new [`AttributedString`](attributedstring.md).
 
 ```swift
 struct Contact {
@@ -70,11 +70,11 @@ let result = AttributedString(localized: resource, options: options)
 
 Using a localized phrase for grammatical agreement is the same as using a term of address except you inflect on an [`InflectionConcept.localizedPhrase(_:)`](inflectionconcept/localizedphrase(_:).md) instead of a term of address.
 
-For example, suppose you need to translate the following sentence for a food order into Spanish: 
+For example, suppose you need to translate the following sentence for a food order into Spanish: *Last time you ordered the small.*
 
-In English, the word  can appear on its own. But in Spanish, that translated word needs to agree with the masculine or feminine noun it’s describing, which, in this case (), isn’t part of the sentence.
+In English, the word *small* can appear on its own. But in Spanish, that translated word needs to agree with the masculine or feminine noun it’s describing, which, in this case (*ensalada*), isn’t part of the sentence.
 
-To achieve agreement, wrap the masculine word for , , with the `agreeWithConcept` attribute. Then set it to point to the [`InflectionConcept.localizedPhrase(_:)`](inflectionconcept/localizedphrase(_:).md) that matches its associated food item.
+To achieve agreement, wrap the masculine word for *small*, *pequeño*, with the `agreeWithConcept` attribute. Then set it to point to the [`InflectionConcept.localizedPhrase(_:)`](inflectionconcept/localizedphrase(_:).md) that matches its associated food item.
 
 The following steps ensure proper gender agreement in the translation:
 
@@ -83,7 +83,7 @@ The following steps ensure proper gender agreement in the translation:
 - Create a [`LocalizedStringResource`](localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with the placeholder variable representing the phrase to inflect (`order.size`).
 - Create an instance of [`AttributedString.LocalizationOptions`](attributedstring/localizationoptions.md) and pass into its [`concepts`](attributedstring/localizationoptions/concepts.md) property an inflection concept of type [`InflectionConcept.localizedPhrase(_:)`](inflectionconcept/localizedphrase(_:).md) passing in the placeholder variable representing the phrase to inflect for that translation (`order.item`).
 - In the Spanish localization file, add `%@` placeholders for the word you want to substitute for the size. Wrap the Spanish phrase for the size with the `agreeWithConcept` attribute, with the index pointing to the first inflection concept instance in the [`concepts`](attributedstring/localizationoptions/concepts.md) property.
-- Then inflect the masculine word  into its feminine form  by passing the resource and options to a new [`AttributedString`](attributedstring.md).
+- Then inflect the masculine word *pequeño* into its feminine form *pequeña* by passing the resource and options to a new [`AttributedString`](attributedstring.md).
 
 ```swift
 struct Order {

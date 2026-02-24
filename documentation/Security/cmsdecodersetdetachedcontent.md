@@ -28,7 +28,7 @@ You can call this function either before or after decoding the message (by calli
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
 - `detachedContent`: A reference to the message’s detached content.
 
 ## See Also

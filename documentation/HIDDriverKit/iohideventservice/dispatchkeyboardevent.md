@@ -26,11 +26,11 @@ Call this method from your event service to dispatch a keyboard event to the sys
 ## Parameters
 
 - `timeStamp`: The timestamp of the event. Use the timestamp of the report element that is the source of the event.
-- `usagePage`: The HID usage page to associate with the event. For a list of possible values, see  .
-- `usage`: The HID usage code indicating the specific type of the event. For a list of possible usage values, see  .
+- `usagePage`: The HID usage page to associate with the event. For a list of possible values, see [`Usage Pages`](usage-pages-enum.md).
+- `usage`: The HID usage code indicating the specific type of the event. For a list of possible usage values, see [`HID Usage Tables`](hid-usage-tables.md).
 - `value`: The value associated with the event.
-- `options`: Additional options for keyboard events. Specify   for no options. For a list of other values, see  .
-- `repeat`: The autorepeat behavior to apply when the user holds down a key. Specify   to apply the default behavior, which repeats the key event after a user-configurable amount of time elapses. Specify   to prevent the delivery of repeat events.
+- `options`: Additional options for keyboard events. Specify `0` for no options. For a list of other values, see [`IOHIDKeyboardEventOptions`](iohidkeyboardeventoptions.md).
+- `repeat`: The autorepeat behavior to apply when the user holds down a key. Specify `true` to apply the default behavior, which repeats the key event after a user-configurable amount of time elapses. Specify `false` to prevent the delivery of repeat events.
 
 ## See Also
 

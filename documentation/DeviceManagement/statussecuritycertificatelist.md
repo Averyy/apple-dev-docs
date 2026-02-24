@@ -38,6 +38,10 @@ object StatusSecurityCertificateList
 - [object StatusSecurityCertificateListCertificateObject](statussecuritycertificatelistcertificateobject.md)
   A status report of a security certificate.
 
+## Properties
+
+- `security.certificate.list` ([StatusSecurityCertificateListCertificateObject]) *(required)*: A list of the device’s managed certificates.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

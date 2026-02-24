@@ -1,0 +1,31 @@
+# !=(_:_:)
+
+**Framework**: WorkoutKit  
+**Kind**: op
+
+Returns a Boolean value that indicates whether two speed threshold alerts aren’t equal.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+static func != (lhs: Self, rhs: Self) -> Bool
+```
+
+## See Also
+
+- [var hashValue: Int](speedthresholdalert/hashvalue.md)
+  The hashed value of the speed threshold alert.
+- [func hash(into: inout Hasher)](speedthresholdalert/hash(into:).md)
+  Hashes the essential components of the speed threshold alert by feeding them into the given hash function.
+- [static func == (SpeedThresholdAlert, SpeedThresholdAlert) -> Bool](speedthresholdalert/==(_:_:).md)
+  Returns a Boolean value that indicates whether two speed threshold alerts are equal.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/workoutkit/speedthresholdalert/!=(_:_:))*

@@ -26,9 +26,9 @@ A new CFFileDescriptor or `NULL` if there was a problem creating the object. Own
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new file descriptor object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new file descriptor object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `fd`: The file descriptor for the new CFFileDescriptor.
-- `closeOnInvalidate`:   if the new CFFileDescriptor should close   when it is invalidated, otherwise  .
+- `closeOnInvalidate`: `true` if the new CFFileDescriptor should close `fd` when it is invalidated, otherwise `false`.
 - `callout`: The CFFileDescriptorCallBack for the new CFFileDescriptor.
 - `context`: Contextual information for the new CFFileDescriptor.
 

@@ -26,7 +26,7 @@ The default session configuration uses a persistent disk-based cache (except whe
 
 > **Note**:  If you’re porting code based on the [`NSURLConnection`](nsurlconnection.md) class, use this method to obtain an initial configuration object and then customize that object as needed.
 
-Modifying the returned session configuration object does  affect any configuration objects returned by future calls to this method, and does not change the default behavior for existing sessions. It is therefore always safe to use the returned object as a starting point for additional customization.
+Modifying the returned session configuration object does *not* affect any configuration objects returned by future calls to this method, and does not change the default behavior for existing sessions. It is therefore always safe to use the returned object as a starting point for additional customization.
 
 ## See Also
 

@@ -30,7 +30,7 @@ try await session.connect(endpoint: .local(ipAddress: "125.125.125.125", port: 5
 
 // Connect to a remote cloud endpoint by specifying a server name
 // which corresponds to an entry in the `ApprovedStreamingEndpoints` dictionary in Info.plist.
-try await session.connect(endpoint: .remote(serverName: "My Remote Server")
+try await session.connect(endpoint: .remote(serverName: "My Remote Server", signalingHeaders: ["test-header": "my-test"])
 ```
 
 You can stop establishing a connection by cancelling the task or calling [`disconnect()`](foveatedstreamingsession/disconnect().md).

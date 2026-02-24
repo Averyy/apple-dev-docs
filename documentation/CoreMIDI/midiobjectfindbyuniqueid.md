@@ -24,8 +24,8 @@ An `OSStatus` error code, including [`kMIDIObjectNotFound`](kmidiobjectnotfound.
 
 ## Parameters
 
-- `inUniqueID`: The unique ID of the object to search for. You determine the unique ID by querying   for the   property.
-- `outObject`: The returned object, or 0 if the object wasn’t found or an error occurred. Cast this pointer to the appropriate type, according to type specified by the   argument.
+- `inUniqueID`: The unique ID of the object to search for. You determine the unique ID by querying [`MIDIObjectGetIntegerProperty(_:_:_:)`](midiobjectgetintegerproperty(_:_:_:).md) for the [`kMIDIPropertyUniqueID`](kmidipropertyuniqueid.md) property.
+- `outObject`: The returned object, or 0 if the object wasn’t found or an error occurred. Cast this pointer to the appropriate type, according to type specified by the `outObjectType` argument.
 - `outObjectType`: On exit, the type of object found, or undefined if the system found no objects.
 
 ## Topics

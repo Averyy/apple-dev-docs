@@ -24,8 +24,8 @@ You may call this method multiple times to specify multiple target-action pairs.
 
 ## Parameters
 
-- `target`: An object that is a recipient of action messages sent by the receiver when the represented gesture occurs.   is not a valid value.
-- `action`: A selector identifying a method of a target to be invoked by the action message.   is not a valid value.
+- `target`: An object that is a recipient of action messages sent by the receiver when the represented gesture occurs. `nil` is not a valid value.
+- `action`: A selector identifying a method of a target to be invoked by the action message. `NULL` is not a valid value.
 
 ## See Also
 

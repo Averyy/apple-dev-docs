@@ -26,7 +26,7 @@ To create a Metal-based Core Image context using an offline GPU, use the [`MTLCo
 
 ## Parameters
 
-- `index`: The index of the offline GPU with which to create the context; a number between zero and the value returned by the   method.
+- `index`: The index of the offline GPU with which to create the context; a number between zero and the value returned by the [`offlineGPUCount()`](cicontext/offlinegpucount().md) method.
 
 ## See Also
 

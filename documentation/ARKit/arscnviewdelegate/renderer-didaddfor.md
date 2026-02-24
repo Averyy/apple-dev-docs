@@ -26,7 +26,7 @@ Alternatively, you can implement the [`renderer(_:nodeFor:)`](arscnviewdelegate/
 
 ## Parameters
 
-- `renderer`: The   object rendering the scene.
+- `renderer`: The [`ARSCNView`](arscnview.md) object rendering the scene.
 - `node`: The newly added SceneKit node.
 - `anchor`: The AR anchor corresponding to the node.
 

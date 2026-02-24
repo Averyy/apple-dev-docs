@@ -17,7 +17,7 @@ typealias CMDyskineticSymptomResultHandler = ([CMDyskineticSymptomResult], (any 
 ## Parameters
 
 - `dyskineticSymptomResult`: An array of dyskinetic symptom results found by the query.
-- `error`: If an error occurred, this parameter contains information about the error; otherwise it is  .
+- `error`: If an error occurred, this parameter contains information about the error; otherwise it is `nil`.
 
 ## See Also
 

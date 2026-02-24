@@ -24,9 +24,33 @@ Use a payment button to initiate an Apple Pay transaction on Apple Watch.
 
 Do not subclass or create instances of this class yourself. Instead, drag a Payment Button object from your Object Library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the payment button object.
 
+**Swift**:
+
+```swift
+@IBOutlet weak var paymentButton: WKInterfacePaymentButton!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfacePaymentButton* paymentButton;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the payment button. This class does not provide any new public methods or properties. However, it does inherit the methods and properties of its superclass, the [`WKInterfaceObject`](wkinterfaceobject.md) class.
 
 To respond to taps in the payment button, declare a method of this form in the interface controller class that manages the button:
+
+**Swift**:
+
+```swift
+@IBAction func beginApplePayTransaction()
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)beginApplePayTransaction
+```
 
 You can change the name of your action method to anything you like. In your Xcode storyboard, connect the button’s selector to the custom action method defined in your class. In the action method, create the payment request and present the payment sheet by calling a [`PKPaymentAuthorizationController`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationController) object’s [`present(completion:)`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationController/present(completion:)) method.
 

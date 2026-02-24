@@ -27,7 +27,7 @@ The equivalent system register is `MDCR_EL2.TDE`.
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.
-- `value`: A Boolean value that if   indicates debug exceptions in the guest trap to the host.
+- `value`: A Boolean value that if `true` indicates debug exceptions in the guest trap to the host.
 
 ## See Also
 

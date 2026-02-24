@@ -26,7 +26,7 @@ A [`MTL4Archive`](mtl4archive.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `url`: An   instance that represents the path from which the device loads the  .
+- `url`: An `NSURL` instance that represents the path from which the device loads the [`MTL4Archive`](mtl4archive.md).
 
 
 ---

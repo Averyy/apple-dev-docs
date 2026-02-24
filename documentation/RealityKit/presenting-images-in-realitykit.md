@@ -10,9 +10,9 @@ Create and display spatial scenes in RealityKit
 
 #### Overview
 
-RealityKit apps can easily display images in 3D space using [`ImagePresentationComponent`](imagepresentationcomponent.md), which can display traditional 2D and  as well as generate and display  — which represents the content of an existing image in three dimensions.
+RealityKit apps can easily display images in 3D space using [`ImagePresentationComponent`](imagepresentationcomponent.md), which can display traditional 2D and *spatial photos* as well as generate and display *spatial scenes* — which represents the content of an existing image in three dimensions.
 
-Spatial scenes are different from . A  presents two separate 2D images, one to each eye, to create the illusion of a three dimensional view. , on the other hand, generate textured 3D geometry from either a  or a regular 2D image.
+Spatial scenes are different from *spatial photos*. A *spatial photo* presents two separate 2D images, one to each eye, to create the illusion of a three dimensional view. *Spatial scenes*, on the other hand, generate textured 3D geometry from either a *spatial photo* or a regular 2D image.
 
 ![A screenshot of a visionOS window displaying a photograph of a windmill in the background and tulip flowers in the foreground. Below the window, there is an ornament view with left and right arrows and a button labeled Convert to 3D.](https://docs-assets.developer.apple.com/published/eb6f50add22c250ac49c9cdf9c276251/mono-image%402x.jpg)
 
@@ -21,6 +21,12 @@ This sample app demonstrates how to use [`ImagePresentationComponent`](imagepres
 #### Choose Viewing Modes
 
 Image presentation components can present images in several modes. Your apps can choose to use any or all of these modes.
+
+- **[`mono`](imagepresentationcomponent/viewingmode-swift.struct/mono.md)**: Shows an image from a single point of view.
+- **[`spatial3D`](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)**: Shows a *spatial scene* from the source image.
+- **[`spatial3DImmersive`](imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md)**: Shows a *spatial scene* from the source image and displays it in immersive mode.
+- **[`spatialStereo`](imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md)**: Shows an image as a *spatial photo*.
+- **[`spatialStereoImmersive`](imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md)**: Shows an image as *spatial photo* and displays it in immersive mode.
 
 This sample displays images using `mono` and `spatial3D` viewing modes.
 

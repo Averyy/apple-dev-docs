@@ -23,7 +23,7 @@ func invalidatePersistableContentKey(_ persistableContentKeyData: Data, options:
 ## Parameters
 
 - `persistableContentKeyData`: The persistable content key data to invalidate.
-- `options`: Additional options to use when generating the server playback context. Pass   to indicate no additional options.
+- `options`: Additional options to use when generating the server playback context. Pass `nil` to indicate no additional options.
 - `handler`: The completion handler callback.
 
 ## See Also

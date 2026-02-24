@@ -17,7 +17,7 @@ func removeUIInterruptionMonitor(_ monitor: any NSObjectProtocol)
 
 ## Parameters
 
-- `monitor`: An identifier token for an interruption monitor, obtained from a previous call to  .
+- `monitor`: An identifier token for an interruption monitor, obtained from a previous call to [`addUIInterruptionMonitor(withDescription:handler:)`](xctestcase/adduiinterruptionmonitor(withdescription:handler:).md).
 
 ## See Also
 

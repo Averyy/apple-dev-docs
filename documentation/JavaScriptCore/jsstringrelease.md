@@ -21,7 +21,7 @@ func JSStringRelease(_ string: JSStringRef!)
 
 ## Parameters
 
-- `string`: The   to release.
+- `string`: The [`JSStringRef`](jsstringref.md) to release.
 
 ## See Also
 

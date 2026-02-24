@@ -47,9 +47,9 @@ To prevent memory leaks, call [`BNNSGraphContextDestroy(_:)`](bnnsgraphcontextde
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function that the new context initializes the state for. Specify as   if the graph only contains one function.
-- `initial_states_count`: The number of elements in the   array.
-- `initial_states`: An array of   structures that describe the data that the context uses to initialize each state. The context uses   to intialize the state with the name  .
+- `function`: The function that the new context initializes the state for. Specify as `nil` if the graph only contains one function.
+- `initial_states_count`: The number of elements in the `initial_states_count` array.
+- `initial_states`: An array of [`BNNSTensor`](bnnstensor.md) structures that describe the data that the context uses to initialize each state. The context uses `initial_states[i]` to intialize the state with the name `initial_state[i]->name`.
 
 ## See Also
 

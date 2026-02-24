@@ -29,7 +29,7 @@ You can later access the dictionary by calling the [`dictionaryRepresentation`](
 
 ## Parameters
 
-- `dictionary`: A dictionary that contains data to initialize the   object with.
+- `dictionary`: A dictionary that contains data to initialize the `UIPrintInfo` object with.
 
 ## See Also
 

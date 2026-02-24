@@ -22,6 +22,13 @@ struct SparseOpaquePreconditioner_Complex_Double
 
 #### Overview
 
+- **`type`**: The type of preconditioner represented.
+- **`mem`**: Block of memory that will be passed unaltered as the first argument of the `apply()` callback.
+- **`apply(mem, trans, X, Y)`**: Function to call to apply the preconditioner as `Y = PX` (`trans=false`) or `Y = P^TX` (`trans`=`true`). - `mem` : The unaltered pointer mem from this struct.
+- `trans` : Flags whether to apply the preconditioner or its transpose.
+- `X`: The right-hand side vectors X.
+- `Y`: The result vectors Y.
+
 ## Topics
 
 ### Initializers

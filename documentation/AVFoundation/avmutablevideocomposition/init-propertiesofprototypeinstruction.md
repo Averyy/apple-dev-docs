@@ -20,7 +20,7 @@ init(propertiesOf asset: AVAsset, prototypeInstruction: AVVideoCompositionInstru
 
 ## Parameters
 
-- `asset`: The asset for which to create a video composition. Load the asset’s   and   properties before invoking this method.
+- `asset`: The asset for which to create a video composition. Load the asset’s [`duration`](avasset/duration.md) and [`tracks`](avasset/tracks.md) properties before invoking this method.
 - `prototypeInstruction`: A video composition instruction to use as a prototype.
 
 ## See Also

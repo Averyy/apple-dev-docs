@@ -22,7 +22,7 @@ init(components: Locale.Language.Components)
 
 ## Parameters
 
-- `components`: A   instance that provides a custom language code, region, and script for the new   instance.
+- `components`: A [`Locale.Language.Components`](locale/language-swift.struct/components.md) instance that provides a custom language code, region, and script for the new [`Locale.Language`](locale/language-swift.struct.md) instance.
 
 ## See Also
 

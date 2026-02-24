@@ -15,6 +15,10 @@ Provides a list of beta enrollment tokens available for the given organization.
 object GetSeedBuildTokenResponse
 ```
 
+## Properties
+
+- `betaEnrollmentTokens` ([SeedBuildToken]): The list of beta enrollment tokens available for the given organization.
+
 ## See Also
 
 - [object SeedBuildToken](seedbuildtoken.md)

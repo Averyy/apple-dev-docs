@@ -30,7 +30,7 @@ If you plan to actually convert a string, the `dataUsingEncoding:...` methods re
 
 ## Parameters
 
-- `encoding`: A string encoding. For possible values, see  .
+- `encoding`: A string encoding. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

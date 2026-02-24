@@ -25,12 +25,12 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `cred_handle`: The credential to inspect. Use   to inquire about the default initiator principal.
+- `cred_handle`: The credential to inspect. Use [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) to inquire about the default initiator principal.
 - `mech_type`: The mechanism for which information should be returned.
-- `cred_name`: A pointer the function uses to return the name that the credential asserts. Use   to free the name  object’s memory when you are done with it. Set the parameter to   to ignore this output.
-- `initiator_lifetime`: A pointer the function uses to return the number of seconds for which the credential will remain valid for initiating security contexts, or 0 if the credential is expired or if the credential’s usage mechanism is  . For credentials that do not support expiry, the function returns  . Set to   to ignore this output.
-- `acceptor_lifetime`: A pointer the function uses to return the number of seconds for which the credential will remain valid for accepting security contexts, or 0 if the credential is expired or if the credential’s usage mechanism is  . For credentials that do not support expiry, the function returns  . Set to   to ignore this output.
-- `cred_usage`: A pointer the function uses to return the credential usage. The value is one of  ,  , or  . Set to   to ignore this output.
+- `cred_name`: A pointer the function uses to return the name that the credential asserts. Use [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) to free the name  object’s memory when you are done with it. Set the parameter to `NULL` to ignore this output.
+- `initiator_lifetime`: A pointer the function uses to return the number of seconds for which the credential will remain valid for initiating security contexts, or 0 if the credential is expired or if the credential’s usage mechanism is [`GSS_C_ACCEPT`](gss_c_accept.md). For credentials that do not support expiry, the function returns [`GSS_C_INDEFINITE`](gss_c_indefinite.md). Set to `NULL` to ignore this output.
+- `acceptor_lifetime`: A pointer the function uses to return the number of seconds for which the credential will remain valid for accepting security contexts, or 0 if the credential is expired or if the credential’s usage mechanism is [`GSS_C_INITIATE`](gss_c_initiate.md). For credentials that do not support expiry, the function returns [`GSS_C_INDEFINITE`](gss_c_indefinite.md). Set to `NULL` to ignore this output.
+- `cred_usage`: A pointer the function uses to return the credential usage. The value is one of [`GSS_C_ACCEPT`](gss_c_accept.md), [`GSS_C_INITIATE`](gss_c_initiate.md), or [`GSS_C_BOTH`](gss_c_both.md). Set to `NULL` to ignore this output.
 
 ## See Also
 

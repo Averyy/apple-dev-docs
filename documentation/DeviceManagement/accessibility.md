@@ -66,6 +66,32 @@ Specify `com.apple.universalaccess` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `closeViewFarPoint` (integer): The minimum zoom level in the Zoom options.
+- `closeViewHotkeysEnabled` (boolean): If `true`, enables “Use keyboard shortcuts” in the Zoom options.
+- `closeViewNearPoint` (integer): The maximum zoom level in the Zoom options.
+- `closeViewScrollWheelToggle` (boolean): If `true`, enables “Use scroll gesture” in the Zoom options.
+- `closeViewShowPreview` (boolean): If `true`, enables “Show preview rectangle” in the Zoom options. Only available in macOS 10.15 and earlier.
+- `closeViewSmoothImages` (boolean): If `true`, enables “Smooth images” in the Zoom options.
+- `contrast` (number): The contrast value in the Display options.
+- `flashScreen` (boolean): If `true`, enables “Flash the screen” in the Audio options.
+- `grayscale` (boolean): If `true`, enables “Use grayscale” in the Display options. This option is deprecated in macOS 11.
+- `mouseDriver` (boolean): If `true`, enables Mouse Keys in the Mouse & Trackpad options.
+- `mouseDriverCursorSize` (integer): The size of the cursor.
+- `mouseDriverIgnoreTrackpad` (boolean): If `true`, ignores the built-in trackpad.
+- `mouseDriverInitialDelay` (integer): The initial delay before moving the mouse with Mouse Keys.
+- `mouseDriverMaxSpeed` (integer): The maximum speed for the cursor when using Mouse Keys.
+- `slowKey` (boolean): If `true`, enables “Slow Keys” in the Keyboard options.
+- `slowKeyBeepOn` (boolean): If `true`, enables “click key sounds” for Slow Keys.
+- `slowKeyDelay` (integer): The acceptance delay, in milliseconds, for Slow Keys.
+- `stereoAsMono` (boolean): If `true`, plays stereo audio as mono.
+- `stickyKey` (boolean): If `true`, enables Sticky Keys in the Keyboard options.
+- `stickyKeyBeepOnModifier` (boolean): If `true`, enables the beep when a modifier key is set for Sticky Keys.
+- `stickyKeyShowWindow` (boolean): If `true`, enables “Display pressed keys on screen” for Sticky Keys.
+- `voiceOverOnOffKey` (boolean): If `true`, enables Voice Over.
+- `whiteOnBlack` (boolean): If `true`, enables Invert Colors in Display Accommodations.
+
 ## See Also
 
 - [object Desktop](desktop.md)

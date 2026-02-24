@@ -28,8 +28,8 @@ For more details, see [`setScopeBarButtonDividerImage(_:forLeftSegmentState:righ
 
 ## Parameters
 
-- `leftState`: The state may be   or  .
-- `rightState`: The state may be   or  .
+- `leftState`: The state of the left segment for which to provide the divider image. The state may be [`normal`](uicontrol/state-swift.struct/normal.md) or [`selected`](uicontrol/state-swift.struct/selected.md).
+- `rightState`: The state of the right segment for which to provide the divider image. The state may be [`normal`](uicontrol/state-swift.struct/normal.md) or [`selected`](uicontrol/state-swift.struct/selected.md).
 
 ## See Also
 

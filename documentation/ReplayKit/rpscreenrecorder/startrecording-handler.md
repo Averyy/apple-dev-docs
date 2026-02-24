@@ -25,7 +25,7 @@ Call [`startRecording(handler:)`](rpscreenrecorder/startrecording(handler:).md) 
 
 ## Parameters
 
-- `handler`: A block that is called when the request completes.
+- `handler`: A block that is called when the request completes. - **`error`**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes specific to ReplayKit.
 
 ## See Also
 

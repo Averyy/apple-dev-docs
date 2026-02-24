@@ -27,10 +27,10 @@ func cblas_sswap(_ N: __LAPACK_int, _ X: UnsafeMutablePointer<Float>?, _ INCX: _
 ## Parameters
 
 - `N`: Number of elements in vectors
-- `X`: Vector  . On return, contains elements copied from vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  . On return, contains elements copied from vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `X`: Vector `x`. On return, contains elements copied from vector `y`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `y`. On return, contains elements copied from vector `x`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

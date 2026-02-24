@@ -26,7 +26,7 @@ Call the [`removeTarget(_:)`](mpremotecommand/removetarget(_:).md) method to rem
 
 ## Parameters
 
-- `target`: The object that currently is a recipient of action messages sent by this object. Specify   to remove all targets.
+- `target`: The object that currently is a recipient of action messages sent by this object. Specify `nil` to remove all targets.
 
 ## See Also
 

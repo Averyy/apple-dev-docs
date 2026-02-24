@@ -26,7 +26,7 @@ The color’s value in the sRGB color space.
 
 ## Parameters
 
-- `environment`: The environment of the view displaying   the color.
+- `environment`: The environment of the view displaying the color.
 
 ## See Also
 

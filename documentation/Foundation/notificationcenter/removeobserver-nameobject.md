@@ -33,8 +33,8 @@ When unregistering an observer, use the most specific detail possible. For examp
 ## Parameters
 
 - `observer`: The observer to remove from the dispatch table. Specify an observer to remove only entries for this observer.
-- `aName`: The name of the notification to remove from the dispatch table. Specify a notification name to remove only entries with this notification name. When  , the receiver does not use notification names as criteria for removal.
-- `anObject`: The sender to remove from the dispatch table. Specify a notification sender to remove only entries with this sender. When  , the receiver does not use a sender as criteria for removal.
+- `aName`: The name of the notification to remove from the dispatch table. Specify a notification name to remove only entries with this notification name. When `nil`, the receiver does not use notification names as criteria for removal.
+- `anObject`: The sender to remove from the dispatch table. Specify a notification sender to remove only entries with this sender. When `nil`, the receiver does not use a sender as criteria for removal.
 
 ## See Also
 

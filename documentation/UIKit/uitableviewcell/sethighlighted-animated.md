@@ -28,8 +28,8 @@ A custom table cell may override this method to make any transitory appearance c
 
 ## Parameters
 
-- `highlighted`:   to set the cell as highlighted,   to set it as unhighlighted. The default is  .
-- `animated`:   to animate the transition between highlighted states,   to make the transition immediate.
+- `highlighted`: [`true`](https://developer.apple.com/documentation/Swift/true) to set the cell as highlighted, [`false`](https://developer.apple.com/documentation/Swift/false) to set it as unhighlighted. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition between highlighted states, [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
 
 ## See Also
 

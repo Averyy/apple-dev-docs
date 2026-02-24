@@ -25,7 +25,7 @@ URLs and match patterns can be granted on a per-tab basis. When the tab is known
 ## Parameters
 
 - `url`: The URL for which to return the status.
-- `tab`: The tab in which to return the permission status, or   if the tab is not known or the global status is desired.
+- `tab`: The tab in which to return the permission status, or `nil` if the tab is not known or the global status is desired.
 
 ## See Also
 

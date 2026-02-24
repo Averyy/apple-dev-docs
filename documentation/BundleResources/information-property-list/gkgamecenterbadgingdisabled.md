@@ -10,6 +10,10 @@ A Boolean value indicating whether GameKit can add badges to a turn-based game i
 - iPadOS 7.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)

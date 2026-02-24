@@ -34,7 +34,7 @@ For details about the format of advertising and response data, see the Bluetooth
 
 ## Parameters
 
-- `advertisementData`: An optional dictionary containing the data you want to advertise. The peripheral manager only supports two keys:   and  .
+- `advertisementData`: An optional dictionary containing the data you want to advertise. The peripheral manager only supports two keys: [`CBAdvertisementDataLocalNameKey`](cbadvertisementdatalocalnamekey.md) and [`CBAdvertisementDataServiceUUIDsKey`](cbadvertisementdataserviceuuidskey.md).
 
 ## Topics
 

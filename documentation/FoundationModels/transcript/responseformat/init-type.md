@@ -20,7 +20,7 @@ init<Content>(type: Content.Type) where Content : Generable
 
 ## Parameters
 
-- `type`: A   type to use as the response format.
+- `type`: A [`Generable`](generable.md) type to use as the response format.
 
 ## See Also
 

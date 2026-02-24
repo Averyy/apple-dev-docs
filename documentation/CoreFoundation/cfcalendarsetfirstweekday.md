@@ -23,7 +23,7 @@ func CFCalendarSetFirstWeekday(_ calendar: CFCalendar!, _ wkdy: CFIndex)
 ## Parameters
 
 - `calendar`: The calendar to modify.
-- `wkdy`: The index to set for the first weekday of  .
+- `wkdy`: The index to set for the first weekday of `calendar`.
 
 ## See Also
 

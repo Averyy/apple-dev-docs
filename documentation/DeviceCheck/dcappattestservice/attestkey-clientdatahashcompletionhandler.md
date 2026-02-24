@@ -47,9 +47,10 @@ If the method’s completion handler returns the [`serverUnavailable`](dcerror-s
 
 ## Parameters
 
-- `keyId`: The identifier you received when generating a cryptographic key by   calling the    method.
-- `clientDataHash`: A SHA256 hash of a unique, single-use data block that   embeds a challenge from your server. Should be at least 16 bytes in length.
-- `completionHandler`: A closure that the method calls upon completion with   the following parameters:
+- `keyId`: The identifier you received when generating a cryptographic key by calling the [`generateKey(completionHandler:)`](dcappattestservice/generatekey(completionhandler:).md) method.
+- `clientDataHash`: A SHA256 hash of a unique, single-use data block that embeds a challenge from your server. Should be at least 16 bytes in length.
+- `completionHandler`: A closure that the method calls upon completion with the following parameters: - `attestationObject`: A statement from Apple about the validity of the key associated with `keyId`. Send this to your server for processing.
+- `error`: A [`DCError`](dcerror-swift.struct.md) instance that indicates the reason for failure, or `nil` on success.
 
 ## See Also
 

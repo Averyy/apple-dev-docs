@@ -32,7 +32,7 @@ This action is not reversible.
 
 ## Parameters
 
-- `v`: The new value for the volume. The value should be between   (silence) and   (maximum value for source audio), inclusive.
+- `v`: The new value for the volume. The value should be between `0.0` (silence) and `1.0` (maximum value for source audio), inclusive.
 - `duration`: The duration of the animation, in seconds.
 
 ## See Also

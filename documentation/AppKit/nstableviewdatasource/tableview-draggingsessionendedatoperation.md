@@ -24,7 +24,7 @@ This delegate method can be used to determine when the dragging source operation
 - `tableView`: The table view.
 - `session`: The dragging session.
 - `screenPoint`: The ending drag location in screen coordinates.
-- `operation`: The drag operation. See   for supported values.
+- `operation`: The drag operation. See [`NSDragOperation`](nsdragoperation.md) for supported values.
 
 ## See Also
 

@@ -26,7 +26,7 @@ If the return value is [`ASAuthorizationResult.customMethod(_:)`](asauthorizatio
 ## Parameters
 
 - `request`: The authorization request to perform.
-- `customMethods`: An array of custom authorization methods to display in the system authorization UI. For more information, see  .
+- `customMethods`: An array of custom authorization methods to display in the system authorization UI. For more information, see [`ASAuthorizationCustomMethod`](asauthorizationcustommethod.md).
 
 ## See Also
 

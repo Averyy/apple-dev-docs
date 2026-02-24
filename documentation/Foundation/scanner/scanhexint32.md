@@ -32,7 +32,7 @@ Invoke this method with `NULL` as `intValue` to simply scan past a hexadecimal i
 
 ## Parameters
 
-- `result`: Upon return, contains the scanned value. Contains   on overflow.
+- `result`: Upon return, contains the scanned value. Contains `UINT_MAX` on overflow.
 
 ## See Also
 

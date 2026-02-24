@@ -22,7 +22,7 @@ final func sendMessage(_ content: RCSMessage.Text, to destination: RCSHandle, us
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of  .
+- `content`: The content of the message to send, as an instance of [`RCSMessage.Text`](rcsmessage/text.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

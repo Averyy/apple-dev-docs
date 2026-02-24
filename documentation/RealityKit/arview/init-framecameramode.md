@@ -20,7 +20,7 @@ Creates an AR view with the specified dimensions and camera mode.
 ## Parameters
 
 - `frameRect`: The frame rectangle for the view, measured in points.
-- `cameraMode`: An indication of whether to use the device’s camera or   a virtual one.
+- `cameraMode`: An indication of whether to use the device’s camera or a virtual one.
 
 ## See Also
 

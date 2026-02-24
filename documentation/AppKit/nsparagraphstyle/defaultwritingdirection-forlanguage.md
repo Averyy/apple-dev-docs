@@ -20,7 +20,7 @@ The default writing direction.
 
 ## Parameters
 
-- `languageName`: The language specified in ISO language region format. Can be   to return a default writing direction derived from the user’s defaults database.
+- `languageName`: The language specified in ISO language region format. Can be `nil` to return a default writing direction derived from the user’s defaults database.
 
 ## See Also
 

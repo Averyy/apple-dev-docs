@@ -26,13 +26,23 @@ This method is called when the user imports a document or directory. Override th
 
 The `importedDocumentItem` instance that you pass to the completion handler must define the following properties:
 
+- **[`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md)**: This identifier may be temporary. If you later receive a permanent identifier from your server, delete the temporary item and add the permanent one.
+- **[`parentItemIdentifier`](nsfileprovideritemprotocol/parentitemidentifier.md)**: Set to the value passed to the `parentItemIdentifier` parameter.
+- **[`filename`](nsfileprovideritemprotocol/filename.md)**: Set to the `fileURL` parameter’s  [`nameKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/nameKey) resource value.
+- **[`creationDate`](nsfileprovideritemprotocol/creationdate.md)**: Set to the `fileURL` parameter’s  [`creationDateKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/creationDateKey) resource value.
+- **[`contentModificationDate`](nsfileprovideritemprotocol/contentmodificationdate.md)**: Set to the `fileURL` parameter’s  [`contentModificationDateKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/contentModificationDateKey) resource value.
+- **[`typeIdentifier`](nsfileprovideritemprotocol/typeidentifier.md)**: Set to the `fileURL` parameter’s  [`typeIdentifierKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/typeIdentifierKey) resource value.
+- **[`documentSize`](nsfileprovideritemprotocol/documentsize.md)**: For a flat file, set to the `fileURL` parameter’s [`totalFileSizeKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/totalFileSizeKey) resource value. For a package, set to the sum of the contents’ file sizes.
+- **[`capabilities`](nsfileprovideritemprotocol/capabilities.md)**: Set to define the actions that the user can perform on the directory (for example, [`allowsReading`](nsfileprovideritemcapabilities/allowsreading.md) and [`allowsWriting`](nsfileprovideritemcapabilities/allowswriting.md)).
+
 The user’s ability to import an item into a directory is controlled by the parent directory’s [`allowsAddingSubItems`](nsfileprovideritemcapabilities/allowsaddingsubitems.md) capability.
 
 ## Parameters
 
-- `fileURL`: A security-scoped URL for the file to import. Call   on the URL before accessing it and    when finished.
+- `fileURL`: A security-scoped URL for the file to import. Call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/startAccessingSecurityScopedResource()) on the URL before accessing it and  [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/stopAccessingSecurityScopedResource()) when finished.
 - `parentItemIdentifier`: The persistent identifier for the directory where the item will be imported.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`importedDocumentItem`**: A provider item that describes the newly imported item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

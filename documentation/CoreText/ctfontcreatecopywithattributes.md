@@ -31,8 +31,8 @@ This function provides a mechanism to change attributes quickly on a given font 
 ## Parameters
 
 - `font`: The original font reference on which to base the new font.
-- `size`: The point size for the font reference. If   is specified, the original font’s size is preserved.
-- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be  .  If   is specified, the original font’s matrix is preserved.
+- `size`: The point size for the font reference. If `0.0` is specified, the original font’s size is preserved.
+- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be `NULL`.  If `NULL` is specified, the original font’s matrix is preserved.
 - `attributes`: A font descriptor containing additional attributes that the new font should contain.
 
 ## See Also

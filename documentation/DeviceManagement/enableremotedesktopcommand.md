@@ -20,6 +20,11 @@ object EnableRemoteDesktopCommand
 - [object EnableRemoteDesktopCommand.Command](enableremotedesktopcommand/command-data.dictionary.md)
   The command to enable Remote Desktop on a device.
 
+## Properties
+
+- `Command` (EnableRemoteDesktopCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object EnableRemoteDesktopResponse](enableremotedesktopresponse.md)

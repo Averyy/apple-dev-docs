@@ -107,8 +107,8 @@ Actions accumulate for a given edge if you call the modifier multiple times on t
 
 ## Parameters
 
-- `edge`: The edge of the view to associate the swipe actions with.   The default is  .
-- `allowsFullSwipe`: A Boolean value that indicates whether a full swipe   automatically performs the first action. The default is  .
+- `edge`: The edge of the view to associate the swipe actions with. The default is [`HorizontalEdge.trailing`](horizontaledge/trailing.md).
+- `allowsFullSwipe`: A Boolean value that indicates whether a full swipe automatically performs the first action. The default is `true`.
 - `content`: The content of the swipe actions.
 
 ## See Also

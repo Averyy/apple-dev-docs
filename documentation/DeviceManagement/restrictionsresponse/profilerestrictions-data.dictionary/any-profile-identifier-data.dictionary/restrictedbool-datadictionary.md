@@ -24,6 +24,10 @@ object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Restricte
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool.ANY restriction name](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedbool-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains Boolean restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool.ANY restriction name): The Boolean restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/intersection-data.dictionary.md)

@@ -32,7 +32,7 @@ If you pass `nil` for the geometry parameter, SceneKit renders no geometry for t
 
 ## Parameters
 
-- `geometry`: The geometry to render for this level of detail, or   if SceneKit should render no geometry at this level of detail.
+- `geometry`: The geometry to render for this level of detail, or `nil` if SceneKit should render no geometry at this level of detail.
 - `distance`: The minimum distance from the current point of view for this level of detail to appear.
 
 ## See Also

@@ -28,9 +28,9 @@ init(weightNames: [String], name: String = "", from: Value? = nil, to: Value? = 
 - `by`: An amount that increments the animated weights during the animation.
 - `duration`: The total playback time.
 - `timing`: An option that determines the animation’s pace over time.
-- `isAdditive`: A Boolean value that indicates whether the animation   blends additively with concurrent animations.
+- `isAdditive`: A Boolean value that indicates whether the animation blends additively with concurrent animations.
 - `bindTarget`: A textual name that identifies the particular property that animates.
-- `blendLayer`: The order in which the framework composites the animation   into the view.
+- `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.
 - `fillMode`: The playback behavior outside of the normal duration.
 - `trimStart`: The optional time, in seconds, at which the animation plays.

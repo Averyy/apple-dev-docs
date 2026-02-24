@@ -32,9 +32,9 @@ After saving the share and all records to the server, return the resulting [`CKS
 
 ## Parameters
 
-- `container`: The   for the share.
-- `allowedSharingOptions`: The  . The   option is the default.
-- `preparationHandler`: The handler the system calls in your app to create a new  .
+- `container`: The [`CKContainer`](ckcontainer.md) for the share.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](ckallowedsharingoptions.md). The [`standard`](ckallowedsharingoptions/standard.md) option is the default.
+- `preparationHandler`: The handler the system calls in your app to create a new [`CKShare`](ckshare.md).
 
 ## See Also
 

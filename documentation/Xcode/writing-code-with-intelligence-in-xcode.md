@@ -30,9 +30,13 @@ If you choose an agentic coding tool that you enable in Intelligence settings, i
 
 At any time, you can ask Xcode to explain code and find files to implement a new feature or just to familiarize yourself with some code. For example, if you download the [`Landmarks: Building an app with Liquid Glass`](https://developer.apple.com/documentation/SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass) sample app, you can select code and ask questions, such as:
 
+- *What does this app do?*
+
 ![A screenshot of the coding assistant in the sidebar and a source file open in the source editor on the right. The coding assistant shows the results of entering the prompt, What does this app do? in the conversation area.](https://docs-assets.developer.apple.com/published/d60a98921926d3202f1326eea1e1fa44/coding-assistant-explore-code-question%402x.png)
 
 Xcode responds under your prompt in the conversation area of the coding assistant. The response may contain content that you can interact with. For example, if the response references a filename, click the arrow button next to the filename to open it in the source editor. To continue the conversation with the coding assistant, enter follow-up prompts, like:
+
+- *Tell me more about the views that display this object*
 
 When you enter another prompt, the coding assistant appends your prompt and response to the conversation. Xcode maintains an entire transcript of your interactions with the model so you can refer back to them.
 
@@ -50,6 +54,11 @@ Give Xcode specific instructions on how to generate or modify code. If you aren�
 
 For example, if you’re new to Swift and SwiftUI, you can code along with the modifications that Xcode makes. Start with a Swift app that you create from a template and instruct Xcode to make incremental changes, such as:
 
+- *Add properties and methods to a class*
+- *Create a list view and wrap it in a NavigationStack*
+- *Add the ability to edit the properties of items in the list view*
+- *Change the list view to a table view showing all the properties*
+
 While working on a response, Xcode displays progress messages in the message text field before posting its response in the conversation area. The response may contain a description of the changes, including some steps or code changes.
 
 ![A screenshot of the coding assistant in the sidebar on the left and a file opened in the source editor on the right. The coding assistant shows the prompt, a code snippet, and a description of the changes.](https://docs-assets.developer.apple.com/published/1d35b1e06e006254417f967322b38501/coding-assistant-write-code%402x.png)
@@ -62,7 +71,7 @@ To generate code about specific symbols while in the source editor, you can use 
 
 ##### Apply Changes to Your Code
 
-You can see code changes that Xcode automatically applies to your files as file  in the conversation. These snippets show the modified or added file, and clicking on them takes you to that specific change in the source editor.
+You can see code changes that Xcode automatically applies to your files as file *snippets* in the conversation. These snippets show the modified or added file, and clicking on them takes you to that specific change in the source editor.
 
 > 💡 **Tip**: Use snippets to navigate through all of the changes that Xcode applies and review them in the source editor.
 
@@ -116,7 +125,7 @@ Let Xcode draft your API documentation for you. Select a symbol in the source ed
 
 ![A screenshot of the Project navigator on the left, a file open in the source editor with generated DocC style comments above the structure name.](https://docs-assets.developer.apple.com/published/7316da7c55972c15a5a1f9957cf4a3fe/coding-assistant-generate-docs%402x.png)
 
-Xcode can add [`DocC`](https://developer.apple.com/documentation/DocC)-style comments to the source file above the symbol. For example, select a class and Xcode adds documentation for the class, its properties and methods, including the method parameters.
+Xcode can add doc://com.apple.documentation/documentation/DocC-style comments to the source file above the symbol. For example, select a class and Xcode adds documentation for the class, its properties and methods, including the method parameters.
 
 Xcode displays coding intelligence controls at the bottom of the source editor that summarizes the change. To see the response in the conversation area of the coding assistant, click the coding assistant button. To undo changes, click the Revert button.
 

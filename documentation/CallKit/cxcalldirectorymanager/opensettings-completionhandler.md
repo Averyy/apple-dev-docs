@@ -29,7 +29,7 @@ Use this method to open the Settings app and show the Call Blocking & Identifica
 
 ## Parameters
 
-- `completion`: A block executed when the manager finishes opening the Call Directory panel.
+- `completion`: A block executed when the manager finishes opening the Call Directory panel. - **error**: If an error occurred, an error object indicating how the operation failed; otherwise, `nil`.
 
 
 ---

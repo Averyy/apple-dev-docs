@@ -19,7 +19,7 @@ static func button(_ buttonNumber: Int) -> UIEvent.ButtonMask
 
 ## Parameters
 
-- `buttonNumber`: The index of the button on the input device. Pass   to represent  , and   to represent  .
+- `buttonNumber`: The index of the button on the input device. Pass `1` to represent [`primary`](uievent/buttonmask-swift.struct/primary.md), and `2` to represent [`secondary`](uievent/buttonmask-swift.struct/secondary.md).
 
 ## See Also
 

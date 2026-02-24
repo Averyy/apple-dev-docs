@@ -31,7 +31,7 @@ In fuzzy logic, this method is called the OR Zadeh operator, because it correspo
 
 ## Parameters
 
-- `facts`: An array of objects representing truths claimed or rejected by the rule system. For details, see the   property.
+- `facts`: An array of objects representing truths claimed or rejected by the rule system. For details, see the [`facts`](gkrulesystem/facts.md) property.
 
 ## See Also
 

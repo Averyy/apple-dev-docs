@@ -24,7 +24,7 @@ func setShadow(offset: CGSize, blur: CGFloat, color: CGColor?)
 
 - `offset`: Specifies a translation in base-space.
 - `blur`: A non-negative number specifying the amount of blur.
-- `color`: Specifies the color of the shadow, which may contain a non-opaque alpha value. If  , then shadowing is disabled.
+- `color`: Specifies the color of the shadow, which may contain a non-opaque alpha value. If `NULL`, then shadowing is disabled.
 
 ## See Also
 

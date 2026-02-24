@@ -48,7 +48,7 @@ struct MyApp: App {
 
 ## Parameters
 
-- `icon`: The custom icon to use for the alert.   Passing   will use the default app icon.
+- `icon`: The custom icon to use for the alert. Passing `nil` will use the default app icon.
 
 ## See Also
 

@@ -24,8 +24,8 @@ init(for action: ActionType, events: [ActionAnimation<ActionType>.EventDefinitio
 - `action`: The user action.
 - `events`: An array of event definitions defining when each action event occurs.
 - `name`: The name of the animation.
-- `bindTarget`: A textual name that identifies the particular property   that animates.
-- `blendLayer`: The order in which the framework composites the animation   into the view.
+- `bindTarget`: A textual name that identifies the particular property that animates.
+- `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.
 - `fillMode`: The playback behavior outside of the normal duration.
 - `trimStart`: The optional time, in seconds, at which the animation plays.

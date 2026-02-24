@@ -9,6 +9,12 @@ The app’s white-point adaptivity style, enabled on devices with True Tone disp
 - iOS 9.3+
 - iPadOS 9.3+
 
+
+
+**Type**: string
+
+**Default**: `UIWhitePointAdaptivityStyleStandard`
+
 #### Discussion
 
 In split view, the system applies the style on the entire screen from the app with the weaker adaptivity style setting. For example, if one app uses the `UIWhitePointAdaptivityStylePhoto` style and another uses the `UIWhitePointAdaptivityStyleReading` style, the system uses the weaker `UIWhitePointAdaptivityStyleReading` style for the entire screen.

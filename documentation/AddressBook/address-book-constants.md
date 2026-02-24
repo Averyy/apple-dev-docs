@@ -85,13 +85,13 @@ Get the constants you use to specify Address Book information.
 - [var kABNotEqualCaseInsensitive: _ABSearchComparison](kabnotequalcaseinsensitive.md)
   Search for elements that are not equal to the value, ignoring case.
 - [var kABNotWithinIntervalAroundToday: _ABSearchComparison](kabnotwithinintervalaroundtoday.md)
-  Search for elements that are  within a time interval (in seconds) forward or backward from today.
+  Search for elements that are *not* within a time interval (in seconds) forward or backward from today.
 - [var kABNotWithinIntervalAroundTodayYearless: _ABSearchComparison](kabnotwithinintervalaroundtodayyearless.md)
-  Search for elements that are  within a time interval (in seconds) forward or backward from this day in any year.
+  Search for elements that are *not* within a time interval (in seconds) forward or backward from this day in any year.
 - [var kABNotWithinIntervalFromToday: _ABSearchComparison](kabnotwithinintervalfromtoday.md)
-  Search for elements that are  within a time interval (in seconds) forward from today.
+  Search for elements that are *not* within a time interval (in seconds) forward from today.
 - [var kABNotWithinIntervalFromTodayYearless: _ABSearchComparison](kabnotwithinintervalfromtodayyearless.md)
-  Search for elements that are  within a time interval (in seconds) forward from this day in any year.
+  Search for elements that are *not* within a time interval (in seconds) forward from this day in any year.
 - [let kABOrganizationPhoneticProperty: String](kaborganizationphoneticproperty.md)
   The phonetic representation of an organization name.
 - [var kABPrefixMatch: _ABSearchComparison](kabprefixmatch.md)

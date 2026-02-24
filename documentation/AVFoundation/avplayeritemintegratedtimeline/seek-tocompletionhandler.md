@@ -23,7 +23,7 @@ func seek(to date: Date) async -> Bool
 ## Parameters
 
 - `date`: A date represented in the integrated time domain.
-- `completionHandler`: A callback the system invokes after the seek completes. It passes a Boolean value of   if the playhead moved to the new date.
+- `completionHandler`: A callback the system invokes after the seek completes. It passes a Boolean value of `true` if the playhead moved to the new date.
 
 ## See Also
 

@@ -10,6 +10,11 @@ At the root level, there are one or more tween entry atoms; these atoms have an 
 
 Each tween entry atom contains several more atoms that describe how to perform the interpolation. The atom ID field in each of these atoms must be set to 1.
 
+- **Tween start atom (atom type is `'twst'`)**: This atom specifies the time at which the interpolation is to start. The time is expressed in the media’s time coordinate system. If this atom is not present, the starting offset is assumed to be 0.
+- **Tween duration atom (atom type is `'twdu'`)**: This atom specifies how long the interpolation is to last. The time is expressed in the media’s time coordinate system. If this atom is not present, the duration is assumed to be the length of the sample.
+- **Tween data atom (atom type is `'twdt'`)**: This atom contains the actual values for the interpolation. The contents depend on the value of the tween type atom.
+- **Tween type atom (atom type is `'twnt'`)**: Describes the type of interpolation to perform.
+
 The following table shows all currently defined tween types. All tween types are currently supported using linear interpolation.
 
 | Tween type | Value | Tween data |

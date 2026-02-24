@@ -21,7 +21,7 @@ virtual kern_return_t FindPCICapability(uint32_t capabilityID, uint64_t searchOf
 
 ## Parameters
 
-- `capabilityID`: A PCI capability ID. PCI Express devices may support extended capabilities in configuraiton space, starting at offset  . To search this space, pass an ID that is the negated value of the PCI-SIG assigned ID for the extended capability.
+- `capabilityID`: A PCI capability ID. PCI Express devices may support extended capabilities in configuraiton space, starting at offset `0x100`. To search this space, pass an ID that is the negated value of the PCI-SIG assigned ID for the extended capability.
 - `searchOffset`: The offset into configuration space at which to start the search.
 - `foundCapabilityOffset`: A variable in which you want to store the resulting offset value.
 

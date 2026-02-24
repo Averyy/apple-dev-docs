@@ -20,7 +20,7 @@ The `NSCharacterShapeAttributeName` constant is defined in NSAttributedString Ap
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

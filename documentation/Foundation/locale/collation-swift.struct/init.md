@@ -22,7 +22,7 @@ init(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: The BCP 47 collation identifier, like   for a language’s standard ordering, or   for phonetic ordering.
+- `identifier`: The BCP 47 collation identifier, like `standard` for a language’s standard ordering, or `phonetic` for phonetic ordering.
 
 
 ---

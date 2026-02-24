@@ -27,7 +27,7 @@ Returns the index into the arguments array for the given function argument, or `
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
 
 ## See Also

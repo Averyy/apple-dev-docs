@@ -19,7 +19,7 @@ class func requestAuthorization() async -> MPMediaLibraryAuthorizationStatus
 
 ## Parameters
 
-- `completionHandler`: A block that the system calls after the user chooses whether to authorize the app.
+- `completionHandler`: A block that the system calls after the user chooses whether to authorize the app. - **status**: The status chosen by the user.
 
 ## See Also
 

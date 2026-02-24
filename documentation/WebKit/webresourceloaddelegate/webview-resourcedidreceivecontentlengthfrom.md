@@ -21,8 +21,8 @@ Delegates might implement this method to update the load status of an individual
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `identifier`: An identifier object used to track the resource being loaded by  .
-- `length`: The   parameter type was changed from type   to type   in OS X v10.5.
+- `identifier`: An identifier object used to track the resource being loaded by `dataSource`.
+- `length`: The amount of incremental data received for this resource—the amount of data loaded since the last time this method was invoked for this resource, not the total amount received for this resource. The `length` parameter type was changed from type `unsigned int` to type `NSUInteger` in OS X v10.5.
 - `dataSource`: The data source for this web view.
 
 ## See Also

@@ -22,7 +22,7 @@ init<V>(_ base: Binding<V>) where Value == AnyHashable, V : Hashable
 
 ## Parameters
 
-- `base`: A   value to project to an   value.
+- `base`: A `Hashable` value to project to an `AnyHashable` value.
 
 ## See Also
 

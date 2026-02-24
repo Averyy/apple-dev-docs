@@ -25,7 +25,7 @@ An access instance can have any number of ACL entries for specific operations or
 ## Parameters
 
 - `accessRef`: The access instance from which to retrieve the information.
-- `authorizationTag`: An access control list authorization tag. See   for a list of possible values. The method returns only those ACL entries that apply to the operation indicated by this tag.
+- `authorizationTag`: An access control list authorization tag. See [`ACL Authorization Keys`](acl-authorization-keys.md) for a list of possible values. The method returns only those ACL entries that apply to the operation indicated by this tag.
 
 
 ---

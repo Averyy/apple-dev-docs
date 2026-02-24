@@ -36,8 +36,8 @@ let text1 = Text(key) // Text contains "Resistance: 640 ohms"
 
 ## Parameters
 
-- `subject`: An    to append.
-- `formatter`: A formatter to convert   to a string   representation.
+- `subject`: An [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) to append.
+- `formatter`: A formatter to convert `subject` to a string representation.
 
 ## See Also
 

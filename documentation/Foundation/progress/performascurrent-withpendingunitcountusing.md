@@ -30,7 +30,7 @@ Use this function as a convenience method to wrap an existing method or block to
 
 ## Parameters
 
-- `unitCount`: The number of units of work to increment for the current progress object. This number represents the portion of work that is complete in relation to the total number of units of work for the current thread’s progress object. The units of work for this parameter must be the same units of work as the current progress object’s   property.
+- `unitCount`: The number of units of work to increment for the current progress object. This number represents the portion of work that is complete in relation to the total number of units of work for the current thread’s progress object. The units of work for this parameter must be the same units of work as the current progress object’s [`totalUnitCount`](progress/totalunitcount.md) property.
 - `work`: A block that wraps the work you specify to complete for incrementing the current progress.
 
 ## See Also

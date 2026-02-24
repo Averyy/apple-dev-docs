@@ -32,7 +32,7 @@ Use this initializer when constructing a new mesh from custom data, or when buil
 - `name`: An identifier for the semantic use of the vertex attribute.
 - `format`: The format of per-vertex data for the attribute.
 - `offset`: The offset, in bytes, of vertex data for the attribute in a vertex buffer, relative to the start of data for each vertex.
-- `bufferIndex`: The index of the vertex buffer containing data for this attribute in a mesh’s   array.
+- `bufferIndex`: The index of the vertex buffer containing data for this attribute in a mesh’s [`vertexBuffers`](mdlmesh/vertexbuffers.md) array.
 
 
 ---

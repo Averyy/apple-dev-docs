@@ -34,9 +34,9 @@ This function ignores the [`descendRecursively`](cfurlenumeratoroptions/descendr
 
 ## Parameters
 
-- `alloc`: The memory allocator to use. If  , the default allocator is used.
+- `alloc`: The memory allocator to use. If `NULL`, the default allocator is used.
 - `option`: A bit array of enumerator behavior options.
-- `propertyKeys`: An array of file property keys to prefetch for each enumerated URL. Can be  .
+- `propertyKeys`: An array of file property keys to prefetch for each enumerated URL. Can be `NULL`.
 
 ## See Also
 

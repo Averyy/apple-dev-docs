@@ -26,7 +26,7 @@ The Boolean value associated with the key `key`. Returns [`false`](https://devel
 
 ## Parameters
 
-- `key`: A key in the archive within the current decoding scope.   must not be  .
+- `key`: A key in the archive within the current decoding scope. `key` must not be `nil`.
 
 ## See Also
 

@@ -32,7 +32,7 @@ Use either method if your application manages its own archiving system for libra
 
 ## Parameters
 
-- `data`: The data from a precompiled Metal library. For more information, see  .
+- `data`: The data from a precompiled Metal library. For more information, see [`Building a shader library by precompiling source files`](building-a-shader-library-by-precompiling-source-files.md).
 
 ## See Also
 

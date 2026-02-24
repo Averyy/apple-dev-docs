@@ -26,7 +26,7 @@ When synthesis of `text` finishes normally or is stopped, the message [`speechSy
 
 ## Parameters
 
-- `string`: Text to speak. When   or empty, no synthesis occurs.
+- `string`: Text to speak. When `nil` or empty, no synthesis occurs.
 
 ## See Also
 

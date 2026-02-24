@@ -32,8 +32,8 @@ The data in the stream must be in one of the 5 supported encodings listed in the
 
 ## Parameters
 
-- `stream`: The stream should be open and configured.
-- `opt`: For possible values, see  .
+- `stream`: A stream from which to read JSON data. The stream should be open and configured.
+- `opt`: Options for reading the JSON data and creating the Foundation objects. For possible values, see [`JSONSerialization.ReadingOptions`](jsonserialization/readingoptions.md).
 
 ## See Also
 

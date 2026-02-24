@@ -8,6 +8,10 @@ Configurations for scenes you use to display SwiftUI content in an immersive spa
 **Availability**:
 - visionOS 1.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Use this key to specify scene configurations for a session role. Each scene configuration corresponds to one you use for content you display on the device. The first item in the array represents the default scene configuration for this role. Use [`UIApplicationPreferredDefaultSceneSessionRole`](information-property-list/uiapplicationpreferreddefaultscenesessionrole.md) to indicate a preferred initial scene session role for your app.

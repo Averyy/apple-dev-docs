@@ -29,6 +29,8 @@ This method applies the Gabor gradients filter to an image. The effect targets t
 
 The gabor gradients filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in a darker image with shades of green and red outlining the texture of objects:
 
 ```swift

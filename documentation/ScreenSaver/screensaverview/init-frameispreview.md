@@ -21,7 +21,7 @@ The screen saver application installs the new view object into the view hierarch
 ## Parameters
 
 - `frame`: The frame rectangle for the view.
-- `isPreview`:   if this view provides a preview for system settings, or   if the system fills the screen with your view’s contents.
+- `isPreview`: [`true`](https://developer.apple.com/documentation/Swift/true) if this view provides a preview for system settings, or [`false`](https://developer.apple.com/documentation/Swift/false) if the system fills the screen with your view’s contents.
 
 
 ---

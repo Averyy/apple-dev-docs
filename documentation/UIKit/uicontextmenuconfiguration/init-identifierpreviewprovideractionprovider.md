@@ -25,9 +25,9 @@ A new menu configuration object with the specified provider blocks.
 
 ## Parameters
 
-- `identifier`: A unique identifier for the menu configuration object. If you want this method to generate a unique identifier for you, specify  .
-- `previewProvider`: An optional block that returns the custom view controller that you use to preview content. If you specify  , UIKit uses a default preview view controller.
-- `actionProvider`: An optional block that provides a contextual menu to display with the preview. If you specify  , UIKit doesn’t display a contextual menu with the previewed content.
+- `identifier`: A unique identifier for the menu configuration object. If you want this method to generate a unique identifier for you, specify `nil`.
+- `previewProvider`: An optional block that returns the custom view controller that you use to preview content. If you specify `nil`, UIKit uses a default preview view controller.
+- `actionProvider`: An optional block that provides a contextual menu to display with the preview. If you specify `nil`, UIKit doesn’t display a contextual menu with the previewed content.
 
 ## See Also
 

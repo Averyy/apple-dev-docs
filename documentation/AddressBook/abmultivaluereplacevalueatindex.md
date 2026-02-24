@@ -28,7 +28,7 @@ This function takes an index. If you have an identifier, use the [`ABMultiValueG
 
 - `multiValue`: The multivalue property containing the value to replace.
 - `value`: The new value.
-- `index`: Raises an exception when out of bounds.
+- `index`: The location, in `multiValue`, of the value to replace. Raises an exception when out of bounds.
 
 ## See Also
 

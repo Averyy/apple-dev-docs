@@ -12,7 +12,7 @@ The macOS 13.3 SDK provides support to develop apps for Mac computers running Ve
 
 ###### Known Issues
 
-- Apple Studio Display firmware update starts showing progress but never completes. (107287354)  To install other updates including future macOS Beta Updates, click “More info…” in Software Update Settings, uncheck Apple Studio Display firmware update, and click “Install Now.”
+- Apple Studio Display firmware update starts showing progress but never completes. (107287354) **Workaround:** To install other updates including future macOS Beta Updates, click “More info…” in Software Update Settings, uncheck Apple Studio Display firmware update, and click “Install Now.”
 
 ##### Css
 

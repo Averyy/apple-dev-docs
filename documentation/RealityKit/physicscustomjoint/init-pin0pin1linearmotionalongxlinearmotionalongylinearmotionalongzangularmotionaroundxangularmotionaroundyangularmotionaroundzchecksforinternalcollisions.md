@@ -29,7 +29,7 @@ init(pin0: GeometricPin, pin1: GeometricPin, linearMotionAlongX: PhysicsCustomJo
 - `angularMotionAroundX`: The angular motion limits around the x-axis.
 - `angularMotionAroundY`: The angular motion limits around the y-axis.
 - `angularMotionAroundZ`: The angular motion limits around the z-axis.
-- `checksForInternalCollisions`: A Boolean that indicates whether the joint   checks for collisions between the two   instances.
+- `checksForInternalCollisions`: A Boolean that indicates whether the joint checks for collisions between the two [`Entity`](entity.md) instances.
 
 
 ---

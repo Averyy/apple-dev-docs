@@ -28,7 +28,7 @@ For more information, see [`Enabling alternative distribution app installation i
 
 ## Parameters
 
-- `url`: The unparsed   URL that triggers the installation request.
+- `url`: The unparsed `marketplace-kit` URL that triggers the installation request.
 - `referrer`: The origin of the top frame that contains the alternative marketplace installation URL.
 
 ## See Also

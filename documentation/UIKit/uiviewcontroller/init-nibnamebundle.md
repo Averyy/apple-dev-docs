@@ -34,7 +34,7 @@ For more information about how a view controller loads its view, see [`View Cont
 
 ## Parameters
 
-- `nibNameOrNil`: The name of the nib file to associate with the view controller. The nib file name should not contain any leading path information. If you specify  , the   property is set to  .
+- `nibNameOrNil`: The name of the nib file to associate with the view controller. The nib file name should not contain any leading path information. If you specify `nil`, the [`nibName`](uiviewcontroller/nibname.md) property is set to `nil`.
 - `nibBundleOrNil`: The bundle in which to search for the nib file. This method looks for the nib file in the bundle’s language-specific project directories first, followed by the Resources directory.
 
 ## See Also

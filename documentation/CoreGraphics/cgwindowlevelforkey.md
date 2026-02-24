@@ -25,7 +25,7 @@ This function is not recommended for use in applications. (This function is prov
 
 ## Parameters
 
-- `key`: A window level key constant that represents one of the standard window types. See  .
+- `key`: A window level key constant that represents one of the standard window types. See [`CGWindowLevelKey`](cgwindowlevelkey.md).
 
 ## See Also
 

@@ -24,7 +24,7 @@ The new view containing the designated visual effect.
 
 ## Parameters
 
-- `effect`: The   you provide for the view. This can be a   or a  .
+- `effect`: The [`UIVisualEffect`](uivisualeffect.md) you provide for the view. This can be a [`UIBlurEffect`](uiblureffect.md) or a [`UIVibrancyEffect`](uivibrancyeffect.md).
 
 ## See Also
 

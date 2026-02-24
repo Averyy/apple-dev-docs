@@ -22,10 +22,10 @@ The expiration date determines the installation experience and lifecycle behavio
 
 The expiration date determines the following behavior:
 
-- : If the expiration date falls within three calendar days from the current date (for example, January 3rd to January 6th), the system sets the eSIM as the default data line upon installation and skips the SIM setup flow when the device enters dual-SIM mode. The system also automatically labels the eSIM with the carrier name. For devices in single-SIM mode, the system sets the eSIM as the default data line and labels it with the carrier name.
-- : If the expiration date falls more than three calendar days away (for example, January 7th or later when the current date is January 3rd), the eSIM installs normally and the person proceeds through the standard SIM setup flow.
-- : For both scenarios above, the system automatically deactivates the eSIM at 5 AM on the expiration date.
-- : If the expiration date exceeds forty-five days from the current date, or if the expiration date is invalid, the system rejects the installation and the operation fails.
+- **Within three calendar days**: If the expiration date falls within three calendar days from the current date (for example, January 3rd to January 6th), the system sets the eSIM as the default data line upon installation and skips the SIM setup flow when the device enters dual-SIM mode. The system also automatically labels the eSIM with the carrier name. For devices in single-SIM mode, the system sets the eSIM as the default data line and labels it with the carrier name.
+- **More than three calendar days**: If the expiration date falls more than three calendar days away (for example, January 7th or later when the current date is January 3rd), the eSIM installs normally and the person proceeds through the standard SIM setup flow.
+- **Expiration behavior**: For both scenarios above, the system automatically deactivates the eSIM at 5 AM on the expiration date.
+- **Installation limits**: If the expiration date exceeds forty-five days from the current date, or if the expiration date is invalid, the system rejects the installation and the operation fails.
 
 
 ---

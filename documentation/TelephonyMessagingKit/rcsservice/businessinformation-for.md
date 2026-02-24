@@ -22,7 +22,7 @@ The actual render information structure or error.
 
 ## Parameters
 
-- `request`:   containing the request parameters.
+- `request`: `BusinessInformationRequest` containing the request parameters.
 
 ## See Also
 

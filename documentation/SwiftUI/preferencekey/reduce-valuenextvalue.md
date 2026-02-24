@@ -27,7 +27,7 @@ This method receives its values in view-tree order. Conceptually, this combines 
 
 ## Parameters
 
-- `value`: The value accumulated through previous calls to this method.   The implementation should modify this value.
+- `value`: The value accumulated through previous calls to this method. The implementation should modify this value.
 - `nextValue`: A closure that returns the next value in the sequence.
 
 

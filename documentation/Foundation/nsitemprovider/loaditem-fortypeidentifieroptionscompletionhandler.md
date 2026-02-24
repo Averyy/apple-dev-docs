@@ -29,8 +29,8 @@ The type information for the first parameter of your `completionHandler` block s
 ## Parameters
 
 - `typeIdentifier`: A string that represents the desired UTI.
-- `options`: A dictionary of keys and values that provide information about the item, such as the size of an image. (See   for a key you can use.)
-- `completionHandler`: A completion handler block to execute with the results. For information about the format of this block, see  .
+- `options`: A dictionary of keys and values that provide information about the item, such as the size of an image. (See [`NSItemProviderPreferredImageSizeKey`](nsitemproviderpreferredimagesizekey.md) for a key you can use.)
+- `completionHandler`: A completion handler block to execute with the results. For information about the format of this block, see [`NSItemProvider.CompletionHandler`](nsitemprovider/completionhandler.md).
 
 ## See Also
 

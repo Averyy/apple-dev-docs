@@ -12,7 +12,7 @@ For a deeper understanding of how to write symbol documentation, please refer to
 
 ##### Add a Basic Description for Each Symbol
 
-The first step toward writing great documentation is to add single-sentence abstracts or summaries, and where necessary,  sections, to each of your public symbols.
+The first step toward writing great documentation is to add single-sentence abstracts or summaries, and where necessary, *Discussion* sections, to each of your public symbols.
 
 Use the Code Actions menu in Xcode to generate a template that you fill out. Control-click the symbol in the source editor and choose Add Documentation from the Code Actions menu.
 
@@ -55,7 +55,7 @@ After you add documentation for a method’s parameters, it appears in Xcode’s
 
 ##### Describe the Return Value of a Method
 
-For methods that return a value, include a  section in your documentation comment to describe the returned value.
+For methods that return a value, include a *Returns* section in your documentation comment to describe the returned value.
 
 ```swift
 /// - Returns: The sloth's energy level after eating.
@@ -68,7 +68,7 @@ You can see your Returns section in the symbol reference page that DocC generate
 
 ##### Describe the Thrown Errors of a Method
 
-If a method can throw an error, add a  section to your documentation comment. Explain the circumstances that cause the method to throw an error, and list the types of possible errors.
+If a method can throw an error, add a *Throws* section to your documentation comment. Explain the circumstances that cause the method to throw an error, and list the types of possible errors.
 
 ```swift
 /// - Throws: `SlothError.tooMuchFood` if the quantity is more than 100.

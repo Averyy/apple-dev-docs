@@ -23,7 +23,7 @@ convenience init(format predicateFormat: String, _ args: any CVarArg...)
 ## Parameters
 
 - `predicateFormat`: The format string for the new predicate.
-- `args`: The arguments to substitute into  .
+- `args`: The arguments to substitute into `predicateFormat`.
 
 ## See Also
 

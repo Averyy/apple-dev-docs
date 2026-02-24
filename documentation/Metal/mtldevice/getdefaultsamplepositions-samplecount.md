@@ -56,7 +56,7 @@ The table lists the indices and default locations for GPUs that support 1, 2, 4,
 
 ## Parameters
 
-- `sampleCount`: The number of points a GPU can sample from a texture. Ensure the GPU can support the   value by first calling the device’s   method.
+- `sampleCount`: The number of points a GPU can sample from a texture. Ensure the GPU can support the `sampleCount` value by first calling the device’s [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method.
 
 ## See Also
 

@@ -32,7 +32,7 @@ Video composition instructions should reference `trackID` where the rendered ani
 ## Parameters
 
 - `layer`: The Core Animation layer to add.
-- `trackID`:  should not match any real trackID in the source.
+- `trackID`: A track ID to identify the track. `trackID` should not match any real trackID in the source.
 
 ## See Also
 

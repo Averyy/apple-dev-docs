@@ -31,8 +31,8 @@ When either `contentData` or `uti` is `nil`, TextKit considers the receiver to b
 
 ## Parameters
 
-- `contentData`: Data to use for the text attachment contents. Can be  .
-- `uti`: A uniform type identifier specifying the data type of the attachment contents. Can be  .
+- `contentData`: Data to use for the text attachment contents. Can be `nil`.
+- `uti`: A uniform type identifier specifying the data type of the attachment contents. Can be `nil`.
 
 ## See Also
 

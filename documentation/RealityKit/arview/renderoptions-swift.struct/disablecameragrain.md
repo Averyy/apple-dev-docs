@@ -18,7 +18,7 @@ static let disableCameraGrain: ARView.RenderOptions
 
 #### Discussion
 
-Images from a camera may contain a small amount of noise, called , that increases as the available light decreases. Virtual objects rendered without noise and placed into an otherwise grainy image look out of place. You can use RealityKit to add noise to the rendered output to match noise in the camera feed.
+Images from a camera may contain a small amount of noise, called *camera grain*, that increases as the available light decreases. Virtual objects rendered without noise and placed into an otherwise grainy image look out of place. You can use RealityKit to add noise to the rendered output to match noise in the camera feed.
 
 | Without camera grain | With camera grain |
 | --- | --- |

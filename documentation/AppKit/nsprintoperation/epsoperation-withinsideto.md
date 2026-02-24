@@ -26,7 +26,7 @@ The new `NSPrintOperation` object uses the default `NSPrintInfo` object. This me
 
 - `view`: The view containing the data to be turned into EPS data.
 - `rect`: The portion of the view (specified in points in the view’s coordinate space) to be rendered as EPS data.
-- `data`: An empty   object. After the job is run, this object contains the EPS data.
+- `data`: An empty `NSMutableData` object. After the job is run, this object contains the EPS data.
 
 ## See Also
 

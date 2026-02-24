@@ -63,10 +63,10 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `vectorA`: The first input vector,  .
-- `vectorB`: The second input vector,  .
-- `addResult`: The addition output vector,  .
-- `subtractResult`: The subtraction output vector,  .
+- `vectorA`: The first input vector, `A`.
+- `vectorB`: The second input vector, `B`.
+- `addResult`: The addition output vector, `O0`.
+- `subtractResult`: The subtraction output vector, `O1`.
 
 ## See Also
 

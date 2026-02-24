@@ -22,9 +22,9 @@ On iPad, this method displays the action sheet in a popover whose arrow points t
 
 ## Parameters
 
-- `rect`: The portion of   from which to originate the action sheet.
+- `rect`: The portion of `view` from which to originate the action sheet.
 - `view`: The view from which to originate the action sheet.
-- `animated`: Specify   to animate the presentation of the action sheet or   to present it immediately without any animation effects.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the presentation of the action sheet or [`false`](https://developer.apple.com/documentation/Swift/false) to present it immediately without any animation effects.
 
 ## See Also
 

@@ -15,6 +15,11 @@ Create, preview, and sync workout compositions to the Workout app.
 
 The WorkoutKit framework provides models and utilities for creating and previewing workouts in your iOS and watchOS apps, and for syncing scheduled workouts to the Workout app on Apple Watch. The framework supports the following types of workouts:
 
+- **[`CustomWorkout`](customworkout.md)**: A structured interval workout with a series of steps containing custom goals and alerts
+- **[`SingleGoalWorkout`](singlegoalworkout.md)**: A workout with a single goal, such as distance, energy, or time
+- **[`PacerWorkout`](pacerworkout.md)**: A workout with distance and time goals
+- **[`SwimBikeRunWorkout`](swimbikerunworkout.md)**: A workout that allows triathletes to seamlessly transition between swim, bike, and run activities
+
 You define a workout by initializing one of these workout types. Then you use the workout to create a [`WorkoutPlan`](workoutplan.md), which provides methods for previewing, syncing, or exporting the plan. To open the plan in Workout on Apple Watch, call [`openInWorkoutApp()`](workoutplan/openinworkoutapp().md). To export the plan, call the `dataRepresentation(as:)` method.
 
 You can also use WorkoutKit to create and maintain a workout schedule and, with the user’s permission, sync scheduled compositions to Apple Watch. These compositions appear in a dedicated space in the Workout app and include your app’s icon and name.

@@ -8,6 +8,10 @@ A collection of keys that a browser app uses to declare its ability to handle au
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Add a dictionary for this key to your app’s [`Information Property List`](information-property-list.md) if your app is a web browser and it supports web authentication. In the dictionary, include the capability keys listed below to indicate your browser app’s capabilities. For more information, see [`Supporting Single Sign-On in a Web Browser App`](https://developer.apple.com/documentation/AuthenticationServices/supporting-single-sign-on-in-a-web-browser-app).

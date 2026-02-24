@@ -47,6 +47,12 @@ Specify `com.apple.asset.credential.userpassword` as the declaration type.
 - [object AssetCredentialUserNameAndPasswordReferenceObject](assetcredentialusernameandpasswordreferenceobject.md)
   The external reference for an asset-credential user name and password.
 
+## Properties
+
+- `Authentication` (AssetCredentialUserNameAndPasswordAuthenticationObject): The server authentication details.
+- `Reference` (AssetCredentialUserNameAndPasswordReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.usernameandpassword` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
+
 ## See Also
 
 - [object AssetCredentialACME](assetcredentialacme.md)

@@ -30,7 +30,7 @@ Instead of using this method to get a font, it’s often more appropriate to use
 ## Parameters
 
 - `fontSize`: The size (in points) to which the font is scaled. This value must be greater than 0.0.
-- `weight`: The weight of the font, specified as a font weight constant. For a list of possible values, see “Font Weights” in  . Avoid passing an arbitrary floating-point number for  , because a font might not include a variant for every weight.
+- `weight`: The weight of the font, specified as a font weight constant. For a list of possible values, see “Font Weights” in [`UIFontDescriptor`](uifontdescriptor.md). Avoid passing an arbitrary floating-point number for `weight`, because a font might not include a variant for every weight.
 
 ## See Also
 

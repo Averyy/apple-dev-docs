@@ -53,7 +53,7 @@ For more information about the other methods for sampling or reading from sparse
 
 ##### Track Residency Information
 
-A more advanced way to create fallback behavior is to track residency information in a . A residency map is another texture with a pixel for every tile region in your main texture. You use a residency map to maintain per-tile information about your texture.
+A more advanced way to create fallback behavior is to track residency information in a *residency map*. A residency map is another texture with a pixel for every tile region in your main texture. You use a residency map to maintain per-tile information about your texture.
 
 For example, you might use a residency map to determine whether a region is currently mapped. Remember that the GPU maps and unmaps sparse tiles, and this happens asynchronously. Further, if the heap runs out of memory, the GPU doesn’t return an error. If you need to know whether a region was successfully mapped, use a residency map to store this information. Execute a shader that samples one pixel (using `sparse_sample`) from each region. Determine whether the sample was resident and write the result into the residency map. Once the map data is complete, you can sample the texture or copy it to a buffer that your app can access.
 

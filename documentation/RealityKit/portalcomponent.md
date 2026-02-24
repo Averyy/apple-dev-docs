@@ -87,7 +87,7 @@ content.add(portal)
 
 The spaceships below have a [`PortalCrossingComponent`](portalcrossingcomponent.md).
 
-The spaceships below  have a [`PortalCrossingComponent`](portalcrossingcomponent.md).
+The spaceships below *don’t* have a [`PortalCrossingComponent`](portalcrossingcomponent.md).
 
 ##### Lighting
 

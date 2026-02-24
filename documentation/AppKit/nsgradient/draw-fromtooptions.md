@@ -24,7 +24,7 @@ This is a primitive method used by the `NSGradient` class to draw linear gradien
 
 - `startingPoint`: The starting point for the gradient, in the local coordinate system. The gradient’s first color is drawn at this point.
 - `endingPoint`: The end point for the gradient, in the local coordinate system. The gradient’s last color is drawn at this point.
-- `options`: The gradient options, if any. You can use these options to extend the gradient size beyond the start and end points. For more information, see  .
+- `options`: The gradient options, if any. You can use these options to extend the gradient size beyond the start and end points. For more information, see `Gradient Drawing Options`.
 
 ## See Also
 

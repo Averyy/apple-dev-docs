@@ -20,8 +20,8 @@ Use one or more cameras with one of the preview macros that takes a `cameras` in
 
 ## Parameters
 
-- `point`: The point in 3D space where to place the camera, given as   a unit point relative to the preview center.
-- `zoom`: An optional amount by which to scale the distance from the   camera to the preview center. Values larger than   move the camera   closer to the preview center. Fractional values move the camera   away.
+- `point`: The point in 3D space where to place the camera, given as a unit point relative to the preview center.
+- `zoom`: An optional amount by which to scale the distance from the camera to the preview center. Values larger than `1` move the camera closer to the preview center. Fractional values move the camera away.
 - `name`: An optional name that the canvas uses to label the camera.
 
 

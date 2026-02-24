@@ -24,8 +24,8 @@ A list of view controllers represented by the tab in the navigation stack.
 ## Parameters
 
 - `tabBarController`: The tab bar controller managed by the delegate.
-- `tab`: The tab for which the displayed view controllers is being requested for by its  . Each tab in the selection hierarchy will be called once.
-- `proposedViewControllers`: The proposed view controllers for the given tab. In general, the proposed view controller is a single-item array of the tab’s viewController. If other view controllers are pushed onto the navigation stack, they will be part of the last (leaf-most) tab’s   such that they are preserved between updates.
+- `tab`: The tab for which the displayed view controllers is being requested for by its `managingTabGroup`. Each tab in the selection hierarchy will be called once.
+- `proposedViewControllers`: The proposed view controllers for the given tab. In general, the proposed view controller is a single-item array of the tab’s viewController. If other view controllers are pushed onto the navigation stack, they will be part of the last (leaf-most) tab’s `proposedViewControllers` such that they are preserved between updates.
 
 
 ---

@@ -8,7 +8,7 @@ Add app icons, images, strings, data files, machine learning models, and other r
 
 Apps rely on many types of assets to create a rich, dynamic, and visually engaging user experience. Xcode provides tools and settings to help you add, organize, and optimize the different asset types your app uses.
 
-Xcode simplifies managing most types of assets with asset catalogs. Use  to organize and manage resources such as images, colors, app icons, textures, stickers, and data.
+Xcode simplifies managing most types of assets with asset catalogs. Use *asset catalogs* to organize and manage resources such as images, colors, app icons, textures, stickers, and data.
 
 ![Three icons that represent common types of resources in asset catalogs. From left-to-right, an image stack icon with the label images, a color picker icon with the label colors, and a CSV icon with the label data.](https://docs-assets.developer.apple.com/published/510957b38e01629af8d00419934db5ea/asset-management-1%402x.png)
 

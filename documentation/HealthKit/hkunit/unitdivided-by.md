@@ -27,6 +27,22 @@ A new, complex unit.
 
 This method creates a new, complex unit by dividing one unit by another. For example, you can create a meters-per-second unit by dividing a meters unit by a seconds unit, as shown below.
 
+**Swift**:
+
+```swift
+let meters = HKUnit.meterUnit()
+let seconds = HKUnit.secondUnit()
+let metersPerSecond = meters.unitDividedByUnit(seconds)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *meters = [HKUnit meterUnit];
+HKUnit *seconds = [HKUnit secondUnit];
+HKUnit *metersPerSecond = [meters unitDividedByUnit:seconds];
+```
+
 ## Parameters
 
 - `unit`: The unit to be divided.

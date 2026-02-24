@@ -28,7 +28,7 @@ To set attributes for a zero-length `NSMutableAttributedString` displayed in a t
 
 ## Parameters
 
-- `attrs`: A dictionary containing the attributes to set. Attribute keys can be supplied by another framework or can be custom ones you define. For information about the system-supplied attribute keys, see the Constants section in  .
+- `attrs`: A dictionary containing the attributes to set. Attribute keys can be supplied by another framework or can be custom ones you define. For information about the system-supplied attribute keys, see the Constants section in [`NSAttributedString`](nsattributedstring.md).
 - `range`: The range of characters whose attributes are set.
 
 ## See Also

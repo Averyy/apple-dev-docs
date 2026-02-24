@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Name substituted for the purposes of familiarity .
+Name substituted for the purposes of familiarity *(for example, “Johnny”)*.
 
 **Availability**:
 - iOS 9.0+
@@ -23,15 +23,15 @@ var nickname: String? { get set }
 ## See Also
 
 - [var namePrefix: String?](nspersonnamecomponents/nameprefix.md)
-  The portion of a name’s full form of address that precedes the name itself .
+  The portion of a name’s full form of address that precedes the name itself *(for example, “Dr.,” “Mr.,” “Ms.”)*.
 - [var givenName: String?](nspersonnamecomponents/givenname.md)
-  Name bestowed upon an individual to differentiate them from other members of a group that share a family name .
+  Name bestowed upon an individual to differentiate them from other members of a group that share a family name *(for example, “Johnathan”)*.
 - [var middleName: String?](nspersonnamecomponents/middlename.md)
-  Secondary name bestowed upon an individual to differentiate them from others that have the same given name .
+  Secondary name bestowed upon an individual to differentiate them from others that have the same given name *(for example, “Maple”)*.
 - [var familyName: String?](nspersonnamecomponents/familyname.md)
-  Name bestowed upon an individual to denote membership in a group or family. .
+  Name bestowed upon an individual to denote membership in a group or family. *(for example, “Appleseed”)*.
 - [var nameSuffix: String?](nspersonnamecomponents/namesuffix.md)
-  The portion of a name’s full form of address that follows the name itself .
+  The portion of a name’s full form of address that follows the name itself *(for example, “Esq.,” “Jr.,” “Ph.D.”)*.
 - [var phoneticRepresentation: PersonNameComponents?](nspersonnamecomponents/phoneticrepresentation.md)
   The phonetic representation name components of the receiver.
 

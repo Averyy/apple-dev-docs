@@ -31,6 +31,43 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>RemoveProvisioningProfile</string>
+        <key>UUID</key>
+        <string>493d9dc8-e4c0-4fd8-bd8e-8fd4c0dc7b0c</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_RemoveProvisioningProfile</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_RemoveProvisioningProfile</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -38,6 +75,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to remove a previously installed provisioning profile from a device.
 - [object RemoveProvisioningProfileResponse](removeprovisioningprofileresponse.md)
   A response from the device after it processes the command to remove a previously installed provisioning profile from a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

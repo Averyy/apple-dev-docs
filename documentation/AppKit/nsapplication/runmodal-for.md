@@ -26,7 +26,7 @@ You can exit the modal loop by calling the [`stopModal()`](nsapplication/stopmod
 
 ## Parameters
 
-- `window`: The window to be displayed modally. If it is not already visible, the window is centered on the screen using the value in its   method and made visible and key. If it is already visible, it is simply made key.
+- `window`: The window to be displayed modally. If it is not already visible, the window is centered on the screen using the value in its [`center()`](nswindow/center().md) method and made visible and key. If it is already visible, it is simply made key.
 
 ## See Also
 

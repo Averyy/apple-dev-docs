@@ -26,7 +26,7 @@ func imp_removeBlock(_ anImp: IMP) -> Bool
 
 ## Parameters
 
-- `anImp`: An   that was created using the   function.
+- `anImp`: An [`IMP`](imp.md) that was created using the [`imp_implementationWithBlock(_:)`](imp_implementationwithblock(_:).md) function.
 
 ## See Also
 

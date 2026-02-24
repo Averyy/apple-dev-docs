@@ -10,6 +10,10 @@ A Boolean value indicating whether your app may use Multipath protocols to seaml
 - iPadOS 3.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This key Indicates whether your app may use Multipath protocols, such as Multipath TCP, to smoothly hand over traffic from one interface to another.

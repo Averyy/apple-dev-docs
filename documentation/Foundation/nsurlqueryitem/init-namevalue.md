@@ -30,8 +30,8 @@ To use the newly initialized query item in composing a URL, add it to the [`quer
 
 ## Parameters
 
-- `name`: The name of the query item. For example, in the URL  , the   parameter is  .
-- `value`: The value for the query item. For example, in the URL  , the   parameter is  .
+- `name`: The name of the query item. For example, in the URL `http://www.apple.com/search/?q=iPad`, the `name` parameter is `q`.
+- `value`: The value for the query item. For example, in the URL `http://www.apple.com/search/?q=iPad`, the `value` parameter is `iPad`.
 
 
 ---

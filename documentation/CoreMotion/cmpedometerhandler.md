@@ -24,6 +24,9 @@ You provide a block of this type when requesting data from the `CMPedometer` obj
 
 This block has no return value and takes the following parameters:
 
+- **`pedometerData`**: A [`CMPedometerData`](cmpedometerdata.md) object containing the available data. If there was an error retrieving the data, this parameter is `nil`.
+- **`error`**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if there was a problem or `nil` if the pedometer data was retrieved successfully.
+
 ## See Also
 
 - [func startUpdates(from: Date, withHandler: CMPedometerHandler)](cmpedometer/startupdates(from:withhandler:).md)

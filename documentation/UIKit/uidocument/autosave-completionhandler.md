@@ -25,7 +25,7 @@ This method should only be invoked for period-based saves. You may invoke it wit
 
 ## Parameters
 
-- `completionHandler`: The block is invoked on the calling queue.
+- `completionHandler`: A block with code to execute after automatic saving concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the autosaving operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The block is invoked on the calling queue.
 
 ## See Also
 

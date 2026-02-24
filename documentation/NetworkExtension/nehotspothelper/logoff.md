@@ -31,7 +31,7 @@ The `network` parameter must correspond to the currently associated Wi-Fi networ
 
 ## Parameters
 
-- `network`: A   corresponding to the currently associated Wi-Fi network.
+- `network`: A [`NEHotspotNetwork`](nehotspotnetwork.md) corresponding to the currently associated Wi-Fi network.
 
 
 ---

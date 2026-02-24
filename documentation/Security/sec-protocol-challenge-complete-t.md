@@ -29,7 +29,7 @@ Block to be invoked when an identity (authentication) challenge is complete.
 
 ## Parameters
 
-- `identity`: A   containing the identity to use for this challenge.
+- `identity`: A `sec_identity_t` containing the identity to use for this challenge.
 
 
 ---

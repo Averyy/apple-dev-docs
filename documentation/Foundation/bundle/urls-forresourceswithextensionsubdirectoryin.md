@@ -26,7 +26,7 @@ An array of file URLs for the resource files matching the criteria or an empty a
 
 ## Parameters
 
-- `ext`: If you specify an empty string or  , the extension is assumed not to exist and all of the files in   are returned.
+- `ext`: The filename extension of the files to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and all of the files in `subpath` are returned.
 - `subpath`: The name of the bundle subdirectory to search.
 - `bundleURL`: The file URL of the bundle to search.
 

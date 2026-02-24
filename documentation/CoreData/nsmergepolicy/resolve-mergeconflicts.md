@@ -26,7 +26,7 @@ If you override this method in a subclass, you should typically invoke the super
 
 ## Parameters
 
-- `list`: An array of merge conflicts (instances of  ).
+- `list`: An array of merge conflicts (instances of [`NSMergeConflict`](nsmergeconflict.md)).
 
 ## See Also
 

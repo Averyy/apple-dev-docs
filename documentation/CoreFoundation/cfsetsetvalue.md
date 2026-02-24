@@ -27,7 +27,7 @@ Depending on the implementation of the equal callback specified when creating `t
 ## Parameters
 
 - `theSet`: The set to modify.
-- `value`: The value to be set in  . If this value already exists in  , it is replaced. You may pass the value itself instead of a pointer to it if the value is pointer-size or less. If   is fixed-size and setting the value would increase its size beyond its capacity, the behavior is undefined.
+- `value`: The value to be set in `theSet`. If this value already exists in `theSet`, it is replaced. You may pass the value itself instead of a pointer to it if the value is pointer-size or less. If `theSet` is fixed-size and setting the value would increase its size beyond its capacity, the behavior is undefined.
 
 ## See Also
 

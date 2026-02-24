@@ -24,7 +24,7 @@ func CFFileDescriptorInvalidate(_ f: CFFileDescriptor!)
 
 Once invalidated, the CFFileDescriptor object will no longer be read from or written to at the Core Fundation level.
 
-If you passed `true` for the `closeOnInvalidate` parameter when you called [`CFFileDescriptorCreate(_:_:_:_:_:)`](cffiledescriptorcreate(_:_:_:_:_:).md), this function also closes the underlying file descriptor. If you passed `false`, you must close the descriptor yourself  invalidating the CFFileDescriptor object.
+If you passed `true` for the `closeOnInvalidate` parameter when you called [`CFFileDescriptorCreate(_:_:_:_:_:)`](cffiledescriptorcreate(_:_:_:_:_:).md), this function also closes the underlying file descriptor. If you passed `false`, you must close the descriptor yourself *after* invalidating the CFFileDescriptor object.
 
 > ❗ **Important**:  You must invalidate the CFFileDescriptor before closing the underlying file descriptor.
 

@@ -65,7 +65,7 @@ When the size class is [`UserInterfaceSizeClass.compact`](userinterfacesizeclass
 
 ## Parameters
 
-- `content`: A   that produces the content that   the navigation view wraps. Any views after the first act as   placeholders for corresponding columns in a multicolumn display.
+- `content`: A [`ViewBuilder`](viewbuilder.md) that produces the content that the navigation view wraps. Any views after the first act as placeholders for corresponding columns in a multicolumn display.
 
 
 ---

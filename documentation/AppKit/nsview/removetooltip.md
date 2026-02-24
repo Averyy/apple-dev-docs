@@ -16,7 +16,7 @@ func removeToolTip(_ tag: NSView.ToolTipTag)
 
 ## Parameters
 
-- `tag`: An integer tag that is the value returned by a previous   message.
+- `tag`: An integer tag that is the value returned by a previous [`addToolTip(_:owner:userData:)`](nsview/addtooltip(_:owner:userdata:).md) message.
 
 ## See Also
 

@@ -6,7 +6,10 @@ Create custom interfaces for your watchOS app’s notifications.
 
 #### Overview
 
-To customize the appearance of your app’s notifications, you can provide a [`Scene`](https://developer.apple.com/documentation/SwiftUI/Scene) to your [`App`](https://developer.apple.com/documentation/SwiftUI/App) for each notification category. The scene defines either a  or a  interface.
+To customize the appearance of your app’s notifications, you can provide a [`Scene`](https://developer.apple.com/documentation/SwiftUI/Scene) to your [`App`](https://developer.apple.com/documentation/SwiftUI/App) for each notification category. The scene defines either a *dynamic* or a *dynamic interactive* interface.
+
+- **Dynamic interface**: Displays content that you can configure at runtime based on the notification’s payload. When designing a dynamic notification interface, use labels, images, groups, and separators to build the bulk of your interface. Include tables and maps only as needed. You can also use SpriteKit scenes, SceneKit scenes, or inline videos to produce visually rich notifications. Don’t include buttons, switches, or other interactive controls.
+- **Dynamic interactive interface**: Contains controls like buttons or switches. Like the dynamic interface, you can configure this interface at runtime. It also lets the user interact directly with the notification.
 
 Use the interactive controls to update or even reload the notification’s interface. In general, keep your action methods simple. Complex, multi-step tasks aren’t a good fit for interactive notifications.
 

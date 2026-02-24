@@ -25,7 +25,7 @@ Metal uses the specific scissor rectangle corresponding to the index you specify
 
 ## Parameters
 
-- `scissorRects`: A Swift array of   elements.
+- `scissorRects`: A Swift array of [`MTLScissorRect`](mtlscissorrect.md) elements.
 
 ## See Also
 

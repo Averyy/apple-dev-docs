@@ -36,7 +36,7 @@ You can create a shared texture but only with [`storageModePrivate`](mtlresource
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance.
 
 ## See Also
 

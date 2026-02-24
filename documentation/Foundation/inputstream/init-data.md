@@ -30,7 +30,7 @@ The stream must be opened before it can be used.
 
 ## Parameters
 
-- `data`: The data object from which to read. The contents of   are copied.
+- `data`: The data object from which to read. The contents of `data` are copied.
 
 ## See Also
 

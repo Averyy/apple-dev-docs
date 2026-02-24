@@ -30,7 +30,8 @@ If you don’t implement this method, the web view responds to the authenticatio
 
 - `webView`: The web view that receives the authentication challenge.
 - `challenge`: The authentication challenge.
-- `completionHandler`: A completion handler block to execute with the response. This handler has no return value and takes the following parameters:
+- `completionHandler`: A completion handler block to execute with the response. This handler has no return value and takes the following parameters: - **disposition**: The option to use to handle the challenge. For a list of options, see [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition).
+- **credential**: The credential to use for authentication when the `disposition` parameter contains the value [`URLSession.AuthChallengeDisposition.useCredential`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition/useCredential). Specify `nil` to continue without a credential.
 
 ## See Also
 

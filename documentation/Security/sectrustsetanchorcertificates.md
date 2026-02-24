@@ -44,8 +44,8 @@ It is safe to call this function concurrently on two or more threads as long as 
 
 ## Parameters
 
-- `trust`: The trust management object containing the certificate you want to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.
-- `anchorCertificates`: A reference to an array of   objects representing the set of anchor certificates that are to be considered valid (trusted) anchors by the   function when verifying a certificate. Pass   to restore the default set of anchor certificates.
+- `trust`: The trust management object containing the certificate you want to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
+- `anchorCertificates`: A reference to an array of `SecCertificateRef` objects representing the set of anchor certificates that are to be considered valid (trusted) anchors by the [`SecTrustEvaluate(_:_:)`](sectrustevaluate(_:_:).md) function when verifying a certificate. Pass `NULL` to restore the default set of anchor certificates.
 
 ## See Also
 

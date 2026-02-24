@@ -19,7 +19,7 @@ func setStartTime(_ startTime: TimeInterval, for mediaItem: MPMediaItem)
 
 ## Parameters
 
-- `startTime`: The   describing when the media item starts playing.
+- `startTime`: The [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) describing when the media item starts playing.
 - `mediaItem`: The media item in the queue that has a changed start time.
 
 ## See Also

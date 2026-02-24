@@ -29,8 +29,8 @@ Attachment(id: "example") {
 
 ## Parameters
 
-- `id`: An   instance that identifies the attachment and   a  .
-- `content`: A   instance that contains the views for the   attachment.
+- `id`: An `AnyHashable` instance that identifies the attachment and a [`ViewAttachmentEntity`](viewattachmententity.md).
+- `content`: A `ViewBuilder` instance that contains the views for the attachment.
 
 
 ---

@@ -14,6 +14,12 @@ You can set the locking level for a single view or for the entire user interface
 
 To lock a single view, select the user interface file (files with a `.storyboard` or `.xib` filename extension) in the Project navigator, then select the view in Interface Builder. In the Identity inspector, choose a locking level from the Lock pop-up menu under Document:
 
+- **Inherited - ([locking level])**: Use the parent view’s locking level.
+- **Nothing**: Don’t lock any properties (make all properties editable).
+- **All Properties**: Lock all properties.
+- **Localizable Properties**: Lock localizable properties, such as user-facing text and size.
+- **Non-localizable Properties**: Lock non-localizable properties (make user-facing text and size properties editable).
+
 ![Screenshot of a view inspector showing the location of the Lock pop-up menu.](https://docs-assets.developer.apple.com/published/ec4a9d070923ee61715dc39ffd8f3d42/locking-views-in-storyboard-and-xib-files-1%402x.png)
 
 For example, choose Localizable Properties while waiting for translations from localizers. If you import localizations and don’t want to make other changes inadvertently, choose Non-localizable Properties.

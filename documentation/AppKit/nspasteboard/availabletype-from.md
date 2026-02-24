@@ -35,7 +35,7 @@ You must send a [`types`](nspasteboard/types.md) or [`availableType(from:)`](nsp
 
 ## Parameters
 
-- `types`: An array of   objects specifying the pasteboard types your application supports, in preferred order.
+- `types`: An array of `NSString` objects specifying the pasteboard types your application supports, in preferred order.
 
 ## See Also
 

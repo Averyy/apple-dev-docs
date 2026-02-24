@@ -24,7 +24,7 @@ func accessibilityIdentifier(_ identifier: String, isEnabled: Bool = true) -> so
 ## Parameters
 
 - `identifier`: The accessibility identifier to apply.
-- `isEnabled`: If true the accessibility identifier is applied;   otherwise the accessibility identifier is unchanged.
+- `isEnabled`: If true the accessibility identifier is applied; otherwise the accessibility identifier is unchanged.
 
 
 ---

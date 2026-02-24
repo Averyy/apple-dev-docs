@@ -27,7 +27,7 @@ This method allows the module to opportunistically supply extents, avoiding futu
 - `length`: The length of the space in bytes.
 - `flags`: Flags that affect the preallocation behavior.
 - `packer`: An extent packer you use to pack the file’s preallocated disk space.
-- `reply`: A block or closure to indicate success or failure. If preallocation succeeds, pass the amount of bytes allocated and a nil error. If preallocation fails, pass the relevant error as the second parameter; FSKit ignores any byte count in this case. For an   Swift implementation, there’s no reply handler; simply return the allocated byte count or throw an error.
+- `reply`: A block or closure to indicate success or failure. If preallocation succeeds, pass the amount of bytes allocated and a nil error. If preallocation fails, pass the relevant error as the second parameter; FSKit ignores any byte count in this case. For an `async` Swift implementation, there’s no reply handler; simply return the allocated byte count or throw an error.
 
 ## See Also
 

@@ -31,7 +31,7 @@ When calling a file coordinator’s [`coordinate(with:queue:byAccessor:)`](nsfil
 ## Parameters
 
 - `url`: The URL of the document you intend to read from.
-- `options`: The coordinated reading options. For a list of valid values, see   in the  .
+- `options`: The coordinated reading options. For a list of valid values, see [`NSFileCoordinator.ReadingOptions`](nsfilecoordinator/readingoptions.md) in the [`NSFileCoordinator`](nsfilecoordinator.md).
 
 ## See Also
 

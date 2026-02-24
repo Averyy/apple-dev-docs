@@ -29,9 +29,9 @@ The HTML importer should not be called from a background thread (that is, the `o
 
 ## Parameters
 
-- `url`: An   object specifying the document to load.
-- `options`: Document attributes for interpreting the document contents.  ,  , and   are supported option keys. If not specified, the method examines the data to attempt to determine the appropriate attributes.
-- `dict`: If non- , returns a dictionary with various document-wide attributes accessible via document attribute keys.
+- `url`: An `NSURL` object specifying the document to load.
+- `options`: Document attributes for interpreting the document contents. [`documentType`](nsattributedstring/documentattributekey/documenttype.md), [`characterEncoding`](nsattributedstring/documentattributekey/characterencoding.md), and [`defaultAttributes`](nsattributedstring/documentattributekey/defaultattributes.md) are supported option keys. If not specified, the method examines the data to attempt to determine the appropriate attributes.
+- `dict`: If non-`NULL`, returns a dictionary with various document-wide attributes accessible via document attribute keys.
 
 ## See Also
 

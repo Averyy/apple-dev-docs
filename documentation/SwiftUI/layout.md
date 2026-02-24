@@ -117,7 +117,7 @@ init() {
 }
 ```
 
-For information about Swift initializers, see [`Initialization`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Initialization.html) in .
+For information about Swift initializers, see [`Initialization`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Initialization.html) in *The Swift Programming Language*.
 
 ##### Interact with Subviews Through Their Proxies
 

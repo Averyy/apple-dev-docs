@@ -53,7 +53,7 @@ dataProvider.send(Article(title: "My First Article", author: "Gita Kumar", pubDa
 
 ## Parameters
 
-- `encoder`: An encoder that implements the   protocol.
+- `encoder`: An encoder that implements the [`TopLevelEncoder`](toplevelencoder.md) protocol.
 
 ## See Also
 

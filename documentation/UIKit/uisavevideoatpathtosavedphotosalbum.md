@@ -31,7 +31,17 @@ When an iOS device without a camera uses it, this method adds the movie to the S
 
 - `videoPath`: The filesystem path to the movie file you want to save to the Camera Roll album.
 - `completionTarget`: Optionally, the object whose selector the system calls after it writes the movie to the Camera Roll album.
-- `completionSelector`: The method selector of the   object to call. Make this optional method conform to the following signature:
+- `completionSelector`: The method selector of the `completionTarget` object to call. Make this optional method conform to the following signature: ```swift
+// Swift
+func video(_ videoPath: String?,
+           didFinishSavingWithError error: Error?,
+           contextInfo: UnsafeMutableRawPointer?) {}
+``` ```objc
+// Objective-C
+- (void)video: (NSString *) videoPath
+    didFinishSavingWithError: (NSError *) error
+              contextInfo: (void *) contextInfo;
+```
 - `contextInfo`: An optional pointer to any context-specific data that you want the system to pass to the completion selector.
 
 ## See Also

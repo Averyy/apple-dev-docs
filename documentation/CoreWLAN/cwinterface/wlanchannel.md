@@ -16,7 +16,7 @@ func wlanChannel() -> CWChannel?
 
 #### Discussion
 
-Dynamically queries the interface for the current channel. Returns  in the case of an error, or if the interface is not participating in a network.
+Dynamically queries the interface for the current channel. Returns *nil* in the case of an error, or if the interface is not participating in a network.
 
 ## See Also
 

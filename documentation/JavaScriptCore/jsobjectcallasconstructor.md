@@ -26,10 +26,10 @@ The [`JSObjectRef`](jsobjectref.md) that results from calling `object` as a cons
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to call as a constructor.
-- `argumentCount`: An integer count of the number of arguments in  .
-- `arguments`: A   array of arguments to pass to the constructor. Pass   if   is  .
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to call as a constructor.
+- `argumentCount`: An integer count of the number of arguments in `arguments`.
+- `arguments`: A [`JSValueRef`](jsvalueref.md) array of arguments to pass to the constructor. Pass `NULL` if `argumentCount` is `0`.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

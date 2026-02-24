@@ -22,10 +22,10 @@ typealias DNSServiceGetAddrInfoReply = (DNSServiceRef?, DNSServiceFlags, UInt32,
 
 ## Parameters
 
-- `sdRef`: The DNSServiceRef initialized by  .
-- `flags`: Possible values are   and kDNSServiceFlagsAdd.
+- `sdRef`: The DNSServiceRef initialized by [`DNSServiceGetAddrInfo(_:_:_:_:_:_:_:)`](dnsservicegetaddrinfo(_:_:_:_:_:_:_:).md).
+- `flags`: Possible values are [`kDNSServiceFlagsMoreComing`](kdnsserviceflagsmorecoming.md) and kDNSServiceFlagsAdd.
 - `interfaceIndex`: The interface to which the answers pertain.
-- `errorCode`: Will be   on success, otherwise will indicate the failure that occurred. Other parameters are undefined if errorCode is nonzero.
+- `errorCode`: Will be [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherwise will indicate the failure that occurred. Other parameters are undefined if errorCode is nonzero.
 - `hostname`: The fully qualified domain name of the host to be queried for.
 - `address`: IPv4 or IPv6 address.
 - `ttl`: If the client wishes to cache the result for performance reasons, the TTL indicates how long the client may legitimately hold onto this result, in seconds. After the TTL expires, the client should consider the result no longer valid, and if it requires this data again, it should be re-fetched with a new query. Of course, this only applies to clients that cancel the asynchronous operation when they get a result. Clients that leave the asynchronous operation running can safely assume that the data remains valid until they get another callback telling them otherwise.

@@ -22,7 +22,7 @@ FSKit calls this method as a signal that some process is trying to mount this vo
 ## Parameters
 
 - `options`: Options to apply to the mount. These can include security-scoped file paths. There are no defined options currently.
-- `reply`: A block or closure to indicate success or failure. If mounting fails, pass an error as the one parameter to the reply handler. If mounting succeeds, pass  . For an   Swift implementation, there’s no reply handler; simply return normally.
+- `reply`: A block or closure to indicate success or failure. If mounting fails, pass an error as the one parameter to the reply handler. If mounting succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply return normally.
 
 ## See Also
 

@@ -87,7 +87,7 @@ You don’t create a new content manager directly, instead you grab the shared c
 - [class MPMoviePlayerViewController](mpmovieplayerviewcontroller.md)
   A simple view controller for displaying full-screen movies.
 - [class MPTimedMetadata](mptimedmetadata.md)
-  A  carries time-based information within HTTP streamed media.
+  A *timed metadata object that* carries time-based information within HTTP streamed media.
 - [class MPPlayableContentManagerContext](mpplayablecontentmanagercontext.md)
   An object representing the current state of the playable endpoint.
 - [class var iPodMusicPlayer: MPMusicPlayerController](mpmusicplayercontroller/ipodmusicplayer.md)

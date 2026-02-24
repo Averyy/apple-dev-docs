@@ -21,7 +21,7 @@ The XML node object is released upon removal. The indices of subsequent children
 
 ## Parameters
 
-- `index`: An integer identifying the node in the receiver’s list of children to remove. An exception is raised if   is out of bounds.
+- `index`: An integer identifying the node in the receiver’s list of children to remove. An exception is raised if `index` is out of bounds.
 
 ## See Also
 

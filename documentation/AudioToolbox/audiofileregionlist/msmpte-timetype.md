@@ -3,7 +3,7 @@
 **Framework**: Audio Toolbox  
 **Kind**: property
 
-The SMPTE timing scheme used in the file. See Core Audio’s `CAFFile.h` header file for the values used here. For more information, see .
+The SMPTE timing scheme used in the file. See Core Audio’s `CAFFile.h` header file for the values used here. For more information, see *Core Audio Overview*.
 
 **Availability**:
 - iOS ?+

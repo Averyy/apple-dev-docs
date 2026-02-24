@@ -23,7 +23,7 @@ init(value: Value, @ViewBuilder content: () -> Content) where Label == EmptyView
 
 ## Parameters
 
-- `value`: The   value which selects this tab.
+- `value`: The `selection` value which selects this tab.
 - `content`: The view content of the tab.
 
 ## See Also

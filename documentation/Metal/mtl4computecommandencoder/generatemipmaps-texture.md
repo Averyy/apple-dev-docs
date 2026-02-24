@@ -26,7 +26,7 @@ This method generates mipmaps for a mipmapped texture. The texture you provide n
 
 ## Parameters
 
-- `texture`: A mipmapped, color-renderable or color-filterable   instance the command generates mipmaps for.
+- `texture`: A mipmapped, color-renderable or color-filterable [`MTLTexture`](mtltexture.md) instance the command generates mipmaps for.
 
 
 ---

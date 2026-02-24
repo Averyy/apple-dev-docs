@@ -23,7 +23,7 @@ final class FoveatedStreamingSession
 
 Use `FoveatedStreamingSession` to establish and manage streaming connections from Apple Vision Pro to local or remote endpoints. The session handles connection life cycle, monitors streaming status, and provides access to bidirectional message channels for custom data exchange.
 
-You create a `FoveatedStreamingSession` object directly, typically on app initialization. After creating your session object, use it to initialize the [`FoveatedStreamingSpace`](foveatedstreamingspace.md) that displays the streamed content. To begin streaming spatial content, call the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) function. The connection will fail if your app doesn’t have the [`com.apple.developer.foveated-streaming-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement.
+You create a `FoveatedStreamingSession` object directly, typically on app initialization. After creating your session object, use it to initialize the [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) that displays the streamed content. To begin streaming spatial content, call the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) function. The connection will fail if your app doesn’t have the [`com.apple.developer.foveated-streaming-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement.
 
 The following example shows how to connect to a stream and present its content in an immersive space:
 
@@ -40,7 +40,7 @@ struct FoveatedStreamingApp: App {
             }
         }
 
-        FoveatedStreamingSpace(session: session) {}
+        ImmersiveSpace(foveatedStreaming: session)
     }
 }
 ```
@@ -63,8 +63,6 @@ struct FoveatedStreamingApp: App {
 ### Instance Properties
 - [var availableMessageChannels: Set<FoveatedStreamingSession.MessageChannel.ID>](foveatedstreamingsession/availablemessagechannels.md)
   A list of all available message channels in this session.
-- [let id: FoveatedStreamingSession.ID](foveatedstreamingsession/id.md)
-  A unique identifier for the session.
 - [var immersivePresentationBehaviors: FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.property.md)
   An optional set of behaviors which assist in automatically presenting the session’s immersive space.
 - [var immersiveSpaceFromRemoteSceneTransform: simd_float4x4](foveatedstreamingsession/immersivespacefromremotescenetransform.md)
@@ -76,7 +74,7 @@ struct FoveatedStreamingApp: App {
   Establishes a streaming connection at the provided endpoint.
 - [func disconnect() async](foveatedstreamingsession/disconnect.md)
   Disconnects from the remote streaming endpoint, ending the streaming session.
-- [func getMessageChannel(FoveatedStreamingSession.MessageChannel.ID) -> FoveatedStreamingSession.MessageChannel?](foveatedstreamingsession/getmessagechannel(_:).md)
+- [func messageChannel(for: FoveatedStreamingSession.MessageChannel.ID) -> FoveatedStreamingSession.MessageChannel?](foveatedstreamingsession/messagechannel(for:).md)
   Creates or retrieves a message channel for the given message channel ID.
 - [func pause() async throws](foveatedstreamingsession/pause.md)
   Pauses a session without ending it.
@@ -91,17 +89,9 @@ struct FoveatedStreamingApp: App {
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [struct FoveatedStreamingSpace](foveatedstreamingspace.md)
-  An immersive space that displays foveated streaming content.
-- [struct OpenFoveatedStreamingSpaceAction](openfoveatedstreamingspaceaction.md)
-  An action that presents a foveated streaming space.
 
 
 ---

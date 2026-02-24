@@ -39,8 +39,8 @@ print(layer.convertTime(CFTimeInterval(0.5), to: offsetSlowMoLayer)) // prints 1
 
 ## Parameters
 
-- `t`: A point specifying a location in the coordinate system of  .
-- `l`: The layer into whose time space   is to be converted. The receiver and   and must share a common parent layer.
+- `t`: A point specifying a location in the coordinate system of `l`.
+- `l`: The layer into whose time space `t` is to be converted. The receiver and `l` and must share a common parent layer.
 
 ## See Also
 

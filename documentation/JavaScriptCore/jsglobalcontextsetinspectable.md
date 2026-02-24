@@ -21,7 +21,7 @@ func JSGlobalContextSetInspectable(_ ctx: JSGlobalContextRef!, _ inspectable: Bo
 
 ## Parameters
 
-- `ctx`: The   to set whether it’s inspectable.
+- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) to set whether it’s inspectable.
 - `inspectable`: A Boolean value that indicates whether the context is inspectable.
 
 ## Topics

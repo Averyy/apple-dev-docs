@@ -31,7 +31,7 @@ If the destination’s [`alphaMode`](cirenderdestination/alphamode.md) is [`CIRe
 
 ## Parameters
 
-- `destination`: The   to clear.
+- `destination`: The [`CIRenderDestination`](cirenderdestination.md) to clear.
 
 ## See Also
 

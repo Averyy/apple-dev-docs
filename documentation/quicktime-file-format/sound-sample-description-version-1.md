@@ -11,9 +11,9 @@ The version field in the sample description is set to `1` for this version of th
 
 These added fields are used to support out-of-band configuration settings for decompression and to allow some parsing of compressed QuickTime sound tracks without requiring the services of a decompressor.
 
-These fields introduce the idea of a . For uncompressed audio, a packet is a sample from a single channel. For compressed audio, this field has no real meaning; by convention, it is treated as 1/number-of-channels.
+These fields introduce the idea of a *packet*. For uncompressed audio, a packet is a sample from a single channel. For compressed audio, this field has no real meaning; by convention, it is treated as 1/number-of-channels.
 
-These fields also introduce the idea of a . For uncompressed audio, a frame is one sample from each channel. For compressed audio, a frame is a compressed group of samples whose format is dependent on the compressor.
+These fields also introduce the idea of a *frame*. For uncompressed audio, a frame is one sample from each channel. For compressed audio, a frame is a compressed group of samples whose format is dependent on the compressor.
 
 > ❗ **Important**: The value of all these fields has different meaning for compressed and uncompressed audio. The meaning may not be easily deducible from the field name.
 

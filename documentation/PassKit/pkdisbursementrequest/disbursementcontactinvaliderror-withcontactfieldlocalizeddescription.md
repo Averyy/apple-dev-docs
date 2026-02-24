@@ -28,7 +28,7 @@ There’s limited display space available for descriptions, so keep your message
 
 ## Parameters
 
-- `field`: The   that contains the error.
+- `field`: The [`PKContactField`](pkcontactfield.md) that contains the error.
 - `localizedDescription`: An optional localized description that the framework displays to the individual.
 
 ## See Also

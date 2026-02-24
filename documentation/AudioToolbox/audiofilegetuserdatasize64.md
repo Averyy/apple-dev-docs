@@ -25,7 +25,7 @@ A result code if there’s an error (see Result Codes) or `noErr` if the operati
 
 #### Discussion
 
-In this function,  refers to:
+In this function, *user data* refers to:
 
 - Chunks in AIFF, CAF, and WAVE files
 - Resources in Sound Designer II files
@@ -87,7 +87,7 @@ constexpr size_t CHUNK_BUFFER_SIZE = 16 * 1024;  // Arbitrary, but 16K is the ty
 
 - `inAudioFile`: The audio file whose user data item size you want.
 - `inUserDataID`: The four-character code of the designated user data item.
-- `inIndex`: An index of the user data item with the four-character code specified in   that you want to query.
+- `inIndex`: An index of the user data item with the four-character code specified in `inUserDataID` that you want to query.
 - `outUserDataSize`: On output, if successful, the size of the user data item.
 
 ## See Also

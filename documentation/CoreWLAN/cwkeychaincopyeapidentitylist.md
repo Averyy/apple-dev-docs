@@ -16,11 +16,11 @@ func CWKeychainCopyEAPIdentityList(_ list: UnsafeMutablePointer<Unmanaged<CFArra
 
 #### Return Value
 
-An OSStatus error code which will indicate whether or not a failure occurred during execution.  indicates no error occurred.
+An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
 
 #### Discussion
 
-If there are no available identities, this method will return .
+If there are no available identities, this method will return *nil*.
 
 ## See Also
 

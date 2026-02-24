@@ -20,7 +20,7 @@ This method is invoked automatically during scrolling and when an `NSClipView` o
 
 ## Parameters
 
-- `cView`: The clip view being adjusted to. If   is any view object other than the receiver’s content view, the method does nothing.
+- `cView`: The clip view being adjusted to. If `aClipView` is any view object other than the receiver’s content view, the method does nothing.
 
 ## See Also
 

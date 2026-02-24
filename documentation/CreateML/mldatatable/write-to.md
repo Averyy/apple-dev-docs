@@ -21,7 +21,7 @@ func write(to directoryURL: URL) throws
 
 ## Parameters
 
-- `directoryURL`: The directory location in the file system to which the data   table file should be written.
+- `directoryURL`: The directory location in the file system to which the data table file should be written.
 
 ## See Also
 

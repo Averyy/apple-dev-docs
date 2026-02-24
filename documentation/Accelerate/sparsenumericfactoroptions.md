@@ -24,7 +24,7 @@ struct SparseNumericFactorOptions
 
 [`SparseNumericFactorOptions`](sparsenumericfactoroptions.md) supports the following types of scaling:
 
-| [`SparseScalingDefault`](sparsescalingdefault.md) | Default scaling — [`SparseScalingEquilibriationInf`](sparsescalingequilibriationinf.md) if , or no scaling if Cholesky. |
+| [`SparseScalingDefault`](sparsescalingdefault.md) | Default scaling — [`SparseScalingEquilibriationInf`](sparsescalingequilibriationinf.md) if *LDLᵀ*, or no scaling if Cholesky. |
 | --- | --- |
 | [`SparseScalingUser`](sparsescalinguser.md) | User scaling if [`scaling`](sparsenumericfactoroptions/scaling.md) is nonnull; otherwise, no scaling. |
 | [`SparseScalingEquilibriationInf`](sparsescalingequilibriationinf.md) | Norm equilibration scaling using infinity norm. |

@@ -35,7 +35,7 @@ let session = ASWebAuthenticationSession(
 
 ## Parameters
 
-- `host`: The host that the app requires in the callback URL. The host must be a member of a domain associated with the app, as described in  .
+- `host`: The host that the app requires in the callback URL. The host must be a member of a domain associated with the app, as described in [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 - `path`: The path that the app requires in the callback URL.
 
 ## See Also

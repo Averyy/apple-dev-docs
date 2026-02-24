@@ -23,7 +23,7 @@ Questions on the specified page.
 
 ## Parameters
 
-- `pageID`: The identifier of the page that   contains the questions being sought.
+- `pageID`: The identifier of the page that contains the questions being sought.
 
 ## See Also
 

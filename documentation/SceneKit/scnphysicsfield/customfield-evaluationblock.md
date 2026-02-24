@@ -30,7 +30,7 @@ For custom physics fields, SceneKit ignores the [`direction`](scnphysicsfield/di
 
 ## Parameters
 
-- `block`: A block that SceneKit runs for each object in the field’s area of effect. See  .
+- `block`: A block that SceneKit runs for each object in the field’s area of effect. See [`SCNFieldForceEvaluator`](scnfieldforceevaluator.md).
 
 
 ---

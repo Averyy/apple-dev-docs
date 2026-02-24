@@ -29,16 +29,16 @@ Calculates `Y←αAX + βY`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `N`: The order of matrix  .
-- `ALPHA`: Scaling factor for matrix  .
-- `A`: Matrix  .
-- `LDA`: Leading dimension of matrix  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `BETA`: Scaling factor for vector  .
-- `Y`: Vector  . Overwritten by results on return.
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `N`: The order of matrix `A`.
+- `ALPHA`: Scaling factor for matrix `A`.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of matrix `A`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `BETA`: Scaling factor for vector `X`.
+- `Y`: Vector `Y`. Overwritten by results on return.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

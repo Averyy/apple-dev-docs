@@ -28,7 +28,7 @@ Otherwise, the view will perform elastic scrolling.
 
 ## Parameters
 
-- `axis`: The gesture axis. See   for the possible values.
+- `axis`: The gesture axis. See [`NSEvent.GestureAxis`](nsevent/gestureaxis.md) for the possible values.
 
 ## See Also
 

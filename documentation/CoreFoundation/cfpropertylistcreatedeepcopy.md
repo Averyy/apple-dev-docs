@@ -30,9 +30,9 @@ Recursively creates a copy of the given property list so nested arrays and dicti
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new property list. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new property list. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `propertyList`: The property list to copy. This may be any of the standard property list objects, for example a CFArray or a CFDictionary object.
-- `mutabilityOption`: A constant that specifies the degree of mutability of the returned property list. See   for descriptions of possible values.
+- `mutabilityOption`: A constant that specifies the degree of mutability of the returned property list. See [`Property List Mutability Options`](property_list_mutability_options.md) for descriptions of possible values.
 
 ## See Also
 

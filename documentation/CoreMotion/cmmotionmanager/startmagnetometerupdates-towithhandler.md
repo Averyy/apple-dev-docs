@@ -24,7 +24,7 @@ You must call [`stopMagnetometerUpdates()`](cmmotionmanager/stopmagnetometerupda
 ## Parameters
 
 - `queue`: An operation queue provided by the caller. Because the processed events might arrive at a high rate, using the main operation queue is not recommended.
-- `handler`: A block that is invoked with each update to handle new magnetometer data. The block must conform to the   type.
+- `handler`: A block that is invoked with each update to handle new magnetometer data. The block must conform to the [`CMMagnetometerHandler`](cmmagnetometerhandler.md) type.
 
 ## See Also
 

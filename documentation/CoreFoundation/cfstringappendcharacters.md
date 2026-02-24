@@ -22,9 +22,9 @@ func CFStringAppendCharacters(_ theString: CFMutableString!, _ chars: UnsafePoin
 
 ## Parameters
 
-- `theString`: The string to which the characters in   are appended.
+- `theString`: The string to which the characters in `chars` are appended.
 - `chars`: A pointer to a buffer of Unicode characters.
-- `numChars`: The number of Unicode characters in  .
+- `numChars`: The number of Unicode characters in `chars`.
 
 ## See Also
 

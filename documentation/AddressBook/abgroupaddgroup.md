@@ -20,8 +20,8 @@ Returns `true` ifsuccessful. If the `group` argumentis already part of the recei
 
 ## Parameters
 
-- `group`: The group you wish to add a subgroup to. If  , this function raises an exception.
-- `groupToAdd`: The subgroup you wish to add to  .
+- `group`: The group you wish to add a subgroup to. If `NULL`, this function raises an exception.
+- `groupToAdd`: The subgroup you wish to add to `group`.
 
 ## See Also
 

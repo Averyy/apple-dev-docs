@@ -21,7 +21,7 @@ Subsequent children have their indexes decreased by one. The removed [`XMLNode`]
 
 ## Parameters
 
-- `index`: An integer identifying the position of an child in the receiver’s array. If   is less than zero or greater than the number of children minus one, an out-of-bounds exception is raised.
+- `index`: An integer identifying the position of an child in the receiver’s array. If `index` is less than zero or greater than the number of children minus one, an out-of-bounds exception is raised.
 
 ## See Also
 

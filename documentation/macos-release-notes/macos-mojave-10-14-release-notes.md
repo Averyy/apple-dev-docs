@@ -42,7 +42,7 @@ The macOS 10.14 SDK provides support for developing apps for Macs running macOS 
 
 ###### New Features
 
-- Sending Apple events from an app—including script applets—now requires user approval. The list of currently approved apps can be viewed and edited in the Automation category in the Privacy tab in System Preferences > Security & Privacy. If an event is blocked because the user didn’t approve that app, the event will fail with the error code: `-1743 ("``: Not authorized to send Apple events to ``")`. An event can be preflighted using [`AEDeterminePermissionToAutomateTarget(_:_:_:_:)`](https://developer.apple.com/documentation/coreservices/3025784-aedeterminepermissiontoautomatet).
+- Sending Apple events from an app—including script applets—now requires user approval. The list of currently approved apps can be viewed and edited in the Automation category in the Privacy tab in System Preferences > Security & Privacy. If an event is blocked because the user didn’t approve that app, the event will fail with the error code: `-1743 ("`**`: Not authorized to send Apple events to `**`")`. An event can be preflighted using [`AEDeterminePermissionToAutomateTarget(_:_:_:_:)`](https://developer.apple.com/documentation/coreservices/3025784-aedeterminepermissiontoautomatet).
 - Scripting additions can no longer be globally installed. The `/Library/ScriptingAdditions`, `/Network/Library/ScriptingAdditions`, and `~/Library/ScriptingAdditions` directories are effectively ignored.Distribute scripting additions as part of a specific app by embedding the scripting addition in the app’s `Contents/Resources/Scripting Additions` directory and signing both the addition and the app with the same team identifier.
 
 ##### Appkit
@@ -63,7 +63,7 @@ See [`AppKit Release Notes for macOS 10.14`](appkit-release-notes-for-macos-10_1
 
 ###### Known Issues
 
--  Don’t use Disk Utility while booted from Internet Recovery to erase an APFS Fusion container. (40565698)  Use Disk Utility while booted into macOS 10.13.6 or newer.
+- **Important:** Don’t use Disk Utility while booted from Internet Recovery to erase an APFS Fusion container. (40565698) **Workaround:** Use Disk Utility while booted into macOS 10.13.6 or newer.
 
 ##### Egpu
 
@@ -91,7 +91,7 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Known Issues
 
-- Inviting iOS 11 users who have multiple email addresses associated with their Apple ID to a home might not succeed. (41033550)  Send the invitation to a different email address or phone number associated with the Apple ID of the iOS 11 user.
+- Inviting iOS 11 users who have multiple email addresses associated with their Apple ID to a home might not succeed. (41033550) **Workaround:** Send the invitation to a different email address or phone number associated with the Apple ID of the iOS 11 user.
 
 ##### Localization
 
@@ -101,7 +101,7 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Resolved Issues
 
-- You might experience difficulty logging into your account because the keyboard layout may change unexpectedly at the Login window. (40821875)  Log in to your account, launch Terminal, and execute the following command: ```bash
+- You might experience difficulty logging into your account because the keyboard layout may change unexpectedly at the Login window. (40821875) **Workaround:** Log in to your account, launch Terminal, and execute the following command: ```bash
 sudo rm -rf /var/db/securityagent/Library/Preferences/com.apple.HIToolbox.plist
 ```
 

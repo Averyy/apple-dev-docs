@@ -22,7 +22,7 @@ func maxDatagramFrameSize(_ size: Int) -> QUIC
 
 ## Parameters
 
-- `size`: The value to use for the    transport parameter on a QUIC connection.
+- `size`: The value to use for the `max_datagram_frame_size` transport parameter on a QUIC connection.
 
 
 ---

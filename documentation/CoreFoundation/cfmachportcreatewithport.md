@@ -30,11 +30,11 @@ The CFMachPort object does not take full ownership of the send and receive right
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `portNum`: The native Mach port to use.
 - `callout`: The callback function invoked when a message is received on the Mach port.
-- `context`: A structure holding contextual information for the Mach port. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call.
-- `shouldFreeInfo`: A flag set by the function to indicate whether the   member of   should be freed. The flag is set to   on failure or if a CFMachPort object already exists for  ,   otherwise.   can be  .
+- `context`: A structure holding contextual information for the Mach port. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call.
+- `shouldFreeInfo`: A flag set by the function to indicate whether the `info` member of `context` should be freed. The flag is set to `true` on failure or if a CFMachPort object already exists for `portNum`, `false` otherwise. `shouldFreeInfo` can be `NULL`.
 
 ## See Also
 

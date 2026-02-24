@@ -34,9 +34,9 @@ By default, [`SKAudioNode`](skaudionode.md) objects are positional, i.e. their [
 
 You can explicitly set the volume or stereo balance to an audio node by running actions on it.
 
-SpriteKit includes actions that reduce an audio node’s volume by changing either its occlusion or obstruction. The difference between these actions is that occlusion affects both the direct and reverb paths of the sound while obstruction only affects the direct path. The  action offers absolute control over an audio node’s volume.
+SpriteKit includes actions that reduce an audio node’s volume by changing either its occlusion or obstruction. The difference between these actions is that occlusion affects both the direct and reverb paths of the sound while obstruction only affects the direct path. The *change volume* action offers absolute control over an audio node’s volume.
 
-You can manually set the stereo balance of an audio node with a  action.
+You can manually set the stereo balance of an audio node with a *stereo pan* action.
 
 Special effects, such as speeding up or slowing down audio by changing the playback rate and adding reverb are also available as audio actions.
 

@@ -31,9 +31,9 @@ The process of setting up volume ramps requires the configuration of an instance
 ## Parameters
 
 - `time`: If a ramp with a time range that contains the specified time has been set, information about the effective ramp for that time is supplied. Otherwise, information about the first ramp that starts after the specified time is supplied.
-- `startVolume`: This value may be  .
-- `endVolume`: This value may be  .
-- `timeRange`: This value may be  .
+- `startVolume`: A pointer to a float to receive the starting volume value for the volume ramp. This value may be `NULL`.
+- `endVolume`: A pointer to a float to receive the ending volume value for the volume ramp. This value may be `NULL`.
+- `timeRange`: A pointer to a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) to receive the time range of the volume ramp. This value may be `NULL`.
 
 
 ---

@@ -19,7 +19,7 @@ func NSStringFromGLKMatrix2(_ matrix: GLKMatrix2) -> String
 
 ## Parameters
 
-- `matrix`: A   matrix.
+- `matrix`: A `2x2` matrix.
 
 ## See Also
 

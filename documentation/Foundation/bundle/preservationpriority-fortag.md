@@ -25,7 +25,7 @@ The preservation priority for the specified `tag`. Possible values are between `
 
 ## Parameters
 
-- `tag`: A string specifying the identifier for a group of related resources. An exception is thrown if   does not exist in your app.
+- `tag`: A string specifying the identifier for a group of related resources. An exception is thrown if `tag` does not exist in your app.
 
 ## See Also
 

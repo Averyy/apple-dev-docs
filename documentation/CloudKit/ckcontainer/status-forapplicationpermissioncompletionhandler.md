@@ -26,7 +26,7 @@ Use this method to determine the extra capabilities that the user grants to your
 
 ## Parameters
 
-- `applicationPermission`: The permission to check. For a list of possible values, see  .
+- `applicationPermission`: The permission to check. For a list of possible values, see [`CKContainer.ApplicationPermissions`](ckcontainer/applicationpermissions.md).
 - `completionHandler`: The handler to execute with the outcome.
 
 ## See Also

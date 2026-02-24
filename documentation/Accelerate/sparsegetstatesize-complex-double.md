@@ -27,9 +27,9 @@ Size of state space required in bytes.
 ## Parameters
 
 - `method`: (Input) Method to return required state space size for.
-- `preconditioner`: (Input) True if a preconditioner will be supplied,   false otherwise.
-- `m`: (Input) Number of entries in right-hand side (rows in matrix  ).
-- `n`: (Input) Number of variables to solve for (columns in matrix  ).
+- `preconditioner`: (Input) True if a preconditioner will be supplied, false otherwise.
+- `m`: (Input) Number of entries in right-hand side (rows in matrix `A`).
+- `n`: (Input) Number of variables to solve for (columns in matrix `A`).
 - `nrhs`: (Input) Number of right-hand sides to be solved for.
 
 ## See Also

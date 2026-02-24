@@ -30,7 +30,7 @@ The delivery of multiple messages occurs serially, so your implementation of thi
 
 - `session`: The session object that received the message from its counterpart.
 - `message`: A dictionary of property list values representing the contents of the message. Use the contents of this dictionary to determine what course of action to take.
-- `replyHandler`: A reply block to execute with the response. This block has no return value and takes the following parameter:
+- `replyHandler`: A reply block to execute with the response. This block has no return value and takes the following parameter: - **replyMessage**: A dictionary of property list values containing your response to `message`.
 
 ## See Also
 

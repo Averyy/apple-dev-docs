@@ -30,11 +30,13 @@ This function is implemented in macOS 10.4.3 and later.
 
 ## Parameters
 
-- `requestedOperations`: The desired types of screen update operations. There are several possible choices:
-- `currentOperation`: A pointer to a   variable. On return, the variable indicates the type of update operation (refresh or move).
-- `rects`: A pointer to a   variable. On return, the variable contains an array of rectangles that bound the updated areas, specified in the global display coordinate space. When you no longer need the array, you should deallocate it by calling  .
-- `rectCount`: A pointer to a   variable. On return, the variable contains the number of entries in the returned array of rectangles.
-- `delta`: A pointer to a   variable. On return, if the value of the   parameter is  , the variable contains the distance moved.
+- `requestedOperations`: The desired types of screen update operations. There are several possible choices: - Specify `kCGScreenUpdateOperationRefresh` if you want all move operations to be returned as refresh operations.
+- Specify `(kCGScreenUpdateOperationRefresh | kCGScreenUpdateOperationMove)` if you want to distinguish between move and refresh operations.
+- Add `kCGScreenUpdateOperationReducedDirtyRectangleCount` to the screen operations if you want to minimize the number of rectangles returned to represent changed areas of the display.
+- `currentOperation`: A pointer to a `CGScreenUpdateOperation` variable. On return, the variable indicates the type of update operation (refresh or move).
+- `rects`: A pointer to a `CGRect*` variable. On return, the variable contains an array of rectangles that bound the updated areas, specified in the global display coordinate space. When you no longer need the array, you should deallocate it by calling [`CGReleaseScreenRefreshRects(_:)`](cgreleasescreenrefreshrects(_:).md).
+- `rectCount`: A pointer to a `size_t` variable. On return, the variable contains the number of entries in the returned array of rectangles.
+- `delta`: A pointer to a `CGScreenUpdateMoveDelta` variable. On return, if the value of the `currentOperation` parameter is `kCGScreenUpdateOperationMove`, the variable contains the distance moved.
 
 ## See Also
 

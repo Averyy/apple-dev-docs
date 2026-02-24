@@ -20,7 +20,7 @@ Returns the `NSDocument` subclass associated with `documentTypeName`. If the cla
 
 ## Parameters
 
-- `typeName`: The document type must be one the receiver can read.
+- `typeName`: The name of a document type, specified by `CFBundleTypeName` in the application’s `Info.plist` file. The document type must be one the receiver can read.
 
 ## See Also
 

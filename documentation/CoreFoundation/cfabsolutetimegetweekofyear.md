@@ -27,7 +27,7 @@ An integer (`1-53`) representing the week of the year specified by `at`. The num
 ## Parameters
 
 - `at`: The absolute time to convert.
-- `tz`: The time zone to use for time correction. Pass   for GMT.
+- `tz`: The time zone to use for time correction. Pass `NULL` for GMT.
 
 ## See Also
 

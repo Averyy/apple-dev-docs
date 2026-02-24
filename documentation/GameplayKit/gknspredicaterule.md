@@ -27,7 +27,7 @@ For more information about rules and rule systems, read [`Rule Systems`](https:/
 
 ##### Subclassing Notes
 
-GameplayKit evaluates rules in the context of a [`GKRuleSystem`](gkrulesystem.md) object, so custom rule classes should be —that is, they generally should not carry independent state that affects their predicate or action.
+GameplayKit evaluates rules in the context of a [`GKRuleSystem`](gkrulesystem.md) object, so custom rule classes should be *functional*—that is, they generally should not carry independent state that affects their predicate or action.
 
 ###### Methods to Override
 

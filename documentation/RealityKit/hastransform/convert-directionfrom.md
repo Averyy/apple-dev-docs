@@ -26,8 +26,8 @@ The direction vector given in the local space of the entity.
 
 ## Parameters
 
-- `direction`: The direction vector specified relative to  .
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `direction`: The direction vector specified relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

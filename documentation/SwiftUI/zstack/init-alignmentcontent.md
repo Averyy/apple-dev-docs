@@ -22,7 +22,7 @@ init(alignment: Alignment = .center, @ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `alignment`: The guide for aligning the subviews in this stack on both   the x- and y-axes.
+- `alignment`: The guide for aligning the subviews in this stack on both the x- and y-axes.
 - `content`: A view builder that creates the content of this stack.
 
 

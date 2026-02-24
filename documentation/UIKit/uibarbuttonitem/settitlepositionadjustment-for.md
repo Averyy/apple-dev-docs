@@ -24,7 +24,7 @@ This offset is used to adjust the position of a title (if any) within a bordered
 
 ## Parameters
 
-- `adjustment`: The title offset for  .
+- `adjustment`: The title offset for `barMetrics`.
 - `barMetrics`: Bar metrics.
 
 ## See Also

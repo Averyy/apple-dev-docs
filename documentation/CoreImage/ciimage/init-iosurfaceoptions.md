@@ -26,7 +26,7 @@ An image object initialized with the data from the IOSurface.
 ## Parameters
 
 - `surface`: An IOSurface object.
-- `options`: A dictionary specifying image options. (See  .)
+- `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also
 

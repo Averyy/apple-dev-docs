@@ -27,7 +27,7 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 ## Parameters
 
 - `range`: The range of the detected result.
-- `components`: A dictionary containing the address components. The dictionary keys are described in  .
+- `components`: A dictionary containing the address components. The dictionary keys are described in [`Keys for Address Components`](keys-for-address-components.md).
 
 ## See Also
 

@@ -35,7 +35,7 @@ If the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](uip
 - `viewControllers`: The view controller or view controllers to be displayed.
 - `direction`: The navigation direction.
 - `animated`: A Boolean value that indicates whether the transition is to be animated.
-- `completion`: The block takes the following parameters:
+- `completion`: A block to be called when the page-turn animation completes. The block takes the following parameters: - ***finished***: [`true`](https://developer.apple.com/documentation/Swift/true) if the animation finished; [`false`](https://developer.apple.com/documentation/Swift/false) if it was skipped.
 
 ## See Also
 

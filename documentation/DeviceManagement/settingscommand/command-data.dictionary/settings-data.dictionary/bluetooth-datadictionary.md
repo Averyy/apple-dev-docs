@@ -16,6 +16,11 @@ A dictionary that contains Bluetooth settings.
 object SettingsCommand.Command.Settings.Bluetooth
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: If `true`, enable the Bluetooth setting. If `false`, disable the Bluetooth setting.
+- `Item` (string) *(required)*: A string that identifies this setting.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

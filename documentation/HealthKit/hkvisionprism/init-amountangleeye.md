@@ -21,9 +21,9 @@ init(amount: HKQuantity, angle: HKQuantity, eye: HKVisionEye)
 
 ## Parameters
 
-- `amount`: The strength of the correction, measured in   units.
-- `angle`: The orientation of the adjustment, measured in   units.
-- `eye`: A value indicating which eye the correction applies to:   or  .
+- `amount`: The strength of the correction, measured in [`prismDiopter()`](hkunit/prismdiopter().md) units.
+- `angle`: The orientation of the adjustment, measured in [`degreeAngle()`](hkunit/degreeangle().md) units.
+- `eye`: A value indicating which eye the correction applies to: [`HKVisionEye.left`](hkvisioneye/left.md) or [`HKVisionEye.right`](hkvisioneye/right.md).
 
 ## See Also
 

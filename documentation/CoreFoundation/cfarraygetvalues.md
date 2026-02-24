@@ -23,8 +23,8 @@ func CFArrayGetValues(_ theArray: CFArray!, _ range: CFRange, _ values: UnsafeMu
 ## Parameters
 
 - `theArray`: The array to examine.
-- `range`: The range of values within   to retrieve. The range must lie within the bounds of  . The range may be empty (length  ), in which case no values are put into the buffer  .
-- `values`: A C array of pointer-sized values to be filled with values from  . The values in the C array are in the same order as they appear in  . If this value is not a valid pointer to a C array of at least   pointers, the behavior is undefined. If the values are Core Foundation objects, ownership follows  .
+- `range`: The range of values within `theArray` to retrieve. The range must lie within the bounds of `theArray`. The range may be empty (length `0`), in which case no values are put into the buffer `values`.
+- `values`: A C array of pointer-sized values to be filled with values from `theArray`. The values in the C array are in the same order as they appear in `theArray`. If this value is not a valid pointer to a C array of at least `range.length` pointers, the behavior is undefined. If the values are Core Foundation objects, ownership follows [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## See Also
 

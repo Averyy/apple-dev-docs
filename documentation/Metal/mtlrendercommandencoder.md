@@ -31,7 +31,7 @@ protocol MTLRenderCommandEncoder : MTLCommandEncoder
 
 #### Overview
 
-A render pass draws a scene, or a component within a scene, to its render , the outputs of a render pass. You can render to those outputs with various approaches, including techniques that apply the following:
+A render pass draws a scene, or a component within a scene, to its render *attachments*, the outputs of a render pass. You can render to those outputs with various approaches, including techniques that apply the following:
 
 - Primitive drawing
 - Mesh drawing
@@ -46,7 +46,7 @@ To configure the render pass for your first drawing commands, start with a pipel
 
 Configure other encoder settings by calling the methods on the [`Render pass configuration`](render-pass-configuration.md) page. For example, you may need to configure the pass’s viewport, its scissor rectangle, and the settings for depth and stencil tests.
 
-Assign resources, such as buffers and textures, for the shaders that depend on them. For more information, see the shader-specific pages in the resource preparation section, such as [`Vertex shader resource preparation commands`](vertex-shader-resource-preparation-commands.md) and [`Fragment shader resource preparation commands`](fragment-shader-resource-preparation-commands.md). If your shaders access resources through an argument buffer, make those resources  in GPU memory by calling the methods on the [`Argument buffer resource preparation commands`](argument-buffer-resource-preparation-commands.md) page.
+Assign resources, such as buffers and textures, for the shaders that depend on them. For more information, see the shader-specific pages in the resource preparation section, such as [`Vertex shader resource preparation commands`](vertex-shader-resource-preparation-commands.md) and [`Fragment shader resource preparation commands`](fragment-shader-resource-preparation-commands.md). If your shaders access resources through an argument buffer, make those resources *resident* in GPU memory by calling the methods on the [`Argument buffer resource preparation commands`](argument-buffer-resource-preparation-commands.md) page.
 
 Encode drawing commands after you configure the state and resources the commands depend on. The encoder maintains its current state and applies it to all subsequent draw commands. For drawing commands that need different states or resources, reconfigure the render pass appropriately and then encode those draw commands. Repeat the process for each batch of drawing commands that depend on the same render pass configuration and resources.
 

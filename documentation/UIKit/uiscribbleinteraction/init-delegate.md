@@ -18,7 +18,7 @@ init(delegate: any UIScribbleInteractionDelegate)
 
 ## Parameters
 
-- `delegate`: The object that acts as the delegate of this   instance.
+- `delegate`: The object that acts as the delegate of this [`UIScribbleInteraction`](uiscribbleinteraction.md) instance.
 
 
 ---

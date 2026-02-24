@@ -22,7 +22,7 @@ func SparseGetTranspose(_ Factor: SparseOpaqueFactorization_Float) -> SparseOpaq
 
 #### Return Value
 
-A matrix factorization of , where the original was of . Because this is a reference-counted factorization, you must free it through a call to [`SparseCleanup(_:)`](sparsecleanup(_:)-4kus5.md) when you no longer need it.
+A matrix factorization of *A__ᵀ*, where the original was of *A*. Because this is a reference-counted factorization, you must free it through a call to [`SparseCleanup(_:)`](sparsecleanup(_:)-4kus5.md) when you no longer need it.
 
 ## Parameters
 

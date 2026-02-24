@@ -16,7 +16,7 @@ func removeItems(at indexes: IndexSet)
 
 ## Parameters
 
-- `indexes`: An index set ( ) of the indexes of the items to remove.
+- `indexes`: An index set ([`IndexSet`](https://developer.apple.com/documentation/Foundation/IndexSet)) of the indexes of the items to remove.
 
 ## See Also
 

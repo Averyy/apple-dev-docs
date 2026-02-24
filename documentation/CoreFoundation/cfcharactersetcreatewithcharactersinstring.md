@@ -26,7 +26,7 @@ A new character set containing the characters from `theString`. Ownership follow
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `theString`: A string containing the characters for the new set.
 
 ## See Also

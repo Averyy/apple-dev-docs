@@ -27,9 +27,9 @@ The system throws [`EnergyKitError.venueUnavailable`](energykiterror/venueunavai
 
 ## Parameters
 
-- `deviceID`: The device identifier to return  s for.
-- `query`: The   to specify the results.
-- `energyVenueID`: The   identifier to return  s for.
+- `deviceID`: The device identifier to return [`ElectricityInsightRecord`](electricityinsightrecord.md)s for.
+- `query`: The [`ElectricityInsightQuery`](electricityinsightquery.md) to specify the results.
+- `energyVenueID`: The [`EnergyVenue`](energyvenue.md) identifier to return [`ElectricityInsightRecord`](electricityinsightrecord.md)s for.
 
 ## See Also
 

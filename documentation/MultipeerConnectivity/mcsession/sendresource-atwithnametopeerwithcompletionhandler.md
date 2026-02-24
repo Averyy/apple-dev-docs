@@ -38,7 +38,7 @@ Upon successful delivery, on the recipient device, the session calls its delegat
 - `resourceURL`: A file or HTTP URL.
 - `resourceName`: A name for the resource.
 - `peerID`: The peer that should receive this resource.
-- `completionHandler`: A block that gets called when delivery succeeds or fails. Upon success, the handler is called with an error value of  . Upon failure, the handle is called with an error object that indicates what went wrong.
+- `completionHandler`: A block that gets called when delivery succeeds or fails. Upon success, the handler is called with an error value of `nil`. Upon failure, the handle is called with an error object that indicates what went wrong.
 
 ## See Also
 

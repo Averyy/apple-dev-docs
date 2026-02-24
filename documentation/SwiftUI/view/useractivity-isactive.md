@@ -30,8 +30,8 @@ The scope of the activity applies only to the scene or window the view is in.
 ## Parameters
 
 - `activityType`: The type of activity to advertise.
-- `isActive`: When  , avoids advertising the activity. Defaults   to  .
-- `update`: A function that modifies the passed-in activity for   advertisement.
+- `isActive`: When `false`, avoids advertising the activity. Defaults to `true`.
+- `update`: A function that modifies the passed-in activity for advertisement.
 
 ## See Also
 

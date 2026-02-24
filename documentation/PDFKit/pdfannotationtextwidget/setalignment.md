@@ -16,7 +16,7 @@ func setAlignment(_ alignment: NSTextAlignment)
 
 ## Parameters
 
-- `alignment`: The text-alignment value to be used for the annotation. Possible values are  ,  , and  .
+- `alignment`: The text-alignment value to be used for the annotation. Possible values are `NSLeftTextAlignment`, `NSRightTextAlignment`, and `NSCenterTextAlignment`.
 
 ## See Also
 

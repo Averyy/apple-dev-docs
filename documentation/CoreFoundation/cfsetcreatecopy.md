@@ -30,7 +30,7 @@ The pointer values from `theSet` are copied into the new set, and the values are
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new set and its storage for values. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new set and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `theSet`: The set to copy.
 
 ## See Also

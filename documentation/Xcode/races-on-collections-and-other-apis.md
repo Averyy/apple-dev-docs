@@ -17,6 +17,8 @@ In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [`F
 
 In the following example, the code enumerates a mutable array in one thread while writing to the array from another without synchronizing access:
 
+**Swift**
+
 ```swift
 let array: NSMutableArray = []
 var sum: Int = 0
@@ -27,6 +29,8 @@ for value in array {
 // Executed on Thread #2
 array.add(42)
 ```
+
+**Objective-C**
 
 ```objc
 NSMutableArray *array = [NSMutableArray new];
@@ -57,6 +61,8 @@ for key in dictionary.keyEnumerator() {
 // Executed on Thread #2
 dictionary["forty-two"] = 42
 ```
+
+**Objective-C**
 
 ```objc
 NSMutableDictionary *dictionary = [NSMutableDictionary new];

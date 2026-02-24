@@ -26,7 +26,7 @@ A newly initialized shader object whose initial source is loaded from the shader
 
 ## Parameters
 
-- `name`: The name of the fragment shader to load. The file must be present in your app bundle with the same name and a   file extension.
+- `name`: The name of the fragment shader to load. The file must be present in your app bundle with the same name and a `.fsh` file extension.
 
 ## See Also
 

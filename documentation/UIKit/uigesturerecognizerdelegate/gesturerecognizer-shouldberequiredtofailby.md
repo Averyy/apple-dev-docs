@@ -32,8 +32,8 @@ This method is called once per attempt to recognize, so failure requirements can
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class  . This is the object sending the message to the delegate.
-- `otherGestureRecognizer`: An instance of a subclass of the abstract base class  .
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md). This is the object sending the message to the delegate.
+- `otherGestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md).
 
 ## See Also
 

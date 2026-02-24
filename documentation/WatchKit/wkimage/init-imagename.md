@@ -24,7 +24,7 @@ Use this method to specify an image by name. Only the image name is sent from yo
 
 ## Parameters
 
-- `imageName`: The name of the image to be loaded from the Watch app’s bundle. Specify the filename of the image and include the filename extension in the name. This parameter must not be  .
+- `imageName`: The name of the image to be loaded from the Watch app’s bundle. Specify the filename of the image and include the filename extension in the name. This parameter must not be `nil`.
 
 ## See Also
 

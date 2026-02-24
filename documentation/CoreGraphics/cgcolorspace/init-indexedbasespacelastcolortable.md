@@ -32,7 +32,7 @@ An indexed color space contains a color table with up to 255 entries, and a base
 
 - `baseSpace`: The color space on which the color table is based.
 - `lastIndex`: The maximum valid index value for the color table. The value must be less than or equal to 255.
-- `colorTable`: An array of   bytes, where   is the number of color components in the base color space. Each byte is an unsigned integer in the range   to   that is scaled to the range of the corresponding color component in the base color space.
+- `colorTable`: An array of `m*(lastIndex+1)` bytes, where `m` is the number of color components in the base color space. Each byte is an unsigned integer in the range `0` to `255` that is scaled to the range of the corresponding color component in the base color space.
 
 ## See Also
 

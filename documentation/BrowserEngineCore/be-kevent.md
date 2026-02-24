@@ -35,10 +35,10 @@ You can poll for events on `kq` by passing [`BE_KEVENT_RETURN_IMMEDIATELY`](be_k
 
 - `kq`: A file descriptor that identifies a kernel queue.
 - `changelist`: An array of changes to make to the kernel queue.
-- `nchanges`: The number of items in the   array.
+- `nchanges`: The number of items in the `changelist` array.
 - `eventlist`: An array of kernel events that this function fills on return, if any matching events are on the queue.
-- `nevents`: The number of items in the   array.
-- `be_flags`: Configuration flags that control how   waits for kernel events.
+- `nevents`: The number of items in the `eventlist` array.
+- `be_flags`: Configuration flags that control how `be_kevent` waits for kernel events.
 
 ## See Also
 

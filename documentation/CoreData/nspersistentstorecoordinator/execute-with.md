@@ -31,7 +31,7 @@ User defined requests return arrays of arrays, where a nested array is the resul
 ## Parameters
 
 - `request`: A fetch or save request.
-- `context`: The context against which   should be executed.
+- `context`: The context against which `request` should be executed.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func addWatchFace(at fileURL: URL) async throws
 
 #### Discussion
 
-Call this method to load a watch face file. The URL must point to a , a watch face that your app has downloaded, or a watch face stored in your app bundle. All of the complications on the watch face must come from apps that have a valid App Store ID, such as an app from the App Store or a TestFlight build. If you try to use complications from a development build, the system won’t recognize the development ID as a valid App Store ID.
+Call this method to load a watch face file. The URL must point to a *watch file*, a watch face that your app has downloaded, or a watch face stored in your app bundle. All of the complications on the watch face must come from apps that have a valid App Store ID, such as an app from the App Store or a TestFlight build. If you try to use complications from a development build, the system won’t recognize the development ID as a valid App Store ID.
 
 In iOS, use the [`WCSession`](https://developer.apple.com/documentation/WatchConnectivity/WCSession) class’s [`isPaired`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/isPaired) method to verify that the user has a paired Apple Watch before presenting UI to share the watch face.
 
@@ -34,7 +34,7 @@ If you call this method on a device that doesn’t support the Watch app or watc
 ## Parameters
 
 - `fileURL`: A file URL for a watch face file.
-- `handler`: A block that ClockKit calls after adding the watch face. The block takes the following parameter:
+- `handler`: A block that ClockKit calls after adding the watch face. The block takes the following parameter: - **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

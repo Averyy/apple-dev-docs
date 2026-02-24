@@ -35,7 +35,7 @@ Use [`CGColorSpaceRelease`](https://developer.apple.com/documentation/CoreGraphi
 
 ## Parameters
 
-- `attachments`: The dictionary of attachments for an image buffer, which you can obtain by calling   on the image buffer.
+- `attachments`: The dictionary of attachments for an image buffer, which you can obtain by calling [`CVBufferCopyAttachments(_:_:)`](cvbuffercopyattachments(_:_:).md) on the image buffer.
 
 
 ---

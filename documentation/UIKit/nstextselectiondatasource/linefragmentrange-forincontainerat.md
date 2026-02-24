@@ -25,7 +25,7 @@ An `NSTextRange` that describes the location of the line fragment, or nil if the
 
 ## Parameters
 
-- `point`: The starting point that contains the line fragment, in the coordinate system of  .
+- `point`: The starting point that contains the line fragment, in the coordinate system of `location`.
 - `location`: The location of the line fragment.
 
 ## See Also

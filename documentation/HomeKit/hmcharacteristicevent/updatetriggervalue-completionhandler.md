@@ -24,7 +24,7 @@ Set the trigger value to `nil` to trigger the event whenever the value of the ch
 ## Parameters
 
 - `triggerValue`: The value of the characteristic that triggers the event.
-- `completion`: The block executed once the trigger value update request has been processed.
+- `completion`: The block executed once the trigger value update request has been processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 
 ---

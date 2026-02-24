@@ -25,7 +25,7 @@ A result code. See Result Codes.
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser you wish to close. The parser ID is returned by the   function.
+- `inAudioFileStream`: The ID of the parser you wish to close. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
 
 ## See Also
 

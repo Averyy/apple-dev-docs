@@ -28,7 +28,7 @@ Determine if early data was accepted by the peer.
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 
 
 ---

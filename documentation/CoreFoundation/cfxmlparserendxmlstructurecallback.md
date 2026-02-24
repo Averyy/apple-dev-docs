@@ -21,8 +21,8 @@ As elements are encountered, this callback is called first, then the [`CFXMLPars
 ## Parameters
 
 - `parser`: The CFXMLParser object making the callback.
-- `xmlType`: The program-defined value representing the XML element whose end tag has been detected. This value was returned by the   callback.
-- `info`: The program-defined context data you specified in the   structure when creating the parser.
+- `xmlType`: The program-defined value representing the XML element whose end tag has been detected. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) callback.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 

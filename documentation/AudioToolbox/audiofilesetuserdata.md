@@ -27,7 +27,7 @@ A result code if there’s an error (see Result Codes) or `noErr` if the operati
 
 - `inAudioFile`: The audio file that you want to set a user data item in.
 - `inUserDataID`: The four-character code for the user data item.
-- `inIndex`: An index specifying the user data item you want to set. You use this parameter if the file contains more than one user data item with the four-character code specified in the   parameter.
+- `inIndex`: An index specifying the user data item you want to set. You use this parameter if the file contains more than one user data item with the four-character code specified in the `inUserDataID` parameter.
 - `inUserDataSize`: On input, the size of the data to copy. On output, the size of the bytes copied from the buffer.
 - `inUserData`: A pointer to a buffer from which to copy the user data.
 

@@ -8,6 +8,12 @@ A Boolean value that indicates whether a Virtual Network Computing (VNC) app nee
 **Availability**:
 - macOS 14.4+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The Persistent Content Capture entitlement enables VNC apps to view and record the screen.

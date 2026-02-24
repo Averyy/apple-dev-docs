@@ -23,7 +23,7 @@ func waitForEvent(_ event: any MTLSharedEvent, value: UInt64)
 ## Parameters
 
 - `event`: A shared event instance the method waits for.
-- `value`: A value the method compares to the event’s value. The method returns when the event’s value is greater than or equal to  .
+- `value`: A value the method compares to the event’s value. The method returns when the event’s value is greater than or equal to `value`.
 
 ## See Also
 

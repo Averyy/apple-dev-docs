@@ -17,6 +17,11 @@ A dictionary that contains time zone settings.
 object SettingsCommand.Command.Settings.TimeZone
 ```
 
+## Properties
+
+- `Item` (string) *(required)*: A string that identifies this setting.
+- `TimeZone` (string) *(required)*: The Internet Assigned Numbers Authority (IANA) time zone database name. If the `forceAutomaticDateAndTime` restriction is set in [`Restrictions`](restrictions.md), this setting fails with an error. Otherwise, setting this value disables automatic time zone logic. The user is still be able to change the time zone; for example, by turning automatic date and time back on. The intention is to allow setting the time zone when automatic determination isn’t be available, such as when Location Services are off.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

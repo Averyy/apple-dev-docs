@@ -22,8 +22,8 @@ Removes all children from this entity.
 
 ## Parameters
 
-- `keepCapacity`:   to keep the memory reserved for storing the children.    to free the reserved memory.
-- `preservingWorldTransforms`:   to preserve the world transform.   to   preserve the relative transform. (Use   if the   entities should keep its effective location and size in   the scene!)
+- `keepCapacity`: `true` to keep the memory reserved for storing the children. `false` to free the reserved memory.
+- `preservingWorldTransforms`: `true` to preserve the world transform. `false` to preserve the relative transform. (Use `true` if the entities should keep its effective location and size in the scene!)
 
 ## See Also
 

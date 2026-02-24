@@ -10,6 +10,10 @@ A unique identifier for a File Provider extension action.
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionFileProviderActionActivationRule](information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionactivationrule.md)

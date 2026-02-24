@@ -17,6 +17,11 @@ A dictionary containing details of the beta program.
 object ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram
 ```
 
+## Properties
+
+- `Description` (string) *(required)*: A human readable description of the beta program.
+- `Token` (string) *(required)*: The AxM seeding service token for the AxM organization the MDM server is part of. The system uses this token to enroll the device in the corresponding beta program.
+
 
 ---
 

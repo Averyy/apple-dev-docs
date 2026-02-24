@@ -35,7 +35,7 @@ If the object is not a matrix or vector, nothing is written to the buffer and LA
 ## Parameters
 
 - `buffer`: Pointer to the destination buffer.
-- `buffer_row_stride`: Offset (measured in doubles) between the destinations of corresponding elements   of consecutive rows of the matrix.  Must be positive.
+- `buffer_row_stride`: Offset (measured in doubles) between the destinations of corresponding elements of consecutive rows of the matrix.  Must be positive.
 - `matrix`: The matrix to store.
 
 ## See Also

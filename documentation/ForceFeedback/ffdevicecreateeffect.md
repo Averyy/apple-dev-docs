@@ -44,7 +44,7 @@ When you are finished with the effect, FFReleaseEffect must be called on the ref
 ## Parameters
 
 - `deviceReference`: An opaque reference handle to a device object. This is obtained from a previous call to FFCreateDevice.
-- `uuidRef`: kFFEffectType_CustomForce_ID
+- `uuidRef`: Reference to the UUID identifying the effect to be created. Only predefined effect UUIDs are accepted. The following standard effect UUIDs are defined: kFFEffectType_ConstantForce_ID kFFEffectType_RampForce_ID kFFEffectType_Square_ID kFFEffectType_Sine_ID kFFEffectType_Triangle_ID kFFEffectType_SawtoothUp_ID kFFEffectType_SawtoothDown_ID kFFEffectType_Spring_ID kFFEffectType_Damper_ID kFFEffectType_Inertia_ID kFFEffectType_Friction_ID kFFEffectType_CustomForce_ID
 - `pEffectDefinition`: Pointer to FFEFFECT structure that provides parameters for the created effect. This parameter is optional. If it is NULL, the effect object is created without parameters. The application must then call the FFEffectSetParameters function to set the parameters of the effect before it can download the effect.
 - `pEffectReference`: Address of a variable to receive an opaque reference handle to a new effect object. This reference can be used in subsequent calls to FFEffect* functions.
 

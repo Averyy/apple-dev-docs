@@ -31,7 +31,7 @@ In macOS 10.15 and later, you cannot change the filename that the user selects. 
 
 - `sender`: The panel that reports the user’s confirmation of a filename choice.
 - `filename`: The user’s filename choice.
-- `okFlag`: If  , the user clicked the Save button; if  , the user did not.
+- `okFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the user clicked the Save button; if [`false`](https://developer.apple.com/documentation/Swift/false), the user did not.
 
 ## See Also
 

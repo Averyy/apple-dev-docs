@@ -27,8 +27,8 @@ This call returns more attributes than are supported by the old style Keychain A
 ## Parameters
 
 - `keychain`: A keychain object.
-- `itemID`: The relation identifier of the item tags. An   is a   type as defined in  .
-- `info`: On return, a pointer to the keychain attribute information. Your application should call the   function to release this structure when done with it.
+- `itemID`: The relation identifier of the item tags. An `itemID` is a `CSSM_DB_RECORDTYPE` type as defined in `cssmtype.h`.
+- `info`: On return, a pointer to the keychain attribute information. Your application should call the [`SecKeychainFreeAttributeInfo(_:)`](seckeychainfreeattributeinfo(_:).md) function to release this structure when done with it.
 
 
 ---

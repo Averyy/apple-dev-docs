@@ -30,10 +30,10 @@ You only need to provide this callback if you create your own version 1 run loop
 
 ## Parameters
 
-- `msg`: The Mach message received on the Mach port. The pointer is to a   structure. A version 0 format trailer ( ) is at the end of the Mach message.
-- `size`: Size of the Mach message in  , excluding the message trailer.
+- `msg`: The Mach message received on the Mach port. The pointer is to a `mach_msg_header_t` structure. A version 0 format trailer (`mach_msg_format_0_trailer_t`) is at the end of the Mach message.
+- `size`: Size of the Mach message in `msg`, excluding the message trailer.
 - `allocator`: The allocator object that should be used to allocate a reply message.
-- `info`: The   member of the   structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
 
 
 ---

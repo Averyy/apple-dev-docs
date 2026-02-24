@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 12.4 includes SDKs for iOS 14.4, iPadOS 14.4, tvOS 14.3, watchOS 7.2, and macOS Big Sur 11.1. The Xcode 12.4 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 12.4 requires a Mac running macOS 10.15.4 or later.
@@ -14,7 +16,7 @@ Xcode 12.4 includes SDKs for iOS 14.4, iPadOS 14.4, tvOS 14.3, watchOS 7.2, and 
 
 ###### Known Issues
 
-- Xcode may hang if the host Mac is connected to an iOS device which has one or more companion watches. The hangs occur when the watches aren’t fully prepared for development, or if they are experiencing poor wireless connectivity. (72490921) (FB8945320) : Power off the watches, or unpair them from the iPhone.
+- Xcode may hang if the host Mac is connected to an iOS device which has one or more companion watches. The hangs occur when the watches aren’t fully prepared for development, or if they are experiencing poor wireless connectivity. (72490921) (FB8945320) **Workaround**: Power off the watches, or unpair them from the iPhone.
 
 You can force Xcode to freshly prepare a watch for development using these steps:
 
@@ -46,7 +48,7 @@ Once Xcode finishes preparing the iOS device and its companion watches for devel
 
 ###### Known Issues
 
-- If you use a Swift package with binary dependencies in an app with extensions, the build system incorrectly embeds the binary dependencies alongside the extension in the PlugIns directory, causing validation of the archived app to fail. (69834549) (FB8761306) : Add a scheme post-build action which removes the embedded binaries from the PlugIns directory after the build, e.g. `rm -rf "${TARGET_BUILD_DIR}/${TARGET_NAME}.app"/PlugIns/*.framework`.
+- If you use a Swift package with binary dependencies in an app with extensions, the build system incorrectly embeds the binary dependencies alongside the extension in the PlugIns directory, causing validation of the archived app to fail. (69834549) (FB8761306) **Workaround**: Add a scheme post-build action which removes the embedded binaries from the PlugIns directory after the build, e.g. `rm -rf "${TARGET_BUILD_DIR}/${TARGET_NAME}.app"/PlugIns/*.framework`.
 
 ## See Also
 

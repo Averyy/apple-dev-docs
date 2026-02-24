@@ -26,7 +26,7 @@ init(classifierIdentifier: SNClassifierIdentifier) throws
 
 ## Parameters
 
-- `classifierIdentifier`: A sound classifier version identifier, such as  .
+- `classifierIdentifier`: A sound classifier version identifier, such as [`version1`](snclassifieridentifier/version1.md).
 
 ## See Also
 

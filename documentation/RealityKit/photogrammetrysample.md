@@ -55,7 +55,7 @@ Use a  unique [`id`](photogrammetrysample/id.md) for each [`PhotogrammetrySessio
 - [var depthConfidenceMap: CVPixelBuffer?](photogrammetrysample/depthconfidencemap.md)
   Depth confidence map associated with the `depthDataMap` if available. Pixel format is `kCVPixelFormatType_OneComponent8`.
 - [let id: Int](photogrammetrysample/id.md)
-  Unique identifier for the sample.  This `id`  be in the domain [0, 2147483647].
+  Unique identifier for the sample.  This `id` *must* be in the domain [0, 2147483647].
 - [var orientation: CGImagePropertyOrientation](photogrammetrysample/orientation.md)
   The orientation at which the `image` pixel buffer is intended to be displayed in a 2D UI.
 - [var scanPassID: Int?](photogrammetrysample/scanpassid.md)

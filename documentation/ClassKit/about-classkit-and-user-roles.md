@@ -20,7 +20,7 @@ For example, your implementation should always report progress through every uni
 
 ##### Classkit Alerts Students That Their Progress Is Measured
 
-When a student runs your app, ClassKit alerts the student on your behalf that progress is shared with teachers by briefly showing a message over your content. For a student in a class called  using an app called , the overlay looks like this:
+When a student runs your app, ClassKit alerts the student on your behalf that progress is shared with teachers by briefly showing a message over your content. For a student in a class called *Dev Class* using an app called *GreatPlays*, the overlay looks like this:
 
 ![Screenshot of the Student Progress overlay shown when recording progress in your app that adopts ClassKit.](https://docs-assets.developer.apple.com/published/6c2eedd22ece4112c903d55144cfa490/media-2959671%402x.png)
 

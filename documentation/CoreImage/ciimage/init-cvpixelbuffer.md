@@ -25,7 +25,7 @@ The initialized image object.
 
 ## Parameters
 
-- `pixelBuffer`: A    object.
+- `pixelBuffer`: A  `CVPixelBuffer` object.
 
 ## See Also
 

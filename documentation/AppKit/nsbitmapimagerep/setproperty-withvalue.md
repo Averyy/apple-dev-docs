@@ -20,8 +20,8 @@ The properties can affect how the image is read in and saved to file.
 
 ## Parameters
 
-- `property`: A string constant used as a key for an image property. These properties are described in  .
-- `value`: A value specific to  . If   is  , the value of the property is cleared.
+- `property`: A string constant used as a key for an image property. These properties are described in [`NSBitmapImageRep.PropertyKey`](nsbitmapimagerep/propertykey.md).
+- `value`: A value specific to `property`. If `value` is `nil`, the value of the property is cleared.
 
 ## See Also
 

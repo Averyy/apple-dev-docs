@@ -34,9 +34,9 @@ If no function callback is assigned to the `preferredSize` field of the allocato
 
 ## Parameters
 
-- `allocator`: The allocator to use, or   for the default allocator.
-- `size`: The number of bytes to allocate. If the value is   or less, the result is the same value.
-- `hint`: A bitfield of type  . Pass flags to the allocator that suggest how memory is to be allocated.   indicates no hints. No hints are currently defined, only   should be passed for this argument.
+- `allocator`: The allocator to use, or `NULL` for the default allocator.
+- `size`: The number of bytes to allocate. If the value is `0` or less, the result is the same value.
+- `hint`: A bitfield of type `CFOptionsFlags`. Pass flags to the allocator that suggest how memory is to be allocated. `0` indicates no hints. No hints are currently defined, only `0` should be passed for this argument.
 
 ## See Also
 

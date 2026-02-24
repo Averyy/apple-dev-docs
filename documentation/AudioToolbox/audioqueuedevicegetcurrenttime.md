@@ -30,7 +30,7 @@ This function returns a value whether or not the audio hardware device associate
 ## Parameters
 
 - `inAQ`: The audio queue whose associated audio device is to be queried.
-- `outTimeStamp`: On output, the current time of the audio hardware device associated with the audio queue. If the device is not running, the only valid field in the audio timestamp structure is  .
+- `outTimeStamp`: On output, the current time of the audio hardware device associated with the audio queue. If the device is not running, the only valid field in the audio timestamp structure is `mHostTime`.
 
 ## See Also
 

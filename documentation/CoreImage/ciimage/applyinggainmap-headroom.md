@@ -25,8 +25,8 @@ func applyingGainMap(_ gainmap: CIImage, headroom: Float) -> CIImage
 
 ## Parameters
 
-- `gainmap`: The gain map   instance to apply to the receiver.
-- `headroom`: A float value that specify how much headroom the resulting image should have.   The headroom value will be limited to between 1.0 (i.e. SDR) and   the full headroom allowed by the gain map.
+- `gainmap`: The gain map [`CIImage`](ciimage.md) instance to apply to the receiver.
+- `headroom`: A float value that specify how much headroom the resulting image should have. The headroom value will be limited to between 1.0 (i.e. SDR) and the full headroom allowed by the gain map.
 
 ## See Also
 

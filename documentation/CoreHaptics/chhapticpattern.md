@@ -35,9 +35,9 @@ These key-value pairs represent not only events constituting the pattern, but al
 
 To add haptics to your app, you create an instance of [`CHHapticEngine`](chhapticengine.md), load a pattern, and use the engine to create a player to play that pattern. You create a pattern in one of three ways:
 
-- . Each entry in the dictionary defines a single characteristic of the haptic, like its intensity, start time, or duration. See [`Playing a single-tap haptic pattern`](playing-a-single-tap-haptic-pattern.md) to learn more about creating a dictionary inline.
-- . The [`CHHapticEvent`](chhapticevent.md) class represents a haptic event as an object in code. The key-value pairs in a dictionary correspond to the properties and parameters associated with a [`CHHapticEvent`](chhapticevent.md). Haptic event objects are just another representation of the haptics dictionary.
-- . This JSON-compliant file format specifies a haptic pattern through key-value pairs, analogous to a dictionary literal, except in a text file. Add this file to your Xcode project bundle.
+- **Dictionaries**. Each entry in the dictionary defines a single characteristic of the haptic, like its intensity, start time, or duration. See [`Playing a single-tap haptic pattern`](playing-a-single-tap-haptic-pattern.md) to learn more about creating a dictionary inline.
+- **Arrays of events and parameters**. The [`CHHapticEvent`](chhapticevent.md) class represents a haptic event as an object in code. The key-value pairs in a dictionary correspond to the properties and parameters associated with a [`CHHapticEvent`](chhapticevent.md). Haptic event objects are just another representation of the haptics dictionary.
+- **AHAP files**. This JSON-compliant file format specifies a haptic pattern through key-value pairs, analogous to a dictionary literal, except in a text file. Add this file to your Xcode project bundle.
 
 You can produce the same kind of content with all forms of pattern creation.
 

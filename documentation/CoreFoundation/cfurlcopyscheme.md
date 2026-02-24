@@ -30,7 +30,7 @@ The URL scheme is the portion of the URL specifying the transport type. For exam
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

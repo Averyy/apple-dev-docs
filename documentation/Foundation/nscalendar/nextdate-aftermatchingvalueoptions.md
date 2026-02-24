@@ -27,9 +27,9 @@ A new `NSDate` object.
 ## Parameters
 
 - `date`: The date for which to perform the calculation.
-- `unit`: The component to use. For possible values, see  .
+- `unit`: The component to use. For possible values, see [`NSCalendar.Unit`](nscalendar/unit.md).
 - `value`: The value for the given component.
-- `options`: Options for the calculation. For possible values, see  .
+- `options`: Options for the calculation. For possible values, see [`NSCalendar.Options`](nscalendar/options.md).
 
 ## See Also
 

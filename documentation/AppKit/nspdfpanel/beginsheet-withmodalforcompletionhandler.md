@@ -20,7 +20,7 @@ This method presents a slightly different PDF panel depending on whether the [`r
 
 ## Parameters
 
-- `pdfInfo`: The   object describing the parameters to be used when creating the PDF file.
+- `pdfInfo`: The `NSPDFInfo` object describing the parameters to be used when creating the PDF file.
 - `docWindow`: The window in which the PDF panel will be presented.
 - `completionHandler`: The block called when the user dismisses the PDF panel.
 

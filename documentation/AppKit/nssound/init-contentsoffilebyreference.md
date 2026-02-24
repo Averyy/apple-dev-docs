@@ -21,7 +21,7 @@ Initialized `NSSound` instance.
 ## Parameters
 
 - `path`: Path to the sound file with which the receiver is to be initialized.
-- `byRef`: When   only the name of the sound is stored with the   instance when archived using  ; otherwise the audio data is archived along with the instance.
+- `byRef`: When [`true`](https://developer.apple.com/documentation/Swift/true) only the name of the sound is stored with the `NSSound` instance when archived using [`encode(with:)`](https://developer.apple.com/documentation/Foundation/NSCoding/encode(with:)); otherwise the audio data is archived along with the instance.
 
 ## See Also
 

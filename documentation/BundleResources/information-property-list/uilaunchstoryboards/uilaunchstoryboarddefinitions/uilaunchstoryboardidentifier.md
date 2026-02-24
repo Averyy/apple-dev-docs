@@ -9,6 +9,10 @@ A user-specified identifier for a launch storyboard.
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UILaunchStoryboardFile](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md)

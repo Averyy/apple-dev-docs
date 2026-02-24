@@ -38,7 +38,7 @@ func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
 
 ## Parameters
 
-- `configuration`: Information about a file that already exists for the   document, if any.
+- `configuration`: Information about a file that already exists for the document, if any.
 
 ## See Also
 

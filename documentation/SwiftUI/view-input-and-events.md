@@ -19,7 +19,7 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](view/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
 - [func refreshable(action: () async -> Void) -> some View](view/refreshable(action:).md)
-  Marks this view as refreshable.
+  Adds an asynchronous handler that can update the data the view displays when a person initiates a request, such as by pulling to refresh.
 - [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 ### Scroll controls

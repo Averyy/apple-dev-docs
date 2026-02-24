@@ -20,9 +20,9 @@ init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: N
 
 ## Parameters
 
-- `ink`: The   the class uses to render this stroke.
+- `ink`: The [`PKInkReference`](pkinkreference.md) the class uses to render this stroke.
 - `strokePath`: The B-spline path that describes this stroke.
-- `transform`: The   to apply to this stroke. Defaults to  .
+- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to this stroke. Defaults to [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity).
 - `mask`: The pretransform mask the class uses to clip the rendering of the stroke.
 
 ## See Also

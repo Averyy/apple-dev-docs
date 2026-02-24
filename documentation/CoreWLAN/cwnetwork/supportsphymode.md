@@ -16,7 +16,7 @@ func supportsPHYMode(_ phyMode: CWPHYMode) -> Bool
 
 #### Return Value
 
- if the network supports the specified PHY mode.
+*YES* if the network supports the specified PHY mode.
 
 
 ---

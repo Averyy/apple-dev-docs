@@ -28,9 +28,9 @@ The strings in the array are in the order they should be presented to the userâ€
 
 ## Parameters
 
-- `range`: The range of a misspelled word in  .
-- `string`: A string in which there is a misspelled word, as located by  .
-- `language`: The language of the of the words that are possible corrections. This string is from the ISO 639-1 standard, for example   (Spanish).
+- `range`: The range of a misspelled word in `string`.
+- `string`: A string in which there is a misspelled word, as located by `range`.
+- `language`: The language of the of the words that are possible corrections. This string is from the ISO 639-1 standard, for example `es` (Spanish).
 
 ## See Also
 

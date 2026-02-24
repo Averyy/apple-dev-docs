@@ -79,6 +79,11 @@ Specify `com.apple.cellular` as the payload type.
 - [object Cellular.AttachAPN](cellular/attachapn-data.dictionary.md)
   A dictionary that contains details about an attach access point name (APN) configuration.
 
+## Properties
+
+- `APNs` ([Cellular.APNsItem]): An array of access point name (APN) dictionaries.
+- `AttachAPN` (Cellular.AttachAPN): A configuration dictionary.
+
 ## See Also
 
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)

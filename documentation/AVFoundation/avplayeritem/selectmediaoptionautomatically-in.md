@@ -27,7 +27,7 @@ This method has no effect unless the [`appliesMediaSelectionCriteriaAutomaticall
 
 ## Parameters
 
-- `mediaSelectionGroup`: The media selection group, obtained from the receiver’s  , that contains the specified option.
+- `mediaSelectionGroup`: The media selection group, obtained from the receiver’s [`asset`](avplayeritem/asset.md), that contains the specified option.
 
 ## See Also
 

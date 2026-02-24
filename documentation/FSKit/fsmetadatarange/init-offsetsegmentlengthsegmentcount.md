@@ -16,8 +16,8 @@ init(offset startOffset: off_t, segmentLength: UInt64, segmentCount: UInt64)
 
 ## Parameters
 
-- `startOffset`: The start offset of the range in bytes. Ensure this value is a multiple of the corresponding resource’s  .
-- `segmentLength`: The segment length in bytes. Ensure this value is a multiple of the corresponding resource’s  .
+- `startOffset`: The start offset of the range in bytes. Ensure this value is a multiple of the corresponding resource’s [`blockSize`](fsblockdeviceresource/blocksize.md).
+- `segmentLength`: The segment length in bytes. Ensure this value is a multiple of the corresponding resource’s [`blockSize`](fsblockdeviceresource/blocksize.md).
 - `segmentCount`: The number of segments in the range.
 
 

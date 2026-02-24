@@ -26,13 +26,13 @@ A result code. See [`Sample Buffer Error Codes`](sample-buffer-errors.md).
 
 #### Discussion
 
-A sample buffer can only have one invalidation callback. The invalidation callback  called during ordinary sample buffer finalization.
+A sample buffer can only have one invalidation callback. The invalidation callback *isn’t* called during ordinary sample buffer finalization.
 
 ## Parameters
 
 - `sbuf`: The sample buffer being modified.
-- `invalidateCallback`: Reference to a function to be called during  .
-- `invalidateRefCon`: Reference constant to be passed to  .
+- `invalidateCallback`: Reference to a function to be called during `CMSampleBufferInvalidate`.
+- `invalidateRefCon`: Reference constant to be passed to `invalidateCallback`.
 
 ## Topics
 

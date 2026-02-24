@@ -20,7 +20,7 @@ The scaling mode in use for the specified segment. For the possible values, see 
 
 ## Parameters
 
-- `segment`: The index of the segment whose image scaling mode you want to get. This method raises an exception ( ) if the index is out of bounds.
+- `segment`: The index of the segment whose image scaling mode you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
 
 ## See Also
 

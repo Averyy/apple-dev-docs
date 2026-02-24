@@ -29,8 +29,8 @@ With this API MPSGraph computes the max-pooling gradient efficiently by reusing 
 
 ## Parameters
 
-- `gradient`: A 2D input gradient tensor - must be of rank=4. The layout is defined by  .
-- `indices`: The indices tensor returned from  .
+- `gradient`: A 2D input gradient tensor - must be of rank=4. The layout is defined by `descriptor.dataLayout`.
+- `indices`: The indices tensor returned from [`maxPooling2DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling2dreturnindices(_:descriptor:name:).md).
 - `outputShape`: The shape of the destination gradient.
 - `descriptor`: A pooling operation descriptor that specifies pooling window sizes, strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.

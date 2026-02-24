@@ -25,7 +25,7 @@ This method uses `getNextDescriptor`, and further validates that the returned de
 ## Parameters
 
 - `configurationDescriptor`: The configuration descriptor that contains the descriptors to iterate through.
-- `currentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor, or  .
+- `currentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor, or `NULL`.
 - `type`: The type of descriptor to find.
 
 ## See Also

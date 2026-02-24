@@ -26,7 +26,7 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherw
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. Deallocating the reference (via  ) severs the connection and deregisters all records registered on this connection.
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. Deallocating the reference (via [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md)) severs the connection and deregisters all records registered on this connection.
 
 ## See Also
 

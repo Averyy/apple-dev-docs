@@ -10,7 +10,7 @@ UIKit reports touches from Apple Pencil in the same way it reports touches from 
 
 ![An illustration of how azimuth (shown on the left) and altitude (shown on the right) are determined when using Apple Pencil on a screen.](https://docs-assets.developer.apple.com/published/346399f07002dc4ec8bcf9cb91af19b4/media-3004388%402x.png)
 
-Because Apple Pencil is a separate device, there’s a delay between the time Apple Pencil gathers altitude, azimuth, and force values and the time that those values are reported to your app. As a result, UIKit may provide  values for those properties initially, and then provide the real values at a later time. If you use altitude, azimuth, or force information from Apple Pencil, you must explicitly handle estimated properties.
+Because Apple Pencil is a separate device, there’s a delay between the time Apple Pencil gathers altitude, azimuth, and force values and the time that those values are reported to your app. As a result, UIKit may provide *estimated* values for those properties initially, and then provide the real values at a later time. If you use altitude, azimuth, or force information from Apple Pencil, you must explicitly handle estimated properties.
 
 > **Note**:  Devices that work with Apple Pencil can report touches at up to 240 Hz. Because UIKit usually reports touches at around 60 Hz, any additional touches are coalesced into a single touch representing the last location. For information about how to get the additional touch data, see [`Getting high-fidelity input with coalesced touches`](getting-high-fidelity-input-with-coalesced-touches.md).
 

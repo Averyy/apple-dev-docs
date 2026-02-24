@@ -10,11 +10,11 @@ Share image data between vDSP and vImage to visualize audio that a device microp
 
 #### Overview
 
-This sample code project captures audio from a macOS device’s microphone and uses a combination of routines from vImage and vDSP to render the audio as an . Audio spectrograms visualize audio in 2D using one axis to represent time and the other axis to represent frequency. Color represents the amplitude of the time-frequency pair.
+This sample code project captures audio from a macOS device’s microphone and uses a combination of routines from vImage and vDSP to render the audio as an *audio spectrogram*. Audio spectrograms visualize audio in 2D using one axis to represent time and the other axis to represent frequency. Color represents the amplitude of the time-frequency pair.
 
 You can use audio spectrograms for signal analysis. For example, a spectrogram can help identify audio issues, such as low- or high-frequency noise, or short-impulse noises like clicks and pops that may not be immediately obvious to the human ear. Spectrograms can also assist in audio classification using neural networks for tasks such as bird song and speech recognition.
 
-The image below shows the audio spectrogram that this sample created from the  sound effect in [`GarageBand`](https://developer.apple.comhttps://www.apple.com/ios/garageband/). The horizontal axis represents time, and the vertical axis represents frequency. The sample calculates the color that represents amplitude using a procedurally generated multidimensional lookup table.
+The image below shows the audio spectrogram that this sample created from the *Stargate Opening* sound effect in [`GarageBand`](https://developer.apple.comhttps://www.apple.com/ios/garageband/). The horizontal axis represents time, and the vertical axis represents frequency. The sample calculates the color that represents amplitude using a procedurally generated multidimensional lookup table.
 
 ![A screenshot of an audio spectrogram showing a series of vertically stacked diagonal lines that rise and fall, representing the tones of the sampled sound effect.](https://docs-assets.developer.apple.com/published/485fb74f8694c3e396e025955ad66e8e/stargateOpening.jpeg)
 
@@ -199,13 +199,13 @@ func makeAudioSpectrogramImage() -> CGImage {
 
 In addition to the linear audio spectrogram, the sample app provides a mode to render audio as a mel spectrogram. The `computeMelSpectrogram(values:)` function rescales the frequency-domain buffer from a linear scale to the mel scale.
 
-The mel scale is a scale of pitches that human hearing generally perceives to be equidistant from each other. As frequency increases, the interval, in hertz, between mel scale values (or simply ) increases. The name  derives from  and indicates that the scale is based on the comparison between pitches. The mel spectrogram remaps the values in hertz to the mel scale.
+The mel scale is a scale of pitches that human hearing generally perceives to be equidistant from each other. As frequency increases, the interval, in hertz, between mel scale values (or simply *mels*) increases. The name *mel* derives from *melody* and indicates that the scale is based on the comparison between pitches. The mel spectrogram remaps the values in hertz to the mel scale.
 
 The linear audio spectrogram is ideally suited for use cases where all frequencies have equal importance, while mel spectrograms are better suited when modeling human hearing perception. Mel spectrogram data is also suited for use in audio classification.
 
 A mel spectrogram differs from a linearly scaled audio spectrogram in two ways:
 
-- A mel spectrogram logarithmically renders frequencies above a certain threshold (the ). For example, in the linearly scaled spectrogram, the vertical space between 1000 Hz and 2000 Hz is half of the vertical space between 2000 Hz and 4000 Hz. In the mel spectrogram, the space between those ranges is approximately the same. This scaling is analogous to human hearing, where it’s easier to distinguish between similar low frequency sounds than similar high frequency sounds.
+- A mel spectrogram logarithmically renders frequencies above a certain threshold (the *corner frequency*). For example, in the linearly scaled spectrogram, the vertical space between 1000 Hz and 2000 Hz is half of the vertical space between 2000 Hz and 4000 Hz. In the mel spectrogram, the space between those ranges is approximately the same. This scaling is analogous to human hearing, where it’s easier to distinguish between similar low frequency sounds than similar high frequency sounds.
 - A mel spectrogram computes its output by multiplying frequency-domain values by a filter bank.
 
 The sample builds the filter bank from a series of overlapping triangular windows at a series of evenly spaced mels. The number of elements in a single frame in a mel spectrogram is equal to the number of filters in the filter bank.

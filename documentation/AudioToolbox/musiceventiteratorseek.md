@@ -26,7 +26,7 @@ A result code.
 ## Parameters
 
 - `inIterator`: The music event iterator that you want to position along a music track.
-- `inTimeStamp`: To position the iterator at the first event of a music track, specify a value of 0 for this parameter.
+- `inTimeStamp`: The new position for the music event iterator, in beats. If there is no music event at the specified time, on output the iterator points to the first event after that time. To position the iterator immediately beyond the final event of a music track, specify [`kMusicTimeStamp_EndOfTrack`](kmusictimestamp_endoftrack.md) for this parameter. You can then call the [`MusicEventIteratorPreviousEvent(_:)`](musiceventiteratorpreviousevent(_:).md) to backtrack to the final event of the music track. To position the iterator at the first event of a music track, specify a value of 0 for this parameter.
 
 ## See Also
 

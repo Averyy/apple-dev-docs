@@ -22,7 +22,7 @@ If the end of the string being spoken is reached before the specified stopping p
 
 ## Parameters
 
-- `boundary`: Boundary at which to stop speech. The supported bound types are listed in  .
+- `boundary`: Boundary at which to stop speech. The supported bound types are listed in [`NSSpeechSynthesizer.Boundary`](nsspeechsynthesizer/boundary.md).
 
 ## See Also
 

@@ -62,8 +62,8 @@ struct ConfirmFileImport: View {
 
 ## Parameters
 
-- `item`: A binding to an optional source of truth for the action   sheet. When   is non- , the system passes   the contents to the modifier’s closure. You use this content   to populate the fields of an action sheet that you create that the   system displays to the user. If   changes, the system   dismisses the currently displayed action sheet and replaces it   with a new one using the same process.
-- `content`: A closure returning the   you create.
+- `item`: A binding to an optional source of truth for the action sheet. When `item` is non-`nil`, the system passes the contents to the modifier’s closure. You use this content to populate the fields of an action sheet that you create that the system displays to the user. If `item` changes, the system dismisses the currently displayed action sheet and replaces it with a new one using the same process.
+- `content`: A closure returning the [`ActionSheet`](actionsheet.md) you create.
 
 ## See Also
 

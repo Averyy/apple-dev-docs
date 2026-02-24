@@ -41,8 +41,8 @@ To create a custom symbol image from your app’s asset catalog, use [`init(_:va
 
 ## Parameters
 
-- `systemName`: The name of the system symbol image.   Use the SF Symbols app to look up the names of system   symbol images.
-- `variableValue`: An optional value between   and   that   the rendered image can use to customize its appearance, if   specified. If the symbol doesn’t support variable values, this   parameter has no effect. Use the SF Symbols app to look up which   symbols support variable values.
+- `systemName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images.
+- `variableValue`: An optional value between `0.0` and `1.0` that the rendered image can use to customize its appearance, if specified. If the symbol doesn’t support variable values, this parameter has no effect. Use the SF Symbols app to look up which symbols support variable values.
 
 ## See Also
 

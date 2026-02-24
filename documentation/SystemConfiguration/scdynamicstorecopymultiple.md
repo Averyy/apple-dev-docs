@@ -21,8 +21,8 @@ A dictionary of key-value pairs that match the specified keys and key patterns, 
 ## Parameters
 
 - `store`: The dynamic store session.
-- `keys`: The keys associated with the desired values or   if no specific keys are requested.
-- `patterns`: An array of regex(3) pattern strings used to match the keys, or   if no key patterns are requested.
+- `keys`: The keys associated with the desired values or `NULL` if no specific keys are requested.
+- `patterns`: An array of regex(3) pattern strings used to match the keys, or `NULL` if no key patterns are requested.
 
 ## See Also
 

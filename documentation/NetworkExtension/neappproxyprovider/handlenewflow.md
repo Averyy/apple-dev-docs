@@ -36,7 +36,7 @@ New flows are initially in an unopened state. The App Proxy Provider should take
 
 ## Parameters
 
-- `flow`: The new   object. If the App Proxy Provider decides to proxy the flow, it should create a reference to the flow in its data structures.
+- `flow`: The new [`NEAppProxyFlow`](neappproxyflow.md) object. If the App Proxy Provider decides to proxy the flow, it should create a reference to the flow in its data structures.
 
 ## See Also
 

@@ -27,8 +27,8 @@ func newTexture(data: Data, options: [MTKTextureLoader.Option : Any]? = nil) asy
 
 ## Parameters
 
-- `data`: The   object containing image data.
-- `options`: A dictionary describing any additional texture loading steps. See  .
+- `data`: The [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing image data.
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 - `completionHandler`: A block called when the texture has been loaded and fully initialized.
 
 ## See Also

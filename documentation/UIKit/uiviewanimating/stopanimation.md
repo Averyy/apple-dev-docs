@@ -27,7 +27,7 @@ If you specify [`false`](https://developer.apple.com/documentation/Swift/false) 
 
 ## Parameters
 
-- `withoutFinishing`: A Boolean indicating whether any final actions should be performed. Specify   to clear any animations and move the animator directly to the   state without performing any final actions. Specify   to put the animator into the   state.
+- `withoutFinishing`: A Boolean indicating whether any final actions should be performed. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to clear any animations and move the animator directly to the [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) state without performing any final actions. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to put the animator into the [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md) state.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func secondFraction(_ format: Date.FormatStyle.Symbol.SecondFraction) -> Date.Fo
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

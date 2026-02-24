@@ -32,7 +32,7 @@ The depth-first traversal ordering of the receiving index path and `indexPath`.
 
 ## Parameters
 
-- `otherObject`: This value must not be  . If the value is  , the behavior is undefined.
+- `otherObject`: Index path to compare. This value must not be `nil`. If the value is `nil`, the behavior is undefined.
 
 
 ---

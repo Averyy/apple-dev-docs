@@ -37,7 +37,7 @@ If the type of `object` is [`CGPDFObjectType.integer`](cgpdfobjecttype/integer.m
 
 - `object`: A PDF object.
 - `type`: A PDF object type.
-- `value`: If the   parameter is a PDF object of the specified type, then on return contains that object, otherwise the value is unspecified.
+- `value`: If the `object` parameter is a PDF object of the specified type, then on return contains that object, otherwise the value is unspecified.
 
 ## See Also
 

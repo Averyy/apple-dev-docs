@@ -28,8 +28,8 @@ If you use the [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirem
 ## Parameters
 
 - `text`: The text form of a code requirement.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
-- `errors`: On return, if the function call fails and returns a result code other than  , points to an error object further describing the nature and circumstances of the failure. Use the   function to retrieve the user info dictionary from the error object. See   for possible values. Pass   if you do not want this information. In Objective-C, call the   function to release this object when you are finished with it.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
+- `errors`: On return, if the function call fails and returns a result code other than `errSecSuccess`, points to an error object further describing the nature and circumstances of the failure. Use the [`CFErrorCopyUserInfo(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFErrorCopyUserInfo(_:)) function to retrieve the user info dictionary from the error object. See [`User Info Dictionary Error Keys`](user-info-dictionary-error-keys.md) for possible values. Pass `NULL` if you do not want this information. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
 - `requirement`: On return, contains a code requirement object that implements the conditions described in the text.
 
 

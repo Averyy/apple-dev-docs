@@ -28,9 +28,9 @@ If you call this method before any draw calls, Metal writes a timestamp before t
 
 ## Parameters
 
-- `granularity`: A   hint.
-- `stage`:   that need to complete before Metal writes the timestamp. This may also include later   stages that are related, for example   may include   .
-- `counterHeap`:   into which Metal writes timestamps.
+- `granularity`: A [`MTL4TimestampGranularity`](mtl4timestampgranularity.md) hint.
+- `stage`: [`MTLRenderStages`](mtlrenderstages.md) that need to complete before Metal writes the timestamp. This may also include later stages that are related, for example [`mesh`](mtlrenderstages/mesh.md) may include [`vertex`](mtlrenderstages/vertex.md).
+- `counterHeap`: [`MTL4CounterHeap`](mtl4counterheap.md) into which Metal writes timestamps.
 - `index`: The index value into which Metal writes this timestamp.
 
 

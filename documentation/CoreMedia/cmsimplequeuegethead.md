@@ -30,7 +30,7 @@ If the queue is empty, the function returns `NULL`.
 
 ## Parameters
 
-- `queue`: The queue from which to get the head element. Must not be  .
+- `queue`: The queue from which to get the head element. Must not be `NULL`.
 
 ## See Also
 

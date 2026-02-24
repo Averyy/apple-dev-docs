@@ -22,8 +22,8 @@ As part of its implementation, this method calls [`firstUnlaidCharacterIndex()`]
 
 ## Parameters
 
-- `charIndex`: On return, if not  , the index of the first character that has invalid layout information
-- `glyphIndex`: On return, if not  , the index of the first glyph that has invalid layout information.
+- `charIndex`: On return, if not `NULL`, the index of the first character that has invalid layout information
+- `glyphIndex`: On return, if not `NULL`, the index of the first glyph that has invalid layout information.
 
 ## See Also
 

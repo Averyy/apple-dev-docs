@@ -22,7 +22,7 @@ A new `TCControlLabel` instance.
 ## Parameters
 
 - `name`: The name of the control label. Corresponds to the input name on the game controller’s physical input profile.
-- `role`: The role of the control label. Corresponds to the type of the  on the  .
+- `role`: The role of the control label. Corresponds to the type of the `GCControllerElement`on the `GCController`.
 
 
 ---

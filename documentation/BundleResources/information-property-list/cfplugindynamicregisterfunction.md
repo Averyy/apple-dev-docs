@@ -8,6 +8,10 @@ The function to use when dynamically registering a plug-in.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFPlugInDynamicRegistration](information-property-list/cfplugindynamicregistration.md)

@@ -25,7 +25,7 @@ This method registers `self` with the application’s global instance of [`NSScr
 
 ## Parameters
 
-- `suiteName`: The name of the suite (in the application’s scriptability information) that the class belongs to. For example,  .
+- `suiteName`: The name of the suite (in the application’s scriptability information) that the class belongs to. For example, `"AppName Suite"`.
 - `className`: The name of the class that this instance describes.
 - `classDeclaration`: A class declaration dictionary of the sort that is valid in script suite property list files. This dictionary provides information about the class such as its attributes and relationships.
 

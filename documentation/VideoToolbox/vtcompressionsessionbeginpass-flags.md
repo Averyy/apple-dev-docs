@@ -28,7 +28,7 @@ It’s an error to call this function when multipass encoding is not enabled by 
 ## Parameters
 
 - `session`: A compression session.
-- `beginPassFlags`: Pass   to inform the encoder that the pass must be the final pass.
+- `beginPassFlags`: Pass [`beginFinalPass`](vtcompressionsessionoptionflags/beginfinalpass.md) to inform the encoder that the pass must be the final pass.
 - `reserved`: A reserved value.
 
 ## Topics

@@ -17,7 +17,7 @@ class NIDLTDOAMeasurement
 
 #### Overview
 
-Your app runs on a receiver device that fields messages from nearby physical base stations, or . The framework processes the messages into instances of this class and provides them to your app through the  [`session(_:didUpdateDLTDOA:)`](nisessiondelegate/session(_:didupdatedltdoa:).md) callback. Your app analyzes the measurements to calculate the receiver’s position relative to the anchors in the tracked area.
+Your app runs on a receiver device that fields messages from nearby physical base stations, or *anchors*. The framework processes the messages into instances of this class and provides them to your app through the  [`session(_:didUpdateDLTDOA:)`](nisessiondelegate/session(_:didupdatedltdoa:).md) callback. Your app analyzes the measurements to calculate the receiver’s position relative to the anchors in the tracked area.
 
 Only sessions that run a [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md) receive Downlink Time-Difference-of-Arrival measurements.
 

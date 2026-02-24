@@ -23,7 +23,7 @@ func CFTreeSetContext(_ tree: CFTree!, _ context: UnsafePointer<CFTreeContext>!)
 ## Parameters
 
 - `tree`: The tree to modify.
-- `context`: The   structure to be copied and used as the context of the new tree. The information pointer will be retained by the tree if a retain function is provided. If this value is not a valid C pointer to a   structure-sized block of storage, the result is undefined. If the version number of the storage is not a valid   version number, the result is undefined.
+- `context`: The [`CFTreeContext`](cftreecontext.md) structure to be copied and used as the context of the new tree. The information pointer will be retained by the tree if a retain function is provided. If this value is not a valid C pointer to a [`CFTreeContext`](cftreecontext.md) structure-sized block of storage, the result is undefined. If the version number of the storage is not a valid [`CFTreeContext`](cftreecontext.md) version number, the result is undefined.
 
 ## See Also
 

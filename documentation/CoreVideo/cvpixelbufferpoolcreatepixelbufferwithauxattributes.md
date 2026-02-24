@@ -30,7 +30,7 @@ This function creates a new [`CVPixelBuffer`](cvpixelbuffer.md) object using the
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass   to use the default allocator. See   for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/CoreFoundation/predefined-allocators) for additional values you can use.
 - `pixelBufferPool`: The pixel buffer pool for creating the new pixel buffer.
 - `auxAttributes`: An optional dictionary of auxiliary attributes that describes the allocation request. See the Constants topic group below for possible values.
 - `pixelBufferOut`: On output, the newly created pixel buffer.

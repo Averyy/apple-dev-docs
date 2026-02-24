@@ -25,7 +25,7 @@ When a `NSWindow` instance is available, you should use [`frameRect(forContentRe
 ## Parameters
 
 - `cRect`: The content rectangle for a window expressed in screen coordinates.
-- `style`: The window style for the window. See   for a list of style mask values.
+- `style`: The window style for the window. See [`NSWindow.StyleMask`](nswindow/stylemask-swift.struct.md) for a list of style mask values.
 
 ## See Also
 

@@ -24,8 +24,8 @@ This function returns the value specified in `CMSEncoderSetHasDetachedContent` i
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `detachedContentOut`: Returns   if the message has detached content.
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `detachedContentOut`: Returns `TRUE` if the message has detached content.
 
 ## See Also
 

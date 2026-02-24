@@ -32,7 +32,7 @@ This method has no effect for entities without a mesh. Nevertheless, the method 
 
 ## Parameters
 
-- `recursive`: A Boolean that you set to   to also generate the   collision shapes for all descendants of the entity.
+- `recursive`: A Boolean that you set to `true` to also generate the collision shapes for all descendants of the entity.
 
 ## See Also
 

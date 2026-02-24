@@ -25,8 +25,8 @@ Unless you specify the [`ITLibInitOptions.lazyLoadData`](itlibinitoptions/lazylo
 
 ## Parameters
 
-- `requestedAPIVersion`: The version of the iTunesLibrary API that the app is requesting. Provide   if unknown.
-- `options`: Options that change the initialization behavior. See  .
+- `requestedAPIVersion`: The version of the iTunesLibrary API that the app is requesting. Provide `"1.0"` if unknown.
+- `options`: Options that change the initialization behavior. See [`ITLibInitOptions`](itlibinitoptions.md).
 
 ## See Also
 

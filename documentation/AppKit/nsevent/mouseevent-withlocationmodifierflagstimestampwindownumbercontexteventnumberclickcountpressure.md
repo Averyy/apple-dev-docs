@@ -20,15 +20,15 @@ The created `NSEvent` instance or `nil` if the instance could not be created.
 
 ## Parameters
 
-- `type`: One of the modifier key masks described in  , or an   is raised.
-- `location`: The cursor location in the base coordinate system of the window specified by  .
-- `flags`: An integer bit field containing any of the modifier key masks described in  , combined using the C bitwise OR operator.
+- `type`: One of the modifier key masks described in [`NSEvent.EventType`](nsevent/eventtype.md), or an `NSInternalInconsistencyException` is raised.
+- `location`: The cursor location in the base coordinate system of the window specified by `windowNum`.
+- `flags`: An integer bit field containing any of the modifier key masks described in `Getting Unicode Values`, combined using the C bitwise OR operator.
 - `time`: The time the event occurred in seconds since system startup.
-- `wNum`: An integer that identifies the window device associated with the event, which is associated with the   that will receive the event.
-- `unusedPassNil`: The display graphics context of the event. Pass   for this parameter.
+- `wNum`: An integer that identifies the window device associated with the event, which is associated with the `NSWindow` that will receive the event.
+- `unusedPassNil`: The display graphics context of the event. Pass `nil` for this parameter.
 - `eNum`: An identifier for the new event. It’s normally taken from a counter for mouse events, which continually increases as the application runs.
 - `cNum`: The number of mouse clicks associated with the mouse event.
-- `pressure`: A value from   to   indicating the pressure applied to the input device on a mouse event, used for an appropriate device such as a graphics tablet. For devices that aren’t pressure-sensitive, the value should be either   or  .
+- `pressure`: A value from `0.0` to `1.0` indicating the pressure applied to the input device on a mouse event, used for an appropriate device such as a graphics tablet. For devices that aren’t pressure-sensitive, the value should be either `0.0` or `1.0`.
 
 ## See Also
 

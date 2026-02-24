@@ -20,7 +20,7 @@ init(layout: ImmersiveVideoMask.Layout, isInEquirectangularProjection: Bool, tex
 
 ## Parameters
 
-- `layout`: The layout of the mask within the texture. See   for valid options.
+- `layout`: The layout of the mask within the texture. See [`ImmersiveVideoMask.Layout`](immersivevideomask/layout-swift.enum.md) for valid options.
 - `isInEquirectangularProjection`: A Boolean value that indicates whether the generated mask texture is in equirectangular projection space.
 - `texture`: The MTLTexture containing the mask ready for rendering.
 

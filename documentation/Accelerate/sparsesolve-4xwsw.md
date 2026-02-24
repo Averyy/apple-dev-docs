@@ -22,10 +22,10 @@ func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Complex_Floa
 
 ## Parameters
 
-- `method`: (Input) Iterative method specification, eg return value of   .
-- `A`: (Input) The matrix   to solve the system for. Only used for   multiplication by   or  .
-- `B`: The right-hand sides   to solve for. If   has dimension  , then    must have dimension  , where   is the number of   right-hand sides to find solutions for.
-- `X`: On entry, initial guess for solution, on return the solution. If A   has dimension  , and   has dimension  , then   must have   dimension  . If no good initial estimate is available, user   should set the initial guess to be the zero vector.
+- `method`: (Input) Iterative method specification, eg return value of `SparseConjugateGradient()`.
+- `A`: (Input) The matrix `A` to solve the system for. Only used for multiplication by `A` or `A^T`.
+- `B`: The right-hand sides `B` to solve for. If `A` has dimension `m x n`, then `B` must have dimension `m x nrhs`, where `nrhs` is the number of right-hand sides to find solutions for.
+- `X`: On entry, initial guess for solution, on return the solution. If A has dimension `m x n`, and `B` has dimension `m x nrhs`, then `X` must have dimension `n x nrhs`. If no good initial estimate is available, user should set the initial guess to be the zero vector.
 
 ## See Also
 

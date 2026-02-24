@@ -30,7 +30,7 @@ For example, on an American English (`en_US`) locale, passing [`gregorian`](nsca
 
 ## Parameters
 
-- `calendarIdentifier`: The calendar identifier indicating the calendar whose name you want. Use one of the values listed in  .
+- `calendarIdentifier`: The calendar identifier indicating the calendar whose name you want. Use one of the values listed in `Calendar Identifiers`.
 
 ## See Also
 

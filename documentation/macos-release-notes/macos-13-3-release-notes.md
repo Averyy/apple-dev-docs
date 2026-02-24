@@ -30,14 +30,14 @@ The macOS 13.3 SDK provides support to develop apps for Mac computers running Ve
 
 ###### Known Issues
 
-- You might be unable to enter the upgrade page for iCloud+ from iCloud Settings. (104629261)  Click “Upgrade to iCloud+” from [`https://www.apple.com/icloud/`](https://developer.apple.comhttps://www.apple.com/icloud/) to trigger the upgrade page.
+- You might be unable to enter the upgrade page for iCloud+ from iCloud Settings. (104629261) **Workaround:** Click “Upgrade to iCloud+” from [`https://www.apple.com/icloud/`](https://developer.apple.comhttps://www.apple.com/icloud/) to trigger the upgrade page.
 - Some apps which previously displayed sync toggles in iCloud Drive Settings aren’t currently displayed. (105239897)
 
 ##### Installation
 
 ###### Known Issues
 
-- macOS Ventura 13.3 beta installer fails when upgrading from versions prior to macOS Big Sur. (106102320)  Upgrade to macOS Ventura 13.2.1 before upgrading to macOS Ventura 13.3.
+- macOS Ventura 13.3 beta installer fails when upgrading from versions prior to macOS Big Sur. (106102320) **Workaround:** Upgrade to macOS Ventura 13.2.1 before upgrading to macOS Ventura 13.3.
 
 ##### Metal
 
@@ -49,7 +49,7 @@ The macOS 13.3 SDK provides support to develop apps for Mac computers running Ve
 
 ###### Known Issues
 
-- When Advanced Data Protection for iCloud is turned on, Pages, Numbers, and Keynote might unexpectedly require collaborative documents to be closed. (103463223)  Close the affected document, spreadsheet, or presentation and reopen it after a few minutes.
+- When Advanced Data Protection for iCloud is turned on, Pages, Numbers, and Keynote might unexpectedly require collaborative documents to be closed. (103463223) **Workaround:** Close the affected document, spreadsheet, or presentation and reopen it after a few minutes.
 
 ##### Safari Web Extensions
 

@@ -22,7 +22,7 @@ final func flush(agedOutOnly: Bool = true)
 
 ## Parameters
 
-- `agedOutOnly`: Only free backings that are waiting to be aged out. If false, all unused backings are   flushed regardless of age.
+- `agedOutOnly`: Only free backings that are waiting to be aged out. If false, all unused backings are flushed regardless of age.
 
 
 ---

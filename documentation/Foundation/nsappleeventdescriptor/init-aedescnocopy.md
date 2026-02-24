@@ -25,7 +25,7 @@ The initialized object takes responsibility for calling the `AEDisposeDesc` func
 
 ## Parameters
 
-- `aeDesc`: A pointer to the   structure to associate with the descriptor.
+- `aeDesc`: A pointer to the `AEDesc` structure to associate with the descriptor.
 
 ## See Also
 

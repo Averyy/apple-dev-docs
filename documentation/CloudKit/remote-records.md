@@ -24,10 +24,10 @@ Because the system coalesces notifications, don’t rely on them for specific ch
 
 CloudKit supports the following subscription types:
 
-|  | Use a database subscription when you don’t know what record zones exist, such as in the shared database. Only private and shared databases support database subscriptions. For more information, see [`CKDatabaseSubscription`](ckdatabasesubscription.md). |
+| **Database** | Use a database subscription when you don’t know what record zones exist, such as in the shared database. Only private and shared databases support database subscriptions. For more information, see [`CKDatabaseSubscription`](ckdatabasesubscription.md). |
 | --- | --- |
-|  | Use a record zone subscription to track changes in a custom record zone in the user’s private database. You can’t use this subscription in public or shared databases. For more information, see [`CKRecordZoneSubscription`](ckrecordzonesubscription.md). |
-|  | Use a query subscription to track changes to records in a database that match a predicate. Only public and private databases support query subscriptions. For more information, see [`CKQuerySubscription`](ckquerysubscription.md). |
+| **Record zone** | Use a record zone subscription to track changes in a custom record zone in the user’s private database. You can’t use this subscription in public or shared databases. For more information, see [`CKRecordZoneSubscription`](ckrecordzonesubscription.md). |
+| **Query** | Use a query subscription to track changes to records in a database that match a predicate. Only public and private databases support query subscriptions. For more information, see [`CKQuerySubscription`](ckquerysubscription.md). |
 
 ##### Integrate Records with Your Existing Models
 

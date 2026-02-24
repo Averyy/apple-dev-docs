@@ -32,12 +32,12 @@ Result dates have an integer number of seconds (as if 0 was specified for the na
 
 ## Parameters
 
-- `components`: The   to use as input to the search algorithm.
-- `start`: The   at which to start the search.
-- `range`: The range of dates to allow in the result. The sequence terminates if the next result is not contained in this range. If  , all results are allowed.
+- `components`: The `DateComponents` to use as input to the search algorithm.
+- `start`: The `Date` at which to start the search.
+- `range`: The range of dates to allow in the result. The sequence terminates if the next result is not contained in this range. If `nil`, all results are allowed.
 - `matchingPolicy`: Determines the behavior of the search algorithm when the input produces an ambiguous result.
 - `repeatedTimePolicy`: Determines the behavior of the search algorithm when the input produces a time that occurs twice on a particular day.
-- `direction`: Which direction in time to search. The default value is  , which means later in time.
+- `direction`: Which direction in time to search. The default value is `.forward`, which means later in time.
 
 
 ---

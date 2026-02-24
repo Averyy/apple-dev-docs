@@ -27,7 +27,7 @@ The indexes in `indexes` are used in the same order as the objects in `objects`.
 ## Parameters
 
 - `indexes`: The indexes of the objects to be replaced.
-- `objects`: The count of locations in   must equal the count of objects.
+- `objects`: The objects with which to replace the objects in the receiving mutable ordered set at the indexes specified by indexes. The count of locations in `indexes` must equal the count of objects.
 
 ## See Also
 

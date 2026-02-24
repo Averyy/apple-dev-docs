@@ -21,7 +21,8 @@ var estimatedMaximumDuration: CMTime { get async throws }
 
 ## Parameters
 
-- `handler`: A callback the system invokes when it finishes its estimation. It passes the callback the following parameters:
+- `handler`: A callback the system invokes when it finishes its estimation. It passes the callback the following parameters: - **`estimatedMaximumDuration`**: The system’s estimation of the maximum duration.
+- **`error`**: An optional error object that indicates if an error occurred during processing.
 
 ## See Also
 

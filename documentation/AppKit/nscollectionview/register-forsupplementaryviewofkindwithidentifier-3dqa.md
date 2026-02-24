@@ -24,9 +24,9 @@ Typically, you register your supplementary views when initializing your collecti
 
 ## Parameters
 
-- `viewClass`: The view class to use for the supplementary view. This class must be descended from   and must conform to the   protocol. Specify   to unregister a previously registered class or nib file.
-- `kind`: The kind of the supplementary view. Layout objects define the kinds of supplementary views they support and are responsible for providing appropriate strings that you can pass for this parameter. This parameter must not be an empty string or  .
-- `identifier`: The string that identifies the type of supplementary view. You use this string later when requesting new views and it must be unique among the other registered item and view classes of this collection view. This parameter must not be an empty string or  .
+- `viewClass`: The view class to use for the supplementary view. This class must be descended from [`NSView`](nsview.md) and must conform to the [`NSCollectionViewElement`](nscollectionviewelement.md) protocol. Specify `nil` to unregister a previously registered class or nib file.
+- `kind`: The kind of the supplementary view. Layout objects define the kinds of supplementary views they support and are responsible for providing appropriate strings that you can pass for this parameter. This parameter must not be an empty string or `nil`.
+- `identifier`: The string that identifies the type of supplementary view. You use this string later when requesting new views and it must be unique among the other registered item and view classes of this collection view. This parameter must not be an empty string or `nil`.
 
 ## See Also
 

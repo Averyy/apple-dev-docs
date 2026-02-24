@@ -28,12 +28,18 @@ You must not modify the texture until the release callback is invoked.
 - `format`: The pixel format of the texture. This must be compatible with the color space.
 - `width`: The width, in bytes, of the texture.
 - `height`: The height, in bytes, of the texture.
-- `name`: An OpenGL texture of type   that is valid on the Quartz Composer OpenGL context. Your application must make sure that the texture exists for the life cycle of the image provider.
-- `flipped`:   to have Quartz Composer flip the contents of the texture vertically.
-- `callback`: Quartz Composer invokes your callback when the memory buffer is no longer needed. The callback can be called from any thread at any time
+- `name`: An OpenGL texture of type `GL_TEXTURE_RECTANGLE_EXT` that is valid on the Quartz Composer OpenGL context. Your application must make sure that the texture exists for the life cycle of the image provider.
+- `flipped`: [`true`](https://developer.apple.com/documentation/Swift/true) to have Quartz Composer flip the contents of the texture vertically.
+- `callback`: The release callback.  Your callback must use this type definition: ```objc
+typedef void (*QCPlugInTextureReleaseCallback)(CGLContextObj cgl_ctx, GLuint name, void* context);
+``` If you name your callback function `MyQCPlugInTextureReleaseCallback`, you would declare it like this: ```objc
+void MyQCPlugInTextureReleaseCallback (CGLContextObj cgl_ctx,
+              GLuint name,
+              void* context);
+``` Quartz Composer invokes your callback when the memory buffer is no longer needed. The callback can be called from any thread at any time
 - `context`: The context to pass to the release callback.
 - `colorSpace`: The color space of the texture. This must be compatible with the pixel format.
-- `colorMatch`: A Boolean that specifies whether Quartz Composer should color match the texture. Pass    if the texture is a mask or gradient or should not be color matched for some other reason. Otherwise, pass  .
+- `colorMatch`: A Boolean that specifies whether Quartz Composer should color match the texture. Pass  [`false`](https://developer.apple.com/documentation/Swift/false) if the texture is a mask or gradient or should not be color matched for some other reason. Otherwise, pass [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

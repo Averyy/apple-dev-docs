@@ -32,9 +32,9 @@ The general semantics follow those of the `enumerateDates` function. To compute 
 
 - `date`: The starting date.
 - `components`: The components to search for.
-- `matchingPolicy`: Specifies the technique the search algorithm uses to find results. Default value is  .
-- `repeatedTimePolicy`: Specifies the behavior when multiple matches are found. Default value is  .
-- `direction`: Specifies the direction in time to search. Default is  .
+- `matchingPolicy`: Specifies the technique the search algorithm uses to find results. Default value is `.nextTime`.
+- `repeatedTimePolicy`: Specifies the behavior when multiple matches are found. Default value is `.first`.
+- `direction`: Specifies the direction in time to search. Default is `.forward`.
 
 ## See Also
 

@@ -30,13 +30,13 @@ For all uncompressed formats, `packets == frames`.
 ## Parameters
 
 - `inAudioFile`: The audio file to write to.
-- `inUseCache`: Set to   if you want to cache the data. Otherwise, set to  .
+- `inUseCache`: Set to `true` if you want to cache the data. Otherwise, set to `false`.
 - `inNumBytes`: The number of bytes of audio data being written.
-- `inPacketDescriptions`: A pointer to an array of packet descriptions for the audio data.   Not all formats require packet descriptions. If no packet descriptions   are required, for instance, if you are writing CBR data,  pass  .
-- `inPacketDependencies`: A pointer to an array of packet dependencies for the audio data.   This must not be  .  To write packets without dependencies,   use   instead.
+- `inPacketDescriptions`: A pointer to an array of packet descriptions for the audio data. Not all formats require packet descriptions. If no packet descriptions are required, for instance, if you are writing CBR data,  pass `NULL`.
+- `inPacketDependencies`: A pointer to an array of packet dependencies for the audio data. This must not be `NULL`.  To write packets without dependencies, use [`AudioFileWritePackets(_:_:_:_:_:_:_:)`](audiofilewritepackets(_:_:_:_:_:_:_:).md) instead.
 - `inStartingPacket`: The packet index for the placement of the first provided packet.
-- `ioNumPackets`: On input, a pointer to the number of packets to write.   On output, a pointer to the number of packets actually written.
-- `inBuffer`: A pointer to user-allocated memory containing the new audio data   to write to the audio data file.
+- `ioNumPackets`: On input, a pointer to the number of packets to write. On output, a pointer to the number of packets actually written.
+- `inBuffer`: A pointer to user-allocated memory containing the new audio data to write to the audio data file.
 
 
 ---

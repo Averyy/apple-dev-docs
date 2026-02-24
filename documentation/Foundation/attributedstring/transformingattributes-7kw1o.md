@@ -27,9 +27,9 @@ An attributed string with the applied transformations to the specified attribute
 
 ## Parameters
 
-- `k`: The   that identifies an attribute to transform.
-- `k2`: The   that identifies a second attribute to transform.
-- `c`: A closure that receives two   instances that you use to access and alter the attributes’ ranges and values.
+- `k`: The [`AttributedStringKey`](attributedstringkey.md) that identifies an attribute to transform.
+- `k2`: The [`AttributedStringKey`](attributedstringkey.md) that identifies a second attribute to transform.
+- `c`: A closure that receives two [`AttributedString.SingleAttributeTransformer`](attributedstring/singleattributetransformer.md) instances that you use to access and alter the attributes’ ranges and values.
 
 ## See Also
 

@@ -31,8 +31,8 @@ You must draw using the appropriate graphics technology for the view currently b
 
 ## Parameters
 
-- `renderer`: The SceneKit object responsible for rendering the scene. Examine this object’s   property if you need to reference the OpenGL context that your custom rendering code draws into.
-- `scene`: The   object to be rendered.
+- `renderer`: The SceneKit object responsible for rendering the scene. Examine this object’s [`context`](scnscenerenderer/context.md) property if you need to reference the OpenGL context that your custom rendering code draws into.
+- `scene`: The `SCNScene` object to be rendered.
 - `time`: The current system time, in seconds. If your custom rendering involves animation, use this parameter to compute your own animation state.
 
 ## See Also

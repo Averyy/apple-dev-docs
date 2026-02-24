@@ -24,7 +24,7 @@ A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) 
 
 ## Parameters
 
-- `parametricValue`: The on-curve location   where interpolation occurs.
+- `parametricValue`: The on-curve location `[0, count-1]` where interpolation occurs.
 
 ## See Also
 

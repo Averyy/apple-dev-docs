@@ -20,7 +20,7 @@ An array of available media subtypes (for example, 10BaseT/UTP, 100baseTX, etc),
 
 ## Parameters
 
-- `available`: The available options as returned by the   function.
+- `available`: The available options as returned by the [`SCNetworkInterfaceCopyMediaOptions(_:_:_:_:_:)`](scnetworkinterfacecopymediaoptions(_:_:_:_:_:).md) function.
 
 ## See Also
 

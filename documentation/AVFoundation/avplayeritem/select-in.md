@@ -33,8 +33,8 @@ If multiple options within a group meet your criteria for selection according to
 
 ## Parameters
 
-- `mediaSelectionOption`: If the value of the   property of   is  , you can pass   to deselect all media selection options in the group.
-- `mediaSelectionGroup`: The media selection group, obtained from the receiver’s asset, that contains  .
+- `mediaSelectionOption`: The option to select. If the value of the [`allowsEmptySelection`](avmediaselectiongroup/allowsemptyselection.md) property of `mediaSelectionGroup` is [`true`](https://developer.apple.com/documentation/Swift/true), you can pass `nil` to deselect all media selection options in the group.
+- `mediaSelectionGroup`: The media selection group, obtained from the receiver’s asset, that contains `mediaSelectionOption`.
 
 ## See Also
 

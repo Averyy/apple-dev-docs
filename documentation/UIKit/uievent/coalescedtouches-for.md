@@ -20,7 +20,7 @@ func coalescedTouches(for touch: UITouch) -> [UITouch]?
 
 #### Return Value
 
-An array of [`UITouch`](uitouch.md) objects representing all of the touches that were reported for the specified touch since the last time the event was delivered. The order of the objects in the array matches the order in which the touches were reported to the system, with the last touch being a copy of the same touch you specified in the  parameter. The return value is `nil` if the object in the  parameter is not associated with the current event.
+An array of [`UITouch`](uitouch.md) objects representing all of the touches that were reported for the specified touch since the last time the event was delivered. The order of the objects in the array matches the order in which the touches were reported to the system, with the last touch being a copy of the same touch you specified in the *touch* parameter. The return value is `nil` if the object in the *touch* parameter is not associated with the current event.
 
 #### Discussion
 

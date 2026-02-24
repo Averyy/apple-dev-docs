@@ -20,7 +20,7 @@ func send(videoBuffer: CMSampleBuffer) async throws
 
 ## Parameters
 
-- `videoBuffer`: The video buffer to be sent to the receivers - this needs to be a sample buffer with   equals to   and   containing frames properly tagged to be used as Immersive Video frames.
+- `videoBuffer`: The video buffer to be sent to the receivers - this needs to be a sample buffer with **mediaType** equals to **.taggedBufferGroup** and containing frames properly tagged to be used as Immersive Video frames.
 
 
 ---

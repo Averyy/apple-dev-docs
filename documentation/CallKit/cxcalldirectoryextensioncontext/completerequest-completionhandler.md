@@ -27,7 +27,7 @@ Call this method on the instance of [`CXCallDirectoryExtensionContext`](cxcalldi
 
 ## Parameters
 
-- `completion`: If  , then any identification or blocking entries added by the extension context were not added to the extension.
+- `completion`: A block to be executed after the request to the extension context is completed. - **expired**: Whether the receiver expired during the request. If [`true`](https://developer.apple.com/documentation/Swift/true), then any identification or blocking entries added by the extension context were not added to the extension.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the equation  for the matrix of single-precision values .
+Solves the equation *Subfactor * X = B* for the matrix of single-precision values *X*.
 
 **Availability**:
 - iOS 11.0+
@@ -22,18 +22,18 @@ func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Float, _ B: DenseMatrix_Floa
 
 ## Parameters
 
-- `Subfactor`: The   in     that   returns.
-- `B`: The matrix  .
-- `X`: The matrix  .
+- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-4renf.md) returns.
+- `B`: The matrix *B*.
+- `X`: The matrix *X*.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double)](sparsesolve(_:_:)-2oyl1.md)
-  Solves the equation  in place for the matrix of double-precision values .
+  Solves the equation *Subfactor * X = B* in place for the matrix of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float)](sparsesolve(_:_:)-2tyws.md)
-  Solves the equation  in place for the matrix of single-precision values .
+  Solves the equation *Subfactor * X = B* in place for the matrix of single-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsesolve(_:_:_:)-1lads.md)
-  Solves the equation  for the matrix of double-precision values .
+  Solves the equation *Subfactor * X = B* for the matrix of double-precision values *X*.
 
 
 ---

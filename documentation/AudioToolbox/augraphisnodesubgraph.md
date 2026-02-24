@@ -22,7 +22,7 @@ A result code.
 
 ## Parameters
 
-- `inGraph`: The   object containing the node you want to query.
+- `inGraph`: The `AUGraph` object containing the node you want to query.
 - `inNode`: The node to query.
 - `outFlag`: On output, true if the node is a subgraph, false if not.
 

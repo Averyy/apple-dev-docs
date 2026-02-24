@@ -21,9 +21,9 @@ init(named name: String, offsetPosition: SIMD3<Float> = SIMD3<Float>(0, 0, 0), o
 
 ## Parameters
 
-- `name`: Name of the   in the namespace of the owning entity.
-- `offsetPosition`: Adjustment of the   position in the local coordinate frame.
-- `offsetOrientation`: Adjustment of the   orientation in the local coordinate frame.
+- `name`: Name of the `GeometricPin` in the namespace of the owning entity.
+- `offsetPosition`: Adjustment of the `GeometricPin` position in the local coordinate frame.
+- `offsetOrientation`: Adjustment of the `GeometricPin` orientation in the local coordinate frame.
 
 
 ---

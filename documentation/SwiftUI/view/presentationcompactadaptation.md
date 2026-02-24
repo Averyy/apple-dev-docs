@@ -46,7 +46,7 @@ If you want to specify different adaptations for each dimension, use the [`prese
 
 ## Parameters
 
-- `adaptation`: The adaptation to use in either a horizontally   or vertically compact size class.
+- `adaptation`: The adaptation to use in either a horizontally or vertically compact size class.
 
 ## See Also
 

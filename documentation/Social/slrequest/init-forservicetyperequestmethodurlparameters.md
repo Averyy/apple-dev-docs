@@ -27,10 +27,10 @@ Use this method to initialize an `SLRequest`. The value and formatting of each p
 
 ## Parameters
 
-- `serviceType`: The social networking service type. For possible values, see  .
-- `requestMethod`: The method to use for this HTTP request. For possible values, see  .
-- `url`: The destination URL for this HTTP request. The values and formatting for the URL are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in  .
-- `parameters`: The parameters for this HTTP request. The values and formatting are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in  .
+- `serviceType`: The social networking service type. For possible values, see `Service Type Constants`.
+- `requestMethod`: The method to use for this HTTP request. For possible values, see [`SLRequestMethod`](slrequestmethod.md).
+- `url`: The destination URL for this HTTP request. The values and formatting for the URL are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
+- `parameters`: The parameters for this HTTP request. The values and formatting are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
 
 ## See Also
 

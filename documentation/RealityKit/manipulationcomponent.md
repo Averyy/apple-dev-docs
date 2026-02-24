@@ -20,30 +20,30 @@ struct ManipulationComponent
 
 ##### Interaction Features
 
-- : - Single-hand or trackpad gestures allow translation of the entity.
+- **Gestures**: - Single-hand or trackpad gestures allow translation of the entity.
 - Rotating the hand changes the orientation of the object.
 - Two-hand gestures allow intuitive scaling and rotation.
 - The system supports handoff between hands for seamless manipulation.
-- : - The system plays audio cues at key interaction moments (e.g., pinch, handoff, release).
+- **Audio Feedback**: - The system plays audio cues at key interaction moments (e.g., pinch, handoff, release).
 - To disable system audio or use custom sounds, set [`audioConfiguration`](manipulationcomponent/audioconfiguration-swift.property.md) to `.none`, and use component events to trigger your own audio responses.
-- : - `ManipulationComponent` publishes events through the entity’s `Scene` to notify you of key stages in the interaction lifecycle.
+- **Component Events**: - `ManipulationComponent` publishes events through the entity’s `Scene` to notify you of key stages in the interaction lifecycle.
 - See [`ManipulationEvents`](manipulationevents.md) for details on available events.
 
-When you add this component to an entity, the system modifies the entity’s transform directly. If you need to apply your own transforms, consider applying them to a  instead, or listening to component events and responding accordingly.
+When you add this component to an entity, the system modifies the entity’s transform directly. If you need to apply your own transforms, consider applying them to a **subentity** instead, or listening to component events and responding accordingly.
 
 ##### Interaction Lifecycle
 
 During a typical interaction, the system transitions through several stages, each stage has a specific event in [`ManipulationEvents`](manipulationevents.md). You can subscribe to these events to implement custom behaviors, audio feedback, analytics, or visual responses:
 
-1. : [`ManipulationEvents.WillBegin`](manipulationevents/willbegin.md)
+1. **Interaction Will Begin**: [`ManipulationEvents.WillBegin`](manipulationevents/willbegin.md)
 You can use this to add additional feedback, which lets someone know they have begun manipulating the entity.
-2. : [`ManipulationEvents.DidHandOff`](manipulationevents/didhandoff.md)
+2. **Object Handed Off**: [`ManipulationEvents.DidHandOff`](manipulationevents/didhandoff.md)
 You can use this to provide visual or auditory confirmation of transfer.
-3. : [`ManipulationEvents.DidUpdateTransform`](manipulationevents/didupdatetransform.md)
+3. **Transform Updated**: [`ManipulationEvents.DidUpdateTransform`](manipulationevents/didupdatetransform.md)
 You can use this to drive effects like trails, dynamic shadows, or visual feedback.
-4. : [`ManipulationEvents.WillRelease`](manipulationevents/willrelease.md)
+4. **Interaction Will Release**: [`ManipulationEvents.WillRelease`](manipulationevents/willrelease.md)
 You can use this to run a final visual cue that the person’s manipulation of the entity is about to end.
-5. : [`ManipulationEvents.WillEnd`](manipulationevents/willend.md)
+5. **Interaction Will End**: [`ManipulationEvents.WillEnd`](manipulationevents/willend.md)
 You can use this event to remove visual cues to show that neither the person nor the app are actively manipulating the entity’s transform anymore.
 
 ## Topics

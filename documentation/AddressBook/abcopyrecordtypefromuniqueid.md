@@ -21,7 +21,7 @@ A string with the name of the type for the record that matches the given unique 
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `uniqueId`: A unique ID for the record. If this is  , this function raises an exception.
+- `uniqueId`: A unique ID for the record. If this is `NULL`, this function raises an exception.
 
 ## See Also
 

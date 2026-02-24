@@ -32,7 +32,7 @@ WidgetKit calls `getSnapshot(in:completion:)` when the widget appears in transie
 ## Parameters
 
 - `context`: An object describing the context to show the widget in.
-- `completion`: The completion handler to call after you create the   snapshot entry.
+- `completion`: The completion handler to call after you create the snapshot entry.
 
 ## See Also
 

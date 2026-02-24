@@ -26,9 +26,9 @@ The list of keys. Ownership follows the [`The Create Rule`](https://developer.ap
 
 ## Parameters
 
-- `applicationID`: The ID of the application whose preferences to search. Takes the form of a Java package name,  .
-- `userName`:   to search the current-user domain, otherwise   to search the any-user domain.
-- `hostName`:   to search the current-host domain, otherwise   to search the any-host domain.
+- `applicationID`: The ID of the application whose preferences to search. Takes the form of a Java package name, `com.foosoft`.
+- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to search the any-user domain.
+- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to search the any-host domain.
 
 ## See Also
 

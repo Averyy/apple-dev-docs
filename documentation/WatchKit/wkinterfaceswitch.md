@@ -20,9 +20,33 @@ Switches are commonly used to indicate whether a feature is enabled or disabled.
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a switch object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var mySwitch: WKInterfaceSwitch!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceSwitch* mySwitch;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen switch.
 
 When the user changes the value of a switch, WatchKit delivers the new value to the slider’s action method. The format of a switch’s action method is as follows:
+
+**Swift**:
+
+```swift
+@IBAction func switchAction(value: Bool)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)switchAction:(BOOL)on
+```
 
 Declare a method of this form in the interface controller class used to manage the switch. You can change the method name to anything you like. When configuring the switch in Xcode, connect its selector to your custom action method.
 

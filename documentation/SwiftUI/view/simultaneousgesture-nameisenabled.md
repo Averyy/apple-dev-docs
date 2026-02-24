@@ -61,8 +61,8 @@ struct SimultaneousGestureExample: View {
 ## Parameters
 
 - `gesture`: A gesture to attach to the view.
-- `name`: A string that identifies the gesture. In iOS, the name can be   used to set up failure relationships between UIKit gesture   recognizers and this gesture.
-- `isEnabled`: Whether the added gesture is enabled. The default value   is  .
+- `name`: A string that identifies the gesture. In iOS, the name can be used to set up failure relationships between UIKit gesture recognizers and this gesture.
+- `isEnabled`: Whether the added gesture is enabled. The default value is `true`.
 
 ## See Also
 

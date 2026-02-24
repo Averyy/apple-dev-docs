@@ -52,7 +52,7 @@ Choosing none results in the system-default behavior. For applications linked on
 - [static var nodePreserveCDATA: XMLNode.Options](xmlnode/options/nodepreservecdata.md)
   Requests that NSXMLNode preserve CDATA blocks where defined in the input XML.
 - [static var nodePreserveCharacterReferences: XMLNode.Options](xmlnode/options/nodepreservecharacterreferences.md)
-  Specifies that character references (`&#``;`) should not be resolved for XML output of this node.
+  Specifies that character references (`&#`*nnn*`;`) should not be resolved for XML output of this node.
 
 
 ---

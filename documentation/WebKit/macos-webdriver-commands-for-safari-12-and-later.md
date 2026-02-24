@@ -6,7 +6,7 @@ Test your web content using the WebDriver commands supported by Safari 12 and la
 
 #### Overview
 
-This table lists the method and the URI template (the ) that executes each command. The [`macOS WebDriver Commands for Safari 11.1 and earlier`](macos-webdriver-commands-for-safari-11-1-and-earlier.md) support the Selenium JSON Wire Protocol. The [`macOS WebDriver Commands for Safari 12 and later`](macos-webdriver-commands-for-safari-12-and-later.md) support the the [`W3C WebDriver protocol`](https://developer.apple.comhttps://www.w3.org/TR/webdriver/#list-of-endpoints).
+This table lists the method and the URI template (the *endpoint*) that executes each command. The [`macOS WebDriver Commands for Safari 11.1 and earlier`](macos-webdriver-commands-for-safari-11-1-and-earlier.md) support the Selenium JSON Wire Protocol. The [`macOS WebDriver Commands for Safari 12 and later`](macos-webdriver-commands-for-safari-12-and-later.md) support the the [`W3C WebDriver protocol`](https://developer.apple.comhttps://www.w3.org/TR/webdriver/#list-of-endpoints).
 
 All URI templates listed here are supported by the `safaridriver` tool included with Safari 12 and later. For more information on the tool, see [`About WebDriver for Safari`](about-webdriver-for-safari.md).
 

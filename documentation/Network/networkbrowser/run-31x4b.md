@@ -30,7 +30,7 @@ Return `.continue` from the closure passed to `run()` if the desired endpoints h
 
 ## Parameters
 
-- `handler`: The closure to which discovered endpoints will be delivered.   Return   from this closure to continue browsing,    to return the discovered endpoints from   , and do not return anything to browse forever.
+- `handler`: The closure to which discovered endpoints will be delivered. Return `.continue` from this closure to continue browsing, `finish(endpoints)` to return the discovered endpoints from `run()`, and do not return anything to browse forever.
 
 
 ---

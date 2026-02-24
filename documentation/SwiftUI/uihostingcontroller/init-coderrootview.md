@@ -25,7 +25,7 @@ A `UIViewController` object that you can present from your interface.
 
 ## Parameters
 
-- `rootView`: The root view of the SwiftUI view hierarchy that you want   to manage using this view controller.
+- `rootView`: The root view of the SwiftUI view hierarchy that you want to manage using this view controller.
 
 ## See Also
 

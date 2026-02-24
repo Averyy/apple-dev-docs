@@ -47,7 +47,7 @@ In OS X v 10.6, event monitors are only able to monitor the following event type
 
 ## Parameters
 
-- `mask`: An event mask specifying which events you wish to monitor. See   for possible values.
+- `mask`: An event mask specifying which events you wish to monitor. See [`NSEvent.EventTypeMask`](nsevent/eventtypemask.md) for possible values.
 - `block`: The event handler block object. It is passed the event to monitor. You can return the event unmodified, create and return a new NSEvent object, or return nil to stop the dispatching of the event.
 
 ## See Also

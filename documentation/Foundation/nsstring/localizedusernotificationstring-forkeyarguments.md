@@ -31,7 +31,7 @@ For information about how strings are formatted, see [`String Resources`](https:
 
 ## Parameters
 
-- `key`: The key to use when looking up the string in the app’s   file.
+- `key`: The key to use when looking up the string in the app’s `Localizable.strings` file.
 - `arguments`: An array of values to substitute for escaped characters in the string.
 
 ## See Also

@@ -3,7 +3,7 @@
 **Framework**: Natural Language  
 **Kind**: struct
 
-Contextual embedding keys.
+This class defines properties that you can filter or search for contextual embeddings.
 
 **Availability**:
 - iOS 12.0+
@@ -20,15 +20,19 @@ Contextual embedding keys.
 struct NLContextualEmbeddingKey
 ```
 
+#### Overview
+
+The keys within this class provide filtering criteria that you can specify within your model. For example, you can use a defined key like [`scripts`](nlcontextualembeddingkey/scripts.md) and search for models that use a specfic script like `Latin`.
+
 ## Topics
 
 ### Getting embedding keys
 - [static let languages: NLContextualEmbeddingKey](nlcontextualembeddingkey/languages.md)
-  A key that identifies the languages in a contextual embedding.
+  A key that identifies the supported languages in a contextual embedding.
 - [static let revision: NLContextualEmbeddingKey](nlcontextualembeddingkey/revision.md)
-  A key that identifies the revision for a contextual embedding.
+  A key that identifies the version number the contextual embedding uses.
 - [static let scripts: NLContextualEmbeddingKey](nlcontextualembeddingkey/scripts.md)
-  A key that identifies the scripts in a contextual embedding.
+  A key that identifies the writing system that the language uses in a contextual embedding.
 ### Creating embedding keys
 - [init(String)](nlcontextualembeddingkey/init(_:).md)
   Creates an embedding key with the given string.

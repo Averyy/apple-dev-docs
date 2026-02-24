@@ -23,7 +23,7 @@ func class_setWeakIvarLayout(_ cls: AnyClass?, _ layout: UnsafePointer<UInt8>?)
 ## Parameters
 
 - `cls`: The class to modify.
-- `layout`: The layout of the weak  s for  .
+- `layout`: The layout of the weak `Ivar`s for `cls`.
 
 ## See Also
 

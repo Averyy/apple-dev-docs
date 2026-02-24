@@ -43,7 +43,7 @@ struct RootView: View {
 
 ## Parameters
 
-- `visibility`: The visibility to use for the window toolbar in   full screen mode.
+- `visibility`: The visibility to use for the window toolbar in full screen mode.
 
 ## See Also
 

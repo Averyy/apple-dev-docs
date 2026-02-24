@@ -20,6 +20,11 @@ object DisableRemoteDesktopCommand
 - [object DisableRemoteDesktopCommand.Command](disableremotedesktopcommand/command-data.dictionary.md)
   The command to disable Remote Desktop on a device.
 
+## Properties
+
+- `Command` (DisableRemoteDesktopCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DisableRemoteDesktopResponse](disableremotedesktopresponse.md)

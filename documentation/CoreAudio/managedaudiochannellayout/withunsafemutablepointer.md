@@ -26,7 +26,7 @@ It is invalid to increase mNumberChannelDescriptions.
 
 ## Parameters
 
-- `body`: A closure that is called with a mutable pointer to the   backing  .
+- `body`: A closure that is called with a mutable pointer to the backing `AudioChannelLayout`.
 
 
 ---

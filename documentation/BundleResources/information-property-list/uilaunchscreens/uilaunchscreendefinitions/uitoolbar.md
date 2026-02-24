@@ -9,6 +9,10 @@ Toolbar visibility and configuration during launch.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 When you provide a dictionary for this key, the system displays a toolbar during launch. You can optionally set the dictionary’s [`UIImageName`](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uitoolbar/uiimagename.md) key to define a custom image for the toolbar.

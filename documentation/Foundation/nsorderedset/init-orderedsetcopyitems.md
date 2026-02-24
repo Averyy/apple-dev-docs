@@ -27,7 +27,7 @@ An initialized ordered set containing the objects in the set.
 ## Parameters
 
 - `set`: A set.
-- `flag`: If   the objects are copied to the ordered set; otherwise  .
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true) the objects are copied to the ordered set; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

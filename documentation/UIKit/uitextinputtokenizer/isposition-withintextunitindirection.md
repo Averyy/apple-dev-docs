@@ -21,13 +21,13 @@ func isPosition(_ position: UITextPosition, withinTextUnit granularity: UITextGr
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the text position is within a text unit of the specified granularity in the specified direction; otherwise, return [`false`](https://developer.apple.com/documentation/Swift/false). If the text position is  a boundary, return [`true`](https://developer.apple.com/documentation/Swift/true) only if the boundary is part of the text unit in the given direction.
+[`true`](https://developer.apple.com/documentation/Swift/true) if the text position is within a text unit of the specified granularity in the specified direction; otherwise, return [`false`](https://developer.apple.com/documentation/Swift/false). If the text position is *at* a boundary, return [`true`](https://developer.apple.com/documentation/Swift/true) only if the boundary is part of the text unit in the given direction.
 
 ## Parameters
 
 - `position`: A text-position object that represents a location in a document.
 - `granularity`: A constant that indicates a certain granularity of text unit.
-- `direction`: A constant that indicates a direction relative to  . The constant can be of type UITextStorageDirection or UITextLayoutDirection.
+- `direction`: A constant that indicates a direction relative to `position`. The constant can be of type UITextStorageDirection or UITextLayoutDirection.
 
 ## See Also
 

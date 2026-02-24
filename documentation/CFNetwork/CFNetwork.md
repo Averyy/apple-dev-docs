@@ -370,7 +370,7 @@ Access network services and handle changes in network configurations. Build on a
 - [let kCFStreamPropertyConnectionIsCellular: CFString](kcfstreampropertyconnectioniscellular.md)
   A boolean value indicating whether the stream is connected over a cellular (WWAN) interface. This is a read-only property, and is `false` until the connection has been established.
 - [let kCFStreamPropertyNoCellular: CFString](kcfstreampropertynocellular.md)
-  A Boolean value indicating that the connection should not be established over a cellular (WWAN) connection. This value can only be set  you open the stream.
+  A Boolean value indicating that the connection should not be established over a cellular (WWAN) connection. This value can only be set *before* you open the stream.
 - [let kCFStreamPropertyProxyLocalBypass: CFString](kcfstreampropertyproxylocalbypass.md)
   Proxy Local Bypass property key.
 - [let kCFStreamPropertySOCKSPassword: CFString](../CoreFoundation/kCFStreamPropertySOCKSPassword.md)

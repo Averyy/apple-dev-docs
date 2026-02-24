@@ -26,8 +26,8 @@ If you previously registered a class or nib file with the same reuse identifier,
 
 ## Parameters
 
-- `nib`: The nib object containing the cell object. The nib file must contain only one top-level object and that object must be of the type  .
-- `identifier`: The reuse identifier to associate with the specified nib file. This parameter must not be   and must not be an empty string.
+- `nib`: The nib object containing the cell object. The nib file must contain only one top-level object and that object must be of the type [`UICollectionViewCell`](uicollectionviewcell.md).
+- `identifier`: The reuse identifier to associate with the specified nib file. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

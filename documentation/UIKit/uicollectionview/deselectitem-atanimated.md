@@ -26,8 +26,8 @@ This method doesn’t cause any selection-related delegate methods to be called.
 
 ## Parameters
 
-- `indexPath`: The index path of the item to select. Specifying   results in no change to the current selection.
-- `animated`: Specify   to animate the change in the selection or   to make the change without animating it.
+- `indexPath`: The index path of the item to select. Specifying `nil` results in no change to the current selection.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the change in the selection or [`false`](https://developer.apple.com/documentation/Swift/false) to make the change without animating it.
 
 ## See Also
 

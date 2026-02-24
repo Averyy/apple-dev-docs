@@ -27,9 +27,9 @@ A dictionary that contains the attributes of `str` at the specified location. Ow
 ## Parameters
 
 - `aStr`: The attributed string to examine.
-- `loc`: The location in   at which to determine the attributes.   must not exceed the bounds of  .
-- `inRange`: The range in   within to find the longest effective range of the attributes at  .   must not exceed the bounds of  .
-- `longestEffectiveRange`: If  not  , upon return contains the maximal range within   over which the exact same set of attributes apply. The returned range is clipped to  .
+- `loc`: The location in `str` at which to determine the attributes. `loc` must not exceed the bounds of `str`.
+- `inRange`: The range in `str` within to find the longest effective range of the attributes at `loc`. `inRange` must not exceed the bounds of `str`.
+- `longestEffectiveRange`: If  not `NULL`, upon return contains the maximal range within `inRange` over which the exact same set of attributes apply. The returned range is clipped to `inRange`.
 
 ## See Also
 

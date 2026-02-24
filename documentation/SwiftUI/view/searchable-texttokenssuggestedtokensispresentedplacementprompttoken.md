@@ -26,12 +26,12 @@ For more information about using searchable modifiers, see [`Adding a search int
 ## Parameters
 
 - `text`: The text to display and edit in the search field.
-- `tokens`: A collection of tokens to display and edit in the   search field.
+- `tokens`: A collection of tokens to display and edit in the search field.
 - `suggestedTokens`: A collection of tokens to display as suggestions.
-- `isPresented`: A   that controls the presented state   of search.
-- `placement`: The preferred placement of the search field within the   containing view hierarchy.
-- `prompt`: A string representing the prompt of the search field   which provides users with guidance on what to search for.
-- `token`: A view builder that creates a view given an element in   tokens.
+- `isPresented`: A [`Binding`](binding.md) that controls the presented state of search.
+- `placement`: The preferred placement of the search field within the containing view hierarchy.
+- `prompt`: A string representing the prompt of the search field which provides users with guidance on what to search for.
+- `token`: A view builder that creates a view given an element in tokens.
 
 ## See Also
 

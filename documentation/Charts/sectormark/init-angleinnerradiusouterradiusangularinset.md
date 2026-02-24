@@ -28,8 +28,8 @@ Use this initializer to map angular positions to a sector for each data element.
 ## Parameters
 
 - `angle`: A plottable value that will map to the angular size of the sector. It’s either a value that the angle within the full circle will be proportional with, or a value range for explicit start/end angles.
-- `innerRadius`: The inner radius of the sector. It is either a size in points, or a   or   relative to the outer radius.
-- `outerRadius`: The outer radius of the sector. It is either a size in points, or a  or   relative to the available plot area.
+- `innerRadius`: The inner radius of the sector. It is either a size in points, or a `.ratio` or `.inset` relative to the outer radius.
+- `outerRadius`: The outer radius of the sector. It is either a size in points, or a `.ratio`or `.inset` relative to the available plot area.
 - `angularInset`: A radius for the corners of the sector.
 
 

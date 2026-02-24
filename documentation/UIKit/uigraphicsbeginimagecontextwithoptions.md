@@ -33,9 +33,9 @@ This function may be called from any thread of your app.
 
 ## Parameters
 
-- `size`: The size (measured in points) of the new bitmap context. This represents the size of the image returned by the   function. To get the size of the bitmap in pixels, you must multiply the width and height values by the value in the   parameter.
-- `opaque`: A Boolean flag indicating whether the bitmap is opaque. If you know the bitmap is fully opaque, specify   to ignore the alpha channel and optimize the bitmap’s storage. Specifying   means that the bitmap must include an alpha channel to handle any partially transparent pixels.
-- `scale`: The scale factor to apply to the bitmap. If you specify a value of  , the scale factor is set to the scale factor of the device’s main screen.
+- `size`: The size (measured in points) of the new bitmap context. This represents the size of the image returned by the [`UIGraphicsGetImageFromCurrentImageContext()`](uigraphicsgetimagefromcurrentimagecontext().md) function. To get the size of the bitmap in pixels, you must multiply the width and height values by the value in the `scale` parameter.
+- `opaque`: A Boolean flag indicating whether the bitmap is opaque. If you know the bitmap is fully opaque, specify [`true`](https://developer.apple.com/documentation/Swift/true) to ignore the alpha channel and optimize the bitmap’s storage. Specifying [`false`](https://developer.apple.com/documentation/Swift/false) means that the bitmap must include an alpha channel to handle any partially transparent pixels.
+- `scale`: The scale factor to apply to the bitmap. If you specify a value of `0.0`, the scale factor is set to the scale factor of the device’s main screen.
 
 ## See Also
 

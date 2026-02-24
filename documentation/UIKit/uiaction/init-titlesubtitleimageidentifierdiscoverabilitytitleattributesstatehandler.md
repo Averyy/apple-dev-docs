@@ -23,12 +23,12 @@ Creates an action with the specified title, subtitle, image, identifier, discove
 
 - `title`: The title to display for the action.
 - `subtitle`: The subtitle to display alongside the action’s title.
-- `image`: The image to display next to the action’s  . Only the   menu system supports the display of an image, and only when the app is running in iOS.
-- `identifier`: The unique identifier for the action. Specify   to let this method create a unique identifier for you.
+- `image`: The image to display next to the action’s `title`. Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
+- `identifier`: The unique identifier for the action. Specify `nil` to let this method create a unique identifier for you.
 - `discoverabilityTitle`: An elaborated title that explains the purpose of the action.
 - `attributes`: The attributes indicating the style of the action.
 - `state`: The initial state of the action.
-- `handler`: The handler to invoke after a person selects the action. This handler has the following parameter:
+- `handler`: The handler to invoke after a person selects the action. This handler has the following parameter: - **action**: The action that a person selects.
 
 ## See Also
 

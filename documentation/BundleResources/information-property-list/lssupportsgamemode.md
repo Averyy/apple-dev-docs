@@ -10,6 +10,10 @@ A Boolean value indicating whether the app supports Game Mode.
 - iPadOS 18.6+
 - macOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Game Mode turns on automatically when you launch a game, and minimizes background activity for smoother gameplay and more consistent frame rates. Set this key to `YES` to make Game Mode available when your app is running. For games that aren’t resource intensive enough to benefit from Game Mode, set this key to `NO` to turn off Game Mode for your app.

@@ -28,7 +28,7 @@ This is a convenience method for initializing the receiver and pushing a root vi
 
 ## Parameters
 
-- `rootViewController`: The view controller that resides at the bottom of the navigation stack. This object cannot be an instance of the   class.
+- `rootViewController`: The view controller that resides at the bottom of the navigation stack. This object cannot be an instance of the [`UITabBarController`](uitabbarcontroller.md) class.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The format string may override other properties previously set using other funct
 ## Parameters
 
 - `formatter`: The date formatter to modify.
-- `formatString`: The format string for  . The syntax of this string is defined by  ..
+- `formatString`: The format string for `formatter`. The syntax of this string is defined by [`Unicode Technical Standard #35`](https://developer.apple.comhttp://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)..
 
 ## See Also
 

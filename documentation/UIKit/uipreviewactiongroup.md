@@ -64,7 +64,7 @@ When first displayed, the group appears as a single option in a peek quick actio
 - [class UIPopoverController](uipopovercontroller.md)
   An object that manages the presentation of content in a popover.
 - [class UIPreviewAction](uipreviewaction.md)
-  A preview action, or , that displays below a peek when a user swipes the peek upward.
+  A preview action, or *peek quick action*, that displays below a peek when a user swipes the peek upward.
 - [class UISearchDisplayController](uisearchdisplaycontroller.md)
   An object that manages the display of a search bar, along with a table view that displays search results.
 - [class UIStoryboardPopoverSegue](uistoryboardpopoversegue.md)

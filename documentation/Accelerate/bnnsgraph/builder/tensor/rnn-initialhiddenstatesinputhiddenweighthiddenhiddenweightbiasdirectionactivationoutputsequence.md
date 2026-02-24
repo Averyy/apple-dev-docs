@@ -36,13 +36,13 @@ The input tensor `x` is of shape `(L, N, Hin)`.
 
 ## Parameters
 
-- `initialHiddenStates`: The initial hidden states, with the shape  ,   that the operation uses in the second matrix multiplication above when computing  .
-- `inputHiddenWeight`: The input-hidden weight with the shape  .
-- `hiddenHiddenWeight`: The hidden-hidden weight with the shape  .
-- `bias`: The bias (the sum of input-hidden and hidden-hidden biases) with the shape   .
+- `initialHiddenStates`: The initial hidden states, with the shape `(N, Hout)`, that the operation uses in the second matrix multiplication above when computing `h[0, ...]`.
+- `inputHiddenWeight`: The input-hidden weight with the shape `(Hout, Hin)`.
+- `hiddenHiddenWeight`: The hidden-hidden weight with the shape `(Hout, Hout)`.
+- `bias`: The bias (the sum of input-hidden and hidden-hidden biases) with the shape  `(Hout,)`.
 - `direction`: An enumeration that specifies a forward or backward RNN.
 - `activation`: An enumeration that controls the output activation function.
-- `outputSequence`: When  ,   is of shape   and   contains hidden states from every step,  . When  ,   is of shape    and contains hidden states from the last step,  .
+- `outputSequence`: When `true`, `output` is of shape `(L, N, Hout)` and contains hidden states from every step, `h[:, ...]`. When `false`, `output` is of shape `(1, N, Hout)` and contains hidden states from the last step, `h[-1, ...]`.
 
 
 ---

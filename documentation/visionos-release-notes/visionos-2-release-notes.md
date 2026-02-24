@@ -25,7 +25,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ###### Known Issues
 
-- `rotation3DEffect` does not animate along the shortest path.  (125529696)  Use `Rotation3D.slerp(from: ___, to:___, t: 1.0, along: .shortest)` to animate along the shortest path.
+- `rotation3DEffect` does not animate along the shortest path.  (125529696) **Workaround:** Use `Rotation3D.slerp(from: ___, to:___, t: 1.0, along: .shortest)` to animate along the shortest path.
 
 ##### App Intents
 
@@ -81,7 +81,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ###### Known Issues
 
-- AVPlayerViewControllers that have an AVPlayer with a mute state equal to true will automatically be unmuted when the volume is adjusted by the user through the system-provided volume controls.  (133892428)  If one or more AVPlayerViewControllers are active at the same time, video playback must be managed accordingly to avoid audio overlapping between AVPlayers. Otherwise, no workaround is required.
+- AVPlayerViewControllers that have an AVPlayer with a mute state equal to true will automatically be unmuted when the volume is adjusted by the user through the system-provided volume controls.  (133892428) **Workaround:** If one or more AVPlayerViewControllers are active at the same time, video playback must be managed accordingly to avoid audio overlapping between AVPlayers. Otherwise, no workaround is required.
 
 ##### Cfnetwork
 
@@ -331,8 +331,8 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ###### Known Issues
 
-- Using `.shadow` in SpatialTrackingSession does not work on devices without LIDAR sensors.  (132124802)  Enable `.plane` as well as `.shadow`.
-- The AudioGeneratorController might not immediately begin playback if the RealityKit.Scene doesn’t receive an update.  (133335897)  Trigger an update to the RealityKit.Scene by modifying a @State variable, or calling `entities(matching:when:)` in the context of custom System’s update method.
+- Using `.shadow` in SpatialTrackingSession does not work on devices without LIDAR sensors.  (132124802) **Workaround:** Enable `.plane` as well as `.shadow`.
+- The AudioGeneratorController might not immediately begin playback if the RealityKit.Scene doesn’t receive an update.  (133335897) **Workaround:** Trigger an update to the RealityKit.Scene by modifying a @State variable, or calling `entities(matching:when:)` in the context of custom System’s update method.
 - RealityRenderer might be missing material inputs.  (133999846) (FB14818360)
 
 ###### Deprecations
@@ -387,7 +387,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ###### Known Issues
 
-- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666)  Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
+- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666) **Workaround:** Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
 
 ###### Deprecations
 
@@ -466,7 +466,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 ###### Known Issues
 
 - When using the new `.handPointerBehavior(.drawing)` modifier, pointer shapes set with the new `.pointerStyle()` modifier are not respected while a modal presentation such as a popover is presented.  (125272950)
-- Apps using the `progressive` immersion style do not receive a callback with their initial level of immersion.  (128684013)  Use the new variants of `progressive` to manually define an initial amount of immersion.
+- Apps using the `progressive` immersion style do not receive a callback with their initial level of immersion.  (128684013) **Workaround:** Use the new variants of `progressive` to manually define an initial amount of immersion.
 
 ###### Deprecations
 
@@ -486,7 +486,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ###### Known Issues
 
-- Navigation configurations that include TabView must have the TabView as the root for the TabBar to appear.   (132595251)  Reconfigure your navigation stack to ensure TabViews are not contained within other Navigation Controllers.
+- Navigation configurations that include TabView must have the TabView as the root for the TabBar to appear.   (132595251) **Workaround:** Reconfigure your navigation stack to ensure TabViews are not contained within other Navigation Controllers.
 
 ##### Travel Mode
 
@@ -505,7 +505,7 @@ The visionOS 2 SDK provides support for developing apps for Apple Vision Pro dev
 
 ###### Known Issues
 
-- Fullscreen video player does not dock in mixed immersive spaces.  (124177690)  Present video fullscreen in an immersive space with a progressive or full immersion style.
+- Fullscreen video player does not dock in mixed immersive spaces.  (124177690) **Workaround:** Present video fullscreen in an immersive space with a progressive or full immersion style.
 
 ##### Vision Framework
 

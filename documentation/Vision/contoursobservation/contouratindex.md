@@ -24,7 +24,7 @@ The contour object at the specified index, or `nil` if the index is invalid.
 
 ## Parameters
 
-- `index`: The index of the contour to retrieve. Valid values are in the range of   to  .
+- `index`: The index of the contour to retrieve. Valid values are in the range of `0` to `contourCount - 1`.
 
 ## See Also
 

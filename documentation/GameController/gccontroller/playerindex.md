@@ -19,6 +19,10 @@ The player index for the controller.
 var playerIndex: GCControllerPlayerIndex { get set }
 ```
 
+## Mentions
+
+- [Discovering game controllers](discovering-game-controllers.md)
+
 #### Discussion
 
 Use the player index to identify which player is using the controller. Set the player index when the controller first connects to the device and you configure your game.

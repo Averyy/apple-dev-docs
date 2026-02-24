@@ -46,7 +46,7 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## Parameters
 
-- `principal`: A Boolean value that indicates whether to display   this view prominently in the Touch Bar compared to other views.
+- `principal`: A Boolean value that indicates whether to display this view prominently in the Touch Bar compared to other views.
 
 ## See Also
 

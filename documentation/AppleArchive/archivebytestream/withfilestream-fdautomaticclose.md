@@ -26,7 +26,7 @@ The result of the closure.
 
 ## Parameters
 
-- `fd`: The file descriptor that you have previously opened with  .
+- `fd`: The file descriptor that you have previously opened with `open(2)`.
 - `automaticClose`: A Boolean value that specifies whether to close the file descriptor when you close the stream.
 - `body`: A closure with the archive byte stream passed as a parameter.
 

@@ -33,7 +33,7 @@ The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeome
 - [static let jawOpen: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/jawopen.md)
   The coefficient describing an opening of the lower jaw.
 - [static let mouthClose: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthclose.md)
-  The coefficient describing closure of the lips .
+  The coefficient describing closure of the lips *independent of jaw position*.
 - [static let mouthPucker: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthpucker.md)
   The coefficient describing contraction and compression of both closed lips.
 - [static let mouthLeft: ARFaceAnchor.BlendShapeLocation](arfaceanchor/blendshapelocation/mouthleft.md)

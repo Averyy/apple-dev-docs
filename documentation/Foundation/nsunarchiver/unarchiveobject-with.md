@@ -27,7 +27,7 @@ This method invokes [`init(forReadingWith:)`](nsunarchiver/init(forreadingwith:)
 
 ## Parameters
 
-- `data`: An   object that contains an archive created using  .
+- `data`: An `NSData` object that contains an archive created using `NSArchiver`.
 
 ## See Also
 

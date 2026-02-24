@@ -24,7 +24,7 @@ Because the user can change notification settings in the Settings app at any tim
 
 The first time you register your app’s preferred notification types, the system asks the user whether your app should be allowed to deliver notifications and stores the user’s response. The system does not prompt the user on subsequent calls to the [`registerUserNotificationSettings(_:)`](uiapplication/registerusernotificationsettings(_:).md) method, but the user can always change notification preferences using Settings.
 
-A user’s notification settings control only whether the system  local or remote notifications onscreen. Regardless of the notification settings, local and remote notifications are delivered to your app at the appropriate times.
+A user’s notification settings control only whether the system *displays* local or remote notifications onscreen. Regardless of the notification settings, local and remote notifications are delivered to your app at the appropriate times.
 
 ## Parameters
 

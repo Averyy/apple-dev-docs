@@ -41,7 +41,7 @@ To overcome this limitation, specify [`vImage.Rotation.angleInRadians(_:)`](vima
 ## Parameters
 
 - `rotation`: An enumeration that specifies the rotation angle.
-- `backgroundColor`: An optional background color. If you pass  , the operation uses the   flag to extend the edges of the image infinitely.
+- `backgroundColor`: An optional background color. If you pass `nil`, the operation uses the [`kvImageEdgeExtend`](kvimageedgeextend.md) flag to extend the edges of the image infinitely.
 - `destination`: The destination pixel buffer.
 
 ## See Also

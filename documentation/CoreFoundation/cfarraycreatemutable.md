@@ -26,9 +26,9 @@ A new mutable array, or `NULL` if there was a problem creating the object. Owner
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass   or   to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. The value must not be negative.
-- `callBacks`: If any of the fields are not valid pointers to functions of the correct type, or this parameter is not a valid pointer to a   structure, the behavior is undefined. If any value put into the array is not one understood by one of the callback functions, the behavior when that callback function is used is undefined.
+- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the new array. The array starts empty and can grow to this number of values (and it can have less). Pass `0` to specify that the maximum capacity is not limited. The value must not be negative.
+- `callBacks`: A pointer to a [`CFArrayCallBacks`](cfarraycallbacks.md) structure initialized with the callbacks for the array to use on each value in the array. A copy of the contents of the callbacks structure is made, so that a pointer to a structure on the stack can be passed in or can be reused for multiple array creations. If the array contains CFType objects only, then pass [`kCFTypeArrayCallBacks`](kcftypearraycallbacks.md) to use the default callback functions. This parameter may be `NULL`, which is treated as if a valid structure of version `0` with all fields `NULL` had been passed in. If any of the fields are not valid pointers to functions of the correct type, or this parameter is not a valid pointer to a `CFArrayCallBacks` structure, the behavior is undefined. If any value put into the array is not one understood by one of the callback functions, the behavior when that callback function is used is undefined.
 
 ## See Also
 

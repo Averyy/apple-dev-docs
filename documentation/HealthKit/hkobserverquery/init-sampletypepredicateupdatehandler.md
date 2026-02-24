@@ -35,9 +35,11 @@ The provided update handler block is called every time samples matching this que
 
 ## Parameters
 
-- `sampleType`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the   class (the  ,  ,  ,  and   classes)
-- `predicate`: A predicate that limits the samples matched by the query. Pass   if you want to receive updates for every new sample of the specified type.
-- `updateHandler`: A block that is called when a matching sample is saved to or deleted from the HealthKit store. This block takes the following parameters:
+- `sampleType`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the [`HKSampleType`](hksampletype.md) class (the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md),  and [`HKCorrelationType`](hkcorrelationtype.md) classes)
+- `predicate`: A predicate that limits the samples matched by the query. Pass `nil` if you want to receive updates for every new sample of the specified type.
+- `updateHandler`: A block that is called when a matching sample is saved to or deleted from the HealthKit store. This block takes the following parameters: - **query**: A reference to the query calling this block.
+- **completionHandler**: If you have registered for background updates, you must call this completion handler as soon as you are done processing the incoming data. This tells HealthKit that you have successfully received the background update. Additionally, you should only call the completion handler when you are using background updates. For more information on using this completion handler, see [`HKObserverQueryCompletionHandler`](hkobserverquerycompletionhandler.md).
+- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 

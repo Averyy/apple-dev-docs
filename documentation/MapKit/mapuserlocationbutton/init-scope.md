@@ -23,7 +23,7 @@ Creates a new user location button with the scope you specify.
 
 ## Parameters
 
-- `scope`: A   value that identifies this namespace and that you use to associate the user location indicator with a map instance.
+- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID) value that identifies this namespace and that you use to associate the user location indicator with a map instance.
 
 
 ---

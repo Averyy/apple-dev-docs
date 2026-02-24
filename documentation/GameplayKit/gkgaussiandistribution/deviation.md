@@ -3,7 +3,7 @@
 **Framework**: GameplayKit  
 **Kind**: property
 
-The standard deviation of the distribution (also called ).
+The standard deviation of the distribution (also called *sigma*).
 
 **Availability**:
 - iOS 9.0+
@@ -30,7 +30,7 @@ This property is read-only—GameplayKit automatically calculates its value base
 ## See Also
 
 - [var mean: Float](gkgaussiandistribution/mean.md)
-  The mean value of the distribution (also called the  or ).
+  The mean value of the distribution (also called the *expected value* or *median*).
 
 
 ---

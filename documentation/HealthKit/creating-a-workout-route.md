@@ -10,11 +10,11 @@ Your app can create a route (for example, the user’s path when walking, runnin
 
 To create a workout route:
 
-1.  Before starting a workout, your app must request permission to use both the required HealthKit data types and Core Location updates.
-2.  Setup the route builder object and start tracking the user’s location.
-3.  As your app receives location updates from Core Location, filter and smooth the updates as needed, and add them to the route builder.
-4.  Stop tracking the user’s location. Save the workout to the HealthKit store.
-5.  Tell the  route builder to save the route and associates it with the workout.
+1. **Request permissions.** Before starting a workout, your app must request permission to use both the required HealthKit data types and Core Location updates.
+2. **Start the workout.** Setup the route builder object and start tracking the user’s location.
+3. **Add locations to the builder.** As your app receives location updates from Core Location, filter and smooth the updates as needed, and add them to the route builder.
+4. **End the workout.** Stop tracking the user’s location. Save the workout to the HealthKit store.
+5. **Finish the route.** Tell the  route builder to save the route and associates it with the workout.
 
 ![An illustration showing the steps required to create a workout route: Request the required permissions, start the workout, process location updates as they arrive, end the workout, and finish the route.](https://docs-assets.developer.apple.com/published/60563007f57901f4a103edd7fab5484e/media-2955571%402x.png)
 

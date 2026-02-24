@@ -24,7 +24,7 @@ Most color pickers have only one mode and thus don’t need to do any work in th
 
 ## Parameters
 
-- `mode`: The color picker mode. The available modes are described in  .
+- `mode`: The color picker mode. The available modes are described in [`Choosing the Color Pickers in a Color Panel`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/ChoosingColorPickers.html#//apple_ref/doc/uid/20000792).
 
 ## See Also
 

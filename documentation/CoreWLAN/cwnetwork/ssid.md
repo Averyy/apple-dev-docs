@@ -16,7 +16,7 @@ var ssid: String? { get }
 
 #### Discussion
 
-If the SSID can not be encoded as a valid UTF-8 or WinLatin1 string, this method returns .
+If the SSID can not be encoded as a valid UTF-8 or WinLatin1 string, this method returns *nil*.
 
 ## See Also
 

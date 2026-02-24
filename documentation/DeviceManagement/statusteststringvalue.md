@@ -32,6 +32,10 @@ object StatusTestStringValue
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `test.string-value` (string) *(required)*: The test status string value.
+
 ## See Also
 
 - [object StatusTestArrayValue](statustestarrayvalue.md)

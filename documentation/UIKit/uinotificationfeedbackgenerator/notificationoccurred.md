@@ -24,7 +24,7 @@ For more information on setting up a feedback generator, see the [`UIFeedbackGen
 
 ## Parameters
 
-- `notificationType`: The type of notification feedback. For a list of valid notification types, see the   enumeration.
+- `notificationType`: The type of notification feedback. For a list of valid notification types, see the [`UINotificationFeedbackGenerator.FeedbackType`](uinotificationfeedbackgenerator/feedbacktype.md) enumeration.
 
 ## See Also
 

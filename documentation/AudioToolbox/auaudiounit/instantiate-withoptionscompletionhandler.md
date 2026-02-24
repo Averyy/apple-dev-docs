@@ -29,7 +29,8 @@ Certain types of audio units must be instantiated asynchronously, such as versio
 
 - `componentDescription`: The component to instantiate.
 - `options`: Options for loading the unit in-process or out-of-process.
-- `completionHandler`: The block called when instantiation has completed. The block parameters are defined as follows:
+- `completionHandler`: The block called when instantiation has completed. The block parameters are defined as follows: - **audioUnit**: An initialized audio unit if the operation succeeded, or `nil` if it failed.
+- **error**: An error if the operation failed, or `nil` if it succeeded.
 
 ## See Also
 

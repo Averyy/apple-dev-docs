@@ -27,7 +27,7 @@ If the `recursive` parameter is [`true`](https://developer.apple.com/documentati
 ## Parameters
 
 - `name`: The name of the node to search for.
-- `recursively`:   to search the entire child node subtree, or   to search only the node’s immediate children.
+- `recursively`: [`true`](https://developer.apple.com/documentation/Swift/true) to search the entire child node subtree, or [`false`](https://developer.apple.com/documentation/Swift/false) to search only the node’s immediate children.
 
 ## See Also
 

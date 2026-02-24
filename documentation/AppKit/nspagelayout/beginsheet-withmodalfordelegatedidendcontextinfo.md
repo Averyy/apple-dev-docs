@@ -26,11 +26,11 @@ The value passed as `returnCode` is either `NSCancelButton` or `NSOKButton`.
 
 ## Parameters
 
-- `printInfo`: The   object to use.
+- `printInfo`: The `NSPrintInfo` object to use.
 - `docWindow`: The window to which the sheet is attached.
-- `delegate`: The delegate to which   is sent. Can be  .
-- `didEndSelector`: The selector sent to the delegate. Can be  .
-- `contextInfo`: Context information object passed with  .
+- `delegate`: The delegate to which `didEndSelector` is sent. Can be `nil`.
+- `didEndSelector`: The selector sent to the delegate. Can be `nil`.
+- `contextInfo`: Context information object passed with `didEndSelector`.
 
 ## See Also
 

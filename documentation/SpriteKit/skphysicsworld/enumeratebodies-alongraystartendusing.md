@@ -28,7 +28,10 @@ func enumerateBodies(alongRayStart start: CGPoint, end: CGPoint, using block: @e
 
 - `start`: The starting point for the ray in scene coordinates.
 - `end`: The ending point for the ray in scene coordinates.
-- `block`: A block to be called for each physics body that the ray touches. The block takes the following parameters:
+- `block`: A block to be called for each physics body that the ray touches. The block takes the following parameters: - **body**: The physics body that the ray intersected.
+- **point**: The point in scene coordinates where the ray contacted the physics body.
+- **normal**: The normal vector for the physics body at the point of contact.
+- **stop**: A pointer to a Boolean variable. Your block can set this to [`true`](https://developer.apple.com/documentation/Swift/true) to terminate the enumeration.
 
 ## See Also
 

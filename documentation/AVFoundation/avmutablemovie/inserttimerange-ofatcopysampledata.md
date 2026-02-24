@@ -26,7 +26,7 @@ This method may add new tracks to the target movie to ensure that all tracks of 
 ## Parameters
 
 - `timeRange`: The time range of the asset to be inserted.
-- `asset`: An   object indicating the source of the inserted media. This value can’t be  .
+- `asset`: An [`AVAsset`](avasset.md) object indicating the source of the inserted media. This value can’t be `nil`.
 - `startTime`: The time in the target movie at which the media is to be inserted.
 - `copySampleData`: A Boolean value that indicates whether sample data is to be copied from the source to the destination during edits.
 

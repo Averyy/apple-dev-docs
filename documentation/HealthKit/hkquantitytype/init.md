@@ -21,7 +21,7 @@ convenience init(_ identifier: HKQuantityTypeIdentifier)
 
 ## Parameters
 
-- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of quantity type identifiers, see  .
+- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of quantity type identifiers, see [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
 
 
 ---

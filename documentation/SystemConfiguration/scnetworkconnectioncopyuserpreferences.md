@@ -24,7 +24,7 @@ You can use the service ID and user options values returned by this function to 
 
 ## Parameters
 
-- `selectionOptions`: Currently unimplemented. Pass  .
+- `selectionOptions`: Currently unimplemented. Pass `NULL`.
 - `serviceID`: On output, a reference to the default service ID for starting connections.
 - `userOptions`: On output, a reference to the default user options dictionary for starting connections.
 

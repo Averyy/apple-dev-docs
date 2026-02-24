@@ -22,7 +22,7 @@ func CFPlugInAddInstanceForFactory(_ factoryID: CFUUID!)
 
 ## Parameters
 
-- `factoryID`: The   object representing the plug-in factory.
+- `factoryID`: The `CFUUID` object representing the plug-in factory.
 
 ## See Also
 

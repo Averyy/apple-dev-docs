@@ -16,7 +16,7 @@ func select(_ item: NSMenuItem?)
 
 ## Parameters
 
-- `item`: The menu item to select, or   if you want to deselect all menu items.
+- `item`: The menu item to select, or `nil` if you want to deselect all menu items.
 
 ## See Also
 

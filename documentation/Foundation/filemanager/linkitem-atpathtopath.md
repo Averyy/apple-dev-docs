@@ -30,8 +30,8 @@ Prior to linking each item, the file manager asks its delegate if it should actu
 
 ## Parameters
 
-- `srcPath`: The path that specifies the item you wish to link to. The value in this parameter must not be  .
-- `dstPath`: The path that identifies the location where the link will be created. The value in this parameter must not be  .
+- `srcPath`: The path that specifies the item you wish to link to. The value in this parameter must not be `nil`.
+- `dstPath`: The path that identifies the location where the link will be created. The value in this parameter must not be `nil`.
 
 ## See Also
 

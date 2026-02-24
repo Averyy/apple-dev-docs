@@ -30,7 +30,7 @@ Stacks all input tensors along `axis` into a result tensor of `rank + 1`. Tensor
 ## Parameters
 
 - `inputTensors`: The input tensors.
-- `axis`: The dimension to stack tensors into result. Must be in range:  .
+- `axis`: The dimension to stack tensors into result. Must be in range: `-rank + 1 <= dimension < rank + 1`.
 - `name`: The name for the operation.
 
 

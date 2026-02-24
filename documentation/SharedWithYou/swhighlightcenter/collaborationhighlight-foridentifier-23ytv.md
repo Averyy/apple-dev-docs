@@ -24,7 +24,7 @@ The `SWCollaborationHighlight` associated with the `identifier`.
 
 ## Parameters
 
-- `collaborationIdentifier`: The unique identifier that the system uses to find the  .
+- `collaborationIdentifier`: The unique identifier that the system uses to find the [`SWCollaborationHighlight`](swcollaborationhighlight.md).
 
 ## See Also
 

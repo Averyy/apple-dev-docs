@@ -21,8 +21,8 @@ func JSGlobalContextSetName(_ ctx: JSGlobalContextRef!, _ name: JSStringRef!)
 
 ## Parameters
 
-- `ctx`: The   that you want to name.
-- `name`: The remote debugging name to set on  .
+- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) that you want to name.
+- `name`: The remote debugging name to set on `ctx`.
 
 ## See Also
 

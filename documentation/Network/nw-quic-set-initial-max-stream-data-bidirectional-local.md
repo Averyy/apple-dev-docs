@@ -23,7 +23,7 @@ func nw_quic_set_initial_max_stream_data_bidirectional_local(_ options: nw_proto
 ## Parameters
 
 - `options`: A QUIC protocol options instance.
-- `initial_max_stream_data_bidirectional_local`: The value of the   transport parameter.
+- `initial_max_stream_data_bidirectional_local`: The value of the `initial_max_stream_data_bidi_local` transport parameter.
 
 ## See Also
 

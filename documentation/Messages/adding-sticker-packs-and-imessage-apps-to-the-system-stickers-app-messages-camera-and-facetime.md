@@ -8,6 +8,9 @@ Enable your Sticker pack or iMessage app in the media context.
 
 In iOS 12 and later, Sticker packs and iMessage apps can appear in multiple contexts.
 
+- **[`MSMessagesAppPresentationContext.messages`](msmessagesapppresentationcontext/messages.md) context**: The Sticker pack or iMessage app appears in the list of iMessage apps that appears when you press the plus button.
+- **[`MSMessagesAppPresentationContext.media`](msmessagesapppresentationcontext/media.md) context**: The sticker pack or iMessage app appears in the Stickers app throughout iOS, and in effect in FaceTime and the Messages camera.
+
 People can access stickers throughout iOS through the emoji keyboard. To access effects in the Messages camera or FaceTime, a person taps the effects button. The system then displays all the iMessage apps and Sticker packs that support the media context. A person can launch an app, and use it to add images or stickers to the camera.
 
 iMessage apps only appear in the `messages` context. To enable support for the `media` context, set the `MSSupportedPresentationContexts` key in your extension’s `Info.plist` file. If you indicate support for both `messages` and `media`, your Stickers only present in the `media` context including in Messages.

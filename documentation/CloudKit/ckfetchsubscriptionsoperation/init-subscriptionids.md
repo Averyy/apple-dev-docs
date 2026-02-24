@@ -27,7 +27,7 @@ After creating the operation, assign a closure to the [`fetchSubscriptionComplet
 
 ## Parameters
 
-- `subscriptionIDs`: An array of strings where each one is an ID of a subscription that you want to retrieve. This parameter sets the   property’s value. If you specify  , you must set the   property before you execute the operation.
+- `subscriptionIDs`: An array of strings where each one is an ID of a subscription that you want to retrieve. This parameter sets the [`subscriptionIDs`](ckfetchsubscriptionsoperation/subscriptionids-714ct.md) property’s value. If you specify `nil`, you must set the `subscriptionIDs` property before you execute the operation.
 
 ## See Also
 

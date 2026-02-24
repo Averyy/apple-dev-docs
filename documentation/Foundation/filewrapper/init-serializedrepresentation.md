@@ -30,7 +30,7 @@ The file wrapper is not associated with a file-system node until you save it usi
 
 ## Parameters
 
-- `serializeRepresentation`: Serialized representation of a file wrapper in the format used for the   pasteboard type. Data of this format is returned by such methods as   and   ( ).
+- `serializeRepresentation`: Serialized representation of a file wrapper in the format used for the `NSFileContentsPboardType` pasteboard type. Data of this format is returned by such methods as [`serializedRepresentation`](filewrapper/serializedrepresentation.md) and [`rtfd(from:documentAttributes:)`](nsattributedstring/rtfd(from:documentattributes:).md) ([`NSAttributedString`](nsattributedstring.md)).
 
 ## See Also
 

@@ -21,7 +21,7 @@ var attitude: GCQuaternion { get }
 
 #### Discussion
 
-The  is the orientation of a body relative to the controller’s reference frame.
+The *attitude* is the orientation of a body relative to the controller’s reference frame.
 
 ## See Also
 

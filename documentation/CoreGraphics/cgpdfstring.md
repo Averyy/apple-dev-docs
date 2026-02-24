@@ -8,7 +8,7 @@ A text string in a PDF document.
 
 A PDF string object is a series of bytes—unsigned integer values in the range 0 to 255.
 
-The string elements are not integer objects, but are stored in a more compact format. For more information on the representation of strings in PDF, see the latest version of , Adobe Systems Incorporated.
+The string elements are not integer objects, but are stored in a more compact format. For more information on the representation of strings in PDF, see the latest version of *PDF Reference*, Adobe Systems Incorporated.
 
 This object is not derived from CFType and therefore there are no functions for retaining and releasing it. CGPDFString objects exist as constituent parts of a CGPDFDocument object, and are managed by their container.
 

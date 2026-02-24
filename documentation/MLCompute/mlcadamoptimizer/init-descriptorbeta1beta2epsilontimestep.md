@@ -21,10 +21,10 @@ convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor, beta1: 
 ## Parameters
 
 - `optimizerDescriptor`: An object for configuring the optimizer.
-- `beta1`: The coefficent for computing running averages of gradient. The default value is  .
-- `beta2`: The coefficent for computing running averages of square of gradient. The default value is  .
-- `epsilon`: The epsilon value for improving numerical stability. The default value is  .
-- `timeStep`: The initial timestep for the update. The default value is  .
+- `beta1`: The coefficent for computing running averages of gradient. The default value is `0.9`.
+- `beta2`: The coefficent for computing running averages of square of gradient. The default value is `0.999`.
+- `epsilon`: The epsilon value for improving numerical stability. The default value is `1e-8`.
+- `timeStep`: The initial timestep for the update. The default value is `1`.
 
 ## See Also
 

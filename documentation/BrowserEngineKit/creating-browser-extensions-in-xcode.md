@@ -31,6 +31,10 @@ Open your Xcode project, and follow these steps for each of the three extension 
 8. Expand the disclosure triangle next to `EXAppExtensionAttributes`.
 9. Edit the value for `EXExtensionPointIdentifier`, and enter the appropriate value from the list based on the extension type:
 
+- **Rendering extension**: `com.apple.web-browser-engine.rendering`
+- **Networking extension**: `com.apple.web-browser-engine.networking`
+- **Content extension**: `com.apple.web-browser-engine.content`
+
 ##### Build for Pointer Authentication
 
 Browser apps that include alternative browser engines must use the `arm64e` instruction set for all executables, including the extensions, in order to use the operating system’s pointer-authentication protection on devices that support it. Build your browser app as a universal binary that also supports the `arm64` instruction set to target iPad models that support alternative browser engines and don’t support `arm64e` instructions.
@@ -74,6 +78,10 @@ To act as a person’s web browser, your app requires the default-browser entitl
 
 Each of your browser app’s extensions need to add the the following entitlements with a value of `true`:
 
+- **Rendering extension**: [`com.apple.developer.web-browser-engine.rendering`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser-engine.rendering)
+- **Network extension**: [`com.apple.developer.web-browser-engine.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser-engine.networking)
+- **Content extension**: [`com.apple.developer.web-browser-engine.webcontent`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser-engine.webcontent)
+
 To use the extension entitlements, compile your host app and extensions with the `arm64e` instruction set.
 
 In Japan, browser apps are required to enable hardware memory tagging (see [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations)). To protect your users, Apple also strongly recommends that browser apps enable memory tagging in the European Union.
@@ -97,6 +105,9 @@ For more information, see [`Required Device Capabilities`](https://developer.app
 ##### Test Your Web Browser
 
 Development of a web browser that uses an alternative browser engine can occur anywhere in the world. Xcode allows running development or Ad-Hoc signed builds of the app on Simulator but device support varies by region:
+
+- **European Union**: Alternative browser engines support iPhone and iPad.
+- **Japan**: Alternative browser engines support iPhone.
 
 ## See Also
 

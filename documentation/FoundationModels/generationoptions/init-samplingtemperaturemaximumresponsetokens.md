@@ -21,8 +21,8 @@ init(sampling: GenerationOptions.SamplingMode? = nil, temperature: Double? = nil
 ## Parameters
 
 - `sampling`: A strategy to use for sampling from a distribution.
-- `temperature`: Increasing temperature makes it possible for the model to produce less likely   responses. Must be between   and  , inclusive.
-- `maximumResponseTokens`: The maximum number of tokens the model is allowed   to produce before being artificially halted. Must be positive.
+- `temperature`: Increasing temperature makes it possible for the model to produce less likely responses. Must be between `0` and `1`, inclusive.
+- `maximumResponseTokens`: The maximum number of tokens the model is allowed to produce before being artificially halted. Must be positive.
 
 
 ---

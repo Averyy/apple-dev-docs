@@ -24,7 +24,7 @@ The returned array contains all of the views in the specified gravity area of th
 
 ## Parameters
 
-- `gravity`: The gravity area whose view array you want to get. Valid values are those in the   enumeration, according to the stack view’s layout direction..
+- `gravity`: The gravity area whose view array you want to get. Valid values are those in the [`NSStackView.Gravity`](nsstackview/gravity.md) enumeration, according to the stack view’s layout direction..
 
 ## See Also
 

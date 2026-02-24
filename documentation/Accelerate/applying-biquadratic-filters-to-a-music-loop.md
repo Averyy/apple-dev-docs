@@ -43,7 +43,7 @@ biquadSetup = vDSP_biquad_CreateSetup(vDSP.floatToDouble(coefficients),
 
 ##### Define the Biquadratic Coefficients
 
-Five coefficients define each section of a biquadratic filter. The following formula describes the underlying math of the biquadratic filter, with  referring to the complex frequency-domain representation of the signal:
+Five coefficients define each section of a biquadratic filter. The following formula describes the underlying math of the biquadratic filter, with *z* referring to the complex frequency-domain representation of the signal:
 
 ![A mathematical formula that describes the transfer function that the vDSP library uses for biquadratic filtering. Cap H open parentheses z close parentheses equals b sub zero, plus b sub 1 times z to the power of minus one, plus b sub 2 times z to the power of minus two, over one plus a sub 1 times z to the power of minus one, plus a sub 2 times z to the power of minus 2.](https://docs-assets.developer.apple.com/published/32e8bf0cf46675e9b64513a51ac73ecf/biquad_formula.png)
 

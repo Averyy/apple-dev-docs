@@ -43,7 +43,7 @@ When you create a [`CFError`](cferror.md), you should try to make sure the retur
 
 ## Parameters
 
-- `err`: The   to examine. If this is not a valid  , the behavior is undefined.
+- `err`: The [`CFError`](cferror.md) to examine. If this is not a valid [`CFError`](cferror.md), the behavior is undefined.
 
 ## See Also
 

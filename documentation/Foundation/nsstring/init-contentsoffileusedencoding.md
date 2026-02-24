@@ -31,7 +31,7 @@ An `NSString` object initialized by reading data from the file named by `path`. 
 ## Parameters
 
 - `path`: A path to a file.
-- `enc`: Upon return, if the file is read successfully, contains the encoding used to interpret the file at  . For possible values, see  .
+- `enc`: Upon return, if the file is read successfully, contains the encoding used to interpret the file at `path`. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

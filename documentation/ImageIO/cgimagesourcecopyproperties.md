@@ -31,7 +31,7 @@ These properties apply to the container in general but not necessarily to any in
 ## Parameters
 
 - `isrc`: The image source that contains the image data.
-- `options`: A dictionary you can use to request additional options. For a list of possible values, see  .
+- `options`: A dictionary you can use to request additional options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

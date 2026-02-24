@@ -25,7 +25,7 @@ The client controls the lifetime of the data value this method returns.
 
 ## Parameters
 
-- `SMPTEResolution`: The relationship between tick and quarter note for saving to a Standard MIDI File. Pass   to use the default.
+- `SMPTEResolution`: The relationship between tick and quarter note for saving to a Standard MIDI File. Pass `0` to use the default.
 - `outError`: On exit, if an error occurs, a description of the error.
 
 ## See Also

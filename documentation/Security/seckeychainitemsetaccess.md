@@ -25,7 +25,7 @@ Use this function to attach an access instance to a particular keychain item. Al
 ## Parameters
 
 - `itemRef`: A keychain item.
-- `access`: An access instance to replace the keychain item’s current access instance. Use the   function to create a default access instance.
+- `access`: An access instance to replace the keychain item’s current access instance. Use the [`SecAccessCreate(_:_:_:)`](secaccesscreate(_:_:_:).md) function to create a default access instance.
 
 
 ---

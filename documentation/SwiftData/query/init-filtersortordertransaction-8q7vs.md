@@ -39,10 +39,10 @@ struct RecipeList: View {
 
 ## Parameters
 
-- `filter`: A predicate on 
+- `filter`: A predicate on `Element`
 - `sort`: Key path to property used for sorting.
 - `order`: Whether to sort in forward or reverse order.
-- `transaction`: A transaction to use for user interface changes that   result from changes to the fetched results.
+- `transaction`: A transaction to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

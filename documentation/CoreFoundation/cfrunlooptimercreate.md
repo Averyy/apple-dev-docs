@@ -30,13 +30,13 @@ A timer needs to be added to a run loop mode before it will fire. To add the tim
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `fireDate`: The time at which the timer should first fire. The fine precision (sub-millisecond at most) of the fire date may be adjusted slightly by the timer if there are implementation reasons to do so.
-- `interval`: The firing interval of the timer. If   or negative, the timer fires once and then is automatically invalidated. The fine precision (sub-millisecond at most) of the interval may be adjusted slightly by the timer if implementation reasons to do so exist.
-- `flags`: Currently ignored. Pass   for future compatibility.
-- `order`: A priority index indicating the order in which run loop timers are processed. Run loop timers currently ignore this parameter. Pass  .
+- `interval`: The firing interval of the timer. If `0` or negative, the timer fires once and then is automatically invalidated. The fine precision (sub-millisecond at most) of the interval may be adjusted slightly by the timer if implementation reasons to do so exist.
+- `flags`: Currently ignored. Pass `0` for future compatibility.
+- `order`: A priority index indicating the order in which run loop timers are processed. Run loop timers currently ignore this parameter. Pass `0`.
 - `callout`: The callback function that is called when the timer fires.
-- `context`: A structure holding contextual information for the run loop timer. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call. Can be   if the callback function does not need the context’s   pointer to keep track of state.
+- `context`: A structure holding contextual information for the run loop timer. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call. Can be `NULL` if the callback function does not need the context’s `info` pointer to keep track of state.
 
 ## See Also
 

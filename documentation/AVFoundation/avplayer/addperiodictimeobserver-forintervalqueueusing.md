@@ -37,13 +37,48 @@ The system invokes the block periodically at the interval specified, interpreted
 
 The following example illustrates how you set up a callback the system invokes every half second during normal playback.
 
+**Swift**:
+
+```swift
+func addPeriodicTimeObserver() {
+    // Invoke callback every half second
+    let interval = CMTime(seconds: 0.5,
+                          preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+    // Add time observer. Invoke closure on the main queue.
+    timeObserverToken =
+        player.addPeriodicTimeObserver(forInterval: interval, queue: .main) {
+            [weak self] time in
+            // update player transport UI
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)addPeriodicTimeObserver {
+    // Invoke callback every half second
+    CMTime interval = CMTimeMakeWithSeconds(0.5, NSEC_PER_SEC);
+    // Queue on which to invoke the callback
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    // Add time observer
+    self.timeObserverToken =
+        [self.player addPeriodicTimeObserverForInterval:interval
+                                                  queue:mainQueue
+                                             usingBlock:^(CMTime time) {
+            // Use weak reference to self
+            // Update player transport UI
+        }];
+}
+```
+
 > ❗ **Important**:  Use a `weak` reference to `self` in the callback block to prevent creating a retain cycle.
 
 ## Parameters
 
 - `interval`: The time interval at which the system invokes the block during normal playback, according to progress of the player’s current time.
-- `queue`: If you pass  , the system uses the main queue.
-- `block`: The block takes a single parameter:
+- `queue`: The dispatch queue on which the system calls the block. Passing a concurrent queue isn’t supported and results in undefined behavior. If you pass `NULL`, the system uses the main queue.
+- `block`: The block that the system periodically invokes. The block takes a single parameter: - **time**: The time at which the system invokes the block.
 
 ## See Also
 

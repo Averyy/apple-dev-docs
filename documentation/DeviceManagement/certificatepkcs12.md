@@ -153,6 +153,14 @@ It’s recommended to omit the password in the profile, or do one of the followi
 </plist>
 ```
 
+## Properties
+
+- `AllowAllAppsAccess` (boolean): If `true`, the system allows apps access to the private key. Available in macOS 10.10 and later.
+- `KeyIsExtractable` (boolean): If `false`, the system doesn’t tag the private key data as extractable in the keychain.
+- `Password` (string): The password to the identity.
+- `PayloadCertificateFileName` (string): The file name of the enclosed certificate.
+- `PayloadContent` (data) *(required)*: The binary representation of the payload, encoded in Base64.
+
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)

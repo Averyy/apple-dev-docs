@@ -22,7 +22,7 @@ func setTriangleFillMode(_ fillMode: MTLTriangleFillMode)
 
 ## Parameters
 
-- `fillMode`:   the render pass applies to draw commands that   rasterize triangles or triangle strips.
+- `fillMode`: [`MTLTriangleFillMode`](mtltrianglefillmode.md) the render pass applies to draw commands that rasterize triangles or triangle strips.
 
 ## See Also
 

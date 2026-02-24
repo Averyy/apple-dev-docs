@@ -47,7 +47,7 @@ The `.containerBackground(for:alignment:content:)` modifier differs from the [`b
 ## Parameters
 
 - `container`: The container that will use the background.
-- `alignment`: The alignment that the modifier uses to position the   implicit   that groups the background views. The default is   .
+- `alignment`: The alignment that the modifier uses to position the implicit [`ZStack`](zstack.md) that groups the background views. The default is [`center`](alignment/center.md).
 - `content`: The view to use as the background of the container.
 
 ## See Also

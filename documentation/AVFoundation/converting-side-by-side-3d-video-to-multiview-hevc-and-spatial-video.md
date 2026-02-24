@@ -10,15 +10,15 @@ Create video content for visionOS by converting an existing 3D HEVC file to a mu
 
 #### Overview
 
-In visionOS, 3D video uses the  (MV-HEVC) format, supported by MPEG4 and QuickTime. Unlike other 3D media, MV-HEVC stores a single track containing multiple layers for the video, where the track and layers share a frame size. This track frame size is different from other 3D video types, such as . Side-by-side videos use a single track, and place the left- and right-eye images next to each other as part of a single video frame.
+In visionOS, 3D video uses the *Multiview High Efficiency Video Encoding* (MV-HEVC) format, supported by MPEG4 and QuickTime. Unlike other 3D media, MV-HEVC stores a single track containing multiple layers for the video, where the track and layers share a frame size. This track frame size is different from other 3D video types, such as *side-by-side video*. Side-by-side videos use a single track, and place the left- and right-eye images next to each other as part of a single video frame.
 
 To convert side-by-side video to MV-HEVC, you load the source video, extract each frame, and then split the frame horizontally. Then copy the left and right sides of the split frame into the left- and right-eye layers, writing a frame containing both layers to the output.
 
 This sample app demonstrates the process for converting side-by-side video files to MV-HEVC, encoding the output as a QuickTime file. The output is placed in the same directory as the input file, with `_MVHEVC` appended to the original filename.
 
-For videos you capture with a consistent camera configuration, you can optionally add spatial metadata to the output file.  describes properties of the left- and right-eye cameras that captured the stereo scene.
+For videos you capture with a consistent camera configuration, you can optionally add spatial metadata to the output file. *Spatial metadata* describes properties of the left- and right-eye cameras that captured the stereo scene.
 
-Adding spatial metadata to a stereo MV-HEVC video prompts Apple platforms to consider the video as  instead of just stereo, and opts the video into visual treatments on Apple Vision Pro that can minimize common causes of stereo viewing discomfort.
+Adding spatial metadata to a stereo MV-HEVC video prompts Apple platforms to consider the video as *spatial* instead of just stereo, and opts the video into visual treatments on Apple Vision Pro that can minimize common causes of stereo viewing discomfort.
 
 To learn more about when to provide spatial metadata for a stereo MV-HEVC video and the metadata values to provide, see [`Creating spatial photos and videos with spatial metadata`](https://developer.apple.com/documentation/ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata).
 

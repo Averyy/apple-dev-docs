@@ -19,8 +19,8 @@ init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)
 
 ## Parameters
 
-- `hs20Settings`: Hotspot 2.0 settings. For possible values, see  .
-- `eapSettings`: EAP settings. For possible values, see 
+- `hs20Settings`: Hotspot 2.0 settings. For possible values, see [`NEHotspotHS20Settings`](nehotspoths20settings.md).
+- `eapSettings`: EAP settings. For possible values, see [`NEHotspotEAPSettings`](nehotspoteapsettings.md)
 
 ## See Also
 

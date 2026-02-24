@@ -42,6 +42,10 @@ object StatusPackageList
 - [object StatusPackageListPackageObject](statuspackagelistpackageobject.md)
   A dictionary that describes a declarative package.
 
+## Properties
+
+- `package.list` ([StatusPackageListPackageObject]) *(required)*: An array of dictionaries that describe the device’s declarative packages.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

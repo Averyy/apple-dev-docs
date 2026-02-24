@@ -22,7 +22,7 @@ var atol: Double
 
 #### Discussion
 
- indicates convergence.
+*‖ b-Ax ‖₂ < [`rtol`](sparsegmresoptions/rtol.md) * ‖ b-Ax₀ ‖₂ + [`atol`](sparsegmresoptions/atol.md)* indicates convergence.
 
 ## See Also
 

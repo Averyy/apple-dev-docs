@@ -27,7 +27,7 @@ Creates a new interrupt source for the specified provider object. After creating
 
 ## Parameters
 
-- `provider`: The   object representing the hardware device that generated the interrupt.
+- `provider`: The [`IOService`](ioservice.md) object representing the hardware device that generated the interrupt.
 - `index`: The index for the interrupt.
 - `queue`: The dispatch queue on which to run any handler blocks.
 - `source`: A variable for storing the dispatch source. On return, this variable contains the retained object. You are responsible for releasing this object.

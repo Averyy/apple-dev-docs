@@ -23,10 +23,10 @@ A new quaternion.
 
 ## Parameters
 
-- `x`: The   component of the quaternion.
-- `y`: The   component of the quaternion.
-- `z`: The   component of the quaternion.
-- `w`: The   component of the quaternion.
+- `x`: The `x` component of the quaternion.
+- `y`: The `y` component of the quaternion.
+- `z`: The `z` component of the quaternion.
+- `w`: The `w` component of the quaternion.
 
 ## See Also
 

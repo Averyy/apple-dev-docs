@@ -23,9 +23,9 @@ var lambda: Double
 ## See Also
 
 - [var atol: Double](sparselsmroptions/atol.md)
-  The absolute tolerance (default test) or  tolerance (Fong-Saunders test).
+  The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 - [var btol: Double](sparselsmroptions/btol.md)
-  The  tolerance (Fong-Saunders test only).
+  The *B* tolerance (Fong-Saunders test only).
 - [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
 - [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)

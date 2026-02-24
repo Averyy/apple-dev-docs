@@ -24,7 +24,7 @@ Use this method as the override point for responding to changes in the UIKit Dyn
 
 ## Parameters
 
-- `dynamicAnimator`: The dynamic animator that the behavior is being added to, or   if being removed from an animator.
+- `dynamicAnimator`: The dynamic animator that the behavior is being added to, or `nil` if being removed from an animator.
 
 ## See Also
 

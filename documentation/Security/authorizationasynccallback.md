@@ -21,8 +21,8 @@ Use a block of this type as the callback parameter to the [`AuthorizationCopyRig
 
 ## Parameters
 
-- `err`: A result code. See  . This is equivalent to the return value from the   function.
-- `blockAuthorizedRights`: The authorized rights. This is equivalent to the authorizedRights parameter of the   function. Free this object using the   function when you are done with it.
+- `err`: A result code. See [`Authorization Services Result Codes`](authorization-services-result-codes.md). This is equivalent to the return value from the [`AuthorizationCopyRights(_:_:_:_:_:)`](authorizationcopyrights(_:_:_:_:_:).md) function.
+- `blockAuthorizedRights`: The authorized rights. This is equivalent to the authorizedRights parameter of the [`AuthorizationCopyRights(_:_:_:_:_:)`](authorizationcopyrights(_:_:_:_:_:).md) function. Free this object using the [`AuthorizationFreeItemSet(_:)`](authorizationfreeitemset(_:).md) function when you are done with it.
 
 
 ---

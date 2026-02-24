@@ -65,7 +65,7 @@ After you make changes to any context, activity, or activity item, call the data
 - [func save(completion: (((any Error)?) -> Void)?)](clsdatastore/save(completion:).md)
   Saves any changes you’ve made in the data store.
 ### Instance Methods
-- [func checkDocumentAssignedToUser(URL, completion: (Bool, (any Error)?) -> Void)](clsdatastore/checkdocumentassignedtouser(_:completion:).md)
+- [func checkIsAssignedDocument(URL, completion: (Bool, (any Error)?) -> Void)](clsdatastore/checkisassigneddocument(_:completion:).md)
 
 ## Relationships
 

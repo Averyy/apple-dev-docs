@@ -35,7 +35,7 @@ You must not call any function that may cause a garbage collection or an allocat
 
 ## Parameters
 
-- `object`: The   to finalize.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to finalize.
 
 ## See Also
 

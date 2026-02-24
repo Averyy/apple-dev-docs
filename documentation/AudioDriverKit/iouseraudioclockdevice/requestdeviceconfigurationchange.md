@@ -40,8 +40,8 @@ Changing the safety offset.
 
 ## Parameters
 
-- `in_change_action`: A   that indicates the action the device object takes. The invocation of   passes this same action back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
-- `in_change_info`: A pointer to an   containing information about the configuration change. The invocation of   passes this same info back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
+- `in_change_action`: A [`uint64_t`](https://developer.apple.com/documentation/kernel/uint64_t) that indicates the action the device object takes. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same action back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
+- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject) containing information about the configuration change. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same info back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
 
 
 ---

@@ -22,6 +22,10 @@ The request for sending the device token details.
 - [object TokensResponse](tokensresponse.md)
   The response object that contains the device token.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## See Also
 
 - [Declarative Management](declarative-management.md)

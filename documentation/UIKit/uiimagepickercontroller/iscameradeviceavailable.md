@@ -22,7 +22,7 @@ class func isCameraDeviceAvailable(_ cameraDevice: UIImagePickerController.Camer
 
 ## Parameters
 
-- `cameraDevice`: A   constant indicating the camera whose availability you want to check.
+- `cameraDevice`: A [`UIImagePickerController.CameraDevice`](uiimagepickercontroller/cameradevice-swift.enum.md) constant indicating the camera whose availability you want to check.
 
 ## See Also
 

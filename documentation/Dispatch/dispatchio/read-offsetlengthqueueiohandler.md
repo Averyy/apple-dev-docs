@@ -28,10 +28,12 @@ If the handler is submitted with the done parameter set to true, an empty data o
 
 ## Parameters
 
-- `offset`: For random-access channels, this parameter specifies the offset into the channel from which to read. The offset is specified relative to the initial file pointer of the channel’s file descriptor at the time the channel was created.   For stream-based channels, this parameter is ignored and data is read from the current position.
-- `length`: The number of bytes to read from the channel. Specify   to continue reading data until an EOF is reached.
-- `queue`: The dispatch queue on which to submit the   closure.
-- `ioHandler`: Your block need not be reentrant. The system guarantees that only one instance of this block will be executed at any given time.
+- `offset`: For random-access channels, this parameter specifies the offset into the channel from which to read. The offset is specified relative to the initial file pointer of the channel’s file descriptor at the time the channel was created. For stream-based channels, this parameter is ignored and data is read from the current position.
+- `length`: The number of bytes to read from the channel. Specify `SIZE_MAX` to continue reading data until an EOF is reached.
+- `queue`: The dispatch queue on which to submit the `ioHandler` closure.
+- `ioHandler`: The closure to use to process the data read from the channel. This block may be queued multiple times to process a given data request. Each time the block is queued, the `data` parameter passed to the handler contains the most recently read chunk of data. The handler has no return value and takes the following parameters: - **done**: A Boolean value indicating whether the operation is complete.
+- **data**: A [`DispatchData`](dispatchdata.md) object containing the data read from the file descriptor.
+- **error**: An `errno` condition if there was an error; otherwise, the value is `0`. Your block need not be reentrant. The system guarantees that only one instance of this block will be executed at any given time.
 
 ## See Also
 

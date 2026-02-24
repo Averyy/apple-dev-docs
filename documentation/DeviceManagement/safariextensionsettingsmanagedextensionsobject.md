@@ -23,6 +23,10 @@ object SafariExtensionSettingsManagedExtensionsObject
 - [object SafariExtensionSettingsExtensionDictionaryObject](safariextensionsettingsextensiondictionaryobject.md)
   The dictionary that defines managed extensions.
 
+## Properties
+
+- `ANY` (SafariExtensionSettingsExtensionDictionaryObject): The dictionary that defines the settings for a managed extension. Each key represents a specific managed extension, or you can specify a single “*” character to match any extension.
+
 
 ---
 

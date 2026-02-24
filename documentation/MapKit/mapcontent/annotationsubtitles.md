@@ -27,7 +27,7 @@ Returns [`MapContent`](mapcontent.md) whose subtitles have the visibility settin
 
 ## Parameters
 
-- `visibility`: One of the   settings. The default is  , which results in the subtitle being visible only when the annotation is in a selected state.
+- `visibility`: One of the `Visibility` settings. The default is [`Visibility.automatic`](https://developer.apple.com/documentation/SwiftUI/Visibility/automatic), which results in the subtitle being visible only when the annotation is in a selected state.
 
 ## See Also
 

@@ -27,7 +27,7 @@ A new string in which the characters in `range` of the receiver are replaced by 
 ## Parameters
 
 - `range`: A range of characters in the receiver.
-- `replacement`: The string with which to replace the characters in  .
+- `replacement`: The string with which to replace the characters in `range`.
 
 ## See Also
 

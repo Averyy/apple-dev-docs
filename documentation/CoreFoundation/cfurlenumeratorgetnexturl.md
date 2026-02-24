@@ -39,8 +39,8 @@ If this function returns [`CFURLEnumeratorResult.error`](cfurlenumeratorresult/e
 ## Parameters
 
 - `enumerator`: The enumerator.
-- `url`: Contains the next URL if this function returns  .
-- `error`: Contains error information if this function returns  . Error information is retained and must be released. Can be  .
+- `url`: Contains the next URL if this function returns [`CFURLEnumeratorResult.success`](cfurlenumeratorresult/success.md).
+- `error`: Contains error information if this function returns [`CFURLEnumeratorResult.error`](cfurlenumeratorresult/error.md). Error information is retained and must be released. Can be `NULL`.
 
 ## See Also
 

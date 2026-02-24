@@ -9,6 +9,11 @@ A 32-bit integer containing flags that identify some timecode characteristics.
 
 The following flags are defined:
 
+- **Drop frame**: Indicates whether the timecode is drop frame. Set it to `1` if the timecode is drop frame. This flag’s value is `0x0001`.
+- **24 hour max**: Indicates whether the timecode wraps after 24 hours. Set it to `1` if the timecode wraps. This flag’s value is `0x0002`.
+- **Negative times OK**: Indicates whether negative time values are allowed. Set it to `1` if the timecode supports negative values. This flag’s value is `0x0004`.
+- **Counter**: Indicates whether the time value corresponds to a tape counter value. Set it to `1` if the timecode values are tape counter values. This flag’s value is `0x0008`.
+
 ## See Also
 
 - [Reserved](timecode_sample_description/reserved.md)

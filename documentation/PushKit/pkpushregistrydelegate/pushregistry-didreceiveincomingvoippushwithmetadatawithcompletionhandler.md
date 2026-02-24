@@ -43,9 +43,9 @@ If you want to initiate a VoIP call without using CallKit, register for push not
 
 ## Parameters
 
-- `registry`: The   instance responsible for the delegate callback.
+- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
 - `payload`: The push payload sent by a developer via APNs server API.
-- `metadata`: An object containing metadata about the VoIP push payload, such as the   boolean indicating whether your app is required to report a call/conversation to CallKit/LiveCommunicationKit for this push.
+- `metadata`: An object containing metadata about the VoIP push payload, such as the `mustReport` boolean indicating whether your app is required to report a call/conversation to CallKit/LiveCommunicationKit for this push.
 - `completion`: The notification’s completion handler. Execute this block when you finish processing the notification
 
 

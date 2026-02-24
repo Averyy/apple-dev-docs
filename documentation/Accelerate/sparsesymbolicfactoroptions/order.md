@@ -38,7 +38,7 @@ print((0 ..< 5).map {
 
 If [`orderMethod`](sparsesymbolicfactoroptions/ordermethod.md) is [`SparseOrderUser`](sparseorderuser.md), and this pointer is `null`, the factor function uses the original matrix ordering.
 
-If [`orderMethod`](sparsesymbolicfactoroptions/ordermethod.md) is [`SparseOrderUser`](sparseorderuser.md), and this pointer is nonnull, the factor function uses the user-provided permutation to order the matrix before factorization. The system may heuristically reinterpret the order to increase performance. Such reorderings don’t significantly increase fill in the factors .
+If [`orderMethod`](sparsesymbolicfactoroptions/ordermethod.md) is [`SparseOrderUser`](sparseorderuser.md), and this pointer is nonnull, the factor function uses the user-provided permutation to order the matrix before factorization. The system may heuristically reinterpret the order to increase performance. Such reorderings don’t significantly increase fill in the factors *L*.
 
 If [`orderMethod`](sparsesymbolicfactoroptions/ordermethod.md) isn’t [`SparseOrderUser`](sparseorderuser.md), the factor function computes its own fill-reducing ordering.
 

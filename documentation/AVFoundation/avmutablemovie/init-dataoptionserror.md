@@ -31,7 +31,7 @@ Use this method to create movies from movie headers that are not stored in files
 
 ## Parameters
 
-- `data`: An   object that contains a movie header.
+- `data`: An `NSData` object that contains a movie header.
 - `options`: A dictionary that contains key for specifying the movie object initialization. Currently, no keys are defined.
 
 ## See Also

@@ -21,7 +21,8 @@ Call this method to tell the operating system to arbitrate with nearby Apple dev
 ## Parameters
 
 - `category`: A category that describes how the app uses audio.
-- `handler`: A completion handler the system calls asynchronously when the system completes audio routing arbitration. This closure takes the following parameters:
+- `handler`: A completion handler the system calls asynchronously when the system completes audio routing arbitration. This closure takes the following parameters: - **defaultDeviceChanged**: A Boolean value that indicates whether the system switched the AirPods to the macOS device.
+- **error**: An error object that indicates why the request failed, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the request succeeded.
 
 ## See Also
 

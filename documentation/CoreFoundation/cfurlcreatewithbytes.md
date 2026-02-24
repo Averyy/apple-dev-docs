@@ -32,11 +32,11 @@ The specified string encoding will be used both to interpret `URLBytes`, and to 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `URLBytes`: The character bytes to convert into a   object.
-- `length`: The number of bytes in  .
-- `encoding`: The string encoding of the   string. This encoding is also used to interpret percent escape sequences.
-- `baseURL`: The URL to which   is relative. Pass   if   contains an absolute URL or if you want to create a relative URL. If   contains an absolute URL, this parameter is ignored.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `URLBytes`: The character bytes to convert into a `CFURL` object.
+- `length`: The number of bytes in `URLBytes`.
+- `encoding`: The string encoding of the `URLBytes` string. This encoding is also used to interpret percent escape sequences.
+- `baseURL`: The URL to which `URLBytes` is relative. Pass `NULL` if `URLBytes` contains an absolute URL or if you want to create a relative URL. If `URLBytes` contains an absolute URL, this parameter is ignored.
 
 ## See Also
 

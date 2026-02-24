@@ -23,7 +23,7 @@ init(options: BNNSFlags, threadCount: Int, allocator: BNNSAlloc?, deallocator: B
 ## Parameters
 
 - `options`: The options that control the behavior of a filter parameter.
-- `threadCount`: The maximum number of threads that the filter executes. Set to   to specify that the filter automatically selects the number of threads. Set to   to specify that the filter operates on a single thread.
+- `threadCount`: The maximum number of threads that the filter executes. Set to `0` to specify that the filter automatically selects the number of threads. Set to `1` to specify that the filter operates on a single thread.
 - `allocator`: The function the filter calls to allocate memory.
 - `deallocator`: The function the filter calls to deallocate memory.
 

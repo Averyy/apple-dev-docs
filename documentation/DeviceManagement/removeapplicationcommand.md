@@ -25,6 +25,11 @@ object RemoveApplicationCommand
 - [object RemoveApplicationCommand.Command](removeapplicationcommand/command-data.dictionary.md)
   The command to remove an app.
 
+## Properties
+
+- `Command` (RemoveApplicationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object RemoveApplicationResponse](removeapplicationresponse.md)

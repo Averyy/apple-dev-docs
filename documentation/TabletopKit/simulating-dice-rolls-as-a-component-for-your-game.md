@@ -137,6 +137,9 @@ case .ended:
 
 The sample includes toggle controls for testing different scenarios:
 
+- **Max score toss**: Forces all dice to land on their highest-scoring faces.
+- **Toss all**: Enables group tossing of all dice simultaneously.
+
 The physics simulation provides realistic dice behavior including rotation, bouncing, and the dice settling into their final positions. The toss outcome processing occurs in the [`onTossStart(interaction:outcomes:)`](tabletopinteraction/delegate/ontossstart(interaction:outcomes:).md) method, where the sample processes the physics simulation and final die states. When determining the outcome, the sample uses `predeterminedOutcome` to get the highest score for the toss. If the player didn’t select the option for the highest score, the sample calls the function [`face(for:)`](tossablerepresentation/face(for:).md) to get the die face for the [`TabletopInteraction.TossOutcome`](tabletopinteraction/tossoutcome.md):
 
 ```swift

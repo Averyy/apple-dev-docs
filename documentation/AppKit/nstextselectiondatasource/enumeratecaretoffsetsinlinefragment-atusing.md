@@ -21,8 +21,8 @@ The `caretOffset` is in the coordinate system for the text container. When `lead
 
 ## Parameters
 
-- `location`: The   to start from.
-- `block`: The closure to invoke once for each logical caret edge in the line fragment, in left-to-right visual order. End the enumeration early by returning  .
+- `location`: The `NSTextLocation` to start from.
+- `block`: The closure to invoke once for each logical caret edge in the line fragment, in left-to-right visual order. End the enumeration early by returning `false`.
 
 ## See Also
 

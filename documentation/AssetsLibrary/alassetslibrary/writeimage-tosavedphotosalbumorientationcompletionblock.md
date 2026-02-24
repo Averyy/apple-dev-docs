@@ -23,7 +23,7 @@ If you want to save a [`UIImage`](https://developer.apple.com/documentation/UIKi
 
 - `imageRef`: The image to save to the Saved Photos album.
 - `orientation`: The orientation at which to save the image.
-- `completionBlock`: For a description of the block, see  .
+- `completionBlock`: The block invoked after the save operation completes. For a description of the block, see [`ALAssetsLibraryWriteImageCompletionBlock`](alassetslibrarywriteimagecompletionblock.md).
 
 ## See Also
 

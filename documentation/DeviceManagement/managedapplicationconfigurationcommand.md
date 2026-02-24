@@ -25,6 +25,11 @@ object ManagedApplicationConfigurationCommand
 - [object ManagedApplicationConfigurationCommand.Command](managedapplicationconfigurationcommand/command-data.dictionary.md)
   The command to get app configurations from managed apps on a device.
 
+## Properties
+
+- `Command` (ManagedApplicationConfigurationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ManagedApplicationConfigurationResponse](managedapplicationconfigurationresponse.md)

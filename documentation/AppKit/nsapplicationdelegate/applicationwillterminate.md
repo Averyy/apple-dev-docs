@@ -23,7 +23,7 @@ Your delegate can use this method to perform any final cleanup before the app te
 
 ## Parameters
 
-- `notification`: A notification named  . Calling the   method of this notification returns the   object itself.
+- `notification`: A notification named [`willTerminateNotification`](nsapplication/willterminatenotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 

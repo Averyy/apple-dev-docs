@@ -26,6 +26,22 @@ Prefer using a symbol in a gradient button. [`SF Symbols`](https://developer.app
 
 Avoid using labels to introduce gradient buttons. Because gradient buttons are closely connected with a specific view, their purpose is generally clear without the need for descriptive text.
 
+**Swift**:
+
+```swift
+let button = NSButton()
+button.image = NSImage(systemSymbolName: "plus", accessibilityDescription: "")
+button.bezelStyle = .smallSquare
+```
+
+**Objective-C**:
+
+```objc
+NSButton *button = [[NSButton alloc] init];
+button.image = [NSImage imageWithSystemSymbolName:@"plus" accessibilityDescription:nil];
+button.bezelStyle = NSBezelStyleSmallSquare;
+```
+
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
 
 

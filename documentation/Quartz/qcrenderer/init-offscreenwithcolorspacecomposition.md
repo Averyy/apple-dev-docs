@@ -25,8 +25,8 @@ This method creates an internal OpenGL context and pixel buffer. Because offscre
 ## Parameters
 
 - `size`: The size of the offscreen renderer.
-- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass   to use the default RGB color space. For more information on Quartz color spaces, see  .
-- `composition`: A   object.
+- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass `NULL` to use the default RGB color space. For more information on Quartz color spaces, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
+- `composition`: A [`QCComposition`](qccomposition.md) object.
 
 ## See Also
 

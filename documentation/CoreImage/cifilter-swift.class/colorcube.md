@@ -33,6 +33,11 @@ This method applies the color cube filter to an image. The effect maps color val
 
 The color cube filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`cubeData`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
+- **`extrapolate`**: If `true`, then the filter extrapolates the color cube for any RGB component values outside the range 0.0 to 1.0.
+- **`cubeDimension`**: The dimension of the color cube.
+
 The following code creates a filter that adds a blue hue to the input image:
 
 ```swift

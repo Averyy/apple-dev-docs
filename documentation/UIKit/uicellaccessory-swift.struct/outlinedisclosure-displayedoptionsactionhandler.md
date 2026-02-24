@@ -28,8 +28,8 @@ Use this cell accessory to indicate that an item can expand and collapse, and to
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the outline disclosure appears in. This parameter has a default value of  .
-- `options`: Configuration options for the outline disclosure. See   for possible configuration options.
+- `displayed`: The cell-editing states that the outline disclosure appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
+- `options`: Configuration options for the outline disclosure. See [`UICellAccessory.OutlineDisclosureOptions`](uicellaccessory-swift.struct/outlinedisclosureoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the outline disclosure.
 
 ## See Also

@@ -23,8 +23,8 @@ func CFDictionaryReplaceValue(_ theDict: CFMutableDictionary!, _ key: UnsafeRawP
 ## Parameters
 
 - `theDict`: The dictionary to modify.
-- `key`: The key of the value to replace in  . If a key which matches   is present in the dictionary, the value is changed to the  , otherwise this function does nothing (“replace if present”).
-- `value`: The new value for  . The   object is retained by   using the retain callback provided when   was created, and the old value is released.   must be of the type expected by the retain and release callbacks.
+- `key`: The key of the value to replace in `theDict`. If a key which matches `key` is present in the dictionary, the value is changed to the `value`, otherwise this function does nothing (“replace if present”).
+- `value`: The new value for `key`. The `value` object is retained by `theDict` using the retain callback provided when `theDict` was created, and the old value is released. `value` must be of the type expected by the retain and release callbacks.
 
 ## See Also
 

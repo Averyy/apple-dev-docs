@@ -26,7 +26,7 @@ Pixel aspect ratio is used to adjust the width, leaving the height alone.
 
 ## Parameters
 
-- `videoDesc`:   being interrogated.
+- `videoDesc`: `CMVideoFormatDescription` being interrogated.
 - `usePixelAspectRatio`: Compute the dimensions maintaining pixel aspect ratio.
 - `useCleanAperture`: Compute the dimensions using the clean aperture.
 

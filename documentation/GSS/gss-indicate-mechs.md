@@ -25,7 +25,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on completion.
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `mech_set`: A pointer the function uses to output the available set of mechanism identifiers. Release the set with a call to   when you are done with it.
+- `mech_set`: A pointer the function uses to output the available set of mechanism identifiers. Release the set with a call to [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) when you are done with it.
 
 ## See Also
 

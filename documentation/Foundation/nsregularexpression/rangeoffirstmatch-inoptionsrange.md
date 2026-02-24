@@ -31,7 +31,7 @@ This is a convenience method that calls [`enumerateMatches(in:options:range:usin
 ## Parameters
 
 - `string`: The string to search.
-- `options`: The matching options to use. See   for possible values.
+- `options`: The matching options to use. See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for possible values.
 - `range`: The range of the string to search.
 
 ## See Also

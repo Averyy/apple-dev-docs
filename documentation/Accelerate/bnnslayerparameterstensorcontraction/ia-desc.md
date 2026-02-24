@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-The descriptor of input matrix .
+The descriptor of input matrix *A*.
 
 **Availability**:
 - iOS 14.0+
@@ -29,7 +29,7 @@ var iA_desc: BNNSNDArrayDescriptor
 - [var beta: Float](bnnslayerparameterstensorcontraction/beta.md)
   A value, that must be either 0.0 or 1.0, you use to scale the existing output before the operation adds it to the result.
 - [var iB_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/ib_desc.md)
-  The descriptor of input matrix .
+  The descriptor of input matrix *B*.
 - [var o_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/o_desc.md)
   The descriptor of the output.
 

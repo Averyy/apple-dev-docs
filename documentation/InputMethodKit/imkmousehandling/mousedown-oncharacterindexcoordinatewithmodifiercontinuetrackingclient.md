@@ -28,7 +28,7 @@ Implement this method if your input method handles mouse-down events.
 - `index`: The index within the sender’s text storage where the mouse-down event occurred.
 - `point`: The point at which the mouse-down event occurred.
 - `flags`: The modifier keys.
-- `keepTracking`: Set this parameter to   if you want to receive subsequent mouse-moved and mouse -up events.
+- `keepTracking`: Set this parameter to [`true`](https://developer.apple.com/documentation/Swift/true) if you want to receive subsequent mouse-moved and mouse -up events.
 - `sender`: The client object.
 
 ## See Also

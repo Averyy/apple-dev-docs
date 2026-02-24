@@ -29,6 +29,9 @@ This method applies the color threshold filter to an image. The filter compares 
 
 The color threshold filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`threshold`**: A `float` representing the threshold of color values as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in an image where each color component is either 1 or 0.
 
 ```swift

@@ -24,8 +24,8 @@ You may call this method from inside your `updates` or `completionHandler` block
 
 ## Parameters
 
-- `updates`: The block that performs the needed inset, delete, reload, or move operations. This parameter may be  .
-- `completionHandler`: A completion handler block to execute when the changes made in the   block have finished animating. This parameter may be  . This block takes the following parameters:
+- `updates`: The block that performs the needed inset, delete, reload, or move operations. This parameter may be `nil`.
+- `completionHandler`: A completion handler block to execute when the changes made in the `updates` block have finished animating. This parameter may be `nil`. This block takes the following parameters: - **finished**: A Boolean value indicating whether the animations completed successfully. The value of this parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the animations ran to completion or [`false`](https://developer.apple.com/documentation/Swift/false) if they were interrupted.
 
 
 ---

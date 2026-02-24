@@ -22,7 +22,7 @@ The `value` parameter is valid for symbols that support variable rendering.
 
 - `name`: The name of the symbol image.
 - `bundle`: The bundle containing the image file or asset catalog.
-- `value`: The value the system uses to customize the symbol’s content, between   and  .
+- `value`: The value the system uses to customize the symbol’s content, between `0` and `1`.
 
 ## See Also
 

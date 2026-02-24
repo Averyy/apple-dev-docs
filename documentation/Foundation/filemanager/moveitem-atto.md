@@ -32,8 +32,8 @@ If the source and destination of the move operation are not on the same volume, 
 
 ## Parameters
 
-- `srcURL`: The file URL that identifies the file or directory you want to move. The URL in this parameter must not be a file reference URL. This parameter must not be  .
-- `dstURL`: The new location for the item in  . The URL in this parameter must not be a file reference URL and must include the name of the file or directory in its new location. This parameter must not be  .
+- `srcURL`: The file URL that identifies the file or directory you want to move. The URL in this parameter must not be a file reference URL. This parameter must not be `nil`.
+- `dstURL`: The new location for the item in `srcURL`. The URL in this parameter must not be a file reference URL and must include the name of the file or directory in its new location. This parameter must not be `nil`.
 
 ## See Also
 

@@ -16,9 +16,9 @@ Customize handling of asynchronous events by combining event-processing operator
 
 #### Overview
 
-The Combine framework provides a declarative Swift API for processing values over time. These values can represent many kinds of asynchronous events. Combine declares  to expose values that can change over time, and  to receive those values from the publishers.
+The Combine framework provides a declarative Swift API for processing values over time. These values can represent many kinds of asynchronous events. Combine declares *publishers* to expose values that can change over time, and *subscribers* to receive those values from the publishers.
 
-- The [`Publisher`](publisher.md) protocol declares a type that can deliver a sequence of values over time. Publishers have  to act on the values received from upstream publishers and republish them.
+- The [`Publisher`](publisher.md) protocol declares a type that can deliver a sequence of values over time. Publishers have *operators* to act on the values received from upstream publishers and republish them.
 - At the end of a chain of publishers, a [`Subscriber`](subscriber.md) acts on elements as it receives them. Publishers only emit values when explicitly requested to do so by subscribers. This puts your subscriber code in control of how fast it receives events from the publishers it’s connected to.
 
 Several Foundation types expose their functionality through publishers, including [`Timer`](https://developer.apple.com/documentation/Foundation/Timer), [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter), and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). Combine also provides a built-in publisher for any property that’s compliant with Key-Value Observing.

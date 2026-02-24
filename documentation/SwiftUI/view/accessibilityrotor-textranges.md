@@ -45,7 +45,7 @@ struct MessageContentView: View {
 ## Parameters
 
 - `label`: Localized label identifying this Rotor to the user.
-- `textRanges`: An array of ranges that will be used to generate   the entries of the Rotor.
+- `textRanges`: An array of ranges that will be used to generate the entries of the Rotor.
 
 ## See Also
 

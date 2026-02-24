@@ -25,7 +25,7 @@ A new column.
 
 ## Parameters
 
-- `maxLength`: The largest number of elements to use from the end of the   column. The default value is  .
+- `maxLength`: The largest number of elements to use from the end of the column. The default value is `10`.
 
 ## See Also
 

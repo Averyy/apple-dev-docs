@@ -22,7 +22,7 @@ func apply(_ gameModelUpdate: any GKGameModelUpdate)
 
 #### Discussion
 
-Your implementation of the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, or , should add properties or methods that describe a move in terms of your game. In this method, you examine that information and perform the corresponding changes to your game model’s internal state. GameplayKit calls this method to speculate about possible future moves and their effects, using a copy of the active game board.
+Your implementation of the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, or *move class*, should add properties or methods that describe a move in terms of your game. In this method, you examine that information and perform the corresponding changes to your game model’s internal state. GameplayKit calls this method to speculate about possible future moves and their effects, using a copy of the active game board.
 
 For example, a move class for a chess game would identify the piece to be moved and the space to which the piece will move. Your [`apply(_:)`](gkgamemodel/apply(_:).md) method would update its model of the game board to reflect the new location of that piece and perform any actions that result from the move, such as capturing other pieces.
 
@@ -32,7 +32,7 @@ GameplayKit assumes that calling this method performs a move on behalf of the pl
 
 ## Parameters
 
-- `gameModelUpdate`: An instance of your custom class that implements the   protocol, describing a move to be made in your game.
+- `gameModelUpdate`: An instance of your custom class that implements the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, describing a move to be made in your game.
 
 ## See Also
 

@@ -24,7 +24,7 @@ The initializer sets [`featureExtractionTimeWindowSize`](mlsoundclassifier/featu
 
 ## Parameters
 
-- `overlapFactor`: A portion of overlap between consecutive audio analysis windows. The value must be in   the range  .
+- `overlapFactor`: A portion of overlap between consecutive audio analysis windows. The value must be in the range `[0.0, 1.0)`.
 - `featureExtractor`: An algorithm type the session uses to extract features from audio files.
 
 ## See Also

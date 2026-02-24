@@ -10,7 +10,7 @@ When the Apple Watch displays a notification, the system first presents the shor
 
 ##### Display a Short Look Interface
 
-The  interface is a nonscrolling screen that the system creates automatically.
+The *short-look* interface is a nonscrolling screen that the system creates automatically.
 
 ![A screenshot of the short-look interface, with the icon, title, and app name called out.](https://docs-assets.developer.apple.com/published/fbdc2b8c06214de181743202132c954a/presenting-notifications-on-apple-watch-1%402x.png)
 
@@ -18,7 +18,7 @@ The system uses a template to display the app name and icon along with the title
 
 ##### Transition to the Long Look Interface
 
-The  interface is a scrollable screen that displays the notification’s content and any associated action buttons. The system’s default long-look interface includes your app icon, the notification’s title string, and the alert message; however, your app can customize this interface.
+The *long-look* interface is a scrollable screen that displays the notification’s content and any associated action buttons. The system’s default long-look interface includes your app icon, the notification’s title string, and the alert message; however, your app can customize this interface.
 
 ![A screenshot of the short-look interface, with the sash, content, actions, and dismiss button called out.](https://docs-assets.developer.apple.com/published/b25d67717c5060cc02ff768fb3d58e0b/presenting-notifications-on-apple-watch-2%402x.png)
 

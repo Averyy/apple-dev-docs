@@ -18,7 +18,7 @@ enum DataSource
 
 You use a data source to specify the training dataset for an [`MLObjectDetector`](mlobjectdetector.md) training session. An object-detector data source represents a set of images and an annotation for each object in an image.
 
-Each object annotation consists of the object’s name, or , and its location in the image. A single image can have multiple objects and, therefore, multiple annotations. For example, you can train an object detector with images of dining tables, along with annotations for bananas, croissants, and beverages. Each image can have one or more instances of an object, or any combination of objects.
+Each object annotation consists of the object’s name, or *label*, and its location in the image. A single image can have multiple objects and, therefore, multiple annotations. For example, you can train an object detector with images of dining tables, along with annotations for bananas, croissants, and beverages. Each image can have one or more instances of an object, or any combination of objects.
 
 ## Topics
 

@@ -21,7 +21,7 @@ This method is invoked after the last invocation of the [`webView(_:dragDestinat
 ## Parameters
 
 - `webView`: The web view that sent the message.
-- `action`: The drag-destination action to perform. See   for a list of actions.
+- `action`: The drag-destination action to perform. See [`WebDragDestinationAction`](webdragdestinationaction.md) for a list of actions.
 - `draggingInfo`: The information object for the dragging operation.
 
 ## See Also

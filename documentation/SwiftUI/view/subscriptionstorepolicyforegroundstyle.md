@@ -22,8 +22,8 @@ func subscriptionStorePolicyForegroundStyle(_ primary: some ShapeStyle, _ second
 
 ## Parameters
 
-- `primary`: The color or pattern to use for the terms of service and privacy policy   buttons
-- `secondary`: The color or pattern to use for the conjunction between the buttons   in the policy section
+- `primary`: The color or pattern to use for the terms of service and privacy policy buttons
+- `secondary`: The color or pattern to use for the conjunction between the buttons in the policy section
 
 ## See Also
 

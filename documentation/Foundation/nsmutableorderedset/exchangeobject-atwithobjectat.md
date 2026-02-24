@@ -22,8 +22,8 @@ func exchangeObject(at idx1: Int, withObjectAt idx2: Int)
 
 ## Parameters
 
-- `idx1`: The index of the first object.
-- `idx2`: The index of the second object.
+- `idx1`: The index of the first object. > ❗ **Important**:  Raises an [`rangeException`](nsexceptionname/rangeexception.md) if index is beyond the end of the mutable ordered set.
+- `idx2`: The index of the second object. > ❗ **Important**:  Raises an [`rangeException`](nsexceptionname/rangeexception.md) if index is beyond the end of the mutable ordered set.
 
 ## See Also
 

@@ -16,6 +16,10 @@ Deletes a specific sign-in token.
 
 Use this endpoint to delete a specific [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.struct/value).
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/account/v1/autoSignIn/delete`
+
 ## Request Body
 
 The request body that contains the sign-in token to be deleted.

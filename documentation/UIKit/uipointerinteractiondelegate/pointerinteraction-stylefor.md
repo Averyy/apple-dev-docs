@@ -23,8 +23,8 @@ A `UIPointerStyle` describing the desired hover effect or pointer appearance for
 
 ## Parameters
 
-- `interaction`: This  .
-- `region`: The   that represents the entire surface of the interaction’s view.
+- `interaction`: This [`UIPointerInteraction`](uipointerinteraction.md).
+- `region`: The [`UIPointerRegion`](uipointerregion.md) that represents the entire surface of the interaction’s view.
 
 ## See Also
 

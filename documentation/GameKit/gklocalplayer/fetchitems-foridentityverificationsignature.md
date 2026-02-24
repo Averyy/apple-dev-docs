@@ -49,7 +49,11 @@ If the generated and retrieved signatures match, GameKit authenticates the local
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when the request completes. The block receives the following parameters: - **publicKeyURL**: The URL for the public encryption key.
+- **signature**: The verification signature data that GameKit generates.
+- **salt**: A random `NSString` that GameKit uses to compute the hash and randomize it.
+- **timestamp**: The signature’s creation date and time.
+- **error**: If an error occurs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

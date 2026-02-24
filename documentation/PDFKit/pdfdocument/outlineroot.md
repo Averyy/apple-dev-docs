@@ -25,7 +25,7 @@ When a PDF document is saved, the outline tree structure is written out to the d
 
 ## Parameters
 
-- `outline`: The outline to be used as the document’s root outline. Pass   to strip the outline from a document.
+- `outline`: The outline to be used as the document’s root outline. Pass `NULL` to strip the outline from a document.
 
 ## See Also
 

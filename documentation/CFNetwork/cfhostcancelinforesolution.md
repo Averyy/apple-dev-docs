@@ -29,8 +29,8 @@ This function is thread safe.
 
 ## Parameters
 
-- `theHost`: The host for which a resolution is to be cancelled. This value must not be  .
-- `info`: A value of type   specifying the type of resolution that is to be cancelled. See   for possible values.
+- `theHost`: The host for which a resolution is to be cancelled. This value must not be `NULL`.
+- `info`: A value of type `CFHostInfoType` specifying the type of resolution that is to be cancelled. See [`CFHostInfoType`](cfhostinfotype.md) for possible values.
 
 ## See Also
 

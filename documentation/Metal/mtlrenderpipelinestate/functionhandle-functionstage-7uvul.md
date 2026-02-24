@@ -22,8 +22,8 @@ func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any M
 
 ## Parameters
 
-- `function`: An   instance that represents the shader the method creates a handle for.
-- `stage`: An   instance that represents the rendering stage that invokes the shader that   represents.
+- `function`: An [`MTLFunction`](mtlfunction.md) instance that represents the shader the method creates a handle for.
+- `stage`: An [`MTLRenderStages`](mtlrenderstages.md) instance that represents the rendering stage that invokes the shader that `function` represents.
 
 ## See Also
 

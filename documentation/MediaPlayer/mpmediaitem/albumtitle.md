@@ -3,7 +3,7 @@
 **Framework**: Media Player  
 **Kind**: property
 
-The title of an album, such as , rather than the title of an individual song on the album, such as “Crater Dance.”
+The title of an album, such as *Live on Mars*, rather than the title of an individual song on the album, such as “Crater Dance.”
 
 **Availability**:
 - iOS 7.0+

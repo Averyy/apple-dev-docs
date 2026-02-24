@@ -16,7 +16,7 @@ func setMaxRenderingFrameRate(_ maxFPS: Float)
 
 ## Parameters
 
-- `maxFPS`: The frame rate to set. Pass   to specify that there is no limit.
+- `maxFPS`: The frame rate to set. Pass `0.0` to specify that there is no limit.
 
 ## See Also
 

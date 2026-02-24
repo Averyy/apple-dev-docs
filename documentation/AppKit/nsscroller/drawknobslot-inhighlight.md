@@ -21,7 +21,7 @@ Only one arrow button will be shown highlighted at a time, so you can expect thi
 ## Parameters
 
 - `slotRect`: The rectangle in which to draw the knob slot.
-- `flag`: If   is  , any scroll arrow button that falls within   is drawn highlighted; otherwise it’s drawn normally.
+- `flag`: If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), any scroll arrow button that falls within `slotRect` is drawn highlighted; otherwise it’s drawn normally.
 
 ## See Also
 

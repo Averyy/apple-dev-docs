@@ -25,7 +25,7 @@ If the `region` parameter contains an unknown type of region object, this method
 
 ## Parameters
 
-- `region`: The region with the state you want to know. This object needs to be an instance of one of the standard region subclasses that   provides, such as   or  . You can’t use this method to determine the state of custom regions you define yourself.
+- `region`: The region with the state you want to know. This object needs to be an instance of one of the standard region subclasses that [`Core Location`](CoreLocation.md) provides, such as [`CLCircularRegion`](clcircularregion.md) or [`CLBeaconRegion`](clbeaconregion.md). You can’t use this method to determine the state of custom regions you define yourself.
 
 ## See Also
 

@@ -29,11 +29,11 @@ For constant-bit-rate (CBR) audio data, your callback is typically called with a
 
 ## Parameters
 
-- `inClientData`: The value you provided in the   parameter when you called the   function.
-- `inNumberBytes`: The number of bytes of data in the   buffer.
-- `inNumberPackets`: The number of packets of audio data in the   buffer.
+- `inClientData`: The value you provided in the `inClientData` parameter when you called the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
+- `inNumberBytes`: The number of bytes of data in the `inInputData` buffer.
+- `inNumberPackets`: The number of packets of audio data in the `inInputData` buffer.
 - `inInputData`: The audio data.
-- `inPacketDescriptions`: An array of audio file stream packet description structures describing the data. Audio file stream packet description structures are described in  .
+- `inPacketDescriptions`: An array of audio file stream packet description structures describing the data. Audio file stream packet description structures are described in [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types).
 
 ## See Also
 

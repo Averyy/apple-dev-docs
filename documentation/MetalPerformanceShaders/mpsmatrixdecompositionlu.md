@@ -21,12 +21,12 @@ class MPSMatrixDecompositionLU
 
 #### Overview
 
-This kernel object computes an LU factorization, , where:
+This kernel object computes an LU factorization, *PA = LU*, where:
 
--  is a matrix for which the LU factorization is to be computed
--  is a unit lower triangular matrix
--  is an upper triangular matrix
--  is a permutation matrix
+- *A* is a matrix for which the LU factorization is to be computed
+- *L* is a unit lower triangular matrix
+- *U* is an upper triangular matrix
+- *P* is a permutation matrix
 
 ## Topics
 

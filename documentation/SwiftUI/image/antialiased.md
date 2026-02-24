@@ -26,7 +26,7 @@ An image with the antialiasing behavior set.
 
 ## Parameters
 
-- `isAntialiased`: A Boolean value that specifies whether to   allow antialiasing. Pass   to allow antialising,   otherwise.
+- `isAntialiased`: A Boolean value that specifies whether to allow antialiasing. Pass `true` to allow antialising, `false` otherwise.
 
 ## See Also
 

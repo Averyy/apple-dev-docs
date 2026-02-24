@@ -16,7 +16,7 @@ optional var enableOpenUnlinkEmulation: Bool { get set }
 
 #### Discussion
 
- functionality refers to a file system’s ability to support an open file being fully unlinked from the file system namespace. If a file system doesn’t support this functionality, FSKit can emulate it instead; this is called “open-unlink emulation”.
+*Open-unlink* functionality refers to a file system’s ability to support an open file being fully unlinked from the file system namespace. If a file system doesn’t support this functionality, FSKit can emulate it instead; this is called “open-unlink emulation”.
 
 Implement this property to return `true` (Swift) or `YES` (Objective-C) to allow FSKit to perform open-unlink emulation. If you don’t implement this property at all, FSKit doesn’t perform open-unlink emulation for this volume.
 

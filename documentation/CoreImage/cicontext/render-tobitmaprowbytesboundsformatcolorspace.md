@@ -26,7 +26,7 @@ func render(_ image: CIImage, toBitmap data: UnsafeMutableRawPointer, rowBytes: 
 - `rowBytes`: The bytes per row.
 - `bounds`: The bounds of the bitmap data.
 - `format`: The format of the bitmap data.
-- `colorSpace`: The color space for the data. Pass   if you want to use the output color space of the context.
+- `colorSpace`: The color space for the data. Pass `NULL` if you want to use the output color space of the context.
 
 ## See Also
 

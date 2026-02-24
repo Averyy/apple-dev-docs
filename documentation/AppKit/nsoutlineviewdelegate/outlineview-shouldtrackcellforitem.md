@@ -26,7 +26,7 @@ Normally, only selectable or selected cells can be tracked. If you implement thi
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.
-- `cell`: The cell used to display item   in column 
+- `cell`: The cell used to display item `item` in column `tableColumn`
 - `tableColumn`: A table column in the outline view.
 - `item`: An item in the outline view.
 

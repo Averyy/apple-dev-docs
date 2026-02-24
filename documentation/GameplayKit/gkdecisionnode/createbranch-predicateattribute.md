@@ -29,6 +29,29 @@ Use this method to specify a possible result of testing this node’s attribute 
 
 The `predicate` parameter is a predicate for testing values corresponding to this node’s attribute, so this method is useful for questions whose answers involve passing a threshold value, matching a substring, matching an element in a set, or some more complex test. (If a question has a few specific answer values, see the [`createBranch(value:attribute:)`](gkdecisionnode/createbranch(value:attribute:).md) method instead.) For example, a strategy combat game might use this method to choose an attack based on the opponent’s health level:
 
+**Swift**:
+
+```swift
+ 
+let tree = GKDecisionTree(attribute: "HP?")
+let root = tree.rootNode
+ 
+root.createBranch(with: NSPredicate(format: "SELF > %@", 20), attribute: "Shield Bash")
+root.createBranch(with: NSPredicate(format: "SELF <= %@", 20), attribute: "Mortal Strike")
+```
+
+**Objective-C**:
+
+```objc
+GKDecisionTree *tree = [[GKDecisionTree alloc] initWithAttribute:@"HP?"];
+GKDecisionNode *root = tree.rootNode;
+ 
+[root createBranchWithPredicate:[NSPredicate predicateWithFormat:@"SELF > %@", @20]
+                      attribute:@"Shield Bash"];
+[root createBranchWithPredicate:[NSPredicate predicateWithFormat:@"SELF <= %@", @20]
+                      attribute:@"Mortal Strike"];
+```
+
 ## Parameters
 
 - `predicate`: The predicate against which to test this node’s attribute.

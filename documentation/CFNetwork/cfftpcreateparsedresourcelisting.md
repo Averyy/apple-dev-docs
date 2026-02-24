@@ -29,10 +29,10 @@ This function examines the contents of buffer as an FTP directory listing and pa
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the dictionary. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the dictionary. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `buffer`: A pointer to a buffer holding zero or more lines of resource listing.
-- `bufferLength`: The length in bytes of the buffer pointed to by  .
-- `parsed`: Upon return, contains a dictionary containing the parsed resource information. If parsing fails, a   pointer is returned.
+- `bufferLength`: The length in bytes of the buffer pointed to by `buffer`.
+- `parsed`: Upon return, contains a dictionary containing the parsed resource information. If parsing fails, a `NULL` pointer is returned.
 
 ## See Also
 

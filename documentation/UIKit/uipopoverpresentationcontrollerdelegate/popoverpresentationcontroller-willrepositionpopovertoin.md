@@ -26,7 +26,7 @@ If you don’t implement this method in your delegate, UIKit resizes the popover
 ## Parameters
 
 - `popoverPresentationController`: The popover presentation controller that’s managing the popover interface.
-- `rect`: On input, the new rectangle for the popover. This popover is in the coordinate space of the view in the   parameter. If you want to propose a different rectangle for the popover, put the new value in this parameter.
+- `rect`: On input, the new rectangle for the popover. This popover is in the coordinate space of the view in the `view` parameter. If you want to propose a different rectangle for the popover, put the new value in this parameter.
 - `view`: On input, the new view for containing the popover. If you want to propose a different view for the popover, put that view in this parameter.
 
 

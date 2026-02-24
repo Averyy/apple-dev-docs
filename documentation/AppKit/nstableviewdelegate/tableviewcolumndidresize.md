@@ -17,7 +17,7 @@ optional func tableViewColumnDidResize(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`columnDidResizeNotification`](nstableview/columndidresizenotification.md).
 
 ## See Also
 

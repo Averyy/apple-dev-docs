@@ -29,6 +29,9 @@ This filter calculates the average color of the area defined by `extent` and cre
 
 The area average filter uses the following properties:
 
+- **`inputImage`**: The [`CIImage`](ciimage.md) containing the image you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the region of the image that you want to process.
+
 The following code creates a filter that calculates the average color of a 500 x 500 set of pixels from the center of the image:
 
 ```swift

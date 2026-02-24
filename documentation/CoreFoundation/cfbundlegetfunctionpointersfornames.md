@@ -28,7 +28,7 @@ Calling this function causes the bundle’s code to be loaded if necessary.
 
 - `bundle`: The bundle to examine.
 - `functionNames`: A CFArray object containing a list of the function names to locate.
-- `ftbl`: A C array into which this function stores the function pointers for the symbols specified in  . The array contains   for any names in   that cannot be found.
+- `ftbl`: A C array into which this function stores the function pointers for the symbols specified in `functionNames`. The array contains `NULL` for any names in `functionNames` that cannot be found.
 
 ## See Also
 

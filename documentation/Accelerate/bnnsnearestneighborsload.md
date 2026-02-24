@@ -81,7 +81,7 @@ On return, the `indices` array contains the values `[7, 2, 4, 6]` and the distan
 
 - `knn`: The k-nearest neighbors object.
 - `n_new_samples`: The number of new samples.
-- `data_ptr`: A pointer to the sample data. This must point to   elements.
+- `data_ptr`: A pointer to the sample data. This must point to `n_new_samples * n_features` elements.
 
 ## See Also
 

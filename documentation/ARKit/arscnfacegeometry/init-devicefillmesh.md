@@ -29,7 +29,7 @@ If the `fillMesh` parameter is [`false`](https://developer.apple.com/documentati
 ## Parameters
 
 - `device`: The Metal device to use for rendering the geometry.
-- `fillMesh`: If  , the mesh fills in the gaps for the eyes and mouth. This option can be useful when using the face geometry for occlusion only—that is, to prevent other 3D content from rendering behind it, while still showing the camera image beneath.
+- `fillMesh`: If [`false`](https://developer.apple.com/documentation/Swift/false), the mesh doesn’t include the eye and mouth areas of the face topology—as a result, if you render the face geometry for a face anchor atop the camera feed in an AR session, the user’s eyes and the inside of the user’s mouth (when open) are visible through the gaps in the 3D model. If [`true`](https://developer.apple.com/documentation/Swift/true), the mesh fills in the gaps for the eyes and mouth. This option can be useful when using the face geometry for occlusion only—that is, to prevent other 3D content from rendering behind it, while still showing the camera image beneath.
 
 ## See Also
 

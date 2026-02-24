@@ -21,16 +21,16 @@ func gss_accept_sec_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ c
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `context_handle`: A pointer the function uses to return the context. Pass   for first call and use the value returned by the first call in continuation calls. Release the context’s resources using the    function when you are done with it.
-- `acceptor_cred_handle`: The credential claimed by the acceptor. Specify   to use the default credential.
+- `context_handle`: A pointer the function uses to return the context. Pass [`GSS_C_NO_CONTEXT`](gss_c_no_context.md) for first call and use the value returned by the first call in continuation calls. Release the context’s resources using the  [`gss_delete_sec_context(_:_:_:)`](gss_delete_sec_context(_:_:_:).md) function when you are done with it.
+- `acceptor_cred_handle`: The credential claimed by the acceptor. Specify [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) to use the default credential.
 - `input_token`: The token obtained from the peer.
-- `input_chan_bindings`: Channel bindings to use. Pass    if channel bindings are not used.
-- `src_name`: A pointer the function uses to return the authenticated name of the context initiator. Specify   to ignore this output.
-- `mech_type`: A pointer the function uses to return the mechanism used by the context. Do   free this object because it is held in static memory.  Specify   to ignore this output.
-- `output_token`: A buffer the function fills with a token to transmit to the peer. If the buffer length is zero, there is no token to pass. Otherwise, free the token buffer’s memory using   when you are done with it.
-- `ret_flags`: A pointer the function uses to return the flags supported by the context. See   for a list of possible values. Specify   to ignore this output.
-- `time_rec`: A pointer the function uses to return the number of seconds for which the context is valid. Specify   to ignore this output.
-- `delegated_cred_handle`: A pointer the function uses to return the credentials of the initiator. The function returns   unless the   parameter includes  . If the credential exists, release its memory with   when you are done with it.
+- `input_chan_bindings`: Channel bindings to use. Pass  [`GSS_C_NO_CHANNEL_BINDINGS`](gss_c_no_channel_bindings.md) if channel bindings are not used.
+- `src_name`: A pointer the function uses to return the authenticated name of the context initiator. Specify `NULL` to ignore this output.
+- `mech_type`: A pointer the function uses to return the mechanism used by the context. Do *not* free this object because it is held in static memory.  Specify `NULL` to ignore this output.
+- `output_token`: A buffer the function fills with a token to transmit to the peer. If the buffer length is zero, there is no token to pass. Otherwise, free the token buffer’s memory using [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
+- `ret_flags`: A pointer the function uses to return the flags supported by the context. See [`Context Services`](context-services.md) for a list of possible values. Specify `NULL` to ignore this output.
+- `time_rec`: A pointer the function uses to return the number of seconds for which the context is valid. Specify `NULL` to ignore this output.
+- `delegated_cred_handle`: A pointer the function uses to return the credentials of the initiator. The function returns [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) unless the `ret_flags` parameter includes [`GSS_C_DELEG_FLAG`](gss_c_deleg_flag.md). If the credential exists, release its memory with [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it.
 
 ## See Also
 

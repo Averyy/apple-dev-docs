@@ -9,6 +9,10 @@ The key that defines the app category entitlement to enable Cellular Network Sli
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To enable Cellular Network Slicing, also set the [`5G Network Slicing Traffic Category`](entitlements/com.apple.developer.networking.slicing.trafficcategory.md) entitlement.

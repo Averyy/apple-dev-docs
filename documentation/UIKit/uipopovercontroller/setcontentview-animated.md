@@ -20,7 +20,7 @@ func setContentView(_ viewController: UIViewController, animated: Bool)
 ## Parameters
 
 - `viewController`: The new view controller whose content should be displayed by the popover.
-- `animated`: Specify   if the change of view controllers should be animated or   if the change should occur immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the change of view controllers should be animated or [`false`](https://developer.apple.com/documentation/Swift/false) if the change should occur immediately.
 
 ## See Also
 

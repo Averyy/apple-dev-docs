@@ -10,6 +10,12 @@ A Boolean value that indicates whether your credential provider extension provid
 - iPadOS 17.0+
 - macOS 14.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The operating system includes your extension’s passkeys in AutoFill and sign in sheets if this value is `true`.

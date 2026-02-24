@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may have access to all files.
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [Maps Entitlement](entitlements/com.apple.developer.maps.md)

@@ -25,7 +25,7 @@ Call this method to remove the data store for the unique identifier. Release any
 ## Parameters
 
 - `identifier`: An identifier that uniquely identifies a data store.
-- `completionHandler`: A block the system invokes after it removes the data store. This block has no return value, and takes the following parameter:
+- `completionHandler`: A block the system invokes after it removes the data store. This block has no return value, and takes the following parameter: - **error**: An error, if the system could not remove the data store.
 
 
 ---

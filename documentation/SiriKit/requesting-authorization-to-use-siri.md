@@ -14,7 +14,7 @@ Siri can’t interact with your app or app extension until the user grants permi
 
 First, enable the Siri capability for your iOS app or WatchKit extension for authorization to succeed. For information about how to enable the Siri capability, see [`Creating an Intents App Extension`](creating-an-intents-app-extension.md).
 
-Next, configure your `Info.plist` file. Include the [`NSSiriUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSiriUsageDescription) key in your iOS appʼs `Info.plist` file. The value for this key is a string that describes what information your app shares with SiriKit. For example, a workout app might set the value to the string . This key is a requirement.
+Next, configure your `Info.plist` file. Include the [`NSSiriUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSiriUsageDescription) key in your iOS appʼs `Info.plist` file. The value for this key is a string that describes what information your app shares with SiriKit. For example, a workout app might set the value to the string *Workout information will be sent to Siri*. This key is a requirement.
 
 ##### Request User Authorization
 

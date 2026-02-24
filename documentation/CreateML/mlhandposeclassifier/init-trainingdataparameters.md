@@ -20,8 +20,8 @@ init(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassi
 
 ## Parameters
 
-- `trainingData`: An   instance.
-- `parameters`: An    instance you use to configure the model for the training session.
+- `trainingData`: An [`MLHandPoseClassifier.DataSource`](mlhandposeclassifier/datasource.md) instance.
+- `parameters`: An [`MLHandPoseClassifier.ModelParameters`](mlhandposeclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

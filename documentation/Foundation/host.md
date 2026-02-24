@@ -16,7 +16,7 @@ class Host
 
 #### Overview
 
-The [`Host`](host.md) class provides methods to access the network name and address information for a host. Instances of the [`Host`](host.md) class represent individual  on a network. Use [`Host`](host.md) objects  to get the current host’s names and addresses and to look up other hosts by name or by address.
+The [`Host`](host.md) class provides methods to access the network name and address information for a host. Instances of the [`Host`](host.md) class represent individual *hosts* on a network. Use [`Host`](host.md) objects  to get the current host’s names and addresses and to look up other hosts by name or by address.
 
 To create an [`Host`](host.md) object, use the [`current()`](host/current().md), [`init(address:)`](host/init(address:).md), or [`init(name:)`](host/init(name:).md) class methods (don’t use `alloc` and `init`). These methods use available network administration services to discover all names and addresses for the host requested. They don’t attempt to contact the host itself, however. This approach avoids untimely delays due to a host being unavailable, but it may result in incomplete information about the host.
 

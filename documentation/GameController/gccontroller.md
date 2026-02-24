@@ -22,12 +22,13 @@ class GCController
 ## Mentions
 
 - [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Discovering game controllers](discovering-game-controllers.md)
 - [Handling input events](handling-input-events.md)
 - [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Overview
 
-This class represents a real or virtual controller that a user interacts with during a game. A  is a physical controller that connects directly or wirelessly to the device. A real controller can be formfitting or can attach closely to a device so players can use controls on both simultaneously. A  is a software emulation of a real controller.
+This class represents a real or virtual controller that a user interacts with during a game. A *real controller* is a physical controller that connects directly or wirelessly to the device. A real controller can be formfitting or can attach closely to a device so players can use controls on both simultaneously. A *virtual controller* is a software emulation of a real controller.
 
 You discover controllers, and then you process the input from those controllers during gameplay. Use the [`controllers()`](gccontroller/controllers().md) method to get the currently connected controllers. If necessary, use the [`startWirelessControllerDiscovery(completionHandler:)`](gccontroller/startwirelesscontrollerdiscovery(completionhandler:).md) method to connect with wireless controllers.
 
@@ -37,7 +38,7 @@ A controller’s profile encapsulates the details about a controller’s buttons
 
 You can either get the values of input elements on each iteration of your game loop, or set handlers to receive callbacks when those values change. For example, use the [`leftThumbstick`](gcextendedgamepad/leftthumbstick.md) property of the [`GCExtendedGamepad`](gcextendedgamepad.md) profile to get the thumbstick state. Use the [`valueChangedHandler`](gcextendedgamepad/valuechangedhandler.md) property to set a handler that you implement to process any input values that change in the profile.
 
-Alternatively, you can create a snapshot of a real or virtual controller using the [`capture()`](gccontroller/capture().md) method. A  is a copy of a controller at a moment in time with its current element values. Creating a snapshot may impact performance, and over time a snapshot doesn’t stay current. Unlike other types of controllers, you can set the values of elements in a snapshot.
+Alternatively, you can create a snapshot of a real or virtual controller using the [`capture()`](gccontroller/capture().md) method. A *snapshot* is a copy of a controller at a moment in time with its current element values. Creating a snapshot may impact performance, and over time a snapshot doesn’t stay current. Unlike other types of controllers, you can set the values of elements in a snapshot.
 
 ## Topics
 

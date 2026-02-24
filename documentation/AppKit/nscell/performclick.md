@@ -22,7 +22,7 @@ The receiver of this message must be a cell of type `NSActionCell`. This method 
 
 ## Parameters
 
-- `sender`: The object to use as the sender of the event (if the receiver’s control view is not valid). This object must be a subclass of  .
+- `sender`: The object to use as the sender of the event (if the receiver’s control view is not valid). This object must be a subclass of `NSView`.
 
 ## See Also
 

@@ -21,9 +21,9 @@ optional func convertSparseTileRegions(_ tileRegions: UnsafePointer<MTLRegion>, 
 
 ## Parameters
 
-- `tileRegions`: A pointer to a C array of tile   instances.
-- `pixelRegions`: A pointer to a C array of pixel   instances.
-- `tileSize`: An   instance that represents a sparse tile’s size, in pixels.
+- `tileRegions`: A pointer to a C array of tile [`MTLRegion`](mtlregion.md) instances.
+- `pixelRegions`: A pointer to a C array of pixel [`MTLRegion`](mtlregion.md) instances.
+- `tileSize`: An [`MTLSize`](mtlsize.md) instance that represents a sparse tile’s size, in pixels.
 - `numRegions`: The number of regions you want the method to convert.
 
 ## See Also

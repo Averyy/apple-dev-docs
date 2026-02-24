@@ -27,7 +27,7 @@ A newly created language option group with the passed attributes.
 ## Parameters
 
 - `languageOptions`: An array containing the language options to associate with the language option group.
-- `defaultLanguageOption`: The default language option for the group. Set this parameter to   to denote there’s no default language option.
+- `defaultLanguageOption`: The default language option for the group. Set this parameter to [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) to denote there’s no default language option.
 - `allowEmptySelection`: A Boolean that indicates whether the system requires a selection for the language option group.
 
 

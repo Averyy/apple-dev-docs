@@ -28,9 +28,9 @@ A [`CFComparisonResult`](cfcomparisonresult.md) value that indicates whether `th
 
 - `theString1`: The first string to use in the comparison.
 - `theString2`: The second string to use in the comparison. The full range of this string is used.
-- `rangeToCompare`: The range of characters in   to be used in the comparison to  . To use the whole string, pass the range  . The specified range must not exceed the bounds of the string.
-- `compareOptions`: Specifying the   option and passing   for   causes the current locale (the return value of  ) to be used.
-- `locale`: If   and the   option is not specified for  , the comparison is nonlocalized.
+- `rangeToCompare`: The range of characters in `theString1` to be used in the comparison to `theString2`. To use the whole string, pass the range `CFRangeMake(0, CFStringGetLength(theString1))`. The specified range must not exceed the bounds of the string.
+- `compareOptions`: Flags that select different types of comparisons, such as case-insensitive comparison and non-literal comparison. See [`String Comparison Flags`](string-comparison-flags.md) for the available flags. Specifying the `kCFCompareBackwards` or `kCFCompareAnchored` option has no effect. Specifying the `kCFCompareLocalized` option and passing `NULL` for `locale` causes the current locale (the return value of [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md)) to be used.
+- `locale`: The locale to use for the comparison, which affects both equality and ordering algorithms. For example, in some locales, accented characters are ordered immediately after the base; other locales order them after “z”. If `NULL` and the `kCFCompareLocalized` option is not specified for `compareOptions`, the comparison is nonlocalized.
 
 ## See Also
 

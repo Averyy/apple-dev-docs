@@ -20,8 +20,8 @@ optional func addSecureElementPassViewController(_ controller: PKAddSecureElemen
 ## Parameters
 
 - `controller`: The view controller that requests PassKit to add a pass.
-- `pass`: If addition succeeds, the Secure Element pass that PassKit adds; otherwise,  .
-- `error`: If addition fails, an error that describes the failure; otherwise,  . See   for more information.
+- `pass`: If addition succeeds, the Secure Element pass that PassKit adds; otherwise, `nil`.
+- `error`: If addition fails, an error that describes the failure; otherwise, `nil`. See [`PKAddSecureElementPassError`](pkaddsecureelementpasserror.md) for more information.
 
 ## See Also
 

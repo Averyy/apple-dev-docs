@@ -39,7 +39,7 @@ Make sure you tune your graphics code specifically for Apple silicon:
 
 #### Build a Spatial Computing Game for Visionos
 
-Apple Vision Pro gives you an opportunity to create immersive 3D experiences. Whether you’re creating a fully immersive game or an augmented reality experience, take advantage of [`visionOS`](https://developer.apple.com/documentation/visionOS) features. And if you’re making a game for iPad or iPhone, that game can also run run on Apple Vision Pro in a window and use direct and indirect gestures as input.
+Apple Vision Pro gives you an opportunity to create immersive 3D experiences. Whether you’re creating a fully immersive game or an augmented reality experience, take advantage of [`visionOS`](https://developer.apple.com/documentation/visionos) features. And if you’re making a game for iPad or iPhone, that game can also run run on Apple Vision Pro in a window and use direct and indirect gestures as input.
 
 ![An illustration of a person in a room wearing Apple Vision Pro.](https://docs-assets.developer.apple.com/published/00628015888b5190387bdc0318319846/spatial-computing-visionos%402x.png)
 

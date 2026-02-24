@@ -29,8 +29,8 @@ If this thread is the first thread detached in the application, this method post
 ## Parameters
 
 - `selector`: The selector for the message to send to the target. This selector must take only one argument and must not have a return value.
-- `target`: The object that will receive the message   on the new thread.
-- `argument`: The single argument passed to the target. May be  .
+- `target`: The object that will receive the message `aSelector` on the new thread.
+- `argument`: The single argument passed to the target. May be `nil`.
 
 ## See Also
 

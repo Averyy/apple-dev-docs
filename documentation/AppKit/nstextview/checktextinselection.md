@@ -22,7 +22,7 @@ The checks performed are specified by [`enabledTextCheckingTypes`](nstextview/en
 
 ## Parameters
 
-- `sender`: The control sending the message. May be  .
+- `sender`: The control sending the message. May be `nil`.
 
 ## See Also
 

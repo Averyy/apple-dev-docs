@@ -26,7 +26,7 @@ A localized string suitable for displaying to users that describes the specified
 
 ## Parameters
 
-- `statusCode`: The HTTP status code. See   for details.
+- `statusCode`: The HTTP status code. See [`RFC 2616`](https://developer.apple.comhttp://www.ietf.org/rfc/rfc2616.txt) for details.
 
 ## See Also
 

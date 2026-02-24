@@ -53,7 +53,7 @@ A single [`VNRecognizedTextObservation`](vnrecognizedtextobservation.md) can con
 ## See Also
 
 - [func topCandidates(Int) -> [VNRecognizedText]](vnrecognizedtextobservation/topcandidates(_:).md)
-  Requests the  top candidates for a recognized text string.
+  Requests the *n* top candidates for a recognized text string.
 
 
 ---

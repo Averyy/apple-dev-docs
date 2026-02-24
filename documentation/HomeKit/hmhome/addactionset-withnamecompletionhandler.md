@@ -19,8 +19,9 @@ func addActionSet(named actionSetName: String) async throws -> HMActionSet
 
 ## Parameters
 
-- `actionSetName`: The name of the new action set. Must not be  , and must not be the name of an action set already in the home.
-- `completion`: The block executed after the request is processed.
+- `actionSetName`: The name of the new action set. Must not be `nil`, and must not be the name of an action set already in the home.
+- `completion`: The block executed after the request is processed. - **actionSet**: The newly created action set.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

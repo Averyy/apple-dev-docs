@@ -26,9 +26,9 @@ func getOpacityRamp(for time: CMTime, startOpacity: UnsafeMutablePointer<Float>?
 ## Parameters
 
 - `time`: If a ramp with a time range that contains the specified time has been set, information about the effective ramp for that time is supplied. Otherwise, information about the first ramp that starts after the specified time is supplied.
-- `startOpacity`: This value may be  .
-- `endOpacity`: This value may be  .
-- `timeRange`: This value may be  .
+- `startOpacity`: A pointer to a float to receive the starting opacity value for the opacity ramp. This value may be `NULL`.
+- `endOpacity`: A pointer to a float to receive the ending opacity value for the opacity ramp. This value may be `NULL`.
+- `timeRange`: A pointer to a `CMTimeRange` to receive the time range of the opacity ramp. This value may be `NULL`.
 
 ## See Also
 

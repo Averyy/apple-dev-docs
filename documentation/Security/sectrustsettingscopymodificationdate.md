@@ -21,9 +21,9 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `certRef`: The certificate for which you wish to obtain the modification time. Pass the value   to obtain the modification time for the default root certificate trust settings for the domain.
-- `domain`: The trust settings domain of the trust settings for which you wish to obtain the modification time (it’s possible for a single certificate to have trust settings in more than one domain). For possible values, see  .
-- `modificationDate`: On return, the date and time at which the certificate’s trust settings were last modified. In Objective-C, call the   function to release this object when you are finished with it.
+- `certRef`: The certificate for which you wish to obtain the modification time. Pass the value `kSecTrustSettingsDefaultRootCertSetting` to obtain the modification time for the default root certificate trust settings for the domain.
+- `domain`: The trust settings domain of the trust settings for which you wish to obtain the modification time (it’s possible for a single certificate to have trust settings in more than one domain). For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
+- `modificationDate`: On return, the date and time at which the certificate’s trust settings were last modified. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
 
 
 ---

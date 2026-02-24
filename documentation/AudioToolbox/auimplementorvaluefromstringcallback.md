@@ -27,6 +27,9 @@ The block returns the current value of the parameter.
 
 The block takes the following parameters:
 
+- **param**: The parameter whose value will be changed.
+- **string**: The string that contains the new parameter value.
+
 ## See Also
 
 - [var implementorValueFromStringCallback: AUImplementorValueFromStringCallback](auparameternode/implementorvaluefromstringcallback.md)

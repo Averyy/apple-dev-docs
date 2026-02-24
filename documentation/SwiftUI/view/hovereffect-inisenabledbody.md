@@ -36,9 +36,9 @@ Use the [`animation(_:body:)`](hovereffectcontent/animation(_:body:).md) modifie
 
 ## Parameters
 
-- `group`: An optional   to add this effect to.
-- `isEnabled`: Whether the effect is enabled or not. If  , the   effect’s inactive state will be applied, and it will not apply the   active state when hovered.
-- `body`: The closure that constructs a   for   each of the effect’s phases.
+- `group`: An optional [`HoverEffectGroup`](hovereffectgroup.md) to add this effect to.
+- `isEnabled`: Whether the effect is enabled or not. If `false`, the effect’s inactive state will be applied, and it will not apply the active state when hovered.
+- `body`: The closure that constructs a `HoverEffectContent` for each of the effect’s phases.
 
 ## See Also
 

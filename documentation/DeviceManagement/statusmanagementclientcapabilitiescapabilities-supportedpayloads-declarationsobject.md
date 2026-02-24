@@ -19,6 +19,13 @@ A declaration that the client supports.
 object StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject
 ```
 
+## Properties
+
+- `activations` ([string]): An array of strings that represents the activation types that the client supports.
+- `assets` ([string]): An array of strings that represents the assets that the client supports.
+- `configurations` ([string]): An array of strings that represents the configuration types that the client supports.
+- `management` ([string]): An array of strings that represents the declaration types that the client supports.
+
 
 ---
 

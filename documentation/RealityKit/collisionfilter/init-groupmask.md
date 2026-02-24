@@ -44,7 +44,7 @@ let notGroupB = CollisionGroup.all.subtracting(groupB)
 ## Parameters
 
 - `group`: The collision group identifier.
-- `mask`: The collision mask defines what objects will collide with   objects using this filter.
+- `mask`: The collision mask defines what objects will collide with objects using this filter.
 
 ## See Also
 

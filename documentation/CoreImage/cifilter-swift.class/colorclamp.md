@@ -29,6 +29,10 @@ This method applies the color clamp filter to an image. The effect calculates ea
 
 The color clamp filter uses the following properties:
 
+- **`minComponents`**: `RGBA` values for the lower end of the range as a [`CIVector`](civector.md).
+- **`maxComponents`**: `RGBA` values for the upper end of the range as a [`CIVector`](civector.md).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a red hue to the input image:
 
 ```swift

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Return an  over the .
+Return an *iterator* over the *enumerator*.
 
 **Availability**:
 - iOS 8.0+

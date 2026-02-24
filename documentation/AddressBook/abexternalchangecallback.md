@@ -31,7 +31,7 @@ The `addressBook` object does not take any action to flush or synchronize cached
 ## Parameters
 
 - `addressBook`: An address book used to interact with the Address Book database.
-- `info`: Always  .
+- `info`: Always `NULL`.
 - `context`: The object to pass to the callback function.
 
 ## See Also

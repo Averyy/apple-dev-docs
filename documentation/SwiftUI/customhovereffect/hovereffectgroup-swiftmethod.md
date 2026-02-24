@@ -51,7 +51,7 @@ struct FadeEffect: CustomHoverEffect {
 
 ## Parameters
 
-- `group`: The   to activate when this view is hovered.   If  , this modifier has no effect.
+- `group`: The `HoverEffectGroup` to activate when this view is hovered. If `nil`, this modifier has no effect.
 
 ## See Also
 

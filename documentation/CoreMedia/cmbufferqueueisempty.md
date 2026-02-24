@@ -26,7 +26,7 @@ A Boolean indicating whether the `CMBufferQueue` is empty. If queue is `NULL`, t
 
 ## Parameters
 
-- `queue`: The   being interrogated.
+- `queue`: The `CMBufferQueue` being interrogated.
 
 ## See Also
 

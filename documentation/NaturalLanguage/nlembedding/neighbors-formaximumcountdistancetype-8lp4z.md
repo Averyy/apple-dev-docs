@@ -29,7 +29,7 @@ An array of neighboring strings and their distances.
 
 - `vector`: A location in the vocabulary space.
 - `maxCount`: The largest number of neighboring strings that the method can return in an array.
-- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from  .
+- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from `vector`.
 
 ## See Also
 

@@ -25,7 +25,7 @@ The [`CNLabeledValue`](cnlabeledvalue.md) object with an existing label and iden
 
 ## Parameters
 
-- `value`: A new value for the copied labeled value object. For valid values, see   properties that are arrays of labeled value objects.
+- `value`: A new value for the copied labeled value object. For valid values, see [`CNContact`](cncontact.md) properties that are arrays of labeled value objects.
 
 ## See Also
 

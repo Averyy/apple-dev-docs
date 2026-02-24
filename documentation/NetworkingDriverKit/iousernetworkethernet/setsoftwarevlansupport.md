@@ -20,7 +20,7 @@ kern_return_t SetSoftwareVlanSupport(bool isSupported);
 
 ## Parameters
 
-- `isSupported`: If  , enable software VLAN support; otherwise, disable it.
+- `isSupported`: If `YES`, enable software VLAN support; otherwise, disable it.
 
 ## See Also
 

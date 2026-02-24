@@ -26,8 +26,8 @@ Call this method when the user chooses to add to the Reading List.
 ## Parameters
 
 - `URL`: The URL of the item.
-- `title`: The title of the item, or  .
-- `previewText`: A string shown as detail text for the item, or  .
+- `title`: The title of the item, or `nil`.
+- `previewText`: A string shown as detail text for the item, or `nil`.
 
 
 ---

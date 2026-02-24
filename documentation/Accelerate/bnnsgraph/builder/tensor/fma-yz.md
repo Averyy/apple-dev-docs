@@ -26,8 +26,8 @@ This function treats the current tensor as `x` in `x * y + z`.
 
 ## Parameters
 
-- `y`: The   in   .
-- `z`: The   in   .
+- `y`: The `y` in  `x * y + z`.
+- `z`: The `z` in  `x * y + z`.
 
 
 ---

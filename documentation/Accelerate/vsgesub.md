@@ -22,11 +22,11 @@ Matrix `b` (or its transpose) is subtracted from matrix `a` (or its transpose); 
 
 - `height`: Number of rows in the matrices to be subtracted; must be a multiple of 4.
 - `width`: Number of columns in the matrices to be subtracted; must be a multiple of 4.
-- `a`: A matrix with elements of type  .  If   = ‘N’, the matrix itself is used in the calculation and it has   rows and   columns.  If   = ‘T’, the transpose is used and   has   rows and   columns.
+- `a`: A matrix with elements of type `float`.  If `forma` = ‘N’, the matrix itself is used in the calculation and it has `height` rows and `width` columns.  If `forma` = ‘T’, the transpose is used and `a` has `width` rows and `height` columns.
 - `forma`: Selector with a value of ‘N’ or ‘T’.
-- `b`: A matrix with elements of type  .  If   = ‘N’, the matrix itself is used in the calculation and it has   rows and   columns.  If   = ‘T’, the transpose is used and   has   rows and   columns.
+- `b`: A matrix with elements of type `float`.  If `formb` = ‘N’, the matrix itself is used in the calculation and it has `height` rows and `width` columns.  If `formb` = ‘T’, the transpose is used and `b` has `width` rows and `height` columns.
 - `formb`: Selector with a value of  ‘N’ or ‘T’.
-- `c`: Destination matrix with   rows and   columns.
+- `c`: Destination matrix with `height` rows and `width` columns.
 
 ## See Also
 

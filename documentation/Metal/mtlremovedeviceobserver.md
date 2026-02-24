@@ -21,7 +21,7 @@ func MTLRemoveDeviceObserver(_ observer: any NSObjectProtocol)
 
 ## Parameters
 
-- `observer`: An object instance that represents the observer the   function creates.
+- `observer`: An object instance that represents the observer the [`MTLCopyAllDevicesWithObserver(handler:)`](mtlcopyalldeviceswithobserver(handler:).md) function creates.
 
 ## See Also
 

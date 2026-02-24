@@ -27,7 +27,7 @@ func CFBitVectorContainsBit(_ bv: CFBitVector!, _ range: CFRange, _ value: CFBit
 ## Parameters
 
 - `bv`: The bit vector to search.
-- `range`: The range of bits in   to search.
+- `range`: The range of bits in `bv` to search.
 - `value`: The bit value for which to search.
 
 ## See Also

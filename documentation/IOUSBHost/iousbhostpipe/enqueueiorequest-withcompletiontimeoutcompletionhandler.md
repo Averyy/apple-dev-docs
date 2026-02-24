@@ -25,9 +25,9 @@ Use this method to issue an asynchronous input/output request on a bulk or inter
 
 ## Parameters
 
-- `data`: An   object defining the memory to use for the transfer. Use   to send a zero-length packet.
-- `completionTimeout`: A   value representing the timeout of the request. If  , the request never times out. Use   unless there’s a need for a specific timeout.
-- `completionHandler`: An   that runs when the request completes, or times out after the call returns successfully. If the method returns with an error, the completion handler doesn’t run.
+- `data`: An [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object defining the memory to use for the transfer. Use [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) to send a zero-length packet.
+- `completionTimeout`: A [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) value representing the timeout of the request. If `0`, the request never times out. Use [`IOUSBHostDefaultControlCompletionTimeout`](iousbhostdefaultcontrolcompletiontimeout.md) unless there’s a need for a specific timeout.
+- `completionHandler`: An [`IOUSBHostCompletionHandler`](iousbhostcompletionhandler.md) that runs when the request completes, or times out after the call returns successfully. If the method returns with an error, the completion handler doesn’t run.
 
 ## See Also
 

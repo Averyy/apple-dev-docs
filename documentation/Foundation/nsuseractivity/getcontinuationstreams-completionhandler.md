@@ -28,7 +28,9 @@ Continuation streams are an optional feature of Handoff, and most user activitie
 
 ## Parameters
 
-- `completionHandler`: The block takes three arguments:
+- `completionHandler`: The completion handler block that returns streams. The block takes three arguments: - **`inputStream`**: The stream from which the continuing app can read data written by the originating app.
+- **`outputStream`**: The stream to which the continuing app writes data to be read by the originating app.
+- **`error`**: If successful, `nil`; if not successful, an [`NSError`](nserror.md) object that encapsulates the reason why the streams could not be created.
 
 ## See Also
 

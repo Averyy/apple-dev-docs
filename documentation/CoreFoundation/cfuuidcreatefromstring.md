@@ -26,8 +26,8 @@ A new CFUUID object, or if a CFUUID object of the same value already exists, the
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new CFUUID object. Pass   or   to use the current default allocator.
-- `uuidStr`: A string containing a UUID. The standard format for UUIDs represented in ASCII is a string punctuated by hyphens, for example  .
+- `alloc`: The allocator to use to allocate memory for the new CFUUID object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `uuidStr`: A string containing a UUID. The standard format for UUIDs represented in ASCII is a string punctuated by hyphens, for example `68753A44-4D6F-1226-9C60-0050E4C00067`.
 
 ## See Also
 

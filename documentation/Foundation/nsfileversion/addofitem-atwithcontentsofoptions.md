@@ -30,7 +30,7 @@ You should always add file versions as part of a coordinated write operation to 
 
 - `url`: The location at which to store the new file version.
 - `contentsURL`: The URL that specifies the file to use for the version contents.
-- `options`: Specify 0 for this parameter if you want to create a copy of the file at the location specified by the   parameter. Alternatively, specify one of the constants described in  .
+- `options`: Specify 0 for this parameter if you want to create a copy of the file at the location specified by the `url` parameter. Alternatively, specify one of the constants described in [`NSFileVersion.AddingOptions`](nsfileversion/addingoptions.md).
 
 
 ---

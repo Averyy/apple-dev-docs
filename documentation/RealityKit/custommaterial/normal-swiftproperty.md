@@ -20,7 +20,7 @@ var normal: CustomMaterial.Normal { get set }
 
 #### Discussion
 
- is a real-time rendering technique that captures fine surface details for a model by using a texture instead of increasing the number of polygons in the model. It works by storing , which are vectors perpendicular to the surface of the model, from a much higher-resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image.
+*Normal mapping* is a real-time rendering technique that captures fine surface details for a model by using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher-resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image.
 
 For custom materials, [`normal`](custommaterial/normal-swift.property.md) is only used when [`lightingModel`](custommaterial/lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and its surface shader calls `params.surface().set_normal(). T`he normal map texture is still available to your surface shader function when using [`CustomMaterial.LightingModel.unlit`](custommaterial/lightingmodel-swift.enum/unlit.md).
 

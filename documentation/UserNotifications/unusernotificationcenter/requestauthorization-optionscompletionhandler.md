@@ -53,8 +53,9 @@ do {
 
 ## Parameters
 
-- `options`: The authorization options your app is requesting. You may combine the available constants to request authorization for multiple items. Request only the authorization options that you plan to use. For a list of possible values, see  .
-- `completionHandler`: The block to execute asynchronously with the results. This block may execute on a background thread. The block has no return value and has the following parameters:
+- `options`: The authorization options your app is requesting. You may combine the available constants to request authorization for multiple items. Request only the authorization options that you plan to use. For a list of possible values, see [`UNAuthorizationOptions`](unauthorizationoptions.md).
+- `completionHandler`: The block to execute asynchronously with the results. This block may execute on a background thread. The block has no return value and has the following parameters: - **granted**: A Boolean value indicating whether the person grants authorization. The value of this parameter is [`true`](https://developer.apple.com/documentation/Swift/true) when the person grants authorization for one or more options. The value is [`false`](https://developer.apple.com/documentation/Swift/false) when the person denies authorization or authorization is  undetermined. Use [`getNotificationSettings(completionHandler:)`](unusernotificationcenter/getnotificationsettings(completionhandler:).md) to check the authorization status.
+- **error**: An object containing error information or `nil` if no error occurs.
 
 ## See Also
 

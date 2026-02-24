@@ -29,7 +29,7 @@ To create a custom [`SCNGeometry`](scngeometry.md) object from the geometry elem
 ## Parameters
 
 - `indices`: An array of index values, each of which identifies a vertex in a geometry source.
-- `primitiveType`: The drawing primitive that connects vertices when rendering the geometry element. For possible values, see  .
+- `primitiveType`: The drawing primitive that connects vertices when rendering the geometry element. For possible values, see [`SCNGeometryPrimitiveType`](scngeometryprimitivetype.md).
 
 ## See Also
 

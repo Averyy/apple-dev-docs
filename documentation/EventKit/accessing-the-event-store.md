@@ -18,6 +18,30 @@ To receive event or reminder data, you must request access to an entity type aft
 
 For example, to request full access to reminders, use the following:
 
+**Swift**:
+
+```swift
+// Initialize the store.
+var store = EKEventStore()
+
+// Request access to reminders.
+store.requestFullAccessToReminders { granted, error in
+    // Handle the response to the request.
+}
+```
+
+**Objective-C**:
+
+```objc
+// Initialize the store.
+EKEventStore *store = [[EKEventStore alloc] init];
+
+// Request access to reminders.
+[store requestFullAccessToRemindersWithCompletion: ^(BOOL granted, NSError *error) {
+  // Handle the response to the request.
+}];
+```
+
 Releasing an event store instance before other EventKit objects may result in an error.
 
 ##### Use Eventkit with Write Only Calendar Access

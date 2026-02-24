@@ -26,7 +26,8 @@ class func loadLeaderboardSets() async throws -> [GKLeaderboardSet]
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method completes the request. The block receives the following parameters: - ***leaderboardSets***: The leaderboard sets in your game.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

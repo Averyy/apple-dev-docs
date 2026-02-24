@@ -19,6 +19,11 @@ object Asset
 
 - [Subscribing to Notifications](subscribing-to-notifications.md)
 
+## Properties
+
+- `adamId` (string): The unique identifier for a product in the store.
+- `pricingParam` (string): The quality of a product in the store.
+
 ## See Also
 
 - [object ResponseAsset](responseasset.md)

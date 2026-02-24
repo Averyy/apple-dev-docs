@@ -24,6 +24,40 @@ Before presenting your searchable content, install the search bar somewhere in y
 
 You can provide a custom search bar by subclassing [`UISearchController`](uisearchcontroller.md) and overriding this property to return your custom implementation. To ensure the correct configuration of your search bar, lazily initialize it when it’s first requested, as shown in the code below.
 
+**Swift**:
+
+```swift
+class CustomSearchController: UISearchController {
+
+    // Mark this property as lazy to defer initialization until
+    // the searchBar property is called.
+    private lazy var customSearchBar = CustomSearchBar()
+
+
+    // Override this property to return your custom implementation.
+    override var searchBar: UISearchBar { customSearchBar }
+}
+```
+
+**Objective-C**:
+
+```objc
+@implementation CustomSearchController {
+    CustomSearchBar *customSearchBar;
+}
+
+// Override this property to return your custom implementation.
+- (UISearchBar *)searchBar {
+    // Lazily initialize your custom search bar.
+    if (!customSearchBar) {
+        customSearchBar = [[CustomSearchBar alloc] init];
+    }
+    return customSearchBar;
+}
+
+@end
+```
+
 ## See Also
 
 - [var searchResultsUpdater: (any UISearchResultsUpdating)?](uisearchcontroller/searchresultsupdater.md)

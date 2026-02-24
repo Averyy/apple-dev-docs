@@ -20,9 +20,9 @@ func GLKMatrixStackScale(_ stack: GLKMatrixStack, _ sx: Float, _ sy: Float, _ sz
 ## Parameters
 
 - `stack`: A matrix stack.
-- `sx`: The scaling factor used to modify the   components.
-- `sy`: The scaling factor used to modify the   components.
-- `sz`: The scaling factor used to modify the   components.
+- `sx`: The scaling factor used to modify the `x` components.
+- `sy`: The scaling factor used to modify the `y` components.
+- `sz`: The scaling factor used to modify the `z` components.
 
 ## See Also
 

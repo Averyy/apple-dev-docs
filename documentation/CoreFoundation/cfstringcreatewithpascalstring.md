@@ -30,7 +30,7 @@ This function creates an immutable CFString objects from the character contents 
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `pStr`: The Pascal string to be used to create the string.
 - `encoding`: The encoding of the characters in the Pascal string.
 

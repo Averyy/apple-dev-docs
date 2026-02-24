@@ -24,7 +24,7 @@ This method is valid for all events. The created `NSEvent` object retains the `E
 
 ## Parameters
 
-- `eventRef`: The   opaque type to be associated with the created   object.
+- `eventRef`: The `EventRef` opaque type to be associated with the created `NSEvent` object.
 
 ## See Also
 

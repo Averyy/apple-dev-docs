@@ -25,10 +25,10 @@ A blend-tree node that combines the given animations.
 
 ## Parameters
 
-- `x`: A blend-tree node whose animation combines with the second animation   argument.
-- `y`: A blend-tree node whose animation combines with the first animation   argument.
+- `x`: A blend-tree node whose animation combines with the second animation argument.
+- `y`: A blend-tree node whose animation combines with the first animation argument.
 - `name`: A unique name for the combined node.
-- `isAdditive`: A Boolean value that indicates whether the animation builds on   the current state of the target entity, or resets the state before running.
+- `isAdditive`: A Boolean value that indicates whether the animation builds on the current state of the target entity, or resets the state before running.
 
 ## See Also
 

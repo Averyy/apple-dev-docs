@@ -30,8 +30,8 @@ A valid MPSGraphTensor object
 - `startsTensor`: A Tensor that contains an array of numbers that specify the starting points for each dimension.
 - `endsTensor`: A Tensor that contains an array of numbers that specify the ending points for each dimension.
 - `stridesTensor`: A Tensor that contains an array of numbers that specify the strides for each dimension.
-- `startMask`: A bitmask that indicates dimensions whose   values the operation should ignore.
-- `endMask`: A bitmask that indicates dimensions whose   values the operation should ignore.
+- `startMask`: A bitmask that indicates dimensions whose `starts` values the operation should ignore.
+- `endMask`: A bitmask that indicates dimensions whose `ends` values the operation should ignore.
 - `squeezeMask`: A bitmask that indicates dimensions the operation will squeeze out from the result.
 - `name`: The name for the operation.
 

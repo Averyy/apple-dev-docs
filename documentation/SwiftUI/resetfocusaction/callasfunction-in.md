@@ -22,7 +22,7 @@ The focus system reevaluates default focus when the currently-focused item is wi
 
 ## Parameters
 
-- `namespace`: The namespace inside which SwiftUI should   reevaluate default focus. The namespace should match the    block where focus requires reevaluation.
+- `namespace`: The namespace inside which SwiftUI should reevaluate default focus. The namespace should match the [`focusScope(_:)`](view/focusscope(_:).md) block where focus requires reevaluation.
 
 
 ---

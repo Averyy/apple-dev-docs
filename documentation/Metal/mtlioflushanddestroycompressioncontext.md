@@ -25,7 +25,7 @@ An [`MTLIOCompressionStatus`](mtliocompressionstatus.md) instance.
 
 ## Parameters
 
-- `context`: A compression context that you create with the   function.
+- `context`: A compression context that you create with the [`MTLIOCreateCompressionContext(_:_:_:)`](mtliocreatecompressioncontext(_:_:_:).md) function.
 
 ## See Also
 

@@ -29,7 +29,7 @@ The receiver retains `aTimer`. To remove a timer from all run loop modes on whic
 ## Parameters
 
 - `timer`: The timer to register with the receiver.
-- `mode`: The mode in which to add  . You may specify a custom mode or use one of the modes listed in  .
+- `mode`: The mode in which to add `aTimer`. You may specify a custom mode or use one of the modes listed in `Run Loop Modes`.
 
 
 ---

@@ -14,6 +14,9 @@ Following the entry count is a composition-offset table. The layout of the compo
 | sampleCount | 4 |
 | compositionOffset | 4 |
 
+- **sampleCount**: A 32-bit unsigned integer that provides the number of consecutive samples with the calculated composition offset in the field.
+- **compositionOffset**: A 32-bit signed integer indicating the value of the calculated compositionOffset.
+
 ## See Also
 
 - [Size](composition_offset_atom/size.md)

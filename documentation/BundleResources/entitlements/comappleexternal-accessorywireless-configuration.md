@@ -9,6 +9,10 @@ A Boolean value that indicates whether your app may configure MFi Wi-Fi accesso
 - iOS 3.0+
 - iPadOS 3.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This key indicates whether your app may configure third-party hardware accessories that use [`Apple’s MFi licensed technology`](https://developer.apple.comhttps://developer.apple.com/programs/mfi/) to connect to Apple devices.

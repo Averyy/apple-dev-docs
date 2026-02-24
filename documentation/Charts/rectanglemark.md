@@ -31,8 +31,8 @@ When presenting data about the effectiveness of a machine learning model, you ty
 
 |  | Negative | Positive |
 | --- | --- | --- |
-|  | True Negative | False Negative |
-|  | False Positive | True Positive |
+| **Negative** | True Negative | False Negative |
+| **Positive** | False Positive | True Positive |
 
 The number of records in each cell, `num`,  is represented by the color of its corresponding rectangle. This is done by applying the [`foregroundStyle(by:)`](chartcontent/foregroundstyle(by:).md) modifier to the rectangle mark and passing it a [`PlottableValue`](plottablevalue.md) constructed with [`value(_:_:)`](plottablevalue/value(_:_:)-13lvv.md) which takes a label and the value to plot, in this case `num`. A scale from values of `num` to color will be automatically generated and used to color the rectangles based on the value.
 

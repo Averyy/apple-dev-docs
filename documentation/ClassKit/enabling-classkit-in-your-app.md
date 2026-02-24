@@ -28,7 +28,7 @@ To get Schoolwork, download it from the [`App Store`](https://developer.apple.co
 
 ##### Use Development Mode to Test Locally
 
-When you distribute your ClassKit enabled app through the App Store, it runs in . In this mode, assigments made by teachers propagate to students’ devices, and progress returns to the teacher’s device through iCloud. But during development, you might not have access to a classroom full of managed devices. So you test in , storing all data locally on a single device, switching between teacher and student roles as needed. Xcode automatically handles the mode selection for you, but you control the role (student or teacher) in development mode, as described in [`Testing your ClassKit app during development`](testing-your-classkit-app-during-development.md).
+When you distribute your ClassKit enabled app through the App Store, it runs in *production mode*. In this mode, assigments made by teachers propagate to students’ devices, and progress returns to the teacher’s device through iCloud. But during development, you might not have access to a classroom full of managed devices. So you test in *development mode*, storing all data locally on a single device, switching between teacher and student roles as needed. Xcode automatically handles the mode selection for you, but you control the role (student or teacher) in development mode, as described in [`Testing your ClassKit app during development`](testing-your-classkit-app-during-development.md).
 
 ## Topics
 

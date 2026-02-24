@@ -98,9 +98,9 @@ defer {
 - `numSrcChannels`: The number of channels in an input pixel.
 - `numDestChannels`: The number of channels in an output pixel.
 - `table_entries_per_dimension`: An array that contains the number of table entries for each channel in an input pixel.
-- `hint`: A constant that specifies whether this function sets up the table for particular transform functions. If you only use  , pass  . If you only use  , pass  . Pass both flags if you use both transform functions.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
-- `err`: On output,  ; otherwise, one of the error codes in  .
+- `hint`: A constant that specifies whether this function sets up the table for particular transform functions. If you only use [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md), pass [`kvImageMDTableHint_Float`](kvimagemdtablehint_float.md). If you only use [`vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planar16q12(_:_:_:_:_:_:).md), pass [`kvImageMDTableHint_16Q12`](kvimagemdtablehint_16q12.md). Pass both flags if you use both transform functions.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `err`: On output, [`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
 
 ## See Also
 

@@ -30,7 +30,7 @@ Some video decoders can accommodate minor changes in format without needing to b
 ## Parameters
 
 - `session`: The decompression session.
-- `newFormatDesc`: The   to test.
+- `newFormatDesc`: The [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) to test.
 
 ## See Also
 

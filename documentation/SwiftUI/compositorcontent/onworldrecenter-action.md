@@ -22,7 +22,7 @@ When the user recenters their content, the app will fade out and then be reposit
 
 ## Parameters
 
-- `action`: A closure to run when the content is recentered.   This will run when the app has been recentered and is   about to fade back in, equivalent to  .
+- `action`: A closure to run when the content is recentered. This will run when the app has been recentered and is about to fade back in, equivalent to `WorldRecenterPhase.ended`.
 
 
 ---

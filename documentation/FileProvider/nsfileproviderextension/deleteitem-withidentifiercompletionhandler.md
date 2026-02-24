@@ -31,7 +31,7 @@ The user’s ability to delete an item is controlled by the item’s [`allowsDel
 ## Parameters
 
 - `itemIdentifier`: The item’s persistent identifier.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

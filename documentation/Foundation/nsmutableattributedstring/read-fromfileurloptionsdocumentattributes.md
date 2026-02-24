@@ -26,8 +26,8 @@ For RTF formatted files, the contents of the file are appended to the previous s
 ## Parameters
 
 - `url`: The location of the file providing text data.
-- `opts`: The option keys for importing the document. For a list of possible values, see “Option keys for importing documents” in  .
-- `dict`: On return, contains the document attributes. For a list of possible values, see “Document Attributes” in  .
+- `opts`: The option keys for importing the document. For a list of possible values, see “Option keys for importing documents” in [`NSAttributedString`](nsattributedstring.md).
+- `dict`: On return, contains the document attributes. For a list of possible values, see “Document Attributes” in [`NSAttributedString`](nsattributedstring.md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ Returns `true` if the owner UUID property was successfully set, otherwise `false
 
 ## Parameters
 
-- `fileSec`: The   object to modify.
+- `fileSec`: The `CFFileSecurityRef` object to modify.
 - `ownerUUID`: The owner UUID to set.
 
 ## See Also

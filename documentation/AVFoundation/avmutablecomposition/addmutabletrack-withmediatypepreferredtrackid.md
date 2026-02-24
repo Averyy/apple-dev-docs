@@ -27,7 +27,7 @@ A new mutable composition track.
 ## Parameters
 
 - `mediaType`: The media type of the new track.
-- `preferredTrackID`: The preferred track ID for the new track. The system generates a unique ID if the value you specify isn’t available. If you don’t need to specify a preferred track ID, pass  , and the system generates an appropriate identifier.
+- `preferredTrackID`: The preferred track ID for the new track. The system generates a unique ID if the value you specify isn’t available. If you don’t need to specify a preferred track ID, pass [`kCMPersistentTrackID_Invalid`](https://developer.apple.com/documentation/CoreMedia/kCMPersistentTrackID_Invalid), and the system generates an appropriate identifier.
 
 ## See Also
 

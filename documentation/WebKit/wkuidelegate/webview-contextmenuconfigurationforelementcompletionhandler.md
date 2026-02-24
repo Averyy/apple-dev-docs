@@ -21,7 +21,7 @@ optional func webView(_ webView: WKWebView, contextMenuConfigurationFor elementI
 
 - `webView`: The web view in which the interaction occurred.
 - `elementInfo`: An object that contains information about the element involved in the interaction.
-- `completionHandler`: The completion handler for you to call with information about how you want to handle the interaction. This handler block has no return value and takes the following parameter:
+- `completionHandler`: The completion handler for you to call with information about how you want to handle the interaction. This handler block has no return value and takes the following parameter: - **configuration**: The [`UIContextMenuConfiguration`](https://developer.apple.com/documentation/UIKit/UIContextMenuConfiguration) object that contains the details of how you want to handle the interaction. Specify `nil` for this parameter if you don’t want to show a contextual menu.
 
 ## See Also
 

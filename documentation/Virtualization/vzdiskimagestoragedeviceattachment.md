@@ -20,6 +20,9 @@ Use a [`VZDiskImageStorageDeviceAttachment`](vzdiskimagestoragedeviceattachment.
 
 The virtualization framework supports two disk image formats:
 
+- **RAW disk images**: A file that’s the requested size of the VM disk, this format results in a 1-to-1 mapping between the offsets in the file and the offsets in the VM disk.
+- **ASIF disk images**: *Apple Sparse Image Format* (ASIF) files transfer more efficiently between hosts or disks because their intrinsic structure doesn’t depend on the host file system’s capabilities. The size the ASIF file takes on the file system is proportional to the actual data stored in the disk image.
+
 #### Create the Disk Image
 
 Create disk images using `diskutil`, a command-line utility you can access through the Terminal app. The `diskutil` utility performs a number of functions. The command uses a specific structure that tells the app what function it’s performing, including many arguments documented in its online manual page documents. For more information, see the `diskutil` manual page by using the command `man diskutil` in Terminal.
@@ -31,6 +34,11 @@ diskutil image create blank --fs none --format FORMAT --size SIZE IMAGE_PATH
 ```
 
 Use these parameters to specify the configuration of the disk image:
+
+- **`--format`**: An argument that describes the specific file-system format to use, either `RAW` or `ASIF`. `diskutil` supports other file-system formats as well, not all of which Virtualization supports. For more information, see the `diskutil` manual page by using the command `man diskutil` in Terminal.
+- **`--fs`**: An argument that specifies the file system to use when creating the disk image.
+- **`--size`**: An argument that describes the size of the file system to create, usually specified in gigabytes with the suffix `GiB`; for example, `256GiB` specifies a 256 GB image file size. You can also specify sizes in megabytes, using the MiB notation; for example, `256MiB`.
+- **`IMAGE_PATH`**: The file system path that represents the location where `diskutil` creates the `RAW` or `ASIF` file.
 
 > ⚠️ **Warning**: Using `diskutil` improperly can result in data loss. Most commands don’t present confirmation prompts, so check to ensure you’re writing to the volume you expect. Also, back up your data before using any of these commands.
 
@@ -54,9 +62,78 @@ You can also create `ASIF` or `RAW` disk images interactively using Disk Utility
 
 Alternatively, you can create a raw disk image programmatically using the UNIX `open()` and `truncate()` standard library functions as shown here:
 
+**Swift**:
+
+```swift
+private func createRAWDiskImage() {
+    let diskFd = open(diskImageURL.path, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR)
+    if diskFd == -1 {
+        fatalError("Cannot create disk image.")
+    }
+
+    // 128 GB disk space.
+    var result = ftruncate(diskFd, 128 * 1024 * 1024 * 1024)
+    if result != 0 {
+        fatalError("ftruncate() failed.")
+    }
+
+    result = close(diskFd)
+    if result != 0 {
+        fatalError("Failed to close the disk image.")
+    }
+}
+```
+
+**Objective-C**:
+
+```objective-c
+
+static void createRAWDiskImage(void)
+{
+    int fd = open([getDiskImageURL() fileSystemRepresentation], O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
+    if (fd == -1) {
+        abortWithErrorMessage(@"Cannot create disk image.");
+    }
+
+    // 128 GB disk space.
+    int result = ftruncate(fd, 128ull * 1024ull * 1024ull * 1024ull);
+    if (result) {
+        abortWithErrorMessage(@"ftruncate() failed.");
+    }
+
+    result = close(fd);
+    if (result) {
+        abortWithErrorMessage(@"Failed to close the disk image.");
+    }
+}
+
+```
+
 ##### Initialize the Disk Image
 
 After creating the disk image, you use it to initialize a VM’s [`VZDiskImageStorageDeviceAttachment`](vzdiskimagestoragedeviceattachment.md) object. Use the attachment object to configure the [`VZVirtioBlockDeviceConfiguration`](vzvirtioblockdeviceconfiguration.md) object that you add to your virtual machine’s configuration, as shown here:
+
+**Swift**:
+
+```swift
+
+guard let diskImageAttachment = try? VZDiskImageStorageDeviceAttachment(url: diskImageURL, readOnly: false) else {
+    fatalError("Failed to create Disk image.")
+}
+let disk = VZVirtioBlockDeviceConfiguration(attachment: diskImageAttachment)
+```
+
+**Objective-C**:
+
+```objective-c
+
+NSError *error;
+VZDiskImageStorageDeviceAttachment *diskAttachment = [[VZDiskImageStorageDeviceAttachment alloc] initWithURL:getDiskImageURL() readOnly:NO error:&error];
+if (!diskAttachment) {
+    abortWithErrorMessage([NSString stringWithFormat:@"Failed to create VZDiskImageStorageDeviceAttachment. %@", error.localizedDescription]);
+}
+VZVirtioBlockDeviceConfiguration *disk = [[VZVirtioBlockDeviceConfiguration alloc] initWithAttachment:diskAttachment];
+```
 
 ## Topics
 

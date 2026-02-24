@@ -37,8 +37,8 @@ To clear an audio unit property value, set the `inData` parameter to  `NULL` and
 - `inID`: The audio unit property identifier.
 - `inScope`: The audio unit scope for the property.
 - `inElement`: The audio unit element for the property.
-- `inData`: Always pass property values by reference. For example, for a property value of type  , pass it as  .
-- `inDataSize`: The size of the data you are providing in the   parameter.
+- `inData`: The value that you want to apply to the property. May be `NULL` (see Discussion). Always pass property values by reference. For example, for a property value of type `CFStringRef`, pass it as `&myCFString`.
+- `inDataSize`: The size of the data you are providing in the `inData` parameter.
 
 ## See Also
 

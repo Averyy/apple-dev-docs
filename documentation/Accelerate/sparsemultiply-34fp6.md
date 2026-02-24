@@ -22,19 +22,19 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Complex_Float, _ XY: Dens
 
 ## Parameters
 
-- `Subfactor`: (Input) The subfactor to multiply by, as returned by   .
-- `XY`: (Input/Output) On input, the matrix  . On return it is overwritten   with the matrix  . If   is  , then   must have dimension   , where   and   is the number of right-hand   side vectors. If  , then only the first   entries are   used for input or output as approriate.
+- `Subfactor`: (Input) The subfactor to multiply by, as returned by `SparseCreateSubfactor()`.
+- `XY`: (Input/Output) On input, the matrix `X`. On return it is overwritten with the matrix `Y`. If `Subfactor` is `m x n`, then `XB` must have dimension `k x nrhs`, where `k = max(m, n)` and `nrhs` is the number of right-hand side vectors. If `m != n`, then only the first `min(m,n)` entries are used for input or output as approriate.
 
 ## See Also
 
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double)](sparsemultiply(_:_:)-88trz.md)
-  Performs the multiply operation   __in place on a dense matrix of double-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X,* __in place on a dense matrix of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float)](sparsemultiply(_:_:)-3r4mf.md)
-  Performs the multiply operation _ _, in place on a dense matrix of single-precision values.
+  Performs the multiply operation *Y*_ _*= Subfactor * X*, in place on a dense matrix of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsemultiply(_:_:_:)-4nosz.md)
-  Performs the multiply operation   on a dense matrix of double-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsemultiply(_:_:_:)-88stx.md)
-  Performs the multiply operation   on a dense matrix of single-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float)](sparsemultiply(_:_:)-3dwed.md)
   Perform the multiply operation `y = Subfactor * x` for complex floatr values, in place.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float)](sparsemultiply(_:_:_:)-6wrnf.md)

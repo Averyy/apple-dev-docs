@@ -26,7 +26,7 @@ This function also works if the range covers non-contiguous regions of memory.
 
 ## Parameters
 
-- `range`: Range of bytes to replace within this buffer. The count of this range must match the count of  .
+- `range`: Range of bytes to replace within this buffer. The count of this range must match the count of `bytes`.
 - `bytes`: The replacement data.
 
 

@@ -27,7 +27,7 @@ func CFBinaryHeapContainsValue(_ heap: CFBinaryHeap!, _ value: UnsafeRawPointer!
 ## Parameters
 
 - `heap`: The binary heap to search.
-- `value`: The value for which to find matches in the binary heap. The compare callback provided in the   structure when the binary heap was created is used to compare values. If  , or any of the values in the binary heap, are not understood by the compare callback, the behavior is undefined.
+- `value`: The value for which to find matches in the binary heap. The compare callback provided in the [`CFBinaryHeapCallBacks`](cfbinaryheapcallbacks.md) structure when the binary heap was created is used to compare values. If `value`, or any of the values in the binary heap, are not understood by the compare callback, the behavior is undefined.
 
 ## See Also
 

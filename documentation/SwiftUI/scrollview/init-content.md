@@ -23,7 +23,7 @@ init(_ axes: Axis.Set = .vertical, @ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `axes`: The scroll view’s scrollable axis. The default axis is the   vertical axis.
+- `axes`: The scroll view’s scrollable axis. The default axis is the vertical axis.
 - `content`: The view builder that creates the scrollable view.
 
 ## See Also

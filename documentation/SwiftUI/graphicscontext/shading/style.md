@@ -30,7 +30,7 @@ Styles with geometry defined in a unit coordinate space map that space to the re
 
 ## Parameters
 
-- `style`: A   instance to draw with.
+- `style`: A [`ShapeStyle`](shapestyle.md) instance to draw with.
 
 ## See Also
 

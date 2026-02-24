@@ -23,7 +23,7 @@ func symbol(by value: PlottableProjection<Self.DataElement, some Plottable>) -> 
 
 ## Parameters
 
-- `value`: The data value.   must be categorial, such as  .
+- `value`: The data value. `value` must be categorial, such as `String`.
 
 ## See Also
 

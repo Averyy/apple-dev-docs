@@ -27,8 +27,9 @@ func sign(_ data: Data, algorithm: SecKeyAlgorithm) async throws -> Data
 ## Parameters
 
 - `data`: The data to sign. The data is usually the digest of applying a cryptographic hash function to some actual data.
-- `algorithm`: An algorithm suitable for this data signing operation. For example,  .
-- `handler`: A completion handler to call when the signing operation completes.
+- `algorithm`: An algorithm suitable for this data signing operation. For example, `ecdsaSignatureMessageX962SHA256`.
+- `handler`: A completion handler to call when the signing operation completes. - **data**: The signature of the data you supply.
+- **error**: An error object that indicates why the signing operation failed, or `nil` if it succeeded.
 
 ## See Also
 

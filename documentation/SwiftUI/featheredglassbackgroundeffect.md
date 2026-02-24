@@ -22,7 +22,7 @@ The layout size of a view with feathered glass background is based on the conten
 
 ### Initializers
 - [init()](featheredglassbackgroundeffect/init.md)
-  Creates a feathered glassBackground effect.
+  Creates a feathered glass background effect.
 - [init(padding: CGFloat, softEdgeRadius: CGFloat?)](featheredglassbackgroundeffect/init(padding:softedgeradius:).md)
   Creates a feathered glass background effect.
 

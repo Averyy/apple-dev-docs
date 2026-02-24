@@ -39,8 +39,8 @@ parts[2] // has shape [5, 10]
 
 ## Parameters
 
-- `count`: The number of splits to create, must divide the size of dimension   evenly.
-- `axis`: The dimension along which to split this tensor. The   must be in the range  .
+- `count`: The number of splits to create, must divide the size of dimension `axis` evenly.
+- `axis`: The dimension along which to split this tensor. The `axis` must be in the range `[-rank, rank)`.
 
 ## See Also
 

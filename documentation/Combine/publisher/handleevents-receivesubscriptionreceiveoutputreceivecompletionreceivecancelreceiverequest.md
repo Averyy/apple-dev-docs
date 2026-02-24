@@ -57,11 +57,11 @@ cancellable = integers.publisher
 
 ## Parameters
 
-- `receiveSubscription`: An optional closure that executes when the publisher receives the subscription from the upstream publisher. This value defaults to  .
-- `receiveOutput`: An optional closure that executes when the publisher receives a value from the upstream publisher. This value defaults to  .
-- `receiveCompletion`: An optional closure that executes when the upstream publisher finishes normally or terminates with an error. This value defaults to  .
-- `receiveCancel`: An optional closure that executes when the downstream receiver cancels publishing. This value defaults to  .
-- `receiveRequest`: An optional closure that executes when the publisher receives a request for more elements. This value defaults to  .
+- `receiveSubscription`: An optional closure that executes when the publisher receives the subscription from the upstream publisher. This value defaults to `nil`.
+- `receiveOutput`: An optional closure that executes when the publisher receives a value from the upstream publisher. This value defaults to `nil`.
+- `receiveCompletion`: An optional closure that executes when the upstream publisher finishes normally or terminates with an error. This value defaults to `nil`.
+- `receiveCancel`: An optional closure that executes when the downstream receiver cancels publishing. This value defaults to `nil`.
+- `receiveRequest`: An optional closure that executes when the publisher receives a request for more elements. This value defaults to `nil`.
 
 ## See Also
 

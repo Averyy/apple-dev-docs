@@ -25,7 +25,7 @@ You should not need to override this method. You should also not need to invoke 
 ## Parameters
 
 - `availableTypes`: The types currently available on the pasteboard.
-- `allowedTypes`: Types allowed in the return value. If  , any available type is allowed.
+- `allowedTypes`: Types allowed in the return value. If `nil`, any available type is allowed.
 
 ## See Also
 

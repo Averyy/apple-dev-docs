@@ -24,8 +24,8 @@ In iOS 7 and later, status bar behavior is determined by view controllers, and s
 
 ## Parameters
 
-- `statusBarStyle`: A constant that specifies a style for the status bar. See the descriptions of the constants in   for details.
-- `animated`:   if the transition to the new style should be animated; otherwise   .
+- `statusBarStyle`: A constant that specifies a style for the status bar. See the descriptions of the constants in [`UIStatusBarStyle`](uistatusbarstyle.md) for details.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the transition to the new style should be animated; otherwise [`false`](https://developer.apple.com/documentation/Swift/false) .
 
 ## See Also
 

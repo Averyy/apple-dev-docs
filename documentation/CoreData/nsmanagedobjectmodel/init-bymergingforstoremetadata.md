@@ -30,7 +30,7 @@ This is the companion method to [`mergedModel(from:forStoreMetadata:)`](nsmanage
 
 ## Parameters
 
-- `models`: An array of instances of  .
+- `models`: An array of instances of `NSManagedObjectModel`.
 - `metadata`: A dictionary containing version information from the metadata for a persistent store.
 
 ## See Also

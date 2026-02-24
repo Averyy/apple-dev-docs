@@ -14,6 +14,10 @@ A dictionary that contains a manifest.
 object InstallEnterpriseApplicationCommand.Command.Manifest
 ```
 
+## Properties
+
+- `ANY` (any): A dictionary that specifies where to download the app. This value uses the [`ManifestURL`](manifesturl.md) format.
+
 ## See Also
 
 - [object InstallEnterpriseApplicationCommand.Command.Configuration](installenterpriseapplicationcommand/command-data.dictionary/configuration-data.dictionary.md)

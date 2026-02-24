@@ -20,8 +20,8 @@ func canReadObject(forClasses classArray: [AnyClass], options: [NSPasteboard.Rea
 
 ## Parameters
 
-- `classArray`: Classes in the array must conform to the   protocol.
-- `options`: A dictionary that specifies options to refine the search for pasteboard items, for example to restrict the search to file URLs with particular content types. For valid dictionary keys, see  .
+- `classArray`: An array of class objects. Classes in the array must conform to the [`NSPasteboardReading`](nspasteboardreading.md) protocol.
+- `options`: A dictionary that specifies options to refine the search for pasteboard items, for example to restrict the search to file URLs with particular content types. For valid dictionary keys, see `Pasteboard Reading Options`.
 
 ## See Also
 

@@ -9,6 +9,10 @@ An array of strings that represent the types of mobile documents (mdoc) that an 
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Use this entitlement to define the types of mobile documents that the app provides.

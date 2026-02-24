@@ -24,7 +24,7 @@ init(forKeySystem keySystem: AVContentKeySystem, identifier contentKeyIdentifier
 
 - `keySystem`: The key system to use to generate content keys.
 - `contentKeyIdentifier`: The container and protocol-specific key identifier.
-- `options`: Additional information necessary to obtain the key. Pass   to indicate no additional options.
+- `options`: Additional information necessary to obtain the key. Pass `nil` to indicate no additional options.
 
 
 ---

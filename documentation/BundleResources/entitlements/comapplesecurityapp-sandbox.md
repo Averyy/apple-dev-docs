@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may use access control technolog
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode.

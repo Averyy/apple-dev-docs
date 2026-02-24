@@ -12,7 +12,7 @@ Convert an RGB image to discrete luminance and chrominance channels, and apply c
 
 This sample code project allows you to apply saturation adjustments to an image without affecting luminosity, and change the luminance response curve without affecting color.
 
-Many image-processing techniques, such as saturation adjustment and tone mapping, are simpler to implement when you can work on an image’s luminance data separately from its color data. This article explains how you can convert an RGB image — with its pixels represented as red, green, and blue values — to YpCbCr, which stores luminance and chrominance discretely. The  in YpCbCr refers to the luminance, and the  and  refer to the blue-luminance difference, and red-luminance difference, respectively.
+Many image-processing techniques, such as saturation adjustment and tone mapping, are simpler to implement when you can work on an image’s luminance data separately from its color data. This article explains how you can convert an RGB image — with its pixels represented as red, green, and blue values — to YpCbCr, which stores luminance and chrominance discretely. The *Yp* in YpCbCr refers to the luminance, and the *Cb* and *Cr* refer to the blue-luminance difference, and red-luminance difference, respectively.
 
 This sample app converts an ARGB image to YpCbCr and applies adjustments based on user-interface controls. When you decrease the saturation, the sample app applies gamma to the CbCr buffers. When you increase the saturation, the sample app scales the CbCr buffers, and when you change contrast, the sample app applies gamma to the Yp buffer.
 
@@ -40,7 +40,7 @@ private lazy var argbDestination: vImage.PixelBuffer<vImage.Interleaved8x4> = {
 
 ##### Create the Ypcbcr Buffers
 
-The conversion routine that this sample uses creates a YpCbCr result with a chroma of 4:2:0, which means there is one Cb and one Cr pixel for every four luminance pixels. That is, each chrominance buffer is half of the width, and half of the height of the luminance channel. Reducing the resolution for the chrominance channels is known as , and it relies on the fact that human vision is less sensitive to color than luminance.
+The conversion routine that this sample uses creates a YpCbCr result with a chroma of 4:2:0, which means there is one Cb and one Cr pixel for every four luminance pixels. That is, each chrominance buffer is half of the width, and half of the height of the luminance channel. Reducing the resolution for the chrominance channels is known as *chroma subsampling*, and it relies on the fact that human vision is less sensitive to color than luminance.
 
 The image below shows that a 4 x 2 image is represented by a 4 x 2 luminance channel, but each chrominance channel is 2 x 1 pixels:
 
@@ -226,7 +226,7 @@ When decreasing the saturation, the gamma function is not appropriate because pi
 
 ##### Apply Gamma to Luminance to Perform Tone Mapping
 
-The sample app adjusts the contrast of an image, with a technique known as , by applying a gamma adjustment to the luminance channel.
+The sample app adjusts the contrast of an image, with a technique known as *tone mapping*, by applying a gamma adjustment to the luminance channel.
 
 Adjusting contrast is discussed in [`Adjusting the brightness and contrast of an image`](adjusting-the-brightness-and-contrast-of-an-image.md), however, applying a gamma adjustment to red, green, and blue channels changes both the color and tonal values.
 

@@ -26,8 +26,8 @@ func JSValueIsObjectOfClass(_ ctx: JSContextRef!, _ value: JSValueRef!, _ jsClas
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The   to test.
-- `jsClass`: The   to test against.
+- `value`: The [`JSValueRef`](jsvalueref.md) to test.
+- `jsClass`: The [`JSClassRef`](jsclassref.md) to test against.
 
 ## See Also
 

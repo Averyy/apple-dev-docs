@@ -26,7 +26,7 @@ Texture caches automatically flush unused resources when you call the [`CVMetalT
 ## Parameters
 
 - `textureCache`: The texture cache object to flush.
-- `options`: Options for the flush operation. This parameter is currently unused and should be  .
+- `options`: Options for the flush operation. This parameter is currently unused and should be `0`.
 
 ## See Also
 

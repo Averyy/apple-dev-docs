@@ -32,7 +32,7 @@ ContentView()
 
 ## Parameters
 
-- `effect`: A closure that returns the effect to be applied. The first   argument provided to the closure is a placeholder representing   this view. The second argument is a  .
+- `effect`: A closure that returns the effect to be applied. The first argument provided to the closure is a placeholder representing this view. The second argument is a `GeometryProxy3D`.
 
 ## See Also
 

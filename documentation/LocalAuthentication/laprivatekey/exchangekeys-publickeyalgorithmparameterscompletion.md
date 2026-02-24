@@ -29,9 +29,10 @@ The algorithm you use determines the parameters in the dictionary that are requi
 ## Parameters
 
 - `publicKey`: The remote party’s public key.
-- `algorithm`: An algorithm suitable for performing this key exchange. For example,  .
+- `algorithm`: An algorithm suitable for performing this key exchange. For example, `ecdhKeyExchangeCofactorX963SHA256`.
 - `parameters`: A dictionary with parameters for this key exchange.
-- `handler`: A completion handler to call when the key exchange operation completes.
+- `handler`: A completion handler to call when the key exchange operation completes. - **data**: The result of the key exchange operation.
+- **error**: An error object that indicates why the key exchange failed, or `nil` if the exchange succeeded.
 
 ## See Also
 

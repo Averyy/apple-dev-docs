@@ -24,9 +24,9 @@ The default implementation of the method flushes the context.
 ## Parameters
 
 - `ctx`: The rendering context in to which the OpenGL content should be rendered.
-- `pf`: The pixel format used when the   was created.
+- `pf`: The pixel format used when the `glContext` was created.
 - `t`: The current layer time.
-- `ts`: The display timestamp associated with  . Can be  .
+- `ts`: The display timestamp associated with `timeInterval`. Can be `null`.
 
 ## See Also
 

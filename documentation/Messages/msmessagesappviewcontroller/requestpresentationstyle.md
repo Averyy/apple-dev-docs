@@ -26,7 +26,7 @@ If you call this method on a view controller with a [`MSMessagesAppPresentationS
 
 ## Parameters
 
-- `presentationStyle`: The desired presentation style. For a list of possible styles, see  .
+- `presentationStyle`: The desired presentation style. For a list of possible styles, see [`MSMessagesAppPresentationStyle`](msmessagesapppresentationstyle.md).
 
 ## See Also
 

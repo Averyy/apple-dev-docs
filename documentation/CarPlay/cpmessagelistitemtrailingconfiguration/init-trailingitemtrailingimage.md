@@ -24,7 +24,7 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## Parameters
 
-- `trailingItem`: The item to show in the trailing region of the message list item. See   for the available options.
+- `trailingItem`: The item to show in the trailing region of the message list item. See [`CPMessageTrailingItem`](cpmessagetrailingitem.md) for the available options.
 - `trailingImage`: The image to show in the trailing region of the message list item.
 
 ## See Also

@@ -23,10 +23,10 @@ After you determine the location of the specified range of text in your view’s
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object requesting information   from your custom view.
-- `range`: The range of text to evaluate. This range is relative to the   text in your context object, and it’s your responsibility to match that   location to the correct location in your text storage. If you initialized   the context object with the entire contents of your view’s text storage,   you can use   as-is to access that text storage. However, if you   initialized the context object with only a portion of your view’s text,   add the starting location of your context object’s text to this value to   get the correct range for that text storage.
-- `context`: The context object with the target text. Use this object to   find the text in your view’s text storage.
-- `completion`: A handler to execute with the required information. The   handler has no return value and takes an array of Bezier paths as a   parameter. You must call this handler at some point during your method’s implementation.
+- `writingToolsCoordinator`: The coordinator object requesting information from your custom view.
+- `range`: The range of text to evaluate. This range is relative to the text in your context object, and it’s your responsibility to match that location to the correct location in your text storage. If you initialized the context object with the entire contents of your view’s text storage, you can use `range` as-is to access that text storage. However, if you initialized the context object with only a portion of your view’s text, add the starting location of your context object’s text to this value to get the correct range for that text storage.
+- `context`: The context object with the target text. Use this object to find the text in your view’s text storage.
+- `completion`: A handler to execute with the required information. The handler has no return value and takes an array of Bezier paths as a parameter. You must call this handler at some point during your method’s implementation.
 
 ## See Also
 

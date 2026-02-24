@@ -22,8 +22,8 @@ init<T>(_ value: T.ParseInput, strategy: T) throws where T : ParseStrategy, T.Pa
 
 ## Parameters
 
-- `value`: A representation of a date. The type of the representation is specified by  .
-- `strategy`: The parse strategy to parse   whose   is  .
+- `value`: A representation of a date. The type of the representation is specified by `ParseStrategy.ParseInput`.
+- `strategy`: The parse strategy to parse `value` whose `ParseOutput` is `DateComponents`.
 
 
 ---

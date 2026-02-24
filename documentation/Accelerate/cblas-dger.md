@@ -29,15 +29,15 @@ Computes `alpha*x*y' + A`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `M`: Number of rows in matrix  .
-- `N`: Number of columns in matrix  .
-- `ALPHA`: Scaling factor for vector  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
-- `A`: Matrix  .
-- `LDA`: Leading dimension of array containing matrix  .
+- `M`: Number of rows in matrix `A`.
+- `N`: Number of columns in matrix `A`.
+- `ALPHA`: Scaling factor for vector `X`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of array containing matrix `A`.
 
 ## See Also
 

@@ -21,8 +21,8 @@ init(destinationAddress address: String, subnetMask: String)
 
 ## Parameters
 
-- `address`: An IPv4 address string. This string is combined with   to specify the destination network of the route.
-- `subnetMask`: An IPv4 network mask string. This string is combined with   to specify the destination network of the route.
+- `address`: An IPv4 address string. This string is combined with `subnetMask` to specify the destination network of the route.
+- `subnetMask`: An IPv4 network mask string. This string is combined with `address` to specify the destination network of the route.
 
 ## See Also
 

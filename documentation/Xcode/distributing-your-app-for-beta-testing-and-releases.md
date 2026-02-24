@@ -28,7 +28,7 @@ If you offer related apps on different platforms, combine them in one Xcode proj
 
 ##### Create an Archive of Your App
 
-To use any of the distribution methods, first create an archive of your app. An  is a build of your app, including debugging information, that Xcode stores in a bundle. Xcode repackages the archive’s contents based on the distribution configuration you choose for your distribution.
+To use any of the distribution methods, first create an archive of your app. An *archive* is a build of your app, including debugging information, that Xcode stores in a bundle. Xcode repackages the archive’s contents based on the distribution configuration you choose for your distribution.
 
 In the main window of your Xcode project, choose a scheme and a run destination to build for from the Scheme toolbar menu. Then, choose Product > Archive to build the targets included in that scheme, for the class of device you select, and create an archive that appears in the Archives organizer.
 
@@ -50,6 +50,13 @@ From the Organizer window in Xcode, select Archives in the sidebar and click Dis
 
 Select one of the following options to distribute using recommended settings:
 
+- **TestFlight & App Store**: Default settings to distribute through TestFlight and submit to the App Store. Use this option to update the build number of the content in your archive, perform automatic code signing, and upload your app with symbols.
+- **TestFlight Internal Only**: Default settings to distribute through TestFlight and restrict access to your team. Use this option to prevent a development build of your app from being submitted to the App Store.
+- **Release Testing**: Default settings to distribute a version to test before release. Use this option to perform automatic code signing similar to the App Store distribution option and export to install on devices your team registers with App Store Connect. This distribution method isn’t available for apps built for Mac.
+- **Enterprise**: Default settings to distribe to members of your organization. Use this option if you’re a part of the [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise). This distribution method isn’t available for apps built for Mac.
+- **Direct Distribution**: Default settings to distribute a macOS app directly. Use this option to notarize a Developer ID app for direct distribution. This distribution method is only available for apps built for Mac.
+- **Debugging**: Default settings to distribute a version for debugging. Use this option to export a version to install and debug on devices your team registers with App Store Connect. This enables sandbox testing environments for some [`Capabilities`](capabilities.md) that support them.
+
 After selecting a distribution option, click the Distribute button. Xcode begins processing, packaging, and uploading. Click the link at the at the end to access the builds page for the app on App Store Connect or click the Export button to access the assets locally.
 
 > **Note**: Before you upload your app to the App Store for the first time, create an app record to register your app with App Store Connect. If you haven’t done this already, Xcode asks you for the information it needs to create this record for you. For more information, see [`Create an app record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
@@ -62,6 +69,13 @@ To begin a custom distribution, which allows you to configure your own settings,
 
 Select from the following distribution methods:
 
+- **App Store Connect**: Distribute using TestFlight or through the App Store.
+- **Ad Hoc**: Distribute to a limited number of devices you register in App Store Connect. For more information on distributing to devices you register, see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md).
+- **Enterprise**: Distribute to members of your organization if you’re a part of the [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise) and are ready to release your app to users in your organization.
+- **Developer ID**: Distribute a macOS app outside the App Store that is notarized by Apple or signed with a Developer ID. This distribution method is only available for apps built for Mac.
+- **Development**: Distribute to a limited number of devices you register in App Store Connect. For more information on distributing to devices you register, see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md).
+- **Copy App**: Distribute a macOS app without code signing. This distribution method is only available for apps built for Mac.
+
 If you choose App Store Connect or Developer ID as your distribution method, you select a destination option as well. You can choose to upload your build to the App Store, or Export your build locally to upload later.
 
 ![Screenshot of the distribution flow showing destination options with options to Upload or Export. Upload is selected.](https://docs-assets.developer.apple.com/published/42129fbe9643b7d6d49e6b714d240933/distributing-your-app-for-beta-testing-and-releases-4%402x.png)
@@ -69,6 +83,11 @@ If you choose App Store Connect or Developer ID as your distribution method, you
 When distributing your app on TestFlight or the App Store, choose how to manage symbols and build numbers:
 
 ![Screenshot of the distribution flow showing App Store Connect distribution options with checkboxes to Upload you app’s symbols, Manage version and build numbers, and TestFlight internal testing only. The Upload you app’s symbols and Manage version and build numbers checkboxes are selected.](https://docs-assets.developer.apple.com/published/c9577bec89092a11e40b6ff4c8528605/distributing-your-app-for-beta-testing-and-releases-5%402x.png)
+
+- **Strip Swift symbols**: Reduces the size of your app by stripping symbols from Swift standard libraries. This setting is only available if your project has embedded swift libraries.
+- **Upload your app’s symbols**: Allows Apple to provide you with symbolicated crash logs and other diagnostic information. A symbolicated log replaces memory addresses in logs with human-readable function names and line numbers. The symbols can also be useful in compatibility testing of your app with Apple products and services.
+- **Manage version and build number**: Allows Xcode to update the build number of all the content in your archive.
+- **TestFlight internal testing only**: Prepares the app for distribution through TestFlight and restricts access to your team. Use this option to prevent a development build of your app from being submitted to the App Store.
 
 When selecting a distribution method that involves code signing, select a method for code signing.
 

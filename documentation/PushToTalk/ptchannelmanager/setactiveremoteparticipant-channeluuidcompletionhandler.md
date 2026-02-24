@@ -32,7 +32,7 @@ When you receive incoming audio from a remote participant, set the participant v
 
 - `participant`: The remote participant to become active.
 - `channelUUID`: The channel identifier the participant becomes active in.
-- `completionHandler`: The completion handler that contains an optional error.
+- `completionHandler`: The completion handler that contains an optional error. - **`error`**: An error, if any, that indicates the reason why the system couldn’t set the active participant.
 
 
 ---

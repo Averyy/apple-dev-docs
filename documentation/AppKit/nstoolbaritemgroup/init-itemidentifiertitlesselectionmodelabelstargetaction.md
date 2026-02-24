@@ -23,7 +23,7 @@ convenience init(itemIdentifier: NSToolbarItem.Identifier, titles: [String], sel
 - `titles`: An array of titles to present as subitems in the grouped toolbar item.
 - `selectionMode`: A Boolean value that indicates how the grouped toolbar item presents selections.
 - `labels`: Labels that correspond to the specified titles.
-- `target`: If target is  , the toolbar attempts to invoke the specified action on the first responder and, failing that, passes the action up the responder chain.
+- `target`: The target that the toolbar calls upon selection. If target is `nil`, the toolbar attempts to invoke the specified action on the first responder and, failing that, passes the action up the responder chain.
 - `action`: The selector that the toolbar invokes on the target.
 
 ## See Also

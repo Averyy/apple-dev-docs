@@ -20,7 +20,7 @@ A new carousel content object containing the specified items.
 
 ## Parameters
 
-- `style`: The appearance to use for individual items. For a list of possible values, see  .
+- `style`: The appearance to use for individual items. For a list of possible values, see [`TVTopShelfCarouselContent.Style`](tvtopshelfcarouselcontent/style-swift.enum.md).
 - `items`: The items to display in the Top Shelf interface. All of the items in the array must have unique identifiers.
 
 

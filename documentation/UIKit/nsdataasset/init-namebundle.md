@@ -32,7 +32,7 @@ This method looks in the asset catalog, in the bundle specified by the `bundle` 
 ## Parameters
 
 - `name`: The name of the data set in the asset catalog.
-- `bundle`: The bundle used to store the asset catalog. Pass   for the main bundle. The bundle must be the same as the one used in the Xcode project.
+- `bundle`: The bundle used to store the asset catalog. Pass `nil` for the main bundle. The bundle must be the same as the one used in the Xcode project.
 
 ## See Also
 

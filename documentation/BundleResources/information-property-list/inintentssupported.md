@@ -11,6 +11,10 @@ The names of the intent classes your app handles directly.
 - tvOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Provide the class name of each [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent) subclass your app can handle. To specify this information in Xcode, add the class names in the Supported Intents section of your app target in the Project Editor.

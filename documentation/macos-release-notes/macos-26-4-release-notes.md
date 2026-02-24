@@ -1,4 +1,4 @@
-# macOS Tahoe 26.4 Beta Release Notes
+# macOS Tahoe 26.4 Beta 2 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.4 SDK provides support to develop apps for Mac computers running Tahoe 26.4 beta. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The macOS 26.4 SDK provides support to develop apps for Mac computers running Tahoe 26.4 beta 2. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
 
 ##### Appkit
 
@@ -23,8 +23,8 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 ###### Known Issues
 
-- Setting a URL override could break apps from the App Store that use Apple-Hosted Background Assets.  (169558509)  Remove any URL override that you previously set before installing or using an app from the App Store.
-- Apps might crash when downloading asset packs.  (169648111)  If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
+- Setting a URL override could break apps from the App Store that use Apple-Hosted Background Assets.  (169558509) **Workaround:** Remove any URL override that you previously set before installing or using an app from the App Store.
+- Apps might crash when downloading asset packs.  (169648111) **Workaround:** If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
 
 ##### Coremidi
 
@@ -36,31 +36,31 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 ###### Known Issues
 
-- When installing an external disk, some configurations of M1 Apple Silicon Macs might panic at boot.   (170263142)  Install to a secondary volume in APFS container instead of external disk to validate secondary boot sequences.
+- When installing an external disk, some configurations of M1 Apple Silicon Macs might panic at boot.   (170263142) **Workaround:** Install to a secondary volume in APFS container instead of external disk to validate secondary boot sequences.
 
 ##### External Media
 
 ###### Known Issues
 
-- HFS external media might fail to mount automatically.  (168672160)  For macOS only, use CLI tool `diskutil mount` to attach the relevant disk device.
+- HFS external media might fail to mount automatically.  (168672160) **Workaround:** For macOS only, use CLI tool `diskutil mount` to attach the relevant disk device.
 
 ##### Internet Accounts
 
 ###### Known Issues
 
-- Exchange syncing for Calendar, Reminders and Notes might fail.  (168082477)  To continue syncing Calendar and Reminders, disable Notes syncing in Internet Accounts.
+- Exchange syncing for Calendar, Reminders and Notes might fail.  (168082477) **Workaround:** To continue syncing Calendar and Reminders, disable Notes syncing in Internet Accounts.
 
 ##### Login
 
 ###### Known Issues
 
-- Touch ID might not be available to unlock the screen of a standard user account after updating to this release. This occurs when FileVault is enabled and a standard user account is logged in prior to any administrator logging in following the update.  (169743642)  An administrator user should sign in to the Mac before any standard users.
+- Touch ID might not be available to unlock the screen of a standard user account after updating to this release. This occurs when FileVault is enabled and a standard user account is logged in prior to any administrator logging in following the update.  (169743642) **Workaround:** An administrator user should sign in to the Mac before any standard users.
 
 ##### Macos Recovery
 
 ###### Known Issues
 
-- When deleting a boot volume from the Activation Lock window in macOS Recovery, full erase functionality might not work.   (170280070)  Use the “Erase All Content and Settings” functionality from the booted OS instead of triggering from recovery.
+- When deleting a boot volume from the Activation Lock window in macOS Recovery, full erase functionality might not work.   (170280070) **Workaround:** Use the “Erase All Content and Settings” functionality from the booted OS instead of triggering from recovery.
 
 ##### Networking
 
@@ -86,6 +86,10 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 - New fields [`revocationType`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationtype-swift.property) and [`revocationPercentage`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationpercentage) have been added to [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction).  (148858551)
 
+###### Resolved Issues
+
+- Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
+
 ##### Swiftui
 
 ###### Resolved Issues
@@ -95,7 +99,7 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 ###### Known Issues
 
-- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142)  Ensure the same component properties are animated by subsequent implicit animations when possible.
+- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142) **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
 
 ##### Virtualization
 

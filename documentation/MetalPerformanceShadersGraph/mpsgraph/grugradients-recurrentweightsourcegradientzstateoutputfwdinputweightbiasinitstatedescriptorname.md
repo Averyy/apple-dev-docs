@@ -29,14 +29,14 @@ For details of this operation and parameters, refer to documentation of [`GRU(_:
 
 ## Parameters
 
-- `source`: A tensor containing the source data   with the data layout [T,N,I]. In case   and   then the layout is [T,N,3H] and for   and   the layout is [T,N,6H].
-- `recurrentWeight`: A tensor containing the recurrent weights  . For   the layout is [2,3H,H] and otherwise it is [3H,H].
+- `source`: A tensor containing the source data `x[t]` with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,3H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,6H].
+- `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,3H,H] and otherwise it is [3H,H].
 - `sourceGradient`: The input gradient, that is the gradient of a tensor with respect to the first output of the forward pass.
-- `zState`: The second output of     with   .
-- `outputFwd`: The first output of     with  .
-- `inputWeight`: A tensor containing the input weights matrix   - optional, if missing the operation assumes a diagonal unit-matrix.   For   the layout is [6H,I] and otherwise it is [3H,I].
-- `bias`: A tensor containing the bias   - optional, if missing the operation assumes zeroes. For   the layout is [6H] and otherwise it is [3H].
-- `initState`: The initial internal state of the LSTM   - optional, if missing the operation assumes zeroes. For   the layout is [N,2H] and otherwise it is [N,H].
+- `zState`: The second output of [`GRU(_:recurrentWeight:inputWeight:bias:initState:descriptor:name:)`](mpsgraph/gru(_:recurrentweight:inputweight:bias:initstate:descriptor:name:).md) with  `descriptor.training = YES`.
+- `outputFwd`: The first output of [`GRU(_:recurrentWeight:inputWeight:bias:initState:descriptor:name:)`](mpsgraph/gru(_:recurrentweight:inputweight:bias:initstate:descriptor:name:).md) with `descriptor.training = YES`.
+- `inputWeight`: A tensor containing the input weights matrix `W` - optional, if missing the operation assumes a diagonal unit-matrix. For `bidirectional` the layout is [6H,I] and otherwise it is [3H,I].
+- `bias`: A tensor containing the bias `b` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [6H] and otherwise it is [3H].
+- `initState`: The initial internal state of the LSTM `h[-1]` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [N,2H] and otherwise it is [N,H].
 - `descriptor`: A descriptor that defines the parameters for the GRU operation.
 - `name`: The name for the operation.
 

@@ -30,9 +30,10 @@ Always include Items with a non-`nil` [`tagData`](nsfileprovideritemprotocol/tag
 
 ## Parameters
 
-- `tagData`: The tag selected by the user, or   if the item was untagged.
+- `tagData`: The tag selected by the user, or `nil` if the item was untagged.
 - `itemIdentifier`: The item’s persistent identifier.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`taggedItem`**: A file provider item that represents the changed item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

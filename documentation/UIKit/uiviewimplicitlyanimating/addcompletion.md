@@ -24,7 +24,7 @@ Use this method to add the completion blocks to your custom animator object. Com
 
 ## Parameters
 
-- `completion`: A block to execute when the animations finish. This block has no return value and takes the following parameter:
+- `completion`: A block to execute when the animations finish. This block has no return value and takes the following parameter: - **finalPosition**: The position where the animations stopped. Use this value to specify whether the animations stopped at their starting point, their end point, or their current position.
 
 ## See Also
 

@@ -9,6 +9,10 @@ An entitlement that enables an app to present the journaling suggestions picker.
 - iOS 17.2+
 - iPadOS 17.2+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework can’t present the [`JournalingSuggestionsPicker`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestionsPicker) for apps without this entitlement in their code signature. Add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode.

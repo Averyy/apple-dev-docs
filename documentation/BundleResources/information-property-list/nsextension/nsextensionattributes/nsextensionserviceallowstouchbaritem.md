@@ -8,6 +8,10 @@ A Boolean value indicating whether the extension appears as a Quick Action in th
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionServiceTouchBarBezelColorName](information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarbezelcolorname.md)

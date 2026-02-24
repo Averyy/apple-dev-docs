@@ -31,7 +31,7 @@ The format instance is copied at initialization time, so you can immediately reu
 ## Parameters
 
 - `bounds`: The bounds of the Core Graphics context available to the renderer, with values measured in points.
-- `format`: The format applied to the renderer’s context. This object is an instance of the subclass of   appropriate for the concrete subclass of   you are using.
+- `format`: The format applied to the renderer’s context. This object is an instance of the subclass of [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) appropriate for the concrete subclass of `UIGraphicsRenderer` you are using.
 
 ## See Also
 

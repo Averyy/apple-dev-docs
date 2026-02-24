@@ -32,7 +32,7 @@ This action is not reversible.
 
 ## Parameters
 
-- `v`: The new value for the reverb. The value should be between   and  , inclusive.
+- `v`: The new value for the reverb. The value should be between `0.0` and `1.0`, inclusive.
 - `duration`: The duration of the animation, in seconds.
 
 ## See Also

@@ -23,12 +23,12 @@ func applyBackward(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSND
 ## Parameters
 
 - `batchSize`: The number of input-output pairs.
-- `inputA`: The descriptor of matrix  .
-- `inputB`: The descriptor of matrix  .
+- `inputA`: The descriptor of matrix *A*.
+- `inputB`: The descriptor of matrix *B*.
 - `output`: The descriptor of the output.
 - `outputGradient`: The descriptor of the output gradient.
-- `inputAGradient`: The descriptor of the matrix   gradient.
-- `inputBGradient`: The descriptor of the matrix   gradient.
+- `inputAGradient`: The descriptor of the matrix *A* gradient.
+- `inputBGradient`: The descriptor of the matrix *B* gradient.
 
 
 ---

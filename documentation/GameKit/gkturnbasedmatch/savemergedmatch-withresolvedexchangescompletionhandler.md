@@ -34,7 +34,7 @@ This method removes the exchanges from the current participant’s `completedExc
 
 - `matchData`: Your game-specific data representing the match state including the resolved exchange data.
 - `exchanges`: The completed exchanges that you resolve or merge into the match data.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

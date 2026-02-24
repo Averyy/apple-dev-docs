@@ -23,7 +23,7 @@ func CFBundleGetPackageInfo(_ bundle: CFBundle!, _ packageType: UnsafeMutablePoi
 ## Parameters
 
 - `bundle`: The bundle to examine.
-- `packageType`: On return, the four-letter type code for the bundle. This is   for applications,   for frameworks, and   for generic bundles. Or a more specific type code for generic bundles.
+- `packageType`: On return, the four-letter type code for the bundle. This is `APPL` for applications, `FMWK` for frameworks, and `BNDL` for generic bundles. Or a more specific type code for generic bundles.
 - `packageCreator`: On return, the four-letter “creator” code for the bundle.
 
 ## See Also

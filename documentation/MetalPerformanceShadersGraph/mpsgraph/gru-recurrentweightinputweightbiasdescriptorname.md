@@ -52,10 +52,10 @@ If `flipZ = YES` then `h[t]` is replaced by
 
 ## Parameters
 
-- `source`: A tensor containing the source data   with the data layout [T,N,I]. In case   and   then the layout is [T,N,3H] and for   and   the layout is [T,N,6H].
-- `recurrentWeight`: A tensor containing the recurrent weights  . For   the layout is [2,3H,H] and otherwise it is [3H,H].
-- `inputWeight`: A tensor containing the input weights matrix   - optional, if missing the operation assumes a diagonal unit-matrix.   For   the layout is [6H,I] and otherwise it is [3H,I].
-- `bias`: A tensor containing the bias   - optional, if missing the operation assumes zeroes. For   the layout is [6H] and otherwise it is [3H].
+- `source`: A tensor containing the source data `x[t]` with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,3H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,6H].
+- `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,3H,H] and otherwise it is [3H,H].
+- `inputWeight`: A tensor containing the input weights matrix `W` - optional, if missing the operation assumes a diagonal unit-matrix. For `bidirectional` the layout is [6H,I] and otherwise it is [3H,I].
+- `bias`: A tensor containing the bias `b` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [6H] and otherwise it is [3H].
 - `descriptor`: A descriptor that defines the parameters for the GRU operation.
 - `name`: The name for the operation.
 

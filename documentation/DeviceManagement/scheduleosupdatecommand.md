@@ -23,6 +23,11 @@ object ScheduleOSUpdateCommand
 - [object ScheduleOSUpdateCommand.Command](scheduleosupdatecommand/command-data.dictionary.md)
   The command to schedule an update of the operating system on a device.
 
+## Properties
+
+- `Command` (ScheduleOSUpdateCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ScheduleOSUpdateResponse](scheduleosupdateresponse.md)

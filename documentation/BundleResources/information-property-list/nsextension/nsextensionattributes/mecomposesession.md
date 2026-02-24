@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 12.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Property List Keys

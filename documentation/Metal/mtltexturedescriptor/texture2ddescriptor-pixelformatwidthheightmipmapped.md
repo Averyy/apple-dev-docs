@@ -25,10 +25,10 @@ A pointer to a texture descriptor object for a 2D texture.
 
 ## Parameters
 
-- `pixelFormat`: The format describing how every pixel on the texture image is stored. The default value is  .
-- `width`: The width of the 2D texture image. The value needs to be greater than or equal to  .
-- `height`: The height of the 2D texture image. The value needs to be greater than or equal to  .
-- `mipmapped`: A Boolean indicating whether the resulting image should be mipmapped. If  , then the   property in the returned descriptor is computed from   and  . If  , then   is  .
+- `pixelFormat`: The format describing how every pixel on the texture image is stored. The default value is [`MTLPixelFormat.rgba8Unorm`](mtlpixelformat/rgba8unorm.md).
+- `width`: The width of the 2D texture image. The value needs to be greater than or equal to `1`.
+- `height`: The height of the 2D texture image. The value needs to be greater than or equal to `1`.
+- `mipmapped`: A Boolean indicating whether the resulting image should be mipmapped. If [`true`](https://developer.apple.com/documentation/Swift/true), then the [`mipmapLevelCount`](mtltexturedescriptor/mipmaplevelcount.md) property in the returned descriptor is computed from `width` and `height`. If [`false`](https://developer.apple.com/documentation/Swift/false), then [`mipmapLevelCount`](mtltexturedescriptor/mipmaplevelcount.md) is `1`.
 
 ## See Also
 

@@ -18,6 +18,12 @@ Running this sample requires [`downloading`](https://developer.apple.comhttps://
 
 To run the app in Xcode, choose Product > Scheme > Edit Scheme, and update the command-line argument paths to reference the downloaded files:
 
+- **`--input`**: An Apple Immersive Video MV-HEVC video file without any necessary metadata.
+- **`--aime`**: An `AIME` file with the correct camera calibrations for the provided input file.
+- **`--usdz`**: An optional `USDZ` file to use for camera calibration instead of an `AIME` file. This argument also requires the `--mask` option.
+- **`--mask`**: An optional dynamic mask JSON data file to use for camera calibration instead of an AIME file. This argument also requires the `--usdz` option.
+- **`--output`**: The `AIVU` file to write that contains Immersive Media Support metadata.
+
 
 ---
 

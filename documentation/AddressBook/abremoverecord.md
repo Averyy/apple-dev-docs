@@ -21,7 +21,7 @@ func ABRemoveRecord(_ addressBook: ABAddressBookRef!, _ record: ABRecordRef!) ->
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `record`: The ABRecord object to be removed. If  , this function raises an exception.
+- `record`: The ABRecord object to be removed. If `NULL`, this function raises an exception.
 
 ## See Also
 

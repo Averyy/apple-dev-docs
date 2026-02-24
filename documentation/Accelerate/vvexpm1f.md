@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Calculates  for each element in an array of single-precision values.
+Calculates *eˣ-1* for each element in an array of single-precision values.
 
 **Availability**:
 - iOS 5.0+
@@ -24,18 +24,22 @@ func vvexpm1f(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Unsafe
 
 ##### Parameters
 
-If  is nearly zero, the common expression  will suffer from catastrophic cancellation and the result will have little or no precision.  This function provides an alternative means to do this calculation without the risk of significant loss of precision. This function provides high accuracy when  is around zero.
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
+If *x* is nearly zero, the common expression *exp(x)-1.0* will suffer from catastrophic cancellation and the result will have little or no precision.  This function provides an alternative means to do this calculation without the risk of significant loss of precision. This function provides high accuracy when *x* is around zero.
 
 ## See Also
 
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)
-  Returns the , raised to the power of each element in a vector of double-precision values.
+  Returns the *e*, raised to the power of each element in a vector of double-precision values.
 - [static func exp<U>(U) -> [Float]](vforce/exp(_:)-5iaun.md)
-  Returns the , raised to the power of each element in a vector of single-precision values.
+  Returns the *e*, raised to the power of each element in a vector of single-precision values.
 - [static func exp<U, V>(U, result: inout V)](vforce/exp(_:result:)-34nxw.md)
-  Calculates the , raised to the power of each element in a vector of double-precision values.
+  Calculates the *e*, raised to the power of each element in a vector of double-precision values.
 - [static func exp<U, V>(U, result: inout V)](vforce/exp(_:result:)-4k85n.md)
-  Calculates the , raised to the power of each element in a vector of single-precision values.
+  Calculates the *e*, raised to the power of each element in a vector of single-precision values.
 - [static func exp2<U>(U) -> [Double]](vforce/exp2(_:)-2m5q.md)
   Returns the 2, raised to the power of each element in a vector of double-precision values.
 - [static func exp2<U>(U) -> [Float]](vforce/exp2(_:)-4mm9y.md)
@@ -45,13 +49,13 @@ If  is nearly zero, the common expression  will suffer from catastrophic cancell
 - [static func exp2<U, V>(U, result: inout V)](vforce/exp2(_:result:)-8m564.md)
   Calculates the 2, raised to the power of each element in a vector of single-precision values.
 - [static func expm1<U>(U) -> [Double]](vforce/expm1(_:)-xkzx.md)
-  Returns the  for each element in a vector of double-precision values.
+  Returns the *eˣ-1* for each element in a vector of double-precision values.
 - [static func expm1<U>(U) -> [Float]](vforce/expm1(_:)-mfq5.md)
-  Returns the  for each element in a vector of single-precision values.
+  Returns the *eˣ-1* for each element in a vector of single-precision values.
 - [static func expm1<U, V>(U, result: inout V)](vforce/expm1(_:result:)-4dpl4.md)
-  Calculates the  for each element in a vector of double-precision values.
+  Calculates the *eˣ-1* for each element in a vector of double-precision values.
 - [static func expm1<U, V>(U, result: inout V)](vforce/expm1(_:result:)-2yhs3.md)
-  Calculates the  for each element in a vector of single-precision values.
+  Calculates the *eˣ-1* for each element in a vector of single-precision values.
 - [static func log10<U>(U) -> [Double]](vforce/log10(_:)-9wr68.md)
   Returns the base 10 logarithm of each element in a vector of double-precision values.
 - [static func log<U>(U) -> [Double]](vforce/log(_:)-2gh9a.md)

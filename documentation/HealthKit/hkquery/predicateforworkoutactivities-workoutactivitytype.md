@@ -39,7 +39,7 @@ HKQuery.predicateForWorkouts(activityPredicate: runningActivityPredicate)
 
 ## Parameters
 
-- `workoutActivityType`: The type of activity. For a list of valid workout activities, see  .
+- `workoutActivityType`: The type of activity. For a list of valid workout activities, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
 
 ## See Also
 

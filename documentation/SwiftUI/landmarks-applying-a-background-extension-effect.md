@@ -17,6 +17,14 @@ The Landmarks app lets people explore interesting sites around the world. Whethe
 
 This sample demonstrates how to apply a background extension effect. In the top Landmarks view, the sample applies a background extension effect to the featured image in `LandmarksView`, and to the main image in `LandmarkDetailView`. The background extension effect blurs and extends the image under the sidebar or inspector panel when open. The following images show the main image in `LandmarkDetailView` both with and without the background extension effect.
 
+**With**:
+
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/32d9f0bd8395e9cbd92e197c7aa2b4b3/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+
+**Without**:
+
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/bb19adc84554d4ae280227a56db4f08a/Landmarks-Building-an-app-with-Liquid-Glass-2r%402x.png)
+
 To apply the background extension effect, the sample:
 
 1. Aligns the view to the leading and trailing edges of the containing view.

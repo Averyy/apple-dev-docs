@@ -22,9 +22,9 @@ init(engine: PHASEEngine, settings: [String : PHASEGroupPresetSetting], timeToTa
 ## Parameters
 
 - `engine`: An engine containing groups to configure with settings.
-- `settings`: A dictionary with preset setting values and group objects as keys. See  .
-- `timeToTarget`: A duration in which the engine fades the settings from their original value to their new value. See  .
-- `timeToReset`: A duration in which the framework restores the group’s original state. See  .
+- `settings`: A dictionary with preset setting values and group objects as keys. See [`settings`](phasegrouppreset/settings.md).
+- `timeToTarget`: A duration in which the engine fades the settings from their original value to their new value. See [`timeToTarget`](phasegrouppreset/timetotarget.md).
+- `timeToReset`: A duration in which the framework restores the group’s original state. See [`timeToReset`](phasegrouppreset/timetoreset.md).
 
 
 ---

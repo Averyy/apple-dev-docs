@@ -22,9 +22,9 @@ func tensor(forFunction function: String? = nil, argument: String, fillKnownDyna
 
 ## Parameters
 
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
-- `fillKnownDynamicShapes`: A Boolean value that specifies whether the function should replace any dynamic shapes for the next execution of the context. BNNS derives these shapes either from the default shapes in the source model, or from preceding calls to   or  . If BNNS is unable to derive the shapes, the function sets the dimensions to  .
+- `fillKnownDynamicShapes`: A Boolean value that specifies whether the function should replace any dynamic shapes for the next execution of the context. BNNS derives these shapes either from the default shapes in the source model, or from preceding calls to [`setDynamicShapes(_:forFunction:)`](bnnsgraph/context/setdynamicshapes(_:forfunction:).md) or `/Accelerate/BNNSGraph/Context/setBatchSize(_:forFunction:)`. If BNNS is unable to derive the shapes, the function sets the dimensions to `-1`.
 
 ## See Also
 

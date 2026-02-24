@@ -26,7 +26,7 @@ This method treats the length of the string as a valid range value that returns 
 
 ## Parameters
 
-- `range`: The range of characters to delete.   must not exceed the bounds of the receiver.
+- `range`: The range of characters to delete. `range` must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if any part of `range` lies beyond the end of the string.
 
 ## See Also
 

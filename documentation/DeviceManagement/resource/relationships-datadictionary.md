@@ -13,6 +13,10 @@
 object Resource.Relationships
 ```
 
+## Properties
+
+- `Any Key` (Relationship)
+
 ## See Also
 
 - [object View](view.md)

@@ -32,7 +32,7 @@ For more information on implementing an interactive animator object, see [`UIVie
 
 ## Parameters
 
-- `animator`: The transition animator object returned by your   method.
+- `animator`: The transition animator object returned by your [`animationController(forPresented:presenting:source:)`](uiviewcontrollertransitioningdelegate/animationcontroller(forpresented:presenting:source:).md) method.
 
 ## See Also
 

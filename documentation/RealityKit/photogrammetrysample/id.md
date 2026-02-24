@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Unique identifier for the sample.  This `id`  be in the domain [0, 2147483647].
+Unique identifier for the sample.  This `id` *must* be in the domain [0, 2147483647].
 
 **Availability**:
 - iOS 17.0+

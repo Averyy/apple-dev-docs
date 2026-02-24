@@ -26,8 +26,8 @@ The updated `Range` that is valid after the mutation has been performed, or `nil
 
 ## Parameters
 
-- `range`: A range to track throughout the   block.
-- `body`: A mutating operation, or set of operations, to perform on this  .
+- `range`: A range to track throughout the `body` block.
+- `body`: A mutating operation, or set of operations, to perform on this `AttributedString`.
 
 
 ---

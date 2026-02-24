@@ -20,7 +20,7 @@ func write(toFile path: String?) -> Bool
 
 ## Parameters
 
-- `path`: If   includes a filename, this method saves the file under that name. If   is  ,  the file is saved as listname  in the user’s private colorlists directory.
+- `path`: The path at which to save the color list. If `path` is a directory, the receiver is saved in a file named listname`.clr` in that directory (where listname is the name with which the receiver was initialized). If `path` includes a filename, this method saves the file under that name. If `path` is `nil`,  the file is saved as listname`.clr` in the user’s private colorlists directory.
 
 ## See Also
 

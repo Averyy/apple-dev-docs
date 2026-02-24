@@ -25,7 +25,7 @@ The getCommand method is used to get a pointer to an object of type IOCommand fr
 
 ## Parameters
 
-- `blockForCommand`: If the caller would like to have its thread slept until a command is   available, it should pass true, else false.
+- `blockForCommand`: If the caller would like to have its thread slept until a command is available, it should pass true, else false.
 
 
 ---

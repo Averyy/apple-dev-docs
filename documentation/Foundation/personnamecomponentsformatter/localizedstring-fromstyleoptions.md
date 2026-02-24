@@ -31,8 +31,8 @@ This method is a convenience for formatting name components without creating an 
 ## Parameters
 
 - `components`: The name components to be formatted.
-- `nameFormatStyle`: A format style for the name components. For possible values, see  .
-- `nameOptions`: The formatting options for the name components. For possible values, see  .
+- `nameFormatStyle`: A format style for the name components. For possible values, see [`PersonNameComponentsFormatter.Style`](personnamecomponentsformatter/style-swift.enum.md).
+- `nameOptions`: The formatting options for the name components. For possible values, see [`PersonNameComponentsFormatter.Options`](personnamecomponentsformatter/options.md).
 
 ## See Also
 

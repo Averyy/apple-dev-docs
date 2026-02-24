@@ -26,10 +26,24 @@ This method records the specified `target` and `action` values and prepares the 
 
 The `action` method must have one of the following signatures:
 
+**Swift**:
+
+```swift
+func handleGesture() { }
+func handleGesture(gestureRecognizer: NSGestureRecognizer) { }
+```
+
+**Objective-C**:
+
+```objc
+- (void)handleGesture;
+- (void)handleGesture:(NSGestureRecognizer *)gestureRecognizer;
+```
+
 ## Parameters
 
-- `target`: The object whose action method is called when the gesture is recognized. You must not specify   for this parameter.
-- `action`: A selector that identifies the method to call when the gesture is recognized. This method must be implemented by the object in  . You must not specify   for this parameter.
+- `target`: The object whose action method is called when the gesture is recognized. You must not specify `nil` for this parameter.
+- `action`: A selector that identifies the method to call when the gesture is recognized. This method must be implemented by the object in `target`. You must not specify `nil` for this parameter.
 
 ## See Also
 

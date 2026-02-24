@@ -20,7 +20,7 @@ An array of window numbers for all visible windows satisfying the specified opti
 
 ## Parameters
 
-- `options`: The possible options are specified in  .
+- `options`: The possible options are specified in [`NSWindow.NumberListOptions`](nswindow/numberlistoptions.md).
 
 ## See Also
 

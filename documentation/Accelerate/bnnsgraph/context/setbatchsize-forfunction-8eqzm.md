@@ -31,7 +31,7 @@ This function has no effect if you pass a `batchSize` value that’s less than z
 ## Parameters
 
 - `batchSize`: The batch size.
-- `function`: The specific function to set shapes for. You may set this to   if there is only one function.
+- `function`: The specific function to set shapes for. You may set this to `nil` if there is only one function.
 
 
 ---

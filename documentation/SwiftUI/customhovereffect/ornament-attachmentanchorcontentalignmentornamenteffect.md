@@ -21,7 +21,7 @@ Use this method to present an ornament at the specified position when the view i
 
 ## Parameters
 
-- `attachmentAnchor`: The positioning anchor that defines the   attachment point of the ornament.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the ornament.
 - `contentAlignment`: The alignment of the ornament with its attachment anchor.
 - `ornament`: The content of the ornament.
 - `effect`: The effect used to present the ornament.

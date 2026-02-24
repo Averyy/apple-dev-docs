@@ -26,7 +26,10 @@ The session calls `completionHandler` on the dispatch queue that you provided wh
 ## Parameters
 
 - `apdu`: An application protocol data unit to send to the tag.
-- `completionHandler`: A handler that the reader session invokes after the operation completes. The handler has the following parameters:
+- `completionHandler`: A handler that the reader session invokes after the operation completes. The handler has the following parameters: - **responseData**: The response data, which may be empty even if the operation completes successfully.
+- **sw1**: The SW1 command-processing status byte. This value is always valid.
+- **sw2**: The SW2 command-processing status byte. This value is always valid.
+- **error**: `nil` when the operation completes successfully; otherwise, an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object when there’s a communication issue with the tag.
 
 ## See Also
 

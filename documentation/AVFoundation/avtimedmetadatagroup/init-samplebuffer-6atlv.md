@@ -26,7 +26,7 @@ An instance of `AVTimedMetadataGroup`.
 
 ## Parameters
 
-- `sampleBuffer`: A   with media type  .
+- `sampleBuffer`: A [`CMReadySampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMReadySampleBuffer) with media type [`kCMMediaType_Metadata`](https://developer.apple.com/documentation/CoreMedia/kCMMediaType_Metadata).
 
 ## See Also
 

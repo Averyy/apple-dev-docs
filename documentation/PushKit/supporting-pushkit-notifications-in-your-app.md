@@ -20,6 +20,28 @@ Apps must have the proper entitlements to receive push notifications. To create 
 
 The system can’t deliver push notifications to your app until you create a [`PKPushRegistry`](pkpushregistry.md) object and specify the types of notifications you support. Typically, you create this object at launch time and store a reference to it for the duration of your app’s runtime. The following example shows how to create this object and configure it with the Voice-over-IP (VoIP) push type. During configuration, always specify a delegate object to receive notifications.
 
+**Swift**:
+
+```swift
+func registerForVoIPPushes() {
+    self.voipRegistry = PKPushRegistry(queue: nil)
+    self.voipRegistry.delegate = self
+    self.voipRegistry.desiredPushTypes = [.voIP]
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void) registerForVoIPPushes {
+   self.voipRegistry = [[PKPushRegistry alloc] initWithQueue:nil];
+   self.voipRegistry.delegate = self;
+ 
+   // Initiate registration.
+   self.voipRegistry.desiredPushTypes = [NSSet setWithObject:PKPushTypeVoIP];
+   }
+```
+
 Assigning a value to the [`desiredPushTypes`](pkpushregistry/desiredpushtypes.md) property begins the registration process, so always update that property last. The server reports the success or failure of the registration process to your delegate object.
 
 ##### Send the Device Token to Your Server

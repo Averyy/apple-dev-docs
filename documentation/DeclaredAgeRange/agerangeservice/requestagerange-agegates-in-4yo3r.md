@@ -33,7 +33,7 @@ The system may return geo-specific age ranges that override your provided age ga
 - `threshold1`: The primary age gate for your app.
 - `threshold2`: An optional second age gate for additional content tiers.
 - `threshold3`: An optional third age gate for further content differentiation.
-- `window`: The window that anchors the system UI presentation. The system UI appears as a sheet   or popover attached to this window.
+- `window`: The window that anchors the system UI presentation. The system UI appears as a sheet or popover attached to this window.
 
 ## See Also
 

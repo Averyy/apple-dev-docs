@@ -47,7 +47,7 @@ Capsule()
 ## Parameters
 
 - `content`: The color or gradient with which to stroke this shape.
-- `style`: The stroke characteristics — such as the line’s width and   whether the stroke is dashed — that determine how to render this   shape.
+- `style`: The stroke characteristics — such as the line’s width and whether the stroke is dashed — that determine how to render this shape.
 
 ## See Also
 

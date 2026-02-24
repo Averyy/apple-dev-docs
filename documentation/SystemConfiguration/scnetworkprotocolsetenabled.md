@@ -21,7 +21,7 @@ func SCNetworkProtocolSetEnabled(_ protocol: SCNetworkProtocol, _ enabled: Bool)
 ## Parameters
 
 - `protocol`: The network protocol to enable or disable.
-- `enabled`:   if the protocol should be enabled.
+- `enabled`: `TRUE` if the protocol should be enabled.
 
 ## See Also
 

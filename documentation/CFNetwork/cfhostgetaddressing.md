@@ -29,8 +29,8 @@ This function gets the addresses in a thread-safe way, but the resulting data is
 
 ## Parameters
 
-- `theHost`: The CFHost whose addresses are to be obtained. This value must not be  .
-- `hasBeenResolved`: On return, a pointer to a Boolean that is   if addresses were available and   if addresses were not available. This parameter can be null.
+- `theHost`: The CFHost whose addresses are to be obtained. This value must not be `NULL`.
+- `hasBeenResolved`: On return, a pointer to a Boolean that is `TRUE` if addresses were available and `FALSE` if addresses were not available. This parameter can be null.
 
 ## See Also
 

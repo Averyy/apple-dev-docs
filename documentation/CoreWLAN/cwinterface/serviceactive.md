@@ -16,7 +16,7 @@ func serviceActive() -> Bool
 
 #### Discussion
 
-Returns  in the case of an error.
+Returns *NO* in the case of an error.
 
 ## See Also
 

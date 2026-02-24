@@ -25,7 +25,7 @@ Use this method to confirm that the profile chosen by the user should become the
 ## Parameters
 
 - `profile`: The profile to associate with the current user.
-- `completion`: The completion handler to call with the results. This handler has no return value and takes the following parameter:
+- `completion`: The completion handler to call with the results. This handler has no return value and takes the following parameter: - **shouldCreateMapping**: A Boolean value indicating whether your app should associate the specified profile with the current user. If this parameter is [`true`](https://developer.apple.com/documentation/Swift/true), save the association in your app’s data structures.
 
 ## See Also
 

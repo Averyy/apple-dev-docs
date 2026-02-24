@@ -28,7 +28,7 @@ The manager invokes this method when a connection initiated with the [`connect(_
 
 - `central`: The central manager that provides this information.
 - `peripheral`: The peripheral that failed to connect.
-- `error`: The cause of the failure, or   if no error occurred.
+- `error`: The cause of the failure, or `nil` if no error occurred.
 
 ## See Also
 

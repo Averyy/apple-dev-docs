@@ -31,9 +31,12 @@ This is a convenience method for calling the [`enumerateTags(in:unit:scheme:opti
 ## Parameters
 
 - `range`: The range to analyze.
-- `tagScheme`: The tag scheme. For possible values, see  .
-- `opts`: The linguistic tagger options to use. See   for possible values.
-- `block`: The block takes the following arguments:
+- `tagScheme`: The tag scheme. For possible values, see [`NSLinguisticTagScheme`](nslinguistictagscheme.md).
+- `opts`: The linguistic tagger options to use. See [`NSLinguisticTagger.Options`](nslinguistictagger/options.md) for possible values.
+- `block`: The block to apply to ranges of the string. The block takes the following arguments: - **tag**: The located linguistic tag.
+- **tokenRange**: The range of the linguistic tag.
+- **sentenceRange**: The range of the sentence in which the tag occurs.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
 
 ## See Also
 

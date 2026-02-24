@@ -26,7 +26,7 @@ This method causes glyph generation but not layout. Block layout rectangles and 
 
 - `block`: The text block whose layout rectangle is returned.
 - `glyphIndex`: Index of the glyph.
-- `effectiveGlyphRange`: If not  , on output, the range for all glyphs in the text block.
+- `effectiveGlyphRange`: If not `NULL`, on output, the range for all glyphs in the text block.
 
 ## See Also
 

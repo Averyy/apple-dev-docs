@@ -27,7 +27,7 @@ Call this method when your app is in the foreground, otherwise it returns an err
 ## Parameters
 
 - `extensionIdentifiers`: An array of extension identifiers. If you specify one identifier, Settings opens to that extension’s detail view. If you specify multiple identifiers, Settings opens to the Safari Extensions pane and highlights those extensions.
-- `completionHandler`: The block the system calls after the operation completes, with an optional error parameter if an error occurs.
+- `completionHandler`: The block the system calls after the operation completes, with an optional error parameter if an error occurs. - **error**: An error object indicating the reason for the failure, or `nil` if the system successfully opens to Safari Extensions Settings.
 
 
 ---

@@ -10,6 +10,10 @@ A Boolean value indicating whether the app extension ignores appearance changes 
 - iPadOS 10.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionActionWantsFullScreenPresentation](information-property-list/nsextension/nsextensionactionwantsfullscreenpresentation.md)

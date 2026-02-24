@@ -30,7 +30,7 @@ In iOS 11 and later, it returns the standard browser interface. This interface i
 ## Parameters
 
 - `urls`: An array of documents that the document picked exports or moves.
-- `mode`: The type of file-transfer operation that the document picker performs. This argument accepts only the   or   mode.
+- `mode`: The type of file-transfer operation that the document picker performs. This argument accepts only the [`UIDocumentPickerMode.exportToService`](uidocumentpickermode/exporttoservice.md) or [`UIDocumentPickerMode.moveToService`](uidocumentpickermode/movetoservice.md) mode.
 
 ## See Also
 

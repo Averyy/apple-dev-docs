@@ -29,7 +29,7 @@ If the window is staying the same, the current window should be specified. If th
 
 - `movedTab`: The tab that was moved.
 - `index`: The old index of the tab within the window.
-- `oldWindow`: The window that the tab was moved from, or   if the tab is moving from no open window.
+- `oldWindow`: The window that the tab was moved from, or `nil` if the tab is moving from no open window.
 
 
 ---

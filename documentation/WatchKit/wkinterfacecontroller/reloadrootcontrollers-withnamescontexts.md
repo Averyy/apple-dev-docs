@@ -18,13 +18,13 @@ class func reloadRootControllers(withNames names: [String], contexts: [Any]?)
 
 Call this method to reload the pages in your app’s page-based interface:
 
--  Use this method to customize the set of pages you want displayed.
--  Use it to change the active set of pages, adding or removing pages as needed.
+- **At launch time.** Use this method to customize the set of pages you want displayed.
+- **At runtime.** Use it to change the active set of pages, adding or removing pages as needed.
 
 ## Parameters
 
-- `names`: An array of   objects, each of which contains the identifier of an interface controller in your storyboard file. The order of the identifiers in the array defines the order of the corresponding interface controllers in the page-based interface.
-- `contexts`: An array of objects of type  . Use this parameter to pass context objects to each of the interface controllers loaded into the page-based interface. The first object in the array is passed to the first interface controller, the second object is passed to the second interface controller, and so on.
+- `names`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains the identifier of an interface controller in your storyboard file. The order of the identifiers in the array defines the order of the corresponding interface controllers in the page-based interface.
+- `contexts`: An array of objects of type `id`. Use this parameter to pass context objects to each of the interface controllers loaded into the page-based interface. The first object in the array is passed to the first interface controller, the second object is passed to the second interface controller, and so on.
 
 ## See Also
 

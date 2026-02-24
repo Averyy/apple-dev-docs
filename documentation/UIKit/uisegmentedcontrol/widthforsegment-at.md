@@ -24,7 +24,7 @@ A float value specifying the width of the segment. If the value is {0.0}, [`UISe
 
 ## Parameters
 
-- `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ( ) minus 1; the segmented control pins values exceeding this upper range to the last segment.
+- `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) minus 1; the segmented control pins values exceeding this upper range to the last segment.
 
 ## See Also
 

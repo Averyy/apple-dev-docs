@@ -43,7 +43,7 @@ Each [`WKNotificationScene`](wknotificationscene.md) declaration references a [`
 
 ## Parameters
 
-- `controller`: The type of   to   display upon receipt of the specified notification category.
+- `controller`: The type of [`WKUserNotificationHostingController`](wkusernotificationhostingcontroller.md) to display upon receipt of the specified notification category.
 - `category`: The category of notifications to listen for.
 
 

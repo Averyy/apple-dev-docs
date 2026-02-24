@@ -26,8 +26,8 @@ A metadata group initialized with `items`.
 
 ## Parameters
 
-- `items`: An array of   objects.
-- `timeRange`: The time range of the metadata contained in  .
+- `items`: An array of [`AVMetadataItem`](avmetadataitem.md) objects.
+- `timeRange`: The time range of the metadata contained in `items`.
 
 ## See Also
 

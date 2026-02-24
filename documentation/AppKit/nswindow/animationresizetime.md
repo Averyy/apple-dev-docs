@@ -26,7 +26,7 @@ The `NSWindow` implementation uses the value from the `NSWindowResizeTime` user 
 
 ## Parameters
 
-- `newFrame`: The frame rectangle specified in  .
+- `newFrame`: The frame rectangle specified in [`setFrame(_:display:animate:)`](nswindow/setframe(_:display:animate:).md).
 
 ## See Also
 

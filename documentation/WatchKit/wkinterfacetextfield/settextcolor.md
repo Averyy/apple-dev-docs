@@ -20,7 +20,7 @@ This method defines the default color of the entire string. The text field uses 
 
 ## Parameters
 
-- `color`: The color to be applied to the text field’s text. Specifying   removes the color and returns the text to the color specified in the storyboard file. The default color is white.
+- `color`: The color to be applied to the text field’s text. Specifying `nil` removes the color and returns the text to the color specified in the storyboard file. The default color is white.
 
 ## See Also
 

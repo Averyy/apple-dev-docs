@@ -28,7 +28,7 @@ The credential is removed from both persistent and temporary storage.
 
 - `credential`: The credential to remove.
 - `protectionSpace`: The protection space from which to remove the credential.
-- `options`: For possible keys, see  . You should use this when trying to delete a credential that has the   policy.
+- `options`: A dictionary containing options to consider when removing the credential. For possible keys, see [`Dictionary key for credential removal options`](dictionary-key-for-credential-removal-options.md). You should use this when trying to delete a credential that has the [`URLCredential.Persistence.synchronizable`](urlcredential/persistence-swift.enum/synchronizable.md) policy. > **Note**:  When credential objects that have a `synchronizable` policy are removed, the credential will be removed on all devices that contain this credential.
 - `task`: The task using the protection space that you wish to remove the credential for.
 
 ## See Also

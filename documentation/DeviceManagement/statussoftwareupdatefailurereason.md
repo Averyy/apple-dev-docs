@@ -37,6 +37,10 @@ object StatusSoftwareUpdateFailureReason
 - [object StatusSoftwareUpdateFailureReasonDictionaryObject](statussoftwareupdatefailurereasondictionaryobject.md)
   A dictionary that contains details about a software update failure.
 
+## Properties
+
+- `softwareupdate.failure-reason` (StatusSoftwareUpdateFailureReasonDictionaryObject) *(required)*: Details about a software update failure.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

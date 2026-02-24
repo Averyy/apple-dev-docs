@@ -26,8 +26,8 @@ A newly created Safari view controller.
 
 ## Parameters
 
-- `URL`: The URL to navigate to. The URL must use the   or   scheme.
-- `entersReaderIfAvailable`: On output,   if Reader mode should be entered automatically when it is available for the webpage; otherwise,  .
+- `URL`: The URL to navigate to. The URL must use the `http` or `https` scheme.
+- `entersReaderIfAvailable`: On output, [`true`](https://developer.apple.com/documentation/Swift/true) if Reader mode should be entered automatically when it is available for the webpage; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -22,7 +22,7 @@ convenience init(string: String, attributes: [NSAttributedString.Key : Any] = [:
 
 - `string`: An attributed string.
 - `attributes`: A dictionary of attributes.
-- `range`: The range to use from  .
+- `range`: The range to use from `string`.
 
 ## See Also
 

@@ -24,7 +24,7 @@ An [`MLClassifierMetrics`](mlclassifiermetrics.md) instance that contains the ev
 
 ## Parameters
 
-- `testingData`: A collection of labeled audio files represented by an  .
+- `testingData`: A collection of labeled audio files represented by an [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md).
 
 ## See Also
 

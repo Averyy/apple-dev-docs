@@ -42,7 +42,7 @@ When the user initially grants authorization to your app, the system gives your 
 
 ## Parameters
 
-- `completionHandler`: The block to execute asynchronously with the results. Your app may execute this block on a background thread. The block has no return value and takes the following parameter:
+- `completionHandler`: The block to execute asynchronously with the results. Your app may execute this block on a background thread. The block has no return value and takes the following parameter: - **settings**: The [`UNNotificationSettings`](unnotificationsettings.md) object containing the current authorization settings for your app.
 
 ## See Also
 

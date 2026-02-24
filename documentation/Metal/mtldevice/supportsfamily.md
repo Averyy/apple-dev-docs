@@ -28,7 +28,7 @@ func supportsFamily(_ gpuFamily: MTLGPUFamily) -> Bool
 
 ## Parameters
 
-- `gpuFamily`: An   instance.
+- `gpuFamily`: An [`MTLGPUFamily`](mtlgpufamily.md) instance.
 
 ## See Also
 

@@ -52,7 +52,7 @@ On return, the `results[0]` tensor contains the values `[11.0, 12.0, 13.0, 14.0,
 
 - `name`: The name of the tensor.
 - `values`: The tensor values that the function copies into the compiled context.
-- `shape`: An array of integers that define the sizes of each dimension of the tensor. Set to    to specify that this function returns a vector that countains   elements.
+- `shape`: An array of integers that define the sizes of each dimension of the tensor. Set to `nil` to specify that this function returns a vector that countains `values.count` elements.
 
 
 ---

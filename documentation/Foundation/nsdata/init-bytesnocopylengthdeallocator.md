@@ -33,8 +33,8 @@ In order to avoid any inadvertent strong reference cycles, you should avoid capt
 ## Parameters
 
 - `bytes`: A buffer containing data for the new object.
-- `length`: The number of bytes to hold from  . This value must not exceed the length of  .
-- `deallocator`: A block to invoke when the resulting   object is deallocated.
+- `length`: The number of bytes to hold from `bytes`. This value must not exceed the length of `bytes`.
+- `deallocator`: A block to invoke when the resulting `NSData` object is deallocated.
 
 ## See Also
 

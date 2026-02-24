@@ -32,7 +32,7 @@ var body: some View {
 ## Parameters
 
 - `payloadType`: The expected type of the imported models.
-- `action`: A closure that will be called with the imported service   item. Return   to indicate that there was a failure to receive   the items.
+- `action`: A closure that will be called with the imported service item. Return `false` to indicate that there was a failure to receive the items.
 
 ## See Also
 

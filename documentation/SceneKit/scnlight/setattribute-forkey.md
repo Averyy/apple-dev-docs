@@ -29,7 +29,7 @@ You can also set or animate changes to the values of lighting attributes using [
 ## Parameters
 
 - `attribute`: The value for the lighting attribute.
-- `key`: A constant specifying a lighting attribute. See   for available keys and their possible values.
+- `key`: A constant specifying a lighting attribute. See [`Lighting Attribute Keys`](lighting-attribute-keys.md) for available keys and their possible values.
 
 ## See Also
 

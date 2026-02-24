@@ -27,7 +27,7 @@ The protocol you want to add to (`proto`) must be under construction—allocated
 ## Parameters
 
 - `proto`: The protocol you want to add the registered protocol to.
-- `addition`: The registered protocol you want to add to  .
+- `addition`: The registered protocol you want to add to `proto`.
 
 ## See Also
 

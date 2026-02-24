@@ -23,9 +23,9 @@ init(http3RelayEndpoint: NWEndpoint, http2RelayEndpoint: NWEndpoint? = nil, tlsO
 ## Parameters
 
 - `http3RelayEndpoint`: A URL or host endpoint identifying the relay server accessible using HTTP/3.
-- `http2RelayEndpoint`: An optional URL or host endpoint identifying the relay server accessible using HTTP/2. This can be the same endpoint as  .
+- `http2RelayEndpoint`: An optional URL or host endpoint identifying the relay server accessible using HTTP/2. This can be the same endpoint as `http3RelayEndpoint`.
 - `tlsOptions`: The TLS options to use for the TLS handshake to the relay.
-- `additionalHTTPHeaderFields`: A dictionary of additional HTTP headers to send as part of   requests to the relay.
+- `additionalHTTPHeaderFields`: A dictionary of additional HTTP headers to send as part of `CONNECT` requests to the relay.
 
 ## See Also
 

@@ -28,7 +28,7 @@ This method automatically saves the current graphics state prior to drawing and 
 ## Parameters
 
 - `blendMode`: The blend mode determines how the stroked path is composited with any existing rendered content.
-- `alpha`: The amount of transparency to apply to the stroked path. Values can range between   (transparent) and   (opaque). Values outside this range are clamped to   or  .
+- `alpha`: The amount of transparency to apply to the stroked path. Values can range between `0.0` (transparent) and `1.0` (opaque). Values outside this range are clamped to `0.0` or `1.0`.
 
 ## See Also
 

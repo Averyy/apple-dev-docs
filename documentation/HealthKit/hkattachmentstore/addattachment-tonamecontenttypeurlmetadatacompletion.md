@@ -58,7 +58,8 @@ You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md
 - `contentType`: The type of data stored in the attachment.
 - `url`: The url for the attachment. This must be a local file url.
 - `metadata`: Additional data associated with the attachment.
-- `completion`: A completion handler that the system calls after adding the attachment. This handler takes the following parameters:
+- `completion`: A completion handler that the system calls after adding the attachment. This handler takes the following parameters: - **attachment**: An object that represents the attachment. If an error occurred, the system sets this parameter to `nil`.
+- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 ## See Also
 

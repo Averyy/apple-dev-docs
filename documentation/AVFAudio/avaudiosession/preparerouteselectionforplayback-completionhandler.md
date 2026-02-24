@@ -34,7 +34,8 @@ session.prepareRouteSelectionForPlayback { shouldStartPlayback, routeSelection i
 
 ## Parameters
 
-- `completionHandler`: A completion handler called after the system finishes preparing the playback route. The system passes the completion handler the following parameters:
+- `completionHandler`: A completion handler called after the system finishes preparing the playback route. The system passes the completion handler the following parameters: - **`shouldStartPlayback`**: A Boolean value that indicates whether playback should start.
+- **`routeSelection`**: A route selection value that indicates the active playback route.
 
 ## See Also
 

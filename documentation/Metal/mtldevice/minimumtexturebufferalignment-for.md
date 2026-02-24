@@ -26,7 +26,7 @@ Metal aligns textures to their minimum alignment value, which directly affects t
 
 ## Parameters
 
-- `format`: An   instance.
+- `format`: An [`MTLPixelFormat`](mtlpixelformat.md) instance.
 
 ## See Also
 

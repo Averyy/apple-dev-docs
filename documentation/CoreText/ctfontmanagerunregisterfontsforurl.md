@@ -27,7 +27,7 @@ Returns `true` if unregistration of the fonts was successful, otherwise `false`.
 ## Parameters
 
 - `fontURL`: The font URL.
-- `scope`: Scope constant defining the availability and lifetime of the registration. See   for values to pass for this parameter.
+- `scope`: Scope constant defining the availability and lifetime of the registration. See [`CTFontManagerScope`](ctfontmanagerscope.md) for values to pass for this parameter.
 - `error`: Pointer to a CFError object which, in case of failed registration, contains error information.
 
 ## See Also

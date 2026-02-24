@@ -25,8 +25,8 @@ A valid MPSGraphTensor object
 
 ## Parameters
 
-- `incomingGradient`: A 2D input gradient tensor - must be of rank=4. The layout is defined by  .
-- `source`: A 2D Image source as tensor - must be of rank=4. The layout is defined by  .
+- `incomingGradient`: A 2D input gradient tensor - must be of rank=4. The layout is defined by `descriptor.dataLayout`.
+- `source`: A 2D Image source as tensor - must be of rank=4. The layout is defined by `descriptor.dataLayout`.
 - `outputShape`: The shape of the οutput tensor (and therefore weight tensor of forward pass).
 - `descriptor`: The descriptor object that specifies strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.

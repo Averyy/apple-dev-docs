@@ -20,9 +20,9 @@ init(selection: Binding<CGColor>, supportsOpacity: Bool = true, @ViewBuilder lab
 
 ## Parameters
 
-- `selection`: A   to the variable that displays the   selected  .
-- `supportsOpacity`: A Boolean value that indicates whether the color   picker allows adjusting the selected color’s opacity; the default   is  .
-- `label`: A view that describes the use of the selected color.   The system color picker UI sets it’s title using the text from   this view.
+- `selection`: A [`Binding`](binding.md) to the variable that displays the selected `CGColor`.
+- `supportsOpacity`: A Boolean value that indicates whether the color picker allows adjusting the selected color’s opacity; the default is `true`.
+- `label`: A view that describes the use of the selected color. The system color picker UI sets it’s title using the text from this view.
 
 ## See Also
 

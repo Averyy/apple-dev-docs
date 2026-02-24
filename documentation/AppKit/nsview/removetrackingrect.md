@@ -16,7 +16,7 @@ func removeTrackingRect(_ tag: NSView.TrackingRectTag)
 
 ## Parameters
 
-- `tag`: An integer value identifying a tracking rectangle. It was returned by a previously sent   message.
+- `tag`: An integer value identifying a tracking rectangle. It was returned by a previously sent [`addTrackingRect(_:owner:userData:assumeInside:)`](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md) message.
 
 ## See Also
 

@@ -10,6 +10,10 @@ A collection of properties that explains your appâ€™s need to observe the userâ€
 - iPadOS 16.4+
 - Mac Catalyst 16.4+
 
+
+
+**Type**: object
+
 #### Discussion
 
 This key is a possible member of the [`NSSensorKitUsageDetail`](information-property-list/nssensorkitusagedetail.md) dictionary.

@@ -6,15 +6,15 @@ Choose a suitable GPU and memory storage mode for tasks based on that GPU’s me
 
 #### Overview
 
-GPU memory  is a measure of the data transfer speed between a GPU and the system across a bus, such as PCI Express (PCIe) or Thunderbolt. It’s important to consider the bandwidth of each GPU in a system when developing your high-performance Metal apps. A GPU that’s powerful on its own may not be the optimal choice for certain tasks if it has a relatively low bandwidth connection to the system.
+GPU memory *bandwidth* is a measure of the data transfer speed between a GPU and the system across a bus, such as PCI Express (PCIe) or Thunderbolt. It’s important to consider the bandwidth of each GPU in a system when developing your high-performance Metal apps. A GPU that’s powerful on its own may not be the optimal choice for certain tasks if it has a relatively low bandwidth connection to the system.
 
 ##### Consider How a Gpu Connects to the System
 
 A GPU’s bandwidth largely depends on the bus that connects it to a system:
 
-- An  GPU connects to a system though an external Thunderbolt 3 bus.
-- A  GPU is a built-in GPU that has video memory (separate memory that only the GPU can access) and connects to a system through an internal PCIe bus.
-- An  GPU is a built-in GPU that uses system memory and shares the bus with the CPU.
+- An *external* GPU connects to a system though an external Thunderbolt 3 bus.
+- A *discrete* GPU is a built-in GPU that has video memory (separate memory that only the GPU can access) and connects to a system through an internal PCIe bus.
+- An *integrated* GPU is a built-in GPU that uses system memory and shares the bus with the CPU.
 
 ![A system diagram that shows an iMac Pro and its connections to both a built-in discrete GPU and an external GPU. The discrete GPU connects to the iMac through an internal PCIe bus, and the external GPU connects through an external Thunderbolt 3 bus.](https://docs-assets.developer.apple.com/published/83c1259137eebf0aa4587150be955e6b/adjusting-for-gpu-memory-bandwidth-tradeoffs-1%402x.png)
 
@@ -27,6 +27,10 @@ Additionally, transferring data from one GPU to another can be even more expensi
 ##### Select the Appropriate Storage Mode for Your Resources
 
 You can minimize the bandwidth costs — the number of data transfers across a bus — by selecting an appropriate storage mode for your app’s resources. For more information about selecting a storage mode for specific GPUs, see [`Choosing a resource storage mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md) and [`Choosing a resource storage mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md). Metal uses a resource’s storage mode to determine which memory location to save it in. The storage mode options for a resource include the following:
+
+- **[`MTLStorageMode.shared`](mtlstoragemode/shared.md)**: Shared resources reside in system memory and are slow to access for discrete and external GPUs.
+- **[`MTLStorageMode.private`](mtlstoragemode/private.md)**: Private resources reside in video memory and are fast to access for discrete and external GPUs.
+- **[`MTLStorageMode.managed`](mtlstoragemode/managed.md)**: Managed resources reside in both system and video memory (dual copies) and are fast to access for discrete and external GPUs.
 
 Discrete and external GPUs have the highest data transfer costs when they access a shared resource because their access to system memory is relatively slow.
 
@@ -44,7 +48,7 @@ You can keep the copies in sync by efficiently running sparse blit operations (s
 
 ##### Render a Drawable on the Same Gpu That Drives the Destination Display
 
-In Metal, a , represented by [`MTLDrawable`](mtldrawable.md), is a type that bridges Metal and [`Core Animation`](https://developer.apple.com/documentation/QuartzCore). Each drawable contains a texture that your apps can render with Metal and then present on a device’s display using Core Animation.
+In Metal, a *drawable*, represented by [`MTLDrawable`](mtldrawable.md), is a type that bridges Metal and [`Core Animation`](https://developer.apple.com/documentation/QuartzCore). Each drawable contains a texture that your apps can render with Metal and then present on a device’s display using Core Animation.
 
 Presenting a drawable on a display can have significant bandwidth costs if the drawable belongs to a GPU that doesn’t drive the display. Only one GPU can drive a display, whether it’s built in or external, and the fastest path to present a drawable to a display is to render that drawable with the same GPU that drives the display. Otherwise, the system has to transfer the drawable from the GPU that renders it to the GPU that drives the display.
 

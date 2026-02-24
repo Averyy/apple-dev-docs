@@ -25,7 +25,7 @@ func isCredentialSet(_ type: LACredentialType) -> Bool
 
 ## Parameters
 
-- `type`: The type of the credential. For possible values, see 
+- `type`: The type of the credential. For possible values, see [`LACredentialType`](lacredentialtype.md)
 
 ## See Also
 

@@ -24,7 +24,39 @@ func vvcopysignf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Uns
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The magnitude input array, *y*.
+- **parameter 3**: The sign input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvcopysignf(_:_:_:_:)`](vvcopysignf(_:_:_:_:).md).
+
+**Swift**:
+
+```swift
+var x: [Float] = [-1, -1, 1, 1]
+var y: [Float] = [1.2, 5.5, -16, 26.0]
+var z = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvcopysignf(&z, &y, &x, &n) 
+ 
+print(z) // [-1.2, -5.5, 16.0, 26.0]
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {-1, -1, 1, 1};
+float y[] = {1.2, 5.5, -16, 26.0};
+float z[4];
+int n = 4;
+ 
+vvcopysignf(z, y, x, &n);
+ 
+NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+
+```
 
 ## See Also
 

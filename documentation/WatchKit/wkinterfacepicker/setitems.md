@@ -22,7 +22,7 @@ This method displays the new items in the picker right away. If the previously s
 
 ## Parameters
 
-- `items`: An array of   objects. Each item in the array represents a single selectable item.
+- `items`: An array of [`WKPickerItem`](wkpickeritem.md) objects. Each item in the array represents a single selectable item.
 
 ## See Also
 

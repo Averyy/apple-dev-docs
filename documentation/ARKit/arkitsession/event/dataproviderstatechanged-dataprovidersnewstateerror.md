@@ -19,7 +19,7 @@ case dataProviderStateChanged(dataProviders: [any DataProvider], newState: DataP
 
 - `dataProviders`: The data providers whose state has changed.
 - `newState`: The new data provider state, which triggered the event.
-- `error`: An   associated with the state change, if any. This is only applicable to   updates.
+- `error`: An `ARKitSession.Error` associated with the state change, if any. This is only applicable to `DataProviderState.stopped` updates.
 
 
 ---

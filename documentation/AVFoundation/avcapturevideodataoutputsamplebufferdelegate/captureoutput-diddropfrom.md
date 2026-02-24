@@ -30,7 +30,7 @@ Because this method is called on the same dispatch queue that is responsible for
 ## Parameters
 
 - `output`: The capture output object.
-- `sampleBuffer`: This sample buffer contains none of the original video data.
+- `sampleBuffer`: A `CMSampleBuffer` object containing information about the dropped frame, such as its format and presentation time. This sample buffer contains none of the original video data.
 - `connection`: The connection from which the video was received.
 
 ## See Also

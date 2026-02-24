@@ -43,8 +43,8 @@ let formatted = date.formatted(
 
 ## Parameters
 
-- `format`: A   that provides the explicit components and their respective styles to use when formatting a date.
-- `locale`: The locale to use when formatting. Defaults to  .
+- `format`: A [`Date.FormatString`](date/formatstring.md) that provides the explicit components and their respective styles to use when formatting a date.
+- `locale`: The locale to use when formatting. Defaults to `nil`.
 - `timeZone`: The time zone to use when formatting.
 - `calendar`: The calendar to use when formatting.
 

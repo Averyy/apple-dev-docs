@@ -77,8 +77,8 @@ Map(selection: $selectedIdMap) {
 
 To ensure that the app’s interface remains approachable, the app limits how many earthquakes it displays based on:
 
--  — To avoid overwhelming the map with too many markers, the app displays only one day’s worth of earthquakes at a time. People can choose which day to view.
--  — To enable people to focus on specific earthquakes, people can enter text in a search field that the app matches against earthquake location names.
+- **A date** — To avoid overwhelming the map with too many markers, the app displays only one day’s worth of earthquakes at a time. People can choose which day to view.
+- **A location name** — To enable people to focus on specific earthquakes, people can enter text in a search field that the app matches against earthquake location names.
 
 To implement this filtering, the app defines a static method that returns a [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) that takes into account both a search date and search text:
 

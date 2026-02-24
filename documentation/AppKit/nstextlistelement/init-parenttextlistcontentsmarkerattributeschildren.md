@@ -16,11 +16,11 @@ init(parent: NSTextListElement?, textList: NSTextList, contents: NSAttributedStr
 
 ## Parameters
 
-- `parent`: The parent   of this element, if any.
-- `textList`: The   to add elements to.
-- `contents`: An   that contains the contents of the text list element.
-- `markerAttributes`: A dictionary of   keys and IDs that describe the marker attributes.
-- `children`: An array of   elements.
+- `parent`: The parent `NSTextListElement` of this element, if any.
+- `textList`: The [`NSTextList`](nstextlist.md) to add elements to.
+- `contents`: An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) that contains the contents of the text list element.
+- `markerAttributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) keys and IDs that describe the marker attributes.
+- `children`: An array of [`NSTextListElement`](nstextlistelement.md) elements.
 
 ## See Also
 

@@ -13,6 +13,12 @@
 object Apps.Attributes.Offers.Assets
 ```
 
+## Properties
+
+- `duration` (number)
+- `hlsUrl` (string)
+- `size` (number)
+
 ## See Also
 
 - [object Apps.Attributes.Offers.Discounts](apps/attributes-data.dictionary/offers-data.dictionary/discounts-data.dictionary.md)

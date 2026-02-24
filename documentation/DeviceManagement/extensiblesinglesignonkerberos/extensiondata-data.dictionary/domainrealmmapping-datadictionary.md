@@ -17,6 +17,10 @@ The mapping of realms to their DNS suffixes.
 object ExtensibleSingleSignOnKerberos.ExtensionData.DomainRealmMapping
 ```
 
+## Properties
+
+- `Realm` ([string]): The key should be the name of the realm, and the value is an array of DNS suffixes that map to the realm.
+
 
 ---
 

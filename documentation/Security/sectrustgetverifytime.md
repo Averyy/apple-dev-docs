@@ -36,7 +36,7 @@ It is safe to call this function concurrently on two or more threads as long as 
 
 ## Parameters
 
-- `trust`: The trust management object whose verification time you want to get. A trust management object includes one or more certificates plus the policy or policies to be used in evaluating trust. Use the   function to create a trust management object.
+- `trust`: The trust management object whose verification time you want to get. A trust management object includes one or more certificates plus the policy or policies to be used in evaluating trust. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
 
 ## See Also
 

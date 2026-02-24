@@ -26,7 +26,7 @@ A new transition.
 
 ## Parameters
 
-- `direction`: The direction of the reveal. Possible values are described in  .
+- `direction`: The direction of the reveal. Possible values are described in [`SKTransitionDirection`](sktransitiondirection.md).
 - `sec`: The duration of the transition.
 
 ## See Also

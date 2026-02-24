@@ -57,8 +57,10 @@ store.execute(query)
 ## Parameters
 
 - `queryDescriptors`: An array of descriptors that specify the types of samples that the query returns.
-- `limit`: The maximum number of samples that the query return. If you want to return all matching samples, use  .
-- `resultsHandler`: This block takes the following parameters:
+- `limit`: The maximum number of samples that the query return. If you want to return all matching samples, use [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
+- `resultsHandler`: A block that the HealthKit store calls after it finishes executing the query. This block takes the following parameters: - **`query`**: A reference to the query that called this block.
+- **`results`**: An array containing the samples the query found, or `nil` if an error occurs.
+- **`error`**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 

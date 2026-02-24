@@ -27,9 +27,9 @@ Not all `CVPixelBuffer` pixel formats support conversion into a `CGImage-`compat
 
 ## Parameters
 
-- `pixelBuffer`: A pixel buffer to use as the image data source for the  .
-- `options`: No options are currently supported. Pass   for this argument.
-- `imageOut`: Pointer to an address to receive the newly created  .
+- `pixelBuffer`: A pixel buffer to use as the image data source for the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
+- `options`: No options are currently supported. Pass `NULL` for this argument.
+- `imageOut`: Pointer to an address to receive the newly created [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
 
 
 ---

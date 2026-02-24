@@ -26,7 +26,7 @@ After deleting the record, you should release it with the `CFRelease` function.
 ## Parameters
 
 - `record`: The record.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

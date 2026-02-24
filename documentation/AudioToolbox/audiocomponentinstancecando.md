@@ -22,7 +22,7 @@ func AudioComponentInstanceCanDo(_ inInstance: AudioComponentInstance, _ inSelec
 ## Parameters
 
 - `inInstance`: The audio component instance that you want to examine.
-- `inSelectorID`: An audio component function selector. The available values for audio units are listed in   and  .
+- `inSelectorID`: An audio component function selector. The available values for audio units are listed in [`General Audio Unit Function Selectors`](1584140-general_audio_unit_function_sele.md) and [`I/O Audio Unit Function Selectors`](1585807-i_o_audio_unit_function_selector.md).
 
 ## See Also
 

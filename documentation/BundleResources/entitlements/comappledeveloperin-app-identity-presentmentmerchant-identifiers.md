@@ -9,6 +9,10 @@ An entitlement for the merchant identifier associated with the in-app identity p
 - iOS 16.0+
 - iPadOS 16.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 For identity verification, you must add this entitlement even if you’re using the same merchant ID for Apple Pay. Apple Pay’s [`Merchant IDs Entitlement`](entitlements/com.apple.developer.in-app-payments.md) entitlement isn’t recognized for identity verification.

@@ -35,12 +35,12 @@ Y = (alpha * X) + (beta * Y)
 ## Parameters
 
 - `N`: Number of elements in the vector.
-- `ALPHA`: Scaling factor for  .
-- `X`: Input vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `ALPHA`: Scaling factor for `X`.
+- `X`: Input vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 - `BETA`: Scaling factor for Y.
-- `Y`: Input vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `Y`: Input vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

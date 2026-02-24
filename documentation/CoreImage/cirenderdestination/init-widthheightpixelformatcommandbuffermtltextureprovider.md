@@ -29,11 +29,11 @@ The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property w
 
 ## Parameters
 
-- `width`: Width of the   that will be returned by block.
-- `height`: Height of the   that will be returned by block.
-- `pixelFormat`: Pixel format of the   that will be returned by block.
-- `commandBuffer`: An optional   used for rendering to the  .
-- `block`:  -rendering provider block to be called lazily when the destination is rendered to.  The block must return a texture of   of  .
+- `width`: Width of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) that will be returned by block.
+- `height`: Height of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) that will be returned by block.
+- `pixelFormat`: Pixel format of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) that will be returned by block.
+- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) used for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture).
+- `block`: [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture)-rendering provider block to be called lazily when the destination is rendered to.  The block must return a texture of [`MTLTextureType`](https://developer.apple.com/documentation/Metal/MTLTextureType) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D).
 
 ## See Also
 

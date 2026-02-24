@@ -2,7 +2,7 @@
 
 **Framework**: Core Graphics
 
-Provides features for managing —filters for observing and altering the stream of low-level user input events in macOS.
+Provides features for managing *event taps*—filters for observing and altering the stream of low-level user input events in macOS.
 
 #### Overview
 

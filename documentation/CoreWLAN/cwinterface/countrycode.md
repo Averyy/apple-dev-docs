@@ -16,7 +16,7 @@ func countryCode() -> String?
 
 #### Discussion
 
-Dynamically queries the interface for the current country code. Returns  in the case of an error, or if the interface is .
+Dynamically queries the interface for the current country code. Returns *nil* in the case of an error, or if the interface is *OFF*.
 
 ## See Also
 

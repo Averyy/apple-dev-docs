@@ -31,7 +31,7 @@ You must call the [`modifyPixelData(_:)`](skmutabletexture/modifypixeldata(_:).m
 ## Parameters
 
 - `size`: The size of the texture, in pixels.
-- `format`: A Core Video format code. Three codes are supported:  ,  , and   for byte, half-float, and float components respectively.
+- `format`: A Core Video format code. Three codes are supported: [`kCVPixelFormatType_32RGBA`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32RGBA), [`kCVPixelFormatType_64RGBAHalf`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_64RGBAHalf), and [`kCVPixelFormatType_128RGBAFloat`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_128RGBAFloat) for byte, half-float, and float components respectively.
 
 ## See Also
 

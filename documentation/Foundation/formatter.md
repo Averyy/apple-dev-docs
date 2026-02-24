@@ -34,6 +34,9 @@ For instructions on how to create your own custom formatter, see [`Creating a Cu
 
 ## Topics
 
+### Creating Formatters
+- [Displaying Human-Friendly Content](displaying-human-friendly-content.md)
+  Convert data into readable strings or Swift objects using formatters.
 ### Getting Textual Representations of Object Values
 - [func string(for: Any?) -> String?](formatter/string(for:).md)
   The default implementation of this method raises an exception.

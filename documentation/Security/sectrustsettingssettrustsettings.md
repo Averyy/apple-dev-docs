@@ -31,9 +31,9 @@ When making changes to per-user trust settings, the user is prompted with an ale
 
 ## Parameters
 
-- `certRef`: The certificate for which you want to specify the trust settings. Pass the value   to set the default root certificate trust settings for the domain.
-- `domain`: The trust settings domain of the trust settings that you wish to specify.  For possible values, see  .
-- `trustSettingsDictOrArray`: The trust settings you wish to specify for this certificate, in the form of a   object, a   of   objects, or  . The contents of   objects used to specify trust settings are detailed in the   function description. Pass   if you want to specify an empty trust settings array.
+- `certRef`: The certificate for which you want to specify the trust settings. Pass the value [`kSecTrustSettingsDefaultRootCertSetting`](ksectrustsettingsdefaultrootcertsetting.md) to set the default root certificate trust settings for the domain.
+- `domain`: The trust settings domain of the trust settings that you wish to specify.  For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
+- `trustSettingsDictOrArray`: The trust settings you wish to specify for this certificate, in the form of a `CFDictionary` object, a `CFArray` of `CFDictionary` objects, or `NULL`. The contents of `CFDictionary` objects used to specify trust settings are detailed in the [`SecTrustSettingsCopyTrustSettings(_:_:_:)`](sectrustsettingscopytrustsettings(_:_:_:).md) function description. Pass `NULL` if you want to specify an empty trust settings array.
 
 
 ---

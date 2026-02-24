@@ -28,7 +28,7 @@ To prevent the possibility of encoding an object that [`NSKeyedUnarchiver`](nske
 
 ## Parameters
 
-- `requiresSecureCoding`: A Boolean value indicating whether all encoded objects must conform to  .
+- `requiresSecureCoding`: A Boolean value indicating whether all encoded objects must conform to [`NSSecureCoding`](nssecurecoding.md).
 
 ## See Also
 

@@ -37,7 +37,7 @@ For more information about how to implement push notifications in your applicati
 ## Parameters
 
 - `application`: The application that received the remote notification.
-- `userInfo`: A dictionary that contains information related to the remote notification, specifically a badge number for the application icon, a notification identifier, and possibly custom data. The provider originates it as a JSON-defined dictionary that AppKit converts to an   object; the dictionary may contain only property-list objects plus  .
+- `userInfo`: A dictionary that contains information related to the remote notification, specifically a badge number for the application icon, a notification identifier, and possibly custom data. The provider originates it as a JSON-defined dictionary that AppKit converts to an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull).
 
 ## See Also
 

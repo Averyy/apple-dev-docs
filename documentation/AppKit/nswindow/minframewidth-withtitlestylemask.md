@@ -21,7 +21,7 @@ The minimum width of the window’s frame, using `style`, in order to display `t
 ## Parameters
 
 - `title`: The title for the window.
-- `style`: The window style for the window. See   for a list of style mask values.
+- `style`: The window style for the window. See [`NSWindow.StyleMask`](nswindow/stylemask-swift.struct.md) for a list of style mask values.
 
 ## See Also
 

@@ -19,7 +19,7 @@ let creditDebitIndicator: CreditDebitIndicator
 
 If an asset account has a positive balance, then the [`CreditDebitIndicator`](creditdebitindicator.md) is [`CreditDebitIndicator.credit`](creditdebitindicator/credit.md). If it has a negative balance, then the `CreditDebitIndicator` is [`CreditDebitIndicator.debit`](creditdebitindicator/debit.md).
 
-If a liability account has a  balance, then the `CreditDebitIndicator` is `CreditDebitIndicator/debit`. If it has been  then the `CreditDebitIndicator` is `CreditDebitIndicator/credit`.
+If a liability account has a *spent* balance, then the `CreditDebitIndicator` is `CreditDebitIndicator/debit`. If it has been *is in credit* then the `CreditDebitIndicator` is `CreditDebitIndicator/credit`.
 
 > **Note**:  FinanceKit considers a zero balance to be a credit balance.
 

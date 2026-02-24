@@ -40,8 +40,8 @@ variable = variable - lr[t] * m[t] / (sqrt(maxVel) + epsilon)
 - `learningRateTensor`: Scalar tensor which indicates the learning rate to use with the optimizer
 - `beta1Tensor`: beta1Tensor
 - `beta2Tensor`: beta2Tensor
-- `beta1PowerTensor`:   beta1 power tensor
-- `beta2PowerTensor`:   beta2 power tensor
+- `beta1PowerTensor`: `beta1^t` beta1 power tensor
+- `beta2PowerTensor`: `beta2^t` beta2 power tensor
 - `valuesTensor`: Values to update with optimization
 - `momentumTensor`: Momentum tensor
 - `velocityTensor`: Velocity tensor

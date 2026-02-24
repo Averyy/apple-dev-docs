@@ -23,9 +23,9 @@ nonisolated init(role: ButtonRole?, action: @escaping @MainActor () -> Void, @Vi
 
 ## Parameters
 
-- `role`: An optional semantic role that describes the button. A value of    means that the button doesn’t have an assigned role.
+- `role`: An optional semantic role that describes the button. A value of `nil` means that the button doesn’t have an assigned role.
 - `action`: The action to perform when the user interacts with the button.
-- `label`: A view that describes the purpose of the button’s  .
+- `label`: A view that describes the purpose of the button’s `action`.
 
 ## See Also
 

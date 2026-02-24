@@ -38,8 +38,8 @@ The system initially uses a radial portal effect that replaces passthrough in a 
 
 ## Parameters
 
-- `immersionRange`: The range of immersion used for this instance of   the style. The lower bound and upper bound value of the range   represent the minimum and maximum amount of the spherical field of   view of the user that can be covered by the portal effect of the   style. The lower bound value must be equal to or greater than    and smaller than the upper bound. The upper bound value must be   greater than the lower bound and smaller than or equal to  .
-- `initialAmount`: The initial amount of immersion used for this   instance of the style. If  , a system default will be used.   The value must be within the range defined by this style.
+- `immersionRange`: The range of immersion used for this instance of the style. The lower bound and upper bound value of the range represent the minimum and maximum amount of the spherical field of view of the user that can be covered by the portal effect of the style. The lower bound value must be equal to or greater than `0.0` and smaller than the upper bound. The upper bound value must be greater than the lower bound and smaller than or equal to `1.0`.
+- `initialAmount`: The initial amount of immersion used for this instance of the style. If `nil`, a system default will be used. The value must be within the range defined by this style.
 
 
 ---

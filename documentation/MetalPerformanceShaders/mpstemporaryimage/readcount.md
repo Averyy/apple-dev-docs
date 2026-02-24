@@ -21,7 +21,7 @@ var readCount: Int { get set }
 
 #### Discussion
 
-Temporary images must release their underlying textures for reuse immediately after last use. In order to facilitate  and convenient memory recycling, each time a [`MPSTemporaryImage`](mpstemporaryimage.md) object is read by an `encode` method of an [`MPSCNNKernel`](mpscnnkernel.md) object, the value of its [`readCount`](mpstemporaryimage/readcount.md) property is automatically decremented. When the value of [`readCount`](mpstemporaryimage/readcount.md) reaches 0, the underlying texture is automatically made available and reusable to the framework for its own needs (and for other [`MPSTemporaryImage`](mpstemporaryimage.md) objects prior to return from the `encode` method). The contents of the underlying texture become undefined at this time.
+Temporary images must release their underlying textures for reuse immediately after last use. In order to facilitate *prompt* and convenient memory recycling, each time a [`MPSTemporaryImage`](mpstemporaryimage.md) object is read by an `encode` method of an [`MPSCNNKernel`](mpscnnkernel.md) object, the value of its [`readCount`](mpstemporaryimage/readcount.md) property is automatically decremented. When the value of [`readCount`](mpstemporaryimage/readcount.md) reaches 0, the underlying texture is automatically made available and reusable to the framework for its own needs (and for other [`MPSTemporaryImage`](mpstemporaryimage.md) objects prior to return from the `encode` method). The contents of the underlying texture become undefined at this time.
 
 By default, the value of [`readCount`](mpstemporaryimage/readcount.md) is initialized to 1, indicating a temporary image that may be overwritten any number of times, but read only once.
 

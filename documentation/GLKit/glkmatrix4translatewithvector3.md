@@ -24,7 +24,7 @@ A new matrix.
 ## Parameters
 
 - `matrix`: A matrix.
-- `translationVector`: A vector whose  ,   and   components are used to translate the matrix.
+- `translationVector`: A vector whose `x`, `y` and `z` components are used to translate the matrix.
 
 ## See Also
 

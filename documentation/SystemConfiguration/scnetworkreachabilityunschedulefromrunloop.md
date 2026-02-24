@@ -25,9 +25,9 @@ func SCNetworkReachabilityUnscheduleFromRunLoop(_ target: SCNetworkReachability,
 
 ## Parameters
 
-- `target`: The address or name that is set up for asynchronous notifications. Must not be  .
-- `runLoop`: The run loop on which the target should be unscheduled. Must not be  .
-- `runLoopMode`: The mode in which to unschedule the target. Must not be  .
+- `target`: The address or name that is set up for asynchronous notifications. Must not be `NULL`.
+- `runLoop`: The run loop on which the target should be unscheduled. Must not be `NULL`.
+- `runLoopMode`: The mode in which to unschedule the target. Must not be `NULL`.
 
 ## See Also
 

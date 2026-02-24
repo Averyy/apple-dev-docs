@@ -84,6 +84,21 @@ Specify `com.apple.SetupAssistant.managed` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `SkipAccessibility` (boolean): If `true`, the system skips the Accessibility pane.
+- `SkipAppearance` (boolean): If `true`, the system skips the Choose Your Look pane.
+- `SkipCloudSetup` (boolean): If `true`, the system skips the Apple Account setup pane.
+- `SkipiCloudStorageSetup` (boolean): If `true`, the system skips the iCloud Storage pane.
+- `SkipPrivacySetup` (boolean): If `true`, the system skips the Privacy consent pane.
+- `SkipScreenTime` (boolean): If `true`, the system skips the Screen Time pane.
+- `SkipSetupItems` ([string]): An array of strings that describe the setup items to skip. [`SkipKeys`](skipkeys.md) provides a list of valid strings and their meanings. Available in iOS 14 and later, and macOS 15 and later.
+- `SkipSiriSetup` (boolean): If `true`, the system skips the Siri setup pane.
+- `SkipTouchIDSetup` (boolean): If `true`, the system skips the Touch ID setup pane.
+- `SkipTrueTone` (boolean): If `true`, the system skips the True Tone Display pane.
+- `SkipUnlockWithWatch` (boolean): If `true`, the system skips the Unlock With Apple Watch pane.
+- `SkipWallpaper` (boolean): If ‘true’, the system skips the Wallpaper selection window.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

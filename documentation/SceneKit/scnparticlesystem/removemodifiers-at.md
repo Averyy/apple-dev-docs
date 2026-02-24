@@ -22,7 +22,7 @@ func removeModifiers(at stage: SCNParticleModifierStage)
 
 ## Parameters
 
-- `stage`: The stage of SceneKit’s particle simulation during which to call the block. See   for allowed values.
+- `stage`: The stage of SceneKit’s particle simulation during which to call the block. See [`SCNParticleModifierStage`](scnparticlemodifierstage.md) for allowed values.
 
 ## See Also
 

@@ -30,8 +30,8 @@ If you want a table cell that has a configuration different that those defined b
 
 ## Parameters
 
-- `style`: A constant indicating a cell style. See   for descriptions of these constants.
-- `reuseIdentifier`: A string used to identify the cell object if it is to be reused for drawing multiple rows of a table view. Pass   if the cell object is not to be reused. You should use the same reuse identifier for all cells of the same form.
+- `style`: A constant indicating a cell style. See [`UITableViewCell.CellStyle`](uitableviewcell/cellstyle.md) for descriptions of these constants.
+- `reuseIdentifier`: A string used to identify the cell object if it is to be reused for drawing multiple rows of a table view. Pass `nil` if the cell object is not to be reused. You should use the same reuse identifier for all cells of the same form.
 
 ## See Also
 

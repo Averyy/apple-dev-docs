@@ -24,7 +24,7 @@ init(upstream: Upstream, strategy: Publishers.TimeGroupingStrategy<Context>, opt
 
 - `upstream`: The publisher that this publisher receives elements from.
 - `strategy`: The strategy with which to collect and publish elements.
-- `options`:   options to use for the strategy.
+- `options`: `Scheduler` options to use for the strategy.
 
 
 ---

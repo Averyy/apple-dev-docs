@@ -49,7 +49,7 @@ For more information on how HealthKit calculates statistics for [`HKWorkoutActiv
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the average quantity.
-- `quantityType`: The type of   objects used to calculate the average quantity.
+- `quantityType`: The type of [`HKQuantitySample`](hkquantitysample.md) objects used to calculate the average quantity.
 - `averageQuantity`: The target value for the average quantity.
 
 ## See Also

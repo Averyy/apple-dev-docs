@@ -29,6 +29,10 @@ This method applies a 9 x 1 convolution to the `RGB` components of an image. The
 
 The convolution-RGB-9-vertical filter uses the following properties:
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the image to process.
+- **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
+- **`bias`**: A `float` representing the value that’s added to each output pixel.
+
 > **Note**:  When using a nonzero `bias` value, the output image has an infinite extent. You should crop the image before attempting to render it.
 
 The following code creates a filter that blurs the image in the horizontal direction:

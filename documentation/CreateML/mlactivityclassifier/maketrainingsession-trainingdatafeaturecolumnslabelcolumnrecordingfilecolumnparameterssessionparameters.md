@@ -20,12 +20,12 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the activity clas
 
 ## Parameters
 
-- `trainingData`: An   instance that contains a collection of sensor data that groups data   entries by activity label.
+- `trainingData`: An [`MLDataTable`](mldatatable.md) instance that contains a collection of sensor data that groups data entries by activity label.
 - `featureColumns`: The feature column names.
 - `labelColumn`: The label column name,
 - `recordingFileColumn`: The recording file column name.
-- `parameters`: An   instance you use to configure the   model for the training session.
-- `sessionParameters`: An   instance you use to configure the training session.
+- `parameters`: An [`MLActivityClassifier.ModelParameters`](mlactivityclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

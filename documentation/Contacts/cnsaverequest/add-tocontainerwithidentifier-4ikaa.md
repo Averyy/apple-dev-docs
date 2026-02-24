@@ -25,7 +25,7 @@ This method overrides any previously made delete request for the group.
 ## Parameters
 
 - `group`: The group to add.
-- `identifier`: The identifier of the container to add the new group. To add the new group to the default container, set   to  .
+- `identifier`: The identifier of the container to add the new group. To add the new group to the default container, set `identifier` to `nil`.
 
 ## See Also
 

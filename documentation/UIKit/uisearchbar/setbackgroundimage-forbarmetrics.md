@@ -20,7 +20,7 @@ func setBackgroundImage(_ backgroundImage: UIImage?, for barPosition: UIBarPosit
 
 ## Parameters
 
-- `backgroundImage`: The image to use for the search bar background in the position specified by   and with the metrics specified by  .
+- `backgroundImage`: The image to use for the search bar background in the position specified by `barPosition` and with the metrics specified by `barMetrics`.
 - `barPosition`: A bar position constant.
 - `barMetrics`: A bar metrics constant.
 

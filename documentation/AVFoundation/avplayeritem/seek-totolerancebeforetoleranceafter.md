@@ -27,8 +27,8 @@ Passing `kCMTimePositiveInfinity` for both `toleranceBefore` and `toleranceAfter
 ## Parameters
 
 - `time`: The time to which you would like to move the playback cursor.
-- `toleranceBefore`: The tolerance allowed before  .
-- `toleranceAfter`: The tolerance allowed after  .
+- `toleranceBefore`: The tolerance allowed before `time`.
+- `toleranceAfter`: The tolerance allowed after `time`.
 
 ## See Also
 

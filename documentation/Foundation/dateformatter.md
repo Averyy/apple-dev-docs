@@ -36,13 +36,117 @@ To represent a quantity of time specified by an [`NSDateComponents`](nsdatecompo
 
 When displaying a date to a user, you set the [`dateStyle`](dateformatter/datestyle.md) and [`timeStyle`](dateformatter/timestyle.md) properties of the date formatter according to your particular needs. For example, if you want to show the month, day, and year without showing the time, you would set the [`dateStyle`](dateformatter/datestyle.md) property to [`DateFormatter.Style.long`](dateformatter/style/long.md) and the [`timeStyle`](dateformatter/timestyle.md) property to [`DateFormatter.Style.none`](dateformatter/style/none.md). Conversely, if you want to show only the time, you would set the `dateStyle` property to [`DateFormatter.Style.none`](dateformatter/style/none.md) and the [`timeStyle`](dateformatter/timestyle.md) property to [`DateFormatter.Style.short`](dateformatter/style/short.md). Based on the values of the [`dateStyle`](dateformatter/datestyle.md) and [`timeStyle`](dateformatter/timestyle.md) properties, [`DateFormatter`](dateformatter.md) provides a representation of a specified date that is appropriate for a given locale.
 
+**Swift**:
+
+```swift
+let dateFormatter = DateFormatter()
+dateFormatter.dateStyle = .medium
+dateFormatter.timeStyle = .none
+ 
+let date = Date(timeIntervalSinceReferenceDate: 118800)
+ 
+// US English Locale (en_US)
+dateFormatter.locale = Locale(identifier: "en_US")
+print(dateFormatter.string(from: date)) // Jan 2, 2001
+ 
+// French Locale (fr_FR)
+dateFormatter.locale = Locale(identifier: "fr_FR")
+print(dateFormatter.string(from: date)) // 2 janv. 2001
+ 
+// Japanese Locale (ja_JP)
+dateFormatter.locale = Locale(identifier: "ja_JP")
+print(dateFormatter.string(from: date)) // 2001/01/02
+```
+
+**Objective-C**:
+
+```objc
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+dateFormatter.timeStyle = NSDateFormatterNoStyle;
+ 
+NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:118800];
+ 
+// US English Locale (en_US)
+dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+NSLog(@"%@", [dateFormatter stringFromDate:date]); // Jan 2, 2001
+ 
+// French Locale (fr_FR)
+dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fr_FR"];
+NSLog(@"%@", [dateFormatter stringFromDate:date]); // 2 janv. 2001
+ 
+// Japanese Locale (ja_JP)
+dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"];
+NSLog(@"%@", [dateFormatter stringFromDate:date]); // 2001/01/02
+```
+
 If you need to define a format that cannot be achieved using the predefined styles, you can use the [`setLocalizedDateFormatFromTemplate(_:)`](dateformatter/setlocalizeddateformatfromtemplate(_:).md) to specify a localized date format from a template.
+
+**Swift**:
+
+```swift
+let dateFormatter = DateFormatter()
+let date = Date(timeIntervalSinceReferenceDate: 410220000)
+ 
+// US English Locale (en_US)
+dateFormatter.locale = Locale(identifier: "en_US")
+dateFormatter.setLocalizedDateFormatFromTemplate("MMMMd") // set template after setting locale
+print(dateFormatter.string(from: date)) // December 31
+ 
+// British English Locale (en_GB)
+dateFormatter.locale = Locale(identifier: "en_GB")
+dateFormatter.setLocalizedDateFormatFromTemplate("MMMMd") // // set template after setting locale
+print(dateFormatter.string(from: date)) // 31 December
+```
+
+**Objective-C**:
+
+```objc
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:410220000];
+ 
+// US English Locale (en_US)
+dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+[dateFormatter setLocalizedDateFormatFromTemplate:@"MMMMd"]; // set template after setting locale
+NSLog(@"%@", [dateFormatter stringFromDate:date]); // December 31
+ 
+// British English Locale (en_GB)
+dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_GB"];
+[dateFormatter setLocalizedDateFormatFromTemplate:@"MMMMd"]; // set template after setting locale
+NSLog(@"%@", [dateFormatter stringFromDate:date]); // 31 December
+```
 
 ##### Working with Fixed Format Date Representations
 
 > ❗ **Important**:  In macOS 10.12 and later or iOS 10 and later, use the [`ISO8601DateFormatter`](iso8601dateformatter.md) class when working with ISO 8601 date representations.
 
 When working with fixed format dates, such as RFC 3339, you set the [`dateFormat`](dateformatter/dateformat.md) property to specify a format string. For most fixed formats, you should also set the [`locale`](dateformatter/locale.md) property to a POSIX locale (`"en_US_POSIX"`), and set the [`timeZone`](dateformatter/timezone.md) property to UTC.
+
+**Swift**:
+
+```swift
+let RFC3339DateFormatter = DateFormatter()
+RFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
+RFC3339DateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+RFC3339DateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+ 
+/* 39 minutes and 57 seconds after the 16th hour of December 19th, 1996 with an offset of -08:00 from UTC (Pacific Standard Time) */
+let string = "1996-12-19T16:39:57-08:00"
+let date = RFC3339DateFormatter.date(from: string)
+```
+
+**Objective-C**:
+
+```objc
+RFC3339DateFormatter = [[NSDateFormatter alloc] init];
+RFC3339DateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+RFC3339DateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZZZ";
+RFC3339DateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+ 
+/* 39 minutes and 57 seconds after the 16th hour of December 19th, 1996 with an offset of -08:00 from UTC (Pacific Standard Time) */
+NSString *string = @"1996-12-19T16:39:57-08:00";
+NSDate *date = [RFC3339DateFormatter dateFromString:string];
+```
 
 For more information, see [`Technical Q&A QA1480 “NSDateFormatter and Internet Dates”`](https://developer.apple.comhttps://developer.apple.com/library/mac/qa/qa1480/).
 

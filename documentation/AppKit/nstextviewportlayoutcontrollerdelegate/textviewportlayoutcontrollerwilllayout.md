@@ -16,7 +16,7 @@ optional func textViewportLayoutControllerWillLayout(_ textViewportLayoutControl
 
 ## Parameters
 
-- `textViewportLayoutController`: The  .
+- `textViewportLayoutController`: The [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md).
 
 ## See Also
 

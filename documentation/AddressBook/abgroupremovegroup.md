@@ -20,8 +20,8 @@ func ABGroupRemoveGroup(_ group: ABGroupRef!, _ groupToRemove: ABGroupRef!) -> B
 
 ## Parameters
 
-- `group`: If  , this function raises an exception.
-- `groupToRemove`: The subgroup to be removed from  .
+- `group`: If `NULL`, this function raises an exception.
+- `groupToRemove`: The subgroup to be removed from `group`.
 
 ## See Also
 

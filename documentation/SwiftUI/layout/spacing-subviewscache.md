@@ -54,8 +54,8 @@ If you don’t implement this method, the protocol provides a default implementa
 
 ## Parameters
 
-- `subviews`: A collection of proxy instances that represent the   views that the container arranges. You can use the proxies in the   collection to get information about the subviews as you determine   how much spacing the container prefers around it.
-- `cache`: Optional storage for calculated data that you can share among   the methods of your custom layout container. See    for details.
+- `subviews`: A collection of proxy instances that represent the views that the container arranges. You can use the proxies in the collection to get information about the subviews as you determine how much spacing the container prefers around it.
+- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for details.
 
 ## See Also
 

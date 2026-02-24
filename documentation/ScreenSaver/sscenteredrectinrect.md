@@ -21,7 +21,7 @@ A rectangle that’s the same size as `innerRect`, but is centered inside `outer
 ## Parameters
 
 - `innerRect`: The rectangle to center.
-- `outerRect`: The rectangle to contain  .
+- `outerRect`: The rectangle to contain `innerRect`.
 
 ## See Also
 

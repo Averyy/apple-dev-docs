@@ -23,7 +23,7 @@ init(massProperties: PhysicsMassProperties = .default, material: PhysicsMaterial
 
 - `massProperties`: The mass properties, like inertia.
 - `material`: The material properties, like friction.
-- `mode`: The simulation mode that indicates how a body responds to   forces.
+- `mode`: The simulation mode that indicates how a body responds to forces.
 
 ## See Also
 

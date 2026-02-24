@@ -31,7 +31,77 @@ You also supply the intitializer with a channel layout in either mono, stereo, o
 
 To play ambient sound, define an orientation for the mixer and a channel layout for the source audio data. For example, the following code creates a 5.0 surround-sound ambient source from a 5.1 surround-sound asset.
 
+**Swift**:
+
+```swift
+// Orient the mixer.
+let orientation: PHASEQuaternion3D = simd_quaternion(1.0, 0.0, 0.0, 0.0)
+
+// Create a channel layout corresponding to the sound asset’s channel layout.
+let surroundLayout = AVAudioChannelLayout(
+    layoutTag: kAudioChannelLayoutTag_MPEG_5_1_A)
+
+// Create the ambient mixer.
+let ambientMixer = PHASEAmbientMixerDefinition(channelLayout: surroundLayout!,
+    orientation: orientation)
+```
+
+**Objective-C**:
+
+```objc
+// Orient the mixer.
+PHASEQuaternion3D orientation = simd_quaternion(1.f, 0.f, 0.f, 0.f);
+
+// Create a channel layout corresponding to the sound asset’s channel layout. 
+AVAudioChannelLayout* surroundLayout =
+    [[AVAudioChannelLayout alloc] initWithLayoutTag:kAudioChannelLayoutTag_MPEG_5_1_A];
+
+// Create the ambient mixer.
+PHASEAmbientMixerDefinition* ambientMixer =
+    [[PHASEAmbientMixerDefinition alloc] initWithChannelLayout:surroundLayout orientation:orientation];
+```
+
 Ambient mixers require the app to specify a listener, for which you define an orientation by setting the listener’s [`transform`](phaseobject/transform.md). Continuing on the example above, the following code completes a mixer by attaching a listener, and then plays a sound event.
+
+**Swift**:
+
+```swift
+// Attach the mixer to a listener.
+let mixerParams = PHASEMixerParameters()
+mixerParams.addAmbientMixerParameters(ambientMixer.uid, listener: listener)
+
+
+// Create a sound event object.    
+var ambientSoundEvent: PHASESoundEvent!
+do { ambientSoundEvent = try PHASESoundEvent(engine: engine,
+        registeredSoundEventNodeAssetUID: ambientSoundEventAsset.uid,
+        mixerParameters: mixerParams)
+} catch { fatalError("Failed to create a sound event.") }
+
+
+// Play the ambient sound.
+do { try ambientSoundEvent.start() } 
+catch { print("Failed to start a sound event.") }
+```
+
+**Objective-C**:
+
+```objc
+// Attach the mixer to a listener.
+PHASEMixerParameters* mixerParams = [[PHASEMixerParameters alloc] init];
+[mixerParams addAmbientMixerParameters:ambientMixer.uid
+    listener:_listener];
+
+// Create a sound event object.    
+PHASESoundEvent* ambientSoundEvent =
+    [[PHASESoundEvent alloc]initWithEngine:_engine
+        registeredSoundEventNodeAssetUID:ambientSoundEventAsset.uid
+        mixerParameters:mixerParams
+        outError:&err];
+
+// Play the ambient sound.
+[ambientSoundEvent startAndReturnError:&err];
+```
 
 PHASE changes the channel output of ambient-mixer sound dynamically, depending on the respective directions of the mixer and the listener. For example, you can use an ambient mixer in a game to play the environmental sound of birds all around and the sound of traffic on a road in just one audio channel. Depending on the direction the player is facing, the mixer can rotate the audio so that the road always sounds like it’s coming from the same direction, for example, the west.
 

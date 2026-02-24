@@ -27,9 +27,9 @@ convenience init(for givenSchema: Schema, migrationPlan: (any SchemaMigrationPla
 
 ## Parameters
 
-- `givenSchema`: A schema that maps your app’s model classes to the associated data in the app’s persistent storage. For more information, see  .
-- `migrationPlan`: A plan that describes the evolution of your app’s schema and how the container migrates between specific versions. For more information, see  .
-- `configurations`: A list of configurations that describe how the container manages the persisted data for specific groups of models. For more information, see  .
+- `givenSchema`: A schema that maps your app’s model classes to the associated data in the app’s persistent storage. For more information, see [`Schema`](schema.md).
+- `migrationPlan`: A plan that describes the evolution of your app’s schema and how the container migrates between specific versions. For more information, see [`SchemaMigrationPlan`](schemamigrationplan.md).
+- `configurations`: A list of configurations that describe how the container manages the persisted data for specific groups of models. For more information, see [`ModelConfiguration`](modelconfiguration.md).
 
 ## See Also
 

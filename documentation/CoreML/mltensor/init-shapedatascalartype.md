@@ -23,7 +23,7 @@ init(shape: [Int], data: Data, scalarType: any MLTensorScalar.Type)
 ## Parameters
 
 - `shape`: The shape of the tensor.
-- `data`: The block of data that holds the contents of the tensor whose data is expected to zero-offset, stored in a C-contiguous   (aka row major) way, and alignment to match the alignment of the scalar type.
+- `data`: The block of data that holds the contents of the tensor whose data is expected to zero-offset, stored in a C-contiguous (aka row major) way, and alignment to match the alignment of the scalar type.
 - `scalarType`: The scalar type.
 
 ## See Also

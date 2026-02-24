@@ -26,7 +26,7 @@ The plug-in author’s implementation of this function is registered with `CFPlu
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the default allocator.
 - `typeUUID`: The UUID type to instantiate.
 
 ## See Also

@@ -18,7 +18,7 @@ init(_ position: DynamicIslandExpandedRegionPosition, priority: Double = 0, @Vie
 ## Parameters
 
 - `position`: The position for Live Activity content.
-- `priority`: The priority that tells the system which content to prioritize when it sizes   the content of an expanded Live Activity in the Dynamic Island.
+- `priority`: The priority that tells the system which content to prioritize when it sizes the content of an expanded Live Activity in the Dynamic Island.
 - `content`: The content of an expanded Live Activity.
 
 ## See Also

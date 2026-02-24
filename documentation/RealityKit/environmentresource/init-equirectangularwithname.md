@@ -23,7 +23,7 @@ Asynchronously generates an environment resource from an equirectangular image.
 ## Parameters
 
 - `cgImage`: The source equirectangular (latitude, longitude) image. To preserve all details use an image where the width is half the height.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 
 ---

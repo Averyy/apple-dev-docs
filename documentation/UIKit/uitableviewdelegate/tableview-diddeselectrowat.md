@@ -25,7 +25,7 @@ The delegate handles row deselections in this method. It could, for example, rem
 ## Parameters
 
 - `tableView`: A table view informing the delegate about the row deselection.
-- `indexPath`: An index path locating the deselected row in  .
+- `indexPath`: An index path locating the deselected row in `tableView`.
 
 ## See Also
 

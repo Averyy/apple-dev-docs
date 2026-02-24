@@ -12,6 +12,31 @@ If you have a key that you want to send somewhere, you package it in a form that
 
 Create a data instance representing a key using the [`SecKeyCopyExternalRepresentation(_:_:)`](seckeycopyexternalrepresentation(_:_:).md) function:
 
+**Swift**:
+
+```swift
+let key = <# a key #>
+var error: Unmanaged<CFError>?
+guard let data = SecKeyCopyExternalRepresentation(key, &error) as Data else {
+    throw error!.takeRetainedValue() as Error
+}
+```
+
+**Objective-C**:
+
+```objc
+SecKeyRef key = <# a key #>;
+CFErrorRef error = NULL;
+NSData* keyData = (NSData*)CFBridgingRelease(  // ARC takes ownership
+                       SecKeyCopyExternalRepresentation(key, &error)
+                   );
+if (!keyData) {
+    NSError *err = CFBridgingRelease(error);  // ARC takes ownership
+    // Handle the error. . .
+}
+
+```
+
 The data instance returned from this function can then be sent across a network, through the file system, or by any other means, so long as the data’s content is preserved exactly.
 
 This method works for both public and private keys. However, it doesn’t work for all keys. For example, if a key is bound to a smart card or to the Secure Enclave, you can’t export it this way. Also, in macOS, a key that has the [`kSecKeyExtractable`](kseckeyextractable.md) attribute set to false is ineligible for export. In these cases, or if any other error occurs, the returned data is `nil` and the error object indicates the reason for failure.
@@ -33,6 +58,38 @@ Avoid insecure distribution of cryptographic keys, and pay special attention to 
 ##### Restore a Key From a Data Instance
 
 When you’re ready to restore the data instance back into a key, use the [`SecKeyCreateWithData(_:_:_:)`](seckeycreatewithdata(_:_:_:).md) function:
+
+**Swift**:
+
+```swift
+let options: [String: Any] = [kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
+                              kSecAttrKeyClass as String: kSecAttrKeyClassPublic]
+var error: Unmanaged<CFError>?
+guard let key = SecKeyCreateWithData(data as CFData,
+                                     options as CFDictionary,
+                                     &error) else {
+                                        throw error!.takeRetainedValue() as Error
+}
+```
+
+**Objective-C**:
+
+```objc
+// The key is assumed to be public, 2048-bit RSA
+NSDictionary* options = @{(id)kSecAttrKeyType: (id)kSecAttrKeyTypeRSA,
+                          (id)kSecAttrKeyClass: (id)kSecAttrKeyClassPublic
+                         };
+CFErrorRef error = NULL;
+SecKeyRef key = SecKeyCreateWithData((__bridge CFDataRef)data,
+                                     (__bridge CFDictionaryRef)options,
+                                     &error);
+if (!key) {
+    NSError *err = CFBridgingRelease(error);  // ARC takes ownership
+    // Handle the error. . .
+} else { <# Use key #> }
+ 
+if (key) { CFRelease(key); }  // After you are done with it
+```
 
 In this case, you use an options dictionary to inform the function about certain characteristics of the key. At a minimum, you indicate the key’s type and class, which means you need to communicate this information along with the key data or establish it ahead of time. If the function returns an empty key reference, check the error object for indications of failure.
 

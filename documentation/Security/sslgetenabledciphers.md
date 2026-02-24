@@ -28,8 +28,8 @@ Call the [`SSLSetEnabledCiphers(_:_:_:)`](sslsetenabledciphers(_:_:_:).md) funct
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `ciphers`: On return, points to the enabled cipher suites. Before calling, you must allocate this buffer using the number of enabled cipher suites retrieved from a call to the   function.
-- `numCiphers`: Pointer to the number of enabled cipher suites. Before calling, retrieve this value by calling the   function.
+- `ciphers`: On return, points to the enabled cipher suites. Before calling, you must allocate this buffer using the number of enabled cipher suites retrieved from a call to the [`SSLGetNumberEnabledCiphers(_:_:)`](sslgetnumberenabledciphers(_:_:).md) function.
+- `numCiphers`: Pointer to the number of enabled cipher suites. Before calling, retrieve this value by calling the [`SSLGetNumberEnabledCiphers(_:_:)`](sslgetnumberenabledciphers(_:_:).md) function.
 
 
 ---

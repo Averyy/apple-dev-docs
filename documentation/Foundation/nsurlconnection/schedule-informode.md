@@ -30,7 +30,7 @@ It is an error to schedule delegate method calls with both this method and the [
 
 ## Parameters
 
-- `aRunLoop`: The   instance to use when calling delegate methods.
+- `aRunLoop`: The [`RunLoop`](runloop.md) instance to use when calling delegate methods.
 - `mode`: The mode in which to call delegate methods.
 
 ## See Also

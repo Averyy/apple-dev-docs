@@ -36,7 +36,7 @@ If an error occurs, this method returns [`false`](https://developer.apple.com/do
 
 ## Parameters
 
-- `value`: The value for the resource property defined by  .
+- `value`: The value for the resource property defined by `key`.
 - `key`: The name of one of the URL’s resource properties.
 
 ## See Also

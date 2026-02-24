@@ -27,8 +27,8 @@ Queries an AudioObject to find the size of the data for the given property.
 
 - `inObjectID`: The AudioObject to query.
 - `inAddress`: An AudioObjectPropertyAddress indicating which property is being queried.
-- `inQualifierDataSize`: A UInt32 indicating the size of the buffer pointed to by inQualifierData.   Note that not all properties require qualification, in which case this   value will be 0.
-- `inQualifierData`: A buffer of data to be used in determining the data of the property being   queried. Note that not all properties require qualification, in which case   this value will be NULL.
+- `inQualifierDataSize`: A UInt32 indicating the size of the buffer pointed to by inQualifierData. Note that not all properties require qualification, in which case this value will be 0.
+- `inQualifierData`: A buffer of data to be used in determining the data of the property being queried. Note that not all properties require qualification, in which case this value will be NULL.
 - `outDataSize`: A UInt32 indicating how many bytes the data for the given property occupies.
 
 ## See Also

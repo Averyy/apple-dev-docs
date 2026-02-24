@@ -26,7 +26,7 @@ The scroll view also calls this method after any “bounce” animations. It als
 
 - `scrollView`: The scroll-view object displaying the content view.
 - `view`: The view object representing that part of the content view that needs to be scaled.
-- `scale`: The scale factor to use for scaling; this value must be between the limits established by the   properties   and  .
+- `scale`: The scale factor to use for scaling; this value must be between the limits established by the `UIScrollView` properties [`maximumZoomScale`](uiscrollview/maximumzoomscale.md) and [`minimumZoomScale`](uiscrollview/minimumzoomscale.md).
 
 ## See Also
 

@@ -37,7 +37,7 @@ If the `url` argument is unreachable, this method returns `nil` and the optional
 ## Parameters
 
 - `url`: The URL pointing to the alias file.
-- `options`: Options taken into account when resolving the bookmark data. The   option is not supported by this method.
+- `options`: Options taken into account when resolving the bookmark data. The [`withSecurityScope`](nsurl/bookmarkresolutionoptions/withsecurityscope.md) option is not supported by this method.
 
 ## See Also
 

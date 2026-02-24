@@ -15,6 +15,11 @@ A ranged limit.
 object Limit
 ```
 
+## Properties
+
+- `default` (int32): Default value of limit.
+- `maximum` (int32): Maximum value of limit.
+
 ## See Also
 
 - [object Device](device.md)

@@ -22,7 +22,7 @@ An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NS
 
 ## Parameters
 
-- `state`: The connection state to search for. See   for possible values.
+- `state`: The connection state to search for. See [`GKPeerConnectionState`](gkpeerconnectionstate.md) for possible values.
 
 ## See Also
 

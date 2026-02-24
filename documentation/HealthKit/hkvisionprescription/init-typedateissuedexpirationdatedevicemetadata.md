@@ -27,7 +27,7 @@ To create a vision prescription sample that contains the full data for the presc
 
 ## Parameters
 
-- `type`: A value that indicates the type of prescription. For a list of possible values, see  .
+- `type`: A value that indicates the type of prescription. For a list of possible values, see [`HKVisionPrescriptionType`](hkvisionprescriptiontype.md).
 - `dateIssued`: The date when the doctor issued the prescription.
 - `expirationDate`: The date when the prescription expires.
 - `device`: The device that generated the sample.

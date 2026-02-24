@@ -24,6 +24,11 @@ object UnlockUserAccountCommand
 - [object UnlockUserAccountCommand.Command](unlockuseraccountcommand/command-data.dictionary.md)
   The command to unlock a user account that the system locked because of too many failed password attempts.
 
+## Properties
+
+- `Command` (UnlockUserAccountCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object UnlockUserAccountResponse](unlockuseraccountresponse.md)

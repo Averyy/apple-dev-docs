@@ -3,7 +3,7 @@
 **Framework**: Foveated Streaming  
 **Kind**: property
 
-An identifier for the data channel.
+An identifier for the message channel.
 
 **Availability**:
 - visionOS 26.4+ (Beta)

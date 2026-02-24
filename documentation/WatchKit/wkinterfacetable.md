@@ -29,6 +29,18 @@ You use a table object to set the number and type of rows and to configure the d
 
 Don’t subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a table object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myTable: WKInterfaceTable!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceTable* myTable;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the table.
 
 ##### Define Your Tables Rows
@@ -44,11 +56,70 @@ To configure the contents of a row controller, drag elements from the library an
 
 Each row controller needs a class to manage the contents of the row at runtime. The class acts as a proxy for the row in your code and stores the outlets you need to configure the contents of the row.
 
+**Swift**:
+
+```swift
+class MyRowController: NSObject {
+    @IBOutlet weak var itemLabel: WKInterfaceLabel!
+    @IBOutlet weak var itemImage: WKInterfaceImage!
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface MyRowController : NSObject
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel* itemLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage* itemImage;
+@end
+```
+
 ##### Set the Number of Rows at Runtime
 
 To fill a table interface object with data, use the [`setRowTypes(_:)`](wkinterfacetable/setrowtypes(_:).md) or [`setNumberOfRows(_:withRowType:)`](wkinterfacetable/setnumberofrows(_:withrowtype:).md) method. These methods specify the type (and number) of rows to add to the table. If all rows are of the same type, use the [`setNumberOfRows(_:withRowType:)`](wkinterfacetable/setnumberofrows(_:withrowtype:).md) method. If you use more than one row controller in your table, use the [`setRowTypes(_:)`](wkinterfacetable/setrowtypes(_:).md) method. The row type string corresponds to the name you entered into the Identifier property for that row controller in your storyboard.
 
 When you add rows to a table, WatchKit creates the rows in your Watch app and instantiates the classes corresponding to those rows in your WatchKit extension. The table object stores the newly instantiated classes internally and makes them available to you through the [`rowController(at:)`](wkinterfacetable/rowcontroller(at:).md) method. Use that method to retrieve each row controller object and configure the contents of the row.
+
+**Swift**:
+
+```swift
+func loadTodoItems() {
+    // Fetch the to-do items
+    let items = myFetchToDoList()
+    
+    // Configure the table object and get the row controllers.
+    myTable.setNumberOfRows(items.count, withRowType: "MainRowType")
+    
+    // Iterate over the rows and set the label and image for each one.
+    for (index, item) in items.enumerated() {
+        let row = myTable.rowController(at: index) as! MyRowController
+        row.itemImage.setImage(item.image)
+        row.itemLabel.setText(item.title)
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)loadTodoItems {
+    // Fetch the to-do items
+    NSArray<Item*>* items = [self fetchTodoList];
+ 
+    // Configure the table object and get the row controllers.
+    NSInteger rowCount = items.count;
+    [self.myTable setNumberOfRows:rowCount withRowType:@"MainRowType"];
+ 
+    // Iterate over the rows and set the label and image for each one.
+    for (NSInteger i = 0; i < rowCount; i++) {
+        // Set the values for the row controller
+        MyRowController* row = [self.myTable rowControllerAtIndex:i];
+ 
+        [row.itemImage setImage:items[i].image];
+        [row.itemLabel setText:items[i].title];
+    }
+}
+```
 
 In this example, the table gets the data for the rows, and then calls the table’s [`setNumberOfRows(_:withRowType:)`](wkinterfacetable/setnumberofrows(_:withrowtype:).md) method to create the rows. It then iterates over the newly created row controller objects, configuring each one’s label with the text for the to-do item.
 

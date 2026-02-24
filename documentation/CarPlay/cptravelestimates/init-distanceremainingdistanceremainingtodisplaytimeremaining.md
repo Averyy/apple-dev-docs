@@ -26,7 +26,7 @@ If not set, falls back to `distanceRemaining`.
 
 ## Parameters
 
-- `distanceRemaining`: The distance remaining in   units.   distanceRemainingToDisplay: the disance remaining to dfisk to a person, in   units.   time: `TimeInterval
+- `distanceRemaining`: The distance remaining in `Measurement` units. distanceRemainingToDisplay: the disance remaining to dfisk to a person, in `Measurement` units. time: `TimeInterval
 
 ## See Also
 

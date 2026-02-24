@@ -26,8 +26,8 @@ A new bag that contains the same values as `theBag`, or `NULL` if there was a pr
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new bag and its storage for values. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `theBag`: The bag to copy. The pointer values from   are copied into the new bag. However, the values are also retained by the new bag. The count of the new bag is the same as the count of  . The new bag uses the same callbacks as  .
+- `allocator`: The allocator to use to allocate memory for the new bag and its storage for values. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `theBag`: The bag to copy. The pointer values from `theBag` are copied into the new bag. However, the values are also retained by the new bag. The count of the new bag is the same as the count of `theBag`. The new bag uses the same callbacks as `theBag`.
 
 ## See Also
 

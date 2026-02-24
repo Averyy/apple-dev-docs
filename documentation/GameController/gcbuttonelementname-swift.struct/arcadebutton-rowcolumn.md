@@ -25,8 +25,8 @@ The name of an arcade stick button.
 
 ## Parameters
 
-- `row`: The row on the arcade stick that the button appears in, where   is the bottom row.
-- `column`: The column on the arcade stick that the button appears in, where   is the column nearest to the lever or direction buttons.
+- `row`: The row on the arcade stick that the button appears in, where `0` is the bottom row.
+- `column`: The column on the arcade stick that the button appears in, where `0` is the column nearest to the lever or direction buttons.
 
 
 ---

@@ -12,6 +12,12 @@ Allows this credential provider to show up in one-time-code text fields, to allo
 - macOS 15.0+
 - visionOS 2.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [ProvidesPasskeys](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md)

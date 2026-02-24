@@ -23,7 +23,7 @@ func product(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ## Parameters
 
 - `axes`: The axis over which the operation computes the product.
-- `keepDimensions`: A Boolean value that specifies that the operation keeps the   reduced dimension with a size of  .
+- `keepDimensions`: A Boolean value that specifies that the operation keeps the reduced dimension with a size of `1`.
 
 
 ---

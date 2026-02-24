@@ -20,8 +20,8 @@ The default initialization turns on cascading, sets the [`shouldCloseDocument`](
 
 ## Parameters
 
-- `windowNibName`: The name of the nib file (minus the “ ” extension) that archives the receiver’s window; cannot be  .
-- `owner`: The nib file’s owner; cannot be  .
+- `windowNibName`: The name of the nib file (minus the “`.nib`” extension) that archives the receiver’s window; cannot be `nil`.
+- `owner`: The nib file’s owner; cannot be `nil`.
 
 ## See Also
 

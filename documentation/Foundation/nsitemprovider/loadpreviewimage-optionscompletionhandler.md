@@ -28,8 +28,8 @@ This method supports implicit type coercion for the item parameter of the comple
 
 ## Parameters
 
-- `options`: A dictionary of keys and values that provide information about the item, such as the size of an image. For a list of possible keys, see  .
-- `completionHandler`: A completion handler block to execute with the results. The first parameter of this block must be a parameter of type  ,  ,   (in iOS), or   (in macOS) for receiving the image data. For more information about implementing the block, see  .
+- `options`: A dictionary of keys and values that provide information about the item, such as the size of an image. For a list of possible keys, see [`Options Dictionary Key`](options-dictionary-key.md).
+- `completionHandler`: A completion handler block to execute with the results. The first parameter of this block must be a parameter of type [`NSData`](nsdata.md), [`NSURL`](nsurl.md), [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) (in iOS), or [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) (in macOS) for receiving the image data. For more information about implementing the block, see [`NSItemProvider.CompletionHandler`](nsitemprovider/completionhandler.md).
 
 ## See Also
 

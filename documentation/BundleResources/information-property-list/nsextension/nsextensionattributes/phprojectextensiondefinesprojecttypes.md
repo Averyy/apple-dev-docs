@@ -8,6 +8,10 @@ A Boolean value indicating whether the Photos app gets a list of supported proje
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [PHSupportedMediaTypes](information-property-list/nsextension/nsextensionattributes/phsupportedmediatypes.md)

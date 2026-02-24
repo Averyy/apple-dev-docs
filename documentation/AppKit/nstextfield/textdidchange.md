@@ -20,7 +20,7 @@ This method causes the text field’s delegate to receive a [`controlTextDidChan
 
 ## Parameters
 
-- `notification`: The   notification to post to the default notification center.
+- `notification`: The [`textDidChangeNotification`](nscontrol/textdidchangenotification.md) notification to post to the default notification center.
 
 ## See Also
 

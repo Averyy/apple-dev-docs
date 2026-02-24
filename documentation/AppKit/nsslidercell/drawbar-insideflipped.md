@@ -21,7 +21,7 @@ You should not call this method explicitly. It’s included so you can override 
 ## Parameters
 
 - `rect`: The bounds of the slider’s bar, not of its interior rectangle.
-- `flipped`: A Boolean value that indicates whether the cell’s control view—that is, the   or   associated with the  —has a flipped coordinate system.
+- `flipped`: A Boolean value that indicates whether the cell’s control view—that is, the `NSSlider` or `NSMatrix` associated with the `NSSliderCell`—has a flipped coordinate system.
 
 ## See Also
 

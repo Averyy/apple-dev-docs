@@ -32,6 +32,11 @@ Views within the scroll view can become clients of the ruler view, having it dis
 
 ##### Commonly Used Methods
 
+- **[`clientView`](nsrulerview/clientview.md)**: Changes the ruler’s client view.
+- **[`markers`](nsrulerview/markers.md)**: Sets the markers displayed by the ruler view.
+- **[`accessoryView`](nsrulerview/accessoryview.md)**: Sets the accessory view.
+- **[`trackMarker(_:withMouseEvent:)`](nsrulerview/trackmarker(_:withmouseevent:).md)**: Allows the user to add a new marker.
+
 ##### Overview
 
 See NSRulerMarkerClientViewDelegation for delegate methods that may be of interest.

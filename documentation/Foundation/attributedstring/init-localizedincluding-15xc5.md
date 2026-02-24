@@ -28,8 +28,8 @@ The attributed string contains attributes of type [`AttributeScopes.FoundationAt
 
 ## Parameters
 
-- `resource`: A   that provides the localization key, table, bundle, and locale.
-- `scope`: An   key path that identifies an attribute scope to associate with the attributed string.
+- `resource`: A [`LocalizedStringResource`](localizedstringresource.md) that provides the localization key, table, bundle, and locale.
+- `scope`: An [`AttributeScopes`](attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
 
 ## See Also
 

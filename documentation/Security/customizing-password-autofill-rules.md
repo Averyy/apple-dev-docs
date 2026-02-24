@@ -18,11 +18,11 @@ required: (<identifier> | <character-class>), ..., (<identifier> | <character-cl
 
 Use a combination of keywords to specify your rules:
 
--  Use `required` if the restrictions must be followed by all passwords; use `allowed` if the restrictions specify a subset of allowed characters. If you don’t include the allowed property, all the required characters are permitted. If you include both properties, all the allowed and required characters are permitted. If neither are specified, then all ASCII printable characters are permitted
--  Use a combination of `upper` (A-Z), `lower` (a-z), `digits` (0-9), `special` (-~!@#$%^&*_+=`|(){}[:;”’<>,.? ] and space), `ascii-printable` (all ASCII printable characters), or `unicode` (all unicode characters).
--  Use `max-consecutive` to specify the maximum length of consecutive characters in your password. If you have multiple `max-consecutive` properties in your rule, the minimum value of the properties will be applied. Without this property, the password can be of any length.
--  A `<character-class>` is a custom characters class. This property consists of a list of ASCII characters surrounded by square brackets. For example, `[abc]` only allows characters “a”, “b”, and “c”.
--  A `<non-negative-integer>` is a valid non-negative integer. This property is used to specify the `max-consecutive` property, since the maximum length can’t be negative.
+- **Required or Allowed Keys:** Use `required` if the restrictions must be followed by all passwords; use `allowed` if the restrictions specify a subset of allowed characters. If you don’t include the allowed property, all the required characters are permitted. If you include both properties, all the allowed and required characters are permitted. If neither are specified, then all ASCII printable characters are permitted
+- **Character Classes:** Use a combination of `upper` (A-Z), `lower` (a-z), `digits` (0-9), `special` (-~!@#$%^&*_+=`|(){}[:;”’<>,.? ] and space), `ascii-printable` (all ASCII printable characters), or `unicode` (all unicode characters).
+- **Maximum Length Key:** Use `max-consecutive` to specify the maximum length of consecutive characters in your password. If you have multiple `max-consecutive` properties in your rule, the minimum value of the properties will be applied. Without this property, the password can be of any length.
+- **Custom Character Class:** A `<character-class>` is a custom characters class. This property consists of a list of ASCII characters surrounded by square brackets. For example, `[abc]` only allows characters “a”, “b”, and “c”.
+- **Non-negative Integer Class:** A `<non-negative-integer>` is a valid non-negative integer. This property is used to specify the `max-consecutive` property, since the maximum length can’t be negative.
 
 The default password rule is applied without any definition for the password rules property. It allows all ASCII printable characters, written as `allowed: ascii-printable`.
 
@@ -36,11 +36,67 @@ The specified password length can’t be less than 12, and the allowed character
 
 For example, say you want to require a password with at least eight characters consisting of a mix of uppercase and lowercase letters, at least one number, and at most two consecutive characters. You’d add this markup:
 
+**Swift**:
+
+```swift
+let newPasswordTextField = UITextField()
+newPasswordTextField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; max-consecutive: 2; minlength: 8;")
+
+```
+
+**HTML**:
+
+```html
+<input type="password" minlength="8" passwordrules="required: upper; required: lower; required: digit; max-consecutive: 2">
+
+```
+
 To require at least one digit or one special character, but not both, add this to your markup:
+
+**Swift**:
+
+```swift
+let newPasswordTextField = UITextField()
+newPasswordTextField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit, [-().&@?'#,/&quot;+]; max-consecutive: 2; minlength: 8;") 
+```
+
+**HTML**:
+
+```html
+<input type="password" minlength="8" passwordrules="required: upper; required: lower; required: digit, [-().&@?'#,/&quot;+]; max-consecutive: 2">
+
+```
 
 Or, you could require at least one of a set of special characters ( `-().&@?’#,/“+`) by adding this to your markup:
 
+**Swift**:
+
+```swift
+let newPasswordTextField = UITextField()
+newPasswordTextField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; required: [-().&@?'#,/&quot;+]; max-consecutive: 2; minlength: 8;")
+```
+
+**HTML**:
+
+```html
+<input type="password" minlength="8" passwordrules="required: upper; required: lower; required: digit; required: [-().&@?'#,/&quot;+]; max-consecutive: 2">
+
+```
+
 Alternatively, to optionally allow one special character, add this to your markup:
+
+**Swift**:
+
+```swift
+let newPasswordTextField = UITextField()
+newPasswordTextField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; allowed: [-().&@?'#,/&quot;+]; max-consecutive: 2; minlength: 8;")
+```
+
+**HTML**:
+
+```html
+<input type="password" minlength="8" passwordrules="required: upper; required: lower; required: digit; allowed: [-().&@?'#,/&quot;+]; max-consecutive: 2">
+```
 
 As another example, to allow a password to contain an arbitrary mix of letters, numbers, and special characters, add this to your markup:
 

@@ -22,7 +22,7 @@ static func result<OpensAppIntent>(opensIntent: OpensAppIntent, dialog: IntentDi
 
 ## Parameters
 
-- `opensIntent`: An   to shows the result of current intent
+- `opensIntent`: An `AppIntent` to shows the result of current intent
 - `dialog`: A custom success dialog
 
 

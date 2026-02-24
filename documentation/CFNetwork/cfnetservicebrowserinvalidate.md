@@ -29,7 +29,7 @@ This function is thread safe as long as another thread does not alter the same C
 
 ## Parameters
 
-- `browser`: The CFNetServiceBrowser to invalidate, obtained by a previous call to  .
+- `browser`: The CFNetServiceBrowser to invalidate, obtained by a previous call to [`CFNetServiceBrowserCreate(_:_:_:)`](cfnetservicebrowsercreate(_:_:_:).md).
 
 ## See Also
 

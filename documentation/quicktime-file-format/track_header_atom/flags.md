@@ -9,6 +9,11 @@ Three bytes that are reserved for the track header flags.
 
 These flags indicate how the track is used in the movie. The following flags are valid (all flags are enabled when set to 1).
 
+- **Track enabled**: Indicates that the track is enabled. Flag value is `0x0001`.
+- **Track in movie**: Indicates that the track is used in the movie. Flag value is `0x0002`.
+- **Track in preview**: Indicates that the track is used in the movie’s preview. Flag value is `0x0004`.
+- **Track in poster**: Indicates that the track is used in the movie’s poster. Flag value is `0x0008`.
+
 ## See Also
 
 - [Size](track_header_atom/size.md)

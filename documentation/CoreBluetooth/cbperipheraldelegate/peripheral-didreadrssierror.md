@@ -28,7 +28,7 @@ Core Bluetooth invokes this method when your app calls the [`readRSSI()`](cbperi
 
 - `peripheral`: The peripheral providing this information.
 - `RSSI`: The RSSI, in decibels, of the peripheral.
-- `error`: The reason the call failed, or   if no error occurred.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 ## See Also
 

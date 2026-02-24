@@ -28,7 +28,7 @@ See the [`NSDraggingSource`](nsdraggingsource.md), [`NSDraggingInfo`](nsdragging
 
 - `filename`: A string that specifies the absolute path for the file that is dragged.
 - `rect`: A rectangle that describes the position of the icon in the view’s coordinate system.
-- `flag`: A Boolean that indicates whether the icon being dragged should slide back to its position in the view if the file isn’t accepted. The icon slides back to   if   is  , the file is not accepted by the dragging destination, and the user has not disabled icon animation; otherwise it simply disappears.
+- `flag`: A Boolean that indicates whether the icon being dragged should slide back to its position in the view if the file isn’t accepted. The icon slides back to `aRect` if `slideBack` is [`true`](https://developer.apple.com/documentation/Swift/true), the file is not accepted by the dragging destination, and the user has not disabled icon animation; otherwise it simply disappears.
 - `event`: The mouse-down event object from which to initiate the drag operation. In particular, its mouse location is used for the offset of the icon being dragged.
 
 ## See Also

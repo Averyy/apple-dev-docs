@@ -29,9 +29,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `theService`: The CFNetService that is to be unscheduled; cannot be  .
-- `runLoop`: The run loop; cannot be  .
-- `runLoopMode`: The mode from which the service is to be unscheduled; cannot be  .
+- `theService`: The CFNetService that is to be unscheduled; cannot be `NULL`.
+- `runLoop`: The run loop; cannot be `NULL`.
+- `runLoopMode`: The mode from which the service is to be unscheduled; cannot be `NULL`.
 
 ## See Also
 

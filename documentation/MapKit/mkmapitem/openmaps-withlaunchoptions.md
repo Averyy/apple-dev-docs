@@ -33,8 +33,8 @@ If you don’t include the [`MKLaunchOptionsMapCenterKey`](mklaunchoptionsmapcen
 
 ## Parameters
 
-- `mapItems`: An array containing one or more   objects representing the items you want to display on the map.
-- `launchOptions`: You may specify   for this parameter.
+- `mapItems`: An array containing one or more `MKMapItem` objects representing the items you want to display on the map.
+- `launchOptions`: Additional information that the Maps app can use to configure the map display. For example, you can use the launch options to specify the visible map region, a 3D perspective, and the map type. For a list of keys you can put into this dictionary, see [`Launch options dictionary keys`](launch-options-dictionary-keys.md). You may specify `nil` for this parameter.
 
 ## See Also
 

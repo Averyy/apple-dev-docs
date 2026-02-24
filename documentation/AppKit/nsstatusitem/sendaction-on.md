@@ -20,7 +20,7 @@ A bit mask containing the previous settings. This bit mask uses the same values 
 
 ## Parameters
 
-- `mask`: Takes one or more of the following bit masks described in   section of the   class reference:  ,  ,  , and  . Bitwise-OR multiple bit masks.
+- `mask`: Takes one or more of the following bit masks described in `Getting Unicode Values` section of the `NSEvent` class reference: `NSLeftMouseUpMask`, `NSLeftMouseDownMask`, `NSLeftMouseDraggedMask`, and `NSPeriodicMask`. Bitwise-OR multiple bit masks.
 
 ## See Also
 

@@ -43,9 +43,9 @@ Note that some computations can take a relatively long time.
 
 ## Parameters
 
-- `comps`: The components to add to  .
-- `date`: The date to which   are added.
-- `opts`: If you specify no options, overflow in a unit carries into the higher units (as in typical addition).
+- `comps`: The components to add to `date`.
+- `date`: The date to which `comps` are added.
+- `opts`: Options for the calculation. See [`NSCalendar.Options`](nscalendar/options.md) for possible values. If you specify no options, overflow in a unit carries into the higher units (as in typical addition).
 
 ## See Also
 

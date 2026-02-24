@@ -21,7 +21,7 @@ Inserts the window at the specified location within the tab group. If the window
 ## Parameters
 
 - `window`: The window to insert into the tab group.
-- `index`: Raises an   if the index is negative or larger than the number of tabs in the group.
+- `index`: The location in the tab group at which to insert window. This value must not be negative, and must not be greater than the number of windows in the tab group. Raises an `NSInternalInconsistencyException` if the index is negative or larger than the number of tabs in the group.
 
 ## See Also
 

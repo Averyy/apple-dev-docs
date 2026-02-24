@@ -48,7 +48,7 @@ SwiftUI renders the appropriate colors for each appearance:
 ## Parameters
 
 - `name`: The name of the color resource to look up.
-- `bundle`: The bundle in which to search for the color resource.   If you don’t indicate a bundle, the initializer looks in your app’s   main bundle by default.
+- `bundle`: The bundle in which to search for the color resource. If you don’t indicate a bundle, the initializer looks in your app’s main bundle by default.
 
 ## See Also
 

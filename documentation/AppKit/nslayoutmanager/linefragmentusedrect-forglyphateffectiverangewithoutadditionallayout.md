@@ -29,8 +29,8 @@ Overriding this method is not recommended. If the line fragment used rectangle n
 ## Parameters
 
 - `glyphIndex`: The glyph for which to return the line fragment used rectangle.
-- `effectiveGlyphRange`: If not  , on output, the range for all glyphs in the line fragment.
-- `flag`: If  , glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if  , both are performed as needed.
+- `effectiveGlyphRange`: If not `NULL`, on output, the range for all glyphs in the line fragment.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), both are performed as needed.
 
 ## See Also
 

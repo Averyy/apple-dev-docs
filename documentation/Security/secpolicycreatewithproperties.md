@@ -31,7 +31,7 @@ A new policy, or `NULL` if the policy could not be created.
 ## Parameters
 
 - `policyIdentifier`: The identifier for the desired policy type.
-- `properties`: A properties dictionary. See   for a list of valid property names to use as keys in this dictionary.
+- `properties`: A properties dictionary. See [`Security Policy Keys`](security-policy-keys.md) for a list of valid property names to use as keys in this dictionary.
 
 
 ---

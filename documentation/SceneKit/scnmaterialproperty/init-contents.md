@@ -32,7 +32,7 @@ You create new [`SCNMaterialProperty`](scnmaterialproperty.md) instances to prov
 
 ## Parameters
 
-- `contents`: The visual contents of the material property—a color, image, or source of animated content. For details, see the discussion of the    property.
+- `contents`: The visual contents of the material property—a color, image, or source of animated content. For details, see the discussion of the  [`contents`](scnmaterialproperty/contents.md) property.
 
 
 ---

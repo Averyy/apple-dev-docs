@@ -28,6 +28,22 @@ The frame in the receiver that contains the specified line number, in screen coo
 
 To determine the onscreen rectangle (or frame) of a line, you can use code such as the following:
 
+**Swift**:
+
+```swift
+let lineBounds: CGRect = // the bounds of the line in view space
+let view: UIView = // the relevant view
+return UIAccessibilityConvertFrameToScreenCoordinates(lineBounds, view)
+```
+
+**Objective-C**:
+
+```objc
+CGRect lineBounds = // The bounds of the line in view space.
+UIView *view = // The relevant view.
+return UIAccessibilityConvertFrameToScreenCoordinates(lineBounds, view);
+```
+
 ## Parameters
 
 - `lineNumber`: The line number.

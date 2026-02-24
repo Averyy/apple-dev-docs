@@ -16,6 +16,18 @@ UIKit determines the target of an unwind segue at runtime, so you aren’t restr
 
 The presence of an unwind segue action method tells UIKit that a view controller is a potential destination for an unwind segue. Before configuring any unwind segues in your storyboard, add this action method to at least one of your view controllers. If no view controller has an unwind action, Xcode prevents you from creating unwind segues. This action method has the following format:
 
+**Swift**:
+
+```swift
+@IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction) myUnwindAction:(UIStoryboardSegue*)unwindSegue
+```
+
 You don’t need to do anything in your unwind segue action methods. The presence of the method is enough to dismiss the current view controller. However, you can use the method to perform relevant tasks during the dismissal process. For example, you might pass data from the dismissed view controller back to the parent that presented it. If you do, you can use the provided [`UIStoryboardSegue`](uistoryboardsegue.md) object to retrieve the starting and ending view controllers.
 
 ##### Connect a Triggering Object to the Exit Control

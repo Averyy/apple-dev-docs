@@ -37,6 +37,24 @@ Shader Validation instruments all pipelines by default (`MTL_SHADER_VALIDATION_D
 
 Next, you can set `MTL_SHADER_VALIDATION_ENABLE_PIPELINES` and `MTL_SHADER_VALIDATION_DISABLE_PIPELINES` to selectively enable and disable instrumentation for given pipelines. You can use the pipeline labels and Shader Validation unique identifiers (UIDs) as entries (see [`Print pipeline UIDs`](https://developer.apple.com#Print-pipeline-UIDs)). Multiple entries need to be comma-separated, without spaces (see `man MetalValidation` for more information). In the following example, the pipelines with the label `foo` are the only pipelines not instrumented by Shader Validation.
 
+**Swift**:
+
+```swift
+let descriptor = MTLRenderPipelineDescriptor()
+descriptor.label = "foo"
+
+let pipelineState = try? device.makeRenderPipelineState(descriptor: descriptor)
+```
+
+**Objective-C**:
+
+```obj-c
+MTLRenderPipelineDescriptor* descriptor = [[MTLRenderPipelineDescriptor alloc] init];
+descriptor.label = @"foo";
+
+id<MTLRenderPipelineState> pipelineState = [device newRenderPipelineStateWithDescriptor:descriptor error:nil];
+```
+
 ```zsh
 > export MTL_SHADER_VALIDATION=1
 > export MTL_SHADER_VALIDATION_DEFAULT_STATE=all
@@ -49,6 +67,24 @@ Next, you can set `MTL_SHADER_VALIDATION_ENABLE_PIPELINES` and `MTL_SHADER_VALID
 Alternatively, you can programmatically set your pipeline descriptor property [`shaderValidation`](https://developer.apple.com/documentation/Metal/MTLRenderPipelineDescriptor/shaderValidation) to either [`MTLShaderValidation.enabled`](https://developer.apple.com/documentation/Metal/MTLShaderValidation/enabled) or [`MTLShaderValidation.disabled`](https://developer.apple.com/documentation/Metal/MTLShaderValidation/disabled).
 
 In the following example, `pipelineState` is the only pipeline instrumented by Shader Validation.
+
+**Swift**:
+
+```swift
+let descriptor = MTLRenderPipelineDescriptor()
+descriptor.shaderValidation = MTLShaderValidation.enabled
+
+let pipelineState = try? device.makeRenderPipelineState(descriptor: descriptor)
+```
+
+**Objective-C**:
+
+```obj-c
+MTLRenderPipelineDescriptor* descriptor = [[MTLRenderPipelineDescriptor alloc] init];
+descriptor.shaderValidation = MTLShaderValidationEnabled;
+
+id<MTLRenderPipelineState> pipelineState = [device newRenderPipelineStateWithDescriptor:descriptor error:nil];
+```
 
 ```zsh
 > export MTL_SHADER_VALIDATION=1
@@ -85,6 +121,15 @@ If you discover an error in your shader, consider taking a capture and investiga
 ##### Enable Shader Validation with Environment Variables
 
 You can also enable Shader Validation by setting the following environment variables on your Metal app:
+
+- **MTL_SHADER_VALIDATION=1**: Enables all Shader Validation tests.
+- **MTL_SHADER_VALIDATION_ENABLE_ERROR_REPORTING=1**: Enables Shader Validation error reporting.
+- **MTL_SHADER_VALIDATION_COMPILER_INLINING**: Determines the amount of code inlining that occurs. Possible values are `default` and `full`. Setting the value to `full` forces inlining. Increasing inlining can result in improved runtime performance at the cost of compile time performance. Decreasing inlining can result in improved compile time performance at the cost of runtime performance.
+- **MTL_SHADER_VALIDATION_FAIL_MODE**: Sets the behavior for handling invalid accesses. Possible values are `zerofill` (default) and `allow`. `zerofill` causes invalid reads to return `0`, and drops any invalid writes. `allow` allows an invalid read or write, but can result in command buffer failure, depending on the platform. It also reduces compile and runtime performance impact.
+- **MTL_SHADER_VALIDATION_GLOBAL_MEMORY=1**: Checks all global memory accesses. Accessing invalid memory follows the behavior that `MTL_SHADER_VALIDATION_FAIL_MODE` specifies.
+- **MTL_SHADER_VALIDATION_THREADGROUP_MEMORY=1**: Checks all threadgroup memory accesses. Accessing invalid memory follows the behavior that `MTL_SHADER_VALIDATION_FAIL_MODE` specifies.
+- **MTL_SHADER_VALIDATION_TEXTURE_USAGE=1**: Checks all texture member functions, such as `read`, `write`, `get_width`, and so on. Metal honors your setting for `MTL_SHADER_VALIDATION_FAIL_MODE` when an app triggers an invalid texture operation, including accessing a `nil` texture instance, a valid but nonresident texture instance, a resident texture instance that’s a type that doesn’t match the shader’s signature, or a resident texture instance that doesn’t have an appropriate [`MTLResourceUsage`](https://developer.apple.com/documentation/Metal/MTLResourceUsage) configuration from one of the resource usage methods of an [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder) or [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder) instance (see [`Argument buffer resource preparation commands`](https://developer.apple.com/documentation/Metal/argument-buffer-resource-preparation-commands)).
+- **MTL_SHADER_VALIDATION_STACK_OVERFLOW=1**: Checks all indirect calls (calls by function pointer, visible functions, intersection functions, and dynamic libraries), as well as recursive calls. If the call stack depth for such functions exceeds the value in `maxCallStackDepth` for that stage, an error occurs and the system skips the function call.
 
 For a complete list of settings, run `man MetalValidation` in Terminal.
 

@@ -24,7 +24,39 @@ func vvdivf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafePo
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The numerators input array, *y*.
+- **parameter 3**: The denominators input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvdivf(_:_:_:_:)`](vvdivf(_:_:_:_:).md):
+
+**Swift**:
+
+```swift
+var x: [Float] = [1, 2, 2, 4]
+var y: [Float] = [1, 1, 10, 30]
+var z = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count) 
+ 
+vvdivf(&z, &y, &x, &n) 
+ 
+print(z) // [1.0, 0.5, 5.0, 7.5]
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {1, 2, 2, 4};
+float y[] = {1, 1, 10, 30};
+float z[4];
+int n = 4;
+ 
+vvdivf(z, y, x, &n);
+ 
+NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+
+```
 
 ## See Also
 

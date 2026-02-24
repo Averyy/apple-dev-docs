@@ -22,7 +22,7 @@ func sort(using comparator: Selector)
 
 ## Parameters
 
-- `comparator`: The   message is sent to each object in the array and has as its single argument another object in the array. The   method should return   if the array is smaller than the argument,   if the array is larger than the argument, and   if they are equal.
+- `comparator`: A selector that specifies the comparison method to use to compare elements in the array. The `comparator` message is sent to each object in the array and has as its single argument another object in the array. The `comparator` method should return `NSOrderedAscending` if the array is smaller than the argument, `NSOrderedDescending` if the array is larger than the argument, and `NSOrderedSame` if they are equal.
 
 ## See Also
 

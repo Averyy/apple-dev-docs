@@ -20,6 +20,18 @@ The images you display in your watchOS app can be static or animated. You use [`
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to an image object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myImage: WKInterfaceImage!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceImage* myImage;
+```
+
 During the initialization of your interface controller, WatchKit creates any needed image objects and assigns them to their associated outlets. At that point, you can use those objects to make changes to the onscreen images.
 
 The images you use in your interface can be embedded in your Watch app bundle, created dynamically, or downloaded from the Internet. Images in your Watch app bundle represent the images that are part of your app’s user interface. Images that you download or create dynamically exist either in memory or as files in your WatchKit extension’s container directory. The `WKInterfaceImage` class provides setter methods for getting your images onscreen regardless of their location.
@@ -47,7 +59,7 @@ For more information about the supported image formats, see [`UIImage`](https://
 
 Animated images are an easy and fast way to make your interface more dynamic and engaging for users. You create animated images from existing images in your asset catalog or by creating a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object using the images you want.
 
-For animations based on images in your asset catalogs, name your image resources using the convention , where the  string is the same for all images and the  value indicates the position of the image in the animation sequence. The number of the first image in the sequence must be `0` or `1`. For example, an animation with three images could have the file names `image1`, `image2`, and `image3`. If you store image resource files in your Watch app bundle without using asset catalogs, the naming convention for your image files is the same except your files should also have the appropriate filename extension.
+For animations based on images in your asset catalogs, name your image resources using the convention *<name><number>*, where the *<name>* string is the same for all images and the *<number>* value indicates the position of the image in the animation sequence. The number of the first image in the sequence must be `0` or `1`. For example, an animation with three images could have the file names `image1`, `image2`, and `image3`. If you store image resource files in your Watch app bundle without using asset catalogs, the naming convention for your image files is the same except your files should also have the appropriate filename extension.
 
 Whenever possible, place image resources in an asset catalog in your Watch app bundle (not in your WatchKit extension’s bundle). Placing them in the Watch app bundle lets you use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method to load the animated image at runtime, which simplifies the loading process. For animations you generate dynamically, use the [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) to assemble your animation in your WatchKit extension, and then set that animation using the [`setImage(_:)`](wkinterfaceimage/setimage(_:).md) method.
 

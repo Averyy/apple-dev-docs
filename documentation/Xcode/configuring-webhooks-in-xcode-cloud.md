@@ -8,7 +8,7 @@ Configure webhooks that connect Xcode Cloud to other services and tools.
 
 You might use custom services and tools in your development process and for project management purposes and need to connect them to Xcode Cloud. For example, you might want to show build information from Xcode Cloud on your team’s dashboard, automate the merge process for pull requests (PRs), automatically open or close issues in your issue tracking tool, and so on.
 
-To connect Xcode Cloud with a custom tool or service, you need to configure an HTTPS endpoint that can receive HTTP requests from Xcode Cloud, referred to as a . By configuring a webhook, you enable Xcode Cloud to send a rich JSON payload to another service or tool at certain moments during the build process. The service or tool can then parse the JSON payload and use the received information to provide its functionality.
+To connect Xcode Cloud with a custom tool or service, you need to configure an HTTPS endpoint that can receive HTTP requests from Xcode Cloud, referred to as a *webhook*. By configuring a webhook, you enable Xcode Cloud to send a rich JSON payload to another service or tool at certain moments during the build process. The service or tool can then parse the JSON payload and use the received information to provide its functionality.
 
 > **Note**: You can configure up to five webhooks per Xcode Cloud product.
 

@@ -27,7 +27,7 @@ Use this method to append content to the accessibility label for a view. For exa
 
 ## Parameters
 
-- `content`: A view builder closure that takes a proxy   value representing the modified view. You can combine the modified   view with other content to create a new accessibility label for   the original view.
+- `content`: A view builder closure that takes a proxy value representing the modified view. You can combine the modified view with other content to create a new accessibility label for the original view.
 
 ## See Also
 

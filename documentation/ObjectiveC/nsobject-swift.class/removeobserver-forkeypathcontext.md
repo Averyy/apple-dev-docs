@@ -29,7 +29,7 @@ Be sure to invoke this method (or [`removeObserver(_:forKeyPath:)`](nsobject-swi
 ## Parameters
 
 - `observer`: The object to remove as an observer.
-- `keyPath`: A key-path, relative to the observed object, for which   is registered to receive KVO change notifications.
+- `keyPath`: A key-path, relative to the observed object, for which `observer` is registered to receive KVO change notifications.
 - `context`: Arbitrary data that more specifically identifies the observer to be removed.
 
 ## See Also

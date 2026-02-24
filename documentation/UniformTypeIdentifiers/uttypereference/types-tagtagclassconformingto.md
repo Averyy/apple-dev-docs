@@ -23,8 +23,8 @@ class func types(tag: String, tagClass: String, conformingTo supertype: UTType?)
 ## Parameters
 
 - `tag`: The desired tag, such as a filename extension.
-- `tagClass`: The tag class, such as  .
-- `supertype`: Another type that the resulting type must conform to; for example,  .
+- `tagClass`: The tag class, such as [`UTTagClassFilenameExtension`](uttagclassfilenameextension.md).
+- `supertype`: Another type that the resulting type must conform to; for example, [`UTTypeData`](uttypedata.md).
 
 
 ---

@@ -25,6 +25,20 @@ To participate in the appearance proxy API, tag appearance property accessor met
 
 Appearance property accessor methods must be of the form:
 
+**Swift**:
+
+```swift
+func propertyForAxis1(axis1: IntegerType, axis2: IntegerType, axisN: IntegerType) -> PropertyType
+func setProperty(property: PropertyType, forAxis1 axis1: IntegerType, axis2: IntegerType)
+```
+
+**Objective-C**:
+
+```objc
+- (PropertyType)propertyForAxis1:(IntegerType)axis1 axis2:(IntegerType)axis2 … axisN:(IntegerType)axisN;
+- (void)setProperty:(PropertyType)property forAxis1:(IntegerType)axis1 axis2:(IntegerType)axis2 … axisN:(IntegerType)axisN;
+```
+
 You may have no axes or as many as you like for any property.
 
 The property type may be any standard iOS type: `id`, [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger), [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger), [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct), [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint), [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize), [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), [`UIEdgeInsets`](uiedgeinsets.md) or [`UIOffset`](uioffset.md). Axis parameter values must be either [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) or [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger). UIKit throws an exception if other types are used in the axes.

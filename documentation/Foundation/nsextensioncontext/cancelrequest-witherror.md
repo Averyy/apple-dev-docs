@@ -26,7 +26,7 @@ On return, the `userInfo` dictionary of the [`NSError`](nserror.md) object conta
 
 ## Parameters
 
-- `error`: The error object to return. It must be non- .
+- `error`: The error object to return. It must be non-`nil`.
 
 ## See Also
 

@@ -25,7 +25,7 @@ var normal: PhysicallyBasedMaterial.Normal { get set }
 
 #### Discussion
 
- is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing , which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image.
+*Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image.
 
 If you provide a normal map, RealityKit uses the normals stored in the image to do lighting calculations. This results in much more realistic highlights, shadows, and reflections without incurring the computational cost of using a much higher resolution 3D model. RealityKit uses tangent-space normal maps.
 

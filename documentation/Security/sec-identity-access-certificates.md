@@ -28,8 +28,8 @@ Access the certificates associated with the `sec_identity_t` instance.
 
 ## Parameters
 
-- `identity`: A   instance.
-- `handler`: A block to invoke one or more times with   instances.
+- `identity`: A `sec_identity_t` instance.
+- `handler`: A block to invoke one or more times with `sec_certificate_t` instances.
 
 
 ---

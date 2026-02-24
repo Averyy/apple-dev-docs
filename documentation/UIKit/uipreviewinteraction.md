@@ -20,13 +20,13 @@ class UIPreviewInteraction
 
 #### Overview
 
-A 3D Touch interaction results in a  that comprises two phases, the first also called , followed by . The interaction progresses through these phases as a person applies more force with a touch. The following image shows the relationship between the force of a person’s touch and the phases of the preview interaction.
+A 3D Touch interaction results in a *preview interaction* that comprises two phases, the first also called *preview*, followed by *commit*. The interaction progresses through these phases as a person applies more force with a touch. The following image shows the relationship between the force of a person’s touch and the phases of the preview interaction.
 
 ![An illustration showing the preview interaction as it progresses through the preview phase and into the commit phases in response to increasing touch force.](https://docs-assets.developer.apple.com/published/be9bfae0ee50a5a22bc56521a0d7dea9/media-2793214%402x.png)
 
-When using view controller previewing,  represents the preview phase, and  the commit phase.
+When using view controller previewing, *peek* represents the preview phase, and *pop* the commit phase.
 
-> **Note**:  If you want to provide the system default view controller previewing behavior ( and ), use the [`registerForPreviewing(with:sourceView:)`](uiviewcontroller/registerforpreviewing(with:sourceview:).md) and [`unregisterForPreviewing(withContext:)`](uiviewcontroller/unregisterforpreviewing(withcontext:).md) methods on [`UIViewController`](uiviewcontroller.md) instead of [`UIPreviewInteraction`](uipreviewinteraction.md). See `Working With 3D Touch Previews and Preview Quick Actions` for further details.
+> **Note**:  If you want to provide the system default view controller previewing behavior (*peek* and *pop*), use the [`registerForPreviewing(with:sourceView:)`](uiviewcontroller/registerforpreviewing(with:sourceview:).md) and [`unregisterForPreviewing(withContext:)`](uiviewcontroller/unregisterforpreviewing(withcontext:).md) methods on [`UIViewController`](uiviewcontroller.md) instead of [`UIPreviewInteraction`](uipreviewinteraction.md). See `Working With 3D Touch Previews and Preview Quick Actions` for further details.
 
 A preview interaction is responsible for managing 3D Touch interactions for a specified view. It uses a delegate object to communicate the progress and status of the interaction to your code.
 

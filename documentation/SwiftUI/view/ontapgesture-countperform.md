@@ -51,7 +51,7 @@ struct TapGestureExample: View {
 
 ## Parameters
 
-- `count`: The number of taps or clicks required to trigger the action   closure provided in  . Defaults to  .
+- `count`: The number of taps or clicks required to trigger the action closure provided in `action`. Defaults to `1`.
 - `action`: The action to perform.
 
 ## See Also

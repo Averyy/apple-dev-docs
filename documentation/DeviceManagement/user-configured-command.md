@@ -31,6 +31,10 @@ Refer to the following sections to determine supported channels and requirements
 - [object UserConfiguredResponse](userconfiguredresponse.md)
   A response from the device after it processes the command to inform the device that it can continue past Setup Assistant and finish login.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
+
 ## Request Body
 
 The request object the server returns for the User Configured Command.

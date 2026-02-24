@@ -22,6 +22,9 @@ typealias CMMagnetometerHandler = (CMMagnetometerData?, (any Error)?) -> Void
 
 Blocks of type `CMMagnetometerHandler` are called when there is magnetometer data to process. You pass the block into the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) method as the second argument. Blocks of this type return no value but take two arguments:
 
+- **`magnetometerData`**: An object that encapsulates a [`CMMagneticField`](cmmagneticfield.md) structure with fields holding magnetic-field values for the three axes of movement.
+- **`error`**: An error object representing an error encountered in providing magnetometer data. If an error occurs, you should stop magnetometer updates and inform the user of the problem. If there is no error, this argument is `nil`. Core Motion errors are of the [`CMErrorDomain`](cmerrordomain.md) domain and the [`CMError`](cmerror.md) type.
+
 ## See Also
 
 - [var magnetometerUpdateInterval: TimeInterval](cmmotionmanager/magnetometerupdateinterval.md)

@@ -8,6 +8,9 @@ The keys that you include in your global vocabulary file to show how users engag
 
 The `IntentPhrases` key contains sample phrases that a user might speak to initiate the handling of one of your intents. The value of this key is an array of dictionaries, each of which defines one of the sample phrases to speak. Each dictionary contains the following keys:
 
+- **`IntentName`**: (Required) A string containing the name of the intent class to which the examples apply. For example, you might specify the string “INRequestRideIntent” to specify sample phrases for booking a ride.
+- **`IntentExamples`**: (Required) An array of strings containing the sample phrases that apply to the specified intent. Your sample phrases may be as complex as needed, but should reflect actual phrases that users might say. You may include custom terminology that you defined in the [`Parameter Vocabularies`](parameter-vocabularies.md) portion of your vocabulary file.
+
 > ❗ **Important**:  Apps are expected to provide some example phrases. Siri displays your app’s sample phrases in Siri Guide so that users can access them directly from the Siri interface.
 
 Xcode helps you add example phrases to your vocabulary file. When you create a property list file with the name `AppIntentVocabulary.plist`, Xcode knows that the file should contain custom vocabulary, and it makes only the relevant keys available in the property list editor. The figure below shows an example of a global vocabulary file in Xcode that contains sample phrases for starting a workout.

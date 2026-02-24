@@ -22,7 +22,7 @@ If you send [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.m
 
 ## Parameters
 
-- `canSpawnSeparateThread`:   if the receiver is allowed to spawn a separate thread; otherwise,  .
+- `canSpawnSeparateThread`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is allowed to spawn a separate thread; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 
 ---

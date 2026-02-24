@@ -29,8 +29,8 @@ Use this function to convert accessibility frame rectangles to screen coordinate
 
 ## Parameters
 
-- `rect`: A rectangle specified in the coordinate system of the specified  .
-- `view`: The view that contains the specified rectangle. This parameter must not be  .
+- `rect`: A rectangle specified in the coordinate system of the specified `view`.
+- `view`: The view that contains the specified rectangle. This parameter must not be `nil`.
 
 ## See Also
 

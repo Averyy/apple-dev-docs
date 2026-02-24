@@ -25,7 +25,7 @@ This function ends any previous page before beginning a new one. It sets the med
 ## Parameters
 
 - `bounds`: A rectangle that specifies the size and location of the new PDF page. This rectangle corresponds to the media box in PDF terminology.
-- `pageInfo`: A dictionary that specifies additional page-related information, such as the boxes that define different parts of the page. For a list of keys you can include in this dictionary, see   in  .
+- `pageInfo`: A dictionary that specifies additional page-related information, such as the boxes that define different parts of the page. For a list of keys you can include in this dictionary, see `Box Keys` in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys).
 
 ## See Also
 

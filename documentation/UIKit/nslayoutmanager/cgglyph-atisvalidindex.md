@@ -29,7 +29,7 @@ If noncontiguous layout is disabled, calling this method generates all glyphs up
 ## Parameters
 
 - `glyphIndex`: The index of the glyph that you want.
-- `isValidIndex`: An optional Boolean variable. On return, the variable is set to   if the glyph index is valid or   if it is not.
+- `isValidIndex`: An optional Boolean variable. On return, the variable is set to [`true`](https://developer.apple.com/documentation/Swift/true) if the glyph index is valid or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 ## See Also
 

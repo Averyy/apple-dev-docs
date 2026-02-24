@@ -29,6 +29,8 @@ This method applies the maximum component filter to an image. The effect applies
 
 The maximum component filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds brightness and makes the input image grayscale:
 
 ```swift

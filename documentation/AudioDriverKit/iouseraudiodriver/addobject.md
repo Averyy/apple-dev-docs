@@ -24,7 +24,7 @@ Use this method to add to the driver any objects that require management by the 
 
 ## Parameters
 
-- `in_object`: The   to add to the driver.
+- `in_object`: The [`IOUserAudioObjectID`](audiodriverkit/iouseraudioobjectid.md) to add to the driver.
 
 ## See Also
 

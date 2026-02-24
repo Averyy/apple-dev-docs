@@ -17,7 +17,7 @@ func XCTAssertThrowsError<T>(_ expression: @autoclosure () throws -> T, _ messag
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.
-- `errorHandler`: An optional handler for errors that   throws.
+- `errorHandler`: An optional handler for errors that `expression` throws.
 
 
 ---

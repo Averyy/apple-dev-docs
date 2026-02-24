@@ -12,10 +12,10 @@ Secure, customize, and act on email messages that users send and receive.
 
 MailKit lets your app include an app extension that customizes several features of Mail. A Mail app extension provides one or more of the following enhancements:
 
-- A  defines rules to prevent loading content when users view messages.
-- An  performs actions such as flagging, setting colors, or archiving when Mail downloads messages.
-- A  validates recipient email addresses, displays a view controller on Mail’s compose windows, confirms if messages are suitable for delivery, and adds custom headers.
-- A  secures messages using encryption and digital signatures.
+- A *content blocker* defines rules to prevent loading content when users view messages.
+- An *action handler* performs actions such as flagging, setting colors, or archiving when Mail downloads messages.
+- A *compose session handler* validates recipient email addresses, displays a view controller on Mail’s compose windows, confirms if messages are suitable for delivery, and adds custom headers.
+- A *message security handler* secures messages using encryption and digital signatures.
 
 The entry point for your extension is an object that conforms to [`MEExtension`](meextension.md). When MailKit invokes your extension, this objects determines the handlers that provide each capability in the list above.
 

@@ -25,8 +25,8 @@ The system loads the instrument from the bank that was previously set by the MID
 
 ## Parameters
 
-- `program`: The program (preset) number within the bank to load. The valid range is   to  .
-- `channel`: The channel number to send the event to. The valid range is   to  .
+- `program`: The program (preset) number within the bank to load. The valid range is `0` to `127`.
+- `channel`: The channel number to send the event to. The valid range is `0` to `15`.
 
 ## See Also
 

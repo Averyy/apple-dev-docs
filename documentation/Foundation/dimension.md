@@ -63,7 +63,20 @@ In addition to the Apple-provided units, you can define custom units. You can in
 
 The simplest way to define a custom unit is to create a new instance of an existing `NSDimension` subclass using the [`init(symbol:converter:)`](dimension/init(symbol:converter:).md) method.
 
-For example, the  is a nonstandard unit of length (1 smoot = 1.70180 m). You can create a new instance of [`UnitLength`](unitlength.md) as follows:
+For example, the *smoot* is a nonstandard unit of length (1 smoot = 1.70180 m). You can create a new instance of [`UnitLength`](unitlength.md) as follows:
+
+**Swift**:
+
+```swift
+let smoots = UnitLength(symbol: "smoot", converter: UnitConverterLinear(coefficient: 1.70180))
+```
+
+**Objective-C**:
+
+```objc
+NSUnitConverter *smootsToMeters = [[NSUnitConverterLinear alloc] initWithCoefficient:1.70180];
+NSUnitLength *smoots = [[NSUnitLength alloc] initWithSymbol:@"smoot" converter:smootsToMeters];
+```
 
 ###### Extending Existing Dimension Subclasses
 
@@ -71,11 +84,70 @@ Alternatively, if you use a custom unit extensively throughout an app, consider 
 
 For example, a measurement of speed can be furlongs per fortnight (1 fur/ftn = 201.168 m / 1,209,600 s). If an app makes frequent use of this unit, you can extend [`UnitSpeed`](unitspeed.md) to add a `furlongsPerFortnight` static variable for convenient access as follows:
 
+**Swift**:
+
+```swift
+extension UnitSpeed {
+    static let furlongPerFortnight = UnitSpeed(symbol: "fur/ftn", converter: UnitConverterLinear(coefficient: 201.168 / 1209600.0))
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface NSUnitSpeed ()
++ (NSUnitSpeed *)furlongsPerFortnight;
+@end
+ 
+@implementation NSUnitSpeed ()
++ (NSUnitSpeed *)furlongsPerFortnight {
+    NSUnitConverter *furlongsPerFortnightToMetersPerSecond = [[NSUnitConverterLinear alloc] initWithCoefficient:201.168 / 1209600.0];
+    return [[NSUnitSpeed alloc] initWithSymbol:@"fur/ftn" converter:furlongsPerFortnightToMetersPerSecond];
+}
+@end
+```
+
 ###### Creating a Custom Dimension Subclass
 
 You can create a new subclass of [`Dimension`](dimension.md) to describe a new unit dimension.
 
 For example, the Foundation framework doesn’t define any units for radioactivity. Radioactivity is the process by which the nucleus of an atom emits radiation. The SI unit of measure for radioactivity is the becquerel (Bq), which is the quantity of radioactive material in which one nucleus decays per second (1 Bq = 1 s-1). Radioactivity is also commonly described in terms of curies (Ci), a unit defined relative to the decay of one gram of the radium-226 isotope (1 Ci = 3.7 × 1010 Bq). You can implement a `CustomUnitRadioactivity` class that defines both units of radioactivity as follows:
+
+**Swift**:
+
+```swift
+class CustomRadioactivityUnit: Dimension {
+    static let becquerel = CustomRadioactivityUnit(symbol: "Bq", UnitConverterLinear(coefficient: 1.0))
+    static let curie = CustomRadioactivityUnit(symbol: "Ci", UnitConverterLinear(coefficient: 3.7e10))
+    
+    static let baseUnit = self.becquerel
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface CustomUnitRadioactivity: NSDimension
++ (CustomUnitRadioactivity *)becquerels;
++ (CustomUnitRadioactivity *)curies;
+@end
+ 
+@implementation CustomRadioactivityUnit
++ (CustomUnitRadioactivity *)becquerels {
+    NSUnitConverter *baseUnitConverter = [[NSUnitConverterLinear alloc] initWithCoefficient:1];
+    return [[CustomUnitRadioactivity alloc] initWithSymbol:@"Bq" converter:baseUnitConverter];
+}
+ 
++ (CustomUnitRadioactivity *)curies {
+    NSUnitConverter *curiesToBecquerels = [[NSUnitConverterLinear alloc] initWithCoefficient:3.7e10];
+    return [[CustomUnitRadioactivity alloc] initWithSymbol:@"Ci" converter:curiesToBecquerels];
+}
+ 
++ (instancetype)baseUnit {
+    return [self bacquerels];
+}
+@end
+```
 
 ##### Subclassing Notes
 

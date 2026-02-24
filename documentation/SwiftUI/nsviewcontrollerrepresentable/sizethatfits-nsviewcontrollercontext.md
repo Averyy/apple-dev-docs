@@ -28,7 +28,7 @@ This method may be called more than once with different proposed sizes during th
 
 - `proposal`: The proposed size for the view controller.
 - `nsViewController`: Your custom view controller object.
-- `context`: A context structure containing information about the   current state of the system.
+- `context`: A context structure containing information about the current state of the system.
 
 
 ---

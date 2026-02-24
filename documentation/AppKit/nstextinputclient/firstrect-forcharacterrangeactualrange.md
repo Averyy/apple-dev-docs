@@ -26,7 +26,7 @@ If `aRange` spans multiple lines of text in the text view, the rectangle returne
 ## Parameters
 
 - `range`: The character range whose boundary rectangle is returned.
-- `actualRange`: If non- , contains the character range corresponding to the returned area if it was adjusted, for example, to a grapheme cluster boundary or characters in the first line fragment.
+- `actualRange`: If non-`NULL`, contains the character range corresponding to the returned area if it was adjusted, for example, to a grapheme cluster boundary or characters in the first line fragment.
 
 ## See Also
 

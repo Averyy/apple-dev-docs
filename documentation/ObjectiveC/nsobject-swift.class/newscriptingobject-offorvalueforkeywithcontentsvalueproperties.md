@@ -30,7 +30,7 @@ The default implementation of this method creates new scripting objects by sendi
 
 - `objectClass`: The class of the scriptable object to be created.
 - `key`: A key that identifies the relationship into which the new class object will be inserted.
-- `contentsValue`: Specifies the contents of the object to be created. This may be  . (See also the Discussion section.)
+- `contentsValue`: Specifies the contents of the object to be created. This may be `nil`. (See also the Discussion section.)
 - `properties`: The properties to be set in the new object. (See also the Discussion section.)
 
 ## See Also

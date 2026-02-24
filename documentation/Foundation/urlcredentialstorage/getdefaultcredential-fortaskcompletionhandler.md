@@ -24,7 +24,7 @@ func defaultCredential(for space: URLProtectionSpace, task: URLSessionTask) asyn
 
 - `space`: The protection space of interest.
 - `task`: The task seeking to use the protection space
-- `completionHandler`: A completion handler that receives the default credential as its argument, or   if there is no default credential for this combination of protection space and task.
+- `completionHandler`: A completion handler that receives the default credential as its argument, or `nil` if there is no default credential for this combination of protection space and task.
 
 ## See Also
 

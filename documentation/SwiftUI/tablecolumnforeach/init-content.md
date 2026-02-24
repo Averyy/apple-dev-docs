@@ -20,8 +20,8 @@ init(_ data: Data, @TableColumnBuilder<TableColumnForEach<Data, ID, RowValue, So
 
 ## Parameters
 
-- `data`: The identified data that the   instance   uses to create table columns dynamically.
-- `content`: The table column builder that creates columns dynamically   for each element.
+- `data`: The identified data that the [`TableColumnForEach`](tablecolumnforeach.md) instance uses to create table columns dynamically.
+- `content`: The table column builder that creates columns dynamically for each element.
 
 ## See Also
 

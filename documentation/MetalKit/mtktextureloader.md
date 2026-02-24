@@ -29,6 +29,34 @@ You create textures synchronously or asynchronously using [`MTKTextureLoader`](m
 
 First create an [`MTKTextureLoader`](mtktextureloader.md) instance, passing the device that it uses to create textures. Then use one of the texture loader’s methods to create a texture. The code example below synchronously creates a texture from data at a URL, using the default options:
 
+**Swift**:
+
+```swift
+func loadTextureUsingMetalKit(url: URL, device: MTLDevice) throws -> MTLTexture {
+    let loader = MTKTextureLoader(device: device)
+    
+    return try loader.newTexture(URL: url, options: nil)
+}
+```
+
+**Objective-C**:
+
+```objc
+- (id<MTLTexture>)loadTextureUsingMetalKit: (NSURL *) url device: (id<MTLDevice>) device {
+    NSError *error;
+    MTKTextureLoader *loader = [[MTKTextureLoader alloc] initWithDevice: device];
+    
+    id<MTLTexture> texture = [loader newTextureWithContentsOfURL:url options:nil error:&error];
+    
+    if(!texture)
+    {
+        NSLog(@"Error creating the texture from %@: %@", url.absoluteString, error.localizedDescription);
+        return nil;
+    }
+    return texture;
+}
+```
+
 If you use custom data formats, or change the image data at runtime, use [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) methods instead. For more information, see [`Creating and sampling textures`](https://developer.apple.com/documentation/Metal/creating-and-sampling-textures).
 
 ## Topics

@@ -21,9 +21,9 @@ func startNote(_ note: UInt8, withVelocity velocity: UInt8, onChannel channel: U
 
 ## Parameters
 
-- `note`: The note number (key) to play. The valid range is   to  .
-- `velocity`: Specifies the volume to play the note at. The valid range is   to  .
-- `channel`: The channel number to send the event to. The valid range is   to  .
+- `note`: The note number (key) to play. The valid range is `0` to `127`.
+- `velocity`: Specifies the volume to play the note at. The valid range is `0` to `127`.
+- `channel`: The channel number to send the event to. The valid range is `0` to `15`.
 
 ## See Also
 

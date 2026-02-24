@@ -25,7 +25,7 @@ This method invokes [`setData(_:forType:)`](nspasteboard/setdata(_:fortype:).md)
 ## Parameters
 
 - `plist`: The property list data to write to the pasteboard.
-- `dataType`: The type of property-list data in the   parameter. The type must have been declared by a previous   message.
+- `dataType`: The type of property-list data in the `propertyList` parameter. The type must have been declared by a previous [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) message.
 
 ## See Also
 

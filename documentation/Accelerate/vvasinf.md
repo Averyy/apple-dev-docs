@@ -24,6 +24,10 @@ func vvasinf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The calculated values are in the range `[-pi/2, +pi/2]`.
 
 If `x` is `+/-0`, the result preserves the signed zero.

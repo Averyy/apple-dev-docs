@@ -30,7 +30,7 @@ To access the array of all registered UTIs, pass the value `0` in the `fileOptio
 
 ## Parameters
 
-- `fileOptions`: An array of  .
+- `fileOptions`: An array of [`NSItemProviderFileOptions`](nsitemproviderfileoptions.md).
 
 ## See Also
 

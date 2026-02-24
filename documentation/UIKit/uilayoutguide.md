@@ -37,7 +37,84 @@ To create a layout guide, you must perform the following steps:
 
 You can use these guides to define the space between elements in your layout. The following example shows layout guides used to define an equal spacing between a series of views.
 
+**Swift**:
+
+```swift
+let space1 = UILayoutGuide()
+view.addLayoutGuide(space1)
+ 
+let space2 = UILayoutGuide()
+view.addLayoutGuide(space2)
+ 
+space1.widthAnchor.constraintEqualToAnchor(space2.widthAnchor).active = true
+saveButton.trailingAnchor.constraintEqualToAnchor(space1.leadingAnchor).active = true
+cancelButton.leadingAnchor.constraintEqualToAnchor(space1.trailingAnchor).active = true
+cancelButton.trailingAnchor.constraintEqualToAnchor(space2.leadingAnchor).active = true
+clearButton.leadingAnchor.constraintEqualToAnchor(space2.trailingAnchor).active = true
+```
+
+**Objective-C**:
+
+```objc
+UILayoutGuide *space1 = [[UILayoutGuide alloc] init];
+[self.view addLayoutGuide:space1];
+ 
+UILayoutGuide *space2 = [[UILayoutGuide alloc] init];
+[self.view addLayoutGuide:space2];
+ 
+[space1.widthAnchor constraintEqualToAnchor:space2.widthAnchor].active = YES;
+[self.saveButton.trailingAnchor constraintEqualToAnchor:space1.leadingAnchor].active = YES;
+[self.cancelButton.leadingAnchor constraintEqualToAnchor:space1.trailingAnchor].active = YES;
+[self.cancelButton.trailingAnchor constraintEqualToAnchor:space2.leadingAnchor].active = YES;
+[self.clearButton.leadingAnchor constraintEqualToAnchor:space2.trailingAnchor].active = YES;
+```
+
 A layout guide can also act as an opaque box that contains other views and controls, letting you encapsulate parts of your view and break up your layout into modular chunks.
+
+**Swift**:
+
+```swift
+let container = UILayoutGuide()
+view.addLayoutGuide(container)
+ 
+// Set interior constraints
+label.lastBaselineAnchor.constraintEqualToAnchor(textField.lastBaselineAnchor).active = true
+label.leadingAnchor.constraintEqualToAnchor(container.leadingAnchor).active = true
+textField.leadingAnchor.constraintEqualToAnchor(label.trailingAnchor, constant: 8.0).active = true
+textField.trailingAnchor.constraintEqualToAnchor(container.trailingAnchor).active = true
+textField.topAnchor.constraintEqualToAnchor(container.topAnchor).active = true
+textField.bottomAnchor.constraintEqualToAnchor(container.bottomAnchor).active = true
+ 
+// Set exterior constraints
+// The contents of the container can be treated as an opaque box
+let margins = view.layoutMarginsGuide
+ 
+container.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
+container.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).active = true
+container.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor, constant: 20.0).active = true
+```
+
+**Objective-C**:
+
+```objc
+UILayoutGuide *container = [[UILayoutGuide alloc] init];
+[self.view addLayoutGuide:container];
+ 
+// Layout the contents of the container
+[self.label.lastBaselineAnchor constraintEqualToAnchor:self.textField.lastBaselineAnchor].active = YES;
+[self.label.leadingAnchor constraintEqualToAnchor:container.leadingAnchor].active = YES;
+[self.textField.leadingAnchor constraintEqualToAnchor:self.label.trailingAnchor constant:8.0].active = YES;
+[self.textField.trailingAnchor constraintEqualToAnchor:container.trailingAnchor].active = YES;
+[self.textField.topAnchor constraintEqualToAnchor:container.topAnchor].active = YES;
+[self.textField.bottomAnchor constraintEqualToAnchor:container.bottomAnchor].active = YES;
+ 
+// Set exterior constraints.
+UILayoutGuide *margins = self.view.layoutMarginsGuide;
+ 
+[container.leadingAnchor constraintEqualToAnchor:margins.leadingAnchor].active = YES;
+[container.trailingAnchor constraintEqualToAnchor:margins.trailingAnchor].active = YES;
+[container.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:20.0].active = YES;
+```
 
 > **Note**:  Layout guides provides a lightweight method for encapsulating part of your layout. Note that this technique only affects how Auto Layout interacts with the encapsulated views. It does not change the view hierarchy in any way. However, this is not the only way to create modular user interfaces. Container views and container view controllers provide an even greater degree of encapsulation, letting you separate the layout, the view hierarchy and even the related view controller code. For more information, see [`Adaptivity and Size Changes`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/TheAdaptiveModel.html#//apple_ref/doc/uid/TP40007457-CH18) in [`View Controller Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457). Additionally, layout constraints do not fully encapsulate their contents. The system still compares the priority of optional constraints inside the layout guide with the priority of optional constraints outside the guide.
 

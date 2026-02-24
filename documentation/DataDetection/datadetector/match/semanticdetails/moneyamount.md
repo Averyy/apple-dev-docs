@@ -22,7 +22,7 @@ case moneyAmount(DataDetector.Match.SemanticDetails.MoneyAmount)
 
 ## Parameters
 
-- `MoneyAmount`: A   structure.
+- `MoneyAmount`: A [`DataDetector.Match.SemanticDetails.MoneyAmount`](datadetector/match/semanticdetails/moneyamount.md) structure.
 
 
 ---

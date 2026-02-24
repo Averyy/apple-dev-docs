@@ -30,7 +30,7 @@ NetworkBrowser(for: .wifiAware(.connecting(to:.selected(devices), from:service))
 ## Parameters
 
 - `action`: The specific Wi-Fi Aware operation to perform, and the service & devices to perform it on.
-- `requestedDuration`: Optional duration requested to keep the   subscribing. The default value of   instructs the system to stay active for long enough to guarantee the action completes with all nearby target devices.
+- `requestedDuration`: Optional duration requested to keep the `NetworkBrowser` subscribing. The default value of `nil` instructs the system to stay active for long enough to guarantee the action completes with all nearby target devices.
 
 
 ---

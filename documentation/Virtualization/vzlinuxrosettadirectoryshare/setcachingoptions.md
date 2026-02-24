@@ -20,7 +20,7 @@ func setCachingOptions(_ cachingOptions: VZLinuxRosettaDirectoryShare.CachingOpt
 
 ## Parameters
 
-- `cachingOptions`: One of the available  .
+- `cachingOptions`: One of the available [`VZLinuxRosettaDirectoryShare.CachingOptions`](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md).
 
 ## See Also
 

@@ -60,9 +60,9 @@ Prior to OS X v10.6, the implementation of this method in both [`NumberFormatte
 
 ## Parameters
 
-- `obj`: If conversion is successful, upon return contains the object created from  .
+- `obj`: If conversion is successful, upon return contains the object created from `string`.
 - `string`: The string to parse.
-- `error`: If non- , if there is a error during the conversion, upon return contains an   object that describes the problem.
+- `error`: If non-`nil`, if there is a error during the conversion, upon return contains an `NSString` object that describes the problem.
 
 ## See Also
 

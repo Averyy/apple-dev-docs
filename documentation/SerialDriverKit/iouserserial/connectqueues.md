@@ -29,12 +29,12 @@ This method returns pointers to the buffers in the `rxqmd` and `txqmd` parameter
 - `ifmd`: On return, a pointer to the memory buffer for storing interrupt-related data.
 - `rxqmd`: On return, a pointer to the memory buffer for storing data received from the device.
 - `txqmd`: On return, a pointer to the memory buffer for storing data ready to transmit to the device.
-- `in_rxqmd`: An existing memory buffer to configure and return in the   parameter. Specify   if you want this method to create the memory buffer for you. If you specify your own buffer object, this method retains it.
-- `in_txqmd`: An existing memory buffer to configure and return in the   parameter. Specify   if you want this method to create the memory buffer for you. If you specify your own buffer object, this method retains it.
-- `in_rxqoffset`: The offset, in bytes, to the beginning of the   buffer. The offset represents the location at which the system starts accessing the buffer data. Specify   to indicate the beginning of the memory buffer.
-- `in_txqoffset`: The offset, in bytes, to the beginning of the   buffer. The offset represents the location at which the system starts accessing the buffer data. Specify   to indicate the beginning of the memory buffer.
-- `in_rxqlogsz`: The base-2 logarithmic size of the buffer in the   parameter. For example, specify   for a buffer that is 16 kilobytes (2^14 bytes) in size. If   is  , this method creates a 16k buffer regardless of the value in this parameter.
-- `in_txqlogsz`: The base-2 logarithmic size of the buffer in the   parameter. For example, specify   for a buffer that is 16 kilobytes (2^14 bytes)  in size. If   is  , this method creates a 16k buffer regardless of the value in this parameter.
+- `in_rxqmd`: An existing memory buffer to configure and return in the `rxqmd` parameter. Specify `NULL` if you want this method to create the memory buffer for you. If you specify your own buffer object, this method retains it.
+- `in_txqmd`: An existing memory buffer to configure and return in the `txqmd` parameter. Specify `NULL` if you want this method to create the memory buffer for you. If you specify your own buffer object, this method retains it.
+- `in_rxqoffset`: The offset, in bytes, to the beginning of the `in_rxqmd` buffer. The offset represents the location at which the system starts accessing the buffer data. Specify `0` to indicate the beginning of the memory buffer.
+- `in_txqoffset`: The offset, in bytes, to the beginning of the `in_txqmd` buffer. The offset represents the location at which the system starts accessing the buffer data. Specify `0` to indicate the beginning of the memory buffer.
+- `in_rxqlogsz`: The base-2 logarithmic size of the buffer in the `in_rxqmd` parameter. For example, specify `14` for a buffer that is 16 kilobytes (2^14 bytes) in size. If `in_rxqmd` is `NULL`, this method creates a 16k buffer regardless of the value in this parameter.
+- `in_txqlogsz`: The base-2 logarithmic size of the buffer in the `in_txqmd` parameter. For example, specify `14` for a buffer that is 16 kilobytes (2^14 bytes)  in size. If `in_txqmd` is `NULL`, this method creates a 16k buffer regardless of the value in this parameter.
 
 ## See Also
 

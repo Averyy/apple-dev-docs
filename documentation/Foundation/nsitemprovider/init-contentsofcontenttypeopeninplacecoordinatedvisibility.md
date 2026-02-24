@@ -28,9 +28,9 @@ If [`openInPlace`](nsitemproviderfileoptions/openinplace.md) is set to `false`, 
 
 - `fileURL`: The URL of the file to use for the item provider’s data.
 - `contentType`: The content type of the specified file.
-- `openInPlace`:   if the system opens the file in place.
-- `coordinated`:   if the returned file must be accessed using  .
-- `visibility`: The   setting the system uses to identify which processes can see this content.
+- `openInPlace`: `true` if the system opens the file in place.
+- `coordinated`: `true` if the returned file must be accessed using [`NSFileCoordinator`](nsfilecoordinator.md).
+- `visibility`: The [`NSItemProviderRepresentationVisibility`](nsitemproviderrepresentationvisibility.md) setting the system uses to identify which processes can see this content.
 
 ## See Also
 

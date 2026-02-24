@@ -21,7 +21,7 @@ var depthBias: Float { get set }
 
 #### Discussion
 
-Reduce visual effects such as , by adjusting this property. The default value is `1.0`.
+Reduce visual effects such as *shadow acne*, by adjusting this property. The default value is `1.0`.
 
 ## See Also
 

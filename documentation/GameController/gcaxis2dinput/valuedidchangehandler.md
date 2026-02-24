@@ -24,6 +24,10 @@ var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxis2DInput, GCPo
 
 The block’s parameters are:
 
+- **`element`**: The element with the value that changes.
+- **`input`**: The input on the element that changes.
+- **`value`**: The value of the input when the element invokes this handler.
+
 ## See Also
 
 - [var value: GCPoint2](gcaxis2dinput/value.md)

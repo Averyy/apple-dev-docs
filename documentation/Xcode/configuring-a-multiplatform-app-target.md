@@ -8,7 +8,7 @@ Share project settings and code across platforms in a single app target.
 
 Multiplatform apps broaden the experience of your app to each additional platform you support. In Xcode 14 or later, you can share your app’s project settings and code across platforms using a single, multiplatform target.
 
-In Xcode, an  specifies project settings information like your app’s bundle identifier and display name, as well as which source code files belong to your app. By default, apps that share a multiplatform target share project settings, so you only need to set them once. You can adjust your project settings as needed for individual platforms.
+In Xcode, an *app target* specifies project settings information like your app’s bundle identifier and display name, as well as which source code files belong to your app. By default, apps that share a multiplatform target share project settings, so you only need to set them once. You can adjust your project settings as needed for individual platforms.
 
 Before you combine targets into a multiplatform target, check your app to determine the differences in build configuration, framework availability, and API availability.
 
@@ -34,6 +34,11 @@ The following shows the additional destinations available to that target:
 
 If you’re adding a Mac or Apple Vision destination to a target, choose the destination type that matches the kind of experience you want to provide:
 
+- ****Mac****: Choose this option if you’re starting a new Mac app. You can use all the features and APIs from the macOS SDK, powered by AppKit and SwiftUI. This option is the default for multiplatform apps.
+- ****Mac Catalyst****: Choose this option if you’re bringing an existing iPad app to Mac. The system adjusts the appearance of standard UIKit interface elements in your app for Mac. You might need to make changes to your app’s layout to adopt Mac Catalyst.
+- ****Apple Vision****: Choose this option if you’re starting a new app or modifying your existing app for Apple Vision Pro. You can use all the features and APIs from the visionOS SDK, powered by RealityKit and SwiftUI. This option is the default for multiplatform apps.
+- ****Designed for iPad****: Choose this option to run an unmodified version of your iPad app on a Mac with Apple silicon or Apple Vision Pro. Standard UIKit interface elements retain their appearance when your app runs on Apple silicon or Apple Vision Pro. This option is the default Mac or Apple Vision destination type for iPad apps.
+
 ##### Customize Project Settings
 
 Adding support for another platform can reveal places in your project where you want to customize your app for one of the platforms you support or for a new build configuration. You can conditionalize build settings either by build configuration or by platform. Use the Add (+) button next to the setting you want to customize.
@@ -48,7 +53,7 @@ Adding another platform can also reveal build-time issues in your app. To resolv
 
 Xcode identifies this sort of build-time issue when you build your project. To try a build on a new platform, pick the new run destination in the scheme menu that corresponds with the platform you added. If Xcode identifies any issues, navigate to them one-by-one and use the following steps to resolve them.
 
- If a framework isn’t available for a platform, surround the import with a `canImport` conditional statement:
+**Address unavailable frameworks.** If a framework isn’t available for a platform, surround the import with a `canImport` conditional statement:
 
 ```swift
 #if canImport(ARKit)
@@ -56,7 +61,7 @@ import ARKit
 #endif
 ```
 
- Frameworks that are available across multiple platforms might have individual symbols likes types, methods, or enumeration cases that are restricted to a subset of platforms. To resolve these availability issues, surround the relevant code with an `#if os` platform compilation condition statement:
+**Address unavailable APIs.** Frameworks that are available across multiple platforms might have individual symbols likes types, methods, or enumeration cases that are restricted to a subset of platforms. To resolve these availability issues, surround the relevant code with an `#if os` platform compilation condition statement:
 
 ```swift
 Toggle(isOn: $isOn) {

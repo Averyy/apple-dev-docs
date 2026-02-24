@@ -23,7 +23,7 @@ An `NSImage` containing a custom image for the specified rows and columns partic
 - `dragRows`: An index set containing the row indexes that should be in the image.
 - `tableColumns`: An array of table columns that should be in the image.
 - `dragEvent`: The event that initiated the drag.
-- `dragImageOffset`: An in/out parameter specifying the offset of the cursor in the image, the default value is  . Returning   causes the cursor to be centered.
+- `dragImageOffset`: An in/out parameter specifying the offset of the cursor in the image, the default value is [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint). Returning [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint) causes the cursor to be centered.
 
 ## See Also
 

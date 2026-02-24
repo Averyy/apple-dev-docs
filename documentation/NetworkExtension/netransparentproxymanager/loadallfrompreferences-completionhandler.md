@@ -20,7 +20,7 @@ This method asychronously reads all previously-saved transparent proxy configura
 
 ## Parameters
 
-- `completionHandler`: A Swift closure or an ObjectiveC block that receives as parameters   an array of transparent proxy manager instances loaded from disk and an error.   If the error is  , no error occurred.
+- `completionHandler`: A Swift closure or an ObjectiveC block that receives as parameters an array of transparent proxy manager instances loaded from disk and an error. If the error is `nil`, no error occurred.
 
 
 ---

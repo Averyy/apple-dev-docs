@@ -23,7 +23,7 @@ A tag stays connected until your app connects to a different tag or restarts pol
 ## Parameters
 
 - `tag`: A tag to which the reader session should attempt to connect.
-- `completionHandler`: The session calls   on the dispatch queue provided when creating the  .
+- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter: - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`Error`](https://developer.apple.com/documentation/Swift/Error) object. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md).
 
 ## See Also
 

@@ -8,6 +8,10 @@ A name for display when the extension appears in the Finder Preview pane and Qui
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md) key.

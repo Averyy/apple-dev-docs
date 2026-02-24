@@ -10,6 +10,10 @@ The name of a SF Symbol to display next to the action’s title.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CoreSpotlightActionTitle](information-property-list/corespotlightactions/corespotlightactiontitle.md)

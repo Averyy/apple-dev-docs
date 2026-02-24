@@ -26,7 +26,7 @@ The default keychain search list is displayed as the keychain list in the Keycha
 
 ## Parameters
 
-- `searchList`: An array of keychain references (of type  ) specifying the list of keychains to use in the default keychain search list. Passing an empty array clears the search list.
+- `searchList`: An array of keychain references (of type [`SecKeychain`](seckeychain.md)) specifying the list of keychains to use in the default keychain search list. Passing an empty array clears the search list.
 
 
 ---

@@ -25,8 +25,9 @@ The builder adds the metadata to the resulting series sample. It incorporates ne
 
 ## Parameters
 
-- `metadata`: Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
-- `completion`: The completion handler called by the builder after it attempts to add the metadata to the series. The completion handler takes the following parameters:
+- `metadata`: The metadata dictionary contains extra information describing all the samples created by the builder. The dictionary’s keys are all strings. The values may be strings, numbers, or date objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
+- `completion`: The completion handler called by the builder after it attempts to add the metadata to the series. The completion handler takes the following parameters: - **`success`**: A Boolean value that indicates whether the builder successfully added the heartbeat.
+- **`error`**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/Foundation/NSExpression/false), this contains an object that describes the error; otherwise, `nil`.
 
 ## See Also
 

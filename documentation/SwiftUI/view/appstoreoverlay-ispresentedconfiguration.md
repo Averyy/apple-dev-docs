@@ -27,7 +27,7 @@ When `isPresented` is true, the system will run `configuration` to determine how
 
 ## Parameters
 
-- `isPresented`: A Binding to a boolean value indicating whether the   overlay should be presented.
+- `isPresented`: A Binding to a boolean value indicating whether the overlay should be presented.
 - `configuration`: A closure providing the configuration of the overlay.
 
 ## See Also

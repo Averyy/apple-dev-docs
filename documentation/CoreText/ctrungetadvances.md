@@ -23,7 +23,7 @@ func CTRunGetAdvances(_ run: CTRun, _ range: CFRange, _ buffer: UnsafeMutablePoi
 ## Parameters
 
 - `run`: The run whose advances you wish to copy.
-- `range`: The range of glyph advances you wish to copy. If the length of the range is set to  , then the copy operation continues from the range’s start index to the end of the run.
+- `range`: The range of glyph advances you wish to copy. If the length of the range is set to `0`, then the copy operation continues from the range’s start index to the end of the run.
 - `buffer`: The buffer to which the glyph advances are copied. The buffer must be allocated to at least the value specified by the range’s length.
 
 ## See Also

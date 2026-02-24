@@ -3,7 +3,7 @@
 **Framework**: Media Player  
 **Kind**: property
 
-The title of a podcast, such as , rather than the title of an individual episode of a podcast, such as “Episode 12: Another Cold Day at the Pole.”
+The title of a podcast, such as *This Martian Drudgery*, rather than the title of an individual episode of a podcast, such as “Episode 12: Another Cold Day at the Pole.”
 
 **Availability**:
 - iOS 7.0+
@@ -27,7 +27,7 @@ var podcastTitle: String? { get }
 - [var albumPersistentID: MPMediaEntityPersistentID](mpmediaitem/albumpersistentid.md)
   The persistent identifier for an album.
 - [var albumTitle: String?](mpmediaitem/albumtitle.md)
-  The title of an album, such as , rather than the title of an individual song on the album, such as “Crater Dance.”
+  The title of an album, such as *Live on Mars*, rather than the title of an individual song on the album, such as “Crater Dance.”
 - [var albumTrackCount: Int](mpmediaitem/albumtrackcount.md)
   The number of tracks for the album that contains the media item.
 - [var albumTrackNumber: Int](mpmediaitem/albumtracknumber.md)

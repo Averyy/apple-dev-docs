@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may interact with the built-in an
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, first enable the App Sandbox or Hardened Runtime capability in Xcode, and then select Camera.

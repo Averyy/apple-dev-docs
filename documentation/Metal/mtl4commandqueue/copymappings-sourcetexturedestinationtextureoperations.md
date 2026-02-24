@@ -29,9 +29,9 @@ Additionally, you are responsible for ensuring that the source and destination t
 
 ## Parameters
 
-- `sourceTexture`: The source placement sparse  .
-- `destinationTexture`: The destination placement sparse  .
-- `operations`: An array of   instances to perform.
+- `sourceTexture`: The source placement sparse [`MTLTexture`](mtltexture.md).
+- `destinationTexture`: The destination placement sparse [`MTLTexture`](mtltexture.md).
+- `operations`: An array of [`MTL4CopySparseTextureMappingOperation`](mtl4copysparsetexturemappingoperation.md) instances to perform.
 
 
 ---

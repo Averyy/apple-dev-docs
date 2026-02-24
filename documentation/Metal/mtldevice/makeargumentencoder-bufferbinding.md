@@ -22,7 +22,7 @@ func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgument
 
 ## Parameters
 
-- `bufferBinding`: An   instance.
+- `bufferBinding`: An [`MTLBufferBinding`](mtlbufferbinding.md) instance.
 
 ## See Also
 

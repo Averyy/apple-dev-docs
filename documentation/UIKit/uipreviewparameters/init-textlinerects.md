@@ -24,7 +24,7 @@ A new preview parameters object for a view containing text.
 
 ## Parameters
 
-- `textLineRects`: An array of text line rectangles in the coordinate system of the view being animated. UIKit clips the previewed content using the specified rectangles. Wrap each   in an   object. If you specify an empty array, UIKit shows the entire view.
+- `textLineRects`: An array of text line rectangles in the coordinate system of the view being animated. UIKit clips the previewed content using the specified rectangles. Wrap each [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) in an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object. If you specify an empty array, UIKit shows the entire view.
 
 ## See Also
 

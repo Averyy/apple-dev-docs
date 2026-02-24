@@ -31,7 +31,7 @@ Until you change the default leaderboard for a player, it is the same as the def
 ## Parameters
 
 - `leaderboardIdentifier`: The identifier of the leaderboard.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

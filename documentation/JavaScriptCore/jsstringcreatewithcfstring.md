@@ -29,7 +29,7 @@ The system optimizes this function to take advantage of cases when [`CFStringGet
 
 ## Parameters
 
-- `string`: The   to copy into the new  .
+- `string`: The [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) to copy into the new [`JSStringRef`](jsstringref.md).
 
 ## See Also
 

@@ -31,7 +31,7 @@ The normal map is used only when lighting is enabled in the scene. For more info
 ## Parameters
 
 - `name`: The name of an image file stored in the app bundle.
-- `generateNormalMap`: If  , a normal map is generated from the image texture without applying any filter to it (SKTextureNormalMapFilteringTypeNone). If  , no normal map is generated (matching the behavior of the   class method).
+- `generateNormalMap`: If [`true`](https://developer.apple.com/documentation/Swift/true), a normal map is generated from the image texture without applying any filter to it (SKTextureNormalMapFilteringTypeNone). If [`false`](https://developer.apple.com/documentation/Swift/false), no normal map is generated (matching the behavior of the [`spriteNodeWithImageNamed:`](skspritenode/spritenodewithimagenamed:.md) class method).
 
 ## See Also
 

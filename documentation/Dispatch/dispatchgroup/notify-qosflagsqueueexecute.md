@@ -27,7 +27,7 @@ This function schedules a notification block to be submitted to the specified qu
 ## Parameters
 
 - `qos`: The quality of service class for the work to be performed.
-- `flags`: For possible values, see  .
+- `flags`: Options for how the work is performed. For possible values, see [`DispatchWorkItemFlags`](dispatchworkitemflags.md).
 - `queue`: The queue to which the supplied block is submitted when the group completes.
 - `work`: The work to be performed on the dispatch queue when the group is completed.
 

@@ -22,7 +22,7 @@ static var query: MKLocalSearchCompleter.ResultType { get }
 
 #### Discussion
 
-For example, the search string `cof` yields a completion for .
+For example, the search string `cof` yields a completion for *coffee*.
 
 ## See Also
 

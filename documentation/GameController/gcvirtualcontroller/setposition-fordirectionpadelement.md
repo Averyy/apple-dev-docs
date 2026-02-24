@@ -22,7 +22,7 @@ Use this method to update the value of a directional pad in the virtual controll
 
 ## Parameters
 
-- `position`: A point with   and   values in the range  .
+- `position`: A point with `x` and `y` values in the range `[0.0, 1.0]`.
 - `element`: The name of the directional pad element to update.
 
 ## See Also

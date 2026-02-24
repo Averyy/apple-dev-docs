@@ -110,7 +110,7 @@ func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor:
 
 ##### Place 3d Content on the Users Face
 
-Another use of the face mesh that ARKit provides is to create  in your scene. An occlusion geometry is a 3D model that doesn’t render any visible content (allowing the camera image to show through), but obstructs the camera’s view of other virtual content in the scene.
+Another use of the face mesh that ARKit provides is to create *occlusion geometry* in your scene. An occlusion geometry is a 3D model that doesn’t render any visible content (allowing the camera image to show through), but obstructs the camera’s view of other virtual content in the scene.
 
 This technique creates the illusion that the real face interacts with virtual objects, even though the face is a 2D camera image and the virtual content is a rendered 3D object. For example, if you place an occlusion geometry and virtual glasses on the user’s face, the face can obscure the frame of the glasses.
 
@@ -179,7 +179,7 @@ faceGeometry.setValue(SCNMatrix4Invert(transform), forKey: "displayTransform")
 
 ##### Animate a Character with Blend Shapes
 
-In addition to the face mesh shown in the earlier examples, ARKit also provides a more abstract representation of the user’s facial expressions. You can use this representation (called ) to control animation parameters for your own 2D or 3D assets, creating a character that follows the user’s real facial movements and expressions.
+In addition to the face mesh shown in the earlier examples, ARKit also provides a more abstract representation of the user’s facial expressions. You can use this representation (called *blend shapes*) to control animation parameters for your own 2D or 3D assets, creating a character that follows the user’s real facial movements and expressions.
 
 As a basic demonstration of blend shape animation, this sample includes a simple model of a robot character’s head, created using SceneKit primitive shapes. (See the `robotHead.scn` file in the source code.)
 

@@ -80,6 +80,17 @@ Specify `com.apple.MCX.TimeMachine` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `AutoBackup` (boolean): If `true`, performs automatic backups at regular intervals.
+- `BackupAllVolumes` (boolean): If `true`, backs up only the startup volume by default.
+- `BackupDestURL` (string) *(required)*: The URL of the backup destination.
+- `BackupSizeMB` (integer): The backup size limit, in megabytes. Set to 0 for unlimited.
+- `BackupSkipSys` (boolean): If `true`, skips system files and folders by default.
+- `BasePaths` ([string]): The list of paths to back up besides the startup volume.
+- `MobileBackups` (boolean): If `true`, create local backup snapshots when not connected to the network.
+- `SkipPaths` ([string]): The path to skip from start volume.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

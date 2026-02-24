@@ -25,8 +25,9 @@ Call this method to prevent your app from receiving any additional update notifi
 
 ## Parameters
 
-- `type`: The type of data. This object can be any concrete subclass of the   class (any of the classes   ,  ,  ,   or  ).
-- `completion`: A block that this method calls as soon as the background delivery is disabled. This block is passed the following parameters:
+- `type`: The type of data. This object can be any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the classes [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md) or [`HKCorrelationType`](hkcorrelationtype.md)).
+- `completion`: A block that this method calls as soon as the background delivery is disabled. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the background delivery was successfully disabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

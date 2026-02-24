@@ -26,7 +26,7 @@ func CGPointMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ point: Unsa
 
 ## Parameters
 
-- `dict`: A dictionary that was previously returned from the function  .
+- `dict`: A dictionary that was previously returned from the function [`CGPointCreateDictionaryRepresentation(_:)`](cgpointcreatedictionaryrepresentation(_:).md).
 - `point`: On return, the point created from the provided dictionary.
 
 ## See Also

@@ -25,7 +25,7 @@ The scroll view sends this message when the user’s finger touches up after dra
 ## Parameters
 
 - `scrollView`: The scroll-view object that finished scrolling the content view.
-- `decelerate`:   if the scrolling movement will continue, but decelerate, after a touch-up gesture during a dragging operation. If the value is  , scrolling stops immediately upon touch-up.
+- `decelerate`: [`true`](https://developer.apple.com/documentation/Swift/true) if the scrolling movement will continue, but decelerate, after a touch-up gesture during a dragging operation. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), scrolling stops immediately upon touch-up.
 
 ## See Also
 

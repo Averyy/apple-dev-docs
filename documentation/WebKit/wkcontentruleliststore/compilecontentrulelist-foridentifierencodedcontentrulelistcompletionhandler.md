@@ -21,8 +21,9 @@ func compileContentRuleList(forIdentifier identifier: String!, encodedContentRul
 ## Parameters
 
 - `identifier`: A unique identifier for the new list. If a list with the specified identifier already exists in the store, this method overwrites the old rule list with the new content.
-- `encodedContentRuleList`: The JSON source for the new rule list. For information about how to format the JSON content, see  .
-- `completionHandler`: A completion handler block to call after compilation finishes. This block has no return value and takes the following parameters:
+- `encodedContentRuleList`: The JSON source for the new rule list. For information about how to format the JSON content, see [`Creating a content blocker`](https://developer.apple.com/documentation/SafariServices/creating-a-content-blocker).
+- `completionHandler`: A completion handler block to call after compilation finishes. This block has no return value and takes the following parameters: - **ruleList**: The [`WKContentRuleList`](wkcontentrulelist.md) object that encapsulates the compiled rules derived from the `encodedContentRuleList` parameter. This parameter is `nil` if an error occurs during compilation.
+- **error**: `nil` on success, or an error object if a problem occurred.
 
 ## See Also
 

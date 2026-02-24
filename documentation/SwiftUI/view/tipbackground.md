@@ -27,7 +27,7 @@ A view with the specified style drawn behind it.
 
 ## Parameters
 
-- `style`: An instance of a type that conforms to   that   SwiftUI draws behind the modified view.
+- `style`: An instance of a type that conforms to `ShapeStyle` that SwiftUI draws behind the modified view.
 
 ## See Also
 

@@ -21,7 +21,7 @@ func addBoundary(withIdentifier identifier: any NSCopying, for bezierPath: UIBez
 ## Parameters
 
 - `identifier`: An arbitrary identifier for the boundary you are adding.
-- `bezierPath`: The coordinate system and origin point for the path depend on how you’ve initialized the dynamic animator (that you’re adding the behavior to). See the overview in   for more information.
+- `bezierPath`: An arbitrary Bezier path that specifies the collision boundary you are adding. The coordinate system and origin point for the path depend on how you’ve initialized the dynamic animator (that you’re adding the behavior to). See the overview in [`UIDynamicAnimator`](uidynamicanimator.md) for more information.
 
 ## See Also
 

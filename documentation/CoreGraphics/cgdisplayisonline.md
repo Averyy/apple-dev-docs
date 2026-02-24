@@ -23,7 +23,7 @@ If `true`, the specified display is connected; otherwise, `false`.
 
 A display is considered connected or online when the framebuffer hardware is connected to a monitor.
 
-You can use this function to determine whether someone has plugged a display into the system while the main power was on. This hardware feature, called , may not be present on all displays.
+You can use this function to determine whether someone has plugged a display into the system while the main power was on. This hardware feature, called *hot-plugging*, may not be present on all displays.
 
 ## Parameters
 

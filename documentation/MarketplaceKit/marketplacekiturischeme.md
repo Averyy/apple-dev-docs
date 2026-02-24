@@ -50,7 +50,11 @@ Web browsers recognize the scheme and hand off the installation request to [`Mar
 
 #### Setting the Alternative Distribution Package Parameter
 
-The fully qualified domain in the `alternateDistributionPackage` value needs to match the fully qualified domain of the , that is, the page that contains the `marketplace-kit://` link. This domain also needs to match the domain you supply to App Store Connect. For more information, see [`Alternative Distribution Domains`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-domains). For example:
+The fully qualified domain in the `alternateDistributionPackage` value needs to match the fully qualified domain of the *referrer*, that is, the page that contains the `marketplace-kit://` link. This domain also needs to match the domain you supply to App Store Connect. For more information, see [`Alternative Distribution Domains`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-domains). For example:
+
+- **Domain in App Store Connect**: `mydomain.com`
+- **Your webpage root domain**: `mymarketplace.mydomain.com`
+- **`alternateDistributionPackage` value**: `https://mymarketplace.mydomain.com/path`
 
 > **Note**: To allow installation, the web browser also needs to support the app installation URL scheme. If you develop a browser app, see [`Enabling alternative distribution app installation in a browser`](enabling-alternative-distribution-app-installation-in-a-browser.md) for more information.
 

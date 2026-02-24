@@ -8,6 +8,10 @@ A Boolean value that indicates whether an app requires network access on launch.
 **Availability**:
 - watchOS 9.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 In low-power mode, the system turns off cellular data to preserve battery life. If this key is `NO`, the system waits until an app requests a network connection before turning on cellular data. This can cause a few seconds of delay before your app can perform network requests.

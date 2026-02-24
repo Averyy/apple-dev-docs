@@ -22,6 +22,11 @@ Then, choose the Archive option in Xcode’s Product menu. After the archive bui
 
 Xcode saves app archives on disk so you can refer to a particular build later, for example, to submit the build to App Review after the app passes beta tests. The archives’ distribution workflow offers several ways to test the app:
 
+- **TestFlight**: TestFlight automates app distribution and submission to reduce the chances of submitting the wrong build to App Review. To distribute an app archive through TestFlight, choose the archive pane’s App Store Connect option. For more on TestFlight, see [`Distributing your app for beta testing and releases`](distributing-your-app-for-beta-testing-and-releases.md).
+- **Ad Hoc**: To distribute your app to testers manually, for example, by emailing them an .ipa file, choose the archive pane’s Ad Hoc option. For more information, see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md).
+- **Enterprise**: Enterprise distribution is similar to Ad Hoc distribution except that you choose the Enterprise option from the Archive pane. Xcode looks for a different code signing identity for Enterprise app distribution that contains a valid Enterprise distribution certificate.
+- **Development**: The development distribution method signs the release build with your development credentials. This option enables testing if you lack access to team distribution identities. The debugger can attach to a development-signed release build, but be aware that it can mask watchdog timeouts.
+
 For all distribution methods except TestFlight, choose the following options to enhance your chances of discovering a bug that manifests only in the release build:
 
 - Set App Thinning to “All compatible device variants”.
@@ -102,11 +107,17 @@ The volatile nature of memory availability makes it difficult to judge the likel
 
 Because of the wide the range of variation in user-supplied data, apps that support opening users’ files need to anticipate uncommon scenarios, like corrupt or excessively large data. To ensure a good user experience, test bad and unsupported files.
 
-For example, if your app loads user-defined images, test loading a very large image. Today’s common image formats compress pixel data, but most systems can only display uncompressed data. Loading an image from file can require orders more space in RAM than the file’s size on disk. You can calculate the number of bytes an image requires in RAM using the formula:  bytes/pixel. A JPG with 4K resolution (3840 x 2160 pixels) is around 1.5 megabytes on disk. To calculate the size in memory, multiply the image dimensions to obtain the number of pixels, and multiply by 4 bytes per pixel.
+For example, if your app loads user-defined images, test loading a very large image. Today’s common image formats compress pixel data, but most systems can only display uncompressed data. Loading an image from file can require orders more space in RAM than the file’s size on disk. You can calculate the number of bytes an image requires in RAM using the formula: *W x H x 4* bytes/pixel. A JPG with 4K resolution (3840 x 2160 pixels) is around 1.5 megabytes on disk. To calculate the size in memory, multiply the image dimensions to obtain the number of pixels, and multiply by 4 bytes per pixel.
+
+*3840 x 2160 * 4 B = 33,177,600 B*
 
 Divide by 1024^2 to convert to megabytes.
 
+*33,177,600 B / 1024^2 B/MB = 31.64 MB*
+
 To calculate the percentage larger the image is in memory, divide the in-memory size (31.64 MB) by the on-disk size (1.5 MB).
+
+*31.64 MB / 1.5 MB = 21.1 times larger in memory*
 
 To guard against files of unsupported file size, enforce a size limit by refusing to open files past a certain resolution you define.
 

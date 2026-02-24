@@ -28,7 +28,7 @@ func waitUntilScheduled()
 
 This method returns after the following events:
 
-- The command queue  (see [`status`](mtlcommandbuffer/status.md) and [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md)) the command buffer to run on the GPU.
+- The command queue *schedules* (see [`status`](mtlcommandbuffer/status.md) and [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md)) the command buffer to run on the GPU.
 - The command buffer invokes all the completion handlers your app submits with [`addScheduledHandler(_:)`](mtlcommandbuffer/addscheduledhandler(_:).md).
 
 Use the [`waitUntilCompleted()`](mtlcommandbuffer/waituntilcompleted().md) method to check for completion of the scheduled work.

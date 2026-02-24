@@ -31,7 +31,8 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## Parameters
 
-- `namesAndContexts`: An array of tuples. Each tuple must contain the following named elements:
+- `namesAndContexts`: An array of tuples. Each tuple must contain the following named elements: - **name**: The name of the interface controller you want to display. In your storyboard, the name of an interface controller is stored in the object’s Identifier property, which is located in the attributes inspector. This element must not be `nil`.
+- **context**: An object to pass to the new interface controller. Use the object in this parameter to communicate important information to the new interface controller, such as the data to display or any relevant state information. You may specify `nil` for this element, but doing so is not recommended.
 
 ## See Also
 

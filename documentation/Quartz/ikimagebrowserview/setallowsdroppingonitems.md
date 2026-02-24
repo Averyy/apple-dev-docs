@@ -20,7 +20,7 @@ The default is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## Parameters
 
-- `flag`:   if the user is able to drop on items, otherwise  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user is able to drop on items, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

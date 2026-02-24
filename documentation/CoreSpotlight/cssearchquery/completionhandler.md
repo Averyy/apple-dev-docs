@@ -26,6 +26,8 @@ var completionHandler: (((any Error)?) -> Void)? { get set }
 
 Specify a value for this property only if you start your query with the [`start()`](cssearchquery/start().md) method. When the query finishes, the query object executes the provided closure once to let you know the search is complete. Use your handler to perform any related cleanup. The block you assign to this property returns no parameters and takes the following parameter:
 
+- **error**: An error object with details about a problem that occurred, or `nil` if the query completed successfully.
+
 If you start the query by accessing the [`results`](cssearchquery/results-swift.property.md) property of [`CSSearchQuery`](cssearchquery.md) or the [`responses`](csuserquery/responses-swift.property.md) property of [`CSUserQuery`](csuserquery.md), the query object doesn’t execute the block in this property.
 
 ## See Also

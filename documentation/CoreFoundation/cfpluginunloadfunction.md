@@ -22,7 +22,7 @@ typealias CFPlugInUnloadFunction = (CFPlugIn?) -> Void
 
 ## Parameters
 
-- `plugIn`: The   object that is about to be unloaded from memory. When writing in C++, this parameter functions as a   pointer for the plug-in.
+- `plugIn`: The `CFPlugIn` object that is about to be unloaded from memory. When writing in C++, this parameter functions as a `this` pointer for the plug-in.
 
 ## See Also
 

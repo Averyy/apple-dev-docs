@@ -24,7 +24,11 @@ typealias CLGeocodeCompletionHandler = ([CLPlacemark]?, (any Error)?) -> Void
 
 Upon completion of a geocoding request, a block of this form is called to give you a chance to process the results. The parameters of this block are as follows:
 
+- **`placemark`**: Contains an array of [`CLPlacemark`](clplacemark.md) objects. For most geocoding requests, this array should contain only one entry. However, forward-geocoding requests may return multiple placemark objects in situations where the specified address could not be resolved to a single location.
+
 If the request was canceled or there was an error in obtaining the placemark information, this parameter is `nil`.
+
+- **`error`**: Contains `nil` or an error object indicating why the placemark data was not returned. For a list of possible error codes, see [`CLError.Code`](clerror-swift.struct/code.md).
 
 ## See Also
 

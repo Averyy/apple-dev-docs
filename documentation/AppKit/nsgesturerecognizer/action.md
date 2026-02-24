@@ -20,6 +20,20 @@ You specify this method when initializing your gesture recognizer but can also c
 
 The signature of this method must be one of the following:
 
+**Swift**:
+
+```swift
+func handleGesture() { }
+func handleGesture(gestureRecognizer: NSGestureRecognizer) { }
+```
+
+**Objective-C**:
+
+```objc
+- (void)handleGesture;
+- (void)handleGesture:(NSGestureRecognizer *)gestureRecognizer;
+```
+
 For continuous gestures, it is recommended that you use an action method that accepts the gesture recognizer as a parameter. In your method, use the provided gesture recognizer object to get the current state of the gesture and perform appropriate tasks based on that state.
 
 ## See Also

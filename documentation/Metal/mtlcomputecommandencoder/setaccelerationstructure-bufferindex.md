@@ -22,7 +22,7 @@ func setAccelerationStructure(_ accelerationStructure: (any MTLAccelerationStruc
 
 ## Parameters
 
-- `accelerationStructure`: An   instance to bind to the argument table.
+- `accelerationStructure`: An [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instance to bind to the argument table.
 - `bufferIndex`: The index the structure binds to in the argument table.
 
 ## See Also

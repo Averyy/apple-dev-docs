@@ -30,7 +30,7 @@ Reverses the actions of [`CFLocaleCreateComponentsFromLocaleIdentifier(_:_:)`](c
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `dictionary`: The dictionary to use when creating the locale identifier.
 
 ## See Also

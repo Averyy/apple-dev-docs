@@ -24,7 +24,7 @@ If you do not add at least once recipient, the recipients field is selected when
 
 ## Parameters
 
-- `players`: An array with one or more   objects, each containing an player identifier.
+- `players`: An array with one or more [`GKPlayer`](gkplayer.md) objects, each containing an player identifier.
 
 ## See Also
 

@@ -32,7 +32,7 @@ When [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/
 
 ## Parameters
 
-- `completionHandler`: The completion handler that the framework calls when   completes. If the method completes successfully,   will contain the diagnosis keys for this device and   will be  . If it fails,   will be   and   indicates the reason it failed.
+- `completionHandler`: The completion handler that the framework calls when [`getDiagnosisKeys(completionHandler:)`](enmanager/getdiagnosiskeys(completionhandler:).md) completes. If the method completes successfully, `keys` will contain the diagnosis keys for this device and `error` will be `nil`. If it fails, `keys` will be `nil` and `error` indicates the reason it failed.
 
 ## Topics
 

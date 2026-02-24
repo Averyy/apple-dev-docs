@@ -24,7 +24,7 @@ A [`PKStrokePointReference`](pkstrokepointreference.md) interpolated from suppli
 
 ## Parameters
 
-- `parametricValue`: The on-curve location  where interpolation occurs.
+- `parametricValue`: The on-curve location `[0, count-1] `where interpolation occurs.
 
 ## See Also
 

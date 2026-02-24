@@ -38,7 +38,7 @@ struct MyView: View {
 
 ## Parameters
 
-- `wrappedValue`: The default value if an integer value is not   available for the given key.
+- `wrappedValue`: The default value if an integer value is not available for the given key.
 - `key`: A key used to save and restore the value.
 
 ## See Also

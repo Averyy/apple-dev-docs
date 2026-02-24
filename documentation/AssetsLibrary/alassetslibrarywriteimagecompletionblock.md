@@ -15,7 +15,11 @@ typealias ALAssetsLibraryWriteImageCompletionBlock = (URL?, (any Error)?) -> Voi
 
 The block parameters are defined as follows:
 
+- **assetURL**: An URL that identifies the saved image file.
+
 If the image is not saved, `assetURL` is `nil`.
+
+- **error**: If the image is not saved, an error object that describes the reason for failure, otherwise `nil`.
 
 ## See Also
 

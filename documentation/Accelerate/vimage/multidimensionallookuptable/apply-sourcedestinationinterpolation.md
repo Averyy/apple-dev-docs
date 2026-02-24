@@ -22,8 +22,8 @@ func apply<SrcFormat, DestFormat>(source: vImage.PixelBuffer<SrcFormat>, destina
 
 ## Parameters
 
-- `source`: A multiple plane   pixel buffer that contains   planes.
-- `destination`: A multiple plane   pixel buffer that contains   planes.
+- `source`: A multiple plane [`Pixel_F`](pixel_f.md) pixel buffer that contains [`sourceChannelCount`](vimage/multidimensionallookuptable/sourcechannelcount.md) planes.
+- `destination`: A multiple plane [`Pixel_F`](pixel_f.md) pixel buffer that contains [`destinationChannelCount`](vimage/multidimensionallookuptable/destinationchannelcount.md) planes.
 - `interpolation`: An enumeration that specifies how the operation computes output color values that don’t have an explicit entry in the table.
 
 ## See Also

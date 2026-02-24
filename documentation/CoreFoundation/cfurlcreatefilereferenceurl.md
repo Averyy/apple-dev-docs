@@ -38,7 +38,7 @@ In some areas of the file system hierarchy, file reference URLs cannot be genera
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `url`: The URL.
 - `error`: The error that occurred if the URL could not be created.
 

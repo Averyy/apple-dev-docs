@@ -40,7 +40,7 @@ If your delegate isn’t observable, SwiftUI invokes the [`init(_:)`](wkextensio
 
 ## Parameters
 
-- `delegateType`: The type of extension delegate that you   define in your app, which conforms to the     and     protocols.
+- `delegateType`: The type of extension delegate that you define in your app, which conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate) and [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocols.
 
 
 ---

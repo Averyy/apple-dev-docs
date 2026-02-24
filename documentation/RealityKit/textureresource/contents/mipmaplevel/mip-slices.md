@@ -21,7 +21,7 @@ static func mip(slices: [TextureResource.Contents.Slice]) -> TextureResource.Con
 
 ## Parameters
 
-- `slices`: The source slices.   A 2D array texture requires one slice per  .   A cube texture requires six slices, containing faces  .   2D and 3D textures need a single slice, and you can build their   with    or  .
+- `slices`: The source slices. A 2D array texture requires one slice per `arrayLength`. A cube texture requires six slices, containing faces `[+X, -X, +Y, -Y, +Z, -Z]`. 2D and 3D textures need a single slice, and you can build their `MipmapLevel` with `mip(buffer:offset:size:bytesPerRow:)` or `mip(data:bytesPerRow)`.
 
 ## See Also
 

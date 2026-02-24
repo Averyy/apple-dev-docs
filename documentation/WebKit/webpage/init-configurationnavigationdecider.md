@@ -21,7 +21,7 @@ convenience init(configuration: WebPage.Configuration = Configuration(), navigat
 
 ## Parameters
 
-- `configuration`: A   value to use when initializing the page.
+- `configuration`: A [`WebPage.Configuration`](webpage/configuration.md) value to use when initializing the page.
 - `navigationDecider`: A navigation decider used to customize navigations that happen within the page.
 
 ## See Also

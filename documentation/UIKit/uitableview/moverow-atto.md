@@ -27,7 +27,7 @@ Unlike the row-insertion and row-deletion methods, this method doesn’t take an
 ## Parameters
 
 - `indexPath`: An index path identifying the row to move.
-- `newIndexPath`: An index path identifying the row that’s the destination of the row at  . The existing row at that location slides up or down to an adjoining index position to make room for it.
+- `newIndexPath`: An index path identifying the row that’s the destination of the row at `indexPath`. The existing row at that location slides up or down to an adjoining index position to make room for it.
 
 ## See Also
 

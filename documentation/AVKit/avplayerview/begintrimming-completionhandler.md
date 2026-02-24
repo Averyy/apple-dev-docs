@@ -38,7 +38,7 @@ This method blocks until the user selects either the Trim or the Cancel button.
 
 ## Parameters
 
-- `handler`: The result passed to the closure indicates whether the user clicked the Trim or Cancel button.
+- `handler`: The callback the system invokes when the user selects the Trim or Cancel button in the trimming UI. The result passed to the closure indicates whether the user clicked the Trim or Cancel button.
 
 ## See Also
 

@@ -27,8 +27,8 @@ If `theSet` is mutable, it is unsafe for the `applier` function to change the co
 ## Parameters
 
 - `theSet`: The set to operate upon.
-- `applier`: The callback function to call once for each value in the  . If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The   function must be able to work with all values in  .
-- `context`: A pointer-sized program-defined value, which is passed as the second parameter to the   function, but is otherwise unused by this function.
+- `applier`: The callback function to call once for each value in the `theSet`. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The `applier` function must be able to work with all values in `theSet`.
+- `context`: A pointer-sized program-defined value, which is passed as the second parameter to the `applier` function, but is otherwise unused by this function.
 
 
 ---

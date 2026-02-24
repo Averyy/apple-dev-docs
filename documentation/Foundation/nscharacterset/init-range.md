@@ -39,7 +39,7 @@ lcEnglishLetters = [NSCharacterSet characterSetWithRange:lcEnglishRange];
 
 ## Parameters
 
-- `aRange`: A range of Unicode values.    is the value of the first character to return;   is the value of the last.
+- `aRange`: A range of Unicode values. `aRange.location` is the value of the first character to return; `aRange.location + aRange.length – 1` is the value of the last.
 
 ## See Also
 

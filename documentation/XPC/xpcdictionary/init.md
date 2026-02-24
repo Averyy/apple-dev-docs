@@ -22,7 +22,7 @@ init(_ value: xpc_object_t)
 
 ## Parameters
 
-- `value`: An XPC dictionary object. The object’s type must be  .
+- `value`: An XPC dictionary object. The object’s type must be [`XPC_TYPE_DICTIONARY`](xpc_type_dictionary-swift.var.md).
 
 ## See Also
 

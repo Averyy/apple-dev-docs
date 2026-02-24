@@ -24,9 +24,9 @@ Block to be invoked when the client must choose a PSK identity given a hint from
 
 ## Parameters
 
-- `metadata`: A   instance.
-- `psk_identity_hint`: A   object carrying the peer’s (optional) PSK identity hint.
-- `complete`: A   block to be invoked when PSK selection is complete.
+- `metadata`: A `sec_protocol_metadata_t` instance.
+- `psk_identity_hint`: A `dispatch_data_t` object carrying the peer’s (optional) PSK identity hint.
+- `complete`: A `sec_protocol_pre_shared_key_selection_complete_t` block to be invoked when PSK selection is complete.
 
 
 ---

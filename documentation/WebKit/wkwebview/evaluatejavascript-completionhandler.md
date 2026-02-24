@@ -25,7 +25,8 @@ After evaluating the script, this method executes the completion handler block w
 ## Parameters
 
 - `javaScriptString`: The JavaScript string to evaluate.
-- `completionHandler`: A handler block to execute when script evaluation finishes. The method calls your block whether script evaluation completes successfully or fails. The block has no return value and takes the following parameters:
+- `completionHandler`: A handler block to execute when script evaluation finishes. The method calls your block whether script evaluation completes successfully or fails. The block has no return value and takes the following parameters: - **object**: The result of the script evaluation, or `nil` if an error occurred.
+- **error**: `nil` on success, or an error object with information about the problem.
 
 ## See Also
 

@@ -66,8 +66,8 @@ Depending on the specified bars, the requested color scheme may not be able to b
 
 ## Parameters
 
-- `colorScheme`: The preferred color scheme of the background   of the bar.
-- `bars`: The bars to update the color scheme of or    if empty.
+- `colorScheme`: The preferred color scheme of the background of the bar.
+- `bars`: The bars to update the color scheme of or [`automatic`](toolbarplacement/automatic.md) if empty.
 
 ## See Also
 

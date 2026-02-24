@@ -29,8 +29,8 @@ Use this method to support fast scrolling through your collection view’s conte
 ## Parameters
 
 - `collectionView`: The collection view requesting this information.
-- `title`: The title of the index item. This string corresponds to one of the strings you returned in your   method.
-- `index`: The index into the array returned by the   method that corresponds to the index title.
+- `title`: The title of the index item. This string corresponds to one of the strings you returned in your [`indexTitles(for:)`](uicollectionviewdatasource/indextitles(for:).md) method.
+- `index`: The index into the array returned by the [`indexTitles(for:)`](uicollectionviewdatasource/indextitles(for:).md) method that corresponds to the index title.
 
 ## See Also
 

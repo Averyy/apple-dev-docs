@@ -20,6 +20,12 @@ object ContentCachingInformationResponse.StatusResponse.DataMigrationError
 - [object ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo](contentcachinginformationresponse/statusresponse-data.dictionary/datamigrationerror-data.dictionary/userinfo-data.dictionary.md)
   A dictionary that contains additional information about a data migration error.
 
+## Properties
+
+- `code` (integer) *(required)*: The error code.
+- `domain` (string) *(required)*: The error domain.
+- `userInfo` (ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo): A dictionary that contains additional information about the error.
+
 ## See Also
 
 - [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges](contentcachinginformationresponse/statusresponse-data.dictionary/alertsforpeerfilterranges-data.dictionary.md)

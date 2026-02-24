@@ -26,9 +26,9 @@ A `Publisher` for events of the specified type.
 
 ## Parameters
 
-- `event`: The event type to subscribe to. For example,  .
-- `sourceObject`: The event source – usually the entity you are interested in.   to   listen all events of this type that occur in the scene.
-- `componentType`: The component type, or   for all (for ComponentEvents).
+- `event`: The event type to subscribe to. For example, [`SceneEvents.Update`](sceneevents/update.md).
+- `sourceObject`: The event source – usually the entity you are interested in. `nil` to listen all events of this type that occur in the scene.
+- `componentType`: The component type, or `nil` for all (for ComponentEvents).
 
 ## See Also
 

@@ -23,7 +23,7 @@ init(wrappedValue: Value, reset: @escaping (Value, inout Transaction) -> Void)
 ## Parameters
 
 - `wrappedValue`: A wrapped value for the gesture state property.
-- `reset`: A closure that provides a  .
+- `reset`: A closure that provides a [`Transaction`](transaction.md).
 
 ## See Also
 

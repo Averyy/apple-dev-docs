@@ -27,7 +27,7 @@ This method schedules the port with the receiver. You can add a port to multiple
 ## Parameters
 
 - `aPort`: The port to add to the receiver.
-- `mode`: The mode in which to add  . You may specify a custom mode or use one of the modes listed in  .
+- `mode`: The mode in which to add `aPort`. You may specify a custom mode or use one of the modes listed in `Run Loop Modes`.
 
 ## See Also
 

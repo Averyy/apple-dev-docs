@@ -84,6 +84,25 @@ Specify `com.apple.ews.account` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `allowMailDrop` (boolean): If `true`, the system enables Mail Drop.
+- `AuthenticationCertificateUUID` (string): The UUID of the certificate payload within the same profile to use for the identity credential. Supported on macOS 10.11 or later. On macOS 10.12 or later use the PayloadCertificateUUID.
+- `EmailAddress` (string): The full email address for the account. If the email address string isn’t present in the payload, the device prompts for it during profile installation.
+- `ExternalHost` (string): The external server address.
+- `ExternalPath` (string): The external server path.
+- `ExternalPort` (integer): The external server port number.
+- `ExternalSSL` (boolean): If `true`, the system enables SSL for connections to the external server.
+- `Host` (string): The Exchange server host name or IP address. Ignored if using OAuth.
+- `OAuth` (boolean): If `true`, the system enables OAuth for authentication. Don’t specify a password if `OAuth` is `true`. Available in macOS 10.14 and later
+- `OAuthSignInURL` (string): The URL to load into a web view for authentication through OAuth when autodiscovery isn’t used. This setting requires a `Host` value.
+- `Password` (string): The password of the account. Use only with encrypted profiles.
+- `Path` (string): The server path.
+- `PayloadCertificateUUID` (string): The UUID of the certificate payload within the same profile to use for the identity credential. Supported on macOS 10.12 or later.
+- `Port` (integer): The server port number.
+- `SSL` (boolean): If `true`, the system enables SSL.
+- `UserName` (string): The user name for this Exchange account. Required for noninteractive installation, such as through MDM. If missing, the system prompts the user for it during interactive profile installation.
+
 ## See Also
 
 - [object ExchangeActiveSync](exchangeactivesync.md)

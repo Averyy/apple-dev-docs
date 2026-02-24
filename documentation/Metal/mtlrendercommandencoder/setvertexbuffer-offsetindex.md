@@ -30,9 +30,9 @@ By default, the buffer at each index is `nil`.
 
 ## Parameters
 
-- `buffer`: An   instance the command assigns to an entry in the vertex shader argument table for buffers.
-- `offset`: See the   to check for offset alignment requirements for buffers in   and   address space.
-- `index`: An integer that represents the entry in the vertex shader argument table for buffers that stores a record of   and  .
+- `buffer`: An [`MTLBuffer`](mtlbuffer.md) instance the command assigns to an entry in the vertex shader argument table for buffers.
+- `offset`: An integer that represents the location, in bytes, from the start of `buffer` where the vertex shader argument data begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `index`: An integer that represents the entry in the vertex shader argument table for buffers that stores a record of `buffer` and `offset`.
 
 ## See Also
 

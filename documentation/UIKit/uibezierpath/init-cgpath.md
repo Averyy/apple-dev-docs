@@ -25,7 +25,7 @@ A new path object with the specified path information.
 
 ## Parameters
 
-- `CGPath`: The Core Graphics path from which to obtain the initial path information. If this parameter is  , the method raises an exception.
+- `CGPath`: The Core Graphics path from which to obtain the initial path information. If this parameter is `nil`, the method raises an exception.
 
 ## See Also
 

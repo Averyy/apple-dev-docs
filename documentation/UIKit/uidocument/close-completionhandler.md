@@ -25,7 +25,7 @@ You typically wouldn’t override this method. The default implementation calls 
 
 ## Parameters
 
-- `completionHandler`: The block is invoked on the main queue.
+- `completionHandler`: A block with code to execute after the save-and-close operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if any save operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The block is invoked on the main queue.
 
 ## See Also
 

@@ -35,7 +35,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `theService`: The CFNetService, obtained by previously calling  , for which a registration or a resolution is to be canceled.
+- `theService`: The CFNetService, obtained by previously calling [`CFNetServiceCreate(_:_:_:_:_:)`](cfnetservicecreate(_:_:_:_:_:).md), for which a registration or a resolution is to be canceled.
 
 ## See Also
 

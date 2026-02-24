@@ -22,9 +22,9 @@ A result code. To interpret the result code, see [`CGError`](cgerror.md).
 ## Parameters
 
 - `mask`: An OpenGL display mask that identifies one or more displays.
-- `maxDisplays`: The size of the   array. This value determines the maximum number of displays the list includes.
-- `displays`: A pointer to storage you provide for an array of display IDs. On return, the array contains a list of displays that corresponds to the bits set in the mask. If you pass  , on return the display count contains the total number of displays specified in the mask.
-- `matchingDisplayCount`: A pointer to a display count variable you provide. On return, the display count contains the actual number of displays the function added to the   array. This value is at most  .
+- `maxDisplays`: The size of the `displays` array. This value determines the maximum number of displays the list includes.
+- `displays`: A pointer to storage you provide for an array of display IDs. On return, the array contains a list of displays that corresponds to the bits set in the mask. If you pass `NULL`, on return the display count contains the total number of displays specified in the mask.
+- `matchingDisplayCount`: A pointer to a display count variable you provide. On return, the display count contains the actual number of displays the function added to the `displays` array. This value is at most `maxDisplays`.
 
 ## See Also
 

@@ -19,8 +19,8 @@ init(localizedName: String, deviceID: UUID, legacyDeviceID: String?, source: any
 
 - `localizedName`: A localized name for the device.
 - `deviceID`: A universally unique device identifier value.
-- `legacyDeviceID`: Set this argument to   if your device has no backward-compatibility requirements.
-- `source`: An extension-specific object that conforms to the   protocol.
+- `legacyDeviceID`: A string device identifier for backward compatibility with existing CMIO DAL clients. The value you provide can differ from the value of `deviceID.UUIDString`. Set this argument to `nil` if your device has no backward-compatibility requirements.
+- `source`: An extension-specific object that conforms to the [`CMIOExtensionDeviceSource`](cmioextensiondevicesource.md) protocol.
 
 ## See Also
 

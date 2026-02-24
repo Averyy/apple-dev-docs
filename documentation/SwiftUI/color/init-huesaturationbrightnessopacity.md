@@ -26,10 +26,10 @@ This initializer creates a constant color that doesn’t change based on context
 
 ## Parameters
 
-- `hue`: A value in the range   to   that maps to an angle   from 0° to 360° to represent a shade on the color wheel.
-- `saturation`: A value in the range   to   that indicates   how strongly the hue affects the color. A value of   removes the   effect of the hue, resulting in gray. As the value increases,   the hue becomes more prominent.
-- `brightness`: A value in the range   to   that indicates   how bright a color is. A value of   results in black, regardless   of the other components. The color lightens as you increase this   component.
-- `opacity`: An optional degree of opacity, given in the range   to   . A value of   means 100% transparency, while a value of    means 100% opacity. The default is  .
+- `hue`: A value in the range `0` to `1` that maps to an angle from 0° to 360° to represent a shade on the color wheel.
+- `saturation`: A value in the range `0` to `1` that indicates how strongly the hue affects the color. A value of `0` removes the effect of the hue, resulting in gray. As the value increases, the hue becomes more prominent.
+- `brightness`: A value in the range `0` to `1` that indicates how bright a color is. A value of `0` results in black, regardless of the other components. The color lightens as you increase this component.
+- `opacity`: An optional degree of opacity, given in the range `0` to `1`. A value of `0` means 100% transparency, while a value of `1` means 100% opacity. The default is `1`.
 
 ## See Also
 

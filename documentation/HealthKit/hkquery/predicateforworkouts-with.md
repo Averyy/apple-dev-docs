@@ -27,9 +27,33 @@ A predicate for matching workouts based on the type of activity.
 
 Use this convenience method to create a predicate that matches workouts based on their activity. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let workout = HKQuery.predicateForWorkouts(with: .curling)
+ 
+ 
+let explicitWorkout = NSPredicate(format: "%K == %d",
+                                  HKPredicateKeyPathWorkoutType,
+                                  HKWorkoutActivityType.curling.rawValue)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *workout =
+    [HKQuery predicateForWorkoutsWithWorkoutActivityType:
+     HKWorkoutActivityTypeCurling];
+ 
+NSPredicate *explicitWorkout =
+[NSPredicate predicateWithFormat:@"%K == %d",
+ HKPredicateKeyPathWorkoutType,
+ HKWorkoutActivityTypeCurling];
+```
+
 ## Parameters
 
-- `workoutActivityType`: The type of activity. For a list of valid workout activities, see  .
+- `workoutActivityType`: The type of activity. For a list of valid workout activities, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
 
 ## See Also
 

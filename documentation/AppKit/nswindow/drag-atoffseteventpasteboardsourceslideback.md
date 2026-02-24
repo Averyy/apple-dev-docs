@@ -25,8 +25,8 @@ This method should be invoked only from within a view’s implementation of the 
 - `initialOffset`: The pointer’s location relative to the mouse-down location. Not used in macOS 10.4 and later.
 - `event`: The left-mouse down event that triggered the dragging operation.
 - `pboard`: The pasteboard that holds the data to be transferred to the destination.
-- `sourceObj`: The object serving as the controller of the dragging operation. It must conform to the   protocol.
-- `slideFlag`: Specifies whether the drag image should slide back to   if it’s rejected by the drag destination. Pass   to specify slide back behavior or   to specify that it should not.
+- `sourceObj`: The object serving as the controller of the dragging operation. It must conform to the [`NSDraggingSource`](nsdraggingsource.md) protocol.
+- `slideFlag`: Specifies whether the drag image should slide back to `baseLocation` if it’s rejected by the drag destination. Pass [`true`](https://developer.apple.com/documentation/Swift/true) to specify slide back behavior or [`false`](https://developer.apple.com/documentation/Swift/false) to specify that it should not.
 
 ## See Also
 

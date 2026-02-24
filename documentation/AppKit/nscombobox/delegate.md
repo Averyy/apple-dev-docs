@@ -16,7 +16,7 @@ weak var delegate: (any NSComboBoxDelegate)? { get set }
 
 ## Parameters
 
-- `anObject`: The delegate for the receiver. The delegate must conform to the   protocol.
+- `anObject`: The delegate for the receiver. The delegate must conform to the [`NSComboBoxDelegate`](nscomboboxdelegate.md) protocol.
 
 
 ---

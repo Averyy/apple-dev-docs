@@ -53,7 +53,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `delay`: The number of seconds to delay the start of the   animation.
+- `delay`: The number of seconds to delay the start of the animation.
 
 ## See Also
 

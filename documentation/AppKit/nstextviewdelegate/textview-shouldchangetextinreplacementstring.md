@@ -27,7 +27,7 @@ If a delegate implements this method and not its multiple-selection replacement,
 
 - `textView`: The text view sending the message. This is the first text view in a series shared by a layout manager, not necessarily the text view displaying the selected text.
 - `affectedCharRange`: The range of characters to be replaced.
-- `replacementString`: The characters that will replace the characters in  ;   if only text attributes are being changed.
+- `replacementString`: The characters that will replace the characters in `affectedCharRange`; `nil` if only text attributes are being changed.
 
 ## See Also
 

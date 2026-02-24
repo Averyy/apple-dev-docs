@@ -35,7 +35,7 @@ You can also test subscription renewals by accelerating the time in the testing 
 
 ## Parameters
 
-- `productIdentifier`: The   of the auto-renewable subscription to renew.
+- `productIdentifier`: The [`productIdentifier`](sktesttransaction/productidentifier.md) of the auto-renewable subscription to renew.
 
 ## See Also
 

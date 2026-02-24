@@ -29,6 +29,10 @@ This method applies the noise reduction filter to an image. The effect calculate
 
 The morphology noise reduction filter uses the following properties:
 
+- **`noiseLevel`**: A `float` representing the amount of noise reduction as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the sharpness of the final image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that reduces noise in the input image:
 
 ```swift

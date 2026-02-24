@@ -22,8 +22,8 @@ If a child view controller has a different parent when you call this method, the
 
 ## Parameters
 
-- `childViewController`: The child view controller to add to the   array.
-- `index`: The index in the   array at which to insert the child view controller. This value must not be greater than the count of elements in the array.
+- `childViewController`: The child view controller to add to the [`children`](nsviewcontroller/children.md) array.
+- `index`: The index in the [`children`](nsviewcontroller/children.md) array at which to insert the child view controller. This value must not be greater than the count of elements in the array.
 
 ## See Also
 

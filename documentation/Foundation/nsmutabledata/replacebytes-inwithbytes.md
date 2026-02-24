@@ -28,7 +28,7 @@ A sample using this method is given in [`Working With Mutable Binary Data`](http
 
 ## Parameters
 
-- `range`: The range within the receiver’s contents to replace with  . The range must not exceed the bounds of the receiver.
+- `range`: The range within the receiver’s contents to replace with `bytes`. The range must not exceed the bounds of the receiver.
 - `bytes`: The data to insert into the receiver’s contents.
 
 ## See Also

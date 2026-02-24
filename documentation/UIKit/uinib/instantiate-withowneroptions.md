@@ -31,7 +31,7 @@ If the nib file contains any proxy objects beyond just the File’s Owner proxy 
 ## Parameters
 
 - `ownerOrNil`: The object to use as the owner of the nib file. If the nib file has an owner, you must specify a valid object for this parameter.
-- `optionsOrNil`: A dictionary containing the options to use when opening the nib file. For a list of available keys for this dictionary, see  .
+- `optionsOrNil`: A dictionary containing the options to use when opening the nib file. For a list of available keys for this dictionary, see `NSBundle UIKit Additions`.
 
 ## See Also
 

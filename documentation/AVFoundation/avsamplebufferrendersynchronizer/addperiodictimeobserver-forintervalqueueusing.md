@@ -35,7 +35,7 @@ Always pair a call to this method with a call to [`removeTimeObserver(_:)`](avsa
 ## Parameters
 
 - `interval`: The specified time interval requesting block invocation during rendering.
-- `queue`: The serial queue the block should be unqueued on. If you pass  , the main queue is used. Passing a concurrent queue results in undefined behavior.
+- `queue`: The serial queue the block should be unqueued on. If you pass `NULL`, the main queue is used. Passing a concurrent queue results in undefined behavior.
 - `block`: The block to be invoked periodically.
 
 ## See Also

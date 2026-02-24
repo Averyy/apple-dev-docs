@@ -23,7 +23,7 @@ convenience init(format expressionFormat: String, _ args: any CVarArg...)
 ## Parameters
 
 - `expressionFormat`: The expression format.
-- `args`: A list of arguments to insert into the   string.
+- `args`: A list of arguments to insert into the `expressionFormat` string.
 
 ## See Also
 

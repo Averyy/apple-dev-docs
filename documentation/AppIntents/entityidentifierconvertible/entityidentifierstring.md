@@ -23,7 +23,7 @@ var entityIdentifierString: String { get }
 
 #### Discussion
 
-Note: Due to system-imposed limitations, !
+Note: Due to system-imposed limitations, **the length of this value can not exceed 4096 characters**!
 
 
 ---

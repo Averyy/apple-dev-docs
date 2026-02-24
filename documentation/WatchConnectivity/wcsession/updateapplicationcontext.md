@@ -32,7 +32,7 @@ This method can only be called while the session is active—that is, the [`acti
 
 ## Parameters
 
-- `applicationContext`: A dictionary of property list values. You define the meaning of the dictionary contents. This parameter must not be  .
+- `applicationContext`: A dictionary of property list values. You define the meaning of the dictionary contents. This parameter must not be `nil`.
 
 ## See Also
 

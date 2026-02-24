@@ -26,7 +26,7 @@ An `OSStatus` result code.
 
 - `port`: The port on which to create the connection.
 - `source`: The source from which to create the connection.
-- `connRefCon`: The data that passes to the port’s   to identify the source, which is always   for virtual destinations.
+- `connRefCon`: The data that passes to the port’s [`MIDIReceiveBlock`](midireceiveblock.md) to identify the source, which is always [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) for virtual destinations.
 
 ## See Also
 

@@ -39,7 +39,7 @@ SwiftUI translates the value that your custom action’s handler returns into an
 
 ## Parameters
 
-- `handler`: The closure to run for the given URL.   The closure takes a URL as input, and returns a    that indicates the outcome of the action.
+- `handler`: The closure to run for the given URL. The closure takes a URL as input, and returns a [`OpenURLAction.Result`](openurlaction/result.md) that indicates the outcome of the action.
 
 ## See Also
 

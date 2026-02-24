@@ -20,6 +20,15 @@ object SecurityInfoResponse.SecurityInfo.FirewallSettings
 - [object SecurityInfoResponse.SecurityInfo.FirewallSettings.ApplicationsItem](securityinforesponse/securityinfo-data.dictionary/firewallsettings-data.dictionary/applicationsitem.md)
   A dictionary that describes the allowed apps.
 
+## Properties
+
+- `Applications` ([SecurityInfoResponse.SecurityInfo.FirewallSettings.ApplicationsItem]): An array of dictionaries that describes the allowed applications.
+- `BlockAllIncoming` (boolean): If `true`, the firewall blocks all incoming connections.
+- `FirewallEnabled` (boolean): If `true`, the firewall is on.
+- `LoggingEnabled` (boolean): If `true`, logging is enabled.
+- `LoggingOption` (string): The type of logging emitted by the firewall.
+- `StealthMode` (boolean): If true, stealth mode is active for the firewall.
+
 ## See Also
 
 - [object SecurityInfoResponse.SecurityInfo.FirmwarePasswordStatus](securityinforesponse/securityinfo-data.dictionary/firmwarepasswordstatus-data.dictionary.md)

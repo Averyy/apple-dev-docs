@@ -30,8 +30,8 @@ This callback is passed to [`CFArrayCreate(_:_:_:_:)`](cfarraycreate(_:_:_:_:).m
 
 ## Parameters
 
-- `value1`: A value in an array to be compared with   for equality.
-- `value2`: A value in an array to be compared with   for equality.
+- `value1`: A value in an array to be compared with `value2` for equality.
+- `value2`: A value in an array to be compared with `value1` for equality.
 
 ## See Also
 

@@ -33,10 +33,10 @@ When all transfers are complete, the system executes the callback you provided i
 - `ioTransferIndex`: The index of the first ring element to transfer.
 - `ioTransferCount`: The number of ring elements to transfer.
 - `ioTransferAcceptedCount`: A pointer to a variable. On return, this variable contains the number of ring elements that the method enqueued successfully.
-- `dataBufferLengthArray`: An array of integers, each of which contains the amount of data to transfer for an element. The first integer in the array contains the length of the buffer for the element at the index  . The next integer contains the length of the buffer for the next element in the ring, and so on.
-- `dataBufferLengthArrayCount`: The number of elements in the   parameter. The value in this parameter must match the value in  .
-- `completion`: The action object containing a completion function to call when the transfers finish. Your callback method must conform to the   method. This parameter must not be  .
-- `completionTimeoutMs`: The timeout value in milliseconds. Specify   if you don’t want the request to time out. You must specify   when transferring data on an interrupt endpoint.
+- `dataBufferLengthArray`: An array of integers, each of which contains the amount of data to transfer for an element. The first integer in the array contains the length of the buffer for the element at the index `ioTransferIndex`. The next integer contains the length of the buffer for the next element in the ring, and so on.
+- `dataBufferLengthArrayCount`: The number of elements in the `dataBufferLengthArray` parameter. The value in this parameter must match the value in `ioTransferCount`.
+- `completion`: The action object containing a completion function to call when the transfers finish. Your callback method must conform to the [`CompleteAsyncIOBundled`](iousbhostpipe/completeasynciobundled.md) method. This parameter must not be `NULL`.
+- `completionTimeoutMs`: The timeout value in milliseconds. Specify `0` if you don’t want the request to time out. You must specify `0` when transferring data on an interrupt endpoint.
 
 ## See Also
 

@@ -23,7 +23,7 @@ init(wrappedValue: T, from configurationProvider: ConfigurationProvider.Type)
 ## Parameters
 
 - `wrappedValue`: The underlying value to make codable, using data from the configuration provider.
-- `configurationProvider`: The type of the configuration provider, which provides additional information to encode  .
+- `configurationProvider`: The type of the configuration provider, which provides additional information to encode `wrappedValue`.
 
 ## See Also
 

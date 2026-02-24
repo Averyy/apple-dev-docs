@@ -57,8 +57,8 @@ struct PlayerView: View {
 
 ## Parameters
 
-- `value`: The value to check against when determining whether   to run the closure.
-- `initial`: Whether the action should be run when this view initially   appears.
+- `value`: The value to check against when determining whether to run the closure.
+- `initial`: Whether the action should be run when this view initially appears.
 - `action`: A closure to run when the value changes.
 
 ## See Also

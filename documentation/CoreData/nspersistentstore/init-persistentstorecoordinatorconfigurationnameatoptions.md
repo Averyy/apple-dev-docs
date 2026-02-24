@@ -35,9 +35,9 @@ This is the designated initializer for persistent stores.
 ## Parameters
 
 - `root`: A persistent store coordinator.
-- `name`: The name of the managed object model configuration to use. Pass   if you do not want to specify a configuration.
+- `name`: The name of the managed object model configuration to use. Pass `nil` if you do not want to specify a configuration.
 - `url`: The URL of the store to load.
-- `options`: A dictionary containing configuration options. See   for a list of key names for options in this dictionary.
+- `options`: A dictionary containing configuration options. See [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) for a list of key names for options in this dictionary.
 
 ## See Also
 

@@ -12,7 +12,7 @@ Explain the purpose of interface elements by showing a tooltip when a person pos
 
 #### Overview
 
-This sample shows how to display a tooltip (also known as a ) that explains the purpose of, or provides additional information about, an interface element such as a view or control without shifting a person’s focus away from the primary interface. A tooltip appears when a person positions the pointer over a view or control for a few seconds. The tooltip remains visible for a few seconds or until the pointer moves away from the interface element.
+This sample shows how to display a tooltip (also known as a *help tag*) that explains the purpose of, or provides additional information about, an interface element such as a view or control without shifting a person’s focus away from the primary interface. A tooltip appears when a person positions the pointer over a view or control for a few seconds. The tooltip remains visible for a few seconds or until the pointer moves away from the interface element.
 
 For guidelines on designing the content of your tooltips, see the [`Help`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/) section of the macOS Human Interface Guidelines.
 

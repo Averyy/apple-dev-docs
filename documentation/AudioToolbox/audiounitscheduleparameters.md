@@ -31,8 +31,8 @@ A result code.
 
 Use this function to schedule changes to the value of an audio unit parameter.
 
-- A so-called  audio unit parameter event takes place at a future time and involves an immediate change from one value to another.
-- A so-called  audio unit parameter event begins at a future time and proceeds linearly, over a specified number of audio samples, from a starting value to a final value.
+- A so-called *immediate* audio unit parameter event takes place at a future time and involves an immediate change from one value to another.
+- A so-called *ramped* audio unit parameter event begins at a future time and proceeds linearly, over a specified number of audio samples, from a starting value to a final value.
 
 With a single call to this function, you can schedule multiple parameter events. All the events apply only to the current audio unit render call; the events are scheduled as a part of the pre-render notification callback.
 
@@ -46,7 +46,7 @@ An audio unit parameter that accepts scheduled events indicates this through its
 
 - `inUnit`: The audio unit that you want to schedule parameter changes for.
 - `inParameterEvent`: One or more parameter events that you want to schedule.
-- `inNumParamEvents`: The number of audio unit parameter events represented in the   parameter.
+- `inNumParamEvents`: The number of audio unit parameter events represented in the `inParameterEvent` parameter.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The result of the key exchange, or `nil` if an error occurred.
 - `otherPartyPublicKeyData`: The public key of the other party.
 - `objectID`: The identifier of the private key object.
 - `algorithm`: The algorithm to be used for key exchange.
-- `parameters`: Additional parameters used by   to perform the key exchange.
+- `parameters`: Additional parameters used by `algorithm` to perform the key exchange.
 
 ## See Also
 

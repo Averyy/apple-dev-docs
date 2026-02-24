@@ -20,9 +20,9 @@ var featureExtractor: MLImageClassifier.FeatureExtractorType { get set }
 
 #### Discussion
 
-When you train an image classifier with Create ML, you don’t train a complete model that converts images to labels. Instead, Create ML leverages a , which is another model that identifies a set of general but distinguishing image characteristics. You can either use Create ML’s `scenePrint` feature extractor or provide your own custom feature extractor.
+When you train an image classifier with Create ML, you don’t train a complete model that converts images to labels. Instead, Create ML leverages a *feature extractor*, which is another model that identifies a set of general but distinguishing image characteristics. You can either use Create ML’s `scenePrint` feature extractor or provide your own custom feature extractor.
 
-In either case, you train your model to map the feature extractor’s output to labels in a process known as . Your model effectively borrows the knowledge of the feature extractor to accelerate its own training process while requiring fewer training images.
+In either case, you train your model to map the feature extractor’s output to labels in a process known as *transfer learning*. Your model effectively borrows the knowledge of the feature extractor to accelerate its own training process while requiring fewer training images.
 
 ## See Also
 

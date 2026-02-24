@@ -27,8 +27,8 @@ func BNNSGraphGetInputNames(_ graph: bnns_graph_t, _ function: UnsafePointer<CCh
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
-- `input_names_count`: The number of elements in the   array.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
+- `input_names_count`: The number of elements in the `input_names` array.
 - `input_names`: On output, an array of pointers to strings that contain the input names.
 
 ## See Also

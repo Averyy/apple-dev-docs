@@ -24,8 +24,8 @@ Don’t invoke this method directly. Instead, use [`smartInsert(for:replacing:be
 
 ## Parameters
 
-- `pasteString`: The string that is replacing the characters in  .
-- `charRangeToReplace`: The range of characters which   is replacing.
+- `pasteString`: The string that is replacing the characters in `charRange`.
+- `charRangeToReplace`: The range of characters which `aString` is replacing.
 
 ## See Also
 

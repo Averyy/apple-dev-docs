@@ -9,6 +9,12 @@ A Boolean value that indicates if an iOS or iPadOS app supports Assistive Access
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 #### Discussion
 
 Adding this key to your project’s Info pane with a value of `YES` indicates your app supports a streamlined experience designed for Assistive Access. It allows your app’s UI to match the prominent style of Assistive Access controls. It also lists your app as Optimized for Assistive Access in Settings, so that a trusted supporter configuring Assistive Access on someone’s behalf knows that your app is optimized for this feature.

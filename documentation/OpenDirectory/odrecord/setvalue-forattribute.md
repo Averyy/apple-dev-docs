@@ -21,7 +21,7 @@ func setValue(_ inValueOrValues: Any!, forAttribute inAttribute: String!) throws
 
 ## Parameters
 
-- `inValueOrValues`: The value or values. Can be of type   or  , or an   with elements of both types.
+- `inValueOrValues`: The value or values. Can be of type `NSString` or `NSData`, or an `NSArray` with elements of both types.
 - `inAttribute`: The attribute.
 
 ## See Also

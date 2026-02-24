@@ -27,7 +27,7 @@ This method returns immediately after starting the process of connecting the VPN
 
 ## Parameters
 
-- `options`: An   that will be passed to the tunnel provider during the process of starting the tunnel. See Constants, below.
+- `options`: An `NSDictionary` that will be passed to the tunnel provider during the process of starting the tunnel. See Constants, below.
 
 ## See Also
 

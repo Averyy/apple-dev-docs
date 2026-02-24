@@ -30,7 +30,7 @@ On return, the caller doesn’t own the returned `formatDesc`, and must retain i
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 
 ---

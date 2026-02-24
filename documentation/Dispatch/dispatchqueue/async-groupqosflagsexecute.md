@@ -23,9 +23,9 @@ func async(group: DispatchGroup? = nil, qos: DispatchQoS = .unspecified, flags: 
 
 ## Parameters
 
-- `group`: The dispatch group to associate with the work item. If you specify  , the block is not associated with a group.
-- `qos`: The quality-of-service class to use when executing the block. This parameter determines the priority with which the block is scheduled and executed. For a list of possible values, see  .
-- `flags`: Additional attributes to apply when executing the block. For a list of possible values, see  .
+- `group`: The dispatch group to associate with the work item. If you specify `NULL`, the block is not associated with a group.
+- `qos`: The quality-of-service class to use when executing the block. This parameter determines the priority with which the block is scheduled and executed. For a list of possible values, see [`DispatchQoS`](dispatchqos.md).
+- `flags`: Additional attributes to apply when executing the block. For a list of possible values, see [`DispatchWorkItemFlags`](dispatchworkitemflags.md).
 - `work`: The block containing the work to perform. This block has no return value and no parameters.
 
 ## See Also

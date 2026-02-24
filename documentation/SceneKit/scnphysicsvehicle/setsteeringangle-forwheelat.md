@@ -27,7 +27,7 @@ Steering angles are relative to the wheel’s [`steeringAxis`](scnphysicsvehicle
 ## Parameters
 
 - `value`: The angle to set the wheel at relative to its steering axis, in radians.
-- `index`: The index, in the vehicle’s   array, of the wheel to be pivoted.
+- `index`: The index, in the vehicle’s [`wheels`](scnphysicsvehicle/wheels.md) array, of the wheel to be pivoted.
 
 ## See Also
 

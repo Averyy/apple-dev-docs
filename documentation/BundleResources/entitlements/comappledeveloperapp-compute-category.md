@@ -8,6 +8,10 @@ An entitlement that allows an app to adjust thresholds that balance thermal diss
 **Availability**:
 - visionOS 2.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [Passthrough in screen capture](entitlements/com.apple.developer.screen-capture.include-passthrough.md)

@@ -25,7 +25,7 @@ The created session object.
 
 ## Parameters
 
-- `inOptions`: A dictionary of options to associate with the session. Can be  .
+- `inOptions`: A dictionary of options to associate with the session. Can be `nil`.
 
 ## See Also
 

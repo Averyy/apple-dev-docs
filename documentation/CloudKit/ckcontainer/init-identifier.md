@@ -26,7 +26,7 @@ The specified identifier must correspond to one of the containers in the iCloud 
 
 ## Parameters
 
-- `containerIdentifier`: The bundle identifier of the app with the container that you want to access. The bundle identifier must be in the app’s   entitlement. This parameter must not be  .
+- `containerIdentifier`: The bundle identifier of the app with the container that you want to access. The bundle identifier must be in the app’s `com.apple.developer.icloud-container-identifiers` entitlement. This parameter must not be `nil`.
 
 ## See Also
 

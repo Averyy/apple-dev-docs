@@ -39,7 +39,7 @@ note that headroom is a linear quantity, and as such any color adjustments shoul
 
 ## Parameters
 
-- `headroom`: The headroom value to associate with the   new color.
+- `headroom`: The headroom value to associate with the new color.
 
 ## See Also
 

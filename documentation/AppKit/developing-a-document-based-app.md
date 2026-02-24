@@ -12,7 +12,7 @@ Write an app that creates, manages, edits, and saves text documents.
 
 This sample shows how to use the Cocoa document architecture to manage documents. A document is a body of information, such as pages of text, stored in a file locally or in iCloud.
 
-In the Cocoa document architecture, your document is represented by a custom subclass of [`NSDocument`](nsdocument.md). The `NSDocument` class provides most of the behavior for managing your document. In your subclass, you override or fine-tune this behavior by providing custom code for reading and writing document data. A document’s data is called the . Each `NSDocument` has its own [`NSWindowController`](nswindowcontroller.md), which in turn creates an [`NSWindow`](nswindow.md) object for displaying the document content.
+In the Cocoa document architecture, your document is represented by a custom subclass of [`NSDocument`](nsdocument.md). The `NSDocument` class provides most of the behavior for managing your document. In your subclass, you override or fine-tune this behavior by providing custom code for reading and writing document data. A document’s data is called the *data model*. Each `NSDocument` has its own [`NSWindowController`](nswindowcontroller.md), which in turn creates an [`NSWindow`](nswindow.md) object for displaying the document content.
 
 Because a document-based app handles multiple documents that are open at the same time, it uses [`NSDocumentController`](nsdocumentcontroller.md) to manage them. Cocoa provides most of the infrastructure for managing your documents. With file coordination, version management, and conflict resolution among other documents, it provides the easiest path to using iCloud.
 
@@ -63,7 +63,7 @@ Using a centralized `Content` object encapsulates the document’s data model in
 
 ##### Design the Document User Interface
 
-This sample follows the Model–View–Controller design pattern by separating its data from the user interface.  The  portion is the `Content` object, the  portion is document’s `NSWindow` plus the `NSView` hierarchy it contains, and the  portion is divided among various controller objects, including your `Document` object. The document’s `NSWindowController` object and the view hierarchy of `NSViewController` objects descend from the window controller’s `contentViewController`.
+This sample follows the Model–View–Controller design pattern by separating its data from the user interface.  The *model* portion is the `Content` object, the *view* portion is document’s `NSWindow` plus the `NSView` hierarchy it contains, and the *controller* portion is divided among various controller objects, including your `Document` object. The document’s `NSWindowController` object and the view hierarchy of `NSViewController` objects descend from the window controller’s `contentViewController`.
 
 When you create your `Document` subclass, you determine which window controller the document will use by implementing the `makeWindowControllers()` function. This function also sets a reference to the document object as the `contentViewController`‘s `representedObject`, allowing the user interface elements to bind the document’s data model. Hence the user interface elements get their values through the `representedObject`.
 
@@ -85,7 +85,7 @@ override func makeWindowControllers() {
 }
 ```
 
-When you organize the user interface into groups of view controllers called , `NSViewController` passes down its `representedObject` to all of its children.
+When you organize the user interface into groups of view controllers called *child view controllers*, `NSViewController` passes down its `representedObject` to all of its children.
 
 ```swift
 override var representedObject: Any? {

@@ -31,7 +31,7 @@ This function returns a retained dictionary, which you need to release when youâ
 ## Parameters
 
 - `buffer`: A buffer with attachments to copy.
-- `attachmentMode`: The mode of the attachments you want to copy. See   for possible values.
+- `attachmentMode`: The mode of the attachments you want to copy. See [`CVAttachmentMode`](cvattachmentmode.md) for possible values.
 
 ## See Also
 

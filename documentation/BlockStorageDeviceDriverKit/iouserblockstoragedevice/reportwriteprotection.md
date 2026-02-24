@@ -20,7 +20,7 @@ A value that indicates the report-write-protection result. Return [`kIOReturnSuc
 
 ## Parameters
 
-- `isWriteProtected`: An in/out Boolean parameter. On output, set this to   if the media is write-protected.
+- `isWriteProtected`: An in/out Boolean parameter. On output, set this to `true` if the media is write-protected.
 
 ## See Also
 

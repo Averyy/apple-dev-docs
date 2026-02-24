@@ -26,7 +26,7 @@ func hv_vcpu_get_simd_fp_reg(_ vcpu: hv_vcpu_t, _ reg: hv_simd_fp_reg_t, _ value
 
 - `vcpu`: The vCPU instance.
 - `reg`: The ID of the SIMD and FP register.
-- `value`: The value of the register   on output.
+- `value`: The value of the register `reg` on output.
 
 ## See Also
 

@@ -23,7 +23,7 @@ final func reportSpam(_ message: MMSMessage) async throws
 
 ## Parameters
 
-- `message`:   that needs to be reported as spam.
+- `message`: `MMSMessage` that needs to be reported as spam.
 
 
 ---

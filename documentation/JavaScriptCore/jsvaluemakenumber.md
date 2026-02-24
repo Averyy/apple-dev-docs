@@ -26,7 +26,7 @@ A [`JSValueRef`](jsvalueref.md) of the number type that represents the value of 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `number`: The double to assign to the newly created  .
+- `number`: The double to assign to the newly created [`JSValueRef`](jsvalueref.md).
 
 ## See Also
 

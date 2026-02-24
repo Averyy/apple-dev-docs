@@ -16,11 +16,11 @@ Find information about a specific audio recording when a segment of it’s part 
 
 #### Overview
 
-ShazamKit uses the unique acoustic  of an audio recording to find a match. This signature captures the time-frequency distribution of the audio signal energy, and is much smaller than the original audio. It’s also a one-way conversion, so it’s not possible to convert the signature back to the recording.
+ShazamKit uses the unique acoustic *signature* of an audio recording to find a match. This signature captures the time-frequency distribution of the audio signal energy, and is much smaller than the original audio. It’s also a one-way conversion, so it’s not possible to convert the signature back to the recording.
 
-ShazamKit generates a  for each searchable full audio recording. A  stores the reference signatures and their associated metadata, or .
+ShazamKit generates a *reference signature* for each searchable full audio recording. A *catalog* stores the reference signatures and their associated metadata, or *media items*.
 
-Searching for a match compares a , which ShazamKit generates for captured audio, with the reference signatures in the catalog. Matches occur when the query signature sufficiently matches a part of a reference signature. Matches can occur even when the captured audio is noisy, such as with a partial recording of background music playing in a restaurant.
+Searching for a match compares a *query signature*, which ShazamKit generates for captured audio, with the reference signatures in the catalog. Matches occur when the query signature sufficiently matches a part of a reference signature. Matches can occur even when the captured audio is noisy, such as with a partial recording of background music playing in a restaurant.
 
 The figure below illustrates matching a query signature with the reference signature in the catalog. The information for a match includes the timecode in the reference recording that matches the start of the query.
 

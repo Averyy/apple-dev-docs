@@ -17,7 +17,7 @@ init(count: UInt32, items: UnsafeMutablePointer<AuthorizationItem>?)
 
 ## Parameters
 
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `items` array.
 - `items`: A pointer to the first authorization item in an array of items.
 
 

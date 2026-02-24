@@ -24,7 +24,7 @@ You can also use this method to update information on an ICCID that already exis
 
 ## Parameters
 
-- `properties`: A required parameter where you specify the eSIM’s  ,   and  . If missing, an error is returned. You are allowed to provide an empty list for  .
+- `properties`: A required parameter where you specify the eSIM’s [`associatedIccid`](ctcellularplanproperties/associatediccid.md), [`simCapability`](ctcellularplanproperties/simcapability.md) and [`supportedRegionCodes`](ctcellularplanproperties/supportedregioncodes-yhu5.md). If missing, an error is returned. You are allowed to provide an empty list for `supportedRegionCodes`.
 - `completionHandler`: A completion handler that executes after processing the request. The parameter passed to the completion handler indicates whether the request succeeded, failed, or ended in an unknown state.
 
 

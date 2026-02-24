@@ -30,7 +30,7 @@ A sample using this method can be found in [`Working With Binary Data`](https://
 
 ## Parameters
 
-- `range`: The range in the receiver from which to get the data. If this range is not within the data object’s range of bytes,   is raised.
+- `range`: The range in the receiver from which to get the data. If this range is not within the data object’s range of bytes, [`rangeException`](nsexceptionname/rangeexception.md) is raised.
 
 ## See Also
 

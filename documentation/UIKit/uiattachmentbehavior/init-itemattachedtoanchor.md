@@ -30,8 +30,8 @@ The attachment object returned by this method is of type [`UIAttachmentBehavior.
 
 ## Parameters
 
-- `item`: The dynamic item to attach to the specified  .
-- `point`: The anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see  .
+- `item`: The dynamic item to attach to the specified `point`.
+- `point`: The anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](uidynamicanimator.md).
 
 ## See Also
 

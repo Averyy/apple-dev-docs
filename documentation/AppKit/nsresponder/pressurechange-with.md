@@ -20,7 +20,7 @@ This method is invoked automatically in response to user actions. `event` is the
 
 ## Parameters
 
-- `event`: An   object encapsulating information about the event that invoked the change in pressure.
+- `event`: An `NSEvent` object encapsulating information about the event that invoked the change in pressure.
 
 ## See Also
 

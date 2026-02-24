@@ -27,9 +27,9 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## Parameters
 
-- `titleKey`: The key for the toggle’s localized title, that describes   the purpose of the toggle.
+- `titleKey`: The key for the toggle’s localized title, that describes the purpose of the toggle.
 - `image`: The name of the image resource to lookup.
-- `isOn`: A binding to a property that indicates whether the toggle is   on or off.
+- `isOn`: A binding to a property that indicates whether the toggle is on or off.
 
 ## See Also
 

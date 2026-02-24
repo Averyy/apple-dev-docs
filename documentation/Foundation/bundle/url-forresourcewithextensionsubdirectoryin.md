@@ -26,8 +26,8 @@ The file URL for the resource file or `nil` if the file could not be located.
 
 ## Parameters
 
-- `name`: If you specify  , the method returns the first resource file it finds that matches the remaining criteria.
-- `ext`: If you specify an empty string or  , the extension is assumed not to exist and the file URL is the first file encountered that exactly matches  .
+- `name`: The name of the resource file. If you specify `nil`, the method returns the first resource file it finds that matches the remaining criteria.
+- `ext`: The filename extension of the file to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and the file URL is the first file encountered that exactly matches `name`.
 - `subpath`: The name of the bundle subdirectory to search.
 - `bundleURL`: The file URL of the bundle to search.
 

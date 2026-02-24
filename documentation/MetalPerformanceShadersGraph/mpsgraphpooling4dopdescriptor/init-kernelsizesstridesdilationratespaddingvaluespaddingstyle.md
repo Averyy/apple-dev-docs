@@ -25,11 +25,11 @@ The descriptor on autoreleasepool.
 
 ## Parameters
 
-- `kernelSizes`: See   property.
-- `strides`: See   property.
-- `dilationRates`: See   property.
-- `paddingValues`: See   property.
-- `paddingStyle`: See   property.
+- `kernelSizes`: See `kernelSizes` property.
+- `strides`: See `strides` property.
+- `dilationRates`: See `dilationRates` property.
+- `paddingValues`: See `paddingValues` property.
+- `paddingStyle`: See `paddingStyle` property.
 
 
 ---

@@ -26,7 +26,7 @@ An initialized condition lock object; may be different than the original receive
 
 ## Parameters
 
-- `condition`: The user-defined condition for the lock. The value of   is user-defined; see the class description for more information.
+- `condition`: The user-defined condition for the lock. The value of `condition` is user-defined; see the class description for more information.
 
 ## See Also
 

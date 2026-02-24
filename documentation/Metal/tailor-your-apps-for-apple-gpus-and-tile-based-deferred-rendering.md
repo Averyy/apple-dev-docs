@@ -6,7 +6,7 @@ Learn about characteristic Apple GPU features, including imageblocks, tile shade
 
 #### Overview
 
-The GPUs in Apple silicon implement a rendering technique called  (TBDR) that optimizes performance and power efficiency. The GPU breaks up the render destination into a grid of smaller regions, called . It processes each tile with one of its GPU cores, often running many at the same time. The GPU defers, or postpones, the rendering phase for each tile until after it evaluates all the geometry for that tile.
+The GPUs in Apple silicon implement a rendering technique called *tile-based deferred rendering* (TBDR) that optimizes performance and power efficiency. The GPU breaks up the render destination into a grid of smaller regions, called *tiles*. It processes each tile with one of its GPU cores, often running many at the same time. The GPU defers, or postpones, the rendering phase for each tile until after it evaluates all the geometry for that tile.
 
 Starting with A11, Apple-designed GPUs deliver several features that significantly enhance TBDR. Your app can access these enhancements through the Metal API, helping your apps and games achieve new levels of performance and capability. The features include imageblocks, tile shading, raster order groups, and imageblock sample coverage control. A11 and later Apple GPUs also improve fragment discard performance and simplify implementing techniques, including subsurface scattering, order-independent transparency, and tile-based lighting algorithms.
 
@@ -14,7 +14,7 @@ Starting with A11, Apple-designed GPUs deliver several features that significant
 
 Your app can draw more complicated scenes on a TBDR GPU because it significantly improves performance over traditional, immediate-mode (IM) GPUs by saving time, energy, and memory bandwidth. For example, an IM GPU fully processes primitives, such as lines and triangles, regardless of whether or not they’re visible in the rendering.
 
-A TBDR GPU avoids doing unnecessary work by processing all of the geometry of a render pass at the same time and shading only the visible primitives. The GPU splits the work into tiles so it can separately and simultaneously process all the geometry that intersects each tile and discard any occluded (or concealed) primitives. For each tile, the GPU then generates fragments (or potential pixels) from the remaining, visible primitives, processes them with a fragment shader, and writes them into . Tile memory is fast, temporary storage that resides on the GPU itself. After the GPU finishes rendering each tile into tile memory, it writes the final result to device memory.
+A TBDR GPU avoids doing unnecessary work by processing all of the geometry of a render pass at the same time and shading only the visible primitives. The GPU splits the work into tiles so it can separately and simultaneously process all the geometry that intersects each tile and discard any occluded (or concealed) primitives. For each tile, the GPU then generates fragments (or potential pixels) from the remaining, visible primitives, processes them with a fragment shader, and writes them into *tile memory*. Tile memory is fast, temporary storage that resides on the GPU itself. After the GPU finishes rendering each tile into tile memory, it writes the final result to device memory.
 
 Tile memory is an important component to TBDR because it saves time and energy by avoiding accessing device memory as much as possible. A fragment shader core’s access to tile memory has important advantages over the GPU’s access to device memory, including the following:
 
@@ -26,7 +26,7 @@ While the GPU runs the final stages of a render pass to tile memory, it can star
 
 ##### Add Customizations to Your Fragment Shaders with Imageblocks
 
-You can define and manipulate custom per-pixel data structures in , a high-bandwidth memory region in the GPU. Imageblocks are tiles of structured image data stored in local memory, allowing you to describe image data in tile memory that Apple GPUs can manipulate efficiently. They’re deeply integrated with fragment processing and the tile shading stage, and are also available to compute kernels. Metal has always rendered to imageblocks on devices with Apple silicon, but starting with the A11 GPU, Metal gives you complete control over data structures in imageblocks. An imageblock can pass data between the fragment and tile stages of a render pass. Threadgroup memory is suitable for unstructured data, but an imageblock is more suitable for image data.
+You can define and manipulate custom per-pixel data structures in *imageblock memory*, a high-bandwidth memory region in the GPU. Imageblocks are tiles of structured image data stored in local memory, allowing you to describe image data in tile memory that Apple GPUs can manipulate efficiently. They’re deeply integrated with fragment processing and the tile shading stage, and are also available to compute kernels. Metal has always rendered to imageblocks on devices with Apple silicon, but starting with the A11 GPU, Metal gives you complete control over data structures in imageblocks. An imageblock can pass data between the fragment and tile stages of a render pass. Threadgroup memory is suitable for unstructured data, but an imageblock is more suitable for image data.
 
 ![A block flow diagram of the A11 GPU architecture and external memory separated by a dashed line. The vertex stage flows from the GPU to a tiled vertex buffer in external memory. The tiled vertex buffer flows back into the GPU’s fragment stage, which is connected to the two other blocks in the GPU: the memory block for the tile z-, and s-buffers, and tile memory. The tile z- and s-buffers block connects to a depth buffer in external memory. The tile memory block contains two components — the imageblock memory and threadgroup memory — and connects to the GPU’s fragment and tile stages, and to a framebuffer in external memory.](https://docs-assets.developer.apple.com/published/a459be6c0d07553434d3453c188539b0/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering-1%402x.png)
 
@@ -54,7 +54,7 @@ Apps that use tiles shaders can avoid storing intermediate results out to device
 
 ##### Sequence Operations with Raster Order Groups
 
-Your apps can precisely control the order of parallel fragment shader threads that access the same pixel coordinates with . Raster order groups offer ordered memory operations from fragment shaders and simplify rendering techniques, such as order-independent transparency, dual-layer geometry buffers, and voxelization.
+Your apps can precisely control the order of parallel fragment shader threads that access the same pixel coordinates with *raster order groups*. Raster order groups offer ordered memory operations from fragment shaders and simplify rendering techniques, such as order-independent transparency, dual-layer geometry buffers, and voxelization.
 
 Metal guarantees the GPU blends in draw call order, giving the illusion that the GPU renders the scene sequentially. For example, here’s a scene that contains two overlapping triangles. The blue triangle partially obscures the green triangle behind it.
 
@@ -70,9 +70,9 @@ To implement raster order groups, annotate pointers to memory with an attribute 
 
 ![An illustration that shows the same two overlapping triangles from the previous figure. The shader timelines below the triangles show that the front triangle’s shader is waits before reading from memory until the back triangle’s shader is done writing to memory.](https://docs-assets.developer.apple.com/published/8c671d0fa5ae1fee1279211851328188/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering-7%402x.png)
 
-Metal on recent Apple GPUs extends raster order groups with additional capabilities. They allow you to synchronize individual channels of an imageblock and threadgroup memory. You can also create multiple order groups, which give you finer-grained synchronization and minimize how often your threads wait for access. For example, these raster order groups can improve the performance of the  technique — a popular lighting technique that’s not related to TBDR. Traditionally, deferred shading requires two phases:
+Metal on recent Apple GPUs extends raster order groups with additional capabilities. They allow you to synchronize individual channels of an imageblock and threadgroup memory. You can also create multiple order groups, which give you finer-grained synchronization and minimize how often your threads wait for access. For example, these raster order groups can improve the performance of the *deferred shading* technique — a popular lighting technique that’s not related to TBDR. Traditionally, deferred shading requires two phases:
 
-1. Fill a geometry buffer (or ) and produce multiple textures.
+1. Fill a geometry buffer (or *g-buffer*) and produce multiple textures.
 2. Render light volumes by calculating shading results with those textures.
 
 ![A flow diagram that starts with Phase one that fills a geometry buffer, which consists of three textures. Those textures then flow into Phase two that produces a rendering of the shaded scene.](https://docs-assets.developer.apple.com/published/09a07b0d5d8537f9092f530db983fb4e/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering-8%402x.png)

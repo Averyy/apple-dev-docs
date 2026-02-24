@@ -12,17 +12,17 @@ The watchOS 7 SDK provides support to develop watchOS apps for Apple Watch devic
 
 ###### Known Issues
 
-- Kaleidoscope faces created using the Photos app on watchOS 7 beta 4 or earlier might cause your watch to repeatedly restart unexpectedly. (65224164)  Use the Watch app on your phone to remove the Kaleidoscope face.
+- Kaleidoscope faces created using the Photos app on watchOS 7 beta 4 or earlier might cause your watch to repeatedly restart unexpectedly. (65224164) **Workaround:** Use the Watch app on your phone to remove the Kaleidoscope face.
 - Watch faces created using watchOS 7 beta 5 and earlier are no longer compatible with watchOS. Use watchOS 7 beta 6 or later to generate new `.watchface` files. (66592614)
-- If you added a Sleep complication to a Watch face in watchOS 7 beta, it might disappear after updating to watchOS 7 beta 2 or later. (63699282)  Add the Sleep complication again.
-- The Sleep complication might appear twice in the complication picker when editing a Watch face. (64709508)  Remove the Sleep app, then reinstall it using App Store on your watch.
+- If you added a Sleep complication to a Watch face in watchOS 7 beta, it might disappear after updating to watchOS 7 beta 2 or later. (63699282) **Workaround:** Add the Sleep complication again.
+- The Sleep complication might appear twice in the complication picker when editing a Watch face. (64709508) **Workaround:** Remove the Sleep app, then reinstall it using App Store on your watch.
 
 ##### Logging
 
 ###### New Features
 
 - New APIs are available for using `os_log` from Swift as part of the framework [`os`](https://developer.apple.com/documentation/os). A new type, [`Logger`](https://developer.apple.com/documentation/os/Logger), can be instantiated using a subsystem and category and provides methods for logging at different levels (`Logger.debug`, `Logger.error`, `Logger.fault`).
-- The [`Logger`](https://developer.apple.com/documentation/os/Logger) APIs support specifying most formatting and privacy options supported by legacy `os_log` APIs. The new APIs provide significant performance improvements over the legacy APIs. You can now pass Swift string interpolation to the `os_log` function.  The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
+- The [`Logger`](https://developer.apple.com/documentation/os/Logger) APIs support specifying most formatting and privacy options supported by legacy `os_log` APIs. The new APIs provide significant performance improvements over the legacy APIs. You can now pass Swift string interpolation to the `os_log` function. **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
 ##### Networking
 
@@ -34,7 +34,7 @@ The watchOS 7 SDK provides support to develop watchOS apps for Apple Watch devic
 
 ###### Known Issues
 
-- You might be unable to update Apple Watch Series 3 to watchOS 7 due to limited storage. (64793483)  Unpair your watch, then pair it again with your phone. Set it up as a new watch rather than restoring from a backup. Use General > Software Update in the Watch app to update to watchOS 7. If you want to restore your watch from its latest backup after the update is complete, repeat these steps while choosing to restore from a backup rather than setting up as new.
+- You might be unable to update Apple Watch Series 3 to watchOS 7 due to limited storage. (64793483) **Workaround:** Unpair your watch, then pair it again with your phone. Set it up as a new watch rather than restoring from a backup. Use General > Software Update in the Watch app to update to watchOS 7. If you want to restore your watch from its latest backup after the update is complete, repeat these steps while choosing to restore from a backup rather than setting up as new.
 
 ##### Swiftui
 

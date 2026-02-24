@@ -24,10 +24,10 @@ A valid [`MPSCNNConvolution`](mpscnnconvolution.md) object or `nil`, if failure.
 
 ## Parameters
 
-- `kernelWidth`: This value must be  . Larger values will take a longer time to process.
-- `kernelHeight`: The value must be  . Larger values will take a longer time to process.
-- `inputFeatureChannels`: This value must be  .
-- `outputFeatureChannels`: This value must be  .
+- `kernelWidth`: The width of the kernel window. This value must be `>0`. Larger values will take a longer time to process.
+- `kernelHeight`: The height of the kernel window. The value must be `>0`. Larger values will take a longer time to process.
+- `inputFeatureChannels`: The number of feature channels in the input image. This value must be `>=1`.
+- `outputFeatureChannels`: The number of feature channels in the output image. This value must be `>=1`.
 - `neuronFilter`: An optional neuron filter that can be applied to the output of the convolution operation.
 
 ## See Also

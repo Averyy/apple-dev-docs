@@ -21,7 +21,7 @@ var range: PHASENumericPair { get }
 
 #### Discussion
 
-This property is an ordered pair that defines the range of possible output values along the  axis for the [`evaluate(x:)`](phaseenvelope/evaluate(x:).md) function. The first number in the pair is the minimum output value, and the second number in the pair is the maximum output value.
+This property is an ordered pair that defines the range of possible output values along the *y* axis for the [`evaluate(x:)`](phaseenvelope/evaluate(x:).md) function. The first number in the pair is the minimum output value, and the second number in the pair is the maximum output value.
 
 ## See Also
 

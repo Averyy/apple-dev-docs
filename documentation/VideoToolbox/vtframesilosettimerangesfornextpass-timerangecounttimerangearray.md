@@ -32,8 +32,8 @@ Previously added sample buffers with decode timestamps within the time ranges ar
 ## Parameters
 
 - `silo`: The frame silo object.
-- `timeRangeCount`: The count of time ranges in  .
-- `timeRangeArray`: The array of   structs.
+- `timeRangeCount`: The count of time ranges in `timeRangeArray`.
+- `timeRangeArray`: The array of `CMTimeRange` structs.
 
 ## See Also
 
