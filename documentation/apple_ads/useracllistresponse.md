@@ -14,6 +14,12 @@ A container for ACL call responses.
 object UserAclListResponse
 ```
 
+## Properties
+
+- `data` ([UserAcl]): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [Get User ACL](get-user-acl.md)

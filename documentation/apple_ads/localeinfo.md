@@ -14,6 +14,11 @@ The supported languages and language codes.
 object LocaleInfo
 ```
 
+## Properties
+
+- `language` (string): The language associated with the ISO 3166-1 alpha-2 country code, such as `US`.
+- `languageCode` (string): The ISO 639-1 language code appended to the ISO 3166-1 alpha-2 country code, such as `en-US`.
+
 ## See Also
 
 - [object CountryOrRegion](countryorregion.md)

@@ -12,7 +12,7 @@ To validate changes in and identify the status of a subscription, you can use th
 
 > **Note**:  Each subscription has a unique product identifier associated with a single app. Apps with an iOS and a macOS version have separate products, with a unique product identifier on each platform. You could let users who have a subscription in an iOS app access the content from a macOS app, or vice versa, but implementing that functionality is your responsibility. In order to support cross-platform subscription products, you would need a system to identify users and keep track of the content to which they subscribe. For more information, see [`Offering a Subscription Across Multiple Apps`](offering-a-subscription-across-multiple-apps.md).
 
-There are two types of subscriptions you can offer in your app:  and . Non-renewing subscriptions differ from auto-renewable subscriptions in a few key ways. These differences give your app the flexibility to implement the correct behavior for a non-renewing subscription, as follows:
+There are two types of subscriptions you can offer in your app: *non-renewing* and *auto-renewable*. Non-renewing subscriptions differ from auto-renewable subscriptions in a few key ways. These differences give your app the flexibility to implement the correct behavior for a non-renewing subscription, as follows:
 
 - Your app is responsible for calculating the time period that the subscription is active and determining what content needs to be made available to the user.
 - Your app is responsible for detecting that a non-renewing subscription is approaching its expiration date and prompting the user to renew the subscription by purchasing the same product again.

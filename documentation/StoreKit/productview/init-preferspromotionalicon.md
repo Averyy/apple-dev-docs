@@ -31,7 +31,7 @@ If you set the `prefersPromotionalIcon` parameter to `false`, the view doesn’t
 ## Parameters
 
 - `product`: The product to merchandise.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this value is   and a promotional image for the product is available, the view displays it.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this value is `true` and a promotional image for the product is available, the view displays it.
 
 ## See Also
 

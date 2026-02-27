@@ -14,6 +14,10 @@ The response details of a creative request.
 object CreativeResponse
 ```
 
+## Properties
+
+- `data` (CustomProductPageCreative): Response data that the API provides.
+
 ## See Also
 
 - [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)

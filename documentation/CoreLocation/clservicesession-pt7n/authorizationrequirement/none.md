@@ -17,6 +17,11 @@
 case none
 ```
 
+## See Also
+
+- [CLServiceSession.AuthorizationRequirement.always](clservicesession-pt7n/authorizationrequirement/always.md)
+- [CLServiceSession.AuthorizationRequirement.whenInUse](clservicesession-pt7n/authorizationrequirement/wheninuse.md)
+
 
 ---
 

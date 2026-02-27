@@ -71,7 +71,7 @@ An external purchase token is a unique string that your app or website receives 
 
 ##### Check Api Availability
 
-The External Purchase APIs, including [`ExternalPurchaseLink`](externalpurchaselink.md), [`ExternalPurchase`](externalpurchase.md), and [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) provide  that you use to report transactions to Apple. [`ExternalPurchaseLink`](externalpurchaselink.md) and [`ExternalPurchase`](externalpurchase.md) are available starting in iOS 17.4, iPadOS 17.4, macOS 14.4, Mac Catalyst 17.4, tvOS 17.4, visionOS 1.1, and watchOS 10.4. [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) is available starting in iOS 18.1, iPadOS 18.1, Mac Catalyst 18.1, and macOS 15.1.
+The External Purchase APIs, including [`ExternalPurchaseLink`](externalpurchaselink.md), [`ExternalPurchase`](externalpurchase.md), and [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) provide *external purchase tokens* that you use to report transactions to Apple. [`ExternalPurchaseLink`](externalpurchaselink.md) and [`ExternalPurchase`](externalpurchase.md) are available starting in iOS 17.4, iPadOS 17.4, macOS 14.4, Mac Catalyst 17.4, tvOS 17.4, visionOS 1.1, and watchOS 10.4. [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) is available starting in iOS 18.1, iPadOS 18.1, Mac Catalyst 18.1, and macOS 15.1.
 
 For apps that run on iOS 15.4 through 17.3 and iPadOS 15.4 through 17.3, the External Purchase APIs have the following behavior:
 

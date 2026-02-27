@@ -11,6 +11,19 @@ The default product page object.
 object DefaultProductPageCreative
 ```
 
+## Properties
+
+- `adamId` (int64) *(required)*: Your unique App Store app identifier.
+- `creationTime` (date-time): The timestamp for the creation of the report in the format of `YYYY-MM-DD’T’HH:mm:ss.SSS`.
+- `id` (int64): The unique identifier for a creative.
+- `modificationTime` (date-time): The date and time of the most recent modification of the object.
+- `name` (string) *(required)*: The unique name of the creative.
+- `orgId` (int64): The identifier of the organization that owns the campaign. Your `orgId` is the same as your account in the [`Apple Ads UI`](https://developer.apple.comhttps://ads.apple.com/advanced).
+- `productPageId` (string): The product page identifier.
+- `state` (string): The system state of the process.
+- `stateReasons` ([string]): A list of reasons that displays when an ad isn’t running.
+- `type` (string) *(required)*: The type of creative.
+
 ## See Also
 
 - [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)

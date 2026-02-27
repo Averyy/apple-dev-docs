@@ -18,9 +18,17 @@ object KeywordBidRecommendation
 
 - [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
 
+#### Overview
+
+For keywords in Maximize Conversions campaigns, the `suggestedBidAmount` field is returned as `null`.
+
 #### Discussion
 
 In [`Apple Ads Campaign Management API 5`](apple-search-ads-campaign-management-api-5.md), the `suggestedBidAmount` field  replaces the deprecated `bidMin` and `bidMax` fields.
+
+## Properties
+
+- `suggestedBidAmount` (Money): An indicator that varies over time to help you incrementally increase the likelihood of your ad showing in searches in the App Store. A `suggestedBidAmount` isn’t a representation of a bid floor or ceiling.  A `suggestedBidAmount` is based on various factors, including, but not limited to, historical data related to past performance and recommendations. Actual outcomes, including changes in spend and average CPA, may vary.
 
 ## See Also
 

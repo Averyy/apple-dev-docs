@@ -39,7 +39,7 @@ Your customers can review your app at any time on the App Store. To make it easi
 
 ## Parameters
 
-- `scene`: The   that StoreKit uses to present the rating and review request interface.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that StoreKit uses to present the rating and review request interface.
 
 ## See Also
 

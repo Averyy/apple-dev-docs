@@ -14,6 +14,11 @@ A container for response details of a creative request.
 object CreativeListResponse
 ```
 
+## Properties
+
+- `data` ([CustomProductPageCreative]): Response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)

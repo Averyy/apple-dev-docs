@@ -14,6 +14,11 @@ The parent object response to a request for budget order details.
 object BudgetOrderInfo
 ```
 
+## Properties
+
+- `bo` (BudgetOrder): The details of the budget order.
+- `orgIds` ([int64]): The identifier of the organization that owns the campaign. Currently, only one `orgId` is supported.
+
 ## See Also
 
 - [object BudgetOrder](budgetorder.md)
@@ -27,7 +32,7 @@ object BudgetOrderInfo
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for a monthly invoicing payment model.
+  The response to a request to fetch details for  `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

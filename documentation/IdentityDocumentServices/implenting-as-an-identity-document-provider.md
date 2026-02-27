@@ -190,6 +190,8 @@ let status = await store.status
 
 - [Requesting a mobile document on the web](requesting-a-mobile-document-on-the-web.md)
   Send a request for mobile document information for apps installed on a device.
+- [Verifying a mobile document from a passport](verifying-a-mobile-document-from-a-passport.md)
+  Validate a response from mobile document information derived from a passport.
 
 
 ---

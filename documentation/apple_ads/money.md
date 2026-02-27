@@ -14,6 +14,17 @@ The response to requests for budget amounts in campaigns.
 object Money
 ```
 
+## Properties
+
+- `amount` (string): The monetary value in the specified currency. The API uses `amount` whenever a currency value is necessary. The string can contain up to two decimal digits.
+- `currency` (string): The organization’s default currency that is set up in [`Apple Ads`](https://developer.apple.comhttps://ads.apple.com/).
+
+## Relationships
+
+### Inherited By
+- [ReportingAdGroup.CpaGoal](reportingadgroup/cpagoal-data.dictionary.md)
+- [ReportingCampaign.TargetCpa](reportingcampaign/targetcpa-data.dictionary.md)
+
 ## See Also
 
 - [object BudgetOrder](budgetorder.md)
@@ -29,7 +40,7 @@ object Money
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for a monthly invoicing payment model.
+  The response to a request to fetch details for  `LOC` invoicing details.
 
 
 ---

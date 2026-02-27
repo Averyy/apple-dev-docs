@@ -14,6 +14,12 @@ A container for the Impression Share report response body.
 object CustomReportResponseBody
 ```
 
+## Properties
+
+- `data` ([CustomReportResponse]): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object CustomReportRequest](customreportrequest.md)

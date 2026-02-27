@@ -22,7 +22,7 @@ func callAsFunction(_ message: Message) throws
 
 Don’t call this method directly. SwiftUI calls it when you call the [`DisplayMessageAction`](displaymessageaction.md) structure using `message` as an argument.
 
-For information about how Swift uses the [`callAsFunction()`](requestreviewaction/callasfunction().md) method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in .
+For information about how Swift uses the [`callAsFunction()`](requestreviewaction/callasfunction().md) method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 

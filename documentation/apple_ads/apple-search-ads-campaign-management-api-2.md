@@ -14,9 +14,13 @@ API 2 campaigns aren’t compatible with API 3 resources, however, API 2 reports
 
 The API now represents App Store territories as follows:
 
+- **`countriesOrRegions`**: For use in the [`Campaign`](campaign.md) object.
+- **`countriesOrRegions`**: For use in the [`ReportingCampaign`](reportingcampaign.md) object.
+- **[`CountryOrRegion`](countryorregion.md)**: For use as a `groupBy` dimension in the [`ReportingRequest`](reportingrequest.md) object.
+
 Report field changes are as follows:
 
-|  |  |
+| **API 2 report field** | **API 1 report field** |
 | --- | --- |
 | `installs` | `conversions` |
 | `latOnInstalls` | `conversionsLATOn` |
@@ -34,6 +38,15 @@ API 2 includes the following new features for [`Creative Sets`](creative-sets.md
 - Deleting associated Creative Sets for ad groups.
 
 The following Apple Ads Campaign Management API 1 fields are no longer in the corresponding API object and don’t apply to API 2 and later:
+
+- **`referenceLabel`**: `Campaign object`
+- **`locInvoiceDetails.billingContactName`**: `Campaign object`
+- **`ageCriteria.excluded`**: `TargetingDimensions object`
+- **`genderCriteria.excluded`**: `TargetingDimensions object`
+- **`adminAreaCriteria.excluded`**: `TargetingDimensions object`
+- **`localityCriteria.excluded`**: `TargetingDimensions object`
+- **`deviceClassCriteria.excluded`**: `TargetingDimensions object`
+- **`daypartCriteria.userTime.excluded`**: `TargetingDimensions object`
 
 ## See Also
 

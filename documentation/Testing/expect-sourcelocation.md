@@ -36,7 +36,7 @@ If `condition` evaluates to `false`, an [`Issue`](issue.md) is recorded for the 
 
 - `condition`: The condition to be evaluated.
 - `comment`: A comment describing the expectation.
-- `sourceLocation`: The source location to which recorded expectations and   issues should be attributed.
+- `sourceLocation`: The source location to which recorded expectations and issues should be attributed.
 
 ## See Also
 

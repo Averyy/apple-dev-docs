@@ -32,10 +32,10 @@ init(fileID: String, filePath: String, line: Int, column: Int)
 
 ## Parameters
 
-- `fileID`: The file ID of the source file, using the format described in   the documentation for the     macro in the Swift standard library.
+- `fileID`: The file ID of the source file, using the format described in the documentation for the [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()) macro in the Swift standard library.
 - `filePath`: The path to the source file.
-- `line`: The line in the source file. Must be greater than  .
-- `column`: The column in the source file. Must be greater than  .
+- `line`: The line in the source file. Must be greater than `0`.
+- `column`: The column in the source file. Must be greater than `0`.
 
 
 ---

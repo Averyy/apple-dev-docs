@@ -14,6 +14,20 @@ The defined targeted audience to include by a specific time of day.
 object DaypartDetail
 ```
 
+## Properties
+
+- `included` ([int32]): The dimension to include targeting criteria for a specific time of day. Numbers ranging from `0` to `167` represent the hours of a week beginning at Sunday 12:00 midnight. For example, the hour beginning Monday at 1:00 a.m. is `25`. ```json
+"daypart": {
+      "userTime": {
+        "included": [
+          1,
+          3,
+          22
+        ]
+      }
+    }
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

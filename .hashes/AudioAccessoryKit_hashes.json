@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-24T07:33:19.210715",
+    "last_updated": "2026-02-27T07:42:15.658217",
     "total_pages": 58,
-    "session_id": "2026-02-24T07:33:14.441900"
+    "session_id": "2026-02-27T07:42:10.819526"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AudioAccessoryKit.json": {
       "hash": "dad607bd6ae6b30e4ad2dc87c53c5354f98bdee5fdf7f5b25a87a8bc26373d03",
-      "last_checked": "2026-02-24T07:33:14.705689",
-      "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "last_checked": "2026-02-27T07:42:11.116571",
+      "status": "unchanged",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"a8c956af4cb0afc3d07530559509da88\"",
       "file_path": "documentation/AudioAccessoryKit/AudioAccessoryKit.md"
     },
     "https://developer.apple.com/documentation/AudioAccessoryKit": {
       "hash": "dad607bd6ae6b30e4ad2dc87c53c5354f98bdee5fdf7f5b25a87a8bc26373d03",
-      "last_checked": "2026-02-24T07:33:14.607243",
-      "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "last_checked": "2026-02-27T07:42:11.027371",
+      "status": "unchanged",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"a8c956af4cb0afc3d07530559509da88\"",
       "file_path": "documentation/AudioAccessoryKit/AudioAccessoryKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/supporting-automatic-audio-switching.json": {
       "hash": "e26fecfd59add0cc9f11961c905359488475f8d7d4de5b4ee0e49c8ed0893d54",
-      "last_checked": "2026-02-24T07:33:14.985599",
+      "last_checked": "2026-02-27T07:42:11.405723",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"26d2a7ff0c279dfeb6921acac653c57c\"",
       "file_path": "documentation/AudioAccessoryKit/supporting-automatic-audio-switching.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice.json": {
       "hash": "a54744026f1950197cc12350bb27e33ec9ea335a1cc00824efea93b9ee177dc1",
-      "last_checked": "2026-02-24T07:33:15.051360",
+      "last_checked": "2026-02-27T07:42:11.563670",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"0e449ad9fa2a2327223e6c9ac15defb2\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/placement.json": {
       "hash": "0cb789df66698526d3a524d68ff167529061731fda0cf1d13898610369873a7b",
-      "last_checked": "2026-02-24T07:33:15.117898",
+      "last_checked": "2026-02-27T07:42:11.701935",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"5acf79635da1fa649b951b31a4999e9e\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/placement.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/capabilities.json": {
       "hash": "1e36811ac8055cc75c668e160dd284966dde11fb14f1f29a4996f90931029b60",
-      "last_checked": "2026-02-24T07:33:15.365888",
+      "last_checked": "2026-02-27T07:42:11.932737",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"79dcf20ee1247542916cab143418ca93\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/capabilities.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.struct.json": {
       "hash": "62fa2cb1372797523a915ac5919fde6ea5805b91dfd75ccc588e8e6c1b187c65",
-      "last_checked": "2026-02-24T07:33:15.458395",
+      "last_checked": "2026-02-27T07:42:12.135974",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"e12ea9579b3356e7484fab0792a57c56\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swiftstruct.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error.json": {
       "hash": "910306d90a6e8e5f7798cc9e6183e78f83e5f6034d50df37af51a1060939ef99",
-      "last_checked": "2026-02-24T07:33:15.576086",
+      "last_checked": "2026-02-27T07:42:12.324086",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"c213c447b0d592196fc7918f3f7457f8\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/current(_:).json": {
       "hash": "473e0e10b99f7c72dabbbdb0881af06b8d64ab4fe948c95aa919a0c1869082d0",
-      "last_checked": "2026-02-24T07:33:15.687834",
+      "last_checked": "2026-02-27T07:42:12.453752",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"70111043533864f43fa2936b0f2d37fe\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/current.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/register(_:_:).json": {
       "hash": "79329b96773a9843c4b0ce2b687a7dbc2aaad1640410262d62fd2e33dc773495",
-      "last_checked": "2026-02-24T07:33:15.804024",
+      "last_checked": "2026-02-27T07:42:12.610074",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"2670afe9911b12a1c9deb884af7ac866\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/register.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/update(_:).json": {
       "hash": "270e3a92e828de0d43c825ca71b9a7ef3758c103e1ec0fb40024985f5ec2f28e",
-      "last_checked": "2026-02-24T07:33:16.044709",
+      "last_checked": "2026-02-27T07:42:12.807359",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"1f83b2537c1422e5ddadf1ddf5a410ed\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/update.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/accessory.json": {
       "hash": "bfb20f76361d093455920fdc8d988b78e16bfd81020dd0b243b34a0506ff89d1",
-      "last_checked": "2026-02-24T07:33:16.272209",
+      "last_checked": "2026-02-27T07:42:12.943712",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"057b84654c5be6ac4289f2760a11b990\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/accessory.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.property.json": {
       "hash": "b17e05a7bb0d3c5823b764a9f06498a495164419491e250ce63a80e0bef2287b",
-      "last_checked": "2026-02-24T07:33:16.523306",
+      "last_checked": "2026-02-27T07:42:13.088042",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"3fecf4736dc393b63e42df3109db7b2d\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swiftproperty.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/placement/inear.json": {
       "hash": "e584d8817403031cf6171d1f1be9ad70b48b133851c01b6f2c36fd56e85d7f5e",
-      "last_checked": "2026-02-24T07:33:16.770094",
+      "last_checked": "2026-02-27T07:42:13.213836",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"4143ad1b2873b47987bdc8bc782ca246\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/placement/inear.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/placement/offhead.json": {
       "hash": "04499ad749d484bf0ad5c0e7c641517382219845e949a257d8be8b3e422faac5",
-      "last_checked": "2026-02-24T07:33:16.860974",
+      "last_checked": "2026-02-27T07:42:13.345727",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"c23889415316c50c342ac9cef711dee3\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/placement/offhead.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/placement/onhead.json": {
       "hash": "39d630f0c2c0419dfda8c411b34c549a8845af4ba5db5c8b9930b85163a74813",
-      "last_checked": "2026-02-24T07:33:17.093777",
+      "last_checked": "2026-02-27T07:42:13.485749",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"8155dadaa1f95357968383727a6d79f0\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/placement/onhead.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/placement/overtheear.json": {
       "hash": "78d7d935496b73aae930dc044b5175fd65f83e42058fc6cd3df9f9cf34768c56",
-      "last_checked": "2026-02-24T07:33:17.205693",
+      "last_checked": "2026-02-27T07:42:13.652788",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"f5b8f2493f0243f02cb60a0cd23ed721\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/placement/overtheear.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/capabilities/audioswitching.json": {
       "hash": "fc438b1dbdca16f735810d689f1301c9f1eee7b61fe7077c2722b8426f09c4c3",
-      "last_checked": "2026-02-24T07:33:17.294093",
+      "last_checked": "2026-02-27T07:42:13.789127",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"7cc2c0d3d0b79c6a0ba1fddff565d054\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/capabilities/audioswitching.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/capabilities/placement.json": {
       "hash": "13b6d4a21ddeb3d1788bd2dadbe05918dae0fff47a9a747c51192d3cfe17c50e",
-      "last_checked": "2026-02-24T07:33:17.400327",
+      "last_checked": "2026-02-27T07:42:13.941741",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"63678c49b3dc669e772204d3aedeaf48\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/capabilities/placement.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.struct/init(deviceplacement:devicecapabilities:primaryaudiosourcedeviceidentifier:secondaryaudiosourcedeviceidentifier:).json": {
       "hash": "3ffee3c7c7ca85f82ba74a6cff7e7c31938dfa084ae7413645ec51aac93b7398",
-      "last_checked": "2026-02-24T07:33:17.532871",
+      "last_checked": "2026-02-27T07:42:14.068948",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"e81c13db3e53a5194bb8d4f2e9ece267\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swift.struct/init-deviceplacementdevicecapabilitiesprimaryaudiosourcedeviceidentifiersecondaryaudiosourcedeviceidentifier.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.struct/devicecapabilities.json": {
       "hash": "2e2e0b40ff39b9842858dc95f6ef191bbd456a323cb2a0fa55b3b158354dd99f",
-      "last_checked": "2026-02-24T07:33:17.776845",
+      "last_checked": "2026-02-27T07:42:14.212226",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"29c3353c5bd81bf6dd3aaa38cf641f52\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swift.struct/devicecapabilities.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.struct/deviceplacement.json": {
       "hash": "b2f3c9d04491d9395bdd98eab063ed668783393ef4bdef4bb1bd3628cc29a60c",
-      "last_checked": "2026-02-24T07:33:17.892303",
+      "last_checked": "2026-02-27T07:42:14.357318",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"2284542615866d65549e0129e27ac212\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swift.struct/deviceplacement.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.struct/primaryaudiosourcedeviceidentifier.json": {
       "hash": "d6f6e604e46af5f76ec976a574ec4fb3ca29b7f3085498badcd25c74fb7db4f0",
-      "last_checked": "2026-02-24T07:33:18.009151",
+      "last_checked": "2026-02-27T07:42:14.521983",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"1f439cb0250caeee77f6077c0ec81956\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swift.struct/primaryaudiosourcedeviceidentifier.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/configuration-swift.struct/secondaryaudiosourcedeviceidentifier.json": {
       "hash": "1da2db3155e439c543256eacec1df23d71af73e97493bea9c2c2d2f9ad776b24",
-      "last_checked": "2026-02-24T07:33:18.103720",
+      "last_checked": "2026-02-27T07:42:14.660082",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"01d2f573ca65e0da634339af2a6ad629\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/configuration-swift.struct/secondaryaudiosourcedeviceidentifier.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error/connectionfailed.json": {
       "hash": "cb75513e120d317ded6ba393abfcb819c2a402e45edbc2b61de926efcce49bc1",
-      "last_checked": "2026-02-24T07:33:18.338991",
+      "last_checked": "2026-02-27T07:42:14.808673",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"e8a960447cc7e76e7fa7bfcf34801f90\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error/connectionfailed.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error/devicenotcapable.json": {
       "hash": "01b2bf6bfd111b9807958ad3b4a7d0a1cf86844959fbe6206101c113f1c8321f",
-      "last_checked": "2026-02-24T07:33:18.603300",
+      "last_checked": "2026-02-27T07:42:14.951822",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"49f0ee949e3d522410a4c44a40c2a74d\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error/devicenotcapable.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error/fatal.json": {
       "hash": "9c7fc6449016e3c81a013921123fd93bfa51bb6abf069ba7d24c1d82dd72f871",
-      "last_checked": "2026-02-24T07:33:18.727198",
+      "last_checked": "2026-02-27T07:42:15.122536",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"ee318c848d68d5735caefde8b970a6c4\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error/fatal.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error/invalidrequest.json": {
       "hash": "a9d7ed7a85dfc7760359ef72ca47b325e9714ceccc0ad2e163f5fdb1998de549",
-      "last_checked": "2026-02-24T07:33:18.842266",
+      "last_checked": "2026-02-27T07:42:15.318972",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"39a4226e351f982878ff31b75e1177c4\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error/invalidrequest.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error/invalidated.json": {
       "hash": "013cb483193219865069721536ed4692c3742d5b36698fd7d69d6b691f617eec",
-      "last_checked": "2026-02-24T07:33:19.093580",
+      "last_checked": "2026-02-27T07:42:15.468529",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"c2f489cbea70fc9cbc178d231f207695\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error/invalidated.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audioaccessorykit/accessorycontroldevice/error/unknown.json": {
       "hash": "549dea212534f00d8f0b4144f3333a768a18892e03b643f24d2204fcf5a4ffa8",
-      "last_checked": "2026-02-24T07:33:19.209447",
+      "last_checked": "2026-02-27T07:42:15.623890",
       "status": "new",
-      "session_id": "2026-02-24T07:33:14.441900",
+      "session_id": "2026-02-27T07:42:10.819526",
       "etag": "W/\"a713037ae64bad7c50c7c741b6c780a8\"",
       "file_path": "documentation/AudioAccessoryKit/accessorycontroldevice/error/unknown.md"
     },

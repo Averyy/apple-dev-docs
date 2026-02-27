@@ -14,6 +14,60 @@ To update negative keywords, use the associated `campaignId` and `adgroupId` in 
 
 ##### Payload Example Update Ad Group Negative Keywords
 
+**Request**:
+
+```None
+PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/negativekeywords/bulk
+
+[
+  {
+    "id": "12345678",
+    "status": "PAUSED"
+  },
+  {
+    "id": "12345679",
+    "status": "PAUSED"
+  }
+]
+
+```
+
+**Response**:
+
+```json
+[
+  {
+    "id": 12345678,
+    "campaignId": 542370539,
+    "adGroupId": 427916203,
+    "text": "Update ad group negative keyword example 1",
+    "status": "PAUSED",
+    "matchType": "BROAD",
+    "modificationTime": "2024-04-08T22:08:42.618",
+    "deleted": false
+  },
+  {
+    "id": 12345679,
+    "campaignId": 542370539,
+    "adGroupId": 427916203,
+    "text": "Update ad group negative keyword example 2",
+    "status": "PAUSED",
+    "matchType": "EXACT",
+    "modificationTime": "2024-04-08T22:08:42.618",
+    "deleted": false
+  }
+]
+```
+
+## Endpoint
+
+`PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/negativekeywords/bulk`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes negative keyword details.

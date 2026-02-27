@@ -18,6 +18,70 @@ Use this endpoint to find `ads` within your organization using a [`Selector`](se
 
 ##### Payload Example Find Ads Org Level
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/ads/find
+
+{
+  "conditions": [
+    {
+      "field": "creativeType",
+      "operator": "EQUALS",
+      "values": [
+        "CUSTOM_PRODUCT_PAGE"
+      ]
+    }
+  ],
+  "fields": null,
+  "orderBy": [
+    {
+      "field": "status",
+      "sortOrder": "ASCENDING"
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 20
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "id": 573408653,
+      "orgId": 39872140,
+      "campaignId": 570798745,
+      "adGroupId": 476797743,
+      "creativeId": 94895534,
+      "name": "Trip Trek custom product page variation",
+      "creativeType": "CUSTOM_PRODUCT_PAGE",
+      "status": "ENABLED",
+      "servingStatus": "RUNNING",
+      "servingStateReasons": null,
+      "deleted": false,
+      "creationTime": "2024-10-20T20:35:06.227Z",
+      "modificationTime": "2024-10-20T20:35:06.227Z"
+  }
+  ],
+
+    "pagination": {
+    "totalResults": 1,
+    "startIndex": 1,
+    "itemsPerPage": 10
+  }
+}
+
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/ads/find`
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

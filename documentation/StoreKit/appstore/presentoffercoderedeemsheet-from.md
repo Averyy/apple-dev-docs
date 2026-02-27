@@ -32,7 +32,7 @@ When customers redeem an offer code, StoreKit emits the resulting transaction in
 
 ## Parameters
 
-- `controller`: An   that StoreKit uses to display the offer code redemption sheet.
+- `controller`: An [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) that StoreKit uses to display the offer code redemption sheet.
 
 ## See Also
 

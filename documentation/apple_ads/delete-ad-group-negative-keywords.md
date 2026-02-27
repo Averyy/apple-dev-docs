@@ -14,6 +14,37 @@ To delete ad group negative keywords, include the associated `campaignId` and `a
 
 ##### Payload Example Delete Ad Group Negative Keywords
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/negativekeywords/delete/bulk
+
+[
+    578054687,
+    578054686,
+    578054685
+]
+```
+
+**Response**:
+
+```json
+{
+    "data": 3,
+    "pagination": null,
+    "error": null
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/negativekeywords/delete/bulk`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body with negative jkeyword IDs.

@@ -18,6 +18,10 @@ object KeywordInsights
 
 A `bidRecommendation` helps you apply your bid strategy to exact match keywords and similar keywords in a broad match. Use `bidRecommendation` to optimize campaign performance through your Search Match discovery campaigns. For more information, see the Build a Campaign Keywords Strategy section in [`Ad Groups`](ad-groups.md).
 
+## Properties
+
+- `bidRecommendation` (KeywordBidRecommendation): A bid recommendation for a keyword.
+
 ## See Also
 
 - [object ReportingRequest](reportingrequest.md)

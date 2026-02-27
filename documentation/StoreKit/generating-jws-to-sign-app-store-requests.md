@@ -14,7 +14,7 @@ The following App Store features require a JWS Compact Serialization to authoriz
 - Promotional offer signatures
 - Introductory offer eligibility
 
-The data you sign when generating the JWS is a JSON Web Token (JWT). The JWT contains name-value pairs called , including claims specific to the feature you’re using. Your server returns the JWS Compact Serialization to your app. Your app uses the JWS in the relevant StoreKit API call.
+The data you sign when generating the JWS is a JSON Web Token (JWT). The JWT contains name-value pairs called *claims*, including claims specific to the feature you’re using. Your server returns the JWS Compact Serialization to your app. Your app uses the JWS in the relevant StoreKit API call.
 
 > 💡 **Tip**:  The App Store Server Library provides a signing utility that creates JWS specific for each of these uses. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
 
@@ -47,7 +47,7 @@ The App Store features all use the same JWS header.
 
 To create a JWS to communicate with the App Store, use the following fields and values in the header:
 
-|  |  |
+| **Header field** | **Value** |
 | --- | --- |
 | `alg` - Encryption Algorithm | `ES256`  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You need to sign JWS with ES256 encryption. |
 | `kid` - Key ID | Your private key ID from App Store Connect (example: `2X9R4HXF34`) |
@@ -69,7 +69,7 @@ The JWS payload contains base claims specific to the App Store, such as an issue
 
 Include the following base claims in the JWS payload:
 
-|  |  |
+| **Payload field** | **Value** |
 | --- | --- |
 | `iss` - Issuer | Your issuer ID from the Keys page in App Store Connect (example: “`57246542-96fe-1a63-e053-0824d011072a"`) |
 | `iat` - Issued At | The UNIX time, in seconds, that you issue the token, which the App Store server uses to calculate an expiration time (example: `1623085200`) |
@@ -81,7 +81,7 @@ Don’t include an `exp` field in your payload, because including it makes the r
 
 Choose the `aud` value to match the feature you’re using:
 
-|  |  |
+| **Feature** | **`aud` value** |
 | --- | --- |
 | Advanced Commerce API in-app request | “`advanced-commerce-api"` |
 | Promotional offer signature | “`promotional-offer"` |
@@ -105,7 +105,7 @@ Be sure to include feature-specific custom claims in the JWS payload as well.
 
 For custom claims for Advanced Commerce in-app requests, use the following values:
 
-|  |  |
+| **Payload field** | **Value** |
 | --- | --- |
 | `request` | Base64-encoded request data |
 
@@ -130,7 +130,7 @@ For more information about making Advanced Commerce API requests in StoreKit, se
 
 For promotional offer signature custom claims, use the following values:
 
-|  |  |
+| **Payload field** | **Value** |
 | --- | --- |
 | `productId` | The unique identifier of the product (for more information, see [`id`](product/id.md)) |
 | `offerIdentifier` | The promotional offer identifier that you set up in App Store Connect |
@@ -155,7 +155,7 @@ Here’s an example of a payload for a promotional offer signature:
 
 For introductory offer eligibility custom claims, use the following values:
 
-|  |  |
+| **Payload field** | **Value** |
 | --- | --- |
 | `productId` | The unique identifier of the product (for more information, see [`id`](product/id.md)) |
 | `allowIntroductoryOffer` | A Boolean value, `true` or `false`, that determines whether the customer is eligible for an introductory offer |

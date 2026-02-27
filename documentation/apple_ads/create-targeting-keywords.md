@@ -29,6 +29,130 @@ To create targeting keywords, use the associated `campaignId` and `adgroupId` in
 
 ##### Payload Example Create Ad Group Targeting Keywords
 
+**Request**:
+
+```http
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/bulk
+
+[  
+  {
+    "text": "targeting keyword example 1",
+    "matchType": "BROAD",
+    "bidAmount": {
+      "amount": "100",
+      "currency": "USD"
+    }
+  },
+  {
+    "text": "targeting keyword example 2",
+    "matchType": "EXACT",
+    "bidAmount": {
+      "amount": "100",
+      "currency": "USD"
+    }
+  }
+]
+
+```
+
+**Response**:
+
+```json
+[
+  {
+    "id": 542370642,
+    "adGroupId": 427916203,
+    "text": "targeting keyword example 1",
+    "status": "ACTIVE",
+    "matchType": "BROAD",
+    "bidAmount": {
+      "amount": "1.5",
+      "currency": "USD"
+    },
+    "modificationTime": "2023-04-08T16:53:17.457",
+    "deleted”: false
+  },
+  {
+    "id": 542370642,
+    "adGroupId": 427916203,
+    "text": “targeting keyword example 2”,
+    "status": “ACTIVE",
+    "matchType": "EXACT",
+    "bidAmount": {
+      "amount": "2",
+      "currency": "USD"
+    },
+    "modificationTime": "2024-04-08T16:53:17.468",
+    "deleted": false
+  }
+]
+```
+
+##### Payload Example Create Ad Group Targeting Keywords in a Maximize Conversions Campaign
+
+- `bidAmount` must be omitted, `null`, or `0`.
+- Keywords cannot be created in automated ad groups.
+
+**Request**:
+
+```http
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/bulk
+
+[
+  {
+    "text": "travel",
+    "matchType": "BROAD"
+  },
+  {
+    "text": "flight",
+    "matchType": "EXACT"
+  }
+]
+
+```
+
+**Response**:
+
+```json
+[
+  {
+    "id": 542370642,
+    "adGroupId": 427916203,
+    "text": "targeting keyword TripTrek 1",
+    "status": "ACTIVE",
+    "matchType": "BROAD",
+    "bidAmount": {
+      "amount": "0",
+      "currency": "USD"
+    },
+    "modificationTime": "2025-04-08T16:53:17.457",
+    "deleted”: false
+  },
+  {
+    "id": 542370642,
+    "adGroupId": 427916203,
+    "text": “targeting keyword TripTrek 2”,
+    "status": “ACTIVE",
+    "matchType": "EXACT",
+    "bidAmount": {
+      "amount": "0",
+      "currency": "USD"
+    },
+    "modificationTime": "2025-04-08T16:53:17.468",
+    "deleted": false
+  }
+]
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/bulk`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes keyword targeting details.

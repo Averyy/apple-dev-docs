@@ -16,9 +16,37 @@ Implementing an in-app purchase flow consists of three stages. In the first stag
 
 When the user selects a product to buy, create a payment request using the corresponding [`SKProduct`](skproduct.md) object and set the quantity if needed, as the code below shows. The product object comes from the array of products that your app’s products request returns, as described in [`Fetching product information from the App Store`](fetching-product-information-from-the-app-store.md).
 
+**Swift**:
+
+```swift
+// Use the corresponding SKProduct object that returns in the array from SKProductsRequest.
+let payment = SKMutablePayment(product: product)
+payment.quantity = 2
+```
+
+**Objective-C**:
+
+```objc
+SKProduct *product = <# Product returned by a products request. #>;
+SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:product];
+payment.quantity = 2;
+```
+
 ##### Submit a Payment Request
 
 Submit your payment request to the App Store by adding it to the payment queue. If you add a payment object to the queue more than once, the system submits it to the App Store multiple times, charging the user and requiring your app to deliver the product each time.
+
+**Swift**:
+
+```swift
+SKPaymentQueue.default().add(payment)
+```
+
+**Objective-C**:
+
+```objc
+[[SKPaymentQueue defaultQueue] addPayment:payment];
+```
 
 For each payment request your app submits, it receives a corresponding transaction to process. For more information about transactions and the payment queue, see [`Processing a transaction`](processing-a-transaction.md).
 

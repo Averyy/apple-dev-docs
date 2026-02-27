@@ -31,8 +31,8 @@ Use this function if, while running a test, an issue occurs that cannot be repre
 ## Parameters
 
 - `comment`: A comment describing the expectation.
-- `severity`: The severity level of the issue.  The testing library marks the   test as failed if the severity is greater than  .   The default is  .
-- `sourceLocation`: The source location to which the issue should be   attributed.
+- `severity`: The severity level of the issue.  The testing library marks the test as failed if the severity is greater than [`Issue.Severity.warning`](issue/severity-swift.enum/warning.md). The default is [`Issue.Severity.error`](issue/severity-swift.enum/error.md).
+- `sourceLocation`: The source location to which the issue should be attributed.
 
 
 ---

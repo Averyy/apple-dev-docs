@@ -22,8 +22,8 @@ This function creates a new instance of [`Attachment`](attachment.md) wrapping `
 ## Parameters
 
 - `image`: The value to attach.
-- `preferredName`: The preferred name of the attachment when writing it to   a test report or to disk. If  , the testing library attempts to   derive a reasonable filename for the attached value.
-- `imageFormat`: The image format with which to encode  .
+- `preferredName`: The preferred name of the attachment when writing it to a test report or to disk. If `nil`, the testing library attempts to derive a reasonable filename for the attached value.
+- `imageFormat`: The image format with which to encode `image`.
 - `sourceLocation`: The source location of the call to this function.
 
 ## See Also

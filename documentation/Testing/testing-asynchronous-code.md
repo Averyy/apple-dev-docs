@@ -55,10 +55,10 @@ In this example, there may be zero customers or up to (but not including) 1,000 
 
 | Range Expression | Usage |
 | --- | --- |
-| `1...` | If an event must occur  once |
-| `5...` | If an event must occur  five times |
+| `1...` | If an event must occur *at least* once |
+| `5...` | If an event must occur *at least* five times |
 | `1 ... 5` | If an event must occur at least once, but not more than five times |
-| `0 ..< 100` | If an event may or may not occur, but  occur more than 99 times |
+| `0 ..< 100` | If an event may or may not occur, but *must not* occur more than 99 times |
 
 ##### Confirm That an Event Doesnt Happen
 

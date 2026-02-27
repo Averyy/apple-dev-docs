@@ -15,10 +15,6 @@ The interface you adopt in the type that acts as the main entry point for a Loca
 protocol CLLocationPushServiceExtension : NSObjectProtocol
 ```
 
-## Mentions
-
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
-
 #### Overview
 
 A type that adopts the [`CLLocationPushServiceExtension`](cllocationpushserviceextension.md) protocol acts as the entry point to a Location Push Service Extension. You use this type to respond to incoming location push notifications and perform app-specific tasks. For example, you use it to get someone’s current location and send it to your server.

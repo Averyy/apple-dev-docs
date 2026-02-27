@@ -18,10 +18,6 @@ Requests the user’s permission to use location services regardless of whether 
 func requestAlwaysAuthorization()
 ```
 
-## Mentions
-
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
-
 #### Discussion
 
 You must call this or the [`requestWhenInUseAuthorization()`](cllocationmanager/requestwheninuseauthorization().md) method before your app can receive location information. To call this method, you must have both [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription) and [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription) keys in your app’s `Info.plist` file. You may call [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md) when the current authorization state is either:

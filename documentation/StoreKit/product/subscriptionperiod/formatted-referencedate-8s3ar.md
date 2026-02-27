@@ -22,7 +22,7 @@ func formatted<S>(_ format: S, referenceDate: Date = .now) -> S.FormatOutput whe
 ## Parameters
 
 - `format`: A format style that has a duration as an input.
-- `referenceDate`: The starting date of the subscription period. The default value is  .
+- `referenceDate`: The starting date of the subscription period. The default value is [`now`](https://developer.apple.com/documentation/Foundation/Date/now).
 
 ## See Also
 

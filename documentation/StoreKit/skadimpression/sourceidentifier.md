@@ -24,7 +24,7 @@ var sourceIdentifier: NSNumber { get set }
 
 #### Discussion
 
-The [`sourceIdentifier`](skadimpression/sourceidentifier.md) key is available for ad impressions that use SKAdNetwork 4 and later. The [`sourceIdentifier`](skadimpression/sourceidentifier.md), also known as the , replaces and extends the campaign identifier value, [`adCampaignIdentifier`](skadimpression/adcampaignidentifier.md).
+The [`sourceIdentifier`](skadimpression/sourceidentifier.md) key is available for ad impressions that use SKAdNetwork 4 and later. The [`sourceIdentifier`](skadimpression/sourceidentifier.md), also known as the *hierarchical source identifier*, replaces and extends the campaign identifier value, [`adCampaignIdentifier`](skadimpression/adcampaignidentifier.md).
 
 Ad networks and developers define the meaning of the hierarchical source identifier. This integer can have up to four digits. You can encode information about your advertisement in each set of digits; you may receive two, three, or all four digits of the [`sourceIdentifier`](skadimpression/sourceidentifier.md) in the first winning postback, depending on the ad impression’s postback data tier. For more information about the value you may get in the postback, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
 

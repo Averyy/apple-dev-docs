@@ -12,6 +12,12 @@ To generate the signature, first combine the values of [`Ad network install-vali
 
 The parameters required for a version 1.0 signature are:
 
+- **[`SKStoreProductParameterAdNetworkIdentifier`](skstoreproductparameteradnetworkidentifier.md)**: Your ad network identifier that you registered with Apple. Shown as `ad-network-id` in [`Combine the parameters for version 1.0`](combining-parameters-to-generate-a-signature-for-skadnetwork-1#Combine-the-parameters-for-version-10.md).
+- **[`SKStoreProductParameterAdNetworkCampaignIdentifier`](skstoreproductparameteradnetworkcampaignidentifier.md)**: A campaign number you provide. Shown as `campaign-id` in [`Combine the parameters for version 1.0`](combining-parameters-to-generate-a-signature-for-skadnetwork-1#Combine-the-parameters-for-version-10.md).
+- **[`SKStoreProductParameterITunesItemIdentifier`](skstoreproductparameteritunesitemidentifier.md)**: The App Store ID of the product to advertise. Shown as `itunes-item-id` in [`Combine the parameters for version 1.0`](combining-parameters-to-generate-a-signature-for-skadnetwork-1#Combine-the-parameters-for-version-10.md).
+- **[`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md)**: A unique `UUID` value that you provide for each ad impression. You must lowercase the string representation of the nonce in the signature. Shown as `nonce` in [`Combine the parameters for version 1.0`](combining-parameters-to-generate-a-signature-for-skadnetwork-1#Combine-the-parameters-for-version-10.md).
+- **[`SKStoreProductParameterAdNetworkTimestamp`](skstoreproductparameteradnetworktimestamp.md)**: A timestamp you generate near the time of the ad impression. Shown as `timestamp` in [`Combine the parameters for version 1.0`](combining-parameters-to-generate-a-signature-for-skadnetwork-1#Combine-the-parameters-for-version-10.md).
+
 ##### Combine the Parameters for Version 10
 
 Create the UTF-8 string for version 1.0 if you compile your app with an SDK prior to iOS 14.

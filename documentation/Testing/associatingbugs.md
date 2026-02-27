@@ -29,7 +29,7 @@ func engineWorks() async {
 }
 ```
 
-You can also specify the bug’s  in its bug-tracking system in addition to, or instead of, its URL:
+You can also specify the bug’s *unique identifier* in its bug-tracking system in addition to, or instead of, its URL:
 
 ```swift
 @Test(

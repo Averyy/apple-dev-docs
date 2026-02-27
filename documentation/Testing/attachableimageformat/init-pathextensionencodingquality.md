@@ -26,8 +26,8 @@ If `pathExtension` does not correspond to a recognized image format, this initia
 
 ## Parameters
 
-- `pathExtension`: A path extension corresponding to the image format to   use when encoding images.
-- `encodingQuality`: The encoding quality to use when encoding images. For   the lowest supported quality, pass  . For the highest supported   quality, pass  .
+- `pathExtension`: A path extension corresponding to the image format to use when encoding images.
+- `encodingQuality`: The encoding quality to use when encoding images. For the lowest supported quality, pass `0.0`. For the highest supported quality, pass `1.0`.
 
 
 ---

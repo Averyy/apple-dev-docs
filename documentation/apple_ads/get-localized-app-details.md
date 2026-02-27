@@ -19,6 +19,59 @@ Use this endpoint to return localized app details using your `adamId` in the res
 
 ##### Get Localized App Details Example
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/apps/{adamId}/locale-details        
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "language": "en-US",
+      "appName": "Trip Trek",
+      "shortDescription": "Trip Trek app.",
+      "isPrimaryLocale": true,
+      "subTitle": "Search for trips.",
+      "appPreviewDeviceWithAssets": {
+        "ipadPro": {
+          "appPreviewDeviceFallBackDevices": null,
+          "screenshots": [
+            {
+              "assetGenId": "…",
+              "assetToken": "…",
+              "assetUrl": "…",
+              "appPreviewDevice": "…",
+              "sortPosition": 1,
+              "sourceHeight": 2732,
+              "sourceWidth": 2048,
+              "orientation": "PORTRAIT",
+              "assetType": "SCREENSHOT",
+              "checksum": "…",
+              "pictureUrl": "…",
+              "videoUrl": null,
+              "assetDuplicationType": null
+            }
+          ],
+          "appPreviews": null
+        }
+      }
+    }
+  ]
+}
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/apps/{adamId}/locale-details`
+
+## Parameters
+
+- `adamId` (int64) *(required)*: Your unique App Store app identifier.
+
 ## See Also
 
 - [Get App Details](get-app-details.md)

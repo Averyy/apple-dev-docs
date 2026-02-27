@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: struct
 
+Values that describe the state of a core location services session.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,7 +21,7 @@ struct Diagnostic
 
 ## Topics
 
-### Instance Properties
+### Diagnostic values
 - [var alwaysAuthorizationDenied: Bool](clservicesession-pt7n/diagnostic/alwaysauthorizationdenied.md)
 - [var authorizationDenied: Bool](clservicesession-pt7n/diagnostic/authorizationdenied.md)
 - [var authorizationDeniedGlobally: Bool](clservicesession-pt7n/diagnostic/authorizationdeniedglobally.md)

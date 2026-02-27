@@ -31,7 +31,7 @@ The [`ProductIconPhase`](producticonphase.md) value indicates whether the promot
 ## Parameters
 
 - `productID`: The product identifier to load from the App Store.
-- `icon`: A closure that receives a   as an input, which indicates the state of the loading operation of the product’s promotional image, and returns the view to display for the specified phase.
+- `icon`: A closure that receives a [`ProductIconPhase`](producticonphase.md) as an input, which indicates the state of the loading operation of the product’s promotional image, and returns the view to display for the specified phase.
 - `placeholderIcon`: A closure that returns an icon to display until the system finishes loading the product from the App Store.
 
 ## See Also

@@ -22,6 +22,8 @@ string BillingEventType
 
 When the `supplySources` value is `APPSTORE_SEARCH_RESULTS` or `APPSTORE_SEARCH_TAB`, the `billingEvent` must be `TAPS.`
 
+- **IMPRESSIONS**: The cost to the advertiser is per impression served.
+
 #### Discussion
 
 See also [`Campaign`](campaign.md) object.

@@ -31,7 +31,7 @@ Within `transform`, you may access the current test or test case (if any) using 
 
 ## Parameters
 
-- `transform`: A closure called for each issue recorded by the test   this trait is applied to. It is passed a recorded issue, and returns   an optional issue to replace the passed-in one.
+- `transform`: A closure called for each issue recorded by the test this trait is applied to. It is passed a recorded issue, and returns an optional issue to replace the passed-in one.
 
 ## See Also
 

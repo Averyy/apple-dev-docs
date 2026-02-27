@@ -14,6 +14,11 @@ The response to a request that returns a list of ads.
 object AdListResponse
 ```
 
+## Properties
+
+- `data` ([Ad]): Response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object Ad](ad.md)

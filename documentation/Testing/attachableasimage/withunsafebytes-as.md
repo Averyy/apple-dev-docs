@@ -29,7 +29,7 @@ The testing library uses this function when saving an image as an attachment. Th
 ## Parameters
 
 - `imageFormat`: The image format to use when encoding this image.
-- `body`: A function to call. A temporary buffer containing a data   representation of this instance is passed to it.
+- `body`: A function to call. A temporary buffer containing a data representation of this instance is passed to it.
 
 
 ---

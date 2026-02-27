@@ -13,7 +13,7 @@ The testing library supports two distinct ways to identify a bug:
 
 > **Note**: “Bugs” as described in this document may also be referred to as “issues.” To avoid confusion with the [`Issue`](issue.md) type in the testing library, this document consistently refers to them as “bugs.”
 
-A bug may have both an associated URL  an associated unique identifier. It must have at least one or the other in order for the testing library to be able to interpret it correctly.
+A bug may have both an associated URL *and* an associated unique identifier. It must have at least one or the other in order for the testing library to be able to interpret it correctly.
 
 To create an instance of [`Bug`](bug.md) with a URL, use the [`bug(_:_:)`](trait/bug(_:_:).md) trait. At compile time, the testing library will validate that the given string can be parsed as a URL according to [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt).
 

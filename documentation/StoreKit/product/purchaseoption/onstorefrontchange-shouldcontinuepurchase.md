@@ -30,7 +30,7 @@ The default value is `true` if this option isn’t added to the purchase.
 
 ## Parameters
 
-- `shouldContinuePurchase`: A closure that returns a Boolean value to indicate whether the purchase needs to continue when the App Store storefront changes to the   value during a transaction.
+- `shouldContinuePurchase`: A closure that returns a Boolean value to indicate whether the purchase needs to continue when the App Store storefront changes to the [`storefront`](transaction/storefront.md) value during a transaction.
 
 
 ---

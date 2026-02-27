@@ -14,6 +14,19 @@ The defined targeted audience to include using the age demographic.
 object AgeCriteria
 ```
 
+## Properties
+
+- `included` ([AgeRange]): The dimension to include age-range targeting criteria. ```json
+"age": {
+      "included": [
+        {
+          "minAge": 20,
+          "maxAge": 25
+        }
+      ]
+    },
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

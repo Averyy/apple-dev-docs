@@ -26,6 +26,9 @@ protocol Trait : Sendable
 
 The testing library defines a number of traits that can be added to test functions and to test suites. Define your own traits by creating types that conform to [`TestTrait`](testtrait.md) or [`SuiteTrait`](suitetrait.md):
 
+- **[`TestTrait`](testtrait.md)**: Conform to this type in traits that you add to test functions.
+- **[`SuiteTrait`](suitetrait.md)**: Conform to this type in traits that you add to test suites.
+
 You can add a trait that conforms to both [`TestTrait`](testtrait.md) and [`SuiteTrait`](suitetrait.md) to test functions and test suites.
 
 ## Topics

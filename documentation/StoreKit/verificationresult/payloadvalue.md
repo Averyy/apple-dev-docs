@@ -23,7 +23,7 @@ var payloadValue: SignedType { get throws }
 
 This property represents the value of a payload in a JSON Web Signature (JWS) value that passed StoreKit verification.
 
-This property throws an error if the JWS value containing the payload doesn’t pass StoreKit’s verification and is therefore . To access the payload of an unverified JWS value, get the associated value of the verification result, or use the [`unsafePayloadValue`](verificationresult/unsafepayloadvalue.md) property.
+This property throws an error if the JWS value containing the payload doesn’t pass StoreKit’s verification and is therefore *unverified*. To access the payload of an unverified JWS value, get the associated value of the verification result, or use the [`unsafePayloadValue`](verificationresult/unsafepayloadvalue.md) property.
 
 ## See Also
 

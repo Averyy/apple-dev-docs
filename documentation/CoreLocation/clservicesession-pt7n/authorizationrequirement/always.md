@@ -20,6 +20,11 @@ case always
 
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
 
+## See Also
+
+- [CLServiceSession.AuthorizationRequirement.none](clservicesession-pt7n/authorizationrequirement/none.md)
+- [CLServiceSession.AuthorizationRequirement.whenInUse](clservicesession-pt7n/authorizationrequirement/wheninuse.md)
+
 
 ---
 

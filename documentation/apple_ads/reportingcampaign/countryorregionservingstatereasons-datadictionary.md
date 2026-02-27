@@ -14,6 +14,10 @@ Reasons that return when a campaign can’t run.
 object ReportingCampaign.CountryOrRegionServingStateReasons
 ```
 
+## Properties
+
+- `Any Key` ([string]): A map of reasons to return when a campaign can’t run for a specified country or region. See [`CampaignCountryOrRegionsServingStateReasons`](campaigncountryorregionsservingstatereasons.md) for enum descriptions.
+
 
 ---
 

@@ -24,7 +24,7 @@ This function creates a new instance of [`Attachment`](attachment.md) and immedi
 ## Parameters
 
 - `attachableValue`: The value to attach.
-- `preferredName`: The preferred name of the attachment to use when saving   it. If  , the testing library attempts to generate a reasonable   filename for the attached value.
+- `preferredName`: The preferred name of the attachment to use when saving it. If `nil`, the testing library attempts to generate a reasonable filename for the attached value.
 - `sourceLocation`: The source location of the call to this function.
 
 

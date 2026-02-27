@@ -19,7 +19,7 @@ Present your users with a request for an App Store review using [`RequestReviewA
 - Avoid showing a request for a review immediately when a user launches your app, even if it isn’t the first time it launches.
 - Avoid requesting a review as the result of a user action.
 
-Also, remember that people can disable requests for reviews from  appearing on their device.
+Also, remember that people can disable requests for reviews from *ever* appearing on their device.
 
 ##### Present the Review Request
 

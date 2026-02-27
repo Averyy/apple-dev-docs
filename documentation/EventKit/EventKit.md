@@ -70,6 +70,8 @@ You can use EventKit to set up alarms and create recurring events. And if a chan
 - [class EKSource](eksource.md)
   An abstract superclass that represents the account a calendar belongs to.
 ### Virtual conferences
+- [Implementing a virtual conference extension](implementing-a-virtual-conference-extension.md)
+  Support adding a virtual conference room to an event in Calendar.
 - [class EKVirtualConferenceProvider](ekvirtualconferenceprovider.md)
   An object that associates virtual conferencing details with an event object in a user’s calendar.
 - [class EKVirtualConferenceDescriptor](ekvirtualconferencedescriptor.md)

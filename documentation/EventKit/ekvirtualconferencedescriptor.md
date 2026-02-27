@@ -60,6 +60,8 @@ Calendar uses the first URL that you provide as the preferred way for users to j
 
 ## See Also
 
+- [Implementing a virtual conference extension](implementing-a-virtual-conference-extension.md)
+  Support adding a virtual conference room to an event in Calendar.
 - [class EKVirtualConferenceProvider](ekvirtualconferenceprovider.md)
   An object that associates virtual conferencing details with an event object in a user’s calendar.
 - [class EKVirtualConferenceRoomTypeDescriptor](ekvirtualconferenceroomtypedescriptor.md)

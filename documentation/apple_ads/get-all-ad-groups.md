@@ -12,6 +12,15 @@ Fetches all ad groups with a campaign identifier.
 
 To return all ad groups, use the associated `campaignId` and `adgroupId` in the URI path. You can also use a partial fetch. For more information, see the Use a Partial Fetch section of [`Using Apple Ads API Functionality`](using-apple-search-ads-api-functionality.md).
 
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups`
+
+## Parameters
+
+- `limit` (int32): The number of items to return per request. The maximum is 1000 for most objects.
+- `offset` (int32): The offset pagination that limits the number of returned records. The start of each page is offset by the specified number.
+
 ## See Also
 
 - [Create an Ad Group](create-an-ad-group.md)

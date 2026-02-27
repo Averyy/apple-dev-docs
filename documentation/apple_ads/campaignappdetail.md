@@ -14,6 +14,11 @@ The app data to fetch from campaign-level reports.
 object CampaignAppDetail
 ```
 
+## Properties
+
+- `adamId` (int64): Displays as `app:{adamId}` in [`ReportingCampaign`](reportingcampaign.md). Each time you use an `adamId` in the API, it must match the `adamId` in your campaign. Use [`Get a Campaign`](get-a-campaign.md) or [`Get all Campaigns`](get-all-campaigns.md) to obtain your `adamId` and correlate it to the correct campaign.
+- `appName` (string): The [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) app identifier, which displays as `app:{appName}` in [`ReportingCampaign`](reportingcampaign.md).
+
 ## See Also
 
 - [object ReportingRequest](reportingrequest.md)

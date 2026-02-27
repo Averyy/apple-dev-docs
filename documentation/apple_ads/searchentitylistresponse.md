@@ -14,6 +14,12 @@ The response details of geosearch requests.
 object SearchEntityListResponse
 ```
 
+## Properties
+
+- `data` ([SearchEntity]): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object GeoRequest](georequest.md)

@@ -28,7 +28,7 @@ To declare a test function, write a Swift function declaration that doesn’t ta
 }
 ```
 
-This test function can be present at file scope or within a type. A type containing test functions is automatically a  and can be optionally annotated with the `@Suite` attribute. For more information about suites, see [`Organizing test functions with suite types`](organizingtests.md).
+This test function can be present at file scope or within a type. A type containing test functions is automatically a *test suite* and can be optionally annotated with the `@Suite` attribute. For more information about suites, see [`Organizing test functions with suite types`](organizingtests.md).
 
 Note that, while this function is a valid test function, it doesn’t actually perform any action or test any code. To check for expected values and outcomes in test functions, add [`Expectations and confirmations`](expectations.md) to the test function.
 

@@ -14,6 +14,67 @@ Use this endpoint to return data for a specific campaign. You can also use a par
 
 ##### Payload Example Get a Campaign
 
+**Request**:
+
+```http
+GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
+```
+
+**Response**:
+
+```json
+{
+  "id": 542370642,
+  "orgId": 40669820,
+  "name": "TripTrek campaign 1",
+  "budgetAmount": {
+    "amount": "2000",
+    "currency": "USD"
+  },
+  "dailyBudgetAmount": {
+    "amount": "500",
+    "currency": "USD"
+  },
+  "adamId": 427916203,
+  "paymentModel": "PAYG",
+  "locInvoiceDetails": null,
+  "budgetOrders": [],
+  "biddingStrategy": "MANUAL_CPT",
+  "targetCpa": null,
+  "displayStatus": "ON_HOLD",
+  "startTime": "2024-04-08T10:33:31.650",
+  "endTime": "2024-04-09T10:33:31.650",
+  "status": "ENABLED",
+  "servingStatus": "NOT_RUNNING",
+  "servingStateReasons": [
+    "CAMPAIGN_END_DATE_REACHED"
+  ],
+  "modificationTime": "2024-04-08T11:00:06.513",
+  "deleted": false,
+  "sapinLawResponse": "NOT_ANSWERED",
+  "countriesOrRegions": [
+    "AU",
+    "CA",
+    "GB",
+    "US"
+  ],
+  "countryOrRegionServingStateReasons": {},
+  "billingEvent": "TAPS",
+  "supplySources": [
+    "APPSTORE_SEARCH_RESULTS"
+  ],
+  "adChannelType": "SEARCH"
+}
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## See Also
 
 - [Create a Campaign](create-a-campaign.md)

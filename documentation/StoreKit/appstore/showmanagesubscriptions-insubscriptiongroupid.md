@@ -24,7 +24,7 @@ static func showManageSubscriptions(in scene: UIWindowScene, subscriptionGroupID
 
 ## Parameters
 
-- `scene`: The   that the system displays the sheet on.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that the system displays the sheet on.
 - `subscriptionGroupID`: The subscription group identifier that the subscription belongs to.
 
 ## See Also

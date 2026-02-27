@@ -22,9 +22,9 @@ class SKAdNetwork
 
 The ad network API helps advertisers measure the success of ad campaigns while maintaining user privacy. The API involves three participants:
 
--  that sign ads and receive install-validation postbacks after ads result in conversions
--  that display ads from the ad networks, or websites that display the ads in Safari
--  that update conversion values as people engage with the app
+- *Ad networks* that sign ads and receive install-validation postbacks after ads result in conversions
+- *Source apps* that display ads from the ad networks, or websites that display the ads in Safari
+- *Advertised apps* that update conversion values as people engage with the app
 
 Ad networks register with Apple to get an ad network ID and to use the API. Developers configure their apps to accept attributable ads from ad networks, and to receive copies of winning postbacks. For information about setup, see [`Registering an ad network`](registering-an-ad-network.md), [`Configuring a source app`](configuring-a-source-app.md), and [`Configuring an advertised app`](configuring-an-advertised-app.md). For information about displaying ads in Safari, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds).
 

@@ -21,7 +21,7 @@ let dependentSKUs: [String]
 
 #### Discussion
 
-You can provide a list of SKUs and create a contingency scenario in which a person’s refusal to agree to a price increase results in the App Store canceling other, bundled services (the ). If the price increase requires a personʼs consent, and they don’t consent but instead cancel the subscription in the Manage Subscriptions view, the App Store cancels the dependent SKUs.
+You can provide a list of SKUs and create a contingency scenario in which a person’s refusal to agree to a price increase results in the App Store canceling other, bundled services (the *dependent SKUs*). If the price increase requires a personʼs consent, and they don’t consent but instead cancel the subscription in the Manage Subscriptions view, the App Store cancels the dependent SKUs.
 
 > ❗ **Important**: You can’t create chains of dependent SKUs; for example, if SKU A has a dependent SKU B, B can’t have its own dependent SKU, C. However, B can have its own price increase.
 

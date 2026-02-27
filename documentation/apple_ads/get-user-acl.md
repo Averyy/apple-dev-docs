@@ -14,9 +14,40 @@ The API uses a user access control list (ACL) for policy-based authorization to 
 
 ##### Get User Acl Example
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/acls
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "orgName": "Trip Trek",
+    "orgId": 40669820,
+    "currency": "USD",
+    "timeZone": "America/Los_Angeles",
+    "paymentModel": "PAYG",
+    "roleNames": [
+      "Admin"
+    ],
+    "parentOrgId": "27154130",
+    "displayName": "Trip Trek"
+  },
+  "pagination": null,
+  "error": null
+}
+```
+
 ##### Campaign Groups
 
 The API treats your `orgId` like a campaign group. If you need to manage Apple Ads for multiple clients, or if you need to restrict user access to a subset of your campaigns, you can create additional campaign groups within your account. Otherwise, you can create and manage all your campaigns under your default `orgId` and campaign group.
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/acls`
 
 ## See Also
 

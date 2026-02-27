@@ -22,6 +22,12 @@ object CountryOrRegion
 
 Countries and regions use ISO alpha-2 country codes. Use the `Get Supported Countries or Regions` endpoint to fetch supported languages ands language codes.
 
+## Properties
+
+- `countryOrRegion` (string): The supported App Store territory of your product page.
+- `defaultLanguages` ([LocaleInfo]): The default languages of assets to use for a campaign’s [`CountryOrRegion`](countryorregion.md).
+- `supportedLanguages` ([LocaleInfo]): The supported `languages` and `languageCodes` that you use on your product page.
+
 ## See Also
 
 - [object LocaleInfo](localeinfo.md)

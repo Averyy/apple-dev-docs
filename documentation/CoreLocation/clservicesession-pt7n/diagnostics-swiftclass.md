@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: class
 
+An object you use to access location service session diagnostic events.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -26,6 +28,11 @@ final class Diagnostics
 
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
+
+## See Also
+
+- [var diagnostics: CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.property.md)
+  A property that describes the current state of the services session.
 
 
 ---

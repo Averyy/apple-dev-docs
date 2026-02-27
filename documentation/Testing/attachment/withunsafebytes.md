@@ -27,7 +27,7 @@ The testing library uses this function when saving an attachment. This function 
 
 ## Parameters
 
-- `body`: A function to call. A temporary buffer containing a data   representation of this instance is passed to it.
+- `body`: A function to call. A temporary buffer containing a data representation of this instance is passed to it.
 
 
 ---

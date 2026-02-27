@@ -23,7 +23,7 @@ string SupplySource
 
 Use the following combination of campaign and ad group values for `supplySources`.
 
-|  |  |  |  |
+| **Ad channel type** | **Supply source** | **Billing event** | **Pricing model** |
 | --- | --- | --- | --- |
 | `Search` | `APPSTORE_SEARCH_RESULTS` | `Taps` | `CPC` |
 | `Display` | `APPSTORE_TODAY_TAB` | `Taps` | `CPC` |
@@ -34,7 +34,7 @@ For payload examples, see [`AdChannelType`](adchanneltype.md), [`BillingEventTyp
 
 ##### Today Tab Compatibility
 
-Campaigns with an `APPSTORE_TODAY_TAB` `SupplySource` reach users when they come to the App Store to discover apps. For an ad to display in the Today tab, your custom product page metadata —  and  — need to be localized in the `defaultLanguage` of all countries or regions where your ad is serving. For example, ads serving in the United States and Mexico require a product page with localized `en-US` and a product page with `es-MX` assets. See [`Get Supported Countries or Regions`](get-supported-countries-or-regions.md).
+Campaigns with an `APPSTORE_TODAY_TAB` `SupplySource` reach users when they come to the App Store to discover apps. For an ad to display in the Today tab, your custom product page metadata — *app name* and *subtitle* — need to be localized in the `defaultLanguage` of all countries or regions where your ad is serving. For example, ads serving in the United States and Mexico require a product page with localized `en-US` and a product page with `es-MX` assets. See [`Get Supported Countries or Regions`](get-supported-countries-or-regions.md).
 
 iPhone is the only supported [`DeviceClass`](deviceclass.md) that you can use with a Today tab `SupplySource`. Today tab ad groups not targeting iPhone are placed on hold with the following [`AdGroupServingStateReasons`](adgroupservingstatereasons.md): `TARGETED_DEVICE_CLASS_NOT_SUPPORTED_SUPPLY_SOURCE`.
 

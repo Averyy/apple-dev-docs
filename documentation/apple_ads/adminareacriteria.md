@@ -20,6 +20,16 @@ An `adminArea` is a state or the equivalent according to its associated `country
 
 Use [`Search for Geolocations`](search-for-geolocations.md) with `entity` to search for and retrieve geolocations. Then use geotargeting dimensions `country`, `adminArea`, and `locality` in the [`TargetingDimensions`](targetingdimensions.md) payload with the [`Update an Ad Group`](update-an-ad-group.md) endpoint.
 
+## Properties
+
+- `included` ([string]): The dimension to include targeted users by administrative area. For example, within the United States, administrative area dimensions are states. ```json
+ "adminArea": {
+      "included": [
+        "US|CA"
+      ]
+    },
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

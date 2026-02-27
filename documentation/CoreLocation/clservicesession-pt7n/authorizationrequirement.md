@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: enum
 
+Values that describe when the service session needs to request authorization.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,7 +21,7 @@ enum AuthorizationRequirement
 
 ## Topics
 
-### Enumeration Cases
+### Authorization requirement values
 - [CLServiceSession.AuthorizationRequirement.always](clservicesession-pt7n/authorizationrequirement/always.md)
 - [CLServiceSession.AuthorizationRequirement.none](clservicesession-pt7n/authorizationrequirement/none.md)
 - [CLServiceSession.AuthorizationRequirement.whenInUse](clservicesession-pt7n/authorizationrequirement/wheninuse.md)
@@ -31,6 +33,13 @@ enum AuthorizationRequirement
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [init(authorization: CLServiceSession.AuthorizationRequirement)](clservicesession-pt7n/init(authorization:).md)
+  Creates a services session by using the authorization mode you specify.
+- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).md)
+  Creates a services session by using the authorization mode and purpose key you specify.
 
 
 ---

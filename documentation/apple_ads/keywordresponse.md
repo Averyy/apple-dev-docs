@@ -14,6 +14,12 @@ A container for the targeting keywords response body.
 object KeywordResponse
 ```
 
+## Properties
+
+- `data` (Keyword): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object Keyword](keyword.md)

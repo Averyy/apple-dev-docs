@@ -39,7 +39,7 @@ Ad networks must verify the postback after receiving it. See [`Verifying an inst
 
 ## Parameters
 
-- `conversionValue`: An unsigned 6-bit value (  and  ). The app or the ad network determines the meaning of the value. The default value is  .
+- `conversionValue`: An unsigned 6-bit value (`>=0` and `<=63`). The app or the ad network determines the meaning of the value. The default value is `0`.
 
 ## See Also
 

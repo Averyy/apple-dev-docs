@@ -39,7 +39,7 @@ catch {
 
 ## Parameters
 
-- `visibility`: A visibility value of   that determines whether a promoted in-app purchase appears in the App Store on the user’s device.
+- `visibility`: A visibility value of [`Product.PromotionInfo.Visibility`](product/promotioninfo/visibility-swift.enum.md) that determines whether a promoted in-app purchase appears in the App Store on the user’s device.
 - `productID`: The product identifier of the promoted in-app purchase.
 
 ## See Also

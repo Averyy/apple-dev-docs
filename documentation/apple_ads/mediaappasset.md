@@ -14,6 +14,16 @@ The asset details of app preview or app screenshots.
 object MediaAppAsset
 ```
 
+## Properties
+
+- `assetGenId` (string): The unique identifier for the app preview or screenshot. Your `adamId` is the first numerical grouping in `assetGenId`. For example, in `1408851466;en-US;5;0;f8c9add6280c781e6f701c506be5a921`, `1408851466` is your `adamId`.
+- `assetType` (string): The type of creative asset. App previews are still images of video assets that you upload to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com). Note, the playable URL isn’t in the API response. A screenshot is a standard image of the app that you upload to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+- `assetURL` (string): The resolved URL for the screenshot or a screenshot of the video asset.
+- `orientation` (string): The orientation of the asset that you upload to [`App Store Connect`](https://developer.apple.comhttps://developer.apple.com/app-store-connect/).
+- `sortPosition` (int64): The position of the asset that you upload to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+- `sourceHeight` (int32): The height of the asset that you upload to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+- `sourceWidth` (int32): The width of the asset that you upload to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+
 ## See Also
 
 - [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)

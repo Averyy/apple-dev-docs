@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-24T07:32:03.666933",
+    "last_updated": "2026-02-27T07:41:02.645593",
     "total_pages": 310,
-    "session_id": "2026-02-24T07:31:50.503940"
+    "session_id": "2026-02-27T07:40:39.188222"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Automator.json": {
       "hash": "063465c059a5ce8459fad239867c2b08e98c8875c741a1999606de1b70109d3a",
-      "last_checked": "2026-02-24T07:31:50.782581",
+      "last_checked": "2026-02-27T07:40:39.516051",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"bbb5547da1a91e4f59695ada3745b48d\"",
       "file_path": "documentation/Automator/Automator.md"
     },
     "https://developer.apple.com/documentation/Automator": {
       "hash": "063465c059a5ce8459fad239867c2b08e98c8875c741a1999606de1b70109d3a",
-      "last_checked": "2026-02-24T07:31:50.670556",
+      "last_checked": "2026-02-27T07:40:39.410478",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"bbb5547da1a91e4f59695ada3745b48d\"",
       "file_path": "documentation/Automator/Automator.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/ambundleaction.json": {
       "hash": "60079b2975c3d64f70d6eba91914f79615df57ddd2c00a60531513990d36e0f3",
-      "last_checked": "2026-02-24T07:31:51.040816",
+      "last_checked": "2026-02-27T07:40:39.755757",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"15cc4e40660d40d886362e940388b3d3\"",
       "file_path": "documentation/Automator/ambundleaction.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amshellscriptaction.json": {
       "hash": "264800e485a8a4dae02c118bc26ddc43e1d9769609896837cf240430cfadcb2d",
-      "last_checked": "2026-02-24T07:31:51.136904",
+      "last_checked": "2026-02-27T07:40:39.895613",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"5590b026d8a4ab10d827b80f4733e4ac\"",
       "file_path": "documentation/Automator/amshellscriptaction.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction.json": {
       "hash": "c1db9284f108a71e71766ce938e9acdbcd1d30580a5fe22e41d4d594cd186019",
-      "last_checked": "2026-02-24T07:31:51.235125",
+      "last_checked": "2026-02-27T07:40:40.075568",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"5be098757f89b3079af67be231b1691d\"",
       "file_path": "documentation/Automator/amaction.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow.json": {
       "hash": "4c410206fd3e6149217827624e05b99d5ad773e5a140bbb514582e5fed58c7a5",
-      "last_checked": "2026-02-24T07:31:51.470761",
+      "last_checked": "2026-02-27T07:40:40.267903",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b6bd3a5fe918a5e5109ffaa1abe2d76f\"",
       "file_path": "documentation/Automator/amworkflow.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller.json": {
       "hash": "6fe757f825fbdcccfa0a2a6d438407247432a786c402dba50004cc5d9600d7c5",
-      "last_checked": "2026-02-24T07:31:51.597493",
+      "last_checked": "2026-02-27T07:40:40.407872",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"4f4c6546f607d532ada76ee3b52b0a2c\"",
       "file_path": "documentation/Automator/amworkflowcontroller.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowview.json": {
       "hash": "3dc614074ba34f6e466c2620d7bca1f8d9f80cbfd004b731e41d15b448dc1abd",
-      "last_checked": "2026-02-24T07:31:51.697489",
+      "last_checked": "2026-02-27T07:40:40.544218",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b8706b3421d68c26b3ff39f4230d8f48\"",
       "file_path": "documentation/Automator/amworkflowview.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkspace.json": {
       "hash": "cf8597913806dcb86485753022cac7ef4f4d8f928b41b0801e3c515ac5d53f5c",
-      "last_checked": "2026-02-24T07:31:51.795300",
+      "last_checked": "2026-02-27T07:40:40.727065",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"36896bc1d2eb1b6124d10c2d83defb7a\"",
       "file_path": "documentation/Automator/amworkspace.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amautomatorerrordomain.json": {
       "hash": "c8fb689821fde01eeae4c98cc1d2eac1ecb04e53b8a1a937494ff6b4743e2941",
-      "last_checked": "2026-02-24T07:31:51.889073",
+      "last_checked": "2026-02-27T07:40:40.865426",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"753c030486b01cf3fbeb5589a2c1edc7\"",
       "file_path": "documentation/Automator/amautomatorerrordomain.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amactionerrorkey.json": {
       "hash": "04fbd9f3010c492e309d188e1f88a2aad5eeba48fbb7270a4c42db3f417e8aa3",
-      "last_checked": "2026-02-24T07:31:51.957501",
+      "last_checked": "2026-02-27T07:40:41.000291",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"26f9ca962c6901ecda0b1f320432939f\"",
       "file_path": "documentation/Automator/amactionerrorkey.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror.json": {
       "hash": "5b6f54bf0efb5924e406c3c7e94341ad200fb2c106f7fb132303fe7bf7d46d2a",
-      "last_checked": "2026-02-24T07:31:52.029478",
+      "last_checked": "2026-02-27T07:40:41.155800",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"bb729248e0be71a37db92d5c472e8588\"",
       "file_path": "documentation/Automator/amerror.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code.json": {
       "hash": "5afd384a14801bbdaaa38125882c6fed32e386069101c2be63a23d7ca9c09b5d",
-      "last_checked": "2026-02-24T07:31:52.099391",
+      "last_checked": "2026-02-27T07:40:41.308674",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"2c32a2f7b8e53d9ed2ffecbaa0b22e75\"",
       "file_path": "documentation/Automator/amerror/code.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amapplescriptaction.json": {
       "hash": "cce84a5a508ddab172abd8ffec257976117efc3bd3c82a1ad9b66247ad2f6219",
-      "last_checked": "2026-02-24T07:31:52.168449",
+      "last_checked": "2026-02-27T07:40:41.448625",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"6f9474a9b0a9d5359f111f441f478faf\"",
       "file_path": "documentation/Automator/amapplescriptaction.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/ambundleaction/awakefrombundle().json": {
       "hash": "b668553a0ae76f0f0223413d647d197f648b9cd2884969403a6fff8687144401",
-      "last_checked": "2026-02-24T07:31:52.301658",
+      "last_checked": "2026-02-27T07:40:41.579778",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d84444705979615b52aac47d307e3360\"",
       "file_path": "documentation/Automator/ambundleaction/awakefrombundle.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/ambundleaction/bundle.json": {
       "hash": "c84272c1a6fa88a2658e153a43c4c43bfa660a9da87f940783301abe9cb7894f",
-      "last_checked": "2026-02-24T07:31:52.424212",
+      "last_checked": "2026-02-27T07:40:41.757485",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"5563e2c663a92c07b4a83cb3b82563fa\"",
       "file_path": "documentation/Automator/ambundleaction/bundle.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/ambundleaction/hasview.json": {
       "hash": "199b73d6ecca6e013cd28eedfd3e29e3071f764dd4ce257a825b02192e4f5b97",
-      "last_checked": "2026-02-24T07:31:52.516436",
+      "last_checked": "2026-02-27T07:40:41.957878",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b87153875e6cab9e87d33a9397d9e024\"",
       "file_path": "documentation/Automator/ambundleaction/hasview.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/ambundleaction/view.json": {
       "hash": "6737e31e949aadaa9237c30af119d2d0ee5627f736830cffa4c3b8b107bbe278",
-      "last_checked": "2026-02-24T07:31:52.578939",
+      "last_checked": "2026-02-27T07:40:42.141105",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"2956f43fd4c0ee539dd415c0c78409a7\"",
       "file_path": "documentation/Automator/ambundleaction/view.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/ambundleaction/parameters.json": {
       "hash": "b6f11804a60e02ab4d983a2dfa86ef4165fc50ed3436b7fecb8769dc463f6fc3",
-      "last_checked": "2026-02-24T07:31:52.652772",
+      "last_checked": "2026-02-27T07:40:42.291680",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"428ca1b3e472daef5410012a9ab68375\"",
       "file_path": "documentation/Automator/ambundleaction/parameters.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amshellscriptaction/inputfieldseparator.json": {
       "hash": "bf188a67a73b38f85953740180896e609bb823fe4664338fa26fa42d18ad9714",
-      "last_checked": "2026-02-24T07:31:52.725053",
+      "last_checked": "2026-02-27T07:40:42.492838",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"e3b43fd101ac69cbbeaa4d6f721ee1ec\"",
       "file_path": "documentation/Automator/amshellscriptaction/inputfieldseparator.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amshellscriptaction/outputfieldseparator.json": {
       "hash": "3eff69320ec5da21a47c44fd7bda5f662e7f07a790ce291a273766b74c215975",
-      "last_checked": "2026-02-24T07:31:52.846913",
+      "last_checked": "2026-02-27T07:40:42.624807",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1618617ab15b0dcd142302c4139a6b80\"",
       "file_path": "documentation/Automator/amshellscriptaction/outputfieldseparator.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amshellscriptaction/remaplineendings.json": {
       "hash": "a2882a888c8b533bb7aaf87955c20cfd4f7e67bed53efab6ce62a381d6e85cdd",
-      "last_checked": "2026-02-24T07:31:52.937465",
+      "last_checked": "2026-02-27T07:40:42.780942",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"098ad10bb2283d4da684d73e6bcbb560\"",
       "file_path": "documentation/Automator/amshellscriptaction/remaplineendings.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/init(definition:fromarchive:).json": {
       "hash": "a7cee86249856e3db901093f5775abe9d7af569e5d23e9c5f1d90b441d087bcb",
-      "last_checked": "2026-02-24T07:31:53.003987",
+      "last_checked": "2026-02-27T07:40:42.920304",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"367799c65b5c712fcfbf6fbe909949a7\"",
       "file_path": "documentation/Automator/amaction/init-definitionfromarchive.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/init(contentsof:).json": {
       "hash": "3dcec9bf9f3f831d07c6e8bcffcf99a52aad6215a935eadc61f01f9febe03665",
-      "last_checked": "2026-02-24T07:31:53.118080",
+      "last_checked": "2026-02-27T07:40:43.058513",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"669cc00f9931c923dfcea1043681e71a\"",
       "file_path": "documentation/Automator/amaction/init-contentsof.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/write(to:).json": {
       "hash": "9574e7ad6e51c1a4be8e937653efca16383e6cac768b7a7ceec579ca5633e0d5",
-      "last_checked": "2026-02-24T07:31:53.181985",
+      "last_checked": "2026-02-27T07:40:43.212382",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"18c5f98bca73157c448afbbdbaedf5fc\"",
       "file_path": "documentation/Automator/amaction/write-to.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/run(withinput:).json": {
       "hash": "70c9d9165322bb31b45f276ec9f43aace47017d95c65a1b8f1241c5adc2ac356",
-      "last_checked": "2026-02-24T07:31:53.293312",
+      "last_checked": "2026-02-27T07:40:43.365812",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"80d9bb08298c9a61a4fba8453e236c69\"",
       "file_path": "documentation/Automator/amaction/run-withinput.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/runasynchronously(withinput:).json": {
       "hash": "d091d7d271761ec33123d3d03a6d296ef38c6248e80be1624c9d26251297be72",
-      "last_checked": "2026-02-24T07:31:53.394098",
+      "last_checked": "2026-02-27T07:40:43.503184",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cf74ee8853a763a159410924f4a48e7a\"",
       "file_path": "documentation/Automator/amaction/runasynchronously-withinput.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/finishrunningwitherror(_:).json": {
       "hash": "cc3554c47fdd469aafe940cfe0f7d5a8368370f435efcac7afe4882c95bfcb40",
-      "last_checked": "2026-02-24T07:31:53.459360",
+      "last_checked": "2026-02-27T07:40:43.647642",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"a90bc6b3f4dee8fe9dc84a84a28ace4f\"",
       "file_path": "documentation/Automator/amaction/finishrunningwitherror.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/willfinishrunning().json": {
       "hash": "999a84fb619957f2e76d04195c76487666fe2c9a9d520bff588664c1550e0462",
-      "last_checked": "2026-02-24T07:31:53.519098",
+      "last_checked": "2026-02-27T07:40:43.784638",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"69bbd70e7db70b60f620bb4544a1a3db\"",
       "file_path": "documentation/Automator/amaction/willfinishrunning.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/stop().json": {
       "hash": "0cf5b360c2e82c3c7dbb4a625d4a44e3f558fe699573f2b5f88f2f7e346b9daa",
-      "last_checked": "2026-02-24T07:31:53.617265",
+      "last_checked": "2026-02-27T07:40:43.965176",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"3a8123b6ba2e3bc4d8feb5e89ebb19f6\"",
       "file_path": "documentation/Automator/amaction/stop.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/reset().json": {
       "hash": "25259bffe1d55bdde438ac36630516e13a54888336465df256f0248ab44d6195",
-      "last_checked": "2026-02-24T07:31:53.684446",
+      "last_checked": "2026-02-27T07:40:44.161871",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"3bf80de326c2b0e3716cee4b5d668702\"",
       "file_path": "documentation/Automator/amaction/reset.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/activated().json": {
       "hash": "235a4b51a3dae97fdc295a00a2bc4595815cafea7257e72e6b3d65c8f85ddc0d",
-      "last_checked": "2026-02-24T07:31:53.780975",
+      "last_checked": "2026-02-27T07:40:44.287667",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"a9de197c726f90c64a304408e59c70fe\"",
       "file_path": "documentation/Automator/amaction/activated.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/opened().json": {
       "hash": "6bd2ecc7861eaff2874142a0870dcb06962d66cf90025ace50da4a8bc9a1d554",
-      "last_checked": "2026-02-24T07:31:53.868737",
+      "last_checked": "2026-02-27T07:40:44.472249",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d5a7c81625f1638b458694e94f5a52a8\"",
       "file_path": "documentation/Automator/amaction/opened.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amloglevel.json": {
       "hash": "01d98e4138a24e6efb14fff25f7b833e740ef8fa128ef3177dfa8d76e3df21c1",
-      "last_checked": "2026-02-24T07:31:53.975992",
+      "last_checked": "2026-02-27T07:40:44.614615",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"0af742f3239453e8a5dad33669203459\"",
       "file_path": "documentation/Automator/amloglevel.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/parametersupdated().json": {
       "hash": "4179f39a99c12d662d143e6d1b2e63ad1d5148f92bf6ad13f17c6e1c08ace383",
-      "last_checked": "2026-02-24T07:31:54.070768",
+      "last_checked": "2026-02-27T07:40:44.738735",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"a6be8e94850e2542ecfe6c231c94828a\"",
       "file_path": "documentation/Automator/amaction/parametersupdated.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/updateparameters().json": {
       "hash": "fabe212f8b05fb51bd8e5ee7f73b6b2837fc934cce0ac667378176737272dc94",
-      "last_checked": "2026-02-24T07:31:54.133195",
+      "last_checked": "2026-02-27T07:40:44.882498",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"f710c71097dde73f8a577cc35b6afc97\"",
       "file_path": "documentation/Automator/amaction/updateparameters.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/name.json": {
       "hash": "18cf5e88f75dcee55e0c27cd0c68408f6cac9044a19aa24eac1bc0f492db1a51",
-      "last_checked": "2026-02-24T07:31:54.206688",
+      "last_checked": "2026-02-27T07:40:45.075454",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"09095ccf4b8a248d77f1ad201b6cd60e\"",
       "file_path": "documentation/Automator/amaction/name.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/progressvalue.json": {
       "hash": "fe83698875d6b1025d1893ad900977b1d908ca3047dfa889fe58b2dada85b860",
-      "last_checked": "2026-02-24T07:31:54.292407",
+      "last_checked": "2026-02-27T07:40:45.231885",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"3169ed42b05d7f2804ad0506472b0c9b\"",
       "file_path": "documentation/Automator/amaction/progressvalue.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/ignoresinput.json": {
       "hash": "c1a86b650b0dffdcd26207182f4e60a17a7135a4e6cda95c689b89ecfd6ee575",
-      "last_checked": "2026-02-24T07:31:54.370746",
+      "last_checked": "2026-02-27T07:40:45.407121",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"5b47f3e7457ad8d8af9a59548ceda4a3\"",
       "file_path": "documentation/Automator/amaction/ignoresinput.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/output.json": {
       "hash": "7a2060e80989ae10599a6144efea389d95317bd83dfd9d3fbc71bfcbff6a05bd",
-      "last_checked": "2026-02-24T07:31:54.437142",
+      "last_checked": "2026-02-27T07:40:45.556696",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"fbd29195f85ee0dc9279d19fbf291643\"",
       "file_path": "documentation/Automator/amaction/output.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/selectedinputtype.json": {
       "hash": "273ddd17490353d3bac1ae5108a05d4406aead28bdb3f76bab93175e8c5dd52f",
-      "last_checked": "2026-02-24T07:31:54.499234",
+      "last_checked": "2026-02-27T07:40:45.726810",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"4d357792061e011118d14b11cfed1725\"",
       "file_path": "documentation/Automator/amaction/selectedinputtype.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/selectedoutputtype.json": {
       "hash": "a6aa4b15b760896e5cbe9999db3fd58b645594dea451537665a02ec3730aae39",
-      "last_checked": "2026-02-24T07:31:54.578216",
+      "last_checked": "2026-02-27T07:40:45.873255",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"81f8736a4e9fbcd19bacfbf3ac1b0764\"",
       "file_path": "documentation/Automator/amaction/selectedoutputtype.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/isstopped.json": {
       "hash": "7fc20846b5ba3e57b96a7e413843e7f340c90d77255675436a45eaafbc17b797",
-      "last_checked": "2026-02-24T07:31:54.656046",
+      "last_checked": "2026-02-27T07:40:46.038867",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"f900ba2486d0cfde9363d11cc3068c67\"",
       "file_path": "documentation/Automator/amaction/isstopped.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amaction/closed().json": {
       "hash": "7fbc67d8ef94378f8d3177be96d865e6cccac4f448703d44eba1ead9988cd8ad",
-      "last_checked": "2026-02-24T07:31:54.738069",
+      "last_checked": "2026-02-27T07:40:46.186444",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"ee264371b90d9e294c1bc09995a7fd33\"",
       "file_path": "documentation/Automator/amaction/closed.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/init().json": {
       "hash": "00e51c77568ccefeda166a61ed6f16c8747bbf1c441ff740357455b39216b27c",
-      "last_checked": "2026-02-24T07:31:54.811103",
+      "last_checked": "2026-02-27T07:40:46.360430",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"20ba18db05e2457fe6209ec4135a5be6\"",
       "file_path": "documentation/Automator/amworkflow/init.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/init(contentsof:).json": {
       "hash": "f41301553c272978fe2dcf6b71a2f7dfab6102cc7e32612fd889ad11c479c097",
-      "last_checked": "2026-02-24T07:31:54.900277",
+      "last_checked": "2026-02-27T07:40:46.492522",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"03c1f7a2e243be3aa88de93fea1f8ad9\"",
       "file_path": "documentation/Automator/amworkflow/init-contentsof.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/run(at:withinput:).json": {
       "hash": "457877f5f7fc11b81ea8d48b54ae3a7e0fbec05446966f432ace204fa54eade9",
-      "last_checked": "2026-02-24T07:31:54.963224",
+      "last_checked": "2026-02-27T07:40:46.632727",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"680772b5b8f3eaf80e02d49484714284\"",
       "file_path": "documentation/Automator/amworkflow/run-atwithinput.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/write(to:).json": {
       "hash": "2ecf2f7d05191beb59f63ffbb8107c8a100c6ba834835a80f16a5ff1c01971db",
-      "last_checked": "2026-02-24T07:31:55.034778",
+      "last_checked": "2026-02-27T07:40:46.787591",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cf5201b4f195c9e0133bf306f25c409c\"",
       "file_path": "documentation/Automator/amworkflow/write-to.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/actions.json": {
       "hash": "673548a9ce22491c36b850364e25e1f5c93e29726034147339930418c8dd268c",
-      "last_checked": "2026-02-24T07:31:55.123398",
+      "last_checked": "2026-02-27T07:40:46.935814",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"031daf9d1ae131e2c91448c1a926ec31\"",
       "file_path": "documentation/Automator/amworkflow/actions.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/fileurl.json": {
       "hash": "eedd7d14c0270905ee9ba88cc7793f2c45050cab090b3c6f52948b6eb0bfdd2f",
-      "last_checked": "2026-02-24T07:31:55.212378",
+      "last_checked": "2026-02-27T07:40:47.087782",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"4bf81ce44985daa594f7c039b6d4402a\"",
       "file_path": "documentation/Automator/amworkflow/fileurl.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/valueforvariable(withname:).json": {
       "hash": "69d08f3ebdcd70b20c4d003d150e0871436e6b201c4ddda450312278f2a80a25",
-      "last_checked": "2026-02-24T07:31:55.287369",
+      "last_checked": "2026-02-27T07:40:47.235288",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"57fd9f22430852d502ae165891c5088b\"",
       "file_path": "documentation/Automator/amworkflow/valueforvariable-withname.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/input.json": {
       "hash": "c2bf45f40a010518537b35a82e87ca8501486bf7a3bbc13ea64642c7016dbf2f",
-      "last_checked": "2026-02-24T07:31:55.361878",
+      "last_checked": "2026-02-27T07:40:47.380823",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d50a628fbb63bc9975c37315eab53656\"",
       "file_path": "documentation/Automator/amworkflow/input.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/output.json": {
       "hash": "934bb1509dfd640d5a7a1089b702b045630aceeaaf81f3bf37bbbc8216242556",
-      "last_checked": "2026-02-24T07:31:55.429087",
+      "last_checked": "2026-02-27T07:40:47.531103",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"aca3e7be40af8f8d2f23c7bd4bd277fc\"",
       "file_path": "documentation/Automator/amworkflow/output.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/setvalue(_:forvariablewithname:).json": {
       "hash": "6d526564fb1bab851ecc2cb681ba48c4e3a8117aa33ced0a201822b15045630c",
-      "last_checked": "2026-02-24T07:31:55.491145",
+      "last_checked": "2026-02-27T07:40:47.669562",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"64d544a0a940c3cef467bae74a82f65b\"",
       "file_path": "documentation/Automator/amworkflow/setvalue-forvariablewithname.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/addaction(_:).json": {
       "hash": "d3b7ac0458cb0a397b8726cb7955892d9444cfc8536df5233d23e2769c44fba7",
-      "last_checked": "2026-02-24T07:31:55.569182",
+      "last_checked": "2026-02-27T07:40:47.808587",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"3b19d86ae09fa1537895836e7c39f54e\"",
       "file_path": "documentation/Automator/amworkflow/addaction.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/insertaction(_:at:).json": {
       "hash": "23e92cab4180e51fb71f8c6c240c239fb6de24a59fc6b423c7e99e14169b6a56",
-      "last_checked": "2026-02-24T07:31:55.632627",
+      "last_checked": "2026-02-27T07:40:47.954047",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1fa2ee6a15db76d579ebe3d0a98b3407\"",
       "file_path": "documentation/Automator/amworkflow/insertaction-at.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/moveaction(at:to:).json": {
       "hash": "9c1965042d79588d4d0a4d289b9ddcccdb57b025787d2723d5f3c7d68dcb31d6",
-      "last_checked": "2026-02-24T07:31:55.748002",
+      "last_checked": "2026-02-27T07:40:48.094037",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"83c4e95b77a6da3dd510b6f971a20a2f\"",
       "file_path": "documentation/Automator/amworkflow/moveaction-atto.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflow/removeaction(_:).json": {
       "hash": "70c4d5b2fd1aafb9400fa273937b759e5fb867a9dc05fa860eea91cc9120c1c6",
-      "last_checked": "2026-02-24T07:31:55.846471",
+      "last_checked": "2026-02-27T07:40:48.227656",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"983416cbbafb1e6215ca5902945d9814\"",
       "file_path": "documentation/Automator/amworkflow/removeaction.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/workflow.json": {
       "hash": "f8eb3dd4a6ea33e21248b79b75aecc4bf7a8b64b8cfe24fb6fe4e36cdb05eb83",
-      "last_checked": "2026-02-24T07:31:55.910954",
+      "last_checked": "2026-02-27T07:40:48.381212",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"86d205d0c963cb01d4d8e40bfa4f6f95\"",
       "file_path": "documentation/Automator/amworkflowcontroller/workflow.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/workflowview-swift.property.json": {
       "hash": "ae65025b8ec9c4036a509ed54ce9fb01357926f1e5a83b4c457d21beb8f2def8",
-      "last_checked": "2026-02-24T07:31:56.160905",
+      "last_checked": "2026-02-27T07:40:48.534545",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"c3247ebfdc2a022591cdc4838809726a\"",
       "file_path": "documentation/Automator/amworkflowcontroller/workflowview-swiftproperty.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/delegate.json": {
       "hash": "e805fc92c58604138021fd2c6c0b298184859c9f56721eaa2d15288198024aa8",
-      "last_checked": "2026-02-24T07:31:56.275492",
+      "last_checked": "2026-02-27T07:40:48.689295",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d9ea4334d41300cae779fd6cb3957cd5\"",
       "file_path": "documentation/Automator/amworkflowcontroller/delegate.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate.json": {
       "hash": "72e51d1e9df5e2cf6101097ee02dc45951dc667f97d6d60fc68bc36d58bf5cdb",
-      "last_checked": "2026-02-24T07:31:56.348588",
+      "last_checked": "2026-02-27T07:40:48.853925",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1a954a70d4d83fea6e3870697a72ebd3\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/pause(_:).json": {
       "hash": "96ad4147660ecfe2d5f5a01a26ea89affd0fbdfe814d7a89068f7f5fbe9c5c93",
-      "last_checked": "2026-02-24T07:31:56.413879",
+      "last_checked": "2026-02-27T07:40:49.021680",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"9b8f9984c7446a65fbfcf3382d451062\"",
       "file_path": "documentation/Automator/amworkflowcontroller/pause.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/reset(_:).json": {
       "hash": "2038d1219e1ed817f60bf39aacec8f0c4f5adb657e88958a53a6d5d629a61a1c",
-      "last_checked": "2026-02-24T07:31:56.546934",
+      "last_checked": "2026-02-27T07:40:49.164159",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"ef9a3d6fcf987f31920d963afc63dd03\"",
       "file_path": "documentation/Automator/amworkflowcontroller/reset.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/run(_:).json": {
       "hash": "9fbaf67393d504cc3217a4ea80192dbec7f407794e9407fdde05d540612b6057",
-      "last_checked": "2026-02-24T07:31:56.610103",
+      "last_checked": "2026-02-27T07:40:49.306000",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"dde38d4c7e5c53cd6ef77392352f112f\"",
       "file_path": "documentation/Automator/amworkflowcontroller/run.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/step(_:).json": {
       "hash": "a123aef38a35e94d4e25d4de78b870b367f35094c17553cd8d4c383056bc5514",
-      "last_checked": "2026-02-24T07:31:56.674365",
+      "last_checked": "2026-02-27T07:40:49.446187",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"672fb34e01bbebbf1ec985c1122c4040\"",
       "file_path": "documentation/Automator/amworkflowcontroller/step.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/stop(_:).json": {
       "hash": "7b5f747080a2664ec71fd2b3b858983e5bab40ae056bf99d5534f5846daf2a2e",
-      "last_checked": "2026-02-24T07:31:56.738371",
+      "last_checked": "2026-02-27T07:40:49.590460",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"367abae00dbdc0bd99ea367d31e79829\"",
       "file_path": "documentation/Automator/amworkflowcontroller/stop.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/canrun.json": {
       "hash": "d21bddb4ac6c9455a02a61fe3c7cf6fe954b7cc5dd6d0e4c891a647d46a85f49",
-      "last_checked": "2026-02-24T07:31:56.804144",
+      "last_checked": "2026-02-27T07:40:49.760720",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"74fc5ae7174d138597668d76b3c033e4\"",
       "file_path": "documentation/Automator/amworkflowcontroller/canrun.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/ispaused.json": {
       "hash": "bae227a33d7507da977bdb759a5c6573b26b33f53284d7539c9d77fc1c983ac2",
-      "last_checked": "2026-02-24T07:31:56.928099",
+      "last_checked": "2026-02-27T07:40:49.917987",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"88c885ad8c8410dc955042a6f5957079\"",
       "file_path": "documentation/Automator/amworkflowcontroller/ispaused.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontroller/isrunning.json": {
       "hash": "353457ae45085ed6770f184a88a15f4ed8a23d6990c9e9ea17283dd5c6f76d2c",
-      "last_checked": "2026-02-24T07:31:56.998739",
+      "last_checked": "2026-02-27T07:40:50.073850",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"51c75a0d35b0145d5a6eb1ebd8060976\"",
       "file_path": "documentation/Automator/amworkflowcontroller/isrunning.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowview/iseditable.json": {
       "hash": "454e5da94d799b746ec095e7a4c4e8f76dc584ab6d2b7739878b88c66fc1fba8",
-      "last_checked": "2026-02-24T07:31:57.063677",
+      "last_checked": "2026-02-27T07:40:50.228374",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"a1dfddad8c9f2d6fc0f79646745cb729\"",
       "file_path": "documentation/Automator/amworkflowview/iseditable.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowview/workflowcontroller.json": {
       "hash": "9ce869737d4360e8360bdde7a8f06f32be057b2926c9b396463a954a16bfc97f",
-      "last_checked": "2026-02-24T07:31:57.137957",
+      "last_checked": "2026-02-27T07:40:50.374424",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"3f11e060da9f471c6c85fc62bf410af5\"",
       "file_path": "documentation/Automator/amworkflowview/workflowcontroller.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkspace/shared.json": {
       "hash": "87a140fb28d6a5d465b06c25c0527282e54d149de80e64cce334b3ed5200fa74",
-      "last_checked": "2026-02-24T07:31:57.204750",
+      "last_checked": "2026-02-27T07:40:50.515841",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cca37c3430fdb9ae003114b33acd1de1\"",
       "file_path": "documentation/Automator/amworkspace/shared.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkspace/runworkflow(atpath:withinput:).json": {
       "hash": "004c0693543f91713b1caa8df399323429951c2df50ed3990445fdd57a013ec7",
-      "last_checked": "2026-02-24T07:31:57.277094",
+      "last_checked": "2026-02-27T07:40:50.651908",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"e812a9fba2ef85fe791049ee0bae6ca6\"",
       "file_path": "documentation/Automator/amworkspace/runworkflow-atpathwithinput.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/workflowactionsnotloadederror.json": {
       "hash": "faf763b9354c4eea6da2b404f5798425719b19462446397337072fdb681ad6e9",
-      "last_checked": "2026-02-24T07:31:57.340906",
+      "last_checked": "2026-02-27T07:40:50.804840",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"8a095fbb1eba179a4c71917bb95741cd\"",
       "file_path": "documentation/Automator/amerror/workflowactionsnotloadederror.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/workflowneweractionversionerror.json": {
       "hash": "d43d54e8128b5dec41db1f96956394627dd9dfdfb19efc1e5b3f599122af7b06",
-      "last_checked": "2026-02-24T07:31:57.400874",
+      "last_checked": "2026-02-27T07:40:50.951322",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1b9bda8a18ea580cbb96174ca61cc6ce\"",
       "file_path": "documentation/Automator/amerror/workflowneweractionversionerror.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/workflownewerversionerror.json": {
       "hash": "3af8c9f2ab04c2f5d97331f39c734675188d8014a10b08868d08de02ba3a9977",
-      "last_checked": "2026-02-24T07:31:57.463001",
+      "last_checked": "2026-02-27T07:40:51.099305",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d2ef4149ddb8ec712d90d370d3d6ab32\"",
       "file_path": "documentation/Automator/amerror/workflownewerversionerror.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/workflownoenabledactionserror.json": {
       "hash": "742ab2f4ca4c7693086223f859374adb94066d9a585e533bf49415a9ecb90664",
-      "last_checked": "2026-02-24T07:31:57.525635",
+      "last_checked": "2026-02-27T07:40:51.244387",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"33b42c56b3ae7237484416bef5099487\"",
       "file_path": "documentation/Automator/amerror/workflownoenabledactionserror.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/workflowolderactionversionerror.json": {
       "hash": "8ade8c94a35fe92c7fca454c0a03db1aba3b3150339b32857006dfcf948c9497",
-      "last_checked": "2026-02-24T07:31:57.599852",
+      "last_checked": "2026-02-27T07:40:51.377541",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"f0d3359484b56ba16f17f9a5c58b588d\"",
       "file_path": "documentation/Automator/amerror/workflowolderactionversionerror.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/workflowpropertylistinvaliderror.json": {
       "hash": "153eaec2e1c9cc8dfb449e042cb0f38833e997076b2fbb3859ccda6a8b547545",
-      "last_checked": "2026-02-24T07:31:57.667147",
+      "last_checked": "2026-02-27T07:40:51.507320",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"485d46e9740f772265b6707916e56385\"",
       "file_path": "documentation/Automator/amerror/workflowpropertylistinvaliderror.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/usercancelederror.json": {
       "hash": "ac265d3d564c80fdb1baea1557954cff0479915f2947c0f6973874d46c4fe016",
-      "last_checked": "2026-02-24T07:31:57.768770",
+      "last_checked": "2026-02-27T07:40:51.647795",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"e9d9de99c1033f3109e8676bcd440a87\"",
       "file_path": "documentation/Automator/amerror/usercancelederror.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionapplicationresourceerror.json": {
       "hash": "f2eb41543b7216d645ec08d5b75e95c86ad1945f2d88e69d7eeaaf05f7245a23",
-      "last_checked": "2026-02-24T07:31:57.833629",
+      "last_checked": "2026-02-27T07:40:51.790736",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"dbcdf534c0d29f46812c905969c7ed53\"",
       "file_path": "documentation/Automator/amerror/actionapplicationresourceerror.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionapplicationversionresourceerror.json": {
       "hash": "23a6e96c3b1e9b8bfd5bb0551576ba82c511407abdf297ed2139ca185a1ea561",
-      "last_checked": "2026-02-24T07:31:57.903126",
+      "last_checked": "2026-02-27T07:40:51.934588",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"40868f92eeeaa63e4952041322e89a7e\"",
       "file_path": "documentation/Automator/amerror/actionapplicationversionresourceerror.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionarchitecturemismatcherror.json": {
       "hash": "866667cbe47a9fa1df1c0dc08402778e6ca433c7c9932b47277d652fe4255246",
-      "last_checked": "2026-02-24T07:31:57.966313",
+      "last_checked": "2026-02-27T07:40:52.105753",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"22ed0eb346bd3f35cf32ce02a1a2c114\"",
       "file_path": "documentation/Automator/amerror/actionarchitecturemismatcherror.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionexceptionerror.json": {
       "hash": "ce6274c6726749f6d3ea59f0009599efb54eb2d111d84715ff35d4d248a8c2df",
-      "last_checked": "2026-02-24T07:31:58.031864",
+      "last_checked": "2026-02-27T07:40:52.251379",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"c3c1996a162745d85bbb91165d1630c8\"",
       "file_path": "documentation/Automator/amerror/actionexceptionerror.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionexecutionerror.json": {
       "hash": "82ab6a13d17d51ed6dfa915aa6b380adc51a2d27d8fa79cd1e9e540846686abf",
-      "last_checked": "2026-02-24T07:31:58.104232",
+      "last_checked": "2026-02-27T07:40:52.387482",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d0ae3538210ffd1c59fd0e0f4befca41\"",
       "file_path": "documentation/Automator/amerror/actionexecutionerror.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionfailedgatekeepererror.json": {
       "hash": "14ae71d636643e98c77e9bf5ce792e3a5ef88edcdc09852ab98885e4bbc920fd",
-      "last_checked": "2026-02-24T07:31:58.222102",
+      "last_checked": "2026-02-27T07:40:52.536998",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"ff8f5e30e871ca25263b9c6d8250c2a6\"",
       "file_path": "documentation/Automator/amerror/actionfailedgatekeepererror.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionfileresourceerror.json": {
       "hash": "31785c6339f2648ad79c4014d9aac7d27b6781e1c8c8e3c982527e48a7e3f056",
-      "last_checked": "2026-02-24T07:31:58.287161",
+      "last_checked": "2026-02-27T07:40:52.667513",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"346339e3612f7707f2fa523caeb34352\"",
       "file_path": "documentation/Automator/amerror/actionfileresourceerror.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actioninitializationerror.json": {
       "hash": "46f97c6a330650b5bd089f310aca4754daaf28a67f3b34a5c66a0e57be38da9f",
-      "last_checked": "2026-02-24T07:31:58.412736",
+      "last_checked": "2026-02-27T07:40:52.798485",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"4bf92d5246b3c3f747c42d537bb82a82\"",
       "file_path": "documentation/Automator/amerror/actioninitializationerror.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actioninsufficientdataerror.json": {
       "hash": "26251d2c515750626e3607376e9cab3bb4e15803d8a79f18a884a9b0e4122f9a",
-      "last_checked": "2026-02-24T07:31:58.478066",
+      "last_checked": "2026-02-27T07:40:52.948105",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"417c2436882806c34b85e10f05998936\"",
       "file_path": "documentation/Automator/amerror/actioninsufficientdataerror.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionisdeprecatederror.json": {
       "hash": "dfe6b8d810ebb3d1ec77e6af4dfb069d04f0037fdac0d5943dee1e5138404d0f",
-      "last_checked": "2026-02-24T07:31:58.544578",
+      "last_checked": "2026-02-27T07:40:53.100317",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"2525e7cb0b3cba7f38d9440e3e9f8ba6\"",
       "file_path": "documentation/Automator/amerror/actionisdeprecatederror.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionlicenseresourceerror.json": {
       "hash": "06fc8fb913c1109375a46c1875d48fd09a5c039a6cb3c52f1329c89b98c65dc7",
-      "last_checked": "2026-02-24T07:31:58.606728",
+      "last_checked": "2026-02-27T07:40:53.244552",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cdd2f90664f2f1816e7a0506bf944ec6\"",
       "file_path": "documentation/Automator/amerror/actionlicenseresourceerror.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionlinkerror.json": {
       "hash": "fb64fab636034cf2934f1a964495c91637aa3b58302fffcfab73304a84fb213e",
-      "last_checked": "2026-02-24T07:31:58.673538",
+      "last_checked": "2026-02-27T07:40:53.439104",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"262e6fa5c18217e21cb8334986a578c8\"",
       "file_path": "documentation/Automator/amerror/actionlinkerror.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionloaderror.json": {
       "hash": "aa257324d255bb0a9ab40bad8e09198bef255dd7bef9a6919969bab0a85a701d",
-      "last_checked": "2026-02-24T07:31:58.747441",
+      "last_checked": "2026-02-27T07:40:53.563200",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d716a8a94a16c995ced9fab9c9e3cdd9\"",
       "file_path": "documentation/Automator/amerror/actionloaderror.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionmalwareerror.json": {
       "hash": "7d5f65707b564f13042cebe3542e1df38b7bcef3469c0b16b5e2e715d6ebc1ea",
-      "last_checked": "2026-02-24T07:31:58.819627",
+      "last_checked": "2026-02-27T07:40:53.716561",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"e72f5f4cd7a3fec42ac42cd2d1381d5b\"",
       "file_path": "documentation/Automator/amerror/actionmalwareerror.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionnotloadableerror.json": {
       "hash": "87f24f79a267554e9d954edcc7104801aa58a31e43561a4e1192b019c2dab0b5",
-      "last_checked": "2026-02-24T07:31:58.894001",
+      "last_checked": "2026-02-27T07:40:53.862144",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"f8e4edb62fc2c7afa82202e0a2662180\"",
       "file_path": "documentation/Automator/amerror/actionnotloadableerror.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionpropertylistinvaliderror.json": {
       "hash": "6fe9cf3fe9b63276430122917880fea5b8ac01bd2859ef4761a20bfae37f8c0e",
-      "last_checked": "2026-02-24T07:31:58.965224",
+      "last_checked": "2026-02-27T07:40:53.993701",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"c9454146d72bf110ed80dc9116204e3a\"",
       "file_path": "documentation/Automator/amerror/actionpropertylistinvaliderror.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionquarantineerror.json": {
       "hash": "f9f5f4bfea0a15abb1190f3c82ff80c6c6addefa31888666d3553c6ced121870",
-      "last_checked": "2026-02-24T07:31:59.031708",
+      "last_checked": "2026-02-27T07:40:54.140897",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"61ea3812bfbef15072ab86f22b31bb0e\"",
       "file_path": "documentation/Automator/amerror/actionquarantineerror.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionrequiredactionresourceerror.json": {
       "hash": "e756c626e8447fc03e2401473cdf714a691b7869bc096da4f3c1c728e4cffaba",
-      "last_checked": "2026-02-24T07:31:59.100232",
+      "last_checked": "2026-02-27T07:40:54.293064",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"ed69ce6c1695e9c278214612ee273418\"",
       "file_path": "documentation/Automator/amerror/actionrequiredactionresourceerror.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionruntimemismatcherror.json": {
       "hash": "f4d11eb7f25c06ab870b696690fe6406e5757a129485aa06852314dd1f33d02f",
-      "last_checked": "2026-02-24T07:31:59.172226",
+      "last_checked": "2026-02-27T07:40:54.434339",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1a299900b6bec6547f052a4295d57f78\"",
       "file_path": "documentation/Automator/amerror/actionruntimemismatcherror.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionsignaturecorrupterror.json": {
       "hash": "aec1e17de477243d6675601a27bb6df4c13e5cf3aec1a8e1acb17d6d8f05bdb3",
-      "last_checked": "2026-02-24T07:31:59.243666",
+      "last_checked": "2026-02-27T07:40:54.607762",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"a8fea0b1a7f230fdd450ed0079fe4b80\"",
       "file_path": "documentation/Automator/amerror/actionsignaturecorrupterror.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionthirdpartyactionsnotallowederror.json": {
       "hash": "b72946d55c0d11e68494636fa61485d4e617ca1f2543a59665625467d16ce4a7",
-      "last_checked": "2026-02-24T07:31:59.435588",
+      "last_checked": "2026-02-27T07:40:54.763106",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"13638e731a9ff951d333ebb73d51ec19\"",
       "file_path": "documentation/Automator/amerror/actionthirdpartyactionsnotallowederror.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionxpcerror.json": {
       "hash": "2c136b018ca841041644ae125327de00f2b6e0d1b0550306b91a70ea801ba5c5",
-      "last_checked": "2026-02-24T07:31:59.528857",
+      "last_checked": "2026-02-27T07:40:54.898302",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"4cd72cc199b02f45a54a9a3c55dced85\"",
       "file_path": "documentation/Automator/amerror/actionxpcerror.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/actionxprotecterror.json": {
       "hash": "06dd4ff5e8b5a93e0aef5669c74408fef83b2b57f6bf28da86159026098a6df8",
-      "last_checked": "2026-02-24T07:31:59.605857",
+      "last_checked": "2026-02-27T07:40:55.061888",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b94d90e95c40000f606f5f7d310edc86\"",
       "file_path": "documentation/Automator/amerror/actionxprotecterror.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/nosuchactionerror.json": {
       "hash": "fc5c8f417f1b2fee432c769a85403923519630e8c0ab0472b18cf2ae918b6f09",
-      "last_checked": "2026-02-24T07:31:59.686379",
+      "last_checked": "2026-02-27T07:40:55.204584",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cfe670158b271970437e3f035cda5fa4\"",
       "file_path": "documentation/Automator/amerror/nosuchactionerror.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/conversionfailederror.json": {
       "hash": "6cc3cbe43aa6536031a9bef9e46100aad273350c6ae984b20a0c64fa32c3cd4e",
-      "last_checked": "2026-02-24T07:31:59.765054",
+      "last_checked": "2026-02-27T07:40:55.340740",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"c24d6fa80bd3478238b7adc443d9f43c\"",
       "file_path": "documentation/Automator/amerror/conversionfailederror.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/conversionnodataerror.json": {
       "hash": "215de1792a94d02bde58fe1fa48af79eb86b3862d38ebf116f0447a57316994b",
-      "last_checked": "2026-02-24T07:31:59.852354",
+      "last_checked": "2026-02-27T07:40:55.492840",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"6f110eee1aafac9a8f525691d9788af0\"",
       "file_path": "documentation/Automator/amerror/conversionnodataerror.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/conversionnotpossibleerror.json": {
       "hash": "dddba0791ec0cd3f7d9e8bcc50dd47044486cf416d5ac2e445bb66d7bfb07003",
-      "last_checked": "2026-02-24T07:31:59.921399",
+      "last_checked": "2026-02-27T07:40:55.644513",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"14a8cfa832c7896586fbc70f7d16aa7d\"",
       "file_path": "documentation/Automator/amerror/conversionnotpossibleerror.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/workflowactionsnotloadederror.json": {
       "hash": "14e0896b875cebd2a57edfac6bb38f226ecc6486b34f1345d28f47818950f38a",
-      "last_checked": "2026-02-24T07:31:59.990383",
+      "last_checked": "2026-02-27T07:40:55.782138",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"847c6475c4fe07f3dcbea021b0dd1487\"",
       "file_path": "documentation/Automator/amerror/code/workflowactionsnotloadederror.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/workflowneweractionversionerror.json": {
       "hash": "3a2a975659779a2e008065490ece5fd2c31454969a777c3952392112367627f1",
-      "last_checked": "2026-02-24T07:32:00.063447",
+      "last_checked": "2026-02-27T07:40:55.928440",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"32936cdef1250fee40e69d26b77987dc\"",
       "file_path": "documentation/Automator/amerror/code/workflowneweractionversionerror.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/workflownewerversionerror.json": {
       "hash": "564f6e7b3a218663d4f4cc5bb4131f2be0b0ed54fb16018a971727e02e03b649",
-      "last_checked": "2026-02-24T07:32:00.175959",
+      "last_checked": "2026-02-27T07:40:56.058079",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"2e82a5ce074d444a8b9f23dcfd90a342\"",
       "file_path": "documentation/Automator/amerror/code/workflownewerversionerror.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/workflownoenabledactionserror.json": {
       "hash": "b9695d9ceb8c7dc03d74471e00fd3a7604ea07df6ccd6b0cc0e76797adfc3c38",
-      "last_checked": "2026-02-24T07:32:00.247472",
+      "last_checked": "2026-02-27T07:40:56.206900",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"8f3d9652da547ae89ce3d3c9bb4d1396\"",
       "file_path": "documentation/Automator/amerror/code/workflownoenabledactionserror.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/workflowolderactionversionerror.json": {
       "hash": "610c8e87cc297d2d9f55504dfd5b4efd472458cf7090709edfe67b0b26d6efc4",
-      "last_checked": "2026-02-24T07:32:00.319446",
+      "last_checked": "2026-02-27T07:40:56.337140",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"4adfcc9c1333869f7d1994f4aea3e2bf\"",
       "file_path": "documentation/Automator/amerror/code/workflowolderactionversionerror.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/workflowpropertylistinvaliderror.json": {
       "hash": "fa3227343eb701831fe12e4d0b421e06a724087e9256d6a3970ede5d84a8fada",
-      "last_checked": "2026-02-24T07:32:00.429996",
+      "last_checked": "2026-02-27T07:40:56.477299",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"a03d5d6db7370cd4d6ff6bd1d1d4dcea\"",
       "file_path": "documentation/Automator/amerror/code/workflowpropertylistinvaliderror.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/usercancelederror.json": {
       "hash": "6952e0b8d404977c36b7e165afcf8f39a934a83de2228f03311002099ccaf11c",
-      "last_checked": "2026-02-24T07:32:00.508381",
+      "last_checked": "2026-02-27T07:40:56.619904",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"72ae41bbd72867cc18aade38b002535a\"",
       "file_path": "documentation/Automator/amerror/code/usercancelederror.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionapplicationresourceerror.json": {
       "hash": "d9bbea39c521d7bb74fb8102b765856bd87f3e10d80386dabea15d5dc5e3d796",
-      "last_checked": "2026-02-24T07:32:00.572685",
+      "last_checked": "2026-02-27T07:40:56.765973",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"9982198281061919c37a23466e085449\"",
       "file_path": "documentation/Automator/amerror/code/actionapplicationresourceerror.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionapplicationversionresourceerror.json": {
       "hash": "0383a56b40f9bd4425e6266f13a9153ec083c678200b716080e2ad59d80dbf4c",
-      "last_checked": "2026-02-24T07:32:00.643427",
+      "last_checked": "2026-02-27T07:40:56.936823",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"38bed56bdb56a09778382db32c9449ce\"",
       "file_path": "documentation/Automator/amerror/code/actionapplicationversionresourceerror.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionarchitecturemismatcherror.json": {
       "hash": "1d9bc99e91cd5d6d17bf44d7db07ef0ad5333b20f29da48cf610957d9e78551c",
-      "last_checked": "2026-02-24T07:32:00.740713",
+      "last_checked": "2026-02-27T07:40:57.074818",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"6403b888bcec34282a96fd24299ec6ba\"",
       "file_path": "documentation/Automator/amerror/code/actionarchitecturemismatcherror.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionexceptionerror.json": {
       "hash": "ed9b432730c341c6a0d3c7ee2880360972874518ac3ba58e6b2dc74a49283105",
-      "last_checked": "2026-02-24T07:32:00.807077",
+      "last_checked": "2026-02-27T07:40:57.216779",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"acad77f76ba55d4403741af4c7477eea\"",
       "file_path": "documentation/Automator/amerror/code/actionexceptionerror.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionexecutionerror.json": {
       "hash": "7f3ae625b743a42d918ff12d71cc04ae1b01800c0aa2b49286b556260f8695a5",
-      "last_checked": "2026-02-24T07:32:00.881462",
+      "last_checked": "2026-02-27T07:40:57.370322",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b03c18567696a0e196d509b6418b1019\"",
       "file_path": "documentation/Automator/amerror/code/actionexecutionerror.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionfailedgatekeepererror.json": {
       "hash": "e044d20b1ef42f40c32ff98f895d038be5c90b50682262dfd13061ef3c186c2c",
-      "last_checked": "2026-02-24T07:32:00.952846",
+      "last_checked": "2026-02-27T07:40:57.508030",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"f2acd64655f4e22db845a04085fa2163\"",
       "file_path": "documentation/Automator/amerror/code/actionfailedgatekeepererror.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionfileresourceerror.json": {
       "hash": "bebc39a203347ca3c4a747f0b6ebb013ea49c6dee1a19429d1fbb3773d34a60c",
-      "last_checked": "2026-02-24T07:32:01.016593",
+      "last_checked": "2026-02-27T07:40:57.653097",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"7ed054946a0156a2f04f6bc6a48369e5\"",
       "file_path": "documentation/Automator/amerror/code/actionfileresourceerror.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actioninitializationerror.json": {
       "hash": "3bc3bcf766c6ec097ed1f3dcd60fbcc8e2a16b358e0ef0308022c229d8a1cd64",
-      "last_checked": "2026-02-24T07:32:01.098976",
+      "last_checked": "2026-02-27T07:40:57.792786",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"734125b72cd11d981b93633017bdc3cb\"",
       "file_path": "documentation/Automator/amerror/code/actioninitializationerror.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actioninsufficientdataerror.json": {
       "hash": "357a9de27bfc687500fd04dc1226251e296435a72ff69c044ea0c4a7b75773ef",
-      "last_checked": "2026-02-24T07:32:01.165122",
+      "last_checked": "2026-02-27T07:40:57.931556",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"aeb9f53e970605349163e47b2717927f\"",
       "file_path": "documentation/Automator/amerror/code/actioninsufficientdataerror.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionisdeprecatederror.json": {
       "hash": "ffc4af423d62ebbd92d4eaf77220174639772867fab65c3c9b29dcdc48dd5b3f",
-      "last_checked": "2026-02-24T07:32:01.232881",
+      "last_checked": "2026-02-27T07:40:58.080538",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"731c2cc5fd36dd4579d52429d481c361\"",
       "file_path": "documentation/Automator/amerror/code/actionisdeprecatederror.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionlicenseresourceerror.json": {
       "hash": "3273c5ab096fcc3b25f4d6ad5e2822af1be3ff76eb79caccb1f24d1e887f9a03",
-      "last_checked": "2026-02-24T07:32:01.373433",
+      "last_checked": "2026-02-27T07:40:58.258455",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"ec6a732dd640e8ee1b95c2d458c10037\"",
       "file_path": "documentation/Automator/amerror/code/actionlicenseresourceerror.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionlinkerror.json": {
       "hash": "8b220e9acb58aec8621ab5c2e0a063603d790fd1b6f443f961ffc2c2a6e05293",
-      "last_checked": "2026-02-24T07:32:01.443823",
+      "last_checked": "2026-02-27T07:40:58.384929",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cc2a3618230129c2f2f07a4845f0e66f\"",
       "file_path": "documentation/Automator/amerror/code/actionlinkerror.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionloaderror.json": {
       "hash": "be0cb97570de5ebfa9580059e21e78dd4d63262deefc79300175df8419e5bf52",
-      "last_checked": "2026-02-24T07:32:01.510002",
+      "last_checked": "2026-02-27T07:40:58.523996",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"0519e9f48f37738edccae41fbcdb88df\"",
       "file_path": "documentation/Automator/amerror/code/actionloaderror.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionmalwareerror.json": {
       "hash": "b507261044a78021dca07f83d50e0f08ec241c3a44d3445dabe0e7550d918846",
-      "last_checked": "2026-02-24T07:32:01.592542",
+      "last_checked": "2026-02-27T07:40:58.688814",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1238a8fe99bd1e57253ea80fce80df6a\"",
       "file_path": "documentation/Automator/amerror/code/actionmalwareerror.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionnotloadableerror.json": {
       "hash": "a3f6a3fd2c828bf376cd3de531a778d1afa72d580c5aea5d8d90d498c94186fe",
-      "last_checked": "2026-02-24T07:32:01.672926",
+      "last_checked": "2026-02-27T07:40:58.821111",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"880bdec9e0a780d54a320e58ebb8f3aa\"",
       "file_path": "documentation/Automator/amerror/code/actionnotloadableerror.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionpropertylistinvaliderror.json": {
       "hash": "21f20b0ff5ebe6ad8b82b342a2f0f6914dd484949d49222f1db8e7e65f0a8219",
-      "last_checked": "2026-02-24T07:32:01.751058",
+      "last_checked": "2026-02-27T07:40:59.013300",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"dc800f7f7ecd0f7f5375d6c8c2b294b9\"",
       "file_path": "documentation/Automator/amerror/code/actionpropertylistinvaliderror.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionquarantineerror.json": {
       "hash": "b98abde4130417e3a69c86710ecb0b512284cfae19eb66e48973df6afea4e518",
-      "last_checked": "2026-02-24T07:32:01.823847",
+      "last_checked": "2026-02-27T07:40:59.155947",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b0375c133a15ac6eb1102f7a3039f141\"",
       "file_path": "documentation/Automator/amerror/code/actionquarantineerror.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionrequiredactionresourceerror.json": {
       "hash": "e7e8cec3f6eb30d6038a57fdc4ddc618077847181c78f0822d33a7c067ffc35a",
-      "last_checked": "2026-02-24T07:32:01.889319",
+      "last_checked": "2026-02-27T07:40:59.304205",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"2c98cd5a63501bd8501de06ce82610fc\"",
       "file_path": "documentation/Automator/amerror/code/actionrequiredactionresourceerror.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionruntimemismatcherror.json": {
       "hash": "6d20fd0468b679acee29a88b17532468a553d8106a870b5d72dc6233bcd83e47",
-      "last_checked": "2026-02-24T07:32:01.987475",
+      "last_checked": "2026-02-27T07:40:59.430956",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"374d62953d45f1139b2aa5bf5f0fa308\"",
       "file_path": "documentation/Automator/amerror/code/actionruntimemismatcherror.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionsignaturecorrupterror.json": {
       "hash": "2f6495d1154ec5f3193588de75e6fc1af1df02abd701ac6b9abb51b234d6921f",
-      "last_checked": "2026-02-24T07:32:02.060535",
+      "last_checked": "2026-02-27T07:40:59.571466",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"b46eeaeecb74f76779841f89e643ea3e\"",
       "file_path": "documentation/Automator/amerror/code/actionsignaturecorrupterror.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionthirdpartyactionsnotallowederror.json": {
       "hash": "8b3a16eed5b64c38e3a7ee18c29a6514280408e10db0775cd77ea52a199d4774",
-      "last_checked": "2026-02-24T07:32:02.131995",
+      "last_checked": "2026-02-27T07:40:59.714707",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"92814a62f6e8623c47c68baea80bfd73\"",
       "file_path": "documentation/Automator/amerror/code/actionthirdpartyactionsnotallowederror.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionxpcerror.json": {
       "hash": "107cc453cd96165e09907752cc2c110c6c249a90810f4e20862476ed67ffa352",
-      "last_checked": "2026-02-24T07:32:02.204374",
+      "last_checked": "2026-02-27T07:40:59.854338",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"cb3978f26bd682963b26caaddb289fc9\"",
       "file_path": "documentation/Automator/amerror/code/actionxpcerror.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/actionxprotecterror.json": {
       "hash": "0a763336b6803d745d9cdfd4a8e9e347a794d6c10d48807ca4dde3cfc8759af2",
-      "last_checked": "2026-02-24T07:32:02.269390",
+      "last_checked": "2026-02-27T07:40:59.995747",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1930f1cde28c8113ba9b8863afde8f80\"",
       "file_path": "documentation/Automator/amerror/code/actionxprotecterror.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/nosuchactionerror.json": {
       "hash": "f1a30e54447519ac22e20a4b08654689ea2d8ff945c6b387f5de15d7b2a47f4c",
-      "last_checked": "2026-02-24T07:32:02.398958",
+      "last_checked": "2026-02-27T07:41:00.169912",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"5a5d31a7f46a5c70401039084453a30b\"",
       "file_path": "documentation/Automator/amerror/code/nosuchactionerror.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/conversionfailederror.json": {
       "hash": "9e3e0330091d2e4277c0986d020b8967c8de25f6c04ed034c065b37f2eceafa8",
-      "last_checked": "2026-02-24T07:32:02.521953",
+      "last_checked": "2026-02-27T07:41:00.313798",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"ea273ec6c0464e342f78011c0d910674\"",
       "file_path": "documentation/Automator/amerror/code/conversionfailederror.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/conversionnodataerror.json": {
       "hash": "67d345263afd11c57d5af35f36b3f588f6cf7c36ca4d71a757c3d2533cabe99e",
-      "last_checked": "2026-02-24T07:32:02.592276",
+      "last_checked": "2026-02-27T07:41:00.457531",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"1e521974b3f590497251645c76b08fff\"",
       "file_path": "documentation/Automator/amerror/code/conversionnodataerror.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/conversionnotpossibleerror.json": {
       "hash": "9c9b8639d5c109986a697a27016b33cd7530e14eeaed0262c38153d6158e41e8",
-      "last_checked": "2026-02-24T07:32:02.658001",
+      "last_checked": "2026-02-27T07:41:00.601420",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"5b0acfc40240af65b24696a321e733ab\"",
       "file_path": "documentation/Automator/amerror/code/conversionnotpossibleerror.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amerror/code/init(rawvalue:).json": {
       "hash": "a3071ae9894d1169c7719ebeac29f2eb0b647f16d572e48fa9b0669125664285",
-      "last_checked": "2026-02-24T07:32:02.727515",
+      "last_checked": "2026-02-27T07:41:00.744141",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"95465457f412d0753f64de112c3984dc\"",
       "file_path": "documentation/Automator/amerror/code/init-rawvalue.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amapplescriptaction/script.json": {
       "hash": "549c1b3f570bba82aee96bb16709d5600cc98961bdc4a7f95ae75c11b5bafa6c",
-      "last_checked": "2026-02-24T07:32:02.790453",
+      "last_checked": "2026-02-27T07:41:00.892301",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"c6cf44253ff2b69c454eb81edea68fa8\"",
       "file_path": "documentation/Automator/amapplescriptaction/script.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amloglevel/debug.json": {
       "hash": "3c2780a7532b4c665f3cf76b21924bc2588d5f1027f5c04c4d2fa4aea67885c5",
-      "last_checked": "2026-02-24T07:32:02.859492",
+      "last_checked": "2026-02-27T07:41:01.041884",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"d57fe6319a3d03d63e773f69837fcac2\"",
       "file_path": "documentation/Automator/amloglevel/debug.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amloglevel/info.json": {
       "hash": "79f7f080bd27588504465260775a9e6ddd3e4e23e19c1d24c4998c3f6be8afcf",
-      "last_checked": "2026-02-24T07:32:02.923439",
+      "last_checked": "2026-02-27T07:41:01.175469",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"9cd549c38679c075a9220f5848ef0489\"",
       "file_path": "documentation/Automator/amloglevel/info.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amloglevel/warn.json": {
       "hash": "6f422154e5b4831fd6fe2a454487440bf7be1bcd4d99e6960fa98c37385f87cc",
-      "last_checked": "2026-02-24T07:32:02.989720",
+      "last_checked": "2026-02-27T07:41:01.324329",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"dd88fb293881c656f7c30a4e96c36d96\"",
       "file_path": "documentation/Automator/amloglevel/warn.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amloglevel/error.json": {
       "hash": "c2903a61ccf2de3bf3729b9ccde60f195a8d8da3629bb7404c427d18dbf82ab1",
-      "last_checked": "2026-02-24T07:32:03.064970",
+      "last_checked": "2026-02-27T07:41:01.476022",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"732fa46338e1da0d760f4a7d37dec9eb\"",
       "file_path": "documentation/Automator/amloglevel/error.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amloglevel/init(rawvalue:).json": {
       "hash": "6dffeec9cd489b187a634d2b17c407274f7771a4a265c884c46104d227da9dbf",
-      "last_checked": "2026-02-24T07:32:03.140287",
+      "last_checked": "2026-02-27T07:41:01.638517",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"56e762ea2035b485248275f83f691bee\"",
       "file_path": "documentation/Automator/amloglevel/init-rawvalue.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontroller(_:willrun:).json": {
       "hash": "1e88a437f2294409a8bebdbc8373d1bbf6568085a5e026eef3de51076cbb1d2c",
-      "last_checked": "2026-02-24T07:32:03.204153",
+      "last_checked": "2026-02-27T07:41:01.772821",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"9b00c28f10465a1e9ec897bae062aba4\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontroller-willrun.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontrollerwillrun(_:).json": {
       "hash": "bd60dfcbed78e51a898d4a2f125255bde4c9102ed2909476e84a6666b6450302",
-      "last_checked": "2026-02-24T07:32:03.273340",
+      "last_checked": "2026-02-27T07:41:01.916766",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"81192baa9084565ef9040e1c15b0ce46\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontrollerwillrun.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontroller(_:didrun:).json": {
       "hash": "22b5989b8083d0950ea103c37083faacfe622b857f1b912b7ceb933f1cb25988",
-      "last_checked": "2026-02-24T07:32:03.339711",
+      "last_checked": "2026-02-27T07:41:02.049206",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"89c0bfd479b847f1f346b1832c919396\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontroller-didrun.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontrollerdidrun(_:).json": {
       "hash": "eb1a5c3dc44f53efac0a9f6d013e361824c43001c8f879021838d5e0283a635d",
-      "last_checked": "2026-02-24T07:32:03.450602",
+      "last_checked": "2026-02-27T07:41:02.205005",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"daa7a1521b70896bfa195d7ceaa03be6\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontrollerdidrun.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontrollerwillstop(_:).json": {
       "hash": "d63a6170082df6c4cc9f576b5d3f0d3529bd43e90c07583d9d4ab2ca391248f9",
-      "last_checked": "2026-02-24T07:32:03.516712",
+      "last_checked": "2026-02-27T07:41:02.358665",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"012a2ab9f6e657b052b8aa2937009e92\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontrollerwillstop.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontrollerdidstop(_:).json": {
       "hash": "1f75d77f37c218854e6ef2dfbb5e0c0816e44af038bdee60e318d8dab954c170",
-      "last_checked": "2026-02-24T07:32:03.592393",
+      "last_checked": "2026-02-27T07:41:02.496420",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"132df072d24eaaf16e6ce0182a819f48\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontrollerdidstop.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/automator/amworkflowcontrollerdelegate/workflowcontroller(_:diderror:).json": {
       "hash": "33500eeef67b300aeb37aff2cc660ae32c9cf3bb73b0541bf2f514930cb8eb4a",
-      "last_checked": "2026-02-24T07:32:03.665432",
+      "last_checked": "2026-02-27T07:41:02.624083",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:31:50.503940",
+      "session_id": "2026-02-27T07:40:39.188222",
       "etag": "W/\"8a60ab5e52ab7bb55b0f39faf3fd38ad\"",
       "file_path": "documentation/Automator/amworkflowcontrollerdelegate/workflowcontroller-diderror.md"
     },

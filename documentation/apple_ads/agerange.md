@@ -28,6 +28,11 @@ Use this dimension to limit the age group to target your ad to.
 
 ```
 
+## Properties
+
+- `maxAge` (int32): The dimension for specifying the maximum age for targeting. This field may be `null`.
+- `minAge` (int32): The dimension for specifying the minimum age for targeting. The minimum value is `18`.
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

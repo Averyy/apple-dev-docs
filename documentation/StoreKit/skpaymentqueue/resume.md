@@ -25,7 +25,7 @@ func resume(_ downloads: [SKDownload])
 
 ## Parameters
 
-- `downloads`: An array of   objects to resume.
+- `downloads`: An array of [`SKDownload`](skdownload.md) objects to resume.
 
 ## See Also
 

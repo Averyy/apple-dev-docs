@@ -14,6 +14,12 @@ The response details of campaign requests.
 object CampaignListResponse
 ```
 
+## Properties
+
+- `data` ([Campaign]): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object Campaign](campaign.md)

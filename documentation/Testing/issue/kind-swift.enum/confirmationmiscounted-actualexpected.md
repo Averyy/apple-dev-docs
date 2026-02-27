@@ -28,8 +28,8 @@ This issue can occur when calling [`confirmation(_:expectedCount:isolation:sourc
 
 ## Parameters
 
-- `actual`: The number of times   was   actually called.
-- `expected`: The expected number of times    should have been called.
+- `actual`: The number of times [`confirm(count:)`](confirmation/confirm(count:).md) was actually called.
+- `expected`: The expected number of times [`confirm(count:)`](confirmation/confirm(count:).md) should have been called.
 
 
 ---

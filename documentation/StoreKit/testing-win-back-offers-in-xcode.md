@@ -23,6 +23,13 @@ Start by opening the StoreKit configuration editor in Xcode and defining at leas
 1. In the left pane, select the subscription under the Auto-Renewable Subscriptions heading.
 2. Under the Win-back Offers heading in the editor, click the Add button (+) to configure a new offer by filling out the offer details as follows, and then clicking Save.
 
+- **Reference name**: A name to identify the offer in the StoreKit configuration.
+- **Offer identifier**: An offer ID that’s unique within the subscription group.
+- **Offer type**: The payment mode of the offer. For more information, see [`Product.SubscriptionOffer.PaymentMode`](product/subscriptionoffer/paymentmode-swift.struct.md).
+- **Duration**: The total duration of the offer. The offer’s renewal period matches the subscription’s renewal period.
+- **Price**: The price, in the same currency as the subscription, for offers that aren’t free.
+- **Eligiblity**: Determines whether the system considers the customer eligible for the win-back offer in the test environment. Select Eligible or Not Eligible.
+
 > **Note**:  The eligibility criteria that determine whether a customer can redeem a win-back offer can have many rules and states. Rather than requiring you to construct all the conditions before you can test win-back offers in your app, the testing UI provides a simplified Eligible or Not Eligible setting that bypasses any other eligibility criteria. Set the value to Eligible to test your app’s response when a customer receives a win-back offer.
 
 ##### Run the Test

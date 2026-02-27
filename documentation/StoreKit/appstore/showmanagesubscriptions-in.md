@@ -44,7 +44,7 @@ Test the managing subscriptions functionality in the sandbox environment and Sto
 
 ## Parameters
 
-- `scene`: The   that the system displays the sheet on.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that the system displays the sheet on.
 
 ## See Also
 

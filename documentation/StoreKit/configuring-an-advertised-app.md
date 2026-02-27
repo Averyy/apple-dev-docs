@@ -6,7 +6,7 @@ Prepare an advertised app to participate in ad campaigns.
 
 #### Overview
 
-An  is an app a user installs after viewing an ad that an ad network signs. The advertised app doesn’t require any configuration to participate in install validation. However, to register ad attributions, the app needs to call one of the methods that update conversion values when the app first launches. Those methods are: [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md), [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:completionhandler:).md), and [`updatePostbackConversionValue(_:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:completionhandler:).md).
+An *advertised app* is an app a user installs after viewing an ad that an ad network signs. The advertised app doesn’t require any configuration to participate in install validation. However, to register ad attributions, the app needs to call one of the methods that update conversion values when the app first launches. Those methods are: [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md), [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:completionhandler:).md), and [`updatePostbackConversionValue(_:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:completionhandler:).md).
 
 Developers opt in to get copies of winning install-validation postbacks.
 
@@ -24,7 +24,7 @@ To add the key in your app’s `Info.plist` file:
 
 For more information about editing property lists, see [`Edit property lists`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev3f399a2a6).
 
-The system uses the registrable part of the domain name you provide in the key, and ignores any subdomains. Using your domain name, the system generates a  and sends postbacks to that URL. To receive postbacks, your domain needs to have a valid SSL certificate. Configure your server to accept HTTPS POST messages at the following well-known path:
+The system uses the registrable part of the domain name you provide in the key, and ignores any subdomains. Using your domain name, the system generates a *well-known path* and sends postbacks to that URL. To receive postbacks, your domain needs to have a valid SSL certificate. Configure your server to accept HTTPS POST messages at the following well-known path:
 
 `https://example.com/.well-known/skadnetwork/report-attribution/`
 

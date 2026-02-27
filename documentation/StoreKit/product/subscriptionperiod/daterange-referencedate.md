@@ -37,7 +37,7 @@ Get the format style ([`Date.ComponentsFormatStyle`](https://developer.apple.com
 
 ## Parameters
 
-- `referenceDate`: A date you provide that indicates the lower bound of the returned date range. The default value is  .
+- `referenceDate`: A date you provide that indicates the lower bound of the returned date range. The default value is [`now`](https://developer.apple.com/documentation/Foundation/Date/now).
 
 
 ---

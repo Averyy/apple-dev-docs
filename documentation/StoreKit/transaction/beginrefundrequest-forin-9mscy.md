@@ -43,7 +43,7 @@ The sandbox environment and StoreKit Testing in Xcode both support testing refun
 ## Parameters
 
 - `transactionID`: The identifier of the transaction the user is requesting a refund for.
-- `controller`: The   that the system displays the sheet on.
+- `controller`: The [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) that the system displays the sheet on.
 
 ## See Also
 

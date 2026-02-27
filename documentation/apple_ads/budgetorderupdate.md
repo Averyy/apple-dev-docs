@@ -20,6 +20,11 @@ object BudgetOrderUpdate
 - [object BudgetOrderUpdate.Bo](budgetorderupdate/bo-data.dictionary.md)
   The response to a  request to update a budget order.
 
+## Properties
+
+- `bo` (BudgetOrderUpdate.Bo): The details of the budget order.
+- `orgIds` ([int64]): The identifier of the organization that owns the campaign. Currently, only one `orgId` is supported in budget orders.
+
 ## See Also
 
 - [object BudgetOrder](budgetorder.md)
@@ -33,7 +38,7 @@ object BudgetOrderUpdate
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for a monthly invoicing payment model.
+  The response to a request to fetch details for  `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

@@ -14,6 +14,10 @@ Reasons why a campaign can’t run.
 object Campaign.CountryOrRegionServingStateReasons
 ```
 
+## Properties
+
+- `Any Key` ([string]): A map of reasons that returns when a campaign can’t run for a specified country or region.
+
 ## See Also
 
 - [object Campaign](campaign.md)

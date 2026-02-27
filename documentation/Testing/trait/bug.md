@@ -34,7 +34,7 @@ An instance of [`Bug`](bug.md) that represents the specified bug.
 
 ## Parameters
 
-- `url`: A URL that refers to this bug in the associated bug-tracking   system.
+- `url`: A URL that refers to this bug in the associated bug-tracking system.
 - `title`: Optionally, the human-readable title of the bug.
 
 ## See Also

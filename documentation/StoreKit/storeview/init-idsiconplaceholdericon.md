@@ -31,7 +31,7 @@ If a product is unavailable, the store view uses the view that the `placeholderI
 ## Parameters
 
 - `productIDs`: The product identifiers to load from the App Store.
-- `icon`: A closure that receives a   and a   as input. The   indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
+- `icon`: A closure that receives a [`Product`](product.md) and a [`ProductIconPhase`](producticonphase.md) as input. The [`ProductIconPhase`](producticonphase.md) indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
 - `placeholderIcon`: A closure that returns the view that the store view uses while the products are loading. The store view uses the same placeholder image for all the products.
 
 ## See Also

@@ -22,7 +22,7 @@ You don’t need to call the initializer to use coarse conversion values. When y
 
 ## Parameters
 
-- `rawValue`: A string that is one of   ,  , or  .
+- `rawValue`: A string that is one of  [`low`](skadnetwork/coarseconversionvalue/low.md), [`medium`](skadnetwork/coarseconversionvalue/medium.md), or [`high`](skadnetwork/coarseconversionvalue/high.md).
 
 ## See Also
 

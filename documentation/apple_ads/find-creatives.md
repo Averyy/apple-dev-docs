@@ -16,6 +16,67 @@ Values are case-sensitive strings. The `orderBy` selector supports the `Id` and 
 
 ##### Payload Example Find Creatives
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/creatives/find
+
+{
+  "conditions": [
+    {
+      "field": "name",
+      "operator": "CONTAINS",
+      "values": [
+        "Trip"
+      ]
+    }
+  ]
+}
+
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "id": 573408745,
+      "orgId": 39872140,
+      "adamId": 899247664,
+      "name": "Trip Trek custom product page variation 1",
+      "type": "CUSTOM_PRODUCT_PAGE",
+      "state": "VALID",
+      "stateReasons": [],
+      "creationTime": "2024-10-09T20:07:19.506Z",
+      "modificationTime": "2024-10-18T20:07:19.506Z",
+      "productPageId": "76659d7a-d146-43d3-b6b8-b7a12f74bf6b"
+    },
+    {
+      "id": 75606108,
+      "orgId": 39879640,
+      "adamId": 1004806037,
+      "name": "Trip Trek Creative Set variation 2",
+      "type": "CREATIVE_SET",
+      "state": "INVALID",
+      "stateReasons": [],
+      "creationTime": "2024-03-04T02:44:14.775",
+      "modificationTime": "2024-08-17T01:16:37.827",
+      "languageCode": "en_US"
+    }
+  ],
+  “pagination”: {
+    “totalResults”: 2,
+    “startIndex”: 1,
+    “itemsPerPage”: 10
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/creatives/find`
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

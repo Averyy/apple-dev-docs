@@ -14,6 +14,96 @@ Use this endpoint to find campaign negative keywords. Use the associated `campai
 
 ##### Payload Example Find Campaign Negative Keywords
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/find
+
+{  
+  "pagination": {
+    "offset": 0,
+    "limit": 100
+  },
+  "orderBy": [
+    {
+      "field": "id",
+      "sortOrder": "ASCENDING"
+    }
+  ],
+  "conditions": [
+    {
+      "field": "deleted",
+      "operator": "EQUALS",
+      "values": [
+        "false"
+      ]
+    }
+  ]
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "id": 542370642,
+      "campaignId": 542370539,
+      "adGroupId": 542317095,
+      "text": "Find campaign negative keywords example 1",
+      "status": "ACTIVE",
+      "matchType": "BROAD",
+      "modificationTime": "2023-04-08T17:48:31.979",
+      "deleted": false
+    },
+    {
+      "id": 542370643,
+      "campaignId": 542370539,
+      "adGroupId": 542317095,
+      "text": "Find campaign negative keywords example 2",
+      "status": "ACTIVE",
+      "matchType": "EXACT",
+      "modificationTime": "2023-04-08T17:48:31.984",
+      "deleted": false
+    },
+    {
+      "id": 542370644,
+      "campaignId": 542370539,
+      "adGroupId": 542317095,
+      "text": "Find campaign negative keywords example 3",
+      "status": "ACTIVE",
+      "matchType": "EXACT",
+      "modificationTime": "2023-04-08T20:52:59.050",
+      "deleted": false
+    },
+    {
+      "id": 542370645,
+      "campaignId": 542370539,
+      "adGroupId": 542317095,
+      "text": "Find campaign negative keywords example 4",
+      "status": "ACTIVE",
+      "matchType": "BROAD",
+      "modificationTime": "2023-04-08T20:52:59.054",
+      "deleted": false
+    }
+  ],
+  "pagination": {
+    "totalResults": 4,
+    "startIndex": 1,
+    "itemsPerPage": 10
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/find`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

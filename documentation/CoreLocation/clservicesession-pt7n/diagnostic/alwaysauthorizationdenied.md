@@ -17,6 +17,16 @@
 var alwaysAuthorizationDenied: Bool { get }
 ```
 
+## See Also
+
+- [var authorizationDenied: Bool](clservicesession-pt7n/diagnostic/authorizationdenied.md)
+- [var authorizationDeniedGlobally: Bool](clservicesession-pt7n/diagnostic/authorizationdeniedglobally.md)
+- [var authorizationRequestInProgress: Bool](clservicesession-pt7n/diagnostic/authorizationrequestinprogress.md)
+- [var authorizationRestricted: Bool](clservicesession-pt7n/diagnostic/authorizationrestricted.md)
+- [var fullAccuracyDenied: Bool](clservicesession-pt7n/diagnostic/fullaccuracydenied.md)
+- [var insufficientlyInUse: Bool](clservicesession-pt7n/diagnostic/insufficientlyinuse.md)
+- [var serviceSessionRequired: Bool](clservicesession-pt7n/diagnostic/servicesessionrequired.md)
+
 
 ---
 

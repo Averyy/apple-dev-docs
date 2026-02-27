@@ -29,9 +29,9 @@ You can prefix the expression you pass to `zippedCollections` with `try` or `awa
 
 ## Parameters
 
-- `displayName`: The customized display name of this test. If the value of   this argument is  , the display name of the test is derived from the   associated function’s name.
+- `displayName`: The customized display name of this test. If the value of this argument is `nil`, the display name of the test is derived from the associated function’s name.
 - `traits`: Zero or more traits to apply to this test.
-- `zippedCollections`: Two zipped collections of values to pass to   .
+- `zippedCollections`: Two zipped collections of values to pass to `testFunction`.
 
 ## See Also
 

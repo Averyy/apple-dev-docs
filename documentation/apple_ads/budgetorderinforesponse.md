@@ -14,6 +14,12 @@ A container for the budget order response body.
 object BudgetOrderInfoResponse
 ```
 
+## Properties
+
+- `data` (BudgetOrderInfo): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object BudgetOrder](budgetorder.md)
@@ -27,7 +33,7 @@ object BudgetOrderInfoResponse
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for a monthly invoicing payment model.
+  The response to a request to fetch details for  `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

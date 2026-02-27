@@ -31,7 +31,7 @@ For information about purchases made using Ask to Buy, see [`Approve what kids b
 
 ## Parameters
 
-- `simulateAskToBuy`: Set to   to simulate a child’s account asking permission to make a purchase.
+- `simulateAskToBuy`: Set to `true` to simulate a child’s account asking permission to make a purchase.
 
 
 ---

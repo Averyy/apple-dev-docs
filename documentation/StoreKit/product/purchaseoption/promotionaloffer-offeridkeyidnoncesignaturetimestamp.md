@@ -31,7 +31,7 @@ You can offer a discounted or free period of service for auto-renewable subscrip
 
 ## Parameters
 
-- `offerID`: The subscription-offer identifier,  .
+- `offerID`: The subscription-offer identifier, [`id`](product/subscriptionoffer/id.md).
 - `keyID`: The key ID of the subscription key.
 - `nonce`: The antireplay value used in the signature. Use lowercase.
 - `signature`: The cryptographic signature of the offer parameters, which you generate on your server.

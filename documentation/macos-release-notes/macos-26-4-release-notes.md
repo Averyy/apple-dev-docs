@@ -44,6 +44,12 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 - HFS external media might fail to mount automatically.  (168672160) **Workaround:** For macOS only, use CLI tool `diskutil mount` to attach the relevant disk device.
 
+##### Installation
+
+###### Known Issues
+
+- Install macOS Tahoe Beta.app does not work on versions of macOS prior to 15.0.  (170997618) **Workaround:** Update to macOS 15.0 or later before running Install macOS Tahoe Beta.app, or use software update instead.
+
 ##### Internet Accounts
 
 ###### Known Issues

@@ -20,6 +20,12 @@ object VoidResponse
 - [object VoidResponse.Data](voidresponse/data-data.dictionary.md)
   A default generic null response that triggers when no data returns.
 
+## Properties
+
+- `data` (VoidResponse.Data): Response data that the API provides.
+- `error` (ErrorResponseBody)
+- `pagination` (PageDetail)
+
 ## See Also
 
 - [object ApiErrorResponse](apierrorresponse.md)

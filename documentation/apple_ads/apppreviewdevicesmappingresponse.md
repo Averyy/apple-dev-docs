@@ -20,6 +20,10 @@ object AppPreviewDevicesMappingResponse
 - [object AppPreviewDevicesMappingResponse.Data](apppreviewdevicesmappingresponse/data-data.dictionary.md)
   The app preview device mapping to display name and size mapping.
 
+## Properties
+
+- `data` (AppPreviewDevicesMappingResponse.Data): Response data that the API provides.
+
 ## See Also
 
 - [object Creative](creative.md)

@@ -33,7 +33,7 @@ If the expectation passes, the instance of `E` that was thrown by `expression` a
 
 #### Overview
 
-Use this overload of `#expect()` when the expression `expression`  throw a specific error:
+Use this overload of `#expect()` when the expression `expression` *should* throw a specific error:
 
 ```swift
 #expect(throws: EngineFailureError.batteryDied) {
@@ -52,7 +52,7 @@ If the thrown error need only be an instance of a particular type, use [`expect(
 
 - `error`: The error that is expected to be thrown.
 - `comment`: A comment describing the expectation.
-- `sourceLocation`: The source location to which recorded expectations and   issues should be attributed.
+- `sourceLocation`: The source location to which recorded expectations and issues should be attributed.
 - `expression`: The expression to be evaluated.
 
 ## See Also

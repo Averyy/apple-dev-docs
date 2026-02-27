@@ -28,9 +28,9 @@ Issues recorded by this method are associated with `test`.
 
 ## Parameters
 
-- `test`: The test which   encapsulates.
-- `testCase`: The test case, if any, which   encapsulates.   When invoked on a suite, the value of this argument is  .
-- `function`: The function to perform. If   represents a test suite,   this function encapsulates running all the tests in that suite. If    represents a test function, this function is the body of that   test function (including all cases if the test function is   parameterized.)
+- `test`: The test which `function` encapsulates.
+- `testCase`: The test case, if any, which `function` encapsulates. When invoked on a suite, the value of this argument is `nil`.
+- `function`: The function to perform. If `test` represents a test suite, this function encapsulates running all the tests in that suite. If `test` represents a test function, this function is the body of that test function (including all cases if the test function is parameterized.)
 
 
 ---

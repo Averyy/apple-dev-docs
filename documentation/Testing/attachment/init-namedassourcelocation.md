@@ -22,9 +22,9 @@ The testing library uses the image format specified by `imageFormat`. Pass `nil`
 ## Parameters
 
 - `image`: The value that will be attached to the output of the test run.
-- `preferredName`: The preferred name of the attachment when writing it   to a test report or to disk. If  , the testing library attempts   to derive a reasonable filename for the attached value.
-- `imageFormat`: The image format with which to encode  .
-- `sourceLocation`: The source location of the call to this initializer.   This value is used when recording issues associated with the   attachment.
+- `preferredName`: The preferred name of the attachment when writing it to a test report or to disk. If `nil`, the testing library attempts to derive a reasonable filename for the attached value.
+- `imageFormat`: The image format with which to encode `image`.
+- `sourceLocation`: The source location of the call to this initializer. This value is used when recording issues associated with the attachment.
 
 ## See Also
 

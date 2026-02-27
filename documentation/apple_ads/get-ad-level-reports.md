@@ -23,6 +23,111 @@ You can map your campaign installations by `adId` through the [`AdServices`](htt
 
 ##### Payload Example Get Ad Level Reports
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/ads
+
+{
+  "startTime": "2025-10-07",
+  "endTime": "2025-10-09",
+  "selector": {
+  "orderBy": [
+      {
+        "field": "creativeType",
+        "sortOrder": "ASCENDING"
+      }
+    ],
+    "conditions": [
+      {
+        "field": "adId",
+        "operator": "EQUALS",
+        "values": [
+          "573408745"
+        ]
+      }
+    ],
+    "pagination": {
+      "offset": 0,
+      "limit": 1000
+    }
+  },
+  "timeZone": "UTC",
+  "returnRecordsWithNoMetrics": false,
+  "returnRowTotals": true,
+  "returnGrandTotals": true
+}
+```
+
+**Response**:
+
+```json
+{
+    "row": [
+      {
+        "other": false,
+        "total": {
+          "impressions": 41,
+          "taps": 1,
+          "totalInstalls": 1,
+          "totalNewDownloads": 2,
+          "totalRedownloads": 1,
+          "viewInstalls": 1,
+          "tapInstalls": 5,
+          "tapNewDownloads": 2,
+          "tapRedownloads": 3,
+          "viewNewDownloads": 6,
+          "viewReDownloads": 4,
+          "tapPreOrdersPlaced": 1,
+          "viewPreOrdersPlaced": 0,
+          "totalPreOrdersPlaced": 0,
+          "totalInstallRate": 2.962 
+          "ttr": 0.0244,
+          "tapInstallCPI": {
+            "amount": "0",
+            "currency": "USD"
+            },
+          "avgCPT": {
+            "amount": "0.88",
+            "currency": "USD"
+            },
+          "localSpend": {
+            "amount": "0.88",
+            "currency": "USD"
+            },
+          "tapInstallRate": 0.873,
+          "date": "2025-08-10"
+        },
+        "metadata": {
+          "orgId": 39872140,
+          "campaignId": 570798765,
+          "adGroupId": 427916203,
+          "adId": 573408745,
+          "productPageId": 45812c9b-c296-43d3-c6a0-c5a02f74bf6e,
+          "language": "English",
+          "creativeId": 94895512,
+          "adName": "Trip Trek custom product page variation 1",
+          "creativeType": "CUSTOM_PRODUCT_PAGE",
+          "status": "VALID",
+          "displayStatus": "ACTIVE",
+          "adServingStateReasons": null,
+          "deleted": false,
+          "creationTime": "2025-10-08T06:48:22.812Z",
+          "modificationTime": "2025-08-09T06:48:22.812Z"
+        }
+      }
+    ]
+  }
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/ads`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The report request body consisting of metrics and dimensions to use as filters.

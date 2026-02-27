@@ -32,7 +32,7 @@ The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) is the 
 
 To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) on your server, consider using the App Store Server Library function `verifyAndDecodeTransaction`, available in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
 
-> ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) fields that are specified in  of the currency;  StoreKit represents the `price`  in  of currency. Take care not to confuse these two representations when working with both APIs.
+> ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) fields that are specified in *milliunits* of the currency;  StoreKit represents the `price`  in *units* of currency. Take care not to confuse these two representations when working with both APIs.
 
 ## See Also
 

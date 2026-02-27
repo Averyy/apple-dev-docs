@@ -14,6 +14,10 @@ The container object of report metrics.
 object ReportingResponse
 ```
 
+## Properties
+
+- `reportingDataResponse` (ReportingDataResponse): A container for reporting responses. See [`ReportingDataResponse`](reportingdataresponse.md).
+
 ## See Also
 
 - [object ReportingRequest](reportingrequest.md)

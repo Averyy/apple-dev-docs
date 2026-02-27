@@ -28,7 +28,7 @@ An instance of [`ConditionTrait`](conditiontrait.md) that evaluates the closure 
 
 ## Parameters
 
-- `condition`: A closure that contains the trait’s custom condition logic.   If this closure returns  , the trait allows the test to run.   Otherwise, the testing library skips the test.
+- `condition`: A closure that contains the trait’s custom condition logic. If this closure returns `false`, the trait allows the test to run. Otherwise, the testing library skips the test.
 - `comment`: An optional comment that describes this trait.
 - `sourceLocation`: The source location of the trait.
 

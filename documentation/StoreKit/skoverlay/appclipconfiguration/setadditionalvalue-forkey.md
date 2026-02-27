@@ -23,7 +23,7 @@ Set additional values to verify and associate an app installation with an ad cam
 
 ## Parameters
 
-- `value`: The value to associate with the  .
+- `value`: The value to associate with the `key`.
 - `key`: The string that identifies an additional value.
 
 ## See Also

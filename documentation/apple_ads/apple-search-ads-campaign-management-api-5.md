@@ -8,6 +8,17 @@ Learn about changes to Apple Ads Campaign Management API 5.
 
 API 5 is the current version.
 
+##### 55
+
+Released in February, 2026
+
+Introduces Maximize Conversions, a new automated bid strategy that optimizes for the highest conversion volume at your target cost-per-acquisition (CPA). The Maximize Conversions bid strategy in a campaign uses an automated ad group with Search Match to automatically discover and bid on relevant keywords.
+
+- To create a Maximize Conversions bid strategy campaign, see the payload example in [`Create a Campaign`](create-a-campaign.md).
+- For details on automated ad groups, see [`Ad Groups`](ad-groups.md). To create an automated ad group, see the payload example in [`Create an Ad Group`](create-an-ad-group.md).
+- To switch between manual (default) and Maximize Conversions bid strategies, see the payload examples in  [`Update a Campaign`](update-a-campaign.md).
+- For reports with a Maximize Conversions bidding strategy, see [`Get Campaign-Level Reports`](get-campaign-level-reports.md) and [`Get Ad Group-Level Reports`](get-ad-group-level-reports.md).
+
 ##### 54
 
 Released in December, 2025

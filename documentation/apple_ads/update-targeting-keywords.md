@@ -14,6 +14,71 @@ To update targeting keywords, use the associated `campaignId` and `adgroupId` in
 
 ##### Payload Example Update Ad Group Targeting Keywords
 
+When updating keywords in a campaign with a Maximize Conversions bidding strategy, `bidAmount` cannot be changed to a non-zero/non-null value.
+
+**Request**:
+
+```http
+PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/bulk
+
+[  
+  {
+    "id": "542370642",
+    "status": "PAUSED",
+    "bidAmount": {
+      "amount”: "100",
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "542370643",
+    "status": "PAUSED",
+    "bidAmount": {
+      "amount": "100",
+      "currency": "USD"
+    }
+  }
+]
+```
+
+**Response**:
+
+```json
+[
+  {
+    "id": 542370642,
+    "adGroupId": 427916203,
+    "text": "targeting keyword example 1",
+    "status": "PAUSED",
+    "matchType": "BROAD",
+    "bidAmount": {
+      "amount": "100",
+      "currency": "USD"
+    },
+    "modificationTime": "2025-04-08T21:02:24.257",
+    "deleted": false
+  },
+  {
+    "id": 542370643,
+    "adGroupId": 427916203,
+    "text": "targeting keyword example 2",
+    "status": "PAUSED",
+    "matchType": "EXACT",
+    "modificationTime": "2025-04-08T21:02:24.267",
+    "deleted": false
+  }
+]
+```
+
+## Endpoint
+
+`PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/bulk`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes keyword targeting details.

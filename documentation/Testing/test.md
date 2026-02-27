@@ -26,7 +26,7 @@ struct Test
 
 An instance of this type may represent:
 
-- A type containing zero or more tests (i.e. a );
+- A type containing zero or more tests (i.e. a *test suite*);
 - An individual test function (possibly contained within a type); or
 - A test function parameterized over one or more sequences of inputs.
 

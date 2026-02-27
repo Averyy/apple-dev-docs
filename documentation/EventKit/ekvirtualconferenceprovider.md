@@ -66,6 +66,8 @@ EventKit calls [`fetchVirtualConference(identifier:completionHandler:)`](ekvirtu
 
 ## See Also
 
+- [Implementing a virtual conference extension](implementing-a-virtual-conference-extension.md)
+  Support adding a virtual conference room to an event in Calendar.
 - [class EKVirtualConferenceDescriptor](ekvirtualconferencedescriptor.md)
   Details about a virtual conference that uses a custom room type.
 - [class EKVirtualConferenceRoomTypeDescriptor](ekvirtualconferenceroomtypedescriptor.md)

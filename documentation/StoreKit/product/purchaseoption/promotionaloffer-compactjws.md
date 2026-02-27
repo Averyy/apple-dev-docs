@@ -22,7 +22,7 @@ static func promotionalOffer(_ offerID: String, compactJWS: String) -> [Product.
 
 ## Parameters
 
-- `offerID`: The   property of the   to apply.
+- `offerID`: The `id` property of the `SubscriptionOffer` to apply.
 - `compactJWS`: The JWS signature used to validate a promotional offer.
 
 

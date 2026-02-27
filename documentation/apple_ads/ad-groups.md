@@ -12,7 +12,7 @@ An ad group is a collection of criteria that defines who sees your ad in App Sto
 
 When building a campaign promotion strategy, you define keywords relevant to your app and bid on them. Relevant keywords increase the viability of your app to rank high in user searches. You can either automate your keyword and bid strategy by using the Search Match feature, or use your own keywords and bid strategy.
 
-The Search Match feature is an algorithm that uses multiple resources to match your ad to relevant searches in the App Store. The resources include metadata from your App Store product page, information about similar apps in the same genre, and other available search data. Search Match is a good option if you don’t want to figure out all keyword possibilities and actively bid on them.
+The Search Match feature is an algorithm that uses multiple resources to match your ad to relevant searches in the App Store. The resources include metadata from your App Store product page, information about similar apps in the same genre, and other available search data. Search Match is a good option if you don’t want to figure out all keyword possibilities and actively bid on them.
 
 ![Keyword app search example](https://docs-assets.developer.apple.com/published/fa3e1fc5987e946aefdab9346c4cf657/media-3341277%402x.png)
 
@@ -30,6 +30,18 @@ If you’re using your own keywords and bid strategy, disable Search Match using
 3. Use the `bidAmount` field in `Create Targeting Keywords` and `Update Targeting Keywords` endpoints to set a threshold price for a keyword in a bidding auction.
 
 > ❗ **Important**:  If you don’t provide a `bidAmount`, the `bidAmount` uses the `defaultBidamount` of the corresponding ad group.
+
+##### Automated Ad Groups
+
+The Maximize Conversions bid strategy uses an automated ad group with Search Match to automatically optimize bids for each search query. This eliminates the need to manually set and monitor individual keyword bids, while prioritizing keywords most likely to drive conversions.
+
+To create a campaign with a Maximize Conversions bid strategy, see the payload example in [`Create a Campaign`](create-a-campaign.md).
+
+To create an automated ad group, see the automated ad group payload example in [`Create an Ad Group`](create-an-ad-group.md).
+
+For details switching between Max Conversions and manual campaigns, see the payload examples in [`Update a Campaign`](update-a-campaign.md).
+
+For reports with a Maximize Conversions bidding strategy, see campaign and ad group [`Get Campaign-Level Reports`](get-campaign-level-reports.md) and [`Get Ad Group-Level Reports`](get-ad-group-level-reports.md).
 
 ## Topics
 
@@ -52,7 +64,7 @@ If you’re using your own keywords and bid strategy, disable Search Match using
 - [object AdGroup](adgroup.md)
   The response to ad group requests.
 - [object AdGroupUpdate](adgroupupdate.md)
-  The response to ad group update requests.
+  The list of ad group fields that are updatable.
 - [object AdGroupResponse](adgroupresponse.md)
   A container for the ad group response body.
 - [object AdGroupListResponse](adgrouplistresponse.md)
@@ -103,7 +115,7 @@ If you’re using your own keywords and bid strategy, disable Search Match using
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Budget Orders](budget-orders.md)
-  Manage your payment model.
+  Manage your budgets.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)
   Apply relevant words or phrases that make your campaigns findable.
 - [Search Geolocations](search-geolocations.md)

@@ -20,6 +20,34 @@ Use your `productPageId` to create a [`Creative`](creative.md) and obtain a `cre
 
 ##### Payload Example Get Product Pages By Identifier
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/apps/{adamId}/product-pages/{productPageId}
+```
+
+**Response**:
+
+```json
+    {
+      "id”: "45812c9b-c296-43d3-c6a0-c5a02f74bf6e0",
+      "name”: "Trip Trek CPP variation",
+      "state": "VISIBLE",
+      "adamId": 8992479644,
+      "creationTime": "2024-10-25T23:59:59.000",
+      "modificationTime": "2024-10-25T23:59:59.000"
+    }
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/apps/{adamId}/product-pages/{productPageId}`
+
+## Parameters
+
+- `adamId` (int64) *(required)*: Your unique App Store app identifier. Your `adamId` in the resource path must match the `adamId` in your campaign. Use [`Get a Campaign`](get-a-campaign.md) or [`Get all Campaigns`](get-all-campaigns.md) to obtain your `adamId` and correlate it to the correct campaign.
+- `productPageId` (string) *(required)*: A unique string to identify a product page on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com). For example, `45812c9b-c296-43d3-c6a0-c5a02f74bf6e`.
+
 ## See Also
 
 - [Get Product Pages](get-product-pages.md)

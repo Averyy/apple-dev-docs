@@ -21,6 +21,361 @@ The `orderBy` [`Selector`](selector.md) specifies fields to sort the records lis
 
 ##### Payload Example Get Keyword Level Reports
 
+**Request**:
+
+```http
+POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/keywords
+
+{
+  "returnRowTotals": true,
+  "granularity": "DAILY",
+  "timeZone": "UTC",
+  "returnGrandTotals": true,
+  "startTime": "2024-04-08",
+  "selector": {
+    "orderBy": [
+      {
+        "field": "localSpend",
+        "sortOrder": "ASCENDING"
+      }
+    ],
+    "conditions": [
+      {
+        "field": "deleted",
+        "operator": "IN",
+        "values": [
+          "false",
+          "true"
+        ]
+      }
+    ],
+    "pagination": {
+      "offset": 0,
+      "limit": 1000
+    }
+  },
+  "endTime": "2025-04-09",
+  "returnRecordsWithNoMetrics": true
+}
+```
+
+**Response**:
+
+```json
+{
+  "row": [
+    {
+      "other": false,
+      "total": {
+        "impressions": 76,
+        "taps": 45,
+        "ttr": 0.45,
+        "avgCPT": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "avgCPM": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "localSpend": {
+          "amount": "0",
+          "currency":"USD"
+        },
+        "totalInstalls": 16,
+        "totalNewDownloads": 23,
+        "totalRedownloads": 17,
+        "viewInstalls": 18,
+        "tapInstalls": 59,
+        "tapNewDownloads": 22,
+        "tapRedownloads": 35,
+        "viewNewDownloads": 67,
+        "viewReDownloads": 53,
+        "tapPreOrdersPlaced": 0,
+        "viewPreOrdersPlaced": 0,
+        "totalPreOrdersPlaced": 0,
+        "totalAvgCPI": {
+           "amount": "1.57",
+           "currency": "USD"
+           },
+        "totalInstallRate": 2.962,
+        "tapInstallCPI": {
+          "amount": "0",
+          "currency": "USD"
+        },
+       "tapInstallRate": 0.8571,
+       "date": "2024-05-08"
+      },
+      "metadata": {
+        "keywordId": 87675432,
+        "keyword": "keyword 1",
+        "keywordStatus": "ACTIVE",
+        "matchType": "BROAD",
+        "bidAmount": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "deleted": false,
+        "keywordDisplayStatus": "RUNNING",
+        "adGroupId": 542317095,
+        "adGroupName": "Ad Group 1",
+        "adGroupDeleted": false,
+        "modificationTime": "2025-04-08T09:33:45.387"
+      },
+      "insights": {
+        "bidRecommendation": {
+          "bidMin": {
+            "amount": "null",
+            "currency": "null"
+          },
+          "bidMax": {
+            "amount": "null",
+            "currency": "null"
+          },
+          "suggestedBidAmount": {
+            "amount": "2.40",
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    {
+      "other": false,
+      "total": {
+        "impressions": 53,
+        "taps": 45,
+        "ttr": 0.45,
+        "avgCPT": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "avgCPM": {
+          "amount": “0”,
+          "currency": "USD"
+        },
+        "localSpend": {
+          "amount": "0",
+          "currency":"USD"
+        },
+        "totalInstalls": 16,
+        "totalNewDownloads": 23,
+        "totalRedownloads": 17,
+        "viewInstalls": 18,
+        "tapInstalls": 59,
+        "tapNewDownloads": 22,
+        "tapRedownloads": 35,
+        "viewNewDownloads": 67,
+        "viewReDownloads": 53,
+        "tapPreOrdersPlaced": 0,
+        "viewPreOrdersPlaced": 0,
+        "totalPreOrdersPlaced": 0,
+        "totalAvgCPI": {
+           "amount": "1.57",
+           "currency": "USD"
+           },
+        "totalInstallRate": 2.962,
+        "tapInstallCPI": {
+          "amount": "0",
+          "currency": "USD"
+        },
+       "tapInstallRate": 0.7654,
+       "date": "2024-05-08"
+      },
+       "metadata": {
+        "keywordId": 87675432,
+        "keyword": "keyword 1",
+        "keywordStatus": "ACTIVE",
+        "matchType": "BROAD",
+        "bidAmount": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "deleted": false,
+        "keywordDisplayStatus": "RUNNING",
+        "adGroupId": 300452963,
+        "adGroupName": "Ad Group 2",
+        "adGroupDeleted": false,
+        "modificationTime": "2024-04-10T09:33:50.668"
+      },
+      "insights": {
+        "bidRecommendation": {
+          "bidMin": null,
+          "bidMax": null,
+          "suggestedBidAmount": {
+            "amount": "2.40",
+            "currency": "USD"
+          }
+        }
+      }
+    }
+  ],
+  "grandTotals": {
+    "other": false,
+    "total": {
+       "impressions": 53,
+        "taps": 45,
+        "ttr": 0.45,
+        "avgCPT": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "avgCPM": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "localSpend": {
+          "amount": "0",
+          "currency":"USD"
+        },
+        "totalInstalls": 16,
+        "totalNewDownloads": 23,
+        "totalRedownloads": 17,
+        "viewInstalls": 18,
+        "tapInstalls": 59,
+        "tapNewDownloads": 22,
+        "tapRedownloads": 35,
+        "viewNewDownloads": 67,
+        "viewReDownloads": 53,
+        "tapPreOrdersPlaced": 0,
+        "viewPreOrdersPlaced": 0,
+        "totalPreOrdersPlaced": 0,
+        "totalAvgCPI": {
+           "amount": "1.57",
+           "currency": "USD"
+           },
+        "totalInstallRate": 2.962,
+        "tapInstallCPI": {
+          "amount": "0",
+          "currency": "USD"
+        },
+       "tapInstallRate": 0.7654,
+       "date": "2024-05-10"
+      },
+     }
+  }
+}
+```
+
+##### Payload Example Get Keyword Level Reports
+
+In Maximize Conversions campaigns, `bidAmount` is `0` for keywords.
+
+**Request**:
+
+```http
+POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/keywords
+
+{
+  "startTime": "2025-08-01",
+  "endTime": "2025-10-25",
+  "selector": {
+    "orderBy": [
+      {
+        "field": "bidAmount",
+        "sortOrder": "DESCENDING"
+      }
+    ]
+  },
+  "timeZone": "UTC",
+  "returnRecordsWithNoMetrics": true,
+  "returnRowTotals": true,
+  "returnGrandTotals": true
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "reportingDataResponse": {
+      "row": [
+        {
+          "other": false,
+          "metadata": {
+            "campaignId": 886644762,
+            "orgId": 19173940,
+            "deleted": false,
+            "modificationTime": "2025-10-13T16:58:21.582",
+            "campaignName": "Keyword-level report with Maximize Campaigns",
+            "campaignStatus": "ENABLED",
+            "app": {
+              "appName": "Uber - Driver: Drive & Deliver",
+              "adamId": 1131342792
+            },
+            "servingStatus": "RUNNING",
+            "servingStateReasons": null,
+            "countriesOrRegions": [
+              "US"
+            ],
+            "totalBudget": null,
+            "dailyBudget": {
+              "amount": "3232",
+              "currency": "USD"
+            },
+            "displayStatus": "RUNNING",
+            "supplySources": [
+              "APPSTORE_SEARCH_RESULTS"
+            ],
+            "adChannelType": "SEARCH",
+            "countryOrRegionServingStateReasons": {},
+            "billingEvent": "TAPS",
+            "biddingStrategy": "MAX_CONVERSIONS",
+            "targetCpa": {
+              "amount": "12",
+              "currency": "USD"
+            }
+          },
+          "total": {
+            "localSpend": {
+              "amount": "0",
+              "currency": "MXN"
+            },
+            "tapInstalls": 0,
+            "tapInstallCPI": {
+              "amount": "0",
+              "currency": "MXN"
+            },
+            "impressions": 0,
+            "taps": 0,
+            "ttr": 0,
+            "avgCPT": {
+              "amount": "0",
+              "currency": "MXN"
+            },
+            "totalNewDownloads": 0,
+            "totalRedownloads": 0,
+            "viewInstalls": 0,
+            "totalInstalls": 0,
+            "tapNewDownloads": 0,
+            "tapRedownloads": 0,
+            "viewNewDownloads": 0,
+            "viewRedownloads": 0,
+            "tapPreOrdersPlaced": 0,
+            "viewPreOrdersPlaced": 0,
+            "totalPreOrdersPlaced": 0,
+            "totalAvgCPI": {
+              "amount": "0",
+              "currency": "MXN"
+            },
+            "totalInstallRate": 0,
+            "tapInstallRate": 0,
+            "avgCPM": {
+              "amount": "0",
+              "currency": "MXN"
+            }
+          }
+        },
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/keywords`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The report request body consisting of metrics and dimensions to use as filters.

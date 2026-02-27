@@ -30,6 +30,12 @@ object ErrorResponseItem
 
 ```
 
+## Properties
+
+- `field` (string): The details regarding an error.
+- `message` (string): A nonlocalized (U.S. English only) user-friendly string that describes the error.
+- `messageCode` (string): A system-assigned error code.
+
 ## See Also
 
 - [object ApiErrorResponse](apierrorresponse.md)

@@ -6,7 +6,7 @@ Apply relevant words or phrases that make your campaigns findable.
 
 #### Overview
 
-Ad groups use two keyword object types: `targeting` and `negative`. Use targeting keywords to show ads according to relevant search terms people might use to find your app. Use negative keywords  with campaigns and ad groups to prevent ads from showing in App Store searches.
+Ad groups use two keyword object types: `targeting` and `negative`. Use targeting keywords to show ads according to relevant search terms people might use to find your app. Use negative keywords with campaigns and ad groups to prevent ads from showing in App Store searches.
 
 See the Enable and Disable Search Match section of [`Ad Groups`](ad-groups.md) for details about how to automatically show ads for search terms relevant to your app. You can use up to 5000 targeting keywords and negative keywords per ad group, and up to 1000 keywords per API call. Keywords are case-insensitive.
 
@@ -74,7 +74,7 @@ See the Enable and Disable Search Match section of [`Ad Groups`](ad-groups.md) f
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Budget Orders](budget-orders.md)
-  Manage your payment model.
+  Manage your budgets.
 - [Ad Groups](ad-groups.md)
   Create and manage ad groups.
 - [Search Geolocations](search-geolocations.md)

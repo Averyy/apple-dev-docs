@@ -29,7 +29,7 @@ The quantity applies to consumable in-app purchases and non-renewing subscriptio
 
 ## Parameters
 
-- `quantity`: The default value is 1. The maximum value is 10.
+- `quantity`: The number of items the customer is purchasing. The default value is 1. The maximum value is 10.
 
 ## See Also
 

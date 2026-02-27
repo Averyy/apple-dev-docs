@@ -26,7 +26,8 @@ Use this method with your developer token to get a token that authenticates the 
 ## Parameters
 
 - `developerToken`: A signed and encrypted JWT token used to authenticate the developer in Apple Music API requests.
-- `completionHandler`: A completion block that includes the following parameters:
+- `completionHandler`: A completion block that includes the following parameters: - **userToken**: A token that identifies the user.
+- **error**: The error that occurred, if any.
 
 ## See Also
 

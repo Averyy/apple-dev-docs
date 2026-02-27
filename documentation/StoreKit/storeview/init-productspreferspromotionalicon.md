@@ -27,7 +27,7 @@ By default, the store view doesn’t show promotional images. If you set `prefer
 ## Parameters
 
 - `products`: The products to merchandise.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use promotional images from the App Store, if they’re available. If this parameter is  , the system ignores promotional images.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use promotional images from the App Store, if they’re available. If this parameter is `false`, the system ignores promotional images.
 
 ## See Also
 

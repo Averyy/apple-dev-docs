@@ -25,7 +25,7 @@ func pause(_ downloads: [SKDownload])
 
 ## Parameters
 
-- `downloads`: An array of   objects to pause.
+- `downloads`: An array of [`SKDownload`](skdownload.md) objects to pause.
 
 ## See Also
 

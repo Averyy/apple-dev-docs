@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-24T07:32:52.359458",
+    "last_updated": "2026-02-27T07:41:54.601616",
     "total_pages": 130,
-    "session_id": "2026-02-24T07:32:45.115107"
+    "session_id": "2026-02-27T07:41:44.297513"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppMigrationKit.json": {
       "hash": "0cd755dee426c9b25d8f1a7bfeb023d03b3dc34c6ec2a168bdf56ea6bb37e348",
-      "last_checked": "2026-02-24T07:32:45.424077",
+      "last_checked": "2026-02-27T07:41:44.562456",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"125c38040d43f582691317021d05b6cc\"",
       "file_path": "documentation/AppMigrationKit/AppMigrationKit.md"
     },
     "https://developer.apple.com/documentation/AppMigrationKit": {
       "hash": "0cd755dee426c9b25d8f1a7bfeb023d03b3dc34c6ec2a168bdf56ea6bb37e348",
-      "last_checked": "2026-02-24T07:32:45.308138",
+      "last_checked": "2026-02-27T07:41:44.471860",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"125c38040d43f582691317021d05b6cc\"",
       "file_path": "documentation/AppMigrationKit/AppMigrationKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationextension.json": {
       "hash": "55a2752b0fe983941740cbbaf30fef6af88c4369ed6e31606b4c570277a2b467",
-      "last_checked": "2026-02-24T07:32:45.835684",
+      "last_checked": "2026-02-27T07:41:44.834298",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"4c54ae3ea983ff2dabe0791e49f838ec\"",
       "file_path": "documentation/AppMigrationKit/appmigrationextension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexportingwithoptions.json": {
       "hash": "1a8cfae41e3d44b612209b4030c4c75e21626e614a466d55dd55a7d6d41a1981",
-      "last_checked": "2026-02-24T07:32:45.950772",
+      "last_checked": "2026-02-27T07:41:45.033037",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"55a99a15ab995492135b171cba31475c\"",
       "file_path": "documentation/AppMigrationKit/resourcesexportingwithoptions.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexporting.json": {
       "hash": "dfe8f46aaf2c7a86c1e097c1392adf7c08adcea2778fa11e12612ed451cba10b",
-      "last_checked": "2026-02-24T07:32:46.075397",
+      "last_checked": "2026-02-27T07:41:45.180731",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"92a9fd13e245cadab3cc586664d8ba81\"",
       "file_path": "documentation/AppMigrationKit/resourcesexporting.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimporting.json": {
       "hash": "a2feb51b99efb94be8197e93f60618130168e02f0a5d57cfe8514861f1235414",
-      "last_checked": "2026-02-24T07:32:46.192889",
+      "last_checked": "2026-02-27T07:41:45.376935",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"069ba15ca747f06a48c74065f86cf278\"",
       "file_path": "documentation/AppMigrationKit/resourcesimporting.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationstatus.json": {
       "hash": "b0dd5d291af191f08ba86492b0bfefa882ba7ee29d260182f7b3dd49b4a06f1b",
-      "last_checked": "2026-02-24T07:32:46.310664",
+      "last_checked": "2026-02-27T07:41:45.519156",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"c2e9436c146e9f5cebece7aa8ceeb092\"",
       "file_path": "documentation/AppMigrationKit/migrationstatus.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester.json": {
       "hash": "db4be0038ab29844b5efc5324c6f84f067a04795a22775feb0fb5c9b5a6e1786",
-      "last_checked": "2026-02-24T07:32:46.433314",
+      "last_checked": "2026-02-27T07:41:45.710709",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"9310c4637ff567d4db1c4910e1ef0864\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationextension/appcontainer.json": {
       "hash": "c31f542e9d9976d6969e4c62a3eabee79aecce04ee0d7253430b0f4b69e5bbdd",
-      "last_checked": "2026-02-24T07:32:46.555303",
+      "last_checked": "2026-02-27T07:41:45.849002",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"9bc4a796624b35c1828d18d0579f9e87\"",
       "file_path": "documentation/AppMigrationKit/appmigrationextension/appcontainer.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdatacontainer.json": {
       "hash": "636ba2d58b4f98bb3c816c3cad962b2853120e20615fb83bd437126bd331b68c",
-      "last_checked": "2026-02-24T07:32:46.664934",
+      "last_checked": "2026-02-27T07:41:46.013957",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"e5eaaa2f2ed7efa332c00b1d0d40e5e5\"",
       "file_path": "documentation/AppMigrationKit/migrationdatacontainer.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexportingwithoptions/exportresources(to:request:).json": {
       "hash": "6d87a2842aa31800e7be3b166cfbe9ed6028f9ef37dbb877914417d2c38c98b6",
-      "last_checked": "2026-02-24T07:32:46.783958",
+      "last_checked": "2026-02-27T07:41:46.166871",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"79dcede4515cffadf72c400bf812829e\"",
       "file_path": "documentation/AppMigrationKit/resourcesexportingwithoptions/exportresources-torequest.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesarchiver.json": {
       "hash": "21ed157bfde87806cbcc42e187ae69e2f5ce3f257d8d8a9fc812a60681d8019c",
-      "last_checked": "2026-02-24T07:32:46.904134",
+      "last_checked": "2026-02-27T07:41:46.309013",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"9b42f9c54792d7fdb8497d986666b475\"",
       "file_path": "documentation/AppMigrationKit/resourcesarchiver.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationrequestwithoptions.json": {
       "hash": "893a4f42cb278e004f2e30e180093a5761a9cadb914caa61edf20f52b88f8241",
-      "last_checked": "2026-02-24T07:32:47.016453",
+      "last_checked": "2026-02-27T07:41:46.446025",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"74921504497f66ffe095232ed6c2a6ea\"",
       "file_path": "documentation/AppMigrationKit/migrationrequestwithoptions.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexportingwithoptions/resourcessizeestimate.json": {
       "hash": "2b6cbe52b1eebc7251c5ce34bb3fe45a47055c9499008ea0b3bcccd7e6d9c222",
-      "last_checked": "2026-02-24T07:32:47.106832",
+      "last_checked": "2026-02-27T07:41:46.608218",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"c33eb32315b3b1331a12789ff74d8a0b\"",
       "file_path": "documentation/AppMigrationKit/resourcesexportingwithoptions/resourcessizeestimate.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexportingwithoptions/resourcesversion.json": {
       "hash": "a02757fec0eee095bb83495b07beb52de46b13e9e30a5605fc55e7d69208e7cd",
-      "last_checked": "2026-02-24T07:32:47.225004",
+      "last_checked": "2026-02-27T07:41:46.767497",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"834a035a3af0830b925c48f5187e01a7\"",
       "file_path": "documentation/AppMigrationKit/resourcesexportingwithoptions/resourcesversion.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexportingwithoptions/resourcescompressible.json": {
       "hash": "63cb658788a0c66247c0c4eb345d39b1801386528e34c12bfc9c68a1b4ee6ef3",
-      "last_checked": "2026-02-24T07:32:47.315617",
+      "last_checked": "2026-02-27T07:41:46.920059",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"3f1adf83c9c3918cc457bef1496572bc\"",
       "file_path": "documentation/AppMigrationKit/resourcesexportingwithoptions/resourcescompressible.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesexportingwithoptions/optionstype.json": {
       "hash": "b967d65394fb2d14e2857fcc5e52f30c1537adfc562a544a22a002bde21d2faa",
-      "last_checked": "2026-02-24T07:32:47.432084",
+      "last_checked": "2026-02-27T07:41:47.044803",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"98ca9fd48dd1d929afa66eb961973af3\"",
       "file_path": "documentation/AppMigrationKit/resourcesexportingwithoptions/optionstype.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimporting/importresources(at:request:).json": {
       "hash": "4caceac3e0ecf0c657ff4b734e863de737d97f1f1371471e9006bfc32c591ac8",
-      "last_checked": "2026-02-24T07:32:47.499838",
+      "last_checked": "2026-02-27T07:41:47.201731",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"5480e6b0f87f091656cd581a45d98a1e\"",
       "file_path": "documentation/AppMigrationKit/resourcesimporting/importresources-atrequest.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimportrequest.json": {
       "hash": "493effc3382e7a493136bad18ddd3b79dd4d16c3320390cb5654f9de5fe9319e",
-      "last_checked": "2026-02-24T07:32:47.586755",
+      "last_checked": "2026-02-27T07:41:47.338161",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"f80fe739c95102c2e40b4464c6b416d7\"",
       "file_path": "documentation/AppMigrationKit/resourcesimportrequest.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimporting/resourcesimportprogress.json": {
       "hash": "2627c1bdfc1c855fad3808a2a7bf13983153843a8b453f2546b0352f5f26ea41",
-      "last_checked": "2026-02-24T07:32:47.707718",
+      "last_checked": "2026-02-27T07:41:47.480347",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"b49a7e1cbb70d13617de3cd6a2c70f5a\"",
       "file_path": "documentation/AppMigrationKit/resourcesimporting/resourcesimportprogress.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationstatus/importstatus.json": {
       "hash": "0b58b0d1138983977976f59b7ecc67e838ec67c60f6c25e6e0cd65aae71ff5d4",
-      "last_checked": "2026-02-24T07:32:47.806759",
+      "last_checked": "2026-02-27T07:41:47.634252",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"8362c21806a5533e45f0b638a0539740\"",
       "file_path": "documentation/AppMigrationKit/migrationstatus/importstatus.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationstatus/clearimportstatus().json": {
       "hash": "9178cf79b98126c32210aaf9ec0c4486873b2327d5f5b511905ed9e076e9e223",
-      "last_checked": "2026-02-24T07:32:47.923694",
+      "last_checked": "2026-02-27T07:41:47.757113",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"ce83a2d4f11c3bf2544a5919c1d45fc0\"",
       "file_path": "documentation/AppMigrationKit/migrationstatus/clearimportstatus.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationstatus/success.json": {
       "hash": "ab5c8480e2da22ca9e7c594e5f6d00447a219b34918051930e01b4d6cc6a01e6",
-      "last_checked": "2026-02-24T07:32:48.014789",
+      "last_checked": "2026-02-27T07:41:47.931182",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"e83d2d71a72400a4ae14611170c2d3e7\"",
       "file_path": "documentation/AppMigrationKit/migrationstatus/success.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationstatus/failure(_:).json": {
       "hash": "d96c1779c9eaf7a36de1ca04c9799f41a8c91c3bc6953098a9a7c9b955fbea0e",
-      "last_checked": "2026-02-24T07:32:48.111910",
+      "last_checked": "2026-02-27T07:41:48.065483",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"109622b6bd17a407511a0a8e5928b40e\"",
       "file_path": "documentation/AppMigrationKit/migrationstatus/failure.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/init(platform:).json": {
       "hash": "5c5acf825e1a410d6bc8d7f2173ac3a60a833cb2b6c01d008e77b8971318e38a",
-      "last_checked": "2026-02-24T07:32:48.198440",
+      "last_checked": "2026-02-27T07:41:48.212412",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"b4a7b43312982e34e4e64cf603db49a6\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/init-platform.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/exportcontroller.json": {
       "hash": "a0271646c4cf9ba0dee8ae6231aafad54bc5ca7edcb34c330c850e09c8612b87",
-      "last_checked": "2026-02-24T07:32:48.300086",
+      "last_checked": "2026-02-27T07:41:48.351911",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"3a6bb3549627e6bc844366cb319eb954\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/exportcontroller.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/appexportcontroller.json": {
       "hash": "13425f008321c284bfd60c58ef1fa34bc5aa5f67499405eba4dc45264dcce36b",
-      "last_checked": "2026-02-24T07:32:48.414906",
+      "last_checked": "2026-02-27T07:41:48.511155",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"ebce48c995315b0aa83dd237f6ef430d\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/appexportcontroller.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/importcontroller.json": {
       "hash": "c8e6ae826b299e24d53f2d587891b539176b317e166f4a6d29dd1d532aaa6fb5",
-      "last_checked": "2026-02-24T07:32:48.537217",
+      "last_checked": "2026-02-27T07:41:48.655804",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"7f230f0597951b851ccf0c3dc98e0e28\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/importcontroller.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/appimportcontroller.json": {
       "hash": "2b79f62452e3ac9aff347e0f91826fb3f6b70337b7dee2bdd1ac238022fb0555",
-      "last_checked": "2026-02-24T07:32:48.653187",
+      "last_checked": "2026-02-27T07:41:48.851059",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"f0f9296b3a16f69ee5e9bbcdbea0f74d\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/appimportcontroller.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/devicetodeviceexportproperties.json": {
       "hash": "182f986c21e56ffb1f8dae8938e611c328f3906b9c8e4a92c4ddb9dd9c876601",
-      "last_checked": "2026-02-24T07:32:48.754371",
+      "last_checked": "2026-02-27T07:41:49.001058",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"9b24eddfcf9e7a9d0a19f8ee67474878\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/devicetodeviceexportproperties.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/resourcesexportresult.json": {
       "hash": "b1ad8926c9c0564dbe4cc4064dba752794e6bd0ae39b87bf664a2bafbd7c8282",
-      "last_checked": "2026-02-24T07:32:48.874887",
+      "last_checked": "2026-02-27T07:41:49.197581",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"fb8d08dc2dfe3f86bc3f43e2f8f7e966\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/resourcesexportresult.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdatacontainer/bundleidentifier.json": {
       "hash": "76e4feb369e5914a0aa954f5311440117dc5f1498488633a84eac9a1aed27209",
-      "last_checked": "2026-02-24T07:32:48.971236",
+      "last_checked": "2026-02-27T07:41:49.334258",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"80672593a9a57c6f198afe709faf915d\"",
       "file_path": "documentation/AppMigrationKit/migrationdatacontainer/bundleidentifier.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdatacontainer/containerrootdirectory.json": {
       "hash": "d88746cfa4964cfc1916e4ff1910e6154665ec9fe10c8782088699f3f9668fbe",
-      "last_checked": "2026-02-24T07:32:49.092760",
+      "last_checked": "2026-02-27T07:41:49.547843",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"3c9f69b20e93222ac6a79e30d46737ae\"",
       "file_path": "documentation/AppMigrationKit/migrationdatacontainer/containerrootdirectory.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdatacontainer/applicationsupportdirectory.json": {
       "hash": "a04821c14f742dd62d4a27c6f4730a91ee5e65ab76be98467d20b7cc05dbc4a7",
-      "last_checked": "2026-02-24T07:32:49.180031",
+      "last_checked": "2026-02-27T07:41:49.734840",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"31eadc15e22625cfaa567a552f380a92\"",
       "file_path": "documentation/AppMigrationKit/migrationdatacontainer/applicationsupportdirectory.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdatacontainer/documentsdirectory.json": {
       "hash": "77c3b5650f6f606ea8236b8ee450b33d59843ff88e0b45951761a9bcbcbf1fc4",
-      "last_checked": "2026-02-24T07:32:49.252718",
+      "last_checked": "2026-02-27T07:41:49.887024",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"eb2160cc58d206b510b90289ad0f6c61\"",
       "file_path": "documentation/AppMigrationKit/migrationdatacontainer/documentsdirectory.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesarchiver/appenditem(at:pathinarchive:).json": {
       "hash": "fa409c9d040387062266876591815df0c2446318094b890e03089ef21786b55a",
-      "last_checked": "2026-02-24T07:32:49.318957",
+      "last_checked": "2026-02-27T07:41:50.023940",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"d61865444af10317a7056c000752bc2e\"",
       "file_path": "documentation/AppMigrationKit/resourcesarchiver/appenditem-atpathinarchive.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationrequestwithoptions/init(destinationplatform:options:).json": {
       "hash": "f5708d4bdb8193e1574d8d05043d362f0e2a9be05c1173862cfc168d82844584",
-      "last_checked": "2026-02-24T07:32:49.389185",
+      "last_checked": "2026-02-27T07:41:50.164696",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"82fb5685bcda553a9d7e68dd4352ff75\"",
       "file_path": "documentation/AppMigrationKit/migrationrequestwithoptions/init-destinationplatformoptions.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationrequestwithoptions/destinationplatform.json": {
       "hash": "0febcb79217e25524d3af552c3cebf74c16205268286d9a8eed7861b9fbeefbc",
-      "last_checked": "2026-02-24T07:32:49.513792",
+      "last_checked": "2026-02-27T07:41:50.315063",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"f81519f13e57de2e3eb36bd69f3c6d53\"",
       "file_path": "documentation/AppMigrationKit/migrationrequestwithoptions/destinationplatform.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationplatform.json": {
       "hash": "4734ac64955228fb9a029d2d9e3f225111fc02d1b47355fac9c8504215942ad5",
-      "last_checked": "2026-02-24T07:32:49.695072",
+      "last_checked": "2026-02-27T07:41:50.469699",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"09e42a5a27a8cf6a2091fbb117c38168\"",
       "file_path": "documentation/AppMigrationKit/migrationplatform.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationrequestwithoptions/options.json": {
       "hash": "35e9e2119b86f16e65be2eb3eca498e024a0536a018de96d3e779e7b07ad5e9b",
-      "last_checked": "2026-02-24T07:32:49.763852",
+      "last_checked": "2026-02-27T07:41:50.599815",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"87f35ce51981297ea35585c99a9927c1\"",
       "file_path": "documentation/AppMigrationKit/migrationrequestwithoptions/options.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdefaultsupportedoptions.json": {
       "hash": "df7f6bfec3f07a16158db25b5064cd612996955773ee99e65abfab17e6601d29",
-      "last_checked": "2026-02-24T07:32:49.870683",
+      "last_checked": "2026-02-27T07:41:50.742069",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"584cd70d40130016e92c5d9cfed9086a\"",
       "file_path": "documentation/AppMigrationKit/migrationdefaultsupportedoptions.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationrequest.json": {
       "hash": "34eee0bb428b4350dcef2b8ee25deb45611266c0c532e014507a71ad108d93f8",
-      "last_checked": "2026-02-24T07:32:49.928759",
+      "last_checked": "2026-02-27T07:41:50.931950",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"eb033e971b97194b00cb515f898a9eaa\"",
       "file_path": "documentation/AppMigrationKit/migrationrequest.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimportrequest/init(sourceappidentifier:sourceversion:).json": {
       "hash": "d21b5652072bc7731bfef4e08491aa84d945eaaa2290ae4eaa012c0744b3e00c",
-      "last_checked": "2026-02-24T07:32:49.994644",
+      "last_checked": "2026-02-27T07:41:51.083679",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"a0fbcb273cd07560d5069a9e07812f76\"",
       "file_path": "documentation/AppMigrationKit/resourcesimportrequest/init-sourceappidentifiersourceversion.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimportrequest/sourceappidentifier.json": {
       "hash": "4a7cf1809f8030b46eb1939237c19474366d0f4fc6414c6919502ee7549590a9",
-      "last_checked": "2026-02-24T07:32:50.114628",
+      "last_checked": "2026-02-27T07:41:51.229549",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"a52ba031bbf1a2131b87720e9029110e\"",
       "file_path": "documentation/AppMigrationKit/resourcesimportrequest/sourceappidentifier.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier.json": {
       "hash": "17dc9569ba6b6c26edd217206dafadc53651c883d374cb3fdf801589564156e1",
-      "last_checked": "2026-02-24T07:32:50.177314",
+      "last_checked": "2026-02-27T07:41:51.379657",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"b8f06a9c1f16ef087750a09ade726967\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/resourcesimportrequest/sourceversion.json": {
       "hash": "d44f8166d40ec499b969642a14adb2711ec2ae66d1365027417a441c5e3eb3d1",
-      "last_checked": "2026-02-24T07:32:50.305148",
+      "last_checked": "2026-02-27T07:41:51.555804",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"4685bddf2fa690f48d77b559203e92ca\"",
       "file_path": "documentation/AppMigrationKit/resourcesimportrequest/sourceversion.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/appexportcontroller/exportresources(request:progress:)-15m4v.json": {
       "hash": "2e594b729b06e5a06c86c57b6cf76c8ad8a82676d42ef44ef43aa65a1736d299",
-      "last_checked": "2026-02-24T07:32:50.433160",
+      "last_checked": "2026-02-27T07:41:51.703151",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"022caa4ea22b5ad33b5e01d3eef639ac\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/appexportcontroller/exportresources-requestprogress-15m4v.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/appexportcontroller/exportresources(request:progress:)-5mw8u.json": {
       "hash": "ebb250c56fed2bf5c42fa5632fafe33673eef82f4a6c863bf7a09817cd4a181d",
-      "last_checked": "2026-02-24T07:32:50.582875",
+      "last_checked": "2026-02-27T07:41:51.857887",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"70eb3a9e6de45e91981838f9dff3ddd3\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/appexportcontroller/exportresources-requestprogress-5mw8u.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/appimportcontroller/importresources(from:importrequest:progress:).json": {
       "hash": "9bd0fcb78bd2a9fd1ef5ad4572af3fdd694347db058c7003cd81eb02a33c11ec",
-      "last_checked": "2026-02-24T07:32:50.701809",
+      "last_checked": "2026-02-27T07:41:52.009213",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"ae0c2a31ee982f83262026c6edfaf82f\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/appimportcontroller/importresources-fromimportrequestprogress.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/appimportcontroller/registerimportcompletion(with:).json": {
       "hash": "845b77b42790bb6af219d86ce53de3fdab6c3c7b780ac3805bd039ff06638d1a",
-      "last_checked": "2026-02-24T07:32:50.800827",
+      "last_checked": "2026-02-27T07:41:52.152469",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"1093a903a5f96df438d7505d0a5d4148\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/appimportcontroller/registerimportcompletion-with.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/devicetodeviceexportproperties/uncompressedbytes.json": {
       "hash": "93f725fd9ec6e25d7f044cfb394513b8eb00f49b71a481a14369f618b78219d7",
-      "last_checked": "2026-02-24T07:32:50.865157",
+      "last_checked": "2026-02-27T07:41:52.288903",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"0725444a7ab538829500f72d84618b0d\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/devicetodeviceexportproperties/uncompressedbytes.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/devicetodeviceexportproperties/compressedbytes.json": {
       "hash": "9fcd654505a2c86247f526bc26a1d8e08a55f4d69d96edbd9ef98078d38004df",
-      "last_checked": "2026-02-24T07:32:50.961535",
+      "last_checked": "2026-02-27T07:41:52.462250",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"823afcbc59dd4e2401ddad4b4731146a\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/devicetodeviceexportproperties/compressedbytes.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/devicetodeviceexportproperties/sizeestimate.json": {
       "hash": "bd9420f1bb2ef4da66b45388077a2aeb2e2590dda177f19e5f9a8636f8fc7f43",
-      "last_checked": "2026-02-24T07:32:51.082094",
+      "last_checked": "2026-02-27T07:41:52.607664",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"54b5170b12a40c06e187ce6d2c45f185\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/devicetodeviceexportproperties/sizeestimate.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/devicetodeviceexportproperties/version.json": {
       "hash": "223a5e96a3b37be06ed38f5c7609c12bb22329bbd9820002f1b123c756d61b08",
-      "last_checked": "2026-02-24T07:32:51.143216",
+      "last_checked": "2026-02-27T07:41:52.742513",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"e224b00b5e3c08a2bf529fcd1e01c70f\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/devicetodeviceexportproperties/version.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/resourcesexportresult/extractedresourcesurl.json": {
       "hash": "217cfbdf4fb16b12526c8dbb94c7c9d0cf8e32b3ab1361f80399841822240a3b",
-      "last_checked": "2026-02-24T07:32:51.258205",
+      "last_checked": "2026-02-27T07:41:52.885058",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"d9ef591ed85e765b87748fdd69143aa5\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/resourcesexportresult/extractedresourcesurl.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/appmigrationtester/resourcesexportresult/exportproperties.json": {
       "hash": "19d05065342412387b8856c21e1d96bbe3947075c5927302abb45faa0c58f66c",
-      "last_checked": "2026-02-24T07:32:51.372657",
+      "last_checked": "2026-02-27T07:41:53.030302",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"f0d4562cc32b01963f04a2fd4795e023\"",
       "file_path": "documentation/AppMigrationKit/appmigrationtester/resourcesexportresult/exportproperties.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationplatform/init(_:).json": {
       "hash": "61a81f14f2b003f59df58cc05664f0bdcb272dacde06ee6ee405d385ea72bb38",
-      "last_checked": "2026-02-24T07:32:51.465232",
+      "last_checked": "2026-02-27T07:41:53.178318",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"fe5bb0e11653ad35faaed91608fb6893\"",
       "file_path": "documentation/AppMigrationKit/migrationplatform/init.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationplatform/android.json": {
       "hash": "9ac16d666bc7f52549168033ecab2fa2020d6cea99fa21839a0bebe4fd21262d",
-      "last_checked": "2026-02-24T07:32:51.562992",
+      "last_checked": "2026-02-27T07:41:53.318290",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"693e1c5a5bd48b94f9aa19ac3a3a7c91\"",
       "file_path": "documentation/AppMigrationKit/migrationplatform/android.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationdefaultsupportedoptions/allcases.json": {
       "hash": "b9c5cb60346ed00528d47ec643e9135c6bd24f7e4ac01581d197636a66ba6f26",
-      "last_checked": "2026-02-24T07:32:51.729990",
+      "last_checked": "2026-02-27T07:41:53.468660",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"2454d2972c88eb840e3e193674fdd292\"",
       "file_path": "documentation/AppMigrationKit/migrationdefaultsupportedoptions/allcases.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/init(storeidentifier:bundleidentifier:platform:).json": {
       "hash": "bed239e940543e113c4e937f8f3c96a55a15a1f4e108aee290aee0895ef15c09",
-      "last_checked": "2026-02-24T07:32:51.806662",
+      "last_checked": "2026-02-27T07:41:53.649231",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"20e86379478fa0f0e32ad635510ea738\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/init-storeidentifierbundleidentifierplatform.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/storeidentifier-swift.property.json": {
       "hash": "093c6e667c0305fe7e93dbad882d67b6f45c82d6c30ead89806f20418a946340",
-      "last_checked": "2026-02-24T07:32:51.872750",
+      "last_checked": "2026-02-27T07:41:53.816303",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"b7cf470b07a4f46b81d3eae89d028829\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/storeidentifier-swiftproperty.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/storeidentifier-swift.struct.json": {
       "hash": "73c31d11a07bdb0030aa3dc7cd567661518e94f500cf938c08ee4745052f94bc",
-      "last_checked": "2026-02-24T07:32:51.969618",
+      "last_checked": "2026-02-27T07:41:53.969483",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"4eb0fbda9b1d9b3053589bde8ededc44\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/storeidentifier-swiftstruct.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/bundleidentifier.json": {
       "hash": "557ec036ef0844b65881c19505974540844c326d1a2eea004d40920d7b5705fe",
-      "last_checked": "2026-02-24T07:32:52.085908",
+      "last_checked": "2026-02-27T07:41:54.102197",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"f28fbc9fa2de2a62f4e55066be10d066\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/bundleidentifier.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/platform.json": {
       "hash": "b1b9d71fd2c6fba8bb45e03c1bc8438adb5da28eb4ee97b46c7d18c3aac7c36d",
-      "last_checked": "2026-02-24T07:32:52.155258",
+      "last_checked": "2026-02-27T07:41:54.240909",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"2191a1a2091a336601490950f8b5a2b0\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/platform.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/storeidentifier-swift.struct/init(_:).json": {
       "hash": "2a520bc3dcfa1bc094c19110c0a1d4dc71a0c844d96f29b803e8300c0767a1d2",
-      "last_checked": "2026-02-24T07:32:52.288969",
+      "last_checked": "2026-02-27T07:41:54.411907",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"e8dbcd1340d8d8d7ed18197e0f2e14b5\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/storeidentifier-swift.struct/init.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appmigrationkit/migrationappidentifier/storeidentifier-swift.struct/googleplay.json": {
       "hash": "8afcdb5a525de1b9ec5772ce29f0bb2a832e94bee98b0835224586a5d165dc41",
-      "last_checked": "2026-02-24T07:32:52.358408",
+      "last_checked": "2026-02-27T07:41:54.551609",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:45.115107",
+      "session_id": "2026-02-27T07:41:44.297513",
       "etag": "W/\"22acf0d3b78670aaa7c832f53fb10379\"",
       "file_path": "documentation/AppMigrationKit/migrationappidentifier/storeidentifier-swift.struct/googleplay.md"
     },

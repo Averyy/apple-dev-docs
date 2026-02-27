@@ -29,7 +29,7 @@ By default, the view doesn’t show an icon. If you set the `prefersPromotionalI
 ## Parameters
 
 - `productID`: The product identifier to load from the App Store.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this parameter is  , the system ignores any promotional images.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this parameter is `false`, the system ignores any promotional images.
 
 ## See Also
 

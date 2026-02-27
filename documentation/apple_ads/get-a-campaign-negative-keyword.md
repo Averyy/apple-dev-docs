@@ -14,6 +14,37 @@ To return a specific campaign negative keyword, use the associated `campaignId` 
 
 ##### Payload Example Get a Campaign Negative Keyword
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/{keywordId}
+```
+
+**Response**:
+
+```json
+{  
+  "id": 542370642,
+  "campaignId": 542370539,
+  "adGroupId": 542317095,
+  "text": "Get campaign negative keywords example",
+  "status": "ACTIVE",
+  "matchType": "BROAD",
+  "modificationTime": "2024-04-08T17:48:31.979",
+  "deleted": false
+}
+
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/{keywordId}`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+- `keywordId` (int64) *(required)*: The unique identifier for the keyword.
+
 ## See Also
 
 - [Create Campaign Negative Keywords](create-campaign-negative-keywords.md)

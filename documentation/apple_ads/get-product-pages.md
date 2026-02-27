@@ -20,6 +20,35 @@ Use this endpoint to fetch your product page metadata using your `adamId` in the
 
 The `id` in the response is your `productPageId`, an identifier for your app product page. For example, `45812c9b-c296-43d3-c6a0-c5a02f74bf6e`.
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/apps/{adamId}/product-pages
+```
+
+**Response**:
+
+```json
+
+    {
+      "id": "45812c9b-c296-43d3-c6a0-c5a02f74bf6e",
+      "name": "Trip Trek CPP variation 1",
+      "state": "VISIBLE",
+      "adamId": 899247964,
+      "creationTime": "2024-10-25T23:59:59.000",
+      "modificationTime": "2024-10-08T17:44:49.718Z"
+   }
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/apps/{adamId}/product-pages`
+
+## Parameters
+
+- `name` (string): Filters by `name` field. For example, the name of your custom product page on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+- `states` (string): Filters by `states`, which indicates whether the product page is visible or not.
+
 ## See Also
 
 - [Get Product Pages by Identifier](get-product-pages-by-identifier.md)

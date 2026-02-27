@@ -16,6 +16,10 @@ If you pass a subset of the merchant’s registered domains, Apple Pay server un
 
 > **Note**:  To access the sandbox environment, use `POST https://apple-pay-gateway-cert.apple.com/paymentservices/unregisterMerchant`.
 
+## Endpoint
+
+`POST https://apple-pay-gateway.apple.com/paymentservices/unregisterMerchant`
+
 ## Request Body
 
 The request body for unregistering merchants.

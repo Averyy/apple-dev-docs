@@ -42,7 +42,7 @@ StoreView(ids: [
 ## Parameters
 
 - `productIDs`: The product identifiers to load from the App Store.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use a promotional image from the App Store, if it’s available. If this parameter is  , the system ignores promotional images.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use a promotional image from the App Store, if it’s available. If this parameter is `false`, the system ignores promotional images.
 - `icon`: A closure that returns the image the view displays when the products finish loading from the App Store.
 - `placeholderIcon`: A closure that returns the image that the view uses while the products are loading. The view uses the same placeholder image for all the products.
 

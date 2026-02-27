@@ -12,6 +12,15 @@ Fetches all of an organization’s assigned campaigns.
 
 This endpoint returns data for all of an organization’s assigned campaigns. You can also use a partial fetch as necessary. For more information, see the Use a Partial Fetch section of [`Using Apple Ads API Functionality`](using-apple-search-ads-api-functionality.md).
 
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/campaigns`
+
+## Parameters
+
+- `limit` (int32): The number of items to return per request. The maximum is 1000 for most objects.
+- `offset` (int32): The offset pagination that limits the number of returned records. The start of each page is offset by the specified number.
+
 ## See Also
 
 - [Create a Campaign](create-a-campaign.md)

@@ -28,6 +28,22 @@ Give the user an appropriate level of control over the content that’s download
 
 Create a receipt refresh request, set a delegate, and start the request. The request supports optional properties for obtaining receipts in various states, such as expired receipts, during testing. For details, see the [`init(receiptProperties:)`](skreceiptrefreshrequest/init(receiptproperties:).md) method of [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md).
 
+**Swift**:
+
+```swift
+let refresh = SKReceiptRefreshRequest()
+refresh.delegate = self
+refresh.start()
+```
+
+**Objective-C**:
+
+```objc
+request = [[SKReceiptRefreshRequest alloc] init];
+request.delegate = self;
+[request start];
+```
+
 After the app receipt refreshes, examine it and deliver any additional products, as necessary.
 
 ##### Restore Completed Transactions
@@ -43,6 +59,33 @@ StoreKit calls the transaction queue observer with a status of [`SKPaymentTransa
 If your app uses the app receipt and doesn’t have Apple-hosted content, this code isn’t needed because your app doesn’t restore completed transactions. Finish any restored transactions immediately.
 
 If your app uses the app receipt and has Apple-hosted content, let the user select which products to restore before starting the restoration process. During restoration, download the user-selected content before finishing those transactions, and finish any other transactions immediately.
+
+**Swift**:
+
+```swift
+let productIDsToRestore: [String]() = <# From the user #>
+let transaction: SKPaymentTransaction = <# Current transaction #>
+
+guard let identifier = transaction.transactionIdentifier else { customError() }
+if productIDsToRestore.contains(identifier) {
+// Re-download the Apple-hosted content
+}
+
+SKPaymentQueue.default().finishTransaction(transaction)
+```
+
+**Objective-C**:
+
+```objc
+NSMutableArray *productIDsToRestore = <# From the user #>;
+SKPaymentTransaction *transaction = <# Current transaction #>;
+
+if ([productIDsToRestore containsObject:transaction.transactionIdentifier]) {
+// Re-download the Apple-hosted content
+}
+
+[[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+```
 
 If your app doesn’t use the app receipt, it examines all completed transactions as it restores them. It uses a similar code path to the original purchase logic to make the product available and then finishes the transaction. Apps with more than a few products, especially products with associated content, let the user select which products to restore instead of restoring everything. These apps keep track of which completed transactions to process as they restore them, and which transactions to ignore by finishing them immediately without restoring them.
 

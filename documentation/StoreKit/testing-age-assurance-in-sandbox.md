@@ -10,17 +10,19 @@ You can provide people the ability to make decisions about who can access your a
 
 In the Sandbox environment you can test how your app responds to various age range scenarios, location-based restrictions, approval state changes, and consent revocation. Focus on testing age range variations across your target audience, and consider regulatory compliance in different regions.
 
-##### Test Age Assurance on Device
+##### Navigate to Your Sandbox Apple Account Settings
 
-Test various age range scenarios on the Sandbox Apple Account page in iOS or iPadOS by following these steps:
-
-1. Confirm that you have enabled Developer Mode. If you haven’t, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device)
+1. Confirm that you have enabled Developer Mode. If you haven’t, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
 2. Open Settings and select Developer.
 3. Scroll down to Sandbox Apple Account.
 4. If you’re not logged in to an account, select Sign In to authenticate yourself.
-5. Once you’re signed in, select your Apple Account.
-6. In the Sandbox Apple Account modal, select Manage.
-7. Scroll down and select Age Assurance or Revoke App Consent.
+5. Once you’ve authenticated, select your Apple Account.
+
+##### Test Age Assurance on Device
+
+1. Follow the steps from [`Navigate to your Sandbox Apple Account settings`](https://developer.apple.com#navigate-to-your-sandbox-apple-account-settings).
+2. In the Sandbox Apple Account modal, select Manage.
+3. Scroll down and select Age Assurance or Revoke App Consent.
 
 You can also change these settings in App Store Connect.
 
@@ -42,11 +44,12 @@ Check the `AgeRangeDeclaration` field in your Declared Age Range API responses t
 
 To test the notification when a parent or guardian revokes access to your app on behalf of their child, follow these steps:
 
-1. Start with a Sandbox account.
-2. From the Age Assurance settings, tap Revoke App Consent.
-3. Enter your app’s Bundle ID (for example, com.example.bundle).
-4. Tap Revoke Consent to simulate the revocation.
-5. Confirm that the system displays “Notification Triggered” with the message “A notification will be sent to the developer server soon.”
+1. Follow the steps from [`Navigate to your Sandbox Apple Account settings`](https://developer.apple.com#navigate-to-your-sandbox-apple-account-settings).
+2. In the Sandbox Apple Account modal, select Manage.
+3. Scroll down and select Revoke App Consent.
+4. Enter your app’s Bundle ID (for example, com.example.bundle).
+5. Tap Revoke Consent to simulate the revocation.
+6. Confirm that the system displays “Notification Triggered” with the message “A notification will be sent to the developer server soon.”
 
 If you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) enabled, your server receives a `RESCIND_CONSENT` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType). The notification payload includes an [`appData`](https://developer.apple.com/documentation/AppStoreServerNotifications/appData) object with app metadata, including the `bundleId` and `environment` fields that help you check the notification applies to the correct app and test environment.
 

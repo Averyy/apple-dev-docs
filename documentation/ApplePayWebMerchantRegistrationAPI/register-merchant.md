@@ -22,6 +22,10 @@ This request returns no response body for a successful 200 response. Apple Pay s
 
 > **Note**:  To access the sandbox environment, use `POST` `https://apple-pay-gateway-cert.apple.com/paymentservices/registerMerchant`.
 
+## Endpoint
+
+`POST https://apple-pay-gateway.apple.com/paymentservices/registerMerchant`
+
 ## Request Body
 
 The request body you use to register merchants.

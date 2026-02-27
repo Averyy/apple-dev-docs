@@ -21,8 +21,8 @@ To test Family Sharing in your app:
 
 You can set the sharing status for each member of the Sandbox Test Family individually, as follows:
 
--  indicates the family member shares their in-app purchases with the Sandbox Test Family, and gets access to in-app purchases shared by family members.
--  indicates the family member isn’t sharing, and doesn’t get access to family-shared purchases. Changing the setting to Not Sharing revokes any family-shared purchases they have access to. In the test environment, turning off sharing is the equivalent of a family member leaving the group.
+- *Sharing* indicates the family member shares their in-app purchases with the Sandbox Test Family, and gets access to in-app purchases shared by family members.
+- *Not Sharing* indicates the family member isn’t sharing, and doesn’t get access to family-shared purchases. Changing the setting to Not Sharing revokes any family-shared purchases they have access to. In the test environment, turning off sharing is the equivalent of a family member leaving the group.
 
 ![The settings page titled Family Sharing. The top of the page has a label that reads Sandbox Family Members. A list box lists five Sandbox Apple Accounts that comprise the Sandbox Test Family. Each Apple Account has a label underneath that reads Sharing. A link below the list is labeled Stop Sharing Purchases. ](https://docs-assets.developer.apple.com/published/08ba8ae02734a6799040e16023c5eeeb/media-4312484%402x.png)
 

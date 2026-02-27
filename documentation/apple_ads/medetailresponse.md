@@ -18,6 +18,10 @@ object MeDetailResponse
 
 - [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
 
+## Properties
+
+- `data` (MeDetail): Response data that the API provides.
+
 ## See Also
 
 - [Get User ACL](get-user-acl.md)

@@ -65,7 +65,7 @@ For more information about App Store storefronts, see [`Storefront`](storefront.
 
 ## Parameters
 
-- `url`: An eligible external purchase link that you select from the   array.
+- `url`: An eligible external purchase link that you select from the [`eligibleURLs`](externalpurchaselink/eligibleurls.md) array.
 
 ## See Also
 

@@ -14,6 +14,65 @@ To query the App Store, create an [`SKProductsRequest`](skproductsrequest.md) an
 
 The products request retrieves information about valid products, along with a list of invalid product identifiers, and then calls its delegate to process the result. The delegate needs to implement the [`SKProductsRequestDelegate`](skproductsrequestdelegate.md) protocol to handle the response from the App Store. Here’s a simple implementation of both pieces of code:
 
+**Swift**:
+
+```swift
+// Keep a strong reference to the product request.
+var request: SKProductsRequest!
+
+func validate(productIdentifiers: [String]) {
+     let productIdentifiers = Set(productIdentifiers)
+
+     request = SKProductsRequest(productIdentifiers: productIdentifiers)
+     request.delegate = self 
+     request.start()
+}
+
+var products = [SKProduct]()
+// Create the SKProductsRequestDelegate protocol method 
+// to receive the array of products.
+func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+    if !response.products.isEmpty {
+       products = response.products
+       // Implement your custom method here.
+       displayStore(products)
+    }
+
+    for invalidIdentifier in response.invalidProductIdentifiers {
+       // Handle any invalid product identifiers as appropriate.
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+// Custom method.
+- (void)validateProductIdentifiers:(NSArray *)productIdentifiers
+{
+    SKProductsRequest *productsRequest = [[SKProductsRequest alloc]
+        initWithProductIdentifiers:[NSSet setWithArray:productIdentifiers]];
+
+    // Keep a strong reference to the request.
+    self.request = productsRequest;
+    productsRequest.delegate = self;
+    [productsRequest start];
+}
+
+// SKProductsRequestDelegate protocol method.
+- (void)productsRequest:(SKProductsRequest *)request
+didReceiveResponse:(SKProductsResponse *)response
+{
+    self.products = response.products;
+
+    for (NSString *invalidIdentifier in response.invalidProductIdentifiers) {
+        // Handle any invalid product identifiers.
+    }
+
+    [self displayStoreUI]; // Custom method.
+}
+```
+
 Keep a reference to the array of [`SKProduct`](skproduct.md) objects that the delegate receives. Use these same product objects to create a payment request when a user purchases a product.
 
 If the list of products you sell in your app is subject to change, such as when you add or remove a product from sale, consider creating a custom class that encapsulates a reference to the product object along with other information, such as pictures or descriptions that you fetch from your server. For more information on payment requests, see [`Requesting a payment from the App Store`](requesting-a-payment-from-the-app-store.md).

@@ -107,6 +107,8 @@ After you perform the validations above, then you’re ready to use the returned
 
 - [Implementing as an identity document provider](implenting-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.
+- [Verifying a mobile document from a passport](verifying-a-mobile-document-from-a-passport.md)
+  Validate a response from mobile document information derived from a passport.
 
 
 ---

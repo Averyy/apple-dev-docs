@@ -14,6 +14,11 @@ A container for product page responses.
 object ProductPageDetailWithAssetInfoResponse
 ```
 
+## Properties
+
+- `data` ([ProductPageDetailWithAssets]): Response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object LocaleInfo](localeinfo.md)

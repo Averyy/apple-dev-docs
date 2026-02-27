@@ -20,6 +20,10 @@ object CustomReportResponse.Selector
 - [object CustomReportResponse.Selector.Conditions](customreportresponse/selector-data.dictionary/conditions-data.dictionary.md)
   A container for condition objects that allow users to filter a list of records.
 
+## Properties
+
+- `conditions` (CustomReportResponse.Selector.Conditions): A list of condition objects that allow users to filter a list of records.
+
 
 ---
 

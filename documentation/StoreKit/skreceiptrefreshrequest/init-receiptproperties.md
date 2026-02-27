@@ -34,7 +34,7 @@ In the sandbox environment, you can initialize a receipt with any combination of
 
 ## Parameters
 
-- `properties`: In the production environment, set this parameter to  .
+- `properties`: In the test environment, the properties that the new receipt is to have. For keys, see Receipt Properties and Keys. In the production environment, set this parameter to `nil`.
 
 
 ---

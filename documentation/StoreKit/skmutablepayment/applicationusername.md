@@ -36,6 +36,24 @@ Consider assigning a UUID to the [`applicationUsername`](skmutablepayment/applic
 
 The sample code below shows how to assign a UUID value to [`applicationUsername`](skmutablepayment/applicationusername.md). You may choose to generate the UUID on your server. Assign the value before adding the payment to the payment queue.
 
+**Swift**:
+
+```swift
+let payment = SKMutablePayment(product: product)
+payment.applicationUsername = uuidString
+
+SKPaymentQueue.default().add(payment)
+```
+
+**Objective-C**:
+
+```objc
+SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:product];
+payment.applicationUsername = uuidString;
+
+[[SKPaymentQueue defaultQueue] addPayment:payment];
+```
+
 If you don’t assign a UUID string value to [`applicationUsername`](skmutablepayment/applicationusername.md), the App Store server doesn’t persist the value. The value won’t appear in the [`app_account_token`](https://developer.apple.com/documentation/AppStoreReceipts/app_account_token) fields in notifications or receipts.
 
 > ❗ **Important**:  An [`applicationUsername`](skmutablepayment/applicationusername.md) property that isn’t a UUID isn’t guaranteed to persist between the time when you add the payment transaction to the queue and when the queue updates the transaction.

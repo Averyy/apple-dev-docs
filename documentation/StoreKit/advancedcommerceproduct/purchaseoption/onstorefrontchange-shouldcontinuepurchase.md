@@ -25,7 +25,7 @@ The default is `true` if you don’t include this option in the purchase options
 
 ## Parameters
 
-- `shouldContinuePurchase`: A closure that returns a Boolean value that determines whether the purchase continues when the storefront changes to   during the purchase process.
+- `shouldContinuePurchase`: A closure that returns a Boolean value that determines whether the purchase continues when the storefront changes to `Storefront` during the purchase process.
 
 
 ---

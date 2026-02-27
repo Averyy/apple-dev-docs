@@ -14,6 +14,11 @@ The API caller identifiers.
 object MeDetail
 ```
 
+## Properties
+
+- `parentOrgId` (int64): The account parent organization identifier.
+- `userId` (int64): The identifier of the API caller.
+
 ## See Also
 
 - [Get User ACL](get-user-acl.md)

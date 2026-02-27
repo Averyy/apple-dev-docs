@@ -18,6 +18,17 @@ object DeviceClassCriteria
 
 If you don’t set the `DeviceClassCriteria`, the API targets the currently supported devices by default.
 
+## Properties
+
+- `included` ([string]): The dimension to include the targeting criteria values for device class targeting. This parameter doesn’t support the `excluded` attribute. ```json
+"deviceClass": {
+      "included": [
+        "IPAD",
+        "IPHONE"
+      ]
+    },
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

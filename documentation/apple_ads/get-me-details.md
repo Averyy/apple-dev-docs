@@ -18,6 +18,29 @@ This endpoint returns the `userId` and `parentOrgId` of an API caller. See the [
 
 ##### Get Me Details Example
 
+**Request**:
+
+```None
+curl "https://api.searchads.apple.com/api/v5/me"
+-H "Authorization: Bearer {access_token}" \
+-H "X-AP-Context: orgId={orgId}"
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "userId": 3962840,
+    "parentOrgId": 27154130
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/me`
+
 ## See Also
 
 - [Get User ACL](get-user-acl.md)

@@ -8,6 +8,14 @@ Deletes a specific campaign by campaign identifier.
 **Availability**:
 - Search Ads 5.0+
 
+## Endpoint
+
+`DELETE https://api.searchads.apple.com/api/v5/campaigns/{campaignId}`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## See Also
 
 - [Create a Campaign](create-a-campaign.md)

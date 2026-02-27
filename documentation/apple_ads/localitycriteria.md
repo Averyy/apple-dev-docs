@@ -20,6 +20,16 @@ A `locality` is a city or the equivalent according to its associated `adminArea`
 
 Use the [`Search for Geolocations`](search-for-geolocations.md) endpoint with the `entity` query parameter to search for and retrieve geolocations. Then use geotargeting dimensions `country`, `adminArea`, and `locality` with [`Create an Ad Group`](create-an-ad-group.md)  and [`Update an Ad Group`](update-an-ad-group.md) endpoints.
 
+## Properties
+
+- `included` ([string]): The dimension to include targeted users by locality. For example, in the United States, a locality dimension is a city. This parameter doesn’t support the  `excluded` attribute. ```json
+"locality": {
+      "included": [
+        "US|CA|Cupertino"
+      ]
+    },
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

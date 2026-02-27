@@ -14,6 +14,81 @@ Use this endpoint to find `ads` within campaigns using a [`Selector`](selector.m
 
 ##### Payload Example Find Ads
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/ads/find
+
+{
+  "conditions": [
+    {
+      "field": "creativeType",
+      "operator": "EQUALS",
+      "values": [
+        "CUSTOM_PRODUCT_PAGE"
+      ]
+    },
+    {
+      "field": "status",
+      "operator": "EQUALS",
+      "values": [
+        "PAUSED"
+      ]
+    }
+  ],
+  "fields": null,
+  "orderBy": [
+    {
+      "field": "creativeType",
+      "sortOrder": "ASCENDING"
+    }
+  ],
+  "pagination": {
+    "limit": 20,
+    "offset": 0
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "id": 573408745,
+      "orgId": 39872140,
+      "campaignId": 570798765,
+      "adGroupId": 440797654,
+      "creativeId": 94895512,
+      "name": "Trip Trek custom product page variation",
+      "creativeType": "CUSTOM_PRODUCT_PAGE",
+      "status": "PAUSED",
+      "servingStatus": "NOT_RUNNING",
+      "servingStateReasons": [
+        "PAUSED_BY_USER"
+      ],
+      "deleted": false,
+      "creationTime": "2024-10-08T00:03:47.889Z",
+      "modificationTime": "2024-10-09T00:03:47.889Z"
+    }
+  ],
+  "pagination": {
+    "totalResults": 1,
+    "startIndex": 1,
+    "itemsPerPage": 10
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/ads/find`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

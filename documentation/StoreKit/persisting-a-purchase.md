@@ -28,6 +28,33 @@ The system adds information about all other kinds of purchases to the receipt wh
 
 To store information in user defaults or iCloud, set the value for a key.
 
+**Swift**:
+
+```swift
+#if USE_ICLOUD_STORAGE
+let storage = NSUbiquitousKeyValueStore.default
+#else
+let storage = UserDefaults.standard
+#endif
+
+storage.set(true, forKey: "enable_rocket_car")
+storage.set(highestUnlockedLevel, forKey: "highest_unlocked_level")
+
+```
+
+**Objective-C**:
+
+```objc
+#if USE_ICLOUD_STORAGE
+NSUbiquitousKeyValueStore *storage = [NSUbiquitousKeyValueStore defaultStore];
+#else
+NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+#endif
+
+[storage setBool:YES forKey:@"enable_rocket_car"];
+[storage setObject:@15 forKey:@"highest_unlocked_level"];
+```
+
 ##### Persist Purchases Using Your Own Server
 
 Send a copy of the receipt to your server, along with credentials or an identifier, so you can keep track of which receipts belong to a particular user. For example, let users identify themselves to your server with a user name and password. Don’t use the [`identifierForVendor`](https://developer.apple.com/documentation/UIKit/UIDevice/identifierForVendor) property of [`UIDevice`](https://developer.apple.com/documentation/UIKit/UIDevice). Different devices have different values for this property, so you can’t use it to identify and restore purchases that the same user makes on a different device.

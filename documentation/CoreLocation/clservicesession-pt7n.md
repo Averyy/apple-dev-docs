@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: class
 
+An object that provides diagnostics about an app’s authorization to use location services.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -23,21 +25,36 @@ final class CLServiceSession
 - [Configuring your app to use location services](configuring-your-app-to-use-location-services.md)
 - [Suspending authorization requests](suspending-authorization-requests.md)
 
+#### Discussion
+
+A `CLServiceSession` object represents your app’s current goal for location authorization (for example [`CLServiceSession.AuthorizationRequirement.always`](CLServiceSession-pt7n/AuthorizationRequirement/always.md)), if any. Use a `CLServiceSession` object to declaratively tell Core Location what your app needs for authorization related to a specific workflow that your app provides.
+
+The `CLServiceSession` object requests a person’s authorization to meet those requirements if possible, including automatically re-asking as needed after temporary authorization lapses due to time your app spends in the background.
+
+You can create and hold different session objects to request different kinds of authorization for each workflow; each of these represents an *Explicit Service Session* relevant to that workflow. Each object provides diagnostics that your app can observe to understand how its authorization state may differ from the goal it expressed.
+
+Don’t instantiate `CLServiceSession` objects directly; instead, create an instance that specifies a particular authorization mode, or authorization mode and accuracy requirements by using [`init(authorization:)`](CLServiceSession-pt7n/init(authorization:).md) or [`init(authorization:fullAccuracyPurposeKey:)`](CLServiceSession-pt7n/init(authorization:fullAccuracyPurposeKey:).md), respectively.
+
 ## Topics
 
-### Classes
+### Creating a session
+- [init(authorization: CLServiceSession.AuthorizationRequirement)](clservicesession-pt7n/init(authorization:).md)
+  Creates a services session by using the authorization mode you specify.
+- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).md)
+  Creates a services session by using the authorization mode and purpose key you specify.
+- [CLServiceSession.AuthorizationRequirement](clservicesession-pt7n/authorizationrequirement.md)
+  Values that describe when the service session needs to request authorization.
+### Ending the session
+- [func invalidate()](clservicesession-pt7n/invalidate.md)
+  Invalidates the services session.
+### Getting diagnostic information
+- [var diagnostics: CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.property.md)
+  A property that describes the current state of the services session.
 - [CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.class.md)
+  An object you use to access location service session diagnostic events.
 ### Structures
 - [CLServiceSession.Diagnostic](clservicesession-pt7n/diagnostic.md)
-### Initializers
-- [init(authorization: CLServiceSession.AuthorizationRequirement)](clservicesession-pt7n/init(authorization:).md)
-- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).md)
-### Instance Properties
-- [var diagnostics: CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.property.md)
-### Instance Methods
-- [func invalidate()](clservicesession-pt7n/invalidate.md)
-### Enumerations
-- [CLServiceSession.AuthorizationRequirement](clservicesession-pt7n/authorizationrequirement.md)
+  Values that describe the state of a core location services session.
 
 ## Relationships
 
@@ -52,7 +69,7 @@ final class CLServiceSession
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
 - [Creating a location push service extension](creating-a-location-push-service-extension.md)
-  Add and configure an extension to enable your location-sharing app to access a user’s location in response to a request from another user.
+  Add and configure an extension to enable your location-sharing app to access a person’s location in response to a request from someone else.
 - [class CLLocation](cllocation.md)
   The latitude, longitude, and course information reported by the system.
 - [struct CLLocationCoordinate2D](cllocationcoordinate2d.md)

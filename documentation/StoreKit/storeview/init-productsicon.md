@@ -27,7 +27,7 @@ The store view asynchronously loads and displays each product’s promotional im
 ## Parameters
 
 - `products`: The products to merchandise.
-- `icon`: A closure that receives a   and a   as input. The   indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
+- `icon`: A closure that receives a [`Product`](product.md) and a [`ProductIconPhase`](producticonphase.md) as input. The [`ProductIconPhase`](producticonphase.md) indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
 
 ## See Also
 

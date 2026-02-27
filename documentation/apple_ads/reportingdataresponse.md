@@ -14,6 +14,11 @@ The total metrics for a report.
 object ReportingDataResponse
 ```
 
+## Properties
+
+- `grandTotals` (GrandTotalsRow): A summary of cumulative report metrics.
+- `row` ([Row]): A grouping of metric totals.
+
 ## See Also
 
 - [object ReportingRequest](reportingrequest.md)

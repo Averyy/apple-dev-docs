@@ -22,7 +22,7 @@ The testing library uses this property to determine if an attachment should be h
 
 The value of this property is approximately equal to the number of bytes that will actually be needed, or `nil` if the value cannot be computed efficiently. The default implementation of this property returns `nil`.
 
-> **Note**: O(1) unless `Self` conforms to `Collection`, in which case up to O() where  is the length of the collection.
+> **Note**: O(1) unless `Self` conforms to `Collection`, in which case up to O(*n*) where *n* is the length of the collection.
 
 
 ---

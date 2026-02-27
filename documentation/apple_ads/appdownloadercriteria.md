@@ -20,6 +20,24 @@ To target all users, don’t include the `AppDownloaderCriteria` dimension in th
 
 Use the `adamId` of the app you’re promoting in your campaign as an `included`  or `excluded` value. You can obtain your app `adamId` through [`Get a Campaign`](get-a-campaign.md), [`Get all Campaigns`](get-all-campaigns.md), or [`Search for iOS apps`](search-for-ios-apps.md) using the `returnOwnedApps` query.
 
+## Properties
+
+- `excluded` ([string]): The dimension to limit viewing of your ad to users who have not downloaded your app. ```json
+{
+  "appDownloaders": {
+    "excluded": 654327167
+  }
+}
+```
+- `included` ([string]): The dimension to limit viewing of your ad to users who have downloaded your app. ```json
+{
+  "appDownloaders": {
+    "included": 654327143
+ 
+  }
+}
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

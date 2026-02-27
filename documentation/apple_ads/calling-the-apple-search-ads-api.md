@@ -16,16 +16,16 @@ curl "https://api.searchads.apple.com/api/v5/campaigns" \
 -H "X-AP-Context: orgId={orgId}"
 ```
 
-|  |  |
+| **Header** | **Description** |
 | --- | --- |
-| `Authorization` | . The authorization value is always `Bearer`. |
-| `X-AP-Context` | . The value is your `orgId`.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) : This isn’t a requirement when calling [`Get User ACL`](get-user-acl.md) and [`Get Me Details`](get-me-details.md). |
+| `Authorization` | **Required**. The authorization value is always `Bearer`. |
+| `X-AP-Context` | **Required**. The value is your `orgId`.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) **Note**: This isn’t a requirement when calling [`Get User ACL`](get-user-acl.md) and [`Get Me Details`](get-me-details.md). |
 
 To return the `userId` and `parentOrgId` of an API caller, use [`Get Me Details`](get-me-details.md).
 
 ##### Handle Errors
 
-|  |  |  |
+| **HTTP status code** | **Error message** | **Description** |
 | --- | --- | --- |
 | `401` | `unauthorized` | The token is invalid or expired. |
 | `403` | `forbidden` | The request requires higher privileges than the access token provides. |

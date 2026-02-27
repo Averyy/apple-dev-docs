@@ -14,6 +14,16 @@ The localized creative metadata.
 object CreativeLocalization
 ```
 
+## Properties
+
+- `appName` (string): The app name on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+- `deviceClasses` (string): The device classes assigned to a custom product page. See [`DeviceClass`](deviceclass.md) for value descriptions.
+- `language` (string): The language associated with the ISO alpha-2 country code, such as `US`.
+- `languageCode` (string): The ISO 639-1 language code appended to the ISO alpha-2 country code, such as `en-US`.
+- `promotionalText` (string): Text that appears at the top of the main description of a product page.
+- `shortDescription` (string): Concise, informative text to describe an app on a product page.
+- `subTitle` (string): A summary of an app that appears below the name of an app on a product page.
+
 ## See Also
 
 - [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)

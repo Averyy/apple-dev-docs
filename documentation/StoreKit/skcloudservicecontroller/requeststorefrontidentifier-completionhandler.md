@@ -25,7 +25,8 @@ You need to get the appropriate storefront before you specify a product, because
 
 ## Parameters
 
-- `completionHandler`: A block that is called when the storefront ID is returned. The block takes the following parameters:
+- `completionHandler`: A block that is called when the storefront ID is returned. The block takes the following parameters: - **storefrontIdentifier**: The identifier of a specific storefront.
+- **error**: An error value that indicates the reason for failure. Possible values are [`SKError.Code.unknown`](skerror/code/unknown.md), [`SKError.Code.cloudServicePermissionDenied`](skerror/code/cloudservicepermissiondenied.md), and [`SKError.Code.cloudServiceNetworkConnectionFailed`](skerror/code/cloudservicenetworkconnectionfailed.md).
 
 ## See Also
 

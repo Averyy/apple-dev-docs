@@ -25,7 +25,8 @@ You need to get the appropriate storefront country code before you specify a pro
 
 ## Parameters
 
-- `completionHandler`: A block that is called when the storefront country code is returned. The block takes the following parameters:
+- `completionHandler`: A block that is called when the storefront country code is returned. The block takes the following parameters: - **storefrontCountryCode**: The country code of a specific storefront.
+- **error**: An error value that indicates the reason for failure. See [`SKError.Code`](skerror/code.md) for possible error values.
 
 ## See Also
 

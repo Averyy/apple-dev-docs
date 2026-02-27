@@ -32,7 +32,7 @@ For more information about using [`display(in:)`](message/display(in:).md), see 
 
 ## Parameters
 
-- `scene`: The   that StoreKit uses to display the App Store message.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that StoreKit uses to display the App Store message.
 
 
 ---

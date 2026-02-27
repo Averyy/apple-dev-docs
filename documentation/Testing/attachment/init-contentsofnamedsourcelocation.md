@@ -34,8 +34,8 @@ When you call this initializer and pass it the URL of a file, it reads or maps t
 ## Parameters
 
 - `url`: The URL containing the attachment’s data.
-- `preferredName`: The preferred name of the attachment when writing it to   a test report or to disk. If  , the name of the attachment is   derived from the last path component of  .
-- `sourceLocation`: The source location of the call to this initializer.   This value is used when recording issues associated with the   attachment.
+- `preferredName`: The preferred name of the attachment when writing it to a test report or to disk. If `nil`, the name of the attachment is derived from the last path component of `url`.
+- `sourceLocation`: The source location of the call to this initializer. This value is used when recording issues associated with the attachment.
 
 
 ---

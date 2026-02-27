@@ -51,12 +51,12 @@ It is not necessary to specify both `precondition` and `issueMatcher` if only on
 ## Parameters
 
 - `comment`: An optional comment describing the known issue.
-- `isIntermittent`: Whether or not the known issue occurs intermittently. If   this argument is   and the known issue does not occur, no secondary   issue is recorded.
-- `isolation`: The actor to which   is isolated, if any.
-- `sourceLocation`: The source location to which any recorded issues should   be attributed.
+- `isIntermittent`: Whether or not the known issue occurs intermittently. If this argument is `true` and the known issue does not occur, no secondary issue is recorded.
+- `isolation`: The actor to which `body` is isolated, if any.
+- `sourceLocation`: The source location to which any recorded issues should be attributed.
 - `body`: The function to invoke.
-- `precondition`: A function that determines if issues are known to occur   during the execution of  . If this function returns  ,   encountered issues that are matched by   are considered to   be known issues; if this function returns  ,   is not   called and they are treated as unknown.
-- `issueMatcher`: A function to invoke when an issue occurs that is used to   determine if the issue is known to occur. By default, all issues match.
+- `precondition`: A function that determines if issues are known to occur during the execution of `body`. If this function returns `true`, encountered issues that are matched by `issueMatcher` are considered to be known issues; if this function returns `false`, `issueMatcher` is not called and they are treated as unknown.
+- `issueMatcher`: A function to invoke when an issue occurs that is used to determine if the issue is known to occur. By default, all issues match.
 
 ## See Also
 

@@ -18,6 +18,10 @@ object CountryCriteria
 
 Use [`Search for Geolocations`](search-for-geolocations.md) with `entity` to search for and retrieve geolocations. Then use geotargeting dimensions `country`, `adminArea`, and `locality` in the [`TargetingDimensions`](targetingdimensions.md) payload with [`Create an Ad Group`](create-an-ad-group.md)  and [`Update an Ad Group`](update-an-ad-group.md) endpoints. For the country dimension, use two-letter country codes in ISO 3166-1 alpha-2 country code format. Campaigns that serve multiple countries or regions can’t use geotargeting. Use [`UpdateCampaignRequest`](updatecampaignrequest.md) to clear geotargeting from a campaign.
 
+## Properties
+
+- `included` ([string]): The dimension to include targeted users by country or region. > **Note**:  For reports, `countryCriteria` must be the same location as the specified [`CountryOrRegion`](countryorregion.md).
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

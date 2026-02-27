@@ -39,6 +39,14 @@ echo -n com.your.id | openssl dgst -sha256
 
 The result is a hexadecimal value that you can compare with the value that this request returns in the `encryptTo` string.
 
+## Properties
+
+- `domainNames` ([string]): A list of fully qualified domain names for which Apple Pay processes payments for this merchant.
+- `encryptTo` (string): A SHA-256 hash of the payment platform integrator ID or merchant ID that you provided for the `encryptTo` value when calling [`Register Merchant`](register-merchant.md).
+- `partnerMerchantName` (string): A human-readable name for the merchant.
+- `partnerMerchantValidationURI` (string): The URI used by Apple to locate the domain verification file during merchant registration. It is used for tracking and debugging.
+- `partnerInternalMerchantIdentifier` (string): The identifier that uniquely identifies the merchant.
+
 ## See Also
 
 - [Get Merchant Details](get-merchant.md)

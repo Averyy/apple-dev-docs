@@ -22,6 +22,11 @@ In the following example, the two optional parameters limit the number of campai
 GET https://api.searchads.apple.com/api/v5/campaigns?limit=<LIMIT>&offset=<OFFSET>
 ```
 
+## Properties
+
+- `limit` (int32): The number of items to return per request. For most objects, the default is `20` and the maximum is `1000`.
+- `offset` (int32): The offset pagination that limits the number of returned records. The start of each page is offset by the specified number. You can apply `offset` to most API calls, but not all GET endpoints support it. The default is `0`.
+
 ## See Also
 
 - [object Condition](condition.md)

@@ -39,7 +39,7 @@ In Mac apps built with Mac Catalyst, this method throws a [`StoreKitError.unknow
 
 ## Parameters
 
-- `scene`: The   that StoreKit uses to display the offer code redemption sheet.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that StoreKit uses to display the offer code redemption sheet.
 
 ## See Also
 

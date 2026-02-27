@@ -35,7 +35,7 @@ For example, if a suite contains five tests and you apply a time limit trait wit
 
 ##### Apply Time Limits to Parameterized Tests
 
-When you apply a time limit to a parameterized test function, the testing library applies it to each invocation  so that if only some cases cause failures due to timeouts, then the testing library doesn’t incorrectly mark successful cases as failing.
+When you apply a time limit to a parameterized test function, the testing library applies it to each invocation *separately* so that if only some cases cause failures due to timeouts, then the testing library doesn’t incorrectly mark successful cases as failing.
 
 ## See Also
 

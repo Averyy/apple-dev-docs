@@ -31,7 +31,7 @@ Within `isIncluded`, you may access the current test or test case (if any) using
 
 ## Parameters
 
-- `isIncluded`: The predicate with which to filter issues recorded by the   test this trait is applied to. It is passed a recorded issue, and   should return   if the issue should be included, or   if it   should be suppressed.
+- `isIncluded`: The predicate with which to filter issues recorded by the test this trait is applied to. It is passed a recorded issue, and should return `true` if the issue should be included, or `false` if it should be suppressed.
 
 ## See Also
 

@@ -27,6 +27,58 @@ To create campaign negative keywords, use the associated `campaignId` in the URI
 
 ##### Payload Example Create Campaign Negative Keywords
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/bulk
+
+[
+    {
+        "text": "create campaign negative keyword example 1",
+        "matchType": "EXACT"
+    },
+    {
+        "text": "create campaign negative keyword example 2",
+        "matchType": "BROAD"
+    }
+]
+```
+
+**Response**:
+
+```json
+[
+  {
+    "id": 542370642,
+    "campaignId": 542370539,
+    "adGroupId": 542317095,
+    "text": "create campaign negative keyword example 1",
+    "status": "ACTIVE",
+    "matchType": "EXACT",
+    "modificationTime": "2024-04-08T20:52:59.050",
+    "deleted": false
+  },
+  {
+    "id": 542370643,
+    "campaignId": 542370539,
+    "adGroupId": 542317095,
+    "text": "create campaign negative keyword example 2",
+    "status": "ACTIVE",
+    "matchType": "BROAD",
+    "modificationTime": "2024-04-08T20:52:59.054",
+    "deleted": false
+  }
+]
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/bulk`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes negative keyword details.

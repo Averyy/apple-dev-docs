@@ -14,6 +14,10 @@ A parent object of the error response.
 object ErrorResponseBody
 ```
 
+## Properties
+
+- `errors` ([ErrorResponseItem]): A container for error message details.
+
 ## See Also
 
 - [object ApiErrorResponse](apierrorresponse.md)

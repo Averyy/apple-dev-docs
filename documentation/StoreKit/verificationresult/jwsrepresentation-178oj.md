@@ -27,7 +27,7 @@ The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) is the 
 
 To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) on your server, consider using the App Store Server Library function `verifyAndDecodeRenewalInfo`, available in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
 
-> ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSRenewalInfo) strings contain [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields that are specified in  of the currency; StoreKit represents the [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) in  of currency. Take care not to confuse these two representations when working with both APIs.
+> ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSRenewalInfo) strings contain [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields that are specified in *milliunits* of the currency; StoreKit represents the [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) in *units* of currency. Take care not to confuse these two representations when working with both APIs.
 
 ## See Also
 

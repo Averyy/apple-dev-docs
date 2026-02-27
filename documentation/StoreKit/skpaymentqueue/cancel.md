@@ -25,7 +25,7 @@ func cancel(_ downloads: [SKDownload])
 
 ## Parameters
 
-- `downloads`: An array of   objects to cancel.
+- `downloads`: An array of [`SKDownload`](skdownload.md) objects to cancel.
 
 ## See Also
 

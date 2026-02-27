@@ -26,6 +26,12 @@ The following example shows the format of an `UnregisterMerchant` request.
 }
 ```
 
+## Properties
+
+- `domainNames` ([string]) *(required)*: A list of fully qualified domain names to unregister. If a merchant has no remaining domain names after this request removes domains, Apple Pay server deletes the merchant’s registration.
+- `partnerInternalMerchantIdentifier` (string) *(required)*: A merchant identifier that you create to uniquely identify the registered merchant, and which you use in Apple Pay transactions and in this API.
+- `reason` (string) *(required)*: A short, human-readable phrase that describes the cause of unregistration.
+
 ## See Also
 
 - [Unregister Merchant](unregister-merchant.md)

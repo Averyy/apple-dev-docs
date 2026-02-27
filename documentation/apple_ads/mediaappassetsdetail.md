@@ -14,6 +14,12 @@ The app asset details of a device.
 object MediaAppAssetsDetail
 ```
 
+## Properties
+
+- `appPreviewDeviceFallBackDevices` ([string]): Devices that don’t have uploaded assets use fallback device mapping.
+- `appPreviews` ([MediaAppVideoAsset]): Still images of video assets to use for [`app previews`](https://developer.apple.comhttps://developer.apple.com/app-store/app-previews/).
+- `screenshots` ([MediaAppAsset]): Standard images of your app to use for [`app previews`](https://developer.apple.comhttps://developer.apple.com/app-store/app-previews/).
+
 ## See Also
 
 - [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)

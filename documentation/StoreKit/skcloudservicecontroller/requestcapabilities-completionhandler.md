@@ -28,7 +28,8 @@ func requestCapabilities() async throws -> SKCloudServiceCapability
 
 ## Parameters
 
-- `completionHandler`: A block that is called when the device’s current capabilities are determined. The block takes the following parameters:
+- `completionHandler`: A block that is called when the device’s current capabilities are determined. The block takes the following parameters: - **capabilities**: Flags that indicate the device’s capabilities. For possible values, see [`SKCloudServiceCapability`](skcloudservicecapability.md).
+- **error**: An error value that indicates the reason for failure. Possible values are [`SKError.Code.unknown`](skerror/code/unknown.md), [`SKError.Code.cloudServicePermissionDenied`](skerror/code/cloudservicepermissiondenied.md), and [`SKError.Code.cloudServiceNetworkConnectionFailed`](skerror/code/cloudservicenetworkconnectionfailed.md).
 
 ## See Also
 

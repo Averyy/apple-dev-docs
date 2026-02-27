@@ -12,6 +12,12 @@ When your app offers In-App Purchases, customers typically buy the products from
 
 Several types of events result in a purchase transaction that occurs outside your app, including the following:
 
+- **Redeeming offer codes**: Customers can redeem offer codes on the Redeem Gift Card or Code page in their App Store account settings, by using a redemption URL, and when your app calls a redemption API like [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md). For more information, see [`Set up offer codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes).
+- **Redeeming a promo code for an In-App Purchase**: Customers can redeem promo codes in the App Store. For more information, see [`Request and manage promo codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/offer-promo-codes/request-and-manage-promo-codes).
+- **Redeeming a win-back offer**: Eligible customers can redeem a win-back offer that you merchandise on the App Store or with a direct URL. For specific test cases, see [`Testing win-back offers in the sandbox environment`](testing-win-back-offers-in-the-sandbox-environment.md).
+- **Renewing an auto-renewable subscription**: Apple bills customers when an auto-renewable subscription renews, and the renewal transaction occurs outside your app.
+- **Resubscribing from the Apple Subscriptions page**: Customers can resubscribe to expired subscriptions from their Account > Subscriptions page in the App Store.
+
 All of these events result in StoreKit sending a transaction to your app through the [`updates`](transaction/updates.md) asynchronous sequence in [`Transaction`](transaction.md). Test your app to be sure it receives and handles the transaction.
 
 ##### Set Up a Test in Account Settings

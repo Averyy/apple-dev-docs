@@ -16,11 +16,11 @@ Apps running in the sandbox environment need to satisfy the same requirements as
 
 ##### Handle Custom Link Tokens in the Sandbox Environment
 
-The [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API generates custom link tokens, which have a token type and an expiration date. There are two possible token types, `ACQUISITION` and `SERVICES`. Your app requests a token by calling the [`token(for:)`](externalpurchasecustomlink/token(for:).md) method and specifying the token type. The first time you request a token in the sandbox environment, the system creates the token and initiates an .
+The [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API generates custom link tokens, which have a token type and an expiration date. There are two possible token types, `ACQUISITION` and `SERVICES`. Your app requests a token by calling the [`token(for:)`](externalpurchasecustomlink/token(for:).md) method and specifying the token type. The first time you request a token in the sandbox environment, the system creates the token and initiates an *active token period*.
 
 > **Note**: In the sandbox environment, custom link tokens expire 1 hour after creation.
 
-Apps can request tokens again at any time. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be identical to the original token, or it can be a  token. A refreshed token has the same creation and expiration dates as the original token, but a different `externalPurchaseId`. Use either an original token or a refreshed token to report transactions.
+Apps can request tokens again at any time. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be identical to the original token, or it can be a *refreshed* token. A refreshed token has the same creation and expiration dates as the original token, but a different `externalPurchaseId`. Use either an original token or a refreshed token to report transactions.
 
 There’s a maximum of one active token period for `ACQUISITION` tokens, for each Sandbox Apple Account, for each app. After the `ACQUISITION` token expires, the Sandbox Apple Account can’t receive another `ACQUISITION` token for the same app. This reflects the behavior in the production environment, where apps have a maximum of one active period for the `ACQUISITION` token for each customer. To repeat tests for this token type after it expires, use another Sandbox Apple Account.
 

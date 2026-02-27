@@ -18,6 +18,48 @@ The `Id` in the response is your `adId`, representing the assignment of a creati
 
 ##### Payload Example Create an Ad
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/ads
+
+{
+  "creativeId": 94895512,
+  "name": "Trip Trek custom product page variation",
+  "status": "ENABLED"
+}
+```
+
+**Response**:
+
+```json
+
+{
+  "id": 573408745,
+  "orgId": 39872140,
+  "campaignId": 570798765,
+  "adGroupId": 427916203,
+  "creativeId": 94895512,
+  "name": "Trip Trek custom product page variation",
+  "creativeType": "CUSTOM_PRODUCT_PAGE",
+  "status": "ENABLED",
+  "servingStatus": "RUNNING",
+  "statusReasons": [],
+  "deleted": false,
+  "creationTime": "2024-10-09 21:25:33",
+  "modificationTime": "2024-10-09 21:25:33"
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/ads`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes the details of the [`Ad`](ad.md) object creation request.

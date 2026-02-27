@@ -14,6 +14,11 @@ The response to a request that returns a list of product page rejection reasons
 object ProductPageReasonListResponse
 ```
 
+## Properties
+
+- `data` ([ProductPageReason]): Response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object AppAsset](appasset.md)

@@ -20,6 +20,10 @@ object ProductPageLocaleDetail.AppPreviewDeviceWithAssets
 - [object ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key](productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.md)
   The app preview device assets.
 
+## Properties
+
+- `Any Key` (ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key): Maps to the [`ProductPageLocaleDetail.AppPreviewDeviceWithAssets`](productpagelocaledetail/apppreviewdevicewithassets-data.dictionary.md) class.
+
 
 ---
 

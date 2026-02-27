@@ -18,6 +18,83 @@ Use this endpoint to find targeting keywords in different ad groups within the s
 
 ##### Payload Example Find Targeting Keywords in a Campaign
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/targetingkeywords/find
+
+{
+  "pagination": {
+    "offset": 0,
+    "limit": 100
+  },
+  "orderBy": [
+    {
+      "field": "id",
+      "sortOrder": "ASCENDING"
+    }
+  ],
+  "conditions": [
+    {
+      "field": "deleted",
+      "operator": "EQUALS",
+      "values": [
+        "false"
+      ]
+    }
+  ]
+}
+
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "id": 542370642,
+      "adGroupId": 427916203,
+      "text": "targeting keyword example 1",
+      "status": "PAUSED",
+      "matchType": "BROAD",
+      "bidAmount": {
+        "amount": "100",
+        "currency": "USD"
+      },
+      "modificationTime": "2024-04-08T21:03:02.216",
+      "deleted": false
+    },
+    {
+      "id": 542370642,
+      "adGroupId": 427916203,
+      "text": "targeting keyword example 2",
+      "status": "ACTIVE",
+      "matchType": "EXACT",
+      "bidAmount": {
+        "amount": "100",
+        "currency": "USD"
+      },
+      "modificationTime": "2024-04-08T17:53:10.899",
+      "deleted": false
+    }
+  ],
+  "pagination": {
+    "totalResults": 2,
+    "startIndex": 1,
+    "itemsPerPage": 10
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/targetingkeywords/find`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

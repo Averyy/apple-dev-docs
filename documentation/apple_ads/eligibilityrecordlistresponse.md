@@ -14,6 +14,11 @@ The response details to an app eligibility request.
 object EligibilityRecordListResponse
 ```
 
+## Properties
+
+- `data` ([EligibilityRecord]): Response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object EligibilityRecord](eligibilityrecord.md)

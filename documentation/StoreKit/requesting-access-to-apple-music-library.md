@@ -22,7 +22,47 @@ See [`Requesting access to protected resources`](https://developer.apple.com/doc
 
 The user determines whether apps can play items from the Apple Music catalog or add tracks to their iCloud Music library. They can grant or deny access when your app requests authorization. Because the user can change your app’s authorization status in Settings > Privacy > Media and Apple Music, be sure to call [`SKCloudServiceController`](skcloudservicecontroller.md)’s [`authorizationStatus()`](skcloudservicecontroller/authorizationstatus().md) before attempting to access their Apple Music library.
 
+**Swift**:
+
+```swift
+guard SKCloudServiceController.authorizationStatus() == .notDetermined else { return }
+```
+
+**Objective-C**:
+
+```objc
+SKCloudServiceAuthorizationStatus status = ([SKCloudServiceController authorizationStatus] == SKCloudServiceAuthorizationStatusNotDetermined);
+```
+
 If the authorization status i`s` [`SKCloudServiceAuthorizationStatus.notDetermined`](skcloudserviceauthorizationstatus/notdetermined.md), call [`SKCloudServiceController`](skcloudservicecontroller.md)’s [`requestAuthorization(_:)`](skcloudservicecontroller/requestauthorization(_:).md) to prompt the user for access.
+
+**Swift**:
+
+```swift
+SKCloudServiceController.requestAuthorization {(status: SKCloudServiceAuthorizationStatus) in
+    switch status {
+    case .denied, .restricted: disableAppleMusicBasedFeatures()
+    case .authorized: enableAppleMusicBasedFeatures()
+    default: break
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+[SKCloudServiceController requestAuthorization:^(SKCloudServiceAuthorizationStatus status) {
+    switch (status) {
+        case SKCloudServiceAuthorizationStatusDenied:
+        case SKCloudServiceAuthorizationStatusRestricted: [self disableAppleMusicBasedFeatures];
+            break;
+        case SKCloudServiceAuthorizationStatusAuthorized: [self enableAppleMusicBasedFeatures];
+            break;
+        default: break;
+    }
+}];
+
+```
 
 The system remembers the user’s answer so that subsequent calls to [`requestAuthorization(_:)`](skcloudservicecontroller/requestauthorization(_:).md) don’t prompt them again.
 

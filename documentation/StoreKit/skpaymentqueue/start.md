@@ -29,7 +29,7 @@ In order for a download object to be queued, it must be associated with a transa
 
 ## Parameters
 
-- `downloads`: An array of   objects to begin downloading.
+- `downloads`: An array of [`SKDownload`](skdownload.md) objects to begin downloading.
 
 ## See Also
 

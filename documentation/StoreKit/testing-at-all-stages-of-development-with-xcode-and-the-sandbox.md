@@ -14,6 +14,10 @@ Use the Apple sandbox and Xcode test environments to test your implementation of
 
 The tools you need to test in-app purchases, non-renewing subscriptions, and auto-renewable subscriptions from early development through beta testing are:
 
+- **StoreKit Testing in Xcode**: For early development, continuous integration, and debugging. For more information, see [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest).
+- **Sandbox**: For testing scenarios using in-app purchase data you set up in App Store Connect. For more information, see [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md).
+- **TestFlight**: For managing beta testing with internal and external testers. TestFlight uses a beta build of your app or App Clip that you upload to App Store Connect. For more information, see [`Beta Testing Made Simple with TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/).
+
 Choose the tools that support the test scenarios you need. Make sure you’re able to perform the setup required for the tools you choose.
 
 During the early stages of development, you may not be ready to configure in-app purchases in App Store Connect. StoreKit Testing in Xcode lets you configure the information locally. You can test StoreKit transactions before you create Sandbox Apple Accounts, without a network connection. You can test your app in Simulator or on real devices.

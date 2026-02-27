@@ -18,6 +18,41 @@ Use this endpoint to create a [`Creative`](creative.md) object within your organ
 
 ##### Payload Example Create a Creative
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/creatives
+
+{
+  "adamId": 899247964,
+  "name": "Trip Trek CPP variation",
+  "type”: "CUSTOM_PRODUCT_PAGE",
+  "productPageId": "45812c9b-c296-43d3-c6a0-c5a02f74bf6e"
+}
+```
+
+**Response**:
+
+```json
+{
+    "id": 94895512,
+    "orgId": 39872140,
+    "adamId": 899247964,
+    "name": "Trip Trek CPP variation",
+    "type": "CUSTOM_PRODUCT_PAGE",
+    "state": "VALID",
+    "stateReasons": [],
+    "creationTime": "2024-10-09T06:48:22.812Z",
+    "modificationTime": "2024-107-09T06:48:22.812Z",
+    "productPageId": "45812c9b-c296-43d3-c6a0-c5a02f74bf6e"
+  }
+
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/creatives`
+
 ## Request Body
 
 The request body that includes details of the [`Creative`](creative.md).

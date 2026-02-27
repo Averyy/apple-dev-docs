@@ -18,6 +18,12 @@ object SovCondition
 
 The `Condition` object functionality is similar to the `WHERE` clause in SQL.
 
+## Properties
+
+- `field` (string): A list of field names to return within each record.
+- `operator` (string): The operator values compare attributes to a list of specified values. The `IN` operator matches any value in a list of specified values.
+- `values` ([string]): A list of matching values.
+
 ## See Also
 
 - [object CustomReportRequest](customreportrequest.md)

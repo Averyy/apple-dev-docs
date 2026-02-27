@@ -12,9 +12,16 @@ The Apple Ads API uses a REST data model, and you use CRUD (create, read, update
 
 CRUD methods in the Apple Ads API include the following:
 
+- **POST**: Creates new resources, finds resources, and pulls reports.
+
 The API supports the use of selectors with `find` calls to filter resource data. See the [`Selector`](selector.md) object.
 
+- **GET**: Reads a specific resource. Some calls use an identifier and accept `limit` and `offset` query parameters to obtain a collection of resources.
+
 See the Use a Partial Fetch section below for query parameter functionality.
+
+- **PUT**: Updates a specific resource or multiple resources by identifier.
+- **DELETE**: Deletes a specific resource by identifier.
 
 ##### Format Requests and Responses
 

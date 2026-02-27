@@ -18,6 +18,69 @@ Use this endpoint to determine whether an app is eligible to promote in a campai
 
 ##### Payload Example Find App Eligibility Records
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/apps/<adamId>/eligibilities/find
+
+{
+    "conditions": [
+        {
+            "field": "countryOrRegion",
+            "operator": "IN",
+            "values": ["US", "MX"]
+        },
+        {
+            "field": "supplySource",
+            "operator": "EQUALS",
+            "values": ["APPSTORE_TODAY_TAB"]
+        }
+    ],
+    "pagination": {
+        "offset": 0,
+        "limit": 2
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "adamId": 123456789,
+            "deviceClass": "IPHONE",
+            "state": "ELIGIBLE",
+            "minAge": 18,
+            "countryOrRegion": "US",
+            "supplySource": "APPSTORE_TODAY_TAB"
+        },
+        {
+            "adamId": 123456789,
+            "deviceClass": "IPAD",
+            "state": "INELIGIBLE",
+            "minAge": 18,
+            "countryOrRegion": "US",
+            "supplySource": "APPSTORE_TODAY_TAB"
+        }
+    ],
+    "pagination": {
+        "totalResults": 4,
+        "startIndex": 0,
+        "itemsPerPage": 2
+    }
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/apps/{adamId}/eligibilities/find`
+
+## Parameters
+
+- `adamId` (string) *(required)*: A unique App Store app identifier.
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

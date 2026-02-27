@@ -34,7 +34,7 @@ For more information about ad impressions and attributions, see [`Receiving ad a
 
 ## Parameters
 
-- `impression`: An instance of   with the properties set for the view-through ad that you presented. This must be the same instance you provide in  .
+- `impression`: An instance of [`SKAdImpression`](skadimpression.md) with the properties set for the view-through ad that you presented. This must be the same instance you provide in [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md).
 - `completion`: The callback handler you provide to handle any tasks relevant to concluding the ad impression.
 
 ## See Also

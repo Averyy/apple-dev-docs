@@ -29,7 +29,7 @@ The [`ProductIconPhase`](producticonphase.md) value indicates whether the promot
 ## Parameters
 
 - `product`: The product to merchandise.
-- `icon`: A closure that receives a   as an input, which indicates the state of the loading operation of the product’s promoted image, and returns the view to display for the specified phase.
+- `icon`: A closure that receives a [`ProductIconPhase`](producticonphase.md) as an input, which indicates the state of the loading operation of the product’s promoted image, and returns the view to display for the specified phase.
 
 ## See Also
 

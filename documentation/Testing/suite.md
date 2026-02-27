@@ -33,7 +33,7 @@ When adding test functions to a type extension, do not use the `@Suite` attribut
 
 ## Parameters
 
-- `displayName`: The customized display name of this test suite. If the   value of this argument is  , the display name of the test is derived   from the associated type’s name.
+- `displayName`: The customized display name of this test suite. If the value of this argument is `nil`, the display name of the test is derived from the associated type’s name.
 - `traits`: Zero or more traits to apply to this test suite.
 
 ## See Also

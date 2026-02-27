@@ -24,8 +24,8 @@ func load(options: [SKCloudServiceSetupOptionsKey : Any] = [:]) async throws -> 
 
 ## Parameters
 
-- `options`: A key that identifies the type of setup the user needs to do. See   for possible values.
-- `completionHandler`: An error value that indicates the reason for failure. Possible values are  ,  , and  .
+- `options`: A key that identifies the type of setup the user needs to do. See [`SKCloudServiceSetupOptionsKey`](skcloudservicesetupoptionskey.md) for possible values.
+- `completionHandler`: A block that is called when the setup view has loaded. The block takes the following parameters: `result` A Boolean value that indicates whether the view controller has loaded the view and can be presented. `error` An error value that indicates the reason for failure. Possible values are [`SKError.Code.unknown`](skerror/code/unknown.md), [`SKError.Code.cloudServicePermissionDenied`](skerror/code/cloudservicepermissiondenied.md), and [`SKError.Code.cloudServiceNetworkConnectionFailed`](skerror/code/cloudservicenetworkconnectionfailed.md).
 
 ## See Also
 

@@ -14,6 +14,12 @@ The container object for the report response body.
 object ReportingResponseBody
 ```
 
+## Properties
+
+- `data` (ReportingResponse): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object ReportingRequest](reportingrequest.md)

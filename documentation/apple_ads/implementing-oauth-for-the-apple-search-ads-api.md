@@ -39,7 +39,7 @@ API users need to create a private key. If you’re using MacOS or a UNIX-like o
 openssl ecparam -genkey -name prime256v1 -noout -out private-key.pem
 ```
 
-|  |  |
+| **Parameter** | **Description** |
 | --- | --- |
 | `-name` | `prime256v1` — the Elliptic Curve Digital Signature Algorithm (ECDSA) filename. |
 | `-out` | The `.pem` filename where you generate and store the key pair. |
@@ -64,7 +64,7 @@ Use the following command to extract a public key from your persisted private ke
 openssl ec -in private-key.pem -pubout -out public-key.pem
 ```
 
-|  |  |
+| **Parameter** | **Description** |
 | --- | --- |
 | `-in` | The private key filename: `private-key.pem` |
 | `-out` | The `ec256-public-key` file where you generate and store the public key. |
@@ -161,14 +161,14 @@ with open('client_secret.txt', 'w') as output:
 
 A client secret header describes the type of the token and the hashing algorithm it uses.
 
-|  |  |
+| **Key** | **Description** |
 | --- | --- |
 | `alg` | The algorithm that signs the client secret. The value must be `ES256`. |
 | `kid` | The value is your `keyId` that returns when you upload a public key. |
 
 The client secret includes a payload with claims.
 
-|  |  |
+| **Claim** | **Description** |
 | --- | --- |
 | `aud` | The audience for the client secret. The value is: `https://appleid.apple.com`. |
 | `exp` | The UNIX UTC timestamp of when the client secret expires. The value must be greater than the current date and time, and less than 180 days from the `iat` timestamp. |
@@ -231,17 +231,17 @@ cODqL7_uTmA5jKFx3ez9uoqQrEKZ51g665jSI6NlyeLtj4LrxpI9jZ4zTx1yqqjQx0doYQjBPhOB
 xwRMB5LaaVrQZlhj9xjum0MfDpIS1hJI6p5CHZ8w&scope=searchadsorg'
 ```
 
-|  |  |
+| **Request header** | **Description** |
 | --- | --- |
-| `Host` | . `appleid.apple.com` |
-| `Content-Type` | . `application/x-www-form-urlencoded` |
+| `Host` | **Required**. `appleid.apple.com` |
+| `Content-Type` | **Required**. `application/x-www-form-urlencoded` |
 
-|  |  |  |
+| **Request parameter** | **Type** | **Description** |
 | --- | --- | --- |
-| `client_id` | String | . You receive your `clientId` when you upload a public key. |
-| `client_secret` | String | . The client secret is a JWT that you create and sign with your private key. |
-| `grant_type` | String | . The method to request authorization and get an access token.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The value is `client_credentials`. |
-| `scope` | String | . Defines the access permissions you request from the user, and limits the authorization of the access token you receive. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The value is `searchadsorg`. |
+| `client_id` | String | **Required**. You receive your `clientId` when you upload a public key. |
+| `client_secret` | String | **Required**. The client secret is a JWT that you create and sign with your private key. |
+| `grant_type` | String | **Required**. The method to request authorization and get an access token.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The value is `client_credentials`. |
+| `scope` | String | **Required**. Defines the access permissions you request from the user, and limits the authorization of the access token you receive. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The value is `searchadsorg`. |
 
 After accepting the credentials, the authorization server returns an access token.
 
@@ -259,7 +259,7 @@ QaxF3Gadtu_Z5rYFg.vD0iQuRwHGYVnDy27qexCw",
 }
 ```
 
-|  |  |  |
+| **Response parameter** | **Type** | **Description** |
 | --- | --- | --- |
 | `access_token` | String | Your `access_token` is a requirement to make calls to Apple Ads Campaign Management API endpoints. See [`Calling the Apple Ads API`](calling-the-apple-search-ads-api.md). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Your `access_token` is valid for the number of seconds that `expires_in` specifies. |
 | `token_type` | String | The type of access token. The value is always `Bearer`. |

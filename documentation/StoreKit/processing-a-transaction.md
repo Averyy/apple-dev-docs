@@ -20,6 +20,28 @@ By adding an observer, your app doesn’t need to constantly poll the status of 
 
 It’s important to register a transaction queue observer as soon as your app launches, as the code shows below. For more guidance, see [`Setting up the transaction observer for the payment queue`](setting-up-the-transaction-observer-for-the-payment-queue.md).
 
+**Swift**:
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    /* ... */
+    SKPaymentQueue.default().add(observer)
+    return true
+}
+```
+
+**Objective-C**:
+
+```objc
+- (BOOL)application:(UIApplication *)application
+ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    /* ... */
+
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
+}
+```
+
 Make sure that the observer is ready to handle a transaction at any time, not only after you add a transaction to the queue. For example, if a user buys something in your app just before entering a tunnel, your app may not be able to deliver the purchased content if there isn’t a network connection. The next time your app launches, StoreKit calls your transaction queue observer again so your app can handle the transaction and deliver the purchased content. Similarly, if your app fails to mark a transaction as finished, StoreKit calls the observer every time your app launches until the transaction finishes.
 
 Implement the [`paymentQueue(_:updatedTransactions:)`](skpaymenttransactionobserver/paymentqueue(_:updatedtransactions:).md) method on your transaction queue observer. StoreKit calls this method when the status of a transaction changes, such as when a payment request has been processed. The transaction status tells you what action your app needs to perform, as described in the table below:
@@ -33,6 +55,58 @@ Implement the [`paymentQueue(_:updatedTransactions:)`](skpaymenttransactionobser
 | [`SKPaymentTransactionState.restored`](skpaymenttransactionstate/restored.md) | Restore the previously purchased functionality. |
 
 Transactions in the queue can change state in any order. Your app needs to be ready to work on any active transaction at any time. Act on every transaction according to its transaction state, as in this example:
+
+**Swift**:
+
+```swift
+func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+     for transaction in transactions {
+     switch transaction.transactionState {
+          // Call the appropriate custom method for the transaction state.
+     case .purchasing: showTransactionAsInProgress(transaction, deferred: false)
+     case .deferred: showTransactionAsInProgress(transaction, deferred: true)
+     case .failed: failedTransaction(transaction)
+          case .purchased: completeTransaction(transaction)
+     case .restored: restoreTransaction(transaction)
+          // For debugging purposes.
+     @unknown default: print("Unexpected transaction state \(transaction.transactionState)")
+    }
+     }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)paymentQueue:(SKPaymentQueue *)queue
+ updatedTransactions:(NSArray *)transactions
+{
+    for (SKPaymentTransaction *transaction in transactions) {
+        switch (transaction.transactionState) {
+            // Call the appropriate custom method for the transaction state.
+            case SKPaymentTransactionStatePurchasing:
+                [self showTransactionAsInProgress:transaction deferred:NO];
+                break;
+            case SKPaymentTransactionStateDeferred:
+                [self showTransactionAsInProgress:transaction deferred:YES];
+                break;
+            case SKPaymentTransactionStateFailed:
+                [self failedTransaction:transaction];
+                break;
+            case SKPaymentTransactionStatePurchased:
+                [self completeTransaction:transaction];
+                break;
+            case SKPaymentTransactionStateRestored:
+                [self restoreTransaction:transaction];
+                break;
+            default:
+                // For debugging
+                NSLog(@"Unexpected transaction state %@", @(transaction.transactionState));
+                break;
+        }
+    }
+}
+```
 
 ##### Update the Apps Ui to Reflect Transaction Changes
 

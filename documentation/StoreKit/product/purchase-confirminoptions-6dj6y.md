@@ -38,8 +38,8 @@ This method may throw a [`Product.PurchaseError`](product/purchaseerror.md) or [
 
 ## Parameters
 
-- `scene`: The   the system uses to show the purchase confirmation UI.
-- `options`: A set of options ( ) you can associate with the purchase.
+- `scene`: The [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) the system uses to show the purchase confirmation UI.
+- `options`: A set of options ([`Product.PurchaseOption`](product/purchaseoption.md)) you can associate with the purchase.
 
 ## See Also
 

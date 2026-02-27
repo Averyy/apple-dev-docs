@@ -22,6 +22,11 @@ object AppCategoryCriteria
 
 The app category targeting dimension is optional and is only applicable to campaigns using a [`SupplySource`](supplysource.md) of `APPSTORE_PRODUCT_PAGES_BROWSE`. See the [`App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/categories/) for more details about categories.
 
+## Properties
+
+- `excluded` ([integer]): A value of `100` indicates that you aren’t targeting apps with the same app category as your app.
+- `included` ([integer]): A value of `100` indicates that you are targeting apps with the same app category as your app.
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

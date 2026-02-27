@@ -92,7 +92,7 @@ You may perform this test with or without Billing Grace Period enabled.
 
 ##### Test Subscriptions That Recover From Billing Issues
 
-A subscription is  when a billing retry succeeds. It exits a billing retry or billing grace period state, and is active again.
+A subscription is *recovered* when a billing retry succeeds. It exits a billing retry or billing grace period state, and is active again.
 
 To test recovered auto-renewable subscriptions, follow these steps:
 

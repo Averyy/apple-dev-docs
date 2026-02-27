@@ -23,7 +23,7 @@ init(ids productIDs: some Collection<String>, prefersPromotionalIcon: Bool = fal
 ## Parameters
 
 - `productIDs`: The product identifiers to load from the App Store.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use promotional images from the App Store, if they’re available. If this parameter is  , the system ignores promotional images.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use promotional images from the App Store, if they’re available. If this parameter is `false`, the system ignores promotional images.
 
 ## See Also
 

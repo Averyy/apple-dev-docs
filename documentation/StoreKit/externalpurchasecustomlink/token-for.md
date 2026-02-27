@@ -42,7 +42,7 @@ Report tokens and all transactions associated with the tokens from your server, 
 
 ## Parameters
 
-- `tokenType`: A string that indicates the token type. Valid string values are:  , 
+- `tokenType`: A string that indicates the token type. Valid string values are: `ACQUISITION`, `SERVICES`
 
 ## See Also
 

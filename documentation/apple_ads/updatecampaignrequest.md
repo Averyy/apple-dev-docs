@@ -14,6 +14,11 @@ The payload properties to clear geotargeting from a campaign.
 object UpdateCampaignRequest
 ```
 
+## Properties
+
+- `campaign` (CampaignUpdate): The campaign properties to update.
+- `clearGeoTargetingOnCountryOrRegionChange` (boolean): The parameter to clear geotargeting from all ad groups in the campaign. To modify `countriesOrRegions` in a campaign, set the value of `clearGeoTargetingOnCountryOrRegionChange` to `true`. See the Payload Example: Update a Campaign with Countries or Regions in [`Update a Campaign`](update-a-campaign.md).
+
 ## See Also
 
 - [object Campaign](campaign.md)

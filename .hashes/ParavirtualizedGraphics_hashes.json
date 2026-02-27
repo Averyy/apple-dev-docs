@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-24T07:32:31.107853",
+    "last_updated": "2026-02-27T07:41:30.169767",
     "total_pages": 220,
-    "session_id": "2026-02-24T07:32:15.622822"
+    "session_id": "2026-02-27T07:41:12.962550"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ParavirtualizedGraphics.json": {
       "hash": "950bfdccc39f26023b5bd7c8401742503e47b1b20e43cccd031f2465d24d00de",
-      "last_checked": "2026-02-24T07:32:15.886161",
+      "last_checked": "2026-02-27T07:41:13.271109",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"ca4aaf6593b4ceb810fcd541c3158b5c\"",
       "file_path": "documentation/ParavirtualizedGraphics/ParavirtualizedGraphics.md"
     },
     "https://developer.apple.com/documentation/ParavirtualizedGraphics": {
       "hash": "950bfdccc39f26023b5bd7c8401742503e47b1b20e43cccd031f2465d24d00de",
-      "last_checked": "2026-02-24T07:32:15.798101",
+      "last_checked": "2026-02-27T07:41:13.185643",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"ca4aaf6593b4ceb810fcd541c3158b5c\"",
       "file_path": "documentation/ParavirtualizedGraphics/ParavirtualizedGraphics.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_pci_device_id.json": {
       "hash": "c994fb1c1a139f17f2ae3604fe1c3b063a7d042860cd85dd5d0039dd59aaaa0c",
-      "last_checked": "2026-02-24T07:32:16.090175",
+      "last_checked": "2026-02-27T07:41:13.527404",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"8703ff8579b910e869e7f207f06c558a\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-pci-device-id.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_pci_vendor_id.json": {
       "hash": "4011ea90485f8bcd0eb4305c592fd1a2f3185da8e5a49521b0a0a559261b7fe0",
-      "last_checked": "2026-02-24T07:32:16.324444",
+      "last_checked": "2026-02-27T07:41:13.673260",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"4bffb01073367fda6888930407bfba83\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-pci-vendor-id.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_pci_bar_mmio.json": {
       "hash": "d758edda0f8769d82f0331325c71b923852bfe742f6f78b62495d67f07162d60",
-      "last_checked": "2026-02-24T07:32:16.414963",
+      "last_checked": "2026-02-27T07:41:13.876633",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a097f41d61c8c22fb8782e61b2b4d8eb\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-pci-bar-mmio.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_pci_max_msi_vectors.json": {
       "hash": "670c0fbf88592d147353709c097d27ad1cb4877f2afee8124d18eb237231f740",
-      "last_checked": "2026-02-24T07:32:16.514088",
+      "last_checked": "2026-02-27T07:41:14.030757",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"6f55e5b0fbca48bdfede6e11afd09f42\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-pci-max-msi-vectors.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgcopyoptionromurl().json": {
       "hash": "e4c95cb4aa4da587fafe8a3249ed8b6daa0620a109f9ace126c51e33932b96a9",
-      "last_checked": "2026-02-24T07:32:16.605207",
+      "last_checked": "2026-02-27T07:41:14.229248",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"51294f32bc6586ea46370f3d02dd8c1a\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgcopyoptionromurl.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgnewdevicewithdescriptor(_:).json": {
       "hash": "9bebd2cfcd3f097401d78d0816fcad2c05188cb97d871d13bd3356f79deb3f52",
-      "last_checked": "2026-02-24T07:32:16.667965",
+      "last_checked": "2026-02-27T07:41:14.433601",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a8bca5eeb0ebb7760f1ea20de8b25bb2\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgnewdevicewithdescriptor.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor.json": {
       "hash": "93eba0e97b66d7eb8c979af2c774ff59bd49f0079ce863120c3a08bf4c351b0c",
-      "last_checked": "2026-02-24T07:32:16.769569",
+      "last_checked": "2026-02-27T07:41:14.585484",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"7eb08244b2360b33bddb2851a8ea7323\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice.json": {
       "hash": "77830630d5a4d3ad8fcf6f4c6c85ed5074cd75765e1b53b997b124f8de8f250d",
-      "last_checked": "2026-02-24T07:32:16.837905",
+      "last_checked": "2026-02-27T07:41:14.735187",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"0ec3b442ccc9e2fee543ff4bc3cc65b0\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor.json": {
       "hash": "c85a2df3a41582c88b71ccf96026100ccc443364f81a9e7547b0b8eba63f625c",
-      "last_checked": "2026-02-24T07:32:17.080740",
+      "last_checked": "2026-02-27T07:41:14.884372",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"fdb0db940e3654e8fefe037052f820fc\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay.json": {
       "hash": "c00e8b461b57d984839d920fd36b6725e498b220f6fde436a7d39f2d9d60b61c",
-      "last_checked": "2026-02-24T07:32:17.203376",
+      "last_checked": "2026-02-27T07:41:15.073745",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"2b79168605a33cc85c93313be50519d7\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaymode.json": {
       "hash": "3a194b89f53bf48f4dc32468572b017bce688a5cb81e92e21073c77a39a2dbcc",
-      "last_checked": "2026-02-24T07:32:17.341683",
+      "last_checked": "2026-02-27T07:41:15.223367",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"92af8ed48becc02f4ee78ed42a7171a7\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaymode.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycoord_t.json": {
       "hash": "35de4cba590d4fc242333cb472005dbbf8a446c456f566383089b89782343efb",
-      "last_checked": "2026-02-24T07:32:17.441730",
+      "last_checked": "2026-02-27T07:41:15.375688",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"bfda15e261b0c25907a587c2f8936291\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycoord-t.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/paravirtualizedgraphics-constants.json": {
       "hash": "79f7e49f8a0cb2c9645d254ffcc7409c5abfdbbaa014cdf78891798aff6c2bb3",
-      "last_checked": "2026-02-24T07:32:17.506135",
+      "last_checked": "2026-02-27T07:41:15.566831",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"9d67e32f69db2e0576f839195591fcc1\"",
       "file_path": "documentation/ParavirtualizedGraphics/paravirtualizedgraphics-constants.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/paravirtualizedgraphics-functions.json": {
       "hash": "f7bc201bf630d0d5da9ea01690224df762dd6e59345a4364bf03ba83980c81fa",
-      "last_checked": "2026-02-24T07:32:17.571968",
+      "last_checked": "2026-02-27T07:41:15.694114",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"42d3694c111f42c88573524ef7568b12\"",
       "file_path": "documentation/ParavirtualizedGraphics/paravirtualizedgraphics-functions.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/paravirtualizedgraphics-data-types.json": {
       "hash": "ca942fa53f1a5f467474d4edb11547bb20bb7d190c803376a19592fd1b61363c",
-      "last_checked": "2026-02-24T07:32:17.658763",
+      "last_checked": "2026-02-27T07:41:15.840721",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"c8b22923630350df3d5beadd54824124\"",
       "file_path": "documentation/ParavirtualizedGraphics/paravirtualizedgraphics-data-types.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/has_ns_bitmap_header.json": {
       "hash": "c93fbe6d5289eca5fef4cc13e9abeaef08638ad7265f957d2b9e20c614a4bcb0",
-      "last_checked": "2026-02-24T07:32:17.793859",
+      "last_checked": "2026-02-27T07:41:16.056873",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"8e3eb49672b2034a523a3b9799f7adcd\"",
       "file_path": "documentation/ParavirtualizedGraphics/has-ns-bitmap-header.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_create_device.json": {
       "hash": "ecdb6ecccbdc52f176e576027a8d69b60f246e0740760070a7f733aa8c9f1b98",
-      "last_checked": "2026-02-24T07:32:17.859316",
+      "last_checked": "2026-02-27T07:41:16.205105",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"cc5eadb527e998a17d528a60ff7f436b\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-create-device.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgcreatedevicewithdescriptor(_:).json": {
       "hash": "ebed32e3b2b30ed5ae62edec7eaf0e34745853c1f825c9aca5d28ff6236be339",
-      "last_checked": "2026-02-24T07:32:17.923740",
+      "last_checked": "2026-02-27T07:41:16.383246",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"58f8509ddf33d53cb94ceca666cb1e06\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgcreatedevicewithdescriptor.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/device.json": {
       "hash": "cff02f98fd1adf4ef075fa22188b30efb52c5e0431c55a0a7f3272b5a5e39149",
-      "last_checked": "2026-02-24T07:32:17.995268",
+      "last_checked": "2026-02-27T07:41:16.528127",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"f97722a68c6d1f533ff9da4457094618\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/device.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/createtask.json": {
       "hash": "dc83cdb009e0b7fca94021a0a9a75a9fd4e08ec17c2abefe7d84800b56026cdd",
-      "last_checked": "2026-02-24T07:32:18.227068",
+      "last_checked": "2026-02-27T07:41:16.670918",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"0be254644da2c7fa592c501dead3fb05\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/createtask.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/destroytask.json": {
       "hash": "5c324acf1274c0348c9ea7c21cb653e8edb3b480d0fac34b312d985f8df25952",
-      "last_checked": "2026-02-24T07:32:18.315736",
+      "last_checked": "2026-02-27T07:41:16.830838",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"f8be1cc9f857087d9f1001f7eacd691b\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/destroytask.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgcreatetask.json": {
       "hash": "5f1f4544b0a92ab47289f03056817d6f0aa390015eccbc9368fc1a4c4d31c9a0",
-      "last_checked": "2026-02-24T07:32:18.548944",
+      "last_checked": "2026-02-27T07:41:17.013999",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"363e3aa46bcb4bbf60e3c6b644d8cd2a\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgcreatetask.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdestroytask.json": {
       "hash": "57f9fe7a4e979dab875ff2886b1ea2d4229d75f1373a51d5488d0d867cc5ca00",
-      "last_checked": "2026-02-24T07:32:18.786037",
+      "last_checked": "2026-02-27T07:41:17.162291",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"bd0a9ebd62a6cda20bc52e30b5903348\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdestroytask.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/mapmemory.json": {
       "hash": "567b9403e355bb1186c704c4560c3512e86a69f25df851fa6929f4c6b8733a7e",
-      "last_checked": "2026-02-24T07:32:19.038221",
+      "last_checked": "2026-02-27T07:41:17.302403",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"51ef91d39d3ca2b17ccb1d0f1d00c269\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/mapmemory.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/unmapmemory.json": {
       "hash": "641ac902dd75b3163338b89332658b194db335a3e8bd7ca382fca6d54dd8dd3f",
-      "last_checked": "2026-02-24T07:32:19.276336",
+      "last_checked": "2026-02-27T07:41:17.452568",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"0a7a516c1666502867fa209f8077ea0b\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/unmapmemory.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/readmemory.json": {
       "hash": "73caddadb9520e9a7665811233bf97e4b06c37204f440f2ca5ab724e8d3024e4",
-      "last_checked": "2026-02-24T07:32:19.340979",
+      "last_checked": "2026-02-27T07:41:17.596872",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"397a5be2c18e148d3e58fad60211a90b\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/readmemory.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgmapmemory.json": {
       "hash": "056ba330156bcfa21a15392a73761096e64127734e32bc182b158d17cae30e15",
-      "last_checked": "2026-02-24T07:32:19.604392",
+      "last_checked": "2026-02-27T07:41:17.727947",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"204d0164c16f60dfb7a5fafe9f230771\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgmapmemory.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgunmapmemory.json": {
       "hash": "d01fa8fdafea7b054cdd513190b56a290010bb010a14f0cf81524ca1147cd457",
-      "last_checked": "2026-02-24T07:32:19.718485",
+      "last_checked": "2026-02-27T07:41:17.874505",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"42a911791d45b5722ff233906c18cf3f\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgunmapmemory.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgreadmemory.json": {
       "hash": "ef38b389781bbf5f1faab660aecea12f6190a891eecf326ba0288cfaa7a05a42",
-      "last_checked": "2026-02-24T07:32:19.835614",
+      "last_checked": "2026-02-27T07:41:18.023003",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"0fe9c471f9899b358c24a542bd985b89\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgreadmemory.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgphysicalmemoryrange_s.json": {
       "hash": "7833ef4e6f91ebfd1c1b08ae14d68b83b2a61f37f41cefe8898e7f912de6ba98",
-      "last_checked": "2026-02-24T07:32:20.078695",
+      "last_checked": "2026-02-27T07:41:18.163241",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"71f2f7d17c1129f9c0e5923049ece2a7\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgphysicalmemoryrange-s.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/addtracerange.json": {
       "hash": "b35e1662c0ca979390120d6c7bfbabfa1dcd0b29660c74872d3a7549b059000f",
-      "last_checked": "2026-02-24T07:32:20.192309",
+      "last_checked": "2026-02-27T07:41:18.298660",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"fc91cc389205fc9c0f352ba1f79fc7bb\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/addtracerange.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/removetracerange.json": {
       "hash": "cb4fab0adde98a1d58f61adc906f9e9c4c876a7408c8f004b5c455b8487e7ef1",
-      "last_checked": "2026-02-24T07:32:20.457884",
+      "last_checked": "2026-02-27T07:41:18.448846",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"19ace1e1990e9b309f6bffba57ebf5c1\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/removetracerange.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgaddtracerange.json": {
       "hash": "7f5c477ee9653aa7ee5096afa7a64a21c32ce4f2634d9eaad92b23dfdb610c65",
-      "last_checked": "2026-02-24T07:32:20.572103",
+      "last_checked": "2026-02-27T07:41:18.583990",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"4a9924e3cdd1a713fcd66ab3cdfe63ee\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgaddtracerange.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgremovetracerange.json": {
       "hash": "b131ca5bace8bb15cd166a4aedc8e9515631dfeef199c5c0addeac5092907c8e",
-      "last_checked": "2026-02-24T07:32:20.817973",
+      "last_checked": "2026-02-27T07:41:18.731928",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"bfa9db0444b55037f253263b71e965f6\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgremovetracerange.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgtracerangehandler.json": {
       "hash": "f880278348785f6a740e736a3b7bd015c2ada502c57db15e88a81ac3f87419a8",
-      "last_checked": "2026-02-24T07:32:21.055489",
+      "last_checked": "2026-02-27T07:41:18.923363",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"f1246ce4110289306ccc1f8b8b0c251d\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgtracerangehandler.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/raiseinterrupt.json": {
       "hash": "50e98039e08360132604a028215a90959a0eaa2939d032cfc5b52ba51da64e19",
-      "last_checked": "2026-02-24T07:32:21.353969",
+      "last_checked": "2026-02-27T07:41:19.088023",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"deb18622402d5c6c6eb074de29ffb42e\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/raiseinterrupt.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgraiseinterrupt.json": {
       "hash": "777e4718e0f1ba6c62922ffa6c34b78fede8b5232f1a7a304986309f721d6b3e",
-      "last_checked": "2026-02-24T07:32:21.584110",
+      "last_checked": "2026-02-27T07:41:19.226734",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"4e2677d40852311dd49bc29117a4c307\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgraiseinterrupt.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/mmiolength.json": {
       "hash": "94ea0952682f32dcd528eef6902f07f6966d13ad8a8893f8f4d6b260c3e5e3da",
-      "last_checked": "2026-02-24T07:32:21.707975",
+      "last_checked": "2026-02-27T07:41:19.365867",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"12f6ad535cf48cfa75bc62de6d2f55f1\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/mmiolength.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevicedescriptor/displayportcount.json": {
       "hash": "48177190840386619b8f6b3d19893916c98b03a30b73e796873a07f1496517e9",
-      "last_checked": "2026-02-24T07:32:21.830147",
+      "last_checked": "2026-02-27T07:41:19.521587",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"755bd429e78b58647c26c3d597131400\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevicedescriptor/displayportcount.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/mmioread(atoffset:).json": {
       "hash": "a92abc6aaa6dce8dbb456a71fe5769906a75177543a4400e1ed1e58303c20b2e",
-      "last_checked": "2026-02-24T07:32:22.063642",
+      "last_checked": "2026-02-27T07:41:19.675297",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"7d3ec724fc651a8bc9f0ff4859f30fa2\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/mmioread-atoffset.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/mmiowrite(atoffset:value:).json": {
       "hash": "bc4ef99f091356c168095424ad2dd765f5fd91108f7d2c6f9846e7edc693adba",
-      "last_checked": "2026-02-24T07:32:22.195970",
+      "last_checked": "2026-02-27T07:41:19.816384",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"1cfd03f78531bbffea098adcc68a94cd\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/mmiowrite-atoffsetvalue.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/willsuspend().json": {
       "hash": "ad305773af39ff7629ac79afc1df782c6f5472770e3682f0aa5b86dac1b29214",
-      "last_checked": "2026-02-24T07:32:22.313404",
+      "last_checked": "2026-02-27T07:41:20.018366",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"70344ff8e10004e974f57b18728187b2\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/willsuspend.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/finishsuspend().json": {
       "hash": "d838ce5383d827e50bb74d32ce1164072596c86f9dfca83c0aa939e2216bcdba",
-      "last_checked": "2026-02-24T07:32:22.592860",
+      "last_checked": "2026-02-27T07:41:20.155563",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"c8fda070044b7336d30ae489e108f8b2\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/finishsuspend.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/willresume(withsuspendstate:error:).json": {
       "hash": "be3255d8c98bdca9c326af6b1f17e0d03e58755547aef994a01cb8b3533c5fb0",
-      "last_checked": "2026-02-24T07:32:22.706036",
+      "last_checked": "2026-02-27T07:41:20.305652",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a5c7b27849d7d14fcb587f61d1ad706b\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/willresume-withsuspendstateerror.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/didresume().json": {
       "hash": "a91dfe14e099c1f7020076b762078c1735c08d916151cf46e80a23ffc01bbaab",
-      "last_checked": "2026-02-24T07:32:22.835929",
+      "last_checked": "2026-02-27T07:41:20.447187",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"64a9852c845bd0435bc4b5a2cccbe5ba\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/didresume.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrordomain.json": {
       "hash": "f7a0a9a1224ca06ffef781bbda9027ecc20b7578d370169988e4584154017442",
-      "last_checked": "2026-02-24T07:32:23.093317",
+      "last_checked": "2026-02-27T07:41:20.586254",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"107715bd8926d64156fb51a2a925a11d\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrordomain.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode.json": {
       "hash": "6ac3710a4669cc28cf106e54c8b142624dd764e376b422d1db6eb24f159c12c2",
-      "last_checked": "2026-02-24T07:32:23.208991",
+      "last_checked": "2026-02-27T07:41:20.725253",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a2122ce85890aff695be1b57c9ac9e02\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/newdisplay(with:port:serialnum:).json": {
       "hash": "33faa7673405c5f61b0113a046747f0a894d0960bc76ca0ff470037594a13e62",
-      "last_checked": "2026-02-24T07:32:23.333742",
+      "last_checked": "2026-02-27T07:41:20.871445",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"82aa23b3135cf30e71ab1c08e5eb118f\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/newdisplay-withportserialnum.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/pause().json": {
       "hash": "cdbb349add49aed5b7dbb397f831cefed881ecaa23f472de6166fc90b7af328a",
-      "last_checked": "2026-02-24T07:32:23.441799",
+      "last_checked": "2026-02-27T07:41:21.020615",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"ee53db7e09f21c859366900978dbf6eb\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/pause.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/reset().json": {
       "hash": "74c4d9fc2cb5d8f74235793231ed59c2545900e21aebfc0a1599d427db818532",
-      "last_checked": "2026-02-24T07:32:23.561688",
+      "last_checked": "2026-02-27T07:41:21.180731",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"1fecda6a6f9daf37d056833ee9e0aae6\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/reset.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/stop().json": {
       "hash": "42563af140d70dff4cb91ec9a8caced598437474e6e41cebd7918e35df202381",
-      "last_checked": "2026-02-24T07:32:23.684894",
+      "last_checked": "2026-02-27T07:41:21.319400",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"49598df988907d3592709fd2744da13a\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/stop.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdevice/unpause().json": {
       "hash": "6132e61f8c2d0f8a3a0fc266b56a6bce3e6ea7cf0c630b65eea280b5eba6e9f8",
-      "last_checked": "2026-02-24T07:32:23.796895",
+      "last_checked": "2026-02-27T07:41:21.458455",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"65e2c78b07b2f696b3623599b24c48ab\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdevice/unpause.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/name.json": {
       "hash": "e6d99c001e51815982b0d6971d206899f7ba7190564db8253a7c1a1bd8ab4d07",
-      "last_checked": "2026-02-24T07:32:23.905526",
+      "last_checked": "2026-02-27T07:41:21.797319",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a0917a6fda321078bf81542aff69105f\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/name.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/sizeinmillimeters.json": {
       "hash": "f63ebd30f02911c71add79cc07829b43836025884eaf80c1968ebccbbbe1d4a0",
-      "last_checked": "2026-02-24T07:32:24.015863",
+      "last_checked": "2026-02-27T07:41:21.945553",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"dbb08dd9c37692b8936237b4bdd76547\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/sizeinmillimeters.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/queue.json": {
       "hash": "d12749444ba971bcaa9969d812e69fbc431577ece71675427b2f1efc1611d0fb",
-      "last_checked": "2026-02-24T07:32:24.130476",
+      "last_checked": "2026-02-27T07:41:22.082067",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"d76f9957eed5be30f620f7db342a39fe\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/queue.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/cursorglyphhandler.json": {
       "hash": "83afa2c346223600924ae4354ef1c98650e658d1e51baa1f80c4bdd6a4499a67",
-      "last_checked": "2026-02-24T07:32:24.238594",
+      "last_checked": "2026-02-27T07:41:22.229587",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"f08afbaf3d1c5c8454a1c213b0632e6b\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/cursorglyphhandler.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/cursorshowhandler.json": {
       "hash": "9a2c070a4ce65490de7063dd594b3209b13cb638fe46b4ea0c36ebb27b3d5d64",
-      "last_checked": "2026-02-24T07:32:24.490770",
+      "last_checked": "2026-02-27T07:41:22.396666",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"6119c55681b8ebe7dfeefe5fe2eb1b68\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/cursorshowhandler.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycursorglyphhandler.json": {
       "hash": "558d931c42d38cfd97821ec648bcbb6bc4c511719e2586f928773db62abbe9c9",
-      "last_checked": "2026-02-24T07:32:24.604067",
+      "last_checked": "2026-02-27T07:41:22.535442",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"6e94f073864b031c820f6ecc438ebd8f\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycursorglyphhandler.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycursorshowhandler.json": {
       "hash": "ac0ec39e780fb584133fab2a2d30357d85cc977b99d914b49a235ab276590cae",
-      "last_checked": "2026-02-24T07:32:24.720728",
+      "last_checked": "2026-02-27T07:41:22.708107",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"5df7c378023548a21d7b3ad0a9576533\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycursorshowhandler.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/modechangehandler.json": {
       "hash": "0018a0ce285a3f551f648d5d28f8111805d6b334b6dd04b2c3d3d14e32597d55",
-      "last_checked": "2026-02-24T07:32:24.833003",
+      "last_checked": "2026-02-27T07:41:22.850290",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"45ecf2b55a4f4699e6ae1c74b7e24532\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/modechangehandler.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaymodechangehandler.json": {
       "hash": "76d83457aa43ed306019f6c1d3ae7f5f0df4e19e847cd19c0b3e8011464078ad",
-      "last_checked": "2026-02-24T07:32:25.092738",
+      "last_checked": "2026-02-27T07:41:23.000224",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"173c9e0112fadabda54712956a06ce3c\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaymodechangehandler.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/newframeeventhandler.json": {
       "hash": "ee649ee5d37994b889e04a30237b3ebacaaaffc335164d8d37ce09d13b62a65a",
-      "last_checked": "2026-02-24T07:32:25.215297",
+      "last_checked": "2026-02-27T07:41:23.167258",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"13c51824706d43cdd19977f1bc093e47\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/newframeeventhandler.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaynewframeeventhandler.json": {
       "hash": "6ebc04ea284189bef0b73b620b43d20982d88c4710aa066787bbb6c9b0ef4c37",
-      "last_checked": "2026-02-24T07:32:25.331558",
+      "last_checked": "2026-02-27T07:41:23.365784",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"bbd8bd31766482260f8d78557b54f2e1\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaynewframeeventhandler.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaydescriptor/cursormovehandler.json": {
       "hash": "525357dac7f292f893e5eab0006d560f4260221647c4cdd0eade5d20cf682287",
-      "last_checked": "2026-02-24T07:32:25.452294",
+      "last_checked": "2026-02-27T07:41:23.498663",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"0a5600900ee8db7ff0a8075e08f02143\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaydescriptor/cursormovehandler.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/modelist.json": {
       "hash": "b3e57c8bd0bcad102e36ecf388eacbf0cbcac62ca7f58948afa726472e4c07ee",
-      "last_checked": "2026-02-24T07:32:25.571872",
+      "last_checked": "2026-02-27T07:41:23.645043",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"42597a0bfcd87e9961e039c254a74f0a\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/modelist.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/cursorposition.json": {
       "hash": "a35bab8c0a0fb40f27e4f5756c801aa326b447efb12fc48ffd8b0cc5146898b6",
-      "last_checked": "2026-02-24T07:32:25.697088",
+      "last_checked": "2026-02-27T07:41:23.787388",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"ff84fca9d8a77210e07ddf1e6efe0149\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/cursorposition.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/guestpresentcount.json": {
       "hash": "539a8183267d88645dd1dd6994c22b40db34c82866f242001f3e2f8ee8d1f8c8",
-      "last_checked": "2026-02-24T07:32:25.828752",
+      "last_checked": "2026-02-27T07:41:23.944577",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"dba2931557231a1ee6893d2877ee43d7\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/guestpresentcount.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/hostpresentcount.json": {
       "hash": "a21f39d7e99b6341619199de9c5591271040c893a825cab064222328292e5634",
-      "last_checked": "2026-02-24T07:32:25.946411",
+      "last_checked": "2026-02-27T07:41:24.088792",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"feb52d6ea149a069a81b58601897409f\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/hostpresentcount.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/minimumtextureusage.json": {
       "hash": "7cbd8f4dad2bc90a732af7d2fad291b48da63d8c78affe50f64c706e571aa6d3",
-      "last_checked": "2026-02-24T07:32:26.059683",
+      "last_checked": "2026-02-27T07:41:24.224370",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"681661b21090d606236d21bc2747e990\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/minimumtextureusage.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/encodecurrentframe(to:texture:region:).json": {
       "hash": "9887422fb880c1eb1e9d5c2223b2cf2170ac2378254e7fa6187ee2a008875fa3",
-      "last_checked": "2026-02-24T07:32:26.176620",
+      "last_checked": "2026-02-27T07:41:24.367056",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"e2ca16f344d51c4bb810c00040dd57bf\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/encodecurrentframe-totextureregion.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/name.json": {
       "hash": "f847ad7e978c0ad44c57745d93ed574cb886ad65a797cf36072c136cf37d3faa",
-      "last_checked": "2026-02-24T07:32:26.292969",
+      "last_checked": "2026-02-27T07:41:24.523030",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"bcb5e2069c14fe834b1a90a36d65da36\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/name.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/serialnum.json": {
       "hash": "bb6b95246419ed5827d74cc1aa8dbcf467f79d2d4fd864305900e994139522da",
-      "last_checked": "2026-02-24T07:32:26.412331",
+      "last_checked": "2026-02-27T07:41:24.670249",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"f5d0cfce022c984593901f61fb031fc2\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/serialnum.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/port.json": {
       "hash": "492e925644e215ff0975e01e10e5e1eef2ad0e9545f46f108dde20b158ba3218",
-      "last_checked": "2026-02-24T07:32:26.642792",
+      "last_checked": "2026-02-27T07:41:24.808885",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"4191d888b9660a30a39f4fbff0c466bf\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/port.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/sizeinmillimeters.json": {
       "hash": "0a8a9070c142da3f2b670dfd61cfac446054bc86aa3c9adafa8d31514e10ead1",
-      "last_checked": "2026-02-24T07:32:26.756147",
+      "last_checked": "2026-02-27T07:41:24.948081",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"9b05b2fcac7aad59666db1b0e3ef5371\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/sizeinmillimeters.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/queue.json": {
       "hash": "c9710f0f5c576694ebb3857e58663a5f7e7a37b51c188a9947a0001d391ea72d",
-      "last_checked": "2026-02-24T07:32:26.887562",
+      "last_checked": "2026-02-27T07:41:25.116096",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"7fdb59f67230e01d705722127cb45887\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/queue.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/cursorglyphhandler.json": {
       "hash": "2e5c0b0f81816aa9c96bfbd8c900d1e4c5eb524a51ff0c1a5e65dea4d943fbd7",
-      "last_checked": "2026-02-24T07:32:27.005337",
+      "last_checked": "2026-02-27T07:41:25.250014",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"7bd44ba771cd437a1222e76183245770\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/cursorglyphhandler.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/cursorshowhandler.json": {
       "hash": "c36e92ebd348fd450d3b6141609d2244d144089b9c6363d52eeabc5d04ea1c19",
-      "last_checked": "2026-02-24T07:32:27.121550",
+      "last_checked": "2026-02-27T07:41:25.395962",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"00fd6c7d149fbb39882224b021282f63\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/cursorshowhandler.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/modechangehandler.json": {
       "hash": "03315edbb4b112e3abfaaf2d0dd7e39eebbc77301382188dcc97d74c1a704385",
-      "last_checked": "2026-02-24T07:32:27.243032",
+      "last_checked": "2026-02-27T07:41:25.550068",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"7edc1436046e10ed50805a7465caacf9\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/modechangehandler.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/newframeeventhandler.json": {
       "hash": "88712019d9ae9b48845e74b74a1d05c14a6e9292baefc6c9cc03986ebec834e8",
-      "last_checked": "2026-02-24T07:32:27.359587",
+      "last_checked": "2026-02-27T07:41:25.693328",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"1004cfb59693645df7ed1f79c0063f37\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/newframeeventhandler.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplay/cursormovehandler.json": {
       "hash": "54b17391844490617be292233ef401d2d0862d60c3a788635807a81eda9596f5",
-      "last_checked": "2026-02-24T07:32:27.474340",
+      "last_checked": "2026-02-27T07:41:25.833559",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"ece9acf34221d188089476e1628ea849\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplay/cursormovehandler.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaymode/init(sizeinpixels:refreshrateinhz:).json": {
       "hash": "63467b98d46bda370322a51c87c377f7f6941d4738e0dc52b06ee2514e8d6735",
-      "last_checked": "2026-02-24T07:32:27.586493",
+      "last_checked": "2026-02-27T07:41:25.979180",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"3138181e7cfceb40503f53bb5cce7d24\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaymode/init-sizeinpixelsrefreshrateinhz.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaymode/sizeinpixels.json": {
       "hash": "55ba576ff06239305c3f9c76bdc917345d6e11f7c6c50081bb5351d5a6865920",
-      "last_checked": "2026-02-24T07:32:27.699957",
+      "last_checked": "2026-02-27T07:41:26.132320",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"ee151d3f89b5c4d9bdc05d46e6524846\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaymode/sizeinpixels.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaymode/refreshrate.json": {
       "hash": "b1086e2e14f0864ba2d7f7a3d0c24e6cad23ca3633e37fca56b69351a5e9bb23",
-      "last_checked": "2026-02-24T07:32:27.816912",
+      "last_checked": "2026-02-27T07:41:26.290536",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"507ba375a7547ab699e7be71300ddc3e\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaymode/refreshrate.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycoord_t/init().json": {
       "hash": "537146386b1f9fe9527d324f2c016acdce0ed2c3873988c9cc6293cd81f52ab1",
-      "last_checked": "2026-02-24T07:32:27.955000",
+      "last_checked": "2026-02-27T07:41:26.436228",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"59b07c5b3922565eaa3dd78a4b5d154e\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycoord_t/init.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycoord_t/init(x:y:).json": {
       "hash": "7c24eaf53c811fd2f832c31c80fc7653b01fd3cb953795c503c80290f1bbf821",
-      "last_checked": "2026-02-24T07:32:28.073346",
+      "last_checked": "2026-02-27T07:41:26.617968",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"d8438528785dcc4924ece132d0d56e95\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycoord_t/init-xy.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycoord_t/x.json": {
       "hash": "6cdcbdea424d628e5162bf697fcf84a135e51564e1977c4e0cfd6c2251c7196d",
-      "last_checked": "2026-02-24T07:32:28.188612",
+      "last_checked": "2026-02-27T07:41:26.750674",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a09e0346c0a5b2720e6b62e74d1c9224\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycoord_t/x.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycoord_t/y.json": {
       "hash": "e1da0ccccc7f022c8ac4f1fd81ac018787ad844cf6c7cfe447caf7d8344d1bf7",
-      "last_checked": "2026-02-24T07:32:28.306092",
+      "last_checked": "2026-02-27T07:41:26.894217",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"320e9e669106bff49b1be6c81fb7be4a\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycoord_t/y.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_cursor_glyph_handler2.json": {
       "hash": "4dad7fbe2d7a861ae9baf1df6275461d686e9f6f8cd368d35e4e0e89cd0b633f",
-      "last_checked": "2026-02-24T07:32:28.557804",
+      "last_checked": "2026-02-27T07:41:27.050675",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"90b7c232dd2e802f7daed567ead61e43\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-cursor-glyph-handler2.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_display_port_count.json": {
       "hash": "a4c221649fa69a132796498471d494a5025df3bb8cada166996a271ce03d8f6e",
-      "last_checked": "2026-02-24T07:32:28.672655",
+      "last_checked": "2026-02-27T07:41:27.241186",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"19dfae434237cdd76e5978e6e240133c\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-display-port-count.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_display_sleep.json": {
       "hash": "9ebad4be90ada0dbe728e3b3e4ad6e36374385846dc7383259cb0e35776895c0",
-      "last_checked": "2026-02-24T07:32:28.828708",
+      "last_checked": "2026-02-27T07:41:27.381713",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"0d503ea6f3d72f6dfbb8daace9d66b29\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-display-sleep.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_display_sleep_handler.json": {
       "hash": "20737cdeac7652f32479e5e495752389db1b49382be2fb5b08da42d79421569b",
-      "last_checked": "2026-02-24T07:32:28.942038",
+      "last_checked": "2026-02-27T07:41:27.526085",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"63173ddf389dbf3b96ab7e8c42c02097\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-display-sleep-handler.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_modelist_responsiveness_handler.json": {
       "hash": "b1f5a49c92c11b334bcf22c64b296863c60c524311b36b1a0d358cadc6259583",
-      "last_checked": "2026-02-24T07:32:29.055281",
+      "last_checked": "2026-02-27T07:41:27.660239",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"00a04fe84ad2d6316768605a4d197b15\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-modelist-responsiveness-handler.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_pause_unpause.json": {
       "hash": "da45255f1faf7ea1e503d452e1b27383d01da928cdaf8d4d93556f26bac5a53c",
-      "last_checked": "2026-02-24T07:32:29.169976",
+      "last_checked": "2026-02-27T07:41:27.796967",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"05bf9cf03132553349e0bcb44a756f59\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-pause-unpause.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_reset.json": {
       "hash": "3972134b5e849db0b8d4fe666d973bf6357d165d956ef6d06c1e2be237141034",
-      "last_checked": "2026-02-24T07:32:29.293499",
+      "last_checked": "2026-02-27T07:41:27.932760",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"8619b30344d4f138e1d190fbc40ee4a7\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-reset.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pg_support_efi.json": {
       "hash": "fe39a671bb0c13c9903869657de7603422b42192d9921f4ffc3e1de6022f7b9c",
-      "last_checked": "2026-02-24T07:32:29.403963",
+      "last_checked": "2026-02-27T07:41:28.073204",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"3228b0604628f1f8bff6270aa571f110\"",
       "file_path": "documentation/ParavirtualizedGraphics/pg-support-efi.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgmaxdisplayportcount().json": {
       "hash": "c00f372658826c66f265aacf12e61960828b8dfa386aa0f88b4aa120e1c76893",
-      "last_checked": "2026-02-24T07:32:29.512051",
+      "last_checked": "2026-02-27T07:41:28.218749",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"9bc2d406000b7fc525b21fa67d8b1194\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgmaxdisplayportcount.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgdisplaycursormovehandler.json": {
       "hash": "d1ffeec96cbf7a5071afac60516de115f78e124b84acdf0ce4fb0657ed4c901d",
-      "last_checked": "2026-02-24T07:32:29.640396",
+      "last_checked": "2026-02-27T07:41:28.360850",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"1631e3c3e4e248c423099ca670f27aaf\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgdisplaycursormovehandler.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgphysicalmemoryrange_s/init().json": {
       "hash": "c4a591a81e64364da1ba4072d11c614e24bde7c49d7286ba23dd4bb03dc3efd7",
-      "last_checked": "2026-02-24T07:32:29.762671",
+      "last_checked": "2026-02-27T07:41:28.487707",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"2033d3fd851f44057bb1710bd96a8e19\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgphysicalmemoryrange_s/init.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgphysicalmemoryrange_s/init(physicaladdress:physicallength:).json": {
       "hash": "a52245cb330e914c3fe310ae37919761c81df81730ce1a20b75d8ed993baa0fb",
-      "last_checked": "2026-02-24T07:32:29.885926",
+      "last_checked": "2026-02-27T07:41:28.631593",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"141e4a402bdb80122e3604d4b944e6a5\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgphysicalmemoryrange_s/init-physicaladdressphysicallength.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgphysicalmemoryrange_s/physicaladdress.json": {
       "hash": "5fdb59de80abe2a085c14522dff8be2d1fae6d9c480bf4d223f5632a75ec4f29",
-      "last_checked": "2026-02-24T07:32:30.001800",
+      "last_checked": "2026-02-27T07:41:28.767961",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"bd8a2ee1f9e6887d337f51625717b432\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgphysicalmemoryrange_s/physicaladdress.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgphysicalmemoryrange_s/physicallength.json": {
       "hash": "806d7728bd6c9eb3468c8728ce3b8e3edeba5814dd6edce52836d9e7c4ceb6d9",
-      "last_checked": "2026-02-24T07:32:30.137655",
+      "last_checked": "2026-02-27T07:41:28.906806",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"d6ba00ddb59afbf59c1d4265266fc268\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgphysicalmemoryrange_s/physicallength.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgphysicalmemoryrange_t.json": {
       "hash": "b5708426a49b752eebc2e2a070f4d8fc19ce230ecd9facdadfd531a11468f2a8",
-      "last_checked": "2026-02-24T07:32:30.254614",
+      "last_checked": "2026-02-27T07:41:29.046803",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"23cbc981d11b2889e5e0521da8691626\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgphysicalmemoryrange-t.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/incompatibledevice.json": {
       "hash": "4abde7a699a95327d1e038ac310c2bc9c1dc75dacb18f7db3eca9bd353545685",
-      "last_checked": "2026-02-24T07:32:30.375678",
+      "last_checked": "2026-02-27T07:41:29.181227",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"dc65db24c3e56ea7267de1a7728bb9c8\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/incompatibledevice.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/internalfault.json": {
       "hash": "2ee9111e7d01ee334733b1bbfa93bb52c7cdf770b4084da5ee4cb719356e972e",
-      "last_checked": "2026-02-24T07:32:30.486839",
+      "last_checked": "2026-02-27T07:41:29.324563",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"5855e29db577d72511f4f4257a1fff84\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/internalfault.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/invalidcontent.json": {
       "hash": "d4ad6b8b2a528b1790bd2659720101e984e34deea66da5eebd15f956b55def72",
-      "last_checked": "2026-02-24T07:32:30.608392",
+      "last_checked": "2026-02-27T07:41:29.473188",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"e24fcc932359dd683dab3acd1db8853d\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/invalidcontent.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/invalidguestversion.json": {
       "hash": "a0520d946843d69eac5715459baaee6e6897b5d23042057225b8d857144203ef",
-      "last_checked": "2026-02-24T07:32:30.731458",
+      "last_checked": "2026-02-27T07:41:29.613083",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"a1f37e8543c6dee198cd80e8dc74a2e0\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/invalidguestversion.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/invalidsuspendstateversion.json": {
       "hash": "bcc7a4b4fa598e08d86099be73597a3edb4ad8fd23f016e02c927f92f2952645",
-      "last_checked": "2026-02-24T07:32:30.878156",
+      "last_checked": "2026-02-27T07:41:29.754242",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"b19129b86198c1de1a6e830fbcdf7216\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/invalidsuspendstateversion.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/invaliddisplayportcount.json": {
       "hash": "29621159875ce205f9d684cd13a09ef273727aba29a07d8580a336242787d957",
-      "last_checked": "2026-02-24T07:32:30.987693",
+      "last_checked": "2026-02-27T07:41:29.934385",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"f64c4837bcb364af88be0fd1501a2b1e\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/invaliddisplayportcount.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paravirtualizedgraphics/pgresumeerrorcode/init(rawvalue:).json": {
       "hash": "2e9fcb5d613a356bd45c3cf6e45e27d3ffc47176396230e33edff96d101f8e42",
-      "last_checked": "2026-02-24T07:32:31.105566",
+      "last_checked": "2026-02-27T07:41:30.150175",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:15.622822",
+      "session_id": "2026-02-27T07:41:12.962550",
       "etag": "W/\"59cc1f134e1433b8bee63243d1bcef62\"",
       "file_path": "documentation/ParavirtualizedGraphics/pgresumeerrorcode/init-rawvalue.md"
     },

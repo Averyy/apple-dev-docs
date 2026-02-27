@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-24T07:32:58.942539",
+    "last_updated": "2026-02-27T07:42:05.105029",
     "total_pages": 104,
-    "session_id": "2026-02-24T07:32:52.972383"
+    "session_id": "2026-02-27T07:41:56.773721"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes.json": {
       "hash": "15dfd8982ac1c2baa981af308fe081268ba416fc8ea4cc9157a6c96afcc58697",
-      "last_checked": "2026-02-24T07:32:53.279461",
+      "last_checked": "2026-02-27T07:41:57.079069",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"3858f7b16b611717c8a54f7d4ff6ee68\"",
       "file_path": "documentation/watchos-release-notes/watchos-release-notes.md"
     },
     "https://developer.apple.com/documentation/watchos-release-notes": {
       "hash": "15dfd8982ac1c2baa981af308fe081268ba416fc8ea4cc9157a6c96afcc58697",
-      "last_checked": "2026-02-24T07:32:53.168409",
+      "last_checked": "2026-02-27T07:41:56.976450",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"3858f7b16b611717c8a54f7d4ff6ee68\"",
       "file_path": "documentation/watchos-release-notes/watchos-release-notes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-26-release-notes.json": {
       "hash": "6f6138e5922e0bccdc1e14582899751bf8808c7cfb3b9a030fc9290ea5e3e62c",
-      "last_checked": "2026-02-24T07:32:54.108424",
+      "last_checked": "2026-02-27T07:41:57.952631",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"263a7503ec333248212636139e7a80b8\"",
       "file_path": "documentation/watchos-release-notes/watchos-26-release-notes.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11_5-release-notes.json": {
       "hash": "becaa87327e3d263efc6e3199e331fbae2f9db0285c3df1fc2a77ca81bfecae2",
-      "last_checked": "2026-02-24T07:32:54.481060",
+      "last_checked": "2026-02-27T07:41:58.240685",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"33e526fc8cce154d7002e867f2e4bcf3\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-5-release-notes.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11_4-release-notes.json": {
       "hash": "f35149b32d999be7a6bceb28298afea9f3686485c607389bc8992f9e19a9dae1",
-      "last_checked": "2026-02-24T07:32:54.548658",
+      "last_checked": "2026-02-27T07:41:58.383731",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"67706cd36918ab6b1591b6b91a020275\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-4-release-notes.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11_3-release-notes.json": {
       "hash": "9864077094d30a2f29577fb401dd2f911c80143772107eb530d68e47b4b9150d",
-      "last_checked": "2026-02-24T07:32:54.639565",
+      "last_checked": "2026-02-27T07:41:58.545352",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"adce9076a7337ba204c41cfff9a751e2\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-3-release-notes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11_2-release-notes.json": {
       "hash": "90a376831ee23021fbadd93af2bd60a7a2aa11fc29acb6e2fd754d9b42e4755e",
-      "last_checked": "2026-02-24T07:32:54.883986",
+      "last_checked": "2026-02-27T07:41:58.688792",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"9d879c2474d33d6cb668dc50b2ceac4c\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-2-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11_1-release-notes.json": {
       "hash": "0e3e336b21d1c9a46fe5a009a166bad93cbd15eb3b1d9a95bbb201146472c71e",
-      "last_checked": "2026-02-24T07:32:55.123312",
+      "last_checked": "2026-02-27T07:41:58.827204",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"40b5379f32efa018c3265043e9c11b91\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-1-release-notes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11-release-notes.json": {
       "hash": "971c2c7b9e3668ba4e43fb0821b9db794b27f3ef23281d6bdc04c1ab5d2115f8",
-      "last_checked": "2026-02-24T07:32:55.242568",
+      "last_checked": "2026-02-27T07:41:58.971920",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"92db6537060816d0a10ff102743a30d0\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-release-notes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10_6-release-notes.json": {
       "hash": "52025864e18366dd3627b6767cfda4ef95a7ff63ed988b41dfd6f2882774d4cb",
-      "last_checked": "2026-02-24T07:32:55.310696",
+      "last_checked": "2026-02-27T07:41:59.114207",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"e25ffefb4e0edb7be9b0d170ed634fb8\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-6-release-notes.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10_5-release-notes.json": {
       "hash": "06c7a0f1c999b41d4ce0441eb3b62028a590725b89764d82de34dbe5f584b863",
-      "last_checked": "2026-02-24T07:32:55.431851",
+      "last_checked": "2026-02-27T07:41:59.241008",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"ba7dd8e198d115a8046c30b84647be22\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-5-release-notes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10_4-release-notes.json": {
       "hash": "af5501787114fedb0ebf7a4fb196024a79c4cfd994bd46445b71fb574b49a3c3",
-      "last_checked": "2026-02-24T07:32:55.499762",
+      "last_checked": "2026-02-27T07:41:59.390692",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"db81ab2ba8932ff3a50ef41bdff9edd7\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-4-release-notes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10_3-release-notes.json": {
       "hash": "2782e2be323809afb28623aa2a70acc196f74cb35b779f4aa653992b5ef6e240",
-      "last_checked": "2026-02-24T07:32:55.614307",
+      "last_checked": "2026-02-27T07:41:59.529099",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"2097bda80d969af472ee20aefa3654cd\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-3-release-notes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10_2-release-notes.json": {
       "hash": "672dee8f9017a6c7306214530bbfcb911bd8a709d7ec15b2ea713346e310f198",
-      "last_checked": "2026-02-24T07:32:55.753719",
+      "last_checked": "2026-02-27T07:41:59.703091",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"110a8506cd6d152ff63194fc47cd7b22\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-2-release-notes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10_1-release-notes.json": {
       "hash": "d548ed36f47c0a193287602c4941dbbceb2ad9d89020942b65dd1dd97f6c7e5b",
-      "last_checked": "2026-02-24T07:32:55.834750",
+      "last_checked": "2026-02-27T07:41:59.835944",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"a30c3bb11baea884eb9ac7a8b2c5b505\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-1-release-notes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-10-release-notes.json": {
       "hash": "102b932f0f18adafbe2d045fe30e37939aeef8a7ec3414e2076d11fd9b877513",
-      "last_checked": "2026-02-24T07:32:55.926153",
+      "last_checked": "2026-02-27T07:41:59.988066",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"c2b6f98c23748418319c2daab1c273f9\"",
       "file_path": "documentation/watchos-release-notes/watchos-10-release-notes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9_6-release-notes.json": {
       "hash": "9f69f03fb963f895919338559c6bc34ee013ae94b1e7827c3d62d01a156f7f06",
-      "last_checked": "2026-02-24T07:32:56.012775",
+      "last_checked": "2026-02-27T07:42:00.157072",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"02bc3ae9c74b8e6b85320a4b4e2a4f51\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-6-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9_5-release-notes.json": {
       "hash": "c1a9693e39e923476783f5b8fa95dde52d0eff5d251cf23f5a19bbdefa709c9b",
-      "last_checked": "2026-02-24T07:32:56.075293",
+      "last_checked": "2026-02-27T07:42:00.357654",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"4ec6a84c339277adaefb0a8968817356\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-5-release-notes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9_4-release-notes.json": {
       "hash": "d01e66d7c722b6dc805347c41b6ec2bdb51dc913c914e2d4f03c1d096994865d",
-      "last_checked": "2026-02-24T07:32:56.150806",
+      "last_checked": "2026-02-27T07:42:00.545837",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"75fb9d940605fa83053d72e8617e94b9\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-4-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9_3-release-notes.json": {
       "hash": "097d98d9bf0ec3921fe94cd7075875679efd56ac50e4380f78a513e1efbbe0d8",
-      "last_checked": "2026-02-24T07:32:56.247870",
+      "last_checked": "2026-02-27T07:42:00.720809",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"88cd54171027ce28b813fb5ca9ec7a28\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-3-release-notes.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9_2-release-notes.json": {
       "hash": "7b9fd3a8467e524bd965d071c4ad46c412cf0e8624cc0b2bc9c51f306bbca3dc",
-      "last_checked": "2026-02-24T07:32:56.375729",
+      "last_checked": "2026-02-27T07:42:00.861106",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"7b7043d498285536b89bbb9b0c8c5ae9\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-2-release-notes.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9_1-release-notes.json": {
       "hash": "8c41bd752d660de17cc6e0e2fbcc3f2cf4745650f5bd6f55491c5db6e02dbf86",
-      "last_checked": "2026-02-24T07:32:56.486539",
+      "last_checked": "2026-02-27T07:42:01.007555",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"8e51c7f7813d3ad11de8e157a5cff5fd\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-1-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-9-release-notes.json": {
       "hash": "d5e39cb656b763ce327c4f2b3b8e0f09720dba15b0e961d922bfc43354074caa",
-      "last_checked": "2026-02-24T07:32:56.579523",
+      "last_checked": "2026-02-27T07:42:01.205077",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"9e7a41cb2af5a2839423dc7032bc72a8\"",
       "file_path": "documentation/watchos-release-notes/watchos-9-release-notes.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8_7-release-notes.json": {
       "hash": "abf57362df334b247841eabef7ed510a02bc146000ba7d46d8e72d340c65d9c9",
-      "last_checked": "2026-02-24T07:32:56.655481",
+      "last_checked": "2026-02-27T07:42:01.352453",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"c6928ab522146ffb9d17e2e8ce149713\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-7-release-notes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8_6-release-notes.json": {
       "hash": "61f5830c1f947629a30208524f941120742882c45aa55f26a3a1b046ea9dd974",
-      "last_checked": "2026-02-24T07:32:56.896456",
+      "last_checked": "2026-02-27T07:42:01.482632",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"5e174e190829957d47392dbfd6bcd70d\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-6-release-notes.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8_5-release-notes.json": {
       "hash": "1391b4194f11e8692ecf2eea83ba5bde2972c65a1d0e8a7bab605351755e40d6",
-      "last_checked": "2026-02-24T07:32:56.959046",
+      "last_checked": "2026-02-27T07:42:01.627833",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"421646ff599c6ce83511b541ad9a8787\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-5-release-notes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8_4-release-notes.json": {
       "hash": "cc1d75cca4bf24132a734d78fade322aed486962e7f1b8629b4ca0f62d80bd63",
-      "last_checked": "2026-02-24T07:32:57.073106",
+      "last_checked": "2026-02-27T07:42:01.762586",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"0612d93b2e5ba0ad7a631ec0288814c5\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-4-release-notes.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8_3-release-notes.json": {
       "hash": "41f10c70e42d19d84aa6f183fc33fb58885b8a3457b901cff811e79d5e4ab507",
-      "last_checked": "2026-02-24T07:32:57.135284",
+      "last_checked": "2026-02-27T07:42:01.897631",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"1ca34e89d21e17729a413bd9750885be\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-3-release-notes.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8_1-release-notes.json": {
       "hash": "9a9b7f857478eb6c9299664f02264150011cc40fceaef8872e516404b025debb",
-      "last_checked": "2026-02-24T07:32:57.257849",
+      "last_checked": "2026-02-27T07:42:02.031702",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"51bd03979c164fa2860d632422ba6965\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-1-release-notes.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-8-release-notes.json": {
       "hash": "3e1f587674c5d02e55ca165f3c15598bd784adcf089d8ecd5580c9c2670c2158",
-      "last_checked": "2026-02-24T07:32:57.335917",
+      "last_checked": "2026-02-27T07:42:02.192938",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"d4e7a50026c66ebaf523fe1c37b57250\"",
       "file_path": "documentation/watchos-release-notes/watchos-8-release-notes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7_6-release-notes.json": {
       "hash": "d03f1a63a19f50d93c770267b7fe47a0f2c3b2e63e2ebd238699c1474620851c",
-      "last_checked": "2026-02-24T07:32:57.400088",
+      "last_checked": "2026-02-27T07:42:02.317010",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"7c904e1e3ce59cb2b266a2ad4e251dfd\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-6-release-notes.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7_5-release-notes.json": {
       "hash": "40455e2b9265100021b032fe824bc6736bf2f0be8851b952e6e5c5c2025c38f1",
-      "last_checked": "2026-02-24T07:32:57.462333",
+      "last_checked": "2026-02-27T07:42:02.457045",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"2e38018698e14a8480cba5a3192d66a2\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-5-release-notes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7_4-release-notes.json": {
       "hash": "134a74ae34b8e373849ae743617fb39ee5cfa6dd0f3422e62d200d0544945882",
-      "last_checked": "2026-02-24T07:32:57.597302",
+      "last_checked": "2026-02-27T07:42:02.598148",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"13b036ef0a81d3532ac3e30762ee6f1a\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-4-release-notes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7_3-release-notes.json": {
       "hash": "554efe58ed75d51bef15da3463cb0e00ba552803f58a9cd25a4590ade6b454c4",
-      "last_checked": "2026-02-24T07:32:57.668179",
+      "last_checked": "2026-02-27T07:42:02.756080",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"266ff2e14de2cdc64327776e381e5b77\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-3-release-notes.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7_2-release-notes.json": {
       "hash": "6aa5f18e218a0f90169fa22beb5438d54e44b8ced7700deae6dca5f69f1021e6",
-      "last_checked": "2026-02-24T07:32:57.731156",
+      "last_checked": "2026-02-27T07:42:02.942402",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"4046da955c09f0e730b7652c6e000328\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-2-release-notes.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7_1-release-notes.json": {
       "hash": "9ca3d5750a66eacc09615d48f5cb3f5b17b0f69f0e4f7c4b466beafb535525ad",
-      "last_checked": "2026-02-24T07:32:57.794057",
+      "last_checked": "2026-02-27T07:42:03.080433",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"a6fcedcbed1cae68c6410f9255958522\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-1-release-notes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-7-release-notes.json": {
       "hash": "d18071e9a99081e66563804bbc7c575951212d103416ec9dfceea5a58aeabc84",
-      "last_checked": "2026-02-24T07:32:57.913331",
+      "last_checked": "2026-02-27T07:42:03.285841",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"d61c7e404308b87468b7fb05e3760d85\"",
       "file_path": "documentation/watchos-release-notes/watchos-7-release-notes.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6_2_8-release-notes.json": {
       "hash": "13b876806ae32bb44617e6fc954a69d973262dbb59b75b14eea83abc4f2c8639",
-      "last_checked": "2026-02-24T07:32:58.064507",
+      "last_checked": "2026-02-27T07:42:03.467951",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"fb33e0e4f2843104674b9368b0636efe\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-2-8-release-notes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6_2_5-release-notes.json": {
       "hash": "ba1a2772aecf7ca543e8a4891e1c8ad0559655d8bc48b576cf7919c7ea98028f",
-      "last_checked": "2026-02-24T07:32:58.161255",
+      "last_checked": "2026-02-27T07:42:03.653527",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"0c6b24197008b0867111143a5c673eaf\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-2-5-release-notes.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6_2-release-notes.json": {
       "hash": "209cf2c545c39f84f4bd75e818b743d891dcf7bb6b354ae6a32ebca073883498",
-      "last_checked": "2026-02-24T07:32:58.271364",
+      "last_checked": "2026-02-27T07:42:03.844043",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"e947f1e605d3ca70e1f03f687f901040\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-2-release-notes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6_1_2-release-notes.json": {
       "hash": "0e02ee0535481bda7b7ffd75c7533d870d5ceb803b353b8c1219ae66d3155150",
-      "last_checked": "2026-02-24T07:32:58.331547",
+      "last_checked": "2026-02-27T07:42:03.987891",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"f547f2c7f5da87570fd37cd0d664898a\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-1-2-release-notes.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6_1_1-release-notes.json": {
       "hash": "1d4e84842c0b76b70cca3486e705297d20896fe787546129e5e79ee5cd220b3c",
-      "last_checked": "2026-02-24T07:32:58.420959",
+      "last_checked": "2026-02-27T07:42:04.125687",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"e9a9eb4a015a9383d38eda93011598d2\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-1-1-release-notes.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6_1-release-notes.json": {
       "hash": "0e27ef1e2138048540fea93b4302b66b9724d1c36f16f6f2aa806a5b2f85a369",
-      "last_checked": "2026-02-24T07:32:58.574355",
+      "last_checked": "2026-02-27T07:42:04.273055",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"b49e2ebeae888b5ab443fa1063c16808\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-1-release-notes.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-6-release-notes.json": {
       "hash": "782cc6f39cdd3e7de0aec91898c1c23b0079811902485783bf40fe1914e5df36",
-      "last_checked": "2026-02-24T07:32:58.652988",
+      "last_checked": "2026-02-27T07:42:04.435387",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"e834cd004d42ee68cfda73027da0e437\"",
       "file_path": "documentation/watchos-release-notes/watchos-6-release-notes.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-5_3-release-notes.json": {
       "hash": "474855e682468e253845ba9b2f462cfaefdab9567805f7153675c3b6cf537f3b",
-      "last_checked": "2026-02-24T07:32:58.724799",
+      "last_checked": "2026-02-27T07:42:04.630687",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"808c7d56026001a2052741d0c0fa5d07\"",
       "file_path": "documentation/watchos-release-notes/watchos-5-3-release-notes.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-5_1_3-release-notes.json": {
       "hash": "c1afd6280cdfef7e5753c20b57ccc2e70935bf215473d1296d96233aab2639ca",
-      "last_checked": "2026-02-24T07:32:58.795416",
+      "last_checked": "2026-02-27T07:42:04.769489",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"5916d96ec0ae6a0211b24ae7c0f50684\"",
       "file_path": "documentation/watchos-release-notes/watchos-5-1-3-release-notes.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-5_1-release-notes.json": {
       "hash": "4d715c39c36eb52c61779f395a30910d60ce366b0a8dabbdf60f5589ee21acfc",
-      "last_checked": "2026-02-24T07:32:58.866975",
+      "last_checked": "2026-02-27T07:42:04.901140",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"0c18edadaadc6e75b9e5788d039772cc\"",
       "file_path": "documentation/watchos-release-notes/watchos-5-1-release-notes.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-5-release-notes.json": {
       "hash": "e575cd2302ad6e71f819a7c643c81f8564825f824d0982c6610f1c046fcf8e02",
-      "last_checked": "2026-02-24T07:32:58.940354",
+      "last_checked": "2026-02-27T07:42:05.084249",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"4fa45bf40cd949aea41b5a9510c0b1be\"",
       "file_path": "documentation/watchos-release-notes/watchos-5-release-notes.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-11_6-release-notes.json": {
       "hash": "8565cd24f1a0de6c8ef026ba1cd83722e7874c7abb89d6e3c2984e95745e6203",
-      "last_checked": "2026-02-24T07:32:54.225199",
+      "last_checked": "2026-02-27T07:41:58.082264",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"e8fadd091d36436abe272bb671ff8176\"",
       "file_path": "documentation/watchos-release-notes/watchos-11-6-release-notes.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-26_3-release-notes.json": {
       "hash": "dd8d4287556db7aec98cd14339239922c13d54f17f6fdb97577999e4190c132c",
-      "last_checked": "2026-02-24T07:32:53.813154",
+      "last_checked": "2026-02-27T07:41:57.466145",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"31bbbbedea4d9b9b271af2731ff3e7d6\"",
       "file_path": "documentation/watchos-release-notes/watchos-26-3-release-notes.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-26_2-release-notes.json": {
       "hash": "71171fb6e59b8c0ce43acbb4c00c8ef3f8cbf042fb578c288bd85df3f74ecbb2",
-      "last_checked": "2026-02-24T07:32:53.910750",
+      "last_checked": "2026-02-27T07:41:57.638931",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"02ca5dcbc15ead5bcc333a94c427105e\"",
       "file_path": "documentation/watchos-release-notes/watchos-26-2-release-notes.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-26_1-release-notes.json": {
       "hash": "f2be56de493d977f8f2afb860a1188cb126f03d37a5fa84117ce8e92ea7ed94c",
-      "last_checked": "2026-02-24T07:32:54.004547",
+      "last_checked": "2026-02-27T07:41:57.786224",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"3ca00b771211d46730587fda61ee256f\"",
       "file_path": "documentation/watchos-release-notes/watchos-26-1-release-notes.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-release-notes/watchos-26_4-release-notes.json": {
       "hash": "509ee2c5251eeca82e0d0272e6ec4a0180a0bc7426a8cfdca7600eb3d73449be",
-      "last_checked": "2026-02-24T07:32:53.692530",
+      "last_checked": "2026-02-27T07:41:57.323501",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:52.972383",
+      "session_id": "2026-02-27T07:41:56.773721",
       "etag": "W/\"b1d07cedd354802f91fb67516d71af4d\"",
       "file_path": "documentation/watchos-release-notes/watchos-26-4-release-notes.md"
     },

@@ -14,6 +14,11 @@ The app preview device assets.
 object ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key
 ```
 
+## Properties
+
+- `appPreviewDevice` (string): The device that’s available for the asset, corresponding to the display size. See [`Get App Preview Device Sizes`](get-app-preview-device-sizes.md) for device mapping in the API.
+- `mediaAppPreviewOrScreenshotsDetail` (MediaAppAssetsDetail): The asset details of the app preview or app screenshots.
+
 
 ---
 

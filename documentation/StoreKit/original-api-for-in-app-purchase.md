@@ -24,10 +24,10 @@ You can also offer apps and In-App Purchases that run on multiple platforms as a
 
 There are four In-App Purchase types you can offer:
 
--  are a type that are depleted after one use. Customers can purchase them multiple times.
--  are a type that customers purchase once. They don’t expire. Non-consumable In-App Purchases can offer Family Sharing.
--  to services or content are a type that customers purchase once and that renew automatically on a recurring basis until customers decide to cancel. Auto-renewable subscriptions can offer Family Sharing.
--  to services or content provide access over a limited duration and don’t renew automatically. Customers need to purchase a new subscription after it concludes if they want to retain access.
+- *Consumables* are a type that are depleted after one use. Customers can purchase them multiple times.
+- *Non-consumables* are a type that customers purchase once. They don’t expire. Non-consumable In-App Purchases can offer Family Sharing.
+- *Auto-renewable subscriptions* to services or content are a type that customers purchase once and that renew automatically on a recurring basis until customers decide to cancel. Auto-renewable subscriptions can offer Family Sharing.
+- *Non-renewing subscriptions* to services or content provide access over a limited duration and don’t renew automatically. Customers need to purchase a new subscription after it concludes if they want to retain access.
 
 You can sync and restore non-consumables and auto-renewable subscriptions across devices using StoreKit. When a customer purchases an auto-renewable or non-renewing subscription, your app is responsible for making it available across all the person’s devices, and for restoring past purchases.
 

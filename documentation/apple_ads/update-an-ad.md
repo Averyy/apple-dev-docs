@@ -18,6 +18,49 @@ Use this endpoint to update or replace an [`Ad`](ad.md). Use your `adId` in the 
 
 ##### Payload Example Update an Ad
 
+**Request**:
+
+```None
+PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/ads/{adId}
+
+{
+  "name": "Trip Trek custom product page variation",
+  "status": "PAUSED"
+}
+```
+
+**Response**:
+
+```json
+{
+  "id": 573408745,
+  "orgId": 39872140,
+  "campaignId": 570798765,
+  "adGroupId": 427916203,
+  "creativeId": 94895512,
+  "name": "Trip Trek custom product page variation",
+  "creativeType": "CUSTOM_PRODUCT_PAGE",
+  "status": "PAUSED",
+  "servingStatus": "NOT_RUNNING",
+  "servingStateReasons": [
+    "PAUSED_BY_USER"
+  ],
+  "deleted": false,
+  "creationTime": "2024-11-16T01:15:32.412Z",
+  "modificationTime": "2024-11-16T01:15:32.412Z"
+}
+```
+
+## Endpoint
+
+`PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/ads/{adId}`
+
+## Parameters
+
+- `adId` (int64) *(required)*: A unique identifier representing the assignment relationship between an ad group and an [`Ad`](ad.md).
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body that includes the details of the [`Creative`](creative.md).

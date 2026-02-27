@@ -45,8 +45,8 @@ If you have already cancelled the current test or if it has already finished run
 
 ## Parameters
 
-- `comment`: A comment describing why you are cancelling the test or test   case.
-- `sourceLocation`: The source location to which the testing library will   attribute the cancellation.
+- `comment`: A comment describing why you are cancelling the test or test case.
+- `sourceLocation`: The source location to which the testing library will attribute the cancellation.
 
 
 ---

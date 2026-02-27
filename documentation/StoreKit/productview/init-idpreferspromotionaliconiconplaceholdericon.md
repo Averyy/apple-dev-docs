@@ -41,7 +41,7 @@ ProductView(id: "com.example.product") {
 ## Parameters
 
 - `productID`: The product identifier to load from the App Store.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this value is   and a promotional image for the product is available, the view displays it instead of the view you provide in the   parameter.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this value is `true` and a promotional image for the product is available, the view displays it instead of the view you provide in the `icon` parameter.
 - `icon`: A closure that returns the image the view displays when the system successfully finishes loading the product from the App Store.
 - `placeholderIcon`: A closure that returns the image that the view uses while the system loads the product from the App Store.
 

@@ -40,7 +40,7 @@ For example code that calls this method, see [`ExternalPurchaseCustomLink`](exte
 
 ## Parameters
 
-- `type`: An   value you select that determines the disclosure sheet the system displays.
+- `type`: An [`ExternalPurchaseCustomLink.NoticeType`](externalpurchasecustomlink/noticetype.md) value you select that determines the disclosure sheet the system displays.
 
 ## See Also
 

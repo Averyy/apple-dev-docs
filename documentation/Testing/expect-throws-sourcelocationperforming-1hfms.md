@@ -33,7 +33,7 @@ If the expectation passes, the instance of `errorType` that was thrown by `expre
 
 #### Overview
 
-Use this overload of `#expect()` when the expression `expression`  throw an error of a given type:
+Use this overload of `#expect()` when the expression `expression` *should* throw an error of a given type:
 
 ```swift
 #expect(throws: EngineFailureError.self) {
@@ -50,7 +50,7 @@ If the thrown error need only equal another instance of [`Error`](https://develo
 
 #### Expressions That Should Never Throw
 
-If the expression `expression` should  throw any error, you can pass [`Never.self`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/never):
+If the expression `expression` should *never* throw any error, you can pass [`Never.self`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/never):
 
 ```swift
 #expect(throws: Never.self) {
@@ -61,13 +61,13 @@ If the expression `expression` should  throw any error, you can pass [`Never.sel
 
 If `expression` throws an error, an [`Issue`](issue.md) is recorded for the test that is running in the current task. Any value returned by `expression` is discarded.
 
-Test functions can be annotated with `throws` and can throw errors which are then recorded as issues when the test runs. If the intent is for a test to fail when an error is thrown by `expression`, rather than to explicitly check that an error is  thrown by it, do not use this macro. Instead, simply call the code in question and allow it to throw an error naturally.
+Test functions can be annotated with `throws` and can throw errors which are then recorded as issues when the test runs. If the intent is for a test to fail when an error is thrown by `expression`, rather than to explicitly check that an error is *not* thrown by it, do not use this macro. Instead, simply call the code in question and allow it to throw an error naturally.
 
 ## Parameters
 
-- `errorType`: The type of error that is expected to be thrown. If    could throw   error, or the specific type of thrown   error is unimportant, pass  .
+- `errorType`: The type of error that is expected to be thrown. If `expression` could throw *any* error, or the specific type of thrown error is unimportant, pass `(any Error).self`.
 - `comment`: A comment describing the expectation.
-- `sourceLocation`: The source location to which recorded expectations and   issues should be attributed.
+- `sourceLocation`: The source location to which recorded expectations and issues should be attributed.
 - `expression`: The expression to be evaluated.
 
 ## See Also

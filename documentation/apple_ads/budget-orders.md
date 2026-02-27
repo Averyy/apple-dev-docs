@@ -2,13 +2,13 @@
 
 **Framework**: Apple Ads
 
-Manage your payment model.
+Manage your budgets.
 
 #### Overview
 
-To use budget orders, you need to receive approval from Apple. Apple Ads payment model options include pay-as-you-go (`PAYG)` or standard monthly invoicing (`LOC`). Use either `PAYG` or `LOC`, but not both. Refer to the [`Apple Ads help`](https://developer.apple.comhttps://ads.apple.com/help/billing/0031-monthly-invoicing) for billing details.
+Budget Orders allow [`Apple Ads Advanced`](https://developer.apple.comhttps://ads.apple.com) customers with invoiced billing to cap total spend across campaigns through a campaign group.
 
-In the API, `LOC` invoicing details  are in the [`LOCInvoiceDetails`](locinvoicedetails.md) object. `PAYG` invoicing details are in the [`BudgetOrder`](budgetorder.md) object. To confirm your payment model, call [`Get User ACL`](get-user-acl.md) and check the [`PaymentModel`](paymentmodel.md) field in the [`UserAcl`](useracl.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
+See [`Apple Ads Advanced `](https://developer.apple.comhttps://ads.apple.com/help/billing/0031-monthly-invoicing) for billing details.
 
 ## Topics
 
@@ -19,7 +19,7 @@ In the API, `LOC` invoicing details  are in the [`LOCInvoiceDetails`](locinvoice
   Updates an existing budget order.
 - [Get a Budget Order](get-a-budget-order.md)
   Fetches a specific budget order using a budget order identifier.
-- [Get All Budget Orders](get-all-budget-orders.md)
+- [Get all Budget Orders](get-all-budget-orders.md)
   Fetches all assigned budget orders for an organization.
 ### Budget Order Request and Response Objects
 - [object BudgetOrder](budgetorder.md)
@@ -35,7 +35,7 @@ In the API, `LOC` invoicing details  are in the [`LOCInvoiceDetails`](locinvoice
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for a monthly invoicing payment model.
+  The response to a request to fetch details for  `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

@@ -18,7 +18,7 @@ object Selector
 
 [`Selector`](selector.md) objects define what data the API returns when fetching resources. You use [`Selector`](selector.md) objects with find calls and reporting endpoints.
 
-|  |  |
+| **Functionality** | **Description** |
 | --- | --- |
 | Filtering | Specifies the criteria to filter the resources that return. |
 | Sorting | Specifies the criteria to order the resources that return. |
@@ -92,6 +92,13 @@ The following example returns both deleted and undeleted resources:
 }
 
 ```
+
+## Properties
+
+- `conditions` ([Condition]): A list of condition objects that allow users to filter a list of records.
+- `fields` ([string]): A list of field names to return within each record.
+- `orderBy` ([Sorting]): A list of field names and grouping to sort the records by `ASCENDING` or `DESCENDING`.
+- `pagination` (Pagination): A defined range and limit of the number of returned records.
 
 ## See Also
 

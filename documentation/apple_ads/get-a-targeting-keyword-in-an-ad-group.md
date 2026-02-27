@@ -14,6 +14,66 @@ To return a specific targeting keyword, use the associated `campaignId`, `adgrou
 
 ##### Payload Example Get a Targeting Keyword in an Ad Group
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/{keywordId}
+```
+
+**Response**:
+
+```json
+{  
+  "id": 542370642,
+  "adGroupId": 427916203,
+  "text": "targeting keyword example 1",
+  "status": "ACTIVE",
+  "matchType": "BROAD",
+  "bidAmount": {
+    "amount": "100",
+    "currency": "USD"
+  },
+  "modificationTime": "2025-04-08T20:48:28.206",
+  "deleted": false
+}
+```
+
+##### Payload Example Get a Targeting Keyword in an Ad Group in a Maximize Conversions Campaign
+
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/{keywordId}
+```
+
+**Response**:
+
+```json
+{
+  "id": 542370642,
+  "campaignId": 585885088,
+  "adGroupId": 542370539,
+  "text": "food delivery",
+  "status": "ACTIVE",
+  "matchType": "BROAD",
+  "bidAmount": {
+    "amount": "0",
+    "currency": "USD"
+  }
+  ...
+}
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/{keywordId}`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+- `keywordId` (int64) *(required)*: The unique identifier for the keyword.
+
 ## See Also
 
 - [Create Targeting Keywords](create-targeting-keywords.md)

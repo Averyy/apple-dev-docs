@@ -20,6 +20,10 @@ object CustomReportRequest.Selector
 - [object CustomReportRequest.Selector.Conditions](customreportrequest/selector-data.dictionary/conditions-data.dictionary.md)
   A container for condition objects that allow users to filter a list of records.
 
+## Properties
+
+- `conditions` (CustomReportRequest.Selector.Conditions): A list of condition objects that allow users to filter a list of records.
+
 
 ---
 

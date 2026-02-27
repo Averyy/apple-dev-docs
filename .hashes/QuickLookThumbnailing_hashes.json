@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-24T07:32:53.105840",
+    "last_updated": "2026-02-27T07:41:56.925102",
     "total_pages": 128,
-    "session_id": "2026-02-24T07:32:46.342691"
+    "session_id": "2026-02-27T07:41:45.967919"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/QuickLookThumbnailing.json": {
       "hash": "b9dda265601aa3dbf03db277aca35c2178596ab2e9bc04664f159b068364436d",
-      "last_checked": "2026-02-24T07:32:46.687795",
+      "last_checked": "2026-02-27T07:41:46.317017",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"8ad11cfc379681d242f8dfa29989fd5e\"",
       "file_path": "documentation/QuickLookThumbnailing/QuickLookThumbnailing.md"
     },
     "https://developer.apple.com/documentation/QuickLookThumbnailing": {
       "hash": "b9dda265601aa3dbf03db277aca35c2178596ab2e9bc04664f159b068364436d",
-      "last_checked": "2026-02-24T07:32:46.583597",
+      "last_checked": "2026-02-27T07:41:46.203071",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"8ad11cfc379681d242f8dfa29989fd5e\"",
       "file_path": "documentation/QuickLookThumbnailing/QuickLookThumbnailing.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/creating-quick-look-thumbnails-to-preview-files-in-your-app.json": {
       "hash": "21af8434c8646f8b5aee56d170f53744d808e478bd5e15bb9da698dcc33d1b39",
-      "last_checked": "2026-02-24T07:32:46.919406",
+      "last_checked": "2026-02-27T07:41:46.603013",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"d9efa837bcd64aaaa9bbd9af05159d5a\"",
       "file_path": "documentation/QuickLookThumbnailing/creating-quick-look-thumbnails-to-preview-files-in-your-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator.json": {
       "hash": "b5cc4fd426157928d2f438432a1fba0d5901870773eaa09e0b2a5cb52d16d2fe",
-      "last_checked": "2026-02-24T07:32:47.054493",
+      "last_checked": "2026-02-27T07:41:46.753584",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"bae1a15d5278038fa7d3d3e3b02c264f\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation.json": {
       "hash": "87e9bb9de2356d1649e4b99e7a38397a397e5bf052424ebca135707905154a42",
-      "last_checked": "2026-02-24T07:32:47.157745",
+      "last_checked": "2026-02-27T07:41:46.935164",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"bb8645df27e2a4d5d1547982a2699216\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/providing-thumbnails-of-your-custom-file-types.json": {
       "hash": "13cfe3fada0ae87bf6e06bd81d92a52e265d99a8571b61bb9b806169584d29ef",
-      "last_checked": "2026-02-24T07:32:47.273174",
+      "last_checked": "2026-02-27T07:41:47.134319",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"bc84746f4be6ee72880ab44547028cce\"",
       "file_path": "documentation/QuickLookThumbnailing/providing-thumbnails-of-your-custom-file-types.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailprovider.json": {
       "hash": "6d04511bc02b3181d4ad5b130fc6257a33965c1e045ae1cb9772c8b91818c46d",
-      "last_checked": "2026-02-24T07:32:47.367846",
+      "last_checked": "2026-02-27T07:41:47.321119",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"e8a4022500e8fe2d05b59c41b980fbe8\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailprovider.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlfilethumbnailrequest.json": {
       "hash": "20ff40a5a1cc4d5e3bda469218ec02b727be20015910c4d7f304e6bf12138d3f",
-      "last_checked": "2026-02-24T07:32:47.487195",
+      "last_checked": "2026-02-27T07:41:47.476042",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"daf540d285c289dc6514813d7f9b112d\"",
       "file_path": "documentation/QuickLookThumbnailing/qlfilethumbnailrequest.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailreply.json": {
       "hash": "b115f88d5b64021c697995911d0a5a8d0fa7c7053dbfb1d02ea64f1ef6d78171",
-      "last_checked": "2026-02-24T07:32:47.616718",
+      "last_checked": "2026-02-27T07:41:47.640298",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"2591a5cfa57282bcbb4bad5b3689b74c\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailreply.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerrordomain.json": {
       "hash": "f0d3d5d3a3f4054da28e9dde4888374651c0ee5baecc2cccb20a56b890a0e7a3",
-      "last_checked": "2026-02-24T07:32:47.682181",
+      "last_checked": "2026-02-27T07:41:47.767055",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"e4f5921d4747c8bcf43ccf5011cfe92a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerrordomain.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct.json": {
       "hash": "ad34916faf81d121d037ef1fe3b441e0cf7fa9dd60e5d693c54637978cc66fc4",
-      "last_checked": "2026-02-24T07:32:47.750121",
+      "last_checked": "2026-02-27T07:41:47.956450",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"d9400b21d7da2ccb9de7d0a459263c64\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swiftstruct.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code.json": {
       "hash": "c741d3105a5236fce646c15ed45e5f48d8ed0885efd711bbce21bff118568a23",
-      "last_checked": "2026-02-24T07:32:47.871378",
+      "last_checked": "2026-02-27T07:41:48.151242",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"22370303a66112a23ea9ee201a1bc520\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/shared.json": {
       "hash": "7c510a3170ceda5b5ae1338ace0586b3a474723037d031e907ca5b225bb1ae47",
-      "last_checked": "2026-02-24T07:32:47.965573",
+      "last_checked": "2026-02-27T07:41:48.285833",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"8163a46f0edf03457c18974f0f8741b7\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/shared.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/generatebestrepresentation(for:completion:).json": {
       "hash": "e0ff9fdabc7c86cb9a0036f0343b7bc2b7c31d61be6777885bee1b9d95d00a1d",
-      "last_checked": "2026-02-24T07:32:48.065073",
+      "last_checked": "2026-02-27T07:41:48.478705",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"1e00c7dee81c649d2ed17263e7c4c737\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/generatebestrepresentation-forcompletion.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/generaterepresentations(for:update:).json": {
       "hash": "816dce56a76f04bf1c875d7431cb6ba2d6648dc977d5cd33dc4d22180848fae3",
-      "last_checked": "2026-02-24T07:32:48.188808",
+      "last_checked": "2026-02-27T07:41:48.607581",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"1773a27eb86c626ae998f4a05d89f35f\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/generaterepresentations-forupdate.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request.json": {
       "hash": "35e5c43385deef7616354e52a374e129a83cc8c388aebce594712b42b917dd16",
-      "last_checked": "2026-02-24T07:32:48.290039",
+      "last_checked": "2026-02-27T07:41:48.742106",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"7370d1124abd13d4568efe492abc8654\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/savebestrepresentation(for:to:contenttype:completion:).json": {
       "hash": "bca6e9bade552767f0a4b9524d47482ff654218175744a9d8dbecec8f2412e2f",
-      "last_checked": "2026-02-24T07:32:48.394488",
+      "last_checked": "2026-02-27T07:41:48.885764",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"8e4d40e62961b2a9180e8fdd43106c4a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/savebestrepresentation-fortocontenttypecompletion.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/cancel(_:).json": {
       "hash": "e15dd6d6b8dbb73ca731cd20cefc041b06c9824cde37eff0b6378dbd1616b2cf",
-      "last_checked": "2026-02-24T07:32:48.524962",
+      "last_checked": "2026-02-27T07:41:49.074329",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"ccc47b93a42b3412f4dba5ed74830f8a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/cancel.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/savebestrepresentation(for:to:as:completion:).json": {
       "hash": "0fc056479c20ad593b03b9ad91b9f9c2303198fae1d17b659f85766dfc78e520",
-      "last_checked": "2026-02-24T07:32:48.749108",
+      "last_checked": "2026-02-27T07:41:49.209593",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"d0234d13a8a80c273800c751275a2f57\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/savebestrepresentation-fortoascompletion.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/cgimage.json": {
       "hash": "109ce3c84b949a3dd3ae9673c1abd155f44517fef915c813291168e8f1fbf79e",
-      "last_checked": "2026-02-24T07:32:48.898466",
+      "last_checked": "2026-02-27T07:41:49.392238",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"68c0061e88d79f28d53e9477a6efa8d5\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/cgimage.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/nsimage.json": {
       "hash": "7d72c0b4c1132c44ea8faafcf69e34c0ce55b2a07e011b657e9f0407ae811341",
-      "last_checked": "2026-02-24T07:32:48.967262",
+      "last_checked": "2026-02-27T07:41:49.550492",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"0e67e6051cf369463384bc85029d913e\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/nsimage.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/uiimage.json": {
       "hash": "aa6fc3312e34bd7c5faea1f4fa359d3b14ebb3af44cb6e176030664ca6f440d1",
-      "last_checked": "2026-02-24T07:32:49.052275",
+      "last_checked": "2026-02-27T07:41:49.706112",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"ee55737797e038d5d133b60b6417159d\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/uiimage.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/type.json": {
       "hash": "d7a62e9568a8eafc07d0ac91d732084a589ef28078f913ba5a80796d9cfc2603",
-      "last_checked": "2026-02-24T07:32:49.191756",
+      "last_checked": "2026-02-27T07:41:49.855834",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"dd834c0b0624927459fee7fd4a170024\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/type.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/contentrect.json": {
       "hash": "9c36347e21108bc8f7c2498b7700e99171a9367f2470f29ff954f52c2b5e07ad",
-      "last_checked": "2026-02-24T07:32:49.313968",
+      "last_checked": "2026-02-27T07:41:49.999617",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"09a478aeb88fa6b591bb4e8f3a9604c4\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/contentrect.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/representationtype.json": {
       "hash": "68659f783563d884b921ad2a1d9230c8d3651215f0bb0d84e87c5a2ea92d7ecd",
-      "last_checked": "2026-02-24T07:32:49.436694",
+      "last_checked": "2026-02-27T07:41:50.192489",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"647a25cfcb456e200c772b1162609faa\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/representationtype.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailprovider/providethumbnail(for:_:).json": {
       "hash": "96b40a7ad039320516712a7217bc68162d0038cc17def23d9fa027da2c8c1104",
-      "last_checked": "2026-02-24T07:32:49.506184",
+      "last_checked": "2026-02-27T07:41:50.341115",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"8469ff6febbc7a6dc76bae4d9927e58a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailprovider/providethumbnail-for.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlfilethumbnailrequest/maximumsize.json": {
       "hash": "809d1352bcaf96a72f3d659a0c298a01b6dd23b9adc5a4b387ca84b762bb169e",
-      "last_checked": "2026-02-24T07:32:49.573502",
+      "last_checked": "2026-02-27T07:41:50.524012",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"7491641a3d6f525587c4b80ccc00a6f9\"",
       "file_path": "documentation/QuickLookThumbnailing/qlfilethumbnailrequest/maximumsize.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlfilethumbnailrequest/minimumsize.json": {
       "hash": "5120fad93ff9050e54233e68d1212b856ebda52938312b1f034d55f1dabe0d09",
-      "last_checked": "2026-02-24T07:32:49.711182",
+      "last_checked": "2026-02-27T07:41:50.679416",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"e566a30cdbf3b3ec5e72d86e08070efc\"",
       "file_path": "documentation/QuickLookThumbnailing/qlfilethumbnailrequest/minimumsize.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlfilethumbnailrequest/scale.json": {
       "hash": "b246789c15614a1e1679f02d11ec13ae41113276c919d81ad0b69a8dbb2a2b03",
-      "last_checked": "2026-02-24T07:32:49.802611",
+      "last_checked": "2026-02-27T07:41:50.827108",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"87b0464578e744ce7e55b4adeb19d25d\"",
       "file_path": "documentation/QuickLookThumbnailing/qlfilethumbnailrequest/scale.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlfilethumbnailrequest/fileurl.json": {
       "hash": "6735b80da261a728faa6c582e4488cfd8df119edd10dccc1668baa00c291d2e7",
-      "last_checked": "2026-02-24T07:32:49.922591",
+      "last_checked": "2026-02-27T07:41:50.989364",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"a84a75338b8e56c0324b2316f390745a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlfilethumbnailrequest/fileurl.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailreply/init(contextsize:currentcontextdrawing:).json": {
       "hash": "664eb4947402dd1a587006462fedeec71478a8f0c00fd92498ea6e60f3afe749",
-      "last_checked": "2026-02-24T07:32:50.026545",
+      "last_checked": "2026-02-27T07:41:51.126706",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"94f852ab290a00cbc2b9f76084b3480c\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailreply/init-contextsizecurrentcontextdrawing.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailreply/init(contextsize:drawing:).json": {
       "hash": "a50a1acedfbff729fd9fcacad3e20c8c1ee8c06aecbaa06e95eabb4b14a37981",
-      "last_checked": "2026-02-24T07:32:50.102098",
+      "last_checked": "2026-02-27T07:41:51.324942",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"d0f9f3574839caec5439cf859db19c61\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailreply/init-contextsizedrawing.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailreply/init(imagefileurl:).json": {
       "hash": "b459e9fd891e84005143f59831d1311ab4b99f5355220135393fe8ad0936bfd8",
-      "last_checked": "2026-02-24T07:32:50.170638",
+      "last_checked": "2026-02-27T07:41:51.457356",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"5d983f19a4a02dcf74ee221f55356d90\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailreply/init-imagefileurl.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailreply/extensionbadge.json": {
       "hash": "defab4f7a58bb281ee0d4efd27253029f0f80d65202c87c100cf1b669d53f0aa",
-      "last_checked": "2026-02-24T07:32:50.237991",
+      "last_checked": "2026-02-27T07:41:51.648727",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"ea04197e9149d1c26872f02e080c4563\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailreply/extensionbadge.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/generationfailed.json": {
       "hash": "8edaaa8fe168c72b1567cb6ef8c1d15ff3d2060e4d5cbb903779baf403a0b7bc",
-      "last_checked": "2026-02-24T07:32:50.306866",
+      "last_checked": "2026-02-27T07:41:51.807090",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"ba58e1835f6f6ac26edc561e67431684\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/generationfailed.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/nocachedthumbnail.json": {
       "hash": "0751087ca355fda66f6df19ff93eb124f168af24144b911f8b099acac4061982",
-      "last_checked": "2026-02-24T07:32:50.380757",
+      "last_checked": "2026-02-27T07:41:51.939636",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"ee0c3837dc1e7f2549ba81680a88ff56\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/nocachedthumbnail.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/nocloudthumbnail.json": {
       "hash": "eda89c35507e2175393a1ac8ea2256fb414772db83d0bec4b83e21ef6ccff977",
-      "last_checked": "2026-02-24T07:32:50.446946",
+      "last_checked": "2026-02-27T07:41:52.089076",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"9a5a127d00184e36582a87d7da10103b\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/nocloudthumbnail.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/requestcancelled.json": {
       "hash": "b38553b8be1672b866b52df6434649600008f25ecaf9aa62a4fcfd5a8614b627",
-      "last_checked": "2026-02-24T07:32:50.524350",
+      "last_checked": "2026-02-27T07:41:52.277744",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"6a200ec542337858dd034c4763ba7003\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/requestcancelled.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/requestinvalid.json": {
       "hash": "1f554fcf45318d52ff380395ad71f3018c09600b19ac2363c05f098bee5931d0",
-      "last_checked": "2026-02-24T07:32:50.600863",
+      "last_checked": "2026-02-27T07:41:52.444666",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"165c16cee6226cbc9885b4ed29d4c0c0\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/requestinvalid.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/savingtourlfailed.json": {
       "hash": "49da5c1eb315c0e2cf85188d3f4e88c13cd20079f8daee368eb63ee0ecabf89f",
-      "last_checked": "2026-02-24T07:32:50.667674",
+      "last_checked": "2026-02-27T07:41:52.578419",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"83f10f25642394a915244db97462fa26\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/savingtourlfailed.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/errordomain.json": {
       "hash": "2460b1de607b460bed8358e9cd183146dc6f3680c221cd7d8ea95df6f3945018",
-      "last_checked": "2026-02-24T07:32:50.756374",
+      "last_checked": "2026-02-27T07:41:52.707498",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"2ff1670e2be8879b6ab25b6247b9be14\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/errordomain.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/generationfailed.json": {
       "hash": "6085c4b9a291f50aa9f2c4baefccf43ff4584b6d171c69f8fdbe7e2132ec5db0",
-      "last_checked": "2026-02-24T07:32:50.818612",
+      "last_checked": "2026-02-27T07:41:52.851465",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"2e5dcb14ea228fae1e4100909d31a5fa\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/generationfailed.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/nocachedthumbnail.json": {
       "hash": "14742164acea4a14bb306885f67367b3f369c3e0d330f651ec13353afd387cc0",
-      "last_checked": "2026-02-24T07:32:50.940732",
+      "last_checked": "2026-02-27T07:41:53.002613",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"cc6271cd546c0bc47e9e66d859a1acb6\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/nocachedthumbnail.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/nocloudthumbnail.json": {
       "hash": "4f0b272e54c6855032861204ac47ef66905baa28a33e0357ac31665cfcb54abc",
-      "last_checked": "2026-02-24T07:32:51.008087",
+      "last_checked": "2026-02-27T07:41:53.153355",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"026407bc70f3acfdf3195145c72de38d\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/nocloudthumbnail.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/requestcancelled.json": {
       "hash": "f3a1f575209c463ba5ccb04afee0533dcdab75fc225a88873dd41c5490dec5c2",
-      "last_checked": "2026-02-24T07:32:51.076247",
+      "last_checked": "2026-02-27T07:41:53.289171",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"07e248c8b469e7db1e07b04a1ede9f8f\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/requestcancelled.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/requestinvalid.json": {
       "hash": "a3532333d9af81b21f0e74fd7a5095e5eb9a8c75afb6f0364a4437dcd8098a2a",
-      "last_checked": "2026-02-24T07:32:51.172427",
+      "last_checked": "2026-02-27T07:41:53.437750",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"5c3f8139548758e0ad45b1178992222e\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/requestinvalid.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/savingtourlfailed.json": {
       "hash": "4cd8c3a37f2d8447a58cbce6b2fc2c2ee76f136bce52047411b589a11d677153",
-      "last_checked": "2026-02-24T07:32:51.296839",
+      "last_checked": "2026-02-27T07:41:53.577868",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"727c1c97ee66c169ecc4febb8c363c1a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/savingtourlfailed.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailerror-swift.struct/code/init(rawvalue:).json": {
       "hash": "7e45d7a8464b98b993c1d40cecb51bf5c5b7720cf43b236797d1490aa4ceccd7",
-      "last_checked": "2026-02-24T07:32:51.370051",
+      "last_checked": "2026-02-27T07:41:53.805757",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"dcb8979af071c41a31bb26fb683136f5\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailerror-swift.struct/code/init-rawvalue.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/init(fileat:size:scale:representationtypes:).json": {
       "hash": "6a161b214e4663ab876c0d63043c54df7232c7fa109f18aa1cbd0453f72d8607",
-      "last_checked": "2026-02-24T07:32:51.454434",
+      "last_checked": "2026-02-27T07:41:53.964627",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"47794370e17732706907fade9a0beb45\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/init-fileatsizescalerepresentationtypes.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/size.json": {
       "hash": "e6e406844682719594c76f2ef5c045299572efd75134495d0367a740ee3a871d",
-      "last_checked": "2026-02-24T07:32:51.605469",
+      "last_checked": "2026-02-27T07:41:54.112897",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"408cdffb3a03d787316ea883097608a8\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/size.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/scale.json": {
       "hash": "2c273a465e373e063c11abb15dddf5707e67161981b64ae7eb9fb1646c16d03d",
-      "last_checked": "2026-02-24T07:32:51.725566",
+      "last_checked": "2026-02-27T07:41:54.253292",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"24a26b7943105a75a7fde7a73469094f\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/scale.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/contenttype.json": {
       "hash": "0ece05eaee8845b3c60ca39bcef02fb8db665d5d265cf63fec6de084ea48e186",
-      "last_checked": "2026-02-24T07:32:51.804131",
+      "last_checked": "2026-02-27T07:41:54.405306",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"37dcfc910c6f094e9c81bdd372667f54\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/contenttype.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.property.json": {
       "hash": "be0e4ce509a2cdecca7db465bbf7cc5074c36738da29397240573e24218801b5",
-      "last_checked": "2026-02-24T07:32:51.975551",
+      "last_checked": "2026-02-27T07:41:54.700469",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"001efbb0615e383afe77024e3c09da5f\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swiftproperty.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/minimumdimension.json": {
       "hash": "42c53c8e706c627b85c5481ae9e71ab572c72459efa55597a948799502f60dda",
-      "last_checked": "2026-02-24T07:32:52.096980",
+      "last_checked": "2026-02-27T07:41:54.909180",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"78078bcfdd138b3b78325518825e29ef\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/minimumdimension.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/iconmode.json": {
       "hash": "025e470e5bee71cf8884ba0b802d08bb8929f5d08637b35a76a4aee905a486fc",
-      "last_checked": "2026-02-24T07:32:52.213501",
+      "last_checked": "2026-02-27T07:41:55.043476",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"1291804815be6ab35cc9eaa965b01d28\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/iconmode.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct.json": {
       "hash": "06d3e9cf310f7d58f2b9fed3bf274c5301660c4477af95a29a762aa448391e02",
-      "last_checked": "2026-02-24T07:32:52.344069",
+      "last_checked": "2026-02-27T07:41:55.178194",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"08211a3ce104b2fd327fbbbd01de12c7\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swiftstruct.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/representationtype/icon.json": {
       "hash": "c0b39e69dc042dfa6395195cf9e9aab3719e0506f3bccf227b2fb6131928766a",
-      "last_checked": "2026-02-24T07:32:52.419995",
+      "last_checked": "2026-02-27T07:41:55.341914",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"336593257868dbb1aeef91730976ec93\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/representationtype/icon.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/representationtype/lowqualitythumbnail.json": {
       "hash": "8b2bcc86d3395a1600ecaba741f8adbe81a81244c8051503ca88fd608f46af03",
-      "last_checked": "2026-02-24T07:32:52.542670",
+      "last_checked": "2026-02-27T07:41:55.806508",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"299a3619f667257d4ab80e6e6f2b40fa\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/representationtype/lowqualitythumbnail.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/representationtype/thumbnail.json": {
       "hash": "3144cdd1ab7eeb4e0e5576289d114f15441e1bb378eab999394abe8b6df33706",
-      "last_checked": "2026-02-24T07:32:52.611641",
+      "last_checked": "2026-02-27T07:41:55.963233",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"9175b26b44d9696f51f3510655cbd94b\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/representationtype/thumbnail.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailrepresentation/representationtype/init(rawvalue:).json": {
       "hash": "ded8dda1e1d66227dd01782725d8e1b85b8004972dcfb70b5d498fccbf8f4e2f",
-      "last_checked": "2026-02-24T07:32:52.682046",
+      "last_checked": "2026-02-27T07:41:56.149235",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"e459baab32e1d44b9e913e24fe2e6444\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailrepresentation/representationtype/init-rawvalue.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/init(rawvalue:).json": {
       "hash": "157ce0d0596255a1f80412cb4d2482406ab1765a0e6cf907031363fe108e22e1",
-      "last_checked": "2026-02-24T07:32:52.802887",
+      "last_checked": "2026-02-27T07:41:56.318552",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"904c8fc522324ebdfe676326be769a8a\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/init-rawvalue.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/all.json": {
       "hash": "7c743f446c0cfb8412d947dffc0950acd953efc871624116a7363d901dc8fc5e",
-      "last_checked": "2026-02-24T07:32:52.877468",
+      "last_checked": "2026-02-27T07:41:56.476800",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"03b2cb697ed420758c232790a7b2f0aa\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/all.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/icon.json": {
       "hash": "19573a81c35ac4114579d06a1a60a9ad5b4259bef2f52a1b43b6ac33a0caf001",
-      "last_checked": "2026-02-24T07:32:52.955547",
+      "last_checked": "2026-02-27T07:41:56.628780",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"d90635eeb853b18b8b104bdbfd3b9863\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/icon.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/lowqualitythumbnail.json": {
       "hash": "8e0d8a9b3f1bd53bd0a5f26198557aa5de3c268eac56b81e5020ffdd50cabe7a",
-      "last_checked": "2026-02-24T07:32:53.026892",
+      "last_checked": "2026-02-27T07:41:56.769432",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"fee76a2d37d953c989b50d18bdb54bf7\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/lowqualitythumbnail.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/quicklookthumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/thumbnail.json": {
       "hash": "443222e35f534ee13decde5a85116bbfba85bddf82eb342047307171545a217a",
-      "last_checked": "2026-02-24T07:32:53.104601",
+      "last_checked": "2026-02-27T07:41:56.904781",
       "status": "unchanged",
-      "session_id": "2026-02-24T07:32:46.342691",
+      "session_id": "2026-02-27T07:41:45.967919",
       "etag": "W/\"42d4db1519bbeb075365f2fad462127d\"",
       "file_path": "documentation/QuickLookThumbnailing/qlthumbnailgenerator/request/representationtypes-swift.struct/thumbnail.md"
     },

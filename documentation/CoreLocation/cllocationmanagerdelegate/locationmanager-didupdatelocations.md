@@ -20,10 +20,6 @@ Tells the delegate that new location data is available.
 optional func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 ```
 
-## Mentions
-
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
-
 #### Discussion
 
 Implementation of this method is optional but recommended.

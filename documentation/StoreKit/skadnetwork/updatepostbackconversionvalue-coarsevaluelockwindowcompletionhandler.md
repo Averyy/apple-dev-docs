@@ -58,10 +58,10 @@ For more information about SKAdNetwork versions, see [`SKAdNetwork release notes
 
 ## Parameters
 
-- `fineValue`: An unsigned 6-bit value   and  . The app or the ad network defines the meaning of the fine conversion value.
-- `coarseValue`: An   value of  ,  , or  . The app or the ad network defines the meaning of the coarse conversion value.
-- `lockWindow`: A Boolean value that indicates whether to send the postback before the conversion window ends. Use   to tell the system to send the postback without waiting for the end of the conversion window. The default value is  .
-- `completion`: An optional completion handler you provide to catch and handle any errors this method encounters when you update a conversion value. Set this value to   if you don’t provide a handler.
+- `fineValue`: An unsigned 6-bit value `≥0` and `≤63`. The app or the ad network defines the meaning of the fine conversion value.
+- `coarseValue`: An [`SKAdNetwork.CoarseConversionValue`](skadnetwork/coarseconversionvalue.md) value of [`low`](skadnetwork/coarseconversionvalue/low.md), [`medium`](skadnetwork/coarseconversionvalue/medium.md), or [`high`](skadnetwork/coarseconversionvalue/high.md). The app or the ad network defines the meaning of the coarse conversion value.
+- `lockWindow`: A Boolean value that indicates whether to send the postback before the conversion window ends. Use `true` to tell the system to send the postback without waiting for the end of the conversion window. The default value is `false`.
+- `completion`: An optional completion handler you provide to catch and handle any errors this method encounters when you update a conversion value. Set this value to `nil` if you don’t provide a handler.
 
 ## See Also
 

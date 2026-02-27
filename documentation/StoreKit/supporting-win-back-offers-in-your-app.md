@@ -6,7 +6,7 @@ Re-engage previous subscribers with a free or discounted offer for an auto-renew
 
 #### Overview
 
-A win-back offer is a free or discounted offer for an auto-renewable subscription for eligible customers whose subscription is . A churned subscription is one that has an [`expirationDate`](transaction/expirationdate.md) in the past, and a [`willAutoRenew`](product/subscriptioninfo/renewalinfo/willautorenew.md) value of `false`. You set up win-back offers in App Store Connect, including the criteria that determines whether a customer is eligible. You can base eligibility on the duration of the customer’s paid subscription, the time since the subscription expired, and the time that must pass between redeemed offers. You also set the discount type, and specify the regions or countries in which the offer is available.
+A win-back offer is a free or discounted offer for an auto-renewable subscription for eligible customers whose subscription is *churned*. A churned subscription is one that has an [`expirationDate`](transaction/expirationdate.md) in the past, and a [`willAutoRenew`](product/subscriptioninfo/renewalinfo/willautorenew.md) value of `false`. You set up win-back offers in App Store Connect, including the criteria that determines whether a customer is eligible. You can base eligibility on the duration of the customer’s paid subscription, the time since the subscription expired, and the time that must pass between redeemed offers. You also set the discount type, and specify the regions or countries in which the offer is available.
 
 > **Note**:  Session 10110: [`Implement App Store Offers`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10110)
 

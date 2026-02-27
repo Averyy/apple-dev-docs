@@ -21,7 +21,7 @@ An instance of this type representing the JPEG image format with the specified e
 
 ## Parameters
 
-- `encodingQuality`: The encoding quality to use when serializing an   image. A value of   indicates the lowest supported encoding   quality and a value of   indicates the highest supported encoding   quality.
+- `encodingQuality`: The encoding quality to use when serializing an image. A value of `0.0` indicates the lowest supported encoding quality and a value of `1.0` indicates the highest supported encoding quality.
 
 
 ---

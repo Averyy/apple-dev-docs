@@ -34,9 +34,9 @@ This method returns [`SKANError.Code.invalidConversionValue`](skanerror-swift.st
 
 ## Parameters
 
-- `fineValue`: An unsigned 6-bit value   and  . The app or the ad network defines the meaning of the conversion value.
-- `coarseValue`: An   value. The app or the ad network defines the meaning of this value.
-- `completion`: An optional completion handler you provide to catch and handle any errors this method encounters when you update a conversion value. Set this value to   if you don’t provide a handler.
+- `fineValue`: An unsigned 6-bit value `≥0` and `≤63`. The app or the ad network defines the meaning of the conversion value.
+- `coarseValue`: An [`SKAdNetwork.CoarseConversionValue`](skadnetwork/coarseconversionvalue.md) value. The app or the ad network defines the meaning of this value.
+- `completion`: An optional completion handler you provide to catch and handle any errors this method encounters when you update a conversion value. Set this value to `nil` if you don’t provide a handler.
 
 ## See Also
 

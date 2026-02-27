@@ -32,8 +32,8 @@ The testing library uses this function when saving an attachment. The format of 
 
 ## Parameters
 
-- `attachment`: The attachment that is requesting a buffer (that is, the   attachment containing this instance.)
-- `body`: A function to call. A temporary buffer containing a data   representation of this instance is passed to it.
+- `attachment`: The attachment that is requesting a buffer (that is, the attachment containing this instance.)
+- `body`: A function to call. A temporary buffer containing a data representation of this instance is passed to it.
 
 
 ---

@@ -6,9 +6,9 @@ Receive tokens for external purchases that you use to report transactions to App
 
 #### Overview
 
-An  is a unique string that your app or website receives when your customer chooses to view your external purchase offerings. You receive external purchase tokens within your app or appended to your website URL, depending on the API you call.
+An *external purchase token* is a unique string that your app or website receives when your customer chooses to view your external purchase offerings. You receive external purchase tokens within your app or appended to your website URL, depending on the API you call.
 
-- When you call [`token(for:)`](externalpurchasecustomlink/token(for:).md) and your app configures the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key, you receive an external purchase token for custom links (also called a ) . For more information about these tokens, see the following section, [`Receive custom link tokens`](receiving-and-decoding-external-purchase-tokens#Receive-custom-link-tokens.md).
+- When you call [`token(for:)`](externalpurchasecustomlink/token(for:).md) and your app configures the [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) property list key, you receive an external purchase token for custom links (also called a *custom link token*) . For more information about these tokens, see the following section, [`Receive custom link tokens`](receiving-and-decoding-external-purchase-tokens#Receive-custom-link-tokens.md).
 - When you call [`token(for:)`](externalpurchasecustomlink/token(for:).md), and your app configures the [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLinkStreamingRegions) property list key, you receive custom link tokens for a music streaming service.
 - When you call [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md) and the response is [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](externalpurchase/noticeresult/continuedwithexternalpurchasetoken(token:).md), you receive an external purchase token in your app.
 - When you call [`open()`](externalpurchaselink/open().md) or [`open(url:)`](externalpurchaselink/open(url:).md), you receive an external purchase token appended to the current storefront’s destination URL. You configure the URLs in the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLink) or [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseMultiLink) property list keys, respectively.
@@ -28,9 +28,9 @@ The system automatically generates new custom link tokens when the following qua
 | Customer installs an app for the first time across all of their devices | The system generates both the `ACQUISITION` and `SERVICES` tokens. |
 | Customer updates or redownloads an app on any of their devices | If there’s no active `SERVICES` token, the system generates a new `SERVICES` token. |
 
-Custom link tokens have expiration dates. A token is considered  during the time between its creation date and expiration date.
+Custom link tokens have expiration dates. A token is considered *active* during the time between its creation date and expiration date.
 
-Apps can request custom link tokens at any time, for example, when the app launches, or before displaying a store. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be identical to the original token, or it can be a  token. A refreshed token has the same creation and expiration dates as the original token, but a different [`externalPurchaseId`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/externalPurchaseId).
+Apps can request custom link tokens at any time, for example, when the app launches, or before displaying a store. If there’s an active token period, the system returns the token that corresponds to that active period. The returned token can be identical to the original token, or it can be a *refreshed* token. A refreshed token has the same creation and expiration dates as the original token, but a different [`externalPurchaseId`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/externalPurchaseId).
 
 Use either the original token or a refreshed token to report transactions that occur during the active token period.
 
@@ -44,7 +44,15 @@ Custom link tokens are available only on devices running iOS 18.1 and later, iPa
 
 The token your app or website’s server receives is a string that is Base64URL-encoded JSON. Decode the token using Base64URL decoding to read the JSON, which contains the following fields:
 
+- **`appAppleId`**: Uniquely identifies the app to which the token applies.
+- **`bundleId`**: The bundle ID of the app.
+- **`tokenCreationDate`**: UNIX time, in milliseconds, when the system created the token.
+- **`externalPurchaseId`**: A unique value the system creates to identify the token. Use this value when you report tokens and transactions.
+
 The following additional fields apply only to custom link tokens:
+
+- **`tokenType`**: The custom link token’s type, either `ACQUISITION` or `SERVICES`.
+- **`tokenExpirationDate`**: UNIX time, in milliseconds, when the token expires, after which you no longer associate the token with new transactions.
 
 The [`Send External Purchase Report`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/Send-External-Purchase-Report) endpoint requires the [`externalPurchaseId`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/externalPurchaseId) field to report tokens and transactions. To get the `externalPurchaseId`, decode the token string using Base64URL decoding.
 

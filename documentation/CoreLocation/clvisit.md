@@ -58,7 +58,7 @@ Visit objects contain as much information about the visit as possible but may no
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
 - [Creating a location push service extension](creating-a-location-push-service-extension.md)
-  Add and configure an extension to enable your location-sharing app to access a user’s location in response to a request from another user.
+  Add and configure an extension to enable your location-sharing app to access a person’s location in response to a request from someone else.
 - [class CLLocation](cllocation.md)
   The latitude, longitude, and course information reported by the system.
 - [struct CLLocationCoordinate2D](cllocationcoordinate2d.md)
@@ -70,6 +70,7 @@ Visit objects contain as much information about the visit as possible but may no
 - [Monitoring location changes with Core Location](monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
 - [class CLServiceSession](clservicesession-pt7n.md)
+  An object that provides diagnostics about an app’s authorization to use location services.
 
 
 ---

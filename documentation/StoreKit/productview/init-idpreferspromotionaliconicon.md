@@ -29,7 +29,7 @@ The product view displays a placeholder icon until the system finishes loading t
 ## Parameters
 
 - `productID`: The product identifier to load from the App Store.
-- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this value is   and a promotional image for the product is available, the view displays it instead of the view you provide in the   parameter.
+- `prefersPromotionalIcon`: A Boolean value that indicates whether to use the promotional image from the App Store, if it’s available. If this value is `true` and a promotional image for the product is available, the view displays it instead of the view you provide in the `icon` parameter.
 - `icon`: A closure that returns the image the view displays when the system finishes loading the product from the App Store.
 
 ## See Also

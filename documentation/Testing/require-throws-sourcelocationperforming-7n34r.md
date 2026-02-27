@@ -35,7 +35,7 @@ The instance of `errorType` that was thrown by `expression`.
 
 > **Note**: An instance of [`ExpectationFailedError`](expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
 
-Use this overload of `#require()` when the expression `expression`  throw an error of a given type:
+Use this overload of `#require()` when the expression `expression` *should* throw an error of a given type:
 
 ```swift
 try #require(throws: EngineFailureError.self) {
@@ -50,13 +50,13 @@ If `expression` does not throw an error, or if it throws an error that is not an
 
 If the thrown error need only equal another instance of [`Error`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/error), use [`require(throws:_:sourceLocation:performing:)`](require(throws:_:sourcelocation:performing:)-4djuw.md) instead.
 
-If `expression` should  throw, simply invoke the code without using this macro. The test will then fail if an error is thrown.
+If `expression` should *never* throw, simply invoke the code without using this macro. The test will then fail if an error is thrown.
 
 ## Parameters
 
-- `errorType`: The type of error that is expected to be thrown. If    could throw   error, or the specific type of thrown   error is unimportant, pass  .
+- `errorType`: The type of error that is expected to be thrown. If `expression` could throw *any* error, or the specific type of thrown error is unimportant, pass `(any Error).self`.
 - `comment`: A comment describing the expectation.
-- `sourceLocation`: The source location to which recorded expectations and   issues should be attributed.
+- `sourceLocation`: The source location to which recorded expectations and issues should be attributed.
 - `expression`: The expression to be evaluated.
 
 ## See Also

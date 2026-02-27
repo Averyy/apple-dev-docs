@@ -43,9 +43,9 @@ Because all errors thrown by `body` are caught as known issues, this function is
 ## Parameters
 
 - `comment`: An optional comment describing the known issue.
-- `isIntermittent`: Whether or not the known issue occurs intermittently. If   this argument is   and the known issue does not occur, no secondary   issue is recorded.
-- `isolation`: The actor to which   is isolated, if any.
-- `sourceLocation`: The source location to which any recorded issues should   be attributed.
+- `isIntermittent`: Whether or not the known issue occurs intermittently. If this argument is `true` and the known issue does not occur, no secondary issue is recorded.
+- `isolation`: The actor to which `body` is isolated, if any.
+- `sourceLocation`: The source location to which any recorded issues should be attributed.
 - `body`: The function to invoke.
 
 ## See Also

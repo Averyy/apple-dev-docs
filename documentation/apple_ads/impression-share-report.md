@@ -19,6 +19,79 @@ Use this endpoint to obtain a `reportId` to use in a [`Get a Single Impression S
 
 ##### Payload Example Obtain a Report Id
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/custom-reports
+
+{
+  "name": "impression_share_API_report_example_1",
+  "startTime": "2024-01-20",
+  "endTime": "2024-01-29",
+  "granularity": "DAILY",
+  "selector": {
+    "conditions": [
+      {
+        "field": "countryOrRegion",
+        "operator": "IN",
+        "values": [
+          "US",
+          "AU"
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "id": 986235,
+    "name": "impression_share_API_report_example_1",
+    "startTime": "2024-01-20",
+    "endTime": "2024-01-29",
+    "granularity": "DAILY",
+    "downloadUri": "https://blobstore.apple.com...",
+    "dimensions": [
+      "appName",
+      "adamId",
+      "countryOrRegion",
+      "searchTerm"
+    ],
+    “metrics”: [
+      "lowImpressionShare",
+      "highImpressionShare",
+      "rank",
+      "searchPopularity"
+    ],
+    "selector": {
+      "conditions": [
+        {
+          "field": "countryOrRegion",
+          "operator": "IN",
+          "values": [
+            "US",
+            "AU"
+          ]
+        }
+      ]
+    },
+    "state": "QUEUED",
+    "creationTime": "2024-01-12T04:47:27.782",
+    "modificationTime": "2024-01-12T04:47:27.782"
+  },
+  "pagination": null,
+  "error": null
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/custom-reports`
+
 ## Request Body
 
 The impression share report request body, consisting of metrics and dimensions to filter on.

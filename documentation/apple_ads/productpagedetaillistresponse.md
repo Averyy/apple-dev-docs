@@ -14,6 +14,10 @@ A container for product page responses.
 object ProductPageDetailListResponse
 ```
 
+## Properties
+
+- `data` ([ProductPageDetail]): Response data that the API provides.
+
 ## See Also
 
 - [object LocaleInfo](localeinfo.md)

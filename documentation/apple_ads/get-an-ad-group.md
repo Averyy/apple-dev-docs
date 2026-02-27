@@ -14,6 +14,89 @@ To return a specific ad group, use the associated `campaignId` and `adgroupId` i
 
 ##### Payload Example Get an Ad Group
 
+**Request**:
+
+```http
+GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}
+```
+
+**Response**:
+
+```json
+{
+    "id": 542370539,
+    "campaignId": 56543219,
+    "name": " ad group name example",
+    "cpaGoal": {
+      "amount": "100",
+      "currency": "USD"
+    },
+    "startTime": "2025-04-08T12:00:22.788",
+    "endTime": "2025-04-09T12:00:22.788",
+    "automatedKeywordsOptIn": false,
+    "defaultBidAmount": {
+      "amount": "100",
+      "currency": "USD"
+    },
+   "pricingModel": "CPC",    
+   "targetingDimensions": {
+      "age": {
+        "included": [
+          {
+            "minAge": 20,
+            "maxAge": 25
+          },
+          {
+            "minAge": 25,
+            "maxAge": 55
+          }
+        ]
+      },
+      "gender": {
+        "included": [
+          "M",
+          "F"
+        ]
+      },
+      "country": null,
+      "adminArea": null,
+      "locality": null,
+      "deviceClass": {
+        "included": [
+          "IPAD",
+          "IPHONE"
+        ]
+      },
+      "daypart": {
+        "userTime": {
+          "included": [
+            1,
+            3,
+            22
+          ]
+        }
+      },
+      "appDownloaders": null
+    },
+    "orgId": 40669820,
+    "modificationTime": "2025-04-08T19:00:24.105",
+    "status": "ENABLED",
+    "servingStatus": "RUNNING",
+    "servingStateReasons": null,
+    "displayStatus": "RUNNING",
+    "deleted": false
+}
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## See Also
 
 - [Create an Ad Group](create-an-ad-group.md)

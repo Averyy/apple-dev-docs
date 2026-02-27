@@ -14,6 +14,17 @@ The defined targeted audience to include using the gender demographic.
 object GenderCriteria
 ```
 
+## Properties
+
+- `included` ([string]): The dimension to include targeting criteria values for [`Gender`](gender.md). To specify all genders, set this to `NULL`. ```json
+"gender": {
+      "included": [
+        "F",
+        "M"
+      ]
+    },
+```
+
 ## See Also
 
 - [object TargetingDimensions](targetingdimensions.md)

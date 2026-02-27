@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: property
 
+A property that describes the current state of the services session.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -16,6 +18,11 @@
 ```swift
 final var diagnostics: CLServiceSession.Diagnostics { get }
 ```
+
+## See Also
+
+- [CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.class.md)
+  An object you use to access location service session diagnostic events.
 
 
 ---

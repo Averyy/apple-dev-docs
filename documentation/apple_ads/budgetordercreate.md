@@ -20,6 +20,11 @@ object BudgetOrderCreate
 - [object BudgetOrderCreate.Bo](budgetordercreate/bo-data.dictionary.md)
   The response to a request to create a budget order.
 
+## Properties
+
+- `bo` (BudgetOrderCreate.Bo): Contains the details of the budget order.
+- `orgIds` ([int64]): The identifier of the organization that owns the campaign. Currently, only one `orgId` is supported.
+
 ## See Also
 
 - [object BudgetOrder](budgetorder.md)
@@ -33,7 +38,7 @@ object BudgetOrderCreate
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for a monthly invoicing payment model.
+  The response to a request to fetch details for  `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

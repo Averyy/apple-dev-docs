@@ -14,6 +14,12 @@ The order of grouped results.
 object Sorting
 ```
 
+## Properties
+
+- `field` (string): The name of a field.
+- `ignoreCase` (boolean)
+- `sortOrder` (string): The order of grouped results.
+
 ## See Also
 
 - [object Condition](condition.md)

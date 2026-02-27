@@ -14,6 +14,8 @@ Writing a prompt that works for one or two test cases might be straightforward i
 
 Starting with prompt evaluation doesn’t require building a complete system immediately. Begin with a single critical quality criterion and a handful of test scenarios. As you see the value — catching a failure you might have missed, making an improvement with confidence, or tracking quality over time — expand your coverage.
 
+This article applies to your evaluation strategy whether you choose to use Swift or Python. For more information about the Python Foundation Models SDK, see [`Foundation Models SDK for Python`](https://developer.apple.comhttps://github.com/apple/python-apple-fm-sdk).
+
 ##### Understand Why Prompt Evaluation Matters
 
 Unlike traditional software where the output is predictable and repeatable, generative models introduce unique challenges that make evaluation essential.

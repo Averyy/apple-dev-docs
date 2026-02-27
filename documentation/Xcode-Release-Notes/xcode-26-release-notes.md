@@ -670,7 +670,7 @@ Also in Xcode 26:
 
 - [Xcode 26.4 Beta 2 Release Notes](xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.3 RC 2 Release Notes](xcode-26_3-release-notes.md)
+- [Xcode 26.3 Release Notes](xcode-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

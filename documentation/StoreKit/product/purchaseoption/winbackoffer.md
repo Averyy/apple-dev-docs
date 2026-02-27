@@ -25,7 +25,7 @@ To test win-back offers in Xcode, set up the offers in your StoreKit configurati
 
 ## Parameters
 
-- `offer`: The   instance that represents the win-back offer to apply to the purchase.
+- `offer`: The [`Product.SubscriptionOffer`](product/subscriptionoffer.md) instance that represents the win-back offer to apply to the purchase.
 
 ## See Also
 

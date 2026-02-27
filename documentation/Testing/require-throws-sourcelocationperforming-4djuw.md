@@ -29,7 +29,7 @@ The instance of `E` that was thrown by `expression` and is equal to `error`.
 
 > **Note**: An instance of [`ExpectationFailedError`](expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
 
-Use this overload of `#require()` when the expression `expression`  throw a specific error:
+Use this overload of `#require()` when the expression `expression` *should* throw a specific error:
 
 ```swift
 try #require(throws: EngineFailureError.batteryDied) {

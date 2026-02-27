@@ -14,6 +14,17 @@ The product page asset metadata.
 object ProductPageDetailWithAssets
 ```
 
+## Properties
+
+- `adamId` (int64): Your unique App Store app identifier. Use [`Get a Campaign`](get-a-campaign.md) or [`Get all Campaigns`](get-all-campaigns.md) to obtain your `adamId` used in your campaign.
+- `contentProviderId` (int64): A unique identifier of the registered content owner.
+- `creationTime` (date-time): The date and time the object was created. This field is not modifiable.
+- `id` (int64): A unique string to identify a product page on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com). For example, `45812c9b-c296-43d3-c6a0-c5a02f74bf6e`.
+- `isDefault` (boolean): Indicates if the custom product page is the default on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+- `localization` ([CreativeLocalizationWithAssets]): Localized metadata used on a product page with app preview.
+- `modificationTime` (date-time): The date and time of the most recent modification of the object. This field is not modifiable.
+- `name` (string): The name of your custom product page, as input through [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+
 ## See Also
 
 - [object LocaleInfo](localeinfo.md)

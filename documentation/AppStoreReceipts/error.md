@@ -14,6 +14,10 @@ Error information that returns in the response body when a request isn’t succe
 object error
 ```
 
+## Properties
+
+- `code` (int32) *(required)*: A standard HTTP status code returned in the response body whenever a request isn’t successful due to a general networking issue.
+
 ## See Also
 
 - [verifyReceipt](verify-receipt.md)

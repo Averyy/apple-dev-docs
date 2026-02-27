@@ -22,7 +22,7 @@ init(subscriptions: some Collection<Product>, @ViewBuilder marketingContent: () 
 
 ## Parameters
 
-- `subscriptions`: A collection of auto-renewable subscription   instances to merchandise. The auto-renewable subscriptions need to belong to the same subscription group.
+- `subscriptions`: A collection of auto-renewable subscription [`Product`](product.md) instances to merchandise. The auto-renewable subscriptions need to belong to the same subscription group.
 - `marketingContent`: A view that contains marketing content to display above the store controls.
 
 ## See Also

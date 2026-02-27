@@ -14,6 +14,11 @@ The geosearch request object.
 object GeoRequest
 ```
 
+## Properties
+
+- `entity` (string) *(required)*: The type of geography for targeting locations. Search results are in the preferred language according to your organization.
+- `id` (string) *(required)*: The geographic location in the format of [`CountryOrRegion`](countryorregion.md)|`adminArea`|`locality`. A `countryCode` is an ISO alpha-2 country code string. An `adminArea` is a state or the equivalent according to its associated `country`. A `locality` is a city or the equivalent according to its associated `adminArea`. Use the `id` that returns in the response in the [`TargetingDimensions`](targetingdimensions.md) object.
+
 ## See Also
 
 - [object SearchEntity](searchentity.md)

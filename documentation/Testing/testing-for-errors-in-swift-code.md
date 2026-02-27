@@ -53,7 +53,7 @@ A test function that throws an error fails, which is usually sufficient for test
 }
 ```
 
-If the closure throws  error, the testing library records an issue. If you need the test to stop when the code throws an error, include the code inline in the test function instead of wrapping it in a call to [`expect(throws:_:sourceLocation:performing:)`](expect(throws:_:sourcelocation:performing:)-7du1h.md).
+If the closure throws *any* error, the testing library records an issue. If you need the test to stop when the code throws an error, include the code inline in the test function instead of wrapping it in a call to [`expect(throws:_:sourceLocation:performing:)`](expect(throws:_:sourcelocation:performing:)-7du1h.md).
 
 #### Inspect an Error Thrown By Your Code
 

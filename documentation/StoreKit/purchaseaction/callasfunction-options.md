@@ -31,12 +31,12 @@ Don’t call this method directly. SwiftUI calls it when you call the [`Purchase
 
 This method may throw a [`Product.PurchaseError`](product/purchaseerror.md) or [`StoreKitError`](storekiterror.md).
 
-For information about how Swift uses the [`callAsFunction(_:options:)`](purchaseaction/callasfunction(_:options:).md) method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in .
+For information about how Swift uses the [`callAsFunction(_:options:)`](purchaseaction/callasfunction(_:options:).md) method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
 
 ## Parameters
 
-- `product`: The in-app purchase   the customer is purchasing.
-- `options`: A set of options you may associate with the purchase ( ).
+- `product`: The in-app purchase [`Product`](product.md) the customer is purchasing.
+- `options`: A set of options you may associate with the purchase ([`Product.PurchaseOption`](product/purchaseoption.md)).
 
 
 ---

@@ -44,7 +44,7 @@ The sandbox environment and StoreKit Testing in Xcode both support testing refun
 
 ## Parameters
 
-- `scene`: The   that the system displays the sheet on.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that the system displays the sheet on.
 
 ## See Also
 

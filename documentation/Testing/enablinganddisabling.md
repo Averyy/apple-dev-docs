@@ -19,7 +19,7 @@ If you need to disable a test unconditionally, use the [`disabled(_:sourceLocati
 func sellsBurritos() async throws { ... }
 ```
 
-Add the trait  the test’s display name:
+Add the trait *after* the test’s display name:
 
 ```swift
 @Test("Food truck sells burritos", .disabled())
@@ -51,7 +51,7 @@ If it’s currently winter, then presumably ice cream won’t be available for s
 func isCold() async throws { ... }
 ```
 
-It’s also possible to conditionally  a test and to combine multiple conditions:
+It’s also possible to conditionally *disable* a test and to combine multiple conditions:
 
 ```swift
 @Test(
@@ -80,7 +80,7 @@ For example, the following test cannot run due to bug number `"12345"`:
 func isCold() async throws { ... }
 ```
 
-If a test has multiple conditions applied to it, they must  pass for it to run. Otherwise, the test notes the first condition to fail as the reason the test is skipped.
+If a test has multiple conditions applied to it, they must *all* pass for it to run. Otherwise, the test notes the first condition to fail as the reason the test is skipped.
 
 ##### Handle Complex Conditions
 

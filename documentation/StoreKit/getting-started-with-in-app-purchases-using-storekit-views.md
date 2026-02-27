@@ -12,13 +12,18 @@ StoreKit provides a streamlined system for building basic In-App Purchase (IAP) 
 
 StoreKit supports the following product types, and StoreKit views can display all of them without any custom programming:
 
+- **Consumables**: Content such as lives or gems in a game. After purchase, consumable content depletes as people use it, and people can purchase it again.
+- **Non-consumables**: Content such as premium features in an app. Purchased non-consumable content doesn’t expire or deplete.
+- **Auto-renewable subscriptions**: Recurring access to virtual content, services, and premium features in your app on an ongoing basis. An auto-renewable subscription continues to automatically renew at the end of each subscription period until people choose to cancel it.
+- **Non-renewing subscriptions**: Access to a service or content that lasts for a limited time, like access to an in-game battle pass. People purchase a non-renewing subscription each time they want to extend their access to the service or content.
+
 #### Prototype Your in App Store Offline
 
 With StoreKit, you can create a file that allows you to prototype and test your In-App Purchase code in Xcode without needing to set up products in App Store Connect. Xcode calls this a StoreKit local configuration; to create a local configuration file, follow these steps:
 
 1. Open your app’s Xcode project.
 2. Create the local StoreKit configuration by selecting File > New > File From Template.
-3. In the sheet that appears, enter  in the Filter search field.
+3. In the sheet that appears, enter *storekit* in the Filter search field.
 4. Click the StoreKit Configuration File, then click Next.
 5. In the dialog, enter a name for the file, for example `LocalConfiguration.storekit`. Leave the configuration sync checkbox unchecked and click Next.
 6. Select a location for your file in your app’s project, then click Create to save the file.

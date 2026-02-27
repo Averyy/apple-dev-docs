@@ -18,6 +18,137 @@ Use this endpoint to find ad groups within your organization. Use a [`Selector`]
 
 ##### Payload Example Find Ad Groups Org Level
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/adgroups/find
+
+{
+  "fields": null,
+  "conditions": [
+    {
+      "field": "pricingModel",
+      "operator": "EQUALS",
+      "values": [
+        "CPC"
+      ]
+    }
+  ],
+  "orderBy": [
+    {
+      "field": "id",
+      "sortOrder": "ASCENDING"
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 20
+  }
+}
+
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "id": 542370764,
+      "campaignId": 56543219,
+      "name": "Trip Trek ad group 5",
+      "cpaGoal": null,
+      "paymentModel": "PAYG",
+      "startTime": "2024-10-20T20:37:21.146Z",
+      "endTime": "2024-10-20T20:37:21.146Z",
+      "automatedKeywordsOptIn": true,
+      "defaultBidAmount": {
+        "amount": "1",
+        "currency": "USD"
+      },
+      "pricingModel": "CPC",
+      "targetingDimensions": {
+        "age": {
+          "included": [
+            {
+              "minAge": 18,
+              "maxAge": 55
+            }
+          ]
+        },
+        "gender": {
+          "included": [
+            "F"
+          ]
+        },
+        "country": {
+          "included": [
+            "US"
+          ]
+        },
+        "adminArea": {
+          "included": [
+            "CA"
+          ]
+        },
+        "locality": {
+          "included": [
+            "Cupertino"
+          ]
+        },
+        "deviceClass": {
+          "included": [
+            "IPHONE",
+            "IPAD"
+          ]
+        },
+        "daypart": {
+          "userTime": {
+            "included": [
+              0
+            ]
+          }
+        },
+        "appDownloaders": {
+          "included": [
+            "654327167"
+          ],
+          "excluded": [
+            "654325422"
+          ]
+        },
+        "appCategories": {
+          "included": [
+            100
+          ],
+          "excluded": [
+            100
+          ]
+        }
+      },
+      "orgId": 40669876,
+      "modificationTime": "2024-10-20T20:37:21.146Z",
+      "status": "ENABLED",
+      "servingStatus": "RUNNING",
+      "servingStateReasons": [
+        "null"
+      ],
+      "displayStatus": "RUNNING",
+      "deleted": false
+    }
+  ],
+  "pagination": {
+    "totalResults": 1,
+    "startIndex": 1,
+    "itemsPerPage": 10
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/adgroups/find`
+
 ## Request Body
 
 The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.

@@ -41,6 +41,26 @@ Include a property list file in your app bundle containing an array of product i
 
 To get product identifiers from the property list, locate the file in the app bundle and read it.
 
+**Swift**:
+
+```swift
+guard let url = Bundle.main.url(forResource: "product_ids", withExtension: "plist") else { fatalError("Unable to resolve url for in the bundle.") }
+do {
+    let data = try Data(contentsOf: url)
+    let productIdentifiers = try PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String]
+} catch let error as NSError {
+    print("\(error.localizedDescription)")
+}
+```
+
+**Objective-C**:
+
+```objc
+NSURL *url = [[NSBundle mainBundle] URLForResource:@"product_ids"
+                                     withExtension:@"plist"];
+NSArray *productIdentifiers = [NSArray arrayWithContentsOfURL:url];
+```
+
 ##### Retrieve Product Ids From Your Server
 
 Store the product identifiers on your server if:
@@ -60,6 +80,54 @@ Host a JSON file on your server with the product identifiers. For example, the f
 ```
 
 To get product identifiers from your server, fetch and read the JSON file.
+
+**Swift**:
+
+```swift
+func fetchProductIdentifiers(from url: URL) {
+    DispatchQueue.global(qos: .default).async {
+        do {
+            let jsonData = try Data(contentsOf: url)
+            let identifiers = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String]
+
+            guard let productIdentifiers = identifiers else {fatalError("Identifiers are not of type String.")}
+
+            DispatchQueue.main.async {
+                self.delegate?.display(products: productIdentifiers) 
+            }
+
+        } catch let error as NSError {
+            print("\(error.localizedDescription)")
+        }
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)fetchProductIdentifiersFromURL:(NSURL *)url delegate:(id)delegate
+{
+    dispatch_queue_t global_queue =
+        dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(global_queue, ^{
+        NSError *err;
+        NSData *jsonData = [NSData dataWithContentsOfURL:url
+                                                 options:NULL
+                                                   error:&err];
+        if (!jsonData) { /* Handle the error. */ }
+
+        NSArray *productIdentifiers = [NSJSONSerialization
+            JSONObjectWithData:jsonData options:NULL error:&err];
+        if (!productIdentifiers) { /* Handle the error. */ }
+
+        dispatch_queue_t main_queue = dispatch_get_main_queue();
+        dispatch_async(main_queue, ^{
+            [delegate displayProducts:productIdentifiers]; // Custom method.
+        });
+    });
+}
+```
 
 Consider versioning the JSON file so future versions of your app can change its structure without breaking older versions of your app. For example, you might name the file that uses the old structure `products_v1.json` and the file that uses a new structure `products_v2.json`. This is especially useful if your JSON file is more complex than the simple array in the example.
 

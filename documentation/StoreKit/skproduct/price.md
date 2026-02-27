@@ -24,6 +24,25 @@ var price: NSDecimalNumber { get }
 
 Your app can format the price using a number formatter, as shown in the following sample code:
 
+**Swift**:
+
+```swift
+let numberFormatter = NumberFormatter()
+numberFormatter.numberStyle = .currency
+numberFormatter.locale = product.priceLocale
+let formattedString = numberFormatter.string(from: product.price)
+```
+
+**Objective-C**:
+
+```objc
+NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+[numberFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+[numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+[numberFormatter setLocale:product.priceLocale];
+NSString *formattedString = [numberFormatter stringFromNumber:product.price];
+```
+
 ## See Also
 
 - [var priceLocale: Locale](skproduct/pricelocale.md)

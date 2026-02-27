@@ -14,6 +14,10 @@ The response to an ad request.
 object AdResponse
 ```
 
+## Properties
+
+- `data` (Ad): Response data that the API provides.
+
 ## See Also
 
 - [object Ad](ad.md)

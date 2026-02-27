@@ -14,7 +14,46 @@ For an in-app purchase product that enables app functionality, such as a premium
 
 For example, using the app receipt, your code might look like the following:
 
+**Swift**:
+
+```swift
+guard let receiptURL = Bundle.main.appStoreReceiptURL else { customError() }
+do {
+    let receiptData = try Data(contentsOf: receiptURL)
+    // Custom method to work with receipts.
+    let rocketCarEnabled = receipt(receiptData, includesProductID: "com.example.rocketCar")
+    } catch {
+        print(error)
+    }
+```
+
+**Objective-C**:
+
+```objc
+NSURL *receiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
+NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
+
+// Custom method to work with receipts.
+BOOL rocketCarEnabled = [self receipt:receiptData
+        includesProductID:@"com.example.rocketCar"];
+```
+
 Or, using the user defaults system.
+
+**Swift**:
+
+```swift
+let defaults = UserDefaults.standard
+let rocketCarEnabled = defaults.bool(forKey: "enable_rocket_car")
+```
+
+**Objective-C**:
+
+```objc
+NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+BOOL rocketCarEnabled = [defaults boolForKey:@"enable_rocket_car"];
+
+```
 
 After you define the Boolean variable that represents the in-app purchase content, use the purchase information to enable the appropriate code paths in your app.
 
@@ -39,6 +78,22 @@ Download larger files only when needed. Separating content from your app bundle 
 ##### Load Local Content
 
 Load local content using the `NSBundle` class as you load other resources from your app bundle.
+
+**Swift**:
+
+```swift
+guard let url = Bundle.main.url(forResource: "rocketCar", withExtension: "plist") else { fatalError() }
+loadVehicle(at: url)
+```
+
+**Objective-C**:
+
+```objc
+NSURL *url = [[NSBundle mainBundle] URLForResource:@"rocketCar"
+                                     withExtension:@"plist"];
+[self loadVehicleAtURL:url];
+
+```
 
 ##### Download Content From Your Own Server
 
@@ -77,6 +132,32 @@ While the content is downloading, update your user interface using the values of
 > **Note**:  Download all Apple-hosted content before finishing the transaction. After a transaction is complete, its download objects become unusable.
 
 In iOS, your app can manage the downloaded files. The StoreKit framework saves these files for you in the `Caches` directory with the backup flag unset. After the download completes, your app is responsible for moving these files to the appropriate location. For content that can be deleted if the device runs out of disk space (and downloaded again later by your app), keep the files in the `Caches` directory. Otherwise, move the files to the `Documents` folder and set the flag to exclude them from user backups.
+
+**Swift**:
+
+```swift
+// This is the URL for downloaded content.
+guard var url = download.contentURL else { fatalError() }
+
+var resourceValues = URLResourceValues()
+resourceValues.isExcludedFromBackup = true
+
+do {
+    try url.setResourceValues(resourceValues)
+} catch {
+    print(error)
+}
+```
+
+**Objective-C**:
+
+```objc
+NSError *error;
+BOOL success = [URL setResourceValue:[NSNumber numberWithBool:YES]
+                              forKey:NSURLIsExcludedFromBackupKey
+                               error:&error];
+if (!success) { /* Handle error... */ }
+```
 
 In macOS, the system manages the downloaded files; your app can’t move or delete them directly. To locate the content after downloading it, use the [`contentURL`](skdownload/contenturl.md) property of the download object. To locate the file on subsequent launches, use the [`contentURL(forProductID:)`](skdownload/contenturl(forproductid:).md) class method of `SKDownload`. To delete a file, use the [`deleteContent(forProductID:)`](skdownload/deletecontent(forproductid:).md) class method. For information about reading the app receipt, see [`Validating receipts with the App Store`](validating-receipts-with-the-app-store.md).
 

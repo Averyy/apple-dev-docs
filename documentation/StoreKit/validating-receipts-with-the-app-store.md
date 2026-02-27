@@ -18,6 +18,43 @@ The app receipt is always present in the production environment on devices runni
 
 To retrieve the receipt data from the app on the device, use the [`appStoreReceiptURL`](https://developer.apple.com/documentation/Foundation/Bundle/appStoreReceiptURL) method of [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) to locate the app’s receipt, and encode the data in Base64. Send this Base64-encoded data to your server.
 
+**Swift**:
+
+```swift
+// Get the receipt if it's available.
+if let appStoreReceiptURL = Bundle.main.appStoreReceiptURL,
+    FileManager.default.fileExists(atPath: appStoreReceiptURL.path) {
+
+    do {
+        let receiptData = try Data(contentsOf: appStoreReceiptURL, options: .alwaysMapped)
+        print(receiptData)
+
+        let receiptString = receiptData.base64EncodedString(options: [])
+
+        // Read receiptData.
+    }
+    catch { print("Couldn't read receipt data with error: " + error.localizedDescription) }
+}
+```
+
+**Objective-C**:
+
+```objc
+/* Load the receipt from the app bundle. */
+NSURL *receiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
+NSData *receipt = [NSData dataWithContentsOfURL:receiptURL];
+
+if (!receipt) { 
+    NSLog(@"no receipt");
+    /* No local receipt -- handle the error. */ 
+} else {
+    /* Get the receipt in encoded format. */
+    NSString *encodedReceipt = [receipt base64EncodedStringWithOptions:0];
+}
+
+/* ... Send the receipt data to your server ... */
+```
+
 ##### Send the Receipt Data to the App Store
 
 On your server, create a JSON object with the `receipt-data`, `password`, and `exclude-old-transactions` keys detailed in [`requestBody`](https://developer.apple.com/documentation/AppStoreReceipts/requestBody).

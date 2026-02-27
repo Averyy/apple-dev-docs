@@ -14,6 +14,10 @@ A container for product page responses.
 object CountriesOrRegionsListResponse
 ```
 
+## Properties
+
+- `data` ([CountryOrRegion]): Response data that the API provides.
+
 ## See Also
 
 - [object LocaleInfo](localeinfo.md)

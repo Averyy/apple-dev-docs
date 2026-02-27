@@ -18,6 +18,129 @@ Use this endpoint to fetch reports for a high volume of targeting keywords in yo
 
 ##### Payload Example Get Keyword Level Within Ad Group Reports
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgroups/{adgroupId}/keywords
+
+{
+  "startTime": "2024-04-08",
+  "endTime": "2024-04-09",
+  "timeZone": "UTC",
+  "returnRowTotals": true,
+  "returnGrandTotals": true,
+  "returnRecordsWithNoMetrics": false,
+  "selector": {
+    "orderBy": [
+      {
+        "field": "localSpend",
+        "sortOrder": "DESCENDING"
+      }
+    ],
+    "conditions": [],
+    "pagination": {
+      "offset": null,
+      "limit": null
+    }
+  },
+  "groupBy" null
+}
+
+```
+
+**Response**:
+
+```json
+{
+    "row": [
+      {
+        "other": false,
+        "total": {
+        "impressions": 53,
+        "taps": 45,
+        "ttr": 0.45,
+        "avgCPT": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "avgCPM": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "localSpend": {
+          "amount": "0",
+          "currency":"USD"
+        },
+        "totalInstalls": 16,
+        "totalNewDownloads": 23,
+        "totalRedownloads": 17,
+        "viewInstalls": 18,
+        "tapInstalls": 59,
+        "tapNewDownloads": 22,
+        "tapRedownloads": 35,
+        "viewNewDownloads": 67,
+        "viewReDownloads": 53,
+        "tapPreOrdersPlaced": 0,
+        "viewPreOrdersPlaced": 0,
+        "totalPreOrdersPlaced": 0,
+        "totalAvgCPI": {
+           "amount": "1.57",
+           "currency": "USD"
+           },
+        "totalInstallRate": 2.962
+        "tapInstallCPI": {
+          "amount": "0",
+          "currency": “USD”
+        },
+       "tapInstallRate": 0.7654,
+       "date": "2024-05-08"
+      },
+         "metadata": {
+          "keywordId": 87675432,
+          "keyword": "keyword 1",
+          "keywordStatus": "ACTIVE",
+          "matchType": "BROAD",
+          "bidAmount": {
+            "amount": "100",
+            "currency": "USD"
+          },
+          "deleted": false,
+          "keywordDisplayStatus": "RUNNING",
+          "adGroupId": 542317095,
+          "adGroupName": "Ad Group 1",
+          "adGroupDeleted": false,
+          "modificationTime": "2024-04-08T09:33:45.387"
+        },
+        "insights": {
+          "bidRecommendation": {
+            "bidMin": {
+              "amount": "null",
+              "currency": "null"
+            },
+            "bidMax": {
+              "amount": "400",
+              "currency": "USD"
+           },
+          "suggestedBidAmount": {
+            "amount": "2.40",
+            "currency": "USD"
+             }
+        }
+      }
+    }
+  ]
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgroups/{adgroupId}/keywords`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The report request body consisting of metrics and dimensions to use as filters.

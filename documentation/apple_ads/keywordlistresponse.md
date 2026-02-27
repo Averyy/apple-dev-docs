@@ -14,6 +14,12 @@ The response details of targeting keyword requests.
 object KeywordListResponse
 ```
 
+## Properties
+
+- `data` ([Keyword]): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object Keyword](keyword.md)

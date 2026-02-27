@@ -29,9 +29,9 @@ You can prefix the expression you pass to `collection` with `try` or `await`. Th
 
 ## Parameters
 
-- `displayName`: The customized display name of this test. If the value of   this argument is  , the display name of the test is derived from the   associated function’s name.
+- `displayName`: The customized display name of this test. If the value of this argument is `nil`, the display name of the test is derived from the associated function’s name.
 - `traits`: Zero or more traits to apply to this test.
-- `collection`: A collection of values to pass to the associated test   function.
+- `collection`: A collection of values to pass to the associated test function.
 
 ## See Also
 

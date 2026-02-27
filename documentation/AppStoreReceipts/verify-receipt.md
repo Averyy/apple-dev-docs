@@ -30,6 +30,10 @@ POST https://sandbox.itunes.apple.com/verifyReceipt
 
 The `verifyReceipt` endpoint is deprecated. The HTTP header includes the deprecation date, according to [`RFC 8594`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8594.html).
 
+## Endpoint
+
+`POST https://sandbox.itunes.apple.com/verifyReceipt`
+
 ## Request Body
 
 The JSON contents you submit with the request.

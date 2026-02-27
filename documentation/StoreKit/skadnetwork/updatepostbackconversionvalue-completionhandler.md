@@ -55,8 +55,8 @@ If the ad network signs the winning ad with version 4 or later, calling this met
 
 ## Parameters
 
-- `conversionValue`: An unsigned 6-bit value   and  . The app or the ad network defines the meaning of the conversion value. For ad impressions signed with SKAdNetwork 3 or earlier, you need to increase the   each time you call this method. For ad impressions signed with SKAdNetwork 4 or later, you may use any valid   each time you call this method.
-- `completion`: An optional completion handler you provide to catch and handle any errors this method encounters when you update a conversion value. Set this value to   if you don’t provide a handler.
+- `conversionValue`: An unsigned 6-bit value `≥0` and `≤63`. The app or the ad network defines the meaning of the conversion value. For ad impressions signed with SKAdNetwork 3 or earlier, you need to increase the `conversionValue` each time you call this method. For ad impressions signed with SKAdNetwork 4 or later, you may use any valid `conversionValue` each time you call this method.
+- `completion`: An optional completion handler you provide to catch and handle any errors this method encounters when you update a conversion value. Set this value to `nil` if you don’t provide a handler.
 
 ## See Also
 

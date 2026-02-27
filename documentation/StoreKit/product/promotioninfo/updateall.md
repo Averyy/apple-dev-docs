@@ -36,7 +36,7 @@ To cancel the order and visibility changes you make, send an empty collection in
 
 ## Parameters
 
-- `promotions`: A collection of   objects that you list in the order they are to appear in the App Store on the user’s device. Use an empty collection to cancel previous changes.
+- `promotions`: A collection of [`Product.PromotionInfo`](product/promotioninfo.md) objects that you list in the order they are to appear in the App Store on the user’s device. Use an empty collection to cancel previous changes.
 
 ## See Also
 

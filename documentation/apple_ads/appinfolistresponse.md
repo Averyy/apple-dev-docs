@@ -14,6 +14,12 @@ The response details of app search requests.
 object AppInfoListResponse
 ```
 
+## Properties
+
+- `data` ([AppInfo]): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object AppInfo](appinfo.md)

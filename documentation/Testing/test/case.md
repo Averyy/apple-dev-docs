@@ -24,7 +24,7 @@ struct Case
 
 #### Overview
 
-A test case represents a test run with a particular combination of inputs. Tests that are  parameterized map to a single instance of [`Test.Case`](test/case.md).
+A test case represents a test run with a particular combination of inputs. Tests that are *not* parameterized map to a single instance of [`Test.Case`](test/case.md).
 
 ## Topics
 

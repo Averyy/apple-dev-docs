@@ -14,12 +14,18 @@ A container for the ad group response body.
 object AdGroupResponse
 ```
 
+## Properties
+
+- `data` (AdGroup): Response data that the API provides.
+- `error` (ApiErrorResponse): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object AdGroup](adgroup.md)
   The response to ad group requests.
 - [object AdGroupUpdate](adgroupupdate.md)
-  The response to ad group update requests.
+  The list of ad group fields that are updatable.
 - [object AdGroupListResponse](adgrouplistresponse.md)
   The response details of ad group requests.
 

@@ -41,7 +41,7 @@ If `optionalValue` is `nil`, an [`Issue`](issue.md) is recorded for the test tha
 
 - `optionalValue`: The optional value to be unwrapped.
 - `comment`: A comment describing the expectation.
-- `sourceLocation`: The source location to which recorded expectations and   issues should be attributed.
+- `sourceLocation`: The source location to which recorded expectations and issues should be attributed.
 
 ## See Also
 

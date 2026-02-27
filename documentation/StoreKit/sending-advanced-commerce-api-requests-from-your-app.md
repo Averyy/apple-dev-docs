@@ -17,7 +17,7 @@ The following Advanced Commerce API requests are available in your app using Sto
 
 To make Advanced Commerce requests from your app, follow these steps:
 
-1. Collect the request data according to the API you’re invoking.  On your server, create your  by combining the request data into a UTF-8 JSON string and base64-encoding the string.
+1. Collect the request data according to the API you’re invoking.  On your server, create your *base64-encoded request data* by combining the request data into a UTF-8 JSON string and base64-encoding the string.
 2. On your server, create a JWS compact serialization that includes your base64-encoded request data in the JWS payload, as described in [`Include custom claims for Advanced Commerce API in-app requests`](generating-jws-to-sign-app-store-requests#Include-custom-claims-for-Advanced-Commerce-API-in-app-requests.md). For more information, see [`Generating JWS to sign App Store requests`](generating-jws-to-sign-app-store-requests.md).
 3. Wrap the JWS in a JSON object, and convert it into a `Data` buffer to create the Advanced Commerce request data object, `advancedCommerceRequestData`.
 4. In your app, use the `advancedCommerceRequestData` as the value of a purchase option in your product purchase call.
@@ -53,13 +53,13 @@ The result of base64-encoding the example JSON request is:
 
 `ewogICAgIm9wZXJhdGlvbiI6ICJDUkVBVEVfT05FX1RJTUVfQ0hBUkdFIiwKICAgICJ2ZXJzaW9uIjogIjEiLCAgICAgICAgICAgICAgICAgICAgIAogICAgInJlcXVlc3RJbmZvIjogewogICAgICAgICJyZXF1ZXN0UmVmZXJlbmNlSWQiOiAiZjU1ZGYwNDgtNGNkOC00MjYxLWI0MDQtYjZmODEzZmY3MGU1IgogICAgfSwKICAgICJjdXJyZW5jeSI6ICJVU0QiLAogICAgInRheENvZGUiOiAiQzAwMy0wMC0yIiwgCiAgICAic3RvcmVmcm9udCI6ICJVU0EiLAogICAgIml0ZW0iOiB7CiAgICAgICAgIlNLVSI6ICJCT09LX1NIRVJMT0NLX0hPTUxFUyIsCiAgICAgICAgImRpc3BsYXlOYW1lIjogIlNoZXJsb2NrIEhvbG1lcyIsIAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJUaGUgU2hlcmxvY2sgSG9sbWVzLCA1dGggRWRpdGlvbiIsCiAgICAgICAgInByaWNlIjogNDk5MAogICAgfQp9 `
 
-This value, calculated using your own data, is your .
+This value, calculated using your own data, is your *base64-encoded request data*.
 
 #### Generate the Jws Using Your Request Data
 
 Follow the signing instructions for Advanced Commerce API in-app requests in [`Generating JWS to sign App Store requests`](generating-jws-to-sign-app-store-requests.md). The Advanced Commerce API requires a custom claim, `request`. Provide the base64-encoded request data from the previous step as the value of the `request` claim in the JWS payload.
 
-The result after following the instructions is a .
+The result after following the instructions is a *JWS compact serialization*.
 
 #### Wrap the Jws and Convert It Into Data
 

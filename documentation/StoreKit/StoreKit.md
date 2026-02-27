@@ -18,6 +18,13 @@ Support In-App Purchases and interactions with the App Store.
 
 Use the StoreKit framework to provide the following features and services for your apps and In-App Purchases:
 
+- **In-App Purchase**: Offer and promote In-App Purchases for content and services.
+- **App transaction**: Verify a customer’s app purchase with an App Store-signed transaction.
+- **Messages**: Control the display of App Store messages in your app.
+- **Reviews**: Request App Store reviews and ratings from your customers.
+- **Recommendations**: Provide recommendations for third-party content that customers can purchase from the App Store.
+- **Ad network attribution**: Validate advertisement-driven app installations. See [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for app ad campaigns on the App Store and alternative marketplaces.
+
 The StoreKit framework also provides functionality for [`External Purchase`](external-purchase.md), [`External link account`](external-link-account.md), [`PaymentMethodBinding`](paymentmethodbinding.md), and [`StoreDownloaderExtension`](storedownloaderextension.md).
 
 ## Topics

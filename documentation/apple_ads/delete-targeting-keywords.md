@@ -18,6 +18,38 @@ To delete ad group keywords, include the associated `campaignId` and `adgroupId`
 
 ##### Payload Example Delete Targeting Keywords
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/delete/bulk
+
+[
+    578054698,
+    578054665,
+    578054632
+]
+```
+
+**Response**:
+
+```json
+{
+    "data": 2,
+    "pagination": null,
+    "error": null
+}
+
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/delete/bulk`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body.

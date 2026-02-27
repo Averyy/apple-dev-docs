@@ -18,7 +18,128 @@ Use this endpoint to fetch supported product page languages for countries or reg
 
 ##### Payload Example 1 Get Supported Countries or Regions
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/countries-or-regions?countriesOrRegions=US,AU,GB,CA
+```
+
+**Response**:
+
+```json
+{
+   "data": [
+        {
+            "countryOrRegion": “US”,
+            "supportedLanguages": [
+                {
+                    "language": "en",
+                    "languageCode": "en-US"
+                },
+                {
+                    "language": “es”,
+                    "languageCode": "es-MX"
+                }
+            ],
+            "defaultLanguage": {
+                "language": "en",
+                "languageCode": "en-US"
+            }
+        },
+        {
+            "countryOrRegion": "AU",
+            "supportedLanguages": [
+                {
+                    "language": "en",
+                    "languageCode": "en-AU"
+                },
+                {
+                    "language": "en",
+                    "languageCode": "en-GB"
+                }
+            ],
+            "defaultLanguage": {
+                "language": "en",
+                "languageCode": "en-AU"
+            }
+        },
+        {
+            "countryOrRegion": "GB",
+            "supportedLanguages": [
+                {
+                    "language": "en",
+                    "languageCode": "en-GB"
+                }
+            ],
+            "defaultLanguage": {
+                "language": "en",
+                "languageCode": "en-GB"
+            }
+        },
+        {
+            "countryOrRegion": "CA",
+            "supportedLanguages": [
+                {
+                    "language": "en",
+                    "languageCode": "en-CA"
+                },
+                {
+                    "language”: "fr",
+                    "languageCode": "fr-CA"
+                }
+            ],
+            "defaultLanguage": {
+                "language": "en",
+                "languageCode": "en-CA"
+            }
+        }
+    ]
+}
+```
+
 ##### Payload Example 2 Get Supported Countries or Regions
+
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/countries-or-regions?countriesOrRegions=CA
+```
+
+**Response**:
+
+```json
+{
+  "countryOrRegion": "CA",
+  "supportedLocales": [
+    {
+      "language": "en",
+      "languageCode": "en-CA"
+    },
+    {
+      "language": "fr",
+      "languageCode": "fr-CA"
+    }
+  ],
+  "defaultLanguages": [
+    {
+      "language": "en",
+      "languageCode": "en-CA"
+    },
+    {
+      "language": "fr",
+      "languageCode": "fr-CA"
+    }
+  ]
+}
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/countries-or-regions`
+
+## Parameters
+
+- `countriesOrRegions` (string): Filters by ISO alpha-2 country codes using one or more comma-separated values. For example, use `https://api.searchads.apple.com/api/v5/countries-or-regions?countriesOrRegions=US` for a single country or region, or `https://api.searchads.apple.com/api/v5/countries-or-regions?countriesOrRegions=US,` `MX` for multiple countries or regions.
 
 ## See Also
 

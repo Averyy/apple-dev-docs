@@ -14,6 +14,12 @@ A container for the negative keyword response body.
 object NegativeKeywordResponse
 ```
 
+## Properties
+
+- `data` (NegativeKeyword): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object Keyword](keyword.md)

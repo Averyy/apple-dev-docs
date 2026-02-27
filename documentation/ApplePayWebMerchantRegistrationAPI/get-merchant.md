@@ -12,6 +12,14 @@ Retrieve information about a registered merchant’s current state by using the 
 
 Get information about a merchant you previously registered. You provide the merchant’s unique identifier (`partnerInternalMerchantIdentifier`). A succesful response contains a [`MerchantDetails`](merchantdetails.md) object in the response body.
 
+## Endpoint
+
+`GET https://apple-pay-gateway.apple.com/paymentservices/merchant/${partnerInternalMerchantIdentifier}`
+
+## Parameters
+
+- `partnerInternalMerchantIdentifier` (string) *(required)*: A unique identifier for the merchant that the e-commerce partner created and used in the [`Register Merchant`](register-merchant.md) request.
+
 ## See Also
 
 - [object MerchantDetails](merchantdetails.md)

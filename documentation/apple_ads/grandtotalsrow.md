@@ -14,6 +14,11 @@ The summary of cumulative metrics.
 object GrandTotalsRow
 ```
 
+## Properties
+
+- `other` (boolean): The impressions that return in reports when there are fewer than 100 demographic dimensions, and fewer than 10 search terms. If `Other` is `true`, the corresponding dimensions are `null`.
+- `total` (SpendRow): The tap, conversion, and monetary totals ([`SpendRow`](spendrow.md)) in the response. This is the same as [`ExtendedSpendRow`](extendedspendrow.md) except it doesn’t include the `date` attribute.
+
 ## See Also
 
 - [object ReportingRequest](reportingrequest.md)

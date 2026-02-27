@@ -20,6 +20,105 @@ The limit for search term-level reports is 10 impressions. Search term-level rep
 
 ##### Payload Example Get Search Term Level Within Ad Group Reports
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgroups/{adgroupId}/searchterms
+
+{
+  "startTime": "2024-04-08",
+  "endTime": "2024-04-09",
+  "timeZone": "ORTZ",
+  "returnRowTotals": true,
+  "returnGrandTotals": true,
+  "returnRecordsWithNoMetrics": false,
+  "selector": {
+    "orderBy": [
+      {
+        "field": "localSpend",
+        "sortOrder": "DESCENDING"
+      }
+    ],
+    "conditions": [],
+    "pagination": {
+      "offset": null,
+      "limit": null
+    }
+  },
+  "groupBy": null
+}
+```
+
+**Response**:
+
+```json
+{
+      "row": [
+        {
+          "other": true,
+          "total": {
+          "impressions": 41,
+          "taps": 1,
+          "totalInstalls": 1,
+          "totalNewDownloads": 2,
+          "totalRedownloads": 1,
+          "viewInstalls": 1,
+          "tapInstalls": 5,
+          "tapNewDownloads": 2,
+          "tapRedownloads": 3,
+          "viewNewDownloads": 6,
+          "viewReDownloads": 3,
+          "tapPreOrdersPlaced": 0,
+          "viewPreOrdersPlaced": 0,
+          "totalPreOrdersPlaced": 0,
+          "totalInstallRate": 2.962 
+          "ttr": 0.0244,
+          "tapInstallCPI": {
+            "amount": "0",
+            "currency": "USD"
+            },
+          "avgCPT": {
+            "amount": "0.88",
+            "currency": "USD"
+            },
+          "localSpend": {
+            "amount": "0.88",
+            "currency": "USD"
+            },
+          "tapInstallRate": 0.873,
+          "date": "2024-08-10"
+          },
+          "metadata": {
+            "keywordId": 87675434,
+            "keyword": "keyword 2",
+            "matchType": "EXACT",
+            "bidAmount": {
+              "amount": "2",
+              "currency": "USD"
+            },
+            "deleted": false,
+            "keywordDisplayStatus": "RUNNING",
+            "adGroupId": 427916203,
+            "adGroupName": "ad group 1",
+            "adGroupDeleted": false,
+            "searchTermText": null,
+            "searchTermSource": "TARGETED"
+         }
+      }
+    ]
+  }
+
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgroups/{adgroupId}/searchterms`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The report request body consisting of metrics and dimensions to use as filters.

@@ -35,7 +35,7 @@ This function can be used if an unexpected error is caught while running a test 
 
 - `error`: The error that caused the issue.
 - `comment`: A comment describing the expectation.
-- `sourceLocation`: The source location to which the issue should be   attributed.
+- `sourceLocation`: The source location to which the issue should be attributed.
 
 
 ---

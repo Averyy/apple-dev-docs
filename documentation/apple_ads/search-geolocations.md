@@ -28,7 +28,7 @@ Search endpoints fetch app and geocriteria used in targeting and elsewhere in th
 - [Campaigns](campaigns.md)
   Create and manage Apple Ads campaigns.
 - [Budget Orders](budget-orders.md)
-  Manage your payment model.
+  Manage your budgets.
 - [Ad Groups](ad-groups.md)
   Create and manage ad groups.
 - [Targeting Keywords and Negative Keywords](targeting-keywords-and-negative-keywords.md)

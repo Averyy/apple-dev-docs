@@ -14,6 +14,11 @@ object MediaLocaleDetail.AppPreviewDeviceWithAssets
 ### Dictionaries
 - [object MediaLocaleDetail.AppPreviewDeviceWithAssets.MediaAppPreviewOrScreenshotsDetail](medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.md)
 
+## Properties
+
+- `assetId` (string): The unique `ID` of an asset.
+- `MediaAppPreviewOrScreenshotsDetail` (MediaLocaleDetail.AppPreviewDeviceWithAssets.MediaAppPreviewOrScreenshotsDetail): The app asset details of a device.
+
 
 ---
 

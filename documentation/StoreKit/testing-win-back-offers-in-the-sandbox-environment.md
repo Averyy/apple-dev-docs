@@ -10,6 +10,10 @@ After you set up win-back offers for auto-renewable subscriptions in App Store C
 
 You can use the sandbox testing environment to simulate redeeming win-back offers in these ways:
 
+- **Outside the app**: Customers can redeem win-back offers in the App Store, through a direct link, or in the Subscription settings in their Apple Account. You can simulate redeeming win-back offers outside the app by using the Test Transactions feature in the sandbox Account Settings in iOS. The system applies the win-back offer if the test account is eligible for it.
+- **In the app, using the win-back offer sheet**: To simulate redeeming a win-back offer in your app, turn on the Display Win-back Offer Sheet toggle in Account Settings in iOS. The system displays a win-back offer sheet, using the [`Message`](message.md) API’s [`winBackOffer`](message/reason-swift.struct/winbackoffer.md) reason, when you launch the app. The test account needs to be eligible for the offer in the sandbox environment. This option is only available to apps running in iOS 18 and iPadOS 18 and later.
+- **In the app, using StoreKit views or your custom code**: Follow the steps to make the test account eligible for the offer in the sandbox environment. Exercise your app’s implementation that uses StoreKit views or your custom code using StoreKit APIs. StoreKit views automatically chooses an offer to display.
+
 Handle the resulting transactions in your app. StoreKit delivers them through the [`updates`](transaction/updates.md) asynchronous sequence in [`Transaction`](transaction.md).
 
 > **Note**: In TestFlight testing, you can only test win-back offers if you implement them using StoreKit views or other StoreKit APIs. The win-back offer sheet and redemption through the App Store aren’t available for testing in TestFlight.

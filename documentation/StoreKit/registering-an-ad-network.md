@@ -32,7 +32,7 @@ To create your private key, open Terminal and enter the following command:
 openssl ecparam -name prime256v1 -genkey -noout -out companyname_skadnetwork_private_key.pem
 ```
 
-In the command, replace `companyname` with the name of your company. For example, the name of the private key file for a company named  is `example_skadnetwork_private_key.pem`.
+In the command, replace `companyname` with the name of your company. For example, the name of the private key file for a company named *Example* is `example_skadnetwork_private_key.pem`.
 
 > ❗ **Important**:  Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
 

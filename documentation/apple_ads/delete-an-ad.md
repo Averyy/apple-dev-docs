@@ -12,6 +12,16 @@ Deletes an ad from an ad group.
 
 Use this endpoint to delete an [`Ad`](ad.md) assignment from an ad group. Use your `adId` in the resource path.
 
+## Endpoint
+
+`DELETE https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/ads/{adId}`
+
+## Parameters
+
+- `adId` (int64) *(required)*: A unique identifier representing the assignment relationship between an ad group and an [`Ad`](ad.md).
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## See Also
 
 - [Create an Ad](create-an-ad.md)

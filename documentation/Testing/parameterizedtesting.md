@@ -6,13 +6,13 @@ Specify different input parameters to generate multiple test cases from a test f
 
 #### Overview
 
-Some tests need to be run over many different inputs. For instance, a test might need to validate all cases of an enumeration. The testing library lets developers specify one or more collections to iterate over during testing, with the elements of those collections being forwarded to a test function. An invocation of a test function with a particular set of argument values is called a test .
+Some tests need to be run over many different inputs. For instance, a test might need to validate all cases of an enumeration. The testing library lets developers specify one or more collections to iterate over during testing, with the elements of those collections being forwarded to a test function. An invocation of a test function with a particular set of argument values is called a test *case*.
 
 By default, the test cases of a test function run in parallel with each other. For more information about test parallelization, see [`Running tests serially or in parallel`](parallelization.md).
 
 ##### Parameterize Over an Array of Values
 
-It is very common to want to run a test  times over an array containing the values that should be tested. Consider the following test function:
+It is very common to want to run a test *n* times over an array containing the values that should be tested. Consider the following test function:
 
 ```swift
 enum Food {
@@ -28,7 +28,7 @@ func foodsAvailable() async throws {
 }
 ```
 
-If this test function fails for one of the values in the array, it may be unclear which value failed. Instead, the test function can be  the various inputs:
+If this test function fails for one of the values in the array, it may be unclear which value failed. Instead, the test function can be *parameterized over* the various inputs:
 
 ```swift
 enum Food {

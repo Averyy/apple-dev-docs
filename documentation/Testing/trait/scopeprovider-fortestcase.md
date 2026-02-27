@@ -36,7 +36,7 @@ If this trait’s type does not conform to [`TestScoping`](testscoping.md) and i
 ## Parameters
 
 - `test`: The test for which a scope provider is being requested.
-- `testCase`: The test case for which a scope provider is being requested,   if any. When   represents a suite, the value of this argument is   .
+- `testCase`: The test case for which a scope provider is being requested, if any. When `test` represents a suite, the value of this argument is `nil`.
 
 ## See Also
 

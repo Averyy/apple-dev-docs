@@ -27,7 +27,7 @@ The testing library uses this function to determine the best name to use when sa
 ## Parameters
 
 - `attachment`: The attachment that needs to be named.
-- `suggestedName`: A suggested name to use as the basis of the preferred   name. This string was provided by the developer when they initialized   .
+- `suggestedName`: A suggested name to use as the basis of the preferred name. This string was provided by the developer when they initialized `attachment`.
 
 
 ---

@@ -19,10 +19,6 @@ The user authorized the app to start location services at any time.
 case authorizedAlways
 ```
 
-## Mentions
-
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
-
 #### Discussion
 
 This authorization allows you to use all location services and receive location events whether or not your app is in use.

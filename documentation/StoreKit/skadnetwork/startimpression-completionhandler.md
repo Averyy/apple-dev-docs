@@ -32,7 +32,7 @@ Call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:complet
 
 ## Parameters
 
-- `impression`: An instance of   with the properties set for the view-through ad that you’re presenting.
+- `impression`: An instance of [`SKAdImpression`](skadimpression.md) with the properties set for the view-through ad that you’re presenting.
 - `completion`: The callback handler you provide to handle any tasks relevant to the start of the ad impression.
 
 ## See Also

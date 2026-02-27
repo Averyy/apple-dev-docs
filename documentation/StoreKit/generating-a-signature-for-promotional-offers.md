@@ -14,6 +14,14 @@ To create the signature, you use parameters that identify the product and the of
 
 In the first step of generating the signature, you need the following parameters, most of which you also supply for [`SKPaymentDiscount`](skpaymentdiscount.md):
 
+- **`appBundleID`**: The app bundle identifier.
+- **`keyIdentifier`**: A string that identifies the private key you use to generate the signature. You can find this identifier in App Store Connect [`Users and Access > Keys`](https://developer.apple.comhttps://appstoreconnect.apple.com/access/api/subs) in the Key ID column for the subscription key you generate.
+- **`productIdentifier`**: The subscription product identifier, [`productIdentifier`](skproduct/productidentifier.md). The app can provide this value.
+- **`offerIdentifier`**: The subscription discount identifier, [`identifier`](skproductdiscount/identifier.md). The app can provide this value.
+- **`applicationUsername or appAccountToken`**: An optional string value that you define; may be an empty string. If your app uses [`applicationUsername`](skmutablepayment/applicationusername.md), provide `applicationUsername`. If your app uses [`appAccountToken`](transaction/appaccounttoken.md), provide `appAccountToken`. The string representation of the `appAccountToken` must be lowercase.
+- **`nonce`**: A one-time `UUID` value that your server generates. Generate a new `nonce` for every signature. The string representation of the `nonce` you use in the signature must be lowercase.
+- **`timestamp`**: A timestamp your server generates in UNIX time format, in milliseconds. The timestamp keeps the offer active for 24 hours.
+
 > ❗ **Important**:  Use lowercase for the string representation of the `nonce` and the `appAccountToken`.
 
 Combine the parameters into a UTF-8 string with an invisible separator (`'\u2063'`) between them in the same order as the following example:

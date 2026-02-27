@@ -43,7 +43,7 @@ catch {
 
 ## Parameters
 
-- `order`: A collection of product identifiers ( ) in the order that you want the promoted in-app purchases to appear, from first to last. Use an empty list to cancel previous changes.
+- `order`: A collection of product identifiers ([`id`](product/id.md)) in the order that you want the promoted in-app purchases to appear, from first to last. Use an empty list to cancel previous changes.
 
 
 ---

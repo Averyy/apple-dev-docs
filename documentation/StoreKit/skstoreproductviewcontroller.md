@@ -47,6 +47,9 @@ The `SKStoreProductViewController` class doesn’t support subclassing or embedd
 
 This class throws the following runtime exceptions:
 
+- **SKUnsupportedClassException**: Occurs if the app attempts to instantiate a subclass of `SKStoreProductViewController`.
+- **SKUnsupportedPresentationException**: Occurs if the app attempts to use an unsupported presentation mode for `SKStoreProductViewController`, such as embedding it as a subview controller or attempting to use it in a popover.
+
 ## Topics
 
 ### Setting a delegate

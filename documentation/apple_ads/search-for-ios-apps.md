@@ -18,6 +18,54 @@ An app search returns your `adamId`, which you can use in [`Create a Campaign`](
 
 ##### Payload Example Search for Ios Apps
 
+**Request**:
+
+```None
+GET https://api.searchads.apple.com/api/v5/search/apps?query=apple&limit=1
+```
+
+**Response**:
+
+```json
+[
+  {
+    "adamId": 427916203,
+    "appName": "Trip Trek example app",
+    "developerName": "example Apple developer",
+    "countryOrRegionCodes": [
+      "FR",
+      "DE",
+      "US",
+      "NO",
+      "MX",
+      "GB",
+      "CA",
+      "SE",
+      "AU"
+    ]
+  }
+]
+```
+
+## Endpoint
+
+`GET https://api.searchads.apple.com/api/v5/search/apps`
+
+## Parameters
+
+- `limit` (int32): The number of items to return per request. The maximum is 1000. ```console
+GET https://api.searchads.apple.com/api/v5/search/apps?limit=100
+```
+- `offset` (int32): The offset pagination that limits the number of records returned. The start of each page is offset by the number specified. You can apply `offset` to most API calls, but not all GET endpoints support it. ```console
+GET https://api.searchads.apple.com/api/v5/search/apps?limit=<LIMIT>&offset=<OFFSET>
+```
+- `query` (string) *(required)*: The query for a list of iOS apps using a matching prefix. ```console
+GET https://api.searchads.apple.com/api/v5/search/apps?query=Run%20Ke
+``` The query search pattern uses a prefix-matching algorithm. You can use spaces in search patterns. Prefixes require a minimum of three characters. If you’re sending a quoted search string, use HTML encoding.
+- `returnOwnedApps` (boolean): The list of apps belonging to your organization. ```console
+GET https://api.searchads.apple.com/api/v5/search/apps?query=appexample&returnOwnedApps=true
+```
+
 
 ---
 

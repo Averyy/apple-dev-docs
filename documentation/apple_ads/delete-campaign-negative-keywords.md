@@ -14,6 +14,37 @@ To delete campaign negative keywords, use the associated `campaignId` in the URI
 
 ##### Payload Example Delete Campaign Negative Keywords
 
+**Request**:
+
+```None
+POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/delete/bulk
+
+[
+    578054687,
+    578054686,
+    578054685
+]
+
+```
+
+**Response**:
+
+```json
+{
+    "data": 3,
+    "pagination": null,
+    "error": null
+}
+```
+
+## Endpoint
+
+`POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/negativekeywords/delete/bulk`
+
+## Parameters
+
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+
 ## Request Body
 
 The request body.

@@ -20,6 +20,10 @@ Tells Core Location to start delivering the location updates it produces for th
 static func liveUpdates(_ configuration: CLLocationUpdate.LiveConfiguration = .default) -> CLLocationUpdate.Updates
 ```
 
+## Mentions
+
+- [Creating a location push service extension](creating-a-location-push-service-extension.md)
+
 #### Return Value
 
 [`CLLocationUpdate.Updates`](cllocationupdate/updates.md) that meet the criteria you specify.

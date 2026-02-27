@@ -14,6 +14,12 @@ A common integer type response.
 object IntegerResponse
 ```
 
+## Properties
+
+- `data` (int32): Response data that the API provides.
+- `error` (ErrorResponseBody): Error response data that the API provides.
+- `pagination` (PageDetail): Page detail information that the API provides.
+
 ## See Also
 
 - [object ApiErrorResponse](apierrorresponse.md)

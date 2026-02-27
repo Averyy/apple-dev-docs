@@ -3,6 +3,8 @@
 **Framework**: Core Location  
 **Kind**: method
 
+Invalidates the services session.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -16,6 +18,10 @@
 ```swift
 final func invalidate()
 ```
+
+#### Discussion
+
+Call this method when your app or app extension no longer needs to monitor authorization access to location services.
 
 
 ---

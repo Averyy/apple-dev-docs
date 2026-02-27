@@ -14,6 +14,33 @@ To delete targeting keywords, include the associated `campaignId` and `adgroupId
 
 ##### Payload Example Delete a Targeting Keyword
 
+**Request**:
+
+```None
+DELETE https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/{keywordId}
+```
+
+**Response**:
+
+```json
+{
+    "data": 1,
+    "pagination": null,
+    "error": null
+}
+
+```
+
+## Endpoint
+
+`DELETE https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgroupId}/targetingkeywords/{keywordId}`
+
+## Parameters
+
+- `adgroupId` (int64) *(required)*: The unique identifier for the ad group.
+- `campaignId` (int64) *(required)*: The unique identifier for the campaign.
+- `keywordId` (int64) *(required)*: The unique identifier for the keyword.
+
 ## See Also
 
 - [Create Targeting Keywords](create-targeting-keywords.md)
