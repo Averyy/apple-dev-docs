@@ -39,7 +39,7 @@ Methods
 `as_linear`(x)
 Call the embedding layer as a linear layer.
 
-`to_quantized`([group_size, bits, mode])
+`to_quantized`([group_size, bits, mode, ...])
 Return a [QuantizedEmbedding](mlx.nn.QuantizedEmbedding.html#mlx.nn.QuantizedEmbedding) layer that approximates this embedding layer.
 
 ** Contents

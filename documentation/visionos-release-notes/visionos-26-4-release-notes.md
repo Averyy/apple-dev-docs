@@ -1,4 +1,4 @@
-# visionOS 26.4 Beta 2 Release Notes
+# visionOS 26.4 Beta 3 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.4 beta 2. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.4 beta 3. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
 
 ##### Background Assets
 
@@ -28,6 +28,12 @@ The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro 
 ###### Resolved Issues
 
 - Fixed: The current remote streaming API `public static func remote (serverName: String)` does not include the signaling headers which is used for Vision Pro connection with the server. The signaling headers can be used for authentication and for manipulating the remote scene.  (170085006)
+
+##### Managed App Distribution
+
+###### Known Issues
+
+- `ManagedAppView` might render blank when multiple apps are displayed simultaneously in Managed App Distribution.  (171016274) **Workaround:** Display a single `ManagedAppView` in Managed App Distribution.
 
 ##### Networking
 

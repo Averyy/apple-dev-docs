@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-27T07:40:30.444813",
+    "last_updated": "2026-03-03T07:44:49.448172",
     "total_pages": 450,
-    "session_id": "2026-02-27T07:39:55.984375"
+    "session_id": "2026-03-03T07:44:10.319124"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ExposureNotification.json": {
       "hash": "d764e712fdb620504219eeab8d25e7fb109acea923da91b2eb9627dc190a246b",
-      "last_checked": "2026-02-27T07:39:56.306856",
+      "last_checked": "2026-03-03T07:44:10.752975",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4ba646388f5593dde2fec1bc412e0adb\"",
       "file_path": "documentation/ExposureNotification/ExposureNotification.md"
     },
     "https://developer.apple.com/documentation/ExposureNotification": {
       "hash": "d764e712fdb620504219eeab8d25e7fb109acea923da91b2eb9627dc190a246b",
-      "last_checked": "2026-02-27T07:39:56.221357",
+      "last_checked": "2026-03-03T07:44:10.630855",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4ba646388f5593dde2fec1bc412e0adb\"",
       "file_path": "documentation/ExposureNotification/ExposureNotification.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/supporting-exposure-notifications-express.json": {
       "hash": "f6bb65f016537a2dca11a283f2f19f96d9414edec67d03a1c1db5cd1a4a7e69b",
-      "last_checked": "2026-02-27T07:39:56.550109",
+      "last_checked": "2026-03-03T07:44:10.969525",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"fb33d0383bfc8ccef7447ddf91f3b653\"",
       "file_path": "documentation/ExposureNotification/supporting-exposure-notifications-express.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/building-an-app-to-notify-users-of-covid-19-exposure.json": {
       "hash": "28fe574eb8902db44058c4164391483877b4be643b41be16226b98fbf040ec6c",
-      "last_checked": "2026-02-27T07:39:56.691063",
+      "last_checked": "2026-03-03T07:44:11.204055",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8bda688ebea77c77f8b51d2f2df69b2e\"",
       "file_path": "documentation/ExposureNotification/building-an-app-to-notify-users-of-covid-19-exposure.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/setting-up-a-key-server.json": {
       "hash": "942cb3f7a74d0434014ee6b25a2cc292793589236b41b3cd0da2eb5869fc95d0",
-      "last_checked": "2026-02-27T07:39:56.885769",
+      "last_checked": "2026-03-03T07:44:11.379286",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"34bb6a8ebb21dafc1f73f38d6729415a\"",
       "file_path": "documentation/ExposureNotification/setting-up-a-key-server.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager.json": {
       "hash": "44aeac91fd6e2c281c156ab6030daf12d07399e94c94a3a2a6137e692f944c79",
-      "last_checked": "2026-02-27T07:39:57.045023",
+      "last_checked": "2026-03-03T07:44:11.604986",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0d9852a272d849c3b718d37e3329558e\"",
       "file_path": "documentation/ExposureNotification/enmanager.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/changing-configuration-values-using-the-server-to-server-api.json": {
       "hash": "8c24becf8a27b925eb7bc0af4d94a4889578f97df4640972cc6db71848516eb2",
-      "last_checked": "2026-02-27T07:39:57.254886",
+      "last_checked": "2026-03-03T07:44:11.768992",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8f4c8cefcc4aa5ca38e6f92d7339a357\"",
       "file_path": "documentation/ExposureNotification/changing-configuration-values-using-the-server-to-server-api.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/testing-exposure-notifications-apps-in-ios-13-7-and-later.json": {
       "hash": "67b2ed170a1fc3b2d60bb3be33d4db9ef231d46e5a1b1ba2203371100a80d329",
-      "last_checked": "2026-02-27T07:39:57.400155",
+      "last_checked": "2026-03-03T07:44:11.992597",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5db1e884b7e47641091e5d1ea3a97449\"",
       "file_path": "documentation/ExposureNotification/testing-exposure-notifications-apps-in-ios-13-7-and-later.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/supporting-exposure-notifications-in-ios-12-5.json": {
       "hash": "d8f84854a10f9e9e0820b7390bf8d0e7124a230d82866155d70391ac547369d2",
-      "last_checked": "2026-02-27T07:39:57.543255",
+      "last_checked": "2026-03-03T07:44:12.161884",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8d4755c08aa1da1f00adbb7768a97bc5\"",
       "file_path": "documentation/ExposureNotification/supporting-exposure-notifications-in-ios-12-5.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/configuring-exposure-notifications.json": {
       "hash": "6e8533feb4d4e59ad1b6016cfeedae572179d2a273ddf72854a61657cf879367",
-      "last_checked": "2026-02-27T07:39:57.689058",
+      "last_checked": "2026-03-03T07:44:12.339030",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"d63d3a8408394345e3bfa73c047b9805\"",
       "file_path": "documentation/ExposureNotification/configuring-exposure-notifications.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration.json": {
       "hash": "b35f29a68e600fe7acc1520ff3e0d38d36ee8544712e489ff3626ef1609c0305",
-      "last_checked": "2026-02-27T07:39:57.820565",
+      "last_checked": "2026-03-03T07:44:12.574949",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"eac9f152584e7064b922b762ed4c815e\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow.json": {
       "hash": "fa200d8a2ad96c78dd6e29da86363cac0fef2e2dccc9c001db04450d9e9d0edd",
-      "last_checked": "2026-02-27T07:39:58.015199",
+      "last_checked": "2026-03-03T07:44:12.797846",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"2a326ac38e4ae650f165597fbb262cb7\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enscaninstance.json": {
       "hash": "3aca00ffdf42d11773397f0011a876643c7c21f829b11d498f235d83a3b9fa8d",
-      "last_checked": "2026-02-27T07:39:58.156513",
+      "last_checked": "2026-03-03T07:44:13.003407",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f04b6c340865056566d2b4c9a37c5297\"",
       "file_path": "documentation/ExposureNotification/enscaninstance.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/exposure-parameter-limits.json": {
       "hash": "3f0b806d589327b23c7bd8f8cf7f6ea2f53274679c0f560302e240d340175448",
-      "last_checked": "2026-02-27T07:39:58.301968",
+      "last_checked": "2026-03-03T07:44:13.174835",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0d9f0b5e5d21e12f6954e182c853a607\"",
       "file_path": "documentation/ExposureNotification/exposure-parameter-limits.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary.json": {
       "hash": "3ecfd4ad54c1ff4642681ec1690a9c42430c3094561784ad6ba2dec85f7222cb",
-      "last_checked": "2026-02-27T07:39:58.438680",
+      "last_checked": "2026-03-03T07:44:13.352838",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"1db37a39da46f7cb103ee7c3ec08b09a\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary.json": {
       "hash": "85879d684e676d401442afd55766bfa335ec8adbbf9e9edb687595ce1cf0b193",
-      "last_checked": "2026-02-27T07:39:58.581486",
+      "last_checked": "2026-03-03T07:44:13.523669",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"506d52ee0ec834b57234bb883834b306\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuresummaryitem.json": {
       "hash": "b0e1fd8a4a177362237e42d91626b04794664c90b444ef1c100c5c51385a0444",
-      "last_checked": "2026-02-27T07:39:58.720507",
+      "last_checked": "2026-03-03T07:44:13.695278",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c4cbfa4fa5ceab0762ef5d782d23fbf2\"",
       "file_path": "documentation/ExposureNotification/enexposuresummaryitem.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enauthorizationstatus.json": {
       "hash": "2d6338bc2d8f418cc17ccf30464a27ea189c6591f20990cbf87fb67f04d14f07",
-      "last_checked": "2026-02-27T07:39:58.871983",
+      "last_checked": "2026-03-03T07:44:13.866956",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"291535cde78fd7bccf74629528084fe5\"",
       "file_path": "documentation/ExposureNotification/enauthorizationstatus.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus.json": {
       "hash": "d5dc551073c26fb3185eabc8b95fd06f94bb0c35ce78de924e950ff31321a322",
-      "last_checked": "2026-02-27T07:39:59.012394",
+      "last_checked": "2026-03-03T07:44:14.027000",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0ce562d541c624fac93fa27b0f351f7e\"",
       "file_path": "documentation/ExposureNotification/enstatus.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror.json": {
       "hash": "cc4e28f4ea52b92dc0d0d7ef53adf45ec13aa2fa2a55ecdf9321a78a30089e08",
-      "last_checked": "2026-02-27T07:39:59.212725",
+      "last_checked": "2026-03-03T07:44:14.242836",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"de051d0facebe44c5a1c6aafc8d34aa3\"",
       "file_path": "documentation/ExposureNotification/enerror.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code.json": {
       "hash": "829ae7cbe94e8201bc6b487a4fba9080e414b72ebb501ec97504d3a456048fff",
-      "last_checked": "2026-02-27T07:39:59.356520",
+      "last_checked": "2026-03-03T07:44:14.416045",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a68959681763db2957e33875ed27f140\"",
       "file_path": "documentation/ExposureNotification/enerror/code.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerrordomain.json": {
       "hash": "2e3aab49c4d1b66444af860df00929067d5919b4ab756ec0c157f42545ce59d5",
-      "last_checked": "2026-02-27T07:39:59.483410",
+      "last_checked": "2026-03-03T07:44:14.592304",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"45a40ee4b427bb25ba1a394b0104ac71\"",
       "file_path": "documentation/ExposureNotification/enerrordomain.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerrorhandler.json": {
       "hash": "2a10f839ab04b9b4dff6aaf6cf9f1129c06c9c9e1006d8b08ffe2eb9ebda968e",
-      "last_checked": "2026-02-27T07:39:59.646006",
+      "last_checked": "2026-03-03T07:44:14.759036",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a6ea19acab427bc3fbbcf1a29b9cb5af\"",
       "file_path": "documentation/ExposureNotification/enerrorhandler.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskweightdefaultv2.json": {
       "hash": "d4ac5e4a4159198d5ac58aa021d42c258532e27d28361332412756624e6fbbf7",
-      "last_checked": "2026-02-27T07:39:59.784127",
+      "last_checked": "2026-03-03T07:44:14.929162",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"438f51677975b58e193b235f29b3b933\"",
       "file_path": "documentation/ExposureNotification/enriskweightdefaultv2.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskweightmaxv2.json": {
       "hash": "843b8a7c7b84a552ba9a2a37752abcf987472b0e9185958a53c52a1c6e7a8415",
-      "last_checked": "2026-02-27T07:39:59.971191",
+      "last_checked": "2026-03-03T07:44:15.168736",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4222941b9af7fafe887d19a242d998ba\"",
       "file_path": "documentation/ExposureNotification/enriskweightmaxv2.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/en_feature_general.json": {
       "hash": "4a0102cb38a8ab44be5acbcac9c348b9018f81056956e6cd7fc5cfda2f7a5b1e",
-      "last_checked": "2026-02-27T07:40:00.105795",
+      "last_checked": "2026-03-03T07:44:15.354985",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ae131436282027557e07fd5cdfad4344\"",
       "file_path": "documentation/ExposureNotification/en-feature-general.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endetectexposureshandler.json": {
       "hash": "8013e95af258c453d9225c60dbbbdbd5cf33d6d597a1ad0c5f21152753552cfa",
-      "last_checked": "2026-02-27T07:40:00.303251",
+      "last_checked": "2026-03-03T07:44:15.569789",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8d601f83de3f7ee224485e0405a6e93a\"",
       "file_path": "documentation/ExposureNotification/endetectexposureshandler.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerrorouttype.json": {
       "hash": "24f531af672a092f4ed852a7b6ac86e9ae8c4cee25bc642ab471fb54eb72b4ba",
-      "last_checked": "2026-02-27T07:40:00.445767",
+      "last_checked": "2026-03-03T07:44:15.740436",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"29d7b2d78d9ffb2ae8d53a5643d75464\"",
       "file_path": "documentation/ExposureNotification/enerrorouttype.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/engetdiagnosiskeyshandler.json": {
       "hash": "9930f9dec8574d444bfdd16d91494c37f2e1ee2128b6b4543ccbc026a237e3c0",
-      "last_checked": "2026-02-27T07:40:00.581511",
+      "last_checked": "2026-03-03T07:44:15.906834",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"64844569517b59853d41eea59da6b7dc\"",
       "file_path": "documentation/ExposureNotification/engetdiagnosiskeyshandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/engetexposureinfohandler.json": {
       "hash": "c4ec466fa078e5213b20af48faf5faf13550fff052fb075b4e3bc2e917b2ddef",
-      "last_checked": "2026-02-27T07:40:00.712447",
+      "last_checked": "2026-03-03T07:44:16.075197",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c7141983188204ea1a07f3975b50761c\"",
       "file_path": "documentation/ExposureNotification/engetexposureinfohandler.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/setting-up-an-exposure-notifications-express-test-verification-server.json": {
       "hash": "c4cc5c7227b68515c87f60f9146826fa42085cb2cdc0ac65fec339401467a78a",
-      "last_checked": "2026-02-27T07:40:00.847624",
+      "last_checked": "2026-03-03T07:44:16.259988",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"193845b633ccd3ec06bc9c982d357946\"",
       "file_path": "documentation/ExposureNotification/setting-up-an-exposure-notifications-express-test-verification-server.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/configuring-a-key-server-for-exposure-notifications-express.json": {
       "hash": "387cb3c8d88a37595db8c6014cbbfc18a6b35cb12c2a8afafe97c11a8d8e1a42",
-      "last_checked": "2026-02-27T07:40:00.980538",
+      "last_checked": "2026-03-03T07:44:16.482430",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"51edb49f50b662318dd6f6ebb39ec8d6\"",
       "file_path": "documentation/ExposureNotification/configuring-a-key-server-for-exposure-notifications-express.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/activate(completionhandler:).json": {
       "hash": "e7c18e64cf1f4cbcb7edc20e64ba4cbdda9259f3c0e1112627fb436d460c3623",
-      "last_checked": "2026-02-27T07:40:01.134032",
+      "last_checked": "2026-03-03T07:44:16.643279",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3c7f09ceefaec57182586d37c2a39f2b\"",
       "file_path": "documentation/ExposureNotification/enmanager/activate-completionhandler.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/activityhandler.json": {
       "hash": "60ff889dc4ebedb6ecd69b22b567e683594ccc75e29e4e5c3ebbafab6b39f099",
-      "last_checked": "2026-02-27T07:40:01.287317",
+      "last_checked": "2026-03-03T07:44:16.811867",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"32b141b59d0a4e9277f0f79c23e82d23\"",
       "file_path": "documentation/ExposureNotification/enmanager/activityhandler.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityhandler.json": {
       "hash": "35de0b0202a772fea02b3901fb3ffabbeb093008ede60cc621263fe0a810c1c5",
-      "last_checked": "2026-02-27T07:40:01.422478",
+      "last_checked": "2026-03-03T07:44:16.978327",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"499bf0c56a835e4610bf2964974c6eb0\"",
       "file_path": "documentation/ExposureNotification/enactivityhandler.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityflags.json": {
       "hash": "eda7fbe00c7470e9055fa5c130876a2bd6bedf4290d51f909e51580365b1a3d4",
-      "last_checked": "2026-02-27T07:40:01.549849",
+      "last_checked": "2026-03-03T07:44:17.154829",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7444c0168ebc503fdedd721b5d37dbcc\"",
       "file_path": "documentation/ExposureNotification/enactivityflags.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/setexposurenotificationenabled(_:completionhandler:).json": {
       "hash": "14339d2487987db49b54c27a40d95eb8945a0ca9df75f25a447096c38770eff6",
-      "last_checked": "2026-02-27T07:40:01.764025",
+      "last_checked": "2026-03-03T07:44:17.311718",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"b550256a3de435fda006c71a63d8b933\"",
       "file_path": "documentation/ExposureNotification/enmanager/setexposurenotificationenabled-completionhandler.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/detectexposures(configuration:diagnosiskeyurls:completionhandler:).json": {
       "hash": "99e79cd535deafcf64995f1633cab9cf567fef4c4be4746fdc1145585baeb3d2",
-      "last_checked": "2026-02-27T07:40:01.908767",
+      "last_checked": "2026-03-03T07:44:17.475922",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6a3132ca070aed9ef63a958dfad902f8\"",
       "file_path": "documentation/ExposureNotification/enmanager/detectexposures-configurationdiagnosiskeyurlscompletionhandler.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/detectexposures(configuration:completionhandler:).json": {
       "hash": "191f238e8b8d39476f8563efb73d775729ffdb90c22718b6fab482cdf3b103b2",
-      "last_checked": "2026-02-27T07:40:02.064694",
+      "last_checked": "2026-03-03T07:44:17.632691",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6a34fd6082ecb1443205f853ff24a002\"",
       "file_path": "documentation/ExposureNotification/enmanager/detectexposures-configurationcompletionhandler.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/getexposurewindows(summary:completionhandler:).json": {
       "hash": "f2a244dbae8d9eb6575d81138d0e1d4fdb5817c054cf107617c863c4a9898df8",
-      "last_checked": "2026-02-27T07:40:02.224537",
+      "last_checked": "2026-03-03T07:44:17.803870",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"17d5c283a24ad280d9f150a8bebb3c1b\"",
       "file_path": "documentation/ExposureNotification/enmanager/getexposurewindows-summarycompletionhandler.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/engetexposurewindowshandler.json": {
       "hash": "5d03b201e1e9ee2f640f5b13f7c02e4c1a1b27e108e2fe60e2ec607ccac96858",
-      "last_checked": "2026-02-27T07:40:02.353596",
+      "last_checked": "2026-03-03T07:44:17.972376",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f0583ee890f8067bd660528c454c890b\"",
       "file_path": "documentation/ExposureNotification/engetexposurewindowshandler.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/getusertraveled(completionhandler:).json": {
       "hash": "e77663a8cf666a2dccd42d8a38484338067e10022aaf6820cadfb3e7271a9f78",
-      "last_checked": "2026-02-27T07:40:02.504631",
+      "last_checked": "2026-03-03T07:44:18.133301",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"41213d4e1b6eed456b884bab230d1ff4\"",
       "file_path": "documentation/ExposureNotification/enmanager/getusertraveled-completionhandler.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/engetusertraveledhandler.json": {
       "hash": "7383d3fa948a6a0f94b8d472d282ea6cdd19efdd27135d2130cde087c5977faa",
-      "last_checked": "2026-02-27T07:40:02.638180",
+      "last_checked": "2026-03-03T07:44:18.298607",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"270f3aa50312cd87f6a2f000e7071af2\"",
       "file_path": "documentation/ExposureNotification/engetusertraveledhandler.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/getexposureinfo(summary:userexplanation:completionhandler:).json": {
       "hash": "d7222cc085462b5bafcd97aa62dcbfc650a2a457661e6f49aa724f334423da60",
-      "last_checked": "2026-02-27T07:40:02.834467",
+      "last_checked": "2026-03-03T07:44:18.480455",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3081711abd59cab6ead17118dc17ef54\"",
       "file_path": "documentation/ExposureNotification/enmanager/getexposureinfo-summaryuserexplanationcompletionhandler.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/getdiagnosiskeys(completionhandler:).json": {
       "hash": "3c449a3c06abcfa9f3cf96dd10c8378bae0963105fcf57d243c392b1b8b384b5",
-      "last_checked": "2026-02-27T07:40:03.015864",
+      "last_checked": "2026-03-03T07:44:18.635163",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"31929a473f541892580f29517286b4f1\"",
       "file_path": "documentation/ExposureNotification/enmanager/getdiagnosiskeys-completionhandler.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/gettestdiagnosiskeys(completionhandler:).json": {
       "hash": "13854ccbedf05d0da6e594670625139ce9283e9c1e77c4567e72508fc8e024f2",
-      "last_checked": "2026-02-27T07:40:03.142426",
+      "last_checked": "2026-03-03T07:44:18.793033",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"06c1a508df35a6488c432ec357b621fa\"",
       "file_path": "documentation/ExposureNotification/enmanager/gettestdiagnosiskeys-completionhandler.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/entemporaryexposurekey.json": {
       "hash": "a55dd81c83e51d1e5d6f0bf1b998b67559f8276f78c6f11d005546cae24f824e",
-      "last_checked": "2026-02-27T07:40:03.288764",
+      "last_checked": "2026-03-03T07:44:18.954744",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"74fb08bb7fbded07f4a9f7d613b41735\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/exposurenotificationstatus.json": {
       "hash": "90665d4dc8f8b53d87ab88743ec986f001ae88c9a5e40bd129c2910a17b198d0",
-      "last_checked": "2026-02-27T07:40:03.442107",
+      "last_checked": "2026-03-03T07:44:19.126360",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f8bb05c6a1b5161d2ac34b7b0615661c\"",
       "file_path": "documentation/ExposureNotification/enmanager/exposurenotificationstatus.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/exposurenotificationenabled.json": {
       "hash": "057d8937696f1bb56a229a5b27ef02a9b979254275326373241afd59a9308cfb",
-      "last_checked": "2026-02-27T07:40:03.571570",
+      "last_checked": "2026-03-03T07:44:19.302732",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"d0efd080d45ef5ed7aa19d4d5e5a885f\"",
       "file_path": "documentation/ExposureNotification/enmanager/exposurenotificationenabled.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/authorizationstatus.json": {
       "hash": "946cb897726fde8297ec3ecbac32efcd422ac68c23160a555833a7b906db43af",
-      "last_checked": "2026-02-27T07:40:03.721387",
+      "last_checked": "2026-03-03T07:44:19.467870",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"87537a042ebacba3ffae4189c937e2b6\"",
       "file_path": "documentation/ExposureNotification/enmanager/authorizationstatus.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/dispatchqueue.json": {
       "hash": "7ef9c06ce2582a332fde80c8f602c6d42ddbf4f26dbe020bfdb30942efc52e36",
-      "last_checked": "2026-02-27T07:40:03.856146",
+      "last_checked": "2026-03-03T07:44:19.641034",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"75b9205809fca8eb87b87b2788a77c9b\"",
       "file_path": "documentation/ExposureNotification/enmanager/dispatchqueue.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).json": {
       "hash": "3eef191ecd2947efdc5568b32fca526db1a87ed75d15da4b1f1c9924a0420f82",
-      "last_checked": "2026-02-27T07:40:04.000209",
+      "last_checked": "2026-03-03T07:44:19.851516",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6f951e57b434690fafa6d83f4f0157e8\"",
       "file_path": "documentation/ExposureNotification/enmanager/requestpreauthorizeddiagnosiskeys-completionhandler.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/preauthorizediagnosiskeys(completionhandler:).json": {
       "hash": "a8b1ab5a7e61e8b660504c4c4af8597138bd4c5ccdf4f971641ade3dcc8ef9bd",
-      "last_checked": "2026-02-27T07:40:04.151181",
+      "last_checked": "2026-03-03T07:44:20.011426",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ae8cbf3384def51c949e86c9178f07e0\"",
       "file_path": "documentation/ExposureNotification/enmanager/preauthorizediagnosiskeys-completionhandler.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosiskeysavailablehandler.json": {
       "hash": "9929c934354be7fb62efee830870af705a090c62e66805a387f57c4eff29478f",
-      "last_checked": "2026-02-27T07:40:04.284112",
+      "last_checked": "2026-03-03T07:44:20.190785",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"07e2de9c2dbf67b4100ab55611e33cdb\"",
       "file_path": "documentation/ExposureNotification/endiagnosiskeysavailablehandler.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/diagnosiskeysavailablehandler.json": {
       "hash": "313c1ae4d04ef34b8281df45c98332a69a41ceddea181a0a79a8c505e7d21b53",
-      "last_checked": "2026-02-27T07:40:04.472736",
+      "last_checked": "2026-03-03T07:44:20.408423",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"147d2f2df0992529262c7cfcc3e8c141\"",
       "file_path": "documentation/ExposureNotification/enmanager/diagnosiskeysavailablehandler.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/invalidate().json": {
       "hash": "605b3a7e9fbca1527c97b0b5d61b6f4acc3cc28a682d7881349719c0cace9964",
-      "last_checked": "2026-02-27T07:40:04.609332",
+      "last_checked": "2026-03-03T07:44:20.570295",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"81be2347426e904d04218b773f757c89\"",
       "file_path": "documentation/ExposureNotification/enmanager/invalidate.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enmanager/invalidationhandler.json": {
       "hash": "602f6dabf2ac79de36d330689514e519e43650e344ebd537c85960cf6fd21f0f",
-      "last_checked": "2026-02-27T07:40:04.758516",
+      "last_checked": "2026-03-03T07:44:20.750036",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f964b83076247c13e04703cff51b4248\"",
       "file_path": "documentation/ExposureNotification/enmanager/invalidationhandler.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/attenuationdurationthresholds.json": {
       "hash": "0f80c9dcdfce6a89aea646e967b94fbb1840224e518fabc1caf1026e06b893ae",
-      "last_checked": "2026-02-27T07:40:04.910400",
+      "last_checked": "2026-03-03T07:44:20.925862",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c356b731408ffcd3f65f51b8c63b449d\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/attenuationdurationthresholds.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/immediatedurationweight.json": {
       "hash": "3aa8d3c8cfcb70d7144b4e5db95ea09ef604afa3f5a9386f3514392b82f99367",
-      "last_checked": "2026-02-27T07:40:05.108955",
+      "last_checked": "2026-03-03T07:44:21.103236",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8c231f74ab103ccfcd6b76d5fc7c9a89\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/immediatedurationweight.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/mediumdurationweight.json": {
       "hash": "0867a0657e21ee2a056fcad13df53a651467ee47f19942f4fb46e2bde36844ce",
-      "last_checked": "2026-02-27T07:40:05.323826",
+      "last_checked": "2026-03-03T07:44:21.261218",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"586e77a40ab800b609838530ce764a27\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/mediumdurationweight.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/neardurationweight.json": {
       "hash": "6e264c372503f520e3d52216ff5670ad241896ce04cf253509efaf3561796508",
-      "last_checked": "2026-02-27T07:40:05.465892",
+      "last_checked": "2026-03-03T07:44:21.417987",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e0031947824671e54c9575e5d19414f5\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/neardurationweight.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/otherdurationweight.json": {
       "hash": "528752842e55104fd32c3029dcf375d81de6eeeb64da98f205298c98f6ac5744",
-      "last_checked": "2026-02-27T07:40:05.597218",
+      "last_checked": "2026-03-03T07:44:21.586266",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ebba3bf6a8d78489d2711f9ea32ffe7b\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/otherdurationweight.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/dayssincelastexposurethreshold.json": {
       "hash": "8dec3a2290f3443a0f8f740dac5060fd482f0f68b0f1daaccde97e16df87064a",
-      "last_checked": "2026-02-27T07:40:05.742172",
+      "last_checked": "2026-03-03T07:44:21.748602",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"2fa08e7c2261461b6c5a9d4ca042eced\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/dayssincelastexposurethreshold.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms.json": {
       "hash": "7812e86b15007aea3a8abc4d9d5d20628bbeaedf8229c96fd5f412b25a30747c",
-      "last_checked": "2026-02-27T07:40:05.944295",
+      "last_checked": "2026-03-03T07:44:21.911738",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"64083c127a406e76038885ff16c9c59d\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/infectiousnesshighweight.json": {
       "hash": "91ce7437e0ce4bc33f0756e0353f064a15e786b2e59da7af0bd14a598f668447",
-      "last_checked": "2026-02-27T07:40:06.142014",
+      "last_checked": "2026-03-03T07:44:22.073041",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"b5c429783f82d4ea0a79d50b8403c51f\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/infectiousnesshighweight.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/infectiousnessstandardweight.json": {
       "hash": "c331625cdcda7bb0138ce0d7cf4899ff570211a297ae9672199b939ec89adfed",
-      "last_checked": "2026-02-27T07:40:06.290627",
+      "last_checked": "2026-03-03T07:44:22.236033",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a21d1a71220d95d92bc65757165d5a8e\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/infectiousnessstandardweight.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endayssinceonsetofsymptomsunknown.json": {
       "hash": "2680e1a7c5115c5f67d2bc58f90164e95e0020d806ac92712459b824771e78af",
-      "last_checked": "2026-02-27T07:40:06.427085",
+      "last_checked": "2026-03-03T07:44:22.388424",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a1d8ee45b6bfd6ef2ed1c43d17a56413\"",
       "file_path": "documentation/ExposureNotification/endayssinceonsetofsymptomsunknown.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/reporttypeconfirmedclinicaldiagnosisweight.json": {
       "hash": "c8dd89a2a54cc3fb9f80a22d17601b82b7773e648116d2f80f7177f963cbff19",
-      "last_checked": "2026-02-27T07:40:06.617543",
+      "last_checked": "2026-03-03T07:44:22.616776",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0598409957b35d037d9ccb78865cd11b\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/reporttypeconfirmedclinicaldiagnosisweight.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/reporttypeconfirmedtestweight.json": {
       "hash": "6bc39f8bb5bdff1c7cd6db9f00e9903cda1b28e6e2724a6e3072fdcdd143f7a4",
-      "last_checked": "2026-02-27T07:40:06.767661",
+      "last_checked": "2026-03-03T07:44:22.799410",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"54e6721b7dffd1da553652ca0c8d4bc9\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/reporttypeconfirmedtestweight.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/reporttyperecursiveweight.json": {
       "hash": "d56cfd20d56f53815e797514e8d34bb60ab20ca17926729cd95c7d8a49802094",
-      "last_checked": "2026-02-27T07:40:06.954171",
+      "last_checked": "2026-03-03T07:44:22.960497",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4bb2ee6af87f3814a993b2881084820b\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/reporttyperecursiveweight.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/reporttypeselfreportedweight.json": {
       "hash": "80d169ad70fb15700233c2bab321d8b72cf925bc8e9527eec0f4617b7b6c450d",
-      "last_checked": "2026-02-27T07:40:07.193443",
+      "last_checked": "2026-03-03T07:44:23.128433",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"39e092145e841af03c9ef63d590383e1\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/reporttypeselfreportedweight.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/reporttypenonemap.json": {
       "hash": "2e55df3e8556178faa283c5be98d5886e6998832d5cb6a3727f6aac44d44eacd",
-      "last_checked": "2026-02-27T07:40:07.353525",
+      "last_checked": "2026-03-03T07:44:23.295174",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f40a9afceaa6b03f4a2144ad59d51200\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/reporttypenonemap.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/exposure-risk-value-calculation-in-exposurenotification-version-1.json": {
       "hash": "550967e6f4deb0332faa645f56a5c5bde90fa9bed58054930f811f61055abb4c",
-      "last_checked": "2026-02-27T07:40:07.513360",
+      "last_checked": "2026-03-03T07:44:23.453810",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"b8fc16d5c4d1e33a79b3236270c71639\"",
       "file_path": "documentation/ExposureNotification/exposure-risk-value-calculation-in-exposurenotification-version-1.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow/calibrationconfidence.json": {
       "hash": "c788fd98e85cad5525cd589036915b8369cf8ab1e04ca43ee6dba59a2edd8862",
-      "last_checked": "2026-02-27T07:40:07.710327",
+      "last_checked": "2026-03-03T07:44:23.609837",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"1999be638380f8f576ffb0c2dbae0055\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow/calibrationconfidence.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow/date.json": {
       "hash": "9dffe3787430ca35e6bdcf2ac7cd93bb549da06f4a9981b31fffb73d9e453b38",
-      "last_checked": "2026-02-27T07:40:07.856925",
+      "last_checked": "2026-03-03T07:44:23.791920",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"22660c2f03497d89ddd100ea48b6eba9\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow/date.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow/diagnosisreporttype.json": {
       "hash": "e3a552eb32dc42420bb17ca6e373cbc4bff2553732a9ee3a866d502358addf34",
-      "last_checked": "2026-02-27T07:40:08.026786",
+      "last_checked": "2026-03-03T07:44:24.127438",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ba8ef649d548316bea69e6ab8a57923f\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow/diagnosisreporttype.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow/infectiousness.json": {
       "hash": "9f81e30359eabca7633dea38b4c096ed4622e4a882df0da790885390d2504cb2",
-      "last_checked": "2026-02-27T07:40:08.162766",
+      "last_checked": "2026-03-03T07:44:24.306216",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7ef128720e86faca34b7d5fbc309ec0c\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow/infectiousness.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow/scaninstances.json": {
       "hash": "eaec817836c1e7adc0fabf634440610dbd7f3f57e16eedbb0619984cad439195",
-      "last_checked": "2026-02-27T07:40:08.307970",
+      "last_checked": "2026-03-03T07:44:24.483832",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0745b48c007d74f155c1d852c48b7c35\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow/scaninstances.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposurewindow/variantofconcerntype.json": {
       "hash": "c6f2a85725b1ca4bd7ffff3efcd6a6eb60fca6d8ed721eb87da6e365ffd5ea7a",
-      "last_checked": "2026-02-27T07:40:08.452068",
+      "last_checked": "2026-03-03T07:44:24.654692",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a245e5f700bc183f596ecd7abfcd3633\"",
       "file_path": "documentation/ExposureNotification/enexposurewindow/variantofconcerntype.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype.json": {
       "hash": "189682c4aacbb169ea99d2d910674327e3a1c4dedef290a06b6d5463c0c7e2ff",
-      "last_checked": "2026-02-27T07:40:08.638517",
+      "last_checked": "2026-03-03T07:44:24.821681",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ce3fa1ba9687ffd3a17e7429fe77ca81\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enscaninstance/minimumattenuation.json": {
       "hash": "404e7eebfd64cdea3f178f85bb544d8074bbcfc34af2f14f41dbf6e3eefc102b",
-      "last_checked": "2026-02-27T07:40:08.777992",
+      "last_checked": "2026-03-03T07:44:24.978521",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"9c109a7cfbef5c1dd34f97eb7a196939\"",
       "file_path": "documentation/ExposureNotification/enscaninstance/minimumattenuation.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enscaninstance/secondssincelastscan.json": {
       "hash": "42722bb59d7e7dd5bf30cb4b051826c7dc08367ef0c94cd98afa77dba6a96a35",
-      "last_checked": "2026-02-27T07:40:08.903187",
+      "last_checked": "2026-03-03T07:44:25.134358",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"1d7c76f94bed51d28e47f087185c24ee\"",
       "file_path": "documentation/ExposureNotification/enscaninstance/secondssincelastscan.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enscaninstance/typicalattenuation.json": {
       "hash": "377f8206d1b851f7234241261ce805c2d22db1662acdca54f1af08be118da27b",
-      "last_checked": "2026-02-27T07:40:09.050960",
+      "last_checked": "2026-03-03T07:44:25.304049",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"408634bb7156b385901c6e9388eff44a\"",
       "file_path": "documentation/ExposureNotification/enscaninstance/typicalattenuation.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/attenuation.json": {
       "hash": "000ae075bef00442f50911233027572886f7c2b85fd8589533db9e2acd41d69f",
-      "last_checked": "2026-02-27T07:40:09.255680",
+      "last_checked": "2026-03-03T07:44:25.473383",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"457b72cf1d40a2849277568278c7bd7d\"",
       "file_path": "documentation/ExposureNotification/attenuation.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/risk-level.json": {
       "hash": "66e8ac202fa9f5244ecf3a8233d46faa7a64d78e88b609decc05c80313942503",
-      "last_checked": "2026-02-27T07:40:09.448965",
+      "last_checked": "2026-03-03T07:44:25.645683",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5eaced96f60624be9404feaf93b25501\"",
       "file_path": "documentation/ExposureNotification/risk-level.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/risk-level-value.json": {
       "hash": "44dfc330018cd1d30c01c116a64086c3735a4cc2ff6ae2330f64a59b1f52bf5d",
-      "last_checked": "2026-02-27T07:40:09.626877",
+      "last_checked": "2026-03-03T07:44:25.806895",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"98c850267f6735adeb229733a90be5ff\"",
       "file_path": "documentation/ExposureNotification/risk-level-value.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/risk-score.json": {
       "hash": "ece93d7aad21b8da0186fea4de202ad8a0b1e73364162cd4cd26b342658947c3",
-      "last_checked": "2026-02-27T07:40:09.828019",
+      "last_checked": "2026-03-03T07:44:25.963229",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"d8aceb4830ef2e5a9055058984df0f31\"",
       "file_path": "documentation/ExposureNotification/risk-score.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/risk-weight.json": {
       "hash": "21027153d8e8faa2f3b0ec3a73af223a9991510f363514618228218a0b3f10cd",
-      "last_checked": "2026-02-27T07:40:09.990263",
+      "last_checked": "2026-03-03T07:44:26.125887",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8405f8dc400d429a42865d3ef4a5b7f8\"",
       "file_path": "documentation/ExposureNotification/risk-weight.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/encalibrationconfidence.json": {
       "hash": "7e6361de0802cd3e6af37971050b1a16c9d632ff69a7ef5617c4fe81da985ab4",
-      "last_checked": "2026-02-27T07:40:10.126050",
+      "last_checked": "2026-03-03T07:44:26.284771",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4e73a6c88c316416bd5e287d4b72f8e2\"",
       "file_path": "documentation/ExposureNotification/encalibrationconfidence.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype.json": {
       "hash": "f483a4f625eb151119ef3e27ee40c24b9465f2cf74c9ad55cde09395ff8b6e67",
-      "last_checked": "2026-02-27T07:40:10.257148",
+      "last_checked": "2026-03-03T07:44:26.445190",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"754a55fae2171958594be928a88a4094\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/eninfectiousness.json": {
       "hash": "0c11088442528482d60cc0696c9f29e8f2262219f9a5d979a714abc1eafc12b1",
-      "last_checked": "2026-02-27T07:40:10.403446",
+      "last_checked": "2026-03-03T07:44:26.597958",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"09eeb8ad27dbd7773d872e309e182516\"",
       "file_path": "documentation/ExposureNotification/eninfectiousness.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/attenuationdurations.json": {
       "hash": "00981771051da0932df9fd96b99b91edfe438e43037693d3c78af6b7cf887197",
-      "last_checked": "2026-02-27T07:40:10.558177",
+      "last_checked": "2026-03-03T07:44:26.767767",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c8ad5b0b8d25a888d391016afcbc247a\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/attenuationdurations.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/dayssincelastexposure.json": {
       "hash": "5f852d14275225e3a1a5391c282d62bb0447f727a35820ba2e1ff8527ffecb67",
-      "last_checked": "2026-02-27T07:40:10.694715",
+      "last_checked": "2026-03-03T07:44:26.941054",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"48f387faa0662360a39ef177917b31a4\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/dayssincelastexposure.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/matchedkeycount.json": {
       "hash": "fde539bb08bd9c882bec2dcc0524498048beaffde60c55483fb0b8d667c8d54d",
-      "last_checked": "2026-02-27T07:40:10.853228",
+      "last_checked": "2026-03-03T07:44:27.107066",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4fb6680ebc26101651fb17d0dfecfc6a\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/matchedkeycount.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/maximumriskscore.json": {
       "hash": "8965a0db1d9facf942f7198d9952fee98faaef421d09baec3f5d8b96910af23d",
-      "last_checked": "2026-02-27T07:40:10.998027",
+      "last_checked": "2026-03-03T07:44:27.292824",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0b569e95823e0bb8c2ca97dd55be74f9\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/maximumriskscore.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/maximumriskscorefullrange.json": {
       "hash": "f74e8b33785a79eb345be2aad5348df5a7b4e1654a3dd11216073256f2c0a528",
-      "last_checked": "2026-02-27T07:40:11.146262",
+      "last_checked": "2026-03-03T07:44:27.457007",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"b847338aa02b217af3de4c028fa4ae2b\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/maximumriskscorefullrange.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/riskscoresumfullrange.json": {
       "hash": "91c3b489d68a2b01df1e765e37626cf3494ac18baa77a37ed36af030f93f6ace",
-      "last_checked": "2026-02-27T07:40:11.296660",
+      "last_checked": "2026-03-03T07:44:27.614743",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a0ea96e8f34e3f4b4fa01ecce7d5a2d0\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/riskscoresumfullrange.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/metadata.json": {
       "hash": "46873e50d5953f95f182622c24ebe93567fb4c97010f0c42210078a02313f106",
-      "last_checked": "2026-02-27T07:40:11.444624",
+      "last_checked": "2026-03-03T07:44:27.775352",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e2c0b960777afb08165a3716d1f61888\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/metadata.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredetectionsummary/daysummaries.json": {
       "hash": "61afb67b4c3af1da11959076ccd4748e1e2bb2ba7df159a7dad24a3982e2a7e4",
-      "last_checked": "2026-02-27T07:40:11.598635",
+      "last_checked": "2026-03-03T07:44:27.942215",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"773cc14b6ceca56d5e53e2e234ba087e\"",
       "file_path": "documentation/ExposureNotification/enexposuredetectionsummary/daysummaries.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary/date.json": {
       "hash": "35cf67d77422128d722975a03e8295f8f28fcf005b63a285524271fa55192936",
-      "last_checked": "2026-02-27T07:40:11.747226",
+      "last_checked": "2026-03-03T07:44:28.098325",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"57ef7f1a8917bbef6bebb22b29fe5a6c\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary/date.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary/confirmedclinicaldiagnosissummary.json": {
       "hash": "d4f9ccb76e7438b64bda9c4700cc2481c3b1403e4aaab52a1f60ac46da842567",
-      "last_checked": "2026-02-27T07:40:11.887646",
+      "last_checked": "2026-03-03T07:44:28.278504",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ba5ee175adbd1f480cc9f4d4884856a8\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary/confirmedclinicaldiagnosissummary.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary/confirmedtestsummary.json": {
       "hash": "a49cece98c35ffe54844278ac1e3c6a795d5cbfc0b046fb763cd6ceab540dd02",
-      "last_checked": "2026-02-27T07:40:12.035374",
+      "last_checked": "2026-03-03T07:44:28.442948",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c5e2d100e12091d6424ea7d255a6f669\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary/confirmedtestsummary.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary/recursivesummary.json": {
       "hash": "0dbbe34365ec14cea489e7257f6928f909b9dbfca1b1c2e317d8ca83bb275b8f",
-      "last_checked": "2026-02-27T07:40:12.177976",
+      "last_checked": "2026-03-03T07:44:28.607310",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a2b1eb1dc69f06aab3bd72a4956e9158\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary/recursivesummary.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary/selfreportedsummary.json": {
       "hash": "e5267c77f82595aa1e249d6867a8b22b66bae5d17bb81cc5de6b67ba8d686e91",
-      "last_checked": "2026-02-27T07:40:12.317490",
+      "last_checked": "2026-03-03T07:44:28.761811",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"d132f4fcc73a0e976096005912d04dd2\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary/selfreportedsummary.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuredaysummary/daysummary.json": {
       "hash": "5e87dc65de2067f36b37239e4a21cb43eec29dbdf5449c0e725d27510f98527f",
-      "last_checked": "2026-02-27T07:40:12.457137",
+      "last_checked": "2026-03-03T07:44:28.918129",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"17b05468a72ffbe2d541fe3c402abb3f\"",
       "file_path": "documentation/ExposureNotification/enexposuredaysummary/daysummary.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuresummaryitem/maximumscore.json": {
       "hash": "0c5a61ebb2587e8dd6f331efe7afd8e3461f8a485f12366f14ba91cf40c82ff5",
-      "last_checked": "2026-02-27T07:40:12.636912",
+      "last_checked": "2026-03-03T07:44:29.092115",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"1b3cc1fe4f5002a957c02c5844acb8d0\"",
       "file_path": "documentation/ExposureNotification/enexposuresummaryitem/maximumscore.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuresummaryitem/scoresum.json": {
       "hash": "014b9b813bf7ac81626540608f6d8ff85c7b9aa28049f6379cb00941ad08302a",
-      "last_checked": "2026-02-27T07:40:12.772966",
+      "last_checked": "2026-03-03T07:44:29.258940",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0281b7f113998b6ba93c3f49dcfb7a40\"",
       "file_path": "documentation/ExposureNotification/enexposuresummaryitem/scoresum.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposuresummaryitem/weighteddurationsum.json": {
       "hash": "6cba379e362f369352310f10d9ff35210b5a5a035ae825dbee1b4907fbd4c572",
-      "last_checked": "2026-02-27T07:40:12.912203",
+      "last_checked": "2026-03-03T07:44:29.425118",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"09e985696b2a5dc5ea3ac6b444cdc01d\"",
       "file_path": "documentation/ExposureNotification/enexposuresummaryitem/weighteddurationsum.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enauthorizationstatus/authorized.json": {
       "hash": "951df2353be578324aa735fb1b0b884596b709589d9bf8e28db25346b950acb6",
-      "last_checked": "2026-02-27T07:40:13.056889",
+      "last_checked": "2026-03-03T07:44:29.613472",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"9e6a69ea96ee3284cf9463a3dafe5923\"",
       "file_path": "documentation/ExposureNotification/enauthorizationstatus/authorized.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enauthorizationstatus/notauthorized.json": {
       "hash": "40c74872d855fb8c497dac6a9b4ad24d5ef0aca6938130053e82109bbbd6bec1",
-      "last_checked": "2026-02-27T07:40:13.193323",
+      "last_checked": "2026-03-03T07:44:29.783674",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"d6700647c337937bec879d2cd7aba57a\"",
       "file_path": "documentation/ExposureNotification/enauthorizationstatus/notauthorized.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enauthorizationstatus/restricted.json": {
       "hash": "797316a9ffd1470ef9585ec268fd4b36e61678ecafcdab1368ce65cc47c2876c",
-      "last_checked": "2026-02-27T07:40:13.343665",
+      "last_checked": "2026-03-03T07:44:29.933245",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"1e42e3a716f751285bd78460813b0801\"",
       "file_path": "documentation/ExposureNotification/enauthorizationstatus/restricted.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enauthorizationstatus/unknown.json": {
       "hash": "a0b148e7dd8edeaf6fbaeaaec969a7b8171ee2378416250abd29ec41e1935bc9",
-      "last_checked": "2026-02-27T07:40:13.554822",
+      "last_checked": "2026-03-03T07:44:30.137930",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"1ffaf582576e915ace858bd70cfabea4\"",
       "file_path": "documentation/ExposureNotification/enauthorizationstatus/unknown.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enauthorizationstatus/init(rawvalue:).json": {
       "hash": "87d9d860c45006ea5d62d44e477ea0692c3d970b2058bda0bbf8ad2a6b0bf3d7",
-      "last_checked": "2026-02-27T07:40:13.686639",
+      "last_checked": "2026-03-03T07:44:30.319613",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e8f8145665f99e4a9fdf3f20ff2bb37f\"",
       "file_path": "documentation/ExposureNotification/enauthorizationstatus/init-rawvalue.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/active.json": {
       "hash": "8aa58b64cfd8ceb5d4106c5363b803714b65e817f47db3238b25b882847bd57d",
-      "last_checked": "2026-02-27T07:40:13.820367",
+      "last_checked": "2026-03-03T07:44:30.489832",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a5456ad4dcdf4d4574db007e1bc29e4e\"",
       "file_path": "documentation/ExposureNotification/enstatus/active.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/bluetoothoff.json": {
       "hash": "bc8f8778c81e21c59e22d954b6589e1aee207ab05ee3f7d87e0445246ef0db8d",
-      "last_checked": "2026-02-27T07:40:13.948946",
+      "last_checked": "2026-03-03T07:44:30.676709",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0a6bd29d427b5eb9fad97bcc60a63d21\"",
       "file_path": "documentation/ExposureNotification/enstatus/bluetoothoff.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/disabled.json": {
       "hash": "2eb166bcd9c35604daa0cd21bc3aa93955711dbd9df6b3520cfc33c438a277bf",
-      "last_checked": "2026-02-27T07:40:14.103348",
+      "last_checked": "2026-03-03T07:44:30.836035",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e03f621f30a9b96c2f7520839b704fbd\"",
       "file_path": "documentation/ExposureNotification/enstatus/disabled.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/restricted.json": {
       "hash": "ea9118fad034bcf5b6270ed90acfcc006a897dec6a446e4e89101be47b9d8cb7",
-      "last_checked": "2026-02-27T07:40:14.235899",
+      "last_checked": "2026-03-03T07:44:31.007969",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"919520b87e23cd6aa1e7540eae432d1c\"",
       "file_path": "documentation/ExposureNotification/enstatus/restricted.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/unknown.json": {
       "hash": "84790c13299be97cef8fd4c821a4f1889ed7217ae102433990244aef7246aef7",
-      "last_checked": "2026-02-27T07:40:14.375900",
+      "last_checked": "2026-03-03T07:44:31.209686",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f07254ed0bf16baca12c39ffd968422b\"",
       "file_path": "documentation/ExposureNotification/enstatus/unknown.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/paused.json": {
       "hash": "39256fac8b54d157d092cc499633f085b02243bc8edf1093ebd1fab501dbc7a0",
-      "last_checked": "2026-02-27T07:40:14.511758",
+      "last_checked": "2026-03-03T07:44:31.369763",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"59539db4398e0db3712dd33a4e536d32\"",
       "file_path": "documentation/ExposureNotification/enstatus/paused.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/unauthorized.json": {
       "hash": "bf7eb9d741d6cb3f06a22925f34d37ae56d1f331c944141b59e169fa3a9750c0",
-      "last_checked": "2026-02-27T07:40:14.647671",
+      "last_checked": "2026-03-03T07:44:31.606123",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"97930bf49f2b3c47511573218eb85fd9\"",
       "file_path": "documentation/ExposureNotification/enstatus/unauthorized.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enstatus/init(rawvalue:).json": {
       "hash": "0f597eb289ddcaeb9e9daea076d6ec29ea131b744415b6f7af70c8c96eea25fc",
-      "last_checked": "2026-02-27T07:40:14.792797",
+      "last_checked": "2026-03-03T07:44:31.778864",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"b1f066628c980b441de382e35f62f741\"",
       "file_path": "documentation/ExposureNotification/enstatus/init-rawvalue.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/apimisuse.json": {
       "hash": "649bc43d215d4ac28db100c4b1d2bb13715577c10152087511774a06136f6d90",
-      "last_checked": "2026-02-27T07:40:14.976925",
+      "last_checked": "2026-03-03T07:44:31.942548",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"907ebe872607e9de04e29a83cde100c3\"",
       "file_path": "documentation/ExposureNotification/enerror/apimisuse.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/badformat.json": {
       "hash": "fb2e403054105d7ac392fc22eef5e67e4b0bdd34901190951f020ed75dd5f193",
-      "last_checked": "2026-02-27T07:40:15.157972",
+      "last_checked": "2026-03-03T07:44:32.105365",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7b0b200ef7a386fe9ce86cf8d8c4c6ed\"",
       "file_path": "documentation/ExposureNotification/enerror/badformat.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/badparameter.json": {
       "hash": "cdee948c05ad063912b9da72c76da45cf91f8037258cab71f71c8ec4f2940ed2",
-      "last_checked": "2026-02-27T07:40:15.317957",
+      "last_checked": "2026-03-03T07:44:32.273374",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f13708e0139983daaee9c9b31c0aeb59\"",
       "file_path": "documentation/ExposureNotification/enerror/badparameter.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/bluetoothoff.json": {
       "hash": "887d792692630784859025a1ca56c39cce5e3adab55efabcf9960df60f94cd1a",
-      "last_checked": "2026-02-27T07:40:15.453467",
+      "last_checked": "2026-03-03T07:44:32.435072",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3a7d78491e326d6b3a1807886b870714\"",
       "file_path": "documentation/ExposureNotification/enerror/bluetoothoff.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/insufficientmemory.json": {
       "hash": "13f00cf44ef8516f78ab7fb70ef2c1d593bed50cd3ec61b858ce5120840edf6b",
-      "last_checked": "2026-02-27T07:40:15.586788",
+      "last_checked": "2026-03-03T07:44:32.586617",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0245bb91a10fd86611ed8d3621d99f41\"",
       "file_path": "documentation/ExposureNotification/enerror/insufficientmemory.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/insufficientstorage.json": {
       "hash": "87405d8c1ca5ca680022b1cf3be172efb2df8ba2284d600557f4ab069ffae7f6",
-      "last_checked": "2026-02-27T07:40:15.716728",
+      "last_checked": "2026-03-03T07:44:32.813869",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3a58c678cbce643774d4bd65263fb02b\"",
       "file_path": "documentation/ExposureNotification/enerror/insufficientstorage.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/internal.json": {
       "hash": "63bb7a843686412c1cacac19cb970730e9721832d2d3b14d7069c4f47104319b",
-      "last_checked": "2026-02-27T07:40:15.850902",
+      "last_checked": "2026-03-03T07:44:32.991957",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7e66a77ba3ef4347211d5cb72fd2c247\"",
       "file_path": "documentation/ExposureNotification/enerror/internal.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/invalidated.json": {
       "hash": "6d22ac5a29d2a53e8b2481e79abddaeee11cd46890b857f8459238dc75c19a43",
-      "last_checked": "2026-02-27T07:40:15.991990",
+      "last_checked": "2026-03-03T07:44:33.192257",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5a18ceebbbd1c3028dc14a62b33bf3cb\"",
       "file_path": "documentation/ExposureNotification/enerror/invalidated.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/notauthorized.json": {
       "hash": "b3a45c4e0ce47f58cb1b0b98c81e171a27e413df2065e0e83d837c38e1d01d7b",
-      "last_checked": "2026-02-27T07:40:16.127199",
+      "last_checked": "2026-03-03T07:44:33.367826",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"49e00f3606d7204c6fa0ff0c8ca76a50\"",
       "file_path": "documentation/ExposureNotification/enerror/notauthorized.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/notenabled.json": {
       "hash": "9190759ae3c855eeef486c2f46473d9fbd9fdad87fc48ccae746f6753ddcc5a4",
-      "last_checked": "2026-02-27T07:40:16.266967",
+      "last_checked": "2026-03-03T07:44:33.547496",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3b60d9ba94fb060ad69299d13ff56157\"",
       "file_path": "documentation/ExposureNotification/enerror/notenabled.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/notentitled.json": {
       "hash": "5a9bd1053e89a44bec248f90713d66c3c2fe72bfa3b786f2c7a62e315bcc637d",
-      "last_checked": "2026-02-27T07:40:16.411618",
+      "last_checked": "2026-03-03T07:44:33.708369",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"30b9f25cf2223a586f057a250a79d7ef\"",
       "file_path": "documentation/ExposureNotification/enerror/notentitled.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/ratelimited.json": {
       "hash": "b8a0a458d202ffea9de9e78f41fba93586f744d4dfd4a577e62b4ae4fa3a26aa",
-      "last_checked": "2026-02-27T07:40:16.556671",
+      "last_checked": "2026-03-03T07:44:33.866092",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"115ca0e7184034db60ae66128b709d38\"",
       "file_path": "documentation/ExposureNotification/enerror/ratelimited.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/restricted.json": {
       "hash": "5c298c3075f1e2609a560619652d3aa7b8007b753533b77af4ff4a50cebe54cd",
-      "last_checked": "2026-02-27T07:40:16.707174",
+      "last_checked": "2026-03-03T07:44:34.048316",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a32f9d28eaea62913bd73570d39b7427\"",
       "file_path": "documentation/ExposureNotification/enerror/restricted.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/unknown.json": {
       "hash": "26f025075f7321f1a5b9407d3abd08798f50dab1beac474c8f72620684fcc32f",
-      "last_checked": "2026-02-27T07:40:16.845728",
+      "last_checked": "2026-03-03T07:44:34.240665",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5a06a0edf0c6f6501c64c057b2774e0e\"",
       "file_path": "documentation/ExposureNotification/enerror/unknown.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/unsupported.json": {
       "hash": "b1d5c0cd58b90e92707eac969093909bcbb6dd35ec79cf5db4e82b493ebf31c5",
-      "last_checked": "2026-02-27T07:40:16.988786",
+      "last_checked": "2026-03-03T07:44:34.421257",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"fb38c43f340a5ca0790b3b49b6dc645e\"",
       "file_path": "documentation/ExposureNotification/enerror/unsupported.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/datainaccessible.json": {
       "hash": "d3ad2c369b68b5411aebd297f579f2662314eebb689285f7786284603337e724",
-      "last_checked": "2026-02-27T07:40:17.129324",
+      "last_checked": "2026-03-03T07:44:34.579729",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c2d6cc749a37be802f2d440a770cb54c\"",
       "file_path": "documentation/ExposureNotification/enerror/datainaccessible.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/travelstatusnotavailable.json": {
       "hash": "086f3cac7de5d581cf977ddf3cac64f3d1e7cf21217e3b16d4e3e369c466b6bd",
-      "last_checked": "2026-02-27T07:40:17.330712",
+      "last_checked": "2026-03-03T07:44:34.753251",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"88191d93625e05bb2ff0c2f0ed76035f\"",
       "file_path": "documentation/ExposureNotification/enerror/travelstatusnotavailable.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/errordomain.json": {
       "hash": "78e6005b15929e43c7a2614a6cb18857e6ee99133a6a09848f31a2946f42ec6c",
-      "last_checked": "2026-02-27T07:40:17.471542",
+      "last_checked": "2026-03-03T07:44:34.906128",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e71e3937507980bc15385c627438c461\"",
       "file_path": "documentation/ExposureNotification/enerror/errordomain.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/apimisuse.json": {
       "hash": "7fe3d0602a783ff49e4193119668aad6510f7ffa0b36fd6223a5a30cf6545578",
-      "last_checked": "2026-02-27T07:40:17.607129",
+      "last_checked": "2026-03-03T07:44:35.076294",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"89896996593bf58a5abd7e4e46a83c73\"",
       "file_path": "documentation/ExposureNotification/enerror/code/apimisuse.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/badformat.json": {
       "hash": "b13b15c600e9a2afeffb7a3736d164e3e22df0b58aaee68827d925aa0fd5153c",
-      "last_checked": "2026-02-27T07:40:17.786387",
+      "last_checked": "2026-03-03T07:44:35.240361",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"24191f7393ede08daed088e7d1db68c6\"",
       "file_path": "documentation/ExposureNotification/enerror/code/badformat.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/badparameter.json": {
       "hash": "514f1385291224a4d319523f69163791c98a0cd13e6fd80babf4744df3b0fcbd",
-      "last_checked": "2026-02-27T07:40:17.947393",
+      "last_checked": "2026-03-03T07:44:35.430216",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"307a4aa0c445b173953cbae8c14604bf\"",
       "file_path": "documentation/ExposureNotification/enerror/code/badparameter.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/restricted.json": {
       "hash": "478737ad77b89b75abd485d80e77ce65dd6934d9d743b566e83946e4b2da11f6",
-      "last_checked": "2026-02-27T07:40:18.092324",
+      "last_checked": "2026-03-03T07:44:35.635082",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7dbae3efa3d11a71af203dd2b803a4d9\"",
       "file_path": "documentation/ExposureNotification/enerror/code/restricted.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/bluetoothoff.json": {
       "hash": "462738f1e92d1f2fcce5baf144d12973025e57eb80a9ebf4e5786072c271d84e",
-      "last_checked": "2026-02-27T07:40:18.238991",
+      "last_checked": "2026-03-03T07:44:35.788142",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"70e911a998c831b93aa82ce07b9aa706\"",
       "file_path": "documentation/ExposureNotification/enerror/code/bluetoothoff.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/insufficientmemory.json": {
       "hash": "826e473c236d6c44e70f1a55c7ccf408055f1f485db5ea85eaf70b79a9cc86fc",
-      "last_checked": "2026-02-27T07:40:18.384327",
+      "last_checked": "2026-03-03T07:44:35.946868",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f8ad3bf80d9987bef2a119d808c8c25e\"",
       "file_path": "documentation/ExposureNotification/enerror/code/insufficientmemory.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/insufficientstorage.json": {
       "hash": "bc0d22fe6239b79cb1a34552195228c23ace114e398a7dc11cecb8e6b1469923",
-      "last_checked": "2026-02-27T07:40:18.537727",
+      "last_checked": "2026-03-03T07:44:36.119426",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"84d95b967befeec233c302bc6b70d895\"",
       "file_path": "documentation/ExposureNotification/enerror/code/insufficientstorage.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/internal.json": {
       "hash": "52eeb4ad8370504a7cd74d012d5965896a91730413c8e6151698c6df6be012b4",
-      "last_checked": "2026-02-27T07:40:18.678435",
+      "last_checked": "2026-03-03T07:44:36.313217",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a1fa95c640659bdb876a0989a0fe0e35\"",
       "file_path": "documentation/ExposureNotification/enerror/code/internal.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/invalidated.json": {
       "hash": "debbf0e093d6233fbbef235355a3168076a12efbc0ecb5c6dec05fd378cbe7a5",
-      "last_checked": "2026-02-27T07:40:18.827820",
+      "last_checked": "2026-03-03T07:44:36.478633",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"091eb20df3e39ceae30e595a294be3f1\"",
       "file_path": "documentation/ExposureNotification/enerror/code/invalidated.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/notauthorized.json": {
       "hash": "7fc38588891059841049d4bc599acb3b348a99b280f83cf6dc99716e47b57b37",
-      "last_checked": "2026-02-27T07:40:18.979713",
+      "last_checked": "2026-03-03T07:44:36.648280",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0b4d2255f93946c0b201b55890e4496c\"",
       "file_path": "documentation/ExposureNotification/enerror/code/notauthorized.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/notenabled.json": {
       "hash": "cf14cc424a4a9cce18ac1af1a4c3b62d078b96c17c6af8660cb3944b35d7bac2",
-      "last_checked": "2026-02-27T07:40:19.135029",
+      "last_checked": "2026-03-03T07:44:36.812444",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"daf20c7f20e4f9f2b7187ff2eae73bdd\"",
       "file_path": "documentation/ExposureNotification/enerror/code/notenabled.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/notentitled.json": {
       "hash": "5fb5498287bed6af8990fc3a34040a2ec1447f42c8384264beaf956b803f2d62",
-      "last_checked": "2026-02-27T07:40:19.274652",
+      "last_checked": "2026-03-03T07:44:36.969273",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"fcff48271b8b49477f866b3f11d7ba3f\"",
       "file_path": "documentation/ExposureNotification/enerror/code/notentitled.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/ratelimited.json": {
       "hash": "8d4fa364cbf92a190fec7a793b817743242736307e01b627bcba07eaf141b9d7",
-      "last_checked": "2026-02-27T07:40:19.420767",
+      "last_checked": "2026-03-03T07:44:37.129618",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c3bcfa58a493f9384d3970dd1f2a2890\"",
       "file_path": "documentation/ExposureNotification/enerror/code/ratelimited.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/unknown.json": {
       "hash": "df4e177c6800f037acf8132df8dfa715e166510ae3c186597394aad13d71aa42",
-      "last_checked": "2026-02-27T07:40:19.567825",
+      "last_checked": "2026-03-03T07:44:37.300917",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5c347ab26dfd13ac0788eba39a6125c0\"",
       "file_path": "documentation/ExposureNotification/enerror/code/unknown.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/unsupported.json": {
       "hash": "136bc2199274e754aeff9a9419e6cd458c2f45553ef3f224564703638a6235b1",
-      "last_checked": "2026-02-27T07:40:19.710118",
+      "last_checked": "2026-03-03T07:44:37.519300",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a2dff5f6bd1b8870498b2e1590cf2c7d\"",
       "file_path": "documentation/ExposureNotification/enerror/code/unsupported.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/datainaccessible.json": {
       "hash": "9a7840213addebac946fc590b2a0c0b669f927cac3d7d2d2398a21cf58f0633d",
-      "last_checked": "2026-02-27T07:40:19.857337",
+      "last_checked": "2026-03-03T07:44:37.675071",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a363d7a914abb29e427eef14407705dc\"",
       "file_path": "documentation/ExposureNotification/enerror/code/datainaccessible.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/travelstatusnotavailable.json": {
       "hash": "d4c0746e82550ccca1c26d53a106de3051769049b1137cf1375b0c3e11135c89",
-      "last_checked": "2026-02-27T07:40:19.994316",
+      "last_checked": "2026-03-03T07:44:37.850549",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"fed14f2d5d05d4f0b090d1c07bdaad8d\"",
       "file_path": "documentation/ExposureNotification/enerror/code/travelstatusnotavailable.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enerror/code/init(rawvalue:).json": {
       "hash": "d6f4ad208766c0a6432ac33e39794bfa9cdb8912d17d2a0d4b5b733b3f0e186c",
-      "last_checked": "2026-02-27T07:40:20.162292",
+      "last_checked": "2026-03-03T07:44:38.019377",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c1e7864b81bc900fa1a3e4484984ddcf\"",
       "file_path": "documentation/ExposureNotification/enerror/code/init-rawvalue.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityflags/init(rawvalue:).json": {
       "hash": "09c7b4d09fbdd962554620c6606a150eb2cf26ea58aea01ab751a14b9d91b947",
-      "last_checked": "2026-02-27T07:40:20.356970",
+      "last_checked": "2026-03-03T07:44:38.184375",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0c5fd7d4f1eb22d7a396d55ed1cb1a05\"",
       "file_path": "documentation/ExposureNotification/enactivityflags/init-rawvalue.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityflags/periodicrun.json": {
       "hash": "9e9ae972b66fab4577e4ad45e17e9f4a3eb0beda5db36719a20f4a61cc6b8442",
-      "last_checked": "2026-02-27T07:40:20.491078",
+      "last_checked": "2026-03-03T07:44:38.336929",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"664a293e4fd12994d2c4a1a77c4e6683\"",
       "file_path": "documentation/ExposureNotification/enactivityflags/periodicrun.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityflags/preauthorizedkeyreleasenotificationtapped.json": {
       "hash": "7a70a6b55b3f17fa32ba2e4445a02360fd86918db57694680a4c91344524ad63",
-      "last_checked": "2026-02-27T07:40:20.631132",
+      "last_checked": "2026-03-03T07:44:38.505130",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8e829059610f232e713092af77c39039\"",
       "file_path": "documentation/ExposureNotification/enactivityflags/preauthorizedkeyreleasenotificationtapped.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityflags/reserved1.json": {
       "hash": "94cb0d5fb1cc4cebe9e7ac0befcec8a252e964a5582875dbbdd44a00eb5918d3",
-      "last_checked": "2026-02-27T07:40:20.784708",
+      "last_checked": "2026-03-03T07:44:38.668621",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f396b2be75045fc31098966bcd4ca9b5\"",
       "file_path": "documentation/ExposureNotification/enactivityflags/reserved1.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enactivityflags/reserved2.json": {
       "hash": "5a63be0f071b4ec55df64bea7ef0ce71c42b6004fe1ee16eb56db68e7dd9f212",
-      "last_checked": "2026-02-27T07:40:20.923769",
+      "last_checked": "2026-03-03T07:44:38.846533",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0d46997a42ed53ecaa0ed0f19805236f\"",
       "file_path": "documentation/ExposureNotification/enactivityflags/reserved2.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/entemporaryexposurekey/transmissionrisklevel.json": {
       "hash": "12427fcff2d82f9a54dcaa603e1e982a8c00ed6c411c6ca0a4e3a32953582dbe",
-      "last_checked": "2026-02-27T07:40:21.064115",
+      "last_checked": "2026-03-03T07:44:39.003993",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"906a2fa539cc3404dbc2db4e46a29ef4\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey/transmissionrisklevel.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/entemporaryexposurekey/rollingperiod.json": {
       "hash": "c789e8d73e6c2ef6032f483a6f9fdc70f25c3a8605fa53cb7bcb141f54e820dd",
-      "last_checked": "2026-02-27T07:40:21.214053",
+      "last_checked": "2026-03-03T07:44:39.170236",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0e2e257b2aefc7ff9fceb64cd5b26482\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey/rollingperiod.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/entemporaryexposurekey/keydata.json": {
       "hash": "b4bd21e342293ff3f46be1c2284748aba5ef3c1828be20a4aa3b986209564c90",
-      "last_checked": "2026-02-27T07:40:21.359158",
+      "last_checked": "2026-03-03T07:44:39.328002",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e75fbc9c6adb4ed3a2b54c1c7931c6d1\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey/keydata.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/entemporaryexposurekey/rollingstartnumber.json": {
       "hash": "9be2138c8d01714b23ad5d9739fb25f9d66388e15e11489a144c30b3ab3892e9",
-      "last_checked": "2026-02-27T07:40:21.510514",
+      "last_checked": "2026-03-03T07:44:39.490239",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7a01dacdfea03a800e1dc053a0cb4f1f\"",
       "file_path": "documentation/ExposureNotification/entemporaryexposurekey/rollingstartnumber.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enintervalnumber.json": {
       "hash": "7f08d9a74b2d9f43d72adf1dcd886753d5cf718b558d4ba91bdebb976feb42f7",
-      "last_checked": "2026-02-27T07:40:21.638579",
+      "last_checked": "2026-03-03T07:44:39.652901",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0eb5cb8e6244f24cf2476ff576446139\"",
       "file_path": "documentation/ExposureNotification/enintervalnumber.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo.json": {
       "hash": "6ca471866120df360214cb2e137b7ac5489922dad1f76e52cab19a68a1bb2708",
-      "last_checked": "2026-02-27T07:40:21.782693",
+      "last_checked": "2026-03-03T07:44:39.833907",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"60bae0f7f985043169b26194c3d610fb\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskscore.json": {
       "hash": "21c06284c92f73a5985a27761896698c9ee596462f0a16db8b3599a3910dfe51",
-      "last_checked": "2026-02-27T07:40:21.942794",
+      "last_checked": "2026-03-03T07:44:39.984993",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"2255425c794dbe639ed2095fcbfb139e\"",
       "file_path": "documentation/ExposureNotification/enriskscore.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enrisklevel.json": {
       "hash": "07b699963a7651b97f33d6587a4a6a333b737d6b86ea81f3ce7cd8037f5624a6",
-      "last_checked": "2026-02-27T07:40:22.071372",
+      "last_checked": "2026-03-03T07:44:40.136325",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4c7d97d9731fc3862d39fced4e8587bb\"",
       "file_path": "documentation/ExposureNotification/enrisklevel.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enrisklevelvalue.json": {
       "hash": "a7296e89ba0f9e8eb80ccedefab4cff66a9a37fdc164d7a3aa8b21924aac62bc",
-      "last_checked": "2026-02-27T07:40:22.221238",
+      "last_checked": "2026-03-03T07:44:40.287086",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"008d33415b2dd6fc3e3f01aeab20dbdf\"",
       "file_path": "documentation/ExposureNotification/enrisklevelvalue.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/attenuationlevelvalues.json": {
       "hash": "e34f26b7fa2bc210197716f68be6fee4156754f0738ae79df5e2afb77adc664e",
-      "last_checked": "2026-02-27T07:40:22.392944",
+      "last_checked": "2026-03-03T07:44:40.442733",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3a391665252ca437f89e5a5711e5090d\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/attenuationlevelvalues.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/dayssincelastexposurelevelvalues.json": {
       "hash": "44a3e066b32c4a77f4e8bccb944a5ef3a81356c6d028089ea602527cf877bcc0",
-      "last_checked": "2026-02-27T07:40:22.527505",
+      "last_checked": "2026-03-03T07:44:40.609370",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"061cddbc9caa51dae17af64a4d9c6833\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/dayssincelastexposurelevelvalues.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/durationlevelvalues.json": {
       "hash": "84558973597cea341d43b0b012848eb8683b570b31e6d7abe3920ccd328e4dfe",
-      "last_checked": "2026-02-27T07:40:22.681770",
+      "last_checked": "2026-03-03T07:44:40.775312",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"ad37eb20d51d0e3bb5a99e346d48990e\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/durationlevelvalues.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/transmissionrisklevelvalues.json": {
       "hash": "de54e29ea6c7c81927cf04d85ac303c14bc06bcee6966b4ddc38c7bbc0b63407",
-      "last_checked": "2026-02-27T07:40:22.814501",
+      "last_checked": "2026-03-03T07:44:40.946203",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6e7816ed1db1323657a6de589fea2fc2\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/transmissionrisklevelvalues.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/metadata.json": {
       "hash": "aff38a276e45e1c33b250c8e6a32839c8e135fbbc04ddc3b9dd7e2e173142c4d",
-      "last_checked": "2026-02-27T07:40:22.959035",
+      "last_checked": "2026-03-03T07:44:41.104585",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"04504bfd172cc617de619285e6eb9a4d\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/metadata.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/minimumriskscore.json": {
       "hash": "c4792d173eede479c3eb19a163f07f94fc509a5a817e5a88a07c39d60b2ccb7d",
-      "last_checked": "2026-02-27T07:40:23.116218",
+      "last_checked": "2026-03-03T07:44:41.268330",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"899bfbe653bcaa25730c4dd3cfe09aeb\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/minimumriskscore.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/minimumriskscorefullrange.json": {
       "hash": "b6fa3db8de6558842300e001d0397f8c62a13c4db9320aa970e4d2c259ca1901",
-      "last_checked": "2026-02-27T07:40:23.389654",
+      "last_checked": "2026-03-03T07:44:41.427849",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"219d2a06457f68b0e2b25d2d75ba52fc\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/minimumriskscorefullrange.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/attenuationweight.json": {
       "hash": "db060ba5896273b923c794b2a724f29263ba57b3926a553b6f9cfc5dc0497179",
-      "last_checked": "2026-02-27T07:40:23.550838",
+      "last_checked": "2026-03-03T07:44:41.584847",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a6c4649ebef5a9b6cf5472f19eb1b274\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/attenuationweight.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/dayssincelastexposureweight.json": {
       "hash": "d0da7ce75d9049906d3fc04b35a2a0e161e84ea2f84b48a89de4c7272d2e9ae4",
-      "last_checked": "2026-02-27T07:40:23.680918",
+      "last_checked": "2026-03-03T07:44:41.758555",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"b2218963646c1b758b2da8e18f1e0871\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/dayssincelastexposureweight.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/durationweight.json": {
       "hash": "ece5ed5da01455a028318596bfedcbd66e2adad5bcb8bb10b1167c9d6a31a4dc",
-      "last_checked": "2026-02-27T07:40:23.857138",
+      "last_checked": "2026-03-03T07:44:41.907863",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c8f9dfd84fce5bd793d37a9f821d5651\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/durationweight.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureconfiguration/transmissionriskweight.json": {
       "hash": "cb17ba7f90f8b4b8f15af94f681e9eee164ba60d27cb11d48a8db65bcc90a8bd",
-      "last_checked": "2026-02-27T07:40:23.988758",
+      "last_checked": "2026-03-03T07:44:42.074090",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c74d69053ef3a0dc34ce40f0cfc85757\"",
       "file_path": "documentation/ExposureNotification/enexposureconfiguration/transmissionriskweight.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype/type1.json": {
       "hash": "24ba36bfec049670e5ed43ff1db331efd1c0fbf41bf77fe4e6ec76960bf76554",
-      "last_checked": "2026-02-27T07:40:24.129644",
+      "last_checked": "2026-03-03T07:44:42.236657",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"8ebd01e19fc5552ca9e25be041d79c84\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype/type1.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype/type2.json": {
       "hash": "8697d401b3428597f9209f3088d0ff34bf5365c4f08fc140331228f7098ed91c",
-      "last_checked": "2026-02-27T07:40:24.267587",
+      "last_checked": "2026-03-03T07:44:42.408189",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"32e348e807fefa454d8584f4236dd793\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype/type2.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype/type3.json": {
       "hash": "37134c619a4ac76c68f2aea40190507eb00729ea06ee73e1c4e9a6e6a799ed7a",
-      "last_checked": "2026-02-27T07:40:24.413794",
+      "last_checked": "2026-03-03T07:44:42.581396",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"3f184f5b608ec0e0b48f4895a7a93b5b\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype/type3.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype/type4.json": {
       "hash": "ded3034c68fa10cb0a597856b92eb6e79ee6df5a6c23080af9e206a0dff371e2",
-      "last_checked": "2026-02-27T07:40:24.560013",
+      "last_checked": "2026-03-03T07:44:42.744367",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"2ccea66db1ce4089ce7617feb768ed34\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype/type4.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype/typeunknown.json": {
       "hash": "6762888fa1ba19502740bd4b32e8335140ec962fb2165e51926be326e57429e0",
-      "last_checked": "2026-02-27T07:40:24.703873",
+      "last_checked": "2026-03-03T07:44:42.910131",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a3fa97e0112881e6837fb5b3718428eb\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype/typeunknown.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/envariantofconcerntype/init(rawvalue:).json": {
       "hash": "12c133ec469e7937e0e6721208cdefcb8115d7a90f5cd00570cc0f127e778e6c",
-      "last_checked": "2026-02-27T07:40:24.868667",
+      "last_checked": "2026-03-03T07:44:43.066678",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6ed9f95c2718160ec0bc77b71fd67be6\"",
       "file_path": "documentation/ExposureNotification/envariantofconcerntype/init-rawvalue.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enattenuationmax.json": {
       "hash": "85124e9c0242d5794bdc1e9016e2566dc1f9a657ee005da50184ffd79cb212b8",
-      "last_checked": "2026-02-27T07:40:25.007975",
+      "last_checked": "2026-03-03T07:44:43.229425",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e957fffd800829def4277e60f14fca19\"",
       "file_path": "documentation/ExposureNotification/enattenuationmax.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enattenuationmin.json": {
       "hash": "68f6d78fb5ef4ab7f7d76f3d7fa254249cca6077e79144c0d93e0c4cd6856995",
-      "last_checked": "2026-02-27T07:40:25.150796",
+      "last_checked": "2026-03-03T07:44:43.396955",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4573da5cb22e8456082d2a9b40db49f2\"",
       "file_path": "documentation/ExposureNotification/enattenuationmin.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enrisklevelmin.json": {
       "hash": "2eedc21d30d95f313ddf769a51f150ae7f2298ff508ee9038392055b896c95ff",
-      "last_checked": "2026-02-27T07:40:25.284596",
+      "last_checked": "2026-03-03T07:44:43.546975",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5140a6962abf2b0e42cc55ff69fdd913\"",
       "file_path": "documentation/ExposureNotification/enrisklevelmin.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enrisklevelmax.json": {
       "hash": "4289c8a78d5e7ec4f9e07c4c0fd9a20a37afd79d7429eabb5aaccbf7f60c9b3b",
-      "last_checked": "2026-02-27T07:40:25.433247",
+      "last_checked": "2026-03-03T07:44:43.713895",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"22b71f783802fe82f18843ae2b98c0c9\"",
       "file_path": "documentation/ExposureNotification/enrisklevelmax.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enrisklevelvaluemin.json": {
       "hash": "adc2209a89c8621d157d9ccaef243190a96f8910fcc46155a6c70d0f17448894",
-      "last_checked": "2026-02-27T07:40:25.564871",
+      "last_checked": "2026-03-03T07:44:43.873124",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"03d65fb2fc4399324a9affb215930511\"",
       "file_path": "documentation/ExposureNotification/enrisklevelvaluemin.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enrisklevelvaluemax.json": {
       "hash": "e2b20a90285564305a2c2d5a508697f61eb31eeed4ec925e1fb7d8bfdd2427c0",
-      "last_checked": "2026-02-27T07:40:25.732382",
+      "last_checked": "2026-03-03T07:44:44.029945",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"accd4a1245019cbc881a3b13e99dae49\"",
       "file_path": "documentation/ExposureNotification/enrisklevelvaluemax.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskscoremin.json": {
       "hash": "e8844478a2fd5e4d31a5f555fe7a31ea67069af9bdfad87714dec224be2f952f",
-      "last_checked": "2026-02-27T07:40:25.862414",
+      "last_checked": "2026-03-03T07:44:44.190660",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"35e4b017e3a2eef6b4de414a70e64505\"",
       "file_path": "documentation/ExposureNotification/enriskscoremin.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskscoremax.json": {
       "hash": "19e8fa83264483263effd39e6746d531d6586691898f37bda924abaebfcf7786",
-      "last_checked": "2026-02-27T07:40:26.004455",
+      "last_checked": "2026-03-03T07:44:44.369807",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"a2680650a055640872ddd5dc364ccdd8\"",
       "file_path": "documentation/ExposureNotification/enriskscoremax.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskweightmin.json": {
       "hash": "0df9089fa3ccb904ebb65aa1d2572790b52427730061f90d044005ebd7a00d0a",
-      "last_checked": "2026-02-27T07:40:26.145894",
+      "last_checked": "2026-03-03T07:44:44.546364",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"009a8f2df418e54b0c417a490f843207\"",
       "file_path": "documentation/ExposureNotification/enriskweightmin.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskweightmax.json": {
       "hash": "e69155d8adf088d5c59910c4bcb0288fc9b9f3733cb71873a8c372b834544a27",
-      "last_checked": "2026-02-27T07:40:26.286156",
+      "last_checked": "2026-03-03T07:44:44.737918",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7f025a4167494b45d524f38991959af5\"",
       "file_path": "documentation/ExposureNotification/enriskweightmax.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enriskweightdefault.json": {
       "hash": "43d43fb60f99cec7daac153c370190e50568c3f999cc3f3d9f036cf754e56c54",
-      "last_checked": "2026-02-27T07:40:26.421364",
+      "last_checked": "2026-03-03T07:44:44.927281",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"11d8e1860618237a5791b41617b75fa0\"",
       "file_path": "documentation/ExposureNotification/enriskweightdefault.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/encalibrationconfidence/high.json": {
       "hash": "cac828d5c3acad36671f8679ed644bf425bcd5a837b55eb82068afdcb8e16e12",
-      "last_checked": "2026-02-27T07:40:26.614512",
+      "last_checked": "2026-03-03T07:44:45.091198",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"4484324e4b8ba5c72e09fc72c33785be\"",
       "file_path": "documentation/ExposureNotification/encalibrationconfidence/high.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/encalibrationconfidence/medium.json": {
       "hash": "151b4d359ceb44c24d3ef7162ff36001ef9beb6a6911fd72be666f6a735ee2b8",
-      "last_checked": "2026-02-27T07:40:26.755851",
+      "last_checked": "2026-03-03T07:44:45.293581",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5e3dc84500731257eeea5a66d1d4bfa0\"",
       "file_path": "documentation/ExposureNotification/encalibrationconfidence/medium.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/encalibrationconfidence/low.json": {
       "hash": "3c831d2016e6f9a135760e951ae06f93ce6f0d25191589bc1c629b1efb7653d5",
-      "last_checked": "2026-02-27T07:40:26.900181",
+      "last_checked": "2026-03-03T07:44:45.469996",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"bb540094e347f9bc36229909d31d9ab7\"",
       "file_path": "documentation/ExposureNotification/encalibrationconfidence/low.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/encalibrationconfidence/lowest.json": {
       "hash": "3ed059ebf83fb3c71a093f1dc9187c6776af685d6a1438af779476a1051a15e2",
-      "last_checked": "2026-02-27T07:40:27.047530",
+      "last_checked": "2026-03-03T07:44:45.638073",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"29641290e40567db284e471b170fdb8a\"",
       "file_path": "documentation/ExposureNotification/encalibrationconfidence/lowest.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/encalibrationconfidence/init(rawvalue:).json": {
       "hash": "07e97b7be3afb388bf12ebdb9ac791ce255e08d8ff86b5fc974d758e34a930c7",
-      "last_checked": "2026-02-27T07:40:27.218057",
+      "last_checked": "2026-03-03T07:44:45.792708",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"68f69f1560b657c28d41ba460bf38048\"",
       "file_path": "documentation/ExposureNotification/encalibrationconfidence/init-rawvalue.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/confirmedclinicaldiagnosis.json": {
       "hash": "c68b0f8f0314d29d11f4ef4709b00feef43f68417b5151c827e73970338b46ad",
-      "last_checked": "2026-02-27T07:40:27.355476",
+      "last_checked": "2026-03-03T07:44:45.959550",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"838f9dda2120ddc63fd03721a4c00ea0\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/confirmedclinicaldiagnosis.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/confirmedtest.json": {
       "hash": "5785a257cd002e7120f963f6787710a73303862b32dd70c72b4a420e6058e005",
-      "last_checked": "2026-02-27T07:40:27.501290",
+      "last_checked": "2026-03-03T07:44:46.129241",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"259c1ca3411b235f7cb18f10ff530190\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/confirmedtest.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/recursive.json": {
       "hash": "9f9e4899814db2e0b7321d5eb9babe46d41e71587ae0fd570bb5bc5c35a87589",
-      "last_checked": "2026-02-27T07:40:27.634592",
+      "last_checked": "2026-03-03T07:44:46.284517",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e3936d6b671432b1b438ce64f3bf6920\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/recursive.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/revoked.json": {
       "hash": "8c617c80436e34e40ed6c7137bd477b499a8a5a17c13857b0dd23bffe2c5eb68",
-      "last_checked": "2026-02-27T07:40:27.788251",
+      "last_checked": "2026-03-03T07:44:46.445748",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"fce46491e4eb6f54b173e6844fb988bb\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/revoked.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/selfreported.json": {
       "hash": "690c6732ec12a2a4a53bccb52922185e4013f03ff6a329470baaf255553e0bc4",
-      "last_checked": "2026-02-27T07:40:27.935168",
+      "last_checked": "2026-03-03T07:44:46.617202",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"d7072246ba45940c1475b6f33dd90ad4\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/selfreported.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/unknown.json": {
       "hash": "4366b2d2e187d43488d8c9076496d039b9ee9d6ac4d4ed839ee6c12e68509d63",
-      "last_checked": "2026-02-27T07:40:28.090098",
+      "last_checked": "2026-03-03T07:44:46.779431",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"e06d4e4569637aa8e2840a7ab6f1881f\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/unknown.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/endiagnosisreporttype/init(rawvalue:).json": {
       "hash": "9087b2ef40d595de575becff3a5ebf3bafb6adf850207c50267b8e1b04674255",
-      "last_checked": "2026-02-27T07:40:28.254541",
+      "last_checked": "2026-03-03T07:44:46.944191",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"c3380456084059d3e2b0e3376f25fec8\"",
       "file_path": "documentation/ExposureNotification/endiagnosisreporttype/init-rawvalue.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/eninfectiousness/high.json": {
       "hash": "5351ab8bc0cc29943a0df0dee85041fde96841750a03ff9dd692800a122f4120",
-      "last_checked": "2026-02-27T07:40:28.401162",
+      "last_checked": "2026-03-03T07:44:47.094372",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"423d3f628c83fb8290e13adaff945324\"",
       "file_path": "documentation/ExposureNotification/eninfectiousness/high.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/eninfectiousness/none.json": {
       "hash": "052a298e2181c0cd7352f244bd40937048b7073c97497a742d4cc5611d2d43d6",
-      "last_checked": "2026-02-27T07:40:28.536116",
+      "last_checked": "2026-03-03T07:44:47.257454",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"2e9f7649f0978a24ec87e1e710c5266d\"",
       "file_path": "documentation/ExposureNotification/eninfectiousness/none.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/eninfectiousness/standard.json": {
       "hash": "4b144b4a6ab37d9d7557df6f083fcc6ac88f4d8bdccecbd3222f8a6301e93092",
-      "last_checked": "2026-02-27T07:40:28.683682",
+      "last_checked": "2026-03-03T07:44:47.425625",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"79fea4b7f464b3c7fb9311bf73061cdc\"",
       "file_path": "documentation/ExposureNotification/eninfectiousness/standard.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/eninfectiousness/init(rawvalue:).json": {
       "hash": "3771a031e8438550b98187b5a26b3912a5e7bf99654fb9ee335b49f8c1d8c249",
-      "last_checked": "2026-02-27T07:40:28.823058",
+      "last_checked": "2026-03-03T07:44:47.585688",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"47dff14e99a4348327b1b38b71aadac3\"",
       "file_path": "documentation/ExposureNotification/eninfectiousness/init-rawvalue.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/attenuationdurations.json": {
       "hash": "d811e67e652e92d41a0ca873cb46277405eb8bb82d127507a4184209c0b3b8c2",
-      "last_checked": "2026-02-27T07:40:29.007812",
+      "last_checked": "2026-03-03T07:44:47.752064",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6cb3e36e958cb2fdd8f5056c79576aa5\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/attenuationdurations.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/attenuationvalue.json": {
       "hash": "fccc9e22083c98e39b1a75c8f356397d6a7c0248c7e0199d649229e9843522a4",
-      "last_checked": "2026-02-27T07:40:29.153668",
+      "last_checked": "2026-03-03T07:44:47.914455",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"9112ca3ee9a544f3dbe2d580ebfd04ea\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/attenuationvalue.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/date.json": {
       "hash": "af2ffeec72f1c28776f27d85d2680ba9bd9327978efc537f72727aad28c4d9ac",
-      "last_checked": "2026-02-27T07:40:29.281055",
+      "last_checked": "2026-03-03T07:44:48.079831",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"5effe7f8a0e9e4fde54b2f356f2cb01e\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/date.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/duration.json": {
       "hash": "55ba795364c3ebd724db5dc66115743d85453177aa715ed78837f976516fff97",
-      "last_checked": "2026-02-27T07:40:29.443052",
+      "last_checked": "2026-03-03T07:44:48.259233",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"6a3523d8684cc40ed84edbe568289ce5\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/duration.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/totalriskscore.json": {
       "hash": "cd7a7b36998e7160cd308f6d07b71aa57af296ed43bb7f4aa312c974105fe9c0",
-      "last_checked": "2026-02-27T07:40:29.580743",
+      "last_checked": "2026-03-03T07:44:48.424372",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"013daca8ed06d8b01121045ddc39fdfb\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/totalriskscore.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/totalriskscorefullrange.json": {
       "hash": "42c36bbe7907c8bf463f26420764ac474bbbb13b094beb68a2fd41008d8bbbe8",
-      "last_checked": "2026-02-27T07:40:29.723138",
+      "last_checked": "2026-03-03T07:44:48.586995",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"60704db73c0d2bb1c7f7270909344951\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/totalriskscorefullrange.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/transmissionrisklevel.json": {
       "hash": "e6e012c3135962513b5e8aa9231df73952f79e288b4ce4a8d8bb37bd9070c6d3",
-      "last_checked": "2026-02-27T07:40:29.867878",
+      "last_checked": "2026-03-03T07:44:48.747186",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f6d22b91f9e34dd274c404c0293647ec\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/transmissionrisklevel.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enattenuation.json": {
       "hash": "81bcc3197062bb740e2fb502537ffbca1d3e4b704c303ec01bf9f17d671e3845",
-      "last_checked": "2026-02-27T07:40:29.999817",
+      "last_checked": "2026-03-03T07:44:48.934361",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"af85f4a0eff2ece5ec496ce41f288924\"",
       "file_path": "documentation/ExposureNotification/enattenuation.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/metadata.json": {
       "hash": "a30e8f980208f6bc63edec16d887108a8ea0ed27d7a6b900713c4de3b21e1068",
-      "last_checked": "2026-02-27T07:40:30.147035",
+      "last_checked": "2026-03-03T07:44:49.096674",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"0473ab89928268351b682e24198b0bfa\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/metadata.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/dayssinceonsetofsymptoms.json": {
       "hash": "4bd56ac760471b5aa11298392a231aa26df84990f4df09a17a90e03ad13e603b",
-      "last_checked": "2026-02-27T07:40:30.281287",
+      "last_checked": "2026-03-03T07:44:49.245724",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"f0d21bf253f70ab66c8b75567df20140\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/dayssinceonsetofsymptoms.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exposurenotification/enexposureinfo/diagnosisreporttype.json": {
       "hash": "ca74bf534e5e84d11bc4f47ea7a6a4f8f39caa6c35a7b58d114afa4d6fbbd20a",
-      "last_checked": "2026-02-27T07:40:30.422799",
+      "last_checked": "2026-03-03T07:44:49.401080",
       "status": "unchanged",
-      "session_id": "2026-02-27T07:39:55.984375",
+      "session_id": "2026-03-03T07:44:10.319124",
       "etag": "W/\"7b77cdafdea3dad4fd603a64b303f4b1\"",
       "file_path": "documentation/ExposureNotification/enexposureinfo/diagnosisreporttype.md"
     },

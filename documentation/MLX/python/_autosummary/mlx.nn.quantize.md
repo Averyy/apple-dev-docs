@@ -23,11 +23,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.quan
 
 # mlx.nn.quantize
 
-**quantize(*model: Module*, *group_size: int = None*, *bits: int = None*, ***, *mode: str = 'affine'*, *class_predicate: Callable[[str, Module], bool | dict] | None = None*)**
+**quantize(*model: Module*, *group_size: int = None*, *bits: int = None*, ***, *mode: str = 'affine'*, *quantize_input: bool = False*, *class_predicate: Callable[[str, Module], bool | dict] | None = None*)**
 : Quantize the sub-modules of a module according to a predicate.
-By default all layers that define a `to_quantized(group_size, bits)`
-method will be quantized. Both [Linear](../nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear) and [Embedding](../nn/_autosummary/mlx.nn.Embedding.html#mlx.nn.Embedding) layers
-will be quantized. Note also, the module is updated in-place.
+By default all layers that define a `to_quantized()` method will be
+quantized. Both [Linear](../nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear) and [Embedding](../nn/_autosummary/mlx.nn.Embedding.html#mlx.nn.Embedding) layers will be
+quantized. The module is updated in-place.
+
+Note
+`quantize_input=True` is only supported for `"nvfp4"` and `"mxfp8"`
+modes and [Linear](../nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear) layers.
 
 Parameters:
 
@@ -38,11 +42,20 @@ Parameters:
 [mlx.core.quantize()](mlx.core.quantize.html#mlx.core.quantize)). Default: `None`.
 **mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The quantization method to use (see
 [mlx.core.quantize()](mlx.core.quantize.html#mlx.core.quantize)). Default: `"affine"`.
+**quantize_input** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Whether to quantize activations. Default: `False`.
 **class_predicate** (*Optional**[**Callable**]*) – A callable which receives the
 [Module](../nn/module.html#mlx.nn.Module) path and [Module](../nn/module.html#mlx.nn.Module) itself and returns `True` or a
-dict of params for to_quantized if it should be quantized and
+dict of params for `to_quantized` if it should be quantized and
 `False` otherwise. If `None`, then all layers that define a
-`to_quantized(group_size, bits)` method are quantized.
-Default: `None`.
+`to_quantized()` method are quantized. Default: `None`.
+
+Example
+Weight only quantization for all layers that define a `to_quantized()` method:
+>>> import mlx.nn as nn
+>>> nn.quantize(model, group_size=64, bits=4, mode="affine")
+
+Weight and input quantization for all linear layers:
+>>> predicate = lambda p, m: isinstance(m, nn.Linear)
+>>> nn.quantize(model, mode="nvfp4", quantize_input=True, class_predicate=predicate)
 
 ** Contents

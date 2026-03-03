@@ -6,9 +6,11 @@ Manage your budgets.
 
 #### Overview
 
-Budget Orders allow [`Apple Ads Advanced`](https://developer.apple.comhttps://ads.apple.com) customers with invoiced billing to cap total spend across campaigns through a campaign group.
+Budget Orders are available to Apple Ads Advanced customers that are on [`monthly invoicing`](https://developer.apple.comhttps://ads.apple.com/help/billing/0031-monthly-invoicing). Budget Orders work in addition to your [`daily budget`](https://developer.apple.comhttps://ads.apple.com/app-store/help/bids-and-budget/0016-manage-budgets) to help you control costs. With a Budget Order, you can cap your total spend across campaigns in a campaign group set up through [`Apple Ads Advanced`](https://developer.apple.comhttps://ads.apple.com/).
 
-See [`Apple Ads Advanced `](https://developer.apple.comhttps://ads.apple.com/help/billing/0031-monthly-invoicing) for billing details.
+In the API, Line of Credit (`LOC`) invoicing details are in [`LOCInvoiceDetails`](locinvoicedetails.md). If you don’t have a billing model set up, campaigns will default to Pay as You Go (`PAYG`) and Budget Orders are not available.
+
+To confirm your payment model, call [`Get User ACL`](get-user-acl.md) and check the [`PaymentModel`](paymentmodel.md) field in the [`UserAcl`](useracl.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
 
 ## Topics
 
@@ -35,7 +37,7 @@ See [`Apple Ads Advanced `](https://developer.apple.comhttps://ads.apple.com/hel
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for  `LOC` invoicing details.
+  The response to a request to fetch details for `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

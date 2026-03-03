@@ -23,7 +23,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.export_function
 
-**export_function(*arg0: object*, *fun: Callable*, **args*, *shapeless: bool = False*, ***kwargs*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**export_function(*file_or_callback: str | Callable*, *fun: Callable*, **args*, *shapeless: bool = False*, ***kwargs*) → [None](https://docs.python.org/3/library/constants.html#None)**
 : Export an MLX function.
 Example input arrays must be provided to export a function. The example
 inputs can be variable `*args` and `**kwargs` or a tuple of arrays
@@ -36,8 +36,8 @@ versions of MLX may not be compatible with future versions.
 
 Parameters:
 
-**file** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or **Callable*) – Either a file path to export the function
-to or a callback.
+**file_or_callback** ([str](https://docs.python.org/3/library/stdtypes.html#str)* or **Callable*) – Either a file path to export
+the function to or a callback.
 **fun** (*Callable*) – A function which takes as input zero or more
 [array](mlx.core.array.html#mlx.core.array) and returns one or more [array](mlx.core.array.html#mlx.core.array).
 ***args** ([array](mlx.core.array.html#mlx.core.array)) – Example array inputs to the function.

@@ -33,7 +33,7 @@ object BudgetOrderInfoListResponse
 - [object BudgetOrderInfoResponse](budgetorderinforesponse.md)
   A container for the budget order response body.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for  `LOC` invoicing details.
+  The response to a request to fetch details for `LOC` invoicing details.
 - [object Money](money.md)
   The response to requests for budget amounts in campaigns.
 

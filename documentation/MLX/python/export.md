@@ -21,7 +21,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/export.html
 
 # Export Functions
 
-| export_function(arg0, fun, *args[, shapeless]) | Export an MLX function. |
+| export_function(file_or_callback, fun, *args) | Export an MLX function. |
 | --- | --- |
 | import_function(file) | Import a function from a file. |
 | exporter(file, fun, *[, shapeless]) | Make a callable object to export multiple traces of a function to a file. |

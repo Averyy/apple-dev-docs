@@ -3,7 +3,7 @@
 **Framework**: Apple Ads  
 **Kind**: dictionary
 
-The response to a request to fetch details for  `LOC` invoicing details.
+The response to a request to fetch details for `LOC` invoicing details.
 
 **Availability**:
 - Search Ads 2.0+
@@ -13,10 +13,6 @@ The response to a request to fetch details for  `LOC` invoicing details.
 ```swift
 object LOCInvoiceDetails
 ```
-
-##### Discussion
-
-To confirm your payment model, call [`Get User ACL`](get-user-acl.md) and check the [`PaymentModel`](paymentmodel.md) field in the [`UserAcl`](useracl.md) response object. If you don’t have a payment model set up, you can still create campaigns, but you need to select a payment model before a campaign is eligible to run.
 
 ## Properties
 

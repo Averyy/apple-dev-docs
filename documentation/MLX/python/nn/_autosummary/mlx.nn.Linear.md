@@ -42,7 +42,7 @@ not use a bias. Default is `True`.
 
 Methods
 
-`to_quantized`([group_size, bits, mode])
-Return a [QuantizedLinear](mlx.nn.QuantizedLinear.html#mlx.nn.QuantizedLinear) layer that approximates this layer.
+`to_quantized`([group_size, bits, mode, ...])
+Return a quantized approximation of this layer.
 
 ** Contents

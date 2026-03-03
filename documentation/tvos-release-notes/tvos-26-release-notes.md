@@ -294,7 +294,7 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ## See Also
 
-- [tvOS 26.4 Beta 2 Release Notes](tvos-26_4-release-notes.md)
+- [tvOS 26.4 Beta 3 Release Notes](tvos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [tvOS 26.3 Release Notes](tvos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

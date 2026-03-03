@@ -505,6 +505,15 @@ An output value is true if any of the corresponding inputs are true.
 **array min(const array &a, int axis, bool keepdims = false, StreamOrDevice s = {})**
 : The minimum of the elements of an array along the given axis.
 
+**array hanning(int M, StreamOrDevice s = {})**
+: Returns the Hanning window of size M.
+
+**array hamming(int M, StreamOrDevice s = {})**
+: Returns the Hamming window of size M.
+
+**array blackman(int M, StreamOrDevice s = {})**
+: Returns the Blackmann window of size M.
+
 **array argmin(const array &a, bool keepdims, StreamOrDevice s = {})**
 : Returns the index of the minimum value in the array.
 
@@ -962,13 +971,13 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 **array quantized_matmul(array x, array w, array scales, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, bool transpose = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", StreamOrDevice s = {})**
 : Quantized matmul multiplies x with a quantized matrix w.
 
-**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> quantize(const array &w, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", StreamOrDevice s = {})**
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> quantize(const array &w, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : Quantize a matrix along its last axis.
 
-**array dequantize(const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
-: Dequantize a matrix produced by [quantize()](#group__ops_1gaf6a56ec149f9c8bd694c9bf9c9659660)
+**array dequantize(const array &w, const array &scales, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &biases = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "affine", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> &global_scale = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
+: Dequantize a matrix produced by [quantize()](#group__ops_1gaf70cd9a027e81e11e7f4fc91271e580c)
 
-**array qqmm(array x, array w, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> w_scales = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "nvfp4", StreamOrDevice s = {})**
+**array qqmm(array x, array w, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> w_scales = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> group_size = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<int> bits = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &mode = "nvfp4", const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> global_scale_x = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<array> global_scale_w = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : 
 
 **array from_fp8(array x, Dtype dtype, StreamOrDevice s = {})**

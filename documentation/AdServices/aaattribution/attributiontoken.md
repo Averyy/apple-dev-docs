@@ -40,7 +40,7 @@ For details about error codes, see [`AAAttributionError`](aaattributionerror.md)
 
 ##### Response Codes
 
-|  |  |
+| **Response** | **Description** |
 | --- | --- |
 | 200 | Success. If the API finds a matching attribution record, the payload returns `attribution=true`. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)If the API doesn’t find a matching attribution record, the payload returns `attribution=false`. In this case, the `200` `OK` response is acknowledgment of the receipt of the data request. |
 | 400 | The token is invalid. |
@@ -53,7 +53,7 @@ The API returns two types of attribution records: a standard response and a deta
 
 In iOS 14 and later, the Allow Apps to Request to Track (AAtRtT) device-level setting determines the response that the attribution server returns, as well as the details that are available from the attribution payload. The AAtRtT setting allows users to opt in or out of allowing apps to request user consent to access app-related data for both attribution and tracking the user or the device. The following table shows the combination of tracking interactions and expected attribution payload response:
 
-|  |  |  |
+| **Allow Apps to Request to Track setting (iOS 14 and later)** | **Per-app tracking consent status** | **Attribution payload response** |
 | --- | --- | --- |
 | On | Unknown ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)[`ATTrackingManager.AuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/AuthorizationStatus/notDetermined) | Standard |
 | On | Denied or restricted ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)[`ATTrackingManager.AuthorizationStatus.denied`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/AuthorizationStatus/denied) / ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)[`ATTrackingManager.AuthorizationStatus.restricted`](https://developer.apple.com/documentation/AppTrackingTransparency/ATTrackingManager/AuthorizationStatus/restricted) | Standard |
@@ -230,10 +230,10 @@ A standard payload for pre-order attribution on view-throughs resembles the foll
 
 ##### Attribution Payload Descriptions
 
-|  |  |  |
+| **Field** | **Data type** | **Description** |
 | --- | --- | --- |
 | `adGroupId` | long | The identifier for the ad group. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad Group-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Ad-Group-Level-Reports) to correlate your attribution response by `adGroupId` and its corresponding campaign in the Apple Ads Campaign Management API. |
-| `adId` | long | The identifier representing the assignment relationship between an `ad` object and an ad group. This applies to devices running iOS 15.2 and later. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Ad-Level-Reports) to correlate your attribution response by `adId` in the Apple Ads Campaign Management API. |
+| `adId` | long | The identifier representing the assignment relationship between an `ad` object and an ad group. This ID applies to devices running iOS 15.2 and later. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Ad-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Ad-Level-Reports) to correlate your attribution response by `adId` in the Apple Ads Campaign Management API. |
 | `attribution` | boolean | The attribution value. A value of `true` returns if a user clicks an Apple Ads impression up to 30 days before your app download or views it within 24 hours. If the API can’t find a matching attribution record, the attribution value is `false`. See `claimType` for more details. |
 | `campaignId` | long | The unique identifier for the campaign. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Use [`Get Campaign-Level Reports`](https://developer.apple.com/documentation/apple_ads/Get-Campaign-Level-Reports) in the Apple Ads Campaign Management API to correlate your attribution response by `campaignId`. |
 | `claimType` | string | Returned in both standard and detailed payloads: ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)For view-through attribution, `claimType` will have a value of `Impression` to indicate users who viewed an ad in a corresponding Apple Ads campaign but didn’t tap on it, within 24 hours of an ad view. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png) Note: for view-through attribution, campaigns with age and gender targeting criteria return a value of `false`. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)For tap-through attribution, `claimType` will have a value of `Click`, specifying that the user tapped on an ad. ![None](https://docs-assets.developer.apple.com/published/e5f51b2395970bdf7acf42b6603b53c9/spacer.png)Note: the tap-through attribution window is 30 days and tap-through attribution is prioritized over view-through attribution. |
@@ -247,10 +247,10 @@ A standard payload for pre-order attribution on view-throughs resembles the foll
 
 ###### Supplyplacement Descriptions
 
-|  |  |
+| **Value** | **Description** |
 | --- | --- |
 | `APPSTORE_PRODUCT_PAGES` | Product page ads on the App Store allow you to reach users browsing app pages, appearing at the top of the “You Might Also Like” list when users scroll to the bottom. |
-| `APPSTORE_SEARCH_RESULTS` | Search results ads let you reach users when they search for something specific, with an ad at the top of relevant search results. |
+| `APPSTORE_SEARCH_RESULTS` | Search results ads let you reach users when they search for something specific, with an ad in relevant search results. |
 | `APPSTORE_SEARCH_TAB` | Search tab ads let you reach users before they search for something specific, with an ad that appears prominently at the top of the suggested apps list on the Search tab. |
 | `APPSTORE_TODAY_TAB` | Today tab ads let you reach people on the front page of the App Store, where users start their visit. |
 

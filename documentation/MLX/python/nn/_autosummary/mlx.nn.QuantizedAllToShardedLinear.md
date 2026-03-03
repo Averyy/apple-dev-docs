@@ -23,7 +23,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.Q
 
 # mlx.nn.QuantizedAllToShardedLinear
 
-**class QuantizedAllToShardedLinear(*input_dims: int*, *output_dims: int*, *bias: bool = True*, *group_size: int = 64*, *bits: int = 4*, *group: Group | None = None*)**
+**class QuantizedAllToShardedLinear(*input_dims: int*, *output_dims: int*, *bias: bool = True*, *group_size: int = 64*, *bits: int = 4*, *mode: str = 'affine'*, *group: Group | None = None*)**
 : Each member of the group applies part of the affine transformation with
 a quantized matrix such that the result is sharded across the group.
 It is the quantized equivalent of [mlx.nn.AllToShardedLinear](mlx.nn.AllToShardedLinear.html#mlx.nn.AllToShardedLinear).
@@ -40,6 +40,8 @@ a bias. Default: `True`.
 weight. See [quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize). Default: `64`.
 **bits** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The bit width to use for the quantized weight.
 See [quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize). Default: `4`.
+**mode** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The quantization method to use (see
+[quantize()](../../_autosummary/mlx.core.quantize.html#mlx.core.quantize)). Default: `"affine"`.
 **group** (*mx.distributed.Group**, **optional*) – The sharding will happen across
 this group. If not set then the global group is used. Default is
 `None`.

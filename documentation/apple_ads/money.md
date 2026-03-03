@@ -40,7 +40,7 @@ object Money
 - [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
   The response details to budget order requests.
 - [object LOCInvoiceDetails](locinvoicedetails.md)
-  The response to a request to fetch details for  `LOC` invoicing details.
+  The response to a request to fetch details for `LOC` invoicing details.
 
 
 ---

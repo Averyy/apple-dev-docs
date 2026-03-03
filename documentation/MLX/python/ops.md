@@ -143,7 +143,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/ops.html
 | power(a, b, /, *[, stream]) | Element-wise power operation. |
 | prod(a, /[, axis, keepdims, stream]) | An product reduction over the given axes. |
 | put_along_axis(a, /, indices, values[, ...]) | Put values along an axis at the specified indices. |
-| quantize(w, /[, group_size, bits, mode, stream]) | Quantize the arrayw. |
+| quantize(w, /[, group_size, bits, mode, ...]) | Quantize the arrayw. |
 | quantized_matmul(x, w, /, scales[, biases, ...]) | Perform the matrix multiplication with the quantized matrixw. |
 | radians(a, /, *[, stream]) | Convert angles from degrees to radians. |
 | real(a, /, *[, stream]) | Returns the real part of a complex array. |

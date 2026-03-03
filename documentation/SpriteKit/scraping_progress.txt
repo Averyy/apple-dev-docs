@@ -1,4 +1,4 @@
 Completed scraping SpriteKit!
-Total pages scraped: 2
-Pages skipped (unchanged): 1037
+Total pages scraped: 0
+Pages skipped (unchanged): 1039
 Pages failed: 0
