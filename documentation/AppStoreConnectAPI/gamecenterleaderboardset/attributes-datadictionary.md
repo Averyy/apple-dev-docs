@@ -12,6 +12,11 @@
 object GameCenterLeaderboardSet.Attributes
 ```
 
+## Properties
+
+- `referenceName` (string)
+- `vendorIdentifier` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardSet.Relationships](gamecenterleaderboardset/relationships-data.dictionary.md)

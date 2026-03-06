@@ -20,6 +20,12 @@ object InAppPurchaseV2.Relationships.OfferCodes
 - [object InAppPurchaseV2.Relationships.OfferCodes.Data](inapppurchasev2/relationships-data.dictionary/offercodes-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([InAppPurchaseV2.Relationships.OfferCodes.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

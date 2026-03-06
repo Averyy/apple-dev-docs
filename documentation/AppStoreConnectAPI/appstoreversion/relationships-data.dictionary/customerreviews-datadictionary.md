@@ -12,6 +12,10 @@
 object AppStoreVersion.Relationships.CustomerReviews
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

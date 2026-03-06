@@ -12,6 +12,64 @@ Update the promotional text for an app custom product page localization.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c
+{
+    "data": {
+        "id": "736966e2-178b-4e3f-bfb9-474eb19fbd8c",
+        "type": "appCustomProductPageLocalizations",
+        "attributes": {
+            "promotionalText": "Ogenblik!"
+        }
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "appCustomProductPageLocalizations",
+    "id": "736966e2-178b-4e3f-bfb9-474eb19fbd8c",
+    "attributes": {
+      "locale": "nl-NL",
+      "promotionalText": "Ogenblik!"
+    },
+    "relationships": {
+      "appScreenshotSets": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c/relationships/appScreenshotSets",
+          "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c/appScreenshotSets"
+        }
+      },
+      "appPreviewSets": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c/relationships/appPreviewSets",
+          "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c/appPreviewSets"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List custom product pages localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+
 ## See Also
 
 - [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)

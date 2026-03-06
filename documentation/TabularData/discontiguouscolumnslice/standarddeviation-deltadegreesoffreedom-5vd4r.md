@@ -26,7 +26,7 @@ The standard deviation; otherwise, `nil` if there are fewer than `deltaDegreesOf
 
 ## Parameters
 
-- `deltaDegreesOfFreedom`: A nonnegative integer.   The method calculates the standard deviation’s divisor by subtracting this parameter from the number of   non-  elements (  where   is the number of non-  elements).
+- `deltaDegreesOfFreedom`: A nonnegative integer. The method calculates the standard deviation’s divisor by subtracting this parameter from the number of non-`nil` elements (`n - deltaDegreesOfFreedom` where `n` is the number of non-`nil` elements).
 
 ## See Also
 

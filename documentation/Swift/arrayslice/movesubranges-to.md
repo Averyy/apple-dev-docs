@@ -37,7 +37,7 @@ let rangeOfUppercase = letters.moveSubranges(uppercaseRanges, to: 10)
 // rangeOfUppercase == 5..<14
 ```
 
-> **Note**: O( log ) where  is the length of the collection.
+> **Note**: O(*n* log *n*) where *n* is the length of the collection.
 
 ## Parameters
 

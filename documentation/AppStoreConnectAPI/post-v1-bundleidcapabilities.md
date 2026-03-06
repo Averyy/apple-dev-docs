@@ -8,6 +8,10 @@ Enable a capability for a bundle ID.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/bundleIdCapabilities`
+
 ## See Also
 
 - [Disable a Capability](delete-v1-bundleidcapabilities-_id_.md)

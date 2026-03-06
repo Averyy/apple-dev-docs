@@ -22,6 +22,14 @@ object StationGenres
 - [object StationGenres.Relationships](stationgenres/relationships-data.dictionary.md)
   The relationships for a station genre resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the station genre.
+- `type` (string) *(required)*: This value must always be `station-genres`.
+- `href` (string) *(required)*: The relative location for the station genre resource.
+- `attributes` (StationGenres.Attributes): The attributes for the station genre.
+- `relationships` (StationGenres.Relationships): The relationships for the station genre.
+
 ## See Also
 
 - [object Stations](stations.md)

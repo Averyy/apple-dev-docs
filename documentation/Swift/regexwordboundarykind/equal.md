@@ -1,0 +1,30 @@
+# ==(_:_:)
+
+**Framework**: Swift  
+**Kind**: op
+
+Returns a Boolean value indicating whether two values are equal.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+static func == (a: RegexWordBoundaryKind, b: RegexWordBoundaryKind) -> Bool
+```
+
+#### Discussion
+
+Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/regexwordboundarykind/==(_:_:))*

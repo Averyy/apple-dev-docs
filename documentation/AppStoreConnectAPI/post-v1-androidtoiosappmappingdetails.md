@@ -12,6 +12,10 @@ Create a detail that maps an Android app to an iOS app.
 
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/androidToIosAppMappingDetails`
+
 ## See Also
 
 - [Read Android to iOS app mapping details](get-v1-androidtoiosappmappingdetails-_id_.md)

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-Construct a MutableRawSpan over the memory represented by this span
+Construct a mutable raw span over the memory represented by this span.
 
 **Availability**:
 - iOS 12.2+

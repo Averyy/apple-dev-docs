@@ -40,7 +40,7 @@ print(nonOverflowingSquare)
 
 ## Parameters
 
-- `transform`: A closure that takes the unwrapped value   of the instance.
+- `transform`: A closure that takes the unwrapped value of the instance.
 
 ## See Also
 

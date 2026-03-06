@@ -35,9 +35,9 @@ A task group is the primary way to create structured concurrency tasks in Swift.
 
 Structured concurrency tasks are often called “child tasks” because of their relationship with their parent task. A child task inherits the parent’s priority, task-local values, and is structured in the sense that its lifetime never exceeds the lifetime of the parent task.
 
-A task group  waits for all child tasks to complete before it’s destroyed. Specifically, `with...TaskGroup` APIs don’t return until all the child tasks created in the group’s scope have completed running.
+A task group *always* waits for all child tasks to complete before it’s destroyed. Specifically, `with...TaskGroup` APIs don’t return until all the child tasks created in the group’s scope have completed running.
 
-Structured concurrency APIs (including task groups and `async let`),  waits for the completion of tasks contained within their scope before returning. Specifically, this means that even if you await a single task result and return it from a `withTaskGroup` function body, the group automatically waits for all the remaining tasks before returning:
+Structured concurrency APIs (including task groups and `async let`), *always* waits for the completion of tasks contained within their scope before returning. Specifically, this means that even if you await a single task result and return it from a `withTaskGroup` function body, the group automatically waits for all the remaining tasks before returning:
 
 ```swift
 func takeFirst(actions: [@Sendable () -> Int]) async -> Int? {
@@ -51,7 +51,7 @@ func takeFirst(actions: [@Sendable () -> Int]) async -> Int? {
 }
 ```
 
-In the above example, even though the code returns the first collected integer from all actions added to the task group, the task group , automatically, waits for the completion of all the resulting tasks.
+In the above example, even though the code returns the first collected integer from all actions added to the task group, the task group *always*, automatically, waits for the completion of all the resulting tasks.
 
 You can use `group.cancelAll()` to signal cancellation to the remaining in-progress tasks, however this doesn’t interrupt their execution automatically. Rather, the child tasks need to cooperatively react to the cancellation, and return early if that’s possible.
 

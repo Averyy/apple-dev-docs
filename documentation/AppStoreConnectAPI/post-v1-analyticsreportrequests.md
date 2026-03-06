@@ -18,6 +18,61 @@ When making a request with this endpoint, the `accessType` `ONGOING` is most com
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/analyticsReportRequests 
+{
+  "data": {
+    "type": "analyticsReportRequests",
+    "attributes": {
+          "accessType": "ONGOING"
+    },
+    "relationships": {
+      "app": {
+        "data": {
+          "type": "apps",
+          "id": "1476097583"
+        }
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "analyticsReportRequests",
+    "id" : "d48c69c5-9bcb-4592-abbd-08a9411b0231",
+    "attributes" : {
+      "accessType" : "ONGOING",
+      "stoppedDueToInactivity" : false
+    },
+    "relationships" : {
+      "reports" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231/relationships/reports",
+          "related" : "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231/reports"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/analyticsReportRequests`
+
 ## See Also
 
 - [Read report requests](get-v1-apps-_id_-analyticsreportrequests.md)

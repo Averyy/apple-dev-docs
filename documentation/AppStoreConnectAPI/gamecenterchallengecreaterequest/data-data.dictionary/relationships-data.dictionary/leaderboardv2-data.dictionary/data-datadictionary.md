@@ -17,6 +17,11 @@ object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

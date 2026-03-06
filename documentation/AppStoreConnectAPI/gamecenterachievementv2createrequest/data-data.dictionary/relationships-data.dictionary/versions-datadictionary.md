@@ -23,6 +23,10 @@ object GameCenterAchievementV2CreateRequest.Data.Relationships.Versions
 ### Dictionaries - generated
 - [object GameCenterAchievementV2CreateRequest.Data.Relationships.Versions.Data](gamecenterachievementv2createrequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterAchievementV2CreateRequest.Data.Relationships.Versions.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2CreateRequest.Data.Relationships.GameCenterDetail](gamecenterachievementv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

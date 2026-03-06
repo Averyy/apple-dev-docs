@@ -13,7 +13,7 @@ init(extendedGraphemeClusterLiteral value: String)
 
 ## Parameters
 
-- `value`: An extended grapheme cluster to use for creating a new   version struct.
+- `value`: An extended grapheme cluster to use for creating a new version struct.
 
 
 ---

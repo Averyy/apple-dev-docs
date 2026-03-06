@@ -12,6 +12,10 @@
 object AppEventScreenshotUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `uploaded` (boolean)
+
 
 ---
 

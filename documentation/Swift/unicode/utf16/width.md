@@ -26,7 +26,7 @@ The width of `x` when encoded in UTF-16, either `1` or `2`.
 
 #### Discussion
 
-Because a Unicode scalar value can require up to 21 bits to store its value, some Unicode scalars are represented in UTF-16 by a pair of 16-bit code units. The first and second code units of the pair, designated  and  surrogates, make up a .
+Because a Unicode scalar value can require up to 21 bits to store its value, some Unicode scalars are represented in UTF-16 by a pair of 16-bit code units. The first and second code units of the pair, designated *leading* and *trailing* surrogates, make up a *surrogate pair*.
 
 ```swift
 let anA: Unicode.Scalar = "A"

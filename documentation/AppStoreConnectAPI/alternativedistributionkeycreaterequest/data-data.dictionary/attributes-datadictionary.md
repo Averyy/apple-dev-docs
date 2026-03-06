@@ -14,6 +14,10 @@ The attributes you set that describe the public key used to create a new resourc
 object AlternativeDistributionKeyCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `publicKey` (string) *(required)*: To learn more about creating this `publicKey` see, [`Creating keys and establishing alternative marketplace connections`](creating-keys-and-establishing-alternative-marketplace-connections.md) or [`Creating and configuring keys for web distribution`](creating-and-configuring-keys-for-web-distribution.md).
+
 ## See Also
 
 - [object AlternativeDistributionKeyCreateRequest.Data.Relationships](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary.md)

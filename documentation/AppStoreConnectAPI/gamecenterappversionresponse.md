@@ -14,6 +14,12 @@ A response that contains a single app version resource.
 object GameCenterAppVersionResponse
 ```
 
+## Properties
+
+- `data` (GameCenterAppVersion) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterAppVersion](gamecenterappversion.md)

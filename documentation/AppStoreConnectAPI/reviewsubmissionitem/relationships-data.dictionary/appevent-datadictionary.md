@@ -17,6 +17,10 @@ object ReviewSubmissionItem.Relationships.AppEvent
 ### Objects
 - [object ReviewSubmissionItem.Relationships.AppEvent.Data](reviewsubmissionitem/relationships-data.dictionary/appevent-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItem.Relationships.AppEvent.Data)
+
 ## See Also
 
 - [object ReviewSubmissionItem.Relationships.AppCustomProductPageVersion](reviewsubmissionitem/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)

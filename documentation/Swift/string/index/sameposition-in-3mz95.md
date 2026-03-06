@@ -39,7 +39,7 @@ if let i = cafe.firstIndex(of: "é") {
 
 ## Parameters
 
-- `utf8`: The view to use for the index conversion. This index   must be a valid index of at least one view of the string shared by   .
+- `utf8`: The view to use for the index conversion. This index must be a valid index of at least one view of the string shared by `utf8`.
 
 
 ---

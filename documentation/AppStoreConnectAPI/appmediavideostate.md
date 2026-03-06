@@ -18,6 +18,12 @@ object AppMediaVideoState
 
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
+## Properties
+
+- `errors` ([AppMediaStateError])
+- `state` (string)
+- `warnings` ([AppMediaStateError])
+
 ## See Also
 
 - [object AppEventVideoClip](appeventvideoclip.md)

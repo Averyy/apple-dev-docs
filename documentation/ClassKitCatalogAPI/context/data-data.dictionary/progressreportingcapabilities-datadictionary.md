@@ -18,6 +18,11 @@ object Context.Data.ProgressReportingCapabilities
 
 When creating a context, if you don’t specify a progress reporting capability with `kind` set to `duration`, the system adds one automatically, using an empty string for the `details` field.
 
+## Properties
+
+- `details` (string): A description of the capability presented to teachers. See [`details`](https://developer.apple.com/documentation/ClassKit/CLSProgressReportingCapability/details).
+- `kind` (string): The kind of progress reporting capability. See [`kind`](https://developer.apple.com/documentation/ClassKit/CLSProgressReportingCapability/kind-swift.property).
+
 
 ---
 

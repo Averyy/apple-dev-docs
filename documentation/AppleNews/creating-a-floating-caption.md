@@ -10,6 +10,8 @@ Apple News Format makes it easy to create side-by-side content, such as a captio
 
 ![Screenshot of an Apple News article with a floating caption on iPad.](https://docs-assets.developer.apple.com/published/de1298d6802c3d0b960eb8d673c64d5e/media-3624920%402x.png)
 
+**On this page, you’ll learn how to create a caption that appears in the right margin of the article on wide displays.**
+
 ##### Create a Componentlayout Object for the Floating Caption
 
 Before you can position the caption in the right margin, you must define a component layout object that specifies that the caption will begin in column 7 of the article layout and span three columns.

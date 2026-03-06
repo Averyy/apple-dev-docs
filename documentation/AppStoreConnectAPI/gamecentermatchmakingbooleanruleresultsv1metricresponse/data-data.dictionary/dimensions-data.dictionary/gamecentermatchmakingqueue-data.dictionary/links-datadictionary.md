@@ -14,6 +14,11 @@ The link representations of the queue results.
 object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links
 ```
 
+## Properties
+
+- `groupBy` (uri-reference): A string URI representation of the data that Game Center organizes by group.
+- `related` (uri-reference): A string URI representation of the related data.
+
 
 ---
 

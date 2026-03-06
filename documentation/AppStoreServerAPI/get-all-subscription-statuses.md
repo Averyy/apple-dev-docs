@@ -23,6 +23,14 @@ Specify multiple values for the `status` query parameter to get a response that 
 GET https://api.storekit.itunes.apple.com/inApps/v1/subscriptions/{transactionId}?status=1&status=4
 ```
 
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/subscriptions/{transactionId}`
+
+## Parameters
+
+- `status` ([status]): An optional filter that indicates the [`status`](get-all-subscription-statuses/status.md) of subscriptions to include in the response. Your query may specify more than one `status` query parameter.
+
 ## See Also
 
 - [object StatusResponse](statusresponse.md)

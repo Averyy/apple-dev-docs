@@ -8,6 +8,14 @@ Remove an attachment before you send your app to App Review.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreReviewAttachments/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Store Review Attachment](post-v1-appstorereviewattachments.md)

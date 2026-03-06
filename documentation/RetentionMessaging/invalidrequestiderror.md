@@ -18,6 +18,11 @@ object InvalidRequestIdError
 
 The [`Get Performance Test Results`](get-performance-test-results.md) endpoint returns this error if the system can’t find [`requestId`](requestid.md) or it’s otherwise invalid.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

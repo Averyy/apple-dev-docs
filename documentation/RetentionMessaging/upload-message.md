@@ -46,6 +46,14 @@ Immediately after you upload an message, its [`messageState`](messagestate.md) i
 
 In the sandbox testing environment, the system automatically sets message and image states to `APPROVED`.
 
+## Endpoint
+
+`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/message/{messageIdentifier}`
+
+## Parameters
+
+- `messageIdentifier` (messageIdentifier) *(required)*: A UUID you provide to uniquely identify the message you upload.
+
 ## Request Body
 
 The message text to upload.

@@ -16,6 +16,12 @@ string Severity
 
 #### Possible Values
 
+- **extreme**: Extraordinary threat.
+- **severe**: Significant threat.
+- **moderate**: Possible threat.
+- **minor**: Minimal or no known threat.
+- **unknown**: Unknown threat.
+
 ## See Also
 
 - [GET /api/v1/weatherAlert/{language}/{id}](get-api-v1-weatheralert-_language_-_id_.md)

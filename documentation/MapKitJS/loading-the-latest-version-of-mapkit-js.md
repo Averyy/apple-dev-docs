@@ -36,6 +36,15 @@ The package automatically resolves type definitions for the interfaces that you 
 
 Pick only the interfaces you need to optimize your app load time. MapKit JS divides its interfaces into libraries that you can specify when loading the framework:
 
+- **`services`**: All services interfaces (such as Search and Geocoder) and relevant data types.
+- **`full-map`**: All `mapkit.Map` features and relevant data types.
+- **`map`**: Basic `mapkit.Map` features without overlays, annotations, and relevant data types.
+- **`overlays`**: Overlays, data types, and displays on [`Map`](map.md).
+- **`annotations`**: Annotations, data types, and displays on [`Map`](map.md).
+- **`geojson`**: The GeoJSON importer.
+- **`user-location`**: User location display and controls on [`Map`](map.md).
+- **`look-around`**: [`LookAround`](lookaround.md) and [`LookAroundPreview`](lookaroundpreview.md).
+
 You can set the libraries to load statically by defining them in the `libraries` options array on the MapKit JS Loader `load()` function, within a script tag in the `data-libraries` attribute.
 
 You may load additional libraries using the `mapkit.load()` method after MapKit JS initialization. The `mapkit.init()` method also offers a `libraries` property in [`MapKitInitializationOptions`](mapkitinitializationoptions.md).
@@ -72,11 +81,23 @@ In this example, MapKit JS self-initializes and self-loads the specified librari
 
 The script tag value is the URL that points to `mapkit.core.js`, the principal JavaScript file for MapKit JS, for all versions of the src attribute of this script tag. The `script` tag, and all the examples here, include two additional attributes recommended for use with MapKit JS:
 
+- **`crossorigin`**: Short for `crossorigin="anonymous"`, this attribute instructs the browser to connect to the MapKit JS CDN using anonymous credentials mode. This improves performance by allowing subsequent MapKit JS network requests to reuse the same HTTP/2 connection.
+- **`async`**: With this attribute, the browser evaluates the script as soon as it downloads it. This prevents `mapkit.core.js` from blocking the page load, and initializes and loads the MapKit JS libraries as soon as possible. Your app needs to wait for the callback function execution before interacting with the API.
+
 The data attributes you can set on the `script` element are:
+
+- **`data-callback`**: Required; this is the callback the browser calls when MapKit JS finishes loading.
+- **`data-language`**: The language to set for MapKit JS. A language ID is a language designator followed by an optional region or script designator. Examples of language IDs include: `de` (German), `es-MX`, (Mexican Spanish), and `zh-Hans` (simplified Chinese).
+- **`data-libraries`**: Required; this is a comma-separated list of libraries to load at initialization. See the list of available libraries and the services they provide below.
+- **`data-token`**: Required unless you intend to call [`init(options)`](mapkit/init.md) later. See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token.
 
 #### Choose Specific Releases Using Semantic Versioning
 
 MapKit JS follows semantic versioning with each release. As a result, you have full control over when to upgrade to a new version of MapKit JS. Each version follows the standard semantic versioning pattern `MAJOR.MINOR.PATCH,` which conveys the following information:
+
+- **`MAJOR`**: Incompatible API changes
+- **`MINOR`**: New functionality, but backward-compatible
+- **`PATCH`**: Backward-compatible bug fixes
 
 A backward-compatible new release that contains only bug fixes increases the patch version; a backward-compatible new release that contains new features or functionality increases the minor version. A new release that changes the API, so it’s no longer backward-compatible, increases the major version.
 

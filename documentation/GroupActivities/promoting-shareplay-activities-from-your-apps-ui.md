@@ -108,6 +108,24 @@ To support SharePlay over AirDrop in a UIKit app, assign activities to objects i
 
 In a visionOS app, the system displays a Share Window menu in the window bar to indicate when sharing is active. The system populates this control with activities the current scene supports. Immersive spaces don’t have a system UI by default to start an activity. You can add a window to your immersive space or create custom UI to start an activity. For an example, see [`Implementing SharePlay for immersive spaces in visionOS`](https://developer.apple.com/documentation/visionOS/implementing-shareplay-for-immersive-spaces-in-visionos).
 
+**Not sharing**:
+
+![An illustration of a window with a Share Window menu. The menu indicates that sharing is inactive.](https://docs-assets.developer.apple.com/published/287f847bc7983ce1cc94c4772172b74f/visionos-shareplay-status-idle%402x.png)
+
+The Share Window menu is in the idle state, and sharing is not active for the window.
+
+**Select an activity**:
+
+![An illustration of a window with a Share Window menu. The person tapped the Share menu, which now shows the list of activities the person can start.](https://docs-assets.developer.apple.com/published/8ab9442f367dca0ac2566e97c246ff73/visionos-shareplay-share-action%402x.png)
+
+The person chooses an activity from the Share Window menu.
+
+**Sharing started**:
+
+![An illustration of a window with a Share Window menu. The menu indicates that sharing is active.](https://docs-assets.developer.apple.com/published/d64c1d419186bcc7cc408020f3f7d773/visionos-shareplay-status-sharing%402x.png)
+
+The Share Window menu is in the active state, and an activity is in progress.
+
 Specify activities in any of the following ways:
 
 - Include a [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink) view with a properly configured activity, as described in [`Share activities using SharePlay over AirDrop`](promoting-shareplay-activities-from-your-apps-ui#Share-activities-using-SharePlay-over-AirDrop.md). Apply [`hidden()`](https://developer.apple.com/documentation/SwiftUI/View/hidden()) to the `ShareLink` to hide the button from the view while showing the activity in the Share Window menu.

@@ -20,6 +20,13 @@ object InAppPurchaseOfferPrice
 - [object InAppPurchaseOfferPrice.Relationships](inapppurchaseofferprice/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseOfferPrice.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

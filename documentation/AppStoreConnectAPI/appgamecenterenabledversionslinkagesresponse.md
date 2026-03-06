@@ -17,6 +17,12 @@ object AppGameCenterEnabledVersionsLinkagesResponse
 ### Dictionaries
 - [object AppGameCenterEnabledVersionsLinkagesResponse.Data](appgamecenterenabledversionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppGameCenterEnabledVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

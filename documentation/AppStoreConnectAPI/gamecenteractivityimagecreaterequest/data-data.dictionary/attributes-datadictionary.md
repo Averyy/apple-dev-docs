@@ -14,6 +14,11 @@ Attributes that describe an activity resource.
 object GameCenterActivityImageCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 
 ---
 

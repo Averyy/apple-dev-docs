@@ -29,7 +29,7 @@ the [`ActorSystem`](distributedactor/actorsystem-swift.associatedtype.md) that t
 
 ## Parameters
 
-- `decoder`: Used to decode the   of this distributed actor.
+- `decoder`: Used to decode the `ID` of this distributed actor.
 
 
 ---

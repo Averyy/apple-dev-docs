@@ -14,6 +14,12 @@ A response that contains a list of Build Icon resources.
 object BuildIconsResponse
 ```
 
+## Properties
+
+- `data` ([BuildIcon]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BuildIcon](buildicon.md)

@@ -8,6 +8,15 @@ Get details about a background asset upload file for a specific background asset
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssetVersions/{id}/backgroundAssetUploadFiles`
+
+## Parameters
+
+- `fields[backgroundAssetUploadFiles]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read background asset version App Store releases information.](get-v1-backgroundassetversionappstorereleases-_id_.md)

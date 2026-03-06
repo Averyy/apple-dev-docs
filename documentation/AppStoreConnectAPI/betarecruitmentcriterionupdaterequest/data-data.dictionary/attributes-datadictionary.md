@@ -12,6 +12,10 @@
 object BetaRecruitmentCriterionUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `deviceFamilyOsVersionFilters` ([DeviceFamilyOsVersionFilter])
+
 
 ---
 

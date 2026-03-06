@@ -20,6 +20,10 @@ object EtaResponse
 - [object EtaResponse.Eta](etaresponse/eta.md)
   An object that contains details about an estimated time of arrival (ETA).
 
+## Properties
+
+- `etas` ([EtaResponse.Eta]): An array of one or more [`EtaResponse.Eta`](etaresponse/eta.md) objects.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

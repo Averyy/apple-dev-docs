@@ -35,6 +35,10 @@ Each of the signed JWS representations, `signedPayload`, `signedTransactionInfo`
 - [type signedPayload](signedpayload.md)
   A cryptographically signed payload, in JSON Web Signature (JWS) format, that contains the response body for a version 2 notification.
 
+## Properties
+
+- `signedPayload` (signedPayload): The payload in JSON Web Signature (JWS) format, signed by the App Store.
+
 ## See Also
 
 - [App Store Server Notifications V2](app-store-server-notifications-v2.md)

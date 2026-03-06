@@ -18,7 +18,7 @@ For information on how input propagates through the system and updates content o
 
 To reduce the render server’s CPU overhead, lower draw call counts. One way to do this is to combine parts of your mesh that share a material. The render server performs a draw call for each individual part and uses the CPU to setup each call it sends to the GPU. While combining parts can improve performance, avoid combining parts that are far apart in your scene or that become too large to stay in the field of view when combined. The system renders the entire mesh for a part that is only partially in the field of view. It doesn’t render a part that completely falls outside the field of view.
 
-To reduce both the CPU time the render server spends to create data for the draw calls and rendering work on the GPU, lower vertex and triangle counts, and optimize your meshes for overdraw.  is drawing pixels multiple times to produce the final result.
+To reduce both the CPU time the render server spends to create data for the draw calls and rendering work on the GPU, lower vertex and triangle counts, and optimize your meshes for overdraw. *Overdraw* is drawing pixels multiple times to produce the final result.
 
 To identify areas of complex mesh rendering, check the RealityKit Metrics instrument for 3D Render Encoding (CPU), 3D Render GPU (GPU), and GPU Work Stall (CPU) bottlenecks. The instrument collects metrics on the number of 3D Mesh Draw calls, 3D Mesh Triangles, and 3D Mesh Vertices. Expand the view of the RealityKit Metrics instrument in the timeline pane to reveal graphs of this data under the 3D Render section. Select the section to view these metrics under Summary: Reality Module Metrics in the detail pane.
 
@@ -60,6 +60,9 @@ When your custom systems modify entities and audio components, your app uses the
 To identify areas of frequent and complex updates, check the RealityKit Metrics instrument for Entity Commits (CPU) and  Custom RealityKit Systems (CPU) bottlenecks. The instrument collects metrics on the number of app updates the render server receives and the number of entities that it creates and destroys. Expand the view of the RealityKit Metrics instrument in the timeline pane to reveal graphs of this data under the Entity Commits section. Select the section to view a summary of these metrics in the detail pane.
 
 ![A screenshot that contains part of an Instruments trace document. It displays a vertical stack of timelines for RealityKit Metrics instrument. The metrics are expanded to display additional timelines for 3D Render, Core Animation Render, and Entity Commits metrics. The timeline for Entity Commits metrics is highlighted with an overlay. Below the timeline is an an outline view containing a Summary information for the Entity Commit metrics.](https://docs-assets.developer.apple.com/published/12500cbace572b1a24b4295ee54f6e39/realitykit-metrics-entity-commits%402x.png)
+
+- **App Updates Received**: The number of updates the render server gets from all apps over a particular interval.
+- **Shared Entities**: The number of entities the render server creates and destroys across frames.
 
 > **Note**: Depending on the type of content, you might see additional bottlenecks that result from these updates. Transform updates, animations, material updates, asset loading, and view hierarchy updates also cause the render server to redraw 3D content.
 

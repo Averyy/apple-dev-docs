@@ -20,6 +20,10 @@ object ScmGitReference.Relationships
 - [object ScmGitReference.Relationships.Repository](scmgitreference/relationships-data.dictionary/repository-data.dictionary.md)
   The data and links that describe the relationship between the Git References and the Repositories resources.
 
+## Properties
+
+- `repository` (ScmGitReference.Relationships.Repository): The related Repositories resource.
+
 ## See Also
 
 - [object ScmGitReference.Attributes](scmgitreference/attributes-data.dictionary.md)

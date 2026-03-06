@@ -12,6 +12,11 @@
 object AppWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (App) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

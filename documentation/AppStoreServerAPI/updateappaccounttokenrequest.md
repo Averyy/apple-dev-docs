@@ -22,6 +22,10 @@ object UpdateAppAccountTokenRequest
 
 This is the request body for the [`Set App Account Token`](set-app-account-token.md) endpoint.
 
+## Properties
+
+- `appAccountToken` (appAccountToken): **Required**. A UUID value to associate with the transaction you indicate in the endpoint parameter.
+
 ## See Also
 
 - [Set App Account Token](set-app-account-token.md)

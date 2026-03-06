@@ -12,6 +12,11 @@
 object BuildWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (Build) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Build](build.md)

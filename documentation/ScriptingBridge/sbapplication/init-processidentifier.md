@@ -25,7 +25,7 @@ You should avoid using this method unless you know nothing about an external app
 
 ## Parameters
 
-- `pid`: A BSD process ID specifying an application that is OSA-compliant.   Often you can get the process ID of a process using the     method of  .
+- `pid`: A BSD process ID specifying an application that is OSA-compliant. Often you can get the process ID of a process using the [`processIdentifier`](https://developer.apple.com/documentation/Foundation/Process/processIdentifier) method of `NSTask`.
 
 ## See Also
 

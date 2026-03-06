@@ -12,6 +12,17 @@ List all challenge release information for a specific Game Center detail.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/challengeReleases`
+
+## Parameters
+
+- `fields[gameCenterChallengeVersionReleases]` ([string])
+- `fields[gameCenterChallengeVersions]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read challenge release Ids for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-challengereleases.md)

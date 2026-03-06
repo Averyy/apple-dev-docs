@@ -12,6 +12,43 @@ Read the public key information for a specific alternative distribution key.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/distributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "distributionKeys",
+    "id" : "52c5cb04-1163-4a30-ad4f-a3433cd6a4f6",
+    "attributes" : {
+      "publicKey" : "-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFQUkD1YB67wg3e0VD/2c3N3Wf92n
+uQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==
+-----END PUBLIC KEY-----"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/distributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/distributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/{id}`
+
+## Parameters
+
+- `fields[alternativeDistributionKeys]` ([string])
+
 ## See Also
 
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)

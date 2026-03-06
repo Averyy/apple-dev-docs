@@ -19,6 +19,14 @@ Update the leaderboards relationship for a specific Game Center group.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardsV2`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Get all achievement IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)

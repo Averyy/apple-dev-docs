@@ -8,6 +8,8 @@ Include a tweet in an article.
 
 A `tweet` component lets users see social media content in an article.
 
+**On this page, you’ll learn how to use a tweet component to embed a tweet in an article.**
+
 ##### Add a Tweet in Your Article
 
 In [`Positioning Text Components`](positioning-text-components.md), you created some `ComponentLayout` objects. You’ll refer to those `ComponentLayout` objects in this code.

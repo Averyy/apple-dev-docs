@@ -20,6 +20,12 @@ object GameCenterAchievementLocalizationV2UpdateRequest.Data.Attributes
 - beforeEarnedDescription:
 - name:
 
+## Properties
+
+- `afterEarnedDescription` (string)
+- `beforeEarnedDescription` (string)
+- `name` (string)
+
 
 ---
 

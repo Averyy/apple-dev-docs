@@ -23,6 +23,10 @@ Use this object to create a new alternative distribution package in App Store Co
 ### Objects
 - [object AlternativeDistributionPackageCreateRequest.Data](alternativedistributionpackagecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AlternativeDistributionPackageCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

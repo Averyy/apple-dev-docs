@@ -28,8 +28,8 @@ The region of memory starting at this pointer and covering `count` instances of 
 
 ## Parameters
 
-- `source`: A pointer to the values to copy. The memory region    must be initialized. The memory regions   referenced by   and this pointer must not overlap.
-- `count`: The number of instances to move from   to this   pointer’s memory.   must not be negative.
+- `source`: A pointer to the values to copy. The memory region `source..<(source + count)` must be initialized. The memory regions referenced by `source` and this pointer must not overlap.
+- `count`: The number of instances to move from `source` to this pointer’s memory. `count` must not be negative.
 
 
 ---

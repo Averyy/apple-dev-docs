@@ -17,6 +17,11 @@ object SubscriptionPromotionalOfferUpdateRequest
 ### Objects
 - [object SubscriptionPromotionalOfferUpdateRequest.Data](subscriptionpromotionalofferupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionPromotionalOfferUpdateRequest.Data) *(required)*
+- `included` ([SubscriptionPromotionalOfferPriceInlineCreate])
+
 ## See Also
 
 - [object SubscriptionPromotionalOffer](subscriptionpromotionaloffer.md)

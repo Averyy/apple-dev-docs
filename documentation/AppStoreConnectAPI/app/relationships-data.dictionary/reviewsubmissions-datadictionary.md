@@ -17,6 +17,12 @@ object App.Relationships.ReviewSubmissions
 ### Objects
 - [object App.Relationships.ReviewSubmissions.Data](app/relationships-data.dictionary/reviewsubmissions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([App.Relationships.ReviewSubmissions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

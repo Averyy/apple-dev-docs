@@ -30,7 +30,7 @@ If languages aren’t installed, attach a [`translationTask(_:action:)`](https:/
 - [var canRequestDownloads: Bool](translationsession/canrequestdownloads.md)
   A boolean value that indicates whether a translation session can request language downloads.
 - [var preferredStrategy: TranslationSession.Strategy](translationsession/preferredstrategy.md)
-  Which strategy is preferred for these translations.
+  The preferred translation strategy configured for the session.
 
 
 ---

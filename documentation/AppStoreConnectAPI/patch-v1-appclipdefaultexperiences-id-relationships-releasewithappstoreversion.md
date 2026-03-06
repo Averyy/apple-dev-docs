@@ -8,6 +8,14 @@ Update the relationship between a default App Clip experience and an App Store V
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appClipDefaultExperiences/{id}/relationships/releaseWithAppStoreVersion`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Default App Clip Experiences resource.
+
 ## Request Body
 
 The request body you use to update the relationship between a default App Clip experience and an App Store version.

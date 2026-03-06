@@ -20,6 +20,10 @@ object CiWorkflowUpdateRequest
 - [object CiWorkflowUpdateRequest.Data](ciworkflowupdaterequest/data-data.dictionary.md)
   The data element of the request you use to update an Xcode Cloud workflow.
 
+## Properties
+
+- `data` (CiWorkflowUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

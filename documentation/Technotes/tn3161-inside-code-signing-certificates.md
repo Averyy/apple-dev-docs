@@ -12,9 +12,9 @@ For advice on the day-to-day management of code-signing identities, see [`Distri
 
 ##### About This Technote Series
 
-Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The  technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
+Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
 
-> ❗ **Important**: The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Public Key Infrastructure
 
@@ -101,6 +101,9 @@ Apple issues a variety of different code-signing certificate types.  For a compl
 
 Certificates are usually stored in one of two formats:
 
+- **DER**: This stores the binary certificate directly.  Apple tools and APIs prefer this format.  Files in this format typically have an extension of `.cer` or `.der`.
+- **PEM**: This is a text rendition of the binary certificate.  Non-Apple tools and libraries, most notably OpenSSL, prefer this format.  Files in this format typically have the `.pem` extension.
+
 To convert between these formats, run the `openssl` command-line tool with the `x509` subcommand:
 
 ```shell
@@ -110,7 +113,7 @@ To convert between these formats, run the `openssl` command-line tool with the `
 
 ##### Chain of Trust
 
-Certificates often form a chain of trust: the verifier uses the issuer information in a certificate to find the issuer’s certificate, then uses its issuer information to find the next certificate in the chain, and so on, until it hits an anchor, that is, a certificate it trusts as a matter of policy.  This process can be  complex, but for Apple’s code signing certificates it’s usually quite simple.  To view the certificate chain for an app, run the following command:
+Certificates often form a chain of trust: the verifier uses the issuer information in a certificate to find the issuer’s certificate, then uses its issuer information to find the next certificate in the chain, and so on, until it hits an anchor, that is, a certificate it trusts as a matter of policy.  This process can be *very* complex, but for Apple’s code signing certificates it’s usually quite simple.  To view the certificate chain for an app, run the following command:
 
 ```shell
 % codesign --display -vvv "MyApp.app"
@@ -162,7 +165,7 @@ To sign code you need a certificate and the private key that matches the public 
 
 > ❗ **Important**: As a certificate only contains a public key, you can’t use it to sign code.
 
-Many people use the term  when they mean .  This industry-wide confusion extends into the Apple ecosystem.  For example, Xcode uses the term , Keychain Access uses , and Apple Mail uses .
+Many people use the term *certificate* when they mean *digital identity*.  This industry-wide confusion extends into the Apple ecosystem.  For example, Xcode uses the term *signing certificate*, Keychain Access uses *My Certificates*, and Apple Mail uses *personal certificate*.
 
 Apple tools and APIs that work with a digital identity generally prefer the  PKCS#12 format.  PKCS#12 files usually have the `.p12` extension, although `.pfx` is a common alternative.
 
@@ -322,7 +325,7 @@ Certificate:
         …
 ```
 
-One oddity of this feature is that `codesign` doesn’t simply print the list of certificates stored in the CMS structure within the code signature.  Rather, it builds the chain of trust from scratch by performing a standard trust evaluation on the CMS leaf certificate.  It does this using a [`Trust`](https://developer.apple.com/documentation/Security/trust).  In most cases that produces a chain of trust that matches the one in the CMS structure, but that’s not  to be the case.  If `codesign` displays a chain of trust that seems odd (for example, it might show just a single `Authority` field) extract the CMS structure and look at its certificates.
+One oddity of this feature is that `codesign` doesn’t simply print the list of certificates stored in the CMS structure within the code signature.  Rather, it builds the chain of trust from scratch by performing a standard trust evaluation on the CMS leaf certificate.  It does this using a [`Trust`](https://developer.apple.com/documentation/Security/trust).  In most cases that produces a chain of trust that matches the one in the CMS structure, but that’s not *guaranteed* to be the case.  If `codesign` displays a chain of trust that seems odd (for example, it might show just a single `Authority` field) extract the CMS structure and look at its certificates.
 
 For instructions on how to extract the CMS structure, see [`Cryptographic Message Syntax`](tn3161-inside-code-signing-certificates#Cryptographic-Message-Syntax.md).
 
@@ -446,8 +449,8 @@ Certificates aren’t the only code-signing asset that expire.  Provisioning pro
 
 #### Revision History
 
--  Made a minor editorial change.
--  First published.
+- **2024-02-13** Made a minor editorial change.
+- **2024-02-06** First published.
 
 ## See Also
 

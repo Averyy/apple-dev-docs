@@ -41,7 +41,7 @@ This method is equivalent to calling the version that takes a generator, passing
 
 ## Parameters
 
-- `range`: The range in which to create a random value.    must not be empty.
+- `range`: The range in which to create a random value. `range` must not be empty.
 
 ## See Also
 

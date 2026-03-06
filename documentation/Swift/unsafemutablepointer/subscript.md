@@ -28,7 +28,7 @@ Uninitialized memory cannot be initialized to a nontrivial type using this subsc
 
 ## Parameters
 
-- `i`: The offset from this pointer at which to access an   instance, measured in strides of the pointer’s   type.
+- `i`: The offset from this pointer at which to access an instance, measured in strides of the pointer’s `Pointee` type.
 
 
 ---

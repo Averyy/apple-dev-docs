@@ -22,7 +22,12 @@ A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](cloudkit.
 
 ## Parameters
 
-- `zones`: Possible values are:
+- `zones`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.ZoneID`](cloudkit.zoneid.md) | A zone in the database to delete. |
+| `CloudKit.ZoneID[]` | An array of zones to delete. |
+| `String` | The name of a zone to delete. |
+| `String[]` | An array of names of zones to delete. |
 
 ## See Also
 

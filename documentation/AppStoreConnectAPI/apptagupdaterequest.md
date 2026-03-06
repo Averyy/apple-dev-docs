@@ -20,6 +20,10 @@ object AppTagUpdateRequest
 - [object AppTagUpdateRequest.Data](apptagupdaterequest/data-data.dictionary.md)
   The data structure that represents an app tag update request resource.
 
+## Properties
+
+- `data` (AppTagUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)

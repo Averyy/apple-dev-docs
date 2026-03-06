@@ -8,6 +8,17 @@ List all ordered screenshots in a screenshot set.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}/appScreenshots`
+
+## Parameters
+
+- `fields[appScreenshots]` ([string])
+- `limit` (integer)
+- `fields[appScreenshotSets]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Get All App Screenshot IDs for an App Screenshot Set](get-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)

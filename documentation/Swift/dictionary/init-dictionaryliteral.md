@@ -34,7 +34,7 @@ print(countryCodes)
 
 ## Parameters
 
-- `elements`: The key-value pairs that will make up the new   dictionary. Each key in   must be unique.
+- `elements`: The key-value pairs that will make up the new dictionary. Each key in `elements` must be unique.
 
 ## See Also
 

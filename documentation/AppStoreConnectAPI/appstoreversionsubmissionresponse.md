@@ -18,6 +18,12 @@ object AppStoreVersionSubmissionResponse
 
 - [App Store Connect API 1.7 release notes](app-store-connect-api-1-7-release-notes.md)
 
+## Properties
+
+- `data` (AppStoreVersionSubmission) *(required)*
+- `links` (DocumentLinks) *(required)*
+- `included` ([AppStoreVersion])
+
 ## See Also
 
 - [object AppStoreVersionSubmission](appstoreversionsubmission.md)

@@ -22,6 +22,13 @@ object AppStoreVersionUpdateRequest.Data
 - [object AppStoreVersionUpdateRequest.Data.Relationships](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `attributes` (AppStoreVersionUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `relationships` (AppStoreVersionUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

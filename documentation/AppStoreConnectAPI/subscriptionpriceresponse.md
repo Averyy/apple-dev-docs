@@ -12,6 +12,12 @@
 object SubscriptionPriceResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionPrice) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionPricePointResponse](subscriptionpricepointresponse.md)

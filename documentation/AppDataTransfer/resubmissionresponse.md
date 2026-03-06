@@ -14,6 +14,13 @@ An object that represents a resubmitted recurring download request.
 object ResubmissionResponse
 ```
 
+## Properties
+
+- `parentRequestId` (string): A UUID that identifies the recurring request series.
+- `requestId` (string): A UUID that identifies the new request.
+- `status` (string): `success` if the server resubmitted the request; `error` otherwise.
+- `statusCheckDelay` (integer): The number of seconds to wait before you call [`Get recurring request status`](get-recurring-request-status.md).
+
 ## See Also
 
 - [Submit request](submit-request.md)

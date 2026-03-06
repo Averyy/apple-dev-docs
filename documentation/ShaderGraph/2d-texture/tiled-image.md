@@ -17,6 +17,15 @@ Samples data from an image with provisions for offsetting and tiling in UV space
 
 #### Parameter Descriptions
 
+- **`File`**: The image file to use for the texture.
+- **`Default`**: A default value to use if the ​file​ reference fails to resolve.
+- **`Texture Coordinates`**: The 2D coordinate at which the data is read for mapping the texture onto a surface. The default uses the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
+- **`UV Tiling`**: The tiling rate for the given image along the U and V axes. The tiling rate is mathematically equivalent to multiplying the incoming texture coordinates by the given vector value. The rate controls how often the `File` repeats in the texture.
+- **`UV Offset`**: The offset for the given image along the U and V axes. The offset is mathematically equivalent to subtracting the given vector value from the incoming texture coordinates.
+- **`Real World Image Size`**: The real-world size represented by the ​file​ image.
+- **`Real World Tile Size`**: The real-world size of a single square `0-1` UV tile.
+- **`Filter Type`**: The type of texture filtering to use.
+
 #### Discussion
 
 The `Tiled Image` material node maps a texture onto a surface with a repeating tiled pattern. It allows you to specify a texture image and control its tiling and real-world size properties.

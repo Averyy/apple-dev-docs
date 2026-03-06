@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/profiles/{id}/relationships/certificates`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read the Bundle ID in a Profile](get-v1-profiles-_id_-bundleid.md)

@@ -22,6 +22,11 @@ object AppCategory.Relationships
 - [object AppCategory.Relationships.Subcategories](appcategory/relationships-data.dictionary/subcategories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `parent` (AppCategory.Relationships.Parent)
+- `subcategories` (AppCategory.Relationships.Subcategories)
+
 ## See Also
 
 - [object AppCategory.Attributes](appcategory/attributes-data.dictionary.md)

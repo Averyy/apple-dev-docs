@@ -30,7 +30,7 @@ After calling `copyMemory(from:)`, the first `source.count` bytes of memory refe
 
 ## Parameters
 
-- `source`: A buffer of raw bytes.   must   be less than or equal to this buffer’s  .
+- `source`: A buffer of raw bytes. `source.count` must be less than or equal to this buffer’s `count`.
 
 
 ---

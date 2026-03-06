@@ -8,6 +8,19 @@ Get a list of prices of a promotional offer for an auto-renewable subscription, 
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionPromotionalOffers/{id}/prices`
+
+## Parameters
+
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[subscriptionPromotionalOfferPrices]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `filter[territory]` ([string])
+
 ## See Also
 
 - [Create a Promotional Offer](post-v1-subscriptionpromotionaloffers.md)

@@ -12,6 +12,62 @@ List the price schedule details for a specific app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "appPriceSchedules",
+    "id" : "6447402192",
+    "relationships" : {
+      "baseTerritory" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/relationships/baseTerritory",
+          "related" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/baseTerritory"
+        }
+      },
+      "manualPrices" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/relationships/manualPrices",
+          "related" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/manualPrices"
+        }
+      },
+      "automaticPrices" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/relationships/automaticPrices",
+          "related" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/automaticPrices"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appPriceSchedules/{id}`
+
+## Parameters
+
+- `fields[appPriceSchedules]` ([string])
+- `fields[appPrices]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit[automaticPrices]` (integer)
+- `limit[manualPrices]` (integer)
+
 ## See Also
 
 - [Read price schedule information for an app](get-v1-apps-_id_-apppriceschedule.md)

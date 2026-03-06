@@ -8,6 +8,14 @@ Get a list of all experiments IDs for an App Store version across all platforms.
 **Availability**:
 - App Store Connect API 2.4+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/appStoreVersionExperimentsV2`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

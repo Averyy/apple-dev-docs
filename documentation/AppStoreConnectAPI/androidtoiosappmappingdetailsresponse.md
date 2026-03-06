@@ -14,6 +14,12 @@ A response that contains a list of Android to iOS app mapping details response r
 object AndroidToIosAppMappingDetailsResponse
 ```
 
+## Properties
+
+- `data` ([AndroidToIosAppMappingDetail]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetail](androidtoiosappmappingdetail.md)

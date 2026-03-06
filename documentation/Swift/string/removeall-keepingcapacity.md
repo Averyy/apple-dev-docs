@@ -26,7 +26,7 @@ Calling this method invalidates any existing indices for use with this string.
 
 ## Parameters
 
-- `keepCapacity`: Pass   to prevent the release of the   string’s allocated storage. Retaining the storage can be a useful   optimization when you’re planning to grow the string again. The   default value is  .
+- `keepCapacity`: Pass `true` to prevent the release of the string’s allocated storage. Retaining the storage can be a useful optimization when you’re planning to grow the string again. The default value is `false`.
 
 ## See Also
 

@@ -15,7 +15,7 @@ class Dependency
 
 A package dependency consists of a Git URL to the source of the package, and a requirement for the version of the package.
 
-Swift Package Manager performs a process called  to determine the exact version of the package dependencies that an app or other Swift package can use. The `Package.resolved` file records the results of the dependency resolution and lives in the top-level directory of a Swift package. If you add the Swift package as a package dependency to an app for an Apple platform, you can find the `Package.resolved` file inside your `.xcodeproj` or `.xcworkspace`.
+Swift Package Manager performs a process called *dependency resolution* to determine the exact version of the package dependencies that an app or other Swift package can use. The `Package.resolved` file records the results of the dependency resolution and lives in the top-level directory of a Swift package. If you add the Swift package as a package dependency to an app for an Apple platform, you can find the `Package.resolved` file inside your `.xcodeproj` or `.xcworkspace`.
 
 ## Topics
 

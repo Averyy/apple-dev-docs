@@ -12,6 +12,10 @@
 object MerchantIdUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+
 
 ---
 

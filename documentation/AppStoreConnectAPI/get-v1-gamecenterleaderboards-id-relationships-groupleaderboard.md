@@ -8,6 +8,14 @@ List associated group leaderboards for a specific leaderboard.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/{id}/relationships/groupLeaderboard`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the leaderboard resource ID from the [`Read leaderboard information`](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md) response.
+
 ## See Also
 
 - [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)

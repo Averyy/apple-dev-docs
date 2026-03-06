@@ -26,7 +26,7 @@ The new value represents the address of the pointer passed as `pointer`. If `poi
 
 ## Parameters
 
-- `pointer`: The pointer to use as the source for the new   integer.
+- `pointer`: The pointer to use as the source for the new integer.
 
 ## See Also
 

@@ -14,6 +14,10 @@ A result that requires the user to confirm the library or playlist before you ad
 object AddMediaMediaDestinationResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `mediaDestinationToConfirm` (MediaDestination) *(required)*: A library or playlist for the user to confirm or reject.
+
 ## See Also
 
 - [object AddMediaMediaDestinationResolutionResult.Disambiguation](addmediamediadestinationresolutionresult/disambiguation-data.dictionary.md)

@@ -23,6 +23,10 @@ object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement
 ### Dictionaries - generated
 - [object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement.Data](gamecenterachievementversionv2inlinecreate/relationships-data.dictionary/achievement-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement.Data)
+
 
 ---
 

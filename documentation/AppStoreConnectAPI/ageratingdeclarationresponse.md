@@ -14,6 +14,11 @@ A response that contains a single Age Rating Declarations resource.
 object AgeRatingDeclarationResponse
 ```
 
+## Properties
+
+- `data` (AgeRatingDeclaration) *(required)*: The data structure that represents the Age Rating Declarations resource.
+- `links` (DocumentLinks) *(required)*: Navigational links including the self-link and links to the related data.
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

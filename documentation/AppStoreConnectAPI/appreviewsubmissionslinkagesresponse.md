@@ -20,6 +20,12 @@ object AppReviewSubmissionsLinkagesResponse
 - [object AppReviewSubmissionsLinkagesResponse.Data](appreviewsubmissionslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([AppReviewSubmissionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

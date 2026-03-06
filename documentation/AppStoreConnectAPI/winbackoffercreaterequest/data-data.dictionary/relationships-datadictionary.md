@@ -22,6 +22,11 @@ object WinBackOfferCreateRequest.Data.Relationships
 - [object WinBackOfferCreateRequest.Data.Relationships.Subscription](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `prices` (WinBackOfferCreateRequest.Data.Relationships.Prices) *(required)*
+- `subscription` (WinBackOfferCreateRequest.Data.Relationships.Subscription) *(required)*
+
 ## See Also
 
 - [object WinBackOfferCreateRequest.Data.Attributes](winbackoffercreaterequest/data-data.dictionary/attributes-data.dictionary.md)

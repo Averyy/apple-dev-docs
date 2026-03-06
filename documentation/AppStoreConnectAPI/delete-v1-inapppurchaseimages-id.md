@@ -12,6 +12,14 @@ Delete the image asset that appears on the App Store listing that represents an 
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/inAppPurchaseImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `inAppPurchaseImages` resource ID from the [`List in-app purchase images`](get-v2-inapppurchases-_id_-images.md) response.
+
 ## See Also
 
 - [Create an image for an in-app purchase](post-v1-inapppurchaseimages.md)

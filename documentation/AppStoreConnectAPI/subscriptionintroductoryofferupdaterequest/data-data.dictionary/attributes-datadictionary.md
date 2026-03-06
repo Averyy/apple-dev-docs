@@ -12,6 +12,10 @@
 object SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `endDate` (date)
+
 
 ---
 

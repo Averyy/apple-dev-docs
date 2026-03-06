@@ -14,6 +14,13 @@ A response that contains a list of app store version experiment treatments respo
 object AppStoreVersionExperimentTreatmentsResponse
 ```
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentTreatment]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)

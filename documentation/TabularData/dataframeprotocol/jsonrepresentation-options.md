@@ -22,7 +22,7 @@ func jsonRepresentation(options: JSONWritingOptions = .init()) throws -> Data
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A [`JSONWritingOptions`](jsonwritingoptions.md) instance.
 
 
 ---

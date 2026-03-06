@@ -20,6 +20,10 @@ object BetaAppReviewSubmission.Relationships
 - [object BetaAppReviewSubmission.Relationships.Build](betaappreviewsubmission/relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `build` (BetaAppReviewSubmission.Relationships.Build)
+
 ## See Also
 
 - [object BetaAppReviewSubmission.Attributes](betaappreviewsubmission/attributes-data.dictionary.md)

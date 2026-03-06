@@ -14,6 +14,13 @@ The response body for endpoints that get multiple queues.
 object GameCenterMatchmakingQueuesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterMatchmakingQueue]) *(required)*: The queues that the endpoint fetches.
+- `included` ([GameCenterMatchmakingRuleSet]): The rule sets included in the response.
+- `links` (PagedDocumentLinks) *(required)*: The link representations of the response.
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest](gamecentermatchmakingqueuecreaterequest.md)

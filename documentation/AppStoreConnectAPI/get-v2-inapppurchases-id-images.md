@@ -8,6 +8,17 @@ List all images for a specific in-app purchase.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/images`
+
+## Parameters
+
+- `fields[inAppPurchaseImages]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an image for an in-app purchase](post-v1-inapppurchaseimages.md)

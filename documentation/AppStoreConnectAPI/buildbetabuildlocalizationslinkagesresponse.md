@@ -17,6 +17,12 @@ object BuildBetaBuildLocalizationsLinkagesResponse
 ### Dictionaries
 - [object BuildBetaBuildLocalizationsLinkagesResponse.Data](buildbetabuildlocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BuildBetaBuildLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Build](build.md)

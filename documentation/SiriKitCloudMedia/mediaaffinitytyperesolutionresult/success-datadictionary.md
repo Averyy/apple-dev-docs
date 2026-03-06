@@ -14,6 +14,10 @@ A media affinity that successfully matches the intent.
 object MediaAffinityTypeResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedMediaAffinityType` (MediaAffinityType) *(required)*: The media affinity the user wants to associate with the media item the intent references.
+
 ## See Also
 
 - [object MediaAffinityTypeResolutionResult.ConfirmationRequired](mediaaffinitytyperesolutionresult/confirmationrequired-data.dictionary.md)

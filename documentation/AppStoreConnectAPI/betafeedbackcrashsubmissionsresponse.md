@@ -14,6 +14,13 @@ A response that contains a list of `BetaFeedbackCrashSubmissionsResponse` resour
 object BetaFeedbackCrashSubmissionsResponse
 ```
 
+## Properties
+
+- `data` ([BetaFeedbackCrashSubmission]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaCrashLog](betacrashlog.md)

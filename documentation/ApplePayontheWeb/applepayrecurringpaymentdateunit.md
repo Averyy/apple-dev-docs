@@ -19,6 +19,12 @@ enum ApplePayRecurringPaymentDateUnit
 
 The following are the values for the recurring payment date unit:
 
+- **`"year"`**: A value that specifies the year unit.
+- **`"month"`**: A value that specifies the month unit.
+- **`"day"`**: A value that specifies the day unit.
+- **`"hour"`**: A value that specifies the hour unit.
+- **`"minute"`**: A value that specifies the minute unit.
+
 ## Topics
 
 ### Enumeration Cases

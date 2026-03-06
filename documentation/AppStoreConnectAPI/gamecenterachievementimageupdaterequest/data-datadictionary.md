@@ -17,6 +17,12 @@ object GameCenterAchievementImageUpdateRequest.Data
 ### Objects
 - [object GameCenterAchievementImageUpdateRequest.Data.Attributes](gamecenterachievementimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementImageUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

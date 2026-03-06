@@ -8,6 +8,14 @@ List associated group achievements for a specific achievement.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/{id}/relationships/groupAchievement`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the achievement resource ID from the [`List all achievements`](get-v1-gamecenterdetails-_id_-gamecenterachievements.md) response.
+
 ## See Also
 
 - [Read Game Center achievement information](get-v2-gamecenterachievements-_id_.md)

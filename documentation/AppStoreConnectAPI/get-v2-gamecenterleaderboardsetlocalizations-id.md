@@ -21,6 +21,16 @@ Get information about a specific Game Center leaderboard set localization.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardSetLocalizations/{id}`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardSetImages]` ([string])
+- `fields[gameCenterLeaderboardSetLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List all images for a Game Center leaderboard set localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-image.md)

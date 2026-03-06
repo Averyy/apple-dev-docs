@@ -14,6 +14,10 @@ The result of resolving the queue location for a play media intent.
 object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result
 ```
 
+## Properties
+
+- `resolutionResult` (PlaybackQueueLocationResolutionResult) *(required)*: The result of resolving the queue location for a play media intent.
+
 
 ---
 

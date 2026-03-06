@@ -8,6 +8,21 @@ List recent and current review submissions for a specific app.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/reviewSubmissions`
+
+## Parameters
+
+- `fields[reviewSubmissionItems]` ([string])
+- `fields[reviewSubmissions]` ([string])
+- `filter[app]` ([string]) *(required)*
+- `filter[platform]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[items]` (integer)
+
 ## See Also
 
 - [Read review submission information](get-v1-reviewsubmissions-_id_.md)

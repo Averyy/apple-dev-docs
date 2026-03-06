@@ -14,6 +14,10 @@ The response to a library music videos request.
 object LibraryMusicVideosResponse
 ```
 
+## Properties
+
+- `data` ([LibraryMusicVideos]) *(required)*: The [`LibraryMusicVideos`](librarymusicvideos.md) included in the response for the request.
+
 ## See Also
 
 - [object MusicVideos](musicvideos.md)

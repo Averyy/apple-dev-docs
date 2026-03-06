@@ -18,6 +18,12 @@ object SubscriptionGroupLocalizationCreateRequest.Data
 - [object SubscriptionGroupLocalizationCreateRequest.Data.Attributes](subscriptiongrouplocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object SubscriptionGroupLocalizationCreateRequest.Data.Relationships](subscriptiongrouplocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGroupLocalizationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (SubscriptionGroupLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

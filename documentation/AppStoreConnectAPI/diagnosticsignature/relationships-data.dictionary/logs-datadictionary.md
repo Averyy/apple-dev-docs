@@ -12,6 +12,10 @@
 object DiagnosticSignature.Relationships.Logs
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

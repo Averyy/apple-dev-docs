@@ -12,6 +12,11 @@
 object EndUserLicenseAgreementWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (EndUserLicenseAgreement) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreement](enduserlicenseagreement.md)

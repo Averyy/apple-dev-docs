@@ -24,6 +24,12 @@ object Profile.Relationships
 - [object Profile.Relationships.Devices](profile/relationships-data.dictionary/devices-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `certificates` (Profile.Relationships.Certificates)
+- `devices` (Profile.Relationships.Devices)
+- `bundleId` (Profile.Relationships.BundleId)
+
 ## See Also
 
 - [object Profile.Attributes](profile/attributes-data.dictionary.md)

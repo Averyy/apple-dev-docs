@@ -12,6 +12,11 @@
 object InAppPurchasePricePoint.Attributes
 ```
 
+## Properties
+
+- `customerPrice` (string)
+- `proceeds` (string)
+
 ## See Also
 
 - [object InAppPurchasePricePoint.Relationships](inapppurchasepricepoint/relationships-data.dictionary.md)

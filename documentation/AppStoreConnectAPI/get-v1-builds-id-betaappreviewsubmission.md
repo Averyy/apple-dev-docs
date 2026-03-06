@@ -8,6 +8,14 @@ Get the beta app review submission status for a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/betaAppReviewSubmission`
+
+## Parameters
+
+- `fields[betaAppReviewSubmissions]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [GET /v1/builds/{id}/relationships/betaAppReviewSubmission](get-v1-builds-_id_-relationships-betaappreviewsubmission.md)

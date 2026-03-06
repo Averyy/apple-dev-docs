@@ -32,7 +32,7 @@ The returned index is the position of the next uninitialized element in the buff
 
 ## Parameters
 
-- `source`: A sequence of elements with which to initialize the   buffer.
+- `source`: A sequence of elements with which to initialize the buffer.
 
 
 ---

@@ -14,6 +14,15 @@ The data your app provides to add items when it makes changes to an auto-renewab
 object SubscriptionModifyAddItem
 ```
 
+## Properties
+
+- `SKU` (SKU) *(required)*
+- `description` (description) *(required)*
+- `displayName` (displayName) *(required)*
+- `offer` (Offer)
+- `price` (price) *(required)*
+- `proratedPrice` (proratedPrice)
+
 ## See Also
 
 - [object SubscriptionModifyInAppRequest](subscriptionmodifyinapprequest.md)

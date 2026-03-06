@@ -17,6 +17,17 @@ object AppEventCreateRequest.Data.Attributes
 ### Objects
 - [object AppEventCreateRequest.Data.Attributes.TerritorySchedules](appeventcreaterequest/data-data.dictionary/attributes-data.dictionary/territoryschedules-data.dictionary.md)
 
+## Properties
+
+- `badge` (string)
+- `deepLink` (uri)
+- `primaryLocale` (string)
+- `priority` (string)
+- `purchaseRequirement` (string)
+- `purpose` (string)
+- `referenceName` (string) *(required)*
+- `territorySchedules` ([AppEventCreateRequest.Data.Attributes.TerritorySchedules])
+
 ## See Also
 
 - [object AppEventCreateRequest.Data.Relationships](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

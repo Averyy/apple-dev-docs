@@ -17,6 +17,12 @@ object ReviewSubmissionItemUpdateRequest.Data
 ### Objects
 - [object ReviewSubmissionItemUpdateRequest.Data.Attributes](reviewsubmissionitemupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (ReviewSubmissionItemUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

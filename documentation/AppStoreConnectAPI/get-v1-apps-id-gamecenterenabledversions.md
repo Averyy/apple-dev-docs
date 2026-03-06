@@ -6,6 +6,22 @@
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/gameCenterEnabledVersions`
+
+## Parameters
+
+- `fields[gameCenterEnabledVersions]` ([string])
+- `filter[id]` ([string])
+- `filter[platform]` ([string])
+- `filter[versionString]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `sort` ([string])
+- `limit[compatibleVersions]` (integer)
+- `fields[apps]` ([string])
+
 ## See Also
 
 - [List All Compatible Versions for a Game Center Enabled Version](get-v1-gamecenterenabledversions-_id_-compatibleversions.md)

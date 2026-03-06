@@ -23,7 +23,7 @@ init?(_ metadata: sending LPLinkMetadata)
 
 ## Parameters
 
-- `metadata`: The   instance to convert from.
+- `metadata`: The `LPLinkMetadata` instance to convert from.
 
 
 ---

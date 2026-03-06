@@ -14,6 +14,12 @@ The data your app provides to change the description and display name of an auto
 object SubscriptionModifyDescriptors
 ```
 
+## Properties
+
+- `description` (description)
+- `displayName` (displayName)
+- `effective` (effective) *(required)*
+
 ## See Also
 
 - [object Descriptors](descriptors.md)

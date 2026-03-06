@@ -17,6 +17,10 @@ object GameCenterChallengeLocalizationCreateRequest.Data.Relationships.Version
 ### Dictionaries
 - [object GameCenterChallengeLocalizationCreateRequest.Data.Relationships.Version.Data](gamecenterchallengelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeLocalizationCreateRequest.Data.Relationships.Version.Data) *(required)*
+
 
 ---
 

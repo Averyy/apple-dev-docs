@@ -14,6 +14,13 @@ An error indicating the line item has the refund event type but is referenced by
 object RefundReferencedByRefundError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

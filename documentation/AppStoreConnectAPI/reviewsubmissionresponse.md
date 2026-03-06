@@ -14,6 +14,12 @@ A response that contains a single review submission resource.
 object ReviewSubmissionResponse
 ```
 
+## Properties
+
+- `data` (ReviewSubmission) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)

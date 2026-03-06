@@ -23,7 +23,7 @@ init(shape: [Int], strides: [Int], contents: [Element])
 ## Parameters
 
 - `shape`: An integer array that stores the size of each dimension in the corresponding element.
-- `strides`: An integer array that stores the number of memory locations   that span the length of each dimension in the corresponding element.
+- `strides`: An integer array that stores the number of memory locations that span the length of each dimension in the corresponding element.
 - `contents`: A linear array that stores the elements of the multidimensional array.
 
 

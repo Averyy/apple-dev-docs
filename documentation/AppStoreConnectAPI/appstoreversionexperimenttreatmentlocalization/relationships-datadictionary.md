@@ -21,6 +21,12 @@ object AppStoreVersionExperimentTreatmentLocalization.Relationships
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary.md)
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary.md)
 
+## Properties
+
+- `appPreviewSets` (AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets)
+- `appScreenshotSets` (AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets)
+- `appStoreVersionExperimentTreatment` (AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalization.Attributes](appstoreversionexperimenttreatmentlocalization/attributes-data.dictionary.md)

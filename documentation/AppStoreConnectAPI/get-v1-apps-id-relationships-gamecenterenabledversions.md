@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API ?+ - Deprecated
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/gameCenterEnabledVersions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read the state of Game Center for an app](get-v1-apps-_id_-gamecenterdetail.md)

@@ -8,6 +8,10 @@ Create custom offer codes for an auto-renewable subscription offer.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodeCustomCodes`
+
 ## See Also
 
 - [List All Custom Offer Codes for an Auto-Renewable Subscription](get-v1-subscriptionoffercodes-_id_-customcodes.md)

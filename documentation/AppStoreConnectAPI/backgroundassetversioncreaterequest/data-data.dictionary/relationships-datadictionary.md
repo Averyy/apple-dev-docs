@@ -20,6 +20,10 @@ object BackgroundAssetVersionCreateRequest.Data.Relationships
 - [object BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset](backgroundassetversioncreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundasset-data.dictionary.md)
   The data structure that represents a background asset version create request resource.
 
+## Properties
+
+- `backgroundAsset` (BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset) *(required)*
+
 
 ---
 

@@ -45,8 +45,8 @@ The `successOrdering` argument specifies the memory ordering to use when the ope
 
 - `expected`: The expected current value.
 - `desired`: The desired new value.
-- `successOrdering`: The memory ordering to apply if this   operation performs the exchange.
-- `failureOrdering`: The memory ordering to apply on this   operation does not perform the exchange.
+- `successOrdering`: The memory ordering to apply if this operation performs the exchange.
+- `failureOrdering`: The memory ordering to apply on this operation does not perform the exchange.
 
 
 ---

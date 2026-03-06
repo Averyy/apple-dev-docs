@@ -25,11 +25,11 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `keepCapacity`: Pass   to request that the collection   avoid releasing its storage. Retaining the collection’s storage can   be a useful optimization when you’re planning to grow the collection   again. The default value is  .
+- `keepCapacity`: Pass `true` to request that the collection avoid releasing its storage. Retaining the collection’s storage can be a useful optimization when you’re planning to grow the collection again. The default value is `false`.
 
 
 ---

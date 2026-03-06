@@ -17,6 +17,12 @@ object GameCenterDetail.Relationships.ActivityReleases
 ### Dictionaries
 - [object GameCenterDetail.Relationships.ActivityReleases.Data](gamecenterdetail/relationships-data.dictionary/activityreleases-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetail.Relationships.ActivityReleases.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

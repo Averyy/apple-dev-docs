@@ -37,7 +37,7 @@ The corresponding C function is `write`.
 ## Parameters
 
 - `buffer`: The region of memory that contains the data being written.
-- `retryOnInterrupt`: Whether to retry the write operation   if it throws  .   The default is  .   Pass   to try only once and throw an error upon interruption.
+- `retryOnInterrupt`: Whether to retry the write operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
 
 ## See Also
 

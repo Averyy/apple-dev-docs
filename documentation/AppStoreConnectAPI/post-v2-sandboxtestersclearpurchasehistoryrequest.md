@@ -12,6 +12,50 @@ Remove purchase history from a Sandbox Apple Account.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v2/sandboxTestersClearPurchaseHistoryRequest 
+-d
+{
+  "data": {
+    "type": "sandboxTestersClearPurchaseHistoryRequest",
+    "relationships": {
+      "sandboxTesters": {
+        "data": [
+          {
+            "id": "47be9e57-1a3f-49c2-8ce7-af27a977ebb0",
+            "type": "sandboxTesters"
+          }
+        ]
+      }
+    }
+  }
+}
+
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "sandboxTestersClearPurchaseHistoryRequest",
+    "id" : "c47f2eda-042e-4f4b-9bb9-ded24c507e41",
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v2/sandboxTestersClearPurchaseHistoryRequest/c47f2eda-042e-4f4b-9bb9-ded24c507e41"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v2/sandboxTestersClearPurchaseHistoryRequest"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/sandboxTestersClearPurchaseHistoryRequest`
+
 ## See Also
 
 - [List Sandbox Testers](get-v2-sandboxtesters.md)

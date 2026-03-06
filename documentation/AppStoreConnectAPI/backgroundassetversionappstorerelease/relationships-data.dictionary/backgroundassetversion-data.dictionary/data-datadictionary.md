@@ -14,6 +14,11 @@ The request body you use to update a background asset version app store release.
 object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

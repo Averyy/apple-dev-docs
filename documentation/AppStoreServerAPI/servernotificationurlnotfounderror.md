@@ -6,13 +6,18 @@
 An error that indicates the App Store server couldn’t find a notifications URL for your app in the environment.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object ServerNotificationURLNotFoundError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string): For more information about configuring App Store Server Notifications in App Store Connect, see [`Enter a URL for App Store server notifications`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev0067a330b). Check that you’ve configured a server notifications URL for the production environment or sandbox enviroment, whichever you’re using.
 
 ## See Also
 

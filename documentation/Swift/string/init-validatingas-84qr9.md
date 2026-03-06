@@ -40,8 +40,8 @@ print(invalid ?? "nil")
 
 ## Parameters
 
-- `codeUnits`: A sequence of code units that encode a 
-- `encoding`: A conformer to   to be used   to decode  .
+- `codeUnits`: A sequence of code units that encode a `String`
+- `encoding`: A conformer to `Unicode.Encoding` to be used to decode `codeUnits`.
 
 ## See Also
 

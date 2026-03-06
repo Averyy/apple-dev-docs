@@ -14,6 +14,10 @@ The values of the data points.
 object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `count` (integer): The number of rule errors in the response.
+
 
 ---
 

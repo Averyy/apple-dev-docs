@@ -14,6 +14,12 @@ A relationship from the playlist to its tracks.
 object Playlists.Relationships.PlaylistsTracksRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([*]) *(required)*: The ordered songs and music videos in the tracklist of the playlist.
+
 ## See Also
 
 - [object Playlists.Relationships.PlaylistsCuratorRelationship](playlists/relationships-data.dictionary/playlistscuratorrelationship.md)

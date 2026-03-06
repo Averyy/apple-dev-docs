@@ -20,6 +20,19 @@ object FoodEstablishmentReservation
 - [object FoodEstablishment](foodestablishment.md)
   The restaurant or other food establishment that will host the reservation.
 
+## Properties
+
+- `@context` (@context) *(required)*
+- `@type` (string) *(required)*
+- `partySize` (integer): The number of people.
+- `reservationFor` (FoodEstablishment) *(required)*: The restaurant or other food establishment hosting the reservation.
+- `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
+- `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
+- `startTime` (dateTimeISO8601) *(required)*: The beginning date and time for the reservation.
+- `underName` (Person) *(required)*: The name of the person associated with the reservation, usually someone who will be dining.
+- `broker` (Organization): An intermediary booking service.
+- `url` (URL): A webpage the user can access to view reservation details.
+
 ## See Also
 
 - [object EventReservation](eventreservation.md)

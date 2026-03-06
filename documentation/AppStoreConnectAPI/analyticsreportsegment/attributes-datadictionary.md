@@ -14,6 +14,12 @@ Attributes that describe an analytics report segment resource.
 object AnalyticsReportSegment.Attributes
 ```
 
+## Properties
+
+- `checksum` (string): This is a `md5` checksum.
+- `sizeInBytes` (integer)
+- `url` (uri)
+
 
 ---
 

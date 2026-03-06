@@ -22,6 +22,14 @@ object ScmRepository
 - [object ScmRepository.Relationships](scmrepository/relationships-data.dictionary.md)
   The relationships of the Repositories resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (ScmRepository.Attributes): The attributes that describe the Repositories resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Repositories resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (ScmRepository.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object ScmRepositoryResponse](scmrepositoryresponse.md)

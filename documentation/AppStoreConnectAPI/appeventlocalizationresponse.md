@@ -12,6 +12,12 @@
 object AppEventLocalizationResponse
 ```
 
+## Properties
+
+- `data` (AppEventLocalization) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppEventLocalization](appeventlocalization.md)

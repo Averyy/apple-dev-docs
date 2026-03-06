@@ -11,6 +11,11 @@ A response that contains a single Bundle IDs resource without includes.
 object BundleIdWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (BundleId) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BundleId](bundleid.md)

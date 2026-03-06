@@ -14,6 +14,13 @@ A response that contains a list of Game Center Enabled Version resources.
 object GameCenterEnabledVersionsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterEnabledVersion]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterEnabledVersion](gamecenterenabledversion.md)

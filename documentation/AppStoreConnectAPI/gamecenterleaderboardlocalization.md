@@ -20,6 +20,14 @@ object GameCenterLeaderboardLocalization
 - [object GameCenterLeaderboardLocalization.Attributes](gamecenterleaderboardlocalization/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardLocalization.Relationships](gamecenterleaderboardlocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2](gamecenterleaderboardlocalizationv2.md)

@@ -12,6 +12,12 @@
 object InAppPurchaseAppStoreReviewScreenshotResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseAppStoreReviewScreenshot) *(required)*
+- `included` ([InAppPurchaseV2])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshot](inapppurchaseappstorereviewscreenshot.md)

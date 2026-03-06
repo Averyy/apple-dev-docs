@@ -14,6 +14,11 @@ The coordinates for a point of interest or business in Apple Maps.
 object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint.Coordinates
 ```
 
+## Properties
+
+- `latitude` (number): A number that represents the latitude of GPS coordinates of a place in Apple Maps.
+- `longitude` (number): A number that represents the longitude of GPS coordinates of a place in Apple Maps.
+
 
 ---
 

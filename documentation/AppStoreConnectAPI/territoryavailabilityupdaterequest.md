@@ -19,6 +19,10 @@ object TerritoryAvailabilityUpdateRequest
 ### Objects
 - [object TerritoryAvailabilityUpdateRequest.Data](territoryavailabilityupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (TerritoryAvailabilityUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

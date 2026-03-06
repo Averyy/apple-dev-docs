@@ -20,6 +20,10 @@ object ReviewSubmission.Relationships.LastUpdatedByActor
 - [object ReviewSubmission.Relationships.LastUpdatedByActor.Data](reviewsubmission/relationships-data.dictionary/lastupdatedbyactor-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (ReviewSubmission.Relationships.LastUpdatedByActor.Data)
+
 ## See Also
 
 - [object ReviewSubmission.Relationships.App](reviewsubmission/relationships-data.dictionary/app-data.dictionary.md)

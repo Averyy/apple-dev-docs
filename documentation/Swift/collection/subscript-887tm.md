@@ -37,7 +37,7 @@ You can subscript a collection with any valid index other than the collection’
 
 ## Parameters
 
-- `position`: The position of the element to access.    must be a valid index of the collection that is not equal to the    property.
+- `position`: The position of the element to access. `position` must be a valid index of the collection that is not equal to the `endIndex` property.
 
 
 ---

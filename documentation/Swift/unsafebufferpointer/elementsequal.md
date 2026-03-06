@@ -40,7 +40,7 @@ print(a.elementsEqual([1, 2, 3]))
 // Prints "true"
 ```
 
-> **Note**: O(), where  is the lesser of the length of the sequence and the length of `other`.
+> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

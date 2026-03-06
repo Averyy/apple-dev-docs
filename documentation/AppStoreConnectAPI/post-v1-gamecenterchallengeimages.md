@@ -12,6 +12,10 @@ Reserve an image for a Game Center challenge.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterChallengeImages`
+
 ## See Also
 
 - [Read image information for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)

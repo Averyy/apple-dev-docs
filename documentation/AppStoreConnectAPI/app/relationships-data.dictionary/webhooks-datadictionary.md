@@ -12,6 +12,10 @@
 object App.Relationships.Webhooks
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

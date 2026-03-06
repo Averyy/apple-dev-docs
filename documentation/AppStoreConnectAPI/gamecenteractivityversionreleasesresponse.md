@@ -14,6 +14,13 @@ A response that contains a list of activity version release resources.
 object GameCenterActivityVersionReleasesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterActivityVersionRelease]) *(required)*
+- `included` ([GameCenterActivityVersion])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterActivityVersionRelease](gamecenteractivityversionrelease.md)

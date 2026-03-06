@@ -24,6 +24,12 @@ object ProfileCreateRequest.Data.Relationships
 - [object ProfileCreateRequest.Data.Relationships.Devices](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `bundleId` (ProfileCreateRequest.Data.Relationships.BundleId) *(required)*
+- `certificates` (ProfileCreateRequest.Data.Relationships.Certificates) *(required)*
+- `devices` (ProfileCreateRequest.Data.Relationships.Devices)
+
 ## See Also
 
 - [object ProfileCreateRequest.Data.Attributes](profilecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

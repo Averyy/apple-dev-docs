@@ -8,6 +8,27 @@ Get details about a specific background asset version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssets/{id}/versions`
+
+## Parameters
+
+- `fields[backgroundAssetVersionAppStoreReleases]` ([string])
+- `fields[backgroundAssetVersionExternalBetaReleases]` ([string])
+- `fields[backgroundAssetVersionInternalBetaReleases]` ([string])
+- `fields[backgroundAssetVersions]` ([string])
+- `filter[appStoreRelease.state]` ([string])
+- `filter[externalBetaRelease.state]` ([string])
+- `filter[internalBetaRelease.state]` ([string])
+- `filter[state]` ([string])
+- `filter[version]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `sort` ([string])
+- `fields[backgroundAssetUploadFiles]` ([string])
+- `fields[backgroundAssets]` ([string])
+
 ## See Also
 
 - [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)

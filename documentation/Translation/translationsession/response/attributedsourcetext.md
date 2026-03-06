@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-The original text to translate from.
+The original formatted text that was translated.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -22,9 +22,9 @@ let attributedSourceText: AttributedString?
 - [let sourceText: String](translationsession/response/sourcetext.md)
   The original text to translate from.
 - [let targetText: String](translationsession/response/targettext.md)
-  The result of the translation.
+  The translated text.
 - [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
-  The result of the translation.
+  The translated formatted text.
 
 
 ---

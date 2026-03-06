@@ -17,6 +17,11 @@ object CiBuildActionBuildRunLinkageResponse
 ### Dictionaries
 - [object CiBuildActionBuildRunLinkageResponse.Data](cibuildactionbuildrunlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (CiBuildActionBuildRunLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object CiBuildAction](cibuildaction.md)

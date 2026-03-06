@@ -22,7 +22,7 @@ init(importing: @escaping @Sendable (ProxyRepresentation) async throws -> Item)
 
 ## Parameters
 
-- `importing`: A closure that converts the chosen representation into   the transported item.
+- `importing`: A closure that converts the chosen representation into the transported item.
 
 
 ---

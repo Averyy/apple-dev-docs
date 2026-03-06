@@ -12,6 +12,11 @@
 object InAppPurchaseV2ContentLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

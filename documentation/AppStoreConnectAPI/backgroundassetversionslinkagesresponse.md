@@ -20,6 +20,12 @@ object BackgroundAssetVersionsLinkagesResponse
 - [object BackgroundAssetVersionsLinkagesResponse.Data](backgroundassetversionslinkagesresponse/data-data.dictionary.md)
   The data structure that represents a background asset versions linkages response resource.
 
+## Properties
+
+- `data` ([BackgroundAssetVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

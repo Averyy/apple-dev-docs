@@ -27,8 +27,8 @@ MapKit JS calls this method for each individual `LineString` geometry object. Yo
 
 ## Parameters
 
-- `overlay`: A   object.
-- `geoJSON`: The original GeoJSON object for the   object.
+- `overlay`: A [`PolylineOverlay`](polylineoverlay.md) object.
+- `geoJSON`: The original GeoJSON object for the `LineString` object.
 
 ## See Also
 

@@ -14,6 +14,52 @@ The example request below accesses information about a macOS version available t
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95
+```
+
+**Response**:
+
+```json
+{
+    "data": {
+        "type": "ciMacOsVersions",
+        "id": "20G95",
+        "attributes": {
+            "version": "20G95",
+            "name": "macOS Big Sur 11.5.2 (20G95)"
+        },
+        "relationships": {
+            "xcodeVersions": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/relationships/xcodeVersions",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/xcodeVersions"
+                }
+            }
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95"
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/{id}`
+
+## Parameters
+
+- `fields[ciMacOsVersions]` ([string]): Additional fields to include for the macOS Versions resource returned by the response.
+- `fields[ciXcodeVersions]` ([string]): Additional fields to include for the macOS Versions resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[xcodeVersions]` (integer): The number of included macOS Versions resources to return if the Xcode versions relationship is included.
+
 ## See Also
 
 - [List All macOS Versions Available in Xcode Cloud](get-v1-cimacosversions.md)

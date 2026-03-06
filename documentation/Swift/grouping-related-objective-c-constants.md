@@ -93,7 +93,7 @@ public struct UIViewAutoresizing: OptionSet {
 
 ##### Declare Typed Enumerations
 
-You use the `NS_TYPED_ENUM` to group constants with a raw value type that you specify. Use `NS_TYPED_ENUM` for sets of constants that  logically have values added in a Swift extension, and use `NS_TYPED_EXTENSIBLE_ENUM` for sets of constants that  be expanded in an extension.
+You use the `NS_TYPED_ENUM` to group constants with a raw value type that you specify. Use `NS_TYPED_ENUM` for sets of constants that *can’t* logically have values added in a Swift extension, and use `NS_TYPED_EXTENSIBLE_ENUM` for sets of constants that *can* be expanded in an extension.
 
 The example below uses the `NS_TYPED_ENUM` macro to declare the different colors used by a traffic light:
 

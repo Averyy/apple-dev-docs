@@ -20,6 +20,10 @@ object Curators.Relationships
 - [object Curators.Relationships.CuratorsPlaylistsRelationship](curators/relationships-data.dictionary/curatorsplaylistsrelationship.md)
   A relationship from the curator to its playlists.
 
+## Properties
+
+- `playlists` (Curators.Relationships.CuratorsPlaylistsRelationship): The playlists associated with the curator. By default, `playlists` includes identifiers only. Fetch limits: 10 default, 10 maximum.
+
 ## See Also
 
 - [object Curators.Attributes](curators/attributes-data.dictionary.md)

@@ -6,7 +6,7 @@
 An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API ?+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidTransactionNotConsumableError
 #### Discussion
 
 The system no longer sends this error.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

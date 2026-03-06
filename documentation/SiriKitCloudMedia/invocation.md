@@ -20,6 +20,12 @@ object Invocation
 - [object Invocation.Params](invocation/params-data.dictionary.md)
   The parameters of a client’s request.
 
+## Properties
+
+- `method` (string) *(required)*: The action your service takes to process this intent.
+- `params` (Invocation.Params) *(required)*: Additional properties specific to an invocation.
+- `session` (Session): The client’s information about this series of requests and responses.
+
 ## Relationships
 
 ### Inherited By

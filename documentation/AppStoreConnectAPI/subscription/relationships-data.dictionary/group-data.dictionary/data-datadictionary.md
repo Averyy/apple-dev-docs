@@ -12,6 +12,11 @@
 object Subscription.Relationships.Group.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

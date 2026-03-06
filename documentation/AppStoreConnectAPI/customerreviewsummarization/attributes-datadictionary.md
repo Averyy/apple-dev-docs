@@ -14,6 +14,13 @@ Attributes that describe a customer review summarization resource.
 object CustomerReviewSummarization.Attributes
 ```
 
+## Properties
+
+- `createdDate` (date-time)
+- `locale` (string)
+- `platform` (Platform)
+- `text` (string)
+
 
 ---
 

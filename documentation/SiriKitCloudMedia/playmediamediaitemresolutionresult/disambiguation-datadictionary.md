@@ -14,6 +14,10 @@ A result that requires the user to choose from multiple media items before proce
 object PlayMediaMediaItemResolutionResult.Disambiguation
 ```
 
+## Properties
+
+- `mediaItemsToDisambiguate` ([MediaItem]) *(required)*: Media items that might match the user’s intent.
+
 ## See Also
 
 - [object PlayMediaMediaItemResolutionResult.Success](playmediamediaitemresolutionresult/success-data.dictionary.md)

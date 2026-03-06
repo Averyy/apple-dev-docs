@@ -18,7 +18,7 @@ new inner(
 ## Parameters
 
 - `inner`: 
-- `cancel`: A function that takes no parameters that   uses to cancel the inner promise. If you provide this function, it must eventually throw  .
+- `cancel`: The optional function you can use to cancel the promise. A function that takes no parameters that `CancellablePromise` uses to cancel the inner promise. If you provide this function, it must eventually throw `CancelledError`.
 
 
 ---

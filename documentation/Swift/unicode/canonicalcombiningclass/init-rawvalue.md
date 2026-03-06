@@ -22,7 +22,7 @@ init(rawValue: UInt8)
 
 ## Parameters
 
-- `rawValue`: The raw integer value of the canonical combining   class.
+- `rawValue`: The raw integer value of the canonical combining class.
 
 
 ---

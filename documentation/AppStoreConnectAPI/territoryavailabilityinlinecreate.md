@@ -14,6 +14,11 @@ The request body you use to create a territory availability.
 object TerritoryAvailabilityInlineCreate
 ```
 
+## Properties
+
+- `id` (string)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

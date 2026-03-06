@@ -8,6 +8,8 @@ Wrap article body text around an inset pull quote.
 
 In [`Creating a Floating Caption`](creating-a-floating-caption.md), you positioned a component in the article margin. Now, you’ll position a component in the same columns as the body text and make text wrap around it.
 
+**On this page, you’ll learn how to:**
+
 - Enclose the `pullquote` components in a container so that you can position the components as one unit.
 - Use a `ComponentLayout` object to control the horizontal placement of the container.
 - Use an anchor to control vertical placement and allow body text to flow around the pull quote.

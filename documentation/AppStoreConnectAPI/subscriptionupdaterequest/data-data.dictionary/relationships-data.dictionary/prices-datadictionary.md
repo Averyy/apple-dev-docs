@@ -17,6 +17,10 @@ object SubscriptionUpdateRequest.Data.Relationships.Prices
 ### Objects
 - [object SubscriptionUpdateRequest.Data.Relationships.Prices.Data](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionUpdateRequest.Data.Relationships.Prices.Data])
+
 ## See Also
 
 - [object SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/introductoryoffers-data.dictionary.md)

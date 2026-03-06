@@ -22,6 +22,12 @@ object SubscriptionImageCreateRequest.Data
 - [object SubscriptionImageCreateRequest.Data.Relationships](subscriptionimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (SubscriptionImageCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
+- `relationships` (SubscriptionImageCreateRequest.Data.Relationships) *(required)*: Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

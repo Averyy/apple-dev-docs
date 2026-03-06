@@ -20,6 +20,10 @@ object AppStoreVersionBuildLinkageRequest
 - [object AppStoreVersionBuildLinkageRequest.Data](appstoreversionbuildlinkagerequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreVersionBuildLinkageRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

@@ -20,6 +20,10 @@ object CiWorkflow.Relationships.MacOsVersion
 - [object CiWorkflow.Relationships.MacOsVersion.Data](ciworkflow/relationships-data.dictionary/macosversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related macOS Versions resource.
 
+## Properties
+
+- `data` (CiWorkflow.Relationships.MacOsVersion.Data): The ID and type of the related macOS Versions resource.
+
 ## See Also
 
 - [object CiWorkflow.Relationships.Product](ciworkflow/relationships-data.dictionary/product-data.dictionary.md)

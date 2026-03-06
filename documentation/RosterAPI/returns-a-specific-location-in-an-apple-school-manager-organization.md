@@ -14,6 +14,35 @@ Access to the `locations` resource requires authorization to either the `edu.use
 
 ##### Example
 
+**Request**:
+
+```None
+curl "https://api-school.apple.com/rosterapi/v1/locations/1234" \
+        -H "Authorization: Bearer ${TOKEN}"
+
+```
+
+**Response**:
+
+```json
+{
+  "id":"1234",
+  "name":"Example Location",
+  "domain":"example.com",
+  "timeZone":"PST",
+  "dateCreated":"2020-07-06T20:32:00Z",
+  "dateLastModified":"2023-04-20T09:44:49.566949810Z"
+}
+```
+
+## Endpoint
+
+`GET https://api-school.apple.com/rosterapi/v1/locations/{locationId}`
+
+## Parameters
+
+- `locationId` (string) *(required)*: The identifier from the class. Use the `id` field from the [`Location`](location.md) object.
+
 ## See Also
 
 - [object Location](location.md)

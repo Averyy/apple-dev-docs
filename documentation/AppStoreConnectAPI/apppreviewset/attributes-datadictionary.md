@@ -14,6 +14,10 @@ Attributes that describe an App Preview Sets resource.
 object AppPreviewSet.Attributes
 ```
 
+## Properties
+
+- `previewType` (PreviewType)
+
 ## See Also
 
 - [object AppPreviewSet.Relationships](apppreviewset/relationships-data.dictionary.md)

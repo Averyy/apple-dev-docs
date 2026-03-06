@@ -31,7 +31,7 @@ let popularArtists = artists[followerColumn > 10_000_000]
 
 ## Parameters
 
-- `mask`: A Boolean collection. The subscript returns a slice that includes the column elements   that correspond to the   elements in  .
+- `mask`: A Boolean collection. The subscript returns a slice that includes the column elements that correspond to the `true` elements in `mask`.
 
 
 ---

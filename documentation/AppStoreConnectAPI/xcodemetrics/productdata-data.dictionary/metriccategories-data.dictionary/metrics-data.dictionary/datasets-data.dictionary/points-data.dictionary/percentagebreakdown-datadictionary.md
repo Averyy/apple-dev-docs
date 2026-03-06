@@ -14,6 +14,11 @@ A metric subtype and the percentage of the metric value it contributes.
 object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points.PercentageBreakdown
 ```
 
+## Properties
+
+- `subSystemLabel` (string): A string that describes the metric subtype, which provides more information about the measurement.
+- `value` (number): The percentage of the metric value the metric subtype contributes. Values are between `0` and `100`.
+
 
 ---
 

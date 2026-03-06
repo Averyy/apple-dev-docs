@@ -12,6 +12,12 @@
 object BetaTestersWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([BetaTester]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaTester](betatester.md)

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipDefaultExperienceLocalizations/{id}/relationships/appClipHeaderImage`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Localization Information of a Default App Clip Experience](get-v1-appclipdefaultexperiencelocalizations-_id_.md)

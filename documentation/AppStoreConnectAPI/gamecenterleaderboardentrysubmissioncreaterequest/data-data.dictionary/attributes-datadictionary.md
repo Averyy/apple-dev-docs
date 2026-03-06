@@ -18,6 +18,16 @@ object GameCenterLeaderboardEntrySubmissionCreateRequest.Data.Attributes
 
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
 
+## Properties
+
+- `bundleId` (string) *(required)*
+- `challengeIds` ([string])
+- `context` (number)
+- `scopedPlayerId` (string) *(required)*
+- `score` (number) *(required)*
+- `submittedDate` (date-time)
+- `vendorIdentifier` (string) *(required)*
+
 
 ---
 

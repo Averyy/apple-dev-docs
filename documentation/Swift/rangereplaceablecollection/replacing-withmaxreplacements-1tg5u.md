@@ -28,7 +28,7 @@ A new collection in which all occurrences of subsequence matching `regex` are re
 
 - `regex`: A regex describing the sequence to replace.
 - `replacement`: The new elements to add to the collection.
-- `maxReplacements`: A number specifying how many occurrences of the   sequence matching   to replace. Default is  .
+- `maxReplacements`: A number specifying how many occurrences of the sequence matching `regex` to replace. Default is `Int.max`.
 
 
 ---

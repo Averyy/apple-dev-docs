@@ -24,6 +24,12 @@ object InAppPurchaseOfferCode.Relationships
 - [object InAppPurchaseOfferCode.Relationships.Prices](inapppurchaseoffercode/relationships-data.dictionary/prices-data.dictionary.md)
   The data and links that describe the prices of the in-app purchase offer code.
 
+## Properties
+
+- `customCodes` (InAppPurchaseOfferCode.Relationships.CustomCodes)
+- `oneTimeUseCodes` (InAppPurchaseOfferCode.Relationships.OneTimeUseCodes)
+- `prices` (InAppPurchaseOfferCode.Relationships.Prices)
+
 ## See Also
 
 - [object InAppPurchaseOfferCode.Attributes](inapppurchaseoffercode/attributes-data.dictionary.md)

@@ -12,6 +12,12 @@
 object AppPriceScheduleResponse
 ```
 
+## Properties
+
+- `data` (AppPriceSchedule) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

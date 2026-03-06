@@ -9,6 +9,14 @@ Update a specific bundle ID’s name.
 
 - HTTPBody
 
+## Endpoint
+
+`PATCH https://api.enterprise.developer.apple.com/v1/bundleIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Delete a BundleId](delete-a-bundleid.md)

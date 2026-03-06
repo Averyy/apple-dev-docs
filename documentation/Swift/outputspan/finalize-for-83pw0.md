@@ -32,7 +32,7 @@ The context that created the output span is expected to remember what memory reg
 
 ## Parameters
 
-- `buffer`: The buffer we expect the   to reference.   This must be the same region of memory passed to   the   initializer.
+- `buffer`: The buffer we expect the `OutputSpan` to reference. This must be the same region of memory passed to the `OutputSpan` initializer.
 
 
 ---

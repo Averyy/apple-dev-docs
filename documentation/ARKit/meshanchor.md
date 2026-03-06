@@ -45,7 +45,7 @@ struct MeshAnchor
 
 ## See Also
 
-- [Incorporating real-world surroundings in an immersive experience](../visionos/incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [class SceneReconstructionProvider](scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.

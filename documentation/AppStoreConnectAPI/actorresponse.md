@@ -12,6 +12,11 @@
 object ActorResponse
 ```
 
+## Properties
+
+- `data` (Actor) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Actor](actor.md)

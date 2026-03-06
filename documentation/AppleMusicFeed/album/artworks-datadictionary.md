@@ -20,6 +20,11 @@ object Album.Artworks
 - [object Album.Artworks.Artwork](album/artworks-data.dictionary/artwork-data.dictionary.md)
   Information about a piece of artwork.
 
+## Properties
+
+- `artwork` (Album.Artworks.Artwork): The cover art for the album.
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates default artwork without an associated locale.
+
 ## See Also
 
 - [object Album.ArtistRole](album/artistrole.md)

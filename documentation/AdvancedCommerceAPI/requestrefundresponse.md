@@ -18,6 +18,11 @@ object RequestRefundResponse
 
 ##Discussion This is the response body for the [`Request Transaction Refund`](request-transaction-refund.md) endpoint.
 
+## Properties
+
+- `signedRenewalInfo` (JWSRenewalInfo): Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
+- `signedTransactionInfo` (JWSTransaction) *(required)*: Transaction information signed by the App Store, in JWS Compact Serialization format.
+
 ## See Also
 
 - [Request Transaction Refund](request-transaction-refund.md)

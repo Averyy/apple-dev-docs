@@ -12,6 +12,10 @@ Begin the process of uploading an asset pack for Apple-hosted background assets.
 
 - [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/backgroundAssetUploadFiles`
+
 ## See Also
 
 - [Read information for an uploaded asset pack](get-v1-backgroundassetuploadfiles-_id_.md)

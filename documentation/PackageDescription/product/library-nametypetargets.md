@@ -22,7 +22,7 @@ A library’s product can be either statically or dynamically linked. It’s rec
 ## Parameters
 
 - `name`: The name of the library product.
-- `type`: The optional type of the library that’s used to determine how to   link to the library. Leave this parameter so   Swift Package Manager can choose between static or dynamic linking (recommended). If you   don’t support both linkage types, use    or    for this parameter.
+- `type`: The optional type of the library that’s used to determine how to link to the library. Leave this parameter so Swift Package Manager can choose between static or dynamic linking (recommended). If you don’t support both linkage types, use [`Product.Library.LibraryType.static`](product/library/librarytype/static.md) or [`Product.Library.LibraryType.dynamic`](product/library/librarytype/dynamic.md) for this parameter.
 - `targets`: The targets that are bundled into a library product.
 
 ## See Also

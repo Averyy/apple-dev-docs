@@ -20,6 +20,12 @@ object GameCenterAchievementVersionV2Response
 - included:
 - links:
 
+## Properties
+
+- `data` (GameCenterAchievementVersionV2) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementVersionV2](gamecenterachievementversionv2.md)

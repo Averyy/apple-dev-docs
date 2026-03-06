@@ -12,6 +12,10 @@ Create an asset pack version record for your Apple-hosted background assets.
 
 - [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/backgroundAssetVersions`
+
 ## See Also
 
 - [Create asset pack record](post-v1-backgroundassets.md)

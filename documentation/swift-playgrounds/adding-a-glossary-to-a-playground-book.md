@@ -31,6 +31,10 @@ The top-level key in a glossary’s property list is a dictionary named `Terms`.
 
 The dictionary you use to define a term has three parts. Each part requires a specifically named key:
 
+- **`Definition`**: **Required.** A string that defines the term. Definitions are displayed both in the full glossary and in the popovers that appear when the term is tapped in prose.
+- **`FirstUse`**: A dictionary you use to point to the first time a term is used in a book. This dictionary has two required keys: `PageReference`, which is a link to the chapter and page where the term is first used; and `Title`, which you use to name the link to the chapter and page. Spaces and other special characters in `PageReference` must be encoded according to the URI rules in [`RFC 3986`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3986#section-2). For example, a reference to the “Commands” chapter’s “Issuing Commands” page is specified by using the `Commands/Issuing%20Commands` URI.
+- **`Title`**: A string you use to customize the term’s title. Use this key to localize terms. If you omit this key, the term is used as its own title.
+
 The following image shows the parts of a glossary as they appear in Swift Playgrounds.
 
 ![A screenshot of the glossary in Swift Playgrounds. Three parts are highlighted: the term, the definition, and the first-use link.](https://docs-assets.developer.apple.com/published/466f4aba7651840a9b8e4fa2ea51cd1f/adding-a-glossary-to-a-playground-book-2%402x.png)

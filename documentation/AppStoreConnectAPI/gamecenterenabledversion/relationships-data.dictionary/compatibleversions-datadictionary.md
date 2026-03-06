@@ -20,6 +20,12 @@ object GameCenterEnabledVersion.Relationships.CompatibleVersions
 - [object GameCenterEnabledVersion.Relationships.CompatibleVersions.Data](gamecenterenabledversion/relationships-data.dictionary/compatibleversions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([GameCenterEnabledVersion.Relationships.CompatibleVersions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterEnabledVersion.Relationships.App](gamecenterenabledversion/relationships-data.dictionary/app-data.dictionary.md)

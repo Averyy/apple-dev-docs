@@ -14,6 +14,12 @@ The subscription metadata to change, specifically the description and display na
 object SubscriptionChangeMetadataDescriptors
 ```
 
+## Properties
+
+- `description` (description): The new description for the subscription.
+- `displayName` (displayName): The new display name for the subscription.
+- `effective` (effective) *(required)*: The string that determines when the metadata change goes into effect.
+
 ## See Also
 
 - [Change Subscription Metadata](change-subscription-metadata.md)

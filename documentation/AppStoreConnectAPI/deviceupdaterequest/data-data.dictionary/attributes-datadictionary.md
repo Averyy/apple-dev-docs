@@ -14,6 +14,11 @@ Attributes whose values you’re changing as part of the update request.
 object DeviceUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `status` (string)
+
 
 ---
 

@@ -17,6 +17,10 @@ object SubscriptionPrice.Relationships.Territory
 ### Objects
 - [object SubscriptionPrice.Relationships.Territory.Data](subscriptionprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionPrice.Relationships.Territory.Data)
+
 ## See Also
 
 - [object SubscriptionPrice.Relationships.SubscriptionPricePoint](subscriptionprice/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)

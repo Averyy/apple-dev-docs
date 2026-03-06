@@ -36,6 +36,9 @@ Choose a location for your docking region that provides a comfortable viewing an
 
 To make your environment feel like a real, dynamic space, enable reflections from the video player on your environment surfaces. Reality Composer Pro supports two types of reflections that it exposes as Shader Graph nodes:
 
+- **Reflection Specular**: A direct reflection of media content. Apply this reflection type on glossy surfaces like metals, mirrors, and water.
+- **Reflection Diffuse**: A softer falloff of media content. Apply this reflection type to rougher, more organic surfaces like concrete or wood floor.
+
 Destination Video uses both types of reflections in its custom environment to create a more realistic experience that better grounds the video player in the scene.
 
 ![An image that shows the anchored video player reflecting its contents onto the floor in front of the player.](https://docs-assets.developer.apple.com/published/68bda7216483b1f0a3d248933f19932d/reflections.jpg)

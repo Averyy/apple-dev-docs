@@ -16,7 +16,7 @@ Apple News Format has these behaviors for components:
 - [`Parallax`](https://developer.apple.com/documentation/applenewsformat/parallax). Causes a component to move at a specific speed.
 - [`Springy`](https://developer.apple.com/documentation/applenewsformat/springy). Causes a component to act as if it is held in place with a short spring.
 
-A  is different from an . A behavior is persistent and always in effect as long as the user is viewing the article. An animation occurs only once each time the user views the article. See [`About Component Animations`](about-component-animations.md).
+A *behavior* is different from an *animation*. A behavior is persistent and always in effect as long as the user is viewing the article. An animation occurs only once each time the user views the article. See [`About Component Animations`](about-component-animations.md).
 
 ## See Also
 

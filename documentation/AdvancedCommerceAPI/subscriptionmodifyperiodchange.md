@@ -14,6 +14,11 @@ The data your app provides to change the period of an auto-renewable subscriptio
 object SubscriptionModifyPeriodChange
 ```
 
+## Properties
+
+- `effective` (effective) *(required)*
+- `period` (period) *(required)*
+
 ## See Also
 
 - [object SubscriptionModifyInAppRequest](subscriptionmodifyinapprequest.md)

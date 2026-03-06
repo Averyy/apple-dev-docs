@@ -20,6 +20,11 @@ object BackgroundAssetVersionCreateRequest.Data
 - [object BackgroundAssetVersionCreateRequest.Data.Relationships](backgroundassetversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `relationships` (BackgroundAssetVersionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

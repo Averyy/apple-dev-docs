@@ -14,6 +14,11 @@ The type and ID of the Beta App Clip Invocations resource that you’re relating
 object BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships.BetaAppClipInvocation.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Beta App Clip Invocations resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

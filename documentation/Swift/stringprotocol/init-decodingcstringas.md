@@ -23,8 +23,8 @@ init<Encoding>(decodingCString nullTerminatedCodeUnits: UnsafePointer<Encoding.C
 
 ## Parameters
 
-- `nullTerminatedCodeUnits`: A pointer to a sequence of contiguous code   units in the encoding specified in  , ending just   before the first zero code unit.
-- `sourceEncoding`: The encoding in which the code units should be   interpreted.
+- `nullTerminatedCodeUnits`: A pointer to a sequence of contiguous code units in the encoding specified in `sourceEncoding`, ending just before the first zero code unit.
+- `sourceEncoding`: The encoding in which the code units should be interpreted.
 
 
 ---

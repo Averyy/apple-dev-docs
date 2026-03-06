@@ -17,6 +17,10 @@ object WebhookDeliveryCreateRequest.Data.Relationships.Template
 ### Dictionaries
 - [object WebhookDeliveryCreateRequest.Data.Relationships.Template.Data](webhookdeliverycreaterequest/data-data.dictionary/relationships-data.dictionary/template-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (WebhookDeliveryCreateRequest.Data.Relationships.Template.Data) *(required)*
+
 
 ---
 

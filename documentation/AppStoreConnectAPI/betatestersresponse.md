@@ -14,6 +14,13 @@ A response that contains a list of Beta Tester resources.
 object BetaTestersResponse
 ```
 
+## Properties
+
+- `data` ([BetaTester]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List All Beta Testers in a Beta Group](get-v1-betagroups-_id_-betatesters.md)

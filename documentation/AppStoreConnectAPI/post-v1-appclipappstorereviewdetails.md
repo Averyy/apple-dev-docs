@@ -8,6 +8,10 @@ Provide App Clip metadata required by App Store Review.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appClipAppStoreReviewDetails`
+
 ## Request Body
 
 The request body you use to create App Store detail information.

@@ -26,7 +26,7 @@ The width of `x` when encoded in UTF-8, from `1` to `4`.
 
 #### Discussion
 
-Because a Unicode scalar value can require up to 21 bits to store its value, some Unicode scalars are represented in UTF-8 by a sequence of up to 4 code units. The first code unit is designated a  byte and the rest are  bytes.
+Because a Unicode scalar value can require up to 21 bits to store its value, some Unicode scalars are represented in UTF-8 by a sequence of up to 4 code units. The first code unit is designated a *lead* byte and the rest are *continuation* bytes.
 
 ```swift
 let anA: Unicode.Scalar = "A"

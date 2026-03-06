@@ -26,7 +26,7 @@ If the contents of the file path isn’t a well-formed Unicode string, this init
 
 ## Parameters
 
-- `path`: The file path to be interpreted as   .
+- `path`: The file path to be interpreted as `CInterop.PlatformUnicodeEncoding`.
 
 
 ---

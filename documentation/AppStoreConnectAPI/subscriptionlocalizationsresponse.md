@@ -12,6 +12,13 @@
 object SubscriptionLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([SubscriptionLocalization]) *(required)*
+- `included` ([Subscription])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

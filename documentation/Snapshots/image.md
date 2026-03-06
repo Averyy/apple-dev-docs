@@ -22,6 +22,12 @@ If an image fails to load in a reasonable amount of time, the snapshot rendering
 
 > ❗ **Important**:  By providing an image URL, you’re responsible for ensuring the availability of the image at all times.
 
+## Properties
+
+- `url` (string): A required property that takes the full URL that specifies the location of the image. As an alternative, you may provide a data URL.
+- `height` (integer): The height of the image in scale-independent pixels. This property only required when referencing an annotation with `“markerStyle”: ”img”`.
+- `width` (integer): The width of the image in scale-independent pixels. This property only required when referencing an annotation with `“markerStyle”: ”img”`.
+
 ## See Also
 
 - [Generating a URL and Signature to Create a Maps Web Snapshot](generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)

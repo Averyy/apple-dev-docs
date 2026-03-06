@@ -36,6 +36,11 @@ This object is the response from the alternative distribution key endpoints. For
 }
 ```
 
+## Properties
+
+- `data` (AlternativeDistributionKey) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionKey](alternativedistributionkey.md)

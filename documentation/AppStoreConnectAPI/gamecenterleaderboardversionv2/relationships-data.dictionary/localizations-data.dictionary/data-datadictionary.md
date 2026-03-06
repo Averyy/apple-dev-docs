@@ -17,6 +17,11 @@ object GameCenterLeaderboardVersionV2.Relationships.Localizations.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

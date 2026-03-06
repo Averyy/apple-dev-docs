@@ -52,8 +52,8 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 ## Parameters
 
 - `i`: A valid index of the array.
-- `distance`: The distance to offset  .
-- `limit`: A valid index of the collection to use as a limit. If   ,   should be greater than   to have any   effect. Likewise, if  ,   should be less than    to have any effect.
+- `distance`: The distance to offset `i`.
+- `limit`: A valid index of the collection to use as a limit. If `distance > 0`, `limit` should be greater than `i` to have any effect. Likewise, if `distance < 0`, `limit` should be less than `i` to have any effect.
 
 
 ---

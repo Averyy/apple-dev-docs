@@ -20,7 +20,7 @@ init(_ types: ImageAnalyzer.AnalysisTypes)
 
 ## Parameters
 
-- `types`: The types of items that an image analyzer looks for in the   image.
+- `types`: The types of items that an image analyzer looks for in the image.
 
 ## See Also
 

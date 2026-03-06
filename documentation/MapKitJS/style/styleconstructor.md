@@ -16,7 +16,7 @@ constructor(options?: StyleConstructorOptions);
 
 ## Parameters
 
-- `options`: A   object of style properties.
+- `options`: A [`StyleConstructorOptions`](styleconstructoroptions.md) object of style properties.
 
 ## See Also
 

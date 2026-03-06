@@ -23,7 +23,7 @@ init(_ file: URL, allowAccessingOriginalFile: Bool = false)
 ## Parameters
 
 - `file`: A URL that describes the location of the file.
-- `allowAccessingOriginalFile`: A Boolean value that indicates whether   the receiver can read and write the original file.   When set to  , the receiver can only gain access to a copy of the file.
+- `allowAccessingOriginalFile`: A Boolean value that indicates whether the receiver can read and write the original file. When set to `false`, the receiver can only gain access to a copy of the file.
 
 ## See Also
 

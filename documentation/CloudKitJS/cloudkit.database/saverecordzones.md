@@ -26,7 +26,12 @@ See [`Modifying Zones (zones/modify)`](https://developer.apple.comhttps://develo
 
 ## Parameters
 
-- `zones`: Possible values are:
+- `zones`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.ZoneID`](cloudkit.zoneid.md) | A zone in the database to save. |
+| `CloudKit.ZoneID[]` | An array of zones to save. |
+| `String` | The name of a zone to save. |
+| `String[]` | An array of names of zones to save. |
 
 ## See Also
 

@@ -28,7 +28,7 @@ If the contents of the platform string isn’t well-formed Unicode, this initial
 
 ## Parameters
 
-- `platformString`: The null-terminated platform string to be   interpreted as  .
+- `platformString`: The null-terminated platform string to be interpreted as `CInterop.PlatformUnicodeEncoding`.
 
 
 ---

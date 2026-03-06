@@ -23,8 +23,8 @@ func fatalError(_ message: @autoclosure () -> String = String(), file: StaticStr
 ## Parameters
 
 - `message`: The string to print. The default is an empty string.
-- `file`: The file name to print with  . The default is the file   where   is called.
-- `line`: The line number to print along with  . The default is the   line number where   is called.
+- `file`: The file name to print with `message`. The default is the file where `fatalError(_:file:line:)` is called.
+- `line`: The line number to print along with `message`. The default is the line number where `fatalError(_:file:line:)` is called.
 
 ## See Also
 

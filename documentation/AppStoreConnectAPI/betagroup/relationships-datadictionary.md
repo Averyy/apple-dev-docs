@@ -27,6 +27,14 @@ object BetaGroup.Relationships
 - [object BetaGroup.Relationships.BetaRecruitmentCriteria](betagroup/relationships-data.dictionary/betarecruitmentcriteria-data.dictionary.md)
 - [object BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck](betagroup/relationships-data.dictionary/betarecruitmentcriterioncompatiblebuildcheck-data.dictionary.md)
 
+## Properties
+
+- `app` (BetaGroup.Relationships.App)
+- `betaRecruitmentCriteria` (BetaGroup.Relationships.BetaRecruitmentCriteria)
+- `betaRecruitmentCriterionCompatibleBuildCheck` (BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck)
+- `betaTesters` (BetaGroup.Relationships.BetaTesters)
+- `builds` (BetaGroup.Relationships.Builds)
+
 ## See Also
 
 - [object BetaGroup.Attributes](betagroup/attributes-data.dictionary.md)

@@ -12,6 +12,13 @@
 object BetaFeedbackScreenshotSubmissionsResponse
 ```
 
+## Properties
+
+- `data` ([BetaFeedbackScreenshotSubmission]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)

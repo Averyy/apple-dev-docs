@@ -26,7 +26,7 @@ The index value immediately before `i`.
 
 ## Parameters
 
-- `i`: A valid index of the collection.   must be greater than   .
+- `i`: A valid index of the collection. `i` must be greater than `startIndex`.
 
 ## See Also
 

@@ -24,7 +24,7 @@ This setting applies to all warnings emitted by the Swift compiler. To control s
 
 ## Parameters
 
-- `level`: The treatment level for all warnings (  or  ).
+- `level`: The treatment level for all warnings (`.warning` or `.error`).
 - `condition`: A condition that restricts the application of the build setting.
 
 

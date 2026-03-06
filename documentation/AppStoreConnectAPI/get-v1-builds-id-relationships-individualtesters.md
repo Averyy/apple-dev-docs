@@ -8,6 +8,14 @@ Get a list of resource IDs of individual testers associated with a build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/individualTesters`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return.
+
 ## See Also
 
 - [List All Individual Testers for a Build](get-v1-builds-_id_-individualtesters.md)

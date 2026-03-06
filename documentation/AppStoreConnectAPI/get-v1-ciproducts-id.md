@@ -14,6 +14,80 @@ The example request below retrieves information about a specific Xcode Cloud pro
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.comv1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469
+```
+
+**Response**:
+
+```json
+{
+    "data": {
+        "type": "ciProducts",
+        "id": "1987a0d5-a64d-4799-b7d2-a9135ffca469",
+        "attributes": {
+            "name": "test-ac822ba6-97a1-4a4f-84f3-4b80a71150fc",
+            "createdDate": "2021-08-17T18:02:43.097Z",
+            "productType": "APP"
+        },
+        "relationships": {
+            "app": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/relationships/app",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/app"
+                }
+            },
+            "workflows": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/relationships/workflows",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/workflows"
+                }
+            },
+            "primaryRepositories": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/relationships/primaryRepositories",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/primaryRepositories"
+                }
+            },
+            "additionalRepositories": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/relationships/additionalRepositories",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/additionalRepositories"
+                }
+            },
+            "buildRuns": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/relationships/buildRuns",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469/buildRuns"
+                }
+            }
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciProducts/1987a0d5-a64d-4799-b7d2-a9135ffca469"
+    }
+}
+
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciProducts/{id}`
+
+## Parameters
+
+- `fields[ciProducts]` ([string]): Additional fields to include for each Products resource returned by the response.
+- `fields[scmRepositories]` ([string]): Additional fields to include for each Products resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[primaryRepositories]` (integer): The number of included Products resources to return if the primary repositories relationship is included.
+- `fields[apps]` ([string]): Additional fields to include for each Products resource returned by the response.
+
 ## See Also
 
 - [List All Xcode Cloud Products](get-v1-ciproducts.md)

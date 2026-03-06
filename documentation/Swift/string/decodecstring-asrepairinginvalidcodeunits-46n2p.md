@@ -52,9 +52,9 @@ invalidUTF8.withUnsafeBufferPointer { ptr in
 
 ## Parameters
 
-- `cString`: A pointer to a null-terminated sequence of   code units encoded in  .
-- `encoding`: The Unicode encoding of the data referenced by  .
-- `isRepairing`: Pass   to create a new string, even when the data   referenced by   contains ill-formed sequences. Ill-formed   sequences are replaced with the Unicode replacement character   ( ). Pass   to interrupt the creation of the new   string if an ill-formed sequence is detected.
+- `cString`: A pointer to a null-terminated sequence of code units encoded in `encoding`.
+- `encoding`: The Unicode encoding of the data referenced by `cString`.
+- `isRepairing`: Pass `true` to create a new string, even when the data referenced by `cString` contains ill-formed sequences. Ill-formed sequences are replaced with the Unicode replacement character (`"\u{FFFD}"`). Pass `false` to interrupt the creation of the new string if an ill-formed sequence is detected.
 
 ## See Also
 

@@ -41,13 +41,13 @@ The following code example shows a component layout object called `heading1Layou
 
 You can use the `margin` property of a [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object to specify the top and bottom margins (in points) for a component and to create space above and below the component.  Specify a single number to use for both measurements, or — to specify different settings for the top and bottom margins — use the [`Margin`](https://developer.apple.com/documentation/applenewsformat/margin) object.
 
-In addition to using `margin`, you can also use the `padding` property of the `ComponentLayout` object to define the space inside a component. With the `padding` property, you can set spacing for both sides of the component, as well as for the top and bottom. The `padding` property is different from margins in that it applies to the spacing  the component; margins are applied to the spacing of the component within the article.
+In addition to using `margin`, you can also use the `padding` property of the `ComponentLayout` object to define the space inside a component. With the `padding` property, you can set spacing for both sides of the component, as well as for the top and bottom. The `padding` property is different from margins in that it applies to the spacing *inside* the component; margins are applied to the spacing of the component within the article.
 
 An [`Anchor`](https://developer.apple.com/documentation/applenewsformat/anchor) object located within the component object lets you associate the placement of one component with another component so you can align components vertically in your layout. The position of the target component determines the position of the component that has the anchor.
 
 Horizontally align the contents of a component within the component. (This property applies only to [`Image`](https://developer.apple.com/documentation/applenewsformat/image), [`Logo`](https://developer.apple.com/documentation/applenewsformat/logo), and [`Divider`](https://developer.apple.com/documentation/applenewsformat/divider) components.)
 
-> 💡 **Tip**:  To position text  a component, such as for centered text or for a drop cap, use the [`ComponentTextStyle`](https://developer.apple.com/documentation/applenewsformat/componenttextstyle) object for the individual component.
+> 💡 **Tip**:  To position text *within* a component, such as for centered text or for a drop cap, use the [`ComponentTextStyle`](https://developer.apple.com/documentation/applenewsformat/componenttextstyle) object for the individual component.
 
 ##### Align and Position Content
 

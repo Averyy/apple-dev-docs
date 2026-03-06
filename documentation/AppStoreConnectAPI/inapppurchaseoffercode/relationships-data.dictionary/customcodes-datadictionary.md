@@ -20,6 +20,12 @@ object InAppPurchaseOfferCode.Relationships.CustomCodes
 - [object InAppPurchaseOfferCode.Relationships.CustomCodes.Data](inapppurchaseoffercode/relationships-data.dictionary/customcodes-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([InAppPurchaseOfferCode.Relationships.CustomCodes.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes](inapppurchaseoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary.md)

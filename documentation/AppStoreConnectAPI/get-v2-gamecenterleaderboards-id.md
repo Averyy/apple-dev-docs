@@ -23,6 +23,18 @@ Get information about a specific Game Center leaderboard.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboards/{id}`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardVersions]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `include` ([string])
+- `limit[gameCenterLeaderboardSets]` (integer)
+- `limit[versions]` (integer)
+
 ## See Also
 
 - [List all versions for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)

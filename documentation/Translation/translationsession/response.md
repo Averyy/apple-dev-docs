@@ -27,16 +27,16 @@ You get a single response structure after you translate a string, or when you ca
 - [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourcetext:targettext:clientidentifier:).md)
   Creates an instance of a translation response.
 - [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourceattributedtext:targetattributedtext:clientidentifier:).md)
-  Creates an instance of a translation response.
+  Creates an instance of a translation response with formatted text.
 ### Getting translation results
 - [let sourceText: String](translationsession/response/sourcetext.md)
   The original text to translate from.
 - [let targetText: String](translationsession/response/targettext.md)
-  The result of the translation.
+  The translated text.
 - [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
-  The original text to translate from.
+  The original formatted text that was translated.
 - [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
-  The result of the translation.
+  The translated formatted text.
 ### Getting translation details
 - [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
   The language that the framework translated the text from.
@@ -54,7 +54,7 @@ You get a single response structure after you translate a string, or when you ca
 ## See Also
 
 - [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
-  Translates a single attributed string of text.
+  Translates a formatted string of text, preserving formatting in the translation.
 - [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)

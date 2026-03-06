@@ -12,6 +12,11 @@
 object AlternativeDistributionPackageVersion.Relationships.Deltas.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

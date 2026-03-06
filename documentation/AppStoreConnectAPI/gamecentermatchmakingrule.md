@@ -20,6 +20,13 @@ object GameCenterMatchmakingRule
 - [object GameCenterMatchmakingRule.Attributes](gamecentermatchmakingrule/attributes-data.dictionary.md)
   The attributes of a matchmaking rule.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingRule.Attributes): The attributes of the rule.
+- `id` (string) *(required)*: The unique identifier for the rule.
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleCreateRequest](gamecentermatchmakingrulecreaterequest.md)

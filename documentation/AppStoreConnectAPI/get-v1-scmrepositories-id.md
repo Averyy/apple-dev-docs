@@ -14,6 +14,59 @@ The example request below retrieves information about a specific Git repository 
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870
+```
+
+**Response**:
+
+```json
+{
+    “data”: {
+      “type”: “scmRepositories”,
+      “id”: “a2b04ba9-85fa-478c-87a2-b6d19626b870”,
+      “attributes”: {
+        “lastAccessedDate”: null,
+        “httpCloneUrl”: “https://github.com/foo/bar.git”,
+        “sshCloneUrl”: “ssh://git@github.com/foo/bar.git”,
+        “ownerName”: “foo”,
+        “repositoryName”: “bar”
+      },
+      “relationships”: {
+        “gitReferences”: {
+          “links”: {
+            “self”: “https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870/relationships/gitReferences”,
+            “related”: “https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870/gitReferences”
+          }
+        },
+        “pullRequests”: {
+          “links”: {
+            “self”: “https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870/relationships/pullRequests”,
+            “related”: “https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870/pullRequests”
+          }
+        }
+      },
+      “links”: {
+        “self”: “https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870”
+      }
+    },
+    “links”: {
+      “self”: “https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870”
+    }
+  }
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmRepositories/{id}`
+
+## Parameters
+
+- `fields[scmRepositories]` ([string]): Additional fields to include for the Repositories resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+
 ## See Also
 
 - [List All Git Repositories](get-v1-scmrepositories.md)

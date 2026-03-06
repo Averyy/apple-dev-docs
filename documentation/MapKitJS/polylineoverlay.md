@@ -20,7 +20,7 @@ class PolylineOverlay extends Overlay
 
 #### Overview
 
-A  is a shape that consists of connected line segments that you define with a set of points. The first and last points don’t connect to each other.
+A *polyline* is a shape that consists of connected line segments that you define with a set of points. The first and last points don’t connect to each other.
 
 The longitude of all points should be within a 360-degree range. Depending on how you specify the longitude, a line between Tokyo and Los Angeles that you create with a [`PolylineOverlay`](polylineoverlay.md) may take a different route. Specifying a longitude of -118º for Los Angeles and 140º for Tokyo results in a very long line spanning 258º. Specifying a longitude of 242º (that’s, -118 + 360) for Los Angeles and 140º for Tokyo results in a shorter line spanning 98º. MapKit JS may not render the polyline correctly if the range of longitudes is larger than 360º.
 

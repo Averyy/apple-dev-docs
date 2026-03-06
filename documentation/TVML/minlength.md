@@ -14,6 +14,8 @@ The amount of space reserved is equal to the amount of space taken up by an indi
 
 ##### Values for Minlength
 
+- **Integer**: The amount of space reserved.
+
 ##### Values That Use Minlength
 
 - [`ordinal`](ordinal.md)

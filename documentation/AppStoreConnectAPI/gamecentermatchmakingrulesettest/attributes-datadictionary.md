@@ -20,6 +20,10 @@ object GameCenterMatchmakingRuleSetTest.Attributes
 - [object GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults](gamecentermatchmakingrulesettest/attributes-data.dictionary/matchmakingresults-data.dictionary.md)
   The data structure representing the results of a match request.
 
+## Properties
+
+- `matchmakingResults` ([[GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults]])
+
 
 ---
 

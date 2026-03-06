@@ -12,6 +12,11 @@
 object GameCenterDetail.Attributes
 ```
 
+## Properties
+
+- `arcadeEnabled` (boolean)
+- `challengeEnabled` (boolean): This attribue is deprecated.
+
 ## See Also
 
 - [object GameCenterDetail.Relationships](gamecenterdetail/relationships-data.dictionary.md)

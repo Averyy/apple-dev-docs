@@ -18,6 +18,11 @@ object MarketplaceWebhookCreateRequest.Data
 - [object MarketplaceWebhookCreateRequest.Data.Attributes](marketplacewebhookcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the marketplace webhook used to create a new resource.
 
+## Properties
+
+- `attributes` (MarketplaceWebhookCreateRequest.Data.Attributes) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

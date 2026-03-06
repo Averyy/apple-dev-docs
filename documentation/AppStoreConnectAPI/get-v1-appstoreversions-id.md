@@ -13,6 +13,29 @@ Get information for a specific app store version.
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}`
+
+## Parameters
+
+- `limit[appStoreVersionLocalizations]` (integer): Number of resources to return.
+- `include` ([string]): Relationship data to include in the response. Note: `ageRatingDeclaration` is deprecated.
+- `fields[appStoreVersions]` ([string]): Fields to return for included related types. Note: `ageRatingDeclaration` is deprecated.
+- `fields[appStoreVersionSubmissions]` ([string]): Fields to return for included related types.
+- `fields[builds]` ([string]): Fields to return for included related types.
+- `fields[appStoreReviewDetails]` ([string]): Fields to return for included related types.
+- `fields[ageRatingDeclarations]` ([string]): Deprecated. To get age rating declarations, use  [`Read age rating declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md) instead.
+- `fields[appStoreVersionPhasedReleases]` ([string]): Fields to return for included related types.
+- `fields[routingAppCoverages]` ([string]): Fields to return for included related types.
+- `fields[appStoreVersionLocalizations]` ([string]): Fields to return for included related types.
+- `fields[appClipDefaultExperiences]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `limit[appStoreVersionExperiments]` (integer)
+- `limit[appStoreVersionExperimentsV2]` (integer)
+- `fields[alternativeDistributionPackages]` ([string])
+- `fields[gameCenterAppVersions]` ([string])
+
 ## See Also
 
 - [List All App Store Versions for an App](get-v1-apps-_id_-appstoreversions.md)

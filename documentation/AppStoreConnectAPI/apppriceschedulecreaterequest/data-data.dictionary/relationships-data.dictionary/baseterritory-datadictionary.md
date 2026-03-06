@@ -17,6 +17,10 @@ object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory
 ### Objects
 - [object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory.Data](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/baseterritory-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory.Data) *(required)*
+
 ## See Also
 
 - [object AppPriceScheduleCreateRequest.Data.Relationships.App](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)

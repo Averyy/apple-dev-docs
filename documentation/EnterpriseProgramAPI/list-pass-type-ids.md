@@ -5,6 +5,22 @@
 
 Find and list pass type IDs that are registered to your team.
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/passTypeIds`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[passTypeIds]` ([string])
+- `filter[id]` ([string])
+- `filter[identifier]` ([string])
+- `filter[name]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[certificates]` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [Create a PassTypeId](create-a-passtypeid.md)

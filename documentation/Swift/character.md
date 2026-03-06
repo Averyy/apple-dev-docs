@@ -41,7 +41,7 @@ print("UTF-8 representation count: \(greeting.utf8.count)")
 // Prints "UTF-8 representation count: 11"
 ```
 
-Every `Character` instance is composed of one or more Unicode scalar values that are grouped together as an . The way these scalar values are grouped is defined by a canonical, localized, or otherwise tailored Unicode segmentation algorithm.
+Every `Character` instance is composed of one or more Unicode scalar values that are grouped together as an *extended grapheme cluster*. The way these scalar values are grouped is defined by a canonical, localized, or otherwise tailored Unicode segmentation algorithm.
 
 For example, a country’s Unicode flag character is made up of two regional indicator scalar values that correspond to that country’s ISO 3166-1 alpha-2 code. The alpha-2 code for The United States is “US”, so its flag character is made up of the Unicode scalar values `"\u{1F1FA}"` (REGIONAL INDICATOR SYMBOL LETTER U) and `"\u{1F1F8}"` (REGIONAL INDICATOR SYMBOL LETTER S). When placed next to each other in a string literal, these two scalar values are combined into a single grapheme cluster, represented by a `Character` instance in Swift.
 

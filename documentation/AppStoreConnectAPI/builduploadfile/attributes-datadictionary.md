@@ -14,6 +14,17 @@ Attributes that describe a build upload file resource.
 object BuildUploadFile.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `assetType` (string)
+- `fileName` (string)
+- `fileSize` (int64)
+- `sourceFileChecksums` (Checksums)
+- `uploadOperations` ([DeliveryFileUploadOperation])
+- `uti` (string)
+
 
 ---
 

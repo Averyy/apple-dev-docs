@@ -19,6 +19,10 @@ object GameCenterChallengeUpdateRequest
 ### Dictionaries
 - [object GameCenterChallengeUpdateRequest.Data](gamecenterchallengeupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterChallenge](gamecenterchallenge.md)

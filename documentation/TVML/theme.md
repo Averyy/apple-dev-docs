@@ -13,6 +13,9 @@ Setting the `theme` attribute changes the font color for text. Badge colors are 
 
 ##### Values for Theme
 
+- **`dark`**: The theme is set to dark.
+- **`light`**: The theme is set to light.
+
 ##### Elements That Use Theme
 
 The `theme` attribute can be used with any element.

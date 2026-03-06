@@ -20,6 +20,12 @@ object GameCenterLeaderboardImageV2Response
 - included:
 - links:
 
+## Properties
+
+- `data` (GameCenterLeaderboardImageV2) *(required)*
+- `included` ([GameCenterLeaderboardLocalizationV2])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardImageV2](gamecenterleaderboardimagev2.md)

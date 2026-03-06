@@ -13,7 +13,7 @@ An animation is an effect, such as a fade-in, that’s applied to an individual 
 - [`MoveInAnimation`](https://developer.apple.com/documentation/applenewsformat/moveinanimation). Causes the component to move into view from the left or right side of the screen.
 - [`ScaleFadeAnimation`](https://developer.apple.com/documentation/applenewsformat/scalefadeanimation). Causes the component to fade into view and scale up.
 
-An  is different from a . An animation occurs only once each time the user views the article, while a behavior is persistent and always in effect as long as the user is viewing the article. See [`About Component Behaviors`](about-component-behaviors.md).
+An *animation* is different from a *behavior*. An animation occurs only once each time the user views the article, while a behavior is persistent and always in effect as long as the user is viewing the article. See [`About Component Behaviors`](about-component-behaviors.md).
 
 You can apply a combination of animations and behaviors to a `chapter` or `section` component by using a scene. See [`Adding a Scene to a Chapter or a Section Header`](adding-a-scene-to-a-chapter-or-a-section-header.md).
 

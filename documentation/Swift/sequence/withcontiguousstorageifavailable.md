@@ -37,7 +37,7 @@ A `Collection` that provides its own implementation of this method must provide 
 
 ## Parameters
 
-- `body`: A closure that receives an   to the   sequence’s contiguous storage.
+- `body`: A closure that receives an `UnsafeBufferPointer` to the sequence’s contiguous storage.
 
 
 ---

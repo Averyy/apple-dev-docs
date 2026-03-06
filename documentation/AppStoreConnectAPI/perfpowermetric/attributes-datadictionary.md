@@ -14,6 +14,12 @@ Attributes that describe a Power and Performance Metrics resource.
 object PerfPowerMetric.Attributes
 ```
 
+## Properties
+
+- `deviceType` (string): A string that represents the device type.
+- `metricType` (string): For more information about metric types, see [`MetricCategory`](metriccategory.md).
+- `platform` (string)
+
 
 ---
 

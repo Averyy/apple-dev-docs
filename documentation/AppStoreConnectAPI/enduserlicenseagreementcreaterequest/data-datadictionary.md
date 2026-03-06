@@ -22,6 +22,12 @@ object EndUserLicenseAgreementCreateRequest.Data
 - [object EndUserLicenseAgreementCreateRequest.Data.Relationships](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (EndUserLicenseAgreementCreateRequest.Data.Attributes) *(required)*
+- `relationships` (EndUserLicenseAgreementCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -18,6 +18,8 @@ Here’s an example that sets the last name for a monogram.
 
 ##### Values for Lastname
 
+- **String**: The last name of a person.
+
 ##### Elements That Use Lastname
 
 - [`monogram`](monogram.md)

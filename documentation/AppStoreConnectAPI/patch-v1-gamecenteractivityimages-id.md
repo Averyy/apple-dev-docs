@@ -12,6 +12,14 @@ Commit an uploaded image asset as a Game Center activity image.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterActivityImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read activity image information ](get-v1-gamecenteractivityimages-_id_.md)

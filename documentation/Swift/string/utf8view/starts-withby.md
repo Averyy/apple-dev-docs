@@ -26,18 +26,18 @@ func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix, by areEquivalen
 
 #### Discussion
 
-The predicate must be an  over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
+The predicate must be an *equivalence relation* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 
 - `areEquivalent(a, a)` is always `true`. (Reflexivity)
 - `areEquivalent(a, b)` implies `areEquivalent(b, a)`. (Symmetry)
 - If `areEquivalent(a, b)` and `areEquivalent(b, c)` are both `true`, then `areEquivalent(a, c)` is also `true`. (Transitivity)
 
-> **Note**: O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
+> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
 ## Parameters
 
 - `possiblePrefix`: A sequence to compare to this sequence.
-- `areEquivalent`: A predicate that returns   if its two arguments   are equivalent; otherwise,  .
+- `areEquivalent`: A predicate that returns `true` if its two arguments are equivalent; otherwise, `false`.
 
 
 ---

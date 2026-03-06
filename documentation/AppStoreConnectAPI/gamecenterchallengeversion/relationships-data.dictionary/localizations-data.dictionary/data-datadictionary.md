@@ -12,6 +12,11 @@
 object GameCenterChallengeVersion.Relationships.Localizations.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

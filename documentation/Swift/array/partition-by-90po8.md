@@ -37,7 +37,7 @@ let p = numbers.partition(by: { $0 > 30 })
 // numbers == [30, 10, 20, 30, 30, 60, 40]
 ```
 
-The `numbers` array is now arranged in two partitions. The first partition, `numbers[..<p]`, is made up of the elements that are not greater than 30. The second partition, `numbers[p...]`, is made up of the elements that  greater than 30.
+The `numbers` array is now arranged in two partitions. The first partition, `numbers[..<p]`, is made up of the elements that are not greater than 30. The second partition, `numbers[p...]`, is made up of the elements that *are* greater than 30.
 
 ```swift
 let first = numbers[..<p]
@@ -48,11 +48,11 @@ let second = numbers[p...]
 
 Note that the order of elements in both partitions changed. That is, `40` appears before `60` in the original collection, but, after calling `partition(by:)`, `60` appears before `40`.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `belongsInSecondPartition`: A predicate used to partition   the collection. All elements satisfying this predicate are ordered   after all elements not satisfying it.
+- `belongsInSecondPartition`: A predicate used to partition the collection. All elements satisfying this predicate are ordered after all elements not satisfying it.
 
 ## See Also
 

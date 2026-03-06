@@ -43,8 +43,8 @@ This is useful for when an external decomposed components of a `Duration` has be
 
 ## Parameters
 
-- `secondsComponent`: The seconds component portion of the     value.
-- `attosecondsComponent`: The attosecond component portion of the    value.
+- `secondsComponent`: The seconds component portion of the `Duration` value.
+- `attosecondsComponent`: The attosecond component portion of the `Duration` value.
 
 ## See Also
 

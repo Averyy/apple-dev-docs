@@ -17,6 +17,10 @@ object GameCenterAchievementRelease.Relationships.GameCenterAchievement
 ### Objects
 - [object GameCenterAchievementRelease.Relationships.GameCenterAchievement.Data](gamecenterachievementrelease/relationships-data.dictionary/gamecenterachievement-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementRelease.Relationships.GameCenterAchievement.Data)
+
 ## See Also
 
 - [object GameCenterAchievementRelease.Relationships.GameCenterDetail](gamecenterachievementrelease/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

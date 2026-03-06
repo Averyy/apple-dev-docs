@@ -14,6 +14,18 @@ An object that describes a place in terms of a variety of spatial, administrativ
 object Place
 ```
 
+## Properties
+
+- `country` (string): The country or region of the place.
+- `countryCode` (string): The 2-letter country code of the place.
+- `displayMapRegion` (MapRegion): The geographic region associated with the place. This is a rectangular region on a map expressed as south-west and north-east points. Specifically south latitude, west longitude, north latitude, and east longitude.
+- `formattedAddressLines` ([string]): The address of the place, formatted using its conventions of its country or region.
+- `name` (string): A place name that you can use for display purposes.
+- `coordinate` (Location): The latitude and longitude of this place.
+- `structuredAddress` (StructuredAddress): A [`StructuredAddress`](structuredaddress.md) object that describes details of the place’s address.
+- `alternateIds` ([string]): A list of alternate Place IDs for the `id`.
+- `id` (string): An opaque string that identifies a place.
+
 ## Relationships
 
 ### Inherited By

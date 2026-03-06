@@ -13,8 +13,8 @@ init(name: String, pkgConfig: String? = nil, providers: [SystemPackageProvider]?
 
 ## Parameters
 
-- `name`: The name of the Swift package, or  , if you want the Swift Package Manager to deduce the   name from the package’s Git URL.
-- `pkgConfig`: The name to use for C modules. If present, the Swift   Package Manager searches for a   file to get the   additional flags required for a system target.
+- `name`: The name of the Swift package, or `nil`, if you want the Swift Package Manager to deduce the name from the package’s Git URL.
+- `pkgConfig`: The name to use for C modules. If present, the Swift Package Manager searches for a `<name>.pc` file to get the additional flags required for a system target.
 - `providers`: The package providers for a system package.
 - `products`: The list of products that this package vends and that clients can use.
 - `dependencies`: The list of package dependencies.

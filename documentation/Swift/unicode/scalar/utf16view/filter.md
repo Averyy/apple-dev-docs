@@ -35,11 +35,11 @@ print(shortNames)
 // Prints "["Kim", "Karl"]"
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
-- `isIncluded`: A closure that takes an element of the   sequence as its argument and returns a Boolean value indicating   whether the element should be included in the returned array.
+- `isIncluded`: A closure that takes an element of the sequence as its argument and returns a Boolean value indicating whether the element should be included in the returned array.
 
 
 ---

@@ -30,7 +30,7 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 ## Parameters
 
-- `body`: A closure with a pointer parameter   that points to a null-terminated platform string.   If   has a return value,   that value is also used as the return value for this method.
+- `body`: A closure with a pointer parameter that points to a null-terminated platform string. If `body` has a return value, that value is also used as the return value for this method.
 
 
 ---

@@ -71,7 +71,7 @@ struct TranslationExample: View {
   The output language to translate into.
 ### Translating the text
 - [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
-  Translates a single attributed string of text.
+  Translates a formatted string of text, preserving formatting in the translation.
 - [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
@@ -90,13 +90,13 @@ struct TranslationExample: View {
 - [var isReady: Bool](translationsession/isready.md)
   A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
 - [var preferredStrategy: TranslationSession.Strategy](translationsession/preferredstrategy.md)
-  Which strategy is preferred for these translations.
+  The preferred translation strategy configured for the session.
 ### Canceling a translation session
 - [func cancel()](translationsession/cancel.md)
   Attempts to stop all ongoing work for the translation session.
 ### Configuring translation strategy
 - [TranslationSession.Strategy](translationsession/strategy.md)
-  A type that describes what strategy you need when performing translation in your app. APIs that take in a `Strategy` are setting a preferred model type, not guaranteeing this will be used.
+  The preferred model to handle translations in your app.
 
 ## See Also
 

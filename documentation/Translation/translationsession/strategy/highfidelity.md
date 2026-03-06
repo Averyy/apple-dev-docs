@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-A translation strategy that performs translation with higher fidelity and fluency in the target language. This strategy will only be used when Apple Intelligence is enabled on the device, but doesn’t require an extra download when Apple Intelligence is enabled. It also supports more languages. However this strategy can be slower to run than the `.lowLatency` strategy, and can use additional power. It’s best to check that this strategy works for your app before enabling it for users.
+A translation strategy that provides more fluent translations using Apple Intelligence.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -19,12 +19,12 @@ static let highFidelity: TranslationSession.Strategy
 
 #### Discussion
 
-On devices that don’t support Apple Intelligence or have Apple Intelligence disabled, the framework might still use the `.lowLatency` strategy.
+Use this strategy for higher-quality translations on devices with Apple Intelligence enabled. The models are already downloaded when Apple Intelligence is enabled, so no additional language downloads are required. This strategy offers higher-quality translations and supports additional languages, but may take longer to complete than [`lowLatency`](translationsession/strategy/lowlatency.md). On devices without Apple Intelligence, it falls back to the traditional models used by `lowLatency`.
 
 ## See Also
 
 - [static let lowLatency: TranslationSession.Strategy](translationsession/strategy/lowlatency.md)
-  A translation strategy that performs translations quickly and is suitable for uses requiring low-latency such as translating audio in real time. While this strategy may produce translations with less accuracy than the `.highFidelity` strategy, it still has good accuracy, and it translates faster and uses less power. Translating with this strategy needs each language to be downloaded by the user, but once downloaded those languages are available to all apps that need them. This is the only strategy available on devices that don’t support Apple Intelligence. This strategy might still be used when specifying `.highFidelity` in cases where Apple Intelligence isn’t available or disabled.
+  A translation strategy that provides fast translations using traditional models.
 
 
 ---

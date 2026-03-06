@@ -14,6 +14,11 @@ The data structure that represents an app promoted purchases linkages response r
 object AppPromotedPurchasesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

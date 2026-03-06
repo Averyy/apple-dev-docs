@@ -20,6 +20,11 @@ object BuildBundle.Relationships.AppClipDomainCacheStatus
 - [object BuildBundle.Relationships.AppClipDomainCacheStatus.Data](buildbundle/relationships-data.dictionary/appclipdomaincachestatus-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clip Domain Cache Status resource.
 
+## Properties
+
+- `data` (BuildBundle.Relationships.AppClipDomainCacheStatus.Data): The ID and type of the related App Clip Domain Cache Status resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object BuildBundle.Relationships.AppClipDomainDebugStatus](buildbundle/relationships-data.dictionary/appclipdomaindebugstatus-data.dictionary.md)

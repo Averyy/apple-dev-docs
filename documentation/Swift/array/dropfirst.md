@@ -36,11 +36,11 @@ print(numbers.dropFirst(10))
 // Prints "[]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to drop from the beginning of the collection.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop from the beginning of the collection.
 
 ## Parameters
 
-- `k`: The number of elements to drop from the beginning of   the collection.   must be greater than or equal to zero.
+- `k`: The number of elements to drop from the beginning of the collection. `k` must be greater than or equal to zero.
 
 ## See Also
 

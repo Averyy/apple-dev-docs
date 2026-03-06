@@ -20,7 +20,7 @@ init(_ title: LocationButton.Title? = .currentLocation, action: @escaping () -> 
 
 ## Parameters
 
-- `title`: The text that the button displays. For possible values, see  .
+- `title`: The text that the button displays. For possible values, see [`LocationButton.Title`](locationbutton/title.md).
 - `action`: The action that initiates every time the user taps the button.
 
 ## See Also

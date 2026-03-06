@@ -20,6 +20,10 @@ object MerchantId.Relationships
 - [object MerchantId.Relationships.Certificates](merchantid/relationships-data.dictionary/certificates-data.dictionary.md)
   The data and links that describe the relationship between the merchant ID and the certificates resources.
 
+## Properties
+
+- `certificates` (MerchantId.Relationships.Certificates)
+
 
 ---
 

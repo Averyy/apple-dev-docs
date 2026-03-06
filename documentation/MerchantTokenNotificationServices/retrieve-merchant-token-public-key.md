@@ -12,6 +12,16 @@ Get the merchant token public key.
 
 Your server calls this API to get the public key of a particular merchant token. This public key is created by the merchant token owner’s device. The key is a `P-384` public key. The response includes the `supportedCiphersuite`, which specifies the cipher suite to use when calling the `Merchant-Token-Usage-Data-Availability-Notification` or responding to [`Get MerchantToken Usage Information Package`](get-merchanttoken-usage-information-package.md).
 
+## Endpoint
+
+`POST https://apple-pay-gateway.apple.com/paymentservices/v1/merchantId/{merchantId}/merchantToken/publicKey`
+
+## Parameters
+
+- `Accept` (string): The response format the client expects, for example, `application/json` for JSON.
+- `Content-Type` (string) *(required)*: The format of the data sent in the request body, for example, `application/json` for JSON payloads.
+- `x-request-id` (string) *(required)*: The header used to uniquely identify the request.
+
 ## Request Body
 
 The request body you use for the merchant token public key.

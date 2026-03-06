@@ -33,7 +33,7 @@ print(students)
 // Prints "["Ben", "Ivy", "Jordell", "Max"]"
 ```
 
-In addition to changing the value of an individual element, you can also change the values of a slice of elements in a mutable collection. For example, you can sort  of a mutable collection by calling the mutable `sort()` method on a subscripted subsequence. Here’s an example that sorts the first half of an array of integers:
+In addition to changing the value of an individual element, you can also change the values of a slice of elements in a mutable collection. For example, you can sort *part* of a mutable collection by calling the mutable `sort()` method on a subscripted subsequence. Here’s an example that sorts the first half of an array of integers:
 
 ```swift
 var numbers = [15, 40, 10, 30, 60, 25, 5, 100]

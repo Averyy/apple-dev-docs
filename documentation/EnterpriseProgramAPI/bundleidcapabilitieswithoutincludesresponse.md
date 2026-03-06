@@ -11,6 +11,12 @@ A response that contains a single Bundle IDs capability resource without include
 object BundleIdCapabilitiesWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([BundleIdCapability]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

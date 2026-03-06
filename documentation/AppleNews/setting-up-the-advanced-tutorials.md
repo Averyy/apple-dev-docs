@@ -38,8 +38,8 @@ Another topic the third advanced tutorial covers is how to cause an image to sta
 
 Choose one of these options.
 
--  (Recommended.) Download the `article.json` file, and use the instructions in this tutorial to add code to the file. Preview your changes as you go, using the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
--  Follow along by looking at downloadable examples that represent the completion of each stage of this tutorial. Preview the completed articles in the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
+- **Option 1: Edit files yourself.** (Recommended.) Download the `article.json` file, and use the instructions in this tutorial to add code to the file. Preview your changes as you go, using the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
+- **Option 2: Preview completed files.** Follow along by looking at downloadable examples that represent the completion of each stage of this tutorial. Preview the completed articles in the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
 
 ##### Download the Article Bundle Examples
 

@@ -20,6 +20,10 @@ object CiWorkflowCreateRequest.Data.Relationships.Product
 - [object CiWorkflowCreateRequest.Data.Relationships.Product.Data](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/product-data.dictionary/data-data.dictionary.md)
   The type and ID of the Products resource that you’re relating with the Workflows resource you’re creating.
 
+## Properties
+
+- `data` (CiWorkflowCreateRequest.Data.Relationships.Product.Data) *(required)*: The ID and type of the related Products resource.
+
 ## See Also
 
 - [object CiWorkflowCreateRequest.Data.Relationships.MacOsVersion](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/macosversion-data.dictionary.md)

@@ -17,6 +17,10 @@ object ReviewSubmissionItem.Relationships.BackgroundAssetVersion
 ### Dictionaries
 - [object ReviewSubmissionItem.Relationships.BackgroundAssetVersion.Data](reviewsubmissionitem/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItem.Relationships.BackgroundAssetVersion.Data)
+
 ## See Also
 
 - [object ReviewSubmissionItem.Relationships.GameCenterAchievementVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)

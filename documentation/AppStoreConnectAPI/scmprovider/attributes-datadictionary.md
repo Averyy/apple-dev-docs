@@ -14,6 +14,11 @@ The attributes that describe a Providers resource.
 object ScmProvider.Attributes
 ```
 
+## Properties
+
+- `scmProviderType` (ScmProviderType): The source code management provider’s type.
+- `url` (uri): The URL of the source code management provider.
+
 ## See Also
 
 - [object ScmProviderType](scmprovidertype.md)

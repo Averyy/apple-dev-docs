@@ -20,6 +20,10 @@ object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVe
 - [object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion.Data](backgroundassetversioninternalbetarelease/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion.Data)
+
 
 ---
 

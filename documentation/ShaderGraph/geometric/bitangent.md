@@ -17,6 +17,9 @@ The geometric bitangent vector of the currently-processed data in a given coordi
 
 #### Parameter Descriptions
 
+- **`Space`**: The space in which the shader defines the bitangent vector. Defaults to `object`.
+- **`Index`**: The index of the texture coordinates that the node computes the tangent against. Default is `0`.
+
 #### Discussion
 
 Valid values for the `Space` parameter include:

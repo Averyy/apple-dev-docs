@@ -22,11 +22,11 @@ Reality Composer Pro stores each project file as a `.realitycomposerpro` file. T
 
 The project window is composed of multiple views:
 
-- The  provides you quick access to actions and settings for your project. In the default toolbar, you can toggle the leading panel, send to device, switch between local space and world space, adjust the viewport camera settings, open the Content Library, and toggle the inspector. You can configure it to fit your project needs by adding and removing tools. To edit the toolbar, control-click the toolbar and select Customize Toolbar.
-- The  displays a 3D visual representation of the active scene. This view provides an interactive way to view, select, and manipulate your content from different positions and angles.
-- The  shows the hierarchy of all the assets in the current scene. You can add and remove assets, and adjust the relationship of multiple assets in the scene.
-- With the , you can view and edit information about the scene or about the selected asset in the navigator or viewport. You can change the values of the components attached to the selected asset and add new components.
-- With the , you can manage your current project’s content, build materials for assets with Shader Graph, add timelines for animations, adjust the audio mix of the active scene, and see how the scene performs when running in a RealityKit app.
+- The *toolbar* provides you quick access to actions and settings for your project. In the default toolbar, you can toggle the leading panel, send to device, switch between local space and world space, adjust the viewport camera settings, open the Content Library, and toggle the inspector. You can configure it to fit your project needs by adding and removing tools. To edit the toolbar, control-click the toolbar and select Customize Toolbar.
+- The *viewport* displays a 3D visual representation of the active scene. This view provides an interactive way to view, select, and manipulate your content from different positions and angles.
+- The *navigator* shows the hierarchy of all the assets in the current scene. You can add and remove assets, and adjust the relationship of multiple assets in the scene.
+- With the *inspector*, you can view and edit information about the scene or about the selected asset in the navigator or viewport. You can change the values of the components attached to the selected asset and add new components.
+- With the *editor*, you can manage your current project’s content, build materials for assets with Shader Graph, add timelines for animations, adjust the audio mix of the active scene, and see how the scene performs when running in a RealityKit app.
 
 ![A screenshot of a Reality Composer Pro project window. The window has a single tab at the top called Example. The window is divided vertically into two sections. The top section has three views: a navigator view of content in the scene, a viewport in the middle showing a 2D grid, and an inspector on the right. The bottom section has four tabs, labeled Project Browser, Shader Graph, Timelines Audio Mixer, and Statistics. Project Browser is currently selected, and it’s also divided into three sections with a hierarchy on the left, a grid of icons in the middle, and an inspector on the right showing the entity hierarchy for the asset selected in the middle](https://docs-assets.developer.apple.com/published/da19a8dda04662f5fe3436f3b8586f54/RCPro-NewProject%402x.png)
 
@@ -37,6 +37,11 @@ Reality Composer Pro’s viewport provides an interactive way for you to view yo
 ![A zoomed in screenshot of Reality Composer Pro’s viewport toolbar containing seven icons: an icon of a mouse cursor surrounded by a circle, a circle with four triangles pointing in each cardinal directions, an equalateral cross with triangles at each tip pointing in each cardinal direction, a circle with a curved crossed pattern to create a 3D sphere, a magnifying glass with a diagonal slash in the center, a camera with a go back style arrow, and a triangle layered on top of another triangle to create two mountains. ](https://docs-assets.developer.apple.com/published/bc2ef08ec2836eaa4b5a9b838dbbd3c5/RCPro-ViewportToolbar.png)
 
 The four modes that move the viewport camera around in the scene are:
+
+- ****Look Around Mode****: Rotates the viewport camera around while maintaining its current position.
+- ****Pan Mode****: Moves the viewport camera vertically and horizontally, but not forward or backward.
+- ****Orbit Mode****: Translates and rotates the camera around a selected object.
+- ****Dolly Mode****: Moves the camera forward and backward.
 
 You can click on one of the viewport mode buttons and drag the cursor around to use the selected viewport mode quickly without having to change your current mode.
 

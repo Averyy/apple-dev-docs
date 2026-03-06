@@ -14,6 +14,12 @@ A response that contains a single `BetaFeedbackCrashSubmissionResponse` resource
 object BetaFeedbackCrashSubmissionResponse
 ```
 
+## Properties
+
+- `data` (BetaFeedbackCrashSubmission) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaCrashLog](betacrashlog.md)

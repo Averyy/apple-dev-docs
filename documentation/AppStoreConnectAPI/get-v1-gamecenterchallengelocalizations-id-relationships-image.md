@@ -8,6 +8,14 @@ Get the image ID for a specific Game Center challenge localization.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterChallengeLocalizations/{id}/relationships/image`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read challenge localization information](get-v1-gamecenterchallengelocalizations-_id_.md)

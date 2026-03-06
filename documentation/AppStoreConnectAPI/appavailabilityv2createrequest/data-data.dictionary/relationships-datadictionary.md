@@ -18,6 +18,11 @@ object AppAvailabilityV2CreateRequest.Data.Relationships
 - [object AppAvailabilityV2CreateRequest.Data.Relationships.App](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
 - [object AppAvailabilityV2CreateRequest.Data.Relationships.TerritoryAvailabilities](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary/territoryavailabilities-data.dictionary.md)
 
+## Properties
+
+- `app` (AppAvailabilityV2CreateRequest.Data.Relationships.App) *(required)*
+- `territoryAvailabilities` (AppAvailabilityV2CreateRequest.Data.Relationships.TerritoryAvailabilities) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2CreateRequest.Data.Attributes](appavailabilityv2createrequest/data-data.dictionary/attributes-data.dictionary.md)

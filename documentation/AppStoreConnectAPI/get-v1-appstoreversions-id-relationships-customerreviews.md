@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/customerReviews`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Customer Reviews for an App Store Version](get-v1-appstoreversions-_id_-customerreviews.md)

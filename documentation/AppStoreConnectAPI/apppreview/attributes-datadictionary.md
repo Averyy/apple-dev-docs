@@ -18,6 +18,20 @@ object AppPreview.Attributes
 
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState): This attribute is deprecated. Use [`AppMediaVideoState`](appmediavideostate.md) instead.
+- `fileName` (string)
+- `fileSize` (integer)
+- `mimeType` (string)
+- `previewFrameImage` (PreviewFrameImage)
+- `previewFrameTimeCode` (string)
+- `previewImage` (ImageAsset): This attribute is deprecated. Use [`PreviewFrameImage`](previewframeimage.md) instead.
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+- `videoDeliveryState` (AppMediaVideoState)
+- `videoUrl` (string)
+
 ## See Also
 
 - [object AppPreview.Relationships](apppreview/relationships-data.dictionary.md)

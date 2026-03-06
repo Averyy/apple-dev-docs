@@ -6,7 +6,7 @@ Animate the vertices of a mesh over time with 3D Perlin noise by creating a Shad
 
 #### Overview
 
-Moving the vertices of a mesh with a shader is a valuable technique to have in your shader toolbox. Using this technique, you can procedurally distort the shape of a mesh and animate it over time, all without having to author explicit frame-by-frame animations. Moving the vertices displaces them from their original positions, so this effect is known as , as shown in the example below:
+Moving the vertices of a mesh with a shader is a valuable technique to have in your shader toolbox. Using this technique, you can procedurally distort the shape of a mesh and animate it over time, all without having to author explicit frame-by-frame animations. Moving the vertices displaces them from their original positions, so this effect is known as *vertex displacement*, as shown in the example below:
 
 To create a shader graph material that displaces the vertices of a mesh over time, apply a positional offset to each vertex with a [`Geometry Modifier`](https://developer.apple.comhttps://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-(realitykit)) node and a [`Noise 3D`](https://developer.apple.comhttps://developer.apple.com/documentation/shadergraph/3d-procedural/noise-3d) node. You can control the amplitude, scale, and rate of displacement with shader uniforms. See [`Loading entities with ShaderGraph materials`](loading-entities-with-shadergraph-materials.md) to download a sample project containing this shader along with many others.
 

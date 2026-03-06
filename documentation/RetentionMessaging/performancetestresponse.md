@@ -14,6 +14,11 @@ The performance test response object.
 object PerformanceTestResponse
 ```
 
+## Properties
+
+- `config` (PerformanceTestConfig) *(required)*: The performance test configuration object.
+- `requestId` (requestId) *(required)*: The performance test request identifier.
+
 ## See Also
 
 - [object PerformanceTestConfig](performancetestconfig.md)

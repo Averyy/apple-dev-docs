@@ -14,6 +14,11 @@ The response body for endpoints that create or modify a rule.
 object GameCenterMatchmakingRuleResponse
 ```
 
+## Properties
+
+- `data` (GameCenterMatchmakingRule) *(required)*: The rule that you create or modify.
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleCreateRequest](gamecentermatchmakingrulecreaterequest.md)

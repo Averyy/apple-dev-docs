@@ -12,6 +12,14 @@ Revoke a lost, stolen, compromised, or expiring signing certificate.
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/certificates/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 
 ---
 

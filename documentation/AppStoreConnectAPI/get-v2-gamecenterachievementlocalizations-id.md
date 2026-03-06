@@ -21,6 +21,16 @@ Get information about a specific Game Center achievement localization.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterAchievementLocalizations/{id}`
+
+## Parameters
+
+- `fields[gameCenterAchievementImages]` ([string])
+- `fields[gameCenterAchievementLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List all images for a Game Center achievement localization](get-v2-gamecenterachievementlocalizations-_id_-image.md)

@@ -20,8 +20,8 @@ Use this method to configure your badges. Finder may display the image, the labe
 
 ## Parameters
 
-- `image`: An    object. The system may or may not draw this image on top of the item’s   icon; when it does, the system determines the overlay position. Don’t   add any padding to the image to adjust this positioning. The image draws   at up to 320 x 320 points.
-- `label`: A label describing the sync state represented by this badge.   Each label should be a short localized string, such as “Waiting.”
+- `image`: An [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) object. The system may or may not draw this image on top of the item’s icon; when it does, the system determines the overlay position. Don’t add any padding to the image to adjust this positioning. The image draws at up to 320 x 320 points.
+- `label`: A label describing the sync state represented by this badge. Each label should be a short localized string, such as “Waiting.”
 - `badgeID`: A unique ID, identifying this badge.
 
 ## See Also

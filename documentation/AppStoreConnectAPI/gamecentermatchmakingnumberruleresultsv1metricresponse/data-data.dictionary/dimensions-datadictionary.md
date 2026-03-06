@@ -20,6 +20,10 @@ object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions
 - [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary.md)
   The details of the data about the queue.
 
+## Properties
+
+- `gameCenterMatchmakingQueue` (GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue)
+
 ## See Also
 
 - [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.DataPoints](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)

@@ -32,9 +32,9 @@ This function’s effect varies depending on the build flag used:
 
 ## Parameters
 
-- `message`: A string to print in a playground or   build. The   default is an empty string.
-- `file`: The file name to print with  . The default is the file   where   is called.
-- `line`: The line number to print along with  . The default is the   line number where   is called.
+- `message`: A string to print in a playground or `-Onone` build. The default is an empty string.
+- `file`: The file name to print with `message`. The default is the file where `preconditionFailure(_:file:line:)` is called.
+- `line`: The line number to print along with `message`. The default is the line number where `preconditionFailure(_:file:line:)` is called.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Disable system tracking, then supply the observations at a fixed rate between 10
 
 ## Parameters
 
-- `data`: An array of   objects indicating the location of objects of interest in the frame.
+- `data`: An array of [`DockAccessory.Observation`](dockaccessory/observation.md) objects indicating the location of objects of interest in the frame.
 - `cameraInformation`: The camera currently being used, and the orientation of the device.
 - `image`: The captured camera image buffer.
 

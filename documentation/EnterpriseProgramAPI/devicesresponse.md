@@ -11,6 +11,12 @@ A response that contains a list of Devices resources.
 object DevicesResponse
 ```
 
+## Properties
+
+- `data` ([Device]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [object Device](device.md)

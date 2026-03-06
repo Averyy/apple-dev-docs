@@ -24,6 +24,14 @@ The possible values for the `type` field are:
 | `MATCH` | Rules that evaluate properties across all compatible requests.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) For example, rules that prefer match candidates with more players but allows less players after a period of time, compare the difference in skill levels of players to a desired skill level that’s a function of time, and find players that have compatible game configurations that loosen over time. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) If you set the type field to `MATCH`, use the `requests` array in the expression to get all the compatible matches. |
 | `TEAM` | Rules that evaluate the assignment of players to teams and return a Boolean value. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) For example, rules that make the number of players on each team the same, balance the skill levels on each team for a fair match, and keep invited friends on the same team. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) If you set the `type` field to `TEAM`, use the `teams` array to get all the teams associated with the rule set. |
 
+## Properties
+
+- `description` (string) *(required)*: A human-readable description of the rule.
+- `expression` (string) *(required)*: Code that returns a Boolean or numeric value that the matchmaking rules algorithm executes to compare or filter match requests.
+- `referenceName` (string) *(required)*: A name for the rule that’s unique within the scope of its rule set.
+- `type` (string) *(required)*: The type or category of the rule that determines the return value and properties available in the expression.
+- `weight` (number): A numeric value for the rule when `type` is either `DISTANCE` or `MATCH`.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleCreateRequest.Data.Relationships](gamecentermatchmakingrulecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

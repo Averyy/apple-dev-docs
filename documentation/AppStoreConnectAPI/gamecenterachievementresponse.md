@@ -14,6 +14,12 @@ A response that contains a single Game Center achievement resource.
 object GameCenterAchievementResponse
 ```
 
+## Properties
+
+- `data` (GameCenterAchievement) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

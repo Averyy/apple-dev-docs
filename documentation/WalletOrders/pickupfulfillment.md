@@ -16,6 +16,22 @@ The details of a pickup order.
 object PickupFulfillment
 ```
 
+## Properties
+
+- `address` (Address): The address for the order pickup.
+- `barcode` (Barcode): The barcode the customer shows at pickup.
+- `displayName` (string) *(required)*: The localized name of the pickup location.
+- `fulfillmentIdentifier` (string) *(required)*: An opaque value that uniquely identifies this fulfillment in the order. This isn’t displayed to the user and only for determining changes and user notifications.
+- `fulfillmentType` (string) *(required)*: The type of fulfillment, which is `pickup`.
+- `lineItems` ([LineItem]): The items for the customer to pick up, displayed in the order provided.
+- `location` (Location): The latitude and longitude of the pickup location. Use this when you require greater precision than address alone (for example, for accurate indoor mapping display).
+- `notes` (string): Localized instructions for the pickup.
+- `pickedUpAt` (date-time): The date and time when the customer picked up the order, in RFC 3339 format.
+- `pickupAt` (date-time): The date and time when the pickup window starts, in RFC 3339 format.
+- `pickupWindowDuration` (duration): The duration for which the pickup window is open, in ISO 8601-1 duration format.
+- `status` (string) *(required)*: The status of the fulfillment.
+- `statusDescription` (string): A localized message describing the fulfillment status.
+
 ## See Also
 
 - [object Customer](customer.md)

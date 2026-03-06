@@ -12,6 +12,11 @@
 object GameCenterActivity.Relationships.Leaderboards.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

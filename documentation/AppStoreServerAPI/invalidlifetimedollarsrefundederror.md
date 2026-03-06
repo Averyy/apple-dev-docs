@@ -6,7 +6,7 @@
 An error that indicates the value in the lifetime dollars refunded field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidLifetimeDollarsRefundedError
 #### Discussion
 
 For valid `lifetimeDollarsRefunded` values in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`lifetimeDollarsRefunded`](lifetimedollarsrefunded.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

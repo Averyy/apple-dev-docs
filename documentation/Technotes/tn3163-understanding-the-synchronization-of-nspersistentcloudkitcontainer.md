@@ -18,7 +18,7 @@ As a prerequisite, it’s important to understand how the synchronization works 
 
 `NSPersistentCloudKitContainer` associates a Core Data store with a CloudKit database. The store lives on the device to provide data to your app, the database lives on the remote CloudKit server to hold the server truth, and `NSPersistentCloudKitContainer` takes care the synchronization between them.
 
-The synchronization process is transparent to your app. You still use Core Data APIs to access the store. When you perform a fetch, Core Data returns the data currently existing in the store, without querying CloudKit for potentially unsynchronized changes on the server side. When you perform a save, Core Data writes the data to the store and records the changes in the [`Persistent history`](https://developer.apple.com/documentation/CoreData/persistent-history). When appropriate, `NSPersistentCloudKitContainer`  the local changes from the store to the database, and  the remote changes from the database to the store.
+The synchronization process is transparent to your app. You still use Core Data APIs to access the store. When you perform a fetch, Core Data returns the data currently existing in the store, without querying CloudKit for potentially unsynchronized changes on the server side. When you perform a save, Core Data writes the data to the store and records the changes in the [`Persistent history`](https://developer.apple.com/documentation/CoreData/persistent-history). When appropriate, `NSPersistentCloudKitContainer` *exports* the local changes from the store to the database, and *imports* the remote changes from the database to the store.
 
 Multiple system services get involved in the process. For example, `dasd` is a system process that coordinates the execution of app activities to balance the use of system resources and achieve the best overall user experience; `NSPersistentCloudKitContainer` works with the process to determine when it is appropriate to execute an import or export. `apsd` receives [`User Notifications`](https://developer.apple.com/documentation/UserNotifications) from APNs server and delivers them to the target apps; `NSPersistentCloudKitContainer` relies on it to detect changes on the associated CloudKit private or shared database. `NSPersistentCloudKitContainer` also relies on `cloudd`, the on-device CloudKit service, to do the data transportation between the device and the CloudKit server.
 
@@ -425,7 +425,7 @@ CloudKit can throttle the requests from `NSPersistentCloudKitContainer` as well.
 
 #### Provide Actionable Feedback
 
-When you see a system behavior that doesn’t make sense in your use case, consider [`filing a feedback report`](https://developer.apple.comhttp://developer.apple.com/bug-reporting/). It is important to make your report  by providing the following information:
+When you see a system behavior that doesn’t make sense in your use case, consider [`filing a feedback report`](https://developer.apple.comhttp://developer.apple.com/bug-reporting/). It is important to make your report **actionable** by providing the following information:
 
 1. A clear description of the symptoms, and the detailed steps to reproduce them.
 2. The name and bundle ID of your app, and the iCloud container ID.
@@ -441,8 +441,8 @@ For more information about filing a great feedback report, see WWDC22 session 10
 
 #### Revision History
 
--  Adjusted some of the video links.
--  First published.
+- **2024-02-28** Adjusted some of the video links.
+- **2024-02-20** First published.
 
 ## See Also
 

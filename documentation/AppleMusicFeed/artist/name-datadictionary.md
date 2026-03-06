@@ -14,6 +14,11 @@ A mapping of locale to localized names for the artist.
 object Artist.Name
 ```
 
+## Properties
+
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates fallback to `default`.
+- `name` (string): A localized uncensored name for the artist.
+
 ## See Also
 
 - [object Artist.NamePronunciation](artist/namepronunciation-data.dictionary.md)

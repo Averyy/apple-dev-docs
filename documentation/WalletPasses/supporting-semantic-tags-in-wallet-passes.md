@@ -6,7 +6,7 @@ Enable the system to offer suggestions for actions related to passes by adding m
 
 #### Overview
 
-You can augment the user-visible information on Wallet passes with machine-readable metadata known as . The metadata in semantic tags helps the system better understand Wallet passes and suggest relevant actions for the user to take on their installed passes.
+You can augment the user-visible information on Wallet passes with machine-readable metadata known as *semantic tags*. The metadata in semantic tags helps the system better understand Wallet passes and suggest relevant actions for the user to take on their installed passes.
 
 You can add semantic tags to all types of Wallet passes, but some tags only apply to specific types, such as event tickets, boarding passes, and store cards. For a full list of all tags and their associated pass types, see [`SemanticTags`](semantictags.md).
 

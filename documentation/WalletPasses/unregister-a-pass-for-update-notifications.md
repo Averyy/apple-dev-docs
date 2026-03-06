@@ -10,6 +10,14 @@ Stop sending update notifications for a pass on a device.
 - iPadOS 10.0+
 - watchOS 3.0+
 
+## Endpoint
+
+`DELETE https://yourpasshost.example.com/v1/devices/{deviceLibraryIdentifier}/registrations/{passTypeIdentifier}/{serialNumber}`
+
+## Parameters
+
+- `Authorization` (string): The authentication for a pass. The value is the word `ApplePass`, followed by a space, followed by the `authenticationToken` key of the pass.
+
 ## See Also
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)

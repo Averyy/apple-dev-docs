@@ -26,7 +26,7 @@ A subsequence up to, and including, the given position.
 
 #### Discussion
 
-The resulting subsequence  the element at the position specified by the `through` parameter. The following example searches for the index of the number `40` in an array of integers, and then prints the prefix of the array up to, and including, that index:
+The resulting subsequence *includes* the element at the position specified by the `through` parameter. The following example searches for the index of the number `40` in an array of integers, and then prints the prefix of the array up to, and including, that index:
 
 ```swift
 let numbers = [10, 20, 30, 40, 50, 60]
@@ -49,7 +49,7 @@ if let i = numbers.firstIndex(of: 40) {
 
 ## Parameters
 
-- `position`: The index of the last element to include in the   resulting subsequence.   must be a valid index of the collection   that is not equal to the   property.
+- `position`: The index of the last element to include in the resulting subsequence. `position` must be a valid index of the collection that is not equal to the `endIndex` property.
 
 
 ---

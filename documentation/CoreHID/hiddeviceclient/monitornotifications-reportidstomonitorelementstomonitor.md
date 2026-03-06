@@ -48,8 +48,8 @@ case .deviceRemoved:
 
 ## Parameters
 
-- `reportIDsToMonitor`: The report IDs that should trigger an   notification.
-- `elementsToMonitor`: The elements that should trigger an   notification. Elements of interest can be parsed from  .
+- `reportIDsToMonitor`: The report IDs that should trigger an [`HIDDeviceClient.Notification.inputReport(id:data:timestamp:)`](hiddeviceclient/notification/inputreport(id:data:timestamp:).md) notification.
+- `elementsToMonitor`: The elements that should trigger an [`HIDDeviceClient.Notification.elementUpdates(values:)`](hiddeviceclient/notification/elementupdates(values:).md) notification. Elements of interest can be parsed from [`elements`](hiddeviceclient/elements.md).
 
 ## See Also
 

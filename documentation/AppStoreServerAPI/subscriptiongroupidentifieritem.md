@@ -21,6 +21,11 @@ object SubscriptionGroupIdentifierItem
 - [object lastTransactionsItem](lasttransactionsitem.md)
   The most recent App Store-signed transaction information and App Store-signed renewal information for an auto-renewable subscription.
 
+## Properties
+
+- `subscriptionGroupIdentifier` (subscriptionGroupIdentifier): The subscription group identifier of the auto-renewable subscriptions in the `lastTransactions` array.
+- `lastTransactions` ([lastTransactionsItem]): An array of the most recent App Store-signed transaction information and App Store-signed renewal information for all auto-renewable subscriptions in the subscription group.
+
 ## See Also
 
 - [type environment](environment.md)

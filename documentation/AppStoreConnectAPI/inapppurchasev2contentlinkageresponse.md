@@ -17,6 +17,11 @@ object InAppPurchaseV2ContentLinkageResponse
 ### Dictionaries
 - [object InAppPurchaseV2ContentLinkageResponse.Data](inapppurchasev2contentlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2ContentLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

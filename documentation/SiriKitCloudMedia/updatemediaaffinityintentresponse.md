@@ -14,6 +14,11 @@ A structure that contains a response code indicating how your service handles an
 object UpdateMediaAffinityIntentResponse
 ```
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of response.
+- `code` (UpdateMediaAffinityIntentResponseCode) *(required)*: A response code that indicates whether your service can play the media item.
+
 ## Relationships
 
 ### Inherits From

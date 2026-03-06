@@ -14,6 +14,11 @@ The data structure that represents a background asset versions linkages response
 object BackgroundAssetVersionsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

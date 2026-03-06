@@ -20,6 +20,11 @@ object GameCenterMatchmakingRuleSetTestCreateRequest
 - [object GameCenterMatchmakingRuleSetTestCreateRequest.Data](gamecentermatchmakingrulesettestcreaterequest/data-data.dictionary.md)
   The data structure of the request body for testing a rule set.
 
+## Properties
+
+- `data` (GameCenterMatchmakingRuleSetTestCreateRequest.Data) *(required)*: The data structure for the request body.
+- `included` ([*]): The resource objects that Game Center uses in the test.
+
 ## See Also
 
 - [object GameCenterMatchmakingTestRequest](gamecentermatchmakingtestrequest.md)

@@ -20,6 +20,10 @@ object ReviewSubmissionUpdateRequest
 - [object ReviewSubmissionUpdateRequest.Data](reviewsubmissionupdaterequest/data-data.dictionary.md)
   The data structure that represents a review submission update request resource.
 
+## Properties
+
+- `data` (ReviewSubmissionUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)

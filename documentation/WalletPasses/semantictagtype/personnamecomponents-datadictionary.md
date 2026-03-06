@@ -16,6 +16,16 @@ An object that represents the parts of a person’s name.
 object SemanticTagType.PersonNameComponents
 ```
 
+## Properties
+
+- `familyName` (string): The person’s family name or last name.
+- `givenName` (string): The person’s given name; also called the *forename* or *first name* in some countries.
+- `middleName` (string): The person’s middle name.
+- `namePrefix` (string): The prefix for the person’s name, such as `“Dr”`.
+- `nameSuffix` (string): The suffix for the person’s name, such as `“Junior”`.
+- `nickname` (string): The person’s nickname.
+- `phoneticRepresentation` (string): The phonetic representation of the person’s name.
+
 ## See Also
 
 - [object SemanticTagType.CurrencyAmount](semantictagtype/currencyamount-data.dictionary.md)

@@ -22,7 +22,7 @@ struct Iterator
 
 #### Overview
 
-The elements returned by this iterator appear in the order that the tasks , not in the order that those tasks were added to the task group.
+The elements returned by this iterator appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group.
 
 This iterator terminates after all tasks have completed. After iterating over the results of each task, it’s valid to make a new iterator for the task group, which you can use to iterate over the results of new tasks you add to the group. For example:
 

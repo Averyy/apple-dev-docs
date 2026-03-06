@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/appAvailabilities/{id}/relationships/territoryAvailabilities`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read App Availabilty](get-v2-appavailabilities-_id_.md)

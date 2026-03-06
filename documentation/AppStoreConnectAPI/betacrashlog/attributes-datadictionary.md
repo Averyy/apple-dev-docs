@@ -14,6 +14,10 @@ Attributes that describe a beta crash log resource.
 object BetaCrashLog.Attributes
 ```
 
+## Properties
+
+- `logText` (string)
+
 
 ---
 

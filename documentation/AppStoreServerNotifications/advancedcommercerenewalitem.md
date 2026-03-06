@@ -12,6 +12,15 @@
 object advancedCommerceRenewalItem
 ```
 
+## Properties
+
+- `SKU` (advancedCommerceSKU)
+- `description` (advancedCommerceDescription)
+- `displayName` (advancedCommerceDisplayName)
+- `offer` (advancedCommerceOffer)
+- `price` (advancedCommercePrice)
+- `priceIncreaseInfo` (advancedCommercePriceIncreaseInfo)
+
 ## See Also
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)

@@ -17,6 +17,10 @@ object MarketplaceSearchDetailCreateRequest.Data.Relationships.App
 ### Objects
 - [object MarketplaceSearchDetailCreateRequest.Data.Relationships.App.Data](marketplacesearchdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (MarketplaceSearchDetailCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

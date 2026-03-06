@@ -18,6 +18,18 @@ object AppUpdateRequest.Data.Attributes
 
 - [App Store Connect API 1.6 release notes](app-store-connect-api-1-6-release-notes.md)
 
+## Properties
+
+- `accessibilityUrl` (uri)
+- `bundleId` (string)
+- `contentRightsDeclaration` (string)
+- `primaryLocale` (string)
+- `streamlinedPurchasingEnabled` (boolean)
+- `subscriptionStatusUrl` (uri)
+- `subscriptionStatusUrlForSandbox` (uri)
+- `subscriptionStatusUrlVersion` (SubscriptionStatusUrlVersion)
+- `subscriptionStatusUrlVersionForSandbox` (SubscriptionStatusUrlVersion)
+
 
 ---
 

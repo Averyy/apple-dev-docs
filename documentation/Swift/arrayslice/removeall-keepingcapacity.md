@@ -22,11 +22,11 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 #### Discussion
 
-> **Note**: O(), where  is the length of the array.
+> **Note**: O(*n*), where *n* is the length of the array.
 
 ## Parameters
 
-- `keepCapacity`: Pass   to keep the existing capacity of   the array after removing its elements. The default value is   .
+- `keepCapacity`: Pass `true` to keep the existing capacity of the array after removing its elements. The default value is `false`.
 
 
 ---

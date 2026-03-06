@@ -10,6 +10,14 @@ Set up change notifications for a pass on a device.
 - iPadOS 10.0+
 - watchOS 3.0+
 
+## Endpoint
+
+`POST https://yourpasshost.example.com/v1/devices/{deviceLibraryIdentifier}/registrations/{passTypeIdentifier}/{serialNumber}`
+
+## Parameters
+
+- `Authorization` (string): The authentication for a pass. The value is the word `ApplePass`, followed by a space, followed by the `authenticationToken` key of the pass.
+
 ## Request Body
 
 An object that contains the push notification token for the registered pass on the device.

@@ -14,6 +14,13 @@ An error indicating the referenced line item has a creation date after the line 
 object ReferencedCreationDateIncompatibleError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

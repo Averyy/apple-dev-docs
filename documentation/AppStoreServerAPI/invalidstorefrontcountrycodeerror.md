@@ -6,7 +6,7 @@
 An error that indicates a storefront code is invalid.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object InvalidStorefrontCountryCodeError
 #### Discussion
 
 This error applies to the [`storefrontCountryCodes`](storefrontcountrycodes.md) list you provide in the [`MassExtendRenewalDateRequest`](massextendrenewaldaterequest.md) object for the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

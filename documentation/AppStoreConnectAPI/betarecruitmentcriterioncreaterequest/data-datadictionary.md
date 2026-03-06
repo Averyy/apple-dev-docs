@@ -18,6 +18,12 @@ object BetaRecruitmentCriterionCreateRequest.Data
 - [object BetaRecruitmentCriterionCreateRequest.Data.Attributes](betarecruitmentcriterioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object BetaRecruitmentCriterionCreateRequest.Data.Relationships](betarecruitmentcriterioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (BetaRecruitmentCriterionCreateRequest.Data.Attributes) *(required)*
+- `relationships` (BetaRecruitmentCriterionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -18,6 +18,12 @@ object AlternativeDistributionKeysResponse
 
 For more information about the response that includes this alternative distribution key object, see [`AlternativeDistributionKeyResponse`](alternativedistributionkeyresponse.md).
 
+## Properties
+
+- `data` ([AlternativeDistributionKey]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionKey](alternativedistributionkey.md)

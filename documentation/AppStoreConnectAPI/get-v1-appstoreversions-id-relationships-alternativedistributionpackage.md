@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/alternativeDistributionPackage`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read an App Store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)

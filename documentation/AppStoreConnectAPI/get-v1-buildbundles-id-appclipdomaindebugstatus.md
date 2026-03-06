@@ -8,6 +8,14 @@ Get the debug status of the domain you associate with your App Clip for a specif
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildBundles/{id}/appClipDomainDebugStatus`
+
+## Parameters
+
+- `fields[appClipDomainStatuses]` ([string]): Additional fields to include for each App Clip Domain Debug Statuses resource returned by the response.
+
 ## See Also
 
 - [Read the App Clip Domain Cache Status Information for a Build Bundle](get-v1-buildbundles-_id_-appclipdomaincachestatus.md)

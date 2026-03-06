@@ -8,6 +8,14 @@ List all territory age rating IDs for a specific app info.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/territoryAgeRatings`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List territory age ratings for an app info](get-v1-appinfos-_id_-territoryageratings.md)

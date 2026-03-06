@@ -28,7 +28,7 @@ The difference needed to produce this collection’s ordered elements from the g
 
 This function does not infer element moves. If you need to infer moves, call the `inferringMoves()` method on the resulting difference.
 
-> **Note**: Worst case performance is O( * ), where  is the count of this collection and  is `other.count`. You can expect faster execution when the collections share many common elements, or if `Element` conforms to `Hashable`.
+> **Note**: Worst case performance is O(*n* * *m*), where *n* is the count of this collection and *m* is `other.count`. You can expect faster execution when the collections share many common elements, or if `Element` conforms to `Hashable`.
 
 ## Parameters
 

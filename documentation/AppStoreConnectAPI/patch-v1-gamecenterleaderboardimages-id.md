@@ -8,6 +8,14 @@ Commit a leaderboard image after uploading it.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard image information](get-v2-gamecenterleaderboardimages-_id_.md)

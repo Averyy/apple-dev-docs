@@ -51,6 +51,19 @@ The following listing shows the main elements of the `productBundleTemplate` ele
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: Images or audio to be presented in the background.
+- **[`banner`](banner.md)**: Element containing various elements that provide primary information about the product, such as a TV show title and episode title, description, and buttons for purchasing or previewing.
+- **[`buttonLockup`](buttonlockup.md)**: A type of button that can contain an image (the `badge` element) as well as text.
+- **[`description`](description.md)**: The text that describes the show.
+- **[`heroImg`](heroimg.md)**: An image of the show.
+- **[`productInfo`](productinfo.md)**: Technical information about the product bundle, such as a show’s runtime, language availability, and accessibility information.
+- **[`row`](row.md)**: A group of information elements.
+- **[`shelf`](shelf.md)**: An element containing row elements. Several shelves are used to display information like shows other users have watched and extra features provided by this product.
+- **[`stack`](stack.md)**: Basic information about the product, including the title, rating, and a description.
+- **[`subtitle`](subtitle.md)**: Text that provides additional information about its containing element.
+- **[`text`](text.md)**: The text used to describe the surrounding elements.
+- **[`title`](title.md)**: The title describing its containing element.
+
 ##### Example
 
 The following listing shows the TVML for a `productBundleTemplate` example.

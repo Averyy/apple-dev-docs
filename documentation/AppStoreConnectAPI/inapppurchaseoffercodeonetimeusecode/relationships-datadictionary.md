@@ -24,6 +24,12 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/values-data.dictionary.md)
   Information about the values of the in-app purchase offer code one-time use code.
 
+## Properties
+
+- `createdByActor` (InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor)
+- `deactivatedByActor` (InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor)
+- `values` (InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Attributes](inapppurchaseoffercodeonetimeusecode/attributes-data.dictionary.md)

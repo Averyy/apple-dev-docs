@@ -14,6 +14,13 @@ Settings for a start condition that starts a build if a pull request changes.
 object CiPullRequestStartCondition
 ```
 
+## Properties
+
+- `destination` (CiBranchPatterns): The destination branch name and custom patterns you configure for a workflow that starts a new build for changes to a pull request.
+- `filesAndFoldersRule` (CiFilesAndFoldersRule): The custom rule that determines whether Xcode Cloud starts a build or not based on a pull request’s changes to files.
+- `source` (CiBranchPatterns): The source branch name and custom patterns you configure for a workflow that starts a new build for changes to a pull request.
+- `autoCancel` (boolean): A Boolean value that indicates whether Xcode Cloud automatically cancels or skips builds.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

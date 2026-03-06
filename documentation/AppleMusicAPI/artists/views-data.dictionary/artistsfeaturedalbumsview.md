@@ -20,6 +20,13 @@ object Artists.Views.ArtistsFeaturedAlbumsView
 - [object Artists.Views.ArtistsFeaturedAlbumsView.Attributes](artists/views-data.dictionary/artistsfeaturedalbumsview/attributes-data.dictionary.md)
   A collection of selected albums to be featured with the artist.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsFeaturedAlbumsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Albums]) *(required)*: A collection of albums selected as featured for the artist.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

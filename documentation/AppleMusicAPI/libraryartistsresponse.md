@@ -14,6 +14,10 @@ The response to a library artists request.
 object LibraryArtistsResponse
 ```
 
+## Properties
+
+- `data` ([LibraryArtists]) *(required)*: The [`LibraryArtists`](libraryartists.md) included in the response for the request.
+
 ## See Also
 
 - [object Artists](artists.md)

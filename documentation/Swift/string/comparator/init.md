@@ -22,7 +22,7 @@ init(_ standardComparison: String.StandardComparator)
 
 ## Parameters
 
-- `standardComparison`: The   to convert.
+- `standardComparison`: The `String.StandardComparator` to convert.
 
 
 ---

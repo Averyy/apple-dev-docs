@@ -8,6 +8,14 @@ Delete an image that’s associated with a leaderboard.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard image information](get-v2-gamecenterleaderboardimages-_id_.md)

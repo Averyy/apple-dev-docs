@@ -14,6 +14,11 @@ The type and ID of the Default App Clip Experience Templates resource that youâ€
 object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultExperienceTemplate.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Default App Clip Experience Templates resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

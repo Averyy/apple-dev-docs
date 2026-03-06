@@ -22,6 +22,11 @@ object AppStoreVersionUpdateRequest.Data.Relationships
 - [object AppStoreVersionUpdateRequest.Data.Relationships.Build](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `build` (AppStoreVersionUpdateRequest.Data.Relationships.Build)
+- `appClipDefaultExperience` (AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience): The related Default App Clip Experiences resource.
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest.Data.Attributes](appstoreversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

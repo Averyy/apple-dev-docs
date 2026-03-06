@@ -12,6 +12,14 @@ Delete a specific accessibility declaration.
 
 - [Configuring accessibility declarations for your app](configuring-accessibility-declarations.md)
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/accessibilityDeclarations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `accessibilityDeclarations` resource ID from the [`List all accessibility declarations for an app`](get-v1-apps-_id_-accessibilitydeclarations.md) response.
+
 ## See Also
 
 - [List all accessibility declarations for an app](get-v1-apps-_id_-accessibilitydeclarations.md)

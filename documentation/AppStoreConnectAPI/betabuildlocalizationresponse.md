@@ -14,6 +14,12 @@ A response that contains a single Beta Build Localizations resource.
 object BetaBuildLocalizationResponse
 ```
 
+## Properties
+
+- `data` (BetaBuildLocalization) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([Build])
+
 ## See Also
 
 - [Create a Beta Build Localization](post-v1-betabuildlocalizations.md)

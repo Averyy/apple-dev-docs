@@ -14,6 +14,12 @@ A relationship from the library song to its associated catalog content.
 object LibrarySongs.Relationships.LibrarySongsCatalogRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([Songs]) *(required)*: The song from the Apple Music catalog associated with the library song, if any.
+
 ## See Also
 
 - [object LibrarySongs.Relationships.LibrarySongsAlbumsRelationship](librarysongs/relationships-data.dictionary/librarysongsalbumsrelationship.md)

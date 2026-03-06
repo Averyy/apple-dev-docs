@@ -48,7 +48,7 @@ class MyObserver: NSObject {
 
 You use the `oldValue` and `newValue` properties of the [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange) instance to see what’s changed about the property you’re observing.
 
-If you don’t need to know  a property has changed, omit the `options` parameter. Omitting the `options` parameter forgoes storing the new and old property values, which causes the `oldValue` and `newValue` properties to be `nil`.
+If you don’t need to know *how* a property has changed, omit the `options` parameter. Omitting the `options` parameter forgoes storing the new and old property values, which causes the `oldValue` and `newValue` properties to be `nil`.
 
 ##### Associate the Observer with the Property to Observe
 

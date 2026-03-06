@@ -108,7 +108,7 @@ class PartialMusicProperty<Root>
 - [static let similarArtists: MusicRelationshipProperty<Artist, Artist>](partialmusicproperty/similarartists.md)
   An identifier for the association property that returns a collection of artists similar to this artist.
 - [static let singles: MusicRelationshipProperty<Artist, Album>](partialmusicproperty/singles.md)
-  An identifier of the association property that returns a collection of the artist’s albums in the  category.
+  An identifier of the association property that returns a collection of the artist’s albums in the *singles* category.
 - [static let songs: MusicRelationshipProperty<MusicVideo, Song>](partialmusicproperty/songs.md)
   An identifier of the relationship property that returns the associated songs for the music video.
 - [static let station: MusicRelationshipProperty<Song, Station>](partialmusicproperty/station-8u1rf.md)

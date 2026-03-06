@@ -21,6 +21,10 @@ B - F
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The foreground input, represented by `F` in the mathematical equation.
+- **`Background`**: The background input, represented by `B` in the mathematical equation.
+- **`Mix`**: The weight of the blend effect. The higher the `Mix`, the greater the intensity of the blend operation, and the more the effect is visually apparent. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Subtractive Mix` node subtracts two inputs and uses the `Mix` input to determine the weight of the foreground in the blend, represented by the equation `B - F`. Higher values closer to `1` output a more intense subtractive mix, while lower values closer to `0` dim the effect.

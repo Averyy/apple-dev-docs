@@ -22,6 +22,12 @@ object AppClipHeaderImageCreateRequest.Data
 - [object AppClipHeaderImageCreateRequest.Data.Relationships](appclipheaderimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppClipHeaderImageCreateRequest.Data.Attributes) *(required)*: The attributes that describes the request that creates an App Clip Header Images resource.
+- `relationships` (AppClipHeaderImageCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

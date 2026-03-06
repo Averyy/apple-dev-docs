@@ -21,6 +21,14 @@ object GameCenterChallenge
   Attributes that describe a challenge resource.
 - [object GameCenterChallenge.Relationships](gamecenterchallenge/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterChallenge.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterChallenge.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengesResponse](gamecenterchallengesresponse.md)

@@ -12,6 +12,11 @@
 object AppStoreVersionExperiment.Relationships.AppStoreVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

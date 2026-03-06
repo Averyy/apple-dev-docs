@@ -18,6 +18,12 @@ object AnalyticsReportRequest.Relationships.Reports
 - [object AnalyticsReportRequest.Relationships.Reports.Data](analyticsreportrequest/relationships-data.dictionary/reports-data.dictionary/data-data.dictionary.md)
   The data structure that represents the reports ID for analytics report request resource.
 
+## Properties
+
+- `data` ([AnalyticsReportRequest.Relationships.Reports.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

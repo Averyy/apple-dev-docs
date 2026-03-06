@@ -26,7 +26,7 @@ Use CSS padding and margins to adjust the layout of accessory elements. An acces
 
 MapKit JS ignores this method if you implement [`calloutElementForAnnotation(annotation)`](annotationcalloutdelegate/calloutelementforannotation.md). In that case, you’re responsible for the entirety of the callout.
 
-Note that callouts are language-aware,  and  refer to the placement of the accessories in a left-to-right language. If the [`language`](mapkit/language.md) property indicates a right-to-left language like Hebrew, the system mirrors the UI and the system places the left accessory on the right-hand side, and vice versa.
+Note that callouts are language-aware, *left* and *right* refer to the placement of the accessories in a left-to-right language. If the [`language`](mapkit/language.md) property indicates a right-to-left language like Hebrew, the system mirrors the UI and the system places the left accessory on the right-hand side, and vice versa.
 
 ## Parameters
 

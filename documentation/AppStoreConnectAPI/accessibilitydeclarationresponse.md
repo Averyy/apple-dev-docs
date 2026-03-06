@@ -14,6 +14,11 @@ A response that contains a single accessibility declaration resource.
 object AccessibilityDeclarationResponse
 ```
 
+## Properties
+
+- `data` (AccessibilityDeclaration) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)

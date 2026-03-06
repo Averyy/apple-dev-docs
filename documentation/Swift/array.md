@@ -212,7 +212,7 @@ numbers[2] = 300
 
 When you need to access APIs that require data in an `NSArray` instance instead of `Array`, use the type-cast operator (`as`) to bridge your instance. For bridging to be possible, the `Element` type of your array must be a class, an `@objc` protocol (a protocol imported from Objective-C or marked with the `@objc` attribute), or a type that bridges to a Foundation type.
 
-The following example shows how you can bridge an `Array` instance to `NSArray` to use the `write(to:atomically:)` method. In this example, the `colors` array can be bridged to `NSArray` because the `colors` array’s `String` elements bridge to `NSString`. The compiler prevents bridging the `moreColors` array, on the other hand, because its `Element` type is `Optional<String>`, which does  bridge to a Foundation type.
+The following example shows how you can bridge an `Array` instance to `NSArray` to use the `write(to:atomically:)` method. In this example, the `colors` array can be bridged to `NSArray` because the `colors` array’s `String` elements bridge to `NSString`. The compiler prevents bridging the `moreColors` array, on the other hand, because its `Element` type is `Optional<String>`, which does *not* bridge to a Foundation type.
 
 ```swift
 let colors = ["periwinkle", "rose", "moss"]
@@ -226,11 +226,11 @@ let url = URL(fileURLWithPath: "names.plist")
 // error: cannot convert value of type '[String?]' to type 'NSArray'
 ```
 
-Bridging from `Array` to `NSArray` takes O(1) time and O(1) space if the array’s elements are already instances of a class or an `@objc` protocol; otherwise, it takes O() time and space.
+Bridging from `Array` to `NSArray` takes O(1) time and O(1) space if the array’s elements are already instances of a class or an `@objc` protocol; otherwise, it takes O(*n*) time and space.
 
 When the destination array’s element type is a class or an `@objc` protocol, bridging from `NSArray` to `Array` first calls the `copy(with:)` (`- copyWithZone:` in Objective-C) method on the array to get an immutable copy and then performs additional Swift bookkeeping work that takes O(1) time. For instances of `NSArray` that are already immutable, `copy(with:)` usually returns the same array in O(1) time; otherwise, the copying performance is unspecified. If `copy(with:)` returns the same array, the instances of `NSArray` and `Array` share storage using the same copy-on-write optimization that is used when two instances of `Array` share storage.
 
-When the destination array’s element type is a nonclass type that bridges to a Foundation type, bridging from `NSArray` to `Array` performs a bridging copy of the elements to contiguous storage in O() time. For example, bridging from `NSArray` to `Array<Int>` performs such a copy. No further bridging is required when accessing elements of the `Array` instance.
+When the destination array’s element type is a nonclass type that bridges to a Foundation type, bridging from `NSArray` to `Array` performs a bridging copy of the elements to contiguous storage in O(*n*) time. For example, bridging from `NSArray` to `Array<Int>` performs such a copy. No further bridging is required when accessing elements of the `Array` instance.
 
 > **Note**: The `ContiguousArray` and `ArraySlice` types are not bridged; instances of those types always have a contiguous block of memory as their storage.
 
@@ -385,7 +385,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [func forEach((Self.Element) throws -> Void) rethrows](array/foreach(_:).md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
 - [func enumerated() -> EnumeratedSequence<Self>](array/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [func makeIterator() -> IndexingIterator<Self>](array/makeiterator.md)
   Returns an iterator over the elements of the collection.
 - [var underestimatedCount: Int](array/underestimatedcount.md)
@@ -545,7 +545,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [var span: Span<Element>](array/span.md)
 ### Instance Methods
 - [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/append(addingcapacity:initializingwith:).md)
-  Grows the array to have enough capacity for the specified number of elements, then calls the closure with an OutputSpan covering the array’s uninitialized memory.
+  Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
 - [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:).md)
   Access the underlying CMTaggedBuffers.
 ### Type Aliases

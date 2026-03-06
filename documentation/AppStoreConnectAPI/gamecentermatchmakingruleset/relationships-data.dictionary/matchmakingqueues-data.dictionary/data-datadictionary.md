@@ -14,6 +14,11 @@ The data structure of a matchmaking queue.
 object GameCenterMatchmakingRuleSet.Relationships.MatchmakingQueues.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: A unique identifier for a queue.
+- `type` (string) *(required)*: The type of resource.
+
 
 ---
 

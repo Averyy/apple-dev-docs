@@ -8,6 +8,14 @@ Update a specific background asset.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/backgroundAssets/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)

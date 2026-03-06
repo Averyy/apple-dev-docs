@@ -11,6 +11,11 @@ The type and ID of a related resource.
 object Profile.Relationships.Devices.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object RelationshipLinks](relationshiplinks.md)

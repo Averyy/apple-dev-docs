@@ -20,6 +20,13 @@ object AppClipDomainStatus
 - [object AppClipDomainStatus.Attributes](appclipdomainstatus/attributes-data.dictionary.md)
   The attributes that describe the App Clip Domain Status resource.
 
+## Properties
+
+- `attributes` (AppClipDomainStatus.Attributes): The attributes that describe the App Clip Domain Statuses resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an App Clip Domain Statuses resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BuildBundle](buildbundle.md)

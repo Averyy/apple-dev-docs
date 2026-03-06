@@ -14,6 +14,12 @@ Details about errors, warnings, and informational messages related to the state.
 object BackgroundAssetVersion.Attributes.StateDetails
 ```
 
+## Properties
+
+- `errors` ([StateDetail])
+- `infos` ([StateDetail])
+- `warnings` ([StateDetail])
+
 
 ---
 

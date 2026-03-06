@@ -16,6 +16,54 @@ Add a new score for a player to a leaderboard.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissions
+
+{
+  “data”: {
+    “type”: “gameCenterLeaderboardEntrySubmissions”,
+    “attributes”: {
+      “score”: “123”,
+      “scopedPlayerId”: “A:_5f21e308073d18f9b3afdc37f646e851”,
+      “bundleId”: “com.apple.sample.actionship”,
+      “vendorIdentifier”: “com.apple.sample.actionship.shipssank”
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  “data”: {
+    “type”: “gameCenterLeaderboardEntrySubmissions”,
+    “id”: “3ef21559-006c-4308-831f-cd6cdd714863”,
+    “attributes”: {
+      “bundleId”: “com.apple.sample.actionship”,
+      “challengeIds”: null,
+      “context”: null,
+      “scopedPlayerId”: “A:_5f21e308073d18f9b3afdc37f646e851”,
+      “score”: “123”,
+      “submittedDate”: null,
+      “vendorIdentifier”: “com.apple.sample.actionship.shipssank”
+    },
+    “links”: {
+      “self”: “https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissions/3ef21559-006c-4308-831f-cd6cdd714863”
+    }
+  },
+  “links”: {
+    “self”: “https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissions”
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissions`
+
 
 ---
 

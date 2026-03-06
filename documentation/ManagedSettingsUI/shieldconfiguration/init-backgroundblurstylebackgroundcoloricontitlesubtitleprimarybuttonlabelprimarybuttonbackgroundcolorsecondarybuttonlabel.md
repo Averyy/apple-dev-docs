@@ -22,7 +22,7 @@ The system provides a default for any options that you don’t specify.
 
 ## Parameters
 
-- `backgroundBlurStyle`: A blur style to apply to the  .
+- `backgroundBlurStyle`: A blur style to apply to the `backgroundColor`.
 - `backgroundColor`: A color to display in the shield’s background.
 - `icon`: An icon to display on the shield.
 - `title`: A title for the shield.

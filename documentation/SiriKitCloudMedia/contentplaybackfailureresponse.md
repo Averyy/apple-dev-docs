@@ -14,6 +14,11 @@ A response that allows the client to recover from failed content playback.
 object ContentPlaybackFailureResponse
 ```
 
+## Properties
+
+- `version` (string): The version of the client’s `SiriKitMediaAPI` library.
+- `queue` (Queue): The [`Queue`](queue.md) segment the client uses to recover from the playback failure.
+
 ## See Also
 
 - [Recover from Content Playback Failure](contentplaybackfailure.md)

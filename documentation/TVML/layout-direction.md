@@ -34,6 +34,9 @@ All base style sheets now use `text-align:natural`. You must use the `layout-dir
 
 ##### Values for Layout Direction
 
+- **`ltr`**: Test for left-to-right language layout.
+- **`rtl`**: Test for right-to-left language layout.
+
 ## See Also
 
 - [tv-theme](tv-theme.md)

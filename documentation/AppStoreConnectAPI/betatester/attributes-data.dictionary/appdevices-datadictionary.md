@@ -14,6 +14,13 @@ Information about devices used by the beta tester.
 object BetaTester.Attributes.AppDevices
 ```
 
+## Properties
+
+- `appBuildVersion` (string)
+- `model` (string)
+- `osVersion` (string)
+- `platform` (string)
+
 
 ---
 

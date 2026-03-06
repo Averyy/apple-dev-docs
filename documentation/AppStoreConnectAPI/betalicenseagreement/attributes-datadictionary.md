@@ -14,6 +14,10 @@ Attributes that describe a Beta License Agreements resource.
 object BetaLicenseAgreement.Attributes
 ```
 
+## Properties
+
+- `agreementText` (string): The license agreement text for your beta app that displays to users.
+
 ## See Also
 
 - [Beta License Agreements](beta-license-agreements.md)

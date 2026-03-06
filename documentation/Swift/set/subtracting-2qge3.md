@@ -38,7 +38,7 @@ print(nonNeighbors)
 
 ## Parameters
 
-- `other`: A sequence of elements.   must be finite.
+- `other`: A sequence of elements. `other` must be finite.
 
 ## See Also
 

@@ -6,6 +6,10 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appEvents`
+
 ## See Also
 
 - [Read in-app event information](get-v1-appevents-_id_.md)

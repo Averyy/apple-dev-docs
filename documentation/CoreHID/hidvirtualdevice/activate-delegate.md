@@ -20,7 +20,7 @@ Many functions won’t run, and notifications won’t be received using the [`HI
 
 ## Parameters
 
-- `delegate`: The   that receives incoming set/get report requests. Only one delegate is associated with the device, but many devices can be associated with the delegate.
+- `delegate`: The [`HIDVirtualDeviceDelegate`](hidvirtualdevicedelegate.md) that receives incoming set/get report requests. Only one delegate is associated with the device, but many devices can be associated with the delegate.
 
 ## See Also
 

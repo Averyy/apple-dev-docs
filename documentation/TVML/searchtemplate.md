@@ -35,6 +35,15 @@ The following listing shows the main elements of the `searchTemplate` element in
 
 ###### Element Descriptions
 
+- **[`collectionList`](collectionlist.md)**: Element containing a group of options (such as most popular movies) or search results.
+- **[`img`](img.md)**: A figure representing a search result.
+- **[`list`](list.md)**: Element containing a list of options (such as most popular movies) or search results.
+- **[`lockup`](lockup.md)**: A group of elements describing a search result or prepopulated results.
+- **[`searchField`](searchfield.md)**: A text field where the user is able to enter search terms. JavaScript is used to read the information entered.
+- **[`section`](section.md)**: Elements that are grouped together so that they can be treated as one element for layout purposes.
+- **[`shelf`](shelf.md)**: Element containing a row of options (such as most popular movies) or search results.
+- **[`title`](title.md)**: The title for a search result.
+
 ##### Example
 
 The following listing shows the TVML for a `searchTemplate` example. The example displays a search field and keyboard along the top of the screen. A shelf is prepopulated with popular movies. Modify your main JavaScript file to accept the user input from the search field. For more information on available JavaScript functions, see [`TVMLKit JS`](https://developer.apple.com/documentation/tvmljs).

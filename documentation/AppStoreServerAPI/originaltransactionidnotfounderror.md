@@ -23,6 +23,11 @@ Don’t unlock the service or content associated with the transaction ID for the
 
 In rare cases, you might get this error for transaction IDs that previously returned data successfully. Don’t unlock the service or content for the app bundle ID and environment in the request if you’re unable to resolve this error using the steps above.
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

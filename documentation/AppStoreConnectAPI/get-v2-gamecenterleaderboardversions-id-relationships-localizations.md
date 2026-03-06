@@ -19,6 +19,14 @@ Get a list of localization resource IDs for a specific Game Center leaderboard v
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardVersions/{id}/relationships/localizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read Game Center leaderboard version information](get-v2-gamecenterleaderboardversions-_id_.md)

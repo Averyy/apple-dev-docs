@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/{id}/relationships/manualPrices`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read in-app purchase price schedule information](get-v1-inapppurchasepriceschedules-_id_.md)

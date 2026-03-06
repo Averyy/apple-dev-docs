@@ -10,13 +10,19 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 ##### 13 20251209
 
+**New features**
+
 - The framework now supports the ability to test server response times for real time retention messaging using the using the [`Initiate Performance Test`](initiate-performance-test.md) and [`Get Performance Test Results`](get-performance-test-results.md) endpoints.
 
 ##### 12 20251105
 
+**New features**
+
 - Updated the [`RealtimeResponseBody`](realtimeresponsebody.md) to include the new [`advancedCommerceInfo`](advancedcommerceinfo.md) object.
 
 ##### 11 20250904
+
+**New features**
 
 - Updated the [`DecodedRealtimeRequestBody`](decodedrealtimerequestbody.md) to include the new [`environment`](environment.md) and [`signedDate`](signeddate.md) fields.
 

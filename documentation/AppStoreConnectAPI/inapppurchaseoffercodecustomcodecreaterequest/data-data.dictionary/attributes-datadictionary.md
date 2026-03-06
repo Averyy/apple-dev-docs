@@ -14,6 +14,12 @@ The request body you use to create an in-app purchase offer code custom code cre
 object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `customCode` (string) *(required)*
+- `expirationDate` (date)
+- `numberOfCodes` (integer) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -14,6 +14,14 @@ The request body you provide to change the metadata of a subscription.
 object SubscriptionChangeMetadataRequest
 ```
 
+## Properties
+
+- `descriptors` (SubscriptionChangeMetadataDescriptors)
+- `items` ([SubscriptionChangeMetadataItem])
+- `requestInfo` (RequestInfo) *(required)*
+- `storefront` (storefront)
+- `taxCode` (taxCode)
+
 ## See Also
 
 - [Change Subscription Metadata](change-subscription-metadata.md)

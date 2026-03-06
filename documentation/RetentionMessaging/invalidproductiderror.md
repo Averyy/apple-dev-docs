@@ -18,6 +18,11 @@ object InvalidProductIdError
 
 The [`Configure Default Message`](configure-default-message.md) endpoint returns this error if the system can’t find [`productId`](productid.md) or it’s otherwise invalid.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

@@ -26,7 +26,7 @@ The value returned from the `operation` closure
 
 ##### Task Executor Preference Semantics
 
-Task executors influence  nonisolated asynchronous functions, and default actor methods execute. The preferred executor will be used whenever possible, rather than hopping to the global concurrent pool.
+Task executors influence *where* nonisolated asynchronous functions, and default actor methods execute. The preferred executor will be used whenever possible, rather than hopping to the global concurrent pool.
 
 For an in depth discussion of this topic, see [`TaskExecutor`](taskexecutor.md).
 
@@ -124,7 +124,7 @@ Task {
 
 ## Parameters
 
-- `taskExecutor`: The executor to use as preferred task executor for this   operation, and any child tasks created inside the   closure.   If   it is interpreted as “no preference” and calling this method   will have no impact on execution semantics of the 
+- `taskExecutor`: The executor to use as preferred task executor for this operation, and any child tasks created inside the `operation` closure. If `nil` it is interpreted as “no preference” and calling this method will have no impact on execution semantics of the `operation`
 - `operation`: The operation to execute on the passed executor
 
 ## See Also

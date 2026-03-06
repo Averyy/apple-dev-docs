@@ -8,6 +8,17 @@ Get an app preview set that includes its display target, language, and the previ
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appPreviewSets/{id}`
+
+## Parameters
+
+- `fields[appPreviewSets]` ([string])
+- `fields[appPreviews]` ([string])
+- `include` ([string])
+- `limit[appPreviews]` (integer)
+
 
 ---
 

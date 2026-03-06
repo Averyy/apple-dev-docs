@@ -26,17 +26,17 @@ mutating func addImmediateTaskUnlessCancelled(name: String? = nil, priority: Tas
 
 #### Discussion
 
-This function  the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
+This function *starts* the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
 
-As indicated by the lack of `async` on this method, this method does  suspend, and instead takes over the calling task’s (thread’s) execution in a synchronous manner.
+As indicated by the lack of `async` on this method, this method does *not* suspend, and instead takes over the calling task’s (thread’s) execution in a synchronous manner.
 
 Other than the execution semantics discussed above, the created task is semantically equivalent to its basic version which can be created using `ThrowingTaskGroup/addTask`.
 
 ## Parameters
 
 - `name`: Human readable name of this task.
-- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.
-- `taskExecutor`: The task executor that the child task should be started on and keep using.   Explicitly passing   as the executor preference is equivalent to   calling the   method without a preference, and effectively   means to inherit the outer context’s executor preference.   You can also pass the   global executor explicitly.
+- `priority`: The priority of the operation task. Omit this parameter or pass `nil` to inherit the task group’s base priority.
+- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to calling the `addImmediateTaskUnlessCancelled` method without a preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](globalconcurrentexecutor.md) global executor explicitly.
 - `operation`: The operation to execute as part of the task group.
 
 ## See Also

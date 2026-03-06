@@ -26,7 +26,7 @@ func captureSession(_ session: RoomCaptureSession, didEndWith data: CapturedRoom
 
 - `session`: An object that manages the room-scanning process.
 - `data`: A data object that contains the raw scan results.
-- `error`: An object that describes the problem when an error occurs; otherwise,  .
+- `error`: An object that describes the problem when an error occurs; otherwise, `nil`.
 
 
 ---

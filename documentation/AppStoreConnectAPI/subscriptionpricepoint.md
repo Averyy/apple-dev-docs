@@ -18,6 +18,14 @@ object SubscriptionPricePoint
 - [object SubscriptionPricePoint.Attributes](subscriptionpricepoint/attributes-data.dictionary.md)
 - [object SubscriptionPricePoint.Relationships](subscriptionpricepoint/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionPricePoint.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionPricePoint.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionPricePointResponse](subscriptionpricepointresponse.md)

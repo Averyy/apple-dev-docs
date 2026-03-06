@@ -26,6 +26,12 @@ Don’t include an `image` when you upload the text for the following retention 
 - A promotional-offer retention message
 - A switch-plan retention message
 
+## Properties
+
+- `header` (header): **(Required)** The header text of the retention message that the system displays to customers.
+- `body` (body): **(Required)** The body text of the retention message that the system displays to customers.
+- `image` (UploadMessageImage): The optional image identifier and its alternative text to appear as part of a text-based message with an image.
+
 ## See Also
 
 - [Upload Message](upload-message.md)

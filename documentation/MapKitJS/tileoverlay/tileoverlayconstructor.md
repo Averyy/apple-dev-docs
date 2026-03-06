@@ -19,8 +19,8 @@ constructor(
 
 ## Parameters
 
-- `urlTemplate`: The   value can be in the format of a template URL string or a function that returns a URL string from a set of tile parameters. MapKit JS requests new tiles when the map zooms or pans, the display changes, or the custom   properties change.
-- `options`: An optional   object literal of properties for initializing the tile overlay.
+- `urlTemplate`: The [`TileOverlayUrlTemplate`](tileoverlayurltemplate.md) value can be in the format of a template URL string or a function that returns a URL string from a set of tile parameters. MapKit JS requests new tiles when the map zooms or pans, the display changes, or the custom [`data`](tileoverlay/data.md) properties change.
+- `options`: An optional [`TileOverlayConstructorOptions`](tileoverlayconstructoroptions.md) object literal of properties for initializing the tile overlay.
 
 ## See Also
 

@@ -14,6 +14,13 @@ The attributes for an activities resource.
 object Activities.Attributes
 ```
 
+## Properties
+
+- `artwork` (Artwork) *(required)*: The activity artwork.
+- `editorialNotes` (EditorialNotes): The notes about the activity that appear in the Apple Music catalog.
+- `name` (string) *(required)*: The localized name of the activity.
+- `url` (string) *(required)*: The URL for sharing the activity in Apple Music.
+
 ## See Also
 
 - [object Activities.Relationships](activities/relationships-data.dictionary.md)

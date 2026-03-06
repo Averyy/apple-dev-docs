@@ -12,6 +12,11 @@
 object GameCenterActivityLocalization.Relationships.Image.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

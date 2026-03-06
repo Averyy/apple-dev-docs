@@ -29,7 +29,7 @@ struct UnsafeRawPointer
 
 The `UnsafeRawPointer` type provides no automated memory management, no type safety, and no alignment guarantees. You are responsible for handling the life cycle of any memory you work with through unsafe pointers, to avoid leaks or undefined behavior.
 
-Memory that you manually manage can be either  or  to a specific type. You use the `UnsafeRawPointer` type to access and manage raw bytes in memory, whether or not that memory has been bound to a specific type.
+Memory that you manually manage can be either *untyped* or *bound* to a specific type. You use the `UnsafeRawPointer` type to access and manage raw bytes in memory, whether or not that memory has been bound to a specific type.
 
 ### Understanding a Pointers Memory State
 
@@ -37,7 +37,7 @@ The memory referenced by an `UnsafeRawPointer` instance can be in one of several
 
 #### Raw Uninitialized Memory
 
-Raw memory that has just been allocated is in an  state. Uninitialized memory must be initialized with values of a type before it can be used with any typed operations.
+Raw memory that has just been allocated is in an *uninitialized, untyped* state. Uninitialized memory must be initialized with values of a type before it can be used with any typed operations.
 
 To bind uninitialized memory to a type without initializing it, use the `bindMemory(to:count:)` method. This method returns a typed pointer for further typed access to the memory.
 
@@ -45,7 +45,7 @@ To bind uninitialized memory to a type without initializing it, use the `bindMem
 
 Memory that has been bound to a type, whether it is initialized or uninitialized, is typically accessed using typed pointers—instances of `UnsafePointer` and `UnsafeMutablePointer`. Initialization, assignment, and deinitialization can be performed using `UnsafeMutablePointer` methods.
 
-Memory that has been bound to a type can be rebound to a different type only after it has been deinitialized or if the bound type is a . Deinitializing typed memory does not unbind that memory’s type. The deinitialized memory can be reinitialized with values of the same type, bound to a new type, or deallocated.
+Memory that has been bound to a type can be rebound to a different type only after it has been deinitialized or if the bound type is a *trivial type*. Deinitializing typed memory does not unbind that memory’s type. The deinitialized memory can be reinitialized with values of the same type, bound to a new type, or deallocated.
 
 > **Note**: A trivial type can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enumerations.
 
@@ -109,7 +109,7 @@ print(address: mutableIntPointer, as: Int.self)
 // Prints "42"
 ```
 
-Alternatively, you can use Swift’s  to pass a pointer to an instance or to the elements of an array. Use inout syntax to implicitly create a pointer to an instance of any type. The following example uses implicit bridging to pass a pointer to `value` when calling `print(address:as:)`:
+Alternatively, you can use Swift’s *implicit bridging* to pass a pointer to an instance or to the elements of an array. Use inout syntax to implicitly create a pointer to an instance of any type. The following example uses implicit bridging to pass a pointer to `value` when calling `print(address:as:)`:
 
 ```swift
 var value: Int = 23

@@ -24,6 +24,14 @@ To cancel a subscription at the end of the current period instead, see [`Cancel 
 
 Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Cancel a Subscription`](cancel-a-subscription.md), `Revoke Subscription`, and [`Request Transaction Refund`](request-transaction-refund.md) APIs.
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/revoke/{transactionId}`
+
+## Parameters
+
+- `transactionId` (string) *(required)*: The transaction identifier of the auto-renewable subscription to revoke. Use the subscription’s original transaction ID or any subsequent transaction ID of a transaction related to the subscription.
+
 ## See Also
 
 - [object SubscriptionRevokeRequest](subscriptionrevokerequest.md)

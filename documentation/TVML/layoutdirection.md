@@ -10,6 +10,9 @@ Use the `layoutDirection` attribute to set the language layout direction for a t
 
 ##### Values for Layoutdirection
 
+- **`ltr`**: The text is displayed from left to right.
+- **`rtl`**: The text is displayed from right to left.
+
 ##### Elements That Use Layoutdirection
 
 `layoutDirection` can be used with any full-page template.

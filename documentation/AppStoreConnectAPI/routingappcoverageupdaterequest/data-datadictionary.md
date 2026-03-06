@@ -20,6 +20,12 @@ object RoutingAppCoverageUpdateRequest.Data
 - [object RoutingAppCoverageUpdateRequest.Data.Attributes](routingappcoverageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (RoutingAppCoverageUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

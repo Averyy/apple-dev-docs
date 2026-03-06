@@ -14,6 +14,11 @@ A suggested popular result for similar search prefix terms.
 object SearchSuggestionsResponse.Results.TopResultSuggestion
 ```
 
+## Properties
+
+- `content` ((Activities | Albums | AppleCurators | Artists | Curators | MusicVideos | Playlists | RecordLabels | Songs | Stations)) *(required)*: The actual resource for the suggested content.
+- `kind` (string) *(required)*: The kind of suggestion.
+
 ## See Also
 
 - [object SearchSuggestionsResponse.Results.TermSuggestion](searchsuggestionsresponse/results-data.dictionary/termsuggestion.md)

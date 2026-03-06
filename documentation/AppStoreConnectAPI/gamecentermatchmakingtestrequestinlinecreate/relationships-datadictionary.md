@@ -20,6 +20,10 @@ object GameCenterMatchmakingTestRequestInlineCreate.Relationships
 - [object GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties](gamecentermatchmakingtestrequestinlinecreate/relationships-data.dictionary/matchmakingplayerproperties-data.dictionary.md)
   A resource object for the game-specific properties for a match request.
 
+## Properties
+
+- `matchmakingPlayerProperties` (GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties)
+
 ## See Also
 
 - [object GameCenterMatchmakingTestRequestInlineCreate.Attributes](gamecentermatchmakingtestrequestinlinecreate/attributes-data.dictionary.md)

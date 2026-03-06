@@ -16,6 +16,13 @@ An object that contains information required to connect to a Wi-Fi network. Opti
 object SemanticTagType.WifiNetwork
 ```
 
+## Properties
+
+- `password` (string) *(required)*: The password for the Wi-Fi network.
+- `ssid` (string) *(required)*: The name for the Wi-Fi network.
+- `captiveToken` (string): Token credential required to log in to Captive Portal.
+- `captiveTokenAuthURL` (string): The URL of the authentication server that verifies the client using a token credential.
+
 ## See Also
 
 - [object SemanticTagType.CurrencyAmount](semantictagtype/currencyamount-data.dictionary.md)

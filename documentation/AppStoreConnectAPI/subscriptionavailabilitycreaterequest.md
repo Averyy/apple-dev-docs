@@ -17,6 +17,10 @@ object SubscriptionAvailabilityCreateRequest
 ### Objects
 - [object SubscriptionAvailabilityCreateRequest.Data](subscriptionavailabilitycreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionAvailabilityCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionAvailability](subscriptionavailability.md)

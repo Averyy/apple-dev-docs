@@ -8,6 +8,57 @@ Get the app in App Store Connect that’s related to an Xcode Cloud product.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciProducts/{id}/app`
+
+## Parameters
+
+- `fields[appInfos]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[apps]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[betaAppLocalizations]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[betaGroups]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[builds]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[gameCenterEnabledVersions]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[inAppPurchases]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `fields[preReleaseVersions]` ([string]): Additional fields to include for each Apps resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[appInfos]` (integer): The number of included Apps resources to return if the app info relationship is included.
+- `limit[appStoreVersions]` (integer): The number of included Apps resources to return if the app store versions relationship is included.
+- `limit[betaAppLocalizations]` (integer): The number of included Apps resources to return if the beta app localizations relationship is included.
+- `limit[betaGroups]` (integer): The number of included Apps resources to return if the beta groups relationship is included.
+- `limit[builds]` (integer): The number of included Apps resources to return if the builds relationship is included.
+- `limit[gameCenterEnabledVersions]` (integer): The number of included Apps resources to return if the Game Center enabled versions relationship is included.
+- `limit[inAppPurchases]` (integer): The number of included Apps resources to return if the in-app purchases relationship is included.
+- `limit[preReleaseVersions]` (integer): The number of included Apps resources to return if the pre-release versions relationship is included.
+- `limit[appClips]` (integer)
+- `fields[appClips]` ([string])
+- `fields[reviewSubmissions]` ([string])
+- `fields[appCustomProductPages]` ([string])
+- `fields[appEvents]` ([string])
+- `limit[appCustomProductPages]` (integer)
+- `limit[appEvents]` (integer)
+- `limit[reviewSubmissions]` (integer)
+- `fields[betaLicenseAgreements]` ([string])
+- `fields[betaAppReviewDetails]` ([string])
+- `fields[ciProducts]` ([string])
+- `fields[endUserLicenseAgreements]` ([string])
+- `fields[subscriptionGracePeriods]` ([string])
+- `fields[subscriptionGroups]` ([string])
+- `fields[promotedPurchases]` ([string])
+- `limit[subscriptionGroups]` (integer)
+- `limit[inAppPurchasesV2]` (integer)
+- `limit[promotedPurchases]` (integer)
+- `fields[appStoreVersionExperiments]` ([string])
+- `limit[appStoreVersionExperimentsV2]` (integer)
+- `fields[appEncryptionDeclarations]` ([string])
+- `limit[appEncryptionDeclarations]` (integer)
+- `fields[gameCenterDetails]` ([string])
+- `fields[androidToIosAppMappingDetails]` ([string])
+- `fields[buildIcons]` ([string])
+- `limit[androidToIosAppMappingDetails]` (integer)
+
 ## See Also
 
 - [List All Xcode Cloud Products](get-v1-ciproducts.md)

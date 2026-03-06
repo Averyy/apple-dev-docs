@@ -12,11 +12,13 @@ MapKit JS shows single-point annotations on a map. The framework accomplishes th
 
 - [`Annotation`](annotation.md), which allows you to position a live DOM element on the map.
 - [`ImageAnnotation`](imageannotation.md), which allows you to customize the annotation with your own imagery.
-- [`MarkerAnnotation`](markerannotation.md), which places a defined  balloon marker on the map with a `title`, `subtitle`, and custom glyph text/image.
+- [`MarkerAnnotation`](markerannotation.md), which places a defined *Apple look-and-feel* balloon marker on the map with a `title`, `subtitle`, and custom glyph text/image.
 - [`PlaceAnnotation`](placeannotation.md), which places an annotation for a particular place on a map.
 - [`MapFeatureAnnotation`](mapfeatureannotation.md), which places an image for a particular feature on a map.
 
 A callout is a standard or custom element that can give more information about an annotation. A standard callout displays the annotation’s title and subtitle, if you provide them. A callout appears when the user selects an annotation interactively (by clicking or tapping), or programmatically when you set the annotation’s [`selected`](annotation/selected.md) property to `true`. A callout goes away when the user deselects an annotation interactively either by tapping or clicking the map or by selecting another item on the map, or when you deselect it programmatically.
+
+**Annotation events**
 
 | Event | Interface | Summary |
 | --- | --- | --- |

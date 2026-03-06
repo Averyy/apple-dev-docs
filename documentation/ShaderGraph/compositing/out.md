@@ -17,6 +17,10 @@ Outputs areas of foreground that do not overlap with background.
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The `color4` foreground input. `F` represents the RGB component of this parameter. `f` represents the alpha component of this parameter.
+- **`Background`**: The `color4` background input. `B` represents the RGB component of this parameter. `b`represents the alpha component of this parameter.
+- **`Mix`**: The weight of the blend operation. The higher the value of `Mix`, the more apparent the effect of the blend operation. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Out` node determines its output using the alpha channels of the foreground and background inputs. The RGB component of the output is `F*(1-b)` and the alpha component of the output is `f*(1-b)`. The visual effect of this node is that within the output, the node preserves the foreground values that don’t overlap with the background alpha. Below is a simple node graph that uses the `Out` node to blend a tile and rock texture:

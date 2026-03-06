@@ -41,7 +41,7 @@ if flippedHeads {
 
 ## Parameters
 
-- `generator`: The random number generator to use when creating   the new random value.
+- `generator`: The random number generator to use when creating the new random value.
 
 ## See Also
 

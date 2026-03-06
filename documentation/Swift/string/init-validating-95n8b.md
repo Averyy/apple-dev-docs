@@ -26,7 +26,7 @@ If the contents of the path component isn’t a well-formed Unicode string, this
 
 ## Parameters
 
-- `component`: The path component to be interpreted as   .
+- `component`: The path component to be interpreted as `CInterop.PlatformUnicodeEncoding`.
 
 
 ---

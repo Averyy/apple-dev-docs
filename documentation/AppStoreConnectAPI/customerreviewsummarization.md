@@ -22,6 +22,14 @@ object CustomerReviewSummarization
 - [object CustomerReviewSummarization.Relationships](customerreviewsummarization/relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `attributes` (CustomerReviewSummarization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (CustomerReviewSummarization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object CustomerReviewsResponse](customerreviewsresponse.md)

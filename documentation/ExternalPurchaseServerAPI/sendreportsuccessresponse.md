@@ -18,6 +18,10 @@ object SendReportSuccessResponse
 
 The [`Send External Purchase Report`](send-external-purchase-report.md) endpoint returns this response when the server successfully receives a report that passes validation checks. Record the [`requestIdentifier`](requestidentifier.md) in your system. Use the  `requestIdentifer` to get the report by sending a request to the [`Retrieve External Purchase Report`](retrieve-external-purchase-report.md) endpoint.
 
+## Properties
+
+- `requestIdentifier` (requestIdentifier) *(required)*: The UUID that you generated to uniquely identify the report when calling the [`Send External Purchase Report`](send-external-purchase-report.md) endpoint.
+
 ## See Also
 
 - [Send External Purchase Report](send-external-purchase-report.md)

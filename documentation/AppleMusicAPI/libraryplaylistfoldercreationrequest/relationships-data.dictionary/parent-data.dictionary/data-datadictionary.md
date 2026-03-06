@@ -14,6 +14,11 @@ Data of the parent of the library playlist folder of the creation request.
 object LibraryPlaylistFolderCreationRequest.Relationships.Parent.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The unique identifier for the parent folder of the library playlist folder of the creation request.
+- `type` (string) *(required)*: The type of the parent folder of the library playlist folder of the creation request.
+
 
 ---
 

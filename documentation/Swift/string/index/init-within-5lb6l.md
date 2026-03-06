@@ -50,8 +50,8 @@ print(String.UTF8View.Index(emojiLow, within: cafe.utf8))
 
 ## Parameters
 
-- `idx`: A position in a   or one of its views.
-- `target`: The   in which to find the new position.
+- `idx`: A position in a `String` or one of its views.
+- `target`: The `UTF8View` in which to find the new position.
 
 
 ---

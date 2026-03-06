@@ -18,6 +18,11 @@ object GameCenterChallengeVersionReleaseCreateRequest.Data.Relationships
 - [object GameCenterChallengeVersionReleaseCreateRequest.Data.Relationships.GameCenterDetail](gamecenterchallengeversionreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 - [object GameCenterChallengeVersionReleaseCreateRequest.Data.Relationships.Version](gamecenterchallengeversionreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
 
+## Properties
+
+- `gameCenterDetail` (GameCenterChallengeVersionReleaseCreateRequest.Data.Relationships.GameCenterDetail) *(required)*
+- `version` (GameCenterChallengeVersionReleaseCreateRequest.Data.Relationships.Version) *(required)*
+
 
 ---
 

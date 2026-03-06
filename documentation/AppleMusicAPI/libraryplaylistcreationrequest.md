@@ -22,6 +22,11 @@ object LibraryPlaylistCreationRequest
 - [object LibraryPlaylistCreationRequest.Relationships](libraryplaylistcreationrequest/relationships-data.dictionary.md)
   The relationships for a library playlist creation request object.
 
+## Properties
+
+- `attributes` (LibraryPlaylistCreationRequest.Attributes) *(required)*: A dictionary that includes strings for the name and description of the new playlist.
+- `relationships` (LibraryPlaylistCreationRequest.Relationships): An optional key including tracks for the new playlist.
+
 ## See Also
 
 - [Create a New Library Playlist](create-a-new-library-playlist.md)

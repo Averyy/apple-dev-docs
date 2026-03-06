@@ -28,6 +28,15 @@ object Artists
 - [object Artists.Views](artists/views-data.dictionary.md)
   The views for associations between artists and other resources.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the artist.
+- `type` (string) *(required)*: This value is always `artists`.
+- `href` (string) *(required)*: The relative location for the artist resource.
+- `attributes` (Artists.Attributes): The attributes for the artist.
+- `relationships` (Artists.Relationships): The relationships for the artist.
+- `views` (Artists.Views): The views for associations between artists and other resources.
+
 ## See Also
 
 - [object ArtistsResponse](artistsresponse.md)

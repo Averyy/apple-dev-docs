@@ -37,7 +37,7 @@ The Apple Pay payment sheet is dismissed when this method is called with a statu
 
 ## Parameters
 
-- `result`: The result of the payment authorization, including its status and list of errors. See  .
+- `result`: The result of the payment authorization, including its status and list of errors. See [`ApplePayPaymentAuthorizationResult`](applepaypaymentauthorizationresult.md).
 
 ## See Also
 

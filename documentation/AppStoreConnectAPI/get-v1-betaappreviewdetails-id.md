@@ -8,6 +8,16 @@ Get beta app review details for a specific app.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaAppReviewDetails/{id}`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+- `fields[betaAppReviewDetails]` ([string]): Fields to return for included related types.
+- `include` ([string]): Relationship data to include in the response.
+
 ## See Also
 
 - [List Beta App Review Details](get-v1-betaappreviewdetails.md)

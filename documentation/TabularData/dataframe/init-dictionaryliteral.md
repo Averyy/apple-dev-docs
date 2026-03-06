@@ -46,7 +46,8 @@ Otherwise, the data frame sets a column’s type to `Any`.
 
 ## Parameters
 
-- `elements`: A comma-separated, or variadic, list of tuples.   Each tuple consists of two elements:
+- `elements`: A comma-separated, or variadic, list of tuples. Each tuple consists of two elements: - A string that represents a column’s name
+- An array that represents the elements for that column
 
 ## See Also
 

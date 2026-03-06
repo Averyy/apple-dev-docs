@@ -12,6 +12,11 @@
 object AppPricePointV3.Attributes
 ```
 
+## Properties
+
+- `customerPrice` (string)
+- `proceeds` (string)
+
 ## See Also
 
 - [object AppPricePointV3.Relationships](apppricepointv3/relationships-data.dictionary.md)

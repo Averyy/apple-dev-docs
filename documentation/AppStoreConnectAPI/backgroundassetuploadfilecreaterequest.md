@@ -20,6 +20,10 @@ object BackgroundAssetUploadFileCreateRequest
 - [object BackgroundAssetUploadFileCreateRequest.Data](backgroundassetuploadfilecreaterequest/data-data.dictionary.md)
   The data structure that represents a background asset upload file create request resource.
 
+## Properties
+
+- `data` (BackgroundAssetUploadFileCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

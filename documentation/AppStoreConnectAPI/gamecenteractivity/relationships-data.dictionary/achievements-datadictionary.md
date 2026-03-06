@@ -17,6 +17,12 @@ object GameCenterActivity.Relationships.Achievements
 ### Dictionaries
 - [object GameCenterActivity.Relationships.Achievements.Data](gamecenteractivity/relationships-data.dictionary/achievements-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterActivity.Relationships.Achievements.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

@@ -38,12 +38,12 @@ func translationIsSupported(from source: Locale.Language, to target: Locale.Lang
 
 ### Creating a language availability
 - [init()](languageavailability/init.md)
-  Creates a language availability.
+  Creates an instance to check what languages are available.
 - [init(preferredStrategy: TranslationSession.Strategy)](languageavailability/init(preferredstrategy:).md)
-  Creates a language availability, specifying what the preferred strategy is.
+  Creates an instance for checking language availability with a preferred translation strategy.
 ### Configuring language availability
 - [var preferredStrategy: TranslationSession.Strategy](languageavailability/preferredstrategy.md)
-  When checking availability, which translation strategy you’d prefer to use.
+  The preferred strategy of translation to check availability for.
 ### Getting supported languages
 - [var supportedLanguages: [Locale.Language]](languageavailability/supportedlanguages.md)
   A list of translation languages the framework supports.

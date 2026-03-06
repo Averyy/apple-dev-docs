@@ -14,6 +14,32 @@ Get a list of the in-app purchases for a specific app.
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/inAppPurchasesV2`
+
+## Parameters
+
+- `fields[inAppPurchaseAppStoreReviewScreenshots]` ([string])
+- `fields[inAppPurchaseContents]` ([string])
+- `fields[inAppPurchaseLocalizations]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `fields[promotedPurchases]` ([string])
+- `filter[inAppPurchaseType]` ([string])
+- `filter[name]` ([string])
+- `filter[productId]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[inAppPurchaseLocalizations]` (integer)
+- `sort` ([string])
+- `fields[inAppPurchasePriceSchedules]` ([string])
+- `fields[inAppPurchaseAvailabilities]` ([string])
+- `fields[inAppPurchaseImages]` ([string])
+- `fields[inAppPurchaseOfferCodes]` ([string])
+- `limit[images]` (integer)
+- `limit[offerCodes]` (integer)
+
 ## See Also
 
 - [List in-app purchases IDs for an app](get-v1-apps-_id_-relationships-inapppurchasesv2.md)

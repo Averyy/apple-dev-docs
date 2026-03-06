@@ -36,12 +36,12 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O( + ), where  is length of this collection and  is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
+> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 
 - `newElements`: The new elements to insert into the collection.
-- `i`: The position at which to insert the new elements.    must be a valid index of the collection.
+- `i`: The position at which to insert the new elements. `index` must be a valid index of the collection.
 
 
 ---

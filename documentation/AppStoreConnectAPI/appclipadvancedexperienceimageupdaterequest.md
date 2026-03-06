@@ -20,6 +20,10 @@ object AppClipAdvancedExperienceImageUpdateRequest
 - [object AppClipAdvancedExperienceImageUpdateRequest.Data](appclipadvancedexperienceimageupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppClipAdvancedExperienceImageUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceImage](appclipadvancedexperienceimage.md)

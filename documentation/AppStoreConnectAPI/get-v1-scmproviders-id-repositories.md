@@ -8,6 +8,19 @@ List all Git repositories for a specific source code management provider you con
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmProviders/{id}/repositories`
+
+## Parameters
+
+- `fields[scmRepositories]` ([string]): Additional fields to include for each Repositories resource returned by the response.
+- `filter[id]` ([string]): Filter the returned repositories using the ID of the Repositories resource.
+- `limit` (integer): The number of Repositories resources to return.
+- `fields[scmGitReferences]` ([string])
+- `fields[scmProviders]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Source Code Management Providers](get-v1-scmproviders.md)

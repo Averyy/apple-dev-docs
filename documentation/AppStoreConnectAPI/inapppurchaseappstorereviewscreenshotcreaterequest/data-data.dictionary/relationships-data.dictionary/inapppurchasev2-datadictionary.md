@@ -17,6 +17,10 @@ object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InA
 ### Objects
 - [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2.Data](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2.Data) *(required)*
+
 
 ---
 

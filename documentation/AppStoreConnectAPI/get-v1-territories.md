@@ -8,6 +8,15 @@ List all territories where the App Store operates.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/territories`
+
+## Parameters
+
+- `fields[territories]` ([string])
+- `limit` (integer): Number of resources to return.
+
 ## See Also
 
 - [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)

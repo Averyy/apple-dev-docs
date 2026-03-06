@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Reset this iterator to `codeUnitOffset`, skipping  safety checks.
+Reset this iterator to `codeUnitOffset`, skipping *all* safety checks.
 
 **Availability**:
 - iOS 26.0+

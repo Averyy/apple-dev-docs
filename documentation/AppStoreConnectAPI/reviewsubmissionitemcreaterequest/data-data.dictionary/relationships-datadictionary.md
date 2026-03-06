@@ -29,6 +29,21 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
 
+## Properties
+
+- `appCustomProductPageVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppCustomProductPageVersion)
+- `appEvent` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppEvent)
+- `appStoreVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersion)
+- `appStoreVersionExperiment` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperiment)
+- `appStoreVersionExperimentV2` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperimentV2)
+- `backgroundAssetVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion)
+- `gameCenterAchievementVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion)
+- `gameCenterActivityVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion)
+- `gameCenterChallengeVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion)
+- `gameCenterLeaderboardSetVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion)
+- `gameCenterLeaderboardVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion)
+- `reviewSubmission` (ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission) *(required)*
+
 
 ---
 

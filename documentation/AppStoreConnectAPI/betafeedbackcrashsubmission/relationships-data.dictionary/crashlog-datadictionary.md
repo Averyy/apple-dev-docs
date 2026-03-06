@@ -12,6 +12,10 @@
 object BetaFeedbackCrashSubmission.Relationships.CrashLog
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

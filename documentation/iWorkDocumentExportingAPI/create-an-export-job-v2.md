@@ -116,6 +116,15 @@ And the resulting signed JWT is:
 
 > **Note**: The signed JWT can be different for the same input.
 
+## Endpoint
+
+`POST https://iworkpreviewapi.icloud.com/iwork/api/v2/export`
+
+## Parameters
+
+- `Content-Length` (int64) *(required)*: The number of bytes in the request body as defined in [`RFC 7230`](https://developer.apple.comhttps://www.rfc-editor.org/info/rfc7230). The service doesn’t support chunked transfer coding.
+- `authorization` (string) *(required)*: A JWT as defined in the Authentication and as defined in the [`Authentication and request payload`](create-an-export-job-(v2)#Authentication-and-request-payload.md) section, below.
+
 ## Request Body
 
  The body of the request. The body contains the iWork document for the service to export in raw binary form. If the original file is a package file, zip it before adding to the request.

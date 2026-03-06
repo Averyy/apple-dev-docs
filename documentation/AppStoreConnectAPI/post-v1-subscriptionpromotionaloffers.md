@@ -8,6 +8,10 @@ Create a promotional offer for an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionPromotionalOffers`
+
 ## See Also
 
 - [List All Promotional Offer Prices for a Subscription](get-v1-subscriptionpromotionaloffers-_id_-prices.md)

@@ -18,6 +18,59 @@ List the in-app purchases that are available for your app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/6446998023/inAppPurchases
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "type": "inAppPurchases",
+            "id": "ca38ea26-b7d5-4989-9615-c678cb05aabd",
+            "attributes": {
+                "referenceName": "YNC1",
+                "productId": "YNCNC1",
+                "inAppPurchaseType": "NON_CONSUMABLE",
+                "state": "WAITING_FOR_SCREENSHOT"
+            },
+            "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/inAppPurchases/ca38ea26-b7d5-4989-9615-c678cb05aabd"
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/apps/6446998023/inAppPurchases"
+    },
+    "meta": {
+        "paging": {
+            "total": 1,
+            "limit": 50
+        }
+    }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/inAppPurchases`
+
+## Parameters
+
+- `fields[apps]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `filter[canBeSubmitted]` ([string])
+- `filter[inAppPurchaseType]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `sort` ([string])
+- `limit[apps]` (integer)
+
 ## See Also
 
 - [Read In-App Purchase Information](get-v1-inapppurchases-_id_.md)

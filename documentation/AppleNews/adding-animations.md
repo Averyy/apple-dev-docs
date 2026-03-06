@@ -6,6 +6,8 @@ Use animations to affect how parts of your article come into view the first time
 
 #### Overview
 
+**On this page, you’ll learn how to apply animations to components.**
+
 The images below display some animations. In the first image, the pull quote gets larger and darker as the user scrolls through the text. In the second image, the photo gets darker, but not larger, as the user scrolls. In the third image, the gallery moves in from the right side of the screen.
 
 ![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a scale fade animation.](https://docs-assets.developer.apple.com/published/9a1e30efa0b4822e6d1b238cd6bd3917/media-3625689%402x.png)

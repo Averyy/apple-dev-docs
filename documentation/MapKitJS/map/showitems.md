@@ -52,7 +52,7 @@ map.showItems([park, surf],
 ## Parameters
 
 - `items`: An array of annotations and overlays to make visible.
-- `options`: Options that   defines that let you determine animation, and the framing of the map.
+- `options`: Options that [`MapShowItemsOptions`](mapshowitemsoptions.md) defines that let you determine animation, and the framing of the map.
 
 ## See Also
 

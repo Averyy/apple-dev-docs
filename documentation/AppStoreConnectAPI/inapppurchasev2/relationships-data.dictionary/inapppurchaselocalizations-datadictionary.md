@@ -17,6 +17,12 @@ object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations
 ### Objects
 - [object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations.Data](inapppurchasev2/relationships-data.dictionary/inapppurchaselocalizations-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchaseV2.Relationships.InAppPurchaseLocalizations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

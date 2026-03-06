@@ -14,6 +14,12 @@ The library artists results for a term search for specific resource types.
 object LibrarySearchResponse.Results.LibraryArtistsSearchResult
 ```
 
+## Properties
+
+- `data` ([LibraryArtists]) *(required)*: The library artist resources matching the search term, ordered by best match.
+- `href` (string): A relative location for the resource.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources if more exist.
+
 ## See Also
 
 - [object LibrarySearchResponse.Results.LibraryAlbumsSearchResult](librarysearchresponse/results-data.dictionary/libraryalbumssearchresult.md)

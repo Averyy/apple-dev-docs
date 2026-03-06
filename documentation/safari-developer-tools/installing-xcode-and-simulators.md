@@ -12,8 +12,8 @@ To get started using Simulators:
 
 1. Install [`Xcode`](https://developer.apple.comhttps://apps.apple.com/us/app/xcode/id497799835) from the Mac App Store.
 2. Once installed, launch Xcode so that it can complete its first launch.
-3. A dialog will be presented that indicates which Simulator runtimes are built-in, and which Simulator runtimes you may download. For now, choose  to finish setting up Xcode.
-4. Once Xcode has finished setting up, relaunch Safari to begin using the  part of the [`Develop menu`](develop-menu.md) and  in [`Responsive Design Mode`](responsive-design-mode.md).
+3. A dialog will be presented that indicates which Simulator runtimes are built-in, and which Simulator runtimes you may download. For now, choose **Continue** to finish setting up Xcode.
+4. Once Xcode has finished setting up, relaunch Safari to begin using the **Open Page With > [Simulator]** part of the [`Develop menu`](develop-menu.md) and **Open with Simulator** in [`Responsive Design Mode`](responsive-design-mode.md).
 
 ## See Also
 

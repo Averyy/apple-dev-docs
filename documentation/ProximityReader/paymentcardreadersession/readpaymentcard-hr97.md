@@ -28,7 +28,7 @@ Call this method when you want to verify someone’s card with your payment prov
 
 ## Parameters
 
-- `request`: The object that contains the reason for the verification request.   For example, you might verify the card supports a specific currency.
+- `request`: The object that contains the reason for the verification request. For example, you might verify the card supports a specific currency.
 
 ## See Also
 

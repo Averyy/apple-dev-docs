@@ -12,6 +12,14 @@ Commit an uploaded image asset as a review screenshot for an in-app purchase.
 
 - [Managing in-app purchases](managing-in-app-purchases.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/inAppPurchaseAppStoreReviewScreenshots/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read In-App Purchase Review Screenshot Information](get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)

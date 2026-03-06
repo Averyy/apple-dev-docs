@@ -29,7 +29,7 @@ Interpolated expressions don’t pass through this method; instead, Swift select
 
 ## Parameters
 
-- `literal`: A string literal containing the characters   that appear next in the string literal.
+- `literal`: A string literal containing the characters that appear next in the string literal.
 
 
 ---

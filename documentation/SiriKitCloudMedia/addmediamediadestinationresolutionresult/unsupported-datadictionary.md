@@ -14,6 +14,10 @@ The reason your service can’t add media items to the specified library or play
 object AddMediaMediaDestinationResolutionResult.Unsupported
 ```
 
+## Properties
+
+- `reason` (AddMediaMediaDestinationUnsupportedReason): The reason your service can’t add media items to the specified library or playlist.
+
 ## See Also
 
 - [type AddMediaMediaDestinationUnsupportedReason](addmediamediadestinationunsupportedreason.md)

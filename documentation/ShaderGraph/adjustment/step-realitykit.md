@@ -21,6 +21,9 @@ Outputs a 1 or a 0 depending on whether the input is greater than or less than t
 
 #### Parameter Descriptions
 
+- **`In`**: The input value.
+- **`Edge`**: The deciding value to which to compare the input.
+
 #### Discussion
 
 The Step node takes the `In` value and compares it to the `Edge` parameter. If the value is less than `Edge`, the node returns `0`. Otherwise, it returns `1`.

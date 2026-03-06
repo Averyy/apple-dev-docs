@@ -22,6 +22,11 @@ object RateLimitExceededError
 
 For more information, including a list of endpoints and their rate limits, see [`Identifying rate limits`](identifying-rate-limits.md).
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

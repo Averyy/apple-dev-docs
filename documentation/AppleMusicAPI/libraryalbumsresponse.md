@@ -14,6 +14,10 @@ The response to a library albums request.
 object LibraryAlbumsResponse
 ```
 
+## Properties
+
+- `data` ([LibraryAlbums]) *(required)*: The [`LibraryAlbums`](libraryalbums.md) included in the request.
+
 ## See Also
 
 - [object Albums](albums.md)

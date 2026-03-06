@@ -22,6 +22,9 @@ To display an Track with Apple Wallet button, add the following script tag to yo
 
 The script tag contains the URL that loads the `apple-pay-sdk.js`, from the Apple Pay JS CDN. The script tag includes two additional attributes:
 
+- **`crossorigin`**: An abbreviated version of `crossorigin=”anonymous”`, this attribute instructs the browser to connect to the Apple Pay JS CDN using anonymous credentials mode. This improves performance by allowing subsequent Apple Pay JS network requests to reuse the same HTTP/2 connection
+- **`async`**: The attribute instructs the browser to immediately evaluate the script. This prevents `apple-pay-sdk.js` from blocking the page load, and initializes and loads the ApplePay JS libraries as soon as possible. Your app needs to wait for the callback function execution before interacting with the API.
+
 Additionally, ensure that your website allows a Content Security Policy for Apple Pay JS to function properly.
 
 ##### Add a Standard Apple Wallet Button

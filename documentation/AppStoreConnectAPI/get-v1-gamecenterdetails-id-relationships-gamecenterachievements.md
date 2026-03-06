@@ -8,6 +8,14 @@ List the achievements for a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/gameCenterAchievements`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all Game Center achievements for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterachievementsv2.md)

@@ -8,6 +8,20 @@ List all leaderboard releases for a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/leaderboardReleases`
+
+## Parameters
+
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterLeaderboardReleases]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[gameCenterLeaderboard]` ([string])
+- `filter[live]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [List all Game Center leaderboards for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterleaderboardsv2.md)

@@ -6,7 +6,7 @@ Use container components to create the component hierarchies you need for specia
 
 #### Overview
 
-A  component is a child of the parent component that contains it. The child component is positioned and rendered relative to that parent. The size of the child components determines the minimum size of a container component.
+A *nested* component is a child of the parent component that contains it. The child component is positioned and rendered relative to that parent. The size of the child components determines the minimum size of a container component.
 
 > 💡 **Tip**:  If you use an anchor to attach multiple children to the same side of their parent component, the children “stack” to create a cleanly aligned header. For information about using container components and anchors, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md).
 

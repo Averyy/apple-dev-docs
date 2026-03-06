@@ -20,6 +20,14 @@ object GameCenterAchievementImage
 - [object GameCenterAchievementImage.Attributes](gamecenterachievementimage/attributes-data.dictionary.md)
 - [object GameCenterAchievementImage.Relationships](gamecenterachievementimage/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementImage.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterAchievementImage.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageV2](gamecenterachievementimagev2.md)

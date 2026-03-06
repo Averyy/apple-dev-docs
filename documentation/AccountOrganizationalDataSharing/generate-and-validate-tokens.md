@@ -85,6 +85,10 @@ After the server validates the refresh token, the endpoint returns the identity 
 }
 ```
 
+## Endpoint
+
+`POST https://appleid.apple.com/auth/oauth2/v2/token`
+
 ## Request Body
 
 The list of input parameters required for the server to validate the authorization code or refresh token.

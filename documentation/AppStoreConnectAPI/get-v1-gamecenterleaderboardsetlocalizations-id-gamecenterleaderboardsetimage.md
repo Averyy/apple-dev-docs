@@ -8,6 +8,16 @@ Get information about a leaderboard set image associated with a leaderboard set 
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetLocalizations/{id}/gameCenterLeaderboardSetImage`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardSetImages]` ([string])
+- `fields[gameCenterLeaderboardSetLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read Game Center leaderboard set localization information](get-v2-gamecenterleaderboardsetlocalizations-_id_.md)

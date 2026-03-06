@@ -19,6 +19,10 @@ object GameCenterActivityVersionCreateRequest
 ### Dictionaries
 - [object GameCenterActivityVersionCreateRequest.Data](gamecenteractivityversioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityVersionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

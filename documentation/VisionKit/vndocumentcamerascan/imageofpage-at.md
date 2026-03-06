@@ -23,7 +23,7 @@ The image of the page at the specified index. If `index` is out of bounds, the f
 
 ## Parameters
 
-- `index`: The index of the image in the scanned document you’d like to return. Page 1 is at   index 0.
+- `index`: The index of the image in the scanned document you’d like to return. Page 1 is at index 0.
 
 ## See Also
 

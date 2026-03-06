@@ -18,6 +18,11 @@ object Domain
 
 An organization can generate Managed Apple Accounts in Apple School Manager for the verified domains named in its `Domains` objects. For more information about verifying domains, see [`Verify domains in Apple Business Manager and Apple School Manager`](https://developer.apple.comhttps://support.apple.com/en-us/HT212275).
 
+## Properties
+
+- `isVerified` (boolean): A flag that indicates whether the domain’s verified in Apple School Manager.
+- `name` (string): The domain name.
+
 ## See Also
 
 - [Read the organization](returns-organization-infrmation.md)

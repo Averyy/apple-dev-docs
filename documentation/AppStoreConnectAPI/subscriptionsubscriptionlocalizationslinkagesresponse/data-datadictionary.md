@@ -12,6 +12,11 @@
 object SubscriptionSubscriptionLocalizationsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

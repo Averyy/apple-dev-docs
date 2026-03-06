@@ -12,6 +12,11 @@
 object WebhookDelivery.Relationships.Event.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

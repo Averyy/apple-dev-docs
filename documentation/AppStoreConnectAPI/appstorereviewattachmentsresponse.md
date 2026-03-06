@@ -14,6 +14,13 @@ A response that contains a list of App Store Review Attachment resources.
 object AppStoreReviewAttachmentsResponse
 ```
 
+## Properties
+
+- `data` ([AppStoreReviewAttachment]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+- `included` ([AppStoreReviewDetail])
+
 ## See Also
 
 - [object AppStoreReviewAttachment](appstorereviewattachment.md)

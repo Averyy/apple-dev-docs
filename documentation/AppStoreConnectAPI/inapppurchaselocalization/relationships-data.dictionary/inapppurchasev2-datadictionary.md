@@ -17,6 +17,10 @@ object InAppPurchaseLocalization.Relationships.InAppPurchaseV2
 ### Objects
 - [object InAppPurchaseLocalization.Relationships.InAppPurchaseV2.Data](inapppurchaselocalization/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseLocalization.Relationships.InAppPurchaseV2.Data)
+
 
 ---
 

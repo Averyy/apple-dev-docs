@@ -27,12 +27,12 @@ mutating func insert<C>(_ index: Bound, within collection: C) -> Bool where Boun
 
 #### Discussion
 
-> **Note**: O(), where  is the number of ranges in the range set.
+> **Note**: O(*n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 
-- `index`: The index to insert into the range set.   must be a   valid index of   that isn’t the collection’s  .
-- `collection`: The collection that contains  .
+- `index`: The index to insert into the range set. `index` must be a valid index of `collection` that isn’t the collection’s `endIndex`.
+- `collection`: The collection that contains `index`.
 
 
 ---

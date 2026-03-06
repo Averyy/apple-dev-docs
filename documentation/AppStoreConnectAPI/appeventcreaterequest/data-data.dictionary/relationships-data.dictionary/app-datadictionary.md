@@ -17,6 +17,10 @@ object AppEventCreateRequest.Data.Relationships.App
 ### Objects
 - [object AppEventCreateRequest.Data.Relationships.App.Data](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

@@ -8,6 +8,14 @@ Delete an App Clip invocation you make available to testers in TestFlight.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaAppClipInvocations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Beta App Clip Invocations resource.
+
 ## See Also
 
 - [Read Beta App Clip Invocation Information](get-v1-betaappclipinvocations-_id_.md)

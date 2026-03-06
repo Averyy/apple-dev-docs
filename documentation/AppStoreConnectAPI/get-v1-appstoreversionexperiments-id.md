@@ -12,6 +12,17 @@ Get information for a specific App Store version experiment.
 
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionExperiments/{id}`
+
+## Parameters
+
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `include` ([string])
+- `limit[appStoreVersionExperimentTreatments]` (integer)
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

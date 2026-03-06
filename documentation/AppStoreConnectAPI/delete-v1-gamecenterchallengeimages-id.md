@@ -8,6 +8,14 @@ Remove a specific image from a Game Center challenge.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterChallengeImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read image information for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)

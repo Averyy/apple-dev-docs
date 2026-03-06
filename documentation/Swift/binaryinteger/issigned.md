@@ -23,7 +23,7 @@ static var isSigned: Bool { get }
 
 #### Discussion
 
- integer types can represent both positive and negative values.  integer types can represent only nonnegative values.
+*Signed* integer types can represent both positive and negative values. *Unsigned* integer types can represent only nonnegative values.
 
 
 ---

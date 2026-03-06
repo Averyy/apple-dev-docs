@@ -23,7 +23,7 @@ init<W, C1, C2, C3>(_ component: some RegexComponent, as reference: Reference<W>
 ## Parameters
 
 - `component`: The regex component to capture.
-- `reference`: The reference to use for anything captured by   .
+- `reference`: The reference to use for anything captured by `component`.
 
 
 ---

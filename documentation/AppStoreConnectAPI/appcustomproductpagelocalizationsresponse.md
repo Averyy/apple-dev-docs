@@ -14,6 +14,13 @@ A response that contains a list of alternative distribution package variant reso
 object AppCustomProductPageLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCustomProductPageLocalization](appcustomproductpagelocalization.md)

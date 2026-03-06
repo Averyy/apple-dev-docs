@@ -12,6 +12,11 @@
 object AlternativeDistributionPackageVersion.Relationships.Variants.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

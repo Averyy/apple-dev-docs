@@ -19,6 +19,10 @@ enum ApplePayShippingContactEditingMode
 
 The values for the contact editing mode:
 
+- **`“available”`**: The user can edit the shipping contact on the payment sheet.
+- **“`enabled`” (deprecated)**: The user can edit the shipping contact on the payment sheet.
+- **`“storePickup”`**: The user can’t edit the shipping contact on the payment sheet.
+
 > ❗ **Important**:  Previous versions of the Apple Pay JS API accepted `enabled` rather than `available` as a parameter for the `ApplePayShippingContactEditingMode`. Developers should upgrade their code to use `available`.``
 
 ## Topics

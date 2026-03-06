@@ -8,6 +8,14 @@ Commit an app screenshot after uploading it to the App Store.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appStoreReviewAttachments/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Store Review Attachment](post-v1-appstorereviewattachments.md)

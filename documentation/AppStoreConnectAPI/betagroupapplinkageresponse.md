@@ -17,6 +17,11 @@ object BetaGroupAppLinkageResponse
 ### Dictionaries
 - [object BetaGroupAppLinkageResponse.Data](betagroupapplinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaGroupAppLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaGroup](betagroup.md)

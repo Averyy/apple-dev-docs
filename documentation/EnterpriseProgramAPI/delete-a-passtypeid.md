@@ -5,6 +5,14 @@
 
 Delete a pass type ID that is used for app development.
 
+## Endpoint
+
+`DELETE https://api.enterprise.developer.apple.com/v1/passTypeIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a PassTypeId](create-a-passtypeid.md)

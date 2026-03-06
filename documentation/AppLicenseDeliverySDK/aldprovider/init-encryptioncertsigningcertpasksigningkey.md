@@ -24,7 +24,7 @@ For an example that uses a provider, see [`Licensing alternative distribution ap
 - `encryptionCert`: Apple issued encryption certificate in bytes.
 - `signingCert`: Apple issued signing certificate in bytes.
 - `PASK`: Apple provided secret blob.
-- `signingKey`: Private key corresponding to the   in   format with   encoding. This parameter is optional if you choose to sign the license response manually.
+- `signingKey`: Private key corresponding to the `signingCert` in `.DER` format with `ANS.1` encoding. This parameter is optional if you choose to sign the license response manually.
 
 
 ---

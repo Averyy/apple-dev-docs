@@ -14,6 +14,10 @@ The attributes you set that describe the updated Beta App Clip Invocations resou
 object BetaAppClipInvocationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `url` (uri): The invocation URL you configure for testers who use the TestFlight to launch your App Clip.
+
 
 ---
 

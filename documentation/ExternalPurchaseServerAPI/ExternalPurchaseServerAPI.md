@@ -12,8 +12,8 @@ Send and manage reports you send to Apple for tokens you receive when your app p
 
 Call this REST API from your server to report external purchase tokens and your customers’ transactions related to the tokens. Use this API if your app uses [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase) API and provides alternative payment options for digital goods and services, using any of the following:
 
-- : An alternative payment processor that lets customers complete transactions within your app.
-- : Directing customers to complete a transaction for digital goods and services on your external website, or a distribution channel of your choice.
+- *Payment Service Providers (PSP)*: An alternative payment processor that lets customers complete transactions within your app.
+- *Linking out to purchase*: Directing customers to complete a transaction for digital goods and services on your external website, or a distribution channel of your choice.
 
 Report all tokens, including those that didn’t result in a transaction, and report the transactions associated with the tokens. For more information on the reporting requirements, including scope and report timing expectations, see the [`Commission, transaction reports, and payments`](https://developer.apple.comhttps://developer.apple.com/support/apps-using-alternative-payment-providers-in-the-eu#commission-reports-and-payments) section of the article Using alternative payment options on the App Store in the European Union.
 

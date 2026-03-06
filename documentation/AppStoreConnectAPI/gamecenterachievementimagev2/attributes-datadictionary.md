@@ -22,6 +22,14 @@ object GameCenterAchievementImageV2.Attributes
 - imageAsset:
 - uploadOperations:
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object GameCenterAchievementImageV2.Relationships](gamecenterachievementimagev2/relationships-data.dictionary.md)

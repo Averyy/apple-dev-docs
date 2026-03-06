@@ -14,6 +14,13 @@ A response that contains a list of App Clips resources.
 object AppClipsResponse
 ```
 
+## Properties
+
+- `data` ([AppClip]) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object App](app.md)

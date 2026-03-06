@@ -14,6 +14,11 @@ The request body you use to update an app custom product page localization inlin
 object AppCustomProductPageLocalizationInlineCreate.Relationships.AppCustomProductPageVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

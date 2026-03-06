@@ -14,6 +14,12 @@ Attributes that you set that describe the new resource.
 object DeviceCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*
+- `platform` (BundleIdPlatform) *(required)*
+- `udid` (string) *(required)*
+
 
 ---
 

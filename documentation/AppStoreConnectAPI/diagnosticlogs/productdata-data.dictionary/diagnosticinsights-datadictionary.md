@@ -14,6 +14,12 @@ Information about an insight including a descriptive string, category, and URL.
 object diagnosticLogs.ProductData.DiagnosticInsights
 ```
 
+## Properties
+
+- `insightsCategory` (string): The insight type.
+- `insightsString` (string): The human-readable description of the insight.
+- `insightsURL` (string): A URL to documentation that provides guidance about the insight.
+
 ## See Also
 
 - [object diagnosticLogs.ProductData.DiagnosticLogs](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary.md)

@@ -10,6 +10,14 @@ Create and sign an updated pass, and send it to the device.
 - iPadOS 10.0+
 - watchOS 3.0+
 
+## Endpoint
+
+`GET https://yourpasshost.example.com/v1/passes/{passTypeIdentifier}/{serialNumber}`
+
+## Parameters
+
+- `Authorization` (string): The authentication for a pass. The value is the word `ApplePass`, followed by a space, followed by the `authenticationToken` key of the pass.
+
 ## See Also
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)

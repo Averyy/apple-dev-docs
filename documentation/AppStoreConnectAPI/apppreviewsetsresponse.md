@@ -14,6 +14,13 @@ A response that contains a list of App Preview Set resources.
 object AppPreviewSetsResponse
 ```
 
+## Properties
+
+- `data` ([AppPreviewSet]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppPreviewSet](apppreviewset.md)

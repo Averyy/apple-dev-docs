@@ -20,6 +20,12 @@ object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints
 - [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints.Values](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
   The values of the data points.
 
+## Properties
+
+- `end` (date-time): The time Game Center ends the data collection.
+- `start` (date-time): The time Game Center starts the data collection.
+- `values` (GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints.Values)
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/dimensions-data.dictionary.md)

@@ -22,6 +22,14 @@ object BetaAppClipInvocation
 - [object BetaAppClipInvocation.Relationships](betaappclipinvocation/relationships-data.dictionary.md)
   The relationships of the Beta App Clip Invocations resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BetaAppClipInvocation.Attributes): The attributes that describe the Beta App Clip Invocations resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Beta App Clip Invocations resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (BetaAppClipInvocation.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BetaAppClipInvocationResponse](betaappclipinvocationresponse.md)

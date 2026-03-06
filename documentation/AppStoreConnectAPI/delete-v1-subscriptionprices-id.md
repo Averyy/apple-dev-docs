@@ -12,6 +12,14 @@ Delete a scheduled price change for an auto-renewable subscription.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/subscriptionPrices/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Subscription Price Point Information](get-v1-subscriptionpricepoints-_id_.md)

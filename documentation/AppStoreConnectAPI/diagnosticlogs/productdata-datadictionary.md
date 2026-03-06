@@ -26,6 +26,12 @@ object diagnosticLogs.ProductData
 - [type DiagnosticInsightType](diagnosticinsighttype.md)
   A string that desribes the diagnostic insight type.
 
+## Properties
+
+- `signatureId` (string): The opaque resource ID that uniquely identifies a diagnostic signature.
+- `diagnosticInsights` ([diagnosticLogs.ProductData.DiagnosticInsights]): An array of insights for a diagnostic signature.
+- `diagnosticLogs` ([diagnosticLogs.ProductData.DiagnosticLogs]): An array of logs associated with a diagnostic signature.
+
 
 ---
 

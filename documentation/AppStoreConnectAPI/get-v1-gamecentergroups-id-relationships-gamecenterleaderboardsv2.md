@@ -19,6 +19,14 @@ Get a list of leaderboard resource IDs for a specific Game Center group.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardsV2`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Get all achievement IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)

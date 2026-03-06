@@ -18,6 +18,11 @@ object UndeliveredConsumptionPercentageNonZeroError
 
 For more information, see [`consumptionPercentage`](consumptionpercentage.md).
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)

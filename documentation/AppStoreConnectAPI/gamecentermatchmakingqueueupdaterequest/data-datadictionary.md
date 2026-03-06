@@ -22,6 +22,13 @@ object GameCenterMatchmakingQueueUpdateRequest.Data
 - [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The rule sets related to the queue.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingQueueUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*: The unique identifier for the queue.
+- `relationships` (GameCenterMatchmakingQueueUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*: The type of resource.
+
 
 ---
 

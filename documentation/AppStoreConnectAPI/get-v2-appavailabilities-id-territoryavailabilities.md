@@ -12,6 +12,17 @@ Read the territory availablity for a specific app.
 
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/appAvailabilities/{id}/territoryAvailabilities`
+
+## Parameters
+
+- `fields[territories]` ([string])
+- `fields[territoryAvailabilities]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read App Availabilty](get-v2-appavailabilities-_id_.md)

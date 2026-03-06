@@ -28,6 +28,9 @@ The following listing shows main elements of the `loadingTemplate` in TVML forma
 
 ###### Element Descriptions
 
+- **[`activityIndicator`](activityindicator.md)**: Image of a spinning wheel icon.
+- **[`title`](title.md)**: The text telling the user why there is a delay.
+
 ##### Example
 
 The following listing shows the TVML for a loadingTemplate example.

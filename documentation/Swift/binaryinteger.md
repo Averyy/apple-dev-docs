@@ -108,7 +108,7 @@ let s = Int16(truncatingIfNeeded: r)     // extend 'r' to fill 16 bits
 //   == 0b00000000_01010010
 ```
 
-Any padding is performed by  the passed value. When nonnegative integers are extended, the result is padded with zeroes. When negative integers are extended, the result is padded with ones. This example shows several extending conversions of a negative value—note that negative values are sign-extended even when converting to an unsigned type.
+Any padding is performed by *sign-extending* the passed value. When nonnegative integers are extended, the result is padded with zeroes. When negative integers are extended, the result is padded with ones. This example shows several extending conversions of a negative value—note that negative values are sign-extended even when converting to an unsigned type.
 
 ```swift
 let t: Int8 = -100

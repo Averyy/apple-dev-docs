@@ -12,6 +12,10 @@
 object InAppPurchaseAvailability.Attributes
 ```
 
+## Properties
+
+- `availableInNewTerritories` (boolean)
+
 ## See Also
 
 - [object InAppPurchaseAvailability.Relationships](inapppurchaseavailability/relationships-data.dictionary.md)

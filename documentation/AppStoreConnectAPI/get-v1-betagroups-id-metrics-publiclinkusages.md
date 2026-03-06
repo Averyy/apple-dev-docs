@@ -8,6 +8,14 @@ Get public link usage metrics for a specific beta group.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/metrics/publicLinkUsages`
+
+## Parameters
+
+- `limit` (integer)
+
 
 ---
 

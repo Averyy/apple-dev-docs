@@ -14,6 +14,11 @@ The attributes that describe a Beta App Clip Invocation Localizations resource.
 object BetaAppClipInvocationLocalization.Attributes
 ```
 
+## Properties
+
+- `locale` (string): The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `title` (string): The title that appears on the App Clip card for an App Clip experience you configure for testers who launch the App Clip using the TestFlight app.
+
 
 ---
 

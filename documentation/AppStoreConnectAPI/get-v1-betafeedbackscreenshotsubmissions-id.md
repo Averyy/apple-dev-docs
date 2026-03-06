@@ -8,6 +8,15 @@ Get information for a specific beta feedback screenshot submission.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaFeedbackScreenshotSubmissions/{id}`
+
+## Parameters
+
+- `fields[betaFeedbackScreenshotSubmissions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List all beta feedback screenshot submissions for an app](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)

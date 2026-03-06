@@ -31,7 +31,7 @@ print(characters)
 // Prints "["é", "f", "a", "C"]"
 ```
 
-> **Note**: O(), where  is the number of elements in the collection.
+> **Note**: O(*n*), where *n* is the number of elements in the collection.
 
 ## See Also
 

@@ -12,6 +12,12 @@
 object SubscriptionOfferCodeCustomCodeResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionOfferCodeCustomCode) *(required)*
+- `included` ([SubscriptionOfferCode])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

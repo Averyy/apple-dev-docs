@@ -8,6 +8,20 @@ Get information for a specific provisioning profile and download its data.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/profiles/{id}`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[devices]` ([string])
+- `fields[profiles]` ([string])
+- `include` ([string])
+- `fields[bundleIds]` ([string])
+- `limit[devices]` (integer)
+- `limit[certificates]` (integer)
+
 ## See Also
 
 - [List and Download Profiles](get-v1-profiles.md)

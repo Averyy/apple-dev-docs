@@ -22,6 +22,14 @@ object AppCategory
 - [object AppCategory.Relationships](appcategory/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppCategory.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppCategory.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppCategoriesResponse](appcategoriesresponse.md)

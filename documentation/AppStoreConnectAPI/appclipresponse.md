@@ -14,6 +14,12 @@ A response that contains a single App Clips resource.
 object AppClipResponse
 ```
 
+## Properties
+
+- `data` (AppClip) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClip](appclip.md)

@@ -20,6 +20,10 @@ object SubscriptionImageCreateRequest.Data.Relationships.Subscription
 - [object SubscriptionImageCreateRequest.Data.Relationships.Subscription.Data](subscriptionimagecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
   The data structure that represents the subscription for a subscription image create request resource.
 
+## Properties
+
+- `data` (SubscriptionImageCreateRequest.Data.Relationships.Subscription.Data) *(required)*
+
 
 ---
 

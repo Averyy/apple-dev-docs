@@ -42,52 +42,76 @@ Apple News Format supports these Markdown features within text paragraphs.
 
 Use single asterisks (`*`) or single underscores (`_`).
 
+**Markdown:**
+
 ```other
 A sentence with _emphasis_ and two different types of *emphasis notation*.
 ```
 
-A sentence with  and two different types of .
+**Result:**
+
+A sentence with *emphasis* and two different types of *emphasis notation*.
+
+**Markdown:**
 
 ```other
 This _sentence_'s Markdown formatting is (_more_) in_volved_.
 ```
 
-This ’s Markdown formatting is () in.
+**Result:**
+
+This *sentence*’s Markdown formatting is (*more*) in*volved*.
 
 ###### Strong Emphasis Bold
 
 To make text bold, use double asterisks (`**`) or double underscores (`__`).
 
+**Markdown:**
+
 ```other
 A sentence containing something **really important**.
 ```
 
-A sentence containing something .
+**Result:**
+
+A sentence containing something **really important**.
+
+**Markdown:**
 
 ```other
 This __sentence__'s Markdown formatting is (__more__) in__volved__.
 ```
 
-This ’s Markdown formatting is () in.
+**Result:**
+
+This **sentence**’s Markdown formatting is (**more**) in**volved**.
 
 ###### Combined Emphasis Italics and Strong Bold
 
 You can nest emphasis and strong emphasis to use bold-italic font faces by using underscores with double asterisks (or double underscores with single asterisks).
+
+**Markdown:**
 
 ```other
 A _**sentence**_ containing **_four_** ways to __*combine*__ strong and *__emphasis__*.
 _An emphasized sentence containing a **strong phrase**._
 ```
 
-In the first example, the words , , , and  are in both italics and bold.
+**Result:**
 
-In the second example, the entire sentence is displayed in italics with  in italics and bold.
+In the first example, the words *sentence*, *four*, *combine*, and *emphasis* are in both italics and bold.
+
+In the second example, the entire sentence is displayed in italics with *strong phrase* in italics and bold.
+
+**Markdown:**
 
 ```other
 This _**sentence**_'s Markdown formatting is (__*more*__) *in__volved__*.
 ```
 
-In this example, the word  (but not the apostrophe and the letter  that follow it) is in italics and bold, as is the word  (but not the parentheses). The  portion of the word  is also italics and bold, while the  part of the word is italics only.
+**Result:**
+
+In this example, the word *sentence* (but not the apostrophe and the letter *s* that follow it) is in italics and bold, as is the word *more* (but not the parentheses). The *volved* portion of the word *involved* is also italics and bold, while the *in* part of the word is italics only.
 
 > **Note**: Apple News Format doesn’t support the use of triple asterisks (`***`) or triple underscores (`___`) to create bold-italic.
 
@@ -95,17 +119,21 @@ In this example, the word  (but not the apostrophe and the letter  that follow i
 
 For strikethrough text, surround with double tildes (~~).
 
+**Markdown:**
+
 ```other
 A sentence containing something ~~no longer neeeded~~.
 ```
 
-In this example, the text  is crossed out.
+**Result:**
+
+In this example, the text *no longer neeeded* is crossed out.
 
 ##### Links
 
 To add a link with Markdown, use brackets for the linked text and parentheses for the link URL. Brackets must contain at least one character; empty brackets are invalid.
 
-:
+**Markdown**:
 
 ```other
 This text contains [a link to another page](http:/www.apple.com).
@@ -113,7 +141,7 @@ _This emphasized sentence contains [a link to another page] (http://www.apple.co
 This text contains an emphasized [_link to another page_](http://www.apple.com).
 ```
 
-:
+**Result**:
 
 The first example contains a simple link.
 
@@ -145,29 +173,29 @@ To indicate that text is a heading, use the `#` character.
 
 To apply a text style that you have already defined in Apple News Format, use square brackets (`[]`) to enclose the text you want to format and put the name of the text style you want to use in curly brackets (`{}`). You must define the text style you refer to using the `textStyles` property in the article document properties.
 
-For this example, `specialTextStyle` is predefined to be . (Your actual result depends on how you define `specialTextStyle`.)
+For this example, `specialTextStyle` is predefined to be **bold**. (Your actual result depends on how you define `specialTextStyle`.)
 
-:
+**Markdown**:
 
 ```other
 The trail passes the [Big Sur Waterfall]{specialTextStyle} before ending in the valley.
 ```
 
-:
+**Result**:
 
-The trail passes the  before ending in the valley.
+The trail passes the **Big Sur Waterfall** before ending in the valley.
 
 ###### Paragraphs
 
 To separate text into paragraphs, use two of the Markdown new line tags `(\n\n)` between the end of one paragraph and the beginning of the next paragraph. In JSON, new lines are encoded as `\n`.
 
-:
+**Markdown**:
 
 ```other
 Last line of paragraph 1.\n\nFirst line of paragraph 2.
 ```
 
-:
+**Result**:
 
 Last line of paragraph 1.
 
@@ -183,10 +211,14 @@ Apple News Format doesn’t support Markdown paragraph and line separators (`\n`
 
 To create a bulleted list item, start a new line, then type either a hyphen (`-`), an asterisk (`*`), or a plus sign (`+`) followed by a space.
 
+**Markdown:**
+
 ```other
 - First item
 - Second item
 ```
+
+**Result:**
 
 - First item
 - Second item
@@ -195,10 +227,14 @@ To create a bulleted list item, start a new line, then type either a hyphen (`-`
 
 Use numbers and periods followed by a space (`1. `).
 
+**Markdown:**
+
 ```other
 1. First numbered item
 2. Second numbered item
 ```
+
+**Result:**
 
 1. First numbered item
 2. Second numbered item
@@ -208,6 +244,8 @@ Use numbers and periods followed by a space (`1. `).
 In a numbered list, Apple News Format restarts at 1 for each new component — no matter what number you provide in your text.
 
 If you need to separate a list into multiple components, remove `"format": "markdown"` from each component or “escape” the period with two backslashes (`\\`), as shown in the following JSON example:
+
+**Markdown in a JSON file:**
 
 ```json
 {
@@ -221,6 +259,8 @@ If you need to separate a list into multiple components, remove `"format": "mark
    "format": "markdown"
 }
 ```
+
+**Result:**
 
 1. First list item
 2. Second list item
@@ -239,13 +279,13 @@ Here's the epilogue to my story.
 
 To add a map that renders within your article, begin the URL for your map with `https://maps.apple.com/`. When Apple News Format renders the article, it converts the link to a map that you can manipulate the same way as a `map` component. If your URL doesn’t start with `https://maps.apple.com/`, then Apple News Format only displays a link to the map.
 
-:
+**Markdown**:
 
 ```other
 Apple's main campus occupies 172 acres at [Apple Park](https://maps.apple.com?sll=37.3327,-122.00533&t=standard&spn=0.02,0.02&q=Apple%20Inc).
 ```
 
-:
+**Result**:
 
 Apple’s main campus occupies 172 acres at Apple Park.
 
@@ -257,19 +297,19 @@ To escape special Markdown characters in a JSON document, use two backslashes (o
 
 ###### Example 1
 
-:
+**Markdown**:
 
 ```other
 This is an asterisk: \*\n\nThis is an underscore: \_
 ```
 
-:
+**Markdown in a JSON document (using two backslashes)**:
 
 ```other
 This is an asterisk: \\*\n\nThis is an underscore: \\_
 ```
 
-:
+**Result**:
 
 This is an asterisk: *
 
@@ -277,17 +317,19 @@ This is an underscore: _
 
 ###### Example 2
 
-:
+**Markdown**:
 
 ```other
 1. First list item\n1. Second list item\n\n1\. Not a list item
 ```
 
-:
+**Markdown in a JSON document (using two backslashes)**:
 
 ```other
 1. First list item\n1. Second list item\n\n1\\. Not a list item
 ```
+
+**Result:**
 
 1. First list item
 2. Second list item

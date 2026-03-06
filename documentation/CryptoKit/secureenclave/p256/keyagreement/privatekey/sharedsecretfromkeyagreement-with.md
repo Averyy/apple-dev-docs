@@ -26,7 +26,7 @@ The computed shared secret.
 
 ## Parameters
 
-- `publicKeyShare`: The public key from another party to be combined with   the private key from this user to create the shared secret.
+- `publicKeyShare`: The public key from another party to be combined with the private key from this user to create the shared secret.
 
 ## See Also
 

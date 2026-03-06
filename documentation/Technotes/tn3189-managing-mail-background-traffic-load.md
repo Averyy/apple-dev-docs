@@ -10,8 +10,8 @@ To enhance the user experience, iOS Mail downloads a user’s email in the backg
 
 This process involves two main steps:
 
-1.  [`RFC 3501`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3501) IMAP email servers can detect if a connection is for a background download. iOS Mail clients identify themselves to the server using the `ID` command. Starting with iOS 18.5, this command includes an `event` field. This field will indicate if the connection is being used for background downloading.
-2.  If the server needs to limit its load and the client has been identified as a background download, the server should send a `NO [UNAVAILABLE]` tagged response to the `ID` command. This will result in the background download being postponed approximately a day, after which the client will retry the download.
+1. **Client identification:** [`RFC 3501`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3501) IMAP email servers can detect if a connection is for a background download. iOS Mail clients identify themselves to the server using the `ID` command. Starting with iOS 18.5, this command includes an `event` field. This field will indicate if the connection is being used for background downloading.
+2. **Load shedding:** If the server needs to limit its load and the client has been identified as a background download, the server should send a `NO [UNAVAILABLE]` tagged response to the `ID` command. This will result in the background download being postponed approximately a day, after which the client will retry the download.
 
 #### Identify Background Traffic From Mail
 
@@ -34,7 +34,7 @@ The `event` field could take on values such as:
 - `periodic,push`
 - `NIL`
 
-These would  indicate a background download. However, values such as:
+These would *not* indicate a background download. However, values such as:
 
 - `back-fill`
 - `periodic,back-fill`
@@ -85,7 +85,7 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
 
 #### Revision History
 
--  First published.
+- **2025-05-09** First published.
 
 ## See Also
 

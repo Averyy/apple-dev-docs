@@ -20,6 +20,12 @@ object SubscriptionIntroductoryOffersLinkagesResponse
 - [object SubscriptionIntroductoryOffersLinkagesResponse.Data](subscriptionintroductoryofferslinkagesresponse/data-data.dictionary.md)
   The data structure that represents a subscription introductory offers linkages response resource.
 
+## Properties
+
+- `data` ([SubscriptionIntroductoryOffersLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

@@ -20,6 +20,11 @@ object GameCenterMatchmakingQueueSizesV1MetricResponse.Data
 - [object GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints](gamecentermatchmakingqueuesizesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
   The key properties of the data in the response.
 
+## Properties
+
+- `dataPoints` (GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints)
+- `granularity` (string): The granularity of the data using the ISO 8601 format for durations.
+
 
 ---
 

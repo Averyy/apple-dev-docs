@@ -20,6 +20,38 @@ Along with the status of the request, the response indicates the date that you i
 
 ##### Example
 
+**Request**:
+
+```https
+https://appstoreconnect.apple.com/notary/v2/submissions/2efe2717-52ef-43a5-96dc-0797e4ca1041
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "attributes": {
+      "createdDate": "2022-06-08T01:38:09.498Z",
+      "name": "OvernightTextEditor_11.6.8.zip",
+      "status": "Accepted"
+    },
+    "id": "2efe2717-52ef-43a5-96dc-0797e4ca1041",
+    "type": "submissions"
+  },
+  "meta": {
+  }
+} 
+```
+
+## Endpoint
+
+`GET https://appstoreconnect.apple.com/notary/v2/submissions/{submissionId}`
+
+## Parameters
+
+- `submissionId` (uuid) *(required)*: The identifier that you receive from the notary service when you post to [`Submit Software`](submit-software.md) to start a new submission.
+
 ## See Also
 
 - [object SubmissionResponse](submissionresponse.md)

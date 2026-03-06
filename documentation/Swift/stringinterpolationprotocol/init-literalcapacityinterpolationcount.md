@@ -29,8 +29,8 @@ Swift passes this initializer a pair of arguments specifying the size of the lit
 
 ## Parameters
 
-- `literalCapacity`: The approximate size of all literal segments   combined. This is meant to be passed to  ;   it may be slightly larger or smaller than the sum of the counts of each   literal segment.
-- `interpolationCount`: The number of interpolations which will be   appended. Use this value to estimate how much additional capacity will   be needed for the interpolated segments.
+- `literalCapacity`: The approximate size of all literal segments combined. This is meant to be passed to `String.reserveCapacity(_:)`; it may be slightly larger or smaller than the sum of the counts of each literal segment.
+- `interpolationCount`: The number of interpolations which will be appended. Use this value to estimate how much additional capacity will be needed for the interpolated segments.
 
 
 ---

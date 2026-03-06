@@ -24,12 +24,12 @@ mutating func insert<S>(contentsOf newElements: S, at i: String.Index) where S :
 
 Calling this method invalidates any existing indices for use with this string.
 
-> **Note**: O(), where  is the combined length of the string and `newElements`.
+> **Note**: O(*n*), where *n* is the combined length of the string and `newElements`.
 
 ## Parameters
 
-- `newElements`: A collection of   elements to insert into the   string.
-- `i`: A valid index of the string. If   is equal to the string’s end   index, this methods appends the contents of   to the   string.
+- `newElements`: A collection of `Character` elements to insert into the string.
+- `i`: A valid index of the string. If `i` is equal to the string’s end index, this methods appends the contents of `newElements` to the string.
 
 ## See Also
 

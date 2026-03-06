@@ -5,6 +5,14 @@
 
 Disable a capability for a bundle ID.
 
+## Endpoint
+
+`DELETE https://api.enterprise.developer.apple.com/v1/bundleIdCapabilities/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: [missing]
+
 ## See Also
 
 - [Modify a Capability Configuration](create-a-bundleidcapability.md)

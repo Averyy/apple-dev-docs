@@ -26,7 +26,7 @@ A collection containing the elements after those that match the regex returned b
 
 ## Parameters
 
-- `content`: A closure that returns the regex to search for at   the start of this collection.
+- `content`: A closure that returns the regex to search for at the start of this collection.
 
 
 ---

@@ -17,6 +17,12 @@ object AppEventLocalizationAppEventScreenshotsLinkagesResponse
 ### Dictionaries
 - [object AppEventLocalizationAppEventScreenshotsLinkagesResponse.Data](appeventlocalizationappeventscreenshotslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppEventLocalizationAppEventScreenshotsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppEventLocalization](appeventlocalization.md)

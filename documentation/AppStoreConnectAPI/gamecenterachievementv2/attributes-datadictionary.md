@@ -24,6 +24,16 @@ object GameCenterAchievementV2.Attributes
 - showBeforeEarned:
 - vendorIdentifier:
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `archived` (boolean)
+- `points` (integer)
+- `referenceName` (string)
+- `repeatable` (boolean)
+- `showBeforeEarned` (boolean)
+- `vendorIdentifier` (string)
+
 ## See Also
 
 - [object GameCenterAchievementV2.Relationships](gamecenterachievementv2/relationships-data.dictionary.md)

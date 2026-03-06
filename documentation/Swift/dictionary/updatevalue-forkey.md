@@ -52,7 +52,7 @@ if let oldValue = hues.updateValue(330, forKey: "Cerise") {
 ## Parameters
 
 - `value`: The new value to add to the dictionary.
-- `key`: The key to associate with  . If   already exists in   the dictionary,   replaces the existing associated value. If    isn’t already a key of the dictionary, the   pair   is added.
+- `key`: The key to associate with `value`. If `key` already exists in the dictionary, `value` replaces the existing associated value. If `key` isn’t already a key of the dictionary, the `(key, value)` pair is added.
 
 ## See Also
 

@@ -16,6 +16,52 @@ Get information about the territory availability for a subscription.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/subscriptions/6448262369/subscriptionAvailability
+```
+
+**Response**:
+
+```json
+{
+  “data”: {
+    “type”: “subscriptionAvailabilities”,
+    “id”: “6448262369”,
+    “attributes”: {
+      “availableInNewTerritories”: false
+    },
+    “relationships”: {
+      “availableTerritories”: {
+        “links”: {
+          “self”: “https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6448262369/relationships/availableTerritories”,
+          “related”: “https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6448262369/availableTerritories”
+        }
+      }
+    },
+    “links”: {
+      “self”: “https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6448262369”
+    }
+  },
+  “links”: {
+    “self”: “https://api.appstoreconnect.apple.com/v1/subscriptions/6448262369/subscriptionAvailability”
+  }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/subscriptionAvailability`
+
+## Parameters
+
+- `fields[subscriptionAvailabilities]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit[availableTerritories]` (integer)
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

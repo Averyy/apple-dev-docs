@@ -24,6 +24,10 @@ object GameCenterAchievementImageV2CreateRequest
 - [object GameCenterAchievementImageV2CreateRequest.Data](gamecenterachievementimagev2createrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (GameCenterAchievementImageV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageV2](gamecenterachievementimagev2.md)

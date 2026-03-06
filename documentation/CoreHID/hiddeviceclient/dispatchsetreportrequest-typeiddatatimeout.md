@@ -28,9 +28,9 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 
 ## Parameters
 
-- `type`: The   of the report.
+- `type`: The [`HIDReportType`](hidreporttype.md) of the report.
 - `id`: The ID of the provided report, determined from the report descriptor. This is unnecessary if the descriptor has only one report.
-- `data`: The bytes to send as a part of the request. Determining the correct values can be aided by referencing the device’s  .
+- `data`: The bytes to send as a part of the request. Determining the correct values can be aided by referencing the device’s [`descriptor`](hiddeviceclient/descriptor.md).
 - `timeout`: The maximum amount of time to wait for the device to receive the report before the calls time out and fails. Not providing a duration causes the call to wait forever.
 
 ## See Also

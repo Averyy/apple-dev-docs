@@ -20,6 +20,10 @@ object LibraryPlaylistTracksRequest
 - [object LibraryPlaylistTracksRequest.Data](libraryplaylisttracksrequest/data-data.dictionary.md)
   An object that represents a single track when added to a library playlist in a request.
 
+## Properties
+
+- `data` ([LibraryPlaylistTracksRequest.Data]) *(required)*: A list of dictionaries with information about the tracks to add.
+
 ## See Also
 
 - [Create a New Library Playlist](create-a-new-library-playlist.md)

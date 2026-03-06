@@ -18,6 +18,11 @@ object InvalidAppAccountTokenUUIDError
 
 - [App Store Server API changelog](app-store-server-api-changelog.md)
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

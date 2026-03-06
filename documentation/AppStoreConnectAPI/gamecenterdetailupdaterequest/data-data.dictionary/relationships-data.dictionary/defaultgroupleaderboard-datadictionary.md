@@ -17,6 +17,10 @@ object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard
 ### Objects
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard.Data](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultgroupleaderboard-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard.Data)
+
 ## See Also
 
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboard](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultleaderboard-data.dictionary.md)

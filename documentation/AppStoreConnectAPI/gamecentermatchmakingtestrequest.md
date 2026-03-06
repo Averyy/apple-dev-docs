@@ -14,6 +14,12 @@ The type and ID of test matchmaking request.
 object GameCenterMatchmakingTestRequest
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

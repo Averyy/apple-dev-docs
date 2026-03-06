@@ -20,6 +20,10 @@ object ScmRepository.Relationships.DefaultBranch
 - [object ScmRepository.Relationships.DefaultBranch.Data](scmrepository/relationships-data.dictionary/defaultbranch-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Git References resource that represents the repository’s default branch.
 
+## Properties
+
+- `data` (ScmRepository.Relationships.DefaultBranch.Data): The ID and type of the related Git References resource that represents the default branch.
+
 ## See Also
 
 - [object ScmRepository.Relationships.ScmProvider](scmrepository/relationships-data.dictionary/scmprovider-data.dictionary.md)

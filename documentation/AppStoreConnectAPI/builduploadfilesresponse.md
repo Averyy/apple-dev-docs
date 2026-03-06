@@ -14,6 +14,12 @@ A response that contains a list of build upload resources.
 object BuildUploadFilesResponse
 ```
 
+## Properties
+
+- `data` ([BuildUploadFile]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BuildUpload](buildupload.md)

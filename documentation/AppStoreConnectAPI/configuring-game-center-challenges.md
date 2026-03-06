@@ -20,6 +20,11 @@ Before you begin creating your challenges, you need these items:
 
 Begin creating the challenge by using the [`Create a challenge`](post-v1-gamecenterchallenges.md) endpoint. Provide these attributes in your payload:
 
+- **`referenceName`**: A 40 character or less alphanumeric string.
+- **`vendorIdentifier`**: A reverse url scheme label for this challenge.
+- **`challengeType`**: This value is always the string `leaderboard`.
+- **`allowedDurations`**: Use all 3 values for this attribute. If the related leaderboard is reoccurring, omit this attribute.
+
 Additionally provide:
 
 - A relationship to a `leaderboard` - Obtain the leaderboard resource ID from the [`List leaderboards`](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md) or [`Read the leaderboards in a group`](get-v1-gamecentergroups-_id_-relationships-gamecenterleaderboards.md) response.

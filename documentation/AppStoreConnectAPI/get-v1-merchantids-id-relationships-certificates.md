@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/merchantIds/{id}/relationships/certificates`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)

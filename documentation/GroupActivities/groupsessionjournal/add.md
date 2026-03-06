@@ -29,7 +29,7 @@ Call this method when you want to send a file or codable data type to the other 
 
 ## Parameters
 
-- `item`: The item to send to other session participants. The type   you specify must conform to the    protocol. For more information about creating transferable types,   see  .
+- `item`: The item to send to other session participants. The type you specify must conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol. For more information about creating transferable types, see [`Core Transferable`](https://developer.apple.com/documentation/CoreTransferable).
 
 ## See Also
 

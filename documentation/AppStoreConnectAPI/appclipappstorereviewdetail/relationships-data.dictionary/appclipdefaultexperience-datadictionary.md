@@ -20,6 +20,10 @@ object AppClipAppStoreReviewDetail.Relationships.AppClipDefaultExperience
 - [object AppClipAppStoreReviewDetail.Relationships.AppClipDefaultExperience.Data](appclipappstorereviewdetail/relationships-data.dictionary/appclipdefaultexperience-data.dictionary/data-data.dictionary.md)
   The links to the related Default App Clip Experiences resource and the relationship’s self-link.
 
+## Properties
+
+- `data` (AppClipAppStoreReviewDetail.Relationships.AppClipDefaultExperience.Data): The ID and type of the related Default App Clip Experiences resource.
+
 
 ---
 

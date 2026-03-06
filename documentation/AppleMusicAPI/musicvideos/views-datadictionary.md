@@ -22,6 +22,11 @@ object MusicVideos.Views
 - [object MusicVideos.Views.MusicVideosMoreInGenreView](musicvideos/views-data.dictionary/musicvideosmoreingenreview.md)
   A relationship view from this music video to more music videos in a specific music video genre.
 
+## Properties
+
+- `more-by-artist` (MusicVideos.Views.MusicVideosMoreByArtistView): More music videos of some type by the artist. Fetch limits: 15 default, 100 maximum.
+- `more-in-genre` (MusicVideos.Views.MusicVideosMoreInGenreView): More music videos in the given music video genre. Fetch limits: 15 default, 100 maximum.
+
 ## See Also
 
 - [object MusicVideos.Attributes](musicvideos/attributes-data.dictionary.md)

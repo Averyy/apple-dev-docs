@@ -48,7 +48,7 @@ If the value is false and you try to open a window, SwiftUI ignores the action a
 
 ## See Also
 
-- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [var openWindow: OpenWindowAction](environmentvalues/openwindow.md)
   A window presentation action stored in a view’s environment.

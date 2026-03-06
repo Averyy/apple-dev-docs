@@ -4,13 +4,22 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Server API 1.14+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object advancedCommerceRenewalItem
 ```
+
+## Properties
+
+- `SKU` (advancedCommerceSKU)
+- `description` (advancedCommerceDescription)
+- `displayName` (advancedCommerceDisplayName)
+- `offer` (advancedCommerceOffer)
+- `price` (advancedCommercePrice)
+- `priceIncreaseInfo` (advancedCommercePriceIncreaseInfo)
 
 ## See Also
 

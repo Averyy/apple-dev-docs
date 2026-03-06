@@ -116,6 +116,12 @@ This object is the response that contains a single the alternative distribution 
 }
 ```
 
+## Properties
+
+- `data` (AlternativeDistributionPackage) *(required)*
+- `included` ([AlternativeDistributionPackageVersion])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

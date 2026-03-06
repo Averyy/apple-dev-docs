@@ -11,6 +11,11 @@ Items that summarize the total amount, such as taxes or shipping cost.
 object PastPayment.SummaryItems
 ```
 
+## Properties
+
+- `label` (string) *(required)*: A short, localized description of the item.
+- `amount` (CurrencyAmount) *(required)*: The summary item’s amount.
+
 
 ---
 

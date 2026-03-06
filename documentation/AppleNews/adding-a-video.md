@@ -8,6 +8,8 @@ Add a video component inside the header component.
 
 A `video` component allows the user to control playback and hear audio.
 
+**On this page, you’ll learn how to add a video component.**
+
 ![Screenshot of an Apple News article with a video component on iPad.](https://docs-assets.developer.apple.com/published/53e00d87fe871aafebaec503a71c89d1/media-3624927%402x.png)
 
 ##### Add a Video to the Header

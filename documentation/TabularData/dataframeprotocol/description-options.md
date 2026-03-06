@@ -26,7 +26,7 @@ func description(options: FormattingOptions) -> String
 
 ## Parameters
 
-- `options`: A set of formatting options that affect the description string,   including the maximum width of a column and the maximum number of rows.
+- `options`: A set of formatting options that affect the description string, including the maximum width of a column and the maximum number of rows.
 
 
 ---

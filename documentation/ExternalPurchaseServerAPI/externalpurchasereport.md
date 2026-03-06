@@ -58,6 +58,13 @@ Include as many line items as there are transactions that apply to the token. If
 - [type status](status.md)
   A string value you provide to indicate the status of the token and the contents of the external purchase report.
 
+## Properties
+
+- `requestIdentifier` (requestIdentifier) *(required)*: A UUID that you generate to uniquely identify the report.
+- `externalPurchaseId` (externalPurchaseId) *(required)*: The unique identifier of the external purchase token for which you submit the report.
+- `status` (status) *(required)*: The status of the token that determines the information the report contains.
+- `lineItems` ([*]): An array of line items that describe transactions or events associated with the token identified by the `externalPurchaseId`.
+
 ## See Also
 
 - [Send External Purchase Report](send-external-purchase-report.md)

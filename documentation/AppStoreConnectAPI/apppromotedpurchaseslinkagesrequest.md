@@ -20,6 +20,10 @@ object AppPromotedPurchasesLinkagesRequest
 - [object AppPromotedPurchasesLinkagesRequest.Data](apppromotedpurchaseslinkagesrequest/data-data.dictionary.md)
   The data structure that represents an app promoted purchases linkages request resource.
 
+## Properties
+
+- `data` ([AppPromotedPurchasesLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)

@@ -20,6 +20,10 @@ object UserVisibleAppsLinkagesRequest
 - [object UserVisibleAppsLinkagesRequest.Data](uservisibleappslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([UserVisibleAppsLinkagesRequest.Data]) *(required)*: The object types and IDs of the related resources.
+
 ## See Also
 
 - [object User](user.md)

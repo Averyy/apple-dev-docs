@@ -73,7 +73,7 @@ struct TranslationExample: View {
   The language to translate content into.
 ### Configuring translation behavior
 - [var preferredStrategy: TranslationSession.Strategy](translationsession/configuration/preferredstrategy.md)
-  Which strategy is preferred to use during translation.
+  The translation approach for this configuration.
 ### Updating the translation
 - [func invalidate()](translationsession/configuration/invalidate.md)
   Invalidate the current translation session and re-run it with new content.

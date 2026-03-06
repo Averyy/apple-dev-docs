@@ -8,6 +8,14 @@ Delete localized metatdata that you configured for an App Store Version experime
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionExperimentTreatmentLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [GET /v1/appStoreVersionExperimentTreatmentLocalizations/{id}](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)

@@ -10,6 +10,9 @@ Use the `handlesOverflow` attribute to enable a `description` element to become 
 
 ##### Values for Handlesoverflow
 
+- **`false`**: Boolean value that indicates that the description element is not focusable.
+- **`true`**: Boolean value that indicates that the element is focusable and displays the “MORE” tag when needed.
+
 ##### Elements That Use Handlesoverflow
 
 - [`description`](description.md)

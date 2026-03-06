@@ -20,6 +20,12 @@ object AppTag.Relationships.Territories
 - [object AppTag.Relationships.Territories.Data](apptag/relationships-data.dictionary/territories-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([AppTag.Relationships.Territories.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

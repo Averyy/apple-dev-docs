@@ -28,7 +28,7 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 ## Parameters
 
-- `hasher`: The hasher to use when combining the components   of this instance.
+- `hasher`: The hasher to use when combining the components of this instance.
 
 
 ---

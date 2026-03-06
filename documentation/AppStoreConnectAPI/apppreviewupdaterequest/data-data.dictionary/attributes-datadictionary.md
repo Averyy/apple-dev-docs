@@ -14,6 +14,12 @@ Attributes whose values you’re changing as part of the update request.
 object AppPreviewUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `previewFrameTimeCode` (string)
+- `uploaded` (boolean)
+- `sourceFileChecksum` (string)
+
 
 ---
 

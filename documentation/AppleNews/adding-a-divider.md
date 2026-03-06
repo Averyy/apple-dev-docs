@@ -8,6 +8,8 @@ Create a horizontal, styled divider that extends to the right edge of the displa
 
 In [`Creating Your First Article`](creating-your-first-article.md), you added some text components to your article. Now, you can add a `divider` component to visually separate some text components and create color contrast.
 
+**On this page, you’ll learn how to create a horizontal dividing line that extends to the right edge of the display.**
+
 ![Screenshot of an Apple News article with a divider on iPad. The divider’s left edge is aligned to article text and its right edge extends all the way to the edge of the display.](https://docs-assets.developer.apple.com/published/36493df9ca240d681ae335ea97602a30/media-3624431%402x.png)
 
 ##### Define a Componentlayout Object That Bleeds to the Right Edge

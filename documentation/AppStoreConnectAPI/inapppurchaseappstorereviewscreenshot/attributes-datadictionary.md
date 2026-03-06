@@ -12,6 +12,17 @@
 object InAppPurchaseAppStoreReviewScreenshot.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `assetType` (string)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshot.Relationships](inapppurchaseappstorereviewscreenshot/relationships-data.dictionary.md)

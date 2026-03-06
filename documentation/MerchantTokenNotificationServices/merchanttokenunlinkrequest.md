@@ -14,6 +14,10 @@ The request body you use to invalidate a merchant token.
 object MerchantTokenUnlinkRequest
 ```
 
+## Properties
+
+- `merchantTokenIdentifier` (string) *(required)*: The merchant token identifier to invalidate.
+
 ## See Also
 
 - [Invalidate a Merchant Token](unlinking-merchanttoken.md)

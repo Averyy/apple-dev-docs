@@ -18,6 +18,12 @@ object AppEventLocalizationCreateRequest.Data
 - [object AppEventLocalizationCreateRequest.Data.Attributes](appeventlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object AppEventLocalizationCreateRequest.Data.Relationships](appeventlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventLocalizationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppEventLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

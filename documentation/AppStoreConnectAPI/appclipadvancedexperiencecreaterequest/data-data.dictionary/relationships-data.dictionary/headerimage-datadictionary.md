@@ -20,6 +20,10 @@ object AppClipAdvancedExperienceCreateRequest.Data.Relationships.HeaderImage
 - [object AppClipAdvancedExperienceCreateRequest.Data.Relationships.HeaderImage.Data](appclipadvancedexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/headerimage-data.dictionary/data-data.dictionary.md)
   The type and ID of the App Clip Header Images resource that you’re relating with the Advanced App Clip Experiences resource you’re creating.
 
+## Properties
+
+- `data` (AppClipAdvancedExperienceCreateRequest.Data.Relationships.HeaderImage.Data) *(required)*: The ID and type of the related App Clip Header Images resource.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceCreateRequest.Data.Relationships.AppClip](appclipadvancedexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/appclip-data.dictionary.md)

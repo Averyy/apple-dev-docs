@@ -39,6 +39,15 @@ To report tokens with or without associated transactions, call the [`Send Extern
 - [type tokenType](tokentype.md)
   The type of an external purchase custom link token.
 
+## Properties
+
+- `externalPurchaseId` (externalPurchaseId) *(required)*: The unique identifier of the token. Use this value to report tokens and their associated transactions in the [`Send External Purchase Report`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/Send-External-Purchase-Report) endpoint.
+- `tokenCreationDate` (tokenCreationDate) *(required)*: The UNIX time, in milliseconds, when the system created the token.
+- `appAppleId` (appAppleId) *(required)*: The app Apple ID for which the system generated the token.
+- `bundleId` (bundleId) *(required)*: The bundle ID of the app for which the system generated the token.
+- `tokenExpirationDate` (tokenExpirationDate): The UNIX time, in milliseconds, when a token expires. This field is present only for custom link tokens.
+- `tokenType` (tokenType): The custom link token type, either `SERVICES` or `ACQUISITION`. This field is present only for custom link tokens.
+
 
 ---
 

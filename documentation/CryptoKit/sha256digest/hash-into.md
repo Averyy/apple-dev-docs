@@ -26,7 +26,7 @@ This method is part of the digest’s conformance to Swift standard library’s 
 
 ## Parameters
 
-- `hasher`: The hash function to use when combining the components of   the digest.
+- `hasher`: The hash function to use when combining the components of the digest.
 
 
 ---

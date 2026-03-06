@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read App Store Review Attachment Information](get-v1-appstorereviewattachments-_id_.md)

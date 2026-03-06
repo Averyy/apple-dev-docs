@@ -17,6 +17,12 @@ object UserInvitationVisibleAppsLinkagesResponse
 ### Dictionaries
 - [object UserInvitationVisibleAppsLinkagesResponse.Data](userinvitationvisibleappslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([UserInvitationVisibleAppsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object UserInvitation](userinvitation.md)

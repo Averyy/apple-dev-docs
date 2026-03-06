@@ -19,6 +19,12 @@ object InAppPurchaseOfferCodePricesLinkagesResponse
 ### Generated dictionaries
 - [object InAppPurchaseOfferCodePricesLinkagesResponse.Data](inapppurchaseoffercodepriceslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchaseOfferCodePricesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

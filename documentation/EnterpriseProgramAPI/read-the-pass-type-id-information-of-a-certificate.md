@@ -3,6 +3,17 @@
 **Framework**: Enterprise Program API  
 **Kind**: httpRequest
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/certificates/{id}/passTypeId`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[passTypeIds]` ([string])
+- `include` ([string])
+- `limit[certificates]` (integer)
+
 
 ---
 

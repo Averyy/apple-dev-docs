@@ -19,6 +19,12 @@ object AlternativeDistributionPackageVersion.Relationships
 - [object AlternativeDistributionPackageVersion.Relationships.Deltas](alternativedistributionpackageversion/relationships-data.dictionary/deltas-data.dictionary.md)
 - [object AlternativeDistributionPackageVersion.Relationships.Variants](alternativedistributionpackageversion/relationships-data.dictionary/variants-data.dictionary.md)
 
+## Properties
+
+- `alternativeDistributionPackage` (AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage)
+- `deltas` (AlternativeDistributionPackageVersion.Relationships.Deltas)
+- `variants` (AlternativeDistributionPackageVersion.Relationships.Variants)
+
 ## See Also
 
 - [object AlternativeDistributionPackageVersion.Attributes](alternativedistributionpackageversion/attributes-data.dictionary.md)

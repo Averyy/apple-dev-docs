@@ -8,6 +8,15 @@ List territory availability for a specific app tag.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appTags/{id}/territories`
+
+## Parameters
+
+- `fields[territories]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [List app tags](get-v1-apps-_id_-apptags.md)

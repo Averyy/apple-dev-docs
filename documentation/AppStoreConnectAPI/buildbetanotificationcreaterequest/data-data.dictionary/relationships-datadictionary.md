@@ -20,6 +20,10 @@ object BuildBetaNotificationCreateRequest.Data.Relationships
 - [object BuildBetaNotificationCreateRequest.Data.Relationships.Build](buildbetanotificationcreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `build` (BuildBetaNotificationCreateRequest.Data.Relationships.Build) *(required)*
+
 
 ---
 

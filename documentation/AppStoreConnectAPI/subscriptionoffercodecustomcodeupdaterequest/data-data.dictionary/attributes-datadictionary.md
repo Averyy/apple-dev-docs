@@ -12,6 +12,10 @@
 object SubscriptionOfferCodeCustomCodeUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+
 
 ---
 

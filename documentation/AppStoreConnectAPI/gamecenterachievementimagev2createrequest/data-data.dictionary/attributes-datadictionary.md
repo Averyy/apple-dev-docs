@@ -17,6 +17,11 @@ object GameCenterAchievementImageV2CreateRequest.Data.Attributes
 - fileName:
 - fileSize:
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageV2CreateRequest.Data.Relationships](gamecenterachievementimagev2createrequest/data-data.dictionary/relationships-data.dictionary.md)

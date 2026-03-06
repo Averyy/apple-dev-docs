@@ -12,6 +12,11 @@
 object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.BaseTerritory.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

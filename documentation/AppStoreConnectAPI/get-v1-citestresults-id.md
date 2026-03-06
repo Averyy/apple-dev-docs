@@ -14,6 +14,53 @@ The example request below retrieves result information for a test Xcode Cloud pe
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciTestResults/5ecb25ea-ce31-4b50-b88c-f1bf64c698ae
+```
+
+**Response**:
+
+```json
+{
+    "data": {
+        "type": "ciTestResults",
+        "id": "5ecb25ea-ce31-4b50-b88c-f1bf64c698ae",
+        "attributes": {
+            "className": "TestClass",
+            "name": "TestName",
+            "status": "SUCCESS",
+            "fileSource": null,
+            "message": null,
+            "destinationTestResults": [
+                {
+                    "uuid": "e456c6a3-37a3-42c7-8299-33dad720f6b7",
+                    "deviceName": "iPhone X",
+                    "osVersion": "11.4.1",
+                    "status": "SUCCESS",
+                    "duration": 6.600471973
+                }
+            ]
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/ciTestResults/5ecb25ea-ce31-4b50-b88c-f1bf64c698ae"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciTestResults/5ecb25ea-ce31-4b50-b88c-f1bf64c698ae"
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciTestResults/{id}`
+
+## Parameters
+
+- `fields[ciTestResults]` ([string]): Additional fields to include for the Test Results resource returned by the response.
+
 
 ---
 

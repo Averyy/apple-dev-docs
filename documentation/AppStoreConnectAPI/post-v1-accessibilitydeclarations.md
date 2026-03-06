@@ -12,6 +12,10 @@ Add an accessibility declaration for a specific app.
 
 - [Configuring accessibility declarations for your app](configuring-accessibility-declarations.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/accessibilityDeclarations`
+
 ## See Also
 
 - [List all accessibility declarations for an app](get-v1-apps-_id_-accessibilitydeclarations.md)

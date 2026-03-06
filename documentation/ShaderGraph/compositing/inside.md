@@ -17,6 +17,9 @@ Multiplies a mask to all channels of the input.
 
 #### Parameter Descriptions
 
+- **`In`**: The input value to which the mask applies.
+- **`Mask`**: The value by which the input is multiplied.
+
 #### Discussion
 
 Below is an example of a simple node graph that uses the Inside node to apply a mask to a brick texture:

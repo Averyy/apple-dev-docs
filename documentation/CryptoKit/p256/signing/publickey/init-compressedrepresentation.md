@@ -22,7 +22,7 @@ init<Bytes>(compressedRepresentation: Bytes) throws where Bytes : ContiguousByte
 
 ## Parameters
 
-- `compressedRepresentation`: A compressed representation of the key as a collection   of contiguous bytes.
+- `compressedRepresentation`: A compressed representation of the key as a collection of contiguous bytes.
 
 ## See Also
 

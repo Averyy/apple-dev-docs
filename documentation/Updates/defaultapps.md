@@ -41,10 +41,10 @@ Users in Japan can select a default navigation app and a default alternative app
 
 ##### Alternative App Marketplaces
 
-Alternative app marketplace apps for iOS or iPadOS enable users to install other third-party apps in the European Union. Developers can distribute their marketplace app on the web, and users can then select the alternative marketplace as their default, if desired. Apple provides the [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) framework that facilitates the secure installation of apps that your marketplace distributes. Read [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace) to learn how to build your own marketplace.
+Alternative app marketplace apps for iOS or iPadOS enable users to install other third-party apps in the European Union. Developers can distribute their marketplace app on the web, and users can then select the alternative marketplace as their default, if desired. Apple provides the [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) framework that facilitates the secure installation of apps that your marketplace distributes. Read [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/appdistribution/creating-an-alternative-app-marketplace) to learn how to build your own marketplace.
 
 - Learn about the [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.marketplace.app-installation) entitlement used by alternative app marketplaces.
-- Read  [`Distributing your app from your website`](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website) to learn how to ship the alternative app marketplace.
+- Read  [`Distributing your app from your website`](https://developer.apple.com/documentation/appdistribution/distributing-your-app-from-your-website) to learn how to ship the alternative app marketplace.
 
 ##### Calling Apps
 

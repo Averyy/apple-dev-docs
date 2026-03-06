@@ -17,6 +17,13 @@ object SubscriptionSubmission
 ### Objects
 - [object SubscriptionSubmission.Relationships](subscriptionsubmission/relationships-data.dictionary.md)
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionSubmission.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupSubmissionCreateRequest](subscriptiongroupsubmissioncreaterequest.md)

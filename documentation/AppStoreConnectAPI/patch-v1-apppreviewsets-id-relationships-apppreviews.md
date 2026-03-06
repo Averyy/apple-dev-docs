@@ -8,6 +8,14 @@ Change the order of the app previews in a preview set.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appPreviewSets/{id}/relationships/appPreviews`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)

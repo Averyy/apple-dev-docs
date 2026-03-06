@@ -17,6 +17,10 @@ Initiates a performance test
 
 Call this endpoint to start a new performance test. The service returns a response that includes a [`PerformanceTestConfig`](performancetestconfig.md) object that describes the testing parameters and a `requestId` you can use to request test results.
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/performanceTest`
+
 ## Request Body
 
 The request body that includes a [`PerformanceTestRequest`](performancetestrequest.md) object that specifies the transaction identifier of an In-App Purchase to use to as the purchase for this test.

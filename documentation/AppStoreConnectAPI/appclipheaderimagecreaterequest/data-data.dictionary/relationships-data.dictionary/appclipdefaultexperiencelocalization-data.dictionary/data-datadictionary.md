@@ -14,6 +14,11 @@ The type and ID of the Default App Clip Localizations resource that you’re rel
 object AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Default App Clip Experience Localizations resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -16,6 +16,10 @@ Create a scheduled price change for an in-app purchase.
 
 > **Note**:  A base territory is now required when adding or creating a price for an in-app purchase.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules`
+
 ## See Also
 
 - [Read in-app purchase price schedule information](get-v1-inapppurchasepriceschedules-_id_.md)

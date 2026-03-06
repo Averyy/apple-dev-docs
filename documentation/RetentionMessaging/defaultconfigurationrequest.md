@@ -18,6 +18,10 @@ object DefaultConfigurationRequest
 
 This is the request body for the [`Configure Default Message`](configure-default-message.md) endpoint.
 
+## Properties
+
+- `messageIdentifier` (messageIdentifier): **(Required)** The message identifier of the message to configure as a default message.
+
 ## See Also
 
 - [Configure Default Message](configure-default-message.md)

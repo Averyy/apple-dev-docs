@@ -17,6 +17,10 @@ object GameCenterLeaderboardSet.Relationships.GameCenterDetail
 ### Objects
 - [object GameCenterLeaderboardSet.Relationships.GameCenterDetail.Data](gamecenterleaderboardset/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSet.Relationships.GameCenterDetail.Data)
+
 ## See Also
 
 - [object GameCenterLeaderboardSet.Relationships.GameCenterGroup](gamecenterleaderboardset/relationships-data.dictionary/gamecentergroup-data.dictionary.md)

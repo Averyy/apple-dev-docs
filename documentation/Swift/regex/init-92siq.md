@@ -26,7 +26,7 @@ You can use this initializer to convert a `Regex` with strongly-typed captures i
 
 ## Parameters
 
-- `regex`: A regular expression to convert to use a dynamic   capture list.
+- `regex`: A regular expression to convert to use a dynamic capture list.
 
 
 ---

@@ -14,6 +14,10 @@ An object containing a top results’ search result.
 object SearchResponse.Results.TopResultsSearchResult
 ```
 
+## Properties
+
+- `data` ([*]) *(required)*: The resources for the search result.
+
 ## See Also
 
 - [object SearchResponse.Results.ActivitiesSearchResult](searchresponse/results-data.dictionary/activitiessearchresult.md)

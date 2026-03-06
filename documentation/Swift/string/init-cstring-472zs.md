@@ -29,7 +29,7 @@ This is identical to `init(cString: [CChar])` but operates on an unsigned sequen
 
 ## Parameters
 
-- `nullTerminatedUTF8`:    An array containing a null-terminated UTF-8 code unit sequence.
+- `nullTerminatedUTF8`:  An array containing a null-terminated UTF-8 code unit sequence.
 
 
 ---

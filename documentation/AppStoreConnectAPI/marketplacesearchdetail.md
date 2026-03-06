@@ -19,6 +19,13 @@ object MarketplaceSearchDetail
 ### Objects
 - [object MarketplaceSearchDetail.Attributes](marketplacesearchdetail/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (MarketplaceSearchDetail.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object MarketplaceSearchDetailCreateRequest](marketplacesearchdetailcreaterequest.md)

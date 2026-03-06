@@ -20,6 +20,11 @@ object GameCenterMatchmakingRuleSetCreateRequest.Data
 - [object GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes](gamecentermatchmakingrulesetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes for a rule set that you create.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

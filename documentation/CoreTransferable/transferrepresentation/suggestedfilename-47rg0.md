@@ -37,7 +37,7 @@ struct Note: Transferable {
 
 ## Parameters
 
-- `fileName`: The optional closure that returns the suggested filename   including the filename extension.   If several suggested file names are specified on an item, only the last one will be used.
+- `fileName`: The optional closure that returns the suggested filename including the filename extension. If several suggested file names are specified on an item, only the last one will be used.
 
 
 ---

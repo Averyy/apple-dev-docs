@@ -14,6 +14,11 @@ Attributes that describe an Android to iOS app mapping detail resource.
 object AndroidToIosAppMappingDetail.Attributes
 ```
 
+## Properties
+
+- `appSigningKeyPublicCertificateSha256Fingerprints` ([string])
+- `packageName` (string)
+
 
 ---
 

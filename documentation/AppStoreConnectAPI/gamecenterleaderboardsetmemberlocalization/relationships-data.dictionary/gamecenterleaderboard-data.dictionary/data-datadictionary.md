@@ -12,6 +12,11 @@
 object GameCenterLeaderboardSetMemberLocalization.Relationships.GameCenterLeaderboard.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

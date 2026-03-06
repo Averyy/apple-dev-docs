@@ -34,7 +34,7 @@ print(cafe.lowercased())
 // Prints "bbq café 🍵"
 ```
 
-> **Note**: O()
+> **Note**: O(*n*)
 
 ## See Also
 

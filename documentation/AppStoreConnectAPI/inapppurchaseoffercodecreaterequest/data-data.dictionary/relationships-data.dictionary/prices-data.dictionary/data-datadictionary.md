@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -8,6 +8,20 @@ Get information about leaderboard member set localizations.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetMemberLocalizations`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardSetMemberLocalizations]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[gameCenterLeaderboardSet]` ([string]) *(required)*
+- `filter[gameCenterLeaderboard]` ([string]) *(required)*
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read leaderboard information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboard.md)

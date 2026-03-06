@@ -17,6 +17,11 @@ object GameCenterAchievementV2CreateRequest.Data.Relationships.Versions.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -12,6 +12,10 @@ Update the territory availability of a specific subscription.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities`
+
 ## See Also
 
 - [Read the availability of a subscription](get-v1-subscriptionavailabilities-_id_.md)

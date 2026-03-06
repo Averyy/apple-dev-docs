@@ -38,11 +38,11 @@ print(String(disemvoweled))
 // Prints "Th rn n Spn stys mnly n th pln."
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `subranges`: A range set representing the indices of the   elements to remove.
+- `subranges`: A range set representing the indices of the elements to remove.
 
 
 ---

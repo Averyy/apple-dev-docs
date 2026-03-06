@@ -42,7 +42,7 @@ for v in flowers.utf16 {
 // 56464
 ```
 
-Unicode scalar values that make up a string’s contents can be up to 21 bits long. The longer scalar values may need two `UInt16` values for storage. Those “pairs” of code units are called .
+Unicode scalar values that make up a string’s contents can be up to 21 bits long. The longer scalar values may need two `UInt16` values for storage. Those “pairs” of code units are called *surrogate pairs*.
 
 ```swift
 let flowermoji = "💐"

@@ -17,6 +17,11 @@ object InAppPurchaseV2.Relationships.InAppPurchaseAvailability
 ### Objects
 - [object InAppPurchaseV2.Relationships.InAppPurchaseAvailability.Data](inapppurchasev2/relationships-data.dictionary/inapppurchaseavailability-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2.Relationships.InAppPurchaseAvailability.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

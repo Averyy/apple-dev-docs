@@ -12,26 +12,26 @@ Web content on iOS and iPadOS is inspectable when you connect the device to your
 
 Before you can connect your device to a Mac to inspect it, you must allow the device to be inspected.
 
-1. Open the  app.
-2. Go to  > .
-3. Scroll down to .
-4. Enable the  toggle.
+1. Open the **Settings** app.
+2. Go to **Apps** > **Safari**.
+3. Scroll down to **Advanced**.
+4. Enable the **Web Inspector** toggle.
 
 Now, connect the device to your Mac using a cable. In Safari, the device will appear in the [`Develop menu`](develop-menu.md).
 
-> ❗ **Important**: You may need to trust the Mac you connect your device to when the device prompts you before it appears in the  menu on your Mac.
+> ❗ **Important**: You may need to trust the Mac you connect your device to when the device prompts you before it appears in the **Develop** menu on your Mac.
 
 ##### Connecting Over the Network
 
-In addition to being able to inspect devices over a wired connection, you can also connect to your device over Wi-Fi or another network connection. To enable connecting over the network, you must first have enabled  on your device and connected it to your Mac using a cable. Then, you can enable  from the device’s submenu in the  menu. Alternatively, you can also [`connect to the device using Xcode`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbc48d1bad).
+In addition to being able to inspect devices over a wired connection, you can also connect to your device over Wi-Fi or another network connection. To enable connecting over the network, you must first have enabled **Web Inspector** on your device and connected it to your Mac using a cable. Then, you can enable **Connect via Network** from the device’s submenu in the **Develop** menu. Alternatively, you can also [`connect to the device using Xcode`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbc48d1bad).
 
 ##### Ios and Ipados Simulators
 
- is always enabled for simulators, and currently booted simulators will appear in the  menu just like connected devices.
+**Web Inspector** is always enabled for simulators, and currently booted simulators will appear in the **Develop** menu just like connected devices.
 
 #### Inspecting a Webpage
 
-Webpages you open in Safari in iOS and iPadOS appear in a submenu for the connected device of the  menu of Safari on a connected Mac. Safari groups webpages and other content by app, making it easier to find the webpage you want to inspect.
+Webpages you open in Safari in iOS and iPadOS appear in a submenu for the connected device of the **Develop** menu of Safari on a connected Mac. Safari groups webpages and other content by app, making it easier to find the webpage you want to inspect.
 
 Find the webpage you want to inspect, then select it to open a new Web Inspector window. This window continues inspecting the tab you started inspecting, including across navigations. If you close the tab in iOS or iPadOS, the Web Inspector window disappears.
 
@@ -41,11 +41,11 @@ For webpages, some additional options are available only while inspecting a conn
 
 [`Service workers`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
 
-You can only inspect service workers that are currently running. To inspect service workers, open the  menu, find the menu item for the device you want to inspect, and select them from the  section near the bottom of the menu. This section doesn’t appear if there aren’t any service workers currently running.
+You can only inspect service workers that are currently running. To inspect service workers, open the **Develop** menu, find the menu item for the device you want to inspect, and select them from the **Service Workers** section near the bottom of the menu. This section doesn’t appear if there aren’t any service workers currently running.
 
 #### Inspecting Home Screen Web Apps
 
-When a [`Home Screen web app`](https://developer.apple.comhttps://support.apple.com/guide/iphone/bookmark-favorite-webpages-iph42ab2f3a7/ios) is in the foreground, you can inspect it from the  menu. Find the menu item for the iOS or iPadOS device you wish to inspect, and then find the web app’s URL in the  section near the bottom of the menu.
+When a [`Home Screen web app`](https://developer.apple.comhttps://support.apple.com/guide/iphone/bookmark-favorite-webpages-iph42ab2f3a7/ios) is in the foreground, you can inspect it from the **Develop** menu. Find the menu item for the iOS or iPadOS device you wish to inspect, and then find the web app’s URL in the **Home Screen Web Apps** section near the bottom of the menu.
 
 #### Inspecting Extensions
 
@@ -57,15 +57,15 @@ To debug the scripts that web extensions inject into webpages, first [`inspect t
 
 ##### Background Scripts
 
-To debug background scripts, open the  menu, find the menu item for the iOS or iPadOS device you wish to inspect, and then find the item with the name of the extension, “”, and the file name of the background script.
+To debug background scripts, open the **Develop** menu, find the menu item for the iOS or iPadOS device you wish to inspect, and then find the item with the name of the extension, “**Extension Background Page**”, and the file name of the background script.
 
 ##### Toolbar Pop Up
 
-To debug your extension’s pop-up, open your pop-up on the device. Now from the  menu find the menu item for the iOS or iPadOS device you wish to inspect, and then find the item with the name of the extension, “”, and the file name of the pop-up’s HTML.
+To debug your extension’s pop-up, open your pop-up on the device. Now from the **Develop** menu find the menu item for the iOS or iPadOS device you wish to inspect, and then find the item with the name of the extension, “**Extension Pop-up Page**”, and the file name of the pop-up’s HTML.
 
 #### Inspecting Javascript and Webpages in Apps
 
-You can make [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView)s and [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext)s in apps inspectable, allowing anyone who enables  on the device to inspect them. Content you can inspect appears in a submenu for the connected device of the  menu of Safari on a connected Mac. Safari separates webpages and JavaScript contexts by app, making finding the content you want to inspect easier.
+You can make [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView)s and [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext)s in apps inspectable, allowing anyone who enables **Web Inspector** on the device to inspect them. Content you can inspect appears in a submenu for the connected device of the **Develop** menu of Safari on a connected Mac. Safari separates webpages and JavaScript contexts by app, making finding the content you want to inspect easier.
 
 Learn more about [`Enabling inspecting content in your apps`](enabling-inspecting-content-in-your-apps.md).
 

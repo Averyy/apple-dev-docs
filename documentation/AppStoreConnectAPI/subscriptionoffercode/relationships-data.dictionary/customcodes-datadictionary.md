@@ -17,6 +17,12 @@ object SubscriptionOfferCode.Relationships.CustomCodes
 ### Objects
 - [object SubscriptionOfferCode.Relationships.CustomCodes.Data](subscriptionoffercode/relationships-data.dictionary/customcodes-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionOfferCode.Relationships.CustomCodes.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionOfferCode.Relationships.OneTimeUseCodes](subscriptionoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary.md)

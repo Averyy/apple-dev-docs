@@ -20,6 +20,10 @@ object ChartResponse
 - [object ChartResponse.Results](chartresponse/results-data.dictionary.md)
   A mapping of a requested type to an array of charts.
 
+## Properties
+
+- `results` (ChartResponse.Results) *(required)*: A mapping of a requested type to an array of charts.
+
 
 ---
 

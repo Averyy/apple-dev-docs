@@ -20,6 +20,11 @@ object AppClipAdvancedExperienceImageCreateRequest.Data
 - [object AppClipAdvancedExperienceImageCreateRequest.Data.Attributes](appclipadvancedexperienceimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new Advanced App Clip Experience Images resource.
 
+## Properties
+
+- `attributes` (AppClipAdvancedExperienceImageCreateRequest.Data.Attributes) *(required)*: The attributes that describe the request that creates an Advanced App Clip Experience Images resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

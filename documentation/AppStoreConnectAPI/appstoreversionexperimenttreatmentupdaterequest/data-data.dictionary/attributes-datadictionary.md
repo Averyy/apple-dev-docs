@@ -14,6 +14,11 @@ Attributes that describe an app store version experiment treatment update reques
 object AppStoreVersionExperimentTreatmentUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appIconName` (string)
+- `name` (string)
+
 
 ---
 

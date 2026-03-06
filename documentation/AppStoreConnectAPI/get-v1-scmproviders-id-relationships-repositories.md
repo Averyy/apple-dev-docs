@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmProviders/{id}/relationships/repositories`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Source Code Management Providers](get-v1-scmproviders.md)

@@ -12,6 +12,11 @@
 object Subscription.Relationships.SubscriptionAvailability.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

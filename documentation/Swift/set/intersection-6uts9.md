@@ -26,7 +26,7 @@ A new set.
 
 #### Discussion
 
-In the following example, the `bothNeighborsAndEmployees` set is made up of the elements that are in  the `employees` and `neighbors` sets. Elements that are in only one or the other are left out of the result of the intersection.
+In the following example, the `bothNeighborsAndEmployees` set is made up of the elements that are in *both* the `employees` and `neighbors` sets. Elements that are in only one or the other are left out of the result of the intersection.
 
 ```swift
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
@@ -38,7 +38,7 @@ print(bothNeighborsAndEmployees)
 
 ## Parameters
 
-- `other`: A sequence of elements.   must be finite.
+- `other`: A sequence of elements. `other` must be finite.
 
 ## See Also
 

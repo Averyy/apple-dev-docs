@@ -14,6 +14,11 @@ The data structure that represents a App Price V2 Inline Create resource.
 object AppPriceV2InlineCreate
 ```
 
+## Properties
+
+- `id` (string)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object App](app.md)

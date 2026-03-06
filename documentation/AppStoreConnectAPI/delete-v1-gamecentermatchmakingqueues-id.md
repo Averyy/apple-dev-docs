@@ -8,6 +8,14 @@ Delete a specific queue in a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingQueues/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The unique identifier for the queue.
+
 ## See Also
 
 - [Create a queue](post-v1-gamecentermatchmakingqueues.md)

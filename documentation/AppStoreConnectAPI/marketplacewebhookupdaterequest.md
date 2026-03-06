@@ -20,6 +20,10 @@ object MarketplaceWebhookUpdateRequest
 - [object MarketplaceWebhookUpdateRequest.Data](marketplacewebhookupdaterequest/data-data.dictionary.md)
   The data structure that represent a marketplace webhook resource.
 
+## Properties
+
+- `data` (MarketplaceWebhookUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object MarketplaceWebhook](marketplacewebhook.md)

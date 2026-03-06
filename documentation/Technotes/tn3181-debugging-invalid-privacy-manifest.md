@@ -108,7 +108,7 @@ To fix the errors, open your privacy manifest in a text editor or Xcode to addre
 
 #### Revision History
 
--  First published.
+- **2024-11-12** First published.
 
 ## See Also
 

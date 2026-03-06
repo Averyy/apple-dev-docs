@@ -8,6 +8,14 @@ Get details about a specific build upload file for a build upload.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildUploadFiles/{id}`
+
+## Parameters
+
+- `fields[buildUploadFiles]` ([string])
+
 ## See Also
 
 - [GET /v1/buildUploads/{id}/buildUploadFiles](get-v1-builduploads-_id_-builduploadfiles.md)

@@ -14,6 +14,10 @@ The attributes you set that describe the updated App Clip App Store Review Detai
 object AppClipAppStoreReviewDetailUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `invocationUrls` ([uri]): An array of invocation URLs for your App Clip.
+
 
 ---
 

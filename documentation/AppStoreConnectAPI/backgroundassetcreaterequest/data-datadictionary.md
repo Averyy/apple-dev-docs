@@ -22,6 +22,12 @@ object BackgroundAssetCreateRequest.Data
 - [object BackgroundAssetCreateRequest.Data.Relationships](backgroundassetcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BackgroundAssetCreateRequest.Data.Attributes) *(required)*
+- `relationships` (BackgroundAssetCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

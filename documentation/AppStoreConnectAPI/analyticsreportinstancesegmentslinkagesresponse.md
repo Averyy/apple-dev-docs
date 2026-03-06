@@ -17,6 +17,12 @@ object AnalyticsReportInstanceSegmentsLinkagesResponse
 ### Dictionaries
 - [object AnalyticsReportInstanceSegmentsLinkagesResponse.Data](analyticsreportinstancesegmentslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AnalyticsReportInstanceSegmentsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

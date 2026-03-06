@@ -20,6 +20,12 @@ object App.Relationships.Builds
 - [object App.Relationships.Builds.Data](app/relationships-data.dictionary/builds-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([App.Relationships.Builds.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

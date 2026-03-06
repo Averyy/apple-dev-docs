@@ -30,6 +30,12 @@ object GameCenterAchievementV2CreateRequest.Data.Relationships
 - [object GameCenterAchievementV2CreateRequest.Data.Relationships.Versions](gamecenterachievementv2createrequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary.md)
   The data that describes the versions of the Game Center achievement.
 
+## Properties
+
+- `gameCenterDetail` (GameCenterAchievementV2CreateRequest.Data.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterAchievementV2CreateRequest.Data.Relationships.GameCenterGroup)
+- `versions` (GameCenterAchievementV2CreateRequest.Data.Relationships.Versions) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2CreateRequest.Data.Attributes](gamecenterachievementv2createrequest/data-data.dictionary/attributes-data.dictionary.md)

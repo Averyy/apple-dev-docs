@@ -14,6 +14,13 @@ The state of a build upload including any errors and warnings.
 object BuildUpload.Attributes.State
 ```
 
+## Properties
+
+- `errors` ([StateDetail])
+- `infos` ([StateDetail])
+- `state` (BuildUploadState)
+- `warnings` ([StateDetail])
+
 
 ---
 

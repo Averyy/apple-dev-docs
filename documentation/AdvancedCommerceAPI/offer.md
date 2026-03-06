@@ -14,6 +14,13 @@ A discount offer for an auto-renewable subscription.
 object Offer
 ```
 
+## Properties
+
+- `period` (string) *(required)*: The period of the offer.
+- `periodCount` (int32) *(required)*: The number of periods the offer is active.
+- `price` (price) *(required)*: The offer price, in milliunits.
+- `reason` (string) *(required)*: The reason for the offer.
+
 ## See Also
 
 - [object Descriptors](descriptors.md)

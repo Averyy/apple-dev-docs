@@ -17,6 +17,10 @@ object BetaFeedbackScreenshotSubmission.Relationships.Tester
 ### Dictionaries
 - [object BetaFeedbackScreenshotSubmission.Relationships.Tester.Data](betafeedbackscreenshotsubmission/relationships-data.dictionary/tester-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaFeedbackScreenshotSubmission.Relationships.Tester.Data)
+
 
 ---
 

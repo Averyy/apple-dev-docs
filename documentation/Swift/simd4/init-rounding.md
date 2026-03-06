@@ -23,7 +23,7 @@ init<Other>(_ other: SIMD4<Other>, rounding rule: FloatingPointRoundingRule = .t
 ## Parameters
 
 - `other`: The vector to convert.
-- `rule`: The round rule to use when converting elements of   The   default is  .
+- `rule`: The round rule to use when converting elements of `other.` The default is `.towardZero`.
 
 
 ---

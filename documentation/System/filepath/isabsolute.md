@@ -24,7 +24,7 @@ var isAbsolute: Bool { get }
 
 On Unix platforms, absolute paths begin with a `/`. `isAbsolute` is equivalent to `root != nil`.
 
-On Windows, absolute paths are fully qualified paths. `isAbsolute` is  equivalent to `root != nil` for traditional DOS paths (e.g. `C:foo` and `\bar` have roots but are not absolute). UNC paths and device paths are always absolute. Traditional DOS paths are absolute only if they begin with a volume or drive followed by a `:` and a separator.
+On Windows, absolute paths are fully qualified paths. `isAbsolute` is *not* equivalent to `root != nil` for traditional DOS paths (e.g. `C:foo` and `\bar` have roots but are not absolute). UNC paths and device paths are always absolute. Traditional DOS paths are absolute only if they begin with a volume or drive followed by a `:` and a separator.
 
 NOTE: This does not perform shell expansion or substitute environment variables; paths beginning with `~` are considered relative.
 

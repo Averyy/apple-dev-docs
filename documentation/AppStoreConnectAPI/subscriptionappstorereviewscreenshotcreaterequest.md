@@ -17,6 +17,10 @@ object SubscriptionAppStoreReviewScreenshotCreateRequest
 ### Objects
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionAppStoreReviewScreenshotCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshot](subscriptionappstorereviewscreenshot.md)

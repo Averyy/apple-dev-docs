@@ -20,6 +20,10 @@ object AppPreviewCreateRequest.Data.Relationships
 - [object AppPreviewCreateRequest.Data.Relationships.AppPreviewSet](apppreviewcreaterequest/data-data.dictionary/relationships-data.dictionary/apppreviewset-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `appPreviewSet` (AppPreviewCreateRequest.Data.Relationships.AppPreviewSet) *(required)*
+
 ## See Also
 
 - [object AppPreviewCreateRequest.Data.Attributes](apppreviewcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

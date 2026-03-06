@@ -26,8 +26,8 @@ Given two tuples `(a1, a2, ..., aN)` and `(b1, b2, ..., bN)`, the first tuple is
 
 ## Parameters
 
-- `lhs`: A tuple of   elements.
-- `rhs`: Another tuple of elements of the same type as  .
+- `lhs`: A tuple of `Comparable` elements.
+- `rhs`: Another tuple of elements of the same type as `lhs`.
 
 ## See Also
 

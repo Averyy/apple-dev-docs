@@ -22,6 +22,14 @@ object Curators
 - [object Curators.Relationships](curators/relationships-data.dictionary.md)
   The relationships for a curator resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the curator.
+- `type` (string) *(required)*: This value must always be `curators`.
+- `href` (string) *(required)*: The relative location for the curator resource.
+- `attributes` (Curators.Attributes): The attributes for the curator.
+- `relationships` (Curators.Relationships): The relationships for the curator.
+
 ## See Also
 
 - [object AppleCurators](applecurators.md)

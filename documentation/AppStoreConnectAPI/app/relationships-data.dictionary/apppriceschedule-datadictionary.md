@@ -12,6 +12,10 @@
 object App.Relationships.AppPriceSchedule
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

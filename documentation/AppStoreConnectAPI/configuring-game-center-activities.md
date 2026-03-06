@@ -19,6 +19,9 @@ Before you begin creating your activities, you need these items:
 
 Begin creating the activity by using the [`Create an activity`](post-v1-gamecenteractivities.md) endpoint. Provide these attributes in your payload:
 
+- **`referenceName`**: A 40 character or less alphanumeric string.
+- **`vendorIdentifier`**: A reverse url scheme label for this activity.
+
 Additionally provide a relationship to a `gameCenterDetail` or a `gameCenterGroup`. If your leaderboard is in a Game Center group, use `gameCenterGroup`. If you’re relating this activity to a Game Center group, you need to use the `grp.` prefix.
 
 When you create an activity you use a payload like this:

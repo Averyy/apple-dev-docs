@@ -8,6 +8,14 @@ Commit a build upload file to a specific build upload.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/buildUploadFiles/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read build upload file information](get-v1-builduploadfiles-_id_.md)

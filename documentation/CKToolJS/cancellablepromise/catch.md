@@ -22,7 +22,7 @@ If you provide a function for the `onrejected` parameter, `CancellablePromise` c
 
 ## Parameters
 
-- `onrejected`: An optional function   calls when the inner promise rejects.
+- `onrejected`: An optional function `CancellablePromise` calls when the inner promise rejects.
 
 
 ---

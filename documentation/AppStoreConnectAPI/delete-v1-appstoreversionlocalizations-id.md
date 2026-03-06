@@ -8,6 +8,14 @@ Delete a language from your version metadata.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Store Version Localization](post-v1-appstoreversionlocalizations.md)

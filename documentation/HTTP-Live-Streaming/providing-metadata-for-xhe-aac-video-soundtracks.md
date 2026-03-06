@@ -14,6 +14,8 @@ Soundtracks that use xHE-AAC (Extended High-Efficiency Advanced Audio Codec) enc
 
 The loudness and DRC metadata that you include in video content needs to fulfill the MPEG-D DRC requirements for the Basic DRC Metadata Profile, and always include the following values:
 
+**Loudness Metadata**
+
 | loudness info fields | value |
 | --- | --- |
 | Include a `methodValue` for `methodDefinition` == “Anchor Loudness” and `measurementSystem` == “ITU-R BS.1770” | Measure anchor loudness using speech-gating or estimate when speech activity is low. |
@@ -22,6 +24,8 @@ The loudness and DRC metadata that you include in video content needs to fulfill
 Measure anchor loudness of the dialog stem using the ITU-R BS.1770 standard because `methodValue` must reflect the actual anchor loudness of the content. Apply speech-gating to the full mix to obtain the anchor loudness value when only the full mix is available for measurement.
 
 Anchor loudness can be inaccurate when the speech detector can’t find much speech in the full mix. Monitor this situation by computing the speech activity, which is the duration of detected speech divided by the duration of the content. When speech activity is low, ignore this measurement because it can be inaccurate. Instead, derive the anchor loudness value from the program loudness value and other applicable measurements to model the value from statistics of a variety of content. See [`Adjusting anchor loudness`](adjusting-anchor-loudness.md) for additional information.
+
+**DRC Metadata**
 
 | `drcSetEffect` of the required DRC metadata | Required minimum level that supports playback with minimal peak limiter engagement (LKFS) | Position of bit in `drcSetEffect` field of `drcInstructions`, which must have a value of `1` |
 | --- | --- | --- |
@@ -39,6 +43,8 @@ The DRC for `General Compression` can have several instances to accommodate vari
 ##### Configure Metadata for Playback
 
 Configure the MPEG-D DRC decoder for playback according to the specifications below. The configuration occurs completely or partially at the system level and those settings don’t appear at the API level.
+
+**Loudness Metadata**
 
 Set up the MPEG-D DRC decoder to assign the highest priority to the following loudness metadata:****
 
@@ -63,6 +69,8 @@ The following table (ANSI/CTA-2075) provides recommended target loudness value s
 | `unknown` | NA | -24 |
 
 To achieve sufficient output SPL, ensure the target loudness value depends on the SPL range of the active transducer, which has three categories (`small`, `medium`, `large`). Choose the SPL range category by measuring the maximum SPL of the transducer at the anticipated listener location using pink noise at -24 LKFS. Assign the category according to the middle column as ANSI/CTA-2075 Annex G describes. For example, micro loudspeakers in portable devices typically fall into the `small` SPL range category.
+
+**DRC Metadata**
 
 The following table specifies the appropriate DRC requests for different listening environments and transducer SPL ranges (ANSI/CTA-2075):
 

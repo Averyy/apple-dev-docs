@@ -17,6 +17,10 @@ object AppAvailabilityV2.Relationships
 ### Objects
 - [object AppAvailabilityV2.Relationships.TerritoryAvailabilities](appavailabilityv2/relationships-data.dictionary/territoryavailabilities-data.dictionary.md)
 
+## Properties
+
+- `territoryAvailabilities` (AppAvailabilityV2.Relationships.TerritoryAvailabilities)
+
 ## See Also
 
 - [object AppAvailabilityV2.Attributes](appavailabilityv2/attributes-data.dictionary.md)

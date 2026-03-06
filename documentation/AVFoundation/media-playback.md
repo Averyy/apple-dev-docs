@@ -37,7 +37,7 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 - [class AVPlayerLooper](avplayerlooper.md)
   An object that loops media content using a queue player.
 ### SharePlay
-- [Destination Video](../visionos/destination-video.md)
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.

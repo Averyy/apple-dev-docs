@@ -22,9 +22,9 @@ An executable target can contain either Swift or C-family source files, but not 
 
 - `name`: The name of the target.
 - `dependencies`: The dependencies of the target. A dependency can be another target in the package or a product from a package dependency.
-- `path`: The custom path for the target. By default, Swift Package Manager requires a target’s sources to reside at predefined search paths;   for example,  .   Don’t escape the package root; for example, values like   or   are invalid.
-- `exclude`: A list of paths to files or directories that Swift Package Manager shouldn’t consider to be source or resource files.   A path is relative to the target’s directory.   This parameter has precedence over the   parameter.
-- `sources`: An explicit list of source files. If you provide a path to a directory,   Swift Package Manager searches for valid source files recursively.
+- `path`: The custom path for the target. By default, Swift Package Manager requires a target’s sources to reside at predefined search paths; for example, `[PackageRoot]/Sources/[TargetName]`. Don’t escape the package root; for example, values like `../Foo` or `/Foo` are invalid.
+- `exclude`: A list of paths to files or directories that Swift Package Manager shouldn’t consider to be source or resource files. A path is relative to the target’s directory. This parameter has precedence over the [`sources`](target/sources.md) parameter.
+- `sources`: An explicit list of source files. If you provide a path to a directory, Swift Package Manager searches for valid source files recursively.
 - `resources`: An explicit list of resources files.
 - `publicHeadersPath`: The directory that contains public headers of a C-family library target.
 - `packageAccess`: Allows package symbols from other targets in the package.

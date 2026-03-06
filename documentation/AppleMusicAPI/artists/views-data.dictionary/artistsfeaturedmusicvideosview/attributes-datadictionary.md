@@ -14,6 +14,10 @@ A collection of selected music videos to be featured with the artist.
 object Artists.Views.ArtistsFeaturedMusicVideosView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

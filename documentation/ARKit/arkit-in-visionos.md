@@ -25,7 +25,7 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 ## Topics
 
 ### Setup
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [class ARKitSession](arkitsession.md)
   The main entry point for receiving data from ARKit.
@@ -62,16 +62,16 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - [struct CameraRegionAnchor](cameraregionanchor.md)
   Represents a region in space to capture a camera stream of.
 ### Plane detection
-- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
+- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
 - [class PlaneDetectionProvider](planedetectionprovider.md)
   A source of live data about planes in a person’s surroundings.
 - [struct PlaneAnchor](planeanchor.md)
   An anchor that represents horizontal and vertical planes.
 ### World tracking
-- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
+- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [class WorldTrackingProvider](worldtrackingprovider.md)
   A source of live data about the device pose and anchors in a person’s surroundings.
@@ -80,7 +80,7 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - [struct DeviceAnchor](deviceanchor.md)
   The position and orientation of Apple Vision Pro.
 ### Hand tracking
-- [Happy Beam](../visionos/happybeam.md)
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [class HandTrackingProvider](handtrackingprovider.md)
   A source of live data about the position of a person’s hands and hand joints.
@@ -89,7 +89,7 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - [struct HandSkeleton](handskeleton.md)
   A collection of joints in a hand.
 ### Scene reconstruction
-- [Incorporating real-world surroundings in an immersive experience](../visionos/incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [class SceneReconstructionProvider](scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
@@ -100,7 +100,7 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
 - [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Tracking preregistered images in 3D space](../visionos/tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](../visionOS/tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
 - [class ImageTrackingProvider](imagetrackingprovider.md)
   A source of live data about a 2D image’s position in a person’s surroundings.
@@ -123,9 +123,9 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   A source of real-time position of reference objects in a person’s environment.
 - [struct ObjectAnchor](objectanchor.md)
   A reference object ARKit is tracking.
-- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
-- [Implementing object tracking in your visionOS app](../visionos/implementing-object-tracking-in-your-visionos-app.md)
+- [Implementing object tracking in your visionOS app](../visionOS/implementing-object-tracking-in-your-visionOS-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in your app.
 ### Accessory tracking
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
@@ -145,13 +145,15 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   The representation of a room ARKit is currently tracking.
 - [enum SurfaceClassification](surfaceclassification.md)
   A value describing the classification of a surface.
+- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
+  Use room tracking in visionOS to provide custom interactions with physical spaces.
 ### Shared coordinate spaces
 - [class SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
   Provides ability to establish a shared coordinate space among multiple participants.
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [class ARKitSession](arkitsession.md)
   The main entry point for receiving data from ARKit.

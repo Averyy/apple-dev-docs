@@ -20,6 +20,10 @@ object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionLocalization
 - [object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionLocalization.Data](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalization-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionLocalization.Data)
+
 ## See Also
 
 - [object AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)

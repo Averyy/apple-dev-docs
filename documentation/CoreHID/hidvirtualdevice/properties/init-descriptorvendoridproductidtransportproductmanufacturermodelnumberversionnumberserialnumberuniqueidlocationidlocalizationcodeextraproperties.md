@@ -24,18 +24,18 @@ Properties must be specified during the creation of a virtual device using [`ini
 
 ## Parameters
 
-- `descriptor`: See  .
-- `vendorID`: See  .
-- `productID`: See  .
-- `transport`: See  .
-- `product`: See  .
-- `manufacturer`: See  .
-- `modelNumber`: See  .
-- `versionNumber`: See  .
-- `serialNumber`: See  .
-- `uniqueID`: See  .
-- `locationID`: See  .
-- `localizationCode`: See  .
+- `descriptor`: See [`descriptor`](hidvirtualdevice/properties/descriptor.md).
+- `vendorID`: See [`vendorID`](hidvirtualdevice/properties/vendorid.md).
+- `productID`: See [`productID`](hidvirtualdevice/properties/productid.md).
+- `transport`: See [`transport`](hidvirtualdevice/properties/transport.md).
+- `product`: See [`product`](hidvirtualdevice/properties/product.md).
+- `manufacturer`: See [`manufacturer`](hidvirtualdevice/properties/manufacturer.md).
+- `modelNumber`: See [`modelNumber`](hidvirtualdevice/properties/modelnumber.md).
+- `versionNumber`: See [`versionNumber`](hidvirtualdevice/properties/versionnumber.md).
+- `serialNumber`: See [`serialNumber`](hidvirtualdevice/properties/serialnumber.md).
+- `uniqueID`: See [`uniqueID`](hidvirtualdevice/properties/uniqueid.md).
+- `locationID`: See [`locationID`](hidvirtualdevice/properties/locationid.md).
+- `localizationCode`: See [`localizationCode`](hidvirtualdevice/properties/localizationcode.md).
 - `extraProperties`: A catch-all for uncommon or device specific properties that aren’t listed above. This parameter is typically only for advanced users that need additional control over device functionality.
 
 

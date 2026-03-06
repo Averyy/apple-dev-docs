@@ -11,6 +11,11 @@ Attributes that you set that describe the new resource.
 object ProfileCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*
+- `profileType` (string) *(required)*
+
 ## See Also
 
 - [object ProfileCreateRequest.Data.Relationships](profilecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

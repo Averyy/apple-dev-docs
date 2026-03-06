@@ -74,7 +74,7 @@ For more details about how to use the data in the Organizer panes to improve the
   Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
 - [Profiling apps using Instruments](https://developer.apple.com/tutorials/instruments)
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
-- [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
+- [Creating a performance plan for your visionOS app](../visionOS/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
 
 

@@ -12,6 +12,10 @@ Reserve an image for a Game Center activity.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivityImages`
+
 ## See Also
 
 - [Read activity image information ](get-v1-gamecenteractivityimages-_id_.md)

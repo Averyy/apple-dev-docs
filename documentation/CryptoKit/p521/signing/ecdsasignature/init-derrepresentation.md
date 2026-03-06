@@ -22,7 +22,7 @@ init<D>(derRepresentation: D) throws where D : DataProtocol
 
 ## Parameters
 
-- `derRepresentation`: The DER-encoded representation of the   signature.
+- `derRepresentation`: The DER-encoded representation of the signature.
 
 ## See Also
 

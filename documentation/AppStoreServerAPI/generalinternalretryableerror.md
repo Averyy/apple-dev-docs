@@ -14,6 +14,11 @@ An error response that indicates an unknown error occurred, but you can try agai
 object GeneralInternalRetryableError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundRetryableError](accountnotfoundretryableerror.md)

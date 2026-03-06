@@ -12,6 +12,50 @@ Get details about a specific app price point.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v3/appPricePoints/eyJzIjoiNjQ0NzQwMjE5MiIsInQiOiJDQU4iLCJwIjoiMTAwMDEifQ
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "appPricePoints",
+    "id" : "eyJzIjoiNjQ0NzQwMjE5MiIsInQiOiJDQU4iLCJwIjoiMTAwMDEifQ",
+    "attributes" : {
+      "customerPrice" : "1.39",
+      "proceeds" : "0.97"
+    },
+    "relationships" : {
+      "equalizations" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v3/appPricePoints/eyJzIjoiNjQ0NzQwMjE5MiIsInQiOiJDQU4iLCJwIjoiMTAwMDEifQ/relationships/equalizations",
+          "related" : "https://api.appstoreconnect.apple.com/v3/appPricePoints/eyJzIjoiNjQ0NzQwMjE5MiIsInQiOiJDQU4iLCJwIjoiMTAwMDEifQ/equalizations"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v3/appPricePoints/eyJzIjoiNjQ0NzQwMjE5MiIsInQiOiJDQU4iLCJwIjoiMTAwMDEifQ"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v3/appPricePoints/eyJzIjoiNjQ0NzQwMjE5MiIsInQiOiJDQU4iLCJwIjoiMTAwMDEifQ"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v3/appPricePoints/{id}`
+
+## Parameters
+
+- `fields[appPricePoints]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List all price points for an app](get-v1-apps-_id_-apppricepoints.md)

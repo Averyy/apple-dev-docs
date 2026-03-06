@@ -8,6 +8,22 @@ Read information about the group for specific achievement.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/{id}/groupAchievement`
+
+## Parameters
+
+- `fields[gameCenterAchievementLocalizations]` ([string])
+- `fields[gameCenterAchievementReleases]` ([string])
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `include` ([string])
+- `limit[localizations]` (integer)
+- `limit[releases]` (integer)
+- `fields[gameCenterActivities]` ([string])
+
 ## See Also
 
 - [Read Game Center achievement information](get-v2-gamecenterachievements-_id_.md)

@@ -26,6 +26,12 @@ object xcodeMetrics
 - [object xcodeMetrics.ProductData](xcodemetrics/productdata-data.dictionary.md)
   The metrics information of an app on a specific platform.
 
+## Properties
+
+- `insights` (xcodeMetrics.Insights): Analysis of data collected about the power and performance of your app that includes regressions and trends.
+- `productData` ([xcodeMetrics.ProductData]): An array of metrics data containing power and performance measurements for your app, organized by platform.
+- `version` (string): The current App Store Connect API version.
+
 ## See Also
 
 - [object DiagnosticInsight](diagnosticinsight.md)

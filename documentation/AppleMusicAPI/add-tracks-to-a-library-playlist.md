@@ -20,6 +20,26 @@ You can include an optional `tracks` relationship in this request.
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library/playlists/p.RB1AARBIv74Zkl/tracks
+```
+
+**Response**:
+
+```json
+No response body
+```
+
+## Endpoint
+
+`POST https://api.music.apple.com/v1/me/library/playlists/{id}/tracks`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
 ## Request Body
 
 The `POST` request containing the `identifier` and `type` for the tracks to be added.

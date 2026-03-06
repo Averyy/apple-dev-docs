@@ -18,6 +18,14 @@ object SubscriptionOfferCodeOneTimeUseCode
 - [object SubscriptionOfferCodeOneTimeUseCode.Attributes](subscriptionoffercodeonetimeusecode/attributes-data.dictionary.md)
 - [object SubscriptionOfferCodeOneTimeUseCode.Relationships](subscriptionoffercodeonetimeusecode/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionOfferCodeOneTimeUseCode.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionOfferCodeOneTimeUseCode.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

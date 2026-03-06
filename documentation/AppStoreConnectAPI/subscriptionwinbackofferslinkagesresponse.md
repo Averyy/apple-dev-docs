@@ -17,6 +17,12 @@ object SubscriptionWinBackOffersLinkagesResponse
 ### Dictionaries
 - [object SubscriptionWinBackOffersLinkagesResponse.Data](subscriptionwinbackofferslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionWinBackOffersLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

@@ -14,6 +14,13 @@ The values of the data points.
 object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `averageSecondsInQueue` (number): The average seconds that match requests are in the queue.
+- `count` (integer): The number of match requests in the response.
+- `p50SecondsInQueue` (number): The number of seconds the 50th percentile of the match requests are in the queue.
+- `p95SecondsInQueue` (number): The number of seconds that the 95th percentile of the match requests are in the queue.
+
 
 ---
 

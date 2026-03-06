@@ -14,6 +14,10 @@ A response object indicating that an error occurred while processing the request
 object ErrorsResponse
 ```
 
+## Properties
+
+- `errors` ([Error]) *(required)*: The collection of errors that occurred while processing the request.
+
 ## See Also
 
 - [object EmptyBodyResponse](emptybodyresponse.md)

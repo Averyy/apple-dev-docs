@@ -20,6 +20,12 @@ object App.Relationships.AppEncryptionDeclarations
 - [object App.Relationships.AppEncryptionDeclarations.Data](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary/data-data.dictionary.md)
   The type and ID of the App Encryption Declaration
 
+## Properties
+
+- `data` ([App.Relationships.AppEncryptionDeclarations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.InAppPurchasesV2](app/relationships-data.dictionary/inapppurchasesv2-data.dictionary.md)

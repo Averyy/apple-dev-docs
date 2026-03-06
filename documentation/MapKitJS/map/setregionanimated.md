@@ -28,8 +28,8 @@ By default, MapKit JS animates the change.
 
 ## Parameters
 
-- `region`: A new   for the map to display.
-- `animate`: A Boolean value that determines whether MapKit JS animates the region change. The default value is  .
+- `region`: A new [`region`](map/region.md) for the map to display.
+- `animate`: A Boolean value that determines whether MapKit JS animates the region change. The default value is `true`.
 
 ## See Also
 

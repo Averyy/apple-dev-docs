@@ -12,6 +12,14 @@ Update details for a specific webhook.
 
 - [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/webhooks/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read webhook information for an app](get-v1-apps-_id_-webhooks.md)

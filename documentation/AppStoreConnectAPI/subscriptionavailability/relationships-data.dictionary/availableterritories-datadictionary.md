@@ -17,6 +17,12 @@ object SubscriptionAvailability.Relationships.AvailableTerritories
 ### Objects
 - [object SubscriptionAvailability.Relationships.AvailableTerritories.Data](subscriptionavailability/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionAvailability.Relationships.AvailableTerritories.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Subscription](subscription.md)

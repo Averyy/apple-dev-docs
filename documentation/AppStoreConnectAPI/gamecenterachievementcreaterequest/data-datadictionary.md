@@ -18,6 +18,12 @@ object GameCenterAchievementCreateRequest.Data
 - [object GameCenterAchievementCreateRequest.Data.Attributes](gamecenterachievementcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object GameCenterAchievementCreateRequest.Data.Relationships](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterAchievementCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

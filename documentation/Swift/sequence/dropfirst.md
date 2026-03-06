@@ -36,11 +36,11 @@ print(numbers.dropFirst(10))
 // Prints "[]"
 ```
 
-> **Note**: O(1), with O() deferred to each iteration of the result, where  is the number of elements to drop from the beginning of the sequence.
+> **Note**: O(1), with O(*k*) deferred to each iteration of the result, where *k* is the number of elements to drop from the beginning of the sequence.
 
 ## Parameters
 
-- `k`: The number of elements to drop from the beginning of   the sequence.   must be greater than or equal to zero.
+- `k`: The number of elements to drop from the beginning of the sequence. `k` must be greater than or equal to zero.
 
 ## See Also
 

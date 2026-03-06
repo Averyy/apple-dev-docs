@@ -14,6 +14,11 @@ A response that contains a single Territories resource.
 object TerritoryResponse
 ```
 
+## Properties
+
+- `data` (Territory) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Territory](territory.md)

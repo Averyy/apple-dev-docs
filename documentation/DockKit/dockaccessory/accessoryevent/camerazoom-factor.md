@@ -19,7 +19,7 @@ case cameraZoom(factor: Double)
 
 ## Parameters
 
-- `factor`: A zoom multiplier. For example, a value of   doubles the size of an image’s subject and halves the field of view.
+- `factor`: A zoom multiplier. For example, a value of `2.0` doubles the size of an image’s subject and halves the field of view.
 
 
 ---

@@ -6,7 +6,7 @@
 A response that indicates the server successfully received the subscription-renewal-date extension request.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -27,6 +27,10 @@ As the App Store server processes your request, it sends notifications ([`App St
 The [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) endpoint reports on whether your request is complete. For completed requests, it also reports the count of successful and failed subscription-renewal-date extensions.
 
 For more information, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md).
+
+## Properties
+
+- `requestIdentifier` (requestIdentifier): A string that contains the `UUID` that identifies the subscription-renewal-date extension request.
 
 ## See Also
 

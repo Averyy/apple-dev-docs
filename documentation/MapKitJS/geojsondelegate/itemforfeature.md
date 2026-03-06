@@ -27,8 +27,8 @@ MapKit JS calls this method for every GeoJSON `feature`.
 
 ## Parameters
 
-- `item`: An item the system creates for the geometry of the feature, or   for features with   geometry.
-- `geoJSON`: The original GeoJSON object for the  .
+- `item`: An item the system creates for the geometry of the feature, or `null` for features with `null` geometry.
+- `geoJSON`: The original GeoJSON object for the `feature`.
 
 ## See Also
 

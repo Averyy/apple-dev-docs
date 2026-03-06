@@ -20,6 +20,11 @@ object BetaAppLocalization.Relationships.App
 - [object BetaAppLocalization.Relationships.App.Data](betaapplocalization/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BetaAppLocalization.Relationships.App.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

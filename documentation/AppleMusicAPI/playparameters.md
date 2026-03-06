@@ -14,6 +14,11 @@ An object that represents play parameters for resources.
 object PlayParameters
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The ID of the content to use for playback.
+- `kind` (string) *(required)*: The kind of the content to use for playback.
+
 
 ---
 

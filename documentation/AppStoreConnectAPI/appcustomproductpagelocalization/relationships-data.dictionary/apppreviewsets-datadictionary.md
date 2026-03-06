@@ -17,6 +17,12 @@ object AppCustomProductPageLocalization.Relationships.AppPreviewSets
 ### Dictionaries
 - [object AppCustomProductPageLocalization.Relationships.AppPreviewSets.Data](appcustomproductpagelocalization/relationships-data.dictionary/apppreviewsets-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalization.Relationships.AppPreviewSets.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion](appcustomproductpagelocalization/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)

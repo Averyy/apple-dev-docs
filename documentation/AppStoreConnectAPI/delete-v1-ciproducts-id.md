@@ -20,6 +20,14 @@ App Store Connect confirms the deletion by responding with the `HTTP/1.1 204 No 
 
 > ❗ **Important**:  Deleting an Xcode Cloud product permanently deletes all workflows, including their build history and artifacts. Only delete an Xcode Cloud product when you’re confident that you don’t need its workflows, build history, or artifacts anymore. Instead of deleting a product, deactivate its workflows to preserve the product and its build history and artifacts. For more information about deactivating a workflow, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud).
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/ciProducts/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Products resource.
+
 
 ---
 

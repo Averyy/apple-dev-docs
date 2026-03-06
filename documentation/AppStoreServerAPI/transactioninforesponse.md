@@ -6,7 +6,7 @@
 A response that contains signed transaction information for a single transaction.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -27,6 +27,10 @@ The `TransactionInfoResponse` contains information about the transaction that yo
 ### Response data types
 - [type JWSTransaction](jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
+
+## Properties
+
+- `signedTransactionInfo` (JWSTransaction): A customer’s in-app purchase transaction, signed by Apple, in JSON Web Signature (JWS) format.
 
 ## See Also
 

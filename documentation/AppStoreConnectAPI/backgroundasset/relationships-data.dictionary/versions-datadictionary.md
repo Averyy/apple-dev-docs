@@ -12,6 +12,10 @@
 object BackgroundAsset.Relationships.Versions
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

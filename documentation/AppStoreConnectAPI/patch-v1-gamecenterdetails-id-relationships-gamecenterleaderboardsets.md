@@ -8,6 +8,14 @@ Edit the associated leaderboard sets for a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/gameCenterLeaderboardSets`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md) response.
+
 ## See Also
 
 - [Enable Game Center for an app](post-v1-gamecenterdetails.md)

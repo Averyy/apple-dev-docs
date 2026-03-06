@@ -28,7 +28,7 @@ When it receives new data from a vehicle, the system updates the vehicle report 
 
 ## Parameters
 
-- `function`: The function identifier for the given vehicle   feature. If you specify an unknown feature, this method throws   an error. For a list of the vehicle’s supported features,   see the   property.
+- `function`: The function identifier for the given vehicle feature. If you specify an unknown feature, this method throws an error. For a list of the vehicle’s supported features, see the [`supportedFunctions`](vehiclereport/supportedfunctions.md) property.
 
 
 ---

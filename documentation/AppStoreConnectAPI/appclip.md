@@ -22,6 +22,14 @@ object AppClip
 - [object AppClip.Relationships](appclip/relationships-data.dictionary.md)
   The relationships of the App Clips resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppClip.Attributes): The attributes that describe the App Clips resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an App Clips resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (AppClip.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipResponse](appclipresponse.md)

@@ -17,6 +17,10 @@ object AppEventLocalizationCreateRequest
 ### Objects
 - [object AppEventLocalizationCreateRequest.Data](appeventlocalizationcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventLocalizationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEventLocalization](appeventlocalization.md)

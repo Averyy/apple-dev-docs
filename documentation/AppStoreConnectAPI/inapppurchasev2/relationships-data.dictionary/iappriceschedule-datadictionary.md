@@ -17,6 +17,11 @@ object InAppPurchaseV2.Relationships.IapPriceSchedule
 ### Objects
 - [object InAppPurchaseV2.Relationships.IapPriceSchedule.Data](inapppurchasev2/relationships-data.dictionary/iappriceschedule-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2.Relationships.IapPriceSchedule.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

@@ -150,7 +150,7 @@ When you know how many new values you’re adding to a dictionary, use the `init
 
 You can bridge between `Dictionary` and `NSDictionary` using the `as` operator. For bridging to be possible, the `Key` and `Value` types of a dictionary must be classes, `@objc` protocols, or types that bridge to Foundation types.
 
-Bridging from `Dictionary` to `NSDictionary` always takes O(1) time and space. When the dictionary’s `Key` and `Value` types are neither classes nor `@objc` protocols, any required bridging of elements occurs at the first access of each element. For this reason, the first operation that uses the contents of the dictionary may take O().
+Bridging from `Dictionary` to `NSDictionary` always takes O(1) time and space. When the dictionary’s `Key` and `Value` types are neither classes nor `@objc` protocols, any required bridging of elements occurs at the first access of each element. For this reason, the first operation that uses the contents of the dictionary may take O(*n*).
 
 Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` method (`- copyWithZone:` in Objective-C) on the dictionary to get an immutable copy and then performs additional Swift bookkeeping work that takes O(1) time. For instances of `NSDictionary` that are already immutable, `copy(with:)` usually returns the same dictionary in O(1) time; otherwise, the copying performance is unspecified. The instances of `NSDictionary` and `Dictionary` share buffer using the same copy-on-write optimization that is used when two instances of `Dictionary` share buffer.
 
@@ -224,7 +224,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [func forEach((Self.Element) throws -> Void) rethrows](dictionary/foreach(_:).md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
 - [func enumerated() -> EnumeratedSequence<Self>](dictionary/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [var lazy: LazySequence<Self>](dictionary/lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 - [func makeIterator() -> Dictionary<Key, Value>.Iterator](dictionary/makeiterator.md)

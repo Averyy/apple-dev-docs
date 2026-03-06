@@ -27,7 +27,7 @@ A new data frame.
 ## Parameters
 
 - `other`: A data frame type that represents the right side of the join.
-- `columnNames`: The column names of the data frame and the other data frame type,  , respectively.
+- `columnNames`: The column names of the data frame and the other data frame type, `other`, respectively.
 - `kind`: A join operation type.
 
 ## See Also

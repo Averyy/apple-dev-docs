@@ -14,6 +14,10 @@ A result that requires the user to confirm the playback mode before proceeding.
 object PlaybackQueueLocationResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `playbackQueueLocationToConfirm` (PlaybackQueueLocation) *(required)*: A queue location for the user to confirm or reject.
+
 ## See Also
 
 - [object PlaybackQueueLocationResolutionResult.Success](playbackqueuelocationresolutionresult/success-data.dictionary.md)

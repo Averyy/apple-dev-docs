@@ -33,7 +33,7 @@ If you call this method repeatedly, each call returns immediately, without block
 
 ## Parameters
 
-- `result`: A result to yield from the continuation. In the    case, this returns the associated value from the   iterator’s   method. If the result is the   case,   this call terminates the stream with the result’s error, by calling   .
+- `result`: A result to yield from the continuation. In the `.success(_:)` case, this returns the associated value from the iterator’s `next()` method. If the result is the `failure(_:)` case, this call terminates the stream with the result’s error, by calling `finish(throwing:)`.
 
 ## See Also
 

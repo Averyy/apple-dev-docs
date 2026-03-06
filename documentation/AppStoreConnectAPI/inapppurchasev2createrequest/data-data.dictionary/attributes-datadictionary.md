@@ -12,6 +12,14 @@
 object InAppPurchaseV2CreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `familySharable` (boolean)
+- `inAppPurchaseType` (InAppPurchaseType) *(required)*
+- `name` (string) *(required)*
+- `productId` (string) *(required)*
+- `reviewNote` (string)
+
 ## See Also
 
 - [object InAppPurchaseV2CreateRequest.Data.Relationships](inapppurchasev2createrequest/data-data.dictionary/relationships-data.dictionary.md)

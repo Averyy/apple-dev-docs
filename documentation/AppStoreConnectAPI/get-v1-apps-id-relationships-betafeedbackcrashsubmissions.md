@@ -12,6 +12,14 @@ Get a list of beta feedback crash submissions for a specific app.
 
 - id: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List Apps`](get-v1-apps.md) response.
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/betaFeedbackCrashSubmissions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all beta feedback crash submissions for an app](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)

@@ -6,7 +6,7 @@
 A response that contains the contents of the App Store server’s test notification and the result from your server.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -33,6 +33,12 @@ The `signedPayload` contains the `TEST` notification that the App Store server a
   The success or error information and the date the App Store server records when it attempts to send a server notification to your server.
 - [type signedPayload](signedpayload.md)
   A cryptographically signed payload, in JSON Web Signature (JWS) format, containing the response body for a version 2 notification.
+
+## Properties
+
+- `sendAttempts` ([sendAttemptItem]): An array of information the App Store server records for its attempts to send the `TEST` notification to your server. The array may contain a maximum of six [`sendAttemptItem`](sendattemptitem.md) objects.
+- `signedPayload` (signedPayload): The signed payload, in JWS format, that contains the `TEST` notification that the App Store server sent to your server.
+- `firstSendAttemptResult` (string): The result of the App Store server’s first attempt to send the `TEST` notification to your server. Use the first [`sendAttemptItem`](sendattemptitem.md) in the `sendAttempts` array instead.
 
 ## See Also
 

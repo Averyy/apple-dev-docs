@@ -20,6 +20,10 @@ object AppScreenshotSet.Relationships.AppStoreVersionLocalization
 - [object AppScreenshotSet.Relationships.AppStoreVersionLocalization.Data](appscreenshotset/relationships-data.dictionary/appstoreversionlocalization-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppScreenshotSet.Relationships.AppStoreVersionLocalization.Data)
+
 ## See Also
 
 - [object AppScreenshotSet.Relationships.AppScreenshots](appscreenshotset/relationships-data.dictionary/appscreenshots-data.dictionary.md)

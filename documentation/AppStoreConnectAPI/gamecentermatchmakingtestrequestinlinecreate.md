@@ -22,6 +22,13 @@ object GameCenterMatchmakingTestRequestInlineCreate
 - [object GameCenterMatchmakingTestRequestInlineCreate.Relationships](gamecentermatchmakingtestrequestinlinecreate/relationships-data.dictionary.md)
   The relationships of a match request to other objects.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingTestRequestInlineCreate.Attributes) *(required)*: The object attributes.
+- `id` (string): A unique identifier for the match request.
+- `relationships` (GameCenterMatchmakingTestRequestInlineCreate.Relationships): The object relationships.
+- `type` (string) *(required)*: The type of resource object.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

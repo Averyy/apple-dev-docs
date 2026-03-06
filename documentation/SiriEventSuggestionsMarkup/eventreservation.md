@@ -20,6 +20,18 @@ object EventReservation
 - [object Event](event.md)
   A sporting event, live show, or other scheduled event.
 
+## Properties
+
+- `@context` (@context) *(required)*
+- `@type` (string) *(required)*
+- `reservationFor` (Event) *(required)*: General information about the event.
+- `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
+- `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
+- `reservedTicket` (Ticket): Details about the attendee’s ticketed seat.
+- `underName` (Person) *(required)*: The event attendee, or a primary attendee if the event provider doesn’t require a name for each attendee.
+- `broker` (Organization): An intermediary booking service.
+- `url` (URL): A webpage the user can access to view reservation details.
+
 ## See Also
 
 - [object FoodEstablishmentReservation](foodestablishmentreservation.md)

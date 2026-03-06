@@ -14,6 +14,12 @@ A response body that contains a list of beta groups without any includes.
 object BetaGroupsWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([BetaGroup]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaGroup](betagroup.md)

@@ -8,6 +8,14 @@ Get a list of search keyword IDs for a customer product page localization.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}/relationships/searchKeywords`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List app preview sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)

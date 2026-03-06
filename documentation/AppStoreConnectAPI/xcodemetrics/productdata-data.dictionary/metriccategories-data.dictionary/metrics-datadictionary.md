@@ -24,6 +24,13 @@ object xcodeMetrics.ProductData.MetricCategories.Metrics
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.Unit](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/unit-data.dictionary.md)
   A unit of measurement and its display name.
 
+## Properties
+
+- `datasets` ([xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets]): An array of datasets containing metric values by app version filtered by percentile and device type.
+- `goalKeys` ([xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys]): An array of terms used to classify a metric value, and the range of values for each classification.
+- `identifier` (string): The identifier of the specific metric within the contained metric category.
+- `unit` (xcodeMetrics.ProductData.MetricCategories.Metrics.Unit): The metric’s unit of measurement.
+
 
 ---
 

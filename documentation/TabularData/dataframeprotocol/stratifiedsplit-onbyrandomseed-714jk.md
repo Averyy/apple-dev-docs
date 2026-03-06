@@ -27,7 +27,7 @@ A tuple of two data frames.
 ## Parameters
 
 - `columnID`: A column identifier.
-- `proportion`: A proportion in the range  .
+- `proportion`: A proportion in the range `[0.0, 1.0]`.
 - `randomSeed`: A seed number for a random-number generator.
 
 ## See Also

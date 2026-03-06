@@ -50,4 +50,4 @@ func ABPersonSetImageData(_ person: ABPersonRef!, _ imageData: CFData!) -> Bool
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abpersonsetimagedata(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abpersonsetimagedata(_:_:_:))*

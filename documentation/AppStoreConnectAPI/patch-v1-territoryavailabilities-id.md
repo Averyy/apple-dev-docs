@@ -8,6 +8,14 @@ Update the release territories for your app pre-order.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/territoryAvailabilities/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read App Availabilty](get-v2-appavailabilities-_id_.md)

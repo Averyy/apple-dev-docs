@@ -20,6 +20,10 @@ object BackgroundAssetUpdateRequest
 - [object BackgroundAssetUpdateRequest.Data](backgroundassetupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BackgroundAssetUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object App](app.md)

@@ -22,6 +22,11 @@ object EndUserLicenseAgreement.Relationships
 - [object EndUserLicenseAgreement.Relationships.Territories](enduserlicenseagreement/relationships-data.dictionary/territories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (EndUserLicenseAgreement.Relationships.App)
+- `territories` (EndUserLicenseAgreement.Relationships.Territories)
+
 ## See Also
 
 - [object EndUserLicenseAgreement.Attributes](enduserlicenseagreement/attributes-data.dictionary.md)

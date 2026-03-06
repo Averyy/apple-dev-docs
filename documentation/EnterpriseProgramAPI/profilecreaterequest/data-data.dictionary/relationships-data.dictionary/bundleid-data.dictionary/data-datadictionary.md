@@ -11,6 +11,11 @@ The type and ID of the resource that you’re relating with the resource you’r
 object ProfileCreateRequest.Data.Relationships.BundleId.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -43,7 +43,7 @@ If the instance passed as `object` is being accessed by multiple threads simulta
 
 ## Parameters
 
-- `object`: An instance of a class. This function does   modify   ; the use of   is an implementation artifact.
+- `object`: An instance of a class. This function does *not* modify `object`; the use of `inout` is an implementation artifact.
 
 ## See Also
 

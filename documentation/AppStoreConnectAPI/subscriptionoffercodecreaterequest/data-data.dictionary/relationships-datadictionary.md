@@ -18,6 +18,11 @@ object SubscriptionOfferCodeCreateRequest.Data.Relationships
 - [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary.md)
 - [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Subscription](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
 
+## Properties
+
+- `prices` (SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices) *(required)*
+- `subscription` (SubscriptionOfferCodeCreateRequest.Data.Relationships.Subscription) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeCreateRequest.Data.Attributes](subscriptionoffercodecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

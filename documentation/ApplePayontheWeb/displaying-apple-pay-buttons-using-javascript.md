@@ -38,19 +38,29 @@ apple-pay-button {
 
 The CSS properties for the button are:
 
+- **`--apple-pay-button-width`**: The width of the button.
+
 The minimum value for the width of a plain Apple Pay button is `100` pixels.
 
 The minimum value for the width of all other Apple Pay buttons is `140` pixels.
 
 The button renders at the minimum width when the specified value is less than the minimum.
 
+- **`--apple-pay-button-height`**: The height of the button.
+
 The default and minimum value for the height is `30` pixels.
 
 The button renders at the minimum height when the specified value is less than the minimum.
 
+- **`--apple-pay-button-border-radius`**: The corner radius of the button.
+
 The default value is `4` pixels.
 
+- **`--apple-pay-button-padding`**: The amount of padding on each side of the button.
+
 The default value is `0` pixels.
+
+- **`--apple-pay-button-box-sizing`**: The box size for the Apple Pay button. The possible values are the same as the `box-sizing` CSS property.
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

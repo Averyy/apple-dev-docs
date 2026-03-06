@@ -23,6 +23,10 @@ object GameCenterDetailGameCenterAchievementsV2LinkagesRequest
 ### Dictionaries - generated
 - [object GameCenterDetailGameCenterAchievementsV2LinkagesRequest.Data](gamecenterdetailgamecenterachievementsv2linkagesrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetailGameCenterAchievementsV2LinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

@@ -14,6 +14,13 @@ The data structure that represents an Issue Counts resource.
 object CiIssueCounts
 ```
 
+## Properties
+
+- `analyzerWarnings` (integer): The number of analyzer warnings.
+- `errors` (integer): The number of errors.
+- `testFailures` (integer): The number of failing tests.
+- `warnings` (integer): The number of warnings.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

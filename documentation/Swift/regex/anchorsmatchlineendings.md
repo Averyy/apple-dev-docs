@@ -30,7 +30,7 @@ This method corresponds to applying the `m` option in regex syntax. For this beh
 
 ## Parameters
 
-- `matchLineEndings`: A Boolean value indicating whether   and    should match the start and end of lines, respectively.
+- `matchLineEndings`: A Boolean value indicating whether `^` and `$` should match the start and end of lines, respectively.
 
 
 ---

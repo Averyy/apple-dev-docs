@@ -14,6 +14,11 @@ A business, transportation provider, or event organizer.
 object Organization
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `name` (string) *(required)*: The name of the organization.
+
 ## See Also
 
 - [object Person](person.md)

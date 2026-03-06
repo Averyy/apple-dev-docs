@@ -14,6 +14,8 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 
 ##### Values for Width
 
+- **Integer**: The width of the element, in points.
+
 ##### Elements That Use Width
 
 - [`decorationLabel`](decorationlabel.md)

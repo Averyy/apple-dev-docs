@@ -14,6 +14,11 @@ A response that contains a list of app encryption declaration without includes r
 object AppEncryptionDeclarationWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (AppEncryptionDeclaration) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)

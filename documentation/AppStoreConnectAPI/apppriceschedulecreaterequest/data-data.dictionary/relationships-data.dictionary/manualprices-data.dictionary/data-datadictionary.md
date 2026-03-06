@@ -12,6 +12,11 @@
 object AppPriceScheduleCreateRequest.Data.Relationships.ManualPrices.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

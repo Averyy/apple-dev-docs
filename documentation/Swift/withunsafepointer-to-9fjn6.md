@@ -32,8 +32,8 @@ The pointer argument to `body` is valid only during the execution of `withUnsafe
 
 ## Parameters
 
-- `value`: An instance to temporarily use via pointer. Note that the    exclusivity rules mean that, like any other   argument,    cannot be directly accessed by other code for the duration of  .   Access must only occur through the pointer argument to   until    returns.
-- `body`: A closure that takes a pointer to   as its sole argument. If   the closure has a return value, that value is also used as the return   value of the   function. The pointer argument   is valid only for the duration of the function’s execution.   It is undefined behavior to try to mutate through the pointer argument   by converting it to   or any other mutable pointer   type. If you need to mutate the argument through the pointer, use    instead.
+- `value`: An instance to temporarily use via pointer. Note that the `inout` exclusivity rules mean that, like any other `inout` argument, `value` cannot be directly accessed by other code for the duration of `body`. Access must only occur through the pointer argument to `body` until `body` returns.
+- `body`: A closure that takes a pointer to `value` as its sole argument. If the closure has a return value, that value is also used as the return value of the `withUnsafePointer(to:_:)` function. The pointer argument is valid only for the duration of the function’s execution. It is undefined behavior to try to mutate through the pointer argument by converting it to `UnsafeMutablePointer` or any other mutable pointer type. If you need to mutate the argument through the pointer, use `withUnsafeMutablePointer(to:_:)` instead.
 
 ## See Also
 

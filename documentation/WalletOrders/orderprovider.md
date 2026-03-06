@@ -16,6 +16,13 @@ Information about the platform providing the order data.
 object OrderProvider
 ```
 
+## Properties
+
+- `displayName` (string) *(required)*: The localized display name of the order provider platform.
+- `trackingLogoNameDarkColorScheme` (string) *(required)*: The name of the logo image for the order provider that’s intended for the dark color scheme. When the shipping fulfilment has a `trackingURL`, it uses this image.
+- `trackingLogoNameLightColorScheme` (string) *(required)*: The name of the logo image for the order provider that’s intended for the light color scheme. When the shipping fulfilment has a `trackingURL`, it uses this image.
+- `url` (uri) *(required)*: The URL of the order provder platform.
+
 ## See Also
 
 - [object Customer](customer.md)

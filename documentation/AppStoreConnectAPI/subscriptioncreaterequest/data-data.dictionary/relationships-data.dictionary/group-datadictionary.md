@@ -17,6 +17,10 @@ object SubscriptionCreateRequest.Data.Relationships.Group
 ### Objects
 - [object SubscriptionCreateRequest.Data.Relationships.Group.Data](subscriptioncreaterequest/data-data.dictionary/relationships-data.dictionary/group-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionCreateRequest.Data.Relationships.Group.Data) *(required)*
+
 
 ---
 

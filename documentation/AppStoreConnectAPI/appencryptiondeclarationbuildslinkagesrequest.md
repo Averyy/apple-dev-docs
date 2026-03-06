@@ -20,6 +20,10 @@ object AppEncryptionDeclarationBuildsLinkagesRequest
 - [object AppEncryptionDeclarationBuildsLinkagesRequest.Data](appencryptiondeclarationbuildslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([AppEncryptionDeclarationBuildsLinkagesRequest.Data]) *(required)*: The object types and IDs of the related resources.
+
 ## See Also
 
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)

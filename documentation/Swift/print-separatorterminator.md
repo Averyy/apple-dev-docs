@@ -54,8 +54,8 @@ for n in 1...5 {
 ## Parameters
 
 - `items`: Zero or more items to print.
-- `separator`: A string to print between each item. The default is a single   space ( ).
-- `terminator`: The string to print after all items have been printed. The   default is a newline ( ).
+- `separator`: A string to print between each item. The default is a single space (`" "`).
+- `terminator`: The string to print after all items have been printed. The default is a newline (`"\n"`).
 
 ## See Also
 

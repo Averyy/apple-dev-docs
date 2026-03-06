@@ -17,6 +17,10 @@ Rotates a Vector3 (Float) about a specified unit axis vector.
 
 #### Parameter Descriptions
 
+- **`In`**: The vector to rotate.
+- **`Amount`**: The amount of degrees to rotate the `In` vector; the default is `0`.
+- **`Axis`**: The unit axis vector that the node rotates the `In` vector around; the default `(0, 1, 0)`.
+
 ## See Also
 
 - [Add](math/add.md)

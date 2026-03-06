@@ -14,6 +14,14 @@ Attributes that describe an in-app purchase offer code custom code resource.
 object InAppPurchaseOfferCodeCustomCode.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+- `createdDate` (date-time)
+- `customCode` (string)
+- `expirationDate` (date)
+- `numberOfCodes` (integer)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCode.Relationships](inapppurchaseoffercodecustomcode/relationships-data.dictionary.md)

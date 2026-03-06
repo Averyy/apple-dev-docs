@@ -26,8 +26,8 @@ Use this method to retrieve the image at the specified location. After you finis
 
 ## Parameters
 
-- `imagePlaygroundViewController`: The view controller that sent the   notification.
-- `imageURL`: The location of the generated image. The file will live inside   a temporary folder of your app sandbox. The app should move it to a   permanent location or clean it up when it has finished using the file.
+- `imagePlaygroundViewController`: The view controller that sent the notification.
+- `imageURL`: The location of the generated image. The file will live inside a temporary folder of your app sandbox. The app should move it to a permanent location or clean it up when it has finished using the file.
 
 
 ---

@@ -14,6 +14,13 @@ A response that contains a list of Pull Requests resources.
 object ScmPullRequestsResponse
 ```
 
+## Properties
+
+- `data` ([ScmPullRequest]) *(required)*: The resource data.
+- `included` ([ScmRepository]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object ScmPullRequest](scmpullrequest.md)

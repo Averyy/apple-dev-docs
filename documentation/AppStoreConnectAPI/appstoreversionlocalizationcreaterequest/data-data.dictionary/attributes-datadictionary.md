@@ -14,6 +14,16 @@ Attributes that you set that describe the new resource.
 object AppStoreVersionLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `keywords` (string)
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `marketingUrl` (uri)
+- `promotionalText` (string)
+- `supportUrl` (uri)
+- `whatsNew` (string)
+
 ## See Also
 
 - [object AppStoreVersionLocalizationCreateRequest.Data.Relationships](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

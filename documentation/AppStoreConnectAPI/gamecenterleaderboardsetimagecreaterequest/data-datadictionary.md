@@ -18,6 +18,12 @@ object GameCenterLeaderboardSetImageCreateRequest.Data
 - [object GameCenterLeaderboardSetImageCreateRequest.Data.Attributes](gamecenterleaderboardsetimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetImageCreateRequest.Data.Relationships](gamecenterleaderboardsetimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetImageCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterLeaderboardSetImageCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

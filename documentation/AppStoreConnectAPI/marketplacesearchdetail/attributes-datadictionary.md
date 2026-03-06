@@ -12,6 +12,10 @@
 object MarketplaceSearchDetail.Attributes
 ```
 
+## Properties
+
+- `catalogUrl` (uri)
+
 
 ---
 

@@ -27,6 +27,15 @@ object GameCenterAchievement.Relationships
 ### Dictionaries
 - [object GameCenterAchievement.Relationships.Activity](gamecenterachievement/relationships-data.dictionary/activity-data.dictionary.md)
 
+## Properties
+
+- `activity` (GameCenterAchievement.Relationships.Activity)
+- `gameCenterDetail` (GameCenterAchievement.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterAchievement.Relationships.GameCenterGroup)
+- `groupAchievement` (GameCenterAchievement.Relationships.GroupAchievement)
+- `localizations` (GameCenterAchievement.Relationships.Localizations)
+- `releases` (GameCenterAchievement.Relationships.Releases)
+
 ## See Also
 
 - [object GameCenterAchievement.Attributes](gamecenterachievement/attributes-data.dictionary.md)

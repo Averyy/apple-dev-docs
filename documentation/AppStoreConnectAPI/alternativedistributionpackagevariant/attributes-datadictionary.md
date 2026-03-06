@@ -12,6 +12,13 @@
 object AlternativeDistributionPackageVariant.Attributes
 ```
 
+## Properties
+
+- `alternativeDistributionKeyBlob` (string): For more infomation, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
+- `fileChecksum` (string): This checksum uses `sha256`.
+- `url` (uri)
+- `urlExpirationDate` (date-time)
+
 
 ---
 

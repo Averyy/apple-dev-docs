@@ -6,7 +6,7 @@
 An error that indicates the server didn’t find a subscription-renewal-date extension request for the request identifier and product identifier you provided.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object StatusRequestNotFoundError
 #### Discussion
 
 This error applies to the [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) endpoint. Check that the `productId` and `requestIdentifier` parameters match the values associated with your request to the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

@@ -23,7 +23,7 @@ init(fromSplitComplex splitComplex: DSPDoubleSplitComplex, scale: Double, count:
 ## Parameters
 
 - `scale`: A multiplier to apply during conversion.
-- `count`: The length of the required resulting array (typically half the count of either the real or imaginary parts of the  .
+- `count`: The length of the required resulting array (typically half the count of either the real or imaginary parts of the `DSPSplitComplex`.
 
 
 ---

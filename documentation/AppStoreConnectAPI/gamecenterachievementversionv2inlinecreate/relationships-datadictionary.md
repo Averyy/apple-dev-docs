@@ -24,6 +24,10 @@ object GameCenterAchievementVersionV2InlineCreate.Relationships
 - [object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement](gamecenterachievementversionv2inlinecreate/relationships-data.dictionary/achievement-data.dictionary.md)
   The data that describes the achievement of the Game Center achievement version v2 inline create.
 
+## Properties
+
+- `achievement` (GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement)
+
 
 ---
 

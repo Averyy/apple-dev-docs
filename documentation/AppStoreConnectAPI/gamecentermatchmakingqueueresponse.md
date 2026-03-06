@@ -14,6 +14,12 @@ The response body for endpoints that create, modify, or get a single queue.
 object GameCenterMatchmakingQueueResponse
 ```
 
+## Properties
+
+- `data` (GameCenterMatchmakingQueue) *(required)*: The queue that you create, modify, or get.
+- `included` ([GameCenterMatchmakingRuleSet]): The rule sets included in the response.
+- `links` (DocumentLinks) *(required)*: The link representations of the response.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest](gamecentermatchmakingqueuecreaterequest.md)

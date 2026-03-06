@@ -20,6 +20,10 @@ object ScmRepository.Relationships.ScmProvider
 - [object ScmRepository.Relationships.ScmProvider.Data](scmrepository/relationships-data.dictionary/scmprovider-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Providers resource.
 
+## Properties
+
+- `data` (ScmRepository.Relationships.ScmProvider.Data): The ID and type of the related Providers resource.
+
 ## See Also
 
 - [object ScmRepository.Relationships.DefaultBranch](scmrepository/relationships-data.dictionary/defaultbranch-data.dictionary.md)

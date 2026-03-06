@@ -16,6 +16,13 @@ The recipient of the shipment.
 object ShippingFulfillment.Recipient
 ```
 
+## Properties
+
+- `address` (Address): The recipient’s address.
+- `familyName` (string): The recipient’s family name.
+- `givenName` (string): The recipient’s given name.
+- `organizationName` (string): The recipient’s organization name.
+
 ## See Also
 
 - [object Customer](customer.md)

@@ -18,6 +18,11 @@ object SubscriptionOfferCodePrice.Relationships
 - [object SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint](subscriptionoffercodeprice/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
 - [object SubscriptionOfferCodePrice.Relationships.Territory](subscriptionoffercodeprice/relationships-data.dictionary/territory-data.dictionary.md)
 
+## Properties
+
+- `subscriptionPricePoint` (SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint)
+- `territory` (SubscriptionOfferCodePrice.Relationships.Territory)
+
 
 ---
 

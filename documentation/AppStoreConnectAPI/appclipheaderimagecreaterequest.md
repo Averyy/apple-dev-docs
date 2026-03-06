@@ -20,6 +20,10 @@ object AppClipHeaderImageCreateRequest
 - [object AppClipHeaderImageCreateRequest.Data](appclipheaderimagecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppClipHeaderImageCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object AppClipHeaderImage](appclipheaderimage.md)

@@ -17,6 +17,10 @@ object BundleIdUpdateRequest
 - [object BundleIdUpdateRequest.Data](bundleidupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BundleIdUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BundleId](bundleid.md)

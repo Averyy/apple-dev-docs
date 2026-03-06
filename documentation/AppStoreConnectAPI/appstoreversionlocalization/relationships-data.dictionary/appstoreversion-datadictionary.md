@@ -20,6 +20,10 @@ object AppStoreVersionLocalization.Relationships.AppStoreVersion
 - [object AppStoreVersionLocalization.Relationships.AppStoreVersion.Data](appstoreversionlocalization/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppStoreVersionLocalization.Relationships.AppStoreVersion.Data)
+
 ## See Also
 
 - [object AppStoreVersionLocalization.Relationships.AppPreviewSets](appstoreversionlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)

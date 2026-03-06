@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/relationships/subscriptionLocalizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)

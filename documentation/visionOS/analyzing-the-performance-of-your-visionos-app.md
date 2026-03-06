@@ -32,6 +32,13 @@ Alternatively, launch Instruments and choose a target app from the template sele
 
 The RealityKit Trace template includes the following instruments:
 
+- **RealityKit Frames**: Captures frame render times and lifespans for frames the visionOS render server generates. This instrument indicates when frames miss rendering deadlines and provides average CPU and GPU render rates.
+- **RealityKit Metrics**: Captures comprehensive timing information from the entire render pipeline including rendering, commits, animations, physics, and spatial systems. This instrument identifies potential bottlenecks in your app’s process or in the render server as a result of your app’s content and indicates areas of moderate and high system power usage that require optimization.
+- **Runloops**: Captures and displays Runloop execution details.
+- **Time Profiler**: Profiles running threads on all cores at regular intervals for all processes.
+- **Hangs**: Captures and displays periods of time when the main thread is unresponsive.
+- **Metal Application**: Records Metal app events.
+
 Consider adding other instruments to your trace for specific investigations. For example, you can use the Thermal State instrument to record device thermal states to check if thermal pressures are throttling performance.
 
 ##### Profile Your Workflows
@@ -78,6 +85,13 @@ The trace provides additional information you can use to identify changes to mak
 
 ![A screenshot of RealityKit Metrics instrument timeline expanded to display additional graphs for 3D Render, Core Animation Render, Entity Commits, RealityKit Animations, RealityKit Physics, and Spacial Systems.](https://docs-assets.developer.apple.com/published/b875fecf6b6cf5a61f643b5703564866/realitykit-metrics-instrument-expanded%402x.png)
 
+- **3D Render**: Metrics related to the cost of 3D RealityKit rendering in the render server. This includes the number of draw calls, triangles, and vertices from all apps.
+- **Core Animation Render**: Metrics related to UI content rendering costs in the render server. This includes the total number of render passes, offscreen render passes, and translucent UI meshes from all apps.
+- **Entity Commits**: Metrics related to the costs of entity commits in the app and the render server. This includes the number of RealityKit entities shared with the render server from all apps, as well as the number of updates received from all apps over certain intervals.
+- **RealityKit Animations**: Metrics related to the cost of RealityKit animations in the app and the render server. This includes the number of skeletal animations, across all apps.
+- **RealityKit Physics**: Metrics related to the cost of RealityKit physics simulations, collisions, and hit testing in the app process and render server. This includes the number of rigid body counts and colliders in use, as well as the type of physics shapes that the UI and other 3D content use, across all apps.
+- **Spatial Systems**: Metrics related to the costs of spatial algorithms in the render server. This includes the number of custom anchors, across all apps.
+
 > 💡 **Tip**: The graphs for some sections combine several individual metrics. The heading indicates this by displaying a graph count. Click on the bottom of the timeline’s heading and drag down to display individual graphs for each metric. For example, the 3D Render Timeline might display 13 Graphs in the heading; expanding that timeline exposes individual graphs for 3D Mesh Draw Calls, 3D Mesh Triangles, 3D Mesh Vertices, and the 10 additional metrics.
 
 The timeline for your app’s process helps summarize information from the instruments about your process and the work the render server completes for your process.
@@ -85,6 +99,11 @@ The timeline for your app’s process helps summarize information from the instr
 ![A screenshot of the timeline for your app's process displays the name of your app to the left with a pop-up button labeled Process below it. The timeline graphs to the right display RealityKit System Times labeled 3D Render, Audio Playback, Custom Reality System, Entity Commits, and RealityKit Physics.](https://docs-assets.developer.apple.com/published/b83d069b9b4d728db929aae9e32eeba6/realitykit-trace-world-track%402x.png)
 
 Choose an option from the pop-up in the timeline header to show different graphs in the timeline:
+
+- **Runloops**: Time each thread spends waiting or busy.
+- **Hangs**: Time the main thread is unresponsive.
+- **Time Profile**: CPU usage and lifecycle status.
+- **RealityKit System Times**: Overhead attributed to RealityKit systems.
 
 When you select the timeline for your app’s process, you can choose instrument summaries and profile data to display in the detail area from the popup-button at its top-left:
 
@@ -95,6 +114,9 @@ To filter the information in the detail area by time, select periods of time in 
 ##### Detect Delays on the Main Thread
 
 Select Hangs in your app’s process timeline to identify times in the trace that might have interaction delays. Use the RealityKit Metrics and Time Profiler summaries to better understand the work your app is doing. Choose the following options from the detail area pop-up menu:
+
+- **Profile and Samples**: Shows information from the Time Profiler instrument to determine what your app is doing during a hang.
+- **Summary**: RealityKit System CPU times: Shows minimum, maximum, and average times the CPU spends on various RealityKit system operations.
 
 Optimize any 3D render updates, hit testing, and collision work you find. For more information about addressing hangs in your app, see [`Improving app responsiveness`](https://developer.apple.com/documentation/Xcode/improving-app-responsiveness).
 

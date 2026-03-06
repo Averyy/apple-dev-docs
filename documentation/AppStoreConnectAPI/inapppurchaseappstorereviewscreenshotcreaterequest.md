@@ -17,6 +17,10 @@ object InAppPurchaseAppStoreReviewScreenshotCreateRequest
 ### Objects
 - [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshot](inapppurchaseappstorereviewscreenshot.md)

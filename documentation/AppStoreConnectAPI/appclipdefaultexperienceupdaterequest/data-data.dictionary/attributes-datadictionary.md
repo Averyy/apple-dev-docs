@@ -14,6 +14,10 @@ The attributes you set that describe the new Default App Clip Experiences resour
 object AppClipDefaultExperienceUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `action` (AppClipAction): The call-to-action verb that appears on the App Clip card.
+
 ## See Also
 
 - [object AppClipDefaultExperienceUpdateRequest.Data.Relationships](appclipdefaultexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary.md)

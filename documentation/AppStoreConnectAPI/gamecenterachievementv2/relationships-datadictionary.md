@@ -33,6 +33,13 @@ object GameCenterAchievementV2.Relationships
 - [object GameCenterAchievementV2.Relationships.Versions](gamecenterachievementv2/relationships-data.dictionary/versions-data.dictionary.md)
   The data and links that describe the versions of the Game Center achievement v2.
 
+## Properties
+
+- `activity` (GameCenterAchievementV2.Relationships.Activity)
+- `gameCenterDetail` (GameCenterAchievementV2.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterAchievementV2.Relationships.GameCenterGroup)
+- `versions` (GameCenterAchievementV2.Relationships.Versions)
+
 ## See Also
 
 - [object GameCenterAchievementV2.Attributes](gamecenterachievementv2/attributes-data.dictionary.md)

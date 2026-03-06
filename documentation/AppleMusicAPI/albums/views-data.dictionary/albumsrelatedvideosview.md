@@ -20,6 +20,13 @@ object Albums.Views.AlbumsRelatedVideosView
 - [object Albums.Views.AlbumsRelatedVideosView.Attributes](albums/views-data.dictionary/albumsrelatedvideosview/attributes-data.dictionary.md)
   The attributes for the view.
 
+## Properties
+
+- `href` (string): The relative location to fetch the view directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `attributes` (Albums.Views.AlbumsRelatedVideosView.Attributes) *(required)*: The attributes for the view.
+- `data` ([MusicVideos]) *(required)*: The music videos available for songs on the album.
+
 ## See Also
 
 - [object Albums.Views.AlbumsAppearsOnView](albums/views-data.dictionary/albumsappearsonview.md)

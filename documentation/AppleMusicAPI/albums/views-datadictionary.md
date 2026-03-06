@@ -26,6 +26,13 @@ object Albums.Views
 - [object Albums.Views.AlbumsRelatedVideosView](albums/views-data.dictionary/albumsrelatedvideosview.md)
   A relationship view from this album to music videos for the songs on the album.
 
+## Properties
+
+- `appears-on` (Albums.Views.AlbumsAppearsOnView): A selection of playlists that tracks from this album appear on.
+- `other-versions` (Albums.Views.AlbumsOtherVersionsView): Other versions of this album.
+- `related-albums` (Albums.Views.AlbumsRelatedAlbumsView): Other albums related or similar to this album.
+- `related-videos` (Albums.Views.AlbumsRelatedVideosView): Music videos associated with tracks on this album.
+
 ## See Also
 
 - [object Albums.Attributes](albums/attributes-data.dictionary.md)

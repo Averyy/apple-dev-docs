@@ -28,7 +28,7 @@ MapKit JS calls this method for every `MultiLineString` object. The framework al
 ## Parameters
 
 - `itemCollection`: An item collection containing associated overlays.
-- `geoJSON`: The original GeoJSON object for the  . This contains an array of geometries.
+- `geoJSON`: The original GeoJSON object for the `MultiLineString`. This contains an array of geometries.
 
 ## See Also
 

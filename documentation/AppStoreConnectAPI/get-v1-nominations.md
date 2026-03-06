@@ -8,6 +8,23 @@ Get all featuring nominations.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/nominations`
+
+## Parameters
+
+- `fields[nominations]` ([string])
+- `filter[relatedApps]` ([string])
+- `filter[state]` ([string]) *(required)*
+- `filter[type]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[inAppEvents]` (integer)
+- `limit[relatedApps]` (integer)
+- `limit[supportedTerritories]` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [Create a featuring nomination](post-v1-nominations.md)

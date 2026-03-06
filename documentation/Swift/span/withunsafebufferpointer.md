@@ -32,7 +32,7 @@ Note: For an empty `Span`, the closure always receives a `nil` pointer.
 
 ## Parameters
 
-- `body`: A closure with an   parameter   that points to the viewed contiguous storage. If   has   a return value, that value is also used as the return value   for the   method. The closure’s   parameter is valid only for the duration of its execution.
+- `body`: A closure with an `UnsafeBufferPointer` parameter that points to the viewed contiguous storage. If `body` has a return value, that value is also used as the return value for the `withUnsafeBufferPointer(_:)` method. The closure’s parameter is valid only for the duration of its execution.
 
 
 ---

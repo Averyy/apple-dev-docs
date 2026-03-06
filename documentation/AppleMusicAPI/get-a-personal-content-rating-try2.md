@@ -16,6 +16,39 @@ A rating indicates whether a user likes `(1)` or dislikes `(-1)` the station. Th
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/ratings/stations/ra.853851860
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "attributes": {
+                "value": 1
+            },
+            "href": "/v1/me/ratings/stations/ra.853851860",
+            "id": "ra.853851860",
+            "type": "ratings"
+        }
+    ]
+}
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/me/ratings/stations/{id}`
+
+## Parameters
+
+- `include` ([string]): Additional relationships to include in the fetch.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object Ratings](ratings.md)

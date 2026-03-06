@@ -17,6 +17,11 @@ object SubscriptionPromotedPurchaseLinkageResponse
 ### Dictionaries
 - [object SubscriptionPromotedPurchaseLinkageResponse.Data](subscriptionpromotedpurchaselinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionPromotedPurchaseLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

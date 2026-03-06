@@ -14,6 +14,13 @@ A response that contains multiple leaderboard resources.
 object GameCenterLeaderboardsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterLeaderboard]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

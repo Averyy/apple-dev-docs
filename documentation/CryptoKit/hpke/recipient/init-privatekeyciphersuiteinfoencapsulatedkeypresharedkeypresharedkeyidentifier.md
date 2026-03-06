@@ -30,7 +30,7 @@ The `Receiver` decrypts messages in PSK mode using the encapsulated key with the
 
 - `privateKey`: The recipient’s private key for decrypting the incoming messages.
 - `ciphersuite`: The cipher suite that defines the cryptographic algorithms to use.
-- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same   data.
+- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same `info` data.
 - `encapsulatedKey`: The encapsulated symmetric key that the sender provides.
 - `psk`: A preshared key (PSK) that the sender and the recipient both hold.
 - `pskID`: An identifier for the PSK.

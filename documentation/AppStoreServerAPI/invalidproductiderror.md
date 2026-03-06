@@ -6,13 +6,18 @@
 An error that indicates the product ID parameter is invalid.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object InvalidProductIdError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

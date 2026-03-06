@@ -14,6 +14,12 @@ A relationship from the library album to its associated catalog content.
 object LibraryAlbums.Relationships.LibraryAlbumsCatalogRelationship
 ```
 
+## Properties
+
+- `href` (string): The relative location to fetch the relationship directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `data` ([Albums]) *(required)*: The album from the Apple Music catalog associated with the library album, if any.
+
 ## See Also
 
 - [object LibraryAlbums.Relationships.LibraryAlbumsArtistsRelationship](libraryalbums/relationships-data.dictionary/libraryalbumsartistsrelationship.md)

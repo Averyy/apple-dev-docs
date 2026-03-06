@@ -20,6 +20,10 @@ object AppInfoLocalizationCreateRequest.Data.Relationships.AppInfo
 - [object AppInfoLocalizationCreateRequest.Data.Relationships.AppInfo.Data](appinfolocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appinfo-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppInfoLocalizationCreateRequest.Data.Relationships.AppInfo.Data) *(required)*
+
 
 ---
 

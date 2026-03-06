@@ -40,7 +40,7 @@ The property typeof `multiValue`. If the list is emptyor its values are of diffe
   Returns a new ABMultiValue object.
 - [func ABMultiValueCreateCopy(ABMultiValueRef!) -> Unmanaged<ABMultiValueRef>!](abmultivaluecreatecopy(_:).md)
   Returns a copy of a multi-value object.
-- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable().md)
+- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable(_:).md)
   Returns a newly created mutable multi-value list object.
 - [func ABMultiValueCreateMutableCopy(ABMultiValue!) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutablecopy(_:).md)
   Returns a mutable copy of a multi-value object.

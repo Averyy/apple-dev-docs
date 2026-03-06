@@ -20,6 +20,11 @@ object CiScheduledStartCondition
 - [object CiScheduledStartCondition.Schedule](cischeduledstartcondition/schedule-data.dictionary.md)
   The schedule of an Xcode Cloud workflow that starts a new build based on a schedule.
 
+## Properties
+
+- `schedule` (CiScheduledStartCondition.Schedule): The schedule information you configure for a workflow that starts a new build based on a schedule.
+- `source` (CiBranchPatterns): The source branch name and custom patterns you configure for a workflow that starts a new build on a schedule.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

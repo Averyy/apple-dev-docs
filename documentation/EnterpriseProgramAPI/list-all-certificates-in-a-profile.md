@@ -5,6 +5,15 @@
 
 Get a list of all certificates and their data for a specific provisioning profile.
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/profiles/{id}/certificates`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read the Bundle ID in a Profile](read-the-bundle-id-in-a-profile.md)

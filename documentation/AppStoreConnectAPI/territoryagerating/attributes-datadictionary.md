@@ -12,6 +12,10 @@
 object TerritoryAgeRating.Attributes
 ```
 
+## Properties
+
+- `appStoreAgeRating` (AppStoreAgeRating)
+
 ## See Also
 
 - [object TerritoryAgeRating.Relationships](territoryagerating/relationships-data.dictionary.md)

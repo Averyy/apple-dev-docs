@@ -20,6 +20,10 @@ object AppClipHeaderImage.Relationships
 - [object AppClipHeaderImage.Relationships.AppClipDefaultExperienceLocalization](appclipheaderimage/relationships-data.dictionary/appclipdefaultexperiencelocalization-data.dictionary.md)
   The data and links that describe the relationship between the App Clip Header Images and the Default App Clip Experiences resources.
 
+## Properties
+
+- `appClipDefaultExperienceLocalization` (AppClipHeaderImage.Relationships.AppClipDefaultExperienceLocalization): The related Default App Clip Experience Localizations resource.
+
 ## See Also
 
 - [object AppClipHeaderImage.Attributes](appclipheaderimage/attributes-data.dictionary.md)

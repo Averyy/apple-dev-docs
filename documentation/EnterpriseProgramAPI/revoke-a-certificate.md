@@ -5,6 +5,14 @@
 
 Revoke a lost, stolen, compromised, or expiring signing certificate.
 
+## Endpoint
+
+`DELETE https://api.enterprise.developer.apple.com/v1/certificates/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 
 ---
 

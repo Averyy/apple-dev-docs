@@ -22,6 +22,14 @@ object AppStoreVersionExperimentV2
 - [object AppStoreVersionExperimentV2.Attributes](appstoreversionexperimentv2/attributes-data.dictionary.md)
   Attributes that describe an app store version experiment v2 resource.
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppStoreVersionExperimentV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2CreateRequest](appstoreversionexperimentv2createrequest.md)

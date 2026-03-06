@@ -34,7 +34,7 @@ The returned span’s first byte is always at offset 0; unlike buffer slices, ex
 
 ## Parameters
 
-- `k`: The number of bytes to drop off the end of   the span.   must be greater than or equal to zero.
+- `k`: The number of bytes to drop off the end of the span. `k` must be greater than or equal to zero.
 
 
 ---

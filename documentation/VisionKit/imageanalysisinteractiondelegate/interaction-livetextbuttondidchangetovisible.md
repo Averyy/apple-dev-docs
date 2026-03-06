@@ -22,7 +22,7 @@ func interaction(_ interaction: ImageAnalysisInteraction, liveTextButtonDidChang
 ## Parameters
 
 - `interaction`: The interaction object for which the Live Text button appears.
-- `visible`:   if the Live Text button appears; otherwise, .
+- `visible`: `true` if the Live Text button appears; otherwise,`false`.
 
 ## See Also
 

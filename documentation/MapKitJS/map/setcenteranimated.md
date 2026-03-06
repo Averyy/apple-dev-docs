@@ -24,8 +24,8 @@ By default, MapKit JS animates the pan.
 
 ## Parameters
 
-- `coordinate`: The map’s new  .
-- `animate`: A Boolean value that determines whether MapKit JS animates the center change. The default value is  .
+- `coordinate`: The map’s new [`center`](map/center.md).
+- `animate`: A Boolean value that determines whether MapKit JS animates the center change. The default value is `true`.
 
 ## See Also
 

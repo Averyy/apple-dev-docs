@@ -9,6 +9,10 @@ Invite a user with assigned user roles to join your team.
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/userInvitations`
+
 ## See Also
 
 - [Cancel a User Invitation](cancel-a-user-invitation.md)

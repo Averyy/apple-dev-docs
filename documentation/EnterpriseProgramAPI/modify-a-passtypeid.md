@@ -9,6 +9,14 @@ Update a specific pass type ID’s name.
 
 - HTTPBody
 
+## Endpoint
+
+`PATCH https://api.enterprise.developer.apple.com/v1/passTypeIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a PassTypeId](create-a-passtypeid.md)

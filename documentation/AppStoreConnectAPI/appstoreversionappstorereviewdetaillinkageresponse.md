@@ -17,6 +17,11 @@ object AppStoreVersionAppStoreReviewDetailLinkageResponse
 ### Dictionaries
 - [object AppStoreVersionAppStoreReviewDetailLinkageResponse.Data](appstoreversionappstorereviewdetaillinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionAppStoreReviewDetailLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

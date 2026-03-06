@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaLicenseAgreements/{id}/relationships/app`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List Beta License Agreements](get-v1-betalicenseagreements.md)

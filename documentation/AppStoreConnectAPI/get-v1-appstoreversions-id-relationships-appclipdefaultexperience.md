@@ -8,6 +8,14 @@ Get the ID of an app’s related default App Clip experience.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/appClipDefaultExperience`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the App Store Versions resource.
+
 ## See Also
 
 - [Get the Default App Clip Experience for an App Store Version](get-v1-appstoreversions-_id_-appclipdefaultexperience.md)

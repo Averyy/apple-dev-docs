@@ -20,6 +20,10 @@ object AppInfoLocalization.Relationships
 - [object AppInfoLocalization.Relationships.AppInfo](appinfolocalization/relationships-data.dictionary/appinfo-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appInfo` (AppInfoLocalization.Relationships.AppInfo)
+
 ## See Also
 
 - [object AppInfoLocalization.Attributes](appinfolocalization/attributes-data.dictionary.md)

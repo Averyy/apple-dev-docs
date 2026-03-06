@@ -12,6 +12,13 @@
 object advancedCommerceRefund
 ```
 
+## Properties
+
+- `refundAmount` (advancedCommerceRefundAmount)
+- `refundDate` (advancedCommerceRefundDate)
+- `refundReason` (advancedCommerceRefundReason)
+- `refundType` (advancedCommerceRefundType)
+
 ## See Also
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)

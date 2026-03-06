@@ -29,7 +29,7 @@ If `resignID` gets called with some unknown ID, it should crash immediately as i
 
 ## Parameters
 
-- `id`: The id of an actor managed by this system that has begun its  .
+- `id`: The id of an actor managed by this system that has begun its `deinit`.
 
 
 ---

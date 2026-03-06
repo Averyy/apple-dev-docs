@@ -14,6 +14,11 @@ A mapping between a role assumed by a user in an Apple School Manager organizati
 object RoleLocation
 ```
 
+## Properties
+
+- `locationId` (string): The identifier for the location where the [`User`](user.md) assumes the named role. This may identify a [`Location`](location.md) in the Apple School Manager organization, which you fetch with [`Read a location`](returns-a-specific-location-in-an-apple-school-manager-organization.md). Alternatively, it may identify the [`Organization`](organization.md), which you fetch with [`Read the organization`](returns-organization-infrmation.md).
+- `roleName` (string): The role the [`User`](user.md) assumes at the identified [`Location`](location.md). Possible values for this property are `Student`, `Instructor`, and `Staff`.
+
 ## See Also
 
 - [Read a user](returns-a-specific-user-in-an-apple-school-manager-organization.md)

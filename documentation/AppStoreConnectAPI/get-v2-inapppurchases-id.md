@@ -12,6 +12,28 @@ Get information about a specific in-app purchase.
 
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}`
+
+## Parameters
+
+- `include` ([string])
+- `fields[inAppPurchaseAvailabilities]` ([string])
+- `fields[inAppPurchaseAppStoreReviewScreenshots]` ([string])
+- `fields[inAppPurchaseContents]` ([string])
+- `fields[inAppPurchaseImages]` ([string])
+- `fields[inAppPurchaseLocalizations]` ([string])
+- `fields[inAppPurchaseOfferCodes]` ([string])
+- `fields[inAppPurchasePricePoints]` ([string])
+- `fields[inAppPurchasePriceSchedules]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `fields[promotedPurchases]` ([string])
+- `limit[images]` (integer)
+- `limit[inAppPurchaseLocalizations]` (integer)
+- `limit[offerCodes]` (integer)
+- `limit[pricePoints]` (integer)
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

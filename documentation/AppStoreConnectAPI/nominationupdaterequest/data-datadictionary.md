@@ -18,6 +18,13 @@ object NominationUpdateRequest.Data
 - [object NominationUpdateRequest.Data.Attributes](nominationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object NominationUpdateRequest.Data.Relationships](nominationupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (NominationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `relationships` (NominationUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

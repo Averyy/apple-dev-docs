@@ -33,7 +33,7 @@ A new `Decoder` to pass to `super.init(from:)`.
 
 ## Parameters
 
-- `key`: The key to decode   for.
+- `key`: The key to decode `super` for.
 
 
 ---

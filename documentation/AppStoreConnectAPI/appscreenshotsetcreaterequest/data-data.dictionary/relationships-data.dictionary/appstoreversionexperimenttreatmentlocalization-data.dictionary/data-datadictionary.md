@@ -12,6 +12,11 @@
 object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

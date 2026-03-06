@@ -22,6 +22,11 @@ object PersonalizationDictionary
 - [object PersonalizationDictionary.RequiredPersonalizationInfo](personalizationdictionary/requiredpersonalizationinfo-data.dictionary.md)
   An object that contains the user-entered information for a personalized pass.
 
+## Properties
+
+- `personalizationToken` (string) *(required)*: The personalization token for this request. The server must sign and return the token.
+- `requiredPersonalizationInfo` (PersonalizationDictionary.RequiredPersonalizationInfo) *(required)*: An object that contains the user-entered information for a personalized pass.
+
 ## See Also
 
 - [Return a Personalized Pass](return-a-personalized-pass.md)

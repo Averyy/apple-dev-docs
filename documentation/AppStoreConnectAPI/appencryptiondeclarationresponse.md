@@ -14,6 +14,12 @@ A response that contains a single App Encryption Declarations resource.
 object AppEncryptionDeclarationResponse
 ```
 
+## Properties
+
+- `data` (AppEncryptionDeclaration) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Read App Encryption Declaration Information](get-v1-appencryptiondeclarations-_id_.md)

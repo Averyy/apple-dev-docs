@@ -27,8 +27,8 @@ The values passed as `exponentBitPattern` and `significandBitPattern` are interp
 ## Parameters
 
 - `sign`: The sign of the new value.
-- `exponentBitPattern`: The bit pattern to use for the exponent field of   the new value.
-- `significandBitPattern`: The bit pattern to use for the significand   field of the new value.
+- `exponentBitPattern`: The bit pattern to use for the exponent field of the new value.
+- `significandBitPattern`: The bit pattern to use for the significand field of the new value.
 
 ## See Also
 

@@ -14,6 +14,47 @@ If successful, the HTTP status code is 200 (OK) and the `data` array contains a 
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/storefronts/jp
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "id": "jp",
+            "type": "storefronts",
+            "href": "/v1/storefronts/jp",
+            "attributes": {
+                "defaultLanguageTag": "ja",
+                "name": "Japan",
+                "explicitContentPolicy": "allowed",
+                "supportedLanguageTags": [
+                    "ja",
+                    "en-US"
+                ]
+            }
+        }
+    ]
+}
+
+
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/storefronts/{id}`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `include` ([string]): Additional relationships to include in the fetch.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object Storefronts](storefronts.md)

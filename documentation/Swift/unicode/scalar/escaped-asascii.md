@@ -48,7 +48,7 @@ print(bap.escaped(asASCII: true))
 
 ## Parameters
 
-- `forceASCII`: Pass   if you need the result to use only   ASCII characters; otherwise, pass  .
+- `forceASCII`: Pass `true` if you need the result to use only ASCII characters; otherwise, pass `false`.
 
 ## See Also
 

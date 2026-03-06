@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships.LeaderboardSe
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

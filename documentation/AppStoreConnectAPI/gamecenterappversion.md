@@ -18,6 +18,14 @@ object GameCenterAppVersion
 - [object GameCenterAppVersion.Attributes](gamecenterappversion/attributes-data.dictionary.md)
 - [object GameCenterAppVersion.Relationships](gamecenterappversion/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAppVersion.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterAppVersion.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAppVersionCompatibilityVersionsLinkagesRequest](gamecenterappversioncompatibilityversionslinkagesrequest.md)

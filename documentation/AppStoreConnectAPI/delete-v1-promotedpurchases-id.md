@@ -8,6 +8,14 @@ Remove a promotion for an in-app purchase or auto-renewable subscription from th
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/promotedPurchases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Promote a Purchase](post-v1-promotedpurchases.md)

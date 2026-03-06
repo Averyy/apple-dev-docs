@@ -14,6 +14,13 @@ An error indicating the net amount value does not match the expected value.
 object IncorrectNetAmountError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

@@ -20,6 +20,12 @@ object AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizati
 - [object AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations.Data](appclipdefaultexperience/relationships-data.dictionary/appclipdefaultexperiencelocalizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Default App Clip Experience Localizations resource.
 
+## Properties
+
+- `data` ([AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations.Data]): The ID and type of the related Default App Clip Experience Localizations resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object AppClipDefaultExperience.Relationships.AppClip](appclipdefaultexperience/relationships-data.dictionary/appclip-data.dictionary.md)

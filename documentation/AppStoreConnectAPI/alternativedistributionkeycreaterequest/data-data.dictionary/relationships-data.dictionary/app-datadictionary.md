@@ -20,6 +20,10 @@ object AlternativeDistributionKeyCreateRequest.Data.Relationships.App
 - [object AlternativeDistributionKeyCreateRequest.Data.Relationships.App.Data](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The app that is associated with the alternative distribution key.
 
+## Properties
+
+- `data` (AlternativeDistributionKeyCreateRequest.Data.Relationships.App.Data)
+
 
 ---
 

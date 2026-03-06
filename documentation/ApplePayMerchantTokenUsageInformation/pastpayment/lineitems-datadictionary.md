@@ -11,6 +11,12 @@ The goods or services paid for.
 object PastPayment.LineItems
 ```
 
+## Properties
+
+- `amount` (CurrencyAmount) *(required)*: The line item’s amount.
+- `imageName` (string): The name of an image that represents the item.
+- `label` (string) *(required)*: A short, localized description of the item.
+
 
 ---
 

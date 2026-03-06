@@ -20,6 +20,14 @@ App Store Connect confirms the deletion by responding with the `HTTP/1.1 204 No 
 
 > ❗ **Important**:  Deleting an Xcode Cloud workflow permanently deletes its build history and artifacts. Only delete an Xcode Cloud workflow when you’re confident that you no longer need it and its build history or artifacts. Instead of deleting a workflow, deactivate it to preserve its build history and artifacts. To deactivate a workflow, use the [`Update an Xcode Cloud Workflow`](patch-v1-ciworkflows-_id_.md) endpoint to set the workflow’s `isEnabled` attribute to `false` or deactivate it in the Xcode or App Store Connect. For more information about deactivating a workflow using Xcode or App Store Connect, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud).
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/ciWorkflows/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Workflows resource.
+
 ## See Also
 
 - [Create a Workflow](post-v1-ciworkflows.md)

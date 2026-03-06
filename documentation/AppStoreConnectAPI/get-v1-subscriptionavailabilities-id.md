@@ -16,6 +16,51 @@ Get information about the territory availability for a subscription.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6447589418
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "subscriptionAvailabilities",
+    "id" : "6447589418",
+    "attributes" : {
+      "availableInNewTerritories" : false
+    },
+    "relationships" : {
+      "availableTerritories" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6447589418/relationships/availableTerritories",
+          "related" : "https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6447589418/availableTerritories"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6447589418"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6447589418"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/{id}`
+
+## Parameters
+
+- `fields[subscriptionAvailabilities]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit[availableTerritories]` (integer)
+
 ## See Also
 
 - [List the territory availability of a subscription](get-v1-subscriptionavailabilities-_id_-availableterritories.md)

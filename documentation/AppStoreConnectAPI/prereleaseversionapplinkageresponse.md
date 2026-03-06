@@ -17,6 +17,11 @@ object PrereleaseVersionAppLinkageResponse
 ### Dictionaries
 - [object PrereleaseVersionAppLinkageResponse.Data](prereleaseversionapplinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (PrereleaseVersionAppLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object PrereleaseVersion](prereleaseversion.md)

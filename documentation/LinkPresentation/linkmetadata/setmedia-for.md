@@ -32,7 +32,7 @@ metadata.setMedia(myImage, for: .image)
 ## Parameters
 
 - `media`: The value to use for the media that corresponds to the specified attachment.
-- `attachment`: The kind of attachment to modify, such as  ,  , and  .
+- `attachment`: The kind of attachment to modify, such as `.image`, `.icon`, and `.video`.
 
 
 ---

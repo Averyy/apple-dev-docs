@@ -6,7 +6,7 @@ Combine multiple annotations into a single clustered annotation.
 
 #### Overview
 
-Annotations display coordinate-specific data on a map, typically in the form of markers or images. To declutter annotation-heavy maps, MapKit JS supports . As the user zooms out on a map that contains annotations, MapKit JS groups individual annotations into a  if they collide and if they share the same [`clusteringIdentifier`](annotation/clusteringidentifier.md).
+Annotations display coordinate-specific data on a map, typically in the form of markers or images. To declutter annotation-heavy maps, MapKit JS supports *annotation clustering*. As the user zooms out on a map that contains annotations, MapKit JS groups individual annotations into a *cluster annotation* if they collide and if they share the same [`clusteringIdentifier`](annotation/clusteringidentifier.md).
 
 The cluster annotation’s [`memberAnnotations`](annotation/memberannotations.md) property lists the individual annotations within the cluster. By default, a cluster annotation’s marker displays its member count.
 

@@ -12,6 +12,10 @@
 object ErrorLinks.Associated.Meta
 ```
 
+## Properties
+
+- `source` (string)
+
 
 ---
 

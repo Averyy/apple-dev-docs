@@ -17,6 +17,11 @@ object GameCenterAchievementLocalizationV2.Relationships.Version.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

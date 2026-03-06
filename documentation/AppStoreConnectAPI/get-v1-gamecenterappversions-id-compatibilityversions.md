@@ -8,6 +8,19 @@ Get compatibility version information for a specific app version.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/{id}/compatibilityVersions`
+
+## Parameters
+
+- `fields[appStoreVersions]` ([string])
+- `fields[gameCenterAppVersions]` ([string])
+- `filter[enabled]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[compatibilityVersions]` (integer)
+
 ## See Also
 
 - [Read app versions for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)

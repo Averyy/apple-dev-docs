@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object GameCenterEnabledVersion.Relationships.App.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

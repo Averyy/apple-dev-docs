@@ -14,6 +14,12 @@ A response that contains a single End User License Agreements resource.
 object EndUserLicenseAgreementResponse
 ```
 
+## Properties
+
+- `data` (EndUserLicenseAgreement) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreement](enduserlicenseagreement.md)

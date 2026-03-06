@@ -18,6 +18,10 @@ object ExtensionConfig.Intent.UpdateMediaAffinity
 
 To specify that your service only implements the required methods, provide an empty array for the `opt` property. You may omit the `opt` property if your service implements all of the optional methods.
 
+## Properties
+
+- `opt` ([string]): Optional intent-handling steps that [`updateMediaAffinity`](extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionarykey.md) supports.
+
 ## Relationships
 
 ### Inherits From

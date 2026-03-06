@@ -6,6 +6,23 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/offerCodes`
+
+## Parameters
+
+- `fields[inAppPurchaseOfferCodeCustomCodes]` ([string])
+- `fields[inAppPurchaseOfferCodeOneTimeUseCodes]` ([string])
+- `fields[inAppPurchaseOfferCodes]` ([string])
+- `fields[inAppPurchaseOfferPrices]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[customCodes]` (integer)
+- `limit[oneTimeUseCodes]` (integer)
+- `limit[prices]` (integer)
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

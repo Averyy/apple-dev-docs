@@ -20,6 +20,10 @@ object AndroidToIosAppMappingDetailUpdateRequest
 - [object AndroidToIosAppMappingDetailUpdateRequest.Data](androidtoiosappmappingdetailupdaterequest/data-data.dictionary.md)
   The data structure that represents an Android to iOS app mapping detail update request resource.
 
+## Properties
+
+- `data` (AndroidToIosAppMappingDetailUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetail](androidtoiosappmappingdetail.md)

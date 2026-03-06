@@ -14,6 +14,11 @@ A response that contains a single Build Beta Notifications resource.
 object BuildBetaNotificationResponse
 ```
 
+## Properties
+
+- `data` (BuildBetaNotification) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [Send Notification of an Available Build](post-v1-buildbetanotifications.md)

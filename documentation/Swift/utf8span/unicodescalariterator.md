@@ -57,7 +57,7 @@ printScalarValues(string)
 - [func reset(roundingForwardsFrom: Int)](utf8span/unicodescalariterator/reset(roundingforwardsfrom:).md)
   Reset to the nearest scalar-aligned code unit offset `>= i`.
 - [func reset(toUnchecked: Int)](utf8span/unicodescalariterator/reset(tounchecked:).md)
-  Reset this iterator to `codeUnitOffset`, skipping  safety checks (including bounds checks).
+  Reset this iterator to `codeUnitOffset`, skipping *all* safety checks (including bounds checks).
 - [func skipBack() -> Int](utf8span/unicodescalariterator/skipback.md)
   Move `currentCodeUnitOffset` to the start of the previous scalar, without decoding it.
 - [func skipBack(by: Int) -> Int](utf8span/unicodescalariterator/skipback(by:).md)

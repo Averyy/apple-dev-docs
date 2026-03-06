@@ -12,6 +12,11 @@
 object CiManualPullRequestStartCondition
 ```
 
+## Properties
+
+- `destination` (CiBranchPatterns)
+- `source` (CiBranchPatterns)
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

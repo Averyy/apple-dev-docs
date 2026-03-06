@@ -23,7 +23,7 @@ init<W, C1, C2, C3, C4, C5, C6, C7, NewCapture>(_ component: some RegexComponent
 ## Parameters
 
 - `component`: The regex component to capture.
-- `transform`: A closure that takes the substring matched by    and returns a new value to capture. If    throws an error, matching is abandoned and the error is returned   to the caller.
+- `transform`: A closure that takes the substring matched by `component` and returns a new value to capture. If `transform` throws an error, matching is abandoned and the error is returned to the caller.
 
 
 ---

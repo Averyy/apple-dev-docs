@@ -26,6 +26,11 @@ You receive a structure of this type in response to a call to the [`Get Previous
 - [object SubmissionListResponse.Meta](submissionlistresponse/meta-data.dictionary.md)
   An empty object.
 
+## Properties
+
+- `data` ([SubmissionListResponse.Data]): An array of objects, each of which describes one of your team’s previous submissions.
+- `meta` (SubmissionListResponse.Meta): An empty object that you can ignore.
+
 ## See Also
 
 - [Get Previous Submissions](get-previous-submissions.md)

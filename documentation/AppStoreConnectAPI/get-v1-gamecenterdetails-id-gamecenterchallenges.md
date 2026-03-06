@@ -12,6 +12,24 @@ Get challenge information for a specific Game Center detail.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/gameCenterChallenges`
+
+## Parameters
+
+- `fields[gameCenterChallengeVersions]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[archived]` ([string])
+- `filter[id]` ([string])
+- `filter[referenceName]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[versions]` (integer)
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

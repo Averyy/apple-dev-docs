@@ -14,6 +14,10 @@ Information about the values of the in-app purchase offer code one-time use code
 object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/createdbyactor-data.dictionary.md)

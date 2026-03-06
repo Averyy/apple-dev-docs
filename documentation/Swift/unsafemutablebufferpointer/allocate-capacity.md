@@ -41,7 +41,7 @@ buffer.deallocate()
 
 ## Parameters
 
-- `count`: The amount of memory to allocate, counted in instances   of  .
+- `count`: The amount of memory to allocate, counted in instances of `Element`.
 
 
 ---

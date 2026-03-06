@@ -26,9 +26,9 @@ A [`Duration.TimeFormatStyle.Pattern`](duration/timeformatstyle/pattern-swift.st
 
 ## Parameters
 
-- `padMinuteToLength`: Padding for the minute field. For example, setting this value to   formats five minutes as   in the   locale.
-- `fractionalSecondsLength`: The length of the fractional seconds. For example, setting this value to   formats five minutes as   in the   locale.
-- `roundFractionalSeconds`: The rule to use for rounding the seconds value, given the remaining fractional seconds value. Use one of the cases from the   enumeration.
+- `padMinuteToLength`: Padding for the minute field. For example, setting this value to `2` formats five minutes as `05:00` in the `en_US` locale.
+- `fractionalSecondsLength`: The length of the fractional seconds. For example, setting this value to `2` formats five minutes as `5:00.00` in the `en_US` locale.
+- `roundFractionalSeconds`: The rule to use for rounding the seconds value, given the remaining fractional seconds value. Use one of the cases from the [`FloatingPointRoundingRule`](floatingpointroundingrule.md) enumeration.
 
 ## See Also
 

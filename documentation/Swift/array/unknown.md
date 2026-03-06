@@ -1,9 +1,7 @@
-# !=(_:_:)
+# +=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
-
-Returns a Boolean value indicating whether two values are not equal.
 
 **Availability**:
 - iOS 8.0+
@@ -17,38 +15,26 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func += (lhs: inout Array<Element>, rhs: Array<Element>)
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
-
-## Parameters
-
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
 
 ## See Also
 
-- [static func == (Array<Element>, Array<Element>) -> Bool](array/==(_:_:).md)
-  Returns a Boolean value indicating whether two arrays contain the same elements in the same order.
-- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](array/elementsequal(_:).md)
-  Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
-- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](array/elementsequal(_:by:).md)
-  Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
-- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](array/starts(with:).md)
-  Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
-- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](array/starts(with:by:).md)
-  Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](array/lexicographicallyprecedes(_:).md)
-  Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the less-than operator (`<`) to compare elements.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool](array/lexicographicallyprecedes(_:by:).md)
-  Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the given predicate to compare elements.
+- [func append<S>(contentsOf: S)](array/append(contentsof:).md)
+  Adds the elements of a sequence to the end of the array.
+- [func append<S>(contentsOf: S)](array/append(contentsof:)-9foli.md)
+  Adds the elements of a sequence or collection to the end of this collection.
+- [static func + <Other>(Other, Self) -> Self](array/+(_:_:)-6h58k.md)
+  Creates a new collection by concatenating the elements of a sequence and a collection.
+- [static func + <Other>(Self, Other) -> Self](array/+(_:_:)-n33n.md)
+  Creates a new collection by concatenating the elements of a collection and a sequence.
+- [static func + (Array<Element>, Array<Element>) -> Array<Element>](array/+(_:_:).md)
+- [static func + <Other>(Self, Other) -> Self](array/+(_:_:)-9fm5l.md)
+  Creates a new collection by concatenating the elements of two collections.
+- [static func += <Other>(inout Self, Other)](array/+=(_:_:)-676ib.md)
+  Appends the elements of a sequence to a range-replaceable collection.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/+=(_:_:))*

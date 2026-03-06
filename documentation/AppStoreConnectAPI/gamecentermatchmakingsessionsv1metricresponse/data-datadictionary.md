@@ -19,6 +19,11 @@ object GameCenterMatchmakingSessionsV1MetricResponse.Data
 ### Objects
 - [object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints](gamecentermatchmakingsessionsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
 
+## Properties
+
+- `dataPoints` (GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints)
+- `granularity` (string): The granularity of the data using the ISO 8601 format for durations.
+
 
 ---
 

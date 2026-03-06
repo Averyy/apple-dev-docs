@@ -12,6 +12,11 @@
 object HttpHeader
 ```
 
+## Properties
+
+- `name` (string)
+- `value` (string)
+
 
 ---
 

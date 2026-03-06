@@ -16,6 +16,10 @@ Reserve an image asset to appear in the App Store, representing a subscription.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionImages`
+
 ## See Also
 
 - [Read subscription image information](get-v1-subscriptionimages-_id_.md)

@@ -33,6 +33,15 @@ The system uses the default messages if your server response fails for any reaso
 
 To present promotional-offer or switch-plan retention messages instead of default messages, implement the `Get Retention Message` endpoint to respond with those message types in real time. For more information, see [`Setting up your Get Retention Message endpoint`](setting-up-retention-messaging-endpoint.md).
 
+## Endpoint
+
+`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
+
+## Parameters
+
+- `locale` (locale) *(required)*: The locale for the default configuration.
+- `productId` (productId) *(required)*: The product identifier for the default configuration.
+
 ## Request Body
 
 The request body that includes the message identifier to configure as the default message.

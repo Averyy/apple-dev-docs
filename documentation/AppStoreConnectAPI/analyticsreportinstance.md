@@ -26,6 +26,14 @@ To learn more about the response that includes this analytics report instance ob
 ### Dictionaries
 - [object AnalyticsReportInstance.Relationships](analyticsreportinstance/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AnalyticsReportInstance.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AnalyticsReportInstance.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

@@ -14,6 +14,12 @@ A request for a media playback queue.
 object PlayMediaRequest
 ```
 
+## Properties
+
+- `constraints` (Constraints) *(required)*: Limitations on the type and quantity of content the client can receive.
+- `userActivity` (UserActivity) *(required)*: A description of the playback queue. Your service provides the [`UserActivity`](useractivity.md) after it successfully handles a play media intent.
+- `version` (string) *(required)*: The version of the `SiriKitMediaAPI` library the client uses.
+
 
 ---
 

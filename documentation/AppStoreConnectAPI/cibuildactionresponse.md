@@ -14,6 +14,12 @@ A response that contains a single Build Actions resource.
 object CiBuildActionResponse
 ```
 
+## Properties
+
+- `data` (CiBuildAction) *(required)*: The resource data.
+- `included` ([CiBuildRun]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object CiBuildAction](cibuildaction.md)

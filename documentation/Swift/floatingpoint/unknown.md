@@ -24,7 +24,7 @@ static func /= (lhs: inout Self, rhs: Self)
 ## Parameters
 
 - `lhs`: The value to divide.
-- `rhs`: The value to divide   by.
+- `rhs`: The value to divide `lhs` by.
 
 
 ---

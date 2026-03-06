@@ -22,6 +22,11 @@ object LibraryPlaylists.Relationships
 - [object LibraryPlaylists.Relationships.LibraryPlaylistsTracksRelationship](libraryplaylists/relationships-data.dictionary/libraryplayliststracksrelationship.md)
   A relationship from the playlist to its tracks.
 
+## Properties
+
+- `catalog` (LibraryPlaylists.Relationships.LibraryPlaylistsCatalogRelationship): The corresponding playlist in the Apple Music catalog the playlist is associated with. Fetch limits: None (associated with at most one catalog playlist).
+- `tracks` (LibraryPlaylists.Relationships.LibraryPlaylistsTracksRelationship): The library songs and library music videos included in the playlist. By default, `tracks` not included. Only available when fetching a single library playlist resource by ID. Fetch limits: 100 default, 100 maximum.
+
 ## See Also
 
 - [object LibraryPlaylists.Attributes](libraryplaylists/attributes-data.dictionary.md)

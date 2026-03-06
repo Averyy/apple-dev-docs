@@ -14,6 +14,11 @@ The attributes that describe a Beta App Clip Invocation Localization Inline Crea
 object BetaAppClipInvocationLocalizationInlineCreate.Attributes
 ```
 
+## Properties
+
+- `locale` (string) *(required)*: The specified locale. Refer to [`BetaAppLocalizationCreateRequest.Data.Attributes`](betaapplocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md) for possible values.
+- `title` (string) *(required)*: The title that appears on the App Clip card for an App Clip experience you configure for testers who launch the App Clip using the TestFlight app.
+
 ## See Also
 
 - [object BetaAppClipInvocationLocalizationInlineCreate.Relationships](betaappclipinvocationlocalizationinlinecreate/relationships-data.dictionary.md)

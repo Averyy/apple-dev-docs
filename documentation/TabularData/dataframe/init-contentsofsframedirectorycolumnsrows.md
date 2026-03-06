@@ -26,9 +26,9 @@ init(contentsOfSFrameDirectory url: URL, columns: [String]? = nil, rows: Range<I
 
 ## Parameters
 
-- `url`: A URL to an   directory.
-- `columns`: An array of column names; Set to   to use every column in the  .
-- `rows`: A range of indices; Set to   to use every row in the  .
+- `url`: A URL to an `SFrame` directory.
+- `columns`: An array of column names; Set to `nil` to use every column in the `SFrame`.
+- `rows`: A range of indices; Set to `nil` to use every row in the `SFrame`.
 
 ## See Also
 

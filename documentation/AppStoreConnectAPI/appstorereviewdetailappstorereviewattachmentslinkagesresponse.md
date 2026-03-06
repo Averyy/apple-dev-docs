@@ -17,6 +17,12 @@ object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse
 ### Dictionaries
 - [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse.Data](appstorereviewdetailappstorereviewattachmentslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreReviewDetail](appstorereviewdetail.md)

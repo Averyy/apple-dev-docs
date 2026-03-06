@@ -17,6 +17,10 @@ object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLoca
 ### Objects
 - [object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data)
+
 ## See Also
 
 - [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionLocalization](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)

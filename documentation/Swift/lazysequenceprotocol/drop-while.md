@@ -22,7 +22,7 @@ func drop(while predicate: @escaping (Self.Elements.Element) -> Bool) -> LazyDro
 
 ## Parameters
 
-- `predicate`: A closure that takes an element of the sequence as   its argument and returns   if the element should be skipped or    otherwise. Once   returns   it will not be   called again.
+- `predicate`: A closure that takes an element of the sequence as its argument and returns `true` if the element should be skipped or `false` otherwise. Once `predicate` returns `false` it will not be called again.
 
 
 ---

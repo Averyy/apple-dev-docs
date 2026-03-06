@@ -8,6 +8,14 @@ Get the app information associated with a specific beta app localization.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaAppLocalizations/{id}/app`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List Beta App Localizations](get-v1-betaapplocalizations.md)

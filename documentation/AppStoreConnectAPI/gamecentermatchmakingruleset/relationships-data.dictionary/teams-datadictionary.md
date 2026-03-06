@@ -20,6 +20,12 @@ object GameCenterMatchmakingRuleSet.Relationships.Teams
 - [object GameCenterMatchmakingRuleSet.Relationships.Teams.Data](gamecentermatchmakingruleset/relationships-data.dictionary/teams-data.dictionary/data-data.dictionary.md)
   The data structure of a matchmaking team.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingRuleSet.Relationships.Teams.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSet.Relationships.MatchmakingQueues](gamecentermatchmakingruleset/relationships-data.dictionary/matchmakingqueues-data.dictionary.md)

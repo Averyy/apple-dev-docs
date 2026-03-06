@@ -14,6 +14,8 @@ Use the `needsMoreThreshold` attribute to specify when the needs more event is d
 
 ##### Values for Needsmorethreshold
 
+- **Float**: The number of screen lengths of information left before the needs more event is dispatched.
+
 ##### Elements That Use Needsmorethreshold
 
 - [`grid`](grid.md)

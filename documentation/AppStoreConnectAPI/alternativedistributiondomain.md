@@ -20,6 +20,13 @@ object AlternativeDistributionDomain
 - [object AlternativeDistributionDomain.Attributes](alternativedistributiondomain/attributes-data.dictionary.md)
   Attributes that describe an alternative distribution domain resource.
 
+## Properties
+
+- `attributes` (AlternativeDistributionDomain.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionDomainCreateRequest](alternativedistributiondomaincreaterequest.md)

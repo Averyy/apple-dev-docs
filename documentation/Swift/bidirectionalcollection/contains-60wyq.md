@@ -26,7 +26,7 @@ func contains(@RegexComponentBuilder _ content: () -> some RegexComponent) -> Bo
 
 ## Parameters
 
-- `content`: A closure that returns a regex to search for within   this collection.
+- `content`: A closure that returns a regex to search for within this collection.
 
 
 ---

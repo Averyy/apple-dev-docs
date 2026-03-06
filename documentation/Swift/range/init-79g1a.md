@@ -26,7 +26,7 @@ An equivalent range must be representable as an instance of Range. For example, 
 
 ## Parameters
 
-- `other`: A closed range to convert to a   instance.
+- `other`: A closed range to convert to a `Range` instance.
 
 
 ---

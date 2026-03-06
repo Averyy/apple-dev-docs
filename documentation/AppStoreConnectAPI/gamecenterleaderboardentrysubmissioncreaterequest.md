@@ -20,6 +20,10 @@ object GameCenterLeaderboardEntrySubmissionCreateRequest
 - [object GameCenterLeaderboardEntrySubmissionCreateRequest.Data](gamecenterleaderboardentrysubmissioncreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (GameCenterLeaderboardEntrySubmissionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardEntrySubmission](gamecenterleaderboardentrysubmission.md)

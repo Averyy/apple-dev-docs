@@ -14,6 +14,13 @@ A response that contains a list of Game Center challenge resources.
 object GameCenterChallengesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterChallenge]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterChallenge](gamecenterchallenge.md)

@@ -14,6 +14,10 @@ The object you provide to a performance test request that contains the test’s 
 object PerformanceTestRequest
 ```
 
+## Properties
+
+- `originalTransactionId` (originalTransactionId) *(required)*: The original transaction identifier of an In-App Purchase to use as the purchase for this test.
+
 ## See Also
 
 - [object PerformanceTestConfig](performancetestconfig.md)

@@ -20,6 +20,10 @@ object AgeRatingDeclarationUpdateRequest
 - [object AgeRatingDeclarationUpdateRequest.Data](ageratingdeclarationupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AgeRatingDeclarationUpdateRequest.Data) *(required)*: The data element of the request body.
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

@@ -19,6 +19,14 @@ Update the achievements relationship for a specific Game Center detail.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/gameCenterAchievementsV2`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Enable Game Center for an app](post-v1-gamecenterdetails.md)

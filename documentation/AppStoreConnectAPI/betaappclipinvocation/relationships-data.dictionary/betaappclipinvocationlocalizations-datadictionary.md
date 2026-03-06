@@ -20,6 +20,11 @@ object BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations
 - [object BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations.Data](betaappclipinvocation/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Beta App Clip Invocation Localizations resource.
 
+## Properties
+
+- `data` ([BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations.Data]): The ID and type of the related Beta App Clip Invocation Localizations resource.
+- `meta` (PagingInformation): The paging information.
+
 
 ---
 

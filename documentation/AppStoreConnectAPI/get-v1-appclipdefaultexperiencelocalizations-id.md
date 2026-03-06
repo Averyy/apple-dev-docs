@@ -8,6 +8,16 @@ Get localized metadata that appears on the App Clip card of a specific default A
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipDefaultExperienceLocalizations/{id}`
+
+## Parameters
+
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experience Localizations resource returned by the response.
+- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each Default App Clip Experience Localizations resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+
 ## See Also
 
 - [Read App Clip Card Image Information for a Localized Default App Clip Experience](get-v1-appclipdefaultexperiencelocalizations-_id_-appclipheaderimage.md)

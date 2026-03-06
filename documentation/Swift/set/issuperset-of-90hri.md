@@ -26,7 +26,7 @@ func isSuperset<S>(of possibleSubset: S) -> Bool where Element == S.Element, S :
 
 #### Discussion
 
-Set  is a superset of another set  if every member of  is also a member of .
+Set *A* is a superset of another set *B* if every member of *B* is also a member of *A*.
 
 ```swift
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
@@ -37,7 +37,7 @@ print(employees.isSuperset(of: attendees))
 
 ## Parameters
 
-- `possibleSubset`: A sequence of elements.   must   be finite.
+- `possibleSubset`: A sequence of elements. `possibleSubset` must be finite.
 
 ## See Also
 

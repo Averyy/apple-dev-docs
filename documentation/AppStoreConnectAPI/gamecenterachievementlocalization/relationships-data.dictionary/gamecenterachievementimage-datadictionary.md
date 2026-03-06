@@ -17,6 +17,11 @@ object GameCenterAchievementLocalization.Relationships.GameCenterAchievementImag
 ### Objects
 - [object GameCenterAchievementLocalization.Relationships.GameCenterAchievementImage.Data](gamecenterachievementlocalization/relationships-data.dictionary/gamecenterachievementimage-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementLocalization.Relationships.GameCenterAchievementImage.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object GameCenterAchievementLocalization.Relationships.GameCenterAchievement](gamecenterachievementlocalization/relationships-data.dictionary/gamecenterachievement-data.dictionary.md)

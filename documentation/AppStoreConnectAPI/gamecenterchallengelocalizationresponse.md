@@ -14,6 +14,12 @@ A response that contains a single challenge resource.
 object GameCenterChallengeLocalizationResponse
 ```
 
+## Properties
+
+- `data` (GameCenterChallengeLocalization) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengeLocalization](gamecenterchallengelocalization.md)

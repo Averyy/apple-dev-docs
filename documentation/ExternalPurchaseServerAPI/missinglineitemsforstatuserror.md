@@ -14,6 +14,12 @@ An error indicating the external purchase ID has the status line item but is mis
 object MissingLineItemsForStatusError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

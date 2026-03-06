@@ -21,6 +21,13 @@ object GameCenterChallengeCreateRequest.Data.Relationships
 - [object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2](gamecenterchallengecreaterequest/data-data.dictionary/relationships-data.dictionary/leaderboardv2-data.dictionary.md)
   The data that describes the leaderboard of the Game Center challenge.
 
+## Properties
+
+- `gameCenterDetail` (GameCenterChallengeCreateRequest.Data.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterChallengeCreateRequest.Data.Relationships.GameCenterGroup)
+- `leaderboard` (GameCenterChallengeCreateRequest.Data.Relationships.Leaderboard)
+- `leaderboardV2` (GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2)
+
 
 ---
 

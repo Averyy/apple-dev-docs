@@ -17,6 +17,11 @@ object BetaGroup.Relationships.BetaRecruitmentCriteria
 ### Dictionaries
 - [object BetaGroup.Relationships.BetaRecruitmentCriteria.Data](betagroup/relationships-data.dictionary/betarecruitmentcriteria-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaGroup.Relationships.BetaRecruitmentCriteria.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

@@ -14,6 +14,13 @@ A response body that contains information about a life-cycle event for a merchan
 object MerchantTokenEventResponse
 ```
 
+## Properties
+
+- `eventType` (string) *(required)*: A field that indicates the type of event for this notification.
+- `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+- `merchantTokenMetadata` (MerchantTokenMetadata): Data about the card, including its expiration date and suffix.
+- `reason` (string) *(required)*: A string that indicates who originated the token event,  either the user or the card issuer.
+
 ## See Also
 
 - [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)

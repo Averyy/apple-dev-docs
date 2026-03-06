@@ -19,11 +19,11 @@ SwiftUI is cross-platform and provides many features unavailable in WatchKit, su
 
 This technote uses the following terminology to refer a watchOS app with different characteristics:
 
-- A  app relies on its companion iOS app to function.
-- An  app works when the paired iPhone isn’t nearby, or when its companion iOS app isn’t installed. It may or may not have a companion iOS app.
-- A  app has a watchOS app target and a WatchKit extension target for its core functionality.
-- A  app has only a watchOS app target for its core functionality.
-- A  app doesn’t have a companion iOS app.
+- A **dependent** app relies on its companion iOS app to function.
+- An **independent** app works when the paired iPhone isn’t nearby, or when its companion iOS app isn’t installed. It may or may not have a companion iOS app.
+- A **dual-target** app has a watchOS app target and a WatchKit extension target for its core functionality.
+- A **single-target** app has only a watchOS app target for its core functionality.
+- A **watch-only** app doesn’t have a companion iOS app.
 
 > **Note**: Both single-target and dual-target apps can have other targets. For example, you can add targets to implement widgets or app intents for a single-target or dual-target app.
 
@@ -114,7 +114,7 @@ You now have a project that has an independent watchOS app with a companion iOS 
 
 #### Revision History
 
--  First published.
+- **2023-11-07** First published.
 
 ## See Also
 

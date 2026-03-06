@@ -48,7 +48,7 @@ class Image {
 
 ## Parameters
 
-- `desired`: A value of   that we will attempt to store   if the lazy reference is currently nil.
+- `desired`: A value of `Instance` that we will attempt to store if the lazy reference is currently nil.
 
 
 ---

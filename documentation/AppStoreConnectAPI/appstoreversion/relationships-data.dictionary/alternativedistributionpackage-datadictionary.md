@@ -17,6 +17,11 @@ object AppStoreVersion.Relationships.AlternativeDistributionPackage
 ### Objects
 - [object AppStoreVersion.Relationships.AlternativeDistributionPackage.Data](appstoreversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersion.Relationships.AlternativeDistributionPackage.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppStoreVersion.Relationships.AgeRatingDeclaration](appstoreversion/relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)

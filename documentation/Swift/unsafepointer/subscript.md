@@ -26,7 +26,7 @@ For a pointer `p`, the memory at `p + i` must be initialized.
 
 ## Parameters
 
-- `i`: The offset from this pointer at which to access an   instance, measured in strides of the pointer’s   type.
+- `i`: The offset from this pointer at which to access an instance, measured in strides of the pointer’s `Pointee` type.
 
 
 ---

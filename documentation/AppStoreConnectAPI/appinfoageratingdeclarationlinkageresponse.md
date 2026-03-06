@@ -17,6 +17,11 @@ object AppInfoAgeRatingDeclarationLinkageResponse
 ### Dictionaries
 - [object AppInfoAgeRatingDeclarationLinkageResponse.Data](appinfoageratingdeclarationlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppInfoAgeRatingDeclarationLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

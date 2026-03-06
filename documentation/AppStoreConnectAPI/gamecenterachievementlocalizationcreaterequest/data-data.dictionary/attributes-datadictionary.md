@@ -12,6 +12,13 @@
 object GameCenterAchievementLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `afterEarnedDescription` (string) *(required)*
+- `beforeEarnedDescription` (string) *(required)*
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -17,6 +17,12 @@ object AppStoreVersionAppStoreVersionLocalizationsLinkagesResponse
 ### Dictionaries
 - [object AppStoreVersionAppStoreVersionLocalizationsLinkagesResponse.Data](appstoreversionappstoreversionlocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionAppStoreVersionLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

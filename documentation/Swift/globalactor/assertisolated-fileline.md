@@ -33,8 +33,8 @@ This function’s effect varies depending on the build flag used:
 ## Parameters
 
 - `message`: The message to print if the assertion fails.
-- `file`: The file name to print if the assertion fails. The default is   where this method was called.
-- `line`: The line number to print if the assertion fails The default is   where this method was called.
+- `file`: The file name to print if the assertion fails. The default is where this method was called.
+- `line`: The line number to print if the assertion fails The default is where this method was called.
 
 
 ---

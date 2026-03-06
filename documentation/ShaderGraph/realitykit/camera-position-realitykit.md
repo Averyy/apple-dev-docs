@@ -17,6 +17,8 @@ The position of the camera in the scene.
 
 #### Parameter Description
 
+- **`Space`**: The space that establishes the camera’s position. This parameter can be equal to `world`, `tangent`, `object`, or `model`. The default value is `world`.
+
 ## See Also
 
 - [Unlit Surface (RealityKit)](realitykit/unlit-surface-(realitykit).md)

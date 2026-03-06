@@ -20,6 +20,10 @@ object BundleIdCapabilityUpdateRequest
 - [object BundleIdCapabilityUpdateRequest.Data](bundleidcapabilityupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BundleIdCapabilityUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

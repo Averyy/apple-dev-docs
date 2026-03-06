@@ -32,16 +32,16 @@ If the Archives organizer offers to distribute your archive’s built product or
 
 #### Revision History
 
--  Made minor editorial changes.
--  Republished as TN3109 with significant editorial changes.
--  Updated for Xcode 7.
--  Updated for Xcode 7.
--  Made editorial changes.
--  Updated for Xcode 6.
--  Fixed typos.
--  Updated the “Unexpected Save Built Products and Export as Xcode Archive options in the Archives Organizer when attempting to distribute my archive” section.
--  Added information on how to resolve the Archives Organizer’s “Save Built Products” and “Export as Xcode Archive” issue.
--  First published as TN2215.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-08** Republished as TN3109 with significant editorial changes.
+- **2015-10-15** Updated for Xcode 7.
+- **2015-10-14** Updated for Xcode 7.
+- **2015-08-18** Made editorial changes.
+- **2015-03-27** Updated for Xcode 6.
+- **2014-07-17** Fixed typos.
+- **2014-03-17** Updated the “Unexpected Save Built Products and Export as Xcode Archive options in the Archives Organizer when attempting to distribute my archive” section.
+- **2012-06-28** Added information on how to resolve the Archives Organizer’s “Save Built Products” and “Export as Xcode Archive” issue.
+- **2011-09-12** First published as TN2215.
 
 ## See Also
 

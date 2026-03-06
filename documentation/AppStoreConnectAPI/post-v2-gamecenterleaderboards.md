@@ -18,6 +18,10 @@ Create a Game Center leaderboard.
 - 422:
 - 429:
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboards`
+
 ## See Also
 
 - [Modify a Game Center leaderboard](patch-v2-gamecenterleaderboards-_id_.md)

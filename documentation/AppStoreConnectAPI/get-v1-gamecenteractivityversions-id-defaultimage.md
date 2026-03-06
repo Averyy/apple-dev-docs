@@ -8,6 +8,14 @@ Get details about the default image for a specific Game Center activity version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersions/{id}/defaultImage`
+
+## Parameters
+
+- `fields[gameCenterActivityImages]` ([string])
+
 ## See Also
 
 - [Read the versions for an activity](get-v1-gamecenteractivities-_id_-versions.md)

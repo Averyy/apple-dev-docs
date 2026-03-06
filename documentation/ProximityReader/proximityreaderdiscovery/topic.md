@@ -23,7 +23,7 @@ enum Topic
 - [case payment(ProximityReaderDiscovery.Topic.Payment)](proximityreaderdiscovery/topic/payment(_:).md)
   A topic related to accepting payments.
 - [ProximityReaderDiscovery.Topic.Payment](proximityreaderdiscovery/topic/payment.md)
-  The subtopics that show merchants how to accept different types of payments with  on iPhone.
+  The subtopics that show merchants how to accept different types of payments with *Tap to Pay* on iPhone.
 
 ## Relationships
 

@@ -14,6 +14,12 @@ Information about errors that the API returns in the response body whenever an A
 object ErrorResponse
 ```
 
+## Properties
+
+- `errorMessage` (string) *(required)*: A description of the error.
+- `statusCode` (integer) *(required)*: The HTTP status code.
+- `subStatusCode` (integer) *(required)*: A specific sub-status code the system provides to give more context on the type of error.
+
 
 ---
 

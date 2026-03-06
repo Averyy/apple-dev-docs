@@ -8,6 +8,21 @@ List all merchant Ids for your team.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/merchantIds`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[merchantIds]` ([string])
+- `filter[identifier]` ([string])
+- `filter[name]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[certificates]` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)

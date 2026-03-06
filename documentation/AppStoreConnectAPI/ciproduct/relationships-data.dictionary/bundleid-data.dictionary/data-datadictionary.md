@@ -14,6 +14,11 @@ The type and ID of a related Bundle IDs resource.
 object CiProduct.Relationships.BundleId.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Bundle IDs resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

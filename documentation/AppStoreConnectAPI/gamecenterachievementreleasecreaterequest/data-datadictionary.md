@@ -17,6 +17,11 @@ object GameCenterAchievementReleaseCreateRequest.Data
 ### Objects
 - [object GameCenterAchievementReleaseCreateRequest.Data.Relationships](gamecenterachievementreleasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (GameCenterAchievementReleaseCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

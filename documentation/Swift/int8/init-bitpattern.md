@@ -26,7 +26,7 @@ This initializer does not perform any range or overflow checking. The resulting 
 
 ## Parameters
 
-- `x`: A value to use as the source of the new instance’s binary   representation.
+- `x`: A value to use as the source of the new instance’s binary representation.
 
 
 ---

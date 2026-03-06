@@ -14,6 +14,10 @@ Attributes that describe an alternative distribution package resource.
 object AlternativeDistributionPackage.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (Checksums)
+
 
 ---
 

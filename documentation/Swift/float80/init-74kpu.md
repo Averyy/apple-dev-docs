@@ -20,7 +20,7 @@ The string passed as `text` can represent a real number in decimal or hexadecima
 
 The `text` string consists of an optional plus or minus sign character (`+` or `-`) followed by one of the following:
 
-- A  contains a significand consisting of one or more decimal digits that may include a decimal point: ```swift
+- A *decimal string* contains a significand consisting of one or more decimal digits that may include a decimal point: ```swift
 let c = Float80("-1.0")
 // c == -1.0
 
@@ -30,7 +30,7 @@ let d = Float80("28.375")
 let e = Float80("2837.5e-2")
 // e == 28.375
 ```
-- A  contains a significand consisting of `0X` or `0x` followed by one or more hexadecimal digits that may include a decimal point. ```swift
+- A *hexadecimal string* contains a significand consisting of `0X` or `0x` followed by one or more hexadecimal digits that may include a decimal point. ```swift
 let f = Float80("0x1c.6")
 // f == 28.375
 ``` A hexadecimal string may also include an exponent indicating the power of 2 by which the significand should be multiplied. If included, the exponent is separated by a single character, `p` or `P`, and consists of an optional plus or minus sign character and a sequence of decimal digits. ```swift
@@ -44,7 +44,7 @@ let i = Float80("inf")
 let j = Float80("-Infinity")
 // j == -Float80.infinity
 ```
-- An input string of `"nan"` (case insensitive) is converted into a  value: ```swift
+- An input string of `"nan"` (case insensitive) is converted into a *NaN* value: ```swift
 let n = Float80("-nan")
 // n?.isNaN == true
 // n?.sign == .minus
@@ -84,7 +84,7 @@ A decimal or hexadecimal string is converted to a `Float80` instance using the I
 
 ## Parameters
 
-- `text`: An input string to convert to a   instance.
+- `text`: An input string to convert to a `Float80?` instance.
 
 
 ---

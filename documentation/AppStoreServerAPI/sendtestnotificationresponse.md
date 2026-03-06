@@ -26,6 +26,10 @@ For more information about notifications, see [`App Store Server Notifications`]
 - [type testNotificationToken](testnotificationtoken.md)
   A unique identifier for a notification test that the App Store server sends to your server.
 
+## Properties
+
+- `testNotificationToken` (testNotificationToken): The test notification token that uniquely identifies the notification test that App Store Server Notifications sends to your server.
+
 ## See Also
 
 - [Request a Test Notification](request-a-test-notification.md)

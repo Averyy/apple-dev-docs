@@ -12,6 +12,11 @@
 object WebhookDeliveryCreateRequest.Data.Relationships.Template.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

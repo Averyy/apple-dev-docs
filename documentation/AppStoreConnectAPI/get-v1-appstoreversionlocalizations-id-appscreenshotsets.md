@@ -8,6 +8,24 @@ List all screenshot sets for a specific localization.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/{id}/appScreenshotSets`
+
+## Parameters
+
+- `fields[appScreenshotSets]` ([string])
+- `fields[appScreenshots]` ([string])
+- `filter[screenshotDisplayType]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appScreenshots]` (integer)
+- `filter[appStoreVersionExperimentTreatmentLocalization]` ([string])
+- `filter[appCustomProductPageLocalization]` ([string])
+- `fields[appCustomProductPageLocalizations]` ([string])
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
+
 ## See Also
 
 - [List All App Preview Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)

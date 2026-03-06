@@ -12,6 +12,12 @@
 object InAppPurchaseSubmissionResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseSubmission) *(required)*
+- `included` ([InAppPurchaseV2])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseSubmissionCreateRequest](inapppurchasesubmissioncreaterequest.md)

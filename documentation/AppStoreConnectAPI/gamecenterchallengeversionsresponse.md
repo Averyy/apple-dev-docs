@@ -14,6 +14,13 @@ A response that contains multiple challenge version  resources.
 object GameCenterChallengeVersionsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterChallengeVersion]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)

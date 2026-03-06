@@ -20,6 +20,10 @@ object BuildUploadFileUpdateRequest
 - [object BuildUploadFileUpdateRequest.Data](builduploadfileupdaterequest/data-data.dictionary.md)
   The request body you use to update a build upload resource.
 
+## Properties
+
+- `data` (BuildUploadFileUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object BuildUpload](buildupload.md)

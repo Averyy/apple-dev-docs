@@ -14,6 +14,11 @@ A response that contains a single activity resource.
 object GameCenterActivityImageResponse
 ```
 
+## Properties
+
+- `data` (GameCenterActivityImage) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityImage](gamecenteractivityimage.md)

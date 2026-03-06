@@ -121,7 +121,10 @@ myContainer.registerForNotifications();
 
 ## Parameters
 
-- `subscriptions`: Possible values are:
+- `subscriptions`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.Subscription`](cloudkit.subscription.md) | A subscription in the database to save. |
+| `CloudKit.Subscription[]` | An array of subscriptions to save. |
 
 ## See Also
 

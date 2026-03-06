@@ -20,6 +20,10 @@ object BetaAppReviewSubmissionCreateRequest.Data.Relationships
 - [object BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build](betaappreviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `build` (BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build) *(required)*
+
 
 ---
 

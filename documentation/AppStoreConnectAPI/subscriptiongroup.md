@@ -18,6 +18,14 @@ object SubscriptionGroup
 - [object SubscriptionGroup.Attributes](subscriptiongroup/attributes-data.dictionary.md)
 - [object SubscriptionGroup.Relationships](subscriptiongroup/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGroup.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionGroup.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupResponse](subscriptiongroupresponse.md)

@@ -14,6 +14,13 @@ A response that contains a list of territory age-rating resources.
 object TerritoryAgeRatingsResponse
 ```
 
+## Properties
+
+- `data` ([TerritoryAgeRating]) *(required)*
+- `included` ([Territory])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

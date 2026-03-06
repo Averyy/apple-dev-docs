@@ -18,6 +18,10 @@ object PlayMediaMediaItemResolutionResult.Unsupported
 
 If you can’t find the media item the user specifies, don’t provide a reason. When the client receives an `Unsupported` object without a reason, it provides a generic failure message to the user.
 
+## Properties
+
+- `reason` (PlayMediaMediaItemUnsupportedReason): The reason your service can’t play the requested media item.
+
 ## See Also
 
 - [object PlayMediaMediaItemResolutionResult.Success](playmediamediaitemresolutionresult/success-data.dictionary.md)

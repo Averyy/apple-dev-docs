@@ -25,7 +25,7 @@ var lazy: LazySequence<Self> { get }
 - [func forEach((Self.Element) throws -> Void) rethrows](dictionary/foreach(_:).md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
 - [func enumerated() -> EnumeratedSequence<Self>](dictionary/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [func makeIterator() -> Dictionary<Key, Value>.Iterator](dictionary/makeiterator.md)
   Returns an iterator over the dictionary’s key-value pairs.
 - [var underestimatedCount: Int](dictionary/underestimatedcount.md)

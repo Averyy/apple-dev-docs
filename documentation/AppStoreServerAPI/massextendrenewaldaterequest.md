@@ -6,7 +6,7 @@
 The request body that contains subscription-renewal-extension data to apply for all eligible active subscribers.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -44,6 +44,14 @@ For more information, see [`Extending the renewal date for auto-renewable subscr
   The three-letter code that represents the country or region associated with the App Store storefront.
 - [type storefrontCountryCodes](storefrontcountrycodes.md)
   A list of storefront country codes you provide to limit the storefronts for a subscription-renewal-date extension.
+
+## Properties
+
+- `requestIdentifier` (requestIdentifier): **Required**. A string that contains a one-time `UUID` value you provide to identify this subscription-renewal-date extension request.
+- `extendByDays` (extendByDays): **Required**. The number of days to extend the subscription renewal date.
+- `extendReasonCode` (extendReasonCode): **Required**. The reason code for the subscription-renewal-date extension.
+- `productId` (productId): **Required**. The product identifier of the auto-renewable subscription that you’re requesting the renewal-date extension for.
+- `storefrontCountryCodes` (storefrontCountryCodes): A list of storefront country codes you provide to limit the storefronts that are eligible to receive the subscription-renewal-date extension. Omit this list to request the subscription-renewal-date extension in all storefronts.
 
 ## See Also
 

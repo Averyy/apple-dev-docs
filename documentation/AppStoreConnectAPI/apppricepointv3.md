@@ -24,6 +24,14 @@ object AppPricePointV3
 - [object AppPricePointV3.Attributes](apppricepointv3/attributes-data.dictionary.md)
 - [object AppPricePointV3.Relationships](apppricepointv3/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppPricePointV3.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppPricePointV3.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object App](app.md)

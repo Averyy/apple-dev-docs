@@ -20,6 +20,10 @@ object GameCenterAchievementGroupAchievementLinkageRequest
 - [object GameCenterAchievementGroupAchievementLinkageRequest.Data](gamecenterachievementgroupachievementlinkagerequest/data-data.dictionary.md)
   The data structure that represents a achievement resource.
 
+## Properties
+
+- `data` (GameCenterAchievementGroupAchievementLinkageRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

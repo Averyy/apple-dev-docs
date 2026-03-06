@@ -14,6 +14,11 @@ A response that contains a single App Clip Domain Statuses resource.
 object AppClipDomainStatusResponse
 ```
 
+## Properties
+
+- `data` (AppClipDomainStatus) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object BuildBundle](buildbundle.md)

@@ -18,6 +18,11 @@ object ImageAlreadyExistsError
 
 The [`Upload Image`](upload-image.md) endpoint returns this error if you provide an [`imageIdentifier`](imageidentifier.md) that already exists.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

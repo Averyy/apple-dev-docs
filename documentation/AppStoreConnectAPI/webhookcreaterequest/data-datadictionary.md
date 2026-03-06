@@ -19,6 +19,12 @@ object WebhookCreateRequest.Data
   Attributes that describe a webhook create request resource.
 - [object WebhookCreateRequest.Data.Relationships](webhookcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (WebhookCreateRequest.Data.Attributes) *(required)*
+- `relationships` (WebhookCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -14,6 +14,10 @@ The attributes that describe a Beta App Clip Invocations resource.
 object BetaAppClipInvocation.Attributes
 ```
 
+## Properties
+
+- `url` (uri): The invocation URL you configure for testers who use the TestFlight to launch your App Clip.
+
 ## See Also
 
 - [object BetaAppClipInvocation.Relationships](betaappclipinvocation/relationships-data.dictionary.md)

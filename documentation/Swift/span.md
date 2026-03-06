@@ -31,6 +31,7 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
 - [init()](span/init.md)
 ### Instance Properties
 - [var bytes: RawSpan](span/bytes.md)
+  Construct a raw span over the memory represented by this span.
 - [var count: Int](span/count.md)
   The number of elements in the span.
 - [var indices: Range<Span<Element>.Index>](span/indices.md)

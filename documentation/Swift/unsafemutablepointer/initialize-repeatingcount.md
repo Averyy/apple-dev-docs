@@ -27,7 +27,7 @@ The destination memory must be uninitialized or the pointer’s `Pointee` must b
 ## Parameters
 
 - `repeatedValue`: The instance to initialize this pointer’s memory with.
-- `count`: The number of consecutive copies of   to initialize.    must not be negative.
+- `count`: The number of consecutive copies of `newValue` to initialize. `count` must not be negative.
 
 
 ---

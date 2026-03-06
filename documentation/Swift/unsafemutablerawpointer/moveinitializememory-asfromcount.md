@@ -36,8 +36,8 @@ After calling this method on a raw pointer `p`, the region starting at `p` and c
 ## Parameters
 
 - `type`: The type to bind this memory to.
-- `source`: A pointer to the values to copy. The memory in the region    must be initialized to type  .
-- `count`: The number of copies of   to copy into memory.    must not be negative.
+- `source`: A pointer to the values to copy. The memory in the region `source..<(source + count)` must be initialized to type `T`.
+- `count`: The number of copies of `value` to copy into memory. `count` must not be negative.
 
 
 ---

@@ -14,6 +14,10 @@ The response to a request for curators.
 object CuratorsResponse
 ```
 
+## Properties
+
+- `data` ([Curators]) *(required)*: The [`Curators`](curators.md) included in the response for the request.
+
 ## See Also
 
 - [object AppleCurators](applecurators.md)

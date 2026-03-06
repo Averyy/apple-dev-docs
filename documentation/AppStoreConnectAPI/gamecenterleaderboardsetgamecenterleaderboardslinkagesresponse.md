@@ -20,6 +20,12 @@ object GameCenterLeaderboardSetGameCenterLeaderboardsLinkagesResponse
 - [object GameCenterLeaderboardSetGameCenterLeaderboardsLinkagesResponse.Data](gamecenterleaderboardsetgamecenterleaderboardslinkagesresponse/data-data.dictionary.md)
   The data structure that represents a leaderboard resource.
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetGameCenterLeaderboardsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

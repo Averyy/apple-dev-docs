@@ -14,6 +14,11 @@ The type and ID of the App Encryption Declaration
 object App.Relationships.AppEncryptionDeclarations.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -12,6 +12,11 @@
 object BetaAppReviewDetailWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (BetaAppReviewDetail) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaAppReviewDetail](betaappreviewdetail.md)

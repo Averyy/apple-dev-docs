@@ -27,7 +27,7 @@ A data frame slice that contains the rows that satisfy the predicate.
 
 ## Parameters
 
-- `isIncluded`: A predicate closure that takes a group and returns a Boolean that indicates whether   the group is included.
+- `isIncluded`: A predicate closure that takes a group and returns a Boolean that indicates whether the group is included.
 
 
 ---

@@ -53,8 +53,8 @@ let empty = String(unsafeUninitializedCapacity: 16) { _ in
 
 ## Parameters
 
-- `capacity`: The number of UTF-8 code units worth of memory to allocate   for the string (excluding the null terminator).
-- `initializer`: A closure that accepts a buffer covering uninitialized   memory with room for   UTF-8 code units, initializes   that memory, and returns the number of initialized elements.
+- `capacity`: The number of UTF-8 code units worth of memory to allocate for the string (excluding the null terminator).
+- `initializer`: A closure that accepts a buffer covering uninitialized memory with room for `capacity` UTF-8 code units, initializes that memory, and returns the number of initialized elements.
 
 ## See Also
 

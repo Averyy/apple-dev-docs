@@ -12,6 +12,11 @@
 object SubscriptionOfferCodePriceInlineCreate.Relationships.SubscriptionPricePoint.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory](subscriptionoffercodepriceinlinecreate/relationships-data.dictionary/territory-data.dictionary.md)

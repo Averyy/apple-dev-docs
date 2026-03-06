@@ -8,6 +8,17 @@ Get an app screenshot set including its display target, language, and the screen
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appScreenshotSets/{id}`
+
+## Parameters
+
+- `fields[appScreenshotSets]` ([string])
+- `fields[appScreenshots]` ([string])
+- `include` ([string])
+- `limit[appScreenshots]` (integer)
+
 
 ---
 

@@ -17,6 +17,10 @@ object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerrito
 ### Objects
 - [object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data]) *(required)*
+
 ## See Also
 
 - [object SubscriptionAvailabilityCreateRequest.Data.Relationships.Subscription](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)

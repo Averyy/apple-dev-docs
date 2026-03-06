@@ -8,6 +8,10 @@ Create a subscription offer that provides offer codes for an auto-renewable subs
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes`
+
 ## See Also
 
 - [Read Subscription Offer Code Information](get-v1-subscriptionoffercodes-_id_.md)

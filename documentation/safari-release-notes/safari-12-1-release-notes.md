@@ -10,8 +10,8 @@ Safari 12.1 ships with iOS 12.2 and macOS 10.14.4. It’s also available for mac
 
 New features of Safari 12.1 include:
 
--  The ability to enable color scheme customizations for websites while in Dark Mode.
--  New permission requirements for third-party cookies and new limits for long-term tracking.
+- **Dark Mode for the Web.** The ability to enable color scheme customizations for websites while in Dark Mode.
+- **Intelligent Tracking Prevention.** New permission requirements for third-party cookies and new limits for long-term tracking.
 
 ##### General
 

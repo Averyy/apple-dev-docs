@@ -26,9 +26,9 @@ A [`Duration.TimeFormatStyle.Pattern`](duration/timeformatstyle/pattern-swift.st
 
 ## Parameters
 
-- `padHourToLength`: Padding for the hour field. For example, setting this value to   formats one hour as   in   locale.
-- `fractionalSecondsLength`: The length of the fractional seconds. For example, setting this value to   formats one hour as   in the   locale.
-- `roundFractionalSeconds`: The rule to use for rounding the seconds value, given the remaining fractional seconds value. Use one of the cases from the   enumeration.
+- `padHourToLength`: Padding for the hour field. For example, setting this value to `2` formats one hour as `01:00` in `en_US` locale.
+- `fractionalSecondsLength`: The length of the fractional seconds. For example, setting this value to `2` formats one hour as `1:00:00.00` in the `en_US` locale.
+- `roundFractionalSeconds`: The rule to use for rounding the seconds value, given the remaining fractional seconds value. Use one of the cases from the [`FloatingPointRoundingRule`](floatingpointroundingrule.md) enumeration.
 
 ## See Also
 

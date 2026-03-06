@@ -12,6 +12,26 @@ Delete the alternative distribution search domain for an app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{id}
+```
+
+**Response**:
+
+```json
+204
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Add an alternative distribution domain](post-v1-alternativedistributiondomains.md)

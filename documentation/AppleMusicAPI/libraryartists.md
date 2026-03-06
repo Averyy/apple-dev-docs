@@ -22,6 +22,14 @@ object LibraryArtists
 - [object LibraryArtists.Relationships](libraryartists/relationships-data.dictionary.md)
   The relationships for a library artist resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the library artist.
+- `type` (string) *(required)*: This value is always `library-artists`.
+- `href` (string) *(required)*: The relative location for the library artist resource.
+- `attributes` (LibraryArtists.Attributes): The attributes for the library artist.
+- `relationships` (LibraryArtists.Relationships): The relationships for the library artist.
+
 ## See Also
 
 - [object Artists](artists.md)

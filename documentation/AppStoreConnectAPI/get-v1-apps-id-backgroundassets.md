@@ -8,6 +8,20 @@ Get information about the Apple-hosted background assets for a specific app.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/backgroundAssets`
+
+## Parameters
+
+- `fields[backgroundAssetVersions]` ([string])
+- `fields[backgroundAssets]` ([string])
+- `filter[assetPackIdentifier]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `fields[apps]` ([string])
+- `filter[archived]` ([string])
+
 ## See Also
 
 - [List the assets packs IDs for an app](get-v1-apps-_id_-relationships-backgroundassets.md)

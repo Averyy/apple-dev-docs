@@ -49,7 +49,7 @@ Once decrypted, the payment token is passed to the PSP for processing. If you ex
 
 #### Revision History
 
--  First published.
+- **2024-06-25** First published.
 
 ## See Also
 

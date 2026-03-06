@@ -12,6 +12,11 @@
 object Subscription.Relationships.Images.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

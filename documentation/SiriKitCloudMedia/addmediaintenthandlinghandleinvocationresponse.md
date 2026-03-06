@@ -20,6 +20,11 @@ object AddMediaIntentHandlingHandleInvocationResponse
 - [object AddMediaIntentHandlingHandleInvocationResponse.Result](addmediaintenthandlinghandleinvocationresponse/result-data.dictionary.md)
   The result of handling an intent to add media items to a specified library or playlist.
 
+## Properties
+
+- `result` (AddMediaIntentHandlingHandleInvocationResponse.Result) *(required)*: The outcome of handling the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

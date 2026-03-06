@@ -22,6 +22,14 @@ Process the event in your system with the appropriate action. Respond with `200`
 
 For more information about implementing this endpoint on your server, see [`Receiving and handling merchant token notifications`](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications).
 
+## Endpoint
+
+`GET https://merchant.example.com/notification/merchantToken/{eventId}`
+
+## Parameters
+
+- `eventId` (string) *(required)*: A string that uniquely identifies a life-cycle event for a merchant token.
+
 ## See Also
 
 - [Receiving and handling merchant token notifications](../applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications.md)

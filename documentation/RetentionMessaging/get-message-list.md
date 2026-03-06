@@ -19,6 +19,10 @@ Call this endpoint to get a list of all uploaded message identifiers and check t
 
 > **Note**: If a message includes an image, also check the image state by calling [`Get Image List`](get-image-list.md). The system displays retention messages with images only if both the message and the image are in an `APPROVED` state.
 
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/message/list`
+
 ## See Also
 
 - [Upload Message](upload-message.md)

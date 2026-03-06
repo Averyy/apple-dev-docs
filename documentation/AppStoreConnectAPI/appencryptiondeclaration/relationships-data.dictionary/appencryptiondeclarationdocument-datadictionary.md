@@ -17,6 +17,11 @@ object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument
 ### Objects
 - [object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument.Data](appencryptiondeclaration/relationships-data.dictionary/appencryptiondeclarationdocument-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppEncryptionDeclaration.Relationships.App](appencryptiondeclaration/relationships-data.dictionary/app-data.dictionary.md)

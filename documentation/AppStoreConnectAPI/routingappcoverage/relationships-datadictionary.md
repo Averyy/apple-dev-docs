@@ -20,6 +20,10 @@ object RoutingAppCoverage.Relationships
 - [object RoutingAppCoverage.Relationships.AppStoreVersion](routingappcoverage/relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appStoreVersion` (RoutingAppCoverage.Relationships.AppStoreVersion)
+
 ## See Also
 
 - [object RoutingAppCoverage.Attributes](routingappcoverage/attributes-data.dictionary.md)

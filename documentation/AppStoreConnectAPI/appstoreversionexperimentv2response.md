@@ -14,6 +14,12 @@ A response that contains a single app store version experiment v2response resour
 object AppStoreVersionExperimentV2Response
 ```
 
+## Properties
+
+- `data` (AppStoreVersionExperimentV2) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)

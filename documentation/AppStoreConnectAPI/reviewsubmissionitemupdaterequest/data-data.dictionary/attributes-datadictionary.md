@@ -12,6 +12,11 @@
 object ReviewSubmissionItemUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `removed` (boolean)
+- `resolved` (boolean)
+
 
 ---
 

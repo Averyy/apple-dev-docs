@@ -18,6 +18,10 @@ object SubscriptionAvailability.Relationships
 - [object SubscriptionAvailability.Relationships.AvailableTerritories](subscriptionavailability/relationships-data.dictionary/availableterritories-data.dictionary.md)
 - [object Subscription](subscription.md)
 
+## Properties
+
+- `availableTerritories` (SubscriptionAvailability.Relationships.AvailableTerritories)
+
 ## See Also
 
 - [object SubscriptionAvailability.Attributes](subscriptionavailability/attributes-data.dictionary.md)

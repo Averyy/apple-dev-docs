@@ -20,6 +20,10 @@ object AppStoreVersion.Relationships.App
 - [object AppStoreVersion.Relationships.App.Data](appstoreversion/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppStoreVersion.Relationships.App.Data)
+
 ## See Also
 
 - [object AppStoreVersion.Relationships.AgeRatingDeclaration](appstoreversion/relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)

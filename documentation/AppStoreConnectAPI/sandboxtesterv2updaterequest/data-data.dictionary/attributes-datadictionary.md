@@ -12,6 +12,12 @@
 object SandboxTesterV2UpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `interruptPurchases` (boolean)
+- `subscriptionRenewalRate` (string)
+- `territory` (TerritoryCode)
+
 
 ---
 

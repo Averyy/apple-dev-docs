@@ -17,6 +17,11 @@ object Certificate.Relationships.PassTypeId
 - [object Certificate.Relationships.PassTypeId.Data](certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (Certificate.Relationships.PassTypeId.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

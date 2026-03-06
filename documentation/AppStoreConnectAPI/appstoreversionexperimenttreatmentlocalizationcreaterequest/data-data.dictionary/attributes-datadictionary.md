@@ -14,6 +14,10 @@ Attributes that describe an app store version experiment treatment localization 
 object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

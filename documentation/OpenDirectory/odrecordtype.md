@@ -1,27 +1,12 @@
-# ODRecordType
+# _ODRecordType
 
-**Framework**: Open Directory  
-**Kind**: typealias
+**Framework**: Open Directory
 
 An Open Directory record type.
 
-**Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+#### Overview
 
-## Declaration
-
-```swift
-typealias ODRecordType = NSString
-```
-
-## Mentions
-
-- [_ODRecordType](odrecordtype.md)
-
-#### Discussion
-
-See [`Record Types`](record-types.md) for recognized record type values.
+This is an intermediary type. Use [`ODRecordType`](odrecordtype.md) instead.
 
 ## See Also
 
@@ -45,12 +30,12 @@ See [`Record Types`](record-types.md) for recognized record type values.
   An Open Directory node type.
 - [typealias ODQueryCallback](odquerycallback.md)
   A callback function called as results from a scheduled query are returned.
+- [typealias ODRecordType](odrecordtype.md)
+  An Open Directory record type.
 - [_ODAttributeType](odattributetype.md)
   An Open Directory attribute type.
 - [_ODAuthenticationType](odauthenticationtype.md)
   An Open Directory authentication type.
-- [_ODRecordType](odrecordtype.md)
-  An Open Directory record type.
 
 
 ---

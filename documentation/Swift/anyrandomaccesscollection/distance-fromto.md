@@ -33,7 +33,7 @@ Unless the collection conforms to the `BidirectionalCollection` protocol, `start
 ## Parameters
 
 - `start`: A valid index of the collection.
-- `end`: Another valid index of the collection. If   is equal to   , the result is zero.
+- `end`: Another valid index of the collection. If `end` is equal to `start`, the result is zero.
 
 
 ---

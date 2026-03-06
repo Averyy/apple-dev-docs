@@ -12,6 +12,10 @@
 object GameCenterLeaderboardRelease.Attributes
 ```
 
+## Properties
+
+- `live` (boolean)
+
 ## See Also
 
 - [object GameCenterLeaderboardRelease.Relationships](gamecenterleaderboardrelease/relationships-data.dictionary.md)

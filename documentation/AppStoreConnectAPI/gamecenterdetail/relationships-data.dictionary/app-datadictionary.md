@@ -17,6 +17,10 @@ object GameCenterDetail.Relationships.App
 ### Objects
 - [object GameCenterDetail.Relationships.App.Data](gamecenterdetail/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterDetail.Relationships.App.Data)
+
 ## See Also
 
 - [object GameCenterDetail.Relationships.AchievementReleases](gamecenterdetail/relationships-data.dictionary/achievementreleases-data.dictionary.md)

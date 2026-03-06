@@ -21,6 +21,13 @@ object GameCenterLeaderboardLocalizationsV2Response
 - links:
 - meta:
 
+## Properties
+
+- `data` ([GameCenterLeaderboardLocalizationV2]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2](gamecenterleaderboardlocalizationv2.md)

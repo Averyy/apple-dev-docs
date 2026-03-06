@@ -31,7 +31,7 @@ Estimated times are returned asynchronously via a callback function. MapKit JS i
 
 ## Parameters
 
-- `request`: An   object that specifies details for the server to provide estimated arrival times at one or more destinations.
+- `request`: An [`EtaRequestOptions`](etarequestoptions.md) object that specifies details for the server to provide estimated arrival times at one or more destinations.
 - `callback`: A callback function that receives the estimated time response object, returned asynchronously.
 
 ## See Also

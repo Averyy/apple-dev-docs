@@ -20,6 +20,10 @@ object WinBackOfferUpdateRequest
 - [object WinBackOfferUpdateRequest.Data](winbackofferupdaterequest/data-data.dictionary.md)
   The data structure that represents a win-back offer update resource.
 
+## Properties
+
+- `data` (WinBackOfferUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

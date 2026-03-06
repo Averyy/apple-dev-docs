@@ -14,6 +14,10 @@ A string that represents the path to an executable in the build bundle.
 object BuildBundle.Attributes.Entitlements.Any Key
 ```
 
+## Properties
+
+- `Any Key` (string): All entitlements that the executable in the build bundle uses, as key-value pairs.
+
 
 ---
 

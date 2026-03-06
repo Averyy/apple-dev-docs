@@ -22,7 +22,11 @@ A [`CloudKit.RecordsBatchBuilder`](cloudkit.recordsbatchbuilder.md) object for t
 
 ## Parameters
 
-- `options`: A dictionary containing options to use when modifying records. Possible dictionary keys are:
+- `options`: A dictionary containing options to use when modifying records. Possible dictionary keys are: | Key | Description |
+| --- | --- |
+| `zoneID` | A [`CloudKit.ZoneID`](cloudkit.zoneid.md) or zone name (`String`) that identifies the record zone in the database where you want to perform the operation. The default is the database default zone. |
+| `desiredKeys` | An array of strings containing record field names that limits the amount of data returned in this operation. Only the fields specified in the array are returned. The default is `null`, which fetches all record fields. |
+| `atomic` | A Boolean value indicating whether the entire operation fails when one or more operations fail. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) If `true`, the entire request fails if one operation fails. If `false`, some operations may succeed and others may fail. The default value is `false`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) This property only applies to custom zones. |
 
 ## See Also
 

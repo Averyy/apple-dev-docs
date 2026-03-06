@@ -37,7 +37,7 @@ print(Array(joined))
 
 ## Parameters
 
-- `separator`: A sequence to insert between each of this   sequence’s elements.
+- `separator`: A sequence to insert between each of this sequence’s elements.
 
 ## See Also
 

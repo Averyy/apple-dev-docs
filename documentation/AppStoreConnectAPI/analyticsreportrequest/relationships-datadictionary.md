@@ -17,6 +17,10 @@ object AnalyticsReportRequest.Relationships
 ### Objects
 - [object AnalyticsReportRequest.Relationships.Reports](analyticsreportrequest/relationships-data.dictionary/reports-data.dictionary.md)
 
+## Properties
+
+- `reports` (AnalyticsReportRequest.Relationships.Reports)
+
 ## See Also
 
 - [object AnalyticsReportRequest.Attributes](analyticsreportrequest/attributes-data.dictionary.md)

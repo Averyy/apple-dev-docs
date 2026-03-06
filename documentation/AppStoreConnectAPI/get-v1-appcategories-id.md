@@ -8,6 +8,16 @@ Get a specific app category.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCategories/{id}`
+
+## Parameters
+
+- `fields[appCategories]` ([string])
+- `include` ([string])
+- `limit[subcategories]` (integer)
+
 ## See Also
 
 - [Read the Parent Information of an App Category](get-v1-appcategories-_id_-parent.md)

@@ -8,6 +8,14 @@ Update localized metadata for a specific default App Clip experience.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appClipDefaultExperienceLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Default App Clip Experience Localizations resource.
+
 ## Request Body
 
 The request body you use to update a default App Clip experience localization.

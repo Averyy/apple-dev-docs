@@ -6,13 +6,18 @@
 An error that indicates the test notification token is invalid.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object InvalidTestNotificationTokenError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string): Get a valid [`testNotificationToken`](testnotificationtoken.md) from the [`SendTestNotificationResponse`](sendtestnotificationresponse.md).
 
 ## See Also
 

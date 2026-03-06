@@ -22,6 +22,11 @@ object LibraryPlaylistFolderCreationRequest
 - [object LibraryPlaylistFolderCreationRequest.Relationships](libraryplaylistfoldercreationrequest/relationships-data.dictionary.md)
   The relationships of the library playlist folder of the creation request.
 
+## Properties
+
+- `attributes` (LibraryPlaylistFolderCreationRequest.Attributes) *(required)*: The attributes of the library playlist folder creation request.
+- `relationships` (LibraryPlaylistFolderCreationRequest.Relationships): The relationships of the library playlist folder creation request.
+
 ## See Also
 
 - [Get Root Library Playlists Folder](get-root-library-playlists-folder.md)

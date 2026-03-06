@@ -12,6 +12,10 @@
 object App.Relationships.BetaTesters
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

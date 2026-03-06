@@ -25,6 +25,12 @@ object GameCenterLeaderboardSetImageV2UpdateRequest.Data
 ### Dictionaries - generated
 - [object GameCenterLeaderboardSetImageV2UpdateRequest.Data.Attributes](gamecenterleaderboardsetimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetImageV2UpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

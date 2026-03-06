@@ -12,6 +12,11 @@
 object Nomination.Relationships.RelatedApps.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -17,6 +17,10 @@ object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerrit
 ### Objects
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data]) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)

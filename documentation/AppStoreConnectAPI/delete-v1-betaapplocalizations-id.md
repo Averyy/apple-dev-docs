@@ -8,6 +8,14 @@ Delete a beta app localization associated with an app.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaAppLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Create a Beta App Localization](post-v1-betaapplocalizations.md)

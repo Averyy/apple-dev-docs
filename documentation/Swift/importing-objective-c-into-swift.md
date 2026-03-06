@@ -18,7 +18,7 @@ To import a set of Objective-C files into Swift code within the same app target,
 
 ![Screenshot of the Xcode prompt to configure an Objective-C bridging header.](https://docs-assets.developer.apple.com/published/7a9554a73a7fdb2e95dea503e844421c/importing-objective-c-into-swift-2%402x.png)
 
-If you accept, Xcode creates the bridging header file along with the file you were creating, and names it by using your product module name followed by `"-Bridging-Header.h"`. Alternatively, you can create a bridging header yourself by choosing File > New > File > [] > Source > Header File.
+If you accept, Xcode creates the bridging header file along with the file you were creating, and names it by using your product module name followed by `"-Bridging-Header.h"`. Alternatively, you can create a bridging header yourself by choosing File > New > File > [*operating system*] > Source > Header File.
 
 Edit the bridging header to expose your Objective-C code to your Swift code:
 

@@ -14,6 +14,11 @@ The data structure that represents the app Apple ID for analytics report create 
 object AnalyticsReportRequestCreateRequest.Data.Relationships.App.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`List Apps`](get-v1-apps.md) response.
+- `type` (string) *(required)*
+
 
 ---
 

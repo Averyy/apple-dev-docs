@@ -18,7 +18,7 @@ var denyExplicitContent: Bool? { get set }
 
 #### Discussion
 
-Use `denyExplicitContent` to hide music and video content that has an  tag. If your app doesn’t configure this setting, the value is `nil`.
+Use `denyExplicitContent` to hide music and video content that has an *explicit* tag. If your app doesn’t configure this setting, the value is `nil`.
 
 ## See Also
 

@@ -18,6 +18,13 @@ object SubscriptionIntroductoryOfferInlineCreate
 - [object SubscriptionIntroductoryOfferInlineCreate.Attributes](subscriptionintroductoryofferinlinecreate/attributes-data.dictionary.md)
 - [object SubscriptionIntroductoryOfferInlineCreate.Relationships](subscriptionintroductoryofferinlinecreate/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionIntroductoryOfferInlineCreate.Attributes) *(required)*
+- `id` (string)
+- `relationships` (SubscriptionIntroductoryOfferInlineCreate.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionIntroductoryOfferCreateRequest](subscriptionintroductoryoffercreaterequest.md)

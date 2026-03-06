@@ -19,13 +19,13 @@ convenience init(installedSource source: Locale.Language, target: Locale.Languag
 
 #### Discussion
 
-If one or both of the languages aren’t installed on the device already, attempting to translate will throw errors. In order to get the person’s permission to download languages that aren’t already installed, translate using a `TranslationSession` provided by [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(source:target:action:)) .
+If one or both languages aren’t installed on the device, attempting to translate will throw errors. To get the person’s permission to download languages that aren’t already installed, translate using a [`TranslationSession`](translationsession.md) provided by [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(source:target:action:)) .
 
-> **Note**: If you created `TranslationSession` using `TranslationSession/init(installedSource:target:model:)`,  you don’t need a `.translationTask()`, however, you will need a `sourceLanguage` .
+> **Note**: If you created `TranslationSession` using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md), you don’t need a `.translationTask()`; however, you will need a [`sourceLanguage`](translationsession/sourcelanguage.md) .
 
 ## Parameters
 
-- `preferredStrategy`: Specify the preferred translation strategy to use. If `.highFidelity` is specified, the framework can still fall back to the `.lowLatency` strategy in some cases, such as when Apple Intelligence isn’t available.
+- `preferredStrategy`: The translation approach to use. [`highFidelity`](translationsession/strategy/highfidelity.md) uses Apple Intelligence models when available on device, or falls back to [`lowLatency`](translationsession/strategy/lowlatency.md) when those models aren’t available. The `lowLatency` strategy uses traditional models for translation.
 
 ## See Also
 

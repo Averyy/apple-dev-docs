@@ -17,6 +17,10 @@ object InAppPurchasePrice.Relationships.InAppPurchasePricePoint
 ### Objects
 - [object InAppPurchasePrice.Relationships.InAppPurchasePricePoint.Data](inapppurchaseprice/relationships-data.dictionary/inapppurchasepricepoint-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchasePrice.Relationships.InAppPurchasePricePoint.Data)
+
 ## See Also
 
 - [object InAppPurchasePrice.Relationships.Territory](inapppurchaseprice/relationships-data.dictionary/territory-data.dictionary.md)

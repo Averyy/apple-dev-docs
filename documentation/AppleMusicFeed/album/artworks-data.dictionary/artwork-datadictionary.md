@@ -14,6 +14,12 @@ Information about a piece of artwork.
 object Album.Artworks.Artwork
 ```
 
+## Properties
+
+- `height` (integer): The height of the artwork.
+- `url` (string): The URL to view the artwork.
+- `width` (integer): The width of the artwork.
+
 
 ---
 

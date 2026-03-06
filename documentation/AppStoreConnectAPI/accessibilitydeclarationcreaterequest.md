@@ -20,6 +20,10 @@ object AccessibilityDeclarationCreateRequest
 - [object AccessibilityDeclarationCreateRequest.Data](accessibilitydeclarationcreaterequest/data-data.dictionary.md)
   The data structure of the request body you use to create an accessibility declaration.
 
+## Properties
+
+- `data` (AccessibilityDeclarationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)

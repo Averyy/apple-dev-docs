@@ -14,6 +14,10 @@ A result that requires the user to confirm the media affinity before proceeding.
 object MediaAffinityTypeResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `mediaAffinityTypeToConfirm` (MediaAffinityType) *(required)*: A media affinity for the user to confirm or reject.
+
 ## See Also
 
 - [object MediaAffinityTypeResolutionResult.Success](mediaaffinitytyperesolutionresult/success-data.dictionary.md)

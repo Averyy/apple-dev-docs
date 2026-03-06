@@ -28,7 +28,7 @@ func sorted<T>(on columnName: String, _ type: T.Type, by areInIncreasingOrder: (
 
 - `columnName`: The name of a column.
 - `type`: The column’s type.
-- `areInIncreasingOrder`: A closure that returns a Boolean that indicates   whether the two elements are in increasing order.
+- `areInIncreasingOrder`: A closure that returns a Boolean that indicates whether the two elements are in increasing order.
 
 ## See Also
 

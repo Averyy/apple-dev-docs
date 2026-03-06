@@ -14,6 +14,12 @@ An error indicating a line item was provided for an external purchase ID that ha
 object LineItemsNotAllowedForStatusError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

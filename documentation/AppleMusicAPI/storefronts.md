@@ -24,6 +24,13 @@ For the specification of language tags, see [`Language Codes`](https://developer
 - [object Storefronts.Attributes](storefronts/attributes-data.dictionary.md)
   The attributes for the storefronts resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the storefront.
+- `type` (string) *(required)*: This value must always be `storefronts`.
+- `href` (string) *(required)*: The relative location for the storefront resource.
+- `attributes` (Storefronts.Attributes): The attributes for the storefront.
+
 
 ---
 

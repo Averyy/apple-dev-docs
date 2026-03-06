@@ -12,6 +12,13 @@
 object AppEvent.Attributes.TerritorySchedules
 ```
 
+## Properties
+
+- `eventEnd` (date-time)
+- `eventStart` (date-time)
+- `publishStart` (date-time)
+- `territories` ([string])
+
 ## See Also
 
 - [object AppEvent.Attributes.ArchivedTerritorySchedules](appevent/attributes-data.dictionary/archivedterritoryschedules-data.dictionary.md)

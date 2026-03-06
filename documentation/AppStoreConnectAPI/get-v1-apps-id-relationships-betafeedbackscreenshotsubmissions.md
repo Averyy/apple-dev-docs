@@ -12,6 +12,14 @@ Get a list of beta feedback screenshot submissions for a specific app.
 
 List All Introductory Offer Resource IDs for an Auto-Renewable Subscription,Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/betaFeedbackScreenshotSubmissions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all beta feedback screenshot submissions for an app](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)

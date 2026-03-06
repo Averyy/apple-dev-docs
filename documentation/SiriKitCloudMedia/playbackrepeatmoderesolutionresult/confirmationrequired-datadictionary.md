@@ -14,6 +14,10 @@ A result that requires the user to confirm the playback mode before proceeding.
 object PlaybackRepeatModeResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `playbackRepeatModeToConfirm` (PlaybackRepeatMode) *(required)*: A playback mode for the user to confirm or reject.
+
 ## See Also
 
 - [object PlaybackRepeatModeResolutionResult.Success](playbackrepeatmoderesolutionresult/success-data.dictionary.md)

@@ -20,6 +20,13 @@ object PerfPowerMetric
 - [object PerfPowerMetric.Attributes](perfpowermetric/attributes-data.dictionary.md)
   Attributes that describe a Power and Performance Metrics resource.
 
+## Properties
+
+- `attributes` (PerfPowerMetric.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

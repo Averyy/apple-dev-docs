@@ -14,6 +14,10 @@ The reason your service can’t update information about the requested media ite
 object UpdateMediaAffinityMediaItemResolutionResult.Unsupported
 ```
 
+## Properties
+
+- `reason` (UpdateMediaAffinityMediaItemUnsupportedReason): The reason your service can’t update information about the media item.
+
 ## See Also
 
 - [object UpdateMediaAffinityMediaItemResolutionResult.Success](updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.md)

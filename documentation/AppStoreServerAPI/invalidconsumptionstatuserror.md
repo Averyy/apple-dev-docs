@@ -6,7 +6,7 @@
 An error that indicates the value of the consumption status field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidConsumptionStatusError
 #### Discussion
 
 For more information about the `consumptionStatus` field in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`consumptionStatus`](consumptionstatus.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

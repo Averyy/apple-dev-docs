@@ -20,6 +20,13 @@ object BackgroundAssetUploadFile
 - [object BackgroundAssetUploadFile.Attributes](backgroundassetuploadfile/attributes-data.dictionary.md)
   Attributes that describe a background asset upload file resource.
 
+## Properties
+
+- `attributes` (BackgroundAssetUploadFile.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

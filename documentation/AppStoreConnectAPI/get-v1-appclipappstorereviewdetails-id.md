@@ -8,6 +8,15 @@ Get App Store Review details for an App Clip.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipAppStoreReviewDetails/{id}`
+
+## Parameters
+
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each App Clip App Store Review Details resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+
 ## See Also
 
 - [Create App Store Review Details for an App Clip](post-v1-appclipappstorereviewdetails.md)

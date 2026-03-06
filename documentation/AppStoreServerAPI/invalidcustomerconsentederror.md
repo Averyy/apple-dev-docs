@@ -6,7 +6,7 @@
 An error that indicates the customer consented field is invalid or doesn’t indicate that the customer consented.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidCustomerConsentedError
 #### Discussion
 
 If the `customerConsented` field in [`ConsumptionRequest`](consumptionrequest.md) or [`ConsumptionRequestV1`](consumptionrequestv1.md) is any value other than `true`, the App Store server rejects the request. For more information, see [`customerConsented`](customerconsented.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

@@ -25,6 +25,14 @@ To learn more about the response that includes this analytics report request obj
 ### Dictionaries
 - [object AnalyticsReport.Relationships](analyticsreport/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AnalyticsReport.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AnalyticsReport.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

@@ -25,6 +25,12 @@ object GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2
 ### Dictionaries - generated
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2.Data](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsetsv2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

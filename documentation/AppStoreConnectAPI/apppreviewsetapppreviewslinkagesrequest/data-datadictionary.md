@@ -14,6 +14,11 @@ The data element of the request body.
 object AppPreviewSetAppPreviewsLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

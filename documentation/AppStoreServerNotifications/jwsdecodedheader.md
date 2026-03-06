@@ -34,6 +34,11 @@ For more information, or to download Apple’s root and intermediate certificate
 - [type x5c](x5c.md)
   The JSON Web Signature (JWS) header parameter that contains the certificate chain that corresponds to the key used to digitally sign the JWS.
 
+## Properties
+
+- `alg` (alg): The algorithm used for signing the JSON Web Signature (JWS).
+- `x5c` (x5c): The X.509 certificate chain that corresponds to the key that the App Store used to secure the JWS.
+
 ## See Also
 
 - [object JWSTransactionDecodedPayload](jwstransactiondecodedpayload.md)

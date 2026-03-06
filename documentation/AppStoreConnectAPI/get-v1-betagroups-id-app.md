@@ -8,6 +8,14 @@ Get the app information for a specific beta group.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/app`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List Beta Groups](get-v1-betagroups.md)

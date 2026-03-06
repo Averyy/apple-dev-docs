@@ -12,6 +12,11 @@
 object InAppPurchaseAppStoreReviewScreenshotUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string)
+- `uploaded` (boolean)
+
 
 ---
 

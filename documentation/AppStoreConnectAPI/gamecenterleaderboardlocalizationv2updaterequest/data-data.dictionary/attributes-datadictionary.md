@@ -22,6 +22,14 @@ object GameCenterLeaderboardLocalizationV2UpdateRequest.Data.Attributes
 - formatterSuffixSingular:
 - name:
 
+## Properties
+
+- `description` (string)
+- `formatterOverride` (GameCenterLeaderboardFormatter)
+- `formatterSuffix` (string)
+- `formatterSuffixSingular` (string)
+- `name` (string)
+
 
 ---
 

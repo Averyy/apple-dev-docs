@@ -17,6 +17,12 @@ object SubscriptionImagesLinkagesResponse
 ### Dictionaries
 - [object SubscriptionImagesLinkagesResponse.Data](subscriptionimageslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionImagesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionImage](subscriptionimage.md)

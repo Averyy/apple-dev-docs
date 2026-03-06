@@ -27,9 +27,9 @@ init(contentsOfCSVFile url: URL, columns: [String]? = nil, rows: Range<Int>? = n
 ## Parameters
 
 - `url`: A URL for a CSV file.
-- `columns`: An array of column names; Set to   to use every column in the CSV file.
-- `rows`: A range of indices; Set to   to use every row in the CSV file.
-- `types`: A dictionary of column names and their CSV types.   The data frame infers the types for column names that aren’t in the dictionary.
+- `columns`: An array of column names; Set to `nil` to use every column in the CSV file.
+- `rows`: A range of indices; Set to `nil` to use every row in the CSV file.
+- `types`: A dictionary of column names and their CSV types. The data frame infers the types for column names that aren’t in the dictionary.
 - `options`: The options that tell the data frame how to read the CSV file.
 
 ## See Also

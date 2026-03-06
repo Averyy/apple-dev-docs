@@ -14,6 +14,11 @@ Attributes whose values you’re changing as part of the update request.
 object BuildUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `expired` (boolean): A Boolean value that indicates if the build has expired. An expired build is unavailable for testing.
+- `usesNonExemptEncryption` (boolean): A Boolean value that indicates whether the build uses non-exempt encryption.
+
 ## See Also
 
 - [object BuildUpdateRequest.Data.Relationships](buildupdaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -17,6 +17,12 @@ object GameCenterDetailLeaderboardReleasesLinkagesResponse
 ### Dictionaries
 - [object GameCenterDetailLeaderboardReleasesLinkagesResponse.Data](gamecenterdetailleaderboardreleaseslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetailLeaderboardReleasesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

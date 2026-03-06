@@ -33,7 +33,7 @@ Use the `bindMemory(to:)` method to bind the memory referenced by this buffer sl
 
 ## Parameters
 
-- `type`: The type   to bind the memory to.
+- `type`: The type `T` to bind the memory to.
 
 
 ---

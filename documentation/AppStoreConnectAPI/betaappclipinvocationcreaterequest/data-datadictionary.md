@@ -22,6 +22,12 @@ object BetaAppClipInvocationCreateRequest.Data
 - [object BetaAppClipInvocationCreateRequest.Data.Relationships](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (BetaAppClipInvocationCreateRequest.Data.Attributes) *(required)*: The attributes that describes the request that creates a Beta App Clip Invocations resource.
+- `relationships` (BetaAppClipInvocationCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BetaAppClipInvocationLocalizationInlineCreate](betaappclipinvocationlocalizationinlinecreate.md)

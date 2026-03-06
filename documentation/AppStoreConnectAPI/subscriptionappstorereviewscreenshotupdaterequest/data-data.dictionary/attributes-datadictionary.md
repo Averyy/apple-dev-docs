@@ -12,6 +12,11 @@
 object SubscriptionAppStoreReviewScreenshotUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string)
+- `uploaded` (boolean)
+
 
 ---
 

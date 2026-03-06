@@ -12,6 +12,12 @@
 object BetaAppLocalizationsWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([BetaAppLocalization]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaAppLocalization](betaapplocalization.md)

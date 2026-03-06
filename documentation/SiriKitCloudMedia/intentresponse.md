@@ -14,6 +14,11 @@ Your service’s response to an intent.
 object IntentResponse
 ```
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of response.
+- `userActivity` (UserActivity) *(required)*: A description of the interaction in progress.
+
 ## Relationships
 
 ### Inherited By

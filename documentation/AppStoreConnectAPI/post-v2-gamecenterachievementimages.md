@@ -18,6 +18,10 @@ Create a Game Center achievement image.
 - 422:
 - 429:
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/gameCenterAchievementImages`
+
 ## See Also
 
 - [Read Game Center achievement image information](get-v2-gamecenterachievementimages-_id_.md)

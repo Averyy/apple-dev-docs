@@ -12,6 +12,12 @@
 object AppEventLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `longDescription` (string)
+- `name` (string)
+- `shortDescription` (string)
+
 
 ---
 

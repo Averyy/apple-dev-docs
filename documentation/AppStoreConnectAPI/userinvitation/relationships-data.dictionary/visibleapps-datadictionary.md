@@ -20,6 +20,12 @@ object UserInvitation.Relationships.VisibleApps
 - [object UserInvitation.Relationships.VisibleApps.Data](userinvitation/relationships-data.dictionary/visibleapps-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([UserInvitation.Relationships.VisibleApps.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

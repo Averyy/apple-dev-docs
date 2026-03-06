@@ -12,6 +12,11 @@
 object AppEventVideoClipUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `previewFrameTimeCode` (string)
+- `uploaded` (boolean)
+
 
 ---
 

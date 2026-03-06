@@ -24,7 +24,7 @@ If you don’t specify a value, the macro’s default value is 1.
 
 - `name`: The name of the macro.
 - `value`: The value of the macro.
-- `condition`: A condition that restricts the use of the build   setting.
+- `condition`: A condition that restricts the use of the build setting.
 
 ## See Also
 

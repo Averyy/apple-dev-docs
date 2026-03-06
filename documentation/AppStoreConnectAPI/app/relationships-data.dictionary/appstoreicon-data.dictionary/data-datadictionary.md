@@ -12,6 +12,11 @@
 object App.Relationships.AppStoreIcon.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

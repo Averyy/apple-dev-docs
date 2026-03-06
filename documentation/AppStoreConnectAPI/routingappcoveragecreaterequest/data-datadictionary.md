@@ -22,6 +22,12 @@ object RoutingAppCoverageCreateRequest.Data
 - [object RoutingAppCoverageCreateRequest.Data.Relationships](routingappcoveragecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (RoutingAppCoverageCreateRequest.Data.Attributes) *(required)*
+- `relationships` (RoutingAppCoverageCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

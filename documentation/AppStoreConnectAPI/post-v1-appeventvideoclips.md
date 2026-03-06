@@ -6,6 +6,10 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appEventVideoClips`
+
 ## See Also
 
 - [GET /v1/appEventVideoClips/{id}](get-v1-appeventvideoclips-_id_.md)

@@ -8,6 +8,14 @@ Delete the custom end user license agreement that is associated with an app.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an End User License Agreement](post-v1-enduserlicenseagreements.md)

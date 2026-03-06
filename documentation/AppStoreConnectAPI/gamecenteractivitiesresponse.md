@@ -14,6 +14,13 @@ A response that contains a list of activities resources.
 object GameCenterActivitiesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterActivity]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterActivity](gamecenteractivity.md)

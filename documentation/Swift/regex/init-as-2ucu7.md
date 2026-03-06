@@ -34,7 +34,7 @@ if let stronglyTypedRegex = Regex(dynamicRegex, as: (Substring, Substring, Subst
 
 ## Parameters
 
-- `regex`: A regular expression to convert to use a strongly-typed capture   list.
+- `regex`: A regular expression to convert to use a strongly-typed capture list.
 - `outputType`: The capture structure to use.
 
 

@@ -22,6 +22,14 @@ object CiBuildRun
 - [object CiBuildRun.Relationships](cibuildrun/relationships-data.dictionary.md)
   The relationships of the Build Runs resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (CiBuildRun.Attributes): The attributes that describe the Build Runs resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Build Runs resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (CiBuildRun.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object CiBuildRunCreateRequest](cibuildruncreaterequest.md)

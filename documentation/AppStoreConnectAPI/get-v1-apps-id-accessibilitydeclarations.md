@@ -12,6 +12,17 @@ Get a list of the accessibility declarations for a specific app.
 
 - [Configuring accessibility declarations for your app](configuring-accessibility-declarations.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/accessibilityDeclarations`
+
+## Parameters
+
+- `fields[accessibilityDeclarations]` ([string])
+- `filter[deviceFamily]` ([string])
+- `filter[state]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [GET /v1/apps/{id}/relationships/accessibilityDeclarations](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)

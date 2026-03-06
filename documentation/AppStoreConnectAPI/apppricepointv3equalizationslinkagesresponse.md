@@ -17,6 +17,12 @@ object AppPricePointV3EqualizationsLinkagesResponse
 ### Dictionaries
 - [object AppPricePointV3EqualizationsLinkagesResponse.Data](apppricepointv3equalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppPricePointV3EqualizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

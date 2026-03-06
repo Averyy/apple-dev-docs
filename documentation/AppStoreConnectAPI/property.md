@@ -14,6 +14,11 @@ A representation of a game-specific property.
 object Property
 ```
 
+## Properties
+
+- `key` (string): The name of the property.
+- `value` (string): The value for the property.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

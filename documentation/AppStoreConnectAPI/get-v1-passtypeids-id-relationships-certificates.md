@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/passTypeIds/{id}/relationships/certificates`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)

@@ -30,6 +30,23 @@ For more information about sending a report that includes refund line items, see
 
 Report chargebacks as a refund.
 
+## Properties
+
+- `lineItemId` (lineItemId) *(required)*: A unique identifier for the transaction, that you determine. The value must be unique per app. Using UUIDs is recommended. Reuse a `lineItemId` only to submit a correction for a previously submitted line item.
+- `referenceLineItemId` (referenceLineItemId) *(required)*: The [`lineItemId`](lineitemid.md) of the initial purchase transaction that receives a refund.
+- `creationDate` (creationDate) *(required)*: The UNIX date, in milliseconds, you completed the transaction.
+- `restatement` (restatement): Set to `true` to indicate that this line item is correcting (restating) a refund line item that you previously submitted. For more information, see [`Reporting corrections`](reportcorrections.md).
+- `erroneouslySubmitted` (erroneouslySubmitted): Set to `true` to indicate that you previously submitted the line item in error. Set the `restatement` field to `true` also. For more information, see [`Reporting corrections`](reportcorrections.md).
+- `pricingCurrency` (pricingCurrency) *(required)*: The currency the transaction used to charge or refund the customer. For more information, see [`pricingCurrency`](pricingcurrency.md).
+- `reportingCurrency` (reportingCurrency) *(required)*: The currency you use to report all the amount fields, including `amountTaxExclusive`, `amountTaxInclusive`, `netAmountTaxExclusive`, and `taxAmount`. For  more information, see [`reportingCurrency`](reportingcurrency.md).
+- `exchangeRate` (exchangeRate): The exchange rate you use to calculate the amounts, from the pricing currency to the reporting currency, if the customer is billed in an unsupported currency. For more information, see [`exchangeRate`](exchangerate.md).
+- `amountTaxExclusive` (amountTaxExclusive) *(required)*: The amount that the customer paid, excluding taxes, that you state in milli-units of the reporting currency. For more information, see [`amountTaxExclusive`](amounttaxexclusive.md).
+- `amountTaxInclusive` (amountTaxInclusive) *(required)*: The amount that the customer paid, including taxes, that you state in milli-units of the reporting currency. For more information, see [`amountTaxInclusive`](amounttaxinclusive.md).
+- `netAmountTaxExclusive` (netAmountTaxExclusive) *(required)*: The net amount the customer was charged, accurate to the current line item, that you state in milli-units of the reporting currency. This amount excludes tax, and accounts for all refunds and restatements. For more information, see [`netAmountTaxExclusive`](netamounttaxexclusive.md).
+- `taxAmount` (taxAmount) *(required)*: The amount the customer paid in taxes, that you state in milli-units of the reporting currency. For more information, see [`taxAmount`](taxamount.md).
+- `taxCountry` (taxCountry) *(required)*: The country code of the country for which taxes were paid on the purchase. For more information, see [`taxCountry`](taxcountry.md).
+- `eventType` (eventType) *(required)*: Use `REFUND`.
+
 ## See Also
 
 - [Reporting tokens with transactions](reportwithtransactions.md)

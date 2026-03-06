@@ -20,6 +20,14 @@ Update a specific Game Center achievement localization.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/gameCenterAchievementLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center achievement localization](post-v2-gamecenterachievementlocalizations.md)

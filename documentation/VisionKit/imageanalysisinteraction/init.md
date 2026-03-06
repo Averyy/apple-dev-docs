@@ -20,7 +20,7 @@ convenience init(_ delegate: any ImageAnalysisInteractionDelegate)
 
 ## Parameters
 
-- `delegate`: The object that provides details about the interface for the   interaction.
+- `delegate`: The object that provides details about the interface for the interaction.
 
 ## See Also
 

@@ -19,6 +19,14 @@ Delete a specific Game Center achievement image.
 - 409:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/gameCenterAchievementImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center achievement image information](get-v2-gamecenterachievementimages-_id_.md)

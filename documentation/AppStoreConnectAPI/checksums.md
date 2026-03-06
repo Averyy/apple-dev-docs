@@ -26,6 +26,11 @@ object Checksums
 - [object Checksums.File](checksums/file-data.dictionary.md)
   The data structure that represents the properties of a file checksum.
 
+## Properties
+
+- `composite` (Checksums.Composite)
+- `file` (Checksums.File)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

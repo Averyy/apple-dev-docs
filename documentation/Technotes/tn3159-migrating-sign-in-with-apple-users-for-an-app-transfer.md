@@ -150,8 +150,8 @@ Within your app or web service, you can confirm the user migration was successfu
 
 #### Revision History
 
--  Corrected title.
--  First published.
+- **2024-02-07** Corrected title.
+- **2024-01-09** First published.
 
 ## See Also
 

@@ -12,6 +12,17 @@
 object SubscriptionAppStoreReviewScreenshot.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `assetType` (string)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshot.Relationships](subscriptionappstorereviewscreenshot/relationships-data.dictionary.md)

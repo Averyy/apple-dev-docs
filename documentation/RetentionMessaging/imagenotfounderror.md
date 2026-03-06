@@ -18,6 +18,11 @@ object ImageNotFoundError
 
 The [`Delete Image`](delete-image.md) endpoint returns this error if the [`imageIdentifier`](imageidentifier.md) doesn’t exist.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

@@ -23,7 +23,7 @@ A `Target.Dependency` instance.
 - `name`: The name of the product.
 - `package`: The name of the package.
 - `moduleAliases`: The module aliases for targets in the product.
-- `condition`: A condition that limits the application of the target dependency. For example, only apply a   dependency for a specific platform.
+- `condition`: A condition that limits the application of the target dependency. For example, only apply a dependency for a specific platform.
 
 ## See Also
 

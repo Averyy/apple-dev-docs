@@ -20,6 +20,10 @@ object CiBuildRun.Relationships.DestinationBranch
 - [object CiBuildRun.Relationships.DestinationBranch.Data](cibuildrun/relationships-data.dictionary/destinationbranch-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Git References resource that represents the build run’s destination branch.
 
+## Properties
+
+- `data` (CiBuildRun.Relationships.DestinationBranch.Data): The ID of the related Git References resource that represents the destination branch.
+
 ## See Also
 
 - [object CiBuildRun.Relationships.Builds](cibuildrun/relationships-data.dictionary/builds-data.dictionary.md)

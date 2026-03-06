@@ -24,6 +24,10 @@ object GameCenterLeaderboardSetImageV2CreateRequest
 - [object GameCenterLeaderboardSetImageV2CreateRequest.Data](gamecenterleaderboardsetimagev2createrequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard set image create request resource.
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetImageV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageV2](gamecenterleaderboardsetimagev2.md)

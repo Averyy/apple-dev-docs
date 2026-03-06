@@ -12,6 +12,12 @@
 object AppCustomProductPageVersion.Attributes
 ```
 
+## Properties
+
+- `deepLink` (uri)
+- `state` (string)
+- `version` (string)
+
 ## See Also
 
 - [object AppCustomProductPageVersion.Relationships](appcustomproductpageversion/relationships-data.dictionary.md)

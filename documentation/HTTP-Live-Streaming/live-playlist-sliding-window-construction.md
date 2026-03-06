@@ -31,17 +31,17 @@ fileSequence5.ts
 
 These are the tags used in the live playlist example:
 
- Indicates that the playlist is an extended M3U file. This type of file is distinguished from a basic M3U file by changing the tag on the first line to `EXTM3U`. All HLS playlists must start with this tag.
+**EXTM3U:** Indicates that the playlist is an extended M3U file. This type of file is distinguished from a basic M3U file by changing the tag on the first line to `EXTM3U`. All HLS playlists must start with this tag.
 
- Specifies the maximum media-file duration.
+**EXT-X-TARGETDURATION:** Specifies the maximum media-file duration.
 
- Indicates the compatibility version of the playlist file. The playlist media and its server must comply with all provisions of the most recent version of the IETF Internet-Draft of the HTTP Live Streaming specification that defines that protocol version.
+**EXT-X-VERSION:** Indicates the compatibility version of the playlist file. The playlist media and its server must comply with all provisions of the most recent version of the IETF Internet-Draft of the HTTP Live Streaming specification that defines that protocol version.
 
- Indicates the sequence number of the first URL that appears in a playlist file. Each media file URL in a playlist has a unique integer sequence number. The sequence number of a URL is higher by 1 than the sequence number of the URL that preceded it. The media sequence numbers have no relation to the names of the files.
+**EXT-X-MEDIA-SEQUENCE:** Indicates the sequence number of the first URL that appears in a playlist file. Each media file URL in a playlist has a unique integer sequence number. The sequence number of a URL is higher by 1 than the sequence number of the URL that preceded it. The media sequence numbers have no relation to the names of the files.
 
 > ❗ **Important**: The `EXT-X-MEDIA-SEQUENCE` tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
 
- A record marker that describes the media file identified by the URL that follows it. Each media file URL must be preceded by an `EXTINF` tag. This tag contains a duration attribute that’s an integer or floating-point number in decimal positional notation that specifies the duration of the media segment in seconds. This value must be less than or equal to the target duration.
+**EXTINF:** A record marker that describes the media file identified by the URL that follows it. Each media file URL must be preceded by an `EXTINF` tag. This tag contains a duration attribute that’s an integer or floating-point number in decimal positional notation that specifies the duration of the media segment in seconds. This value must be less than or equal to the target duration.
 
 > ❗ **Important**: Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
 

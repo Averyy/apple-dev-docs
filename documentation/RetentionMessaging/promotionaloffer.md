@@ -26,6 +26,12 @@ For new implementations, consider using the [`promotionalOfferSignatureV2`](prom
 
 For more information on generating the signatures, see [`promotionalOfferSignatureV1`](promotionaloffersignaturev1.md) and [`promotionalOfferSignatureV2`](promotionaloffersignaturev2.md).
 
+## Properties
+
+- `messageIdentifier` (messageIdentifier): The identifier of the message to display to the customer, along with the promotional offer.
+- `promotionalOfferSignatureV2` (promotionalOfferSignatureV2): The promotional offer signature in V2 format. This field is mutually exclusive with `promotionalOfferSignatureV1` field.
+- `promotionalOfferSignatureV1` (promotionalOfferSignatureV1): The promotional offer signature in V1 format. This field is mutually exclusive with the `promotionalOfferSignatureV2` field.
+
 ## See Also
 
 - [object message](message.md)

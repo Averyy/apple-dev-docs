@@ -13,6 +13,17 @@ Get details about the promoted purchase of an in-app purchase.
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
 - [Managing in-app purchases](managing-in-app-purchases.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/promotedPurchase`
+
+## Parameters
+
+- `fields[inAppPurchases]` ([string])
+- `fields[promotedPurchases]` ([string])
+- `fields[subscriptions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

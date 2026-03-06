@@ -23,10 +23,10 @@ static func << <RHS>(lhs: Self, rhs: RHS) -> Self where RHS : BinaryInteger
 
 #### Discussion
 
-The `<<` operator performs a , which defines a result for a shift of any value.
+The `<<` operator performs a *smart shift*, which defines a result for a shift of any value.
 
 - Using a negative value for `rhs` performs a right shift using `abs(rhs)`.
-- Using a value for `rhs` that is greater than or equal to the bit width of `lhs` is an , resulting in zero.
+- Using a value for `rhs` that is greater than or equal to the bit width of `lhs` is an *overshift*, resulting in zero.
 - Using any other value for `rhs` performs a left shift on `lhs` by that amount.
 
 The following example defines `x` as an instance of `UInt8`, an 8-bit, unsigned integer type. If you use `2` as the right-hand-side value in an operation on `x`, the value is shifted left by two bits.
@@ -56,7 +56,7 @@ let b = x >> 3
 ## Parameters
 
 - `lhs`: The value to shift.
-- `rhs`: The number of bits to shift   to the left.
+- `rhs`: The number of bits to shift `lhs` to the left.
 
 
 ---

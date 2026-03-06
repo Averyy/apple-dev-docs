@@ -20,6 +20,12 @@ object BetaAppReviewDetailUpdateRequest.Data
 - [object BetaAppReviewDetailUpdateRequest.Data.Attributes](betaappreviewdetailupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (BetaAppReviewDetailUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

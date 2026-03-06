@@ -22,6 +22,12 @@ object PopularityTopChartAlbums
 - [object PopularityTopChartAlbums.Rankings](popularitytopchartalbums/rankings-data.dictionary.md)
   An album’s ranking in a popularity chart.
 
+## Properties
+
+- `genre` (PopularityTopChartAlbums.Genre): **(Required)** The chart’s associated genre.
+- `rankings` ([PopularityTopChartAlbums.Rankings]): **(Required)** A list of album rankings in the chart.
+- `storefront` (string): **(Required)** The chart’s associated storefront.
+
 ## See Also
 
 - [object Album](album.md)

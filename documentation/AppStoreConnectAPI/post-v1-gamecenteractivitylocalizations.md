@@ -12,6 +12,10 @@ Add a localization for a specific Game Center activity.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivityLocalizations`
+
 ## See Also
 
 - [Read activity localization information](get-v1-gamecenteractivitylocalizations-_id_.md)

@@ -54,6 +54,10 @@ When a price increase doesn’t need the subscriber’s consent, the App Store o
 
 The App Store uses the following communications methods and timelines to notify subscribers:
 
+- **Email**: For all subscription durations, the App Store sends an email 27 days before the renewal date. Note that for weekly subscriptions, the App Store calls the [`Change Subscription Price`](change-subscription-price.md) endpoint on the fourth consecutive renewal to increase the price.
+- **Price increase sheet**: The App Store displays a price increase sheet at the first app launch after the subscriber has entered the notice period.
+- **Push notification**: The App Store displays a push notification seven days before the renewal date if the subscriber hasn’t viewed the price increase sheet in-app.
+
 > **Note**: Unlike when requesting consent, the App Store doesn’t send a push notification if the subscriber acknowledges the price increase on the sheet. Notifying via email is still a requirement in either case.
 
 #### Understand Change Subscription Conditions and Limitations
@@ -84,12 +88,12 @@ If the price increase will take place during a retain billing cycle, the followi
 - If the subscriber consented to the  price increase, or the price increase doesn’t require consent,  the Payment Sheet shows the higher price.
 - If the  subscriber declined the price increase, the item doesn’t appear in the Payment Sheet.
 - If the item’s SKU is changing to a different product SKU (such as from SKU `BASIC` to SKU `PREMIUM`), the change invalidates the price increase, since the new SKU represents a different product.
-- When the App Store sends an offer with an item subject to a price increase, it’s a ; in this case, you send the higher price of the item, and the App Store reschedules the price increase for after the offer period has completed, at which point, the item renews at the higher price.
+- When the App Store sends an offer with an item subject to a price increase, it’s a *special consideration*; in this case, you send the higher price of the item, and the App Store reschedules the price increase for after the offer period has completed, at which point, the item renews at the higher price.
 
 If the price increase will take place during a reset billing cycle, the following rules apply:
 
 - If the App Store hasn’t communicated the  price increase, the price increase is invalidated.
-- If the the App Store communicated the price increase, the App Store applies the new price only if the item is sent with the higher price, using the [`SubscriptionModifyChangeItem`](SubscriptionModifyChangeItem.md). - As described above, changing the item to a different product (such as changing from  SKU  to a  SKU) invalidates the price increase, as the item represents a different product.
+- If the the App Store communicated the price increase, the App Store applies the new price only if the item is sent with the higher price, using the [`SubscriptionModifyChangeItem`](SubscriptionModifyChangeItem.md). - As described above, changing the item to a different product (such as changing from *BASIC* SKU  to a *Premium* SKU) invalidates the price increase, as the item represents a different product.
 
 If you need to change a subscription’s metadata, call the [`Change Subscription Metadata`](Change-Subscription-Metadata.md). Metadata-only changes, such as changing the SKU from SKU A to SKU B, preserves the price increase because it isn’t a change in product, but rather a change to the product SKU.
 
@@ -140,7 +144,7 @@ The following table describes the notifications and status values for a subscrip
 
 To create a contingency for a situation in which a person doesn’t agree to a price increase and the App Store cancels other, bundled services (the “dependent SKUs”), you can provide an array of the SKUs through the `dependentSKUs` property. If the price increase requires a person’s consent, and they don’t consent to the price increase (through a cancellation from the Manage Subscriptions view, or by failing to consent before the renewal date), the App Store cancels the dependent SKUs.
 
-> ❗ **Important**: You can’t have chains of dependent SKUs –– for example, if SKU  has dependent SKU ,  can’t have its own dependent SKU, . However,  can have its own price increase.
+> ❗ **Important**: You can’t have chains of dependent SKUs –– for example, if SKU *A* has dependent SKU *B*, *B* can’t have its own dependent SKU, *C*. However, *B* can have its own price increase.
 
 #### Test Price Increases in the Sandbox
 

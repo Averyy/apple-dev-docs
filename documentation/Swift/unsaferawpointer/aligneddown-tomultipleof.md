@@ -30,7 +30,7 @@ If the bit pattern of `self` is a multiple of `alignment`, this function returns
 
 ## Parameters
 
-- `alignment`: The alignment of the returned pointer, in bytes.    must be a whole power of 2.
+- `alignment`: The alignment of the returned pointer, in bytes. `alignment` must be a whole power of 2.
 
 
 ---

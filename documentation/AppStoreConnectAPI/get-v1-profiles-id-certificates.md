@@ -8,6 +8,15 @@ Get a list of all certificates and their data for a specific provisioning profil
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/profiles/{id}/certificates`
+
+## Parameters
+
+- `limit` (integer)
+- `fields[certificates]` ([string])
+
 ## See Also
 
 - [Read the Bundle ID in a Profile](get-v1-profiles-_id_-bundleid.md)

@@ -20,6 +20,12 @@ object ReviewSubmissionItemsLinkagesResponse
 - [object ReviewSubmissionItemsLinkagesResponse.Data](reviewsubmissionitemslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([ReviewSubmissionItemsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)

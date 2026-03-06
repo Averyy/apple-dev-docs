@@ -14,6 +14,10 @@ An object that represents the autocomplete options for the hint.
 object SearchHintsResponse.Results
 ```
 
+## Properties
+
+- `terms` ([string]) *(required)*: The autocomplete options derived from the search hint.
+
 
 ---
 

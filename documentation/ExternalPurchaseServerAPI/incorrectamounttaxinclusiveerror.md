@@ -14,6 +14,13 @@ An error indicating the tax exclusive amount plus the tax amount does not equal 
 object IncorrectAmountTaxInclusiveError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId)
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

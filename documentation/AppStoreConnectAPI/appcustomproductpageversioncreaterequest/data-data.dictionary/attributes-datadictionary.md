@@ -18,6 +18,10 @@ object AppCustomProductPageVersionCreateRequest.Data.Attributes
 
 - [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
 
+## Properties
+
+- `deepLink` (uri)
+
 ## See Also
 
 - [object AppCustomProductPageVersionCreateRequest.Data.Relationships](appcustomproductpageversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -12,6 +12,10 @@
 object App.Relationships.BackgroundAssets
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

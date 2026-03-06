@@ -8,6 +8,14 @@ Get the app id from a specific app encryption declaration.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarations/{id}/relationships/app`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List App Encryption Declarations`](get-v1-appencryptiondeclarations.md) response.
+
 ## See Also
 
 - [List App Encryption Declarations](get-v1-appencryptiondeclarations.md)

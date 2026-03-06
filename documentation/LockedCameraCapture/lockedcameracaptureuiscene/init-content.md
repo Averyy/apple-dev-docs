@@ -18,7 +18,7 @@ init(content: @escaping (LockedCameraCaptureSession) -> Content)
 
 ## Parameters
 
-- `content`: The content of the locked camera capture extension using a   .
+- `content`: The content of the locked camera capture extension using a [`LockedCameraCaptureSession`](lockedcameracapturesession.md).
 
 
 ---

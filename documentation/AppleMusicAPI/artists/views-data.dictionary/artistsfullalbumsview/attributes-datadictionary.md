@@ -14,6 +14,10 @@ Full-release albums associated with the artist.
 object Artists.Views.ArtistsFullAlbumsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

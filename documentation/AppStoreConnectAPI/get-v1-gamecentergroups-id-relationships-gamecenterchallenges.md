@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/relationships/gameCenterChallenges`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

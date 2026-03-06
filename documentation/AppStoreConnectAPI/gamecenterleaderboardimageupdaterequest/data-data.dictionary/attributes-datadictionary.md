@@ -12,6 +12,10 @@
 object GameCenterLeaderboardImageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `uploaded` (boolean)
+
 
 ---
 

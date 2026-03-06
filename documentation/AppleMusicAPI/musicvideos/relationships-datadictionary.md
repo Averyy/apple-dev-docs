@@ -28,6 +28,14 @@ object MusicVideos.Relationships
 - [object MusicVideos.Relationships.MusicVideosSongsRelationship](musicvideos/relationships-data.dictionary/musicvideossongsrelationship.md)
   A relationship from the music video to its songs.
 
+## Properties
+
+- `albums` (MusicVideos.Relationships.MusicVideosAlbumsRelationship): The albums associated with the music video. By default, `albums` includes identifiers only. Fetch limits: 10 default, 10 maximum.
+- `artists` (MusicVideos.Relationships.MusicVideosArtistsRelationship): The artists associated with the music video. By default, `artists` includes identifiers only. Fetch limits: 10 default, 10 maximum.
+- `genres` (MusicVideos.Relationships.MusicVideosGenresRelationship): The genres associated with the music video. By default, `genres` not included. Fetch limits: None.
+- `library` (MusicVideos.Relationships.MusicVideosLibraryRelationship): The library of a music video if added to library. Fetch limits: None.
+- `songs` (MusicVideos.Relationships.MusicVideosSongsRelationship): The songs associated with the music video. Fetch limits: 10 default, 10 maximum.
+
 ## See Also
 
 - [object MusicVideos.Attributes](musicvideos/attributes-data.dictionary.md)

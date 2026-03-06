@@ -25,7 +25,7 @@ This setting allows for fine-grained control over individual warnings. To contro
 ## Parameters
 
 - `name`: The name of the specific warning to control.
-- `level`: The treatment level for the warning (  or  ).
+- `level`: The treatment level for the warning (`.warning` or `.error`).
 - `condition`: A condition that restricts the application of the build setting.
 
 

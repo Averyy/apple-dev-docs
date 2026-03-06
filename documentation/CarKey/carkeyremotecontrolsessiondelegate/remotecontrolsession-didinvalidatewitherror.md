@@ -26,7 +26,7 @@ Use this method to detect if the system invalidated the session for any reason. 
 ## Parameters
 
 - `session`: The session that became invalid.
-- `didInvalidateWithError`: The error code that contains the reason   for the invalid session. For a list of possible values,   see  .
+- `didInvalidateWithError`: The error code that contains the reason for the invalid session. For a list of possible values, see [`CarKeyErrorCode`](carkeyerrorcode.md).
 
 
 ---

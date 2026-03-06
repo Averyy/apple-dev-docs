@@ -16,6 +16,68 @@ Get a list of all experiments for an App Store version of an app across all plat
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/appStoreVersions/fb3bb89c-47c3-4cbf-8af7-677fb801c09f/appStoreVersionExperimentsV2
+```
+
+**Response**:
+
+```json
+{
+  "data" : [ {
+    "type" : "appStoreVersionExperiments",
+    "id" : "1a22d9a7-f574-4669-b1ca-1ba88f786c19",
+    "attributes" : {
+      "name" : "PPO Test 1",
+      "platform" : "IOS",
+      "trafficProportion" : 50,
+      "state" : "READY_FOR_REVIEW",
+      "reviewRequired" : true,
+      "startDate" : null,
+      "endDate" : null
+    },
+    "relationships" : {
+      "appStoreVersionExperimentTreatments" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19/relationships/appStoreVersionExperimentTreatments",
+          "related" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19/appStoreVersionExperimentTreatments"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19"
+    }
+  } ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/appStoreVersions/fb3bb89c-47c3-4cbf-8af7-677fb801c09f/appStoreVersionExperimentsV2"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 1,
+      "limit" : 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/appStoreVersionExperimentsV2`
+
+## Parameters
+
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `fields[appStoreVersions]` ([string])
+- `fields[apps]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appStoreVersionExperimentTreatments]` (integer)
+- `limit[controlVersions]` (integer)
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

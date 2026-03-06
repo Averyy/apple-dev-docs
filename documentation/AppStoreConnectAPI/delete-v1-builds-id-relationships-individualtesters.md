@@ -8,6 +8,14 @@ Remove access to test a specific build from one or more individually assigned te
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/individualTesters`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Add Access for Beta Groups to a Build](post-v1-builds-_id_-relationships-betagroups.md)

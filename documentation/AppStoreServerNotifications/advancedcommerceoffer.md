@@ -12,6 +12,13 @@
 object advancedCommerceOffer
 ```
 
+## Properties
+
+- `period` (advancedCommerceOfferPeriod)
+- `periodCount` (advancedCommercePeriodCount)
+- `price` (advancedCommerceOfferPrice)
+- `reason` (advancedCommerceReason)
+
 ## See Also
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)

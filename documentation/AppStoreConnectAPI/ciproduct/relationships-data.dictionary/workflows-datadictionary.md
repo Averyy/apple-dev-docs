@@ -12,6 +12,10 @@
 object CiProduct.Relationships.Workflows
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

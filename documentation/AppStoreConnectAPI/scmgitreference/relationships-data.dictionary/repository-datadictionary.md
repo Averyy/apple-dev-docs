@@ -20,6 +20,10 @@ object ScmGitReference.Relationships.Repository
 - [object ScmGitReference.Relationships.Repository.Data](scmgitreference/relationships-data.dictionary/repository-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Repositories resource.
 
+## Properties
+
+- `data` (ScmGitReference.Relationships.Repository.Data): The ID and type of the related Repositories resource.
+
 
 ---
 

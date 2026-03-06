@@ -17,6 +17,10 @@ object BetaRecruitmentCriterionOption.Attributes
 ### Dictionaries
 - [object BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions](betarecruitmentcriterionoption/attributes-data.dictionary/devicefamilyosversions-data.dictionary.md)
 
+## Properties
+
+- `deviceFamilyOsVersions` ([BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions])
+
 
 ---
 

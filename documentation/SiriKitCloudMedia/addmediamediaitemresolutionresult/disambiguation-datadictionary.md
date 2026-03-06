@@ -14,6 +14,10 @@ A result that requires the user to choose which media item they want to add to t
 object AddMediaMediaItemResolutionResult.Disambiguation
 ```
 
+## Properties
+
+- `mediaItemsToDisambiguate` ([MediaItem]) *(required)*: Media items that might match the user’s intent.
+
 ## See Also
 
 - [object AddMediaMediaItemResolutionResult.ConfirmationRequired](addmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)

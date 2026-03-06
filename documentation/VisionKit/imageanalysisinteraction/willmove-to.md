@@ -20,7 +20,7 @@ Performs an action before the view adds or removes the interaction from its inte
 
 ## Parameters
 
-- `view`: The view that owns and contains the interaction in its   interaction array.
+- `view`: The view that owns and contains the interaction in its interaction array.
 
 ## See Also
 

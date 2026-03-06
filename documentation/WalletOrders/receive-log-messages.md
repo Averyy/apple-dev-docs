@@ -10,6 +10,10 @@ Records log messages on your server.
 - iPadOS 16.0+
 - macOS 13.0+
 
+## Endpoint
+
+`POST https://your-web-service.com/v1/log`
+
 ## Request Body
 
 An array of log messages.

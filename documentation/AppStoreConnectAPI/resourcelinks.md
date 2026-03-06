@@ -14,6 +14,10 @@ Self-links to requested resources.
 object ResourceLinks
 ```
 
+## Properties
+
+- `self` (uri-reference): The link to the resource.
+
 ## See Also
 
 - [object PagedDocumentLinks](pageddocumentlinks.md)

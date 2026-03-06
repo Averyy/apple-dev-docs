@@ -8,6 +8,14 @@ Get information about the selected base territory for an in-app purchase price s
 **Availability**:
 - App Store Connect API 2.3+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/{id}/baseTerritory`
+
+## Parameters
+
+- `fields[territories]` ([string])
+
 ## See Also
 
 - [Read in-app purchase price schedule information](get-v1-inapppurchasepriceschedules-_id_.md)

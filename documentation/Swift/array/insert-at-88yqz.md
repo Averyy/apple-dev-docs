@@ -35,12 +35,12 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(), where  is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
+> **Note**: O(*n*), where *n* is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
 ## Parameters
 
 - `newElement`: The new element to insert into the collection.
-- `i`: The position at which to insert the new element.    must be a valid index into the collection.
+- `i`: The position at which to insert the new element. `index` must be a valid index into the collection.
 
 
 ---

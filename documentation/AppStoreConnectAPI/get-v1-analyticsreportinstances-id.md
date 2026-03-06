@@ -14,6 +14,50 @@ Get details for a specific instance of an analytics report.
 
 ##### Examples Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/d4a141c8-7647-4bdf-b9ae-04cab705d641
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "analyticsReportInstances",
+    "id": "d4a141c8-7647-4bdf-b9ae-04cab705d641",
+    "attributes": {
+      "granularity": "DAILY",
+      "processingDate": "2024-01-25"
+    },
+    "relationships": {
+      "segments": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/d4a141c8-7647-4bdf-b9ae-04cab705d641/relationships/segments",
+          "related": "https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/d4a141c8-7647-4bdf-b9ae-04cab705d641/segments"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/d4a141c8-7647-4bdf-b9ae-04cab705d641"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/d4a141c8-7647-4bdf-b9ae-04cab705d641"
+  }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/{id}`
+
+## Parameters
+
+- `fields[analyticsReportInstances]` ([string])
+
 ## See Also
 
 - [Read report information](get-v1-analyticsreports-_id_.md)

@@ -18,6 +18,10 @@ boolean restatement
 
 - [Reporting corrections](reportcorrections.md)
 
+
+
+**Default**: `false`
+
 #### Discussion
 
 Set this value to `true` to indicate the line item is restating a previously submitted line item, and contains corrections.

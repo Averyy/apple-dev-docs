@@ -17,6 +17,11 @@ object BetaAppReviewSubmissionBuildLinkageResponse
 ### Dictionaries
 - [object BetaAppReviewSubmissionBuildLinkageResponse.Data](betaappreviewsubmissionbuildlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaAppReviewSubmissionBuildLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaAppReviewSubmission](betaappreviewsubmission.md)

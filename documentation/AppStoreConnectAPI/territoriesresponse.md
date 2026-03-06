@@ -14,6 +14,12 @@ A response that contains a list of Territory resources.
 object TerritoriesResponse
 ```
 
+## Properties
+
+- `data` ([Territory]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Territory](territory.md)

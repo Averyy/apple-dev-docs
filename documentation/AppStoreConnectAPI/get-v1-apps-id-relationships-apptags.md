@@ -8,6 +8,14 @@ List all app tag IDs for a specific app.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/appTags`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List app tags](get-v1-apps-_id_-apptags.md)

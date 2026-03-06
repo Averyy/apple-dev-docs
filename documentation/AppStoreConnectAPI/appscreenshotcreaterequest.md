@@ -20,6 +20,10 @@ object AppScreenshotCreateRequest
 - [object AppScreenshotCreateRequest.Data](appscreenshotcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppScreenshotCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppScreenshot](appscreenshot.md)

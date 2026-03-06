@@ -22,6 +22,11 @@ object LibraryPlaylistFolders.Relationships
 - [object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersParentRelationship](libraryplaylistfolders/relationships-data.dictionary/libraryplaylistfoldersparentrelationship.md)
   A resource object that represents the parent relationship of a library playlist folder.
 
+## Properties
+
+- `children` (LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersChildrenRelationship): The playlists and sub-folders contained in this folder.
+- `parent` (LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersParentRelationship): The parent of this folder.
+
 ## See Also
 
 - [object LibraryPlaylistFolders.Attributes](libraryplaylistfolders/attributes-data.dictionary.md)

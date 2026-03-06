@@ -51,7 +51,7 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 ## Parameters
 
 - `i`: A valid index of the collection.
-- `limit`: A valid index of the collection to use as a limit. If   , a limit that is less than   has no effect.   Likewise, if  , a limit that is greater than   has no   effect.
+- `limit`: A valid index of the collection to use as a limit. If `distance > 0`, a limit that is less than `i` has no effect. Likewise, if `distance < 0`, a limit that is greater than `i` has no effect.
 
 
 ---

@@ -14,6 +14,11 @@ A response that contains a single alternative marketplace search detail resource
 object MarketplaceSearchDetailResponse
 ```
 
+## Properties
+
+- `data` (MarketplaceSearchDetail) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object MarketplaceSearchDetail](marketplacesearchdetail.md)

@@ -37,7 +37,7 @@ This method is equivalent to calling `random(in:using:)`, passing in the systemâ
 
 ## Parameters
 
-- `range`: The range in which to create a random value.    must be finite and non-empty.
+- `range`: The range in which to create a random value. `range` must be finite and non-empty.
 
 
 ---

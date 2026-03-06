@@ -653,6 +653,9 @@ The soundstage design intentionally utilizes stereo music with spread and width 
 
 An audio cue subsystem in Petite Asteroids’ audio system controls playback of the app’s music. The sound effects of the game differ, depending on the scenes of the game. In the Fiery Descent sequence, the app plays back two layers simultaneously:
 
+- **Mono layer**: Playing a spatial, high-frequency, single-channel point source.
+- **Stereo layer**: Playing lower-frequency sounds with some subtle panning movement for immersion. One of the `fieryDescent` sounds, `fieryDescentSFXSpatial`, plays on `ParticleEmitter` entities for spatial audio that layers with ambient audio `fieryDescentSky` and `fieryDescentSFXAmbient`.
+
 The design of the music scoring separates linear and nonlinear categories. The linear music at the end of the game triggers a cut scene and the app plays a linear music sequence. The nonlinear music scores make the sound nonrepetitive. This design means the app can cut the score into segments that it can loop infinitely and cleanly, while also allowing the audio to start playback at any randomized time. The `gameplayMusic`, `tutorialMusic`, and `menuMusic` all fall under this category.
 
 ## See Also

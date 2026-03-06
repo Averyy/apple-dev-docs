@@ -30,10 +30,10 @@ Avoiding the unsupported scenarios will save your project many edges cases and b
 
 #### Revision History
 
--  Added a reference to the new [`URL filters`](https://developer.apple.com/documentation/NetworkExtension/url-filters) mechanism.  Added links to documents that further explain specific topics.  Fixed a broken link.  Made other minor editorial changes.
--  Made minor editorial changes.
--  Added additional links to APIs.
--  First published.
+- **2025-07-22** Added a reference to the new [`URL filters`](https://developer.apple.com/documentation/NetworkExtension/url-filters) mechanism.  Added links to documents that further explain specific topics.  Fixed a broken link.  Made other minor editorial changes.
+- **2022-05-24** Made minor editorial changes.
+- **2022-03-29** Added additional links to APIs.
+- **2022-03-22** First published.
 
 ## See Also
 

@@ -22,6 +22,15 @@ The client doesn’t retry if the `retryWithDelay` value is negative or absent. 
 
 Include the `methodName` and `methodIndex` whenever the reason is `unsupported`, `unauthorized`, `invalid`, or `busy`. For other reason values, these properties may help diagnose issues, but aren’t a requirement.
 
+## Properties
+
+- `methodName` (string): The name of the method the service is processing when it encounters the exception.
+- `methodIndex` (uint32): The index within the request’s array of Invocation objects that the service is processing when it encounters the exception.
+- `code` (int64): The identifier for this exception.
+- `reason` (ProtocolExceptionReason) *(required)*: The type of exception the service encounters.
+- `retryWithDelay` (float): The timespan, in seconds, the client needs to wait before retrying the request.
+- `trace` ([string]): Debugging backtraces or other information. Production services must not provide this information. Clients without an enabled debug setting discard this data.
+
 ## See Also
 
 - [object ProtocolExceptionInvocationResponse](protocolexceptioninvocationresponse.md)

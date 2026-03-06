@@ -18,6 +18,11 @@ object InvalidLocaleError
 
 For a full list of locales, see [`Managing metadata in your app by using locale short codes`](https://developer.apple.comhttps://developer.apple.com/documentation/appstoreconnectapi/managing-metadata-in-your-app-by-using-locale-shortcodes).
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

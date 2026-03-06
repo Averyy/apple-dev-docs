@@ -12,6 +12,13 @@
 object AppEventUpdateRequest.Data.Attributes.TerritorySchedules
 ```
 
+## Properties
+
+- `eventEnd` (date-time)
+- `eventStart` (date-time)
+- `publishStart` (date-time)
+- `territories` ([string])
+
 
 ---
 

@@ -26,7 +26,7 @@ A `RegexComponent` to match an ISO 8601 date string, not any time zone that may 
 
 ## Parameters
 
-- `timeZone`: The time zone to create the captured   with.
+- `timeZone`: The time zone to create the captured `Date` with.
 - `dateSeparator`: The separator between date components.
 
 

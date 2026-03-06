@@ -158,8 +158,8 @@ For more information about locking your scene to your preferred interface orient
 
 #### Revision History
 
--  Added information about back deployment support.
--  First published.
+- **2026-02-06** Added information about back deployment support.
+- **2025-09-08** First published.
 
 ## See Also
 

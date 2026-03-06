@@ -12,6 +12,14 @@
 object AlternativeDistributionPackageVersion.Attributes
 ```
 
+## Properties
+
+- `fileChecksum` (string)
+- `state` (string)
+- `url` (uri)
+- `urlExpirationDate` (date-time)
+- `version` (string)
+
 ## See Also
 
 - [object AlternativeDistributionPackageVersion.Relationships](alternativedistributionpackageversion/relationships-data.dictionary.md)

@@ -20,6 +20,13 @@ object AndroidToIosAppMappingDetail
 - [object AndroidToIosAppMappingDetail.Attributes](androidtoiosappmappingdetail/attributes-data.dictionary.md)
   Attributes that describe an Android to iOS app mapping detail resource.
 
+## Properties
+
+- `attributes` (AndroidToIosAppMappingDetail.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetailCreateRequest](androidtoiosappmappingdetailcreaterequest.md)

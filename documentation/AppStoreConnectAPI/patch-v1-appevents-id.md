@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appEvents/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read in-app event information](get-v1-appevents-_id_.md)

@@ -17,6 +17,10 @@ object InAppPurchaseAvailabilityCreateRequest
 ### Objects
 - [object InAppPurchaseAvailabilityCreateRequest.Data](inapppurchaseavailabilitycreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseAvailabilityCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAvailability](inapppurchaseavailability.md)

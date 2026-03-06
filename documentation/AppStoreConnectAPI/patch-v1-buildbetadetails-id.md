@@ -8,6 +8,14 @@ Update beta test details for a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/buildBetaDetails/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 
 ---
 

@@ -11,6 +11,13 @@ A response that contains a list of Certificates resources.
 object CertificatesResponse
 ```
 
+## Properties
+
+- `data` ([Certificate]) *(required)*: The resource data.
+- `included` ([PassTypeId])
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information
+
 ## See Also
 
 - [object Certificate](certificate.md)

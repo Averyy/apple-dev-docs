@@ -17,6 +17,10 @@ Increases or decreases contrast of values using a linear slope multiplier.
 
 #### Parameter Descriptions
 
+- **`In`**: The input value to modify.
+- **`Amount`**: The linear slope multiplier that increases or decreases the contrast. A value between `0.0` and `1.0` decreases the contrast of the `In` parameter, while a value greater than `1.0` increases it.
+- **`Pivot`**: The center value of the contrast adjustment. As contrast increases, values of the `In` parameter get further away from this value. As contrast decreases, values of the `In` parameter get closer to this value.
+
 #### Discussion
 
 Below is an example of a node graph that uses the `Contrast` node to make a black and white arrow texture more gray and closer in color.

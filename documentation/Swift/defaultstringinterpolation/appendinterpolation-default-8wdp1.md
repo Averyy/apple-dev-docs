@@ -35,8 +35,8 @@ print("Your age is \(age, default: "unknown")")
 
 ## Parameters
 
-- `value`: The value to include in a string interpolation, if non- .
-- `default`: The string to include if   is  .
+- `value`: The value to include in a string interpolation, if non-`nil`.
+- `default`: The string to include if `value` is `nil`.
 
 
 ---

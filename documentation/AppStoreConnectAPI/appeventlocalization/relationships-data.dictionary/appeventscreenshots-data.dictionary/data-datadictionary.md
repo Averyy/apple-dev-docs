@@ -12,6 +12,11 @@
 object AppEventLocalization.Relationships.AppEventScreenshots.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

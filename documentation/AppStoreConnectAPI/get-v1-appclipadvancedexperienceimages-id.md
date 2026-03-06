@@ -8,6 +8,14 @@ Get information about the image that appears on the App Clip card of an advanced
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipAdvancedExperienceImages/{id}`
+
+## Parameters
+
+- `fields[appClipAdvancedExperienceImages]` ([string]): Additional fields to include for each Advanced App Clip Experience Images resource returned by the response.
+
 ## See Also
 
 - [Create an App Clip Card Image for an Advanced App Clip Experience](post-v1-appclipadvancedexperienceimages.md)

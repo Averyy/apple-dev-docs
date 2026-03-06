@@ -8,6 +8,32 @@ Get information about a specific auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}`
+
+## Parameters
+
+- `fields[promotedPurchases]` ([string])
+- `fields[subscriptionIntroductoryOffers]` ([string])
+- `fields[subscriptionLocalizations]` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
+- `fields[subscriptionPrices]` ([string])
+- `fields[subscriptions]` ([string])
+- `include` ([string])
+- `limit[introductoryOffers]` (integer)
+- `limit[offerCodes]` (integer)
+- `limit[prices]` (integer)
+- `limit[subscriptionLocalizations]` (integer)
+- `fields[subscriptionPromotionalOffers]` ([string])
+- `fields[subscriptionAppStoreReviewScreenshots]` ([string])
+- `limit[promotionalOffers]` (integer)
+- `fields[subscriptionAvailabilities]` ([string])
+- `fields[subscriptionImages]` ([string])
+- `fields[winBackOffers]` ([string])
+- `limit[images]` (integer)
+- `limit[winBackOffers]` (integer)
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

@@ -14,6 +14,11 @@ The request body you use to update an app store version experiment v2create requ
 object AppStoreVersionExperimentV2CreateRequest.Data.Relationships.App.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

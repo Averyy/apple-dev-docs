@@ -17,6 +17,10 @@ object InAppPurchaseV2UpdateRequest
 ### Objects
 - [object InAppPurchaseV2UpdateRequest.Data](inapppurchasev2updaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2UpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

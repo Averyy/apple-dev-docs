@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetV2VersionsLinkagesResponse.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

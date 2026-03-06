@@ -20,6 +20,10 @@ object CiMacOsVersion.Relationships
 - [object CiMacOsVersion.Relationships.XcodeVersions](cimacosversion/relationships-data.dictionary/xcodeversions-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the macOS Versions and Xcode Versions resources.
 
+## Properties
+
+- `xcodeVersions` (CiMacOsVersion.Relationships.XcodeVersions): The macOS version’s related Xcode version.
+
 ## See Also
 
 - [object CiMacOsVersion.Attributes](cimacosversion/attributes-data.dictionary.md)

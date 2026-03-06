@@ -14,6 +14,10 @@ Use this endpoint to create a response to a customer review and publish it in th
 
 Responses don’t appear in the App Store instantly. Allow some time for the App Store to publish the response.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/customerReviewResponses`
+
 ## Request Body
 
 The request body of the customer review response.

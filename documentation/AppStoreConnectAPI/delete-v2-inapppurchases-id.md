@@ -12,6 +12,14 @@ Delete a specific in-app purchase from your app.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

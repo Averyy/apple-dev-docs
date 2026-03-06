@@ -18,6 +18,12 @@ object SubscriptionPromotionalOfferCreateRequest.Data
 - [object SubscriptionPromotionalOfferCreateRequest.Data.Attributes](subscriptionpromotionaloffercreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object SubscriptionPromotionalOfferCreateRequest.Data.Relationships](subscriptionpromotionaloffercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionPromotionalOfferCreateRequest.Data.Attributes) *(required)*
+- `relationships` (SubscriptionPromotionalOfferCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

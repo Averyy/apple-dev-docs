@@ -16,6 +16,10 @@ string AppClipAction
 
 #### Possible Values
 
+- **`OPEN`**: 
+- **`VIEW`**: 
+- **`PLAY`**: 
+
 ## See Also
 
 - [object AppClipDefaultExperience](appclipdefaultexperience.md)

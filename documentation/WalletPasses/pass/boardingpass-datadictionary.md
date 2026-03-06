@@ -24,6 +24,10 @@ object Pass.BoardingPass
 
 Use the boarding pass type for transit passes like airline boarding passes, train tickets, and bus tickets.
 
+## Properties
+
+- `transitType` (string) *(required)*: The type of transit for a boarding pass. This key is invalid for other types of passes. The system may use the value to display more information, such as showing an airplane icon for the pass on watchOS when the value is set to `PKTransitTypeAir`.
+
 ## Relationships
 
 ### Inherits From

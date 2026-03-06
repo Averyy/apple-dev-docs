@@ -14,6 +14,11 @@ Attributes that describe an activity resource.
 object GameCenterActivityLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `name` (string)
+
 
 ---
 

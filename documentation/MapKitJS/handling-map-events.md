@@ -16,17 +16,40 @@ Event listeners receive a single argument that is an event object. The event obj
 
 MapKit JS sends the following [`MapKitEvent`](mapkitevent.md) events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
 
+- **`region-change-start`**: The map’s visible region is about to change.
+- **`region-change-end`**: The map’s visible region finishes changing.
+- **`rotation-start`**: The map’s rotation is about to change.
+- **`rotation-end`**: The map’s rotation finishes changing.
+- **`scroll-start`**: The map is about to scroll as a result of user interaction.
+- **`scroll-end`**: The map finishes scrolling as a result of user interaction.
+- **`zoom-start`**: The map is about to zoom as a result of user interaction.
+- **`zoom-end`**: The map finishes zooming as a result of user interaction.
+- **`map-type-change`**: A program event or a user interaction causes the map’s `mapType` ([`MapType`](maptype.md)) to change.
+
 ##### Respond to Annotation and Overlay Events
 
 MapKit JS sends [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md),[`MapOverlaySelectionEvent`](mapoverlayselectionevent.md), and [`MapAnnotationDragEvent`](mapannotationdragevent.md) events when a person interacts with the annotations and overlays you place on the map. Respond to these interactions by updating the map or providing more information about the overlay or annotation the person interacts with.
+
+- **`select`**: The framework sends a [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md) or [`MapOverlaySelectionEvent`](mapoverlayselectionevent.md)when someone selects an annotation or an overlay.
+- **`deselect`**: The framework sends a [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md) or [`MapOverlaySelectionEvent`](mapoverlayselectionevent.md)when someone deselects an annotation or an overlay.
+- **`drag-start`**: The framework sends a [`MapAnnotationDragEvent`](mapannotationdragevent.md) when someone starts to drag an annotation.
+- **`dragging`**: The framework send a [`MapAnnotationDragEvent`](mapannotationdragevent.md) when someone drags an annotation. The event has two properties.
+- **`drag-end`**: The framework send a [`MapAnnotationDragEvent`](mapannotationdragevent.md) when someone finishes dragging an annotation.
 
 ##### Respond to User Location Events
 
 MapKit JS sends [`MapUserLocationChangeEvent`](mapuserlocationchangeevent.md) or [`MapUserLocationErrorEvent`](mapuserlocationerrorevent.md) events to indicate changes in a person’s location. Use these events to adjust what the map displays or to trigger other responses in your app.
 
+- **`user-location-change`**: The framework sends a [`MapUserLocationChangeEvent`](mapuserlocationchangeevent.md) event when [`showsUserLocation`](map/showsuserlocation.md) is `true` and the map acquires the user’s location, or after an automatic update.
+- **`user-location-error`**: The framework sends a ([`MapUserLocationErrorEvent`](mapuserlocationerrorevent.md)) when MapKit JS is unable to acquire the user’s location.
+
 ##### Respond to Map Interaction Events
 
 MapKit JS sends [`MapEvent`](mapevent.md) events when someone taps or presses on the map view. Use these events to adjust the map view, respond to the deselecting of overlays, or drag or deselect annotations.
+
+- **`single-tap`**: The framework sends an event when a single tap occurs on the map outside an annotation or an overlay. If an annotation or an overlay is in a selected state when a single tap occurs, MapKit JS deselects the annotation or the overlay and dispatches a single-tap event.
+- **`double-tap`**: The framework sends an event when a double tap occurs on the map without zooming the map.
+- **`long-press`**: The framework send an event when a long press occurs on the map outside an annotation. A long press may be the beginning of a panning or pinching gesture on the map. You can prevent the gesture from starting by calling the [`preventDefault()`](mapkitevent/preventdefault.md) method of the event. Annotations need to be draggable to dispatch long-press events.
 
 ## Topics
 

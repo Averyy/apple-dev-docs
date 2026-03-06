@@ -20,6 +20,14 @@ Request a refund for a one-time charge or subscription transaction.
 
 Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Cancel a Subscription`](cancel-a-subscription.md), [`Revoke Subscription`](revoke-subscription.md), and `Request Transaction Refund` APIs.
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/transaction/requestRefund/{transactionId}`
+
+## Parameters
+
+- `transactionId` (string) *(required)*: The transaction identifier for which you request a refund.
+
 ## Request Body
 
 The request body.

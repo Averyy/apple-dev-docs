@@ -14,6 +14,11 @@ Attributes that you update for a build upload file resource.
 object BuildUploadFileUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksums` (Checksums)
+- `uploaded` (boolean)
+
 
 ---
 

@@ -14,6 +14,11 @@ Analysis of power and performance data collected for your app that includes regr
 object xcodeMetrics.Insights
 ```
 
+## Properties
+
+- `regressions` ([MetricsInsight]): An array of metrics that have significantly increased between app versions.
+- `trendingUp` ([MetricsInsight]): An array of metrics that have moderately increased between app versions.
+
 ## See Also
 
 - [object xcodeMetrics.ProductData](xcodemetrics/productdata-data.dictionary.md)

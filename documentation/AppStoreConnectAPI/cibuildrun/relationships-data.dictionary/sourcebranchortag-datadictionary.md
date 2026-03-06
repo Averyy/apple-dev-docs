@@ -20,6 +20,10 @@ object CiBuildRun.Relationships.SourceBranchOrTag
 - [object CiBuildRun.Relationships.SourceBranchOrTag.Data](cibuildrun/relationships-data.dictionary/sourcebranchortag-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Git References resource that represents the source branch or tag.
 
+## Properties
+
+- `data` (CiBuildRun.Relationships.SourceBranchOrTag.Data): The ID and type of the related Git References resource that represents the source branch or tag.
+
 ## See Also
 
 - [object CiBuildRun.Relationships.Builds](cibuildrun/relationships-data.dictionary/builds-data.dictionary.md)

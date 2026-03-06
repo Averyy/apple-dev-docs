@@ -22,6 +22,14 @@ object GameCenterMatchmakingRuleSet
 - [object GameCenterMatchmakingRuleSet.Relationships](gamecentermatchmakingruleset/relationships-data.dictionary.md)
   The relationships to other objects belonging to the rule set.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingRuleSet.Attributes): The attributes of the rule set.
+- `id` (string) *(required)*: The unique identifier for the rule set.
+- `links` (ResourceLinks)
+- `relationships` (GameCenterMatchmakingRuleSet.Relationships): The relationships to other objects belonging to the rule set.
+- `type` (string) *(required)*: The type of resource.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetCreateRequest](gamecentermatchmakingrulesetcreaterequest.md)

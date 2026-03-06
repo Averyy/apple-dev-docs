@@ -111,8 +111,8 @@ Change the color of the title and button elements:
 
 #### Revision History
 
--  Added information about the new design in iOS 26.
--  First published.
+- **2025-09-03** Added information about the new design in iOS 26.
+- **2022-03-01** First published.
 
 ## See Also
 

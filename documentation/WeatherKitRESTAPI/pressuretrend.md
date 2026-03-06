@@ -16,6 +16,10 @@ string PressureTrend
 
 #### Possible Values
 
+- **rising**: The sea level air pressure is increasing.
+- **falling**: The sea level air pressure is decreasing.
+- **steady**: The sea level air pressure is remaining about the same.
+
 ## See Also
 
 - [type UnitsSystem](unitssystem.md)

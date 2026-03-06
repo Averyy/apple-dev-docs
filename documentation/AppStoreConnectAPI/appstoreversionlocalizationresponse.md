@@ -14,6 +14,12 @@ A response that contains a single App Store Version Localizations resource.
 object AppStoreVersionLocalizationResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionLocalization) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)

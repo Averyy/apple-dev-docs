@@ -8,6 +8,10 @@ Tell Apple about your upcoming app or feature.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/nominations`
+
 ## See Also
 
 - [List nominations](get-v1-nominations.md)

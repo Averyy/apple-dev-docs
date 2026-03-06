@@ -17,6 +17,11 @@ object CustomerReviewResponseLinkageResponse
 ### Dictionaries
 - [object CustomerReviewResponseLinkageResponse.Data](customerreviewresponselinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (CustomerReviewResponseLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object CustomerReviewResponseV1Response](customerreviewresponsev1response.md)

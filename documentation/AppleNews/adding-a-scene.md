@@ -8,6 +8,8 @@ Control how the article’s opening section comes into view.
 
 The fading sticky header scene causes the header to briefly “stick” to the top of the screen and then fade to a defined color.
 
+**On this page, you’ll learn how to add a scene to your article.**
+
 ![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a fading sticky header scene.](https://docs-assets.developer.apple.com/published/15e322be7c406b36bdecf38d62e3bd4a/media-3624925%402x.png)
 
 To implement a scene, you add a `scene` property to a `section` or `chapter` component.

@@ -20,6 +20,12 @@ object SubmissionLogURLResponse.Data
 - [object SubmissionLogURLResponse.Data.Attributes](submissionlogurlresponse/data-data.dictionary/attributes-data.dictionary.md)
   Information about the log associated with the submission.
 
+## Properties
+
+- `attributes` (SubmissionLogURLResponse.Data.Attributes): Information about the log associated with the submission.
+- `id` (string): The unique identifier for this submission. This value matches the value that you provided as a path parameter to the [`Get Submission Log`](get-submission-log.md) call that elicited this response.
+- `type` (string): The resource type.
+
 ## See Also
 
 - [object SubmissionLogURLResponse.Meta](submissionlogurlresponse/meta-data.dictionary.md)

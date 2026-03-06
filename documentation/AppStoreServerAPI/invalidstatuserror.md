@@ -6,7 +6,7 @@
 An error that indicates the status parameter is invalid.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidStatusError
 #### Discussion
 
 The [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint returns this error if you provide an invalid `status` query parameter.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

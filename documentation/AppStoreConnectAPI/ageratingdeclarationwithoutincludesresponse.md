@@ -12,6 +12,11 @@
 object AgeRatingDeclarationWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (AgeRatingDeclaration) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

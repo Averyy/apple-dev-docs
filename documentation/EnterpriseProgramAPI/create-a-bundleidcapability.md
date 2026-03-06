@@ -9,6 +9,10 @@ Enable a capability for a bundle ID.
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/bundleIdCapabilities`
+
 ## See Also
 
 - [Disable a Capability](delete-a-bundleidcapability.md)

@@ -14,6 +14,10 @@ The result of resolving the repeat mode for a play media intent.
 object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result
 ```
 
+## Properties
+
+- `resolutionResult` (PlaybackRepeatModeResolutionResult) *(required)*: The result of resolving the repeat mode for a play media intent.
+
 ## See Also
 
 - [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md)

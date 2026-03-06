@@ -14,6 +14,11 @@ An error response that indicates an app transaction doesn’t exist for the spec
 object AppTransactionDoesNotExistError
 ```
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

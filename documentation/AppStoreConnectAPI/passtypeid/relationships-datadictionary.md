@@ -20,6 +20,10 @@ object PassTypeId.Relationships
 - [object PassTypeId.Relationships.Certificates](passtypeid/relationships-data.dictionary/certificates-data.dictionary.md)
   The data structure that represents a pass type id resource.
 
+## Properties
+
+- `certificates` (PassTypeId.Relationships.Certificates)
+
 
 ---
 

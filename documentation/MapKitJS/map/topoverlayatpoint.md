@@ -35,7 +35,7 @@ document.querySelector(".mk-map-view").addEventListener("mousemove", function(ev
 
 ## Parameters
 
-- `point`: A point in the page’s coordinate system, such as   when handling a mouse event.
+- `point`: A point in the page’s coordinate system, such as `new DOMPoint(event.pageX, event.pageY)` when handling a mouse event.
 
 ## See Also
 

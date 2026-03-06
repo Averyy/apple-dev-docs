@@ -22,6 +22,12 @@ object AppEncryptionDeclarationDocumentCreateRequest.Data
 - [object AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app encryption declaration document create request resource.
 
+## Properties
+
+- `attributes` (AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

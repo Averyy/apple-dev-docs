@@ -30,6 +30,14 @@ object GameCenterAchievementV2
 - [object GameCenterAchievementV2.Relationships](gamecenterachievementv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `attributes` (GameCenterAchievementV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterAchievementV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2CreateRequest](gamecenterachievementv2createrequest.md)

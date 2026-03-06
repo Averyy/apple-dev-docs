@@ -27,7 +27,7 @@ The member data frames must all have the same columns (count, names, and types).
 ## Parameters
 
 - `groups`: An array of tuples. Each tuple pairs a key with a data frame type.
-- `groupKeysColumnName`: The name of the grouping key column the row grouping creates when it generates a data   frame, such as its   or   methods.
+- `groupKeysColumnName`: The name of the grouping key column the row grouping creates when it generates a data frame, such as its [`ungrouped()`](rowgrouping/ungrouped().md) or [`counts(order:)`](rowgrouping/counts(order:).md) methods.
 
 ## See Also
 

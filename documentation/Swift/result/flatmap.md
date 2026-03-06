@@ -47,7 +47,7 @@ let result = getNextInteger().flatMap { getNextAfterInteger($0) }
 
 ## Parameters
 
-- `transform`: A closure that takes the success value of the   instance.
+- `transform`: A closure that takes the success value of the instance.
 
 ## See Also
 

@@ -17,6 +17,12 @@ object EndUserLicenseAgreementTerritoriesLinkagesResponse
 ### Dictionaries
 - [object EndUserLicenseAgreementTerritoriesLinkagesResponse.Data](enduserlicenseagreementterritorieslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([EndUserLicenseAgreementTerritoriesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object EndUserLicenseAgreement](enduserlicenseagreement.md)

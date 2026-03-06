@@ -14,6 +14,12 @@ The name and location of a boat terminal.
 object BoatTerminal
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `address` (PostalAddress) *(required)*: The location of the boat terminal.
+- `name` (string) *(required)*: The name of the boat terminal.
+
 ## See Also
 
 - [object BoatTrip](boattrip.md)

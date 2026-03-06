@@ -17,6 +17,11 @@ object GameCenterLeaderboardReleaseCreateRequest.Data
 ### Objects
 - [object GameCenterLeaderboardReleaseCreateRequest.Data.Relationships](gamecenterleaderboardreleasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (GameCenterLeaderboardReleaseCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -21,6 +21,13 @@ object GameCenterLeaderboardSetsV2Response
 - links:
 - meta:
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetV2]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

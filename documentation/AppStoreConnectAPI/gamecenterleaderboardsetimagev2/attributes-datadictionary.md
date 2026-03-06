@@ -22,6 +22,14 @@ object GameCenterLeaderboardSetImageV2.Attributes
 - imageAsset:
 - uploadOperations:
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageV2.Relationships](gamecenterleaderboardsetimagev2/relationships-data.dictionary.md)

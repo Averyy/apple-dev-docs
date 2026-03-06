@@ -17,6 +17,12 @@ object App.Relationships.SubscriptionGroups
 ### Objects
 - [object App.Relationships.SubscriptionGroups.Data](app/relationships-data.dictionary/subscriptiongroups-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([App.Relationships.SubscriptionGroups.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

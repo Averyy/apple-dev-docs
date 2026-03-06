@@ -12,6 +12,11 @@
 object BetaAppReviewSubmissionWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (BetaAppReviewSubmission) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaAppReviewSubmission](betaappreviewsubmission.md)

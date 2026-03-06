@@ -17,7 +17,7 @@ set points(points: Coordinate[][]);
 
 #### Discussion
 
-MapKit JS represents the points in the polygon as an array of arrays of coordinates, or an array of coordinates. (For the latter, MapKit JS autowraps the array with an enclosing array). When reading this property, an array of arrays of coordinates always returns. This is an array of arrays because complex polygons can form from multiple polygons, with each array containing the points of a polygon. MapKit JS determines  of the aggregate polygon by the `fillRule` property in this object’s `style` property.
+MapKit JS represents the points in the polygon as an array of arrays of coordinates, or an array of coordinates. (For the latter, MapKit JS autowraps the array with an enclosing array). When reading this property, an array of arrays of coordinates always returns. This is an array of arrays because complex polygons can form from multiple polygons, with each array containing the points of a polygon. MapKit JS determines *insideness* of the aggregate polygon by the `fillRule` property in this object’s `style` property.
 
 A copy of the overlay’s array returns on read, so changing the array’s elements has no effect on the overlay. To change the overlay’s points, assign a new array. MapKit JS doesn’t draw an array of points with fewer than three elements on the map.
 

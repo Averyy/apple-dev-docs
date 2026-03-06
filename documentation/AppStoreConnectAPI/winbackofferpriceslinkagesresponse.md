@@ -17,6 +17,12 @@ object WinBackOfferPricesLinkagesResponse
 ### Dictionaries
 - [object WinBackOfferPricesLinkagesResponse.Data](winbackofferpriceslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([WinBackOfferPricesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

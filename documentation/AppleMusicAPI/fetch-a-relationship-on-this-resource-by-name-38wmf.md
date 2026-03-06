@@ -12,6 +12,60 @@ Fetch a station’s relationship using its identifier.
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/catalog/us/stations/ra.1582049480/radio-show
+```
+
+**Response**:
+
+```json
+{    
+     "data": [
+        {
+            "id": "1496850205",
+            "type": "apple-curators",
+            "href": "/v1/catalog/us/apple-curators/1496850205",
+            "attributes": {
+                "kind": "Show",
+                "name": "Easy Hits Radio with Sabi",
+                "showHostName": "Sabi",
+                "editorialNotes": {
+                    "name": "Easy Hits Radio with Sabi",
+                    "standard": "Sometimes all it takes to turn a day around is the warm ring of a familiar tune. On Apple Music, we created a show just for that. From Fleetwood Mac's “Dreams” to John Legend's “All of Me,” Easy Hits Radio is your home for the lighter side of pop.",
+                    "short": "Low-key songs to help you unwind.",
+                    "tagline": "Sabi"
+                },
+                "artwork": {
+                    "width": 1080,
+                    "height": 1080,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Features124/v4/91/1a/d8/911ad8da-6d42-6b06-e883-19ff6c7f3ba1/QkwtTVMtV1ctRWFzeUhpdHNSYWRpb19BREFNX0lEPTE0OTY4NTAyMDVfbmV3bG9nby5wbmc.png/{w}x{h}bb.jpg",
+                    "bgColor": "f4f4f4",
+                    "textColor1": "090909",
+                    "textColor2": "131212",
+                    "textColor3": "2a2a2a",
+                    "textColor4": "353434"
+                },
+                "shortName": "Easy Hits Radio",
+                "url": "https://music.apple.com/us/curator/easy-hits-radio-with-sabi/1496850205"
+            }
+        }
+    ]
+}
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/catalog/{storefront}/stations/{id}/{relationship}`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `include` ([string]): Additional relationships to include in the fetch.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+- `limit` (integer): The maximum number of related resources from the relationship.
+
 ## See Also
 
 - [object Stations](stations.md)

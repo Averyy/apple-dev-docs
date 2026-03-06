@@ -17,6 +17,10 @@ object AlternativeDistributionPackageCreateRequest.Data.Relationships
 ### Objects
 - [object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVersion](alternativedistributionpackagecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
 
+## Properties
+
+- `appStoreVersion` (AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVersion) *(required)*
+
 
 ---
 

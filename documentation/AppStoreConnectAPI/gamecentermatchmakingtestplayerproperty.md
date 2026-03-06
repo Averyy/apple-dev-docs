@@ -14,6 +14,12 @@ The data structure that represents a test player’s type and ID.
 object GameCenterMatchmakingTestPlayerProperty
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks): The link representations of the object.
+- `type` (string) *(required)*: The type of resource object.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

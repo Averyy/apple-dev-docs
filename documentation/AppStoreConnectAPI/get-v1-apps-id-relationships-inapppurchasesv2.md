@@ -8,6 +8,14 @@ Get a list of all in-app purchases IDs for a specific app.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/inAppPurchasesV2`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All In-App Purchases for an App](get-v1-apps-_id_-inapppurchasesv2.md)

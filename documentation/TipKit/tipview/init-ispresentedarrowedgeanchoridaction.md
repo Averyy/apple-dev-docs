@@ -28,9 +28,9 @@ Use a `TipView` when you want to indicate the UI element to which the tip applie
 ## Parameters
 
 - `tip`: The tip to display.
-- `isPresented`: A binding that will automatically update to true when a tip is displayed. This value can be changed to temporarily hide or show a currently displayable tip. If this value is  , the view will automatically disappear based on the tip’s status and display rules.
+- `isPresented`: A binding that will automatically update to true when a tip is displayed. This value can be changed to temporarily hide or show a currently displayable tip. If this value is `nil`, the view will automatically disappear based on the tip’s status and display rules.
 - `arrowEdge`: The edge of the tip view that displays the arrow.
-- `anchorID`: The identifier used to read the   of the anchoring view.
+- `anchorID`: The identifier used to read the `.bounds` of the anchoring view.
 - `action`: The closure to perform when the user triggers a tip’s action.
 
 ## See Also

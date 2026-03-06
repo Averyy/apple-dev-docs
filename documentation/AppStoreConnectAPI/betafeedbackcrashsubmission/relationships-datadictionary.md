@@ -19,6 +19,12 @@ object BetaFeedbackCrashSubmission.Relationships
 - [object BetaFeedbackCrashSubmission.Relationships.CrashLog](betafeedbackcrashsubmission/relationships-data.dictionary/crashlog-data.dictionary.md)
 - [object BetaFeedbackCrashSubmission.Relationships.Tester](betafeedbackcrashsubmission/relationships-data.dictionary/tester-data.dictionary.md)
 
+## Properties
+
+- `build` (BetaFeedbackCrashSubmission.Relationships.Build)
+- `crashLog` (BetaFeedbackCrashSubmission.Relationships.CrashLog)
+- `tester` (BetaFeedbackCrashSubmission.Relationships.Tester)
+
 
 ---
 

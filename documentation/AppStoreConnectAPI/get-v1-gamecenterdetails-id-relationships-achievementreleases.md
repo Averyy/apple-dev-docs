@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/achievementReleases`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)

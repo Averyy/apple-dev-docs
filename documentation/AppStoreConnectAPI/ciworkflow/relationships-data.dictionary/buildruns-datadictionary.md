@@ -12,6 +12,10 @@
 object CiWorkflow.Relationships.BuildRuns
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

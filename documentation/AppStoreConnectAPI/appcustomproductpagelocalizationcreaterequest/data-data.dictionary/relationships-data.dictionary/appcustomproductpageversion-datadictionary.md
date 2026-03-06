@@ -18,6 +18,10 @@ object AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCusto
 - [object AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCustomProductPageVersion.Data](appcustomproductpagelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpageversion-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app custom product page localization create request.
 
+## Properties
+
+- `data` (AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCustomProductPageVersion.Data) *(required)*
+
 
 ---
 

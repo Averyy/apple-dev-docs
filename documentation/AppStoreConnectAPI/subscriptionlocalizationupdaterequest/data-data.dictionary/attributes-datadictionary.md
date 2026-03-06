@@ -12,6 +12,11 @@
 object SubscriptionLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `name` (string)
+
 
 ---
 

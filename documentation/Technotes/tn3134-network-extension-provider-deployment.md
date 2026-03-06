@@ -161,10 +161,10 @@ Before starting development, request permission to use the `com.apple.developer.
 
 #### Revision History
 
--  Added sections for URL filter and hotspot providers.  Added visionOS entries to the appropriate tables.  Clarified the role of MDM in per-app configurations.  Made other minor editorial changes.
--  Clarified the Family Controls behaviour for content filter providers on iOS.
--  Updated for tvOS 17.
--  First published.
+- **2025-08-19** Added sections for URL filter and hotspot providers.  Added visionOS entries to the appropriate tables.  Clarified the role of MDM in per-app configurations.  Made other minor editorial changes.
+- **2023-11-28** Clarified the Family Controls behaviour for content filter providers on iOS.
+- **2023-10-03** Updated for tvOS 17.
+- **2022-09-06** First published.
 
 ## See Also
 

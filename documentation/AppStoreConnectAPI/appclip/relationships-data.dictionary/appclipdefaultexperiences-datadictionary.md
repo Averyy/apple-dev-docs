@@ -20,6 +20,12 @@ object AppClip.Relationships.AppClipDefaultExperiences
 - [object AppClip.Relationships.AppClipDefaultExperiences.Data](appclip/relationships-data.dictionary/appclipdefaultexperiences-data.dictionary/data-data.dictionary.md)
   The links to the related Default App Clip Experiences resource and the relationship’s self-link.
 
+## Properties
+
+- `data` ([AppClip.Relationships.AppClipDefaultExperiences.Data]): The ID and type of the related Default App Clip Experiences resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object AppClip.Relationships.App](appclip/relationships-data.dictionary/app-data.dictionary.md)

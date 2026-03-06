@@ -17,6 +17,12 @@ object AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponse
 ### Dictionaries
 - [object AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponse.Data](appavailabilityv2territoryavailabilitieslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

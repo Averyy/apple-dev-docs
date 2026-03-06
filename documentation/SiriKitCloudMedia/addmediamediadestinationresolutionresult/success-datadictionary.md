@@ -14,6 +14,10 @@ A media destination that successfully matches an intent.
 object AddMediaMediaDestinationResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedMediaDestination` (MediaDestination) *(required)*: The user’s library or a playlist the user wants to add media items to.
+
 ## See Also
 
 - [object MediaDestination](mediadestination.md)

@@ -17,6 +17,12 @@ object AppClipAppClipDefaultExperiencesLinkagesResponse
 ### Dictionaries
 - [object AppClipAppClipDefaultExperiencesLinkagesResponse.Data](appclipappclipdefaultexperienceslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppClipAppClipDefaultExperiencesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppClip](appclip.md)

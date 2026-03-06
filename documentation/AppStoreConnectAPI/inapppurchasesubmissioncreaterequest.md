@@ -17,6 +17,10 @@ object InAppPurchaseSubmissionCreateRequest
 ### Objects
 - [object InAppPurchaseSubmissionCreateRequest.Data](inapppurchasesubmissioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseSubmissionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseSubmissionResponse](inapppurchasesubmissionresponse.md)

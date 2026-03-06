@@ -70,8 +70,8 @@ This will create an annotated feature list which has the following structure:
 
 ## Parameters
 
-- `parameters`: Annotation parameters for using specific column names from the data frame.   By default the data frame is expected to have columns   and  .
-- `continueOnFailure`: A Boolean value indicating whether to continue reading the dataframe   after encountering a row that is invalid. The default value is  .
+- `parameters`: Annotation parameters for using specific column names from the data frame. By default the data frame is expected to have columns `filePath` and `annotation`.
+- `continueOnFailure`: A Boolean value indicating whether to continue reading the dataframe after encountering a row that is invalid. The default value is `false`.
 
 
 ---

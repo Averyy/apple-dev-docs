@@ -38,7 +38,7 @@ print(bugs)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 
 ---

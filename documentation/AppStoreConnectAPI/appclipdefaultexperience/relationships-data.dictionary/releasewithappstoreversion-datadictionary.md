@@ -20,6 +20,11 @@ object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion
 - [object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data](appclipdefaultexperience/relationships-data.dictionary/releasewithappstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Store Versions resource.
 
+## Properties
+
+- `data` (AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data): The ID and type of the related App Store Versions resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipDefaultExperience.Relationships.AppClip](appclipdefaultexperience/relationships-data.dictionary/appclip-data.dictionary.md)

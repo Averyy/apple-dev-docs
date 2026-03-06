@@ -25,7 +25,7 @@ Integrate hardware sensing features to produce augmented reality apps and games.
 ## Topics
 
 ### visionOS
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [class ARKitSession](arkitsession.md)
   The main entry point for receiving data from ARKit.

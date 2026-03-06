@@ -20,6 +20,11 @@ object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree
 - [object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree.CallStacks](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary/callstacktree-data.dictionary/callstacks-data.dictionary.md)
   The root call stack frames of the diagnostic log.
 
+## Properties
+
+- `callStackPerThread` (boolean): A Boolean value that indicates whether the call stack representation supports multiple threads.
+- `callStacks` ([diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree.CallStacks]): The call stack representation of the diagnostic log.
+
 ## See Also
 
 - [object diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary/diagnosticmetadata-data.dictionary.md)

@@ -17,6 +17,12 @@ object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesRespo
 ### Dictionaries
 - [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse.Data](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)

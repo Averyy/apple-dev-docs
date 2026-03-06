@@ -14,6 +14,11 @@ The type and ID of a related Build Bundle File Sizes resource.
 object BuildBundle.Relationships.BuildBundleFileSizes.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Build Bundle File Sizes resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

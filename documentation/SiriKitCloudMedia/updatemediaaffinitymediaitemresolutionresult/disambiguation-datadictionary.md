@@ -14,6 +14,10 @@ A result that requires the user to choose from multiple media items before proce
 object UpdateMediaAffinityMediaItemResolutionResult.Disambiguation
 ```
 
+## Properties
+
+- `mediaItemsToDisambiguate` ([MediaItem]) *(required)*: Media items that might match the user’s intent.
+
 ## See Also
 
 - [object UpdateMediaAffinityMediaItemResolutionResult.Success](updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.md)

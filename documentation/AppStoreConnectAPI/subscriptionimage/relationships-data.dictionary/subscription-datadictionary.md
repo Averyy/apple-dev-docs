@@ -19,6 +19,10 @@ object SubscriptionImage.Relationships.Subscription
 - [object SubscriptionImage.Relationships.Subscription.Data](subscriptionimage/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
   The data structure that represents the subscription for a subscription image resource.
 
+## Properties
+
+- `data` (SubscriptionImage.Relationships.Subscription.Data)
+
 
 ---
 

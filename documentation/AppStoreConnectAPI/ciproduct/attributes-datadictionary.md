@@ -14,6 +14,12 @@ The attributes that describe a Products resource.
 object CiProduct.Attributes
 ```
 
+## Properties
+
+- `createdDate` (date-time): The date when you created the Xcode Cloud product.
+- `name` (string): The name of the Xcode Cloud product.
+- `productType` (string): A string that indicates whether the Xcode Cloud product is a framework or an app.
+
 ## See Also
 
 - [object CiProduct.Relationships](ciproduct/relationships-data.dictionary.md)

@@ -20,6 +20,12 @@ object UserVisibleAppsLinkagesResponse
 - [object UserVisibleAppsLinkagesResponse.Data](uservisibleappslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([UserVisibleAppsLinkagesResponse.Data]) *(required)*: The object types and IDs of the related resources.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links including the self-link and links to the related data.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [Get All Visible App Resource IDs for a User](get-v1-users-_id_-relationships-visibleapps.md)

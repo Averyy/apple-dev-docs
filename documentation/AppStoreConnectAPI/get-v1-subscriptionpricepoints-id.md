@@ -8,6 +8,15 @@ Get details about a specific subscription price point.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionPricePoints/{id}`
+
+## Parameters
+
+- `fields[subscriptionPricePoints]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Subscription Price Point Equalizations](get-v1-subscriptionpricepoints-_id_-equalizations.md)

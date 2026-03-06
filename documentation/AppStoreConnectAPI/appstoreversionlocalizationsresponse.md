@@ -14,6 +14,13 @@ A response that contains a list of App Store Version Localization resources.
 object AppStoreVersionLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([AppStoreVersionLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)

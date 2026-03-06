@@ -22,6 +22,12 @@ object AppStoreVersionCreateRequest.Data
 - [object AppStoreVersionCreateRequest.Data.Relationships](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppStoreVersionCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppStoreVersionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

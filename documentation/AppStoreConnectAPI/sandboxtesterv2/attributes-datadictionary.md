@@ -12,6 +12,16 @@
 object SandboxTesterV2.Attributes
 ```
 
+## Properties
+
+- `acAccountName` (string)
+- `applePayCompatible` (boolean)
+- `firstName` (string)
+- `interruptPurchases` (boolean)
+- `lastName` (string)
+- `subscriptionRenewalRate` (string)
+- `territory` (TerritoryCode)
+
 
 ---
 

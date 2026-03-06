@@ -16,6 +16,58 @@ Get information for a specific App Store version experiment.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “appStoreVersionExperiments”,
+    “id” : “1a22d9a7-f574-4669-b1ca-1ba88f786c19”,
+    “attributes” : {
+      “name” : “PPO Test 1”,
+      “platform” : “IOS”,
+      “trafficProportion” : 50,
+      “state” : “PREPARE_FOR_SUBMISSION”,
+      “reviewRequired” : true,
+      “startDate” : null,
+      “endDate” : null
+    },
+    “relationships” : {
+      “appStoreVersionExperimentTreatments” : {
+        “links” : {
+          “self” : “https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19/relationships/appStoreVersionExperimentTreatments”,
+          “related” : “https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19/appStoreVersionExperimentTreatments”
+        }
+      }
+    },
+    “links” : {
+      “self” : “https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19”
+    }
+  },
+  “links” : {
+    “self” : “https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19”
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/{id}`
+
+## Parameters
+
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `include` ([string])
+- `limit[appStoreVersionExperimentTreatments]` (integer)
+- `limit[controlVersions]` (integer)
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

@@ -22,7 +22,7 @@ func hash(into hasher: inout Hasher)
 
 ## Parameters
 
-- `hasher`: The hasher to use when combining the components   of this instance.
+- `hasher`: The hasher to use when combining the components of this instance.
 
 
 ---

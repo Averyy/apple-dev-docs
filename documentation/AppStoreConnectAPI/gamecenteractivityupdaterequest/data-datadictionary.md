@@ -18,6 +18,12 @@ object GameCenterActivityUpdateRequest.Data
 - [object GameCenterActivityUpdateRequest.Data.Attributes](gamecenteractivityupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
 
+## Properties
+
+- `attributes` (GameCenterActivityUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -14,6 +14,10 @@ An object that identifies a one-time request, or an individual instance of a rec
 object CancellationRequest
 ```
 
+## Properties
+
+- `requestId` (string): An identifier for the request to cancel. For a one-time request, use the request’s UUID. For a recurring request, use the parentRequest’s UUID.
+
 ## See Also
 
 - [Cancel request](cancel-request.md)

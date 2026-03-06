@@ -17,6 +17,10 @@ object SubscriptionOfferCodeCustomCode.Relationships.OfferCode
 ### Objects
 - [object SubscriptionOfferCodeCustomCode.Relationships.OfferCode.Data](subscriptionoffercodecustomcode/relationships-data.dictionary/offercode-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionOfferCodeCustomCode.Relationships.OfferCode.Data)
+
 
 ---
 

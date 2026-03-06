@@ -14,6 +14,14 @@ Attributes that describe an activity resource.
 object GameCenterActivityImage.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `uploadOperations` ([UploadOperation])
+
 
 ---
 

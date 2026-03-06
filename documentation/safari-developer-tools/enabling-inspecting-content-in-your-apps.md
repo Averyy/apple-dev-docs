@@ -20,11 +20,15 @@ Web content is often dynamic, delivered by a server—not in the app—and easil
 
 Across all platforms supporting `WKWebView` or `JSContext`, a new property is available called `isInspectable` (`inspectable` in Objective-C). It defaults to `false`, and you can set it to `true` to opt-in to content being inspectable. This decision is made for each individual `WKWebView` and `JSContext` to prevent unintentionally making it enabled for a view or context you don’t intend to be inspectable. So, for example, to make a `WKWebView` `inspectable`, you would:
 
+**Swift**
+
 ```swift
 let webConfiguration = WKWebViewConfiguration()
 let webView = WKWebView(frame: .zero, configuration: webConfiguration)
 webView.isInspectable = true
 ```
+
+**Objective-C**
 
 ```objc
 WKWebViewConfiguration *webConfiguration = [WKWebViewConfiguration new];
@@ -34,15 +38,21 @@ webView.inspectable = YES;
 
 For `JSContext`, matching API is available, with the addition of C API for developers using `JSGlobalContextRef`:
 
+**Swift**
+
 ```swift
 let jsContext = JSContext()
 jsContext?.isInspectable = true
 ```
 
+**Objective-C**
+
 ```objc
 JSContext *jsContext = [JSContext new];
 jsContext.inspectable = YES;
 ```
+
+**C**
 
 ```c
 JSGlobalContextRef jsContextRef = JSGlobalContextCreate(NULL);
@@ -55,19 +65,25 @@ Once you’ve enabled inspection for your app, you can inspect it from Safari’
 
 #### Provide Readable Names for Inspectable Jscontexts
 
-Unlike `WKWebView`, which automatically gets a name based on the page currently loaded in the view, every `JSContext` with `inspectable` enabled will be listed as  in Safari’s  menu. Provide a unique, human-readable name for each inspectable `JSContext` to make it easier for you and your customers to determine what the `JSContext` represents. For example, if your app runs different pieces of JavaScript on behalf of the user, you should give each `JSContext` a name based on what runs inside the context.
+Unlike `WKWebView`, which automatically gets a name based on the page currently loaded in the view, every `JSContext` with `inspectable` enabled will be listed as **JSContext** in Safari’s **Develop** menu. Provide a unique, human-readable name for each inspectable `JSContext` to make it easier for you and your customers to determine what the `JSContext` represents. For example, if your app runs different pieces of JavaScript on behalf of the user, you should give each `JSContext` a name based on what runs inside the context.
 
 API is available to set the user-visible `name` of a `JSContext`:
+
+**Swift**
 
 ```swift
 let jsContext = JSContext()
 jsContext?.name = "Context name"
 ```
 
+**Objective-C**
+
 ```objc
 JSContext *jsContext = [JSContext new];
 jsContext.name = @"Context name";
 ```
+
+**C**
 
 ```c
 JSGlobalContextRef jsContextRef = JSGlobalContextCreate(NULL);
@@ -80,11 +96,15 @@ For apps linked against an SDK before macOS 13.3 and iOS 16.4, `WKWebView`s and 
 
 Apps that support older versions of macOS and iOS while linked against the most recent SDK will not get the previous behavior of all content being inspectable in debug builds to avoid confusion about what will and will not be inspectable by customers. Apps targeting older OS versions but linking against the new SDK can use this new API conditionally on OS versions that support it. To conditionally guard usage of the API:
 
+**Swift**
+
 ```swift
 if #available(macOS 13.3, iOS 16.4, tvOS 16.4, *) {
     webView.isInspectable = true
 }
 ```
+
+**Objective-C**
 
 ```objc
 if (@available(macOS 13.3, iOS 16.4, tvOS 16.4, *))

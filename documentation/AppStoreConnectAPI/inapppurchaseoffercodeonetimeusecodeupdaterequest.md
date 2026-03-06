@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest
 - [object InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data](inapppurchaseoffercodeonetimeusecodeupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

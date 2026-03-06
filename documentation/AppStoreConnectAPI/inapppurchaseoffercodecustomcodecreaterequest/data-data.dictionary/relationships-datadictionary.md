@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary.md)
   The request body you use to create an in-app purchase offer code custom code for data relationships.
 
+## Properties
+
+- `offerCode` (InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Attributes](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

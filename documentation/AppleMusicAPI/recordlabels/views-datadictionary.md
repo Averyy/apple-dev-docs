@@ -22,6 +22,11 @@ object RecordLabels.Views
 - [object RecordLabels.Views.RecordLabelsTopReleasesView](recordlabels/views-data.dictionary/recordlabelstopreleasesview.md)
   A relationship view from this record label to a selection of its top releases.
 
+## Properties
+
+- `latest-releases` (RecordLabels.Views.RecordLabelsLatestReleasesView): The latest releases for the record label.
+- `top-releases` (RecordLabels.Views.RecordLabelsTopReleasesView): The top releases for the record label.
+
 ## See Also
 
 - [object RecordLabels.Attributes](recordlabels/attributes-data.dictionary.md)

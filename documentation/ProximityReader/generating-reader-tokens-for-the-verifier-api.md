@@ -27,7 +27,17 @@ A JWT has two sections, a header and a payload. The header describes the token a
 
 Construct a token with these fields in the header:
 
+- **`alg`**: The algorithm you use to sign the token. Use the ES-256 algorithm to sign your token.
+- **`kid`**: A key identifier that represents your server’s signing key. You can obtain this value from Apple Business Register.
+- **`typ`**: A type parameter that you set to `JWT`.
+
 In the payload section of the token, include the following:
+
+- **`aud`**: The audience of the token. Set this value to `apple-identityservices-v1`.
+- **`iss`**: The issuer of the token. This is the Brand ID that you obtain from Apple Business Register.
+- **`sub`**: The subject of the token. This is the reader instance identifier obtained from your app.
+- **`iat`**: The Issued At registered claim key. The value of this claim indicates the token creation time, in terms of the number of seconds since UNIX Epoch, in UTC.
+- **`exp`**: The Expiration Time registered claim key. The value of this claim indicates when the token expires, in terms of the number of seconds since UNIX Epoch, in UTC. This must be set to a value after and no later than 5 minutes after the value of `iat`.
 
 When decoded, a token for use with the Verifier API has the following format:
 

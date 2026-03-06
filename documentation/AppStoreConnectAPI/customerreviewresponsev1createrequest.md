@@ -20,6 +20,10 @@ object CustomerReviewResponseV1CreateRequest
 - [object CustomerReviewResponseV1CreateRequest.Data](customerreviewresponsev1createrequest/data-data.dictionary.md)
   The data element of the request body for creating a response to a customer review.
 
+## Properties
+
+- `data` (CustomerReviewResponseV1CreateRequest.Data) *(required)*: The resource data for your customer review response.
+
 ## See Also
 
 - [object CustomerReviewResponseV1Response](customerreviewresponsev1response.md)

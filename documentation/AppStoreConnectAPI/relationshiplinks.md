@@ -14,6 +14,11 @@ Links related to the response document, including self links.
 object RelationshipLinks
 ```
 
+## Properties
+
+- `related` (uri-reference): The link to the related documents.
+- `self` (uri-reference): The link that produced the current document.
+
 ## See Also
 
 - [object PagedDocumentLinks](pageddocumentlinks.md)

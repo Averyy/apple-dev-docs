@@ -12,6 +12,14 @@ Get a list of all experiments IDs for an App Store version of an app across all 
 
 - id: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) response.
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/appStoreVersionExperiments`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

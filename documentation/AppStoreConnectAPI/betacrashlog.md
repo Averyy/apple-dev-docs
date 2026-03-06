@@ -18,6 +18,13 @@ object BetaCrashLog
 - [object BetaCrashLog.Attributes](betacrashlog/attributes-data.dictionary.md)
   Attributes that describe a beta crash log resource.
 
+## Properties
+
+- `attributes` (BetaCrashLog.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BetaCrashLogResponse](betacrashlogresponse.md)

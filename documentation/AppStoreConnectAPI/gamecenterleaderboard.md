@@ -20,6 +20,14 @@ object GameCenterLeaderboard
 - [object GameCenterLeaderboard.Attributes](gamecenterleaderboard/attributes-data.dictionary.md)
 - [object GameCenterLeaderboard.Relationships](gamecenterleaderboard/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboard.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboard.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

@@ -14,6 +14,10 @@ The data structure that represents an app tag update request resource.
 object AppTagUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `visibleInAppStore` (boolean)
+
 
 ---
 

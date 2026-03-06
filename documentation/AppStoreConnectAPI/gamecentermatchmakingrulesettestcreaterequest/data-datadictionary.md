@@ -20,6 +20,11 @@ object GameCenterMatchmakingRuleSetTestCreateRequest.Data
 - [object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships](gamecentermatchmakingrulesettestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships of the rule set to other objects.
 
+## Properties
+
+- `relationships` (GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

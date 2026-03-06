@@ -14,6 +14,11 @@ An error that indicates the consumption percentage is outside the valid range.
 object ConsumptionPercentageOutOfRangeError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object ConsumptionPercentageAutoRenewableSubscriptionError](consumptionpercentageautorenewablesubscriptionerror.md)

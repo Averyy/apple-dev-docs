@@ -14,6 +14,11 @@ Describe the upper and lower integer bound of the attribute.
 object IntegerRange
 ```
 
+## Properties
+
+- `maximum` (integer)
+- `minimum` (integer)
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

@@ -24,6 +24,12 @@ object GameCenterMatchmakingRuleSet.Relationships
 - [object GameCenterMatchmakingRuleSet.Relationships.Teams](gamecentermatchmakingruleset/relationships-data.dictionary/teams-data.dictionary.md)
   The teams belonging to the rule set.
 
+## Properties
+
+- `matchmakingQueues` (GameCenterMatchmakingRuleSet.Relationships.MatchmakingQueues): The queues belonging to the rule set.
+- `rules` (GameCenterMatchmakingRuleSet.Relationships.Rules): The rules belonging to the rule set.
+- `teams` (GameCenterMatchmakingRuleSet.Relationships.Teams): The teams belonging to the rule set.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSet.Attributes](gamecentermatchmakingruleset/attributes-data.dictionary.md)

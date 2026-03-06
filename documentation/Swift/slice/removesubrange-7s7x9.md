@@ -31,11 +31,11 @@ print(bugs)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `bounds`: The subrange of the collection to remove. The bounds   of the range must be valid indices of the collection.
+- `bounds`: The subrange of the collection to remove. The bounds of the range must be valid indices of the collection.
 
 
 ---

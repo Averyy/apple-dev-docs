@@ -17,6 +17,19 @@ A surface shader that defines properties for a RealityKit Physically Based Rende
 
 #### Parameter Descriptions
 
+- **`Base Color`**: The base display color of the surface. The color of an object under pure white light.
+- **`Emissive Color`**: The self-illumination color of the surface. The color the surface displays as if it’s self-lit.
+- **`Normal`**: The normal vector in tangent space. The default is `(0,0,1)`.
+- **`Roughness`**: The level of roughness of the surface. This value ranges between `0` and `1.0`, with `0` outputting a perfectly specular surface and `1.0` indicating maximum roughness. The default is `0.5`.
+- **`Metallic`**: Indicates whether a surface is metallic. Set this value to `1` for metallic surfaces, and to `0` for nonmetallic surfaces. The default is `0.0`.
+- **`Ambient Occlusion`**: The degree of ambient lighting that the surface receives. This value simulates soft shadows and subtle shading.
+- **`Specular`**: The brightness of the specular highlight of the material.
+- **`Opacity`**: The level of opaqueness of the surface. If the value of this parameter is `1.0`, the surface is fully opaque. If the value is less than `1.0`, the surface appears translucent. If the value is `0`, the surface is completely transparent. The default is `1.0`.
+- **`Opacity Threshold`**: The threshold for whether a portion of the surface renders based on its opacity level. A value of `0.0` means that no additional masking occurs. If the value is greater than `0.0`, the node renders only areas of the surface with an `Opacity` value greater than the value of this parameter. This parameter can be turned on or off. The default value is `0.0`.
+- **`Clearcoat`**: A second clear reflective layer on the surface. This property produces a glossy finish. The default is `0.0`.
+- **`Clearcoat Roughness`**: The level of roughness of the surfaces clearcoat layer. The default is `0.01`.
+- **`Has Premultiplied Alpha`**: A Boolean value to let the node know if input parameters have a premultiplied alpha.
+
 #### Discussion
 
 The PBR Surface node produces a custom surface based on its input parameters. Connect the output of the PBR Surface node to the `Custom Surface` output of your material.

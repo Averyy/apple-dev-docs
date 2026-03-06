@@ -34,8 +34,8 @@ Prefer this method over `reduce(_:_:)` for efficiency when the result is a copy-
 
 ## Parameters
 
-- `initialResult`: The value to use as the initial accumulating value.   The   closure receives   the first   time the closure executes.
-- `updateAccumulatingResult`: A closure that combines an accumulating   value and an element of the asynchronous sequence into a new   accumulating value, for use in the next call of the    closure or returned to the caller.
+- `initialResult`: The value to use as the initial accumulating value. The `nextPartialResult` closure receives `initialResult` the first time the closure executes.
+- `updateAccumulatingResult`: A closure that combines an accumulating value and an element of the asynchronous sequence into a new accumulating value, for use in the next call of the `nextPartialResult` closure or returned to the caller.
 
 
 ---

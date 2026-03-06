@@ -6,13 +6,18 @@
 An error that indicates the notification type or subtype is invalid.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object InvalidNotificationTypeError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string): For a list of valid notification types and subtypes, see [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) and [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype). If you provide both a notification type and subtype, ensure the two are a valid combination, as documented on [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype).
 
 ## See Also
 

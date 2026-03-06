@@ -28,8 +28,8 @@ let audienceCenterPoint = SpatialTemplateElementPosition.app.offsetBy(x: 0, z: 4
 
 ## Parameters
 
-- `x`: The distance from the current position, in meters, along   the x-axis. You can specify positive or negative values to   specify new positions on either side of the original position.
-- `z`: The distance from the current position, in meters, along   the z-axis. You can specify positive or negative values to specify   new positions on either side of the original position.
+- `x`: The distance from the current position, in meters, along the x-axis. You can specify positive or negative values to specify new positions on either side of the original position.
+- `z`: The distance from the current position, in meters, along the z-axis. You can specify positive or negative values to specify new positions on either side of the original position.
 
 
 ---

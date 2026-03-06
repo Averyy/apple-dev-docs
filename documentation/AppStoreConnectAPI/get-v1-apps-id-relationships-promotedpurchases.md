@@ -8,6 +8,14 @@ Get a list of resource IDs representing promoted purchases for an auto-renewable
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/promotedPurchases`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Promote a Purchase](post-v1-promotedpurchases.md)

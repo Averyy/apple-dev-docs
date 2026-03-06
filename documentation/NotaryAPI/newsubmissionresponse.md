@@ -26,6 +26,11 @@ You receive a structure of this type in response to a call to the [`Submit Softw
 - [object NewSubmissionResponse.Meta](newsubmissionresponse/meta-data.dictionary.md)
   An empty object.
 
+## Properties
+
+- `data` (NewSubmissionResponse.Data): Data that describes the result of the submission request.
+- `meta` (NewSubmissionResponse.Meta): An empty object that you can ignore.
+
 ## See Also
 
 - [Submit Software](submit-software.md)

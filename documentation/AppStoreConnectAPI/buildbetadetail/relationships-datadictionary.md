@@ -20,6 +20,10 @@ object BuildBetaDetail.Relationships
 - [object BuildBetaDetail.Relationships.Build](buildbetadetail/relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `build` (BuildBetaDetail.Relationships.Build)
+
 ## See Also
 
 - [object BuildBetaDetail.Attributes](buildbetadetail/attributes-data.dictionary.md)

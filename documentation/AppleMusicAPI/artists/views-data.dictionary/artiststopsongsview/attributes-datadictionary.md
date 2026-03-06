@@ -14,6 +14,10 @@ Songs associated with the artist based on popularity in the current storefront.
 object Artists.Views.ArtistsTopSongsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

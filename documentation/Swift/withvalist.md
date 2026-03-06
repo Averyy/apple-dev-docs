@@ -36,8 +36,8 @@ If you need to pass an optional pointer as a `CVarArg` argument, use the `Int(bi
 
 ## Parameters
 
-- `args`: An array of arguments to convert to a C   pointer.
-- `body`: A closure with a   parameter that references the   arguments passed as  . If   has a return value, that value   is also used as the return value for the   function.   The pointer argument is valid only for the duration of the function’s   execution.
+- `args`: An array of arguments to convert to a C `va_list` pointer.
+- `body`: A closure with a `CVaListPointer` parameter that references the arguments passed as `args`. If `body` has a return value, that value is also used as the return value for the `withVaList(_:)` function. The pointer argument is valid only for the duration of the function’s execution.
 
 ## See Also
 

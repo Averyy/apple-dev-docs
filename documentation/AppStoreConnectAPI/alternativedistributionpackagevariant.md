@@ -25,6 +25,13 @@ To learn more about the responses that include alternative distribution package 
 ### Objects
 - [object AlternativeDistributionPackageVariant.Attributes](alternativedistributionpackagevariant/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AlternativeDistributionPackageVariant.Attributes)
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package variant.
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

@@ -20,6 +20,10 @@ object UserUpdateRequest.Data.Relationships.VisibleApps
 - [object UserUpdateRequest.Data.Relationships.VisibleApps.Data](userupdaterequest/data-data.dictionary/relationships-data.dictionary/visibleapps-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
+## Properties
+
+- `data` ([UserUpdateRequest.Data.Relationships.VisibleApps.Data])
+
 
 ---
 

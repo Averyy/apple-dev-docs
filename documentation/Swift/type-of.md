@@ -26,7 +26,7 @@ The dynamic type, which is a metatype instance.
 
 #### Discussion
 
-You can use the `type(of:)` function to find the dynamic type of a value, particularly when the dynamic type is different from the static type. The  of a value is the known, compile-time type of the value. The  of a value is the value’s actual type at run-time, which can be a subtype of its concrete type.
+You can use the `type(of:)` function to find the dynamic type of a value, particularly when the dynamic type is different from the static type. The *static type* of a value is the known, compile-time type of the value. The *dynamic type* of a value is the value’s actual type at run-time, which can be a subtype of its concrete type.
 
 In the following code, the `count` variable has the same static and dynamic type: `Int`. When `count` is passed to the `printInfo(_:)` function, however, the `value` parameter has a static type of `Any` (the type declared for the parameter) and a dynamic type of `Int`.
 
@@ -41,7 +41,7 @@ printInfo(count)
 // '5' of type 'Int'
 ```
 
-The dynamic type returned from `type(of:)` is a  (`T.Type`) for a class, structure, enumeration, or other nonprotocol type `T`, or an  (`P.Type`) for a protocol or protocol composition `P`. When the static type of the value passed to `type(of:)` is constrained to a class or protocol, you can use that metatype to access initializers or other static members of the class or protocol.
+The dynamic type returned from `type(of:)` is a *concrete metatype* (`T.Type`) for a class, structure, enumeration, or other nonprotocol type `T`, or an *existential metatype* (`P.Type`) for a protocol or protocol composition `P`. When the static type of the value passed to `type(of:)` is constrained to a class or protocol, you can use that metatype to access initializers or other static members of the class or protocol.
 
 For example, the parameter passed as `value` to the `printSmileyInfo(_:)` function in the example below is an instance of the `Smiley` class or one of its subclasses. The function uses `type(of:)` to find the dynamic type of `value`, which itself is an instance of the `Smiley.Type` metatype.
 

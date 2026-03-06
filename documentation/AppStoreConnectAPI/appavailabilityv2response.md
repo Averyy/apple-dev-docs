@@ -14,6 +14,12 @@ A response that contains a single app availability resource.
 object AppAvailabilityV2Response
 ```
 
+## Properties
+
+- `data` (AppAvailabilityV2) *(required)*
+- `included` ([TerritoryAvailability])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

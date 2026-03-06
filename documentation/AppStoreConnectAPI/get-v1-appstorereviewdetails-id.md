@@ -8,6 +8,17 @@ Get App Review details you provided, including contact information, demo account
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreReviewDetails/{id}`
+
+## Parameters
+
+- `fields[appStoreReviewDetails]` ([string])
+- `include` ([string])
+- `limit[appStoreReviewAttachments]` (integer)
+- `fields[appStoreReviewAttachments]` ([string])
+
 ## See Also
 
 - [Create an App Store Review Detail](post-v1-appstorereviewdetails.md)

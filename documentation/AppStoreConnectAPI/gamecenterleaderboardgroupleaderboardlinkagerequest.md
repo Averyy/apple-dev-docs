@@ -20,6 +20,10 @@ object GameCenterLeaderboardGroupLeaderboardLinkageRequest
 - [object GameCenterLeaderboardGroupLeaderboardLinkageRequest.Data](gamecenterleaderboardgroupleaderboardlinkagerequest/data-data.dictionary.md)
   The data structure that represents a leaderboard resource.
 
+## Properties
+
+- `data` (GameCenterLeaderboardGroupLeaderboardLinkageRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

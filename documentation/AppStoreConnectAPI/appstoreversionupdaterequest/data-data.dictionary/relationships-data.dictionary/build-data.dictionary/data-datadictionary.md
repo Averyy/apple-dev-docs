@@ -14,6 +14,11 @@ The type and ID of a resource that you’re relating with the resource you’re 
 object AppStoreVersionUpdateRequest.Data.Relationships.Build.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

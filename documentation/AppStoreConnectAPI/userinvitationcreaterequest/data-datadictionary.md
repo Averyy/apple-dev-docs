@@ -22,6 +22,12 @@ object UserInvitationCreateRequest.Data
 - [object UserInvitationCreateRequest.Data.Relationships](userinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (UserInvitationCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
+- `relationships` (UserInvitationCreateRequest.Data.Relationships): The types and IDs of the related data to update.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

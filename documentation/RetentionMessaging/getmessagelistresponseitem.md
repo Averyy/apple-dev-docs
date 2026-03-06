@@ -18,6 +18,11 @@ object GetMessageListResponseItem
 
 The [`Get Message List`](get-message-list.md) endpoint returns an array of these values in its response.
 
+## Properties
+
+- `messageIdentifier` (messageIdentifier): The identifier of the message.
+- `messageState` (messageState): The current state of the message.
+
 ## See Also
 
 - [Upload Message](upload-message.md)

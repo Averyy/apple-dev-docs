@@ -33,7 +33,7 @@ let q = Int8(truncatingIfNeeded: p)
 // 'q' has a binary representation of 00001100
 ```
 
-When the bit width of `T` is less than this type’s bit width, the result is  to fill the remaining bits. That is, if `source` is negative, the result is padded with ones; otherwise, the result is padded with zeros.
+When the bit width of `T` is less than this type’s bit width, the result is *sign-extended* to fill the remaining bits. That is, if `source` is negative, the result is padded with ones; otherwise, the result is padded with zeros.
 
 ```swift
 let u: Int8 = 21

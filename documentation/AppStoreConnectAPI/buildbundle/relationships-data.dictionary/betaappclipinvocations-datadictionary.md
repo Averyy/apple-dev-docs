@@ -20,6 +20,12 @@ object BuildBundle.Relationships.BetaAppClipInvocations
 - [object BuildBundle.Relationships.BetaAppClipInvocations.Data](buildbundle/relationships-data.dictionary/betaappclipinvocations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Beta App Clip Invocations resource.
 
+## Properties
+
+- `data` ([BuildBundle.Relationships.BetaAppClipInvocations.Data]): The ID and type of the related Beta App Clip Invocations resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object BuildBundle.Relationships.AppClipDomainCacheStatus](buildbundle/relationships-data.dictionary/appclipdomaincachestatus-data.dictionary.md)

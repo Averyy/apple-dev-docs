@@ -12,6 +12,13 @@
 object InAppPurchaseLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchaseLocalization]) *(required)*
+- `included` ([InAppPurchaseV2])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseContentResponse](inapppurchasecontentresponse.md)

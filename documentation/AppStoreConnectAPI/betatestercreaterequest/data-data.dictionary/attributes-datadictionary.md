@@ -14,6 +14,12 @@ Attributes that you set that describe the new resource.
 object BetaTesterCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `email` (email) *(required)*: The beta tester’s email address, used for sending beta testing invitations.
+- `firstName` (string): The beta tester’s first name.
+- `lastName` (string): The beta tester’s last name.
+
 ## See Also
 
 - [Beta Testers](beta-testers.md)

@@ -19,6 +19,10 @@ object GameCenterChallengeVersionCreateRequest
 ### Dictionaries
 - [object GameCenterChallengeVersionCreateRequest.Data](gamecenterchallengeversioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeVersionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)

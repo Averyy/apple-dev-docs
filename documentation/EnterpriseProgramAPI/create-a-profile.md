@@ -9,6 +9,10 @@ Create a new provisioning profile.
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/profiles`
+
 ## See Also
 
 - [Delete a Profile](delete-a-profile.md)

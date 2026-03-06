@@ -20,6 +20,10 @@ object BuildUploadCreateRequest.Data.Relationships.App
 - [object BuildUploadCreateRequest.Data.Relationships.App.Data](builduploadcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BuildUploadCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

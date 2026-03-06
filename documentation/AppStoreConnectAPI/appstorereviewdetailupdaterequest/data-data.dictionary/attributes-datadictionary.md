@@ -14,6 +14,17 @@ Attributes whose values you’re changing as part of the update request.
 object AppStoreReviewDetailUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `contactEmail` (string)
+- `contactFirstName` (string)
+- `contactLastName` (string)
+- `contactPhone` (string)
+- `demoAccountName` (string)
+- `demoAccountPassword` (string)
+- `demoAccountRequired` (boolean)
+- `notes` (string)
+
 
 ---
 

@@ -36,7 +36,7 @@ let a = Array(iterator)
 
 ## Parameters
 
-- `body`: A closure that returns an optional element.   is   executed each time the   method is called on the resulting   iterator.
+- `body`: A closure that returns an optional element. `body` is executed each time the `next()` method is called on the resulting iterator.
 
 
 ---

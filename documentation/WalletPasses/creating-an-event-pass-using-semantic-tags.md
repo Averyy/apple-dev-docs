@@ -21,7 +21,7 @@ To create a poster event ticket using semantic tags, you need to meet the follow
 
 #### Set the Preferred Style Scheme
 
-The  is a top-level key that you provide. It takes an array of strings that correspond to schemes that the system resolves into a . Poster event tickets are considered event tickets, and the scheme is `posterEventTicket`.
+The *preferred style scheme* is a top-level key that you provide. It takes an array of strings that correspond to schemes that the system resolves into a *style type*. Poster event tickets are considered event tickets, and the scheme is `posterEventTicket`.
 
 Wallet recognizes this scheme and runs the the appropriate validation to designate the pass as a poster event ticket or fall back to the legacy event ticket.
 
@@ -77,6 +77,219 @@ Semantic tags are objects that contain machine-readable metadata the system uses
 | `performerNames` | An array of the full names of the performers and opening acts at the event, in decreasing order of significance. Use this key for any type of event ticket. |
 
 The following examples show a `pass.json` file with the required semantic tags for a general, sport, and live performance event pass:
+
+**General event**:
+
+```json
+    {
+        // Traditional pass.json keys and structure.
+        "description" : "General Event Pass",
+        "teamIdentifier" : "T5742Z534D",
+        "serialNumber" : "general1",
+        "formatVersion" : 1,
+        "foregroundColor" : "rgb(255, 255, 255)",
+        "labelColor" : "rgb(255, 255, 255)",
+        "backgroundColor" : "rgb(215, 154, 172)",
+        "passTypeIdentifier" : "pass.com.sports.event",
+        "groupingIdentifier" : "General event",
+        "organizationName" : "Organization",
+        "nfc" : {
+            "message" : "MESSAGE",
+            "encryptionPublicKey" : "PUBLICKEY"
+        },
+
+        // Retains the same eventTicket style key.
+        "eventTicket": {
+            // Legacy fields for backwards compatibility.
+            "primaryFields": [
+                ...
+            ],
+            "secondaryFields": [
+                ...
+            ],
+
+            "backFields": [
+            ],
+        },
+        "relevantDates": [
+            {
+                "startDate": "2025-12-09T13:00-07:00",
+                "endDate": "2025-12-09T23:00-07:00"
+            }
+        ],
+
+        // The preferred style schemes.
+        "preferredStyleSchemes": [
+            "posterEventTicket",
+            "eventTicket"
+        ],   
+
+        // Use semantic tags to give metadata to the system and to the UI.
+        "semantics": {
+            "eventType": "PKEventTypeGeneric",
+            "eventStartDate": "2023-08-10T19:30:00.000Z",
+            "seats": [
+                {
+                    "seatDescription": "General Seat",
+                    "seatIdentifier": "117-02-9",
+                    "seatNumber": "9",
+                    "seatRow": "02",
+                    "seatSection": "117",
+                    "seatType": "SeatType"
+                }
+            ],
+            "eventName": "General event name",
+            "venueName": "Venue name",
+            "venueRegionName": "City or hosting name",
+            "venueRoom": "Venue room"
+        }
+    }
+```
+
+**Sport event**:
+
+```json
+    {
+        // Traditional pass.json keys and structure.
+        "description" : "MLS Messi Pass",
+        "teamIdentifier" : "T5742Z534D",
+        "serialNumber" : "messi1",
+        "formatVersion" : 1,
+        "foregroundColor" : "rgb(255, 255, 255)",
+        "labelColor" : "rgb(255, 255, 255)",
+        "backgroundColor" : "rgb(215, 154, 172)",
+        "passTypeIdentifier" : "pass.com.sports.event",
+        "groupingIdentifier" : "Season Opener",
+        "organizationName" : "Game",
+        "nfc" : {
+            "message" : "MESSAGE",
+            "encryptionPublicKey" : "PUBLICKEY"
+        },
+
+        // Retains the same eventTicket style key.
+        "eventTicket": {
+            // Legacy fields for backwards compatibility.
+            "primaryFields": [
+                ...
+            ],
+            "secondaryFields": [
+                ...
+            ],
+
+            "backFields": [
+            ],
+        },
+        "relevantDates": [
+            {
+                "startDate": "2025-12-09T13:00-07:00",
+                "endDate": "2025-12-09T23:00-07:00"
+            }
+        ],
+
+        // The preferred style schemes.
+        "preferredStyleSchemes": [
+            "posterEventTicket",
+            "eventTicket"
+        ],   
+
+        // Use semantic tags to give metadata to the system and to the UI.
+        "semantics": {
+            "eventType": "PKEventTypeSports",
+            "eventStartDate": "2023-08-10T19:30:00.000Z",
+            "seats": [
+                {
+                    "seatDescription": "General Seat",
+                    "seatIdentifier": "117-02-9",
+                    "seatNumber": "9",
+                    "seatRow": "02",
+                    "seatSection": "117",
+                    "seatType": "SeatType"
+                }
+            ],
+            "awayTeamAbbreviation": "AWY",
+            "homeTeamAbbreviation": "HME",
+            "eventName": "General event name",
+            "venueName": "Venue name",
+            "venueRegionName": "City or hosting name",
+            "venueRoom": "Venue room"
+        }
+    }
+
+```
+
+**Live performance event**:
+
+```json
+    {
+        // Traditional pass.json keys and structure.
+        "description" : "Concert",
+        "teamIdentifier" : "T5742Z534D",
+        "serialNumber" : "concert1",
+        "formatVersion" : 1,
+        "foregroundColor" : "rgb(255, 255, 255)",
+        "labelColor" : "rgb(255, 255, 255)",
+        "backgroundColor" : "rgb(215, 154, 172)",
+        "passTypeIdentifier" : "pass.com.sports.event",
+        "groupingIdentifier" : "Opening night",
+        "organizationName" : "Concert",
+        "nfc" : {
+            "message" : "MESSAGE",
+            "encryptionPublicKey" : "PUBLICKEY"
+        },
+
+        // Retains the same eventTicket style key.
+        "eventTicket": {
+            // Legacy fields for backwards compatibility.
+            "primaryFields": [
+                ...
+            ],
+            "secondaryFields": [
+                ...
+            ],
+
+            "backFields": [
+            ],
+        },
+        // Populate a multi day event. 
+        "relevantDates": [
+            {
+                "startDate": "2025-08-21T13:00-08:00",
+                "endDate": "2025-08-21T23:00-08:00"
+            }, {
+                "startDate": "2025-08-22T13:00-08:00",
+                "endDate": "2025-08-22T23:00-08:00"
+            }
+        ],
+
+        // The preferred style schemes.
+        "preferredStyleSchemes": [
+            "posterEventTicket",
+            "eventTicket"
+        ],   
+
+        // Use semantic tags to give metadata to the system and to the UI.
+        "semantics": {
+            "eventType": "PKEventTypeLivePerformance",
+            "eventStartDate": "2023-08-10T19:30:00.000Z",
+            "seats": [
+                {
+                    "seatDescription": "General Seat",
+                    "seatIdentifier": "117-02-9",
+                    "seatNumber": "9",
+                    "seatRow": "02",
+                    "seatSection": "117",
+                    "seatType": "SeatType"
+                }
+            ],
+            "performerNames": ["Performer Names"],
+            "eventName": "General event name",
+            "venueName": "Venue name",
+            "venueRegionName": "City or hosting name",
+            "venueRoom": "Venue room"
+        }
+    }
+
+```
 
 #### Include Recommended and Optional Semantic Tags
 

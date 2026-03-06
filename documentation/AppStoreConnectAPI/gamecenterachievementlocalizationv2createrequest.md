@@ -24,6 +24,10 @@ object GameCenterAchievementLocalizationV2CreateRequest
 - [object GameCenterAchievementLocalizationV2CreateRequest.Data](gamecenterachievementlocalizationv2createrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (GameCenterAchievementLocalizationV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)

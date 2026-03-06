@@ -14,6 +14,12 @@ A response that contains a single Xcode Versions resource.
 object CiXcodeVersionResponse
 ```
 
+## Properties
+
+- `data` (CiXcodeVersion) *(required)*: The resource data.
+- `included` ([CiMacOsVersion]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object CiXcodeVersion](cixcodeversion.md)

@@ -33,6 +33,13 @@ If you receive a [`ContentFailure`](contentfailure.md) with an `errorCode` of `1
 
 > **Note**:  The client doesn’t send an error if your service provides an invalid content key for the specified `assetIdentifier`.
 
+## Properties
+
+- `errorCode` (int64) *(required)*: The error’s identity.
+- `errorDomain` (string) *(required)*: The error’s domain. This is `com.apple.sirikitcloudmedia.errorDomain`.
+- `url` (string) *(required)*: The URL of the content the client can’t play.
+- `underlyingError` (UnderlyingError): An object that, when present, provides additional information about why the content fails to play.
+
 ## See Also
 
 - [Recover from Content Playback Failure](contentplaybackfailure.md)

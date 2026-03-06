@@ -16,6 +16,10 @@ The push token APNS uses to send update notifications to the device.
 object PushToken
 ```
 
+## Properties
+
+- `pushToken` (string) *(required)*
+
 ## See Also
 
 - [Register a device for update notifications](register-a-device-for-update-notifications.md)

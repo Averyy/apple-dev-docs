@@ -24,6 +24,10 @@ object GameCenterAchievementLocalizationV2UpdateRequest
 - [object GameCenterAchievementLocalizationV2UpdateRequest.Data](gamecenterachievementlocalizationv2updaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (GameCenterAchievementLocalizationV2UpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)

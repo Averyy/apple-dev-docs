@@ -12,6 +12,12 @@
 object AppEventResponse
 ```
 
+## Properties
+
+- `data` (AppEvent) *(required)*
+- `included` ([AppEventLocalization])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppEvent](appevent.md)

@@ -12,6 +12,11 @@
 object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `locale` (string)
+- `name` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

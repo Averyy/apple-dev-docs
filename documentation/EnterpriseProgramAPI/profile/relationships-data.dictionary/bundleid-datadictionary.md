@@ -19,6 +19,11 @@ object Profile.Relationships.BundleId
 - [links](profile/relationships-data.dictionary/bundleid-data.dictionary/links.md)
   The links to the related data and the relationship’s self-link.
 
+## Properties
+
+- `data` (Profile.Relationships.BundleId.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object Profile.Relationships.Certificates](profile/relationships-data.dictionary/certificates-data.dictionary.md)

@@ -25,7 +25,7 @@ A [`GroupSessionJournal`](groupsessionjournal.md) object configured for the spec
 
 ## Parameters
 
-- `session`: The session you use for communicating with participants.   The session must be in the   or    state when you create the   journal, and the session must be in the    state before you can send or receive attachments.
+- `session`: The session you use for communicating with participants. The session must be in the [`GroupSession.State.waiting`](groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state when you create the journal, and the session must be in the [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state before you can send or receive attachments.
 
 
 ---

@@ -19,6 +19,10 @@ object GameCenterActivityImageCreateRequest
 ### Dictionaries
 - [object GameCenterActivityImageCreateRequest.Data](gamecenteractivityimagecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityImageCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityImage](gamecenteractivityimage.md)

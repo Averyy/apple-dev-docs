@@ -22,6 +22,12 @@ object GameCenterMatchmakingTeamCreateRequest.Data
 - [object GameCenterMatchmakingTeamCreateRequest.Data.Relationships](gamecentermatchmakingteamcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships from the team to other objects.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingTeamCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterMatchmakingTeamCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

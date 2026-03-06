@@ -31,7 +31,7 @@ Use an object literal instance with the keys defined in [`PaddingConstructorOpti
 
 ## Parameters
 
-- `padding`: An object literal with the keys defined in  .
+- `padding`: An object literal with the keys defined in [`PaddingConstructorOptions`](paddingconstructoroptions.md).
 
 ## See Also
 

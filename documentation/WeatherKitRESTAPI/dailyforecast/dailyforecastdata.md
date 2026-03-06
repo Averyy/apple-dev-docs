@@ -14,6 +14,11 @@ The daily forecast information.
 object DailyForecast.DailyForecastData
 ```
 
+## Properties
+
+- `days` ([DayWeatherConditions]) *(required)*: An array of the day forecast weather conditions.
+- `learnMoreURL` (string): A URL that provides more information about the forecast.
+
 ## Relationships
 
 ### Inherited By

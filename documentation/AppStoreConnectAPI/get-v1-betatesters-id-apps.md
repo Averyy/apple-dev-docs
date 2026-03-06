@@ -8,6 +8,15 @@ Get a list of apps that a beta tester can test.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaTesters/{id}/apps`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return.
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [Get All App Resource IDs for a Beta Tester](get-v1-betatesters-_id_-relationships-apps.md)

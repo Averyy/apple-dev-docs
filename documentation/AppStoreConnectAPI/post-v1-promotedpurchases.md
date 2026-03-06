@@ -13,6 +13,10 @@ Add an existing in-app purchase or auto-renewable subscription to the promoted i
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
 - [Managing in-app purchases](managing-in-app-purchases.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/promotedPurchases`
+
 ## See Also
 
 - [List All Promoted Purchases for an App](get-v1-apps-_id_-promotedpurchases.md)

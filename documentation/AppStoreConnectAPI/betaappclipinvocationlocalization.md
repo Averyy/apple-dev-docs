@@ -20,6 +20,13 @@ object BetaAppClipInvocationLocalization
 - [object BetaAppClipInvocationLocalization.Attributes](betaappclipinvocationlocalization/attributes-data.dictionary.md)
   The attributes that describe a Beta App Clip Invocation Localizations resource.
 
+## Properties
+
+- `attributes` (BetaAppClipInvocationLocalization.Attributes): The attributes that describe the Beta App Clip Invocation Localizations resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Beta App Clip Invocation Localization.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BetaAppClipInvocationLocalizationCreateRequest](betaappclipinvocationlocalizationcreaterequest.md)

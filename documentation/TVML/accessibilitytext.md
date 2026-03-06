@@ -10,6 +10,8 @@ Text that you add using the `accessibilityText` attribute is produced as audio w
 
 ##### Values for Accessibilitytext
 
+- **String**: The text to be spoken when the element comes into focus.
+
 ##### Elements That Use Accessibilitytext
 
 - [`decorationLabel`](decorationlabel.md)

@@ -17,6 +17,11 @@ object BetaBuildLocalizationBuildLinkageResponse
 ### Dictionaries
 - [object BetaBuildLocalizationBuildLinkageResponse.Data](betabuildlocalizationbuildlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaBuildLocalizationBuildLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaBuildLocalization](betabuildlocalization.md)

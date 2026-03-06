@@ -6,7 +6,7 @@
 The date the App Store server attempts to send a notification.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 

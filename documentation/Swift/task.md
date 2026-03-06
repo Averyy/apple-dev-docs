@@ -96,13 +96,13 @@ deinit actor
 
 ### Creating a Task
 - [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [static var currentPriority: TaskPriority](task/currentpriority.md)
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
@@ -111,13 +111,13 @@ deinit actor
   Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 ### Creating a Detached Task
 - [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:priority:operation:)-795w1.md)
-  Runs the given throwing operation asynchronously as part of a new   top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 - [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:priority:operation:)-9xki7.md)
-  Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 - [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:executorpreference:priority:operation:)-6r16s.md)
-  Runs the given throwing operation asynchronously as part of a new   top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 - [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:executorpreference:priority:operation:)-75ffe.md)
-  Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 ### Creating a Task that Starts Immediately
 - [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediate(name:priority:executorpreference:operation:)-88o80.md)
   Create and immediately start running a new detached task in the context of the calling thread/task.

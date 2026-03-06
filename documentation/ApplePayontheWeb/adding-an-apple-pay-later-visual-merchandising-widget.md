@@ -23,6 +23,10 @@ To display an Apple Pay Later visual merchandising widget, add the following scr
 
 The script tag contains the URL that loads the `apple-pay-sdk.js`, from the Apple Pay JS CDN. The script tag includes three additional attributes:
 
+- **`crossorigin`**: An abbreviated version of `crossorigin=”anonymous”`, this attribute instructs the browser to connect to the Apple Pay JS CDN using anonymous credentials mode. This improves performance by allowing subsequent Apple Pay JS network requests to reuse the same HTTP/2 connection
+- **`async`**: The attribute instructs the browser to immediately evaluate the script. This prevents `apple-pay-sdk.js` from blocking the page load, and initializes and loads the ApplePay JS libraries as soon as possible. Your app needs to wait for the callback function execution before interacting with the API.
+- **`data-initial-token`**: This value is a JSON Web Token (JWT) that you need to obtain from the Developer Portal. See [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/services/list) on the Developer Portal and follow the instructions for registering a merchant domain to generate the JWT.
+
 Additionally, you need to ensure that your website allows a Content Security Policy for Apple Pay JS to function properly.
 
 ##### Add a Standard Widget

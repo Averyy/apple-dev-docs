@@ -17,6 +17,12 @@ object AppEventLocalization.Relationships.AppEventVideoClips
 ### Objects
 - [object AppEventLocalization.Relationships.AppEventVideoClips.Data](appeventlocalization/relationships-data.dictionary/appeventvideoclips-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppEventLocalization.Relationships.AppEventVideoClips.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppEventLocalization.Relationships.AppEvent](appeventlocalization/relationships-data.dictionary/appevent-data.dictionary.md)

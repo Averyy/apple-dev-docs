@@ -21,6 +21,10 @@ B + F
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
+- **`Background`**: The background input. Represented by `B` in the mathmatical equation.
+- **`Mix`**: The weight of the blend effect. The higher the `Mix`, the greater the intensity of the blend operation, and the more the effect is visually apparent. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Additive Mix` node combines two inputs and uses the `Mix` input to determine the weight of the foreground in the blend, represented by the equation `B + F`. Higher values closer to `1` intensify the effect of the mix, while lower values closer to `0` dim the effect. Below is an example of a node graph that uses the `Additive Mix` node to blend two images together into a single material:

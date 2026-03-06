@@ -30,7 +30,7 @@ Whatever is returned by `body`.
 
 This function is useful for cheaply allocating storage for a sequence of values for a brief duration. Storage may be allocated on the heap or on the stack, depending on the required size and alignment.
 
-When `body` is called, the contents of the buffer pointer passed to it are in an unspecified, uninitialized state. `body` is responsible for initializing the buffer pointer before it is used  for deinitializing it before returning, but deallocation is automatic.
+When `body` is called, the contents of the buffer pointer passed to it are in an unspecified, uninitialized state. `body` is responsible for initializing the buffer pointer before it is used *and* for deinitializing it before returning, but deallocation is automatic.
 
 The implementation may allocate a larger buffer pointer than is strictly necessary to contain `capacity` values of type `type`. The behavior of a program that attempts to access any such additional storage is undefined.
 
@@ -38,9 +38,9 @@ The buffer pointer passed to `body` (as well as any pointers to elements in the 
 
 ## Parameters
 
-- `type`: The type of the elements in the buffer being temporarily   allocated.
-- `capacity`: The capacity of the buffer pointer being temporarily   allocated.
-- `body`: A closure to invoke and to which the allocated buffer pointer   should be passed.
+- `type`: The type of the elements in the buffer being temporarily allocated.
+- `capacity`: The capacity of the buffer pointer being temporarily allocated.
+- `body`: A closure to invoke and to which the allocated buffer pointer should be passed.
 
 ## See Also
 

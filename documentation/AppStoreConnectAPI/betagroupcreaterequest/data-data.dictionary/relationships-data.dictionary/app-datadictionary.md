@@ -20,6 +20,10 @@ object BetaGroupCreateRequest.Data.Relationships.App
 - [object BetaGroupCreateRequest.Data.Relationships.App.Data](betagroupcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (BetaGroupCreateRequest.Data.Relationships.App.Data) *(required)*
+
 ## See Also
 
 - [object BetaGroupCreateRequest.Data.Relationships.BetaTesters](betagroupcreaterequest/data-data.dictionary/relationships-data.dictionary/betatesters-data.dictionary.md)

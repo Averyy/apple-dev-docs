@@ -8,6 +8,22 @@ Find and list certificates and download their data.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/certificates`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `filter[id]` ([string])
+- `filter[serialNumber]` ([string])
+- `limit` (integer)
+- `sort` ([string])
+- `filter[certificateType]` ([string])
+- `filter[displayName]` ([string])
+- `fields[passTypeIds]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read and Download Certificate Information](get-v1-certificates-_id_.md)

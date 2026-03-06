@@ -8,6 +8,14 @@ Remove a specific localization from a Game Center challenge.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterChallengeLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read challenge localization information](get-v1-gamecenterchallengelocalizations-_id_.md)

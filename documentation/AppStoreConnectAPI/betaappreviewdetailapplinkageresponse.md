@@ -17,6 +17,11 @@ object BetaAppReviewDetailAppLinkageResponse
 ### Dictionaries
 - [object BetaAppReviewDetailAppLinkageResponse.Data](betaappreviewdetailapplinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaAppReviewDetailAppLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaAppReviewDetail](betaappreviewdetail.md)

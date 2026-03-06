@@ -14,6 +14,10 @@ Get the merchant token public key request.
 object RetrieveMerchantTokenPublicKeyRequest
 ```
 
+## Properties
+
+- `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+
 
 ---
 

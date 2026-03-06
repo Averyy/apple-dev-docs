@@ -20,6 +20,10 @@ object Ratings.Relationships
 - [object Ratings.Relationships.RatingsContentRelationship](ratings/relationships-data.dictionary/ratingscontentrelationship.md)
   A relationship between the rating and the assocaited content.
 
+## Properties
+
+- `content` (Ratings.Relationships.RatingsContentRelationship): The content associated with the rating. Fetch limits: None.
+
 ## See Also
 
 - [object Ratings.Attributes](ratings/attributes-data.dictionary.md)

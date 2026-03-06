@@ -8,7 +8,7 @@ Encode your media properly to ensure synchronized audio and video playback.
 
 Producing media for HTTP Live Streaming (HLS) requires special considerations if you’re encoding audio using the Advanced Audio Coding (AAC) family of formats.
 
-AAC audio processing requires a small amount of leading “throw-away” audio to prime the encoder and initialize internal tables. This small amount of audio results from  which happens during encoding to produce properly formed, encoded audio packets, and its duration is commonly referred to as the . This audio needs to occur before the first frame of video; otherwise, there will be no audio for the first few frames of video.
+AAC audio processing requires a small amount of leading “throw-away” audio to prime the encoder and initialize internal tables. This small amount of audio results from *encoder delay* which happens during encoding to produce properly formed, encoded audio packets, and its duration is commonly referred to as the *priming duration*. This audio needs to occur before the first frame of video; otherwise, there will be no audio for the first few frames of video.
 
 ![Illustration of audio priming samples in the audio track located ahead of the video samples in the video track.](https://docs-assets.developer.apple.com/published/c2ceacf9189804d8b5d286710141f294/preparing-audio-for-http-live-streaming-1%402x.png)
 
@@ -26,7 +26,7 @@ Alternatively, starting with iOS 13.1 it’s possible to utilize an Edit List Bo
 
 ##### Handle Play Position Changes Within Content
 
-Changing the play position to a specific point in time within content is known as , and is another consideration for encoding audio. HTTP Live Streaming (HLS) has individual segments that are individually downloadable; each contains media data for 4 to 6 seconds of the overall media timeline. When seeking into a point in the video, skip over the intervening segments between the current and target play position and load the appropriate segment.
+Changing the play position to a specific point in time within content is known as *seeking*, and is another consideration for encoding audio. HTTP Live Streaming (HLS) has individual segments that are individually downloadable; each contains media data for 4 to 6 seconds of the overall media timeline. When seeking into a point in the video, skip over the intervening segments between the current and target play position and load the appropriate segment.
 
 ## See Also
 

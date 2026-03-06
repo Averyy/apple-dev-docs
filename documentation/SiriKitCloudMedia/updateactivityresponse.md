@@ -14,6 +14,11 @@ Updates to the client’s queue and user activity in response to a report of pla
 object UpdateActivityResponse
 ```
 
+## Properties
+
+- `queue` (Queue): A sequence of playback content to replace or modify the client’s current playback queue.
+- `userActivity` (UserActivity): A new user activity for the client to use in future requests to queue endpoints.
+
 ## See Also
 
 - [type QueueActivityReportEvent](queueactivityreportevent.md)

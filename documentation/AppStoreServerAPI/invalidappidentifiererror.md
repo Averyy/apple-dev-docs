@@ -14,6 +14,11 @@ An error that indicates an invalid app identifier.
 object InvalidAppIdentifierError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

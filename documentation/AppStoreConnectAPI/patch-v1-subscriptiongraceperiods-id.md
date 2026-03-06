@@ -16,6 +16,55 @@ Change the Boolean value representing the billing grace period opt-in status.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329     
+-d $'{
+  "data": {
+    "type": "subscriptionGracePeriods",
+    "id": "6446671329",
+    "attributes": {
+      "sandboxOptIn": true,
+      "optIn": true,
+      "renewalType": "PAID_TO_PAID_ONLY",
+      "duration": "TWENTY_EIGHT_DAYS"
+    }
+  }
+}'
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "subscriptionGracePeriods",
+    "id" : "6446671329",
+    "attributes" : {
+      "optIn" : true,
+      "sandboxOptIn" : true,
+      "duration" : "TWENTY_EIGHT_DAYS",
+      "renewalType" : "PAID_TO_PAID_ONLY"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## Request Body
 
 There are now new duration options that can be set by using [`SubscriptionGracePeriodDuration`](subscriptiongraceperiodduration.md)

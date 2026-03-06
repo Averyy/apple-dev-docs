@@ -12,6 +12,12 @@
 object SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `environment` (OfferCodeEnvironment)
+- `expirationDate` (date) *(required)*
+- `numberOfCodes` (integer) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships](subscriptionoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

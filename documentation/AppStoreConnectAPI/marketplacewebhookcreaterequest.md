@@ -19,6 +19,10 @@ object MarketplaceWebhookCreateRequest
 ### Objects
 - [object MarketplaceWebhookCreateRequest.Data](marketplacewebhookcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (MarketplaceWebhookCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object MarketplaceWebhook](marketplacewebhook.md)

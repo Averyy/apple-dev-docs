@@ -95,8 +95,15 @@ For the maximum number of records in a response and other data limits, see [`Dat
 
 ## Parameters
 
-- `query`: Either a   dictionary or a   object describing the matching criteria.
-- `options`: A dictionary containing options to use when fetching records. Possible dictionary keys are:
+- `query`: Either a [`CloudKit.Query`](cloudkit.query.md) dictionary or a [`CloudKit.QueryResponse`](cloudkit.queryresponse.md) object describing the matching criteria.
+- `options`: A dictionary containing options to use when fetching records. Possible dictionary keys are: | Key | Description |
+| --- | --- |
+| `zoneID` | A [`CloudKit.ZoneID`](cloudkit.zoneid.md) or zone name (`String`) that identifies the record zone in the database where you want to perform the operation. The default is the database default zone. |
+| `resultsLimit` | The maximum number of records to fetch. The default is the maximum number of records in a response that is allowed, described in [`Data Size Limits`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/PropertyMetrics.html#//apple_ref/doc/uid/TP40015240-CH23). |
+| `continuationMarker` | Marks the location of the last batch of results. Use this key when the results of a previous fetch exceed the maximum. The default value is `null`. |
+| `desiredKeys` | An array of strings containing record field names that limits the amount of data returned in this operation. Only the fields specified in the array are returned. The default is `null`, which fetches all record fields. |
+| `zoneWide` | Boolean value determining whether all zones should be searched. This key is ignored if `zoneID` is non-`null`. To search all zones, set to `true`. To search the default zone only, set to `false`. |
+| `numbersAsStrings` | A Boolean value indicating whether number fields should be represented by strings. The default value is `false`. |
 
 ## See Also
 

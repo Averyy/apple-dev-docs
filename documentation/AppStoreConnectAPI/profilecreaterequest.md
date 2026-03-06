@@ -20,6 +20,10 @@ object ProfileCreateRequest
 - [object ProfileCreateRequest.Data](profilecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (ProfileCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object Profile](profile.md)

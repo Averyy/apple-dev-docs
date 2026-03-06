@@ -16,6 +16,12 @@ The details of an app in the App Store.
 object Application
 ```
 
+## Properties
+
+- `customProductPageIdentifier` (string): The identifier for a custom product page. Use when linking to the App on the AppStore.
+- `launchURL` (string): A URL passed into the application at launch.
+- `storeIdentifier` (number) *(required)*: The ADAM ID (store identifier) of the application.
+
 ## See Also
 
 - [object Customer](customer.md)

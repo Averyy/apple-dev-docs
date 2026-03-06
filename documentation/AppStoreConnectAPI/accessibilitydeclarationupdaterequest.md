@@ -20,6 +20,10 @@ object AccessibilityDeclarationUpdateRequest
 - [object AccessibilityDeclarationUpdateRequest.Data](accessibilitydeclarationupdaterequest/data-data.dictionary.md)
   The data structure of the request body you use to update an accessibility declaration.
 
+## Properties
+
+- `data` (AccessibilityDeclarationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)

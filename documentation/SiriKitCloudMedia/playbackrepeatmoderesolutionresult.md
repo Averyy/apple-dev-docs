@@ -26,6 +26,12 @@ Only provide one of the optional properties. If a client receives a result with 
 - [object PlaybackRepeatModeResolutionResult.ConfirmationRequired](playbackrepeatmoderesolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the playback mode before proceeding.
 
+## Properties
+
+- `class` (string): The specific type of result.
+- `success` (PlaybackRepeatModeResolutionResult.Success): A repeat mode that successfully matches the intent.
+- `confirmationRequired` (PlaybackRepeatModeResolutionResult.ConfirmationRequired): A repeat mode that the user must confirm or reject.
+
 ## Relationships
 
 ### Inherits From

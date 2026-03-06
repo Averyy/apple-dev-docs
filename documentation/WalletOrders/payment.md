@@ -22,6 +22,15 @@ object Payment
 - [object Payment.SummaryItems](payment/summaryitems-data.dictionary.md)
   A breakdown of the total payment.
 
+## Properties
+
+- `total` (CurrencyAmount) *(required)*: The total amount to be paid.
+- `summaryItems` ([Payment.SummaryItems]): A breakdown of the total payment. For example, shipping cost and taxes.
+- `transactions` ([PaymentTransaction]): A list of [`PaymentTransaction`](paymenttransaction.md) dictionaries.
+- `paymentMethods` ([string]): A list of methods used to pay. For example, MasterCard 1234 or Visa 5678.
+- `status` (string) *(required)*: The status of the payment.
+- `applePayTransactionIdentifiers` ([string]): An optional list of Apple Pay transaction identifiers relating to this order. Wallet links the original transaction to your order by default. If you charge a user multiple times, you can provide the relevant transaction identifiers here to enable additional linking.
+
 ## See Also
 
 - [object Customer](customer.md)

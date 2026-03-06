@@ -22,6 +22,14 @@ object LibraryAlbums
 - [object LibraryAlbums.Relationships](libraryalbums/relationships-data.dictionary.md)
   The relationships for a library album object.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the library album.
+- `type` (string) *(required)*: This value is always `library-albums`.
+- `href` (string) *(required)*: The relative location for the library album resource.
+- `attributes` (LibraryAlbums.Attributes): The attributes for the library album.
+- `relationships` (LibraryAlbums.Relationships): The relationships for the library album.
+
 ## See Also
 
 - [object Albums](albums.md)

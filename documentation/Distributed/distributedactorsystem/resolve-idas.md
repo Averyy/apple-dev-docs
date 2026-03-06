@@ -36,7 +36,7 @@ distributed actor Worker { /* ... */ }
 let worker: Worker = try  Worker.resolve(id: id, using: actorSystem)
 ```
 
-If this function returns correctly, the returned actor reference is immediately usable. It may not necessarily imply the strict  of a remote actor the identity was pointing towards, e.g. when a remote system allocates actors lazily as they are first time messaged to, however this should not be a concern of the sending side.
+If this function returns correctly, the returned actor reference is immediately usable. It may not necessarily imply the strict *existence* of a remote actor the identity was pointing towards, e.g. when a remote system allocates actors lazily as they are first time messaged to, however this should not be a concern of the sending side.
 
 Detecting liveness of such remote actors shall be offered / by transport libraries by other means, such as “watching an actor for termination” or similar.
 
@@ -44,7 +44,7 @@ Detecting liveness of such remote actors shall be offered / by transport librari
 
 ## Parameters
 
-- `id`: The   to resolve an actor reference for
+- `id`: The `ActorID` to resolve an actor reference for
 - `actorType`: The type of distributed actor the ID is expected to point at.
 
 

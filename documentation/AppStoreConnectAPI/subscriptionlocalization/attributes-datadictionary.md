@@ -12,6 +12,13 @@
 object SubscriptionLocalization.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `locale` (string)
+- `name` (string)
+- `state` (string)
+
 ## See Also
 
 - [object SubscriptionLocalization.Relationships](subscriptionlocalization/relationships-data.dictionary.md)

@@ -16,6 +16,12 @@ string CiCompletionStatus
 
 #### Possible Values
 
+- **SUCCEEDED**: Xcode Cloud successfully completed a build.
+- **FAILED**: The Xcode Cloud build failed; for example, if you configure the Required to Pass setting for a test action and a unit test fails. For more information, see Add a Test Action in Configuring your Xcode Cloud workflow’s actions.
+- **ERRORED**: Xcode Cloud encountered an internal error when it performed the build.
+- **CANCELED**: Xcode Cloud canceled the build because you manually canceled an ongoing build or because you enabled the Auto-cancel Builds setting for a workflow. For more information about the Auto-cancel Builds setting, see Xcode Cloud workflow reference.
+- **SKIPPED**: Xcode Cloud skipped the build; for example, if you configure the Auto- termcancel Builds setting for a workflow and push many changes in quick succession.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

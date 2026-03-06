@@ -17,6 +17,10 @@ object ReviewSubmissionItem.Relationships.AppStoreVersionExperiment
 ### Objects
 - [object ReviewSubmissionItem.Relationships.AppStoreVersionExperiment.Data](reviewsubmissionitem/relationships-data.dictionary/appstoreversionexperiment-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItem.Relationships.AppStoreVersionExperiment.Data)
+
 ## See Also
 
 - [object ReviewSubmissionItem.Relationships.AppCustomProductPageVersion](reviewsubmissionitem/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)

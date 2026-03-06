@@ -14,6 +14,10 @@ A queue location that matches the intent.
 object PlaybackQueueLocationResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedPlaybackQueueLocation` (PlaybackQueueLocation) *(required)*: The specified queue location.
+
 ## See Also
 
 - [object PlaybackQueueLocationResolutionResult.ConfirmationRequired](playbackqueuelocationresolutionresult/confirmationrequired-data.dictionary.md)

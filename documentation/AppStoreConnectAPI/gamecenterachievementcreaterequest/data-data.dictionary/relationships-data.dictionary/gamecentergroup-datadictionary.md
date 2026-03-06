@@ -17,6 +17,10 @@ object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup
 ### Objects
 - [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup.Data](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup.Data)
+
 ## See Also
 
 - [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterDetail](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

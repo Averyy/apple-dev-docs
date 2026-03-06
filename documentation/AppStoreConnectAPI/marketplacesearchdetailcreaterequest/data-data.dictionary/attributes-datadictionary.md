@@ -12,6 +12,10 @@
 object MarketplaceSearchDetailCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `catalogUrl` (uri) *(required)*
+
 ## See Also
 
 - [object MarketplaceSearchDetailCreateRequest.Data.Relationships](marketplacesearchdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -49,7 +49,7 @@ ForEach(quakes) { section in
 }
 ```
 
-The sections also act as collections, which means you can use elements like the [`count`](https://developer.apple.com/documentation/Swift/Collection/count) property in the example above.
+The sections also act as collections, which means you can use elements like the [`count`](https://developer.apple.com/documentation/Swift/Collection/count-4l4qk) property in the example above.
 
 ## Topics
 

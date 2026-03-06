@@ -24,6 +24,10 @@ object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships
 - [object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization](gamecenterleaderboardimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary.md)
   The data that describes the localization of the Game Center leaderboard image.
 
+## Properties
+
+- `localization` (GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardImageV2CreateRequest.Data.Attributes](gamecenterleaderboardimagev2createrequest/data-data.dictionary/attributes-data.dictionary.md)

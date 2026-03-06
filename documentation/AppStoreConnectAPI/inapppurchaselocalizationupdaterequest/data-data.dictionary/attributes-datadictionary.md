@@ -12,6 +12,11 @@
 object InAppPurchaseLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `name` (string)
+
 
 ---
 

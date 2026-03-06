@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API ?+ - Deprecated
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/ageRatingDeclaration`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read the Age Rating Declaration Information of an App Store Version](get-v1-appstoreversions-_id_-ageratingdeclaration.md)

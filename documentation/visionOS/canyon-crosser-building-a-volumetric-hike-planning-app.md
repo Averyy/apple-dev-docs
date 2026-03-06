@@ -18,10 +18,10 @@ Canyon Crosser uses RealityKit to present 3D models and SwiftUI to present stand
 
 Canyon Crosser demonstrates the use of several visionOS APIs:
 
--  — Demonstrates techniques for positioning 2D and 3D content in a volume.
--  — Illustrates how to add SwiftUI views to entities in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView).
--  — Shows how to dynamically update and observe changes on RealityKit entities.
--  — Shows how to render content outside the bounds of the volumetric window.
+- **Spatial Layout** — Demonstrates techniques for positioning 2D and 3D content in a volume.
+- **Framework Interoperability** — Illustrates how to add SwiftUI views to entities in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView).
+- **Observable Entities** — Shows how to dynamically update and observe changes on RealityKit entities.
+- **Dynamic Bounds Restriction** — Shows how to render content outside the bounds of the volumetric window.
 
 #### Use Spatial Layout to Create a Carousel
 

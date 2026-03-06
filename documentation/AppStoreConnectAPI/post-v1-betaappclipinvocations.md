@@ -8,6 +8,10 @@ Configure a new App Clip experience that testers launch using the TestFlight app
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaAppClipInvocations`
+
 ## Request Body
 
 The request body you use to create a beta App Clip invocation.

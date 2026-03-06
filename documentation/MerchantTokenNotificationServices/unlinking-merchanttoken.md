@@ -15,6 +15,16 @@ When you call this endpoint, Apple Pay server unlinks — invalidates — the me
 - Someone cancels a recurring transaction on your website or in your app that uses this merchant token
 - Someone changes the payment method for a recurring transactions, for example, they stop using Apple Pay for the transaction
 
+## Endpoint
+
+`POST https://apple-pay-gateway.apple.com/paymentservices/v1/merchantId/{merchantId}/merchantToken/unlink`
+
+## Parameters
+
+- `Accept` (string)
+- `Content-Type` (string) *(required)*
+- `x-request-id` (string) *(required)*
+
 ## Request Body
 
 The request body you use to specify the merchant token that Apple Pay should invalidate.

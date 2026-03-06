@@ -41,7 +41,7 @@ dictionary.merge(["a": 5, "d": 6]) { (_, new) in new }
 ## Parameters
 
 - `other`: A dictionary to merge.
-- `combine`: A closure that takes the current and new values for any   duplicate keys. The closure returns the desired value for the final   dictionary.
+- `combine`: A closure that takes the current and new values for any duplicate keys. The closure returns the desired value for the final dictionary.
 
 ## See Also
 

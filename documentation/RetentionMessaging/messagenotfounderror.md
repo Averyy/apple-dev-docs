@@ -18,6 +18,11 @@ object MessageNotFoundError
 
 The [`Delete Message`](delete-message.md) endpoint returns this error if the [`messageIdentifier`](messageidentifier.md) doesn’t exist.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

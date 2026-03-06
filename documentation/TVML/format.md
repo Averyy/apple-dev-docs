@@ -14,6 +14,8 @@ Here’s an example that sets the date to January 19, 2031.
 
 ##### Values for Format
 
+- **String**: The format for the date string.
+
 ##### Elements That Use Format
 
 - [`date`](date.md)

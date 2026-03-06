@@ -12,6 +12,11 @@
 object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

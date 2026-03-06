@@ -20,6 +20,13 @@ object Artists.Views.ArtistsFullAlbumsView
 - [object Artists.Views.ArtistsFullAlbumsView.Attributes](artists/views-data.dictionary/artistsfullalbumsview/attributes-data.dictionary.md)
   Full-release albums associated with the artist.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsFullAlbumsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Albums]) *(required)*: Full-release albums associated with the artist.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

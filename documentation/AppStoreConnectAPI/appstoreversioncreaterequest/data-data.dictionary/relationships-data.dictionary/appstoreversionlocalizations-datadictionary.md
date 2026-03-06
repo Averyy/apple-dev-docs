@@ -17,6 +17,10 @@ object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizati
 ### Objects
 - [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data])
+
 ## See Also
 
 - [object AppStoreVersionCreateRequest.Data.Relationships.App](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)

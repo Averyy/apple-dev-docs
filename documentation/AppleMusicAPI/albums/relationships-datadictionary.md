@@ -28,6 +28,14 @@ object Albums.Relationships
 - [object Albums.Relationships.AlbumsRecordLabelsRelationship](albums/relationships-data.dictionary/albumsrecordlabelsrelationship.md)
   A relationship from the album to its associated record label.
 
+## Properties
+
+- `artists` (Albums.Relationships.AlbumsArtistsRelationship): The artists associated with the album. By default, `artists` includes identifiers only. Fetch limits: 10 default, 10 maximum
+- `genres` (Albums.Relationships.AlbumsGenresRelationship): The genres for the album. By default, `genres` not included. Fetch limits: None
+- `tracks` (Albums.Relationships.AlbumsTracksRelationship): The songs and music videos on the album. By default, `tracks` includes objects. Fetch limits: 300 default, 300 maximum
+- `library` (Albums.Relationships.AlbumsLibraryRelationship): The album in the user’s library for the catalog album, if any. Fetch limits: None
+- `record-labels` (Albums.Relationships.AlbumsRecordLabelsRelationship): The record labels for the album Fetch limits: 10 default, 10 maximum.
+
 ## See Also
 
 - [object Albums.Attributes](albums/attributes-data.dictionary.md)

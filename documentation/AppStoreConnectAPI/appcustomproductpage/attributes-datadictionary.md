@@ -12,6 +12,12 @@
 object AppCustomProductPage.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `url` (uri)
+- `visible` (boolean)
+
 ## See Also
 
 - [object AppCustomProductPage.Relationships](appcustomproductpage/relationships-data.dictionary.md)

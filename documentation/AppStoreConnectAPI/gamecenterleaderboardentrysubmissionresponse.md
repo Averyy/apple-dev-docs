@@ -14,6 +14,11 @@ A response that contains a Game Center leaderboard entry submission.
 object GameCenterLeaderboardEntrySubmissionResponse
 ```
 
+## Properties
+
+- `data` (GameCenterLeaderboardEntrySubmission) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardEntrySubmission](gamecenterleaderboardentrysubmission.md)

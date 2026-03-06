@@ -14,6 +14,12 @@ The name and location of a train station.
 object TrainStation
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `address` (PostalAddress) *(required)*: The location of the train station.
+- `name` (string) *(required)*: The name of the train station.
+
 ## See Also
 
 - [object TrainTrip](traintrip.md)

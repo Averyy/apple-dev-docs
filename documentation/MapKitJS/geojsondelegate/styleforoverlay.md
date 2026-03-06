@@ -28,7 +28,7 @@ MapKit JS calls this method for each overlay, and after each call to [`itemForPo
 ## Parameters
 
 - `overlay`: The overlay to style.
-- `geoJSON`: The original GeoJSON for the   or   object
+- `geoJSON`: The original GeoJSON for the `feature` or `geometry` object`.`
 
 ## See Also
 

@@ -17,6 +17,10 @@ object GameCenterChallengeLeaderboardLinkageRequest
 ### Dictionaries
 - [object GameCenterChallengeLeaderboardLinkageRequest.Data](gamecenterchallengeleaderboardlinkagerequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeLeaderboardLinkageRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterChallenge](gamecenterchallenge.md)

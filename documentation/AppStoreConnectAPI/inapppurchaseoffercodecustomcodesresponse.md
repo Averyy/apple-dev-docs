@@ -14,6 +14,13 @@ A response that contains a list of in-app purchase offer code custom code resour
 object InAppPurchaseOfferCodeCustomCodesResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchaseOfferCodeCustomCode]) *(required)*
+- `included` ([Actor])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

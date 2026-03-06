@@ -8,27 +8,27 @@ Learn the Common Media Application Format as it applies to HLS.
 
 The Common Media Application Format (CMAF) for segmented media is an extensible standard for the encoding and packaging of segmented media objects for delivery and decoding on end user devices in adaptive multimedia presentations. Delivery and presentation are abstracted by a hypothetical application model that allows a wide range of implementations including HLS and MPEG’s Dynamic Adaptive Streaming over HTTP (MPEG DASH). The CMAF specification defines several logical media objects:
 
- Tracks contain encoded media samples, including audio, video, and subtitles. Media samples are stored in a CMAF specified container derived from the ISO Base Media File Format. Media samples may optionally be protected by MPEG Common Encryption. Tracks are made up of a CMAF Header and one or more CMAF Fragments.
+**CMAF Track:** Tracks contain encoded media samples, including audio, video, and subtitles. Media samples are stored in a CMAF specified container derived from the ISO Base Media File Format. Media samples may optionally be protected by MPEG Common Encryption. Tracks are made up of a CMAF Header and one or more CMAF Fragments.
 
- Switching sets contain alternative tracks that can be switched and spliced at CMAF Fragment boundaries to adaptively stream the same content at different bit rates and resolutions.
+**CMAF Switching Set:** Switching sets contain alternative tracks that can be switched and spliced at CMAF Fragment boundaries to adaptively stream the same content at different bit rates and resolutions.
 
- Two or more CMAF Switching Sets encoded from the same source with alternative encodings, for example, different codecs, and time aligned to each other.
+**Aligned CMAF Switching Set:** Two or more CMAF Switching Sets encoded from the same source with alternative encodings, for example, different codecs, and time aligned to each other.
 
- A group of switching sets of the same media type that may include alternative content (for example, different languages or camera angles) or alternative encodings (for example, different codecs).
+**CMAF Selection Set:** A group of switching sets of the same media type that may include alternative content (for example, different languages or camera angles) or alternative encodings (for example, different codecs).
 
- One or more presentation time synchronized selection sets.
+**CMAF Presentation:** One or more presentation time synchronized selection sets.
 
 > **Note**: A presentation is the first point where different media types can be combined.
 
 The CMAF Hypothetical Reference Model defines how tracks can be delivered, combined, and synchronized in CMAF Presentations, but the model allows the use of any compatible implementation. It’s possible to create HLS Playlists and a DASH Media Presentation Description that share the same resources, CMAF Addressable Objects, thereby allowing efficient caching even when delivering to multiple platforms. CMAF Addressable Media objects consist of:
 
- Headers contain information that includes information for initializing a track.
+**CMAF Header:** Headers contain information that includes information for initializing a track.
 
- A sequence of one or more consecutive fragments from the same track.
+**CMAF Segment:** A sequence of one or more consecutive fragments from the same track.
 
- A chunk contains a sequential subset of samples from a fragment.
+**CMAF Chunk:** A chunk contains a sequential subset of samples from a fragment.
 
- A complete track in one ISO_BMFF file.
+**CMAF Track File:** A complete track in one ISO_BMFF file.
 
 ![Flow diagram showing the relationship between specified CMAF objects and non-specified CMAF objects. Manifests have resources that point to addressable CMAF media objects.](https://docs-assets.developer.apple.com/published/c16d062ae472249b042d2ae0e6a6a93e/about-the-common-media-application-format-with-http-live-streaming-hls-1%402x.png)
 
@@ -64,6 +64,10 @@ HLS supports all CMAF subtitle and caption formats, except for IMSC1 Image Track
 
 You can include one or more Event Message boxes (`‘emsg’`) in each segment. You must use version 1 of the Event Message box standard found in ISO-23009-1. The following values define the semantics:
 
+- **`scheme_id_uri`**: Set to `https://aomedia.org/emsg/ID3` to identify boxes that carry ID3v2 metadata.
+- **`value`**: The URI that defines the semantics of the ID field. Any relative URI is considered to be relative to `scheme_id_uri`.
+- **`message_data`**: Contains data compatible with ID3 version 2.x.x.
+
 ##### Cmaf Switching Sets
 
 Each Track in a video CMAF Switching Set should appear in the Multivariant Playlist as a Media Playlist URI prefixed by an `EXT-X-STREAM-INF` tag describing it. The `EXT-X-STREAM-INF` tag should also specify any other renditions, such as audio that are intended to play with the video by indicating an appropriate `EXT-X-MEDIA GROUP-ID`.
@@ -95,6 +99,8 @@ The CMAF Fragments have been packaged into three CMAF Segments per track for del
 In addition, there’s a high quality video Track containing CMAF Fragments: `VHQ1`, `VHQ2`, `VHQ3`, `VHQ4`, and `VHQ5`, with Header `VHQH`, packaged and identified similarly.
 
 The two video Tracks, V and VHQ, are CMAF Switching Sets. Each audio Track can also be considered a Switching Set, with only one member. Together, both audio Switching Sets form a CMAF Selection Set.
+
+**Media Playlists**
 
 The HLS Media Playlist for the regular video Track `video.m3u8` would be as follows.
 
@@ -134,6 +140,8 @@ E5
 
 The Media Playlist the French audio Track `french.m3u8` would be similar.
 
+**Basic Multivariant Playlist**
+
 The HLS Multivariant Playlist might look like the following example.
 
 ```swift
@@ -150,6 +158,8 @@ video.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=8123000,CODECS="avc1.640028,mp4a.40.2",AUDIO="audio-stereo-64",RESOLUTION=1916x1032
 video-hq.m3u8
 ```
+
+**Multivariant Playlist with Codec Variants**
 
 We could also supply HEVC versions of `video.m3u8` and `video-hq.m3u8`, and perhaps give the high-bandwidth tier better-quality audio. Then the Multivariant Playlist might look like the following example.
 

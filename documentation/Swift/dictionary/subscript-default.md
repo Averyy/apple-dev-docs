@@ -62,7 +62,7 @@ When `letterCounts[letter, default: 0] += 1` is executed with a value of `letter
 ## Parameters
 
 - `key`: The key the look up in the dictionary.
-- `defaultValue`: The default value to use if   doesn’t exist in the   dictionary.
+- `defaultValue`: The default value to use if `key` doesn’t exist in the dictionary.
 
 ## See Also
 

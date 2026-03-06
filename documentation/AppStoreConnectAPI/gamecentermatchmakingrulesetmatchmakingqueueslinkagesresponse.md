@@ -17,6 +17,12 @@ object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse
 ### Dictionaries
 - [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse.Data](gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetCreateRequest](gamecentermatchmakingrulesetcreaterequest.md)

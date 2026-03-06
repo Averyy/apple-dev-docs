@@ -20,6 +20,12 @@ object GameCenterMatchmakingAppRequestsV1MetricResponse
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse.Data](gamecentermatchmakingapprequestsv1metricresponse/data-data.dictionary.md)
   The data structure in a response body for a match request.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingAppRequestsV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse](gamecentermatchmakingbooleanruleresultsv1metricresponse.md)

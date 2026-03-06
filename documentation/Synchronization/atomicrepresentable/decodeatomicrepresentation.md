@@ -31,7 +31,7 @@ The newly decoded logical type `Self`.
 
 ## Parameters
 
-- `storage`: The storage representation for   that’s used   within atomic operations.
+- `storage`: The storage representation for `Self` that’s used within atomic operations.
 
 
 ---

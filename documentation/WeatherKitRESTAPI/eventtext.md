@@ -14,6 +14,11 @@ The official text describing a severe weather event from the agency.
 object EventText
 ```
 
+## Properties
+
+- `language` (string): The ISO language code that the text is in.
+- `text` (string): The severe weather event text.
+
 ## See Also
 
 - [type Certainty](certainty.md)

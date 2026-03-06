@@ -14,9 +14,9 @@ This sample demonstrates how to build an interactive drawing app that responds t
 
 The key techniques the sample demonstrates are as follows:
 
-- : Reduce the lag a person experiences when drawing by predicting anchors for the initial stroke rendering and correcting with the latest anchors for accuracy over time.
-- : Adjust prediction strategies based on drawing context—using shorter prediction horizons or latest anchors directly when drawing on surfaces to minimize jitter, and longer prediction horirzons when drawing in air.
-- : Reduce swimming artifacts between virtual brush strokes and the real world when drawing on physical surfaces by transitioning strokes from the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/rendered) coordinate space to the [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/none) coordinate space.
+- **Latency compensation**: Reduce the lag a person experiences when drawing by predicting anchors for the initial stroke rendering and correcting with the latest anchors for accuracy over time.
+- **Adaptive prediction**: Adjust prediction strategies based on drawing context—using shorter prediction horizons or latest anchors directly when drawing on surfaces to minimize jitter, and longer prediction horirzons when drawing in air.
+- **Surface alignment**: Reduce swimming artifacts between virtual brush strokes and the real world when drawing on physical surfaces by transitioning strokes from the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/rendered) coordinate space to the [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/none) coordinate space.
 
 > **Note**: This sample uses the low-level mesh drawing implementation from [`Creating a spatial drawing app with RealityKit`](https://developer.apple.com/documentation/RealityKit/creating-a-spatial-drawing-app-with-realitykit) as its foundation.
 

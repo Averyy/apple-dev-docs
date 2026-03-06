@@ -20,6 +20,12 @@ object BetaGroup.Relationships.BetaTesters
 - [object BetaGroup.Relationships.BetaTesters.Data](betagroup/relationships-data.dictionary/betatesters-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([BetaGroup.Relationships.BetaTesters.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaGroup.Relationships.App](betagroup/relationships-data.dictionary/app-data.dictionary.md)

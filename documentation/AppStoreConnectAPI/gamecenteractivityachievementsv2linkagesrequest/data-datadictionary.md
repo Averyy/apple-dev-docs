@@ -17,6 +17,11 @@ object GameCenterActivityAchievementsV2LinkagesRequest.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

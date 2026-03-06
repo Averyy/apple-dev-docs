@@ -149,7 +149,7 @@ self.historyToken = fetchResult.currentHistoryToken;
 
 #### Revision History
 
--  First published.
+- **2023-06-06** First published.
 
 ## See Also
 

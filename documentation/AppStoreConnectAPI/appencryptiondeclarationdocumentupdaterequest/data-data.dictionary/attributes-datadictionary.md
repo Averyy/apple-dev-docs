@@ -14,6 +14,11 @@ Attributes that describe an app encryption declaration document update request r
 object AppEncryptionDeclarationDocumentUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string)
+- `uploaded` (boolean)
+
 
 ---
 

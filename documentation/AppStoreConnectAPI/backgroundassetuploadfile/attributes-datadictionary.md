@@ -14,6 +14,17 @@ Attributes that describe a background asset upload file resource.
 object BackgroundAssetUploadFile.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `assetType` (string)
+- `fileName` (string)
+- `fileSize` (int64)
+- `sourceFileChecksum` (string): This attribute is deprecated, use `sourceFileChecksums` instead.
+- `sourceFileChecksums` (Checksums)
+- `uploadOperations` ([DeliveryFileUploadOperation])
+
 
 ---
 

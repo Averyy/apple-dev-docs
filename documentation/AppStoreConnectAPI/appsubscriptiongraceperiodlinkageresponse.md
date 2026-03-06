@@ -17,6 +17,11 @@ object AppSubscriptionGracePeriodLinkageResponse
 ### Dictionaries
 - [object AppSubscriptionGracePeriodLinkageResponse.Data](appsubscriptiongraceperiodlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppSubscriptionGracePeriodLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [type SubscriptionGracePeriodDuration](subscriptiongraceperiodduration.md)

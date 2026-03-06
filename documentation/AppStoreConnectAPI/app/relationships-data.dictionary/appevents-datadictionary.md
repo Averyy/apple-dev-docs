@@ -17,6 +17,12 @@ object App.Relationships.AppEvents
 ### Objects
 - [object App.Relationships.AppEvents.Data](app/relationships-data.dictionary/appevents-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([App.Relationships.AppEvents.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

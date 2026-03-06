@@ -29,6 +29,21 @@ object GameCenterLeaderboardV2CreateRequest.Data.Attributes
 - vendorIdentifier:
 - visibility:
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `defaultFormatter` (GameCenterLeaderboardFormatter) *(required)*
+- `recurrenceDuration` (duration)
+- `recurrenceRule` (string)
+- `recurrenceStartDate` (date-time)
+- `referenceName` (string) *(required)*
+- `scoreRangeEnd` (number)
+- `scoreRangeStart` (number)
+- `scoreSortType` (string) *(required)*
+- `submissionType` (string) *(required)*
+- `vendorIdentifier` (string) *(required)*
+- `visibility` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardV2CreateRequest.Data.Relationships](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-Returns whether contents are known to be all-ASCII. A return value of `true` means that all code units are ASCII. A return value of `false` means there  be non-ASCII content.
+Returns whether contents are known to be all-ASCII. A return value of `true` means that all code units are ASCII. A return value of `false` means there *may* be non-ASCII content.
 
 **Availability**:
 - iOS 26.0+

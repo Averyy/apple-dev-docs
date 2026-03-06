@@ -16,6 +16,8 @@ The URL can point to an image on a server or to the resource scheme in your app.
 
 ##### Values for Src
 
+- **String**: The URL pointing to the location of the image file.
+
 ##### Elements That Use Src
 
 - [`badge`](badge.md)

@@ -8,6 +8,14 @@ Add a specific beta tester to one or more beta groups for beta testing.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/relationships/betaTesters`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Remove Beta Testers from a Beta Group](delete-v1-betagroups-_id_-relationships-betatesters.md)

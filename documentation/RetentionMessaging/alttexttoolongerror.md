@@ -18,6 +18,11 @@ object AltTextTooLongError
 
 When you call [`Upload Message`](upload-message.md) and include an image, check that the alternative text contains no more than 150 characters.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object BodyTooLongError](bodytoolongerror.md)

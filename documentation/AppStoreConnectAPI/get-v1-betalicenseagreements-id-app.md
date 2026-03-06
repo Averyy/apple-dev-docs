@@ -8,6 +8,14 @@ Get the app information for a specific beta license agreement.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaLicenseAgreements/{id}/app`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List Beta License Agreements](get-v1-betalicenseagreements.md)

@@ -14,6 +14,11 @@ The type and ID of a related Localizations resource.
 object AppClipAdvancedExperience.Relationships.Localizations.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Advanced App Clip Experience Localizations resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

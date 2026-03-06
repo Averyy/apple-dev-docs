@@ -36,7 +36,7 @@ The returned index is the position of the next uninitialized element in the buff
 
 ## Parameters
 
-- `source`: A collection of elements to be used to   initialize the buffer’s storage.
+- `source`: A collection of elements to be used to initialize the buffer’s storage.
 
 
 ---

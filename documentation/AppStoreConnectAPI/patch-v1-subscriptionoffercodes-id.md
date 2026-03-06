@@ -8,6 +8,14 @@ Deactivate a subscription offer that has offer codes for an auto-renewable subsc
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Subscription Offer](post-v1-subscriptionoffercodes.md)

@@ -22,6 +22,14 @@ object AppStoreReviewDetail
 - [object AppStoreReviewDetail.Relationships](appstorereviewdetail/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppStoreReviewDetail.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppStoreReviewDetail.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreReviewDetailCreateRequest](appstorereviewdetailcreaterequest.md)

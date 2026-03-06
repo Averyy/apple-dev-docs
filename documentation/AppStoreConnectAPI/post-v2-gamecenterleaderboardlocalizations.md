@@ -18,6 +18,10 @@ Create a Game Center leaderboard localization.
 - 422:
 - 429:
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardLocalizations`
+
 ## See Also
 
 - [Read Game Center leaderboard localization information](get-v2-gamecenterleaderboardlocalizations-_id_.md)

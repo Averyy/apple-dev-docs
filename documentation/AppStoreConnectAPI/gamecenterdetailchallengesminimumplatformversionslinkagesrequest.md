@@ -19,6 +19,10 @@ object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest
 ### Dictionaries
 - [object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest.Data](gamecenterdetailchallengesminimumplatformversionslinkagesrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

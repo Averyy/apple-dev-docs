@@ -22,7 +22,7 @@ class Search extends Service
 
 The search service allows developers to populate a map with results from a user-entered query, including information about businesses and other points of interest. MapKit JS provides this functionality through a search object that makes network requests to the search service.
 
-Supplying  creates the most relevant results for a query. Context may include the user’s location, or a coordinate or region that the developer provides.
+Supplying *search context* creates the most relevant results for a query. Context may include the user’s location, or a coordinate or region that the developer provides.
 
 To use the search service, create an instance of a search object with the desired options. Use the search object to make search requests.
 

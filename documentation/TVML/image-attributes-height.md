@@ -14,6 +14,8 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 
 ##### Values for Height
 
+- **Integer**: The height of the element, in points.
+
 ##### Elements That Use Height
 
 - [`decorationLabel`](decorationlabel.md)

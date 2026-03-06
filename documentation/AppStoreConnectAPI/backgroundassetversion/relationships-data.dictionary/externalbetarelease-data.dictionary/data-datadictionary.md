@@ -12,6 +12,11 @@
 object BackgroundAssetVersion.Relationships.ExternalBetaRelease.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

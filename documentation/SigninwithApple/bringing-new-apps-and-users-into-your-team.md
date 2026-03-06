@@ -28,6 +28,11 @@ grant_type=client_credentials&scope=user.migration&client_id={client_id}&client_
 
 The HTTP POST method includes the following parameters:
 
+- **`grant_type`**: The type of grant requested. Set to `client_credentials` as there are no user credentials. Access the migration endpoint using the client application’s credentials.
+- **`scope`**: The scope of the migration. Set to `user.migration` in order to exchange the identifier.
+- **`client_id`**: The identifier (App ID or Services ID) for the transferred app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
+- **`client_secret`**: The client secret of the recipient team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferred app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+
 Expect an HTTP POST response similar to the following example.
 
 ```console
@@ -61,6 +66,10 @@ transfer_sub={transfer_sub}&client_id={client_id}&client_secret={client_secret}
 
 The HTTP POST method includes the following parameters:
 
+- **`transfer_sub`**: The transfer identifier that you obtained from the sending team.
+- **`client_id`**: The identifier (App ID or Services ID) for the transferred app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
+- **`client_secret`**: The client secret of the recipient team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferred app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+
 Expect an HTTP POST response similar to the following example.
 
 ```console
@@ -77,6 +86,10 @@ Pragma: no-cache
 ```
 
 The HTTP POST response includes the following parameters:
+
+- **`sub`**: The recipient team-scoped identifier for the user. This value is the same as the `sub` in the ID token issued during user sign-in.
+- **`email`**: The private email address specific to the recipient team. This attribute returns only if the user utilized a private email address with the transferred application.
+- **`is_private_email`**: A Boolean indicator specifying if the email address provided is the private mail relay address.
 
 The user identifier and the private email address are specific to your team, and all of your applications share the same identifier for the user. Avoid exposing the user identifier to a different team to prevent correlation of a user across teams.
 

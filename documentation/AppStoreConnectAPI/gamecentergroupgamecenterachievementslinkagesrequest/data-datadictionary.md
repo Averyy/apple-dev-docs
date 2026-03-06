@@ -14,6 +14,11 @@ The data structure that represents a group resource.
 object GameCenterGroupGameCenterAchievementsLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

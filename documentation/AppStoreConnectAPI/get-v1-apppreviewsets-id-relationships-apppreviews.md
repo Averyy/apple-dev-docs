@@ -8,6 +8,14 @@ Get the ordered app preview IDs in a preview set.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appPreviewSets/{id}/relationships/appPreviews`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)

@@ -12,6 +12,10 @@
 object StringToStringMap
 ```
 
+## Properties
+
+- `Any Key` (string)
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

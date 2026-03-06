@@ -12,6 +12,11 @@
 object SubscriptionPriceInlineCreate.Attributes
 ```
 
+## Properties
+
+- `preserveCurrentPrice` (boolean)
+- `startDate` (date)
+
 ## See Also
 
 - [object SubscriptionPriceInlineCreate.Relationships](subscriptionpriceinlinecreate/relationships-data.dictionary.md)

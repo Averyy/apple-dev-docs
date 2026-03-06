@@ -17,6 +17,14 @@ Gets the results of the performance test for the specified identifier.
 
 Call this endpoint to retrieve the performance results from a previous test. The API returns a JSON object that contains [`PerformanceTestConfig`](performancetestconfig.md), [`PerformanceTestResponse`](performancetestresponse.md) , and [`Failures`](failures.md) objects that enumerate the parameters the system used to evaluate the server performance, results of the specified test, and information that describes the failures, if any, that the test encountered.
 
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/performanceTest/result/{requestId}`
+
+## Parameters
+
+- `requestId` (requestId) *(required)*: The ID of the performance test to return.
+
 ## See Also
 
 - [Initiate Performance Test](initiate-performance-test.md)

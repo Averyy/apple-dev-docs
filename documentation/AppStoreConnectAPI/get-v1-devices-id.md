@@ -8,6 +8,14 @@ Get information for a specific device registered to your team.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/devices/{id}`
+
+## Parameters
+
+- `fields[devices]` ([string])
+
 ## See Also
 
 - [List Devices](get-v1-devices.md)

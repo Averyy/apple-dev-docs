@@ -14,6 +14,10 @@ A response object indicating that the request wasn’t accepted due to an issue 
 object ForbiddenResponse
 ```
 
+## Properties
+
+- `errors` ([Error]) *(required)*: The collection of errors that occurred while processing the request.
+
 ## See Also
 
 - [object EmptyBodyResponse](emptybodyresponse.md)

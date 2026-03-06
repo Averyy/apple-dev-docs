@@ -23,7 +23,7 @@ static func -= (lhs: inout Self, rhs: Self)
 ## Parameters
 
 - `lhs`: A numeric value.
-- `rhs`: The value to subtract from  .
+- `rhs`: The value to subtract from `lhs`.
 
 
 ---

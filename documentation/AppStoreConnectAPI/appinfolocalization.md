@@ -22,6 +22,14 @@ object AppInfoLocalization
 - [object AppInfoLocalization.Relationships](appinfolocalization/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppInfoLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppInfoLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppInfoLocalizationCreateRequest](appinfolocalizationcreaterequest.md)

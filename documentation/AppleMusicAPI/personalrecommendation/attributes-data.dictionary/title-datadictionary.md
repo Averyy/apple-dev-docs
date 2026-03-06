@@ -14,6 +14,10 @@ An object that represents the title of a personal recommendation.
 object PersonalRecommendation.Attributes.Title
 ```
 
+## Properties
+
+- `stringForDisplay` (string) *(required)*: The localized title for the recommendation.
+
 ## See Also
 
 - [object PersonalRecommendation.Attributes.Reason](personalrecommendation/attributes-data.dictionary/reason-data.dictionary.md)

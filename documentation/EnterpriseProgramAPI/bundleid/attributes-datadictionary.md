@@ -11,6 +11,13 @@ Attributes that describe a Bundle IDs resource.
 object BundleId.Attributes
 ```
 
+## Properties
+
+- `identifier` (string)
+- `name` (string)
+- `platform` (BundleIdPlatform)
+- `seedId` (string)
+
 
 ---
 

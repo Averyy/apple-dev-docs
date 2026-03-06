@@ -14,6 +14,16 @@ Attributes that describe a subscription image resource.
 object InAppPurchaseImage.Attributes
 ```
 
+## Properties
+
+- `assetToken` (string)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `sourceFileChecksum` (string)
+- `state` (string)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object InAppPurchaseImage.Relationships](inapppurchaseimage/relationships-data.dictionary.md)

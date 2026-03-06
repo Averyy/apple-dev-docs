@@ -12,6 +12,10 @@ Create a localized display name and description for an in-app purchase.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseLocalizations`
+
 ## See Also
 
 - [List All Localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)

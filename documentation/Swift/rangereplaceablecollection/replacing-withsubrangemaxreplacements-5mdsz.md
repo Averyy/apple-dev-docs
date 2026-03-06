@@ -28,8 +28,8 @@ A new collection in which all occurrences of subsequence matching `regex` in `su
 
 - `regex`: A regex describing the sequence to replace.
 - `replacement`: The new elements to add to the collection.
-- `subrange`: The range in the collection in which to search for  .
-- `maxReplacements`: A number specifying how many occurrences of the   sequence matching   to replace. Default is  .
+- `subrange`: The range in the collection in which to search for `regex`.
+- `maxReplacements`: A number specifying how many occurrences of the sequence matching `regex` to replace. Default is `Int.max`.
 
 
 ---

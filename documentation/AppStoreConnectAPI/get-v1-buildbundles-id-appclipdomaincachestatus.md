@@ -8,6 +8,14 @@ Get the cache status of the domain you associate with your App Clip for a specif
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildBundles/{id}/appClipDomainCacheStatus`
+
+## Parameters
+
+- `fields[appClipDomainStatuses]` ([string]): Additional fields to include for each App Clip Domain Cache Statuses resource returned by the response.
+
 ## See Also
 
 - [Read App Clip Domain Debug Status Information for a Build Bundle](get-v1-buildbundles-_id_-appclipdomaindebugstatus.md)

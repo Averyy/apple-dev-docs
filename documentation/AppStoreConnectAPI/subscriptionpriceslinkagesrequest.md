@@ -20,6 +20,10 @@ object SubscriptionPricesLinkagesRequest
 - [object SubscriptionPricesLinkagesRequest.Data](subscriptionpriceslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a subscription prices linkages request resource.
 
+## Properties
+
+- `data` ([SubscriptionPricesLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

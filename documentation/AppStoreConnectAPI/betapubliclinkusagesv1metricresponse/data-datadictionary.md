@@ -17,6 +17,10 @@ object BetaPublicLinkUsagesV1MetricResponse.Data
 ### Dictionaries
 - [object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints](betapubliclinkusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
 
+## Properties
+
+- `dataPoints` (BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints)
+
 
 ---
 

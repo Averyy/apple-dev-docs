@@ -17,6 +17,11 @@ object GameCenterChallengeVersion.Relationships.Releases
 ### Dictionaries
 - [object GameCenterChallengeVersion.Relationships.Releases.Data](gamecenterchallengeversion/relationships-data.dictionary/releases-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterChallengeVersion.Relationships.Releases.Data])
+- `meta` (PagingInformation)
+
 
 ---
 

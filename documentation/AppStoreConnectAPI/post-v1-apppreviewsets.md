@@ -8,6 +8,10 @@ Add a new app preview set to an App Store version localization for a specific ap
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appPreviewSets`
+
 ## See Also
 
 - [Delete an App Preview Set](delete-v1-apppreviewsets-_id_.md)

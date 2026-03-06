@@ -20,6 +20,11 @@ object AlternateIdsResponse
 - [object AlternateIdsResponse.AlternateIds](alternateidsresponse/alternateids.md)
   Contains a list of alternate Place IDs for a given Place ID.
 
+## Properties
+
+- `errors` ([PlacesResponse.PlaceLookupError]): A list f of [`PlacesResponse.PlaceLookupError`](placesresponse/placelookuperror.md) results.
+- `results` ([AlternateIdsResponse.AlternateIds]): A list of [`AlternateIdsResponse.AlternateIds`](alternateidsresponse/alternateids.md) results.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

@@ -8,6 +8,14 @@ Get a list of custom product page version IDs associated with a custom product p
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPages/{id}/relationships/appCustomProductPageVersions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create a custom product page](post-v1-appcustomproductpages.md)

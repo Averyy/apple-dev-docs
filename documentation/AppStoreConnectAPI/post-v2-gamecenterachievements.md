@@ -18,6 +18,10 @@ Create a Game Center achievement.
 - 422:
 - 429:
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/gameCenterAchievements`
+
 ## See Also
 
 - [Modify a Game Center achievement](patch-v2-gamecenterachievements-_id_.md)

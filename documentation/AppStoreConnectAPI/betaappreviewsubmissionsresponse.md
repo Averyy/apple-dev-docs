@@ -14,6 +14,13 @@ A response that contains a list of Beta App Review Submission resources.
 object BetaAppReviewSubmissionsResponse
 ```
 
+## Properties
+
+- `data` ([BetaAppReviewSubmission]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([Build])
+
 ## See Also
 
 - [List Beta App Review Submissions](get-v1-betaappreviewsubmissions.md)

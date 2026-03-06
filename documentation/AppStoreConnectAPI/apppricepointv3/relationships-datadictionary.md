@@ -20,6 +20,12 @@ object AppPricePointV3.Relationships
 ### Dictionaries
 - [object AppPricePointV3.Relationships.Equalizations](apppricepointv3/relationships-data.dictionary/equalizations-data.dictionary.md)
 
+## Properties
+
+- `app` (AppPricePointV3.Relationships.App)
+- `equalizations` (AppPricePointV3.Relationships.Equalizations)
+- `territory` (AppPricePointV3.Relationships.Territory)
+
 ## See Also
 
 - [object AppPricePointV3.Attributes](apppricepointv3/attributes-data.dictionary.md)

@@ -33,7 +33,7 @@ The default implementation of this function is available to all types that confo
 ## Parameters
 
 - `destinationDirectory`: A directory to write the file to.
-- `contentType`: A content type of the requested file.   If  , the first transfer representation is be used.
+- `contentType`: A content type of the requested file. If `nil`, the first transfer representation is be used.
 
 
 ---

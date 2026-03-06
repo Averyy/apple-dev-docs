@@ -20,6 +20,10 @@ object AppStoreReviewAttachmentUpdateRequest
 - [object AppStoreReviewAttachmentUpdateRequest.Data](appstorereviewattachmentupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreReviewAttachmentUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreReviewAttachment](appstorereviewattachment.md)

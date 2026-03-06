@@ -20,6 +20,10 @@ object BetaTesterBuildsLinkagesRequest
 - [object BetaTesterBuildsLinkagesRequest.Data](betatesterbuildslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([BetaTesterBuildsLinkagesRequest.Data]) *(required)*: The types and IDs of related resources.
+
 ## See Also
 
 - [object BetaTester](betatester.md)

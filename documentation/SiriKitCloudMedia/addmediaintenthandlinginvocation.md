@@ -20,6 +20,11 @@ object AddMediaIntentHandlingInvocation
 - [object AddMediaIntentHandlingInvocation.Params](addmediaintenthandlinginvocation/params-data.dictionary.md)
   The parameters of an add media intent request.
 
+## Properties
+
+- `params` (AddMediaIntentHandlingInvocation.Params) *(required)*: The parameters of this request, including the add media intent.
+- `method` (string) *(required)*: An action for your service to take to process this intent.
+
 ## Relationships
 
 ### Inherits From

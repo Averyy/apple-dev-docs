@@ -41,7 +41,7 @@ dictionary.merge(zip(["a", "d"], [5, 6])) { (_, new) in new }
 ## Parameters
 
 - `other`: A sequence of key-value pairs.
-- `combine`: A closure that takes the current and new values for any   duplicate keys. The closure returns the desired value for the final   dictionary.
+- `combine`: A closure that takes the current and new values for any duplicate keys. The closure returns the desired value for the final dictionary.
 
 ## See Also
 

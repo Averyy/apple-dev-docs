@@ -14,6 +14,11 @@ Attributes that you set that describe the new resource.
 object AppScreenshotCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object AppScreenshotCreateRequest.Data.Relationships](appscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

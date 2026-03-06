@@ -51,7 +51,7 @@ let dataReference = dataValue as NSData?
 
 ##### Note Renamed Reference Types
 
-For Foundation types that  bridged to value types, the Swift overlay renames classes and protocols, as well as related enumerations and constants. These types and protocols drop their `NS` prefix, with the following exceptions:
+For Foundation types that *aren’t* bridged to value types, the Swift overlay renames classes and protocols, as well as related enumerations and constants. These types and protocols drop their `NS` prefix, with the following exceptions:
 
 - Classes specific to Objective-C or inherently tied to the Objective-C runtime, like `NSObject`, `NSAutoreleasePool`, `NSException`, and `NSProxy`
 - Platform-specific classes, like `NSBackgroundActivity`, `NSUserNotification`, and `NSXPCConnection`

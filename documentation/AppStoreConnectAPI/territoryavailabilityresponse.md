@@ -14,6 +14,12 @@ A response that contains a single territory availability resource.
 object TerritoryAvailabilityResponse
 ```
 
+## Properties
+
+- `data` (TerritoryAvailability) *(required)*
+- `included` ([Territory])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

@@ -17,6 +17,10 @@ object AppPricePointV3.Relationships.Territory
 ### Objects
 - [object AppPricePointV3.Relationships.Territory.Data](apppricepointv3/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppPricePointV3.Relationships.Territory.Data)
+
 ## See Also
 
 - [object AppPricePointV3.Relationships.App](apppricepointv3/relationships-data.dictionary/app-data.dictionary.md)

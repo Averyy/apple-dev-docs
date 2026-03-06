@@ -14,6 +14,12 @@ A response that contains a single leaderboard set resource.
 object GameCenterLeaderboardSetResponse
 ```
 
+## Properties
+
+- `data` (GameCenterLeaderboardSet) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

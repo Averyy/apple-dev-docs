@@ -14,6 +14,12 @@ A response that contains a list of app keywords response resources.
 object AppKeywordsResponse
 ```
 
+## Properties
+
+- `data` ([AppKeyword]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

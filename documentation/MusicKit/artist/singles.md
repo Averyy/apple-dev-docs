@@ -3,7 +3,7 @@
 **Framework**: MusicKit  
 **Kind**: property
 
-A collection of the artist’s associated albums in the  category.
+A collection of the artist’s associated albums in the *singles* category.
 
 **Availability**:
 - iOS 15.0+

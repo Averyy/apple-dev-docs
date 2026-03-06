@@ -14,6 +14,11 @@ Data of the library playlist folder which contains the created library playlist 
 object LibraryPlaylistCreationRequest.Relationships.Parent.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The unique identifier for the library playlist folder.
+- `type` (string) *(required)*: The type of the track to be added.
+
 
 ---
 

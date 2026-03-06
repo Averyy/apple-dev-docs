@@ -17,6 +17,10 @@ object PromotedPurchaseCreateRequest
 ### Objects
 - [object PromotedPurchaseCreateRequest.Data](promotedpurchasecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (PromotedPurchaseCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)

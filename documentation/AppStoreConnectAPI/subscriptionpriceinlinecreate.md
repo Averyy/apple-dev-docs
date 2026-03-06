@@ -18,6 +18,13 @@ object SubscriptionPriceInlineCreate
 - [object SubscriptionPriceInlineCreate.Attributes](subscriptionpriceinlinecreate/attributes-data.dictionary.md)
 - [object SubscriptionPriceInlineCreate.Relationships](subscriptionpriceinlinecreate/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionPriceInlineCreate.Attributes)
+- `id` (string)
+- `relationships` (SubscriptionPriceInlineCreate.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionPricePointResponse](subscriptionpricepointresponse.md)

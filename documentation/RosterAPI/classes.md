@@ -14,6 +14,12 @@ A list of classes, with a token for pagination.
 object Classes
 ```
 
+## Properties
+
+- `classes` ([Class]): A list of [`Class`](class.md) objects.
+- `moreToFollow` (boolean): A flag that indicates whether there are more classes. If `true`, use the `nextPageToken` to request another list from the remaining classes.
+- `nextPageToken` (string): A token to request additional classes, if any. Use this as the `nextPageToken` parameter for the [`List classes`](returns-a-list-of-classes-for-an-apple-school-manager-organization.md) request.
+
 ## See Also
 
 - [Read a class](returns-a-specific-class-in-an-apple-school-manager-organization..md)

@@ -8,6 +8,14 @@ Cancel a planned phased release that has not been started.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionPhasedReleases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 
 ---
 

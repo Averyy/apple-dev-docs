@@ -12,6 +12,10 @@ Create an in-app purchase submission for review.
 
 - [Managing in-app purchases](managing-in-app-purchases.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseSubmissions`
+
 
 ---
 

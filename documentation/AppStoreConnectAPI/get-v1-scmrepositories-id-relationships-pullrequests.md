@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmRepositories/{id}/relationships/pullRequests`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Git Repositories](get-v1-scmrepositories.md)

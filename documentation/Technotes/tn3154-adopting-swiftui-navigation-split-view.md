@@ -66,7 +66,7 @@ struct NavigationSplitViewWrapper<Sidebar, Content, Detail>: View where Sidebar:
 
 #### Revision History
 
--  First published.
+- **2023-08-29** First published.
 
 ## See Also
 

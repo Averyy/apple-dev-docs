@@ -20,6 +20,10 @@ object BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration
 - [object BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration.Data](buildupdaterequest/data-data.dictionary/relationships-data.dictionary/appencryptiondeclaration-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
+## Properties
+
+- `data` (BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration.Data)
+
 
 ---
 

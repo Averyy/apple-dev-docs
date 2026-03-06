@@ -12,6 +12,11 @@
 object InAppPurchaseV2.Relationships.IapPriceSchedule.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -26,7 +26,7 @@ Use this initializer to avoid intermediate reallocations of a dictionary’s sto
 
 ## Parameters
 
-- `minimumCapacity`: The minimum number of key-value pairs that   the newly created dictionary should be able to store without   reallocating its storage buffer.
+- `minimumCapacity`: The minimum number of key-value pairs that the newly created dictionary should be able to store without reallocating its storage buffer.
 
 ## See Also
 

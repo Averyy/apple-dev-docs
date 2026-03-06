@@ -12,6 +12,11 @@
 object CertificateCreateRequest.Data.Relationships.MerchantId.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

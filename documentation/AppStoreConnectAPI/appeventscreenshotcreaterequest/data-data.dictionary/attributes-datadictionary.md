@@ -12,6 +12,12 @@
 object AppEventScreenshotCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appEventAssetType` (AppEventAssetType) *(required)*
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object AppEventScreenshotCreateRequest.Data.Relationships](appeventscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

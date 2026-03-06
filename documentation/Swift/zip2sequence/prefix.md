@@ -40,7 +40,7 @@ print(numbers.prefix(10))
 
 ## Parameters
 
-- `maxLength`: The maximum number of elements to return. The   value of   must be greater than or equal to zero.
+- `maxLength`: The maximum number of elements to return. The value of `maxLength` must be greater than or equal to zero.
 
 
 ---

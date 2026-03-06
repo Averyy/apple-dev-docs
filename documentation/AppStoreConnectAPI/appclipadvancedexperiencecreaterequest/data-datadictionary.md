@@ -22,6 +22,12 @@ object AppClipAdvancedExperienceCreateRequest.Data
 - [object AppClipAdvancedExperienceCreateRequest.Data.Relationships](appclipadvancedexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppClipAdvancedExperienceCreateRequest.Data.Attributes) *(required)*: The attributes that describe the request that creates an Advanced App Clip Experiences resource.
+- `relationships` (AppClipAdvancedExperienceCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceLocalizationInlineCreate](appclipadvancedexperiencelocalizationinlinecreate.md)

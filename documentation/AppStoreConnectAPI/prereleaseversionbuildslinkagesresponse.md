@@ -17,6 +17,12 @@ object PrereleaseVersionBuildsLinkagesResponse
 ### Dictionaries
 - [object PrereleaseVersionBuildsLinkagesResponse.Data](prereleaseversionbuildslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([PrereleaseVersionBuildsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object PrereleaseVersion](prereleaseversion.md)

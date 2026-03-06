@@ -14,6 +14,13 @@ A response that contains a list of Customer Reviews resources.
 object CustomerReviewsResponse
 ```
 
+## Properties
+
+- `data` ([CustomerReview]) *(required)*: A list of customer review resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([CustomerReviewResponseV1]): The requested relationship data.
+
 ## See Also
 
 - [object CustomerReviewResponse](customerreviewresponse.md)

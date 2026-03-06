@@ -16,6 +16,10 @@ Create an in-app purchase, including a consumable, non-consumable, or non-renewi
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/inAppPurchases`
+
 ## See Also
 
 - [Read In-App Purchase Information](get-v2-inapppurchases-_id_.md)

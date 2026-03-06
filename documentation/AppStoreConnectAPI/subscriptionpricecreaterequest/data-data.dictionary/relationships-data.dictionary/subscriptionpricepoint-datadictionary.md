@@ -17,6 +17,10 @@ object SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint
 ### Objects
 - [object SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint.Data](subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionPriceCreateRequest.Data.Relationships.Subscription](subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)

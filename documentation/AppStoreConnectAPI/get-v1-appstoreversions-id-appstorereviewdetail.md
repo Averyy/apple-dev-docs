@@ -8,6 +8,18 @@ Get the details you provide to App Review so they can test your app.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/appStoreReviewDetail`
+
+## Parameters
+
+- `fields[appStoreReviewDetails]` ([string])
+- `include` ([string])
+- `fields[appStoreReviewAttachments]` ([string])
+- `limit[appStoreReviewAttachments]` (integer)
+- `fields[appStoreVersions]` ([string])
+
 ## See Also
 
 - [Read the App Store Version Submission Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionsubmission.md)

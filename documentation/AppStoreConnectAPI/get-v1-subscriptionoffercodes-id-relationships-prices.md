@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}/relationships/prices`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create a Subscription Offer](post-v1-subscriptionoffercodes.md)

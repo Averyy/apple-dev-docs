@@ -17,6 +17,10 @@ object GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalizatio
 ### Objects
 - [object GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalization.Data](gamecenterleaderboardimage/relationships-data.dictionary/gamecenterleaderboardlocalization-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalization.Data)
+
 
 ---
 

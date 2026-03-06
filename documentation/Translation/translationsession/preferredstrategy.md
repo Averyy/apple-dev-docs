@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-Which strategy is preferred for these translations.
+The preferred translation strategy configured for the session.
 
 **Availability**:
 - iOS 26.4+ (Beta)

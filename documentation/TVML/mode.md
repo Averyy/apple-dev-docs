@@ -43,6 +43,9 @@ Use the `mode` attribute to define how an image is displayed in the `oneupTempla
 
 ##### Values for Mode
 
+- **`showcase oneup`**: Image alternates between the actual image size and a fullscreen image.
+- **`oneup caption`**: Image alternates between a fullscreen image with or without a caption below the image.
+
 ##### Elements That Use Mode
 
 - [`oneupTemplate`](oneuptemplate.md)

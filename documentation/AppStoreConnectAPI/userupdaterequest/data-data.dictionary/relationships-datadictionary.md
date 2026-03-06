@@ -20,6 +20,10 @@ object UserUpdateRequest.Data.Relationships
 - [object UserUpdateRequest.Data.Relationships.VisibleApps](userupdaterequest/data-data.dictionary/relationships-data.dictionary/visibleapps-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `visibleApps` (UserUpdateRequest.Data.Relationships.VisibleApps)
+
 ## See Also
 
 - [object UserUpdateRequest.Data.Attributes](userupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

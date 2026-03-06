@@ -14,6 +14,112 @@ The example request below lists Xcode versions available in Xcode Cloud for a sp
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/xcodeVersions
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "type": "ciXcodeVersions",
+            "id": "Xcode12E507:stable",
+            "attributes": {
+                "version": "Xcode12E507:stable",
+                "name": "Xcode 12.5.1 (12E507)",
+                "testDestinations": [
+                    {
+                        "deviceTypeName": "iPhone 8",
+                        "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-8",
+                        "availableRuntimes": [
+                            {
+                                "runtimeName": "iOS 13.0",
+                                "runtimeIdentifier": "com.apple.CoreSimulator.SimRuntime.iOS-13-0"
+                            }
+                        ],
+                        "kind": "SIMULATOR"
+                    },
+                    {
+                        "deviceTypeName": "Mac",
+                        "deviceTypeIdentifier": "mac",
+                        "availableRuntimes": [
+                            {
+                                "runtimeName": "Same as Selected macOS Version",
+                                "runtimeIdentifier": "builder"
+                            },
+                            {
+                                "runtimeName": "Latest Beta or Release (Currently macOS Big Sur 11.5.2 (20G95))",
+                                "runtimeIdentifier": "latest:all"
+                            },
+                            {
+                                "runtimeName": "macOS Big Sur 11.5.2 (20G95)",
+                                "runtimeIdentifier": "20G95"
+                            }
+                        ],
+                        "kind": "MAC"
+                    },
+                    {
+                        "deviceTypeName": "Mac (Mac Catalyst)",
+                        "deviceTypeIdentifier": "mac_catalyst",
+                        "availableRuntimes": [
+                            {
+                                "runtimeName": "Same as Selected macOS Version",
+                                "runtimeIdentifier": "builder"
+                            },
+                            {
+                                "runtimeName": "Latest Beta or Release (Currently macOS Big Sur 11.5.2 (20G95))",
+                                "runtimeIdentifier": "latest:all"
+                            },
+                            {
+                                "runtimeName": "macOS Big Sur 11.5.2 (20G95)",
+                                "runtimeIdentifier": "20G95"
+                            }
+                        ],
+                        "kind": "MAC"
+                    }
+                ]
+            },
+            "relationships": {
+                "macOsVersions": {
+                    "links": {
+                        "self": "https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/Xcode12E507:stable/relationships/macOsVersions",
+                        "related": "https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/Xcode12E507:stable/macOsVersions"
+                    }
+                }
+            },
+            "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/Xcode20G95:stable"
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciXcodeVersions"
+    },
+    "meta": {
+        "paging": {
+            "total": 1,
+            "limit": 50
+        }
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/{id}/xcodeVersions`
+
+## Parameters
+
+- `fields[ciMacOsVersions]` ([string]): Additional fields to include for each Xcode Versions resource returned by the response.
+- `fields[ciXcodeVersions]` ([string]): Additional fields to include for each Xcode Versions resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The number of Xcode Versions resources to return.
+- `limit[macOsVersions]` (integer): The number of included Xcode Versions resources to return if the macOS versions relationship is included.
+
 ## See Also
 
 - [List All macOS Versions Available in Xcode Cloud](get-v1-cimacosversions.md)

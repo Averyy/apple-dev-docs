@@ -20,6 +20,13 @@ object Artists.Views.ArtistsFeaturedMusicVideosView
 - [object Artists.Views.ArtistsFeaturedMusicVideosView.Attributes](artists/views-data.dictionary/artistsfeaturedmusicvideosview/attributes-data.dictionary.md)
   A collection of selected music videos to be featured with the artist.
 
+## Properties
+
+- `attributes` (Artists.Views.ArtistsFeaturedMusicVideosView.Attributes) *(required)*: The attributes for the view.
+- `data` ([MusicVideos]) *(required)*: A collection of music videos selected as featured for the artist.
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

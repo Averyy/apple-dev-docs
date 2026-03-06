@@ -28,6 +28,21 @@ object Subscription.Relationships
 - [object Subscription.Relationships.SubscriptionLocalizations](subscription/relationships-data.dictionary/subscriptionlocalizations-data.dictionary.md)
 - [object Subscription.Relationships.WinBackOffers](subscription/relationships-data.dictionary/winbackoffers-data.dictionary.md)
 
+## Properties
+
+- `appStoreReviewScreenshot` (Subscription.Relationships.AppStoreReviewScreenshot)
+- `group` (Subscription.Relationships.Group)
+- `images` (Subscription.Relationships.Images)
+- `introductoryOffers` (Subscription.Relationships.IntroductoryOffers)
+- `offerCodes` (Subscription.Relationships.OfferCodes)
+- `pricePoints` (Subscription.Relationships.PricePoints)
+- `prices` (Subscription.Relationships.Prices)
+- `promotedPurchase` (Subscription.Relationships.PromotedPurchase)
+- `promotionalOffers` (Subscription.Relationships.PromotionalOffers)
+- `subscriptionAvailability` (Subscription.Relationships.SubscriptionAvailability)
+- `subscriptionLocalizations` (Subscription.Relationships.SubscriptionLocalizations)
+- `winBackOffers` (Subscription.Relationships.WinBackOffers)
+
 ## See Also
 
 - [object Subscription.Attributes](subscription/attributes-data.dictionary.md)

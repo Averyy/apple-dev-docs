@@ -14,6 +14,12 @@ A response that contains a single featuring nomination resource.
 object NominationResponse
 ```
 
+## Properties
+
+- `data` (Nomination) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Nomination](nomination.md)

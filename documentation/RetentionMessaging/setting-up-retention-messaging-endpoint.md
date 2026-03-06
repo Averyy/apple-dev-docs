@@ -19,17 +19,17 @@ Your server is responsible for parsing, interpreting, and responding to all serv
 
 Implement this endpoint on your server to the following specifications:
 
- `Get Retention Message`
+**Endpoint reference name:** `Get Retention Message`
 
- `POST https://example.com/<your URL>`
+**URL:** `POST https://example.com/<your URL>`
 
 You determine the HTTPS URL on your server to receive the requests. Share this URL with Apple.
 
- [`RealtimeRequestBody`](realtimerequestbody.md)
+**HTTP body:** [`RealtimeRequestBody`](realtimerequestbody.md)
 
 The request body. For the decoded version, see [`DecodedRealtimeRequestBody`](decodedrealtimerequestbody.md).
 
- `200` - `OK`   [`RealtimeResponseBody`](realtimeresponsebody.md)
+**Response codes:** `200` - `OK`   [`RealtimeResponseBody`](realtimeresponsebody.md)
 Your response body identifies the retention message to display to the customer.
 
 If a request fails for any reason, the system displays a default retention message. If a default message isn’t available, the system doesn’t display a retention message. For more information about default messages, see [`Setting up retention messages`](setting-up-retention-messages.md).

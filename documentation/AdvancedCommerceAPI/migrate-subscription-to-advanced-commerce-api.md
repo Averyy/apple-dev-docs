@@ -18,6 +18,14 @@ Migrate a subscription that a customer purchased through In-App Purchase to a su
 
 > **Note**: You can use the Advanced Commerce API and the StoreKit [`In-App Purchase`](https://developer.apple.com/documentation/StoreKit/in-app-purchase) APIs in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime.
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/migrate/{transactionId}`
+
+## Parameters
+
+- `transactionId` (string) *(required)*: The transaction identifier of the auto-renewable subscription to migrate. Use the subscription’s original transaction ID or any subsequent transaction ID of a transaction related to the subscription.
+
 ## Request Body
 
 The request body that contains the details for the migration.

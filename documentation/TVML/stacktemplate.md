@@ -33,6 +33,14 @@ The following listing shows the main elements of the `stackTemplate` element in 
 
 ###### Element Descriptions
 
+- **[`banner`](banner.md)**: A page description along the top of the screen.
+- **[`carousel`](carousel.md)**: Element that contains all elements used to display groups of products, such as dramas and comedies, in a horizontal format.
+- **[`collectionList`](collectionlist.md)**: Element that contains all elements used to display groups of products, such as dramas and comedies, in a horizontal format.
+- **[`grid`](grid.md)**: Element that contains all elements used to display groups of products, such as dramas and comedies, in a grid format.
+- **[`lockup`](lockup.md)**: Element containing `img` and `title` elements used to describe a product.
+- **[`section`](section.md)**: Element containing a group of `lockup` elements.
+- **[`shelf`](shelf.md)**: Element containing a group of `section` elements.
+
 ##### Example
 
 The following listing shows the TVML for a `stackTemplate` example:

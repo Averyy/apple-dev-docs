@@ -30,7 +30,7 @@ The buffer slice’s memory must be initialized or its `Element` type must be a 
 
 ## Parameters
 
-- `source`: A sequence of elements to be used to update   the contents of the buffer slice.
+- `source`: A sequence of elements to be used to update the contents of the buffer slice.
 
 
 ---

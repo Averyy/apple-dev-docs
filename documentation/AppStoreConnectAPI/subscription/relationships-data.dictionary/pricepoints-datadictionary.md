@@ -12,6 +12,10 @@
 object Subscription.Relationships.PricePoints
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

@@ -22,6 +22,14 @@ object BackgroundAssetVersion
 - [object BackgroundAssetVersion.Relationships](backgroundassetversion/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BackgroundAssetVersion.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (BackgroundAssetVersion.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

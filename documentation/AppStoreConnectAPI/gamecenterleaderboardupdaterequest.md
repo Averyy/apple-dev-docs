@@ -19,6 +19,10 @@ object GameCenterLeaderboardUpdateRequest
 ### Objects
 - [object GameCenterLeaderboardUpdateRequest.Data](gamecenterleaderboardupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

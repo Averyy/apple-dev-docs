@@ -6,7 +6,7 @@ View and compare playlists for different HLS applications.
 
 #### Overview
 
-HTTP Live Streaming sends audio and video as a series of small files, typically of about 6 seconds duration, called . An index file, or playlist, provides an ordered list of the URLs of the media segment files. Index files for HTTP Live Streaming are saved as M3U8 playlists, an extension of the M3U format used for MP3 playlists. The URL of the index file is accessed by clients, which then request the indexed files in sequence.
+HTTP Live Streaming sends audio and video as a series of small files, typically of about 6 seconds duration, called *media segment files*. An index file, or playlist, provides an ordered list of the URLs of the media segment files. Index files for HTTP Live Streaming are saved as M3U8 playlists, an extension of the M3U format used for MP3 playlists. The URL of the index file is accessed by clients, which then request the indexed files in sequence.
 
 You can use the Apple HTTP Live Streaming tools to generate playlists. These tools are frequently updated and you can get them from [`Downloads for Apple Developers`](https://developer.apple.comhttps://developer.apple.com/download/more/) if you’re a member of the Apple Developer Program. See [`Using Apple’s HTTP Live Streaming (HLS) Tools`](using-apple-s-http-live-streaming-hls-tools.md) for more information about the individual tools.
 

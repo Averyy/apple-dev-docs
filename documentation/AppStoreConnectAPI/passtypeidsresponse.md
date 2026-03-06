@@ -14,6 +14,13 @@ A response that contains a list of pass type ids response resources.
 object PassTypeIdsResponse
 ```
 
+## Properties
+
+- `data` ([PassTypeId]) *(required)*
+- `included` ([Certificate])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)

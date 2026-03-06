@@ -20,6 +20,10 @@ object StationGenres.Relationships
 - [object StationGenres.Relationships.StationGenresStationsRelationship](stationgenres/relationships-data.dictionary/stationgenresstationsrelationship.md)
   A relationship from the station genre to associated stations.
 
+## Properties
+
+- `stations` (StationGenres.Relationships.StationGenresStationsRelationship): Stations associated with the station genre.
+
 ## See Also
 
 - [object StationGenres.Attributes](stationgenres/attributes-data.dictionary.md)

@@ -17,6 +17,12 @@ object GameCenterChallengeVersionLocalizationsLinkagesResponse
 ### Dictionaries
 - [object GameCenterChallengeVersionLocalizationsLinkagesResponse.Data](gamecenterchallengeversionlocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterChallengeVersionLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterChallengeLocalization](gamecenterchallengelocalization.md)

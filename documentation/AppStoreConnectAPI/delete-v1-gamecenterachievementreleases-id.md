@@ -8,6 +8,14 @@ Delete a release of an achievement or Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterAchievementReleases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center achievement release resource ID from the [`List achievement releases `](get-v1-gamecenterdetails-_id_-achievementreleases.md) response.
+
 ## See Also
 
 - [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)

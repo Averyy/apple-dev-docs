@@ -32,7 +32,7 @@ This is an unsafe operation. This function does not validate the bounds of the m
 
 ## Parameters
 
-- `offset`: The offset from this pointer, in bytes.   must be   nonnegative. The default is zero.
+- `offset`: The offset from this pointer, in bytes. `offset` must be nonnegative. The default is zero.
 - `type`: The type of the instance to create.
 
 

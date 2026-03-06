@@ -41,7 +41,7 @@ If the asynchronous sequence is empty, this method returns `true`.
 
 ## Parameters
 
-- `predicate`: A closure that takes an element of the asynchronous   sequence as its argument and returns a Boolean value that indicates   whether the passed element satisfies a condition.
+- `predicate`: A closure that takes an element of the asynchronous sequence as its argument and returns a Boolean value that indicates whether the passed element satisfies a condition.
 
 
 ---

@@ -14,6 +14,12 @@ A response that contains a single Bundle IDs resource.
 object BundleIdResponse
 ```
 
+## Properties
+
+- `data` (BundleId) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*]): The requested relationship data.
+
 ## See Also
 
 - [object BundleId](bundleid.md)

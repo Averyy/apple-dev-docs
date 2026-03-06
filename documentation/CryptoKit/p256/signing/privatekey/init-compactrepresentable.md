@@ -26,7 +26,7 @@ Keys that use a compact point encoding enable shorter public keys, but aren’t 
 
 ## Parameters
 
-- `compactRepresentable`: A Boolean value that indicates whether CryptoKit   creates the key with the structure to enable compact point encoding.
+- `compactRepresentable`: A Boolean value that indicates whether CryptoKit creates the key with the structure to enable compact point encoding.
 
 ## See Also
 

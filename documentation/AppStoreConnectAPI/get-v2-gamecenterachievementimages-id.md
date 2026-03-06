@@ -20,6 +20,15 @@ Get information about a specific Game Center achievement image.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterAchievementImages/{id}`
+
+## Parameters
+
+- `fields[gameCenterAchievementImages]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create a Game Center achievement image](post-v2-gamecenterachievementimages.md)

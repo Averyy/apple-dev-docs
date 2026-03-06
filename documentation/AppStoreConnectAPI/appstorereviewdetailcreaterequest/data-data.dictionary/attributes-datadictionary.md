@@ -14,6 +14,17 @@ Attributes that you set that describe the new resource.
 object AppStoreReviewDetailCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `contactEmail` (string)
+- `contactFirstName` (string)
+- `contactLastName` (string)
+- `contactPhone` (string)
+- `demoAccountName` (string)
+- `demoAccountPassword` (string)
+- `demoAccountRequired` (boolean)
+- `notes` (string)
+
 ## See Also
 
 - [object AppStoreReviewDetailCreateRequest.Data.Relationships](appstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

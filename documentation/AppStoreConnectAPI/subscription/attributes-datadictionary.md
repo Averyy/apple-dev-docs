@@ -12,6 +12,16 @@
 object Subscription.Attributes
 ```
 
+## Properties
+
+- `familySharable` (boolean)
+- `name` (string)
+- `productId` (string)
+- `reviewNote` (string)
+- `state` (string)
+- `subscriptionPeriod` (string)
+- `groupLevel` (integer)
+
 ## See Also
 
 - [object Subscription.Relationships](subscription/relationships-data.dictionary.md)

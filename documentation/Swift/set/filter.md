@@ -41,7 +41,7 @@ shortNames.contains("Vivien")
 
 ## Parameters
 
-- `isIncluded`: A closure that takes an element as its argument   and returns a Boolean value indicating whether the element should be   included in the returned set.
+- `isIncluded`: A closure that takes an element as its argument and returns a Boolean value indicating whether the element should be included in the returned set.
 
 ## See Also
 

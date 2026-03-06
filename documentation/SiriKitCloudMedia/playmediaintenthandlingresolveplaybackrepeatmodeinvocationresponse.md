@@ -20,6 +20,11 @@ object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse
 - [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
   The result of resolving the repeat mode for a play media intent.
 
+## Properties
+
+- `result` (PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result) *(required)*: The result of processing the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

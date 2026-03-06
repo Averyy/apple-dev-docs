@@ -8,6 +8,14 @@ Update a specific activity version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read the versions for an activity](get-v1-gamecenteractivities-_id_-versions.md)

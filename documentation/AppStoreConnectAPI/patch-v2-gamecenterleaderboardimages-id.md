@@ -20,6 +20,14 @@ Update a specific Game Center leaderboard image.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard image information](get-v2-gamecenterleaderboardimages-_id_.md)

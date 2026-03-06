@@ -19,6 +19,13 @@ object GameCenterLeaderboardEntrySubmission
 ### Objects
 - [object GameCenterLeaderboardEntrySubmission.Attributes](gamecenterleaderboardentrysubmission/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardEntrySubmission.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardEntrySubmissionCreateRequest](gamecenterleaderboardentrysubmissioncreaterequest.md)

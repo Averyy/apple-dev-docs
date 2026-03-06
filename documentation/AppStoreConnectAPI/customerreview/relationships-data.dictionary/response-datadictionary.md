@@ -20,6 +20,11 @@ object CustomerReview.Relationships.Response
 - [object CustomerReview.Relationships.Response.Data](customerreview/relationships-data.dictionary/response-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (CustomerReview.Relationships.Response.Data): The type and ID of a related resource.
+- `links` (RelationshipLinks): The links to the related data and the relationship’s self-link.
+
 
 ---
 

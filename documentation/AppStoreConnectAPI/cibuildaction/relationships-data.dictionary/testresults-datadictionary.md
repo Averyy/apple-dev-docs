@@ -12,6 +12,10 @@
 object CiBuildAction.Relationships.TestResults
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

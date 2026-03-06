@@ -17,6 +17,13 @@ object Actor
 ### Objects
 - [object Actor.Attributes](actor/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Actor.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object ActorResponse](actorresponse.md)

@@ -12,6 +12,59 @@ Update the name and visibility status of an app custom product page.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://appstoreconnect.apple.com/v1/appCustomProductPageVersions/372e5398-047b-4793-951b-2935d8578ab2
+{
+    "data": {
+        "type": "appCustomProductPageVersions",
+        "id": "372e5398-047b-4793-951b-2935d8578ab2",
+        "attributes": {
+            "deepLink": "https://example.com/deeplink"
+        }
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "appCustomProductPageVersions",
+    "id" : "372e5398-047b-4793-951b-2935d8578ab2",
+    "attributes" : {
+      "version" : "3",
+      "state" : "PREPARE_FOR_SUBMISSION",
+      "deepLink" : "https://example.com/deeplink"
+    },
+    "relationships" : {
+      "appCustomProductPageLocalizations" : {
+        "links" : {
+          "self" : "https://appstoreconnect.apple.com/v1/appCustomProductPageVersions/372e5398-047b-4793-951b-2935d8578ab2/relationships/appCustomProductPageLocalizations",
+          "related" : "https://appstoreconnect.apple.com/v1/appCustomProductPageVersions/372e5398-047b-4793-951b-2935d8578ab2/appCustomProductPageLocalizations"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://appstoreconnect.apple.com/v1/appCustomProductPageVersions/372e5398-047b-4793-951b-2935d8578ab2"
+    }
+  },
+  "links" : {
+    "self" : "https://appstoreconnect.apple.com/v1/appCustomProductPageVersions/372e5398-047b-4793-951b-2935d8578ab2"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page version resource ID from the [`List custom product page versions`](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md) response.
+
 ## See Also
 
 - [Read custom product page version information](get-v1-appcustomproductpageversions-_id_.md)

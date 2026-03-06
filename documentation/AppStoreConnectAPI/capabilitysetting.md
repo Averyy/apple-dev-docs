@@ -14,6 +14,17 @@ An object that  represents a capability setting for an app.
 object CapabilitySetting
 ```
 
+## Properties
+
+- `allowedInstances` (string)
+- `description` (string)
+- `enabledByDefault` (boolean)
+- `key` (string)
+- `name` (string)
+- `options` ([CapabilityOption])
+- `visible` (boolean)
+- `minInstances` (integer)
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

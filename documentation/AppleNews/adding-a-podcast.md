@@ -8,7 +8,7 @@ Add a link to a podcast that displays the podcast artwork and the podcast show o
 
 By using the podcast component, you can add a link to a podcast without using external assets.
 
-:
+**On this page, you’ll learn how to**:
 
 - Create a podcast component.
 - Change the podcast orientation.

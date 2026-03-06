@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/{id}/relationships/availableTerritories`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read information about the Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)

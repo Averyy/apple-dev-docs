@@ -8,6 +8,18 @@ Get a list of localized metadata for a leaderboard set.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSets/{id}/localizations`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardSetImages]` ([string])
+- `fields[gameCenterLeaderboardSetLocalizations]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read Game Center leaderboard set information](get-v2-gamecenterleaderboardsets-_id_.md)

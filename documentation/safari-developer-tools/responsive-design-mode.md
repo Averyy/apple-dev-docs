@@ -12,7 +12,7 @@ Responsive Design Mode lets you quickly preview how your webpage responds to cha
 
 #### Opening Responsive Design Mode
 
-While focused on the webpage you want to test in Responsive Design Mode, choose  (⌃⌘R) from the [`Develop menu`](develop-menu.md).
+While focused on the webpage you want to test in Responsive Design Mode, choose **Enter Responsive Design Mode** (⌃⌘R) from the [`Develop menu`](develop-menu.md).
 
 > 💡 **Tip**: You can use Responsive Design Mode with [`Web Inspector`](web-inspector.md) to debug your page’s layout while resizing the page in Responsive Design Mode.
 
@@ -32,7 +32,7 @@ Use this button to swap the dimensions for the current viewport. You can use thi
 
 The current effective size of the viewport, in screen points. You can click on the width or height to begin editing the specific dimension. You can also grab the handles on the left, bottom, and right sides of the viewport to quickly resize to any dimension, or grab one of the bottom corners to resize in both dimensions simultaneously.
 
-When you change the size of the viewport, the dimensions are saved to the viewport preset labeled as .
+When you change the size of the viewport, the dimensions are saved to the viewport preset labeled as **Custom size**.
 
 ##### Zoom
 

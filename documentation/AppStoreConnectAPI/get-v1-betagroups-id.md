@@ -8,6 +8,21 @@ Get a specific beta group.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+- `fields[betaGroups]` ([string]): Fields to return for included related types.
+- `fields[betaTesters]` ([string]): Fields to return for included related types.
+- `fields[builds]` ([string]): Fields to return for included related types.
+- `include` ([string]): Relationship data to include in the response.
+- `limit[builds]` (integer): Number of included related resources to return.
+- `limit[betaTesters]` (integer): Number of included related resources to return.
+- `fields[betaRecruitmentCriteria]` ([string])
+
 ## See Also
 
 - [List Beta Groups](get-v1-betagroups.md)

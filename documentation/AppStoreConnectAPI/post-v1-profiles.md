@@ -8,6 +8,10 @@ Create a new provisioning profile.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/profiles`
+
 ## See Also
 
 - [Delete a Profile](delete-v1-profiles-_id_.md)

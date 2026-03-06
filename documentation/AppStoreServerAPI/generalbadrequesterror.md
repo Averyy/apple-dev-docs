@@ -6,7 +6,7 @@
 An error that indicates an invalid request.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object GeneralBadRequestError
 #### Discussion
 
 A bad request error typically occurs when the server receives a malformed request or a request that contains incorrect syntax.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

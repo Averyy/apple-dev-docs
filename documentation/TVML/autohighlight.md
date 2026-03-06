@@ -10,6 +10,8 @@ Use the `autoHighlight` attribute to denote the element that is initially in foc
 
 ##### Values for Autohighlight
 
+- **Boolean**: The initial focusable state for an element. Set to `true` to have the element initially be in focus.
+
 ##### Elements That Use Autohighlight
 
 - [`alertTemplate`](alerttemplate.md) that contains `button` elements

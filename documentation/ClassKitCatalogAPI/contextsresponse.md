@@ -14,6 +14,10 @@ The response you receive after modifying context information.
 object ContextsResponse
 ```
 
+## Properties
+
+- `contexts` ([Context]): An array of contexts returned by a call to the ClassKit Catalog API.
+
 ## See Also
 
 - [Preparing Context Data](preparing-context-data.md)

@@ -22,6 +22,12 @@ object ProfileCreateRequest.Data
 - [object ProfileCreateRequest.Data.Relationships](profilecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (ProfileCreateRequest.Data.Attributes) *(required)*
+- `relationships` (ProfileCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

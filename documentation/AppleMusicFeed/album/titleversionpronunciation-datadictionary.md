@@ -14,6 +14,11 @@ A mapping of locale to translations for the specific title-version-pronunciation
 object Album.TitleVersionPronunciation
 ```
 
+## Properties
+
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates fallback to `default`.
+- `titleVersionPronunciation` (string): A localized pronunciation of the album title version.
+
 ## See Also
 
 - [object Album.ArtistRole](album/artistrole.md)

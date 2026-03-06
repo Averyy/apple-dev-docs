@@ -14,6 +14,11 @@ An error response that indicates the app wasn’t found, but you can try again.
 object AppNotFoundRetryableError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundRetryableError](accountnotfoundretryableerror.md)

@@ -40,8 +40,8 @@ The reason for this API using a `ResultHandler` rather than returning values dir
 
 - `actor`: Actor on which the remote call should invoke the target
 - `target`: The target (method) identifier that should be invoked
-- `invocationDecoder`: Used to obtain all arguments to be used to perform   the target invocation
-- `handler`: Used to provide a type-safe way for library code to handle   the values returned by the target invocation.
+- `invocationDecoder`: Used to obtain all arguments to be used to perform the target invocation
+- `handler`: Used to provide a type-safe way for library code to handle the values returned by the target invocation.
 
 
 ---

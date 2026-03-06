@@ -12,6 +12,12 @@
 object GameCenterAchievementLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `afterEarnedDescription` (string)
+- `beforeEarnedDescription` (string)
+- `name` (string)
+
 
 ---
 

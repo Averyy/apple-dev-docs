@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/{id}/relationships/localizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read Game Center achievement localization information](get-v2-gamecenterachievementlocalizations-_id_.md)

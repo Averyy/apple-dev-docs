@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClips/{id}/relationships/appClipDefaultExperiences`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Default App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)

@@ -17,6 +17,10 @@ object SubscriptionPriceCreateRequest
 ### Objects
 - [object SubscriptionPriceCreateRequest.Data](subscriptionpricecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionPriceCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionPricePointResponse](subscriptionpricepointresponse.md)

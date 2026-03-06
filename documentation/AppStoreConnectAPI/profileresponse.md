@@ -14,6 +14,12 @@ A response that contains a single Profiles resource.
 object ProfileResponse
 ```
 
+## Properties
+
+- `data` (Profile) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Create a Profile](post-v1-profiles.md)

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/customerReviews/{id}/relationships/response`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Get a Customer Review Response](get-v1-customerreviews-_id_-response.md)

@@ -17,6 +17,12 @@ object BuildBundleBetaAppClipInvocationsLinkagesResponse
 ### Dictionaries
 - [object BuildBundleBetaAppClipInvocationsLinkagesResponse.Data](buildbundlebetaappclipinvocationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BuildBundleBetaAppClipInvocationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BuildBetaDetail](buildbetadetail.md)

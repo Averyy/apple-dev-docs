@@ -8,6 +8,14 @@ Modify a beta group’s metadata, including changing its TestFlight public link 
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/betaGroups/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Create a Beta Group](post-v1-betagroups.md)

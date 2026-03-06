@@ -57,11 +57,11 @@ let date = match?.1 // date == Mar 1, 1976 at 12:00 AM (may vary based on curren
 
 ## Parameters
 
-- `format`: A   to use when matching date substrings.
+- `format`: A [`Date.FormatString`](https://developer.apple.com/documentation/Foundation/Date/FormatString) to use when matching date substrings.
 - `locale`: The locale to use when matching date substrings. Matching uses this locale to evaluate the order of date components. It also uses the locale’s language for date format styles that use words.
-- `timeZone`: The time zone to use when returning a captured  . The returned date’s time value is   in this time zone.
-- `calendar`: The calendar to use when matching date substrings. If  , matching uses the default calendar of the specified  .
-- `twoDigitStartDate`: The earliest date a matched two-year date can represent. For example, with the default value of  , the matcher treats   as 2022, and   as 1984. The matcher ignores this parameter for date substrings that contain year components with more than two digits.
+- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/Foundation/Date). The returned date’s time value is `00:00:00` in this time zone.
+- `calendar`: The calendar to use when matching date substrings. If `nil`, matching uses the default calendar of the specified `locale`.
+- `twoDigitStartDate`: The earliest date a matched two-year date can represent. For example, with the default value of `Date(timeIntervalSince1970: 0)`, the matcher treats `22` as 2022, and `84` as 1984. The matcher ignores this parameter for date substrings that contain year components with more than two digits.
 
 ## See Also
 

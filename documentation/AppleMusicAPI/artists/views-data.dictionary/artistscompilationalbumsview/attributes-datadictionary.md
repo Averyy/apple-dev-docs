@@ -14,6 +14,10 @@ Albums associated with the artist categorized as compilations.
 object Artists.Views.ArtistsCompilationAlbumsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

@@ -26,7 +26,7 @@ This initializer does not perform any range or overflow checking. The resulting 
 
 ## Parameters
 
-- `bitPattern`: A value to use as the source of the new instance’s   binary representation.
+- `bitPattern`: A value to use as the source of the new instance’s binary representation.
 
 
 ---

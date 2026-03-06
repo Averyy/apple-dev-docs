@@ -8,6 +8,14 @@ Remove a specific webhook configuration.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/webhooks/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read webhook information for an app](get-v1-apps-_id_-webhooks.md)

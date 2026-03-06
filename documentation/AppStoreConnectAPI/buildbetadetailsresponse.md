@@ -14,6 +14,13 @@ A response that contains a list of Build Beta Detail resources.
 object BuildBetaDetailsResponse
 ```
 
+## Properties
+
+- `data` ([BuildBetaDetail]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([Build])
+
 ## See Also
 
 - [List Build Beta Details](get-v1-buildbetadetails.md)

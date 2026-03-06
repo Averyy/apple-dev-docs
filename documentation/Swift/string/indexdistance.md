@@ -22,7 +22,7 @@ typealias IndexDistance = Int
 
 #### Discussion
 
-In Swift,  refers to the ability to produce one value from the other through zero or more applications of `index(after:)`.
+In Swift, *reachability* refers to the ability to produce one value from the other through zero or more applications of `index(after:)`.
 
 
 ---

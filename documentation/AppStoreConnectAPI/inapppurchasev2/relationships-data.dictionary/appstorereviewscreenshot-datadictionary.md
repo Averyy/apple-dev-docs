@@ -17,6 +17,11 @@ object InAppPurchaseV2.Relationships.AppStoreReviewScreenshot
 ### Objects
 - [object InAppPurchaseV2.Relationships.AppStoreReviewScreenshot.Data](inapppurchasev2/relationships-data.dictionary/appstorereviewscreenshot-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2.Relationships.AppStoreReviewScreenshot.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

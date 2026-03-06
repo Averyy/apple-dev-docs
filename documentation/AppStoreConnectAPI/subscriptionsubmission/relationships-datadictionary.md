@@ -17,6 +17,10 @@ object SubscriptionSubmission.Relationships
 ### Objects
 - [object SubscriptionSubmission.Relationships.Subscription](subscriptionsubmission/relationships-data.dictionary/subscription-data.dictionary.md)
 
+## Properties
+
+- `subscription` (SubscriptionSubmission.Relationships.Subscription)
+
 
 ---
 

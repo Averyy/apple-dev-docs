@@ -20,6 +20,11 @@ object AppEncryptionDeclaration.Relationships.App
 - [object AppEncryptionDeclaration.Relationships.App.Data](appencryptiondeclaration/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppEncryptionDeclaration.Relationships.App.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppEncryptionDeclaration.Relationships.Builds](appencryptiondeclaration/relationships-data.dictionary/builds-data.dictionary.md)

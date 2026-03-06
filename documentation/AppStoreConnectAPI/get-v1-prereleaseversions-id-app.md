@@ -8,6 +8,14 @@ Get the app information for a specific prerelease version.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/preReleaseVersions/{id}/app`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List Prerelease Versions](get-v1-prereleaseversions.md)

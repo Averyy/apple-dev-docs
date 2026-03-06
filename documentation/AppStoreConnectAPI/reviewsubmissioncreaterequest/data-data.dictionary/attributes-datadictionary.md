@@ -18,6 +18,10 @@ object ReviewSubmissionCreateRequest.Data.Attributes
 
 > **Note**: The attribute `platform` is no longer required when using [`Create a review submission`](post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a review submission`](patch-v1-reviewsubmissions-_id_.md).
 
+## Properties
+
+- `platform` (Platform)
+
 ## See Also
 
 - [object ReviewSubmissionCreateRequest.Data.Relationships](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)

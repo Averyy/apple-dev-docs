@@ -16,6 +16,10 @@ Create a localized display name and optional custom app name for a subscription 
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionGroupLocalizations`
+
 ## See Also
 
 - [Read Subscription Group Localization Information](get-v1-subscriptiongrouplocalizations-_id_.md)

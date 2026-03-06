@@ -14,6 +14,10 @@ The response to a request for record labels.
 object RecordLabelsResponse
 ```
 
+## Properties
+
+- `data` ([RecordLabels]) *(required)*: The collection of record labels for the request.
+
 ## See Also
 
 - [object RecordLabels](recordlabels.md)

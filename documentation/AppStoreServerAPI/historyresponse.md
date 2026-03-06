@@ -40,6 +40,15 @@ If a customer upgrades a subscription or the App Store revokes an in-app purchas
 - [type JWSTransaction](jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
+## Properties
+
+- `appAppleId` (appAppleId): The app’s identifier in the App Store.
+- `bundleId` (bundleId): The bundle identifier of the app.
+- `environment` (environment): The server environment in which you’re making the request, whether sandbox or production.
+- `hasMore` (hasMore): A Boolean value that indicates whether the App Store has more transactions than it returns in this response. If the value is `true`, use the `revision` token to request the next set of transactions.
+- `revision` (revision): A token you use in a query to request the next set of transactions from the endpoint.
+- `signedTransactions` ([JWSTransaction]): An array of in-app purchase transactions for the customer, signed by Apple, in JSON Web Signature (JWS) format.
+
 ## See Also
 
 - [Get Transaction History](get-transaction-history.md)

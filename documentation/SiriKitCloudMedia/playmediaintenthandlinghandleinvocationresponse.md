@@ -20,6 +20,11 @@ object PlayMediaIntentHandlingHandleInvocationResponse
 - [object PlayMediaIntentHandlingHandleInvocationResponse.Result](playmediaintenthandlinghandleinvocationresponse/result-data.dictionary.md)
   The result of handling an intent to play a media item.
 
+## Properties
+
+- `result` (PlayMediaIntentHandlingHandleInvocationResponse.Result) *(required)*: The results of processing the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

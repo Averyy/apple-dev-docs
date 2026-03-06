@@ -10,6 +10,14 @@ Retrieves the identifiers of the orders that the device registered for.
 - iPadOS 16.0+
 - macOS 13.0+
 
+## Endpoint
+
+`GET https://your-web-service.com/v1/devices/{deviceIdentifier}/registrations/{orderTypeIdentifier}?ordersModifiedSince={lastModified}`
+
+## Parameters
+
+- `lastModified` (string): The value of the `lastModified` key from the response to a previous request. This value limits the results of the current request to the orders modified since the previous request.
+
 ## See Also
 
 - [Creating the source for an order](creating-the-source-for-an-order.md)

@@ -14,6 +14,12 @@ The precipitation forecast for a specified minute.
 object ForecastMinute
 ```
 
+## Properties
+
+- `precipitationChance` (number) *(required)*: The probability of precipitation during this minute.
+- `precipitationIntensity` (number) *(required)*: The precipitation intensity in millimeters per hour.
+- `startTime` (date-time) *(required)*: The start time of the minute.
+
 ## See Also
 
 - [object ForecastPeriodSummary](forecastperiodsummary.md)

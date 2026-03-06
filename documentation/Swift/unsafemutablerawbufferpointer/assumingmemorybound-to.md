@@ -32,7 +32,7 @@ Use this method when you have a raw buffer to memory that has already been bound
 
 ## Parameters
 
-- `to`: The type   that the memory has already been bound to.
+- `to`: The type `T` that the memory has already been bound to.
 
 
 ---

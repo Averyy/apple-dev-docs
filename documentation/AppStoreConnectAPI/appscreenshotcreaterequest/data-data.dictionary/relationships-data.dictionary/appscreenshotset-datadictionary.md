@@ -20,6 +20,10 @@ object AppScreenshotCreateRequest.Data.Relationships.AppScreenshotSet
 - [object AppScreenshotCreateRequest.Data.Relationships.AppScreenshotSet.Data](appscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/appscreenshotset-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppScreenshotCreateRequest.Data.Relationships.AppScreenshotSet.Data) *(required)*
+
 
 ---
 

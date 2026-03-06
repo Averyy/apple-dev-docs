@@ -17,6 +17,10 @@ object SubscriptionPromotionalOfferInlineCreate.Relationships.Subscription
 ### Objects
 - [object SubscriptionPromotionalOfferInlineCreate.Relationships.Subscription.Data](subscriptionpromotionalofferinlinecreate/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionPromotionalOfferInlineCreate.Relationships.Subscription.Data)
+
 ## See Also
 
 - [object SubscriptionPromotionalOfferInlineCreate.Relationships.Prices](subscriptionpromotionalofferinlinecreate/relationships-data.dictionary/prices-data.dictionary.md)

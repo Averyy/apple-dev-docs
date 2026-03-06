@@ -14,6 +14,11 @@ The attributes you set that describe the updated App Clip Header Images resource
 object AppClipHeaderImageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string): A string that represents the MD5 checksum of the image asset you use for the App Clip card.
+- `uploaded` (boolean): A Boolean value that indicates whether you uploaded the image asset for an advanced App Clip experience.
+
 
 ---
 

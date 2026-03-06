@@ -6,7 +6,7 @@
 An error that indicates the value of the account tenure field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidAccountTenureError
 #### Discussion
 
 For more information about `accountTenure` values in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`accountTenure`](accounttenure.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

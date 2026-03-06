@@ -36,7 +36,7 @@ The returned index is the position of the next uninitialized element in the buff
 
 ## Parameters
 
-- `source`: A buffer containing the values to copy. The memory   region underlying   must be initialized.
+- `source`: A buffer containing the values to copy. The memory region underlying `source` must be initialized.
 
 
 ---

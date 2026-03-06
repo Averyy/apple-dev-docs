@@ -20,7 +20,7 @@ case button(id: Int, pressed: Bool)
 ## Parameters
 
 - `id`: A unique, vendor-specific identifier for the given button.
-- `pressed`:   on button press down,   on button release up.
+- `pressed`: `true` on button press down, `false` on button release up.
 
 
 ---

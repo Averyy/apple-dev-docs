@@ -8,6 +8,14 @@ Deactivate a batch of one-time use offer codes for an auto-renewable subscriptio
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodeOneTimeUseCodes/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)

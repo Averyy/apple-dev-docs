@@ -24,6 +24,11 @@ Allowed values: `SUBSCRIPTION_START`, `RENEWAL`, `SUBSCRIPTION_CHANGE`, `SUBSCRI
 
 Use the allowed values to indicate the subscription event in a [`SubscriptionBuyLineItem`](subscriptionbuylineitem.md), as follows:
 
+- **`SUBSCRIPTION_START`**: The first time you report the subscription, for example, when a customer first subscribes.
+- **`RENEWAL`**: A subscription renewal.
+- **`SUBSCRIPTION_CHANGE`**: The customer upgraded or downgraded the subscription. An *upgrade* is a change to the subscription that adds features or functionality, or increases the subscription renewal period (such as from a weekly to a monthly renewal). A *downgrade* is a change to the subscription that reduces features or functionality, or decreases the subscription period (such as from an annual to a monthly renewal).
+- **`SUBSCRIPTION_PAYMENT`**: A payment for the subscription.
+
 ## See Also
 
 - [type subscriptionDaysOfPaidService](subscriptiondaysofpaidservice.md)

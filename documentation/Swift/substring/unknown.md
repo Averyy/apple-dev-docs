@@ -1,9 +1,9 @@
-# ..<(_:_:)
+# +=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a half-open range that contains its lower bound but not its upper bound.
+Appends the elements of a sequence to a range-replaceable collection.
 
 **Availability**:
 - iOS 8.0+
@@ -17,27 +17,28 @@ Returns a half-open range that contains its lower bound but not its upper bound.
 ## Declaration
 
 ```swift
-static func ..< (minimum: Self, maximum: Self) -> Range<Self>
+static func += <Other>(lhs: inout Self, rhs: Other) where Other : Sequence, Self.Element == Other.Element
 ```
 
 #### Discussion
 
-Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
+Use this operator to append the elements of a sequence to the end of range-replaceable collection with same `Element` type. This example appends the elements of a `Range<Int>` instance to an array of integers.
 
 ```swift
-let lessThanFive = 0.0..<5.0
-print(lessThanFive.contains(3.14))  // Prints "true"
-print(lessThanFive.contains(5.0))   // Prints "false"
+var numbers = [1, 2, 3, 4, 5]
+numbers += 10...15
+print(numbers)
+// Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: `minimum <= maximum`.
+> **Note**: O(*m*), where *m* is the length of the right-hand-side argument.
 
 ## Parameters
 
-- `minimum`: The lower bound for the range.
-- `maximum`: The upper bound for the range.
+- `lhs`: The array to append to.
+- `rhs`: A collection or finite sequence.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/substring/'.._(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/substring/+=(_:_:))*

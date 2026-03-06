@@ -24,6 +24,10 @@ object GameCenterAchievementImageV2CreateRequest.Data.Relationships
 - [object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization](gamecenterachievementimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary.md)
   The data that describes the localization of the Game Center achievement image.
 
+## Properties
+
+- `localization` (GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageV2CreateRequest.Data.Attributes](gamecenterachievementimagev2createrequest/data-data.dictionary/attributes-data.dictionary.md)

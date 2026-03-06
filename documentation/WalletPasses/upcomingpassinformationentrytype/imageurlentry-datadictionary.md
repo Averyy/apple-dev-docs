@@ -16,6 +16,13 @@ An object that represents the image specifications for the upcoming pass informa
 object UpcomingPassInformationEntryType.ImageURLEntry
 ```
 
+## Properties
+
+- `SHA256` (string) *(required)*: The SHA256 hash of the image.
+- `URL` (string) *(required)*: The URL that points to the image asset to be downloaded. This must be an https link.
+- `scale` (double): The scale of the image. If unspecified, defaults to 1.
+- `size` (number): Size of the image asset in bytes. The maximum allowed size is 2 megabytes.
+
 ## See Also
 
 - [object UpcomingPassInformationEntryType.Image](upcomingpassinformationentrytype/image-data.dictionary.md)

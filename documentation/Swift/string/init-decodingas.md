@@ -22,8 +22,8 @@ init<C, Encoding>(decoding codeUnits: C, as sourceEncoding: Encoding.Type) where
 
 ## Parameters
 
-- `codeUnits`: A collection of code units encoded in the encoding   specified in  .
-- `sourceEncoding`: The encoding in which   should be   interpreted.
+- `codeUnits`: A collection of code units encoded in the encoding specified in `sourceEncoding`.
+- `sourceEncoding`: The encoding in which `codeUnits` should be interpreted.
 
 ## See Also
 

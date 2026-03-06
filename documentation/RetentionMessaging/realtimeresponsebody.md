@@ -31,6 +31,13 @@ All messages and images need to be in an `APPROVED` state for the system to disp
 
 For more information on the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
 
+## Properties
+
+- `message` (message): A retention message that’s text-based and can include an optional image. If you supply this field, don’t include the other fields.
+- `alternateProduct` (alternateProduct): A retention message with a switch-plan option. If you supply this field, don’t include the other fields.
+- `promotionalOffer` (promotionalOffer): A retention message that includes a promotional offer. If you supply this field, don’t include the other fields.
+- `advancedCommerceInfo` (advancedCommerceInfo): A retention offer or switch plan option. If you pass this object for a subscription that’s not an Advanced Commerce subscription, the framework treats the request as invalid and ignores the response. If you supply this field, don’t include the other fields.
+
 ## See Also
 
 - [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)

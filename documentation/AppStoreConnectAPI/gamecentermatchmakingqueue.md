@@ -26,6 +26,14 @@ object GameCenterMatchmakingQueue
 - [object GameCenterMatchmakingQueue.Relationships](gamecentermatchmakingqueue/relationships-data.dictionary.md)
   The rule sets associated with the queue.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingQueue.Attributes): The attributes of the queue.
+- `id` (string) *(required)*: The unique identifier for the rule.
+- `links` (ResourceLinks): The link representations of the object.
+- `relationships` (GameCenterMatchmakingQueue.Relationships): The relationships of the queue.
+- `type` (string) *(required)*: The type of resource.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest](gamecentermatchmakingqueuecreaterequest.md)

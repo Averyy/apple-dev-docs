@@ -20,6 +20,12 @@ object ReviewSubmissionUpdateRequest.Data
 - [object ReviewSubmissionUpdateRequest.Data.Attributes](reviewsubmissionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a review submission update request resource.
 
+## Properties
+
+- `attributes` (ReviewSubmissionUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

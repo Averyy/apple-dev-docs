@@ -17,6 +17,10 @@ object TerritoryAgeRating.Relationships
 ### Dictionaries
 - [object TerritoryAgeRating.Relationships.Territory](territoryagerating/relationships-data.dictionary/territory-data.dictionary.md)
 
+## Properties
+
+- `territory` (TerritoryAgeRating.Relationships.Territory)
+
 ## See Also
 
 - [object TerritoryAgeRating.Attributes](territoryagerating/attributes-data.dictionary.md)

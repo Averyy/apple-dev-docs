@@ -20,6 +20,10 @@ object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions
 - [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary.md)
   The links to the details of the rule errors.
 
+## Properties
+
+- `gameCenterMatchmakingQueue` (GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue)
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)

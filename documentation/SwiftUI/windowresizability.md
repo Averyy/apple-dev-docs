@@ -59,7 +59,7 @@ The default value for all scenes if you don’t apply the modifier is [`automati
 
 ## See Also
 
-- [Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md)
+- [Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 - [func defaultSize(_:)](scene/defaultsize(_:).md)
   Sets a default size for a window.

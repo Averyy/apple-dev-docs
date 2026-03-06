@@ -43,7 +43,7 @@ For more information on local network and privacy, see [`TN3179: Understanding l
 
 ##### Create a Connection
 
-The `PeerToPeerMessaging` package implements the functionality to start the client and server. The sample uses this functionality to create a peer-to-peer connection by starting a browser on the Apple Vision Pro () and a listener on the iPad ().
+The `PeerToPeerMessaging` package implements the functionality to start the client and server. The sample uses this functionality to create a peer-to-peer connection by starting a browser on the Apple Vision Pro (*client*) and a listener on the iPad (*server*).
 
 When creating a connection, there may be multiple devices on the network that are possible connection options. To differentiate between these devices, the sample implements a device identification flow. The visionOS app generates and displays a unique ID after launch, which you then enter in the iPadOS app.
 
@@ -160,7 +160,7 @@ final class RobotViewModel {
 
 > ❗ **Important**: Only send messages for updates that occur directly from the view. Sending messages when handling a received message creates an infinite loop.
 
-To synchronize the UI when changes are made on other devices, the sample’s views monitor for incoming messages using a doc://com.apple.documentation/documentation/SwiftUI/View/task(priority:_:) modifier and updates the state locally. The `.task` modifier runs for the lifetime of the view and cancels automatically when the view disappears. Messages are received only while the view is visible.
+To synchronize the UI when changes are made on other devices, the sample’s views monitor for incoming messages using a [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:)) modifier and updates the state locally. The `.task` modifier runs for the lifetime of the view and cancels automatically when the view disappears. Messages are received only while the view is visible.
 
 ```swift
 struct RobotWindowView: View {

@@ -14,6 +14,11 @@ The data structure that represents a detail resource.
 object GameCenterDetailGameCenterLeaderboardSetsLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

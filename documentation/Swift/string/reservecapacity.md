@@ -24,11 +24,11 @@ mutating func reserveCapacity(_ n: Int)
 
 Because each character in a string can require more than a single ASCII character’s worth of storage, additional allocation may be necessary when adding characters to a string after a call to `reserveCapacity(_:)`.
 
-> **Note**: O()
+> **Note**: O(*n*)
 
 ## Parameters
 
-- `n`: The minimum number of ASCII character’s worth of storage   to allocate.
+- `n`: The minimum number of ASCII character’s worth of storage to allocate.
 
 ## See Also
 

@@ -12,6 +12,15 @@
 object GameCenterPlayerAchievementSubmission.Attributes
 ```
 
+## Properties
+
+- `bundleId` (string)
+- `challengeIds` ([string])
+- `percentageAchieved` (integer)
+- `scopedPlayerId` (string)
+- `submittedDate` (date-time)
+- `vendorIdentifier` (string)
+
 
 ---
 

@@ -16,6 +16,81 @@ Read analytics report requests for a specific app.
 
 ##### Examples Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/apps/1476097583/analyticsReportRequests
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "type": "analyticsReportRequests",
+      "id": "d48c69c5-9bcb-4592-abbd-08a9411b0231",
+      "attributes": {
+        "accessType": "ONGOING",
+        "stoppedDueToInactivity": false
+      },
+      "relationships": {
+        "reports": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231/relationships/reports",
+            "related": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231/reports"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231"
+      }
+    },
+    {
+      "type": "analyticsReportRequests",
+      "id": "A157dd7a-4fe2-479b-8d25-a8e4228c5b81",
+      "attributes": {
+        "accessType": "ONE_TIME_SNAPSHOT",
+        "stoppedDueToInactivity": false
+      },
+      "relationships": {
+        "reports": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/A157dd7a-4fe2-479b-8d25-a8e4228c5b81/relationships/reports",
+            "related": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/A157dd7a-4fe2-479b-8d25-a8e4228c5b81/reports"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/A157dd7a-4fe2-479b-8d25-a8e4228c5b81"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/apps/389801252/analyticsReportRequests"
+  },
+  "meta": {
+    "paging": {
+      "total": 2,
+      "limit": 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/analyticsReportRequests`
+
+## Parameters
+
+- `fields[analyticsReportRequests]` ([string])
+- `fields[analyticsReports]` ([string])
+- `filter[accessType]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[reports]` (integer)
+
 ## See Also
 
 - [Request reports](post-v1-analyticsreportrequests.md)

@@ -14,6 +14,11 @@ The data structure that represents a pass type id resource.
 object PassTypeId.Attributes
 ```
 
+## Properties
+
+- `identifier` (string)
+- `name` (string)
+
 
 ---
 

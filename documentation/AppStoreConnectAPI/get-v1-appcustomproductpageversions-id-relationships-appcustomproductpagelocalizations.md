@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read custom product page version information](get-v1-appcustomproductpageversions-_id_.md)

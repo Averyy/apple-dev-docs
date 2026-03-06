@@ -22,7 +22,7 @@ func counts(order: Order? = nil) -> DataFrame
 
 #### Discussion
 
-The name of the data frame’s column that stores the number of rows in each group is .
+The name of the data frame’s column that stores the number of rows in each group is *count*.
 
 ## Parameters
 

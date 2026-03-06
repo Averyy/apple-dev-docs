@@ -14,6 +14,13 @@ The attributes you set that describe the new app encryption declaration.
 object AppEncryptionDeclarationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appDescription` (string) *(required)*
+- `availableOnFrenchStore` (boolean) *(required)*
+- `containsProprietaryCryptography` (boolean) *(required)*
+- `containsThirdPartyCryptography` (boolean) *(required)*
+
 
 ---
 

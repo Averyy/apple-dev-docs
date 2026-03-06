@@ -29,7 +29,7 @@ Use this function to retrieve the file or data another participant provides. The
 
 ## Parameters
 
-- `attachmentType`: The type you use to interpret the data. An app   typically uploads and downloads a single type of data for an activity.   For more information about defining your types, see   .
+- `attachmentType`: The type you use to interpret the data. An app typically uploads and downloads a single type of data for an activity. For more information about defining your types, see [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable).
 
 ## See Also
 

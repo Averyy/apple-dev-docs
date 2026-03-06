@@ -12,6 +12,10 @@
 object App.Relationships.AlternativeDistributionKey
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

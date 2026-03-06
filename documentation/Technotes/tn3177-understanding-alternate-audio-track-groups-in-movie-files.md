@@ -14,7 +14,7 @@ Movie files collect these tracks into [`Preparing sound and subtitle alternate g
 
 Movies use [`Preparing sound and subtitle alternate groups for use with Apple devices`](https://developer.apple.com/documentation/QuickTime-File-Format/Preparing_sound_and_subtitle_alternate_groups_for_use_with_Apple_devices) to describe multiple language audio tracks and subtitle tracks. Alternate groups can also indicate the relationship between stereo and surround audio tracks when they are recordings of the same audio source: only one should be played at a time.
 
-A track association (also called a track reference) can indicate that the stereo track is a  for the surround track. In general, the older and more compatible formats are fallbacks for the newer and more sophisticated formats.
+A track association (also called a track reference) can indicate that the stereo track is a *fallback track* for the surround track. In general, the older and more compatible formats are fallbacks for the newer and more sophisticated formats.
 
 The iPhone 16 series and Apple Vision Pro use a similar approach when capturing Spatial Audio, writing QuickTime Movie files with an alternate group containing:
 
@@ -80,7 +80,7 @@ A value of `0` indicates the track is not a member of an alternate group. A non-
 
 #### Revision History
 
--  First published.
+- **2024-09-26** First published.
 
 ## See Also
 

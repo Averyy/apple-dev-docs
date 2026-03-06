@@ -18,6 +18,53 @@ Add a search detail URL for the alternative marketplace.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails
+{
+  "data": {
+    "type": "marketplaceSearchDetails",
+    "attributes": {
+      "catalogUrl": "https://example.com/crawler-site/sitemap.xml"
+    },
+    "relationships": {
+      "app": {
+        "data": {
+          "type": "apps",
+          "id": "6476788026"
+        }
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “marketplaceSearchDetails”,
+    “id” : “cfcfc44f-8291-4b75-84f0-4d9a55e8b878”,
+    “attributes” : {
+      “catalogUrl” : “https://example.com/crawler-site/sitemap.xml”
+    },
+    “links” : {
+      “self” : “https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails/cfcfc44f-8291-4b75-84f0-4d9a55e8b878”
+    }
+  },
+  “links” : {
+    “self” : “https://api.appstoreconnect.apple.com/v1/apps/6476788026/marketplaceSearchDetail”
+  }
+}
+
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails`
+
 ## See Also
 
 - [Building a searchable catalog for your marketplace app for inclusion in Spotlight](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md)

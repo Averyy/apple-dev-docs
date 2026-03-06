@@ -30,6 +30,15 @@ object AppInfoUpdateRequest.Data.Relationships
 - [object AppInfoUpdateRequest.Data.Relationships.SecondarySubcategoryTwo](appinfoupdaterequest/data-data.dictionary/relationships-data.dictionary/secondarysubcategorytwo-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `primaryCategory` (AppInfoUpdateRequest.Data.Relationships.PrimaryCategory)
+- `primarySubcategoryOne` (AppInfoUpdateRequest.Data.Relationships.PrimarySubcategoryOne)
+- `primarySubcategoryTwo` (AppInfoUpdateRequest.Data.Relationships.PrimarySubcategoryTwo)
+- `secondaryCategory` (AppInfoUpdateRequest.Data.Relationships.SecondaryCategory)
+- `secondarySubcategoryOne` (AppInfoUpdateRequest.Data.Relationships.SecondarySubcategoryOne)
+- `secondarySubcategoryTwo` (AppInfoUpdateRequest.Data.Relationships.SecondarySubcategoryTwo)
+
 
 ---
 

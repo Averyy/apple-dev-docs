@@ -16,6 +16,10 @@ string SearchACResultType
 
 #### Possible Values
 
+- **poi**: A point of interest. address An address such as a street address, suburb, city, state, or country.
+- **physicalFeature**: A natural physical feature, such as a river, mountain, or delta.
+- **pointOfInterest**: A point of interest. query A search query string.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

@@ -10,8 +10,12 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
 #### 132
 
+**Fixed**
+
 - Fixed localization issues.
 - Fixed the overlay modal that wasn’t the topmost element for some merchants.
+
+**Added**
 
 - Added small enhancements to the new window flow.
 - Added the script tag for the Apple Pay JS SDK version 1.3.2:
@@ -25,7 +29,11 @@ With the Apple Pay JS SDK, you can accept Apple Pay payments from customers on y
 
 #### 131
 
+**Fixed**
+
 - Fixed the [`oncancel`](applepaysession/oncancel.md) callback that wasn’t triggered when closing a modal before a scan.
+
+**Added**
 
 - Added the script tag for the Apple Pay JS SDK version 1.3.1:
 

@@ -17,6 +17,10 @@ A left-to-right linear value ramp (gradient) generator.
 
 #### Parameter Descriptions
 
+- **`Left`**: The left value of the interpolation.
+- **`Right`**: The right value of the interpolation.
+- **`Texture Coordinates`**: The 2D coordinate at which the data is read in order to map the texture onto a surface. The default is to use the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
+
 #### Discussion
 
 This node uses interpolation to create a horizontal ramp or gradient from two values. Any point within the output ramp is a mix of the two values. A given point is more similar to the value that its horizontal position is closer to. Below is a an example of a simple node graph that uses `Ramp Horizontal` to create a color gradient:

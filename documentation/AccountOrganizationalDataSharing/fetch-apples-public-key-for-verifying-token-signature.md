@@ -12,6 +12,10 @@ Retrieve the public key associated with the cryptographic identity Apple uses to
 
 If successful, the HTTP status code is 200 (OK), and the [`JWKSet.Keys`](jwkset/jwkset.keys.md) object contains Apple’s public key.
 
+## Endpoint
+
+`GET https://appleid.apple.com/auth/oauth2/v2/keys`
+
 ## See Also
 
 - [Creating a client secret](creating-a-client-secret.md)

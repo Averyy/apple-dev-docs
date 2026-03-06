@@ -20,6 +20,11 @@ object InAppPurchase.Relationships.Apps
 - [object InAppPurchase.Relationships.Apps.Data](inapppurchase/relationships-data.dictionary/apps-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([InAppPurchase.Relationships.Apps.Data])
+- `meta` (PagingInformation)
+
 
 ---
 

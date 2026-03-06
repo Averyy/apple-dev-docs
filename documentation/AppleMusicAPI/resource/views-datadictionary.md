@@ -14,6 +14,10 @@ Views belonging to the resource.
 object Resource.Views
 ```
 
+## Properties
+
+- `Any Key` (View): A named relationship view for the resource creating an association from the resource to other resources.
+
 
 ---
 

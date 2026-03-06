@@ -27,17 +27,17 @@ Foundation has various APIs for synchronously creating a value using bytes loade
 
 When writing watchOS networking code, test it on a real device; the simulator always allows low-level networking.
 
-Also, test your networking code in a wide variety of network environments.  Specifically, test it when the paired iPhone is available  when the paired iPhone is not available.  The best way to test the latter is to turn off both Wi-Fi and Bluetooth in the Settings app on the iPhone.  Do not use Control Center for this.  For an explanation of the difference between these two mechanisms, see [`Use Bluetooth and Wi-Fi in Control Center`](https://developer.apple.comhttps://support.apple.com/HT208086).
+Also, test your networking code in a wide variety of network environments.  Specifically, test it when the paired iPhone is available *and* when the paired iPhone is not available.  The best way to test the latter is to turn off both Wi-Fi and Bluetooth in the Settings app on the iPhone.  Do not use Control Center for this.  For an explanation of the difference between these two mechanisms, see [`Use Bluetooth and Wi-Fi in Control Center`](https://developer.apple.comhttps://support.apple.com/HT208086).
 
 For more information about building an audio streaming app for watchOS, see WWDC 2019 Session 716 [`Streaming Audio on watchOS 6`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/716/).
 
 #### Revision History
 
--  Fixed a typo.
--  Added a discussion of the DeviceDiscoveryUI framework.
--  Republished as TN3135.  Updated with information about watchOS 9.  Made significant editorial changes.
--  Updated to call out that [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) and [`URLSessionWebSocketTask`](https://developer.apple.com/documentation/Foundation/URLSessionWebSocketTask) are considered low-level networking.
--  First published as “Low-Level Networking on watchOS” on Apple Developer Forums.
+- **2024-02-27** Fixed a typo.
+- **2022-10-18** Added a discussion of the DeviceDiscoveryUI framework.
+- **2022-09-27** Republished as TN3135.  Updated with information about watchOS 9.  Made significant editorial changes.
+- **2021-05-14** Updated to call out that [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) and [`URLSessionWebSocketTask`](https://developer.apple.com/documentation/Foundation/URLSessionWebSocketTask) are considered low-level networking.
+- **2019-12-18** First published as “Low-Level Networking on watchOS” on Apple Developer Forums.
 
 ## See Also
 

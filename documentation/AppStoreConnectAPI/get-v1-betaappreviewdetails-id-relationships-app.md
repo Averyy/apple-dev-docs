@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaAppReviewDetails/{id}/relationships/app`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List Beta App Review Details](get-v1-betaappreviewdetails.md)

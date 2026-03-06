@@ -14,6 +14,12 @@ The data structure that represents the Diagnostic Logs resource.
 object DiagnosticLog
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

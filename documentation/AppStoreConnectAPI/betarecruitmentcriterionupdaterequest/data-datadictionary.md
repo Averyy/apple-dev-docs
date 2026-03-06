@@ -17,6 +17,12 @@ object BetaRecruitmentCriterionUpdateRequest.Data
 ### Dictionaries
 - [object BetaRecruitmentCriterionUpdateRequest.Data.Attributes](betarecruitmentcriterionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (BetaRecruitmentCriterionUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

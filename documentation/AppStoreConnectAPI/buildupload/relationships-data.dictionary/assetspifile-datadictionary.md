@@ -20,6 +20,10 @@ object BuildUpload.Relationships.AssetSpiFile
 - [object BuildUpload.Relationships.AssetSpiFile.Data](buildupload/relationships-data.dictionary/assetspifile-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BuildUpload.Relationships.AssetSpiFile.Data)
+
 
 ---
 

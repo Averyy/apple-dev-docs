@@ -12,6 +12,13 @@
 object InAppPurchaseContent.Attributes
 ```
 
+## Properties
+
+- `fileName` (string)
+- `fileSize` (integer)
+- `lastModifiedDate` (date-time)
+- `url` (uri)
+
 ## See Also
 
 - [object InAppPurchaseContent.Relationships](inapppurchasecontent/relationships-data.dictionary.md)

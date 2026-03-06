@@ -14,6 +14,13 @@ A response that contains one or more groups.
 object GameCenterGroupsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterGroup]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

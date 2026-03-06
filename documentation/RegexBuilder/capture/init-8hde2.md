@@ -22,7 +22,7 @@ init<W, C1, C2, C3, C4, C5, C6, C7>(@RegexComponentBuilder _ componentBuilder: (
 
 ## Parameters
 
-- `componentBuilder`: A builder closure that generates a   regex component to capture.
+- `componentBuilder`: A builder closure that generates a regex component to capture.
 
 
 ---

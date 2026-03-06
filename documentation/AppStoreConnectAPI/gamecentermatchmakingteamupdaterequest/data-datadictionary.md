@@ -20,6 +20,12 @@ object GameCenterMatchmakingTeamUpdateRequest.Data
 - [object GameCenterMatchmakingTeamUpdateRequest.Data.Attributes](gamecentermatchmakingteamupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes of a team that you modify.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingTeamUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*: The unique identifier for the team.
+- `type` (string) *(required)*: The type of resource object.
+
 
 ---
 

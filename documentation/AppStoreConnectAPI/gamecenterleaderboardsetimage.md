@@ -20,6 +20,14 @@ object GameCenterLeaderboardSetImage
 - [object GameCenterLeaderboardSetImage.Attributes](gamecenterleaderboardsetimage/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetImage.Relationships](gamecenterleaderboardsetimage/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetImage.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardSetImage.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageV2](gamecenterleaderboardsetimagev2.md)

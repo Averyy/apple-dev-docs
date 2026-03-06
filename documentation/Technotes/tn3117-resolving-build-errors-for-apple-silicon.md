@@ -103,11 +103,11 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
 
 #### Revision History
 
--  Added information about the Destination Architectures menu in Xcode 14.3.
--  Updated link about creating XCFrameworks.
--  Added additional information on excluding architectures.
--  Made minor editorial changes.
--  First published.
+- **2023-04-11** Added information about the Destination Architectures menu in Xcode 14.3.
+- **2022-10-11** Updated link about creating XCFrameworks.
+- **2022-07-12** Added additional information on excluding architectures.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-22** First published.
 
 ## See Also
 

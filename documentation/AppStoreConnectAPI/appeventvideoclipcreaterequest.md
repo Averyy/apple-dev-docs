@@ -17,6 +17,10 @@ object AppEventVideoClipCreateRequest
 ### Objects
 - [object AppEventVideoClipCreateRequest.Data](appeventvideoclipcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventVideoClipCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEventVideoClip](appeventvideoclip.md)

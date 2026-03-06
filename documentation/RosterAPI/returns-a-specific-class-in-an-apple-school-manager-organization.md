@@ -12,6 +12,44 @@ Read a class from an Apple School Manager organization.
 
 ##### Example
 
+**Request**:
+
+```None
+curl "https://api-school.apple.com/rosterapi/v1/classes/1234" \
+    -H "Authorization: Bearer ${TOKEN}"
+```
+
+**Response**:
+
+```json
+{
+  "id": "1234",
+  "name": "Algebra",
+  "number": "101",
+  "room": "PL-213",
+  "locationId": "LO:1234",
+  "instructorIds": [
+    "1234",
+    "2345"
+  ],
+  "studentIds": [
+    "54321",
+    "54322",
+    "54323"
+  ],
+  "dateCreated": "2021-07-26T11:11:51Z",
+  "dateLastModified”: "2021-07-26T11:11:51Z"
+}
+```
+
+## Endpoint
+
+`GET https://api-school.apple.com/rosterapi/v1/classes/{classId}`
+
+## Parameters
+
+- `classId` (string) *(required)*: The identifier from the class. Use the `id` field from the [`Class`](class.md) object.
+
 ## See Also
 
 - [object Class](class.md)

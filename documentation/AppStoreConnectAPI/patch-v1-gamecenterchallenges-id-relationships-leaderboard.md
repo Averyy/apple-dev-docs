@@ -8,6 +8,14 @@ Update the relationship between a leaderbaord and a specific Game Center challen
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterChallenges/{id}/relationships/leaderboard`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

@@ -51,7 +51,7 @@ do {
 
 ## Parameters
 
-- `transform`: An error-throwing mapping closure.    accepts an element of this sequence as its parameter and returns an   . If   throws an error, the sequence ends.
+- `transform`: An error-throwing mapping closure. `transform` accepts an element of this sequence as its parameter and returns an `AsyncSequence`. If `transform` throws an error, the sequence ends.
 
 ## See Also
 

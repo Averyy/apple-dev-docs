@@ -20,6 +20,10 @@ object AppScreenshot.Relationships.AppScreenshotSet
 - [object AppScreenshot.Relationships.AppScreenshotSet.Data](appscreenshot/relationships-data.dictionary/appscreenshotset-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppScreenshot.Relationships.AppScreenshotSet.Data)
+
 
 ---
 

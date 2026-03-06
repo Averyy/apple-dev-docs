@@ -29,7 +29,7 @@ Use this function to retrieve any metadata you included with the attachment. You
 
 ## Parameters
 
-- `of`: The type for your attachment’s custom metadata. This type must   match the one added with the attachment.
+- `of`: The type for your attachment’s custom metadata. This type must match the one added with the attachment.
 
 ## See Also
 

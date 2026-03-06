@@ -14,6 +14,12 @@ A relationship from the album to its artists.
 object Albums.Relationships.AlbumsArtistsRelationship
 ```
 
+## Properties
+
+- `href` (string): The relative location to fetch the relationship directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `data` ([Artists]) *(required)*: The artists for the album.
+
 ## See Also
 
 - [object Albums.Relationships.AlbumsGenresRelationship](albums/relationships-data.dictionary/albumsgenresrelationship.md)

@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetV2.Attributes
 - referenceName:
 - vendorIdentifier:
 
+## Properties
+
+- `referenceName` (string)
+- `vendorIdentifier` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2.Relationships](gamecenterleaderboardsetv2/relationships-data.dictionary.md)

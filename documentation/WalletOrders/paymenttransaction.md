@@ -17,6 +17,16 @@ The details about a payment transaction.
 object PaymentTransaction
 ```
 
+## Properties
+
+- `amount` (CurrencyAmount) *(required)*: The amount of the transaction.
+- `createdAt` (date-time) *(required)*: The date and time when the framework created the transaction, in RFC 3339 format.
+- `paymentMethod` (PaymentMethod) *(required)*: A string that represents the payment, such as a payment pass or card used for the transaction.
+- `status` (string) *(required)*: The fulfillment status.
+- `applePayTransactionIdentifier` (string): A string that represents the Apple Pay transaction ID.
+- `transactionType` (string) *(required)*: The type of transaction.
+- `receipt` (string): The filename of a receipt within the bundle that’s associated with the transaction.
+
 ## See Also
 
 - [object Customer](customer.md)

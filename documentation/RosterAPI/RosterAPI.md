@@ -14,6 +14,9 @@ Roster API provides access to people and class information in Apple School Manag
 
 Accessing the user and class information requires authorization from an administrator of the ASM organization. When you begin the Roster API authorization flow, use the scopes defined below to request the appropriate level of access:
 
+- **`edu.users.read`**: Request read access to ASM users
+- **`edu.classes.read`**: Request read access to ASM classes
+
 At the end of the authorization flow, use the access token you receive to access the Roster API endpoints, which you use to fetch people and class information. For more information on requesting an access token, see [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens).
 
 Include the access token you receive in the Authorization header for every request. The Roster API associates the access token with an ASM organization. The endpoints return user and class information contained within that ASM organization. The unique account identifier from Sign in with Apple at Work & School is the same identifier provided in the Roster API user information. You may use this identifier to associate user information from the Roster API with a user signing in to your app.

@@ -8,6 +8,20 @@ Read the state of releases for a leaderboard set and related information.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSets/{id}/releases`
+
+## Parameters
+
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterLeaderboardSetReleases]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `filter[gameCenterDetail]` ([string])
+- `filter[live]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read Game Center leaderboard set information](get-v2-gamecenterleaderboardsets-_id_.md)

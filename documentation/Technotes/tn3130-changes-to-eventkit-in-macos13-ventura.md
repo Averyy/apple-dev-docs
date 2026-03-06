@@ -111,7 +111,7 @@ The [`isDelegate`](https://developer.apple.com/documentation/EventKit/EKSource/i
 
 #### Revision History
 
--  First published.
+- **2022-08-16** First published.
 
 ## See Also
 

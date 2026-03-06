@@ -20,6 +20,10 @@ object AppStoreVersionSubmission.Relationships
 - [object AppStoreVersionSubmission.Relationships.AppStoreVersion](appstoreversionsubmission/relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appStoreVersion` (AppStoreVersionSubmission.Relationships.AppStoreVersion)
+
 
 ---
 

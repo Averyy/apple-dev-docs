@@ -14,6 +14,10 @@ A structure returned by a search that describes a place.
 object SearchResponse.Place
 ```
 
+## Properties
+
+- `poiCategory` (PoiCategory): A string that describes a specific place of interest (POI) category.
+
 ## Relationships
 
 ### Inherits From

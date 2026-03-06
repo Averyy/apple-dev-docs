@@ -6,7 +6,7 @@
 Extends the renewal date of a customer’s active subscription using the original transaction identifier.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Mentions
 
@@ -29,6 +29,14 @@ A successful response with an `HTTP` `200` status code contains the [`ExtendRene
 After a successful renewal date extension, Apple sends an email to notify the customer of their updated subscription renewal date.
 
 For more information about this and related endpoints, including subscription eligibility, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md).
+
+## Endpoint
+
+`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/subscriptions/extend/{originalTransactionId}`
+
+## Parameters
+
+- `originalTransactionId` (originalTransactionId) *(required)*: The original transaction identifier of the subscription receiving a renewal date extension.
 
 ## Request Body
 

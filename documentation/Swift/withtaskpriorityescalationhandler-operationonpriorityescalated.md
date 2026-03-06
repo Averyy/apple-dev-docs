@@ -40,18 +40,18 @@ Task escalation propagates through structured concurrency child-tasks.
 ## Parameters
 
 - `operation`: The operation during which to listen for priority escalation
-- `handler`: Handler to invoke, concurrently to  ,   when priority escalation happens.   The first argument is the old priority (before escalation),   and the second argument is the new escalated priority.
+- `handler`: Handler to invoke, concurrently to `operation`, when priority escalation happens. The first argument is the old priority (before escalation), and the second argument is the new escalated priority.
 
 ## See Also
 
 - [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [static var currentPriority: TaskPriority](task/currentpriority.md)
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)

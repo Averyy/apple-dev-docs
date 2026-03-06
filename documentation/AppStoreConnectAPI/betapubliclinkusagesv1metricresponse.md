@@ -17,6 +17,12 @@ object BetaPublicLinkUsagesV1MetricResponse
 ### Dictionaries
 - [object BetaPublicLinkUsagesV1MetricResponse.Data](betapubliclinkusagesv1metricresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BetaPublicLinkUsagesV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaGroup](betagroup.md)

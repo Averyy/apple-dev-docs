@@ -22,6 +22,12 @@ object AppClipAppStoreReviewDetailCreateRequest.Data
 - [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships](appclipappstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppClipAppStoreReviewDetailCreateRequest.Data.Attributes): The attributes that describe the request that creates an App Clip App Store Review Details resource.
+- `relationships` (AppClipAppStoreReviewDetailCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

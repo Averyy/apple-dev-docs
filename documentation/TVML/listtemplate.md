@@ -37,6 +37,13 @@ The following listing shows the main elements of the `listTemplate` in TVML form
 
 ###### Element Descriptions
 
+- **[`banner`](banner.md)**: Element containing background information and the page title.
+- **[`header`](header.md)**: Information describing what a section contains.
+- **[`list`](list.md)**: Element containing all content for the `listTemplate` page.
+- **[`listItemLockup`](listitemlockup.md)**: Element containing all information that pertains to one list item, such as an item title and image, as well as related content.
+- **[`relatedContent`](relatedcontent.md)**: Information that is displayed on the left side of the screen when an item in the list is highlighted.
+- **[`section`](section.md)**: An area of the page that groups related elements together as one element, for layout purposes. In this case, the section contains list items.
+
 ##### Example
 
 The following listing shows the TVML for a `listTemplate` example. An image and a description that relate to the highlighted item are displayed on the left side of the screen.

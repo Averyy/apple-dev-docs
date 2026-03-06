@@ -22,6 +22,12 @@ object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Attributes) *(required)*
+- `relationships` (InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

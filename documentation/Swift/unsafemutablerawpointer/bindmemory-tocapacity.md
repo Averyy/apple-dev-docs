@@ -45,8 +45,8 @@ After calling `bindMemory(to:capacity:)`, the first four bytes of the memory ref
 
 ## Parameters
 
-- `type`: The type   to bind the memory to.
-- `count`: The amount of memory to bind to type  , counted as instances   of  .
+- `type`: The type `T` to bind the memory to.
+- `count`: The amount of memory to bind to type `T`, counted as instances of `T`.
 
 
 ---

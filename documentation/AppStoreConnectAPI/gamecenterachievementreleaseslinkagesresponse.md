@@ -17,6 +17,12 @@ object GameCenterAchievementReleasesLinkagesResponse
 ### Dictionaries
 - [object GameCenterAchievementReleasesLinkagesResponse.Data](gamecenterachievementreleaseslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterAchievementReleasesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementRelease](gamecenterachievementrelease.md)

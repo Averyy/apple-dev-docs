@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/{id}/relationships/macOsVersions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Xcode Versions Available in Xcode Cloud](get-v1-cixcodeversions.md)

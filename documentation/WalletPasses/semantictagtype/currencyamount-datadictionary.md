@@ -16,6 +16,11 @@ An object that represents an amount of money and type of currency.
 object SemanticTagType.CurrencyAmount
 ```
 
+## Properties
+
+- `amount` (string): The amount of money.
+- `currencyCode` (ISO 4217 currency code as a string): The currency code for `amount`.
+
 ## See Also
 
 - [object SemanticTagType.EventDateInfo](semantictagtype/eventdateinfo-data.dictionary.md)

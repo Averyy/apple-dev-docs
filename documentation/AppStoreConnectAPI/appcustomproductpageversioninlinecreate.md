@@ -20,6 +20,13 @@ object AppCustomProductPageVersionInlineCreate
 - [object AppCustomProductPageVersionInlineCreate.Attributes](appcustomproductpageversioninlinecreate/attributes-data.dictionary.md)
 - [object AppCustomProductPageVersionInlineCreate.Relationships](appcustomproductpageversioninlinecreate/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppCustomProductPageVersionInlineCreate.Attributes)
+- `id` (string)
+- `relationships` (AppCustomProductPageVersionInlineCreate.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppCustomProductPageVersion](appcustomproductpageversion.md)

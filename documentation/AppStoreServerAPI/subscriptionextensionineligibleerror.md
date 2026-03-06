@@ -6,7 +6,7 @@
 An error that indicates the subscription doesn’t qualify for a renewal-date extension due to its subscription state.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -25,6 +25,11 @@ Auto-renewable subscriptions in the following states aren’t eligible for renew
 - Subscriptions in a grace period state with an expiration date in the past
 - Subscriptions that have already received two renewal date extensions within the past 365 days
 - Expired subscriptions
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

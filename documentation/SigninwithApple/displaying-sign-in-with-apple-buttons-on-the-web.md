@@ -57,17 +57,31 @@ Control the size of the button by adding a class that contains the desired CSS `
 
 To configure the appearance of the Sign in with Apple button, set the `data-mode` property to one of the following values:
 
+- **`center-align`**: A center-aligned button. Both the logo and text are centered in the button. This is the default.
+- **`left-align`**: A left-aligned button with an adjustable logo size, logo position, and label position.
+- **`logo-only`**: A square button with a centered Apple logo and no text.
+
 ###### Set the Type
 
 You can request a specific button type by setting the `data-type` property of the Sign in with Apple button to one of the following values:
+
+- **`sign-in`**: The Sign in with Apple button. This is the default.
+- **`continue`**: The Continue with Apple button.
+- **`sign-up`**: The Sign up with Apple button.
 
 ###### Set the Color
 
 To configure the background color of the Sign in with Apple button, set the `data-color` property to one of the following values:
 
+- **`black`**: The button’s background color is black. This is the default.
+- **`white`**: The button’s background color is white.
+
 ###### Set the Border and Radius
 
 To configure the border of the Sign in with Apple button, set the `data-border` property to one of the following values:
+
+- **`true`**: The button has a border. This is the default.
+- **`false`**: The button doesn’t have a border.
 
 To configure the border radius of the button, set the `data-border-radius` property to a number between `0—50`. The default is `15`.
 
@@ -82,6 +96,10 @@ To configure the height of the button, set the `data-height` property to a value
 You can control the size and position of the Apple logo on the Sign in with Apple button. These settings only work if you set `data-mode` to `left-align`.
 
 To configure the logo size on the button, set the `data-logo-size` property to one of the following values:
+
+- **`small`**: A small logo.
+- **`medium`**: A medium logo.
+- **`large`**: A large logo.
 
 To configure the logo position on the button, set the `data-logo-position` property to a number in points. The minimum value is `0` and the maximum is the label position. The logo remains positioned to the left of the label. The system may override the value to maintain proper margins for the logo and font size.
 

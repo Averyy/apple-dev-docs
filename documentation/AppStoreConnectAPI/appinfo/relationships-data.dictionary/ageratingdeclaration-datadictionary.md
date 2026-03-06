@@ -20,6 +20,11 @@ object AppInfo.Relationships.AgeRatingDeclaration
 - [object AppInfo.Relationships.AgeRatingDeclaration.Data](appinfo/relationships-data.dictionary/ageratingdeclaration-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppInfo.Relationships.AgeRatingDeclaration.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppInfo.Relationships.App](appinfo/relationships-data.dictionary/app-data.dictionary.md)

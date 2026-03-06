@@ -20,6 +20,10 @@ object LibraryPlaylistFolderCreationRequest.Relationships.Parent
 - [object LibraryPlaylistFolderCreationRequest.Relationships.Parent.Data](libraryplaylistfoldercreationrequest/relationships-data.dictionary/parent-data.dictionary/data-data.dictionary.md)
   Data of the parent of the library playlist folder of the creation request.
 
+## Properties
+
+- `data` ([LibraryPlaylistFolderCreationRequest.Relationships.Parent.Data]) *(required)*: The data of the parent of the library playlist folder of the creation request.
+
 
 ---
 

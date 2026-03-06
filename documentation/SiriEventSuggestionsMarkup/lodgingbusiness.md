@@ -14,6 +14,13 @@ A hotel, inn, or other lodging location.
 object LodgingBusiness
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `address` (PostalAddress) *(required)*: The geographic location of the lodging.
+- `name` (string) *(required)*: The name of the lodging.
+- `telephone` (telephone): The phone number of the lodging.
+
 
 ---
 

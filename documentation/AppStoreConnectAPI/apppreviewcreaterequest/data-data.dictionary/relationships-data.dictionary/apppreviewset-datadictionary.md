@@ -20,6 +20,10 @@ object AppPreviewCreateRequest.Data.Relationships.AppPreviewSet
 - [object AppPreviewCreateRequest.Data.Relationships.AppPreviewSet.Data](apppreviewcreaterequest/data-data.dictionary/relationships-data.dictionary/apppreviewset-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppPreviewCreateRequest.Data.Relationships.AppPreviewSet.Data) *(required)*
+
 
 ---
 

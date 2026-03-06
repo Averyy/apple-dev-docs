@@ -17,6 +17,10 @@ object BetaFeedbackScreenshotSubmission.Relationships.Build
 ### Dictionaries
 - [object BetaFeedbackScreenshotSubmission.Relationships.Build.Data](betafeedbackscreenshotsubmission/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaFeedbackScreenshotSubmission.Relationships.Build.Data)
+
 
 ---
 

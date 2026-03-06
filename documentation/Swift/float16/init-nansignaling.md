@@ -35,7 +35,7 @@ print(x.isNaN)
 ## Parameters
 
 - `payload`: The payload to use for the new NaN value.
-- `signaling`: Pass   to create a signaling NaN or   to create   a quiet NaN.
+- `signaling`: Pass `true` to create a signaling NaN or `false` to create a quiet NaN.
 
 
 ---

@@ -20,6 +20,11 @@ object AppStoreVersionAppClipDefaultExperienceLinkageResponse
 - [object AppStoreVersionAppClipDefaultExperienceLinkageResponse.Data](appstoreversionappclipdefaultexperiencelinkageresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` (AppStoreVersionAppClipDefaultExperienceLinkageResponse.Data) *(required)*: The object types and IDs of the related resources.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

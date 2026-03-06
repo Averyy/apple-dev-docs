@@ -14,6 +14,12 @@ A response that contains a single Builds resource.
 object BuildResponse
 ```
 
+## Properties
+
+- `data` (Build) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Read the Build Information of a Beta Build Localization](get-v1-betabuildlocalizations-_id_-build.md)

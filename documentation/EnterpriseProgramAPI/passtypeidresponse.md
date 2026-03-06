@@ -11,6 +11,12 @@ A response that contains a pass type ID resource.
 object PassTypeIdResponse
 ```
 
+## Properties
+
+- `data` (PassTypeId) *(required)*
+- `included` ([Certificate])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object PassTypeId](passtypeid.md)

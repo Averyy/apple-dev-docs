@@ -19,6 +19,11 @@ object SubscriptionPricePoint.Relationships
 ### Dictionaries
 - [object SubscriptionPricePoint.Relationships.Equalizations](subscriptionpricepoint/relationships-data.dictionary/equalizations-data.dictionary.md)
 
+## Properties
+
+- `equalizations` (SubscriptionPricePoint.Relationships.Equalizations)
+- `territory` (SubscriptionPricePoint.Relationships.Territory)
+
 ## See Also
 
 - [object SubscriptionPricePoint.Attributes](subscriptionpricepoint/attributes-data.dictionary.md)

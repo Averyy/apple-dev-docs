@@ -26,7 +26,7 @@ func isStrictSuperset<S>(of possibleStrictSubset: S) -> Bool where Element == S.
 
 #### Discussion
 
-Set  is a strict superset of another set  if every member of  is also a member of  and  contains at least one element that is  a member of .
+Set *A* is a strict superset of another set *B* if every member of *B* is also a member of *A* and *A* contains at least one element that is *not* a member of *B*.
 
 ```swift
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
@@ -39,7 +39,7 @@ print(employees.isStrictSuperset(of: employees))
 
 ## Parameters
 
-- `possibleStrictSubset`: A sequence of elements.    must be finite.
+- `possibleStrictSubset`: A sequence of elements. `possibleStrictSubset` must be finite.
 
 ## See Also
 

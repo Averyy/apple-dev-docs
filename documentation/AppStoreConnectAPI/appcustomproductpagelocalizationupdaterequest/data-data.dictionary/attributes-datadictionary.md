@@ -14,6 +14,10 @@ Attributes that describe an app custom product page localization update request 
 object AppCustomProductPageLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `promotionalText` (string)
+
 
 ---
 

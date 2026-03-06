@@ -26,20 +26,20 @@ func lexicographicallyPrecedes<OtherSequence>(_ other: OtherSequence, by areInIn
 
 #### Discussion
 
-The predicate must be a  over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
+The predicate must be a *strict weak ordering* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 
 - `areInIncreasingOrder(a, a)` is always `false`. (Irreflexivity)
 - If `areInIncreasingOrder(a, b)` and `areInIncreasingOrder(b, c)` are both `true`, then `areInIncreasingOrder(a, c)` is also `true`. (Transitive comparability)
-- Two elements are  if neither is ordered before the other according to the predicate. If `a` and `b` are incomparable, and `b` and `c` are incomparable, then `a` and `c` are also incomparable. (Transitive incomparability)
+- Two elements are *incomparable* if neither is ordered before the other according to the predicate. If `a` and `b` are incomparable, and `b` and `c` are incomparable, then `a` and `c` are also incomparable. (Transitive incomparability)
 
 > **Note**: This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison instead.
 
-> **Note**: O(), where  is the lesser of the length of the sequence and the length of `other`.
+> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 
 - `other`: A sequence to compare to this sequence.
-- `areInIncreasingOrder`: A predicate that returns   if its first   argument should be ordered before its second argument; otherwise,   .
+- `areInIncreasingOrder`: A predicate that returns `true` if its first argument should be ordered before its second argument; otherwise, `false`.
 
 ## See Also
 

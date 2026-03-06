@@ -19,6 +19,10 @@ object GameCenterActivityLeaderboardsLinkagesRequest
 ### Dictionaries
 - [object GameCenterActivityLeaderboardsLinkagesRequest.Data](gamecenteractivityleaderboardslinkagesrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterActivityLeaderboardsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

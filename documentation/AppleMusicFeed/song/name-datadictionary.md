@@ -14,6 +14,11 @@ A mapping of locale to localized names for the song.
 object Song.Name
 ```
 
+## Properties
+
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates fallback to `default`.
+- `name` (string): A localized uncensored name for the song.
+
 ## See Also
 
 - [object Song.ArtistRole](song/artistrole.md)

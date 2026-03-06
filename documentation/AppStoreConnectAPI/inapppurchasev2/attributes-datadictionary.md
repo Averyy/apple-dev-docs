@@ -12,6 +12,16 @@
 object InAppPurchaseV2.Attributes
 ```
 
+## Properties
+
+- `contentHosting` (boolean)
+- `familySharable` (boolean)
+- `inAppPurchaseType` (InAppPurchaseType)
+- `name` (string)
+- `productId` (string)
+- `reviewNote` (string)
+- `state` (InAppPurchaseState)
+
 ## See Also
 
 - [type InAppPurchaseType](inapppurchasetype.md)

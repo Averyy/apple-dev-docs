@@ -19,6 +19,10 @@ object GameCenterPlayerAchievementSubmissionCreateRequest
 ### Objects
 - [object GameCenterPlayerAchievementSubmissionCreateRequest.Data](gamecenterplayerachievementsubmissioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterPlayerAchievementSubmissionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterPlayerAchievementSubmission](gamecenterplayerachievementsubmission.md)

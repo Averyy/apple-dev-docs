@@ -31,7 +31,7 @@ Unlike macros in C/C++, compilation conditions don’t have an associated value.
 ## Parameters
 
 - `name`: The name of the macro.
-- `condition`: A condition that restricts the application of the build   setting.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

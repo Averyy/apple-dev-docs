@@ -21,6 +21,10 @@ A blend operation that lightens areas that are darker than white.
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The foreground input, represented by `F` in the mathematical equation.
+- **`Background`**: The background input, represented by `B` in the mathematical equation.
+- **`Mix`**: The weight of the blend operation. The higher the value of `Mix`, the more apparent the effect of the blend operation. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Screen` node inverts the color values of both the foreground and background and multiplies those values together. Then the node inverts the colors again, as represented by the equation: `1 - (1 - F)(1 - B)`. The resulting visual effect is always equally bright or brighter than the original textures. Below is an example of a simple node graph that uses the `Screen` node to blend two images together into a single material:

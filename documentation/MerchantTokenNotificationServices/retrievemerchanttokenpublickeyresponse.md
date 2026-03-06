@@ -14,6 +14,12 @@ Get the merchant token public key response.
 object RetrieveMerchantTokenPublicKeyResponse
 ```
 
+## Properties
+
+- `merchantTokenPublicKey` (string) *(required)*: The X9.63-encoded public key, Base64-encoded.
+- `statusCode` (integer) *(required)*: The HTTP status code.
+- `supportedCiphersuite` (string) *(required)*: The Apple-supported ciphersuite for HPKE in authorization mode. Supported: HPKE_AUTH_P384_SHA384_AES_GCM_256.
+
 
 ---
 

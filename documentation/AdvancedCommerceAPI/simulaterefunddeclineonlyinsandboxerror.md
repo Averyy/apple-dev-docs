@@ -12,6 +12,11 @@
 object SimulateRefundDeclineOnlyInSandboxError
 ```
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError](acapriceincreaseisnotcurrentlysupportedinindiaerror.md)

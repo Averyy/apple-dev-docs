@@ -22,7 +22,7 @@ init(localized key: StaticString, defaultValue: String.LocalizationValue, option
 
 #### Discussion
 
-Use the `defaultValue` initializers when you want to use an explicit  to look up localized strings. This is useful if the localizable string in your development language is ambiguous. For example  in English can be a noun or a verb. In this case, you might want to use `.strings` file entries like `CALL_NOUN` and `CALL_VERB` to disambiguate the uses for localizers. You then use this initializer, providing both a key and a default value to use if the system can’t find the key at runtime.
+Use the `defaultValue` initializers when you want to use an explicit *key* to look up localized strings. This is useful if the localizable string in your development language is ambiguous. For example *call* in English can be a noun or a verb. In this case, you might want to use `.strings` file entries like `CALL_NOUN` and `CALL_VERB` to disambiguate the uses for localizers. You then use this initializer, providing both a key and a default value to use if the system can’t find the key at runtime.
 
 ```swift
 // Assume the strings file or catalog contains the following:
@@ -54,9 +54,9 @@ To use the default localization as the key rather than an explicit key, use [`in
 
 - `defaultValue`: A default value to use if looking up a localized string from the bundle fails. This is typically the localizable string in the development language.
 - `options`: A localization options instance that specifies localization options to apply, such as replacement values for formatted strings.
-- `table`: The bundle’s string table to search. If   is   or is an empty string, the method attempts to use the table named  . The default is  .
-- `bundle`: The bundle to use for looking up strings. If  , an app searches its main bundle. The default is  .
-- `locale`: The locale to use when localizing interpolated values, such as numbers. This doesn’t change which locale the system uses to look up the localized string. If  , this initializer uses the current locale. The default is  .
+- `table`: The bundle’s string table to search. If `table` is `nil` or is an empty string, the method attempts to use the table named `Localizable`. The default is `nil`.
+- `bundle`: The bundle to use for looking up strings. If `nil`, an app searches its main bundle. The default is `nil`.
+- `locale`: The locale to use when localizing interpolated values, such as numbers. This doesn’t change which locale the system uses to look up the localized string. If `nil`, this initializer uses the current locale. The default is `nil`.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
 
 ## See Also

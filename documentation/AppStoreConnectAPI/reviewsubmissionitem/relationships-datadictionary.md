@@ -35,6 +35,20 @@ object ReviewSubmissionItem.Relationships
 - [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
   The data that describes the Game Center leaderboard version of the review submission item.
 
+## Properties
+
+- `appCustomProductPageVersion` (ReviewSubmissionItem.Relationships.AppCustomProductPageVersion)
+- `appEvent` (ReviewSubmissionItem.Relationships.AppEvent)
+- `appStoreVersion` (ReviewSubmissionItem.Relationships.AppStoreVersion)
+- `appStoreVersionExperiment` (ReviewSubmissionItem.Relationships.AppStoreVersionExperiment)
+- `appStoreVersionExperimentV2` (ReviewSubmissionItem.Relationships.AppStoreVersionExperimentV2)
+- `backgroundAssetVersion` (ReviewSubmissionItem.Relationships.BackgroundAssetVersion)
+- `gameCenterAchievementVersion` (ReviewSubmissionItem.Relationships.GameCenterAchievementVersion)
+- `gameCenterActivityVersion` (ReviewSubmissionItem.Relationships.GameCenterActivityVersion)
+- `gameCenterChallengeVersion` (ReviewSubmissionItem.Relationships.GameCenterChallengeVersion)
+- `gameCenterLeaderboardSetVersion` (ReviewSubmissionItem.Relationships.GameCenterLeaderboardSetVersion)
+- `gameCenterLeaderboardVersion` (ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion)
+
 ## See Also
 
 - [object ReviewSubmissionItem.Attributes](reviewsubmissionitem/attributes-data.dictionary.md)

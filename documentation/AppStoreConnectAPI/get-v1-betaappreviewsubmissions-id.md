@@ -8,6 +8,16 @@ Get a specific beta app review submission.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaAppReviewSubmissions/{id}`
+
+## Parameters
+
+- `fields[betaAppReviewSubmissions]` ([string]): Fields to return for included related types.
+- `fields[builds]` ([string]): Fields to return for included related types.
+- `include` ([string]): Relationship data to include in the response.
+
 ## See Also
 
 - [List Beta App Review Submissions](get-v1-betaappreviewsubmissions.md)

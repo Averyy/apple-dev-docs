@@ -19,7 +19,7 @@ final class DockAccessory
 
 #### Overview
 
-`DockAccessory` provides information about the dock accessory including its model name and firmware version. It also controls the dock accessory when you disable system tracking. Use `DockAccesory` to  perform animations, or explicitly control the position of the dock accessory in three-dimensional space by supplying coordinates in units of radians.  The collection of the X, Y, and Z values corresponding to pitch, yaw, and roll is the  of the dock accessory.
+`DockAccessory` provides information about the dock accessory including its model name and firmware version. It also controls the dock accessory when you disable system tracking. Use `DockAccesory` to  perform animations, or explicitly control the position of the dock accessory in three-dimensional space by supplying coordinates in units of radians.  The collection of the X, Y, and Z values corresponding to pitch, yaw, and roll is the *angular position* of the dock accessory.
 
 If there are multiple subjects in a video frame, direct the dock accessory to focus on a particular area of the frame using [`setFramingMode(_:)`](dockaccessory/setframingmode(_:).md).
 

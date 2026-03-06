@@ -20,6 +20,10 @@ object BetaLicenseAgreementUpdateRequest
 - [object BetaLicenseAgreementUpdateRequest.Data](betalicenseagreementupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaLicenseAgreementUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaLicenseAgreement](betalicenseagreement.md)

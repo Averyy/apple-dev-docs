@@ -14,6 +14,12 @@ Attributes that describe an activity resource.
 object GameCenterActivityLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `locale` (string) *(required)*
+- `name` (string) *(required)*
+
 
 ---
 

@@ -14,6 +14,13 @@ An error indicating the provided date field is in the future and future values a
 object FutureDateError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId)
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

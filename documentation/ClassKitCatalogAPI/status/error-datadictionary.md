@@ -14,6 +14,12 @@ Information that explains why a request failed.
 object Status.Error
 ```
 
+## Properties
+
+- `code` (string): A brief code that identifies the kind of error.
+- `id` (string): The `statusId` of the request that caused the error, as described in [`Get Status`](get-status.md).
+- `message` (string): A human readable explanation for the error.
+
 
 ---
 

@@ -20,6 +20,10 @@ object CiWorkflowCreateRequest.Data.Relationships.Repository
 - [object CiWorkflowCreateRequest.Data.Relationships.Repository.Data](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/repository-data.dictionary/data-data.dictionary.md)
   The type and ID of the Repositories resource that you’re relating with the Workflows resource you’re creating.
 
+## Properties
+
+- `data` (CiWorkflowCreateRequest.Data.Relationships.Repository.Data) *(required)*: The ID and type of the related Repositories resource.
+
 ## See Also
 
 - [object CiWorkflowCreateRequest.Data.Relationships.MacOsVersion](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/macosversion-data.dictionary.md)

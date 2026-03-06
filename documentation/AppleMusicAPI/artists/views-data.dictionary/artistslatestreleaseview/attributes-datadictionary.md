@@ -14,6 +14,10 @@ The latest release for the artist determined to still be recent by the Apple Mus
 object Artists.Views.ArtistsLatestReleaseView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

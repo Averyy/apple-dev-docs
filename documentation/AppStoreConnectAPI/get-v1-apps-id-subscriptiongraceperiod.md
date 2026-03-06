@@ -12,6 +12,42 @@ Get the Boolean value that represents the grace period opt-in state for your app
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/6446671329/subscriptionGracePeriod
+```
+
+**Response**:
+
+```json
+  "data" : {
+    "type" : "subscriptionGracePeriods",
+    "id" : "6446671329",
+    "attributes" : {
+      "optIn" : true,
+      "sandboxOptIn" : false,
+      "duration" : SIXTEEN_DAYS,
+      "renewalType" : ALL_RENEWALS
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/apps/6446671329/subscriptionGracePeriod"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/subscriptionGracePeriod`
+
+## Parameters
+
+- `fields[subscriptionGracePeriods]` ([string])
+
 ## See Also
 
 - [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)

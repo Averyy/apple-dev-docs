@@ -20,6 +20,10 @@ object AppInfoUpdateRequest
 - [object AppInfoUpdateRequest.Data](appinfoupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppInfoUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object AppInfo](appinfo.md)

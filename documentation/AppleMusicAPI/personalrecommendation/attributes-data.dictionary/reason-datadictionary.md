@@ -14,6 +14,10 @@ An object that represents the reason for a personal recommendation.
 object PersonalRecommendation.Attributes.Reason
 ```
 
+## Properties
+
+- `stringForDisplay` (string) *(required)*: The localized reason for the recommendation.
+
 ## See Also
 
 - [object PersonalRecommendation.Attributes.Title](personalrecommendation/attributes-data.dictionary/title-data.dictionary.md)

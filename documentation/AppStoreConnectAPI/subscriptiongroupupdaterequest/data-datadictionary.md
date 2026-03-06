@@ -17,6 +17,12 @@ object SubscriptionGroupUpdateRequest.Data
 ### Objects
 - [object SubscriptionGroupUpdateRequest.Data.Attributes](subscriptiongroupupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGroupUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -20,6 +20,11 @@ object CertificatePassTypeIdLinkageResponse
 - [object CertificatePassTypeIdLinkageResponse.Data](certificatepasstypeidlinkageresponse/data-data.dictionary.md)
   The data structure that represents a certificate pass type id linkage response resource.
 
+## Properties
+
+- `data` (CertificatePassTypeIdLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Certificate](certificate.md)

@@ -20,6 +20,10 @@ object SubscriptionImageCreateRequest
 - [object SubscriptionImageCreateRequest.Data](subscriptionimagecreaterequest/data-data.dictionary.md)
   The request body you use to create a subscription purchase image reservation.
 
+## Properties
+
+- `data` (SubscriptionImageCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionImage](subscriptionimage.md)

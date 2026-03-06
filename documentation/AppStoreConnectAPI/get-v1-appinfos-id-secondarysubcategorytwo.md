@@ -8,6 +8,16 @@ Get the second App Store subcategory within an app’s secondary category.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfos/{id}/secondarySubcategoryTwo`
+
+## Parameters
+
+- `fields[appCategories]` ([string]): Fields to return for included related types.
+- `limit[subcategories]` (integer)
+- `include` ([string])
+
 ## See Also
 
 - [Read the Primary Subcategory One Information of an App Info](get-v1-appinfos-_id_-primarysubcategoryone.md)

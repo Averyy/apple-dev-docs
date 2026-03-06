@@ -26,6 +26,12 @@ object GameCenterLeaderboardV2UpdateRequest.Data
 - [object GameCenterLeaderboardV2UpdateRequest.Data.Attributes](gamecenterleaderboardv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center leaderboard update request.
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardV2UpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -6,7 +6,7 @@ Accept payments on your website with Apple Pay using the Payment Request API.
 
 #### Overview
 
-The Payment Request API is a cross-browser payment API under development by the W3C. You can use the Payment Request API to accept various payment methods in exchange for physical or digital goods on your website.  include payment solutions the platform provides, such as Apple Pay. For more information on the Payment Request API, see the [`W3C Payment Request API specification`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/).
+The Payment Request API is a cross-browser payment API under development by the W3C. You can use the Payment Request API to accept various payment methods in exchange for physical or digital goods on your website. *Payment methods* include payment solutions the platform provides, such as Apple Pay. For more information on the Payment Request API, see the [`W3C Payment Request API specification`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/).
 
 ## Topics
 

@@ -22,16 +22,16 @@ Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain key
 
 The API provides resources to automate these areas of App Store Connect:
 
--  Manage in-app purchases and auto-renewable subscriptions for your app.
--  Manage beta builds of your app, testers, and groups.
--  Read Xcode Cloud data, manage workflows, and start builds.
--  Send invitations for users to join your team. Adjust their level of access or remove users.
--  Manage bundle IDs, capabilities, signing certificates, devices, and provisioning profiles.
--  Create new versions, manage App Store information, and submit your app to the App Store.
--  Create an App Clip and manage App Clip experiences.
--  Download sales and financial reports.
--  Download aggregate metrics and diagnostics for App Store versions of your app.
--  Get the customer reviews for your app and manage your responses to the customer reviews.
+- **In-App Purchases and Subscriptions.** Manage in-app purchases and auto-renewable subscriptions for your app.
+- **TestFlight.** Manage beta builds of your app, testers, and groups.
+- **Xcode Cloud.** Read Xcode Cloud data, manage workflows, and start builds.
+- **Users and Access.** Send invitations for users to join your team. Adjust their level of access or remove users.
+- **Provisioning.** Manage bundle IDs, capabilities, signing certificates, devices, and provisioning profiles.
+- **App Metadata.** Create new versions, manage App Store information, and submit your app to the App Store.
+- **App Clip Experiences.** Create an App Clip and manage App Clip experiences.
+- **Reporting.** Download sales and financial reports.
+- **Power and Performance Metrics.** Download aggregate metrics and diagnostics for App Store versions of your app.
+- **Customer Reviews and Review Responses.** Get the customer reviews for your app and manage your responses to the customer reviews.
 
 The App Store Connect API returns responses from resources that are consistent JSON data and contain links to additional related resources. Use these relationships to navigate to the related resources—for example, to find beta testers within specific beta groups in TestFlight. Apply filtering to requests on specific resources to refine the response.
 

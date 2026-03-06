@@ -18,6 +18,12 @@ object AnalyticsReportInstancesResponse
 
 Use this object with [`Read a list of instances of a report`](get-v1-analyticsreports-_id_-instances.md).
 
+## Properties
+
+- `data` ([AnalyticsReportInstance]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

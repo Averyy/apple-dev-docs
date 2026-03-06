@@ -17,6 +17,10 @@ object BetaFeedbackCrashSubmission.Relationships.Tester
 ### Dictionaries
 - [object BetaFeedbackCrashSubmission.Relationships.Tester.Data](betafeedbackcrashsubmission/relationships-data.dictionary/tester-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaFeedbackCrashSubmission.Relationships.Tester.Data)
+
 
 ---
 

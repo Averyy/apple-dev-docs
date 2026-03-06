@@ -14,6 +14,14 @@ Registers a device to receive update notifications for an order.
 
 When the system modifies an order, use the [`PushToken`](pushtoken.md) to send a push notification to the device. In the notification, set the push topic as the order type identifier and leave the payload empty.
 
+## Endpoint
+
+`POST https://your-web-service.com/v1/devices/{deviceIdentifier}/registrations/{orderTypeIdentifier}/{orderIdentifier}`
+
+## Parameters
+
+- `Authorization` (string) *(required)*: The authentication for an order. The scheme is `AppleOrder` with the order’s value for the `authenticationToken` key as parameter. For example, `AppleOrder {authenticationToken}`.
+
 ## Request Body
 
 The push token APNS uses to send update notifications to the device.

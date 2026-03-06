@@ -20,6 +20,10 @@ object GameCenterMatchmakingQueue.Relationships.RuleSet
 - [object GameCenterMatchmakingQueue.Relationships.RuleSet.Data](gamecentermatchmakingqueue/relationships-data.dictionary/ruleset-data.dictionary/data-data.dictionary.md)
   The data structure for the rule set.
 
+## Properties
+
+- `data` (GameCenterMatchmakingQueue.Relationships.RuleSet.Data)
+
 ## See Also
 
 - [object GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet](gamecentermatchmakingqueue/relationships-data.dictionary/experimentruleset-data.dictionary.md)

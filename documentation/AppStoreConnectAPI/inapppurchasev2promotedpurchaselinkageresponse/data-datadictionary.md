@@ -12,6 +12,11 @@
 object InAppPurchaseV2PromotedPurchaseLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

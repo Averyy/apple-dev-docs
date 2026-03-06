@@ -20,6 +20,38 @@ Use this `statusID` to ask the server for a status update at a later time.
 
 ##### Example
 
+**Request**:
+
+```None
+https://classkit-catalog.apple.com/v1/status/KGW7S5VLDDOQSYSE7DKGYBGXUU 
+```
+
+**Response**:
+
+```json
+{
+  "statusId": "KGW7S5VLDDOQSYSE7DKGYBGXUU",
+  "teamId": "2X6UPAGN5A",
+  "state": "error",
+  "statusCode": "400",
+  "error": {
+    "id": "KGW7S5VLDDOQSYSE7DKGYBGXUU",
+    "code": "THUMBNAIL_NOT_REFERENCED",
+    "message": "The thumbnail with 'thumbnailId': unreferenced_image.png is not referenced by any context."
+  },
+  "location": "classkit-catalog.apple.com/v1/status/KGW7S5VLDDOQSYSE7DKGYBGXUU"
+}
+
+```
+
+## Endpoint
+
+`GET https://classkit-catalog.apple.com/v1/status/{statusId}`
+
+## Parameters
+
+- `statusId` (string) *(required)*: The identifier of the operation for which you want to retrieve the status.
+
 ## See Also
 
 - [object Status](status.md)

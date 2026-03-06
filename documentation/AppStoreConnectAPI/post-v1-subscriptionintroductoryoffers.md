@@ -12,6 +12,10 @@ Create an introductory offer for an auto-renewable subscription.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionIntroductoryOffers`
+
 ## See Also
 
 - [Modify an Introductory Offer](patch-v1-subscriptionintroductoryoffers-_id_.md)

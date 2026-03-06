@@ -8,6 +8,16 @@ Get a specific build beta details resource.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildBetaDetails/{id}`
+
+## Parameters
+
+- `fields[buildBetaDetails]` ([string]): Fields to return for included related types.
+- `fields[builds]` ([string]): Fields to return for included related types.
+- `include` ([string]): Relationship data to include in the response.
+
 ## See Also
 
 - [List Build Beta Details](get-v1-buildbetadetails.md)

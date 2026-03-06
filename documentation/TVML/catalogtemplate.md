@@ -39,6 +39,12 @@ The following listing shows the main elements of the `catalogTemplate` element i
 
 ###### Element Descriptions
 
+- **[`banner`](banner.md)**: Information describing what the catalog contains, such as movies.
+- **[`header`](header.md)**: Information describing what one section of the page contains.
+- **[`list`](list.md)**: Element containing all content in the template page, except banner information.
+- **[`listItemLockup`](listitemlockup.md)**: Element containing all information that relates to one list item on the left side of the page, including the item title and label, as well as related content.
+- **[`section`](section.md)**: An area of the page containing related elements that are grouped together as one element for layout purposes.
+
 ##### Example
 
 The following listing shows the TVML for a `catalogTemplate` example. The example displays a title along the top of the screen. Two items representing movie categories, All Movies and Comedies, are listed along the left side of the screen. Movie posters are presented on the right in a grid format according to which movie category the user selects.

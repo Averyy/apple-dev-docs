@@ -14,6 +14,10 @@ Attributes that describe a background asset version external beta release resour
 object BackgroundAssetVersionExternalBetaRelease.Attributes
 ```
 
+## Properties
+
+- `state` (BackgroundAssetVersionExternalBetaReleaseState)
+
 ## See Also
 
 - [object BackgroundAssetVersionExternalBetaRelease.Relationships](backgroundassetversionexternalbetarelease/relationships-data.dictionary.md)

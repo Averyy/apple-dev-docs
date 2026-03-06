@@ -20,6 +20,10 @@ object BuildUpdateRequest.Data.Relationships
 - [object BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration](buildupdaterequest/data-data.dictionary/relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appEncryptionDeclaration` (BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration)
+
 ## See Also
 
 - [object BuildUpdateRequest.Data.Attributes](buildupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

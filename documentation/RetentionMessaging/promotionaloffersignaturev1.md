@@ -22,6 +22,16 @@ To provide a promotional-offer retention message, you need to cryptographically 
 
 For instructions on generating the `encodedSignature` for the `promotionalOfferSignatureV1`, see [`Generating a signature for promotional offers`](https://developer.apple.com/documentation/StoreKit/generating-a-signature-for-promotional-offers).
 
+## Properties
+
+- `encodedSignature` (string): **(Required)** The Base64-encoded cryptographic signature you generate using the offer parameters.
+- `productId` (productId): **(Required)** The subscription’s product identifier.
+- `nonce` (uuid): **(Required)** A one-time-use UUID antireplay value you generate. Use lowercase.
+- `timestamp` (timestamp): **(Required)** The UNIX time, in milliseconds, when you generate the signature.
+- `keyId` (string): **(Required)** A string that identifies the private key you use to generate the signature. You can find this identifier in App Store Connect Users and Access > Keys in the Key ID column for the subscription key you generate.
+- `offerIdentifier` (string): **(Required)** The subscription offer identifier that you set up in App Store Connect.
+- `appAccountToken` (uuid): A UUID that you provide to associate with the transaction if the customer accepts the promotional offer. The string representation of the `appAccountToken` needs to be lowercase.
+
 
 ---
 

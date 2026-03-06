@@ -14,6 +14,12 @@ A suggested search term from a search suggestion response.
 object SearchSuggestionsResponse.Results.TermSuggestion
 ```
 
+## Properties
+
+- `displayTerm` (string) *(required)*: A potentially censored term to display to the user to select from. Use the `searchTerm` value for the actual search.
+- `kind` (string) *(required)*: The kind of suggestion.
+- `searchTerm` (string) *(required)*: The term to use as a search input when using this suggestion.
+
 ## See Also
 
 - [object SearchSuggestionsResponse.Results.TopResultSuggestion](searchsuggestionsresponse/results-data.dictionary/topresultsuggestion.md)

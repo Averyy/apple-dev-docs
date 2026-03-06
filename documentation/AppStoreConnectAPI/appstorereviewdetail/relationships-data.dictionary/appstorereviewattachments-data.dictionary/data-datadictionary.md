@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object AppStoreReviewDetail.Relationships.AppStoreReviewAttachments.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

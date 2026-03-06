@@ -14,6 +14,11 @@ An object that describes a location in terms of its longitude and latitude.
 object Location
 ```
 
+## Properties
+
+- `latitude` (double): A double value that describes the latitude of the coordinate.
+- `longitude` (double): A double value that describes the longitude of the coordinate.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

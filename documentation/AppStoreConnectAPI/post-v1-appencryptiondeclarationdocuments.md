@@ -8,6 +8,10 @@ Add an App Encryption Declaration Document to an existing App Encryption Declara
 **Availability**:
 - App Store Connect API 2.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarationDocuments`
+
 ## See Also
 
 - [Modify an App Encryption Declaration Document](patch-v1-appencryptiondeclarationdocuments-_id_.md)

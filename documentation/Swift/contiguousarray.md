@@ -45,7 +45,7 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [var span: Span<Element>](contiguousarray/span.md)
 ### Instance Methods
 - [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](contiguousarray/append(addingcapacity:initializingwith:).md)
-  Grows the array to have enough capacity for the specified number of elements, then calls the closure with an OutputSpan covering the array’s uninitialized memory.
+  Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
 - [func insert(Element, at: Int)](contiguousarray/insert(_:at:).md)
   Inserts a new element at the specified position.
 - [func remove(at: Int) -> Element](contiguousarray/remove(at:).md)

@@ -12,6 +12,12 @@
 object AppEventScreenshotResponse
 ```
 
+## Properties
+
+- `data` (AppEventScreenshot) *(required)*
+- `included` ([AppEventLocalization])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppEventScreenshot](appeventscreenshot.md)

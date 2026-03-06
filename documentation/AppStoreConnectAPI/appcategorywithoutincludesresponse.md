@@ -12,6 +12,11 @@
 object AppCategoryWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (AppCategory) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppCategoriesResponse](appcategoriesresponse.md)

@@ -33,6 +33,12 @@ The following listing shows the main elements of the `oneupTemplate` element in 
 
 ###### Element Descriptions
 
+- **[`img`](img.md)**: The image to be displayed on screen.
+- **[`lockup`](lockup.md)**: A single image and related text.
+- **[`row`](row.md)**: Subtitle information relating to the selected image.
+- **[`section`](section.md)**: Multiple `lockup` elements, each of which contains an item to be displayed.
+- **[`title`](title.md)**: The title to be displayed when a user selects an image.
+
 ##### Example
 
 The following listing shows the TVML for a `oneupTemplate` example. The example shows a full screen image, with information about the image displayed along the bottom of the screen when the user zooms into the image.

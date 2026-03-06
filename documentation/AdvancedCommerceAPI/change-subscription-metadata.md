@@ -20,6 +20,14 @@ Use this endpoint to update the display name and description of an auto-renewabl
 
 Don’t call this endpoint if a customer is changing subscriptions to receive a different service, such as upgrading, downgrading, or cross-grading. For such changes, use [`SubscriptionModifyInAppRequest`](subscriptionmodifyinapprequest.md).
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/advancedCommerce/v1/subscription/changeMetadata/{transactionId}`
+
+## Parameters
+
+- `transactionId` (string) *(required)*: The transaction identifier of the auto-renewable subscription to get changes to its metadata. Use the subscription’s original transaction ID or any subsequent transaction ID of a transaction related to the subscription.
+
 ## Request Body
 
 The request body that contains the metadata changes.

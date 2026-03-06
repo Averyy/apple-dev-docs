@@ -26,6 +26,13 @@ object AppStoreVersionLocalization.Relationships
 ### Dictionaries
 - [object AppStoreVersionLocalization.Relationships.SearchKeywords](appstoreversionlocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
 
+## Properties
+
+- `appPreviewSets` (AppStoreVersionLocalization.Relationships.AppPreviewSets)
+- `appScreenshotSets` (AppStoreVersionLocalization.Relationships.AppScreenshotSets)
+- `appStoreVersion` (AppStoreVersionLocalization.Relationships.AppStoreVersion)
+- `searchKeywords` (AppStoreVersionLocalization.Relationships.SearchKeywords)
+
 ## See Also
 
 - [object AppStoreVersionLocalization.Attributes](appstoreversionlocalization/attributes-data.dictionary.md)

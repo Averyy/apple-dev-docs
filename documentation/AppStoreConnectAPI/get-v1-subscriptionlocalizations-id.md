@@ -8,6 +8,15 @@ Get the specific localized metadata for an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionLocalizations/{id}`
+
+## Parameters
+
+- `fields[subscriptionLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)

@@ -26,6 +26,12 @@ object GameCenterAchievementVersionV2InlineCreate
 - [object GameCenterAchievementVersionV2InlineCreate.Relationships](gamecenterachievementversionv2inlinecreate/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `id` (string)
+- `relationships` (GameCenterAchievementVersionV2InlineCreate.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementVersionV2](gamecenterachievementversionv2.md)

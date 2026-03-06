@@ -14,6 +14,20 @@ The attributes you set that describe the accessibility declaration resource.
 object AccessibilityDeclaration.Attributes
 ```
 
+## Properties
+
+- `deviceFamily` (DeviceFamily)
+- `state` (string)
+- `supportsAudioDescriptions` (boolean)
+- `supportsCaptions` (boolean)
+- `supportsDarkInterface` (boolean)
+- `supportsDifferentiateWithoutColorAlone` (boolean)
+- `supportsLargerText` (boolean)
+- `supportsReducedMotion` (boolean)
+- `supportsSufficientContrast` (boolean)
+- `supportsVoiceControl` (boolean)
+- `supportsVoiceover` (boolean)
+
 
 ---
 

@@ -18,6 +18,12 @@ object AppEventScreenshotCreateRequest.Data
 - [object AppEventScreenshotCreateRequest.Data.Attributes](appeventscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object AppEventScreenshotCreateRequest.Data.Relationships](appeventscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventScreenshotCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppEventScreenshotCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

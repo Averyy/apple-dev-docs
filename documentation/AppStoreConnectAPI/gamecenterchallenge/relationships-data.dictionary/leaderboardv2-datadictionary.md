@@ -17,6 +17,11 @@ object GameCenterChallenge.Relationships.LeaderboardV2
 ### Dictionaries
 - [object GameCenterChallenge.Relationships.LeaderboardV2.Data](gamecenterchallenge/relationships-data.dictionary/leaderboardv2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallenge.Relationships.LeaderboardV2.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

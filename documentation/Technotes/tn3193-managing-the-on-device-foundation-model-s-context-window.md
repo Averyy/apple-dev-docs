@@ -125,7 +125,7 @@ For an example that includes instructions and tool calling, see [`Generate dynam
 
 #### Revision History
 
--  First published.
+- **2025-10-06** First published.
 
 ## See Also
 

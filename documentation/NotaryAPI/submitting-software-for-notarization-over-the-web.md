@@ -51,6 +51,10 @@ body = {
 
 The `body` consists of three keys, one of which is optional:
 
+- **`submissionName`**: Indicates the name of the file that you plan to submit. Use a unique file name for each submission to make it easier when reviewing log files and other status information about the submission. The example above does this by including a version string as part of the file name.
+- **`sha256`**: A hash that acts as a signature the service can use to match against the software that you upload later. Use the Secure Hashing Algorithm 2 (SHA-2) with a 256-bit digest. The above example uses the `hashlib` library to compute the hash.
+- **`notifications`**: An optional array that contains a dictionary with a `target` URL that the notary service accesses when it completes the notarization process. Use notifications to avoid polling the service to find out when notarization completes. If you ask for a notification, be sure to verify its cryptographic signature. For a description of the notification format, see [`NewSubmissionRequest.Notifications`](newsubmissionrequest/notifications-data.dictionary.md). Omit the `notifications` key and its associated array if you don’t need a callback.
+
 Use the `body`, plus the token described in the previous section, to call the endpoint and get a response. The following code continues from the previous Python example:
 
 ```python

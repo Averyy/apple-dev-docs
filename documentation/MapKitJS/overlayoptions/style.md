@@ -18,7 +18,7 @@ style?: Style;
 
 The following table lists the available style properties:
 
-|  |  |
+| **Property** | **Summary** |
 | --- | --- |
 | `strokeColor` | The stroke color of a line. This can be any valid CSS color value. The default value is `rgb(0, 122, 255)`. Set this to `null` to have no line stroke. |
 | `strokeOpacity` | The opacity to apply to strokes as a number between `0` and `1`. The default value is `1`. |

@@ -14,6 +14,11 @@ An error that indicates an invalid original transaction identifier.
 object InvalidOriginalTransactionIdError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

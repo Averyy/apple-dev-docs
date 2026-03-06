@@ -12,6 +12,10 @@
 object AppPricePointV3.Relationships.Equalizations
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

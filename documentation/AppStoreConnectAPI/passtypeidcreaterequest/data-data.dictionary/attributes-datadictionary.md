@@ -14,6 +14,11 @@ The data structure that represents a pass type id create request resource.
 object PassTypeIdCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `identifier` (string) *(required)*
+- `name` (string) *(required)*
+
 
 ---
 

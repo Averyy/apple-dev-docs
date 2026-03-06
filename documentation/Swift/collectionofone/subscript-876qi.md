@@ -22,7 +22,7 @@ subscript(position: Int) -> Element { get set }
 
 ## Parameters
 
-- `position`: The position of the element to access. The only   valid position in a   instance is  .
+- `position`: The position of the element to access. The only valid position in a `CollectionOfOne` instance is `0`.
 
 
 ---

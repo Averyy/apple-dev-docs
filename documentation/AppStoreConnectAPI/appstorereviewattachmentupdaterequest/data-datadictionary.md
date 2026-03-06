@@ -20,6 +20,12 @@ object AppStoreReviewAttachmentUpdateRequest.Data
 - [object AppStoreReviewAttachmentUpdateRequest.Data.Attributes](appstorereviewattachmentupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (AppStoreReviewAttachmentUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

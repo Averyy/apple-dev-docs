@@ -8,6 +8,10 @@ Provide localized metadata for an App Clip experience you make available to test
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaAppClipInvocationLocalizations`
+
 ## Request Body
 
 The request body you use to create a beta App Clip invocation localization.

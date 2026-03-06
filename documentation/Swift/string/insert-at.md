@@ -24,12 +24,12 @@ mutating func insert(_ newElement: Character, at i: String.Index)
 
 Calling this method invalidates any existing indices for use with this string.
 
-> **Note**: O(), where  is the length of the string.
+> **Note**: O(*n*), where *n* is the length of the string.
 
 ## Parameters
 
 - `newElement`: The new character to insert into the string.
-- `i`: A valid index of the string. If   is equal to the string’s end   index, this methods appends   to the string.
+- `i`: A valid index of the string. If `i` is equal to the string’s end index, this methods appends `newElement` to the string.
 
 ## See Also
 

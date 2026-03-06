@@ -23,7 +23,7 @@ init(cString nullTerminatedUTF8: UnsafePointer<CChar>)
 
 ## Parameters
 
-- `nullTerminatedUTF8`: A pointer to a sequence of contiguous,   UTF-8 encoded bytes ending just before the first zero byte.
+- `nullTerminatedUTF8`: A pointer to a sequence of contiguous, UTF-8 encoded bytes ending just before the first zero byte.
 
 
 ---

@@ -14,6 +14,13 @@ Domains you associated with your App Clip.
 object AppClipDomainStatus.Attributes.Domains
 ```
 
+## Properties
+
+- `domain` (string): A domain you associated with your app or App Clip.
+- `errorCode` (string): A string that describes an issue that occurred when App Store Connect tried to validate the status of an associated domain.
+- `isValid` (boolean): A Boolean value that indicates whether App Store Connect was able to verify the configuration of the associated domain.
+- `lastUpdatedDate` (date-time): The date when App Store Connect last verified the status of an associated domain.
+
 
 ---
 

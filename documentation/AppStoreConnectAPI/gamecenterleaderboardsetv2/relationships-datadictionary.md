@@ -33,6 +33,13 @@ object GameCenterLeaderboardSetV2.Relationships
 - [object GameCenterLeaderboardSetV2.Relationships.Versions](gamecenterleaderboardsetv2/relationships-data.dictionary/versions-data.dictionary.md)
   The data and links that describe the versions of the Game Center leaderboard set v2.
 
+## Properties
+
+- `gameCenterDetail` (GameCenterLeaderboardSetV2.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterLeaderboardSetV2.Relationships.GameCenterGroup)
+- `gameCenterLeaderboards` (GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards)
+- `versions` (GameCenterLeaderboardSetV2.Relationships.Versions)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2.Attributes](gamecenterleaderboardsetv2/attributes-data.dictionary.md)

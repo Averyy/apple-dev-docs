@@ -17,6 +17,8 @@ The 2D or 3D texture coordinates of the currently-processed data.
 
 #### Parameter Description
 
+- **`Index`**: The index of the texture coordinates to reference; the default is `0`.
+
 ## See Also
 
 - [Position](geometric/position.md)

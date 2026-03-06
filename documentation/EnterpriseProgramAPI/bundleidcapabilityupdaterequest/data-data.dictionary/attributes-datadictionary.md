@@ -11,6 +11,11 @@ Attributes whose values you’re changing as part of the update request.
 object BundleIdCapabilityUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `capabilityType` (CapabilityType)
+- `settings` ([CapabilitySetting])
+
 
 ---
 

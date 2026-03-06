@@ -20,6 +20,12 @@ object GameCenterMatchmakingTestPlayerPropertyInlineCreate
 - [object GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes](gamecentermatchmakingtestplayerpropertyinlinecreate/attributes-data.dictionary.md)
   The attributes for sample player properties.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes) *(required)*: The attributes of the resource object.
+- `id` (string): The identifier for the resource object.
+- `type` (string) *(required)*: The type of the resource object.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

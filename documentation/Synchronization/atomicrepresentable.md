@@ -81,7 +81,7 @@ extension GridPoint: AtomicRepresentable {
 }
 ```
 
-Here, we’re going to select `WordPair`’s atomic storage representation as our own. This is very important because we only get the atomic operations like `load` and `store` if our representation is one of the  storage representations. Luckily for us, `WordPair` does use one of these types as its storage type.
+Here, we’re going to select `WordPair`’s atomic storage representation as our own. This is very important because we only get the atomic operations like `load` and `store` if our representation is one of the *fundamental* storage representations. Luckily for us, `WordPair` does use one of these types as its storage type.
 
 In addition to selecting what storage representation our type will use, we define two static functions that go from both our custom type to its representation and the representation back to our own type. Because our representation is the same as `WordPair.AtomicRepresentation`, we will actually go through `WordPair`’s `AtomicRepresentable` conformance to help define our own.
 

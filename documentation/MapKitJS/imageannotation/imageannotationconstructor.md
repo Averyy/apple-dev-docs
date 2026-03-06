@@ -51,7 +51,7 @@ map.addAnnotation(pinAnnotation);
 ## Parameters
 
 - `location`: The coordinate where this annotation appears.
-- `options`: A hash of properties that initialize the annotation. The   hash needs to include  . MapKit JS displays an optional   and   in a callout if they’re present.
+- `options`: A hash of properties that initialize the annotation. The `options` hash needs to include [`url`](imageannotationconstructoroptions/url.md). MapKit JS displays an optional `title` and `subtitle` in a callout if they’re present.
 
 ## See Also
 

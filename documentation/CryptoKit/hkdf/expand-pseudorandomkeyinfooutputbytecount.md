@@ -30,7 +30,7 @@ Generate cryptographically strong key material to use with this function by call
 
 ## Parameters
 
-- `prk`: A pseudorandom, cryptographically strong key generated from the    function.
+- `prk`: A pseudorandom, cryptographically strong key generated from the [`extract(inputKeyMaterial:salt:)`](hkdf/extract(inputkeymaterial:salt:).md) function.
 - `info`: The shared information to use for key derivation.
 - `outputByteCount`: The length in bytes of the resulting symmetric key.
 

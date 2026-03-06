@@ -4,13 +4,20 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Server API 1.14+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object advancedCommerceRefund
 ```
+
+## Properties
+
+- `refundAmount` (advancedCommerceRefundAmount)
+- `refundDate` (advancedCommerceRefundDate)
+- `refundReason` (advancedCommerceRefundReason)
+- `refundType` (advancedCommerceRefundType)
 
 ## See Also
 

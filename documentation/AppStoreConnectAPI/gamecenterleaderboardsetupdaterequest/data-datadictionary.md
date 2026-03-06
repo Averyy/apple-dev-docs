@@ -17,6 +17,12 @@ object GameCenterLeaderboardSetUpdateRequest.Data
 ### Objects
 - [object GameCenterLeaderboardSetUpdateRequest.Data.Attributes](gamecenterleaderboardsetupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

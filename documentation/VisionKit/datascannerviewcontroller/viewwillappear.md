@@ -19,7 +19,7 @@ override dynamic func viewWillAppear(_ animated: Bool)
 
 ## Parameters
 
-- `animated`: A Boolean value that indicates whether the view will appear   using an animation.
+- `animated`: A Boolean value that indicates whether the view will appear using an animation.
 
 ## See Also
 

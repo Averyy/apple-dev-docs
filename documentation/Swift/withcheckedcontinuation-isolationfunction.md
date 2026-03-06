@@ -43,8 +43,8 @@ The checked continuation offers detection of misuse, and dropping the last refer
 
 ## Parameters
 
-- `function`: A string identifying the declaration that is the notional   source for the continuation, used to identify the continuation in   runtime diagnostics related to misuse of this continuation.
-- `body`: A closure that takes a   parameter.
+- `function`: A string identifying the declaration that is the notional source for the continuation, used to identify the continuation in runtime diagnostics related to misuse of this continuation.
+- `body`: A closure that takes a `CheckedContinuation` parameter.
 
 ## See Also
 

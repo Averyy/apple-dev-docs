@@ -14,6 +14,8 @@ Here’s an example that shows how to set the height of an image to 376 points.
 
 ##### Values for Height
 
+- **Integer**: The height of the element, in points. For example, `height="200"` sets the height of the element to 200 points.
+
 > **Note**: You must explicitly set this style for custom cell elements provided by your app binary.
 
 ##### Elements That Use Height

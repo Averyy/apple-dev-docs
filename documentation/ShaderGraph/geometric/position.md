@@ -17,6 +17,8 @@ The coordinates of the currently-processed data in a given coordinate space.
 
 #### Parameter Description
 
+- **`Space`**: The space in which the shader defines the position vector. The valid spaces for this input are `model`, `object`, `tangent`, and `world`. The default is `object`.
+
 ## See Also
 
 - [Normal](geometric/normal.md)

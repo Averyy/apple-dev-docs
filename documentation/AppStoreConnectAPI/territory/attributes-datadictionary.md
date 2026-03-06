@@ -14,6 +14,10 @@ Attributes that describe a Territories resource.
 object Territory.Attributes
 ```
 
+## Properties
+
+- `currency` (string)
+
 
 ---
 

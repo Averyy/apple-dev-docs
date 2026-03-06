@@ -29,8 +29,8 @@ To identify an item in the `removedItems` and `allItems` parameters, use the ite
 ## Parameters
 
 - `dataScanner`: The data scanner that recognizes the item.
-- `removedItems`: The items that the data scanner removes from the    property.
-- `allItems`: The current items that the data scanner tracks. Text items   appear in the reading order of the language and region.
+- `removedItems`: The items that the data scanner removes from the [`recognizedItems`](datascannerviewcontroller/recognizeditems.md) property.
+- `allItems`: The current items that the data scanner tracks. Text items appear in the reading order of the language and region.
 
 ## See Also
 

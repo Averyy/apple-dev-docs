@@ -12,6 +12,9 @@ An API key has two parts: a public portion that Apple keeps, and a private key t
 
 There are two types of API keys:
 
+- **Team**: Access to all apps, with varying levels of access based on selected roles.
+- **Individual**: Access and roles of the associated user. Individual keys aren’t able to use Provisioning endpoints, access [`Sales and Finance`](sales-and-finance.md), or `notaryTool`.
+
 > ❗ **Important**:  Secure your private keys as you do for other credentials, such as usernames and passwords. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](revoking-api-keys.md) for details.
 
 App Store Connect API keys are unique to the App Store Connect API and you can’t use them for other Apple services.

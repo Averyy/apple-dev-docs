@@ -12,6 +12,11 @@
 object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

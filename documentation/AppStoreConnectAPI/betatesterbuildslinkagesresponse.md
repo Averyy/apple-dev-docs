@@ -20,6 +20,12 @@ object BetaTesterBuildsLinkagesResponse
 - [object BetaTesterBuildsLinkagesResponse.Data](betatesterbuildslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([BetaTesterBuildsLinkagesResponse.Data]) *(required)*: The object types and IDs of the related resources.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links including the self-link and links to the related data.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [Get All IDs of Builds Individually Assigned to a Beta Tester](get-v1-betatesters-_id_-relationships-builds.md)

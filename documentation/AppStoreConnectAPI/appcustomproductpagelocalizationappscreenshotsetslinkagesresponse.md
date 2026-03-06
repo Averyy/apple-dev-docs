@@ -20,6 +20,12 @@ object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse
 - [object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse.Data](appcustomproductpagelocalizationappscreenshotsetslinkagesresponse/data-data.dictionary.md)
   The request body you use to update an app custom product page localization app screenshot sets linkages response.
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

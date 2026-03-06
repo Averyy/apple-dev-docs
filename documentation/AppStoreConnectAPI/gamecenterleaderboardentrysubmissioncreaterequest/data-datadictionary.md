@@ -20,6 +20,11 @@ object GameCenterLeaderboardEntrySubmissionCreateRequest.Data
 - [object GameCenterLeaderboardEntrySubmissionCreateRequest.Data.Attributes](gamecenterleaderboardentrysubmissioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new leaderboard entry.
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardEntrySubmissionCreateRequest.Data.Attributes) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

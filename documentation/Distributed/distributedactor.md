@@ -32,7 +32,7 @@ It is possible to require a type to conform to the [`DistributedActor`](distribu
 
 For every concrete distributed actor declaration, the compiler synthesizes two properties: `actorSystem` and `id`. They witness the [`actorSystem`](distributedactor/actorsystem-swift.property.md) and [`id`](distributedactor/id.md) protocol requirements of the [`DistributedActor`](distributedactor.md) protocol.
 
-It is not possible to implement these properties explicitly in user code. These properties are `nonisolated` and accessible even if the instance is , because  distributed actor references must store the actor system remote calls will be delivered through, as well as the id identifying the target of those calls.
+It is not possible to implement these properties explicitly in user code. These properties are `nonisolated` and accessible even if the instance is *remote*, because *all* distributed actor references must store the actor system remote calls will be delivered through, as well as the id identifying the target of those calls.
 
 #### The Actorsystem Associated Type
 
@@ -87,7 +87,7 @@ In general the `DefaultDistributedActorSystem` should not be declared public, as
 
 #### Default Initializer
 
-While classes and actors receive a synthesized  (`init()`), distributed actors synthesize a default initializer that accepts a distributed actor system the actor is part of: `init(actorSystem:)`.
+While classes and actors receive a synthesized *argument-free default initializer* (`init()`), distributed actors synthesize a default initializer that accepts a distributed actor system the actor is part of: `init(actorSystem:)`.
 
 The accepted actor system must be of the `Self.ActorSystem` type, which must conform to the [`DistributedActorSystem`](distributedactorsystem.md) protocol. This is required because distributed actors are always managed by a concrete distributed actor system and cannot exist on their own without one.
 

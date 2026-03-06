@@ -19,7 +19,7 @@ init(_ tokenString: String)
 
 ## Parameters
 
-- `tokenString`: The reader token that the merchant server   generated.
+- `tokenString`: The reader token that the merchant server generated.
 
 
 ---

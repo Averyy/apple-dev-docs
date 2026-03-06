@@ -22,7 +22,7 @@ static var exponentBitCount: Int { get }
 
 #### Discussion
 
-A binary floating-point type’s `exponentBitCount` imposes a limit on the range of the exponent for normal, finite values. The  of a type `F` can be calculated as the following, where `**` is exponentiation:
+A binary floating-point type’s `exponentBitCount` imposes a limit on the range of the exponent for normal, finite values. The *exponent bias* of a type `F` can be calculated as the following, where `**` is exponentiation:
 
 ```swift
 let bias = 2 ** (F.exponentBitCount - 1) - 1

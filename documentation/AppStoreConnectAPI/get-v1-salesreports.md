@@ -44,6 +44,19 @@ Each sales report type has specific valid values for `reportType`, `reportSubTyp
 | SUBSCRIPTION_OFFER_CODE_REDEMPTION | SUMMARY | DAILY | 1_0 |
 | WIN_BACK_ELIGIBILITY | SUMMARY | DAILY | 1_0 |
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/salesReports`
+
+## Parameters
+
+- `filter[frequency]` ([string]) *(required)*: Frequency of the report to download. For a list of values, see Allowed values based on sales report type table below.
+- `filter[reportDate]` ([string]): The report date to download. Specify the date in the `YYYY-MM-DD` format for all report frequencies except `DAILY`, which doesn’t require a date. For more information, see [`report availability and storage`](https://developer.apple.comhttps://help.apple.com/itc/appssalesandtrends/#/itc48f999955).
+- `filter[reportSubType]` ([string]) *(required)*: The report sub type to download. For a list of values, see Allowed values based on sales report type table below.
+- `filter[reportType]` ([string]) *(required)*: The report to download. For more details on each report type see [`Download and view reports`](https://developer.apple.comhttps://help.apple.com/itc/appssalesandtrends/#/itc37a18bcbf).
+- `filter[vendorNumber]` ([string]) *(required)*: You can find your vendor number in [`View payments and proceeds`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds).
+- `filter[version]` ([string]): The version of the report. For a list of values, see Allowed values based on sales report type table below.
+
 ## See Also
 
 - [Download Finance Reports](get-v1-financereports.md)

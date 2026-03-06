@@ -8,6 +8,14 @@ Remove a specific version release from a Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersionReleases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read activity version release information](get-v1-gamecenteractivityversionreleases-_id_.md)

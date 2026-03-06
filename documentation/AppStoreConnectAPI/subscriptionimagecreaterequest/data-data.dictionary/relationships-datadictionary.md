@@ -20,6 +20,10 @@ object SubscriptionImageCreateRequest.Data.Relationships
 - [object SubscriptionImageCreateRequest.Data.Relationships.Subscription](subscriptionimagecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `subscription` (SubscriptionImageCreateRequest.Data.Relationships.Subscription) *(required)*
+
 ## See Also
 
 - [object SubscriptionImageCreateRequest.Data.Attributes](subscriptionimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

@@ -8,6 +8,24 @@ List the app preview sets for a specific custom product page localization.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}/appPreviewSets`
+
+## Parameters
+
+- `fields[appPreviewSets]` ([string])
+- `fields[appPreviews]` ([string])
+- `filter[appStoreVersionExperimentTreatmentLocalization]` ([string])
+- `filter[appStoreVersionLocalization]` ([string])
+- `filter[previewType]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appPreviews]` (integer)
+- `fields[appCustomProductPageLocalizations]` ([string])
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
+
 ## See Also
 
 - [Create an App Preview Set](post-v1-apppreviewsets.md)

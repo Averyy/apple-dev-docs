@@ -14,6 +14,12 @@ Attributes that describe a build upload resource.
 object BuildUploadCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `cfBundleShortVersionString` (string) *(required)*
+- `cfBundleVersion` (string) *(required)*
+- `platform` (Platform) *(required)*
+
 
 ---
 

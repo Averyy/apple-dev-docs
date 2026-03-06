@@ -17,6 +17,11 @@ object GameCenterChallengeVersionDefaultImageLinkageResponse
 ### Dictionaries
 - [object GameCenterChallengeVersionDefaultImageLinkageResponse.Data](gamecenterchallengeversiondefaultimagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeVersionDefaultImageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengeImage](gamecenterchallengeimage.md)

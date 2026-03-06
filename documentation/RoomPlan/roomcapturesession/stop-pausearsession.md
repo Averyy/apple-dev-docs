@@ -23,7 +23,7 @@ func stop(pauseARSession: Bool = true)
 
 ## Parameters
 
-- `pauseARSession`: A Boolean value that indicates whether the framework automatically pauses the underlying AR session by calling  . The default value is  . If you pass  , the AR session continues to run.
+- `pauseARSession`: A Boolean value that indicates whether the framework automatically pauses the underlying AR session by calling [`pause()`](https://developer.apple.com/documentation/ARKit/ARSession/pause()). The default value is `true`. If you pass `false`, the AR session continues to run.
 
 ## See Also
 

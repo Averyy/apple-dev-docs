@@ -12,6 +12,10 @@
 object CiBuildAction.Relationships.Artifacts
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

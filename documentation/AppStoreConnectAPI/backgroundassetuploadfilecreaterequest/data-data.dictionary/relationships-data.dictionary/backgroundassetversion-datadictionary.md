@@ -20,6 +20,10 @@ object BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAsset
 - [object BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion.Data](backgroundassetuploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion.Data) *(required)*
+
 
 ---
 

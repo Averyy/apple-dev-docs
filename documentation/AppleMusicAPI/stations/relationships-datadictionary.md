@@ -20,6 +20,10 @@ object Stations.Relationships
 - [object Stations.Relationships.StationsRadioShowRelationship](stations/relationships-data.dictionary/stationsradioshowrelationship.md)
   For radio show episodes, this relationship is the Apple Curator that represents the radio show.
 
+## Properties
+
+- `radio-show` (Stations.Relationships.StationsRadioShowRelationship): The relationship to be added. The possible value is `radio-show`.
+
 ## See Also
 
 - [object Stations.Attributes](stations/attributes-data.dictionary.md)

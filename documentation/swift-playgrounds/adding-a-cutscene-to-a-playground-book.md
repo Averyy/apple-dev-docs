@@ -26,6 +26,9 @@ In Xcode, create a property list file called `Manifest.plist` in the cutscene su
 
 The cutscene manifest property list has two keys:
 
+- **`CutsceneReference`**: **Required.** The path to the HTML file that contains the cutscene. The path is relative to the cutscene’s PrivateResources folder.
+- **`Name`**: **Required.** The name of the cutscene. Choose a name that will make sense to learners reading it in Swift Playgrounds.
+
 ## See Also
 
 - [Adding a Chapter to a Playground Book](adding-a-chapter-to-a-playground-book.md)

@@ -14,6 +14,11 @@ The request body you use to update a background asset version external beta rele
 object BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

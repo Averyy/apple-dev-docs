@@ -22,6 +22,11 @@ object GameCenterEnabledVersion.Relationships
 - [object GameCenterEnabledVersion.Relationships.CompatibleVersions](gamecenterenabledversion/relationships-data.dictionary/compatibleversions-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (GameCenterEnabledVersion.Relationships.App)
+- `compatibleVersions` (GameCenterEnabledVersion.Relationships.CompatibleVersions)
+
 ## See Also
 
 - [object GameCenterEnabledVersion.Attributes](gamecenterenabledversion/attributes-data.dictionary.md)

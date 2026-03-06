@@ -32,13 +32,13 @@ func getBytes<R>(_ buffer: inout [UInt8], maxLength maxBufferCount: Int, usedLen
 
 ## Parameters
 
-- `buffer`: A buffer into which to store the bytes from   the receiver. The returned bytes are not NUL-terminated.
-- `maxBufferCount`: The maximum number of bytes to write   to buffer.
-- `usedBufferCount`: The number of bytes used from   buffer. Pass   if you do not need this value.
+- `buffer`: A buffer into which to store the bytes from the receiver. The returned bytes are not NUL-terminated.
+- `maxBufferCount`: The maximum number of bytes to write to buffer.
+- `usedBufferCount`: The number of bytes used from buffer. Pass `nil` if you do not need this value.
 - `encoding`: The encoding to use for the returned bytes.
-- `options`: A mask to specify options to use for   converting the receiver’s contents to   (if conversion   is necessary).
+- `options`: A mask to specify options to use for converting the receiver’s contents to `encoding` (if conversion is necessary).
 - `range`: The range of characters in the receiver to get.
-- `leftover`: The remaining range. Pass   If you do   not need this value.
+- `leftover`: The remaining range. Pass `nil` If you do not need this value.
 
 
 ---

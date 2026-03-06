@@ -24,6 +24,11 @@ object UpcomingPassInformationEntryType
 - [object UpcomingPassInformationEntryType.ImageURLEntry](upcomingpassinformationentrytype/imageurlentry-data.dictionary.md)
   An object that represents the image specifications for the upcoming pass information entry.
 
+## Properties
+
+- `image` (UpcomingPassInformationEntryType.Image): An object that represents the the image shown on the pass.
+- `imageURLEntry` (UpcomingPassInformationEntryType.ImageURLEntry): An object that represents the image speficiations for the pass.
+
 ## See Also
 
 - [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)

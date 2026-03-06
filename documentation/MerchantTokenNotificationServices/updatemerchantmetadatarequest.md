@@ -14,6 +14,11 @@ Update the merchant token’s notification metadata.
 object UpdateMerchantMetadataRequest
 ```
 
+## Properties
+
+- `merchantMetadata` (MerchantMetadata) *(required)*: The metadata of the merchant.
+- `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+
 
 ---
 

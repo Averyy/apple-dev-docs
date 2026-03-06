@@ -13,6 +13,10 @@ Add a new webhook configuration.
 - [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 - [Understanding webhook events](webhook-events.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/webhooks`
+
 ## See Also
 
 - [Read webhook information for an app](get-v1-apps-_id_-webhooks.md)

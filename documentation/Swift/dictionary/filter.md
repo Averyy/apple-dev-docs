@@ -27,7 +27,7 @@ A dictionary of the key-value pairs that `isIncluded` allows.
 
 ## Parameters
 
-- `isIncluded`: A closure that takes a key-value pair as its   argument and returns a Boolean value indicating whether the pair   should be included in the returned dictionary.
+- `isIncluded`: A closure that takes a key-value pair as its argument and returns a Boolean value indicating whether the pair should be included in the returned dictionary.
 
 ## See Also
 

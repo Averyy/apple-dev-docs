@@ -14,6 +14,11 @@ Attributes that describe a challenge resource.
 object GameCenterChallengeVersion.Attributes
 ```
 
+## Properties
+
+- `state` (GameCenterVersionState)
+- `version` (integer)
+
 
 ---
 

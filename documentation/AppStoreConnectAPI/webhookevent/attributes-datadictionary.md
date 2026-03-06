@@ -14,6 +14,13 @@ Attributes that describe a webhook event resource.
 object WebhookEvent.Attributes
 ```
 
+## Properties
+
+- `createdDate` (date-time)
+- `eventType` (WebhookEventType)
+- `payload` (string)
+- `ping` (boolean)
+
 
 ---
 

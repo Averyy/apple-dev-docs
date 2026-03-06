@@ -14,6 +14,10 @@ A result that requires the user to confirm the media item before you add it to t
 object AddMediaMediaItemResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `mediaItemToConfirm` (MediaItem) *(required)*: A media item for the user to confirm or reject.
+
 ## See Also
 
 - [object AddMediaMediaItemResolutionResult.Disambiguation](addmediamediaitemresolutionresult/disambiguation-data.dictionary.md)

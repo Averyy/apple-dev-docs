@@ -50,9 +50,9 @@ If you prefer to use an arbitrary localization key rather than the localized str
 
 - `keyAndValue`: A localization value instance that provides the localization key to look up. This parameter also serves as the default value if the system can’t find a localized string.
 - `options`: A localization options instance that specifies localization options to apply, such as replacement values for formatted strings.
-- `table`: The bundle’s string table to search. If   is   or is an empty string, the method attempts to use the table named  . The default is  .
-- `bundle`: The bundle to use for looking up strings. If  , an app searches its main bundle. The default is  .
-- `locale`: The locale to use when localizing interpolated values, such as numbers. This doesn’t change which locale the system uses to look up the localized string. If  , this initializer uses the current locale. The default is  .
+- `table`: The bundle’s string table to search. If `table` is `nil` or is an empty string, the method attempts to use the table named `Localizable`. The default is `nil`.
+- `bundle`: The bundle to use for looking up strings. If `nil`, an app searches its main bundle. The default is `nil`.
+- `locale`: The locale to use when localizing interpolated values, such as numbers. This doesn’t change which locale the system uses to look up the localized string. If `nil`, this initializer uses the current locale. The default is `nil`.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
 
 ## See Also

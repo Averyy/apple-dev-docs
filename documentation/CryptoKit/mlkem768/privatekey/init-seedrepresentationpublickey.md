@@ -22,7 +22,7 @@ init<D>(seedRepresentation: D, publicKey: MLKEM768.PublicKey?) throws where D : 
 
 ## Parameters
 
-- `seedRepresentation`: The seed representation  , as specified in the   algorithm (Algorithm 16) of FIPS 203.
+- `seedRepresentation`: The seed representation `d||z`, as specified in the `ML-KEM.KeyGen_internal(d,z)` algorithm (Algorithm 16) of FIPS 203.
 - `publicKey`: An optional public key. Pass this to check that the initialized private key is consistent with the public key. The initializer throws if the public key doesn’t match the expected value.
 
 ## See Also

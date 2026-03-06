@@ -17,6 +17,10 @@ object DeviceCreateRequest
 - [object DeviceCreateRequest.Data](devicecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (DeviceCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object Device](device.md)

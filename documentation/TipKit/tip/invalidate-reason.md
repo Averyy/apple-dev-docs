@@ -22,7 +22,7 @@ func invalidate(reason: Self.InvalidationReason)
 
 ## Parameters
 
-- `reason`: The reason for the tip’s invalidation. The tip’s   returns this value after invalidation.
+- `reason`: The reason for the tip’s invalidation. The tip’s `invalidationReason` returns this value after invalidation.
 
 ## See Also
 

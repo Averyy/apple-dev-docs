@@ -12,6 +12,12 @@
 object SubscriptionAppStoreReviewScreenshotResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionAppStoreReviewScreenshot) *(required)*
+- `included` ([Subscription])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshot](subscriptionappstorereviewscreenshot.md)

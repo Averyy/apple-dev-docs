@@ -14,6 +14,12 @@ A response that contains a single win-back offer resource.
 object WinBackOfferResponse
 ```
 
+## Properties
+
+- `data` (WinBackOffer) *(required)*
+- `included` ([WinBackOfferPrice])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

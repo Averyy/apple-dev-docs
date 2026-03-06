@@ -39,8 +39,8 @@ p.initializeMemory(as: T.self, repeating: newValue, count: 1)
 ## Parameters
 
 - `value`: The value to store as raw bytes.
-- `offset`: The offset from this pointer, in bytes.   must be   nonnegative. The default is zero.
-- `type`: The type of  .
+- `offset`: The offset from this pointer, in bytes. `offset` must be nonnegative. The default is zero.
+- `type`: The type of `value`.
 
 
 ---

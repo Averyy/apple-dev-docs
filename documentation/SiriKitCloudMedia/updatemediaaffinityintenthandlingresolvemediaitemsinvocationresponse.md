@@ -20,6 +20,11 @@ object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse
 - [object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse.Result](updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
   The results of resolving the media items in an intent to update media affinity.
 
+## Properties
+
+- `method` (string) *(required)*: The results of processing the intent.
+- `result` (UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse.Result) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

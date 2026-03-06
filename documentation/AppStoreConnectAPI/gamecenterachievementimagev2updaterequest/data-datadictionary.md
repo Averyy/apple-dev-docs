@@ -25,6 +25,12 @@ object GameCenterAchievementImageV2UpdateRequest.Data
 ### Dictionaries - generated
 - [object GameCenterAchievementImageV2UpdateRequest.Data.Attributes](gamecenterachievementimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementImageV2UpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -17,6 +17,12 @@ object SubscriptionPricePointsLinkagesResponse
 ### Dictionaries
 - [object SubscriptionPricePointsLinkagesResponse.Data](subscriptionpricepointslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionPricePointsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

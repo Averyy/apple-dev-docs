@@ -20,6 +20,11 @@ object BetaGroup.Relationships.App
 - [object BetaGroup.Relationships.App.Data](betagroup/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BetaGroup.Relationships.App.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object BetaGroup.Relationships.BetaTesters](betagroup/relationships-data.dictionary/betatesters-data.dictionary.md)

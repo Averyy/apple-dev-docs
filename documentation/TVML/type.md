@@ -10,6 +10,9 @@ Use the `type` attribute to specify whether a badge is filled or an outline.
 
 ##### Values for Type
 
+- **`fill`**: Completely fills the badge icon.
+- **`stroke`**: Draws the badge icon as an outline. This is the default value.
+
 ##### Elements That Use Type
 
 - [`textBadge`](textbadge.md)

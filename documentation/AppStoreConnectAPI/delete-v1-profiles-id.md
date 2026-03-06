@@ -12,6 +12,14 @@ Delete a provisioning profile that is used for app development or distribution.
 
 You can delete provisioning profiles, and may wish to do so if they are expiring or obsolete.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/profiles/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Profile](post-v1-profiles.md)

@@ -131,8 +131,8 @@ When you decide to stop recording, call [`finishWriting(completionHandler:)`](ht
 
 #### Revision History
 
--  Made minor editorial changes.
--  First published.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-08** First published.
 
 ## See Also
 

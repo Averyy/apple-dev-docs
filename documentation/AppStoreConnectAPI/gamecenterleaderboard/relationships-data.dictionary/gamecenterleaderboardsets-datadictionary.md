@@ -17,6 +17,11 @@ object GameCenterLeaderboard.Relationships.GameCenterLeaderboardSets
 ### Objects
 - [object GameCenterLeaderboard.Relationships.GameCenterLeaderboardSets.Data](gamecenterleaderboard/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterLeaderboard.Relationships.GameCenterLeaderboardSets.Data])
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboard.Relationships.GameCenterDetail](gamecenterleaderboard/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

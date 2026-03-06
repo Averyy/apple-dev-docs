@@ -12,6 +12,56 @@ Get the beta app review details for a specific app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/6446998023/betaAppReviewDetail
+```
+
+**Response**:
+
+```json
+{
+    "data": {
+        "type": "betaAppReviewDetails",
+        "id": "6446998023",
+        "attributes": {
+            "contactFirstName": "Johnny",
+            "contactLastName": "Appleseed",
+            "contactPhone": "8001234567",
+            "contactEmail": "example@apple.com",
+            "demoAccountName": null,
+            "demoAccountPassword": null,
+            "demoAccountRequired": false,
+            "notes": null
+        },
+        "relationships": {
+            "app": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/betaAppReviewDetails/6446998023/relationships/app",
+                    "related": "https://api.appstoreconnect.apple.com/v1/betaAppReviewDetails/6446998023/app"
+                }
+            }
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/betaAppReviewDetails/6446998023"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/apps/6446998023/betaAppReviewDetail"
+    }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/betaAppReviewDetail`
+
+## Parameters
+
+- `fields[betaAppReviewDetails]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [GET /v1/apps/{id}/relationships/betaAppReviewDetail](get-v1-apps-_id_-relationships-betaappreviewdetail.md)

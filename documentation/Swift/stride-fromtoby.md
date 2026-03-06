@@ -61,9 +61,9 @@ for x in stride(from: 0, to: 10, by: -1) {
 
 ## Parameters
 
-- `start`: The starting value to use for the sequence. If the sequence   contains any values, the first one is  .
-- `end`: An end value to limit the sequence.   is never an element of   the resulting sequence.
-- `stride`: The amount to step by with each iteration. A positive    iterates upward; a negative   iterates downward.
+- `start`: The starting value to use for the sequence. If the sequence contains any values, the first one is `start`.
+- `end`: An end value to limit the sequence. `end` is never an element of the resulting sequence.
+- `stride`: The amount to step by with each iteration. A positive `stride` iterates upward; a negative `stride` iterates downward.
 
 ## See Also
 

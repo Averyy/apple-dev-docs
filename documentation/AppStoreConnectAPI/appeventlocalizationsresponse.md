@@ -12,6 +12,13 @@
 object AppEventLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([AppEventLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppEventLocalization](appeventlocalization.md)

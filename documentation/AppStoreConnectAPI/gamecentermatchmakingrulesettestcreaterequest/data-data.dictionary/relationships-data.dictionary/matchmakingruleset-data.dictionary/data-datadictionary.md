@@ -14,6 +14,11 @@ A resource object for a rule set.
 object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRuleSet.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the rule set that appears in the response when you create it.
+- `type` (string) *(required)*: The type of resource object.
+
 
 ---
 

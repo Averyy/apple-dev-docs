@@ -1,43 +1,31 @@
-# ..<(_:_:)
+# /=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a half-open range that contains its lower bound but not its upper bound.
+Divides the first value by the second and stores the quotient in the left-hand-side variable, rounding to a representable value.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.0+
-- macOS 10.10+
-- tvOS 9.0+
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 11.0+
+- tvOS 14.0+
 - visionOS 1.0+
-- watchOS 2.0+
+- watchOS 7.0+
 
 ## Declaration
 
 ```swift
-static func ..< (minimum: Self, maximum: Self) -> Range<Self>
+static func /= (lhs: inout Float16, rhs: Float16)
 ```
-
-#### Discussion
-
-Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
-
-```swift
-let lessThanFive = 0.0..<5.0
-print(lessThanFive.contains(3.14))  // Prints "true"
-print(lessThanFive.contains(5.0))   // Prints "false"
-```
-
-> **Note**: `minimum <= maximum`.
 
 ## Parameters
 
-- `minimum`: The lower bound for the range.
-- `maximum`: The upper bound for the range.
+- `lhs`: The value to divide.
+- `rhs`: The value to divide `lhs` by.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/float16/'.._(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/float16/_=(_:_:))*

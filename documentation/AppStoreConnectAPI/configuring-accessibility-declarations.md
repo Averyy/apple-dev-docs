@@ -14,6 +14,16 @@ Use this term list and table to understand what details to include in your appâ€
 
 Hereâ€™s what each accessibility feature provides:
 
+- **`supportsVoiceover`**: Navigate and explore the app using gestures, braille, and speech output.
+- **`supportsVoiceControl`**: Navigate and interact with the app using your voice to tap, swipe, type, and more.
+- **`supportsLargerText`**: Increase the text size in the app to 200 percent or more.
+- **`supportsSufficientContrast`**: Increase or adjust the contrast between text or iconography and background.
+- **`supportsDarkInterface`**: Apply a dark color scheme to the screens, menus, and controls to reduce eye strain.
+- **`supportsDifferentiateWithoutColorAlone`**: Use shapes or text, in addition to or instead of color, to distinguish key information.
+- **`supportsReducedMotion`**: Modify or reduce certain types of animation that may cause motion sickness or discomfort.
+- **`supportsCaptions`**: Display the dialog and relevant sounds of video or audio-only content with time-synchronized text.
+- **`supportsAudioDescriptions`**: Hear audio descriptions of video content in a clip, show, or movie with time-synchronized narration.
+
 ##### Read Accessibility Feature Device Family Compatibility
 
 This table shows the compatibility for each accessibility feature and platform:

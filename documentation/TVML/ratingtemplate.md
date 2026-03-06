@@ -25,6 +25,9 @@ The following listing shows the main elements of the `ratingTemplate` element in
 
 ###### Element Descriptions
 
+- **[`ratingBadge`](ratingbadge.md)**: The rating for the item.
+- **[`title`](title.md)**: The title for the rated item.
+
 ##### Example
 
 The following listing shows the TVML for a `ratingTemplate` example. The example displays a title and a set of rating badge images, such as stars. The filled rating badge images indicate the current rating for that title. The value attribute indicates that the example title has an 80 percent favorable rating, or 4 of 5 stars.

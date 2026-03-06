@@ -14,6 +14,12 @@ A response that contains a single Apps resource.
 object AppResponse
 ```
 
+## Properties
+
+- `data` (App) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Read the App Information of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-app.md)

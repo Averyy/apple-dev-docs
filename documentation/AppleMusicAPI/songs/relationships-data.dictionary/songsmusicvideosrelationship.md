@@ -14,6 +14,12 @@ A relationship from the song to its music videos.
 object Songs.Relationships.SongsMusicVideosRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([MusicVideos]) *(required)*: The music videos associated with the song.
+
 ## See Also
 
 - [object Songs.Relationships.SongsAlbumsRelationship](songs/relationships-data.dictionary/songsalbumsrelationship.md)

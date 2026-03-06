@@ -11,6 +11,12 @@ A response that contains a single certificate resource without includes.
 object CertificatesWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([Certificate]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Certificate](certificate.md)

@@ -14,6 +14,13 @@ A response that contains a list of App Category resources.
 object AppCategoriesResponse
 ```
 
+## Properties
+
+- `data` ([AppCategory]) *(required)*
+- `included` ([AppCategory])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCategory](appcategory.md)

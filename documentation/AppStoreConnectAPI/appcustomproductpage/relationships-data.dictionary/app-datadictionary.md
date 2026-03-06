@@ -17,6 +17,10 @@ object AppCustomProductPage.Relationships.App
 ### Objects
 - [object AppCustomProductPage.Relationships.App.Data](appcustomproductpage/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppCustomProductPage.Relationships.App.Data)
+
 ## See Also
 
 - [object AppCustomProductPage.Relationships.AppCustomProductPageVersions](appcustomproductpage/relationships-data.dictionary/appcustomproductpageversions-data.dictionary.md)

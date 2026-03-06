@@ -14,6 +14,12 @@ An image asset, including its height, width, and template URL.
 object ImageAsset
 ```
 
+## Properties
+
+- `templateUrl` (string)
+- `height` (integer)
+- `width` (integer)
+
 ## See Also
 
 - [object BuildIcon](buildicon.md)

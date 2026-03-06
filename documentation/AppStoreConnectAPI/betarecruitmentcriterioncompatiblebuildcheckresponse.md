@@ -14,6 +14,11 @@ A response that contains a single beta recruitment criteria-compatible, build-ch
 object BetaRecruitmentCriterionCompatibleBuildCheckResponse
 ```
 
+## Properties
+
+- `data` (BetaRecruitmentCriterionCompatibleBuildCheck) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)

@@ -19,6 +19,10 @@ object GameCenterAchievementUpdateRequest
 ### Objects
 - [object GameCenterAchievementUpdateRequest.Data](gamecenterachievementupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

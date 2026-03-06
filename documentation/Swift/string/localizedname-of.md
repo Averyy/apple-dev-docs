@@ -26,7 +26,7 @@ A human-readable string giving the name of `encoding` in the current locale.
 
 ## Parameters
 
-- `encoding`: A string encoding. For possible values, see   .
+- `encoding`: A string encoding. For possible values, see `String.Encoding`.
 
 ## See Also
 

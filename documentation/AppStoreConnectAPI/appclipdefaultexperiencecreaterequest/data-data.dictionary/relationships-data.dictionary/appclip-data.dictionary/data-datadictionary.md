@@ -14,6 +14,11 @@ The type and ID of the App Clips resource that you’re relating with the Defaul
 object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClip.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an App Clips resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

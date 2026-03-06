@@ -8,6 +8,10 @@ Add a new leaderboard set to your app.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSets`
+
 ## See Also
 
 - [Create a Game Center leaderboard set](post-v2-gamecenterleaderboardsets.md)

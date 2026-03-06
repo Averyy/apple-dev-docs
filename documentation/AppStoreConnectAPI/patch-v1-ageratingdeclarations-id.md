@@ -29,7 +29,132 @@ For example, in an app that has a `FREQUENT` declaration for contests, the age r
 
 ##### Modify an Age Rating Declaration
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-1814-4b7a-8ec9-5411ecf36305
+
+{
+  "data": {
+    "type": "ageRatingDeclarations",
+    "id": "string",
+    "attributes": {
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gambling": true,
+      "gamblingSimulated": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "unrestrictedWebAccess": true,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "violenceRealistic": "NONE",
+      "kidsAgeBand": null
+    }
+  }
+}
+
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "ageRatingDeclarations",
+    "id": "26b5c300-1814-4b7a-8ec9-5411ecf36305",
+    "attributes": {
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gambling": true,
+      "gamblingSimulated": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "unrestrictedWebAccess": true,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "violenceRealistic": "NONE",
+      "kidsAgeBand": null
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-1814-4b7a-8ec9-5411ecf36305"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-1814-4b7a-8ec9-5411ecf36305"
+  }
+}
+
+```
+
 ##### Mark an App As Made for Kids
+
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-1814-4b7a-8ec9-5411ecf36305
+
+{
+  "data": {
+    "type": "ageRatingDeclarations",
+    "id": "string",
+    "attributes": {
+      "kidsAgeBand": "FIVE_AND_UNDER"
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "ageRatingDeclarations",
+    "id": "26b5c300-1814-4b7a-8ec9-5411ecf36305",
+    "attributes": {
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": “NONE”,
+      “gamblingAndContests”: false,
+      "gambling": false,
+      "gamblingSimulated": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "unrestrictedWebAccess": true,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "violenceRealistic": "NONE",
+      "kidsAgeBand": "FIVE_AND_UNDER"
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-1814-4b7a-8ec9-5411ecf36305"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-1814-4b7a-8ec9-5411ecf36305"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
 
 ## Request Body
 

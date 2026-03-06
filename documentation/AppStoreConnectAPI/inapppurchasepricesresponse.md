@@ -12,6 +12,13 @@
 object InAppPurchasePricesResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchasePrice]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)

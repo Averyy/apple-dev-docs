@@ -14,6 +14,10 @@ The result of handling an intent to play a media item.
 object PlayMediaIntentHandlingHandleInvocationResponse.Result
 ```
 
+## Properties
+
+- `response` (PlayMediaIntentResponse) *(required)*: Your service’s ability to handle the intent.
+
 
 ---
 

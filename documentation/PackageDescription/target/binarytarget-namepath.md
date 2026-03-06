@@ -21,7 +21,7 @@ Binary targets are only available on Apple platforms.
 ## Parameters
 
 - `name`: The name of the target.
-- `path`: The path to the binary artifact. This path can point directly to   a binary artifact or to an archive file that contains the binary   artifact at its root.
+- `path`: The path to the binary artifact. This path can point directly to a binary artifact or to an archive file that contains the binary artifact at its root.
 
 ## See Also
 

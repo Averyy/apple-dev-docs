@@ -20,6 +20,13 @@ object AgeRatingDeclaration
 - [object AgeRatingDeclaration.Attributes](ageratingdeclaration/attributes-data.dictionary.md)
   Attributes that describe an Age Rating Declarations resource.
 
+## Properties
+
+- `attributes` (AgeRatingDeclaration.Attributes): Attributes that describe this Age Rating Declarations resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AgeRatingDeclarationResponse](ageratingdeclarationresponse.md)

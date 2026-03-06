@@ -14,6 +14,12 @@ Data for displaying art to represent a card.
 object CardArt
 ```
 
+## Properties
+
+- `name` (string) *(required)*: A name representing the bank and the card used for the transaction.
+- `type` (string) *(required)*: The card type.
+- `url` (string) *(required)*: The URL for downloading the card art, as provided by the issuing bank.
+
 ## See Also
 
 - [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)

@@ -20,6 +20,10 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations.Data](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
   The type and ID of the Advanced App Clip Experience Localizations resource that you’re relating with the Advanced App Clip Experiences resource you’re updating.
 
+## Properties
+
+- `data` ([AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations.Data]): The ID and type of the related Advanced App Clip Experience Localizations resource.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.AppClip](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/appclip-data.dictionary.md)

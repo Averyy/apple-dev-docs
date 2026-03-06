@@ -18,6 +18,10 @@ object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncry
 - [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration.Data](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/relationships-data.dictionary/appencryptiondeclaration-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app encryption declaration document create request.
 
+## Properties
+
+- `data` (AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration.Data) *(required)*
+
 
 ---
 

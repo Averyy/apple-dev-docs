@@ -6,7 +6,7 @@
 A response that indicates whether an individual renewal-date extension succeeded, and related details.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -33,6 +33,13 @@ This object is the response data for the [`Extend a Subscription Renewal Date`](
   A Boolean value that indicates whether the subscription-renewal-date extension succeeded.
 - [type webOrderLineItemId](weborderlineitemid.md)
   The unique identifier of subscription-purchase events across devices, including renewals.
+
+## Properties
+
+- `effectiveDate` (effectiveDate): The new subscription expiration date of a successful subscription-renewal-date extension.
+- `originalTransactionId` (originalTransactionId): The original transaction identifier of the subscription that experienced a service interruption.
+- `success` (success): A Boolean value that indicates whether the subscription-renewal-date extension succeeded.
+- `webOrderLineItemId` (webOrderLineItemId): A unique ID that identifies subscription-purchase events, including subscription renewals, across devices.
 
 ## See Also
 

@@ -14,6 +14,11 @@ A response that contains a single background asset upload file resource.
 object BackgroundAssetUploadFileResponse
 ```
 
+## Properties
+
+- `data` (BackgroundAssetUploadFile) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

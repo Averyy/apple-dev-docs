@@ -8,6 +8,14 @@ Get the app ID for a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/app`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [List Builds](get-v1-builds.md)

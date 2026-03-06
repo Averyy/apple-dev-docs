@@ -17,6 +17,12 @@ object AppEventLocalization.Relationships.AppEventScreenshots
 ### Objects
 - [object AppEventLocalization.Relationships.AppEventScreenshots.Data](appeventlocalization/relationships-data.dictionary/appeventscreenshots-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppEventLocalization.Relationships.AppEventScreenshots.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppEventLocalization.Relationships.AppEvent](appeventlocalization/relationships-data.dictionary/appevent-data.dictionary.md)

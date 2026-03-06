@@ -8,6 +8,14 @@ Change the image that appears on the App Clip card of a default App Clip experie
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appClipHeaderImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the App Clip Header Images resource.
+
 ## Request Body
 
 The request body you use to update the image asset of an App Clip experience.

@@ -16,6 +16,39 @@ string AppClipAdvancedExperienceLanguage
 
 #### Possible Values
 
+- **AR**: Arabic
+- **CA**: Catalan
+- **CS**: Czech
+- **DA**: Danish
+- **DE**: German
+- **EL**: Greek
+- **EN**: English
+- **ES**: Spanish
+- **FI**: Finnish
+- **FR**: French
+- **HE**: Hebrew
+- **HI**: Hindi
+- **HR**: Croatian
+- **HU**: Hungarian
+- **ID**: Indonesian
+- **IT**: Italian
+- **JA**: Japanese
+- **termKO**: Korean
+- **MS**: Malay
+- **NL**: Dutch
+- **NO**: Norweigan
+- **PL**: Polish
+- **PT**: Portugese
+- **RO**: Romanian
+- **RU**: Russian
+- **SK**: Slovakian
+- **SV**: Swedish
+- **TH**: Thai
+- **TR**: Turkish
+- **UK**: Ukrainian
+- **VI**: Vietnamese
+- **ZH**: Chinese
+
 ## See Also
 
 - [object AppClipAdvancedExperience](appclipadvancedexperience.md)

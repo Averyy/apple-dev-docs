@@ -22,7 +22,7 @@ init(platformString: UnsafePointer<CInterop.PlatformChar>)
 
 ## Parameters
 
-- `platformString`: A pointer to a null-terminated platform   string.
+- `platformString`: A pointer to a null-terminated platform string.
 
 
 ---

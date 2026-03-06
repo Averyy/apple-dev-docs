@@ -19,6 +19,13 @@ object GameCenterActivityVersionRelease
 ### Dictionaries
 - [object GameCenterActivityVersionRelease.Relationships](gamecenteractivityversionrelease/relationships-data.dictionary.md)
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterActivityVersionRelease.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityVersionReleaseCreateRequest](gamecenteractivityversionreleasecreaterequest.md)

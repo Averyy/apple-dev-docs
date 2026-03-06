@@ -28,7 +28,7 @@ The concurrency runtime is free to interpret and handle escalation depending on 
 
 Priority escalation is propagated to child tasks of the waited-on task, and will trigger any priority escalation handlers, if any were registered.
 
-Escalation can only  the priority of a task, and de-escalating priority is not supported.
+Escalation can only *increase* the priority of a task, and de-escalating priority is not supported.
 
 This method can be called from any task or thread.
 

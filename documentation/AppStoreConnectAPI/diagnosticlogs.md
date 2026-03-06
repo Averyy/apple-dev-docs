@@ -20,6 +20,11 @@ object diagnosticLogs
 - [object diagnosticLogs.ProductData](diagnosticlogs/productdata-data.dictionary.md)
   The logs and insights for a diagnostic signature.
 
+## Properties
+
+- `productData` ([diagnosticLogs.ProductData]): An array of log data for a specific diagnostic signature.
+- `version` (string): The version of the App Store Connect API.
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

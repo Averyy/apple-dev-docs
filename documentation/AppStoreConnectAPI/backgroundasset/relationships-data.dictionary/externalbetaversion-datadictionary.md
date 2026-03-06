@@ -17,6 +17,10 @@ object BackgroundAsset.Relationships.ExternalBetaVersion
 ### Dictionaries
 - [object BackgroundAsset.Relationships.ExternalBetaVersion.Data](backgroundasset/relationships-data.dictionary/externalbetaversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BackgroundAsset.Relationships.ExternalBetaVersion.Data)
+
 
 ---
 

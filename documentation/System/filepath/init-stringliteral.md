@@ -22,7 +22,7 @@ init(stringLiteral: String)
 
 ## Parameters
 
-- `stringLiteral`: A string literal   whose Unicode encoded contents to use as the contents of the path.
+- `stringLiteral`: A string literal whose Unicode encoded contents to use as the contents of the path.
 
 ## See Also
 

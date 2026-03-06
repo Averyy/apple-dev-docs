@@ -36,7 +36,7 @@ let z = Int8(x * 10)
 
 ## Parameters
 
-- `source`: A value to convert to this type of integer. The value   passed as   must be representable in this type.
+- `source`: A value to convert to this type of integer. The value passed as `source` must be representable in this type.
 
 ## See Also
 

@@ -8,6 +8,10 @@ Add a new app preview to a preview set.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appPreviews`
+
 ## See Also
 
 - [Modify an App Preview](patch-v1-apppreviews-_id_.md)

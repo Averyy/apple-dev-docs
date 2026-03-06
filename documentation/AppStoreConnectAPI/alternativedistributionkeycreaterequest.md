@@ -23,6 +23,10 @@ Use this object to create a new alternative distribution key association in App 
 ### Objects
 - [object AlternativeDistributionKeyCreateRequest.Data](alternativedistributionkeycreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AlternativeDistributionKeyCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionKey](alternativedistributionkey.md)

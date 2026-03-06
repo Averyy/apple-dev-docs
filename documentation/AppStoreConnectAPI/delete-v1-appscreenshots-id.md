@@ -8,6 +8,14 @@ Delete an app screenshot that is associated with a screenshot set.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Screenshot](post-v1-appscreenshots.md)

@@ -28,7 +28,7 @@ A data frame slice that contains the rows that satisfy the predicate.
 
 - `columnName`: The name of a column.
 - `type`: The type of the column.
-- `isIncluded`: A predicate closure that receives an element of the column as its argument,   and returns a Boolean that indicates whether the slice includes the element’s row.
+- `isIncluded`: A predicate closure that receives an element of the column as its argument, and returns a Boolean that indicates whether the slice includes the element’s row.
 
 ## See Also
 

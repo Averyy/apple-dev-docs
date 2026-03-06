@@ -20,6 +20,10 @@ object GameCenterDetailGameCenterLeaderboardsLinkagesRequest
 - [object GameCenterDetailGameCenterLeaderboardsLinkagesRequest.Data](gamecenterdetailgamecenterleaderboardslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a detail resource.
 
+## Properties
+
+- `data` ([GameCenterDetailGameCenterLeaderboardsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

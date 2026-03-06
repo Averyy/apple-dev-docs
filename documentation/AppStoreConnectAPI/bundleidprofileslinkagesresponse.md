@@ -17,6 +17,12 @@ object BundleIdProfilesLinkagesResponse
 ### Dictionaries
 - [object BundleIdProfilesLinkagesResponse.Data](bundleidprofileslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BundleIdProfilesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BundleId](bundleid.md)

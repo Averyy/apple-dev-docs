@@ -20,7 +20,7 @@ After creating a [`HIDDeviceClient`](hiddeviceclient.md), notifications about th
 
 ## Parameters
 
-- `deviceReference`: The reference to the target HID device that arrive using  . For more details, see  .
+- `deviceReference`: The reference to the target HID device that arrive using [`HIDDeviceManager`](hiddevicemanager.md). For more details, see [`HIDDeviceClient.DeviceReference`](hiddeviceclient/devicereference-swift.struct.md).
 
 ## See Also
 

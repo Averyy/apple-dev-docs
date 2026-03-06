@@ -17,6 +17,13 @@ object AppPriceSchedule
 ### Objects
 - [object AppPriceSchedule.Relationships](apppriceschedule/relationships-data.dictionary.md)
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppPriceSchedule.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object App](app.md)

@@ -20,7 +20,7 @@ case installment(PaymentCardTransactionRequest.PaymentCycle, amount: Decimal, pa
 ## Parameters
 
 - `amount`: The amount the payment processor deducts from the card for each installment.
-- `payments`: The number of payments for the deducted amount.   Must be greater than  , otherwise the description won’t appear in the UI.
+- `payments`: The number of payments for the deducted amount. Must be greater than `0`, otherwise the description won’t appear in the UI.
 
 
 ---

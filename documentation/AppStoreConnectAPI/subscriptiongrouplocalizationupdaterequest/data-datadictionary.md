@@ -17,6 +17,12 @@ object SubscriptionGroupLocalizationUpdateRequest.Data
 ### Objects
 - [object SubscriptionGroupLocalizationUpdateRequest.Data.Attributes](subscriptiongrouplocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGroupLocalizationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

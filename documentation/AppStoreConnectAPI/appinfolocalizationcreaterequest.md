@@ -20,6 +20,10 @@ object AppInfoLocalizationCreateRequest
 - [object AppInfoLocalizationCreateRequest.Data](appinfolocalizationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppInfoLocalizationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppInfoLocalization](appinfolocalization.md)

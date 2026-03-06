@@ -22,6 +22,14 @@ object CiBuildAction
 - [object CiBuildAction.Relationships](cibuildaction/relationships-data.dictionary.md)
   The relationships of the Build Actions resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (CiBuildAction.Attributes): The attributes that describe the Build Actions resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Build Actions resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (CiBuildAction.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object CiArtifactsResponse](ciartifactsresponse.md)

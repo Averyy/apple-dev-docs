@@ -12,6 +12,11 @@
 object AppInfoPrimarySubcategoryTwoLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

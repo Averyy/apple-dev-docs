@@ -17,6 +17,10 @@ object NominationUpdateRequest.Data.Relationships.RelatedApps
 ### Dictionaries
 - [object NominationUpdateRequest.Data.Relationships.RelatedApps.Data](nominationupdaterequest/data-data.dictionary/relationships-data.dictionary/relatedapps-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([NominationUpdateRequest.Data.Relationships.RelatedApps.Data])
+
 
 ---
 

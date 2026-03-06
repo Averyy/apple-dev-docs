@@ -8,6 +8,14 @@ Get information for a specific Game Center activity image.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivityImages/{id}`
+
+## Parameters
+
+- `fields[gameCenterActivityImages]` ([string])
+
 ## See Also
 
 - [Create an activity image](post-v1-gamecenteractivityimages.md)

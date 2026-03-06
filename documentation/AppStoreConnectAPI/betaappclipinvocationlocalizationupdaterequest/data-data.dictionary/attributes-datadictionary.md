@@ -14,6 +14,10 @@ The attributes you set that describe the updated Beta App Clip Invocation Locali
 object BetaAppClipInvocationLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `title` (string): The title that appears on the App Clip card for an App Clip experience you configure for testers who launch the App Clip using the TestFlight app.
+
 
 ---
 

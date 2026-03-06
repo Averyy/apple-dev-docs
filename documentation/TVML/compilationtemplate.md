@@ -42,6 +42,14 @@ The following listing shows the main elements of the `compilationTemplate` eleme
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: Background elements, such as audio.
+- **[`header`](header.md)**: Information describing what a section of the list contains.
+- **[`itemBanner`](itembanner.md)**: Product information and row elements, such as button information, that are displayed along the right side of the screen.
+- **[`list`](list.md)**: Element containing all the content in the template (except background).
+- **[`listItemLockup`](listitemlockup.md)**: Elements containing elements used to create one item in a list.
+- **[`relatedContent`](relatedcontent.md)**: Element containing all elements displayed along the right side of the screen.
+- **[`section`](section.md)**: An area of the page that groups related elements for layout purposes.
+
 ##### Example
 
 The following listing shows the TVML for a `compilationTemplate` example. The example displays a list on the left side that contains information about the album and a list of available songs. The right side of the display contains an image of the album and buttons prompting the user to buy, rate, or shuffle the music.

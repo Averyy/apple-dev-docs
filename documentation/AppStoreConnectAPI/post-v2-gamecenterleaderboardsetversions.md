@@ -18,6 +18,10 @@ Create a Game Center leaderboard set version.
 - 422:
 - 429:
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardSetVersions`
+
 ## See Also
 
 - [Read Game Center leaderboard set version information](get-v2-gamecenterleaderboardsetversions-_id_.md)

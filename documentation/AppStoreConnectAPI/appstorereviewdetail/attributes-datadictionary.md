@@ -14,6 +14,17 @@ Attributes that describe an App Store Review Details resource.
 object AppStoreReviewDetail.Attributes
 ```
 
+## Properties
+
+- `contactEmail` (string)
+- `contactFirstName` (string)
+- `contactLastName` (string)
+- `contactPhone` (string)
+- `demoAccountName` (string)
+- `demoAccountPassword` (string)
+- `demoAccountRequired` (boolean)
+- `notes` (string)
+
 ## See Also
 
 - [object AppStoreReviewDetail.Relationships](appstorereviewdetail/relationships-data.dictionary.md)

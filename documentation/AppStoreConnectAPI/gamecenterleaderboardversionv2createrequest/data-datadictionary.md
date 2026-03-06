@@ -25,6 +25,11 @@ object GameCenterLeaderboardVersionV2CreateRequest.Data
 - [object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships](gamecenterleaderboardversionv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `relationships` (GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -48,12 +48,12 @@ When `letters.reduce(into:_:)` is called, the following steps occur:
 
 If the sequence has no elements, `updateAccumulatingResult` is never executed and `initialResult` is the result of the call to `reduce(into:_:)`.
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
 - `initialResult`: The value to use as the initial accumulating value.
-- `updateAccumulatingResult`: A closure that updates the accumulating   value with an element of the sequence.
+- `updateAccumulatingResult`: A closure that updates the accumulating value with an element of the sequence.
 
 ## See Also
 

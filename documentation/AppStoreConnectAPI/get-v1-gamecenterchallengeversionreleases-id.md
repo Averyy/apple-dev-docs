@@ -8,6 +8,15 @@ Get information for a specific Game Center challenge version release.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterChallengeVersionReleases/{id}`
+
+## Parameters
+
+- `fields[gameCenterChallengeVersionReleases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Add a challenge version release](post-v1-gamecenterchallengeversionreleases.md)

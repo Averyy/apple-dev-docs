@@ -8,6 +8,15 @@ Get information about a specific in-app purchase offer code one-time use code.
 **Availability**:
 - App Store Connect API 4.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodeOneTimeUseCodes/{id}`
+
+## Parameters
+
+- `fields[inAppPurchaseOfferCodeOneTimeUseCodes]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an in-app purchase offer code one-time use code](post-v1-inapppurchaseoffercodeonetimeusecodes.md)

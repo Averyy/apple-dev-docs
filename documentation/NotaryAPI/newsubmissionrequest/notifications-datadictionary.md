@@ -33,6 +33,11 @@ If you want a notification when notarization completes, include a data structure
 
 The value for the `payload` key indicates when the operation starts and completes, as well as the submission ID and your Team ID. The submission ID matches the value that you receive in response to the [`Submit Software`](submit-software.md) call. You can use the `signature` and `cert_chain` fields to verify the authenticity of the message against the Apple Inc. Root certificate that you can download from the [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/) site. If you need the certificate repeatedly, store a copy of the certificate on your server rather than downloading it every time you need it.
 
+## Properties
+
+- `channel` (string): The channel that the service uses to notify you when notarization completes. The only supported value for this key is `webhook`.
+- `target` (string): The URL that the notary service accesses when notarization completes.
+
 
 ---
 

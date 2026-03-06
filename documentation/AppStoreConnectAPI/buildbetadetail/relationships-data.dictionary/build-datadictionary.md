@@ -20,6 +20,11 @@ object BuildBetaDetail.Relationships.Build
 - [object BuildBetaDetail.Relationships.Build.Data](buildbetadetail/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BuildBetaDetail.Relationships.Build.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

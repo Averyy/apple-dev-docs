@@ -16,6 +16,10 @@ object PassTypeIdCreateRequest
 - [object PassTypeIdCreateRequest.Data](passtypeidcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (PassTypeIdCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object PassTypeId](passtypeid.md)

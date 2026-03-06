@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildBetaDetails/{id}/relationships/build`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List Build Beta Details](get-v1-buildbetadetails.md)

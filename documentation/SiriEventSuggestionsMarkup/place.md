@@ -14,6 +14,13 @@ A business, transportation hub, or event venue.
 object Place
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `address` (PostalAddress) *(required)*: The starting or ending location of a transportation reservation, or the location of a single-location reservation.
+- `name` (string) *(required)*: The name of the location.
+- `telephone` (telephone): A phone number for the location.
+
 ## See Also
 
 - [object Person](person.md)

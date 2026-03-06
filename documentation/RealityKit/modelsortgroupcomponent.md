@@ -96,7 +96,7 @@ let group = ModelSortGroup(depthPass: .prePass)
 
 The [`ModelSortGroup.DepthPass.prePass`](modelsortgroup/depthpass-swift.enum/prepass.md) option tells the renderer to write the depth buffer for the group’s entities first. The renderer doesn’t draw the blue cuboid in the overlapping area, regardless of order, because the red cuboid has a shallower depth in all parts of the overlapping area.
 
-> 💡 **Tip**: Check out [`Swift Splash`](https://developer.apple.com/documentation/visionos/swift-splash) which has an implementation that leverages `ModelSortGroupComponent`.
+> 💡 **Tip**: Check out [`Swift Splash`](https://developer.apple.com/documentation/visionOS/swift-splash) which has an implementation that leverages `ModelSortGroupComponent`.
 
 ## Topics
 

@@ -14,6 +14,12 @@ Attributes that describe a Game Center Enabled Versions resource.
 object GameCenterEnabledVersion.Attributes
 ```
 
+## Properties
+
+- `iconAsset` (ImageAsset)
+- `platform` (Platform)
+- `versionString` (string)
+
 ## See Also
 
 - [object GameCenterEnabledVersion.Relationships](gamecenterenabledversion/relationships-data.dictionary.md)

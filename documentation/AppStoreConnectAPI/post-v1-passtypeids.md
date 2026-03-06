@@ -8,6 +8,10 @@ Create a new identifier for use with a pass type ID certificate using a certific
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/passTypeIds`
+
 ## See Also
 
 - [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)

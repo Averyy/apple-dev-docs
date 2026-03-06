@@ -8,6 +8,14 @@ Change the metadata for an App Clip you make available to testers in the TestFli
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/betaAppClipInvocationLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Beta App Clip Invocation Localizations resource.
+
 ## Request Body
 
 The request body you use to update a beta App Clip invocation localization.

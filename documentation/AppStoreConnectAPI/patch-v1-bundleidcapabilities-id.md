@@ -8,6 +8,14 @@ Update the configuration of a specific capability.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/bundleIdCapabilities/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 
 ---
 

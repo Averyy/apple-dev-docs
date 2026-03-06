@@ -19,6 +19,10 @@ object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships
 ### Objects
 - [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
 
+## Properties
+
+- `appEncryptionDeclaration` (AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

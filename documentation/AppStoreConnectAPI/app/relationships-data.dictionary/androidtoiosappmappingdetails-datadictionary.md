@@ -20,6 +20,12 @@ object App.Relationships.AndroidToIosAppMappingDetails
 - [object App.Relationships.AndroidToIosAppMappingDetails.Data](app/relationships-data.dictionary/androidtoiosappmappingdetails-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([App.Relationships.AndroidToIosAppMappingDetails.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

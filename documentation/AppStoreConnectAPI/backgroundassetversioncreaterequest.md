@@ -20,6 +20,10 @@ object BackgroundAssetVersionCreateRequest
 - [object BackgroundAssetVersionCreateRequest.Data](backgroundassetversioncreaterequest/data-data.dictionary.md)
   The data structure that represents a background asset version create request resource.
 
+## Properties
+
+- `data` (BackgroundAssetVersionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

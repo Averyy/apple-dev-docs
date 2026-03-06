@@ -17,6 +17,11 @@ object GameCenterAchievementV2.Relationships.Activity.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

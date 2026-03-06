@@ -22,11 +22,11 @@ init(_ substring: Substring)
 
 #### Discussion
 
-> **Note**: O(), where  is the length of `substring`.
+> **Note**: O(*n*), where *n* is the length of `substring`.
 
 ## Parameters
 
-- `substring`: A substring to convert to a standalone    instance.
+- `substring`: A substring to convert to a standalone `String` instance.
 
 ## See Also
 

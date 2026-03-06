@@ -20,6 +20,10 @@ object BuildUpdateRequest
 - [object BuildUpdateRequest.Data](buildupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BuildUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object Build](build.md)

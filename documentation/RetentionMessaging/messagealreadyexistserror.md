@@ -18,6 +18,11 @@ object MessageAlreadyExistsError
 
 The [`Upload Message`](upload-message.md) endpoint returns this error when the [`messageIdentifier`](messageidentifier.md) already exists.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

@@ -30,6 +30,13 @@ The following listing shows the main elements of the `formTemplate` element in T
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: Only accepts `img` and `heroImg` elements in the background.
+- **[`banner`](banner.md)**: Information displayed along the top of the screen that is typically used to provide instructions to the user.
+- **[`description`](description.md)**: The text used to describe what the user needs to enter.
+- **[`footer`](footer.md)**: Information displayed along the bottom of the screen, such as a Submit button for the user to commit the information entered in `textField`.
+- **[`img`](img.md)**: An image of the product.
+- **[`textField`](textfield.md)**: User input field.
+
 ##### Example
 
 The following listing shows the TVML for a `formTemplate` example. The interactive keyboard is automatically created. The footer area contains a button that can submit the user input. Modify your main JavaScript file to accept the user input from the button. For more information on available JavaScript functions, see [`TVMLKit JS`](https://developer.apple.com/documentation/tvmljs).

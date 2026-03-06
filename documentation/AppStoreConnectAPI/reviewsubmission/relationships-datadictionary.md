@@ -28,6 +28,14 @@ object ReviewSubmission.Relationships
 - [object ReviewSubmission.Relationships.SubmittedByActor](reviewsubmission/relationships-data.dictionary/submittedbyactor-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (ReviewSubmission.Relationships.App)
+- `appStoreVersionForReview` (ReviewSubmission.Relationships.AppStoreVersionForReview)
+- `items` (ReviewSubmission.Relationships.Items)
+- `lastUpdatedByActor` (ReviewSubmission.Relationships.LastUpdatedByActor)
+- `submittedByActor` (ReviewSubmission.Relationships.SubmittedByActor)
+
 ## See Also
 
 - [object ReviewSubmission.Attributes](reviewsubmission/attributes-data.dictionary.md)

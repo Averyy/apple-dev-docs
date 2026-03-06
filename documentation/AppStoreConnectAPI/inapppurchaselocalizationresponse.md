@@ -12,6 +12,12 @@
 object InAppPurchaseLocalizationResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseLocalization) *(required)*
+- `included` ([InAppPurchaseV2])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

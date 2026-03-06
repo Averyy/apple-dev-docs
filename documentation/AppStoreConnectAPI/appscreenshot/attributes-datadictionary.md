@@ -14,6 +14,17 @@ Attributes that describe an App Screenshots resource.
 object AppScreenshot.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `assetType` (string)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object AppScreenshot.Relationships](appscreenshot/relationships-data.dictionary.md)

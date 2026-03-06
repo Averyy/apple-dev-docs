@@ -20,6 +20,12 @@ object AppScreenshotSet.Relationships.AppScreenshots
 - [object AppScreenshotSet.Relationships.AppScreenshots.Data](appscreenshotset/relationships-data.dictionary/appscreenshots-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([AppScreenshotSet.Relationships.AppScreenshots.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppScreenshotSet.Relationships.AppStoreVersionLocalization](appscreenshotset/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)

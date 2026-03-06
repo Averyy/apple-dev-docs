@@ -8,6 +8,15 @@ List all artifacts Xcode Cloud created when it performed an action.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/{id}/artifacts`
+
+## Parameters
+
+- `fields[ciArtifacts]` ([string]): Additional fields to include for each Artifacts resource returned by the response.
+- `limit` (integer): The number of Artifacts resources to return.
+
 ## See Also
 
 - [Read Build Action Information](get-v1-cibuildactions-_id_.md)

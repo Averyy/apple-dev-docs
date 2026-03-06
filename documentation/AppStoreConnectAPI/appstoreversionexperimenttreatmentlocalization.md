@@ -22,6 +22,14 @@ object AppStoreVersionExperimentTreatmentLocalization
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentTreatmentLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppStoreVersionExperimentTreatmentLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](appstoreversionexperimenttreatmentlocalizationcreaterequest.md)

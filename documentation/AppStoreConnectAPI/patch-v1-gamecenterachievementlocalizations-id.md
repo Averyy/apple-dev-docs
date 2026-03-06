@@ -12,6 +12,66 @@ Modify localized Game Center achievement information for a particular language.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f -d
+{
+    “data”: {
+        “type”: “gameCenterAchievementLocalizations”,
+        “id”: “ca329301-e7ad-4784-97cd-02faade43c2f”,
+        “attributes”: {
+            “beforeEarnedDescription”: “You can earn this achievement upon steaming milk to the perfect texture.”
+        }
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “gameCenterAchievementLocalizations”,
+    “id” : “ca329301-e7ad-4784-97cd-02faade43c2f”,
+    “attributes” : {
+      “locale” : “en-US”,
+      “name” : “Perfectly steamed milk”,
+      “beforeEarnedDescription” : “You can earn this achievement upon steaming milk to the perfect texture.”,
+      “afterEarnedDescription” : “You did it! The milk had the perfect texture.”
+    },
+    “relationships” : {
+      “gameCenterAchievement” : {
+        “links” : {
+          “self” : “https://appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f/relationships/gameCenterAchievement”,
+          “related” : “https://appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f/gameCenterAchievement”
+        }
+      },
+      “gameCenterAchievementImage” : {
+        “links” : {
+          “self” : “https://appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f/relationships/gameCenterAchievementImage”,
+          “related” : “https://appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f/gameCenterAchievementImage”
+        }
+      }
+    },
+    “links” : {
+      “self” : “https://appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f”
+    }
+  },
+  “links” : {
+    “self” : “https://appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f”
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List all localizations for an achievement`](get-v1-gamecenterachievements-_id_-localizations.md) response.
+
 ## See Also
 
 - [Create a Game Center achievement localization](post-v2-gamecenterachievementlocalizations.md)

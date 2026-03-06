@@ -8,6 +8,16 @@ Get the image that appears on the App Clip card, specific to a locale, for a def
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipDefaultExperienceLocalizations/{id}/appClipHeaderImage`
+
+## Parameters
+
+- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each App Clip Header Images resource returned by the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read Localization Information of a Default App Clip Experience](get-v1-appclipdefaultexperiencelocalizations-_id_.md)

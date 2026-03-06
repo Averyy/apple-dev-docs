@@ -6,6 +6,8 @@ Create an illusion of multiple flat layers by causing the article body to overla
 
 #### Overview
 
+**On this page, you’ll learn how to add parallax behavior to your article.**
+
 You’ll first divide the article’s components into two sections. This requires moving a large amount of code. Then, you’ll simply add a `behavior` property on the upper section and complete the effect by giving the lower section an opaque background color.
 
 ![Labeled screenshot of an Apple News article with two sections on iPad.](https://docs-assets.developer.apple.com/published/b5bb58096aa72b0f4afa853d04e33f36/media-3624566%402x.png)

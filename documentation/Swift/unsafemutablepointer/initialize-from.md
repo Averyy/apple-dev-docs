@@ -26,7 +26,7 @@ The region of memory starting at this pointer and covering `source.count` instan
 
 ## Parameters
 
-- `source`: A collection of elements of the pointer’s    type.
+- `source`: A collection of elements of the pointer’s `Pointee` type.
 
 
 ---

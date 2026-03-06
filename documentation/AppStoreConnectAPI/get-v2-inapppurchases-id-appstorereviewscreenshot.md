@@ -8,6 +8,16 @@ Get information about a review screenshot for a specific in-app purchase.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/appStoreReviewScreenshot`
+
+## Parameters
+
+- `fields[inAppPurchaseAppStoreReviewScreenshots]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

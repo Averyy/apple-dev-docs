@@ -8,6 +8,14 @@ Get a list of custom code resource IDs for a specific in-app purchase offer code
 **Availability**:
 - App Store Connect API 4.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodes/{id}/relationships/customCodes`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create an in-app purchase offer code custom code](post-v1-inapppurchaseoffercodecustomcodes.md)

@@ -19,6 +19,12 @@ object AppEventLocalization.Relationships
 - [object AppEventLocalization.Relationships.AppEventScreenshots](appeventlocalization/relationships-data.dictionary/appeventscreenshots-data.dictionary.md)
 - [object AppEventLocalization.Relationships.AppEventVideoClips](appeventlocalization/relationships-data.dictionary/appeventvideoclips-data.dictionary.md)
 
+## Properties
+
+- `appEvent` (AppEventLocalization.Relationships.AppEvent)
+- `appEventScreenshots` (AppEventLocalization.Relationships.AppEventScreenshots)
+- `appEventVideoClips` (AppEventLocalization.Relationships.AppEventVideoClips)
+
 ## See Also
 
 - [object AppEventLocalization.Attributes](appeventlocalization/attributes-data.dictionary.md)

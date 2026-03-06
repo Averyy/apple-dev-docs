@@ -28,7 +28,7 @@ If your app’s room-capture view [`delegate`](roomcaptureview/delegate.md) does
 ## Parameters
 
 - `roomDataForProcessing`: A data object that contains the raw scan results.
-- `error`: An object that describes the problem when an error occurs; otherwise,  .
+- `error`: An object that describes the problem when an error occurs; otherwise, `nil`.
 
 ## See Also
 

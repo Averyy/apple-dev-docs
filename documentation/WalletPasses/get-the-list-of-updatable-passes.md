@@ -14,6 +14,16 @@ Send the serial numbers for updated passes to a device.
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
 
+## Endpoint
+
+`GET https://yourpasshost.example.com/v1/devices/{deviceLibraryIdentifier}/registrations/{passTypeIdentifier}?passesUpdatedSince={previousLastUpdated}`
+
+## Parameters
+
+- `deviceLibraryIdentifier` (string) *(required)*: The unique identifier for the device.
+- `passTypeIdentifier` (string) *(required)*: The pass type identifier of the pass to check for updates. This value corresponds to the value of the `passTypeIdentifier` key of the pass.
+- `previousLastUpdated` (string) *(required)*: The value of the `lastUpdated` key from the [`SerialNumbers`](serialnumbers.md) object returned in a previous request. This value limits the results of the current request to the passes updated since that previous request.
+
 ## See Also
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)

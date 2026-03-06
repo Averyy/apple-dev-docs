@@ -20,6 +20,12 @@ object AppScreenshotSetAppScreenshotsLinkagesResponse
 - [object AppScreenshotSetAppScreenshotsLinkagesResponse.Data](appscreenshotsetappscreenshotslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([AppScreenshotSetAppScreenshotsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppScreenshotSet](appscreenshotset.md)

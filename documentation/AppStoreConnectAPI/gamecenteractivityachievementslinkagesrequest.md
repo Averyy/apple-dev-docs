@@ -19,6 +19,10 @@ object GameCenterActivityAchievementsLinkagesRequest
 ### Dictionaries
 - [object GameCenterActivityAchievementsLinkagesRequest.Data](gamecenteractivityachievementslinkagesrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterActivityAchievementsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

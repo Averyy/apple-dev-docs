@@ -19,6 +19,14 @@ Get a list of version resource IDs for a specific Game Center leaderboard.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboards/{id}/relationships/versions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)

@@ -16,6 +16,12 @@ string CiTestStatus
 
 #### Possible Values
 
+- **SUCCESS**: The tests passed.
+- **FAILURE**: The tests failed.
+- **MIXED**: Some tests passed and some failed.
+- **SKIPPED**: Xcode Cloud skipped some tests.
+- **EXPECTED_FAILURE**: Tests failed that you marked as expected to fail with [XCTExpectFailure](https://developer.apple.com/documentation/xctest/3726077- termxctexpectfailure).
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

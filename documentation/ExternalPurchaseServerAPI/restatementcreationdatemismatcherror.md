@@ -18,6 +18,13 @@ object RestatementCreationDateMismatchError
 
 - [External Purchase Server API changelog](changelog.md)
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

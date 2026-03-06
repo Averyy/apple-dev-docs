@@ -14,6 +14,12 @@ A response that contains a single activity resource.
 object GameCenterActivityResponse
 ```
 
+## Properties
+
+- `data` (GameCenterActivity) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

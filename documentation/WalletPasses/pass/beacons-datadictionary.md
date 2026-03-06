@@ -16,6 +16,13 @@ An object that represents the identifier of a Bluetooth Low Energy beacon the sy
 object Pass.Beacons
 ```
 
+## Properties
+
+- `major` (16-bit unsigned integer): The major identifier of a Bluetooth Low Energy location beacon.
+- `minor` (16-bit unsigned integer): The minor identifier of a Bluetooth Low Energy location beacon.
+- `proximityUUID` (string) *(required)*: The unique identifier of a Bluetooth Low Energy location beacon.
+- `relevantText` (string): The text to display on the lock screen when the pass is relevant. For example, a description of a nearby location, such as `“Store nearby on 1st and Main”`.
+
 ## See Also
 
 - [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)

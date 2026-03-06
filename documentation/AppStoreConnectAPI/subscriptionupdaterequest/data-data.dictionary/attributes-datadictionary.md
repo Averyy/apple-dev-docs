@@ -12,6 +12,14 @@
 object SubscriptionUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `familySharable` (boolean)
+- `name` (string)
+- `reviewNote` (string)
+- `subscriptionPeriod` (string)
+- `groupLevel` (integer)
+
 ## See Also
 
 - [object SubscriptionUpdateRequest.Data.Relationships](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary.md)

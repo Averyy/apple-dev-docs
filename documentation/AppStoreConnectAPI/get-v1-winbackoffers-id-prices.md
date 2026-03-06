@@ -12,6 +12,57 @@ List all prices for specific win-back offers.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500/prices
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "type": "winBackOfferPrices",
+      "id": "eyJvIjoiMTA3NzgzMjY1MDAiLCJ0IjoiQ0FOIiwicCI6IjEwMTQyIn0",
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/winBackOfferPrices/eyJvIjoiMTA3NzgzMjY1MDAiLCJ0IjoiQ0FOIiwicCI6IjEwMTQyIn0"
+      }
+    },
+    {
+      "type": "winBackOfferPrices",
+      "id": "eyJvIjoiMTA3NzgzMjY1MDAiLCJ0IjoiVVNBIiwicCI6IjEwMTI3In0",
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/winBackOfferPrices/eyJvIjoiMTA3NzgzMjY1MDAiLCJ0IjoiVVNBIiwicCI6IjEwMTI3In0"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500/prices"
+  },
+  "meta": {
+    "paging": {
+      "total": 2,
+      "limit": 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/winBackOffers/{id}/prices`
+
+## Parameters
+
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[territories]` ([string])
+- `fields[winBackOfferPrices]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)

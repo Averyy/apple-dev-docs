@@ -18,6 +18,12 @@ object SubscriptionAppStoreReviewScreenshotCreateRequest.Data
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Attributes](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Attributes) *(required)*
+- `relationships` (SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

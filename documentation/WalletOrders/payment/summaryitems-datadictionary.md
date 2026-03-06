@@ -16,6 +16,11 @@ A breakdown of the total payment.
 object Payment.SummaryItems
 ```
 
+## Properties
+
+- `label` (string) *(required)*: A localized label.
+- `value` (CurrencyAmount) *(required)*: The monetary value.
+
 ## See Also
 
 - [object Customer](customer.md)

@@ -17,6 +17,11 @@ object AppMarketplaceSearchDetailLinkageResponse
 ### Dictionaries
 - [object AppMarketplaceSearchDetailLinkageResponse.Data](appmarketplacesearchdetaillinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppMarketplaceSearchDetailLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object MarketplaceSearchDetail](marketplacesearchdetail.md)

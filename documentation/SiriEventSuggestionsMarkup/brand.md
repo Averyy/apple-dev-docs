@@ -14,6 +14,11 @@ A car brand.
 object Brand
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `name` (string): The name of the car brand.
+
 ## See Also
 
 - [object Car](car.md)

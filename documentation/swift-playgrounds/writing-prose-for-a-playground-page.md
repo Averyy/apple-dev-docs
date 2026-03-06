@@ -37,7 +37,7 @@ You don’t need to use a special delimiter to close the comment; use the regula
 
 ##### Reference Localized Prose
 
-Localize the content on a page by using the special comment syntax: `//:#localized(key: ``)`. The  key must correspond to an entry in the playground page’s `Prose.strings` file for each localization folder in the PrivateResources folder.
+Localize the content on a page by using the special comment syntax: `//:#localized(key: `*identifier*`)`. The *identifier* key must correspond to an entry in the playground page’s `Prose.strings` file for each localization folder in the PrivateResources folder.
 
 In the following example, the `ExplanationOfLoops` key refers to localized prose in a page’s `Prose.strings` file, in the en.lproj folder under PrivateResources.
 

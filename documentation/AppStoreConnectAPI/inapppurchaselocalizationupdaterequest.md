@@ -17,6 +17,10 @@ object InAppPurchaseLocalizationUpdateRequest
 ### Objects
 - [object InAppPurchaseLocalizationUpdateRequest.Data](inapppurchaselocalizationupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseLocalizationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseContentResponse](inapppurchasecontentresponse.md)

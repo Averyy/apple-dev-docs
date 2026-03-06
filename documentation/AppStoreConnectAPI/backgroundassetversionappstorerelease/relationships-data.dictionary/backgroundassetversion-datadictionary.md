@@ -18,6 +18,10 @@ object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersio
 - [object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion.Data](backgroundassetversionappstorerelease/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
   The request body you use to update a background asset version app store release.
 
+## Properties
+
+- `data` (BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion.Data)
+
 
 ---
 

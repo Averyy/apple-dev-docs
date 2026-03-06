@@ -6,7 +6,7 @@ Identify and resolve synchronization issues when working with `NSPersistentCloud
 
 #### Overview
 
-When you use `NSPersistentCloudKitContainer` to manage a CloudKit-backed Core Data store, the store lives on the device to provide data to your app, the CloudKit database lives on the remote CloudKit server to hold the server truth, and `NSPersistentCloudKitContainer` synchronizes them by  the local changes from the store to the database, and  the remote changes from the database to the store. For more information about `NSPersistentCloudKitContainer`, see [`TN3163: Understanding the synchronization of NSPersistentCloudKitContainer`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md).
+When you use `NSPersistentCloudKitContainer` to manage a CloudKit-backed Core Data store, the store lives on the device to provide data to your app, the CloudKit database lives on the remote CloudKit server to hold the server truth, and `NSPersistentCloudKitContainer` synchronizes them by *exporting* the local changes from the store to the database, and *importing* the remote changes from the database to the store. For more information about `NSPersistentCloudKitContainer`, see [`TN3163: Understanding the synchronization of NSPersistentCloudKitContainer`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md).
 
 A synchronization failure can happen because of a code-level issue in your data presentation layer, a configuration issue related to CloudKit, or a limit on the system side. To debug a synchronization issue, look into the system logs in Xcode console or a sysdiagnose, then identify the relevant errors. This technote describes how to identify and resolve common errors seen in the logs when working with `NSPersistentCloudKitContainer`.
 
@@ -37,7 +37,7 @@ When working with a CloudKit public database, `NSPersistentCloudKitContainer` do
 1. Add a new attribute to your Core Data entities to store the date when an object is removed.
 2. When deleting an object, set its removal date to [`now`](https://developer.apple.com/documentation/Foundation/Date/now), rather than really removing the object from the store. This converts the `delete` to an `update`, which can be synchronized across devices.
 3. In your app’s UI, only present the objects whose removal date is `nil`.
-4. If necessary, remove the objects whose removal date is sometime after the last successful export. The  needs to be long enough for the objects to be synchronized, which can be several months for apps that users use on a regular basis.
+4. If necessary, remove the objects whose removal date is sometime after the last successful export. The **sometime** needs to be long enough for the objects to be synchronized, which can be several months for apps that users use on a regular basis.
 
 For more information, see WWDC20 session 10650: [`Sync a Core Data store with the CloudKit public database`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10650).
 
@@ -181,7 +181,7 @@ If your issue isn’t covered in the technote, consider figuring out what happen
 
 #### Revision History
 
--  First published.
+- **2024-02-20** First published.
 
 ## See Also
 

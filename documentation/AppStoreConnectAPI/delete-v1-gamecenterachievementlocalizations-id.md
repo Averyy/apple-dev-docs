@@ -12,6 +12,36 @@ Delete localization metadata that’s associated with an achievement.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca329301-e7ad-4784-97cd-02faade43c2f -d
+{
+    “data”: {
+        “type”: “gameCenterAchievementLocalizations”,
+        “id”: “ca329301-e7ad-4784-97cd-02faade43c2f”,
+        “attributes”: {
+            “beforeEarnedDescription”: “You can earn this achievement upon steaming milk to the perfect texture.”
+        }
+    }
+}
+
+```
+
+**Response**:
+
+```json
+HTTP/1.1 204 No Content
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List all localizations for an achievement`](get-v1-gamecenterachievements-_id_-localizations.md) response.
+
 ## See Also
 
 - [Create a Game Center achievement localization](post-v2-gamecenterachievementlocalizations.md)

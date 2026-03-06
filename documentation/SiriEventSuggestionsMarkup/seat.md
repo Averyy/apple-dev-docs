@@ -14,6 +14,14 @@ The specific location reserved for the passenger.
 object Seat
 ```
 
+## Properties
+
+- `@type` (string)
+- `seatingType` (string): The reserved class of service.
+- `seatNumber` (string): The identifier for a particular seat in a row of seats.
+- `seatRow` (string): The identifier for a particular row in a section of seats.
+- `seatSection` (string): The identifier for a particular group of seats.
+
 ## See Also
 
 - [object Person](person.md)

@@ -16,6 +16,9 @@ string BetaInviteType
 
 #### Possible Values
 
+- **`EMAIL`**: 
+- **`PUBLIC_LINK`**: 
+
 ## See Also
 
 - [object BetaTester.Attributes](betatester/attributes-data.dictionary.md)

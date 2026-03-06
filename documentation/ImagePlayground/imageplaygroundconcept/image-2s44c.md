@@ -24,7 +24,7 @@ Call this method when you want to use an image as the basis for generating a new
 
 ## Parameters
 
-- `url`: The URL of a local file that contains the image you want to   pass to the diffusion model.
+- `url`: The URL of a local file that contains the image you want to pass to the diffusion model.
 
 ## See Also
 

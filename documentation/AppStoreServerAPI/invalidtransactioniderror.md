@@ -6,7 +6,7 @@
 An error that indicates an invalid transaction identifier.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object InvalidTransactionIdError
 ## Mentions
 
 - [App Store Server API changelog](app-store-server-api-changelog.md)
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

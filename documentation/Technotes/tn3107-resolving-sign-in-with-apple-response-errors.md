@@ -146,17 +146,21 @@ To validate the `client_secret` and its signature, see [`JWT.io`](https://develo
 
 An `invalid_grant` error can occur during a Sign in with Apple request for several reasons, but most commonly for the following scenarios while performing [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens).
 
+**For authorization code token validation requests:**
+
 - The `client_id` does not match the client for which the `code` was issued.
 - The `code` has expired or has been previously consumed by the validation server.
+
+**For refresh token validation requests:**
 
 - The `client_id` does not match the client for which the `refresh_token` was issued.
 - The `refresh_token` is invalid or has expired.
 
 #### Revision History
 
--  Updated content to include more underlying causes of response errors, and added token revoke endpoint.
--  Made minor editorial changes.
--  First published.
+- **2024-01-16** Updated content to include more underlying causes of response errors, and added token revoke endpoint.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-15** First published.
 
 ## See Also
 

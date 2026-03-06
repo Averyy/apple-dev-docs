@@ -8,6 +8,20 @@ Get a list of introductory offers for a specific auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/introductoryOffers`
+
+## Parameters
+
+- `fields[subscriptionIntroductoryOffers]` ([string])
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[subscriptions]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `filter[territory]` ([string])
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

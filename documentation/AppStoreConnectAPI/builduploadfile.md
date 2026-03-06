@@ -20,6 +20,13 @@ object BuildUploadFile
 - [object BuildUploadFile.Attributes](builduploadfile/attributes-data.dictionary.md)
   Attributes that describe a build upload file resource.
 
+## Properties
+
+- `attributes` (BuildUploadFile.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BuildUpload](buildupload.md)

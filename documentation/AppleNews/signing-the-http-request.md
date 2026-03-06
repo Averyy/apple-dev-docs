@@ -8,6 +8,8 @@ Sign the canonical request and send the custom authorization header to the Apple
 
 When communicating using HTTP protocol, the server validates the identity of the client and provides authorization for specific actions. By signing the HTTP request, the Apple News API authenticates the client and authorizes your news channel. See [`About the Apple News Security Model`](about-the-apple-news-security-model.md).
 
+**On this page, you’ll learn how to:**
+
 - Create a canonical request.
 - Sign the canonical request.
 - Create a custom authorization header.

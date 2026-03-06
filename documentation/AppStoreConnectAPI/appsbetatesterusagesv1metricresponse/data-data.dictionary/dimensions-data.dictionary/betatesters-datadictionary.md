@@ -17,6 +17,11 @@ object AppsBetaTesterUsagesV1MetricResponse.Data.Dimensions.BetaTesters
 ### Objects
 - [object AppsBetaTesterUsagesV1MetricResponse.Data.Dimensions.BetaTesters.Links](appsbetatesterusagesv1metricresponse/data-data.dictionary/dimensions-data.dictionary/betatesters-data.dictionary/links-data.dictionary.md)
 
+## Properties
+
+- `data` (string)
+- `links` (AppsBetaTesterUsagesV1MetricResponse.Data.Dimensions.BetaTesters.Links)
+
 
 ---
 

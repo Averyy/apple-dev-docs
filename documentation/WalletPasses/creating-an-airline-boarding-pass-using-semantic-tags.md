@@ -77,14 +77,14 @@ The following list of semantic tags are optional:
 | --- | --- |
 | `boardingGroup` | A group number for boarding. Use this key for any type of boarding pass. |
 | `boardingSequenceNumber` | A sequence number for boarding. Use this key for any type of boarding pass. |
-| `boardingZone` | A zone number for boarding. Don’t include the word . |
+| `boardingZone` | A zone number for boarding. Don’t include the word *zone*. |
 | `currentArrivalDate` | The updated date and time of arrival, if different from the originally scheduled date and time. Use this key for any type of boarding pass. |
 | `currentBoardingDate` | The updated date and time of boarding, if different from the originally scheduled date and time. Use this key for any type of boarding pass. |
 | `currentDepartureDate` | The updated date and time of departure, if different from the originally scheduled date and time. Use this key for any type of boarding pass. |
-| `departureGate` | The gate number or letters of the departure gate, such as `1A`. Don’t include the word . |
-| `departureTerminal` | The name or letter of the departure terminal, such as `A`. Don’t include the word . Use this key only for airline boarding passes. |
-| `destinationGate` | The gate number or letter of the destination gate, such as `1A`. Don’t include the word . Use this key only for airline boarding passes. |
-| `destinationTerminal` | The terminal name or letter of the destination terminal, such as `A`. Don’t include the word . Use this key only for airline boarding passes. |
+| `departureGate` | The gate number or letters of the departure gate, such as `1A`. Don’t include the word *gate*. |
+| `departureTerminal` | The name or letter of the departure terminal, such as `A`. Don’t include the word *terminal*. Use this key only for airline boarding passes. |
+| `destinationGate` | The gate number or letter of the destination gate, such as `1A`. Don’t include the word *gate*. Use this key only for airline boarding passes. |
+| `destinationTerminal` | The terminal name or letter of the destination terminal, such as `A`. Don’t include the word *terminal*. Use this key only for airline boarding passes. |
 | `internationalDocumentsAreVerified` | An optional Boolean value that indicates whether the system verifies the passenger’s international documents. When `true`, Wallet displays the badge on the boarding pass with the value from `internationalDocumentsVerifiedDeclarationName`. |
 | `internationalDocumentsVerifiedDeclarationName` | The name of the declaration the system provides after it verifies the passenger’s international documents. Examples include `DOCS OK` or `Travel Ready`. When `internationalDocumentsAreVerified` is `true`, Wallet displays a badge on the boarding pass with this value. |
 | `loungePlaceIDs` | The MapKit Place IDs that reference the transit provider lounge locations. For more information, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids). |

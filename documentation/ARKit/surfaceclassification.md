@@ -53,6 +53,8 @@ enum SurfaceClassification
   A source of real-time information about the room that a person is currently in.
 - [struct RoomAnchor](roomanchor.md)
   The representation of a room ARKit is currently tracking.
+- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
+  Use room tracking in visionOS to provide custom interactions with physical spaces.
 
 
 ---

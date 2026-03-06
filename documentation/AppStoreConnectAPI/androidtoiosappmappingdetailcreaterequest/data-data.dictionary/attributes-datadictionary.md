@@ -14,6 +14,11 @@ Attributes that describe an Android to iOS app mapping detail of a create reques
 object AndroidToIosAppMappingDetailCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appSigningKeyPublicCertificateSha256Fingerprints` ([string]) *(required)*
+- `packageName` (string) *(required)*
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

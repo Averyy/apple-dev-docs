@@ -17,6 +17,11 @@ object GameCenterActivityVersion.Relationships.DefaultImage
 ### Dictionaries
 - [object GameCenterActivityVersion.Relationships.DefaultImage.Data](gamecenteractivityversion/relationships-data.dictionary/defaultimage-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityVersion.Relationships.DefaultImage.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

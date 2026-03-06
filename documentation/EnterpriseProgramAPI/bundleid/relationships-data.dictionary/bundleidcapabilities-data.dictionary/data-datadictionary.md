@@ -11,6 +11,11 @@ The type and ID of a related resource.
 object BundleId.Relationships.BundleIdCapabilities.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 ## See Also
 
 - [links](bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/links.md)

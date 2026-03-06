@@ -14,6 +14,16 @@ Attributes that describe an activity resource.
 object GameCenterActivityCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `maximumPlayersCount` (integer)
+- `minimumPlayersCount` (integer)
+- `playStyle` (string)
+- `properties` (StringToStringMap)
+- `referenceName` (string) *(required)*
+- `supportsPartyCode` (boolean)
+- `vendorIdentifier` (string) *(required)*
+
 
 ---
 

@@ -17,6 +17,10 @@ object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subs
 ### Objects
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subscription.Data](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subscription.Data) *(required)*
+
 
 ---
 

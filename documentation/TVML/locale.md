@@ -14,6 +14,8 @@ Here’s an example that sets the locale to Thai, which uses the Buddhist calend
 
 ##### Values for Locale
 
+- **`<language>_<country>`**: The locale format the date is in.
+
 ##### Elements That Use Locale
 
 - [`date`](date.md)

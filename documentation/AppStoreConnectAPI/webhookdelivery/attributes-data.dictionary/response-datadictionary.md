@@ -12,6 +12,11 @@
 object WebhookDelivery.Attributes.Response
 ```
 
+## Properties
+
+- `body` (string)
+- `httpStatusCode` (integer)
+
 
 ---
 

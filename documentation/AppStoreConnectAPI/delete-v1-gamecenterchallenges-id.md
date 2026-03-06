@@ -8,6 +8,14 @@ Remove a specific Game Center challenge.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterChallenges/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

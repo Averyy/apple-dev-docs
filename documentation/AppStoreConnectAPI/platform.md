@@ -16,6 +16,11 @@ string Platform
 
 #### Possible Values
 
+- **IOS**: A string that represents iOS.
+- **MAC_OS**: A string that represents macOS.
+- **TV_OS**: A string that represents tvOS.
+- **VISION_OS**: A string that represents visionOS.
+
 ## See Also
 
 - [object App](app.md)

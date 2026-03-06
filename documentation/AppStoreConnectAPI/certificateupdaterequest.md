@@ -20,6 +20,10 @@ object CertificateUpdateRequest
 - [object CertificateUpdateRequest.Data](certificateupdaterequest/data-data.dictionary.md)
   The data structure that represent a certificate update request resource.
 
+## Properties
+
+- `data` (CertificateUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object Certificate](certificate.md)

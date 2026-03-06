@@ -17,6 +17,12 @@ object Subscription.Relationships.IntroductoryOffers
 ### Objects
 - [object Subscription.Relationships.IntroductoryOffers.Data](subscription/relationships-data.dictionary/introductoryoffers-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Subscription.Relationships.IntroductoryOffers.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

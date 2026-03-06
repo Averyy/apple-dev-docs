@@ -25,8 +25,8 @@ Use this method to send data using a standard data object. Your app is responsib
 
 ## Parameters
 
-- `participants`: The recipients of the message. The default value   of this parameter is the set of all active participants in the   session. Use the   option   to specify a subset of participants.
-- `completion`: The handler block to call with the results of the   delivery attempt. The handler has no return value and takes a single   Error parameter. The value of this parameter is   if delivery   succeeds; otherwise, it contains an appropriate error object.
+- `participants`: The recipients of the message. The default value of this parameter is the set of all active participants in the session. Use the [`Participants.only(_:)`](participants/only(_:)-swift.enum.case.md) option to specify a subset of participants.
+- `completion`: The handler block to call with the results of the delivery attempt. The handler has no return value and takes a single Error parameter. The value of this parameter is `nil` if delivery succeeds; otherwise, it contains an appropriate error object.
 
 ## See Also
 

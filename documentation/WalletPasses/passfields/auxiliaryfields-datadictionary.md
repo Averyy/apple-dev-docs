@@ -28,6 +28,10 @@ Use this field to provide information that people might not need every time they
 
 Depending on the type of pass, you can interchange the auxiliary and secondary fields. Coupons, store cards, and generic passes with a square barcode can have a combined total of up to four secondary and auxiliary fields.
 
+## Properties
+
+- `row` (number): A number you use to add a row to the auxiliary field in an event ticket pass type. Set the value to `1` to add an auxiliary row. Each row displays up to four fields.
+
 ## Relationships
 
 ### Inherits From

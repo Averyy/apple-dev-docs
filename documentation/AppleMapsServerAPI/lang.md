@@ -14,6 +14,10 @@ A string that represents a standard tag for identifying languages.
 string Lang
 ```
 
+
+
+**Default**: `en-US`
+
 ## See Also
 
 - [type CountryCode](countrycode.md)

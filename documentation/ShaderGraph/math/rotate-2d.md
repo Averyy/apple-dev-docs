@@ -17,6 +17,9 @@ Rotates a Vector2 (Float) about the origin in 2D.
 
 #### Parameter Descriptions
 
+- **`In`**: The vector to rotate.
+- **`Amount`**: The amount of degrees to rotate the `In` vector. A positive value rotates the `In` vector counterclockwise. The default value is `0`.
+
 ## See Also
 
 - [Add](math/add.md)

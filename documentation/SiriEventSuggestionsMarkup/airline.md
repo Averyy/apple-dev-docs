@@ -14,6 +14,12 @@ An airline’s name and identifier.
 object Airline
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `iataCode` (string) *(required)*: The three-letter identifier of the airline.
+- `name` (string) *(required)*: The name of the airline.
+
 ## See Also
 
 - [object Flight](flight.md)

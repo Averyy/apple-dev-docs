@@ -20,6 +20,11 @@ object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage
 - [object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Data](appclipdefaultexperiencelocalization/relationships-data.dictionary/appclipheaderimage-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clip Header Images resource.
 
+## Properties
+
+- `data` (AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Data): The ID and type of the related App Clip Header Images resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipDefaultExperienceLocalization.Relationships.AppClipDefaultExperience](appclipdefaultexperiencelocalization/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)

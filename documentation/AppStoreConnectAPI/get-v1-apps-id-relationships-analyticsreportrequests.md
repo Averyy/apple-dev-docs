@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/analyticsReportRequests`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read report requests](get-v1-apps-_id_-analyticsreportrequests.md)

@@ -14,6 +14,13 @@ The restaurant or other food establishment that will host the reservation.
 object FoodEstablishment
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `address` (PostalAddress) *(required)*: The location of the food establishment.
+- `name` (string) *(required)*: The name of the food establishment.
+- `telephone` (telephone)
+
 
 ---
 

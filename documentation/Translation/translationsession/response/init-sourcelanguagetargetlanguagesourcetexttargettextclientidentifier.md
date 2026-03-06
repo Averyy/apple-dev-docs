@@ -24,7 +24,7 @@ You don’t normally use this initializer directly. Instead, let the translation
 ## See Also
 
 - [init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceAttributedText: AttributedString, targetAttributedText: AttributedString, clientIdentifier: String?)](translationsession/response/init(sourcelanguage:targetlanguage:sourceattributedtext:targetattributedtext:clientidentifier:).md)
-  Creates an instance of a translation response.
+  Creates an instance of a translation response with formatted text.
 
 
 ---

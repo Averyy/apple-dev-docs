@@ -43,7 +43,7 @@ print(b.starts(with: []))
 // Prints "true"
 ```
 
-> **Note**: O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
+> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
 ## Parameters
 

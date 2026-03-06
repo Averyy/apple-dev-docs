@@ -26,11 +26,11 @@ A dictionary containing the keys and transformed values of this dictionary.
 
 #### Discussion
 
-> **Note**: O(), where  is the length of the dictionary.
+> **Note**: O(*n*), where *n* is the length of the dictionary.
 
 ## Parameters
 
-- `transform`: A closure that transforms a value.    accepts each value of the dictionary as its parameter and returns a   transformed value of the same or of a different type.
+- `transform`: A closure that transforms a value. `transform` accepts each value of the dictionary as its parameter and returns a transformed value of the same or of a different type.
 
 ## See Also
 

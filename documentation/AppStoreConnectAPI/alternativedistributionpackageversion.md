@@ -26,6 +26,14 @@ For more information about the responses that includes alternative distribution 
 - [object AlternativeDistributionPackageVersion.Attributes](alternativedistributionpackageversion/attributes-data.dictionary.md)
 - [object AlternativeDistributionPackageVersion.Relationships](alternativedistributionpackageversion/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AlternativeDistributionPackageVersion.Attributes)
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package version.
+- `links` (ResourceLinks)
+- `relationships` (AlternativeDistributionPackageVersion.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

@@ -21,7 +21,7 @@ init(rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: The value from which to create the broadcasting   attributes.
+- `rawValue`: The value from which to create the broadcasting attributes.
 
 ## See Also
 

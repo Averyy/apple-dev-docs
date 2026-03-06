@@ -20,6 +20,11 @@ object DeviceCreateRequest.Data
 - [object DeviceCreateRequest.Data.Attributes](devicecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
+## Properties
+
+- `attributes` (DeviceCreateRequest.Data.Attributes) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

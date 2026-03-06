@@ -25,7 +25,7 @@ A `SupportedPlatform` instance.
 ## Parameters
 
 - `platformName`: The name of the platform.
-- `versionString`: The minimum deployment target as a string representation of two or three dot-separated integers, such as  .
+- `versionString`: The minimum deployment target as a string representation of two or three dot-separated integers, such as `19.0.1`.
 
 
 ---

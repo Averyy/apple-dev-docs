@@ -8,6 +8,10 @@ End the pre-order for your app and release to store immediately.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/endAppAvailabilityPreOrders`
+
 ## See Also
 
 - [Read App Availabilty](get-v2-appavailabilities-_id_.md)

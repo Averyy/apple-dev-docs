@@ -24,8 +24,8 @@ init(for itemType: Item.Type = Item.self, contentType: UTType, encoder: Encoder,
 
 - `itemType`: The concrete type of the item that’s being transported.
 - `contentType`: A uniform type identifier that best describes the item.
-- `encoder`: An instance of a type that can convert the item being transferred   into binary data with a specific structure.
-- `decoder`: An instance of a type that can convert specifically structured   binary data into the item being transferred.
+- `encoder`: An instance of a type that can convert the item being transferred into binary data with a specific structure.
+- `decoder`: An instance of a type that can convert specifically structured binary data into the item being transferred.
 
 ## See Also
 

@@ -20,6 +20,13 @@ object GameCenterMatchmakingRuleSetTest
 - [object GameCenterMatchmakingRuleSetTest.Attributes](gamecentermatchmakingrulesettest/attributes-data.dictionary.md)
   The results of testing a rule set.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingRuleSetTest.Attributes): The object attributes.
+- `id` (string) *(required)*: A unique identifier for the rule set.
+- `links` (ResourceLinks): The link representations of the object.
+- `type` (string) *(required)*: The type of resource object.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

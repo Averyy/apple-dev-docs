@@ -19,6 +19,14 @@ object PassTypeId
 - [object PassTypeId.Relationships](passtypeid/relationships-data.dictionary.md)
   The data structure that represents the relationships of a pass type ID.
 
+## Properties
+
+- `attributes` (PassTypeId.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (PassTypeId.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object PassTypeIdCreateRequest](passtypeidcreaterequest.md)

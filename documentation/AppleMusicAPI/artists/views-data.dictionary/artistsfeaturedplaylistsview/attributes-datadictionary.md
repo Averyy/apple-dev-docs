@@ -14,6 +14,10 @@ Relevant playlists associated with the artist.
 object Artists.Views.ArtistsFeaturedPlaylistsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

@@ -16,7 +16,8 @@ fetchPlace(callback: (error: Error | null, result?: Place) => void): number;
 
 ## Parameters
 
-- `callback`: Required. The framework invokes the callback function with two arguments,   and   on success or failure:
+- `callback`: Required. The framework invokes the callback function with two arguments, `error` and `data,` on success or failure: - error — Contains an error code and a message that describes the error.
+- data — A data object that contains an array with one [`Place`](place.md) object associated with the map feature, or an empty array if the server can’t return the specified place.
 
 
 ---

@@ -20,7 +20,7 @@ Override this method to receive notifications whenever a new item becomes visibl
 
 ## Parameters
 
-- `url`: The URL of a file or directory inside the extension’s monitored   directories.
+- `url`: The URL of a file or directory inside the extension’s monitored directories.
 
 ## See Also
 

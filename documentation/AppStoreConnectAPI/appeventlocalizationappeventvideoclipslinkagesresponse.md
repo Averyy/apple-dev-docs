@@ -17,6 +17,12 @@ object AppEventLocalizationAppEventVideoClipsLinkagesResponse
 ### Dictionaries
 - [object AppEventLocalizationAppEventVideoClipsLinkagesResponse.Data](appeventlocalizationappeventvideoclipslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppEventLocalizationAppEventVideoClipsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppEventLocalization](appeventlocalization.md)

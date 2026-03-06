@@ -16,6 +16,79 @@ In the following example the request contains a blank value for the `agreementTe
 
 ##### Create a Custom License Agreement for Usa and China
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements
+
+{
+  "data": {
+    "type": "endUserLicenseAgreements",
+    "attributes": {
+      "agreementText": "..."
+    },
+    "relationships": {
+      "app": {
+        "data": {
+          "type": "apps",
+          "id": "284993459"
+        }
+      },
+      "territories": {
+        "data": [
+          {
+            "type": "territories",
+            "id": "USA"
+          },
+          {
+            "type": "territories",
+            "id": "CHN"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "endUserLicenseAgreements",
+    "id" : "b25d1669-d6b1-4e9b-8679-02863557222a",
+    "attributes" : {
+      "agreementText" : "..."
+    },
+    "relationships" : {
+      "app" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/relationships/app",
+          "related" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/app"
+        }
+      },
+      "territories" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/relationships/territories",
+          "related" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/territories"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements`
+
 ## See Also
 
 - [Modify an End User License Agreement](patch-v1-enduserlicenseagreements-_id_.md)

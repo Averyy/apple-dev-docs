@@ -14,6 +14,12 @@ A response that contains a single leaderboard set image resource.
 object GameCenterLeaderboardSetImageResponse
 ```
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetImage) *(required)*
+- `included` ([GameCenterLeaderboardSetLocalization])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageV2](gamecenterleaderboardsetimagev2.md)

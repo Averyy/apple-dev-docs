@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-Construct a RawSpan over the memory represented by this span
+Construct a raw span over the memory represented by this span.
 
 **Availability**:
 - iOS 12.2+

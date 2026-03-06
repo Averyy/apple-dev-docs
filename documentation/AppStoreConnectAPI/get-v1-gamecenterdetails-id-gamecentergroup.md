@@ -8,6 +8,30 @@ Get a list of groups in a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/gameCenterGroup`
+
+## Parameters
+
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `include` ([string])
+- `limit[gameCenterAchievements]` (integer)
+- `limit[gameCenterDetails]` (integer)
+- `limit[gameCenterLeaderboardSets]` (integer)
+- `limit[gameCenterLeaderboards]` (integer)
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `limit[gameCenterAchievementsV2]` (integer)
+- `limit[gameCenterActivities]` (integer)
+- `limit[gameCenterChallenges]` (integer)
+- `limit[gameCenterLeaderboardSetsV2]` (integer)
+- `limit[gameCenterLeaderboardsV2]` (integer)
+
 ## See Also
 
 - [Read the state of Game Center for an app](get-v1-apps-_id_-gamecenterdetail.md)

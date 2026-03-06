@@ -12,6 +12,12 @@
 object DevicesWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([Device]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Device](device.md)

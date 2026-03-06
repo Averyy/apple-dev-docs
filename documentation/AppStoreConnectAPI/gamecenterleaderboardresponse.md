@@ -14,6 +14,12 @@ A response that contains a single leaderboard image resource.
 object GameCenterLeaderboardResponse
 ```
 
+## Properties
+
+- `data` (GameCenterLeaderboard) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

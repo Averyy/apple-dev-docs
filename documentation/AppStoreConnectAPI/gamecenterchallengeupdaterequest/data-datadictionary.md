@@ -19,6 +19,13 @@ object GameCenterChallengeUpdateRequest.Data
   Attributes that describe a challenge resource.
 - [object GameCenterChallengeUpdateRequest.Data.Relationships](gamecenterchallengeupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterChallengeUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `relationships` (GameCenterChallengeUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

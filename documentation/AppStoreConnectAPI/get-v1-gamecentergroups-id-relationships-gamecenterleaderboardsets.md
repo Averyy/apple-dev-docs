@@ -8,6 +8,14 @@ List all the leaderboard sets associated with a specific group.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardSets`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Get all achievement IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)

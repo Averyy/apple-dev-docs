@@ -12,6 +12,10 @@
 object AppClip.Relationships.AppClipAdvancedExperiences
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

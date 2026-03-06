@@ -36,7 +36,7 @@ print(numbers.dropLast(10))
 // Prints "[]"
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 
 ---

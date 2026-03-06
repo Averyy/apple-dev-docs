@@ -14,6 +14,13 @@ A response that contains a list of App Encryption Declaration resources.
 object AppEncryptionDeclarationsResponse
 ```
 
+## Properties
+
+- `data` ([AppEncryptionDeclaration]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List App Encryption Declarations](get-v1-appencryptiondeclarations.md)

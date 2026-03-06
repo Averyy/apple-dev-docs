@@ -8,6 +8,14 @@ Change an App Clip invocation you make available to testers in the TestFlight ap
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/betaAppClipInvocations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Beta App Clip Invocations resource.
+
 ## Request Body
 
 The request body you use to update a beta App Clip invocation.

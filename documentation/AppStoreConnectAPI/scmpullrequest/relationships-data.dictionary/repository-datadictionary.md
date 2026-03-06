@@ -20,6 +20,10 @@ object ScmPullRequest.Relationships.Repository
 - [object ScmPullRequest.Relationships.Repository.Data](scmpullrequest/relationships-data.dictionary/repository-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Repositories resource.
 
+## Properties
+
+- `data` (ScmPullRequest.Relationships.Repository.Data): The ID and type of the related Repositories resource.
+
 
 ---
 

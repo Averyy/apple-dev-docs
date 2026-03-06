@@ -14,6 +14,12 @@ A relationship from the library album to its artist.
 object LibraryAlbums.Relationships.LibraryAlbumsArtistsRelationship
 ```
 
+## Properties
+
+- `href` (string): The relative location to fetch the relationship directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `data` ([LibraryArtists]) *(required)*: The library artists for the library album.
+
 ## See Also
 
 - [object LibraryAlbums.Relationships.LibraryAlbumsCatalogRelationship](libraryalbums/relationships-data.dictionary/libraryalbumscatalogrelationship.md)

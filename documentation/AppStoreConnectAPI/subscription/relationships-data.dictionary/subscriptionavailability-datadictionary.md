@@ -17,6 +17,11 @@ object Subscription.Relationships.SubscriptionAvailability
 ### Objects
 - [object Subscription.Relationships.SubscriptionAvailability.Data](subscription/relationships-data.dictionary/subscriptionavailability-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (Subscription.Relationships.SubscriptionAvailability.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

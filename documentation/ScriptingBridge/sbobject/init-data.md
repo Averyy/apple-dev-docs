@@ -25,7 +25,7 @@ Scripting Bridge does not actually create an object in the target application un
 
 ## Parameters
 
-- `data`: An object containing data for the new   object. The data   varies according to the type of scripting object to be created.
+- `data`: An object containing data for the new `SBObject` object. The data varies according to the type of scripting object to be created.
 
 ## See Also
 

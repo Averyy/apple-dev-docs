@@ -28,6 +28,15 @@ object CiProduct.Relationships
 - [object CiProduct.Relationships.BuildRuns](ciproduct/relationships-data.dictionary/buildruns-data.dictionary.md)
 - [object CiProduct.Relationships.Workflows](ciproduct/relationships-data.dictionary/workflows-data.dictionary.md)
 
+## Properties
+
+- `app` (CiProduct.Relationships.App): The related Apps resource.
+- `primaryRepositories` (CiProduct.Relationships.PrimaryRepositories): The related primary repository.
+- `bundleId` (CiProduct.Relationships.BundleId): The related bundle ID.
+- `additionalRepositories` (CiProduct.Relationships.AdditionalRepositories)
+- `buildRuns` (CiProduct.Relationships.BuildRuns)
+- `workflows` (CiProduct.Relationships.Workflows)
+
 ## See Also
 
 - [object CiProduct.Attributes](ciproduct/attributes-data.dictionary.md)

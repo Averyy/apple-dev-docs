@@ -6,7 +6,7 @@
 An error that indicates the value in the delivery status field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidDeliveryStatusError
 #### Discussion
 
 For valid delivery status values, see [`deliveryStatus`](deliverystatus.md) for [`ConsumptionRequest`](consumptionrequest.md), or [`deliveryStatusV1`](deliverystatusv1.md) for [`ConsumptionRequestV1`](consumptionrequestv1.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

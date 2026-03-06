@@ -18,6 +18,10 @@ object SubscriptionReactivateItem
 
 This object is part of the [`SubscriptionReactivateInAppRequest`](subscriptionreactivateinapprequest.md) that your app uses to reactivate a subscription that would otherwise expire.
 
+## Properties
+
+- `SKU` (SKU) *(required)*: The SKU of the item to reactivate.
+
 ## See Also
 
 - [object SubscriptionReactivateInAppRequest](subscriptionreactivateinapprequest.md)

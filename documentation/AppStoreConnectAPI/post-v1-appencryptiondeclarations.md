@@ -12,6 +12,10 @@ Add an app encryption delcaration for a specific app.
 
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarations`
+
 ## See Also
 
 - [Assign Builds to an App Encryption Declaration](post-v1-appencryptiondeclarations-_id_-relationships-builds.md)

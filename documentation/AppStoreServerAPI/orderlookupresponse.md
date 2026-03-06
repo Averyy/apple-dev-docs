@@ -6,7 +6,7 @@
 A response that includes the order lookup status and an array of signed transactions for the in-app purchases in the order.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -25,6 +25,11 @@ If the `orderId` that you provide in the request is invalid, the response doesnâ
 ### Response data types
 - [type OrderLookupStatus](orderlookupstatus.md)
   A value that indicates whether the order ID in the request is valid for your app.
+
+## Properties
+
+- `status` (OrderLookupStatus): The status that indicates whether the order ID is valid.
+- `signedTransactions` ([JWSTransaction]): An array of in-app purchase transactions that are part of order, signed by Apple, in JSON Web Signature format.
 
 ## See Also
 

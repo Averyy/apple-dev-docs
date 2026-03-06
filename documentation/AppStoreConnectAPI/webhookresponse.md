@@ -14,6 +14,12 @@ A response that contains a single webhook response resource.
 object WebhookResponse
 ```
 
+## Properties
+
+- `data` (Webhook) *(required)*
+- `included` ([App])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

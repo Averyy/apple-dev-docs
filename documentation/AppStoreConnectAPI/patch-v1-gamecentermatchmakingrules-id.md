@@ -8,6 +8,14 @@ Update a specific matchmaking rule in a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRules/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The unique identifier for the rule.
+
 ## See Also
 
 - [Create a rule](post-v1-gamecentermatchmakingrules.md)

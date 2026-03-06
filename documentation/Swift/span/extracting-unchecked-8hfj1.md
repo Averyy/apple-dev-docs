@@ -34,7 +34,7 @@ This function does not validate `bounds`; this is an unsafe operation.
 
 ## Parameters
 
-- `bounds`: A valid range of positions. Every position in   this range must be within the bounds of this  .
+- `bounds`: A valid range of positions. Every position in this range must be within the bounds of this `Span`.
 
 
 ---

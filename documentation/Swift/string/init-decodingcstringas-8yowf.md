@@ -26,8 +26,8 @@ If `nullTerminatedCodeUnits` contains ill-formed code unit sequences, this initi
 
 ## Parameters
 
-- `nullTerminatedCodeUnits`: A pointer to a null-terminated sequence of   code units encoded in  .
-- `encoding`: The encoding in which the code units should be   interpreted.
+- `nullTerminatedCodeUnits`: A pointer to a null-terminated sequence of code units encoded in `encoding`.
+- `encoding`: The encoding in which the code units should be interpreted.
 
 
 ---

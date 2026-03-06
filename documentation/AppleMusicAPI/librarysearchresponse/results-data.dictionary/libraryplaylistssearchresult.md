@@ -14,6 +14,12 @@ The library playlists results for a term search for specific resource types.
 object LibrarySearchResponse.Results.LibraryPlaylistsSearchResult
 ```
 
+## Properties
+
+- `data` ([LibraryPlaylists]) *(required)*: The library playlist resources matching the search term, ordered by best match.
+- `href` (string): A relative location for the resource.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources if more exist.
+
 ## See Also
 
 - [object LibrarySearchResponse.Results.LibraryAlbumsSearchResult](librarysearchresponse/results-data.dictionary/libraryalbumssearchresult.md)

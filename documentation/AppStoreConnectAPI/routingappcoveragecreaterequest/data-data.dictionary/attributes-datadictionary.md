@@ -14,6 +14,11 @@ Attributes that you set that describe the new resource.
 object RoutingAppCoverageCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object RoutingAppCoverageCreateRequest.Data.Relationships](routingappcoveragecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

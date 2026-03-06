@@ -15,7 +15,7 @@ The App Store Web Preview Report allows you to analyze how people are engaging w
 - Monthly: On the fifth day of the following month.
 - History: On request, data is available beginning on January 1, 2024
 - Completeness: Within three days. Weekly and monthly reports are complete by default.
-- Privacy: Data is available in two reports: standard and detailed.  reports include fields not easily related to uniquely identifiable data.  reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+- Privacy: Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
 

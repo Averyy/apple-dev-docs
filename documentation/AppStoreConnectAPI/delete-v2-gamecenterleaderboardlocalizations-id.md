@@ -19,6 +19,14 @@ Delete a specific Game Center leaderboard localization.
 - 409:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard localization information](get-v2-gamecenterleaderboardlocalizations-_id_.md)

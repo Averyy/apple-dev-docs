@@ -18,6 +18,18 @@ Get a list of price points for an auto-renewable subscription by territory.
 
 > ❗ **Important**:  Use the `territory` filter on all requests. This will be required in a future release.
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/pricePoints`
+
+## Parameters
+
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[territories]` ([string])
+- `filter[territory]` ([string]): Use this filter with all requests.
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

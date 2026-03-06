@@ -22,7 +22,7 @@ Strict memory safety checking is an opt-in compiler feature that identifies any 
 
 ## Parameters
 
-- `condition`: A condition that restricts the application of the build   setting.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

@@ -17,6 +17,11 @@ object BundleIdAppLinkageResponse
 ### Dictionaries
 - [object BundleIdAppLinkageResponse.Data](bundleidapplinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BundleIdAppLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BundleId](bundleid.md)

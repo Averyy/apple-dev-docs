@@ -26,7 +26,7 @@ func isSubset(of other: Self) -> Bool
 
 #### Discussion
 
-Set  is a subset of another set  if every member of  is also a member of .
+Set *A* is a subset of another set *B* if every member of *A* is also a member of *B*.
 
 ```swift
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]

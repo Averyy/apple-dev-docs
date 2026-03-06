@@ -17,7 +17,13 @@ Refracts a vector using a given normal and index of refraction (eta).
 
 #### Parameter Descriptions
 
+- **`In`**: The vector to refract.
+- **`Normal`**: The normal of the surface from which the `In` vector refracts.
+- **`Eta`**: The index of refraction.
+
 #### Discussion
+
+- **`Out High`**: The high end value of the output range; the default is `1.0`.
 
 > **Note**: The vectors passed as the `In` and `Normal` parameters must both already be normalized to achieve the desired output.
 

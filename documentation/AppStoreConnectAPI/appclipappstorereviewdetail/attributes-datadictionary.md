@@ -14,6 +14,10 @@ The attributes that describe the App Clip App Store Review Details resource.
 object AppClipAppStoreReviewDetail.Attributes
 ```
 
+## Properties
+
+- `invocationUrls` ([uri]): An array of invocation URLs for your App Clip.
+
 ## See Also
 
 - [object AppClipAppStoreReviewDetail.Relationships](appclipappstorereviewdetail/relationships-data.dictionary.md)

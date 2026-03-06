@@ -30,7 +30,7 @@ The buffer’s memory must be initialized or its `Element` type must be a trivia
 
 ## Parameters
 
-- `source`: A sequence of elements to be used to update   the buffer’s contents.
+- `source`: A sequence of elements to be used to update the buffer’s contents.
 
 
 ---

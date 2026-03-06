@@ -14,6 +14,11 @@ The attributes for a queue that you create.
 object GameCenterMatchmakingQueueCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `classicMatchmakingBundleIds` ([string])
+- `referenceName` (string) *(required)*: A name for the queue that’s unique within the scope of your development team.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

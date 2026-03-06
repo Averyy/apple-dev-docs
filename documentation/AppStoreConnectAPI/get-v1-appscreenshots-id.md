@@ -8,6 +8,15 @@ Get information about an app screenshot and its upload and processing status.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}`
+
+## Parameters
+
+- `fields[appScreenshots]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All App Screenshots for an App Screenshot Set](get-v1-appscreenshotsets-_id_-appscreenshots.md)

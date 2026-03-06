@@ -19,6 +19,10 @@ object GameCenterGroupUpdateRequest
 ### Objects
 - [object GameCenterGroupUpdateRequest.Data](gamecentergroupupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterGroupUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

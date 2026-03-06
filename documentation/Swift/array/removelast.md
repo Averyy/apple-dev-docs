@@ -26,11 +26,11 @@ Attempting to remove more elements than exist in the collection triggers a runti
 
 Calling this method may invalidate all saved indices of this collection. Do not rely on a previously stored index value after altering a collection with any operation that can change its length.
 
-> **Note**: O(), where  is the specified number of elements.
+> **Note**: O(*k*), where *k* is the specified number of elements.
 
 ## Parameters
 
-- `k`: The number of elements to remove from the collection.    must be greater than or equal to zero and must not exceed the   number of elements in the collection.
+- `k`: The number of elements to remove from the collection. `k` must be greater than or equal to zero and must not exceed the number of elements in the collection.
 
 ## See Also
 

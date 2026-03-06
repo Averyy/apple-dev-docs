@@ -18,6 +18,12 @@ object AnalyticsReportsResponse
 
 Use this object with [`Read reports for a specific request`](get-v1-analyticsreportrequests-_id_-reports.md).
 
+## Properties
+
+- `data` ([AnalyticsReport]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

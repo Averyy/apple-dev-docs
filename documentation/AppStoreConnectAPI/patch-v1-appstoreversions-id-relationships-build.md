@@ -14,7 +14,64 @@ Use this endpoint to associate a build with a version. The build you specify rep
 
 ##### Attach a Build to a Version
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/build
+{
+  "data": {
+    "type": "builds",
+    "id": "b539f38f-8af4-4fbd-b5fc-fde89aab410f"
+  }
+}
+
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "builds",
+    "id": "b539f38f-8af4-4fbd-b5fc-fde89aab410f"
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/build",
+    "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/build"
+  }
+}
+```
+
 ##### Remove the Build From a Version
+
+**Request**:
+
+```None
+PATCH /v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/build
+{
+  "data": null
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": null,
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/build",
+    "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/build"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/build`
+
+## Parameters
+
+- `id` (string) *(required)*
 
 ## See Also
 

@@ -12,6 +12,10 @@
 object GameCenterAchievementRelease.Attributes
 ```
 
+## Properties
+
+- `live` (boolean)
+
 ## See Also
 
 - [object GameCenterAchievementRelease.Relationships](gamecenterachievementrelease/relationships-data.dictionary.md)

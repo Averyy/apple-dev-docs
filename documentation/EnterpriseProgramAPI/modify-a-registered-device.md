@@ -9,6 +9,14 @@ Update the name or status of a specific device.
 
 - HTTPBody
 
+## Endpoint
+
+`PATCH https://api.enterprise.developer.apple.com/v1/devices/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 
 ---
 

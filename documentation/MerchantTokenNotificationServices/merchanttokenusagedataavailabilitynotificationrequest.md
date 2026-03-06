@@ -20,6 +20,11 @@ Use this API to notify Apple servers that the user’s device can retrieve merch
 
 The `merchantPublicKey` passed in the request needs to be a `P-384` public key.
 
+## Properties
+
+- `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+- `merchantTokenUsageMetadata` (MerchantTokenUsageMetadata) *(required)*: Metadata that’s encrypted using the `merchantTokenPublicKey`.
+
 ## See Also
 
 - [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)

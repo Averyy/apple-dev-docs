@@ -23,7 +23,7 @@ init(id: String? = nil, perform handler: @escaping @MainActor @Sendable () -> Vo
 
 ## Parameters
 
-- `id`: An optional identifier associated with the action. If you don’t specify a value, the system assigns the action’s   to this value.
+- `id`: An optional identifier associated with the action. If you don’t specify a value, the system assigns the action’s `index` to this value.
 - `handler`: The function the system calls when the action triggers.
 - `label`: A view that describes the purpose of the tip action.
 

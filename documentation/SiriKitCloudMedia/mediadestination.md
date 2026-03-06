@@ -18,6 +18,10 @@ object MediaDestination
 
 A playlist can be either a [`MediaItem`](mediaitem.md) or a [`MediaDestination`](mediadestination.md). When the user adds a song to a playlist, the playlist is the [`MediaDestination`](mediadestination.md). When the user adds a playlist to their library, the playlist is a [`MediaItem`](mediaitem.md), and the user’s library is the [`MediaDestination`](mediadestination.md).
 
+## Properties
+
+- `mediaDestinationType` (string) *(required)*: The type of collection the user wants to store their media items in.
+
 ## Relationships
 
 ### Inherited By

@@ -41,7 +41,7 @@ if let i = cafe.firstIndex(of: "é") {
 
 ## Parameters
 
-- `utf16`: The view to use for the index conversion. This index   must be a valid index of at least one view of the string shared by   .
+- `utf16`: The view to use for the index conversion. This index must be a valid index of at least one view of the string shared by `utf16`.
 
 
 ---

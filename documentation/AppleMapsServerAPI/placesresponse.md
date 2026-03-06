@@ -20,6 +20,11 @@ object PlacesResponse
 - [object PlacesResponse.PlaceLookupError](placesresponse/placelookuperror.md)
   An error associated with a lookup call.
 
+## Properties
+
+- `errors` ([PlacesResponse.PlaceLookupError]): A list of [`PlacesResponse.PlaceLookupError`](placesresponse/placelookuperror.md) results.
+- `results` ([Place]): A list of [`Place`](place.md) results.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

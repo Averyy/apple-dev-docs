@@ -17,6 +17,10 @@ object GameCenterDetailCreateRequest.Data.Relationships.App
 ### Objects
 - [object GameCenterDetailCreateRequest.Data.Relationships.App.Data](gamecenterdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterDetailCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

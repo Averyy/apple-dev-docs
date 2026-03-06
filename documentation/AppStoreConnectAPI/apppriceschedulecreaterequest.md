@@ -17,6 +17,11 @@ object AppPriceScheduleCreateRequest
 ### Objects
 - [object AppPriceScheduleCreateRequest.Data](apppriceschedulecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppPriceScheduleCreateRequest.Data) *(required)*
+- `included` ([*])
+
 ## See Also
 
 - [object App](app.md)

@@ -22,6 +22,12 @@ object ExtensionConfig.Media.Queues.ContentProtectionKey
 - [object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to the content protection key endpoint.
 
+## Properties
+
+- `cks` (ExtensionConfig.Media.Queues.ContentProtectionKey.Cks) *(required)*: The configuration details of your service’s content protection system.
+- `hdr` (ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr): The headers to include with requests to this endpoint.
+- `url` (string) *(required)*: The relative path for the client to access the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionarykey.md).
+
 ## See Also
 
 - [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)

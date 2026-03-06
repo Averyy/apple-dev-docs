@@ -17,6 +17,12 @@ object AppInAppPurchasesLinkagesResponse
 ### Dictionaries
 - [object AppInAppPurchasesLinkagesResponse.Data](appinapppurchaseslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppInAppPurchasesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

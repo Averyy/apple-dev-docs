@@ -31,7 +31,7 @@ The following example allows the Swift package manager to select a version like 
 
 ## Parameters
 
-- `name`: The name of the Swift package or   to deduce the name from  the package’s Git URL.
+- `name`: The name of the Swift package or `nil` to deduce the name from  the package’s Git URL.
 - `url`: The valid Git URL of the package.
 - `version`: The minimum version requirement.
 

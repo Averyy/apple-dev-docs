@@ -22,7 +22,7 @@ init(bigEndian value: Self)
 
 ## Parameters
 
-- `value`: A value to use as the big-endian representation of the   new integer.
+- `value`: A value to use as the big-endian representation of the new integer.
 
 ## See Also
 

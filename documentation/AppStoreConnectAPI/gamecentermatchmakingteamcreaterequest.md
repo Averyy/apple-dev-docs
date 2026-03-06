@@ -20,6 +20,10 @@ object GameCenterMatchmakingTeamCreateRequest
 - [object GameCenterMatchmakingTeamCreateRequest.Data](gamecentermatchmakingteamcreaterequest/data-data.dictionary.md)
   The data structure of the request body you use to create a team.
 
+## Properties
+
+- `data` (GameCenterMatchmakingTeamCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterMatchmakingTeamUpdateRequest](gamecentermatchmakingteamupdaterequest.md)

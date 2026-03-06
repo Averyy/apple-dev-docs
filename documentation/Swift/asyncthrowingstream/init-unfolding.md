@@ -49,7 +49,7 @@ do {
 
 ## Parameters
 
-- `produce`: A closure that asynchronously produces elements for the   stream.
+- `produce`: A closure that asynchronously produces elements for the stream.
 
 
 ---

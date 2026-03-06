@@ -20,7 +20,96 @@ You can use a single alternative distribution key for all alternative distributi
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
+{
+  "data": {
+    "type": "alternativeDistributionKeys",
+    "id": null,
+    "attributes": {
+      "publicKey": "-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DA7021gAEFQUkD1YB67wg3e0VD/2c3N3Wf92nuQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==-----END PUBLIC KEY-----"
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “alternativeDistributionKeys”,
+    “id” : “52c5cb04-1163-65ar-36aa-a3433cd6a4f6”,
+    “attributes” : {
+      “publicKey” : “-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DA7021gAEFQUkD1YB67wg3e0VD/2c3N3Wf92nuQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==-----END PUBLIC KEY-----”
+    },
+    “links” : {
+      “self” : “https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6”
+    }
+  },
+  “links” : {
+    “self” : “https://api.appstoreconnect.apple.com/v1/apps/6476788026/alternativeDistributionKeys”
+  }
+}
+
+```
+
 ##### Example Request and Response
+
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
+{
+  "data": {
+    "type": "alternativeDistributionKeys",
+    "id": null,
+    "attributes": {
+      "publicKey": "-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFQUkD1YB67wg3e0VD/2c3N3Wf92n
+uQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==
+-----END PUBLIC KEY-----"
+    },
+    "relationships": {
+      "app": {
+        "data": {
+          "type": "apps",
+          "id": "6476788026"
+        }
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "alternativeDistributionKeys",
+    "id" : "52c5cb04-1163-4a30-ad4f-a3433cd6a4f6",
+    "attributes" : {
+      "publicKey" : "-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFQUkD1YB67wg3e0VD/2c3N3Wf92n
+uQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==
+-----END PUBLIC KEY-----"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/apps/6476788026/alternativeDistributionKeys"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys`
 
 ## See Also
 

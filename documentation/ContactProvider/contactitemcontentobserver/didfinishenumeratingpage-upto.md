@@ -22,7 +22,7 @@ Call this method only if there are more items to enumerate after this page. An i
 
 ## Parameters
 
-- `nextPage`: The   where the next content enumeration can continue.
+- `nextPage`: The [`ContactItemPage`](contactitempage.md) where the next content enumeration can continue.
 
 ## See Also
 

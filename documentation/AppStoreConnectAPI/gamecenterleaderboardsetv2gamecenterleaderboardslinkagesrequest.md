@@ -23,6 +23,10 @@ object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest
 ### Dictionaries - generated
 - [object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest.Data](gamecenterleaderboardsetv2gamecenterleaderboardslinkagesrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

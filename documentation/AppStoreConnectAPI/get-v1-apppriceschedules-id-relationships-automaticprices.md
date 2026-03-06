@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appPriceSchedules/{id}/relationships/automaticPrices`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read price schedule information for an app](get-v1-apps-_id_-apppriceschedule.md)

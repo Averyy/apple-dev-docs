@@ -14,6 +14,13 @@ Attributes that you update for a build upload file resource.
 object BuildUploadFileCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `assetType` (string) *(required)*
+- `fileName` (string) *(required)*
+- `fileSize` (int64) *(required)*
+- `uti` (string) *(required)*
+
 
 ---
 

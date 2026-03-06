@@ -40,7 +40,7 @@ return try body(&value)
 
 ## Parameters
 
-- `body`: A closure with a parameter of    that has exclusive access to the value being stored within   this mutex. This closure is considered the critical section   as it will only be executed once the calling thread has   acquired the lock.
+- `body`: A closure with a parameter of `Value` that has exclusive access to the value being stored within this mutex. This closure is considered the critical section as it will only be executed once the calling thread has acquired the lock.
 
 
 ---

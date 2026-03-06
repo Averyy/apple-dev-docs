@@ -23,6 +23,15 @@ object GameCenterAchievementV2UpdateRequest.Data.Attributes
 - repeatable:
 - showBeforeEarned:
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `archived` (boolean)
+- `points` (integer)
+- `referenceName` (string)
+- `repeatable` (boolean)
+- `showBeforeEarned` (boolean)
+
 
 ---
 

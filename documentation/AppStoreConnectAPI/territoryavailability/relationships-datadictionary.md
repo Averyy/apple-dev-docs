@@ -17,6 +17,10 @@ object TerritoryAvailability.Relationships
 ### Objects
 - [object TerritoryAvailability.Relationships.Territory](territoryavailability/relationships-data.dictionary/territory-data.dictionary.md)
 
+## Properties
+
+- `territory` (TerritoryAvailability.Relationships.Territory)
+
 ## See Also
 
 - [object TerritoryAvailability.Attributes](territoryavailability/attributes-data.dictionary.md)

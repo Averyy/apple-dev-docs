@@ -14,6 +14,11 @@ The data structure that represents the assignment of a player to a team.
 object GameCenterMatchmakingTeamAssignment
 ```
 
+## Properties
+
+- `playerId` (string): A unique identifier for the player.
+- `team` (string): The name of the team that Game Center assigned the player to.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

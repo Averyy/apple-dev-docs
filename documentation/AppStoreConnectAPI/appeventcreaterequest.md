@@ -17,6 +17,10 @@ object AppEventCreateRequest
 ### Objects
 - [object AppEventCreateRequest.Data](appeventcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEvent](appevent.md)

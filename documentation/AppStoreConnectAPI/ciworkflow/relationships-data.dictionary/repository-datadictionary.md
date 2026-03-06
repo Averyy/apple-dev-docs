@@ -20,6 +20,11 @@ object CiWorkflow.Relationships.Repository
 - [object CiWorkflow.Relationships.Repository.Data](ciworkflow/relationships-data.dictionary/repository-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Repositories resource.
 
+## Properties
+
+- `data` (CiWorkflow.Relationships.Repository.Data): The ID and type of the related Repositories resource.
+- `links` (RelationshipLinks): The navigational links that include the self-link.
+
 ## See Also
 
 - [object CiWorkflow.Relationships.MacOsVersion](ciworkflow/relationships-data.dictionary/macosversion-data.dictionary.md)

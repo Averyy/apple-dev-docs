@@ -19,6 +19,10 @@ object BackgroundAssetVersionAppStoreRelease.Relationships
 ### Dictionaries
 - [object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion](backgroundassetversionappstorerelease/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
 
+## Properties
+
+- `backgroundAssetVersion` (BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion)
+
 ## See Also
 
 - [object BackgroundAssetVersionAppStoreRelease.Attributes](backgroundassetversionappstorerelease/attributes-data.dictionary.md)

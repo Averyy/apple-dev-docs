@@ -16,6 +16,10 @@ An object that contains the push notification token for a registered pass on a d
 object PushToken
 ```
 
+## Properties
+
+- `pushToken` (string): A push token the server uses to send update notifications for a registered pass to a device.
+
 ## See Also
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)

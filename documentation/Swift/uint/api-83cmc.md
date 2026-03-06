@@ -44,7 +44,7 @@ If the bit width of the shifted integer type is a power of two, masking is perfo
 ## Parameters
 
 - `lhs`: The value to shift.
-- `rhs`: The number of bits to shift   to the right. If   is   outside the range  , it is masked to produce a   value within that range.
+- `rhs`: The number of bits to shift `lhs` to the right. If `rhs` is outside the range `0..<lhs.bitWidth`, it is masked to produce a value within that range.
 
 
 ---

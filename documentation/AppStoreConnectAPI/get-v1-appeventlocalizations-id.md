@@ -6,6 +6,19 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appEventLocalizations/{id}`
+
+## Parameters
+
+- `fields[appEventLocalizations]` ([string])
+- `fields[appEventScreenshots]` ([string])
+- `fields[appEventVideoClips]` ([string])
+- `include` ([string])
+- `limit[appEventScreenshots]` (integer)
+- `limit[appEventVideoClips]` (integer)
+
 ## See Also
 
 - [GET /v1/appEventLocalizations/{id}/appEventVideoClips](get-v1-appeventlocalizations-_id_-appeventvideoclips.md)

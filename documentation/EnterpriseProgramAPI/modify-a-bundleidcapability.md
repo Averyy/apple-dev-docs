@@ -9,6 +9,14 @@ Update the configuration of a specific capability.
 
 - HTTPBody
 
+## Endpoint
+
+`PATCH https://api.enterprise.developer.apple.com/v1/bundleIdCapabilities/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 
 ---
 

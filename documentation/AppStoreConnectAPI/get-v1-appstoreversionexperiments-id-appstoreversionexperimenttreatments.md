@@ -8,6 +8,19 @@ Get a list of all treatments for a specific App Store version experiment.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionExperiments/{id}/appStoreVersionExperimentTreatments`
+
+## Parameters
+
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appStoreVersionExperimentTreatmentLocalizations]` (integer)
+- `fields[appStoreVersionExperiments]` ([string])
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

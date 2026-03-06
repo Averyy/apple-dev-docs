@@ -22,7 +22,7 @@ init(_ string: String)
 
 ## Parameters
 
-- `string`: A string   whose Unicode encoded contents to use as the contents of the path.
+- `string`: A string whose Unicode encoded contents to use as the contents of the path.
 
 
 ---

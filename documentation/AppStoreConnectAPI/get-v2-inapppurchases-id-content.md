@@ -8,6 +8,16 @@ Get the details about hosted content for an in-app purchase.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/content`
+
+## Parameters
+
+- `fields[inAppPurchaseContents]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

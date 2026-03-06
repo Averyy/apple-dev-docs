@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/accessibilityDeclarations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all accessibility declarations for an app](get-v1-apps-_id_-accessibilitydeclarations.md)

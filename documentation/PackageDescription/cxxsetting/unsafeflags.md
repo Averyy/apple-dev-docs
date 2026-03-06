@@ -25,7 +25,7 @@ As some build flags can be exploited for unsupported or malicious behavior, you 
 ## Parameters
 
 - `flags`: The unsafe flags to set.
-- `condition`: A condition that restricts the application of the build   setting.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

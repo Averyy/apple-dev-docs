@@ -25,6 +25,13 @@ object ScmRepository.Relationships
 - [object ScmRepository.Relationships.GitReferences](scmrepository/relationships-data.dictionary/gitreferences-data.dictionary.md)
 - [object ScmRepository.Relationships.PullRequests](scmrepository/relationships-data.dictionary/pullrequests-data.dictionary.md)
 
+## Properties
+
+- `defaultBranch` (ScmRepository.Relationships.DefaultBranch): The Git repository’s default branch.
+- `gitReferences` (ScmRepository.Relationships.GitReferences)
+- `pullRequests` (ScmRepository.Relationships.PullRequests)
+- `scmProvider` (ScmRepository.Relationships.ScmProvider): The related Providers resource.
+
 ## See Also
 
 - [object ScmRepository.Attributes](scmrepository/attributes-data.dictionary.md)

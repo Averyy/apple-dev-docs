@@ -14,6 +14,10 @@ The data structure that represents multiple-territory age-rating resources.
 object AppInfo.Relationships.TerritoryAgeRatings
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

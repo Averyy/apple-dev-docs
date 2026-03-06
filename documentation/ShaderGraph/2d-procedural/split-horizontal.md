@@ -17,6 +17,11 @@ A left-to-right split matte, split at a specified U value.
 
 #### Parameter Descriptions
 
+- **`Left`**: The value of the left side of the split.
+- **`Right`**: The value of the right side of the split.
+- **`Center`**: The V value at which the output is split. Everything above this value is equal to the `Top` input; everything below this value is equal to the `Bottom` input. This parameter ranges between `0` and `1`.
+- **`Texture Coordinates`**: The 2D coordinate at which the data is read for mapping the texture onto a surface. The default uses the current UV coordinates, in which U is the horizontal axis, and V is the vertical axis.
+
 #### Discussion
 
 This node creates two distinct regions along the horizontal axis. The value of the `Center` input determines these regions. A value of `0` establishes the center at the left-most position, causing the output to always be equal to the `Right` input. A value of `1` establishes the center at the right-most position. Below is a an example of a simple node graph that uses `Split Horizontal` to create a split color:

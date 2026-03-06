@@ -14,6 +14,11 @@ Attributes that describe an app tag resource.
 object AppTag.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `visibleInAppStore` (boolean)
+
 ## See Also
 
 - [object AppTag.Relationships](apptag/relationships-data.dictionary.md)

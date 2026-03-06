@@ -73,8 +73,8 @@ For preview links to user posts on social network services, specify the text of 
 
 #### Revision History
 
--  Republished as TN3156. Added social network information.
--  First published as TN2444 “Best Practices for Link Previews in Messages”.
+- **2024-04-30** Republished as TN3156. Added social network information.
+- **2017-09-08** First published as TN2444 “Best Practices for Link Previews in Messages”.
 
 ## See Also
 

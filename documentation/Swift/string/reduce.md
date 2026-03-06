@@ -46,12 +46,12 @@ When `numbers.reduce(_:_:)` is called, the following steps occur:
 
 If the sequence has no elements, `nextPartialResult` is never executed and `initialResult` is the result of the call to `reduce(_:_:)`.
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
-- `initialResult`: The value to use as the initial accumulating value.    is passed to   the first time the   closure is executed.
-- `nextPartialResult`: A closure that combines an accumulating value and   an element of the sequence into a new accumulating value, to be used   in the next call of the   closure or returned to   the caller.
+- `initialResult`: The value to use as the initial accumulating value. `initialResult` is passed to `nextPartialResult` the first time the closure is executed.
+- `nextPartialResult`: A closure that combines an accumulating value and an element of the sequence into a new accumulating value, to be used in the next call of the `nextPartialResult` closure or returned to the caller.
 
 ## See Also
 

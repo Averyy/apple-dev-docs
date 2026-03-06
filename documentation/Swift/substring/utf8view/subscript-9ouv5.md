@@ -30,7 +30,7 @@ A collection of the elements at the positions in `subranges`.
 
 ## Parameters
 
-- `subranges`: The indices of the elements to retrieve from this   collection.
+- `subranges`: The indices of the elements to retrieve from this collection.
 
 
 ---

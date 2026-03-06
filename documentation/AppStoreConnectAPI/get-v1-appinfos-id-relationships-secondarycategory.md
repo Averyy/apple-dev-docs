@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfos/{id}/relationships/secondaryCategory`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read the Primary Category Information of an App Info](get-v1-appinfos-_id_-primarycategory.md)

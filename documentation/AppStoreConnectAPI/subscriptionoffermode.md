@@ -18,6 +18,10 @@ string SubscriptionOfferMode
 
 ##### Possible Alues
 
+- **PAY_AS_YOU_GO**: A constant that indicates a subscription offer is billed over multiple billing periods.
+- **PAY_UP_FRONT**: A constant that indicates a subscription offer is billed one time, up front.
+- **FREE_TRIAL**: A constant that indicates a subscription offer is a free trial.
+
 ## See Also
 
 - [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)

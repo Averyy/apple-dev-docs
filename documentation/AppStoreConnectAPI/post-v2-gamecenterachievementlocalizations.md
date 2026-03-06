@@ -18,6 +18,10 @@ Create a Game Center achievement localization.
 - 422:
 - 429:
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v2/gameCenterAchievementLocalizations`
+
 ## See Also
 
 - [Modify a Game Center achievement localization](patch-v2-gamecenterachievementlocalizations-_id_.md)

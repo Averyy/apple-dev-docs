@@ -17,6 +17,10 @@ Transforms a vector3 from one space to another.
 
 #### Parameter Descriptions
 
+- **`In`**: The normal vector to transform.
+- **`Fromspace`**: The space from which to transform the `In` vector.
+- **`Tospace`**: The space to which to transform the `In` vector.
+
 #### Discussion
 
 The following spaces are valid values for the `Fromspace` and `Tospace` parameters:

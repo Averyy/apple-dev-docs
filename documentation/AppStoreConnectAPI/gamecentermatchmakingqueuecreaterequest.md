@@ -20,6 +20,10 @@ object GameCenterMatchmakingQueueCreateRequest
 - [object GameCenterMatchmakingQueueCreateRequest.Data](gamecentermatchmakingqueuecreaterequest/data-data.dictionary.md)
   The data structure of the request body you use to create a queue.
 
+## Properties
+
+- `data` (GameCenterMatchmakingQueueCreateRequest.Data) *(required)*: The data structure of the request body.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueUpdateRequest](gamecentermatchmakingqueueupdaterequest.md)

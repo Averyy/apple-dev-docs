@@ -18,6 +18,14 @@ object SubscriptionAvailability
 - [object SubscriptionAvailability.Attributes](subscriptionavailability/attributes-data.dictionary.md)
 - [object SubscriptionAvailability.Relationships](subscriptionavailability/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionAvailability.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionAvailability.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)

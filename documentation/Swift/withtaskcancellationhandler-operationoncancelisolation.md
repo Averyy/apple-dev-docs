@@ -23,7 +23,7 @@ func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel ha
 
 #### Discussion
 
-This differs from the operation cooperatively checking for cancellation and reacting to it in that the cancellation handler is  and  invoked when the task is canceled. For example, even if the operation is running code that never checks for cancellation, a cancellation handler still runs and provides a chance to run some cleanup code:
+This differs from the operation cooperatively checking for cancellation and reacting to it in that the cancellation handler is *always* and *immediately* invoked when the task is canceled. For example, even if the operation is running code that never checks for cancellation, a cancellation handler still runs and provides a chance to run some cleanup code:
 
 ```swift
 await withTaskCancellationHandler {
@@ -44,11 +44,11 @@ The `operation` closure is always invoked, even when the `withTaskCancellationHa
 
 When `withTaskCancellationHandler(operation:onCancel:)` is used in a task that has already been canceled, the cancellation handler will be executed immediately before the `operation` closure gets to execute.
 
-This allows the cancellation handler to set some external “canceled” flag that the operation may be  checking for in order to avoid performing any actual work once the operation gets to run.
+This allows the cancellation handler to set some external “canceled” flag that the operation may be *atomically* checking for in order to avoid performing any actual work once the operation gets to run.
 
 The `operation` closure executes on the calling execution context, and doesn’t suspend or change execution context unless code contained within the closure does so. In other words, the potential suspension point of the `withTaskCancellationHandler(operation:onCancel:)` never suspends by itself before executing the operation.
 
-If cancellation occurs while the operation is running, the cancellation handler executes  with the operation.
+If cancellation occurs while the operation is running, the cancellation handler executes *concurrently* with the operation.
 
 ##### Cancellation Handlers and Locks
 
@@ -57,7 +57,7 @@ Cancellation handlers which acquire locks must take care to avoid deadlock. The 
 ## Parameters
 
 - `operation`: The operation to perform.
-- `handler`: A closure to execute on cancellation.   If the task is canceled, this closure is called at most once;   otherwise, it isn’t called.
+- `handler`: A closure to execute on cancellation. If the task is canceled, this closure is called at most once; otherwise, it isn’t called.
 - `isolation`: The actor that the operation and cancellation handler are isolated to.
 
 ## See Also

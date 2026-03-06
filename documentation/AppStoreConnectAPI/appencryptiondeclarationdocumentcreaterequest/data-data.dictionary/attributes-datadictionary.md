@@ -14,6 +14,11 @@ Attributes that describe an app encryption declaration document create request r
 object AppEncryptionDeclarationDocumentCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

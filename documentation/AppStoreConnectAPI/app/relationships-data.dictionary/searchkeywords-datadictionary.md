@@ -12,6 +12,10 @@
 object App.Relationships.SearchKeywords
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

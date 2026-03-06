@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+Construct a raw span over the memory represented by this span.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,10 @@
 ```swift
 var bytes: RawSpan { get }
 ```
+
+#### Return Value
+
+A RawSpan over the memory represented by this span
 
 
 ---

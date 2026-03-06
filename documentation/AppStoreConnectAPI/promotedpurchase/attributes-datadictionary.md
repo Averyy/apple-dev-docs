@@ -12,6 +12,12 @@
 object PromotedPurchase.Attributes
 ```
 
+## Properties
+
+- `enabled` (boolean)
+- `state` (string)
+- `visibleForAllUsers` (boolean)
+
 ## See Also
 
 - [object PromotedPurchase.Relationships](promotedpurchase/relationships-data.dictionary.md)

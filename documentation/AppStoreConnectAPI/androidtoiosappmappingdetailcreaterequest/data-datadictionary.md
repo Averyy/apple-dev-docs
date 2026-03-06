@@ -22,6 +22,12 @@ object AndroidToIosAppMappingDetailCreateRequest.Data
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AndroidToIosAppMappingDetailCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AndroidToIosAppMappingDetailCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

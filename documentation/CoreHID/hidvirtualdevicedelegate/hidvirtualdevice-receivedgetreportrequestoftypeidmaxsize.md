@@ -30,7 +30,7 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 ## Parameters
 
 - `device`: The device that received the notification.
-- `type`: The   of the requested report.
+- `type`: The [`HIDReportType`](hidreporttype.md) of the requested report.
 - `id`: The ID of the requested report. This may not be populated if the descriptor contains only one report.
 - `maxSize`: The maximum size of data that can be transmitted back to the client. The data returned by this function must not exceed this size.
 

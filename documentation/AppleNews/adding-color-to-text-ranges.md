@@ -6,6 +6,8 @@ Create text in color by using HTML to refer to TextStyle objects.
 
 #### Overview
 
+**On this page, you’ll learn how to apply text styles to ranges of characters by using HTML to refer to TextStyle objects.**
+
 You can then edit the `TextStyle` object in one place and affect multiple ranges of text.
 
 ![Screenshot of an Apple News article with an HTML-styled inset pull quote on iPad.](https://docs-assets.developer.apple.com/published/f45f5334e481ed171b4c1f7aa2127d38/media-3624922%402x.png)

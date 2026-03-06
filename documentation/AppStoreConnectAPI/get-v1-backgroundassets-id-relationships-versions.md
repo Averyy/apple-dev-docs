@@ -8,6 +8,14 @@ Get version IDs about a specific background asset version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssets/{id}/relationships/versions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)

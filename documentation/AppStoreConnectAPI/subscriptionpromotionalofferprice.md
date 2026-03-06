@@ -17,6 +17,13 @@ object SubscriptionPromotionalOfferPrice
 ### Objects
 - [object SubscriptionPromotionalOfferPrice.Relationships](subscriptionpromotionalofferprice/relationships-data.dictionary.md)
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionPromotionalOfferPrice.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionPromotionalOffer](subscriptionpromotionaloffer.md)

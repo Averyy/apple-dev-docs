@@ -60,7 +60,7 @@ In cases like this, the simplest fix is often to simply remove the call to `rese
 
 If you need more control over the capacity of your array, implement your own geometric growth strategy, passing the size you compute to `reserveCapacity(_:)`.
 
-> **Note**: O(), where  is the number of elements in the array.
+> **Note**: O(*n*), where *n* is the number of elements in the array.
 
 ## Parameters
 

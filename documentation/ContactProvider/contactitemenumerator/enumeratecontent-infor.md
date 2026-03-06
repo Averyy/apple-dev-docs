@@ -27,7 +27,7 @@ During content enumeration, every [`ContactItemPage`](contactitempage.md) except
 ## Parameters
 
 - `page`: The page to enumerate items from.
-- `observer`: The system observer that receives the content items and   enumeration state.
+- `observer`: The system observer that receives the content items and enumeration state.
 
 ## See Also
 

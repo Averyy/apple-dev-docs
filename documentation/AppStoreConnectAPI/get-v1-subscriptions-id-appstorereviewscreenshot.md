@@ -8,6 +8,16 @@ Get information about review screenshot for a specific auto-renewable subscripti
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/appStoreReviewScreenshot`
+
+## Parameters
+
+- `fields[subscriptionAppStoreReviewScreenshots]` ([string])
+- `fields[subscriptions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

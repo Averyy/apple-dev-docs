@@ -27,17 +27,17 @@ A reference to the unstructured task which may be awaited on.
 
 #### Discussion
 
-This function  the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
+This function *starts* the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
 
-As indicated by the lack of `async` on this method, this method does  suspend, and instead takes over the calling task’s (thread’s) execution in a synchronous manner.
+As indicated by the lack of `async` on this method, this method does *not* suspend, and instead takes over the calling task’s (thread’s) execution in a synchronous manner.
 
 Other than the execution semantics discussed above, the created task is semantically equivalent to a task created using the `Task/init` initializer.
 
 ## Parameters
 
 - `name`: The high-level human-readable name given for this task
-- `priority`: The priority of the task.   Pass   to use the   of the current task (if there is one).
-- `taskExecutor`: The task executor that the child task should be started on and keep using.   Explicitly passing   as the executor preference is equivalent to no preference,   and effectively means to inherit the outer context’s executor preference.   You can also pass the   global executor explicitly.
+- `priority`: The priority of the task. Pass `nil` to use the [`basePriority`](task/basepriority.md) of the current task (if there is one).
+- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to no preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](globalconcurrentexecutor.md) global executor explicitly.
 - `operation`: The operation to be run immediately upon entering the task.
 
 ## See Also

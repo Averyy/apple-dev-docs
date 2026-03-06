@@ -8,6 +8,8 @@ Create a header with a caption that’s layered in front of an image.
 
 In [`Setting Up the Advanced Tutorials`](setting-up-the-advanced-tutorials.md), you learned how to download some article bundles, including one called `News_Design_Tutorial_6_Embeds.zip`, which represents the outcome of the introductory tutorial.
 
+**On this page, you’ll learn how to create a layered header by adding code to the article.json file.**
+
 ##### Replace a Captioned Photo with an Image Fill
 
 An image fill is an image that is set as the background fill of a component. When you use an image fill, any other content in the component looks like it is layered in front of the image. This allows you to create collage effects and other layering effects.
@@ -23,7 +25,7 @@ To replace a captioned photo with an image fill:
 
 1. Open the `article.json` file that you completed in [`Adding a Podcast`](adding-a-podcast.md), or open `Desktop/News_Design_Tutorial/News_Design_Tutorial_6_Embeds/article.json`.
 2. Copy the example code [`Header and Caption: Copy This Code`](creating-a-layered-header#Header-and-Caption-Copy-This-Code.md).
-3. Paste the code inside the `components` array in your `article.json` file, after the opening bracket (`[`). Previewing your article won’t work temporarily, because it includes a reference to a nonexistent `headerImageLayout` object. You’ll define this `ComponentLayout` object in [`Define a ComponentLayout Object for Headers`](creating-a-layered-header#Define-a-ComponentLayout-Object-for-Headers.md)
+3. Paste the code inside the `components` array in your `article.json` file, after the opening bracket (`[`). Previewing your article won’t work temporarily, because it includes a reference to a nonexistent `headerImageLayout` object. You’ll define this `ComponentLayout` object in [`Define a ComponentLayout Object for Headers`](creating-a-layered-header#Define-a-ComponentLayout-Object-for-Headers.md)*.*
 4. In your `article.json` file, delete the `photo` component and the `caption` component that follows it, beginning with the opening brace (`{`) before `"role": "photo"` and ending with a closing brace and comma (`},`).
 
 Your code should look like the example code [`Header and Caption: Result`](creating-a-layered-header#Header-and-Caption-Result.md).

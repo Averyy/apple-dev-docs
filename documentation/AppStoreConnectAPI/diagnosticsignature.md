@@ -22,6 +22,14 @@ object DiagnosticSignature
 ### Dictionaries
 - [object DiagnosticSignature.Relationships](diagnosticsignature/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (DiagnosticSignature.Attributes): Attributes that describe the diagnostic signature resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a diagnostic signature.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (DiagnosticSignature.Relationships)
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

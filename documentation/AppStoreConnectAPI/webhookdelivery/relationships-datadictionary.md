@@ -17,6 +17,10 @@ object WebhookDelivery.Relationships
 ### Dictionaries
 - [object WebhookDelivery.Relationships.Event](webhookdelivery/relationships-data.dictionary/event-data.dictionary.md)
 
+## Properties
+
+- `event` (WebhookDelivery.Relationships.Event)
+
 
 ---
 

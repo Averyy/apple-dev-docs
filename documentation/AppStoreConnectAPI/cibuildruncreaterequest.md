@@ -20,6 +20,10 @@ object CiBuildRunCreateRequest
 - [object CiBuildRunCreateRequest.Data](cibuildruncreaterequest/data-data.dictionary.md)
   The data element of the request you use to start a new Xcode Cloud build.
 
+## Properties
+
+- `data` (CiBuildRunCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object CiBuildRun](cibuildrun.md)

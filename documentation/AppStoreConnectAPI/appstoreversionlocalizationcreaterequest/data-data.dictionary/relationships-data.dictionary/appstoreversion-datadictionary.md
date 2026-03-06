@@ -20,6 +20,10 @@ object AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersi
 - [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersion.Data](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersion.Data) *(required)*
+
 
 ---
 

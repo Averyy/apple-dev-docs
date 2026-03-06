@@ -20,6 +20,10 @@ object AppStoreVersionExperimentV2CreateRequest
 - [object AppStoreVersionExperimentV2CreateRequest.Data](appstoreversionexperimentv2createrequest/data-data.dictionary.md)
   The request body you use to update an app store version experiment v2create request.
 
+## Properties
+
+- `data` (AppStoreVersionExperimentV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)

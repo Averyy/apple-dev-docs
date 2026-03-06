@@ -26,12 +26,12 @@ The distance between `start` and `end`.
 
 #### Discussion
 
-> **Note**: O(), where  is the resulting distance.
+> **Note**: O(*n*), where *n* is the resulting distance.
 
 ## Parameters
 
 - `start`: A valid index of the collection.
-- `end`: Another valid index of the collection. If   is equal to   , the result is zero.
+- `end`: Another valid index of the collection. If `end` is equal to `start`, the result is zero.
 
 ## See Also
 

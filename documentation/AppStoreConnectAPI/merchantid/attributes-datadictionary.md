@@ -14,6 +14,11 @@ Attributes that describe a merchant ID resource.
 object MerchantId.Attributes
 ```
 
+## Properties
+
+- `identifier` (string)
+- `name` (string)
+
 
 ---
 

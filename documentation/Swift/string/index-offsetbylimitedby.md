@@ -46,13 +46,13 @@ print(j)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 
-> **Note**: O(), where  is the absolute value of `distance`.
+> **Note**: O(*n*), where *n* is the absolute value of `distance`.
 
 ## Parameters
 
 - `i`: A valid index of the collection.
-- `distance`: The distance to offset  .
-- `limit`: A valid index of the collection to use as a limit. If   , a limit that is less than   has no effect.   Likewise, if  , a limit that is greater than   has no   effect.
+- `distance`: The distance to offset `i`.
+- `limit`: A valid index of the collection to use as a limit. If `distance > 0`, a limit that is less than `i` has no effect. Likewise, if `distance < 0`, a limit that is greater than `i` has no effect.
 
 ## See Also
 

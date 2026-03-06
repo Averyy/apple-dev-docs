@@ -22,7 +22,7 @@ mutating func waitForAll(isolation: isolated (any Actor)? = #isolation) async th
 
 #### Discussion
 
-If any of the tasks throw, the  error thrown is captured and re-thrown by this method although the task group is  canceled when this happens.
+If any of the tasks throw, the *first* error thrown is captured and re-thrown by this method although the task group is *not* canceled when this happens.
 
 ##### Cancelling the Task Group on First Error
 
@@ -46,7 +46,7 @@ while !group.isEmpty {
 assert(group.isEmpty())
 ```
 
-> **Note**: The  error that was thrown by a child task during draining all the tasks. This first error is stored until all other tasks have completed, and is re-thrown afterwards.
+> **Note**: The *first* error that was thrown by a child task during draining all the tasks. This first error is stored until all other tasks have completed, and is re-thrown afterwards.
 
 ## See Also
 

@@ -14,6 +14,11 @@ Attributes that describe an app custom product page localization create request 
 object AppCustomProductPageLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `promotionalText` (string)
+
 ## See Also
 
 - [object AppCustomProductPageLocalizationCreateRequest.Data.Relationships](appcustomproductpagelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

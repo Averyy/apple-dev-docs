@@ -12,6 +12,11 @@
 object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

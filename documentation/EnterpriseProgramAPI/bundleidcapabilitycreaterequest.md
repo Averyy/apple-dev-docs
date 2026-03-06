@@ -17,6 +17,10 @@ object BundleIdCapabilityCreateRequest
 - [object BundleIdCapabilityCreateRequest.Data](bundleidcapabilitycreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BundleIdCapabilityCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

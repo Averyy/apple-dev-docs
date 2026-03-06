@@ -14,6 +14,11 @@ The data element of the request body.
 object InAppPurchaseOfferCodeCustomCodesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

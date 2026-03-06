@@ -8,6 +8,14 @@ Create a relationship between two Game Center app versions.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [POST /v1/gameCenterAppVersions](post-v1-gamecenterappversions.md)

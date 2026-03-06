@@ -17,6 +17,11 @@ object Nomination.Relationships.SupportedTerritories
 ### Dictionaries
 - [object Nomination.Relationships.SupportedTerritories.Data](nomination/relationships-data.dictionary/supportedterritories-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Nomination.Relationships.SupportedTerritories.Data])
+- `meta` (PagingInformation)
+
 
 ---
 

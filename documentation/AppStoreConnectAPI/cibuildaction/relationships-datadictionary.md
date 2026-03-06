@@ -24,6 +24,13 @@ object CiBuildAction.Relationships
 - [object CiBuildAction.Relationships.Issues](cibuildaction/relationships-data.dictionary/issues-data.dictionary.md)
 - [object CiBuildAction.Relationships.TestResults](cibuildaction/relationships-data.dictionary/testresults-data.dictionary.md)
 
+## Properties
+
+- `artifacts` (CiBuildAction.Relationships.Artifacts)
+- `buildRun` (CiBuildAction.Relationships.BuildRun): The data and links that describe the relationship between the Build Actions and the Build Runs resources.
+- `issues` (CiBuildAction.Relationships.Issues)
+- `testResults` (CiBuildAction.Relationships.TestResults)
+
 ## See Also
 
 - [object CiBuildAction.Attributes](cibuildaction/attributes-data.dictionary.md)

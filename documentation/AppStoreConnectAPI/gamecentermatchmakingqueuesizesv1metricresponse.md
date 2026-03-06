@@ -20,6 +20,12 @@ object GameCenterMatchmakingQueueSizesV1MetricResponse
 - [object GameCenterMatchmakingQueueSizesV1MetricResponse.Data](gamecentermatchmakingqueuesizesv1metricresponse/data-data.dictionary.md)
   The data structure in a response body for queue sizes.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingQueueSizesV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse](gamecentermatchmakingapprequestsv1metricresponse.md)

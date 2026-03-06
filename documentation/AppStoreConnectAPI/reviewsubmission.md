@@ -22,6 +22,14 @@ object ReviewSubmission
 - [object ReviewSubmission.Relationships](reviewsubmission/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (ReviewSubmission.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (ReviewSubmission.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object ReviewSubmissionItem](reviewsubmissionitem.md)

@@ -40,9 +40,9 @@ When the `stopOnVasResult` parameter is `false`:
 ## Parameters
 
 - `request`: The transaction object you provide with the payment amount and currency details.
-- `vasRequest`: The object that you use to specify the loyalty card request details,   such as the list of supported merchants.
+- `vasRequest`: The object that you use to specify the loyalty card request details, such as the list of supported merchants.
 - `stopOnVASResult`: A Boolean that indicates what type of result to return. See the discussion for details of how this parameter affects the return value.
-- `eventHandler`: A handler you use to receive request-related updates. The handler   handler has no return value and takes a   as a parameter.   Use the event parameter to determine what happened.
+- `eventHandler`: A handler you use to receive request-related updates. The handler handler has no return value and takes a [`PaymentCardReaderSession.Event`](paymentcardreadersession/event.md) as a parameter. Use the event parameter to determine what happened.
 
 ## See Also
 

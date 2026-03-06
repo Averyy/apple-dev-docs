@@ -26,6 +26,12 @@ Only provide one of the optional properties. If a client receives a result with 
 - [object BooleanResolutionResult.Success](booleanresolutionresult/success-data.dictionary.md)
   A Boolean value that successfully matches the intent.
 
+## Properties
+
+- `class` (string): The specific type of result.
+- `success` (BooleanResolutionResult.Success): A Boolean value that matches the intent.
+- `confirmationRequired` (BooleanResolutionResult.ConfirmationRequired): A Boolean value for the user to confirm or reject before proceeding.
+
 ## Relationships
 
 ### Inherits From

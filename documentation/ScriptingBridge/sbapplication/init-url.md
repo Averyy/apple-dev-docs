@@ -27,7 +27,7 @@ This method currently supports file URLs (`file:`) and remote application URLs (
 
 ## Parameters
 
-- `url`: A Universal Resource Locator (URL) specifying an application that is   OSA-compliant.
+- `url`: A Universal Resource Locator (URL) specifying an application that is OSA-compliant.
 
 ## See Also
 

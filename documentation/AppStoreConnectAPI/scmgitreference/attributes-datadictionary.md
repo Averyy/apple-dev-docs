@@ -14,6 +14,13 @@ The attributes that describe a Git Reference resource.
 object ScmGitReference.Attributes
 ```
 
+## Properties
+
+- `canonicalName` (string): The canonical name of the Git reference.
+- `isDeleted` (boolean): A Boolean value that indicates whether the Git reference was deleted.
+- `kind` (CiGitRefKind): A value that indicates whether the Git reference is a tag or a branch.
+- `name` (string): The name of the Git reference.
+
 ## See Also
 
 - [object ScmGitReference.Relationships](scmgitreference/relationships-data.dictionary.md)

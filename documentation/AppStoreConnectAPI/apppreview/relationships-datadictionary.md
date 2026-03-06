@@ -20,6 +20,10 @@ object AppPreview.Relationships
 - [object AppPreview.Relationships.AppPreviewSet](apppreview/relationships-data.dictionary/apppreviewset-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appPreviewSet` (AppPreview.Relationships.AppPreviewSet)
+
 ## See Also
 
 - [object AppPreview.Attributes](apppreview/attributes-data.dictionary.md)

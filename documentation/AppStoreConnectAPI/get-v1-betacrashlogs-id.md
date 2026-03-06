@@ -8,6 +8,14 @@ Get crash log details for a specific beta feedback crash submission.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaCrashLogs/{id}`
+
+## Parameters
+
+- `fields[betaCrashLogs]` ([string])
+
 
 ---
 

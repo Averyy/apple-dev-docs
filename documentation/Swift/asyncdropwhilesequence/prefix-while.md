@@ -42,7 +42,7 @@ for try await number in stream {
 
 ## Parameters
 
-- `predicate`: A closure that takes an element as a parameter and   returns a Boolean value indicating whether the element should be   included in the modified sequence.
+- `predicate`: A closure that takes an element as a parameter and returns a Boolean value indicating whether the element should be included in the modified sequence.
 
 
 ---

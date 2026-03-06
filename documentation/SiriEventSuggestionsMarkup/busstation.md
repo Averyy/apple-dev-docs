@@ -14,6 +14,12 @@ The name and location of a bus station.
 object BusStation
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `address` (PostalAddress) *(required)*: The location of the bus station.
+- `name` (string) *(required)*: The name of the bus station.
+
 ## See Also
 
 - [object BusTrip](bustrip.md)

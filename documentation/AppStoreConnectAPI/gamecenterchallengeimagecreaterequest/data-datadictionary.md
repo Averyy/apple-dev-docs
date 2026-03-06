@@ -19,6 +19,12 @@ object GameCenterChallengeImageCreateRequest.Data
   Attributes that describe a challenge image resource.
 - [object GameCenterChallengeImageCreateRequest.Data.Relationships](gamecenterchallengeimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterChallengeImageCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterChallengeImageCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

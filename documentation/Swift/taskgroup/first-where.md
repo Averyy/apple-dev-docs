@@ -39,7 +39,7 @@ The predicate executes each time the asynchronous sequence produces an element, 
 
 ## Parameters
 
-- `predicate`: A closure that takes an element of the asynchronous   sequence as its argument and returns a Boolean value that indicates   whether the element is a match.
+- `predicate`: A closure that takes an element of the asynchronous sequence as its argument and returns a Boolean value that indicates whether the element is a match.
 
 ## See Also
 

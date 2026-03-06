@@ -14,6 +14,11 @@ The resource object for a match request.
 object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for a [`GameCenterMatchmakingTestRequestInlineCreate`](gamecentermatchmakingtestrequestinlinecreate.md) resource object that you add to the `included` field of the request body.
+- `type` (string) *(required)*: The type of resource object.
+
 
 ---
 

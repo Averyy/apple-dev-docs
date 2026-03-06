@@ -34,7 +34,7 @@ The corresponding C function is `open`.
 - `mode`: The read and write access to use.
 - `options`: The behavior for opening the file.
 - `permissions`: The file permissions to use for created files.
-- `retryOnInterrupt`: Whether to retry the open operation   if it throws  .   The default is  .   Pass   to try only once and throw an error upon interruption.
+- `retryOnInterrupt`: Whether to retry the open operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
 
 ## See Also
 

@@ -20,6 +20,10 @@ object AppEncryptionDeclarationCreateRequest
 - [object AppEncryptionDeclarationCreateRequest.Data](appencryptiondeclarationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppEncryptionDeclarationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationDocument](appencryptiondeclarationdocument.md)

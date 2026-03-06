@@ -8,6 +8,17 @@ List all Git repositories Xcode Cloud can access.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmRepositories`
+
+## Parameters
+
+- `fields[scmRepositories]` ([string]): Additional fields to include for each Repositories resource returned by the response.
+- `filter[id]` ([string]): Filter the returned repositories using the ID of the Repositories resource.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The number of Repositories resources to return.
+
 ## See Also
 
 - [Read Git Repository Information](get-v1-scmrepositories-_id_.md)

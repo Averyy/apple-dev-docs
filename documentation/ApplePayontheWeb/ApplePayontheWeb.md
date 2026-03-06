@@ -26,10 +26,10 @@ Apple Pay is available in [`supported regions`](https://developer.apple.comhttps
 
 The Apple Pay APIs are available in Safari on the following platforms:
 
-|  |  |  |
+|  | **Worldwide (except China)** | **China** |
 | --- | --- | --- |
-|  | iOS 10 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) macOS 10.12 and later | iOS 11.2 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Not available in macOS) |
-|  | iOS 11.3 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) macOS 10.12.6 and later, in Safari 11.1 and later | iOS 11.3 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Not available in macOS) |
+| **Apple Pay JS** | iOS 10 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) macOS 10.12 and later | iOS 11.2 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Not available in macOS) |
+| **Payment Request API** | iOS 11.3 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) macOS 10.12.6 and later, in Safari 11.1 and later | iOS 11.3 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Not available in macOS) |
 
 In iOS, Safari and [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) objects support Apple Pay.
 

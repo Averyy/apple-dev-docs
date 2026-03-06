@@ -17,6 +17,12 @@ object UserUpdateRequest.Data
 - [object UserUpdateRequest.Data.Attributes](userupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes for which you change values as part of the update request.
 
+## Properties
+
+- `attributes` (UserUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

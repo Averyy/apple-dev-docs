@@ -31,7 +31,7 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: O() on average, where  is the length of `newElements`, over many calls to `append(contentsOf:)` on the same array.
+> **Note**: O(*m*) on average, where *m* is the length of `newElements`, over many calls to `append(contentsOf:)` on the same array.
 
 ## Parameters
 

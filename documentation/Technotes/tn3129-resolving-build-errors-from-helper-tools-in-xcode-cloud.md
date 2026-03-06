@@ -71,7 +71,7 @@ For example, if you are using Xcode 13.2, which contains the macOS 12.1 SDK, the
 
 #### Revision History
 
--  First published.
+- **2022-07-19** First published.
 
 ## See Also
 

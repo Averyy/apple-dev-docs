@@ -12,6 +12,14 @@ Commit an uploaded image asset as a Game Center challenge image.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterChallengeImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read image information for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)

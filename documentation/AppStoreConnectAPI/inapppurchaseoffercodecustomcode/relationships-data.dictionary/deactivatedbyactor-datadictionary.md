@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor.Data](inapppurchaseoffercodecustomcode/relationships-data.dictionary/deactivatedbyactor-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor.Data)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/createdbyactor-data.dictionary.md)

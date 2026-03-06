@@ -20,6 +20,10 @@ object CiBuildRun.Relationships.Product
 - [object CiBuildRun.Relationships.Product.Data](cibuildrun/relationships-data.dictionary/product-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Products resource.
 
+## Properties
+
+- `data` (CiBuildRun.Relationships.Product.Data): The ID and type of the related Products resource.
+
 ## See Also
 
 - [object CiBuildRun.Relationships.Builds](cibuildrun/relationships-data.dictionary/builds-data.dictionary.md)

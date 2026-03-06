@@ -20,6 +20,13 @@ object BuildIcon
 - [object BuildIcon.Attributes](buildicon/attributes-data.dictionary.md)
   Attributes that describe a Build Icons resource.
 
+## Properties
+
+- `attributes` (BuildIcon.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BuildIconsResponse](buildiconsresponse.md)

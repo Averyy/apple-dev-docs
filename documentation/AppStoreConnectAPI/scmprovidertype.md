@@ -14,6 +14,12 @@ The source code management provider’s type.
 object ScmProviderType
 ```
 
+## Properties
+
+- `displayName` (string): The source code management provider’s display name; for example, `Bitbucket Server`.
+- `isOnPremise` (boolean): A Boolean value that indicates whether it’s a self-hosted source code management provider.
+- `kind` (string): A string that represents the kind of a Providers resource.
+
 ## See Also
 
 - [object ScmProvider.Attributes](scmprovider/attributes-data.dictionary.md)

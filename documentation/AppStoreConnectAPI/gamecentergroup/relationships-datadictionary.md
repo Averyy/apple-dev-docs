@@ -29,6 +29,18 @@ object GameCenterGroup.Relationships
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardsV2](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary.md)
   The data and links that describe the Game Center leaderboards of the Game Center group.
 
+## Properties
+
+- `gameCenterAchievements` (GameCenterGroup.Relationships.GameCenterAchievements)
+- `gameCenterDetails` (GameCenterGroup.Relationships.GameCenterDetails)
+- `gameCenterLeaderboards` (GameCenterGroup.Relationships.GameCenterLeaderboards)
+- `gameCenterLeaderboardSets` (GameCenterGroup.Relationships.GameCenterLeaderboardSets)
+- `gameCenterAchievementsV2` (GameCenterGroup.Relationships.GameCenterAchievementsV2)
+- `gameCenterActivities` (GameCenterGroup.Relationships.GameCenterActivities)
+- `gameCenterChallenges` (GameCenterGroup.Relationships.GameCenterChallenges)
+- `gameCenterLeaderboardSetsV2` (GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2)
+- `gameCenterLeaderboardsV2` (GameCenterGroup.Relationships.GameCenterLeaderboardsV2)
+
 ## See Also
 
 - [object GameCenterGroup.Attributes](gamecentergroup/attributes-data.dictionary.md)

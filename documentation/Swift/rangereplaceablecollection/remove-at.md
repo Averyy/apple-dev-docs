@@ -39,11 +39,11 @@ print(measurements)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `i`: The position of the element to remove.   must be   a valid index of the collection that is not equal to the collection’s   end index.
+- `i`: The position of the element to remove. `index` must be a valid index of the collection that is not equal to the collection’s end index.
 
 
 ---

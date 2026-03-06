@@ -28,6 +28,15 @@ object Albums
 - [object Albums.Views](albums/views-data.dictionary.md)
   The relationship views for an album resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the album.
+- `type` (string) *(required)*: This value is always `albums`.
+- `href` (string) *(required)*: The relative location for the album resource.
+- `attributes` (Albums.Attributes): The attributes for the album.
+- `relationships` (Albums.Relationships): The relationships for the album.
+- `views` (Albums.Views): The relationship views for the album.
+
 ## See Also
 
 - [object AlbumsResponse](albumsresponse.md)

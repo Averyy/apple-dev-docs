@@ -12,6 +12,10 @@
 object App.Relationships.AppAvailabilityV2
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

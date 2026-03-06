@@ -25,6 +25,12 @@ object GameCenterGroup.Relationships.GameCenterAchievementsV2
 ### Dictionaries - generated
 - [object GameCenterGroup.Relationships.GameCenterAchievementsV2.Data](gamecentergroup/relationships-data.dictionary/gamecenterachievementsv2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterGroup.Relationships.GameCenterAchievementsV2.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

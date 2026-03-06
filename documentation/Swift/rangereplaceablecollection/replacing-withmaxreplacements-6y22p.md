@@ -28,7 +28,7 @@ A new collection in which all occurrences of `other` in `subrange` of the collec
 
 - `other`: The sequence to replace.
 - `replacement`: The new elements to add to the collection.
-- `maxReplacements`: A number specifying how many occurrences of    to replace. Default is  .
+- `maxReplacements`: A number specifying how many occurrences of `other` to replace. Default is `Int.max`.
 
 
 ---

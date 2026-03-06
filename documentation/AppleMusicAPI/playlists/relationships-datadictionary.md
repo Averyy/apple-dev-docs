@@ -24,6 +24,12 @@ object Playlists.Relationships
 - [object Playlists.Relationships.PlaylistsLibraryRelationship](playlists/relationships-data.dictionary/playlistslibraryrelationship.md)
   A relationship from the playlist to its library.
 
+## Properties
+
+- `curator` (Playlists.Relationships.PlaylistsCuratorRelationship): The curator that created the playlist. By default, `curator` includes identifiers only. Fetch limits: None
+- `library` (Playlists.Relationships.PlaylistsLibraryRelationship): Library playlist for a catalog playlist if added to library.
+- `tracks` (Playlists.Relationships.PlaylistsTracksRelationship): The songs and music videos included in the playlist. By default, `tracks` includes objects. Fetch limits: 100 default, 300 maximum
+
 ## See Also
 
 - [object Playlists.Attributes](playlists/attributes-data.dictionary.md)

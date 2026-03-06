@@ -14,6 +14,12 @@ A relationship from the album to its associated record label.
 object Albums.Relationships.AlbumsRecordLabelsRelationship
 ```
 
+## Properties
+
+- `href` (string): The relative location to fetch the relationship directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `data` ([RecordLabels]) *(required)*: The album’s associated record label.
+
 ## See Also
 
 - [object Albums.Relationships.AlbumsArtistsRelationship](albums/relationships-data.dictionary/albumsartistsrelationship.md)

@@ -8,6 +8,23 @@ Get all advanced App Clip experiences for an App Clip.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClips/{id}/appClipAdvancedExperiences`
+
+## Parameters
+
+- `fields[appClipAdvancedExperienceLocalizations]` ([string]): Additional fields to include for each Advanced App Clip Experiences resource returned by the response.
+- `fields[appClipAdvancedExperiences]` ([string]): Additional fields to include for each Advanced App Clip Experiences resource returned by the response.
+- `filter[action]` ([string]): Filter the returned advanced App Clip experiences using the verb that appears on the App Clip card.
+- `filter[placeStatus]` ([string]): Filter the returned advanced App Clip experiences using the status of the associated place in Apple Maps.
+- `filter[status]` ([string]): Filter the returned advanced App Clip experiences using their status.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The number of Advanced App Clip Experiences resources to return.
+- `limit[localizations]` (integer): The number of included Advanced App Clip Experiences resources to return if the advanced App Clip experience localizations relationship is included.
+- `fields[appClips]` ([string])
+- `fields[appClipAdvancedExperienceImages]` ([string])
+
 ## See Also
 
 - [List All Default App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)

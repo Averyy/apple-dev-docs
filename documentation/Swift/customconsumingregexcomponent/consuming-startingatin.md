@@ -28,8 +28,8 @@ The upper bound where the match terminates and a matched instance, or `nil` if t
 ## Parameters
 
 - `input`: The string in which the match is performed.
-- `index`: An index of   at which to begin matching.
-- `bounds`: The bounds in   in which the match is performed.
+- `index`: An index of `input` at which to begin matching.
+- `bounds`: The bounds in `input` in which the match is performed.
 
 
 ---

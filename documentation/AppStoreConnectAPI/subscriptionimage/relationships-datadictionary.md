@@ -19,6 +19,10 @@ object SubscriptionImage.Relationships
 - [object SubscriptionImage.Relationships.Subscription](subscriptionimage/relationships-data.dictionary/subscription-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `subscription` (SubscriptionImage.Relationships.Subscription)
+
 ## See Also
 
 - [object SubscriptionImage.Attributes](subscriptionimage/attributes-data.dictionary.md)

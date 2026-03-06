@@ -19,6 +19,10 @@ object GameCenterLeaderboardSetMemberLocalizationCreateRequest
 ### Objects
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetMemberLocalization](gamecenterleaderboardsetmemberlocalization.md)

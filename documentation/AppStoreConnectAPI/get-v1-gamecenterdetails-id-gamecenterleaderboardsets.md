@@ -8,6 +8,26 @@ Get all leaderboard sets and related information for a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/gameCenterLeaderboardSets`
+
+## Parameters
+
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardSetLocalizations]` ([string])
+- `fields[gameCenterLeaderboardSetReleases]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[id]` ([string])
+- `filter[referenceName]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[gameCenterLeaderboards]` (integer)
+- `limit[localizations]` (integer)
+- `limit[releases]` (integer)
+
 ## See Also
 
 - [List all Game Center leaderboard sets for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterleaderboardsetsv2.md)

@@ -17,6 +17,10 @@ object PassTypeId.Relationships
 - [object PassTypeId.Relationships.Certificates](passtypeid/relationships-data.dictionary/certificates-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `certificates` (PassTypeId.Relationships.Certificates)
+
 ## See Also
 
 - [object PassTypeId.Attributes](passtypeid/attributes-data.dictionary.md)

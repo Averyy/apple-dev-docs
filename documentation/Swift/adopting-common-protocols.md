@@ -8,8 +8,8 @@ Make your custom types easier to use by ensuring that they conform to Swift prot
 
 When using custom types to model data in your programs, you may frequently need to check whether two values are the same or different, or whether a particular value is included in a list of values. This capability, as well as the ability to store values in a set or use them as keys in a dictionary, are governed by two related standard library protocols, [`Equatable`](equatable.md) and [`Hashable`](hashable.md).
 
-- You can compare instances of an  type by using the equal-to (`==`) and not-equal-to (`!=`) operators.
-- An instance of a  type can reduce its value mathematically to a single integer, which is used internally by sets and dictionaries to make lookups consistently fast.
+- You can compare instances of an *equatable* type by using the equal-to (`==`) and not-equal-to (`!=`) operators.
+- An instance of a *hashable* type can reduce its value mathematically to a single integer, which is used internally by sets and dictionaries to make lookups consistently fast.
 
 Many standard library types are both equatable and hashable, including strings, integers, floating-point values, Boolean values, and collections of equatable and hashable types. The `==` comparison and the `contains(_:)` method call in the following example depend on strings and integers being equatable:
 
@@ -80,8 +80,8 @@ if visitedPositions.contains(currentPosition) {
 
 In addition to simplifying your code, this automatic conformance reduces errors, because any new properties you add to your custom types are automatically included when hashing and testing for equality. A type is eligible for automatic conformance to `Equatable` and `Hashable` when it’s a structure or an enumeration that meets these criteria:
 
-- For a structure,  its stored properties must conform to `Equatable` and `Hashable`.
-- For an enumeration,  its associated values must conform to `Equatable` and `Hashable`. (Enumerations without associated values have `Equatable` and `Hashable` conformance even without declaring adoption.)
+- For a structure, *all* its stored properties must conform to `Equatable` and `Hashable`.
+- For an enumeration, *all* its associated values must conform to `Equatable` and `Hashable`. (Enumerations without associated values have `Equatable` and `Hashable` conformance even without declaring adoption.)
 
 ##### Conform Manually to Equatable and Hashable
 

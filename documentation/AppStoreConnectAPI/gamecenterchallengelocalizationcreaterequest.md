@@ -19,6 +19,10 @@ object GameCenterChallengeLocalizationCreateRequest
 ### Dictionaries
 - [object GameCenterChallengeLocalizationCreateRequest.Data](gamecenterchallengelocalizationcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeLocalizationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengeLocalization](gamecenterchallengelocalization.md)

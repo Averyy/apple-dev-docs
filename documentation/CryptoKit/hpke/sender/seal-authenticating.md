@@ -33,7 +33,7 @@ You can call this method multiple times to encrypt a series of messages. When us
 ## Parameters
 
 - `msg`: The cleartext message to encrypt.
-- `aad`: Additional data that the   authenticates and adds to the message in cleartext.
+- `aad`: Additional data that the `Sender` authenticates and adds to the message in cleartext.
 
 
 ---

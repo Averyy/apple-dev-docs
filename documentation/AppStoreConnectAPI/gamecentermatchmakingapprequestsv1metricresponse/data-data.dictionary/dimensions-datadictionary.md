@@ -20,6 +20,10 @@ object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.Dimensions
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.Dimensions.Result](gamecentermatchmakingapprequestsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/result-data.dictionary.md)
   The links to the details of the data.
 
+## Properties
+
+- `result` (GameCenterMatchmakingAppRequestsV1MetricResponse.Data.Dimensions.Result)
+
 ## See Also
 
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.DataPoints](gamecentermatchmakingapprequestsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)

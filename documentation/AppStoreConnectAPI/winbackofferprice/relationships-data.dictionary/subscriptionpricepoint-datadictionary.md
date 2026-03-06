@@ -20,6 +20,10 @@ object WinBackOfferPrice.Relationships.SubscriptionPricePoint
 - [object WinBackOfferPrice.Relationships.SubscriptionPricePoint.Data](winbackofferprice/relationships-data.dictionary/subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (WinBackOfferPrice.Relationships.SubscriptionPricePoint.Data)
+
 ## See Also
 
 - [object WinBackOfferPrice.Relationships.Territory](winbackofferprice/relationships-data.dictionary/territory-data.dictionary.md)

@@ -8,6 +8,15 @@ Get the state of a background asset version App Store release.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssetVersionAppStoreReleases/{id}`
+
+## Parameters
+
+- `fields[backgroundAssetVersionAppStoreReleases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read background assets external beta release information](get-v1-backgroundassetversionexternalbetareleases-_id_.md)

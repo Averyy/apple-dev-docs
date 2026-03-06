@@ -23,8 +23,8 @@ The object that received this method call.
 
 ## Parameters
 
-- `records`: A   dictionary representing the record to create, if you are creating a single record. If you are creating multiple records, this parameter is an array of   dictionaries representing the records to create. Only the values of the fields in the dictionaries are set.
-- `options`: A dictionary containing options for this operation. This parameter contains a single   key that is an array of field names (  values). Only the fields specified in the array are set.
+- `records`: A [`CloudKit.Record`](cloudkit.record.md) dictionary representing the record to create, if you are creating a single record. If you are creating multiple records, this parameter is an array of [`CloudKit.Record`](cloudkit.record.md) dictionaries representing the records to create. Only the values of the fields in the dictionaries are set.
+- `options`: A dictionary containing options for this operation. This parameter contains a single `desiredKeys` key that is an array of field names (`String` values). Only the fields specified in the array are set.
 
 ## See Also
 

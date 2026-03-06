@@ -14,6 +14,10 @@ The root call stack frames of the diagnostic log.
 object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree.CallStacks
 ```
 
+## Properties
+
+- `callStackRootFrames` ([DiagnosticLogCallStackNode]): An array of the root call stack frames that make up the diagnostic log.
+
 
 ---
 

@@ -20,6 +20,11 @@ object BuildAppEncryptionDeclarationLinkageResponse
 - [object BuildAppEncryptionDeclarationLinkageResponse.Data](buildappencryptiondeclarationlinkageresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` (BuildAppEncryptionDeclarationLinkageResponse.Data) *(required)*: The object types and IDs of the related resources.
+- `links` (DocumentLinks) *(required)*: Navigational links including the self-link and links to the related data.
+
 ## See Also
 
 - [Get the App Encryption Declaration ID for a Build](get-v1-builds-_id_-relationships-appencryptiondeclaration.md)

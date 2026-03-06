@@ -18,6 +18,12 @@ object NominationCreateRequest.Data
 - [object NominationCreateRequest.Data.Attributes](nominationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object NominationCreateRequest.Data.Relationships](nominationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (NominationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (NominationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

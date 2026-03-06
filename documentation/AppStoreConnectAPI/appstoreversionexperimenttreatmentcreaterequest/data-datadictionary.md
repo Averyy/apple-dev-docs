@@ -22,6 +22,12 @@ object AppStoreVersionExperimentTreatmentCreateRequest.Data
 - [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

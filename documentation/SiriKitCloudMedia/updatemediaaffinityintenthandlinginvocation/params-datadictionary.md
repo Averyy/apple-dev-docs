@@ -14,6 +14,10 @@ The parameters of an update media affinity intent request.
 object UpdateMediaAffinityIntentHandlingInvocation.Params
 ```
 
+## Properties
+
+- `intent` (UpdateMediaAffinityIntent) *(required)*: The update media affinity intent.
+
 
 ---
 

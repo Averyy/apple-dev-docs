@@ -25,6 +25,13 @@ For more information about the responses that include alternative distribution p
 ### Objects
 - [object AlternativeDistributionPackageDelta.Attributes](alternativedistributionpackagedelta/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AlternativeDistributionPackageDelta.Attributes)
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package delta.
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

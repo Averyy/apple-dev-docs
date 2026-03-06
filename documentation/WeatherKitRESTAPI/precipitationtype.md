@@ -16,6 +16,12 @@ string PrecipitationType
 
 #### Possible Values
 
+- **clear**: No precipitation is occurring.
+- **precipitation**: An unknown type of precipitation is occuring.
+- **rain**: Rain or freezing rain is falling. snow Snow is falling.
+- **sleet**: Sleet or ice pellets are falling. hail Hail is falling.
+- **mixed**: Winter weather (wintery mix or wintery showers) is falling.
+
 ## See Also
 
 - [type UnitsSystem](unitssystem.md)

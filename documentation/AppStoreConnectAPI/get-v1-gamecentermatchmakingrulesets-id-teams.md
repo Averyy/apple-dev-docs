@@ -8,6 +8,15 @@ Get information about the teams in a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSets/{id}/teams`
+
+## Parameters
+
+- `fields[gameCenterMatchmakingTeams]` ([string]): The fields of the teams to include in the response.
+- `limit` (integer): The maximum number of teams to fetch.
+
 ## See Also
 
 - [List all rule sets](get-v1-gamecentermatchmakingrulesets.md)

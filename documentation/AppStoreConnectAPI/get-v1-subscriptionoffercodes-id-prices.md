@@ -8,6 +8,19 @@ Get a list of price tiers for a subscription offer code.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}/prices`
+
+## Parameters
+
+- `fields[subscriptionOfferCodePrices]` ([string])
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `filter[territory]` ([string])
+
 ## See Also
 
 - [Create a Subscription Offer](post-v1-subscriptionoffercodes.md)

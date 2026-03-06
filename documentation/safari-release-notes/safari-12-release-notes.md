@@ -10,9 +10,9 @@ Safari 12 is included with iOS 12 and macOS 10.14. It’s also available for mac
 
 New features of Safari 12 include:
 
--  Show website icons in tabs.
--  Automatically generate strong, unique passwords when you sign up for accounts or change passwords on websites.
--  View 3D models or jump into an AR viewing experience in Safari on iOS 12.
+- **Icons in Tabs.** Show website icons in tabs.
+- **Automatic Strong Passwords.** Automatically generate strong, unique passwords when you sign up for accounts or change passwords on websites.
+- **3D & AR Model Viewer.** View 3D models or jump into an AR viewing experience in Safari on iOS 12.
 
 ##### Web on Watchos
 

@@ -14,6 +14,10 @@ A result that requires the user to confirm the Boolean value before proceeding.
 object BooleanResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `valueToConfirm` (boolean) *(required)*: A Boolean value for the user to confirm or reject.
+
 ## See Also
 
 - [object BooleanResolutionResult.Success](booleanresolutionresult/success-data.dictionary.md)

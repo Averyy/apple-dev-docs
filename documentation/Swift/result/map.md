@@ -39,7 +39,7 @@ let stringResult = integerResult.map { String($0) }
 
 ## Parameters
 
-- `transform`: A closure that takes the success value of this   instance.
+- `transform`: A closure that takes the success value of this instance.
 
 ## See Also
 

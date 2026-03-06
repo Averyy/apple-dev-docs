@@ -21,6 +21,14 @@ object AppCustomProductPageLocalization
 - [object AppCustomProductPageLocalization.Relationships](appcustomproductpagelocalization/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppCustomProductPageLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppCustomProductPageLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

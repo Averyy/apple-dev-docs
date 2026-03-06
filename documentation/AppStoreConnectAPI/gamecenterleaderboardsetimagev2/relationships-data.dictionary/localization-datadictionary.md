@@ -23,6 +23,10 @@ object GameCenterLeaderboardSetImageV2.Relationships.Localization
 ### Dictionaries - generated
 - [object GameCenterLeaderboardSetImageV2.Relationships.Localization.Data](gamecenterleaderboardsetimagev2/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetImageV2.Relationships.Localization.Data)
+
 
 ---
 

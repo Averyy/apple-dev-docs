@@ -24,7 +24,7 @@ The path must be a directory inside the package.
 
 ## Parameters
 
-- `path`: The path of the directory that contains the headers. The path is   relative to the target’s directory.
+- `path`: The path of the directory that contains the headers. The path is relative to the target’s directory.
 - `condition`: A condition that restricts the application of the build setting.
 
 ## See Also

@@ -20,6 +20,10 @@ object BuildBetaNotificationCreateRequest
 - [object BuildBetaNotificationCreateRequest.Data](buildbetanotificationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BuildBetaNotificationCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BuildBetaNotification](buildbetanotification.md)

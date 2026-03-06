@@ -20,6 +20,10 @@ object InAppPurchaseOfferPrice.Relationships.Territory
 - [object InAppPurchaseOfferPrice.Relationships.Territory.Data](inapppurchaseofferprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (InAppPurchaseOfferPrice.Relationships.Territory.Data)
+
 ## See Also
 
 - [object InAppPurchaseOfferPrice.Relationships.PricePoint](inapppurchaseofferprice/relationships-data.dictionary/pricepoint-data.dictionary.md)

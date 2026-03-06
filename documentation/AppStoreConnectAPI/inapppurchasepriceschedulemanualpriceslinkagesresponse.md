@@ -17,6 +17,12 @@ object InAppPurchasePriceScheduleManualPricesLinkagesResponse
 ### Dictionaries
 - [object InAppPurchasePriceScheduleManualPricesLinkagesResponse.Data](inapppurchasepriceschedulemanualpriceslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchasePriceScheduleManualPricesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)

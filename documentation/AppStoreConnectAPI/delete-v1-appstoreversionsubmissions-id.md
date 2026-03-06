@@ -18,6 +18,26 @@ Use this endpoint to remove a version from App Review. This request fails with a
 
 ##### Remove a Version From App Review
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionSubmissions/942c7a69-b184-478a-898f-a51b8be1044d
+```
+
+**Response**:
+
+```json
+HTTP/1.1 204 NO CONTENT
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionSubmissions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The unique identifier of the App Store version submission resource that you receive when you create the submission. This value is the same as the `id` property in the [`AppStoreVersionSubmission`](appstoreversionsubmission.md) object.
+
 
 ---
 

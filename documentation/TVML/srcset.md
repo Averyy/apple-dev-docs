@@ -22,6 +22,8 @@ Use the `srcset` attribute to specify different URLs for an image depending on t
 
 ##### Values for Srcset
 
+- **String**: The URL pointing to the location of the image file.
+
 ##### Elements That Use Srcset
 
 - [`badge`](badge.md)

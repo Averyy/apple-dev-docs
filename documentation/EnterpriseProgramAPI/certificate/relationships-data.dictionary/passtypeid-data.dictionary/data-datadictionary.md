@@ -11,6 +11,11 @@ The type and ID of a related resource.
 object Certificate.Relationships.PassTypeId.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

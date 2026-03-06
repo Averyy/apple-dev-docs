@@ -18,6 +18,14 @@ object InAppPurchaseContent
 - [object InAppPurchaseContent.Attributes](inapppurchasecontent/attributes-data.dictionary.md)
 - [object InAppPurchaseContent.Relationships](inapppurchasecontent/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseContent.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseContent.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseContentResponse](inapppurchasecontentresponse.md)

@@ -20,6 +20,10 @@ object AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest
 - [object AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest.Data](appcustomproductpagelocalizationsearchkeywordslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a product page localization search keywords linkage request resource.
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

@@ -42,7 +42,7 @@ If the package you depend on defines traits, the package manager uses the depend
 
 ## Parameters
 
-- `name`: The name of the package, or   to deduce it from the URL.
+- `name`: The name of the package, or `nil` to deduce it from the URL.
 - `url`: The valid Git URL of the package.
 - `range`: The closed version range requirement.
 

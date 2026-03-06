@@ -22,6 +22,14 @@ object CiWorkflow
 - [object CiWorkflow.Relationships](ciworkflow/relationships-data.dictionary.md)
   The relationships of the Workflows resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (CiWorkflow.Attributes): The attributes that describe the Workflows resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Workflows resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (CiWorkflow.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object CiAction](ciaction.md)

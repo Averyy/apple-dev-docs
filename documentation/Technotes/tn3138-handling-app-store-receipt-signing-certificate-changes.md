@@ -65,9 +65,9 @@ If your app successfully verifies the receipt and you’ve confirmed that the ne
 
 #### Revision History
 
--  Added the SHA-1 expiry date. Noted that the `verifyReceipt` endpoint is now deprecated. Made other minor editorial changes.
--  Updated date timeline.
--  First published.
+- **2024-10-31** Added the SHA-1 expiry date. Noted that the `verifyReceipt` endpoint is now deprecated. Made other minor editorial changes.
+- **2023-08-29** Updated date timeline.
+- **2023-05-26** First published.
 
 ## See Also
 

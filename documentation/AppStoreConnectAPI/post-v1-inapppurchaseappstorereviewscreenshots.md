@@ -12,6 +12,10 @@ Reserve a review screenshot for an in-app purchase.
 
 - [Managing in-app purchases](managing-in-app-purchases.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseAppStoreReviewScreenshots`
+
 ## See Also
 
 - [Read In-App Purchase Review Screenshot Information](get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)

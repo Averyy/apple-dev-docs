@@ -19,6 +19,14 @@ Remove a leaderboard from a Game Center activity.
 - 422:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}/relationships/leaderboardsV2`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

@@ -18,6 +18,13 @@ object SubscriptionUpdateRequest.Data
 - [object SubscriptionUpdateRequest.Data.Attributes](subscriptionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object SubscriptionUpdateRequest.Data.Relationships](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `relationships` (SubscriptionUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

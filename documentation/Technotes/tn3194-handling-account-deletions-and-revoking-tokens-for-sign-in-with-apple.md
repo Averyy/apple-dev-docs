@@ -55,7 +55,7 @@ If you have questions about implementing these flows, including client authoriza
 
 #### Revision History
 
--  First published.
+- **2025-10-03** First published.
 
 ## See Also
 

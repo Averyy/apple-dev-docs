@@ -6,7 +6,7 @@ Migrate Sign in with Apple users to another team.
 
 #### Overview
 
-Sign in with Apple maintains an association between your developer team, your apps, and your users. If your app transfers to another team, the app’s users also transfer.  is the process of moving your apps and its associated users to a recipient team. Both your team and the recipient team must perform certain steps in order to complete the migration process.
+Sign in with Apple maintains an association between your developer team, your apps, and your users. If your app transfers to another team, the app’s users also transfer. *Migration* is the process of moving your apps and its associated users to a recipient team. Both your team and the recipient team must perform certain steps in order to complete the migration process.
 
 > **Note**:  If your app supports multiple platforms, ungroup the apps before starting the transfer. The App Store Connect app won’t let you transfer an app if it’s part of an app group. For more information on app groups and ungrouping, see [`Group Apps for Sign in with Apple`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple).
 
@@ -14,7 +14,7 @@ Sign in with Apple maintains an association between your developer team, your ap
 
 Every Sign in with Apple user has a user identifier. Apple issues a signed ID token for the user that contains the user identifier and, if applicable, the private email address specific to your team. All of your applications share the same identifier for the user.
 
-To avoid exposing the user identifier to a different team, Apple generates a  for each user. The transfer identifier is unique to the recipient team and remains stable throughout the migration process. This allows you to transfer the user data to the recipient without exposing your team-scoped identifiers and private email addresses.
+To avoid exposing the user identifier to a different team, Apple generates a *transfer identifier* for each user. The transfer identifier is unique to the recipient team and remains stable throughout the migration process. This allows you to transfer the user data to the recipient without exposing your team-scoped identifiers and private email addresses.
 
 > **Note**:  When exporting the data from your database to transfer to the recipient team, you must exclude the team-scoped identifier and private email address, and include only the transfer identifier to identify the user.
 
@@ -39,6 +39,11 @@ grant_type=client_credentials&scope=user.migration&client_id={client_id}&client_
 ```
 
 The HTTP POST method includes these parameters:
+
+- **`grant_type`**: The type of grant requested. Set to `client_credentials`. Access the migration endpoint using your client application’s credentials.
+- **`scope`**: The scope of the migration. Set to `user.migration`.
+- **`client_id`**: The identifier (App ID or Services ID) for the transferring app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
+- **`client_secret`**: The client secret of the transferring team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferring app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
 
 Expect an HTTP POST response similar to the following example.
 
@@ -71,6 +76,11 @@ sub={sub}&target={recipient_team_id}&client_id={client_id}&client_secret={client
 ```
 
 The HTTP POST method includes these parameters:
+
+- **`sub`**: The team-scoped user identifier that Apple provides.
+- **`target`**: The Team ID of the recipient team to which you transfer the application.
+- **`client_id`**: The identifier (App ID or Services ID) for the transferring app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
+- **`client_secret`**: The client secret of the transferring team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferring app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
 
 Expect an HTTP POST response similar to the following example.
 

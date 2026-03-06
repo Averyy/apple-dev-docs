@@ -14,6 +14,12 @@ A response that contains a list of background asset upload file resources.
 object BackgroundAssetUploadFilesResponse
 ```
 
+## Properties
+
+- `data` ([BackgroundAssetUploadFile]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

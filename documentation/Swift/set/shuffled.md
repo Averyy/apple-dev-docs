@@ -36,7 +36,7 @@ let shuffledNumbers = numbers.shuffled()
 
 This method is equivalent to calling `shuffled(using:)`, passing in the system’s default random generator.
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## See Also
 

@@ -20,6 +20,13 @@ object GameCenterMatchmakingTeam
 - [object GameCenterMatchmakingTeam.Attributes](gamecentermatchmakingteam/attributes-data.dictionary.md)
   The attributes of a game-specific team.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingTeam.Attributes): The attributes of the team.
+- `id` (string) *(required)*: The unique identifier for the team.
+- `links` (ResourceLinks): The link representations of the object.
+- `type` (string) *(required)*: The type of resource object.
+
 ## See Also
 
 - [object GameCenterMatchmakingTeamCreateRequest](gamecentermatchmakingteamcreaterequest.md)

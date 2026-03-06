@@ -18,6 +18,14 @@ object InAppPurchaseAvailability
 - [object InAppPurchaseAvailability.Attributes](inapppurchaseavailability/attributes-data.dictionary.md)
 - [object InAppPurchaseAvailability.Relationships](inapppurchaseavailability/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseAvailability.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseAvailability.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAvailabilityCreateRequest](inapppurchaseavailabilitycreaterequest.md)

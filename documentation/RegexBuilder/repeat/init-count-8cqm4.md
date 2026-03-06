@@ -23,7 +23,7 @@ init<W, C1, C2, C3, C4>(_ component: some RegexComponent, count: Int) where Outp
 ## Parameters
 
 - `component`: The regex component to repeat.
-- `count`: The number of times to repeat  .   must   be greater than or equal to zero.
+- `count`: The number of times to repeat `component`. `count` must be greater than or equal to zero.
 
 
 ---

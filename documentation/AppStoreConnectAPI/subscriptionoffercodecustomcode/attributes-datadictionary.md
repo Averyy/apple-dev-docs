@@ -12,6 +12,14 @@
 object SubscriptionOfferCodeCustomCode.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+- `createdDate` (date-time)
+- `customCode` (string)
+- `expirationDate` (date)
+- `numberOfCodes` (integer)
+
 ## See Also
 
 - [object SubscriptionOfferCodeCustomCode.Relationships](subscriptionoffercodecustomcode/relationships-data.dictionary.md)

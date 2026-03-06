@@ -19,6 +19,16 @@ object Device.Attributes
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
 
+## Properties
+
+- `deviceClass` (string)
+- `model` (string)
+- `name` (string)
+- `platform` (BundleIdPlatform)
+- `status` (string)
+- `udid` (string)
+- `addedDate` (date-time)
+
 
 ---
 

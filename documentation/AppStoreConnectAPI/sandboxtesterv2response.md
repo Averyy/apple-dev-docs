@@ -12,6 +12,11 @@
 object SandboxTesterV2Response
 ```
 
+## Properties
+
+- `data` (SandboxTesterV2) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SandboxTesterV2UpdateRequest](sandboxtesterv2updaterequest.md)

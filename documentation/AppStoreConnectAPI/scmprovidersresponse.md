@@ -14,6 +14,12 @@ A response that contains a list of Providers resources.
 object ScmProvidersResponse
 ```
 
+## Properties
+
+- `data` ([ScmProvider]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object ScmProvider](scmprovider.md)

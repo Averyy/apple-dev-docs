@@ -12,6 +12,16 @@
 object GameCenterLeaderboardEntrySubmission.Attributes
 ```
 
+## Properties
+
+- `bundleId` (string)
+- `challengeIds` ([string])
+- `context` (number)
+- `scopedPlayerId` (string)
+- `score` (number)
+- `submittedDate` (date-time)
+- `vendorIdentifier` (string)
+
 
 ---
 

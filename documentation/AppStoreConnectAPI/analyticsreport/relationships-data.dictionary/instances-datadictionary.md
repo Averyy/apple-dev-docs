@@ -12,6 +12,10 @@
 object AnalyticsReport.Relationships.Instances
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

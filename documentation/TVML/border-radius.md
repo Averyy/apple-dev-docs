@@ -17,6 +17,12 @@ Use the `border-radius` style to apply rounded corners to elements. Here’s an 
 
 ##### Values for Border Radius
 
+- **4-tuple**: An image whose corners are cropped to the specified radius.
+- **`circle`**: An image that is cropped to fit inside of a circle.
+- **`large`**: An image whose corners are cropped to create rounded corners with a large radius.
+- **`medium`**: An images whose corners are cropped to create rounded corners with a medium radius.
+- **`small`**: An images whose corners are cropped to create rounded corners with a small radius.
+
 There are four ways to designate the border-radius style as a 4-tuple:
 
 - `border-radius: X1 X2 X3 X4`—Where X1 is applied to the top-left corner, X2 is applied to the top-right corner, X3 is applied to the bottom-right corner, and X4 is applied to the bottom-left corner.

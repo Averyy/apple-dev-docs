@@ -8,6 +8,14 @@ Delete the routing app coverage file that is associated with a version.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/routingAppCoverages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Modify a Routing App Coverage](patch-v1-routingappcoverages-_id_.md)

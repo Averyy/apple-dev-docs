@@ -12,6 +12,10 @@ Create a new certificate using a certificate signing request.
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/certificates`
+
 ## See Also
 
 - [Modify a certificate](patch-v1-certificates-_id_.md)

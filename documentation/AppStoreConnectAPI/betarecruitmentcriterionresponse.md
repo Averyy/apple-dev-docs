@@ -14,6 +14,11 @@ A response that contains a single beta recruitment criterion resource.
 object BetaRecruitmentCriterionResponse
 ```
 
+## Properties
+
+- `data` (BetaRecruitmentCriterion) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)

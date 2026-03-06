@@ -20,6 +20,12 @@ object Profile.Relationships.Devices
 - [object Profile.Relationships.Devices.Data](profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([Profile.Relationships.Devices.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Profile.Relationships.BundleId](profile/relationships-data.dictionary/bundleid-data.dictionary.md)

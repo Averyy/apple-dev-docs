@@ -23,6 +23,10 @@ object GameCenterLeaderboardV2ChallengeLinkageRequest
 ### Dictionaries - generated
 - [object GameCenterLeaderboardV2ChallengeLinkageRequest.Data](gamecenterleaderboardv2challengelinkagerequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardV2ChallengeLinkageRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

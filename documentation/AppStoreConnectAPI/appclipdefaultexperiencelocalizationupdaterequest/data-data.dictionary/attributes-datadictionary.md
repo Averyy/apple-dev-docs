@@ -14,6 +14,10 @@ The attributes you set that describe the Default App Clip Experience Localizatio
 object AppClipDefaultExperienceLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `subtitle` (string): The subtitle that appears on the App Clip card for the default App Clip experience.
+
 
 ---
 

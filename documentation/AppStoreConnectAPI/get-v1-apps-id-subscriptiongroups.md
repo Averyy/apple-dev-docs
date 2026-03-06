@@ -8,6 +8,23 @@ Get a list of subscription groups for a specific app.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/subscriptionGroups`
+
+## Parameters
+
+- `fields[subscriptionGroupLocalizations]` ([string])
+- `fields[subscriptionGroups]` ([string])
+- `fields[subscriptions]` ([string])
+- `filter[referenceName]` ([string])
+- `filter[subscriptions.state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[subscriptionGroupLocalizations]` (integer)
+- `limit[subscriptions]` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [Read the Billing Grace Period Value for an App](get-v1-apps-_id_-subscriptiongraceperiod.md)

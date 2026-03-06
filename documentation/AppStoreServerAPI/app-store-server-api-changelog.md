@@ -10,25 +10,37 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 ##### 119 20251210
 
+**New features**
+
 - Added the [`Send Consumption Information`](send-consumption-information.md) endpoint.
 - Added the [`revocationType`](revocationtype.md) and [`revocationPercentage`](revocationpercentage.md) fields to the [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
 - Added the [`advancedCommercePriceIncreaseInfo`](advancedcommercepriceincreaseinfo.md) object, and [`advancedCommercePriceIncreaseInfoDependentSKU`](advancedcommercepriceincreaseinfodependentsku.md), [`advancedCommercePriceIncreaseInfoStatus`](advancedcommercepriceincreaseinfostatus.md), [`advancedCommercePriceIncreaseInfoPrice`](advancedcommercepriceincreaseinfoprice.md), fields to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
+
+**Deprecations**
 
 - The [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint is deprecated. Use the new [`Send Consumption Information`](send-consumption-information.md) endpoint instead.
 
 ##### 118 20251029
 
+**New features**
+
 - Added the `ONE_TIME` value to [`offerDiscountType`](offerdiscounttype.md) to indicate In-App Purchase offer codes.
 
 ##### 117 20251016
+
+**New features**
 
 - Added the [`Get App Transaction Info`](get-app-transaction-info.md) endpoint and [`AppTransactionInfoResponse`](apptransactioninforesponse.md) response object.
 
 ##### 116 20250609
 
+**New features**
+
 - Added the [`Set App Account Token`](set-app-account-token.md) endpoint and [`UpdateAppAccountTokenRequest`](updateappaccounttokenrequest.md) request object, and related error codes:  [`TransactionIdIsNotOriginalTransactionIdError`](transactionidisnotoriginaltransactioniderror.md), [`FamilyTransactionNotSupportedError`](familytransactionnotsupportederror.md), and [`InvalidAppAccountTokenUUIDError`](invalidappaccounttokenuuiderror.md).
 
 ##### 115 20250221
+
+**New features**
 
 - Updated the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md) and [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md) to include the new [`appTransactionId`](apptransactionid.md) and [`offerPeriod`](offerperiod.md) fields.
 - Updated the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md) to include the [`appAccountToken`](appaccounttoken.md) field.
@@ -36,17 +48,25 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 ##### 114 20250117
 
+**New features**
+
 - Added support for [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
 
 ##### 113 20240708
+
+**New features**
 
 - Updated the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md) to include the new [`eligibleWinBackOfferIds`](eligiblewinbackofferids.md) field.
 - Added the win-back offer type in [`offerType`](offertype.md).
 
 ##### 112 20240610
 
+**New features**
+
 - Added the endpoint [`Get Transaction History`](get-transaction-history.md), which provides transaction history for all In-App Purchases, including consumable In-App Purchases in a finished state.
 - Added the fields [`renewalPrice`](renewalprice.md), [`currency`](currency.md) and [`offerDiscountType`](offerdiscounttype.md) to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
+
+**Deprecations**
 
 - The [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint is deprecated. Use the new [`Get Transaction History`](get-transaction-history.md) endpoint instead.
 
@@ -58,6 +78,8 @@ New features
 - [`Send Consumption Information V1`](send-consumption-information-v1.md) added  support for receiving information for auto-renewable subscriptions.
 - Added the [`InvalidTransactionTypeNotSupportedError`](invalidtransactiontypenotsupportederror.md) error object.
 
+**Deprecations**
+
 - The system no longer sends the [`InvalidTransactionNotConsumableError`](invalidtransactionnotconsumableerror.md) error object. It uses [`InvalidTransactionTypeNotSupportedError`](invalidtransactiontypenotsupportederror.md) instead.
 
 ##### 1101 20240312
@@ -65,6 +87,8 @@ New features
 - The type of the [`price`](https://developer.apple.com/documentation/AppStoreServerNotifications/price) field changed from `int32` to `int64`.
 
 ##### Server Update 20240229
+
+**New features**
 
 - The [`Get Notification History`](get-notification-history.md) endpoint adds support for the new notification type for unreported external purchase tokens.
 
@@ -96,6 +120,8 @@ New features
 - Added the `sendAttempts` field to the  [`CheckTestNotificationResponse`](checktestnotificationresponse.md) and the [`notificationHistoryResponseItem`](notificationhistoryresponseitem.md) of the [`NotificationHistoryResponse`](notificationhistoryresponse.md) to provide information about all the send attempts for App Store Server Notifications.
 - Added the error codes [`FamilySharedSubscriptionExtensionIneligibleError`](familysharedsubscriptionextensionineligibleerror.md), [`StatusRequestNotFoundError`](statusrequestnotfounderror.md), [`InvalidStatusError`](invalidstatuserror.md), [`InvalidRevokedError`](invalidrevokederror.md), [`InvalidTransactionIdError`](invalidtransactioniderror.md), [`TransactionIdNotFoundError`](transactionidnotfounderror.md),  and [`RateLimitExceededError`](ratelimitexceedederror.md).
 - All endpoints are subject to a rate limit and can return a [`RateLimitExceededError`](ratelimitexceedederror.md) with an HTTP 429 error code. For more information, see [`Identifying rate limits`](identifying-rate-limits.md).
+
+**Deprecations**
 
 - The `excludeRevoked` filter in [`Get Transaction History V1`](get-transaction-history-v1.md) is deprecated. Use the new `revoked` filter instead.
 - The `firstSendAttemptResult` field is deprecated in the [`CheckTestNotificationResponse`](checktestnotificationresponse.md) and [`notificationHistoryResponseItem`](notificationhistoryresponseitem.md) objects. Use the first [`sendAttemptItem`](sendattemptitem.md) in the `sendAttempts` array instead.

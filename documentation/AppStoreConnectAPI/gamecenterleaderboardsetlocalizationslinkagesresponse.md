@@ -17,6 +17,12 @@ object GameCenterLeaderboardSetLocalizationsLinkagesResponse
 ### Dictionaries
 - [object GameCenterLeaderboardSetLocalizationsLinkagesResponse.Data](gamecenterleaderboardsetlocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

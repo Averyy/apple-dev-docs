@@ -20,6 +20,13 @@ object AppPriceSchedule.Relationships
 - [object AppPriceSchedule.Relationships.BaseTerritory](apppriceschedule/relationships-data.dictionary/baseterritory-data.dictionary.md)
 - [object AppPriceSchedule.Relationships.ManualPrices](apppriceschedule/relationships-data.dictionary/manualprices-data.dictionary.md)
 
+## Properties
+
+- `app` (AppPriceSchedule.Relationships.App)
+- `automaticPrices` (AppPriceSchedule.Relationships.AutomaticPrices)
+- `baseTerritory` (AppPriceSchedule.Relationships.BaseTerritory)
+- `manualPrices` (AppPriceSchedule.Relationships.ManualPrices)
+
 
 ---
 

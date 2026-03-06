@@ -17,6 +17,12 @@ A surface shader that defines properties for a RealityKit Unlit material.
 
 #### Parameter Descriptions
 
+- **`Color`**: The base color of the surface.
+- **`Opacity`**: The level of opaqueness of the surface. If the value of this parameter is `1.0`, the surface is fully opaque. If the value is less than `1.0`, the surface appears translucent. If the value is `0`, the surface is completely transparent. The default value is `1.0`.
+- **`Opacity Threshold`**: The threshold for whether the node renders a portion of the surface based on its opacity level. A value of `0.0` means that no additional masking occurs. If the value is greater than `0.0`, the node renders only areas of the surface with an `Opacity` value greater than the value of this parameter. This parameter can be turned on or off. The default value is `0.0`.
+- **`Apply Post Process Tone Map`**: A Boolean value that tells the node whether to apply the post process tone map.
+- **`Has Premultiplied Alpha`**: A Boolean value that tells the node if it has a premultiplied alpha.
+
 #### Discussion
 
 The `Unlit Surface` node produces a custom surface based on its input parameters. Connect the output of the `Unlit Surface` node connect to the `Custom Surface` output of your material.

@@ -12,6 +12,12 @@
 object SubscriptionResponse
 ```
 
+## Properties
+
+- `data` (Subscription) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

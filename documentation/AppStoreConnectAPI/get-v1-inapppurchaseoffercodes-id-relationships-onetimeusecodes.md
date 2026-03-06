@@ -8,6 +8,14 @@ Get a list of one-time use code resource IDs for a specific in-app purchase offe
 **Availability**:
 - App Store Connect API 4.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodes/{id}/relationships/oneTimeUseCodes`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create an in-app purchase offer code one-time use code](post-v1-inapppurchaseoffercodeonetimeusecodes.md)

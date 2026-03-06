@@ -17,6 +17,12 @@ object AppStoreVersionCustomerReviewsLinkagesResponse
 ### Dictionaries
 - [object AppStoreVersionCustomerReviewsLinkagesResponse.Data](appstoreversioncustomerreviewslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionCustomerReviewsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

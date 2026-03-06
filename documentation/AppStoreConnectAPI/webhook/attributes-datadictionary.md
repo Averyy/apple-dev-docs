@@ -14,6 +14,13 @@ Attributes that describe a webhook resource.
 object Webhook.Attributes
 ```
 
+## Properties
+
+- `enabled` (boolean)
+- `eventTypes` ([WebhookEventType])
+- `name` (string)
+- `url` (uri)
+
 
 ---
 

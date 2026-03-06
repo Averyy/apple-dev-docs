@@ -8,6 +8,14 @@ Get the App Store category to which a specific subcategory belongs.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCategories/{id}/parent`
+
+## Parameters
+
+- `fields[appCategories]` ([string])
+
 ## See Also
 
 - [Read App Category Information](get-v1-appcategories-_id_.md)

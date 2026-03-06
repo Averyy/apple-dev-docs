@@ -12,6 +12,12 @@
 object SandboxTestersV2Response
 ```
 
+## Properties
+
+- `data` ([SandboxTesterV2]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SandboxTesterV2Response](sandboxtesterv2response.md)

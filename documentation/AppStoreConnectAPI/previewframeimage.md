@@ -18,6 +18,11 @@ object PreviewFrameImage
 
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
+## Properties
+
+- `image` (ImageAsset)
+- `state` (AppMediaPreviewFrameImageState)
+
 ## See Also
 
 - [object AppEventVideoClip](appeventvideoclip.md)

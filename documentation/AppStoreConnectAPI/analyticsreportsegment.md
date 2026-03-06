@@ -24,6 +24,13 @@ To learn more about the response that includes this analytics report segment obj
 - [object AnalyticsReportSegment.Attributes](analyticsreportsegment/attributes-data.dictionary.md)
   Attributes that describe an analytics report segment resource.
 
+## Properties
+
+- `attributes` (AnalyticsReportSegment.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

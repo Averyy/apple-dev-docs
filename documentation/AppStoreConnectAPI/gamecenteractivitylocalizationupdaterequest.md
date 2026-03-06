@@ -19,6 +19,10 @@ object GameCenterActivityLocalizationUpdateRequest
 ### Dictionaries
 - [object GameCenterActivityLocalizationUpdateRequest.Data](gamecenteractivitylocalizationupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityLocalizationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)

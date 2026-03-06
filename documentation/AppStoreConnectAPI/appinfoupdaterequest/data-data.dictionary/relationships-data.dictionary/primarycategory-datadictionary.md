@@ -20,6 +20,10 @@ object AppInfoUpdateRequest.Data.Relationships.PrimaryCategory
 - [object AppInfoUpdateRequest.Data.Relationships.PrimaryCategory.Data](appinfoupdaterequest/data-data.dictionary/relationships-data.dictionary/primarycategory-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
+## Properties
+
+- `data` (AppInfoUpdateRequest.Data.Relationships.PrimaryCategory.Data)
+
 ## See Also
 
 - [object AppInfoUpdateRequest.Data.Relationships.PrimarySubcategoryOne](appinfoupdaterequest/data-data.dictionary/relationships-data.dictionary/primarysubcategoryone-data.dictionary.md)

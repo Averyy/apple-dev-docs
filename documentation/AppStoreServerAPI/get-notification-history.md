@@ -6,7 +6,7 @@
 Get a list of notifications that the App Store server attempted to send to your server.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Mentions
 
@@ -24,6 +24,14 @@ Each time you call this endpoint, it returns a maximum of 20 notification histor
 This endpoint is available in the production and sandbox environments. For more information about configuring App Store Server Notifications, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications) and [`Enter a URL for App Store server notifications`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev0067a330b).
 
 > **Note**:  For notifications that relate to in-app purchases, the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History`](get-transaction-history.md) endpoint.
+
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/notifications/history`
+
+## Parameters
+
+- `paginationToken` (paginationToken): An optional token you use to get the next set of up to 20 notification history records. All responses that have more records available include a `paginationToken`. Note: Omit this parameter the first time you call this endpoint.
 
 ## Request Body
 

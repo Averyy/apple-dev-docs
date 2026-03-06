@@ -208,7 +208,7 @@ These fields are the exact and only fields that are mandatory for `MobileApplica
 
 ##### Consider Optional Fields
 
-Optionally, every instance  define additional ranking signals to facilitate surfacing the best results. These signals use [`structured data schemas`](https://developer.apple.comhttps://schema.org)’s `aggregateRating`, which is an app-rating value, together with the total review count and the rating range. The widest supported rating range is from 0 to 100. When using `aggregateRating`, all four properties are mandatory. For more information see [`aggregateRating`](https://developer.apple.comhttps://schema.org/aggregateRating).
+Optionally, every instance *may* define additional ranking signals to facilitate surfacing the best results. These signals use [`structured data schemas`](https://developer.apple.comhttps://schema.org)’s `aggregateRating`, which is an app-rating value, together with the total review count and the rating range. The widest supported rating range is from 0 to 100. When using `aggregateRating`, all four properties are mandatory. For more information see [`aggregateRating`](https://developer.apple.comhttps://schema.org/aggregateRating).
 
 | Property name | Name in code | Type | Note |
 | --- | --- | --- | --- |

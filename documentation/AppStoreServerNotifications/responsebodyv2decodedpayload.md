@@ -62,6 +62,18 @@ The payload can contain only one of the following four fields:
 - [Transaction data types](transaction-data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
+## Properties
+
+- `notificationType` (notificationType): The in-app purchase event for which the App Store sends this version 2 notification.
+- `subtype` (subtype): Additional information that identifies the notification event. The `subtype` field is present only for specific version 2 notifications.
+- `data` (data): The object that contains the app metadata and signed renewal and transaction information. The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+- `summary` (summary): The summary data that appears when the App Store server completes your request to extend a subscription renewal date for eligible subscribers. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers). The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+- `externalPurchaseToken` (externalPurchaseToken): This field appears when the `notificationType` is `EXTERNAL_PURCHASE_TOKEN`. The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+- `appData` (appData): The object that contains the app metadata and signed app transaction information. This field appears when the [`notificationType`](responsebodyv2decodedpayload/notificationtype.md) is `RESCIND_CONSENT`. The `data`, `appData`, `summary`, and `externalPurchaseToken` fields are mutually exclusive. The payload contains only one of these fields.
+- `version` (version): The App Store Server Notification version number, `"2.0"`.
+- `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature data.
+- `notificationUUID` (notificationUUID): A unique identifier for the notification. Use this value to identify a duplicate notification.
+
 ## See Also
 
 - [App Store Server Notifications V2](app-store-server-notifications-v2.md)

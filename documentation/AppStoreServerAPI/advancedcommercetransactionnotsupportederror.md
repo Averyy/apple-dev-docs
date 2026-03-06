@@ -14,6 +14,11 @@ An error that indicates Advanced Commerce API transactions are not supported by 
 object AdvancedCommerceTransactionNotSupportedError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

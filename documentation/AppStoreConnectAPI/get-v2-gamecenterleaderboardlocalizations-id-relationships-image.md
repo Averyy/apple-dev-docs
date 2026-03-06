@@ -18,6 +18,14 @@ Get a list of image resource IDs for a specific Game Center leaderboard localiza
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardLocalizations/{id}/relationships/image`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard localization information](get-v2-gamecenterleaderboardlocalizations-_id_.md)

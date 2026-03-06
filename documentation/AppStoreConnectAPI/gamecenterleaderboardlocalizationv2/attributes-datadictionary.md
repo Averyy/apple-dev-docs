@@ -23,6 +23,15 @@ object GameCenterLeaderboardLocalizationV2.Attributes
 - locale:
 - name:
 
+## Properties
+
+- `description` (string)
+- `formatterOverride` (GameCenterLeaderboardFormatter)
+- `formatterSuffix` (string)
+- `formatterSuffixSingular` (string)
+- `locale` (string)
+- `name` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2.Relationships](gamecenterleaderboardlocalizationv2/relationships-data.dictionary.md)

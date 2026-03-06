@@ -8,6 +8,32 @@ List information for all groups.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups`
+
+## Parameters
+
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[gameCenterDetails]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[gameCenterAchievementsV2]` (integer)
+- `limit[gameCenterAchievements]` (integer)
+- `limit[gameCenterActivities]` (integer)
+- `limit[gameCenterChallenges]` (integer)
+- `limit[gameCenterDetails]` (integer)
+- `limit[gameCenterLeaderboardSetsV2]` (integer)
+- `limit[gameCenterLeaderboardSets]` (integer)
+- `limit[gameCenterLeaderboardsV2]` (integer)
+- `limit[gameCenterLeaderboards]` (integer)
+
 ## See Also
 
 - [Read group information for a specific group](get-v1-gamecentergroups-_id_.md)

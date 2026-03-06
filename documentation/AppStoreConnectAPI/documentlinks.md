@@ -16,7 +16,11 @@ object DocumentLinks
 
 #### Discussion
 
-All the response data constitutes a .
+All the response data constitutes a *document*.
+
+## Properties
+
+- `self` (uri-reference) *(required)*: The link that produced the current document.
 
 ## See Also
 

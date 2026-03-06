@@ -20,6 +20,13 @@ object AppClipAdvancedExperienceImage
 - [object AppClipAdvancedExperienceImage.Attributes](appclipadvancedexperienceimage/attributes-data.dictionary.md)
   The attributes that describe an Advanced App Clip Experience Images resource.
 
+## Properties
+
+- `attributes` (AppClipAdvancedExperienceImage.Attributes): The attributes that describe the Advanced App Clip Experience Images resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an Advanced App Clip Experience Images resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceImageResponse](appclipadvancedexperienceimageresponse.md)

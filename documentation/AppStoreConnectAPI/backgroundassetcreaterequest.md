@@ -20,6 +20,10 @@ object BackgroundAssetCreateRequest
 - [object BackgroundAssetCreateRequest.Data](backgroundassetcreaterequest/data-data.dictionary.md)
   The data structure that represents a background asset create request resource.
 
+## Properties
+
+- `data` (BackgroundAssetCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

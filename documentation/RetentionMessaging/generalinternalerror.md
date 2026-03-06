@@ -14,6 +14,11 @@ An error that indicates a general internal error.
 object GeneralInternalError
 ```
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 
 ---
 

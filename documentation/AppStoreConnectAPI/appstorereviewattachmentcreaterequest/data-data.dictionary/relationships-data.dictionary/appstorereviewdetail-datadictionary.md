@@ -20,6 +20,10 @@ object AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDe
 - [object AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail.Data](appstorereviewattachmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstorereviewdetail-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail.Data) *(required)*
+
 
 ---
 

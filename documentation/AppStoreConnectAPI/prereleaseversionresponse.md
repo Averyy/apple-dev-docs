@@ -14,6 +14,12 @@ A response that contains a single Prerelease Versions resource.
 object PrereleaseVersionResponse
 ```
 
+## Properties
+
+- `data` (PrereleaseVersion) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Read the Prerelease Version of a Build](get-v1-builds-_id_-prereleaseversion.md)

@@ -17,6 +17,10 @@ A merge operation that layers foreground over background color, but assumes no o
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The `color4` foreground input. `F` represents the RGB component of this parameter. `f` represents the alpha component of this parameter.
+- **`Background`**: The `color4` background input. `B` represents the RGB component of this parameter. `b`represents the alpha component of this parameter.
+- **`Mix`**: The weight of the blend operation. The higher the value of `Mix`, the more apparent the effect of the blend operation. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The Disjoint Over node performs one of two mixes based on the alpha channels of the foreground and background inputs. If `f+b<=1`, then the RGB component of the output is `F+B`. If `f+b>1`, then the RGB component of the output is `F+b(1-f)/b`. The alpha component of the output for this node is always the smaller value between `f+b` or 1. Below is a simple node graph that uses the Disjoint Over node to blend a tile and rock texture:

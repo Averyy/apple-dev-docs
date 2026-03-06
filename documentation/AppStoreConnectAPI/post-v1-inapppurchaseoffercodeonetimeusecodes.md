@@ -12,6 +12,10 @@ Create a one-time use code for an in-app purchase offer code.
 
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodeOneTimeUseCodes`
+
 ## See Also
 
 - [Read in-app purchase offer code one-time use code information](get-v1-inapppurchaseoffercodeonetimeusecodes-_id_.md)

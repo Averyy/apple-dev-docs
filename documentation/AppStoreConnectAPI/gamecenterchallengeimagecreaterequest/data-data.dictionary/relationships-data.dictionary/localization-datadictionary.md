@@ -17,6 +17,10 @@ object GameCenterChallengeImageCreateRequest.Data.Relationships.Localization
 ### Dictionaries
 - [object GameCenterChallengeImageCreateRequest.Data.Relationships.Localization.Data](gamecenterchallengeimagecreaterequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeImageCreateRequest.Data.Relationships.Localization.Data)
+
 
 ---
 

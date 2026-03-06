@@ -17,6 +17,10 @@ object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization
 ### Objects
 - [object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization.Data](appeventvideoclipcreaterequest/data-data.dictionary/relationships-data.dictionary/appeventlocalization-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization.Data) *(required)*
+
 
 ---
 

@@ -22,6 +22,12 @@ object WinBackOfferCreateRequest.Data
 - [object WinBackOfferCreateRequest.Data.Relationships](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (WinBackOfferCreateRequest.Data.Attributes) *(required)*: The attributes that describes the request that creates a win-back offer resource.
+- `relationships` (WinBackOfferCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object WinBackOfferPriceInlineCreate](winbackofferpriceinlinecreate.md)

@@ -14,6 +14,11 @@ Attributes that describe a Prerelease Versions resource.
 object PrereleaseVersion.Attributes
 ```
 
+## Properties
+
+- `platform` (Platform): The platform of the prerelease version of your app.
+- `version` (string): The version number of the prerelease version of your app.
+
 ## See Also
 
 - [Prerelease Versions](prerelease-versions.md)

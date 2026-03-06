@@ -12,6 +12,15 @@ Get the information about a review screenshot for an auto-renewable subscription
 
 - [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionAppStoreReviewScreenshots/{id}`
+
+## Parameters
+
+- `fields[subscriptionAppStoreReviewScreenshots]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create a Review Screenshot for an Auto-Renewable Subscription](post-v1-subscriptionappstorereviewscreenshots.md)

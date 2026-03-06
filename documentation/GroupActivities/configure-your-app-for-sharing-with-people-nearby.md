@@ -20,6 +20,13 @@ Both nearby participants and spatial Personas can move spatially, make eye conta
 
 SharePlay doesn’t require apps to distinguish between nearby and FaceTime participants. The `GroupActivities` APIs you use to manage group sessions, exchange messages, and position content treat all participants the same. Your app doesn’t need separate code to support nearby participants, so it typically already works when sharing with people nearby, but confirm the following during testing:
 
+- **Spatial assumptions**: Confirm that your app doesn’t rely on the system to position nearby participants in specific locations. SharePlay can dynamically reposition spatial Personas (FaceTime participants), but not physical people (nearby participants). If your app requires participants to be in specific locations, guide nearby participants to move to those locations using visual cues, like position markers.
+- **Share Window menu**: Confirm that your activity is listed in the new Share Window menu located next to the window bar. This is critical for the discovery of your app’s SharePlay activity. The easiest way to add your activity to the Share Window menu is to include a hidden [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink) in your app. ```swift
+ShareLink(item: BoardGameActivity(), preview: SharePreview("Play Together"))
+    .hidden()
+``` For more information, see [`Presenting SharePlay activities from your app’s UI`](promoting-shareplay-activities-from-your-apps-ui.md).
+- **Activity activation**: If your app implements a custom SharePlay button, confirm that your app supports initiating an activity when there isn’t an active FaceTime call. For visionOS, update the button’s action handler to always call [`activate()`](groupactivity/activate().md), which now presents the new Share Window menu, and remove any checks for [`isEligibleForGroupSession`](groupstateobserver/iseligibleforgroupsession.md) that guard activating the activity.
+
 > ❗ **Important**: To start your activity from the system’s Share Window menu, you need to donate it. If you don’t donate your activity, the system defaults to window mirroring instead of SharePlay.
 
 ##### Distinguish Between Nearby and Facetime Participants

@@ -60,7 +60,7 @@ struct Artist
 - [var similarArtists: MusicItemCollection<Artist>?](artist/similarartists.md)
   A collection of artists similar to this artist.
 - [var singles: MusicItemCollection<Album>?](artist/singles.md)
-  A collection of the artist’s associated albums in the  category.
+  A collection of the artist’s associated albums in the *singles* category.
 - [var station: Station?](artist/station.md)
   The artist’s associated station.
 - [var topMusicVideos: MusicItemCollection<MusicVideo>?](artist/topmusicvideos.md)

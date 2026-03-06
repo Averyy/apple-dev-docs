@@ -17,6 +17,12 @@ object InAppPurchaseV2.Relationships.PricePoints
 ### Objects
 - [object InAppPurchaseV2.Relationships.PricePoints.Data](inapppurchasev2/relationships-data.dictionary/pricepoints-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchaseV2.Relationships.PricePoints.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

@@ -21,6 +21,14 @@ object WebhookDelivery
   Attributes that describe a webhook delivery resource.
 - [object WebhookDelivery.Relationships](webhookdelivery/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (WebhookDelivery.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (WebhookDelivery.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

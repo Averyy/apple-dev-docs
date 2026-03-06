@@ -20,6 +20,13 @@ object BuildBundleFileSize
 - [object BuildBundleFileSize.Attributes](buildbundlefilesize/attributes-data.dictionary.md)
   The attributes that describe a Build Bundle File Sizes resource.
 
+## Properties
+
+- `attributes` (BuildBundleFileSize.Attributes): The attributes that describe the Build Bundle File Sizes resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Build Bundles File Sizes resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BuildBundle](buildbundle.md)

@@ -17,6 +17,11 @@ object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse
 ### Dictionaries
 - [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse.Data](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)

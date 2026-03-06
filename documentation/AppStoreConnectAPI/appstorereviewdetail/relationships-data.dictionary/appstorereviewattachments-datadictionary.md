@@ -20,6 +20,12 @@ object AppStoreReviewDetail.Relationships.AppStoreReviewAttachments
 - [object AppStoreReviewDetail.Relationships.AppStoreReviewAttachments.Data](appstorereviewdetail/relationships-data.dictionary/appstorereviewattachments-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([AppStoreReviewDetail.Relationships.AppStoreReviewAttachments.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreReviewDetail.Relationships.AppStoreVersion](appstorereviewdetail/relationships-data.dictionary/appstoreversion-data.dictionary.md)

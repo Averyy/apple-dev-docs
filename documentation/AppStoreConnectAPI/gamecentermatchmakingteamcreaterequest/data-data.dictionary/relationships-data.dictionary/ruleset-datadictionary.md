@@ -20,6 +20,10 @@ object GameCenterMatchmakingTeamCreateRequest.Data.Relationships.RuleSet
 - [object GameCenterMatchmakingTeamCreateRequest.Data.Relationships.RuleSet.Data](gamecentermatchmakingteamcreaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary/data-data.dictionary.md)
   The type and ID for the rule set that you’re adding the team to.
 
+## Properties
+
+- `data` (GameCenterMatchmakingTeamCreateRequest.Data.Relationships.RuleSet.Data) *(required)*
+
 
 ---
 

@@ -30,6 +30,14 @@ object GameCenterLeaderboardV2
 - [object GameCenterLeaderboardV2.Relationships](gamecenterleaderboardv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2CreateRequest](gamecenterleaderboardv2createrequest.md)

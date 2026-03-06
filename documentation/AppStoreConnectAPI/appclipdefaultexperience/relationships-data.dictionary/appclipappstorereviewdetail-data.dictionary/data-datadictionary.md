@@ -14,6 +14,11 @@ The type and ID of a related App Clip App Store Details resource.
 object AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Clip App Store Review Details resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -68,7 +68,7 @@ When using `offset(of:)` with a type imported from a library, don’t assume tha
 
 ## Parameters
 
-- `key`: A key path referring to storage that can be accessed   through a value of type  .
+- `key`: A key path referring to storage that can be accessed through a value of type `T`.
 
 
 ---

@@ -12,6 +12,10 @@
 object App.Relationships.AnalyticsReportRequests
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

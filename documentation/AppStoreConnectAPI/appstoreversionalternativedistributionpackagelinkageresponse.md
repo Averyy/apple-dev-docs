@@ -17,6 +17,11 @@ object AppStoreVersionAlternativeDistributionPackageLinkageResponse
 ### Dictionaries
 - [object AppStoreVersionAlternativeDistributionPackageLinkageResponse.Data](appstoreversionalternativedistributionpackagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionAlternativeDistributionPackageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

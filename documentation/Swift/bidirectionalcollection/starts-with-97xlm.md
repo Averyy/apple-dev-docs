@@ -26,7 +26,7 @@ func starts(@RegexComponentBuilder with content: () -> some RegexComponent) -> B
 
 ## Parameters
 
-- `content`: A closure that returns a regex to match at   the beginning of this collection.
+- `content`: A closure that returns a regex to match at the beginning of this collection.
 
 
 ---

@@ -20,6 +20,10 @@ object AppStoreVersionCreateRequest.Data.Relationships.Build
 - [object AppStoreVersionCreateRequest.Data.Relationships.Build.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppStoreVersionCreateRequest.Data.Relationships.Build.Data)
+
 ## See Also
 
 - [object AppStoreVersionCreateRequest.Data.Relationships.App](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)

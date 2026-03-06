@@ -18,6 +18,10 @@ object BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVe
 - [object BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion.Data](backgroundassetversionexternalbetarelease/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
   The request body you use to update a background asset version external beta release.
 
+## Properties
+
+- `data` (BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion.Data)
+
 
 ---
 

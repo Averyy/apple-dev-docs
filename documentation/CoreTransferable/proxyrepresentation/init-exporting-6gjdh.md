@@ -22,7 +22,7 @@ init(exporting: @escaping @Sendable (Item) async throws -> ProxyRepresentation)
 
 ## Parameters
 
-- `exporting`: A closure that converts the item into   desired representation.
+- `exporting`: A closure that converts the item into desired representation.
 
 
 ---

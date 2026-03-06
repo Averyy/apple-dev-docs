@@ -17,6 +17,10 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievemen
 ### Dictionaries
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion.Data](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievementversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion.Data)
+
 
 ---
 

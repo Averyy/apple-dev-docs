@@ -40,8 +40,8 @@ let lastValues = Dictionary(pairsWithDuplicateKeys,
 
 ## Parameters
 
-- `keysAndValues`: A sequence of key-value pairs to use for the new   dictionary.
-- `combine`: A closure that is called with the values for any duplicate   keys that are encountered. The closure returns the desired value for   the final dictionary.
+- `keysAndValues`: A sequence of key-value pairs to use for the new dictionary.
+- `combine`: A closure that is called with the values for any duplicate keys that are encountered. The closure returns the desired value for the final dictionary.
 
 ## See Also
 

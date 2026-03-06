@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -20,6 +20,10 @@ object AppStoreReviewAttachmentCreateRequest.Data.Relationships
 - [object AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail](appstorereviewattachmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstorereviewdetail-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `appStoreReviewDetail` (AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail) *(required)*
+
 ## See Also
 
 - [object AppStoreReviewAttachmentCreateRequest.Data.Attributes](appstorereviewattachmentcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

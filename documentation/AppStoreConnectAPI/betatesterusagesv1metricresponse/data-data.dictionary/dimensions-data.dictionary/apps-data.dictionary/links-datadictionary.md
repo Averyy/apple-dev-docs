@@ -12,6 +12,11 @@
 object BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps.Links
 ```
 
+## Properties
+
+- `groupBy` (uri-reference)
+- `related` (uri-reference)
+
 
 ---
 

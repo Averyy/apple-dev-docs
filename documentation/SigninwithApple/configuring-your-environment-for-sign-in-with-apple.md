@@ -26,7 +26,7 @@ You must use a unique identifier — a Services ID — to register each web serv
 - Organizations can register up to 100 website URLs
 - Individuals can register up to 10 website URLs
 
-The Sign in with Apple servers use return URLs, also known as , to provide your web service with an authorization response, or to validate tokens. Because of this, each registered URL must be absolute and must include the scheme, host, and path. The following is an example return URL:
+The Sign in with Apple servers use return URLs, also known as *redirect URIs*, to provide your web service with an authorization response, or to validate tokens. Because of this, each registered URL must be absolute and must include the scheme, host, and path. The following is an example return URL:
 
 ```console
 https://example.com/path/to/endpoint

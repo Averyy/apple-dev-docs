@@ -8,6 +8,14 @@ Update the app store review details, including the contact information, demo acc
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appStoreReviewDetails/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Store Review Detail](post-v1-appstorereviewdetails.md)

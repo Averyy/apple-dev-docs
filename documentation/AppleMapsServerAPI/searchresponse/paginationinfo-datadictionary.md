@@ -14,6 +14,13 @@ An object that returns a page of search responses.
 object SearchResponse.PaginationInfo
 ```
 
+## Properties
+
+- `nextPageToken` (string): An opaque string that the server uses to fetch the next page of search responses.
+- `prevPageToken` (string): An opaque string that the server uses to fetch the previous page of search responses.
+- `totalPageCount` (number): The total number of pages for the request.
+- `totalResults` (number): The total number of results for the request.
+
 ## See Also
 
 - [object SearchResponse.Place](searchresponse/place.md)

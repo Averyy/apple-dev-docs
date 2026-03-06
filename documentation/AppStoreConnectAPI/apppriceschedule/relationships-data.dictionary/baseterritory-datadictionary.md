@@ -17,6 +17,11 @@ object AppPriceSchedule.Relationships.BaseTerritory
 ### Objects
 - [object AppPriceSchedule.Relationships.BaseTerritory.Data](apppriceschedule/relationships-data.dictionary/baseterritory-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppPriceSchedule.Relationships.BaseTerritory.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppPriceSchedule.Relationships.App](apppriceschedule/relationships-data.dictionary/app-data.dictionary.md)

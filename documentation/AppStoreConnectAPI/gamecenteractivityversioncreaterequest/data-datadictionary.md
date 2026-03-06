@@ -19,6 +19,12 @@ object GameCenterActivityVersionCreateRequest.Data
   Attributes that describe an activity resource.
 - [object GameCenterActivityVersionCreateRequest.Data.Relationships](gamecenteractivityversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterActivityVersionCreateRequest.Data.Attributes)
+- `relationships` (GameCenterActivityVersionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

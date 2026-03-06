@@ -6,6 +6,22 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionExperimentTreatments/{id}/appStoreVersionExperimentTreatmentLocalizations`
+
+## Parameters
+
+- `fields[appPreviewSets]` ([string])
+- `fields[appScreenshotSets]` ([string])
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
+- `filter[locale]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appPreviewSets]` (integer)
+- `limit[appScreenshotSets]` (integer)
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+
 ## See Also
 
 - [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)

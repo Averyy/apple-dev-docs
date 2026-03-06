@@ -17,6 +17,12 @@ object CiProductWorkflowsLinkagesResponse
 ### Dictionaries
 - [object CiProductWorkflowsLinkagesResponse.Data](ciproductworkflowslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([CiProductWorkflowsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

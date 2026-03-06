@@ -20,6 +20,14 @@ object BetaFeedbackCrashSubmission
 - [object BetaFeedbackCrashSubmission.Attributes](betafeedbackcrashsubmission/attributes-data.dictionary.md)
 - [object BetaFeedbackCrashSubmission.Relationships](betafeedbackcrashsubmission/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (BetaFeedbackCrashSubmission.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (BetaFeedbackCrashSubmission.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BetaCrashLog](betacrashlog.md)

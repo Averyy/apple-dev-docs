@@ -17,6 +17,10 @@ object InAppPurchaseOfferPriceInlineCreate.Relationships.PricePoint
 ### Dictionaries
 - [object InAppPurchaseOfferPriceInlineCreate.Relationships.PricePoint.Data](inapppurchaseofferpriceinlinecreate/relationships-data.dictionary/pricepoint-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseOfferPriceInlineCreate.Relationships.PricePoint.Data)
+
 
 ---
 

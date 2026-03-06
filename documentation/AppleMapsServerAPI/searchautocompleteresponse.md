@@ -14,6 +14,10 @@ An array of autocomplete results.
 object SearchAutocompleteResponse
 ```
 
+## Properties
+
+- `results` ([AutocompleteResult]): An array of [`AutocompleteResult`](autocompleteresult.md) objects.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

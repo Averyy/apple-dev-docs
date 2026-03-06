@@ -26,20 +26,20 @@ Created [`HIDDeviceManager.DeviceMatchingCriteria`](hiddevicemanager/devicematch
 
 ## Parameters
 
-- `primaryUsage`: See  .
-- `deviceUsages`: See  .
-- `vendorID`: See  .
-- `productID`: See  .
-- `transport`: See  .
-- `product`: See  .
-- `manufacturer`: See  .
-- `modelNumber`: See  .
-- `versionNumber`: See  .
-- `serialNumber`: See  .
-- `uniqueID`: See  .
-- `locationID`: See  .
-- `localizationCode`: See  .
-- `isBuiltIn`: See  .
+- `primaryUsage`: See [`primaryUsage`](hiddevicemanager/devicematchingcriteria/primaryusage.md).
+- `deviceUsages`: See [`deviceUsages`](hiddevicemanager/devicematchingcriteria/deviceusages.md).
+- `vendorID`: See [`vendorID`](hiddevicemanager/devicematchingcriteria/vendorid.md).
+- `productID`: See [`productID`](hiddevicemanager/devicematchingcriteria/productid.md).
+- `transport`: See [`transport`](hiddevicemanager/devicematchingcriteria/transport.md).
+- `product`: See [`product`](hiddevicemanager/devicematchingcriteria/product.md).
+- `manufacturer`: See [`manufacturer`](hiddevicemanager/devicematchingcriteria/manufacturer.md).
+- `modelNumber`: See [`modelNumber`](hiddevicemanager/devicematchingcriteria/modelnumber.md).
+- `versionNumber`: See [`versionNumber`](hiddevicemanager/devicematchingcriteria/versionnumber.md).
+- `serialNumber`: See [`serialNumber`](hiddevicemanager/devicematchingcriteria/serialnumber.md).
+- `uniqueID`: See [`uniqueID`](hiddevicemanager/devicematchingcriteria/uniqueid.md).
+- `locationID`: See [`locationID`](hiddevicemanager/devicematchingcriteria/locationid.md).
+- `localizationCode`: See [`localizationCode`](hiddevicemanager/devicematchingcriteria/localizationcode.md).
+- `isBuiltIn`: See [`isBuiltIn`](hiddevicemanager/devicematchingcriteria/isbuiltin.md).
 - `extraProperties`: A catch-all for uncommon or device specific criteria not listed above. This parameter is typically only for advanced users that need additional control over the matching process.
 
 

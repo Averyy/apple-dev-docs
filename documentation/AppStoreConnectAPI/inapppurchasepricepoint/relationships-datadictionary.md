@@ -19,6 +19,11 @@ object InAppPurchasePricePoint.Relationships
 ### Dictionaries
 - [object InAppPurchasePricePoint.Relationships.Equalizations](inapppurchasepricepoint/relationships-data.dictionary/equalizations-data.dictionary.md)
 
+## Properties
+
+- `equalizations` (InAppPurchasePricePoint.Relationships.Equalizations)
+- `territory` (InAppPurchasePricePoint.Relationships.Territory)
+
 ## See Also
 
 - [object InAppPurchasePricePoint.Attributes](inapppurchasepricepoint/attributes-data.dictionary.md)

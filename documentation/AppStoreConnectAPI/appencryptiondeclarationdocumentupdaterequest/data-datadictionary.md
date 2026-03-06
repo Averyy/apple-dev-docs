@@ -20,6 +20,12 @@ object AppEncryptionDeclarationDocumentUpdateRequest.Data
 - [object AppEncryptionDeclarationDocumentUpdateRequest.Data.Attributes](appencryptiondeclarationdocumentupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app encryption declaration document update request resource.
 
+## Properties
+
+- `attributes` (AppEncryptionDeclarationDocumentUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -44,7 +44,7 @@ if let index = countryCodes.firstIndex(where: { $0.value == "Japan" }) {
 
 ## Parameters
 
-- `position`: The position of the key-value pair to access.    must be a valid index of the dictionary and not equal to   .
+- `position`: The position of the key-value pair to access. `position` must be a valid index of the dictionary and not equal to `endIndex`.
 
 ## See Also
 

@@ -11,6 +11,10 @@ An object that contains the query parameter that produced the error.
 object Parameter
 ```
 
+## Properties
+
+- `parameter` (string) *(required)*: The query parameter that produced the error.
+
 ## See Also
 
 - [object JsonPointer](jsonpointer.md)

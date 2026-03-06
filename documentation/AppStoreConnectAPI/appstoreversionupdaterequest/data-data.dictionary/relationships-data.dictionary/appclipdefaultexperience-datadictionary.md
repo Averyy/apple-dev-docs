@@ -20,6 +20,10 @@ object AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience
 - [object AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience.Data](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperience-data.dictionary/data-data.dictionary.md)
   The type and ID of the Default App Clip Experiences resource that you’re relating with the App Store Versions resource you’re updating.
 
+## Properties
+
+- `data` (AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience.Data): The ID and type of the related Default App Clip Experiences resource.
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest.Data.Relationships.Build](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)

@@ -14,6 +14,19 @@ A class in an Apple School Manager organization.
 object Class
 ```
 
+## Properties
+
+- `dateCreated` (string): The date the class object was created in Apple School Manager. The date string is in ISO 8601 format.
+- `dateLastModified` (string): The date the class object was modified in Apple School Manager. The date string is in ISO 8601 format.
+- `id` (string): A unique identifier for this class.
+- `instructorIds` ([string]): A list of user identifiers for instructers. Values refer to the `id` field of the [`User`](user.md) object.
+- `room` (string): The name of the room.
+- `studentIds` ([string]): A list of user identifiers for students in the class.
+- `name` (string): The name of the class.
+- `number` (string): The number of the class.
+- `displayName` (string): The Class Nickname in Apple School Manager.
+- `locationId` (string): An identifier for the class’s location.
+
 ## See Also
 
 - [Read a class](returns-a-specific-class-in-an-apple-school-manager-organization..md)

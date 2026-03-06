@@ -23,7 +23,7 @@ This setting is most useful when the library can’t be linked automatically, su
 ## Parameters
 
 - `library`: The library name.
-- `condition`: A condition that restricts the application of the build   setting.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

@@ -23,7 +23,7 @@ Produces a unique identifier for the source file in which the macro appears.
 
 #### Overview
 
-The unique identifier has the form /, where  is the name of the file in which the expression appears and  is the name of the module that this file is part of.
+The unique identifier has the form *module*/*file*, where *file* is the name of the file in which the expression appears and *module* is the name of the module that this file is part of.
 
 Because `#fileID` doesn’t embed the full path to the source file, unlike `#filePath`, it gives you better privacy and reduces the size of the compiled binary.
 

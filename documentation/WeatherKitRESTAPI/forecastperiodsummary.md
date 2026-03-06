@@ -14,6 +14,14 @@ The summary for a specified period in the minute forecast.
 object ForecastPeriodSummary
 ```
 
+## Properties
+
+- `condition` (PrecipitationType) *(required)*: The type of precipitation forecasted.
+- `endTime` (date-time): The end time of the forecast.
+- `precipitationChance` (number) *(required)*: The probability of precipitation during this period.
+- `precipitationIntensity` (number) *(required)*: The precipitation intensity in millimeters per hour.
+- `startTime` (date-time) *(required)*: The start time of the forecast.
+
 ## See Also
 
 - [object ForecastMinute](forecastminute.md)

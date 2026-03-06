@@ -14,6 +14,11 @@ A response that contains a single challenge resource.
 object GameCenterChallengeImageResponse
 ```
 
+## Properties
+
+- `data` (GameCenterChallengeImage) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengeImage](gamecenterchallengeimage.md)

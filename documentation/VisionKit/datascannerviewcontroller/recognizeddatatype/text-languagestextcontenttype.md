@@ -32,8 +32,8 @@ To get the data scanner supported languages, use the [`supportedTextRecognitionL
 
 ## Parameters
 
-- `languages`: The identifiers for the languages that you want   prioritized in the order of language processing. To specify a   person’s preferred languages, pass an empty set. This parameter gives the scanner   a hint on which language processing models to use. The scanner still recognizes all   supported languages.
-- `textContentType`: The specific type of semantic text to find. To   identify all content types, pass  .
+- `languages`: The identifiers for the languages that you want prioritized in the order of language processing. To specify a person’s preferred languages, pass an empty set. This parameter gives the scanner a hint on which language processing models to use. The scanner still recognizes all supported languages.
+- `textContentType`: The specific type of semantic text to find. To identify all content types, pass `nil`.
 
 ## See Also
 

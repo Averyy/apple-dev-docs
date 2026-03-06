@@ -14,6 +14,12 @@ Here’s an example that centers an image inside of its containing element.
 
 ##### Values for Tv Align
 
+- **`center`**: The element is aligned with the center of the parent element.
+- **`leading`**: The element is aligned along the leading edge of its parent element.
+- **`left`**: The element is aligned along the left edge of its parent element.
+- **`right`**: The element is aligned along the right edge of its parent element.
+- **`trailing`**: The element is aligned along the trailing edge of its parent element.
+
 ##### Elements That Use Tv Align
 
 - [`banner`](banner.md)

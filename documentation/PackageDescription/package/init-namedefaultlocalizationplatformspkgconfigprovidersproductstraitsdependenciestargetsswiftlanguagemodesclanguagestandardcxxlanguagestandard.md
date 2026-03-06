@@ -16,10 +16,10 @@ init(name: String, defaultLocalization: LanguageTag? = nil, platforms: [Supporte
 
 ## Parameters
 
-- `name`: The name of the Swift package, or   to use the package’s Git URL to deduce the name.
+- `name`: The name of the Swift package, or `nil` to use the package’s Git URL to deduce the name.
 - `defaultLocalization`: The default localization for resources.
 - `platforms`: The list of supported platforms with a custom deployment target.
-- `pkgConfig`: The name to use for C modules. If present, Swift Package Manager searches for a    file to get the additional flags required for a system target.
+- `pkgConfig`: The name to use for C modules. If present, Swift Package Manager searches for a `<name>.pc` file to get the additional flags required for a system target.
 - `providers`: The package providers for a system target.
 - `products`: The list of products that this package makes available for clients to use.
 - `traits`: The set of traits this package provides.

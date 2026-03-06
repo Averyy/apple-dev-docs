@@ -17,6 +17,10 @@ object InAppPurchaseV2CreateRequest
 ### Objects
 - [object InAppPurchaseV2CreateRequest.Data](inapppurchasev2createrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

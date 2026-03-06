@@ -17,6 +17,12 @@ object SubscriptionIntroductoryOfferUpdateRequest.Data
 ### Objects
 - [object SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes](subscriptionintroductoryofferupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

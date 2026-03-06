@@ -22,6 +22,45 @@ After uploading your software, you can use the identifier to ask the notary serv
 
 ##### Example
 
+**Request**:
+
+```json
+{
+  "notifications": [
+    {
+      "channel": "webhook",
+      "target": "https://example.com"
+    }
+  ],
+  "sha256": "68d561c564ef61f718e99a81b13bcb52af11b7ac9baf538af3ea0c83326fb6a1",
+  "submissionName": "OvernightTextEditor_11.6.8.zip"
+} 
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "attributes": {
+      "awsAccessKeyId": "ASIAIOSFODNN7EXAMPLE",
+      "awsSecretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+      "awsSessionToken": "AQoDYXdzEJr...",
+      "bucket": "EXAMPLE-BUCKET",
+      "object": "EXAMPLE-KEY-NAME"
+    },
+    "id": "2efe2717-52ef-43a5-96dc-0797e4ca1041",
+    "type": "newSubmissions"
+  },
+  "meta": {
+  }
+} 
+```
+
+## Endpoint
+
+`POST https://appstoreconnect.apple.com/notary/v2/submissions`
+
 ## Request Body
 
 Information about a new software submission that you want to make.

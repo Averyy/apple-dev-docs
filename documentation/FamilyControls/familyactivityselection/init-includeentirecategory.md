@@ -17,7 +17,7 @@ init(includeEntireCategory: Bool)
 
 ## Parameters
 
-- `includeEntireCategory`: A Boolean value   that indicates whether the selection should include   applications and web domains from the selected categories.
+- `includeEntireCategory`: A Boolean value that indicates whether the selection should include applications and web domains from the selected categories.
 
 ## See Also
 

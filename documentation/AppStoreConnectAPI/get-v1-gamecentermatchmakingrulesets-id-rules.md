@@ -8,6 +8,15 @@ Get information about the rules in a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSets/{id}/rules`
+
+## Parameters
+
+- `fields[gameCenterMatchmakingRules]` ([string]): The fields of the rules to include in the response.
+- `limit` (integer): The maximum number of rules to fetch.
+
 ## See Also
 
 - [List all rule sets](get-v1-gamecentermatchmakingrulesets.md)

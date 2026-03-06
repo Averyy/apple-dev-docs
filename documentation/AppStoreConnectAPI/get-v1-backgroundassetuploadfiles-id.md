@@ -8,6 +8,14 @@ Get details about an uploaded asset pack for Apple hosted background asset.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssetUploadFiles/{id}`
+
+## Parameters
+
+- `fields[backgroundAssetUploadFiles]` ([string])
+
 ## See Also
 
 - [Create a reservation for an asset pack upload](post-v1-backgroundassetuploadfiles.md)

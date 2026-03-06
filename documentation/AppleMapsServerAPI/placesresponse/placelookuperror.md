@@ -14,6 +14,11 @@ An error associated with a lookup call.
 object PlacesResponse.PlaceLookupError
 ```
 
+## Properties
+
+- `errorCode` (string): An error code that indicates whether an Place ID is invalid because it’s malformed, not found, or resulted in any other error.
+- `id` (string): The Place ID.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

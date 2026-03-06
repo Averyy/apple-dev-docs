@@ -20,6 +20,10 @@ object BuildBundle.Attributes.Entitlements
 - [object BuildBundle.Attributes.Entitlements.Any Key](buildbundle/attributes-data.dictionary/entitlements-data.dictionary/any-key-data.dictionary.md)
   A string that represents the path to an executable in the build bundle.
 
+## Properties
+
+- `Any Key` (BuildBundle.Attributes.Entitlements.Any Key): A string that represents the path to an executable in the build bundle.
+
 
 ---
 

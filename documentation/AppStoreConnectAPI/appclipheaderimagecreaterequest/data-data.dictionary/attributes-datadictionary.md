@@ -14,6 +14,11 @@ The attributes you set that describe the new App Clip Header Images resource.
 object AppClipHeaderImageCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*: The filename of the image asset that appears on the App Clip card for the default App Clip experience.
+- `fileSize` (integer) *(required)*: The size of the image asset that appears on the App Clip card for the default App Clip experience.
+
 ## See Also
 
 - [object AppClipHeaderImageCreateRequest.Data.Relationships](appclipheaderimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -40,6 +40,15 @@ object PassFields
 - [object PassFields.AdditionalInfoFields](passfields/additionalinfofields-data.dictionary.md)
   An object that represents fields that display in the Additional Info section below a pass.
 
+## Properties
+
+- `additionalInfoFields` (PassFields.AdditionalInfoFields): An object that represents fields that display in the Additional Info section below a pass.
+- `auxiliaryFields` (PassFields.AuxiliaryFields): An object that represents the fields that display additional information on the front of a pass.
+- `backFields` (PassFields.BackFields): An object that represents the fields that display information on the back of a pass.
+- `headerFields` (PassFields.HeaderFields): An object that represents the fields that display information at the top of a pass.
+- `primaryFields` (PassFields.PrimaryFields): An object that represents the fields that display the most important information on a pass.
+- `secondaryFields` (PassFields.SecondaryFields): An object that represents the fields that display supporting information on the front of a pass.
+
 ## Relationships
 
 ### Inherited By

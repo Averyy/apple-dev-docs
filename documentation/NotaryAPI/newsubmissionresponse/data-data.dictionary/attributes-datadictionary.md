@@ -20,6 +20,14 @@ Use the temporary security credentials in this object, along with the bucket and
 
 For more information about using this library and accessing Amazon S3, see the documentation on [`https://aws.amazon.com`](https://developer.apple.comhttps://aws.amazon.com).
 
+## Properties
+
+- `awsAccessKeyId` (string): An access key that you use in a call to Amazon S3.
+- `awsSecretAccessKey` (string): A secret key that you use in a call to Amazon S3.
+- `awsSessionToken` (string): A session token that you use in a call to Amazon S3.
+- `bucket` (string): The Amazon S3 bucket that you upload your software into.
+- `object` (string): The object key that identifies your software upload within the bucket.
+
 
 ---
 

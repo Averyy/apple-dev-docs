@@ -14,6 +14,13 @@ An error indicating the erroneously submitted line item was not marked as restat
 object ErroneouslySubmittedNotRestatementError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId)
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

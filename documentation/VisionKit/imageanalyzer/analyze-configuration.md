@@ -33,7 +33,7 @@ This function configures orientation automatically based on the given image’s 
 ## Parameters
 
 - `image`: An image that the analyzer processes.
-- `configuration`: A configuration that specifies the data types, and   locales for text items, to recognize.
+- `configuration`: A configuration that specifies the data types, and locales for text items, to recognize.
 
 ## See Also
 

@@ -77,8 +77,8 @@ VPN products based on the [`NEVPNProtocol`](https://developer.apple.com/document
 
 #### Revision History
 
--  Updated guidance for macOS 14.4 and Xcode 15.3.
--  Created initial version.
+- **2024-02-27** Updated guidance for macOS 14.4 and Xcode 15.3.
+- **2023-12-18** Created initial version.
 
 ## See Also
 

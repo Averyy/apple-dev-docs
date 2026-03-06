@@ -17,6 +17,12 @@ object AlternativeDistributionPackageVersion.Relationships.Variants
 ### Objects
 - [object AlternativeDistributionPackageVersion.Relationships.Variants.Data](alternativedistributionpackageversion/relationships-data.dictionary/variants-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AlternativeDistributionPackageVersion.Relationships.Variants.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage](alternativedistributionpackageversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary.md)

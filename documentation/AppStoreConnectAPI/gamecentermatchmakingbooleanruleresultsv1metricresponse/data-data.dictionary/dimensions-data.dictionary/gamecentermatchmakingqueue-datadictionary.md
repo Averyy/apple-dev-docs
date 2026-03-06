@@ -20,6 +20,11 @@ object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.G
 - [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links](gamecentermatchmakingbooleanruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary/links-data.dictionary.md)
   The link representations of the queue results.
 
+## Properties
+
+- `data` (string)
+- `links` (GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links)
+
 ## See Also
 
 - [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result](gamecentermatchmakingbooleanruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/result-data.dictionary.md)

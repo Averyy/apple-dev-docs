@@ -20,6 +20,11 @@ object SerialNumbers
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
 
+## Properties
+
+- `serialNumbers` ([string]): An array of serial numbers for the updated passes.
+- `lastUpdated` (string): A developer-defined string that contains a tag that indicates the modification time for the returned passes. You use the value of this key for the `previousLastUpdated` parameter of [`Get the List of Updatable Passes`](get-the-list-of-updatable-passes.md) to return passes modified after the represented date and time.
+
 ## See Also
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)

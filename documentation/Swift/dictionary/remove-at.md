@@ -29,11 +29,11 @@ The key-value pair that correspond to `index`.
 
 Calling this method invalidates any existing indices for use with this dictionary.
 
-> **Note**: O(), where  is the number of key-value pairs in the dictionary.
+> **Note**: O(*n*), where *n* is the number of key-value pairs in the dictionary.
 
 ## Parameters
 
-- `index`: The position of the key-value pair to remove.    must be a valid index of the dictionary, and must not equal the   dictionary’s end index.
+- `index`: The position of the key-value pair to remove. `index` must be a valid index of the dictionary, and must not equal the dictionary’s end index.
 
 ## See Also
 

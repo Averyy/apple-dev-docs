@@ -19,13 +19,13 @@ init(recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>, qua
 
 ## Parameters
 
-- `recognizedDataTypes`: The types of data that the data scanner   identifies in the live video.
-- `qualityLevel`: The level of resolution to scan that depends on the size   of the items.
-- `recognizesMultipleItems`: A Boolean value that indicates whether the   scanner identifies all items in the live video.
-- `isHighFrameRateTrackingEnabled`: A Boolean value that determines the   frequency that the scanner updates the geometry of recognized items.
-- `isPinchToZoomEnabled`: A Boolean value that indicates whether people can   use a two-finger pinch-to-zoom gesture.
-- `isGuidanceEnabled`: A Boolean value that indicates whether the scanner   provides help to a person when selecting items.
-- `isHighlightingEnabled`: A Boolean value that indicates whether the   scanner displays highlights around recognized items.
+- `recognizedDataTypes`: The types of data that the data scanner identifies in the live video.
+- `qualityLevel`: The level of resolution to scan that depends on the size of the items.
+- `recognizesMultipleItems`: A Boolean value that indicates whether the scanner identifies all items in the live video.
+- `isHighFrameRateTrackingEnabled`: A Boolean value that determines the frequency that the scanner updates the geometry of recognized items.
+- `isPinchToZoomEnabled`: A Boolean value that indicates whether people can use a two-finger pinch-to-zoom gesture.
+- `isGuidanceEnabled`: A Boolean value that indicates whether the scanner provides help to a person when selecting items.
+- `isHighlightingEnabled`: A Boolean value that indicates whether the scanner displays highlights around recognized items.
 
 ## See Also
 

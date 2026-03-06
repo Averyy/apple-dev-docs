@@ -19,6 +19,10 @@ object WebhookUpdateRequest
 ### Dictionaries
 - [object WebhookUpdateRequest.Data](webhookupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (WebhookUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

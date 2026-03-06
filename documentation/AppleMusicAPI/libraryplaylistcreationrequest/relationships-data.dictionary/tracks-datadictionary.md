@@ -20,6 +20,10 @@ object LibraryPlaylistCreationRequest.Relationships.Tracks
 - [object LibraryPlaylistCreationRequest.Relationships.Tracks.Data](libraryplaylistcreationrequest/relationships-data.dictionary/tracks-data.dictionary/data-data.dictionary.md)
   Data of the tracks too add to the created library playlist.
 
+## Properties
+
+- `data` ([LibraryPlaylistCreationRequest.Relationships.Tracks.Data]) *(required)*: A dictionary that includes strings for the `identifier` and `type` of the new playlist.
+
 ## See Also
 
 - [object LibraryPlaylistCreationRequest.Relationships.Parent](libraryplaylistcreationrequest/relationships-data.dictionary/parent-data.dictionary.md)

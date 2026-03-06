@@ -22,6 +22,14 @@ object GameCenterDetailUpdateRequest.Data.Relationships
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboardV2](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultgroupleaderboardv2-data.dictionary.md)
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultleaderboardv2-data.dictionary.md)
 
+## Properties
+
+- `defaultGroupLeaderboard` (GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard)
+- `defaultGroupLeaderboardV2` (GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboardV2)
+- `defaultLeaderboard` (GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboard)
+- `defaultLeaderboardV2` (GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2)
+- `gameCenterGroup` (GameCenterDetailUpdateRequest.Data.Relationships.GameCenterGroup)
+
 ## See Also
 
 - [object GameCenterDetailUpdateRequest.Data.Attributes](gamecenterdetailupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

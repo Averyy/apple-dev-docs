@@ -22,6 +22,21 @@ Use leaderboard formatters to specify the unit of measurement for a Game Center 
 
 Before App Store Connect API version 3.0, formatters were based on localizations and were required for each localization. Legacy leaderboards created before the new addition of the Game Center APIs don’t have a `defaultFormatter` value; the value is `null`. Any localizations created before the new addition of the Game Center APIs have a `formatterOverride`.
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `defaultFormatter` (GameCenterLeaderboardFormatter) *(required)*
+- `recurrenceDuration` (duration)
+- `recurrenceRule` (string)
+- `recurrenceStartDate` (date-time)
+- `referenceName` (string) *(required)*
+- `scoreRangeEnd` (number)
+- `scoreRangeStart` (number)
+- `scoreSortType` (string) *(required)*
+- `submissionType` (string) *(required)*
+- `vendorIdentifier` (string) *(required)*
+- `visibility` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardCreateRequest.Data.Relationships](gamecenterleaderboardcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -20,6 +20,12 @@ object BetaTesterAppsLinkagesResponse
 - [object BetaTesterAppsLinkagesResponse.Data](betatesterappslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([BetaTesterAppsLinkagesResponse.Data]) *(required)*: The object types and IDs of the related resources.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links including the self-link and links to the related data.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [Get All App Resource IDs for a Beta Tester](get-v1-betatesters-_id_-relationships-apps.md)

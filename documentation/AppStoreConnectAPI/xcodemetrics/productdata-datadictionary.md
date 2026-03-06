@@ -20,6 +20,11 @@ object xcodeMetrics.ProductData
 - [object xcodeMetrics.ProductData.MetricCategories](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary.md)
   A metric category and its associated array of data and measurements.
 
+## Properties
+
+- `metricCategories` ([xcodeMetrics.ProductData.MetricCategories]): An array of metrics by category.
+- `platform` (string): The Apple platform on which the system gathered the metrics about your app.
+
 ## See Also
 
 - [object xcodeMetrics.Insights](xcodemetrics/insights-data.dictionary.md)

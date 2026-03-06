@@ -40,11 +40,11 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 // [1, 2, 5]
 ```
 
-> **Note**: O(), where  is the length of this sequence.
+> **Note**: O(*n*), where *n* is the length of this sequence.
 
 ## Parameters
 
-- `transform`: A closure that accepts an element of this   sequence as its argument and returns an optional value.
+- `transform`: A closure that accepts an element of this sequence as its argument and returns an optional value.
 
 ## See Also
 

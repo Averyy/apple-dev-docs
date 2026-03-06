@@ -8,6 +8,10 @@ Send or resend an invitation to a beta tester to test a specified app.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaTesterInvitations`
+
 
 ---
 

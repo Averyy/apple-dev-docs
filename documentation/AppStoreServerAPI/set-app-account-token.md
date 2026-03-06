@@ -27,6 +27,14 @@ This endpoint doesn’t support transactions for products shared through Family 
 
 You can assign the same `appAccountToken` value to more than one transaction, according to your needs. For example, you may choose to reuse the same `appAccountToken` value for every transaction that belongs to the same customer.
 
+## Endpoint
+
+`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/{originalTransactionId}/appAccountToken`
+
+## Parameters
+
+- `originalTransactionId` (originalTransactionId) *(required)*: The original transaction identifier of the transaction to receive the app account token update.
+
 ## Request Body
 
 The request body that contains a valid app account token value.

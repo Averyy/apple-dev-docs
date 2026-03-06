@@ -14,6 +14,11 @@ The data structure that represents a subscription prices linkages request resour
 object SubscriptionPricesLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -12,6 +12,14 @@ Update the reference name for a specific subscription group.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Subscription Group](post-v1-subscriptiongroups.md)

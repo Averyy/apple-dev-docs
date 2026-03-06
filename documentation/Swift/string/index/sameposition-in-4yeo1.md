@@ -40,7 +40,7 @@ print(String(cafe.unicodeScalars[..<j]))
 
 ## Parameters
 
-- `unicodeScalars`: The view to use for the index conversion.   This index must be a valid index of at least one view of the string   shared by  .
+- `unicodeScalars`: The view to use for the index conversion. This index must be a valid index of at least one view of the string shared by `unicodeScalars`.
 
 
 ---

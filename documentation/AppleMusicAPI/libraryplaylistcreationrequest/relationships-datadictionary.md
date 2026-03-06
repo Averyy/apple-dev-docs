@@ -22,6 +22,11 @@ object LibraryPlaylistCreationRequest.Relationships
 - [object LibraryPlaylistCreationRequest.Relationships.Tracks](libraryplaylistcreationrequest/relationships-data.dictionary/tracks-data.dictionary.md)
   The songs and music videos to add to the created playlist’s tracklist.
 
+## Properties
+
+- `tracks` (LibraryPlaylistCreationRequest.Relationships.Tracks) *(required)*: The songs and music videos the user adds to the playlist for the creation request.
+- `parent` (LibraryPlaylistCreationRequest.Relationships.Parent) *(required)*: The library playlist folder which contains the created playlist.
+
 ## See Also
 
 - [object LibraryPlaylistCreationRequest.Attributes](libraryplaylistcreationrequest/attributes-data.dictionary.md)

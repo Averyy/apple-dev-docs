@@ -21,8 +21,8 @@ init<Activity>(session: GroupSession<Activity>, deliveryMode: GroupSessionMessen
 
 ## Parameters
 
-- `session`: The group session to use for communication with participants.   Specify a session object that is in either the    or    state for this   parameter. However, a session must be in the joined state to send   or receive messages.
-- `deliveryMode`: The delivery mode for sending and receiving messages.   Specify a delivery mode option for the underlying transport of either    or  
+- `session`: The group session to use for communication with participants. Specify a session object that is in either the [`GroupSession.State.waiting`](groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state for this parameter. However, a session must be in the joined state to send or receive messages.
+- `deliveryMode`: The delivery mode for sending and receiving messages. Specify a delivery mode option for the underlying transport of either [`GroupSessionMessenger.DeliveryMode.reliable`](groupsessionmessenger/deliverymode-swift.enum/reliable.md) or [`GroupSessionMessenger.DeliveryMode.unreliable`](groupsessionmessenger/deliverymode-swift.enum/unreliable.md)
 
 
 ---

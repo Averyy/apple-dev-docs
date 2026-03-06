@@ -8,6 +8,14 @@ Remove a beta tester’s ability to test all apps.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaTesters/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Create a Beta Tester](post-v1-betatesters.md)

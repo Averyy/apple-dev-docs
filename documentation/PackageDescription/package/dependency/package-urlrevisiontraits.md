@@ -27,7 +27,7 @@ A `Package.Dependency` instance.
 ## Parameters
 
 - `url`: The valid Git URL of the package.
-- `revision`: A dependency requirement. See static methods on   for available options.
+- `revision`: A dependency requirement. See static methods on [`Package.Dependency.Requirement`](package/dependency/requirement-swift.enum.md) for available options.
 - `traits`: The trait configuration of this dependency. The default value enables the default traits of the package.
 
 ## See Also

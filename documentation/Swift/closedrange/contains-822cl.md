@@ -39,7 +39,7 @@ range.contains(2...12)       // false
 
 ## Parameters
 
-- `other`: A closed range to check for containment within this   closed range.
+- `other`: A closed range to check for containment within this closed range.
 
 
 ---

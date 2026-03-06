@@ -14,6 +14,11 @@ A passenger, diner, lodging guest, or event attendee.
 object Person
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `name` (string) *(required)*: The participant, or a primary participant of a multiperson reservation if the reservation provider doesn’t require a name for each participant.
+
 ## See Also
 
 - [object Ticket](ticket.md)

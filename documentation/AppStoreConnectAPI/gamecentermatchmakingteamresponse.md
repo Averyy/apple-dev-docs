@@ -14,6 +14,11 @@ The response body for endpoints that create or modify a team.
 object GameCenterMatchmakingTeamResponse
 ```
 
+## Properties
+
+- `data` (GameCenterMatchmakingTeam) *(required)*: The team that you create or modify.
+- `links` (DocumentLinks) *(required)*: The link representations of the object.
+
 ## See Also
 
 - [object GameCenterMatchmakingTeamCreateRequest](gamecentermatchmakingteamcreaterequest.md)

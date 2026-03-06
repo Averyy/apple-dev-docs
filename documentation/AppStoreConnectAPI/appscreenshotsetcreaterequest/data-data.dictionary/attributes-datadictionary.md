@@ -14,6 +14,10 @@ Attributes that you set that describe the new resource.
 object AppScreenshotSetCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `screenshotDisplayType` (ScreenshotDisplayType) *(required)*
+
 ## See Also
 
 - [object AppScreenshotSetCreateRequest.Data.Relationships](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

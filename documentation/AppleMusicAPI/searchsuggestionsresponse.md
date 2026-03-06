@@ -20,6 +20,10 @@ object SearchSuggestionsResponse
 - [object SearchSuggestionsResponse.Results](searchsuggestionsresponse/results-data.dictionary.md)
   An object that represents the results of a search suggestions query.
 
+## Properties
+
+- `results` (SearchSuggestionsResponse.Results) *(required)*: The results included in the response to a request for search suggestions.
+
 ## See Also
 
 - [object SearchResponse](searchresponse.md)

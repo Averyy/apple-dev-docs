@@ -20,6 +20,68 @@ Use this endpoint to add localized app information for a new locale. Be sure to 
 
 ##### Add Localized App Information in Us English
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/appInfoLocalizations
+
+{
+  "data": {
+    "type": "appInfoLocalizations",
+    "attributes": {
+      "locale": "en-US",
+      "name": "Forest Explorer",
+      "subtitle": "Hikes, trails, and maps",
+      "privacyPolicyUrl": "https://forestexplorer.apple.com/privacy-simple"
+    },
+    "relationships": {
+      "appInfo": {
+        "data": {
+          "type": "appInfos",
+          "id": "9c8e7e2b-07a8-45d9-8951-948507275bc6"
+        }
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "appInfoLocalizations",
+    "id": "9c8e7e2b-07a8-45d9-8951-948507275bc6",
+    "attributes": {
+      "locale": "en-GB",
+      "name": "Forest Explorer",
+      "subtitle": "Hikes, trails, and maps",
+      "privacyPolicyUrl": "https://forestexplorer.apple.com/privacy-simple",
+      "privacyPolicyText": null
+    },
+    "relationships": {
+      "appInfo": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/74ae3739-d321-4f83-afc3-3b66043ff163/relationships/appInfo",
+          "related": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/74ae3739-d321-4f83-afc3-3b66043ff163/appInfo"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/74ae3739-d321-4f83-afc3-3b66043ff163"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/74ae3739-d321-4f83-afc3-3b66043ff163"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appInfoLocalizations`
+
 ## See Also
 
 - [Modify an App Info Localization](patch-v1-appinfolocalizations-_id_.md)

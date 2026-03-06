@@ -37,12 +37,12 @@ print(s[i])
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(), where  is the absolute value of `distance`.
+> **Note**: O(*n*), where *n* is the absolute value of `distance`.
 
 ## Parameters
 
 - `i`: A valid index of the collection.
-- `distance`: The distance to offset  .
+- `distance`: The distance to offset `i`.
 
 ## See Also
 

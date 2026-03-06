@@ -26,7 +26,7 @@ A tuple of arrays.
 
 ## Parameters
 
-- `proportion`: A proportion in the range  .
+- `proportion`: A proportion in the range `[0.0, 1.0]`.
 - `seed`: A seed number for a random-number generator.
 
 

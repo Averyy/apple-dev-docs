@@ -98,6 +98,12 @@ var trackingConfiguration = ObjectTrackingProvider.TrackingConfiguration()
 
 With a tracking configuration in place, you can optimize the detection parameters for your app by adjusting the following properties:
 
+- **[`maximumTrackableInstances`](https://developer.apple.comhttps://developer.apple.com/documentation/arkit/objecttrackingprovider/trackingconfiguration/4380072-maximumtrackableinstances)**: The maximum number of instances that you can track across different object types at the same time.
+- **[`maximumInstancesPerReferenceObject`](https://developer.apple.comhttps://developer.apple.com/documentation/arkit/objecttrackingprovider/trackingconfiguration/4380071-maximuminstancesperreferenceobje)**: The maximum number of instances of each reference object type. The default value is `1`.
+- **[`detectionRate`](https://developer.apple.comhttps://developer.apple.com/documentation/arkit/objecttrackingprovider/trackingconfiguration/4380069-detectionrate)**: The frequency for detecting objects to track.
+- **[`stationaryObjectTrackingRate`](https://developer.apple.comhttps://developer.apple.com/documentation/arkit/objecttrackingprovider/trackingconfiguration/4380074-stationaryobjecttrackingrate)**: The frequency for tracking an object while it remains stationary.
+- **[`movingObjectTrackingRate`](https://developer.apple.comhttps://developer.apple.com/documentation/arkit/objecttrackingprovider/trackingconfiguration/4380073-movingobjecttrackingrate)**: The frequency for tracking an object while it’s in motion.
+
 Use `TrackingConfiguration` to adjust the values of these properties in your app.
 
 ```swift

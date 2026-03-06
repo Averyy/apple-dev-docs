@@ -42,7 +42,7 @@ const map = new mapkit.Map('mapContainer', { center: new mapkit.Coordinate(37.33
 ## Parameters
 
 - `parent`: A DOM element, or the ID of a DOM element, to use as your map’s container.
-- `options`: Options that   defines for initializing the properties of your map.
+- `options`: Options that [`MapConstructorOptions`](mapconstructoroptions.md) defines for initializing the properties of your map.
 
 ## See Also
 

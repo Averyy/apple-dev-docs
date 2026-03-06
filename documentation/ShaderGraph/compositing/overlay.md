@@ -21,6 +21,10 @@ A blend operation that multiplies dark areas and screens light areas.
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
+- **`Background`**: The background input. Represented by `B` in the mathmatical equation.
+- **`Mix`**: The weight of the blend operation. The higher the value of `Mix`, the more apparent the effect of the blend operation. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Overlay` node has one of two effects:

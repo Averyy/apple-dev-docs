@@ -14,6 +14,12 @@ A response that contains a single App Store Review Details resource.
 object AppStoreReviewDetailResponse
 ```
 
+## Properties
+
+- `data` (AppStoreReviewDetail) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreReviewDetail](appstorereviewdetail.md)

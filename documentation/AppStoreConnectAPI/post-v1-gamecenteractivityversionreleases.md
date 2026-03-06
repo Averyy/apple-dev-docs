@@ -12,6 +12,10 @@ Add a version release for a specific Game Center activity.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersionReleases`
+
 ## See Also
 
 - [Read activity version release information](get-v1-gamecenteractivityversionreleases-_id_.md)

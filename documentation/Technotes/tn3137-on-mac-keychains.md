@@ -61,7 +61,7 @@ The data protection keychain is only available in a user login context.  You can
 
 Each user gets exactly one data protection keychain.  The system selects the correct keychain based on the context of the caller.  That’s why the data protection keychain is only available in a user login context.
 
-File-based keychains are stored, as the name suggests, in files.  Every context has a keychain search list and a default keychain.  In a user context the search list includes a per-user  keychain and a single  keychain, with the former being the default.  In the system context the search list includes just the  keychain, which is also the default keychain.
+File-based keychains are stored, as the name suggests, in files.  Every context has a keychain search list and a default keychain.  In a user context the search list includes a per-user *login* keychain and a single *System* keychain, with the former being the default.  In the system context the search list includes just the *System* keychain, which is also the default keychain.
 
 When using the SecItem API to target the file-based keychain:
 
@@ -91,7 +91,7 @@ Some keychain features require the data protection keychain, including:
 
 #### User Interface
 
-The Keychain Access application supports both file-based keychains and the data protection keychain.  The keychain list shows all the file-based keychains in the search list for the current user—typically this is just  and —and the data protection keychain.  It displays the latter as either  or , depending on whether the user has enabled iCloud Keychain.  To create, add, and remove a file-based keychain, choose the corresponding command on the File menu.
+The Keychain Access application supports both file-based keychains and the data protection keychain.  The keychain list shows all the file-based keychains in the search list for the current user—typically this is just *login* and *System*—and the data protection keychain.  It displays the latter as either *iCloud Keychain* or *Local Items*, depending on whether the user has enabled iCloud Keychain.  To create, add, and remove a file-based keychain, choose the corresponding command on the File menu.
 
 Keychain Access displays all keychain items in file-based keychains but only password items in the data protection keychain.
 
@@ -101,8 +101,8 @@ The keychain support in the `security` command-line tool is primarily focused on
 
 #### Revision History
 
--  Republished as TN3137.  Made significant editorial changes.
--  First published as ”On Mac Keychains” on Apple Developer Forums.
+- **2022-11-01** Republished as TN3137.  Made significant editorial changes.
+- **2021-12-10** First published as ”On Mac Keychains” on Apple Developer Forums.
 
 ## See Also
 

@@ -12,6 +12,10 @@ Add a new merchant ID to your team.
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/merchantIds`
+
 ## See Also
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)

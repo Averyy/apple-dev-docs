@@ -18,6 +18,10 @@ For convenience sake, this document refers to some details of the Google Widevin
 
 The `EXT-X-KEY` tag has three attributes that principally control its behavior. These are `METHOD`, `KEYFORMAT`, and `URI`.
 
+- **`METHOD`**: Apple’s HLS encryption uses the AES block cipher algorithm and Cipher Block Chaining (CBC) mode. To guarantee compatibility with FairPlay, you must use the `METHOD=SAMPLE-AES`. In terms of the Common Encryption standard (ISO/IEC 23001-7), this is the `cbcs` protection scheme. If FairPlay isn’t involved you may use another `METHOD`.
+- **`KEYFORMAT`**: Use this attribute to convey how to obtain the key. For more information, see [`Choose a key format`](using-content-protection-systems-with-hls#Choose-a-key-format.md) for more detail. This can be modified by the attribute `KEYFORMATVERSIONS`. However, in most cases, this additional attribute should be either left oﬀ or set to the string value `"1"`.
+- **`URI`**: This contains the information needed to identify the specific key. The format of the `URI` is determined by the `KEYFORMAT` value.
+
 #### Choose a Key Format
 
 There are four supported key formats:

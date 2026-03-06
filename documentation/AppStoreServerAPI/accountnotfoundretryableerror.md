@@ -14,6 +14,11 @@ An error response that indicates the App Store account wasn’t found, but you c
 object AccountNotFoundRetryableError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AppNotFoundRetryableError](appnotfoundretryableerror.md)

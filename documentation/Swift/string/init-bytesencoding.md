@@ -22,8 +22,8 @@ init?<S>(bytes: S, encoding: String.Encoding) where S : Sequence, S.Element == U
 
 ## Parameters
 
-- `bytes`: A sequence of bytes to interpret using  .
-- `encoding`: The encoding to use to interpret  .
+- `bytes`: A sequence of bytes to interpret using `encoding`.
+- `encoding`: The encoding to use to interpret `bytes`.
 
 ## See Also
 

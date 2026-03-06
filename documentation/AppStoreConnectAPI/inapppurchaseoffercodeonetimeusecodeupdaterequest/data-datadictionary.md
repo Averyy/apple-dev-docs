@@ -20,6 +20,12 @@ object InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data
 - [object InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes](inapppurchaseoffercodeonetimeusecodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify an in-app purchase offer code one-time use code update request.
 
+## Properties
+
+- `attributes` (InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

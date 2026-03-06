@@ -12,6 +12,12 @@
 object SubscriptionOfferCodeOneTimeUseCodeResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionOfferCodeOneTimeUseCode) *(required)*
+- `included` ([SubscriptionOfferCode])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

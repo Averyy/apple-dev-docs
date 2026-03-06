@@ -14,6 +14,11 @@ The request body you use to update an app store version experiment treatment.
 object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

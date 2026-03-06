@@ -26,6 +26,13 @@ object StatusResponse
 - [type bundleId](bundleid.md)
   The bundle identifier of an app.
 
+## Properties
+
+- `data` ([SubscriptionGroupIdentifierItem]): An array of information for auto-renewable subscriptions, including App Store-signed transaction information and App Store-signed renewal information.
+- `environment` (environment): The server environment, sandbox or production, in which the App Store generated the response.
+- `appAppleId` (appAppleId): Your app’s App Store identifier.
+- `bundleId` (bundleId): Your app’s bundle identifier.
+
 ## See Also
 
 - [Get All Subscription Statuses](get-all-subscription-statuses.md)

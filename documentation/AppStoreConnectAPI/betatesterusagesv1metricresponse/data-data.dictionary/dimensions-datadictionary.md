@@ -17,6 +17,10 @@ object BetaTesterUsagesV1MetricResponse.Data.Dimensions
 ### Objects
 - [object BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps](betatesterusagesv1metricresponse/data-data.dictionary/dimensions-data.dictionary/apps-data.dictionary.md)
 
+## Properties
+
+- `apps` (BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps)
+
 ## See Also
 
 - [object BetaTesterUsagesV1MetricResponse.Data.DataPoints](betatesterusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)

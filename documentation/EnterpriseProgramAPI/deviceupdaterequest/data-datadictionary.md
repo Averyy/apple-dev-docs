@@ -17,6 +17,12 @@ object DeviceUpdateRequest.Data
 - [object DeviceUpdateRequest.Data.Attributes](deviceupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (DeviceUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

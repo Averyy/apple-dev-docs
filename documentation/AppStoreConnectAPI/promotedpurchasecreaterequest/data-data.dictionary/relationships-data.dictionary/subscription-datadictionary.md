@@ -17,6 +17,10 @@ object PromotedPurchaseCreateRequest.Data.Relationships.Subscription
 ### Objects
 - [object PromotedPurchaseCreateRequest.Data.Relationships.Subscription.Data](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (PromotedPurchaseCreateRequest.Data.Relationships.Subscription.Data)
+
 ## See Also
 
 - [object PromotedPurchaseCreateRequest.Data.Relationships.App](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)

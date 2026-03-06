@@ -23,6 +23,18 @@ Get a list of localizations for a specific Game Center achievement version.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterAchievementVersions/{id}/localizations`
+
+## Parameters
+
+- `fields[gameCenterAchievementImages]` ([string])
+- `fields[gameCenterAchievementLocalizations]` ([string])
+- `fields[gameCenterAchievementVersions]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read Game Center achievement version information](get-v2-gamecenterachievementversions-_id_.md)

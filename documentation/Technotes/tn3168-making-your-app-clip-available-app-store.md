@@ -54,7 +54,7 @@ In rare cases, your App Clip may become unavailable due to factors outside of yo
 
 #### Revision History
 
--  First published.
+- **2024-06-04** First published.
 
 ## See Also
 

@@ -8,6 +8,14 @@ Determine the data sets available for the specified location.
 **Availability**:
 - Weather API 1.0.0+
 
+## Endpoint
+
+`GET https://weatherkit.apple.com/api/v1/availability/{latitude}/{longitude}`
+
+## Parameters
+
+- `country` (string) *(required)*: The ISO Alpha-2 country code for the requested location. This parameter is necessary for air quality and weather alerts.
+
 ## See Also
 
 - [GET /api/v1/weather/{language}/{latitude}/{longitude}](get-api-v1-weather-_language_-_latitude_-_longitude_.md)

@@ -6,15 +6,15 @@ Learn how provisioning profiles enable third-party code to run on Apple platform
 
 #### Overview
 
-Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The  technote series is different: It peeks behind the code signing curtain, to give you a better understanding of how this technology works.  Read these technotes to make better code signing choices up front, to understand why Apple’s code signing tools work the way they do, to inform your investigation of any code signing issues you encounter, and because learning stuff is fun!
+Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technote series is different: It peeks behind the code signing curtain, to give you a better understanding of how this technology works.  Read these technotes to make better code signing choices up front, to understand why Apple’s code signing tools work the way they do, to inform your investigation of any code signing issues you encounter, and because learning stuff is fun!
 
-The other technotes in the  series are:
+The other technotes in the *Inside Code Signing* series are:
 
 - [`TN3126: Inside Code Signing: Hashes`](tn3126-inside-code-signing-hashes.md)
 - [`TN3127: Inside Code Signing: Requirements`](tn3127-inside-code-signing-requirements.md)
 - [`TN3161: Inside Code Signing: Certificates`](tn3161-inside-code-signing-certificates.md)
 
-> ❗ **Important**: The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Provisioning Profile Fundamentals
 
@@ -26,7 +26,7 @@ Apple platforms, except macOS, won’t run arbitrary third-party code.  All exec
 - When can those apps run?
 - How can those apps be entitled?
 
-> **Note**: In this document the term  refers to a main executable packaged in a bundle structure.  This encompasses apps, app extensions, App Clips, system extensions, and XPC Services.
+> **Note**: In this document the term *app* refers to a main executable packaged in a bundle structure.  This encompasses apps, app extensions, App Clips, system extensions, and XPC Services.
 
 You create provisioning profiles using the Apple Developer website, either directly using the website or indirectly using Xcode or the [`App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI).
 
@@ -209,7 +209,7 @@ Every entitlement claimed by this app is authorized by its profile, and thus iOS
 
 #### Entitlements on Macos
 
-A macOS app can claim certain entitlements without them being authorized by a provisioning profile.  These  include:
+A macOS app can claim certain entitlements without them being authorized by a provisioning profile.  These *unrestricted entitlements* include:
 
 - `com.apple.security.get-task-allow`
 - `com.apple.security.application-groups`
@@ -218,7 +218,7 @@ A macOS app can claim certain entitlements without them being authorized by a pr
 
 > **Note**: On other Apple platforms the equivalent to `com.apple.security.get-task-allow` is `get-task-allow` and, as with all entitlements on those platforms, must be authorized by a profile.  Also, App Groups work differently on macOS and other platforms.  For details, see [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
 
-In contrast,  must be authorized by a provisioning profile.  This is an important security feature on macOS.  For example, the fact that the `keychain-access-groups` entitlement must be authorized by a profile means that other developers can’t impersonate your app in order to steal its keychain items.
+In contrast, *restricted entitlements* must be authorized by a provisioning profile.  This is an important security feature on macOS.  For example, the fact that the `keychain-access-groups` entitlement must be authorized by a profile means that other developers can’t impersonate your app in order to steal its keychain items.
 
 A Mac app that uses no restricted entitlements doesn’t need a provisioning profile.  This is true even if the app is distributed on the App Store.  The only exception to this rule is TestFlight, which always requires a profile.
 
@@ -310,10 +310,10 @@ This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, a
 
 #### Revision History
 
--  Added a link to [`TN3126: Inside Code Signing: Hashes`](tn3126-inside-code-signing-hashes.md).  Made other minor editorial changes.
--  Made minor editorial changes.
--  Republished as TN3125.  Added [`The future is DER`](tn3125-inside-code-signing-provisioning-profiles#The-future-is-DER.md) section.  Updated the examples to use `plutil`.  Also made significant editorial changes.
--  First published as ”What exactly is a provisioning profile?” on Apple Developer Forums.
+- **2024-02-06** Added a link to [`TN3126: Inside Code Signing: Hashes`](tn3126-inside-code-signing-hashes.md).  Made other minor editorial changes.
+- **2022-05-24** Made minor editorial changes.
+- **2022-05-03** Republished as TN3125.  Added [`The future is DER`](tn3125-inside-code-signing-provisioning-profiles#The-future-is-DER.md) section.  Updated the examples to use `plutil`.  Also made significant editorial changes.
+- **2021-07-26** First published as ”What exactly is a provisioning profile?” on Apple Developer Forums.
 
 ## See Also
 

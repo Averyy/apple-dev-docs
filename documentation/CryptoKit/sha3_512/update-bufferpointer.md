@@ -28,7 +28,7 @@ Call this method one or more times to provide data to the hash function in block
 
 ## Parameters
 
-- `bufferPointer`: A pointer to the next block of data for the ongoing   digest calculation.
+- `bufferPointer`: A pointer to the next block of data for the ongoing digest calculation.
 
 
 ---

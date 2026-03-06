@@ -14,6 +14,10 @@ The attributes you set that describe the new Beta App Clip Invocations resource.
 object BetaAppClipInvocationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `url` (uri) *(required)*: The invocation URL you configure for testers who use the TestFlight to launch your App Clip.
+
 ## See Also
 
 - [object BetaAppClipInvocationCreateRequest.Data.Relationships](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

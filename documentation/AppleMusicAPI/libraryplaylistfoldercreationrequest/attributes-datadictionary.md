@@ -14,6 +14,10 @@ The attributes for a library playlist folder creation request object.
 object LibraryPlaylistFolderCreationRequest.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*: The name of the playlist folder of the creation request.
+
 ## See Also
 
 - [object LibraryPlaylistFolderCreationRequest.Relationships](libraryplaylistfoldercreationrequest/relationships-data.dictionary.md)

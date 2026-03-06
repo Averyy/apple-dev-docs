@@ -8,6 +8,14 @@ Update the relationship between achievements and a specific Game Center activity
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}/relationships/achievements`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

@@ -14,6 +14,11 @@ The type and ID of a related Pull Requests resource.
 object CiBuildRun.Relationships.PullRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Pull Requests resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

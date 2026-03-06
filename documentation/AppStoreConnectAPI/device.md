@@ -20,6 +20,13 @@ object Device
 - [object Device.Attributes](device/attributes-data.dictionary.md)
   Attributes that describe a Devices resource.
 
+## Properties
+
+- `attributes` (Device.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object DevicesWithoutIncludesResponse](deviceswithoutincludesresponse.md)

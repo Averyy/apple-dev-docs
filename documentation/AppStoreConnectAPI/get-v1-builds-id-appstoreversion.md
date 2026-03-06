@@ -8,6 +8,30 @@ Get the App Store version of a specific build.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/appStoreVersion`
+
+## Parameters
+
+- `fields[appStoreVersions]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
+- `limit[appStoreVersionLocalizations]` (integer)
+- `limit[appStoreVersionExperiments]` (integer)
+- `include` ([string])
+- `fields[appClipDefaultExperiences]` ([string])
+- `fields[ageRatingDeclarations]` ([string])
+- `fields[appStoreVersionSubmissions]` ([string])
+- `fields[appStoreReviewDetails]` ([string])
+- `fields[apps]` ([string])
+- `fields[routingAppCoverages]` ([string])
+- `fields[appStoreVersionPhasedReleases]` ([string])
+- `fields[builds]` ([string])
+- `limit[appStoreVersionExperimentsV2]` (integer)
+- `fields[alternativeDistributionPackages]` ([string])
+- `fields[gameCenterAppVersions]` ([string])
+
 ## See Also
 
 - [List Builds](get-v1-builds.md)

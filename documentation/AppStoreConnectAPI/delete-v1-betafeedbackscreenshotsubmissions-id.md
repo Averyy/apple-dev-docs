@@ -8,6 +8,14 @@ Delete a beta feedback screenshot submission from your app.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaFeedbackScreenshotSubmissions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaFeedbackScreenshotSubmissions` resource ID from the [`List all beta feedback screenshot submissions for an app`](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md) response.
+
 ## See Also
 
 - [List all beta feedback screenshot submissions for an app](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)

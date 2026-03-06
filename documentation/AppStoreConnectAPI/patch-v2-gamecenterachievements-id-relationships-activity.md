@@ -19,6 +19,14 @@ Update the activity relationship for a specific Game Center achievement.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/gameCenterAchievements/{id}/relationships/activity`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center achievement](post-v2-gamecenterachievements.md)

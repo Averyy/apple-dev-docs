@@ -22,6 +22,14 @@ object RoutingAppCoverage
 - [object RoutingAppCoverage.Relationships](routingappcoverage/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (RoutingAppCoverage.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (RoutingAppCoverage.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)

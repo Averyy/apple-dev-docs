@@ -17,6 +17,12 @@ object BuildDiagnosticSignaturesLinkagesResponse
 ### Dictionaries
 - [object BuildDiagnosticSignaturesLinkagesResponse.Data](builddiagnosticsignatureslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BuildDiagnosticSignaturesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Build](build.md)

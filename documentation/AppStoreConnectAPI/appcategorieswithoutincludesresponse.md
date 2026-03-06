@@ -12,6 +12,12 @@
 object AppCategoriesWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([AppCategory]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCategoriesResponse](appcategoriesresponse.md)

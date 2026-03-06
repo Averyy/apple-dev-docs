@@ -43,7 +43,7 @@ print(students)
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements that compare as equal.
 
-> **Note**: O( log ), where  is the length of the collection.
+> **Note**: O(*n* log *n*), where *n* is the length of the collection.
 
 
 ---

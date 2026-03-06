@@ -17,9 +17,18 @@ Returns an environment’s diffuse and specular radiance value based on real-wor
 
 #### Parameter Descriptions
 
+- **`Base Color`**: The base display color of the surface. The color under pure white light.
+- **`Roughness`**: The level of roughness of the surface. This value ranges between `0` and `1.0`, with `0` representing a perfectly specular surface and `1.0` representing maximum roughness. The default value is `0`.
+- **`Specular`**: The level of specular reflections that occur on the surface.
+- **`Metallic`**: The indicator if a surface is metallic or not. Set this value to `1` for metallic surfaces and `0` for nonmetallic surfaces. The default value is `0.0`.
+- **`Normal`**: The surface normal vector. The default value is `(0,0,0)`.
+
 #### Discussion
 
 The Environment Radiance node has two outputs:
+
+- **`Diffuse Radiance`**: The diffuse radiance of the surface. Refers to light absorbed by the surface and then re-emitted in all directions.
+- **`Specular Radiance`**: The specular radiance of the surface. Refers to light reflected off of the surface.
 
 ## See Also
 

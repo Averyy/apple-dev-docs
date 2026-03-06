@@ -14,6 +14,11 @@ An object that describes the outcome of canceling a download request.
 object CancellationResponse
 ```
 
+## Properties
+
+- `jobStatus` (string): The current status of the download request.
+- `status` (string): The outcome of the cancellation operation.
+
 ## See Also
 
 - [Cancel request](cancel-request.md)

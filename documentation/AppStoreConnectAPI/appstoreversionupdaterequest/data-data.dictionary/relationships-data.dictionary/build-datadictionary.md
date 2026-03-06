@@ -20,6 +20,10 @@ object AppStoreVersionUpdateRequest.Data.Relationships.Build
 - [object AppStoreVersionUpdateRequest.Data.Relationships.Build.Data](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
+## Properties
+
+- `data` (AppStoreVersionUpdateRequest.Data.Relationships.Build.Data)
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)

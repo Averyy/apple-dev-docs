@@ -30,7 +30,7 @@ The index value immediately before `i`.
 
 ## Parameters
 
-- `i`: A valid index of the array.   must be greater than   .
+- `i`: A valid index of the array. `i` must be greater than `startIndex`.
 
 
 ---

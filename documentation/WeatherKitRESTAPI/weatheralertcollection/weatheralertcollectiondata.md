@@ -14,6 +14,11 @@ A collecton of weather alerts.
 object WeatherAlertCollection.WeatherAlertCollectionData
 ```
 
+## Properties
+
+- `alerts` ([WeatherAlertSummary]) *(required)*: An array of weather alert summaries.
+- `detailsUrl` (string): A URL that provides more information about the alerts.
+
 ## Relationships
 
 ### Inherited By

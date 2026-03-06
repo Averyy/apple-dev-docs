@@ -6,7 +6,7 @@
 A notification subtype value that App Store Server Notifications 2 uses.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

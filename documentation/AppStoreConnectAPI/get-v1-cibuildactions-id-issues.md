@@ -14,6 +14,54 @@ The example request below lists all issues Xcode Cloud encountered when it perfo
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/2488c5ec-ee0c-425e-902b-41c1e88208ca/issues
+```
+
+**Response**:
+
+```json
+{
+"data": [
+        {
+            "type": "ciIssues",
+            "id": "b5ed3706-96e4-4111-be17-049fb365b72e",
+            "attributes": {
+                "issueType": "ERROR",
+                "message": "An example message.",
+                "fileSource": {
+                    "path": "/path/to/the/file/that/contains/the/issue",
+                    "lineNumber": 42
+                },
+                "category": null
+            },
+            "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/ciIssues/b5ed3706-96e4-4111-be17-049fb365b72e"
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciBuildActions/2488c5ec-ee0c-425e-902b-41c1e88208ca/issues"
+    },
+    "meta": {
+        "paging": {
+            "limit": 50
+        }
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/{id}/issues`
+
+## Parameters
+
+- `fields[ciIssues]` ([string]): Additional fields to include for each Issues resource returned by the response.
+- `limit` (integer): The number of Issues resources to return.
+
 ## See Also
 
 - [Read Build Action Information](get-v1-cibuildactions-_id_.md)

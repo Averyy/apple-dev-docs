@@ -14,6 +14,11 @@ The type and ID of the App Clip Header Images resource that you’re relating wi
 object AppClipAdvancedExperienceCreateRequest.Data.Relationships.HeaderImage.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Clip Header Images resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

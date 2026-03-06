@@ -8,6 +8,15 @@ Get information about an App Store review attachment and its upload and processi
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreReviewAttachments/{id}`
+
+## Parameters
+
+- `fields[appStoreReviewAttachments]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Review Attachments for an App Store Review Detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)

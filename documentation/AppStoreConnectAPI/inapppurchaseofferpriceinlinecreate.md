@@ -19,6 +19,12 @@ object InAppPurchaseOfferPriceInlineCreate
 ### Generated dictionaries
 - [object InAppPurchaseOfferPriceInlineCreate.Relationships](inapppurchaseofferpriceinlinecreate/relationships-data.dictionary.md)
 
+## Properties
+
+- `id` (string)
+- `relationships` (InAppPurchaseOfferPriceInlineCreate.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

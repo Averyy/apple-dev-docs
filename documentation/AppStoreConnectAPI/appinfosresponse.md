@@ -14,6 +14,13 @@ A response that contains a list of App Info resources.
 object AppInfosResponse
 ```
 
+## Properties
+
+- `data` ([AppInfo]) *(required)*: The resource data.
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [object AppInfo](appinfo.md)

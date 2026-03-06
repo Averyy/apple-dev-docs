@@ -14,6 +14,10 @@ Attributes whose values you’re changing as part of the update request.
 object BuildBetaDetailUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `autoNotifyEnabled` (boolean): A Boolean value that enables you to send test invitations to users automatically when the build is available to external groups.
+
 ## See Also
 
 - [Build Beta Details](build-beta-details.md)

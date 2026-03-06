@@ -6,7 +6,7 @@
 An error that indicates a required storefront country code is empty.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object InvalidEmptyStorefrontCountryCodeListError
 #### Discussion
 
 This error applies to the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint. If your request applies to all storefronts, omit the `storefrontCountryCodes` list from the [`MassExtendRenewalDateRequest`](massextendrenewaldaterequest.md) object.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

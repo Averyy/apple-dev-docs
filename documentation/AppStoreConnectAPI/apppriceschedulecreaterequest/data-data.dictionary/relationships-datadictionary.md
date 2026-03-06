@@ -19,6 +19,12 @@ object AppPriceScheduleCreateRequest.Data.Relationships
 - [object AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/baseterritory-data.dictionary.md)
 - [object AppPriceScheduleCreateRequest.Data.Relationships.ManualPrices](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/manualprices-data.dictionary.md)
 
+## Properties
+
+- `app` (AppPriceScheduleCreateRequest.Data.Relationships.App) *(required)*
+- `baseTerritory` (AppPriceScheduleCreateRequest.Data.Relationships.BaseTerritory) *(required)*
+- `manualPrices` (AppPriceScheduleCreateRequest.Data.Relationships.ManualPrices) *(required)*
+
 
 ---
 

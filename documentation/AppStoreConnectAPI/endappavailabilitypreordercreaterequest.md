@@ -19,6 +19,10 @@ object EndAppAvailabilityPreOrderCreateRequest
 ### Objects
 - [object EndAppAvailabilityPreOrderCreateRequest.Data](endappavailabilitypreordercreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (EndAppAvailabilityPreOrderCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

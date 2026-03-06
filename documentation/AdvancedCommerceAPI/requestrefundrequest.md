@@ -18,6 +18,14 @@ object RequestRefundRequest
 
 This is the request body for the [`Request Transaction Refund`](request-transaction-refund.md) endpoint.
 
+## Properties
+
+- `currency` (currency): The currency of the transaction.
+- `items` ([RequestRefundItem]) *(required)*
+- `refundRiskingPreference` (refundRiskingPreference) *(required)*
+- `requestInfo` (RequestInfo) *(required)*
+- `storefront` (storefront)
+
 ## See Also
 
 - [Request Transaction Refund](request-transaction-refund.md)

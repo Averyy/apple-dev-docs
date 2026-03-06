@@ -12,6 +12,12 @@
 object InAppPurchaseAvailabilityResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseAvailability) *(required)*
+- `included` ([Territory])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAvailability](inapppurchaseavailability.md)

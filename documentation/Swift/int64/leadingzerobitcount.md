@@ -22,7 +22,7 @@ var leadingZeroBitCount: Int { get }
 
 #### Discussion
 
-For example, in a fixed-width integer type with a `bitWidth` value of 8, the number  has three leading zeros.
+For example, in a fixed-width integer type with a `bitWidth` value of 8, the number *31* has three leading zeros.
 
 ```swift
 let x: Int8 = 0b0001_1111

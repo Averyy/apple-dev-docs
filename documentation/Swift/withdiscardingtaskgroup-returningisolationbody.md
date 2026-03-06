@@ -25,9 +25,9 @@ func withDiscardingTaskGroup<GroupResult>(returning returnType: GroupResult.Type
 
 Unlike a [`TaskGroup`](taskgroup.md), the child tasks as well as their results are discarded as soon as the tasks complete. This prevents the discarding task group from accumulating many results waiting to be consumed, and is best applied in situations where the result of a child task is some form of side-effect.
 
-A group  waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
+A group *always* waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
-It is not possible to explicitly await completion of child-tasks, however the group will automatically await  child task completions before returning from this function:
+It is not possible to explicitly await completion of child-tasks, however the group will automatically await *all* child task completions before returning from this function:
 
 ```swift
 await withDiscardingTaskGroup(...) { group in

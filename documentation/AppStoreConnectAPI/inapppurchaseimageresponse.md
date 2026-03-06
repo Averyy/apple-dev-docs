@@ -14,6 +14,12 @@ A response that contains a single in-app purchase images resource.
 object InAppPurchaseImageResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseImage) *(required)*
+- `included` ([InAppPurchaseV2])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseImage](inapppurchaseimage.md)

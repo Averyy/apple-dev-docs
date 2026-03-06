@@ -16,6 +16,8 @@ array[Any] asSet(array[Any] list)
 
 ##### Parameters
 
+- **`list`**: An array to convert to a set.
+
 ##### Return Value
 
 A set that contains the contents of `list` with the duplicates removed and sorted in an order that’s natural to the contents.

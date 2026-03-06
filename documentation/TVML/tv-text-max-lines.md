@@ -14,6 +14,8 @@ Here’s an example that shows a text element with a maximum of three lines of t
 
 ##### Values for Tv Text Max Lines
 
+- **Integer**: The maximum number of lines to be displayed in an element.
+
 ##### Elements That Use Tv Text Max Lines
 
 - [`description`](description.md)

@@ -18,6 +18,12 @@ object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSe
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets.Data](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app store version experiment treatment localization.
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary.md)

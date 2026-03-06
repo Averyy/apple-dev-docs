@@ -18,6 +18,11 @@ object GameCenterChallengeLocalization.Relationships
 - [object GameCenterChallengeLocalization.Relationships.Image](gamecenterchallengelocalization/relationships-data.dictionary/image-data.dictionary.md)
 - [object GameCenterChallengeLocalization.Relationships.Version](gamecenterchallengelocalization/relationships-data.dictionary/version-data.dictionary.md)
 
+## Properties
+
+- `image` (GameCenterChallengeLocalization.Relationships.Image)
+- `version` (GameCenterChallengeLocalization.Relationships.Version)
+
 
 ---
 

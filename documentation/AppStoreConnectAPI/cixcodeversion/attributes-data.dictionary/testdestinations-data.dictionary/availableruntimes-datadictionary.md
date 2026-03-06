@@ -14,6 +14,11 @@ The data structure that represents the available runtimes for test destinations 
 object CiXcodeVersion.Attributes.TestDestinations.AvailableRuntimes
 ```
 
+## Properties
+
+- `runtimeIdentifier` (string): A string that identifies the simulated environment Xcode Cloud uses for a test action.
+- `runtimeName` (string): The name of the operating system of the simulated environment Xcode Cloud uses.
+
 
 ---
 

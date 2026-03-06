@@ -8,7 +8,7 @@ Analyze how users engage with your App Clips.
 
 The App Clip Usage Report includes App Clip engagement and usage data from users who have opted-in to share their data with Apple and developers. Use these reports to estimate the number of App Clip card views, App Clip installations, App Clip Sessions, and session duration.
 
-Data is available in two reports: standard and detailed. The  reports include all fields that are not easily related to uniquely identifiable user data. to potentially sensitive data, and the  report includes all fields. Detailed reports include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+Data is available in two reports: standard and detailed. The *standard* reports include all fields that are not easily related to uniquely identifiable user data. to potentially sensitive data, and the *detailed* report includes all fields. Detailed reports include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. To learn more, see [`Protecting user privacy in report data`](privacy.md).
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS

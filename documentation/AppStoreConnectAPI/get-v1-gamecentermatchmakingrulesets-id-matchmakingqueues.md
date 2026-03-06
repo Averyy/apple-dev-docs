@@ -8,6 +8,17 @@ Get information about queues that belong to a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSets/{id}/matchmakingQueues`
+
+## Parameters
+
+- `fields[gameCenterMatchmakingQueues]` ([string]): The fields of queues to include in the response.
+- `fields[gameCenterMatchmakingRuleSets]` ([string]): The fields of the rule set to include.
+- `include` ([string]): The relationships to include in the response.
+- `limit` (integer): The maximum number of queues to fetch.
+
 ## See Also
 
 - [List all rule sets](get-v1-gamecentermatchmakingrulesets.md)

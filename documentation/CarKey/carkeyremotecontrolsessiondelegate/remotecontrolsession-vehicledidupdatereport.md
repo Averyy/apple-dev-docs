@@ -26,7 +26,7 @@ When information for a vehicle changes, the session notifies its delegate so you
 ## Parameters
 
 - `session`: The current session.
-- `vehicleDidUpdateReport`: The updated vehicle report, which you   can use to make changes immediately.
+- `vehicleDidUpdateReport`: The updated vehicle report, which you can use to make changes immediately.
 
 ## See Also
 

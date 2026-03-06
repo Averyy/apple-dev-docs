@@ -19,6 +19,11 @@ Adjust the number of resources returned per page by using the `limit` query para
 GET /v1/users?limit=10
 ```
 
+## Properties
+
+- `total` (integer): The total number of resources matching your request.
+- `limit` (integer) *(required)*: The maximum number of resources to return per page, from 0 to 200.
+
 
 ---
 

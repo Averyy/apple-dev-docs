@@ -8,6 +8,10 @@ Add a new build upload to an app.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/buildUploads`
+
 ## See Also
 
 - [List all build uploads for an app](get-v1-apps-_id_-builduploads.md)

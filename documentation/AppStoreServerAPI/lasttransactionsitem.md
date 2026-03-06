@@ -26,6 +26,13 @@ object lastTransactionsItem
 - [type JWSTransaction](jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
+## Properties
+
+- `originalTransactionId` (originalTransactionId): The original transaction identifier of the auto-renewable subscription.
+- `status` (status): The status of the auto-renewable subscription.
+- `signedRenewalInfo` (JWSRenewalInfo): The subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
+- `signedTransactionInfo` (JWSTransaction): The transaction information signed by the App Store, in JWS format.
+
 ## See Also
 
 - [subscriptionGroupIdentifier](subscriptiongroupidentifieritem/subscriptiongroupidentifier.md)

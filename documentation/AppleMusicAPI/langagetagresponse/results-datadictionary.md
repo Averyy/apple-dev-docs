@@ -14,6 +14,10 @@ Results included in the response for a storefront resource request.
 object LangageTagResponse.Results
 ```
 
+## Properties
+
+- `tag` (string) *(required)*: The RFC4646 language tag for the request.
+
 
 ---
 

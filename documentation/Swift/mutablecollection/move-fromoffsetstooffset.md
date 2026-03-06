@@ -46,12 +46,12 @@ letters.move(fromOffsets: IndexSet(integer: 2), toOffset: 2)
 // String(letters) == "ABcDefgHIJKlmNO"
 ```
 
-> **Note**: O( log ), where  is the length of the collection.
+> **Note**: O(*n* log *n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `source`: An index set representing the offsets of all elements that   should be moved.
-- `destination`: The offset of the element before which to insert the   moved elements.   must be in the closed range   .
+- `source`: An index set representing the offsets of all elements that should be moved.
+- `destination`: The offset of the element before which to insert the moved elements. `destination` must be in the closed range `0...count`.
 
 
 ---

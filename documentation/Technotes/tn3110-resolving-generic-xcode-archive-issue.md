@@ -6,7 +6,7 @@ Identify common configurations that cause a generic Xcode archive.
 
 #### Overview
 
-The Archives organizer reports your archive as an  if it contains a single top-level app and a , otherwise. ![A generic archive.](https://docs-assets.developer.apple.com/published/f2d93098ac3d94ad520da9f1b21631de/tn3110-generic_archive%402x.png) You can validate and distribute an app archive. A generic archive, which may contain unexpected items such as header files, static libraries, or frameworks, can’t be validated nor distributed.
+The Archives organizer reports your archive as an *app archive* if it contains a single top-level app and a *generic Xcode archive*, otherwise. ![A generic archive.](https://docs-assets.developer.apple.com/published/f2d93098ac3d94ad520da9f1b21631de/tn3110-generic_archive%402x.png) You can validate and distribute an app archive. A generic archive, which may contain unexpected items such as header files, static libraries, or frameworks, can’t be validated nor distributed.
 
 #### Ensure the Skip Install Build Setting Is Properly Configured
 
@@ -26,7 +26,7 @@ The [`Installation Directory (INSTALL_PATH)`](https://developer.apple.comhttps:/
 
 #### Revision History
 
--  First published.
+- **2022-02-08** First published.
 
 ## See Also
 

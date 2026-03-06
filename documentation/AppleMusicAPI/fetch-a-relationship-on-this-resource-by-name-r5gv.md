@@ -16,6 +16,99 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library/playlist-folders/p.WmzVVDOUO9pDBk/children
+```
+
+**Response**:
+
+```json
+{    
+    "data": [
+        {
+            "id": "p.RB1AA8bCv74Zkl",
+            "type": "library-playlists",
+            "href": "/v1/me/library/playlists/p.RB1AA8bCv74Zkl",
+            "attributes": {
+                "description": {
+                    "standard": ""
+                },
+                "dateAdded": "2021-12-03T19: 06: 29Z",
+                "hasCatalog": true,
+                "isPublic": false,
+                "playParams": {
+                    "id": "p.RB1AA8bCv74Zkl",
+                    "kind": "playlist",
+                    "isLibrary": true,
+                    "globalId": "pl.u-jV8990gT3bLqrj"
+                },
+                "name": "Chill JPop",
+                "canEdit": true
+            }
+        },
+        {
+            "id": "p.eoGxpgbtxAPJG6",
+            "type": "library-playlists",
+            "href": "/v1/me/library/playlists/p.eoGxpgbtxAPJG6",
+            "attributes": {
+                "description": {
+                    "standard": ""
+                },
+                "dateAdded": "2021-09-02T18: 43: 15Z",
+                "hasCatalog": true,
+                "isPublic": true,
+                "playParams": {
+                    "id": "p.eoGxpgbtxAPJG6",
+                    "kind": "playlist",
+                    "isLibrary": true,
+                    "globalId": "pl.u-WabZ6rRCYW2vBE"
+                },
+                "name": "Chill Tracks Instrumental",
+                "canEdit": true
+            }
+        },
+        {
+            "id": "p.4Y0JJrJuMWkD60",
+            "type": "library-playlists",
+            "href": "/v1/me/library/playlists/p.4Y0JJrJuMWkD60",
+            "attributes": {
+                "description": {
+                    "standard": ""
+                },
+                "dateAdded": "2022-03-10T02: 26: 39Z",
+                "hasCatalog": true,
+                "isPublic": false,
+                "playParams": {
+                    "id": "p.4Y0JJrJuMWkD60",
+                    "kind": "playlist",
+                    "isLibrary": true,
+                    "globalId": "pl.u-kv9llBlC6XZWBv"
+                },
+                "name": "Chill Tracks w/ Vocals",
+                "canEdit": true
+            }
+        }
+    ],
+    "meta": {
+        "total": 3
+    }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/me/library/playlist-folders/{id}/{relationship}`
+
+## Parameters
+
+- `include` ([string]): Additional relationships to include in the fetch.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object LibraryPlaylists](libraryplaylists.md)

@@ -20,6 +20,12 @@ object AppStoreVersionLocalization.Relationships.AppPreviewSets
 - [object AppStoreVersionLocalization.Relationships.AppPreviewSets.Data](appstoreversionlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([AppStoreVersionLocalization.Relationships.AppPreviewSets.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionLocalization.Relationships.AppScreenshotSets](appstoreversionlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary.md)

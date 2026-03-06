@@ -40,7 +40,7 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 ## Parameters
 
 - `i`: A valid index of the array.
-- `distance`: The distance to offset  .
+- `distance`: The distance to offset `i`.
 
 
 ---

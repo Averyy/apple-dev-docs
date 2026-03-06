@@ -41,7 +41,7 @@ Load command 8
     uuid E3F22F87-0B68-3B06-A845-8402D70B8FE9
 ```
 
-> **Note**: To learn more about these tools, see the UNIX online manual, known as .  For information on how to access that documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
+> **Note**: To learn more about these tools, see the UNIX online manual, known as *man pages*.  For information on how to access that documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
 
 By default the Apple linker sets the build UUID based on a hash of the built code.  This promotes reproducible builds.
 
@@ -75,11 +75,11 @@ Each distinct Mach-O image must have its own unique build UUID.
 
 Consider one of the critical use cases for build UUIDs, namely symbolication.  If two different Mach-O images had the same build UUID, you wouldn’t be able to match up an image with the correct debug symbol (`dSYM`) file.
 
-Normally this isn’t a problem because both UUID generation approaches described above—hash-based UUIDs and random UUIDs—result in a unique build UUID.  However, there’s a subtlety around the concept of .
+Normally this isn’t a problem because both UUID generation approaches described above—hash-based UUIDs and random UUIDs—result in a unique build UUID.  However, there’s a subtlety around the concept of *distinct*.
 
 Imagine you ship a dynamic library that’s embedded in multiple apps.  Each copy of this library has the same build UUID, and that’s absolutely fine.
 
-Things get trickier when it comes to apps.  Imagine you’re shipping multiple apps based on the same code.  For example, you might have a  and a  variant of your app built from the same code, or you might have a single app that you reskin for multiple clients.
+Things get trickier when it comes to apps.  Imagine you’re shipping multiple apps based on the same code.  For example, you might have a *Pro* and a *Light* variant of your app built from the same code, or you might have a single app that you reskin for multiple clients.
 
 By definition, each app has a unique bundle ID; the bundle ID is the primary mechanism used to distinguish between different apps.  However, some OS subsystems use a process’s main executable UUID—the build UUID of the Mach-O executable that the process is running—as a shortcut to identify the app.  If you have two apps with different bundle IDs and the same main executable UUID, you might encounter weird problems with those subsystems.  For example, the network subsystem might apply constraints for one of your apps to the other app (r. 30421029).
 
@@ -105,7 +105,7 @@ Once you’re done, run `dwarfdump` to confirm that you’ve achieved your ultim
 
 #### Revision History
 
--  First published.
+- **2024-10-08** First published.
 
 ## See Also
 

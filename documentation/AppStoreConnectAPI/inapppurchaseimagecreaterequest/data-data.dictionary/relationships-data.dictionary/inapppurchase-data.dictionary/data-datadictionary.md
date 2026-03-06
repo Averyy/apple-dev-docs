@@ -14,6 +14,11 @@ The data and links that describe the relationship between the resources.
 object InAppPurchaseImageCreateRequest.Data.Relationships.InAppPurchase.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

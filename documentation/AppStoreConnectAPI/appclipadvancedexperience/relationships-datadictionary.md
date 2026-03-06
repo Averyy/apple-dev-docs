@@ -24,6 +24,12 @@ object AppClipAdvancedExperience.Relationships
 - [object AppClipAdvancedExperience.Relationships.Localizations](appclipadvancedexperience/relationships-data.dictionary/localizations-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Advanced App Clip Experiences and the Localizations resources.
 
+## Properties
+
+- `appClip` (AppClipAdvancedExperience.Relationships.AppClip): The related App Clips resource.
+- `headerImage` (AppClipAdvancedExperience.Relationships.HeaderImage): The related Advanced App Clip Experience Images resource.
+- `localizations` (AppClipAdvancedExperience.Relationships.Localizations): The related Advanced App Clip Experience Localizations resource.
+
 ## See Also
 
 - [object AppClipAdvancedExperience.Attributes](appclipadvancedexperience/attributes-data.dictionary.md)

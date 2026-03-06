@@ -22,6 +22,12 @@ object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data
 - [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Attributes) *(required)*
+- `relationships` (InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

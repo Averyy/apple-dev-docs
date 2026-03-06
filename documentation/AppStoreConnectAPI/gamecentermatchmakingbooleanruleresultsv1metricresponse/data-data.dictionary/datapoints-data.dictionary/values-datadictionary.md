@@ -14,6 +14,10 @@ The values of the data points.
 object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `count` (integer): The number of match requests in the response.
+
 
 ---
 

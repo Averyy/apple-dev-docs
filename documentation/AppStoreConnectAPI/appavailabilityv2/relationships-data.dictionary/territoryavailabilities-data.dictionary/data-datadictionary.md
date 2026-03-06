@@ -12,6 +12,11 @@
 object AppAvailabilityV2.Relationships.TerritoryAvailabilities.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

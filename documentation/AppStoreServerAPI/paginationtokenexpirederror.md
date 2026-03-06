@@ -6,7 +6,7 @@
 An error that indicates the pagination token expired.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object PaginationTokenExpiredError
 #### Discussion
 
 When calling [`Get Notification History`](get-notification-history.md), use the same [`NotificationHistoryRequest`](notificationhistoryrequest.md) body on subsequent page requests that include a pagination token in the query.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

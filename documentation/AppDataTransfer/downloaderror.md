@@ -18,6 +18,15 @@ object DownloadError
 
 The `statusMessage` field has one of these values:
 
+- **`invalid_request_status`**: The download request isn’t complete and you need to request the download URLs again after `statusCheckDelay` seconds.
+- **`request_not_found`**: The request ID you provided isn’t recognized.
+
+## Properties
+
+- `statusCheckDelay` (integer): The number of seconds to wait before re-requesting the status.
+- `status` (string): The outcome of the operation.
+- `statusMessage` (string): The reason the server encountered an error.
+
 ## See Also
 
 - [Get one-time request download URLs](get-one-time-request-download-urls.md)

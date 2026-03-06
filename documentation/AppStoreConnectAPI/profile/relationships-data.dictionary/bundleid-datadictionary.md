@@ -20,6 +20,11 @@ object Profile.Relationships.BundleId
 - [object Profile.Relationships.BundleId.Data](profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (Profile.Relationships.BundleId.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object Profile.Relationships.Certificates](profile/relationships-data.dictionary/certificates-data.dictionary.md)

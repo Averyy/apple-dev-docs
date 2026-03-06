@@ -43,7 +43,7 @@ sequence(state: (false, seq1.makeIterator(), seq2.makeIterator()), next: { iters
 ## Parameters
 
 - `state`: The initial state that will be passed to the closure.
-- `next`: A closure that accepts an   state and returns the   next element of the sequence.
+- `next`: A closure that accepts an `inout` state and returns the next element of the sequence.
 
 ## See Also
 

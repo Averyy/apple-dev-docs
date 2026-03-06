@@ -8,6 +8,10 @@ Enable phased release for an App Store version.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appStoreVersionPhasedReleases`
+
 ## See Also
 
 - [Modify an App Store Version Phased Release](patch-v1-appstoreversionphasedreleases-_id_.md)

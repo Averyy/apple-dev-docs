@@ -8,6 +8,14 @@ Commit a routing app coverage file after uploading it.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/routingAppCoverages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Delete a Routing App Coverage](delete-v1-routingappcoverages-_id_.md)

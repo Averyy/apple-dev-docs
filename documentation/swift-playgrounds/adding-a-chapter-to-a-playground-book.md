@@ -24,7 +24,7 @@ Choose a name for your new chapter by adding a `Name` key to the `Manifest.plist
 
 ##### Arrange Pages in the Chapter
 
-Pages in your playground book must be placed in a chapter. The page folders you place within chapter folders determine which pages go into which chapters. You choose the  of pages in a chapter by adding a `Pages` key to the chapter’s `Manifest.plist` file. The `Pages` key is an ordered array of page folder names. Add the names of a chapter’s pages in the order in which you want those pages to appear in the chapter.
+Pages in your playground book must be placed in a chapter. The page folders you place within chapter folders determine which pages go into which chapters. You choose the *order* of pages in a chapter by adding a `Pages` key to the chapter’s `Manifest.plist` file. The `Pages` key is an ordered array of page folder names. Add the names of a chapter’s pages in the order in which you want those pages to appear in the chapter.
 
 ## See Also
 

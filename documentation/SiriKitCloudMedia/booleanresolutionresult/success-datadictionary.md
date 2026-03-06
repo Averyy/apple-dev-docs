@@ -14,6 +14,10 @@ A Boolean value that successfully matches the intent.
 object BooleanResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedValue` (boolean) *(required)*: The Boolean value for the intent’s parameter.
+
 ## See Also
 
 - [object BooleanResolutionResult.ConfirmationRequired](booleanresolutionresult/confirmationrequired-data.dictionary.md)

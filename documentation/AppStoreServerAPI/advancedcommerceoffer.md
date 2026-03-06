@@ -4,13 +4,20 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Server API 1.14+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object advancedCommerceOffer
 ```
+
+## Properties
+
+- `period` (advancedCommerceOfferPeriod)
+- `periodCount` (advancedCommercePeriodCount)
+- `price` (advancedCommerceOfferPrice)
+- `reason` (advancedCommerceReason)
 
 ## See Also
 

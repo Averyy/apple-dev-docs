@@ -20,9 +20,77 @@ You can include an optional `tracks` relationship in this request.
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library/playlists
+
+{
+  "attributes": {
+    "description": "string",
+    "name": "string",
+    "isPublic": true
+  },
+  "relationships": {
+    "tracks": {
+      "data": [
+        {
+          "id": "string",
+          "type": "library-music-videos"
+        }
+      ]
+    },
+    "parent": {
+      "data": [
+        {
+          "id": "string",
+          "type": "library-playlist-folders"
+        }
+      ]
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{    "data": [
+        {
+            "id": "p.RB1AAkGsv74Zkl",
+            "type": "library-playlists",
+            "href": "/v1/me/library/playlists/p.RB1AAkGsv74Zkl",
+            "attributes": {
+                "hasCatalog": false,
+                "description": {
+                    "standard": "My library playlist"
+                },
+                "name": "New Playlist",
+                "canEdit": true,
+                "isPublic": false,
+                "playParams": {
+                    "id": "p.RB1AAkGsv74Zkl",
+                    "kind": "playlist",
+                    "isLibrary": true
+                },
+                "dateAdded": "2021-09-30T13: 28: 29Z"
+            }
+        }
+    ]
+}
+```
+
+## Endpoint
+
+`POST https://api.music.apple.com/v1/me/library/playlists`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
 ## Request Body
 
-The `POST` request containing the `name` `tracks` and `parent` playlist folder for the playlist to be added.
+The `POST` request containing the `name`**,** `tracks` and `parent` playlist folder for the playlist to be added.
 
 ## See Also
 

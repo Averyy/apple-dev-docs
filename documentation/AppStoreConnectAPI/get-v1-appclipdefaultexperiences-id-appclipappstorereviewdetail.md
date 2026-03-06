@@ -8,6 +8,16 @@ Get App Store Review details for a specific default App Clip experience.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipDefaultExperiences/{id}/appClipAppStoreReviewDetail`
+
+## Parameters
+
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each App Clip App Store Review Details resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read Default App Clip Experience Information](get-v1-appclipdefaultexperiences-_id_.md)

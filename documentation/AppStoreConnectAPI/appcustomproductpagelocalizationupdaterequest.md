@@ -20,6 +20,10 @@ object AppCustomProductPageLocalizationUpdateRequest
 - [object AppCustomProductPageLocalizationUpdateRequest.Data](appcustomproductpagelocalizationupdaterequest/data-data.dictionary.md)
   The request body you use to update an app custom product page localization update request.
 
+## Properties
+
+- `data` (AppCustomProductPageLocalizationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

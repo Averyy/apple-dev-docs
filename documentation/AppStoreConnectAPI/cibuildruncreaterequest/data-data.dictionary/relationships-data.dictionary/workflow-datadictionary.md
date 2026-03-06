@@ -20,6 +20,10 @@ object CiBuildRunCreateRequest.Data.Relationships.Workflow
 - [object CiBuildRunCreateRequest.Data.Relationships.Workflow.Data](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/workflow-data.dictionary/data-data.dictionary.md)
   The type and ID of the Workflows resource that you’re relating with the Build Runs resource you’re creating.
 
+## Properties
+
+- `data` (CiBuildRunCreateRequest.Data.Relationships.Workflow.Data): The ID and type of the related Workflows resource.
+
 ## See Also
 
 - [object CiBuildRunCreateRequest.Data.Relationships.BuildRun](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/buildrun-data.dictionary.md)

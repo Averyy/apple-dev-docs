@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/{id}/relationships/availableTerritories`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read the availability of a subscription](get-v1-subscriptionavailabilities-_id_.md)

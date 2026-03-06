@@ -36,11 +36,11 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 // Prints "Abena starts with 'A'!"
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `predicate`: A closure that takes an element as its argument   and returns a Boolean value that indicates whether the passed element   represents a match.
+- `predicate`: A closure that takes an element as its argument and returns a Boolean value that indicates whether the passed element represents a match.
 
 ## See Also
 

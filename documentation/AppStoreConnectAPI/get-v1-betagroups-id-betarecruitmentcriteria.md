@@ -8,6 +8,14 @@ Get the recruitment criteria information for a specific beta group.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/betaRecruitmentCriteria`
+
+## Parameters
+
+- `fields[betaRecruitmentCriteria]` ([string])
+
 ## See Also
 
 - [List Beta Groups](get-v1-betagroups.md)

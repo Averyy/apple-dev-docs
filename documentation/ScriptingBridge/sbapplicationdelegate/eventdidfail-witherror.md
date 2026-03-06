@@ -22,8 +22,14 @@ If you return a result, it will become the result of the [`sendEvent(_:)`](https
 
 ## Parameters
 
-- `event`: A pointer to the Apple event sent to the target application causing   the error.
-- `error`: An object containing information about the error Apple event.   Specific information may be included in the   dictionary of the   error object. The following table shows the possible   keys for this dictionary.
+- `event`: A pointer to the Apple event sent to the target application causing the error.
+- `error`: An object containing information about the error Apple event. Specific information may be included in the `useInfo` dictionary of the error object. The following table shows the possible keys for this dictionary. | Key | Description |
+| --- | --- |
+| ErrorBriefMessage | A short human-readable description of the error, as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) |
+| ErrorExpectedType | The type of data the target application expected, as an [`NSAppleEventDescriptor`](https://developer.apple.com/documentation/Foundation/NSAppleEventDescriptor) object. |
+| ErrorOffendingObject | The object that caused the error. |
+| ErrorString | A full human-readable description of the error, as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. |
+| ErrorNumber | The Apple event error number, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. |
 
 
 ---

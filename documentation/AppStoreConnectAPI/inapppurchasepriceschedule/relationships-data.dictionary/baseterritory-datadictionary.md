@@ -17,6 +17,11 @@ object InAppPurchasePriceSchedule.Relationships.BaseTerritory
 ### Objects
 - [object InAppPurchasePriceSchedule.Relationships.BaseTerritory.Data](inapppurchasepriceschedule/relationships-data.dictionary/baseterritory-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchasePriceSchedule.Relationships.BaseTerritory.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object InAppPurchasePriceSchedule.Relationships.AutomaticPrices](inapppurchasepriceschedule/relationships-data.dictionary/automaticprices-data.dictionary.md)

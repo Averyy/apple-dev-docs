@@ -14,6 +14,11 @@ A representation of a device location.
 object Location
 ```
 
+## Properties
+
+- `latitude` (number): The latitude of the location.
+- `longitude` (number): The longitude of the location.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

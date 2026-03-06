@@ -20,6 +20,12 @@ object GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints
 - [object GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints.Values](gamecentermatchmakingqueuesizesv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
   The values of the data points.
 
+## Properties
+
+- `end` (date-time): The time Game Center ends the data collection.
+- `start` (date-time): The time Game Center starts the data collection.
+- `values` (GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints.Values)
+
 
 ---
 

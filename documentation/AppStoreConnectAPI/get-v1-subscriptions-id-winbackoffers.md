@@ -12,6 +12,80 @@ List all win-back offers for a specific subscription.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/subscriptions/6447497832/winBackOffers
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "type": "winBackOffers",
+      "id": "10778326500",
+      "attributes": {
+        "referenceName": "6 Months for 3 A",
+        "offerId": "6Monthfor3_a",
+        "duration": "SIX_MONTHS",
+        "offerMode": "PAY_UP_FRONT",
+        "periodCount": 1,
+        "customerEligibilityPaidSubscriptionDurationInMonths": 6,
+        "customerEligibilityTimeSinceLastSubscribedInMonths": {
+          "minimum": 2,
+          "maximum": 24
+        },
+        "customerEligibilityWaitBetweenOffersInMonths": 2,
+        "startDate": "2024-07-01",
+        "endDate": "2024-07-31",
+        "priority": "HIGH",
+        "promotionIntent": "NOT_PROMOTED"
+      },
+      "relationships": {
+        "promotion": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500/relationships/promotion",
+            "related": "https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500/promotion"
+          }
+        },
+        "prices": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500/relationships/prices",
+            "related": "https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500/prices"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/subscriptions/6447497832/winBackOffers?limit=1",
+  },
+  "meta": {
+    "paging": {
+      "total": 1,
+      "limit": 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/winBackOffers`
+
+## Parameters
+
+- `fields[winBackOfferPrices]` ([string])
+- `fields[winBackOffers]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[prices]` (integer)
+
 ## See Also
 
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)

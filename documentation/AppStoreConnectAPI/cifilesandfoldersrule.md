@@ -20,6 +20,11 @@ object CiFilesAndFoldersRule
 - [object CiStartConditionFileMatcher](cistartconditionfilematcher.md)
   The data structure that represents a Start Condition File Matchers resource.
 
+## Properties
+
+- `matchers` ([CiStartConditionFileMatcher]): Directory and file information Xcode Cloud uses to determine if a change to a file or directory matches a custom start condition.
+- `mode` (string): A string that indicates whether a workflow’s start condition’s Files and Folders setting should start a new build or not for a change.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

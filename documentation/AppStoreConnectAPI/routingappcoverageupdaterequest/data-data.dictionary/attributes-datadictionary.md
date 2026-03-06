@@ -14,6 +14,11 @@ Attributes whose values you’re changing as part of the update request.
 object RoutingAppCoverageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `uploaded` (boolean)
+- `sourceFileChecksum` (string)
+
 
 ---
 

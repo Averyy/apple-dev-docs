@@ -19,6 +19,14 @@ Update the leaderboard relationship for a specific Game Center challenge.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterChallenges/{id}/relationships/leaderboardV2`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

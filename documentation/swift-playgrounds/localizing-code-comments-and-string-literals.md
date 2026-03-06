@@ -20,7 +20,7 @@ Welcome!
 */
 ```
 
-Each delimiter carries a unique  (for example, `welcome1`, `welcome2`, and so forth) that matches an entry in the `LocalizableCode.strings` file you define for each page.
+Each delimiter carries a unique *zone identifier* (for example, `welcome1`, `welcome2`, and so forth) that matches an entry in the `LocalizableCode.strings` file you define for each page.
 
 You can also use inline comment delimiters to make string literals localizable; for example:
 

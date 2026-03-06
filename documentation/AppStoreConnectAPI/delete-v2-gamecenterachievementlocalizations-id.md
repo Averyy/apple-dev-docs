@@ -19,6 +19,14 @@ Delete a specific Game Center achievement localization.
 - 409:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/gameCenterAchievementLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center achievement localization](post-v2-gamecenterachievementlocalizations.md)

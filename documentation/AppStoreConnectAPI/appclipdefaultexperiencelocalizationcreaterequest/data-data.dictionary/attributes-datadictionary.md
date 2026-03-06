@@ -14,6 +14,11 @@ The attributes you set that describe the Default App Clip Experience Localizatio
 object AppClipDefaultExperienceLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `subtitle` (string): The subtitle that appears on the App Clip card for the default App Clip experience.
+
 ## See Also
 
 - [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships](appclipdefaultexperiencelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

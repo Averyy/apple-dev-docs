@@ -20,6 +20,12 @@ object AppCustomProductPageLocalizationUpdateRequest.Data
 - [object AppCustomProductPageLocalizationUpdateRequest.Data.Attributes](appcustomproductpagelocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app custom product page localization update request resource.
 
+## Properties
+
+- `attributes` (AppCustomProductPageLocalizationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

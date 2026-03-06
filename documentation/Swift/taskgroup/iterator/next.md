@@ -26,7 +26,7 @@ The value returned by the next child task that completes, or `nil` if there are 
 
 #### Discussion
 
-The elements returned from this method appear in the order that the tasks , not in the order that those tasks were added to the task group. After this method returns `nil`, this iterator is guaranteed to never produce more values.
+The elements returned from this method appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group. After this method returns `nil`, this iterator is guaranteed to never produce more values.
 
 For more information about the iteration order and semantics, see `TaskGroup.next()`.
 

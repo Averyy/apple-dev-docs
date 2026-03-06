@@ -14,6 +14,10 @@ When you submit your app for review, if itʼs approved and the status changes to
 
 > ❗ **Important**:  Send this request only when you’re ready to publish your version. You can’t cancel this request.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appStoreVersionReleaseRequests`
+
 ## Request Body
 
 The request body you use to manually release an approved version of your app to the App Store.

@@ -11,6 +11,11 @@ Attributes that you set that describe the new resource.
 object CertificateCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `certificateType` (CertificateType) *(required)*
+- `csrContent` (string) *(required)*
+
 
 ---
 

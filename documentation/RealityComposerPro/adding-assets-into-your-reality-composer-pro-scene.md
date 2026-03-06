@@ -59,6 +59,9 @@ All RealityKit entities in a scene exist at a specific position, orientation, an
 
 You can use the manipulator to move, rotate, and scale the selected entity in either local space or world space. Reality Composer Pro defines local and world space as follows:
 
+- ****Local space****: Manipulates and sets the values of the transform relative to its parent object.
+- ****World space****: Manipulates and sets the values relative to the scene.
+
 > ❗ **Important**: Each of the Reality Composer Pro manipulator’s colors is tied to a different axis in 3D space. Red indicates the x-axis, green indicates the y-axis, and blue indicates the z-axis.
 
 You can manipulate an entity in the following ways:
@@ -97,7 +100,7 @@ To make an entity the root entity in a scene, drag the selected entity to the Ro
 
 ##### Reuse Assets with References
 
-If your project has multiple scenes that share assets, you can utilize references to avoid creating duplicate assets. A  acts similar to an alias in Finder — it points to the original asset and functions as if it were another copy of that asset.
+If your project has multiple scenes that share assets, you can utilize references to avoid creating duplicate assets. A *reference* acts similar to an alias in Finder — it points to the original asset and functions as if it were another copy of that asset.
 
 To create a reference to an asset or another entity in a different scene, select the entity in the viewport or navigator view and click the Add button (+) located at the bottom of the references section in the inspector panel.
 

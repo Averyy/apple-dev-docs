@@ -14,6 +14,13 @@ An error indicating the line item references itself.
 object SelfReferenceError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId)
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

@@ -14,6 +14,13 @@ A response that contains a list of win-back offer resources.
 object WinBackOffersResponse
 ```
 
+## Properties
+
+- `data` ([WinBackOffer]) *(required)*
+- `included` ([WinBackOfferPrice])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

@@ -22,12 +22,12 @@ init(includesHeader: Bool = true, nilEncoding: String = "", trueEncoding: String
 
 ## Parameters
 
-- `includesHeader`: A Boolean value that indicates whether to write a header with the column names. Defaults to   .
+- `includesHeader`: A Boolean value that indicates whether to write a header with the column names. Defaults to `true`.
 - `nilEncoding`: The spelling for nil values. Defaults to an empty string.
-- `trueEncoding`: The spelling for true Boolean values. Defaults to  .
-- `falseEncoding`: The spelling for false Boolean values. Defaults to  .
+- `trueEncoding`: The spelling for true Boolean values. Defaults to `true`.
+- `falseEncoding`: The spelling for false Boolean values. Defaults to `false`.
 - `newline`: The newline sequence. Defaults to a line feed.
-- `delimiter`: The field delimiter. Defaults to comma ( ).
+- `delimiter`: The field delimiter. Defaults to comma (`,`).
 
 
 ---

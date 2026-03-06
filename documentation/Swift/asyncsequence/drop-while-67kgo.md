@@ -53,7 +53,7 @@ After the predicate returns `false`, the sequence never executes it again, and f
 
 ## Parameters
 
-- `predicate`: An error-throwing closure that takes an element as   a parameter and returns a Boolean value indicating whether to drop the   element from the modified sequence.
+- `predicate`: An error-throwing closure that takes an element as a parameter and returns a Boolean value indicating whether to drop the element from the modified sequence.
 
 ## See Also
 

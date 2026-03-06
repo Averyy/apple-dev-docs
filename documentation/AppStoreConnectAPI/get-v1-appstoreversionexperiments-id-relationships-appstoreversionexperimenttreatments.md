@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API ?+ - Deprecated
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

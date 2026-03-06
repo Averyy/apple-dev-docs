@@ -8,6 +8,14 @@ Change the state of Game Center enablement for an app version.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [POST /v1/gameCenterAppVersions](post-v1-gamecenterappversions.md)

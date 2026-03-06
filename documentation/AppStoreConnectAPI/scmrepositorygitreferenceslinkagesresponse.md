@@ -17,6 +17,12 @@ object ScmRepositoryGitReferencesLinkagesResponse
 ### Dictionaries
 - [object ScmRepositoryGitReferencesLinkagesResponse.Data](scmrepositorygitreferenceslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([ScmRepositoryGitReferencesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object ScmRepository](scmrepository.md)

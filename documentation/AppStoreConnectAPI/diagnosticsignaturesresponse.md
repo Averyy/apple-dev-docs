@@ -14,6 +14,12 @@ A response that contains a list of Diagnostic Signature resources.
 object DiagnosticSignaturesResponse
 ```
 
+## Properties
+
+- `data` ([DiagnosticSignature]) *(required)*: An array of diagnostic signatures.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

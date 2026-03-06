@@ -18,6 +18,11 @@ object BetaTesterUsagesV1MetricResponse.Data
 - [object BetaTesterUsagesV1MetricResponse.Data.DataPoints](betatesterusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
 - [object BetaTesterUsagesV1MetricResponse.Data.Dimensions](betatesterusagesv1metricresponse/data-data.dictionary/dimensions-data.dictionary.md)
 
+## Properties
+
+- `dataPoints` (BetaTesterUsagesV1MetricResponse.Data.DataPoints)
+- `dimensions` (BetaTesterUsagesV1MetricResponse.Data.Dimensions)
+
 
 ---
 

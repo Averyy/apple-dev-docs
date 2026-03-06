@@ -20,6 +20,12 @@ object GameCenterLeaderboardSetLocalizationV2Response
 - included:
 - links:
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetLocalizationV2) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetLocalizationV2](gamecenterleaderboardsetlocalizationv2.md)

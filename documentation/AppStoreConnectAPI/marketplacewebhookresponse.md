@@ -18,6 +18,11 @@ object MarketplaceWebhookResponse
 
 Use this object with [`Add a marketplace webhook configuration`](post-v1-marketplacewebhooks.md).
 
+## Properties
+
+- `data` (MarketplaceWebhook) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object MarketplaceWebhook](marketplacewebhook.md)

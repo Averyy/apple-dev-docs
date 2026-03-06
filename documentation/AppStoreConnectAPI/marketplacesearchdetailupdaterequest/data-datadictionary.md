@@ -17,6 +17,12 @@ object MarketplaceSearchDetailUpdateRequest.Data
 ### Objects
 - [object MarketplaceSearchDetailUpdateRequest.Data.Attributes](marketplacesearchdetailupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (MarketplaceSearchDetailUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

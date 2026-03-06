@@ -9,6 +9,10 @@
 object DocumentLinks
 ```
 
+## Properties
+
+- `self` (uri-reference) *(required)*
+
 ## See Also
 
 - [object PagedDocumentLinks](pageddocumentlinks.md)

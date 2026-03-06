@@ -18,6 +18,11 @@ object HeaderTooLongError
 
 When calling [`Upload Message`](upload-message.md), provide a maximum of 66 characters.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

@@ -18,6 +18,10 @@ object AlternativeDistributionKeyCreateRequest.Data.Relationships
 - [object AlternativeDistributionKeyCreateRequest.Data.Relationships.App](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `app` (AlternativeDistributionKeyCreateRequest.Data.Relationships.App)
+
 ## See Also
 
 - [object AlternativeDistributionKeyCreateRequest.Data.Attributes](alternativedistributionkeycreaterequest/data-data.dictionary/attributes-data.dictionary.md)

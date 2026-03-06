@@ -26,7 +26,7 @@ A `Result` instance, either from the closure or the previous `.success`.
 
 ## Parameters
 
-- `transform`: A closure that takes the failure value of the   instance.
+- `transform`: A closure that takes the failure value of the instance.
 
 ## See Also
 

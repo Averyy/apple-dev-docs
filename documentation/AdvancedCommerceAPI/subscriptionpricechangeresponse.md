@@ -18,6 +18,11 @@ object SubscriptionPriceChangeResponse
 
 This is the response body for the [`Change Subscription Price`](change-subscription-price.md) endpoint.
 
+## Properties
+
+- `signedRenewalInfo` (JWSRenewalInfo) *(required)*: Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
+- `signedTransactionInfo` (JWSTransaction) *(required)*: Transaction information signed by the App Store, in JWS Compact Serialization format.
+
 ## See Also
 
 - [Change Subscription Price](change-subscription-price.md)

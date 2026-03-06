@@ -20,6 +20,10 @@ object AccessibilityDeclarationCreateRequest.Data.Relationships
 - [object AccessibilityDeclarationCreateRequest.Data.Relationships.App](accessibilitydeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The data structure that represents the relationship to an app for the accessibility declaration create request resource.
 
+## Properties
+
+- `app` (AccessibilityDeclarationCreateRequest.Data.Relationships.App) *(required)*
+
 
 ---
 

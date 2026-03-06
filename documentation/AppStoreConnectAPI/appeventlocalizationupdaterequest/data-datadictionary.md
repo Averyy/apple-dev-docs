@@ -17,6 +17,12 @@ object AppEventLocalizationUpdateRequest.Data
 ### Objects
 - [object AppEventLocalizationUpdateRequest.Data.Attributes](appeventlocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventLocalizationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

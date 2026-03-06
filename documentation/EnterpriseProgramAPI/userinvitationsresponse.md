@@ -11,6 +11,12 @@ A response that contains a list of User Invitations resources.
 object UserInvitationsResponse
 ```
 
+## Properties
+
+- `data` ([UserInvitation]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [object UserInvitation](userinvitation.md)

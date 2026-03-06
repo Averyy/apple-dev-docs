@@ -23,7 +23,7 @@ init(_ base: String.StandardComparator, order: SortOrder = .forward)
 ## Parameters
 
 - `base`: The standard comparator to modify the order of.
-- `order`: The initial order of the new  .
+- `order`: The initial order of the new `StandardComparator`.
 
 
 ---

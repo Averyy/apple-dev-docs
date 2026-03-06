@@ -20,6 +20,10 @@ object BetaAppClipInvocationLocalizationCreateRequest
 - [object BetaAppClipInvocationLocalizationCreateRequest.Data](betaappclipinvocationlocalizationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaAppClipInvocationLocalizationCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaAppClipInvocationLocalization](betaappclipinvocationlocalization.md)

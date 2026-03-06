@@ -22,9 +22,9 @@ init(importedContentType: UTType, shouldAttemptToOpenInPlace: Bool = false, impo
 
 ## Parameters
 
-- `importedContentType`: A uniform type identifier for the file promise,   returned by the   closure.
-- `shouldAttemptToOpenInPlace`: A Boolean value that indicates whether   the receiver wants to gain access to the original item on disk   and can edit it.   If  , the receiver only has access to a copy of the file   made by the system.
-- `importing`: A closure that creates the item with given file promise.   The file referred to by the   property of the    is only guaranteed to exist within the   closure. If you need the file   to be around for a longer period, make a copy in the   closure.
+- `importedContentType`: A uniform type identifier for the file promise, returned by the `exporting` closure.
+- `shouldAttemptToOpenInPlace`: A Boolean value that indicates whether the receiver wants to gain access to the original item on disk and can edit it. If `false`, the receiver only has access to a copy of the file made by the system.
+- `importing`: A closure that creates the item with given file promise. The file referred to by the `file` property of the `ReceivedTransferredFile` is only guaranteed to exist within the `importing` closure. If you need the file to be around for a longer period, make a copy in the `importing` closure.
 
 ## See Also
 

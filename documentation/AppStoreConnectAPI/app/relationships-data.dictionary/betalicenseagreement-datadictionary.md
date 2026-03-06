@@ -20,6 +20,11 @@ object App.Relationships.BetaLicenseAgreement
 - [object App.Relationships.BetaLicenseAgreement.Data](app/relationships-data.dictionary/betalicenseagreement-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (App.Relationships.BetaLicenseAgreement.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

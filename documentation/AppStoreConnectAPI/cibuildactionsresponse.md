@@ -14,6 +14,13 @@ A response that contains a list of Build Actions resources.
 object CiBuildActionsResponse
 ```
 
+## Properties
+
+- `data` ([CiBuildAction]) *(required)*: The resource data.
+- `included` ([CiBuildRun]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object CiBuildRun](cibuildrun.md)

@@ -24,6 +24,14 @@ object SubscriptionOfferCode
   A string that indicates the payment mode of a subscription offer.
 - [object SubscriptionOfferCode.Relationships](subscriptionoffercode/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionOfferCode.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionOfferCode.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

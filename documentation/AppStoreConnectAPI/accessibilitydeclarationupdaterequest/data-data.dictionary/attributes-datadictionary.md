@@ -14,6 +14,19 @@ Attributes you set that describe the updated accessibility declaration resource.
 object AccessibilityDeclarationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `publish` (boolean)
+- `supportsAudioDescriptions` (boolean)
+- `supportsCaptions` (boolean)
+- `supportsDarkInterface` (boolean)
+- `supportsDifferentiateWithoutColorAlone` (boolean)
+- `supportsLargerText` (boolean)
+- `supportsReducedMotion` (boolean)
+- `supportsSufficientContrast` (boolean)
+- `supportsVoiceControl` (boolean)
+- `supportsVoiceover` (boolean)
+
 
 ---
 

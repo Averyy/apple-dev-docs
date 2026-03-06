@@ -51,7 +51,7 @@ let date = match?.1 // date == Jul 14, 2022 at 12:00 AM PST
 
 ## Parameters
 
-- `timeZone`: The time zone to use when returning a captured  . The returned date’s time value is   in this time zone.
+- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/Foundation/Date). The returned date’s time value is `00:00:00` in this time zone.
 - `dateSeparator`: The character that separates year, month, and day sections of the date substring.
 
 ## See Also

@@ -16,6 +16,10 @@ An array of log messages.
 object LogEntries
 ```
 
+## Properties
+
+- `logs` ([string]) *(required)*: An array of log messages.
+
 ## See Also
 
 - [Receive log messages](receive-log-messages.md)

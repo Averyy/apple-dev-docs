@@ -14,6 +14,11 @@ The data element of the response body.
 object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

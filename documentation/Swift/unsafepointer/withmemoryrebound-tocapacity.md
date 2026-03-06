@@ -49,9 +49,9 @@ After executing `body`, this method rebinds memory back to the original `Pointee
 
 ## Parameters
 
-- `type`: The type to temporarily bind the memory referenced by this   pointer. The type   must be layout compatible   with the pointer’s   type.
-- `count`: The number of instances of   in the re-bound region.
-- `body`: A closure that takes a typed pointer to the   same memory as this pointer, only bound to type  . The closure’s   pointer argument is valid only for the duration of the closure’s   execution. If   has a return value, that value is also used as   the return value for the   method.
+- `type`: The type to temporarily bind the memory referenced by this pointer. The type `T` must be layout compatible with the pointer’s `Pointee` type.
+- `count`: The number of instances of `T` in the re-bound region.
+- `body`: A closure that takes a typed pointer to the same memory as this pointer, only bound to type `T`. The closure’s pointer argument is valid only for the duration of the closure’s execution. If `body` has a return value, that value is also used as the return value for the `withMemoryRebound(to:capacity:_:)` method.
 
 
 ---

@@ -25,6 +25,18 @@ object AppInfo.Attributes
 
 > **Note**: For more information about `australiaAgeRating` and `koreaAgeRating`, see [`Age Ratings in App Store Connect Help`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/age-ratings).
 
+## Properties
+
+- `appStoreAgeRating` (AppStoreAgeRating): The app’s age rating as it appears on the App Store for all platforms.
+- `appStoreState` (AppStoreVersionState): This attribute is deprecated. Use `state` instead.
+- `australiaAgeRating` (string)
+- `brazilAgeRating` (BrazilAgeRating): This attribute is deprecated. Use `brazilAgeRatingV2` instead.
+- `brazilAgeRatingV2` (string): The app’s age rating as it appears on the App Store in Brazil for all platforms.
+- `franceAgeRating` (string)
+- `kidsAgeBand` (KidsAgeBand): This attribute is deprecated. Use ‘ageRatingDeclarations#kidsAgeBand’ instead.
+- `koreaAgeRating` (string)
+- `state` (string)
+
 ## See Also
 
 - [object AppInfo.Relationships](appinfo/relationships-data.dictionary.md)

@@ -14,6 +14,10 @@ A collection of selected albums to be featured with the artist.
 object Artists.Views.ArtistsFeaturedAlbumsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

@@ -12,6 +12,11 @@
 object SubscriptionPrice.Attributes
 ```
 
+## Properties
+
+- `preserved` (boolean)
+- `startDate` (date)
+
 ## See Also
 
 - [object SubscriptionPrice.Relationships](subscriptionprice/relationships-data.dictionary.md)

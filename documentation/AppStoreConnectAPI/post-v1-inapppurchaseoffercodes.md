@@ -12,6 +12,10 @@ Create an offer code for an in-app purchase.
 
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodes`
+
 ## See Also
 
 - [Read in-app purchase offer code information](get-v1-inapppurchaseoffercodes-_id_.md)

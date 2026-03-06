@@ -48,7 +48,7 @@ final class SceneReconstructionProvider
 
 ## See Also
 
-- [Incorporating real-world surroundings in an immersive experience](../visionos/incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [struct MeshAnchor](meshanchor.md)
   A volume of space that contains a mesh of a person’s surroundings.

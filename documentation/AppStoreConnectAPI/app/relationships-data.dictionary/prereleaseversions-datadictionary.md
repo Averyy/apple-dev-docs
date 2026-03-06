@@ -20,6 +20,12 @@ object App.Relationships.PreReleaseVersions
 - [object App.Relationships.PreReleaseVersions.Data](app/relationships-data.dictionary/prereleaseversions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([App.Relationships.PreReleaseVersions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

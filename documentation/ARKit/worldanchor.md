@@ -16,7 +16,7 @@ struct WorldAnchor
 
 #### Overview
 
-ARKit persists world anchor UUIDs and transforms across multiple runs of your app. For more information, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionos/tracking-points-in-world-space).
+ARKit persists world anchor UUIDs and transforms across multiple runs of your app. For more information, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionOS/tracking-points-in-world-space).
 
 ## Topics
 
@@ -55,9 +55,9 @@ ARKit persists world anchor UUIDs and transforms across multiple runs of your ap
 
 ## See Also
 
-- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
+- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [class WorldTrackingProvider](worldtrackingprovider.md)
   A source of live data about the device pose and anchors in a person’s surroundings.

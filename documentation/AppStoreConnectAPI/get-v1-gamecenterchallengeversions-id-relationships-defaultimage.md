@@ -8,6 +8,14 @@ Get the default image ID for a specific Game Center challenge version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterChallengeVersions/{id}/relationships/defaultImage`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a challenge version](post-v1-gamecenterchallengeversions.md)

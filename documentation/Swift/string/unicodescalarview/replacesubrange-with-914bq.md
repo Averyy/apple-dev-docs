@@ -39,11 +39,11 @@ Likewise, if you pass a zero-length collection as the `newElements` parameter, t
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O( + ), where  is length of this collection and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
+> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 
-- `subrange`: The subrange of the collection to replace. The bounds of   the range must be valid indices of the collection.
+- `subrange`: The subrange of the collection to replace. The bounds of the range must be valid indices of the collection.
 - `newElements`: The new elements to add to the collection.
 
 

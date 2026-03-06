@@ -24,11 +24,11 @@ mutating func replaceSubrange<C>(_ subrange: Range<String.UnicodeScalarView.Inde
 
 Calling this method invalidates any existing indices for use with this string.
 
-> **Note**: O(), where  is the combined length of the view and `newElements`. If the call to `replaceSubrange(_:with:)` simply removes elements at the end of the string, the complexity is O(), where  is equal to `bounds.count`.
+> **Note**: O(*m*), where *m* is the combined length of the view and `newElements`. If the call to `replaceSubrange(_:with:)` simply removes elements at the end of the string, the complexity is O(*n*), where *n* is equal to `bounds.count`.
 
 ## Parameters
 
-- `subrange`: The range of elements to replace. The bounds of the range   must be valid indices of the view.
+- `subrange`: The range of elements to replace. The bounds of the range must be valid indices of the view.
 - `newElements`: The new Unicode scalar values to add to the string.
 
 

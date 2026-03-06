@@ -17,6 +17,8 @@ A vector from a position in the scene to the view reference point.
 
 #### Parameter Description
 
+- **`Space`**: The space that indicates the camera’s position. Values for this parameter are `world`, `tangent`, `object`, or `model`; the default is `world`.
+
 ## See Also
 
 - [Unlit Surface (RealityKit)](realitykit/unlit-surface-(realitykit).md)

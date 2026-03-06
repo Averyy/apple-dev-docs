@@ -15,6 +15,10 @@ object JsonPointer
 
 In some cases, the JSON pointer may indicate an element that isn’t in the request entity, but should be. For more information about JSON pointers, see the [`RFC 6901`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6901) proposed standards document.
 
+## Properties
+
+- `pointer` (string) *(required)*: A JSON pointer that indicates the location in the request entity where the error originates.
+
 ## See Also
 
 - [object Parameter](parameter.md)

@@ -22,7 +22,7 @@ If you provide a function for the `onfinally` parameter, `CancellablePromise` ca
 
 ## Parameters
 
-- `onfinally`: An optional function   calls when the inner promise succeeds or fails.
+- `onfinally`: An optional function `CancellablePromise` calls when the inner promise succeeds or fails.
 
 
 ---

@@ -26,7 +26,7 @@ The index of the last element in the collection that matches `predicate`, or `ni
 
 #### Discussion
 
-You can use the predicate to find an element of a type that doesn’t conform to the `Equatable` protocol or to find an element that matches particular criteria. This example finds the index of the last name that begins with the letter 
+You can use the predicate to find an element of a type that doesn’t conform to the `Equatable` protocol or to find an element that matches particular criteria. This example finds the index of the last name that begins with the letter *A:*
 
 ```swift
 let students = ["Kofi", "Abena", "Peter", "Kweku", "Akosua"]
@@ -36,11 +36,11 @@ if let i = students.lastIndex(where: { $0.hasPrefix("A") }) {
 // Prints "Akosua starts with 'A'!"
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `predicate`: A closure that takes an element as its argument   and returns a Boolean value that indicates whether the passed element   represents a match.
+- `predicate`: A closure that takes an element as its argument and returns a Boolean value that indicates whether the passed element represents a match.
 
 ## See Also
 

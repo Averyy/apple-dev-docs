@@ -20,6 +20,19 @@ object LodgingReservation
 - [object LodgingBusiness](lodgingbusiness.md)
   A hotel, inn, or other lodging location.
 
+## Properties
+
+- `@context` (@context) *(required)*
+- `@type` (string) *(required)*
+- `checkinTime` (dateTimeISO8601) *(required)*: The earliest the guest may check in.
+- `checkoutTime` (dateTimeISO8601) *(required)*: The latest the guest may check out.
+- `reservationFor` (LodgingBusiness) *(required)*: The location of the lodging, such as a hotel or inn.
+- `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
+- `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
+- `underName` (Person) *(required)*: The lodging guest, or a primary guest if the event provider doesn’t require a name for each guest.
+- `broker` (Organization): An intermediary booking service.
+- `url` (URL): A webpage the user can access to view reservation details.
+
 ## See Also
 
 - [object EventReservation](eventreservation.md)

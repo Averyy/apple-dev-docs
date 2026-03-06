@@ -8,6 +8,29 @@ Get information about a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}`
+
+## Parameters
+
+- `fields[appEncryptionDeclarations]` ([string]): Fields to return for included related types.
+- `fields[apps]` ([string]): Fields to return for included related types.
+- `fields[betaTesters]` ([string]): Fields to return for included related types.
+- `fields[builds]` ([string]): Fields to return for included related types.
+- `fields[preReleaseVersions]` ([string]): Fields to return for included related types.
+- `include` ([string]): Relationship data to include in the response.
+- `fields[buildBetaDetails]` ([string]): Fields to return for included related types.
+- `fields[betaAppReviewSubmissions]` ([string]): Fields to return for included related types.
+- `fields[betaBuildLocalizations]` ([string]): Fields to return for included related types.
+- `limit[individualTesters]` (integer): Number of included related resources to return.
+- `limit[betaBuildLocalizations]` (integer): Number of included related resources to return.
+- `limit[icons]` (integer)
+- `fields[appStoreVersions]` ([string])
+- `fields[buildIcons]` ([string])
+- `limit[buildBundles]` (integer)
+- `limit[betaGroups]` (integer)
+
 ## See Also
 
 - [List Builds](get-v1-builds.md)

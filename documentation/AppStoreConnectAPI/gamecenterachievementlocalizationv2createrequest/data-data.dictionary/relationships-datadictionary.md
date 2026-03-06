@@ -22,6 +22,10 @@ object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships
 - [object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships.Version](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
   The data that describes the version of the Game Center achievement localization.
 
+## Properties
+
+- `version` (GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships.Version) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2CreateRequest.Data.Attributes](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)

@@ -22,6 +22,11 @@ object diagnosticLogs.ProductData.DiagnosticLogs
 - [object diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary/diagnosticmetadata-data.dictionary.md)
   Information about the diagnostic log including app version and build information, event details, OS, device type, and platform, and disk writes.
 
+## Properties
+
+- `callStackTree` ([diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree]): The call stack representation of the diagnostic log.
+- `diagnosticMetaData` (diagnosticLogs.ProductData.DiagnosticLogs.DiagnosticMetaData): Information about the diagnostic log the system captured.
+
 ## See Also
 
 - [object diagnosticLogs.ProductData.DiagnosticInsights](diagnosticlogs/productdata-data.dictionary/diagnosticinsights-data.dictionary.md)

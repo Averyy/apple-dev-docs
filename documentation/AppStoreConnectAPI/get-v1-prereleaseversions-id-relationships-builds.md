@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/preReleaseVersions/{id}/relationships/builds`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Builds of a Prerelease Version](get-v1-prereleaseversions-_id_-builds.md)

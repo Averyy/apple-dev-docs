@@ -30,6 +30,12 @@ The following listing shows the main elements of the `alertTemplate` element in 
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: Background elements, such as audio.
+- **[`button`](button.md)**: A button that typically allows the user to dismiss the alert or to bring up a new template page. The button element contains a text element that shows the name of the button.
+- **[`description`](description.md)**: The main text for the alert.
+- **[`text`](text.md)**: A brief description of what the button does.
+- **[`title`](title.md)**: The title of the alert, which should briefly communicate its purpose.
+
 ##### Example
 
 The following listing shows the TVML for an `alertTemplate` example:

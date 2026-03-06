@@ -22,6 +22,11 @@ object PrereleaseVersion.Relationships
 - [object PrereleaseVersion.Relationships.Builds](prereleaseversion/relationships-data.dictionary/builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (PrereleaseVersion.Relationships.App)
+- `builds` (PrereleaseVersion.Relationships.Builds)
+
 ## See Also
 
 - [object PrereleaseVersion.Attributes](prereleaseversion/attributes-data.dictionary.md)

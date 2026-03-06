@@ -19,6 +19,14 @@ Delete a specific Game Center leaderboard set image.
 - 409:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardSetImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard set image information](get-v2-gamecenterleaderboardsetimages-_id_.md)

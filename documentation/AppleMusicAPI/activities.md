@@ -22,6 +22,14 @@ object Activities
 - [object Activities.Relationships](activities/relationships-data.dictionary.md)
   The relationships for an activity resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the activity.
+- `type` (string) *(required)*: This value must always be `activities`.
+- `href` (string) *(required)*: The relative location for the activity resource.
+- `attributes` (Activities.Attributes): The attributes for the activity.
+- `relationships` (Activities.Relationships): The relationships for the activity.
+
 ## See Also
 
 - [object ActivitiesResponse](activitiesresponse.md)

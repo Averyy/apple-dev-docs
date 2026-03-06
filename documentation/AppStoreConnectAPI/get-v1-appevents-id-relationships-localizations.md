@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appEvents/{id}/relationships/localizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read in-app event information](get-v1-appevents-_id_.md)

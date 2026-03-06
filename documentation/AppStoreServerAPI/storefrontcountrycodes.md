@@ -6,7 +6,7 @@
 A list of storefront country codes you provide to limit the storefronts for a subscription-renewal-date extension.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 

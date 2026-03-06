@@ -17,6 +17,12 @@ object GameCenterChallengeVersion.Relationships.Localizations
 ### Dictionaries
 - [object GameCenterChallengeVersion.Relationships.Localizations.Data](gamecenterchallengeversion/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterChallengeVersion.Relationships.Localizations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

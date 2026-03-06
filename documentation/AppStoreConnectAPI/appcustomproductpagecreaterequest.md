@@ -19,6 +19,11 @@ object AppCustomProductPageCreateRequest
 ### Objects
 - [object AppCustomProductPageCreateRequest.Data](appcustomproductpagecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppCustomProductPageCreateRequest.Data) *(required)*
+- `included` ([*])
+
 ## See Also
 
 - [object AppCustomProductPage](appcustomproductpage.md)

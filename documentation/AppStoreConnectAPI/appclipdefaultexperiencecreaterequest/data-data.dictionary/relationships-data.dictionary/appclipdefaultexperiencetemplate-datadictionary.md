@@ -20,6 +20,10 @@ object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultEx
 - [object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultExperienceTemplate.Data](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperiencetemplate-data.dictionary/data-data.dictionary.md)
   The type and ID of the Default App Clip Experience Templates resource that you’re relating with the Default App Clip Experiences resource you’re creating.
 
+## Properties
+
+- `data` (AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultExperienceTemplate.Data): The ID and type of the related App Clip Default Experience Templates resource.
+
 ## See Also
 
 - [object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClip](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/appclip-data.dictionary.md)

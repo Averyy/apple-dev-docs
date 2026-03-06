@@ -23,6 +23,14 @@ object BackgroundAsset.Relationships
 - [object BackgroundAsset.Relationships.InternalBetaVersion](backgroundasset/relationships-data.dictionary/internalbetaversion-data.dictionary.md)
 - [object BackgroundAsset.Relationships.Versions](backgroundasset/relationships-data.dictionary/versions-data.dictionary.md)
 
+## Properties
+
+- `app` (BackgroundAsset.Relationships.App)
+- `appStoreVersion` (BackgroundAsset.Relationships.AppStoreVersion)
+- `externalBetaVersion` (BackgroundAsset.Relationships.ExternalBetaVersion)
+- `internalBetaVersion` (BackgroundAsset.Relationships.InternalBetaVersion)
+- `versions` (BackgroundAsset.Relationships.Versions)
+
 
 ---
 

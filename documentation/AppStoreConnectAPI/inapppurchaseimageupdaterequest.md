@@ -20,6 +20,10 @@ object InAppPurchaseImageUpdateRequest
 - [object InAppPurchaseImageUpdateRequest.Data](inapppurchaseimageupdaterequest/data-data.dictionary.md)
   The request body you use to update a in-app purchase image.
 
+## Properties
+
+- `data` (InAppPurchaseImageUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseImage](inapppurchaseimage.md)

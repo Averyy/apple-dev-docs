@@ -17,6 +17,11 @@ object App.Relationships.GameCenterDetail
 ### Objects
 - [object App.Relationships.GameCenterDetail.Data](app/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (App.Relationships.GameCenterDetail.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

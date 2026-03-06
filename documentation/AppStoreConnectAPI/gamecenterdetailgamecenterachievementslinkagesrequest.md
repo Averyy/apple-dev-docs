@@ -20,6 +20,10 @@ object GameCenterDetailGameCenterAchievementsLinkagesRequest
 - [object GameCenterDetailGameCenterAchievementsLinkagesRequest.Data](gamecenterdetailgamecenterachievementslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a detail resource.
 
+## Properties
+
+- `data` ([GameCenterDetailGameCenterAchievementsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

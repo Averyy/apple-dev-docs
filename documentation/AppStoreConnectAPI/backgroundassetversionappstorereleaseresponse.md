@@ -14,6 +14,12 @@ A response that contains a single background asset version App Store release res
 object BackgroundAssetVersionAppStoreReleaseResponse
 ```
 
+## Properties
+
+- `data` (BackgroundAssetVersionAppStoreRelease) *(required)*
+- `included` ([BackgroundAssetVersion])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

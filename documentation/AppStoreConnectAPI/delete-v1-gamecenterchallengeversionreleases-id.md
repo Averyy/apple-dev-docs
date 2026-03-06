@@ -8,6 +8,14 @@ Remove a specific version release from a Game Center challenge version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterChallengeVersionReleases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Add a challenge version release](post-v1-gamecenterchallengeversionreleases.md)

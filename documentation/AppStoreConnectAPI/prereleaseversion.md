@@ -22,6 +22,14 @@ object PrereleaseVersion
 - [object PrereleaseVersion.Relationships](prereleaseversion/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (PrereleaseVersion.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (PrereleaseVersion.Relationships): Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object PrereleaseVersionResponse](prereleaseversionresponse.md)

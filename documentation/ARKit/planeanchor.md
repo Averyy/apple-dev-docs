@@ -55,7 +55,7 @@ struct PlaneAnchor
 
 ## See Also
 
-- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
+- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
 - [class PlaneDetectionProvider](planedetectionprovider.md)
   A source of live data about planes in a person’s surroundings.

@@ -20,6 +20,13 @@ object AccessibilityDeclaration
 - [object AccessibilityDeclaration.Attributes](accessibilitydeclaration/attributes-data.dictionary.md)
   The attributes you set that describe the accessibility declaration resource.
 
+## Properties
+
+- `attributes` (AccessibilityDeclaration.Attributes): Attributes that describe this accessibility declaration resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AccessibilityDeclarationsResponse](accessibilitydeclarationsresponse.md)

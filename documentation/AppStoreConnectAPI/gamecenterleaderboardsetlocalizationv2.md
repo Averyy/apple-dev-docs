@@ -29,6 +29,14 @@ object GameCenterLeaderboardSetLocalizationV2
 - [object GameCenterLeaderboardSetLocalizationV2.Relationships](gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetLocalizationV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardSetLocalizationV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetLocalizationV2CreateRequest](gamecenterleaderboardsetlocalizationv2createrequest.md)

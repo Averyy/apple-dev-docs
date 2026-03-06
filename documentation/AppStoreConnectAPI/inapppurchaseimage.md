@@ -22,6 +22,14 @@ object InAppPurchaseImage
 - [object InAppPurchaseImage.Relationships](inapppurchaseimage/relationships-data.dictionary.md)
   The data structure that represents the relationships of a subscription image resource.
 
+## Properties
+
+- `attributes` (InAppPurchaseImage.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `relationships` (InAppPurchaseImage.Relationships): Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object InAppPurchaseImageCreateRequest](inapppurchaseimagecreaterequest.md)

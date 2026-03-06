@@ -30,7 +30,7 @@ The newly encoded `AtomicRepresentation` storage.
 
 ## Parameters
 
-- `value`: A valid instance of   that’s about to be destroyed   to encode an instance of its  .
+- `value`: A valid instance of `Self` that’s about to be destroyed to encode an instance of its `AtomicRepresentation`.
 
 
 ---

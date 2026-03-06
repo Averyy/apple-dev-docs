@@ -14,6 +14,11 @@ A response that contains a single alternative distribution domain resource.
 object AlternativeDistributionDomainResponse
 ```
 
+## Properties
+
+- `data` (AlternativeDistributionDomain) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionDomain](alternativedistributiondomain.md)

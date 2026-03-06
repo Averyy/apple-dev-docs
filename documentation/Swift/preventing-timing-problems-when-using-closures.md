@@ -12,7 +12,7 @@ Many of the APIs you use in Swift take a closure—or a function passed as an in
 
 ##### Understand the Results of Synchronous and Asynchronous Calls
 
-When you pass a closure to an API, consider  that closure will be called relative to the other code in your app. In synchronous APIs, the result of calling the closure will be available immediately after you pass the closure. In asynchronous APIs, the result won’t be available until sometime later; this difference affects how you write code both  your closure as well as the code  your closure.
+When you pass a closure to an API, consider *when* that closure will be called relative to the other code in your app. In synchronous APIs, the result of calling the closure will be available immediately after you pass the closure. In asynchronous APIs, the result won’t be available until sometime later; this difference affects how you write code both *in* your closure as well as the code *following* your closure.
 
 The example below defines two functions, `now(_:)` and `later(_:)`. You can call both functions the same way: with a trailing closure and no other arguments. Both `now(_:)` and `later(_:)` accept a closure and call it, but `later(_:)` waits a couple seconds before calling its closure.
 
@@ -33,7 +33,7 @@ func later(_ closure: @escaping () -> Void) {
 
 The `now(_:)` and `later(_:)` functions represent the two most common categories of APIs you’ll encounter in methods from app frameworks that take closures: synchronous APIs like `now(_:)`, and asynchronous APIs like `later(_:)`.
 
-Because calling a closure can change the local and global state of your app, the code you write on the lines after passing a closure needs to be written with a careful consideration of  that closure is called. Even something as simple as printing a sequence of letters can be affected by the timing of a closure call:
+Because calling a closure can change the local and global state of your app, the code you write on the lines after passing a closure needs to be written with a careful consideration of *when* that closure is called. Even something as simple as printing a sequence of letters can be affected by the timing of a closure call:
 
 ```swift
 later {

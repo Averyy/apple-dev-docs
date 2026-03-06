@@ -20,7 +20,7 @@ If the index is invalid, MapKit JS logs a warning to the console, but doesn’t 
 
 ## Parameters
 
-- `index`: A valid index into a polyline’s  .
+- `index`: A valid index into a polyline’s [`points`](polylineoverlay/points.md).
 - `color`: The CSS color at the index point.
 
 ## See Also

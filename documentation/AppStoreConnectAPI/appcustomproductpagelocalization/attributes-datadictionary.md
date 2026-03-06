@@ -12,6 +12,11 @@
 object AppCustomProductPageLocalization.Attributes
 ```
 
+## Properties
+
+- `locale` (string)
+- `promotionalText` (string)
+
 ## See Also
 
 - [object AppCustomProductPageLocalization.Relationships](appcustomproductpagelocalization/relationships-data.dictionary.md)

@@ -20,6 +20,12 @@ object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse
 - [object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse.Data](gamecenterenabledversioncompatibleversionslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([GameCenterEnabledVersionCompatibleVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterEnabledVersion](gamecenterenabledversion.md)

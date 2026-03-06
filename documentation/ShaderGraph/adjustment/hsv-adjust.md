@@ -17,6 +17,9 @@ Adjusts the hue, saturation and value of an RGB color by a vector .
 
 #### Parameter Descriptions
 
+- **`In`**: The input color the node adjusts.
+- **`Amount`**: The adjustment of the HSV. The default value is `(0,1,1)`, which causes no change.
+
 #### Discussion
 
 The HSV Adjust node adjusts the hue, saturation, and value of the color passed to the `In` parameter. The node performs this adjustment by adding the first value of the `Amount` vector to the hue, multiplying the saturation by the second value of the `Amount` vector, and multiplying that value by the third value of the `Amount` vector. When adjusting the hue, a positive value rotates the hue in the direction of red to green to blue. A value of 1 represents an entire rotation, and results in no change.

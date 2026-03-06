@@ -17,6 +17,9 @@ Transforms a vector by a matrix.
 
 #### Parameter Descriptions
 
+- **`In`**: The vector to transform. This node appends an addtional component onto the `In` vector with a value of `1.0` to make the vector match the dimensions of the `Mat` matrix. This additional compenent is removed after the transformation completes.
+- **`Mat`**: The matrix by which to transform the `In` vector; the default is the identity matrix.
+
 ## See Also
 
 - [Add](math/add.md)

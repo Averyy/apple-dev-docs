@@ -8,6 +8,16 @@ Get the routing app coverage file that is associated with a specific App Store v
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/routingAppCoverage`
+
+## Parameters
+
+- `fields[routingAppCoverages]` ([string])
+- `fields[appStoreVersions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read the Age Rating Declaration Information of an App Store Version](get-v1-appstoreversions-_id_-ageratingdeclaration.md)

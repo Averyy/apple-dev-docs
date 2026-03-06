@@ -17,6 +17,11 @@ object SubscriptionSubscriptionAvailabilityLinkageResponse
 ### Dictionaries
 - [object SubscriptionSubscriptionAvailabilityLinkageResponse.Data](subscriptionsubscriptionavailabilitylinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionSubscriptionAvailabilityLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

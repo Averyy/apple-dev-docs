@@ -14,6 +14,11 @@ The data structure that represents a app resource.
 object GameCenterAppVersionCompatibilityVersionsLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

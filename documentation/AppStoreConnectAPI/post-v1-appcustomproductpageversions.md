@@ -8,6 +8,10 @@ Add a version for your app custom product page.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions`
+
 ## See Also
 
 - [Read custom product page version information](get-v1-appcustomproductpageversions-_id_.md)

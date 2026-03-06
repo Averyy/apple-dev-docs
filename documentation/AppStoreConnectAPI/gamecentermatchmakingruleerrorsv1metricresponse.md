@@ -20,6 +20,12 @@ object GameCenterMatchmakingRuleErrorsV1MetricResponse
 - [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary.md)
   The data structure in a response body for the rule errors.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingRuleErrorsV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse](gamecentermatchmakingapprequestsv1metricresponse.md)

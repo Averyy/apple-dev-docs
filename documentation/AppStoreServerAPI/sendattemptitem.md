@@ -6,7 +6,7 @@
 The success or error information and the date the App Store server records when it attempts to send a server notification to your server.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -25,6 +25,11 @@ object sendAttemptItem
   The date the App Store server attempts to send a notification.
 - [type sendAttemptResult](sendattemptresult.md)
   The success or error information the App Store server records when it attempts to send an App Store server notification to your server.
+
+## Properties
+
+- `attemptDate` (attemptDate): The date the App Store server attempts to send the notification.
+- `sendAttemptResult` (sendAttemptResult): The success or error information the App Store server records when it attempts to send an App Store server notification to your server.
 
 ## See Also
 

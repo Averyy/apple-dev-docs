@@ -14,6 +14,10 @@ The data structure that represents a pass type id update request resource.
 object PassTypeIdUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+
 
 ---
 

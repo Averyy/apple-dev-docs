@@ -8,6 +8,14 @@ Update the recruitment criteria for your TestFlight build.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/betaRecruitmentCriteria/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the beta recruitment criteria resource ID from the [`Read recruitment criteria for a beta group`](get-v1-betagroups-_id_-betarecruitmentcriteria.md) response.
+
 ## See Also
 
 - [Create recruitment criteria](post-v1-betarecruitmentcriteria.md)

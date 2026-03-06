@@ -20,6 +20,12 @@ object CiXcodeVersion.Relationships.MacOsVersions
 - [object CiXcodeVersion.Relationships.MacOsVersions.Data](cixcodeversion/relationships-data.dictionary/macosversions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related macOS Versions resource.
 
+## Properties
+
+- `data` ([CiXcodeVersion.Relationships.MacOsVersions.Data]): The ID and type of the related macOS Versions resource.
+- `links` (RelationshipLinks): The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 
 ---
 

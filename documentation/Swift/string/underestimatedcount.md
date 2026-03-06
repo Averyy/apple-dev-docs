@@ -22,14 +22,14 @@ var underestimatedCount: Int { get }
 
 #### Discussion
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 
 ## See Also
 
 - [func forEach((Self.Element) throws -> Void) rethrows](string/foreach(_:).md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
 - [func enumerated() -> EnumeratedSequence<Self>](string/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [func makeIterator() -> String.Iterator](string/makeiterator.md)
   Returns an iterator over the elements of the collection.
 

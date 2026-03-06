@@ -20,6 +20,16 @@ object WebhookDelivery.Attributes
 - [object WebhookDelivery.Attributes.Request](webhookdelivery/attributes-data.dictionary/request-data.dictionary.md)
 - [object WebhookDelivery.Attributes.Response](webhookdelivery/attributes-data.dictionary/response-data.dictionary.md)
 
+## Properties
+
+- `createdDate` (date-time)
+- `deliveryState` (string)
+- `errorMessage` (string)
+- `redelivery` (boolean)
+- `request` (WebhookDelivery.Attributes.Request)
+- `response` (WebhookDelivery.Attributes.Response)
+- `sentDate` (date-time)
+
 
 ---
 

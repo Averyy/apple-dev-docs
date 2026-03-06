@@ -14,6 +14,12 @@ A response that contains a single app custom product page resource.
 object AppCustomProductPageLocalizationResponse
 ```
 
+## Properties
+
+- `data` (AppCustomProductPageLocalization) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppCustomProductPageLocalization](appcustomproductpagelocalization.md)

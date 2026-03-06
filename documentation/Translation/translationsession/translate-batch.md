@@ -46,7 +46,7 @@ This function throws an `Error` if:
 
 If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/Foundation/CocoaError/Code/userCancelled) error, and the languages continue to download in the background.
 
-> **Note**: Calls to this function can take several minutes while languages download.
+> **Note**: Calls to this function can take several minutes while languages download. The framework shows a progress indicator during the download.
 
 ## Parameters
 
@@ -55,7 +55,7 @@ If a person dismisses the progress view while the languages download, the system
 ## See Also
 
 - [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
-  Translates a single attributed string of text.
+  Translates a formatted string of text, preserving formatting in the translation.
 - [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](translationsession/translations(from:).md)

@@ -26,6 +26,14 @@ object UpdateMediaAffinityMediaItemResolutionResult
 - [object UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired](updatemediaaffinitymediaitemresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before proceeding.
 
+## Properties
+
+- `class` (string): The specific type of result.
+- `success` (UpdateMediaAffinityMediaItemResolutionResult.Success): A media item that successfully matches the intent.
+- `confirmationRequired` (UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired): A media item for the user to confirm as a match.
+- `disambiguation` (UpdateMediaAffinityMediaItemResolutionResult.Disambiguation): Multiple media items for the user to choose from.
+- `unsupported` (UpdateMediaAffinityMediaItemResolutionResult.Unsupported): Information about why your service can’t resolve the media item.
+
 ## Relationships
 
 ### Inherits From

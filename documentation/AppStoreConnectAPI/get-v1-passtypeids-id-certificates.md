@@ -8,6 +8,22 @@ List all certificates for a specific pass type ID.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/passTypeIds/{id}/certificates`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[passTypeIds]` ([string])
+- `filter[certificateType]` ([string])
+- `filter[displayName]` ([string])
+- `filter[id]` ([string])
+- `filter[serialNumber]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)

@@ -36,11 +36,11 @@ let positivePrefix = numbers.prefix(while: { $0 > 0 })
 
 If `predicate` matches every element in the sequence, the resulting sequence contains every element of the sequence.
 
-> **Note**: O(), where  is the length of the result.
+> **Note**: O(*k*), where *k* is the length of the result.
 
 ## Parameters
 
-- `predicate`: A closure that takes an element of the sequence as   its argument and returns a Boolean value indicating whether the   element should be included in the result.
+- `predicate`: A closure that takes an element of the sequence as its argument and returns a Boolean value indicating whether the element should be included in the result.
 
 
 ---

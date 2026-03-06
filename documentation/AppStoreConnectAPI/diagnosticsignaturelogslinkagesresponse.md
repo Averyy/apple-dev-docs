@@ -17,6 +17,12 @@ object DiagnosticSignatureLogsLinkagesResponse
 ### Dictionaries
 - [object DiagnosticSignatureLogsLinkagesResponse.Data](diagnosticsignaturelogslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([DiagnosticSignatureLogsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

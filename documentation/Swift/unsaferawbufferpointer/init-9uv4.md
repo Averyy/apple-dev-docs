@@ -22,7 +22,7 @@ init<T>(_ buffer: UnsafeBufferPointer<T>) where T : ~Copyable
 
 ## Parameters
 
-- `buffer`: The typed buffer to convert to a raw buffer. The   buffer’s type   must be a trivial type.
+- `buffer`: The typed buffer to convert to a raw buffer. The buffer’s type `T` must be a trivial type.
 
 
 ---

@@ -14,6 +14,11 @@ The attributes that describe a macOS Versions resource.
 object CiMacOsVersion.Attributes
 ```
 
+## Properties
+
+- `name` (string): The name of the macOS version.
+- `version` (string): The macOS version of the simulated environment.
+
 ## See Also
 
 - [object CiMacOsVersion.Relationships](cimacosversion/relationships-data.dictionary.md)

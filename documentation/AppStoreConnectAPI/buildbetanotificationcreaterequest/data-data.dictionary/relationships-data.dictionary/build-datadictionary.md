@@ -20,6 +20,10 @@ object BuildBetaNotificationCreateRequest.Data.Relationships.Build
 - [object BuildBetaNotificationCreateRequest.Data.Relationships.Build.Data](buildbetanotificationcreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (BuildBetaNotificationCreateRequest.Data.Relationships.Build.Data) *(required)*
+
 
 ---
 

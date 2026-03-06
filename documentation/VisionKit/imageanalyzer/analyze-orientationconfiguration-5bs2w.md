@@ -25,7 +25,7 @@ The data items that the analyzer finds in the image.
 
 - `image`: An image that the analyzer processes.
 - `orientation`: The orientation that the analyzer uses to process the image.
-- `configuration`: A configuration that specifies the data types, and   locales for text items, to recognize.
+- `configuration`: A configuration that specifies the data types, and locales for text items, to recognize.
 
 ## See Also
 

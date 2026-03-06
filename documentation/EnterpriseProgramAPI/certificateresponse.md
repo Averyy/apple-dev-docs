@@ -17,6 +17,12 @@ object CertificateResponse
 - [Create a Certificate](create-a-certificate.md)
   Create a new certificate using a certificate signing request.
 
+## Properties
+
+- `data` (Certificate) *(required)*: The resource data.
+- `included` ([PassTypeId])
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object Certificate](certificate.md)

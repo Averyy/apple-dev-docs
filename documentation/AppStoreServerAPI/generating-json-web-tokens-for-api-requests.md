@@ -50,7 +50,7 @@ Here’s an example of a JWT header:
 
 The JWT payload contains information specific to the [`App Store Server API`](AppStoreServerAPI.md) and [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI), such as issuer ID and expiration time. Use the following fields — also known as JWT claims — to include these values in the JWT payload:
 
-|  |  |
+| **Payload Field** | **Value** |
 | --- | --- |
 | `iss` - Issuer | Your issuer ID from the Keys page in App Store Connect (Ex: “`57246542-96fe-1a63-e053-0824d011072a"`) |
 | `iat` - Issued At | The time at which you issue the token, in UNIX time, in seconds (Ex: `1623085200`) |

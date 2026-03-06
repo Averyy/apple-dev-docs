@@ -14,6 +14,19 @@ An object that describes the detailed address components of a place.
 object StructuredAddress
 ```
 
+## Properties
+
+- `administrativeArea` (string): The state or province of the place.
+- `administrativeAreaCode` (string): The short code for the state or area.
+- `areasOfInterest` ([string]): Common names of the area in which the place resides.
+- `dependentLocalities` ([string]): Common names for the local area or neighborhood of the place.
+- `fullThoroughfare` (string): A combination of thoroughfare and subthoroughfare.
+- `locality` (string): The city of the place.
+- `postCode` (string): The postal code of the place.
+- `subLocality` (string): The name of the area within the locality.
+- `subThoroughfare` (string): The number on the street at the place.
+- `thoroughfare` (string): The street name at the place.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

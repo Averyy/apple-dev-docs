@@ -17,6 +17,11 @@ object BuildPreReleaseVersionLinkageResponse
 ### Dictionaries
 - [object BuildPreReleaseVersionLinkageResponse.Data](buildprereleaseversionlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BuildPreReleaseVersionLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Build](build.md)

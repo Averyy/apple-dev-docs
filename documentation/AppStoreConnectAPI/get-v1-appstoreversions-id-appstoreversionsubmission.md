@@ -6,6 +6,16 @@
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/appStoreVersionSubmission`
+
+## Parameters
+
+- `fields[appStoreVersionSubmissions]` ([string])
+- `fields[appStoreVersions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionSubmission](get-v1-appstoreversions-_id_-relationships-appstoreversionsubmission.md)

@@ -13,6 +13,14 @@ Update the activation status for a specific certificate.
 - [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/certificates/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List and Download Certificates`](get-v1-certificates.md) response.
+
 ## See Also
 
 - [Create a Certificate](post-v1-certificates.md)

@@ -12,6 +12,55 @@ Get usage metrics for a specific build.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/builds/ace4f47a-60ae-4ed6-954f-c4e61c7baab0/metrics/betaBuildUsages
+```
+
+**Response**:
+
+```json
+{
+  “data”: [
+    {
+      “type”: “betaBuildUsages”,
+      “dataPoints”: [
+        {
+          “start”: “2022-10-05”,
+          “end”: “2023-10-05”,
+          “values”: {
+            “installCount”: 2,
+            “crashCount”: 0,
+            “sessionCount”: 0,
+            “inviteCount”: 0,
+            “feedbackCount”: 0
+          }
+        }
+      ]
+    }
+  ],
+  “links”: {
+    “self”: “https://api.appstoreconnect.apple.com/v1/builds/ace4f47a-60ae-4ed6-954f-c4e61c7baab0/metrics/betaBuildUsages”
+  },
+  “meta”: {
+    “paging”: {
+      “total”: 1,
+      “limit”: 50
+    }
+  }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/metrics/betaBuildUsages`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List Builds](get-v1-builds.md)

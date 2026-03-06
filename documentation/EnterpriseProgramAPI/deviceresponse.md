@@ -11,6 +11,11 @@ A response that contains a single Devices resource.
 object DeviceResponse
 ```
 
+## Properties
+
+- `data` (Device) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object Device](device.md)

@@ -14,6 +14,10 @@ A result that requires the user to choose which library or playlist they want to
 object AddMediaMediaDestinationResolutionResult.Disambiguation
 ```
 
+## Properties
+
+- `mediaDestinationsToDisambiguate` ([MediaDestination]) *(required)*: Destinations that might match the user’s intent.
+
 ## See Also
 
 - [object AddMediaMediaDestinationResolutionResult.ConfirmationRequired](addmediamediadestinationresolutionresult/confirmationrequired-data.dictionary.md)

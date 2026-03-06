@@ -17,6 +17,10 @@ object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCen
 ### Objects
 - [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement.Data](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievement-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement.Data) *(required)*
+
 
 ---
 

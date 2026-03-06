@@ -46,6 +46,18 @@ The following listing shows the main elements of the productTemplate element in 
 
 ###### Element Descriptions
 
+- **[`banner`](banner.md)**: Element containing subelements that provide primary information about a product, such as a movie title, description, credits, and purchase information.
+- **[`buttonLockup`](buttonlockup.md)**: A type of button that can contain an image (the `badge` element) as well as text.
+- **[`description`](description.md)**: Text that describes the product in detail; for example, a movie synopsis.
+- **[`heroImg`](heroimg.md)**: An image of the product.
+- **[`infoList`](infolist.md)**: Product information such as actors, directors, and producers.
+- **[`productInfo`](productinfo.md)**: Technical information about the product such as runtime, language availability, and accessibility information.
+- **[`row`](row.md)**: A group of information elements.
+- **[`shelf`](shelf.md)**: An element containing row elements. Several shelves are used to display information like shows other users have watched and extra features provided by this product.
+- **[`stack`](stack.md)**: Basic information about the product, including the title, rating, and a description.
+- **[`subtitle`](subtitle.md)**: Text that provides additional information about its containing element.
+- **[`title`](title.md)**: The title describing its containing element.
+
 ##### Example
 
 The following listing shows the TVML for a `productTemplate` example:

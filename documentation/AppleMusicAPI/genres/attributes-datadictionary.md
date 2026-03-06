@@ -14,6 +14,13 @@ The attributes for a genre resource.
 object Genres.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*: The localized name of the genre.
+- `parentId` (string): The identifier of the parent for the genre.
+- `parentName` (string): The localized name of the parent genre.
+- `chartLabel` (string): **(Extended)** A localized string to use when displaying the genre in relation to charts.
+
 
 ---
 

@@ -29,7 +29,7 @@ struct UnsafeMutablePointer<Pointee> where Pointee : ~Copyable
 
 You use instances of the `UnsafeMutablePointer` type to access data of a specific type in memory. The type of data that a pointer can access is the pointer’s `Pointee` type. `UnsafeMutablePointer` provides no automated memory management or alignment guarantees. You are responsible for handling the life cycle of any memory you work with through unsafe pointers to avoid leaks or undefined behavior.
 
-Memory that you manually manage can be either  or  to a specific type. You use the `UnsafeMutablePointer` type to access and manage memory that has been bound to a specific type.
+Memory that you manually manage can be either *untyped* or *bound* to a specific type. You use the `UnsafeMutablePointer` type to access and manage memory that has been bound to a specific type.
 
 ### Understanding a Pointers Memory State
 
@@ -37,13 +37,13 @@ The memory referenced by an `UnsafeMutablePointer` instance can be in one of sev
 
 #### Uninitialized Memory
 
-Memory that has just been allocated through a typed pointer or has been deinitialized is in an  state. Uninitialized memory must be initialized before it can be accessed for reading.
+Memory that has just been allocated through a typed pointer or has been deinitialized is in an *uninitialized* state. Uninitialized memory must be initialized before it can be accessed for reading.
 
 You can use methods like `initialize(repeating:count:)`, `initialize(from:count:)`, and `moveInitialize(from:count:)` to initialize the memory referenced by a pointer with a value or series of values.
 
 #### Initialized Memory
 
- memory has a value that can be read using a pointer’s `pointee` property or through subscript notation. In the following example, `ptr` is a pointer to memory initialized with a value of `23`:
+*Initialized* memory has a value that can be read using a pointer’s `pointee` property or through subscript notation. In the following example, `ptr` is a pointer to memory initialized with a value of `23`:
 
 ```swift
 let ptr: UnsafeMutablePointer<Int> = ...
@@ -141,7 +141,7 @@ printInt(atAddress: intPointer)
 // Prints "42"
 ```
 
-Alternatively, you can use Swift’s  to pass a pointer to an instance or to the elements of an array. The following example passes a pointer to the `value` variable by using inout syntax:
+Alternatively, you can use Swift’s *implicit bridging* to pass a pointer to an instance or to the elements of an array. The following example passes a pointer to the `value` variable by using inout syntax:
 
 ```swift
 var value: Int = 23

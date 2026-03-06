@@ -16,6 +16,14 @@ Update the reference name of a specific in-app purchase.
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

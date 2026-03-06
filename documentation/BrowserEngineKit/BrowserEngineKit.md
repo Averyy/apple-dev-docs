@@ -18,7 +18,7 @@ If you use [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebV
 Whether you use [`WebKit`](https://developer.apple.com/documentation/WebKit) or write your own alternative browser engine, you need to:
 
 - Request the entitlement to act as a person’s default web browser. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
-- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser).
+- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/appdistribution/enabling-alternative-distribution-app-installation-in-a-browser).
 
 ##### Build a Multi Process Browser
 

@@ -17,6 +17,10 @@ object GameCenterChallengeImageCreateRequest.Data.Relationships.Version
 ### Dictionaries
 - [object GameCenterChallengeImageCreateRequest.Data.Relationships.Version.Data](gamecenterchallengeimagecreaterequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeImageCreateRequest.Data.Relationships.Version.Data)
+
 
 ---
 

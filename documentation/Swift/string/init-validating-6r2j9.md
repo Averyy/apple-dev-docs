@@ -28,7 +28,7 @@ On Windows, if the contents of the path root isn’t a well-formed Unicode strin
 
 ## Parameters
 
-- `root`: The path root to be interpreted as   .
+- `root`: The path root to be interpreted as `CInterop.PlatformUnicodeEncoding`.
 
 
 ---

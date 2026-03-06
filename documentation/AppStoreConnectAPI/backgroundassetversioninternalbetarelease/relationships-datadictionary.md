@@ -20,6 +20,10 @@ object BackgroundAssetVersionInternalBetaRelease.Relationships
 - [object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion](backgroundassetversioninternalbetarelease/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
   The data that describes the background asset version related to a asset.
 
+## Properties
+
+- `backgroundAssetVersion` (BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion)
+
 
 ---
 

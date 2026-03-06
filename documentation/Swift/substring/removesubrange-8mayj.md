@@ -33,11 +33,11 @@ print(measurements)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `bounds`: The range of the collection to be removed. The   bounds of the range must be valid indices of the collection.
+- `bounds`: The range of the collection to be removed. The bounds of the range must be valid indices of the collection.
 
 
 ---

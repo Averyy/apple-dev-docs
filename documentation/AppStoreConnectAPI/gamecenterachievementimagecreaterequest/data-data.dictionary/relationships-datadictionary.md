@@ -17,6 +17,10 @@ object GameCenterAchievementImageCreateRequest.Data.Relationships
 ### Objects
 - [object GameCenterAchievementImageCreateRequest.Data.Relationships.GameCenterAchievementLocalization](gamecenterachievementimagecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievementlocalization-data.dictionary.md)
 
+## Properties
+
+- `gameCenterAchievementLocalization` (GameCenterAchievementImageCreateRequest.Data.Relationships.GameCenterAchievementLocalization) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageCreateRequest.Data.Attributes](gamecenterachievementimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

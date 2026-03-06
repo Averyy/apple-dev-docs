@@ -11,6 +11,16 @@ Attributes that describe a Certificates resource.
 object Certificate.Attributes
 ```
 
+## Properties
+
+- `certificateContent` (string)
+- `certificateType` (CertificateType)
+- `displayName` (string)
+- `expirationDate` (date-time)
+- `name` (string)
+- `platform` (BundleIdPlatform)
+- `serialNumber` (string)
+
 ## See Also
 
 - [object Certificate.Relationships](certificate/relationships-data.dictionary.md)

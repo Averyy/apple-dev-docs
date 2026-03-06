@@ -28,8 +28,9 @@ Inside the closure, set the `initializedCount` parameter to the number of elemen
 
 ## Parameters
 
-- `unsafeUninitializedCapacity`: The number of elements to allocate   space for in the new array.
-- `initializer`: A closure that initializes elements and sets the count   of the new array.
+- `unsafeUninitializedCapacity`: The number of elements to allocate space for in the new array.
+- `initializer`: A closure that initializes elements and sets the count of the new array. - Parameters: - buffer: A buffer covering uninitialized memory with room for the specified number of elements.
+- initializedCount: The count of initialized elements in the array, which begins as zero. Set `initializedCount` to the number of elements you initialize.
 
 ## See Also
 

@@ -9,6 +9,10 @@ Register a new device for app development.
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/devices`
+
 
 ---
 

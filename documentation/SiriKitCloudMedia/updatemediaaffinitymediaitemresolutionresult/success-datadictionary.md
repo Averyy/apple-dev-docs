@@ -14,6 +14,10 @@ A media item that successfully matches the intent.
 object UpdateMediaAffinityMediaItemResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedMediaItem` (MediaItem) *(required)*: The song, album, podcast, or other media item that the user expresses a preference for.
+
 ## See Also
 
 - [object UpdateMediaAffinityMediaItemResolutionResult.Unsupported](updatemediaaffinitymediaitemresolutionresult/unsupported-data.dictionary.md)

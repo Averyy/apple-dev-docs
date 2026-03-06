@@ -12,6 +12,15 @@
 object GameCenterAchievementCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `points` (integer) *(required)*
+- `referenceName` (string) *(required)*
+- `repeatable` (boolean) *(required)*
+- `showBeforeEarned` (boolean) *(required)*
+- `vendorIdentifier` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementCreateRequest.Data.Relationships](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

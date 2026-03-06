@@ -17,6 +17,10 @@ object AppEventLocalizationUpdateRequest
 ### Objects
 - [object AppEventLocalizationUpdateRequest.Data](appeventlocalizationupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventLocalizationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEventLocalization](appeventlocalization.md)

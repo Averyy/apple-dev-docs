@@ -12,6 +12,12 @@
 object ActorsResponse
 ```
 
+## Properties
+
+- `data` ([Actor]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Actor](actor.md)

@@ -11,6 +11,11 @@ Attributes that describe a PassTypeId resource.
 object PassTypeId.Attributes
 ```
 
+## Properties
+
+- `identifier` (string)
+- `name` (string)
+
 ## See Also
 
 - [object PassTypeId.Relationships](passtypeid/relationships-data.dictionary.md)

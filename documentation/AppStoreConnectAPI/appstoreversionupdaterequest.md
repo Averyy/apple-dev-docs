@@ -20,6 +20,10 @@ object AppStoreVersionUpdateRequest
 - [object AppStoreVersionUpdateRequest.Data](appstoreversionupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreVersionUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

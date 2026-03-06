@@ -22,7 +22,7 @@ subscript<C>(mask: C) -> AnyColumnSlice where C : Collection, C.Element == Bool 
 
 ## Parameters
 
-- `mask`: A collection of Booleans.   The method selects the column’s elements that correspond to the   elements in the collection.
+- `mask`: A collection of Booleans. The method selects the column’s elements that correspond to the `true` elements in the collection.
 
 
 ---

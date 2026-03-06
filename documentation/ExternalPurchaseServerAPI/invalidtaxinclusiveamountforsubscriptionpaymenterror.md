@@ -14,6 +14,13 @@ An error indicating the tax inclusive amount must be positive for line items wit
 object InvalidTaxInclusiveAmountForSubscriptionPaymentError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId)
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

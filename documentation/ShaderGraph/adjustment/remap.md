@@ -17,6 +17,12 @@ Linearly remaps incoming values from one range to another.
 
 #### Parameter Descriptions
 
+- **`In`**: The input value to remap.
+- **`In Low`**: The low end value of the input range; the default is `0.0`.
+- **`In High`**: The high end value of the input range; the default is `1.0`.
+- **`Out Low`**: The low end value of the output range; the default is `0.0`.
+- **`Out High`**: The high end value of the output range. The default value is `1.0`.
+
 ## See Also
 
 - [Smooth Step](adjustment/smooth-step.md)

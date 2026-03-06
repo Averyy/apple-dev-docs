@@ -24,6 +24,10 @@ Implementing object tracking requires an Apple Vision Pro with visionOS 2 or lat
 
 Object tracking performs optimally for a specific set of object characteristics. For object tracking to work best in your app, make sure your object is rigid, nonsymmetrical, and stationary.
 
+- **Rigid**: Select an object that maintains its shape and appearance during tracking. For example, a pair of scissors is challenging to track because it changes shape while a person uses it.
+- **Nonsymmetrical**: Select an object with a nonsymmetrical shape or texture, so that when you rotate the object, it doesn’t have the same appearance from different angles. For instance, a globe has a symmetrical shape, but has a nonsymmetrical texture on all sides, making it a suitable object. In contrast, a styrofoam cup has the same appearance on all sides when you rotate it, making it challenging to track.
+- **Stationary**: Select an object that’s mostly stationary in a person’s surroundings. If you’re tracking a moving object, there can be a delay in following its position. For example, a pickleball racket constantly moves in different directions while a person plays with it, making it challenging to track.
+
 ##### Obtain a 3d Model of Your Object
 
 You use [`Create ML`](https://developer.apple.comhttps://developer.apple.com/machine-learning/create-ml/) to begin the machine learning training to obtain your reference object file. Create ML requires a 3D model asset in the USDZ file format that represents your real-world object. You can obtain your 3D model using computer-aided design (CAD) software to accurately model an object’s geometry and apply physically based rendering (PBR) materials to it, and save it in the USDZ file format. Using this method, the 3D model can realistically represent objects that consist of multiple parts made from different materials, like glass, metal, plastic, wood, and other common materials. This method is helpful for capturing objects that are entirely or partly transparent, shiny, or reflective. The better the 3D model represents the appearance of the physical object, the better the quality of tracking is in visionOS.

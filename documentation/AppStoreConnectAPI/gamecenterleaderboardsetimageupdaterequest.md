@@ -19,6 +19,10 @@ object GameCenterLeaderboardSetImageUpdateRequest
 ### Objects
 - [object GameCenterLeaderboardSetImageUpdateRequest.Data](gamecenterleaderboardsetimageupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetImageUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageV2](gamecenterleaderboardsetimagev2.md)

@@ -8,6 +8,14 @@ Delete a pass type ID that is used for app distribution.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/passTypeIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)

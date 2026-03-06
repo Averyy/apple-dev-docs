@@ -14,6 +14,10 @@ Attribute metadata for the view containing additional content by the same curato
 object Playlists.Views.PlaylistsMoreByCuratorView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

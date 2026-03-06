@@ -24,6 +24,11 @@ object GameCenterLeaderboardV2.Relationships.Activity
 ### Dictionaries - generated
 - [object GameCenterLeaderboardV2.Relationships.Activity.Data](gamecenterleaderboardv2/relationships-data.dictionary/activity-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardV2.Relationships.Activity.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object GameCenterLeaderboardV2.Relationships.Challenge](gamecenterleaderboardv2/relationships-data.dictionary/challenge-data.dictionary.md)

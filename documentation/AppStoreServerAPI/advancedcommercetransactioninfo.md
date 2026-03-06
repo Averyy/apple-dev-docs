@@ -4,13 +4,24 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Server API 1.14+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object advancedCommerceTransactionInfo
 ```
+
+## Properties
+
+- `descriptors` (advancedCommerceDescriptors)
+- `estimatedTax` (advancedCommerceEstimatedTax)
+- `items` (advancedCommerceTransactionItems)
+- `period` (advancedCommercePeriod)
+- `requestReferenceId` (advancedCommerceRequestReferenceId)
+- `taxCode` (advancedCommerceTaxCode)
+- `taxExclusivePrice` (advancedCommerceTaxExclusivePrice)
+- `taxRate` (advancedCommerceTaxRate)
 
 ## See Also
 

@@ -17,6 +17,11 @@ object Subscription.Relationships.PromotedPurchase
 ### Objects
 - [object Subscription.Relationships.PromotedPurchase.Data](subscription/relationships-data.dictionary/promotedpurchase-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (Subscription.Relationships.PromotedPurchase.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

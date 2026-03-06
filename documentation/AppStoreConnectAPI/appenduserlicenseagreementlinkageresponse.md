@@ -17,6 +17,11 @@ object AppEndUserLicenseAgreementLinkageResponse
 ### Dictionaries
 - [object AppEndUserLicenseAgreementLinkageResponse.Data](appenduserlicenseagreementlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEndUserLicenseAgreementLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

@@ -28,7 +28,7 @@ The sealed message.
 
 - `message`: The plaintext data to seal.
 - `key`: A cryptographic key used to seal the message.
-- `nonce`: The nonce the sealing process requires. If you don’t provide a nonce, the method generates a random one by invoking  .
+- `nonce`: The nonce the sealing process requires. If you don’t provide a nonce, the method generates a random one by invoking [`init()`](chachapoly/nonce/init().md).
 
 ## See Also
 

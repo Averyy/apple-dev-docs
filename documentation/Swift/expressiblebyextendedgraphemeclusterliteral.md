@@ -22,7 +22,7 @@ protocol ExpressibleByExtendedGraphemeClusterLiteral : ExpressibleByUnicodeScala
 
 #### Overview
 
-An  is a group of one or more Unicode scalar values that approximates a single user-perceived character.  Many individual characters, such as “é”, “김”, and “🇮🇳”, can be made up of multiple Unicode scalar values. These code points are combined by Unicode’s boundary algorithms into extended grapheme clusters.
+An *extended grapheme cluster* is a group of one or more Unicode scalar values that approximates a single user-perceived character.  Many individual characters, such as “é”, “김”, and “🇮🇳”, can be made up of multiple Unicode scalar values. These code points are combined by Unicode’s boundary algorithms into extended grapheme clusters.
 
 The `String`, `StaticString`, and `Character` types conform to the `ExpressibleByExtendedGraphemeClusterLiteral` protocol. You can initialize a variable or constant of any of these types using a string literal that holds a single character.
 

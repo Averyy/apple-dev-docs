@@ -10,6 +10,10 @@ Record a message on your server.
 - iPadOS 10.0+
 - watchOS 3.0+
 
+## Endpoint
+
+`POST https://yourpasshost.example.com/v1/log`
+
 ## Request Body
 
 An object that contains an array of messages.

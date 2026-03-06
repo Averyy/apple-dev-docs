@@ -6,6 +6,15 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appEventVideoClips/{id}`
+
+## Parameters
+
+- `fields[appEventVideoClips]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [PATCH /v1/appEventVideoClips/{id}](patch-v1-appeventvideoclips-_id_.md)

@@ -12,6 +12,15 @@ Read configuration details for a specific webhook.
 
 - [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/webhooks/{id}`
+
+## Parameters
+
+- `fields[webhooks]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read webhook information for an app](get-v1-apps-_id_-webhooks.md)

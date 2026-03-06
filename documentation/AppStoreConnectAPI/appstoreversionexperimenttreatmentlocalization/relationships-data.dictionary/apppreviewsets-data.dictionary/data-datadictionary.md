@@ -14,6 +14,11 @@ The request body you use to update an app store version experiment treatment loc
 object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -20,6 +20,10 @@ object ReviewSubmission.Relationships.AppStoreVersionForReview
 - [object ReviewSubmission.Relationships.AppStoreVersionForReview.Data](reviewsubmission/relationships-data.dictionary/appstoreversionforreview-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (ReviewSubmission.Relationships.AppStoreVersionForReview.Data)
+
 ## See Also
 
 - [object ReviewSubmission.Relationships.App](reviewsubmission/relationships-data.dictionary/app-data.dictionary.md)

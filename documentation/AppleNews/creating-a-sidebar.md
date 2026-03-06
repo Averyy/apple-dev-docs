@@ -8,6 +8,8 @@ Create a box with an HTML bulleted list in the margin.
 
 Placing supplemental or reference information in the margin of your article can create an informative and engaging experience.
 
+**On this page, you’ll learn how to create a sidebar that contains some HTML formatting.**
+
 ![Screenshot of an Apple News article with an anchored sidebar on iPad.](https://docs-assets.developer.apple.com/published/879c27a2ea7d3a61ed1801527ae9c5bd/media-3624926%402x.png)
 
 ##### Create Component Layout Objects for the Sidebar

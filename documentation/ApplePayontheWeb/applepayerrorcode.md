@@ -19,6 +19,13 @@ enum ApplePayErrorCode
 
 Use the following error codes in the [`code`](applepayerror/code.md) property of [`ApplePayError`](applepayerror.md):
 
+- **`"shippingContactInvalid"`**: The code that indicates that the shipping address or contact information is invalid or missing. Use with [`contactField`](applepayerror/contactfield.md).
+- **`"billingContactInvalid"`**: The code that indicates that the billing address information is invalid or missing. Use with [`contactField`](applepayerror/contactfield.md).
+- **`"addressUnserviceable"`**: The code that indicates that the merchant can’t provide service to the shipping address (for example, can’t deliver to a P.O. Box).
+- **`"couponCodeInvalid"`**: The code that indicates an invalid coupon.
+- **`"couponCodeExpired"`**: The code that indicates an expired coupon.
+- **`"unknown"`**: The code that indicates an unknown but nonfatal error occurred during payment processing. The user can attempt authorization again.
+
 ## Topics
 
 ### Enumeration Cases

@@ -14,6 +14,12 @@ The data structure that represents the ending of an app preorder resource.
 object EndAppAvailabilityPreOrder
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

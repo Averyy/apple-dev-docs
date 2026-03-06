@@ -12,6 +12,10 @@
 object GameCenterAppVersionUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `enabled` (boolean)
+
 
 ---
 

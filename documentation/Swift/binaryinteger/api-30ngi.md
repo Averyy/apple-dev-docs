@@ -39,7 +39,7 @@ For any two integers `a` and `b`, their quotient `q`, and their remainder `r`, `
 ## Parameters
 
 - `lhs`: The value to divide.
-- `rhs`: The value to divide   by.   must not be zero.
+- `rhs`: The value to divide `lhs` by. `rhs` must not be zero.
 
 
 ---

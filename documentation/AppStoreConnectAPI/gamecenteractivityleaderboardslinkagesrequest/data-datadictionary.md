@@ -12,6 +12,11 @@
 object GameCenterActivityLeaderboardsLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

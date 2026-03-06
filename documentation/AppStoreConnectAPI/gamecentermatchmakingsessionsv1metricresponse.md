@@ -20,6 +20,12 @@ object GameCenterMatchmakingSessionsV1MetricResponse
 - [object GameCenterMatchmakingSessionsV1MetricResponse.Data](gamecentermatchmakingsessionsv1metricresponse/data-data.dictionary.md)
   The data structure for the results of a successful matchmaking session.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingSessionsV1MetricResponse.Data]) *(required)*: The data structure for the results of a successful matchmaking session.
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse](gamecentermatchmakingapprequestsv1metricresponse.md)

@@ -29,7 +29,7 @@ The default is [`DockAccessory.FramingMode.automatic`](dockaccessory/framingmode
 
 ## Parameters
 
-- `mode`: The framing mode to set tracking to. See   for more information.
+- `mode`: The framing mode to set tracking to. See [`DockAccessory.FramingMode`](dockaccessory/framingmode-swift.enum.md) for more information.
 
 ## See Also
 

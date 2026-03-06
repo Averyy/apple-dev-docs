@@ -12,6 +12,16 @@
 object advancedCommerceTransactionItem
 ```
 
+## Properties
+
+- `SKU` (advancedCommerceSKU)
+- `description` (advancedCommerceDescription)
+- `displayName` (advancedCommerceDisplayName)
+- `offer` (advancedCommerceOffer)
+- `price` (advancedCommercePrice)
+- `refunds` (advancedCommerceRefunds)
+- `revocationDate` (revocationDate)
+
 ## See Also
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)

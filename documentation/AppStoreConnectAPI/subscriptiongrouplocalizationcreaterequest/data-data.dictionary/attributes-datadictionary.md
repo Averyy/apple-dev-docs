@@ -12,6 +12,12 @@
 object SubscriptionGroupLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `customAppName` (string)
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupLocalizationCreateRequest.Data.Relationships](subscriptiongrouplocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

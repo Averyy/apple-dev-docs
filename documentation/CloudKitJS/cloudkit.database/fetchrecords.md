@@ -47,8 +47,17 @@ database.fetchRecords('115', { zoneID: 'myZone' }).then(function(response) {
 
 ## Parameters
 
-- `records`: Possible values are:
-- `options`: A dictionary containing options to use when fetching records. Possible dictionary keys are:
+- `records`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.Record`](cloudkit.record.md) | A dictionary record to fetch. Only the `recordName` key is required in the [`CloudKit.Record`](cloudkit.record.md) dictionary. |
+| `CloudKit.Record[]` | An array of records to fetch. |
+| `String` | The name of a record to fetch. |
+| `String[]` | An array of names of records to fetch. |
+- `options`: A dictionary containing options to use when fetching records. Possible dictionary keys are: | Key | Description |
+| --- | --- |
+| `zoneID` | A [`CloudKit.ZoneID`](cloudkit.zoneid.md) or zone name (`String`) that identifies the record zone in the database where you want to perform the operation. The default is the database default zone. |
+| `desiredKeys` | An array of strings containing record field names that limits the amount of data returned in this operation. Only the fields specified in the array are returned. The default is `null`, which fetches all record fields. |
+| `numbersAsStrings` | A Boolean value indicating whether number fields should be represented by strings. The default value is `false`. |
 
 ## See Also
 

@@ -14,6 +14,11 @@ The attributes you set that describe the new Advanced App Clip Experience Images
 object AppClipAdvancedExperienceImageCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*: The filename of the image asset that appears on the App Clip card for the advanced App Clip experience.
+- `fileSize` (integer) *(required)*: The size of the image asset that appears on the App Clip card for the advanced App Clip experience.
+
 
 ---
 

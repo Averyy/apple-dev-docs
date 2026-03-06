@@ -14,6 +14,13 @@ The values of the data points.
 object GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `averageNumberOfRequests` (number): The average number of match requests in the queue.
+- `count` (integer): The number of match requests in the queue.
+- `p50NumberOfRequests` (number): The number of requests in the 50th percentile.
+- `p95NumberOfRequests` (number): The number of requests in the 95th percentile.
+
 
 ---
 

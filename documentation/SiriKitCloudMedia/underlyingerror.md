@@ -20,6 +20,11 @@ The client depends on a number of system frameworks that manage user interaction
 
 An error code is unique only within its associated error domain. Therefore, use `errorDomain` to determine the origin of the error on the client, and then use `errorCode` to identify the specific error within that domain.
 
+## Properties
+
+- `errorCode` (int64) *(required)*: The error’s identity.
+- `errorDomain` (string) *(required)*: The error’s domain.
+
 
 ---
 

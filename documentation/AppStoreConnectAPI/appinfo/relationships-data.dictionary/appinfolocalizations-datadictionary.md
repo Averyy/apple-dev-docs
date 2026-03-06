@@ -20,6 +20,12 @@ object AppInfo.Relationships.AppInfoLocalizations
 - [object AppInfo.Relationships.AppInfoLocalizations.Data](appinfo/relationships-data.dictionary/appinfolocalizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([AppInfo.Relationships.AppInfoLocalizations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppInfo.Relationships.App](appinfo/relationships-data.dictionary/app-data.dictionary.md)

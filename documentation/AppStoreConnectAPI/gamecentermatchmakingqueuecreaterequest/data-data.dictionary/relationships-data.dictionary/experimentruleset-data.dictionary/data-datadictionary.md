@@ -14,6 +14,11 @@ The data structure of the request body for an experimental rule set.
 object GameCenterMatchmakingQueueCreateRequest.Data.Relationships.ExperimentRuleSet.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The unique identifier for the rule set.
+- `type` (string) *(required)*: The type of resource.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships.ExperimentRuleSet](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary/experimentruleset-data.dictionary.md)

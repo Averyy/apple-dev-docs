@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: init
 
-Creates a request for translating a single attributed string. This will also set the `sourceText` property to the unatributed version of the sourceText parameter.
+Creates a request for translating a single attributed string.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -16,6 +16,10 @@ Creates a request for translating a single attributed string. This will also set
 ```swift
 init(sourceText: AttributedString, clientIdentifier: String? = nil)
 ```
+
+#### Discussion
+
+The plain text is automatically extracted and stored in [`sourceText`](translationsession/request/sourcetext.md).
 
 ## See Also
 

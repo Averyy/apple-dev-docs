@@ -14,6 +14,11 @@ The data structure that represents a leaderboard resource.
 object GameCenterLeaderboardSetGroupLeaderboardSetLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -6,7 +6,7 @@
 An error that indicates an invalid refund preference value.
 
 **Availability**:
-- App Store Server API 1.11+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object InvalidRefundPreferenceError
 #### Discussion
 
 This error applies to the [`refundPreference`](refundpreference.md) value you provide in a [`ConsumptionRequest`](consumptionrequest.md), or the [`refundPreferenceV1`](refundpreferencev1.md) value in a [`ConsumptionRequestV1`](consumptionrequestv1.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

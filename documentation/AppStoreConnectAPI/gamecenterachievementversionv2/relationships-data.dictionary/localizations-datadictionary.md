@@ -25,6 +25,12 @@ object GameCenterAchievementVersionV2.Relationships.Localizations
 ### Dictionaries - generated
 - [object GameCenterAchievementVersionV2.Relationships.Localizations.Data](gamecenterachievementversionv2/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterAchievementVersionV2.Relationships.Localizations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementVersionV2.Relationships.Achievement](gamecenterachievementversionv2/relationships-data.dictionary/achievement-data.dictionary.md)

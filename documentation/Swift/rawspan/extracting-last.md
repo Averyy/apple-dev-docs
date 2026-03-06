@@ -34,7 +34,7 @@ The returned span’s first byte is always at offset 0; unlike buffer slices, ex
 
 ## Parameters
 
-- `maxLength`: The maximum number of bytes to return.    must be greater than or equal to zero.
+- `maxLength`: The maximum number of bytes to return. `maxLength` must be greater than or equal to zero.
 
 
 ---

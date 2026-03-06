@@ -8,6 +8,14 @@ Delete localized metadata that appears on the App Clip card of a default App Cli
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appClipDefaultExperienceLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Default App Clip Experience Localizations resource.
+
 ## See Also
 
 - [Create the Localized Metadata for a Default App Clip Experience](post-v1-appclipdefaultexperiencelocalizations.md)

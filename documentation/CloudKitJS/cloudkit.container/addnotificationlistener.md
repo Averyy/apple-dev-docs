@@ -22,7 +22,7 @@ To subscribe to changes and register for push notifications, see `saveSubscripti
 
 ## Parameters
 
-- `listener`: The function to call when a push notification occurs. The function must have a single argument that is a   object.
+- `listener`: The function to call when a push notification occurs. The function must have a single argument that is a [`CloudKit.Notification`](cloudkit.notification.md) object.
 
 ## See Also
 

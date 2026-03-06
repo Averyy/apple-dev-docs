@@ -12,6 +12,11 @@
 object InAppPurchaseV2InAppPurchaseLocalizationsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

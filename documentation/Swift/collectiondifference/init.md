@@ -30,11 +30,11 @@ The collection of changes passed as `changes` must meet these requirements:
 - All removal offsets are unique
 - All associations between insertions and removals are symmetric
 
-> **Note**: O( * log()), where  is the length of the parameter.
+> **Note**: O(*n* * log(*n*)), where *n* is the length of the parameter.
 
 ## Parameters
 
-- `changes`: A collection of changes that represent a transition   between two states.
+- `changes`: A collection of changes that represent a transition between two states.
 
 
 ---

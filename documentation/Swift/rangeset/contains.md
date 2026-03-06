@@ -26,7 +26,7 @@ func contains(_ value: Bound) -> Bool
 
 #### Discussion
 
-> **Note**: O(log ), where  is the number of ranges in the range set.
+> **Note**: O(log *n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

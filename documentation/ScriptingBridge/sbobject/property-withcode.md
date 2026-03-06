@@ -25,7 +25,7 @@ An object representing the receiver’s property as identified by `code`.
 
 ## Parameters
 
-- `code`: A four-character code that uniquely identifies a property of the   receiver.
+- `code`: A four-character code that uniquely identifies a property of the receiver.
 
 ## See Also
 

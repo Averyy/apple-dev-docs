@@ -17,6 +17,10 @@ object GameCenterLeaderboardSetImageCreateRequest.Data.Relationships
 ### Objects
 - [object GameCenterLeaderboardSetImageCreateRequest.Data.Relationships.GameCenterLeaderboardSetLocalization](gamecenterleaderboardsetimagecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetlocalization-data.dictionary.md)
 
+## Properties
+
+- `gameCenterLeaderboardSetLocalization` (GameCenterLeaderboardSetImageCreateRequest.Data.Relationships.GameCenterLeaderboardSetLocalization) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageCreateRequest.Data.Attributes](gamecenterleaderboardsetimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

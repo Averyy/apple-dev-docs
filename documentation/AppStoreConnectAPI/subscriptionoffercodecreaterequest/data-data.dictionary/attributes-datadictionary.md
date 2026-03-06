@@ -12,6 +12,16 @@
 object SubscriptionOfferCodeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `autoRenewEnabled` (boolean)
+- `customerEligibilities` ([SubscriptionCustomerEligibility]) *(required)*
+- `duration` (SubscriptionOfferDuration) *(required)*
+- `name` (string) *(required)*
+- `numberOfPeriods` (integer) *(required)*
+- `offerEligibility` (SubscriptionOfferEligibility) *(required)*
+- `offerMode` (SubscriptionOfferMode) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeCreateRequest.Data.Relationships](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

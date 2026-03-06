@@ -14,6 +14,10 @@ Attributes that describe an App Screenshot Sets resource.
 object AppScreenshotSet.Attributes
 ```
 
+## Properties
+
+- `screenshotDisplayType` (ScreenshotDisplayType)
+
 ## See Also
 
 - [object AppScreenshotSet.Relationships](appscreenshotset/relationships-data.dictionary.md)

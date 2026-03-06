@@ -14,6 +14,13 @@ Attributes that describe an App Store Version Phased Releases resource.
 object AppStoreVersionPhasedRelease.Attributes
 ```
 
+## Properties
+
+- `currentDayNumber` (integer)
+- `phasedReleaseState` (PhasedReleaseState)
+- `startDate` (date-time)
+- `totalPauseDuration` (integer)
+
 
 ---
 

@@ -18,6 +18,11 @@ object AlternativeDistributionPackage.Relationships.Versions.Data
 
 For more information on the object that owns this version data, see [`AlternativeDistributionPackage.Relationships.Versions`](alternativedistributionpackage/relationships-data.dictionary/versions-data.dictionary.md).
 
+## Properties
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package version.
+- `type` (string) *(required)*
+
 
 ---
 

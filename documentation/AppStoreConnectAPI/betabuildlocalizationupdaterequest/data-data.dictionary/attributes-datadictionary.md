@@ -14,6 +14,10 @@ Attributes whose values you’re changing as part of the update request.
 object BetaBuildLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `whatsNew` (string): A field that describes changes and additions to a build and indicates features you would like your users to test.
+
 ## See Also
 
 - [Beta Build Localizations](beta-build-localizations.md)

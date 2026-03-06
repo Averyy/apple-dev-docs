@@ -52,11 +52,11 @@ let date = match?.1 // date == Jul 14, 2022 at 7:10 PM (may vary depending on cu
 
 ## Parameters
 
-- `includingFractionalSeconds`: A Boolean value that specifies whether the source string contains fractional seconds. The default is  .
-- `dateSeparator`: The character that separates year, month, and day sections of the date substring. The default is  .
-- `dateTimeSeparator`: The character that separates the date and time sections of the substring. The default is  .
-- `timeSeparator`: The character that separates the date and time sections of the substring. The default is  .
-- `timeZoneSeparator`: The character that separates the hour, minute, and second sections of the substring. The default is 
+- `includingFractionalSeconds`: A Boolean value that specifies whether the source string contains fractional seconds. The default is `false`.
+- `dateSeparator`: The character that separates year, month, and day sections of the date substring. The default is [`Date.ISO8601FormatStyle.DateSeparator.dash`](https://developer.apple.com/documentation/Foundation/Date/ISO8601FormatStyle/DateSeparator-swift.enum/dash).
+- `dateTimeSeparator`: The character that separates the date and time sections of the substring. The default is [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](https://developer.apple.com/documentation/Foundation/Date/ISO8601FormatStyle/DateTimeSeparator-swift.enum/standard).
+- `timeSeparator`: The character that separates the date and time sections of the substring. The default is [`Date.ISO8601FormatStyle.TimeSeparator.colon`](https://developer.apple.com/documentation/Foundation/Date/ISO8601FormatStyle/TimeSeparator-swift.enum/colon).
+- `timeZoneSeparator`: The character that separates the hour, minute, and second sections of the substring. The default is [`Date.ISO8601FormatStyle.TimeSeparator.colon`](https://developer.apple.com/documentation/Foundation/Date/ISO8601FormatStyle/TimeSeparator-swift.enum/colon)
 
 ## See Also
 

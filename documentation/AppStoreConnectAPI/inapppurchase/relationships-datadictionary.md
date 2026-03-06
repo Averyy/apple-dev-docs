@@ -20,6 +20,10 @@ object InAppPurchase.Relationships
 - [object InAppPurchase.Relationships.Apps](inapppurchase/relationships-data.dictionary/apps-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `apps` (InAppPurchase.Relationships.Apps)
+
 ## See Also
 
 - [object InAppPurchase.Attributes](inapppurchase/attributes-data.dictionary.md)

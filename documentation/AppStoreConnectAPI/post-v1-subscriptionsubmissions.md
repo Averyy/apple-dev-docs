@@ -12,6 +12,10 @@ Create a review submission for an auto-renewable subscription.
 
 - [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionSubmissions`
+
 ## See Also
 
 - [Create a Review Submission for a Subscription Group](post-v1-subscriptiongroupsubmissions.md)

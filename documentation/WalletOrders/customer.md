@@ -16,6 +16,14 @@ The details of the order’s customer.
 object Customer
 ```
 
+## Properties
+
+- `emailAddress` (string): The customer’s email address.
+- `familyName` (string): The customer’s family name.
+- `givenName` (string): The customer’s given name.
+- `organizationName` (string): The customer’s organization name.
+- `phoneNumber` (string): The customer’s phone number.
+
 ## See Also
 
 - [object Merchant](merchant.md)

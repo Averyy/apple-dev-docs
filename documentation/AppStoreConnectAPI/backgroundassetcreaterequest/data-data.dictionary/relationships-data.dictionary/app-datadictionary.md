@@ -20,6 +20,10 @@ object BackgroundAssetCreateRequest.Data.Relationships.App
 - [object BackgroundAssetCreateRequest.Data.Relationships.App.Data](backgroundassetcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BackgroundAssetCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

@@ -14,6 +14,12 @@ A classification of a metrics value and the lower- and upper-bound values that q
 object xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys
 ```
 
+## Properties
+
+- `goalKey` (string): The name of the classification, such as `“good”`, `“fair”`, and `“poor”`.
+- `lowerBound` (integer): The lower bound value to qualify for the goal key.
+- `upperBound` (integer): The upper bound value to qualify for the goal key.
+
 ## See Also
 
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary.md)

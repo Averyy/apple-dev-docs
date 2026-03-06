@@ -6,13 +6,18 @@
 An error that indicates the query parameter exclude-revoked is invalid.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API ?+ - Deprecated
 
 ## Declaration
 
 ```swift
 object InvalidExcludeRevokedError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

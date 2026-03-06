@@ -14,6 +14,11 @@ Attributes that describe a subscription purchase image request resource.
 object InAppPurchaseImageCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseImageCreateRequest.Data.Relationships](inapppurchaseimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

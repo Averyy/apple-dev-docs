@@ -8,6 +8,19 @@ Get the details of a specific subscription group.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}`
+
+## Parameters
+
+- `fields[subscriptionGroupLocalizations]` ([string])
+- `fields[subscriptionGroups]` ([string])
+- `fields[subscriptions]` ([string])
+- `include` ([string])
+- `limit[subscriptionGroupLocalizations]` (integer)
+- `limit[subscriptions]` (integer)
+
 ## See Also
 
 - [Create a Subscription Group](post-v1-subscriptiongroups.md)

@@ -27,7 +27,7 @@ Note that this method does not check whether an application with the given bundl
 
 ## Parameters
 
-- `ident`: A bundle identifier specifying an application that is   OSA-compliant.
+- `ident`: A bundle identifier specifying an application that is OSA-compliant.
 
 ## See Also
 

@@ -14,6 +14,13 @@ An object that describes a map region in terms of its upper-right and lower-left
 object MapRegion
 ```
 
+## Properties
+
+- `eastLongitude` (double): A double value that describes the east longitude of the map region.
+- `northLatitude` (double): A double value that describes the north latitude of the map region.
+- `southLatitude` (double): A double value that describes the south latitude of the map region.
+- `westLongitude` (double): A double value that describes west longitude of the map region.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

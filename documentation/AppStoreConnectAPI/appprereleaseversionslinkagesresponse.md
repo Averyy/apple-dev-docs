@@ -17,6 +17,12 @@ object AppPreReleaseVersionsLinkagesResponse
 ### Dictionaries
 - [object AppPreReleaseVersionsLinkagesResponse.Data](appprereleaseversionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppPreReleaseVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

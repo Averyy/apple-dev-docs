@@ -30,7 +30,7 @@ Use the returned object to get the execution status of the specified request. Th
 
 ## Parameters
 
-- `action`: The one-time action to perform. Use this object to   specify the action you want to perform and the vehicle on which   to perform it.
+- `action`: The one-time action to perform. Use this object to specify the action you want to perform and the vehicle on which to perform it.
 
 ## See Also
 

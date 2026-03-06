@@ -8,6 +8,19 @@ Get a specific default App Clip experience.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appClipDefaultExperiences/{id}`
+
+## Parameters
+
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[appClipDefaultExperienceLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the default App Clip experience localizations relationship is included.
+
 ## See Also
 
 - [Read the App Store Review Detail for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)

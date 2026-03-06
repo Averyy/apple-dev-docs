@@ -8,6 +8,14 @@ Delete localized metadata that you configured for an in-app event.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appEventLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [GET /v1/appEventLocalizations/{id}](get-v1-appeventlocalizations-_id_.md)

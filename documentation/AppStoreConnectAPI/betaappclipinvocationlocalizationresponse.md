@@ -14,6 +14,11 @@ A response that contains a single Beta App Clip Invocation Localizations resourc
 object BetaAppClipInvocationLocalizationResponse
 ```
 
+## Properties
+
+- `data` (BetaAppClipInvocationLocalization) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object BetaAppClipInvocationLocalization](betaappclipinvocationlocalization.md)

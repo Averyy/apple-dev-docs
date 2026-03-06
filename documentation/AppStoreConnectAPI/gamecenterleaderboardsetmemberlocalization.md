@@ -20,6 +20,14 @@ object GameCenterLeaderboardSetMemberLocalization
 - [object GameCenterLeaderboardSetMemberLocalization.Attributes](gamecenterleaderboardsetmemberlocalization/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetMemberLocalization.Relationships](gamecenterleaderboardsetmemberlocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetMemberLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardSetMemberLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest](gamecenterleaderboardsetmemberlocalizationcreaterequest.md)

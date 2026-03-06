@@ -12,6 +12,10 @@ Add a version release for a specific Game Center challenge version.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterChallengeVersionReleases`
+
 ## See Also
 
 - [Read challenge version release information](get-v1-gamecenterchallengeversionreleases-_id_.md)

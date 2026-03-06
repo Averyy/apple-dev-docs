@@ -8,6 +8,20 @@ List all workflows for a specific Xcode Cloud product.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciProducts/{id}/workflows`
+
+## Parameters
+
+- `fields[ciWorkflows]` ([string]): Additional fields to include for each Workflows resource returned by the response.
+- `limit` (integer): The number of Workflows resources to return.
+- `fields[ciXcodeVersions]` ([string])
+- `fields[ciMacOsVersions]` ([string])
+- `fields[ciProducts]` ([string])
+- `fields[scmRepositories]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Xcode Cloud Products](get-v1-ciproducts.md)

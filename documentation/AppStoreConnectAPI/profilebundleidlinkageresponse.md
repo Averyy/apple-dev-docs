@@ -17,6 +17,11 @@ object ProfileBundleIdLinkageResponse
 ### Dictionaries
 - [object ProfileBundleIdLinkageResponse.Data](profilebundleidlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ProfileBundleIdLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Profile](profile.md)

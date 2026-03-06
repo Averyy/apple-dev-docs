@@ -33,6 +33,15 @@ The following listing shows the main elements of the `showcaseTemplate` element 
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: Background visual and audio.
+- **[`banner`](banner.md)**: Elements that describe what the page shows and provides buttons for user options.
+- **[`button`](button.md)**: A button providing user options.
+- **[`carousel`](carousel.md)**: Element containing images and text displayed in a row that the user navigates by swiping left or right on the remote.
+- **[`lockup`](lockup.md)**: An element containing several elements, such as an image and a title, so that it can be treated as a single element.
+- **[`row`](row.md)**: A group of elements displayed in a horizontal row.
+- **[`section`](section.md)**: A group of `lockup` elements.
+- **[`title`](title.md)**: Text that describes its containing element.
+
 ##### Example
 
 The following listing shows the TVML for a `showcaseTemplate` example.

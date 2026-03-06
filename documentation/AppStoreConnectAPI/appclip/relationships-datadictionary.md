@@ -24,6 +24,12 @@ object AppClip.Relationships
 ### Dictionaries
 - [object AppClip.Relationships.AppClipAdvancedExperiences](appclip/relationships-data.dictionary/appclipadvancedexperiences-data.dictionary.md)
 
+## Properties
+
+- `app` (AppClip.Relationships.App): The related Apps resource.
+- `appClipAdvancedExperiences` (AppClip.Relationships.AppClipAdvancedExperiences)
+- `appClipDefaultExperiences` (AppClip.Relationships.AppClipDefaultExperiences): The related Default App Clip Experiences resource.
+
 ## See Also
 
 - [object AppClip.Attributes](appclip/attributes-data.dictionary.md)

@@ -8,6 +8,21 @@ Get information for a specific Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}`
+
+## Parameters
+
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterActivityVersions]` ([string])
+- `include` ([string])
+- `limit[achievements]` (integer)
+- `limit[leaderboards]` (integer)
+- `limit[versions]` (integer)
+- `limit[achievementsV2]` (integer)
+- `limit[leaderboardsV2]` (integer)
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

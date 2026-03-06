@@ -8,6 +8,14 @@ Update a specific featuring nomination.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/nominations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List nominations`](get-v1-nominations.md) response.
+
 ## See Also
 
 - [Create a featuring nomination](post-v1-nominations.md)

@@ -14,6 +14,10 @@ The request body you use to modify a background asset update request.
 object BackgroundAssetUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `archived` (boolean)
+
 
 ---
 

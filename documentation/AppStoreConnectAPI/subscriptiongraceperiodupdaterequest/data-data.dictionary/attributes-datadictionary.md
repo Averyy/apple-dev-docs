@@ -16,6 +16,13 @@ object SubscriptionGracePeriodUpdateRequest.Data.Attributes
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
 
+## Properties
+
+- `duration` (SubscriptionGracePeriodDuration): [`SubscriptionGracePeriodDuration`](subscriptiongraceperiodduration.md)
+- `optIn` (boolean)
+- `renewalType` (string)
+- `sandboxOptIn` (boolean)
+
 
 ---
 

@@ -20,6 +20,12 @@ object BetaGroupUpdateRequest.Data
 - [object BetaGroupUpdateRequest.Data.Attributes](betagroupupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the beta group update request.
 
+## Properties
+
+- `attributes` (BetaGroupUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

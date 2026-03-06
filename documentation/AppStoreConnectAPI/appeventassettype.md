@@ -14,6 +14,9 @@ string AppEventAssetType
 
 ##### Possible Values
 
+- **`EVENT_CARD`**: 
+- **`EVENT_DETAILS_PAGE`**: 
+
 ## See Also
 
 - [object AppEvent](appevent.md)

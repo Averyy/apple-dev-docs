@@ -12,6 +12,10 @@ Send an event to your server to verify your server-side webhook configuration.
 
 - [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/webhookPings`
+
 
 ---
 

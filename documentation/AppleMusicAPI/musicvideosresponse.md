@@ -14,6 +14,10 @@ The response to a music videos request.
 object MusicVideosResponse
 ```
 
+## Properties
+
+- `data` ([MusicVideos]) *(required)*: The [`MusicVideos`](musicvideos.md) included in the response for the request.
+
 ## See Also
 
 - [object MusicVideos](musicvideos.md)

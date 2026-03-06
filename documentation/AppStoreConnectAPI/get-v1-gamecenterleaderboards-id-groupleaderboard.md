@@ -8,6 +8,25 @@ Read the group leadboard to which a leaderboard belongs.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/{id}/groupLeaderboard`
+
+## Parameters
+
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardLocalizations]` ([string])
+- `fields[gameCenterLeaderboardReleases]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `include` ([string])
+- `limit[gameCenterLeaderboardSets]` (integer)
+- `limit[localizations]` (integer)
+- `limit[releases]` (integer)
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+
 ## See Also
 
 - [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)

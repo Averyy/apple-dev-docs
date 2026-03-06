@@ -42,7 +42,7 @@ To import your reference object file, click the Anchor Object button for the Anc
 
 ![A Reality Composer Pro screenshot showing the File Selection dialog with a reference object file selected.](https://docs-assets.developer.apple.com/published/4aa6dfa606725c8041f356b734e82bb2/importing-reference-object%402x.png)
 
-After importing your reference object file, a semitransparent model of it appears in the 3D View. You can use this  as a guide to place virtual content precisely on top of the real object.
+After importing your reference object file, a semitransparent model of it appears in the 3D View. You can use this *visual cue* as a guide to place virtual content precisely on top of the real object.
 
 You can move the visual cue away from the origin by moving an ancestor entity of the entity with the Anchoring component. This is particularly helpful when you have multiple entities acting as object anchors, which might cause the visual cues to overlap at the origin.
 

@@ -30,7 +30,7 @@ Standard input is interpreted as `UTF-8`. Invalid bytes are replaced by Unicode 
 
 ## Parameters
 
-- `strippingNewline`: If  , newline characters and character   combinations are stripped from the result; otherwise, newline characters   or character combinations are preserved. The default is  .
+- `strippingNewline`: If `true`, newline characters and character combinations are stripped from the result; otherwise, newline characters or character combinations are preserved. The default is `true`.
 
 ## See Also
 

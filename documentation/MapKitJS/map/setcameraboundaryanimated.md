@@ -31,8 +31,8 @@ By default, the change of boundary animates.
 
 ## Parameters
 
-- `mapRect`: This can be an instance of   or  .
-- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is  .
+- `mapRect`: This can be an instance of [`CoordinateRegion`](coordinateregion.md) or [`MapRect`](maprect.md).
+- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is `true`.
 
 ## See Also
 

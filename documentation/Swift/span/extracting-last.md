@@ -34,7 +34,7 @@ The returned span’s first item is always at offset 0; unlike buffer slices, ex
 
 ## Parameters
 
-- `maxLength`: The maximum number of elements to return.    must be greater than or equal to zero.
+- `maxLength`: The maximum number of elements to return. `maxLength` must be greater than or equal to zero.
 
 
 ---

@@ -22,7 +22,7 @@ mutating func sort<S, Comparator>(using comparators: S) where S : Sequence, Comp
 
 ## Parameters
 
-- `comparators`: An array of comparators used to compare elements. The   first comparator specifies the primary comparator to be used in   sorting the sequence’s elements. Any subsequent comparators are used   to further refine the order of elements with equal values.
+- `comparators`: An array of comparators used to compare elements. The first comparator specifies the primary comparator to be used in sorting the sequence’s elements. Any subsequent comparators are used to further refine the order of elements with equal values.
 
 
 ---

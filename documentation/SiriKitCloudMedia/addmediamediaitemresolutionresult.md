@@ -34,6 +34,14 @@ Only provide one of the optional properties. If a client receives a result with 
 - [object AddMediaMediaItemResolutionResult.Disambiguation](addmediamediaitemresolutionresult/disambiguation-data.dictionary.md)
   A result that requires the user to choose which media item they want to add to their library or to a playlist.
 
+## Properties
+
+- `class` (string): The specific type of result.
+- `success` (AddMediaMediaItemResolutionResult.Success): A media item that successfully matches the intent.
+- `confirmationRequired` (AddMediaMediaItemResolutionResult.ConfirmationRequired): A media item for the user to confirm.
+- `disambiguation` (AddMediaMediaItemResolutionResult.Disambiguation): Multiple media items for the user to choose from.
+- `unsupported` (AddMediaMediaItemResolutionResult.Unsupported): Information about why your service can’t resolve the media item.
+
 ## Relationships
 
 ### Inherits From

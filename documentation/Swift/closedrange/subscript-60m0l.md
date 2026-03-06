@@ -26,7 +26,7 @@ You can subscript a collection with any valid index other than the collection’
 
 ## Parameters
 
-- `position`: The position of the element to access.    must be a valid index of the range, and must not equal the range’s end   index.
+- `position`: The position of the element to access. `position` must be a valid index of the range, and must not equal the range’s end index.
 
 
 ---

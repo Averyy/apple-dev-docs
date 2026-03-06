@@ -14,6 +14,17 @@ A report of the client’s current playback state and recent user interaction, a
 object UpdateActivityRequest
 ```
 
+## Properties
+
+- `constraints` (Constraints): Limitations on the type and quantity of content to provide in a [`Queue`](queue.md).
+- `nowPlaying` (PlayerContext): The content the client is playing.
+- `previouslyPlaying` (PlayerContext): The content the client plays before the current content.
+- `report` (QueueActivityReportEvent) *(required)*: The most-recent control the user interacts with, or the natural transition that occurs most recently.
+- `timestamp` (date-time) *(required)*: The date and time of the reported event.
+- `userActivity` (UserActivity) *(required)*: A description of the playback queue the client is playing.
+- `version` (string) *(required)*: The version of the `SiriKitMediaAPI` library the client uses.
+- `contentFailure` (ContentFailure)
+
 ## See Also
 
 - [type QueueActivityReportEvent](queueactivityreportevent.md)

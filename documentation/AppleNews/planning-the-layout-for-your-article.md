@@ -8,7 +8,7 @@ Define a layout that supports the look you want for your article.
 
 To create a unique look for your News article, you start by defining your layout. Apple News Format uses a column system that provides different horizontal locations for aligning the components in your design — your title, headings, body text, images, pull quotes, and so on.
 
-You might be familiar with  as a text formatting term, but in Apple News Format a column is used for aligning entire components, not the text within a component. The column system is a set of equal-width, vertical segments you use to align components in your layout. The number of columns you choose for your layout determines your options for positioning components.
+You might be familiar with *column* as a text formatting term, but in Apple News Format a column is used for aligning entire components, not the text within a component. The column system is a set of equal-width, vertical segments you use to align components in your layout. The number of columns you choose for your layout determines your options for positioning components.
 
 For example, a layout with one column provides only one location for alignment, so all components align to a single horizontal position at the far left.
 

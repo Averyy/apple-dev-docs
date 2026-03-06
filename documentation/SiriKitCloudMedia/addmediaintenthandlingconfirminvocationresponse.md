@@ -20,6 +20,11 @@ object AddMediaIntentHandlingConfirmInvocationResponse
 - [object AddMediaIntentHandlingConfirmInvocationResponse.Result](addmediaintenthandlingconfirminvocationresponse/result-data.dictionary.md)
   The result of receiving the user’s confirmation that they want to add the media items to the destination.
 
+## Properties
+
+- `result` (AddMediaIntentHandlingConfirmInvocationResponse.Result) *(required)*: The results of processing the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

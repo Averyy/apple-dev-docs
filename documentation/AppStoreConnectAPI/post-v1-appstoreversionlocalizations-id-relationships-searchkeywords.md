@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/{id}/relationships/searchKeywords`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [GET /v1/appStoreVersionLocalizations/{id}/searchKeywords](get-v1-appstoreversionlocalizations-_id_-searchkeywords.md)

@@ -14,6 +14,10 @@ string SubscriptionGracePeriodDuration
 
 #### Possible Values
 
+- **`THREE_DAYS`**: A string that represents 3 days.
+- **`SIXTEEN_DAYS`**: A string that represents 16 days.
+- **`TWENTY_EIGHT_DAYS`**: A string that represents 28 days.
+
 ## See Also
 
 - [object SubscriptionGracePeriodResponse](subscriptiongraceperiodresponse.md)

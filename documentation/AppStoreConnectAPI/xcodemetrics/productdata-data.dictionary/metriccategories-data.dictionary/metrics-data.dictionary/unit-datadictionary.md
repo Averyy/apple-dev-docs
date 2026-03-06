@@ -14,6 +14,11 @@ A unit of measurement and its display name.
 object xcodeMetrics.ProductData.MetricCategories.Metrics.Unit
 ```
 
+## Properties
+
+- `displayName` (string): The display name for the unit of measurement.
+- `identifier` (string): The unit of measurement.
+
 ## See Also
 
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary.md)

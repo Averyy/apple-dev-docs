@@ -45,7 +45,7 @@ let replacingCurrent = dictionary.merging(otherDictionary)
 ## Parameters
 
 - `other`: A dictionary to merge.
-- `combine`: A closure that takes the current and new values for any   duplicate keys. The closure returns the desired value for the final   dictionary.
+- `combine`: A closure that takes the current and new values for any duplicate keys. The closure returns the desired value for the final dictionary.
 
 ## See Also
 

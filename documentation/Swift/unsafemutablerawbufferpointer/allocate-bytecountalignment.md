@@ -32,8 +32,8 @@ The allocated memory is not bound to any specific type and must be bound before 
 
 ## Parameters
 
-- `byteCount`: The number of bytes to allocate.   must not be   negative.
-- `alignment`: The alignment of the new region of allocated memory, in   bytes.   must be a whole power of 2.
+- `byteCount`: The number of bytes to allocate. `byteCount` must not be negative.
+- `alignment`: The alignment of the new region of allocated memory, in bytes. `alignment` must be a whole power of 2.
 
 
 ---

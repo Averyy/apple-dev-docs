@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterEnabledVersions/{id}/relationships/compatibleVersions`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Remove Compatible Versions from a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)

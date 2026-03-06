@@ -12,6 +12,20 @@
 object SubscriptionOfferCode.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+- `autoRenewEnabled` (boolean)
+- `customerEligibilities` ([SubscriptionCustomerEligibility])
+- `duration` (SubscriptionOfferDuration)
+- `name` (string)
+- `numberOfPeriods` (integer)
+- `offerEligibility` (SubscriptionOfferEligibility)
+- `offerMode` (SubscriptionOfferMode)
+- `productionCodeCount` (integer)
+- `sandboxCodeCount` (integer)
+- `totalNumberOfCodes` (integer)
+
 ## See Also
 
 - [type SubscriptionOfferDuration](subscriptionofferduration.md)

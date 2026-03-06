@@ -9,6 +9,10 @@ Register a new bundle ID for app development.
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/bundleIds`
+
 
 ---
 

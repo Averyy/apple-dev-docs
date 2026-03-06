@@ -63,6 +63,9 @@ You enable diffuse reflections by adding a material on a surface with the [`Refl
 
 This node requires the following inputs:
 
+- **Emitter UV**: This UV samples the system-generated emitter texture that contains low-frequency light and color information from the docked video. The diffuse reflection node uses the UV to calculate where to show the soft light reflection.
+- **Attenuation UV**: This UV samples the provided attenuation mask texture. An attenuation texture contains a soft falloff mask that’s used to shape the light from the emitter. Use a higher bit-depth texture format, such as `.exr,` to reduce any possible banding artifacts.
+
 Destination Video’s custom environment applies diffuse reflections to the surfaces immediately surrounding the docked video screen as shown below:
 
 ![An image that shows an example of a diffuse reflection. The image shows a multicolored bounding rectangle that represents a docked video screen. Below the video screen is a soft glow of the video content’s color and light reflected onto the ground plane.](https://docs-assets.developer.apple.com/published/1b725833f0413adea7a6c41d9389dc88/diffuse-example-dv.jpg)
@@ -84,6 +87,11 @@ The default falloff pattern doesn’t extend all the way to the edges of the tex
 ![A visualization of the values used to calculate the attenuation UV set from the default Reality Composer Pro attenuation texture.](https://docs-assets.developer.apple.com/published/6df1627df0e30884cd82409b64ddf595/attenuation-uv-texture-calculations%402x.png)
 
 The following four values define the attenuation UV set:
+
+- **`uStart`**: The UV-space value where the sharp line of the falloff pattern starts horizontally.
+- **`uEnd`**: The UV-space value where the sharp line of the falloff pattern ends horizontally.
+- **`vStart`**: The UV-space value where the sharp line starts vertically.
+- **`vEnd`**: The UV-space value where the falloff pattern ends in black.
 
 After calculating the attenuation texture, map it to the geometry. To visualize the attenuation texture mapping, the image below shows a square red mesh as the custom surface mesh that extends towards the user with sides that are equal to the width of the docking region.
 

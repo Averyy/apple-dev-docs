@@ -20,6 +20,12 @@ object GameCenterLeaderboardV2Response
 - included:
 - links:
 
+## Properties
+
+- `data` (GameCenterLeaderboardV2) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

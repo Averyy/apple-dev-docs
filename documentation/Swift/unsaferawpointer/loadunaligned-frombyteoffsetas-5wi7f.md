@@ -32,7 +32,7 @@ This function only supports loading trivial types, and will trap if this precond
 
 ## Parameters
 
-- `offset`: The offset from this pointer, in bytes.   must be   nonnegative. The default is zero.
+- `offset`: The offset from this pointer, in bytes. `offset` must be nonnegative. The default is zero.
 - `type`: The type of the instance to create.
 
 

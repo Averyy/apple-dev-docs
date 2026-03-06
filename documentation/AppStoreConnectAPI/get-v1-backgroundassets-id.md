@@ -8,6 +8,15 @@ Get details about a specific background asset.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssets/{id}`
+
+## Parameters
+
+- `fields[backgroundAssets]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)

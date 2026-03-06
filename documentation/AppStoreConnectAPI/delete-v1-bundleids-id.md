@@ -10,6 +10,14 @@
 
 You can only delete bundle IDs that are used for development. You can’t delete bundle IDs that are being used by an app in App Store Connect.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/bundleIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Modify a Bundle ID](patch-v1-bundleids-_id_.md)

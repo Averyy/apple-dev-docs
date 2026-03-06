@@ -14,6 +14,10 @@ The type and ID of a related resource.
 object BackgroundAssetVersion.Relationships.BackgroundAssetUploadFiles
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

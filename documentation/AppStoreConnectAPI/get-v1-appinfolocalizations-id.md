@@ -8,6 +8,15 @@ Read localized app-level information.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}`
+
+## Parameters
+
+- `fields[appInfoLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All App Info Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)

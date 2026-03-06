@@ -11,6 +11,16 @@ Attributes that describe a Devices resource.
 object Device.Attributes
 ```
 
+## Properties
+
+- `addedDate` (date-time)
+- `deviceClass` (string)
+- `model` (string)
+- `name` (string)
+- `platform` (BundleIdPlatform)
+- `status` (string)
+- `udid` (string)
+
 
 ---
 

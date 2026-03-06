@@ -12,6 +12,50 @@ Get details for a specific analytics report.
 
 ##### Examples Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/analyticsReports/r2-d48c69c5-9bcb-4592-abbd-08a9411b0231
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "analyticsReports",
+    "id": "r2-d48c69c5-9bcb-4592-abbd-08a9411b0231",
+    "attributes": {
+      "name": "App Crashes",
+      "category": "APP_USAGE"
+    },
+    "relationships": {
+      "instances": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/analyticsReports/r2-d48c69c5-9bcb-4592-abbd-08a9411b0231/relationships/instances",
+          "related": "https://api.appstoreconnect.apple.com/v1/analyticsReports/r2-d48c69c5-9bcb-4592-abbd-08a9411b0231/instances"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/analyticsReports/r2-d48c69c5-9bcb-4592-abbd-08a9411b0231"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/analyticsReports/r2-d48c69c5-9bcb-4592-abbd-08a9411b0231"
+  }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/analyticsReports/{id}`
+
+## Parameters
+
+- `fields[analyticsReports]` ([string])
+
 ## See Also
 
 - [Read a list of instances of a report](get-v1-analyticsreports-_id_-instances.md)

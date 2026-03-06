@@ -12,6 +12,61 @@ Get information about a specific app custom product page localization.
 
 ##### Example Request and Response
 
+**Other**:
+
+```not specified
+https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd
+```
+
+**Other**:
+
+```json
+{
+  "data": {
+    "type": "appCustomProductPageLocalizations",
+    "id": "dad51248-3c38-4f19-a814-3c4f6da719dd",
+    "attributes": {
+      "locale": "en-US",
+      "promotionalText": "This app will inspire!"
+    },
+    "relationships": {
+      "appScreenshotSets": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd/relationships/appScreenshotSets",
+          "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd/appScreenshotSets"
+        }
+      },
+      "appPreviewSets": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd/relationships/appPreviewSets",
+          "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd/appPreviewSets"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/dad51248-3c38-4f19-a814-3c4f6da719dd"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}`
+
+## Parameters
+
+- `fields[appCustomProductPageLocalizations]` ([string])
+- `fields[appPreviewSets]` ([string])
+- `fields[appScreenshotSets]` ([string])
+- `include` ([string])
+- `limit[appPreviewSets]` (integer)
+- `limit[appScreenshotSets]` (integer)
+- `limit[searchKeywords]` (integer)
+
 ## See Also
 
 - [Create a custom product page localization](post-v1-appcustomproductpagelocalizations.md)

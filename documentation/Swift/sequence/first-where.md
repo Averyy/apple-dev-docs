@@ -36,11 +36,11 @@ if let firstNegative = numbers.first(where: { $0 < 0 }) {
 // Prints "The first negative number is -2."
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
-- `predicate`: A closure that takes an element of the sequence as   its argument and returns a Boolean value indicating whether the   element is a match.
+- `predicate`: A closure that takes an element of the sequence as its argument and returns a Boolean value indicating whether the element is a match.
 
 ## See Also
 

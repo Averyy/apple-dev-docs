@@ -8,6 +8,10 @@ Configure a new advanced App Clip experience.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appClipAdvancedExperiences`
+
 ## Request Body
 
 The request body you use to create a new advanced App Clip experience.

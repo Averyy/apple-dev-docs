@@ -14,6 +14,13 @@ A response that contains a list of territory availability resources.
 object TerritoryAvailabilitiesResponse
 ```
 
+## Properties
+
+- `data` ([TerritoryAvailability]) *(required)*
+- `included` ([Territory])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

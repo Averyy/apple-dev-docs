@@ -20,6 +20,10 @@ object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The data that describes the app related to an Android to iOS app mapping detail.
 
+## Properties
+
+- `app` (AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App) *(required)*
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Attributes](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

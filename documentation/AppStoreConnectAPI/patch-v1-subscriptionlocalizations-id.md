@@ -12,6 +12,14 @@ Update a specific localized subscription display name and description for an aut
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)

@@ -14,6 +14,13 @@ A response that contains a list of Pre-Release Version resources.
 object PreReleaseVersionsResponse
 ```
 
+## Properties
+
+- `data` ([PrereleaseVersion]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List Prerelease Versions](get-v1-prereleaseversions.md)

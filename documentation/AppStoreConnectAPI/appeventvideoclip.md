@@ -18,6 +18,14 @@ object AppEventVideoClip
 - [object AppEventVideoClip.Attributes](appeventvideoclip/attributes-data.dictionary.md)
 - [object AppEventVideoClip.Relationships](appeventvideoclip/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventVideoClip.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppEventVideoClip.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppEventVideoClipCreateRequest](appeventvideoclipcreaterequest.md)

@@ -12,6 +12,20 @@ Get a list of all experiments for an App Store version of an app across all plat
 
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/appStoreVersionExperiments`
+
+## Parameters
+
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appStoreVersionExperimentTreatments]` (integer)
+- `fields[appStoreVersions]` ([string])
+
 ## See Also
 
 - [List all experiments IDs for an App Store version v1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)

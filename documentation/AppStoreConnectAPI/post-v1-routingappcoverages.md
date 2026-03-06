@@ -8,6 +8,10 @@ Attach a routing app coverage file to an App Store version.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/routingAppCoverages`
+
 ## See Also
 
 - [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)

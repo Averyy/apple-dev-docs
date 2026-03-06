@@ -14,6 +14,10 @@ Attributes that describe a background asset version App Store release resource.
 object BackgroundAssetVersionAppStoreRelease.Attributes
 ```
 
+## Properties
+
+- `state` (BackgroundAssetVersionAppStoreReleaseState)
+
 ## See Also
 
 - [object BackgroundAssetVersionAppStoreRelease.Relationships](backgroundassetversionappstorerelease/relationships-data.dictionary.md)

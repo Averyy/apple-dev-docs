@@ -20,6 +20,10 @@ object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle
 - [object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/buildbundle-data.dictionary/data-data.dictionary.md)
   The type and ID of the Build Bundles resource that you’re relating with the Beta App Clip Invocations resource you’re creating.
 
+## Properties
+
+- `data` (BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data) *(required)*: The ID and type of the related Build Bundles resource.
+
 ## See Also
 
 - [object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary.md)

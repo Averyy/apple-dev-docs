@@ -16,6 +16,11 @@ object ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError
 
 - [Advanced Commerce API changelog](changelog.md)
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AlreadyRefundedError](alreadyrefundederror.md)

@@ -6,7 +6,7 @@
 An error that indicates the revoked parameter contains an invalid value.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidRevokedError
 #### Discussion
 
 The [`Get Transaction History`](get-transaction-history.md) endpoint returns this error if you provide an invalid value for the `revoked` query parameter.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

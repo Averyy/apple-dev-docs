@@ -29,7 +29,7 @@ There is only one active batch per application at a given time and to fetch a ne
 
 ## Parameters
 
-- `size`: The desired batch size, if no size is provided, the framework uses a  batch size of   that returns all the payments   stored  in the batch.
+- `size`: The desired batch size, if no size is provided, the framework uses a  batch size of `0` that returns all the payments stored  in the batch.
 
 
 ---

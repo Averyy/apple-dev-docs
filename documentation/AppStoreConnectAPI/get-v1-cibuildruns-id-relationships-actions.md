@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciBuildRuns/{id}/relationships/actions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read Xcode Cloud Build Information](get-v1-cibuildruns-_id_.md)

@@ -12,6 +12,15 @@
 object advancedCommerceRenewalInfo
 ```
 
+## Properties
+
+- `consistencyToken` (advancedCommerceConsistencyToken)
+- `descriptors` (advancedCommerceDescriptors)
+- `items` (advancedCommerceRenewalItems)
+- `period` (advancedCommercePeriod)
+- `requestReferenceId` (advancedCommerceRequestReferenceId)
+- `taxCode` (advancedCommerceTaxCode)
+
 ## See Also
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)

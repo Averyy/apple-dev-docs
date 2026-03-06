@@ -82,9 +82,9 @@ You now have an XPC connection between your client code and your listener, with 
 
 #### Revision History
 
--  Added syntax highlighting to the code listings (r. 89366505).
--  Republished as TN3113.  Expanded the introduction to clarify the overall concept.  Made other minor editorial changes.
--  First published as ”Testing and Debugging XPC Code With an Anonymous Listener” on Apple Developer Forums.
+- **2022-04-12** Added syntax highlighting to the code listings (r. 89366505).
+- **2022-02-08** Republished as TN3113.  Expanded the introduction to clarify the overall concept.  Made other minor editorial changes.
+- **2021-11-09** First published as ”Testing and Debugging XPC Code With an Anonymous Listener” on Apple Developer Forums.
 
 ## See Also
 

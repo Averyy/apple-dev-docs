@@ -12,6 +12,58 @@ Update the endpoint URL and secret for alternative distribution package notifica
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks/c74970b8-6be0-40fa-8f51-8e1532005635
+{
+  "data": {
+    "type": "marketplaceWebhooks",
+    "id": "c74970b8-6be0-40fa-8f51-8e1532005635",
+    "attributes": {
+      "endpointUrl": "https://example-2.com/api/ingest/notifications",
+      "secret": "mySecret"
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "type": "marketplaceWebhooks",
+      "id": "c74970b8-6be0-40fa-8f51-8e1532005635",
+      "attributes": {
+        "endpointUrl": "https://example-2.com/api/ingest/notifications"
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks/c74970b8-6be0-40fa-8f51-8e1532005635"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks"
+  },
+  "meta": {
+    "paging": {
+      "total": 1,
+      "limit": 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `marketplaceWebhooks` resource ID from the [`Read marketplace webhook information`](get-v1-marketplacewebhooks.md) response.
+
 ## See Also
 
 - [Read marketplace webhook information](get-v1-marketplacewebhooks.md)

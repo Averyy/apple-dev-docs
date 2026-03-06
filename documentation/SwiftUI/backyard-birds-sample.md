@@ -140,9 +140,9 @@ SubscriptionStoreView(
 
 ## See Also
 
-- [Destination Video](../visionos/destination-video.md)
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Hello World](../visionos/world.md)
+- [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Food Truck: Building a SwiftUI multiplatform app](food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.

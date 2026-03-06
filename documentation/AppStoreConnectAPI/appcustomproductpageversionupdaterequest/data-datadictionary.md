@@ -17,6 +17,12 @@ object AppCustomProductPageVersionUpdateRequest.Data
 ### Dictionaries
 - [object AppCustomProductPageVersionUpdateRequest.Data.Attributes](appcustomproductpageversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppCustomProductPageVersionUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

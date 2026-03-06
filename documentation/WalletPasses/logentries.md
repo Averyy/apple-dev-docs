@@ -16,6 +16,10 @@ An object that contains an array of messages.
 object LogEntries
 ```
 
+## Properties
+
+- `logs` ([string]) *(required)*: An array of log messages.
+
 ## See Also
 
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)

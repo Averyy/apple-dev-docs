@@ -14,6 +14,12 @@ Attributes that describe a background asset resource.
 object BackgroundAsset.Attributes
 ```
 
+## Properties
+
+- `archived` (boolean)
+- `assetPackIdentifier` (string)
+- `createdDate` (date-time)
+
 
 ---
 

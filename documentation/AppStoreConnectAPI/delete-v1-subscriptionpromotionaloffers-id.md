@@ -8,6 +8,14 @@ Delete a specific promotional offer from an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/subscriptionPromotionalOffers/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Promotional Offer](post-v1-subscriptionpromotionaloffers.md)

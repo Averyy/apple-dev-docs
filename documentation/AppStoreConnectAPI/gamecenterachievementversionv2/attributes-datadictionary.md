@@ -16,6 +16,11 @@ object GameCenterAchievementVersionV2.Attributes
 
 - state:
 
+## Properties
+
+- `state` (GameCenterVersionState)
+- `version` (integer)
+
 ## See Also
 
 - [object GameCenterAchievementVersionV2.Relationships](gamecenterachievementversionv2/relationships-data.dictionary.md)

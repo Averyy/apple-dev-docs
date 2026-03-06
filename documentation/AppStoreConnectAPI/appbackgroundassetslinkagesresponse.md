@@ -20,6 +20,12 @@ object AppBackgroundAssetsLinkagesResponse
 - [object AppBackgroundAssetsLinkagesResponse.Data](appbackgroundassetslinkagesresponse/data-data.dictionary.md)
   The the type and ID of a background asset resource linked to an app.
 
+## Properties
+
+- `data` ([AppBackgroundAssetsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

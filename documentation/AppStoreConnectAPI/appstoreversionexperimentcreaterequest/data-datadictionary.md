@@ -18,6 +18,12 @@ object AppStoreVersionExperimentCreateRequest.Data
 - [object AppStoreVersionExperimentCreateRequest.Data.Attributes](appstoreversionexperimentcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object AppStoreVersionExperimentCreateRequest.Data.Relationships](appstoreversionexperimentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppStoreVersionExperimentCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

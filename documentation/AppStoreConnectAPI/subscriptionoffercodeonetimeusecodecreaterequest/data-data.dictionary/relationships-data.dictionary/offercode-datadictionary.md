@@ -17,6 +17,10 @@ object SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.Offer
 ### Objects
 - [object SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode.Data](subscriptionoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode.Data) *(required)*
+
 
 ---
 

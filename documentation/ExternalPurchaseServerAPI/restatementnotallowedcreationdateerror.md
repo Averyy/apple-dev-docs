@@ -22,6 +22,13 @@ object RestatementNotAllowedCreationDateError
 
 For one year after the [`creationDate`](creationdate.md) of a line item, you can restate the line item.
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

@@ -14,6 +14,13 @@ A response that contains a list of review submission resources.
 object ReviewSubmissionsResponse
 ```
 
+## Properties
+
+- `data` ([ReviewSubmission]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)

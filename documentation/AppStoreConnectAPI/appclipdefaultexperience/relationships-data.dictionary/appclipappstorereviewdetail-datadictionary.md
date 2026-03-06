@@ -20,6 +20,11 @@ object AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail
 - [object AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail.Data](appclipdefaultexperience/relationships-data.dictionary/appclipappstorereviewdetail-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clip App Store Details resource.
 
+## Properties
+
+- `data` (AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail.Data): The ID and type of the related App Clip App Store Review Details resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipDefaultExperience.Relationships.AppClip](appclipdefaultexperience/relationships-data.dictionary/appclip-data.dictionary.md)

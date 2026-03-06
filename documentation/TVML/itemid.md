@@ -10,6 +10,8 @@ Use the `itemID` attribute to identify which elements are considered the same so
 
 ##### Values for Itemid
 
+- **String**: The identifier for the item. The identifier must be unique inside its parent DOM element. The identifier does not have to be unique inside of the document.
+
 ##### Elements That Use Itemid
 
 - [`productBundleTemplate`](productbundletemplate.md)

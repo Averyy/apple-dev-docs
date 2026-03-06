@@ -12,6 +12,10 @@
 object CiProduct.Relationships.AdditionalRepositories
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

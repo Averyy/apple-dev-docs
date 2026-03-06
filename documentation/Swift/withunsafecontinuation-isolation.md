@@ -42,7 +42,7 @@ Unlike the “checked” continuation variant, the `UnsafeContinuation` does not
 
 ## Parameters
 
-- `fn`: A closure that takes an   parameter.
+- `fn`: A closure that takes an `UnsafeContinuation` parameter.
 
 ## See Also
 

@@ -14,6 +14,11 @@ Contains a list of alternate Place IDs for a given Place ID.
 object AlternateIdsResponse.AlternateIds
 ```
 
+## Properties
+
+- `alternateIds` ([string]): A list of alternate Place IDs for `id`.
+- `id` (string): The Place ID.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

@@ -8,6 +8,15 @@ Receive an active weather alert.
 **Availability**:
 - Weather API 1.0.0+
 
+## Endpoint
+
+`GET https://weatherkit.apple.com/api/v1/weatherAlert/{language}/{id}`
+
+## Parameters
+
+- `id` (uuid) *(required)*: The unique identifier for the weather alert.
+- `language` (string) *(required)*: The language tag to use for localizing responses.
+
 ## See Also
 
 - [object WeatherAlert](weatheralert.md)

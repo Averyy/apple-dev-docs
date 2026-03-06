@@ -24,8 +24,8 @@ You can add and use multiple experimental features in a given target without aff
 
 ## Parameters
 
-- `name`: The name of the experimental feature; for example,  .
-- `condition`: A condition that restricts the application of the build   setting.
+- `name`: The name of the experimental feature; for example, `VariadicGenerics`.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

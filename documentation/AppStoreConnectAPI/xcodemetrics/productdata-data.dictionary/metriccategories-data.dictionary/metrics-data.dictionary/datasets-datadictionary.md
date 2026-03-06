@@ -25,6 +25,12 @@ object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.RecommendedMetricGoal](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary/recommendedmetricgoal-data.dictionary.md)
   A recommeded value of a goal for a specific app metric.
 
+## Properties
+
+- `filterCriteria` (xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.FilterCriteria): The device and percentile criteria by which the dataset is filtered.
+- `points` ([xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points]): An array containing metric values for each app version.
+- `recommendedMetricGoal` (xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.RecommendedMetricGoal): The recommended metric goal for this dataset.
+
 ## See Also
 
 - [object xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/goalkeys-data.dictionary.md)

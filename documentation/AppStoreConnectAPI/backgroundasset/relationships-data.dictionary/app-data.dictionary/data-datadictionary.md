@@ -12,6 +12,11 @@
 object BackgroundAsset.Relationships.App.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

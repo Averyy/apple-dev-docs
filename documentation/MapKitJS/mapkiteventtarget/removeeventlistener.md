@@ -28,9 +28,9 @@ Unlike a DOM `EventTarget`, a [`MapKitEventTarget`](mapkiteventtarget.md) doesnâ
 
 ## Parameters
 
-- `type`: The type of event, for example, a  .
+- `type`: The type of event, for example, a `"configuration-change"`.
 - `listener`: The callback function to remove. Not setting this parameter removes all listeners of the specified type.
-- `thisObject`: An object MapKit JS sets as the   keyword on the   function.
+- `thisObject`: An object MapKit JS sets as the `this` keyword on the `listener` function.
 
 
 ---

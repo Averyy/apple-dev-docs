@@ -28,6 +28,10 @@ Spatial video is intended to produce a richer experience for the user. Spatial v
 
 Spatial video media is split into following categories.
 
+- **Stereo Video**: Similar to Stereo audio, which indicates different audio for the left and the right ear, visual media can be stereoscopic in which a separate view is available for the left eye and another view is available to be presented simultaneously to the right eye.
+- **Projection Video**: Rectilinear projection is default for the video media which indicates there is no further processing necessary to present the video. Content creators can opt for non rectilinear projections to preserve the artistic intent. Please refer to [`HLS specification`](https://developer.apple.comhttps://developer.apple.com/streaming/HLS-draft-pantos.pdf) for possible non-rectilinear projections. This content is categorized under Apple Projected Media Profile (APMP) and can be monoscopic or stereo.
+- **Immersive Video**: This video is projected from a hemisphere (typically a special lens) and often requires a special metadata file in order render correctly.
+
 This video relies on a special projection type, known as ‘PROJ-AIV’ which is defined outside the core HLS specification. For details, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf)
 
 > **Note**: Stereo, Immersive and stereo APMP video is only supported in visionOS. See amended requirements for visionOS.
@@ -47,7 +51,7 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 ###### Video
 
-1. 
+1. **Video encoding requirements**
 
 1.1. All video MUST be encoded using H.264/AVC, HEVC/H.265, Dolby Vision, or AV1.
 
@@ -212,7 +216,7 @@ Following table provides a possible bit rate recommendations for AIV.
 
 ###### Audio
 
-2. 
+2. **Audio encoding requirements**
 
 2.1. Audio data SHOULD be provided as an elementary audio stream or in fMP4.
 
@@ -330,7 +334,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Ads and Pre Mid Post Rolls
 
-3.  (See also the Media Playlists section of [`HTTP Live Streaming (HLS) authoring specification for Apple devices`](hls-authoring-specification-for-apple-devices.md).)
+3. **Ad requirements** (See also the Media Playlists section of [`HTTP Live Streaming (HLS) authoring specification for Apple devices`](hls-authoring-specification-for-apple-devices.md).)
 
 3.1. Your ads and other nonprimary media MAY be inserted in the Media Playlists or as Interstitials.
 
@@ -342,7 +346,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Accessibility
 
-4. 
+4. **Accessibility requirements**
 
 4.1. Captions SHOULD be provided with your streams to make content accessible to people who are deaf or hard of hearing.
 
@@ -367,7 +371,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Subtitles
 
-5. 
+5. **Subtitle requirements**
 
 5.1. Subtitles MAY be provided.
 
@@ -393,11 +397,11 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Trick Play
 
-6. 
+6. **Trick play requirements**
 
 6.1. I-frame playlists (`EXT-X-I-FRAME-STREAM-INF`) MUST be provided to support scrubbing and scanning UI.
 
-6.2. You SHOULD have one frame per second  I-frame renditions. These are dedicated renditions that only contain I-frames.
+6.2. You SHOULD have one frame per second *dense* I-frame renditions. These are dedicated renditions that only contain I-frames.
 
 6.3. Alternatively, you MAY use the I-frames from your normal content, but trick play performance is improved with a higher density of I-frames.
 
@@ -449,7 +453,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Media Segmentation
 
-7. 
+7. **Media segmentation requirements**
 
 7.1. Your media MUST be continuous across segments, with the exception of transitions for ads and other inserted material.
 
@@ -471,7 +475,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Media Playlists
 
-8. 
+8. **Media Playlist requirements**
 
 8.1. You MUST use sufficiently accurate segment durations to ensure that the sum of the `EXTINF` durations of any contiguous group of segments is within one video frame duration of the actual duration of the content.
 
@@ -525,7 +529,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Multivariant Playlist
 
-9. 
+9. **Multivariant Playlist requirements**
 
 9.1. Your `EXT-X-STREAM-INF` tag MUST always provide the `CODECS` attribute.
 
@@ -569,7 +573,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Delivery
 
-10. 
+10. **Delivery requirements**
 
 10.1. The server MUST deliver playlists using `gzip` content-encoding.
 
@@ -604,7 +608,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 > **Note**: In a future release, Apple may require delivery over TLS.
 
-11. 
+11. **Privacy requirements**
 
 11.1. Multivariant Playlists SHOULD be delivered using Transport Layer Security (TLS).
 
@@ -616,7 +620,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Security
 
-12. 
+12. **Security requirements**
 
 12.1. Transport Layer Security (TLS) MUST be version 1.2 or later with forward secrecy.
 
@@ -628,7 +632,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Content Protection
 
-13. 
+13. **Content protection requirements**
 
 13.1. Content protection of video and audio SHOULD follow the FairPlay Streaming (FPS) specification.
 
@@ -656,7 +660,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 ###### Low Latency Hls
 
-14. 
+14. **Low-Latency HLS requirements**
 
 14.1. Low-Latency stream delivery MUST meet all requirements of the Low-Latency Server Configuration Profile in Appendix B of [`draft-pantos-hls-rfc8216bis-07`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis-07) or later.
 
@@ -678,7 +682,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 > **Note**: Other requirements only apply to the playlists and media received by a single client. SharePlay adds requirements that apply to all participants in the SharePlay session.
 
-15. 
+15. **SharePlay HLS requirements**
 
 15.1. For live (linear) content, the timeline derived from the EXT-X-PROGRAM-DATE-TIME tag is used for synchronization. That timeline MUST be in agreement for all participants.
 
@@ -690,7 +694,7 @@ See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundatio
 
 > **Note**: Please see [`About spatial video`](hls-authoring-specification-for-apple-devices#About-spatial-video.md) for information regarding Spatial Video.
 
-16. 
+16. **Spatial (stereo, immersive and projected) video requirements**
 
 16.1. All variants containing spatial video MUST be marked with a REQ-VIDEO-LAYOUT attribute.
 
@@ -708,7 +712,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Video
 
-1. 
+1. **Video encoding requirements**
 
 1.3.
 
@@ -720,7 +724,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Video
 
-1. 
+1. **Video encoding requirements**
 
 1.6.
 
@@ -740,7 +744,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Multivariant Playlist
 
-9. 
+9. **Multivariant Playlist requirements**
 
 9.21. + Multivariant Playlists that are delivered over cellular networks MUST contain a variant whose peak `BANDWIDTH` is less than or equal to 192 kbit/s.
 
@@ -754,7 +758,7 @@ The following general rules regarding compatibility aren’t applicable in visio
 
 ###### Video
 
-1. 
+1. **Video encoding requirements**
 
 1.9.
 
@@ -783,7 +787,7 @@ The following general rules regarding compatibility aren’t applicable in visio
 
 ###### Trick Play
 
-6. 
+6. **Trick play requirements**
 
 6.6. If your only content is stereo video, then you SHOULD provide only one I-frame Media Playlist. (See item 6.19.)
 
@@ -793,7 +797,7 @@ The following general rules regarding compatibility aren’t applicable in visio
 
 ###### Spatial Stereo Immersive and Projected Video
 
-16. 
+16. **Spatial (stereo, immersive and projected) video requirements**
 
 16.6. + All Stereo (including APMP) video MUST be encoded using MV-HEVC.
 
@@ -805,7 +809,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Video
 
-1. 
+1. **Video encoding requirements**
 
 1.3.
 
@@ -823,19 +827,19 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Trick Play
 
-6. 
+6. **Trick play requirements**
 
 6.16. SDR trick play streams MUST be provided.
 
 ###### Media Playlists
 
-8. 
+8. **Media Playlist requirements**
 
 8.12. You SHOULD provide at least 120 minutes of content in a live (linear) playlist.
 
 ###### Multivariant Playlist
 
-9. 
+9. **Multivariant Playlist requirements**
 
 9.20. + You MUST have no audio-only variants listed in the Multivariant Playlist.
 
@@ -843,11 +847,11 @@ All general rules apply except as expressly modified by a rule with the same num
 
 All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
 
-> **Note**: AirPlay on older third-party TVs does  support the Sample Group Description Box (`'sgpd'`) and Sample to Group Box (`'sbgp'`) for encrypted content. You must remove them from encrypted CMAF content to enable playback.
+> **Note**: AirPlay on older third-party TVs does *not* support the Sample Group Description Box (`'sgpd'`) and Sample to Group Box (`'sbgp'`) for encrypted content. You must remove them from encrypted CMAF content to enable playback.
 
 ###### Video
 
-1. 
+1. **Video encoding requirements**
 
 1.23. If multiple video streams are provided (H.264, HEVC, HDR), each stream MUST provide all anticipated bandwidths.
 
@@ -855,31 +859,31 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Audio
 
-2. 
+2. **Audio encoding requirements**
 
 2.10. Channel layout SHOULD NOT change within a stream.
 
 ###### Ads and Pre Mid Post Rolls
 
-3. 
+3. **Ad requirements**
 
 3.5. + Inserted media SHOULD be at a similar frame rate (x, 2x, x/2) as the other content in the Media Playlist.
 
 ###### Subtitles
 
-5. 
+5. **Subtitle requirements**
 
 5.2. Subtitles MUST be WebVTT.
 
 ###### Trick Play
 
-6. 
+6. **Trick play requirements**
 
 6.13. If a normal video variant uses a video codec, one or more I-frame variants MUST exist with the same video codec or the `mjpg` codec.
 
 ###### Media Playlists
 
-8. 
+8. **Media Playlist requirements**
 
 8.16. You SHOULD NOT switch codecs at discontinuities. For example, don’t switch between HEVC and H.264, or between AAC and Dolby Digital.
 
@@ -889,7 +893,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 ###### Multivariant Playlist
 
-9. 
+9. **Multivariant Playlist requirements**
 
 9.23. + You SHOULD provide a full range of variants for each codec type and frame rate. Similar frame rates (x, 2x, x/2) are compatible, nonsimilar frame rates may cause playback issues.
 

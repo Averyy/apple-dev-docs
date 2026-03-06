@@ -5,6 +5,14 @@
 
 Delete a bundle ID that is used for app development.
 
+## Endpoint
+
+`DELETE https://api.enterprise.developer.apple.com/v1/bundleIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Modify a PassTypeId](modify-a-bundleid.md)

@@ -20,7 +20,7 @@ This project requires an iPhone or iPad running at least iOS 15 or iPadOS 15. It
 
 ## See Also
 
-- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
+- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
 - [class Entity](entity.md)
   An element of a RealityKit scene to which you attach components that provide appearance and behavior characteristics for the entity.

@@ -17,6 +17,10 @@ object DiagnosticSignature.Relationships
 ### Dictionaries
 - [object DiagnosticSignature.Relationships.Logs](diagnosticsignature/relationships-data.dictionary/logs-data.dictionary.md)
 
+## Properties
+
+- `logs` (DiagnosticSignature.Relationships.Logs)
+
 
 ---
 

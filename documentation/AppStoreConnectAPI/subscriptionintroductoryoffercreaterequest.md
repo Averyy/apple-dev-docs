@@ -17,6 +17,11 @@ object SubscriptionIntroductoryOfferCreateRequest
 ### Objects
 - [object SubscriptionIntroductoryOfferCreateRequest.Data](subscriptionintroductoryoffercreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionIntroductoryOfferCreateRequest.Data) *(required)*
+- `included` ([SubscriptionPricePointInlineCreate])
+
 ## See Also
 
 - [object SubscriptionIntroductoryOfferInlineCreate](subscriptionintroductoryofferinlinecreate.md)

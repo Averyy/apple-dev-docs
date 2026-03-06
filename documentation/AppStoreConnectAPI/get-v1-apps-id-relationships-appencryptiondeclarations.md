@@ -8,6 +8,14 @@ Find and list all available app encryption declaration IDs for a specific app.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/appEncryptionDeclarations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List App Encryption Declarations](get-v1-appencryptiondeclarations.md)

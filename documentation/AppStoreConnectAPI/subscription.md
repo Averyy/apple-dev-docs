@@ -18,6 +18,14 @@ object Subscription
 - [object Subscription.Attributes](subscription/attributes-data.dictionary.md)
 - [object Subscription.Relationships](subscription/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Subscription.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (Subscription.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

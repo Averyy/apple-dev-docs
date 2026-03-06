@@ -6,13 +6,18 @@
 An error that indicates the start date is earlier than the earliest allowed date.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object StartDateTooFarInPastError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

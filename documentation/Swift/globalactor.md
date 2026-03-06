@@ -30,7 +30,7 @@ A global actor uses a custom executor if it needs to customize its execution sem
 
 This is done the same way as with normal non-global actors, by declaring a [`unownedExecutor`](actor/unownedexecutor.md) nonisolated property in the [`ActorType`](globalactor/actortype.md) underlying this global actor.
 
-It is  necessary to override the [`sharedUnownedExecutor`](globalactor/sharedunownedexecutor.md) static property of the global actor, as its default implementation already delegates to the `shared.unownedExecutor`, which is the most reasonable and correct implementation of this protocol requirement.
+It is *not* necessary to override the [`sharedUnownedExecutor`](globalactor/sharedunownedexecutor.md) static property of the global actor, as its default implementation already delegates to the `shared.unownedExecutor`, which is the most reasonable and correct implementation of this protocol requirement.
 
 You can find out more about custom executors, by referring to the [`SerialExecutor`](serialexecutor.md) protocol’s documentation.
 

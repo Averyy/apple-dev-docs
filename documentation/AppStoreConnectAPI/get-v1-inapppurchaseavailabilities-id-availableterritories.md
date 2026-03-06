@@ -12,6 +12,47 @@ List all the territories where an in-app purchase is available.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593/availableTerritories
+```
+
+**Response**:
+
+```json
+{
+  "data" : [ {
+    "type" : "territories",
+    "id" : "ISL",
+    "attributes" : {
+      "currency" : "USD"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/territories/ISL"
+    }
+  } ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593/availableTerritories"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 1,
+      "limit" : 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/{id}/availableTerritories`
+
+## Parameters
+
+- `fields[territories]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read information about the Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)

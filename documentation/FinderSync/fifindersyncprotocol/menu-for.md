@@ -28,7 +28,7 @@ The extension’s principal object provides a method for each menu item’s assi
 
 ## Parameters
 
-- `menu`: The type of menu being displayed. For a list of possible values, see  .
+- `menu`: The type of menu being displayed. For a list of possible values, see [`FIMenuKind`](fimenukind.md).
 
 ## See Also
 

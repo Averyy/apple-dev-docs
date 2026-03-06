@@ -20,6 +20,10 @@ object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocati
 - [object BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations.Data](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary/data-data.dictionary.md)
   The type and ID of the Beta App Clip Invocation Localizations resource that you’re relating with the Beta App Clip Invocations resource you’re creating.
 
+## Properties
+
+- `data` ([BetaAppClipInvocationCreateRequest.Data.Relationships.BetaAppClipInvocationLocalizations.Data]) *(required)*: The ID and type of the related Beta App Clip Invocation Localizations resource.
+
 ## See Also
 
 - [object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle](betaappclipinvocationcreaterequest/data-data.dictionary/relationships-data.dictionary/buildbundle-data.dictionary.md)

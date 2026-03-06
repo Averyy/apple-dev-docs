@@ -12,6 +12,12 @@
 object CertificatesWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([Certificate]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Certificate](certificate.md)

@@ -20,6 +20,10 @@ object SearchResponse
 - [object SearchResponse.Results](searchresponse/results-data.dictionary.md)
   An object that represents the results of a catalog search query.
 
+## Properties
+
+- `results` (SearchResponse.Results) *(required)*: The results included in the response to a search request.
+
 ## See Also
 
 - [object SearchHintsResponse](searchhintsresponse.md)

@@ -24,7 +24,7 @@ protocol CustomDebugStringConvertible
 
 Swift provides a default debugging textual representation for any type. That default representation is used by the `String(reflecting:)` initializer and the `debugPrint(_:)` function for types that don’t provide their own. To customize that representation, make your type conform to the `CustomDebugStringConvertible` protocol.
 
-Because the `String(reflecting:)` initializer works for instances of  type, returning an instance’s `debugDescription` if the value passed conforms to `CustomDebugStringConvertible`, accessing a type’s `debugDescription` property directly or using `CustomDebugStringConvertible` as a generic constraint is discouraged.
+Because the `String(reflecting:)` initializer works for instances of *any* type, returning an instance’s `debugDescription` if the value passed conforms to `CustomDebugStringConvertible`, accessing a type’s `debugDescription` property directly or using `CustomDebugStringConvertible` as a generic constraint is discouraged.
 
 > **Note**: Calling the `dump(_:_:_:_:)` function and printing in the debugger uses both `String(reflecting:)` and `Mirror(reflecting:)` to collect information about an instance. If you implement `CustomDebugStringConvertible` conformance for your custom type, you may want to consider providing a custom mirror by implementing `CustomReflectable` conformance, as well.
 

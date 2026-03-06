@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/{id}/relationships/appPreviewSets`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All App Preview Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)

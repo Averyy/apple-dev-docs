@@ -8,6 +8,17 @@ Get details about a custom code for a specific subscription offer for an auto-re
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}/customCodes`
+
+## Parameters
+
+- `fields[subscriptionOfferCodeCustomCodes]` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create Custom Offer Codes](post-v1-subscriptionoffercodecustomcodes.md)

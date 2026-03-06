@@ -25,9 +25,9 @@ func withThrowingDiscardingTaskGroup<GroupResult>(returning returnType: GroupRes
 
 Unlike a [`ThrowingTaskGroup`](throwingtaskgroup.md), the child tasks as well as their results are discarded as soon as the tasks complete. This prevents the discarding task group from accumulating many results waiting to be consumed, and is best applied in situations where the result of a child task is some form of side-effect.
 
-A group  waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
+A group *always* waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
-It is not possible to explicitly await completion of child-tasks, however the group will automatically await  child task completions before returning from this function:
+It is not possible to explicitly await completion of child-tasks, however the group will automatically await *all* child task completions before returning from this function:
 
 ```swift
 try await withThrowingDiscardingTaskGroup(of: Void.self) { group in
@@ -57,9 +57,9 @@ try await withThrowingTaskGroup(of: Void.self) { group in
 }
 ```
 
-Since discarding task groups don’t have access to `next()`, this pattern cannot be used. Instead, a .
+Since discarding task groups don’t have access to `next()`, this pattern cannot be used. Instead, a *throwing discarding task group implicitly cancels itself whenever any of its child tasks throws*.
 
-The  thrown inside such task group is then retained and thrown out of the `withThrowingDiscardingTaskGroup` method when it returns.
+The *first error* thrown inside such task group is then retained and thrown out of the `withThrowingDiscardingTaskGroup` method when it returns.
 
 ```swift
 try await withThrowingDiscardingTaskGroup { group in

@@ -21,6 +21,9 @@ Use the tv-theme query to change the appearance of a template based on the theme
 
 ##### Values for Tv Theme
 
+- **`dark`**: The theme being tested for is dark.
+- **`light`**: The theme being tested for is light.
+
 ## See Also
 
 - [layout-direction](layout-direction.md)

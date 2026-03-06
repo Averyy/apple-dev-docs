@@ -18,6 +18,40 @@ Get the alternative distribution keys for a specific app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/6473805491/alternativeDistributionKey
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “alternativeDistributionKeys”,
+    “id” : “52c5cb04-1163-4a30-ad4f-a3433cd6a4f6”,
+    “attributes” : {
+      “publicKey” : “-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7rsxeCw+hrwRgStk0J2vYmnGQZha\ngSt0fm511aTjpDVsaIy9z7jmUKjJ1jgb8P5UKmQfmw0ovD+fNTSefjrw5A==\n-----END PUBLIC KEY-----\n”
+    },
+    “links” : {
+      “self” : “https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6”
+    }
+  },
+  “links” : {
+    “self” : “https://api.appstoreconnect.apple.com/v1/apps/6473805491/alternativeDistributionKey”
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/alternativeDistributionKey`
+
+## Parameters
+
+- `fields[alternativeDistributionKeys]` ([string])
+
 ## See Also
 
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)

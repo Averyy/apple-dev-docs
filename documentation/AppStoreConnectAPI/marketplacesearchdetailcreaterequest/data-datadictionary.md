@@ -18,6 +18,12 @@ object MarketplaceSearchDetailCreateRequest.Data
 - [object MarketplaceSearchDetailCreateRequest.Data.Attributes](marketplacesearchdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object MarketplaceSearchDetailCreateRequest.Data.Relationships](marketplacesearchdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (MarketplaceSearchDetailCreateRequest.Data.Attributes) *(required)*
+- `relationships` (MarketplaceSearchDetailCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

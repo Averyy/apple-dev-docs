@@ -14,6 +14,11 @@ A response that contains a single Beta Tester Invitations resource.
 object BetaTesterInvitationResponse
 ```
 
+## Properties
+
+- `data` (BetaTesterInvitation) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [Send an Invitation to a Beta Tester](post-v1-betatesterinvitations.md)

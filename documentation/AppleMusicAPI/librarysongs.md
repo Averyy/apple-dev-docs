@@ -22,6 +22,14 @@ object LibrarySongs
 - [object LibrarySongs.Relationships](librarysongs/relationships-data.dictionary.md)
   The relationships for a library song resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the library song.
+- `type` (string) *(required)*: This value is always `library-songs`.
+- `href` (string) *(required)*: The relative location for the library song resource.
+- `attributes` (LibrarySongs.Attributes): The attributes for the library song.
+- `relationships` (LibrarySongs.Relationships): The relationships for the library song.
+
 ## See Also
 
 - [object Songs](songs.md)

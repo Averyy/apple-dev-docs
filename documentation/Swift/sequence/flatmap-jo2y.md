@@ -42,11 +42,11 @@ let flatMapped = numbers.flatMap { Array(repeating: $0, count: $0) }
 
 In fact, `s.flatMap(transform)`  is equivalent to `Array(s.map(transform).joined())`.
 
-> **Note**: O( + ), where  is the length of this sequence and  is the length of the result.
+> **Note**: O(*m* + *n*), where *n* is the length of this sequence and *m* is the length of the result.
 
 ## Parameters
 
-- `transform`: A closure that accepts an element of this   sequence as its argument and returns a sequence or collection.
+- `transform`: A closure that accepts an element of this sequence as its argument and returns a sequence or collection.
 
 ## See Also
 

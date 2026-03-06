@@ -31,7 +31,7 @@ The buffer pointer argument to the `body` closure provides a collection interfac
 ## Parameters
 
 - `value`: An instance to temporarily access through a raw buffer pointer.
-- `body`: A closure that takes a raw buffer pointer to the bytes of    as its sole argument. If the closure has a return value, that value is   also used as the return value of the    function. The buffer pointer argument is valid only for the duration   of the closure’s execution. It is undefined behavior to attempt to   mutate through the pointer by conversion to    or any other mutable pointer type.   If you want to mutate a value by writing through a pointer, use    instead.
+- `body`: A closure that takes a raw buffer pointer to the bytes of `value` as its sole argument. If the closure has a return value, that value is also used as the return value of the `withUnsafeBytes(of:_:)` function. The buffer pointer argument is valid only for the duration of the closure’s execution. It is undefined behavior to attempt to mutate through the pointer by conversion to `UnsafeMutableRawBufferPointer` or any other mutable pointer type. If you want to mutate a value by writing through a pointer, use `withUnsafeMutableBytes(of:_:)` instead.
 
 ## See Also
 

@@ -14,6 +14,12 @@ A response that contains a single Beta App Clip Invocations resource.
 object BetaAppClipInvocationResponse
 ```
 
+## Properties
+
+- `data` (BetaAppClipInvocation) *(required)*: The resource data.
+- `included` ([BetaAppClipInvocationLocalization]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object BetaAppClipInvocation](betaappclipinvocation.md)

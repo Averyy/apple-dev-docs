@@ -11,6 +11,11 @@ Attributes that describe a Bundle ID Capabilities resource.
 object BundleIdCapability.Attributes
 ```
 
+## Properties
+
+- `capabilityType` (CapabilityType)
+- `settings` ([CapabilitySetting])
+
 
 ---
 

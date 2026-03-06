@@ -12,6 +12,12 @@
 object SubscriptionIntroductoryOfferResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionIntroductoryOffer) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionIntroductoryOfferCreateRequest](subscriptionintroductoryoffercreaterequest.md)

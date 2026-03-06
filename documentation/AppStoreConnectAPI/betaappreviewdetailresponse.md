@@ -14,6 +14,12 @@ A response that contains a single Beta App Review Details resource.
 object BetaAppReviewDetailResponse
 ```
 
+## Properties
+
+- `data` (BetaAppReviewDetail) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([App])
+
 ## See Also
 
 - [Read the Beta App Review Details Resource of an App](get-v1-apps-_id_-betaappreviewdetail.md)

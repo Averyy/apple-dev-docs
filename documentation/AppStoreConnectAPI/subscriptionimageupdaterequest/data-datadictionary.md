@@ -20,6 +20,12 @@ object SubscriptionImageUpdateRequest.Data
 - [object SubscriptionImageUpdateRequest.Data.Attributes](subscriptionimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription image request resource.
 
+## Properties
+
+- `attributes` (SubscriptionImageUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List subscription images`](get-v1-subscriptions-_id_-images.md) response.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -30,6 +30,15 @@ The `data` needs to be a merchant token usage information package encrypted to t
 
 The `merchantPrivateKey` needs to correspond to the `merchantPublicKey` provided in the merchant token usage information availability notification. The `info` parameter needs to be the UTF-8 bytes of `ApplePayMerchantTokenUsageInformation_1.0` concatenated with the SHA-256 digest (in bytes) of the `merchantTokenIdentifier` (encoded using UTF-8). For the `ciphersuite`, use the `supportedCiphersuite` returned by Apple in the [`Retrieve Merchant Token Public Key`](retrieve-merchant-token-public-key.md).
 
+## Properties
+
+- `ciphersuite` (string) *(required)*: The cipher suite used for HPKE in authorization mode. Use the value sent as `supportedCiphersuite` in the `Retrieve MerchantToken PublicKey API` response.
+- `data` (string) *(required)*: The encrypted merchant token usage information package.
+- `ephemeralPublicKey` (string) *(required)*: The ephemeral public key in X9.63 representation, Base64-encoded.
+- `infoHash` (string) *(required)*: A SHA-256 digest of the `info`, hex-encoded.
+- `merchantPublicKeyHash` (string) *(required)*: An SHA-256 digest of the `merchantPublicKey`, hex-encoded.
+- `merchantTokenPublicKeyHash` (string) *(required)*: An SHA-256 digest of the `merchantTokenPublicKey`, hex-encoded.
+
 ## See Also
 
 - [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)

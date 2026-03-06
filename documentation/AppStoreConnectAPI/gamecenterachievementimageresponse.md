@@ -14,6 +14,12 @@ A response that contains a single achievement image resource.
 object GameCenterAchievementImageResponse
 ```
 
+## Properties
+
+- `data` (GameCenterAchievementImage) *(required)*
+- `included` ([GameCenterAchievementLocalization])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageV2](gamecenterachievementimagev2.md)

@@ -26,7 +26,12 @@ See [`Modifying Subscriptions (subscriptions/modify)`](https://developer.apple.c
 
 ## Parameters
 
-- `subscriptions`: Possible values are:
+- `subscriptions`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.Subscription`](cloudkit.subscription.md) | A subscription in the database to delete. |
+| `CloudKit.Subscription[]` | An array of subscriptions to delete. |
+| `String` | The ID of a subscription to delete. |
+| `String[]` | An array of IDs of the subscriptions to delete. |
 
 ## See Also
 

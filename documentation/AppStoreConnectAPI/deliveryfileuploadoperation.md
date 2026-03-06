@@ -14,6 +14,17 @@ The data structure that represents a delivery file upload operation resource.
 object DeliveryFileUploadOperation
 ```
 
+## Properties
+
+- `entityTag` (string)
+- `expiration` (date-time)
+- `length` (int64)
+- `method` (string)
+- `offset` (int64)
+- `partNumber` (int64)
+- `requestHeaders` ([HttpHeader])
+- `url` (string)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

@@ -29,7 +29,7 @@ If `cString` contains ill-formed UTF-8 code unit sequences, this initializer rep
 
 ## Parameters
 
-- `nullTerminatedUTF8`:    An array containing a null-terminated sequence of UTF-8 code units.
+- `nullTerminatedUTF8`:  An array containing a null-terminated sequence of UTF-8 code units.
 
 
 ---

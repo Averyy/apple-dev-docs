@@ -8,6 +8,14 @@ Update the name and app icon name for a specific App Store version experiment.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersionExperimentTreatments/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)

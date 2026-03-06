@@ -20,6 +20,14 @@ object GameCenterAchievementRelease
 - [object GameCenterAchievementRelease.Attributes](gamecenterachievementrelease/attributes-data.dictionary.md)
 - [object GameCenterAchievementRelease.Relationships](gamecenterachievementrelease/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementRelease.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterAchievementRelease.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementReleaseCreateRequest](gamecenterachievementreleasecreaterequest.md)

@@ -16,6 +16,12 @@ A geographic location.
 object Location
 ```
 
+## Properties
+
+- `altitude` (number): The altitude above mean sea level, measured in meters.
+- `latitude` (number) *(required)*: The latitude of the location.
+- `longitude` (number) *(required)*: The longitude of the location.
+
 ## See Also
 
 - [object Customer](customer.md)

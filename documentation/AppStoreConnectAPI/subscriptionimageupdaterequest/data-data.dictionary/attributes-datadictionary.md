@@ -14,6 +14,11 @@ Attributes that describe a subscription image request resource.
 object SubscriptionImageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string)
+- `uploaded` (boolean)
+
 
 ---
 

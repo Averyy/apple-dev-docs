@@ -20,6 +20,10 @@ object BetaAppClipInvocationUpdateRequest
 - [object BetaAppClipInvocationUpdateRequest.Data](betaappclipinvocationupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaAppClipInvocationUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaAppClipInvocation](betaappclipinvocation.md)

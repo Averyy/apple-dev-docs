@@ -22,6 +22,12 @@ object AppScreenshotSetCreateRequest.Data.Relationships
 - [object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
 - [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
 
+## Properties
+
+- `appStoreVersionLocalization` (AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionLocalization)
+- `appCustomProductPageLocalization` (AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization)
+- `appStoreVersionExperimentTreatmentLocalization` (AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization)
+
 ## See Also
 
 - [object AppScreenshotSetCreateRequest.Data.Attributes](appscreenshotsetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

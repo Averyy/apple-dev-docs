@@ -21,6 +21,14 @@ App transaction information represents the customer’s purchase of the app, cry
 
 App transaction information includes details about the app the customer purchased, such as its bundleID, original version, original purchase date, and more. You can also get app transaction information in your app from StoreKit, using [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction).
 
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/appTransactions/{transactionId}`
+
+## Parameters
+
+- `transactionId` (transactionId) *(required)*: Any [`originalTransactionId`](originaltransactionid.md), [`transactionId`](transactionid.md) or [`appTransactionId`](apptransactionid.md) that belongs to the customer for your app.
+
 ## See Also
 
 - [object AppTransactionInfoResponse](apptransactioninforesponse.md)

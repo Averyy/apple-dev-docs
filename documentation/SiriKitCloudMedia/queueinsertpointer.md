@@ -14,6 +14,11 @@ Instructions for editing the current playback queue.
 object QueueInsertPointer
 ```
 
+## Properties
+
+- `afterIdentifier` (ContentIdentifier): The client inserts the new queue segment after the content with this identifier.
+- `replace` (boolean): If this value is `true`, the client discards all of the current queue’s content after the item that `afterIdentifier` specifies.
+
 ## See Also
 
 - [object Queue](queue.md)

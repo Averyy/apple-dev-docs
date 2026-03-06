@@ -14,6 +14,13 @@ A description of a rental vehicle.
 object Car
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `brand` (Brand): The brand of the car.
+- `model` (string): The model of the car.
+- `name` (string) *(required)*: The rental tier or other information about the car.
+
 ## See Also
 
 - [object Brand](brand.md)

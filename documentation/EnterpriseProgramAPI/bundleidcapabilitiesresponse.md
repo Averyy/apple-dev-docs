@@ -11,6 +11,12 @@ A response that contains a list of Bundle ID Capability resources.
 object BundleIdCapabilitiesResponse
 ```
 
+## Properties
+
+- `data` ([BundleIdCapability]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

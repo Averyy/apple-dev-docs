@@ -17,6 +17,10 @@ object SandboxTesterV2UpdateRequest
 ### Objects
 - [object SandboxTesterV2UpdateRequest.Data](sandboxtesterv2updaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SandboxTesterV2UpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SandboxTesterV2Response](sandboxtesterv2response.md)

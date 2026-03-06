@@ -20,6 +20,12 @@ object WinBackOffer.Relationships.Prices
 - [object WinBackOffer.Relationships.Prices.Data](winbackoffer/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([WinBackOffer.Relationships.Prices.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

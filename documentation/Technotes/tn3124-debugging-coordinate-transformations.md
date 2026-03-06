@@ -121,7 +121,7 @@ Visualizing an origin could be all that is necessary to realize where the error 
 
 Sometimes an API requires inputs that are already in a particular coordinate space. Otherwise its output is invalid.
 
-Consider the `UIView` method, [`hitTest(_:with:)`](https://developer.apple.com/documentation/UIKit/UIView/hitTest(_:with:)). This method accepts a `CGPoint` as input, and uses it to perform a hit-test on the view. The problem here is that its results aren’t valid for  `CGPoint`, you must provide a `CGPoint` in the view’s local coordinate space to get a valid result.
+Consider the `UIView` method, [`hitTest(_:with:)`](https://developer.apple.com/documentation/UIKit/UIView/hitTest(_:with:)). This method accepts a `CGPoint` as input, and uses it to perform a hit-test on the view. The problem here is that its results aren’t valid for *any* `CGPoint`, you must provide a `CGPoint` in the view’s local coordinate space to get a valid result.
 
 When you have results that don’t make sense, it is a good idea to evaluate the APIs you are using to produce the results, and verify that you have provided inputs to them in the coordinate spaces they are expecting.
 
@@ -137,7 +137,7 @@ Being consistent with the data you feed through a coordinate conversion pipeline
 
 Logging the transform and bounding box of a visual element is a simple but effective debugging technique.
 
-Consider a scenario where your app is inserting a 3D model into a scene, but you don’t see the 3D model where you expected to see it. By logging the transform and bounding box of the model, you discover that the scale and the bounding box of the model is very large. This is a very good indication that the model is so large that the current viewpoint of the 3D scene is  of the model. You remedy the situation by setting the model’s scale factor to a smaller value.
+Consider a scenario where your app is inserting a 3D model into a scene, but you don’t see the 3D model where you expected to see it. By logging the transform and bounding box of the model, you discover that the scale and the bounding box of the model is very large. This is a very good indication that the model is so large that the current viewpoint of the 3D scene is *inside* of the model. You remedy the situation by setting the model’s scale factor to a smaller value.
 
 ## See Also
 

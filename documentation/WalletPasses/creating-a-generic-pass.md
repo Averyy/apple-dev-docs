@@ -12,7 +12,7 @@ The generic pass style is for passes that don’t fit into the boarding, coupon,
 
 #### Create Your Pass Type Identifier
 
-Signing a pass requires a signing certificate for the , which is similar to a bundle identifier, or a class name. The value for the `passTypeIdentifier` key specifies the pass type identifier. You choose a string to define a class or category of passes; the string always begins with `pass`, and uses reverse DNS style—for example, `pass.com.example.membership-card`. Create your pass type identifier in the [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources) area of your Apple Developer account. The pass type identifier must match the certificate used to sign the pass. For more information on creating Wallet certificates, see [`Create Wallet identifiers and certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/).
+Signing a pass requires a signing certificate for the *pass type identifier*, which is similar to a bundle identifier, or a class name. The value for the `passTypeIdentifier` key specifies the pass type identifier. You choose a string to define a class or category of passes; the string always begins with `pass`, and uses reverse DNS style—for example, `pass.com.example.membership-card`. Create your pass type identifier in the [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources) area of your Apple Developer account. The pass type identifier must match the certificate used to sign the pass. For more information on creating Wallet certificates, see [`Create Wallet identifiers and certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/).
 
 Use a serial number to identify the pass uniquely within the scope of its pass type. The value for the `serialNumber` key in the pass specifies the serial number. You can assign a serial number in whatever way makes sense to you, such as by using an increasing integer or a UUID.
 
@@ -40,7 +40,7 @@ The following example shows a partial generic pass with top-level keys.
 
 The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following images shows options for the layout and placement of fields for the generic pass style.
 
-The following images show the different layout options for a generic pass. Layout one has a separate  and  section with a rectangular barcode. Layout two shows a combined  and  section with a square barcode.
+The following images show the different layout options for a generic pass. Layout one has a separate *secondary* and *auxiliary* section with a rectangular barcode. Layout two shows a combined *secondary* and *auxiliary* section with a square barcode.
 
 | Generic pass layout 1 | Generic pass layout 2 |
 | --- | --- |

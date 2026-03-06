@@ -45,7 +45,7 @@ for await notification in await manager.monitorNotifications(matchingCriteria: [
 
 ## Parameters
 
-- `matchingCriteria`: A set of   for matching devices connected to the system. Criteria are considered separately, if one set is specified that matches one device, with a second set that matches five other devices, all six devices are matched. Matched devices result in a   notification. Matched devices are ready for connections using   until a   notification is received for the device.
+- `matchingCriteria`: A set of [`HIDDeviceManager.DeviceMatchingCriteria`](hiddevicemanager/devicematchingcriteria.md) for matching devices connected to the system. Criteria are considered separately, if one set is specified that matches one device, with a second set that matches five other devices, all six devices are matched. Matched devices result in a [`HIDDeviceManager.Notification.deviceMatched(_:)`](hiddevicemanager/notification/devicematched(_:).md) notification. Matched devices are ready for connections using [`HIDDeviceClient`](hiddeviceclient.md) until a [`HIDDeviceManager.Notification.deviceRemoved(_:)`](hiddevicemanager/notification/deviceremoved(_:).md) notification is received for the device.
 
 ## See Also
 

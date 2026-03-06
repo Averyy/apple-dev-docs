@@ -12,6 +12,10 @@ Create a subscription group submission for review.
 
 - [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionGroupSubmissions`
+
 ## See Also
 
 - [Create a Review Submission for a Subscription](post-v1-subscriptionsubmissions.md)

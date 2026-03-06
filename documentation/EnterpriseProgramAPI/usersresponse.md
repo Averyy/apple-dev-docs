@@ -11,6 +11,12 @@ A response that contains a list of Users resources.
 object UsersResponse
 ```
 
+## Properties
+
+- `data` ([User]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [object User](user.md)

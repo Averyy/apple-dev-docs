@@ -10,6 +10,12 @@ Use the `tv-transition` style to apply a transition effect to an element.
 
 ##### Values for Tv Transition
 
+- **`dissolve`**: The element stays in place and uses a dissolve effect.
+- **`magicMove`**: The element uses the magic move transition. When the user swipes to the left, the current image shrinks slightly, and a new image is brought on top of it from the right. When the user swipes to the right, the image slides off screen to the right. This action reveals the next image, which then grows to fill the screen.
+- **`none`**: No transition effect is applied to the element.
+- **`push`**: The element is pushed onto the screen.
+- **`wipe`**: The element is wiped from the screen.
+
 ##### Elements That Use Tv Transition
 
 - [`oneupTemplate`](oneuptemplate.md)

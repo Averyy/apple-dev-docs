@@ -12,6 +12,13 @@
 object BetaFeedbackScreenshotImage
 ```
 
+## Properties
+
+- `expirationDate` (date-time)
+- `height` (integer)
+- `url` (string)
+- `width` (integer)
+
 ## See Also
 
 - [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)

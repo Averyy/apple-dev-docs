@@ -6,7 +6,7 @@
 An error that indicates an invalid request identifier.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -19,6 +19,11 @@ object InvalidRequestIdentifierError
 This error applies to the [`requestIdentifier`](requestidentifier.md) you provide in the [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md), [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md), and [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) endpoints.
 
 For the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) and [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) endpoints, the [`requestIdentifier`](requestidentifier.md) needs to be a `UUID`.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

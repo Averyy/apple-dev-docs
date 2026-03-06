@@ -19,6 +19,12 @@ object GameCenterChallengeLocalizationCreateRequest.Data
   Attributes that describe a challenge resource.
 - [object GameCenterChallengeLocalizationCreateRequest.Data.Relationships](gamecenterchallengelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterChallengeLocalizationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterChallengeLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -17,6 +17,10 @@ For more information about alternative app marketplaces, see [`MarketplaceKit`](
 
 To facilitate generating licenses, create the following App License Delivery (ALD) assets in [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources):
 
+- **Encryption certificate**: Decrypts license requests that a device sends to your licensing endpoint.
+- **Signing certificate**: Signs licenses you create and verifies their authenticity on device.
+- **PASK**: A secret that secures the transport of app key blobs.
+
 For more information about generating these assets, see [`Create app license delivery certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/create-certificates/create-app-license-delivery-certificates).
 
 > ❗ **Important**: Secure your PASK secret as you do other credentials, such as private keys and passwords. Don’t share your PASK secret, store secrets in a code repository, or include secrets in client or server code.

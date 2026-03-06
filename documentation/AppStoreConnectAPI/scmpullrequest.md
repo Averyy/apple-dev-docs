@@ -22,6 +22,14 @@ object ScmPullRequest
 - [object ScmPullRequest.Relationships](scmpullrequest/relationships-data.dictionary.md)
   The relationships of the Pull Requests resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (ScmPullRequest.Attributes): The attributes that describe the Pull Requests resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Pull Request resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (ScmPullRequest.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object ScmPullRequestResponse](scmpullrequestresponse.md)

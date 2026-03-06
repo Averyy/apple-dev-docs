@@ -17,6 +17,12 @@ object AppCustomProductPageLocalization.Relationships.AppScreenshotSets
 ### Dictionaries
 - [object AppCustomProductPageLocalization.Relationships.AppScreenshotSets.Data](appcustomproductpagelocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalization.Relationships.AppScreenshotSets.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion](appcustomproductpagelocalization/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)

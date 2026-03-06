@@ -22,7 +22,7 @@ subscript(i: Int) -> UnsafeMutableRawBufferPointer.Element { get nonmutating set
 
 ## Parameters
 
-- `i`: The offset of the byte to access.   must be in the range   .
+- `i`: The offset of the byte to access. `i` must be in the range `0..<count`.
 
 
 ---

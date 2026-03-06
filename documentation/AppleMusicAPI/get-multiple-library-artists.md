@@ -16,6 +16,40 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library/artists?ids=r.y8mMT7t
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "id": "r.y8mMT7t",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.y8mMT7t",
+            "attributes": {
+                "name": "Orville Peck"
+            }
+        }
+    ]
+}
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/me/library/artists`
+
+## Parameters
+
+- `ids` ([string]) *(required)*: The unique identifiers for the artists. The maximum fetch limit is 25.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `include` ([string]): Additional relationships to include in the fetch.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object LibraryArtists](libraryartists.md)

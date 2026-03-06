@@ -12,6 +12,48 @@ Get the custom end user license agreement (EULA) for a specific app and the terr
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/1000001234/endUserLicenseAgreement
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "endUserLicenseAgreements",
+    "id": "d187a413-70fb-45c7-ae43-12345ea0d40",
+    "attributes": {
+      "agreementText": "This is the agreement. It is vital you read it."
+    },
+    "relationships": {
+      "territories": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/d187a413-70fb-45c7-ae43-12345ea0d40/relationships/territories",
+          "related": "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/d187a413-70fb-45c7-ae43-12345ea0d40/territories"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/d187a413-70fb-45c7-ae43-12345ea0d40"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/apps/1000001234/endUserLicenseAgreement"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/endUserLicenseAgreement`
+
+## Parameters
+
+- `fields[endUserLicenseAgreements]` ([string])
+
 ## See Also
 
 - [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)

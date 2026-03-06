@@ -17,6 +17,12 @@ object Subscription.Relationships.Images
 ### Dictionaries
 - [object Subscription.Relationships.Images.Data](subscription/relationships-data.dictionary/images-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Subscription.Relationships.Images.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

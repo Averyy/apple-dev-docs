@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaFeedbackCrashSubmissions/{id}/relationships/crashLog`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List all beta feedback crash submissions for an app](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)

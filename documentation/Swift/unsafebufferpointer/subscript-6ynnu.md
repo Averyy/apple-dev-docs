@@ -42,7 +42,7 @@ streets.withUnsafeBufferPointer { buffer in
 
 ## Parameters
 
-- `bounds`: A range of the buffer’s indices. The bounds of   the range must be valid indices of the buffer.
+- `bounds`: A range of the buffer’s indices. The bounds of the range must be valid indices of the buffer.
 
 
 ---

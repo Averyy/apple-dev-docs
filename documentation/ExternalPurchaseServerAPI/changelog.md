@@ -10,11 +10,15 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 #### 120 20250626
 
+**New features**
+
 - Added support for new custom link token types, `ACQUISITION` and `SERVICES`.
 - Added DUPLICATE_TOKEN possible value in [`status`](status.md) and [`ExternalPurchaseReport`](externalpurchasereport.md) objects.
 - Added errors [`LineItemCreationDateOutOfRangeError`](lineitemcreationdateoutofrangeerror.md) and [`DuplicateTokenStatusNotAllowedError`](duplicatetokenstatusnotallowederror.md).
 
 #### 110 20250414
+
+**New features**
 
 - Added errors [`RestatementCreationDateMismatchError`](restatementcreationdatemismatcherror.md), [`RestatementNotAllowedCreationDateError`](restatementnotallowedcreationdateerror.md), and [`RefundNotAllowedCreationDateError`](refundnotallowedcreationdateerror.md).
 

@@ -20,6 +20,14 @@ Call this endpoint to delete an image. After successfully deleting the image, it
 
 This endpoint isn’t idempotent. If the system doesn’t find the image, this endpoint throws an error.
 
+## Endpoint
+
+`DELETE https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/image/{imageIdentifier}`
+
+## Parameters
+
+- `imageIdentifier` (imageIdentifier) *(required)*: The identifier of the image to delete.
+
 ## See Also
 
 - [Upload Image](upload-image.md)

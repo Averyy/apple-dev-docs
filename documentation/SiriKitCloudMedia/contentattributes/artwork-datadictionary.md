@@ -14,6 +14,10 @@ Imagery for media content, such as an album cover.
 object ContentAttributes.Artwork
 ```
 
+## Properties
+
+- `url` (string): The path to request the artwork.
+
 
 ---
 

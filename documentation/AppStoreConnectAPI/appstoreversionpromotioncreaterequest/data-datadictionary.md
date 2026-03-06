@@ -17,6 +17,11 @@ object AppStoreVersionPromotionCreateRequest.Data
 ### Objects
 - [object AppStoreVersionPromotionCreateRequest.Data.Relationships](appstoreversionpromotioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (AppStoreVersionPromotionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPromotionResponse](appstoreversionpromotionresponse.md)

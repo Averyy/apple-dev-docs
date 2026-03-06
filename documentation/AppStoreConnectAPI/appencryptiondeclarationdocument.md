@@ -20,6 +20,13 @@ object AppEncryptionDeclarationDocument
 - [object AppEncryptionDeclarationDocument.Attributes](appencryptiondeclarationdocument/attributes-data.dictionary.md)
   Attributes that describe an app encryption declaration document resource.
 
+## Properties
+
+- `attributes` (AppEncryptionDeclarationDocument.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)

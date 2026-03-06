@@ -16,6 +16,12 @@ string DataSet
 
 #### Possible Values
 
+- **currentWeather**: The current weather for the requested location.
+- **forecastDaily**: The daily forecast for the requested location.
+- **forecastHourly**: The hourly forecast for the requested location.
+- **forecastNextHour**: The next hour forecast for the requested location.
+- **weatherAlerts**: Weather alerts for the requested location.
+
 ## See Also
 
 - [GET /api/v1/availability/{latitude}/{longitude}](get-api-v1-availability-_latitude_-_longitude_.md)

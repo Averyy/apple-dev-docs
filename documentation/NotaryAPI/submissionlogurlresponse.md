@@ -26,6 +26,11 @@ You receive a structure of this type in response to a call to the [`Get Submissi
 - [object SubmissionLogURLResponse.Meta](submissionlogurlresponse/meta-data.dictionary.md)
   An empty object.
 
+## Properties
+
+- `data` (SubmissionLogURLResponse.Data): Data that indicates how to get the log information for a particular submission.
+- `meta` (SubmissionLogURLResponse.Meta): An empty object that you can ignore.
+
 ## See Also
 
 - [Get Submission Status](get-submission-status.md)

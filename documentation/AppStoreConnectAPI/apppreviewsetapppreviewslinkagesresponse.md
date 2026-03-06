@@ -20,6 +20,12 @@ object AppPreviewSetAppPreviewsLinkagesResponse
 - [object AppPreviewSetAppPreviewsLinkagesResponse.Data](apppreviewsetapppreviewslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([AppPreviewSetAppPreviewsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppPreviewSet](apppreviewset.md)

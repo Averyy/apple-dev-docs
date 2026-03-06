@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciProducts/{id}/relationships/workflows`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All Xcode Cloud Products](get-v1-ciproducts.md)

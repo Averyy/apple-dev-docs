@@ -8,6 +8,14 @@ Get a list of one-time use offer codes for an auto-renewable subscription in CSV
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodeOneTimeUseCodes/{id}/values`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)

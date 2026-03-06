@@ -14,6 +14,13 @@ Attributes that you set that describe the new resource.
 object AppPreviewCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+- `mimeType` (string)
+- `previewFrameTimeCode` (string)
+
 ## See Also
 
 - [object AppPreviewCreateRequest.Data.Relationships](apppreviewcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -22,7 +22,7 @@ static func ^= (lhs: inout UInt16, rhs: UInt16)
 
 #### Discussion
 
-A bitwise XOR operation, also known as an exclusive OR operation, results in a value that has each bit set to `1` where  of its arguments had that bit set to `1`. For example:
+A bitwise XOR operation, also known as an exclusive OR operation, results in a value that has each bit set to `1` where *one or the other but not both* of its arguments had that bit set to `1`. For example:
 
 ```swift
 var x: UInt8 = 5          // 0b00000101

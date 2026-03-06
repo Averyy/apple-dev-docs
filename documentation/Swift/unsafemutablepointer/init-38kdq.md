@@ -22,7 +22,7 @@ init?(_ other: UnsafeMutablePointer<Pointee>?)
 
 ## Parameters
 
-- `other`: The pointer to convert. If   is  , the   result is  .
+- `other`: The pointer to convert. If `other` is `nil`, the result is `nil`.
 
 
 ---

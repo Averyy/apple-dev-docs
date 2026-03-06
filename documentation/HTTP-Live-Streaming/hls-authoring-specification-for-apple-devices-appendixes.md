@@ -10,7 +10,7 @@ The appendixes in this article expand on information provided in the [`HTTP Live
 
 ##### Testing Your Streams
 
-Apple provides several command-line tools for [`HTTP Live Streaming`](https://developer.apple.comhttps://developer.apple.com/download/all). After signing in with your Apple Developer account, search for .
+Apple provides several command-line tools for [`HTTP Live Streaming`](https://developer.apple.comhttps://developer.apple.com/download/all). After signing in with your Apple Developer account, search for *http live streaming tools*.
 
 To assist in validating your streams, use the command-line tools `mediastreamvalidator` and `hlsreport`. While these tools are unable to check everything about your streams, the checks they do are fairly comprehensive and Apple continues to improve the tools.
 
@@ -176,12 +176,12 @@ The `ALLOWED-CPC` attribute restricts playback of an encrypted variant stream to
 
 The permitted CPC Labels for FairPlay Streaming are:
 
-|  |  |
+| **CPC Label** | **Devices that conform to that CPC Label** |
 | --- | --- |
-|  | Any Apple platform that supports FairPlay Streaming. |
-|  | Any Apple platform that supports FairPlay Streaming and guarantees enhanced content protection robustness (sufficient for studio 4K/HDR playback). |
-|  | Any non-Apple platform that supports FairPlay Streaming. For example, any AirPlay 2-enabled smart TV. |
-|  | Any non-Apple platform that supports FairPlay Streaming and guarantees enhanced content protection robustness (sufficient for studio 4K/HDR playback). |
+| **AppleBaseline** | Any Apple platform that supports FairPlay Streaming. |
+| **AppleMain** | Any Apple platform that supports FairPlay Streaming and guarantees enhanced content protection robustness (sufficient for studio 4K/HDR playback). |
+| **Baseline** | Any non-Apple platform that supports FairPlay Streaming. For example, any AirPlay 2-enabled smart TV. |
+| **Main** | Any non-Apple platform that supports FairPlay Streaming and guarantees enhanced content protection robustness (sufficient for studio 4K/HDR playback). |
 
 An example of a valid attribute is: `ALLOWED-CPC="com.apple.streamingkeydelivery:AppleMain/Main"`
 
@@ -197,7 +197,7 @@ You can indicate the presence of HDR10+ metadata by adding a brand of ‘cdm4’
 
 Example-codec-values:
 
-|  |  |  |  |
+| **Codec** | **CODECS attribute** | **SUPPLEMENTAL-CODECS attribute** | **VIDEO-RANGE attribute** |
 | --- | --- | --- | --- |
 | Dolby Vision 8.4 | hvc1.2.4.L153.b0 | dvh1.08.07/db4h | HLG |
 | Dolby Vision 8.1 | hvc1.2.4.L150 | dvh1.08.06/db1p | PQ |
@@ -224,7 +224,7 @@ Video Extended Usage atom (`'vexu'`) is a sample description extension that conv
 
 Spatial video can benefit from frame based metadata. This can be provided using timed metadata tracks within ISOBMFF (ISO Base Media File Format) or QuickTime files.
 
-> **Note**: An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9  of that document). The [`QuickTime File Format Specification`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format) refers to the `'mebx'` atom as a  (see [`Timed Metadata Media`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format/timed_metadata_sample_descriptions)). The `'mebx'` atom and its contents are a generic structure.
+> **Note**: An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9 *Multiplexed timed metadata tracks* of that document). The [`QuickTime File Format Specification`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format) refers to the `'mebx'` atom as a *timed metadata sample description* (see [`Timed Metadata Media`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format/timed_metadata_sample_descriptions)). The `'mebx'` atom and its contents are a generic structure.
 
 You can provide parallax metadata for subtitles or captions using a timed metadata track. This allows control over the depth at which the text is displayed relative to the image. For details, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [`Video Contour Map Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
 
@@ -404,7 +404,7 @@ hlg_dolby_2160_60/prog_index.m3u8
 #EXT-X-I-FRAME-STREAM-INF:AVERAGE-BANDWIDTH=788595,BANDWIDTH=1777136,VIDEO-RANGE=HLG,CODECS="hvc1.2.20000000.L183.B0",SUPPLEMENTAL-CODECS="dvh1.08.08/db4h",RESOLUTION=3840x2160,HDCP-LEVEL=TYPE-1,URI="hlg_dolby_2160/prog_index.m3u8"
 ```
 
-The HEVC codec values are described in ISO/IEC 14496-15. A short description is `Codec.Profile.Flags.TierLevel.Constraints`, so in `hvc1.2.4.L123.B0`, the `2` means , and the `L123` means .
+The HEVC codec values are described in ISO/IEC 14496-15. A short description is `Codec.Profile.Flags.TierLevel.Constraints`, so in `hvc1.2.4.L123.B0`, the `2` means *Main 10 profile*, and the `L123` means *normal tier, level 4.1*.
 
 Information about Dolby Video codec values can be obtained from Dolby. A short description is `Codec.Profile.Level`, so in `dvh1.05.03` the Profile is 5 and the Level is 3.
 

@@ -36,11 +36,11 @@ print(numbers.suffix(10))
 // Prints "[1, 2, 3, 4, 5]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is equal to `maxLength`.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is equal to `maxLength`.
 
 ## Parameters
 
-- `maxLength`: The maximum number of elements to return.    must be greater than or equal to zero.
+- `maxLength`: The maximum number of elements to return. `maxLength` must be greater than or equal to zero.
 
 
 ---

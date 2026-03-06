@@ -19,7 +19,7 @@ override dynamic func viewDidDisappear(_ animated: Bool)
 
 ## Parameters
 
-- `animated`: A Boolean value that indicates whether the view disappears   using an animation.
+- `animated`: A Boolean value that indicates whether the view disappears using an animation.
 
 ## See Also
 

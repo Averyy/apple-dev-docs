@@ -36,6 +36,10 @@ curl -v POST "https://appleid.apple.com/auth/oauth2/v2/revoke" \
 
 For either token revocation request, the revoke endpoint returns a `200` response code without a response body after the server invalidates the `token` value, or if the token was previously invalidated. If the server encounters an error, it returns an [`ErrorResponse`](errorresponse.md) that identifies the problem.
 
+## Endpoint
+
+`POST https://appleid.apple.com/auth/oauth2/v2/revoke`
+
 ## Request Body
 
 The list of input parameters required for the server to invalidate the token.

@@ -27,6 +27,11 @@ object GameCenterAchievementVersionV2.Relationships
 - [object GameCenterAchievementVersionV2.Relationships.Localizations](gamecenterachievementversionv2/relationships-data.dictionary/localizations-data.dictionary.md)
   The data and links that describe the localizations of the Game Center achievement version v2.
 
+## Properties
+
+- `achievement` (GameCenterAchievementVersionV2.Relationships.Achievement)
+- `localizations` (GameCenterAchievementVersionV2.Relationships.Localizations)
+
 ## See Also
 
 - [object GameCenterAchievementVersionV2.Attributes](gamecenterachievementversionv2/attributes-data.dictionary.md)

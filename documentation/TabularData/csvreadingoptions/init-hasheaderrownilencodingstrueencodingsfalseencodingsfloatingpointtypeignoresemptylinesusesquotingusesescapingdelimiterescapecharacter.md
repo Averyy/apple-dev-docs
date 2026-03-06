@@ -22,16 +22,16 @@ init(hasHeaderRow: Bool = true, nilEncodings: Set<String> = ["", "#N/A", "#N/A N
 
 ## Parameters
 
-- `hasHeaderRow`: A Boolean value that indicates whether the CSV file has a header row. Defaults to  .
-- `nilEncodings`: A list of recognized encodings of  . Defaults to   .
-- `trueEncodings`: A list of acceptable encodings of  . Defaults to  .
-- `falseEncodings`: A list of acceptable encodings of  . Defaults to  .
-- `floatingPointType`: A type to use for floating-point numeric values   (either   or  ).   Defaults to  .
-- `ignoresEmptyLines`: A Boolean value that indicates whether to ignore empty lines. Defaults to 
-- `usesQuoting`: A Boolean value that indicates whether the CSV file uses quoting. Defaults to  .
-- `usesEscaping`: A Boolean value that indicates whether the CSV file uses escaping sequences. Defaults to   .
-- `delimiter`: A field delimiter. Defaults to comma ( ).
-- `escapeCharacter`: An escape character to use if   is true. Defaults to backslash ( ).
+- `hasHeaderRow`: A Boolean value that indicates whether the CSV file has a header row. Defaults to `true`.
+- `nilEncodings`: A list of recognized encodings of `nil`. Defaults to `["", "#N/A", "#N/A N/A", "#NA", "N/A", "NA", "NULL", "n/a", "null"]`.
+- `trueEncodings`: A list of acceptable encodings of `true`. Defaults to `["1", "True", "TRUE", "true"]`.
+- `falseEncodings`: A list of acceptable encodings of `false`. Defaults to `["0", "False", "FALSE", "false"]`.
+- `floatingPointType`: A type to use for floating-point numeric values (either [`CSVType.double`](csvtype/double.md) or [`CSVType.float`](csvtype/float.md)). Defaults to [`CSVType.double`](csvtype/double.md).
+- `ignoresEmptyLines`: A Boolean value that indicates whether to ignore empty lines. Defaults to `true.`
+- `usesQuoting`: A Boolean value that indicates whether the CSV file uses quoting. Defaults to `true`.
+- `usesEscaping`: A Boolean value that indicates whether the CSV file uses escaping sequences. Defaults to `false`.
+- `delimiter`: A field delimiter. Defaults to comma (`,`).
+- `escapeCharacter`: An escape character to use if [`usesEscaping`](csvreadingoptions/usesescaping.md) is true. Defaults to backslash (`\`).
 
 
 ---

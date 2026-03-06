@@ -17,6 +17,10 @@ object BackgroundAsset.Relationships.AppStoreVersion
 ### Dictionaries
 - [object BackgroundAsset.Relationships.AppStoreVersion.Data](backgroundasset/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BackgroundAsset.Relationships.AppStoreVersion.Data)
+
 
 ---
 

@@ -18,6 +18,12 @@ object MarketplaceWebhooksResponse
 
 Use this object with [`Read marketplace webhook information`](get-v1-marketplacewebhooks.md).
 
+## Properties
+
+- `data` ([MarketplaceWebhook]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object MarketplaceWebhook](marketplacewebhook.md)

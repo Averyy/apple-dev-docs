@@ -6,7 +6,7 @@
 An error that indicates the request exceeded the rate limit.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -22,6 +22,11 @@ object RateLimitExceededError
 #### Discussion
 
 For more information, including a list of endpoints and their rate limits, see [`Identifying rate limits`](identifying-rate-limits.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

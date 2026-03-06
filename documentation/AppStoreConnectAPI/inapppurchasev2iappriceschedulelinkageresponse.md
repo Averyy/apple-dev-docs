@@ -17,6 +17,11 @@ object InAppPurchaseV2IapPriceScheduleLinkageResponse
 ### Dictionaries
 - [object InAppPurchaseV2IapPriceScheduleLinkageResponse.Data](inapppurchasev2iappriceschedulelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2IapPriceScheduleLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

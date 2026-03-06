@@ -28,7 +28,7 @@ MapKit JS calls this method for every GeoJSON `FeatureCollection` object. The fr
 ## Parameters
 
 - `itemCollection`: A collection containing associated annotations and overlays.
-- `geoJSON`: The original GeoJSON object for the  . This contains an array of   types.
+- `geoJSON`: The original GeoJSON object for the `FeatureCollection`. This contains an array of `feature` types.
 
 ## See Also
 

@@ -14,6 +14,14 @@ Attributes that describe a challenge resource.
 object GameCenterChallengeImage.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `uploadOperations` ([UploadOperation])
+
 
 ---
 

@@ -22,6 +22,11 @@ object EndUserLicenseAgreementCreateRequest.Data.Relationships
 - [object EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary/territories-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `app` (EndUserLicenseAgreementCreateRequest.Data.Relationships.App) *(required)*
+- `territories` (EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreementCreateRequest.Data.Attributes](enduserlicenseagreementcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

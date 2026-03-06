@@ -74,7 +74,7 @@ When using this approach, any child view controller determines the status bar st
 
 #### Revision History
 
--  First published.
+- **2022-03-01** First published.
 
 ## See Also
 

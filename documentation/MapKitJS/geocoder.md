@@ -24,9 +24,9 @@ When using MapKit JS to show Apple Maps on a website, the geocoder handles forwa
 
 Provide context to the geocoder to get the most relevant results. The geocoder can obtain context from these sources:
 
--  The geocoder assigns higher relevancy to results near the user’s location. Asking for the user’s location requires the user’s permission. If you enable this option, the browser asks the user for permission (some browsers remember this setting for a day). MapKit JS disables this option by default.
--  Your website can provide context in the geocoder lookup options as a coordinate or region. For example, if a user types  into a map text field and the web page invokes the geocoder without context, the geocoder returns the major city in Australia. If, however, the map displays San Francisco and its environs, a geocoding request with this region as context returns the nearby city of Brisbane instead.
--  Of the three forms of context, this is the least accurate, but the only one certain to be present. The user’s IP address is a granular IP location that the system doesn’t log or store.
+- **The user’s location in the browser’s Geolocation API.** The geocoder assigns higher relevancy to results near the user’s location. Asking for the user’s location requires the user’s permission. If you enable this option, the browser asks the user for permission (some browsers remember this setting for a day). MapKit JS disables this option by default.
+- **Lookup options.** Your website can provide context in the geocoder lookup options as a coordinate or region. For example, if a user types *Brisbane* into a map text field and the web page invokes the geocoder without context, the geocoder returns the major city in Australia. If, however, the map displays San Francisco and its environs, a geocoding request with this region as context returns the nearby city of Brisbane instead.
+- **The user’s IP address.** Of the three forms of context, this is the least accurate, but the only one certain to be present. The user’s IP address is a granular IP location that the system doesn’t log or store.
 
 ## Topics
 

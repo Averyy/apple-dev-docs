@@ -18,6 +18,11 @@ object MessageNotApprovedError
 
 The [`Configure Default Message`](configure-default-message.md) endpoint returns this error if the [`messageIdentifier`](messageidentifier.md) doesn’t have an [`imageState`](imagestate.md) of `APPROVED`. To determine the current state of a message, see [`Get Message List`](get-message-list.md).
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

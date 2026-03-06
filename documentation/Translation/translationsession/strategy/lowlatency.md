@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-A translation strategy that performs translations quickly and is suitable for uses requiring low-latency such as translating audio in real time. While this strategy may produce translations with less accuracy than the `.highFidelity` strategy, it still has good accuracy, and it translates faster and uses less power. Translating with this strategy needs each language to be downloaded by the user, but once downloaded those languages are available to all apps that need them. This is the only strategy available on devices that don’t support Apple Intelligence. This strategy might still be used when specifying `.highFidelity` in cases where Apple Intelligence isn’t available or disabled.
+A translation strategy that provides fast translations using traditional models.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -19,12 +19,14 @@ static let lowLatency: TranslationSession.Strategy
 
 #### Discussion
 
-This is the default model for apps built before the iOS 26.4 and macOS 26.4 SDKs.
+Use this strategy for scenarios that require low latency, such as translating audio in real time. This strategy requires downloading languages before use, but after they are downloaded they are available to all apps on the device. To download languages ahead of time, call [`prepareTranslation()`](translationsession/preparetranslation().md) before performing translations.
+
+Compared to [`highFidelity`](translationsession/strategy/highfidelity.md), this strategy is faster and uses less power, though translations are not as fluent. This is the default strategy for devices without Apple Intelligence and apps built with SDKs before iOS 26.4 and macOS 26.4.
 
 ## See Also
 
 - [static let highFidelity: TranslationSession.Strategy](translationsession/strategy/highfidelity.md)
-  A translation strategy that performs translation with higher fidelity and fluency in the target language. This strategy will only be used when Apple Intelligence is enabled on the device, but doesn’t require an extra download when Apple Intelligence is enabled. It also supports more languages. However this strategy can be slower to run than the `.lowLatency` strategy, and can use additional power. It’s best to check that this strategy works for your app before enabling it for users.
+  A translation strategy that provides more fluent translations using Apple Intelligence.
 
 
 ---

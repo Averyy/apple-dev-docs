@@ -12,6 +12,14 @@ Delete a specific App Store version experiment before it starts.
 
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionExperiments/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

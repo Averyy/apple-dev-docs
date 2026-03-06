@@ -56,7 +56,7 @@ if let i = numbers.firstIndex(of: 40) {
 
 ## Parameters
 
-- `start`: The index at which to start the resulting subsequence.    must be a valid index of the collection.
+- `start`: The index at which to start the resulting subsequence. `start` must be a valid index of the collection.
 
 ## See Also
 

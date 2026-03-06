@@ -20,11 +20,11 @@ let sourceText: String
 ## See Also
 
 - [let targetText: String](translationsession/response/targettext.md)
-  The result of the translation.
+  The translated text.
 - [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
-  The original text to translate from.
+  The original formatted text that was translated.
 - [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
-  The result of the translation.
+  The translated formatted text.
 
 
 ---

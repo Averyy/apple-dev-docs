@@ -8,6 +8,14 @@ Modify the achievement group for a specific achievement.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/{id}/relationships/groupAchievement`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List all achievements`](get-v1-gamecenterdetails-_id_-gamecenterachievements.md) response.
+
 ## See Also
 
 - [Create a Game Center achievement](post-v2-gamecenterachievements.md)

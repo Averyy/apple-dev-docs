@@ -8,6 +8,10 @@ Reserve an image asset that appears on the App Clip card of an advanced App Clip
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appClipAdvancedExperienceImages`
+
 ## Request Body
 
 The request body you use to reserve an image asset for an advanced App Clip experience.

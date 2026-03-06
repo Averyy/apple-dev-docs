@@ -25,6 +25,18 @@ You write key details about a playground book in its `Manifest.plist` file. The 
 
 You use the book-level manifest to configure the following properties:
 
+- **`Chapters`**: **Required.** An array of strings you use to order the chapters in a book. Each string is the name of a `.playgroundchapter` directory that contains the content and resources for a chapter.
+- **`ContentIdentifier`**: **Required.** A string that uniquely identifies your book among all others. The identifier must be in reverse-DNS format, and you should use a domain that you or your organization controls. For example, if you own `example.com`, you might set a book’s `ContentIdentifier` property to `com.example.mybook`.
+- **`ContentVersion`**: **Required.** A string containing the version number of a book. The string can only contain sequences of numbers and periods, such as `2.0.1`. Increment the version of the book when you publish updates to it.
+- **`DeploymentTarget`**: **Required.** A string that contains the minimum version of iOS (10.0 or later) required to run your book. You prefix the version number with the string `ios`. For example, the version string for iOS 11.3 is `ios11.3`.
+- **`DevelopmentRegion`**: **Required.** The default language and region for the book, as a Language ID. For more information, see [`Language IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW6) and [`CFBundleDevelopmentRegion`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-130430).
+- **`ImageReference`**: A string containing a reference to a `.png` image file that’s stored in the book’s Resources folder and used as the book icon. The icon must be an image with a 4:3 aspect ratio. The recommended image size is 400 × 300 pixels.
+- **`Name`**: **Required.** A string you use to provide a title for a book. This title becomes the learner-facing name displayed in Swift Playgrounds.
+- **`Version`**: **Required.** A string containing the version of the Swift Playgrounds book format used to write the book. Use `6.0`.
+- **`SwiftVersion`**: A string containing the version of Swift that the playground book uses. The default is `5.0`.
+- **`MinimumSwiftPlaygroundsVersion`**: A string containing the minimum version of the Swift Playgrounds app that your book requires. The default is `1.2`.
+- **`UserModuleMode`**: **Required.** A string you use to determine the degree to which a learner has control over user-editable modules in the book. The module mode must be one of the following types: `"Full"`—User-editable modules that the user can add and remove as needed. `"Limited"`—A nonremovable user module that you supply with your book. `"Disabled"`—No user-editable modules are available. This property is available starting with Swift Playgrounds 3.
+
 ## Topics
 
 ### Book Structure

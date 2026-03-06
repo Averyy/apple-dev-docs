@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetImageV2.Relationships.Localization.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

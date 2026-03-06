@@ -18,6 +18,15 @@ object AppInfoLocalization.Attributes
 
 - [App Store Connect API 1.5 release notes](app-store-connect-api-1-5-release-notes.md)
 
+## Properties
+
+- `locale` (string)
+- `name` (string)
+- `privacyPolicyText` (string)
+- `privacyPolicyUrl` (string)
+- `subtitle` (string)
+- `privacyChoicesUrl` (string)
+
 ## See Also
 
 - [object AppInfoLocalization.Relationships](appinfolocalization/relationships-data.dictionary.md)

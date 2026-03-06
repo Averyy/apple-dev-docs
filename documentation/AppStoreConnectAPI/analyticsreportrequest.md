@@ -25,6 +25,14 @@ To learn more about the response that includes this analytics report request obj
   Attributes that describe an analytics report request resource.
 - [object AnalyticsReportRequest.Relationships](analyticsreportrequest/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AnalyticsReportRequest.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AnalyticsReportRequest.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequestCreateRequest](analyticsreportrequestcreaterequest.md)

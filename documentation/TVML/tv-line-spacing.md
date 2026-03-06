@@ -24,6 +24,8 @@ Use the `tv-line-spacing` style to set the amount of space between lines of text
 
 ##### Values for Tv Line Spacing
 
+- **Float**: The amount of space, in points, between lines of text.
+
 ##### Elements That Use Tv Line Spacing
 
 - [`grid`](grid.md)

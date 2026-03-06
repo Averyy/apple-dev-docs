@@ -17,7 +17,7 @@ There are two paths to generate developer tokens:
 
 A developer token is a signed token used to authenticate a developer in Apple Music requests. [`Creating a MusicKit identifier and private key`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/create-a-media-identifier-and-private-key/) allows you to use a developer token to authenticate yourself as a trusted developer and member of the Apple Developer Program.
 
-The Apple Music API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called . For more information, see the [`JWT specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
+The Apple Music API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [`JWT specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
 
 Construct a developer token as a JSON object whose header contains:
 
@@ -26,12 +26,12 @@ Construct a developer token as a JSON object whose header contains:
 
 > ❗ **Important**:  Apple Music supports only developer tokens signed with the ES256 algorithm. Apple Music rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a `401` error code.
 
-In the  payload of the token, include:
+In the *claims* payload of the token, include:
 
-- The  (`iss`) registered claim key, whose value is your 10-character Team ID, obtained from your developer account
-- The  (`iat`) registered claim key, whose value indicates the time at which the token was generated, in terms of the number of seconds since epoch, in UTC
-- The  (`exp`) registered claim key, whose value must not be greater than `15777000` (6 months in seconds) from the current Unix time on the server
-- Optional, but recommended for web clients, use the  (`origin`). Only use this JWT if the origin header of the request matches one of the values in the array. This addition helps prevent unauthorized use of the tokens. For example: “`origin`”`:[`”`https://example.com`”`,`”`https://music.example.com`”`]`.
+- The *issuer* (`iss`) registered claim key, whose value is your 10-character Team ID, obtained from your developer account
+- The *issued at* (`iat`) registered claim key, whose value indicates the time at which the token was generated, in terms of the number of seconds since epoch, in UTC
+- The *expiration time* (`exp`) registered claim key, whose value must not be greater than `15777000` (6 months in seconds) from the current Unix time on the server
+- Optional, but recommended for web clients, use the *origin claim* (`origin`). Only use this JWT if the origin header of the request matches one of the values in the array. This addition helps prevent unauthorized use of the tokens. For example: “`origin`”`:[`”`https://example.com`”`,`”`https://music.example.com`”`]`.
 
 > 💡 **Tip**:  To locate your Team ID, sign in to your [`developer account`](https://developer.apple.comhttps://developer.apple.com/account), and click Membership in the sidebar. Your Team ID appears in the Membership Information section under the team name.
 

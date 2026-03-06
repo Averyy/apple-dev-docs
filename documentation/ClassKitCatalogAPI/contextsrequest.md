@@ -18,6 +18,10 @@ object ContextsRequest
 
 Use this request object to define one or more contexts that your app provides.
 
+## Properties
+
+- `contexts` ([Context]) *(required)*: An array of contexts that can contain up to 200 context objects.
+
 ## See Also
 
 - [Preparing Context Data](preparing-context-data.md)

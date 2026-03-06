@@ -26,7 +26,7 @@ A collection difference with all possible moves inferred.
 
 #### Discussion
 
-> **Note**: O() where  is the number of collection differences.
+> **Note**: O(*n*) where *n* is the number of collection differences.
 
 
 ---

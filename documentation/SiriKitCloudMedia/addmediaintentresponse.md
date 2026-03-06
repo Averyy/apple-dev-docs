@@ -14,6 +14,11 @@ A structure that contains a response code indicating your service’s progress i
 object AddMediaIntentResponse
 ```
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of response.
+- `code` (AddMediaIntentResponseCode) *(required)*: A response code that indicates whether your service can add the media items to the library or playlist.
+
 ## Relationships
 
 ### Inherits From

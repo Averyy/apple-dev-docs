@@ -22,6 +22,12 @@ object AppInfoLocalizationCreateRequest.Data
 - [object AppInfoLocalizationCreateRequest.Data.Relationships](appinfolocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppInfoLocalizationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppInfoLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

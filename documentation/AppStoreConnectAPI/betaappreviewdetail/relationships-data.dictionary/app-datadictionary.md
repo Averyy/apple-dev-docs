@@ -20,6 +20,11 @@ object BetaAppReviewDetail.Relationships.App
 - [object BetaAppReviewDetail.Relationships.App.Data](betaappreviewdetail/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BetaAppReviewDetail.Relationships.App.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

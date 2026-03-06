@@ -12,6 +12,10 @@
 object App.Relationships.AccessibilityDeclarations
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

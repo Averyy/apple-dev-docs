@@ -17,6 +17,11 @@ object GameCenterActivityLocalizationImageLinkageResponse
 ### Dictionaries
 - [object GameCenterActivityLocalizationImageLinkageResponse.Data](gamecenteractivitylocalizationimagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityLocalizationImageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

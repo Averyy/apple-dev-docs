@@ -40,6 +40,14 @@ The following listing shows main elements of the `paradeTemplate` in TVML format
 
 ###### Element Descriptions
 
+- **[`header`](header.md)**: Title information for the list of image categories on the right side of the screen.
+- **[`img`](img.md)**: A single image that scrolls across the left side of the screen.
+- **[`imgDeck`](imgdeck.md)**: A group of images on the left side of the screen that scroll right-to-left.
+- **[`list`](list.md)**: Element containing all the elements that are displayed.
+- **[`listItemLockup`](listitemlockup.md)**: Information about an individual item in the list of image categories.
+- **[`relatedContent`](relatedcontent.md)**: Element containing the image deck that is associated with a particular item in the list.
+- **[`title`](title.md)**: The text used to provide a description for its containing element.
+
 ##### Example
 
 The following listing shows the TVML for a `paradeTemplate` example.

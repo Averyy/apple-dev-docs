@@ -19,6 +19,9 @@ enum ApplePayLineItemType
 
 The constant values are:
 
+- **`final`**: A line item representing the known, final cost.
+- **`pending`**: A line item representing an estimated or unknown cost.
+
 ## Topics
 
 ### Enumeration Cases

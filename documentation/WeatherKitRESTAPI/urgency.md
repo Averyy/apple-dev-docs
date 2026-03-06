@@ -16,6 +16,12 @@ string Urgency
 
 #### Possible Values
 
+- **immediate**: Take responsive action immediately.
+- **expected**: Take responsive action in the next hour.
+- **future**: Take responsive action in the near future.
+- **past**: Responsive action is no longer required.
+- **unknown**: The urgency is unknown.
+
 ## See Also
 
 - [GET /api/v1/weatherAlert/{language}/{id}](get-api-v1-weatheralert-_language_-_id_.md)

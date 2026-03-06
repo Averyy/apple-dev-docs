@@ -6,7 +6,7 @@
 Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API ?+ - Deprecated
 
 ## Mentions
 
@@ -26,6 +26,14 @@ The information in the response is the same as the information in one or more `R
 A successful response may have an empty `signedTransactions` array if the customer hasn’t received any App Store-approved refunds. To identify the date and reason code for a refund, see `revocationDate` and `revocationReason` in the [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
 
 The App Store Server API returns information based on the customer’s in-app purchase history regardless of whether the customer installs, removes, or reinstalls the app on their devices.
+
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/refund/lookup/{originalTransactionId}`
+
+## Parameters
+
+- `originalTransactionId` (originalTransactionId) *(required)*: The original transaction identifier for a transaction that belongs to the customer.
 
 ## See Also
 

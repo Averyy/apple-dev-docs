@@ -6,7 +6,7 @@
 An error that indicates the subscription doesn’t qualify for a renewal-date extension because it has already received the maximum extensions.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object SubscriptionMaxExtensionError
 #### Discussion
 
 This error applies to the [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md) endpoint.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

@@ -14,6 +14,13 @@ An object that represents a newly created download request.
 object CreatedJob
 ```
 
+## Properties
+
+- `parentRequestId` (string): For recurring requests, a UUID that identifies the series of requests. For one-time requests, the server doesn’t include this key in the response.
+- `requestId` (string): A UUID that identifies this request.
+- `status` (string): `success` if the server created the request; `error` otherwise.
+- `statusCheckDelay` (integer): The number of seconds to wait before you call [`Get recurring request status`](get-recurring-request-status.md) or [`Get one-time request status`](get-one-time-request-status.md).
+
 ## See Also
 
 - [Submit request](submit-request.md)

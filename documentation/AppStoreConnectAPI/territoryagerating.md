@@ -20,6 +20,14 @@ object TerritoryAgeRating
 - [object TerritoryAgeRating.Attributes](territoryagerating/attributes-data.dictionary.md)
 - [object TerritoryAgeRating.Relationships](territoryagerating/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (TerritoryAgeRating.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (TerritoryAgeRating.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

@@ -22,7 +22,7 @@ init<D>(combined: D) throws where D : DataProtocol
 
 ## Parameters
 
-- `combined`: The combined bytes of the nonce, encrypted data, and   authentication tag.
+- `combined`: The combined bytes of the nonce, encrypted data, and authentication tag.
 
 ## See Also
 

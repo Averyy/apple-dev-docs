@@ -37,7 +37,7 @@ In the legacy behavior, your changes only apply to this instance of the recurrin
 
 #### Revision History
 
--  First published.
+- **2022-08-16** First published.
 
 ## See Also
 

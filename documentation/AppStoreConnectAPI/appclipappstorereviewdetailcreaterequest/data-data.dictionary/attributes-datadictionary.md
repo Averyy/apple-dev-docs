@@ -14,6 +14,10 @@ The attributes you set that describe the new App Clip App Store Review Details r
 object AppClipAppStoreReviewDetailCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `invocationUrls` ([uri]): An array of invocation URLs for your App Clip.
+
 ## See Also
 
 - [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships](appclipappstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

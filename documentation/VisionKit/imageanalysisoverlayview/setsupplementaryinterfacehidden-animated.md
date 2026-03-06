@@ -17,8 +17,8 @@ final func setSupplementaryInterfaceHidden(_ hidden: Bool, animated: Bool)
 
 ## Parameters
 
-- `hidden`:   to hide the supplementary   interface; otherwise,  .
-- `animated`:   to animate the interface   transition; otherwise,  .
+- `hidden`: `true` to hide the supplementary interface; otherwise, `false`.
+- `animated`: `true` to animate the interface transition; otherwise, `false`.
 
 ## See Also
 

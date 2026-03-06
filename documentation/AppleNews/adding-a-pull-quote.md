@@ -8,6 +8,8 @@ Break an existing body component into two components, and then insert a pull quo
 
 You can use pull quotes to highlight particularly compelling and relevant points. Visually, a pull quote can break up long portions of text, providing relief to the user.
 
+**On this page, you’ll learn how to:**
+
 - Add a pull quote to your article.
 - Use style and layout objects to customize a pull quote, including adding hanging punctuation.
 

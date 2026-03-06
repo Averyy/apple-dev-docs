@@ -24,6 +24,10 @@ Use this object with [`Request reports`](post-v1-analyticsreportrequests.md).
 - [object AnalyticsReportRequestCreateRequest.Data](analyticsreportrequestcreaterequest/data-data.dictionary.md)
   The data structure that represents an analytics report request create request resource.
 
+## Properties
+
+- `data` (AnalyticsReportRequestCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

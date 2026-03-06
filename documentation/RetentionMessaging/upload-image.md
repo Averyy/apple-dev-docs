@@ -35,6 +35,14 @@ Immediately after you upload an image, its [`imageState`](imagestate.md) is `PEN
 
 In the sandbox testing environment, the system automatically sets the message and image states to `APPROVED`.
 
+## Endpoint
+
+`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/image/{imageIdentifier}`
+
+## Parameters
+
+- `imageIdentifier` (imageIdentifier) *(required)*: A UUID you provide to uniquely identify the image you upload.
+
 ## Request Body
 
 The image file to upload.

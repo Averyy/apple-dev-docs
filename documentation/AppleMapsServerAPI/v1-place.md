@@ -8,6 +8,15 @@ Obtain a set of Place objects for a given set of Place IDs.
 **Availability**:
 - Apple Maps Server API 1.2+
 
+## Endpoint
+
+`GET https://maps-api.apple.com/v1/place`
+
+## Parameters
+
+- `ids` (string) *(required)*: A comma separated list of Place IDs.
+- `lang` (Lang): The language code for the response.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

@@ -18,6 +18,11 @@ These notifications contain a cryptographically signed payload, in JSON Web Sign
 
 After validating the token signature, your server performs work according to the `type` value in the `events` claim of the token. The notification payload object contains information about user-initiated account modification events. The event types include the following:
 
+- **`email-disabled`**: The user disables email forwarding to their personal email address using [`Hide My Email`](https://developer.apple.comhttps://support.apple.com/en-us/HT210425).
+- **email-enabled**: The user enables email forwarding to their personal email address using Hide My Email.
+- **`consent-revoked`**: The user revokes consent for your app to use their Apple Account and their credentials become invalid.
+- **`account-deleted`**: The user requests that Apple permanently delete their Apple Account.
+
 Expect an HTTP POST response similar to the following example:
 
 ```console

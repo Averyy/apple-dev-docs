@@ -30,7 +30,7 @@ To identify an item in the `updatedItems` and `allItems` parameters, use the ite
 
 - `dataScanner`: The data scanner that recognizes the item.
 - `updatedItems`: The items with geometry that the data scanner changes.
-- `allItems`: The current items that the data scanner tracks. Text items   appear in the reading order of the language and region.
+- `allItems`: The current items that the data scanner tracks. Text items appear in the reading order of the language and region.
 
 ## See Also
 

@@ -17,6 +17,10 @@ object AppEventUpdateRequest
 ### Objects
 - [object AppEventUpdateRequest.Data](appeventupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEvent](appevent.md)

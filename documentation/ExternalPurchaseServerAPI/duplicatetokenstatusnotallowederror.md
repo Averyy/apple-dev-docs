@@ -18,6 +18,12 @@ object DuplicateTokenStatusNotAllowedError
 
 - [External Purchase Server API changelog](changelog.md)
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

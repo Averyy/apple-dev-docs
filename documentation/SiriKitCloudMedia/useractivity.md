@@ -24,6 +24,14 @@ Create a `UserActivity` and provide it in your response to a [`Process a Play Me
 - [object UserActivity.UserActivityUserInfo](useractivity/useractivityuserinfo.md)
   A dictionary that contains service-specific state information necessary to continue an activity in a separate request.
 
+## Properties
+
+- `activityType` (string) *(required)*: A reverse-DNS string that uniquely identifies the activity. Provide the same activity types your app specifies in [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects.
+- `persistentIdentifier` (string): An identifier for this activity.
+- `title` (string): A short description of this activity for logging or debugging purposes.
+- `userInfo` (UserActivity.UserActivityUserInfo): Additional data your service needs to fulfill requests to [`Get a Media Queue`](playmedia-1onzj.md).
+- `version` (string) *(required)*: The version of the `SiriKitMediaAPI` library this activity conforms to.
+
 ## See Also
 
 - [object Intent](intent.md)

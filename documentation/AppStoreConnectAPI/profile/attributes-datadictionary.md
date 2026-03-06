@@ -14,6 +14,17 @@ Attributes that describe a Profiles resource.
 object Profile.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `platform` (BundleIdPlatform)
+- `profileContent` (string)
+- `uuid` (string)
+- `createdDate` (date-time)
+- `profileState` (string)
+- `profileType` (string)
+- `expirationDate` (date-time)
+
 ## See Also
 
 - [object Profile.Relationships](profile/relationships-data.dictionary.md)

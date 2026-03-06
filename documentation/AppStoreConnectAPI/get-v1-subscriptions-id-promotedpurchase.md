@@ -8,6 +8,17 @@ Get details about the promoted purchase of an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/promotedPurchase`
+
+## Parameters
+
+- `fields[inAppPurchases]` ([string])
+- `fields[promotedPurchases]` ([string])
+- `fields[subscriptions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

@@ -19,6 +19,11 @@ object SubscriptionOfferCodeOneTimeUseCode.Relationships
 ### Dictionaries
 - [object SubscriptionOfferCodeOneTimeUseCode.Relationships.Values](subscriptionoffercodeonetimeusecode/relationships-data.dictionary/values-data.dictionary.md)
 
+## Properties
+
+- `offerCode` (SubscriptionOfferCodeOneTimeUseCode.Relationships.OfferCode)
+- `values` (SubscriptionOfferCodeOneTimeUseCode.Relationships.Values)
+
 ## See Also
 
 - [object SubscriptionOfferCodeOneTimeUseCode.Attributes](subscriptionoffercodeonetimeusecode/attributes-data.dictionary.md)

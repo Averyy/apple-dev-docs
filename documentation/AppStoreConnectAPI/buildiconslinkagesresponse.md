@@ -17,6 +17,12 @@ object BuildIconsLinkagesResponse
 ### Dictionaries
 - [object BuildIconsLinkagesResponse.Data](buildiconslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BuildIconsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Build](build.md)

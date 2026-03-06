@@ -22,6 +22,12 @@ object CiBuildRunCreateRequest.Data
 - [object CiBuildRunCreateRequest.Data.Relationships](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (CiBuildRunCreateRequest.Data.Attributes): The attributes that describe the request that creates a Build Runs resource.
+- `relationships` (CiBuildRunCreateRequest.Data.Relationships): The types and IDs of the related data to update.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

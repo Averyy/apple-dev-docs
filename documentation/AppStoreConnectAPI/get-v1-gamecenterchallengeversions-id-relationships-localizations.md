@@ -8,6 +8,14 @@ List all the localization IDs for a specific Game Center challenge version.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterChallengeVersions/{id}/relationships/localizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read challenge localization information](get-v1-gamecenterchallengelocalizations-_id_.md)

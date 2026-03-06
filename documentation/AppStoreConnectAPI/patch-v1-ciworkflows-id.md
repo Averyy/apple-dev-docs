@@ -14,6 +14,101 @@ The example request below updates the name of an existing Xcode Cloud workflow. 
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f
+
+{
+    "data": {
+        "type": "ciWorkflows",
+        "id": "3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f",
+        "attributes": {
+            "name": "A new name for an existing workflow."
+        }
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+    "data": {
+        "type": "ciWorkflows",
+        "id": "3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f",
+        "attributes": {
+            "name": "A new name for an existing workflow.",
+            "description": "",
+            "branchStartCondition": {
+                "source": {
+                    "isAllMatch": false,
+                    "patterns": [
+                        {
+                            "pattern": "main",
+                            "isPrefix": false
+                        }
+                    ]
+                },
+                "filesAndFoldersRule": {
+                    "mode": "START_IF_ANY_FILE_MATCHES",
+                    "matchers": []
+                },
+                "autoCancel": true
+            },
+            "tagStartCondition": null,
+            "pullRequestStartCondition": null,
+            "scheduledStartCondition": null,
+            "actions": [
+                {
+                    "name": "Archive iOS",
+                    "actionType": "ARCHIVE",
+                    "destination": null,
+                    "buildDistributionAudience": null,
+                    "testConfiguration": null,
+                    "scheme": "MyApp",
+                    "platform": "IOS",
+                    "isRequiredToPass": true
+                }
+            ],
+            "isEnabled": true,
+            "isLockedForEditing": false,
+            "clean": false,
+            "containerFilePath": "MyXcodeProject.xcodeproj",
+            "lastModifiedDate": null
+        },
+        "relationships": {
+            "repository": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f/relationships/repository",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f/repository"
+                }
+            },
+            "buildRuns": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f/relationships/buildRuns",
+                    "related": "https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f/buildRuns"
+                }
+            }
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f"
+    }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/ciWorkflows/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Workflows resource.
+
 ## Request Body
 
 The request body you use to update an Xcode Cloud workflow.

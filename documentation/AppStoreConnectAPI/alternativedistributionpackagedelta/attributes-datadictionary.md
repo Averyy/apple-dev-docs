@@ -12,6 +12,13 @@
 object AlternativeDistributionPackageDelta.Attributes
 ```
 
+## Properties
+
+- `alternativeDistributionKeyBlob` (string)
+- `fileChecksum` (string)
+- `url` (uri)
+- `urlExpirationDate` (date-time)
+
 
 ---
 

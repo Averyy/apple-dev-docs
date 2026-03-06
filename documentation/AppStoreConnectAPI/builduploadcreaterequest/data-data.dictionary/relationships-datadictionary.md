@@ -20,6 +20,10 @@ object BuildUploadCreateRequest.Data.Relationships
 - [object BuildUploadCreateRequest.Data.Relationships.App](builduploadcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The data that describes the  related to a upload.
 
+## Properties
+
+- `app` (BuildUploadCreateRequest.Data.Relationships.App) *(required)*
+
 
 ---
 

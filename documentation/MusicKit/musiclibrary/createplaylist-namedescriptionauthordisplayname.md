@@ -27,7 +27,7 @@ The newly created playlist.
 
 - `name`: The name of the playlist.
 - `description`: An optional description of the playlist.
-- `authorDisplayName`: The display name of the author for the playlist.   A   value will result in the framework using   your app’s name instead.
+- `authorDisplayName`: The display name of the author for the playlist. A `nil` value will result in the framework using your app’s name instead.
 
 
 ---

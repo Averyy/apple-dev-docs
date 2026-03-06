@@ -12,6 +12,27 @@ List all the alternative distribution domains for your account.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+
+```
+
+**Response**:
+
+```json
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains`
+
+## Parameters
+
+- `fields[alternativeDistributionDomains]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Add an alternative distribution domain](post-v1-alternativedistributiondomains.md)

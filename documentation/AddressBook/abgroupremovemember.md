@@ -24,8 +24,8 @@ func ABGroupRemoveMember(_ group: ABGroupRef!, _ personToRemove: ABPersonRef!) -
 ## Parameters
 
 - `group`: The group that you wish to remove `person` from.
-- `personToRemove`: The member that you wish to remove from `group`.
 - `member`: The person that you wish to remove from group.
+- `personToRemove`: The member that you wish to remove from `group`.
 
 ## See Also
 
@@ -33,7 +33,7 @@ func ABGroupRemoveMember(_ group: ABGroupRef!, _ personToRemove: ABPersonRef!) -
   Returns an array of all the groups in the Address Book database.
 - [func ABGroupAddGroup(ABGroupRef!, ABGroupRef!) -> Bool](abgroupaddgroup(_:_:).md)
   Adds a subgroup to another group.
-- [func ABGroupAddMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupaddmember(_:_:).md)
+- [func ABGroupAddMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupaddmember(_:_:_:).md)
   Adds a person to a group.
 - [func ABGroupCopyArrayOfAllMembers(ABRecord!) -> Unmanaged<CFArray>!](abgroupcopyarrayofallmembers(_:).md)
   Returns an array of persons in a group.
@@ -55,4 +55,4 @@ func ABGroupRemoveMember(_ group: ABGroupRef!, _ personToRemove: ABPersonRef!) -
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abgroupremovemember(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abgroupremovemember(_:_:_:))*

@@ -136,11 +136,72 @@ To add the `NSPrivacyAccessedAPITypes` key to your privacy manifest:
 
 The following example declares disk space required reason API usage in an app named `Sample`:
 
+**Source code**:
+
+```xml
+<plist>
+<dict>
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array>
+        <!-- Declares disk space required reason API in the `Sample` app. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>B728.1</string>
+                <string>E174.1</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
+```
+
+**Property list**:
+
+![A privacy manifest that declares disk space required reason API usage.](https://docs-assets.developer.apple.com/published/0ac7048f47872a5dd9eec2f1dcbab922/tn3183-required_reason_api_entry%402x.png)
+
 Repeat step 5 for each additional required reason API your app or third-party SDK uses. The example below additionally declares user defaults required reason API usage in `Sample`:
+
+**Source code**:
+
+```xml
+<plist>
+<dict>
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array>
+        <!-- Declares disk space required reason API in the `Sample` app. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>B728.1</string>
+                <string>E174.1</string>
+            </array>
+        </dict>
+        <!-- Declares user defaults required reason APIs in the `Sample` app. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>CA92.1</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
+```
+
+**Property list**:
+
+![A privacy manifest that declares disk space and user defaults required reason APIs usage.](https://docs-assets.developer.apple.com/published/57b364f5e36a60a4151c09bcd8c2cd47/tn3183-required_reason_api_entries%402x.png)
 
 #### Revision History
 
--  First published.
+- **2024-12-17** First published.
 
 ## See Also
 

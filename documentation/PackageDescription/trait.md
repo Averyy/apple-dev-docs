@@ -26,7 +26,7 @@ When you define a trait on a package, the package manager uses the name of that 
 #endif // MyTrait
 ```
 
-> ❗ **Important**: Traits must be strictly additive. Enabling a trait  remove API.
+> ❗ **Important**: Traits must be strictly additive. Enabling a trait **must not** remove API.
 
 If your conditional code requires a dependency that you want to enable only when the trait is enabled, add a conditional declaration to the target dependencies, then include the import statement within the conditional block. The following example illustrates enabling the dependency `MyDependency` when the trait `Trait1` is enabled:
 

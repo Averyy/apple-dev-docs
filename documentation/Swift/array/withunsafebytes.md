@@ -26,7 +26,7 @@ The return value, if any, of the `body` closure parameter.
 
 #### Discussion
 
-The array’s `Element` type must be a , which can be copied with just a bit-for-bit copy without any indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references are trivial, as are imported C structs and enums.
+The array’s `Element` type must be a *trivial type*, which can be copied with just a bit-for-bit copy without any indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references are trivial, as are imported C structs and enums.
 
 The following example copies the bytes of the `numbers` array into a buffer of `UInt8`:
 
@@ -43,7 +43,7 @@ numbers.withUnsafeBytes {
 
 ## Parameters
 
-- `body`: A closure with an   parameter   that points to the contiguous storage for the array.   If no such storage exists, it is created. If   has a return value, that value is also   used as the return value for the   method. The   argument is valid only for the duration of the closure’s execution.
+- `body`: A closure with an `UnsafeRawBufferPointer` parameter that points to the contiguous storage for the array. If no such storage exists, it is created. If `body` has a return value, that value is also used as the return value for the `withUnsafeBytes(_:)` method. The argument is valid only for the duration of the closure’s execution.
 
 ## See Also
 

@@ -14,6 +14,13 @@ A response that contains a list of app customer product page version resources.
 object AppCustomProductPageVersionsResponse
 ```
 
+## Properties
+
+- `data` ([AppCustomProductPageVersion]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCustomProductPageVersion](appcustomproductpageversion.md)

@@ -22,6 +22,12 @@ object BuildUploadFileCreateRequest.Data
 - [object BuildUploadFileCreateRequest.Data.Relationships](builduploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BuildUploadFileCreateRequest.Data.Attributes) *(required)*
+- `relationships` (BuildUploadFileCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -20,6 +20,10 @@ object BackgroundAssetUploadFileCreateRequest.Data.Relationships
 - [object BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion](backgroundassetuploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
   The data that describes the  file related to a prefix.
 
+## Properties
+
+- `backgroundAssetVersion` (BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion) *(required)*
+
 
 ---
 

@@ -14,6 +14,11 @@ The data structure of a matchmaking team.
 object GameCenterMatchmakingRuleSet.Relationships.Teams.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: A unique identifier for a team.
+- `type` (string) *(required)*: The type of resource.
+
 
 ---
 

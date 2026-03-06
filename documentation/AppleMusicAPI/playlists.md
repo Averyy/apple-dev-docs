@@ -24,6 +24,15 @@ object Playlists
 - [object Playlists.Views](playlists/views-data.dictionary.md)
   The views for a music video resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the playlist.
+- `type` (string) *(required)*: This value is always `playlists`.
+- `href` (string) *(required)*: The relative location for the playlist resource.
+- `attributes` (Playlists.Attributes): The attributes for the playlist.
+- `relationships` (Playlists.Relationships): The relationships for the playlist.
+- `views` (Playlists.Views): The views for associations between playlists and other resources.
+
 ## See Also
 
 - [object PlaylistsResponse](playlistsresponse.md)

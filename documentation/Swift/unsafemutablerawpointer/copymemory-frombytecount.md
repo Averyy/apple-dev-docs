@@ -30,8 +30,8 @@ After calling `copyMemory(from:byteCount:)`, the `byteCount` bytes of memory ref
 
 ## Parameters
 
-- `source`: A pointer to the memory to copy bytes from. The memory in the   region   must be initialized to a   trivial type.
-- `byteCount`: The number of bytes to copy.   must not be   negative.
+- `source`: A pointer to the memory to copy bytes from. The memory in the region `source..<(source + byteCount)` must be initialized to a trivial type.
+- `byteCount`: The number of bytes to copy. `byteCount` must not be negative.
 
 
 ---

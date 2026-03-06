@@ -20,6 +20,12 @@ object Profile.Relationships.Certificates
 - [object Profile.Relationships.Certificates.Data](profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([Profile.Relationships.Certificates.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Profile.Relationships.BundleId](profile/relationships-data.dictionary/bundleid-data.dictionary.md)

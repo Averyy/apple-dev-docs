@@ -31,8 +31,8 @@ By default, the change of zoom range animates.
 
 ## Parameters
 
-- `cameraZoomRange`: A   instance, which is an object containing the   and   properties.
-- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is  .
+- `cameraZoomRange`: A [`CameraZoomRange`](camerazoomrange.md) instance, which is an object containing the [`minCameraDistance`](camerazoomrange/mincameradistance.md) and [`maxCameraDistance`](camerazoomrange/maxcameradistance.md) properties.
+- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is `true`.
 
 ## See Also
 

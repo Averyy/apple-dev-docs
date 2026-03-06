@@ -18,6 +18,10 @@ object GetImageListResponse
 
 The [`Get Image List`](get-image-list.md) endpoint returns this response.
 
+## Properties
+
+- `imageIdentifiers` ([GetImageListResponseItem]): An array of all image identifiers and their image state.
+
 ## See Also
 
 - [Upload Image](upload-image.md)

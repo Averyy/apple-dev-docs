@@ -28,8 +28,8 @@ By default, the change of distance animates.
 
 ## Parameters
 
-- `distance`: The altitude of the camera from the center of the map. It’s value needs to be greater than or equal to  .
-- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is  .
+- `distance`: The altitude of the camera from the center of the map. It’s value needs to be greater than or equal to `0`.
+- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is `true`.
 
 ## See Also
 

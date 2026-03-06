@@ -12,6 +12,10 @@
 object SubscriptionGroupUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `referenceName` (string)
+
 
 ---
 

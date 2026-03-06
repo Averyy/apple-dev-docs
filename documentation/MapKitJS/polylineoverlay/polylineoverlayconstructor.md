@@ -29,7 +29,7 @@ The following is an example of the `options` parameter for a polyline overlay:
 
 ## Parameters
 
-- `points`: The required points in the polyline as an array of  .
+- `points`: The required points in the polyline as an array of [`Coordinate`](coordinate.md).
 - `options`: An optional object literal of style options for initializing the polyline.
 
 ## See Also

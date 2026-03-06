@@ -20,6 +20,10 @@ object GameCenterMatchmakingRuleCreateRequest
 - [object GameCenterMatchmakingRuleCreateRequest.Data](gamecentermatchmakingrulecreaterequest/data-data.dictionary.md)
   The data structure of the request body you use to create a rule.
 
+## Properties
+
+- `data` (GameCenterMatchmakingRuleCreateRequest.Data) *(required)*: The data structure of the request body.
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleUpdateRequest](gamecentermatchmakingruleupdaterequest.md)

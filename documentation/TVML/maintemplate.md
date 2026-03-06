@@ -28,6 +28,11 @@ The following listing shows the elements of the mainTemplate element in TVML for
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: The background elements used on the page, such as `audio`.
+- **[`menuBar`](menubar.md)**: A list of displayed menu items.
+- **[`menuItem`](menuitem.md)**: Information for an individual menu item.
+- **[`section`](section.md)**: An area containing a group of menu items.
+
 ##### Example
 
 The following listing shows the TVML for a `mainTemplate` example. The example displays a full-screen image as the background. A menu bar contains three navigable options.

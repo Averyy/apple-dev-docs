@@ -30,7 +30,7 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 ## Parameters
 
-- `body`: A closure with a pointer parameter that points to a   null-terminated sequence of UTF-8 code units. If   has a return   value, that value is also used as the return value for the    method. The pointer argument is valid only for the   duration of the method’s execution.
+- `body`: A closure with a pointer parameter that points to a null-terminated sequence of UTF-8 code units. If `body` has a return value, that value is also used as the return value for the `withCString(_:)` method. The pointer argument is valid only for the duration of the method’s execution.
 
 ## See Also
 

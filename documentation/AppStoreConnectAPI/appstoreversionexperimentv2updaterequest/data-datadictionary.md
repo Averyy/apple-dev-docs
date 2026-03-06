@@ -20,6 +20,12 @@ object AppStoreVersionExperimentV2UpdateRequest.Data
 - [object AppStoreVersionExperimentV2UpdateRequest.Data.Attributes](appstoreversionexperimentv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app store version experiment v2update request resource.
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentV2UpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

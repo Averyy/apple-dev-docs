@@ -46,7 +46,7 @@ final class HandTrackingProvider
 
 ## See Also
 
-- [Happy Beam](../visionos/happybeam.md)
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [struct HandAnchor](handanchor.md)
   A hand’s position in a person’s surroundings.

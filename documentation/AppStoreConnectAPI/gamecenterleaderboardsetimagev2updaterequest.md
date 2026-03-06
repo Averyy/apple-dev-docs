@@ -24,6 +24,10 @@ object GameCenterLeaderboardSetImageV2UpdateRequest
 - [object GameCenterLeaderboardSetImageV2UpdateRequest.Data](gamecenterleaderboardsetimagev2updaterequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard set image update request resource.
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetImageV2UpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetImageV2](gamecenterleaderboardsetimagev2.md)

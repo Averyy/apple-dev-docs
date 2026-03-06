@@ -20,6 +20,11 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.MainAddress
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.MainAddress.StructuredAddress](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/mainaddress-data.dictionary/structuredaddress-data.dictionary.md)
   The structured address information for a point of interest or business in Apple Maps.
 
+## Properties
+
+- `fullAddress` (string): The address of a place in Apple Maps as a string.
+- `structuredAddress` (AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.MainAddress.StructuredAddress): The structured address of a place in Apple Maps.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.DisplayPoint](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/displaypoint-data.dictionary.md)

@@ -17,6 +17,11 @@ object AppPriceScheduleBaseTerritoryLinkageResponse
 ### Dictionaries
 - [object AppPriceScheduleBaseTerritoryLinkageResponse.Data](apppriceschedulebaseterritorylinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppPriceScheduleBaseTerritoryLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

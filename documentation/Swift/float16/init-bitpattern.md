@@ -26,7 +26,7 @@ The value passed as `bitPattern` is interpreted in the binary interchange format
 
 ## Parameters
 
-- `bitPattern`: The integer encoding of a   instance.
+- `bitPattern`: The integer encoding of a `Float16` instance.
 
 
 ---

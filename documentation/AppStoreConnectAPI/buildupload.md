@@ -22,6 +22,14 @@ object BuildUpload
 - [object BuildUpload.Relationships](buildupload/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BuildUpload.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (BuildUpload.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BuildUploadBuildUploadFilesLinkagesResponse](builduploadbuilduploadfileslinkagesresponse.md)

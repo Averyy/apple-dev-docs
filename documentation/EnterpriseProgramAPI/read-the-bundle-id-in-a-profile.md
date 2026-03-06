@@ -5,6 +5,14 @@
 
 Get the bundle ID information for a specific provisioning profile.
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/profiles/{id}/bundleId`
+
+## Parameters
+
+- `fields[bundleIds]` ([string])
+
 ## See Also
 
 - [List All Certificates in a Profile](list-all-certificates-in-a-profile.md)

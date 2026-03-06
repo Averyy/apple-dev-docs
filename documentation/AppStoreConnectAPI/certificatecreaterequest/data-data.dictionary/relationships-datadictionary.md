@@ -18,6 +18,11 @@ object CertificateCreateRequest.Data.Relationships
 - [object CertificateCreateRequest.Data.Relationships.MerchantId](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/merchantid-data.dictionary.md)
 - [object CertificateCreateRequest.Data.Relationships.PassTypeId](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary.md)
 
+## Properties
+
+- `merchantId` (CertificateCreateRequest.Data.Relationships.MerchantId)
+- `passTypeId` (CertificateCreateRequest.Data.Relationships.PassTypeId)
+
 
 ---
 

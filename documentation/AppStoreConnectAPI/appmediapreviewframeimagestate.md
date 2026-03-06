@@ -14,6 +14,12 @@ The properties that describe the state of a preview frame image for an app preve
 object AppMediaPreviewFrameImageState
 ```
 
+## Properties
+
+- `errors` ([AppMediaStateError])
+- `state` (string)
+- `warnings` ([AppMediaStateError])
+
 ## See Also
 
 - [object AppEventVideoClip](appeventvideoclip.md)

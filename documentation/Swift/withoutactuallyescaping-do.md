@@ -37,7 +37,7 @@ func allValues(in array: [Int], match predicate: (Int) -> Bool) -> Bool {
 // error: closure use of non-escaping parameter 'predicate'...
 ```
 
-`withoutActuallyEscaping(_:do:)` provides a temporarily escapable copy of `predicate` that  be used in a call to the lazy view’s `filter(_:)` method. The second version of `allValues(in:match:)` compiles without error, with the compiler guaranteeing that the `escapablePredicate` closure doesn’t last beyond the call to `withoutActuallyEscaping(_:do:)`.
+`withoutActuallyEscaping(_:do:)` provides a temporarily escapable copy of `predicate` that *can* be used in a call to the lazy view’s `filter(_:)` method. The second version of `allValues(in:match:)` compiles without error, with the compiler guaranteeing that the `escapablePredicate` closure doesn’t last beyond the call to `withoutActuallyEscaping(_:do:)`.
 
 ```swift
 func allValues(in array: [Int], match predicate: (Int) -> Bool) -> Bool {
@@ -79,8 +79,8 @@ func perform(_ f: () -> Void, simultaneouslyWith g: () -> Void) {
 
 ## Parameters
 
-- `closure`: A nonescaping closure value that is made escapable for the   duration of the execution of the   closure. If   has a   return value, that value is also used as the return value for the    function.
-- `body`: A closure that is executed immediately with an escapable copy of    as its argument.
+- `closure`: A nonescaping closure value that is made escapable for the duration of the execution of the `body` closure. If `body` has a return value, that value is also used as the return value for the `withoutActuallyEscaping(_:do:)` function.
+- `body`: A closure that is executed immediately with an escapable copy of `closure` as its argument.
 
 
 ---

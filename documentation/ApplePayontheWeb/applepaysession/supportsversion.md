@@ -31,7 +31,7 @@ Check version support to ensure new API can run in the user’s browser, and pro
 
 ## Parameters
 
-- `version`: An integer specifying the Apple Pay version number. For the best compatibility with operating systems and browsers, use the lowest possible version number that supports the features required. See   for version numbers and detailed information.
+- `version`: An integer specifying the Apple Pay version number. For the best compatibility with operating systems and browsers, use the lowest possible version number that supports the features required. See [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md) for version numbers and detailed information.
 
 ## See Also
 

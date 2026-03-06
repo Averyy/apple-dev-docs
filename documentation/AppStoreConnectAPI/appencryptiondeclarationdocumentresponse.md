@@ -14,6 +14,11 @@ A response that contains a single app encryption declaration document response r
 object AppEncryptionDeclarationDocumentResponse
 ```
 
+## Properties
+
+- `data` (AppEncryptionDeclarationDocument) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)

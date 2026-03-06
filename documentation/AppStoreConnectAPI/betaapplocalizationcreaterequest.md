@@ -20,6 +20,10 @@ object BetaAppLocalizationCreateRequest
 - [object BetaAppLocalizationCreateRequest.Data](betaapplocalizationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaAppLocalizationCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaAppLocalization](betaapplocalization.md)

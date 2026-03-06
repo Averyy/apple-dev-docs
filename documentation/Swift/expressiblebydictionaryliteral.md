@@ -43,7 +43,7 @@ print(frequencies.count)
 // Prints "0"
 ```
 
-> **Note**:  A dictionary literal is  the same as an instance of `Dictionary`. You can’t initialize a type that conforms to `ExpressibleByDictionaryLiteral` simply by assigning an instance of `Dictionary`, `KeyValuePairs`, or similar.
+> **Note**:  A dictionary literal is *not* the same as an instance of `Dictionary`. You can’t initialize a type that conforms to `ExpressibleByDictionaryLiteral` simply by assigning an instance of `Dictionary`, `KeyValuePairs`, or similar.
 
 ### Conforming to the Expressiblebydictionaryliteral Protocol
 

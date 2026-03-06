@@ -65,6 +65,18 @@ You can improve the overall response time to the user’s request by providing a
 - [object PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse](playmediaintenthandlingresolveplayshuffledinvocationresponse.md)
   Your service’s response to a request to resolve whether a play media intent requests a shuffled queue.
 
+## Endpoint
+
+`POST https://cloudextension-testservice.local/api/intent/playMedia`
+
+## Parameters
+
+- `Accept-Language` (string) *(required)*: The client’s current user interface language. Respond with localized content for this language, if available.
+- `Request-Timeout` (uint32) *(required)*: An approximate deadline, in seconds, for processing this real-time user request. The [`Session`](session.md) object provides the exact deadline for handling an intent.
+- `User-Agent` (string) *(required)*: The extension protocol running on the client. This is an RFC 7231-compliant string that contains the product name *AppleCloudExtension* and the SiriKit Extension library version running on the client.
+- `x-applecloudextension-retry-count` (uint32): The number of previous requests from the client. The client omits this header on the first attempt.
+- `x-applecloudextension-session-id` (string) *(required)*: A constant session identifier to include in each request and response. Respond to each request with the session ID the client sends in that request.
+
 ## Request Body
 
 An array of intents to play media.

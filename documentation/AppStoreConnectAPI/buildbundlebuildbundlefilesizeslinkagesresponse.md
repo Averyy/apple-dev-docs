@@ -17,6 +17,12 @@ object BuildBundleBuildBundleFileSizesLinkagesResponse
 ### Dictionaries
 - [object BuildBundleBuildBundleFileSizesLinkagesResponse.Data](buildbundlebuildbundlefilesizeslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BuildBundleBuildBundleFileSizesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BuildBetaDetail](buildbetadetail.md)

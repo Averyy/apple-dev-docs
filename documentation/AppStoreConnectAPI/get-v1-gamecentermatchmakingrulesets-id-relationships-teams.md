@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSets/{id}/relationships/teams`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all rule sets](get-v1-gamecentermatchmakingrulesets.md)

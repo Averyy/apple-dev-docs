@@ -26,7 +26,7 @@ The return value of the `operation`
 
 #### Discussion
 
-This method allows to  that the currently executing synchronous function is actually executing on the serial executor of the MainActor.
+This method allows to *assume and verify* that the currently executing synchronous function is actually executing on the serial executor of the MainActor.
 
 If that is the case, the operation is invoked with an `isolated` version of the actor, / allowing synchronous access to actor local state without hopping through asynchronous boundaries.
 
@@ -40,9 +40,9 @@ This method can only be used from synchronous functions, as asynchronous functio
 
 ## Parameters
 
-- `operation`: The operation that will be executed if the current context   is executing on the MainActor’s serial executor.
-- `file`: The file name to print if the assertion fails. The default is   where this method was called.
-- `line`: The line number to print if the assertion fails The default is   where this method was called.
+- `operation`: The operation that will be executed if the current context is executing on the MainActor’s serial executor.
+- `file`: The file name to print if the assertion fails. The default is where this method was called.
+- `line`: The line number to print if the assertion fails The default is where this method was called.
 
 
 ---

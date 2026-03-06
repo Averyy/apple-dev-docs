@@ -36,11 +36,11 @@ let letterCounts = cast.map { $0.count }
 // 'letterCounts' == [6, 6, 3, 4]
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
-- `transform`: A mapping closure.   accepts an   element of this sequence as its parameter and returns a transformed   value of the same or of a different type.
+- `transform`: A mapping closure. `transform` accepts an element of this sequence as its parameter and returns a transformed value of the same or of a different type.
 
 
 ---

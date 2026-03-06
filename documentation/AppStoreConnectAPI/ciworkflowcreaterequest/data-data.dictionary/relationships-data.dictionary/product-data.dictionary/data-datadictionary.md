@@ -14,6 +14,11 @@ The type and ID of the Products resource that you’re relating with the Workflo
 object CiWorkflowCreateRequest.Data.Relationships.Product.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Products resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -19,6 +19,10 @@ object BetaRecruitmentCriterionCreateRequest
 ### Dictionaries
 - [object BetaRecruitmentCriterionCreateRequest.Data](betarecruitmentcriterioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaRecruitmentCriterionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)

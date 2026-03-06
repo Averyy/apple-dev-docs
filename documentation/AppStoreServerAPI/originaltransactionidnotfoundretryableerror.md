@@ -14,6 +14,11 @@ An error response that indicates the original transaction identifier wasn’t fo
 object OriginalTransactionIdNotFoundRetryableError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundRetryableError](accountnotfoundretryableerror.md)

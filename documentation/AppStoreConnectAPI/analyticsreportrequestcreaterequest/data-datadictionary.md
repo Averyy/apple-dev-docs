@@ -21,6 +21,12 @@ object AnalyticsReportRequestCreateRequest.Data
   Attributes that describe an analytics report create request resource.
 - [object AnalyticsReportRequestCreateRequest.Data.Relationships](analyticsreportrequestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AnalyticsReportRequestCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AnalyticsReportRequestCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

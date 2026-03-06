@@ -20,6 +20,10 @@ object BuildBetaGroupsLinkagesRequest
 - [object BuildBetaGroupsLinkagesRequest.Data](buildbetagroupslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([BuildBetaGroupsLinkagesRequest.Data]) *(required)*: The types and IDs of related resources.
+
 ## See Also
 
 - [object Build](build.md)

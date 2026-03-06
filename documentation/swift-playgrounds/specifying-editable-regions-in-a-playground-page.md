@@ -18,7 +18,7 @@ You add an inline editable area by using the special comment expression:
 
 ![A diagram showing “/](https://docs-assets.developer.apple.com/published/a28fd46bb1114ace63b637c31e204c6b/specifying-editable-regions-in-a-playground-page-1%402x.png)
 
-The  is text that’s displayed until the learner starts editing and adds their own code. The  is text that represents the default value for the Swift code until the value is edited.
+The *placeholder text* is text that’s displayed until the learner starts editing and adds their own code. The *content* is text that represents the default value for the Swift code until the value is edited.
 
 The inline editable area in the example below displays “number of repetitions” until edited, and uses `1` as the initial value for the Swift code.
 
@@ -59,9 +59,15 @@ var typedLlamaCount = /*#-editable-code*/<#T##number of llamas##Int#>/*#-end-edi
 
 ##### Mark Editable Areas As Copyable
 
-You can mark editable areas with an identifier that lets learners reuse code between pages. Mark an editable area as a source area by using the `copy-source(``)` and `end-copy-source` comment syntax. Mark another editable area as a copy destination by using the `copy-destination(``, ``)` comment syntax. Once you’ve marked both the source and destination areas, the code a learner types in the source area becomes available in the destination area if they’ve passed the source page’s assessment.
+You can mark editable areas with an identifier that lets learners reuse code between pages. Mark an editable area as a source area by using the `copy-source(`*identifier*`)` and `end-copy-source` comment syntax. Mark another editable area as a copy destination by using the `copy-destination(`*playgroundpage*`, `*identifier*`)` comment syntax. Once you’ve marked both the source and destination areas, the code a learner types in the source area becomes available in the destination area if they’ve passed the source page’s assessment.
 
 Copy-source areas depend on information you specify in the playground page’s `Manifest.plist` file’s `CopyCodeSetup` dictionary. Use the following keys and values in the `CopyCodeSet` dictionary to configure a copy-source area:
+
+- **`CopyCommandButtonTitle`**: The title for the copy command button. If you don’t specify a title, it’s set to “Copy my code.”
+- **`DefaultCommandButtonTitle`**: The title of the button used to copy the default code to the current playground page. If you don’t specify a title, it’s set to “Start with provided code.”
+- **`NavigateCommandButtonTitle`**: The title for the navigate command button. If you don’t specify a title, it’s set to “Go to `<PREVIOUS_PAGE>`,” where `<PREVIOUS_PAGE>` is substituted for the name of the previous page.
+- **`NotReadyToCopyInstructions`**: **Required.** The text to show when the code isn’t ready to be copied to the current page because the learner hasn’t passed the required assessment.
+- **`ReadyToCopyInstructions`**: **Required.** The text to show when the code is ready to be copied to the current page.
 
 For more information on configuring a page’s manifest, see [`Specify the Page Name and Metadata`](adding-a-page-to-a-playground-book#Specify-the-Page-Name-and-Metadata.md).
 

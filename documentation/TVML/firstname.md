@@ -18,6 +18,8 @@ Here’s an example that sets the first name for a monogram.
 
 ##### Values for Firstname
 
+- **String**: The first name of a person.
+
 ##### Elements That Use Firstname
 
 - [`monogram`](monogram.md)

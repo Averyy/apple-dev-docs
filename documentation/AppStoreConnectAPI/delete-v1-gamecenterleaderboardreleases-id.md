@@ -8,6 +8,14 @@ Delete a new leaderboard release.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardReleases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)

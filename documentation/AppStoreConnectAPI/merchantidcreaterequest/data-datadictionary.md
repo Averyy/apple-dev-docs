@@ -17,6 +17,11 @@ object MerchantIdCreateRequest.Data
 ### Dictionaries
 - [object MerchantIdCreateRequest.Data.Attributes](merchantidcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (MerchantIdCreateRequest.Data.Attributes) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

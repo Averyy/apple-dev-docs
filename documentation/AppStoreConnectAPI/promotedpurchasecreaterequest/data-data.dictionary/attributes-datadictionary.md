@@ -12,6 +12,11 @@
 object PromotedPurchaseCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `enabled` (boolean)
+- `visibleForAllUsers` (boolean) *(required)*
+
 ## See Also
 
 - [object PromotedPurchaseCreateRequest.Data.Relationships](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

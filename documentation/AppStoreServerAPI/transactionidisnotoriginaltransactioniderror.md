@@ -22,6 +22,11 @@ object TransactionIdIsNotOriginalTransactionIdError
 
 Not all transaction identifiers are original transaction identifiers. For more information, see [`originalTransactionId`](originaltransactionid.md).
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

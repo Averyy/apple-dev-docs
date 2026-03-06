@@ -14,6 +14,14 @@ Data about the card, including its expiration date and suffix.
 object CardMetadata
 ```
 
+## Properties
+
+- `cardCountry` (string): The 2-letter ISO country code.
+- `expirationDate` (string): The card’s expiration date.
+- `fpanSuffix` (string): The last four digits of a card’s number.
+- `longDescription` (string): The long card description.
+- `shortDescription` (string): The short card description.
+
 ## See Also
 
 - [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)

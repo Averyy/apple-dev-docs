@@ -21,6 +21,14 @@ object BetaFeedbackScreenshotSubmission
   Attributes that describe a `BetaFeedbackScreenshotSubmission` resource.
 - [object BetaFeedbackScreenshotSubmission.Relationships](betafeedbackscreenshotsubmission/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (BetaFeedbackScreenshotSubmission.Attributes): Attributes that describe a `BetaFeedbackScreenshotSubmission` resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (BetaFeedbackScreenshotSubmission.Relationships)
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BetaFeedbackScreenshotSubmissionResponse](betafeedbackscreenshotsubmissionresponse.md)

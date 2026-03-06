@@ -26,7 +26,7 @@ Unless your use case calls for a nonce with a specific value, use the [`init()`]
 
 ## Parameters
 
-- `data`: A 12-byte data representation of the nonce.   The initializer throws an error if the data isn’t 12 bytes long.
+- `data`: A 12-byte data representation of the nonce. The initializer throws an error if the data isn’t 12 bytes long.
 
 ## See Also
 

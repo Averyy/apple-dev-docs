@@ -36,7 +36,7 @@ The returned index is one past the index of the last element updated. If `source
 
 ## Parameters
 
-- `source`: A buffer slice containing the values to move.   The memory region underlying   must be initialized.
+- `source`: A buffer slice containing the values to move. The memory region underlying `source` must be initialized.
 
 
 ---

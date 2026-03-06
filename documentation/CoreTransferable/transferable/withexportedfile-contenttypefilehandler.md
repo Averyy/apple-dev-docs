@@ -26,8 +26,8 @@ This converts a [`Transferable`](transferable.md) item into a temporary file, an
 
 ## Parameters
 
-- `contentType`: A content type of the requested file.   If the content type is not provided, CoreTransferable creates   a file from the first   that supports export.
-- `fileHandler`: A closure that accepts a file URL as a parameter.   The file is written to a temporary destination and removed   after the closure returns.
+- `contentType`: A content type of the requested file. If the content type is not provided, CoreTransferable creates a file from the first `TransferRepresentation` that supports export.
+- `fileHandler`: A closure that accepts a file URL as a parameter. The file is written to a temporary destination and removed after the closure returns.
 
 
 ---

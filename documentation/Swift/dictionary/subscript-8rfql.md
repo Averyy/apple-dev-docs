@@ -26,7 +26,7 @@ The value associated with `key` if `key` is in the dictionary; otherwise, `nil`.
 
 #### Overview
 
-This  subscript returns the value for the given key if the key is found in the dictionary, or `nil` if the key is not found.
+This *key-based* subscript returns the value for the given key if the key is found in the dictionary, or `nil` if the key is not found.
 
 The following example creates a new dictionary and prints the value of a key found in the dictionary (`"Coral"`) and a key not found in the dictionary (`"Cerise"`).
 

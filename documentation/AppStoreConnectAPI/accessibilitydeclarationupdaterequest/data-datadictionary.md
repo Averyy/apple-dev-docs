@@ -20,6 +20,12 @@ object AccessibilityDeclarationUpdateRequest.Data
 - [object AccessibilityDeclarationUpdateRequest.Data.Attributes](accessibilitydeclarationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes you set that describe the updated accessibility declaration resource.
 
+## Properties
+
+- `attributes` (AccessibilityDeclarationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

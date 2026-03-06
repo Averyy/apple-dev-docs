@@ -12,6 +12,11 @@
 object GameCenterLeaderboardSetLocalization.Relationships.GameCenterLeaderboardSetImage.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

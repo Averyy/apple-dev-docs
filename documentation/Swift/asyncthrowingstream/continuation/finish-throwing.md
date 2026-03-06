@@ -26,7 +26,7 @@ Calling this function more than once has no effect. After calling finish, the st
 
 ## Parameters
 
-- `error`: The error to throw, or  , to finish normally.
+- `error`: The error to throw, or `nil`, to finish normally.
 
 
 ---

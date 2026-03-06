@@ -17,6 +17,11 @@ object AppStoreVersionExperimentV2.Relationships.ControlVersions
 ### Objects
 - [object AppStoreVersionExperimentV2.Relationships.ControlVersions.Data](appstoreversionexperimentv2/relationships-data.dictionary/controlversions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentV2.Relationships.ControlVersions.Data])
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2.Relationships.App](appstoreversionexperimentv2/relationships-data.dictionary/app-data.dictionary.md)

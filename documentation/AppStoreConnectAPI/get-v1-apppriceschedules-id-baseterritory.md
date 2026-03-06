@@ -12,6 +12,40 @@ Read the base territory and currency for a specific app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/baseTerritory
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "territories",
+    "id" : "CAN",
+    "attributes" : {
+      "currency" : "CAD"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/territories/CAN"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/baseTerritory"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appPriceSchedules/{id}/baseTerritory`
+
+## Parameters
+
+- `fields[territories]` ([string])
+
 ## See Also
 
 - [Read price schedule information for an app](get-v1-apps-_id_-apppriceschedule.md)

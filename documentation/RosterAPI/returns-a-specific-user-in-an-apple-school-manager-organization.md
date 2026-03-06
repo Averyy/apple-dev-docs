@@ -18,6 +18,42 @@ Access to the `users` resource requires authorization to the `edu.users.read` sc
 
 ##### Example
 
+**Request**:
+
+```None
+curl "https://api-school.apple.com/rosterapi/v1/users/1234" \
+        -H "Authorization: Bearer ${TOKEN}"
+```
+
+**Response**:
+
+```json
+{
+  "id": "1234",
+  "email": "user@example.edu",
+  "givenName": "Finny",
+  "middleName”: "Kim",
+  "familyName": "Ho",
+  "grade": "10",
+  "roleLocationMapping": [
+    {
+      "roleName": "Student",
+      "locationId": "LO:1234"
+    }
+  ],
+  "dateCreated": "2022-04-25T16:00:45Z",
+  "dateLastModified": "2022-04-25T16:00:45Z"
+}
+```
+
+## Endpoint
+
+`GET https://api-school.apple.com/rosterapi/v1/users/{userId}`
+
+## Parameters
+
+- `userId` (string) *(required)*: The identifier from the user. Use the `id` field from the [`User`](user.md) object.
+
 ## See Also
 
 - [object User](user.md)

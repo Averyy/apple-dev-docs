@@ -17,6 +17,9 @@ The geometric tangent of the currently-processed data in a given coordinate spac
 
 #### Parameter Descriptions
 
+- **`Space`**: The space in which the shader defines the bitangent vector; the default is `object`.
+- **`Index`**: The index of the texture coordinates that the node computes the tangent against; the default is `0`.
+
 #### Discussion
 
 Valid values for the `Space` parameter include the following:

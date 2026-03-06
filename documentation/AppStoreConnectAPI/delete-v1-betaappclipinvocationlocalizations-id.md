@@ -8,6 +8,14 @@ Delete localized metadata you configured for an App Clip that testers launch usi
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaAppClipInvocationLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Beta App Clip Invocation Localizations resource.
+
 ## See Also
 
 - [Create Localized Metadata for a Beta App Clip Invocation](post-v1-betaappclipinvocationlocalizations.md)

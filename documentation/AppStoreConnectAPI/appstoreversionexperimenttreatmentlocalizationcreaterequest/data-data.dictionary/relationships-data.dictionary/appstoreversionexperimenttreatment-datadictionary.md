@@ -18,6 +18,10 @@ object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relation
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment.Data](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app store version experiment treatment localization create request.
 
+## Properties
+
+- `data` (AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment.Data) *(required)*
+
 
 ---
 

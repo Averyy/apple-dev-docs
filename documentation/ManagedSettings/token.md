@@ -23,6 +23,10 @@ Managed Settings uses a `Token` to preserve user privacy and prevent anyone outs
 
 The ManagedSettings framework provides the following types of tokens:
 
+- **[`ApplicationToken`](applicationtoken.md)**: An opaque representation of a selected app.
+- **[`WebDomainToken`](webdomaintoken.md)**: An opaque representation of a selected web domain.
+- **[`ActivityCategoryToken`](activitycategorytoken.md)**: An opaque representation of a selected category of activity.
+
 ## Relationships
 
 ### Conforms To

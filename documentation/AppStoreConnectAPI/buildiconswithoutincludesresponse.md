@@ -12,6 +12,12 @@
 object BuildIconsWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([BuildIcon]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BuildIcon](buildicon.md)

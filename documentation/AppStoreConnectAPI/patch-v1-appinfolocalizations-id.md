@@ -8,6 +8,14 @@ Modify localized app-level information for a particular language.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Info Localization](post-v1-appinfolocalizations.md)

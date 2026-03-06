@@ -17,6 +17,10 @@ object GameCenterActivityVersionCreateRequest.Data.Relationships
 ### Dictionaries
 - [object GameCenterActivityVersionCreateRequest.Data.Relationships.Activity](gamecenteractivityversioncreaterequest/data-data.dictionary/relationships-data.dictionary/activity-data.dictionary.md)
 
+## Properties
+
+- `activity` (GameCenterActivityVersionCreateRequest.Data.Relationships.Activity) *(required)*
+
 
 ---
 

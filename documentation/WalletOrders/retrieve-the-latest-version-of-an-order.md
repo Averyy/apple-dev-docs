@@ -14,6 +14,15 @@ Retrieves the latest signed and compressed version of an order.
 
 The device uses this endpoint for both initial and subsequent attempts to retrieve an order. Make sure you support standard HTTP caching on this endpoint.
 
+## Endpoint
+
+`GET https://your-web-service.com/v1/orders/{orderTypeIdentifier}/{orderIdentifier}`
+
+## Parameters
+
+- `Authorization` (string) *(required)*: The authentication for an order. The scheme is `AppleOrder` with the [`Order`](order.md)’s value for the `authenticationToken` key as parameter. For example, `AppleOrder {authenticationToken}`.
+- `If-Modified-Since` (string): If available, the most recent `If-Modified` value.
+
 ## See Also
 
 - [Creating the source for an order](creating-the-source-for-an-order.md)

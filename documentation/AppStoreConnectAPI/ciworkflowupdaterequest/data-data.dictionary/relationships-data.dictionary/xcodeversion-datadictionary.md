@@ -20,6 +20,10 @@ object CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion
 - [object CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion.Data](ciworkflowupdaterequest/data-data.dictionary/relationships-data.dictionary/xcodeversion-data.dictionary/data-data.dictionary.md)
   The type and ID of the Xcode Versions resource that you’re relating with the Workflows resource you’re updating.
 
+## Properties
+
+- `data` (CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion.Data): The ID and type of the related Xcode Versions resource.
+
 ## See Also
 
 - [object CiWorkflowUpdateRequest.Data.Relationships.MacOsVersion](ciworkflowupdaterequest/data-data.dictionary/relationships-data.dictionary/macosversion-data.dictionary.md)

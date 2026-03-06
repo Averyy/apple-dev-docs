@@ -14,6 +14,11 @@ Attributes that describe an Android to iOS app mapping detail update request res
 object AndroidToIosAppMappingDetailUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appSigningKeyPublicCertificateSha256Fingerprints` ([string])
+- `packageName` (string)
+
 
 ---
 

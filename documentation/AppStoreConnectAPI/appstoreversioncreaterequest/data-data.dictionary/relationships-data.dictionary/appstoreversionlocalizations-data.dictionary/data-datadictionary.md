@@ -12,6 +12,11 @@
 object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionCreateRequest.Data.Relationships.App](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)

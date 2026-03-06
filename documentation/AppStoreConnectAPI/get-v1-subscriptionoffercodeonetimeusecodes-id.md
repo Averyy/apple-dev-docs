@@ -8,6 +8,15 @@ Get details about a specific one-time use offer code for an auto-renewable subsc
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodeOneTimeUseCodes/{id}`
+
+## Parameters
+
+- `fields[subscriptionOfferCodeOneTimeUseCodes]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)

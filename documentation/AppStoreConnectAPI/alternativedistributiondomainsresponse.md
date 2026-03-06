@@ -14,6 +14,12 @@ A response that contains a list of alternative distribution domain resources.
 object AlternativeDistributionDomainsResponse
 ```
 
+## Properties
+
+- `data` ([AlternativeDistributionDomain]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionDomain](alternativedistributiondomain.md)

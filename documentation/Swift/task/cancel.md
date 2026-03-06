@@ -30,7 +30,7 @@ Cancelling a task has three primary effects:
 
 Task cancellation is cooperative and idempotent.
 
-Cancelling a task does not automatically cause arbitrary functions on the task to stop running or throw errors. A function  choose to react to cancellation by ending its work early, and it is conventional to signal that to callers by throwing `CancellationError`. However, a function that doesn’t specifically check for cancellation will run to completion normally, even if the task it is running on is canceled. However, that function might still end early if it calls other code that handles cancellation by throwing and that function doesn’t handle the error.
+Cancelling a task does not automatically cause arbitrary functions on the task to stop running or throw errors. A function *may* choose to react to cancellation by ending its work early, and it is conventional to signal that to callers by throwing `CancellationError`. However, a function that doesn’t specifically check for cancellation will run to completion normally, even if the task it is running on is canceled. However, that function might still end early if it calls other code that handles cancellation by throwing and that function doesn’t handle the error.
 
 It’s safe to cancel a task from any task or thread. It’s safe for multiple tasks or threads to cancel the same task at the same time. Cancelling a task that has already been canceled has no additional effect.
 

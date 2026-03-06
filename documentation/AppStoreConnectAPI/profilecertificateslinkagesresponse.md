@@ -17,6 +17,12 @@ object ProfileCertificatesLinkagesResponse
 ### Dictionaries
 - [object ProfileCertificatesLinkagesResponse.Data](profilecertificateslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([ProfileCertificatesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Profile](profile.md)

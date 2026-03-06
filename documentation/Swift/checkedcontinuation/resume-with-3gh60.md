@@ -28,7 +28,7 @@ After `resume` enqueues the task, control immediately returns to the caller. The
 
 ## Parameters
 
-- `result`: A value to either return or throw from the   continuation.
+- `result`: A value to either return or throw from the continuation.
 
 
 ---

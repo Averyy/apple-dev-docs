@@ -14,6 +14,11 @@ A response that contains a single webhook ping response resource.
 object WebhookPingResponse
 ```
 
+## Properties
+
+- `data` (WebhookPing) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

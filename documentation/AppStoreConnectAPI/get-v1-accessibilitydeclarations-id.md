@@ -12,6 +12,14 @@ Get information about a specific accessibility declaration.
 
 - [Configuring accessibility declarations for your app](configuring-accessibility-declarations.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/accessibilityDeclarations/{id}`
+
+## Parameters
+
+- `fields[accessibilityDeclarations]` ([string])
+
 ## See Also
 
 - [List all accessibility declarations for an app](get-v1-apps-_id_-accessibilitydeclarations.md)

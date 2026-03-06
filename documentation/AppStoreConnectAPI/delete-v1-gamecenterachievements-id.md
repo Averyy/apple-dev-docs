@@ -12,6 +12,26 @@ Delete a specific achievement.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/082314fb-8b23-49db-b62a-08aad519e5aa
+```
+
+**Response**:
+
+```json
+HTTP/1.1 204 No Content
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List all achievements`](get-v1-gamecenterdetails-_id_-gamecenterachievements.md) response.
+
 ## See Also
 
 - [Create a Game Center achievement](post-v2-gamecenterachievements.md)

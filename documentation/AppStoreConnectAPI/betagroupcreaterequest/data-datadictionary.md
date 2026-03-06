@@ -22,6 +22,12 @@ object BetaGroupCreateRequest.Data
 - [object BetaGroupCreateRequest.Data.Relationships](betagroupcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (BetaGroupCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
+- `relationships` (BetaGroupCreateRequest.Data.Relationships) *(required)*: Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

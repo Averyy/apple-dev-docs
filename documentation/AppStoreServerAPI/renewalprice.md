@@ -6,7 +6,7 @@
 The renewal price, in milliunits, of the auto-renewable subscription that renews at the next billing period.
 
 **Availability**:
-- App Store Server API 1.12+
+- App Store Server API 1.0+
 
 ## Declaration
 

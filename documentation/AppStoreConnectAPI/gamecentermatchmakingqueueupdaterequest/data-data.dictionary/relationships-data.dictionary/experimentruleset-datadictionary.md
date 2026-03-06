@@ -20,6 +20,10 @@ object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships.ExperimentRule
 - [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships.ExperimentRuleSet.Data](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/relationships-data.dictionary/experimentruleset-data.dictionary/data-data.dictionary.md)
   The data structure for the experimental rule set.
 
+## Properties
+
+- `data` (GameCenterMatchmakingQueueUpdateRequest.Data.Relationships.ExperimentRuleSet.Data)
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships.RuleSet](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary.md)

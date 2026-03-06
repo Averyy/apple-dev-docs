@@ -19,6 +19,10 @@ object MerchantIdUpdateRequest
 ### Dictionaries
 - [object MerchantIdUpdateRequest.Data](merchantidupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (MerchantIdUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object MerchantId](merchantid.md)

@@ -14,6 +14,13 @@ A response that contains a list of activity localization resources.
 object GameCenterActivityLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterActivityLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)

@@ -20,6 +20,10 @@ object BuildUploadFileCreateRequest.Data.Relationships
 - [object BuildUploadFileCreateRequest.Data.Relationships.BuildUpload](builduploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary/buildupload-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `buildUpload` (BuildUploadFileCreateRequest.Data.Relationships.BuildUpload) *(required)*
+
 
 ---
 

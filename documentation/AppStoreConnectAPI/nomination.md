@@ -20,6 +20,14 @@ object Nomination
 - [object Nomination.Attributes](nomination/attributes-data.dictionary.md)
 - [object Nomination.Relationships](nomination/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Nomination.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (Nomination.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object NominationUpdateRequest](nominationupdaterequest.md)

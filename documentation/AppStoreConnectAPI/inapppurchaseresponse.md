@@ -14,6 +14,12 @@ A response that contains a single In-App Purchases resource.
 object InAppPurchaseResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchase) *(required)*
+- `links` (DocumentLinks) *(required)*
+- `included` ([App])
+
 ## See Also
 
 - [object App](app.md)

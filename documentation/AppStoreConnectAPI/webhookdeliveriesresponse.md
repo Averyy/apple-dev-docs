@@ -14,6 +14,13 @@ A response that contains a list of response resources for webhook deliveries.
 object WebhookDeliveriesResponse
 ```
 
+## Properties
+
+- `data` ([WebhookDelivery]) *(required)*
+- `included` ([WebhookEvent])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Webhook](webhook.md)

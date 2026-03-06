@@ -16,6 +16,10 @@ object GameCenterLeaderboardSetV2UpdateRequest.Data.Attributes
 
 - referenceName:
 
+## Properties
+
+- `referenceName` (string)
+
 
 ---
 

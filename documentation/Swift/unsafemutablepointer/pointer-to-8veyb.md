@@ -30,7 +30,7 @@ If the key path represents a computed property, this function will return `nil`.
 
 ## Parameters
 
-- `property`: A   whose   is  .
+- `property`: A `WritableKeyPath` whose `Root` is `Pointee`.
 
 
 ---

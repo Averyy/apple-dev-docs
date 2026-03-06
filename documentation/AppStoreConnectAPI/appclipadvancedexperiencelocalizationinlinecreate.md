@@ -20,6 +20,12 @@ object AppClipAdvancedExperienceLocalizationInlineCreate
 - [object AppClipAdvancedExperienceLocalizationInlineCreate.Attributes](appclipadvancedexperiencelocalizationinlinecreate/attributes-data.dictionary.md)
   The attributes that describe an Advanced App Clip Experience Localization Inline Creates resource.
 
+## Properties
+
+- `attributes` (AppClipAdvancedExperienceLocalizationInlineCreate.Attributes): The attributes that describe the Advanced App Clip Experience Localization Inline Creates resource.
+- `id` (string): The opaque resource ID that uniquely identifies an Advanced App Clip Experience Localization Inline Creates resource.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceCreateRequest.Data](appclipadvancedexperiencecreaterequest/data-data.dictionary.md)

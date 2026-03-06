@@ -31,10 +31,10 @@ The JWS payload contains JSON-encoded information specific to the SiriKit Cloud 
 
 | Key | Description |
 | --- | --- |
-| `intent` | This is a mapping of (abbreviated) Intent names to the SiriKit Cloud Media endpoints and configuration options supported by web endpoint handlers. |
-| `media` | This is a mapping of queue API endpoints for the particular configuration valid for the service (or user). |
+| `intent` | **(Required)** This is a mapping of (abbreviated) Intent names to the SiriKit Cloud Media endpoints and configuration options supported by web endpoint handlers. |
+| `media` | **(Required)** This is a mapping of queue API endpoints for the particular configuration valid for the service (or user). |
 | `url` | The base URL for endpoints. This value can be a fully qualified URL, or a relative URL,  used to retrieve this configuration resource. |
-| `version` | The supported version of the SiriKit Cloud Media API. |
+| `version` | **(Required)** The supported version of the SiriKit Cloud Media API. |
 
 After creating the JWS, sign it using the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash algorithm. The SiriKit Cloud Media API identifies the intents and media endpoints your service supports by parsing the configuration response. In the decoded JWS below, the service is configured to support the add media, play media, and update media affinity intents, and provides URLs to each as well as the media queue endpoints used to handle intent responses:
 
@@ -82,6 +82,20 @@ After creating the JWS, sign it using the Elliptic Curve Digital Signature Algor
 ```
 
 Regardless of the programming language you’re using with the SiriKit Cloud Media API, there are a variety of open source libraries available online for creating and signing JWS data. Please verify and validate your response before sending it to the SiriKit Cloud Media API.
+
+## Endpoint
+
+`GET https://cloudextension-testservice.local/api/configuration`
+
+## Parameters
+
+- `Accept-Language` (string) *(required)*: The client’s current user interface language. Your service responds to requests with localized content for this language, if available.
+- `Cache-Control` (string) *(required)*: Directives for your service’s caching behavior.
+- `If-None-Match` (ExtensionConfigTag): The identifier of the client’s current configuration information.
+- `Request-Timeout` (uint32) *(required)*: An approximate deadline, in seconds, for processing this real-time user request.
+- `User-Agent` (string) *(required)*: The extension protocol running on the client. This is an [`RFC 7231`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7231)-compliant string that contains the product name *AppleCloudExtension* and the SiriKit Extension library version running on the client.
+- `x-applecloudextension-retry-count` (uint32): The number of previous requests from the client. The client omits this header on the first attempt.
+- `x-applecloudextension-session-id` (string) *(required)*: A constant session identifier to include in each request and response. Your service responds to each request with the session ID provided by the client.
 
 ## See Also
 

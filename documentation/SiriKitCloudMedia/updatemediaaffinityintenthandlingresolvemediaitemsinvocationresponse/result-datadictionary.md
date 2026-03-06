@@ -14,6 +14,10 @@ The results of resolving the media items in an intent to update media affinity.
 object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse.Result
 ```
 
+## Properties
+
+- `resolutionResult` ([UpdateMediaAffinityMediaItemResolutionResult]) *(required)*: A collection of media items that fulfill the intent, or information about why your service can’t identify the media items.
+
 
 ---
 

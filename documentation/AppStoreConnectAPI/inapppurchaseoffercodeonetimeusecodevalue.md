@@ -14,6 +14,12 @@ The data structure that represents an in-app purchase offer code one-time use co
 object InAppPurchaseOfferCodeOneTimeUseCodeValue
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

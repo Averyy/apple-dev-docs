@@ -19,6 +19,11 @@ object BetaFeedbackCrashSubmissionCrashLogLinkageResponse
 ### Dictionaries
 - [object BetaFeedbackCrashSubmissionCrashLogLinkageResponse.Data](betafeedbackcrashsubmissioncrashloglinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaFeedbackCrashSubmissionCrashLogLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaCrashLog](betacrashlog.md)

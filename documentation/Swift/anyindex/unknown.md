@@ -1,9 +1,9 @@
-# ..<(_:_:)
+# <(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a half-open range that contains its lower bound but not its upper bound.
+Returns a Boolean value indicating whether the first argument represents a position before the second argument.
 
 **Availability**:
 - iOS 8.0+
@@ -17,27 +17,19 @@ Returns a half-open range that contains its lower bound but not its upper bound.
 ## Declaration
 
 ```swift
-static func ..< (minimum: Self, maximum: Self) -> Range<Self>
+static func < (lhs: AnyIndex, rhs: AnyIndex) -> Bool
 ```
 
 #### Discussion
 
-Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
-
-```swift
-let lessThanFive = 0.0..<5.0
-print(lessThanFive.contains(3.14))  // Prints "true"
-print(lessThanFive.contains(5.0))   // Prints "false"
-```
-
-> **Note**: `minimum <= maximum`.
+The types of the two underlying indices must be identical.
 
 ## Parameters
 
-- `minimum`: The lower bound for the range.
-- `maximum`: The upper bound for the range.
+- `lhs`: An index to compare.
+- `rhs`: Another index to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/anyindex/'.._(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/anyindex/_(_:_:))*

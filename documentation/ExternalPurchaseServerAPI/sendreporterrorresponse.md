@@ -14,6 +14,10 @@ An error response that indicates your external purchase report didn’t succeed,
 object SendReportErrorResponse
 ```
 
+## Properties
+
+- `errors` ([*]) *(required)*
+
 ## See Also
 
 - [Send External Purchase Report](send-external-purchase-report.md)

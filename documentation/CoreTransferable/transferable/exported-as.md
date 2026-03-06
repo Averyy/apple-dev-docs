@@ -28,7 +28,7 @@ The default implementation of this function is available to all types that confo
 
 ## Parameters
 
-- `contentType`: A content type of the returned data.   If no content type is provided, CoreTransferable generates data using   the first   in the   conformance that supports export.
+- `contentType`: A content type of the returned data. If no content type is provided, CoreTransferable generates data using the first `TransferRepresentation` in the `Transferable` conformance that supports export.
 
 
 ---

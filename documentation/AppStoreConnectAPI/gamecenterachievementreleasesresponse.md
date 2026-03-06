@@ -14,6 +14,13 @@ A response that contains a list of achievement release resources.
 object GameCenterAchievementReleasesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterAchievementRelease]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementRelease](gamecenterachievementrelease.md)

@@ -17,6 +17,8 @@ A 2D cellular noise generator.
 
 #### Parameter Descriptions
 
+- **`Texture Coordinates`**: The 2D coordinate at which the data is read to map the texture onto a surface. The default is to use the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
+
 #### Discussion
 
 The `Cellular Noise 2D` shader node procedurally generates noise patterns that you can use to add texture and variation to materials. Below is an example of a node graph that uses the `Cellular Noise 2D` node to generate a black and white pattern procedurally:

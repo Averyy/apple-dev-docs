@@ -22,7 +22,7 @@ This dispatches an input report to the system, as if a person is interacting wit
 
 ## Parameters
 
-- `data`: The bytes to send as a part of the input report. Determining the correct values can be aided by referencing the device’s report descriptor.   If there are multiple reports, the first byte should be the report ID.
+- `data`: The bytes to send as a part of the input report. Determining the correct values can be aided by referencing the device’s report descriptor. If there are multiple reports, the first byte should be the report ID.
 - `timestamp`: The time that the report originated.
 
 

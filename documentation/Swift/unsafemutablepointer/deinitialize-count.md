@@ -31,7 +31,7 @@ The region of memory starting at this pointer and covering `count` instances of 
 
 ## Parameters
 
-- `count`: The number of instances to deinitialize.   must   not be negative.
+- `count`: The number of instances to deinitialize. `count` must not be negative.
 
 
 ---

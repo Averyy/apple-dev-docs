@@ -16,6 +16,15 @@ object SubscriptionCreateRequest.Data.Attributes
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
 
+## Properties
+
+- `familySharable` (boolean)
+- `name` (string) *(required)*
+- `productId` (string) *(required)*
+- `reviewNote` (string)
+- `subscriptionPeriod` (string)
+- `groupLevel` (integer)
+
 ## See Also
 
 - [object SubscriptionCreateRequest.Data.Relationships](subscriptioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)

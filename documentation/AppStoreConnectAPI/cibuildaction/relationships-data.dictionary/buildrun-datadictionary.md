@@ -20,6 +20,11 @@ object CiBuildAction.Relationships.BuildRun
 - [object CiBuildAction.Relationships.BuildRun.Data](cibuildaction/relationships-data.dictionary/buildrun-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Build Runs resource.
 
+## Properties
+
+- `data` (CiBuildAction.Relationships.BuildRun.Data): The ID and type of the related Build Runs resource.
+- `links` (RelationshipLinks): The navigational links that include the self-link.
+
 
 ---
 

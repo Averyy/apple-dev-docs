@@ -8,6 +8,14 @@ Read details about a specific subscription image.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List subscription images`](get-v1-subscriptions-_id_-images.md) response.
+
 ## See Also
 
 - [Create an image for a subscription](post-v1-subscriptionimages.md)

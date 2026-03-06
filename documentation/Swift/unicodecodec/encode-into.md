@@ -35,7 +35,7 @@ print(bytes)
 ## Parameters
 
 - `input`: The Unicode scalar value to encode.
-- `processCodeUnit`: A closure that processes one code unit argument at a   time.
+- `processCodeUnit`: A closure that processes one code unit argument at a time.
 
 
 ---

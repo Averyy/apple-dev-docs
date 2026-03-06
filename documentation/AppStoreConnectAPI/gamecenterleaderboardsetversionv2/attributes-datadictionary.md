@@ -16,6 +16,11 @@ object GameCenterLeaderboardSetVersionV2.Attributes
 
 - state:
 
+## Properties
+
+- `state` (GameCenterVersionState)
+- `version` (integer)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetVersionV2.Relationships](gamecenterleaderboardsetversionv2/relationships-data.dictionary.md)

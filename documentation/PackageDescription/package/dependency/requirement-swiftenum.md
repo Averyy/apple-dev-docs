@@ -18,6 +18,8 @@ enum Requirement
 
 The dependency requirement can be defined as one of three different version requirements:
 
+- **A version-based requirement**: Decide whether your project accepts updates to a package dependency up to the next major version or up to the next minor version. To be more restrictive, select a specific version range or an exact version. Major versions tend to have more significant changes than minor versions, and may require you to modify your code when they update.
+
 The version rule requires Swift packages to conform to semantic versioning. To learn more about the semantic versioning standard, visit the [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org) website.
 
 Selecting the version requirement is the recommended way to add a package dependency. It allows you to create a balance between restricting changes and obtaining improvements and features. - term A branch-based requirement: Select the name of the branch for your package dependency to follow. Use branch-based dependencies when you’re developing multiple packages in tandem or when you don’t want to publish versions of your package dependencies.

@@ -20,6 +20,10 @@ object AppStoreVersionExperimentTreatmentUpdateRequest
 - [object AppStoreVersionExperimentTreatmentUpdateRequest.Data](appstoreversionexperimenttreatmentupdaterequest/data-data.dictionary.md)
   The request body you use to update an app store version experiment treatment update request.
 
+## Properties
+
+- `data` (AppStoreVersionExperimentTreatmentUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)

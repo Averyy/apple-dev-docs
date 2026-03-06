@@ -17,6 +17,12 @@ object CiBuildRunActionsLinkagesResponse
 ### Dictionaries
 - [object CiBuildRunActionsLinkagesResponse.Data](cibuildrunactionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([CiBuildRunActionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CiBuildRun](cibuildrun.md)

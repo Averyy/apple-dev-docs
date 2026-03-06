@@ -18,6 +18,14 @@ object SubscriptionCreateItem
 
 - [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
 
+## Properties
+
+- `SKU` (SKU) *(required)*: The item’s product identifier, which you define.
+- `description` (description) *(required)*
+- `displayName` (displayName) *(required)*
+- `offer` (Offer)
+- `price` (price) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

@@ -28,6 +28,14 @@ object CiWorkflow.Relationships
 ### Dictionaries
 - [object CiWorkflow.Relationships.BuildRuns](ciworkflow/relationships-data.dictionary/buildruns-data.dictionary.md)
 
+## Properties
+
+- `product` (CiWorkflow.Relationships.Product): The related Products resource.
+- `repository` (CiWorkflow.Relationships.Repository): The workflow’s related Git repository.
+- `xcodeVersion` (CiWorkflow.Relationships.XcodeVersion): The related Xcode Versions resource.
+- `macOsVersion` (CiWorkflow.Relationships.MacOsVersion): The related macOS Versions resource.
+- `buildRuns` (CiWorkflow.Relationships.BuildRuns)
+
 ## See Also
 
 - [object CiWorkflow.Attributes](ciworkflow/attributes-data.dictionary.md)

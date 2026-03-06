@@ -16,9 +16,9 @@ struct Subject
 
 #### Overview
 
-A  is a foreground object in an image. A single image can have multiple subjects. For example, in an image of three different coffee mugs, the framework may classify all three mugs as separate subjects. In cases where the framework can’t separate overlapping objects in a photo as individual subjects, a subject may consist of two or more objects.
+A *subject* is a foreground object in an image. A single image can have multiple subjects. For example, in an image of three different coffee mugs, the framework may classify all three mugs as separate subjects. In cases where the framework can’t separate overlapping objects in a photo as individual subjects, a subject may consist of two or more objects.
 
-VisionKit enables your app to extract, or , the image subjects individually, or together, with the background removed. For more information, see [`image`](imageanalysisoverlayview/subject/image.md).
+VisionKit enables your app to extract, or *lift*, the image subjects individually, or together, with the background removed. For more information, see [`image`](imageanalysisoverlayview/subject/image.md).
 
 An [`ImageAnalysisOverlayView`](imageanalysisoverlayview.md) object contains an array of subjects ([`subjects`](imageanalysisoverlayview/subjects.md)) that activates when [`preferredInteractionTypes`](imageanalysisoverlayview/preferredinteractiontypes.md) contains a subject-related option, such as [`automatic`](imageanalysisoverlayview/interactiontypes/automatic.md), or [`imageSubject`](imageanalysisoverlayview/interactiontypes/imagesubject.md).
 

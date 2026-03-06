@@ -6,7 +6,9 @@ Create an article with text components and component text styles.
 
 #### Overview
 
-In [`Setting Up the Introductory Tutorial`](setting-up-the-introductory-tutorial.md), you learned how to download the article structure bundle. To create an article, you must add some JSON objects (called ) to that bundle.
+In [`Setting Up the Introductory Tutorial`](setting-up-the-introductory-tutorial.md), you learned how to download the article structure bundle. To create an article, you must add some JSON objects (called *components*) to that bundle.
+
+**On this page, you’ll learn how to add:**
 
 - Simple text components representing article content
 - Component text style defaults

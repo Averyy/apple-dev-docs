@@ -8,6 +8,14 @@ Delete an app information localization that is associated with an app.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Info Localization](post-v1-appinfolocalizations.md)

@@ -14,6 +14,12 @@ A response that contains a single Beta App Review Submissions resource.
 object BetaAppReviewSubmissionResponse
 ```
 
+## Properties
+
+- `data` (BetaAppReviewSubmission) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([Build])
+
 ## See Also
 
 - [Submit an App for Beta Review](post-v1-betaappreviewsubmissions.md)

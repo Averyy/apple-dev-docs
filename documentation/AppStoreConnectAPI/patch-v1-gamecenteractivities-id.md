@@ -8,6 +8,14 @@ Update details for a specific Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

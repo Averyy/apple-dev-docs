@@ -46,7 +46,7 @@ Using the `forEach` method is distinct from a `for`-`in` loop in two important w
 
 ## Parameters
 
-- `body`: A closure that takes an element of the sequence as a   parameter.
+- `body`: A closure that takes an element of the sequence as a parameter.
 
 
 ---

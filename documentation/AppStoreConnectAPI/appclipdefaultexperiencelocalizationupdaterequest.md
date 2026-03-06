@@ -20,6 +20,10 @@ object AppClipDefaultExperienceLocalizationUpdateRequest
 - [object AppClipDefaultExperienceLocalizationUpdateRequest.Data](appclipdefaultexperiencelocalizationupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppClipDefaultExperienceLocalizationUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object AppClipDefaultExperienceLocalization](appclipdefaultexperiencelocalization.md)

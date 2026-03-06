@@ -14,6 +14,14 @@ Attributes that describe a Routing App Coverages resource.
 object RoutingAppCoverage.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object RoutingAppCoverage.Relationships](routingappcoverage/relationships-data.dictionary.md)

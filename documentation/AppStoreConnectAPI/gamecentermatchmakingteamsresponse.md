@@ -14,6 +14,12 @@ The response body for endpoints that get multiple teams.
 object GameCenterMatchmakingTeamsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterMatchmakingTeam]) *(required)*: The teams that the endpoint fetches.
+- `links` (PagedDocumentLinks) *(required)*: The link representations of the object.
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingTeamCreateRequest](gamecentermatchmakingteamcreaterequest.md)

@@ -12,6 +12,22 @@
 object NominationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string) *(required)*
+- `deviceFamilies` ([DeviceFamily])
+- `hasInAppEvents` (boolean)
+- `launchInSelectMarketsFirst` (boolean)
+- `locales` ([string])
+- `name` (string) *(required)*
+- `notes` (string)
+- `preOrderEnabled` (boolean)
+- `publishEndDate` (date-time)
+- `publishStartDate` (date-time) *(required)*
+- `submitted` (boolean) *(required)*
+- `supplementalMaterialsUris` ([uri])
+- `type` (string) *(required)*
+
 
 ---
 

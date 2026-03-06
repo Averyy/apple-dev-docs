@@ -14,6 +14,12 @@ A response that contains a single Beta Groups resource.
 object BetaGroupResponse
 ```
 
+## Properties
+
+- `data` (BetaGroup) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Create a Beta Group](post-v1-betagroups.md)

@@ -20,6 +20,12 @@ object CiProduct.Relationships.PrimaryRepositories
 - [object CiProduct.Relationships.PrimaryRepositories.Data](ciproduct/relationships-data.dictionary/primaryrepositories-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Repositories resource that represents the product’s primary repositories.
 
+## Properties
+
+- `data` ([CiProduct.Relationships.PrimaryRepositories.Data]): The ID and type of the related Repositories resource that represents the primary repository.
+- `links` (RelationshipLinks): The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object CiProduct.Relationships.App](ciproduct/relationships-data.dictionary/app-data.dictionary.md)

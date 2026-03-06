@@ -22,6 +22,12 @@ object InAppPurchaseImageCreateRequest.Data
 - [object InAppPurchaseImageCreateRequest.Data.Relationships](inapppurchaseimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (InAppPurchaseImageCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
+- `relationships` (InAppPurchaseImageCreateRequest.Data.Relationships) *(required)*: Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

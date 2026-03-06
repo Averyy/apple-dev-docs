@@ -20,6 +20,10 @@ object AppStoreReviewAttachment.Relationships
 - [object AppStoreReviewAttachment.Relationships.AppStoreReviewDetail](appstorereviewattachment/relationships-data.dictionary/appstorereviewdetail-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appStoreReviewDetail` (AppStoreReviewAttachment.Relationships.AppStoreReviewDetail)
+
 ## See Also
 
 - [object AppStoreReviewAttachment.Attributes](appstorereviewattachment/attributes-data.dictionary.md)

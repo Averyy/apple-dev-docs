@@ -28,7 +28,7 @@ The default implementation of this function is available to all types that confo
 
 ## Parameters
 
-- `visibility`: Desired visibility level for the returned content types. Defaults to  .
+- `visibility`: Desired visibility level for the returned content types. Defaults to `.all`.
 
 
 ---

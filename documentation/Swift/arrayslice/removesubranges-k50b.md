@@ -32,7 +32,7 @@ numbers.removeSubranges(negativeIndices)
 // numbers == [5, 7, 11, 2, 6]
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

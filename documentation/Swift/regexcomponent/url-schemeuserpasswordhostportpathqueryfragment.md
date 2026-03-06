@@ -59,14 +59,14 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
 
 ## Parameters
 
-- `scheme`: A   for matching the URL scheme component.
-- `user`: A   for matching the user component.
-- `password`: A   for matching the password component.
-- `host`: A   for matching the host component.
-- `port`: A   for matching the port component.
-- `path`: A   for matching the path component.
-- `query`: A   for matching the query component.
-- `fragment`: A   for matching the fragment component.
+- `scheme`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the URL scheme component.
+- `user`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the user component.
+- `password`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the password component.
+- `host`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the host component.
+- `port`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the port component.
+- `path`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the path component.
+- `query`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the query component.
+- `fragment`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/Foundation/URL/ParseStrategy/ComponentParseStrategy) for matching the fragment component.
 
 
 ---

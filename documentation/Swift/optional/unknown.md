@@ -41,8 +41,8 @@ case let x?:
 
 ## Parameters
 
-- `lhs`: A   literal.
-- `rhs`: A value to match against  .
+- `lhs`: A `nil` literal.
+- `rhs`: A value to match against `nil`.
 
 
 ---

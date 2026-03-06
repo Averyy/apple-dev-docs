@@ -35,7 +35,7 @@ async {
 
 ## Parameters
 
-- `type`: The type of the    class. Specify  .
+- `type`: The type of the [`Data`](https://developer.apple.com/documentation/Foundation/Data) class. Specify `Data.self`.
 
 ## See Also
 

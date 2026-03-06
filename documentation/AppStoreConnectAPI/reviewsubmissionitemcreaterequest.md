@@ -17,6 +17,10 @@ object ReviewSubmissionItemCreateRequest
 ### Objects
 - [object ReviewSubmissionItemCreateRequest.Data](reviewsubmissionitemcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItemCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object ReviewSubmissionItemUpdateRequest](reviewsubmissionitemupdaterequest.md)

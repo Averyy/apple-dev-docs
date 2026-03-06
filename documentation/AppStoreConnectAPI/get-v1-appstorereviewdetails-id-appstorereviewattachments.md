@@ -8,6 +8,17 @@ List all the App Store review attachments you include with a version when you su
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreReviewDetails/{id}/appStoreReviewAttachments`
+
+## Parameters
+
+- `fields[appStoreReviewAttachments]` ([string])
+- `limit` (integer)
+- `fields[appStoreReviewDetails]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read App Store Review Attachment Information](get-v1-appstorereviewattachments-_id_.md)

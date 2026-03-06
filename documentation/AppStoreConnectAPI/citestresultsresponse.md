@@ -14,6 +14,12 @@ A response that contains a list of Test Results resources.
 object CiTestResultsResponse
 ```
 
+## Properties
+
+- `data` ([CiTestResult]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object CiBuildAction](cibuildaction.md)

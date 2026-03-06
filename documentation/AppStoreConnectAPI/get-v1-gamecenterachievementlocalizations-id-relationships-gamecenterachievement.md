@@ -8,6 +8,14 @@ Read the achievement ID associated with specific localized information.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/{id}/relationships/gameCenterAchievement`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`List all localizations for an achievement`](get-v1-gamecenterachievements-_id_-localizations.md) response.
+
 ## See Also
 
 - [Read Game Center achievement localization information](get-v2-gamecenterachievementlocalizations-_id_.md)

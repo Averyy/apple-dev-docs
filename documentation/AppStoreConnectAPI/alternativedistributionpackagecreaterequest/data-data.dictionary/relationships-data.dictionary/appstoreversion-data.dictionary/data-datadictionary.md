@@ -12,6 +12,11 @@
 object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*: Obtain the `appStoreVersion` resource ID from the [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) response.
+
 
 ---
 

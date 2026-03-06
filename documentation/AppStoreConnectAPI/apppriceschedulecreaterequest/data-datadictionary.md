@@ -17,6 +17,11 @@ object AppPriceScheduleCreateRequest.Data
 ### Objects
 - [object AppPriceScheduleCreateRequest.Data.Relationships](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (AppPriceScheduleCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -8,6 +8,10 @@ Attach a document for App Review to an App Store version.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appStoreReviewAttachments`
+
 ## See Also
 
 - [Commit an App Store Review Attachment](patch-v1-appstorereviewattachments-_id_.md)

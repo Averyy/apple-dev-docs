@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: init
 
-Runs the given throwing operation asynchronously as part of a new  top-level task.
+Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 
 **Availability**:
 - iOS 13.0+
@@ -40,11 +40,11 @@ You need to keep a reference to the task if you want to cancel it by calling the
 ## See Also
 
 - [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [static var currentPriority: TaskPriority](task/currentpriority.md)
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)

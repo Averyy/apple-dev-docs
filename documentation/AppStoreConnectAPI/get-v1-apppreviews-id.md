@@ -8,6 +8,15 @@ Get information about an app preview and its upload and processing status.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appPreviews/{id}`
+
+## Parameters
+
+- `fields[appPreviews]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)

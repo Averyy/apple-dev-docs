@@ -8,6 +8,14 @@ Update a specific pass type ID’s name.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/passTypeIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)

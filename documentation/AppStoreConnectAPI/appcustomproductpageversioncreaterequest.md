@@ -19,6 +19,10 @@ object AppCustomProductPageVersionCreateRequest
 ### Objects
 - [object AppCustomProductPageVersionCreateRequest.Data](appcustomproductpageversioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppCustomProductPageVersionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppCustomProductPageVersion](appcustomproductpageversion.md)

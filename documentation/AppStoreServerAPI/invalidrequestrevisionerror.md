@@ -18,6 +18,11 @@ object InvalidRequestRevisionError
 
 This error applies to the [`revision`](revision.md) query parameter of endpoints like [`Get Transaction History`](get-transaction-history.md) and [`Get Refund History`](get-refund-history.md).
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

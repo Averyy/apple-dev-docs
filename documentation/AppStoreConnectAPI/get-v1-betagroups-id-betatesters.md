@@ -8,6 +8,15 @@ Get a list of beta testers contained in a specific beta group.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/betaTesters`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return.
+- `fields[betaTesters]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List All Builds for a Beta Group](get-v1-betagroups-_id_-builds.md)

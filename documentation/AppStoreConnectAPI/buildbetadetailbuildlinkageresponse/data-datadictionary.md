@@ -12,6 +12,11 @@
 object BuildBetaDetailBuildLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

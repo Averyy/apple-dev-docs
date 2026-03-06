@@ -17,6 +17,10 @@ object NominationUpdateRequest.Data.Relationships.InAppEvents
 ### Dictionaries
 - [object NominationUpdateRequest.Data.Relationships.InAppEvents.Data](nominationupdaterequest/data-data.dictionary/relationships-data.dictionary/inappevents-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([NominationUpdateRequest.Data.Relationships.InAppEvents.Data])
+
 
 ---
 

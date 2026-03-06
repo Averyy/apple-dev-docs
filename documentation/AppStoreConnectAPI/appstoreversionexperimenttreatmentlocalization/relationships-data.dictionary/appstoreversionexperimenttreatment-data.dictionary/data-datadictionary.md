@@ -12,6 +12,11 @@
 object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

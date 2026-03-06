@@ -20,6 +20,10 @@ object DeviceUpdateRequest
 - [object DeviceUpdateRequest.Data](deviceupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (DeviceUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object Device](device.md)

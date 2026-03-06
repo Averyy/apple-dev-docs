@@ -19,6 +19,14 @@ object UploadOperation
 ### Objects
 - [object HttpHeader](httpheader.md)
 
+## Properties
+
+- `length` (integer)
+- `method` (string)
+- `offset` (integer)
+- `requestHeaders` ([HttpHeader])
+- `url` (string)
+
 ## See Also
 
 - [object AppPreview](apppreview.md)

@@ -157,7 +157,7 @@ All In-App Purchases that customers make are equally available to your app in th
 - [var revocationPercentage: Decimal?](transaction/revocationpercentage.md)
   The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
 - [let revocationType: Transaction.RevocationType?](transaction/revocationtype-swift.property.md)
-  The type of revocation that occurred, or `nil` if the transaction was not revoked.
+  The type of refund or revocation that applies to the transaction.
 - [var revocationTypeStringRepresentation: String?](transaction/revocationtypestringrepresentation.md)
   The string representation of the [`revocationType`](transaction/revocationtype-swift.property.md), or `nil` if the transaction was not revoked.
 

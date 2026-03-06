@@ -23,7 +23,7 @@
 - [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](string/elementsequal(_:by:).md)
   Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
 - [func enumerated() -> EnumeratedSequence<Self>](string/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](string/first(where:).md)
   Returns the first element of the sequence that satisfies the given predicate.
 - [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](string/flatmap(_:)-6chuq.md)

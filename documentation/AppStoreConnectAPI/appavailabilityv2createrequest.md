@@ -19,6 +19,11 @@ object AppAvailabilityV2CreateRequest
 ### Objects
 - [object AppAvailabilityV2CreateRequest.Data](appavailabilityv2createrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppAvailabilityV2CreateRequest.Data) *(required)*
+- `included` ([TerritoryAvailabilityInlineCreate])
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

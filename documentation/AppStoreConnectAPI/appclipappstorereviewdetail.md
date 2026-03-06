@@ -22,6 +22,14 @@ object AppClipAppStoreReviewDetail
 - [object AppClipAppStoreReviewDetail.Relationships](appclipappstorereviewdetail/relationships-data.dictionary.md)
   The relationships of the App Clip App Store Details resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppClipAppStoreReviewDetail.Attributes): The attributes that describe the App Clip App Store Review Details resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an App Clip App Store Review Details resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (AppClipAppStoreReviewDetail.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipAppStoreReviewDetailResponse](appclipappstorereviewdetailresponse.md)

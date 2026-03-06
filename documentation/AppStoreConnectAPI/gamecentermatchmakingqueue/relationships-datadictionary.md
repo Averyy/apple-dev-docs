@@ -22,6 +22,11 @@ object GameCenterMatchmakingQueue.Relationships
 - [object GameCenterMatchmakingQueue.Relationships.RuleSet](gamecentermatchmakingqueue/relationships-data.dictionary/ruleset-data.dictionary.md)
   The rule set associated with the queue.
 
+## Properties
+
+- `experimentRuleSet` (GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet)
+- `ruleSet` (GameCenterMatchmakingQueue.Relationships.RuleSet)
+
 ## See Also
 
 - [object GameCenterMatchmakingQueue.Attributes](gamecentermatchmakingqueue/attributes-data.dictionary.md)

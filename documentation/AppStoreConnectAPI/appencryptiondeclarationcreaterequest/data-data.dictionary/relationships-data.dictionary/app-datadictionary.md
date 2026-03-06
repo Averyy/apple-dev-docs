@@ -17,6 +17,10 @@ object AppEncryptionDeclarationCreateRequest.Data.Relationships.App
 ### Dictionaries
 - [object AppEncryptionDeclarationCreateRequest.Data.Relationships.App.Data](appencryptiondeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEncryptionDeclarationCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

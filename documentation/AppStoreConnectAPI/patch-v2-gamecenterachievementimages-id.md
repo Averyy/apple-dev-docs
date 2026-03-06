@@ -20,6 +20,14 @@ Update a specific Game Center achievement image.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/gameCenterAchievementImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center achievement image information](get-v2-gamecenterachievementimages-_id_.md)

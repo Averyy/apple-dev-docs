@@ -46,7 +46,7 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 ## Parameters
 
-- `body`: A closure with an   parameter that   points to the contiguous storage for the array.  If    has a return value, that value is also used as the return value   for the   method. The pointer argument is   valid only for the duration of the method’s execution.
+- `body`: A closure with an `UnsafeBufferPointer` parameter that points to the contiguous storage for the array.  If `body` has a return value, that value is also used as the return value for the `withUnsafeBufferPointer(_:)` method. The pointer argument is valid only for the duration of the method’s execution.
 
 
 ---

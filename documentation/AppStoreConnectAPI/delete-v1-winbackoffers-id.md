@@ -10,6 +10,26 @@ Remove a win-back offer for a specific subscription.
 
 #### Discussion
 
+**Request**:
+
+```html
+DELETE https://api.appstoreconnect.apple.com/v1/winBackOffers/10759170294
+```
+
+**Response**:
+
+```json
+    204
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/winBackOffers/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `winBackOffers` resource ID from the [`List win-back offers`](get-v1-subscriptions-_id_-winbackoffers.md) response.
+
 ## See Also
 
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)

@@ -8,6 +8,15 @@ Get a list of builds associated with a specific beta group.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/builds`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return.
+- `fields[builds]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [Get All Build IDs in a Beta Group](get-v1-betagroups-_id_-relationships-builds.md)

@@ -6,7 +6,7 @@
 An error that indicates the endpoint doesn’t support an app transaction ID.
 
 **Availability**:
-- App Store Server API 1.15+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -17,6 +17,11 @@ object AppTransactionIdNotSupportedError
 ## Mentions
 
 - [App Store Server API changelog](app-store-server-api-changelog.md)
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

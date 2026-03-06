@@ -12,6 +12,11 @@
 object AppStoreVersionLocalization.Relationships.SearchKeywords.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -14,6 +14,11 @@ The attributes of a rule set that you modify.
 object GameCenterMatchmakingRuleSetUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `maxPlayers` (integer): The maximum number of players who can join the matches that Game Center finds using these rules.
+- `minPlayers` (integer): The minimum number of players who can join the matches that Game Center finds using these rules.
+
 
 ---
 

@@ -29,6 +29,14 @@ object ExtensionConfig.Media.Queues
 - [object ExtensionConfig.Media.Queues.ContentProtectionKey](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md)
   Configuration details for your service’s content protection key endpoint.
 
+## Properties
+
+- `hdr` (ExtensionConfig.Media.Queues.Hdr): Headers to include with requests to queue endpoints.
+- `playMedia` (ExtensionConfig.Media.Queues.PlayMedia): Details specific to your media playback queue.
+- `updateActivity` (ExtensionConfig.Media.Queues.UpdateActivity): Details specific to your update activity endpoint.
+- `contentPlaybackFailure` (ExtensionConfig.Media.Queues.ContentPlaybackFailure): Details specific to your content playback failure endpoint.
+- `contentProtectionKey` (ExtensionConfig.Media.Queues.ContentProtectionKey): Details specific to your content protection key endpoint.
+
 
 ---
 

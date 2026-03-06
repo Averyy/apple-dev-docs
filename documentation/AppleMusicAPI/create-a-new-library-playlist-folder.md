@@ -18,6 +18,57 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library/playlist-folders
+
+{
+  "attributes": {
+    "name": "string"
+  },
+  "relationships": {
+    "parent": {
+      "data": [
+        {
+          "id": "string",
+          "type": "library-playlist-folders"
+        }
+      ]
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "id": "p.WmzVVDOUO9pDBk",
+            "type": "library-playlist-folders",
+            "href": "/v1/me/library/playlist-folders/p.WmzVVDOUO9pDBk",
+            "attributes": {
+                "name": "Chill",
+                "dateAdded": "2022-03-19T06:07:33Z"
+            }
+        }
+    ],
+    "meta": {
+        "total": 1
+    }
+}
+```
+
+## Endpoint
+
+`POST https://api.music.apple.com/v1/me/library/playlist-folders`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
 ## Request Body
 
 The `POST` request containing the `name` and `parent` playlist folder for the playlist folder to be added.

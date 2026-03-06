@@ -20,6 +20,13 @@ object Albums.Views.AlbumsOtherVersionsView
 - [object Albums.Views.AlbumsOtherVersionsView.Attributes](albums/views-data.dictionary/albumsotherversionsview/attributes-data.dictionary.md)
   The attributes for the view.
 
+## Properties
+
+- `href` (string): The relative location to fetch the view directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `attributes` (Albums.Views.AlbumsOtherVersionsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Albums]) *(required)*: Other versions of the album.
+
 ## See Also
 
 - [object Albums.Views.AlbumsAppearsOnView](albums/views-data.dictionary/albumsappearsonview.md)

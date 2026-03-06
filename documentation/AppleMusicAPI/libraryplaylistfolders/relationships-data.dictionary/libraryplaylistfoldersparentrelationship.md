@@ -14,6 +14,12 @@ A resource object that represents the parent relationship of a library playlist 
 object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersParentRelationship
 ```
 
+## Properties
+
+- `href` (string): The relative location for the parent relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([LibraryPlaylistFolders]) *(required)*: The parent of the library playlist, if it exists.
+
 ## See Also
 
 - [object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersChildrenRelationship](libraryplaylistfolders/relationships-data.dictionary/libraryplaylistfolderschildrenrelationship.md)

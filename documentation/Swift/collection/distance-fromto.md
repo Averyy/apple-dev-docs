@@ -29,12 +29,12 @@ The distance between `start` and `end`. The result can be negative only if the c
 
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the resulting distance.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the resulting distance.
 
 ## Parameters
 
 - `start`: A valid index of the collection.
-- `end`: Another valid index of the collection. If   is equal to   , the result is zero.
+- `end`: Another valid index of the collection. If `end` is equal to `start`, the result is zero.
 
 
 ---

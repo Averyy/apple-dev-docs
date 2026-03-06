@@ -34,7 +34,7 @@ MapKit JS returns directions asynchronously via a callback function. This callba
 
 ## Parameters
 
-- `request`: A   object that specifies details for the directions you want to retrieve.
+- `request`: A [`DirectionsRequest`](directionsrequest.md) object that specifies details for the directions you want to retrieve.
 - `callback`: A callback function that receives the directions, returned asynchronously.
 
 ## See Also

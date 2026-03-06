@@ -42,7 +42,7 @@ Calling this method invalidates any existing indices for use with this string.
 
 ## Parameters
 
-- `i`: The position of the character to remove.   must be a   valid index of the string that is not equal to the string’s end index.
+- `i`: The position of the character to remove. `i` must be a valid index of the string that is not equal to the string’s end index.
 
 ## See Also
 

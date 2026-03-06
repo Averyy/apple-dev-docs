@@ -21,6 +21,13 @@ object GameCenterAchievementVersionsV2Response
 - links:
 - meta:
 
+## Properties
+
+- `data` ([GameCenterAchievementVersionV2]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementVersionV2](gamecenterachievementversionv2.md)

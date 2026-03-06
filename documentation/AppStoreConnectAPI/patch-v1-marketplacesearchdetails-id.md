@@ -12,6 +12,46 @@ Update the search detail URL for the alternative marketplace.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails/cfcfc44f-8291-4b75-84f0-4d9a55e8b878
+{
+  "data": {
+    "type": "marketplaceSearchDetails",
+    "id": "cfcfc44f-8291-4b75-84f0-4d9a55e8b878",
+    "attributes": {
+      "catalogUrl": "https://example2.com/crawler-site/sitemap.xml"
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "marketplaceSearchDetails",
+    "id": "cfcfc44f-8291-4b75-84f0-4d9a55e8b878",
+    "attributes": {
+      "catalogUrl": "https://example2.com/crawler-site/sitemap.xml"
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails/cfcfc44f-8291-4b75-84f0-4d9a55e8b878"
+    }
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `marketplace search details` resource ID from the [`Read the marketplace search detail URL`](get-v1-apps-_id_-marketplacesearchdetail.md) response.
+
 ## See Also
 
 - [Building a searchable catalog for your marketplace app for inclusion in Spotlight](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md)

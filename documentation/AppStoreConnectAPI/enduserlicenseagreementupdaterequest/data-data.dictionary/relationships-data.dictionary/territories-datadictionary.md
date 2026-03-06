@@ -20,6 +20,10 @@ object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories
 - [object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories.Data](enduserlicenseagreementupdaterequest/data-data.dictionary/relationships-data.dictionary/territories-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
+## Properties
+
+- `data` ([EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories.Data])
+
 
 ---
 

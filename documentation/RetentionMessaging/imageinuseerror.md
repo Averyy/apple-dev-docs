@@ -18,6 +18,11 @@ object ImageInUseError
 
 The [`Delete Image`](delete-image.md) endpoint returns this error if a configured message uses the [`imageIdentifier`](imageidentifier.md). To delete an image, first delete all messages that include the image.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

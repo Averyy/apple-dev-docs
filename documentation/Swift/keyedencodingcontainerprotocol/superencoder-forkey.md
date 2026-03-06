@@ -27,7 +27,7 @@ A new encoder to pass to `super.encode(to:)`.
 
 ## Parameters
 
-- `key`: The key to encode   for.
+- `key`: The key to encode `super` for.
 
 
 ---

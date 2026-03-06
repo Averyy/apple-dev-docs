@@ -14,6 +14,14 @@ The metadata to change for an item, specifically its SKU, description, and displ
 object SubscriptionChangeMetadataItem
 ```
 
+## Properties
+
+- `SKU` (SKU): The new SKU of the item.
+- `currentSKU` (SKU) *(required)*: The original SKU of the item.
+- `description` (description): The new description for the item.
+- `displayName` (displayName): The new display name for the item.
+- `effective` (effective) *(required)*: The string that determines when the metadata change goes into effect.
+
 ## See Also
 
 - [Change Subscription Metadata](change-subscription-metadata.md)

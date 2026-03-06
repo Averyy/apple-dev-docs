@@ -6,7 +6,7 @@
 A Boolean value that indicates whether the subscription-renewal-date extension succeeded.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 

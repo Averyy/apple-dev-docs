@@ -20,6 +20,12 @@ object BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse
 - [object BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse.Data](backgroundassetversionbackgroundassetuploadfileslinkagesresponse/data-data.dictionary.md)
   The type and ID of a background asset upload file resource linked to a specific background asset version.
 
+## Properties
+
+- `data` ([BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

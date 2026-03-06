@@ -17,6 +17,12 @@ object GameCenterLeaderboardSet.Relationships.Localizations
 ### Objects
 - [object GameCenterLeaderboardSet.Relationships.Localizations.Data](gamecenterleaderboardset/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSet.Relationships.Localizations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSet.Relationships.GameCenterDetail](gamecenterleaderboardset/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

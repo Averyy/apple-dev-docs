@@ -26,7 +26,7 @@ The destination memory must be uninitialized or the buffer’s `Element` must be
 
 ## Parameters
 
-- `repeatedValue`: The value with which to initialize this   buffer slice’s memory.
+- `repeatedValue`: The value with which to initialize this buffer slice’s memory.
 
 
 ---

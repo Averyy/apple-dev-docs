@@ -23,7 +23,7 @@ func writeJSON(to url: URL, options: JSONWritingOptions = .init()) throws
 ## Parameters
 
 - `url`: A location URL in the file system where the method saves the JSON file.
-- `options`: A   instance.
+- `options`: A [`JSONWritingOptions`](jsonwritingoptions.md) instance.
 
 
 ---

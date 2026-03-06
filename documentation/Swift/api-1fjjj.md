@@ -50,7 +50,7 @@ If `userPrefs[greetingKey]` has a value, that value is assigned to `greeting`. I
 ## Parameters
 
 - `optional`: An optional value.
-- `defaultValue`: A value to use as a default.   and    have the same type.
+- `defaultValue`: A value to use as a default. `defaultValue` and `optional` have the same type.
 
 ## See Also
 

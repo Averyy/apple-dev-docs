@@ -18,6 +18,11 @@ object ExistingPerformanceTestRunError
 
 This error indicates the service is already processing a test with this ID.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

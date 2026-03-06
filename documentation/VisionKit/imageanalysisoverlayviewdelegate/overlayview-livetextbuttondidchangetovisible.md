@@ -19,7 +19,7 @@ func overlayView(_ overlayView: ImageAnalysisOverlayView, liveTextButtonDidChang
 ## Parameters
 
 - `overlayView`: The associated overlay view for the Live Text button.
-- `visible`:   if the Live Text button   appears; otherwise,  .
+- `visible`: `true` if the Live Text button appears; otherwise, `false`.
 
 ## See Also
 

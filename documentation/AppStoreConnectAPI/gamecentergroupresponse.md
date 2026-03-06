@@ -14,6 +14,12 @@ A response that contains a single group resource.
 object GameCenterGroupResponse
 ```
 
+## Properties
+
+- `data` (GameCenterGroup) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

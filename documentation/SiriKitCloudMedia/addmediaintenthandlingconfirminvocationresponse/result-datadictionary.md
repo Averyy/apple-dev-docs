@@ -14,6 +14,10 @@ The result of receiving the user’s confirmation that they want to add the medi
 object AddMediaIntentHandlingConfirmInvocationResponse.Result
 ```
 
+## Properties
+
+- `response` (AddMediaIntentResponse) *(required)*: Your service’s ability to handle the intent.
+
 
 ---
 

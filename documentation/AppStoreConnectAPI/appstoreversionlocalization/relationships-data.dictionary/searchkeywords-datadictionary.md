@@ -17,6 +17,12 @@ object AppStoreVersionLocalization.Relationships.SearchKeywords
 ### Dictionaries
 - [object AppStoreVersionLocalization.Relationships.SearchKeywords.Data](appstoreversionlocalization/relationships-data.dictionary/searchkeywords-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionLocalization.Relationships.SearchKeywords.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

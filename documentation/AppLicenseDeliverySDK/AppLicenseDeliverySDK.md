@@ -12,7 +12,7 @@ Secure the installation of alternative distribution apps on iOS or iPadOS device
 
 #### Overview
 
-This Swift SDK enables  (DRM) for alternative distribution apps. Use this SDK to generate licenses for alternative app marketplaces you build with [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) or other apps that you distribute from your website. Alternative app marketplaces use this SDK to generate a license for each app that developers distribute on the marketplace. By licensing each download individually, you provide a secure installation experience similar to the App Store.
+This Swift SDK enables *digital rights management* (DRM) for alternative distribution apps. Use this SDK to generate licenses for alternative app marketplaces you build with [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) or other apps that you distribute from your website. Alternative app marketplaces use this SDK to generate a license for each app that developers distribute on the marketplace. By licensing each download individually, you provide a secure installation experience similar to the App Store.
 
 Use this SDK’s framework to implement a license server on your website back end that’s capable of running compiled Swift code. Then, publish endpoints for your license server in a standard location that the device’s operating system expects. On an as-needed basis, the system retrieves licenses from your endpoints when a person downloads:
 

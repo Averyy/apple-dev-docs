@@ -22,7 +22,7 @@ init<D>(rawRepresentation: D) throws where D : DataProtocol
 
 ## Parameters
 
-- `rawRepresentation`: A raw representation of the signature as a   collection of contiguous bytes.
+- `rawRepresentation`: A raw representation of the signature as a collection of contiguous bytes.
 
 ## See Also
 

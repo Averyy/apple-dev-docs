@@ -14,6 +14,11 @@ The type and ID of the Git References resource that represents the source branch
 object CiBuildRunCreateRequest.Data.Relationships.SourceBranchOrTag.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Git References resource that represents the source branch or tag.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

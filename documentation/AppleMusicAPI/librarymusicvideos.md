@@ -22,6 +22,14 @@ object LibraryMusicVideos
 - [object LibraryMusicVideos.Relationships](librarymusicvideos/relationships-data.dictionary.md)
   The relationships from library music videos to other resources.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the library music video.
+- `type` (string) *(required)*: This value is always `library-music-videos`.
+- `href` (string) *(required)*: The relative location for the library music video resource.
+- `attributes` (LibraryMusicVideos.Attributes): The attributes for the library music video.
+- `relationships` (LibraryMusicVideos.Relationships): The relationships for the library music video.
+
 ## See Also
 
 - [object MusicVideos](musicvideos.md)

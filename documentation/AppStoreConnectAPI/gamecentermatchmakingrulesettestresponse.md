@@ -14,6 +14,12 @@ The response body for testing a rule set.
 object GameCenterMatchmakingRuleSetTestResponse
 ```
 
+## Properties
+
+- `data` (GameCenterMatchmakingRuleSetTest) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

@@ -22,6 +22,15 @@ object Nomination.Relationships
 - [object Nomination.Relationships.SubmittedByActor](nomination/relationships-data.dictionary/submittedbyactor-data.dictionary.md)
 - [object Nomination.Relationships.SupportedTerritories](nomination/relationships-data.dictionary/supportedterritories-data.dictionary.md)
 
+## Properties
+
+- `createdByActor` (Nomination.Relationships.CreatedByActor)
+- `inAppEvents` (Nomination.Relationships.InAppEvents)
+- `lastModifiedByActor` (Nomination.Relationships.LastModifiedByActor)
+- `relatedApps` (Nomination.Relationships.RelatedApps)
+- `submittedByActor` (Nomination.Relationships.SubmittedByActor)
+- `supportedTerritories` (Nomination.Relationships.SupportedTerritories)
+
 
 ---
 

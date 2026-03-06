@@ -18,6 +18,11 @@ object AppStoreVersionPromotionCreateRequest.Data.Relationships
 - [object AppStoreVersionPromotionCreateRequest.Data.Relationships.AppStoreVersion](appstoreversionpromotioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
 - [object AppStoreVersionPromotionCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment](appstoreversionpromotioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary.md)
 
+## Properties
+
+- `appStoreVersion` (AppStoreVersionPromotionCreateRequest.Data.Relationships.AppStoreVersion) *(required)*
+- `appStoreVersionExperimentTreatment` (AppStoreVersionPromotionCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment) *(required)*
+
 
 ---
 

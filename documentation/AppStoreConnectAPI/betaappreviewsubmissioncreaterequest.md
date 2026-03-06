@@ -20,6 +20,10 @@ object BetaAppReviewSubmissionCreateRequest
 - [object BetaAppReviewSubmissionCreateRequest.Data](betaappreviewsubmissioncreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaAppReviewSubmissionCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaAppReviewSubmission](betaappreviewsubmission.md)

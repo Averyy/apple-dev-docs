@@ -8,6 +8,10 @@ Create localized What’s New text for a build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaBuildLocalizations`
+
 ## See Also
 
 - [Modify a Beta Build Localization](patch-v1-betabuildlocalizations-_id_.md)

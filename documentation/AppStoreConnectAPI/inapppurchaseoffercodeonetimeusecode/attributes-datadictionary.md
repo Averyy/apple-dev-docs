@@ -14,6 +14,14 @@ Attributes that describe an in-app purchase offer code one-time use code resourc
 object InAppPurchaseOfferCodeOneTimeUseCode.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+- `createdDate` (date-time)
+- `environment` (OfferCodeEnvironment)
+- `expirationDate` (date)
+- `numberOfCodes` (integer)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary.md)

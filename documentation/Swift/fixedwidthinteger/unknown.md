@@ -33,12 +33,12 @@ y &-= 21
 // y == 245 (after overflow)
 ```
 
-For more about arithmetic with overflow operators, see [`Overflow Operators`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in .
+For more about arithmetic with overflow operators, see [`Overflow Operators`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
 
 ## Parameters
 
 - `lhs`: A numeric value.
-- `rhs`: The value to subtract from  .
+- `rhs`: The value to subtract from `lhs`.
 
 
 ---

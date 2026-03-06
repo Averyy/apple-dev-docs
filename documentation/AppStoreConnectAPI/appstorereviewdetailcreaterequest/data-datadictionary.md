@@ -22,6 +22,12 @@ object AppStoreReviewDetailCreateRequest.Data
 - [object AppStoreReviewDetailCreateRequest.Data.Relationships](appstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppStoreReviewDetailCreateRequest.Data.Attributes)
+- `relationships` (AppStoreReviewDetailCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

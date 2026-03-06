@@ -36,11 +36,11 @@ print(numbers.dropLast(10))
 // Prints "[]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `k`: The number of elements to drop off the end of the   collection.   must be greater than or equal to zero.
+- `k`: The number of elements to drop off the end of the collection. `k` must be greater than or equal to zero.
 
 
 ---

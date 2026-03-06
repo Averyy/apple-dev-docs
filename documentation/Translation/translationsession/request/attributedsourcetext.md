@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-The attributed input text the framework translates.
+The text to translate, including styling like bold text, italics, and hyperlink data for linking between data sources.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -20,7 +20,7 @@ var attributedSourceText: AttributedString? { get set }
 ## See Also
 
 - [var sourceText: String](translationsession/request/sourcetext.md)
-  The input text the framework translates.
+  The plain text input to translate.
 
 
 ---

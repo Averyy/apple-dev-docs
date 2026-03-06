@@ -8,6 +8,16 @@ Get a specific App Clip invocation you configure for testing.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaAppClipInvocations/{id}`
+
+## Parameters
+
+- `fields[betaAppClipInvocations]` ([string]): Additional fields to include for each Beta App Clip Invocation resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[betaAppClipInvocationLocalizations]` (integer): The number of included Beta App Clip Invocations resources to return if the beta App Clip invocation localizations relationship is included.
+
 ## See Also
 
 - [Create an App Clip Invocation for Testers in TestFlight](post-v1-betaappclipinvocations.md)

@@ -20,6 +20,10 @@ object BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build
 - [object BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build.Data](betaappreviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (BetaAppReviewSubmissionCreateRequest.Data.Relationships.Build.Data) *(required)*
+
 
 ---
 

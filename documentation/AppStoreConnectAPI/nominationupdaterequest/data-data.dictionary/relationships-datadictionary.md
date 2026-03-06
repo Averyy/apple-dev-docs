@@ -19,6 +19,12 @@ object NominationUpdateRequest.Data.Relationships
 - [object NominationUpdateRequest.Data.Relationships.RelatedApps](nominationupdaterequest/data-data.dictionary/relationships-data.dictionary/relatedapps-data.dictionary.md)
 - [object NominationUpdateRequest.Data.Relationships.SupportedTerritories](nominationupdaterequest/data-data.dictionary/relationships-data.dictionary/supportedterritories-data.dictionary.md)
 
+## Properties
+
+- `inAppEvents` (NominationUpdateRequest.Data.Relationships.InAppEvents)
+- `relatedApps` (NominationUpdateRequest.Data.Relationships.RelatedApps)
+- `supportedTerritories` (NominationUpdateRequest.Data.Relationships.SupportedTerritories)
+
 
 ---
 

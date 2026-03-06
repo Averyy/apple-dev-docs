@@ -11,6 +11,11 @@ Details about an automatic reload payment.
 object AutomaticReloadPaymentDetails
 ```
 
+## Properties
+
+- `amount` (CurrencyAmount): The reload amount when the account balance reaches the threshold amount. Omit this property if the reload amount is variable, for example, to match a target account balance.
+- `thresholdAmount` (CurrencyAmount): The balance an account reaches before the system applies the automatic reload amount.
+
 ## See Also
 
 - [object DeferredPaymentDetails](deferredpaymentdetails.md)

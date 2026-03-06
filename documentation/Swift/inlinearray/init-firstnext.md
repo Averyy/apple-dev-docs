@@ -33,7 +33,7 @@ The closure is allowed to throw an error at any point during initialization at w
 ## Parameters
 
 - `first`: The first value to emplace into the array.
-- `next`: A closure that takes an immutable borrow reference to the   preceding element, and returns an owned   instance to emplace   into the array.
+- `next`: A closure that takes an immutable borrow reference to the preceding element, and returns an owned `Element` instance to emplace into the array.
 
 
 ---

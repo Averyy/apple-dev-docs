@@ -25,7 +25,7 @@ The method identified by `selector` must not take any arguments and must return 
 
 ## Parameters
 
-- `selector`: A selector identifying the message to be sent to each object in   the array.
+- `selector`: A selector identifying the message to be sent to each object in the array.
 
 ## See Also
 

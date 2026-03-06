@@ -14,6 +14,14 @@ An object that describes test response times.
 object PerformanceTestResponseTimes
 ```
 
+## Properties
+
+- `average` (int64) *(required)*: Average response time in milliseconds.
+- `p50` (int64) *(required)*: The 50th percentile response time in milliseconds.
+- `p90` (int64) *(required)*: The 90th percentile response time in milliseconds.
+- `p95` (int64) *(required)*: The 95th percentile response time in milliseconds.
+- `p99` (int64) *(required)*: The 99th percentile response time in milliseconds.
+
 ## See Also
 
 - [object PerformanceTestConfig](performancetestconfig.md)

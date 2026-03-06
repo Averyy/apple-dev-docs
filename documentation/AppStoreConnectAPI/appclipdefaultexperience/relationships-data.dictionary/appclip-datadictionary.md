@@ -20,6 +20,10 @@ object AppClipDefaultExperience.Relationships.AppClip
 - [object AppClipDefaultExperience.Relationships.AppClip.Data](appclipdefaultexperience/relationships-data.dictionary/appclip-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clips resource.
 
+## Properties
+
+- `data` (AppClipDefaultExperience.Relationships.AppClip.Data): The ID and type of the related App Clips resource.
+
 ## See Also
 
 - [object AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail](appclipdefaultexperience/relationships-data.dictionary/appclipappstorereviewdetail-data.dictionary.md)

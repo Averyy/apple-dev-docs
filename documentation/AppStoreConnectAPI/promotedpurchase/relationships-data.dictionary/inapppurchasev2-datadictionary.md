@@ -17,6 +17,10 @@ object PromotedPurchase.Relationships.InAppPurchaseV2
 ### Objects
 - [object PromotedPurchase.Relationships.InAppPurchaseV2.Data](promotedpurchase/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (PromotedPurchase.Relationships.InAppPurchaseV2.Data)
+
 ## See Also
 
 - [object PromotedPurchase.Relationships.Subscription](promotedpurchase/relationships-data.dictionary/subscription-data.dictionary.md)

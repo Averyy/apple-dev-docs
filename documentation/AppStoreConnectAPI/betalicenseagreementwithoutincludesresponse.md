@@ -12,6 +12,11 @@
 object BetaLicenseAgreementWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (BetaLicenseAgreement) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaLicenseAgreement](betalicenseagreement.md)

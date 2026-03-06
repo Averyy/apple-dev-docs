@@ -18,6 +18,14 @@ Call this endpoint to retrieve an external purchase report that you successfully
 - [type requestIdentifier](requestidentifier.md)
   A UUID that uniquely identifies an external purchase report.
 
+## Endpoint
+
+`GET https://api.storekit-sandbox.apple.com/externalPurchase/v1/reports/{requestIdentifier}`
+
+## Parameters
+
+- `requestIdentifier` (requestIdentifier) *(required)*: The UUID that identifies the external purchase report you’re requesting.
+
 ## See Also
 
 - [object RetrieveReportSuccessResponse](retrievereportsuccessresponse.md)

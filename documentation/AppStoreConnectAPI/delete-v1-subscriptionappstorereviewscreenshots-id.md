@@ -8,6 +8,14 @@ Delete an image that you uploaded for review of an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/subscriptionAppStoreReviewScreenshots/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Subscription Review Screenshot Information](get-v1-subscriptionappstorereviewscreenshots-_id_.md)

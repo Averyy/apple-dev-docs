@@ -17,6 +17,11 @@ object InAppPurchaseV2AppStoreReviewScreenshotLinkageResponse
 ### Dictionaries
 - [object InAppPurchaseV2AppStoreReviewScreenshotLinkageResponse.Data](inapppurchasev2appstorereviewscreenshotlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseV2AppStoreReviewScreenshotLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

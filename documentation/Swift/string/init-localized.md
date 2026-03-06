@@ -41,7 +41,7 @@ If you don’t need the deferred-loading behavior of `LocalizedStringResource`, 
 
 ## Parameters
 
-- `resource`: A   that provides the localization key, table, bundle, and locale.
+- `resource`: A `LocalizedStringResource` that provides the localization key, table, bundle, and locale.
 
 ## See Also
 

@@ -17,6 +17,12 @@ object AppStoreVersion.Relationships.AppStoreVersionExperimentsV2
 ### Objects
 - [object AppStoreVersion.Relationships.AppStoreVersionExperimentsV2.Data](appstoreversion/relationships-data.dictionary/appstoreversionexperimentsv2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersion.Relationships.AppStoreVersionExperimentsV2.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersion.Relationships.AgeRatingDeclaration](appstoreversion/relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)

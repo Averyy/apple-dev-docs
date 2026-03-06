@@ -79,15 +79,15 @@ For an example app that implements room scanning with the framework-provided UI,
 During the structure scanning process, your app manages two kinds of sessions: [`RoomCaptureSession`](roomcapturesession.md), and [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession). To successfully merge rooms, each `RoomCaptureSession` needs to share the same common coordinate space as the `ARSession`. The coordinate space is common when:
 
 - The rooms are close to each other (for example, in the same building).
-- The captured session utilizes a  AR session or a  AR session.
+- The captured session utilizes a *continuous* AR session or a *relocalized* AR session.
 
-An `ARSession` is  when a person completes all scans without interruption, or the `RoomCaptureSession` contains the same AR session object that your app maintains after each room scan by calling [`stop(pauseARSession:)`](roomcapturesession/stop(pausearsession:).md) with an argument of `false`.
+An `ARSession` is *continuous* when a person completes all scans without interruption, or the `RoomCaptureSession` contains the same AR session object that your app maintains after each room scan by calling [`stop(pauseARSession:)`](roomcapturesession/stop(pausearsession:).md) with an argument of `false`.
 
-If the person sends the app to the background or the AR session experiences tracking problems while a person moves room to room, your app needs to  the AR session before continuing to scan. Relocalizing instructs ARKit to restore a common coordinate space by inspecting a world-map ([`ARWorldMap`](https://developer.apple.com/documentation/ARKit/ARWorldMap)) object that you provide.
+If the person sends the app to the background or the AR session experiences tracking problems while a person moves room to room, your app needs to *relocalize* the AR session before continuing to scan. Relocalizing instructs ARKit to restore a common coordinate space by inspecting a world-map ([`ARWorldMap`](https://developer.apple.com/documentation/ARKit/ARWorldMap)) object that you provide.
 
 #### Relocalize an Ar Session After an Interruption
 
-When a person sends the app to the background or restarts the app before finishing the structure, or if ARKit encounters a tracking error, your app has to restart the AR session. By default, new or restarted AR sessions define a coordinate space that’s incompatible with prior runs because the world origin and orientation are different. To scan more rooms that are compatible with prior scans, you need to restore a common coordinate space by using .
+When a person sends the app to the background or restarts the app before finishing the structure, or if ARKit encounters a tracking error, your app has to restart the AR session. By default, new or restarted AR sessions define a coordinate space that’s incompatible with prior runs because the world origin and orientation are different. To scan more rooms that are compatible with prior scans, you need to restore a common coordinate space by using *relocalization*.
 
 To enable relocalization, the following code implements an [`ARSessionObserver`](https://developer.apple.com/documentation/ARKit/ARSessionObserver) and responds to its [`sessionShouldAttemptRelocalization(_:)`](https://developer.apple.com/documentation/ARKit/ARSessionObserver/sessionShouldAttemptRelocalization(_:)) callback:
 

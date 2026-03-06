@@ -14,6 +14,12 @@ A relationship from the artist to its playlists.
 object Artists.Relationships.ArtistsPlaylistsRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([Playlists]) *(required)*: The playlists for the artist.
+
 ## See Also
 
 - [object Artists.Relationships.ArtistsAlbumsRelationship](artists/relationships-data.dictionary/artistsalbumsrelationship.md)

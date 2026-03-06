@@ -12,6 +12,10 @@
 object App.Relationships.BetaFeedbackScreenshotSubmissions
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

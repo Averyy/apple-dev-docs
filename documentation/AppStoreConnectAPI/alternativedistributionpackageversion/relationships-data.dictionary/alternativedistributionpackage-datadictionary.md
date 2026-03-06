@@ -17,6 +17,10 @@ object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributi
 ### Objects
 - [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage.Data](alternativedistributionpackageversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage.Data)
+
 ## See Also
 
 - [object AlternativeDistributionPackageVersion.Relationships.Deltas](alternativedistributionpackageversion/relationships-data.dictionary/deltas-data.dictionary.md)

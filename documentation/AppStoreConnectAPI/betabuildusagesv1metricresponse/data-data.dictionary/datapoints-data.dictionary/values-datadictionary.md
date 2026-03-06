@@ -12,6 +12,14 @@
 object BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `crashCount` (integer)
+- `feedbackCount` (integer)
+- `installCount` (integer)
+- `inviteCount` (integer)
+- `sessionCount` (integer)
+
 
 ---
 

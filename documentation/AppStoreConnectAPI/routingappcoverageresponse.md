@@ -14,6 +14,12 @@ A response that contains a single Routing App Coverages resource.
 object RoutingAppCoverageResponse
 ```
 
+## Properties
+
+- `data` (RoutingAppCoverage) *(required)*
+- `links` (DocumentLinks) *(required)*
+- `included` ([AppStoreVersion])
+
 ## See Also
 
 - [object RoutingAppCoverage](routingappcoverage.md)

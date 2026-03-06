@@ -10,6 +10,8 @@ Use the `centered` attribute to center items horizontally in a `shelf` element w
 
 ##### Values for Centered
 
+- **Boolean**: The shelf horizontally centers the elements inside of it when this attribute is set to `true`.
+
 ##### Elements That Use Centered
 
 - [`shelf`](shelf.md)

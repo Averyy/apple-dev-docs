@@ -20,6 +20,12 @@ object EndUserLicenseAgreement.Relationships.Territories
 - [object EndUserLicenseAgreement.Relationships.Territories.Data](enduserlicenseagreement/relationships-data.dictionary/territories-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([EndUserLicenseAgreement.Relationships.Territories.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object EndUserLicenseAgreement.Relationships.App](enduserlicenseagreement/relationships-data.dictionary/app-data.dictionary.md)

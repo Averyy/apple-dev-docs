@@ -14,6 +14,11 @@ A response that contains a single Bundle ID Capabilities resource.
 object BundleIdCapabilityResponse
 ```
 
+## Properties
+
+- `data` (BundleIdCapability) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

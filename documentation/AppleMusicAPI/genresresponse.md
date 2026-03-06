@@ -14,6 +14,10 @@ The response to a genres request.
 object GenresResponse
 ```
 
+## Properties
+
+- `data` ([Genres]) *(required)*: The [`Genres`](genres.md) included in the response for the request.
+
 ## See Also
 
 - [object Genres](genres.md)

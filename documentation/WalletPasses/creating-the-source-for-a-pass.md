@@ -67,7 +67,7 @@ The system always displays localized versions of these values, even when your pa
 
 ![An annotated graphic of the pass that shows the date in Arabic script and all the other strings in English.](https://docs-assets.developer.apple.com/published/59faeede36e42808d8834d8d4e001247/media-3737827%402x.png)
 
-The system localizes other strings on your pass using a  which contains a list of keys and associated localized strings. Add localized strings to your pass in three steps:
+The system localizes other strings on your pass using a *strings file* which contains a list of keys and associated localized strings. Add localized strings to your pass in three steps:
 
 - Set the value of a displayed string in `pass.json` to a key, such as `“OfferAmountLabel”` for the `label` of the offer amount field.
 - Add a `pass.strings` file to the localization folder.

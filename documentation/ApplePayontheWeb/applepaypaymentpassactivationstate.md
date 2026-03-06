@@ -19,6 +19,12 @@ enum ApplePayPaymentPassActivationState
 
 Use one of the following values for the activation state:
 
+- **`activated`**: Active and ready to be used for payment.
+- **`requiresActivation`**: Not active but may be activated by the issuer.
+- **`activating`**: Not ready for use but activation is in progress.
+- **`suspended`**: Not active and can’t be activated.
+- **`deactivated`**: Not active because the issuer has disabled the account associated with the device.
+
 ## Topics
 
 ### Enumeration Cases

@@ -12,6 +12,14 @@
 object SubscriptionPromotionalOffer.Attributes
 ```
 
+## Properties
+
+- `duration` (SubscriptionOfferDuration)
+- `name` (string)
+- `numberOfPeriods` (integer)
+- `offerCode` (string)
+- `offerMode` (SubscriptionOfferMode)
+
 ## See Also
 
 - [object SubscriptionPromotionalOffer.Relationships](subscriptionpromotionaloffer/relationships-data.dictionary.md)

@@ -12,6 +12,10 @@
 object App.Relationships.AppTags
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

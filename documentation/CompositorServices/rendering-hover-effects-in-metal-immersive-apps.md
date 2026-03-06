@@ -107,7 +107,7 @@ Then, in the trailing closure, it calls the `render(_:)` function.
 
 The `render(_:)` function creates a high-priority asynchronous task so that the rendering work doesn’t occur on the main thread. Then it creates a `RenderData` object, which is an [`Actor`](https://developer.apple.com/documentation/Swift/Actor) object that holds all of the app’s render-related objects. Using an `actor` ensures that all code affecting the rendering data runs in the same global concurrency thread pool.
 
-The function starts by setting up world tracking, loading assets, and implementing the render pipelines for its shaders. For more information about world tracking, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionos/tracking-points-in-world-space).
+The function starts by setting up world tracking, loading assets, and implementing the render pipelines for its shaders. For more information about world tracking, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionOS/tracking-points-in-world-space).
 
 ```swift
 Task(priority: .high) {

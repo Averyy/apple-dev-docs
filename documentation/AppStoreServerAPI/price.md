@@ -6,7 +6,7 @@
 The price, in milliunits, of the In-App Purchase that the system records in the transaction.
 
 **Availability**:
-- App Store Server API 1.10+
+- App Store Server API 1.0+
 
 ## Declaration
 

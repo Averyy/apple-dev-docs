@@ -20,6 +20,14 @@ object AppStoreVersionExperimentTreatment
 - [object AppStoreVersionExperimentTreatment.Relationships](appstoreversionexperimenttreatment/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentTreatment.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppStoreVersionExperimentTreatment.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentCreateRequest](appstoreversionexperimenttreatmentcreaterequest.md)

@@ -12,6 +12,14 @@
 object SubscriptionPromotionalOfferInlineCreate.Attributes
 ```
 
+## Properties
+
+- `duration` (SubscriptionOfferDuration) *(required)*
+- `name` (string) *(required)*
+- `numberOfPeriods` (integer) *(required)*
+- `offerCode` (string) *(required)*
+- `offerMode` (SubscriptionOfferMode) *(required)*
+
 ## See Also
 
 - [object SubscriptionPromotionalOfferInlineCreate.Relationships](subscriptionpromotionalofferinlinecreate/relationships-data.dictionary.md)

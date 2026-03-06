@@ -14,6 +14,12 @@ A response that contains a single `BetaFeedbackScreenshotSubmission` resource.
 object BetaFeedbackScreenshotSubmissionResponse
 ```
 
+## Properties
+
+- `data` (BetaFeedbackScreenshotSubmission) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)

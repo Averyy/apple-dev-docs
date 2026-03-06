@@ -17,6 +17,11 @@ Outputs True Result or False Result depending on whether value1 == value2.
 
 #### Parameter Descriptions
 
+- **`Value1`**: The first value to compare.
+- **`Value2`**: The second value to compare.
+- **`True Result`**: The output of the node if the `Value1` input parameter is equal to the `Value2` input parameter.
+- **`False Result`**: The output of the node if the `Value1` input parameter isn’t equal to the `Value2` input parameter.
+
 ## See Also
 
 - [If Greater](logic/if-greater.md)

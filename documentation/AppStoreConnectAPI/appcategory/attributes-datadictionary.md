@@ -14,6 +14,10 @@ Attributes that describe an App Categories resource.
 object AppCategory.Attributes
 ```
 
+## Properties
+
+- `platforms` ([Platform])
+
 ## See Also
 
 - [object AppCategory.Relationships](appcategory/relationships-data.dictionary.md)

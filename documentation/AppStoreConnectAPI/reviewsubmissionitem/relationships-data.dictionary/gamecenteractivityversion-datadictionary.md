@@ -20,6 +20,10 @@ object ReviewSubmissionItem.Relationships.GameCenterActivityVersion
 - [object ReviewSubmissionItem.Relationships.GameCenterActivityVersion.Data](reviewsubmissionitem/relationships-data.dictionary/gamecenteractivityversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (ReviewSubmissionItem.Relationships.GameCenterActivityVersion.Data)
+
 ## See Also
 
 - [object ReviewSubmissionItem.Relationships.BackgroundAssetVersion](reviewsubmissionitem/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)

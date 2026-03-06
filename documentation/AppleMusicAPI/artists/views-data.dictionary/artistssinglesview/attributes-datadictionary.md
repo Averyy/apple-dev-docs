@@ -14,6 +14,10 @@ Albums associated with the artist and categorized as singles.
 object Artists.Views.ArtistsSinglesView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

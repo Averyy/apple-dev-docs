@@ -14,6 +14,8 @@ Use the `width` style to change the width of an element. Here’s an example tha
 
 ##### Values for Width
 
+- **Integer**: The width of the element, in points. For example, `width="200"` sets the width of the element to 200 points.
+
 > **Note**: You must explicitly set this style for custom cell elements provided by your app binary.
 
 ##### Elements That Use Width

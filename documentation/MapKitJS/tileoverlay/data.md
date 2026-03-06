@@ -37,6 +37,8 @@ customOverlay.data = {
 map.addTileOverlay(customOverlay);
 ```
 
+---
+
 ## See Also
 
 - [urlTemplate](tileoverlay/urltemplate.md)

@@ -20,6 +20,10 @@ object CiWorkflowCreateRequest
 - [object CiWorkflowCreateRequest.Data](ciworkflowcreaterequest/data-data.dictionary.md)
   The data element of the request you use to create a new Xcode Cloud workflow.
 
+## Properties
+
+- `data` (CiWorkflowCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

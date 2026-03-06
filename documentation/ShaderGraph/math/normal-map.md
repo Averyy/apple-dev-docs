@@ -17,6 +17,12 @@ Transforms a normal vector from object or tangent space into world space.
 
 #### Parameter Descriptions
 
+- **`In`**: The input vector to be transformed; the default is `(0.5, 0.5, 1.0)`.
+- **`Space`**: The space from which the node transforms the normal vector. The value can either be `object` or `tangent`. The default value is `tangent`.
+- **`Scale`**: A scalar multiplier for the input vector before the node transforms it. The default value is `1.0`.
+- **`Normal`**: The surface normal vector. The default value is the current surface normal of world space.
+- **`Tangent`**: The surface tangent vector. The default value is the current tangent vector of world space.
+
 ## See Also
 
 - [Add](math/add.md)

@@ -17,6 +17,11 @@ object GameCenterChallengeVersion.Relationships.DefaultImage
 ### Dictionaries
 - [object GameCenterChallengeVersion.Relationships.DefaultImage.Data](gamecenterchallengeversion/relationships-data.dictionary/defaultimage-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallengeVersion.Relationships.DefaultImage.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

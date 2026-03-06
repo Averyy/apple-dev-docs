@@ -20,6 +20,13 @@ object AppClipAdvancedExperienceLocalization
 - [object AppClipAdvancedExperienceLocalization.Attributes](appclipadvancedexperiencelocalization/attributes-data.dictionary.md)
   The attributes that describe an Advanced App Clip Experience Localizations resource.
 
+## Properties
+
+- `attributes` (AppClipAdvancedExperienceLocalization.Attributes): The attributes that describe the Advanced App Clip Experience Localizations resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an Advanced App Clip Experience Localizations resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipAdvancedExperience](appclipadvancedexperience.md)

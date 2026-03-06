@@ -14,6 +14,53 @@ The example request below retrieves information about a specific source code man
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/scmProviders/d1b5479e-ce72-402c-8b9a-ea26ef6773f4
+```
+
+**Response**:
+
+```json
+{
+    "data": {
+        "type": "scmProviders",
+        "id": "d1b5479e-ce72-402c-8b9a-ea26ef6773f4",
+        "attributes": {
+            "scmProviderType": {
+                "kind": "GITHUB_CLOUD",
+                "displayName": "GitHub",
+                "isOnPremise": false
+            },
+            "url": "github.com"
+        },
+        "relationships": {
+            "repositories": {
+                "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/scmProviders/d1b5479e-ce72-402c-8b9a-ea26ef6773f4/relationships/repositories",
+                    "related": "https://api.appstoreconnect.apple.com/v1/scmProviders/d1b5479e-ce72-402c-8b9a-ea26ef6773f4/repositories"
+                }
+            }
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/scmProviders/d1b5479e-ce72-402c-8b9a-ea26ef6773f4"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/scmProviders/d1b5479e-ce72-402c-8b9a-ea26ef6773f4"
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmProviders/{id}`
+
+## Parameters
+
+- `fields[scmProviders]` ([string]): Additional fields to include for the Providers resource returned by the response.
+
 ## See Also
 
 - [List All Source Code Management Providers](get-v1-scmproviders.md)

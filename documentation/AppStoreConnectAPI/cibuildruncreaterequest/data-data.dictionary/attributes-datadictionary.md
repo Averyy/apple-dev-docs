@@ -14,6 +14,10 @@ The attributes you set that describe the new Build Runs resource.
 object CiBuildRunCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `clean` (boolean): A Boolean value that indicates whether Xcode Cloud should perform a clean build.
+
 ## See Also
 
 - [object CiBuildRunCreateRequest.Data.Relationships](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary.md)

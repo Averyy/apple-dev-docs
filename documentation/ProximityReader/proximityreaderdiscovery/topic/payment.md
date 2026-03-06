@@ -3,7 +3,7 @@
 **Framework**: ProximityReader  
 **Kind**: enum
 
-The subtopics that show merchants how to accept different types of payments with  on iPhone.
+The subtopics that show merchants how to accept different types of payments with *Tap to Pay* on iPhone.
 
 **Availability**:
 - iOS 18.0+

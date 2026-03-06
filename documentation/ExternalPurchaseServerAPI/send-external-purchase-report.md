@@ -32,6 +32,10 @@ Call this endpoint using its sandbox URL only for tokens that the system generat
 
 > ❗ **Important**: The sandbox tokens and any test transaction data you submit through the sandbox URLs of the External Purchase Server API are not actual transactions.
 
+## Endpoint
+
+`PUT https://api.storekit-sandbox.apple.com/externalPurchase/v1/reports`
+
 ## Request Body
 
 The request body that contains the report information.

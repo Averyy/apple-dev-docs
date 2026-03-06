@@ -12,6 +12,12 @@
 object SubscriptionGroupLocalizationResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionGroupLocalization) *(required)*
+- `included` ([SubscriptionGroup])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)

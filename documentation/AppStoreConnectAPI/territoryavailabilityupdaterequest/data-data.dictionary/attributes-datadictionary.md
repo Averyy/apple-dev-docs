@@ -12,6 +12,12 @@
 object TerritoryAvailabilityUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `available` (boolean)
+- `preOrderEnabled` (boolean)
+- `releaseDate` (date)
+
 
 ---
 

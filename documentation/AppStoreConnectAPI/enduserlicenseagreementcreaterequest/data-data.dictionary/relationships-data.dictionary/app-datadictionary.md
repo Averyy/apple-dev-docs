@@ -20,6 +20,10 @@ object EndUserLicenseAgreementCreateRequest.Data.Relationships.App
 - [object EndUserLicenseAgreementCreateRequest.Data.Relationships.App.Data](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (EndUserLicenseAgreementCreateRequest.Data.Relationships.App.Data) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary/territories-data.dictionary.md)

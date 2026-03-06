@@ -20,6 +20,10 @@ object AppPreviewSetCreateRequest
 - [object AppPreviewSetCreateRequest.Data](apppreviewsetcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppPreviewSetCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppPreviewSet](apppreviewset.md)

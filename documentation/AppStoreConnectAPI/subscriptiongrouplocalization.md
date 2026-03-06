@@ -18,6 +18,14 @@ object SubscriptionGroupLocalization
 - [object SubscriptionGroupLocalization.Attributes](subscriptiongrouplocalization/attributes-data.dictionary.md)
 - [object SubscriptionGroupLocalization.Relationships](subscriptiongrouplocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGroupLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionGroupLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupLocalizationResponse](subscriptiongrouplocalizationresponse.md)

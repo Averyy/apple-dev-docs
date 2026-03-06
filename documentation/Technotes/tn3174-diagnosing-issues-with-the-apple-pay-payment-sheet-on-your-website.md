@@ -86,11 +86,11 @@ To learn more about configuring a merchant identity certificate, see [`Configuri
 
 ###### Issue Received a Payment Session Response Error
 
- This error typically indicates a formatting issue. Review your request to ensure the request body isn’t empty and contains all required parameters.
+**Error: 400 – Bad Request.** This error typically indicates a formatting issue. Review your request to ensure the request body isn’t empty and contains all required parameters.
 
- When you begin the Apple Pay session, Apple responds with an `onvalidatemerchant` callback that includes a `validationURL`. This `validationURL` is the endpoint your server must use to validate itself and obtain a merchant session object. If you receive this error, make sure you are sending the payload to the exact URL provided in the `validationURL` field. Use a strict allow list for the merchant validation URLs. Send the payment session request from your server; never request the session from the client.
+**Error: 404 – Not Found.** When you begin the Apple Pay session, Apple responds with an `onvalidatemerchant` callback that includes a `validationURL`. This `validationURL` is the endpoint your server must use to validate itself and obtain a merchant session object. If you receive this error, make sure you are sending the payload to the exact URL provided in the `validationURL` field. Use a strict allow list for the merchant validation URLs. Send the payment session request from your server; never request the session from the client.
 
- The merchant ID is either not registered for Apple Pay service or not registered for the domain. If you receive this error, navigate to your Apple Developer account and confirm the following:
+**Error: 417 – Expectation Failed.** The merchant ID is either not registered for Apple Pay service or not registered for the domain. If you receive this error, navigate to your Apple Developer account and confirm the following:
 
 - You are passing the correct merchant ID, which is associated to the merchant identity certificate, within the request.
 - There are both: - A fully configured payment processing certificate; and
@@ -102,14 +102,14 @@ Ensure the value provided in the `initiativeContext` request parameter is identi
 
 The `initiativeContext` value should include subdomains, but shouldn’t contain the URL scheme (e.g. `https://`) or any paths. For example:
 
--  `"secure.example.com"`
--  `"https://secure.example.com/request-session"`
+- **Valid:** `"secure.example.com"`
+- **Invalid:** `"https://secure.example.com/request-session"`
 
 If you plan to process payments on a root domain and subdomain—for example, `example.com` and `test.example.com`—register and verify each domain.
 
 > **Note**: Apple considers `www.` a subdomain, so if you plan to process payments for `example.com`, but customers can access your site at `www.example.com`, you may need to ensure you register and verify both domains.
 
- This error indicates the request couldn’t be processed, or the request body is malformed or invalid. Please ensure your request body is a valid JSON.
+**Error 500 – Internal Server Error.** This error indicates the request couldn’t be processed, or the request body is malformed or invalid. Please ensure your request body is a valid JSON.
 
 ##### Troubleshooting Merchant Validation Issues
 
@@ -146,10 +146,10 @@ In resposne to the `POST` request, your server receives an opaque Apple Pay sess
 
 If you are able to successfully generate a payment session but encounter issues when you pass this session into `completeMerchantValidation`, this suggests one of a few potential issues:
 
--  The `completeMerchantValidation` method does not support this data in string format; the data must be parsed as a JSON object before it can be successfully passed to the completion method.
--  You should treat the payment session data you receive as  and should not modify or change any of its contents. The contents or format of this data can change periodically, so it’s better to mapping this data to a strongly-typed object while it is in transit through your server and passed to your client-side code.
--  The value provided as the `initiativeContext` in the payment session request should exactly match the domain shown in the browser’s address bar. The `initiativeContext` value should include subdomains but should not contain the URL scheme (e.g. `https://`) or any paths.
--  Ensure you are using the correct `merchantIdentifier` and `intiativeContext` for the environment you are requesting a payment session from (Sandbox or Production).
+- **The session data is not formatted as a JSON Object.** The `completeMerchantValidation` method does not support this data in string format; the data must be parsed as a JSON object before it can be successfully passed to the completion method.
+- **The session data is incomplete or has been modified.** You should treat the payment session data you receive as *opaque* and should not modify or change any of its contents. The contents or format of this data can change periodically, so it’s better to mapping this data to a strongly-typed object while it is in transit through your server and passed to your client-side code.
+- **The `initiativeContext` for the session does not match the browser domain or is not correctly formatted.** The value provided as the `initiativeContext` in the payment session request should exactly match the domain shown in the browser’s address bar. The `initiativeContext` value should include subdomains but should not contain the URL scheme (e.g. `https://`) or any paths.
+- **You are mixing environments.** Ensure you are using the correct `merchantIdentifier` and `intiativeContext` for the environment you are requesting a payment session from (Sandbox or Production).
 
 #### Possible Reasons Why the Payment Sheet Dismisses After Initial Presentation
 
@@ -181,7 +181,7 @@ You may experience situations where the payment sheet does not display a success
 
 #### Revision History
 
--  First published.
+- **2024-06-25** First published.
 
 ## See Also
 

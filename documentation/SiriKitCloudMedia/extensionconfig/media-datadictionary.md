@@ -20,6 +20,10 @@ object ExtensionConfig.Media
 - [object ExtensionConfig.Media.Queues](extensionconfig/media-data.dictionary/queues-data.dictionary.md)
   Configuration details for your service’s media queue.
 
+## Properties
+
+- `queues` (ExtensionConfig.Media.Queues): Details specific to your media queue endpoint.
+
 
 ---
 

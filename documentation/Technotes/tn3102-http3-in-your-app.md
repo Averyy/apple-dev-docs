@@ -125,9 +125,9 @@ If you experience issues while debugging your network transactions, take a look 
 
 #### Revision History
 
--  Made minor editorial changes.
--  Republished as TN3102.
--  First published as “HTTP/3 in Your App” on the Apple Developer Forums.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-08** Republished as TN3102.
+- **2021-06-16** First published as “HTTP/3 in Your App” on the Apple Developer Forums.
 
 ## See Also
 

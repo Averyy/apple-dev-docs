@@ -12,9 +12,9 @@ In shared and mixed immersive spaces on visionOS, people can snap and lock app c
 
 People can anchor apps to their space in a few different ways:
 
--  — When a person moves a window near a vertical surface, like a wall, or a volume near a horizontal surface, like a table or floor, your app can automatically align with or snap to that surface.
--  — When an app snaps to a surface, the system places a lock icon in the window bar to indicate it’s locked in place if the application supports restoration of that window.
--  — After locking the app in place, your content remains fixed to its physical location. It persists even if the person moves to a different room, takes the device off or on, or recenters their view. When moving between rooms, locked content from the previous room fades out, and locked content in the new room appears. Content that isn’t locked in place always launches relative to the person’s position.
+- **Snapping** — When a person moves a window near a vertical surface, like a wall, or a volume near a horizontal surface, like a table or floor, your app can automatically align with or snap to that surface.
+- **Locking** — When an app snaps to a surface, the system places a lock icon in the window bar to indicate it’s locked in place if the application supports restoration of that window.
+- **Persistence** — After locking the app in place, your content remains fixed to its physical location. It persists even if the person moves to a different room, takes the device off or on, or recenters their view. When moving between rooms, locked content from the previous room fades out, and locked content in the new room appears. Content that isn’t locked in place always launches relative to the person’s position.
 
 Locking and persisting content in visionOS makes the user experience more natural and integrated by letting people attach apps to specific places in their real world. This means people can easily return to what they were doing, creating a smoother and more immersive experience. Knowing the kind of surface the app snaps to allows for more useful and personalized apps, giving developers the ability to show content that’s relevant to a given situation.
 
@@ -28,9 +28,9 @@ Scene restoration is an important part of a seamless experience on visionOS. Peo
 
 However, there are some cases in which you might not want to restore scenes, especially for those that serve a temporary or context-specific purpose, including:
 
--  — Welcome screens, onboarding flows, or temporary alerts.
--  — Tool palettes or inspectors whose relevance is tied to a specific state or document that might not exist upon relaunch.
--  — Login prompts or import and export dialogs.
+- **Transient elements** — Welcome screens, onboarding flows, or temporary alerts.
+- **Context-dependent UI** — Tool palettes or inspectors whose relevance is tied to a specific state or document that might not exist upon relaunch.
+- **Completed one-time actions** — Login prompts or import and export dialogs.
 
 You can opt out of scene restoration on a per-scene basis by applying `.restorationBehavior(.disabled)` to any `Window` or `WindowGroup`. The default behavior is `automatic`, which restores your content.
 
@@ -108,16 +108,16 @@ You can use a scene’s physical placement to show content dynamically in an imm
 
 To ensure your app has access to the physical placement:
 
--  — Follow the steps outlined in [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md).
--  — Add the `UIWantsDetailedSurfaceInfo` key to your app’s `Info.plist` file and set its value to `YES`.
+- **Request ARKit data access** — Follow the steps outlined in [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md).
+- **Enable detailed surface info** — Add the `UIWantsDetailedSurfaceInfo` key to your app’s `Info.plist` file and set its value to `YES`.
 
 To check and use the snapped status:
 
--  — Use the `@Environment(\.surfaceSnappingInfo)` property wrapper within your SwiftUI view to observe the scene’s snapping state.
--  — Read the `isSnapped` Boolean property from the environment value (`snappingInfo.isSnapped`) to determine if the system has currently snapped the scene to a physical surface.
--  — Confirm the person has granted permission by checking that the `authorizationStatus` property (`snappingInfo.authorizationStatus`) equals `.authorized`.
--  — If the scene is snapped and authorization is granted, access the `classification` property (`snappingInfo.classification`). This returns an `ARKitSurfaceClassification` value, such as `.wall`, `.floor`, or `.table`.
--  — Use the retrieved surface classification to dynamically show content based on the detected surface type.
+- **Access snapping information** — Use the `@Environment(\.surfaceSnappingInfo)` property wrapper within your SwiftUI view to observe the scene’s snapping state.
+- **Check snapped state** — Read the `isSnapped` Boolean property from the environment value (`snappingInfo.isSnapped`) to determine if the system has currently snapped the scene to a physical surface.
+- **Verify authorization** — Confirm the person has granted permission by checking that the `authorizationStatus` property (`snappingInfo.authorizationStatus`) equals `.authorized`.
+- **Retrieve the surface type** — If the scene is snapped and authorization is granted, access the `classification` property (`snappingInfo.classification`). This returns an `ARKitSurfaceClassification` value, such as `.wall`, `.floor`, or `.table`.
+- **Conditionally show content** — Use the retrieved surface classification to dynamically show content based on the detected surface type.
 
 ```swift
 import SwiftUI

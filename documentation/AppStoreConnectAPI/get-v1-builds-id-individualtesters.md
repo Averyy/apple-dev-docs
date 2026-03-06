@@ -8,6 +8,15 @@ Get a list of beta testers individually assigned to a build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/individualTesters`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return
+- `fields[betaTesters]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [Get All Resource IDs of Individual Testers for a Build](get-v1-builds-_id_-relationships-individualtesters.md)

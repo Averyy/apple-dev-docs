@@ -17,6 +17,11 @@ object Certificate.Relationships.PassTypeId
 ### Dictionaries
 - [object Certificate.Relationships.PassTypeId.Data](certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (Certificate.Relationships.PassTypeId.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

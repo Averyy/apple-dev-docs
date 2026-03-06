@@ -17,6 +17,12 @@ object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesRespo
 ### Dictionaries
 - [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse.Data](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)

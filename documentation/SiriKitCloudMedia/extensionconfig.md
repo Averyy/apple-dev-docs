@@ -38,6 +38,14 @@ object ExtensionConfig
 - [object ExtensionConfig.Media](extensionconfig/media-data.dictionary.md)
   Instructions for accessing your service’s media endpoints.
 
+## Properties
+
+- `version` (string) *(required)*: The version of this API your service supports.
+- `url` (string): The fully qualified base URL for the endpoints your service supports.
+- `hdr` (ExtensionConfig.Hdr): A dictionary of header names and values for the client to include in requests to any intent endpoint.
+- `intent` (ExtensionConfig.Intent) *(required)*: The intent endpoints your service supports.
+- `media` (ExtensionConfig.Media) *(required)*: The media endpoints your service supports.
+
 ## See Also
 
 - [Configure Your Service Endpoints](configuration-resource.md)

@@ -6,7 +6,7 @@ Discover all inspectable web content in Safari and other apps on your Mac and on
 
 #### Overview
 
-The  menu item from the  menu opens the  window which shows all inspectable web content in Safari, as well as web content used by other applications on your Mac, on running simulators, and on connected devices that are configured for inspection.
+The **Inspect Apps and Devices** menu item from the **Develop** menu opens the **Apps and Devices Inspection** window which shows all inspectable web content in Safari, as well as web content used by other applications on your Mac, on running simulators, and on connected devices that are configured for inspection.
 
 You can use this window to observe web content as it becomes available for inspection. This is also where you can configure automatic inspection for JSContexts.
 
@@ -14,7 +14,7 @@ You can use this window to observe web content as it becomes available for inspe
 
 #### Using the Apps and Devices Inspection Window
 
-The  window sidebar shows your Mac, any connected and paired devices, such as iPhone, iPad or Apple Vision Pro, and any simulators that are currently running. Each inspectable device and simulator shows its name and OS version to make it easier to find the specific device you want to inspect.
+The **Apps and Devices Inspection** window sidebar shows your Mac, any connected and paired devices, such as iPhone, iPad or Apple Vision Pro, and any simulators that are currently running. Each inspectable device and simulator shows its name and OS version to make it easier to find the specific device you want to inspect.
 
 Select a device to see inspectable web content available on that device grouped by the app it belongs to. This includes webpages, WKWebViews, JSContexts, service workers, Home Screen web apps, and Web Extension background pages. Click on a web content listing to launch [`Web Inspector`](web-inspector.md) for it.
 
@@ -24,6 +24,9 @@ The list of apps for a device updates automatically to show any app that is curr
 
 You can configure Web Inspector to automatically open for new JSContexts created in your app. Identify your app in the list of apps currently running inspectable web content and click the three-dots menu to reveal the automatic inspection settings:
 
+- **Automatically Inspect New JSContexts**: When enabled, Web Inspector is automatically opened whenever a `JSContext` is created by the app on the device.
+- **Automatically Pause New JSContexts**: When enabled, Web Inspector will also pause JavaScript execution when automatically inspecting a new `JSContext`. These two options are typically used together to debug issues in short-lived scripts or at the beginning of a script.
+
 If the `JSContext` you want to inspect automatically is already running, you will need to relaunch your app for automatic inspection settings to trigger the desired action.
 
 #### Automatic Inspection of Service Workers
@@ -31,6 +34,9 @@ If the `JSContext` you want to inspect automatically is already running, you wil
 Service workers can be short-lived or perform their actions before you can get to manually inspect them via the Develop menu, for example, when handling a push message for a Home Screen web app.
 
 You can configure Web Inspector to automatically open when a service worker is launched by Safari, a Home Screen web app, or any another app that runs service workers. Identify the app in the list of apps currently running inspectable web content and click the three-dots menu to reveal the automatic inspection settings:
+
+- **Automatically Inspect New Service Workers**: When enabled, Web Inspector is automatically opened whenever a service worker is created by the app on the device.
+- **Automatically Pause New Service Workers**: When enabled, Web Inspector will also pause JavaScript execution when automatically inspecting a new service worker. These two options are typically used together to debug issues in short-lived scripts or at the beginning of a script.
 
 If the service worker you want to inspect automatically is already running, you will need to cause it to relaunch for automatic inspection settings to trigger the desired action, for example, by closing and reopening the Safari tab that instantiates it.
 

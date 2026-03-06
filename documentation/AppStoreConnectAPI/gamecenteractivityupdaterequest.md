@@ -19,6 +19,10 @@ object GameCenterActivityUpdateRequest
 ### Dictionaries
 - [object GameCenterActivityUpdateRequest.Data](gamecenteractivityupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

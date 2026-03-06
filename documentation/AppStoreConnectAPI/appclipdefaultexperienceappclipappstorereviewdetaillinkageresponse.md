@@ -19,6 +19,11 @@ object AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse
 ### Dictionaries
 - [object AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse.Data](appclipdefaultexperienceappclipappstorereviewdetaillinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppClipDefaultExperience](appclipdefaultexperience.md)

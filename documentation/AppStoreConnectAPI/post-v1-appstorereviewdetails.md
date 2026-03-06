@@ -8,6 +8,10 @@ Add App Store review details to an App Store version, including contact and demo
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appStoreReviewDetails`
+
 ## See Also
 
 - [Read App Store Review Detail Information](get-v1-appstorereviewdetails-_id_.md)

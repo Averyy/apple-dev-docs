@@ -38,7 +38,7 @@ print(match?.0 as Any)
 
 ## Parameters
 
-- `builder`: A builder closure that declares a list of regex   components, each of which can be exclusively matched.
+- `builder`: A builder closure that declares a list of regex components, each of which can be exclusively matched.
 
 
 ---

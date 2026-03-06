@@ -17,6 +17,12 @@ object AppAppStoreVersionsLinkagesResponse
 ### Dictionaries
 - [object AppAppStoreVersionsLinkagesResponse.Data](appappstoreversionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppAppStoreVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

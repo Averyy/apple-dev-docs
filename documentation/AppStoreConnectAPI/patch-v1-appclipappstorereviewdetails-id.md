@@ -8,6 +8,14 @@ Update App Clip metadata you provide to App Store Review.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appClipAppStoreReviewDetails/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the App Store Versions resource.
+
 ## Request Body
 
 The request body you use to update the App Store review details of an App Clip.

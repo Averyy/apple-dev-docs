@@ -22,6 +22,12 @@ object AccessibilityDeclarationCreateRequest.Data
 - [object AccessibilityDeclarationCreateRequest.Data.Relationships](accessibilitydeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AccessibilityDeclarationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AccessibilityDeclarationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

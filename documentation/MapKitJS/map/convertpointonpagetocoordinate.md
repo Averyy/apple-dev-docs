@@ -20,7 +20,7 @@ A [`Coordinate`](coordinate.md) in the map at the provided `DOMPoint` of the pag
 
 ## Parameters
 
-- `point`: A point in the page’s coordinate system, such as   when handling a mouse event.
+- `point`: A point in the page’s coordinate system, such as `new DOMPoint(event.pageX, event.pageY),` when handling a mouse event.
 
 ## See Also
 

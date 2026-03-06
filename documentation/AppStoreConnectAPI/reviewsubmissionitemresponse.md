@@ -12,6 +12,12 @@
 object ReviewSubmissionItemResponse
 ```
 
+## Properties
+
+- `data` (ReviewSubmissionItem) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object ReviewSubmissionItemCreateRequest](reviewsubmissionitemcreaterequest.md)

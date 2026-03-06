@@ -21,6 +21,14 @@ object GameCenterActivityVersion
   Attributes that describe an activity resource.
 - [object GameCenterActivityVersion.Relationships](gamecenteractivityversion/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterActivityVersion.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterActivityVersion.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)

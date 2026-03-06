@@ -14,6 +14,11 @@ The links to the related Default App Clip Experiences resource and the relations
 object AppClipAppStoreReviewDetail.Relationships.AppClipDefaultExperience.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Default App Clip Experiences resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

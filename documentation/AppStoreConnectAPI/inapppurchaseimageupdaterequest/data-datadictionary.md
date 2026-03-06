@@ -20,6 +20,12 @@ object InAppPurchaseImageUpdateRequest.Data
 - [object InAppPurchaseImageUpdateRequest.Data.Attributes](inapppurchaseimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription purchase image request resource.
 
+## Properties
+
+- `attributes` (InAppPurchaseImageUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

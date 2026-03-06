@@ -34,7 +34,7 @@ let z = UInt(-21.5)
 
 ## Parameters
 
-- `source`: A floating-point value to convert to an integer.    must be representable in this type after rounding toward   zero.
+- `source`: A floating-point value to convert to an integer. `source` must be representable in this type after rounding toward zero.
 
 ## See Also
 

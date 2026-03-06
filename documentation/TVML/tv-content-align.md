@@ -18,6 +18,10 @@ Here’s an example that aligns an image to the top of its parent banner:
 
 ##### Values
 
+- **`top`**: The element aligns along the top edge of the parent element.
+- **`center`**: The element aligns with the center of the parent element.
+- **`bottom`**: The element aligns along the bottom edge of the parent element.
+
 ##### Elements That Use Text Align
 
 - [`shelf`](shelf.md)

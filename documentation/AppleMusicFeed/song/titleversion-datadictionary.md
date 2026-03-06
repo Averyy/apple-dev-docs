@@ -14,6 +14,11 @@ A mapping of locale to translations for the specific title-version translation t
 object Song.TitleVersion
 ```
 
+## Properties
+
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates fallback to `default`.
+- `titleVersion` (string): A localized title version for the content.
+
 ## See Also
 
 - [object Song.ArtistRole](song/artistrole.md)

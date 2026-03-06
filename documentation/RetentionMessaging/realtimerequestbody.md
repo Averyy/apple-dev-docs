@@ -30,6 +30,10 @@ The three components of the string are a header, a payload, and a signature, in 
 - To read the real-time request information, Base64URL-decode the payload. Use a [`DecodedRealtimeRequestBody`](decodedrealtimerequestbody.md) object to read the payload information.
 - To read the header, decode it and use a [`JWSDecodedHeader`](jwsdecodedheader.md) object to access the information. Use the information in the header to verify the signature.
 
+## Properties
+
+- `signedPayload` (signedPayload): The payload in JSON Web Signature (JWS) format, signed by the App Store.
+
 ## See Also
 
 - [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)

@@ -17,6 +17,10 @@ object AppEventScreenshotUpdateRequest
 ### Objects
 - [object AppEventScreenshotUpdateRequest.Data](appeventscreenshotupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventScreenshotUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEventScreenshot](appeventscreenshot.md)

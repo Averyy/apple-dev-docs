@@ -26,6 +26,11 @@ object GameCenterLeaderboardLocalizationV2.Relationships
 - [object GameCenterLeaderboardLocalizationV2.Relationships.Version](gamecenterleaderboardlocalizationv2/relationships-data.dictionary/version-data.dictionary.md)
   The data that describes the version of the Game Center leaderboard localization v2.
 
+## Properties
+
+- `image` (GameCenterLeaderboardLocalizationV2.Relationships.Image)
+- `version` (GameCenterLeaderboardLocalizationV2.Relationships.Version)
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2.Attributes](gamecenterleaderboardlocalizationv2/attributes-data.dictionary.md)

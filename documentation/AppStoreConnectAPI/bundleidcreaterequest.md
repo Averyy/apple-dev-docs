@@ -20,6 +20,10 @@ object BundleIdCreateRequest
 - [object BundleIdCreateRequest.Data](bundleidcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BundleIdCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BundleId](bundleid.md)

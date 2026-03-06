@@ -9,6 +9,10 @@ Create a new identifier for use with a pass type ID certificate using a certific
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/passTypeIds`
+
 ## See Also
 
 - [List Pass Type Ids](list-pass-type-ids.md)

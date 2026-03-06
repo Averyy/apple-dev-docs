@@ -14,6 +14,11 @@ A resource describing import validation errors, warnings and information.
 object StateDetail
 ```
 
+## Properties
+
+- `code` (string)
+- `description` (string)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

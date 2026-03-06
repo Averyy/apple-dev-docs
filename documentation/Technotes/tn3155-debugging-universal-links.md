@@ -206,10 +206,10 @@ When testing, if you’re running your app from Xcode, using a server that is un
 
 #### Revision History
 
--  Added User-Agent policies for the hosted AASA file.
--  Clarified how web browsers interact with universal links. Made other minor editorial changes.
--  Made minor changes, added note for port numbers.
--  First published.
+- **2025-05-15** Added User-Agent policies for the hosted AASA file.
+- **2025-03-12** Clarified how web browsers interact with universal links. Made other minor editorial changes.
+- **2024-08-13** Made minor changes, added note for port numbers.
+- **2023-09-05** First published.
 
 ## See Also
 

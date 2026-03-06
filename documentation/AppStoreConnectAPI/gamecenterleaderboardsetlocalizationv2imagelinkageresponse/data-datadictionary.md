@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetLocalizationV2ImageLinkageResponse.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

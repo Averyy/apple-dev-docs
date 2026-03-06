@@ -54,7 +54,7 @@ if let match = setting.firstMatch(of: keyAndValue) {
 
 When you import the `RegexBuilder` module, you can also create `Regex` instances using a clear and flexible declarative syntax. Using this style, you can combine, capture, and transform regexes, `RegexBuilder` types, and custom parsers.
 
-> **Note**:  Prior to Swift 6, you might need to write `#/myregex/#` instead of `/myregex/` when you make a regular expression using a literal. For more information, see [`Regular Expression Literals`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure/#Regular-Expression-Literals) in  .
+> **Note**:  Prior to Swift 6, you might need to write `#/myregex/#` instead of `/myregex/` when you make a regular expression using a literal. For more information, see [`Regular Expression Literals`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure/#Regular-Expression-Literals) in  *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
 
 ## Topics
 

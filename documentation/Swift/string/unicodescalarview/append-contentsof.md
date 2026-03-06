@@ -22,7 +22,7 @@ mutating func append<S>(contentsOf newElements: S) where S : Sequence, S.Element
 
 #### Discussion
 
-> **Note**: O(), where  is the length of the resulting view.
+> **Note**: O(*n*), where *n* is the length of the resulting view.
 
 ## Parameters
 

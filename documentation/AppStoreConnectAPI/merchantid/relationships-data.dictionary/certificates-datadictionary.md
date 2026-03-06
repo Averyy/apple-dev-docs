@@ -20,6 +20,12 @@ object MerchantId.Relationships.Certificates
 - [object MerchantId.Relationships.Certificates.Data](merchantid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([MerchantId.Relationships.Certificates.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

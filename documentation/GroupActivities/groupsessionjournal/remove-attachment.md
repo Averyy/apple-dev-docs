@@ -25,7 +25,7 @@ Call this method to remove an attachment that is no longer relevant. For example
 
 ## Parameters
 
-- `attachment`: The attachment object associated with the item.   You receive this object when you call the   or    method.
+- `attachment`: The attachment object associated with the item. You receive this object when you call the [`add(_:)`](groupsessionjournal/add(_:).md) or [`add(_:metadata:)`](groupsessionjournal/add(_:metadata:).md) method.
 
 
 ---

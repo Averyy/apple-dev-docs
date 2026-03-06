@@ -20,6 +20,10 @@ object LangageTagResponse
 - [object LangageTagResponse.Results](langagetagresponse/results-data.dictionary.md)
   Results included in the response for a storefront resource request.
 
+## Properties
+
+- `results` (LangageTagResponse.Results) *(required)*: The results included in the response for a language tag resource request.
+
 
 ---
 

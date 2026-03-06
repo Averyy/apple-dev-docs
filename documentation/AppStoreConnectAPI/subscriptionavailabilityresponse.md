@@ -12,6 +12,12 @@
 object SubscriptionAvailabilityResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionAvailability) *(required)*
+- `included` ([Territory])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionAvailability](subscriptionavailability.md)

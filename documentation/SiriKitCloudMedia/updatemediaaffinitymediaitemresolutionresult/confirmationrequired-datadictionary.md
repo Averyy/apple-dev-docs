@@ -14,6 +14,10 @@ A result that requires the user to confirm the media item before proceeding.
 object UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired
 ```
 
+## Properties
+
+- `mediaItemToConfirm` (MediaItem) *(required)*: A media item for the user to confirm or reject.
+
 ## See Also
 
 - [object UpdateMediaAffinityMediaItemResolutionResult.Success](updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.md)

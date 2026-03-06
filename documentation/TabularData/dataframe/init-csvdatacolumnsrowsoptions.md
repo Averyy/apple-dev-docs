@@ -24,7 +24,7 @@ init<each T>(csvData data: Data, columns: repeat ColumnID<each T>, rows: Range<I
 
 - `data`: The contents of a CSV file.
 - `columns`: The column identifiers.
-- `rows`: A range of indices; Set to   to use every row in the CSV file.
+- `rows`: A range of indices; Set to `nil` to use every row in the CSV file.
 - `options`: The options that tell the data frame how to read the CSV data.
 
 

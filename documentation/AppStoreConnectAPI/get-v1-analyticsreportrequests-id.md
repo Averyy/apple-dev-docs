@@ -18,6 +18,52 @@ Get details for and the state of a specific analytics report request.
 
 ##### Examples Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "analyticsReportRequests",
+    "id": "d48c69c5-9bcb-4592-abbd-08a9411b0231",
+    "attributes": {
+      "accessType": "ONGOING",
+      "stoppedDueToInactivity": false
+    },
+    "relationships": {
+      "reports": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231/relationships/reports",
+          "related": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231/reports"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9bcb-4592-abbd-08a9411b0231"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/{id}`
+
+## Parameters
+
+- `fields[analyticsReportRequests]` ([string])
+- `fields[analyticsReports]` ([string])
+- `include` ([string])
+- `limit[reports]` (integer)
+
 ## See Also
 
 - [Request reports](post-v1-analyticsreportrequests.md)

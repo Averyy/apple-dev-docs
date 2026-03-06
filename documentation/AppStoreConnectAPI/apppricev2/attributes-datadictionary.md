@@ -12,6 +12,12 @@
 object AppPriceV2.Attributes
 ```
 
+## Properties
+
+- `endDate` (date)
+- `manual` (boolean)
+- `startDate` (date)
+
 ## See Also
 
 - [object AppPriceV2.Relationships](apppricev2/relationships-data.dictionary.md)

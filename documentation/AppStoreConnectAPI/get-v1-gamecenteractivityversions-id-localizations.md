@@ -8,6 +8,18 @@ Get details about the default localization for a specific Game Center activity v
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersions/{id}/localizations`
+
+## Parameters
+
+- `fields[gameCenterActivityImages]` ([string])
+- `fields[gameCenterActivityLocalizations]` ([string])
+- `fields[gameCenterActivityVersions]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read the versions for an activity](get-v1-gamecenteractivities-_id_-versions.md)

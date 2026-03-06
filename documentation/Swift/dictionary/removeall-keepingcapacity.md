@@ -24,11 +24,11 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 Calling this method invalidates all indices with respect to the dictionary.
 
-> **Note**: O(), where  is the number of key-value pairs in the dictionary.
+> **Note**: O(*n*), where *n* is the number of key-value pairs in the dictionary.
 
 ## Parameters
 
-- `keepCapacity`: Whether the dictionary should keep its   underlying buffer. If you pass  , the operation preserves the   buffer capacity that the collection has, otherwise the underlying   buffer is released.  The default is  .
+- `keepCapacity`: Whether the dictionary should keep its underlying buffer. If you pass `true`, the operation preserves the buffer capacity that the collection has, otherwise the underlying buffer is released.  The default is `false`.
 
 ## See Also
 

@@ -8,7 +8,7 @@ Enable Live Text data scanning of text and codes that appear in the camera’s v
 
 Let users scan text and codes with the camera, similar to the Live Text interface in the Camera app. VisionKit provides the live video, guidance for the user, item highlighting, and tap-to-focus and pinch-to-zoom functionality. You provide the user with feedback and actions for the items the scanner recognizes and the user taps. For example, your app can let users scan a QR code on a warehouse box, or call a support number on product materials.
 
-You create a [`DataScannerViewController`](datascannerviewcontroller.md) object and implement its delegate methods to handle when the scanner identifies items in the camera’s live video. When users tap an item, such as a QR code, you offer an appropriate action, depending on the item type. A QR code contains data, called a , such as a phone number or email address. If the payload is a website, you can open it in the browser or perform some other custom action.
+You create a [`DataScannerViewController`](datascannerviewcontroller.md) object and implement its delegate methods to handle when the scanner identifies items in the camera’s live video. When users tap an item, such as a QR code, you offer an appropriate action, depending on the item type. A QR code contains data, called a *payload*, such as a phone number or email address. If the payload is a website, you can open it in the browser or perform some other custom action.
 
 ![A mockup of an iPhone screen showing the data scanner view controller view with a QR code highlighted in the camera’s live video.](https://docs-assets.developer.apple.com/published/e5caaaf0e057ee741c6e3ebda42dd26a/scanning_data_with_the_camera-1%402x.png)
 
@@ -46,7 +46,7 @@ For larger items, you can pass [`DataScannerViewController.QualityLevel.fast`](d
 
 If you overlay an interface on the live video, pass `true` as the `isHighFrameRateTrackingEnabled` parameter so that the scanner updates the geometry of items more frequently. For example, pass `true` so that your custom highlights keep up with the camera movement.
 
-Use the other parameters of the initializer to disable specific interface features and gestures. For example, pass `false` for the `isGuidanceEnabled` parameter to remove text that appears in the live video while the user is scanning, such as .
+Use the other parameters of the initializer to disable specific interface features and gestures. For example, pass `false` for the `isGuidanceEnabled` parameter to remove text that appears in the live video while the user is scanning, such as *Slow Down*.
 
 After you create the view controller and before you present it, set its delegate to an object in your app that handles the [`DataScannerViewControllerDelegate`](datascannerviewcontrollerdelegate.md) protocol callbacks.
 

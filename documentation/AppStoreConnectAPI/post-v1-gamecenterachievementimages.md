@@ -8,6 +8,10 @@ Add a new achievement image.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterAchievementImages`
+
 ## See Also
 
 - [Read Game Center achievement image information](get-v2-gamecenterachievementimages-_id_.md)

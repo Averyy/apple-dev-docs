@@ -26,8 +26,8 @@ Instead of calling this initializer, most code calls the `withCheckedContinuatio
 
 ## Parameters
 
-- `continuation`: An instance of    that hasn’t yet been resumed.   After passing the unsafe continuation to this initializer,   don’t use it outside of this object.
-- `function`: A string identifying the declaration that is the notional   source for the continuation, used to identify the continuation in   runtime diagnostics related to misuse of this continuation.
+- `continuation`: An instance of `UnsafeContinuation` that hasn’t yet been resumed. After passing the unsafe continuation to this initializer, don’t use it outside of this object.
+- `function`: A string identifying the declaration that is the notional source for the continuation, used to identify the continuation in runtime diagnostics related to misuse of this continuation.
 
 
 ---

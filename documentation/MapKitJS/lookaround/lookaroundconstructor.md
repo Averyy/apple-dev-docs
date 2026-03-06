@@ -29,8 +29,8 @@ The Look Around view’s constructor takes an optional `parent` argument and an 
 ## Parameters
 
 - `parent`: A DOM element, or the ID of a DOM element, to use as your map’s container.
-- `location`: A   that describes the location the Look Around view shows.
-- `options`: Options that   defines for initializing the properties of the preview.
+- `location`: A [`Coordinate`](coordinate.md) that describes the location the Look Around view shows.
+- `options`: Options that [`LookAroundOptions`](lookaroundoptions.md) defines for initializing the properties of the preview.
 
 
 ---

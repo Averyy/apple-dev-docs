@@ -14,6 +14,12 @@ The SKU, description, and display name to use for a migrated subscription item.
 object SubscriptionMigrateItem
 ```
 
+## Properties
+
+- `SKU` (SKU) *(required)*: The SKU to use for the migrated item.
+- `description` (description) *(required)*: The description of the SKU.
+- `displayName` (displayName) *(required)*: The display name of the SKU.
+
 ## See Also
 
 - [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)

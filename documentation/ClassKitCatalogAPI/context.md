@@ -30,6 +30,11 @@ The contexts that you specify in your app as [`CLSContext`](https://developer.ap
 - [object Context.Metadata](context/metadata-data.dictionary.md)
   Information that helps the system categorize a context.
 
+## Properties
+
+- `data` (Context.Data) *(required)*: The data that makes up the context. This is largely the same information that you provide to the ClassKit framework when you create a [`CLSContext`](https://developer.apple.com/documentation/ClassKit/CLSContext) instance.
+- `metadata` (Context.Metadata) *(required)*: Information about the context, like the locale to which the context applies.
+
 ## See Also
 
 - [Preparing Context Data](preparing-context-data.md)

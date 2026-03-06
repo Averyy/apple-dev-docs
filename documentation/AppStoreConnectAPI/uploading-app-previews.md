@@ -31,7 +31,7 @@ pip3 install --user pipenv
 
 Prepare to run the script by following these steps:
 
-1. Add your API key to the script by editing the  file and adding your API Key information to the KEY CONFIGURATION section at the top of the file. To find your API key, log in to App Store Connect and open the [`Users & Access`](https://developer.apple.comhttps://appstoreconnect.apple.com/access/api) module. The key is found in the Keys tab. For more information, see [`Creating API Keys for App Store Connect API`](creating-api-keys-for-app-store-connect-api.md).
+1. Add your API key to the script by editing the *upload-preview.py* file and adding your API Key information to the KEY CONFIGURATION section at the top of the file. To find your API key, log in to App Store Connect and open the [`Users & Access`](https://developer.apple.comhttps://appstoreconnect.apple.com/access/api) module. The key is found in the Keys tab. For more information, see [`Creating API Keys for App Store Connect API`](creating-api-keys-for-app-store-connect-api.md).
 2. Make sure the video file you’d like to upload is available on your local machine. For more information about app previews, including technical specifications, see [`Show More with App Previews`](https://developer.apple.comhttps://developer.apple.com/app-store/app-previews/).
 3. Your app must be in App Store Connect with a version in the “Prepare for Submission” state. To upload the app preview, you’ll need the `bundle id`, `platform`, `version number`, and `locale` of this app.
 
@@ -82,7 +82,7 @@ def create_token():
 
 ##### Find or Create the App Preview Set
 
-The App Store Connect API requires the addition of an app preview to an . Create one app preview set for each preview type and each locale. Each set includes up to three previews. For example, a set might have a 6.5 inch iPhone in the US English locale, and another in the Mexican Spanish locale.
+The App Store Connect API requires the addition of an app preview to an *app preview set*. Create one app preview set for each preview type and each locale. Each set includes up to three previews. For example, a set might have a 6.5 inch iPhone in the US English locale, and another in the Mexican Spanish locale.
 
 Before the sample creates the app preview, it needs to find the right preview set or create a new set. The script first searches for the app by bundle ID.
 

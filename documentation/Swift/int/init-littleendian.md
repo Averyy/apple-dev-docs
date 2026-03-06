@@ -22,7 +22,7 @@ init(littleEndian value: Self)
 
 ## Parameters
 
-- `value`: A value to use as the little-endian representation of   the new integer.
+- `value`: A value to use as the little-endian representation of the new integer.
 
 ## See Also
 

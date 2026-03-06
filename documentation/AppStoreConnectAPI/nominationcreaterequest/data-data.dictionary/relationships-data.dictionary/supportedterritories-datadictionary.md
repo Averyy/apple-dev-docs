@@ -17,6 +17,10 @@ object NominationCreateRequest.Data.Relationships.SupportedTerritories
 ### Dictionaries
 - [object NominationCreateRequest.Data.Relationships.SupportedTerritories.Data](nominationcreaterequest/data-data.dictionary/relationships-data.dictionary/supportedterritories-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([NominationCreateRequest.Data.Relationships.SupportedTerritories.Data])
+
 
 ---
 

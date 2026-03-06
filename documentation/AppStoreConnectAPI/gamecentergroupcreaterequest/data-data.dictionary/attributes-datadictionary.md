@@ -12,6 +12,10 @@
 object GameCenterGroupCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `referenceName` (string)
+
 
 ---
 

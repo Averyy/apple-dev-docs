@@ -37,8 +37,8 @@ The `random(in:using:)` static method chooses a random value from a continuous u
 
 ## Parameters
 
-- `range`: The range in which to create a random value.    must be finite and non-empty.
-- `generator`: The random number generator to use when creating the   new random value.
+- `range`: The range in which to create a random value. `range` must be finite and non-empty.
+- `generator`: The random number generator to use when creating the new random value.
 
 
 ---

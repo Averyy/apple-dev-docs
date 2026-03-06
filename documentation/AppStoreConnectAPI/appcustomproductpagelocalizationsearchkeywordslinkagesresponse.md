@@ -20,6 +20,12 @@ object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse
 - [object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse.Data](appcustomproductpagelocalizationsearchkeywordslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

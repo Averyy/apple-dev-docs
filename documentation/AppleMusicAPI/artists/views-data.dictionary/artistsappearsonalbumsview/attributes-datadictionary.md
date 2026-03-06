@@ -14,6 +14,10 @@ Albums from other artists on which this artist appears or with which they’re a
 object Artists.Views.ArtistsAppearsOnAlbumsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

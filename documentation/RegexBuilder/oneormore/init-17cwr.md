@@ -22,8 +22,8 @@ init<W, C1, C2, C3>(_ behavior: RegexRepetitionBehavior? = nil, @RegexComponentB
 
 ## Parameters
 
-- `behavior`: The repetition behavior to use when repeating    in the match. If   is  , the default   repetition behavior is used, which can be changed from    by calling   on the resulting   .
-- `componentBuilder`: A builder closure that generates a regex   component.
+- `behavior`: The repetition behavior to use when repeating `component` in the match. If `behavior` is `nil`, the default repetition behavior is used, which can be changed from `eager` by calling `repetitionBehavior(_:)` on the resulting `Regex`.
+- `componentBuilder`: A builder closure that generates a regex component.
 
 
 ---

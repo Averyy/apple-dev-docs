@@ -20,6 +20,12 @@ object BackgroundAssetUploadFileUpdateRequest.Data
 - [object BackgroundAssetUploadFileUpdateRequest.Data.Attributes](backgroundassetuploadfileupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a background asset upload file update request resource.
 
+## Properties
+
+- `attributes` (BackgroundAssetUploadFileUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

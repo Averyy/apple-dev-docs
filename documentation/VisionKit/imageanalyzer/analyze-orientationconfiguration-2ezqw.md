@@ -24,9 +24,9 @@ The data items that the analyzer finds in the image.
 
 ## Parameters
 
-- `pixelBuffer`: A Core Video pixel buffer object that the analyzer   processes.
-- `orientation`: The orientation that the analyzer uses to process the   image.
-- `configuration`: A configuration that specifies the data types, and   locales for text items, to recognize.
+- `pixelBuffer`: A Core Video pixel buffer object that the analyzer processes.
+- `orientation`: The orientation that the analyzer uses to process the image.
+- `configuration`: A configuration that specifies the data types, and locales for text items, to recognize.
 
 ## See Also
 

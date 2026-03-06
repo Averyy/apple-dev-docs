@@ -18,6 +18,12 @@ object WebhookUpdateRequest.Data
 - [object WebhookUpdateRequest.Data.Attributes](webhookupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a webhook update request resource.
 
+## Properties
+
+- `attributes` (WebhookUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

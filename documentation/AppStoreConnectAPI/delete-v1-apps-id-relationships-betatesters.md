@@ -12,6 +12,35 @@ Remove one or more beta testers’ access to test any builds of a specific app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/1000001234/relationships/betaTesters -d
+"{
+  "data": [
+    {
+      "type": "betaTesters",
+      "id": "b6318884-4aa6-4586-bf0b-be97cf991817"
+    }
+  ]
+}
+"
+```
+
+**Response**:
+
+```json
+204 No Content
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/betaTesters`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List Apps`](get-v1-apps.md) response.
+
 ## See Also
 
 - [List All Beta Groups for an App](get-v1-apps-_id_-betagroups.md)

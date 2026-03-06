@@ -6,6 +6,22 @@
 **Availability**:
 - App Store Connect API 2.4+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/appStoreVersionExperimentsV2`
+
+## Parameters
+
+- `fields[appStoreVersionExperimentTreatments]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `fields[appStoreVersions]` ([string])
+- `fields[apps]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[appStoreVersionExperimentTreatments]` (integer)
+- `limit[controlVersions]` (integer)
+
 ## See Also
 
 - [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)

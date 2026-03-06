@@ -12,6 +12,12 @@
 object AppStoreVersionExperimentUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `started` (boolean)
+- `trafficProportion` (integer)
+
 
 ---
 

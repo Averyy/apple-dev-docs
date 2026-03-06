@@ -30,7 +30,7 @@ Use this convenience function in situations that expect a [`Duration.UnitsFormat
 - `width`: The width of the unit and the spacing between the value and the unit.
 - `maximumUnitCount`: The maximum number of duration units to include in the output string.
 - `zeroValueUnits`: The strategy for handling leading units with zero values.
-- `valueLengthLimits`: The padding or truncating behavior of the unit value, as a bounded range of   values.
+- `valueLengthLimits`: The padding or truncating behavior of the unit value, as a bounded range of `Int` values.
 - `fractionalPart`: The strategy for displaying a duration if a formatted string can’t represent it exactly with the allowed units.
 
 ## See Also

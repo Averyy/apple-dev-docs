@@ -16,6 +16,10 @@ string DiagnosticInsightDirection
 
 #### Possible Values
 
+- **UP**: The impact of this signature has regressed in the current version compared to previous versions.
+- **DOWN**: The impact of this signature has progressed in the current version compared to previous versions.
+- **UNDEFINED**: No significant change in impact of this signature in the current version compared to previous versions.
+
 ## See Also
 
 - [object Build](build.md)

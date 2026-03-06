@@ -8,6 +8,14 @@ Update the relationship between a leaderboard and a specific Game Center activit
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}/relationships/leaderboards`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

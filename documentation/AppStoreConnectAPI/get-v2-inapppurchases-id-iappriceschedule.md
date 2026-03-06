@@ -8,6 +8,19 @@ Get a list of the scheduled prices for an in-app purchase.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/iapPriceSchedule`
+
+## Parameters
+
+- `fields[inAppPurchasePriceSchedules]` ([string])
+- `fields[inAppPurchasePrices]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit[automaticPrices]` (integer)
+- `limit[manualPrices]` (integer)
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

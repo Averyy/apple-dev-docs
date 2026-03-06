@@ -14,6 +14,10 @@ The result of handling an intent to update media affinity.
 object UpdateMediaAffinityIntentHandlingHandleInvocationResponse.Result
 ```
 
+## Properties
+
+- `response` (UpdateMediaAffinityIntentResponse) *(required)*: Your service’s ability to handle the intent.
+
 
 ---
 

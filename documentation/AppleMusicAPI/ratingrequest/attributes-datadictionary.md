@@ -14,6 +14,10 @@ The attributes for a rating request object.
 object RatingRequest.Attributes
 ```
 
+## Properties
+
+- `value` (integer) *(required)*: The value for the rating request.
+
 
 ---
 

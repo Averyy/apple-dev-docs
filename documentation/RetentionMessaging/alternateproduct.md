@@ -26,6 +26,11 @@ Use the product identifier in [`DecodedRealtimeRequestBody`](decodedrealtimerequ
 
 The message identifier needs to refer to a message that doesn’t include an image and that has a [`messageState`](messagestate.md) of `APPROVED`; otherwise, the retention message fails. For more information about setting up messages, see [`Upload Message`](upload-message.md).
 
+## Properties
+
+- `messageIdentifier` (messageIdentifier): The message identifier of the text to display in the switch-plan retention message.
+- `productId` (productId): The product identifier of the subscription the retention message suggests for your customer to switch to.
+
 ## See Also
 
 - [object message](message.md)

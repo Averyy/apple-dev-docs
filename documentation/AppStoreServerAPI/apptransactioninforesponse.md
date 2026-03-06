@@ -30,6 +30,10 @@ This response contains information that you request by calling the [`Get App Tra
 - [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
   A decoded payload that contains app transaction information.
 
+## Properties
+
+- `signedAppTransactionInfo` (JWSAppTransaction): A customer’s app transaction information, signed by Apple, in JSON Web Signature (JWS) format.
+
 ## See Also
 
 - [Get App Transaction Info](get-app-transaction-info.md)

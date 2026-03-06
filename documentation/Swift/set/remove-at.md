@@ -27,7 +27,7 @@ The element that was removed from the set.
 
 ## Parameters
 
-- `position`: The index of the member to remove.   must   be a valid index of the set, and must not be equal to the set’s end   index.
+- `position`: The index of the member to remove. `position` must be a valid index of the set, and must not be equal to the set’s end index.
 
 ## See Also
 

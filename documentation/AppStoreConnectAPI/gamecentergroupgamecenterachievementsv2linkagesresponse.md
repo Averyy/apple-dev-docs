@@ -25,6 +25,12 @@ object GameCenterGroupGameCenterAchievementsV2LinkagesResponse
 ### Dictionaries - generated
 - [object GameCenterGroupGameCenterAchievementsV2LinkagesResponse.Data](gamecentergroupgamecenterachievementsv2linkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterGroupGameCenterAchievementsV2LinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

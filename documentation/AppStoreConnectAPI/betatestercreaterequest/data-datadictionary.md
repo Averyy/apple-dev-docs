@@ -22,6 +22,12 @@ object BetaTesterCreateRequest.Data
 - [object BetaTesterCreateRequest.Data.Relationships](betatestercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (BetaTesterCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
+- `relationships` (BetaTesterCreateRequest.Data.Relationships): The types and IDs of the related data to update.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

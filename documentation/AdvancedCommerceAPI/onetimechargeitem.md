@@ -18,6 +18,13 @@ object OneTimeChargeItem
 
 - [Creating SKUs for your In-App Purchases](creating-your-purchases.md)
 
+## Properties
+
+- `description` (description) *(required)*: A description of the product that doesn’t display to customers.
+- `displayName` (displayName) *(required)*: The product name, suitable for display to customers.
+- `price` (price) *(required)*: The price, in milliunits of the currency, of the one-time charge product.
+- `SKU` (SKU) *(required)*: The product identifier.
+
 ## See Also
 
 - [object OneTimeChargeCreateRequest](onetimechargecreaterequest.md)

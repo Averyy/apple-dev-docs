@@ -28,6 +28,12 @@ object GameCenterAchievementLocalizationV2CreateRequest.Data
 - [object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `attributes` (GameCenterAchievementLocalizationV2CreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

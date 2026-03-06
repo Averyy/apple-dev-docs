@@ -12,6 +12,50 @@ Get information about the territory availablity for an in-app purchase.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593
+```
+
+**Response**:
+
+```json
+  "data" : {
+    "type" : "inAppPurchaseAvailabilities",
+    "id" : "6447501593",
+    "attributes" : {
+      "availableInNewTerritories" : false
+    },
+    "relationships" : {
+      "availableTerritories" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593/relationships/availableTerritories",
+          "related" : "https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593/availableTerritories"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/{id}`
+
+## Parameters
+
+- `fields[inAppPurchaseAvailabilities]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit[availableTerritories]` (integer)
+
 ## See Also
 
 - [List the territory availablity of an in-app purchase](get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)

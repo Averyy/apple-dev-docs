@@ -18,6 +18,11 @@ object AppNotFoundError
 
 Check the `bid` claim in the JSON Web Token (JWT) to make sure that your app’s bundle ID is correct. For more information, see [`Generating JSON Web Tokens for API requests`](generating-json-web-tokens-for-api-requests.md).
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

@@ -12,6 +12,26 @@ Read information for a specific alternative distribution domain.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+
+```
+
+**Response**:
+
+```json
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{id}`
+
+## Parameters
+
+- `fields[alternativeDistributionDomains]` ([string])
+
 ## See Also
 
 - [Add an alternative distribution domain](post-v1-alternativedistributiondomains.md)

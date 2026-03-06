@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkage
 ### Dictionaries
 - [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse.Data](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardsetlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetMemberLocalization](gamecenterleaderboardsetmemberlocalization.md)

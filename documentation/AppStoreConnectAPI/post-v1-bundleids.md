@@ -8,6 +8,10 @@ Register a new bundle ID for app development.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/bundleIds`
+
 
 ---
 

@@ -8,6 +8,14 @@ List territory IDs for an app tag.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appTags/{id}/relationships/territories`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List app tags](get-v1-apps-_id_-apptags.md)

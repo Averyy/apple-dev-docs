@@ -12,6 +12,19 @@ Get a list of in-app purchase price points and their equivalent in a specified c
 
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchasePricePoints/{id}/equalizations`
+
+## Parameters
+
+- `fields[inAppPurchasePricePoints]` ([string])
+- `fields[territories]` ([string])
+- `filter[inAppPurchaseV2]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

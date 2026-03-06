@@ -14,6 +14,10 @@ Attributes that describe a certificate update request resource.
 object CertificateUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `activated` (boolean)
+
 
 ---
 

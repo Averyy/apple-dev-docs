@@ -29,7 +29,7 @@ You can revoke authorization by calling [`revokeAuthorization(completionHandler:
 
 ## Parameters
 
-- `member`: The   that requests authorization
+- `member`: The [`FamilyControlsMember`](familycontrolsmember.md) that requests authorization
 
 ## See Also
 

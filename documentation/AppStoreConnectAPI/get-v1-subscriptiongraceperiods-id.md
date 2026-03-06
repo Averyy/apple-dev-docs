@@ -12,6 +12,44 @@ Get the Boolean value that represents the billing grace period opt-in state and 
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "subscriptionGracePeriods",
+    "id" : "6446671329",
+    "attributes" : {
+      "optIn" : true,
+      "sandboxOptIn" : false,
+      "duration" : "THREE_DAYS",
+      "renewalType" : "ALL_RENEWALS"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329"
+  }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/{id}`
+
+## Parameters
+
+- `fields[subscriptionGracePeriods]` ([string])
+
 ## See Also
 
 - [Read the Billing Grace Period Value for an App](get-v1-apps-_id_-subscriptiongraceperiod.md)

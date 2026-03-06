@@ -8,6 +8,14 @@ Update a specific team in a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingTeams/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The unique identifier for the team.
+
 ## See Also
 
 - [Create a team](post-v1-gamecentermatchmakingteams.md)

@@ -93,7 +93,7 @@ Once the user initiates the in-app experience, and starts a FaceTime or SharePla
 
 #### Revision History
 
--  First published.
+- **2022-09-20** First published.
 
 ## See Also
 

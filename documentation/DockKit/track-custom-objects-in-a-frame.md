@@ -6,7 +6,7 @@ Use your machine learning model to focus on a specific subject.
 
 #### Overview
 
-You can use your own custom machine learning model, also known as . This allows DockKit to track a custom subject, such as a dog or a cat. Once you’ve applied your machine learning model on a set of video frames, use DockKit to generate and provide tracking vectors.
+You can use your own custom machine learning model, also known as *inference*. This allows DockKit to track a custom subject, such as a dog or a cat. Once you’ve applied your machine learning model on a set of video frames, use DockKit to generate and provide tracking vectors.
 
 #### Obtain Video Images
 

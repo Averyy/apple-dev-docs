@@ -14,6 +14,10 @@ Attributes that describe a challenge resource.
 object GameCenterChallengeImageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `uploaded` (boolean)
+
 
 ---
 

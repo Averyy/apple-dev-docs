@@ -48,7 +48,7 @@ entity.add(presentationComponent)
 entity.add(BillboardComponent())
 ```
 
-> **Note**: For an example of breakthrough effects on presentations, see doc://com.apple.documentation/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.
+> **Note**: For an example of breakthrough effects on presentations, see [`Canyon Crosser: Building a volumetric hike-planning app`](https://developer.apple.com/documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app).
 
 ## Topics
 

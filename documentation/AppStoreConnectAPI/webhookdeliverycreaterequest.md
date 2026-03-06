@@ -19,6 +19,10 @@ object WebhookDeliveryCreateRequest
 ### Dictionaries
 - [object WebhookDeliveryCreateRequest.Data](webhookdeliverycreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (WebhookDeliveryCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

@@ -39,8 +39,8 @@ Use this function to immediately determine if metadata has some specific kind of
 
 ## Parameters
 
-- `attachment`: The kind of attachment to test, such as  ,  , and  .
-- `type`: The   type of the media data to test.
+- `attachment`: The kind of attachment to test, such as `.image`, `.icon`, and `.video`.
+- `type`: The `Transferable` type of the media data to test.
 
 
 ---

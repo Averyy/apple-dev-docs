@@ -8,6 +8,14 @@ Get the build compatibilty information for a specific beta group.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/betaRecruitmentCriterionCompatibleBuildCheck`
+
+## Parameters
+
+- `fields[betaRecruitmentCriterionCompatibleBuildChecks]` ([string])
+
 ## See Also
 
 - [List Beta Groups](get-v1-betagroups.md)

@@ -14,6 +14,11 @@ The data structure that represents an Android to iOS app mapping details linkage
 object AppAndroidToIosAppMappingDetailsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

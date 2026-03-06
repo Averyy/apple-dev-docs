@@ -10,6 +10,8 @@ In the first advanced tutorial, you created a header with layering and parallax 
 
 In this second article, you’ll add more code to the same article to modify the layout. You’ll wrap body text around an image, place captions in the article margin, create a more complex header, and add component animations.
 
+**On this page, you’ll learn how to create a more complex layered header.**
+
 ##### Move Title and Heading Text Into the Header
 
 First, you need to layer title and heading information in front of the header’s image fill. You’ll move `heading1`, `divider`, and `title` components from the second section of the article into the `header` component.

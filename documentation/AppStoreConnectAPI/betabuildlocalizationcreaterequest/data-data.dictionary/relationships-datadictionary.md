@@ -20,6 +20,10 @@ object BetaBuildLocalizationCreateRequest.Data.Relationships
 - [object BetaBuildLocalizationCreateRequest.Data.Relationships.Build](betabuildlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `build` (BetaBuildLocalizationCreateRequest.Data.Relationships.Build) *(required)*
+
 ## See Also
 
 - [object BetaBuildLocalizationCreateRequest.Data.Attributes](betabuildlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

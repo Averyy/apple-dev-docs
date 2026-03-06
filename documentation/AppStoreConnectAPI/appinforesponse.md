@@ -14,6 +14,12 @@ A response that contains a single App Infos resource.
 object AppInfoResponse
 ```
 
+## Properties
+
+- `data` (AppInfo) *(required)*: The resource data.
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppInfo](appinfo.md)

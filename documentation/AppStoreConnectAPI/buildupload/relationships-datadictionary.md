@@ -28,6 +28,14 @@ object BuildUpload.Relationships
 - [object BuildUpload.Relationships.BuildUploadFiles](buildupload/relationships-data.dictionary/builduploadfiles-data.dictionary.md)
   The data that describes the build related to a upload.
 
+## Properties
+
+- `assetDescriptionFile` (BuildUpload.Relationships.AssetDescriptionFile)
+- `assetFile` (BuildUpload.Relationships.AssetFile)
+- `assetSpiFile` (BuildUpload.Relationships.AssetSpiFile)
+- `build` (BuildUpload.Relationships.Build)
+- `buildUploadFiles` (BuildUpload.Relationships.BuildUploadFiles)
+
 
 ---
 

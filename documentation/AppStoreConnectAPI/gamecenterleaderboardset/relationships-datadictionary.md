@@ -26,6 +26,15 @@ object GameCenterLeaderboardSet.Relationships
 - [object GameCenterLeaderboardSet.Relationships.Localizations](gamecenterleaderboardset/relationships-data.dictionary/localizations-data.dictionary.md)
 - [object GameCenterLeaderboardSet.Relationships.Releases](gamecenterleaderboardset/relationships-data.dictionary/releases-data.dictionary.md)
 
+## Properties
+
+- `gameCenterDetail` (GameCenterLeaderboardSet.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterLeaderboardSet.Relationships.GameCenterGroup)
+- `gameCenterLeaderboards` (GameCenterLeaderboardSet.Relationships.GameCenterLeaderboards)
+- `groupLeaderboardSet` (GameCenterLeaderboardSet.Relationships.GroupLeaderboardSet)
+- `localizations` (GameCenterLeaderboardSet.Relationships.Localizations)
+- `releases` (GameCenterLeaderboardSet.Relationships.Releases)
+
 ## See Also
 
 - [object GameCenterLeaderboardSet.Attributes](gamecenterleaderboardset/attributes-data.dictionary.md)

@@ -10,6 +10,8 @@ Use the `prototype` attribute to associate the data item’s type with a particu
 
 ##### Value for Prototype
 
+- **String**: The string value associated with the `type` property in the associated data item.
+
 ##### Elements That Use Prototype
 
 - Any element contained in a [`section`](section.md).

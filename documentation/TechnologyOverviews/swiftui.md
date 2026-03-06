@@ -69,7 +69,7 @@ In SwiftUI, your app’s data model is the source of truth, and the way you modi
 
 - Apply the [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment) property wrapper to create a local reference to a value in the [`EnvironmentValues`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues).
 
-The [`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) sample demonstrates how you use data to drive interface changes in a multiplatform app. The app uses SwiftUI to support iOS, iPadOS, macOS, tvOS, and visionOS using the same set of views and controls. See how you can build your app once and deploy it on multiple platforms.
+The [`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) sample demonstrates how you use data to drive interface changes in a multiplatform app. The app uses SwiftUI to support iOS, iPadOS, macOS, tvOS, and visionOS using the same set of views and controls. See how you can build your app once and deploy it on multiple platforms.
 
 #### Handle Events and Interactions
 

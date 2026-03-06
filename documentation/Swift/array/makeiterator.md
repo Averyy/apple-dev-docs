@@ -25,7 +25,7 @@ func makeIterator() -> IndexingIterator<Self>
 - [func forEach((Self.Element) throws -> Void) rethrows](array/foreach(_:).md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
 - [func enumerated() -> EnumeratedSequence<Self>](array/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [var underestimatedCount: Int](array/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 

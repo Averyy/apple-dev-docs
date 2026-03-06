@@ -8,6 +8,10 @@ Add a new screenshot to a screenshot set.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appScreenshots`
+
 ## See Also
 
 - [Modify an App Screenshot](patch-v1-appscreenshots-_id_.md)

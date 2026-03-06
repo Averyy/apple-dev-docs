@@ -17,6 +17,10 @@ object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships.TerritoryAvail
 ### Objects
 - [object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships.TerritoryAvailabilities.Data](endappavailabilitypreordercreaterequest/data-data.dictionary/relationships-data.dictionary/territoryavailabilities-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([EndAppAvailabilityPreOrderCreateRequest.Data.Relationships.TerritoryAvailabilities.Data]) *(required)*
+
 
 ---
 

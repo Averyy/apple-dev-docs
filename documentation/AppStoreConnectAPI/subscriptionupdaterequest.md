@@ -17,6 +17,11 @@ object SubscriptionUpdateRequest
 ### Objects
 - [object SubscriptionUpdateRequest.Data](subscriptionupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionUpdateRequest.Data) *(required)*
+- `included` ([*])
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

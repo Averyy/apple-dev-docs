@@ -22,6 +22,14 @@ object Stations
 - [object Stations.Relationships](stations/relationships-data.dictionary.md)
   The name of the relationship you want to fetch for this resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the station.
+- `type` (string) *(required)*: This value must always be `stations`.
+- `href` (string) *(required)*: The relative location for the station resource.
+- `attributes` (Stations.Attributes): The attributes for the station.
+- `relationships` (Stations.Relationships): The relationships for the station.
+
 ## See Also
 
 - [object StationsResponse](stationsresponse.md)

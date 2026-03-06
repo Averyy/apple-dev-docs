@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API ?+ - Deprecated
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/relationships/appStoreVersionSubmission`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read the App Store Version Submission Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionsubmission.md)

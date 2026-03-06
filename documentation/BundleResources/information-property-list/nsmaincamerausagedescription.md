@@ -14,7 +14,7 @@
 
 The system uses this string to tell someone why your app requests permission to use the main camera. In visionOS 2-2.3, the system uses the value of [`NSEnterpriseMCAMUsageDescription`](information-property-list/nsenterprisemcamusagedescription.md) instead.
 
-For information about using the main camera in your visionOS app, see [`Accessing the main camera`](https://developer.apple.com/documentation/visionos/accessing-the-main-camera).
+For information about using the main camera in your visionOS app, see [`Accessing the main camera`](https://developer.apple.com/documentation/visionOS/accessing-the-main-camera).
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the device’s main camera.
 

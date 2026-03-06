@@ -20,6 +20,13 @@ object Artists.Views.ArtistsSimilarArtistsView
 - [object Artists.Views.ArtistsSimilarArtistsView.Attributes](artists/views-data.dictionary/artistssimilarartistsview/attributes-data.dictionary.md)
   Other artists similar to this artist.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsSimilarArtistsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Artists]) *(required)*: Other artists similar to this artist.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

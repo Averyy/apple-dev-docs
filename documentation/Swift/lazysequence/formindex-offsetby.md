@@ -24,12 +24,12 @@ func formIndex(_ i: inout Self.Index, offsetBy distance: Int)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
 
 ## Parameters
 
 - `i`: A valid index of the collection.
-- `distance`: The distance to offset  .   must not be negative   unless the collection conforms to the    protocol.
+- `distance`: The distance to offset `i`. `distance` must not be negative unless the collection conforms to the `BidirectionalCollection` protocol.
 
 
 ---

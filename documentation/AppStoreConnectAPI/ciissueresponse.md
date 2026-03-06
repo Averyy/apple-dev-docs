@@ -14,6 +14,11 @@ A response that contains a single Issues resource.
 object CiIssueResponse
 ```
 
+## Properties
+
+- `data` (CiIssue) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object CiIssue](ciissue.md)

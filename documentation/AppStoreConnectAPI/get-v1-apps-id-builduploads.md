@@ -8,6 +8,23 @@ Get a list of all build uploads for a specific app.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/buildUploads`
+
+## Parameters
+
+- `fields[buildUploadFiles]` ([string])
+- `fields[buildUploads]` ([string])
+- `fields[builds]` ([string])
+- `filter[cfBundleShortVersionString]` ([string])
+- `filter[cfBundleVersion]` ([string])
+- `filter[platform]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [List all build uploads IDs for an app](get-v1-apps-_id_-relationships-builduploads.md)

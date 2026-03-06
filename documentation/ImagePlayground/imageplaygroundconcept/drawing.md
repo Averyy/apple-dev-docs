@@ -24,7 +24,7 @@ Call this method when you want to use a PencilKit drawing as the basis for gener
 
 ## Parameters
 
-- `drawing`: A PencilKit drawing object that contains a set of strokes.   The system uses this drawing, along with other concepts, to guide the   image creation.
+- `drawing`: A PencilKit drawing object that contains a set of strokes. The system uses this drawing, along with other concepts, to guide the image creation.
 
 ## See Also
 

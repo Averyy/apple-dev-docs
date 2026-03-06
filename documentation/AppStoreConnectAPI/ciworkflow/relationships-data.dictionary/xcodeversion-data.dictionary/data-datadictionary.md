@@ -14,6 +14,11 @@ The type and ID of a related Xcode Versions resource.
 object CiWorkflow.Relationships.XcodeVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Xcode Versions resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

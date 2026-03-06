@@ -20,6 +20,12 @@ object MarketplaceWebhookUpdateRequest.Data
 - [object MarketplaceWebhookUpdateRequest.Data.Attributes](marketplacewebhookupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a marketplace webhook resource.
 
+## Properties
+
+- `attributes` (MarketplaceWebhookUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

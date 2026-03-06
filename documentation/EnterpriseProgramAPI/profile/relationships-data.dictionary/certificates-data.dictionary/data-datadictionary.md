@@ -11,6 +11,11 @@ The type and ID of a related resource.
 object Profile.Relationships.Certificates.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 ## See Also
 
 - [links](profile/relationships-data.dictionary/certificates-data.dictionary/links.md)

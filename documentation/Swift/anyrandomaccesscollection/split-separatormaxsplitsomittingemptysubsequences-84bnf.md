@@ -53,13 +53,13 @@ print(line.split(separator: " ", omittingEmptySubsequences: false)
 // Prints "["BLANCHE:", "", "", "I", "don\'t", "want", "realism.", "I", "want", "magic!"]"
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
 - `separator`: The element that should be split upon.
-- `maxSplits`: The maximum number of times to split the sequence, or one   less than the number of subsequences to return. If    subsequences are returned, the last one is a suffix of the original   sequence containing the remaining elements.   must be   greater than or equal to zero. The default value is  .
-- `omittingEmptySubsequences`: If  , an empty subsequence is   returned in the result for each consecutive pair of    elements in the sequence and for each instance of   at the   start or end of the sequence. If  , only nonempty subsequences   are returned. The default value is  .
+- `maxSplits`: The maximum number of times to split the sequence, or one less than the number of subsequences to return. If `maxSplits + 1` subsequences are returned, the last one is a suffix of the original sequence containing the remaining elements. `maxSplits` must be greater than or equal to zero. The default value is `Int.max`.
+- `omittingEmptySubsequences`: If `false`, an empty subsequence is returned in the result for each consecutive pair of `separator` elements in the sequence and for each instance of `separator` at the start or end of the sequence. If `true`, only nonempty subsequences are returned. The default value is `true`.
 
 
 ---

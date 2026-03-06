@@ -22,7 +22,7 @@ init<W, C1>(@RegexComponentBuilder _ componentBuilder: () -> some RegexComponent
 
 ## Parameters
 
-- `componentBuilder`: A builder closure that generates a   regex component to wrap in an atomic group.
+- `componentBuilder`: A builder closure that generates a regex component to wrap in an atomic group.
 
 
 ---

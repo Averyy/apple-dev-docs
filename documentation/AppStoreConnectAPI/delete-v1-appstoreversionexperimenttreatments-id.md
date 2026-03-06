@@ -8,6 +8,14 @@ Delete metadata that you configured for an App Store Version experiment.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appStoreVersionExperimentTreatments/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)

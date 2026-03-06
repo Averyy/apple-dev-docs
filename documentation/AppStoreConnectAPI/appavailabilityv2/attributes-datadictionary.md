@@ -12,6 +12,10 @@
 object AppAvailabilityV2.Attributes
 ```
 
+## Properties
+
+- `availableInNewTerritories` (boolean)
+
 ## See Also
 
 - [object AppAvailabilityV2.Relationships](appavailabilityv2/relationships-data.dictionary.md)

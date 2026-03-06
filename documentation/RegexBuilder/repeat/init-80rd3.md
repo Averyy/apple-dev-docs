@@ -23,8 +23,8 @@ init<W, C1, C2>(_ component: some RegexComponent, _ expression: some RangeExpres
 ## Parameters
 
 - `component`: The regex component to repeat.
-- `expression`: A range expression specifying the number of times   that   can repeat.
-- `behavior`: The repetition behavior to use when repeating    in the match. If   is  , the default   repetition behavior is used, which can be changed from    by calling   on the resulting   .
+- `expression`: A range expression specifying the number of times that `component` can repeat.
+- `behavior`: The repetition behavior to use when repeating `component` in the match. If `behavior` is `nil`, the default repetition behavior is used, which can be changed from `eager` by calling `repetitionBehavior(_:)` on the resulting `Regex`.
 
 
 ---

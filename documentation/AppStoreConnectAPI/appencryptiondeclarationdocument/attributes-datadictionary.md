@@ -14,6 +14,16 @@ Attributes that describe an app encryption declaration document resource.
 object AppEncryptionDeclarationDocument.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `downloadUrl` (uri)
+- `fileName` (string)
+- `fileSize` (integer)
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+
 
 ---
 

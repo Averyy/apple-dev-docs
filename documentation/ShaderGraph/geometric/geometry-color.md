@@ -17,6 +17,8 @@ The color associated with the geometry at the currently-processed geometric posi
 
 #### Parameter Description
 
+- **`Index`**: The index of the color the node references. The default value is `0`.
+
 ## See Also
 
 - [Position](geometric/position.md)

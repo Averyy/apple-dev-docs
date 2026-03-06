@@ -22,6 +22,14 @@ object PersonalRecommendation
 - [object PersonalRecommendation.Relationships](personalrecommendation/relationships-data.dictionary.md)
   The relationships for a recommendation resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the recommendation.
+- `type` (string) *(required)*: This value must always be `personal-recommendation`.
+- `href` (string) *(required)*: The relative location for the recommendation resource.
+- `attributes` (PersonalRecommendation.Attributes): The attributes for the recommendation.
+- `relationships` (PersonalRecommendation.Relationships): The relationships for the playlist.
+
 ## See Also
 
 - [object PersonalRecommendationResponse](personalrecommendationresponse.md)

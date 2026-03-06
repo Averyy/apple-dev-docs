@@ -19,6 +19,10 @@ object MarketplaceSearchDetailCreateRequest
 ### Objects
 - [object MarketplaceSearchDetailCreateRequest.Data](marketplacesearchdetailcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (MarketplaceSearchDetailCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object MarketplaceSearchDetail](marketplacesearchdetail.md)

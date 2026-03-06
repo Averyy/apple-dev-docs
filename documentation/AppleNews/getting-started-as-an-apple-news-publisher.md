@@ -16,7 +16,7 @@ Choose the process that works best with your publishing model, your content mana
 - Work with [`Apple News preferred providers`](https://developer.apple.comhttps://developer.apple.com/go/?id=news-providers).
 - Use a third-party solution from the table below.
 
-|  |  |
+| **CMS** | **Third-Party Vendor** |
 | --- | --- |
 | WordPress (plug-in) | [`Alley Interactive`](https://developer.apple.comhttps://wordpress.org/plugins/publish-to-apple-news/) |
 | Drupal (plug-in) | [`Project Ricochet`](https://developer.apple.comhttps://www.drupal.org/project/publish_to_apple_news) |

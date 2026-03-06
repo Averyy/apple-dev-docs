@@ -20,6 +20,54 @@ Create an alternative distribution package for an app store version.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages
+{
+  "data": {
+    "type": "alternativeDistributionPackages",
+    "relationships": {
+      "appStoreVersion": {
+        "data": {
+          "type": "appStoreVersions",
+          "id": "3fb74833-4bf4-4c34-9cfd-f9dc4978ea45"
+        }
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "alternativeDistributionPackages",
+    "id": "f3190601-974c-45ee-aa24-35db2090c260",
+    "relationships": {
+      "versions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/f3190601-974c-45ee-aa24-35db2090c260/relationships/versions",
+          "related": "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/f3190601-974c-45ee-aa24-35db2090c260/versions"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/f3190601-974c-45ee-aa24-35db2090c260"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages`
+
 ## See Also
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)

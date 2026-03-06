@@ -21,6 +21,13 @@ object GameCenterAchievementLocalizationV2.Attributes
 - locale:
 - name:
 
+## Properties
+
+- `afterEarnedDescription` (string)
+- `beforeEarnedDescription` (string)
+- `locale` (string)
+- `name` (string)
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2.Relationships](gamecenterachievementlocalizationv2/relationships-data.dictionary.md)

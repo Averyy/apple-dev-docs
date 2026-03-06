@@ -14,6 +14,10 @@ Attributes that describe an activity resource.
 object GameCenterActivityVersionCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fallbackUrl` (string)
+
 
 ---
 

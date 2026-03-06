@@ -18,6 +18,27 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library?ids[albums]=1577502911
+```
+
+**Response**:
+
+```json
+No response body
+```
+
+## Endpoint
+
+`POST https://api.music.apple.com/v1/me/library`
+
+## Parameters
+
+- `ids` ([string]) *(required)*: The unique catalog identifiers for the resources. To indicate the type of resource to add, follow the `ids` with one of the allowed values. Add multiple types in the same request.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object that `storefront` specifies. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
 ## See Also
 
 - [object Resource](resource.md)

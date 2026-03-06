@@ -33,7 +33,7 @@ Use this option when you want more control over the scene-selection process for 
 
 ## Parameters
 
-- `contentIdentifier`: The string to compare against the scene’s defined   activation conditions. This string has a similar purpose to the     of an   object.
+- `contentIdentifier`: The string to compare against the scene’s defined activation conditions. This string has a similar purpose to the [`targetContentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/targetContentIdentifier) of an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object.
 
 ## See Also
 

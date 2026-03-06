@@ -14,6 +14,11 @@ An error code and description.
 object AppMediaStateError
 ```
 
+## Properties
+
+- `code` (string)
+- `description` (string)
+
 ## See Also
 
 - [object RoutingAppCoverage](routingappcoverage.md)

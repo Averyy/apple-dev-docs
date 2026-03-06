@@ -13,6 +13,14 @@ Update the app store version for a specific app.
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Store Version](post-v1-appstoreversions.md)

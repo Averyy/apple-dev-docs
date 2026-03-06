@@ -42,6 +42,23 @@ object AppStoreVersion.Relationships
 - [object AppStoreVersion.Relationships.CustomerReviews](appstoreversion/relationships-data.dictionary/customerreviews-data.dictionary.md)
 - [object AppStoreVersion.Relationships.GameCenterAppVersion](appstoreversion/relationships-data.dictionary/gamecenterappversion-data.dictionary.md)
 
+## Properties
+
+- `app` (AppStoreVersion.Relationships.App)
+- `ageRatingDeclaration` (AppStoreVersion.Relationships.AgeRatingDeclaration)
+- `appStoreReviewDetail` (AppStoreVersion.Relationships.AppStoreReviewDetail)
+- `appStoreVersionLocalizations` (AppStoreVersion.Relationships.AppStoreVersionLocalizations)
+- `appStoreVersionPhasedRelease` (AppStoreVersion.Relationships.AppStoreVersionPhasedRelease)
+- `appStoreVersionSubmission` (AppStoreVersion.Relationships.AppStoreVersionSubmission)
+- `build` (AppStoreVersion.Relationships.Build)
+- `routingAppCoverage` (AppStoreVersion.Relationships.RoutingAppCoverage)
+- `appClipDefaultExperience` (AppStoreVersion.Relationships.AppClipDefaultExperience): The related Default App Clip Experiences resource.
+- `appStoreVersionExperiments` (AppStoreVersion.Relationships.AppStoreVersionExperiments)
+- `appStoreVersionExperimentsV2` (AppStoreVersion.Relationships.AppStoreVersionExperimentsV2)
+- `alternativeDistributionPackage` (AppStoreVersion.Relationships.AlternativeDistributionPackage)
+- `customerReviews` (AppStoreVersion.Relationships.CustomerReviews)
+- `gameCenterAppVersion` (AppStoreVersion.Relationships.GameCenterAppVersion)
+
 ## See Also
 
 - [object AppStoreVersion.Attributes](appstoreversion/attributes-data.dictionary.md)

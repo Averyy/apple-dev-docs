@@ -18,6 +18,14 @@ object AppStoreVersionExperiment
 - [object AppStoreVersionExperiment.Attributes](appstoreversionexperiment/attributes-data.dictionary.md)
 - [object AppStoreVersionExperiment.Relationships](appstoreversionexperiment/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppStoreVersionExperiment.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppStoreVersionExperiment.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)

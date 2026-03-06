@@ -20,6 +20,12 @@ object GameCenterAppVersionCompatibilityVersionsLinkagesResponse
 - [object GameCenterAppVersionCompatibilityVersionsLinkagesResponse.Data](gamecenterappversioncompatibilityversionslinkagesresponse/data-data.dictionary.md)
   The data structure that represents a app resource.
 
+## Properties
+
+- `data` ([GameCenterAppVersionCompatibilityVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAppVersion](gamecenterappversion.md)

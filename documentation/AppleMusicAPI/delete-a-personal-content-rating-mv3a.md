@@ -18,6 +18,26 @@ For a particular playlist, the personal ratings for that playlist’s catalog ID
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/ratings/playlists/pl.5b0194eaa170401e8986335d7e77aa4e
+```
+
+**Response**:
+
+```json
+No response body.
+```
+
+## Endpoint
+
+`DELETE https://api.music.apple.com/v1/me/ratings/playlists/{id}`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
 ## See Also
 
 - [object Ratings](ratings.md)

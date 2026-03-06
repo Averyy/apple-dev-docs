@@ -24,6 +24,13 @@ object IntentResolutionResult
 - [object IntentResolutionResult.Unsupported](intentresolutionresult/unsupported-data.dictionary.md)
   An empty object that indicates the server doesn’t support this parameter.
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of result.
+- `needsValue` (IntentResolutionResult.NeedsValue): The service must have a value for this parameter, but the intent doesn’t include one.
+- `notRequired` (IntentResolutionResult.NotRequired): The intent doesn’t include a value for this parameter, but the server can proceed without one.
+- `unsupported` (IntentResolutionResult.Unsupported): The server doesn’t support this parameter.
+
 ## Relationships
 
 ### Inherited By

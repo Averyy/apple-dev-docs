@@ -16,6 +16,10 @@ Create a subscription group for an app.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionGroups`
+
 ## See Also
 
 - [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)

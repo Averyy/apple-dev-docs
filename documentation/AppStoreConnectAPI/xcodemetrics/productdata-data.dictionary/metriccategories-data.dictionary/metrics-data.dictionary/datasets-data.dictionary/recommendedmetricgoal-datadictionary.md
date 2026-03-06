@@ -14,6 +14,11 @@ A recommeded value of a goal for a specific app metric.
 object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.RecommendedMetricGoal
 ```
 
+## Properties
+
+- `detail` (string): A human-readable description of the recommended metric goal.
+- `value` (number): The recommended metric value.
+
 
 ---
 

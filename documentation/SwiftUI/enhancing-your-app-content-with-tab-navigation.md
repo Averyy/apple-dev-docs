@@ -14,7 +14,7 @@ Keep your app content front and center while providing quick access to navigatio
 
 #### Overview
 
-[`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) adopts the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
+[`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) adopts the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
 
 Starting in iPadOS 18, the tab bar appears on the top of the screen floating over your content instead of appearing at the bottom of the screen. This appearance creates an immersive full-screen browsing experience. Tab bars provide people with access to the top-level navigation in your app. However, too many tabs can make it hard for people to locate content. Implementing a sidebar makes it easier to navigate a detailed information hierarchy.
 

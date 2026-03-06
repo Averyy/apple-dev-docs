@@ -14,6 +14,11 @@ Information about a related artist.
 object Album.RelatedArtist
 ```
 
+## Properties
+
+- `id` (string): The identifier for the artist in Apple Music.
+- `nameDefault` (string): The default name for the artist.
+
 ## See Also
 
 - [object Album.ArtistRole](album/artistrole.md)

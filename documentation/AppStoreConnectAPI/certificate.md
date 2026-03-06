@@ -22,6 +22,14 @@ object Certificate
 ### Dictionaries
 - [object Certificate.Relationships](certificate/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Certificate.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (Certificate.Relationships)
+
 ## See Also
 
 - [object CertificatesWithoutIncludesResponse](certificateswithoutincludesresponse.md)

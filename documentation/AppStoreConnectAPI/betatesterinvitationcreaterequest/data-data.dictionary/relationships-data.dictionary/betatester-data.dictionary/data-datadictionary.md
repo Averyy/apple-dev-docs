@@ -14,6 +14,11 @@ The type and ID of the resource that you’re relating with the resource you’r
 object BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

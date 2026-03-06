@@ -28,8 +28,8 @@ Metadata fetching supports Task cancellation; if the enclosing Task is cancelled
 ## Parameters
 
 - `request`: The URL request to fetch the metadata from.
-- `timeout`: The time interval after which the request automatically fails if it hasn’t already completed. By default, this   is 30 seconds. If a metadata fetch takes longer than the timeout interval, an   is thrown.
-- `includeSubresources`: Determines if subresources should be fetched in addition to the main resource. If  , additional data will be fetched from the network to provide subresources such as images and icons. If  , no additional networking is done.
+- `timeout`: The time interval after which the request automatically fails if it hasn’t already completed. By default, this is 30 seconds. If a metadata fetch takes longer than the timeout interval, an `Error` is thrown.
+- `includeSubresources`: Determines if subresources should be fetched in addition to the main resource. If `true`, additional data will be fetched from the network to provide subresources such as images and icons. If `false`, no additional networking is done.
 
 
 ---

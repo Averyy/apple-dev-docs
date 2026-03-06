@@ -20,6 +20,12 @@ object CertificateUpdateRequest.Data
 - [object CertificateUpdateRequest.Data.Attributes](certificateupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a certificate update request resource.
 
+## Properties
+
+- `attributes` (CertificateUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

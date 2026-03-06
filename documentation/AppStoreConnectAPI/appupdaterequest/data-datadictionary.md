@@ -20,6 +20,12 @@ object AppUpdateRequest.Data
 - [object AppUpdateRequest.Data.Attributes](appupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (AppUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

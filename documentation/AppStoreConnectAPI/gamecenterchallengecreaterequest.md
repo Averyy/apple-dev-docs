@@ -20,6 +20,10 @@ object GameCenterChallengeCreateRequest
 - [object GameCenterChallengeCreateRequest.Data](gamecenterchallengecreaterequest/data-data.dictionary.md)
   The data structure of the request body for a challenge.
 
+## Properties
+
+- `data` (GameCenterChallengeCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterChallenge](gamecenterchallenge.md)

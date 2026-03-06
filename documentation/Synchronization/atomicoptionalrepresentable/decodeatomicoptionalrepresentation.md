@@ -31,7 +31,7 @@ The newly decoded logical type `Self?`.
 
 ## Parameters
 
-- `representation`: The optional storage representation for    that’s used within atomic operations on  .
+- `representation`: The optional storage representation for `Self?` that’s used within atomic operations on `Optional`.
 
 
 ---

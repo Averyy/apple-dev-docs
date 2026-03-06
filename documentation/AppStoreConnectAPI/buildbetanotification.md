@@ -14,6 +14,12 @@ The data structure that represents a Build Beta Notifications resource.
 object BuildBetaNotification
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BuildBetaNotificationCreateRequest](buildbetanotificationcreaterequest.md)

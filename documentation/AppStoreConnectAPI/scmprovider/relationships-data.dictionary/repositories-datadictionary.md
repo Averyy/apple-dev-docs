@@ -12,6 +12,10 @@
 object ScmProvider.Relationships.Repositories
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

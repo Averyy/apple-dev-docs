@@ -27,8 +27,8 @@ init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith factory: (Any
 ## Parameters
 
 - `bufferClass`: The class of the object used for storage.
-- `minimumCapacity`: The minimum number of  s that   must be able to be stored in the new buffer.
-- `factory`: A function that produces the initial    instance stored in the buffer, given the    object and a function that can be called on it to get the actual   number of allocated elements.
+- `minimumCapacity`: The minimum number of `Element`s that must be able to be stored in the new buffer.
+- `factory`: A function that produces the initial `Header` instance stored in the buffer, given the `buffer` object and a function that can be called on it to get the actual number of allocated elements.
 
 ## See Also
 

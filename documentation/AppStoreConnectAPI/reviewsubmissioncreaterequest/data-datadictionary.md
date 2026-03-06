@@ -22,6 +22,12 @@ object ReviewSubmissionCreateRequest.Data
 - [object ReviewSubmissionCreateRequest.Data.Relationships](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (ReviewSubmissionCreateRequest.Data.Attributes)
+- `relationships` (ReviewSubmissionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

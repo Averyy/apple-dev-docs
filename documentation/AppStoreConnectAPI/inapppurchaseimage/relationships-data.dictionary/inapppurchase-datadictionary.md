@@ -19,6 +19,10 @@ object InAppPurchaseImage.Relationships.InAppPurchase
 - [object InAppPurchaseImage.Relationships.InAppPurchase.Data](inapppurchaseimage/relationships-data.dictionary/inapppurchase-data.dictionary/data-data.dictionary.md)
   The data structure that represents the in-app purchase for a in-app purchase image resource.
 
+## Properties
+
+- `data` (InAppPurchaseImage.Relationships.InAppPurchase.Data)
+
 
 ---
 

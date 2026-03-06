@@ -8,6 +8,22 @@ Read the achievement associated with specific localized information.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/{id}/gameCenterAchievement`
+
+## Parameters
+
+- `fields[gameCenterAchievementLocalizations]` ([string])
+- `fields[gameCenterAchievementReleases]` ([string])
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `include` ([string])
+- `limit[localizations]` (integer)
+- `limit[releases]` (integer)
+- `fields[gameCenterActivities]` ([string])
+
 ## See Also
 
 - [Read Game Center achievement localization information](get-v2-gamecenterachievementlocalizations-_id_.md)

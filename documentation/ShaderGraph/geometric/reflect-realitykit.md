@@ -17,6 +17,9 @@ Reflects a vector about another vector.
 
 #### Parameter Descriptions
 
+- **`In`**: The input vector to reflect.
+- **`Normal`**: The vector that the `In` vector will be reflected with reference to.
+
 #### Discussion
 
 The `Reflect` node reflects the `In` vector by taking into account the surface orientation determined by the `Normal` vector. The `Reflect` node normalizes the `Normal` vector, then calculates the reflection direction using the formula, `In - 2 * dot(Normal, In) * Normal`. In this equation, `dot()` represents the dot product of the two vectors.

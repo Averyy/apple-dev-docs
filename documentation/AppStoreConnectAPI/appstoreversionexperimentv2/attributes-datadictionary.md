@@ -14,6 +14,16 @@ Attributes that describe an app store version experiment v2 resource.
 object AppStoreVersionExperimentV2.Attributes
 ```
 
+## Properties
+
+- `endDate` (date-time)
+- `name` (string)
+- `platform` (Platform)
+- `reviewRequired` (boolean)
+- `startDate` (date-time)
+- `state` (string)
+- `trafficProportion` (integer)
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2.Relationships](appstoreversionexperimentv2/relationships-data.dictionary.md)

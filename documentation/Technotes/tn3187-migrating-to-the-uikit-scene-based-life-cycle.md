@@ -182,8 +182,8 @@ To learn how to respond to state transitions within your app, see [`Managing you
 
 #### Revision History
 
--  Added information about the requirements in the major release following iOS 26.
--  First published.
+- **2025-06-23** Added information about the requirements in the major release following iOS 26.
+- **2025-05-05** First published.
 
 ## See Also
 

@@ -12,6 +12,11 @@
 object AppStoreVersionPhasedReleaseWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionPhasedRelease) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPhasedRelease](appstoreversionphasedrelease.md)

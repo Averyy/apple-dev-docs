@@ -8,6 +8,10 @@ Create new criteria for recruiting testers for your TestFlight build.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaRecruitmentCriteria`
+
 ## See Also
 
 - [Modify recruitment criteria](patch-v1-betarecruitmentcriteria-_id_.md)

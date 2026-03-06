@@ -12,6 +12,12 @@
 object InAppPurchaseV2Response
 ```
 
+## Properties
+
+- `data` (InAppPurchaseV2) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchasesV2Response](inapppurchasesv2response.md)

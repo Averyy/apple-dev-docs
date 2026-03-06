@@ -33,9 +33,9 @@ To navigate back to your implementation file, choose Navigate > Jump to Previous
 
 #### Revision History
 
--  Made minor editorial changes.
--  Republished as TN3108 with significant editorial changes.
--  First published as QA1914.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-08** Republished as TN3108 with significant editorial changes.
+- **2016-03-23** First published as QA1914.
 
 ## See Also
 

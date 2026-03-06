@@ -17,6 +17,12 @@ object GameCenterActivity.Relationships.Versions
 ### Dictionaries
 - [object GameCenterActivity.Relationships.Versions.Data](gamecenteractivity/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterActivity.Relationships.Versions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

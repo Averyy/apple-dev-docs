@@ -20,6 +20,12 @@ object GameCenterMatchmakingRuleSetUpdateRequest.Data
 - [object GameCenterMatchmakingRuleSetUpdateRequest.Data.Attributes](gamecentermatchmakingrulesetupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes of a rule set that you modify.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingRuleSetUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*: The unique identifier for the rule set.
+- `type` (string) *(required)*: The type of resource.
+
 
 ---
 

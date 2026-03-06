@@ -12,6 +12,12 @@
 object SubscriptionPricePoint.Attributes
 ```
 
+## Properties
+
+- `customerPrice` (string)
+- `proceeds` (string)
+- `proceedsYear2` (string)
+
 ## See Also
 
 - [object SubscriptionPricePoint.Relationships](subscriptionpricepoint/relationships-data.dictionary.md)

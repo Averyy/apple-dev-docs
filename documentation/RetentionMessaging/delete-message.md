@@ -22,6 +22,14 @@ To avoid errors, don’t use the `messageIdentifier` of deleted messages in [`Re
 
 To delete an image associated with a message, call [`Delete Image`](delete-image.md) after you delete the message.
 
+## Endpoint
+
+`DELETE https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/message/{messageIdentifier}`
+
+## Parameters
+
+- `messageIdentifier` (messageIdentifier) *(required)*: The identifier of the message to delete.
+
 ## See Also
 
 - [Upload Message](upload-message.md)

@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -19,6 +19,12 @@ object CertificateCreateRequest.Data
 ### Dictionaries
 - [object CertificateCreateRequest.Data.Relationships](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (CertificateCreateRequest.Data.Attributes) *(required)*
+- `relationships` (CertificateCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

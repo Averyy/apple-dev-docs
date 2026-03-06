@@ -19,6 +19,10 @@ object GameCenterLeaderboardImageCreateRequest
 ### Objects
 - [object GameCenterLeaderboardImageCreateRequest.Data](gamecenterleaderboardimagecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardImageCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardImageV2](gamecenterleaderboardimagev2.md)

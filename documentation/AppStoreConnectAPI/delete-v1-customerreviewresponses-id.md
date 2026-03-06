@@ -12,6 +12,14 @@ Delete a specific response you wrote to a customer review.
 
 Deletions of responses don’t take effect instantly in the App Store. Allow some time for the deletion to take effect.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/customerReviewResponses/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a `customerReviewResponses` resource that represents your review response.
+
 ## See Also
 
 - [Create or Update a Response to a Customer Review](post-v1-customerreviewresponses.md)

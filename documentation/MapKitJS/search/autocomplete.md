@@ -37,7 +37,7 @@ The system doesn’t call the callback function or delegate if you cancel the re
 
 - `query`: A string that represents the user’s search in progress.
 - `callback`: A callback function or delegate object.
-- `options`: With the   hash, you have the option to constrain the search to a desired area using the   or   properties. A coordinate or region you supply here overrides the same property you supply to the   constructor. You also have the option to override the   for the search constructor. For example,   tells the server to send results localized to Canadian French. For a complete list of options you can use to constrain your search, see  .
+- `options`: With the [`SearchAutocompleteOptions`](searchautocompleteoptions.md) hash, you have the option to constrain the search to a desired area using the [`coordinate`](searchconstructoroptions/coordinate.md) or [`region`](searchconstructoroptions/region.md) properties. A coordinate or region you supply here overrides the same property you supply to the [`Search`](search.md) constructor. You also have the option to override the [`language`](service/language.md) for the search constructor. For example, `{ "language: "fr-CA" }` tells the server to send results localized to Canadian French. For a complete list of options you can use to constrain your search, see [`SearchAutocompleteOptions`](searchautocompleteoptions.md).
 
 ## See Also
 

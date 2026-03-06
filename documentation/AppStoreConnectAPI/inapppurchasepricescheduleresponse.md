@@ -12,6 +12,12 @@
 object InAppPurchasePriceScheduleResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchasePriceSchedule) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)

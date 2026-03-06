@@ -39,9 +39,9 @@ func crashAndBurn() -> Never {
 }
 ```
 
-A function that returns `Never` is called a  function. Closures, methods, computed properties, and subscripts can also be nonreturning.
+A function that returns `Never` is called a *nonreturning* function. Closures, methods, computed properties, and subscripts can also be nonreturning.
 
-There’s no way to create an instance of `Never`; this characteristic makes it an  type. You can use an uninhabited type like `Never` to represent states in your program that are impossible to reach during execution. Swift’s type system uses this information — for example, to reason about control statements in cases that are known to be unreachable.
+There’s no way to create an instance of `Never`; this characteristic makes it an *uninhabited* type. You can use an uninhabited type like `Never` to represent states in your program that are impossible to reach during execution. Swift’s type system uses this information — for example, to reason about control statements in cases that are known to be unreachable.
 
 ```swift
 let favoriteNumber: Result<Int, Never> = .success(42)

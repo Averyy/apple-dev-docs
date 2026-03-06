@@ -14,6 +14,12 @@ The state of an app or media upload, including any errors and warnings.
 object AppMediaAssetState
 ```
 
+## Properties
+
+- `errors` ([AppMediaStateError])
+- `state` (string)
+- `warnings` ([AppMediaStateError])
+
 ## See Also
 
 - [object RoutingAppCoverage](routingappcoverage.md)

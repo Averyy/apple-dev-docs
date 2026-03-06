@@ -16,6 +16,9 @@ string CiTestDestinationKind
 
 ##### Possible Values
 
+- **SIMULATOR**: The test destination is a simulated device.
+- **MAC**: The test destination is a Mac.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

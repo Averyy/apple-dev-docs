@@ -16,6 +16,14 @@ The information related to a partial or full return.
 object ReturnInfo
 ```
 
+## Properties
+
+- `returnPolicyURL` (uri) *(required)*: The URL where the customer can see the order return policy.
+- `displayCountdown` (boolean): A Boolean value that indicates whether to display the return countdown until `returnDeadline` in the user interface. Use `true` if all of the items in the order are returnable until the `returnDeadline`. Default: `false`
+- `returnDeadline` (date-time): The date where the products can be partially or fully returned. The merchant can provide updates to an order that has a completed status until this date. Use `ISO 8601` format.
+- `returnManagementURL` (uri): The URL where the customer can initiate a return.
+- `returnPolicyDescription` (string): A short description of the return policy. The merchant can include the common return window duration here.
+
 ## See Also
 
 - [object Customer](customer.md)

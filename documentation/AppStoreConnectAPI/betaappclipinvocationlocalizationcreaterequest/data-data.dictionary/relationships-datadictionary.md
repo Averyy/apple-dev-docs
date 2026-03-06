@@ -20,6 +20,10 @@ object BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships
 - [object BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships.BetaAppClipInvocation](betaappclipinvocationlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/betaappclipinvocation-data.dictionary.md)
   The relationship to the Beta App Clip Invocations resource you set with the request that creates a Beta App Clip Invocation Localizations resource.
 
+## Properties
+
+- `betaAppClipInvocation` (BetaAppClipInvocationLocalizationCreateRequest.Data.Relationships.BetaAppClipInvocation) *(required)*: The related Beta App Clip Invocations resource.
+
 ## See Also
 
 - [object BetaAppClipInvocationLocalizationCreateRequest.Data.Attributes](betaappclipinvocationlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

@@ -23,7 +23,7 @@ var nonzeroBitCount: Int { get }
 
 #### Discussion
 
-For example, in a fixed-width integer type with a `bitWidth` value of 8, the number  has five bits equal to .
+For example, in a fixed-width integer type with a `bitWidth` value of 8, the number *31* has five bits equal to *1*.
 
 ```swift
 let x: Int8 = 0b0001_1111

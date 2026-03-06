@@ -3,7 +3,7 @@
 **Framework**: MusicKit  
 **Kind**: property
 
-An identifier of the association property that returns a collection of the artist’s albums in the  category.
+An identifier of the association property that returns a collection of the artist’s albums in the *singles* category.
 
 **Availability**:
 - iOS 15.0+

@@ -17,6 +17,12 @@ object AlternativeDistributionPackageVersionVariantsLinkagesResponse
 ### Dictionaries
 - [object AlternativeDistributionPackageVersionVariantsLinkagesResponse.Data](alternativedistributionpackageversionvariantslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AlternativeDistributionPackageVersionVariantsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

@@ -12,6 +12,14 @@ List all the leaderboard associated with a specific group.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboards`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Get all achievement IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)

@@ -18,6 +18,11 @@ object ImageNotApprovedError
 
 The [`Configure Default Message`](configure-default-message.md) endpoint returns this error if the image that’s associated with the [`messageIdentifier`](messageidentifier.md) doesn’t have an [`imageState`](imagestate.md) of `APPROVED`.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

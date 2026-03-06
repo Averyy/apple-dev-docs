@@ -12,6 +12,10 @@
 object GameCenterDetailUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `challengeEnabled` (boolean): This attribue is deprecated.
+
 ## See Also
 
 - [object GameCenterDetailUpdateRequest.Data.Relationships](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary.md)

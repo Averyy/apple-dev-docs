@@ -32,7 +32,7 @@ A remote distributed actor reference will forward all invocations through the sy
 ## Parameters
 
 - `id`: Identity uniquely identifying a, potentially remote, actor in the system
-- `system`:   which should be used to resolve the  , and be associated with the returned actor
+- `system`: `system` which should be used to resolve the `identity`, and be associated with the returned actor
 
 
 ---

@@ -43,7 +43,7 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 ## Parameters
 
 - `i`: A valid index of the collection.
-- `distance`: The distance to offset  .   must not be negative   unless the collection conforms to the    protocol.
+- `distance`: The distance to offset `i`. `distance` must not be negative unless the collection conforms to the `BidirectionalCollection` protocol.
 
 
 ---

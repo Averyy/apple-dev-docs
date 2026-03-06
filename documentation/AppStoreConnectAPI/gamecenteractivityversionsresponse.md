@@ -14,6 +14,13 @@ A response that contains a list of activity version resources.
 object GameCenterActivityVersionsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterActivityVersion]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterActivityVersion](gamecenteractivityversion.md)

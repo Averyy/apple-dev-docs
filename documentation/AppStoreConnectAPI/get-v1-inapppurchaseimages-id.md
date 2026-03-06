@@ -8,6 +8,15 @@ Read details about a specific in-app purchase image.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseImages/{id}`
+
+## Parameters
+
+- `fields[inAppPurchaseImages]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an image for an in-app purchase](post-v1-inapppurchaseimages.md)

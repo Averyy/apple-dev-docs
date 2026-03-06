@@ -50,13 +50,13 @@ print(line.split(omittingEmptySubsequences: false, whereSeparator: { $0 == " " }
 // Prints "["BLANCHE:", "", "", "I", "don\'t", "want", "realism.", "I", "want", "magic!"]"
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `maxSplits`: The maximum number of times to split the collection, or   one less than the number of subsequences to return. If    subsequences are returned, the last one is a suffix   of the original collection containing the remaining elements.    must be greater than or equal to zero. The default value   is  .
-- `omittingEmptySubsequences`: If  , an empty subsequence is   returned in the result for each pair of consecutive elements   satisfying the   predicate and for each element at the   start or end of the collection satisfying the    predicate. The default value is  .
-- `isSeparator`: A closure that takes an element as an argument and   returns a Boolean value indicating whether the collection should be   split at that element.
+- `maxSplits`: The maximum number of times to split the collection, or one less than the number of subsequences to return. If `maxSplits + 1` subsequences are returned, the last one is a suffix of the original collection containing the remaining elements. `maxSplits` must be greater than or equal to zero. The default value is `Int.max`.
+- `omittingEmptySubsequences`: If `false`, an empty subsequence is returned in the result for each pair of consecutive elements satisfying the `isSeparator` predicate and for each element at the start or end of the collection satisfying the `isSeparator` predicate. The default value is `true`.
+- `isSeparator`: A closure that takes an element as an argument and returns a Boolean value indicating whether the collection should be split at that element.
 
 ## See Also
 

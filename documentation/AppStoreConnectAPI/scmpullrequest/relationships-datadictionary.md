@@ -20,6 +20,10 @@ object ScmPullRequest.Relationships
 - [object ScmPullRequest.Relationships.Repository](scmpullrequest/relationships-data.dictionary/repository-data.dictionary.md)
   The data and links that describe the relationship between the Pull Requests and the Repositories resources.
 
+## Properties
+
+- `repository` (ScmPullRequest.Relationships.Repository): The related Repositories resource.
+
 ## See Also
 
 - [object ScmPullRequest.Attributes](scmpullrequest/attributes-data.dictionary.md)

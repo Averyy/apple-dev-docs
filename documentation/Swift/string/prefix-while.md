@@ -22,11 +22,11 @@ func prefix(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.Sub
 
 #### Discussion
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `predicate`: A closure that takes an element of the   sequence as its argument and returns   if the element should   be included or   if it should be excluded. Once the predicate   returns   it will not be called again.
+- `predicate`: A closure that takes an element of the sequence as its argument and returns `true` if the element should be included or `false` if it should be excluded. Once the predicate returns `false` it will not be called again.
 
 ## See Also
 

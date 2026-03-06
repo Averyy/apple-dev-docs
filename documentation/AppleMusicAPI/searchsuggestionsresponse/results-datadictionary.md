@@ -22,6 +22,10 @@ object SearchSuggestionsResponse.Results
 - [object SearchSuggestionsResponse.Results.TopResultSuggestion](searchsuggestionsresponse/results-data.dictionary/topresultsuggestion.md)
   A suggested popular result for similar search prefix terms.
 
+## Properties
+
+- `suggestions` ([*]) *(required)*: An array of possible valid search queries determined from the search suggestion.
+
 
 ---
 

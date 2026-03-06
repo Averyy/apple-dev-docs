@@ -14,6 +14,10 @@ The data that describes the build related to a upload.
 object BuildUpload.Relationships.BuildUploadFiles
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

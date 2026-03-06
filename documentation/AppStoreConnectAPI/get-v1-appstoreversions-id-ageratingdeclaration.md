@@ -12,6 +12,14 @@ Get the age-related information declared for your app.
 
 - [App Store Connect API 1.3 release notes](app-store-connect-api-1-3-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/ageRatingDeclaration`
+
+## Parameters
+
+- `fields[ageRatingDeclarations]` ([string])
+
 ## See Also
 
 - [GET /v1/appStoreVersions/{id}/relationships/ageRatingDeclaration](get-v1-appstoreversions-_id_-relationships-ageratingdeclaration.md)

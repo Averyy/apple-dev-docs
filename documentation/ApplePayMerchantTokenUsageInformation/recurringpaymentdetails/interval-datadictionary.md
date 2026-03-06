@@ -11,6 +11,11 @@ The payment interval.
 object RecurringPaymentDetails.Interval
 ```
 
+## Properties
+
+- `count` (number): The number of units that make up the total payment interval. The default value is `1`.
+- `unit` (string) *(required)*: The amount of time — in calendar units, such as day, month, or year — that represents a fraction of the total payment interval.
+
 
 ---
 

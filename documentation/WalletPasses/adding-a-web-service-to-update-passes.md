@@ -20,13 +20,17 @@ Create an updatable pass by adding the `webServiceURL` and `authenticationToken`
 
 ##### Server Configuration
 
-Authenticate each call to your server using a shared secret before responding using one of two shared secrets. Use the value of `authenticationToken` for the pass to authenticate the calls that register and unregister a pass, and to send an updated pass. The other shared secret is the , a value that’s sent by the device when the device registers a pass. Use this secret to authenticate the call for the serial numbers of updated passes.
+Authenticate each call to your server using a shared secret before responding using one of two shared secrets. Use the value of `authenticationToken` for the pass to authenticate the calls that register and unregister a pass, and to send an updated pass. The other shared secret is the *device library ID*, a value that’s sent by the device when the device registers a pass. Use this secret to authenticate the call for the serial numbers of updated passes.
 
 > **Note**:  Your web service must use an HTTPS connection for production, but you can use an HTTP connection during testing.
 
 ###### Store Information
 
 Updating passes requires storing information for the registered passes and for their associated devices. One way you can store these details is to use a traditional relational database with two entities – devices and passes – and one relationship, registrations. The three tables are:
+
+- **Device table**: Contains the devices that contain updatable passes. Information for a device includes the device library identifier and the push token that your server uses to send update notifications.
+- **Pass table**: Contains the updatable passes. Information for a pass includes the pass type identifier, serial number, and a last-update tag. You define the contents of this tag and use it to track when you last updated a pass. The table can also include other data that you require to generate an updated pass.
+- **Registration table**: Contains the relationships between passes and devices. Use this table to find the devices registered for a pass, and to find all the registered passes for a device. Both relationships are many-to-many.
 
 ##### Register and Unregister a Pass
 

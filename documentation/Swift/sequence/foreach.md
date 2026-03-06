@@ -46,12 +46,12 @@ Using the `forEach` method is distinct from a `for`-`in` loop in two important w
 
 ## Parameters
 
-- `body`: A closure that takes an element of the sequence as a   parameter.
+- `body`: A closure that takes an element of the sequence as a parameter.
 
 ## See Also
 
 - [func enumerated() -> EnumeratedSequence<Self>](sequence/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [var underestimatedCount: Int](sequence/underestimatedcount.md)
   A value less than or equal to the number of elements in the sequence, calculated nondestructively.
 

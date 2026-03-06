@@ -1,9 +1,9 @@
-# ..<(_:_:)
+# &-=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a half-open range that contains its lower bound but not its upper bound.
+Subtracts the second value from the first and stores the difference in the left-hand-side variable, wrapping any overflow.
 
 **Availability**:
 - iOS 8.0+
@@ -17,27 +17,30 @@ Returns a half-open range that contains its lower bound but not its upper bound.
 ## Declaration
 
 ```swift
-static func ..< (minimum: Self, maximum: Self) -> Range<Self>
+static func &-= (lhs: inout Self, rhs: Self)
 ```
 
 #### Discussion
 
-Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
+The masking subtraction assignment operator (`&-=`) silently wraps any overflow that occurs during the operation. In the following example, the difference of `10` and `21` is less than zero, the minimum representable `UInt` value, so the result is the result is the partial value after discarding the overflowing bits.
 
 ```swift
-let lessThanFive = 0.0..<5.0
-print(lessThanFive.contains(3.14))  // Prints "true"
-print(lessThanFive.contains(5.0))   // Prints "false"
+var x: Int8 = 21
+x &-= 10
+// x == 11
+var y: UInt8 = 10
+y &-= 21
+// y == 245 (after overflow)
 ```
 
-> **Note**: `minimum <= maximum`.
+For more about arithmetic with overflow operators, see [`Overflow Operators`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID37) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
 
 ## Parameters
 
-- `minimum`: The lower bound for the range.
-- `maximum`: The upper bound for the range.
+- `lhs`: A numeric value.
+- `rhs`: The value to subtract from `lhs`.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/int16/'.._(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/int16/&-=(_:_:))*

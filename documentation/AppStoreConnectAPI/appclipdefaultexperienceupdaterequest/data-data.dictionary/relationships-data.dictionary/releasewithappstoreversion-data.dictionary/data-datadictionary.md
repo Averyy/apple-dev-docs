@@ -14,6 +14,11 @@ The type and ID of the App Store Versions resource that you’re relating with t
 object AppClipDefaultExperienceUpdateRequest.Data.Relationships.ReleaseWithAppStoreVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Store Versions resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

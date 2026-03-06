@@ -24,7 +24,7 @@ func isPassiveEntryAvailable(forVehicle vehicleID: String) throws -> Bool
 
 ## Parameters
 
-- `vehicleID`: The target vehicle for the request. Choose the   vehicle from one of the session’s vehicle reports. Specify   the string in the   property of the corresponding   report.
+- `vehicleID`: The target vehicle for the request. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](vehiclereport/identifier.md) property of the corresponding report.
 
 ## See Also
 

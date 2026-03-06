@@ -14,6 +14,12 @@ A response that contains a single leaderboard localization resource.
 object GameCenterLeaderboardLocalizationResponse
 ```
 
+## Properties
+
+- `data` (GameCenterLeaderboardLocalization) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2](gamecenterleaderboardlocalizationv2.md)

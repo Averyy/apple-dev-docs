@@ -40,8 +40,8 @@ After executing `body`, this method rebinds memory back to the original `Element
 
 ## Parameters
 
-- `type`: The type to temporarily bind the memory referenced by this   buffer slice. The type   must be layout compatible   with the pointer’s   type.
-- `body`: A closure that takes a typed buffer to the   same memory as this buffer slice, only bound to type  . The buffer   parameter contains a number of complete instances of   based   on the capacity of the original buffer and the stride of  .   The closure’s buffer argument is valid only for the duration of the   closure’s execution. If   has a return value, that value   is also used as the return value for the    method.
+- `type`: The type to temporarily bind the memory referenced by this buffer slice. The type `T` must be layout compatible with the pointer’s `Element` type.
+- `body`: A closure that takes a typed buffer to the same memory as this buffer slice, only bound to type `T`. The buffer parameter contains a number of complete instances of `T` based on the capacity of the original buffer and the stride of `Element`. The closure’s buffer argument is valid only for the duration of the closure’s execution. If `body` has a return value, that value is also used as the return value for the `withMemoryRebound(to:_:)` method.
 
 
 ---

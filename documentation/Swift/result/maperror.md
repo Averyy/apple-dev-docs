@@ -47,7 +47,7 @@ let resultWithDatedError = result.mapError { DatedError($0) }
 
 ## Parameters
 
-- `transform`: A closure that takes the failure value of the   instance.
+- `transform`: A closure that takes the failure value of the instance.
 
 ## See Also
 

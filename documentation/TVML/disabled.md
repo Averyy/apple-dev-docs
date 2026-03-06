@@ -10,6 +10,8 @@ Child elements inherit this attribute from their parent element.
 
 ##### Values for Disabled
 
+- **Boolean**: Cannot come into focus when set to `true`.
+
 ##### Elements That Use Disabled
 
 - All full-page templates

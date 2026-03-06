@@ -21,6 +21,11 @@ object InAppPurchasePriceScheduleCreateRequest
 ### Objects
 - [object InAppPurchasePriceScheduleCreateRequest.Data](inapppurchasepriceschedulecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchasePriceScheduleCreateRequest.Data) *(required)*
+- `included` ([*])
+
 ## See Also
 
 - [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)

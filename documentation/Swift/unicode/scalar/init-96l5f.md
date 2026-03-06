@@ -44,7 +44,7 @@ if let emoji = Unicode.Scalar(codepoint) {
 
 ## Parameters
 
-- `v`: The Unicode code point to use for the scalar.   must be   a valid Unicode scalar value, in the ranges   or   . In case of an invalid unicode scalar value, nil is   returned.
+- `v`: The Unicode code point to use for the scalar. `v` must be a valid Unicode scalar value, in the ranges `0...0xD7FF` or `0xE000...0x10FFFF`. In case of an invalid unicode scalar value, nil is returned.
 
 ## See Also
 

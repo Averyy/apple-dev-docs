@@ -45,7 +45,7 @@ You must only use `deallocate()` to end the lifetime of memory created with `all
 
 ## Parameters
 
-- `count`: The amount of memory to allocate, counted in instances   of  .
+- `count`: The amount of memory to allocate, counted in instances of `Pointee`.
 
 
 ---

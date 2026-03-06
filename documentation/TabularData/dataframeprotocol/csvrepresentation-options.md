@@ -22,7 +22,7 @@ func csvRepresentation(options: CSVWritingOptions = .init()) throws -> Data
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A [`CSVWritingOptions`](csvwritingoptions.md) instance.
 
 ## See Also
 

@@ -8,6 +8,46 @@ Read Game Center detail information for a specific group.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/gameCenterDetails`
+
+## Parameters
+
+- `fields[apps]` ([string])
+- `fields[gameCenterAchievementReleases]` ([string])
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterAppVersions]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardReleases]` ([string])
+- `fields[gameCenterLeaderboardSetReleases]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[gameCenterAppVersions.enabled]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[achievementReleases]` (integer)
+- `limit[gameCenterAchievements]` (integer)
+- `limit[gameCenterAppVersions]` (integer)
+- `limit[gameCenterLeaderboardSets]` (integer)
+- `limit[gameCenterLeaderboards]` (integer)
+- `limit[leaderboardReleases]` (integer)
+- `limit[leaderboardSetReleases]` (integer)
+- `fields[appStoreVersions]` ([string])
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterActivityVersionReleases]` ([string])
+- `fields[gameCenterChallengeVersionReleases]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `limit[activityReleases]` (integer)
+- `limit[challengeReleases]` (integer)
+- `limit[challengesMinimumPlatformVersions]` (integer)
+- `limit[gameCenterAchievementsV2]` (integer)
+- `limit[gameCenterActivities]` (integer)
+- `limit[gameCenterChallenges]` (integer)
+- `limit[gameCenterLeaderboardSetsV2]` (integer)
+- `limit[gameCenterLeaderboardsV2]` (integer)
+
 ## See Also
 
 - [Read group information](get-v1-gamecentergroups.md)

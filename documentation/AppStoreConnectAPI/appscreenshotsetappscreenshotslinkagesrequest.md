@@ -20,6 +20,10 @@ object AppScreenshotSetAppScreenshotsLinkagesRequest
 - [object AppScreenshotSetAppScreenshotsLinkagesRequest.Data](appscreenshotsetappscreenshotslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([AppScreenshotSetAppScreenshotsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object AppScreenshotSet](appscreenshotset.md)

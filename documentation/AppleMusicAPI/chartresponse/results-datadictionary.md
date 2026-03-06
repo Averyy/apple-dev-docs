@@ -26,6 +26,13 @@ object ChartResponse.Results
 - [object ChartResponse.Results.SongsChart](chartresponse/results-data.dictionary/songschart.md)
   The songs results of a chart.
 
+## Properties
+
+- `albums` ([ChartResponse.Results.AlbumsChart]) *(required)*: The albums results of a chart.
+- `music-videos` ([ChartResponse.Results.MusicVideosChart]) *(required)*: The music videos results of a chart.
+- `playlists` ([ChartResponse.Results.PlaylistsChart]) *(required)*: The playlists results of a chart.
+- `songs` ([ChartResponse.Results.SongsChart]) *(required)*: The songs results of a chart.
+
 
 ---
 

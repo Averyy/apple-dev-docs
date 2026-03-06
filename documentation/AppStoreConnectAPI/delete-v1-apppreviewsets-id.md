@@ -8,6 +8,14 @@ Delete an app preview set and all of its previews.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appPreviewSets/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Preview Set](post-v1-apppreviewsets.md)

@@ -18,7 +18,7 @@ init(rawValue: String)
 
 ## Parameters
 
-- `rawValue`: The name of the store as a  .
+- `rawValue`: The name of the store as a `String`.
 
 
 ---

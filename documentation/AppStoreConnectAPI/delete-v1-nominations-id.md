@@ -12,6 +12,14 @@ Remove a specific featuring nomination.
 
 - id: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List nominations`](get-v1-nominations.md) response.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/nominations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a featuring nomination](post-v1-nominations.md)

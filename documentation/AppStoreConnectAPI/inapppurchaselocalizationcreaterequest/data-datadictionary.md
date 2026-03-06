@@ -18,6 +18,12 @@ object InAppPurchaseLocalizationCreateRequest.Data
 - [object InAppPurchaseLocalizationCreateRequest.Data.Attributes](inapppurchaselocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object InAppPurchaseLocalizationCreateRequest.Data.Relationships](inapppurchaselocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseLocalizationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (InAppPurchaseLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

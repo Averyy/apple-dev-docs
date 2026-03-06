@@ -26,8 +26,8 @@ A collection of substrings, split from this collection’s elements.
 
 ## Parameters
 
-- `maxSplits`: The maximum number of times to split the collection,   or one less than the number of subsequences to return.
-- `omittingEmptySubsequences`: If  , an empty subsequence is   returned in the result for each consecutive pair of matches   and for each match at the start or end of the collection. If   , only nonempty subsequences are returned.
+- `maxSplits`: The maximum number of times to split the collection, or one less than the number of subsequences to return.
+- `omittingEmptySubsequences`: If `false`, an empty subsequence is returned in the result for each consecutive pair of matches and for each match at the start or end of the collection. If `true`, only nonempty subsequences are returned.
 - `separator`: A closure that returns a regex to be split upon.
 
 

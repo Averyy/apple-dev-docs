@@ -17,6 +17,13 @@ object SubscriptionGracePeriod
 ### Objects
 - [object SubscriptionGracePeriod.Attributes](subscriptiongraceperiod/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGracePeriod.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [type SubscriptionGracePeriodDuration](subscriptiongraceperiodduration.md)

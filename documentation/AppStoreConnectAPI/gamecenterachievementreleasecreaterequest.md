@@ -19,6 +19,10 @@ object GameCenterAchievementReleaseCreateRequest
 ### Objects
 - [object GameCenterAchievementReleaseCreateRequest.Data](gamecenterachievementreleasecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementReleaseCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementRelease](gamecenterachievementrelease.md)

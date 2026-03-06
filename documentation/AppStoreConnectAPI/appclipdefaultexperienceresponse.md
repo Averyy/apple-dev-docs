@@ -14,6 +14,12 @@ A response that contains a single Default App Clip Experiences resource.
 object AppClipDefaultExperienceResponse
 ```
 
+## Properties
+
+- `data` (AppClipDefaultExperience) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipDefaultExperience](appclipdefaultexperience.md)

@@ -34,7 +34,7 @@ print(cafe.uppercased())
 // Prints "CAFÉ 🍵"
 ```
 
-> **Note**: O()
+> **Note**: O(*n*)
 
 ## See Also
 

@@ -14,6 +14,11 @@ The description and display name of the subscription to migrate to that you mana
 object SubscriptionMigrateDescriptors
 ```
 
+## Properties
+
+- `description` (description) *(required)*: The description of the subscription to migrate to. This string doesn’t display to customers.
+- `displayName` (displayName) *(required)*: The display name of the subscription to migrate to. This string displays to customers.
+
 ## See Also
 
 - [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)

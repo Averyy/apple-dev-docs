@@ -8,6 +8,16 @@ Get information for a specific Game Center activity localization.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivityLocalizations/{id}`
+
+## Parameters
+
+- `fields[gameCenterActivityImages]` ([string])
+- `fields[gameCenterActivityLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read image information for an activity localization](get-v1-gamecenteractivitylocalizations-_id_-image.md)

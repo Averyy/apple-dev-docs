@@ -23,7 +23,7 @@ struct EnumeratedSequence<Base> where Base : Sequence
 
 #### Overview
 
-`EnumeratedSequence` is a sequence of pairs (, ), where s are consecutive `Int` values starting at zero, and s are the elements of a base sequence.
+`EnumeratedSequence` is a sequence of pairs (*n*, *x*), where *n*s are consecutive `Int` values starting at zero, and *x*s are the elements of a base sequence.
 
 To create an instance of `EnumeratedSequence`, call `enumerated()` on a sequence or collection. The following example enumerates the elements of an array.
 

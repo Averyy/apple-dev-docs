@@ -27,6 +27,12 @@ The URLs you get from the `assetInfo` property are valid for 15 minutes after yo
 - jobStatus: The result of the download request.
 - status: The result of the operation to request download links.
 
+## Properties
+
+- `assetInfo` ([string]): An array of URLs to which you make `GET` requests to download someone’s account data if `jobStatus` is `completed`; otherwise, [TBD].
+- `jobStatus` (string)
+- `status` (string)
+
 ## See Also
 
 - [Get one-time request download URLs](get-one-time-request-download-urls.md)

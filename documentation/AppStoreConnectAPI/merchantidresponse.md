@@ -14,6 +14,12 @@ A response that contains a single merchant ID resource.
 object MerchantIdResponse
 ```
 
+## Properties
+
+- `data` (MerchantId) *(required)*
+- `included` ([Certificate])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object MerchantId](merchantid.md)

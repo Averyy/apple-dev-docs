@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object AppCustomProductPageLocalization.Relationships.SearchKeywords.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -10,6 +10,37 @@ Get URLs to retrieve someone’s data.
 
 #### Overview
 
+**Request**:
+
+```None
+% curl -X GET \
+  -H "Authorization: Bearer [ACCESS_TOKEN]" \
+  -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
+  -H "Accept: application/json" \
+  https://accountdatatransfer.apple.com/api/transfer/accountdata/fetch/11619695-72C0-4FFD-858A-1E152DCF0838
+```
+
+**Response**:
+
+```None
+{
+  "assetInfo": [
+    "https://assets.example.com/1.zip",
+    "https://assets.example.com/2.zip"
+  ],
+  "jobStatus": "completed",
+  "status": "success",
+}
+```
+
+## Endpoint
+
+`GET https://accountdatatransfer.apple.com/api/transfer/accountdata/fetch/{requestId}`
+
+## Parameters
+
+- `requestId` (string) *(required)*: A UUID that identifies the one-time request.
+
 ## See Also
 
 - [Get recurring request download URLs](get-recurring-request-download-urls.md)

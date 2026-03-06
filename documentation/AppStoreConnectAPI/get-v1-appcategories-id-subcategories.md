@@ -8,6 +8,15 @@ List all App Store subcategories that belong to a specific category.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCategories/{id}/subcategories`
+
+## Parameters
+
+- `fields[appCategories]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [List App Categories](get-v1-appcategories.md)

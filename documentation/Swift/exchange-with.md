@@ -27,7 +27,7 @@ The original value of `item`.
 ## Parameters
 
 - `item`: A mutable binding.
-- `newValue`: The new value of  .
+- `newValue`: The new value of `item`.
 
 ## See Also
 

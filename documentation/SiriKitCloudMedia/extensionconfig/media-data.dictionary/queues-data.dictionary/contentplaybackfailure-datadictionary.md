@@ -14,6 +14,10 @@ Configuration details for your service’s content playback failure endpoint.
 object ExtensionConfig.Media.Queues.ContentPlaybackFailure
 ```
 
+## Properties
+
+- `url` (string) *(required)*: The relative path for the client to access the `contentPlaybackFailure` endpoint. For more information, see [`contentPlaybackFailure`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionarykey.md).
+
 ## See Also
 
 - [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)

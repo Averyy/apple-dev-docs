@@ -14,6 +14,13 @@ Attributes that describe an app store version experiment treatment resource.
 object AppStoreVersionExperimentTreatment.Attributes
 ```
 
+## Properties
+
+- `appIcon` (ImageAsset)
+- `appIconName` (string)
+- `name` (string)
+- `promotedDate` (date-time)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment.Relationships](appstoreversionexperimenttreatment/relationships-data.dictionary.md)

@@ -20,6 +20,12 @@ object AppTagTerritoriesLinkagesResponse
 - [object AppTagTerritoriesLinkagesResponse.Data](apptagterritorieslinkagesresponse/data-data.dictionary.md)
   The data structure that represents an app tag territories linkages response resource.
 
+## Properties
+
+- `data` ([AppTagTerritoriesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)

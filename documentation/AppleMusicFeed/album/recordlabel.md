@@ -14,6 +14,10 @@ Information about a record label.
 object Album.RecordLabel
 ```
 
+## Properties
+
+- `name` (string): The name of the record label.
+
 ## See Also
 
 - [object Album.ArtistRole](album/artistrole.md)

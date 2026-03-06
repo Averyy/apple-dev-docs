@@ -8,6 +8,14 @@ Update localization information for a specific Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterActivityLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read activity localization information](get-v1-gamecenteractivitylocalizations-_id_.md)

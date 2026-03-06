@@ -26,16 +26,16 @@ Present videos in your RealityKit experiences.
 - [enum VideoPlayerEvents](videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
 ### SwiftUI video content
-- [Destination Video](../visionos/destination-video.md)
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
   Secure a video player in an immersive scene with a docking region you can specify.
 
 ## See Also
 
-- [Hello World](../visionos/world.md)
+- [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

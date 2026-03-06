@@ -8,6 +8,14 @@ Get the build information for a specific beta build localization.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaBuildLocalizations/{id}/build`
+
+## Parameters
+
+- `fields[builds]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List Beta Build Localizations](get-v1-betabuildlocalizations.md)

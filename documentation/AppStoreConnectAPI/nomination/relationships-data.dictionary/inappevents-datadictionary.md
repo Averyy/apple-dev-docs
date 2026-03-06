@@ -17,6 +17,11 @@ object Nomination.Relationships.InAppEvents
 ### Dictionaries
 - [object Nomination.Relationships.InAppEvents.Data](nomination/relationships-data.dictionary/inappevents-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Nomination.Relationships.InAppEvents.Data])
+- `meta` (PagingInformation)
+
 
 ---
 

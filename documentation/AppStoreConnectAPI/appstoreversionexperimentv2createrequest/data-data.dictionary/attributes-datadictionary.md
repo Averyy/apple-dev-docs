@@ -14,6 +14,12 @@ Attributes that describe an app store version experiment v2create request resour
 object AppStoreVersionExperimentV2CreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*
+- `platform` (Platform) *(required)*
+- `trafficProportion` (integer) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2CreateRequest.Data.Relationships](appstoreversionexperimentv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

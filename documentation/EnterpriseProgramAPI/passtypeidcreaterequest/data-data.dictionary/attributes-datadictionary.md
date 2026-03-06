@@ -11,6 +11,11 @@ Attributes that you set that describe the new resource.
 object PassTypeIdCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `identifier` (string) *(required)*
+- `name` (string) *(required)*
+
 
 ---
 

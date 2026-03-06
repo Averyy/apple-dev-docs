@@ -12,6 +12,11 @@
 object advancedCommerceDescriptors
 ```
 
+## Properties
+
+- `description` (advancedCommerceDescription)
+- `displayName` (advancedCommerceDisplayName)
+
 ## See Also
 
 - [object advancedCommerceOffer](advancedcommerceoffer.md)

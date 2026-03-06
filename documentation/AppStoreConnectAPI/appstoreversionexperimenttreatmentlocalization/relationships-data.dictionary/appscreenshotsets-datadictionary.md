@@ -17,6 +17,12 @@ object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreensho
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets.Data](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)

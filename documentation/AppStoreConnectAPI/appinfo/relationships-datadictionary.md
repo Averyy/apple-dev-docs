@@ -39,6 +39,19 @@ object AppInfo.Relationships
 - [object AppInfo.Relationships.TerritoryAgeRatings](appinfo/relationships-data.dictionary/territoryageratings-data.dictionary.md)
   The data structure that represents multiple-territory age-rating resources.
 
+## Properties
+
+- `app` (AppInfo.Relationships.App)
+- `appInfoLocalizations` (AppInfo.Relationships.AppInfoLocalizations)
+- `primaryCategory` (AppInfo.Relationships.PrimaryCategory)
+- `primarySubcategoryOne` (AppInfo.Relationships.PrimarySubcategoryOne)
+- `primarySubcategoryTwo` (AppInfo.Relationships.PrimarySubcategoryTwo)
+- `secondaryCategory` (AppInfo.Relationships.SecondaryCategory)
+- `secondarySubcategoryOne` (AppInfo.Relationships.SecondarySubcategoryOne)
+- `secondarySubcategoryTwo` (AppInfo.Relationships.SecondarySubcategoryTwo)
+- `ageRatingDeclaration` (AppInfo.Relationships.AgeRatingDeclaration)
+- `territoryAgeRatings` (AppInfo.Relationships.TerritoryAgeRatings)
+
 ## See Also
 
 - [object AppInfo.Attributes](appinfo/attributes-data.dictionary.md)

@@ -17,6 +17,12 @@ object AppInfoTerritoryAgeRatingsLinkagesResponse
 ### Dictionaries
 - [object AppInfoTerritoryAgeRatingsLinkagesResponse.Data](appinfoterritoryageratingslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppInfoTerritoryAgeRatingsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

@@ -22,9 +22,9 @@ init(codingPath: [any CodingKey], debugDescription: String, underlyingError: (an
 
 ## Parameters
 
-- `codingPath`: The path of coding keys taken to get to the   point of the failing encode call.
-- `debugDescription`: A description of what went wrong, for   debugging purposes.
-- `underlyingError`: The underlying error which caused this   error, if any.
+- `codingPath`: The path of coding keys taken to get to the point of the failing encode call.
+- `debugDescription`: A description of what went wrong, for debugging purposes.
+- `underlyingError`: The underlying error which caused this error, if any.
 
 
 ---

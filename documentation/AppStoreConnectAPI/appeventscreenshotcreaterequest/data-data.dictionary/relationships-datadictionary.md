@@ -17,6 +17,10 @@ object AppEventScreenshotCreateRequest.Data.Relationships
 ### Objects
 - [object AppEventScreenshotCreateRequest.Data.Relationships.AppEventLocalization](appeventscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/appeventlocalization-data.dictionary.md)
 
+## Properties
+
+- `appEventLocalization` (AppEventScreenshotCreateRequest.Data.Relationships.AppEventLocalization) *(required)*
+
 ## See Also
 
 - [object AppEventScreenshotCreateRequest.Data.Attributes](appeventscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

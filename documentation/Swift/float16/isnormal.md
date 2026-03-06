@@ -22,7 +22,7 @@ var isNormal: Bool { get }
 
 #### Discussion
 
-A  value is a finite number that uses the full precision available to values of a type. Zero is neither a normal nor a subnormal number.
+A *normal* value is a finite number that uses the full precision available to values of a type. Zero is neither a normal nor a subnormal number.
 
 
 ---

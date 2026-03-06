@@ -16,6 +16,12 @@ object advancedCommercePriceIncreaseInfo
 
 - [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
 
+## Properties
+
+- `dependentSKUs` ([advancedCommercePriceIncreaseInfoDependentSKU])
+- `price` (advancedCommercePriceIncreaseInfoPrice)
+- `status` (advancedCommercePriceIncreaseInfoStatus)
+
 ## See Also
 
 - [object advancedCommerceDescriptors](advancedcommercedescriptors.md)

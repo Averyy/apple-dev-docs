@@ -20,6 +20,10 @@ object GameCenterAppVersionCompatibilityVersionsLinkagesRequest
 - [object GameCenterAppVersionCompatibilityVersionsLinkagesRequest.Data](gamecenterappversioncompatibilityversionslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a app resource.
 
+## Properties
+
+- `data` ([GameCenterAppVersionCompatibilityVersionsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterAppVersion](gamecenterappversion.md)

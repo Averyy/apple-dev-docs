@@ -39,7 +39,7 @@ print(streets[i!])
 
 ## Parameters
 
-- `bounds`: A range of integers. The bounds of the range must be   valid indices of the array.
+- `bounds`: A range of integers. The bounds of the range must be valid indices of the array.
 
 ## See Also
 

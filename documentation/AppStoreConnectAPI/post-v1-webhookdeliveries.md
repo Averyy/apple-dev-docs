@@ -12,6 +12,10 @@ Resend a webhook notification from a specified template.
 
 > **Note**: The `template` in this payload is the original delivery that you want to resend. Find the `id` using [`Read the deliveries for a webhook`](get-v1-webhooks-_id_-deliveries.md).
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/webhookDeliveries`
+
 ## See Also
 
 - [Read the deliveries for a webhook](get-v1-webhooks-_id_-deliveries.md)

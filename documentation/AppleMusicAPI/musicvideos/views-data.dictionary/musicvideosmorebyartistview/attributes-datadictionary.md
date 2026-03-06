@@ -14,6 +14,10 @@ More content of some other type by the artist.
 object MusicVideos.Views.MusicVideosMoreByArtistView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

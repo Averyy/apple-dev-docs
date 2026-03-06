@@ -14,6 +14,11 @@ An error that indicates the App Store account wasn’t found.
 object AccountNotFoundError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AdvancedCommerceTransactionNotSupportedError](advancedcommercetransactionnotsupportederror.md)

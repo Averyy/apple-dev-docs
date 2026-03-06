@@ -8,6 +8,15 @@ Get information about a leaderboard set release.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetReleases/{id}`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardSetReleases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create a leaderboard set release](post-v1-gamecenterleaderboardsetreleases.md)

@@ -17,6 +17,12 @@ object AppCustomerReviewsLinkagesResponse
 ### Dictionaries
 - [object AppCustomerReviewsLinkagesResponse.Data](appcustomerreviewslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppCustomerReviewsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CustomerReviewResponseV1Response](customerreviewresponsev1response.md)

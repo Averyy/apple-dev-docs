@@ -17,6 +17,12 @@ object App.Relationships.PromotedPurchases
 ### Objects
 - [object App.Relationships.PromotedPurchases.Data](app/relationships-data.dictionary/promotedpurchases-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([App.Relationships.PromotedPurchases.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

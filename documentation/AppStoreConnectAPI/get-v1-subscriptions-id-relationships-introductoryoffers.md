@@ -8,6 +8,14 @@ Get a list of resource IDs representing introductory offers for an auto-renewabl
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/relationships/introductoryOffers`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

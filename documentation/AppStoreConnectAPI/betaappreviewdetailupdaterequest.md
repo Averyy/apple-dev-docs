@@ -20,6 +20,10 @@ object BetaAppReviewDetailUpdateRequest
 - [object BetaAppReviewDetailUpdateRequest.Data](betaappreviewdetailupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaAppReviewDetailUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaAppReviewDetail](betaappreviewdetail.md)

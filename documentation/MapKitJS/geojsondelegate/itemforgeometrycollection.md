@@ -24,7 +24,7 @@ A map item for the geometry collection.
 ## Parameters
 
 - `item`: An item the system creates for the geometry of the geometry collection.
-- `object`: The original GeoJSON object for the  .
+- `object`: The original GeoJSON object for the `feature`.
 
 
 ---

@@ -20,6 +20,10 @@ object RoutingAppCoverageCreateRequest.Data.Relationships.AppStoreVersion
 - [object RoutingAppCoverageCreateRequest.Data.Relationships.AppStoreVersion.Data](routingappcoveragecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (RoutingAppCoverageCreateRequest.Data.Relationships.AppStoreVersion.Data) *(required)*
+
 
 ---
 

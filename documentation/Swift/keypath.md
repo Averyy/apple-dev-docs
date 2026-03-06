@@ -22,7 +22,7 @@ class KeyPath<Root, Value>
 
 #### Overview
 
-The most common way to make an instance of this type is by using a key-path expression like `\SomeClass.someProperty`. For more information, see [`Key-Path Expressions`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Expressions.html#ID563) in .
+The most common way to make an instance of this type is by using a key-path expression like `\SomeClass.someProperty`. For more information, see [`Key-Path Expressions`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Expressions.html#ID563) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
 
 ## Relationships
 

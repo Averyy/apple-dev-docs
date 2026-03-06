@@ -6,7 +6,7 @@
 The count of subscriptions that fail to receive a subscription-renewal-date extension.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 

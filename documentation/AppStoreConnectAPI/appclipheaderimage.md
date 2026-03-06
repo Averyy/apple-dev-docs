@@ -22,6 +22,14 @@ object AppClipHeaderImage
 - [object AppClipHeaderImage.Relationships](appclipheaderimage/relationships-data.dictionary.md)
   The relationships of the App Clip Header Images resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppClipHeaderImage.Attributes): The attributes that describe the App Clip Header Images resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an App Clip Header Images resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (AppClipHeaderImage.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipHeaderImageResponse](appclipheaderimageresponse.md)

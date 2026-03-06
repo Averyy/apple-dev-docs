@@ -19,6 +19,10 @@ object GameCenterDetailCreateRequest
 ### Objects
 - [object GameCenterDetailCreateRequest.Data](gamecenterdetailcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterDetailCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

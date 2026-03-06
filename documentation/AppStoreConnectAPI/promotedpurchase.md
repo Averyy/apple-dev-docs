@@ -18,6 +18,14 @@ object PromotedPurchase
 - [object PromotedPurchase.Attributes](promotedpurchase/attributes-data.dictionary.md)
 - [object PromotedPurchase.Relationships](promotedpurchase/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (PromotedPurchase.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (PromotedPurchase.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

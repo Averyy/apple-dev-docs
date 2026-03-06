@@ -20,6 +20,10 @@ object AppClipAdvancedExperience.Relationships.AppClip
 - [object AppClipAdvancedExperience.Relationships.AppClip.Data](appclipadvancedexperience/relationships-data.dictionary/appclip-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clips resource.
 
+## Properties
+
+- `data` (AppClipAdvancedExperience.Relationships.AppClip.Data): The ID and type of the related App Clips resource.
+
 ## See Also
 
 - [object AppClipAdvancedExperience.Relationships.HeaderImage](appclipadvancedexperience/relationships-data.dictionary/headerimage-data.dictionary.md)

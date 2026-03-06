@@ -17,6 +17,10 @@ object Nomination.Relationships.CreatedByActor
 ### Dictionaries
 - [object Nomination.Relationships.CreatedByActor.Data](nomination/relationships-data.dictionary/createdbyactor-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (Nomination.Relationships.CreatedByActor.Data)
+
 
 ---
 

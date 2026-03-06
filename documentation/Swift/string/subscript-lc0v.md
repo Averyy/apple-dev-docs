@@ -36,7 +36,7 @@ if let nextCapital = substr.firstIndex(where: { $0 >= "A" && $0 <= "Z" }) {
 
 ## Parameters
 
-- `i`: A valid index of the string.   must be less than the   string’s end index.
+- `i`: A valid index of the string. `i` must be less than the string’s end index.
 
 ## See Also
 

@@ -20,6 +20,13 @@ object MusicVideos.Views.MusicVideosMoreInGenreView
 - [object MusicVideos.Views.MusicVideosMoreInGenreView.Attributes](musicvideos/views-data.dictionary/musicvideosmoreingenreview/attributes-data.dictionary.md)
   More music videos in a specific music video genre.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (MusicVideos.Views.MusicVideosMoreInGenreView.Attributes) *(required)*: The attributes for the view.
+- `data` ([MusicVideos]) *(required)*: Music videos in the given music video genre.
+
 ## See Also
 
 - [object MusicVideos.Views.MusicVideosMoreByArtistView](musicvideos/views-data.dictionary/musicvideosmorebyartistview.md)

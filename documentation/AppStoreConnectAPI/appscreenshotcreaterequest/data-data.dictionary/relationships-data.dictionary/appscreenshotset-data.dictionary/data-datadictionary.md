@@ -14,6 +14,11 @@ The type and ID of the resource that you’re relating with the resource you’r
 object AppScreenshotCreateRequest.Data.Relationships.AppScreenshotSet.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

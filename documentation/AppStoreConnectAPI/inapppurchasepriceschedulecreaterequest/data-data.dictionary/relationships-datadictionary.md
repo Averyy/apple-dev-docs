@@ -19,6 +19,12 @@ object InAppPurchasePriceScheduleCreateRequest.Data.Relationships
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/manualprices-data.dictionary.md)
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.BaseTerritory](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/baseterritory-data.dictionary.md)
 
+## Properties
+
+- `baseTerritory` (InAppPurchasePriceScheduleCreateRequest.Data.Relationships.BaseTerritory) *(required)*
+- `inAppPurchase` (InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase) *(required)*
+- `manualPrices` (InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices) *(required)*
+
 
 ---
 

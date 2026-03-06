@@ -27,8 +27,8 @@ MapKit JS calls this method for every `Point` object. For a `MultiPoint` object 
 
 ## Parameters
 
-- `coordinate`: A GeoJSON   generates the coordinate. You can use the coordinate to instantiate an item to return.
-- `geoJSON`: The original GeoJSON object for the  . This object may be a simple   or a   with the   geometry type.
+- `coordinate`: A GeoJSON `Point` generates the coordinate. You can use the coordinate to instantiate an item to return.
+- `geoJSON`: The original GeoJSON object for the `Point`. This object may be a simple `Point` or a `Feature` with the `Point` geometry type.
 
 ## See Also
 

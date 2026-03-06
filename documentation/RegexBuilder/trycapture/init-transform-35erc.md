@@ -22,8 +22,8 @@ init<W, C1, C2, C3, C4, NewCapture>(@RegexComponentBuilder _ componentBuilder: (
 
 ## Parameters
 
-- `componentBuilder`: A builder closure that generates a regex   component to capture.
-- `transform`: A closure that takes the substring matched by    and returns a new value to capture, or   if   matching should proceed, backtracking if allowed. If    throws an error, matching is abandoned and the error is returned   to the caller.
+- `componentBuilder`: A builder closure that generates a regex component to capture.
+- `transform`: A closure that takes the substring matched by `component` and returns a new value to capture, or `nil` if matching should proceed, backtracking if allowed. If `transform` throws an error, matching is abandoned and the error is returned to the caller.
 
 
 ---

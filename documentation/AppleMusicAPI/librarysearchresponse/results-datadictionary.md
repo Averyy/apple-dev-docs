@@ -28,6 +28,14 @@ object LibrarySearchResponse.Results
 - [object LibrarySearchResponse.Results.LibrarySongsSearchResult](librarysearchresponse/results-data.dictionary/librarysongssearchresult.md)
   The library songs results for a term search for specific resource types.
 
+## Properties
+
+- `library-albums` (LibrarySearchResponse.Results.LibraryAlbumsSearchResult): The library albums results for a term search for specific resource types.
+- `library-artists` (LibrarySearchResponse.Results.LibraryArtistsSearchResult): The library artists results for a term search for specific resource types.
+- `library-music-videos` (LibrarySearchResponse.Results.LibraryMusicVideosSearchResult): The library music videos results for a term search for specific resource types.
+- `library-playlists` (LibrarySearchResponse.Results.LibraryPlaylistsSearchResult): The library playlists results for a term search for specific resource types.
+- `library-songs` (LibrarySearchResponse.Results.LibrarySongsSearchResult): The library songs results for a term search for specific resource types.
+
 
 ---
 

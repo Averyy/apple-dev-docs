@@ -19,13 +19,13 @@ The most effective approach for migrating code to Swift is on a per-file basisâ€
 1. Create a Swift class for your corresponding Objective-C .m and .h files by choosing File > New > File > (iOS, watchOS, tvOS, or macOS) > Source > Swift File. You can use the same or a different name than your Objective-C class. Class prefixes are optional in Swift.
 2. Import relevant system frameworks.
 3. Fill out an Objective-C bridging header if you need to access Objective-C code from the same app target in your Swift file.
-4. To make your Swift class accessible and usable back in Objective-C, make it a descendant of an Objective-C class. To specify a particular name for the class to use in Objective-C, mark it with `@objc(``)`, where name is the name that your Objective-C code uses to reference the Swift class.
+4. To make your Swift class accessible and usable back in Objective-C, make it a descendant of an Objective-C class. To specify a particular name for the class to use in Objective-C, mark it with `@objc(`*name*`)`, where name is the name that your Objective-C code uses to reference the Swift class.
 
 ###### As You Work
 
 1. You can set up your Swift class to integrate Objective-C behavior by subclassing Objective-C classes, adopting Objective-C protocols, and more.
 2. As you work with Objective-C APIs, youâ€™ll need to know how Swift translates certain Objective-C language features. For more information, see [`Objective-C and C Code Customization`](objective-c-and-c-code-customization.md).
-3. Use the `@objc(``)` attribute to provide Objective-C names for properties and methods when necessary.
+3. Use the `@objc(`*name*`)` attribute to provide Objective-C names for properties and methods when necessary.
 4. Denote instance (`-`) and class (`+`) methods with `func` and `class func`, respectively.
 5. Declare simple macros as global constants, and translate complex macros into functions.
 

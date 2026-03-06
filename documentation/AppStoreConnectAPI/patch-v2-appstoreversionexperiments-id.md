@@ -16,6 +16,64 @@ Update the name, the started state, and the proportion of traffic to send to an 
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19 -d
+'{
+  "data": {
+    "id": "1a22d9a7-f574-4669-b1ca-1ba88f786c19",
+    "type": "appStoreVersionExperiments",
+    "attributes": {
+      "name": "PPO Test 1",
+      "trafficProportion": 50
+    }
+  }
+}'
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "appStoreVersionExperiments",
+    "id" : "1a22d9a7-f574-4669-b1ca-1ba88f786c19",
+    "attributes" : {
+      "name" : "PPO Test 1",
+      "platform" : "IOS",
+      "trafficProportion" : 50,
+      "state" : "PREPARE_FOR_SUBMISSION",
+      "reviewRequired" : true,
+      "startDate" : null,
+      "endDate" : null
+    },
+    "relationships" : {
+      "appStoreVersionExperimentTreatments" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19/relationships/appStoreVersionExperimentTreatments",
+          "related" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19/appStoreVersionExperimentTreatments"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List All Experiments for an App Store Version`](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md) response.
+
 ## See Also
 
 - [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)

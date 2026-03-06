@@ -6,13 +6,18 @@
 An error that indicates an invalid in-app ownership type parameter.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object InvalidInAppOwnershipTypeError
 ```
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

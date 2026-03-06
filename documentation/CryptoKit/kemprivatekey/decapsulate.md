@@ -27,7 +27,7 @@ The decapsulated shared secret.
 
 ## Parameters
 
-- `encapsulated`: The encapsulated shared secret that someone created using this key’s  .
+- `encapsulated`: The encapsulated shared secret that someone created using this key’s [`publicKey`](kemprivatekey/publickey-swift.property.md).
 
 
 ---

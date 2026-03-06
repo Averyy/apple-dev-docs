@@ -19,6 +19,14 @@ object AppEvent
   The attributes that describe an In-App event.
 - [object AppEvent.Relationships](appevent/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEvent.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppEvent.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppEventCreateRequest](appeventcreaterequest.md)

@@ -17,6 +17,11 @@ object BuildBuildBetaDetailLinkageResponse
 ### Dictionaries
 - [object BuildBuildBetaDetailLinkageResponse.Data](buildbuildbetadetaillinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BuildBuildBetaDetailLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BuildBetaDetail](buildbetadetail.md)

@@ -14,7 +14,7 @@ Use Reality Composer Pro to compose, edit, and preview RealityKit content for yo
 
 In addition to helping you compose entity hierarchies, Reality Composer Pro also gives you the ability to add and configure components — even custom components that you’ve written — to the entities in your scenes.
 
-You can also design the visual appearance of entities using , a node-based visual tool for creating RealityKit materials. Shader Graph gives you a tremendous amount of control over the surface details and shape of entities. You can even create animated materials and dynamic materials that change based on the state of your app or user input.
+You can also design the visual appearance of entities using *Shader Graph*, a node-based visual tool for creating RealityKit materials. Shader Graph gives you a tremendous amount of control over the surface details and shape of entities. You can even create animated materials and dynamic materials that change based on the state of your app or user input.
 
 Diorama demonstrates many of RealityKit and Reality Composer Pro’s features. It displays an interactive, virtual topographical trail map, much like the real-world dioramas you find at trailheads and ranger stations in national parks. This virtual map has points of interest you can tap to bring up more detailed information. You can also smoothly transition between two trail maps: Yosemite and Catalina Island.
 
@@ -28,7 +28,7 @@ Diorama uses custom assets instead of the available library assets. To use custo
 
 ##### Create Scenes Containing the Apps Entities
 
-A single Reality Composer Pro project can have multiple scenes. A  is an entity hierarchy stored in the project as a `.usda` file that you can load and display in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView). You can use Reality Composer’s scenes to build an entire RealityKit scene, or to store reusable entity hierarchies that you can use as building block for composing scenes at runtime — the approach Diorama uses. You can add as many different scenes to your project as you need by selecting File > New > Scene, or pressing ⌘N.
+A single Reality Composer Pro project can have multiple scenes. A *scene* is an entity hierarchy stored in the project as a `.usda` file that you can load and display in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView). You can use Reality Composer’s scenes to build an entire RealityKit scene, or to store reusable entity hierarchies that you can use as building block for composing scenes at runtime — the approach Diorama uses. You can add as many different scenes to your project as you need by selecting File > New > Scene, or pressing ⌘N.
 
 At the top of the Reality Composer Pro window, there’s a separate tab for every scene that’s currently open. To open a scene, double-click the scene’s `.usda` file in the project browser. To edit a scene, select its tab, and make changes using the hierarchy viewer, the 3D view, and the inspector.
 
@@ -50,7 +50,7 @@ To add a component to an entity, select that entity in the hierarchy view or 3D 
 
 ##### Use Transforms to Mark Locations
 
-In Reality Composer Pro, a  is an empty entity that marks a point in space. A transform contains a location, rotation, and scale, and its child entities inherit those. But, transforms have no visual representation and do nothing by themselves. Use transforms to mark locations in your scene or organize your entity hierarchy. For example, you might make several entities that need to move together into child entities of the same transform, so you can move them together by moving the parent transform.
+In Reality Composer Pro, a *transform* is an empty entity that marks a point in space. A transform contains a location, rotation, and scale, and its child entities inherit those. But, transforms have no visual representation and do nothing by themselves. Use transforms to mark locations in your scene or organize your entity hierarchy. For example, you might make several entities that need to move together into child entities of the same transform, so you can move them together by moving the parent transform.
 
 ##### Load a Scene at Runtime
 
@@ -81,11 +81,11 @@ subscriptions.append(content.subscribe(to: ComponentEvents.DidAdd.self, componen
 
 ##### Create Attachments for Points of Interest
 
-Diorama displays the information added to a `PointOfInterestComponent` in a `LearnMoreView`, which it stores as an attachment.  are SwiftUI views that are also RealityKit entities and that you can place into a RealityKit scene at a specific location. Diorama uses attachments to position the view that floats above each point of interest.
+Diorama displays the information added to a `PointOfInterestComponent` in a `LearnMoreView`, which it stores as an attachment. *Attachments* are SwiftUI views that are also RealityKit entities and that you can place into a RealityKit scene at a specific location. Diorama uses attachments to position the view that floats above each point of interest.
 
 The app first checks to see if the entity has a component called `PointOfInterestRuntimeComponent`. If it doesn’t, it creates a new one and adds it to the entity. This new component contains a value you only use at runtime that you don’t need to edit in Reality Composer Pro.
 
-By putting this value into a separate component and adding it to entities at runtime, Reality Composer Pro never displays it in the inspector. The `PointOfInterestRuntimeComponent` stores an identifier called an , which uniquely identifies an attachment so the app can retrieve and display it at the appropriate time.
+By putting this value into a separate component and adding it to entities at runtime, Reality Composer Pro never displays it in the inspector. The `PointOfInterestRuntimeComponent` stores an identifier called an *attachment tag*, which uniquely identifies an attachment so the app can retrieve and display it at the appropriate time.
 
 ```swift
 struct PointOfInterestRuntimeComponent: Component {
@@ -138,11 +138,11 @@ viewModel.rootEntity?.scene?.performQuery(Self.runtimeQuery).forEach { entity in
 
 ##### Create Custom Materials with Shader Graph
 
-To switch between the two different topographical maps, Diorama shows a slider that morphs the map between the two locations. To accomplish this, and to draw elevation lines on the map, the `FlatTerrain` entity in the `DioramaAssembled` scene uses a . Shader Graph is a node-based material editor that’s built into Reality Composer Pro. Shader Graph gives you the ability to create dynamic materials that you can change at runtime. Prior to Reality Composer Pro, the only way to implement a dynamic material like this was to create a [`CustomMaterial`](https://developer.apple.com/documentation/RealityKit/CustomMaterial) and write Metal shaders to implement the necessary logic.
+To switch between the two different topographical maps, Diorama shows a slider that morphs the map between the two locations. To accomplish this, and to draw elevation lines on the map, the `FlatTerrain` entity in the `DioramaAssembled` scene uses a *Shader Graph material*. Shader Graph is a node-based material editor that’s built into Reality Composer Pro. Shader Graph gives you the ability to create dynamic materials that you can change at runtime. Prior to Reality Composer Pro, the only way to implement a dynamic material like this was to create a [`CustomMaterial`](https://developer.apple.com/documentation/RealityKit/CustomMaterial) and write Metal shaders to implement the necessary logic.
 
 Diorama’s `DynamicTerrainMaterialEnhanced` does two things. It draws contour lines on the map based on height data stored in displacement map images, and it also offsets the vertices of the flat disk based on the same data. By interpolating between two different height maps, the app achieves a smooth transition between the two different sets of height data.
 
-Node graphs can contain , which are similar to functions. They contain reusable sets of nodes with inputs and outputs. Subgraphs contain the logic to draw the contour lines and the logic to offset the vertices. Double-click a subgraph to edit it. For more information about building materials using Shader Graph, see [`Explore Materials in Reality Composer Pro`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10202).
+Node graphs can contain *subgraphs*, which are similar to functions. They contain reusable sets of nodes with inputs and outputs. Subgraphs contain the logic to draw the contour lines and the logic to offset the vertices. Double-click a subgraph to edit it. For more information about building materials using Shader Graph, see [`Explore Materials in Reality Composer Pro`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10202).
 
 ##### Update the Shader Graph Material at Runtime
 

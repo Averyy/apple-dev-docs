@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}/relationships/subscriptions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create a Subscription Group](post-v1-subscriptiongroups.md)

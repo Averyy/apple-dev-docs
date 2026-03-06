@@ -8,6 +8,14 @@ Read list of all the instance IDs for a specific type of analytics report.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/analyticsReports/{id}/relationships/instances`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read report information](get-v1-analyticsreports-_id_.md)

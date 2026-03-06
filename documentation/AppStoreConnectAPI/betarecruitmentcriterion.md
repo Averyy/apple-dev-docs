@@ -19,6 +19,13 @@ object BetaRecruitmentCriterion
 ### Dictionaries
 - [object BetaRecruitmentCriterion.Attributes](betarecruitmentcriterion/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (BetaRecruitmentCriterion.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)

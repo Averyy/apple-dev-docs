@@ -18,6 +18,11 @@ object GameCenterLeaderboardSetRelease.Relationships
 - [object GameCenterLeaderboardSetRelease.Relationships.GameCenterDetail](gamecenterleaderboardsetrelease/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 - [object GameCenterLeaderboardSetRelease.Relationships.GameCenterLeaderboardSet](gamecenterleaderboardsetrelease/relationships-data.dictionary/gamecenterleaderboardset-data.dictionary.md)
 
+## Properties
+
+- `gameCenterDetail` (GameCenterLeaderboardSetRelease.Relationships.GameCenterDetail)
+- `gameCenterLeaderboardSet` (GameCenterLeaderboardSetRelease.Relationships.GameCenterLeaderboardSet)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetRelease.Attributes](gamecenterleaderboardsetrelease/attributes-data.dictionary.md)

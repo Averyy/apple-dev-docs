@@ -12,6 +12,10 @@
 object App.Relationships.CustomerReviews
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

@@ -14,6 +14,12 @@ A response that contains a single App Clip App Store Review Details resource.
 object AppClipAppStoreReviewDetailResponse
 ```
 
+## Properties
+
+- `data` (AppClipAppStoreReviewDetail) *(required)*: The resource data.
+- `included` ([AppClipDefaultExperience]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipAppStoreReviewDetail](appclipappstorereviewdetail.md)

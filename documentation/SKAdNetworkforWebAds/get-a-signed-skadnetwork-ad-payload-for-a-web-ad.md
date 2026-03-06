@@ -49,6 +49,10 @@ A corresponding [`AdImpressionResponse`](adimpressionresponse.md) to send in res
 
 The device uses the same encoding as `attributionSourceNonce` for the `source_nonce` value in the [`AdImpressionRequest`](adimpressionrequest.md). However, you use the dash-separated string representation of the UUID for the `nonce` value in an [`AdImpressionResponse`](adimpressionresponse.md).
 
+## Endpoint
+
+`POST https://example.com/.well-known/skadnetwork/get-signed-payload`
+
 ## Request Body
 
 The request that devices send to this endpoint, asking for the web ad impression from the ad network’s server.

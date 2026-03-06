@@ -17,6 +17,11 @@ object AppAlternativeDistributionKeyLinkageResponse
 ### Dictionaries
 - [object AppAlternativeDistributionKeyLinkageResponse.Data](appalternativedistributionkeylinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppAlternativeDistributionKeyLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionKey](alternativedistributionkey.md)

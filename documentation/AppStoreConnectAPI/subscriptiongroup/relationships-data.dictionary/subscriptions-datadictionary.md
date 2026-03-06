@@ -17,6 +17,12 @@ object SubscriptionGroup.Relationships.Subscriptions
 ### Objects
 - [object SubscriptionGroup.Relationships.Subscriptions.Data](subscriptiongroup/relationships-data.dictionary/subscriptions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionGroup.Relationships.Subscriptions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionGroup.Relationships.SubscriptionGroupLocalizations](subscriptiongroup/relationships-data.dictionary/subscriptiongrouplocalizations-data.dictionary.md)

@@ -22,7 +22,7 @@ init<S, C>(_ indices: S, within collection: C) where Bound == S.Element, S : Seq
 
 ## Parameters
 
-- `collection`: The collection that contains  .
+- `collection`: The collection that contains `index`.
 
 
 ---

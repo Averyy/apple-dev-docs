@@ -22,6 +22,14 @@ object AppPreview
 - [object AppPreview.Relationships](apppreview/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppPreview.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppPreview.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppPreviewCreateRequest](apppreviewcreaterequest.md)

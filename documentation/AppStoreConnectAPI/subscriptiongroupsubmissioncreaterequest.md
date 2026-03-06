@@ -17,6 +17,10 @@ object SubscriptionGroupSubmissionCreateRequest
 ### Objects
 - [object SubscriptionGroupSubmissionCreateRequest.Data](subscriptiongroupsubmissioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionGroupSubmissionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupSubmission](subscriptiongroupsubmission.md)

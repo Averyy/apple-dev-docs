@@ -19,6 +19,12 @@ object AlternativeDistributionKeyCreateRequest.Data
   The attributes you set that describe the public key used to create a new resource.
 - [object AlternativeDistributionKeyCreateRequest.Data.Relationships](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AlternativeDistributionKeyCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AlternativeDistributionKeyCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

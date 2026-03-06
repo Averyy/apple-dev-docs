@@ -17,6 +17,9 @@ Outputs a grayscale value containing the luminance of the incoming RGB color in 
 
 #### Parameter Descriptions
 
+- **`In`**: The input to convert to grayscale.
+- **`Luma Coefficients`**: The luma coefficients of the color space. The possible values for this node are the luma coeffiecients for the color spaces `acescg`, `rec202/rec2100`, or `rec709`. The default value is the luma coeffiecients for `acescg`, which are `(0.2722287, 0.6740818, 0.0536895)`.
+
 #### Discussion
 
 The Luminance node takes in a color input and outputs that input as a grayscale image. The node computes the grayscale of an image by taking the dot product of the luma coefficients and the color vector. Below is an example of a simple node graph that uses the luminance node to convert an image to grayscale:

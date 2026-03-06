@@ -24,6 +24,11 @@ object GameCenterLeaderboardLocalizationV2ImageLinkageResponse
 ### Dictionaries - generated
 - [object GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data](gamecenterleaderboardlocalizationv2imagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2](gamecenterleaderboardlocalizationv2.md)

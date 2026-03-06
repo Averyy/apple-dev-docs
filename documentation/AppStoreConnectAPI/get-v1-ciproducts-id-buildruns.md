@@ -8,6 +8,24 @@ List all builds Xcode Cloud performed for a specific product.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciProducts/{id}/buildRuns`
+
+## Parameters
+
+- `fields[builds]` ([string]): Additional fields to include for each Build Runs resource returned by the response.
+- `fields[ciBuildRuns]` ([string]): Additional fields to include for each Build Runs resource returned by the response.
+- `filter[builds]` ([string]): Filter the returned build runs using the ID of the related Builds resource.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The number of Build Runs resources to return.
+- `limit[builds]` (integer): The number of included Build Runs resources to return if the builds relationship is included.
+- `fields[scmGitReferences]` ([string])
+- `fields[ciWorkflows]` ([string])
+- `fields[scmPullRequests]` ([string])
+- `fields[ciProducts]` ([string])
+- `sort` ([string])
+
 ## See Also
 
 - [List All Xcode Cloud Products](get-v1-ciproducts.md)

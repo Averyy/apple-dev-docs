@@ -17,6 +17,10 @@ object SubscriptionGroupLocalizationUpdateRequest
 ### Objects
 - [object SubscriptionGroupLocalizationUpdateRequest.Data](subscriptiongrouplocalizationupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionGroupLocalizationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)

@@ -14,6 +14,12 @@ An object that represents the status of a download request.
 object RequestStatus
 ```
 
+## Properties
+
+- `jobStatus` (string): The status of the download request.
+- `status` (string): `success` if the operation succeeded; `error` otherwise.
+- `statusCheckDelay` (integer): The number of seconds to wait before re-requesting the status.
+
 ## See Also
 
 - [Get one-time request status](get-one-time-request-status.md)

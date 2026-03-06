@@ -40,7 +40,7 @@ let sum = numbers.withUnsafeBufferPointer { buffer -> Int in
 
 ## Parameters
 
-- `i`: The position of the element to access.   must be in the   range  .
+- `i`: The position of the element to access. `i` must be in the range `0..<count`.
 
 
 ---

@@ -8,6 +8,14 @@ Get information about a specific android to iOS app mapping detail.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/androidToIosAppMappingDetails/{id}`
+
+## Parameters
+
+- `fields[androidToIosAppMappingDetails]` ([string])
+
 ## See Also
 
 - [Modify an Android to iOS app mapping detail](patch-v1-androidtoiosappmappingdetails-_id_.md)

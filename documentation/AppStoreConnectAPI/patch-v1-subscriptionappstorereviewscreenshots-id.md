@@ -12,6 +12,14 @@ Commit an uploaded image asset as a review screenshot for an auto-renewable subs
 
 - [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionAppStoreReviewScreenshots/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Subscription Review Screenshot Information](get-v1-subscriptionappstorereviewscreenshots-_id_.md)

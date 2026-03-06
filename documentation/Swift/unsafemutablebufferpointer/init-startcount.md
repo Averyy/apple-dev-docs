@@ -22,8 +22,8 @@ init(start: UnsafeMutablePointer<Element>?, count: Int)
 
 ## Parameters
 
-- `start`: A pointer to the start of the buffer, or  . If   is   ,   must be zero. However,   may be zero even for a   non-   . The pointer passed as   must be aligned to   .
-- `count`: The number of instances in the buffer.   must not be   negative.
+- `start`: A pointer to the start of the buffer, or `nil`. If `start` is `nil`, `count` must be zero. However, `count` may be zero even for a non-`nil` `start`. The pointer passed as `start` must be aligned to `MemoryLayout<Element>.alignment`.
+- `count`: The number of instances in the buffer. `count` must not be negative.
 
 
 ---

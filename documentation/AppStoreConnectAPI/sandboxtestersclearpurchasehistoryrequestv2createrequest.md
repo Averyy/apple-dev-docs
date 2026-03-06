@@ -17,6 +17,10 @@ object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest
 ### Objects
 - [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data](sandboxtestersclearpurchasehistoryrequestv2createrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SandboxTesterV2Response](sandboxtesterv2response.md)

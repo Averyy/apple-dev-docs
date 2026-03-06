@@ -14,6 +14,11 @@ The type and ID of the Build Runs resource that you’re relating with the Build
 object CiBuildRunCreateRequest.Data.Relationships.BuildRun.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Build Runs resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

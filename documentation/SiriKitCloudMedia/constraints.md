@@ -14,6 +14,12 @@ Client-originated limitations on how to process a request, such as including exp
 object Constraints
 ```
 
+## Properties
+
+- `allowExplicitContent` (boolean): An indicator of whether it’s OK for your service to provide explicit content.
+- `maximumQueueSegmentItemCount` (uint32): The maximum number of pieces to provide in a [`Queue`](queue.md).
+- `updateUserTasteProfile` (boolean): An indicator of whether to use these interactions to update your service’s model of the user’s likes and dislikes.
+
 ## See Also
 
 - [object Invocation](invocation.md)

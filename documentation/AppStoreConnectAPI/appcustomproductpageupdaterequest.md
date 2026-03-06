@@ -19,6 +19,10 @@ object AppCustomProductPageUpdateRequest
 ### Objects
 - [object AppCustomProductPageUpdateRequest.Data](appcustomproductpageupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppCustomProductPageUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppCustomProductPage](appcustomproductpage.md)

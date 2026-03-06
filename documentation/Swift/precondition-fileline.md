@@ -26,14 +26,14 @@ Use this function to detect conditions that must prevent the program from procee
 
 - In playgrounds and `-Onone` builds (the default for Xcode’s Debug configuration): If `condition` evaluates to `false`, stop program execution in a debuggable state after printing `message`.
 - In `-O` builds (the default for Xcode’s Release configuration): If `condition` evaluates to `false`, stop program execution.
-- In `-Ounchecked` builds, `condition` is not evaluated, but the optimizer may assume that it  evaluates to `true`. Failure to satisfy that assumption is a serious programming error.
+- In `-Ounchecked` builds, `condition` is not evaluated, but the optimizer may assume that it *always* evaluates to `true`. Failure to satisfy that assumption is a serious programming error.
 
 ## Parameters
 
-- `condition`: The condition to test.   is not evaluated in    builds.
-- `message`: A string to print if   is evaluated to   in a   playground or   build. The default is an empty string.
-- `file`: The file name to print with   if the precondition fails.   The default is the file where   is   called.
-- `line`: The line number to print along with   if the assertion   fails. The default is the line number where    is called.
+- `condition`: The condition to test. `condition` is not evaluated in `-Ounchecked` builds.
+- `message`: A string to print if `condition` is evaluated to `false` in a playground or `-Onone` build. The default is an empty string.
+- `file`: The file name to print with `message` if the precondition fails. The default is the file where `precondition(_:_:file:line:)` is called.
+- `line`: The line number to print along with `message` if the assertion fails. The default is the line number where `precondition(_:_:file:line:)` is called.
 
 ## See Also
 

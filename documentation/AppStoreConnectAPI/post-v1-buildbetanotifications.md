@@ -8,6 +8,10 @@ Send a notification to all assigned beta testers that a build is available for t
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/buildBetaNotifications`
+
 
 ---
 

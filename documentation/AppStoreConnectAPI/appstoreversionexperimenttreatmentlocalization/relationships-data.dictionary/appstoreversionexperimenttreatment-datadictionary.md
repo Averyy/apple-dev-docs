@@ -17,6 +17,10 @@ object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVers
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment.Data](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment.Data)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)

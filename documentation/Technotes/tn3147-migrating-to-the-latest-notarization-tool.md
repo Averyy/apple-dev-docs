@@ -287,7 +287,7 @@ To use these credentials in subsequent commands, supply the profile name using t
 % xcrun notarytool history --keychain-profile PROFILE
 ```
 
-> **Note**: Unless you specify a file-based keychain with the `--keychain` option, `notarytool` uses the data protection keychain.  To see stored credentials in that case, run Keychain Access, select iCloud Keychain on the left—or Local Items, if iCloud Keychain is not enabled—and look for items named `com.apple.gke.notary.tool`.  If you’re unfamiliar with the terms  and , see [`TN3137: On Mac keychain APIs and implementations`](tn3137-on-mac-keychains.md).
+> **Note**: Unless you specify a file-based keychain with the `--keychain` option, `notarytool` uses the data protection keychain.  To see stored credentials in that case, run Keychain Access, select iCloud Keychain on the left—or Local Items, if iCloud Keychain is not enabled—and look for items named `com.apple.gke.notary.tool`.  If you’re unfamiliar with the terms *file-based keychain* and *data protection keychain*, see [`TN3137: On Mac keychain APIs and implementations`](tn3137-on-mac-keychains.md).
 
 While the example above assumes you’re authenticating with an app-specific password, this technique also works with an App Store Connect API key.  See the `notarytool` help for the details.
 
@@ -298,7 +298,7 @@ The standard way to get `notarytool` is to install Xcode.  If you don’t want t
 There are two ways to install the package:
 
 - On the target system, run `xcrun` with the `--install` option.
-- Download it from the [`Developer > Downloads`](https://developer.apple.comhttps://developer.apple.com/download/) page.  To get a list of available packages, switch to the More tab at the top right and search for .
+- Download it from the [`Developer > Downloads`](https://developer.apple.comhttps://developer.apple.com/download/) page.  To get a list of available packages, switch to the More tab at the top right and search for *Command Line Tools*.
 
 On some systems even the Command Line Tools package is too big.  In that case, it’s fine to extract `notarytool` from either Xcode or the Command Line Tools package and copy it to your system.  On a system that has one of these installed, use `xcrun` to find `notarytool` and then copy it to wherever you want:
 
@@ -323,10 +323,10 @@ If you notarize using `altool`, the notary service sends you an email when it’
 
 #### Revision History
 
--  Fixed a broken link.
--  Fixed a bug in the `--notarization-history` examples.  Made other minor editorial changes.
--  Updated to include the announced end date for `altool`.
--  First published.
+- **2024-02-05** Fixed a broken link.
+- **2023-08-01** Fixed a bug in the `--notarization-history` examples.  Made other minor editorial changes.
+- **2023-05-30** Updated to include the announced end date for `altool`.
+- **2023-04-11** First published.
 
 ## See Also
 

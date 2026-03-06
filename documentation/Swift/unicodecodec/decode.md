@@ -56,7 +56,7 @@ print(scalars)
 
 ## Parameters
 
-- `input`: An iterator of code units to be decoded.   must be   the same iterator instance in repeated calls to this method. Do not   advance the iterator or any copies of the iterator outside this   method.
+- `input`: An iterator of code units to be decoded. `input` must be the same iterator instance in repeated calls to this method. Do not advance the iterator or any copies of the iterator outside this method.
 
 
 ---

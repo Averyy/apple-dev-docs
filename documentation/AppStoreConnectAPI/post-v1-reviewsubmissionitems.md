@@ -12,6 +12,10 @@ Create a new review submission item.
 
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/reviewSubmissionItems`
+
 ## See Also
 
 - [Modify a review submission item](patch-v1-reviewsubmissionitems-_id_.md)

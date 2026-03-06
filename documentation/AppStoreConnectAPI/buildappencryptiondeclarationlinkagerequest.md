@@ -20,6 +20,10 @@ object BuildAppEncryptionDeclarationLinkageRequest
 - [object BuildAppEncryptionDeclarationLinkageRequest.Data](buildappencryptiondeclarationlinkagerequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BuildAppEncryptionDeclarationLinkageRequest.Data) *(required)*: The types and IDs of related resources.
+
 ## See Also
 
 - [object Build](build.md)

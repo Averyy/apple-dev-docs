@@ -8,6 +8,14 @@ Assign one or more builds to an app encryption declaration.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarations/{id}/relationships/builds`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Encryption Declarations resource ID from the [`List App Encryption Declarations`](get-v1-appencryptiondeclarations.md) response.
+
 ## See Also
 
 - [Create an app encryption declarations](post-v1-appencryptiondeclarations.md)

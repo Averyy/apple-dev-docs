@@ -12,6 +12,13 @@
 object SubscriptionOfferCodesResponse
 ```
 
+## Properties
+
+- `data` ([SubscriptionOfferCode]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

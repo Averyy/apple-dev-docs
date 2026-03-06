@@ -18,6 +18,10 @@ object PlayMediaMediaItemResolutionResult.ConfirmationRequired
 
 Prefer to provide a successful result, even if you aren’t sure that you’re identifying the media item accurately. The user can cancel playback and try asking again.
 
+## Properties
+
+- `mediaItemToConfirm` (MediaItem) *(required)*: A media item for the user to confirm or reject.
+
 ## See Also
 
 - [object PlayMediaMediaItemResolutionResult.Success](playmediamediaitemresolutionresult/success-data.dictionary.md)

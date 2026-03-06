@@ -47,7 +47,7 @@ for value in sequence(first: 1, next: { $0 * 2 }) {
 ## Parameters
 
 - `first`: The first element to be returned from the sequence.
-- `next`: A closure that accepts the previous sequence element and   returns the next element.
+- `next`: A closure that accepts the previous sequence element and returns the next element.
 
 ## See Also
 

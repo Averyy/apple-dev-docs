@@ -18,6 +18,12 @@ object AnalyticsReportSegmentsResponse
 
 Use this object with [`Read the segments for a report`](get-v1-analyticsreportinstances-_id_-segments.md).
 
+## Properties
+
+- `data` ([AnalyticsReportSegment]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

@@ -14,6 +14,12 @@ A response that contains a single activity version resource.
 object GameCenterActivityVersionResponse
 ```
 
+## Properties
+
+- `data` (GameCenterActivityVersion) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityVersionRelease](gamecenteractivityversionrelease.md)

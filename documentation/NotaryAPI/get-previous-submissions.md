@@ -20,6 +20,54 @@ If you need information about just one submission, and you have the associated i
 
 ##### Example
 
+**Request**:
+
+```https
+https://appstoreconnect.apple.com/notary/v2/submissions
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "attributes": {
+        "createdDate": "2021-04-29T01:38:09.498Z",
+        "name": "OvernightTextEditor_11.6.8.zip",
+        "status": "Accepted"
+      },
+      "id": "2efe2717-52ef-43a5-96dc-0797e4ca1041",
+      "type": "submissions"
+    },
+    {
+      "attributes": {
+        "createdDate": "2021-04-23T17:44:54.761Z",
+        "name": "OvernightTextEditor_11.6.7.zip",
+        "status": "Accepted"
+      },
+      "id": "cf0c235a-dad2-4c24-96eb-c876d4cb3a2d",
+      "type": "submissions"
+    },
+    {
+      "attributes": {
+        "createdDate": "2021-04-19T16:56:17.839Z",
+        "name": "OvernightTextEditor_11.6.7.zip",
+        "status": "Invalid"
+      },
+      "id": "38ce81cc-0bf7-454b-91ef-3f7395bf297b",
+      "type": "submissions"
+    }
+  ],
+  "meta": {
+  }
+} 
+```
+
+## Endpoint
+
+`GET https://appstoreconnect.apple.com/notary/v2/submissions`
+
 ## See Also
 
 - [object SubmissionListResponse](submissionlistresponse.md)

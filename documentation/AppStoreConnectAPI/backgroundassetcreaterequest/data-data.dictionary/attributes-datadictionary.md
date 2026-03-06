@@ -14,6 +14,10 @@ Attributes that describe a background asset create request resource.
 object BackgroundAssetCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `assetPackIdentifier` (string) *(required)*
+
 
 ---
 

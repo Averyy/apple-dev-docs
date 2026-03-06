@@ -20,7 +20,7 @@ You should use this property instead of the `seat/pose` property when you want t
 
 The system will always try to place a participant in their seat at the time of assignment so in many cases both poses will be the same. But if the system is unable to place a participant in their seat, they may be different. For example, if participants in your SharePlay activity are Nearby with each other, the system is unable to move them physically in space.
 
-> ❗ **Important**:  This is not a dynamically updating value. It is the pose of the participant  and does not reflect the participant’s pose in real time.
+> ❗ **Important**:  This is not a dynamically updating value. It is the pose of the participant **at the time of seat assignment** and does not reflect the participant’s pose in real time.
 
 
 ---

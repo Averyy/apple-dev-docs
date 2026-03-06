@@ -14,6 +14,11 @@ The data structure that represents an app promoted purchases linkages request re
 object AppPromotedPurchasesLinkagesRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

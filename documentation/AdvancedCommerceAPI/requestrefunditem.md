@@ -14,6 +14,14 @@ Information about the refund request for an item, such as its SKU, the refund am
 object RequestRefundItem
 ```
 
+## Properties
+
+- `SKU` (SKU) *(required)*: The product identifier.
+- `refundAmount` (refundAmount): The refund amount you’re requesting for the `SKU`, in milliunits of the currency.
+- `refundReason` (refundReason) *(required)*: The reason for the refund request.
+- `refundType` (string) *(required)*: The type of refund requested.
+- `revoke` (boolean) *(required)*
+
 ## See Also
 
 - [Request Transaction Refund](request-transaction-refund.md)

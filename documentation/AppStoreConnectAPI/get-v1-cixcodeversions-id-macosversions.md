@@ -14,6 +14,61 @@ The example request below lists macOS versions available for a specific Xcode ve
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/b1e1f7b2-14e7-11ec-82a8-0242ac130003/macOsVersions
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "type": "ciMacOsVersions",
+            "id": "20G95",
+            "attributes": {
+                "version": "20G95",
+                "name": "macOS Big Sur 11.5.2 (20G95)"
+            },
+            "relationships": {
+                "xcodeVersions": {
+                    "links": {
+                        "self": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/relationships/xcodeVersions",
+                        "related": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/xcodeVersions"
+                    }
+                }
+            },
+            "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95"
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciMacOsVersions"
+    },
+    "meta": {
+        "paging": {
+            "total": 1,
+            "limit": 50
+        }
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/{id}/macOsVersions`
+
+## Parameters
+
+- `fields[ciMacOsVersions]` ([string]): Additional fields to include for each macOS Versions resource returned by the response.
+- `fields[ciXcodeVersions]` ([string]): Additional fields to include for each macOS Versions resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The number of macOS Versions resources to return.
+- `limit[xcodeVersions]` (integer): The number of included macOS Versions resources to return if the Xcode versions relationship is included.
+
 ## See Also
 
 - [List All Xcode Versions Available in Xcode Cloud](get-v1-cixcodeversions.md)

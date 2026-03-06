@@ -12,6 +12,10 @@ Create an activity for your Game Center detail or Game Center group.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivities`
+
 ## See Also
 
 - [Add an achievement to a Game Center activity](post-v1-gamecenteractivities-_id_-relationships-achievementsv2.md)

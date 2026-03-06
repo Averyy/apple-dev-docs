@@ -24,6 +24,10 @@ object GameCenterLeaderboardLocalizationV2UpdateRequest
 - [object GameCenterLeaderboardLocalizationV2UpdateRequest.Data](gamecenterleaderboardlocalizationv2updaterequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard localization update request resource.
 
+## Properties
+
+- `data` (GameCenterLeaderboardLocalizationV2UpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2](gamecenterleaderboardlocalizationv2.md)

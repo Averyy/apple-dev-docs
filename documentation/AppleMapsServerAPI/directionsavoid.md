@@ -16,6 +16,8 @@ string DirectionsAvoid
 
 #### Possible Values
 
+- **Tolls**: When you set `avoid=Tolls`, routes without tolls are higher up in the list of returned routes. Note that even when you set `avoid=Tolls`, the routes the server returns may contain tolls (if no reasonable toll-free routes exist). Ensure you check the value of `routes[i].hasTolls` in the response to verify toll assumptions.
+
 ## See Also
 
 - [type CountryCode](countrycode.md)

@@ -17,6 +17,11 @@ object AppStoreVersionRoutingAppCoverageLinkageResponse
 ### Dictionaries
 - [object AppStoreVersionRoutingAppCoverageLinkageResponse.Data](appstoreversionroutingappcoveragelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionRoutingAppCoverageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

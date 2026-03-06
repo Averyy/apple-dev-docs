@@ -12,6 +12,11 @@
 object BackgroundAssetVersion.Relationships.AppStoreRelease.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

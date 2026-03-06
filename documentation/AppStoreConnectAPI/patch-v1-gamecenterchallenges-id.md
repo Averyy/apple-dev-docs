@@ -12,6 +12,14 @@ Update details for a specific Game Center challenge.
 
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterChallenges/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

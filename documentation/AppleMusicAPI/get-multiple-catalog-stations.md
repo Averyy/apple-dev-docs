@@ -14,6 +14,72 @@ If successful, the HTTP status code is 200 (OK) and the `data` array contains th
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/catalog/us/stations?ids=ra.1498157166
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "id": "ra.1498157166",
+            "type": "stations",
+            "href": "/v1/catalog/us/stations/ra.1498157166",
+            "attributes": {
+                "playParams": {
+                    "id": "ra.1498157166",
+                    "kind": "radioStation",
+                    "format": "stream",
+                    "stationHash": "CgkIBRoF7qCwygUQBA",
+                    "hasDrm": true,
+                    "mediaType": 0
+                },
+                "editorialNotes": {
+                    "name": "Apple Music Country",
+                    "short": "Where it sounds like home.",
+                    "tagline": "Where it sounds like home."
+                },
+                "artwork": {
+                    "width": 4320,
+                    "height": 1080,
+                    "url": "https: //is5-ssl.mzstatic.com/image/thumb/Features114/v4/89/e2/66/89e266ee-454e-87e7-e108-dea53c54da6a/U0MtTVMtV1ctQU1fQ291bnRyeS5wbmc.png/{w}x{h}sr.jpg",
+                    "bgColor": "f4f4f4",
+                    "textColor1": "000000",
+                    "textColor2": "142234",
+                    "textColor3": "3a412d",
+                    "textColor4": "364354"
+                },
+                "supportedDrms": [
+                    "fairplay",
+                    "playready",
+                    "widevine"
+                ],
+                "isLive": true,
+                "mediaKind": "audio",
+                "url": "https: //music.apple.com/us/station/apple-music-country/ra.1498157166",
+                "name": "Apple Music Country"
+            }
+        }
+    ]
+}
+
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/catalog/{storefront}/stations`
+
+## Parameters
+
+- `ids` ([string]) *(required)*: The unique identifiers for the stations. The maximum fetch limit is 100.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `include` ([string]): Additional relationships to include in the fetch.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object Stations](stations.md)

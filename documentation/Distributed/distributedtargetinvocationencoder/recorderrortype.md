@@ -23,7 +23,7 @@ mutating func recordErrorType<E>(_ type: E.Type) throws where E : Error
 
 ## Parameters
 
-- `type`: The type of error that was declared to be thrown by the invocation target. Currently this can only ever be  .
+- `type`: The type of error that was declared to be thrown by the invocation target. Currently this can only ever be `Error.self`.
 
 
 ---

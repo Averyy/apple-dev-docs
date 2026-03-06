@@ -26,8 +26,8 @@ The memory in `buffer` must remain valid throughout the lifetime of the newly-cr
 
 ## Parameters
 
-- `buffer`: An   to be initialized
-- `initializedCount`: The number of initialized bytes   at the beginning of  .
+- `buffer`: An `UnsafeMutableRawBufferPointer` to be initialized
+- `initializedCount`: The number of initialized bytes at the beginning of `buffer`.
 
 
 ---

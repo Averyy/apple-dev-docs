@@ -14,6 +14,10 @@ The attribute that describes the url where you receive notifications.
 object MarketplaceWebhook.Attributes
 ```
 
+## Properties
+
+- `endpointUrl` (uri)
+
 
 ---
 

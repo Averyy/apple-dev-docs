@@ -40,7 +40,7 @@ for _ in 1...3 {
 ## Parameters
 
 - `range`: The range in which to create a random value.
-- `generator`: The random number generator to use when creating the   new random value.
+- `generator`: The random number generator to use when creating the new random value.
 
 
 ---

@@ -22,6 +22,14 @@ object Ratings
 - [object Ratings.Relationships](ratings/relationships-data.dictionary.md)
   The relationships for a rating resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the rating.
+- `type` (string) *(required)*: This value is always `ratings`.
+- `href` (string) *(required)*: The relative location for the playlist resource.
+- `attributes` (Ratings.Attributes): The attributes for the rating.
+- `relationships` (Ratings.Relationships): The relationships from ratings to other resources.
+
 ## See Also
 
 - [object RatingsResponse](ratingsresponse.md)

@@ -30,7 +30,7 @@ The memory at this pointer plus `offset` must be properly aligned for accessing 
 
 ## Parameters
 
-- `offset`: The offset from this pointer, in bytes.   must be   nonnegative. The default is zero.
+- `offset`: The offset from this pointer, in bytes. `offset` must be nonnegative. The default is zero.
 - `type`: The type of the instance to create.
 
 

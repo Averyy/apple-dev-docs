@@ -12,6 +12,10 @@
 object CiManualBranchStartCondition
 ```
 
+## Properties
+
+- `source` (CiBranchPatterns)
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

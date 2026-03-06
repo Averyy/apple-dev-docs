@@ -18,6 +18,29 @@ Access to the `organization` resource requires authorization to either the `edu.
 
 ##### Example
 
+**Request**:
+
+```None
+curl "https://api-school.apple.com/rosterapi/v1/organization" -H "Authorization: Bearer ${TOKEN}"
+```
+
+**Response**:
+
+```json
+{
+  "id":"1234",
+  "type":"EDUCATION",
+  "name":"Example Organization",
+  "domains":[{"name":"example.com","isVerified":false}],
+  "dateCreated":"2022-10-11T01:53:02Z",
+  "dateLastModified":"2022-10-11T01:53:02Z"
+}
+```
+
+## Endpoint
+
+`GET https://api-school.apple.com/rosterapi/v1/organization`
+
 ## See Also
 
 - [object Organization](organization.md)

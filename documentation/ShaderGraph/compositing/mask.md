@@ -17,6 +17,10 @@ Outputs areas of background that overlap with the alpha of foreground.
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The `color4` foreground input. `F` represents the RGB component of this parameter. `f` represents the alpha component of this parameter.
+- **`Background`**: The `color4` background input. `B` represents the RGB component of this parameter. `b`represents the alpha component of this parameter.
+- **`Mix`**: The weight of the blend operation. The higher the value of `Mix`, the more apparent the effect of the blend operation. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The Mask node determines its output using the alpha channels of the foreground and background inputs. The RGB componentt of the output is `B*f` and the alpha component of the output is `b*f`. Below is a simple node graph that uses the Mask node to blend a wood and rock texture:

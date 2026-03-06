@@ -18,6 +18,11 @@ object SubscriptionPromotionalOffer.Relationships
 - [object SubscriptionPromotionalOffer.Relationships.Prices](subscriptionpromotionaloffer/relationships-data.dictionary/prices-data.dictionary.md)
 - [object SubscriptionPromotionalOffer.Relationships.Subscription](subscriptionpromotionaloffer/relationships-data.dictionary/subscription-data.dictionary.md)
 
+## Properties
+
+- `prices` (SubscriptionPromotionalOffer.Relationships.Prices)
+- `subscription` (SubscriptionPromotionalOffer.Relationships.Subscription)
+
 ## See Also
 
 - [object SubscriptionPromotionalOffer.Attributes](subscriptionpromotionaloffer/attributes-data.dictionary.md)

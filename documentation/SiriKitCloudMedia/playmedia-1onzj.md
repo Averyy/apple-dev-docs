@@ -43,6 +43,17 @@ There isn’t a default path for this endpoint. Specify the URL for this endpoin
 - [object PlayMediaControlCommandSet](playmediacontrolcommandset.md)
   A set of modifications to apply to the default set of available playback controls.
 
+## Endpoint
+
+`POST https://cloudextension-testservice.local/api/queues/playMedia`
+
+## Parameters
+
+- `Accept-Language` (string) *(required)*: The client’s current user interface language. Respond with localized content for this language, if available.
+- `User-Agent` (string) *(required)*: The extension protocol running on the client. This is an RFC 7231-compliant string that contains the product name *AppleCloudExtension* and the SiriKit Extension library version running on the client.
+- `x-applecloudextension-retry-count` (uint32): The number of previous requests from the client. The client omits this header on the first attempt.
+- `x-applecloudextension-session-id` (string) *(required)*: A constant session identifier to include in each request and response. Respond to each request with the session ID the client sends in that request.
+
 ## Request Body
 
 A [`UserActivity`](useractivity.md) and constraints for the queue your service provides.

@@ -8,6 +8,14 @@ Commit an app screenshot after uploading it.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appScreenshots/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Screenshot](post-v1-appscreenshots.md)

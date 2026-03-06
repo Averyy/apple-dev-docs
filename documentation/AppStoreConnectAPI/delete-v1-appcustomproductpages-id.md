@@ -12,6 +12,26 @@ Delete metadata that you configured for a custom product page.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3
+```
+
+**Response**:
+
+```json
+204
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appCustomProductPages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page resource ID from the [`List all custom product pages for an app`](get-v1-apps-_id_-appcustomproductpages.md) response.
+
 ## See Also
 
 - [Create a custom product page](post-v1-appcustomproductpages.md)

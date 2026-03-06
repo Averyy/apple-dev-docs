@@ -20,6 +20,10 @@ object WinBackOfferCreateRequest.Data.Relationships.Prices
 - [object WinBackOfferCreateRequest.Data.Relationships.Prices.Data](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([WinBackOfferCreateRequest.Data.Relationships.Prices.Data]) *(required)*
+
 ## See Also
 
 - [object WinBackOfferCreateRequest.Data.Relationships.Subscription](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)

@@ -12,6 +12,12 @@
 object SubscriptionGroupResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionGroup) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroup](subscriptiongroup.md)

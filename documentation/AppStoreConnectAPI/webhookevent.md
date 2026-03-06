@@ -20,6 +20,13 @@ object WebhookEvent
 - [object WebhookEvent.Attributes](webhookevent/attributes-data.dictionary.md)
   Attributes that describe a webhook event resource.
 
+## Properties
+
+- `attributes` (WebhookEvent.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

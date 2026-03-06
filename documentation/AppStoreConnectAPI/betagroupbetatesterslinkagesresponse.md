@@ -20,6 +20,12 @@ object BetaGroupBetaTestersLinkagesResponse
 - [object BetaGroupBetaTestersLinkagesResponse.Data](betagroupbetatesterslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([BetaGroupBetaTestersLinkagesResponse.Data]) *(required)*: The object types and IDs of the related resources.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links including the self-link and links to the related data.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [Get All Beta Tester IDs in a Beta Group](get-v1-betagroups-_id_-relationships-betatesters.md)

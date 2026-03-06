@@ -22,8 +22,8 @@ The compiler defaults to inferring unannotated code as `nonisolated` if unspecif
 
 ## Parameters
 
-- `isolation`: The type of global actor to use for default actor isolation   inference. The only valid arguments are   and  .
-- `condition`: A condition that restricts the application of the build   setting.
+- `isolation`: The type of global actor to use for default actor isolation inference. The only valid arguments are `MainActor.self` and `nil`.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

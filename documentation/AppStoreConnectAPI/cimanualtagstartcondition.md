@@ -12,6 +12,10 @@
 object CiManualTagStartCondition
 ```
 
+## Properties
+
+- `source` (CiTagPatterns)
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

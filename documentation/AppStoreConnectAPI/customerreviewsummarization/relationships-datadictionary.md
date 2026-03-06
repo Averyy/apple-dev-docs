@@ -20,6 +20,10 @@ object CustomerReviewSummarization.Relationships
 - [object CustomerReviewSummarization.Relationships.Territory](customerreviewsummarization/relationships-data.dictionary/territory-data.dictionary.md)
   The data structure that represents a territory for a customer review summarization resource.
 
+## Properties
+
+- `territory` (CustomerReviewSummarization.Relationships.Territory)
+
 
 ---
 

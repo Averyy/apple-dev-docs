@@ -20,6 +20,10 @@ object WinBackOffer.Relationships
 - [object WinBackOffer.Relationships.Prices](winbackoffer/relationships-data.dictionary/prices-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `prices` (WinBackOffer.Relationships.Prices)
+
 ## See Also
 
 - [object WinBackOffer.Attributes](winbackoffer/attributes-data.dictionary.md)

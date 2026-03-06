@@ -8,6 +8,30 @@ Read the app store version and related information for an app version.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/{id}/appStoreVersion`
+
+## Parameters
+
+- `fields[ageRatingDeclarations]` ([string])
+- `fields[appClipDefaultExperiences]` ([string])
+- `fields[appStoreReviewDetails]` ([string])
+- `fields[appStoreVersionExperiments]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
+- `fields[appStoreVersionPhasedReleases]` ([string])
+- `fields[appStoreVersionSubmissions]` ([string])
+- `fields[appStoreVersions]` ([string])
+- `fields[apps]` ([string])
+- `fields[builds]` ([string])
+- `fields[routingAppCoverages]` ([string])
+- `include` ([string])
+- `limit[appStoreVersionExperimentsV2]` (integer)
+- `limit[appStoreVersionExperiments]` (integer)
+- `limit[appStoreVersionLocalizations]` (integer)
+- `fields[alternativeDistributionPackages]` ([string])
+- `fields[gameCenterAppVersions]` ([string])
+
 ## See Also
 
 - [Read app versions for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)

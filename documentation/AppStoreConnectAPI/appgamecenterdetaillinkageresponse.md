@@ -17,6 +17,11 @@ object AppGameCenterDetailLinkageResponse
 ### Dictionaries
 - [object AppGameCenterDetailLinkageResponse.Data](appgamecenterdetaillinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppGameCenterDetailLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

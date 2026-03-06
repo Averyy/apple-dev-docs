@@ -12,6 +12,12 @@
 object SubscriptionLocalizationResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionLocalization) *(required)*
+- `included` ([Subscription])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionLocalizationCreateRequest](subscriptionlocalizationcreaterequest.md)

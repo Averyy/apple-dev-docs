@@ -12,6 +12,15 @@ Get details about a specific background asset version.
 
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssetVersions/{id}`
+
+## Parameters
+
+- `fields[backgroundAssetVersions]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read background asset version App Store releases information.](get-v1-backgroundassetversionappstorereleases-_id_.md)

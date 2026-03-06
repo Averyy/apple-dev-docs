@@ -8,6 +8,14 @@ Remove a specific beta tester from a one or more beta groups, revoking their acc
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/relationships/betaTesters`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Add Beta Testers to a Beta Group](post-v1-betagroups-_id_-relationships-betatesters.md)

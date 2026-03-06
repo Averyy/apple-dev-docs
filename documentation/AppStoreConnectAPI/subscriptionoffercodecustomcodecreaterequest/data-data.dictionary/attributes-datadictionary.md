@@ -12,6 +12,12 @@
 object SubscriptionOfferCodeCustomCodeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `customCode` (string) *(required)*
+- `expirationDate` (date)
+- `numberOfCodes` (integer) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeCustomCodeCreateRequest.Data.Relationships](subscriptionoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

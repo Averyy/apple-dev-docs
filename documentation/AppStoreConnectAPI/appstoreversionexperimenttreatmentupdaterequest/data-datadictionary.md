@@ -20,6 +20,12 @@ object AppStoreVersionExperimentTreatmentUpdateRequest.Data
 - [object AppStoreVersionExperimentTreatmentUpdateRequest.Data.Attributes](appstoreversionexperimenttreatmentupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app store version experiment treatment update request resource.
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentTreatmentUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

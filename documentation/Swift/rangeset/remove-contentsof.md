@@ -22,7 +22,7 @@ mutating func remove(contentsOf range: Range<Bound>)
 
 #### Discussion
 
-> **Note**: O(), where  is the number of ranges in the range set.
+> **Note**: O(*n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

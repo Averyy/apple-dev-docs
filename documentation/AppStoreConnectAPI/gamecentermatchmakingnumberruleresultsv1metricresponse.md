@@ -20,6 +20,12 @@ object GameCenterMatchmakingNumberRuleResultsV1MetricResponse
 - [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary.md)
   The data structure in a response body for numeric rule results.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse](gamecentermatchmakingapprequestsv1metricresponse.md)

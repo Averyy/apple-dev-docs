@@ -18,6 +18,11 @@ object ProtocolExceptionInvocationResponse
 
 When your service receives a well-formed request, but it can’t fulfill the intent, use an [`IntentResponse`](intentresponse.md) or [`IntentResolutionResult`](intentresolutionresult.md) instead of a `ProtocolExceptionInvocationResponse`. Those objects allow the client to provide more specific information to the user about errors that occur.
 
+## Properties
+
+- `exception` (ProtocolException) *(required)*: The reason your service can’t provide a response.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

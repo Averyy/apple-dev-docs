@@ -12,6 +12,11 @@
 object TerritoryInlineCreate
 ```
 
+## Properties
+
+- `id` (string)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object App](app.md)

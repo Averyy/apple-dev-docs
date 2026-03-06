@@ -18,6 +18,11 @@ object MaximumNumberOfImagesReachedError
 
 For information about the image limit, see [`Upload Image`](upload-image.md).
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

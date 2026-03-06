@@ -14,6 +14,10 @@ The response to a playlists request.
 object PlaylistsResponse
 ```
 
+## Properties
+
+- `data` ([Playlists]) *(required)*: The [`Playlists`](playlists.md) included in the response for the request.
+
 ## See Also
 
 - [object Playlists](playlists.md)

@@ -24,6 +24,19 @@ object AppEvent.Attributes
 - [object AppEvent.Attributes.ArchivedTerritorySchedules](appevent/attributes-data.dictionary/archivedterritoryschedules-data.dictionary.md)
 - [object AppEvent.Attributes.TerritorySchedules](appevent/attributes-data.dictionary/territoryschedules-data.dictionary.md)
 
+## Properties
+
+- `archivedTerritorySchedules` ([AppEvent.Attributes.ArchivedTerritorySchedules])
+- `badge` (string)
+- `deepLink` (uri)
+- `eventState` (string)
+- `primaryLocale` (string)
+- `priority` (string)
+- `purchaseRequirement` (string): Possible values: `NO_COST_ASSOCIATED`, `IN_APP_PURCHASE`
+- `purpose` (string)
+- `referenceName` (string)
+- `territorySchedules` ([AppEvent.Attributes.TerritorySchedules])
+
 ## See Also
 
 - [object AppEvent.Relationships](appevent/relationships-data.dictionary.md)

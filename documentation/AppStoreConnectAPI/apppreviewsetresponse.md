@@ -14,6 +14,12 @@ A response that contains a single App Preview Sets resource.
 object AppPreviewSetResponse
 ```
 
+## Properties
+
+- `data` (AppPreviewSet) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppPreviewSet](apppreviewset.md)

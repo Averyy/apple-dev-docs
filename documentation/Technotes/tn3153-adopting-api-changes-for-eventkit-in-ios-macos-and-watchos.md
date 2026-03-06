@@ -20,7 +20,7 @@ The [`NSCalendarsUsageDescription`](https://developer.apple.comhttps://developer
 
 If your app links against an SDK older than the iOS 17 SDK, macOS 14 SDK, or watchOS 10 SDK and hasn’t previously prompted the user for calendar access,
 
- Calling [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) or [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) with an entity type `event` prompts the user to grant write-only calendar access to your app. If the user allows write-only access to your app and your app used `requestAccess(to:completion:)`, the system calls the [`EKEventStoreRequestAccessCompletionHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstorerequestaccesscompletionhandler) completion handler with its boolean parameter set to `true`.
+**On iOS and macOS** Calling [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) or [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) with an entity type `event` prompts the user to grant write-only calendar access to your app. If the user allows write-only access to your app and your app used `requestAccess(to:completion:)`, the system calls the [`EKEventStoreRequestAccessCompletionHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstorerequestaccesscompletionhandler) completion handler with its boolean parameter set to `true`.
 
 ```swift
 let eventStore = EKEventStore()
@@ -43,7 +43,7 @@ if response {
 
 If the user denies access, the completion handler receives a `false` parameter and `requestAccess(to:)` returns `false`.
 
- Calling these methods with an entity type `event` prompts the user to grant full calendar access to your app.
+**On watchOS** Calling these methods with an entity type `event` prompts the user to grant full calendar access to your app.
 
 > **Note**: If the user previously granted write-only access to the iOS companion app, calling [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) or [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) for events in the watchOS app doesn’t prompt the user for access. The access level of the watchOS app matches its companion app, which is write-only.
 
@@ -78,8 +78,8 @@ If the user denies access, these methods don’t return any results, and any fur
 
 #### Revision History
 
--  Made minor editorial changes.
--  First published.
+- **2024-02-27** Made minor editorial changes.
+- **2023-06-06** First published.
 
 ## See Also
 

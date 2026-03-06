@@ -17,6 +17,10 @@ object PassTypeIdUpdateRequest
 - [object PassTypeIdUpdateRequest.Data](passtypeidupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (PassTypeIdUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object PassTypeId](passtypeid.md)

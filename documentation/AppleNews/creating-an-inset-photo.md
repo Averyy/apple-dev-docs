@@ -8,6 +8,8 @@ Wrap article body text around an inset photo.
 
 In [`Creating an Inset Pull Quote`](creating-an-inset-pull-quote.md), you placed a pull quote within the article body.
 
+**On this page, you’ll learn how to:**
+
 - Place a photo within the article body.
 - Use a `ComponentLayout` object to control horizontal placement in the column system.
 - Add an anchor to control vertical placement and make text wrap around the photo.

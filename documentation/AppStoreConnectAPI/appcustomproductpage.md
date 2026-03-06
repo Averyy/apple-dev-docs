@@ -20,6 +20,14 @@ object AppCustomProductPage
 - [object AppCustomProductPage.Attributes](appcustomproductpage/attributes-data.dictionary.md)
 - [object AppCustomProductPage.Relationships](appcustomproductpage/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppCustomProductPage.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppCustomProductPage.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppCustomProductPageCreateRequest](appcustomproductpagecreaterequest.md)

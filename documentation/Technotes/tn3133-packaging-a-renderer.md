@@ -127,7 +127,7 @@ For more information about creating and applying a Swift Package Build Tool Plug
 
 #### Revision History
 
--  First published.
+- **2022-11-08** First published.
 
 ## See Also
 

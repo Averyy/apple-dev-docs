@@ -8,6 +8,15 @@ Get a list of the possible beta recruitment criteria options.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaRecruitmentCriterionOptions`
+
+## Parameters
+
+- `fields[betaRecruitmentCriterionOptions]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create recruitment criteria](post-v1-betarecruitmentcriteria.md)

@@ -20,6 +20,12 @@ object AppInfoLocalizationUpdateRequest.Data
 - [object AppInfoLocalizationUpdateRequest.Data.Attributes](appinfolocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (AppInfoLocalizationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

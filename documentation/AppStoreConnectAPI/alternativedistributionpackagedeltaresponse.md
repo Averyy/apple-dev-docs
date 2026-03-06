@@ -38,6 +38,11 @@ This object is the response that contains a single alternative distribution pack
 }
 ```
 
+## Properties
+
+- `data` (AlternativeDistributionPackageDelta) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

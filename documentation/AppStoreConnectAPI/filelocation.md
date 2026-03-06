@@ -14,6 +14,11 @@ The data structure that represents a File Locations resource.
 object FileLocation
 ```
 
+## Properties
+
+- `lineNumber` (integer): The line number of a file that contains code.
+- `path` (string): The path to the file that caused an issue.
+
 ## See Also
 
 - [object CiIssue](ciissue.md)

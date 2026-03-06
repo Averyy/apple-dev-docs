@@ -42,7 +42,7 @@ for await number in stream {
 
 ## Parameters
 
-- `transform`: A mapping closure.   accepts an element   of this sequence as its parameter and returns an  .
+- `transform`: A mapping closure. `transform` accepts an element of this sequence as its parameter and returns an `AsyncSequence`.
 
 
 ---

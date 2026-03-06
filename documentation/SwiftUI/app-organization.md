@@ -17,9 +17,9 @@ For platform-specific design guidance, see [`Getting started`](https://developer
 ## Topics
 
 ### Creating an app
-- [Destination Video](../visionos/destination-video.md)
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Hello World](../visionos/world.md)
+- [Hello World](../visionOS/World.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Backyard Birds: Building an app with SwiftData and widgets](backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.

@@ -38,7 +38,7 @@ print(cafe[j...])
 
 ## Parameters
 
-- `characters`: The string to use for the index conversion.   This index must be a valid index of at least one view of  .
+- `characters`: The string to use for the index conversion. This index must be a valid index of at least one view of `characters`.
 
 
 ---

@@ -22,6 +22,11 @@ object InAppPurchaseOfferCodeCustomCode.Relationships
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
   The data that describes the deactivated by actor of the in-app purchase offer code custom code.
 
+## Properties
+
+- `createdByActor` (InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor)
+- `deactivatedByActor` (InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCustomCode.Attributes](inapppurchaseoffercodecustomcode/attributes-data.dictionary.md)

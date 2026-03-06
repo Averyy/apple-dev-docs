@@ -14,6 +14,11 @@ The data element of the response body.
 object BetaTesterBetaGroupsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -73,19 +73,19 @@ print(students.sorted(by: <))
 // Prints "["Abena", "Akosua", "Kofi", "Kweku", "Peter"]"
 ```
 
-The predicate must be a  over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
+The predicate must be a *strict weak ordering* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 
 - `areInIncreasingOrder(a, a)` is always `false`. (Irreflexivity)
 - If `areInIncreasingOrder(a, b)` and `areInIncreasingOrder(b, c)` are both `true`, then `areInIncreasingOrder(a, c)` is also `true`. (Transitive comparability)
-- Two elements are  if neither is ordered before the other according to the predicate. If `a` and `b` are incomparable, and `b` and `c` are incomparable, then `a` and `c` are also incomparable. (Transitive incomparability)
+- Two elements are *incomparable* if neither is ordered before the other according to the predicate. If `a` and `b` are incomparable, and `b` and `c` are incomparable, then `a` and `c` are also incomparable. (Transitive incomparability)
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements for which `areInIncreasingOrder` does not establish an order.
 
-> **Note**: O( log ), where  is the length of the sequence.
+> **Note**: O(*n* log *n*), where *n* is the length of the sequence.
 
 ## Parameters
 
-- `areInIncreasingOrder`: A predicate that returns   if its   first argument should be ordered before its second argument;   otherwise,  .
+- `areInIncreasingOrder`: A predicate that returns `true` if its first argument should be ordered before its second argument; otherwise, `false`.
 
 
 ---

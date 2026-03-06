@@ -14,6 +14,71 @@ If successful, the HTTP status code is 200 (OK) and the `data` array contains th
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/catalog/us/stations/ra.1498157166
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "id": "ra.1498157166",
+            "type": "stations",
+            "href": "/v1/catalog/us/stations/ra.1498157166",
+            "attributes": {
+                "artwork": {
+                    "width": 4320,
+                    "height": 1080,
+                    "url": "https: //is5-ssl.mzstatic.com/image/thumb/Features114/v4/89/e2/66/89e266ee-454e-87e7-e108-dea53c54da6a/U0MtTVMtV1ctQU1fQ291bnRyeS5wbmc.png/{w}x{h}sr.jpg",
+                    "bgColor": "f4f4f4",
+                    "textColor1": "000000",
+                    "textColor2": "142234",
+                    "textColor3": "3a412d",
+                    "textColor4": "364354"
+                },
+                "mediaKind": "audio",
+                "isLive": true,
+                "name": "Apple Music Country",
+                "playParams": {
+                    "id": "ra.1498157166",
+                    "kind": "radioStation",
+                    "format": "stream",
+                    "stationHash": "CgkIBRoF7qCwygUQBA",
+                    "hasDrm": true,
+                    "mediaType": 0
+                },
+                "supportedDrms": [
+                    "fairplay",
+                    "playready",
+                    "widevine"
+                ],
+                "editorialNotes": {
+                    "name": "Apple Music Country",
+                    "short": "Where it sounds like home.",
+                    "tagline": "Where it sounds like home."
+                },
+                "url": "https: //music.apple.com/us/station/apple-music-country/ra.1498157166"
+            }
+        }
+    ]
+}
+
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/catalog/{storefront}/stations/{id}`
+
+## Parameters
+
+- `include` ([string]): Additional relationships to include in the fetch.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object Stations](stations.md)

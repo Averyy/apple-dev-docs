@@ -26,7 +26,7 @@ Use this initializer to avoid intermediate reallocations of a set’s storage bu
 
 ## Parameters
 
-- `minimumCapacity`: The minimum number of elements that the   newly created set should be able to store without reallocating its   storage buffer.
+- `minimumCapacity`: The minimum number of elements that the newly created set should be able to store without reallocating its storage buffer.
 
 ## See Also
 

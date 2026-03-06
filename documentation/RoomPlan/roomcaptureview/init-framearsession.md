@@ -27,7 +27,7 @@ You can access the `arSession` at runtime through this class’s room-capture se
 ## Parameters
 
 - `frame`: A structure that positions and shapes the view.
-- `arSession`: A world-tracking session that your app creates and runs with an   before calling this function. If you pass an   instance, RoomPlan preserves all of the AR session’s settings.
+- `arSession`: A world-tracking session that your app creates and runs with an [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration) before calling this function. If you pass an `ARSession` instance, RoomPlan preserves all of the AR session’s settings.
 
 ## See Also
 

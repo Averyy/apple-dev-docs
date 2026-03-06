@@ -19,6 +19,10 @@ object GameCenterAppVersionUpdateRequest
 ### Objects
 - [object GameCenterAppVersionUpdateRequest.Data](gamecenterappversionupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAppVersionUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAppVersion](gamecenterappversion.md)

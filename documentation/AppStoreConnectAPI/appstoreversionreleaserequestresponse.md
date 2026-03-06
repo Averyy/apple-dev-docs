@@ -14,6 +14,11 @@ A response that contains a single App Store Version Release Request resource.
 object AppStoreVersionReleaseRequestResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionReleaseRequest) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppStoreVersionReleaseRequestCreateRequest](appstoreversionreleaserequestcreaterequest.md)

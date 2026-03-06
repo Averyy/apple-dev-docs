@@ -19,6 +19,12 @@ object Profile.Relationships.Devices
 - [object RelationshipLinks](relationshiplinks.md)
   The links to the related data and the relationship’s self-link.
 
+## Properties
+
+- `data` ([Profile.Relationships.Devices.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Profile.Relationships.BundleId](profile/relationships-data.dictionary/bundleid-data.dictionary.md)

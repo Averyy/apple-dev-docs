@@ -20,6 +20,12 @@ object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse
 - [object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse.Data](appcustomproductpageappcustomproductpageversionslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
+## Properties
+
+- `data` ([AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

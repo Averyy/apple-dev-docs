@@ -8,6 +8,14 @@ Delete a specific video clip from an in-app event.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appEventVideoClips/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [GET /v1/appEventVideoClips/{id}](get-v1-appeventvideoclips-_id_.md)

@@ -14,6 +14,11 @@ The card information related to a merchant token, including its card art and met
 object MerchantTokenMetadata
 ```
 
+## Properties
+
+- `cardArt` ([CardArt]): An array that contains data you use to display art that represents the card related to the merchant token.
+- `cardMetadata` (CardMetadata): Card data, including its expiration date and suffix, for the card related to the merchant token.
+
 ## See Also
 
 - [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)

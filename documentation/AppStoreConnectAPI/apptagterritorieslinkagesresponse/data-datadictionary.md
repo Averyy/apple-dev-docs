@@ -14,6 +14,11 @@ The data structure that represents an app tag territories linkages response reso
 object AppTagTerritoriesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

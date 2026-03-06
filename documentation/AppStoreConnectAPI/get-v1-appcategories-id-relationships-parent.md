@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCategories/{id}/relationships/parent`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read App Category Information](get-v1-appcategories-_id_.md)

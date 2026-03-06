@@ -14,6 +14,13 @@ A response that contains a list of App Screenshots resources.
 object AppScreenshotsResponse
 ```
 
+## Properties
+
+- `data` ([AppScreenshot]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+- `included` ([AppScreenshotSet])
+
 ## See Also
 
 - [object AppScreenshot](appscreenshot.md)

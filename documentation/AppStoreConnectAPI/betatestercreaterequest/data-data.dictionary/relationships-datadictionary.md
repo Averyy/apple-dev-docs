@@ -22,6 +22,11 @@ object BetaTesterCreateRequest.Data.Relationships
 - [object BetaTesterCreateRequest.Data.Relationships.Builds](betatestercreaterequest/data-data.dictionary/relationships-data.dictionary/builds-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `betaGroups` (BetaTesterCreateRequest.Data.Relationships.BetaGroups)
+- `builds` (BetaTesterCreateRequest.Data.Relationships.Builds)
+
 ## See Also
 
 - [object BetaTesterCreateRequest.Data.Attributes](betatestercreaterequest/data-data.dictionary/attributes-data.dictionary.md)

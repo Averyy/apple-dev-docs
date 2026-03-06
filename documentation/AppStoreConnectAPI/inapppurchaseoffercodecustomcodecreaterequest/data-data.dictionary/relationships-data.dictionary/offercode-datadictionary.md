@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCod
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode.Data](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode.Data) *(required)*
+
 
 ---
 

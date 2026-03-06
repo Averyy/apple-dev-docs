@@ -14,6 +14,13 @@ A response that contains a list of AppInfoLocalizations resources.
 object AppInfoLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([AppInfoLocalization]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+- `included` ([AppInfo])
+
 ## See Also
 
 - [object AppInfoLocalization](appinfolocalization.md)

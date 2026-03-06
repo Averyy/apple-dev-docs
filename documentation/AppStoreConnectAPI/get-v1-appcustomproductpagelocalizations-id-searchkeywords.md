@@ -8,6 +8,17 @@ List the app preview sets for a specific custom product page localization.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}/searchKeywords`
+
+## Parameters
+
+- `fields[appKeywords]` ([string])
+- `filter[locale]` ([string])
+- `filter[platform]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [List all search keywords for a customer product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionPricePoints/{id}/relationships/equalizations`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read Subscription Price Point Information](get-v1-subscriptionpricepoints-_id_.md)

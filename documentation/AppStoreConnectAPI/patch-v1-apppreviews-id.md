@@ -8,6 +8,14 @@ Commit the app preview after uploading it, and update the poster frame timecode.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appPreviews/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an App Preview](post-v1-apppreviews.md)

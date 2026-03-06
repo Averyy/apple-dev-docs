@@ -12,6 +12,10 @@
 object BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

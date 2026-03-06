@@ -20,6 +20,10 @@ object AppClipAppStoreReviewDetailUpdateRequest
 - [object AppClipAppStoreReviewDetailUpdateRequest.Data](appclipappstorereviewdetailupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppClipAppStoreReviewDetailUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object AppClipAppStoreReviewDetail](appclipappstorereviewdetail.md)

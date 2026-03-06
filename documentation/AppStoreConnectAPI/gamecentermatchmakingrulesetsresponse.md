@@ -14,6 +14,13 @@ The response body for endpoints that get multiple rule sets.
 object GameCenterMatchmakingRuleSetsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterMatchmakingRuleSet]) *(required)*: The rule sets that an endpoint gets.
+- `included` ([*]): The related objects included in the response.
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetCreateRequest](gamecentermatchmakingrulesetcreaterequest.md)

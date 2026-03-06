@@ -12,6 +12,11 @@
 object Nomination.Relationships.SubmittedByActor.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

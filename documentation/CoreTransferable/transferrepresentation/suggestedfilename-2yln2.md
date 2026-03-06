@@ -45,7 +45,7 @@ The .exampleLayer filename extension above should match the extension for the `l
 
 ## Parameters
 
-- `fileName`: The suggested filename including the filename extension.   If several suggested file names are specified on an item, only the last one will be used.
+- `fileName`: The suggested filename including the filename extension. If several suggested file names are specified on an item, only the last one will be used.
 
 
 ---

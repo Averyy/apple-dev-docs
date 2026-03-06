@@ -14,6 +14,12 @@ Details about a ticket for transportation or an event.
 object Ticket
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `ticketedSeat` (Seat): The seat reserved for the passenger or attendee.
+- `ticketNumber` (string): An identifier for the ticket.
+
 ## See Also
 
 - [object Person](person.md)

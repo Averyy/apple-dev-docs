@@ -20,6 +20,10 @@ object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App.Data](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

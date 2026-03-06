@@ -17,6 +17,12 @@ object App.Relationships.AppCustomProductPages
 ### Objects
 - [object App.Relationships.AppCustomProductPages.Data](app/relationships-data.dictionary/appcustomproductpages-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([App.Relationships.AppCustomProductPages.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

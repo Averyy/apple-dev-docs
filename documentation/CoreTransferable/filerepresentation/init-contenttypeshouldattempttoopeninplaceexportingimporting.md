@@ -23,9 +23,9 @@ init(contentType: UTType, shouldAttemptToOpenInPlace: Bool = false, exporting: @
 ## Parameters
 
 - `contentType`: A uniform type identifier that best describes the item.
-- `shouldAttemptToOpenInPlace`: A Boolean value that   indicates whether the receiver gains access to the original item on disk   and can edit it,   or to a copy made by the system.
+- `shouldAttemptToOpenInPlace`: A Boolean value that indicates whether the receiver gains access to the original item on disk and can edit it, or to a copy made by the system.
 - `exporting`: A closure that provides a file representation of the given item.
-- `importing`: A closure that instantiates the item with given file promise.   The file referred to by the    property of the    instance   is only guaranteed to exist within the   closure. If you need the file   to be around for a longer period, make a copy in the   closure.
+- `importing`: A closure that instantiates the item with given file promise. The file referred to by the [`file`](receivedtransferredfile/file.md) property of the [`ReceivedTransferredFile`](receivedtransferredfile.md) instance is only guaranteed to exist within the `importing` closure. If you need the file to be around for a longer period, make a copy in the `importing` closure.
 
 ## See Also
 

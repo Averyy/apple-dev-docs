@@ -23,7 +23,7 @@ init<W, C1>(_ component: some RegexComponent, count: Int) where Output == (Subst
 ## Parameters
 
 - `component`: The regex component to repeat.
-- `count`: The number of times to repeat  .   must   be greater than or equal to zero.
+- `count`: The number of times to repeat `component`. `count` must be greater than or equal to zero.
 
 
 ---

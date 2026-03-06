@@ -12,6 +12,11 @@
 object AppEventLocalizationCreateRequest.Data.Relationships.AppEvent.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -14,6 +14,13 @@ A response that contains multiple leaderboard localizations resources.
 object GameCenterLeaderboardSetLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetLocalizationV2](gamecenterleaderboardsetlocalizationv2.md)

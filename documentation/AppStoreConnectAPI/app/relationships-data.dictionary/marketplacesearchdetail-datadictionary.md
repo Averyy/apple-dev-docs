@@ -12,6 +12,10 @@
 object App.Relationships.MarketplaceSearchDetail
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

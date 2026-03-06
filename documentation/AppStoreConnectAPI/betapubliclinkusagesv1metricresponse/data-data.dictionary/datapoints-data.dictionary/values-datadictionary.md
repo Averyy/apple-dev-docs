@@ -12,6 +12,16 @@
 object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `acceptedCount` (integer)
+- `didNotAcceptCount` (integer)
+- `didNotMeetCriteriaCount` (integer)
+- `notClearRatio` (number)
+- `notInterestingRatio` (number)
+- `notRelevantRatio` (number)
+- `viewCount` (integer)
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: init
 
-Creates a language availability, specifying what the preferred strategy is.
+Creates an instance for checking language availability with a preferred translation strategy.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -19,12 +19,12 @@ init(preferredStrategy: TranslationSession.Strategy)
 
 #### Discussion
 
-Use `.lowLatency` for latency-sensitive applications that require fast, power-efficient translation. Use `.highFidelity` for translations more fluent in the target language, broader language support and immediate availability on Apple Intelligence-enabled devices.
+Set this property to determine which translation models the framework considers when checking language availability. [`lowLatency`](translationsession/strategy/lowlatency.md) checks for traditional translation models that provide faster translations and use less power. [`highFidelity`](translationsession/strategy/highfidelity.md) checks for Apple Intelligence models that provide more fluent translations. When Apple Intelligence is enabled, these models are already downloaded, so translation is immediately available without prompting the person to download languages. On devices without Apple Intelligence, it falls back to the traditional models used by `lowLatency`.
 
 ## See Also
 
 - [init()](languageavailability/init.md)
-  Creates a language availability.
+  Creates an instance to check what languages are available.
 
 
 ---

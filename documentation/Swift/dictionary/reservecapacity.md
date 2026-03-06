@@ -28,7 +28,7 @@ Calling the `reserveCapacity(_:)` method on a dictionary with bridged storage tr
 
 ## Parameters
 
-- `minimumCapacity`: The requested number of key-value pairs to   store.
+- `minimumCapacity`: The requested number of key-value pairs to store.
 
 ## See Also
 

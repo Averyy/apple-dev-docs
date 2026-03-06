@@ -22,12 +22,12 @@ Plug-ins that specify a `command` capability define commands that can run using 
 swift package <verb>
 ```
 
-The package can specify the  used to invoke the command.
+The package can specify the *verb* used to invoke the command.
 
 ## Parameters
 
-- `intent`: The semantic intent of the plug-in; either one of the predefined intents,   or a custom intent.
-- `permissions`: Any permissions needed by the command plug-in. This affects what the   sandbox in which the plug-in is run allows. Some permissions may require   user approval.
+- `intent`: The semantic intent of the plug-in; either one of the predefined intents, or a custom intent.
+- `permissions`: Any permissions needed by the command plug-in. This affects what the sandbox in which the plug-in is run allows. Some permissions may require user approval.
 
 ## See Also
 

@@ -10,7 +10,7 @@ Effectively managing state, the bits of data that keep track of how the app is b
 
 ##### Use an Enumeration to Capture State
 
-Consider an app that requires a user to log into an account. When the app is first opened, the user is unknown, so the state of the app could be called . After the user has registered or logged into an account, the state is . After some time of inactivity, the user’s session may expire, leaving the app in a  state.
+Consider an app that requires a user to log into an account. When the app is first opened, the user is unknown, so the state of the app could be called *unregistered*. After the user has registered or logged into an account, the state is *logged in*. After some time of inactivity, the user’s session may expire, leaving the app in a *session expired* state.
 
 You can use an enumeration to specify the exact states needed for your app. This approach defines an `App` class with a nested `State` enumeration that includes only the specific states you need:
 

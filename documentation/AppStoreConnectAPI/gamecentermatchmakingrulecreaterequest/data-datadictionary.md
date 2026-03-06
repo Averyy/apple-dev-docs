@@ -22,6 +22,12 @@ object GameCenterMatchmakingRuleCreateRequest.Data
 - [object GameCenterMatchmakingRuleCreateRequest.Data.Relationships](gamecentermatchmakingrulecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other objects that you include when creating a rule.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingRuleCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterMatchmakingRuleCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

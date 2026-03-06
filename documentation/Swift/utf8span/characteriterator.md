@@ -63,7 +63,7 @@ countCharacters(string)
 - [func reset(roundingForwardsFrom: Int)](utf8span/characteriterator/reset(roundingforwardsfrom:).md)
   Reset to the nearest character-aligned position `>= i`.
 - [func reset(toUnchecked: Int)](utf8span/characteriterator/reset(tounchecked:).md)
-  Reset this iterator to `codeUnitOffset`, skipping  safety checks.
+  Reset this iterator to `codeUnitOffset`, skipping *all* safety checks.
 - [func skipBack() -> Int](utf8span/characteriterator/skipback.md)
   Move `currentCodeUnitOffset` to the start of the previous `Character`, without constructing it.
 - [func skipBack(by: Int) -> Int](utf8span/characteriterator/skipback(by:).md)

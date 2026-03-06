@@ -14,6 +14,11 @@ The type and ID of a related App Clip Domain Debug Status resource.
 object BuildBundle.Relationships.AppClipDomainDebugStatus.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Clip Domain Debug Statuses resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

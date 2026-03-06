@@ -20,6 +20,13 @@ object Artists.Views.ArtistsLiveAlbumsView
 - [object Artists.Views.ArtistsLiveAlbumsView.Attributes](artists/views-data.dictionary/artistslivealbumsview/attributes-data.dictionary.md)
   Albums associated with the artist and categorized as live performances.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsLiveAlbumsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Albums]) *(required)*: Albums associated with the artist categorized as live performances.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

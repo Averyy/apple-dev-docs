@@ -20,6 +20,11 @@ object AppClipAdvancedExperience.Attributes.Place.DisplayPoint
 - [object AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates](appclipadvancedexperience/attributes-data.dictionary/place-data.dictionary/displaypoint-data.dictionary/coordinates-data.dictionary.md)
   The coordinates for a point of interest or business in Apple Maps.
 
+## Properties
+
+- `coordinates` (AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates): The GPS coordinates of a place in Apple Maps you associate with the Advanced App Clip experience.
+- `source` (string): A string that describes the means by which you captured the data for a display point.
+
 ## See Also
 
 - [object AppClipAdvancedExperience.Attributes.Place.MainAddress](appclipadvancedexperience/attributes-data.dictionary/place-data.dictionary/mainaddress-data.dictionary.md)

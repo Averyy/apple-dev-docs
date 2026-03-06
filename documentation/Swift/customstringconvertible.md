@@ -22,7 +22,7 @@ protocol CustomStringConvertible
 
 #### Overview
 
-Types that conform to the `CustomStringConvertible` protocol can provide their own representation to be used when converting an instance to a string. The `String(describing:)` initializer is the preferred way to convert an instance of  type to a string. If the passed instance conforms to `CustomStringConvertible`, the `String(describing:)` initializer and the `print(_:)` function use the instance’s custom `description` property.
+Types that conform to the `CustomStringConvertible` protocol can provide their own representation to be used when converting an instance to a string. The `String(describing:)` initializer is the preferred way to convert an instance of *any* type to a string. If the passed instance conforms to `CustomStringConvertible`, the `String(describing:)` initializer and the `print(_:)` function use the instance’s custom `description` property.
 
 Accessing a type’s `description` property directly or using `CustomStringConvertible` as a generic constraint is discouraged.
 

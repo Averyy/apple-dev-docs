@@ -28,7 +28,7 @@ MapKit JS calls this method for every `MultiPolygon` object. The framework also 
 ## Parameters
 
 - `itemCollection`: A collection containing associated overlays.
-- `geoJSON`: The original GeoJSON object for the  . It contains an array of geometries.
+- `geoJSON`: The original GeoJSON object for the `MultiPolygon`. It contains an array of geometries.
 
 ## See Also
 

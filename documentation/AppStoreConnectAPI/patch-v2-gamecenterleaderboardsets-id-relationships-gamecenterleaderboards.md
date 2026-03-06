@@ -19,6 +19,14 @@ Update the leaderboards relationship for a specific Game Center leaderboard set.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardSets/{id}/relationships/gameCenterLeaderboards`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center leaderboard set](post-v2-gamecenterleaderboardsets.md)

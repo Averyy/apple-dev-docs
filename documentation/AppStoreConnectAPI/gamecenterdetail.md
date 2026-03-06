@@ -20,6 +20,14 @@ object GameCenterDetail
 - [object GameCenterDetail.Attributes](gamecenterdetail/attributes-data.dictionary.md)
 - [object GameCenterDetail.Relationships](gamecenterdetail/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterDetail.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterDetail.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterDetailCreateRequest](gamecenterdetailcreaterequest.md)

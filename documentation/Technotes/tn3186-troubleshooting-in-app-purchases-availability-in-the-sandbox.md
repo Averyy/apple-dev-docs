@@ -87,7 +87,7 @@ When you edit In-App Purchase information in App Store Connect, it can take up t
 
 #### Revision History
 
--  First published.
+- **2025-04-29** First published.
 
 ## See Also
 

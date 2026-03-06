@@ -24,6 +24,12 @@ For more information on the object that owns these versions, see [`AlternativeDi
 - [object AlternativeDistributionPackage.Relationships.Versions.Data](alternativedistributionpackage/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
   The data structure that represents a version for the relationships of an alternative distribution package resource.
 
+## Properties
+
+- `data` ([AlternativeDistributionPackage.Relationships.Versions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

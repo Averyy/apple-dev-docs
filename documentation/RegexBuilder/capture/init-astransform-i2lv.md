@@ -23,8 +23,8 @@ init<W, C1, NewCapture>(_ component: some RegexComponent, as reference: Referenc
 ## Parameters
 
 - `component`: The regex component to capture.
-- `reference`: The reference to use for anything captured by   .
-- `transform`: A closure that takes the substring matched by    and returns a new value to capture. If    throws an error, matching is abandoned and the error is returned   to the caller.
+- `reference`: The reference to use for anything captured by `component`.
+- `transform`: A closure that takes the substring matched by `component` and returns a new value to capture. If `transform` throws an error, matching is abandoned and the error is returned to the caller.
 
 
 ---

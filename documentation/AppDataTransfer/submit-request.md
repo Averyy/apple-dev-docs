@@ -14,7 +14,54 @@ Request the `app-store` data type to get App Store information and app-install a
 
 ##### Request a One Time Download
 
+**Request**:
+
+```None
+% curl -X POST \
+  -H "Authorization: Bearer [ACCESS_TOKEN]" \
+  -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
+  -H "Content-Type: application/json" \
+  -d '{ "mode": "ONE_TIME" }' \
+  https://appdatatransfer.apple.com/api/transfer/appdata/submit
+```
+
+**Response**:
+
+```None
+{
+  "requestId": "11619695-72C0-4FFD-858A-1E152DCF0838",
+  "status": "in_progress",
+  "statusCheckDelay": 86400
+}
+```
+
 ##### Request a Recurring Download
+
+**Request**:
+
+```None
+% curl -X POST \
+  -H "Authorization: Bearer [ACCESS_TOKEN]" \
+  -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
+  -H "Content-Type: application/json" \
+  -d '{ "mode": "DAILY_30" }' \
+  https://appdatatransfer.apple.com/api/transfer/appdata/submit
+```
+
+**Response**:
+
+```None
+{
+  "parentRequestId": "EABD06C0-9210-47FF-83C4-318CF8520644",
+  "requestId": "7BBBD45D-638B-4DB5-8B02-F23FDB15EDA7",
+  "status": "in_progress",
+  "statusCheckDelay": 86400
+}
+```
+
+## Endpoint
+
+`POST https://appdatatransfer.apple.com/api/transfer/appdata/submit`
 
 ## Request Body
 

@@ -20,6 +20,10 @@ object ReviewSubmissionCreateRequest
 - [object ReviewSubmissionCreateRequest.Data](reviewsubmissioncreaterequest/data-data.dictionary.md)
   The data structure that represents a review submission create request resource.
 
+## Properties
+
+- `data` (ReviewSubmissionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object ReviewSubmission](reviewsubmission.md)

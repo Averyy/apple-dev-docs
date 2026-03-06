@@ -10,7 +10,10 @@ Check whether your app can use ARKit and respect people’s privacy.
 
 People need to know why your app wants to access data from ARKit. Add the following keys to your app’s information property list to provide a user-facing usage description that explains how your app uses the data:
 
-> **Note**: World  — unlike world  — doesn’t require authorization. For more information, see [`Tracking specific points in world space`](tracking-points-in-world-space.md).
+- **[`NSHandsTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHandsTrackingUsageDescription)**: Use this key if your app uses hand tracking.
+- **[`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWorldSensingUsageDescription)**: Use this key if your app uses image tracking, plane detection, or scene reconstruction.
+
+> **Note**: World *tracking* — unlike world *sensing* — doesn’t require authorization. For more information, see [`Tracking specific points in world space`](tracking-points-in-world-space.md).
 
 ##### Choose Between Up Front or As Needed Authorization
 

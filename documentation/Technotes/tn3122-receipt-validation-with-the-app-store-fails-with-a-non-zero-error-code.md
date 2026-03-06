@@ -102,8 +102,8 @@ To validate your receipt in the production environment and limit the content of 
 
 #### Revision History
 
--  Made minor editorial changes.
--  First published.
+- **2022-05-24** Made minor editorial changes.
+- **2022-04-26** First published.
 
 ## See Also
 

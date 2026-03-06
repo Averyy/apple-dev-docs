@@ -36,7 +36,7 @@ let z = UInt32(x)
 
 ## Parameters
 
-- `source`: An integer to convert.   must be representable   in this type.
+- `source`: An integer to convert. `source` must be representable in this type.
 
 
 ---

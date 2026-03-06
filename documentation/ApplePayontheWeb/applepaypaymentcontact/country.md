@@ -17,7 +17,7 @@ DOMString country;
 
 #### Discussion
 
-This is the colloquial name of the country or region, for example, . The [`countryCode`](applepaypaymentcontact/countrycode.md) property contains the code.
+This is the colloquial name of the country or region, for example, *United States*. The [`countryCode`](applepaypaymentcontact/countrycode.md) property contains the code.
 
 ## See Also
 

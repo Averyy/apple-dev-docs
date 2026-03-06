@@ -48,7 +48,7 @@ You can customize the import by implementing a [`GeoJSONDelegate`](geojsondelega
 ## Parameters
 
 - `data`: The original GeoJSON data, either a URL to a GeoJSON file, or a GeoJSON object.
-- `callback`: A callback function or an object that MapKit JS requires if you provide a URL for the   parameter. It’s optional, otherwise.
+- `callback`: A callback function or an object that MapKit JS requires if you provide a URL for the `data` parameter. It’s optional, otherwise.
 
 ## See Also
 

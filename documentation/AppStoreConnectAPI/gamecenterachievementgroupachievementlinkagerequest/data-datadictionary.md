@@ -14,6 +14,11 @@ The data structure that represents a achievement resource.
 object GameCenterAchievementGroupAchievementLinkageRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/relationships/inAppPurchaseAvailability`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

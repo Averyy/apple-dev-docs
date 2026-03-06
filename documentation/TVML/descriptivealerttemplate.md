@@ -32,6 +32,13 @@ The following listing shows the main elements of the `descriptiveAlertTemplate` 
 
 ###### Element Descriptions
 
+- **[`background`](background.md)**: Background elements, such as audio.
+- **[`button`](button.md)**: A button for the alert. A button typically lets the user dismiss the alert or bring up a new template page.
+- **[`description`](description.md)**: The main text for the alert.
+- **[`img`](img.md)**: An image associated with the alert box.
+- **[`row`](row.md)**: A row of buttons.
+- **[`title`](title.md)**: The title for the descriptive alert page.
+
 ##### Example
 
 The following listing shows the TVML for a `descriptiveAlertTemplate` example.

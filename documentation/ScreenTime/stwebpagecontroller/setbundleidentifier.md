@@ -23,7 +23,7 @@ This is only supported for web browsers that have been properly registered with 
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier that can be changed to facilitate web usage   reporting for a parent web browser from one of its helper processes or extensions.
+- `bundleIdentifier`: The bundle identifier that can be changed to facilitate web usage reporting for a parent web browser from one of its helper processes or extensions.
 
 
 ---

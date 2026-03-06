@@ -18,6 +18,12 @@ object InAppPurchaseAvailabilityCreateRequest.Data
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Attributes](inapppurchaseavailabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseAvailabilityCreateRequest.Data.Attributes) *(required)*
+- `relationships` (InAppPurchaseAvailabilityCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -20,6 +20,10 @@ object AppUpdateRequest
 - [object AppUpdateRequest.Data](appupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object App](app.md)

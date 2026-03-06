@@ -30,6 +30,16 @@ The `DecodedRealtimeRequestBody` provides information you can use to select a re
 
 For more information, see [`Responding to real-time retention messaging requests`](responding-to-realtime-retention-messaging-requests.md).
 
+## Properties
+
+- `originalTransactionId` (originalTransactionId): **(Required)** The original transaction identifier of the customer’s subscription.
+- `appAppleId` (appAppleId): **(Required)** The unique identifier of the app in the App Store.
+- `productId` (productId): **(Required)** The unique identifier of the auto-renewable subscription.
+- `userLocale` (locale): **(Required)** The device’s locale.
+- `requestIdentifier` (requestIdentifier): **(Required)** A UUID the App Store server creates to uniquely identify each request.
+- `environment` (environment): **(Required)** The server environment, either sandbox or production.
+- `signedDate` (signedDate): **(Required)** The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
+
 ## See Also
 
 - [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)

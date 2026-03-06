@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/webhooks/{id}/relationships/deliveries`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read the deliveries for a webhook](get-v1-webhooks-_id_-deliveries.md)

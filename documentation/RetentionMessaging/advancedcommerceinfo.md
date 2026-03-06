@@ -30,6 +30,11 @@ If you don’t have access to the Advanced Commerce API (ACA), use the `alternat
 
 For more information, see [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
 
+## Properties
+
+- `messageIdentifier` (messageIdentifier): The identifier of the message to display to the customer, along with the offer or switch-plan recommendation provided in `advancedCommerceData`.
+- `advancedCommerceData` (advancedCommerceData): A Base64-encoded JSON object which contains a JWS describing an offer or switch-plan recommendation.
+
 ## See Also
 
 - [object message](message.md)

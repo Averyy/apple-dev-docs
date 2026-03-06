@@ -17,6 +17,12 @@ object AppBetaAppLocalizationsLinkagesResponse
 ### Dictionaries
 - [object AppBetaAppLocalizationsLinkagesResponse.Data](appbetaapplocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppBetaAppLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

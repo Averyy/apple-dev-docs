@@ -36,8 +36,8 @@ The JSON file should contain a sequence of objects where each object contains a 
 ## Parameters
 
 - `url`: A URL to a JSON file.
-- `columns`: An array of column names; Set to   to use every column in the JSON file.
-- `types`: A dictionary of column names and their JSON types.   The data frame infers the types for column names that aren’t in the dictionary.
+- `columns`: An array of column names; Set to `nil` to use every column in the JSON file.
+- `types`: A dictionary of column names and their JSON types. The data frame infers the types for column names that aren’t in the dictionary.
 - `options`: The options that instruct how the data frame reads the JSON file.
 
 ## See Also

@@ -20,6 +20,14 @@ object InAppPurchaseV2
 - [type InAppPurchaseState](inapppurchasestate.md)
 - [object InAppPurchaseV2.Relationships](inapppurchasev2/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

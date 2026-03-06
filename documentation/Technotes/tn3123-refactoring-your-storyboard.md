@@ -71,7 +71,7 @@ If you choose to refactor your storyboard yourself, for example if one [`UIViewC
 
 #### Load Storyboards Programmatically
 
-Segues connecting two view controller scenes within the same storyboard load the view controller automatically. When a single storyboard is refactored into separate storyboards, storyboard references load them automatically as well. You can, however, load view controller scenes manually using code. You use  to do that. Storyboard instances come in two flavors: [`NSStoryboard`](https://developer.apple.com/documentation/AppKit/NSStoryboard) for macOS, and [`UIStoryboard`](https://developer.apple.com/documentation/UIKit/UIStoryboard) for iOS. These APIs on both platforms are similar.
+Segues connecting two view controller scenes within the same storyboard load the view controller automatically. When a single storyboard is refactored into separate storyboards, storyboard references load them automatically as well. You can, however, load view controller scenes manually using code. You use *storyboard instances* to do that. Storyboard instances come in two flavors: [`NSStoryboard`](https://developer.apple.com/documentation/AppKit/NSStoryboard) for macOS, and [`UIStoryboard`](https://developer.apple.com/documentation/UIKit/UIStoryboard) for iOS. These APIs on both platforms are similar.
 
 #### Load and Open an Nswindowcontroller Programmatically with Macos
 
@@ -144,7 +144,7 @@ class DetailViewController: UIViewController { }
 
 #### Revision History
 
--  First published.
+- **2022-03-29** First published.
 
 ## See Also
 

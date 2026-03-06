@@ -20,6 +20,13 @@ object GameCenterChallengeVersion.Relationships
 - [object GameCenterChallengeVersion.Relationships.Localizations](gamecenterchallengeversion/relationships-data.dictionary/localizations-data.dictionary.md)
 - [object GameCenterChallengeVersion.Relationships.Releases](gamecenterchallengeversion/relationships-data.dictionary/releases-data.dictionary.md)
 
+## Properties
+
+- `challenge` (GameCenterChallengeVersion.Relationships.Challenge)
+- `defaultImage` (GameCenterChallengeVersion.Relationships.DefaultImage)
+- `localizations` (GameCenterChallengeVersion.Relationships.Localizations)
+- `releases` (GameCenterChallengeVersion.Relationships.Releases)
+
 
 ---
 

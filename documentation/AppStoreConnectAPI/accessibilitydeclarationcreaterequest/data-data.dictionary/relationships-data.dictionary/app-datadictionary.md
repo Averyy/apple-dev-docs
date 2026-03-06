@@ -20,6 +20,10 @@ object AccessibilityDeclarationCreateRequest.Data.Relationships.App
 - [object AccessibilityDeclarationCreateRequest.Data.Relationships.App.Data](accessibilitydeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of the app resource that you relate with the accessibility declaration resource you create.
 
+## Properties
+
+- `data` (AccessibilityDeclarationCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

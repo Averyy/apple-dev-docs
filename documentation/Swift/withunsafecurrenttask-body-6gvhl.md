@@ -32,7 +32,7 @@ Don’t store an unsafe task reference for use outside this method’s closure. 
 
 ## Parameters
 
-- `body`: A closure that takes an   parameter.   If   has a return value,   that value is also used as the return value   for the   function.
+- `body`: A closure that takes an `UnsafeCurrentTask` parameter. If `body` has a return value, that value is also used as the return value for the `withUnsafeCurrentTask(body:)` function.
 
 ## See Also
 

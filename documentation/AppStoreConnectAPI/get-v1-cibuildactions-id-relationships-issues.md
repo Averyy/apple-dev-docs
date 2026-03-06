@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/{id}/relationships/issues`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read Build Action Information](get-v1-cibuildactions-_id_.md)

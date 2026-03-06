@@ -29,7 +29,7 @@ This initializer does not try to repair ill-formed UTF-8 code unit sequences. If
 
 ## Parameters
 
-- `nullTerminatedUTF8`:    An array containing a null-terminated sequence of UTF-8 code units.
+- `nullTerminatedUTF8`:  An array containing a null-terminated sequence of UTF-8 code units.
 
 ## See Also
 

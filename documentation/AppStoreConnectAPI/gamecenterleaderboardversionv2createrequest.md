@@ -24,6 +24,10 @@ object GameCenterLeaderboardVersionV2CreateRequest
 - [object GameCenterLeaderboardVersionV2CreateRequest.Data](gamecenterleaderboardversionv2createrequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard version create request resource.
 
+## Properties
+
+- `data` (GameCenterLeaderboardVersionV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardVersionV2](gamecenterleaderboardversionv2.md)

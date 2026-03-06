@@ -14,6 +14,12 @@ A response that contains a single App Clip Header Images resource.
 object AppClipHeaderImageResponse
 ```
 
+## Properties
+
+- `data` (AppClipHeaderImage) *(required)*: The resource data.
+- `included` ([AppClipDefaultExperienceLocalization]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipHeaderImage](appclipheaderimage.md)

@@ -23,7 +23,7 @@ nonisolated init(id: String? = nil, title: some StringProtocol, perform handler:
 
 ## Parameters
 
-- `id`: An optional identifier associated with the action. If you don’t specify a value, the system assigns the action’s   to this value.
+- `id`: An optional identifier associated with the action. If you don’t specify a value, the system assigns the action’s `index` to this value.
 - `title`: A string that describes the purpose of the tip action.
 - `handler`: The function the system calls when the action triggers.
 

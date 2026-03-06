@@ -28,6 +28,13 @@ The `appData` object is part of the [`responseBodyV2DecodedPayload`](responsebod
 - [type JWSAppTransaction](jwsapptransaction.md)
   App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
+## Properties
+
+- `appAppleId` (appAppleId): The unique identifier of the app that the notification applies to. This property is available for apps that users download from the App Store. It isn’t present in the sandbox environment.
+- `bundleId` (bundleId): The bundle identifier of the app.
+- `environment` (environment): The server environment that the notification applies to, either `sandbox` or `production`.
+- `signedAppTransactionInfo` (JWSAppTransaction): App transaction information signed by the App Store, in JSON Web Signature (JWS) format.
+
 ## See Also
 
 - [object summary](summary.md)

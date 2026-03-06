@@ -12,6 +12,13 @@
 object AppStoreVersionExperimentsResponse
 ```
 
+## Properties
+
+- `data` ([AppStoreVersionExperiment]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)

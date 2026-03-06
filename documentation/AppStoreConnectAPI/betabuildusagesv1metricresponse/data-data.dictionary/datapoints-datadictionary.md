@@ -17,6 +17,12 @@ object BetaBuildUsagesV1MetricResponse.Data.DataPoints
 ### Objects
 - [object BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values](betabuildusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
 
+## Properties
+
+- `end` (date-time)
+- `start` (date-time)
+- `values` (BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values)
+
 
 ---
 

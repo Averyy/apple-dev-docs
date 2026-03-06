@@ -14,6 +14,11 @@ Attributes that describe a challenge image resource.
 object GameCenterChallengeImageCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 
 ---
 

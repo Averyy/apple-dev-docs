@@ -14,6 +14,11 @@ Attributes that describe an alternative distribution domain create resource.
 object AlternativeDistributionDomainCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `domain` (string) *(required)*
+- `referenceName` (string) *(required)*
+
 
 ---
 

@@ -27,7 +27,7 @@ Alternatively, your app can display custom graphics during the scanning process 
 
 ##### Access the Captured Results
 
-The framework outputs a scan as  data, which makes it easy for your app to modify the scanned room’s individual components. RoomPlan also provides the results in various Universal Scene Description (USD) formats. With these assets, your app can implement custom features, such as the following:
+The framework outputs a scan as *parametric* data, which makes it easy for your app to modify the scanned room’s individual components. RoomPlan also provides the results in various Universal Scene Description (USD) formats. With these assets, your app can implement custom features, such as the following:
 
 - Estimate the size of particular areas of a room.
 - Preview virtual furniture from a catalog in a variety of styles and positions.

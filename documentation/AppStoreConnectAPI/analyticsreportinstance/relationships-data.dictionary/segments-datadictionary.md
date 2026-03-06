@@ -12,6 +12,10 @@
 object AnalyticsReportInstance.Relationships.Segments
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

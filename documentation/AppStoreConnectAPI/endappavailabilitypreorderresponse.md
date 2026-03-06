@@ -14,6 +14,11 @@ A response that contains a single end app availability resource.
 object EndAppAvailabilityPreOrderResponse
 ```
 
+## Properties
+
+- `data` (EndAppAvailabilityPreOrder) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

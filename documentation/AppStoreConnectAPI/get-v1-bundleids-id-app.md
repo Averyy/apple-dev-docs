@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/bundleIds/{id}/app`
+
+## Parameters
+
+- `fields[apps]` ([string])
+
 ## See Also
 
 - [List All Profiles for a Bundle ID](get-v1-bundleids-_id_-profiles.md)

@@ -22,7 +22,7 @@ init<Bytes>(compactRepresentation: Bytes) throws where Bytes : ContiguousBytes
 
 ## Parameters
 
-- `compactRepresentation`: A compact representation of the key   as a collection of contiguous bytes.
+- `compactRepresentation`: A compact representation of the key as a collection of contiguous bytes.
 
 ## See Also
 

@@ -47,7 +47,7 @@ invalidUTF8.withUnsafeBufferPointer { ptr in
 
 ## Parameters
 
-- `cString`:    A pointer to a null-terminated sequence of UTF-8 code units.
+- `cString`:  A pointer to a null-terminated sequence of UTF-8 code units.
 
 ## See Also
 

@@ -17,6 +17,11 @@ object GameCenterActivityVersionDefaultImageLinkageResponse
 ### Dictionaries
 - [object GameCenterActivityVersionDefaultImageLinkageResponse.Data](gamecenteractivityversiondefaultimagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterActivityVersionDefaultImageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityVersion](gamecenteractivityversion.md)

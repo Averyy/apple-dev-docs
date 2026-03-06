@@ -20,6 +20,13 @@ object Artists.Views.ArtistsTopSongsView
 - [object Artists.Views.ArtistsTopSongsView.Attributes](artists/views-data.dictionary/artiststopsongsview/attributes-data.dictionary.md)
   Songs associated with the artist based on popularity in the current storefront.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsTopSongsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Songs]) *(required)*: Songs associated with the artist based on popularity in the current storefront.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

@@ -25,7 +25,7 @@ If needed, the manager registers the [`DefaultContactProviderDomain`](defaultcon
 
 ## Parameters
 
-- `domainIdentifier`: A string to identify a domain of contacts to provide. Defaults to  .
+- `domainIdentifier`: A string to identify a domain of contacts to provide. Defaults to [`identifier`](defaultcontactproviderdomain/identifier.md).
 
 
 ---

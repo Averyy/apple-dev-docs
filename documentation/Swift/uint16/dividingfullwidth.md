@@ -30,7 +30,7 @@ The resulting quotient must be representable within the bounds of the type. If t
 
 ## Parameters
 
-- `dividend`: A tuple containing the high and low parts of a   double-width integer. The   component of the value carries the   sign, if the type is signed.
+- `dividend`: A tuple containing the high and low parts of a double-width integer. The `high` component of the value carries the sign, if the type is signed.
 
 
 ---

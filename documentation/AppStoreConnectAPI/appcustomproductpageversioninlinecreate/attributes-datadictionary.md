@@ -12,6 +12,10 @@
 object AppCustomProductPageVersionInlineCreate.Attributes
 ```
 
+## Properties
+
+- `deepLink` (uri)
+
 ## See Also
 
 - [object AppCustomProductPageVersionInlineCreate.Relationships](appcustomproductpageversioninlinecreate/relationships-data.dictionary.md)

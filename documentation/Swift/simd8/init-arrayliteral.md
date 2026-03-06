@@ -22,7 +22,7 @@ init(arrayLiteral scalars: Self.Scalar...)
 
 ## Parameters
 
-- `scalars`: The elements to use in the vector.   must   have the same number of elements as the vector type.
+- `scalars`: The elements to use in the vector. `scalars` must have the same number of elements as the vector type.
 
 
 ---

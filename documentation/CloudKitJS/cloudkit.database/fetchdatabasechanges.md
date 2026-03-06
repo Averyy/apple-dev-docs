@@ -39,7 +39,9 @@ database.fetchDatabaseChanges().then(function(response) {
 
 ## Parameters
 
-- `options`: Options to fetch database changes. This   object has one key:
+- `options`: Options to fetch database changes. This `Dictionary` object has one key: | Key | Description |
+| --- | --- |
+| `syncToken` | Identifies a point in the database’s change history. The first time you fetch changes, omit this key and if `moreComing` is `true` in the response, use the `syncToken` in the response in the next request until `moreComing` is `false`. |
 
 ## See Also
 

@@ -27,7 +27,7 @@ func quantiles<N>(_ columnID: ColumnID<N>, quantile: N, order: Order? = nil) -> 
 ## Parameters
 
 - `columnID`: A column identifier.
-- `quantile`: A number between 0.0 and 1.0 that represents the percentage of the data that lies below   the resulting value.
+- `quantile`: A number between 0.0 and 1.0 that represents the percentage of the data that lies below the resulting value.
 - `order`: A sorting order the method uses to sort the data frame by its third quartile column.
 
 

@@ -18,6 +18,11 @@ object GameCenterLeaderboardSetLocalization.Relationships
 - [object GameCenterLeaderboardSetLocalization.Relationships.GameCenterLeaderboardSet](gamecenterleaderboardsetlocalization/relationships-data.dictionary/gamecenterleaderboardset-data.dictionary.md)
 - [object GameCenterLeaderboardSetLocalization.Relationships.GameCenterLeaderboardSetImage](gamecenterleaderboardsetlocalization/relationships-data.dictionary/gamecenterleaderboardsetimage-data.dictionary.md)
 
+## Properties
+
+- `gameCenterLeaderboardSet` (GameCenterLeaderboardSetLocalization.Relationships.GameCenterLeaderboardSet)
+- `gameCenterLeaderboardSetImage` (GameCenterLeaderboardSetLocalization.Relationships.GameCenterLeaderboardSetImage)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetLocalization.Attributes](gamecenterleaderboardsetlocalization/attributes-data.dictionary.md)

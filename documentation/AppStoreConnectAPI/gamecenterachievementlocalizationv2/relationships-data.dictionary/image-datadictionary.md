@@ -24,6 +24,11 @@ object GameCenterAchievementLocalizationV2.Relationships.Image
 ### Dictionaries - generated
 - [object GameCenterAchievementLocalizationV2.Relationships.Image.Data](gamecenterachievementlocalizationv2/relationships-data.dictionary/image-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementLocalizationV2.Relationships.Image.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2.Relationships.Version](gamecenterachievementlocalizationv2/relationships-data.dictionary/version-data.dictionary.md)

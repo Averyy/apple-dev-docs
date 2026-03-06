@@ -30,7 +30,7 @@ Use this method if all your data fits into a single data instance. If the data y
 
 ## Parameters
 
-- `data`: The data whose digest the hash function should compute. This can   be any type that conforms to   ,   like   or an   array of    instances.
+- `data`: The data whose digest the hash function should compute. This can be any type that conforms to [`DataProtocol`](https://developer.apple.com/documentation/Foundation/DataProtocol), like [`Data`](https://developer.apple.com/documentation/Foundation/Data) or an array of [`UInt8`](https://developer.apple.com/documentation/Swift/UInt8) instances.
 
 
 ---

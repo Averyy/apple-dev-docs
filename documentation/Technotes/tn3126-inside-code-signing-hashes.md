@@ -21,9 +21,9 @@ The examples in this technote are taken from macOS, but these concepts apply to 
 
 ##### About This Technote Series
 
-Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The  technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
+Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
 
-> ❗ **Important**: The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Code Signature Storage
 
@@ -82,13 +82,13 @@ For more information about the tools used in these examples, read their man page
 
 #### Code Directory
 
-The central concept in a code signature is the .  This is a data structure that holds all of the info about the code that was signed.  It’s this data structure that’s signed as part of the signing process.  Hashes within this data structure seal the executable pages, resources, and metadata of the code.
+The central concept in a code signature is the *code directory*.  This is a data structure that holds all of the info about the code that was signed.  It’s this data structure that’s signed as part of the signing process.  Hashes within this data structure seal the executable pages, resources, and metadata of the code.
 
 > **Note**: The final code signature uses Cryptographic Message Syntax.  To learn more about this implementation detail, see [`TN3161: Inside Code Signing: Certificates`](tn3161-inside-code-signing-certificates.md).
 
 In a universal binary, each architecture is signed independently, each with its own code directory.
 
-Hashing a code directory results in a , or .  This value uniquely identifies the code being signed.  It crops up in a variety of places, most notably [`notarization`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/703/).  A notarized ticket is a set of cdhash values, signed by the notary service to confirm that it has checked that code for malicious components.
+Hashing a code directory results in a *code directory hash*, or *cdhash*.  This value uniquely identifies the code being signed.  It crops up in a variety of places, most notably [`notarization`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/703/).  A notarized ticket is a set of cdhash values, signed by the notary service to confirm that it has checked that code for malicious components.
 
 The code may have multiple code directories, each associated with a different hash algorithm.  This hash algorithm is used both to seal the code directory itself and to seal the executable pages, resources, and metadata of the code.  This approach allows the code to run more securely on modern systems while maintaining compatibility with legacy systems that only support legacy hashing.  The detailed mechanics of that are beyond the scope of this technote.
 
@@ -141,7 +141,7 @@ CDHash=ff19a91b272a49d1a0f16ee54c672da60f0e116f
 
 #### Per Page Hashes
 
-Within a code directory there are a set of .  For a summary, look at the `CodeDirectory` property:
+Within a code directory there are a set of *hash slots*.  For a summary, look at the `CodeDirectory` property:
 
 ```shell
 % codesign --display -vvv "AppWithTool.app"             
@@ -186,7 +186,7 @@ The non-negative slots are for per-page hashes: 0 is the hash for the first page
 
 This per-page architecture allows the kernel to check each page as it’s loaded into memory.  If a process takes a page fault on a memory mapped file that’s code signed then, as part of satisfying that fault, the kernel may choose to verify the hash of the page’s contents.  This allows the system to run a code-signed executable and check its code signature lazily (in the computer science sense of that word).
 
-macOS doesn’t  check code as it’s paged in.  One key feature of the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime) is that it opts the process into this checking by default.  The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) opts you out of this and other security features.  Don’t do that!
+macOS doesn’t *always* check code as it’s paged in.  One key feature of the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime) is that it opts the process into this checking by default.  The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) opts you out of this and other security features.  Don’t do that!
 
 > **Note**: The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) only has this effect on Intel code. For Apple silicon code, this entitlement leaves page protection enabled, making it equivalent to the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-unsigned-executable-memory).
 
@@ -214,6 +214,8 @@ e3fc08cfb2a658bc588ac603f8bfc04a54a62f5893d586f710f3005a5a763ad2 …
 The `Info.plist` hash matches the value in its hash slot.  Neat-o!
 
 Now consider this advice from [`Using the latest code signature format`](https://developer.apple.com/documentation/Xcode/using-the-latest-code-signature-format):
+
+*If -5 contains a value and -7 contains a zero value, or is not present, you need to re-sign your app to include the new DER entitlements.*
 
 You should now have a better handle on this diagnostic.  Slot -5 holds the hash for the legacy property list entitlements, while slot -7 holds the hash for the new-style DER-encoded entitlements.  If you have an iOS app whose signature has an entry in -5 but no entry in -7, then it has entitlements but it’s missing the new-style DER-encoded entitlements and you must re-sign it to be compatible with iOS 15.
 
@@ -350,10 +352,10 @@ For more information about code signing requirements, see [`TN3127: Inside Code 
 
 #### Revision History
 
--  Made minor editorial changes.
--  Made minor editorial changes.
--  Republished as TN3126.  Reworked the examples to fix bugs and make them easier to reproduce at your desk.  Also made significant editorial changes.
--  First published as “A Peek Behind the Code Signing Curtain” on Apple Developer Forums.
+- **2024-02-06** Made minor editorial changes.
+- **2022-05-24** Made minor editorial changes.
+- **2022-05-03** Republished as TN3126.  Reworked the examples to fix bugs and make them easier to reproduce at your desk.  Also made significant editorial changes.
+- **2022-03-14** First published as “A Peek Behind the Code Signing Curtain” on Apple Developer Forums.
 
 ## See Also
 

@@ -8,6 +8,14 @@ Deactivate a batch of custom offer codes for an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodeCustomCodes/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create Custom Offer Codes](post-v1-subscriptionoffercodecustomcodes.md)

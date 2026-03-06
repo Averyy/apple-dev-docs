@@ -20,6 +20,13 @@ object Artists.Views.ArtistsLatestReleaseView
 - [object Artists.Views.ArtistsLatestReleaseView.Attributes](artists/views-data.dictionary/artistslatestreleaseview/attributes-data.dictionary.md)
   The latest release for the artist determined to still be recent by the Apple Music Catalog.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsLatestReleaseView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Albums]) *(required)*: The latest release for the artist determined to still be recent by the Apple Music Catalog.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

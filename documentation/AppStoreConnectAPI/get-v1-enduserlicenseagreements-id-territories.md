@@ -8,6 +8,15 @@ List all the App Store territories to which a specific custom app license agreem
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/{id}/territories`
+
+## Parameters
+
+- `fields[territories]` ([string])
+- `limit` (integer): Number of resources to return.
+
 ## See Also
 
 - [List Territories](get-v1-territories.md)

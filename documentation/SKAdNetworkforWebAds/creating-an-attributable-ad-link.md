@@ -25,6 +25,10 @@ attributionSourceNonce="t8naKxXHTzuTJhNfljADPQ">
 
 Provide the following values to retrieve the full [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) attribution information when a person clicks the ad:
 
+- **`{itunes_item_id}`**: The App Store ID of the app that the ad impression advertises.
+- **`attributionDestination`**: The effective top-level domain and one more preceding domain component (eTLD+1) representation of the ad network that seeks ad attribution. This value needs to match the `source_domain` value in the request and response for [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md).
+- **`attributionSourceNonce`**: A Base64URL-encoded representation of a one-time UUID value that you generate for each ad impression.
+
 The `attributionSourceNonce` in a web ad link, the `source_nonce` in an [`AdImpressionRequest`](adimpressionrequest.md), and the `nonce` in an [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
 
 To generate an `attributionSourceNonce` for a web ad, Base64URL-encode the raw bytes of the UUID. Don’t encode a string representation of the UUID or lowercase the encoded UUID. The device uses the same encoding as `attributionSourceNonce` for the `source_nonce` value in the [`AdImpressionRequest`](adimpressionrequest.md). However, you use the dash-separated string representation of the UUID for the `nonce` value in an [`AdImpressionResponse`](adimpressionresponse.md).

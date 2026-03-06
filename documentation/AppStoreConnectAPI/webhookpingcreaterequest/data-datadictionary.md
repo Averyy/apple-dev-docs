@@ -17,6 +17,11 @@ object WebhookPingCreateRequest.Data
 ### Dictionaries
 - [object WebhookPingCreateRequest.Data.Relationships](webhookpingcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (WebhookPingCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

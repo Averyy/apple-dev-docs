@@ -14,6 +14,12 @@ A response that contains a single background asset version resource.
 object BackgroundAssetVersionResponse
 ```
 
+## Properties
+
+- `data` (BackgroundAssetVersion) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

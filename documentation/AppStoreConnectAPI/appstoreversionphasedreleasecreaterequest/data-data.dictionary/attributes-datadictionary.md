@@ -14,6 +14,10 @@ Attributes that you set that describe the new resource.
 object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `phasedReleaseState` (PhasedReleaseState)
+
 ## See Also
 
 - [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships](appstoreversionphasedreleasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

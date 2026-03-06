@@ -20,6 +20,14 @@ object SemanticTagType.EventDateInfo
 
 > **Note**:  The time zone identifiers come from the [`IANA time zone database`](https://developer.apple.comhttps://www.iana.org/time-zones).
 
+## Properties
+
+- `date` (ISO 8601 date as string): The date.
+- `ignoreTimeComponents` (boolean): A Boolean value that indicates whether the system ignores the time components of the date.
+- `timeZone` (Time zone database identifier as string): The time zone to display in the date.
+- `unannounced` (boolean): A Boolean value that indicates whether the date of the event is announced.
+- `undetermined` (boolean): A Boolean value that indicates whether the date of the event is determined.
+
 ## See Also
 
 - [object SemanticTagType.CurrencyAmount](semantictagtype/currencyamount-data.dictionary.md)

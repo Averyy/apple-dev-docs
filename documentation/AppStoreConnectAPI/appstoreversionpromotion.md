@@ -12,6 +12,12 @@
 object AppStoreVersionPromotion
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPromotionCreateRequest](appstoreversionpromotioncreaterequest.md)

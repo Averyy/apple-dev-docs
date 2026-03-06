@@ -18,6 +18,17 @@ Examples of recoverable playback failures include:
 - The client is unable to acquire a content key for a protected asset.
 - The number of items in the queue segment exceeds the configured maximum.
 
+## Endpoint
+
+`POST https://cloudextension-testservice.local/api/queues/contentPlaybackFailure`
+
+## Parameters
+
+- `Accept-Language` (string): The client’s current user interface language. If possible, respond with localized content for this language.
+- `User-Agent` (string) *(required)*: The client’s extension protocol. This is an RFC 7231-compliant string that contains the product name `AppleCloudExtension` and the version of the SiriKit extension library that’s running on the client.
+- `x-applecloudextension-retry-count` (uint32): The number of previous requests from the client. The client omits this header on the first attempt.
+- `x-applecloudextension-session-id` (string) *(required)*: A session identifier to pair each request and response. Respond to requests with the value the client provides.
+
 ## Request Body
 
 A JSON object that describes the playback failure, the state of the current queue, and the constraints to apply to the recovery queue.

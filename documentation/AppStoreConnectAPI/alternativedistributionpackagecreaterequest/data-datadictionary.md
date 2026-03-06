@@ -17,6 +17,11 @@ object AlternativeDistributionPackageCreateRequest.Data
 ### Objects
 - [object AlternativeDistributionPackageCreateRequest.Data.Relationships](alternativedistributionpackagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (AlternativeDistributionPackageCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

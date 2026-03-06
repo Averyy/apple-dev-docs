@@ -22,6 +22,14 @@ object BetaGroup
 - [object BetaGroup.Relationships](betagroup/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BetaGroup.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `relationships` (BetaGroup.Relationships): Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+
 ## See Also
 
 - [object BetaGroupResponse](betagroupresponse.md)

@@ -12,6 +12,20 @@ Get a list of deliveries for a specific webhook configuration.
 
 - [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/webhooks/{id}/deliveries`
+
+## Parameters
+
+- `fields[webhookDeliveries]` ([string])
+- `fields[webhookEvents]` ([string])
+- `filter[createdDateGreaterThanOrEqualTo]` ([string])
+- `filter[createdDateLessThan]` ([string])
+- `filter[deliveryState]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [GET /v1/webhooks/{id}/relationships/deliveries](get-v1-webhooks-_id_-relationships-deliveries.md)

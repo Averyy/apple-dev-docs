@@ -17,6 +17,11 @@ object CiWorkflowRepositoryLinkageResponse
 ### Dictionaries
 - [object CiWorkflowRepositoryLinkageResponse.Data](ciworkflowrepositorylinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (CiWorkflowRepositoryLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

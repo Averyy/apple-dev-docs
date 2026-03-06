@@ -20,6 +20,10 @@ object AppClipHeaderImage.Relationships.AppClipDefaultExperienceLocalization
 - [object AppClipHeaderImage.Relationships.AppClipDefaultExperienceLocalization.Data](appclipheaderimage/relationships-data.dictionary/appclipdefaultexperiencelocalization-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Default App Clip Experience Localizations resource.
 
+## Properties
+
+- `data` (AppClipHeaderImage.Relationships.AppClipDefaultExperienceLocalization.Data): The ID and type of the related Default App Clip Experience Localizations resource.
+
 
 ---
 

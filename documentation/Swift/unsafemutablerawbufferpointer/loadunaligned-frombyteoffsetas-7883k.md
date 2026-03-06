@@ -39,8 +39,8 @@ The memory to read for the new instance must not extend beyond the buffer pointe
 
 ## Parameters
 
-- `offset`: The offset, in bytes, into the buffer pointer’s memory at   which to begin reading data for the new instance. The default is zero.
-- `type`: The type to use for the newly constructed instance. The memory   must be initialized to a value of a type that is layout compatible   with  .
+- `offset`: The offset, in bytes, into the buffer pointer’s memory at which to begin reading data for the new instance. The default is zero.
+- `type`: The type to use for the newly constructed instance. The memory must be initialized to a value of a type that is layout compatible with `type`.
 
 
 ---

@@ -14,6 +14,11 @@ An error the API returns if the service can’t find the specified test run.
 object PerformanceTestRunNotFoundError
 ```
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

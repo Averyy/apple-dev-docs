@@ -18,6 +18,11 @@ object BetaFeedbackScreenshotSubmission.Relationships
 - [object BetaFeedbackScreenshotSubmission.Relationships.Build](betafeedbackscreenshotsubmission/relationships-data.dictionary/build-data.dictionary.md)
 - [object BetaFeedbackScreenshotSubmission.Relationships.Tester](betafeedbackscreenshotsubmission/relationships-data.dictionary/tester-data.dictionary.md)
 
+## Properties
+
+- `build` (BetaFeedbackScreenshotSubmission.Relationships.Build)
+- `tester` (BetaFeedbackScreenshotSubmission.Relationships.Tester)
+
 
 ---
 

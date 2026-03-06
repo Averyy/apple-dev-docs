@@ -19,6 +19,13 @@ object RecurringPaymentDetails
 - [object RecurringPaymentDetails.ScheduledPayments](recurringpaymentdetails/scheduledpayments-data.dictionary.md)
   Future occurrences of the recurring payment.
 
+## Properties
+
+- `endsAfterLastPayment` (boolean): A flag that indicates whether the recurring payment ends after the last scheduled payment. The default value is `false`. Set value to `true` for installments that include all payments of the plan in `scheduledPayments`.
+- `interval` (RecurringPaymentDetails.Interval) *(required)*: The payment interval.
+- `recurringPaymentType` (string) *(required)*: The recurring payment’s type.
+- `scheduledPayments` ([RecurringPaymentDetails.ScheduledPayments]): Future occurrences of the recurring payment. For installments, include all payments of the plan.
+
 ## See Also
 
 - [object AutomaticReloadPaymentDetails](automaticreloadpaymentdetails.md)

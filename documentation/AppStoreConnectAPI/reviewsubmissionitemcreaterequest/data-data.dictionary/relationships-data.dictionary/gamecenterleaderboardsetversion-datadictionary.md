@@ -17,6 +17,10 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboar
 ### Dictionaries
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion.Data](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion.Data)
+
 
 ---
 

@@ -18,6 +18,14 @@ object InAppPurchaseAppStoreReviewScreenshot
 - [object InAppPurchaseAppStoreReviewScreenshot.Attributes](inapppurchaseappstorereviewscreenshot/attributes-data.dictionary.md)
 - [object InAppPurchaseAppStoreReviewScreenshot.Relationships](inapppurchaseappstorereviewscreenshot/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseAppStoreReviewScreenshot.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseAppStoreReviewScreenshot.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshotCreateRequest](inapppurchaseappstorereviewscreenshotcreaterequest.md)

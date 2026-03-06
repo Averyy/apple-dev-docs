@@ -34,7 +34,7 @@ The following example shows the `options` parameter for a polygon overlay:
 
 ## Parameters
 
-- `points`: The points in the polygon as an array of arrays of  , or an array of  . For the latter, MapKit JS autowraps the array with an enclosing array.
+- `points`: The points in the polygon as an array of arrays of [`Coordinate`](coordinate.md), or an array of [`Coordinate`](coordinate.md). For the latter, MapKit JS autowraps the array with an enclosing array.
 - `options`: An optional object literal of options for initializing the polygon.
 
 ## See Also

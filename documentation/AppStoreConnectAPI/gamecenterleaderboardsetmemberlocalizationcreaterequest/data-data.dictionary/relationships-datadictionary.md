@@ -18,6 +18,11 @@ object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationship
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboard](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboard-data.dictionary.md)
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboardSet](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardset-data.dictionary.md)
 
+## Properties
+
+- `gameCenterLeaderboard` (GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboard) *(required)*
+- `gameCenterLeaderboardSet` (GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboardSet) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

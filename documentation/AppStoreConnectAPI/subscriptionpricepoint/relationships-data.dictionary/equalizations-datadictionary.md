@@ -12,6 +12,10 @@
 object SubscriptionPricePoint.Relationships.Equalizations
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

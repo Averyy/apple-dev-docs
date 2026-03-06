@@ -20,6 +20,35 @@ string CapabilityType
 
 #### Possible Vaules
 
+- **`ICLOUD`**: 
+- **`IN_APP_PURCHASE`**: 
+- **`GAME_CENTER`**: 
+- **`PUSH_NOTIFICATIONS`**: 
+- **`WALLET`**: 
+- **`INTER_APP_AUDIO`**: 
+- **`MAPS`**: 
+- **`ASSOCIATED_DOMAINS`**: 
+- **`PERSONAL_VPN`**: 
+- **`APP_GROUPS`**: 
+- **`HEALTHKIT`**: 
+- **`HOMEKIT`**: 
+- **`WIRELESS_ACCESSORY_CONFIGURATION`**: 
+- **`APPLE_PAY`**: 
+- **`DATA_PROTECTION`**: 
+- **`SIRIKIT`**: 
+- **`NETWORK_EXTENSIONS`**: 
+- **`MULTIPATH`**: 
+- **`HOT_SPOT`**: 
+- **`NFC_TAG_READING`**: 
+- **`CLASSKIT`**: 
+- **`AUTOFILL_CREDENTIAL_PROVIDER`**: 
+- **`ACCESS_WIFI_INFORMATION`**: 
+- **`NETWORK_CUSTOM_PROTOCOL`**: 
+- **`COREMEDIA_HLS_LOW_LATENCY`**: 
+- **`SYSTEM_EXTENSION_INSTALL`**: 
+- **`USER_MANAGEMENT`**: 
+- **`APPLE_ID_AUTH`**: 
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

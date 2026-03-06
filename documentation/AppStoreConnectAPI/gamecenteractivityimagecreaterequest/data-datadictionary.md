@@ -19,6 +19,12 @@ object GameCenterActivityImageCreateRequest.Data
   Attributes that describe an activity resource.
 - [object GameCenterActivityImageCreateRequest.Data.Relationships](gamecenteractivityimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterActivityImageCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterActivityImageCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

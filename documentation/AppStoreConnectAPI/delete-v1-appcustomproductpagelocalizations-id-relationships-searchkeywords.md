@@ -8,6 +8,14 @@ Unassign a search keyword from a specific custom product page localization.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}/relationships/searchKeywords`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List custom product pages localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+
 ## See Also
 
 - [List app preview sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)

@@ -14,6 +14,10 @@ Relationships belonging to the resource.
 object Resource.Relationships
 ```
 
+## Properties
+
+- `Any Key` (Relationship): A named relationship for the resource creating an association from the resource to other resources.
+
 ## See Also
 
 - [object Resource.Attributes](resource/attributes-data.dictionary.md)

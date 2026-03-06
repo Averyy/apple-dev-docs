@@ -20,6 +20,10 @@ object BetaLicenseAgreement.Relationships
 - [object BetaLicenseAgreement.Relationships.App](betalicenseagreement/relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (BetaLicenseAgreement.Relationships.App)
+
 ## See Also
 
 - [object BetaLicenseAgreement.Attributes](betalicenseagreement/attributes-data.dictionary.md)

@@ -20,6 +20,10 @@ object CiWorkflow.Relationships.Product
 - [object CiWorkflow.Relationships.Product.Data](ciworkflow/relationships-data.dictionary/product-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Products resource.
 
+## Properties
+
+- `data` (CiWorkflow.Relationships.Product.Data): The ID and type of the related Products resource.
+
 ## See Also
 
 - [object CiWorkflow.Relationships.MacOsVersion](ciworkflow/relationships-data.dictionary/macosversion-data.dictionary.md)

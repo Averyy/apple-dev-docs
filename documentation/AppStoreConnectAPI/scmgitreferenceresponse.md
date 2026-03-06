@@ -14,6 +14,12 @@ A response that contains a single Git References resource.
 object ScmGitReferenceResponse
 ```
 
+## Properties
+
+- `data` (ScmGitReference) *(required)*: The resource data.
+- `included` ([ScmRepository]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object ScmGitReference](scmgitreference.md)

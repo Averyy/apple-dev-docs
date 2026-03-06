@@ -18,6 +18,14 @@ object AppPriceV2
 - [object AppPriceV2.Attributes](apppricev2/attributes-data.dictionary.md)
 - [object AppPriceV2.Relationships](apppricev2/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppPriceV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppPriceV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object App](app.md)

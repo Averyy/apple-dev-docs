@@ -14,6 +14,10 @@ The response to a request for activities.
 object ActivitiesResponse
 ```
 
+## Properties
+
+- `data` ([Activities]) *(required)*: The [`Activities`](activities.md) included in the response for the request.
+
 ## See Also
 
 - [object Activities](activities.md)

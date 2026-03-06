@@ -17,6 +17,12 @@ object AppStoreVersionExperimentUpdateRequest.Data
 ### Objects
 - [object AppStoreVersionExperimentUpdateRequest.Data.Attributes](appstoreversionexperimentupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppStoreVersionExperimentUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

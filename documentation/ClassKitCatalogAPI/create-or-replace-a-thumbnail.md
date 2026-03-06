@@ -26,6 +26,15 @@ Follow the same guidelines for creating thumbnails as you follow when working wi
 
 If you delete every context that references a thumbnail, the system automatically deletes the thumbnail image as well.
 
+## Endpoint
+
+`POST https://classkit-catalog.apple.com/v1/thumbnails`
+
+## Parameters
+
+- `environment` (string) *(required)*: The development or production environment to use for this access. For details, see [`Testing Your ClassKit Catalog Implementation`](testing-your-classkit-catalog-implementation.md).
+- `thumbnailId` (string) *(required)*: The thumbnail identifier for the thumbnail to upload. Format this value as a URL-encoded string.
+
 ## See Also
 
 - [Get a Thumbnail](get-a-thumbnail.md)

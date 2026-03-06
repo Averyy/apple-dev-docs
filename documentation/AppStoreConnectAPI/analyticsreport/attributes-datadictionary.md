@@ -12,6 +12,11 @@
 object AnalyticsReport.Attributes
 ```
 
+## Properties
+
+- `category` (string)
+- `name` (string)
+
 
 ---
 

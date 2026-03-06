@@ -14,6 +14,11 @@ object ErrorLinks
 ### Dictionaries
 - [object ErrorLinks.Associated](errorlinks/associated-data.dictionary.md)
 
+## Properties
+
+- `about` (uri-reference)
+- `associated` (*)
+
 ## See Also
 
 - [object ErrorResponse](errorresponse.md)

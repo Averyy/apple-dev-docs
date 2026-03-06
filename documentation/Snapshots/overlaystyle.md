@@ -43,6 +43,27 @@ The following example shows `OverlayStyle` properties passed into the `overlaySt
 - [object OverlayStyle.LineGradientIndexes](overlaystyle/linegradientindexes-data.dictionary.md)
   A property that sets the color stops for the gradient, positioned by indexes of points on the polyline.
 
+## Properties
+
+- `fillColor` (string): The color used to fill the object.
+- `fillOpacity` (number): The opacity value used to fill the object.
+- `fillRule` (string): A rule used to determine the inside space of the polygon. Default: `“nonzero”` Options: `“nonzero” or “evenodd”`
+- `lineCap` (string): The style used for line end points. Default: `“round”` Options: `”butt”, “round”, or “square”`
+- `lineDash` ([integer]): An array of integers that specifies the line’s dash pattern.
+- `lineDashOffset` (integer): The line dash offset.
+- `lineGradient` (OverlayStyle.LineGradient): An object that determines color stops for the gradient, positioned by offsets between 0 and 1. ```javascript
+"lineGradient": {"0": "green", "1": "blue"}
+
+```
+- `lineGradientIndexes` (OverlayStyle.LineGradientIndexes): An object that determines where the color stops for the gradient. This property uses indexes of points on the polyline. ```javascript
+"lineGradientIndexes": {"1": "blue"}
+
+```
+- `lineJoin` (string): The style used for joins between line segments. Options: `”miter”, “round”, or “bevel”`
+- `lineWidth` (integer): An integer in CSS pixels that specifies the width of the line.
+- `strokeColor` (string): The color for stroking.
+- `strokeOpacity` (number): The opacity value for stroking.
+
 ## See Also
 
 - [Generating a URL and Signature to Create a Maps Web Snapshot](generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)

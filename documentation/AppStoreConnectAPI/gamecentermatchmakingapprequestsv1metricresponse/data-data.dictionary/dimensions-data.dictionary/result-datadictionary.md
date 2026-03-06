@@ -20,6 +20,11 @@ object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.Dimensions.Result
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.Dimensions.Result.Links](gamecentermatchmakingapprequestsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/result-data.dictionary/links-data.dictionary.md)
   The link representation of the results.
 
+## Properties
+
+- `data` (string)
+- `links` (GameCenterMatchmakingAppRequestsV1MetricResponse.Data.Dimensions.Result.Links)
+
 
 ---
 

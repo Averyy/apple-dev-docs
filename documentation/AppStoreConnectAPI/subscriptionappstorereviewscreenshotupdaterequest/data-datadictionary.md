@@ -17,6 +17,12 @@ object SubscriptionAppStoreReviewScreenshotUpdateRequest.Data
 ### Objects
 - [object SubscriptionAppStoreReviewScreenshotUpdateRequest.Data.Attributes](subscriptionappstorereviewscreenshotupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionAppStoreReviewScreenshotUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

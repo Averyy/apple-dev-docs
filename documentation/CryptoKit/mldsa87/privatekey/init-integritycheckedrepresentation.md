@@ -22,7 +22,7 @@ init<D>(integrityCheckedRepresentation: D) throws where D : DataProtocol
 
 ## Parameters
 
-- `integrityCheckedRepresentation`: The integrity-checked data representation of the private key.   The parameter needs to be 64 bytes long, and contain the seed and a hash of the public key.
+- `integrityCheckedRepresentation`: The integrity-checked data representation of the private key. The parameter needs to be 64 bytes long, and contain the seed and a hash of the public key.
 
 ## See Also
 

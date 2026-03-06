@@ -17,6 +17,10 @@ object AnalyticsReportRequestCreateRequest.Data.Relationships
 ### Objects
 - [object AnalyticsReportRequestCreateRequest.Data.Relationships.App](analyticsreportrequestcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
 
+## Properties
+
+- `app` (AnalyticsReportRequestCreateRequest.Data.Relationships.App) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequestCreateRequest.Data.Attributes](analyticsreportrequestcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

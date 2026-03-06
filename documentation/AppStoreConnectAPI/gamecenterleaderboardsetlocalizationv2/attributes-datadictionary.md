@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetLocalizationV2.Attributes
 - locale:
 - name:
 
+## Properties
+
+- `locale` (string)
+- `name` (string)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetLocalizationV2.Relationships](gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary.md)

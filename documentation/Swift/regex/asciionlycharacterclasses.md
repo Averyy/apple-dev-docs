@@ -26,7 +26,7 @@ The modified regular expression.
 
 ## Parameters
 
-- `useASCII`: A Boolean value indicating whether to match only   ASCII characters when matching character classes.
+- `useASCII`: A Boolean value indicating whether to match only ASCII characters when matching character classes.
 
 
 ---

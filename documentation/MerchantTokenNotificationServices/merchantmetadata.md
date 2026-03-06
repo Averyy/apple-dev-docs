@@ -18,6 +18,10 @@ object MerchantMetadata
 
 Apple Pay sends a notification with a unique event identifier to this URL for events that impact the associated MPAN.
 
+## Properties
+
+- `tokenNotificationURL` (string): The URL for the token notification.
+
 
 ---
 

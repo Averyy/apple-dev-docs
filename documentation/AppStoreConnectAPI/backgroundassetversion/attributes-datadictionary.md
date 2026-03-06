@@ -20,6 +20,14 @@ object BackgroundAssetVersion.Attributes
 - [object BackgroundAssetVersion.Attributes.StateDetails](backgroundassetversion/attributes-data.dictionary/statedetails-data.dictionary.md)
   Details about errors, warnings, and informational messages related to the state.
 
+## Properties
+
+- `createdDate` (date-time)
+- `platforms` ([Platform])
+- `state` (BackgroundAssetVersionState)
+- `stateDetails` (BackgroundAssetVersion.Attributes.StateDetails)
+- `version` (string)
+
 
 ---
 

@@ -24,6 +24,12 @@ object AppStoreVersionCreateRequest.Data.Relationships
 - [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
 - [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
 
+## Properties
+
+- `app` (AppStoreVersionCreateRequest.Data.Relationships.App) *(required)*
+- `build` (AppStoreVersionCreateRequest.Data.Relationships.Build)
+- `appStoreVersionLocalizations` (AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations)
+
 ## See Also
 
 - [object AppStoreVersionCreateRequest.Data.Attributes](appstoreversioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)

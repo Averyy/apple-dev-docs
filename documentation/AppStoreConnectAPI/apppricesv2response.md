@@ -12,6 +12,13 @@
 object AppPricesV2Response
 ```
 
+## Properties
+
+- `data` ([AppPriceV2]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

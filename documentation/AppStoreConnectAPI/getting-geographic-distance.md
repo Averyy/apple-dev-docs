@@ -16,6 +16,9 @@ number geoLatency(object $request1, object $request2)
 
 ##### Parameters
 
+- **`request1`**: A match request to compare with `request2`.
+- **`request2`**: A match request to compare with `request1`.
+
 ##### Return Value
 
 A value between `0.0` and `1.0` that represents the relative geographic distance between the player devices that issued these requests, where `0.0` is in the same local area and `1.0` is the longest possible distance.

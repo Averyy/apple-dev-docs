@@ -6,7 +6,7 @@ Write expressions that query the match requests in a queue to find the best play
 
 #### Overview
 
-An  is a [`JMESPath`](https://developer.apple.comhttps://jmespath.org/) formatted string with additional matchmaking rule functions. Game Center uses the expression to query a collection of match requests represented as JSON. The expression needs to evaluate to either a Boolean or number value according to the rule type.
+An *expression* is a [`JMESPath`](https://developer.apple.comhttps://jmespath.org/) formatted string with additional matchmaking rule functions. Game Center uses the expression to query a collection of match requests represented as JSON. The expression needs to evaluate to either a Boolean or number value according to the rule type.
 
 To create a matchmaking rule in Game Center, you pass an expression to the [`Create a rule`](post-v1-gamecentermatchmakingrules.md) endpoint. Set the `expression` and `type` fields of the [`GameCenterMatchmakingRuleCreateRequest.Data.Attributes`](gamecentermatchmakingrulecreaterequest/data-data.dictionary/attributes-data.dictionary.md) object that you pass in the request.
 

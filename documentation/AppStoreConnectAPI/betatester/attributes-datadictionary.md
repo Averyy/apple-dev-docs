@@ -25,6 +25,15 @@ object BetaTester.Attributes
 - [object BetaTester.Attributes.AppDevices](betatester/attributes-data.dictionary/appdevices-data.dictionary.md)
   Information about devices used by the beta tester.
 
+## Properties
+
+- `appDevices` ([BetaTester.Attributes.AppDevices])
+- `email` (email): The beta tester’s email address, used for sending beta testing invitations.
+- `firstName` (string): The beta tester’s first name.
+- `inviteType` (BetaInviteType): An invite type that indicates if a beta tester was invited by an email invite or used a TestFlight public link to join a beta test.
+- `lastName` (string): The beta tester’s last name.
+- `state` (BetaTesterState): The status of a beta tester.
+
 ## See Also
 
 - [Beta Testers](beta-testers.md)

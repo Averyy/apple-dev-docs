@@ -14,6 +14,11 @@ A response that contains a single App Store Version Phased Releases resource.
 object AppStoreVersionPhasedReleaseResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionPhasedRelease) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPhasedRelease](appstoreversionphasedrelease.md)

@@ -46,12 +46,12 @@ Using the `forEach` method is distinct from a `for`-`in` loop in two important w
 
 ## Parameters
 
-- `body`: A closure that takes an element of the sequence as a   parameter.
+- `body`: A closure that takes an element of the sequence as a parameter.
 
 ## See Also
 
 - [func enumerated() -> EnumeratedSequence<Self>](string/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [func makeIterator() -> String.Iterator](string/makeiterator.md)
   Returns an iterator over the elements of the collection.
 - [var underestimatedCount: Int](string/underestimatedcount.md)

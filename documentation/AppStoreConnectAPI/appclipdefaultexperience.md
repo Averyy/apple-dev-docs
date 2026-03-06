@@ -22,6 +22,14 @@ object AppClipDefaultExperience
 - [object AppClipDefaultExperience.Relationships](appclipdefaultexperience/relationships-data.dictionary.md)
   The relationships of the Default App Clip Experiences resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppClipDefaultExperience.Attributes): The attributes that describe the Default App Clip Experiences resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Default App Clip Experiences resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (AppClipDefaultExperience.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipDefaultExperienceResponse](appclipdefaultexperienceresponse.md)

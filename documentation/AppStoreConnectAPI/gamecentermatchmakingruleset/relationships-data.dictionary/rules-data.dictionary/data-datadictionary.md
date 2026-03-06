@@ -14,6 +14,11 @@ The data structure of a matchmaking rule.
 object GameCenterMatchmakingRuleSet.Relationships.Rules.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: A unique identifier for a rule.
+- `type` (string) *(required)*: The type of resource.
+
 
 ---
 

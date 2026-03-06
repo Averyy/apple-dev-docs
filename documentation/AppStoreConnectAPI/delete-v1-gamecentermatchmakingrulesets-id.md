@@ -8,6 +8,14 @@ Delete a rule set along with its matchmaking rules and teams.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSets/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: A unique identifier for the rule set.
+
 ## See Also
 
 - [Create a rule set](post-v1-gamecentermatchmakingrulesets.md)

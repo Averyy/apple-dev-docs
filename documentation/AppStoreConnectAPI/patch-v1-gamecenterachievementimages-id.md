@@ -8,6 +8,14 @@ Commit an achievement image after uploading it.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterAchievementImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center achievement images resource ID from the [`Read achievement information`](get-v1-gamecenterachievements-_id_.md) response.
+
 ## See Also
 
 - [Read Game Center achievement image information](get-v2-gamecenterachievementimages-_id_.md)

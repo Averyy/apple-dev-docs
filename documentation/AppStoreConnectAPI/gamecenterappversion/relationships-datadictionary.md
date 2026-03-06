@@ -18,6 +18,11 @@ object GameCenterAppVersion.Relationships
 - [object GameCenterAppVersion.Relationships.AppStoreVersion](gamecenterappversion/relationships-data.dictionary/appstoreversion-data.dictionary.md)
 - [object GameCenterAppVersion.Relationships.CompatibilityVersions](gamecenterappversion/relationships-data.dictionary/compatibilityversions-data.dictionary.md)
 
+## Properties
+
+- `appStoreVersion` (GameCenterAppVersion.Relationships.AppStoreVersion)
+- `compatibilityVersions` (GameCenterAppVersion.Relationships.CompatibilityVersions)
+
 
 ---
 

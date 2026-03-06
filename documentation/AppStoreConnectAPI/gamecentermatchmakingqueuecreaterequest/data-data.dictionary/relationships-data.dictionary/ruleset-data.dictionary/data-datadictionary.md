@@ -14,6 +14,11 @@ The data structure of the request body for the rule set.
 object GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The unique identifier for the rule set.
+- `type` (string) *(required)*: The type of resource.
+
 
 ---
 

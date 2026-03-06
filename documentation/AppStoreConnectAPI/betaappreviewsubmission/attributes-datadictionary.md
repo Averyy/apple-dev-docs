@@ -14,6 +14,11 @@ Attributes that describe a Beta App Review Submissions resource.
 object BetaAppReviewSubmission.Attributes
 ```
 
+## Properties
+
+- `betaReviewState` (BetaReviewState): A state that indicates the current status of the beta app review submission.
+- `submittedDate` (date-time)
+
 ## See Also
 
 - [Beta App Review Submissions](beta-app-review-submissions.md)

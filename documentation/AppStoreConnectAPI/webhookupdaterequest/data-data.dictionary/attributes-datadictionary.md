@@ -14,6 +14,14 @@ Attributes that describe a webhook update request resource.
 object WebhookUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `enabled` (boolean)
+- `eventTypes` ([WebhookEventType])
+- `name` (string)
+- `secret` (string)
+- `url` (uri)
+
 
 ---
 

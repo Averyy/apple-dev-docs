@@ -20,6 +20,14 @@ object GameCenterLeaderboardSetRelease
 - [object GameCenterLeaderboardSetRelease.Attributes](gamecenterleaderboardsetrelease/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetRelease.Relationships](gamecenterleaderboardsetrelease/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetRelease.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardSetRelease.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetReleaseCreateRequest](gamecenterleaderboardsetreleasecreaterequest.md)

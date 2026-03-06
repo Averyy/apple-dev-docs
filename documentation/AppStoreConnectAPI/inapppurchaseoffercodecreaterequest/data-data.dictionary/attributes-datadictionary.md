@@ -14,6 +14,11 @@ The request body you use to create an in-app purchase offer code create request.
 object InAppPurchaseOfferCodeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `customerEligibilities` ([string]) *(required)*
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

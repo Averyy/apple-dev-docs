@@ -8,6 +8,19 @@ Get a list of prices for a specific in-app purchase offer code.
 **Availability**:
 - App Store Connect API 4.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodes/{id}/prices`
+
+## Parameters
+
+- `fields[inAppPurchaseOfferPrices]` ([string])
+- `fields[inAppPurchasePricePoints]` ([string])
+- `fields[territories]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an in-app purchase offer code](post-v1-inapppurchaseoffercodes.md)

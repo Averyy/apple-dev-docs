@@ -20,6 +20,10 @@ object PassTypeIdUpdateRequest
 - [object PassTypeIdUpdateRequest.Data](passtypeidupdaterequest/data-data.dictionary.md)
   The data structure that represents a pass type id update request resource.
 
+## Properties
+
+- `data` (PassTypeIdUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)

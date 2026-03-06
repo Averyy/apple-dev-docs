@@ -27,12 +27,12 @@ The instance passed as `value`.
 
 ## Parameters
 
-- `value`: The value to output to the   stream.
-- `target`: The stream to use for writing the contents of  .
-- `name`: A label to use when writing the contents of  . When    is passed, the label is omitted. The default is  .
-- `indent`: The number of spaces to use as an indent for each line of the   output. The default is  .
-- `maxDepth`: The maximum depth to descend when writing the contents of a   value that has nested components. The default is  .
-- `maxItems`: The maximum number of elements for which to write the full   contents. The default is  .
+- `value`: The value to output to the `target` stream.
+- `target`: The stream to use for writing the contents of `value`.
+- `name`: A label to use when writing the contents of `value`. When `nil` is passed, the label is omitted. The default is `nil`.
+- `indent`: The number of spaces to use as an indent for each line of the output. The default is `0`.
+- `maxDepth`: The maximum depth to descend when writing the contents of a value that has nested components. The default is `Int.max`.
+- `maxItems`: The maximum number of elements for which to write the full contents. The default is `Int.max`.
 
 ## See Also
 

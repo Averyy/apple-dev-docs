@@ -12,6 +12,11 @@
 object SubscriptionPromotionalOfferCreateRequest.Data.Relationships.Subscription.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

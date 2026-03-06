@@ -12,6 +12,11 @@
 object AppPricePointV3EqualizationsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

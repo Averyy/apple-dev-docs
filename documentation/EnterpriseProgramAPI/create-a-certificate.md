@@ -9,6 +9,10 @@ Create a new certificate using a certificate signing request.
 
 - HTTPBody
 
+## Endpoint
+
+`POST https://api.enterprise.developer.apple.com/v1/certificates`
+
 
 ---
 

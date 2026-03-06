@@ -6,7 +6,7 @@
 A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API ?+ - Deprecated
 
 ## Declaration
 
@@ -23,6 +23,10 @@ object RefundLookupResponse
 If the customer hasn’t received any refunds for in-app purchases in your app, the `signedTransactions` array is empty. To read the transaction information, decode the payload for each [`JWSTransaction`](jwstransaction.md) object in the `signedTransactions` array. Use a [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md) object to read the transaction information in the payload.
 
 This response can contain a maximum of 50 transactions in the `signedTransactions` array.
+
+## Properties
+
+- `signedTransactions` ([JWSTransaction]): A list of JWS transactions, or an empty array if the customer has received no refunds in your app. The transactions are sorted in ascending order by their [`revocationDate`](revocationdate.md).
 
 ## See Also
 

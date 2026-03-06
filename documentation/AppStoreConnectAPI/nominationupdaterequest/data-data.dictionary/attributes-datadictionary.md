@@ -12,6 +12,23 @@
 object NominationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `archived` (boolean)
+- `description` (string)
+- `deviceFamilies` ([DeviceFamily])
+- `hasInAppEvents` (boolean)
+- `launchInSelectMarketsFirst` (boolean)
+- `locales` ([string])
+- `name` (string)
+- `notes` (string)
+- `preOrderEnabled` (boolean)
+- `publishEndDate` (date-time)
+- `publishStartDate` (date-time)
+- `submitted` (boolean)
+- `supplementalMaterialsUris` ([uri])
+- `type` (string)
+
 
 ---
 

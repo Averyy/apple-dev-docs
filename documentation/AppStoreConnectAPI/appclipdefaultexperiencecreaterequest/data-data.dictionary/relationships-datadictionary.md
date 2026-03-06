@@ -24,6 +24,12 @@ object AppClipDefaultExperienceCreateRequest.Data.Relationships
 - [object AppClipDefaultExperienceCreateRequest.Data.Relationships.ReleaseWithAppStoreVersion](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/releasewithappstoreversion-data.dictionary.md)
   The relationship to the App Store Versions resource you set with the request that creates a Default App Clip Experiences resource.
 
+## Properties
+
+- `appClip` (AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClip) *(required)*: The related App Clips resource.
+- `appClipDefaultExperienceTemplate` (AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultExperienceTemplate): The related Default App Clip Experience Templates resource.
+- `releaseWithAppStoreVersion` (AppClipDefaultExperienceCreateRequest.Data.Relationships.ReleaseWithAppStoreVersion): The related App Store Versions resource.
+
 ## See Also
 
 - [object AppClipDefaultExperienceCreateRequest.Data.Attributes](appclipdefaultexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

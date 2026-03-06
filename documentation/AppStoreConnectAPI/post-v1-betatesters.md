@@ -8,6 +8,10 @@ Create a beta tester assigned to a group, a build, or an app.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaTesters`
+
 ## See Also
 
 - [Delete a Beta Tester](delete-v1-betatesters-_id_.md)

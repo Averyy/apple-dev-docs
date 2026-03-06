@@ -29,9 +29,9 @@ If `subject` is a class instance, `ancestorRepresentation` determines whether an
 ## Parameters
 
 - `subject`: The instance to represent in the new mirror.
-- `unlabeledChildren`: The children to use for the mirror. The collection   traversal modeled by   is captured so that the   resulting mirror’s children may be upgraded to a bidirectional or   random access collection later. See the   property for   details.
-- `displayStyle`: The preferred display style for the mirror when   presented in the debugger or in a playground. The default is  .
-- `ancestorRepresentation`: The means of generating the subject’s   ancestor representation.   is ignored if    is not a class instance. The default is  .
+- `unlabeledChildren`: The children to use for the mirror. The collection traversal modeled by `unlabeledChildren` is captured so that the resulting mirror’s children may be upgraded to a bidirectional or random access collection later. See the `children` property for details.
+- `displayStyle`: The preferred display style for the mirror when presented in the debugger or in a playground. The default is `nil`.
+- `ancestorRepresentation`: The means of generating the subject’s ancestor representation. `ancestorRepresentation` is ignored if `subject` is not a class instance. The default is `.generated`.
 
 
 ---

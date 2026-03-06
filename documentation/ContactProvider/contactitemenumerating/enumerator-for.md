@@ -22,7 +22,7 @@ The collection represents all contacts for the domain (`ContactItem.Identifier.r
 
 ## Parameters
 
-- `collection`: The collection to enumerate; defaults to   .
+- `collection`: The collection to enumerate; defaults to [`rootContainer`](contactitem/identifier/rootcontainer.md).
 
 ## See Also
 

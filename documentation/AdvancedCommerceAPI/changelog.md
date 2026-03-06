@@ -8,6 +8,10 @@ Learn about new features and updates in the Advanced Commerce API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Advanced Commerce API.
 
+#### Server Update March 5 2026
+
+- Added additional tax codes for books in [`Choosing tax codes for your SKUs`](taxcodes.md).
+
 #### Server Update January 23 2026
 
 - Added the following error codes: [`InvalidProratedPriceForChangeItemWithEffectiveLaterError`](invalidproratedpriceforchangeitemwitheffectivelatererror.md) and [`FreeTrialOfferMustUsePeriodCountOfOneError`](freetrialoffermustuseperiodcountofoneerror.md).
@@ -19,11 +23,11 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 
 #### Server Update November 13 2025
 
-Added support for the [`Mini Apps Partner Program`](https://developer.apple.comhttps://developer.apple.com/programs/mini-apps-partner/).
+- Added support for the [`Mini Apps Partner Program`](https://developer.apple.comhttps://developer.apple.com/programs/mini-apps-partner/).
 
 #### Server Update July 2 2025
 
-Added tax codes for games in [`Choosing tax codes for your SKUs`](taxcodes.md).
+- Added tax codes for games in [`Choosing tax codes for your SKUs`](taxcodes.md).
 
 #### Server Update May 5 2025
 
@@ -32,11 +36,11 @@ Added tax codes for games in [`Choosing tax codes for your SKUs`](taxcodes.md).
 
 #### 11 March 24 2025
 
-Added the endpoints [`Change Subscription Metadata`](change-subscription-metadata.md), [`Migrate a Subscription to Advanced Commerce API`](migrate-subscription-to-advanced-commerce-api.md), [`Request Transaction Refund`](request-transaction-refund.md), and [`Revoke Subscription`](revoke-subscription.md), and the related data types and error codes.
+- Added the endpoints [`Change Subscription Metadata`](change-subscription-metadata.md), [`Migrate a Subscription to Advanced Commerce API`](migrate-subscription-to-advanced-commerce-api.md), [`Request Transaction Refund`](request-transaction-refund.md), and [`Revoke Subscription`](revoke-subscription.md), and the related data types and error codes.
 
 #### 10 January 23 2025
 
-Initial release.
+- Initial release.
 
 ## See Also
 

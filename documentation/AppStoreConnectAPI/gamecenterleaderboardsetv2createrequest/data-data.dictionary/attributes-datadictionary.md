@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetV2CreateRequest.Data.Attributes
 - referenceName:
 - vendorIdentifier:
 
+## Properties
+
+- `referenceName` (string) *(required)*
+- `vendorIdentifier` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships](gamecenterleaderboardsetv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

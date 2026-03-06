@@ -22,6 +22,14 @@ object CiMacOsVersion
 - [object CiMacOsVersion.Relationships](cimacosversion/relationships-data.dictionary.md)
   The relationships of the macOS Versions resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (CiMacOsVersion.Attributes): The attributes that describe the macOS Versions resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a macOS Versions resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (CiMacOsVersion.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object CiMacOsVersionResponse](cimacosversionresponse.md)

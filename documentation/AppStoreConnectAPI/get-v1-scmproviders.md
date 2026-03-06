@@ -8,6 +8,15 @@ List all source code management providers you connected to Xcode Cloud.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmProviders`
+
+## Parameters
+
+- `fields[scmProviders]` ([string]): Additional fields to include for each Providers resource returned by the response.
+- `limit` (integer): The number of Providers resources to return.
+
 ## See Also
 
 - [Get a Source Code Management Provider](get-v1-scmproviders-_id_.md)

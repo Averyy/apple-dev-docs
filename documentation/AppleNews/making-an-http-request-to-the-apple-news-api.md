@@ -8,6 +8,8 @@ Create the URL, set the method, and send the request.
 
 You make an HTTP request to send or receive data from a server. On this page, you’ll make the HTTP request to the Apple News API to get details about the channel, including the name, corresponding website, and default section. See [`Read Channel Information`](https://developer.apple.com/documentation/applenewsapi/get-channels-_channelid_).
 
+**On this page, you’ll learn how to:**
+
 - Create the URL `https://news-api.apple.com/channels/{channel-id}`.
 - Set the method to `GET`.
 - Send the request.

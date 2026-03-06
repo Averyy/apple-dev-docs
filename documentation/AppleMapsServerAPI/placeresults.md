@@ -14,6 +14,10 @@ An object that contains an array of places.
 object PlaceResults
 ```
 
+## Properties
+
+- `results` ([Place]): An array of one or more [`Place`](place.md) objects.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

@@ -21,6 +21,13 @@ object GameCenterAchievementLocalizationV2CreateRequest.Data.Attributes
 - locale:
 - name:
 
+## Properties
+
+- `afterEarnedDescription` (string) *(required)*
+- `beforeEarnedDescription` (string) *(required)*
+- `locale` (string) *(required)*
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

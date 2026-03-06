@@ -6,7 +6,7 @@
 An error that indicates the value in the sample content provided field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidSampleContentProvidedError
 #### Discussion
 
 See [`sampleContentProvided`](samplecontentprovided.md) for valid values.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

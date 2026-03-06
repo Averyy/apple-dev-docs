@@ -23,6 +23,14 @@ object TerritoryAvailability.Attributes
 
 To learn more about `ICP_NUMBER_INVALID` and `ICP_NUMBER_MISSING`, see the “Availability in China mainland” section in [`App Store Connect Help`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-information).
 
+## Properties
+
+- `available` (boolean)
+- `contentStatuses` ([string])
+- `preOrderEnabled` (boolean)
+- `preOrderPublishDate` (date)
+- `releaseDate` (date)
+
 ## See Also
 
 - [object TerritoryAvailability.Relationships](territoryavailability/relationships-data.dictionary.md)

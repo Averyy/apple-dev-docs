@@ -36,7 +36,7 @@ if let i = greeting.unicodeScalars.firstIndex(where: { "A"..."Z" ~= $0 }) {
 
 ## Parameters
 
-- `position`: A valid index of the character view.    must be less than the view’s end index.
+- `position`: A valid index of the character view. `position` must be less than the view’s end index.
 
 
 ---

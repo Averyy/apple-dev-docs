@@ -17,6 +17,12 @@ object GameCenterGroup.Relationships.GameCenterLeaderboardSets
 ### Objects
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardSets.Data](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterGroup.Relationships.GameCenterLeaderboardSets.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterGroup.Relationships.GameCenterAchievements](gamecentergroup/relationships-data.dictionary/gamecenterachievements-data.dictionary.md)

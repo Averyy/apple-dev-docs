@@ -36,7 +36,7 @@ The returned index is the index of the next uninitialized element in the buffer 
 
 ## Parameters
 
-- `source`: A collection of elements to be used to   initialize the buffer slice’s storage.
+- `source`: A collection of elements to be used to initialize the buffer slice’s storage.
 
 
 ---

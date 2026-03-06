@@ -20,6 +20,12 @@ object AppAppTagsLinkagesResponse
 - [object AppAppTagsLinkagesResponse.Data](appapptagslinkagesresponse/data-data.dictionary.md)
   The data structure that represents an app tags linkages response resource.
 
+## Properties
+
+- `data` ([AppAppTagsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppTag](apptag.md)

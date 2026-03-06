@@ -22,6 +22,14 @@ object AppScreenshot
 - [object AppScreenshot.Relationships](appscreenshot/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppScreenshot.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppScreenshot.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppScreenshotCreateRequest](appscreenshotcreaterequest.md)

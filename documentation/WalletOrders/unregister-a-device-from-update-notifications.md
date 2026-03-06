@@ -10,6 +10,14 @@ Unregisters a device from receiving update notifications for an order.
 - iPadOS 16.0+
 - macOS 13.0+
 
+## Endpoint
+
+`DELETE https://your-web-service.com/v1/devices/{deviceIdentifier}/registrations/{orderTypeIdentifier}/{orderIdentifier}`
+
+## Parameters
+
+- `Authorization` (string) *(required)*: The authentication for an order. The scheme is `AppleOrder` with the order’s value for the `authenticationToken` key as parameter. For example, `AppleOrder {authenticationToken}`.
+
 ## See Also
 
 - [Register a device for update notifications](register-a-device-for-update-notifications.md)

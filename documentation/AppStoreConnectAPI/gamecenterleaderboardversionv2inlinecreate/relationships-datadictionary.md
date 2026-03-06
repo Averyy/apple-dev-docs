@@ -24,6 +24,10 @@ object GameCenterLeaderboardVersionV2InlineCreate.Relationships
 - [object GameCenterLeaderboardVersionV2InlineCreate.Relationships.Leaderboard](gamecenterleaderboardversionv2inlinecreate/relationships-data.dictionary/leaderboard-data.dictionary.md)
   The data that describes the leaderboard of the Game Center leaderboard version v2 inline create.
 
+## Properties
+
+- `leaderboard` (GameCenterLeaderboardVersionV2InlineCreate.Relationships.Leaderboard)
+
 
 ---
 

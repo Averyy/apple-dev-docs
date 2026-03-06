@@ -8,6 +8,14 @@ Update the prices for a specific promotional offer for an auto-renewable subscri
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/subscriptionPromotionalOffers/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Promotional Offer](post-v1-subscriptionpromotionaloffers.md)

@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor.Data](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/createdbyactor-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor.Data)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)

@@ -18,6 +18,14 @@ object SubscriptionRevokeRequest
 
 This is the request body for the [`Revoke Subscription`](revoke-subscription.md) endpoint.
 
+## Properties
+
+- `refundReason` (refundReason) *(required)*
+- `refundRiskingPreference` (refundRiskingPreference) *(required)*
+- `refundType` (string) *(required)*
+- `requestInfo` (RequestInfo) *(required)*
+- `storefront` (storefront)
+
 ## See Also
 
 - [Revoke Subscription](revoke-subscription.md)

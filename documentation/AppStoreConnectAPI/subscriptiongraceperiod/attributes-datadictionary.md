@@ -12,6 +12,13 @@
 object SubscriptionGracePeriod.Attributes
 ```
 
+## Properties
+
+- `duration` (SubscriptionGracePeriodDuration): [`SubscriptionGracePeriodDuration`](subscriptiongraceperiodduration.md)
+- `optIn` (boolean)
+- `renewalType` (string)
+- `sandboxOptIn` (boolean)
+
 
 ---
 

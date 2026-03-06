@@ -16,6 +16,16 @@ string ResponseType
 
 #### Possible Values
 
+- **shelter**: Take shelter in place.
+- **evacuate**: Relocate.
+- **prepare**: Make preparations.
+- **execute**: Execute a pre-planned activity.
+- **avoid**: Avoid the event.
+- **monitor**: Monitor the situation.
+- **assess**: Assess the situation.
+- **allClear**: The event no longer poses a threat.
+- **none**: No action recommended.
+
 ## See Also
 
 - [GET /api/v1/weatherAlert/{language}/{id}](get-api-v1-weatheralert-_language_-_id_.md)

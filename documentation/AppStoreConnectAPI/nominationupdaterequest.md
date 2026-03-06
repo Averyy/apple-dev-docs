@@ -19,6 +19,10 @@ object NominationUpdateRequest
 ### Dictionaries
 - [object NominationUpdateRequest.Data](nominationupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (NominationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object Nomination](nomination.md)

@@ -17,6 +17,12 @@ object AnalyticsReportRequestReportsLinkagesResponse
 ### Dictionaries
 - [object AnalyticsReportRequestReportsLinkagesResponse.Data](analyticsreportrequestreportslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AnalyticsReportRequestReportsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

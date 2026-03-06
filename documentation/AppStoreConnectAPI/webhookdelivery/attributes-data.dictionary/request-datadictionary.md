@@ -12,6 +12,10 @@
 object WebhookDelivery.Attributes.Request
 ```
 
+## Properties
+
+- `url` (uri)
+
 
 ---
 

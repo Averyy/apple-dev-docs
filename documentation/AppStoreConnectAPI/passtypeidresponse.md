@@ -14,6 +14,12 @@ A response that contains a single pass type id response resource.
 object PassTypeIdResponse
 ```
 
+## Properties
+
+- `data` (PassTypeId) *(required)*
+- `included` ([Certificate])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)

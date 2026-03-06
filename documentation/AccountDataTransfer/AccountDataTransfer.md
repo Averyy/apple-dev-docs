@@ -20,11 +20,21 @@ A scope identifies a subset of data that your apps and website can access from a
 
 The developer portal selects the `data-transfer-user-profile` scope automatically when you request access to another scope.
 
+- **`data-transfer-user-profile`**: A read-only scope that you use to request one or more scopes such as App Store information, app install or push notification activity about a user.
+
 ##### App Store Information Scopes
+
+- **`appstore-info-account-data-for-EU-users`**: A read-only scope you use to access App Store account information about users in the EU.
+- **`appstore-info-account-data-for-JP-users`**: A read-only scope you use to access App Store account information about users in Japan.
+- **`appstore-info-account-data-for-UK-users`**: A read-only scope you use to access App Store account information about users in the UK.
 
 > **Note**: If you’ve previously requested access to App Store information using the `appstore-user-profile` scope along with older scope names, the system accepts these scopes and automatically approves them for both EU and UK scopes. You don’t need to make a new token request.
 
 ##### App Install and Push Notification Activity Scopes
+
+- **`app-install-activity-account-data-for-EU-users`**: A read-only scope you use to access app install and push notification activity about users in the EU.
+- **`app-install-activity-account-data-for-JP-users`**: A read-only scope you use to access app install and push notification activity about users in Japan.
+- **`app-install-activity-account-data-for-UK-users`**: A read-only scope you use to access app install and push notification activity about users in the UK.
 
 #### Request Permission for the Specific Scopes
 
@@ -47,11 +57,17 @@ When making requests, it’s important to understand the scopes you can combine 
 
 #### Set Required Http Headers for the Requested Scopes
 
+- **`X-Apple-Transaction-Id`**: Set the value to a UUID that uniquely identifies the request. If you need to contact Apple to get support, quote the UUID of the request for which you need help.
+- **`Authorization`**: Set the value to `Bearer <ACCESS_TOKEN>` to assert that your app is authorized to fetch data with the `data-transfer-user-profile` scope, one or more of the relevant App Store information, app install and push notification, or registration and activation scopes.
+
 ##### Set the Request Frequency
 
 When making an HTTP `POST` request to the [`Submit request`](submit-request.md) endpoint, requesting the App Store or app install activity scope, you can request a one time or recurring request, depending on the specified scopes:
 
 To make a one-time request, set the `mode` key to `ONE_TIME`. To make recurring requests, for app install or push notification activity, use one of the following values:
+
+- **`DAILY_30`**: One recurring request every day for 30 days
+- **`WEEKLY_180`**: One recurring request every week for 180 days
 
 > **Note**: If you already have a recurring request pending and make another recurring request, the system returns an error, along with the ID of the existing request.
 

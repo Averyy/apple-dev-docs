@@ -1,9 +1,9 @@
-# !=(_:_:)
+# ~=(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value indicating whether a value is included in a range.
 
 **Availability**:
 - iOS 8.0+
@@ -17,30 +17,26 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func ~= (pattern: Self, value: Self.Bound) -> Bool
 ```
 
 #### Discussion
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
+You can use the pattern-matching operator (`~=`) to test whether a value is included in a range. The pattern-matching operator is used internally in `case` statements for pattern matching. The following example uses the `~=` operator to test whether an integer is included in a range of single-digit numbers:
 
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+```swift
+let chosenNumber = 3
+if 0..<10 ~= chosenNumber {
+    print("\(chosenNumber) is a single digit.")
+}
+// Prints "3 is a single digit."
+```
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](closedrange/==(_:_:).md)
-  Returns a Boolean value indicating whether two ranges are equal.
-- [func overlaps(Range<Bound>) -> Bool](closedrange/overlaps(_:)-947dt.md)
-  Returns a Boolean value indicating whether this range and the given range contain an element in common.
-- [func overlaps(ClosedRange<Bound>) -> Bool](closedrange/overlaps(_:)-7dfep.md)
-  Returns a Boolean value indicating whether this range and the given closed range contain an element in common.
+- `pattern`: A range.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/closedrange/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/closedrange/~=(_:_:))*

@@ -14,6 +14,11 @@ The data structure that represents a pass type id certificates linkages response
 object PassTypeIdCertificatesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

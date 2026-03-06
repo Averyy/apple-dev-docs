@@ -39,7 +39,7 @@ struct UTF8Span
 - [var isEmpty: Bool](utf8span/isempty.md)
   A Boolean value that indicates whether the UTF-8 span is empty.
 - [var isKnownASCII: Bool](utf8span/isknownascii.md)
-  Returns whether contents are known to be all-ASCII. A return value of `true` means that all code units are ASCII. A return value of `false` means there  be non-ASCII content.
+  Returns whether contents are known to be all-ASCII. A return value of `true` means that all code units are ASCII. A return value of `false` means there *may* be non-ASCII content.
 - [var isKnownNFC: Bool](utf8span/isknownnfc.md)
   Returns whether the contents are known to be NFC. This is not always checked at initialization time and is set by `checkForNFC`.
 - [var span: Span<UInt8>](utf8span/span.md)

@@ -12,6 +12,11 @@
 object ReviewSubmissionItemCreateRequest.Data.Relationships.AppEvent.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

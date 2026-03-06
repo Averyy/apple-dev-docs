@@ -10,7 +10,7 @@ You publish playgrounds by packaging one or more of them into a subscription fee
 
 ##### Check Your Web Host for Compatibility
 
-Uploading files usually involves a , which is a service provider that specializes in making data available online. Almost any web host meets the requirements for putting a playground subscription online. However, the host must support TLS 1.3 encryption.
+Uploading files usually involves a *web host*, which is a service provider that specializes in making data available online. Almost any web host meets the requirements for putting a playground subscription online. However, the host must support TLS 1.3 encryption.
 
 > **Note**: Popular sites such as GitHub via [`GitHub Pages`](https://developer.apple.comhttps://pages.github.com/), Squarespace, and others offer the required features for hosting subscriptions. Hosts have their own terms and conditions, however, and may charge fees for high download volumes. Make sure you’re aware of and in agreement with these rules before making your feed available publicly.
 

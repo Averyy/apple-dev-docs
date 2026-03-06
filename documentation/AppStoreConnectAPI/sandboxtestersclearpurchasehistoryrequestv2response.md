@@ -12,6 +12,11 @@
 object SandboxTestersClearPurchaseHistoryRequestV2Response
 ```
 
+## Properties
+
+- `data` (SandboxTestersClearPurchaseHistoryRequestV2) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SandboxTesterV2Response](sandboxtesterv2response.md)

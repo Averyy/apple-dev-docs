@@ -16,6 +16,9 @@ boolean areCompatibleAppVersions(object $request1, object $request2)
 
 ##### Parameters
 
+- **`request1`**: A match request to compare with `request2`.
+- **`request2`**: A match request to compare with `request1`.
+
 ##### Return Value
 
 `true`, if the game instances that request a match are compatible; otherwise, `false`.

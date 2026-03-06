@@ -17,6 +17,12 @@ object GameCenterAppVersionUpdateRequest.Data
 ### Objects
 - [object GameCenterAppVersionUpdateRequest.Data.Attributes](gamecenterappversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAppVersionUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

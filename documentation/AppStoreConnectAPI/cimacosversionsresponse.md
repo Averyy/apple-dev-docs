@@ -14,6 +14,13 @@ A response that contains a list of macOS Versions resources.
 object CiMacOsVersionsResponse
 ```
 
+## Properties
+
+- `data` ([CiMacOsVersion]) *(required)*: The resource data.
+- `included` ([CiXcodeVersion]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object CiMacOsVersion](cimacosversion.md)

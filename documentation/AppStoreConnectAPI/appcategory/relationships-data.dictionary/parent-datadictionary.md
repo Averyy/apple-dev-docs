@@ -20,6 +20,11 @@ object AppCategory.Relationships.Parent
 - [object AppCategory.Relationships.Parent.Data](appcategory/relationships-data.dictionary/parent-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppCategory.Relationships.Parent.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppCategory.Relationships.Subcategories](appcategory/relationships-data.dictionary/subcategories-data.dictionary.md)

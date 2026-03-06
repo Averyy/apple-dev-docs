@@ -32,7 +32,7 @@ For example, animated entities that appear when the ride runs contain a componen
 
 ##### Avoid Duplicate Materials with Material References
 
-Many of Swift Splash’s slide pieces use the same materials. For example, the shader graph material that changes pieces from metal to wood to plastic is shared by all but one of the slide pieces. To avoid having duplicate copies of each material, Swift Splash leverages USD  to share materials between multiple entities in multiple scenes.
+Many of Swift Splash’s slide pieces use the same materials. For example, the shader graph material that changes pieces from metal to wood to plastic is shared by all but one of the slide pieces. To avoid having duplicate copies of each material, Swift Splash leverages USD *material references* to share materials between multiple entities in multiple scenes.
 
 ##### Parallelize the Asset Load
 

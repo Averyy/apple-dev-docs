@@ -26,8 +26,8 @@ A [`Duration.TimeFormatStyle.Pattern`](duration/timeformatstyle/pattern-swift.st
 
 ## Parameters
 
-- `padHourToLength`: Padding for the hour field. For example, setting this value to   formats one hour as   in the   locale.
-- `roundSeconds`: The rule to use for rounding the minutes value, given the remaining seconds value. Use one of the cases from the   enumeration.
+- `padHourToLength`: Padding for the hour field. For example, setting this value to `2` formats one hour as `01:00` in the `en_US` locale.
+- `roundSeconds`: The rule to use for rounding the minutes value, given the remaining seconds value. Use one of the cases from the [`FloatingPointRoundingRule`](floatingpointroundingrule.md) enumeration.
 
 ## See Also
 

@@ -20,13 +20,13 @@ The images below show what your Apple News Format article should look like once 
 
 Choose one of these options.
 
- (Recommended.) Download a basic `article.json` file, and use the instructions in this tutorial to add code to the file. Preview your changes as you go, using the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
+**Option 1: Edit files yourself.** (Recommended.) Download a basic `article.json` file, and use the instructions in this tutorial to add code to the file. Preview your changes as you go, using the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
 
- Follow along by looking at downloadable examples that represent the completion of each stage of this tutorial. Preview the completed articles in the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
+**Option 2: Preview completed files.** Follow along by looking at downloadable examples that represent the completion of each stage of this tutorial. Preview the completed articles in the [`News Preview`](https://developer.apple.comhttps://developer.apple.com/news-preview/) tool.
 
 ##### Download the Article Bundle Examples
 
-An  is a folder that contains the JSON that represents your article along with the article’s image files. You’ll need to download Apple News Format article bundles before beginning the introductory tutorial.
+An *article bundle* is a folder that contains the JSON that represents your article along with the article’s image files. You’ll need to download Apple News Format article bundles before beginning the introductory tutorial.
 
 1. On your Desktop, create a folder named `News_Design_Tutorial`.
 2. Download and unzip files according to the option you chose in [`Choose an Option for Completing the Introductory Tutorial`](setting-up-the-introductory-tutorial#Choose-an-Option-for-Completing-the-Introductory-Tutorial.md).

@@ -17,6 +17,10 @@ object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest
 ### Dictionaries
 - [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest.Data](appstoreversionlocalizationsearchkeywordslinkagesrequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppStoreVersionLocalizationSearchKeywordsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)

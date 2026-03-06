@@ -21,7 +21,7 @@ The raw value and physical value are calculated; both must be valid.
 ## Parameters
 
 - `element`: The element associated with this value.
-- `fromLogicalValueTruncatingIfNeeded`: An integer to use for the value’s  , truncating or extending the bytes as necessary.
+- `fromLogicalValueTruncatingIfNeeded`: An integer to use for the value’s [`bytes`](hidelement/value/bytes.md), truncating or extending the bytes as necessary.
 - `timestamp`: The time that the value was created.
 
 ## See Also

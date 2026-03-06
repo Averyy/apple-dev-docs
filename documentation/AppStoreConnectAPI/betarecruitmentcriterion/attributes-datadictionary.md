@@ -12,6 +12,11 @@
 object BetaRecruitmentCriterion.Attributes
 ```
 
+## Properties
+
+- `deviceFamilyOsVersionFilters` ([DeviceFamilyOsVersionFilter])
+- `lastModifiedDate` (date-time)
+
 
 ---
 

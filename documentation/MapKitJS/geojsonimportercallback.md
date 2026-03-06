@@ -22,6 +22,9 @@ type GeoJSONImporterCallback = (
 
 MapKit JS invokes this callback with two arguments, `error` on failure and `result` on success, as follows:
 
+- **`error`**: A [`GeoJSONImportError`](geojsonimporterror.md) that contains an error code and a descriptive message.
+- **`result`**: An [`ItemCollection`](itemcollection.md) in which MapKit JS stores the raw GeoJSON to use for generating the object in the object’s `data` property.
+
 ## See Also
 
 - [importGeoJSON(data, callback)](mapkit/importgeojson.md)

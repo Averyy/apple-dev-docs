@@ -12,6 +12,28 @@ Get a list of prerelease versions for all apps.
 
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/preReleaseVersions`
+
+## Parameters
+
+- `fields[apps]` ([string]): Fields to return for included related types.
+- `fields[builds]` ([string]): Fields to return for included related types.
+- `fields[preReleaseVersions]` ([string]): Fields to return for included related types.
+- `filter[app]` ([string]): Attributes, relationships, and IDs by which to filter.
+- `filter[builds.expired]` ([string]): Attributes, relationships, and IDs by which to filter.
+- `filter[builds.processingState]` ([string]): Attributes, relationships, and IDs by which to filter.
+- `filter[builds]` ([string]): Attributes, relationships, and IDs by which to filter.
+- `filter[platform]` ([string]): Attributes, relationships, and IDs by which to filter.
+- `filter[version]` ([string]): Attributes, relationships, and IDs by which to filter.
+- `include` ([string]): Relationship data to include in the response.
+- `limit` (integer): Number of resources to return.
+- `limit[builds]` (integer): Number of included related resources to return.
+- `sort` ([string]): Attributes by which to sort.
+- `filter[builds.version]` ([string])
+- `filter[builds.buildAudienceType]` ([string])
+
 ## See Also
 
 - [Read Prerelease Version Information](get-v1-prereleaseversions-_id_.md)

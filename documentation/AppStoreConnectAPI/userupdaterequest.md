@@ -20,6 +20,10 @@ object UserUpdateRequest
 - [object UserUpdateRequest.Data](userupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (UserUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object User](user.md)

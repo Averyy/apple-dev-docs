@@ -12,6 +12,12 @@
 object AppPricePointV3Response
 ```
 
+## Properties
+
+- `data` (AppPricePointV3) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

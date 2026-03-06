@@ -14,6 +14,12 @@ A response that contains a single leaderboard set release resource.
 object GameCenterLeaderboardSetReleaseResponse
 ```
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetRelease) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetRelease](gamecenterleaderboardsetrelease.md)

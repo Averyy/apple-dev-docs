@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboardSet`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read leaderboard set member localization information](get-v1-gamecenterleaderboardsetmemberlocalizations.md)

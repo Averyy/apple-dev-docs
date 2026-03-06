@@ -22,6 +22,14 @@ object CiProduct
 - [object CiProduct.Relationships](ciproduct/relationships-data.dictionary.md)
   The relationships of the Products resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (CiProduct.Attributes): The attributes that describe the Products resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Products resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (CiProduct.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object CiProductResponse](ciproductresponse.md)

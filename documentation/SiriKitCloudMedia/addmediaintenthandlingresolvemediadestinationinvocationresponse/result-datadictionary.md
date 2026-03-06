@@ -14,6 +14,10 @@ The result of attempting to modify the user’s library or a playlist.
 object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result
 ```
 
+## Properties
+
+- `resolutionResult` (AddMediaMediaDestinationResolutionResult): Your service’s ability to handle the intent.
+
 
 ---
 

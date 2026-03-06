@@ -17,6 +17,13 @@ object BundleIdCapability
 - [object BundleIdCapability.Attributes](bundleidcapability/attributes-data.dictionary.md)
   Attributes that describe a Bundle ID Capabilities resource.
 
+## Properties
+
+- `attributes` (BundleIdCapability.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BundleIdCapabilityCreateRequest](bundleidcapabilitycreaterequest.md)

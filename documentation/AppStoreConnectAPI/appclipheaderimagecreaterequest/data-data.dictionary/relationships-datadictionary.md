@@ -20,6 +20,10 @@ object AppClipHeaderImageCreateRequest.Data.Relationships
 - [object AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization](appclipheaderimagecreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperiencelocalization-data.dictionary.md)
   The relationship to the Default App Clip Experience Localizations resource you set with the request that creates an App Clip Header Images resource.
 
+## Properties
+
+- `appClipDefaultExperienceLocalization` (AppClipHeaderImageCreateRequest.Data.Relationships.AppClipDefaultExperienceLocalization) *(required)*: The related Default App Clip Experience Localizations resource.
+
 ## See Also
 
 - [object AppClipHeaderImageCreateRequest.Data.Attributes](appclipheaderimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

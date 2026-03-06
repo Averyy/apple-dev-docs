@@ -17,6 +17,12 @@ object ScmProviderRepositoriesLinkagesResponse
 ### Dictionaries
 - [object ScmProviderRepositoriesLinkagesResponse.Data](scmproviderrepositorieslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([ScmProviderRepositoriesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object ScmProvider](scmprovider.md)

@@ -14,6 +14,10 @@ The user’s library as a destination for an add media intent.
 object MediaDestinationLibrary
 ```
 
+## Properties
+
+- `mediaDestinationType` (string) *(required)*: The type of collection the user wants to store their media items in.
+
 ## Relationships
 
 ### Inherits From

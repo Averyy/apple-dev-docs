@@ -27,7 +27,7 @@ func sorted<T>(on columnID: ColumnID<T>, by areInIncreasingOrder: (T, T) throws 
 ## Parameters
 
 - `columnID`: The identifier of a column.
-- `areInIncreasingOrder`: A closure that returns a Boolean that indicates   whether the two elements are in increasing order.
+- `areInIncreasingOrder`: A closure that returns a Boolean that indicates whether the two elements are in increasing order.
 
 ## See Also
 

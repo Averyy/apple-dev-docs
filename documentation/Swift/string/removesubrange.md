@@ -26,7 +26,7 @@ Calling this method invalidates any existing indices for use with this string.
 
 ## Parameters
 
-- `bounds`: The range of the elements to remove. The upper and   lower bounds of   must be valid indices of the string and not   equal to the string’s end index.
+- `bounds`: The range of the elements to remove. The upper and lower bounds of `bounds` must be valid indices of the string and not equal to the string’s end index.
 
 ## See Also
 

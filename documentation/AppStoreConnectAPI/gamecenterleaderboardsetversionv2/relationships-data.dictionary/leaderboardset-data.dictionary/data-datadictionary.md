@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetVersionV2.Relationships.LeaderboardSet.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

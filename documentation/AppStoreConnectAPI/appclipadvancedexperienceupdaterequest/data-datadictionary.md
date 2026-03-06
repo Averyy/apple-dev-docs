@@ -22,6 +22,13 @@ object AppClipAdvancedExperienceUpdateRequest.Data
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppClipAdvancedExperienceUpdateRequest.Data.Attributes): The attributes that describe the request that updates an Advanced App Clip Experiences resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the request.
+- `relationships` (AppClipAdvancedExperienceUpdateRequest.Data.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

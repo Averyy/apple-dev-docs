@@ -26,7 +26,7 @@ A sequence of tuple pairs, where the elements of each pair are corresponding ele
 
 #### Discussion
 
-In the `Zip2Sequence` instance returned by this function, the elements of the th pair are the th elements of each underlying sequence. The following example uses the `zip(_:_:)` function to iterate over an array of strings and a countable range at the same time:
+In the `Zip2Sequence` instance returned by this function, the elements of the *i*th pair are the *i*th elements of each underlying sequence. The following example uses the `zip(_:_:)` function to iterate over an array of strings and a countable range at the same time:
 
 ```swift
 let words = ["one", "two", "three", "four"]

@@ -32,7 +32,7 @@ The returned span’s first item is always at offset 0; unlike buffer slices, ex
 
 ## Parameters
 
-- `bounds`: A valid range of positions. Every position in   this range must be within the bounds of this  .
+- `bounds`: A valid range of positions. Every position in this range must be within the bounds of this `Span`.
 
 
 ---

@@ -14,6 +14,13 @@ A response that contains a list of featuring nominations.
 object NominationsResponse
 ```
 
+## Properties
+
+- `data` ([Nomination]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Nomination](nomination.md)

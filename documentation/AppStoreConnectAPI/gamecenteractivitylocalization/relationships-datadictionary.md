@@ -18,6 +18,11 @@ object GameCenterActivityLocalization.Relationships
 - [object GameCenterActivityLocalization.Relationships.Image](gamecenteractivitylocalization/relationships-data.dictionary/image-data.dictionary.md)
 - [object GameCenterActivityLocalization.Relationships.Version](gamecenteractivitylocalization/relationships-data.dictionary/version-data.dictionary.md)
 
+## Properties
+
+- `image` (GameCenterActivityLocalization.Relationships.Image)
+- `version` (GameCenterActivityLocalization.Relationships.Version)
+
 
 ---
 

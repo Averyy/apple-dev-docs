@@ -12,6 +12,12 @@
 object AppsBetaTesterUsagesV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `crashCount` (integer)
+- `feedbackCount` (integer)
+- `sessionCount` (integer)
+
 
 ---
 

@@ -19,6 +19,14 @@ Delete a specific Game Center achievement.
 - 409:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/gameCenterAchievements/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center achievement](post-v2-gamecenterachievements.md)

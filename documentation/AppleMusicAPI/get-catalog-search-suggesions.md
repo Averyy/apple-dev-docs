@@ -14,6 +14,50 @@ If successful, the HTTP status code is 200 (OK) and the `results` object contain
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/catalog/us/search/suggestions?term=beach+bunny&kinds=terms
+```
+
+**Response**:
+
+```json
+{
+    "results": {
+        "suggestions": [
+            {
+                "kind": "terms",
+                "searchTerm": "beach bunny",
+                "displayTerm": "beach bunny"
+            },
+            {
+                "kind": "terms",
+                "searchTerm": "oxygen beach bunny",
+                "displayTerm": "oxygen beach bunny"
+            },
+            {
+                "kind": "terms",
+                "searchTerm": "cloud 9 beach bunny",
+                "displayTerm": "cloud 9 beach bunny"
+            }
+        ]
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/catalog/{storefront}/search/suggestions`
+
+## Parameters
+
+- `kinds` ([string]) *(required)*: The suggestion kinds to include in the results.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+- `term` (string) *(required)*: The text input to use for search suggestions.
+- `types` ([string]): The resource types to include in the `topResults` (has no effect on the terms).
+
 ## See Also
 
 - [object SearchSuggestionsResponse](searchsuggestionsresponse.md)

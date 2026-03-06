@@ -19,6 +19,10 @@ object GameCenterLeaderboardSetReleaseCreateRequest
 ### Objects
 - [object GameCenterLeaderboardSetReleaseCreateRequest.Data](gamecenterleaderboardsetreleasecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetReleaseCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetRelease](gamecenterleaderboardsetrelease.md)

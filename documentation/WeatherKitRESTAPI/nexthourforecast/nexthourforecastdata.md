@@ -14,6 +14,13 @@ The next hour forecast information.
 object NextHourForecast.NextHourForecastData
 ```
 
+## Properties
+
+- `forecastEnd` (date-time): The time the forecast ends.
+- `forecastStart` (date-time): The time the forecast starts.
+- `minutes` ([ForecastMinute]) *(required)*: An array of the forecast minutes.
+- `summary` ([ForecastPeriodSummary]) *(required)*: An array of the forecast summaries.
+
 ## Relationships
 
 ### Inherited By

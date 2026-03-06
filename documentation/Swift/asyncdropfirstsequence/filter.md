@@ -40,7 +40,7 @@ for await number in stream {
 
 ## Parameters
 
-- `isIncluded`: A closure that takes an element of the   asynchronous sequence as its argument and returns a Boolean value   that indicates whether to include the element in the filtered sequence.
+- `isIncluded`: A closure that takes an element of the asynchronous sequence as its argument and returns a Boolean value that indicates whether to include the element in the filtered sequence.
 
 
 ---

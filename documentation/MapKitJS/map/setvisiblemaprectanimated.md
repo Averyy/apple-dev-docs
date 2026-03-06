@@ -25,7 +25,7 @@ By default, MapKit JS animates the change.
 ## Parameters
 
 - `mapRect`: The map’s new visible area, in map units.
-- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is  .
+- `animate`: A Boolean value that determines whether MapKit JS animates the visible area change. The default value is `true`.
 
 ## See Also
 

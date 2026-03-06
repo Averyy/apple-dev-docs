@@ -22,8 +22,8 @@ init(exportedContentType: UTType, shouldAllowToOpenInPlace: Bool = false, export
 
 ## Parameters
 
-- `exportedContentType`: A uniform type identifier for the file  ,   returned by the   closure.
-- `shouldAllowToOpenInPlace`: A Boolean value that indicates whether   the receiver can try to gain access to the original item on disk   and can edit it.   If  , the receiver only has access to a copy of the file   made by the system.
+- `exportedContentType`: A uniform type identifier for the file `URL`, returned by the `exporting` closure.
+- `shouldAllowToOpenInPlace`: A Boolean value that indicates whether the receiver can try to gain access to the original item on disk and can edit it. If `false`, the receiver only has access to a copy of the file made by the system.
 - `exporting`: A closure that provides a file representation of the given item.
 
 ## See Also

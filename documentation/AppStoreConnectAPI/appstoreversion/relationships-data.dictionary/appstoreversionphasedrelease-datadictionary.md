@@ -20,6 +20,11 @@ object AppStoreVersion.Relationships.AppStoreVersionPhasedRelease
 - [object AppStoreVersion.Relationships.AppStoreVersionPhasedRelease.Data](appstoreversion/relationships-data.dictionary/appstoreversionphasedrelease-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppStoreVersion.Relationships.AppStoreVersionPhasedRelease.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppStoreVersion.Relationships.AgeRatingDeclaration](appstoreversion/relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)

@@ -17,6 +17,10 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersi
 ### Dictionaries
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion.Data](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion.Data)
+
 
 ---
 

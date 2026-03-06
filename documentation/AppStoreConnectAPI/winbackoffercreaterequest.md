@@ -22,6 +22,11 @@ object WinBackOfferCreateRequest
 - [object WinBackOfferPriceInlineCreate](winbackofferpriceinlinecreate.md)
   The data structure that represents a win-back offer price inline create resource.
 
+## Properties
+
+- `data` (WinBackOfferCreateRequest.Data) *(required)*
+- `included` ([WinBackOfferPriceInlineCreate])
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

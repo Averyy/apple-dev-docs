@@ -17,6 +17,8 @@ The geometric normal of the currently-processed data in a given coordinate space
 
 #### Parameter Description
 
+- **`Space`**: The coordinate space in which the shader defines the normal vector. The default value is `object`.
+
 #### Discussion
 
 Valid values for the `Space` parameter include the following:

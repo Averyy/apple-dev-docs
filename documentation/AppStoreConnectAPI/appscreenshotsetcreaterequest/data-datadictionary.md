@@ -22,6 +22,12 @@ object AppScreenshotSetCreateRequest.Data
 - [object AppScreenshotSetCreateRequest.Data.Relationships](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppScreenshotSetCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppScreenshotSetCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

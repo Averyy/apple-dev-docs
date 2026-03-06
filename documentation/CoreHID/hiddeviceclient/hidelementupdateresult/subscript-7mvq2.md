@@ -24,7 +24,7 @@ For an example, see [`updateElements(_:timeout:)`](hiddeviceclient/updateelement
 
 ## Parameters
 
-- `originalRequest`: A request that was initially passed to  .
+- `originalRequest`: A request that was initially passed to [`updateElements(_:timeout:)`](hiddeviceclient/updateelements(_:timeout:).md).
 
 
 ---

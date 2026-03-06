@@ -6,7 +6,7 @@ Learn how to identify and handle CloudKit throttles.
 
 #### Overview
 
-The CloudKit infrastructure is shared by all apps and services. The resources are finite, and so high utilization from one app can negatively affect others. To avoid this kind of impact and optimize the overall experience, CloudKit implements a number of limits and controls on incoming traffic, which are known as .
+The CloudKit infrastructure is shared by all apps and services. The resources are finite, and so high utilization from one app can negatively affect others. To avoid this kind of impact and optimize the overall experience, CloudKit implements a number of limits and controls on incoming traffic, which are known as *throttles*.
 
 CloudKit can enforce throttles when it deems necessary on any app or service that uses the [`CloudKit`](https://developer.apple.com/documentation/CloudKit) framework, [`CloudKit Web Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html), [`CloudKit JS`](https://developer.apple.com/documentation/CloudKitJS), [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer), and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/Foundation/NSUbiquitousKeyValueStore). This technote discusses how to identify CloudKit throttles with representative error messages and how to handle them.
 
@@ -79,7 +79,7 @@ A retried request is not guaranteed to succeed. It may be throttled again, with 
 
 #### Revision History
 
--  First published.
+- **2024-02-20** First published.
 
 ## See Also
 

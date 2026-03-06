@@ -16,6 +16,16 @@ An item associated with the order.
 object LineItem
 ```
 
+## Properties
+
+- `image` (string): The name for an image representing the item.
+- `price` (CurrencyAmount): The price of the line item.
+- `quantity` (number) *(required)*: The number of items ordered.
+- `subtitle` (string): A localized secondary display title for the item.
+- `title` (string) *(required)*: A localized title for the item.
+- `gtin` (string): The Global Trade Item Number of the item, if available. This could be an EAN, ISBN, or other value.
+- `sku` (string): A merchant-specific unique product identifier.
+
 ## See Also
 
 - [object Customer](customer.md)

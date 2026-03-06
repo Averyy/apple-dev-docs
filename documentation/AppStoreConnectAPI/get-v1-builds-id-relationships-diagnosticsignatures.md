@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/diagnosticSignatures`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read the Build Beta Details Information of a Build](get-v1-builds-_id_-buildbetadetail.md)

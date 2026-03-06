@@ -14,6 +14,12 @@ An error indicating the status can’t be marked as no line item or unrecognized
 object LineItemStatusRegressionError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

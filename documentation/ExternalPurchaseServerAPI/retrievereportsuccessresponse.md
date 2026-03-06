@@ -24,6 +24,10 @@ This successful response contains the external purchase report data that you req
 - [object ExternalPurchaseReport](externalpurchasereport.md)
   The contents of an external purchase report for a single token.
 
+## Properties
+
+- `report` (ExternalPurchaseReport) *(required)*: The external purchase report data.
+
 ## See Also
 
 - [Retrieve External Purchase Report](retrieve-external-purchase-report.md)

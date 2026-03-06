@@ -26,7 +26,7 @@ Use the [`fetchDatabaseChanges`](cloudkit.database/fetchdatabasechanges.md) meth
 
 ## Parameters
 
-- `options`: Specifies the zones and what data to fetch from each. If you want to fetch from multiple zones, pass an array containing a   dictionary for each zone.
+- `options`: Specifies the zones and what data to fetch from each. If you want to fetch from multiple zones, pass an array containing a [`CloudKit.RecordZoneChangesOptions`](cloudkit.recordzonechangesoptions.md) dictionary for each zone.
 
 ## See Also
 

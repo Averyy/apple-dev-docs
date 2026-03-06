@@ -24,6 +24,12 @@ object BetaTester.Relationships
 - [object BetaTester.Relationships.Builds](betatester/relationships-data.dictionary/builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `apps` (BetaTester.Relationships.Apps)
+- `betaGroups` (BetaTester.Relationships.BetaGroups)
+- `builds` (BetaTester.Relationships.Builds)
+
 ## See Also
 
 - [object BetaTester.Attributes](betatester/attributes-data.dictionary.md)

@@ -14,6 +14,10 @@ The hourly forecast information.
 object HourlyForecast.HourlyForecastData
 ```
 
+## Properties
+
+- `hours` ([HourWeatherConditions]) *(required)*: An array of hourly forecasts.
+
 ## Relationships
 
 ### Inherited By

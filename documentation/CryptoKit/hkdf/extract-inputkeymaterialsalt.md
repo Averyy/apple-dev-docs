@@ -30,7 +30,7 @@ Generate a derived symmetric key from the cryptographically strong key material 
 
 ## Parameters
 
-- `inputKeyMaterial`: The main key or passcode the derivation function   uses to derive a key.
+- `inputKeyMaterial`: The main key or passcode the derivation function uses to derive a key.
 - `salt`: The salt to use for key derivation.
 
 ## See Also

@@ -14,6 +14,11 @@ Information about a related song.
 object Album.RelatedSong
 ```
 
+## Properties
+
+- `id` (string): The identifier for the song in Apple Music.
+- `nameDefault` (string): The default name for the song.
+
 ## See Also
 
 - [object Album.ArtistRole](album/artistrole.md)

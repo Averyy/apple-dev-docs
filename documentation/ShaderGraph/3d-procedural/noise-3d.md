@@ -17,6 +17,10 @@ A 3D Perlin noise generator.
 
 #### Parameter Descriptions
 
+- **`Amplitude`**: The intensity of the generated noise. The higher the amplitude, the more pronounced the variations of the noise pattern.
+- **`Pivot`**: The neutral value of the noise. This value is the noise’s minimum value, added to the output after the node multipliess the output by the amplitude.
+- **`Position`**: The 3D coordinates at which the data is read in order to map the texture onto a surface. The default uses the current 3D object-space coordinates.
+
 #### Discussion
 
 The Noise 3D shader node procedurally generates Perlin noise patterns you can use to add texture and variation to materials. All noise values that are procedurally generated are numbers between `0` and `1` before the amplitude and pivot are applied. Because this node generates noise in 3D, the texture doesn’t repeat in the Z direction, but rather continues as depth changes. Below is an example of a simple node graph that uses the Noise 3D node to generate a black and white pattern procedurally:

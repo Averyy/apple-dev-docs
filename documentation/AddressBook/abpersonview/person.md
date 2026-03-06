@@ -18,7 +18,7 @@ var person: ABPerson! { get set }
 
 If the value of this property is `nil`, the view displays a special empty-selection UI.
 
-An exception is raised if the value of this property comes from a shared instance of the address book database. To prevent this, use the [`addressBook`](abaddressbook/addressbook.md) method of [`ABAddressBook`](abaddressbook.md) rather than the [`shared()`](abaddressbook/shared().md) method.
+An exception is raised if the value of this property comes from a shared instance of the address book database. To prevent this, use the [`addressBook`](abaddressbook-swift.class/addressbook.md) method of [`ABAddressBook`](abaddressbook-swift.class.md) rather than the [`shared()`](abaddressbook-swift.class/shared().md) method.
 
 ## See Also
 

@@ -24,6 +24,19 @@ Get a list of versions for a specific Game Center achievement.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterAchievements/{id}/versions`
+
+## Parameters
+
+- `fields[gameCenterAchievementLocalizations]` ([string])
+- `fields[gameCenterAchievementVersions]` ([string])
+- `fields[gameCenterAchievements]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[localizations]` (integer)
+
 ## See Also
 
 - [Read Game Center achievement information](get-v2-gamecenterachievements-_id_.md)

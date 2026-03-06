@@ -18,6 +18,12 @@ object ReviewSubmissionUpdateRequest.Data.Attributes
 
 > **Note**: You can optionally add the attribute platform when using [`Modify a review submission`](patch-v1-reviewsubmissions-_id_.md).
 
+## Properties
+
+- `canceled` (boolean)
+- `platform` (Platform)
+- `submitted` (boolean)
+
 
 ---
 

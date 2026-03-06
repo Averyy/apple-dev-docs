@@ -33,7 +33,7 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: O(), where  is the length of `newElements`.
+> **Note**: O(*m*), where *m* is the length of `newElements`.
 
 
 ---

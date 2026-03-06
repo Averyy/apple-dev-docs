@@ -20,6 +20,12 @@ object AppAndroidToIosAppMappingDetailsLinkagesResponse
 - [object AppAndroidToIosAppMappingDetailsLinkagesResponse.Data](appandroidtoiosappmappingdetailslinkagesresponse/data-data.dictionary.md)
   The data structure that represents an Android to iOS app mapping details linkages response resource.
 
+## Properties
+
+- `data` ([AppAndroidToIosAppMappingDetailsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetail](androidtoiosappmappingdetail.md)

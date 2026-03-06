@@ -14,6 +14,12 @@ A response that contains a single in-app purchase offer code resource.
 object InAppPurchaseOfferCodeResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseOfferCode) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCode](inapppurchaseoffercode.md)

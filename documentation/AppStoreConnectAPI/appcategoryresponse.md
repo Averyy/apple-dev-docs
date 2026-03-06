@@ -14,6 +14,12 @@ A response that contains a single App Categories resource.
 object AppCategoryResponse
 ```
 
+## Properties
+
+- `data` (AppCategory) *(required)*
+- `included` ([AppCategory])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppCategoriesResponse](appcategoriesresponse.md)

@@ -8,6 +8,15 @@ Get a list of all capabilities for a specific bundle ID.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/bundleIds/{id}/bundleIdCapabilities`
+
+## Parameters
+
+- `fields[bundleIdCapabilities]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read the App Information of a Bundle ID](get-v1-bundleids-_id_-app.md)

@@ -14,6 +14,11 @@ The data structure that represents a Git Users resource.
 object CiGitUser
 ```
 
+## Properties
+
+- `avatarUrl` (uri): The URL to the Git user’s avatar image.
+- `displayName` (string): The name of the Git user.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

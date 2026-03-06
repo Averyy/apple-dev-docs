@@ -17,6 +17,11 @@ object AppAppAvailabilityV2LinkageResponse
 ### Dictionaries
 - [object AppAppAvailabilityV2LinkageResponse.Data](appappavailabilityv2linkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppAppAvailabilityV2LinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

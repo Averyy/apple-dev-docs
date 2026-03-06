@@ -8,6 +8,17 @@ Get a list of all localized metadata for a specific subscription group.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}/subscriptionGroupLocalizations`
+
+## Parameters
+
+- `fields[subscriptionGroupLocalizations]` ([string])
+- `fields[subscriptionGroups]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create a Subscription Group](post-v1-subscriptiongroups.md)

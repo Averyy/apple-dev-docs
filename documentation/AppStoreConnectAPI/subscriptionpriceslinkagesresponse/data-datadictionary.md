@@ -14,6 +14,11 @@ The data structure that represents a subscription prices linkages response resou
 object SubscriptionPricesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

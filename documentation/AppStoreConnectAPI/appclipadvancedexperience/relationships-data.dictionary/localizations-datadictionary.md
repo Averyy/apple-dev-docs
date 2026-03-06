@@ -20,6 +20,11 @@ object AppClipAdvancedExperience.Relationships.Localizations
 - [object AppClipAdvancedExperience.Relationships.Localizations.Data](appclipadvancedexperience/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Localizations resource.
 
+## Properties
+
+- `data` ([AppClipAdvancedExperience.Relationships.Localizations.Data]): The ID and type of the related Advanced App Clip Experience Localizations resource.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object AppClipAdvancedExperience.Relationships.AppClip](appclipadvancedexperience/relationships-data.dictionary/appclip-data.dictionary.md)

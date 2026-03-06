@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices.Data](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices.Data]) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)

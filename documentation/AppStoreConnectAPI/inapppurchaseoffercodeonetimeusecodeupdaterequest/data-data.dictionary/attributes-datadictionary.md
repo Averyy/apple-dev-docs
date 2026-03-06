@@ -14,6 +14,10 @@ The request body you use to modify an in-app purchase offer code one-time use co
 object InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+
 
 ---
 

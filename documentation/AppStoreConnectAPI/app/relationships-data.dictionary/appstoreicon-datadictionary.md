@@ -17,6 +17,10 @@ object App.Relationships.AppStoreIcon
 ### Dictionaries
 - [object App.Relationships.AppStoreIcon.Data](app/relationships-data.dictionary/appstoreicon-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (App.Relationships.AppStoreIcon.Data)
+
 
 ---
 

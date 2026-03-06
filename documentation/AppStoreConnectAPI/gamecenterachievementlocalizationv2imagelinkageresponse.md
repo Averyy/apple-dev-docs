@@ -24,6 +24,11 @@ object GameCenterAchievementLocalizationV2ImageLinkageResponse
 ### Dictionaries - generated
 - [object GameCenterAchievementLocalizationV2ImageLinkageResponse.Data](gamecenterachievementlocalizationv2imagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementLocalizationV2ImageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)

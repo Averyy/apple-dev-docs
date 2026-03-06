@@ -26,7 +26,7 @@ A new slice of the underlying data frame.
 
 ## Parameters
 
-- `length`: The number of elements in the new slice.   The length must be greater than or equal to zero and less than or equal to the number of elements   in the original slice.
+- `length`: The number of elements in the new slice. The length must be greater than or equal to zero and less than or equal to the number of elements in the original slice.
 
 ## See Also
 

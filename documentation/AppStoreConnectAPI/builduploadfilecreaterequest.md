@@ -20,6 +20,10 @@ object BuildUploadFileCreateRequest
 - [object BuildUploadFileCreateRequest.Data](builduploadfilecreaterequest/data-data.dictionary.md)
   The data structure that represents a build upload file create request resource.
 
+## Properties
+
+- `data` (BuildUploadFileCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object BuildUpload](buildupload.md)

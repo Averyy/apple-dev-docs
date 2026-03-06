@@ -28,6 +28,9 @@ The Payment Request API sends a [`PaymentMethodChangeEvent`](paymentmethodchange
 
 Custom Apple Pay events include information in the [`methodDetails`](paymentmethodchangeevent/methoddetails.md) attribute of the change event:
 
+- **[`ApplePayCouponCodeDetails`](applepaycouponcodedetails.md)**: A dictionary type that indicates the user updated the coupon code.
+- **[`ApplePayPaymentMethod`](applepaypaymentmethod.md)**: A dictionary type that indicates that the user changed the payment method.
+
 ## Topics
 
 ### Change Information

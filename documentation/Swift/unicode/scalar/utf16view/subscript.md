@@ -22,7 +22,7 @@ subscript(position: Int) -> UTF16.CodeUnit { get }
 
 ## Parameters
 
-- `position`: The position of the element to access.    must be a valid index of the collection that is not equal to the    property.
+- `position`: The position of the element to access. `position` must be a valid index of the collection that is not equal to the `endIndex` property.
 
 
 ---

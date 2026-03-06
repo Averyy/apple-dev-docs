@@ -12,6 +12,10 @@
 object SubscriptionGroupCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `referenceName` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupCreateRequest.Data.Relationships](subscriptiongroupcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

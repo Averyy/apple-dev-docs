@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaBuildLocalizations/{id}/relationships/build`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List Beta Build Localizations](get-v1-betabuildlocalizations.md)

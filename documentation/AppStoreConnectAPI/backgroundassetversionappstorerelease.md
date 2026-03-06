@@ -22,6 +22,14 @@ object BackgroundAssetVersionAppStoreRelease
 - [object BackgroundAssetVersionAppStoreRelease.Relationships](backgroundassetversionappstorerelease/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BackgroundAssetVersionAppStoreRelease.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (BackgroundAssetVersionAppStoreRelease.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BackgroundAsset](backgroundasset.md)

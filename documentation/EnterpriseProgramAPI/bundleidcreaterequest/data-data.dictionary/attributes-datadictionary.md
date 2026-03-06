@@ -11,6 +11,13 @@ Attributes that you set that describe the new resource.
 object BundleIdCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `identifier` (string) *(required)*
+- `name` (string) *(required)*
+- `platform` (BundleIdPlatform) *(required)*
+- `seedId` (string)
+
 
 ---
 

@@ -14,6 +14,11 @@ An error indicating one or more simultaneous submissions of reports reference th
 object SimultaneousSubmissionError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/relationships/images`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create an image for a subscription](post-v1-subscriptionimages.md)

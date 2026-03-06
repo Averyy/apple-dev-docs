@@ -28,8 +28,8 @@ The system executes this method on the dispatch queue you specified when you sta
 ## Parameters
 
 - `session`: The current session.
-- `didReceivePassthroughData`: The passthrough data that the vehicle   sent. Use the data to determine what actions to take, if any.
-- `vehicleID`: The identifier of the vehicle that sent the data.   This identifier is the same string in the    property of the vehicle report.
+- `didReceivePassthroughData`: The passthrough data that the vehicle sent. Use the data to determine what actions to take, if any.
+- `vehicleID`: The identifier of the vehicle that sent the data. This identifier is the same string in the [`identifier`](vehiclereport/identifier.md) property of the vehicle report.
 
 ## See Also
 

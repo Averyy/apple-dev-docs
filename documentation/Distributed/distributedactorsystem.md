@@ -79,9 +79,9 @@ distributed actor ShowcaseIDInit {
 
 The result of [`assignID(_:)`](distributedactorsystem/assignid(_:).md) is then directly stored in the synthesized `id` property of the actor.
 
-The actor system should assign  identifiers to types, such that they may be properly resolved from any process in the distributed actor system. The exact shape of the [`ActorID`](distributedactorsystem/actorid.md) is left up to the library to decide. It can be as small as an integer based identifier, or as large as a series of key-value pairs identifying the actor.
+The actor system should assign *globally unique* identifiers to types, such that they may be properly resolved from any process in the distributed actor system. The exact shape of the [`ActorID`](distributedactorsystem/actorid.md) is left up to the library to decide. It can be as small as an integer based identifier, or as large as a series of key-value pairs identifying the actor.
 
-The actor system must retain a mapping from the [`ActorID`](distributedactorsystem/actorid.md) to the specific actor  which it is given in [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) in order to implement the `resolve(id:using:)` method, which is how incoming and outgoing remote calls are made possible.
+The actor system must retain a mapping from the [`ActorID`](distributedactorsystem/actorid.md) to the specific actor *instance* which it is given in [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) in order to implement the `resolve(id:using:)` method, which is how incoming and outgoing remote calls are made possible.
 
 Users have no control over this assignment, nor are they allowed to set the `id` property explicitly. The [`id`](distributedactor/id.md) is used to implement the distributed actor’s `Hashable`, `Equatable`, and even `Codable` conformance (which is synthesized if and only if the [`ActorID`](distributedactorsystem/actorid.md) is `Codable` itself).
 
@@ -98,33 +98,33 @@ deinit {
 }
 ```
 
-After an ID is resigned, it technically could be used to identify another instance. For example, an advanced actor system implementation could use such approach to implement actors which are created “ad-hoc” and always contain the appropriate ID, and if one isn’t allocated yet for such ID, it could  create one on demand and make sure it is assigned the required ID.
+After an ID is resigned, it technically could be used to identify another instance. For example, an advanced actor system implementation could use such approach to implement actors which are created “ad-hoc” and always contain the appropriate ID, and if one isn’t allocated yet for such ID, it could *then* create one on demand and make sure it is assigned the required ID.
 
 ##### Readying Distributed Actors
 
-Once a `distributed actor` has been  during its initializer, a call to [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) is synthesized. This call is made after the actor’s properties (including all user-declared properties) have been initialized, but before other user-defined code in the initializer gets a chance to run.
+Once a `distributed actor` has been *fully initialized* during its initializer, a call to [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) is synthesized. This call is made after the actor’s properties (including all user-declared properties) have been initialized, but before other user-defined code in the initializer gets a chance to run.
 
 > **Note**: Generally due to actor initializer isolation rules, users will need to make their initializers `async` in order to write code that safely performs extra actions after it has fully initialized.
 
-The `actorReady(_)` call on the actor system is a signal to the actor system that this actor  is now ready and may be resolved and interacted with via the actor system. Generally, a distributed actor system implementation will  the actors it has readied, because retaining them strongly would mean that they will never be deallocated (and thus never resign their ID’s).
+The `actorReady(_)` call on the actor system is a signal to the actor system that this actor *instance* is now ready and may be resolved and interacted with via the actor system. Generally, a distributed actor system implementation will *weakly retain* the actors it has readied, because retaining them strongly would mean that they will never be deallocated (and thus never resign their ID’s).
 
-> **Note**: Generally actor systems should retain actors  in order to allow them be deinitialized when no longer in use. Sometimes though, it can be quite useful to have the system retain certain “well known” actors, for example when it is expected that other nodes in the distributed system will need to interact with them, even if end-user code no longer holds strong references to them. An example of such “retain while actor system is active” distributed actors would be any kind of actor which implements discovery or health check mechanisms between clustered nodes, sometimes called “system actors”, i.e. actors that serve the actor system directly.
+> **Note**: Generally actor systems should retain actors *weakly* in order to allow them be deinitialized when no longer in use. Sometimes though, it can be quite useful to have the system retain certain “well known” actors, for example when it is expected that other nodes in the distributed system will need to interact with them, even if end-user code no longer holds strong references to them. An example of such “retain while actor system is active” distributed actors would be any kind of actor which implements discovery or health check mechanisms between clustered nodes, sometimes called “system actors”, i.e. actors that serve the actor system directly.
 
 Next, we will discuss the just mentioned `resolve` method, which is closely tied to readying actors.
 
 ##### Resolving Potentially Remote Distributed Actors
 
-An important aspect of any distributed actor system is being able to turn a [`DistributedActor`](distributedactor.md) type and [`ActorID`](distributedactorsystem/actorid.md) into a reference to an actor (instance), regardless where the actor is located. The ID should have enough information stored to be able to make the decision of  the actor is located, without having to contact remote nodes. Specifically, the implementation of [`resolve(id:as:)`](distributedactorsystem/resolve(id:as:).md) is  `async` and should  perform long running or blocking operations in order to return.
+An important aspect of any distributed actor system is being able to turn a [`DistributedActor`](distributedactor.md) type and [`ActorID`](distributedactorsystem/actorid.md) into a reference to an actor (instance), regardless where the actor is located. The ID should have enough information stored to be able to make the decision of *where* the actor is located, without having to contact remote nodes. Specifically, the implementation of [`resolve(id:as:)`](distributedactorsystem/resolve(id:as:).md) is *not* `async` and should *not* perform long running or blocking operations in order to return.
 
 > **Note**: Currently only concrete distributed actors types can be resolved.
 
 The actor system’s [`resolve(id:as:)`](distributedactorsystem/resolve(id:as:).md) method is called by the compiler whenever end-users call the [`DistributedActor`](distributedactor.md)‘s [`resolve(id:using:)`](distributedactor/resolve(id:using:).md) method. The return types of those methods differ, as the actor system’s return type is `Act?` (and it may throw if unable to resolve the `ActorID`).
 
-The actor system’s `resolve` returning `nil` means that the [`ActorID`](distributedactorsystem/actorid.md) passed to it refers to a  distributed actor. The Swift runtime reacts to this by creating a remote actor reference (sometimes called a “proxy”).
+The actor system’s `resolve` returning `nil` means that the [`ActorID`](distributedactorsystem/actorid.md) passed to it refers to a *remote* distributed actor. The Swift runtime reacts to this by creating a remote actor reference (sometimes called a “proxy”).
 
 ##### Handling Remote Calls
 
-Finally, calls on a  distributed actor reference’s distributed methods are turned into invocations of `remoteCall(on:target:invocation:returning:throwing:)` (or `remoteCallVoid(on:target:invocation:throwing:)` for Void returning methods).
+Finally, calls on a *remote* distributed actor reference’s distributed methods are turned into invocations of `remoteCall(on:target:invocation:returning:throwing:)` (or `remoteCallVoid(on:target:invocation:throwing:)` for Void returning methods).
 
 Implementing the remote calls correctly and efficiently is the important task for a distributed actor system library.
 
@@ -132,7 +132,7 @@ Implementations of remote calls generally will serialize `actor.id`, `target` an
 
 While implementing remote calls please keep in mind any potential failure scenarios that may occur, such as message loss, connection failures and similar issues. Such situations should all be surfaced by resuming the `remoteCall` by throwing an error conforming to [`DistributedActorSystemError`](distributedactorsystemerror.md).
 
-While it is not  to conform error thrown out of these methods to [`DistributedActorSystemError`](distributedactorsystemerror.md), the general guideline about conforming errors to this protocol is that errors which are outside of the user’s control, but are thrown because transport or actor system issues, should conform to it. This is to simplify separating “business logic errors” from transport errors.
+While it is not *required* to conform error thrown out of these methods to [`DistributedActorSystemError`](distributedactorsystemerror.md), the general guideline about conforming errors to this protocol is that errors which are outside of the user’s control, but are thrown because transport or actor system issues, should conform to it. This is to simplify separating “business logic errors” from transport errors.
 
 ##### Further Reading
 

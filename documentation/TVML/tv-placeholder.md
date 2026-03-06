@@ -17,13 +17,23 @@ Here’s an example that displays the default movie image.
 
 ##### Values for Tv Placeholder
 
+- **`monogram`**: The placeholder image appropriate for a monogram. The light themed placeholder image is:
+
 ![None](https://docs-assets.developer.apple.com/published/3cb464bf70488266cea8d0c843aefeca/tv-placeholder-1%402x.png)
+
+- **`movie`**: The placeholder image appropriate for a movie. The light themed placeholder image is:
 
 ![None](https://docs-assets.developer.apple.com/published/a0b75ea8857adf28115cb71df400f547/tv-placeholder-2%402x.png)
 
+- **`music`**: The placeholder image appropriate for music. The light themed placeholder image is:
+
 ![None](https://docs-assets.developer.apple.com/published/11e936cf8a58c6b70bb1c2e0f31cb7e7/tv-placeholder-3%402x.png)
 
+- **`podcast`**: The placeholder image appropriate for a podcast. The light themed placeholder image is:
+
 ![None](https://docs-assets.developer.apple.com/published/e50c9e2d68f243de90b819411aefe715/tv-placeholder-4%402x.png)
+
+- **`tv`**: The placeholder image appropriate for TV. The light themed placeholder image is:
 
 ![None](https://docs-assets.developer.apple.com/published/c2cfc0afe238ab51b233e0fc0e9a8f4c/tv-placeholder-5%402x.png)
 

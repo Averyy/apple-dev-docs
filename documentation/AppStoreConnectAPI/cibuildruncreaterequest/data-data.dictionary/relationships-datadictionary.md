@@ -26,6 +26,13 @@ object CiBuildRunCreateRequest.Data.Relationships
 - [object CiBuildRunCreateRequest.Data.Relationships.Workflow](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/workflow-data.dictionary.md)
   The relationship to the Workflows resource you can set with the request that creates a Build Runs resource.
 
+## Properties
+
+- `workflow` (CiBuildRunCreateRequest.Data.Relationships.Workflow): The related Workflows resource.
+- `buildRun` (CiBuildRunCreateRequest.Data.Relationships.BuildRun): The related Build Runs resource.
+- `pullRequest` (CiBuildRunCreateRequest.Data.Relationships.PullRequest): The related Pull Requests resource.
+- `sourceBranchOrTag` (CiBuildRunCreateRequest.Data.Relationships.SourceBranchOrTag): The related Git References resource.
+
 ## See Also
 
 - [object CiBuildRunCreateRequest.Data.Attributes](cibuildruncreaterequest/data-data.dictionary/attributes-data.dictionary.md)

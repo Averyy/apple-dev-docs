@@ -36,7 +36,7 @@ print(greatestHeight)
 // Prints "Optional(67.5)"
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 
 ---

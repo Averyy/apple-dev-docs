@@ -12,6 +12,10 @@ Use the `binding` attribute to associate the property path in a data item with a
 
 ##### Values for Binding
 
+- **`@<attribute>:{value}`**: The attribute tag and value. For example, `<img binding=”@src:{url};”/>` adds the `src` attribute with the URL found in the associated data item.
+- **`items:{property path}`**: The item associated with the specified property path.
+- **`textContent:{property path}`**: The text associated with the specified property path.
+
 ##### Elements That Use Binding
 
 The `binding` attribute can be used with any element.

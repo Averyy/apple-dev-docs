@@ -12,6 +12,12 @@
 object AppStoreVersionExperimentResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionExperiment) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)

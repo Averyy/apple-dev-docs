@@ -14,6 +14,10 @@ The attributes for the record label top releases view.
 object RecordLabels.Views.RecordLabelsTopReleasesView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title to display for the view.
+
 
 ---
 

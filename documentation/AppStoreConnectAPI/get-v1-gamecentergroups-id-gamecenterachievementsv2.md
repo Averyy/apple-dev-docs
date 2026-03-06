@@ -29,6 +29,24 @@ Get a list of achievements for a specific Game Center group.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/gameCenterAchievementsV2`
+
+## Parameters
+
+- `fields[gameCenterAchievementVersions]` ([string])
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `filter[archived]` ([string])
+- `filter[id]` ([string])
+- `filter[referenceName]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[versions]` (integer)
+
 ## See Also
 
 - [Read group information](get-v1-gamecentergroups.md)

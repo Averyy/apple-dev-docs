@@ -14,6 +14,10 @@ Attributes whose values you’re changing as part of the update request.
 object AppStoreVersionPhasedReleaseUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `phasedReleaseState` (PhasedReleaseState)
+
 
 ---
 

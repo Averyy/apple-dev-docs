@@ -14,6 +14,11 @@ An error that indicates a general internal error.
 object GeneralInternalError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AccountNotFoundError](accountnotfounderror.md)

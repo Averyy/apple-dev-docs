@@ -22,6 +22,14 @@ object AppStoreVersion
 - [object AppStoreVersion.Relationships](appstoreversion/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppStoreVersion.Attributes)
+- `id` (string) *(required)*
+- `relationships` (AppStoreVersion.Relationships)
+- `type` (string) *(required)*
+- `links` (ResourceLinks)
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

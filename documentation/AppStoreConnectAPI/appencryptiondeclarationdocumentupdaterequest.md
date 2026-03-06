@@ -20,6 +20,10 @@ object AppEncryptionDeclarationDocumentUpdateRequest
 - [object AppEncryptionDeclarationDocumentUpdateRequest.Data](appencryptiondeclarationdocumentupdaterequest/data-data.dictionary.md)
   The request body you use to update an app encryption declaration document update request.
 
+## Properties
+
+- `data` (AppEncryptionDeclarationDocumentUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)

@@ -14,6 +14,10 @@ A playback mode that successfully matches the intent.
 object PlaybackRepeatModeResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedPlaybackRepeatMode` (PlaybackRepeatMode) *(required)*: The playback mode to apply when handling the intent.
+
 ## See Also
 
 - [object PlaybackRepeatModeResolutionResult.ConfirmationRequired](playbackrepeatmoderesolutionresult/confirmationrequired-data.dictionary.md)

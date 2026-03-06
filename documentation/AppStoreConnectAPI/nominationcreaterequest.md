@@ -19,6 +19,10 @@ object NominationCreateRequest
 ### Dictionaries
 - [object NominationCreateRequest.Data](nominationcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (NominationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object Nomination](nomination.md)

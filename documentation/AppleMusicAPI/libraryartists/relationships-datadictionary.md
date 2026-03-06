@@ -22,6 +22,11 @@ object LibraryArtists.Relationships
 - [object LibraryArtists.Relationships.LibraryArtistsCatalogRelationship](libraryartists/relationships-data.dictionary/libraryartistscatalogrelationship.md)
   A relationship from the library artist to their associated catalog content.
 
+## Properties
+
+- `albums` (LibraryArtists.Relationships.LibraryArtistsAlbumsRelationship): The library albums associated with the artist. By default, `albums` not included. It’s available only when fetching a single library artist resource by ID. Fetch limits: 25 default, 100 maximum
+- `catalog` (LibraryArtists.Relationships.LibraryArtistsCatalogRelationship): The artist in the Apple Music catalog the library artist is associated with, when known. Fetch limits: None (associated with, at most, one catalog artist).
+
 ## See Also
 
 - [object LibraryArtists.Attributes](libraryartists/attributes-data.dictionary.md)

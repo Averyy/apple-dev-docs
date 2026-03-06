@@ -14,6 +14,12 @@ A configuration for permitted user interactions and other player behaviors durin
 object PlayMediaControl
 ```
 
+## Properties
+
+- `scheme` (PlayMediaControlScheme) *(required)*: The base set of user controls to make available, and related content behaviors to use.
+- `commands` (PlayMediaControlCommandSet): A set of commands and their desired availabilities to override the default behavior of the `scheme`.
+- `activity` (PlayMediaControlActivity): A schedule for the client to report playback progress to the [`Report Playback Progress and Activity`](updateactivity.md) endpoint.
+
 ## See Also
 
 - [object QueueControlMapping](queuecontrolmapping.md)

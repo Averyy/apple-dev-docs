@@ -26,6 +26,13 @@ object BuildBundle.Relationships
 - [object BuildBundle.Relationships.BuildBundleFileSizes](buildbundle/relationships-data.dictionary/buildbundlefilesizes-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Build Bundles and the Build Bundle File Sizes resources.
 
+## Properties
+
+- `appClipDomainCacheStatus` (BuildBundle.Relationships.AppClipDomainCacheStatus): The related App Clip Domain Cache Statuses resource.
+- `appClipDomainDebugStatus` (BuildBundle.Relationships.AppClipDomainDebugStatus): The related App Clip Domain Debug Statuses resource.
+- `betaAppClipInvocations` (BuildBundle.Relationships.BetaAppClipInvocations): The related Beta App Clip Invocations resource.
+- `buildBundleFileSizes` (BuildBundle.Relationships.BuildBundleFileSizes): The related Build Bundle File Sizes resource.
+
 ## See Also
 
 - [object BuildBundle.Attributes](buildbundle/attributes-data.dictionary.md)

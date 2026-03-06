@@ -22,7 +22,7 @@ mutating func formRemainder(dividingBy other: Float16)
 
 #### Discussion
 
-For two finite values `x` and `y`, the remainder `r` of dividing `x` by `y` satisfies `x == y * q + r`, where `q` is the integer nearest to `x / y`. If `x / y` is exactly halfway between two integers, `q` is chosen to be even. Note that `q` is  `x / y` computed in floating-point arithmetic, and that `q` may not be representable in any available integer type.
+For two finite values `x` and `y`, the remainder `r` of dividing `x` by `y` satisfies `x == y * q + r`, where `q` is the integer nearest to `x / y`. If `x / y` is exactly halfway between two integers, `q` is chosen to be even. Note that `q` is *not* `x / y` computed in floating-point arithmetic, and that `q` may not be representable in any available integer type.
 
 The following example calculates the remainder of dividing 8.625 by 0.75:
 

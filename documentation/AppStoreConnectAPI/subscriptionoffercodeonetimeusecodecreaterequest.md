@@ -17,6 +17,10 @@ object SubscriptionOfferCodeOneTimeUseCodeCreateRequest
 ### Objects
 - [object SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data](subscriptionoffercodeonetimeusecodecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionOfferCodeOneTimeUseCodeCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

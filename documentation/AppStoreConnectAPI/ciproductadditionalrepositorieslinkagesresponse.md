@@ -17,6 +17,12 @@ object CiProductAdditionalRepositoriesLinkagesResponse
 ### Dictionaries
 - [object CiProductAdditionalRepositoriesLinkagesResponse.Data](ciproductadditionalrepositorieslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([CiProductAdditionalRepositoriesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

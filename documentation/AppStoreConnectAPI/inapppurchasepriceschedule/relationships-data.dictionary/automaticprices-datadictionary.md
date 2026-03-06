@@ -17,6 +17,12 @@ object InAppPurchasePriceSchedule.Relationships.AutomaticPrices
 ### Objects
 - [object InAppPurchasePriceSchedule.Relationships.AutomaticPrices.Data](inapppurchasepriceschedule/relationships-data.dictionary/automaticprices-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchasePriceSchedule.Relationships.AutomaticPrices.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchase](inapppurchase.md)

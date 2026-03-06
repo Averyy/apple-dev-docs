@@ -32,7 +32,7 @@ Call this method to read the data from a loyalty card. When you call this method
 
 ## Parameters
 
-- `request`: The object that you use to specify the request details, such   as the list of supported merchants.
+- `request`: The object that you use to specify the request details, such as the list of supported merchants.
 
 ## See Also
 

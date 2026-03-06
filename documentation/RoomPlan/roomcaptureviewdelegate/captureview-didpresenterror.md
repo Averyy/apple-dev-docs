@@ -27,7 +27,7 @@ With the `processedResult` argument, your app can alter the detailed captured ro
 ## Parameters
 
 - `processedResult`: A structure that provides detailed information about the dimensions and features of the scanned room.
-- `error`: An object that describes the problem when an error occurs; otherwise,  .
+- `error`: An object that describes the problem when an error occurs; otherwise, `nil`.
 
 ## See Also
 

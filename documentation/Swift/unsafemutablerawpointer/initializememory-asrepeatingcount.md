@@ -49,7 +49,7 @@ After calling this method on a raw pointer `p`, the region starting at `self` an
 
 - `type`: The type to bind this memory to.
 - `repeatedValue`: The instance to copy into memory.
-- `count`: The number of copies of   to copy into memory.    must not be negative.
+- `count`: The number of copies of `value` to copy into memory. `count` must not be negative.
 
 
 ---

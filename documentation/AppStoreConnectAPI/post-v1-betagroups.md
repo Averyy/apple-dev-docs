@@ -8,6 +8,10 @@ Create a beta group associated with an app, optionally enabling TestFlight publi
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaGroups`
+
 ## See Also
 
 - [Modify a Beta Group](patch-v1-betagroups-_id_.md)

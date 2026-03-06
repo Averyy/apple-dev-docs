@@ -26,6 +26,18 @@ object InAppPurchaseV2.Relationships
 - [object InAppPurchaseV2.Relationships.PricePoints](inapppurchasev2/relationships-data.dictionary/pricepoints-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.PromotedPurchase](inapppurchasev2/relationships-data.dictionary/promotedpurchase-data.dictionary.md)
 
+## Properties
+
+- `appStoreReviewScreenshot` (InAppPurchaseV2.Relationships.AppStoreReviewScreenshot)
+- `content` (InAppPurchaseV2.Relationships.Content)
+- `iapPriceSchedule` (InAppPurchaseV2.Relationships.IapPriceSchedule)
+- `images` (InAppPurchaseV2.Relationships.Images)
+- `inAppPurchaseAvailability` (InAppPurchaseV2.Relationships.InAppPurchaseAvailability)
+- `inAppPurchaseLocalizations` (InAppPurchaseV2.Relationships.InAppPurchaseLocalizations)
+- `offerCodes` (InAppPurchaseV2.Relationships.OfferCodes)
+- `pricePoints` (InAppPurchaseV2.Relationships.PricePoints)
+- `promotedPurchase` (InAppPurchaseV2.Relationships.PromotedPurchase)
+
 ## See Also
 
 - [object InAppPurchaseV2.Attributes](inapppurchasev2/attributes-data.dictionary.md)

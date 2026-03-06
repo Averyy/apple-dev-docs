@@ -14,6 +14,11 @@ A response that contains a single Android to iOS app mapping detail response res
 object AndroidToIosAppMappingDetailResponse
 ```
 
+## Properties
+
+- `data` (AndroidToIosAppMappingDetail) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetail](androidtoiosappmappingdetail.md)

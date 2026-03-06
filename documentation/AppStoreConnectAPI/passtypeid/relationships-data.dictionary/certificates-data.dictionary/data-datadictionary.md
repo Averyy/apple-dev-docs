@@ -14,6 +14,11 @@ The data structure that represents a pass type id resource.
 object PassTypeId.Relationships.Certificates.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

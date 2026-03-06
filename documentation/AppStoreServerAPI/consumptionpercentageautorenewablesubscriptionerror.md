@@ -14,6 +14,11 @@ An error that indicates the consumption percentage field is unsupported for auto
 object ConsumptionPercentageAutoRenewableSubscriptionError
 ```
 
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object ConsumptionPercentageOutOfRangeError](consumptionpercentageoutofrangeerror.md)

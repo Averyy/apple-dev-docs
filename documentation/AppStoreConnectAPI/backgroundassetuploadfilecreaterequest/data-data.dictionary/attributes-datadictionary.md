@@ -14,6 +14,13 @@ Attributes that describe a background asset upload file create request resource.
 object BackgroundAssetUploadFileCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `assetType` (string) *(required)*: - **`ASSET`**: the .aar file that contains your background assets
+- **`MANIFEST`**: The manifest you generate to describe the .aar file.
+- `fileName` (string) *(required)*
+- `fileSize` (int64) *(required)*
+
 
 ---
 

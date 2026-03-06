@@ -17,6 +17,19 @@ Read App Store information including your App Store state, age ratings, Brazil a
 
 For request and response examples for reading an age rating declaration, see [`Read age rating declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md).
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfos/{id}`
+
+## Parameters
+
+- `fields[appCategories]` ([string]): Fields to return for included related types.
+- `fields[appInfoLocalizations]` ([string]): Fields to return for included related types.
+- `fields[appInfos]` ([string]): Fields to return for included related types.
+- `include` ([string]): Relationship data to include in the response.
+- `limit[appInfoLocalizations]` (integer): Number of included related resources to return.
+- `fields[ageRatingDeclarations]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)

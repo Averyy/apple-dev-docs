@@ -25,8 +25,8 @@ If you provide a function for the `onfulfilled` parameter, `CancellablePromise` 
 
 ## Parameters
 
-- `onrejected`: An optional function   calls when the inner promise rejects.
-- `onfullfilled`: An optional function   calls when the inner promise resolves successfully.
+- `onrejected`: An optional function `CancellablePromise` calls when the inner promise rejects.
+- `onfullfilled`: An optional function `CancellablePromise` calls when the inner promise resolves successfully.
 
 
 ---

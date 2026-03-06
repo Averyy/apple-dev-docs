@@ -20,6 +20,10 @@ object AndroidToIosAppMappingDetailCreateRequest
 - [object AndroidToIosAppMappingDetailCreateRequest.Data](androidtoiosappmappingdetailcreaterequest/data-data.dictionary.md)
   The data structure that represents an Android to iOS app mapping detail of a create request resource.
 
+## Properties
+
+- `data` (AndroidToIosAppMappingDetailCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AndroidToIosAppMappingDetail](androidtoiosappmappingdetail.md)

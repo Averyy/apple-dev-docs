@@ -14,11 +14,31 @@ Choose an Apple Pay button that best fits with the terminology and flow of your 
 
 The following Apple Pay button values are available starting with Apple Pay on the Web version 2:
 
+- **`buy`**: A button with the text “Buy with” and the Apple Pay logo.
+- **`donate`**: A button with the text “Donate with” and the Apple Pay logo. Available in iOS 10.2 and later.
+- **`plain`**: A button with the Apple Pay logo only.
+- **`set-up`**: A button prompting the user to set up a card.  See [`openPaymentSetup`](applepaysession/openpaymentsetup.md) for an example of code to display the Set up Apple Pay button.
+
 The following Apple Pay button values are available starting with Apple Pay on the Web version 4:
+
+- **`book`**: A button with the text “Book with” and the Apple Pay logo.
+- **`check-out`**: A button with the text “Check out with” and the Apple Pay logo.
+- **`subscribe`**: A button with the text “Subscribe with” and the Apple Pay logo.
 
 The following Apple Pay button values are available starting with Apple Pay on the Web version 10:
 
+- **`add-money`**: A button with the text “Add money with” and the Apple Pay logo.
+- **`contribute`**: A button with the text “Contribute with” and the Apple Pay logo.
+- **`order`**: A button with the text “Order with” and the Apple Pay logo.
+- **`reload`**: A button with the text “Reload with” and the Apple Pay logo.
+- **`rent`**: A button with the text “Rent with” and the Apple Pay logo.
+- **`support`**: A button with the text “Support with” and the Apple Pay logo.
+- **`tip`**: A button with the text “Tip with” and the Apple Pay logo.
+- **`top-up`**: A button with the text “Top Up with” and the Apple Pay logo.
+
 The following Apple Pay button values are available starting with Apple Pay on the Web version 12:
+
+- **`continue`**: A button with the text “Continue with Apple Pay” and the Apple Pay logo.
 
 For more version information, see [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md).   For more information about button types and their usage, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

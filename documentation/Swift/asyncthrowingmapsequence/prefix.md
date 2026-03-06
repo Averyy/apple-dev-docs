@@ -41,7 +41,7 @@ If the count passed to `prefix(_:)` exceeds the number of elements in the base s
 
 ## Parameters
 
-- `count`: The maximum number of elements to return. The value of    must be greater than or equal to zero.
+- `count`: The maximum number of elements to return. The value of `count` must be greater than or equal to zero.
 
 
 ---

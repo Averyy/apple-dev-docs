@@ -32,7 +32,7 @@ The closure is allowed to throw an error at any point during initialization at w
 
 ## Parameters
 
-- `body`: A closure that returns an owned   to emplace at   the passed in index.
+- `body`: A closure that returns an owned `Element` to emplace at the passed in index.
 
 
 ---

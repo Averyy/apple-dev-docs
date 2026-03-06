@@ -12,6 +12,26 @@ Remove an alternative distribution key from your account.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/52c5cb04-1163-4a30-ad4f-a3433cd6a4f6
+```
+
+**Response**:
+
+```json
+204
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `alternativeDistributionKey` resource ID from the [`Read an app’s alternative distribution key`](get-v1-apps-_id_-alternativedistributionkey.md) response.
+
 ## See Also
 
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)

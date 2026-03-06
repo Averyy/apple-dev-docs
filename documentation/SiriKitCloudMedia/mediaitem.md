@@ -14,6 +14,13 @@ A particular piece of media that an intent references, such as a song, podcast e
 object MediaItem
 ```
 
+## Properties
+
+- `identifier` (string) *(required)*: An identifier for the media item that’s stable within the [`Session`](session.md) and unique among all media of this `type` within this `Session`.
+- `title` (string): The name of this media item.
+- `artist` (string): The performer of this media item.
+- `type` (MediaItemType) *(required)*: The media item’s type.
+
 ## See Also
 
 - [type MediaReference](mediareference.md)

@@ -14,6 +14,13 @@ A response that contains a list of Profiles resources.
 object ProfilesResponse
 ```
 
+## Properties
+
+- `data` ([Profile]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List and Download Profiles](get-v1-profiles.md)

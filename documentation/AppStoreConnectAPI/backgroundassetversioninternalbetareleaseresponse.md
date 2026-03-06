@@ -14,6 +14,12 @@ A response that contains a single background asset version internal beta release
 object BackgroundAssetVersionInternalBetaReleaseResponse
 ```
 
+## Properties
+
+- `data` (BackgroundAssetVersionInternalBetaRelease) *(required)*
+- `included` ([BackgroundAssetVersion])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

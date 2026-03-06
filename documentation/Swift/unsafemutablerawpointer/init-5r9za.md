@@ -26,7 +26,7 @@ Use this initializer to explicitly convert `other` to an `UnsafeMutableRawPointe
 
 ## Parameters
 
-- `other`: The typed pointer to convert. If   is  , the   result is  .
+- `other`: The typed pointer to convert. If `other` is `nil`, the result is `nil`.
 
 
 ---

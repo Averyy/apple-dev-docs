@@ -73,9 +73,9 @@ for x in stride(from: 0, through: 10, by: -1) {
 
 ## Parameters
 
-- `start`: The starting value to use for the sequence. If the sequence   contains any values, the first one is  .
-- `end`: An end value to limit the sequence.   is an element of   the resulting sequence if and only if it can be produced from     using steps of  .
-- `stride`: The amount to step by with each iteration. A positive    iterates upward; a negative   iterates downward.
+- `start`: The starting value to use for the sequence. If the sequence contains any values, the first one is `start`.
+- `end`: An end value to limit the sequence. `end` is an element of the resulting sequence if and only if it can be produced from `start` using steps of `stride`.
+- `stride`: The amount to step by with each iteration. A positive `stride` iterates upward; a negative `stride` iterates downward.
 
 ## See Also
 

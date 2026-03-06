@@ -23,7 +23,7 @@ func relative<C>(to collection: C) -> Range<Self.Bound> where C : Collection, Se
 
 #### Return Value
 
-A range suitable for slicing `collection`. The returned range is  guaranteed to be inside the bounds of `collection`. Callers should apply the same preconditions to the return value as they would to a range provided directly by the user.
+A range suitable for slicing `collection`. The returned range is *not* guaranteed to be inside the bounds of `collection`. Callers should apply the same preconditions to the return value as they would to a range provided directly by the user.
 
 #### Discussion
 
@@ -56,7 +56,7 @@ let numbersPrefix = numbers[upToFour]
 
 ## Parameters
 
-- `collection`: The collection to evaluate this range expression   in relation to.
+- `collection`: The collection to evaluate this range expression in relation to.
 
 
 ---

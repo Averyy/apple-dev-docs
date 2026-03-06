@@ -12,6 +12,11 @@
 object AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

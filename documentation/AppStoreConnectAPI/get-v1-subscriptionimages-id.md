@@ -8,6 +8,15 @@ Read details about a specific subscription image.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionImages/{id}`
+
+## Parameters
+
+- `fields[subscriptionImages]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create an image for a subscription](post-v1-subscriptionimages.md)

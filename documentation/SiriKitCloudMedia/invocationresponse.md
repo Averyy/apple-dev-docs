@@ -25,6 +25,13 @@ object InvocationResponse
 - [type ServiceDebugReference](servicedebugreference.md)
   A URI that references debugging information for a request.
 
+## Properties
+
+- `result` (InvocationResponse.Result) *(required)*: The outcome of handling the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+- `metrics` (ExecutionMetrics): Performance details about processing the request.
+- `debug` (ServiceDebugReference): A URI for additional data about this request. Only include this property in debugging or staging environments, not in production.
+
 ## Relationships
 
 ### Inherited By

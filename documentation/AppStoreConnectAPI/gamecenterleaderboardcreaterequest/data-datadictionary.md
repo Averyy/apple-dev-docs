@@ -21,6 +21,12 @@ object GameCenterLeaderboardCreateRequest.Data
 - [type GameCenterLeaderboardFormatter](gamecenterleaderboardformatter.md)
   The values you can select to describe the format of a leaderboard.
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterLeaderboardCreateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

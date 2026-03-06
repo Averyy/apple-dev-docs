@@ -26,6 +26,12 @@ Only provide one of the optional properties. If a client receives a result with 
 - [object PlaybackQueueLocationResolutionResult.ConfirmationRequired](playbackqueuelocationresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the playback mode before proceeding.
 
+## Properties
+
+- `class` (string): The specific type of result.
+- `success` (PlaybackQueueLocationResolutionResult.Success): A queue location that matches the intent.
+- `confirmationRequired` (PlaybackQueueLocationResolutionResult.ConfirmationRequired): A queue location for the user to confirm or reject before proceeding.
+
 ## Relationships
 
 ### Inherits From

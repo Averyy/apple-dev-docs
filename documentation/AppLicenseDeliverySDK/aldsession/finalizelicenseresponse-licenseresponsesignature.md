@@ -29,7 +29,7 @@ For more information, see [`Licensing alternative distribution apps`](licensing-
 
 ## Parameters
 
-- `licenseResponse`: The license created by  .
+- `licenseResponse`: The license created by [`generateLicenseResponse()`](aldsession/generatelicenseresponse().md).
 - `signature`: A signature for the license, signed by the signing certificate private key.
 
 

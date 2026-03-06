@@ -32,6 +32,27 @@ Get a list of leaderboards for a specific Game Center group.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/gameCenterLeaderboardsV2`
+
+## Parameters
+
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
+- `fields[gameCenterLeaderboardVersions]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `filter[archived]` ([string])
+- `filter[id]` ([string])
+- `filter[referenceName]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[gameCenterLeaderboardSets]` (integer)
+- `limit[versions]` (integer)
+
 ## See Also
 
 - [Read group information](get-v1-gamecentergroups.md)

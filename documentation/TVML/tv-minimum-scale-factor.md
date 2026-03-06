@@ -10,6 +10,8 @@ Use the `tv-minimum-scale-factor` style for text that does not fit in the availa
 
 ##### Values for Tv Minimum Scale Factor
 
+- **Float**: The maximum amount, as a percentage, that a font can be minimized in order to fit in the available space. Valid values are from `0.0` to `1.0`.
+
 ##### Elements That Use Tv Minimum Scale Factor
 
 - [`description`](description.md)

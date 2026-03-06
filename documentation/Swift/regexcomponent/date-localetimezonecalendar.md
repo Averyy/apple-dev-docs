@@ -47,10 +47,10 @@ let date = match.1 // date == Jul 31, 2022 at 12:00 AM PST
 
 ## Parameters
 
-- `style`: A   to use when matching date substrings.
+- `style`: A [`Date.FormatStyle.DateStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle) to use when matching date substrings.
 - `locale`: The locale to use when matching date substrings. Matching uses this locale to evaluate the order of date components. It also uses the locale’s language for date format styles that use words.
-- `timeZone`: The time zone to use when returning a captured  . The returned date’s time value is   in this time zone.
-- `calendar`: The calendar to use when matching date substrings. If  , matching uses the default calendar of the specified  .
+- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/Foundation/Date). The returned date’s time value is `00:00:00` in this time zone.
+- `calendar`: The calendar to use when matching date substrings. If `nil`, matching uses the default calendar of the specified `locale`.
 
 ## See Also
 

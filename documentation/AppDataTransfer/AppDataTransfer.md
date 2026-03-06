@@ -29,9 +29,15 @@ To get permission for your App ID or Services ID to request these scopes, follow
 
 When you make requests for your app’s App Store information or app-install activity, using any of the endpoints listed below, set the following HTTP headers:
 
+- **`Authorization`**: Set the value to `Bearer <ACCESS_TOKEN>` to assert that your app is authorized to fetch data with the `appstore-info-account-data-for-EU-users`and `appstore-info-account-data-for-UK-users` or `app-install-activity-account-data-for-EU-users` or `app-install-activity-account-data-for-UK-users`  scopes.
+- **`X-Apple-Transaction-Id`**: Set the value to a UUID that uniquely identifies the request. If you need to contact Apple to get support, quote the UUID of the request for which you need help.
+
 ##### Submit a Request
 
 Make an HTTP `POST` request to the [`Submit request`](submit-request.md) endpoint, requesting the `app-store` data type. To make a one-time request, set the `mode` key to `ONE_TIME`. To make recurring requests, use one of the following values:
+
+- **`DAILY_30`**: One recurring request every day for 30 days
+- **`WEEKLY_180`**: One recurring request every week for 180 days
 
 The Apple server returns a request ID, which you use when you get the request status, request download URLs, or cancel the request. For recurring requests, the Apple server returns a request ID, along with the parent ID that identifies the series of recurring requests.
 

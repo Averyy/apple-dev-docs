@@ -12,6 +12,14 @@
 object GameCenterLeaderboardImage.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object GameCenterLeaderboardImage.Relationships](gamecenterleaderboardimage/relationships-data.dictionary.md)

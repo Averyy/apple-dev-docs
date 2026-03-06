@@ -14,6 +14,13 @@ The name and location of an airport.
 object Airport
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `iataCode` (string) *(required)*: The airport’s official three-letter identifier.
+- `name` (string): The name of the airport.
+- `address` (PostalAddress): The location of the airport.
+
 ## See Also
 
 - [object Flight](flight.md)

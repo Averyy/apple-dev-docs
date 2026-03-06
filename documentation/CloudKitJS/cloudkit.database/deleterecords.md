@@ -23,8 +23,13 @@ A `Promise` object that resolves to a [`CloudKit.RecordsResponse`](cloudkit.reco
 
 ## Parameters
 
-- `records`: Possible values are:
-- `options`: A dictionary containing a single   key that identifies the zone ( ) in the database where the record resides. If the   parameter is omitted, the default zone is used.
+- `records`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.Record`](cloudkit.record.md) | A dictionary or the record name of the record to delete. |
+| `CloudKit.Record[]` | An array of records to delete. |
+| `String` | The name of a record to delete. |
+| `String[]` | An array of names of records to delete. |
+- `options`: A dictionary containing a single `zoneID` key that identifies the zone ([`CloudKit.ZoneID`](cloudkit.zoneid.md)) in the database where the record resides. If the `options` parameter is omitted, the default zone is used.
 
 ## See Also
 

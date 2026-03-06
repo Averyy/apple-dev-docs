@@ -18,6 +18,12 @@ object GameCenterAchievementLocalizationCreateRequest.Data
 - [object GameCenterAchievementLocalizationCreateRequest.Data.Attributes](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementLocalizationCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterAchievementLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

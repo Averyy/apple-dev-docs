@@ -12,6 +12,26 @@ Delete a localization that’s associated with a leaderboard.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations/5a75be8c-225a-4fd4-b51f-d33876c2c79b
+```
+
+**Response**:
+
+```json
+HTTP/1.1 204 No Content
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard localization information](get-v2-gamecenterleaderboardlocalizations-_id_.md)

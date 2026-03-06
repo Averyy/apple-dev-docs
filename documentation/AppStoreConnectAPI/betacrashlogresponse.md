@@ -14,6 +14,11 @@ A response that contains a single beta crash log response resource.
 object BetaCrashLogResponse
 ```
 
+## Properties
+
+- `data` (BetaCrashLog) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaCrashLog](betacrashlog.md)

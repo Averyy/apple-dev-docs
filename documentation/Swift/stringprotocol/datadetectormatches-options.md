@@ -72,7 +72,7 @@ func underline(text: String) async -> AttributedString {
 
 ## Parameters
 
-- `options`: The   to customize the search.
+- `options`: The `DataDetector.Options` to customize the search.
 
 
 ---

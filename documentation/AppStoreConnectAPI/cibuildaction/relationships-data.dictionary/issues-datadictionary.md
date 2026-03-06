@@ -12,6 +12,10 @@
 object CiBuildAction.Relationships.Issues
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

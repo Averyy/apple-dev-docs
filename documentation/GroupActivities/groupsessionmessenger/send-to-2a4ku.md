@@ -25,7 +25,7 @@ Use this method to send data that you package into a custom class or structure. 
 
 ## Parameters
 
-- `participants`: The recipients of the message. The default value of this   parameter is the set of all active participants in the session. Use the    option to specify a subset of participants.
+- `participants`: The recipients of the message. The default value of this parameter is the set of all active participants in the session. Use the [`Participants.only(_:)`](participants/only(_:)-swift.enum.case.md) option to specify a subset of participants.
 
 ## See Also
 

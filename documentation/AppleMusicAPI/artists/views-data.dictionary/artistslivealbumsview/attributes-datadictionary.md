@@ -14,6 +14,10 @@ Albums associated with the artist and categorized as live performances.
 object Artists.Views.ArtistsLiveAlbumsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

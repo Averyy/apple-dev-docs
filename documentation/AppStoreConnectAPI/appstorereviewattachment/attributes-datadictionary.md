@@ -14,6 +14,14 @@ Attributes that describe an App Store Review Attachments resource.
 object AppStoreReviewAttachment.Attributes
 ```
 
+## Properties
+
+- `assetDeliveryState` (AppMediaAssetState)
+- `fileName` (string)
+- `fileSize` (integer)
+- `sourceFileChecksum` (string)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object AppStoreReviewAttachment.Relationships](appstorereviewattachment/relationships-data.dictionary.md)

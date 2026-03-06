@@ -20,6 +20,12 @@ object CiMacOsVersion.Relationships.XcodeVersions
 - [object CiMacOsVersion.Relationships.XcodeVersions.Data](cimacosversion/relationships-data.dictionary/xcodeversions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Xcode Versions resource.
 
+## Properties
+
+- `data` ([CiMacOsVersion.Relationships.XcodeVersions.Data]): The ID and type of the related Xcode Versions resource.
+- `links` (RelationshipLinks): The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 
 ---
 

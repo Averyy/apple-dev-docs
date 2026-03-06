@@ -12,6 +12,11 @@
 object SubscriptionGracePeriodResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionGracePeriod) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [type SubscriptionGracePeriodDuration](subscriptiongraceperiodduration.md)

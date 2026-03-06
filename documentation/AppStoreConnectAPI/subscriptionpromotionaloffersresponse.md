@@ -12,6 +12,13 @@
 object SubscriptionPromotionalOffersResponse
 ```
 
+## Properties
+
+- `data` ([SubscriptionPromotionalOffer]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionPromotionalOffer](subscriptionpromotionaloffer.md)

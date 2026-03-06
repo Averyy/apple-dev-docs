@@ -46,7 +46,7 @@ The sequence must be finite.
 
 ## Parameters
 
-- `predicate`: A closure that takes each element of the sequence   as its argument and returns a Boolean value indicating whether   the element should be included in the count.
+- `predicate`: A closure that takes each element of the sequence as its argument and returns a Boolean value indicating whether the element should be included in the count.
 
 
 ---

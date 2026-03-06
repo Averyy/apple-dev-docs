@@ -14,6 +14,11 @@ A user request for your service to fulfill.
 object Intent
 ```
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of intent.
+- `identifier` (string) *(required)*: The unique identifier for this intent object.
+
 ## Relationships
 
 ### Inherited By

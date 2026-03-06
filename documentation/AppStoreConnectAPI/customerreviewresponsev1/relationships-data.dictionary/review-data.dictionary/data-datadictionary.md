@@ -14,6 +14,11 @@ The type and ID of a resource that you’re relating with the resource you’re 
 object CustomerReviewResponseV1.Relationships.Review.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the `customerReviews` resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

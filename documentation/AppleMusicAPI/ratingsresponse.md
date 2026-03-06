@@ -14,6 +14,10 @@ The response to a request for a rating.
 object RatingsResponse
 ```
 
+## Properties
+
+- `data` ([Ratings]) *(required)*: The [`Ratings`](ratings.md) included in the response for the request.
+
 ## See Also
 
 - [object Ratings](ratings.md)

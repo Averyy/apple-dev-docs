@@ -12,6 +12,19 @@ Get a list of subscription price points and their equivalent in a specified curr
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionPricePoints/{id}/equalizations`
+
+## Parameters
+
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[territories]` ([string])
+- `filter[subscription]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Read Subscription Price Point Information](get-v1-subscriptionpricepoints-_id_.md)

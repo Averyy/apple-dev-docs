@@ -20,6 +20,10 @@ object LibrarySearchResponse
 - [object LibrarySearchResponse.Results](librarysearchresponse/results-data.dictionary.md)
   An object that represents the results of a library search query.
 
+## Properties
+
+- `results` (LibrarySearchResponse.Results) *(required)*: The results included in the response to a request for a library search.
+
 ## See Also
 
 - [object SearchResponse](searchresponse.md)

@@ -24,11 +24,11 @@ mutating func reserveCapacity(_ n: Int)
 
 Because a Unicode scalar value can require more than a single ASCII character’s worth of storage, additional allocation may be necessary when adding to a Unicode scalar view after a call to `reserveCapacity(_:)`.
 
-> **Note**: O(), where  is the capacity being reserved.
+> **Note**: O(*n*), where *n* is the capacity being reserved.
 
 ## Parameters
 
-- `n`: The minimum number of ASCII character’s worth of storage   to allocate.
+- `n`: The minimum number of ASCII character’s worth of storage to allocate.
 
 
 ---

@@ -22,6 +22,13 @@ object RelationshipViewResponse
 - [object RelationshipViewResponse.Meta](relationshipviewresponse/meta-data.dictionary.md)
   Contextual data about the view.
 
+## Properties
+
+- `attributes` (RelationshipViewResponse.Attributes): The attribute metadata for the view.
+- `data` ([Resource]) *(required)*: A paginated collection of resources in the view.
+- `meta` (RelationshipViewResponse.Meta): Contextual data about the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+
 
 ---
 

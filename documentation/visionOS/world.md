@@ -166,9 +166,9 @@ Picker("Satellite", selection: $selection) {
 
 When you add 3D effects to a 2D window, keep this guidance in mind:
 
--  These kinds of effects add interest, but can unintentionally obscure important controls or information as people view the window from different directions.
--  Excess depth causes elements to clip. Account for any position or orientation changes that might occur after initial placement.
--  Again, account for potential movement after initial placement.
+- **Don’t overdo it.** These kinds of effects add interest, but can unintentionally obscure important controls or information as people view the window from different directions.
+- **Ensure that elements don’t exceed the available depth.** Excess depth causes elements to clip. Account for any position or orientation changes that might occur after initial placement.
+- **Avoid models intersecting with the backing glass.** Again, account for potential movement after initial placement.
 
 ##### Show Earths Relationship to Its Satellites in an Immersive Space
 

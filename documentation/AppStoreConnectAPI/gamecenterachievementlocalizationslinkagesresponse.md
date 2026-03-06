@@ -17,6 +17,12 @@ object GameCenterAchievementLocalizationsLinkagesResponse
 ### Dictionaries
 - [object GameCenterAchievementLocalizationsLinkagesResponse.Data](gamecenterachievementlocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterAchievementLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

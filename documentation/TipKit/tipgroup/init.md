@@ -22,7 +22,7 @@ init(_ priority: TipGroup.Priority = .firstAvailable, @Tips.GroupBuilder _ build
 
 ## Parameters
 
-- `priority`: Presentation priority of the tips. The default value is  .
+- `priority`: Presentation priority of the tips. The default value is [`TipGroup.Priority.firstAvailable`](tipgroup/priority/firstavailable.md).
 - `builder`: The tips to display.
 
 

@@ -8,6 +8,8 @@ Create a photo that extends to both edges of the display, with captions that app
 
 In [`Adding a Divider`](adding-a-divider.md), you created a divider and used a `ComponentLayout` object to extend the divider to the right edge of the display. Here, you’ll do something similar—you’ll use a `ComponentLayout` object to position a photo against both edges of the display.
 
+**On this page, you’ll learn how to:**
+
 - Add a `photo` component to display an image in your article.
 - Add two types of captions: one that appears in the article layout and another that appears when the image is in full screen.
 - Make the photo bleed to both edges of the display by using the `ignoreDocumentMargin` property with a value of `"true"`.

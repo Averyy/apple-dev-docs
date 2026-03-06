@@ -22,6 +22,12 @@ object CustomerReviewResponseV1CreateRequest.Data
 - [object CustomerReviewResponseV1CreateRequest.Data.Relationships](customerreviewresponsev1createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `attributes` (CustomerReviewResponseV1CreateRequest.Data.Attributes) *(required)*: The attributes of the customer review response, including its text content.
+- `relationships` (CustomerReviewResponseV1CreateRequest.Data.Relationships) *(required)*: Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

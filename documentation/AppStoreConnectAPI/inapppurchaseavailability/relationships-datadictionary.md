@@ -17,6 +17,10 @@ object InAppPurchaseAvailability.Relationships
 ### Objects
 - [object InAppPurchaseAvailability.Relationships.AvailableTerritories](inapppurchaseavailability/relationships-data.dictionary/availableterritories-data.dictionary.md)
 
+## Properties
+
+- `availableTerritories` (InAppPurchaseAvailability.Relationships.AvailableTerritories)
+
 ## See Also
 
 - [object InAppPurchaseAvailability.Attributes](inapppurchaseavailability/attributes-data.dictionary.md)

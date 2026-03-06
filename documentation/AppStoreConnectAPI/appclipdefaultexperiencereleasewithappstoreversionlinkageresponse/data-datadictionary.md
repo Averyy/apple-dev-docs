@@ -14,6 +14,11 @@ The data element of the response body.
 object AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the response.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -8,6 +8,15 @@ Get information about a specific response you wrote to a customer review, includ
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/customerReviewResponses/{id}`
+
+## Parameters
+
+- `fields[customerReviewResponses]` ([string]): Fields to return for the included related types.
+- `include` ([string]): Relationship data to include in the response.
+
 ## See Also
 
 - [Get a Customer Review Response](get-v1-customerreviews-_id_-response.md)

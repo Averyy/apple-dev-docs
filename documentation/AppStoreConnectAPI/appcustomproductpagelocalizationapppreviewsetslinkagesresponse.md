@@ -20,6 +20,12 @@ object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse
 - [object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse.Data](appcustomproductpagelocalizationapppreviewsetslinkagesresponse/data-data.dictionary.md)
   The request body you use to update an app custom product page localization app preview sets linkages response.
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppKeyword](appkeyword.md)

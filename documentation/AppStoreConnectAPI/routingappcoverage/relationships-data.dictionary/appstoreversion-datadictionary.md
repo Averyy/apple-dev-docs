@@ -20,6 +20,10 @@ object RoutingAppCoverage.Relationships.AppStoreVersion
 - [object RoutingAppCoverage.Relationships.AppStoreVersion.Data](routingappcoverage/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (RoutingAppCoverage.Relationships.AppStoreVersion.Data)
+
 
 ---
 

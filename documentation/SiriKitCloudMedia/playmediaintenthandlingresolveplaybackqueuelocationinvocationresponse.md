@@ -20,6 +20,11 @@ object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse
 - [object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result](playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse/result-data.dictionary.md)
   The result of resolving the queue location for a play media intent.
 
+## Properties
+
+- `result` (PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result) *(required)*: The result of processing the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

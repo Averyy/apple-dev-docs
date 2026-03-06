@@ -14,6 +14,10 @@ The request body you use to modify an in-app purchase offer code custom code upd
 object InAppPurchaseOfferCodeCustomCodeUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+
 
 ---
 

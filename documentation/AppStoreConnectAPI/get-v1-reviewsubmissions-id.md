@@ -8,6 +8,17 @@ Read information about a specific review submisison.
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/reviewSubmissions/{id}`
+
+## Parameters
+
+- `fields[reviewSubmissionItems]` ([string])
+- `fields[reviewSubmissions]` ([string])
+- `include` ([string])
+- `limit[items]` (integer)
+
 ## See Also
 
 - [List review submissions for an app](get-v1-reviewsubmissions.md)

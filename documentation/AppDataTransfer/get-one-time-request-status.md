@@ -10,6 +10,34 @@ Find the status of a one-time download request.
 
 #### Overview
 
+**Request**:
+
+```None
+% curl -X GET \
+  -H "Authorization: Bearer [ACCESS_TOKEN]" \
+  -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
+  -H "Accept: application/json" \
+  https://appdatatransfer.apple.com/api/transfer/appdata/11619695-72C0-4FFD-858A-1E152DCF0838
+```
+
+**Response**:
+
+```None
+{
+  "jobStatus": "in_progress",
+  "status": "success",
+  "statusCheckDelay": 86400
+}
+```
+
+## Endpoint
+
+`GET https://appdatatransfer.apple.com/api/transfer/appdata/{requestId}`
+
+## Parameters
+
+- `requestId` (string) *(required)*: A UUID that identifies the download request.
+
 ## See Also
 
 - [Get recurring request status](get-recurring-request-status.md)

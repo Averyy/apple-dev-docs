@@ -12,6 +12,10 @@
 object ReviewSubmissionItem.Attributes
 ```
 
+## Properties
+
+- `state` (string)
+
 ## See Also
 
 - [object ReviewSubmissionItem.Relationships](reviewsubmissionitem/relationships-data.dictionary.md)

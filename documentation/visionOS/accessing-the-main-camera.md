@@ -30,7 +30,7 @@ To help protect people’s privacy, visionOS limits app access to cameras and ot
 
 The code example below accesses and displays the main camera feed, which is a stereo camera that consists of left and right cameras. A person can configure the app to display the left, right, or combined stereo frames, with or without rectification, at one of two resolutions.
 
-The `MainCameraView` renders two instances of `CameraFrameView`, one to display a preview of the left camera feed and another to display a preview of the right camera feed. The left and right previews are instances of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer), and `CameraSessionManager` manages their updates. `CameraSessionManager` accesses camera frames using ARKit and renders them to their respective display layers. The `MainCameraView` uses a doc://com.apple.documentation/documentation/SwiftUI/View/task(priority:_:) modifier to run `CameraSessionManager`.
+The `MainCameraView` renders two instances of `CameraFrameView`, one to display a preview of the left camera feed and another to display a preview of the right camera feed. The left and right previews are instances of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer), and `CameraSessionManager` manages their updates. `CameraSessionManager` accesses camera frames using ARKit and renders them to their respective display layers. The `MainCameraView` uses a [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:)) modifier to run `CameraSessionManager`.
 
 ```swift
 struct MainCameraView: View {

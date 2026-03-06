@@ -20,6 +20,10 @@ object AppTag.Relationships
 - [object AppTag.Relationships.Territories](apptag/relationships-data.dictionary/territories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `territories` (AppTag.Relationships.Territories)
+
 ## See Also
 
 - [object AppTag.Attributes](apptag/attributes-data.dictionary.md)

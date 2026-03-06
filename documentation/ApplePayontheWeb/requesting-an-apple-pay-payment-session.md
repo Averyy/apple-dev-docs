@@ -12,6 +12,9 @@ Use a new Apple Pay payment session for each transaction.
 
 Your server posts a request using mutual TLS (mTLS) by calling the Apple Pay server’s Payment Session endpoint.
 
+- **Endpoint (Global)**: `POST https://apple-pay-gateway.apple.com/paymentservices/paymentSession`
+- **Endpoint (China region)**: `POST https://cn-apple-pay-gateway.apple.com/paymentservices/paymentSession`
+
 The endpoint returns an opaque Apple Pay session object for Apple Pay on the web, Apple Pay on macOS, and for Apple Pay in Apple Messages for Business.
 
 For Apple Pay on the web, you can also use the endpoint `POST https://<validation URL>/paymentSession` with a fully qualified validation URL that you receive in [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md). Be sure to allow all of the domains listed in [`Setting Up Your Server`](setting-up-your-server.md).
@@ -21,6 +24,11 @@ For Apple Pay on the web, you can also use the endpoint `POST https://<validatio
 ##### Provide Request Parameters
 
 Use the merchant identity certificate associated with your merchant ID in the request. See [`Configuring Your Environment`](configuring-your-environment.md) for more information.
+
+- **`merchantIdentifier`**: Your merchant ID. For payment platforms registering merchants through the [`Apple Pay Web Merchant Registration API`](https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI), this should be the `partnerInternalMerchantIdentifier` defined for the each registered merchant.
+- **`displayName`**: A string of 64 or fewer UTF-8 characters containing the canonical name for your store, suitable for display. A good display name remains a consistent value for the store and doesn’t contain dynamic values such as incrementing order numbers. Don’t localize the name. Use only characters from the supported character sets in the fonts listed in the table below.
+- **`initiative`**: A predefined value that identifies the e-commerce application making the request.
+- **`initiativeContext`**: A value you provide based on the initiative.
 
 The values for `initiative` and `initiativeContext` depend on the kind of application you’re building:
 

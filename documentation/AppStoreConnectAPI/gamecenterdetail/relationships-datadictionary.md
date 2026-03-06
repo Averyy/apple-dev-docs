@@ -43,6 +43,30 @@ object GameCenterDetail.Relationships
 - [object GameCenterDetail.Relationships.GameCenterLeaderboardsV2](gamecenterdetail/relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary.md)
   The data and links that describe the Game Center leaderboards of the Game Center detail.
 
+## Properties
+
+- `achievementReleases` (GameCenterDetail.Relationships.AchievementReleases)
+- `app` (GameCenterDetail.Relationships.App)
+- `defaultGroupLeaderboard` (GameCenterDetail.Relationships.DefaultGroupLeaderboard)
+- `defaultLeaderboard` (GameCenterDetail.Relationships.DefaultLeaderboard)
+- `gameCenterAchievements` (GameCenterDetail.Relationships.GameCenterAchievements)
+- `gameCenterAppVersions` (GameCenterDetail.Relationships.GameCenterAppVersions)
+- `gameCenterGroup` (GameCenterDetail.Relationships.GameCenterGroup)
+- `gameCenterLeaderboards` (GameCenterDetail.Relationships.GameCenterLeaderboards)
+- `gameCenterLeaderboardSets` (GameCenterDetail.Relationships.GameCenterLeaderboardSets)
+- `leaderboardReleases` (GameCenterDetail.Relationships.LeaderboardReleases)
+- `leaderboardSetReleases` (GameCenterDetail.Relationships.LeaderboardSetReleases)
+- `activityReleases` (GameCenterDetail.Relationships.ActivityReleases)
+- `challengeReleases` (GameCenterDetail.Relationships.ChallengeReleases)
+- `challengesMinimumPlatformVersions` (GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions)
+- `defaultGroupLeaderboardV2` (GameCenterDetail.Relationships.DefaultGroupLeaderboardV2)
+- `defaultLeaderboardV2` (GameCenterDetail.Relationships.DefaultLeaderboardV2)
+- `gameCenterAchievementsV2` (GameCenterDetail.Relationships.GameCenterAchievementsV2)
+- `gameCenterActivities` (GameCenterDetail.Relationships.GameCenterActivities)
+- `gameCenterChallenges` (GameCenterDetail.Relationships.GameCenterChallenges)
+- `gameCenterLeaderboardSetsV2` (GameCenterDetail.Relationships.GameCenterLeaderboardSetsV2)
+- `gameCenterLeaderboardsV2` (GameCenterDetail.Relationships.GameCenterLeaderboardsV2)
+
 ## See Also
 
 - [object GameCenterDetail.Attributes](gamecenterdetail/attributes-data.dictionary.md)

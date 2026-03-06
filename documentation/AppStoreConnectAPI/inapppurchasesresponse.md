@@ -14,6 +14,13 @@ A response that contains a list of In-App Purchases resources.
 object InAppPurchasesResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchase]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+- `included` ([App])
+
 ## See Also
 
 - [object App](app.md)

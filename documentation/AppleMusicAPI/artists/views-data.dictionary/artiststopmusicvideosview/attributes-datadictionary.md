@@ -14,6 +14,10 @@ Relevant music videos associated with the artist.
 object Artists.Views.ArtistsTopMusicVideosView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

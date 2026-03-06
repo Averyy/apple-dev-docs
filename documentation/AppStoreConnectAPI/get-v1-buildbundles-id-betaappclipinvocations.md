@@ -8,6 +8,18 @@ Get all App Clip invocations you configure for testing for a specific build bund
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildBundles/{id}/betaAppClipInvocations`
+
+## Parameters
+
+- `fields[betaAppClipInvocationLocalizations]` ([string]): Additional fields to include for each Beta App Clip Invocation resource returned by the response.
+- `fields[betaAppClipInvocations]` ([string]): Additional fields to include for each Beta App Clip Invocation resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The number of Beta App Clip Invocations resources to return.
+- `limit[betaAppClipInvocationLocalizations]` (integer): The number of included Beta App Clip Invocations resources to return if the beta App Clip invocation localizations relationship is included.
+
 ## See Also
 
 - [Read the App Clip Domain Cache Status Information for a Build Bundle](get-v1-buildbundles-_id_-appclipdomaincachestatus.md)

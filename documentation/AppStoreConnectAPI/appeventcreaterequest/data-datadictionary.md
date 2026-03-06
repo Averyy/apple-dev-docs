@@ -18,6 +18,12 @@ object AppEventCreateRequest.Data
 - [object AppEventCreateRequest.Data.Attributes](appeventcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object AppEventCreateRequest.Data.Relationships](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppEventCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

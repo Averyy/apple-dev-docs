@@ -20,6 +20,11 @@ object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse
 - [object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result](addmediaintenthandlingresolvemediadestinationinvocationresponse/result-data.dictionary.md)
   The result of attempting to modify the user’s library or a playlist.
 
+## Properties
+
+- `result` (AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result) *(required)*: The results of processing the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

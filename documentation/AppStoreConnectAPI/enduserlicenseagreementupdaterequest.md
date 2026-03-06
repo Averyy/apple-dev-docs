@@ -20,6 +20,10 @@ object EndUserLicenseAgreementUpdateRequest
 - [object EndUserLicenseAgreementUpdateRequest.Data](enduserlicenseagreementupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (EndUserLicenseAgreementUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreement](enduserlicenseagreement.md)

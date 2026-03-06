@@ -14,6 +14,12 @@ A response that contains a single in-app purchase offer code custom code resourc
 object InAppPurchaseOfferCodeCustomCodeResponse
 ```
 
+## Properties
+
+- `data` (InAppPurchaseOfferCodeCustomCode) *(required)*
+- `included` ([Actor])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

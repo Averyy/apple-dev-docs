@@ -20,6 +20,10 @@ object CiBuildRun.Relationships.Workflow
 - [object CiBuildRun.Relationships.Workflow.Data](cibuildrun/relationships-data.dictionary/workflow-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Workflows resource.
 
+## Properties
+
+- `data` (CiBuildRun.Relationships.Workflow.Data): The ID and type of the related Workflows resource.
+
 ## See Also
 
 - [object CiBuildRun.Relationships.Builds](cibuildrun/relationships-data.dictionary/builds-data.dictionary.md)

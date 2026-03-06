@@ -12,6 +12,10 @@
 object ScmRepository.Relationships.GitReferences
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

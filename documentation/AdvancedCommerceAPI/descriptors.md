@@ -14,6 +14,11 @@ The display name and description of a subscription product.
 object Descriptors
 ```
 
+## Properties
+
+- `description` (description) *(required)*: A string that contains a description of the product. This string is not displayed to customers.
+- `displayName` (displayName) *(required)*: A string that contains the name of the product, suitable for display to customers.
+
 ## See Also
 
 - [object Offer](offer.md)

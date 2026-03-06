@@ -14,6 +14,13 @@ An object that describes the user’s request to add media items to their librar
 object AddMediaIntent
 ```
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of intent.
+- `mediaItems` ([MediaItem]): The media items to add to the user’s library or to a playlist.
+- `mediaSearch` (MediaSearch): Parameters that describe the media items to add to the user’s library or to a playlist.
+- `mediaDestination` (MediaDestination): The library or playlist to modify.
+
 ## Relationships
 
 ### Inherits From

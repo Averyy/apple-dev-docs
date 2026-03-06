@@ -22,7 +22,7 @@ mutating func formUnion(_ other: RangeSet<Bound>)
 
 #### Discussion
 
-> **Note**: O( + ), where  and  are the number of ranges in this and the other range set.
+> **Note**: O(*m* + *n*), where *m* and *n* are the number of ranges in this and the other range set.
 
 ## Parameters
 

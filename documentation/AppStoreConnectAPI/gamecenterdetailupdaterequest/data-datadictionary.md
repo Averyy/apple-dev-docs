@@ -18,6 +18,13 @@ object GameCenterDetailUpdateRequest.Data
 - [object GameCenterDetailUpdateRequest.Data.Attributes](gamecenterdetailupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object GameCenterDetailUpdateRequest.Data.Relationships](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterDetailUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `relationships` (GameCenterDetailUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

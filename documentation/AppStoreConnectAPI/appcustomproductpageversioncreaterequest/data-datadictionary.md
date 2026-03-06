@@ -19,6 +19,12 @@ object AppCustomProductPageVersionCreateRequest.Data
   Attributes that describe an app customer product page version create request resource.
 - [object AppCustomProductPageVersionCreateRequest.Data.Relationships](appcustomproductpageversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppCustomProductPageVersionCreateRequest.Data.Attributes)
+- `relationships` (AppCustomProductPageVersionCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

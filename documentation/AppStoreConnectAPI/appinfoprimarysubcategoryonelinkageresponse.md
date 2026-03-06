@@ -17,6 +17,11 @@ object AppInfoPrimarySubcategoryOneLinkageResponse
 ### Dictionaries
 - [object AppInfoPrimarySubcategoryOneLinkageResponse.Data](appinfoprimarysubcategoryonelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppInfoPrimarySubcategoryOneLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

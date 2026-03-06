@@ -17,6 +17,13 @@ object SandboxTesterV2
 ### Objects
 - [object SandboxTesterV2.Attributes](sandboxtesterv2/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SandboxTesterV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SandboxTesterV2Response](sandboxtesterv2response.md)

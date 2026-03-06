@@ -16,7 +16,7 @@ final var checksum: String?
 
 #### Discussion
 
-If you make a remote binary framework available as a Swift package, declare a remote, or , binary target in your package manifest with [`binaryTarget(name:url:checksum:)`](target/binarytarget(name:url:checksum:).md). Always run `swift package compute-checksum path/to/MyFramework.zip` at the command line to make sure you create a correct SHA256 checksum.
+If you make a remote binary framework available as a Swift package, declare a remote, or *URL-based*, binary target in your package manifest with [`binaryTarget(name:url:checksum:)`](target/binarytarget(name:url:checksum:).md). Always run `swift package compute-checksum path/to/MyFramework.zip` at the command line to make sure you create a correct SHA256 checksum.
 
 For more information, see [`Distributing binary frameworks as Swift packages`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages).
 

@@ -17,6 +17,11 @@ object BuildAppStoreVersionLinkageResponse
 ### Dictionaries
 - [object BuildAppStoreVersionLinkageResponse.Data](buildappstoreversionlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BuildAppStoreVersionLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Build](build.md)

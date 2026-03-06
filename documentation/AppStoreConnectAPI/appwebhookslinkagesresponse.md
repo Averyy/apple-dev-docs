@@ -17,6 +17,12 @@ object AppWebhooksLinkagesResponse
 ### Dictionaries
 - [object AppWebhooksLinkagesResponse.Data](appwebhookslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppWebhooksLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Webhook](webhook.md)

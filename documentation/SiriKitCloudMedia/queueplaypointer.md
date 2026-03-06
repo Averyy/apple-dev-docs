@@ -14,6 +14,11 @@ A position within a playback queue.
 object QueuePlayPointer
 ```
 
+## Properties
+
+- `contentIdentifier` (ContentIdentifier): The current content.
+- `offsetInMillis` (int64): The number of milliseconds into the playback progress of the current content. It’s the point where playback resumes after pausing.
+
 ## See Also
 
 - [object Queue](queue.md)

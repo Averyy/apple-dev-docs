@@ -8,6 +8,10 @@ Create a release for an achievement and a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterAchievementReleases`
+
 ## See Also
 
 - [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)

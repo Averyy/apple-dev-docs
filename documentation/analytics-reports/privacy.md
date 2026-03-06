@@ -10,6 +10,9 @@ The data reports in the Analytics Reports framework help you manage and run your
 
 Data in the framework’s reports is aggregated, and similar users are in groups, which means individual user data is not easily identifiable. To balance data privacy with usability, the framework applies two approaches as needed to specific reports:
 
+- **Thresholding**: Omits values with data from fewer than 5 users or 5 unique devices.
+- **Noise**: Adds a small random number to metrics.
+
 These privacy measures maximize utility as the volume of data increases, while also helping protect users identities. The framework applies the same privacy measures across daily, weekly, and monthly reports for the same type of content, ensuring that utility increases as more data is collected over longer periods of time. To maintain stability, the threshold and random noise that the framework initially applies remains constant across multiple requests for the same report.
 
 > **Note**: For privacy information for reports not listed in this article, see the Privacy section in each report.
@@ -17,6 +20,9 @@ These privacy measures maximize utility as the volume of data increases, while a
 #### Understand Standard and Detailed Report Types
 
 In some reports, data might be more sensitive than it is in others. To help protect user privacy, the framework provides two types of reports:
+
+- **Standard**: Does not include sensitive fields easily relatable to user data.
+- **Detailed**: Includes all fields and applies threshold and noise measures to help protect uniquely identifiable user data.
 
 Detailed reports provide values with a small amount of noise and omit data from values that have fewer than 5 users or 5 unique devices. Except for the specific cases detailed below, metrics in the detailed reports are noised so that, approximately:
 
@@ -57,6 +63,9 @@ Users who opt in to share app usage data with Apple and developers do so with th
 
 Because the [`App Store Purchases`](app-store-purchase.md) report contains several metrics that are highly relatable, for example, paying users, purchases, sales in USD, and proceeds in USD, the detailed report calculates noise once and applies it to all metrics. This approach ensures that the report has internal consistency across metrics, even with noise applied:
 
+- **Metrics**: Paying users, purchases, sales in USD, and proceeds in USD
+- **Noise**: Adds a small random number to paying users and purchases metric values then uses this number to calculate the noised sales and proceeds.
+
 Paying user data is noised so that, approximately:
 
 - 68.2% of values are expected be within +/- 2 of the true values.
@@ -79,6 +88,9 @@ The following report has dollar-valued metrics:
 #### Understand Session Duration in Specific Detailed Report Types
 
 In the [`App Sessions`](app-sessions.md) and [`App Clip Usage`](app-clip-usage.md) detailed reports, the total session duration metric can be more variable with user data when you compare it to other metrics such as unique devices. The framework calculates session duration noise accordingly while ensuring data usability. Other metrics in these reports are noised as previously described. The framework calculates a tailored level of noise for the session duration metric for each detailed report row. This approach reflects how different users use your app:
+
+- **Metrics**: Total session duration
+- **Noise**: Standard deviation calculated by dividing the average session duration for each detailed report row by 4
 
 For each detailed report row, the total session duration is noised so that, approximately:
 

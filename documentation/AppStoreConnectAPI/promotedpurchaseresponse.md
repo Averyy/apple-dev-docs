@@ -12,6 +12,12 @@
 object PromotedPurchaseResponse
 ```
 
+## Properties
+
+- `data` (PromotedPurchase) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

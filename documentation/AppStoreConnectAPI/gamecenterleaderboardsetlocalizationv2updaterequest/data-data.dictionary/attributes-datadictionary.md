@@ -16,6 +16,10 @@ object GameCenterLeaderboardSetLocalizationV2UpdateRequest.Data.Attributes
 
 - name:
 
+## Properties
+
+- `name` (string)
+
 
 ---
 

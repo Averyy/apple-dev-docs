@@ -14,6 +14,13 @@ An object that describes a user’s stated preference regarding media items.
 object UpdateMediaAffinityIntent
 ```
 
+## Properties
+
+- `class` (string) *(required)*: The specific type of intent.
+- `affinityType` (MediaAffinityType): The user’s preference for the media items.
+- `mediaItems` ([MediaItem]): Specific media items the user expresses a preference for.
+- `mediaSearch` (MediaSearch): The description of the media items the user expresses a preference for.
+
 ## Relationships
 
 ### Inherits From

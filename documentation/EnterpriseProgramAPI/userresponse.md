@@ -11,6 +11,11 @@ A response that contains a single Users resource.
 object UserResponse
 ```
 
+## Properties
+
+- `data` (User) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object User](user.md)

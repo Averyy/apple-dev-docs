@@ -12,9 +12,9 @@ Safari supports inspecting all webpages, service workers, and extensions. The wa
 
 In Safari, there are two ways to begin inspecting a webpage.
 
-The first is via the [`Develop menu`](develop-menu.md). With the webpage you wish to inspect frontmost in Safari, go to the  menu and choose  (⌥⌘I). [`Web Inspector`](web-inspector.md) will then appear, and will be inspecting the webpage.
+The first is via the [`Develop menu`](develop-menu.md). With the webpage you wish to inspect frontmost in Safari, go to the **Develop** menu and choose **Show Web Inspector** (⌥⌘I). [`Web Inspector`](web-inspector.md) will then appear, and will be inspecting the webpage.
 
-The second way to show Web Inspector is to right click on the webpage and choose  from the context menu. Web Inspector will then appear, and will have automatically highlighted the element you clicked on on the webpage.
+The second way to show Web Inspector is to right click on the webpage and choose **Inspect Element** from the context menu. Web Inspector will then appear, and will have automatically highlighted the element you clicked on on the webpage.
 
 Once opened, Web Inspector will continue to inspect the tab for which it was opened, even as you navigate to other pages in that tab.
 
@@ -22,7 +22,7 @@ Once opened, Web Inspector will continue to inspect the tab for which it was ope
 
 [`Service workers`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are shared between webpages and don’t necessarily belong to any individual webpage. For this reason, they are inspectable separately from webpages in Safari.
 
-When a service worker is running, you can inspect it by going to the  menu, selecting , and then choosing the service worker you wish to inspect.
+When a service worker is running, you can inspect it by going to the **Develop** menu, selecting **Service Workers**, and then choosing the service worker you wish to inspect.
 
 #### Inspecting Extensions
 
@@ -34,11 +34,11 @@ To debug the scripts that web extensions have injected into webpages, first [`in
 
 ##### Background Scripts
 
-To debug background scripts, open the  menu and go to the  submenu. From there, select background script for the extension you wish to inspect.
+To debug background scripts, open the **Develop** menu and go to the **Web Extension Background Pages** submenu. From there, select background script for the extension you wish to inspect.
 
 ##### Toolbar Pop Up
 
-To debug your extension’s pop-up, click the button for your extension in the Safari toolbar to display the pop-up. Control-click the pop-up and select  to open Web Inspector for the pop-up.
+To debug your extension’s pop-up, click the button for your extension in the Safari toolbar to display the pop-up. Control-click the pop-up and select **Inspect Element** to open Web Inspector for the pop-up.
 
 ## See Also
 

@@ -14,6 +14,13 @@ A response that contains a list of Repositories resources.
 object ScmRepositoriesResponse
 ```
 
+## Properties
+
+- `data` ([ScmRepository]) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object ScmRepository](scmrepository.md)

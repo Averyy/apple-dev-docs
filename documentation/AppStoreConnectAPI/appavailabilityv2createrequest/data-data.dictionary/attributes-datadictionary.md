@@ -12,6 +12,10 @@
 object AppAvailabilityV2CreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `availableInNewTerritories` (boolean) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2CreateRequest.Data.Relationships](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

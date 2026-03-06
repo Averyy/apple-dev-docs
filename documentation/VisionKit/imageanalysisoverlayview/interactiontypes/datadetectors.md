@@ -20,7 +20,7 @@ static let dataDetectors: ImageAnalysisOverlayView.InteractionTypes
 
 #### Discussion
 
-People interact with , or UI that highlights each instance of the recognized formats in text that’s on an image. The data detectors appear without a Live Text button, because people can’t interact with other text with this option.
+People interact with *data detectors*, or UI that highlights each instance of the recognized formats in text that’s on an image. The data detectors appear without a Live Text button, because people can’t interact with other text with this option.
 
 ## See Also
 

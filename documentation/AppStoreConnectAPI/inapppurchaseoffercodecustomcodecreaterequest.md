@@ -20,6 +20,10 @@ object InAppPurchaseOfferCodeCustomCodeCreateRequest
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary.md)
   The request body you use to create an in-app purchase offer code custom code.
 
+## Properties
+
+- `data` (InAppPurchaseOfferCodeCustomCodeCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

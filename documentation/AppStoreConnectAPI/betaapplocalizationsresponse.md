@@ -14,6 +14,13 @@ A response that contains a list of Beta App Localization resources.
 object BetaAppLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([BetaAppLocalization]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([App])
+
 ## See Also
 
 - [List Beta App Localizations](get-v1-betaapplocalizations.md)

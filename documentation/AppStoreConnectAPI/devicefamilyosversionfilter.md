@@ -14,6 +14,12 @@ The object that you use to specify a device family and operating system to use f
 object DeviceFamilyOsVersionFilter
 ```
 
+## Properties
+
+- `deviceFamily` (DeviceFamily): String that represents a device family.
+- `maximumOsInclusive` (string)
+- `minimumOsInclusive` (string)
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)

@@ -8,6 +8,14 @@ Remove access to a specific build for all beta testers in one or more beta group
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/betaGroups`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Add Access for Beta Groups to a Build](post-v1-builds-_id_-relationships-betagroups.md)

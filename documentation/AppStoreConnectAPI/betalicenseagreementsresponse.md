@@ -14,6 +14,13 @@ A response that contains a list of Beta License Agreement resources.
 object BetaLicenseAgreementsResponse
 ```
 
+## Properties
+
+- `data` ([BetaLicenseAgreement]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([App])
+
 ## See Also
 
 - [List Beta License Agreements](get-v1-betalicenseagreements.md)

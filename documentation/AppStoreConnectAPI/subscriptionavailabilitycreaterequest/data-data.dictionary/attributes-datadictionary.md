@@ -12,6 +12,10 @@
 object SubscriptionAvailabilityCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `availableInNewTerritories` (boolean) *(required)*
+
 ## See Also
 
 - [object SubscriptionAvailabilityCreateRequest.Data.Relationships](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.md)

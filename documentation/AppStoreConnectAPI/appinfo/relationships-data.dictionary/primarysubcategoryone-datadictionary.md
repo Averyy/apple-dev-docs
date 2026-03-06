@@ -20,6 +20,11 @@ object AppInfo.Relationships.PrimarySubcategoryOne
 - [object AppInfo.Relationships.PrimarySubcategoryOne.Data](appinfo/relationships-data.dictionary/primarysubcategoryone-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppInfo.Relationships.PrimarySubcategoryOne.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object AppInfo.Relationships.App](appinfo/relationships-data.dictionary/app-data.dictionary.md)

@@ -28,7 +28,7 @@ A `Package.Dependency` instance.
 
 - `name`: The name of the package, or nil to deduce it from the URL.
 - `url`: The valid Git URL of the package.
-- `branch`: A dependency requirement. See static methods on   for available options.
+- `branch`: A dependency requirement. See static methods on [`Package.Dependency.Requirement`](package/dependency/requirement-swift.enum.md) for available options.
 
 ## See Also
 

@@ -25,7 +25,7 @@ The method identified by `selector` must take a single argument—whose value is
 
 ## Parameters
 
-- `argument`: The value for the parameter of the message identified by   .
+- `argument`: The value for the parameter of the message identified by `selector`.
 
 ## See Also
 

@@ -24,6 +24,14 @@ object ScmProvider
 ### Dictionaries
 - [object ScmProvider.Relationships](scmprovider/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (ScmProvider.Attributes): The attributes that describe the Providers resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Providers resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (ScmProvider.Relationships)
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object ScmProviderResponse](scmproviderresponse.md)

@@ -17,6 +17,11 @@ object AppStoreVersionAppStoreVersionPhasedReleaseLinkageResponse
 ### Dictionaries
 - [object AppStoreVersionAppStoreVersionPhasedReleaseLinkageResponse.Data](appstoreversionappstoreversionphasedreleaselinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionAppStoreVersionPhasedReleaseLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

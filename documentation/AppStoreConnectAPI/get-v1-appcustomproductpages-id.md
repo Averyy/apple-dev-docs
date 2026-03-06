@@ -12,6 +12,53 @@ Get information about a specific app custom product page.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "appCustomProductPages",
+    "id": "eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+    "attributes": {
+      "name": "Custom Product Page May 1",
+      "url": "https://apps.apple.com/us/app/gersey-numba/id1526908970?ppid=eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+      "visible": false
+    },
+    "relationships": {
+      "appCustomProductPageVersions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3/relationships/appCustomProductPageVersions",
+          "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3/appCustomProductPageVersions"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCustomProductPages/{id}`
+
+## Parameters
+
+- `fields[appCustomProductPageVersions]` ([string])
+- `fields[appCustomProductPages]` ([string])
+- `include` ([string])
+- `limit[appCustomProductPageVersions]` (integer)
+
 ## See Also
 
 - [Create a custom product page](post-v1-appcustomproductpages.md)

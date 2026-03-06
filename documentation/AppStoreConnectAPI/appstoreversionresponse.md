@@ -14,6 +14,12 @@ A response that contains a single App Store Versions resource.
 object AppStoreVersionResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersion) *(required)*
+- `links` (DocumentLinks) *(required)*
+- `included` ([*])
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

@@ -46,11 +46,11 @@ The `sink` closure is called with each resulting UTF-32 code unit as the functio
 
 ## Parameters
 
-- `input`: An iterator of code units to be translated, encoded as   . If   is  , the entire iterator will   be exhausted. Otherwise, iteration will stop if an encoding error is   detected.
-- `inputEncoding`: The Unicode encoding of  .
+- `input`: An iterator of code units to be translated, encoded as `inputEncoding`. If `stopOnError` is `false`, the entire iterator will be exhausted. Otherwise, iteration will stop if an encoding error is detected.
+- `inputEncoding`: The Unicode encoding of `input`.
 - `outputEncoding`: The destination Unicode encoding.
-- `stopOnError`: Pass   to stop translation when an encoding error is   detected in  . Otherwise, a Unicode replacement character   ( ) is inserted for each detected error.
-- `processCodeUnit`: A closure that processes one   code   unit at a time.
+- `stopOnError`: Pass `true` to stop translation when an encoding error is detected in `input`. Otherwise, a Unicode replacement character (`"\u{FFFD}"`) is inserted for each detected error.
+- `processCodeUnit`: A closure that processes one `outputEncoding` code unit at a time.
 
 
 ---

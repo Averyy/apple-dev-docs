@@ -22,6 +22,14 @@ object Songs
 - [object Songs.Relationships](songs/relationships-data.dictionary.md)
   The relationships for a song resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the song.
+- `type` (string) *(required)*: This value is always `songs`.
+- `href` (string) *(required)*: The relative location for the song resource.
+- `attributes` (Songs.Attributes): The attributes for the song.
+- `relationships` (Songs.Relationships): The relationships for the song.
+
 ## See Also
 
 - [object SongsResponse](songsresponse.md)

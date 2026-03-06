@@ -14,6 +14,11 @@ The data structure that represents a subscription introductory offers linkages r
 object SubscriptionIntroductoryOffersLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

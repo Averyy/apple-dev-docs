@@ -17,6 +17,12 @@ object AppBetaFeedbackCrashSubmissionsLinkagesResponse
 ### Dictionaries
 - [object AppBetaFeedbackCrashSubmissionsLinkagesResponse.Data](appbetafeedbackcrashsubmissionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppBetaFeedbackCrashSubmissionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object App](app.md)

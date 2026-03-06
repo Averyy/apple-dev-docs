@@ -24,7 +24,7 @@ This method doesn’t change the map’s visible region. Use [`showItems(items, 
 
 ## Parameters
 
-- `items`: An array of annotations, overlays, or the data returned from   to display on the map.
+- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) to display on the map.
 
 ## See Also
 

@@ -26,7 +26,7 @@ Use this initializer to explicitly convert `other` to an `UnsafeRawPointer` inst
 
 ## Parameters
 
-- `other`: The mutable raw pointer to convert. If   is   , the result is  .
+- `other`: The mutable raw pointer to convert. If `other` is `nil`, the result is `nil`.
 
 
 ---

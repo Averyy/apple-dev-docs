@@ -14,6 +14,13 @@ A response that contains a list of in-app purchase offer price resources.
 object InAppPurchaseOfferPricesResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchaseOfferPrice]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

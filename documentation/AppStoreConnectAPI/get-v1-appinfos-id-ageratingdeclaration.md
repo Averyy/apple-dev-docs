@@ -18,6 +18,54 @@ Responses for this endpoint include `contests` or `gambling` properties. In an a
 
 ##### Read the Age Rating Declaration
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/appInfos/994af4c0-ff6c-fdb9-e053-d23ab111187e/ageRatingDeclaration
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "ageRatingDeclarations",
+    "id": "994af4c0-ff6c-fdb9-e053-d23ab111187e",
+    "attributes": {
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "FREQUENT_OR_INTENSE",
+      "gambling": false,
+      "gamblingSimulated": "NONE",
+      "kidsAgeBand": null,
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "unrestrictedWebAccess": false,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "violenceRealistic": "NONE"
+    },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/994af4c0-ff6c-fdb9-e053-d23ab111187e"
+  }
+},
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appInfos/994af4c0-ff6c-fdb9-e053-d23ab111187e/ageRatingDeclaration"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfos/{id}/ageRatingDeclaration`
+
+## Parameters
+
+- `fields[ageRatingDeclarations]` ([string])
+
 ## See Also
 
 - [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)

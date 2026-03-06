@@ -17,6 +17,12 @@ object AppEventScreenshotUpdateRequest.Data
 ### Objects
 - [object AppEventScreenshotUpdateRequest.Data.Attributes](appeventscreenshotupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventScreenshotUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -17,6 +17,12 @@ object GameCenterDetail.Relationships.GameCenterAppVersions
 ### Objects
 - [object GameCenterDetail.Relationships.GameCenterAppVersions.Data](gamecenterdetail/relationships-data.dictionary/gamecenterappversions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetail.Relationships.GameCenterAppVersions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterDetail.Relationships.AchievementReleases](gamecenterdetail/relationships-data.dictionary/achievementreleases-data.dictionary.md)

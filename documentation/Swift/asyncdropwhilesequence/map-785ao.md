@@ -54,7 +54,7 @@ do {
 
 ## Parameters
 
-- `transform`: A mapping closure.   accepts an element   of this sequence as its parameter and returns a transformed value of the   same or of a different type.   can also throw an error, which   ends the transformed sequence.
+- `transform`: A mapping closure. `transform` accepts an element of this sequence as its parameter and returns a transformed value of the same or of a different type. `transform` can also throw an error, which ends the transformed sequence.
 
 
 ---

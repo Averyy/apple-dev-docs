@@ -27,7 +27,7 @@ The default implementation of this initializer is available to all types that co
 ## Parameters
 
 - `file`: A URL to a file on disk.
-- `contentType`: An optional content type for creating a value.   If a value is not provided, the initializer tries to infer it from   the file extension or its metadata. If the content type is still unknown,   the framework calls the first transfer representation with this URL.   If the item isn’t imported successfully, the framework calls the second representation and   so on.
+- `contentType`: An optional content type for creating a value. If a value is not provided, the initializer tries to infer it from the file extension or its metadata. If the content type is still unknown, the framework calls the first transfer representation with this URL. If the item isn’t imported successfully, the framework calls the second representation and so on.
 
 
 ---

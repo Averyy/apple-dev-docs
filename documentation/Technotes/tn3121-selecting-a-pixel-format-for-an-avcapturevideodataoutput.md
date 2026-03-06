@@ -10,7 +10,7 @@ AVCaptureVideoDataOutput is capable of outputting pixel buffers to your app in m
 
 #### Avoid Defaulting to Bgra
 
-A common mistake is to  to selecting ‘BGRA’ as the output format. This format is not a native capture format, which means that AVCapture has to perform a conversion to deliver this format. Additionally, this format requires significantly more memory than many of the native capture formats.
+A common mistake is to *default* to selecting ‘BGRA’ as the output format. This format is not a native capture format, which means that AVCapture has to perform a conversion to deliver this format. Additionally, this format requires significantly more memory than many of the native capture formats.
 
 Consider a common scenario where the [`activeFormat`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/activeFormat) of the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) is configured to capture in ‘420v’:
 
@@ -50,8 +50,8 @@ As an example, iPhone 13 Pro supports the following output pixel formats:
 
 The ideal output pixel format for your app will depend on how your app utilizes the pixel buffers that it receives from the video data output, as well the requirements that you have for your app. There is no exact formula that can be applied to identify this format, but here are a few questions to consider:
 
-- Can your app work with bi-planar YpCbCr pixel buffers, or does it  BGRA pixel buffers?
-- Can your app work with compressed pixel buffers, or does it  uncompressed pixel buffers?
+- Can your app work with bi-planar YpCbCr pixel buffers, or does it *require* BGRA pixel buffers?
+- Can your app work with compressed pixel buffers, or does it *require* uncompressed pixel buffers?
 - Does your app want to deliver 10-bit high dynamic range content?
 
 Consider the following example scenarios, which are intended to help guide you in selecting the output pixel format for your app:
@@ -66,7 +66,7 @@ In a scenario where your app can utilize a compressed pixel format, always reque
 
 #### Revision History
 
--  First published.
+- **2022-03-29** First published.
 
 ## See Also
 

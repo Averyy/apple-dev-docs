@@ -14,6 +14,11 @@ Attributes that describe a subscription purchase image request resource.
 object InAppPurchaseImageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string)
+- `uploaded` (boolean)
+
 
 ---
 

@@ -28,8 +28,8 @@ The region of memory starting at this pointer and covering `count` instances of 
 
 ## Parameters
 
-- `source`: A pointer to at least   initialized instances of type   . The memory regions referenced by   and this   pointer may overlap.
-- `count`: The number of instances to copy from the memory referenced by    to this pointer’s memory.   must not be negative.
+- `source`: A pointer to at least `count` initialized instances of type `Pointee`. The memory regions referenced by `source` and this pointer may overlap.
+- `count`: The number of instances to copy from the memory referenced by `source` to this pointer’s memory. `count` must not be negative.
 
 
 ---

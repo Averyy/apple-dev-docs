@@ -26,7 +26,12 @@ See [`Fetching Subscriptions by Identifier (subscriptions/lookup)`](https://deve
 
 ## Parameters
 
-- `subscriptions`: Possible values are:
+- `subscriptions`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.Subscription`](cloudkit.subscription.md) | A subscription in the database to fetch. |
+| `CloudKit.Subscription[]` | An array of subscriptions to fetch. |
+| `String` | The ID of a subscription to fetch. |
+| `String[]` | An array of IDs of the subscriptions to fetch. |
 
 ## See Also
 

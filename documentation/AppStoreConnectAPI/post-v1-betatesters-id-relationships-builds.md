@@ -8,6 +8,14 @@ Individually assign a beta tester to a build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaTesters/{id}/relationships/builds`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Add a Beta Tester to Beta Groups](post-v1-betatesters-_id_-relationships-betagroups.md)

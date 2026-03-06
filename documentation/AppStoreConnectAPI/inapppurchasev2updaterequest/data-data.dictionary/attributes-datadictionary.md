@@ -12,6 +12,12 @@
 object InAppPurchaseV2UpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `familySharable` (boolean)
+- `name` (string)
+- `reviewNote` (string)
+
 
 ---
 

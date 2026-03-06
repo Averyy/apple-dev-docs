@@ -14,6 +14,12 @@ Attributes that describe a challenge resource.
 object GameCenterChallengeLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `locale` (string) *(required)*
+- `name` (string) *(required)*
+
 
 ---
 

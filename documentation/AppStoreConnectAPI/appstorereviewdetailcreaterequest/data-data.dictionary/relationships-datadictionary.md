@@ -20,6 +20,10 @@ object AppStoreReviewDetailCreateRequest.Data.Relationships
 - [object AppStoreReviewDetailCreateRequest.Data.Relationships.AppStoreVersion](appstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `appStoreVersion` (AppStoreReviewDetailCreateRequest.Data.Relationships.AppStoreVersion) *(required)*
+
 ## See Also
 
 - [object AppStoreReviewDetailCreateRequest.Data.Attributes](appstorereviewdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

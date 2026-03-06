@@ -18,8 +18,8 @@ Use system library targets to adapt a library installed on the system to work wi
 ## Parameters
 
 - `name`: The name of the target.
-- `path`: The custom path for the target. By default, a targets sources   are expected to be located in the predefined search paths, such as   . Do not escape the package root;   that is, values like   or   are invalid.
-- `pkgConfig`: The name of the   file for this system library.
+- `path`: The custom path for the target. By default, a targets sources are expected to be located in the predefined search paths, such as `[PackageRoot]/Sources/[TargetName]`. Do not escape the package root; that is, values like `../Foo` or `/Foo` are invalid.
+- `pkgConfig`: The name of the `pkg-config` file for this system library.
 - `providers`: The providers for this system library.
 
 ## See Also

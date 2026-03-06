@@ -21,6 +21,10 @@ To receive server notifications from the App Store, provide your secure serverâ€
 
 Upon receiving a server notification, respond to the App Store with an HTTP status code of `200-206` if the post was successful. If the post was unsuccessful, send HTTP `50x` or `40x` to have the App Store retry the notification. For more information, see [`Responding to App Store Server Notifications`](responding-to-app-store-server-notifications.md).
 
+## Endpoint
+
+`POST https://example.com/v2`
+
 ## See Also
 
 - [object responseBodyV2](responsebodyv2.md)

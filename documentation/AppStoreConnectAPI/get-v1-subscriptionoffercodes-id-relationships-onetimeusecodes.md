@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}/relationships/oneTimeUseCodes`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)

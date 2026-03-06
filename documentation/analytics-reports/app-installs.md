@@ -16,7 +16,7 @@ Use the data in this report to estimate the number of times people install and d
 - Completeness: Within five days. Weekly and monthly reports are complete by default.
 - History: On request, data is available beginning from January 1, 2024.
 - Privacy: - Includes data from users who have opted to share their data with Apple and developers. Data is provided only when events exist from at least five users for the respective report.
-- Data is available in two reports: standard and detailed.  reports include fields not easily related to uniquely identifiable user data.  reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+- Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
 
 App Download Date
 

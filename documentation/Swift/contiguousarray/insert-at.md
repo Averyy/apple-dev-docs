@@ -33,12 +33,12 @@ print(numbers)
 // Prints "[1, 2, 3, 100, 4, 5, 200]"
 ```
 
-> **Note**: O(), where  is the length of the array. If `i == endIndex`, this method is equivalent to `append(_:)`.
+> **Note**: O(*n*), where *n* is the length of the array. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
 ## Parameters
 
 - `newElement`: The new element to insert into the array.
-- `i`: The position at which to insert the new element.    must be a valid index of the array or equal to its    property.
+- `i`: The position at which to insert the new element. `index` must be a valid index of the array or equal to its `endIndex` property.
 
 
 ---

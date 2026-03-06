@@ -29,9 +29,9 @@ Users must resolve any errors that you report on the Apple Pay sheet before they
 
 The details you provide in an Apple Pay error include:
 
--  — An error code that identifies the area of the error.
--  — The specific field on the payment sheet with the error.
--  — Your custom error message to display on the payment sheet.
+- **code** — An error code that identifies the area of the error.
+- **contactField** — The specific field on the payment sheet with the error.
+- **message** — Your custom error message to display on the payment sheet.
 
 For example, if you found an error in the postal code of the shipping address, create an [`ApplePayError`](applepayerror.md) with the custom message text `"ZIP Code is invalid"`, as follows:
 

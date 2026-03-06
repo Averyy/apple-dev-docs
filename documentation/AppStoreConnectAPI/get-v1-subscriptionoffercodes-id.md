@@ -8,6 +8,21 @@ Get details about a specific subscription offer that has offer codes for an auto
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}`
+
+## Parameters
+
+- `fields[subscriptionOfferCodeCustomCodes]` ([string])
+- `fields[subscriptionOfferCodeOneTimeUseCodes]` ([string])
+- `fields[subscriptionOfferCodePrices]` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
+- `include` ([string])
+- `limit[customCodes]` (integer)
+- `limit[oneTimeUseCodes]` (integer)
+- `limit[prices]` (integer)
+
 ## See Also
 
 - [Create a Subscription Offer](post-v1-subscriptionoffercodes.md)

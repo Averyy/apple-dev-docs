@@ -8,6 +8,14 @@ Remove a user on your team’s access to one or more apps.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/users/{id}/relationships/visibleApps`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [List All Apps Visible to a User](get-v1-users-_id_-visibleapps.md)

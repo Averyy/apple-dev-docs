@@ -26,7 +26,7 @@ subscript(i: InlineArray<count, Element>.Index) -> Element { get set }
 
 ## Parameters
 
-- `i`: The position of the element to access.   must be a valid   index of the array that is not equal to the   property.
+- `i`: The position of the element to access. `i` must be a valid index of the array that is not equal to the `endIndex` property.
 
 
 ---

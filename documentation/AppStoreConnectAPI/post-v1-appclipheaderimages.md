@@ -8,6 +8,10 @@ Reserve an image asset that appears on the App Clip card of a default App Clip e
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appClipHeaderImages`
+
 ## Request Body
 
 The request body you use to create an App Clip header image.

@@ -36,7 +36,7 @@ This method initializes the buffer with the contents of `source` until `source` 
 ## Parameters
 
 - `type`: The type of element to which this buffer’s memory will be bound.
-- `source`: A buffer referencing the values to copy.   The memory region underlying   must be initialized.
+- `source`: A buffer referencing the values to copy. The memory region underlying `source` must be initialized.
 
 
 ---

@@ -8,6 +8,10 @@ Invite a user with assigned user roles to join your team.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/userInvitations`
+
 ## See Also
 
 - [Cancel a User Invitation](delete-v1-userinvitations-_id_.md)

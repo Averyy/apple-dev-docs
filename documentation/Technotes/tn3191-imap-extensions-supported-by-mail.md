@@ -38,7 +38,7 @@ Below are the IMAP extensions that Mail for iOS, iPadOS, and visionOS uses, with
 
 #### Revision History
 
--  First published.
+- **2025-08-27** First published.
 
 ## See Also
 

@@ -12,6 +12,10 @@ Create a custom code for an in-app purchase offer code.
 
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodeCustomCodes`
+
 ## See Also
 
 - [List all custom codes for an in-app purchase offer code](get-v1-inapppurchaseoffercodes-_id_-customcodes.md)

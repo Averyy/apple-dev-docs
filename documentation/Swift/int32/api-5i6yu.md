@@ -22,7 +22,7 @@ static func | (lhs: Int32, rhs: Int32) -> Int32
 
 #### Discussion
 
-A bitwise OR operation results in a value that has each bit set to `1` where  of its arguments have that bit set to `1`. For example:
+A bitwise OR operation results in a value that has each bit set to `1` where *one or both* of its arguments have that bit set to `1`. For example:
 
 ```swift
 let x: UInt8 = 5          // 0b00000101

@@ -14,6 +14,10 @@ A media item that successfully matches the intent.
 object PlayMediaMediaItemResolutionResult.Success
 ```
 
+## Properties
+
+- `resolvedMediaItem` (MediaItem) *(required)*: The song, album, podcast, or other media item that the user wants to play.
+
 ## See Also
 
 - [object PlayMediaMediaItemResolutionResult.Unsupported](playmediamediaitemresolutionresult/unsupported-data.dictionary.md)

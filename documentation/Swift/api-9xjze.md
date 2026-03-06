@@ -45,7 +45,7 @@ In this example, `goodNumber` is assigned a value of `100` because `Int("100")` 
 ## Parameters
 
 - `optional`: An optional value.
-- `defaultValue`: A value to use as a default.   is the same   type as the   type of  .
+- `defaultValue`: A value to use as a default. `defaultValue` is the same type as the `Wrapped` type of `optional`.
 
 ## See Also
 

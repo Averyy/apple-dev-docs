@@ -43,7 +43,7 @@ extension Archive: Transferable {
 
 ## Parameters
 
-- `condition`: A closure that determines whether the item is exportable.   Don’t perform long-running work in this closure.   It shouldn’t contain network requests, file operations,   or other potentially time-consuming tasks as they   can cause delays during operations with   items.
+- `condition`: A closure that determines whether the item is exportable. Don’t perform long-running work in this closure. It shouldn’t contain network requests, file operations, or other potentially time-consuming tasks as they can cause delays during operations with `Transferable` items.
 
 
 ---

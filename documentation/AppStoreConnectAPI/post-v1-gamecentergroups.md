@@ -8,6 +8,10 @@ Add a new group.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterGroups`
+
 ## See Also
 
 - [Read group information](get-v1-gamecentergroups.md)

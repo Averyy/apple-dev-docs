@@ -15,8 +15,8 @@ Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain key
 
 The API provides resources to automate the following areas of the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com):
 
-- . Manage bundle IDs, capabilities, signing certificates, devices, and provisioning profiles.
-- . Send invitations for users to join your team. Adjust their level of access or remove users.
+- **Provisioning**. Manage bundle IDs, capabilities, signing certificates, devices, and provisioning profiles.
+- **Users and Roles**. Send invitations for users to join your team. Adjust their level of access or remove users.
 
 The Enterprise Program API returns responses from resources that are consistent JSON data and contain links to additional related resources.
 

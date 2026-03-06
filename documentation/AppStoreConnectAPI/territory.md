@@ -20,6 +20,13 @@ object Territory
 - [object Territory.Attributes](territory/attributes-data.dictionary.md)
   Attributes that describe a Territories resource.
 
+## Properties
+
+- `attributes` (Territory.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object TerritoryResponse](territoryresponse.md)

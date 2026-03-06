@@ -22,6 +22,11 @@ object BetaAppClipInvocationCreateRequest
 - [object BetaAppClipInvocationCreateRequest.Data](betaappclipinvocationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaAppClipInvocationCreateRequest.Data) *(required)*: The resource data.
+- `included` ([BetaAppClipInvocationLocalizationInlineCreate]): The relationship data to include in the response.
+
 ## See Also
 
 - [object BetaAppClipInvocation](betaappclipinvocation.md)

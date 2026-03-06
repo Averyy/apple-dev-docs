@@ -17,6 +17,11 @@ object GameCenterChallengeLeaderboardV2LinkageRequest.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

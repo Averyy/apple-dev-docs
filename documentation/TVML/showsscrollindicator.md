@@ -10,6 +10,8 @@ For left-to-right languages, the scroll indicator is on the right side of the el
 
 ##### Values for Showsscrollindicator
 
+- **Boolean**: When set to `true`, displays the scroll indicator.
+
 ##### Elements That Use Showsscrollindicator
 
 - [`description`](description.md) element inside of a `descriptiveAlertTemplate` element.

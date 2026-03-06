@@ -16,6 +16,8 @@ number diff(array[number] $values)
 
 ##### Parameters
 
+- **`values`**: An array that contains the numeric values to compare.
+
 ##### Return Value
 
 The absolute difference between the maximum and minimum items in the `values` array.

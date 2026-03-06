@@ -14,6 +14,13 @@ A response that contains a list of app store version experiment treatment locali
 object AppStoreVersionExperimentTreatmentLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([AppStoreVersionExperimentTreatmentLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalization](appstoreversionexperimenttreatmentlocalization.md)

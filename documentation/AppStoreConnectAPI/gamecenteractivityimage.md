@@ -20,6 +20,13 @@ object GameCenterActivityImage
 - [object GameCenterActivityImage.Attributes](gamecenteractivityimage/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
 
+## Properties
+
+- `attributes` (GameCenterActivityImage.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityImageCreateRequest](gamecenteractivityimagecreaterequest.md)

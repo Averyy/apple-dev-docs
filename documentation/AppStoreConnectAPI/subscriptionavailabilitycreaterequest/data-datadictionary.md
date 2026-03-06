@@ -18,6 +18,12 @@ object SubscriptionAvailabilityCreateRequest.Data
 - [object SubscriptionAvailabilityCreateRequest.Data.Attributes](subscriptionavailabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object SubscriptionAvailabilityCreateRequest.Data.Relationships](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionAvailabilityCreateRequest.Data.Attributes) *(required)*
+- `relationships` (SubscriptionAvailabilityCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -37,7 +37,7 @@ print(list)
 
 ## Parameters
 
-- `separator`: A string to insert between each of the elements   in this sequence. The default separator is an empty string.
+- `separator`: A string to insert between each of the elements in this sequence. The default separator is an empty string.
 
 
 ---

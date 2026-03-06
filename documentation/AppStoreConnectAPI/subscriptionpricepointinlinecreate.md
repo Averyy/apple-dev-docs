@@ -12,6 +12,11 @@
 object SubscriptionPricePointInlineCreate
 ```
 
+## Properties
+
+- `id` (string)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionPricePointResponse](subscriptionpricepointresponse.md)

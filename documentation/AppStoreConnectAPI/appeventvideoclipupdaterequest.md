@@ -17,6 +17,10 @@ object AppEventVideoClipUpdateRequest
 ### Objects
 - [object AppEventVideoClipUpdateRequest.Data](appeventvideoclipupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppEventVideoClipUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppEventVideoClip](appeventvideoclip.md)

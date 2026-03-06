@@ -12,6 +12,11 @@
 object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

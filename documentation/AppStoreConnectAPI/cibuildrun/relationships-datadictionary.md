@@ -32,6 +32,16 @@ object CiBuildRun.Relationships
 ### Dictionaries
 - [object CiBuildRun.Relationships.Actions](cibuildrun/relationships-data.dictionary/actions-data.dictionary.md)
 
+## Properties
+
+- `destinationBranch` (CiBuildRun.Relationships.DestinationBranch): The data and links that describe the relationship between the Build Runs resource and the Git References resource that represents the destination branch.
+- `product` (CiBuildRun.Relationships.Product): The data and links that describe the relationship between the Build Runs and the Products resources.
+- `pullRequest` (CiBuildRun.Relationships.PullRequest): The data and links that describe the relationship between the Build Runs and the Pull Requests resources.
+- `sourceBranchOrTag` (CiBuildRun.Relationships.SourceBranchOrTag): The data and links that describe the relationship between the Build Runs resource and the Git References resource that represents the source branch or tag.
+- `workflow` (CiBuildRun.Relationships.Workflow): The data and links that describe the relationship between the Build Runs and the Workflows resources.
+- `builds` (CiBuildRun.Relationships.Builds): The data and links that describe the relationship between the Build Runs and the Builds resources.
+- `actions` (CiBuildRun.Relationships.Actions)
+
 ## See Also
 
 - [object CiBuildRun.Attributes](cibuildrun/attributes-data.dictionary.md)

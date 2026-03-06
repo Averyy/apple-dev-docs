@@ -37,7 +37,7 @@ If a type’s radix is 2, then for finite nonzero numbers, the significand is in
 - If `x` is infinite, then `x.significand` is infinity.
 - If `x` is NaN, then `x.significand` is NaN.
 
-> **Note**: The significand is frequently also called the , but significand is the preferred terminology in the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933), to allay confusion with the use of mantissa for the fractional part of a logarithm.
+> **Note**: The significand is frequently also called the *mantissa*, but significand is the preferred terminology in the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933), to allay confusion with the use of mantissa for the fractional part of a logarithm.
 
 
 ---

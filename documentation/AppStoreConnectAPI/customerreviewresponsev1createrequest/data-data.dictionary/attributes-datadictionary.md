@@ -14,6 +14,10 @@ The attributes of the customer review response, including its text content.
 object CustomerReviewResponseV1CreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `responseBody` (string) *(required)*: The text of your response to the customer review.
+
 ## See Also
 
 - [object CustomerReviewResponseV1CreateRequest.Data.Relationships](customerreviewresponsev1createrequest/data-data.dictionary/relationships-data.dictionary.md)

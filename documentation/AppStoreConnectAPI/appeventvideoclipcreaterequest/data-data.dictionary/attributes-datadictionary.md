@@ -12,6 +12,13 @@
 object AppEventVideoClipCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appEventAssetType` (AppEventAssetType) *(required)*
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+- `previewFrameTimeCode` (string)
+
 ## See Also
 
 - [object AppEventVideoClipCreateRequest.Data.Relationships](appeventvideoclipcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

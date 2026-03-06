@@ -20,6 +20,11 @@ object RatingRequest
 - [object RatingRequest.Attributes](ratingrequest/attributes-data.dictionary.md)
   The attributes for a rating request object.
 
+## Properties
+
+- `attributes` (RatingRequest.Attributes) *(required)*: The dictionary that includes the value for the resource’s rating.
+- `type` (string) *(required)*: The type of the payload.
+
 ## See Also
 
 - [object Ratings](ratings.md)

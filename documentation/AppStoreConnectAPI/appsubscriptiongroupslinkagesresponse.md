@@ -17,6 +17,12 @@ object AppSubscriptionGroupsLinkagesResponse
 ### Dictionaries
 - [object AppSubscriptionGroupsLinkagesResponse.Data](appsubscriptiongroupslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppSubscriptionGroupsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionGroupResponse](subscriptiongroupresponse.md)

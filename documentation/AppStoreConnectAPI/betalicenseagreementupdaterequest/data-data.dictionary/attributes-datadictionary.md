@@ -14,6 +14,10 @@ Attributes whose values you’re changing as part of the update request.
 object BetaLicenseAgreementUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `agreementText` (string): The license agreement text for your beta app that displays to users.
+
 ## See Also
 
 - [Beta License Agreements](beta-license-agreements.md)

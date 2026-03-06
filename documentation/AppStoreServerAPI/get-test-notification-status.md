@@ -6,7 +6,7 @@
 Check the status of the test App Store server notification sent to your server.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Mentions
 
@@ -16,6 +16,14 @@ Check the status of the test App Store server notification sent to your server.
 #### Discussion
 
 Call this endpoint using the [`testNotificationToken`](get-test-notification-status/testnotificationtoken.md) you receive when you call [`Request a Test Notification`](request-a-test-notification.md). You can check the status using the [`testNotificationToken`](get-test-notification-status/testnotificationtoken.md) for up to six months. Use the information in the [`CheckTestNotificationResponse`](checktestnotificationresponse.md) to troubleshoot your server if it’s unable to receive App Store Server Notifications successfully.
+
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/notifications/test/{testNotificationToken}`
+
+## Parameters
+
+- `testNotificationToken` (testNotificationToken) *(required)*: The token that uniquely identifies a test, that you receive when you call [`Request a Test Notification`](request-a-test-notification.md).
 
 ## See Also
 

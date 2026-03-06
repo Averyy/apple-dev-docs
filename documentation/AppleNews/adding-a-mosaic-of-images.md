@@ -8,6 +8,8 @@ Display five images as mosaic tiles.
 
 A mosaic lets you display images as part of a larger collection.
 
+**On this page, you’ll learn how to use a mosaic to display images as a set of tiles.**
+
 ![Screenshot of an Apple News article with a mosaic on iPad.](https://docs-assets.developer.apple.com/published/9ede436ce9fb4f499609e56b163b46a5/media-3624435%402x.png)
 
 ##### Add a Mosaic with Captions in Your Article

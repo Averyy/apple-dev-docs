@@ -23,8 +23,8 @@ mutating func replace<Output, Replacement>(_ regex: some RegexComponent, maxRepl
 ## Parameters
 
 - `regex`: A regex describing the sequence to replace.
-- `maxReplacements`: A number specifying how many occurrences of the   sequence matching   to replace. Default is  .
-- `replacement`: A closure that receives the full match information,   including captures, and returns a replacement collection.
+- `maxReplacements`: A number specifying how many occurrences of the sequence matching `regex` to replace. Default is `Int.max`.
+- `replacement`: A closure that receives the full match information, including captures, and returns a replacement collection.
 
 
 ---

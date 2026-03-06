@@ -16,7 +16,7 @@ If your app helps the user navigate an internet hotspot — a Wi-Fi network wher
 
 To use `NEHotspotHelper` you must first be granted a special entitlement (`com.apple.developer.networking.HotspotHelper`) by Apple.  For information on how to apply for this, see [`Hotspot helper`](https://developer.apple.com/documentation/NetworkExtension/hotspot-helper).
 
-> ❗ **Important**: `NEHotspotHelper` is  useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location.
+> ❗ **Important**: `NEHotspotHelper` is *only* useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location.
 
 iOS 26 introduced support for hotspot helper app extensions.  Adopt these to improve the efficiency, reliability, and privacy of your hotspot helper app.
 
@@ -68,12 +68,12 @@ If you need to know the name of the device’s current Wi-Fi network, call [`fet
 
 #### Revision History
 
--  Added information about hotspot helper app extensions and Wi-Fi Aware, both new in iOS 26.
--  Added information about AccessorySetupKit.  Added a link to TN3151.  Made other minor editorial changes.
--  Made minor editorial changes.
--  Republished as TN3111.  Broke the content into task-focused sections.  Added a link to [`Configuring a Wi-Fi accessory to join a network`](https://developer.apple.com/documentation/NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network).  Added a reference to [`fetchCurrent(completionHandler:)`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotNetwork/fetchCurrent(completionHandler:)).  Updated the text for the new publication platform.
--  Added information about `NEHotspotConfigurationManager`.
--  First published as QA1942 ”iOS Wi-Fi Management APIs”.
+- **2025-08-29** Added information about hotspot helper app extensions and Wi-Fi Aware, both new in iOS 26.
+- **2024-09-24** Added information about AccessorySetupKit.  Added a link to TN3151.  Made other minor editorial changes.
+- **2022-05-24** Made minor editorial changes.
+- **2022-02-08** Republished as TN3111.  Broke the content into task-focused sections.  Added a link to [`Configuring a Wi-Fi accessory to join a network`](https://developer.apple.com/documentation/NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network).  Added a reference to [`fetchCurrent(completionHandler:)`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotNetwork/fetchCurrent(completionHandler:)).  Updated the text for the new publication platform.
+- **2017-08-14** Added information about `NEHotspotConfigurationManager`.
+- **2016-11-16** First published as QA1942 ”iOS Wi-Fi Management APIs”.
 
 ## See Also
 

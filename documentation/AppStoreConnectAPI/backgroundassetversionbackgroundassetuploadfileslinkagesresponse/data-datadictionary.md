@@ -14,6 +14,11 @@ The type and ID of a background asset upload file resource linked to a specific 
 object BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -17,6 +17,11 @@ object ReviewSubmissionItemCreateRequest.Data
 ### Objects
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (ReviewSubmissionItemCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

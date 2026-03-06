@@ -14,6 +14,16 @@ The subscription details you provide to migrate a subscription from In-App Purch
 object SubscriptionMigrateRequest
 ```
 
+## Properties
+
+- `descriptors` (SubscriptionMigrateDescriptors) *(required)*
+- `items` ([SubscriptionMigrateItem]) *(required)*: An array of one or more SKUs, along with descriptions and display names, that are included in the subscription.
+- `renewalItems` ([SubscriptionMigrateRenewalItem]): An optional array of subscription items that represents the items that renew at the next renewal period, if they differ from `items`. Supply this array if the customer has a pending subscription downgrade or cross-grade, which applies at the next renewal period.
+- `requestInfo` (RequestInfo) *(required)*
+- `storefront` (storefront)
+- `targetProductId` (targetProductId) *(required)*: Your generic product ID for an auto-renewable subscription. You configure this product ID in App Store Connect during setup. For more information, see [`Creating SKUs for your In-App Purchases`](creating-your-purchases.md).
+- `taxCode` (taxCode) *(required)*
+
 ## See Also
 
 - [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)

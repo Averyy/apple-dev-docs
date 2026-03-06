@@ -14,6 +14,12 @@ A response that contains a list of Build Bundle File Sizes resources.
 object BuildBundleFileSizesResponse
 ```
 
+## Properties
+
+- `data` ([BuildBundleFileSize]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object BuildBundle](buildbundle.md)

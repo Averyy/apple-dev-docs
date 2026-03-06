@@ -40,7 +40,7 @@ The order of the transfer representations in the [`transferRepresentation`](tran
 
 ##### Configure Your Model Type for Import or Export
 
-You can limit a transfer representation to support only importing, only exporting, or the representation can support both. Imports occur when your app is the recipient of an item from sharing, the  of a drag-and-drop interaction, or the  from a copy-and-paste interaction. Conversely, exports occur when people share, copy, or drag an item out of your app. For example, your vector image editing app might support exporting, but choose not to import PNG images.
+You can limit a transfer representation to support only importing, only exporting, or the representation can support both. Imports occur when your app is the recipient of an item from sharing, the *drop* of a drag-and-drop interaction, or the *paste* from a copy-and-paste interaction. Conversely, exports occur when people share, copy, or drag an item out of your app. For example, your vector image editing app might support exporting, but choose not to import PNG images.
 
 Transfer representation initializers control whether representations support sharing interactions for import and export. The following shows a data representation of tax information that can only import tax forms and can only output tax returns.
 

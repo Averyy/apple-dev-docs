@@ -17,6 +17,10 @@ object AppPriceSchedule.Relationships.App
 ### Objects
 - [object AppPriceSchedule.Relationships.App.Data](apppriceschedule/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppPriceSchedule.Relationships.App.Data)
+
 ## See Also
 
 - [object AppPriceSchedule.Relationships.AutomaticPrices](apppriceschedule/relationships-data.dictionary/automaticprices-data.dictionary.md)

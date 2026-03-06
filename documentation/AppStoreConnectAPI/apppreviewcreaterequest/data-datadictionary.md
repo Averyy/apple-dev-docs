@@ -22,6 +22,12 @@ object AppPreviewCreateRequest.Data
 - [object AppPreviewCreateRequest.Data.Relationships](apppreviewcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppPreviewCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppPreviewCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

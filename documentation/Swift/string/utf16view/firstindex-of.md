@@ -37,7 +37,7 @@ print(students)
 // Prints "["Ben", "Ivy", "Jordell", "Max"]"
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

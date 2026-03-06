@@ -17,6 +17,12 @@ object AppAccessibilityDeclarationsLinkagesResponse
 ### Dictionaries
 - [object AppAccessibilityDeclarationsLinkagesResponse.Data](appaccessibilitydeclarationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppAccessibilityDeclarationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)

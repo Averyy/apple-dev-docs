@@ -14,6 +14,12 @@ A response that contains a single Beta App Localizations resource.
 object BetaAppLocalizationResponse
 ```
 
+## Properties
+
+- `data` (BetaAppLocalization) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([App])
+
 ## See Also
 
 - [Create a Beta App Localization](post-v1-betaapplocalizations.md)

@@ -19,6 +19,10 @@ object AlternativeDistributionDomainCreateRequest
 ### Objects
 - [object AlternativeDistributionDomainCreateRequest.Data](alternativedistributiondomaincreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AlternativeDistributionDomainCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionDomain](alternativedistributiondomain.md)

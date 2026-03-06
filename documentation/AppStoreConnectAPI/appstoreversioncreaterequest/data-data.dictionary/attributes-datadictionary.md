@@ -14,6 +14,16 @@ Attributes that you set that describe the new resource.
 object AppStoreVersionCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `copyright` (string)
+- `earliestReleaseDate` (date-time)
+- `platform` (Platform) *(required)*
+- `releaseType` (string)
+- `reviewType` (string)
+- `usesIdfa` (boolean)
+- `versionString` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionCreateRequest.Data.Relationships](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)

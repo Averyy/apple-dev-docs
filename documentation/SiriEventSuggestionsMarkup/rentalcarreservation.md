@@ -22,6 +22,22 @@ object RentalCarReservation
 - [object Brand](brand.md)
   A car brand.
 
+## Properties
+
+- `@context` (@context) *(required)*
+- `@type` (string) *(required)*
+- `dropoffLocation` (Place) *(required)*: The place where the renter returns the car.
+- `dropoffTime` (dateTimeISO8601) *(required)*: The latest time the renter may return the car.
+- `pickupLocation` (Place) *(required)*: The place where the renter picks up the car.
+- `pickupTime` (dateTimeISO8601) *(required)*: The earliest time the driver may pick up the car.
+- `reservationFor` (Car) *(required)*: The type of vehicle to be rented.
+- `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
+- `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
+- `underName` (Person) *(required)*: The person renting the car.
+- `provider` (Organization): The rental car agency.
+- `broker` (Organization): An intermediary booking service.
+- `url` (URL): A webpage the user can access to view reservation details.
+
 ## See Also
 
 - [object FlightReservation](flightreservation.md)

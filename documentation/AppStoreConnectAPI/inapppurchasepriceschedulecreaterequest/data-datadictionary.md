@@ -17,6 +17,11 @@ object InAppPurchasePriceScheduleCreateRequest.Data
 ### Objects
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (InAppPurchasePriceScheduleCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

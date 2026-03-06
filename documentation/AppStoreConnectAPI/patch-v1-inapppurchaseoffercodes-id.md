@@ -8,6 +8,14 @@ Update a specific in-app purchase offer code.
 **Availability**:
 - App Store Connect API 4.2+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/inAppPurchaseOfferCodes/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an in-app purchase offer code](post-v1-inapppurchaseoffercodes.md)

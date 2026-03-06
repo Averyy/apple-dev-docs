@@ -29,6 +29,13 @@ The rules that apply to the members of this object are:
 - [object Relationship.Meta](relationship/meta-data.dictionary.md)
   Information about the request or response.
 
+## Properties
+
+- `href` (string): A URL subpath that fetches the relationship resources as the primary object. This member is only present in responses.
+- `next` (string): Link to the next page of resources in the relationship. Contains the `offset` query parameter that specifies the next page. See `Fetch Resources by Page`.
+- `data` ([Resource]) *(required)*: One or more destination objects.
+- `meta` (Relationship.Meta): Contextual information about the relationship for the request or response.
+
 ## See Also
 
 - [object Resource](resource.md)

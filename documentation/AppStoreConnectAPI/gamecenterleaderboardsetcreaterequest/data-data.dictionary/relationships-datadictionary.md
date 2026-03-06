@@ -19,6 +19,12 @@ object GameCenterLeaderboardSetCreateRequest.Data.Relationships
 - [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 - [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterGroup](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
 
+## Properties
+
+- `gameCenterDetail` (GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterDetail)
+- `gameCenterGroup` (GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterGroup)
+- `gameCenterLeaderboards` (GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetCreateRequest.Data.Attributes](gamecenterleaderboardsetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

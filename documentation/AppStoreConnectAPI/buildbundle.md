@@ -22,6 +22,14 @@ object BuildBundle
 - [object BuildBundle.Relationships](buildbundle/relationships-data.dictionary.md)
   The relationships of the Build Bundles resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BuildBundle.Attributes): The attributes that describe the Build Bundles resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Build Bundles resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (BuildBundle.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [type BuildBundleType](buildbundletype.md)

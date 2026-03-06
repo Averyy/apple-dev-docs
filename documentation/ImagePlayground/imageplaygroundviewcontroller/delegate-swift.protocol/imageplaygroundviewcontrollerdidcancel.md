@@ -25,7 +25,7 @@ Use this method to dismiss the specified [`ImagePlaygroundViewController`](image
 
 ## Parameters
 
-- `imagePlaygroundViewController`: The view controller that sent   the notification.
+- `imagePlaygroundViewController`: The view controller that sent the notification.
 
 
 ---

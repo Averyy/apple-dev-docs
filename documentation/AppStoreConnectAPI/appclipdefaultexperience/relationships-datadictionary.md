@@ -26,6 +26,13 @@ object AppClipDefaultExperience.Relationships
 - [object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion](appclipdefaultexperience/relationships-data.dictionary/releasewithappstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the Default App Clip Experiences and the App Store Versions resources.
 
+## Properties
+
+- `appClip` (AppClipDefaultExperience.Relationships.AppClip): The related App Clips resource.
+- `appClipAppStoreReviewDetail` (AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail): The related App Clip App Store Review Details resource.
+- `appClipDefaultExperienceLocalizations` (AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations): The related Default App Clip Experience Localizations resource.
+- `releaseWithAppStoreVersion` (AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion): The related App Store Versions resource.
+
 ## See Also
 
 - [object AppClipDefaultExperience.Attributes](appclipdefaultexperience/attributes-data.dictionary.md)

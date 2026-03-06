@@ -24,6 +24,12 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Relationships
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/localizations-data.dictionary.md)
   The relationship to the Advanced App Clip Experience Localizations resource you set with the request that updates an Advanced App Clip Experiences resource.
 
+## Properties
+
+- `appClip` (AppClipAdvancedExperienceUpdateRequest.Data.Relationships.AppClip): The related App Clips resource.
+- `headerImage` (AppClipAdvancedExperienceUpdateRequest.Data.Relationships.HeaderImage): The related Advanced App Clip Experience Images resource.
+- `localizations` (AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations): The related Advanced App Clip Experience Localizations resource.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

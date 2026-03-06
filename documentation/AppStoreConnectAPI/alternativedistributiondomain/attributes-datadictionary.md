@@ -14,6 +14,12 @@ Attributes that describe an alternative distribution domain resource.
 object AlternativeDistributionDomain.Attributes
 ```
 
+## Properties
+
+- `createdDate` (date-time)
+- `domain` (string)
+- `referenceName` (string)
+
 
 ---
 

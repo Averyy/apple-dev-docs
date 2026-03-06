@@ -14,6 +14,10 @@ The parameters of an add media intent request.
 object AddMediaIntentHandlingInvocation.Params
 ```
 
+## Properties
+
+- `intent` (AddMediaIntent) *(required)*: The intent to add media items to the user’s library or to a playlist.
+
 
 ---
 

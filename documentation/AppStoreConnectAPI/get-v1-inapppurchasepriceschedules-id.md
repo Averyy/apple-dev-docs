@@ -16,6 +16,62 @@ Get information about a specific scheduled price change for an in-app purchase.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "inAppPurchasePriceSchedules",
+    "id" : "6447501593",
+    "relationships" : {
+      "baseTerritory" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593/relationships/baseTerritory",
+          "related" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593/baseTerritory"
+        }
+      },
+      "manualPrices" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593/relationships/manualPrices",
+          "related" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593/manualPrices"
+        }
+      },
+      "automaticPrices" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593/relationships/automaticPrices",
+          "related" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593/automaticPrices"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/6447501593"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/{id}`
+
+## Parameters
+
+- `fields[inAppPurchasePriceSchedules]` ([string])
+- `fields[inAppPurchasePrices]` ([string])
+- `include` ([string])
+- `limit[manualPrices]` (integer)
+- `fields[territories]` ([string])
+- `limit[automaticPrices]` (integer)
+
 ## See Also
 
 - [Read price information for an in-app purchase price schedule](get-v1-inapppurchasepriceschedules-_id_-manualprices.md)

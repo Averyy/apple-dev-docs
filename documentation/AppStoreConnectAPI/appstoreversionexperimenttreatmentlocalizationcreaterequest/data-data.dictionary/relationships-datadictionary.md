@@ -19,6 +19,10 @@ object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relation
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary.md)
 
+## Properties
+
+- `appStoreVersionExperimentTreatment` (AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Attributes](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

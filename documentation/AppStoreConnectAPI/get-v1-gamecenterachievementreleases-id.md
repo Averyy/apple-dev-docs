@@ -12,6 +12,41 @@ Read the state of a specific achievement release.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/gameCenterAchievementReleases/b46850bc-ba02-3793-4ea7-36738b92440a
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “gameCenterAchievementReleases”,
+    “id” : “b46850bc-ba02-3793-4ea7-36738b92440a”,
+    “attributes” : {
+      “live” : true
+    },
+    “links” : {
+      “self” : “https://api.appstoreconnect.apple.com/v1/gameCenterAchievementReleases/b46850bc-ba02-3793-4ea7-36738b92440a”
+    }
+  },
+  “links” : {
+    “self” : “https://api.appstoreconnect.apple.com/v1/gameCenterAchievementReleases/b46850bc-ba02-3793-4ea7-36738b92440a”
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterAchievementReleases/{id}`
+
+## Parameters
+
+- `fields[gameCenterAchievementReleases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)

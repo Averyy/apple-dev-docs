@@ -24,6 +24,18 @@ object FlightReservation
 - [object Airport](airport.md)
   The name and location of an airport.
 
+## Properties
+
+- `@context` (@context) *(required)*
+- `@type` (string) *(required)*
+- `reservationFor` (Flight) *(required)*: Details about the flight.
+- `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
+- `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
+- `reservedTicket` (Ticket): Details about the attendee’s ticketed seat.
+- `underName` (Person) *(required)*: The passenger, or a primary passenger if the event provider doesn’t require a name for each passenger.
+- `broker` (Organization): An intermediary booking service.
+- `url` (URL): A webpage the user can access to view reservation details.
+
 ## See Also
 
 - [object TrainReservation](trainreservation.md)

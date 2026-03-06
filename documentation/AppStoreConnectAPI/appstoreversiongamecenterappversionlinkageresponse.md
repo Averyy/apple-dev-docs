@@ -17,6 +17,11 @@ object AppStoreVersionGameCenterAppVersionLinkageResponse
 ### Dictionaries
 - [object AppStoreVersionGameCenterAppVersionLinkageResponse.Data](appstoreversiongamecenterappversionlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionGameCenterAppVersionLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

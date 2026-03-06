@@ -8,6 +8,20 @@ Get information about a specific bundle ID.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/bundleIds/{id}`
+
+## Parameters
+
+- `fields[bundleIds]` ([string])
+- `fields[profiles]` ([string])
+- `include` ([string])
+- `limit[profiles]` (integer)
+- `fields[bundleIdCapabilities]` ([string])
+- `limit[bundleIdCapabilities]` (integer)
+- `fields[apps]` ([string])
+
 ## See Also
 
 - [List Bundle IDs](get-v1-bundleids.md)

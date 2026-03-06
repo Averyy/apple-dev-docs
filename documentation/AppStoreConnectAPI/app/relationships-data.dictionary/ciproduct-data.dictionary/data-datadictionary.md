@@ -14,6 +14,11 @@ The type and ID of a related Products resource.
 object App.Relationships.CiProduct.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Products resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

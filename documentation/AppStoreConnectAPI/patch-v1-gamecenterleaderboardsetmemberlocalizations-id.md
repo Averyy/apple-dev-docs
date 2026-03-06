@@ -12,6 +12,14 @@ Edit a leaderboard set member localization.
 
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetMemberLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read leaderboard set member localization information](get-v1-gamecenterleaderboardsetmemberlocalizations.md)

@@ -8,6 +8,14 @@ Remove a specific image from a Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterActivityImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read activity image information ](get-v1-gamecenteractivityimages-_id_.md)

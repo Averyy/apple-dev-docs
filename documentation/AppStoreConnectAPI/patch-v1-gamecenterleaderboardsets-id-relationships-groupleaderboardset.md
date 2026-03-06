@@ -8,6 +8,14 @@ Modify the group leaderboards in a leaderboard set.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSets/{id}/relationships/groupLeaderboardSet`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center leaderboard set](post-v2-gamecenterleaderboardsets.md)

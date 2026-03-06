@@ -23,6 +23,11 @@ enum ApplePayPaymentTiming
 
 The following are the payment timing values:
 
+- **`"immediate"`**: A value that specifies that the payment occurs when the transaction is complete.
+- **`"recurring"`**: A value that specifies that the payment occurs on a regular basis.
+- **`"deferred"`**: A value that specifies that the payment occurs in the future.
+- **`"automaticReload"`**: A value that specifies that the payment occurs automatically when the account falls below the [`automaticReloadPaymentThresholdAmount`](applepaylineitem/automaticreloadpaymentthresholdamount.md) amount.
+
 ## Topics
 
 ### Enumeration Cases

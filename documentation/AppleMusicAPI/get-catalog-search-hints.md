@@ -16,6 +16,36 @@ These results are autocompletion options for the hint and are potential search t
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/catalog/us/search/hints?term=beach+bunny
+```
+
+**Response**:
+
+```json
+{
+    "results": {
+        "terms": [
+            "beach bunny",
+            "oxygen beach bunny",
+            "cloud 9 beach bunny"
+        ]
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/catalog/{storefront}/search/hints`
+
+## Parameters
+
+- `term` (string) *(required)*: The entered text for the search with ‘`+`’ characters between each word, to replace spaces (for example `term=james+br`).
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+
 ## See Also
 
 - [object SearchHintsResponse](searchhintsresponse.md)

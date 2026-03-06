@@ -20,6 +20,13 @@ object Genres
 - [object Genres.Attributes](genres/attributes-data.dictionary.md)
   The attributes for a genre resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the genre.
+- `type` (string) *(required)*: This value must always be `genres`.
+- `href` (string) *(required)*: The relative location for the genre resource.
+- `attributes` (Genres.Attributes): The attributes for the genre.
+
 ## See Also
 
 - [object GenresResponse](genresresponse.md)

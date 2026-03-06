@@ -18,6 +18,12 @@ object AnalyticsReportRequestResponse
 
 Use this object with [`Read report request information`](get-v1-analyticsreportrequests-_id_.md).
 
+## Properties
+
+- `data` (AnalyticsReportRequest) *(required)*
+- `included` ([AnalyticsReport])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

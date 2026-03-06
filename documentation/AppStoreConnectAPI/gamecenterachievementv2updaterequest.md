@@ -24,6 +24,10 @@ object GameCenterAchievementV2UpdateRequest
 - [object GameCenterAchievementV2UpdateRequest.Data](gamecenterachievementv2updaterequest/data-data.dictionary.md)
   The data structure that represents a Game Center achievement update request resource.
 
+## Properties
+
+- `data` (GameCenterAchievementV2UpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

@@ -12,6 +12,10 @@ Add an activity to a Game Center detail, group, or leaderboard.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersions`
+
 ## See Also
 
 - [Read the versions for an activity](get-v1-gamecenteractivities-_id_-versions.md)

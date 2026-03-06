@@ -14,6 +14,13 @@ A response that contains a list of app screenshot set resources.
 object AppScreenshotSetsResponse
 ```
 
+## Properties
+
+- `data` ([AppScreenshotSet]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppScreenshotSet](appscreenshotset.md)

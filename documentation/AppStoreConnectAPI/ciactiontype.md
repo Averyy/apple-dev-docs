@@ -20,6 +20,11 @@ string CiActionType
 
 #### Possible Values
 
+- **BUILD**: The action is a build action.
+- **ANALYZE**: The action is an analyze action.
+- **TEST**: The action is a test action.
+- **ARCHIVE**: The action is an archive action.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

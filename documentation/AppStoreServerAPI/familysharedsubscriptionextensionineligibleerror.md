@@ -6,7 +6,7 @@
 An error that indicates a subscription isn’t directly eligible for a renewal date extension because the customer obtained it through Family Sharing.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -23,6 +23,11 @@ object FamilySharedSubscriptionExtensionIneligibleError
 A request returns this error if you call the [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md) endpoint with an `originalTransactionId` that belongs to a subscription the user obtains through Family Sharing.
 
 When the endpoint extends an eligible purchased subscription that supports Family Sharing, it automatically extends the family members’ subscriptions as well. However, the endpoint doesn’t support requests to extend a family member’s subscription directly.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

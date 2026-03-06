@@ -35,7 +35,7 @@ This method works only when you disable system tracking.
 
 - `rotation`: The spatial framework’s Vector3D with X, Y, and Z corresponding to radians of pitch, yaw, and roll axes.
 - `duration`: The duration, in seconds, to reach the target orientation.
-- `relative`: Calculate the relative-to-current positions, if set to   ; otherwise, move to an absolute position.
+- `relative`: Calculate the relative-to-current positions, if set to  `true`; otherwise, move to an absolute position.
 
 ## See Also
 

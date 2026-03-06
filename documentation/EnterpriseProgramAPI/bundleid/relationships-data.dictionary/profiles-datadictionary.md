@@ -19,6 +19,12 @@ object BundleId.Relationships.Profiles
 - [links](bundleid/relationships-data.dictionary/profiles-data.dictionary/links.md)
   The links to the related data and the relationship’s self-link.
 
+## Properties
+
+- `data` ([BundleId.Relationships.Profiles.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BundleId.Relationships.BundleIdCapabilities](bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary.md)

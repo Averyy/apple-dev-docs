@@ -20,6 +20,10 @@ object AppPreviewUpdateRequest
 - [object AppPreviewUpdateRequest.Data](apppreviewupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppPreviewUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppPreview](apppreview.md)

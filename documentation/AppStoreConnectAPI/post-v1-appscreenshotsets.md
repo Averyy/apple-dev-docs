@@ -8,6 +8,10 @@ Add a new screenshot set to an App Store version localization for a specific scr
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appScreenshotSets`
+
 ## See Also
 
 - [Delete an App Screenshot Set](delete-v1-appscreenshotsets-_id_.md)

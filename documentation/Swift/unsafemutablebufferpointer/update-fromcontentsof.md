@@ -36,7 +36,7 @@ The returned index is one past the index of the last element updated. If `source
 
 ## Parameters
 
-- `source`: A collection of elements to be used to update   the buffer’s contents.
+- `source`: A collection of elements to be used to update the buffer’s contents.
 
 
 ---

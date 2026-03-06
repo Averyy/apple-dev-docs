@@ -41,11 +41,11 @@ A throwing discarding task group becomes canceled in one of the following ways:
 - when an error is thrown out of the `withThrowingDiscardingTaskGroup { ... }` closure,
 - when the [`Task`](task.md) running this task group is canceled.
 
-But also, and uniquely in  task groups:
+But also, and uniquely in *discarding* task groups:
 
-- when  of its child tasks throws.
+- when *any* of its child tasks throws.
 
-The group becoming canceled automatically, and cancelling all of its child tasks, whenever  child task throws an error is a behavior unique to discarding task groups, because achieving such semantics is not possible otherwise, due to the missing `next()` method on discarding groups. Accumulating task groups can implement this by manually polling `next()` and deciding to `cancelAll()` when they decide an error should cause the group to become canceled, however a discarding group cannot poll child tasks for results and therefore assumes that child task throws are an indication of a group wide failure. In order to avoid such behavior, use a [`DiscardingTaskGroup`](discardingtaskgroup.md) instead of a throwing one, or catch specific errors in operations submitted using `addTask`.
+The group becoming canceled automatically, and cancelling all of its child tasks, whenever *any* child task throws an error is a behavior unique to discarding task groups, because achieving such semantics is not possible otherwise, due to the missing `next()` method on discarding groups. Accumulating task groups can implement this by manually polling `next()` and deciding to `cancelAll()` when they decide an error should cause the group to become canceled, however a discarding group cannot poll child tasks for results and therefore assumes that child task throws are an indication of a group wide failure. In order to avoid such behavior, use a [`DiscardingTaskGroup`](discardingtaskgroup.md) instead of a throwing one, or catch specific errors in operations submitted using `addTask`.
 
 Since a `ThrowingDiscardingTaskGroup` is a structured concurrency primitive, cancellation is automatically propagated through all of its child-tasks (and their child tasks).
 

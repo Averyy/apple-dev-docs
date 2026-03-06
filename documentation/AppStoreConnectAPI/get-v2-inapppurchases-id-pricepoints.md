@@ -15,6 +15,18 @@ Get a list of possible price points for an in-app purchase.
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
 - [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/pricePoints`
+
+## Parameters
+
+- `fields[inAppPurchasePricePoints]` ([string])
+- `fields[territories]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an In-App Purchase](post-v2-inapppurchases.md)

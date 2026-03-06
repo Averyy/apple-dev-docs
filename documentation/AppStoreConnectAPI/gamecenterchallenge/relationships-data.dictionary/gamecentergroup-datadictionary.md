@@ -17,6 +17,10 @@ object GameCenterChallenge.Relationships.GameCenterGroup
 ### Dictionaries
 - [object GameCenterChallenge.Relationships.GameCenterGroup.Data](gamecenterchallenge/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterChallenge.Relationships.GameCenterGroup.Data)
+
 
 ---
 

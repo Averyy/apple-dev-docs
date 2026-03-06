@@ -14,6 +14,13 @@ An error indicating the line item references an erroneously submitted line item,
 object ValidLineItemReferencesErroneousLineItemError
 ```
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

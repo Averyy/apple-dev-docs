@@ -21,6 +21,14 @@ object TerritoryAvailability
   The attributes that describe a territory availability resource.
 - [object TerritoryAvailability.Relationships](territoryavailability/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (TerritoryAvailability.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (TerritoryAvailability.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2](appavailabilityv2.md)

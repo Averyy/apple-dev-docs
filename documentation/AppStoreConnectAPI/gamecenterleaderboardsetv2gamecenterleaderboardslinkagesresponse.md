@@ -25,6 +25,12 @@ object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesResponse
 ### Dictionaries - generated
 - [object GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesResponse.Data](gamecenterleaderboardsetv2gamecenterleaderboardslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

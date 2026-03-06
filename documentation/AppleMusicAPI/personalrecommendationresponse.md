@@ -14,6 +14,10 @@ The response to a request for personal recommendations.
 object PersonalRecommendationResponse
 ```
 
+## Properties
+
+- `data` ([PersonalRecommendation]) *(required)*: The [`PersonalRecommendation`](personalrecommendation.md) resources included in the response for the request.
+
 ## See Also
 
 - [object PersonalRecommendation](personalrecommendation.md)

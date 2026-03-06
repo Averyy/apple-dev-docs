@@ -20,6 +20,11 @@ object ExtensionConfig.Media.Queues.UpdateActivity
 - [object ExtensionConfig.Media.Queues.UpdateActivity.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to the update activity endpoint.
 
+## Properties
+
+- `url` (string): The relative path for the client to access [`updateActivity`](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionarykey.md).
+- `hdr` (ExtensionConfig.Media.Queues.UpdateActivity.Hdr): Headers to include with requests to this endpoint.
+
 ## See Also
 
 - [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)

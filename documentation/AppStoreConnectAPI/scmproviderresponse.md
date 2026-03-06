@@ -14,6 +14,11 @@ A response that contains a single Providers resource.
 object ScmProviderResponse
 ```
 
+## Properties
+
+- `data` (ScmProvider) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object ScmProvider](scmprovider.md)

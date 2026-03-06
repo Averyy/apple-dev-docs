@@ -19,6 +19,12 @@ object SubscriptionPriceCreateRequest.Data.Relationships
 - [object SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint](subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
 - [object SubscriptionPriceCreateRequest.Data.Relationships.Territory](subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/territory-data.dictionary.md)
 
+## Properties
+
+- `subscription` (SubscriptionPriceCreateRequest.Data.Relationships.Subscription) *(required)*
+- `subscriptionPricePoint` (SubscriptionPriceCreateRequest.Data.Relationships.SubscriptionPricePoint) *(required)*
+- `territory` (SubscriptionPriceCreateRequest.Data.Relationships.Territory)
+
 ## See Also
 
 - [object SubscriptionPriceCreateRequest.Data.Attributes](subscriptionpricecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

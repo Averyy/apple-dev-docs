@@ -20,6 +20,37 @@ The log file that you download contains JSON-formatted data, and might include b
 
 ##### Example
 
+**Request**:
+
+```https
+https://appstoreconnect.apple.com/notary/v2/submissions/2EFE2717-52EF-43A5-96DC-0797E4CA1041/logs
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "attributes": {
+      "developerLogUrl": "https://..."
+    },
+    "id": "2efe2717-52ef-43a5-96dc-0797e4ca1041",
+    "type": "submissionsLog"
+  },
+  "meta": {
+  }
+} 
+
+```
+
+## Endpoint
+
+`GET https://appstoreconnect.apple.com/notary/v2/submissions/{submissionId}/logs`
+
+## Parameters
+
+- `submissionId` (string) *(required)*: The identifier that you receive from the notary service when you post to [`Submit Software`](submit-software.md) to start a new submission.
+
 ## See Also
 
 - [Get Submission Status](get-submission-status.md)

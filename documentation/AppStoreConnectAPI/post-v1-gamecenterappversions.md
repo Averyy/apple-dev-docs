@@ -8,6 +8,10 @@ Add a new Game Center app version.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions`
+
 ## See Also
 
 - [POST /v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions](post-v1-gamecenterappversions-_id_-relationships-compatibilityversions.md)

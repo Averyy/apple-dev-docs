@@ -17,6 +17,12 @@ object CiMacOsVersionXcodeVersionsLinkagesResponse
 ### Dictionaries
 - [object CiMacOsVersionXcodeVersionsLinkagesResponse.Data](cimacosversionxcodeversionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([CiMacOsVersionXcodeVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CiMacOsVersion](cimacosversion.md)

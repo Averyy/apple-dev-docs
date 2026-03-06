@@ -38,8 +38,8 @@ If the index passed as `sourcePosition` doesn’t have an exact corresponding po
 
 ## Parameters
 
-- `sourcePosition`: A position in the   view of a string.    must be an element of   .
-- `unicodeScalars`: The   in which to find the new   position.
+- `sourcePosition`: A position in the `utf16` view of a string. `utf16Index` must be an element of `String(unicodeScalars).utf16.indices`.
+- `unicodeScalars`: The `UnicodeScalarView` in which to find the new position.
 
 
 ---

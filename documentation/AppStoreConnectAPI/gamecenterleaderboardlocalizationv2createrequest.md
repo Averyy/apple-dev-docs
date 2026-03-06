@@ -24,6 +24,10 @@ object GameCenterLeaderboardLocalizationV2CreateRequest
 - [object GameCenterLeaderboardLocalizationV2CreateRequest.Data](gamecenterleaderboardlocalizationv2createrequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard localization create request resource.
 
+## Properties
+
+- `data` (GameCenterLeaderboardLocalizationV2CreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2](gamecenterleaderboardlocalizationv2.md)

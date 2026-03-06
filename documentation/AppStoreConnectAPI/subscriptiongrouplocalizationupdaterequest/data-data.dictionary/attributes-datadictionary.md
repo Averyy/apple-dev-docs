@@ -12,6 +12,11 @@
 object SubscriptionGroupLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `customAppName` (string)
+- `name` (string)
+
 
 ---
 

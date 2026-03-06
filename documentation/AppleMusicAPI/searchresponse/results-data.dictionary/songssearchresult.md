@@ -14,6 +14,12 @@ An object containing a songs’ search result.
 object SearchResponse.Results.SongsSearchResult
 ```
 
+## Properties
+
+- `data` ([Songs]) *(required)*: The resources for the search result.
+- `href` (string): The relative location to fetch the search result.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the result, if more exist.
+
 ## See Also
 
 - [object SearchResponse.Results.ActivitiesSearchResult](searchresponse/results-data.dictionary/activitiessearchresult.md)

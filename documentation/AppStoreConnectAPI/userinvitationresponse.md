@@ -14,6 +14,12 @@ A response that contains a single User Invitations resource.
 object UserInvitationResponse
 ```
 
+## Properties
+
+- `data` (UserInvitation) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([App])
+
 ## See Also
 
 - [Invite a User](post-v1-userinvitations.md)

@@ -12,6 +12,11 @@
 object GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

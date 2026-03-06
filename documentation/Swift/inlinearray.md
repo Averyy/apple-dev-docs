@@ -71,7 +71,7 @@ An `InlineArray` can store elements of potentially noncopyable type. When `Eleme
 
 An `InlineArray` stores its elements contiguously. If an `InlineArray` is a stored property of a class, then it’s allocated on the heap along with the other stored properties of the class. Otherwise, in general, an `InlineArray` is allocated on the stack.
 
-A  `InlineArray`’s size and stride are both found by multiplying the `count` of elements by the `Element`’s stride. Its alignment is equal to the `Element`’s alignment.
+A *non-empty* `InlineArray`’s size and stride are both found by multiplying the `count` of elements by the `Element`’s stride. Its alignment is equal to the `Element`’s alignment.
 
 ```swift
 struct Record {
@@ -89,7 +89,7 @@ MemoryLayout<(Record, Record)>.stride     // 16
 MemoryLayout<(Record, Record)>.alignment  // 4
 ```
 
-An  `InlineArray`’s size is zero. Its stride and alignment are both one byte.
+An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one byte.
 
 ## Topics
 

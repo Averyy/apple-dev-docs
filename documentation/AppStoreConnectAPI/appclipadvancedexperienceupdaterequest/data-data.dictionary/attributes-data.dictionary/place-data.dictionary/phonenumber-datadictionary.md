@@ -14,6 +14,12 @@ The phone number of a point of interest or business in Apple Maps.
 object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.PhoneNumber
 ```
 
+## Properties
+
+- `intent` (string): A string that describes the operational purpose of the phone number; for example `Customer Service` or `Help Desk`
+- `number` (string): The phone number as a string.
+- `type` (string): The resource type.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.DisplayPoint](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/displaypoint-data.dictionary.md)

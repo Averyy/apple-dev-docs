@@ -29,8 +29,9 @@ MapKit JS invokes the `callback` function on failure and success with two argume
 
 ## Parameters
 
-- `callback`: A callback function or delegate object with the following parameters:
-- `options`: A   object.
+- `callback`: A callback function or delegate object with the following parameters: - **`error` (Error)**: An error code and descriptive message.
+- **`data` ([`PointsOfInterestSearchResponse`](pointsofinterestsearchresponse.md))**: An object parsed from server-returned JSON.
+- `options`: A [`PointsOfInterestSearchOptions`](pointsofinterestsearchoptions.md) object.
 
 ## See Also
 

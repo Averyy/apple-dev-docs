@@ -10,6 +10,8 @@ Use the `aspectFill` attribute to display an image that fills the bounding box w
 
 ##### Values for Aspectfill
 
+- **boolean**: The image fills the entire screen when set to `true`.
+
 ##### Elements That Use Aspectfill
 
 - [`img`](img.md) inside of a `oneupTemplate` element only

@@ -8,6 +8,14 @@ Get a list of reports Ids from a specific analytics report request.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/{id}/relationships/reports`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Request reports](post-v1-analyticsreportrequests.md)

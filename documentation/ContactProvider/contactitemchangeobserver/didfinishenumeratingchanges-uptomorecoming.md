@@ -22,8 +22,8 @@ A change enumeration can resume in the future, continuing from this sync anchor.
 
 ## Parameters
 
-- `syncAnchor`: The   where the next change enumeration should start from.
-- `moreComing`: If  , the enumerator receives another call to  .
+- `syncAnchor`: The `ContactItemSyncAnchor` where the next change enumeration should start from.
+- `moreComing`: If `true`, the enumerator receives another call to [`enumerateChanges(startingAt:for:)`](contactitemenumerator/enumeratechanges(startingat:for:).md).
 
 ## See Also
 

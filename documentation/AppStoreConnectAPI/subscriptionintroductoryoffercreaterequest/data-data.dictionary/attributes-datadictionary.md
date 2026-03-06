@@ -12,6 +12,14 @@
 object SubscriptionIntroductoryOfferCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `duration` (SubscriptionOfferDuration) *(required)*
+- `endDate` (date)
+- `numberOfPeriods` (integer) *(required)*
+- `offerMode` (SubscriptionOfferMode) *(required)*
+- `startDate` (date)
+
 ## See Also
 
 - [object SubscriptionIntroductoryOfferCreateRequest.Data.Relationships](subscriptionintroductoryoffercreaterequest/data-data.dictionary/relationships-data.dictionary.md)

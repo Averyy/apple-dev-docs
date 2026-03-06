@@ -17,15 +17,15 @@ With all that choice, it’s hard to know where to start.  This technote aims to
 
 > ❗ **Important**: If you’re working on watchOS, read [`TN3135: Low-level networking on watchOS`](tn3135-low-level-networking-on-watchos.md) to understand its unique constraints.
 
-The focus here is on APIs that allow you to  the networking stack.  If you want to  the networking stack—for example, to add support for a custom VPN protocol—implement a Network Extension provider.  For the details, see [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension).
+The focus here is on APIs that allow you to *use* the networking stack.  If you want to *extend* the networking stack—for example, to add support for a custom VPN protocol—implement a Network Extension provider.  For the details, see [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension).
 
 #### Recommendations By Protocol
 
 This section lists API recommendations for common network protocols.  Follow the advice for the protocol you’re using:
 
--  [`HTTP`](tn3151-choosing-the-right-networking-api#HTTP.md), [`WebSocket`](tn3151-choosing-the-right-networking-api#WebSocket.md), [`FTP`](tn3151-choosing-the-right-networking-api#FTP.md)
--  [`QUIC`](tn3151-choosing-the-right-networking-api#QUIC.md), [`TCP`](tn3151-choosing-the-right-networking-api#TCP.md), [`UDP`](tn3151-choosing-the-right-networking-api#UDP.md)
--  [`Bonjour service discovery`](tn3151-choosing-the-right-networking-api#Bonjour-service-discovery.md), [`DNS`](tn3151-choosing-the-right-networking-api#DNS.md), [`Peer-to-peer networking`](tn3151-choosing-the-right-networking-api#Peer-to-peer-networking.md), [`Wi-Fi`](tn3151-choosing-the-right-networking-api#Wi-Fi.md)
+- **Application Layer:** [`HTTP`](tn3151-choosing-the-right-networking-api#HTTP.md), [`WebSocket`](tn3151-choosing-the-right-networking-api#WebSocket.md), [`FTP`](tn3151-choosing-the-right-networking-api#FTP.md)
+- **Transport Layer:** [`QUIC`](tn3151-choosing-the-right-networking-api#QUIC.md), [`TCP`](tn3151-choosing-the-right-networking-api#TCP.md), [`UDP`](tn3151-choosing-the-right-networking-api#UDP.md)
+- **Other:** [`Bonjour service discovery`](tn3151-choosing-the-right-networking-api#Bonjour-service-discovery.md), [`DNS`](tn3151-choosing-the-right-networking-api#DNS.md), [`Peer-to-peer networking`](tn3151-choosing-the-right-networking-api#Peer-to-peer-networking.md), [`Wi-Fi`](tn3151-choosing-the-right-networking-api#Wi-Fi.md)
 
 ##### Http
 
@@ -48,7 +48,7 @@ For more options, see [`WebSocket alternatives`](tn3151-choosing-the-right-netwo
 
 ##### Ftp
 
-FTP is a very old and dilapidated protocol.  FTP is inappropriate to use on the modern internet because it provides  security.  Because of this, Apple has no supported FTP APIs.
+FTP is a very old and dilapidated protocol.  FTP is inappropriate to use on the modern internet because it provides *no* security.  Because of this, Apple has no supported FTP APIs.
 
 Your best option here is to switch to a newer protocol, like HTTP.  It may require some coordination with your server folks, but that will pay off in the long term.
 
@@ -203,7 +203,7 @@ Apple platforms support a variety of alternative TCP APIs:
 - [`CFSocket`](https://developer.apple.com/documentation/CoreFoundation/CFSocket) is much like `FileHandle`: It’s possible to use it to run a TCP connection, but it has all the same limitations as BSD Sockets.
 - [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) is much like `URLSessionWebSocketTask`: Unless you have a specific reason to use `URLSession`, use Network framework instead.
 - Network Extension in-provider networking includes `NWTCPConnection`.  While there are some very limited circumstances where this is still useful, in most cases it’s better to use Network framework.  For more details, see [`In-Provider Networking`](https://developer.apple.com/documentation/NetworkExtension/in-provider-networking).
-- Foundation has a number of classes, like `NSConnection` and `NSSocketPort`, that  like they might be useful for TCP networking.  They are not.  These are part of Foundation’s legacy Distributed Objects (DO) system.  DO was never a good choice for networking; moreover, it was formally deprecated in [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md).
+- Foundation has a number of classes, like `NSConnection` and `NSSocketPort`, that *seem* like they might be useful for TCP networking.  They are not.  These are part of Foundation’s legacy Distributed Objects (DO) system.  DO was never a good choice for networking; moreover, it was formally deprecated in [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md).
 
 ##### Udp Alternatives
 
@@ -262,7 +262,7 @@ Traditionally, you connect to a TCP service using two steps:
 This two-step approach is an anti-pattern on Apple platforms for two reasons:
 
 - It doesn’t support on-demand connections, such as VPN On Demand.
-- It’s hard to implement the second step correctly.  The industry standard for this is called the  algorithm ([`RFC 8305`](https://developer.apple.comhttps://tools.ietf.org/html/rfc8305)).  It’s a non-trivial amount of work.
+- It’s hard to implement the second step correctly.  The industry standard for this is called the *Happy Eyeballs* algorithm ([`RFC 8305`](https://developer.apple.comhttps://tools.ietf.org/html/rfc8305)).  It’s a non-trivial amount of work.
 
 Apple’s preferred networking APIs support connect-by-name semantics, where you pass the API a DNS name and it takes care of all the details.  If you can use a connect-by-name API, do that.  If you can’t—and the prime offender here is BSD Sockets—you’ll have to implement Happy Eyeballs yourself.
 
@@ -286,7 +286,7 @@ BSD Sockets has a number of limitations.  Your life will be easier if you use [`
 
 If your primary reason for using BSD Sockets is cross-platform support, consider using a network abstraction layer that adapts to the target platform.  One such option is [`SwiftNIO Transport Services`](https://developer.apple.comhttps://github.com/apple/swift-nio-transport-services), which makes it straightforward to use Network framework on Apple platforms and BSD Sockets elsewhere.
 
-Apple’s BSD Sockets implementation is documented in the man pages.  If you’re unfamiliar with that term, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  Man pages are notoriously succinct.  If you’re getting started with BSD Sockets, take advantage of the wide range of non-Apple resources out there.  A classic work in the field is the book  by Stevens et al.
+Apple’s BSD Sockets implementation is documented in the man pages.  If you’re unfamiliar with that term, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  Man pages are notoriously succinct.  If you’re getting started with BSD Sockets, take advantage of the wide range of non-Apple resources out there.  A classic work in the field is the book *UNIX Network Programming* by Stevens et al.
 
 One traditional challenge with BSD Sockets is how best to handle nonblocking sockets.  For cross-platform code you have all the usual options (`select`, `poll`, `kqueue`).  For Apple-specific code you have one more: a Dispatch read source.  Use this to integrate a nonblocking socket into existing code that uses Dispatch queues.  For more details, see [`Dispatch Source`](https://developer.apple.com/documentation/Dispatch/dispatch-source).
 
@@ -346,9 +346,9 @@ Networking is fundamental to all Apple platforms.  When Apple introduces a new n
 
 #### Revision History
 
--  Added links to [`TN3179: Understanding local network privacy`](tn3179-understanding-local-network-privacy.md).  Added links to the Network framework Swift API introduced in 2025.  Added information about Wi-Fi Aware.  Updated “BSD Sockets best practices” to discuss `NEURLFilter` and `ne_socket_set_domains`.  Updated the version list.  Made other editorial changes.
--  Added information about `CFSocket`.
--  First published.
+- **2025-09-05** Added links to [`TN3179: Understanding local network privacy`](tn3179-understanding-local-network-privacy.md).  Added links to the Network framework Swift API introduced in 2025.  Added information about Wi-Fi Aware.  Updated “BSD Sockets best practices” to discuss `NEURLFilter` and `ne_socket_set_domains`.  Updated the version list.  Made other editorial changes.
+- **2023-09-19** Added information about `CFSocket`.
+- **2023-06-06** First published.
 
 ## See Also
 

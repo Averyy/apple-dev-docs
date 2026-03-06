@@ -17,6 +17,11 @@ object AppStoreVersion.Relationships.GameCenterAppVersion
 ### Dictionaries
 - [object AppStoreVersion.Relationships.GameCenterAppVersion.Data](appstoreversion/relationships-data.dictionary/gamecenterappversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersion.Relationships.GameCenterAppVersion.Data)
+- `links` (RelationshipLinks)
+
 
 ---
 

@@ -20,6 +20,10 @@ object GameCenterEnabledVersionCompatibleVersionsLinkagesRequest
 - [object GameCenterEnabledVersionCompatibleVersionsLinkagesRequest.Data](gamecenterenabledversioncompatibleversionslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([GameCenterEnabledVersionCompatibleVersionsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterEnabledVersion](gamecenterenabledversion.md)

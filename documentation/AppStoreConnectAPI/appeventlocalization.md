@@ -18,6 +18,14 @@ object AppEventLocalization
 - [object AppEventLocalization.Attributes](appeventlocalization/attributes-data.dictionary.md)
 - [object AppEventLocalization.Relationships](appeventlocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppEventLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppEventLocalizationCreateRequest](appeventlocalizationcreaterequest.md)

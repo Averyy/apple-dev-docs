@@ -20,6 +20,10 @@ object AppScreenshot.Relationships
 - [object AppScreenshot.Relationships.AppScreenshotSet](appscreenshot/relationships-data.dictionary/appscreenshotset-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `appScreenshotSet` (AppScreenshot.Relationships.AppScreenshotSet)
+
 ## See Also
 
 - [object AppScreenshot.Attributes](appscreenshot/attributes-data.dictionary.md)

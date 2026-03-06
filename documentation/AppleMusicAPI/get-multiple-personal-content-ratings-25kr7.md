@@ -18,6 +18,48 @@ For a particular playlist, the personal ratings for that playlist’s catalog ID
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/ratings/library-playlists?ids=p.MoGJYM3CYXW09B,p.8Wx6vK6IQeP0N2
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+        {
+            "attributes": {
+                "value": 1
+            },
+            "href": "/v1/me/ratings/library-playlists/p.MoGJYM3CYXW09B",
+            "id": "p.MoGJYM3CYXW09B",
+            "type": "ratings"
+        },
+        {
+            "attributes": {
+                "value": 1
+            },
+            "href": "/v1/me/ratings/library-playlists/p.8Wx6vK6IQeP0N2",
+            "id": "p.8Wx6vK6IQeP0N2",
+            "type": "ratings"
+        }
+    ]
+}
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/me/ratings/library-playlists`
+
+## Parameters
+
+- `ids` ([string]) *(required)*: The unique identifiers for the library playlists.
+- `include` ([string]): Additional relationships to include in the fetch.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object Ratings](ratings.md)

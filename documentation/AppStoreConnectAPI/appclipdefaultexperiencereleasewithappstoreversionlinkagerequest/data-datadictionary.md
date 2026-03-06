@@ -14,6 +14,11 @@ The data element of the request body.
 object AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the request.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

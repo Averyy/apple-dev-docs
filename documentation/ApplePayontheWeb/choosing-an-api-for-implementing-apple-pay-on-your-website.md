@@ -14,32 +14,32 @@ To help you decide which API to implement, or whether to implement both, first d
 
 Use [`Apple Pay JS API`](apple-pay-js-api.md) if you depend on any of its unique features:
 
- You can provide robust error handling:
+**Granular error handling.** You can provide robust error handling:
 
 - Customizable error messages and field indications create a better user experience. See [`ApplePayError`](applepayerror.md) for more information.
 - You can report errors the user can correct, even after the user authorizes payment.
 - You can retry if an error occurs after the user authorizes payment. With [`Payment Request API`](payment-request-api.md), the user must restart their transaction.
 
- When customers with affiliated cards visit your website, you can provide these additional benefits:
+**Integration for store cards and cobranded debit/credit cards.** When customers with affiliated cards visit your website, you can provide these additional benefits:
 
 - Apple Pay can automatically select the affiliated card instead of the customer’s default card.
 - You can adjust prices or other terms of a sale for customers using your affiliated card. For example, you might provide free shipping when customers use your cobranded VISA credit card.
 
- You can request a phonetic name in [`Apple Pay JS API`](apple-pay-js-api.md) only.
+**Phonetic names.** You can request a phonetic name in [`Apple Pay JS API`](apple-pay-js-api.md) only.
 
 ##### Features of Payment Request Api
 
 Use [`Payment Request API`](payment-request-api.md) for these benefits:
 
--  Payment Request API-based code can support a variety platforms and browsers. Apple Pay is available on Safari; other payment methods are available on other browsers and platforms.
--   The Payment Request API is defined by the [`World Wide Web Consortium (W3C)`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/).
+- **Cross-browser solution.** Payment Request API-based code can support a variety platforms and browsers. Apple Pay is available on Safari; other payment methods are available on other browsers and platforms.
+- **W3C standard candidate API.**  The Payment Request API is defined by the [`World Wide Web Consortium (W3C)`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/).
 
 ##### Choose an Api to Support Your Customers
 
 To better reach your customers, choose an API that works on their devices, as follows:
 
--  Supported in iOS 10 and later, and macOS 10.12 and later.
--  Supported in iOS 11.3 and later, and Safari 11.1 on macOS 10.12 and later.
+- **Apple Pay JS API:** Supported in iOS 10 and later, and macOS 10.12 and later.
+- **Payment Request API:** Supported in iOS 11.3 and later, and Safari 11.1 on macOS 10.12 and later.
 
 When implementing [`Payment Request API`](payment-request-api.md), consider also implementing [`Apple Pay JS API`](apple-pay-js-api.md) as a fallback for customers whose devices run an older operating system version.
 

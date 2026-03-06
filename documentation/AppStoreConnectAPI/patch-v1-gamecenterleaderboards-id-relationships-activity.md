@@ -10,6 +10,14 @@
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/{id}/relationships/activity`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center leaderboard](post-v2-gamecenterleaderboards.md)

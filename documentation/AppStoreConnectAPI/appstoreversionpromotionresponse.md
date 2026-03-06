@@ -12,6 +12,11 @@
 object AppStoreVersionPromotionResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionPromotion) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPromotionCreateRequest.Data](appstoreversionpromotioncreaterequest/data-data.dictionary.md)

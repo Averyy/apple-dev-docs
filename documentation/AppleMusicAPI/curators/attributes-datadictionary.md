@@ -14,6 +14,13 @@ The attributes for a curator resource.
 object Curators.Attributes
 ```
 
+## Properties
+
+- `artwork` (Artwork) *(required)*: The curator artwork.
+- `editorialNotes` (EditorialNotes): The notes about the curator.
+- `name` (string) *(required)*: The localized name of the curator.
+- `url` (string) *(required)*: The URL for sharing the curator in Apple Music.
+
 ## See Also
 
 - [object Curators.Relationships](curators/relationships-data.dictionary.md)

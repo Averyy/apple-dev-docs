@@ -14,6 +14,13 @@ A response that contains a list of Beta Build Localization resources.
 object BetaBuildLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([BetaBuildLocalization]) *(required)*: The resource data.
+- `included` ([Build])
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+
 ## See Also
 
 - [List Beta Build Localizations](get-v1-betabuildlocalizations.md)

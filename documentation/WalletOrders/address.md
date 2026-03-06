@@ -16,6 +16,16 @@ The physical address for an order.
 object Address
 ```
 
+## Properties
+
+- `addressLines` ([string]): The street portion of the address.
+- `administrativeArea` (string): The state or administrative area of the address.
+- `countryCode` (string): The country of the address, in ISO-3166 two-letter format.
+- `locality` (string): The city of the address.
+- `postalCode` (string): The ZIP or postal code, where applicable, of the address.
+- `subAdministrativeArea` (string): The subadministrative area (such as county or other region) of the address.
+- `subLocality` (string): Additional information associated with the location, such as a district or neighborhood.
+
 ## See Also
 
 - [object Customer](customer.md)

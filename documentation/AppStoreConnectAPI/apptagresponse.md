@@ -14,6 +14,12 @@ A response that contains a single app tag response resource.
 object AppTagResponse
 ```
 
+## Properties
+
+- `data` (AppTag) *(required)*
+- `included` ([Territory])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)

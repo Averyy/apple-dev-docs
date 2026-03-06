@@ -18,6 +18,14 @@ object SubscriptionOfferCodeCustomCode
 - [object SubscriptionOfferCodeCustomCode.Attributes](subscriptionoffercodecustomcode/attributes-data.dictionary.md)
 - [object SubscriptionOfferCodeCustomCode.Relationships](subscriptionoffercodecustomcode/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionOfferCodeCustomCode.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionOfferCodeCustomCode.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

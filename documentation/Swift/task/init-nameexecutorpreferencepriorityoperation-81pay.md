@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: init
 
-Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 
 **Availability**:
 - iOS 18.0+
@@ -32,18 +32,18 @@ You need to keep a reference to the task if you want to cancel it by calling the
 ## Parameters
 
 - `name`: Human readable name of the task.
-- `taskExecutor`: The task executor that the child task should be started on and keep using.   Explicitly passing   as the executor preference is equivalent to no preference,   and effectively means to inherit the outer context’s executor preference.   You can also pass the   global executor explicitly.
+- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to no preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](globalconcurrentexecutor.md) global executor explicitly.
 - `priority`: The priority of the operation task.
 - `operation`: The operation to perform.
 
 ## See Also
 
 - [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [static var currentPriority: TaskPriority](task/currentpriority.md)
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)

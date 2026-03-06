@@ -17,6 +17,13 @@ object InAppPurchaseSubmission
 ### Objects
 - [object InAppPurchaseSubmission.Relationships](inapppurchasesubmission/relationships-data.dictionary.md)
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseSubmission.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseSubmissionCreateRequest](inapppurchasesubmissioncreaterequest.md)

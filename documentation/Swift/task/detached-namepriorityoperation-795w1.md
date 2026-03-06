@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Runs the given throwing operation asynchronously as part of a new   top-level task.
+Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 
 **Availability**:
 - iOS 13.0+
@@ -36,17 +36,17 @@ You need to keep a reference to the task if you want to cancel it by calling the
 ## Parameters
 
 - `name`: Human readable name of the task.
-- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the enclosing context’s base priority.
+- `priority`: The priority of the operation task. Omit this parameter or pass `nil` to inherit the enclosing context’s base priority.
 - `operation`: The operation to perform.
 
 ## See Also
 
 - [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:priority:operation:)-9xki7.md)
-  Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 - [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:executorpreference:priority:operation:)-6r16s.md)
-  Runs the given throwing operation asynchronously as part of a new   top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 - [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:executorpreference:priority:operation:)-75ffe.md)
-  Runs the given nonthrowing operation asynchronously as part of a new   top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 
 
 ---

@@ -19,6 +19,10 @@ Call this endpoint to get all uploaded image identifiers and check their current
 
 Images need to be in an `APPROVED` state before the system can display messages that contain them.
 
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/image/list`
+
 ## See Also
 
 - [Upload Image](upload-image.md)

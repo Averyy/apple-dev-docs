@@ -46,12 +46,12 @@ Using the `forEach` method is distinct from a `for`-`in` loop in two important w
 
 ## Parameters
 
-- `body`: A closure that takes an element of the sequence as a   parameter.
+- `body`: A closure that takes an element of the sequence as a parameter.
 
 ## See Also
 
 - [func enumerated() -> EnumeratedSequence<Self>](dictionary/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [var lazy: LazySequence<Self>](dictionary/lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 - [func makeIterator() -> Dictionary<Key, Value>.Iterator](dictionary/makeiterator.md)

@@ -16,6 +16,13 @@ The details of a barcode for an order.
 object Barcode
 ```
 
+## Properties
+
+- `altText` (string): The localized text displayed by the barcode. For example, a human-readable version of the barcode data in case of a scanning failure.
+- `format` (string) *(required)*: The format of the barcode.
+- `message` (string) *(required)*: The contents of the barcode.
+- `messageEncoding` (string) *(required)*: The text encoding of the barcode message. Typically this is `iso-8859-1`, but you may specify an alternative encoding if required.
+
 ## See Also
 
 - [object Customer](customer.md)

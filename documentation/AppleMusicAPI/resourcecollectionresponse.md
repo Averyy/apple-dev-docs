@@ -14,6 +14,10 @@ A response object composed of resource objects for the request.
 object ResourceCollectionResponse
 ```
 
+## Properties
+
+- `data` ([Resource]) *(required)*: The collection of resources for the request.
+
 ## See Also
 
 - [object EmptyBodyResponse](emptybodyresponse.md)

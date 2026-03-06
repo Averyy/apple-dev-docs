@@ -23,7 +23,7 @@ init(options: String.CompareOptions, locale: Locale? = Locale.current, order: So
 ## Parameters
 
 - `options`: The options to use for comparison.
-- `locale`: The locale to use for comparison. If  , the   comparison is unlocalized.
+- `locale`: The locale to use for comparison. If `nil`, the comparison is unlocalized.
 - `order`: The initial order to use for ordered comparison.
 
 

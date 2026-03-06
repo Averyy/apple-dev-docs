@@ -20,6 +20,13 @@ object Artists.Views.ArtistsAppearsOnAlbumsView
 - [object Artists.Views.ArtistsAppearsOnAlbumsView.Attributes](artists/views-data.dictionary/artistsappearsonalbumsview/attributes-data.dictionary.md)
   Albums from other artists on which this artist appears or with which they’re associated.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsAppearsOnAlbumsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Albums]) *(required)*: A selection of albums from other artists this artist appears on.
+
 ## See Also
 
 - [object Artists.Views.ArtistsCompilationAlbumsView](artists/views-data.dictionary/artistscompilationalbumsview.md)

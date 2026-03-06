@@ -8,6 +8,14 @@ Modify the leaderboard sets in a specific group.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardSets`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Get all achievement IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterachievementsv2.md)

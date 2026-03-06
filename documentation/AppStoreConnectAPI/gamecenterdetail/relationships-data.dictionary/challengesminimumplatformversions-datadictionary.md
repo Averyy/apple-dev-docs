@@ -17,6 +17,12 @@ object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions
 ### Dictionaries
 - [object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions.Data](gamecenterdetail/relationships-data.dictionary/challengesminimumplatformversions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

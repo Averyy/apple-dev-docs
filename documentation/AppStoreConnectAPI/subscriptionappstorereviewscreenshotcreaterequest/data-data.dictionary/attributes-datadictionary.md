@@ -12,6 +12,11 @@
 object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

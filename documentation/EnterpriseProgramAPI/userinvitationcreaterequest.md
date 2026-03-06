@@ -17,6 +17,10 @@ object UserInvitationCreateRequest
 - [object UserInvitationCreateRequest.Data](userinvitationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (UserInvitationCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object UserInvitation](userinvitation.md)

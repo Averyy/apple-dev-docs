@@ -8,6 +8,14 @@ Update the relationship between a challenges minimum platform version and a spec
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/challengesMinimumPlatformVersions`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md) response.
+
 ## See Also
 
 - [Read challenge information](get-v1-gamecenterchallenges-_id_.md)

@@ -23,7 +23,7 @@ This setting is most useful when the framework can’t be linked automatically, 
 ## Parameters
 
 - `framework`: The framework name.
-- `condition`: A condition that restricts the application of the build   setting.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

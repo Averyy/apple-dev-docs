@@ -14,6 +14,12 @@ A relationship from the library music video to its associated catalog content.
 object LibraryMusicVideos.Relationships.LibraryMusicVideosCatalogRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([MusicVideos]) *(required)*: The music video from the Apple Music catalog associated with the library music video, if any.
+
 ## See Also
 
 - [object LibraryMusicVideos.Relationships.LibraryMusicVideosAlbumsRelationship](librarymusicvideos/relationships-data.dictionary/librarymusicvideosalbumsrelationship.md)

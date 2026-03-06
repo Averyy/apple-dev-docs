@@ -20,6 +20,10 @@ object AppPreviewSetAppPreviewsLinkagesRequest
 - [object AppPreviewSetAppPreviewsLinkagesRequest.Data](apppreviewsetapppreviewslinkagesrequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([AppPreviewSetAppPreviewsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object AppPreviewSet](apppreviewset.md)

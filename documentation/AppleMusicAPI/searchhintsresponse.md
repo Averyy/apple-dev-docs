@@ -20,6 +20,10 @@ object SearchHintsResponse
 - [object SearchHintsResponse.Results](searchhintsresponse/results-data.dictionary.md)
   An object that represents the autocomplete options for the hint.
 
+## Properties
+
+- `results` (SearchHintsResponse.Results) *(required)*: The results included in the response to a request for search hints.
+
 ## See Also
 
 - [object SearchResponse](searchresponse.md)

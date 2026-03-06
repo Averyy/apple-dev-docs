@@ -12,6 +12,11 @@
 object AppStoreVersionExperimentCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*
+- `trafficProportion` (integer) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentCreateRequest.Data.Relationships](appstoreversionexperimentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

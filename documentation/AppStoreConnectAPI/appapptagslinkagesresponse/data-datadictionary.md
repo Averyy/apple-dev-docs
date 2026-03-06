@@ -14,6 +14,11 @@ The data structure that represents an app tags linkages response resource.
 object AppAppTagsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

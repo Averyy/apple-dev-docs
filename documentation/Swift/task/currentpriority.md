@@ -27,13 +27,13 @@ If you access this property outside of any task, this queries the system to dete
 ## See Also
 
 - [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
-  Runs the given throwing operation asynchronously as part of a new  top-level task.
+  Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 - [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
-  Runs the given nonthrowing operation asynchronously as part of a new  top-level task.
+  Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
   The current task’s base priority.
 - [func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:).md)

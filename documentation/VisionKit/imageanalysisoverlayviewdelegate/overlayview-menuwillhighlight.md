@@ -20,7 +20,7 @@ func overlayView(_ overlayView: ImageAnalysisOverlayView, menu: NSMenu, willHigh
 
 - `overlayView`: The associated overlay view for the menu.
 - `menu`: The menu that contains the highlighted items.
-- `menuItem`: The menu item that is highlighted, or   if the menu item removes its highlight.
+- `menuItem`: The menu item that is highlighted, or `nil` if the menu item removes its highlight.
 
 ## See Also
 

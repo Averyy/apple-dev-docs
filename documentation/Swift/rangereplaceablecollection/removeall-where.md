@@ -31,11 +31,11 @@ numbers.removeAll(where: { $0 % 2 != 0 })
 // numbers == [6, 8, 10]
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
-- `shouldBeRemoved`: A closure that takes an element of the   sequence as its argument and returns a Boolean value indicating   whether the element should be removed from the collection.
+- `shouldBeRemoved`: A closure that takes an element of the sequence as its argument and returns a Boolean value indicating whether the element should be removed from the collection.
 
 
 ---

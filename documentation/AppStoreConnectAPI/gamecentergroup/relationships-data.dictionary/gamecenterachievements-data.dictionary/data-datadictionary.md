@@ -12,6 +12,11 @@
 object GameCenterGroup.Relationships.GameCenterAchievements.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

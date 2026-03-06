@@ -22,7 +22,7 @@ init(repeating repeatedValue: Element, count: Int)
 
 #### Discussion
 
-Here’s an example of creating an array initialized with five strings containing the letter .
+Here’s an example of creating an array initialized with five strings containing the letter *Z*.
 
 ```swift
 let fiveZs = Array(repeating: "Z", count: 5)
@@ -33,7 +33,7 @@ print(fiveZs)
 ## Parameters
 
 - `repeatedValue`: The element to repeat.
-- `count`: The number of times to repeat the value passed in the    parameter.   must be zero or greater.
+- `count`: The number of times to repeat the value passed in the `repeating` parameter. `count` must be zero or greater.
 
 
 ---

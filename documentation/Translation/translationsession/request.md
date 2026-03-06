@@ -19,7 +19,7 @@ struct Request
 
 #### Overview
 
-Create a translation request to translate a string of text. Initialize the request using `init(sourceText:clientIdentifier:)`. Set the `sourceText` to the string of text you want to translate. Then pass that request in an array to one of the batch translation functions.
+Create a translation request to translate a string of text. Initialize the request using [`init(sourceText:clientIdentifier:)`](translationsession/request/init(sourcetext:clientidentifier:)-ruyz.md). Set the [`sourceText`](translationsession/request/sourcetext.md) to the string of text you want to translate. Then pass that request in an array to one of the batch translation functions.
 
 Keep track of the correspondence between the responses and requests by setting the [`clientIdentifier`](translationsession/request/clientidentifier.md) on the sent request, then matching it with the [`clientIdentifier`](translationsession/response/clientidentifier.md) of the received response when the translation completes.
 
@@ -27,14 +27,14 @@ Keep track of the correspondence between the responses and requests by setting t
 
 ### Initializing a translation request
 - [init(sourceText: AttributedString, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-8fung.md)
-  Creates a request for translating a single attributed string. This will also set the `sourceText` property to the unatributed version of the sourceText parameter.
+  Creates a request for translating a single attributed string.
 - [init(sourceText: String, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-ruyz.md)
   Creates a request for translating a single string of text.
 ### Specifying text to translate
 - [var sourceText: String](translationsession/request/sourcetext.md)
-  The input text the framework translates.
+  The plain text input to translate.
 - [var attributedSourceText: AttributedString?](translationsession/request/attributedsourcetext.md)
-  The attributed input text the framework translates.
+  The text to translate, including styling like bold text, italics, and hyperlink data for linking between data sources.
 ### Identifying requests
 - [var clientIdentifier: String?](translationsession/request/clientidentifier.md)
   An optional unique identifier to associate a translation request with its response.
@@ -42,7 +42,7 @@ Keep track of the correspondence between the responses and requests by setting t
 ## See Also
 
 - [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
-  Translates a single attributed string of text.
+  Translates a formatted string of text, preserving formatting in the translation.
 - [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)

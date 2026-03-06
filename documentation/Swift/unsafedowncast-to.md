@@ -34,8 +34,8 @@ Use this function instead of `unsafeBitcast(_:to:)` because this function is mor
 
 ## Parameters
 
-- `x`: An instance to cast to type  .
-- `type`: The type   to which   is cast.
+- `x`: An instance to cast to type `T`.
+- `type`: The type `T` to which `x` is cast.
 
 ## See Also
 

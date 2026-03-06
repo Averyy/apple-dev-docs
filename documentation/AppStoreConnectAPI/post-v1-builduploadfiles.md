@@ -8,6 +8,10 @@ Reserve a build upload file for a specific build upload.
 **Availability**:
 - App Store Connect API 4.1+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/buildUploadFiles`
+
 ## See Also
 
 - [Read build upload file information](get-v1-builduploadfiles-_id_.md)

@@ -8,6 +8,14 @@ Delete a specific merchant ID.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/merchantIds/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the merchant ID resource ID from the [`List merchant IDs`](get-v1-merchantids.md) response.
+
 ## See Also
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)

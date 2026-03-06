@@ -25,6 +25,11 @@ object GameCenterAchievementVersionV2CreateRequest.Data
 - [object GameCenterAchievementVersionV2CreateRequest.Data.Relationships](gamecenterachievementversionv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `relationships` (GameCenterAchievementVersionV2CreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

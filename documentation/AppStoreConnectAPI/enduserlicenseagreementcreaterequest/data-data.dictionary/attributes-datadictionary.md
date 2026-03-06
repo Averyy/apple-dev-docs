@@ -14,6 +14,10 @@ Attributes that you set that describe the new resource.
 object EndUserLicenseAgreementCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `agreementText` (string) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreementCreateRequest.Data.Relationships](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -21,7 +21,7 @@ Perform this opt-in early in your app lifecycle, such as in your main [`App`](ht
 
 #### Store Playback State
 
-You define a single source of truth in your app using a SwiftUI [`State`](https://developer.apple.com/documentation/SwiftUI/State) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the [`task(priority:_:)`](https://developer.apple.com/documentation/swiftui/view/task(priority:_:)) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
+You define a single source of truth in your app using a SwiftUI [`State`](https://developer.apple.com/documentation/SwiftUI/State) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
 
 ```swift
 struct PlayerView: View {

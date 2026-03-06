@@ -14,6 +14,11 @@ The attributes of a team that you modify.
 object GameCenterMatchmakingTeamUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `maxPlayers` (integer): The maximum number of players on the team.
+- `minPlayers` (integer): The minimum number of players on the team.
+
 
 ---
 

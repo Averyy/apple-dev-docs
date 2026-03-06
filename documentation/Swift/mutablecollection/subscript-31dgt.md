@@ -43,7 +43,7 @@ print(streets[index!])
 
 ## Parameters
 
-- `bounds`: A range of the collection’s indices. The bounds of   the range must be valid indices of the collection.
+- `bounds`: A range of the collection’s indices. The bounds of the range must be valid indices of the collection.
 
 
 ---

@@ -14,6 +14,10 @@ Attributes that describe a beta recruitment criteria-compatible, build-check res
 object BetaRecruitmentCriterionCompatibleBuildCheck.Attributes
 ```
 
+## Properties
+
+- `hasCompatibleBuild` (boolean)
+
 
 ---
 

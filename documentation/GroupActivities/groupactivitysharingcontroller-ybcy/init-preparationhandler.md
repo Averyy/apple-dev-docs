@@ -24,7 +24,7 @@ The initializer executes the closure asynchronously so that your app can present
 
 ## Parameters
 
-- `preparationHandler`: A closure that takes no parameters and   returns the activity object.
+- `preparationHandler`: A closure that takes no parameters and returns the activity object.
 
 ## See Also
 

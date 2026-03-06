@@ -18,6 +18,11 @@ object UploadMessageImage
 
 - [Setting up retention messages](setting-up-retention-messages.md)
 
+## Properties
+
+- `imageIdentifier` (imageIdentifier): **(Required)** The unique identifier of an image.
+- `altText` (altText): **(Required)** The alternative text you provide for the corresponding image.
+
 ## See Also
 
 - [Upload Message](upload-message.md)

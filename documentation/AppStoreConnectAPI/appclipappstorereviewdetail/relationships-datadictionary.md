@@ -20,6 +20,10 @@ object AppClipAppStoreReviewDetail.Relationships
 - [object AppClipAppStoreReviewDetail.Relationships.AppClipDefaultExperience](appclipappstorereviewdetail/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
   The data and links that describe the relationship between the App Clip App Store Review Details and the Default App Clip Experiences resources.
 
+## Properties
+
+- `appClipDefaultExperience` (AppClipAppStoreReviewDetail.Relationships.AppClipDefaultExperience): The related Default App Clip Experiences resource.
+
 ## See Also
 
 - [object AppClipAppStoreReviewDetail.Attributes](appclipappstorereviewdetail/attributes-data.dictionary.md)

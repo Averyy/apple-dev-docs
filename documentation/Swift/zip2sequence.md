@@ -23,7 +23,7 @@ struct Zip2Sequence<Sequence1, Sequence2> where Sequence1 : Sequence, Sequence2 
 
 #### Overview
 
-In a `Zip2Sequence` instance, the elements of the th pair are the th elements of each underlying sequence. To create a `Zip2Sequence` instance, use the `zip(_:_:)` function.
+In a `Zip2Sequence` instance, the elements of the *i*th pair are the *i*th elements of each underlying sequence. To create a `Zip2Sequence` instance, use the `zip(_:_:)` function.
 
 The following example uses the `zip(_:_:)` function to iterate over an array of strings and a countable range at the same time:
 

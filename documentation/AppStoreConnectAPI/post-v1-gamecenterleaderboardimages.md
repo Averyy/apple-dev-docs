@@ -8,6 +8,10 @@ Add a new leaderboard image.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardImages`
+
 ## See Also
 
 - [Read Game Center leaderboard image information](get-v2-gamecenterleaderboardimages-_id_.md)

@@ -20,6 +20,10 @@ object AppClipAdvancedExperienceCreateRequest.Data.Relationships.Localizations
 - [object AppClipAdvancedExperienceCreateRequest.Data.Relationships.Localizations.Data](appclipadvancedexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
   The type and ID of the Advanced App Clips Experience Localizations resource that you’re relating with the Advanced App Clip Experiences resource you’re creating.
 
+## Properties
+
+- `data` ([AppClipAdvancedExperienceCreateRequest.Data.Relationships.Localizations.Data]) *(required)*: The ID and type of the related Advanced App Clip Experience Localizations resource.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceCreateRequest.Data.Relationships.AppClip](appclipadvancedexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/appclip-data.dictionary.md)

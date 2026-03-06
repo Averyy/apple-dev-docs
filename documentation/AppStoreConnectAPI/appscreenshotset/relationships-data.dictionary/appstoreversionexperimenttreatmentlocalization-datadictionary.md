@@ -17,6 +17,10 @@ object AppScreenshotSet.Relationships.AppStoreVersionExperimentTreatmentLocaliza
 ### Objects
 - [object AppScreenshotSet.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data](appscreenshotset/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppScreenshotSet.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data)
+
 ## See Also
 
 - [object AppScreenshotSet.Relationships.AppScreenshots](appscreenshotset/relationships-data.dictionary/appscreenshots-data.dictionary.md)

@@ -21,6 +21,14 @@ object Webhook
   Attributes that describe a webhook resource.
 - [object Webhook.Relationships](webhook/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Webhook.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (Webhook.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object WebhookCreateRequest](webhookcreaterequest.md)

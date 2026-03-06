@@ -14,6 +14,13 @@ The data structure that represents a customer review summarizations response res
 object CustomerReviewSummarizationsResponse
 ```
 
+## Properties
+
+- `data` ([CustomerReviewSummarization]) *(required)*
+- `included` ([Territory])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CustomerReviewsResponse](customerreviewsresponse.md)

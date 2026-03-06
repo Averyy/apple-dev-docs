@@ -78,9 +78,9 @@ For more details about how certificates work, read [`Digital Certificates`](http
   Returns a normalized copy of the distinguished name (DN) of the issuer of a certificate.
 - [func SecCertificateCopyNormalizedSubjectContent(SecCertificate, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFData?](seccertificatecopynormalizedsubjectcontent(_:_:).md)
   Returns a normalized copy of the distinguished name (DN) of the subject of a certificate.
-- [func SecCertificateCopySerialNumber(SecCertificate) -> CFData?](seccertificatecopyserialnumber(_:).md)
+- [func SecCertificateCopySerialNumber(SecCertificate) -> CFData?](seccertificatecopyserialnumber(_:_:).md)
   Returns a copy of a certificate’s serial number.
-- [func SecCertificateCopyPublicKey(SecCertificate) -> SecKey?](seccertificatecopypublickey(_:).md)
+- [func SecCertificateCopyPublicKey(SecCertificate) -> SecKey?](seccertificatecopypublickey(_:_:).md)
   Retrieves the public key from a certificate.
 
 

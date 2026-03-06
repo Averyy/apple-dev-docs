@@ -12,6 +12,10 @@ Add a version for a specific Game Center challenge.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterChallengeVersions`
+
 ## See Also
 
 - [Read the challenges for a Game Center group](get-v1-gamecenterchallenges-_id_-relationships-versions.md)

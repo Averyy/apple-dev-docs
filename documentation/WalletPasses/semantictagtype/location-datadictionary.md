@@ -16,6 +16,11 @@ An object that represents the coordinates of a location.
 object SemanticTagType.Location
 ```
 
+## Properties
+
+- `latitude` (double) *(required)*: The latitude, in degrees.
+- `longitude` (double) *(required)*: The longitude, in degrees.
+
 ## See Also
 
 - [object SemanticTagType.CurrencyAmount](semantictagtype/currencyamount-data.dictionary.md)

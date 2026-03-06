@@ -39,15 +39,15 @@ Valid UTF-8 is represented by this table:
 
 ##### Classifying Errors
 
-An  is when a continuation byte (`10xxxxxx`) occurs in a position that should be the start of a new scalar value. Unexpected continuations can often occur when the input contains arbitrary data instead of textual content. An unexpected continuation at the start of input might mean that the input was not correctly sliced along scalar boundaries or that it does not contain UTF-8.
+An *unexpected continuation* is when a continuation byte (`10xxxxxx`) occurs in a position that should be the start of a new scalar value. Unexpected continuations can often occur when the input contains arbitrary data instead of textual content. An unexpected continuation at the start of input might mean that the input was not correctly sliced along scalar boundaries or that it does not contain UTF-8.
 
-A  is a multi-byte sequence that is the start of a valid multi-byte scalar but is cut off before ending correctly. A truncated scalar at the end of the input might mean that only part of the entire input was received.
+A *truncated scalar* is a multi-byte sequence that is the start of a valid multi-byte scalar but is cut off before ending correctly. A truncated scalar at the end of the input might mean that only part of the entire input was received.
 
-A  (`U+D800..U+DFFF`) is invalid UTF-8. Surrogate code points are used by UTF-16 to encode scalars in the supplementary planes. Their presence may mean the input was encoded in a different 8-bit encoding, such as CESU-8, WTF-8, or Java’s Modified UTF-8.
+A *surrogate code point* (`U+D800..U+DFFF`) is invalid UTF-8. Surrogate code points are used by UTF-16 to encode scalars in the supplementary planes. Their presence may mean the input was encoded in a different 8-bit encoding, such as CESU-8, WTF-8, or Java’s Modified UTF-8.
 
-An  is any code point higher than `U+10FFFF`. This can often occur when the input is arbitrary data instead of textual content.
+An *invalid non-surrogate code point* is any code point higher than `U+10FFFF`. This can often occur when the input is arbitrary data instead of textual content.
 
-An  occurs when a scalar value that could have been encoded using fewer bytes is encoded in a longer byte sequence. Overlong encodings are invalid UTF-8 and can lead to security issues if not correctly detected:
+An *overlong encoding* occurs when a scalar value that could have been encoded using fewer bytes is encoded in a longer byte sequence. Overlong encodings are invalid UTF-8 and can lead to security issues if not correctly detected:
 
 - [`https://nvd.nist.gov/vuln/detail/CVE-2008-2938`](https://developer.apple.comhttps://nvd.nist.gov/vuln/detail/CVE-2008-2938)
 - [`https://nvd.nist.gov/vuln/detail/CVE-2000-0884`](https://developer.apple.comhttps://nvd.nist.gov/vuln/detail/CVE-2000-0884)
@@ -56,7 +56,7 @@ An overlong encoding of `NUL`, `0xC0 0x80`, is used in Java’s Modified UTF-8 b
 
 ##### Reporting the Range of the Error
 
-The range of the error reported follows the  algorithm in which each error is either one byte long or ends before the first byte that is disallowed. See “U+FFFD Substitution of Maximal Subparts” in the Unicode Standard. Unicode started recommending this algorithm in version 6 and is adopted by the W3C.
+The range of the error reported follows the *Maximal subpart of an ill-formed subsequence* algorithm in which each error is either one byte long or ends before the first byte that is disallowed. See “U+FFFD Substitution of Maximal Subparts” in the Unicode Standard. Unicode started recommending this algorithm in version 6 and is adopted by the W3C.
 
 The maximal subpart algorithm will produce a single multi-byte range for a truncated scalar (a multi-byte sequence that is the start of a valid multi-byte scalar but is cut off before ending correctly). For all other errors (including overlong encodings, surrogates, and invalid code points), it will produce an error per byte.
 

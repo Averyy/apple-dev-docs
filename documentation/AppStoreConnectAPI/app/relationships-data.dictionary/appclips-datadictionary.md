@@ -20,6 +20,12 @@ object App.Relationships.AppClips
 - [object App.Relationships.AppClips.Data](app/relationships-data.dictionary/appclips-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clips resource.
 
+## Properties
+
+- `data` ([App.Relationships.AppClips.Data]): The ID and type of the related App Clips resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

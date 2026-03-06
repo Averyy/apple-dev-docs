@@ -22,6 +22,13 @@ object RefundNotAllowedCreationDateError
 
 You can refund a line item for up to one year after its [`creationDate`](creationdate.md). This error indicates that for the line item you’re attempting to refund, the [`creationDate`](creationdate.md) is more than one year ago.
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId) *(required)*
+
 ## See Also
 
 - [object DateTooFarInPastError](datetoofarinpasterror.md)

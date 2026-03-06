@@ -26,7 +26,7 @@ By default, all actor types execute tasks on a shared global concurrent pool. Th
 
 > **Note**: The runtime may perform various optimizations to minimize un-necessary thread switching.
 
-Sometimes it is important to be able to customize the execution behavior of an actor. For example, when an actor is known to perform heavy blocking operations (such as IO), and we would like to keep this work  the global shared pool, as blocking it may prevent other actors from being responsive.
+Sometimes it is important to be able to customize the execution behavior of an actor. For example, when an actor is known to perform heavy blocking operations (such as IO), and we would like to keep this work *off* the global shared pool, as blocking it may prevent other actors from being responsive.
 
 You can implement a custom executor, by conforming a type to the [`SerialExecutor`](serialexecutor.md) protocol, and implementing the `enqueue(_:)` method.
 
@@ -61,9 +61,9 @@ actor MyActor {
 }
 ```
 
-In the example above,  “MyActor” instances would be using the same serial executor, which would result in only one of such actors ever being run at the same time. This may be useful if some of your code has some “specific thread” requirement when interoperating with non-Swift runtimes for example.
+In the example above, *all* “MyActor” instances would be using the same serial executor, which would result in only one of such actors ever being run at the same time. This may be useful if some of your code has some “specific thread” requirement when interoperating with non-Swift runtimes for example.
 
-Since the [`UnownedSerialExecutor`](unownedserialexecutor.md) returned by the `unownedExecutor` property  retain the executor, you must make sure the lifetime of it extends beyond the lifetime of any actor or task using it, as otherwise it may attempt to enqueue work on a released executor object, causing a crash. The executor returned by unownedExecutor  always be the same object, and returning different executors can lead to unexpected behavior.
+Since the [`UnownedSerialExecutor`](unownedserialexecutor.md) returned by the `unownedExecutor` property *does not* retain the executor, you must make sure the lifetime of it extends beyond the lifetime of any actor or task using it, as otherwise it may attempt to enqueue work on a released executor object, causing a crash. The executor returned by unownedExecutor *must* always be the same object, and returning different executors can lead to unexpected behavior.
 
 Alternatively, you can also use existing serial executor implementations, such as Dispatch’s `DispatchSerialQueue` or others.
 

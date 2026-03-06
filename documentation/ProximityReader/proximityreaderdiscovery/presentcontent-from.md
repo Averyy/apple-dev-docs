@@ -25,8 +25,8 @@ Call this method when you want to display information about how to use [`Proximi
 
 ## Parameters
 
-- `content`: The topic to teach. You can get a list of available   topics from the   property or fetch a topic for a   specific subject using the   method.
-- `viewController`: The view controller to use when presenting the   sheet. Specify a currently visible view controller in your app.
+- `content`: The topic to teach. You can get a list of available topics from the [`contentList`](proximityreaderdiscovery/contentlist.md) property or fetch a topic for a specific subject using the [`content(for:)`](proximityreaderdiscovery/content(for:).md) method.
+- `viewController`: The view controller to use when presenting the sheet. Specify a currently visible view controller in your app.
 
 
 ---

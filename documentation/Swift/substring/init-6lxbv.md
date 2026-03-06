@@ -22,7 +22,7 @@ init<S>(_ elements: S) where S : Sequence, S.Element == Character
 
 ## Parameters
 
-- `elements`: The sequence of elements for the new collection.    must be finite.
+- `elements`: The sequence of elements for the new collection. `elements` must be finite.
 
 
 ---

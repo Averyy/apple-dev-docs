@@ -21,6 +21,10 @@ A blend operation that darkens the foreground layer using the background.
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
+- **`Background`**: The background input. Represented by `B` in the mathmatical equation.
+- **`Mix`**: The weight of the blend effect. The higher the `Mix`, the greater the intensity of the blend operation, and the more the effect is visually apparent. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Burn` node darkens each area in the background based on the darkness of the corresponding area in the foreground, represented by the equation `1 - (1 - B) / F`. Below is an example of a node graph that uses the `Burn` node to darken a brick texture:

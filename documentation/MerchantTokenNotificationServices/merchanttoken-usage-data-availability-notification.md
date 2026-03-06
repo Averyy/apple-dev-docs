@@ -12,6 +12,16 @@ Notify Apple servers that the user’s devices can retrieve merchant token usage
 
 Use this API to notify Apple that the user’s device can retrieve merchant token usage information. The request includes metadata about encryption and where to retrieve the usage information.
 
+## Endpoint
+
+`POST https://apple-pay-gateway.apple.com/paymentservices/v1/merchantId/{merchantId}/merchantToken/notify`
+
+## Parameters
+
+- `Accept` (string): The response format the client expects, for example, `application/json` for JSON payloads.
+- `Content-Type` (string) *(required)*: The format of the data sent in the request body, for example, `application/json` for JSON payloads.
+- `x-request-id` (string) *(required)*: The header that uniquely identifies the request.
+
 ## Request Body
 
 The data.

@@ -20,6 +20,10 @@ object BackgroundAssetCreateRequest.Data.Relationships
 - [object BackgroundAssetCreateRequest.Data.Relationships.App](backgroundassetcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The data that describes the  file related to a prefix.
 
+## Properties
+
+- `app` (BackgroundAssetCreateRequest.Data.Relationships.App) *(required)*
+
 
 ---
 

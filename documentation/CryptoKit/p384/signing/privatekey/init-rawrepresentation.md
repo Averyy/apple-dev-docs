@@ -22,7 +22,7 @@ init<Bytes>(rawRepresentation: Bytes) throws where Bytes : ContiguousBytes
 
 ## Parameters
 
-- `rawRepresentation`: A raw representation of the key as a collection of   contiguous bytes.
+- `rawRepresentation`: A raw representation of the key as a collection of contiguous bytes.
 
 ## See Also
 

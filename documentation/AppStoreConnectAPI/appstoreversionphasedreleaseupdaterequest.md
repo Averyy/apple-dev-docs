@@ -20,6 +20,10 @@ object AppStoreVersionPhasedReleaseUpdateRequest
 - [object AppStoreVersionPhasedReleaseUpdateRequest.Data](appstoreversionphasedreleaseupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreVersionPhasedReleaseUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPhasedRelease](appstoreversionphasedrelease.md)

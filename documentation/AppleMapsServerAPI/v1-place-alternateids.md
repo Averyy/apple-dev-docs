@@ -8,6 +8,14 @@ Get a list of alternate Place IDs given one or more Place IDs.
 **Availability**:
 - Apple Maps Server API 1.2+
 
+## Endpoint
+
+`GET https://maps-api.apple.com/v1/place/alternateIds`
+
+## Parameters
+
+- `ids` (string) *(required)*: A list of alternate Place IDs.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

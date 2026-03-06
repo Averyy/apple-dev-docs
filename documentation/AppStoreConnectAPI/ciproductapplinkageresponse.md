@@ -17,6 +17,11 @@ object CiProductAppLinkageResponse
 ### Dictionaries
 - [object CiProductAppLinkageResponse.Data](ciproductapplinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (CiProductAppLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

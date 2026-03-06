@@ -14,6 +14,12 @@ A response that contains a list of accessibility declaration resources.
 object AccessibilityDeclarationsResponse
 ```
 
+## Properties
+
+- `data` ([AccessibilityDeclaration]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)

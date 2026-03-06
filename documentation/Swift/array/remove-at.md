@@ -36,11 +36,11 @@ print(measurements)
 // Prints "[1.1, 1.5, 1.2, 1.5, 1.3, 1.2]"
 ```
 
-> **Note**: O(), where  is the length of the array.
+> **Note**: O(*n*), where *n* is the length of the array.
 
 ## Parameters
 
-- `index`: The position of the element to remove.   must   be a valid index of the array.
+- `index`: The position of the element to remove. `index` must be a valid index of the array.
 
 ## See Also
 

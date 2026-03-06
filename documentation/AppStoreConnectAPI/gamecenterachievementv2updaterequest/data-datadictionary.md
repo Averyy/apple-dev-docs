@@ -26,6 +26,12 @@ object GameCenterAchievementV2UpdateRequest.Data
 - [object GameCenterAchievementV2UpdateRequest.Data.Attributes](gamecenterachievementv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center achievement update request.
 
+## Properties
+
+- `attributes` (GameCenterAchievementV2UpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

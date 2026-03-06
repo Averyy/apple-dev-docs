@@ -17,6 +17,11 @@ A top-to-bottom split matte, split at a specified V value.
 
 #### Parameter Description
 
+- **`Top`**: The value of the left side of the split.
+- **`Bottom`**: The value of the right side of the split.
+- **`Center`**: The *V* value at which the output is split. Everything above this value will be equal to the `Top` input; everything below this value will be equal to the `Bottom` input. This parameter ranges between `0` and `1`.
+- **`Texture Coordinates`**: The 2D coordinate at which the data is read in order to map the texture onto a surface. The default uses the current *UV* coordinates, in which *U* is the horizontal axis and *V* is the vertical axis.
+
 #### Discussion
 
 This node creates two distinct regions along the vertical axis. The value of the `Center` input determines the regions. A value of `0` establishes the center at the top-most, position causing the output to always be equal to the `Top` input. A value of `1` establishes the center at the bottom-most position. Below is a an example of a simple node graph that uses `Split Vertical` to create a split color:

@@ -25,7 +25,7 @@ struct UnownedJob
 
 Unless you’re implementing a scheduler, you don’t generally interact with jobs directly.
 
-An `UnownedJob` must be eventually run  using `runSynchronously(on:)`. Not doing so is effectively going to leak and “hang” the work that the job represents (e.g. a [`Task`](task.md)).
+An `UnownedJob` must be eventually run *exactly once* using `runSynchronously(on:)`. Not doing so is effectively going to leak and “hang” the work that the job represents (e.g. a [`Task`](task.md)).
 
 ## Topics
 

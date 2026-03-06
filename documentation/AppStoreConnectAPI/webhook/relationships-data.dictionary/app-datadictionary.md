@@ -17,6 +17,10 @@ object Webhook.Relationships.App
 ### Dictionaries
 - [object Webhook.Relationships.App.Data](webhook/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (Webhook.Relationships.App.Data)
+
 
 ---
 

@@ -14,6 +14,12 @@ A response that contains a single Repositories resource.
 object ScmRepositoryResponse
 ```
 
+## Properties
+
+- `data` (ScmRepository) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object ScmRepository](scmrepository.md)

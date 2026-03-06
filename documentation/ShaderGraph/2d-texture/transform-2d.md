@@ -17,6 +17,11 @@ A node that applies an affine transformation to a 2d input.
 
 #### Parameter Descriptions
 
+- **`In`**: The vector to transform. This node appends an addtional component onto the `In` vector with a value of `1.0` to make the vector match the dimensions of the `Mat` matrix. When transformation is complete, this additional component clears.
+- **`Rotation`**: The degrees of counter-clockwise rotation to apply to the input.
+- **`Scale`**: The scale to apply to the input. This parameter stretches the input by the given magnitude.
+- **`Translation`**: The translation to apply to the input. A translation moves the input in the given directions.
+
 #### Discussion
 
 The `Transform 2D` node takes a 2D vector as an input, applies the given rotation, scale, and translation, then outputs the transformed vector.

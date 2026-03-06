@@ -20,6 +20,10 @@ object BetaAppLocalization.Relationships
 - [object BetaAppLocalization.Relationships.App](betaapplocalization/relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (BetaAppLocalization.Relationships.App)
+
 ## See Also
 
 - [object BetaAppLocalization.Attributes](betaapplocalization/attributes-data.dictionary.md)

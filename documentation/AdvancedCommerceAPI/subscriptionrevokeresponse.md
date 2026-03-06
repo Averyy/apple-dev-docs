@@ -18,6 +18,11 @@ object SubscriptionRevokeResponse
 
 This is the response body for the [`Revoke Subscription`](revoke-subscription.md) endpoint.
 
+## Properties
+
+- `signedRenewalInfo` (JWSRenewalInfo) *(required)*: Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
+- `signedTransactionInfo` (JWSTransaction) *(required)*: Transaction information signed by the App Store, in JWS Compact Serialization format.
+
 ## See Also
 
 - [Revoke Subscription](revoke-subscription.md)

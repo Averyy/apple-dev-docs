@@ -6,6 +6,15 @@
 **Availability**:
 - App Store Connect API 1.7+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appEventScreenshots/{id}`
+
+## Parameters
+
+- `fields[appEventScreenshots]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [PATCH /v1/appEventScreenshots/{id}](patch-v1-appeventscreenshots-_id_.md)

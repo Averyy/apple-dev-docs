@@ -12,6 +12,84 @@ Get a list of all custom product pages for a specific app.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/apps/01234/appCustomProductPages
+```
+
+**Response**:
+
+```json
+{
+  "data": [
+    {
+      "type": "appCustomProductPages",
+      "id": "eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+      "attributes": {
+        "name": "Custom Product Page May 1",
+        "url": "https://apps.apple.com/us/app/name/id01234?ppid=eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+        "visible": false
+      },
+      "relationships": {
+        "appCustomProductPageVersions": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3/relationships/appCustomProductPageVersions",
+            "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3/appCustomProductPageVersions"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3"
+      }
+    },
+    {
+      "type": "appCustomProductPages",
+      "id": "2a92bd8e-e59a-4b6e-bca0-04209c16fc7e",
+      "attributes": {
+        "name": "Customer Product Page 1",
+        "url": "https://apps.apple.com/us/app/gersey-numba/id1526908970?ppid=2a92bd8e-e59a-4b6e-bca0-04209c16fc7e",
+        "visible": true
+      },
+      "relationships": {
+        "appCustomProductPageVersions": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/2a92bd8e-e59a-4b6e-bca0-04209c16fc7e/relationships/appCustomProductPageVersions",
+            "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/2a92bd8e-e59a-4b6e-bca0-04209c16fc7e/appCustomProductPageVersions"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/2a92bd8e-e59a-4b6e-bca0-04209c16fc7e"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/apps/01234/appCustomProductPages"
+  },
+  "meta": {
+    "paging": {
+      "total": 2,
+      "limit": 50
+    }
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/appCustomProductPages`
+
+## Parameters
+
+- `fields[appCustomProductPageVersions]` ([string]): Fields to return for included related types.
+- `fields[appCustomProductPages]` ([string]): Fields to return for included related types.
+- `filter[visible]` ([string]): Fields to return for included related types.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): Number of resources to return.
+- `limit[appCustomProductPageVersions]` (integer): Number of resources to return.
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)

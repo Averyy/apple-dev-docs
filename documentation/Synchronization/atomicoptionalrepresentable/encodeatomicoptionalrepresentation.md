@@ -31,7 +31,7 @@ The newly encoded `AtomicOptionalRepresentation` storage.
 
 ## Parameters
 
-- `value`: An optional instance of   that’s about to be   destroyed to encode an instance of its  .
+- `value`: An optional instance of `Self` that’s about to be destroyed to encode an instance of its `AtomicOptionalRepresentation`.
 
 
 ---

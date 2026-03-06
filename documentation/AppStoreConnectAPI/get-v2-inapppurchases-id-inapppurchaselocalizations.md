@@ -12,6 +12,17 @@ Get a list of localized display names and descriptions for a specific in-app pur
 
 - [Managing in-app purchases](managing-in-app-purchases.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}/inAppPurchaseLocalizations`
+
+## Parameters
+
+- `fields[inAppPurchaseLocalizations]` ([string])
+- `fields[inAppPurchases]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an In-App Purchase Localization](post-v1-inapppurchaselocalizations.md)

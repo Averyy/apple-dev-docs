@@ -22,6 +22,12 @@ object SearchResponse
 - [object SearchResponse.PaginationInfo](searchresponse/paginationinfo-data.dictionary.md)
   An object that returns a page of search responses.
 
+## Properties
+
+- `displayMapRegion` (SearchMapRegion): Represents a rectangular region on a map expressed as south-west and north-east points. More specifically south latitude, west longitude, north latitude and east longitude.
+- `paginationInfo` (SearchResponse.PaginationInfo)
+- `results` ([SearchResponse.Place]): An array of [`SearchResponse.Place`](searchresponse/place.md) results.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

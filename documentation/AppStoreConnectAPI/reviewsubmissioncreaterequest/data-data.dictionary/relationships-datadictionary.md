@@ -20,6 +20,10 @@ object ReviewSubmissionCreateRequest.Data.Relationships
 - [object ReviewSubmissionCreateRequest.Data.Relationships.App](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The data that describe the relationship between the resources.
 
+## Properties
+
+- `app` (ReviewSubmissionCreateRequest.Data.Relationships.App) *(required)*
+
 ## See Also
 
 - [object ReviewSubmissionCreateRequest.Data.Attributes](reviewsubmissioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)

@@ -22,6 +22,13 @@ object EndUserLicenseAgreementUpdateRequest.Data
 - [object EndUserLicenseAgreementUpdateRequest.Data.Relationships](enduserlicenseagreementupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `attributes` (EndUserLicenseAgreementUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `relationships` (EndUserLicenseAgreementUpdateRequest.Data.Relationships)
+- `type` (string) *(required)*
+
 
 ---
 

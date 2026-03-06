@@ -14,6 +14,12 @@ Information about an artist’s role.
 object Album.ArtistRole
 ```
 
+## Properties
+
+- `artistId` (string): The identifier for the artist in Apple Music.
+- `artistName` (string): The name of the artist.
+- `roleName` (string): The artist’s role. Possible values include `compose-author`, `contributor`, `translator`, `performer`, `arranger`, `composer`, `adapter`, and `author`.
+
 ## See Also
 
 - [object Album.Artworks](album/artworks-data.dictionary.md)

@@ -14,6 +14,11 @@ The type and ID of a resource that you’re relating with the resource you’re 
 object BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

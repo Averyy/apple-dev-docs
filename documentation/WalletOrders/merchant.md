@@ -16,6 +16,18 @@ The merchant associated with the order.
 object Merchant
 ```
 
+## Properties
+
+- `address` (Address): The contact address of the merchant.
+- `businessChatURL` (uri): An Apple Messages for Business URL the customer uses to contact the merchant. For more information, see [`Starting a Message from a URL`](https://developer.apple.comhttps://register.apple.com/resources/messages/messaging-documentation/message-with-customers#starting-a-message-from-a-url).
+- `contactURL` (uri): The URL where the customer can contact the merchant.
+- `displayName` (string) *(required)*: The localized display name of the merchant.
+- `emailAddress` (string): The email address where the customer can contact the merchant.
+- `logo` (string): The name for an image representing the merchant’s logo.
+- `merchantIdentifier` (string) *(required)*: The Apple Merchant Identifier for this merchant, generated at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
+- `phoneNumber` (string): The telephone number where the customer can contact the merchant.
+- `url` (uri) *(required)*: The URL for the merchant’s website or landing page.
+
 ## See Also
 
 - [object Customer](customer.md)

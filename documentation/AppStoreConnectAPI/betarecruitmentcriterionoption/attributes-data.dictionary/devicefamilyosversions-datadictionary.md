@@ -12,6 +12,11 @@
 object BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions
 ```
 
+## Properties
+
+- `deviceFamily` (DeviceFamily)
+- `osVersions` ([string])
+
 
 ---
 

@@ -22,8 +22,8 @@ If you receive an error stating the CSR algorithm/size is incorrect, please chec
 
 The expected algorithm/size for each certificate is as follows:
 
--  Use RSA (2048-bit).
-- - For processing payments in China mainland, use RSA (2048-bit).
+- **Merchant identity certificate:** Use RSA (2048-bit).
+- **Payment processing certificate:** - For processing payments in China mainland, use RSA (2048-bit).
 - For processing payments in all other regions, use ECC (256-bit).
 
 For more information about generating CSRs for Apple Pay payment processing certificates, see [`Create a certificate signing request`](https://developer.apple.comhttps://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request/).
@@ -32,13 +32,13 @@ For more information about generating CSRs for Apple Pay payment processing cert
 
 If you have multiple PSPs, ensure your CSR is uploaded to the corresponding PSP for the merchant. Mismatching CSRs causes validation issues. For example, for multiple merchant configurations:
 
--  Merchant identity certificate #1 is uploaded to PSP #1
--  Merchant identity certificate #1 is uploaded to PSP #2
+- **Match:** Merchant identity certificate #1 is uploaded to PSP #1
+- **Mismatch:** Merchant identity certificate #1 is uploaded to PSP #2
 
 In addition, for a single merchant process for both RSA and ECC certificates:
 
--  Merchant identity certificate using RSA is uploaded to PSP for RSA.
--  Merchant identity certificate using ECC uploaded to PSP for ECC.
+- **Match:** Merchant identity certificate using RSA is uploaded to PSP for RSA.
+- **Mismatch:** Merchant identity certificate using ECC uploaded to PSP for ECC.
 
 #### Domain Verification Issues
 
@@ -112,7 +112,7 @@ Please confirm the following when automatic re-verification fails:
 
 #### Revision History
 
--  First published.
+- **2024-06-11** First published.
 
 ## See Also
 

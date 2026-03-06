@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetImageV2CreateRequest.Data.Relationships.Localizat
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

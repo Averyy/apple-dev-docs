@@ -20,6 +20,18 @@ The [`Get App Transaction Info`](get-app-transaction-info.md) endpoint returns a
 
 You can also get app transaction information in your app from StoreKit, using [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction).
 
+## Properties
+
+- `appAppleId` (appAppleId): The unique identifier the App Store uses to identify the app.
+- `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
+- `bundleId` (bundleId): The bundle identifier that the app transaction applies to.
+- `originalApplicationVersion` (originalApplicationVersion): The app version that the customer originally purchased from the App Store.
+- `originalPlatform` (originalPlatform): The platform on which the customer originally purchased the app.
+- `originalPurchaseDate` (originalPurchaseDate): The date the customer originally purchased the app from the App Store.
+- `preorderDate` (preorderDate): The date the customer placed an order for the app before it’s available in the App Store.
+- `receiptCreationDate` (receiptCreationDate): The date that the App Store signed the JWS app transaction.
+- `receiptType` (environment): The server environment, production or sandbox, that signed the app transaction.
+
 ## See Also
 
 - [object JWSDecodedHeader](jwsdecodedheader.md)

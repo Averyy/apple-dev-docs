@@ -14,6 +14,13 @@ A response that contains a list of Builds resources.
 object BuildsResponse
 ```
 
+## Properties
+
+- `data` ([Build]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List All Builds for a Beta Group](get-v1-betagroups-_id_-builds.md)

@@ -8,6 +8,22 @@ Get a list of all certificates for a specific merchant ID.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/merchantIds/{id}/certificates`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `filter[certificateType]` ([string])
+- `filter[displayName]` ([string])
+- `filter[id]` ([string])
+- `filter[serialNumber]` ([string])
+- `limit` (integer)
+- `sort` ([string])
+- `fields[passTypeIds]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)

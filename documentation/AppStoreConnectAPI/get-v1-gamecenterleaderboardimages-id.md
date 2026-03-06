@@ -8,6 +8,15 @@ Get information about a leaderboard image and its upload and processing status.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardImages/{id}`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardImages]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read Game Center leaderboard image information](get-v2-gamecenterleaderboardimages-_id_.md)

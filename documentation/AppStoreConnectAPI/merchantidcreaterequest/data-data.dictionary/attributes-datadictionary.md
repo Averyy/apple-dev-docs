@@ -12,6 +12,11 @@
 object MerchantIdCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `identifier` (string) *(required)*: A unique identifier for your merchant.
+- `name` (string) *(required)*: A descriptive name for the merchant.
+
 
 ---
 

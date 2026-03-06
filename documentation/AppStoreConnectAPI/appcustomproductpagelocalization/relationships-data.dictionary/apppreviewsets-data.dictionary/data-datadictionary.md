@@ -12,6 +12,11 @@
 object AppCustomProductPageLocalization.Relationships.AppPreviewSets.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -14,6 +14,11 @@ A playlist as a destination for an add media intent.
 object MediaDestinationPlaylist
 ```
 
+## Properties
+
+- `mediaDestinationType` (string) *(required)*: The type of collection the user wants to store their media items in.
+- `playlistName` (string) *(required)*: The name of the playlist.
+
 ## Relationships
 
 ### Inherits From

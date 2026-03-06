@@ -55,9 +55,9 @@ catch ImageCreator.Error.notSupported {
 ## Parameters
 
 - `concepts`: The elements that describe the expected contents of the image.
-- `style`: The style you want the model to apply to the output image.   It is a programmer error to specify a style that’s not in the    property.
+- `style`: The style you want the model to apply to the output image. It is a programmer error to specify a style that’s not in the `availableStyles` property.
 - `options`: A set of options influencing image creation.
-- `limit`: The maximum number of images you want the system to create.   The system limits the maximum number of images to 4.
+- `limit`: The maximum number of images you want the system to create. The system limits the maximum number of images to 4.
 
 
 ---

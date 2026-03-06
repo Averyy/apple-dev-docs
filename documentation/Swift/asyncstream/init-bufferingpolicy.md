@@ -46,9 +46,9 @@ for await random in stream {
 
 ## Parameters
 
-- `elementType`: The type of element the   produces.
-- `limit`: A   value to   set the stream’s buffering behavior. By default, the stream buffers an   unlimited number of elements. You can also set the policy to buffer a   specified number of oldest or newest elements.
-- `build`: A custom closure that yields values to the   . This closure receives an    instance that it uses to provide elements to the stream and terminate the   stream when finished.
+- `elementType`: The type of element the `AsyncStream` produces.
+- `limit`: A `Continuation.BufferingPolicy` value to set the stream’s buffering behavior. By default, the stream buffers an unlimited number of elements. You can also set the policy to buffer a specified number of oldest or newest elements.
+- `build`: A custom closure that yields values to the `AsyncStream`. This closure receives an `AsyncStream.Continuation` instance that it uses to provide elements to the stream and terminate the stream when finished.
 
 ## See Also
 

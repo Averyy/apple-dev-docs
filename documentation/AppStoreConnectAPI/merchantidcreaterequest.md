@@ -19,6 +19,10 @@ object MerchantIdCreateRequest
 ### Dictionaries
 - [object MerchantIdCreateRequest.Data](merchantidcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (MerchantIdCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object MerchantId](merchantid.md)

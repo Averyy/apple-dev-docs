@@ -8,6 +8,17 @@ Get information for a merchant ID.
 **Availability**:
 - App Store Connect API 3.8+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/merchantIds/{id}`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[merchantIds]` ([string])
+- `include` ([string])
+- `limit[certificates]` (integer)
+
 ## See Also
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)

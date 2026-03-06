@@ -20,6 +20,15 @@ object BuildUpload.Attributes
 - [object BuildUpload.Attributes.State](buildupload/attributes-data.dictionary/state-data.dictionary.md)
   The state of a build upload including any errors and warnings.
 
+## Properties
+
+- `cfBundleShortVersionString` (string)
+- `cfBundleVersion` (string)
+- `createdDate` (date-time)
+- `platform` (Platform)
+- `state` (BuildUpload.Attributes.State)
+- `uploadedDate` (date-time)
+
 
 ---
 

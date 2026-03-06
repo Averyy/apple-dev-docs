@@ -22,6 +22,12 @@ object AppClipDefaultExperienceLocalizationCreateRequest.Data
 - [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships](appclipdefaultexperiencelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (AppClipDefaultExperienceLocalizationCreateRequest.Data.Attributes) *(required)*: The attributes that describes the request that creates a Default App Clip Experience Localizations resource.
+- `relationships` (AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

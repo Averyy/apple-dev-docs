@@ -20,6 +20,10 @@ object AppPreviewCreateRequest
 - [object AppPreviewCreateRequest.Data](apppreviewcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppPreviewCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppPreview](apppreview.md)

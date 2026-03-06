@@ -18,6 +18,11 @@ object AnalyticsReportInstanceResponse
 
 Use this object with [`Read report instance information`](get-v1-analyticsreportinstances-_id_.md).
 
+## Properties
+
+- `data` (AnalyticsReportInstance) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

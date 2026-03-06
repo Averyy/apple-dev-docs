@@ -12,6 +12,54 @@ Get information about the image associated with a leaderboard localization.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations/5a75be8c-225a-4fd4-b51f-d33876c2c79b/gameCenterLeaderboardImage
+```
+
+**Response**:
+
+```json
+{
+  “data” : {
+    “type” : “gameCenterLeaderboardImages”,
+    “id” : “482f6124-4570-43a0-aa5e-ec289ba6faf8”,
+    “attributes” : {
+      “fileSize” : 357407,
+      “fileName” : “coffee2.png”,
+      “imageAsset” : {
+        “templateUrl” : “https://isq11.mzstatic.com/image/thumb/PurpleSource113/v4/ad/e2/7b/ade27bd0-013d-86ef-2748-9d63b53e781e/482f6124-4570-43a0-aa5e-ec289ba6faf8_coffee2.png/{w}x{h}bb.{f}”,
+        “width” : 512,
+        “height” : 512
+      },
+      “uploadOperations” : [ ],
+      “assetDeliveryState” : {
+        “errors” : null,
+        “warnings” : null,
+        “state” : “COMPLETE”
+      }
+    },
+    “links” : {
+      “self” : “https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardImages/482f6124-4570-43a0-aa5e-ec289ba6faf8”
+    }
+  },
+  “links” : {
+    “self” : “https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations/5a75be8c-225a-4fd4-b51f-d33876c2c79b/gameCenterLeaderboardImage”
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations/{id}/gameCenterLeaderboardImage`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardImages]` ([string])
+- `fields[gameCenterLeaderboardLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read Game Center leaderboard localization information](get-v2-gamecenterleaderboardlocalizations-_id_.md)

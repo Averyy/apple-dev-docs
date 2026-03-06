@@ -27,7 +27,7 @@ Nodes represent values and operations and serve the same purpose as either a var
 
 ##### Update Material Values at Runtime
 
-One of the major benefits of using Shader Graph is the ablility to change values on your custom materials while your app runs. Shader Graph creates , which are parameters you can set and read from Swift to change your material at runtime.
+One of the major benefits of using Shader Graph is the ablility to change values on your custom materials while your app runs. Shader Graph creates *promoted inputs*, which are parameters you can set and read from Swift to change your material at runtime.
 
 Some examples of how you can use promoted inputs for your materials are:
 

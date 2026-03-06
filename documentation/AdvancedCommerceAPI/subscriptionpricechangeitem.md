@@ -14,6 +14,12 @@ The data your app provides to change a subscription price.
 object SubscriptionPriceChangeItem
 ```
 
+## Properties
+
+- `SKU` (SKU) *(required)*
+- `dependentSKUs` ([dependentSKU])
+- `price` (price) *(required)*
+
 ## See Also
 
 - [object Descriptors](descriptors.md)

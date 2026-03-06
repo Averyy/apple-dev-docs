@@ -20,6 +20,13 @@ object AppStoreVersionPhasedRelease
 - [object AppStoreVersionPhasedRelease.Attributes](appstoreversionphasedrelease/attributes-data.dictionary.md)
   Attributes that describe an App Store Version Phased Releases resource.
 
+## Properties
+
+- `attributes` (AppStoreVersionPhasedRelease.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPhasedReleaseCreateRequest](appstoreversionphasedreleasecreaterequest.md)

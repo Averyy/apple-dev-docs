@@ -14,6 +14,11 @@ The data structure that represents the subscription for a subscription image cre
 object SubscriptionImageCreateRequest.Data.Relationships.Subscription.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptions` resource ID from the [`List All Subscriptions for a Subscription Group`](get-v1-subscriptiongroups-_id_-subscriptions.md) response.
+- `type` (string) *(required)*
+
 
 ---
 

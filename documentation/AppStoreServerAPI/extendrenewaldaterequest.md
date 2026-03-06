@@ -6,7 +6,7 @@
 The request body that contains subscription-renewal-extension data for an individual subscription.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -27,6 +27,12 @@ Use this object with the [`Extend a Subscription Renewal Date`](extend-a-subscri
   The code that represents the reason for the subscription-renewal-date extension.
 - [type requestIdentifier](requestidentifier.md)
   A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
+
+## Properties
+
+- `extendByDays` (extendByDays): **Required**. The number of days to extend the subscription renewal date.
+- `extendReasonCode` (extendReasonCode): **Required**. The reason code for the subscription date extension.
+- `requestIdentifier` (requestIdentifier): **Required**. A string that contains a value you provide to uniquely identify this renewal-date extension request.
 
 ## See Also
 

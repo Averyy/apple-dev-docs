@@ -30,7 +30,7 @@ The `Sender` encrypts messages in base mode with a symmetric encryption key it d
 
 - `recipientKey`: The recipient’s public key for encrypting the messages.
 - `ciphersuite`: The cipher suite that defines the cryptographic algorithms to use.
-- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same   data.
+- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same `info` data.
 
 
 ---

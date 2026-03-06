@@ -22,8 +22,8 @@ init(exporting: @escaping @Sendable (Item) throws -> ProxyRepresentation, import
 
 ## Parameters
 
-- `exporting`: A closure that converts the item into   desired representation.
-- `importing`: A closure that converts the chosen representation   back into the transported item.
+- `exporting`: A closure that converts the item into desired representation.
+- `importing`: A closure that converts the chosen representation back into the transported item.
 
 
 ---

@@ -8,6 +8,17 @@ List all Git references for a specific repository that Xcode Cloud can access.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmRepositories/{id}/gitReferences`
+
+## Parameters
+
+- `fields[scmGitReferences]` ([string]): Additional fields to include for each Git References resource returned by the response.
+- `limit` (integer): The number of Git References resources to return.
+- `fields[scmRepositories]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Git Repositories](get-v1-scmrepositories.md)

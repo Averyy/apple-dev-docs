@@ -14,6 +14,10 @@ The response to an artists request.
 object ArtistsResponse
 ```
 
+## Properties
+
+- `data` ([Artists]) *(required)*: The [`Artists`](artists.md) included in the response for the request.
+
 ## See Also
 
 - [object Artists](artists.md)

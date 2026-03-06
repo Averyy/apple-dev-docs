@@ -17,6 +17,10 @@ Clamps the input per-channel to a specified range.
 
 #### Parameter Descriptions
 
+- **`In`**: The input to clamp.
+- **`Low`**: The low end of the clamp range.
+- **`High`**: The high end of the clamp range.
+
 #### Discussion
 
 The `Clamp` node restricts the range of values of an input as defined by the `Low` and `High` parameters passed into the node. The output of the `Clamp` node is the same as the `In` value if it falls within the defined range. Otherwise, the output clamps to the nearest limit, which is either the `Low` or `High` value. Use the `Clamp` node to create more predictable and controlled shader behavior for materials.

@@ -16,6 +16,13 @@ For more information on performance tuning, see [`Improving your app’s perform
 
 Performance isn’t a single metric that you measure and improve. Typically, you choose several metrics and set goals for each of them. For example, consider:
 
+- **App launch and load times**: Make sure your app launches quickly; this is your first chance to make a good impression.
+- **Responsiveness and latency**: Your interface needs to respond quickly to interactions, even while doing other work. Minimize the time it takes to start tasks. For example, make sure audio and video start without noticeable delays.
+- **Graphics rendering**: For an immersive experience with realtime rendering, it’s important to maintain consistently high frame rates. Help maintain these rates by avoiding unnecessary changes that result in more frequent updates to the shared render server. Measure things like update rates, stalls, and hangs in both the render server and your app. Only render the content you need, and optimize the textures and other resources you use during drawing.
+- **Power Usage**: When the device begins to reach thermal limits, the system reduces CPU or GPU usage and performance degrades over time. Avoid this thermal ceiling by prioritizing and spreading out work, limiting the number of simultaneous threads your app maintains, and turning off hardware-related features like [`Core Location`](https://developer.apple.com/documentation/CoreLocation) when you don’t need them.
+- **Task efficiency**: Make the app do as much as possible using the smallest amount of hardware resources. Minimize task-based overhead.
+- **Memory footprint and bandwidth**: Use as little free memory as possible. Don’t allocate or deallocate memory during critical operations, which might make your app appear slow.
+
 After you choose the metrics you want, set realistic goals and prioritize them, so you know which ones matter the most. Performance tuning often involves making tradeoffs between competing goals. For example, if you reduce CPU usage by caching computed data or pre-load assets to improve responsiveness, you increase your app’s memory usage. Make these kinds of tradeoffs carefully, and always measure the results of any changes to learn whether they were successful. In some cases, you might find the sacrifice isn’t worthwhile.
 
 Consider how people will use your app. If your app runs in the Shared Space, consider more conservative targets and goals for system resources. If you expect people to use your app for longer periods of time, factor this extended use into your targets and goals when choosing metrics.
@@ -43,6 +50,16 @@ Use Xcode’s thermal inducers to mimic the device hitting its thermal limits an
 ##### Choose Tools to Collect Performance Data
 
 There are many tools and APIs you can use to collect performance-related data for your visionOS app. Use a variety of tools to make sure you have the data you need:
+
+- **Debug gauges**: Monitor the CPU, memory, disk and network gauges in the Debug navigator to track system resources utilization.
+- **Instruments**: Profile your app to gather performance data on most metrics. Instruments lets you profile your app’s code execution, find memory leaks, track memory allocations, analyze file-system or graphics performance, SwiftUI performance, and much more. Use the RealityKit Trace template to monitoring and investigate render server stalls and bottlenecks on visionOS.
+- **XCTest**: Use [`XCTest`](https://developer.apple.com/documentation/XCTest) APIs to collect performance data.
+- **MetricKit**: Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to gather on-device app diagnostics and generate reports.
+- **Organizer**: Review diagnostic logs for hangs, disk and energy usage, and crashes in the Xcode Organizer.
+- **Reality Composer Pro**: Review statistics on the contents of your RealityKit scenes. Use this information to optimize your 3D models and textures.
+- **Signposts**: Add signposts to your code to generate timing information you can view in Instruments. For more information, see [`Recording Performance Data`](https://developer.apple.com/documentation/os/recording-performance-data).
+- **Log messages**: Include log messages to report significant events and relevant data for those events. For more information, see [`Generating Log Messages from Your Code`](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code).
+- **TestFlight**: Get feedback from testers about their experiences with beta versions of your app. Fill out the Test Information page for your beta version, and request that testers provide feedback about the performance of your app.
 
 ##### Profile on a Physical Device
 

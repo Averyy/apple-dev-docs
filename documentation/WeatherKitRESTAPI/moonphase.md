@@ -16,6 +16,15 @@ string MoonPhase
 
 #### Possible Values
 
+- **new**: The moon isn’t visible.
+- **waxingCrescent**: A crescent-shaped sliver of the moon is visible, and increasing in size.
+- **firstQuarter**: Approximately half of the moon is visible, and increasing in size.
+- **full**: The entire disc of the moon is visible.
+- **waxingGibbous**: More than half of the moon is visible, and increasing in size.
+- **waningGibbous**: More than half of the moon is visible, and decreasing in size.
+- **thirdQuarter**: Approximately half of the moon is visible, and decreasing in size.
+- **waningCrescent**: A crescent-shaped sliver of the moon is visible, and decreasing in size.
+
 ## See Also
 
 - [type UnitsSystem](unitssystem.md)

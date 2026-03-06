@@ -8,6 +8,17 @@ Get a list of the subscription localizations for a specific auto-renewable subsc
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/subscriptionLocalizations`
+
+## Parameters
+
+- `fields[subscriptionLocalizations]` ([string])
+- `fields[subscriptions]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [GET /v1/subscriptions/{id}/relationships/subscriptionLocalizations](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)

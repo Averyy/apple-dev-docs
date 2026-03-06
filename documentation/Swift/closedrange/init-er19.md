@@ -26,7 +26,7 @@ An equivalent range must be representable as a closed range. For example, passin
 
 ## Parameters
 
-- `other`: A   to convert to a   instance.
+- `other`: A `Range` to convert to a `ClosedRange` instance.
 
 
 ---

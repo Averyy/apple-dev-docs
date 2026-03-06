@@ -22,6 +22,14 @@ object AppTag
 - [object AppTag.Relationships](apptag/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppTag.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppTag.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)

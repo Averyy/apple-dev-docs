@@ -8,6 +8,14 @@ Delete a specific default App Clip experience.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appClipDefaultExperiences/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Default App Clip Experiences resource.
+
 ## See Also
 
 - [Create a Default App Clip Experience](post-v1-appclipdefaultexperiences.md)

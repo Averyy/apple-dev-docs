@@ -48,8 +48,8 @@ Int("zzzzzzzzzzzzz", radix: 36)   // Out of range
 
 ## Parameters
 
-- `text`: The ASCII representation of a number in the radix passed as   .
-- `radix`: The radix, or base, to use for converting   to an integer   value.   must be in the range  . The default is 10.
+- `text`: The ASCII representation of a number in the radix passed as `radix`.
+- `radix`: The radix, or base, to use for converting `text` to an integer value. `radix` must be in the range `2...36`. The default is 10.
 
 ## See Also
 

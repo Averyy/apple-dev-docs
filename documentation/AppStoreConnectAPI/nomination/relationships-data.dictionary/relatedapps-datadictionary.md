@@ -17,6 +17,11 @@ object Nomination.Relationships.RelatedApps
 ### Dictionaries
 - [object Nomination.Relationships.RelatedApps.Data](nomination/relationships-data.dictionary/relatedapps-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Nomination.Relationships.RelatedApps.Data])
+- `meta` (PagingInformation)
+
 
 ---
 

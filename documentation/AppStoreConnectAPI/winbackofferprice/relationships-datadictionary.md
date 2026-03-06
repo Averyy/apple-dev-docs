@@ -22,6 +22,11 @@ object WinBackOfferPrice.Relationships
 - [object WinBackOfferPrice.Relationships.Territory](winbackofferprice/relationships-data.dictionary/territory-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `subscriptionPricePoint` (WinBackOfferPrice.Relationships.SubscriptionPricePoint)
+- `territory` (WinBackOfferPrice.Relationships.Territory)
+
 
 ---
 

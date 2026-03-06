@@ -14,6 +14,15 @@ The request your app provides to reactivate a subscription that has automatic re
 object SubscriptionReactivateInAppRequest
 ```
 
+## Properties
+
+- `items` ([SubscriptionReactivateItem])
+- `operation` (string) *(required)*
+- `requestInfo` (RequestInfo) *(required)*
+- `storefront` (storefront)
+- `transactionId` (transactionId) *(required)*
+- `version` (version) *(required)*
+
 ## See Also
 
 - [object SubscriptionReactivateItem](subscriptionreactivateitem.md)

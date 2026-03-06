@@ -20,6 +20,10 @@ object BetaBuildLocalization.Relationships
 - [object BetaBuildLocalization.Relationships.Build](betabuildlocalization/relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `build` (BetaBuildLocalization.Relationships.Build)
+
 ## See Also
 
 - [object BetaBuildLocalization.Attributes](betabuildlocalization/attributes-data.dictionary.md)

@@ -22,6 +22,13 @@ object AppStoreVersionExperimentV2.Relationships
 - [object AppStoreVersionExperimentV2.Relationships.ControlVersions](appstoreversionexperimentv2/relationships-data.dictionary/controlversions-data.dictionary.md)
 - [object AppStoreVersionExperimentV2.Relationships.LatestControlVersion](appstoreversionexperimentv2/relationships-data.dictionary/latestcontrolversion-data.dictionary.md)
 
+## Properties
+
+- `app` (AppStoreVersionExperimentV2.Relationships.App)
+- `appStoreVersionExperimentTreatments` (AppStoreVersionExperimentV2.Relationships.AppStoreVersionExperimentTreatments)
+- `controlVersions` (AppStoreVersionExperimentV2.Relationships.ControlVersions)
+- `latestControlVersion` (AppStoreVersionExperimentV2.Relationships.LatestControlVersion)
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2.Attributes](appstoreversionexperimentv2/attributes-data.dictionary.md)

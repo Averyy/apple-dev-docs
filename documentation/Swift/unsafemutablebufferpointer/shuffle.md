@@ -32,7 +32,7 @@ names.shuffle()
 
 This method is equivalent to calling `shuffle(using:)`, passing in the system’s default random generator.
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 
 ---

@@ -29,6 +29,21 @@ object GameCenterLeaderboardV2UpdateRequest.Data.Attributes
 - submissionType:
 - visibility:
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `archived` (boolean)
+- `defaultFormatter` (GameCenterLeaderboardFormatter)
+- `recurrenceDuration` (duration)
+- `recurrenceRule` (string)
+- `recurrenceStartDate` (date-time)
+- `referenceName` (string)
+- `scoreRangeEnd` (number)
+- `scoreRangeStart` (number)
+- `scoreSortType` (string)
+- `submissionType` (string)
+- `visibility` (string)
+
 
 ---
 

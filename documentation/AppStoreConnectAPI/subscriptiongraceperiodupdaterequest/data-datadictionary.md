@@ -17,6 +17,12 @@ object SubscriptionGracePeriodUpdateRequest.Data
 ### Objects
 - [object SubscriptionGracePeriodUpdateRequest.Data.Attributes](subscriptiongraceperiodupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionGracePeriodUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

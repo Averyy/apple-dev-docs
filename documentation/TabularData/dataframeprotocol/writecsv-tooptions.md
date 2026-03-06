@@ -23,7 +23,7 @@ func writeCSV(to url: URL, options: CSVWritingOptions = .init()) throws
 ## Parameters
 
 - `url`: A location URL in the file system where the method saves the CSV file.
-- `options`: A   instance.
+- `options`: A [`CSVWritingOptions`](csvwritingoptions.md) instance.
 
 ## See Also
 

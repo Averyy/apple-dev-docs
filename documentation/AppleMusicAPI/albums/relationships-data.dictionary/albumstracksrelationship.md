@@ -14,6 +14,12 @@ A relationship from the album to its tracks.
 object Albums.Relationships.AlbumsTracksRelationship
 ```
 
+## Properties
+
+- `data` ([*]) *(required)*: The ordered songs and music videos in the tracklist of the album.
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+
 ## See Also
 
 - [object Albums.Relationships.AlbumsArtistsRelationship](albums/relationships-data.dictionary/albumsartistsrelationship.md)

@@ -14,6 +14,11 @@ The attributes of the rule set.
 object GameCenterMatchmakingQueue.Attributes
 ```
 
+## Properties
+
+- `classicMatchmakingBundleIds` ([string])
+- `referenceName` (string): A name for the queue that’s unique within the scope of your development team.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueue.Relationships](gamecentermatchmakingqueue/relationships-data.dictionary.md)

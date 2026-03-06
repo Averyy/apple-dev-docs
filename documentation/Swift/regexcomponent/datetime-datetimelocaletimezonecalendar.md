@@ -53,11 +53,11 @@ let date = match.1 // date == Jul 31, 2022 at 5:15 PM PST
 
 ## Parameters
 
-- `date`: A   to use when matching date substrings. Pass   to match a time-only substring.
-- `time`: A   to use when matching time substrings. Pass   to match a date-only substring.
+- `date`: A [`Date.FormatStyle.DateStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle) to use when matching date substrings. Pass [`omitted`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle/omitted) to match a time-only substring.
+- `time`: A [`Date.FormatStyle.TimeStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/TimeStyle) to use when matching time substrings. Pass [`omitted`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/TimeStyle/omitted) to match a date-only substring.
 - `locale`: The locale to use when matching date substrings. Matching uses this locale to evaluate the order of date components. It also uses the locale’s language for date format styles that use words.
 - `timeZone`: The time zone to use when capturing the date and time values. The regex component ignores this parameter if the source string contains a time zone substring that the format style supports.
-- `calendar`: The calendar to use when matching date substrings. If  , matching uses the default calendar of the specified  .
+- `calendar`: The calendar to use when matching date substrings. If `nil`, matching uses the default calendar of the specified `locale`.
 
 ## See Also
 

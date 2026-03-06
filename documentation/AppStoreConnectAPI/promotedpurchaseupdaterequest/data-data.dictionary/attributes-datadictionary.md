@@ -12,6 +12,11 @@
 object PromotedPurchaseUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `enabled` (boolean)
+- `visibleForAllUsers` (boolean)
+
 
 ---
 

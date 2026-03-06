@@ -50,7 +50,7 @@ The `wholeMatch(in:)` method can throw an error if this regex includes a transfo
 
 ## Parameters
 
-- `string`: The substring to match this regular expression   against.
+- `string`: The substring to match this regular expression against.
 
 
 ---

@@ -17,6 +17,10 @@ object SubscriptionAppStoreReviewScreenshot.Relationships
 ### Objects
 - [object SubscriptionAppStoreReviewScreenshot.Relationships.Subscription](subscriptionappstorereviewscreenshot/relationships-data.dictionary/subscription-data.dictionary.md)
 
+## Properties
+
+- `subscription` (SubscriptionAppStoreReviewScreenshot.Relationships.Subscription)
+
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshot.Attributes](subscriptionappstorereviewscreenshot/attributes-data.dictionary.md)

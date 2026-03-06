@@ -20,6 +20,12 @@ object AppCustomProductPageLocalization.Relationships.SearchKeywords
 - [object AppCustomProductPageLocalization.Relationships.SearchKeywords.Data](appcustomproductpagelocalization/relationships-data.dictionary/searchkeywords-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([AppCustomProductPageLocalization.Relationships.SearchKeywords.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

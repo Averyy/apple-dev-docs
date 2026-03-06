@@ -14,6 +14,14 @@ Attributes that describe a challenge resource.
 object GameCenterChallenge.Attributes
 ```
 
+## Properties
+
+- `archived` (boolean)
+- `challengeType` (string)
+- `referenceName` (string)
+- `repeatable` (boolean)
+- `vendorIdentifier` (string)
+
 
 ---
 

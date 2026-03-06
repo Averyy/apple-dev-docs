@@ -16,6 +16,10 @@ The payment method for the transaction.
 object PaymentMethod
 ```
 
+## Properties
+
+- `displayName` (string) *(required)*: The name of the payment method, such as the name of a specific payment pass or card.
+
 ## See Also
 
 - [object Customer](customer.md)

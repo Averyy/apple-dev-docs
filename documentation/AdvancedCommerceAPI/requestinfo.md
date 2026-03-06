@@ -40,6 +40,12 @@ Don’t include a consistency token when:
 - You’re using the [`OneTimeChargeCreateRequest`](onetimechargecreaterequest.md) operation.
 - You’re using the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) operation for an initial subscription purchase.
 
+## Properties
+
+- `appAccountToken` (uuid): A UUID that represents an app account token, to associate with the transaction in the request.
+- `consistencyToken` (string): The value of the [`advancedCommerceConsistencyToken`](https://developer.apple.com/documentation/AppStoreServerAPI/advancedCommerceConsistencyToken) that you receive in the [`JWSRenewalInfo`](jwsrenewalinfo.md) renewal information for a subscription. Don’t generate this value.
+- `requestReferenceId` (uuid) *(required)*: A UUID that you provide to uniquely identify each request. If the request times out, you can use the same `requestReferenceId` value to retry the request. Otherwise, provide a unique value.
+
 ## See Also
 
 - [object Descriptors](descriptors.md)

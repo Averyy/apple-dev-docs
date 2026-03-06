@@ -25,6 +25,18 @@ In visionOS, the sample demonstrates how to play video within an immersive envir
 
 Destination Video uses tab navigation with the [`sidebarAdaptable`](https://developer.apple.com/documentation/SwiftUI/TabViewStyle/sidebarAdaptable) style, which optimizes the content browsing experience for each platform. In iPadOS, the [`TabView`](https://developer.apple.com/documentation/SwiftUI/TabView) with `sidebarAdaptable` style allows people to toggle between the sidebar and tab bar. The full-screen browsing experience of a tab bar brings content to the forefront while the sidebar allows for easy access to deeper navigation hierarchy.
 
+**iOS**:
+
+![A screenshot of tab view on iOS.](https://docs-assets.developer.apple.com/published/3b94e40a70cf512f26ed1900ff2e5e71/Destination-video-iOS%402x.png)
+
+**macOS**:
+
+![A screenshot of tab view on macOS](https://docs-assets.developer.apple.com/published/d86d64648482d8e9501242564d8d27ba/Destination-video-macOS%402x.png)
+
+**visionOS**:
+
+![An image that shows tab view on visionOS.](https://docs-assets.developer.apple.com/published/0c8e9497ef4f8b04e1a24a43058e293b/Destination-video-visionOS.png)
+
 To implement tab navigation, first declare a `TabView` with an explicit selection value using the [`init(selection:content:)`](https://developer.apple.com/documentation/SwiftUI/TabView/init(selection:content:)) initializer. Add tabs within a `TabView` by initializing [`Tab`](https://developer.apple.com/documentation/SwiftUI/Tab) structures. Destination Video uses the [`init(_:systemImage:value:content:)`](https://developer.apple.com/documentation/SwiftUI/Tab/init(_:systemImage:value:content:)) initializer to create each tab, then groups tabs within a [`TabSection`](https://developer.apple.com/documentation/SwiftUI/TabSection) to declare a secondary tab hierarchy in the `TabView`.
 
 ```swift
@@ -230,6 +242,12 @@ private func configureAudioExperience(for presentation: Presentation) {
 In visionOS, Destination Video provides a custom environment, called Studio.
 
 To optimize the viewing experience in the Studio environment, this sample implements the following:
+
+- **[`DockingRegionComponent`](https://developer.apple.com/documentation/RealityKit/DockingRegionComponent)**: Customizes the docking location for the video player in a custom environment.
+- **[`Reflection Specular (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Reflection-Specular-(RealityKit))**: Enhances the reflections of the video content on glossy surfaces in the surrounding environment.
+- **[`Reflection Diffuse (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Reflection-Diffuse-(RealityKit))**: Enhances the reflections of the video content on organic surfaces in the surrounding environment.
+- **[`VirtualEnvironmentProbeComponent`](https://developer.apple.com/documentation/RealityKit/VirtualEnvironmentProbeComponent)**: Configures the virtual scene lighting.
+- **[`ReverbComponent`](https://developer.apple.com/documentation/RealityKit/ReverbComponent)**: Applies reverb for enhanced audio immersion.
 
 In visionOS, a person can select the environment in which they watch a video by tapping on the environment picker menu presented by [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController). The Studio environment has light and dark variants. This sample adds them to the list of environments that appear in the environment picker menu using the [`immersiveEnvironmentPicker(content:)`](https://developer.apple.com/documentation/SwiftUI/View/immersiveEnvironmentPicker(content:)) modifier.
 

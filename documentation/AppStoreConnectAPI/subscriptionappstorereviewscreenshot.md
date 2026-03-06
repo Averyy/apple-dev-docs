@@ -18,6 +18,14 @@ object SubscriptionAppStoreReviewScreenshot
 - [object SubscriptionAppStoreReviewScreenshot.Attributes](subscriptionappstorereviewscreenshot/attributes-data.dictionary.md)
 - [object SubscriptionAppStoreReviewScreenshot.Relationships](subscriptionappstorereviewscreenshot/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionAppStoreReviewScreenshot.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (SubscriptionAppStoreReviewScreenshot.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest](subscriptionappstorereviewscreenshotcreaterequest.md)

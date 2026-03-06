@@ -14,6 +14,12 @@ A response that contains a single Beta Testers resource.
 object BetaTesterResponse
 ```
 
+## Properties
+
+- `data` (BetaTester) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([*])
+
 ## See Also
 
 - [Create a Beta Tester](post-v1-betatesters.md)

@@ -22,6 +22,11 @@ object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships
 - [object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests](gamecentermatchmakingrulesettestcreaterequest/data-data.dictionary/relationships-data.dictionary/matchmakingrequests-data.dictionary.md)
   The data structure representing the sample match requests.
 
+## Properties
+
+- `matchmakingRequests` (GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests) *(required)*
+- `matchmakingRuleSet` (GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRuleSet) *(required)*
+
 
 ---
 

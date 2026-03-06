@@ -14,6 +14,13 @@ A response that contains a list of App Store Version resources.
 object AppStoreVersionsResponse
 ```
 
+## Properties
+
+- `data` ([AppStoreVersion]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+- `included` ([*])
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

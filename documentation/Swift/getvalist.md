@@ -36,7 +36,7 @@ If you need to pass an optional pointer as a `CVarArg` argument, use the `Int(bi
 
 ## Parameters
 
-- `args`: An array of arguments to convert to a C    pointer.
+- `args`: An array of arguments to convert to a C `va_list` pointer.
 
 ## See Also
 

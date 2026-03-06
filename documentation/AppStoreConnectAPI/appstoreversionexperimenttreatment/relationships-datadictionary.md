@@ -21,6 +21,12 @@ object AppStoreVersionExperimentTreatment.Relationships
 - [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
 - [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalizations-data.dictionary.md)
 
+## Properties
+
+- `appStoreVersionExperiment` (AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment)
+- `appStoreVersionExperimentTreatmentLocalizations` (AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations)
+- `appStoreVersionExperimentV2` (AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2)
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment.Attributes](appstoreversionexperimenttreatment/attributes-data.dictionary.md)

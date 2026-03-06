@@ -16,6 +16,14 @@ Edit the details or contents of a review submission.
 
 > **Note**: You can optionally add the attribute platform when using [`Modify a review submission`](patch-v1-reviewsubmissions-_id_.md).
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/reviewSubmissions/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the review submissions resource. Obtain the app resource ID from the [`List review submissions for an app`](get-v1-reviewsubmissions.md) response.
+
 ## See Also
 
 - [List review submissions for an app](get-v1-reviewsubmissions.md)

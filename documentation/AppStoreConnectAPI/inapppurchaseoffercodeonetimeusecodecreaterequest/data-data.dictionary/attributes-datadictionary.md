@@ -14,6 +14,12 @@ The request body you use to create an in-app purchase offer code one-time use co
 object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `environment` (OfferCodeEnvironment)
+- `expirationDate` (date) *(required)*
+- `numberOfCodes` (integer) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

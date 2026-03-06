@@ -26,9 +26,9 @@ A new collection in which all matches for regex in `subrange` are replaced by th
 
 ## Parameters
 
-- `maxReplacements`: A number specifying how many occurrences of   the regex to replace, using   to create the regex.
-- `content`: A closure that returns the collection to search for   and replace.
-- `replacement`: A closure that receives the full match information,   including captures, and returns a replacement collection.
+- `maxReplacements`: A number specifying how many occurrences of the regex to replace, using `content` to create the regex.
+- `content`: A closure that returns the collection to search for and replace.
+- `replacement`: A closure that receives the full match information, including captures, and returns a replacement collection.
 
 
 ---

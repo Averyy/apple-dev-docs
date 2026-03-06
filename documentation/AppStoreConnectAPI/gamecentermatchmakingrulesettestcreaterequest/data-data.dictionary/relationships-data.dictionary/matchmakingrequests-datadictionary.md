@@ -20,6 +20,10 @@ object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.Matchmak
 - [object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests.Data](gamecentermatchmakingrulesettestcreaterequest/data-data.dictionary/relationships-data.dictionary/matchmakingrequests-data.dictionary/data-data.dictionary.md)
   The resource object for a match request.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRuleSet](gamecentermatchmakingrulesettestcreaterequest/data-data.dictionary/relationships-data.dictionary/matchmakingruleset-data.dictionary.md)

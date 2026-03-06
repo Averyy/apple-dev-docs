@@ -14,6 +14,64 @@ The example request below lists the test results for an Xcode Cloud build that p
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/d871dabb-2c2c-4012-aff5-abb427bcb3a3/testResults
+```
+
+**Response**:
+
+```json
+{
+"data": [
+        {
+            "type": "ciTestResults",
+            "id": "87f8a597-bea9-49d8-ba8b-6a643de66903",
+            "attributes": {
+                "className": "TestClass",
+                "name": "TestName",
+                "status": "SUCCESS",
+                "fileSource": {
+                    "path": "path",
+                    "lineNumber": 100
+                },
+                "message": null,
+                "destinationTestResults": [
+                    {
+                        "uuid": "8d1bff05-2b9c-4cc4-9225-e2cd41dee260",
+                        "deviceName": "iPhone X",
+                        "osVersion": "11.4.1",
+                        "status": "SUCCESS",
+                        "duration": 6.600471973
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/ciTestResults/87f8a597-bea9-49d8-ba8b-6a643de66903"
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciBuildActions/d871dabb-2c2c-4012-aff5-abb427bcb3a3/testResults"
+    },
+    "meta": {
+        "paging": {
+            "limit": 50
+        }
+    }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/{id}/testResults`
+
+## Parameters
+
+- `fields[ciTestResults]` ([string]): Additional fields to include for each Test Results resource returned by the response.
+- `limit` (integer): The number of Test Results resources to return.
+
 ## See Also
 
 - [Read Build Action Information](get-v1-cibuildactions-_id_.md)

@@ -14,6 +14,10 @@ The data your app provides to remove an item from an auto-renewable subscription
 object SubscriptionModifyRemoveItem
 ```
 
+## Properties
+
+- `SKU` (SKU) *(required)*
+
 ## See Also
 
 - [object SubscriptionModifyInAppRequest](subscriptionmodifyinapprequest.md)

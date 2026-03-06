@@ -40,6 +40,20 @@ object SearchResponse.Results
 - [object SearchResponse.Results.TopResultsSearchResult](searchresponse/results-data.dictionary/topresultssearchresult.md)
   An object containing a top results’ search result.
 
+## Properties
+
+- `activities` (SearchResponse.Results.ActivitiesSearchResult): The activities results for a term search for specific resource types.
+- `albums` (SearchResponse.Results.AlbumsSearchResult): The albums results for a term search for specific resource types.
+- `apple-curators` (SearchResponse.Results.AppleCuratorsSearchResult): The Apple curators results for a term search for specific resource types.
+- `artists` (SearchResponse.Results.ArtistsSearchResult): The artists results for a term search for specific resource types.
+- `curators` (SearchResponse.Results.CuratorsSearchResult): The curators results for a term search for specific resource types.
+- `music-videos` (SearchResponse.Results.MusicVideosSearchResult): The music videos results for a term search for specific resource types.
+- `playlists` (SearchResponse.Results.PlaylistsSearchResult): The playlists results for a term search for specific resource types.
+- `record-labels` (SearchResponse.Results.RecordLabelsSearchResult): The record labels results for a term search for specific resource types.
+- `songs` (SearchResponse.Results.SongsSearchResult): The songs results for a term search for specific resource types.
+- `stations` (SearchResponse.Results.StationsSearchResult): The stations results for a term search for specific resource types.
+- `top` (SearchResponse.Results.TopResultsSearchResult): The top results for a term search for specific resource types.
+
 
 ---
 

@@ -14,6 +14,12 @@ A relationship from the playlist to its library.
 object Playlists.Relationships.PlaylistsLibraryRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([LibraryPlaylists]) *(required)*: The library for the playlist.
+
 ## See Also
 
 - [object Playlists.Relationships.PlaylistsCuratorRelationship](playlists/relationships-data.dictionary/playlistscuratorrelationship.md)

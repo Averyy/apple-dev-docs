@@ -21,8 +21,8 @@ Binary targets are only available on Apple platforms.
 ## Parameters
 
 - `name`: The name of the target.
-- `url`: The URL to the binary artifact. This URL must point to an archive   file that contains a binary artifact in its root directory.
-- `checksum`: The checksum of the archive file that contains the binary   artifact.
+- `url`: The URL to the binary artifact. This URL must point to an archive file that contains a binary artifact in its root directory.
+- `checksum`: The checksum of the archive file that contains the binary artifact.
 
 ## See Also
 

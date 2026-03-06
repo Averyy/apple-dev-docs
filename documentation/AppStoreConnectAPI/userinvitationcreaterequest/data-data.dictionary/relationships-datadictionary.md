@@ -20,6 +20,10 @@ object UserInvitationCreateRequest.Data.Relationships
 - [object UserInvitationCreateRequest.Data.Relationships.VisibleApps](userinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary/visibleapps-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `visibleApps` (UserInvitationCreateRequest.Data.Relationships.VisibleApps)
+
 ## See Also
 
 - [object UserInvitationCreateRequest.Data.Attributes](userinvitationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

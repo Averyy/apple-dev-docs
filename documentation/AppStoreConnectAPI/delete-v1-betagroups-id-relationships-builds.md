@@ -8,6 +8,14 @@ Remove access to test one or more builds from beta testers in a specific beta gr
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/betaGroups/{id}/relationships/builds`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Add Beta Testers to a Beta Group](post-v1-betagroups-_id_-relationships-betatesters.md)

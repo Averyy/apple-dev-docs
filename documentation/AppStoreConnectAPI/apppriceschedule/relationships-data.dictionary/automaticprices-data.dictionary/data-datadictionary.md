@@ -12,6 +12,11 @@
 object AppPriceSchedule.Relationships.AutomaticPrices.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

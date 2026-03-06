@@ -28,8 +28,8 @@ Call this method when you want to use long-form text to generate an image. The m
 
 ## Parameters
 
-- `text`: A long text description, such as a paragraph or document. You   can specify any length string you want. For strings above a minimum   length, the system extracts important or interesting concepts using   the contents of   as a guide. It converts the concepts it extracts   into a separate input prompts for the diffusion model. For strings   below the minimum length, the system passes the entire string to the model.
-- `title`: A concise summary of the text you pass in the   parameter.   The system uses this string as a guide to extract concepts from the   parameter.
+- `text`: A long text description, such as a paragraph or document. You can specify any length string you want. For strings above a minimum length, the system extracts important or interesting concepts using the contents of `title` as a guide. It converts the concepts it extracts into a separate input prompts for the diffusion model. For strings below the minimum length, the system passes the entire string to the model.
+- `title`: A concise summary of the text you pass in the `text` parameter. The system uses this string as a guide to extract concepts from the `text` parameter.
 
 ## See Also
 

@@ -14,6 +14,13 @@ Attributes that describe an In-App Purchases resource.
 object InAppPurchase.Attributes
 ```
 
+## Properties
+
+- `inAppPurchaseType` (string)
+- `productId` (string)
+- `referenceName` (string)
+- `state` (string)
+
 ## See Also
 
 - [object InAppPurchase.Relationships](inapppurchase/relationships-data.dictionary.md)

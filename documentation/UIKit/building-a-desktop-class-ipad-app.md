@@ -6,7 +6,7 @@ Optimize your iPad app’s user experience by adopting desktop-class enhancement
 
 #### Overview
 
-People can use an iPad with a Magic Keyboard and an external display to achieve desktop-class productivity. Build your app to take advantage of features that help people increase their efficiency, customize their workflows, and complete tasks more quickly. After you create a desktop-class iPad app, bring your app directly over to the Mac with minimal additional effort using Mac Catalyst. Bring your app to Apple Vision Pro using the details in [`Making your existing app compatible with visionOS`](https://developer.apple.com/documentation/visionos/making-your-app-compatible-with-visionos).
+People can use an iPad with a Magic Keyboard and an external display to achieve desktop-class productivity. Build your app to take advantage of features that help people increase their efficiency, customize their workflows, and complete tasks more quickly. After you create a desktop-class iPad app, bring your app directly over to the Mac with minimal additional effort using Mac Catalyst. Bring your app to Apple Vision Pro using the details in [`Making your existing app compatible with visionOS`](https://developer.apple.com/documentation/visionOS/making-your-app-compatible-with-visionos).
 
 ![Image of an iPad with a Magic Keyboard connected to an external display with a cable. The built-in screen and connected screen both show the multitasking experience with Stage Manager. Several open apps appear side by side in the center of the screens, with other apps available on the left side of the screen for quick access.](https://docs-assets.developer.apple.com/published/7f951373bc706766d41bd1db2e13acc0/media-4066536%402x.png)
 

@@ -25,6 +25,11 @@ object GameCenterAchievementV2CreateRequest
 - [object GameCenterAchievementV2CreateRequest.Data](gamecenterachievementv2createrequest/data-data.dictionary.md)
   The data structure that represents a Game Center achievement create request resource.
 
+## Properties
+
+- `data` (GameCenterAchievementV2CreateRequest.Data) *(required)*
+- `included` ([GameCenterAchievementVersionV2InlineCreate])
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

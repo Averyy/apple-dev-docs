@@ -35,7 +35,7 @@ print("apple (n.)".contains(adjectiveDesignator))
 
 ## Parameters
 
-- `verbatimString`: A string to convert into a regular expression   exactly, escaping any metacharacters.
+- `verbatimString`: A string to convert into a regular expression exactly, escaping any metacharacters.
 
 
 ---

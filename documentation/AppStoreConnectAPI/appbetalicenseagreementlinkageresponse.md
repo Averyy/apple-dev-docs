@@ -17,6 +17,11 @@ object AppBetaLicenseAgreementLinkageResponse
 ### Dictionaries
 - [object AppBetaLicenseAgreementLinkageResponse.Data](appbetalicenseagreementlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppBetaLicenseAgreementLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object App](app.md)

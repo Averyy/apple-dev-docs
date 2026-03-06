@@ -12,6 +12,11 @@
 object SubscriptionGroupSubmissionResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionGroupSubmission) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupSubmissionCreateRequest](subscriptiongroupsubmissioncreaterequest.md)

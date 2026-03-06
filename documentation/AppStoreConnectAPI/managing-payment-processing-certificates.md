@@ -65,6 +65,10 @@ Here’s an example payload:
 
 Use one of three options to replace a payment-processing certificate nearing its 25-month expiration date. Each option takes into account that you can have more than one payment processing certificate, but only one can be `activated` for use at any time:
 
+- **Expire and create**: Let the existing Payment Process certificate expire. Then create a new Payment Processing certificate using [`Create a Certificate`](post-v1-certificates.md). The created certificate automatically has the `activated` key set to `TRUE`.
+- ** Create then revoke**: Create a new Payment Processing certificate using [`Create a Certificate`](post-v1-certificates.md). Revoke the existing certificate nearing expiration by using [`Revoke a Certificate`](delete-v1-certificates-_id_.md). The new Payment Processing certificate automatically has the `activated` key set to `TRUE`.
+- ** Create and activate**: Create a new Payment Processing certificate using [`Create a Certificate`](post-v1-certificates.md). Then explicitly “activate” the new certificate using [`Modify a certificate`](patch-v1-certificates-_id_.md).
+
 > **Note**: The “Create and activate” option also deactivates the expiring certificate by automatically setting the `activated` key to `FALSE`.
 
 ## See Also

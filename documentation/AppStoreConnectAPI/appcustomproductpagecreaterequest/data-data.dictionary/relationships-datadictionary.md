@@ -20,6 +20,13 @@ object AppCustomProductPageCreateRequest.Data.Relationships
 - [object AppCustomProductPageCreateRequest.Data.Relationships.AppStoreVersionTemplate](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversiontemplate-data.dictionary.md)
 - [object AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/customproductpagetemplate-data.dictionary.md)
 
+## Properties
+
+- `app` (AppCustomProductPageCreateRequest.Data.Relationships.App) *(required)*
+- `appCustomProductPageVersions` (AppCustomProductPageCreateRequest.Data.Relationships.AppCustomProductPageVersions)
+- `appStoreVersionTemplate` (AppCustomProductPageCreateRequest.Data.Relationships.AppStoreVersionTemplate)
+- `customProductPageTemplate` (AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate)
+
 ## See Also
 
 - [object AppCustomProductPageCreateRequest.Data.Attributes](appcustomproductpagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

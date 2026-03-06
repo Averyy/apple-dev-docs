@@ -28,7 +28,7 @@ After calling this method, control immediately returns to the caller. The task c
 
 ## Parameters
 
-- `result`: The result.   If it contains a   value,   the continuation returns that value;   otherwise, it throws the   value.
+- `result`: The result. If it contains a `.success` value, the continuation returns that value; otherwise, it throws the `.error` value.
 
 
 ---

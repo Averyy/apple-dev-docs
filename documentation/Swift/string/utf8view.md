@@ -62,7 +62,7 @@ for v in flowermoji.utf8 {
 // 144
 ```
 
-In the encoded representation of a Unicode scalar value, each UTF-8 code unit after the first is called a .
+In the encoded representation of a Unicode scalar value, each UTF-8 code unit after the first is called a *continuation byte*.
 
 ### Utf8view Elements Match Encoded C Strings
 

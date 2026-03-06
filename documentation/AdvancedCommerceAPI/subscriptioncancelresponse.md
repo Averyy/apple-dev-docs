@@ -18,6 +18,11 @@ object SubscriptionCancelResponse
 
 This is the response body for the [`Cancel a Subscription`](cancel-a-subscription.md) endpoint.
 
+## Properties
+
+- `signedRenewalInfo` (JWSRenewalInfo) *(required)*: Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
+- `signedTransactionInfo` (JWSTransaction) *(required)*: Transaction information signed by the App Store, in JWS Compact Serialization format.
+
 ## See Also
 
 - [Cancel a Subscription](cancel-a-subscription.md)

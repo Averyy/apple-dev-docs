@@ -20,6 +20,11 @@ object UpdateMediaAffinityIntentHandlingInvocation
 - [object UpdateMediaAffinityIntentHandlingInvocation.Params](updatemediaaffinityintenthandlinginvocation/params-data.dictionary.md)
   The parameters of an update media affinity intent request.
 
+## Properties
+
+- `params` (UpdateMediaAffinityIntentHandlingInvocation.Params) *(required)*: The parameters of this request, including the update media affinity intent.
+- `method` (string) *(required)*: The action for your service to take to process this intent.
+
 ## Relationships
 
 ### Inherits From

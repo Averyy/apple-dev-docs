@@ -20,6 +20,10 @@ object AppleCurators.Relationships
 - [object AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship](applecurators/relationships-data.dictionary/applecuratorsplaylistsrelationship.md)
   A relationship from the Apple curator to its playlists.
 
+## Properties
+
+- `playlists` (AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship): The playlists associated with this curator. By default, `playlists` includes identifiers only. Fetch limits: 10 default, 10 maximum.
+
 ## See Also
 
 - [object AppleCurators.Attributes](applecurators/attributes-data.dictionary.md)

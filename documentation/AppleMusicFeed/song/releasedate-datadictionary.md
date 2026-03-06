@@ -14,6 +14,11 @@ A mapping of locale to release date for the song.
 object Song.ReleaseDate
 ```
 
+## Properties
+
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates fallback to `default`.
+- `releaseDate` (string): The date of content release in YYYY-MM-DD format. For Apple Music, the locale is always `default`, so the release date is the same regardless of the time zone.
+
 ## See Also
 
 - [object Song.ArtistRole](song/artistrole.md)

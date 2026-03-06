@@ -12,6 +12,13 @@
 object AppEventVideoClipsResponse
 ```
 
+## Properties
+
+- `data` ([AppEventVideoClip]) *(required)*
+- `included` ([AppEventLocalization])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppEventVideoClip](appeventvideoclip.md)

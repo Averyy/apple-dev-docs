@@ -12,6 +12,26 @@ Get a list of all activities for a Game Center group.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterGroups/{id}/gameCenterActivities`
+
+## Parameters
+
+- `fields[gameCenterAchievements]` ([string])
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterActivityVersions]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboards]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[achievements]` (integer)
+- `limit[leaderboards]` (integer)
+- `limit[versions]` (integer)
+- `limit[achievementsV2]` (integer)
+- `limit[leaderboardsV2]` (integer)
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

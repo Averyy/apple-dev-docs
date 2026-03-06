@@ -8,6 +8,14 @@ Read the phased release status and configuration for a version with phased relea
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/appStoreVersionPhasedRelease`
+
+## Parameters
+
+- `fields[appStoreVersionPhasedReleases]` ([string])
+
 ## See Also
 
 - [Read the App Store Version Submission Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionsubmission.md)

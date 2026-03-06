@@ -26,7 +26,7 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 ## Parameters
 
 - `device`: The device that received the notification.
-- `type`: The   of the report.
+- `type`: The [`HIDReportType`](hidreporttype.md) of the report.
 - `id`: The ID of the received report. This may not be populated if the descriptor contains only one report.
 - `data`: The data received in the request. The contents are determined by the client, and may not adhere to the device’s report descriptor.
 

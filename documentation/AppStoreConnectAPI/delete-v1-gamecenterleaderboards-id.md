@@ -8,6 +8,14 @@ Delete a leaderboard from your app.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the leaderboard resource ID from the [`Read leaderboard information`](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md) response.
+
 ## See Also
 
 - [Create a Game Center leaderboard](post-v2-gamecenterleaderboards.md)

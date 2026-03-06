@@ -6,7 +6,7 @@ Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 
 #### Overview
 
-RealityKit [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) objects exist in a tree, and each entity can have any number of subentities. (The entities themselves can standalone, or can be in a single container.) Every entity in the tree stores its own transform component. The transform contains the `translation`, `scale`, and `orientation` relative to its container entity. The  of each tree is an entity without a container entity.
+RealityKit [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) objects exist in a tree, and each entity can have any number of subentities. (The entities themselves can standalone, or can be in a single container.) Every entity in the tree stores its own transform component. The transform contains the `translation`, `scale`, and `orientation` relative to its container entity. The *root* of each tree is an entity without a container entity.
 
 Each entity exists in its own coordinate system that defines the origin and orientation of the three ordinal directions (the x, y, and z axes). The coordinate system is relative to its container coordinate system and is defined by its transform.
 
@@ -41,7 +41,7 @@ The reality view provides the root entity, which is located at the center of a v
 
 ![Three rectangles arranged horizontally. Each rectangle has a line extending out the bottom side. There is another line that connects all the lines across their bottom extent. The left rectangle is labeled Root, the middle rectangle is labeled A, the right rectangle is labeled B. There are two labels with the distance between the respective rectangles. The distance between Root and A is 0.05 units, the distance between A and B is 0.10 units.](https://docs-assets.developer.apple.com/published/f2f47dee78e0e2b1e60649805aceb720/reality-view%402x.png)
 
-In this example there are two cubes. Each cube has eight corners, and each corner is `0.025` units away from the origin. The cubes appear in different locations in the scene because the system applies the `transform` to each corner of the cubes moving them from the local coordinate system (also called ) to the world coordinate system. For example, the top, right, forward corner of the cube is at `{0.025, 0.025, 0.025}` in `model space`. The entity is translated by `{0.05, 0.0, 0.0}` The top-right-forward corner is then at `{0.075, 0.025, 0.025}`.
+In this example there are two cubes. Each cube has eight corners, and each corner is `0.025` units away from the origin. The cubes appear in different locations in the scene because the system applies the `transform` to each corner of the cubes moving them from the local coordinate system (also called *model space*) to the world coordinate system. For example, the top, right, forward corner of the cube is at `{0.025, 0.025, 0.025}` in `model space`. The entity is translated by `{0.05, 0.0, 0.0}` The top-right-forward corner is then at `{0.075, 0.025, 0.025}`.
 
 #### Build a Simple Entity to Experiment with
 
@@ -49,7 +49,7 @@ To be visible, an entity must have a [`MeshDescriptor`](https://developer.apple.
 
 The previous example used [`generateBox(size:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/meshresource/generatebox(size:cornerradius:)-2ovma) to generate the mesh. This convenience obscures what the transform does. The remaining examples use a mesh built from scratch.
 
-All entities have a coordinate space, often called . This coordinate system determines the location of the .
+All entities have a coordinate space, often called *model space*. This coordinate system determines the location of the *vertices*.
 
 The code below builds an entity with the following properties:
 

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 
 **Availability**:
 - iOS 8.0+

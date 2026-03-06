@@ -8,6 +8,15 @@ Get information about a specific Git reference.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/scmGitReferences/{id}`
+
+## Parameters
+
+- `fields[scmGitReferences]` ([string]): Additional fields to include for the Git References resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+
 
 ---
 

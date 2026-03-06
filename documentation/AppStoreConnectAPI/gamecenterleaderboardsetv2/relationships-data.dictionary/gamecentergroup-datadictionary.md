@@ -23,6 +23,10 @@ object GameCenterLeaderboardSetV2.Relationships.GameCenterGroup
 ### Dictionaries - generated
 - [object GameCenterLeaderboardSetV2.Relationships.GameCenterGroup.Data](gamecenterleaderboardsetv2/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetV2.Relationships.GameCenterGroup.Data)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetV2.Relationships.GameCenterDetail](gamecenterleaderboardsetv2/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

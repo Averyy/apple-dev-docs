@@ -14,6 +14,11 @@ Attributes that describe an app custom product page localization inline create r
 object AppCustomProductPageLocalizationInlineCreate.Attributes
 ```
 
+## Properties
+
+- `locale` (string) *(required)*
+- `promotionalText` (string)
+
 ## See Also
 
 - [object AppCustomProductPageLocalizationInlineCreate.Relationships](appcustomproductpagelocalizationinlinecreate/relationships-data.dictionary.md)

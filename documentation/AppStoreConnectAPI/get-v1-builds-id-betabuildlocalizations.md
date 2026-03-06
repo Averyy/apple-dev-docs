@@ -8,6 +8,15 @@ Get a list of localized beta test information for a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/betaBuildLocalizations`
+
+## Parameters
+
+- `fields[betaBuildLocalizations]` ([string]): Fields to return for included related types.
+- `limit` (integer): Number of resources to return.
+
 ## See Also
 
 - [Read the Build Beta Details Information of a Build](get-v1-builds-_id_-buildbetadetail.md)

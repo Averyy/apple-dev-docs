@@ -50,6 +50,14 @@ Apple uses and protects the data you share through the [`Send Consumption Inform
 
 If your customers request access to or deletion of their personal data related to consumption information, inform them that they may submit requests directly to Apple by visiting [`privacy.apple.com`](https://developer.apple.comhttps://privacy.apple.com). If your app stores data in CloudKit on behalf of your customers, see [`Responding to Requests to Delete Data`](https://developer.apple.com/documentation/CloudKit/responding-to-requests-to-delete-data), [`Providing User Access to CloudKit Data`](https://developer.apple.com/documentation/CloudKit/providing-user-access-to-cloudkit-data), and [`Changing Access Controls on User Data`](https://developer.apple.com/documentation/CloudKit/changing-access-controls-on-user-data) for more information.
 
+## Endpoint
+
+`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/consumption/{transactionId}`
+
+## Parameters
+
+- `transactionId` (transactionId) *(required)*: The transaction identifier for which you’re providing consumption information. You receive this identifier in the `CONSUMPTION_REQUEST` notification the App Store sends to your server’s [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint.
+
 ## Request Body
 
 The request body.

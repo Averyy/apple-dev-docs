@@ -8,6 +8,19 @@ List all primary Git repositories for a specific Xcode Cloud product.
 **Availability**:
 - App Store Connect API 1.5+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciProducts/{id}/primaryRepositories`
+
+## Parameters
+
+- `fields[scmRepositories]` ([string]): Additional fields to include for each Repositories resource returned by the response.
+- `filter[id]` ([string]): Filter the returned primary repositories using the ID of the Repositories resource.
+- `limit` (integer): The number of Repositories resources to return.
+- `fields[scmGitReferences]` ([string])
+- `fields[scmProviders]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Xcode Cloud Products](get-v1-ciproducts.md)

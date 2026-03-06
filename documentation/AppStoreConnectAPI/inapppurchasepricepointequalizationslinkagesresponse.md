@@ -17,6 +17,12 @@ object InAppPurchasePricePointEqualizationsLinkagesResponse
 ### Dictionaries
 - [object InAppPurchasePricePointEqualizationsLinkagesResponse.Data](inapppurchasepricepointequalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchasePricePointEqualizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

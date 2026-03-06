@@ -150,6 +150,13 @@ This object is the response that contains a list of alternative distribution pac
 }
 ```
 
+## Properties
+
+- `data` ([AlternativeDistributionPackageVersion]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

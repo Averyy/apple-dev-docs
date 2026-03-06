@@ -22,8 +22,8 @@ init(compactRepresentable: Bool = true, accessControl: SecAccessControl = SecAcc
 
 ## Parameters
 
-- `compactRepresentable`: A Boolean value that indicates   whether CryptoKit creates the key with the structure to   enable compact point encoding.
-- `accessControl`: The protection type and flags to use   when creating the associated access control object.
+- `compactRepresentable`: A Boolean value that indicates whether CryptoKit creates the key with the structure to enable compact point encoding.
+- `accessControl`: The protection type and flags to use when creating the associated access control object.
 - `authenticationContext`: A local authentication context.
 
 ## See Also

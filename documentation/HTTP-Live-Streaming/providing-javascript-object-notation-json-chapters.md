@@ -21,7 +21,7 @@ Chapter data is information that describes a chapter using four different types:
 
 Chapter metadata appears as an array of chapters. Each element in the array contains information about that chapter. The first array element describes the first chapter, the second element describes the second chapter, and so on.
 
-Each element in the chapter array is a JSON object called a . The chapter entry must contain a `start-time`. The chapter entry should contain `titles`, `images`, and possibly `metadata`.
+Each element in the chapter array is a JSON object called a *chapter entry*. The chapter entry must contain a `start-time`. The chapter entry should contain `titles`, `images`, and possibly `metadata`.
 
 The chapter entry may contain an item named `chapter` to promote human readability of the JSON. It may also contain an item named `duration`. Chapter entries are assumed to have a duration from `start-time` to the `start-time` of the next chapter entry, unless duration is specified. Chapter timing can overlap and nest, in which case both `start-time` and `duration` must be present.
 

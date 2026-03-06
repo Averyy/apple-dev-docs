@@ -12,6 +12,12 @@
 object SubscriptionLocalizationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `locale` (string) *(required)*
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionLocalizationCreateRequest.Data.Relationships](subscriptionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

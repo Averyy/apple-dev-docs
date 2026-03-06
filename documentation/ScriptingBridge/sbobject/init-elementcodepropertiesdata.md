@@ -25,9 +25,9 @@ Unlike the other initializers of this class, this method not only initializes th
 
 ## Parameters
 
-- `code`: A four-character code used to identify an element in the target   application’s scripting interface. See     for details.
-- `properties`: A dictionary with   keys specifying the four-character codes of properties   (that is, attributes or to-one relationships) and the values for those   properties. Pass   if you are initializing the object by   only.
-- `data`: An object containing data for the new   object. The data   varies according to the type of scripting object to be created. Pass    if you initializing the object by   only.
+- `code`: A four-character code used to identify an element in the target application’s scripting interface. See [`Apple Event Manager`](https://developer.apple.com/documentation/applicationservices/apple_event_manager) for details.
+- `properties`: A dictionary with [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) keys specifying the four-character codes of properties (that is, attributes or to-one relationships) and the values for those properties. Pass `nil` if you are initializing the object by `data` only.
+- `data`: An object containing data for the new `SBObject` object. The data varies according to the type of scripting object to be created. Pass `nil` if you initializing the object by `properties` only.
 
 ## See Also
 

@@ -12,6 +12,14 @@
 object SubscriptionOfferCodeOneTimeUseCode.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+- `createdDate` (date-time)
+- `environment` (OfferCodeEnvironment)
+- `expirationDate` (date)
+- `numberOfCodes` (integer)
+
 ## See Also
 
 - [object SubscriptionOfferCodeOneTimeUseCode.Relationships](subscriptionoffercodeonetimeusecode/relationships-data.dictionary.md)

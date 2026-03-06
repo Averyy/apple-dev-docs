@@ -8,6 +8,14 @@ Get the beta app encryption declaration resource ID associated with a build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/appEncryptionDeclaration`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Read the Build Beta Details Information of a Build](get-v1-builds-_id_-buildbetadetail.md)

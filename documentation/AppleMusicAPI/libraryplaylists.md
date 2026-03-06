@@ -22,6 +22,14 @@ object LibraryPlaylists
 - [object LibraryPlaylists.Relationships](libraryplaylists/relationships-data.dictionary.md)
   The relationships for a library playlist resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the library playlist.
+- `type` (string) *(required)*: This value is always `library-playlists`.
+- `href` (string) *(required)*: The relative location for the library playlist resource.
+- `attributes` (LibraryPlaylists.Attributes): The attributes for the library playlist.
+- `relationships` (LibraryPlaylists.Relationships): The relationships for the library playlist.
+
 ## See Also
 
 - [object Playlists](playlists.md)

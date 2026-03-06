@@ -10,6 +10,10 @@ Use the `tv-text-highlight-style` style to specify how a label reacts when it co
 
 ##### Values for Tv Text Highlight Style
 
+- **`marquee-and-show-on-highlight`**: The `text` element associated with the `lockup` element is only shown when the item is in focus. The text will scroll across the screen if the text is longer than the available space.
+- **`marquee-on-highlight`**: The `text` element associated with the `lockup` element only shows the text that fits within the width of the element. Text longer than the available space is truncated. When the element is in focus, text longer than the available space is shown through scrolling.
+- **`show-on-highlight`**: The `text` element associated with the `lockup` element is only shown when the item is in focus. Text longer than the available space is truncated.
+
 ##### Elements That Use Tv Text Highlight Style
 
 - [`subtitle`](subtitle.md)

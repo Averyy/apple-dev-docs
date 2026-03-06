@@ -20,6 +20,10 @@ object LibraryPlaylistCreationRequest.Relationships.Parent
 - [object LibraryPlaylistCreationRequest.Relationships.Parent.Data](libraryplaylistcreationrequest/relationships-data.dictionary/parent-data.dictionary/data-data.dictionary.md)
   Data of the library playlist folder which contains the created library playlist that the user creates.
 
+## Properties
+
+- `data` ([LibraryPlaylistCreationRequest.Relationships.Parent.Data]) *(required)*: A dictionary that includes strings for the `identifier` and `type` of the library playlist folder.
+
 ## See Also
 
 - [object LibraryPlaylistCreationRequest.Relationships.Tracks](libraryplaylistcreationrequest/relationships-data.dictionary/tracks-data.dictionary.md)

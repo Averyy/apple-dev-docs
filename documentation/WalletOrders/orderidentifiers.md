@@ -16,6 +16,11 @@ The unique identifiers associated with orders.
 object OrderIdentifiers
 ```
 
+## Properties
+
+- `lastModified` (string): The date and time of when an order was last changed.
+- `orderIdentifiers` ([string]): An array of order identifer strings.
+
 ## See Also
 
 - [object Customer](customer.md)

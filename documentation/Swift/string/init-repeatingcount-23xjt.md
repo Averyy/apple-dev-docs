@@ -33,7 +33,7 @@ print(s)
 ## Parameters
 
 - `repeatedValue`: The string to repeat.
-- `count`: The number of times to repeat   in the resulting   string.
+- `count`: The number of times to repeat `repeatedValue` in the resulting string.
 
 ## See Also
 

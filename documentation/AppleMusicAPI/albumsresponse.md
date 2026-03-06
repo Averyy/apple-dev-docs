@@ -14,6 +14,10 @@ The response to an albums request.
 object AlbumsResponse
 ```
 
+## Properties
+
+- `data` ([Albums]) *(required)*: The [`Albums`](albums.md) included in the response for the request.
+
 ## See Also
 
 - [object Albums](albums.md)

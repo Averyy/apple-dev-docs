@@ -20,6 +20,11 @@ object PrereleaseVersion.Relationships.App
 - [object PrereleaseVersion.Relationships.App.Data](prereleaseversion/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (PrereleaseVersion.Relationships.App.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object PrereleaseVersion.Relationships.Builds](prereleaseversion/relationships-data.dictionary/builds-data.dictionary.md)

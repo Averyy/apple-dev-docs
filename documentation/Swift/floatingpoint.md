@@ -43,7 +43,7 @@ let distance = hypotenuse(dx, dy)
 // distance == 5.0
 ```
 
-Floating-point values are represented as a  and a , where the magnitude is calculated using the type’s  and the instance’s  and . This magnitude calculation takes the following form for a floating-point value `x` of type `F`, where `**` is exponentiation:
+Floating-point values are represented as a *sign* and a *magnitude*, where the magnitude is calculated using the type’s *radix* and the instance’s *significand* and *exponent*. This magnitude calculation takes the following form for a floating-point value `x` of type `F`, where `**` is exponentiation:
 
 ```swift
 x.significand * (F.radix ** x.exponent)
@@ -69,7 +69,7 @@ In addition to representing specific numbers, floating-point types also have spe
 
 #### Infinity
 
-Any value whose magnitude is so great that it would round to a value outside the range of representable numbers is rounded to . For a type `F`, positive and negative infinity are represented as `F.infinity` and `-F.infinity`, respectively. Positive infinity compares greater than every finite value and negative infinity, while negative infinity compares less than every finite value and positive infinity. Infinite values with the same sign are equal to each other.
+Any value whose magnitude is so great that it would round to a value outside the range of representable numbers is rounded to *infinity*. For a type `F`, positive and negative infinity are represented as `F.infinity` and `-F.infinity`, respectively. Positive infinity compares greater than every finite value and negative infinity, while negative infinity compares less than every finite value and positive infinity. Infinite values with the same sign are equal to each other.
 
 ```swift
 let values: [Double] = [10.0, 25.0, -10.0, .infinity, -.infinity]

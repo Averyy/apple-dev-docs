@@ -8,6 +8,22 @@ Get a list of versions for a specific Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}/versions`
+
+## Parameters
+
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterActivityImages]` ([string])
+- `fields[gameCenterActivityLocalizations]` ([string])
+- `fields[gameCenterActivityVersionReleases]` ([string])
+- `fields[gameCenterActivityVersions]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[localizations]` (integer)
+- `limit[releases]` (integer)
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

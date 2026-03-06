@@ -27,7 +27,7 @@ The value returned by the next child task that completes.
 
 #### Discussion
 
-The values returned by successive calls to this method appear in the order that the tasks , not in the order that those tasks were added to the task group. For example:
+The values returned by successive calls to this method appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group. For example:
 
 ```swift
 group.addTask { 1 }

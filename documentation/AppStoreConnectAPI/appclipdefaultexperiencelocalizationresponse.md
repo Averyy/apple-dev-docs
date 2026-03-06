@@ -14,6 +14,12 @@ A response that contains a single Default App Clip Experience Localizations reso
 object AppClipDefaultExperienceLocalizationResponse
 ```
 
+## Properties
+
+- `data` (AppClipDefaultExperienceLocalization) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipDefaultExperienceLocalization](appclipdefaultexperiencelocalization.md)

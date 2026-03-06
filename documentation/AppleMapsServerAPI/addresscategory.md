@@ -16,6 +16,12 @@ string AddressCategory
 
 #### Possible Values
 
+- **Country**: Countries and regions. AdministrativeArea The primary administrative divisions of countries or regions.
+- **SubAdministrativeArea**: The secondary administrative divisions of countries or regions.
+- **Locality**: Local administrative divisions, postal cities and populated places.
+- **SubLocality**: Local administrative sub-divisions, postal city sub-districts, and neighborhoods.
+- **PostalCode**: A code assigned to addresses for mail sorting and delivery.
+
 ## See Also
 
 - [type SearchACResultType](searchacresulttype.md)

@@ -17,6 +17,12 @@ object AlternativeDistributionPackageVersionDeltasLinkagesResponse
 ### Dictionaries
 - [object AlternativeDistributionPackageVersionDeltasLinkagesResponse.Data](alternativedistributionpackageversiondeltaslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AlternativeDistributionPackageVersionDeltasLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

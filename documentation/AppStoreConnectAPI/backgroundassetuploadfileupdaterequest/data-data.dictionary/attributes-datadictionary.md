@@ -14,6 +14,12 @@ Attributes that describe a background asset upload file update request resource.
 object BackgroundAssetUploadFileUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string): This attribute is deprecated. Use `sourceFileChecksum` instead.
+- `sourceFileChecksums` (Checksums)
+- `uploaded` (boolean)
+
 
 ---
 

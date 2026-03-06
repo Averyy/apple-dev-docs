@@ -14,6 +14,13 @@ A response that contains a list of subscription image resources.
 object SubscriptionImagesResponse
 ```
 
+## Properties
+
+- `data` ([SubscriptionImage]) *(required)*
+- `included` ([Subscription])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionImage](subscriptionimage.md)

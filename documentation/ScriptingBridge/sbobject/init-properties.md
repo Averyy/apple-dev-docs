@@ -25,7 +25,7 @@ Scripting Bridge does not actually create an object in the target application un
 
 ## Parameters
 
-- `properties`: A dictionary with keys specifying the names of properties   (that is, attributes or to-one relationships) and the values for those   properties.
+- `properties`: A dictionary with keys specifying the names of properties (that is, attributes or to-one relationships) and the values for those properties.
 
 ## See Also
 

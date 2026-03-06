@@ -46,8 +46,8 @@ print(String(v, radix: 16, uppercase: true))
 ## Parameters
 
 - `value`: The value to convert to a string.
-- `radix`: The base to use for the string representation.   must be   at least 2 and at most 36. The default is 10.
-- `uppercase`: Pass   to use uppercase letters to represent numerals   greater than 9, or   to use lowercase letters. The default is   .
+- `radix`: The base to use for the string representation. `radix` must be at least 2 and at most 36. The default is 10.
+- `uppercase`: Pass `true` to use uppercase letters to represent numerals greater than 9, or `false` to use lowercase letters. The default is `false`.
 
 
 ---

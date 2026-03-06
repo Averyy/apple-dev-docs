@@ -30,7 +30,7 @@ The `Sender` encrypts messages in PSK mode using a symmetric encryption key that
 
 - `recipientKey`: The recipient’s public key for encrypting the messages.
 - `ciphersuite`: The cipher suite that defines the cryptographic algorithms to use.
-- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same   data.
+- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same `info` data.
 - `psk`: A preshared key (PSK) that the sender and the recipient both hold.
 - `pskID`: An identifier for the PSK.
 

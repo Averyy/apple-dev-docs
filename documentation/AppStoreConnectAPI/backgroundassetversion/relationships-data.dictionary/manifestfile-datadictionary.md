@@ -20,6 +20,10 @@ object BackgroundAssetVersion.Relationships.ManifestFile
 - [object BackgroundAssetVersion.Relationships.ManifestFile.Data](backgroundassetversion/relationships-data.dictionary/manifestfile-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BackgroundAssetVersion.Relationships.ManifestFile.Data)
+
 
 ---
 

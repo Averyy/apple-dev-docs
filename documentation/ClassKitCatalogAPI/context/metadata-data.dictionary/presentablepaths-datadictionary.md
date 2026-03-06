@@ -32,6 +32,10 @@ Then, by setting the new Math Quizzes context as a presentable path for the alge
 
 The same rules that exist for contexts in your app apply to contexts that you create for use as presentable paths. For example, the system limits all contexts to a maximum of 2000 child contexts.
 
+## Properties
+
+- `path` ([string]): An array of strings that locates a context within a context hierarchy. Each string in the array represents a context, starting from the main app context, through any ancestor contexts, down to the child context. Use the identified context as a presentable path.
+
 
 ---
 

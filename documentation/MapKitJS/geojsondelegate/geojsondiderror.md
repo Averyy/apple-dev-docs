@@ -23,7 +23,7 @@ MapKit JS calls this method when the GeoJSON fails to load.
 
 ## Parameters
 
-- `error`: An   instance related to the last blocking error.
+- `error`: An `Error` instance related to the last blocking error.
 - `geoJSON`: The original parsed GeoJSON object.
 
 ## See Also

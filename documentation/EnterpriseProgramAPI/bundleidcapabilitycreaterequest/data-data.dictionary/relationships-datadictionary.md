@@ -17,6 +17,10 @@ object BundleIdCapabilityCreateRequest.Data.Relationships
 - [object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId](bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `bundleId` (BundleIdCapabilityCreateRequest.Data.Relationships.BundleId) *(required)*
+
 
 ---
 

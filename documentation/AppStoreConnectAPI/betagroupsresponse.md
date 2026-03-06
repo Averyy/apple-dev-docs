@@ -14,6 +14,13 @@ A response that contains a list of Beta Group resources.
 object BetaGroupsResponse
 ```
 
+## Properties
+
+- `data` ([BetaGroup]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List Beta Groups](get-v1-betagroups.md)

@@ -20,6 +20,10 @@ object UserInvitation.Relationships
 - [object UserInvitation.Relationships.VisibleApps](userinvitation/relationships-data.dictionary/visibleapps-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `visibleApps` (UserInvitation.Relationships.VisibleApps)
+
 ## See Also
 
 - [object UserInvitation.Attributes](userinvitation/attributes-data.dictionary.md)

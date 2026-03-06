@@ -43,9 +43,9 @@ print(result)
 
 ## Parameters
 
-- `input`: An iterator of code units to be translated, encoded as   . If   is  , the   entire iterator will be exhausted. Otherwise, iteration will stop if   an ill-formed sequence is detected.
-- `sourceEncoding`: The Unicode encoding of  .
-- `repairingIllFormedSequences`: Pass   to measure the length of    even when   contains ill-formed sequences. Each   ill-formed sequence is replaced with a Unicode replacement character   ( ) and is measured as such. Pass   to immediately   stop measuring   when an ill-formed sequence is encountered.
+- `input`: An iterator of code units to be translated, encoded as `sourceEncoding`. If `repairingIllFormedSequences` is `true`, the entire iterator will be exhausted. Otherwise, iteration will stop if an ill-formed sequence is detected.
+- `sourceEncoding`: The Unicode encoding of `input`.
+- `repairingIllFormedSequences`: Pass `true` to measure the length of `input` even when `input` contains ill-formed sequences. Each ill-formed sequence is replaced with a Unicode replacement character (`"\u{FFFD}"`) and is measured as such. Pass `false` to immediately stop measuring `input` when an ill-formed sequence is encountered.
 
 
 ---

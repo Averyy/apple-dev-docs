@@ -24,6 +24,10 @@ object GameCenterAchievementVersionV2CreateRequest.Data.Relationships
 - [object GameCenterAchievementVersionV2CreateRequest.Data.Relationships.Achievement](gamecenterachievementversionv2createrequest/data-data.dictionary/relationships-data.dictionary/achievement-data.dictionary.md)
   The data that describes the achievement of the Game Center achievement version.
 
+## Properties
+
+- `achievement` (GameCenterAchievementVersionV2CreateRequest.Data.Relationships.Achievement) *(required)*
+
 
 ---
 

@@ -18,6 +18,10 @@ object AppStoreVersionExperimentV2.Relationships.App
 - [object AppStoreVersionExperimentV2.Relationships.App.Data](appstoreversionexperimentv2/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app store version experiment v2.
 
+## Properties
+
+- `data` (AppStoreVersionExperimentV2.Relationships.App.Data)
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2.Relationships.AppStoreVersionExperimentTreatments](appstoreversionexperimentv2/relationships-data.dictionary/appstoreversionexperimenttreatments-data.dictionary.md)

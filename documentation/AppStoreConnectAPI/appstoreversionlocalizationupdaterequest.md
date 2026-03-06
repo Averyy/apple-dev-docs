@@ -20,6 +20,10 @@ object AppStoreVersionLocalizationUpdateRequest
 - [object AppStoreVersionLocalizationUpdateRequest.Data](appstoreversionlocalizationupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreVersionLocalizationUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionLocalization](appstoreversionlocalization.md)

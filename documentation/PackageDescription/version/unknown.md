@@ -1,23 +1,19 @@
-# ==(_:_:)
+# <(_:_:)
 
 **Framework**: PackageDescription  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are equal.
+Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 
 ## Declaration
 
 ```swift
-static func == (lhs: Version, rhs: Version) -> Bool
+static func < (lhs: Version, rhs: Version) -> Bool
 ```
-
-#### Return Value
-
-A boolean value indicating the result of the equality test.
 
 #### Discussion
 
-Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
+The precedence is determined according to rules described in the [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org) standard, paragraph 11.
 
 ## Parameters
 
@@ -27,4 +23,4 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/packagedescription/version/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/packagedescription/version/_(_:_:))*

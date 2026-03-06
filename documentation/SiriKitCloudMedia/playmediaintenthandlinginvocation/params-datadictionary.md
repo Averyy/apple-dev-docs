@@ -14,6 +14,10 @@ The parameters of a play media intent request.
 object PlayMediaIntentHandlingInvocation.Params
 ```
 
+## Properties
+
+- `intent` (PlayMediaIntent) *(required)*: The play media intent.
+
 
 ---
 

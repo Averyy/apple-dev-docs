@@ -28,7 +28,7 @@ Calling the `reserveCapacity(_:)` method on a set with bridged storage triggers 
 
 ## Parameters
 
-- `minimumCapacity`: The requested number of elements to   store.
+- `minimumCapacity`: The requested number of elements to store.
 
 ## See Also
 

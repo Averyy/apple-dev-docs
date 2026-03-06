@@ -14,6 +14,10 @@ Attributes you set that describe the new resource.
 object AppPreviewSetCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `previewType` (PreviewType) *(required)*
+
 ## See Also
 
 - [object AppPreviewSetCreateRequest.Data.Relationships](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -20,6 +20,12 @@ object BackgroundAssetUpdateRequest.Data
 - [object BackgroundAssetUpdateRequest.Data.Attributes](backgroundassetupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a background asset update request.
 
+## Properties
+
+- `attributes` (BackgroundAssetUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

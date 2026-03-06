@@ -8,6 +8,14 @@ Remove a compatible version relationship from an app version.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [POST /v1/gameCenterAppVersions](post-v1-gamecenterappversions.md)

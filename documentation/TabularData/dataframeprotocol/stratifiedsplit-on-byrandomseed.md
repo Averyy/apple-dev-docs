@@ -29,7 +29,7 @@ A tuple of two data frames.
 - `columnID0`: A column identifier.
 - `columnID1`: A second column identifier.
 - `columnID2`: A third column identifier.
-- `proportion`: A proportion in the range  .
+- `proportion`: A proportion in the range `[0.0, 1.0]`.
 - `randomSeed`: A seed number for a random-number generator.
 
 ## See Also

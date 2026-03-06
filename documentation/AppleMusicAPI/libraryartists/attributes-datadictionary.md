@@ -14,6 +14,10 @@ The attributes for a library artist resource.
 object LibraryArtists.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*: The artist’s name.
+
 ## See Also
 
 - [object LibraryArtists.Relationships](libraryartists/relationships-data.dictionary.md)

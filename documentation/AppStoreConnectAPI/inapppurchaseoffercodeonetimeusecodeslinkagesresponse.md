@@ -20,6 +20,12 @@ object InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse
 - [object InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse.Data](inapppurchaseoffercodeonetimeusecodeslinkagesresponse/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` ([InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

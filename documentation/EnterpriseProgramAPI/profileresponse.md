@@ -11,6 +11,12 @@ A response that contains a single Profiles resource.
 object ProfileResponse
 ```
 
+## Properties
+
+- `data` (Profile) *(required)*: The resource data.
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object Profile](profile.md)

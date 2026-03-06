@@ -8,6 +8,15 @@ Get a list of all devices for a specific provisioning profile.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/profiles/{id}/devices`
+
+## Parameters
+
+- `limit` (integer)
+- `fields[devices]` ([string])
+
 ## See Also
 
 - [Read the Bundle ID in a Profile](get-v1-profiles-_id_-bundleid.md)

@@ -8,6 +8,17 @@ Get information for a specific Game Center challenge.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterChallenges/{id}`
+
+## Parameters
+
+- `fields[gameCenterChallengeVersions]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `include` ([string])
+- `limit[versions]` (integer)
+
 ## See Also
 
 - [Read the versions for a challenge](get-v1-gamecenterchallenges-_id_-versions.md)

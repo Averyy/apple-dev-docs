@@ -24,6 +24,12 @@ object BuildBundle.Relationships.BuildBundleFileSizes
 - [object BuildBundle.Relationships.BuildBundleFileSizes.Data](buildbundle/relationships-data.dictionary/buildbundlefilesizes-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Build Bundle File Sizes resource.
 
+## Properties
+
+- `data` ([BuildBundle.Relationships.BuildBundleFileSizes.Data]): The ID and type of the related Build Bundle File Sizes resource.
+- `links` (RelationshipLinks): Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object BuildBundle.Relationships.AppClipDomainCacheStatus](buildbundle/relationships-data.dictionary/appclipdomaincachestatus-data.dictionary.md)

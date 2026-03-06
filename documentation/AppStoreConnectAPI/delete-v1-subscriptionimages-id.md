@@ -12,6 +12,14 @@ Delete the image asset that appears on the App Store listing that represents an 
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/subscriptionImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List subscription images`](get-v1-subscriptions-_id_-images.md) response.
+
 ## See Also
 
 - [Create an image for a subscription](post-v1-subscriptionimages.md)

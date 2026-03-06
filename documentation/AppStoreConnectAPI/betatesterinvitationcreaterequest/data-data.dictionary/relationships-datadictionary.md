@@ -22,6 +22,11 @@ object BetaTesterInvitationCreateRequest.Data.Relationships
 - [object BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester](betatesterinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary/betatester-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `app` (BetaTesterInvitationCreateRequest.Data.Relationships.App) *(required)*
+- `betaTester` (BetaTesterInvitationCreateRequest.Data.Relationships.BetaTester)
+
 
 ---
 

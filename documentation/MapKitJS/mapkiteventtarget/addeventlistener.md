@@ -28,9 +28,9 @@ Unlike a DOM `EventTarget`, a [`MapKitEventTarget`](mapkiteventtarget.md) doesnâ
 
 ## Parameters
 
-- `type`: The type of event, for example, a  .
-- `listener`: The callback function to invoke. MapKit JS passes   an   as its sole argument.
-- `thisObject`: An object MapKit JS sets as the   keyword on the   function.
+- `type`: The type of event, for example, a `"configuration-change"`.
+- `listener`: The callback function to invoke. MapKit JS passes `listener` an `Event` as its sole argument.
+- `thisObject`: An object MapKit JS sets as the `this` keyword on the `listener` function.
 
 
 ---

@@ -20,6 +20,10 @@ object SubscriptionIntroductoryOffersLinkagesRequest
 - [object SubscriptionIntroductoryOffersLinkagesRequest.Data](subscriptionintroductoryofferslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a subscription introductory offers linkages request resource.
 
+## Properties
+
+- `data` ([SubscriptionIntroductoryOffersLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

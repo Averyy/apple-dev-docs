@@ -19,6 +19,12 @@ object PromotedPurchaseCreateRequest.Data.Relationships
 - [object PromotedPurchaseCreateRequest.Data.Relationships.InAppPurchaseV2](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
 - [object PromotedPurchaseCreateRequest.Data.Relationships.Subscription](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
 
+## Properties
+
+- `app` (PromotedPurchaseCreateRequest.Data.Relationships.App) *(required)*
+- `inAppPurchaseV2` (PromotedPurchaseCreateRequest.Data.Relationships.InAppPurchaseV2)
+- `subscription` (PromotedPurchaseCreateRequest.Data.Relationships.Subscription)
+
 ## See Also
 
 - [object PromotedPurchaseCreateRequest.Data.Attributes](promotedpurchasecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

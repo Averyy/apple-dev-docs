@@ -97,7 +97,7 @@ The sample provides custom playback controls with three basic functions:
 
 The app uses the same view, `TransportView`, regardless of whether playback occurs in a window or an immersive space.
 
-For playback in the , [`ornaments`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ornaments) are ideal: they attach to windows without obscuring the content within. For more information, see [`Present common controls in an ornament`](https://developer.apple.comhttps://developer.apple.com/tutorials/develop-in-swift/present-common-controls-in-an-ornament).
+For playback in the *Shared Space*, [`ornaments`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ornaments) are ideal: they attach to windows without obscuring the content within. For more information, see [`Present common controls in an ornament`](https://developer.apple.comhttps://developer.apple.com/tutorials/develop-in-swift/present-common-controls-in-an-ornament).
 
 ```swift
 .ornament(attachmentAnchor: .scene(.bottom)) {
@@ -105,7 +105,7 @@ For playback in the , [`ornaments`](https://developer.apple.comhttps://developer
 }
 ```
 
-The  presentation uses the same `TransportView`, but it’s incorporated through composition instead. It is added to an outer type, `ImmersiveControlsView`, which is then placed within a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent) for use in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView):
+The *Full Space* presentation uses the same `TransportView`, but it’s incorporated through composition instead. It is added to an outer type, `ImmersiveControlsView`, which is then placed within a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent) for use in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView):
 
 ```swift
 private func updateImmersiveControls(with mitigation: VideoPlayerComponent.VideoComfortMitigation? = nil) {

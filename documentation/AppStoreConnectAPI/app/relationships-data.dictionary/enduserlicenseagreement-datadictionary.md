@@ -20,6 +20,11 @@ object App.Relationships.EndUserLicenseAgreement
 - [object App.Relationships.EndUserLicenseAgreement.Data](app/relationships-data.dictionary/enduserlicenseagreement-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (App.Relationships.EndUserLicenseAgreement.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

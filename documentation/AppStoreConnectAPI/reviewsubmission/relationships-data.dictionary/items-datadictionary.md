@@ -20,6 +20,12 @@ object ReviewSubmission.Relationships.Items
 - [object ReviewSubmission.Relationships.Items.Data](reviewsubmission/relationships-data.dictionary/items-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` ([ReviewSubmission.Relationships.Items.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object ReviewSubmission.Relationships.App](reviewsubmission/relationships-data.dictionary/app-data.dictionary.md)

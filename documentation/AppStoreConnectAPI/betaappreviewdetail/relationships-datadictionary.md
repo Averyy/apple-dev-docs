@@ -20,6 +20,10 @@ object BetaAppReviewDetail.Relationships
 - [object BetaAppReviewDetail.Relationships.App](betaappreviewdetail/relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `app` (BetaAppReviewDetail.Relationships.App)
+
 ## See Also
 
 - [object BetaAppReviewDetail.Attributes](betaappreviewdetail/attributes-data.dictionary.md)

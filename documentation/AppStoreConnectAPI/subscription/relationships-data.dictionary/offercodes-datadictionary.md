@@ -17,6 +17,12 @@ object Subscription.Relationships.OfferCodes
 ### Objects
 - [object Subscription.Relationships.OfferCodes.Data](subscription/relationships-data.dictionary/offercodes-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Subscription.Relationships.OfferCodes.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

@@ -17,6 +17,10 @@ object SubscriptionLocalization.Relationships.Subscription
 ### Objects
 - [object SubscriptionLocalization.Relationships.Subscription.Data](subscriptionlocalization/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionLocalization.Relationships.Subscription.Data)
+
 
 ---
 

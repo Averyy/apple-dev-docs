@@ -17,6 +17,12 @@ object AppEventVideoClipUpdateRequest.Data
 ### Objects
 - [object AppEventVideoClipUpdateRequest.Data.Attributes](appeventvideoclipupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventVideoClipUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

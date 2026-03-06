@@ -8,6 +8,14 @@ Get the bundle ID information for a specific provisioning profile.
 **Availability**:
 - App Store Connect API 1.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/profiles/{id}/bundleId`
+
+## Parameters
+
+- `fields[bundleIds]` ([string])
+
 ## See Also
 
 - [GET /v1/profiles/{id}/relationships/bundleId](get-v1-profiles-_id_-relationships-bundleid.md)

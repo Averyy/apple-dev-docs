@@ -20,6 +20,10 @@ object CiBuildRun.Relationships.PullRequest
 - [object CiBuildRun.Relationships.PullRequest.Data](cibuildrun/relationships-data.dictionary/pullrequest-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Pull Requests resource.
 
+## Properties
+
+- `data` (CiBuildRun.Relationships.PullRequest.Data): The ID and type of the related Pull Requests resource.
+
 ## See Also
 
 - [object CiBuildRun.Relationships.Builds](cibuildrun/relationships-data.dictionary/builds-data.dictionary.md)

@@ -14,6 +14,47 @@ Change the subscription renewal time rate, set interrupted purchases or change t
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v2/sandboxTesters/47be9e57-1a3f-49c2-8ce7-af27a977ebb0
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "sandboxTesters",
+    "id" : "47be9e57-1a3f-49c2-8ce7-af27a977ebb0",
+    "attributes" : {
+      "firstName" : "Anne",
+      "lastName" : "Johnson",
+      "acAccountName" : "annejohnson1@icloud.com",
+      "territory" : "CAN",
+      "applePayCompatible" : true,
+      "interruptPurchases" : false,
+      "subscriptionRenewalRate" : "MONTHLY_RENEWAL_EVERY_THIRTY_MINUTES"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v2/sandboxTesters/47be9e57-1a3f-49c2-8ce7-af27a977ebb0"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v2/sandboxTesters/47be9e57-1a3f-49c2-8ce7-af27a977ebb0"
+  }
+}
+
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/sandboxTesters/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Sandbox Tester resource ID from the [`List Sandbox Testers`](get-v2-sandboxtesters.md) response
+
 ## See Also
 
 - [List Sandbox Testers](get-v2-sandboxtesters.md)

@@ -17,6 +17,11 @@ object EndAppAvailabilityPreOrderCreateRequest.Data
 ### Objects
 - [object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships](endappavailabilitypreordercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `relationships` (EndAppAvailabilityPreOrderCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

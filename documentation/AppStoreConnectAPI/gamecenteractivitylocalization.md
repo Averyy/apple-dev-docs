@@ -21,6 +21,14 @@ object GameCenterActivityLocalization
   Attributes that describe an activity resource.
 - [object GameCenterActivityLocalization.Relationships](gamecenteractivitylocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterActivityLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterActivityLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityLocalizationCreateRequest](gamecenteractivitylocalizationcreaterequest.md)

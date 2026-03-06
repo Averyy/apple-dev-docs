@@ -17,6 +17,12 @@ object GameCenterDetail.Relationships.LeaderboardReleases
 ### Objects
 - [object GameCenterDetail.Relationships.LeaderboardReleases.Data](gamecenterdetail/relationships-data.dictionary/leaderboardreleases-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterDetail.Relationships.LeaderboardReleases.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterDetail.Relationships.AchievementReleases](gamecenterdetail/relationships-data.dictionary/achievementreleases-data.dictionary.md)

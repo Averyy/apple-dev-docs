@@ -22,7 +22,7 @@ subscript(bounds: Range<Int>) -> UnsafeMutableRawBufferPointer.SubSequence { get
 
 ## Parameters
 
-- `bounds`: The range of byte offsets to access. The upper and   lower bounds of the range must be in the range  .
+- `bounds`: The range of byte offsets to access. The upper and lower bounds of the range must be in the range `0...count`.
 
 
 ---

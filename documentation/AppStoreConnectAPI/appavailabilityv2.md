@@ -20,6 +20,14 @@ object AppAvailabilityV2
 - [object AppAvailabilityV2.Relationships](appavailabilityv2/relationships-data.dictionary.md)
 - [object AppAvailabilityV2.Attributes](appavailabilityv2/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppAvailabilityV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppAvailabilityV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppAvailabilityV2CreateRequest](appavailabilityv2createrequest.md)

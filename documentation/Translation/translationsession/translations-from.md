@@ -55,7 +55,7 @@ If a person dismisses the progress view while the languages download, the system
 ## See Also
 
 - [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
-  Translates a single attributed string of text.
+  Translates a formatted string of text, preserving formatting in the translation.
 - [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
   Translates a single string of text.
 - [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)

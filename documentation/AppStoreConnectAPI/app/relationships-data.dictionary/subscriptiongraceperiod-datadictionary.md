@@ -17,6 +17,11 @@ object App.Relationships.SubscriptionGracePeriod
 ### Objects
 - [object App.Relationships.SubscriptionGracePeriod.Data](app/relationships-data.dictionary/subscriptiongraceperiod-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (App.Relationships.SubscriptionGracePeriod.Data)
+- `links` (RelationshipLinks)
+
 ## See Also
 
 - [object App.Relationships.AppEncryptionDeclarations](app/relationships-data.dictionary/appencryptiondeclarations-data.dictionary.md)

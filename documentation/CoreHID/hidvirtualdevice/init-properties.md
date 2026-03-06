@@ -20,7 +20,7 @@ init?(properties: HIDVirtualDevice.Properties)
 
 ## Parameters
 
-- `properties`: The   for the virtual device. These values determine the device functionality.
+- `properties`: The [`HIDVirtualDevice.Properties`](hidvirtualdevice/properties.md) for the virtual device. These values determine the device functionality.
 
 ## See Also
 

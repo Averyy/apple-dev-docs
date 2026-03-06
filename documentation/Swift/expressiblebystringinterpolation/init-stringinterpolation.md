@@ -27,7 +27,7 @@ Most `StringInterpolation` types will store information about the literals and i
 
 ## Parameters
 
-- `stringInterpolation`: An instance of    which has had each segment of the string literal appended   to it.
+- `stringInterpolation`: An instance of `StringInterpolation` which has had each segment of the string literal appended to it.
 
 
 ---

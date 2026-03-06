@@ -17,6 +17,10 @@ object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationshi
 ### Objects
 - [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships.SandboxTesters.Data](sandboxtestersclearpurchasehistoryrequestv2createrequest/data-data.dictionary/relationships-data.dictionary/sandboxtesters-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships.SandboxTesters.Data]) *(required)*
+
 
 ---
 

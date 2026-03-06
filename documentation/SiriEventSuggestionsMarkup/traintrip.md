@@ -14,6 +14,19 @@ Location and scheduling information for a train trip.
 object TrainTrip
 ```
 
+## Properties
+
+- `@type` (string) *(required)*
+- `arrivalStation` (TrainStation) *(required)*: The station where the train reservation ends.
+- `arrivalTime` (dateTimeISO8601) *(required)*: The scheduled time the train arrives.
+- `departureStation` (TrainStation) *(required)*: The station where the train reservation starts.
+- `departureTime` (dateTimeISO8601) *(required)*: The scheduled time the train departs.
+- `trainName` (string) *(required)*: The name of the train.
+- `trainNumber` (string) *(required)*: The train’s route number or other identifier.
+- `provider` (Organization): The railway providing the train trip.
+- `arrivalPlatform` (string)
+- `departurePlatform` (string)
+
 ## See Also
 
 - [object TrainStation](trainstation.md)

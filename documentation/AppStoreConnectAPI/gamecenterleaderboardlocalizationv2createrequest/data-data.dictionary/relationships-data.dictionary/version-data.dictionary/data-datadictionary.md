@@ -17,6 +17,11 @@ object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships.Versi
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

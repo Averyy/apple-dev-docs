@@ -20,6 +20,12 @@ object CiTagStartCondition
 - [object CiTagPatterns](citagpatterns.md)
   Case-sensitive patterns Xcode Cloud uses to determine if a change meets tag names you configure for a workflow’s start condition.
 
+## Properties
+
+- `autoCancel` (boolean): A Boolean value that indicates whether Xcode Cloud automatically cancels or skips builds.
+- `filesAndFoldersRule` (CiFilesAndFoldersRule): Settings Xcode Cloud uses to determine whether a change to a tag should start a new build or not.
+- `source` (CiTagPatterns): The source branch name and custom patterns you configure for a workflow that starts a new build for changes to a Git tag.
+
 ## See Also
 
 - [object CiProduct](ciproduct.md)

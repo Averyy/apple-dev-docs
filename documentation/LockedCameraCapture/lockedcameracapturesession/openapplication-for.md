@@ -21,7 +21,7 @@ The system requests authentication before opening the app, if needed.
 
 ## Parameters
 
-- `userActivity`: An   that contains relevant information   to benefit from universal link support. Use the    activity type to indicate when the app   launches from a locked camera capture extension.
+- `userActivity`: An `NSUserActivity` that contains relevant information to benefit from universal link support. Use the [`NSUserActivityTypeLockedCameraCapture`](nsuseractivitytypelockedcameracapture.md) activity type to indicate when the app launches from a locked camera capture extension.
 
 
 ---

@@ -19,6 +19,12 @@ object SubscriptionUpdateRequest.Data.Relationships
 - [object SubscriptionUpdateRequest.Data.Relationships.Prices](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary.md)
 - [object SubscriptionUpdateRequest.Data.Relationships.PromotionalOffers](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/promotionaloffers-data.dictionary.md)
 
+## Properties
+
+- `introductoryOffers` (SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers)
+- `prices` (SubscriptionUpdateRequest.Data.Relationships.Prices)
+- `promotionalOffers` (SubscriptionUpdateRequest.Data.Relationships.PromotionalOffers)
+
 ## See Also
 
 - [object SubscriptionUpdateRequest.Data.Attributes](subscriptionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

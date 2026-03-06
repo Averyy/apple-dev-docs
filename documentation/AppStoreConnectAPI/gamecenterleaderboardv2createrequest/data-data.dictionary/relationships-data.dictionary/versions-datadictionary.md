@@ -23,6 +23,10 @@ object GameCenterLeaderboardV2CreateRequest.Data.Relationships.Versions
 ### Dictionaries - generated
 - [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.Versions.Data](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterLeaderboardV2CreateRequest.Data.Relationships.Versions.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

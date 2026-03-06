@@ -20,6 +20,15 @@ Get information about a specific Game Center leaderboard set image.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardSetImages/{id}`
+
+## Parameters
+
+- `fields[gameCenterLeaderboardSetImages]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create a Game Center leaderboard set image](post-v2-gamecenterleaderboardsetimages.md)

@@ -16,6 +16,50 @@ Get information about a specific alternative distribution package.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9
+```
+
+**Response**:
+
+```json
+
+
+{
+  "data" : {
+    "type" : "alternativeDistributionPackages",
+    "id" : "c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9",
+    "relationships" : {
+      "versions" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9/relationships/versions",
+          "related" : "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9/versions"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9"
+  }
+}
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/{id}`
+
+## Parameters
+
+- `fields[alternativeDistributionPackageVersions]` ([string])
+- `fields[alternativeDistributionPackages]` ([string])
+- `include` ([string])
+- `limit[versions]` (integer)
+
 ## See Also
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)

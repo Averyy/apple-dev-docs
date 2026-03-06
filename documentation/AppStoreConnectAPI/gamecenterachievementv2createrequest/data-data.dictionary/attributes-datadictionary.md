@@ -23,6 +23,15 @@ object GameCenterAchievementV2CreateRequest.Data.Attributes
 - showBeforeEarned:
 - vendorIdentifier:
 
+## Properties
+
+- `activityProperties` (StringToStringMap)
+- `points` (integer) *(required)*
+- `referenceName` (string) *(required)*
+- `repeatable` (boolean) *(required)*
+- `showBeforeEarned` (boolean) *(required)*
+- `vendorIdentifier` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementV2CreateRequest.Data.Relationships](gamecenterachievementv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

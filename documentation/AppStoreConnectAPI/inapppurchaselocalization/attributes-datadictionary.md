@@ -12,6 +12,13 @@
 object InAppPurchaseLocalization.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `locale` (string): The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `name` (string)
+- `state` (string)
+
 ## See Also
 
 - [object InAppPurchaseLocalization.Relationships](inapppurchaselocalization/relationships-data.dictionary.md)

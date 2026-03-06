@@ -17,6 +17,12 @@ object InAppPurchaseV2InAppPurchaseLocalizationsLinkagesResponse
 ### Dictionaries
 - [object InAppPurchaseV2InAppPurchaseLocalizationsLinkagesResponse.Data](inapppurchasev2inapppurchaselocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchaseV2InAppPurchaseLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

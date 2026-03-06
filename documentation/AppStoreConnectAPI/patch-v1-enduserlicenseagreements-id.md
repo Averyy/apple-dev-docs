@@ -18,7 +18,124 @@ If you change the territories relationship, the new territories replace the orig
 
 ##### Change the Text of a License Agreement
 
+**Request**:
+
+```None
+PATCH /v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a
+
+{
+  "data": {
+    "type": "endUserLicenseAgreements",
+    "attributes": {
+      "agreementText": "..."
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "endUserLicenseAgreements",
+    "id" : "b25d1669-d6b1-4e9b-8679-02863557222a",
+    "attributes" : {
+      "agreementText" : "..."
+    },
+    "relationships" : {
+      "app" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/relationships/app",
+          "related" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/app"
+        }
+      },
+      "territories" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/relationships/territories",
+          "related" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/territories"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements"
+  }
+}
+```
+
 ##### Replace the Territories of a License Agreement with Japan and Canada
+
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a
+
+{
+  "data": {
+    "type": "endUserLicenseAgreements",
+    "relationships": {
+      "territories": {
+        "data": [
+          {
+            "type": "territories",
+            "id": "JPN"
+          },
+          {
+            "type": "territories",
+            "id": "CAN"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "endUserLicenseAgreements",
+    "id" : "b25d1669-d6b1-4e9b-8679-02863557222a",
+    "attributes" : {
+      "agreementText" : "..."
+    },
+    "relationships" : {
+      "app" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/relationships/app",
+          "related" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/app"
+        }
+      },
+      "territories" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/relationships/territories",
+          "related" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a/territories"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669-d6b1-4e9b-8679-02863557222a"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
 
 ## See Also
 

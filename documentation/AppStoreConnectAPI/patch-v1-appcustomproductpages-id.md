@@ -12,6 +12,60 @@ Update the name and visibility status of an app custom product page.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3
+{
+  "data": {
+    "type": "appCustomProductPages",
+    "id": "eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+    "attributes": {
+      "name": "Custom Product Page May 1",
+      "visible": false
+    }
+  }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data": {
+    "type": "appCustomProductPages",
+    "id": "eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+    "attributes": {
+      "name": "Custom Product Page May 1",
+      "url": "https://apps.apple.com/us/app/name/id01234?ppid=eb2b3606-2fef-4aab-a54e-b2e5547c9bc3",
+      "visible": false
+    },
+    "relationships": {
+      "appCustomProductPageVersions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3/relationships/appCustomProductPageVersions",
+          "related": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3/appCustomProductPageVersions"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3"
+    }
+  },
+  "links": {
+    "self": "https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aab-a54e-b2e5547c9bc3"
+  }
+}
+```
+
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page resource ID from the [`List all custom product pages for an app`](get-v1-apps-_id_-appcustomproductpages.md) response.
+
 ## See Also
 
 - [Create a custom product page](post-v1-appcustomproductpages.md)

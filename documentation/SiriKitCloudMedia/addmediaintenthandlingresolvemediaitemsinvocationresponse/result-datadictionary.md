@@ -14,6 +14,10 @@ The result of attempting to identify the media items to add to the user’s libr
 object AddMediaIntentHandlingResolveMediaItemsInvocationResponse.Result
 ```
 
+## Properties
+
+- `resolutionResult` ([AddMediaMediaItemResolutionResult]): Your service’s ability to handle the intent.
+
 
 ---
 

@@ -14,6 +14,11 @@ The data structure that represents the properties of a composite checksum.
 object Checksums.Composite
 ```
 
+## Properties
+
+- `algorithm` (string)
+- `hash` (string)
+
 ## See Also
 
 - [object Checksums.File](checksums/file-data.dictionary.md)

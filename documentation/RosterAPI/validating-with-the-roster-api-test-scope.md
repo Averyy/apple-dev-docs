@@ -6,7 +6,7 @@ Use test data to ensure your integration with the Roster API works correctly.
 
 #### Overview
 
-Testing your Roster API integration before deployment is critical to the success of your implementation. The Roster API provides a  that you use to obtain sample user and class data for testing to ensure your integration is correct.
+Testing your Roster API integration before deployment is critical to the success of your implementation. The Roster API provides a *test scope* that you use to obtain sample user and class data for testing to ensure your integration is correct.
 
 Use the test scope to generate an access token, then query the various endpoints of the Roster API. When the Roster API receives the request, it responds with test data that represents the dataset and provides all possible states of user and class records.
 
@@ -30,6 +30,12 @@ URL: https://appleid.apple.com/auth/oauth2/v2/authorize
 
 Use the following query parameters:
 
+- **`client_id`**: The client identifier
+- **`redirect_uri`**: The redirect URI you configure
+- **`response_type`**: The response type, `code`
+- **`scope`**: The scope of the access, `edu.rosterapi.test.read`
+- **`state`**: The state of the request, `testState`
+
 The URL opens the Apple OAuth consent screen. Enter your developer account credentials.
 
 After successfully logging in, you receive the grant code in the registered redirect URI.
@@ -44,6 +50,12 @@ https://appleid.apple.com/auth/oauth2/v2/token
 ```
 
 In the request body, set the following parameters:
+
+- **`client_id`**: The client identifier
+- **`client_secret`**: The client secret
+- **`grant_type`**: The grant type, `authorization_code`
+- **`grant_code`**: The grant code you receive
+- **`redirect_uri`**: The redirect URI you configure
 
 Set the header as follows:
 

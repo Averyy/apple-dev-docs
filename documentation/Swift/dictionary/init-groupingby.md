@@ -37,7 +37,7 @@ The new `studentsByLetter` dictionary has three entries, with students’ names 
 ## Parameters
 
 - `values`: A sequence of values to group into a dictionary.
-- `keyForValue`: A closure that returns a key for each element in   .
+- `keyForValue`: A closure that returns a key for each element in `values`.
 
 ## See Also
 

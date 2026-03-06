@@ -12,6 +12,11 @@
 object AppCustomProductPageVersionCreateRequest.Data.Relationships.AppCustomProductPageLocalizations.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

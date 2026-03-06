@@ -14,6 +14,12 @@ A response that contains a single subscription images resource.
 object SubscriptionImageResponse
 ```
 
+## Properties
+
+- `data` (SubscriptionImage) *(required)*
+- `included` ([Subscription])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionImage](subscriptionimage.md)

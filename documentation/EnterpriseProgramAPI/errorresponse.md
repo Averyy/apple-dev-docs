@@ -23,6 +23,10 @@ object ErrorResponse
 - [object ErrorResponse.Errors](errorresponse/errors-data.dictionary.md)
   The details about an error that are returned when an API request isn’t successful.
 
+## Properties
+
+- `errors` ([ErrorResponse.Errors]): An array of one or more errors.
+
 ## See Also
 
 - [Interpreting and Handling Errors](interpreting-and-handling-errors.md)

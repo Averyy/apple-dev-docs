@@ -18,6 +18,11 @@ object ResubmissionRequest
 
 Use the `parentRequestId` and `requestId` returned by [`Submit request`](submit-request.md), or your most recent call to [`Resubmit request`](resubmit-request.md).
 
+## Properties
+
+- `parentRequestId` (string): A UUID that identifies the recurring request series.
+- `requestId` (string): A UUID that identifies the most recent download request in the recurring series.
+
 ## See Also
 
 - [Submit request](submit-request.md)

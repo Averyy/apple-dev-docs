@@ -48,9 +48,20 @@ When playing at low latency, the client must be able to switch renditions with a
 
 HLS now defines Delivery Directives, which are special query parameters that can be added to the URL of a GET request for a Playlist. These Delivery Directives include:
 
+- **`_HLS_msn=<M>`**: Indicates that the server must hold the request until a Playlist contains a Media Segment with Media Sequence Number of M or later.
+- **`_HLS_part=<N>`**: Indicates, in combination with `_HLS_msn`, that the server must hold the request until a Playlist contains Partial Segment N of Media Sequence Number M or later. The first Partial Segment of a segment is `_HLS_part=0`, the second is `_HLS_part=1`, and so on. The `_HLS_part` parameter requires an `_HLS_msn` parameter.
+- **`_HLS_skip=YES|v2`**: Requests a Playlist Delta Update, in which the earlier portion of the Playlist is replaced with an `EXT-X-SKIP` tag.
+
 ##### Utilize New Media Playlist Tags for Low Latency Hls
 
 The following Playlist tags support Low-Latency HLS.
+
+- **`EXT-X-SERVER-CONTROL`**: Allows the server to indicate support for features such as Blocking Playlist Reload and Playlist Delta Updates.
+- **`EXT-X-PART-INF`**: Provides information about HLS Partial Segments in the Playlist.
+- **`EXT-X-PART`**: Identifies a Partial Segment in the Playlist.
+- **`EXT-X-PRELOAD-HINT`**: Hints that a resource or a byte range of a resource are needed to play back an upcoming part of the presentation. Note that when a hinted Partial Segment eventually appears in the Playlist as an `EXT-X-PART` tag, it may be different than previous Partial Segment. It may have a different Discontinuity Sequence Number, Media Initialization Section, or encryption configuration. In other words, the Partial Segment can be preceded by an `EXTINF` tag indicating the end of the previous Parent Segment and an `EXT-X-DISCONTINUITY`, `EXT-X-MAP`, or `EXT-X-KEY` tag. A server may choose not to publish a previously hinted Partial Segment if the planned segmentation changes, such as in the case of early return from an ad.
+- **`EXT-X-RENDITION-REPORT`**: Carries information about an associated rendition that’s as up to date as the Playlist that contains it.
+- **`EXT-X-SKIP`**: When a server issues a Playlist Delta Update, it replaces Media Segments earlier than the Skip Boundary and their associated tags with an` EXT-X-SKIP` tag.
 
 ##### Comply with the Low Latency Server Configuration Profile
 

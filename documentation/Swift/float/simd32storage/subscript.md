@@ -22,7 +22,7 @@ subscript(index: Int) -> Float { get set }
 
 ## Parameters
 
-- `index`: The index of the element to access.   must be in   the range  .
+- `index`: The index of the element to access. `index` must be in the range `0..<scalarCount`.
 
 
 ---

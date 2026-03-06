@@ -38,7 +38,7 @@ enum Counter: Int {
 }
 ```
 
-You can create a `Counter` instance from an integer value between 1 and 5 by using the `init?(rawValue:)` initializer declared in the `RawRepresentable` protocol. This initializer is failable because although every case of the `Counter` type has a corresponding `Int` value, there are many `Int` values that  correspond to a case of `Counter`.
+You can create a `Counter` instance from an integer value between 1 and 5 by using the `init?(rawValue:)` initializer declared in the `RawRepresentable` protocol. This initializer is failable because although every case of the `Counter` type has a corresponding `Int` value, there are many `Int` values that *don’t* correspond to a case of `Counter`.
 
 ```swift
 for i in 3...6 {

@@ -19,6 +19,10 @@ object GameCenterAchievementImageCreateRequest
 ### Objects
 - [object GameCenterAchievementImageCreateRequest.Data](gamecenterachievementimagecreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAchievementImageCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementImageV2](gamecenterachievementimagev2.md)

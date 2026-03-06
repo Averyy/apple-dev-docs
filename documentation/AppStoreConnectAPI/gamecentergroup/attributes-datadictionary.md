@@ -12,6 +12,10 @@
 object GameCenterGroup.Attributes
 ```
 
+## Properties
+
+- `referenceName` (string)
+
 ## See Also
 
 - [object GameCenterGroup.Relationships](gamecentergroup/relationships-data.dictionary.md)

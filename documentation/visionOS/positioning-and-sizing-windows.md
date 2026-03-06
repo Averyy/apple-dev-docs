@@ -18,6 +18,83 @@ Your ability to configure window size and position is subject to the following c
 
 ##### Specify Initial Window Position
 
+**macOS**:
+
+In macOS, the first time your app opens a window from a particular scene declaration, the system places the window at the center of the screen by default. For scene types that support multiple simultaneous windows, the system offsets each additional window by a small amount to avoid fully obscuring existing windows.
+
+You can override the default placement of the first window in macOS by applying the [`defaultPosition(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultPosition(_:)) scene modifier to indicate where to place the window relative to the screen bounds. For example, you can request that the system place a new window in the bottom trailing corner of the screen.
+
+```swift
+@main
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .defaultPosition(.bottomTrailing)
+    }
+}
+```
+
+The system aligns the point in the window that corresponds to the specified [`UnitPoint`](https://developer.apple.com/documentation/SwiftUI/UnitPoint) with the point in the screen that corresponds to the same unit point. You can use a built-in unit point, like [`bottomTrailing`](https://developer.apple.com/documentation/SwiftUI/UnitPoint/bottomTrailing) in the above example, or define a custom one.
+
+You can also use [`defaultWindowPlacement(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultWindowPlacement(_:)) to place windows.
+
+```swift
+@main
+struct MyApp: App {
+    var body: some Scene {
+        // ...
+        
+        Window("Status", id: "status") {
+            StatusView()
+        }
+        .windowResizability(.contentSize)
+        .defaultWindowPlacement { content, context in
+            let displayBounds = context.defaultDisplay.visibleRect
+            let size = content.sizeThatFits(.unspecified)
+            let verticalOffset = 140
+            
+            // The system places the window 140 points from the bottom of the screen.
+            let position = CGPoint(
+                x: displayBounds.midX - (size.width / 2),
+                y: displayBounds.maxY - size.height - verticalOffset)
+            return WindowPlacement(position: position, size: size)
+        }
+    }
+}
+```
+
+**visionOS**:
+
+In visionOS, the system places new windows automatically depending on the situation:
+
+- When someone first launches an app from the Home View, the system places the app’s window where they’re looking.
+- When a running app opens a new window, the system places the new window in front of one of the app’s existing windows, offsetting each additional window by a small amount to avoid fully obscuring existing windows.
+
+You can override the default placement of the window by applying the [`defaultWindowPlacement(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultWindowPlacement(_:)) scene modifier to indicate where to place the window. For example, you can request that the system place a new window on the trailing edge of the existing window.
+
+```swift
+@main
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup(id: "content") {
+            ContentView()
+        }
+        WindowGroup(id: "trailingWindow") {
+           TrailingWindowView()
+        }
+        .defaultWindowPlacement { content, context in
+           guard let contentWindow = context.windows.first(where: { $0.id == "content" }) else { return WindowPlacement(nil) 
+           }
+           return WindowPlacement(.trailing(contentWindow))
+       }
+    }
+}
+```
+
+Use one of the [`WindowPlacement.Position`](https://developer.apple.com/documentation/SwiftUI/WindowPlacement/Position) enumerations to choose the position of the window.
+
 ##### Specify Initial Window Size
 
 You can indicate a default initial size for a new window that the system creates from a [`Scene`](https://developer.apple.com/documentation/SwiftUI/Scene) declaration by applying one of the default size scene modifiers, like [`defaultSize(width:height:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultSize(width:height:)). For example, you can request that new windows that a [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) generates occupy 600 points in the x-dimension and 400 points in the y-dimension.

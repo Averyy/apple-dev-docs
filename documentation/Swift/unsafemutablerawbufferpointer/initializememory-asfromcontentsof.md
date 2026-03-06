@@ -35,7 +35,7 @@ This method initializes the buffer with the contents of `source` until `source` 
 ## Parameters
 
 - `type`: The type of element to which this buffer’s memory will be bound.
-- `source`: A collection of elements to be used to   initialize the buffer’s storage.
+- `source`: A collection of elements to be used to initialize the buffer’s storage.
 
 
 ---

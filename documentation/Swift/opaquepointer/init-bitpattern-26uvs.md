@@ -22,7 +22,7 @@ init?(bitPattern: Int)
 
 ## Parameters
 
-- `bitPattern`: A bit pattern to use for the address of the new   pointer. If   is zero, the result is  .
+- `bitPattern`: A bit pattern to use for the address of the new pointer. If `bitPattern` is zero, the result is `nil`.
 
 
 ---

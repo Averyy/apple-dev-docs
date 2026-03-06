@@ -12,6 +12,11 @@
 object AppEventVideoClip.Relationships.AppEventLocalization.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

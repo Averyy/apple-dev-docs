@@ -22,6 +22,14 @@ object DirectionsResponse
 - [object DirectionsResponse.Step](directionsresponse/step.md)
   An object that represents a step along a route.
 
+## Properties
+
+- `destination` (Place): A [`Place`](place.md) object that describes the destination.
+- `origin` (Place): A [`Place`](place.md) result that describes the origin.
+- `routes` ([DirectionsResponse.Route]): An array of routes. Each route references steps based on indexes into the steps array.
+- `stepPaths` ([Location]): An array of step paths across all steps across all routes. Each step path is a single polyline represented as an array of points. You reference the step paths by index into the array.
+- `steps` ([DirectionsResponse.Step]): An array of all steps across all routes. You reference the route steps by index into this array. Each step in turn references its path based on indexes into the `stepPaths` array.
+
 ## See Also
 
 - [object AutocompleteResult](autocompleteresult.md)

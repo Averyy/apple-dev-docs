@@ -12,6 +12,26 @@ Delete localized metadata that you configured for a custom product page.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+DELETE https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/736966e2-178b-4e3f-bfb9-474eb19fbd8c
+```
+
+**Response**:
+
+```json
+204
+```
+
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List custom product pages localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+
 ## See Also
 
 - [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)

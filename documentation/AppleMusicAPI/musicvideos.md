@@ -24,6 +24,15 @@ object MusicVideos
 - [object MusicVideos.Views](musicvideos/views-data.dictionary.md)
   The views for a music video resource.
 
+## Properties
+
+- `id` (string) *(required)*: The identifier for the music video.
+- `type` (string) *(required)*: This value is always `music-videos`.
+- `href` (string) *(required)*: The relative location for the music video resource.
+- `attributes` (MusicVideos.Attributes): The attributes for the music video.
+- `relationships` (MusicVideos.Relationships): The relationships for the music video.
+- `views` (MusicVideos.Views): The relationship views for the music video.
+
 ## See Also
 
 - [object MusicVideosResponse](musicvideosresponse.md)

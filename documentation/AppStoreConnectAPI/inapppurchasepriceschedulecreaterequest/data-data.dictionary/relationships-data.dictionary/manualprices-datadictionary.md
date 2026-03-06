@@ -17,6 +17,10 @@ object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices
 ### Objects
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices.Data](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/manualprices-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices.Data]) *(required)*
+
 ## See Also
 
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)

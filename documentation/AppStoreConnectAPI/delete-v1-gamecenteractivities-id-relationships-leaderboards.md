@@ -8,6 +8,14 @@ Remove the relationship between a leaderboard and a Game Center activity.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterActivities/{id}/relationships/leaderboards`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create an activity](post-v1-gamecenteractivities.md)

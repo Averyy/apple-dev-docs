@@ -24,6 +24,11 @@ object GameCenterMatchmakingQueueCreateRequest.Data.Relationships
 - [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary.md)
   The rule set associated with the queue.
 
+## Properties
+
+- `experimentRuleSet` (GameCenterMatchmakingQueueCreateRequest.Data.Relationships.ExperimentRuleSet): The experimental rule set to test the associated rules with live match requests. If you provide an experimental rule set, Game Center processes the match requests in the queue using both the experimental and the required rule set, except that it doesn’t return the results of the experimental rule set to clients. Then compare the results of the experimental rule set with the production rule set using metrics, such as the [`List all queues`](get-v1-gamecentermatchmakingqueues.md) and [`Read queue information`](get-v1-gamecentermatchmakingqueues-_id_.md) endpoints.
+- `ruleSet` (GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet) *(required)*: The rule set to associate with this queue.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest.Data.Attributes](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

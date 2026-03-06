@@ -20,6 +20,12 @@ object PassTypeIdUpdateRequest.Data
 - [object PassTypeIdUpdateRequest.Data.Attributes](passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The data structure that represents a pass type id update request resource.
 
+## Properties
+
+- `attributes` (PassTypeIdUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

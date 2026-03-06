@@ -17,6 +17,11 @@ object AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse
 ### Dictionaries
 - [object AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse.Data](appclipdefaultexperiencelocalizationappclipheaderimagelinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppClipDefaultExperience](appclipdefaultexperience.md)

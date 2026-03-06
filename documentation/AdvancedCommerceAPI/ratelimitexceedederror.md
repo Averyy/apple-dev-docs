@@ -16,6 +16,11 @@ object RateLimitExceededError
 
 - [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError](acapriceincreaseisnotcurrentlysupportedinindiaerror.md)

@@ -17,6 +17,12 @@ object AppEvent.Relationships.Localizations
 ### Objects
 - [object AppEvent.Relationships.Localizations.Data](appevent/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppEvent.Relationships.Localizations.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

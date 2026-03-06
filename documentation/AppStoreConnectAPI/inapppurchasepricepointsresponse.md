@@ -12,6 +12,13 @@
 object InAppPurchasePricePointsResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchasePricePoint]) *(required)*
+- `included` ([Territory])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)

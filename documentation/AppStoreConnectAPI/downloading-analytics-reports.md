@@ -8,6 +8,12 @@ Learn how to request and review data about your apps, their usage, engagement, a
 
 Use the Analytics Reports API to request and download reports for your apps. This API provides access to reports in these categories:
 
+- **App Store Engagement**: Engagement information shows how people find, discover, and share your app on the App Store.
+- **App Store Commerce**: Information about downloads, pre-orders, and purchases helps you analyze revenue and sales.
+- **App Usage**: Usage information helps you understand how people interact with your apps, and includes details about app sessions, installations, and crashes
+- **Framework Usage**: Framework usage details help you analyze how people interact with your app and how your app uses APIs.
+- **Performance**: Performance metrics show how your app performs and how users interact with specific features.
+
 > **Note**:  To learn more about the contents of each report, see [`Analytics Reports`](https://developer.apple.com/documentation/analytics-reports).
 
 ##### Understand Roles and Reports
@@ -25,6 +31,9 @@ To download analytics reports, be sure your API key has one of the following rol
 ##### Request Analytics Reports
 
 Start by using the [`Request reports`](post-v1-analyticsreportrequests.md) API to request generation of reports for one of your apps. There are two types of `accessTypes` for report requests:
+
+- **`ONGOING`**: Provides current data and is the most typical. It generates reports daily, weekly and monthly.
+- **`ONE_TIME_SNAPSHOT`**: Provides up-to-the-moment data and goes back as far as is available. It doesn’t generate any new data after the day you request it.
 
 Your first report request generates in 1–2 days. Subsequent `ONGOING` reports are available daily.
 
@@ -53,9 +62,9 @@ To learn more about what data is in each report and report type, see [`Analytics
 
 ##### Download Specific Analytic Report Data
 
-Select a report of interest and use [`Read a list of instances of a report`](get-v1-analyticsreports-_id_-instances.md) to see a list of report instances filtered by `granularity` and `processingDate`.  are discreet containers for a report data set. You can choose a `granularity` of daily, weekly, or monthly for the reports in an instance. The `processingDate` represents new data available that day. The data for a given report with a specific `processingDate` might contain data for that day, full data for past dates, or both.
+Select a report of interest and use [`Read a list of instances of a report`](get-v1-analyticsreports-_id_-instances.md) to see a list of report instances filtered by `granularity` and `processingDate`. *Instances* are discreet containers for a report data set. You can choose a `granularity` of daily, weekly, or monthly for the reports in an instance. The `processingDate` represents new data available that day. The data for a given report with a specific `processingDate` might contain data for that day, full data for past dates, or both.
 
-Then, you use the [`Read the segments for a report`](get-v1-analyticsreportinstances-_id_-segments.md) endpoint to get a download URL for the report.  are the actual report files, and based on the amount of data for a specific instance, you might have multiple segments to download. You can also use `sizeInBytes` and `checksum` to verify a specific report segment downloaded successfully.
+Then, you use the [`Read the segments for a report`](get-v1-analyticsreportinstances-_id_-segments.md) endpoint to get a download URL for the report. *Segments* are the actual report files, and based on the amount of data for a specific instance, you might have multiple segments to download. You can also use `sizeInBytes` and `checksum` to verify a specific report segment downloaded successfully.
 
 ##### Analyze Your App Data
 

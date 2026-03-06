@@ -24,6 +24,13 @@ For more information about the response that includes this alternative distribut
 - [object AlternativeDistributionKey.Attributes](alternativedistributionkey/attributes-data.dictionary.md)
   Attributes that describe an alternative distribution key resource.
 
+## Properties
+
+- `attributes` (AlternativeDistributionKey.Attributes)
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution key.
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionKeyResponse](alternativedistributionkeyresponse.md)

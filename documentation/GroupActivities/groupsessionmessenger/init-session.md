@@ -21,7 +21,7 @@ init<Activity>(session: GroupSession<Activity>) where Activity : GroupActivity
 
 ## Parameters
 
-- `session`: The group session to use for communication with participants.   Specify a session object that is in either the    or    state for this   parameter. However, a session must be in the joined state to send   or receive messages.
+- `session`: The group session to use for communication with participants. Specify a session object that is in either the [`GroupSession.State.waiting`](groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state for this parameter. However, a session must be in the joined state to send or receive messages.
 
 
 ---

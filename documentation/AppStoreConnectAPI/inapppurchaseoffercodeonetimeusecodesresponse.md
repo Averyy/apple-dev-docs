@@ -14,6 +14,13 @@ A response that contains a list of in-app purchase offer code one-time use code 
 object InAppPurchaseOfferCodeOneTimeUseCodesResponse
 ```
 
+## Properties
+
+- `data` ([InAppPurchaseOfferCodeOneTimeUseCode]) *(required)*
+- `included` ([Actor])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)

@@ -8,6 +8,14 @@ Get version IDs about a specific alternative distribution package.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/{id}/relationships/versions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read information for an alternative distribution package version](get-v1-alternativedistributionpackageversions-_id_.md)

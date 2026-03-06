@@ -6,7 +6,7 @@
 Get a paginated list of all of a customer’s refunded in-app purchases for your app.
 
 **Availability**:
-- App Store Server API 1.6+
+- App Store Server API 1.0+
 
 ## Mentions
 
@@ -36,6 +36,14 @@ For subsequent requests, include the [`revision`](get-refund-history/revision.md
 ```javascript
 GET https://api.storekit.itunes.apple.com/inApps/v2/refund/lookup/{transactionId}?revision={revision}
 ```
+
+## Endpoint
+
+`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v2/refund/lookup/{transactionId}`
+
+## Parameters
+
+- `revision` (revision): A token you provide to get the next set of up to 20 transactions. All responses include a `revision` token. Use the `revision` token from the previous [`RefundHistoryResponse`](refundhistoryresponse.md). You can store the `revision` token from the final results page and use it for a future call. For more information, see [`RefundHistoryResponse`](refundhistoryresponse.md). The `revision` token is required in all requests except the initial request.
 
 ## See Also
 

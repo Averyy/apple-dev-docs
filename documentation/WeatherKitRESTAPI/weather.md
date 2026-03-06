@@ -14,6 +14,14 @@ The collection of all requested weather data.
 object Weather
 ```
 
+## Properties
+
+- `currentWeather` (CurrentWeather): The current weather for the requested location.
+- `forecastDaily` (DailyForecast): The daily forecast for the requested location.
+- `forecastHourly` (HourlyForecast): The hourly forecast for the requested location.
+- `forecastNextHour` (NextHourForecast): The next hour forecast for the requested location.
+- `weatherAlerts` (WeatherAlertCollection): Weather alerts for the requested location.
+
 ## See Also
 
 - [GET /api/v1/availability/{latitude}/{longitude}](get-api-v1-availability-_latitude_-_longitude_.md)

@@ -20,6 +20,10 @@ object GameCenterMatchmakingQueueUpdateRequest
 - [object GameCenterMatchmakingQueueUpdateRequest.Data](gamecentermatchmakingqueueupdaterequest/data-data.dictionary.md)
   The data structure of the request body you use to modify a queue.
 
+## Properties
+
+- `data` (GameCenterMatchmakingQueueUpdateRequest.Data) *(required)*: The data structure of the request body.
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueCreateRequest](gamecentermatchmakingqueuecreaterequest.md)

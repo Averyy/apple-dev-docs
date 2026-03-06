@@ -8,6 +8,15 @@ Get the display name and description for a specific locale for an in-app purchas
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchaseLocalizations/{id}`
+
+## Parameters
+
+- `fields[inAppPurchaseLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [List All Localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)

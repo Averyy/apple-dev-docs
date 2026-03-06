@@ -17,6 +17,12 @@ object SubscriptionSubscriptionLocalizationsLinkagesResponse
 ### Dictionaries
 - [object SubscriptionSubscriptionLocalizationsLinkagesResponse.Data](subscriptionsubscriptionlocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionSubscriptionLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

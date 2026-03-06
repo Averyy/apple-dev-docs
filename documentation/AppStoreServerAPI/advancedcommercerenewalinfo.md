@@ -4,13 +4,22 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Server API 1.14+
+- App Store Server API 1.0+
 
 ## Declaration
 
 ```swift
 object advancedCommerceRenewalInfo
 ```
+
+## Properties
+
+- `consistencyToken` (advancedCommerceConsistencyToken)
+- `descriptors` (advancedCommerceDescriptors)
+- `items` (advancedCommerceRenewalItems)
+- `period` (advancedCommercePeriod)
+- `requestReferenceId` (advancedCommerceRequestReferenceId)
+- `taxCode` (advancedCommerceTaxCode)
 
 ## See Also
 

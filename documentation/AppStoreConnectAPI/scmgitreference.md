@@ -24,6 +24,14 @@ object ScmGitReference
 - [type CiGitRefKind](cigitrefkind.md)
   A string that represents the kind of a Git References resource.
 
+## Properties
+
+- `attributes` (ScmGitReference.Attributes): The attributes that describe the Git References resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Git References resource.
+- `links` (ResourceLinks): The navigational links that include the self-link.
+- `relationships` (ScmGitReference.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object ScmGitReferenceResponse](scmgitreferenceresponse.md)

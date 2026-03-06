@@ -12,21 +12,21 @@ A [`Launch Screen`](https://developer.apple.comhttps://developer.apple.com/desig
 
 Check why your launch screen fails to display:
 
--  Your new Xcode build has not overwritten the old launch screen. Clean your build folder for your project. In Xcode, select your target, then select the menu Product, menu item Clean Build Folder. Remove the app from device or Simulator. Build and run the app again.
--  When your app enters the background, iOS takes a snapshot of the app, and displays the snapshot on subsequent launches. If you want your launch screen to appear again, remove your app from the device, and run it again from Xcode.
+- **iOS displays an outdated launch screen.** Your new Xcode build has not overwritten the old launch screen. Clean your build folder for your project. In Xcode, select your target, then select the menu Product, menu item Clean Build Folder. Remove the app from device or Simulator. Build and run the app again.
+- **iOS displays the last shown view controller.** When your app enters the background, iOS takes a snapshot of the app, and displays the snapshot on subsequent launches. If you want your launch screen to appear again, remove your app from the device, and run it again from Xcode.
 
 For SwiftUI-based or UIKit-based apps that use a launch screen in its Information Property List:
 
-- . It is missing the [`UILaunchScreen`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen) key-value, or the [`UIImageName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen/UIImageName) key-value does match with the image name what is found in the asset catalog. Be aware that case sensitivity is important.
+- **Your `Info.plist` is misconfigured**. It is missing the [`UILaunchScreen`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen) key-value, or the [`UIImageName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen/UIImageName) key-value does match with the image name what is found in the asset catalog. Be aware that case sensitivity is important.
 
 For UIKit-based apps using a Storyboard Launch Screen:
 
--  Select your Xcode target, goto the General tab, refer to the ‘App Icons and Launch Images’ section. The Launch Screen File setting should match the name of your launch screen storyboard found in the Project Navigator. To find out more about setting up your Launch Screen in Xcode, refer to [`Specifying your app’s launch screen`](https://developer.apple.com/documentation/Xcode/specifying-your-apps-launch-screen).
+- **The Launch Screen storyboard name doesn’t match what’s in the target settings.** Select your Xcode target, goto the General tab, refer to the ‘App Icons and Launch Images’ section. The Launch Screen File setting should match the name of your launch screen storyboard found in the Project Navigator. To find out more about setting up your Launch Screen in Xcode, refer to [`Specifying your app’s launch screen`](https://developer.apple.com/documentation/Xcode/specifying-your-apps-launch-screen).
 
 ![The launch screen file name setting.](https://docs-assets.developer.apple.com/published/99e629c2eb2362f16f1c0d263dcaf4f6/tn3118-launch_screen_file_setting%402x.png)
 
--  If you are using static images in your launch screen, check to make sure the image originates from the product’s asset catalog as a JPG or PNG image.
-- . Xcode will warn you: “Warning: Unsupported Configuration: ‘View Controller’ is unreachable because it has no entry points”. Select the view controller scene in your launch screen storyboard. Make sure Is Initial View Controller is checked.
+- **The image in your launch screen storyboard did not originate from the target’s asset catalog.** If you are using static images in your launch screen, check to make sure the image originates from the product’s asset catalog as a JPG or PNG image.
+- **Your Launch Screen storyboard’s initial view controller scene is not set as the initial view controller**. Xcode will warn you: “Warning: Unsupported Configuration: ‘View Controller’ is unreachable because it has no entry points”. Select the view controller scene in your launch screen storyboard. Make sure Is Initial View Controller is checked.
 
 ![The initial view controller setting.](https://docs-assets.developer.apple.com/published/7230defec45e5d8ceb5d8d971aef45f5/tn3118-initial_view_controller%402x.png)
 
@@ -38,9 +38,9 @@ Implement state restoration in your app so that the launch screen is used less o
 
 #### Revision History
 
--  Fixed some broken links.
--  Made minor editorial changes.
--  First published.
+- **2023-07-25** Fixed some broken links.
+- **2022-05-24** Made minor editorial changes.
+- **2022-03-01** First published.
 
 ## See Also
 

@@ -14,7 +14,7 @@ The following table lists font families for Apple News Format that are supported
 
 > ❗ **Important**:  Some font families may not support all unicode values.
 
-|  |  |
+| **Font family name** | **Variants** |
 | --- | --- |
 | Academy Engraved LET | fontWeight: regular (AcademyEngravedLetPlain) |
 | Al Nile | fontWeight: regular (AlNile) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) fontWeight: bold (AlNile-Bold) |

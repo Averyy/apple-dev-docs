@@ -30,7 +30,7 @@ If `body` throws an error or an error occurs while closing the file descriptor, 
 
 ## Parameters
 
-- `body`: The closure to run.   If the closure throws an error,   this method closes the file descriptor before it rethrows that error.
+- `body`: The closure to run. If the closure throws an error, this method closes the file descriptor before it rethrows that error.
 
 ## See Also
 

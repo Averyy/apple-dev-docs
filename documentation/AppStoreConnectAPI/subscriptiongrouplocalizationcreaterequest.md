@@ -17,6 +17,10 @@ object SubscriptionGroupLocalizationCreateRequest
 ### Objects
 - [object SubscriptionGroupLocalizationCreateRequest.Data](subscriptiongrouplocalizationcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionGroupLocalizationCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)

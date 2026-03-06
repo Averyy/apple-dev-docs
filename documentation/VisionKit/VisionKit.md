@@ -26,7 +26,7 @@ VisionKit’s Document Camera view controller ([`VNDocumentCameraViewController`
 
 #### Interact with Image Subjects
 
-In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image (see [`ImageAnalysisInteraction.Subject`](imageanalysisinteraction/subject.md)). A  may be the focal point of a picture, such as an object around which a photograph centers. Or, the framework may identify several objects that it recognizes in an image. VisionKit enables your app to extract, or , subjects to a separate image with the background removed (see [`image`](imageanalysisinteraction/subject/image.md)), or present a button that gives more information on the subject ([`visualLookUp`](imageanalysisinteraction/interactiontypes/visuallookup.md)).
+In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image (see [`ImageAnalysisInteraction.Subject`](imageanalysisinteraction/subject.md)). A *subject* may be the focal point of a picture, such as an object around which a photograph centers. Or, the framework may identify several objects that it recognizes in an image. VisionKit enables your app to extract, or *lift*, subjects to a separate image with the background removed (see [`image`](imageanalysisinteraction/subject/image.md)), or present a button that gives more information on the subject ([`visualLookUp`](imageanalysisinteraction/interactiontypes/visuallookup.md)).
 
 > **Note**: In macOS 14 and later, macOS apps built with Mac Catalyst support the [`ImageAnalyzer`](imageanalyzer.md) and [`ImageAnalysisInteraction`](imageanalysisinteraction.md) classes.
 

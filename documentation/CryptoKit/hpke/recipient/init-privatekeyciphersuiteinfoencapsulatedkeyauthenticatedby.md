@@ -30,7 +30,7 @@ The `Receiver` decrypts messages in authentication mode using the encapsulated k
 
 - `privateKey`: The recipient’s private key for decrypting the incoming messages.
 - `ciphersuite`: The cipher suite that defines the cryptographic algorithms to use.
-- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same   data.
+- `info`: Data that the key derivation function uses to compute the symmetric key material. The sender and the recipient need to use the same `info` data.
 - `encapsulatedKey`: The encapsulated symmetric key that the sender provides.
 - `authenticationKey`: The sender’s public key for authenticating the messages.
 

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appCategories/{id}/relationships/subcategories`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List App Categories](get-v1-appcategories.md)

@@ -26,7 +26,7 @@ Returns `nil` if `platformString` is empty or is not a root.
 
 ## Parameters
 
-- `platformString`: A pointer to a null-terminated platform   string.
+- `platformString`: A pointer to a null-terminated platform string.
 
 
 ---

@@ -8,6 +8,14 @@ Get the build that is attached to a specific App Store version.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersions/{id}/build`
+
+## Parameters
+
+- `fields[builds]` ([string])
+
 ## See Also
 
 - [Get the Build ID for an App Store Version](get-v1-appstoreversions-_id_-relationships-build.md)

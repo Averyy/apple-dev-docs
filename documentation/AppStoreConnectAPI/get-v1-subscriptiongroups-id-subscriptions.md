@@ -8,6 +8,38 @@ Get a list of all auto-renewable subscriptions in a subscription group.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}/subscriptions`
+
+## Parameters
+
+- `fields[promotedPurchases]` ([string])
+- `fields[subscriptionGroups]` ([string])
+- `fields[subscriptionIntroductoryOffers]` ([string])
+- `fields[subscriptionLocalizations]` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
+- `fields[subscriptionPrices]` ([string])
+- `fields[subscriptions]` ([string])
+- `filter[name]` ([string])
+- `filter[productId]` ([string])
+- `filter[state]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[introductoryOffers]` (integer)
+- `limit[offerCodes]` (integer)
+- `limit[prices]` (integer)
+- `limit[subscriptionLocalizations]` (integer)
+- `sort` ([string])
+- `fields[subscriptionPromotionalOffers]` ([string])
+- `fields[subscriptionAppStoreReviewScreenshots]` ([string])
+- `limit[promotionalOffers]` (integer)
+- `fields[subscriptionAvailabilities]` ([string])
+- `fields[subscriptionImages]` ([string])
+- `fields[winBackOffers]` ([string])
+- `limit[images]` (integer)
+- `limit[winBackOffers]` (integer)
+
 ## See Also
 
 - [Create a Subscription Group](post-v1-subscriptiongroups.md)

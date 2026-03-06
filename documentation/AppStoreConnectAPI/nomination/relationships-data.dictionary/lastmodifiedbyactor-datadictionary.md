@@ -17,6 +17,10 @@ object Nomination.Relationships.LastModifiedByActor
 ### Dictionaries
 - [object Nomination.Relationships.LastModifiedByActor.Data](nomination/relationships-data.dictionary/lastmodifiedbyactor-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (Nomination.Relationships.LastModifiedByActor.Data)
+
 
 ---
 

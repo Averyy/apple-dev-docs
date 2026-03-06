@@ -20,6 +20,10 @@ object BetaTesterCreateRequest
 - [object BetaTesterCreateRequest.Data](betatestercreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaTesterCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaTester](betatester.md)

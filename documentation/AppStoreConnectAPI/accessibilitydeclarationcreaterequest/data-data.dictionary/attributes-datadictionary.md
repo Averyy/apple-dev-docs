@@ -14,6 +14,19 @@ Attributes you set that describe the new accessibility declaration resource.
 object AccessibilityDeclarationCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `deviceFamily` (DeviceFamily) *(required)*
+- `supportsAudioDescriptions` (boolean)
+- `supportsCaptions` (boolean)
+- `supportsDarkInterface` (boolean)
+- `supportsDifferentiateWithoutColorAlone` (boolean)
+- `supportsLargerText` (boolean)
+- `supportsReducedMotion` (boolean)
+- `supportsSufficientContrast` (boolean)
+- `supportsVoiceControl` (boolean)
+- `supportsVoiceover` (boolean)
+
 
 ---
 

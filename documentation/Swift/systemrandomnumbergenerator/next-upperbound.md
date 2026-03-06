@@ -30,7 +30,7 @@ Use this method when you need random binary data to generate another value. If y
 
 ## Parameters
 
-- `upperBound`: The upper bound for the randomly generated value.   Must be non-zero.
+- `upperBound`: The upper bound for the randomly generated value. Must be non-zero.
 
 ## See Also
 

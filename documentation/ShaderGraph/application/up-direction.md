@@ -17,6 +17,8 @@ The direction of the up vector.
 
 #### Parameter Description
 
+- **`Space`**: The space for which the node returns the up vector; the default is `world`.
+
 ## See Also
 
 - [Time (float)](application/time-(float).md)

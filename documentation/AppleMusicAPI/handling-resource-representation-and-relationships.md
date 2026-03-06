@@ -12,7 +12,7 @@ Resources are fetched with a default representation of attributes and relationsh
 
 ##### Extend Resource Attributes
 
-The server will fetch a subset of the available attributes for a resource type by default. The attributes not fetched by default are known as . You may specify a set of attribute names using the `extend` query parameter to request these additional attributes for a resource type.
+The server will fetch a subset of the available attributes for a resource type by default. The attributes not fetched by default are known as *extended attributes*. You may specify a set of attribute names using the `extend` query parameter to request these additional attributes for a resource type.
 
 For example, when fetching an [`Albums`](albums.md) resource, you can request that the server add the extended `artistUrl` attribute to the album’s other attributes:
 

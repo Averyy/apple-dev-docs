@@ -17,6 +17,10 @@ object AppEventLocalizationCreateRequest.Data.Relationships
 ### Objects
 - [object AppEventLocalizationCreateRequest.Data.Relationships.AppEvent](appeventlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appevent-data.dictionary.md)
 
+## Properties
+
+- `appEvent` (AppEventLocalizationCreateRequest.Data.Relationships.AppEvent) *(required)*
+
 ## See Also
 
 - [object AppEventLocalizationCreateRequest.Data.Attributes](appeventlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

@@ -21,6 +21,10 @@ Upon receiving a server notification, respond to the App Store with an HTTP stat
 
 > **Note**:  For version 2 notifications, see [`App Store Server Notifications V2`](app-store-server-notifications-v2.md).
 
+## Endpoint
+
+`POST https://example.com/v1`
+
 ## See Also
 
 - [object responseBodyV1](responsebodyv1.md)

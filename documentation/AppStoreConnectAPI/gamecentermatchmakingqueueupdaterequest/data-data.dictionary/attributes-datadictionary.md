@@ -14,6 +14,10 @@ The attributes for a queue that you modify.
 object GameCenterMatchmakingQueueUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `classicMatchmakingBundleIds` ([string])
+
 ## See Also
 
 - [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/relationships-data.dictionary.md)

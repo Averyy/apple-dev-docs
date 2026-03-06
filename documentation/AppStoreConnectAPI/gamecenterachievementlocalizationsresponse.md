@@ -12,6 +12,13 @@
 object GameCenterAchievementLocalizationsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterAchievementLocalization]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)

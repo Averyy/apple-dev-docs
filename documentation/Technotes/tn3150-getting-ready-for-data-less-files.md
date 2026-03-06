@@ -6,7 +6,7 @@ Understand dataless files and how to minimize the performance impact as the syst
 
 #### Overview
 
-In a modern file system, a file’s content may not be available locally on the device. A file that contains only metadata is known as a  file. The file’s content typically resides on a remote server and is available to people or apps, transparently, when they access the file.
+In a modern file system, a file’s content may not be available locally on the device. A file that contains only metadata is known as a *dataless* file. The file’s content typically resides on a remote server and is available to people or apps, transparently, when they access the file.
 
 For example, a person can create a dataless file in iCloud Drive on iOS by selecting a file in the Files app and choosing the Remove Download menu item. That action removes the file’s contents from the local device and frees the used storage space. Later, when a person taps the same file, or an app accesses it, the system redownloads the file’s content and makes it available again — a process known as materialization. File providers typically support dataless files. For more information, see [`Synchronizing the File Provider Extension`](https://developer.apple.com/documentation/FileProvider/synchronizing-the-file-provider-extension).
 
@@ -82,7 +82,7 @@ For more information about the functions and constants in the above code, see th
 
 #### Revision History
 
--  First published.
+- **2023-05-09** First published.
 
 ## See Also
 

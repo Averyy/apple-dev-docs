@@ -8,6 +8,14 @@ Get the ID for an uploaded asset pack Apple hosted background asset version
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/backgroundAssetVersions/{id}/relationships/backgroundAssetUploadFiles`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read background asset version App Store releases information.](get-v1-backgroundassetversionappstorereleases-_id_.md)

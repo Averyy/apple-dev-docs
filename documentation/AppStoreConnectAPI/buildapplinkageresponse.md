@@ -17,6 +17,11 @@ object BuildAppLinkageResponse
 ### Dictionaries
 - [object BuildAppLinkageResponse.Data](buildapplinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BuildAppLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object Build](build.md)

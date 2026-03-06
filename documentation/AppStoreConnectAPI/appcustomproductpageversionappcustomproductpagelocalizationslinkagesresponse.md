@@ -17,6 +17,12 @@ object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesRespo
 ### Dictionaries
 - [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse.Data](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppCustomProductPageVersion](appcustomproductpageversion.md)

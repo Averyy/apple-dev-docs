@@ -14,6 +14,44 @@ The example request below retrieves detailed information about a specific artifa
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+GET https://api.appstoreconnect.apple.com/v1/ciArtifacts/73be0e4e-6da2-471a-b652-47bd99885dbc
+```
+
+**Response**:
+
+```json
+{    
+"data": {
+        "type": "ciArtifacts",
+        "id": "73be0e4e-6da2-471a-b652-47bd99885dbc",
+        "attributes": {
+            "fileType": "LOG_BUNDLE",
+            "fileName": "exampleName",
+            "fileSize": 19,
+            "downloadUrl": "https://example.com/url-to-artifact"
+        },
+        "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/ciArtifacts/73be0e4e-6da2-471a-b652-47bd99885dbc"
+        }
+    },
+    "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/ciArtifacts/73be0e4e-6da2-471a-b652-47bd99885dbc"
+    }
+}
+
+```
+
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/ciArtifacts/{id}`
+
+## Parameters
+
+- `fields[ciArtifacts]` ([string]): Additional fields to include for the Artifacts resource returned by the response.
+
 
 ---
 

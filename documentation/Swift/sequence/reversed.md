@@ -28,7 +28,7 @@ An array containing the elements of this sequence in reverse order.
 
 The sequence must be finite.
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## See Also
 

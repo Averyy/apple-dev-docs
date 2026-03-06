@@ -8,6 +8,14 @@ List all delta Ids for a specific alternative distribution package version.
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVersions/{id}/relationships/deltas`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read information for an alternative distribution package version](get-v1-alternativedistributionpackageversions-_id_.md)

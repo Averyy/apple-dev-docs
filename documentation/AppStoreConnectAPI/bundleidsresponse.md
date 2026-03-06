@@ -14,6 +14,13 @@ A response that contains a list of Bundle ID resources.
 object BundleIdsResponse
 ```
 
+## Properties
+
+- `data` ([BundleId]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*]): The requested relationship data.
+
 ## See Also
 
 - [List Bundle IDs](get-v1-bundleids.md)

@@ -8,6 +8,14 @@ Delete a localization that’s associated with a leaderboard set.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read Game Center leaderboard set localization information](get-v2-gamecenterleaderboardsetlocalizations-_id_.md)

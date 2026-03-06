@@ -20,6 +20,14 @@ Update a specific Game Center achievement.
 - 422:
 - 429:
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v2/gameCenterAchievements/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center achievement](post-v2-gamecenterachievements.md)

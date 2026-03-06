@@ -55,13 +55,13 @@ print(
 // Prints "["BLANCHE:", "", "", "I", "don\'t", "want", "realism.", "I", "want", "magic!"]"
 ```
 
-> **Note**: O(), where  is the length of the sequence.
+> **Note**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
-- `maxSplits`: The maximum number of times to split the sequence, or one   less than the number of subsequences to return. If    subsequences are returned, the last one is a suffix of the original   sequence containing the remaining elements.   must be   greater than or equal to zero. The default value is  .
-- `omittingEmptySubsequences`: If  , an empty subsequence is   returned in the result for each pair of consecutive elements   satisfying the   predicate and for each element at the   start or end of the sequence satisfying the   predicate.   If  , only nonempty subsequences are returned. The default   value is  .
-- `isSeparator`: A closure that returns   if its argument should be   used to split the sequence; otherwise,  .
+- `maxSplits`: The maximum number of times to split the sequence, or one less than the number of subsequences to return. If `maxSplits + 1` subsequences are returned, the last one is a suffix of the original sequence containing the remaining elements. `maxSplits` must be greater than or equal to zero. The default value is `Int.max`.
+- `omittingEmptySubsequences`: If `false`, an empty subsequence is returned in the result for each pair of consecutive elements satisfying the `isSeparator` predicate and for each element at the start or end of the sequence satisfying the `isSeparator` predicate. If `true`, only nonempty subsequences are returned. The default value is `true`.
+- `isSeparator`: A closure that returns `true` if its argument should be used to split the sequence; otherwise, `false`.
 
 
 ---

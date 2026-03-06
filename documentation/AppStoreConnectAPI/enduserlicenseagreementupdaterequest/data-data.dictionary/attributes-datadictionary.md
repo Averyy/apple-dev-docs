@@ -14,6 +14,10 @@ Attributes whose values you’re changing as part of the update request.
 object EndUserLicenseAgreementUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `agreementText` (string)
+
 ## See Also
 
 - [object EndUserLicenseAgreementUpdateRequest.Data.Relationships](enduserlicenseagreementupdaterequest/data-data.dictionary/relationships-data.dictionary.md)

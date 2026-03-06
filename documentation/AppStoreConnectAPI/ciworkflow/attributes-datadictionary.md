@@ -28,6 +28,24 @@ object CiWorkflow.Attributes
 - [object CiFilesAndFoldersRule](cifilesandfoldersrule.md)
   Settings Xcode Cloud uses to determine whether a change should start a new build or not.
 
+## Properties
+
+- `actions` ([CiAction]): The actions that are part of the workflow.
+- `clean` (boolean): A Boolean value that indicates whether Xcode Cloud should perform a clean build.
+- `containerFilePath` (string): The relative path to your Xcode project or workspace.
+- `description` (string): The workflow’s description.
+- `isEnabled` (boolean): A Boolean value that indicates whether the workflow is active or deactivated.
+- `isLockedForEditing` (boolean): A Boolean value that indicates whether edits to the workflow are restricted.
+- `lastModifiedDate` (date-time): The date and time when the workflow was last modified.
+- `name` (string): The name of the Xcode Cloud workflow; for example, `My Workflow`.
+- `pullRequestStartCondition` (CiPullRequestStartCondition): The workflow’s start condition for pull request changes.
+- `scheduledStartCondition` (CiScheduledStartCondition): The workflow’s start condition that starts new builds on a custom schedule.
+- `branchStartCondition` (CiBranchStartCondition): The workflow’s start condition that starts new builds for changes to a branch.
+- `tagStartCondition` (CiTagStartCondition): The workflow’s start condition that starts new builds for changes to a tag.
+- `manualBranchStartCondition` (CiManualBranchStartCondition)
+- `manualPullRequestStartCondition` (CiManualPullRequestStartCondition)
+- `manualTagStartCondition` (CiManualTagStartCondition)
+
 ## See Also
 
 - [object CiWorkflow.Relationships](ciworkflow/relationships-data.dictionary.md)

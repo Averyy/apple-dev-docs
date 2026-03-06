@@ -12,6 +12,11 @@
 object InAppPurchasePriceScheduleManualPricesLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

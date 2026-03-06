@@ -17,6 +17,10 @@ object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion
 ### Objects
 - [object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion.Data](gamecenterappversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion.Data) *(required)*
+
 
 ---
 

@@ -8,6 +8,14 @@ Delete the image asset that appears on the App Clip card for a default App Clip 
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/appClipHeaderImages/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the App Clip Header Images resource.
+
 ## See Also
 
 - [Read the App Clip Card Image](get-v1-appclipheaderimages-_id_.md)

@@ -52,7 +52,7 @@ Here’s an example of a JWT header:
 
 The JWT payload contains information specific to the the Enterprise Program APIs, such as issuer ID and expiration time. Use the following fields and values in the JWT payload:
 
-|  |  |
+| **Payload Field** | **Value** |
 | --- | --- |
 | `iss` - Issuer ID | Your issuer ID from the Integrations page in the the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com), for example, `57246542-96fe-1a63-e053-0824d011072a` |
 | `iat` - Issued At Time | The token’s creation time, in UNIX epoch time, for example, `1528407600` |

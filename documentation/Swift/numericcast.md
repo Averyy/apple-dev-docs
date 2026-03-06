@@ -30,7 +30,7 @@ Calling the `numericCast(_:)` function is equivalent to calling an initializer f
 
 ## Parameters
 
-- `x`: The integer to convert, an instance of type  .
+- `x`: The integer to convert, an instance of type `T`.
 
 
 ---

@@ -17,6 +17,10 @@ object CertificateCreateRequest
 - [object CertificateCreateRequest.Data](certificatecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (CertificateCreateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object Certificate](certificate.md)

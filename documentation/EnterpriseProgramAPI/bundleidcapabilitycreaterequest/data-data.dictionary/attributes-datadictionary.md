@@ -11,6 +11,11 @@ Attributes that you set that describe the new resource.
 object BundleIdCapabilityCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `capabilityType` (CapabilityType) *(required)*
+- `settings` ([CapabilitySetting])
+
 
 ---
 

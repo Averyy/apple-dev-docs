@@ -20,6 +20,11 @@ object PlayMediaIntentHandlingInvocation
 - [object PlayMediaIntentHandlingInvocation.Params](playmediaintenthandlinginvocation/params-data.dictionary.md)
   The parameters of a play media intent request.
 
+## Properties
+
+- `params` (PlayMediaIntentHandlingInvocation.Params) *(required)*: The parameters of this request, including the play media intent.
+- `method` (string) *(required)*: The action for your service to take to process this intent.
+
 ## Relationships
 
 ### Inherits From

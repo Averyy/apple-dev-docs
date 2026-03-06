@@ -16,6 +16,25 @@ Returns a JWT maps access token that you use to call the service API.
 
 ##### Example
 
+**Request**:
+
+```None
+curl -si -H "Authorization: Bearer <maps_auth_token>" "https://maps-api.apple.com/v1/token"
+```
+
+**Response**:
+
+```json
+{
+  "accessToken": "<maps_access_token>",
+  "expiresInSeconds": 1800
+}
+```
+
+## Endpoint
+
+`GET https://maps-api.apple.com/v1/token`
+
 ## See Also
 
 - [Creating and using tokens with Maps Server API](creating-and-using-tokens-with-maps-server-api.md)

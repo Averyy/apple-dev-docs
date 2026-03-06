@@ -12,6 +12,11 @@
 object BundleIdWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (BundleId) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BundleId](bundleid.md)

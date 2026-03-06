@@ -44,6 +44,17 @@ The `summary` object appears in the [`responseBodyV2DecodedPayload`](responsebod
 - [type succeededCount](succeededcount.md)
   The count of subscriptions that successfully receive a subscription-renewal-date extension.
 
+## Properties
+
+- `requestIdentifier` (requestIdentifier): The `UUID` that represents a specific request to extend a subscription renewal date. This value matches the value you initially specify in the `requestIdentifier` when you call [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+- `environment` (environment): The server environment that the notification applies to, either `sandbox` or `production`.
+- `appAppleId` (appAppleId): The unique identifier of the app that the notification applies to. This property is available for apps that users download from the App Store. It isn’t present in the sandbox environment.
+- `bundleId` (bundleId): The bundle identifier of the app.
+- `productId` (productId): The product identifier of the auto-renewable subscription that the subscription-renewal-date extension applies to.
+- `storefrontCountryCodes` (storefrontCountryCodes): A list of country codes that limits the App Store’s attempt to apply the subscription-renewal-date extension. If this list isn’t present, the subscription-renewal-date extension applies to all storefronts.
+- `failedCount` (failedCount): The final count of subscriptions that fail to receive a subscription-renewal-date extension.
+- `succeededCount` (succeededCount): The final count of subscriptions that successfully receive a subscription-renewal-date extension.
+
 ## See Also
 
 - [object data](data.md)

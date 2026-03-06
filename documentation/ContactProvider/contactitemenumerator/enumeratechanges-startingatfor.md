@@ -25,7 +25,7 @@ Your implementation can enumerate items in any order, but that order must be det
 ## Parameters
 
 - `syncAnchor`: The sync anchor to enumerate changed items from.
-- `observer`: The system observer that receives the change items and   enumeration state.
+- `observer`: The system observer that receives the change items and enumeration state.
 
 ## See Also
 

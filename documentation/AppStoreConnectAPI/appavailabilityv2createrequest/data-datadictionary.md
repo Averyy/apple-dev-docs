@@ -18,6 +18,12 @@ object AppAvailabilityV2CreateRequest.Data
 - [object AppAvailabilityV2CreateRequest.Data.Attributes](appavailabilityv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object AppAvailabilityV2CreateRequest.Data.Relationships](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppAvailabilityV2CreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppAvailabilityV2CreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

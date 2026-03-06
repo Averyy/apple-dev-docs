@@ -17,6 +17,11 @@ object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -18,6 +18,14 @@ object InAppPurchaseLocalization
 - [object InAppPurchaseLocalization.Attributes](inapppurchaselocalization/attributes-data.dictionary.md)
 - [object InAppPurchaseLocalization.Relationships](inapppurchaselocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (InAppPurchaseLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchaseLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseContentResponse](inapppurchasecontentresponse.md)

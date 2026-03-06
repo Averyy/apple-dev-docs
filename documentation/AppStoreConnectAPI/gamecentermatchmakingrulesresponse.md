@@ -14,6 +14,12 @@ The response body for endpoints that get multiple rules.
 object GameCenterMatchmakingRulesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterMatchmakingRule]) *(required)*: The rules that the endpoint gets.
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingRuleSetCreateRequest](gamecentermatchmakingrulesetcreaterequest.md)

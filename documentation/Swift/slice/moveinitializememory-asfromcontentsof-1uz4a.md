@@ -34,7 +34,7 @@ This method initializes the buffer slice with the contents of `source` until `so
 ## Parameters
 
 - `type`: The type of element to which this buffer’s memory will be bound.
-- `source`: A buffer referencing the values to copy.   The memory region underlying   must be initialized.   The memory regions referenced by   and this buffer may overlap.
+- `source`: A buffer referencing the values to copy. The memory region underlying `source` must be initialized. The memory regions referenced by `source` and this buffer may overlap.
 
 
 ---

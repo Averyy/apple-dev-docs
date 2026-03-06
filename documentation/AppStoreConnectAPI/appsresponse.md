@@ -14,6 +14,13 @@ A response that contains a list of Apps resources.
 object AppsResponse
 ```
 
+## Properties
+
+- `data` ([App]) *(required)*: The resource data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): Paging information.
+- `included` ([*])
+
 ## See Also
 
 - [List Apps](get-v1-apps.md)

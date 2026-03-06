@@ -43,6 +43,18 @@ You can often improve the overall response time to the user’s request by provi
 - [object AddMediaIntentHandlingHandleInvocationResponse](addmediaintenthandlinghandleinvocationresponse.md)
   Your service’s response to a request to handle a fully resolved add media intent.
 
+## Endpoint
+
+`POST https://cloudextension-testservice.local/api/intent/addMedia`
+
+## Parameters
+
+- `Accept-Language` (string) *(required)*: The client’s current user interface language. Respond with localized content for this language, if available.
+- `Request-Timeout` (uint32) *(required)*: An approximate deadline, in seconds, for processing this real-time user request. The [`Session`](session.md) object provides the exact deadline for handling an intent.
+- `User-Agent` (string) *(required)*: The extension protocol running on the client. This is an RFC 7231-compliant string that contains the product name *AppleCloudExtension* and the SiriKit Extension library version running on the client.
+- `x-applecloudextension-retry-count` (uint32): The number of previous requests from the client.
+- `x-applecloudextension-session-id` (string) *(required)*: A constant session identifier to include in each request and response. Respond to each request with the same session ID the client sends in that request.
+
 ## Request Body
 
 An array of requests to process intents.

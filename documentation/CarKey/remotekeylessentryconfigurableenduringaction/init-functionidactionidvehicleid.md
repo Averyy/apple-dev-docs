@@ -28,9 +28,9 @@ This method creates an immutable action object that you can pass to your session
 
 ## Parameters
 
-- `functionID`: The vehicle-specific code that identifies the   feature to activate. For example, the vehicle might have a   specific code to identify the roof mechanism on a convertible vehicle.
-- `actionID`: The vehicle-specific code that defines what action   to take on the vehicle feature. For example, a vehicle might have   separate actions to raise or lower the top on a convertible.
-- `vehicleID`: The target vehicle for the action. Choose the vehicle   from one of the session’s vehicle reports. Specify the string   in the   property of the corresponding report.
+- `functionID`: The vehicle-specific code that identifies the feature to activate. For example, the vehicle might have a specific code to identify the roof mechanism on a convertible vehicle.
+- `actionID`: The vehicle-specific code that defines what action to take on the vehicle feature. For example, a vehicle might have separate actions to raise or lower the top on a convertible.
+- `vehicleID`: The target vehicle for the action. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](vehiclereport/identifier.md) property of the corresponding report.
 
 
 ---

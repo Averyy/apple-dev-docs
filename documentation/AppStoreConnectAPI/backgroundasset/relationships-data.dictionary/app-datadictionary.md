@@ -17,6 +17,10 @@ object BackgroundAsset.Relationships.App
 ### Dictionaries
 - [object BackgroundAsset.Relationships.App.Data](backgroundasset/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BackgroundAsset.Relationships.App.Data)
+
 
 ---
 

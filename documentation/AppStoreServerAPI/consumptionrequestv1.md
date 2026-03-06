@@ -24,7 +24,7 @@ Use `ConsumptionRequestV1` to provide information about the customer’s consuma
 
 To create a valid request and avoid an `HTTP 400 Bad Request` error, [`ConsumptionRequestV1`](consumptionrequestv1.md) must contain all the required fields with proper data types and valid values. However, you can choose whether or not to provide information for most fields. Most fields have a valid option if you choose not to provide the information.
 
-> **Note**:  Use the field value for , where available, if you choose not to provide information.
+> **Note**:  Use the field value for *undeclared*, where available, if you choose not to provide information.
 
 For example, if you choose not to provide information for the [`accountTenure`](accounttenure.md) field, set [`accountTenure`](accounttenure.md) to `0`. If you choose not to provide information for the [`appAccountToken`](appaccounttoken.md) field, set its value to an empty string. Refer to each field’s documentation for the list of valid values, including the undeclared value where available.
 
@@ -70,6 +70,21 @@ For more information about App Store Server Notifications versions, see [`App St
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
 - [type userStatus](userstatus.md)
   The status of a customer’s account within your app.
+
+## Properties
+
+- `accountTenure` (accountTenure): **(Required)** The age of the customer’s account.
+- `appAccountToken` (appAccountToken): **(Required)** The UUID of the in-app user account that completed the in-app purchase transaction.
+- `consumptionStatus` (consumptionStatus): **(Required)** A value that indicates the extent to which the customer consumed the in-app purchase.
+- `customerConsented` (customerConsented): **(Required)** A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data. Note: The App Store server rejects requests that have a [`customerConsented`](customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md).
+- `deliveryStatus` (deliveryStatusV1): **(Required)** A value that indicates whether the app successfully delivered an in-app purchase that works properly.
+- `lifetimeDollarsPurchased` (lifetimeDollarsPurchased): **(Required)** A value that indicates the total amount, in USD, of in-app purchases the customer has made in your app, across all platforms.
+- `lifetimeDollarsRefunded` (lifetimeDollarsRefunded): **(Required)** A value that indicates the total amount, in USD, of refunds the customer has received, in your app, across all platforms.
+- `platform` (platform): **(Required)** A value that indicates the platform on which the customer consumed the in-app purchase.
+- `playTime` (playTime): **(Required)** A value that indicates the amount of time that the customer used the app.
+- `refundPreference` (refundPreferenceV1): A value that indicates your preference, based on your operational logic, as to whether Apple should grant the refund.
+- `sampleContentProvided` (sampleContentProvided): **(Required)** A Boolean value of `true` or `false` that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
+- `userStatus` (userStatus): **(Required)** The status of the customer’s account.
 
 ## See Also
 

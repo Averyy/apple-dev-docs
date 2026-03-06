@@ -20,6 +20,13 @@ object Artists.Views.ArtistsFeaturedPlaylistsView
 - [object Artists.Views.ArtistsFeaturedPlaylistsView.Attributes](artists/views-data.dictionary/artistsfeaturedplaylistsview/attributes-data.dictionary.md)
   Relevant playlists associated with the artist.
 
+## Properties
+
+- `href` (string): A relative location for the view.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the view if more exist.
+- `attributes` (Artists.Views.ArtistsFeaturedPlaylistsView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Playlists]) *(required)*: Relevant playlists associated with the artist.
+
 ## See Also
 
 - [object Artists.Views.ArtistsAppearsOnAlbumsView](artists/views-data.dictionary/artistsappearsonalbumsview.md)

@@ -12,6 +12,14 @@ Update the display name and description for a specific locale of an in-app purch
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/inAppPurchaseLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [List All Localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)

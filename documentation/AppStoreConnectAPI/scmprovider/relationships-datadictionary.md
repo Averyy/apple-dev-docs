@@ -17,6 +17,10 @@ object ScmProvider.Relationships
 ### Dictionaries
 - [object ScmProvider.Relationships.Repositories](scmprovider/relationships-data.dictionary/repositories-data.dictionary.md)
 
+## Properties
+
+- `repositories` (ScmProvider.Relationships.Repositories)
+
 
 ---
 

@@ -18,6 +18,11 @@ object GameCenterChallengeUpdateRequest.Data.Relationships
 - [object GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard](gamecenterchallengeupdaterequest/data-data.dictionary/relationships-data.dictionary/leaderboard-data.dictionary.md)
 - [object GameCenterChallengeUpdateRequest.Data.Relationships.LeaderboardV2](gamecenterchallengeupdaterequest/data-data.dictionary/relationships-data.dictionary/leaderboardv2-data.dictionary.md)
 
+## Properties
+
+- `leaderboard` (GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard)
+- `leaderboardV2` (GameCenterChallengeUpdateRequest.Data.Relationships.LeaderboardV2)
+
 
 ---
 

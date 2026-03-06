@@ -12,6 +12,68 @@ Add a localization for your app custom product page.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+POST https://appstoreconnect.apple.com/v1/appCustomProductPageLocalizations
+{
+    "data": {
+        "type": "appCustomProductPageLocalizations",
+        "attributes": {
+            "locale": "en-CA",
+            "promotionalText": "There will be so much fun."
+        },
+        "relationships": {
+            "appCustomProductPageVersion": {
+                "data": {
+                    "type": "appCustomProductPageVersions",
+                    "id": "46e3a412-7248-43f8-a6bf-cf445eafa3ef"
+                }
+            }
+        }
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+  "data" : {
+    "type" : "appCustomProductPageLocalizations",
+    "id" : "0ff34f9c-e2f9-4317-a3e5-44e012c2ffbc",
+    "attributes" : {
+      "locale" : "en-CA",
+      "promotionalText" : "There will be so much fun."
+    },
+    "relationships" : {
+      "appScreenshotSets" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/0ff34f9c-e2f9-4317-a3e5-44e012c2ffbc/relationships/appScreenshotSets",
+          "related" : "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/0ff34f9c-e2f9-4317-a3e5-44e012c2ffbc/appScreenshotSets"
+        }
+      },
+      "appPreviewSets" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/0ff34f9c-e2f9-4317-a3e5-44e012c2ffbc/relationships/appPreviewSets",
+          "related" : "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/0ff34f9c-e2f9-4317-a3e5-44e012c2ffbc/appPreviewSets"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations/0ff34f9c-e2f9-4317-a3e5-44e012c2ffbc"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations"
+  }
+}
+```
+
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations`
+
 ## See Also
 
 - [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)

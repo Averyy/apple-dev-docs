@@ -18,6 +18,12 @@ object GameCenterChallengeImageUpdateRequest.Data
 - [object GameCenterChallengeImageUpdateRequest.Data.Attributes](gamecenterchallengeimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
 
+## Properties
+
+- `attributes` (GameCenterChallengeImageUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

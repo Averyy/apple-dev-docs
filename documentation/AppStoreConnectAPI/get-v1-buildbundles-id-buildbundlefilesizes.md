@@ -8,6 +8,15 @@ Get all file sizes for a specific build bundle.
 **Availability**:
 - App Store Connect API 1.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/buildBundles/{id}/buildBundleFileSizes`
+
+## Parameters
+
+- `fields[buildBundleFileSizes]` ([string]): Additional fields to include for each Build Bundle File Sizes resource returned by the response.
+- `limit` (integer): The number of Build Bundle File Sizes resources to return.
+
 ## See Also
 
 - [Read the App Clip Domain Cache Status Information for a Build Bundle](get-v1-buildbundles-_id_-appclipdomaincachestatus.md)

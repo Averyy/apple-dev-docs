@@ -14,6 +14,11 @@ The type and ID of a related Repositories resource that represents the productâ€
 object CiProduct.Relationships.PrimaryRepositories.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Repositories resource that represents the primary repository.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

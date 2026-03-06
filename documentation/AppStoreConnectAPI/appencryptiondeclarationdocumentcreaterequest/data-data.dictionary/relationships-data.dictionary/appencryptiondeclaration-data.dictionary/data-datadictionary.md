@@ -14,6 +14,11 @@ The request body you use to update an app encryption declaration document create
 object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

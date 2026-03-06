@@ -22,6 +22,14 @@ object EndUserLicenseAgreement
 - [object EndUserLicenseAgreement.Relationships](enduserlicenseagreement/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (EndUserLicenseAgreement.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (EndUserLicenseAgreement.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object EndUserLicenseAgreementCreateRequest](enduserlicenseagreementcreaterequest.md)

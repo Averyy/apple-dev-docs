@@ -22,7 +22,7 @@ subscript(bounds: Range<Range<Bound>.Index>) -> Range<Bound> { get }
 
 ## Parameters
 
-- `bounds`: A range of the range’s indices. The upper and lower   bounds of the   range must be valid indices of the collection.
+- `bounds`: A range of the range’s indices. The upper and lower bounds of the `bounds` range must be valid indices of the collection.
 
 
 ---

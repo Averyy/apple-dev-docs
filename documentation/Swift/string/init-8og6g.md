@@ -36,7 +36,7 @@ print(disemvoweled)
 
 ## Parameters
 
-- `characters`: A string instance or another sequence of   characters.
+- `characters`: A string instance or another sequence of characters.
 
 ## See Also
 

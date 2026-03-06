@@ -26,7 +26,7 @@ The modified regular expression.
 
 ## Parameters
 
-- `dotMatchesNewlines`: A Boolean value indicating whether    should match a newline character.
+- `dotMatchesNewlines`: A Boolean value indicating whether `.` should match a newline character.
 
 
 ---

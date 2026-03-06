@@ -42,7 +42,7 @@ struct HandLocation
 
 ## See Also
 
-- [Happy Beam](../visionos/happybeam.md)
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [AnchoringComponent.Target.Chirality](anchoringcomponent/target-swift.enum/chirality.md)
   Defines the chirality of tracked hands to look for.

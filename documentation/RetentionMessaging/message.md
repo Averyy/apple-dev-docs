@@ -20,6 +20,10 @@ In your [`RealtimeResponseBody`](realtimeresponsebody.md) real-time response, yo
 
 The message identifier needs to refer to a message that has a [`messageState`](messagestate.md) of `APPROVED`; otherwise, the retention message fails. If the message includes an image, the image also needs to have an [`imageState`](imagestate.md) of `APPROVED`. For more information about setting up messages, see [`Setting up retention messages`](setting-up-retention-messages.md).
 
+## Properties
+
+- `messageIdentifier` (messageIdentifier): The identifier of the message to display to the customer.
+
 ## See Also
 
 - [object alternateProduct](alternateproduct.md)

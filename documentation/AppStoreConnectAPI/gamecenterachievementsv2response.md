@@ -21,6 +21,13 @@ object GameCenterAchievementsV2Response
 - links:
 - meta:
 
+## Properties
+
+- `data` ([GameCenterAchievementV2]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

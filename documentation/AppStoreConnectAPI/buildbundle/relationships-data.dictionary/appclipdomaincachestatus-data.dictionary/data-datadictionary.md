@@ -14,6 +14,11 @@ The type and ID of a related App Clip Domain Cache Status resource.
 object BuildBundle.Relationships.AppClipDomainCacheStatus.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Clip Domain Cache Statuses resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

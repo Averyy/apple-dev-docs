@@ -20,7 +20,7 @@ A direction type that faces the specified position in the coordinate space.
 
 ## Parameters
 
-- `position`: A location in the shared coordinate space. Specify   positions as an offset from the app’s content using the    type.
+- `position`: A location in the shared coordinate space. Specify positions as an offset from the app’s content using the [`SpatialTemplateElementPosition`](spatialtemplateelementposition.md) type.
 
 ## See Also
 

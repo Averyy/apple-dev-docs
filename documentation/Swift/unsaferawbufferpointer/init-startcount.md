@@ -22,8 +22,8 @@ init(start: UnsafeRawPointer?, count: Int)
 
 ## Parameters
 
-- `start`: The address of the memory that starts the buffer. If    is  ,   must be zero. However,   may be zero even   for a non-   .
-- `count`: The number of bytes to include in the buffer.   must not   be negative.
+- `start`: The address of the memory that starts the buffer. If `starts` is `nil`, `count` must be zero. However, `count` may be zero even for a non-`nil` `start`.
+- `count`: The number of bytes to include in the buffer. `count` must not be negative.
 
 
 ---

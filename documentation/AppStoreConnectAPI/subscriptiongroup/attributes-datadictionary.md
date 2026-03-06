@@ -12,6 +12,10 @@
 object SubscriptionGroup.Attributes
 ```
 
+## Properties
+
+- `referenceName` (string)
+
 ## See Also
 
 - [object SubscriptionGroup.Relationships](subscriptiongroup/relationships-data.dictionary.md)

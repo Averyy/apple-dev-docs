@@ -14,6 +14,11 @@ The type and ID of a related macOS Versions resource.
 object CiWorkflow.Relationships.MacOsVersion.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related macOS Versions resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

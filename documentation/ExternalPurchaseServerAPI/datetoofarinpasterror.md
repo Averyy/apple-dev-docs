@@ -18,6 +18,13 @@ object DateTooFarInPastError
 
 Report line items within three years of their [`creationDate`](creationdate.md).
 
+## Properties
+
+- `errorCode` (integer) *(required)*
+- `errorMessage` (string) *(required)*
+- `fieldName` (string) *(required)*
+- `lineItemId` (lineItemId)
+
 ## See Also
 
 - [object DuplicateTokenStatusNotAllowedError](duplicatetokenstatusnotallowederror.md)

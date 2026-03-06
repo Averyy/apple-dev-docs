@@ -12,6 +12,10 @@ Reserve an image asset to appear in the App Store, representing an in-app purcha
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseImages`
+
 ## See Also
 
 - [Read in-app purchase image information](get-v1-inapppurchaseimages-_id_.md)

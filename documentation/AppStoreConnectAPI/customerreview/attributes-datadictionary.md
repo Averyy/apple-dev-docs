@@ -20,6 +20,15 @@ object CustomerReview.Attributes
 - [type TerritoryCode](territorycode.md)
   The App Store territory codes.
 
+## Properties
+
+- `body` (string): The review text that the customer wrote.
+- `createdDate` (date-time): The date and time the customer created the review.
+- `rating` (integer): The rating the customer provided.
+- `reviewerNickname` (string): The customer’s nickname used in the review.
+- `title` (string): The title that the customer wrote for the review.
+- `territory` (TerritoryCode): The App Store territory.
+
 ## See Also
 
 - [object CustomerReview.Relationships](customerreview/relationships-data.dictionary.md)

@@ -20,6 +20,12 @@ object LibraryPlaylistsTracksRelationshipResponse
 - [object LibraryPlaylistsTracksRelationshipResponse.Meta](libraryplayliststracksrelationshipresponse/meta-data.dictionary.md)
   An object that represents the meta information for response to a library playlists tracks relationship request.
 
+## Properties
+
+- `data` ([*]) *(required)*: The [`Songs`](songs.md) or [`MusicVideos`](musicvideos.md) included in the response for the request.
+- `meta` (LibraryPlaylistsTracksRelationshipResponse.Meta): Meta data for this object.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+
 ## See Also
 
 - [object Playlists](playlists.md)

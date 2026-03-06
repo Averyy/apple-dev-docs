@@ -12,6 +12,11 @@
 object AppMarketplaceSearchDetailLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

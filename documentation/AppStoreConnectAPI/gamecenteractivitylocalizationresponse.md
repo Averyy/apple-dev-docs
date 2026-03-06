@@ -14,6 +14,12 @@ A response that contains a single activity localization resource.
 object GameCenterActivityLocalizationResponse
 ```
 
+## Properties
+
+- `data` (GameCenterActivityLocalization) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)

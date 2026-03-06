@@ -26,7 +26,7 @@ This is identical to `init(cString: UnsafePointer<CChar>)` but operates on an un
 
 ## Parameters
 
-- `nullTerminatedUTF8`:    A pointer to a null-terminated sequence of UTF-8 code units.
+- `nullTerminatedUTF8`:  A pointer to a null-terminated sequence of UTF-8 code units.
 
 ## See Also
 

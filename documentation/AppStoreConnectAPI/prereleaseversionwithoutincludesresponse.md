@@ -12,6 +12,11 @@
 object PrereleaseVersionWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` (PrereleaseVersion) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object PrereleaseVersion](prereleaseversion.md)

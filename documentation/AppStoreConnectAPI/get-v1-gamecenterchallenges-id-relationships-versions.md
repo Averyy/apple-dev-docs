@@ -8,6 +8,14 @@ Get challenge information for a specific Game Center group.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterChallenges/{id}/relationships/versions`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Create a challenge version](post-v1-gamecenterchallengeversions.md)

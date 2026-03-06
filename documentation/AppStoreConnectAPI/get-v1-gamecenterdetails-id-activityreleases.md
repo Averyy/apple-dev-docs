@@ -12,6 +12,17 @@ List all activity release information for a specific Game Center detail.
 
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/activityReleases`
+
+## Parameters
+
+- `fields[gameCenterActivityVersionReleases]` ([string])
+- `fields[gameCenterActivityVersions]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Get activity release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-activityreleases.md)

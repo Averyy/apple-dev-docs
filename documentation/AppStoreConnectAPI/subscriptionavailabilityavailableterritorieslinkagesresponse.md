@@ -17,6 +17,12 @@ object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse
 ### Dictionaries
 - [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse.Data](subscriptionavailabilityavailableterritorieslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionAvailability](subscriptionavailability.md)

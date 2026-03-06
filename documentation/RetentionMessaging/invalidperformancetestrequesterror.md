@@ -14,6 +14,11 @@ An error the API returns that indicates the performance test request is invalid.
 object InvalidPerformanceTestRequestError
 ```
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

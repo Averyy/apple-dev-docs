@@ -20,6 +20,10 @@ object BetaGroupUpdateRequest
 - [object BetaGroupUpdateRequest.Data](betagroupupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (BetaGroupUpdateRequest.Data) *(required)*: The resource data.
+
 ## See Also
 
 - [object BetaGroup](betagroup.md)

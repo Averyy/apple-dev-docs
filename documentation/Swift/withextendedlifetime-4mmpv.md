@@ -26,8 +26,8 @@ The return value, if any, of the `body` closure parameter.
 
 ## Parameters
 
-- `x`: An instance to preserve until the execution of   is completed.
-- `body`: A closure to execute that depends on the lifetime of   being   extended. If   has a return value, that value is also used as the   return value for the   method.
+- `x`: An instance to preserve until the execution of `body` is completed.
+- `body`: A closure to execute that depends on the lifetime of `x` being extended. If `body` has a return value, that value is also used as the return value for the `withExtendedLifetime(_:_:)` method.
 
 ## See Also
 

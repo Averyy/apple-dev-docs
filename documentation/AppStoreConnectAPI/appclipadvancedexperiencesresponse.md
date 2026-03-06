@@ -14,6 +14,13 @@ A response that contains a list of Advanced App Clip Experiences resources.
 object AppClipAdvancedExperiencesResponse
 ```
 
+## Properties
+
+- `data` ([AppClipAdvancedExperience]) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object AppClip](appclip.md)

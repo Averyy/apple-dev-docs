@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: method
 
-Translates a single attributed string of text.
+Translates a formatted string of text, preserving formatting in the translation.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -19,9 +19,11 @@ func translate(_ string: AttributedString) async throws -> TranslationSession.Re
 
 #### Return Value
 
-The response containing the text translation.
+The response that contains the text translation with formatting preserved.
 
 #### Discussion
+
+Use this method to translate text that includes formatting like bold text or links, and preserve that formatting in the translated result. The framework aligns formatting between the source and target languages so that formatted words in the source remain formatted in the translation.
 
 This function translates a single line of text and might display different UI depending on the state of the translation. The required languages for translation don’t have to be installed before calling this method.
 
@@ -29,7 +31,7 @@ If the required languages for translation have already downloaded and the source
 
 If the source or target language aren’t installed, the framework asks the person for permission to download the languages. During the download a progress indicator displays. After it completes, the framework performs the translation.
 
-If the `sourceLanguage` is `nil` and the framework can’t detect the source language from the content, the framework prompts the person to choose the source language.
+If the [`sourceLanguage`](translationsession/sourcelanguage.md) is `nil` and the framework can’t detect it from the content, the framework prompts the person to choose the source language.
 
 This function throws an `Error` if:
 
@@ -46,7 +48,7 @@ If a person dismisses the progress view while the languages download, the system
 
 ## Parameters
 
-- `string`: An attributed string of text to translate.
+- `string`: The formatted text to translate.
 
 ## See Also
 

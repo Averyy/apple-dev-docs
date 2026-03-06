@@ -12,6 +12,11 @@
 object AppPriceV2.Relationships.AppPricePoint.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

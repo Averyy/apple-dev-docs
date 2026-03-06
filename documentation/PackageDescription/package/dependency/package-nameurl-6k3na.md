@@ -20,9 +20,9 @@ A `Package.Dependency` instance.
 
 ## Parameters
 
-- `name`: The name of the Swift package or   to deduce the name from the package’s Git URL.
+- `name`: The name of the Swift package or `nil` to deduce the name from the package’s Git URL.
 - `url`: The valid Git URL of the package.
-- `requirement`: A dependency requirement. See static methods on    for available options.
+- `requirement`: A dependency requirement. See static methods on [`Package.Dependency.Requirement`](package/dependency/requirement-swift.enum.md) for available options.
 
 ## See Also
 

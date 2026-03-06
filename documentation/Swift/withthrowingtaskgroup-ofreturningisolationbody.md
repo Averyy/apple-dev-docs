@@ -23,7 +23,7 @@ func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of childTaskResultType:
 
 #### Discussion
 
-A group  waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
+A group *always* waits for all of its child tasks to complete before it returns. Even canceled tasks must run until completion before this function returns. Canceled child tasks cooperatively react to cancellation and attempt to return as early as possible. After this function returns, the task group is always empty.
 
 To collect the results of the group’s child tasks, you can use a `for`-`await`-`in` loop:
 

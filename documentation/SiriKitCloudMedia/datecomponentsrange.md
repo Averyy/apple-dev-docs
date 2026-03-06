@@ -14,6 +14,11 @@ A period of time from a specified start date to a specified end date.
 object DateComponentsRange
 ```
 
+## Properties
+
+- `startDateComponents` (DateComponents): The start date of the range.
+- `endDateComponents` (DateComponents): The end date of the range.
+
 ## See Also
 
 - [type DateComponents](datecomponents.md)

@@ -14,6 +14,10 @@ Attributes that describe an End User License Agreements resource.
 object EndUserLicenseAgreement.Attributes
 ```
 
+## Properties
+
+- `agreementText` (string)
+
 ## See Also
 
 - [object EndUserLicenseAgreement.Relationships](enduserlicenseagreement/relationships-data.dictionary.md)

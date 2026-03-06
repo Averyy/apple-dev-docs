@@ -18,6 +18,14 @@ object GameCenterAchievementLocalization
 - [object GameCenterAchievementLocalization.Attributes](gamecenterachievementlocalization/attributes-data.dictionary.md)
 - [object GameCenterAchievementLocalization.Relationships](gamecenterachievementlocalization/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterAchievementLocalization.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterAchievementLocalization.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)

@@ -17,6 +17,12 @@ object PromotedPurchaseUpdateRequest.Data
 ### Objects
 - [object PromotedPurchaseUpdateRequest.Data.Attributes](promotedpurchaseupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (PromotedPurchaseUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

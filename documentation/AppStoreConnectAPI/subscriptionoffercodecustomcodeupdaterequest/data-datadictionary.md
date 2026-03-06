@@ -17,6 +17,12 @@ object SubscriptionOfferCodeCustomCodeUpdateRequest.Data
 ### Objects
 - [object SubscriptionOfferCodeCustomCodeUpdateRequest.Data.Attributes](subscriptionoffercodecustomcodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (SubscriptionOfferCodeCustomCodeUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

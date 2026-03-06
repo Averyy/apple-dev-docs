@@ -6,7 +6,7 @@
 Get a customer’s in-app purchases from a receipt using the order ID.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Mentions
 
@@ -32,6 +32,14 @@ The App Store Server API returns information based on the customer’s in-app pu
 ### Request data types
 - [type orderId](orderid.md)
   The customer’s order ID from an App Store receipt for in-app purchases.
+
+## Endpoint
+
+`GET https://api.storekit.itunes.apple.com/inApps/v1/lookup/{orderId}`
+
+## Parameters
+
+- `orderId` (orderId) *(required)*: The order ID for in-app purchases that belong to the customer.
 
 ## See Also
 

@@ -37,7 +37,7 @@ Local network privacy on macOS shares all of the same core concepts, but there a
 
 Local network privacy regulates your program’s ability to perform local network operations.  If your program has local network access, the system allows the operation.  If not, the system blocks it.
 
-> **Note**: See [`Local network operations`](tn3179-understanding-local-network-privacy#Local-network-operations.md) for more precise definitions of  and .
+> **Note**: See [`Local network operations`](tn3179-understanding-local-network-privacy#Local-network-operations.md) for more precise definitions of *local network* and *local network operation*.
 
 In most cases, the user controls local network access by way of the Local Network privilege.  This has three states:
 
@@ -185,7 +185,7 @@ The simulator doesn’t support local network privacy.  Test your local network 
 
 On Shared iPad, all users share the same local network privacy state.
 
-It  possible for your app to trigger the local network alert when the device is “off Wi-Fi”, that is, when there’s no Wi-Fi symbol in the status bar.  An easy way to demonstrate this is to perform a Bonjour operation with peer-to-peer Wi-Fi enabled, but there lots of other ways this can happen.
+It *is* possible for your app to trigger the local network alert when the device is “off Wi-Fi”, that is, when there’s no Wi-Fi symbol in the status bar.  An easy way to demonstrate this is to perform a Bonjour operation with peer-to-peer Wi-Fi enabled, but there lots of other ways this can happen.
 
 The above is true regardless of whether the device has cellular networking or not.
 
@@ -452,16 +452,16 @@ The reports from these users might suggest that local network privacy is misbeha
 
 In many cases you can avoid this problem by reworking your code.  For example, if you’re building a custom service discovery protocol on top of UDP broadcasts, life will be easier if you use Bonjour instead.  For more information about Bonjour, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
-If you can’t use Bonjour—perhaps you’re working with an accessory with legacy firmware—run your service discovery code on  broadcast-capable interfaces.  Not only does that avoid this problem, but folks who have their devices plugged into Ethernet will love you forever!
+If you can’t use Bonjour—perhaps you’re working with an accessory with legacy firmware—run your service discovery code on *all* broadcast-capable interfaces.  Not only does that avoid this problem, but folks who have their devices plugged into Ethernet will love you forever!
 
 If you must work with a specific type of interface, call `getifaddrs` to get the full interface list and then filter that list by the interface type.  Get the functional type of the interface using the `SIOCGIFFUNCTIONALTYPE` ioctl.
 
 #### Revision History
 
--  Updated the  section to explain how to configure local network privacy on specific networks (r. 161891509).  Moved version-specific information into the  section.  Made other minor editorial changes.
--  Added information about two bugs (FB14321888, FB16131937). Updated the  section to cover macOS code signing.
--  Rewritten and republished as TN3179.
--  First posted as the  on the Apple Developer Forums.
+- **2026-02-17** Updated the *macOS considerations* section to explain how to configure local network privacy on specific networks (r. 161891509).  Moved version-specific information into the *Historical considerations* section.  Made other minor editorial changes.
+- **2025-07-18** Added information about two bugs (FB14321888, FB16131937). Updated the *Build-time considerations* section to cover macOS code signing.
+- **2024-10-31** Rewritten and republished as TN3179.
+- **2020-10-16** First posted as the *Local Network Privacy FAQ* on the Apple Developer Forums.
 
 ## See Also
 

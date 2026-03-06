@@ -20,6 +20,12 @@ object AppClipDefaultExperienceLocalizationUpdateRequest.Data
 - [object AppClipDefaultExperienceLocalizationUpdateRequest.Data.Attributes](appclipdefaultexperiencelocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the Default App Clip Experience Localizations resource.
 
+## Properties
+
+- `attributes` (AppClipDefaultExperienceLocalizationUpdateRequest.Data.Attributes): The attributes that describes the request that updates a Default App Clip Experience Localizations resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the request.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

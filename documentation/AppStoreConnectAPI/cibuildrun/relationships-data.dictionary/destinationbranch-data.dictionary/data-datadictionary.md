@@ -14,6 +14,11 @@ The type and ID of a related Git References resource that represents the build r
 object CiBuildRun.Relationships.DestinationBranch.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Git References resource that represents the destination branch.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

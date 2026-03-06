@@ -14,6 +14,13 @@ A response that contains a list of Beta App Clip Invocations resources.
 object BetaAppClipInvocationsResponse
 ```
 
+## Properties
+
+- `data` ([BetaAppClipInvocation]) *(required)*: The resource data.
+- `included` ([BetaAppClipInvocationLocalization]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object BuildBundle](buildbundle.md)

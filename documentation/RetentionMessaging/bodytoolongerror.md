@@ -18,6 +18,11 @@ object BodyTooLongError
 
 When calling [`Upload Message`](upload-message.md), provide a maximum of 144 characters.
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

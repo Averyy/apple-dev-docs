@@ -22,6 +22,12 @@ object AppEncryptionDeclaration.Relationships
 - [object AppEncryptionDeclaration.Relationships.Builds](appencryptiondeclaration/relationships-data.dictionary/builds-data.dictionary.md)
 - [object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument](appencryptiondeclaration/relationships-data.dictionary/appencryptiondeclarationdocument-data.dictionary.md)
 
+## Properties
+
+- `app` (AppEncryptionDeclaration.Relationships.App)
+- `appEncryptionDeclarationDocument` (AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument)
+- `builds` (AppEncryptionDeclaration.Relationships.Builds)
+
 ## See Also
 
 - [object AppEncryptionDeclaration.Attributes](appencryptiondeclaration/attributes-data.dictionary.md)

@@ -14,6 +14,10 @@ The response to a songs request.
 object SongsResponse
 ```
 
+## Properties
+
+- `data` ([Songs]) *(required)*: The [`Songs`](songs.md) included in the response for the request.
+
 ## See Also
 
 - [object Songs](songs.md)

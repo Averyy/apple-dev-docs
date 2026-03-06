@@ -17,6 +17,12 @@ object MerchantIdCertificatesLinkagesResponse
 ### Dictionaries
 - [object MerchantIdCertificatesLinkagesResponse.Data](merchantidcertificateslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([MerchantIdCertificatesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object MerchantId](merchantid.md)

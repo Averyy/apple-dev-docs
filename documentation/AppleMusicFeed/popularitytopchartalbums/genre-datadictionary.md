@@ -35,6 +35,11 @@ The feed export is in Parquet format. This data example is in JSON format for il
 }
 ```
 
+## Properties
+
+- `name` (string): The name of the genre.
+- `path` ([string]): A list of genres in hierarchical order. For example, if `Classical` is a subgenre of `Music`, this value is `[‘Music’, ‘Classical’]`.
+
 ## See Also
 
 - [object PopularityTopChartAlbums.Rankings](popularitytopchartalbums/rankings-data.dictionary.md)

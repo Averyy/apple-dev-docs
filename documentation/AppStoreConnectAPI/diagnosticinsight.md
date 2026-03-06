@@ -19,6 +19,12 @@ object DiagnosticInsight
 ### Objects
 - [object DiagnosticInsight.ReferenceVersions](diagnosticinsight/referenceversions-data.dictionary.md)
 
+## Properties
+
+- `direction` (DiagnosticInsightDirection)
+- `insightType` (DiagnosticInsightType)
+- `referenceVersions` ([DiagnosticInsight.ReferenceVersions])
+
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)

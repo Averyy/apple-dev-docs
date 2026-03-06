@@ -12,6 +12,12 @@
 object BuildsWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([Build]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object Build](build.md)

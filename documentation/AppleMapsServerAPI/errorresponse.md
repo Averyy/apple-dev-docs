@@ -14,6 +14,11 @@ Information about an error that occurs while processing a request.
 object ErrorResponse
 ```
 
+## Properties
+
+- `details` ([string]): An array of strings with additional details about the error
+- `message` (string): A message that provides details about the error.
+
 
 ---
 

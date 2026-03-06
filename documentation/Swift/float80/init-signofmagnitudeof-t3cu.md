@@ -30,8 +30,8 @@ This initializer implements the IEEE 754 `copysign` operation.
 
 ## Parameters
 
-- `signOf`: A value from which to use the sign. The result of the   initializer has the same sign as  .
-- `magnitudeOf`: A value from which to use the magnitude. The result of   the initializer has the same magnitude as  .
+- `signOf`: A value from which to use the sign. The result of the initializer has the same sign as `signOf`.
+- `magnitudeOf`: A value from which to use the magnitude. The result of the initializer has the same magnitude as `magnitudeOf`.
 
 
 ---

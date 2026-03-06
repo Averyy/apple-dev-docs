@@ -14,6 +14,17 @@ Attributes that describe a Certificates resource.
 object Certificate.Attributes
 ```
 
+## Properties
+
+- `certificateContent` (string)
+- `displayName` (string)
+- `expirationDate` (date-time)
+- `name` (string)
+- `platform` (BundleIdPlatform)
+- `serialNumber` (string)
+- `certificateType` (CertificateType)
+- `activated` (boolean)
+
 
 ---
 

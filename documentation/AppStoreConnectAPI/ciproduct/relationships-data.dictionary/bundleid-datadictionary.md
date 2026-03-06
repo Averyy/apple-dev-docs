@@ -20,6 +20,10 @@ object CiProduct.Relationships.BundleId
 - [object CiProduct.Relationships.BundleId.Data](ciproduct/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Bundle IDs resource.
 
+## Properties
+
+- `data` (CiProduct.Relationships.BundleId.Data): The ID and type of the related Bundle IDs resource.
+
 ## See Also
 
 - [object CiProduct.Relationships.App](ciproduct/relationships-data.dictionary/app-data.dictionary.md)

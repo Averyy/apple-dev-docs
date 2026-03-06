@@ -8,6 +8,19 @@ Get information about a set price or prices for an in-app purchase price schedul
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/inAppPurchasePriceSchedules/{id}/manualPrices`
+
+## Parameters
+
+- `fields[inAppPurchasePricePoints]` ([string])
+- `fields[inAppPurchasePrices]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `filter[territory]` ([string])
+- `fields[territories]` ([string])
+
 ## See Also
 
 - [Read in-app purchase price schedule information](get-v1-inapppurchasepriceschedules-_id_.md)

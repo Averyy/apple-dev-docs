@@ -20,6 +20,11 @@ object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse
 - [object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result](playmediaintenthandlingresolveresumeplaybackinvocationresponse/result-data.dictionary.md)
   The result of resolving whether a play media intent resumes the current playback queue.
 
+## Properties
+
+- `result` (PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result) *(required)*: The result of processing the intent.
+- `method` (string) *(required)*: The action your service takes to process this intent.
+
 ## Relationships
 
 ### Inherits From

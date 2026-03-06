@@ -14,6 +14,11 @@ Attributes that describe an app store version experiment treatment create reques
 object AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `appIconName` (string)
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

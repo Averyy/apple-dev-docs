@@ -14,6 +14,12 @@ Attributes that describe an app store version experiment v2update request resour
 object AppStoreVersionExperimentV2UpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `started` (boolean)
+- `trafficProportion` (integer)
+
 
 ---
 

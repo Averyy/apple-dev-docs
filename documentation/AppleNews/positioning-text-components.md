@@ -8,6 +8,8 @@ Adjust the positions of the text components in your article—for example, place
 
 In [`Creating Your First Article`](creating-your-first-article.md), you added some text components and component text styles to your article.
 
+**On this page, you’ll learn how to control:**
+
 - Where text components are horizontally aligned
 - How wide the text components are
 - The vertical spacing between the text components

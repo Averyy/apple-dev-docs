@@ -26,7 +26,7 @@ A `RegexComponent` to match an ISO 8601 string.
 
 ## Parameters
 
-- `timeZone`: The time zone to create the captured   with.
+- `timeZone`: The time zone to create the captured `DateComponents` with.
 - `includingFractionalSeconds`: Specifies if the string contains fractional seconds.
 - `dateSeparator`: The separator between date components.
 - `dateTimeSeparator`: The separator between date and time parts.

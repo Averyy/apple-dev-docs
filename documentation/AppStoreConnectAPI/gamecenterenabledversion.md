@@ -22,6 +22,14 @@ object GameCenterEnabledVersion
 - [object GameCenterEnabledVersion.Relationships](gamecenterenabledversion/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (GameCenterEnabledVersion.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterEnabledVersion.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterEnabledVersionCompatibleVersionsLinkagesRequest](gamecenterenabledversioncompatibleversionslinkagesrequest.md)

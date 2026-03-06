@@ -33,7 +33,7 @@ str.removeSubranges(vowelIndices)
 // str == "Th rn n Spn stys mnly n th pln."
 ```
 
-> **Note**: O(), where  is the length of the collection.
+> **Note**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

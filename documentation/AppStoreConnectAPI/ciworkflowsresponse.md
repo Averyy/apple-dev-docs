@@ -14,6 +14,13 @@ A response that contains a list of Workflows resources.
 object CiWorkflowsResponse
 ```
 
+## Properties
+
+- `data` ([CiWorkflow]) *(required)*: The resource data.
+- `included` ([*]): The requested relationship data.
+- `links` (PagedDocumentLinks) *(required)*: The navigational links that include the self-link.
+- `meta` (PagingInformation): The paging information.
+
 ## See Also
 
 - [object CiWorkflow](ciworkflow.md)

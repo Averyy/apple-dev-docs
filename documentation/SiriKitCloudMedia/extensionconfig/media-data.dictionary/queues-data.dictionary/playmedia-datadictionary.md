@@ -20,6 +20,11 @@ object ExtensionConfig.Media.Queues.PlayMedia
 - [object ExtensionConfig.Media.Queues.PlayMedia.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to media endpoints.
 
+## Properties
+
+- `url` (string): The relative path for the client to access [`Get a Media Queue`](playmedia-1onzj.md).
+- `hdr` (ExtensionConfig.Media.Queues.PlayMedia.Hdr): Headers to include with requests to this endpoint.
+
 ## See Also
 
 - [object ExtensionConfig.Media.Queues.UpdateActivity](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary.md)

@@ -12,6 +12,14 @@
 object Actor.Attributes
 ```
 
+## Properties
+
+- `actorType` (string)
+- `apiKeyId` (string)
+- `userEmail` (string)
+- `userFirstName` (string)
+- `userLastName` (string)
+
 
 ---
 

@@ -14,6 +14,11 @@ The type and ID of the Repositories resource that you’re relating with the Wor
 object CiWorkflowCreateRequest.Data.Relationships.Repository.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Repositories resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

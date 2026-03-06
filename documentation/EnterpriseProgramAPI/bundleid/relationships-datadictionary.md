@@ -19,6 +19,11 @@ object BundleId.Relationships
 - [object BundleId.Relationships.Profiles](bundleid/relationships-data.dictionary/profiles-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `bundleIdCapabilities` (BundleId.Relationships.BundleIdCapabilities)
+- `profiles` (BundleId.Relationships.Profiles)
+
 
 ---
 

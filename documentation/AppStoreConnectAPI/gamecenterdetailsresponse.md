@@ -14,6 +14,13 @@ A response that contains a list of Game Center detail resources.
 object GameCenterDetailsResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterDetail]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)

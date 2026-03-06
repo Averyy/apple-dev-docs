@@ -18,6 +18,15 @@ object AppInfoLocalizationCreateRequest.Data.Attributes
 
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
+## Properties
+
+- `locale` (string) *(required)*: To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `name` (string) *(required)*
+- `privacyChoicesUrl` (string)
+- `privacyPolicyText` (string)
+- `privacyPolicyUrl` (string)
+- `subtitle` (string)
+
 ## See Also
 
 - [object AppInfoLocalizationCreateRequest.Data.Relationships](appinfolocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

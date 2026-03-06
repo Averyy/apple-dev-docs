@@ -30,8 +30,8 @@ The buffer pointer argument to the `body` closure provides a collection interfac
 
 ## Parameters
 
-- `value`: An instance to temporarily access through a mutable raw buffer   pointer.   Note that the   exclusivity rules mean that, like any other    argument,   cannot be directly accessed by other code   for the duration of  . Access must only occur through the pointer   argument to   until   returns.
-- `body`: A closure that takes a raw buffer pointer to the bytes of    as its sole argument. If the closure has a return value, that value is   also used as the return value of the    function. The buffer pointer argument is valid only for the duration   of the closure’s execution.
+- `value`: An instance to temporarily access through a mutable raw buffer pointer. Note that the `inout` exclusivity rules mean that, like any other `inout` argument, `value` cannot be directly accessed by other code for the duration of `body`. Access must only occur through the pointer argument to `body` until `body` returns.
+- `body`: A closure that takes a raw buffer pointer to the bytes of `value` as its sole argument. If the closure has a return value, that value is also used as the return value of the `withUnsafeMutableBytes(of:_:)` function. The buffer pointer argument is valid only for the duration of the closure’s execution.
 
 ## See Also
 

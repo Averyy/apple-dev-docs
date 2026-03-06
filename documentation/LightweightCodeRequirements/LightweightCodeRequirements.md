@@ -24,11 +24,28 @@ Code that is cryptographically signed carries tamper-proof statements about its 
 
 The keywords you use to test code properties in the lightweight code requirement DSL are:
 
+- **[`CodeDirectoryHash`](codedirectoryhash.md)**: Tests whether the code’s code directory hash matches a specific value, or is in a list of allowed values. For more information about code directory hashes, see [`TN3126: Inside Code Signing: Hashes`](https://developer.apple.com/documentation/Technotes/tn3126-inside-code-signing-hashes).
+- **[`ProcessCodeSigningFlags`](processcodesigningflags.md)**: Tests whether the executable for a running process has particular flags, defined in [`ProcessCodeSigningFlags.ValueSet`](processcodesigningflags/valueset.md), set in its code signature.
+- **[`OnDiskCodeSigningFlags`](ondiskcodesigningflags.md)**: Tests whether the code on disk has particular flags, defined in [`OnDiskCodeSigningFlags.ValueSet`](ondiskcodesigningflags/valueset.md), set in its code signature.
+- **[`EntitlementsQuery`](entitlementsquery.md)**: Tests whether the executable has a particular entitlement, optionally with a given value.
+- **[`InfoPlistHash`](infoplisthash.md)**: Tests whether the hash of the executable’s `Info.plist` file (or embedded `Info.plist`, for a command-line tool) matches a specific value, or is in a list of allowed values. Depending on the code signature version, the hash uses the SHA-1 or SHA-256 algorithm. Test whether the hash is in a list that contains both versions.
+- **[`IsInitProcess`](isinitprocess.md)**: Tests whether the process is the initial process in the operating system, that is, `launchd`.
+- **[`IsMainBinary`](ismainbinary.md)**: whether the executable is a main binary. A main binary has a code signature version of at least `0x20400` and an executable segment with the `CS_EXECSEG_MAIN_BINARY` flag set.
+- **[`IsSIPProtected`](issipprotected.md)**: Tests whether the code is on a volume covered by System Integrity Protection (SIP).
+- **[`PlatformType`](platformtype.md)**: Tests whether the code targets a particular platform, for example iOS. The list of allowed values is defined in [`PlatformType.Value`](platformtype/value.md).
+- **[`SigningIdentifier`](signingidentifier.md)**: Tests whether the code’s signing identifier matches a specific value, or is in a list of allowed values. The signing identifier is a string that’s typically the bundle identifier for a code bundle, for example an app, and has a similar structure for other code, for example, a command-line tool.
+- **[`TeamIdentifier`](teamidentifier.md)**: Tests whether the team identifier of the developer team that signed the code matches a specific value, or is in a list of allowed values.
+- **[`TeamIdentifierMatchesCurrentProcess`](teamidentifiermatchescurrentprocess.md)**: Tests whether the team identifier of the developer team that signed the code for a running process matches the team identifier for the current process.
+- **[`ValidationCategory`](validationcategory.md)**: Tests whether the code is signed for a specific category, or is in a list of allowed categories. The list of values is defined in [`ValidationCategory.Value`](validationcategory/value.md).
+
 For code signed by an organization or individual other than Apple, the code’s identity is specified by its `SigningIdentifier`, `TeamIdentifier`, and `ValidationCategory`.
 
 #### Combine Tests Into Requirements
 
 The lightweight code requirement DSL provides operators that you use to build up complex requirements from individual tests. For example, the operators to construct on-disk code requirements are:
+
+- **[`anyOf(requirement:)`](ondiskcoderequirement/anyof(requirement:).md)**: `true` if one or more of its arguments is `true`; `false` if all of its arguments are `false`.
+- **[`allOf(requirement:)`](ondiskcoderequirement/allof(requirement:).md)**: `true` if each of its arguments is `true`; `false` if any of its arguments is `false`.
 
 [`ProcessCodeRequirement`](processcoderequirement.md) and [`LaunchCodeRequirement`](launchcoderequirement.md) provide similar operators for building process code requirements and launch requirements.
 

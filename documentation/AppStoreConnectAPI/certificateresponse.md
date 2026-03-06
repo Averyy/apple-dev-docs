@@ -14,6 +14,12 @@ A response that contains a single Certificates resource.
 object CertificateResponse
 ```
 
+## Properties
+
+- `data` (Certificate) *(required)*: The resource data.
+- `included` ([PassTypeId])
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [Create a Certificate](post-v1-certificates.md)

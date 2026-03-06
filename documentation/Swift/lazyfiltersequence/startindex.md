@@ -24,7 +24,7 @@ var startIndex: LazyFilterSequence<Base>.Index { get }
 
 In an empty collection, `startIndex == endIndex`.
 
-> **Note**: O(), where  is the ratio between unfiltered and filtered collection counts.
+> **Note**: O(*n*), where *n* is the ratio between unfiltered and filtered collection counts.
 
 
 ---

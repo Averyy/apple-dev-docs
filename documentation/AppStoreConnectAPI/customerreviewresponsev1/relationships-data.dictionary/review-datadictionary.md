@@ -20,6 +20,10 @@ object CustomerReviewResponseV1.Relationships.Review
 - [object CustomerReviewResponseV1.Relationships.Review.Data](customerreviewresponsev1/relationships-data.dictionary/review-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
+## Properties
+
+- `data` (CustomerReviewResponseV1.Relationships.Review.Data): The type and ID of a resource that you’re relating with the resource you’re updating.
+
 
 ---
 

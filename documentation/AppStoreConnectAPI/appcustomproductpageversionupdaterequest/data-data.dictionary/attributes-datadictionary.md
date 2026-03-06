@@ -12,6 +12,10 @@
 object AppCustomProductPageVersionUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `deepLink` (uri)
+
 
 ---
 

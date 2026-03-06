@@ -8,6 +8,15 @@ Get the specific localized subscription group display name and optional custom a
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionGroupLocalizations/{id}`
+
+## Parameters
+
+- `fields[subscriptionGroupLocalizations]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Create a Subscription Group Localization](post-v1-subscriptiongrouplocalizations.md)

@@ -16,6 +16,9 @@ number div(number $dividend, number $divisor)
 
 ##### Parameters
 
+- **`dividend`**: The number that the function divides.
+- **`divisor`**: The number that the function divides into `dividend`.
+
 ##### Return Value
 
 The result or quotient of dividing `divisor` into `dividend`. If `divisor` is `zero`, `null`.

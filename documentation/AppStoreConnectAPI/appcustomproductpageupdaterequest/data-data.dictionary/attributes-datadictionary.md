@@ -12,6 +12,11 @@
 object AppCustomProductPageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `visible` (boolean)
+
 
 ---
 

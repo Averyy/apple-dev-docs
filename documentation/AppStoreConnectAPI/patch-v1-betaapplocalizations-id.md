@@ -16,6 +16,14 @@ Update the localized information for a specific beta app and locale.
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this resource, you can change that data, but you cannot remove data.
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/betaAppLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaAppLocalizations` resource ID from the [`List Beta App Localizations`](get-v1-betaapplocalizations.md) response.
+
 ## See Also
 
 - [Create a Beta App Localization](post-v1-betaapplocalizations.md)

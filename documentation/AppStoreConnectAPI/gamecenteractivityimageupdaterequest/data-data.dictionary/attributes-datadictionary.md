@@ -14,6 +14,10 @@ Attributes that describe an activity resource.
 object GameCenterActivityImageUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `uploaded` (boolean)
+
 
 ---
 

@@ -27,7 +27,7 @@ See `DataFrame/description(options:)` for more information.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A [`FormattingOptions`](formattingoptions.md) instance.
 
 
 ---

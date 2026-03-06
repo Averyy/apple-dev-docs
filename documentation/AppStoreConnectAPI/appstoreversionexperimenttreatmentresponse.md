@@ -14,6 +14,12 @@ A response that contains a single app store version experiment treatment respons
 object AppStoreVersionExperimentTreatmentResponse
 ```
 
+## Properties
+
+- `data` (AppStoreVersionExperimentTreatment) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)

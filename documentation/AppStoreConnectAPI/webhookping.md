@@ -14,6 +14,12 @@ The data structure that represents a webhook ping resource.
 object WebhookPing
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object Webhook](webhook.md)

@@ -22,8 +22,8 @@ init<W>(as reference: Reference<W>, @RegexComponentBuilder _ componentBuilder: (
 
 ## Parameters
 
-- `reference`: The reference to use for anything captured by   .
-- `componentBuilder`: A builder closure that generates a regex   component to capture.
+- `reference`: The reference to use for anything captured by `component`.
+- `componentBuilder`: A builder closure that generates a regex component to capture.
 
 
 ---

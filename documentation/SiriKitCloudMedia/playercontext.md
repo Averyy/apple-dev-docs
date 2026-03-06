@@ -14,6 +14,14 @@ Information about the current playback content.
 object PlayerContext
 ```
 
+## Properties
+
+- `activityIdentifier` (string): The ID for the client’s current [`UserActivity`](useractivity.md).
+- `queueIdentifier` (QueueIdentifier): The ID of the playback queue that contains the current content.
+- `contentIdentifier` (ContentIdentifier): The ID for the content the client is playing.
+- `offsetInMillis` (int64): The number of milliseconds into the playback progress of the current content.
+- `playbackSpeed` (double): The content’s playback speed.
+
 ## See Also
 
 - [object Invocation](invocation.md)

@@ -22,6 +22,14 @@ object InAppPurchase
 - [object InAppPurchase.Relationships](inapppurchase/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (InAppPurchase.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (InAppPurchase.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object App](app.md)

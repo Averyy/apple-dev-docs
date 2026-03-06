@@ -14,6 +14,11 @@ A response that contains a single Advanced App Clip Experience Images resource.
 object AppClipAdvancedExperienceImageResponse
 ```
 
+## Properties
+
+- `data` (AppClipAdvancedExperienceImage) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+
 ## See Also
 
 - [object AppClipAdvancedExperienceImage](appclipadvancedexperienceimage.md)

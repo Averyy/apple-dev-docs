@@ -30,6 +30,11 @@ The signature uses the `x5c` certificate chain, in the following order:
 
 For more information, or to download Apple’s root certificate, see [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/).
 
+## Properties
+
+- `alg` (alg): The algorithm the App Store uses for signing the JSON Web Signature (JWS).
+- `x5c` (x5c): An array that contains the X.509 certificate chain, which you use to verify the public key that the App Store uses to sign the JWS.
+
 ## See Also
 
 - [type alg](alg.md)

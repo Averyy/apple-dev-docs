@@ -14,6 +14,14 @@ Attributes that describe an in-app purchase offer code resource.
 object InAppPurchaseOfferCode.Attributes
 ```
 
+## Properties
+
+- `active` (boolean)
+- `customerEligibilities` ([string])
+- `name` (string)
+- `productionCodeCount` (integer)
+- `sandboxCodeCount` (integer)
+
 ## See Also
 
 - [object InAppPurchaseOfferCode.Relationships](inapppurchaseoffercode/relationships-data.dictionary.md)

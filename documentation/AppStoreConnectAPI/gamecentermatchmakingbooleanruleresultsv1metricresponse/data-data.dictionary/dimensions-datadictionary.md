@@ -22,6 +22,11 @@ object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions
 - [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result](gamecentermatchmakingbooleanruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/result-data.dictionary.md)
   The links to the details of the data.
 
+## Properties
+
+- `gameCenterMatchmakingQueue` (GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue)
+- `result` (GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result)
+
 ## See Also
 
 - [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.DataPoints](gamecentermatchmakingbooleanruleresultsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)

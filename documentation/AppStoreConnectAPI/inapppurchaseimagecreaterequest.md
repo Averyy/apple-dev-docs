@@ -20,6 +20,10 @@ object InAppPurchaseImageCreateRequest
 - [object InAppPurchaseImageCreateRequest.Data](inapppurchaseimagecreaterequest/data-data.dictionary.md)
   The request body you use to create a subscription purchase image reservation.
 
+## Properties
+
+- `data` (InAppPurchaseImageCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseImage](inapppurchaseimage.md)

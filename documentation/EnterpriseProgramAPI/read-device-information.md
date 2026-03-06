@@ -3,6 +3,14 @@
 **Framework**: Enterprise Program API  
 **Kind**: httpRequest
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/devices/{id}`
+
+## Parameters
+
+- `fields[devices]` ([string])
+
 ## See Also
 
 - [List Devices](list-devices.md)

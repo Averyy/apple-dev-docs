@@ -14,6 +14,14 @@ The latest commit of a Git branch or tag, or of a pull request’s source branch
 object CiBuildRun.Attributes.SourceCommit
 ```
 
+## Properties
+
+- `author` (CiGitUser): The author of the commit.
+- `commitSha` (string): The commit hash.
+- `committer` (CiGitUser): The commit’s Git committer.
+- `message` (string): The commit message.
+- `webUrl` (uri): The commit URL.
+
 ## See Also
 
 - [object CiBuildRun.Attributes.DestinationCommit](cibuildrun/attributes-data.dictionary/destinationcommit-data.dictionary.md)

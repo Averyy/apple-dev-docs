@@ -20,6 +20,12 @@ object GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse
 - [object GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse.Data](gamecentergroupgamecenterleaderboardsetslinkagesresponse/data-data.dictionary.md)
   The data structure that represents a group resource.
 
+## Properties
+
+- `data` ([GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

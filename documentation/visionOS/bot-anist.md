@@ -116,7 +116,7 @@ WindowGroup(id: "RobotExploration") {
 
 ##### Show the Volumes Baseplate
 
-BOT-anist uses the default behavior for the volume that displays the greenhouse. To make it more obvious to the player that they can resize the volume, and to give them better visual feedback when doing it, BOT-anist makes the volume’s baseplate visible. The  is a white, rounded rectangle on the bottom plane of the volume that the app enables by calling [`volumeBaseplateVisibility(_:)`](https://developer.apple.com/documentation/SwiftUI/View/volumeBaseplateVisibility(_:)) on the volume’s root view.
+BOT-anist uses the default behavior for the volume that displays the greenhouse. To make it more obvious to the player that they can resize the volume, and to give them better visual feedback when doing it, BOT-anist makes the volume’s baseplate visible. The *baseplate* is a white, rounded rectangle on the bottom plane of the volume that the app enables by calling [`volumeBaseplateVisibility(_:)`](https://developer.apple.com/documentation/SwiftUI/View/volumeBaseplateVisibility(_:)) on the volume’s root view.
 
 ```swift
 ExplorationView()
@@ -221,11 +221,11 @@ guard let anim = body.animationLibraryComponent?.animations[animState.rawValue] 
 
 ##### Animate the Plants Using Blend Shapes
 
-While skeletal animations are an incredibly powerful and useful tool, certain types of animations need to move each vertex in the model individually. RealityKit stores vertex-level changes to a model using , which contain offset data for the model entity’s vertices. You can set each blend shape to a value between `0.0` and `1.0`. Any value other than `0.0` or `1.0` represents a partial state in-between the model’s default shape, and the shape contained in that blend shape.
+While skeletal animations are an incredibly powerful and useful tool, certain types of animations need to move each vertex in the model individually. RealityKit stores vertex-level changes to a model using *blend shapes*, which contain offset data for the model entity’s vertices. You can set each blend shape to a value between `0.0` and `1.0`. Any value other than `0.0` or `1.0` represents a partial state in-between the model’s default shape, and the shape contained in that blend shape.
 
 To access blend shapes, use  [`BlendShapeWeightsComponent`](https://developer.apple.com/documentation/RealityKit/BlendShapeWeightsComponent). You can create blend shapes and set their values procedurally but, more often, you create blend shapes and blend shape animations using a 3D modeling tool, then store them in the model’s USDZ file. RealityKit automatically creates a [`BlendShapeWeightsComponent`](https://developer.apple.com/documentation/RealityKit/BlendShapeWeightsComponent) for any model entity it loads from a USDZ file that contains blend shapes. It also adds any blend shape animations in the USDZ file to the entity’s [`AnimationLibraryComponent`](https://developer.apple.com/documentation/RealityKit/AnimationLibraryComponent).
 
-> **Note**: Some software uses different terms when referring to per-vertex offset data. In addition to blend shape, you may also find the same functionality referred to as  or . All of these export to USDZ files as blend shapes and work identically.
+> **Note**: Some software uses different terms when referring to per-vertex offset data. In addition to blend shape, you may also find the same functionality referred to as *morph targets* or *shape keys*. All of these export to USDZ files as blend shapes and work identically.
 
 To animate the plants growing, BOT-anist uses blend shape animations created in a 3D modeling program and stored in the model’s USDZ file. It uses the same approach to animate the celebratory dancing the flowers do once the robot has planted them all. Each type of plant has its own blend shapes and blend shape animations to show the plant growing and celebrating.
 

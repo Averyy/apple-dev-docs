@@ -14,6 +14,11 @@ The data structure that represents the subscription for a subscription image res
 object SubscriptionImage.Relationships.Subscription.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

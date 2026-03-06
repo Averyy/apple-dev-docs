@@ -20,6 +20,10 @@ object PagingInformation
 - [object PagingInformation.Paging](paginginformation/paging-data.dictionary.md)
   Paging details such as the total number of resources and the per-page limit.
 
+## Properties
+
+- `paging` (PagingInformation.Paging) *(required)*: The paging information details.
+
 ## See Also
 
 - [object PagedDocumentLinks](pageddocumentlinks.md)

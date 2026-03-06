@@ -14,6 +14,19 @@ A date or time in specified of units (such as year, month, day, hour, and minute
 object ExplicitDateComponents
 ```
 
+## Properties
+
+- `calendarIdentifier` (string): The calendar for interpreting the other values in this structure.
+- `timeZone` (string): A time zone.
+- `era` (int32): An era.
+- `year` (int32): A year.
+- `month` (int32): A month.
+- `day` (int32): A day.
+- `hour` (int32): An hour.
+- `minute` (int32): A minute.
+- `second` (int32): A second.
+- `nanosecond` (int32): A nanosecond.
+
 ## See Also
 
 - [object DateComponentsRange](datecomponentsrange.md)

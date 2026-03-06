@@ -20,6 +20,11 @@ object CiProduct.Relationships.App
 - [object CiProduct.Relationships.App.Data](ciproduct/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Apps resource.
 
+## Properties
+
+- `data` (CiProduct.Relationships.App.Data): The ID and type of the related Apps resource.
+- `links` (RelationshipLinks): The navigational links that include the self-link.
+
 ## See Also
 
 - [object CiProduct.Relationships.BundleId](ciproduct/relationships-data.dictionary/bundleid-data.dictionary.md)

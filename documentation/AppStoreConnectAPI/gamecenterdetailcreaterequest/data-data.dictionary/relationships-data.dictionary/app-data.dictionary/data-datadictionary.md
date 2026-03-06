@@ -12,6 +12,11 @@
 object GameCenterDetailCreateRequest.Data.Relationships.App.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -19,6 +19,10 @@ Create a review submission for a specific app.
 
 > **Note**: The attribute `platform` is no longer required when using [`Create a review submission`](post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a review submission`](patch-v1-reviewsubmissions-_id_.md).
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/reviewSubmissions`
+
 ## See Also
 
 - [List review submissions for an app](get-v1-reviewsubmissions.md)

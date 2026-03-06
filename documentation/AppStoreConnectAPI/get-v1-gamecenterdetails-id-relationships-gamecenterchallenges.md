@@ -8,6 +8,14 @@ List all the challenge IDs for a specific Game Center detail.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/gameCenterChallenges`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Read the state of Game Center for an app](get-v1-apps-_id_-gamecenterdetail.md)

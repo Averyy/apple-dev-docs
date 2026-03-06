@@ -12,6 +12,11 @@
 object SubscriptionGroupLocalizationCreateRequest.Data.Relationships.SubscriptionGroup.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

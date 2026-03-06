@@ -12,6 +12,12 @@
 object InAppPurchasePrice.Attributes
 ```
 
+## Properties
+
+- `endDate` (date)
+- `manual` (boolean)
+- `startDate` (date)
+
 ## See Also
 
 - [object InAppPurchasePrice.Relationships](inapppurchaseprice/relationships-data.dictionary.md)

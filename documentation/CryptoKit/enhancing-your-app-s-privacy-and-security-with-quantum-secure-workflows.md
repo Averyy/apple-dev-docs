@@ -13,11 +13,11 @@ Use quantum-secure cryptography to protect your app from quantum attacks.
 
 #### Overview
 
-Quantum attacks represent a threat to the security of widely-deployed cryptographic methods, which assume that attackers use classical, non-quantum computers. Cryptographers have created new algorithms that are secure against quantum attacks, known as . Quantum-secure algorithms remain secure from attacks by both classical and quantum computers.
+Quantum attacks represent a threat to the security of widely-deployed cryptographic methods, which assume that attackers use classical, non-quantum computers. Cryptographers have created new algorithms that are secure against quantum attacks, known as *quantum-secure cryptography*. Quantum-secure algorithms remain secure from attacks by both classical and quantum computers.
 
 Even if an attacker doesn’t currently have access to a quantum computer, they can store any ciphertext they gain access to, and attack the encryption with a quantum computer later to recover the cleartext. You can help protect your data against these attacks by adopting quantum-secure cryptographic mechanisms and algorithms in your app now.
 
-Instead of switching to a cryptographic mechanism that only uses a quantum-secure algorithm, you can use a  mechanism, which combines the strengths of both a classical and a quantum-secure algorithm. A hybrid scheme remains secure if an attacker breaks either one of the algorithms the scheme uses. For more information, see [`Get ahead with quantum-secure cryptography`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/314).
+Instead of switching to a cryptographic mechanism that only uses a quantum-secure algorithm, you can use a *hybrid* mechanism, which combines the strengths of both a classical and a quantum-secure algorithm. A hybrid scheme remains secure if an attacker breaks either one of the algorithms the scheme uses. For more information, see [`Get ahead with quantum-secure cryptography`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/314).
 
 This sample uses round-trip processes — encrypting then decrypting data, or generating a signature then verifying it — to demonstrate how to adopt quantum-secure cryptographic algorithms using [`Apple CryptoKit`](CryptoKit.md). In your app, implement the two stages separately; for example, one person might encrypt a message and send it to another person who decrypts it. The sample demonstrates how to use quantum-secure hybrid public-key encryption (HPKE) to securely share a secret between two people.
 

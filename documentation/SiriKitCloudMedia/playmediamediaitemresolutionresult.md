@@ -30,6 +30,14 @@ Only provide one of the optional properties. If a client receives a result with 
 - [object PlayMediaMediaItemResolutionResult.ConfirmationRequired](playmediamediaitemresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before proceeding.
 
+## Properties
+
+- `class` (string): The specific type of result.
+- `success` (PlayMediaMediaItemResolutionResult.Success): A media item that successfully matches the intent.
+- `confirmationRequired` (PlayMediaMediaItemResolutionResult.ConfirmationRequired): A media item for the user to confirm as a match.
+- `disambiguation` (PlayMediaMediaItemResolutionResult.Disambiguation): Multiple media items for the user to choose from.
+- `unsupported` (PlayMediaMediaItemResolutionResult.Unsupported): Information about why your service can’t resolve the media item.
+
 ## Relationships
 
 ### Inherits From

@@ -26,8 +26,8 @@ If the vehicle sends a custom response, the system delivers it to the [`remoteCo
 
 ## Parameters
 
-- `passthroughData`: The custom data to send to the vehicle. Make   sure the size of your data object doesn’t exceed 65 kilobytes.
-- `vehicleID`: The target vehicle for the request. Choose the vehicle   from one of the session’s vehicle reports. Specify the string in the    property of the corresponding report.
+- `passthroughData`: The custom data to send to the vehicle. Make sure the size of your data object doesn’t exceed 65 kilobytes.
+- `vehicleID`: The target vehicle for the request. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](vehiclereport/identifier.md) property of the corresponding report.
 
 
 ---

@@ -16,6 +16,11 @@ A collection of image names used to populate images in the details view.
 object UpcomingPassInformationEntry.Images
 ```
 
+## Properties
+
+- `headerImage` (UpcomingPassInformationEntryType.Image): The name of the image file used for the header image on the details screen. This can be a remote asset.
+- `venueMap` (UpcomingPassInformationEntryType.Image): The name of the image file used for the venue map in the event guide for each upcoming pass information entry. This can be a remote asset and is available for event entries.
+
 ## See Also
 
 - [object UpcomingPassInformationEntry.AdditionalInfoFields](upcomingpassinformationentry/additionalinfofields-data.dictionary.md)

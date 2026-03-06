@@ -8,6 +8,14 @@ Enable a beta tester who is not a part of a beta group to test a build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/individualTesters`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Add Access for Beta Groups to a Build](post-v1-builds-_id_-relationships-betagroups.md)

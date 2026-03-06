@@ -14,6 +14,13 @@ A response that contains a list of background asset version resources.
 object BackgroundAssetsResponse
 ```
 
+## Properties
+
+- `data` ([BackgroundAsset]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

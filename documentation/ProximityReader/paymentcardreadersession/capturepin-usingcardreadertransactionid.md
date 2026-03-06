@@ -35,7 +35,7 @@ Call this method when the payment card issuer requests a PIN for the current tra
 ## Parameters
 
 - `token`: Valid and signed PIN token from a participating payment service provider.
-- `cardReaderTransactionID`: The   of the previous read.
+- `cardReaderTransactionID`: The [`id`](paymentcardreadresult/id.md) of the previous read.
 
 ## See Also
 

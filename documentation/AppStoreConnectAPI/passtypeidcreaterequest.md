@@ -20,6 +20,10 @@ object PassTypeIdCreateRequest
 - [object PassTypeIdCreateRequest.Data](passtypeidcreaterequest/data-data.dictionary.md)
   The data structure that represents a pass type id create request resource.
 
+## Properties
+
+- `data` (PassTypeIdCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)

@@ -12,6 +12,10 @@
 object InAppPurchasePricePoint.Relationships.Equalizations
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

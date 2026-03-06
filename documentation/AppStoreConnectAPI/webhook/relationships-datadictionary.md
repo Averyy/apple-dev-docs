@@ -18,6 +18,11 @@ object Webhook.Relationships
 - [object Webhook.Relationships.App](webhook/relationships-data.dictionary/app-data.dictionary.md)
 - [object Webhook.Relationships.Deliveries](webhook/relationships-data.dictionary/deliveries-data.dictionary.md)
 
+## Properties
+
+- `app` (Webhook.Relationships.App)
+- `deliveries` (Webhook.Relationships.Deliveries)
+
 
 ---
 

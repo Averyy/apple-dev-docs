@@ -17,6 +17,13 @@ object GameCenterPlayerAchievementSubmission
 ### Objects
 - [object GameCenterPlayerAchievementSubmission.Attributes](gamecenterplayerachievementsubmission/attributes-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterPlayerAchievementSubmission.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterPlayerAchievementSubmissionCreateRequest](gamecenterplayerachievementsubmissioncreaterequest.md)

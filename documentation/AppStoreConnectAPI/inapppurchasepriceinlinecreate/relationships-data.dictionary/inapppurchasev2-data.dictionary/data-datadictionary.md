@@ -12,6 +12,11 @@
 object InAppPurchasePriceInlineCreate.Relationships.InAppPurchaseV2.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

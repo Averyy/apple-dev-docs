@@ -8,6 +8,14 @@ Delete an image that you uploaded for review of an in-app purchase.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v1/inAppPurchaseAppStoreReviewScreenshots/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read In-App Purchase Review Screenshot Information](get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)

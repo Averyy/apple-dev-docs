@@ -8,6 +8,17 @@ Get the custom end user license agreement associated with an app, and the territ
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/{id}`
+
+## Parameters
+
+- `fields[endUserLicenseAgreements]` ([string])
+- `fields[territories]` ([string])
+- `include` ([string])
+- `limit[territories]` (integer)
+
 ## See Also
 
 - [Read the End User License Agreement Information of an App](get-v1-apps-_id_-enduserlicenseagreement.md)

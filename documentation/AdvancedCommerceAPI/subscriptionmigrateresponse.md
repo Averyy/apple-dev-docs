@@ -18,6 +18,11 @@ object SubscriptionMigrateResponse
 
 This is the response body for the [`Migrate a Subscription to Advanced Commerce API`](migrate-subscription-to-advanced-commerce-api.md) endpoint.
 
+## Properties
+
+- `signedRenewalInfo` (JWSRenewalInfo) *(required)*: Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format, for the migrated subscription.
+- `signedTransactionInfo` (JWSTransaction) *(required)*: Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format, for the migrated subscription.
+
 ## See Also
 
 - [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)

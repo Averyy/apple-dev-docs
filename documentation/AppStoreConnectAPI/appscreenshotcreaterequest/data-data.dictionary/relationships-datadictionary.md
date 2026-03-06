@@ -20,6 +20,10 @@ object AppScreenshotCreateRequest.Data.Relationships
 - [object AppScreenshotCreateRequest.Data.Relationships.AppScreenshotSet](appscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/appscreenshotset-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `appScreenshotSet` (AppScreenshotCreateRequest.Data.Relationships.AppScreenshotSet) *(required)*
+
 ## See Also
 
 - [object AppScreenshotCreateRequest.Data.Attributes](appscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

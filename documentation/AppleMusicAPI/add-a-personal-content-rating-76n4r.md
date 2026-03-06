@@ -18,6 +18,44 @@ For a particular playlist, the personal ratings for that playlist’s catalog ID
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/ratings/playlists/pl.5b0194eaa170401e8986335d7e77aa4e
+
+{
+    "type":"rating",
+    "attributes":{
+        "value":1
+    }
+}
+```
+
+**Response**:
+
+```json
+{
+    "data":[
+        {
+            "id":"pl.5b0194eaa170401e8986335d7e77aa4e",
+            "type":"ratings",
+            "href":"/v1/me/ratings/playlists/pl.5b0194eaa170401e8986335d7e77aa4e",
+            "attributes":{
+                "value":1
+            }
+        }
+    ]
+}
+```
+
+## Endpoint
+
+`PUT https://api.music.apple.com/v1/me/ratings/playlists/{id}`
+
+## Parameters
+
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
 ## Request Body
 
 A dictionary that includes the type and attributes of the resource rating.

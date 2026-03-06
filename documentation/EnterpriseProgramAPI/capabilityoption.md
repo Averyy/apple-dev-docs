@@ -11,6 +11,15 @@ An option within a capability setting.
 object CapabilityOption
 ```
 
+## Properties
+
+- `description` (string)
+- `enabled` (boolean)
+- `enabledByDefault` (boolean)
+- `key` (string)
+- `name` (string)
+- `supportsWildcard` (boolean)
+
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)

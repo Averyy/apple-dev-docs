@@ -8,6 +8,15 @@ Get a list of apps that a user on your team can view.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/users/{id}/visibleApps`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return.
+- `fields[apps]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [Get All Visible App Resource IDs for a User](get-v1-users-_id_-relationships-visibleapps.md)

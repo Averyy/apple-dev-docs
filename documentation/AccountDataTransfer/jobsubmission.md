@@ -14,6 +14,10 @@ An object that describes a submission that requests someone’s data.
 object JobSubmission
 ```
 
+## Properties
+
+- `mode` (string): Whether you want a one-time download, a daily download for 30 days, or a weekly download for 180 days.
+
 ## See Also
 
 - [Submit request](submit-request.md)

@@ -20,6 +20,10 @@ object ProfileCreateRequest.Data.Relationships.Devices
 - [object ProfileCreateRequest.Data.Relationships.Devices.Data](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` ([ProfileCreateRequest.Data.Relationships.Devices.Data])
+
 ## See Also
 
 - [object ProfileCreateRequest.Data.Relationships.BundleId](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)

@@ -17,6 +17,12 @@ object GameCenterAppVersion.Relationships.CompatibilityVersions
 ### Objects
 - [object GameCenterAppVersion.Relationships.CompatibilityVersions.Data](gamecenterappversion/relationships-data.dictionary/compatibilityversions-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterAppVersion.Relationships.CompatibilityVersions.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterAppVersion.Relationships.AppStoreVersion](gamecenterappversion/relationships-data.dictionary/appstoreversion-data.dictionary.md)

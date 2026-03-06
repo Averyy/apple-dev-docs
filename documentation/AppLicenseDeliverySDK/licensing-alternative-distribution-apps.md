@@ -58,7 +58,7 @@ For more information about the signing and encryption certificates, see [`Config
 
 #### Handle a Dynamic License Request
 
-A license request consists of a single POST to your licensing endpoint. Each POST can contain a request for a license for one or more apps. Your license server sends a single response to the POST which typically includes one license for each requested app. The license request is , meaning that your license server provides a new license for each install request.
+A license request consists of a single POST to your licensing endpoint. Each POST can contain a request for a license for one or more apps. Your license server sends a single response to the POST which typically includes one license for each requested app. The license request is *dynamic*, meaning that your license server provides a new license for each install request.
 
 If you limit app licenses to authenticated devices, check the POST header for an access token that links the license request to an account. The following is an example header:
 
@@ -246,7 +246,7 @@ With the session object, generate a license for each app that you approve for do
 1. Choose a value for the license ID. Ensure the ID is unique across all the licenses your license server distributes.
 2. Create a license attribute for the license ID by calling [`init(licenseID:)`](aldlicenseattribute/init(licenseid:).md).
 3. Set the [`issuedTime`](aldlicenseattribute/issuedtime.md) and a [`duration`](aldlicenseattribute/duration.md), in seconds, that determines when the license expires. For example, setting `duration` to `86400` prevents the licensed app from launching after a day.
-4. Set the `appKey` for the app, or , which is unique per app variant. Refer to `appsById` in the request payload for the app ID, and `assetPublicId` for the variant that iOS needs for that app. App Store Connect provides the key blob during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/appdistribution/ingesting-an-alternative-distribution-package).
+4. Set the `appKey` for the app, or *key blob*, which is unique per app variant. Refer to `appsById` in the request payload for the app ID, and `assetPublicId` for the variant that iOS needs for that app. App Store Connect provides the key blob during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/appdistribution/ingesting-an-alternative-distribution-package).
 5. Create the license by calling the [`generateLicense(attr:)`](aldsession/generatelicense(attr:).md) method with the license attribute.
 
 ```swift

@@ -27,7 +27,7 @@ The default implementation of this initializer is available to all types that co
 ## Parameters
 
 - `data`: Binary data that can be used to instantiate an item
-- `contentType`: A content type that corresponds   to the structure of the data. If no content type is provided, the framework   calls into every transfer representation provided in the implementation   of the   conformance (  static   property) until it finds one that can handle the data.
+- `contentType`: A content type that corresponds to the structure of the data. If no content type is provided, the framework calls into every transfer representation provided in the implementation of the [`Transferable`](transferable.md) conformance (`transferRepresentation` static property) until it finds one that can handle the data.
 
 
 ---

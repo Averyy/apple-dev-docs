@@ -14,6 +14,10 @@ More music videos in a specific music video genre.
 object MusicVideos.Views.MusicVideosMoreInGenreView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view.
+
 
 ---
 

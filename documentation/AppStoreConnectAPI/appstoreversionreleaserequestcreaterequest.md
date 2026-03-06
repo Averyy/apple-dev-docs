@@ -20,6 +20,10 @@ object AppStoreVersionReleaseRequestCreateRequest
 - [object AppStoreVersionReleaseRequestCreateRequest.Data](appstoreversionreleaserequestcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreVersionReleaseRequestCreateRequest.Data) *(required)*: The data element of the request body.
+
 ## See Also
 
 - [object AppStoreVersionReleaseRequestResponse](appstoreversionreleaserequestresponse.md)

@@ -14,6 +14,14 @@ An object that enumerates the test configuration parameters.
 object PerformanceTestConfig
 ```
 
+## Properties
+
+- `maxConcurrentRequests` (int64) *(required)*: The maximum number of concurrent requests the API allows.
+- `responseTimeThreshold` (int64) *(required)*: The response time threshold in milliseconds.
+- `successRateThreshold` (int32) *(required)*: The success rate threshold percentage.
+- `totalDuration` (int64) *(required)*: The total duration of the test in milliseconds.
+- `totalRequests` (integer) *(required)*: The total number of requests to make during the test.
+
 ## See Also
 
 - [object PerformanceTestRequest](performancetestrequest.md)

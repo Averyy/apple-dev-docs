@@ -12,6 +12,11 @@
 object App.Relationships.PromotedPurchases.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

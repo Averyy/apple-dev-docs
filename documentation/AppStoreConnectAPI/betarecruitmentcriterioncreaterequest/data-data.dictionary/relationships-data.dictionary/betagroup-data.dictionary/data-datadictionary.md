@@ -12,6 +12,11 @@
 object BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

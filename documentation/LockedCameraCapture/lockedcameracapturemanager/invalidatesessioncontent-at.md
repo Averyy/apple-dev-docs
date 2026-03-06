@@ -21,7 +21,7 @@ The directory at the `URL` contains captured content for a session. Store the ca
 
 ## Parameters
 
-- `url`: A URL from   .   The system ignores other URLs.
+- `url`: A URL from [`sessionContentURLs`](lockedcameracapturemanager/sessioncontenturls.md). The system ignores other URLs.
 
 
 ---

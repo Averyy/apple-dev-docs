@@ -26,10 +26,10 @@ A new collection in which all matches for regex in `subrange` are replaced by `r
 
 ## Parameters
 
-- `replacement`: The new elements to add to the collection in place of   each match for the regex, using   to create the regex.
-- `subrange`: The range in the collection in which to search for   the regex.
-- `maxReplacements`: A number specifying how many occurrences of   the regex to replace.
-- `content`: A closure that returns the collection to search for   and replace.
+- `replacement`: The new elements to add to the collection in place of each match for the regex, using `content` to create the regex.
+- `subrange`: The range in the collection in which to search for the regex.
+- `maxReplacements`: A number specifying how many occurrences of the regex to replace.
+- `content`: A closure that returns the collection to search for and replace.
 
 
 ---

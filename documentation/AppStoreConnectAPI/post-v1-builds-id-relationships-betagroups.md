@@ -8,6 +8,14 @@ Add or create a beta group to a build to enable testing.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/builds/{id}/relationships/betaGroups`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Remove Access for Beta Groups to a Build](delete-v1-builds-_id_-relationships-betagroups.md)

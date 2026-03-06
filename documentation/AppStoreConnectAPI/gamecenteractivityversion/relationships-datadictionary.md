@@ -20,6 +20,13 @@ object GameCenterActivityVersion.Relationships
 - [object GameCenterActivityVersion.Relationships.Localizations](gamecenteractivityversion/relationships-data.dictionary/localizations-data.dictionary.md)
 - [object GameCenterActivityVersion.Relationships.Releases](gamecenteractivityversion/relationships-data.dictionary/releases-data.dictionary.md)
 
+## Properties
+
+- `activity` (GameCenterActivityVersion.Relationships.Activity)
+- `defaultImage` (GameCenterActivityVersion.Relationships.DefaultImage)
+- `localizations` (GameCenterActivityVersion.Relationships.Localizations)
+- `releases` (GameCenterActivityVersion.Relationships.Releases)
+
 
 ---
 

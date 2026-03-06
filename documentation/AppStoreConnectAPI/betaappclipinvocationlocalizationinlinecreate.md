@@ -22,6 +22,13 @@ object BetaAppClipInvocationLocalizationInlineCreate
 - [object BetaAppClipInvocationLocalizationInlineCreate.Relationships](betaappclipinvocationlocalizationinlinecreate/relationships-data.dictionary.md)
   The relationships to other resources that you can set when you create a new Beta App Clip Invocation Localization Inline Creates resource.
 
+## Properties
+
+- `attributes` (BetaAppClipInvocationLocalizationInlineCreate.Attributes) *(required)*: The attributes that describe the Beta App Clip Invocation Localization Inline Creates resource.
+- `id` (string): The opaque resource ID that uniquely identifies a Beta App Clip Invocation Localization Inline Create resource.
+- `relationships` (BetaAppClipInvocationLocalizationInlineCreate.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object BetaAppClipInvocationCreateRequest.Data](betaappclipinvocationcreaterequest/data-data.dictionary.md)

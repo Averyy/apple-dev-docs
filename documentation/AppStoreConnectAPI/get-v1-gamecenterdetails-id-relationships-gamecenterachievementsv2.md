@@ -19,6 +19,14 @@ Get a list of achievement resource IDs for a specific Game Center detail.
 - 404:
 - 429:
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}/relationships/gameCenterAchievementsV2`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List all Game Center achievements for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterachievementsv2.md)

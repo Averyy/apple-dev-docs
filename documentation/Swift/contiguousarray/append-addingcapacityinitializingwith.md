@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Grows the array to have enough capacity for the specified number of elements, then calls the closure with an OutputSpan covering the array’s uninitialized memory.
+Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
 
 **Availability**:
 - iOS 12.2+
@@ -28,8 +28,8 @@ If the closure throws an error, the items appended until that point will remain 
 
 ## Parameters
 
-- `uninitializedCount`: The number of new elements the array should have   space for.
-- `initializer`: A closure that initializes new elements.
+- `uninitializedCount`: The number of new elements the array should have space for.
+- `initializer`: A closure that initializes new elements. - Parameters: - span: An `OutputSpan` covering uninitialized memory with space for the specified number of additional elements.
 
 
 ---

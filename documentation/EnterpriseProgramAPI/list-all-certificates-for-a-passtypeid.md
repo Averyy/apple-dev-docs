@@ -5,6 +5,22 @@
 
 List all certificates for a specific pass type ID.
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/passTypeIds/{id}/certificates`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[passTypeIds]` ([string])
+- `filter[certificateType]` ([string])
+- `filter[displayName]` ([string])
+- `filter[id]` ([string])
+- `filter[serialNumber]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `sort` ([string])
+
 ## See Also
 
 - [Create a PassTypeId](create-a-passtypeid.md)

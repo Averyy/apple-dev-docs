@@ -19,6 +19,12 @@ object BetaTesterUsagesV1MetricResponse
 ### Objects
 - [object BetaTesterUsagesV1MetricResponse.Data](betatesterusagesv1metricresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([BetaTesterUsagesV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object BetaTester](betatester.md)

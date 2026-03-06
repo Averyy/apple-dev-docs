@@ -18,6 +18,14 @@ object AppEventScreenshot
 - [object AppEventScreenshot.Attributes](appeventscreenshot/attributes-data.dictionary.md)
 - [object AppEventScreenshot.Relationships](appeventscreenshot/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventScreenshot.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppEventScreenshot.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppEventScreenshotCreateRequest](appeventscreenshotcreaterequest.md)

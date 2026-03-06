@@ -12,6 +12,22 @@ Find and list all available app encryption declarations.
 
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/appEncryptionDeclarations`
+
+## Parameters
+
+- `fields[appEncryptionDeclarationDocuments]` ([string])
+- `fields[appEncryptionDeclarations]` ([string])
+- `fields[apps]` ([string])
+- `fields[builds]` ([string])
+- `filter[builds]` ([string])
+- `filter[platform]` ([string])
+- `include` ([string])
+- `limit` (integer)
+- `limit[builds]` (integer)
+
 ## See Also
 
 - [List App Encryption Declarations](get-v1-appencryptiondeclarations.md)

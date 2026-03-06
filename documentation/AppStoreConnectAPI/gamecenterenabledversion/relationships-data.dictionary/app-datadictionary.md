@@ -20,6 +20,10 @@ object GameCenterEnabledVersion.Relationships.App
 - [object GameCenterEnabledVersion.Relationships.App.Data](gamecenterenabledversion/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (GameCenterEnabledVersion.Relationships.App.Data)
+
 ## See Also
 
 - [object GameCenterEnabledVersion.Relationships.CompatibleVersions](gamecenterenabledversion/relationships-data.dictionary/compatibleversions-data.dictionary.md)

@@ -22,6 +22,18 @@ object BusReservation
 - [object BusStation](busstation.md)
   The name and location of a bus station.
 
+## Properties
+
+- `@context` (@context) *(required)*
+- `@type` (string) *(required)*
+- `reservationFor` (BusTrip) *(required)*: Details about the bus trip.
+- `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
+- `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
+- `reservedTicket` (Ticket): Details about the passenger’s ticket.
+- `underName` (Person) *(required)*: The passenger, or the primary passenger of a multiperson reservation if the provider doesn’t require a name for each passenger.
+- `broker` (Organization): An intermediary booking service.
+- `url` (URL): A webpage the user can access to view reservation details.
+
 ## See Also
 
 - [object FlightReservation](flightreservation.md)

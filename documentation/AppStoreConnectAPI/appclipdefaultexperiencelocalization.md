@@ -22,6 +22,14 @@ object AppClipDefaultExperienceLocalization
 - [object AppClipDefaultExperienceLocalization.Relationships](appclipdefaultexperiencelocalization/relationships-data.dictionary.md)
   The relationships of the Default App Clip Experience Localizations resource you included in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (AppClipDefaultExperienceLocalization.Attributes): The attributes that describe the Default App Clip Experience Localizations resource.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies a Default App Clip Experience Localizations resource.
+- `links` (ResourceLinks): Navigational links that include the self-link.
+- `relationships` (AppClipDefaultExperienceLocalization.Relationships): The navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object AppClipDefaultExperienceLocalizationResponse](appclipdefaultexperiencelocalizationresponse.md)

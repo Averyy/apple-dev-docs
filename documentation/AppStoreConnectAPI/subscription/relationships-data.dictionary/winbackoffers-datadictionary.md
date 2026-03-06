@@ -17,6 +17,12 @@ object Subscription.Relationships.WinBackOffers
 ### Dictionaries
 - [object Subscription.Relationships.WinBackOffers.Data](subscription/relationships-data.dictionary/winbackoffers-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([Subscription.Relationships.WinBackOffers.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

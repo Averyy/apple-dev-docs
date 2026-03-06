@@ -20,6 +20,10 @@ object CustomerReviewResponseV1CreateRequest.Data.Relationships
 - [object CustomerReviewResponseV1CreateRequest.Data.Relationships.Review](customerreviewresponsev1createrequest/data-data.dictionary/relationships-data.dictionary/review-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `review` (CustomerReviewResponseV1CreateRequest.Data.Relationships.Review) *(required)*: The customer review related to the response you’re creating.
+
 ## See Also
 
 - [object CustomerReviewResponseV1CreateRequest.Data.Attributes](customerreviewresponsev1createrequest/data-data.dictionary/attributes-data.dictionary.md)

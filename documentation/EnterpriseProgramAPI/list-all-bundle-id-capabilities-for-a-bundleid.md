@@ -5,6 +5,15 @@
 
 Get a list of all capabilities for a specific bundle ID.
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/bundleIds/{id}/bundleIdCapabilities`
+
+## Parameters
+
+- `fields[bundleIdCapabilities]` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [List All Profiles for a BundleId](list-all-profiles-for-a-bundleid.md)

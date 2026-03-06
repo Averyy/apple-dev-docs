@@ -18,6 +18,11 @@ object AlternativeDistributionDomainCreateRequest.Data
 - [object AlternativeDistributionDomainCreateRequest.Data.Attributes](alternativedistributiondomaincreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an alternative distribution domain create resource.
 
+## Properties
+
+- `attributes` (AlternativeDistributionDomainCreateRequest.Data.Attributes) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

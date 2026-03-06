@@ -12,6 +12,11 @@
 object InAppPurchasePriceInlineCreate.Attributes
 ```
 
+## Properties
+
+- `endDate` (date)
+- `startDate` (date)
+
 ## See Also
 
 - [object InAppPurchasePriceInlineCreate.Relationships](inapppurchasepriceinlinecreate/relationships-data.dictionary.md)

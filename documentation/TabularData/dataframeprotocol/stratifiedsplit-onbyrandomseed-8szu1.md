@@ -27,7 +27,7 @@ A tuple of two data frames.
 ## Parameters
 
 - `columnNames`: A comma-separated, or variadic, list of column names.
-- `proportion`: A proportion in the range  .
+- `proportion`: A proportion in the range `[0.0, 1.0]`.
 - `randomSeed`: A seed number for a random-number generator.
 
 ## See Also

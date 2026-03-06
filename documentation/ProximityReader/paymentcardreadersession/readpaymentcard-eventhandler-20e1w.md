@@ -28,8 +28,8 @@ Call this method when you want to verify someone’s card with your payment prov
 
 ## Parameters
 
-- `request`: The object that contains the reason for the verification request.   For example, you might verify the card supports a specific currency.
-- `eventHandler`: A handler you use to receive request-related updates while   the system has control of the screen. The handler has no return value and takes   a   as a parameter. Use the event parameter   to determine what happened.
+- `request`: The object that contains the reason for the verification request. For example, you might verify the card supports a specific currency.
+- `eventHandler`: A handler you use to receive request-related updates while the system has control of the screen. The handler has no return value and takes a [`PaymentCardReaderSession.Event`](paymentcardreadersession/event.md) as a parameter. Use the event parameter to determine what happened.
 
 ## See Also
 

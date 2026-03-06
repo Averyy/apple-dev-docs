@@ -40,6 +40,10 @@ Use the `contentsMode` attribute to specify how the image is scaled within its b
 
 ##### Values
 
+- **aspectFit**: The image scales to fit in the bounding box using fixed aspect ratio. The output bounding box has the same size as the scaled image, leaving no remaining area. The output bounding box may be smaller than its specified size.
+- **aspectFitBB**: The image scales to fit in the bounding box using fixed aspect ratio. The output bounding box keeps its specified size. Any unfilled area of the bounding box is white.
+- **aspectFill**: The image scales to fill in the bounding box using fixed aspect ratio. Portions of the image may be clipped.
+
 ##### Elements That Use Contentsmode
 
 - [`img`](img.md)

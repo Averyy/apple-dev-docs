@@ -17,6 +17,12 @@ object InAppPurchaseV2.Relationships.Images
 ### Dictionaries
 - [object InAppPurchaseV2.Relationships.Images.Data](inapppurchasev2/relationships-data.dictionary/images-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([InAppPurchaseV2.Relationships.Images.Data])
+- `links` (RelationshipLinks)
+- `meta` (PagingInformation)
+
 
 ---
 

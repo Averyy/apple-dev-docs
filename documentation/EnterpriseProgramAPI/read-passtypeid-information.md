@@ -5,6 +5,17 @@
 
 Get information about a specific pass type ID.
 
+## Endpoint
+
+`GET https://api.enterprise.developer.apple.com/v1/passTypeIds/{id}`
+
+## Parameters
+
+- `fields[certificates]` ([string])
+- `fields[passTypeIds]` ([string])
+- `include` ([string])
+- `limit[certificates]` (integer)
+
 ## See Also
 
 - [Create a PassTypeId](create-a-passtypeid.md)

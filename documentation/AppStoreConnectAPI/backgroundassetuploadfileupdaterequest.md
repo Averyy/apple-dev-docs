@@ -20,6 +20,10 @@ object BackgroundAssetUploadFileUpdateRequest
 - [object BackgroundAssetUploadFileUpdateRequest.Data](backgroundassetuploadfileupdaterequest/data-data.dictionary.md)
   The data structure that represents a background asset upload file update request resource.
 
+## Properties
+
+- `data` (BackgroundAssetUploadFileUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

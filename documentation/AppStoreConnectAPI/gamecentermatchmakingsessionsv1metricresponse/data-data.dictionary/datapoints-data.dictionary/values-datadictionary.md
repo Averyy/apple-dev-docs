@@ -14,6 +14,13 @@ The data values in the response per session.
 object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values
 ```
 
+## Properties
+
+- `averagePlayerCount` (number): The average number of players Game Center finds for the match.
+- `count` (integer): The number of players Game Center finds for the match.
+- `p50PlayerCount` (number): The 50th percentile number of players Game Center finds for the match.
+- `p95PlayerCount` (number): The 95th percentile number of players Game Center finds for the match.
+
 
 ---
 

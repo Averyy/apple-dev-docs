@@ -17,6 +17,10 @@ object AnalyticsReportInstance.Relationships
 ### Dictionaries
 - [object AnalyticsReportInstance.Relationships.Segments](analyticsreportinstance/relationships-data.dictionary/segments-data.dictionary.md)
 
+## Properties
+
+- `segments` (AnalyticsReportInstance.Relationships.Segments)
+
 
 ---
 

@@ -43,7 +43,7 @@ let (quotient, remainder) = divisor.dividingFullWidth(dividend)
 
 ## Parameters
 
-- `dividend`: A tuple containing the high and low parts of a   double-width integer.
+- `dividend`: A tuple containing the high and low parts of a double-width integer.
 
 
 ---

@@ -14,6 +14,14 @@ The user’s device calls this API to get the merchant token usage information p
 
 For more information on formatting your merchant token usage information, see [`Adding merchant token usage information`](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
 
+## Endpoint
+
+`GET https://merchant.example.com/v1/merchantToken/{merchantTokenIdentifier}/usageInformation`
+
+## Parameters
+
+- `Authorization` (string) *(required)*: Authentication for the usage information. The scheme is `ApplePayMerchantTokenUsageInformation` with the `authenticationToken` as a parameter. For example, `ApplePayMerchantTokenUsageInformation {authenticationToken}`.
+
 ## See Also
 
 - [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)

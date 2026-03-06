@@ -26,8 +26,8 @@ const region = new mapkit.CoordinateRegion(coordinate, span);
 
 ## Parameters
 
-- `center`: A   that’s the center point of the region.
-- `span`: A   that represents the amount of map to display. The span also defines the current zoom level that the map object uses.
+- `center`: A [`Coordinate`](coordinate.md) that’s the center point of the region.
+- `span`: A [`CoordinateSpan`](coordinatespan.md) that represents the amount of map to display. The span also defines the current zoom level that the map object uses.
 
 
 ---

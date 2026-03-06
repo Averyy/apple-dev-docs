@@ -8,6 +8,14 @@ Get the prerelease version for a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/preReleaseVersion`
+
+## Parameters
+
+- `fields[preReleaseVersions]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [List Builds](get-v1-builds.md)

@@ -8,6 +8,14 @@ Update the order of promoted purchases.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/promotedPurchases`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Promote a Purchase](post-v1-promotedpurchases.md)

@@ -26,7 +26,7 @@ func isStrictSubset(of other: Set<Element>) -> Bool
 
 #### Discussion
 
-Set  is a strict subset of another set  if every member of  is also a member of  and  contains at least one element that is not a member of .
+Set *A* is a strict subset of another set *B* if every member of *A* is also a member of *B* and *B* contains at least one element that is not a member of *A*.
 
 ```swift
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]

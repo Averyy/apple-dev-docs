@@ -14,6 +14,12 @@ A response that contains a single App Screenshots resource.
 object AppScreenshotResponse
 ```
 
+## Properties
+
+- `data` (AppScreenshot) *(required)*
+- `links` (DocumentLinks) *(required)*
+- `included` ([AppScreenshotSet])
+
 ## See Also
 
 - [object AppScreenshot](appscreenshot.md)

@@ -14,6 +14,10 @@ A base type for all weather data.
 object ProductData
 ```
 
+## Properties
+
+- `metadata` (Metadata) *(required)*: Descriptive information about the weather data.
+
 ## Relationships
 
 ### Inherited By

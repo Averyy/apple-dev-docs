@@ -29,6 +29,16 @@ object BackgroundAssetVersion.Relationships
 - [object BackgroundAssetVersion.Relationships.ManifestFile](backgroundassetversion/relationships-data.dictionary/manifestfile-data.dictionary.md)
   The data that describes the manifest File related to a asset.
 
+## Properties
+
+- `appStoreRelease` (BackgroundAssetVersion.Relationships.AppStoreRelease)
+- `assetFile` (BackgroundAssetVersion.Relationships.AssetFile)
+- `backgroundAsset` (BackgroundAssetVersion.Relationships.BackgroundAsset)
+- `backgroundAssetUploadFiles` (BackgroundAssetVersion.Relationships.BackgroundAssetUploadFiles)
+- `externalBetaRelease` (BackgroundAssetVersion.Relationships.ExternalBetaRelease)
+- `internalBetaRelease` (BackgroundAssetVersion.Relationships.InternalBetaRelease)
+- `manifestFile` (BackgroundAssetVersion.Relationships.ManifestFile)
+
 
 ---
 

@@ -22,7 +22,7 @@ init(size: SymmetricKeySize)
 
 ## Parameters
 
-- `size`: The size of the key to generate. You can use one of the standard   sizes, like  , or you can create a key of   custom length by initializing a   instance with a   non-standard value.
+- `size`: The size of the key to generate. You can use one of the standard sizes, like [`bits256`](symmetrickeysize/bits256.md), or you can create a key of custom length by initializing a [`SymmetricKeySize`](symmetrickeysize.md) instance with a non-standard value.
 
 ## See Also
 

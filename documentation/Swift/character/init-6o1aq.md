@@ -31,7 +31,7 @@ let capitalA = Character(a.uppercased())
 
 ## Parameters
 
-- `s`: The single-character string to convert to a    instance.   must contain exactly one extended grapheme cluster.
+- `s`: The single-character string to convert to a `Character` instance. `s` must contain exactly one extended grapheme cluster.
 
 
 ---

@@ -22,6 +22,14 @@ object BackgroundAssetVersionInternalBetaRelease
 - [object BackgroundAssetVersionInternalBetaRelease.Relationships](backgroundassetversioninternalbetarelease/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `attributes` (BackgroundAssetVersionInternalBetaRelease.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (BackgroundAssetVersionInternalBetaRelease.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

@@ -30,8 +30,8 @@ This method doesn’t throw an error, even if the child task does. Instead, the 
 
 ## Parameters
 
-- `taskExecutor`: The task executor that the child task should be started on and keep using.   Explicitly passing   as the executor preference is equivalent to   calling the   method without a preference, and effectively   means to inherit the outer context’s executor preference.   You can also pass the   global executor explicitly.
-- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.
+- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to calling the `addTaskUnlessCancelled` method without a preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](globalconcurrentexecutor.md) global executor explicitly.
+- `priority`: The priority of the operation task. Omit this parameter or pass `nil` to inherit the task group’s base priority.
 - `operation`: The operation to execute as part of the task group.
 
 ## See Also

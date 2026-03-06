@@ -24,6 +24,13 @@ object AppCustomProductPageLocalization.Relationships
 - [object AppCustomProductPageLocalization.Relationships.SearchKeywords](appcustomproductpagelocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
   The data and links that describe the Search Keywords related to an custom.
 
+## Properties
+
+- `appCustomProductPageVersion` (AppCustomProductPageLocalization.Relationships.AppCustomProductPageVersion)
+- `appPreviewSets` (AppCustomProductPageLocalization.Relationships.AppPreviewSets)
+- `appScreenshotSets` (AppCustomProductPageLocalization.Relationships.AppScreenshotSets)
+- `searchKeywords` (AppCustomProductPageLocalization.Relationships.SearchKeywords)
+
 ## See Also
 
 - [object AppCustomProductPageLocalization.Attributes](appcustomproductpagelocalization/attributes-data.dictionary.md)

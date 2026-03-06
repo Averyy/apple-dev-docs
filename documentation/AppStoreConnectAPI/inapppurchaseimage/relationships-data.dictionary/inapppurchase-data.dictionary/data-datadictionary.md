@@ -14,6 +14,11 @@ The data structure that represents the in-app purchase for a in-app purchase ima
 object InAppPurchaseImage.Relationships.InAppPurchase.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -28,7 +28,7 @@ After calling `copyBytes(from:)`, the first `source.count` bytes of memory refer
 
 ## Parameters
 
-- `source`: A collection of   elements.   must   be less than or equal to this buffer’s  .
+- `source`: A collection of `UInt8` elements. `source.count` must be less than or equal to this buffer’s `count`.
 
 
 ---

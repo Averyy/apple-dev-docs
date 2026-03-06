@@ -14,6 +14,10 @@ A map of server-to-server notification failure reasons and counts that represent
 object Failures
 ```
 
+## Properties
+
+- `Any Key` (int32): A string that describes the success or error the server encountered as it attempted to send a notification to your server as part of a performance test. For possible keys, see [`sendAttemptResult`](sendattemptresult.md).
+
 ## See Also
 
 - [object PerformanceTestConfig](performancetestconfig.md)

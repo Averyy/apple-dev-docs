@@ -36,21 +36,21 @@ If there’s an error in a request, the response returns an HTTP status code in 
 
 ##### Identify Errors with the Method
 
-Responses that indicate the request’s  contains an error include:
+Responses that indicate the request’s *method* contains an error include:
 
 - `405` `METHOD_NOT_ALLOWED`: The method and path combination is not valid in the API. For example, `PATCH https://api.appstoreconnect.apple.com/v1/apps` is not valid because `PATCH` is not supported for the `apps` resource.
 - `403` `FORBIDDEN_ERROR`: The method and path combination is valid, but not allowed due to business rules; for example, because the caller’s role permissions don’t allow access.
 
 ##### Identify Errors with the Path
 
-Responses that indicate the request’s  contains an error include:
+Responses that indicate the request’s *path* contains an error include:
 
 - `404 PATH_ERROR`: The path is not valid. For example, `GET https://api.appstoreconnect.apple.com/v1/bananas` is not a valid path in this API.
 - `404 NOT_FOUND`: The resource does not exist. For example, `GET https://api.appstoreconnect.apple.com/v1/apps/9999999999` is requesting an app with an ID that does not exist.
 
 ##### Identify Errors with the Parameters
 
-Responses that indicate one of the request’s  contain an error include:
+Responses that indicate one of the request’s *parameters* contain an error include:
 
 - `400 PARAMETER_ERROR.ILLEGAL`: The parameter is not valid in this API. For example, in `GET https://api.appstoreconnect.apple.com/v1/apps?foo=1`, “`foo`” is not a valid parameter.
 - `400` `PARAMETER_ERROR.INVALID`: The parameter is allowed but has an invalid `value` or `type`.
@@ -58,7 +58,7 @@ Responses that indicate one of the request’s  contain an error include:
 
 ##### Identify Errors with the Request Entity
 
-Responses that indicate the request’s  contains an error include:
+Responses that indicate the request’s *entity* contains an error include:
 
 - `400 ENTITY_INVALID`: The request entity is the wrong type and is not valid JSON.
 - `409 ENTITY_ERROR`: The request entity is valid and in the right format, but the data in it is unacceptable; for example, it contains an invalid email address, or a duplicate locale.

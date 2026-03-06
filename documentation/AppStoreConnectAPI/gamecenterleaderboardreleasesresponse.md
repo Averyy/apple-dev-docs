@@ -14,6 +14,13 @@ A response that contains multiple leaderboard release resource.
 object GameCenterLeaderboardReleasesResponse
 ```
 
+## Properties
+
+- `data` ([GameCenterLeaderboardRelease]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardRelease](gamecenterleaderboardrelease.md)

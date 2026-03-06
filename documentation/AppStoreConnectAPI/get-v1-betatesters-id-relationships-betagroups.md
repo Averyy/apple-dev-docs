@@ -8,6 +8,14 @@ Get a list of group resource IDs associated with a beta tester.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/betaTesters/{id}/relationships/betaGroups`
+
+## Parameters
+
+- `limit` (integer): Number of resources to return.
+
 ## See Also
 
 - [List All Apps for a Beta Tester](get-v1-betatesters-_id_-apps.md)

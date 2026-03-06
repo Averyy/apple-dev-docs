@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/{id}/relationships/releases`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)

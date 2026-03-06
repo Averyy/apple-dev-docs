@@ -12,6 +12,11 @@
 object GameCenterLeaderboardSetRelease.Relationships.GameCenterLeaderboardSet.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

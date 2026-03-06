@@ -14,6 +14,10 @@ The response to a stations request.
 object StationsResponse
 ```
 
+## Properties
+
+- `data` ([Stations]) *(required)*: The [`Stations`](stations.md) included in the response for the request.
+
 ## See Also
 
 - [object Stations](stations.md)

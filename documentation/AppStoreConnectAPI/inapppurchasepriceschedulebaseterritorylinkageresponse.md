@@ -17,6 +17,11 @@ object InAppPurchasePriceScheduleBaseTerritoryLinkageResponse
 ### Dictionaries
 - [object InAppPurchasePriceScheduleBaseTerritoryLinkageResponse.Data](inapppurchasepriceschedulebaseterritorylinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchasePriceScheduleBaseTerritoryLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)

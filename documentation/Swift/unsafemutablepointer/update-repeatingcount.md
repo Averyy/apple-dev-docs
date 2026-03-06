@@ -27,7 +27,7 @@ The region of memory starting at this pointer and covering `count` instances of 
 ## Parameters
 
 - `repeatedValue`: The value used when updating this pointer’s memory.
-- `count`: The number of consecutive elements to update.    must not be negative.
+- `count`: The number of consecutive elements to update. `count` must not be negative.
 
 
 ---

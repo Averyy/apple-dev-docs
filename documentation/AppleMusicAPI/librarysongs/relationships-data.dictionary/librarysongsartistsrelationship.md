@@ -14,6 +14,12 @@ A relationship from the library song to its artists.
 object LibrarySongs.Relationships.LibrarySongsArtistsRelationship
 ```
 
+## Properties
+
+- `href` (string): A relative location for the relationship.
+- `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
+- `data` ([LibraryArtists]) *(required)*: The artists in the library associated with the song.
+
 ## See Also
 
 - [object LibrarySongs.Relationships.LibrarySongsAlbumsRelationship](librarysongs/relationships-data.dictionary/librarysongsalbumsrelationship.md)

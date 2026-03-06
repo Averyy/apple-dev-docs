@@ -14,6 +14,11 @@ The type and ID of a related App Clips resource.
 object App.Relationships.AppClips.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies an App Clips resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

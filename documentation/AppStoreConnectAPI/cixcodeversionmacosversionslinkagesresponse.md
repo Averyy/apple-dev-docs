@@ -17,6 +17,12 @@ object CiXcodeVersionMacOsVersionsLinkagesResponse
 ### Dictionaries
 - [object CiXcodeVersionMacOsVersionsLinkagesResponse.Data](cixcodeversionmacosversionslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([CiXcodeVersionMacOsVersionsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object CiXcodeVersion](cixcodeversion.md)

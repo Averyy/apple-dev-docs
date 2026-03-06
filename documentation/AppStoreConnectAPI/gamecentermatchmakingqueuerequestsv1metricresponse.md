@@ -20,6 +20,12 @@ object GameCenterMatchmakingQueueRequestsV1MetricResponse
 - [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data](gamecentermatchmakingqueuerequestsv1metricresponse/data-data.dictionary.md)
   The data structure in a response body for the match requests in a queue.
 
+## Properties
+
+- `data` ([GameCenterMatchmakingQueueRequestsV1MetricResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterMatchmakingAppRequestsV1MetricResponse](gamecentermatchmakingapprequestsv1metricresponse.md)

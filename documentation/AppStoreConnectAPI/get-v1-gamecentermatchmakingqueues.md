@@ -8,6 +8,16 @@ Get information about all queues.
 **Availability**:
 - App Store Connect API 3.1+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingQueues`
+
+## Parameters
+
+- `fields[gameCenterMatchmakingQueues]` ([string]): The fields of the queues to include in the response.
+- `include` ([string]): The type of rule set to include in the response.
+- `limit` (integer): The maximum number of queues to fetch.
+
 ## See Also
 
 - [Read queue information](get-v1-gamecentermatchmakingqueues-_id_.md)

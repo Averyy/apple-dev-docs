@@ -6,7 +6,7 @@
 A response that indicates the current status of a request to extend the subscription renewal date to all eligible subscribers.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -35,6 +35,14 @@ The App Store server also sends real-time notifications as it’s processing the
   The count of subscriptions that fail to receive a subscription-renewal-date extension.
 - [type succeededCount](succeededcount.md)
   The count of subscriptions that successfully receive a subscription-renewal-date extension.
+
+## Properties
+
+- `requestIdentifier` (requestIdentifier): The `UUID` that represents your request for a subscription-renewal-date extension.
+- `complete` (complete): A Boolean value that’s `TRUE` to indicate that the App Store completed your request to extend a subscription renewal date for all eligible subscribers. The value is `FALSE` if the request is in progress.
+- `completeDate` (completeDate): The date that the App Store completes the request. Appears only if `complete` is `TRUE`.
+- `failedCount` (failedCount): The final count of subscribers that fail to receive a subscription-renewal-date extension. Appears only if `complete` is `TRUE`.
+- `succeededCount` (succeededCount): The final count of subscribers that successfully receive a subscription-renewal-date extension. Appears only if `complete` is `TRUE`.
 
 ## See Also
 

@@ -125,7 +125,7 @@ Let Xcode draft your API documentation for you. Select a symbol in the source ed
 
 ![A screenshot of the Project navigator on the left, a file open in the source editor with generated DocC style comments above the structure name.](https://docs-assets.developer.apple.com/published/7316da7c55972c15a5a1f9957cf4a3fe/coding-assistant-generate-docs%402x.png)
 
-Xcode can add doc://com.apple.documentation/documentation/DocC-style comments to the source file above the symbol. For example, select a class and Xcode adds documentation for the class, its properties and methods, including the method parameters.
+Xcode can add [`DocC`](https://developer.apple.com/documentation/DocC)-style comments to the source file above the symbol. For example, select a class and Xcode adds documentation for the class, its properties and methods, including the method parameters.
 
 Xcode displays coding intelligence controls at the bottom of the source editor that summarizes the change. To see the response in the conversation area of the coding assistant, click the coding assistant button. To undo changes, click the Revert button.
 

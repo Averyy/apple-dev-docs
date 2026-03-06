@@ -20,6 +20,10 @@ object RoutingAppCoverageUpdateRequest
 - [object RoutingAppCoverageUpdateRequest.Data](routingappcoverageupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (RoutingAppCoverageUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object RoutingAppCoverage](routingappcoverage.md)

@@ -21,6 +21,10 @@ abs(B - F)
 
 #### Parameter Descriptions
 
+- **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
+- **`Background`**: The background input. Represented by `B` in the mathmatical equation.
+- **`Mix`**: The weight of the blend effect. The higher the `Mix`, the greater the intensity of the blend operation, and the more the effect is visually apparent. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
+
 #### Discussion
 
 The `Difference` node subtracts two inputs and takes the absolute value of the result, represented by the equation `abs(B - F)`. It uses the `Mix` input to determine the weight of the foreground in the blend. Higher values closer to `1` output a more intense difference, while lower values closer to `0` dim the effect. Below is an example of a node graph that uses the difference node to blend two images together into a single material:

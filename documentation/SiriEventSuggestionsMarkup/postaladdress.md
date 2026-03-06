@@ -18,6 +18,15 @@ object PostalAddress
 
 Prefer a physical address, not an administrative mailing address, to help Siri and Maps provide relevant information to the user.
 
+## Properties
+
+- `@type` (string) *(required)*
+- `addressCountry` (string) *(required)*: The country.
+- `addressLocality` (string) *(required)*: The city or town.
+- `addressRegion` (string): The region containing the locality.
+- `postalCode` (string): The postal code.
+- `streetAddress` (string) *(required)*: The street name and number.
+
 ## See Also
 
 - [object Person](person.md)

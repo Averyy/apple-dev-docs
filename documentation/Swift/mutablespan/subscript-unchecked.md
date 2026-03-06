@@ -28,7 +28,7 @@ This subscript does not validate `position`; this is an unsafe operation.
 
 ## Parameters
 
-- `position`: The offset of the element to access.    must be greater or equal to zero, and less than  .
+- `position`: The offset of the element to access. `position` must be greater or equal to zero, and less than `count`.
 
 
 ---

@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Attributes
 - locale:
 - name:
 
+## Properties
+
+- `locale` (string) *(required)*
+- `name` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships](gamecenterleaderboardsetlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

@@ -14,6 +14,10 @@ The attributes for the station genre resource.
 object StationGenres.Attributes
 ```
 
+## Properties
+
+- `name` (string) *(required)*: The name of the station genre.
+
 ## See Also
 
 - [object StationGenres.Relationships](stationgenres/relationships-data.dictionary.md)

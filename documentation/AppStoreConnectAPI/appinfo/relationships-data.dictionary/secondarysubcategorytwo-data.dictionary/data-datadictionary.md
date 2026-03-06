@@ -14,6 +14,11 @@ The type and ID of a related resource.
 object AppInfo.Relationships.SecondarySubcategoryTwo.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

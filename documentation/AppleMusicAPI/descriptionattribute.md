@@ -14,6 +14,11 @@ An object that represents a description attribute.
 object DescriptionAttribute
 ```
 
+## Properties
+
+- `short` (string): An abbreviated description to show inline or when the content appears alongside other content.
+- `standard` (string) *(required)*: A description to show when the content is prominently displayed.
+
 
 ---
 

@@ -12,6 +12,10 @@
 object App.Relationships.BuildUploads
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

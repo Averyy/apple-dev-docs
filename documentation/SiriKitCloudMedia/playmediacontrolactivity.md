@@ -22,6 +22,12 @@ If you specify both `playElapsedInterval` and `playElapsed`, the client sends th
 
 If you specify `playElapsedInterval`, but not `playElapsed`, the client uses the `playElapsedInterval` for both.
 
+## Properties
+
+- `playElapsed` (uint32): The number of seconds the client plays a piece of content before sending a `local.playing.elapsed` event.
+- `playElapsedInterval` (uint32): The number of seconds the client waits before sending a subsequent `local.playing.elapsed` event.
+- `playPaused` (uint32): The minimum pause duration, in seconds, that the client reports.
+
 ## See Also
 
 - [Configure Your Service Endpoints](configuration-resource.md)

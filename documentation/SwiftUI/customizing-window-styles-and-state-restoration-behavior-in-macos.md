@@ -9,7 +9,7 @@ Configure how your app’s windows look and function in macOS to provide an enga
 
 #### Overview
 
-The macOS target of [`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) demonstrates how you can leverage the window and scene customization APIs (available in macOS 15 and later) to tailor an app’s experience in macOS. This includes changing a toolbar’s appearance and visibility, extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior.
+The macOS target of [`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) demonstrates how you can leverage the window and scene customization APIs (available in macOS 15 and later) to tailor an app’s experience in macOS. This includes changing a toolbar’s appearance and visibility, extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior.
 
 ![A screenshot that shows the video player window in front of Destination Video’s main window.](https://docs-assets.developer.apple.com/published/d77c8afb576082a70fb6a3a14bc495d0/WindowCustomizationDestinationVideo%402x.png)
 

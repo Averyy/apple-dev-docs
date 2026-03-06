@@ -20,6 +20,10 @@ object AppStoreVersionAppClipDefaultExperienceLinkageRequest
 - [object AppStoreVersionAppClipDefaultExperienceLinkageRequest.Data](appstoreversionappclipdefaultexperiencelinkagerequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppStoreVersionAppClipDefaultExperienceLinkageRequest.Data) *(required)*: The types and IDs of related resources.
+
 ## See Also
 
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)

@@ -34,7 +34,7 @@ If the merchant has already accepted the Terms and Conditions, calling this meth
 
 ## Parameters
 
-- `token`: The token from your payment service provider. This token contains the   merchant identifier.
+- `token`: The token from your payment service provider. This token contains the merchant identifier.
 
 ## See Also
 

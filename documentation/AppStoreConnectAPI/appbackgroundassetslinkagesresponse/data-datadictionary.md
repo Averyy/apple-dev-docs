@@ -14,6 +14,11 @@ The the type and ID of a background asset resource linked to an app.
 object AppBackgroundAssetsLinkagesResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

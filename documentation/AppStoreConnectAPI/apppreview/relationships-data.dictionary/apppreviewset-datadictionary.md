@@ -20,6 +20,10 @@ object AppPreview.Relationships.AppPreviewSet
 - [object AppPreview.Relationships.AppPreviewSet.Data](apppreview/relationships-data.dictionary/apppreviewset-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (AppPreview.Relationships.AppPreviewSet.Data)
+
 
 ---
 

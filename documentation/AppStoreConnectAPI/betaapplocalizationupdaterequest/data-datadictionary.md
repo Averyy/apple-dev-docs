@@ -20,6 +20,12 @@ object BetaAppLocalizationUpdateRequest.Data
 - [object BetaAppLocalizationUpdateRequest.Data.Attributes](betaapplocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (BetaAppLocalizationUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

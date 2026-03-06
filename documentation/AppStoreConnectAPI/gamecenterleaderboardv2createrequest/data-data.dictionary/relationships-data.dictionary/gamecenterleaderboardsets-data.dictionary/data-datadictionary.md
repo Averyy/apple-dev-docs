@@ -17,6 +17,11 @@ object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterLeaderb
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

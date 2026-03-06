@@ -8,6 +8,14 @@ Read an app encryption declaration associated with a specific build.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/builds/{id}/appEncryptionDeclaration`
+
+## Parameters
+
+- `fields[appEncryptionDeclarations]` ([string]): Fields to return for included related types.
+
 ## See Also
 
 - [Read the Build Beta Details Information of a Build](get-v1-builds-_id_-buildbetadetail.md)

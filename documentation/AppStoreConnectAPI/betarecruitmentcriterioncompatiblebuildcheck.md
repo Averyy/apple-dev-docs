@@ -20,6 +20,13 @@ object BetaRecruitmentCriterionCompatibleBuildCheck
 - [object BetaRecruitmentCriterionCompatibleBuildCheck.Attributes](betarecruitmentcriterioncompatiblebuildcheck/attributes-data.dictionary.md)
   Attributes that describe a beta recruitment criteria-compatible, build-check resource.
 
+## Properties
+
+- `attributes` (BetaRecruitmentCriterionCompatibleBuildCheck.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheckResponse](betarecruitmentcriterioncompatiblebuildcheckresponse.md)

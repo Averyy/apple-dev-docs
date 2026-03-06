@@ -18,6 +18,11 @@ object MaximumNumberOfMessagesReachedError
 
 For information about the maximum number of messages, see [`Upload Message`](upload-message.md).
 
+## Properties
+
+- `errorCode` (number)
+- `errorMessage` (string)
+
 ## See Also
 
 - [object AltTextTooLongError](alttexttoolongerror.md)

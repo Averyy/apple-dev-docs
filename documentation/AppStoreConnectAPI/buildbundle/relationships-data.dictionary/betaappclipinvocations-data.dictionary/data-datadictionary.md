@@ -14,6 +14,11 @@ The type and ID of a related Beta App Clip Invocations resource.
 object BuildBundle.Relationships.BetaAppClipInvocations.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Beta App Clip Invocations resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

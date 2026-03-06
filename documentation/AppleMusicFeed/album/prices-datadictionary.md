@@ -45,6 +45,11 @@ The feed export is in Parquet format. This data example is in JSON format for il
 - [object Album.Prices.Price](album/prices-data.dictionary/price.md)
   Information about a pricing offer.
 
+## Properties
+
+- `prices` ([Album.Prices.Price]): A list of localized pricing information for the content.
+- `storefront` (string)
+
 ## See Also
 
 - [object Album.ArtistRole](album/artistrole.md)

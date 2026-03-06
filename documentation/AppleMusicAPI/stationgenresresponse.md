@@ -14,6 +14,10 @@ The response to a specific station genres resource request.
 object StationGenresResponse
 ```
 
+## Properties
+
+- `data` ([StationGenres]) *(required)*: The [`StationGenres`](stationgenres.md) included in the response for the request.
+
 ## See Also
 
 - [object Stations](stations.md)

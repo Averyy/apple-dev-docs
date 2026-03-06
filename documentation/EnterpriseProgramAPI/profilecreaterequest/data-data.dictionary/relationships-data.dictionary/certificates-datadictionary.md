@@ -17,6 +17,10 @@ object ProfileCreateRequest.Data.Relationships.Certificates
 - [object ProfileCreateRequest.Data.Relationships.Certificates.Data](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` ([ProfileCreateRequest.Data.Relationships.Certificates.Data]) *(required)*
+
 ## See Also
 
 - [object ProfileCreateRequest.Data.Relationships.BundleId](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)

@@ -17,6 +17,11 @@ object SubscriptionAppStoreReviewScreenshotLinkageResponse
 ### Dictionaries
 - [object SubscriptionAppStoreReviewScreenshotLinkageResponse.Data](subscriptionappstorereviewscreenshotlinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionAppStoreReviewScreenshotLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

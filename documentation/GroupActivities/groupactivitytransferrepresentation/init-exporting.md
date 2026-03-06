@@ -20,7 +20,7 @@ init<ActivityType>(exporting: @escaping @Sendable (Item) async throws -> Activit
 
 ## Parameters
 
-- `exporting`: A closure that creates the   for the given item.
+- `exporting`: A closure that creates the [`GroupActivity`](groupactivity.md) for the given item.
 
 
 ---

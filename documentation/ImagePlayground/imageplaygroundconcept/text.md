@@ -28,7 +28,7 @@ Call this method when you want to use short strings to generate an image. The sy
 
 ## Parameters
 
-- `text`: The text that describes the image. Your text must be relatively   short, so specify single words or brief sentences. If you specify a   string that exceeds the model’s supported maximum string length, the   system tries to extract important or interesting concepts and use those instead.
+- `text`: The text that describes the image. Your text must be relatively short, so specify single words or brief sentences. If you specify a string that exceeds the model’s supported maximum string length, the system tries to extract important or interesting concepts and use those instead.
 
 ## See Also
 

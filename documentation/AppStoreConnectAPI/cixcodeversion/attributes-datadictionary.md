@@ -20,6 +20,12 @@ object CiXcodeVersion.Attributes
 - [object CiXcodeVersion.Attributes.TestDestinations](cixcodeversion/attributes-data.dictionary/testdestinations-data.dictionary.md)
   The test destinations available for an Xcode version.
 
+## Properties
+
+- `name` (string): The name of the Xcode version.
+- `testDestinations` ([CiXcodeVersion.Attributes.TestDestinations]): A list of the Xcode version’s available test destinations.
+- `version` (string): The Xcode version.
+
 ## See Also
 
 - [object CiXcodeVersion.Relationships](cixcodeversion/relationships-data.dictionary.md)

@@ -12,6 +12,10 @@
 object App.Relationships.CustomerReviewSummarizations
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

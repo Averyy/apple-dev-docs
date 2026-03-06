@@ -14,6 +14,15 @@ Information the client provides about a sequence of requests and responses to pr
 object Session
 ```
 
+## Properties
+
+- `identifier` (string) *(required)*: A stable identifier for all requests and responses relating to a specific intent.
+- `constraints` (Constraints) *(required)*: Client limitations on content quantity and type that apply to all responses your service makes for this session.
+- `requested` (date-time) *(required)*: The time the user initiates the request.
+- `deadline` (date-time) *(required)*: The time by which the client expects a response from your service to provide a real-time interaction with the user.
+- `playerContext` (PlayerContext): Information about content the client is playing, if any.
+- `version` (string) *(required)*: The version of the `SiriKitMediaAPI` library the client is using.
+
 ## See Also
 
 - [object Invocation](invocation.md)

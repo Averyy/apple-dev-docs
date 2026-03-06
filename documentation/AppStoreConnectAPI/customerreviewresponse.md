@@ -14,6 +14,12 @@ A response that contains a single Customer Review resource.
 object CustomerReviewResponse
 ```
 
+## Properties
+
+- `data` (CustomerReview) *(required)*: The data structure that represents a `CustomerReviews` resource.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([CustomerReviewResponseV1]): The requested relationship data.
+
 ## See Also
 
 - [object CustomerReviewsResponse](customerreviewsresponse.md)

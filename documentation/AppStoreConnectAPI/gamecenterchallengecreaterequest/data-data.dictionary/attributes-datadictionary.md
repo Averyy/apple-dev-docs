@@ -14,6 +14,13 @@ The attributes you set that describe the new challenge resource.
 object GameCenterChallengeCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `challengeType` (string) *(required)*
+- `referenceName` (string) *(required)*
+- `repeatable` (boolean)
+- `vendorIdentifier` (string) *(required)*
+
 
 ---
 

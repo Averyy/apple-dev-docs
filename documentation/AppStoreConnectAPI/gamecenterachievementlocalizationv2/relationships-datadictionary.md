@@ -26,6 +26,11 @@ object GameCenterAchievementLocalizationV2.Relationships
 - [object GameCenterAchievementLocalizationV2.Relationships.Version](gamecenterachievementlocalizationv2/relationships-data.dictionary/version-data.dictionary.md)
   The data that describes the version of the Game Center achievement localization v2.
 
+## Properties
+
+- `image` (GameCenterAchievementLocalizationV2.Relationships.Image)
+- `version` (GameCenterAchievementLocalizationV2.Relationships.Version)
+
 ## See Also
 
 - [object GameCenterAchievementLocalizationV2.Attributes](gamecenterachievementlocalizationv2/attributes-data.dictionary.md)

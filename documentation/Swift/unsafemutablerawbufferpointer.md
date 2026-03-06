@@ -36,7 +36,7 @@ In addition to its collection interface, an `UnsafeMutableRawBufferPointer` inst
 
 To access the underlying memory through typed operations, the memory must be bound to a trivial type.
 
-> **Note**: A  can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums. Copying memory that contains values of nontrivial types can only be done safely with a typed pointer. Copying bytes directly from nontrivial, in-memory values does not produce valid copies and can only be done by calling a C API, such as `memmove()`.
+> **Note**: A *trivial type* can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums. Copying memory that contains values of nontrivial types can only be done safely with a typed pointer. Copying bytes directly from nontrivial, in-memory values does not produce valid copies and can only be done by calling a C API, such as `memmove()`.
 
 ### Unsafemutablerawbufferpointer Semantics
 

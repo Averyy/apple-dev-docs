@@ -20,6 +20,10 @@ object BetaAppLocalizationCreateRequest.Data.Relationships.App
 - [object BetaAppLocalizationCreateRequest.Data.Relationships.App.Data](betaapplocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (BetaAppLocalizationCreateRequest.Data.Relationships.App.Data) *(required)*
+
 
 ---
 

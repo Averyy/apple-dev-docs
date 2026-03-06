@@ -27,6 +27,14 @@ To learn more about the response that includes this alternative distribution pac
 - [object AlternativeDistributionPackage.Attributes](alternativedistributionpackage/attributes-data.dictionary.md)
   Attributes that describe an alternative distribution package resource.
 
+## Properties
+
+- `attributes` (AlternativeDistributionPackage.Attributes)
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package.
+- `links` (ResourceLinks)
+- `relationships` (AlternativeDistributionPackage.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AlternativeDistributionPackageCreateRequest](alternativedistributionpackagecreaterequest.md)

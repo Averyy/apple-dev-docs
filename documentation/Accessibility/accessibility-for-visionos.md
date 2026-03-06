@@ -11,7 +11,7 @@ Design your visionOS app with accessibility in mind. Incorporate the accessibili
 ## Topics
 
 ### Design
-- [Improving accessibility support in your visionOS app](../visionos/improving-accessibility-support-in-your-app.md)
+- [Improving accessibility support in your visionOS app](../visionOS/improving-accessibility-support-in-your-app.md)
   Update your code to ensure everyone can access your app’s content in visionOS.
 ### Head-anchored content
 - [static var prefersHeadAnchorAlternative: Bool](accessibilitysettings/prefersheadanchoralternative.md)

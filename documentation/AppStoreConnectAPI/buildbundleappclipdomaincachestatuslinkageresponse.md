@@ -17,6 +17,11 @@ object BuildBundleAppClipDomainCacheStatusLinkageResponse
 ### Dictionaries
 - [object BuildBundleAppClipDomainCacheStatusLinkageResponse.Data](buildbundleappclipdomaincachestatuslinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BuildBundleAppClipDomainCacheStatusLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BuildBetaDetail](buildbetadetail.md)

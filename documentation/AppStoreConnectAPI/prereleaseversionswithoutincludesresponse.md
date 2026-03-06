@@ -12,6 +12,12 @@
 object PreReleaseVersionsWithoutIncludesResponse
 ```
 
+## Properties
+
+- `data` ([PrereleaseVersion]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object PrereleaseVersion](prereleaseversion.md)

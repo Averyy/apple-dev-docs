@@ -8,6 +8,15 @@ Get information about the routing app coverage file and its upload and processin
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/routingAppCoverages/{id}`
+
+## Parameters
+
+- `fields[routingAppCoverages]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)

@@ -16,13 +16,17 @@ Hints are disclosed after the learner taps the Hint button in a page’s live vi
 
 Add hints to your playground page by creating a property list at the following path, alongside the rest of the resources for the page:
 
-`.playgroundbook/Contents/``.playgroundchapter/Pages/``.playgroundpage/PrivateResources/Hints.plist`
+*<book name>*`.playgroundbook/Contents/`*<chapter name>*`.playgroundchapter/Pages/`*<page name>*`.playgroundpage/PrivateResources/Hints.plist`
 
 The root key for the hints property list is named `Hints`, and it must contain an array of dictionaries. Hints are shown in Swift Playgrounds in the same order as they appear in this array.
 
 ##### Add Keys to the Dictionaries
 
 Add the following keys in each dictionary in the hints array:
+
+- **`Content`**: The text of the hint.
+- **`FileReference`**: The path to a text file that contains the hint. This path is relative to the page’s Resources folder, so a hint file located at the following path only needs to be referenced as `MyHint.txt` in the value of the `FileReference` key: **`.playgroundbook/Contents/`**`.playgroundchapter/Pages/`**`.playgroundpage/PrivateResources/MyHint.txt`
+- **`SpoilerButtonTitle`**: A hint that’s hidden until the learner taps a button. Include the `SpoilerButtonTitle` key to hide the hint. The string you supply as the value for the key becomes the button’s title.
 
 Don’t include both the `Content` and `FileReference` keys in the same dictionary. You can use either one, but not both, because they both serve the role of provider of the hint text.
 

@@ -14,6 +14,12 @@ Attributes that describe a review submission resource.
 object ReviewSubmission.Attributes
 ```
 
+## Properties
+
+- `platform` (Platform)
+- `state` (string)
+- `submittedDate` (date-time)
+
 ## See Also
 
 - [object ReviewSubmission.Relationships](reviewsubmission/relationships-data.dictionary.md)

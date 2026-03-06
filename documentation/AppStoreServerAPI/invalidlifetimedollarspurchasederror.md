@@ -6,7 +6,7 @@
 An error that indicates the value in the lifetime dollars purchased field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -21,6 +21,11 @@ object InvalidLifetimeDollarsPurchasedError
 #### Discussion
 
 For valid `lifetimeDollarsPurchased` values in a [`ConsumptionRequestV1`](consumptionrequestv1.md), see [`lifetimeDollarsPurchased`](lifetimedollarspurchased.md).
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

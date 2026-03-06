@@ -8,6 +8,20 @@ Read localized version-level information.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/{id}`
+
+## Parameters
+
+- `fields[appPreviewSets]` ([string])
+- `fields[appScreenshotSets]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
+- `include` ([string])
+- `limit[appPreviewSets]` (integer)
+- `limit[appScreenshotSets]` (integer)
+- `limit[searchKeywords]` (integer)
+
 ## See Also
 
 - [List All App Store Version Localizations for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionlocalizations.md)

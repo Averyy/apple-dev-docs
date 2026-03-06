@@ -30,6 +30,14 @@ object GameCenterLeaderboardImageV2
 - [object GameCenterLeaderboardImageV2.Relationships](gamecenterleaderboardimagev2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardImageV2.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (GameCenterLeaderboardImageV2.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardImageV2CreateRequest](gamecenterleaderboardimagev2createrequest.md)

@@ -51,6 +51,17 @@ Use the notification type along with the transaction and subscription renewal in
 - [type consumptionRequestReason](consumptionrequestreason.md)
   The customer-provided reason for a refund request.
 
+## Properties
+
+- `appAppleId` (appAppleId): The unique identifier of the app that the notification applies to. This property is available for apps that users download from the App Store. It isn’t present in the sandbox environment.
+- `bundleId` (bundleId): The bundle identifier of the app.
+- `bundleVersion` (bundleVersion): The version of the build that identifies an iteration of the bundle.
+- `consumptionRequestReason` (consumptionRequestReason): The reason the customer requested the refund. This field appears only for `CONSUMPTION_REQUEST` notifications, which the server sends when a customer initiates a refund request for a consumable in-app purchase or auto-renewable subscription.
+- `environment` (environment): The server environment that the notification applies to, either `sandbox` or `production`.
+- `signedRenewalInfo` (JWSRenewalInfo): Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format. This field appears only for notifications that apply to auto-renewable subscriptions.
+- `signedTransactionInfo` (JWSTransaction): Transaction information signed by the App Store, in JSON Web Signature (JWS) format.
+- `status` (status): The status of an auto-renewable subscription as of the `signedDate` in the [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md). This field appears only for notifications sent for auto-renewable subscriptions.
+
 ## See Also
 
 - [object summary](summary.md)

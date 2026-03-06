@@ -17,6 +17,12 @@ Direct texture read.
 
 #### Parameter Description
 
+- **`File`**: The image file to use for the texture.
+- **`Default`**: The default value to use if the ​`File`​ parameter fails to resolve.
+- **`X`**: The X position of the pixel that the node reads.
+- **Y**: The Y position of the pixel that the node reads.
+- **`Lod`**: The specific LOD level that the node samples from.
+
 #### Discussion
 
 The `Image 2D Read` node performs a straight read from a 2D texture without a sampler. Use this node if you have a texture that’s just data.

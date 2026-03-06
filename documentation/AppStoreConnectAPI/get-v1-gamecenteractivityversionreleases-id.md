@@ -8,6 +8,15 @@ Get information for a specific Game Center activity version release.
 **Availability**:
 - App Store Connect API 4.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivityVersionReleases/{id}`
+
+## Parameters
+
+- `fields[gameCenterActivityVersionReleases]` ([string])
+- `include` ([string])
+
 ## See Also
 
 - [Add an activity version release](post-v1-gamecenteractivityversionreleases.md)

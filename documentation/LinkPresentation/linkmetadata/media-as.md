@@ -35,8 +35,8 @@ let value = try await metadata.media(.image, as: SwiftUI.Image.self) // `value` 
 
 ## Parameters
 
-- `attachment`: The kind of attachment to access, such as  ,  , and  .
-- `type`: The   type to try to load the media data into. This type must support the content type of the attachment.
+- `attachment`: The kind of attachment to access, such as `.image`, `.icon`, and `.video`.
+- `type`: The `Transferable` type to try to load the media data into. This type must support the content type of the attachment.
 
 
 ---

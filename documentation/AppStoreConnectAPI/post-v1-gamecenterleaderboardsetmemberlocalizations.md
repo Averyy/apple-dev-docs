@@ -12,6 +12,10 @@ Add a new leaderboard set localization.
 
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardSetMemberLocalizations`
+
 ## See Also
 
 - [Read leaderboard set member localization information](get-v1-gamecenterleaderboardsetmemberlocalizations.md)

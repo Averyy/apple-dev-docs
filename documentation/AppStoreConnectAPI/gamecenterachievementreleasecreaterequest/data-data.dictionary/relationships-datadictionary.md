@@ -18,6 +18,11 @@ object GameCenterAchievementReleaseCreateRequest.Data.Relationships
 - [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAchievement](gamecenterachievementreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
 - [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterDetail](gamecenterachievementreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 
+## Properties
+
+- `gameCenterAchievement` (GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAchievement) *(required)*
+- `gameCenterDetail` (GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterDetail) *(required)*
+
 
 ---
 

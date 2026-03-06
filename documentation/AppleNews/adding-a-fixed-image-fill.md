@@ -8,6 +8,8 @@ Add an image that remains stationary when the user scrolls.
 
 The fixed image fill is one of the most captivating effects in Apple News Format. A fixed image fill stays still when the user scrolls. As long as any portion of the filled component is visible in the viewport, the image maintains one position, while the rest of the article seems to scroll independently of the image.
 
+**On this page, you’ll learn how to use the fixed image fill.**
+
 ![Screenshot of an Apple News article with a fixed image fill on iPad.](https://docs-assets.developer.apple.com/published/a9c06288356c7a5ed7d63b9bdd6e2ac3/media-3624928%402x.png)
 
 ##### Create a Componentlayout Object for the Fixed Image

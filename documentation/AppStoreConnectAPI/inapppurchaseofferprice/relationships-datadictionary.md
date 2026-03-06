@@ -22,6 +22,11 @@ object InAppPurchaseOfferPrice.Relationships
 - [object InAppPurchaseOfferPrice.Relationships.Territory](inapppurchaseofferprice/relationships-data.dictionary/territory-data.dictionary.md)
   The data that describes the territory of the in-app purchase offer price.
 
+## Properties
+
+- `pricePoint` (InAppPurchaseOfferPrice.Relationships.PricePoint)
+- `territory` (InAppPurchaseOfferPrice.Relationships.Territory)
+
 
 ---
 

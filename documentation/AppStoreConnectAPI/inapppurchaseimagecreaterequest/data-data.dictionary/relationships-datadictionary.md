@@ -20,6 +20,10 @@ object InAppPurchaseImageCreateRequest.Data.Relationships
 - [object InAppPurchaseImageCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseimagecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `inAppPurchase` (InAppPurchaseImageCreateRequest.Data.Relationships.InAppPurchase) *(required)*
+
 ## See Also
 
 - [object InAppPurchaseImageCreateRequest.Data.Attributes](inapppurchaseimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)

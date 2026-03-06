@@ -17,6 +17,11 @@ object ErrorLinks.Associated
 ### Objects
 - [object ErrorLinks.Associated.Meta](errorlinks/associated-data.dictionary/meta-data.dictionary.md)
 
+## Properties
+
+- `href` (uri-reference)
+- `meta` (ErrorLinks.Associated.Meta)
+
 
 ---
 

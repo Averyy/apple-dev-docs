@@ -30,7 +30,7 @@ To identify an item in the `addedItems` and `allItems` parameters, use the itemâ
 
 - `dataScanner`: The data scanner that recognizes the item.
 - `addedItems`: The items that the data scanner starts tracking.
-- `allItems`: The current items that the data scanner tracks. Text items   appear in the reading order of the language and region.
+- `allItems`: The current items that the data scanner tracks. Text items appear in the reading order of the language and region.
 
 ## See Also
 

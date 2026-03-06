@@ -14,6 +14,14 @@ Attributes whose values you’re changing as part of the update request.
 object AppInfoLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `name` (string)
+- `privacyPolicyText` (string)
+- `privacyPolicyUrl` (string)
+- `subtitle` (string)
+- `privacyChoicesUrl` (string)
+
 
 ---
 

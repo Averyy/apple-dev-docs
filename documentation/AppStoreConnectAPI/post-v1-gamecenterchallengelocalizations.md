@@ -12,6 +12,10 @@ Add a localization for a specific Game Center challenge.
 
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/gameCenterChallengeLocalizations`
+
 ## See Also
 
 - [Read challenge localization information](get-v1-gamecenterchallengelocalizations-_id_.md)

@@ -20,6 +20,13 @@ object SubscriptionOfferCode.Relationships
 - [object SubscriptionOfferCode.Relationships.Prices](subscriptionoffercode/relationships-data.dictionary/prices-data.dictionary.md)
 - [object SubscriptionOfferCode.Relationships.Subscription](subscriptionoffercode/relationships-data.dictionary/subscription-data.dictionary.md)
 
+## Properties
+
+- `customCodes` (SubscriptionOfferCode.Relationships.CustomCodes)
+- `oneTimeUseCodes` (SubscriptionOfferCode.Relationships.OneTimeUseCodes)
+- `prices` (SubscriptionOfferCode.Relationships.Prices)
+- `subscription` (SubscriptionOfferCode.Relationships.Subscription)
+
 ## See Also
 
 - [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)

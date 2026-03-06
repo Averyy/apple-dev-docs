@@ -40,6 +40,8 @@ This section describes how to use the HTML tags Apple News Format supports.
 
 > **Note**: Generic containers and autonomous custom elements such as `<span>` and `<div>` are allowed; however, they have no effect until you apply styling to them.
 
+**Paragraphs**
+
 Begin each paragraph block with `<p>`, and end each paragraph with `</p>`.
 
 For example, this code:
@@ -56,9 +58,15 @@ Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in
 Temporibus autem et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque rerum hic tenetur.
 ```
 
+**Strong (Bold)**
+
 Use `<strong>` or `<b>` tags around the text you want in bold.
 
+**Emphasis (Italics)**
+
 Use `<em>` or `<i>` tags around the text you want emphasized.
+
+**Hyperlinks**
 
 Use the HTML `<a href="">` tag for links.
 
@@ -77,6 +85,8 @@ To link to a component in another article, you must include an Apple News URL fo
 ```html
 The recipe is <a href=\"https://apple.news/A5vHgPPmQSvuIxPjeXLTdGQ#TextComponent-1\">here</a>.
 ```
+
+**Lists**
 
 Use the `<ul>` tag to start an unordered (bulleted) list and the `<ol>` tag to start an ordered (numbered) list. Use the `<li>` tag to indicate each item in a list.
 
@@ -102,6 +112,8 @@ Results in this numbered list:
 1. apples
 2. oranges
 
+**Line Breaks**
+
 To create a single line break, use the `<br>` or `<br/>` tag.
 
 For example, this HTML code:
@@ -118,9 +130,15 @@ Apple
 
 Cupertino, CA
 
+**Subscript and Superscript**
+
 Use `<sub>` or `<sup>` tags around the text.
 
+**Strikethrough**
+
 Use `<del>` or `<s>` tags around the text.
+
+**Preformatted Text**
 
 To represent preformatted blocks of text and preserve their white space, use the `<pre>` tag around the block.
 
@@ -141,19 +159,29 @@ var occupations = [
 
 For information on displaying the contents of your `<pre>` tag using a monospaced font, see [`Text Styling`](using-html-with-apple-news-format#Text-Styling.md).
 
+**Code**
+
 To add text that represents code to your article, use the HTML `<code>` or `<samp>` tags around the text.
 
 For information on displaying the contents of your `<code>` or `<samp>` tag using a monospaced font, see [`Text Styling`](using-html-with-apple-news-format#Text-Styling.md).
 
+**Footer**
+
 To define a footer that isn’t part of the main story — like an author biography or copyright notice — use `<footer>` tags.
 
+**Aside**
+
 You can use `<aside>` tags to define a section of the text that is related to, but not part of, the main story. Using an [`Aside`](https://developer.apple.com/documentation/applenewsformat/aside) component has the additional benefit of helping Siri make more informed recommendations.
+
+**Block Quote**
 
 To set off a long quotation (or any text) in your article, you can use the HTML `<blockquote>` tag. However, if you want to use different margins for your block quote, use the Apple News Format [`Quote`](https://developer.apple.com/documentation/applenewsformat/quote) component instead.
 
 ##### Text Styling
 
 You can change the appearance of text in your article using styles from Apple News Format, HTML tags, or a combination of both. The following sections show you how to use HTML with Apple News Format text styles.
+
+**Default Styles for Tags**
 
 You can create text styles that automatically get applied to HTML-tagged text, by using special names for your text style objects in [`ArticleDocument.textStyles`](https://developer.apple.com/documentation/applenewsformat/articledocument/textstyles-data.dictionary). Once you define the style for a specific HTML tag, then all occurrences of the HTML tag in your article receive that same text style.
 
@@ -167,6 +195,8 @@ For example, if you create a text style called `default-tag-pre` as shown here, 
   }
 }
 ```
+
+**References to Text Styles**
 
 You can also refer to any of your text styles by name in supported HTML tags. Within your HTML tag, use the `data-anf-textstyle` attribute to refer to the text style you want to use for your HTML-formatted text component.
 
@@ -182,7 +212,11 @@ For example, if you already have a custom text style called `authorNameStyle`, y
 ]
 ```
 
+**Special Characters**
+
 Apple News Format supports special characters that are encoded as HTML entities. This includes named entities like `&quot`; (for a double-quote character) or `&infin`; (for an infinity sign (∞)), as well as numeric entities like `&#169`; (for a copyright symbol (©)).
+
+**HTML Attributes**
 
 Apple News Format ignores most attributes on your HTML tags, but there are some exceptions. You can use:
 
@@ -193,7 +227,7 @@ Apple News Format ignores most attributes on your HTML tags, but there are some 
 
 The following is a list of unsupported HTML tags. Apple News Format rejects articles that contain HTML formatting with these tags.
 
-|  |  |
+| **Unsupported tag** | **Replacement tag** |
 | --- | --- |
 | `<img>` | Use the [`Photo`](https://developer.apple.com/documentation/applenewsformat/photo), [`Portrait`](https://developer.apple.com/documentation/applenewsformat/portrait), [`Figure`](https://developer.apple.com/documentation/applenewsformat/figure), or [`Logo`](https://developer.apple.com/documentation/applenewsformat/logo) component instead. If none of those components describes your content, you can use the generic [`Image`](https://developer.apple.com/documentation/applenewsformat/image) component. |
 | `<video>` | Use the [`Video`](https://developer.apple.com/documentation/applenewsformat/video) or [`EmbedWebVideo`](https://developer.apple.com/documentation/applenewsformat/embedwebvideo) (for YouTube and Vimeo video) component instead. |

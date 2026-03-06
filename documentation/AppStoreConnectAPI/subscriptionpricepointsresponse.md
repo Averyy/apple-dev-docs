@@ -12,6 +12,13 @@
 object SubscriptionPricePointsResponse
 ```
 
+## Properties
+
+- `data` ([SubscriptionPricePoint]) *(required)*
+- `included` ([Territory])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionPricePointResponse](subscriptionpricepointresponse.md)

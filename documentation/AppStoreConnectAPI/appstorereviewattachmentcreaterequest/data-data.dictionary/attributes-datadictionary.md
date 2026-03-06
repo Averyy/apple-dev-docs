@@ -14,6 +14,11 @@ Attributes that you set that describe the new resource.
 object AppStoreReviewAttachmentCreateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object AppStoreReviewAttachmentCreateRequest.Data.Relationships](appstorereviewattachmentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

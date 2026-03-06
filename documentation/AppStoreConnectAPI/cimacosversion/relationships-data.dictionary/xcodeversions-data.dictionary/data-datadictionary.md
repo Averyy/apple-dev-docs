@@ -14,6 +14,11 @@ The type and ID of a related Xcode Versions resource.
 object CiMacOsVersion.Relationships.XcodeVersions.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Xcode Versions resource.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

@@ -22,6 +22,13 @@ object UserUpdateRequest.Data
 - [object UserUpdateRequest.Data.Relationships](userupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `attributes` (UserUpdateRequest.Data.Attributes): The resource’s attributes.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
+- `relationships` (UserUpdateRequest.Data.Relationships): The types and IDs of the related data to update.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

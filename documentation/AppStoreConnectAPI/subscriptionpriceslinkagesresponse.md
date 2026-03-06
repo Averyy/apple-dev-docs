@@ -20,6 +20,12 @@ object SubscriptionPricesLinkagesResponse
 - [object SubscriptionPricesLinkagesResponse.Data](subscriptionpriceslinkagesresponse/data-data.dictionary.md)
   The data structure that represents a subscription prices linkages response resource.
 
+## Properties
+
+- `data` ([SubscriptionPricesLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)

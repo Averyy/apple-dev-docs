@@ -48,6 +48,12 @@ This object is the response that contains a list of alternative distribution pac
 }
 ```
 
+## Properties
+
+- `data` ([AlternativeDistributionPackageDelta]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)

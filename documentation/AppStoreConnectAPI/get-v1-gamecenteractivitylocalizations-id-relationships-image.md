@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/gameCenterActivityLocalizations/{id}/relationships/image`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Read activity localization information](get-v1-gamecenteractivitylocalizations-_id_.md)

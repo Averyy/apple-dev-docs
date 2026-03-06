@@ -14,6 +14,12 @@ A response that contains a single challenge resource.
 object GameCenterChallengeVersionReleaseResponse
 ```
 
+## Properties
+
+- `data` (GameCenterChallengeVersionRelease) *(required)*
+- `included` ([GameCenterChallengeVersion])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)

@@ -12,6 +12,16 @@
 object AppEventScreenshot.Attributes
 ```
 
+## Properties
+
+- `appEventAssetType` (AppEventAssetType)
+- `assetDeliveryState` (AppMediaAssetState)
+- `assetToken` (string)
+- `fileName` (string)
+- `fileSize` (integer)
+- `imageAsset` (ImageAsset)
+- `uploadOperations` ([UploadOperation])
+
 ## See Also
 
 - [object AppEventScreenshot.Relationships](appeventscreenshot/relationships-data.dictionary.md)

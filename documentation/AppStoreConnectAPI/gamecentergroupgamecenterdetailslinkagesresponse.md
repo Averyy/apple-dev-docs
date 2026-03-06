@@ -17,6 +17,12 @@ object GameCenterGroupGameCenterDetailsLinkagesResponse
 ### Dictionaries
 - [object GameCenterGroupGameCenterDetailsLinkagesResponse.Data](gamecentergroupgamecenterdetailslinkagesresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` ([GameCenterGroupGameCenterDetailsLinkagesResponse.Data]) *(required)*
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

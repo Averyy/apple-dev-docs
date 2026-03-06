@@ -14,6 +14,11 @@ The request body for turning off automatic renewal of a subscription.
 object SubscriptionCancelRequest
 ```
 
+## Properties
+
+- `requestInfo` (RequestInfo) *(required)*
+- `storefront` (storefront)
+
 ## See Also
 
 - [Cancel a Subscription](cancel-a-subscription.md)

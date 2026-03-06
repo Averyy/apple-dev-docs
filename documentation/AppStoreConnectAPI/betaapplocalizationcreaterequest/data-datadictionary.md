@@ -22,6 +22,12 @@ object BetaAppLocalizationCreateRequest.Data
 - [object BetaAppLocalizationCreateRequest.Data.Relationships](betaapplocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `attributes` (BetaAppLocalizationCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
+- `relationships` (BetaAppLocalizationCreateRequest.Data.Relationships) *(required)*: Navigational links to related data and included resource types and IDs.
+- `type` (string) *(required)*: The resource type.
+
 
 ---
 

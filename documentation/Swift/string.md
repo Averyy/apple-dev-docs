@@ -25,13 +25,13 @@ struct String
 
 A string is a series of characters, such as `"Swift"`, that forms a collection. Strings in Swift are Unicode correct and locale insensitive, and are designed to be efficient. The `String` type bridges with the Objective-C class `NSString` and offers interoperability with C functions that works with strings.
 
-You can create new strings using string literals or string interpolations. A  is a series of characters enclosed in quotes.
+You can create new strings using string literals or string interpolations. A *string literal* is a series of characters enclosed in quotes.
 
 ```swift
 let greeting = "Welcome!"
 ```
 
- are string literals that evaluate any included expressions and convert the results to string form. String interpolations give you an easy way to build a string from multiple pieces. Wrap each expression in a string interpolation in parentheses, prefixed by a backslash.
+*String interpolations* are string literals that evaluate any included expressions and convert the results to string form. String interpolations give you an easy way to build a string from multiple pieces. Wrap each expression in a string interpolation in parentheses, prefixed by a backslash.
 
 ```swift
 let name = "Rosa"
@@ -92,7 +92,7 @@ Basic string operations are not sensitive to locale settings, ensuring that stri
 
 ### Accessing String Elements
 
-A string is a collection of , which approximate human-readable characters. Many individual characters, such as “é”, “김”, and “🇮🇳”, can be made up of multiple Unicode scalar values. These scalar values are combined by Unicode’s boundary algorithms into extended grapheme clusters, represented by the Swift `Character` type. Each element of a string is represented by a `Character` instance.
+A string is a collection of *extended grapheme clusters*, which approximate human-readable characters. Many individual characters, such as “é”, “김”, and “🇮🇳”, can be made up of multiple Unicode scalar values. These scalar values are combined by Unicode’s boundary algorithms into extended grapheme clusters, represented by the Swift `Character` type. Each element of a string is represented by a `Character` instance.
 
 For example, to retrieve the first word of a longer string, you can search for a space and then create a substring from a prefix of the string up to that point:
 
@@ -190,7 +190,7 @@ print(cLength)
 
 When you need to know the length of a string, you must first consider what you’ll use the length for. Are you measuring the number of characters that will be displayed on the screen, or are you measuring the amount of storage needed for the string in a particular encoding? A single string can have greatly differing lengths when measured by its different views.
 
-For example, an ASCII character like the capital letter  is represented by a single element in each of its four views. The Unicode scalar value of  is `65`, which is small enough to fit in a single code unit in both UTF-16 and UTF-8.
+For example, an ASCII character like the capital letter *A* is represented by a single element in each of its four views. The Unicode scalar value of *A* is `65`, which is small enough to fit in a single code unit in both UTF-16 and UTF-8.
 
 ```swift
 let capitalA = "A"
@@ -268,13 +268,13 @@ if let exactIndex = secondCodeUnit.samePosition(in: flag) {
 
 ### Performance Optimizations
 
-Although strings in Swift have value semantics, strings use a copy-on-write strategy to store their data in a buffer. This buffer can then be shared by different copies of a string. A string’s data is only copied lazily, upon mutation, when more than one string instance is using the same buffer. Therefore, the first in any sequence of mutating operations may cost O() time and space.
+Although strings in Swift have value semantics, strings use a copy-on-write strategy to store their data in a buffer. This buffer can then be shared by different copies of a string. A string’s data is only copied lazily, upon mutation, when more than one string instance is using the same buffer. Therefore, the first in any sequence of mutating operations may cost O(*n*) time and space.
 
 When a string’s contiguous storage fills up, a new buffer must be allocated and data must be moved to the new storage. String buffers use an exponential growth strategy that makes appending to a string a constant time operation when averaged over many append operations.
 
 ### Bridging Between String and Nsstring
 
-Any `String` instance can be bridged to `NSString` using the type-cast operator (`as`), and any `String` instance that originates in Objective-C may use an `NSString` instance as its storage. Because any arbitrary subclass of `NSString` can become a `String` instance, there are no guarantees about representation or efficiency when a `String` instance is backed by `NSString` storage. Because `NSString` is immutable, it is just as though the storage was shared by a copy. The first in any sequence of mutating operations causes elements to be copied into unique, contiguous storage which may cost O() time and space, where  is the length of the string’s encoded representation (or more, if the underlying `NSString` has unusual performance characteristics).
+Any `String` instance can be bridged to `NSString` using the type-cast operator (`as`), and any `String` instance that originates in Objective-C may use an `NSString` instance as its storage. Because any arbitrary subclass of `NSString` can become a `String` instance, there are no guarantees about representation or efficiency when a `String` instance is backed by `NSString` storage. Because `NSString` is immutable, it is just as though the storage was shared by a copy. The first in any sequence of mutating operations causes elements to be copied into unique, contiguous storage which may cost O(*n*) time and space, where *n* is the length of the string’s encoded representation (or more, if the underlying `NSString` has unusual performance characteristics).
 
 For more information about the Unicode terms used in this discussion, see the [`Unicode.org glossary`](https://developer.apple.comhttp://www.unicode.org/glossary/). In particular, this discussion mentions [`extended grapheme clusters`](https://developer.apple.comhttp://www.unicode.org/glossary/#extended_grapheme_cluster), [`Unicode scalar values`](https://developer.apple.comhttp://www.unicode.org/glossary/#unicode_scalar_value), and [`canonical equivalence`](https://developer.apple.comhttp://www.unicode.org/glossary/#canonical_equivalent).
 
@@ -624,7 +624,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [func forEach((Self.Element) throws -> Void) rethrows](string/foreach(_:).md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
 - [func enumerated() -> EnumeratedSequence<Self>](string/enumerated.md)
-  Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
+  Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 - [func makeIterator() -> String.Iterator](string/makeiterator.md)
   Returns an iterator over the elements of the collection.
 - [var underestimatedCount: Int](string/underestimatedcount.md)

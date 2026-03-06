@@ -6,7 +6,7 @@ Create overlays to highlight geographic regions or paths.
 
 #### Overview
 
-You can enhance your maps by adding  shapes that appear on top of the map. There are three overlay shapes:
+You can enhance your maps by adding *overlays,* shapes that appear on top of the map. There are three overlay shapes:
 
 - Circle ([`CircleOverlay`](circleoverlay.md))
 - Polyline ([`PolylineOverlay`](polylineoverlay.md))

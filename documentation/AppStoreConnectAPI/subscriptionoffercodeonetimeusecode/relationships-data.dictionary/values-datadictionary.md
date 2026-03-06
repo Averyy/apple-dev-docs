@@ -12,6 +12,10 @@
 object SubscriptionOfferCodeOneTimeUseCode.Relationships.Values
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

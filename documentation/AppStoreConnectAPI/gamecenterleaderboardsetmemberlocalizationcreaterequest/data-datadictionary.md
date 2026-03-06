@@ -18,6 +18,12 @@ object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes)
+- `relationships` (GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

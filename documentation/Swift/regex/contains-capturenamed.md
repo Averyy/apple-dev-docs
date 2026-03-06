@@ -33,7 +33,7 @@ regex.contains(captureNamed: "1")         // false
 
 ## Parameters
 
-- `name`: The name to look for among the regular expression’s   capture groups. Capture group names are case sensitive.
+- `name`: The name to look for among the regular expression’s capture groups. Capture group names are case sensitive.
 
 
 ---

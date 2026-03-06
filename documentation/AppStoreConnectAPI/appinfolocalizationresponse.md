@@ -14,6 +14,12 @@ A response that contains a single App Info Localizations resource.
 object AppInfoLocalizationResponse
 ```
 
+## Properties
+
+- `data` (AppInfoLocalization) *(required)*
+- `links` (DocumentLinks) *(required)*
+- `included` ([AppInfo])
+
 ## See Also
 
 - [object AppInfoLocalization](appinfolocalization.md)

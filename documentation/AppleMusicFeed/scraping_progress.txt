@@ -1,4 +1,4 @@
 Completed scraping Apple Music Feed!
-Total pages scraped: 0
-Pages skipped (unchanged): 41
+Total pages scraped: 40
+Pages skipped (unchanged): 1
 Pages failed: 0

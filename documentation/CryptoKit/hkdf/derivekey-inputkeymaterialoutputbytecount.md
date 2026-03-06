@@ -26,7 +26,7 @@ The derived symmetric key.
 
 ## Parameters
 
-- `inputKeyMaterial`: The main key or passcode the derivation function   uses to derive a key.
+- `inputKeyMaterial`: The main key or passcode the derivation function uses to derive a key.
 - `outputByteCount`: The length in bytes of the resulting symmetric key.
 
 ## See Also

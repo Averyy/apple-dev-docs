@@ -20,6 +20,14 @@ object AppCustomProductPageVersion
 - [object AppCustomProductPageVersion.Attributes](appcustomproductpageversion/attributes-data.dictionary.md)
 - [object AppCustomProductPageVersion.Relationships](appcustomproductpageversion/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppCustomProductPageVersion.Attributes)
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppCustomProductPageVersion.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppCustomProductPageVersionCreateRequest](appcustomproductpageversioncreaterequest.md)

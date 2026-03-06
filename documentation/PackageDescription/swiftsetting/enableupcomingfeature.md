@@ -24,8 +24,8 @@ You can add and use multiple upcoming features in a given target without affecti
 
 ## Parameters
 
-- `name`: The name of the upcoming feature; for example,  .
-- `condition`: A condition that restricts the application of the build   setting.
+- `name`: The name of the upcoming feature; for example, `ConciseMagicFile`.
+- `condition`: A condition that restricts the application of the build setting.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Each feature of your vehicle has one or more associated states, which you define
 
 ## Parameters
 
-- `function`: The function identifier for the vehicle feature you   want to check. If you specify an unknown feature, this method throws   an error. For a list of the vehicle’s supported features, see   the   property.
+- `function`: The function identifier for the vehicle feature you want to check. If you specify an unknown feature, this method throws an error. For a list of the vehicle’s supported features, see the [`supportedFunctions`](vehiclereport/supportedfunctions.md) property.
 
 ## See Also
 

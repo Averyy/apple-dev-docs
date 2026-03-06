@@ -20,6 +20,13 @@ object Albums.Views.AlbumsAppearsOnView
 - [object Albums.Views.AlbumsAppearsOnView.Attributes](albums/views-data.dictionary/albumsappearsonview/attributes-data.dictionary.md)
   The attributes for the view.
 
+## Properties
+
+- `href` (string): The relative location to fetch the view directly.
+- `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
+- `attributes` (Albums.Views.AlbumsAppearsOnView.Attributes) *(required)*: The attributes for the view.
+- `data` ([Playlists]) *(required)*: A selection of playlists that tracks from this album appear on.
+
 ## See Also
 
 - [object Albums.Views.AlbumsOtherVersionsView](albums/views-data.dictionary/albumsotherversionsview.md)

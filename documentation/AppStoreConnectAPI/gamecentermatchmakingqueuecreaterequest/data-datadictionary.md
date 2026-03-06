@@ -22,6 +22,12 @@ object GameCenterMatchmakingQueueCreateRequest.Data
 - [object GameCenterMatchmakingQueueCreateRequest.Data.Relationships](gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
   The rule sets that you include when creating a queue.
 
+## Properties
+
+- `attributes` (GameCenterMatchmakingQueueCreateRequest.Data.Attributes) *(required)*
+- `relationships` (GameCenterMatchmakingQueueCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

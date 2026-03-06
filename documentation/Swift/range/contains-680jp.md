@@ -42,7 +42,7 @@ emptyRange.contains(3...3)   // false
 
 ## Parameters
 
-- `other`: A closed range to check for containment within this   range.
+- `other`: A closed range to check for containment within this range.
 
 
 ---

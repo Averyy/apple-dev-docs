@@ -14,6 +14,10 @@ The response to a library playlists request.
 object LibraryPlaylistsResponse
 ```
 
+## Properties
+
+- `data` ([LibraryPlaylists]) *(required)*: The [`LibraryPlaylists`](libraryplaylists.md) included in the response for the request.
+
 ## See Also
 
 - [object Playlists](playlists.md)

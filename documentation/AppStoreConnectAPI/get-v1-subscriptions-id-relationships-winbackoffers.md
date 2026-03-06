@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/relationships/winBackOffers`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)

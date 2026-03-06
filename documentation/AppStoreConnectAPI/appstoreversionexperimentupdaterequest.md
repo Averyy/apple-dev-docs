@@ -17,6 +17,10 @@ object AppStoreVersionExperimentUpdateRequest
 ### Objects
 - [object AppStoreVersionExperimentUpdateRequest.Data](appstoreversionexperimentupdaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionExperimentUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionExperimentV2](appstoreversionexperimentv2.md)

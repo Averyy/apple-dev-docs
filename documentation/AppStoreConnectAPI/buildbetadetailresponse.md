@@ -14,6 +14,12 @@ A response that contains a single Build Beta Details resource.
 object BuildBetaDetailResponse
 ```
 
+## Properties
+
+- `data` (BuildBetaDetail) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
+- `included` ([Build])
+
 ## See Also
 
 - [Read Build Beta Detail Information](get-v1-buildbetadetails-_id_.md)

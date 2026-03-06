@@ -6,7 +6,7 @@
 An error that indicates a transaction identifier wasn’t found.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 
@@ -26,6 +26,11 @@ Don’t unlock the service or content associated with the transaction ID for the
 - You’re making the request in the same environment, production or sandbox, that generated the transaction ID.
 
 In rare cases, you might get this error for transaction IDs that previously returned data successfully. Don’t unlock the service or content for the app bundle ID and environment in the request if you’re unable to resolve this error using the steps above.
+
+## Properties
+
+- `errorCode` (int64)
+- `errorMessage` (string)
 
 ## See Also
 

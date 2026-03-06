@@ -18,6 +18,12 @@ object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints
 - [object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values](gamecentermatchmakingsessionsv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
   The data values in the response per session.
 
+## Properties
+
+- `end` (date-time): The time Game Center ends the data collection.
+- `start` (date-time): The time Game Center starts the data collection.
+- `values` (GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values)
+
 
 ---
 

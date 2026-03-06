@@ -24,6 +24,13 @@ object AppStoreVersionSubmission
 - [object AppStoreVersionSubmission.Relationships](appstoreversionsubmission/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `relationships` (AppStoreVersionSubmission.Relationships)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionSubmissionResponse](appstoreversionsubmissionresponse.md)

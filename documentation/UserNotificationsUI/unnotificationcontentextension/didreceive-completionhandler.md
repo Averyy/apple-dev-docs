@@ -24,8 +24,8 @@ Implement this method when you want your view controller to handle actions selec
 
 ## Parameters
 
-- `response`: The response object that identifies the user-selected action.   Use this object to get information about the notification and the user’s   response.
-- `completion`: The block to execute when you are finished performing the   action. You must call this block at some point during your implementation.   The block has no return value and takes the following parameter:
+- `response`: The response object that identifies the user-selected action. Use this object to get information about the notification and the user’s response.
+- `completion`: The block to execute when you are finished performing the action. You must call this block at some point during your implementation. The block has no return value and takes the following parameter: - **`dismiss`**: The response you want to take for the notification. For a list of possible options, see [`UNNotificationContentExtensionResponseOption`](unnotificationcontentextensionresponseoption.md).
 
 ## See Also
 

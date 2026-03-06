@@ -20,6 +20,10 @@ object AppStoreVersionReleaseRequestCreateRequest.Data.Relationships.AppStoreVer
 - [object AppStoreVersionReleaseRequestCreateRequest.Data.Relationships.AppStoreVersion.Data](appstoreversionreleaserequestcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (AppStoreVersionReleaseRequestCreateRequest.Data.Relationships.AppStoreVersion.Data) *(required)*
+
 
 ---
 

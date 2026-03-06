@@ -12,6 +12,10 @@
 object App.Relationships.PerfPowerMetrics
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

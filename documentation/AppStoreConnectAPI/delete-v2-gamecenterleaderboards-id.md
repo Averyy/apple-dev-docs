@@ -19,6 +19,14 @@ Delete a specific Game Center leaderboard.
 - 409:
 - 429:
 
+## Endpoint
+
+`DELETE https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboards/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Create a Game Center leaderboard](post-v2-gamecenterleaderboards.md)

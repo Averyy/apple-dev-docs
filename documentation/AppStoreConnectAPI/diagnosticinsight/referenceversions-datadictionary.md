@@ -12,6 +12,11 @@
 object DiagnosticInsight.ReferenceVersions
 ```
 
+## Properties
+
+- `value` (number)
+- `version` (string)
+
 
 ---
 

@@ -26,7 +26,7 @@ The shared secret.
 
 ## Parameters
 
-- `encapsulated`: An encapsulated shared secret, that you get by calling   on the corresponding public key.
+- `encapsulated`: An encapsulated shared secret, that you get by calling [`encapsulate()`](mlkem768/publickey/encapsulate().md) on the corresponding public key.
 
 
 ---

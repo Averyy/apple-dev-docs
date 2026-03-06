@@ -20,6 +20,12 @@ object AppStoreVersionLocalizationUpdateRequest.Data
 - [object AppStoreVersionLocalizationUpdateRequest.Data.Attributes](appstoreversionlocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
+## Properties
+
+- `attributes` (AppStoreVersionLocalizationUpdateRequest.Data.Attributes)
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -8,9 +8,9 @@ Icons that pertain to New Zealand movie ratings.
 
 New Zealand movie rating icons indicate who is allowed to watch a movie in New Zealand. Ratings are assigned by the Office of Film & Literature Classification. Ratings fall into three color categories:
 
--  Anyone can view the movie.
--  Anyone can view the movie, but parental guidance is suggested.
--  The film is restricted. It is illegal to show the movie to anyone under the age stated on the label.
+- **Green.** Anyone can view the movie.
+- **Yellow.** Anyone can view the movie, but parental guidance is suggested.
+- **Red.** The film is restricted. It is illegal to show the movie to anyone under the age stated on the label.
 
 ##### General Admission
 

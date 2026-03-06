@@ -18,6 +18,10 @@ object AppStoreVersionPromotionCreateRequest
 - [object AppStoreVersionPromotionResponse](appstoreversionpromotionresponse.md)
 - [object AppStoreVersionPromotionCreateRequest.Data](appstoreversionpromotioncreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (AppStoreVersionPromotionCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object AppStoreVersionPromotion](appstoreversionpromotion.md)

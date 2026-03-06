@@ -22,7 +22,7 @@ init<W>(@RegexComponentBuilder _ componentBuilder: () -> some RegexComponent) wh
 
 ## Parameters
 
-- `componentBuilder`: A builder closure that generates a   regex component to capture.
+- `componentBuilder`: A builder closure that generates a regex component to capture.
 
 
 ---

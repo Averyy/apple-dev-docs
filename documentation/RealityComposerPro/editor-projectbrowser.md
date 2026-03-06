@@ -12,9 +12,9 @@ As you add content to your Reality Composer Pro document, the Project Browser di
 
 The Project Browser contains three views:
 
--  for showing the current project structure and asset collections
--  for displaying the files in the currently selected folder
--  for displaying information about the currently selected file
+- *Navigator* for showing the current project structure and asset collections
+- *File* for displaying the files in the currently selected folder
+- *Inspector* for displaying information about the currently selected file
 
 ##### View Your Projects Structure in Navigator View
 

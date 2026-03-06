@@ -14,6 +14,12 @@ The data structure that represents an app keyword resource.
 object AppKeyword
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `links` (ResourceLinks)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object AppKeywordsResponse](appkeywordsresponse.md)

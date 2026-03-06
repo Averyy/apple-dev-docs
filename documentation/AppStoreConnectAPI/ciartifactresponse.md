@@ -14,6 +14,11 @@ A response that contains a single Artifacts resource.
 object CiArtifactResponse
 ```
 
+## Properties
+
+- `data` (CiArtifact) *(required)*: The resource data.
+- `links` (DocumentLinks) *(required)*: The navigational links that include the self-link.
+
 ## See Also
 
 - [object CiArtifact](ciartifact.md)

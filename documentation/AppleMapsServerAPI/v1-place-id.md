@@ -8,6 +8,14 @@ Obtain a Place object for a given Place ID.
 **Availability**:
 - Apple Maps Server API 1.2+
 
+## Endpoint
+
+`GET https://maps-api.apple.com/v1/place/:id`
+
+## Parameters
+
+- `lang` (Lang): The language code for the response.
+
 ## See Also
 
 - [type AddressCategory](addresscategory.md)

@@ -14,6 +14,15 @@ Attributes whose values you’re changing as part of the update request.
 object AppStoreVersionLocalizationUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `description` (string)
+- `keywords` (string)
+- `marketingUrl` (uri)
+- `promotionalText` (string)
+- `supportUrl` (uri)
+- `whatsNew` (string)
+
 
 ---
 

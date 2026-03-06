@@ -8,6 +8,14 @@ Update the localized What’s New text for a specific beta build and locale.
 **Availability**:
 - App Store Connect API 1.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/betaBuildLocalizations/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
 ## See Also
 
 - [Create a Beta Build Localization](post-v1-betabuildlocalizations.md)

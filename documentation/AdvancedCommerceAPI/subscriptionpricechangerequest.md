@@ -20,6 +20,13 @@ This is the request body for the [`Change Subscription Price`](change-subscripti
 
 The items array contains [`SubscriptionPriceChangeItem`](subscriptionpricechangeitem.md). Include one entry for each SKU within the subscription that has a price change.
 
+## Properties
+
+- `currency` (currency): The currency of the prices.
+- `items` ([SubscriptionPriceChangeItem]) *(required)*: An array that contains one or more SKUs and the changed price for each SKU.
+- `requestInfo` (RequestInfo) *(required)*: Metadata that identifies the request.
+- `storefront` (storefront): The App Store storefront of the subscription.
+
 ## See Also
 
 - [Change Subscription Price](change-subscription-price.md)

@@ -14,6 +14,11 @@ Attributes whose values you’re changing as part of the update request.
 object AppStoreReviewAttachmentUpdateRequest.Data.Attributes
 ```
 
+## Properties
+
+- `sourceFileChecksum` (string)
+- `uploaded` (boolean)
+
 
 ---
 

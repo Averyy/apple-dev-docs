@@ -41,7 +41,7 @@ A `Collection` that provides its own implementation of this method must provide 
 
 ## Parameters
 
-- `body`: A closure that receives an in-out    to the collection’s contiguous storage.
+- `body`: A closure that receives an in-out `UnsafeMutableBufferPointer` to the collection’s contiguous storage.
 
 
 ---

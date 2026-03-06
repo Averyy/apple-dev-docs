@@ -20,6 +20,10 @@ object SubscriptionImageUpdateRequest
 - [object SubscriptionImageUpdateRequest.Data](subscriptionimageupdaterequest/data-data.dictionary.md)
   The request body you use to update a subscription purchase image reservation.
 
+## Properties
+
+- `data` (SubscriptionImageUpdateRequest.Data) *(required)*
+
 ## See Also
 
 - [object SubscriptionImage](subscriptionimage.md)

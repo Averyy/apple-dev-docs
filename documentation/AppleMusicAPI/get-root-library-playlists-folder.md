@@ -16,6 +16,48 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 ##### Example
 
+**Request**:
+
+```None
+https://api.music.apple.com/v1/me/library/playlist-folders?filter[identity]=playlistsroot
+```
+
+**Response**:
+
+```json
+{
+    "data": [
+
+    ],
+    "meta": {
+        "filters": {
+            "identity": {
+                "playlistsroot": [
+                    {
+                        "id": "p.playlistsroot",
+                        "type": "library-playlist-folders",
+                        "href": "/v1/me/library/playlist-folders/p.playlistsroot"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+
+```
+
+## Endpoint
+
+`GET https://api.music.apple.com/v1/me/library/playlist-folders`
+
+## Parameters
+
+- `filter[identity]` ([string]) *(required)*: This value must be `playlistsroot`. The maximum fetch limit is 1.
+- `include` ([string]): Additional relationships to include in the fetch.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+- `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
 ## See Also
 
 - [object LibraryPlaylists](libraryplaylists.md)

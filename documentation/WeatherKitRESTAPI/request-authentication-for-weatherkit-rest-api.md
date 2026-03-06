@@ -26,11 +26,20 @@ WeatherKit supports the JSON Web Token (JWT) specification, and allows you to pa
 
 Construct a developer token as a JSON object with a header that contains the following information:
 
+- **`alg`**: The algorithm with which to sign the token. Set the value to `ES256`.
+- **`kid`**: A 10-character key identifier you obtain from your developer account.
+- **`id`**: An identifier that consists of your 10-character Team ID and Service ID, separated by a period.
+
 WeatherKit only supports developer tokens signed with the ES256 algorithm, and rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a 401 error code.
 
 > **Note**:  Ensure that the token contains only the claims listed below.
 
 In the claims payload of the token, include the following:
+
+- **`iss`**: The issuer claim key. This value is your 10-character Team ID from your developer account.
+- **`iat`**: The issued-at claim key. This value indicates the time at which the token was generated. The value is the number of seconds since epoch in Universal Coordinated Time.
+- **`exp`**: The expiration time claim key. This value indicates the time after which the token is not accepted by the server. The value is the number of seconds since epoch in Universal Coordinated Time.
+- **`sub`**: The subject public claim key. This value is your registered Service ID.
 
 A decoded developer token has the following format:
 

@@ -14,6 +14,11 @@ A dictionary of configuration names and the media controls they permit.
 object QueueControlMapping
 ```
 
+## Properties
+
+- `default` (PlayMediaControl) *(required)*: The default playback control configuration to use for content that doesn’t specify a different control scheme.
+- `Any Key` (PlayMediaControl): A playback control configuration with a name you define that [`Content`](content.md) objects can refer to.
+
 ## See Also
 
 - [object PlayMediaControl](playmediacontrol.md)

@@ -21,7 +21,7 @@ You typically call this when you need to invoke the app extension on demand. One
 
 ## Parameters
 
-- `collection`: The collection to enumerate; defaults to  .
+- `collection`: The collection to enumerate; defaults to [`rootContainer`](contactitem/identifier/rootcontainer.md).
 
 
 ---

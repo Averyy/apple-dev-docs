@@ -14,6 +14,11 @@ The data structure that represents a win-back offer price inline create resource
 object WinBackOfferPriceInlineCreate
 ```
 
+## Properties
+
+- `id` (string): The opaque resource ID that uniquely identifies the resource.
+- `type` (string) *(required)*: The resource type.
+
 ## See Also
 
 - [object WinBackOffer](winbackoffer.md)

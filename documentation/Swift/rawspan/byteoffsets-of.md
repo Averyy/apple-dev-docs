@@ -30,7 +30,7 @@ Note: `other` must be a subrange of `self`
 
 ## Parameters
 
-- `other`: A subrange of 
+- `other`: A subrange of `self`
 
 
 ---

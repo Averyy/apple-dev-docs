@@ -12,6 +12,10 @@ Reserve a review screenshot for an auto-renewable subscription.
 
 - [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/subscriptionAppStoreReviewScreenshots`
+
 ## See Also
 
 - [Read Subscription Review Screenshot Information](get-v1-subscriptionappstorereviewscreenshots-_id_.md)

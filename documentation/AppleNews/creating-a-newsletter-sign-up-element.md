@@ -8,6 +8,8 @@ Add a newsletter sign-up element in your article.
 
 You can provide your readers the option to sign up for your publication’s newsletter from an article. By using styles and layouts thoughtfully, you can visually separate your newsletter sign-up element from your article content.
 
+**On this page, you’ll learn how to:**
+
 - Add the newsletter sign-up element to your article.
 - Use components, component styles, component text styles, and layout objects to customize the display of the newsletter sign-up element.
 

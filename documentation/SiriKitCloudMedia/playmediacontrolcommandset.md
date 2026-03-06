@@ -20,6 +20,19 @@ Provide `true` to enable a control that isn’t available by default in the curr
 
 When the user interacts with these controls, the client sends that information to the [`Report Playback Progress and Activity`](updateactivity.md) endpoint. This is separate from the user telling Siri they like some content, which the client sends to the [`Process an Update Media Affinity Intent`](updatemediaaffinity.md) endpoint.
 
+## Properties
+
+- `nextTrack` (boolean): Move to the next track while playing content.
+- `previousTrack` (boolean): Move to the beginning of the current track, or to the previous track, while playing content.
+- `skipForward` (boolean): Move forward by a number of seconds.
+- `skipBackward` (boolean): Move backward by a number of seconds.
+- `preferSkipForward` (boolean): Display a skip forward control in the remote UI instead of a next track control when the `skipForward` control is available.
+- `preferSkipBackward` (boolean): Display a skip backward control in the remote UI instead of a next track control when the `skipBackward` control is available.
+- `seekToPlaybackPosition` (boolean): Scrub to any point in the content.
+- `likeTrack` (boolean): Like the current content.
+- `dislikeTrack` (boolean): Express dislike for the current content.
+- `bookmarkTrack` (boolean): Save the current content for later.
+
 ## See Also
 
 - [object QueueControlMapping](queuecontrolmapping.md)

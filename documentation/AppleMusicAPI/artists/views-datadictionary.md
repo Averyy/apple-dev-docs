@@ -42,6 +42,21 @@ object Artists.Views
 - [object Artists.Views.ArtistsTopSongsView](artists/views-data.dictionary/artiststopsongsview.md)
   A relationship view from this artist to songs associated with the artist based on popularity in the current storefront.
 
+## Properties
+
+- `appears-on-albums` (Artists.Views.ArtistsAppearsOnAlbumsView): A selection of albums from other artists this artist appears on.
+- `compilation-albums` (Artists.Views.ArtistsCompilationAlbumsView): Albums associated with the artist categorized as “compilations.”
+- `featured-albums` (Artists.Views.ArtistsFeaturedAlbumsView): A collection of albums selected as featured for the artist.
+- `featured-music-videos` (Artists.Views.ArtistsFeaturedMusicVideosView): A collection of music videos selected as featured for the artist.
+- `featured-playlists` (Artists.Views.ArtistsFeaturedPlaylistsView): Relevant playlists associated with the artist.
+- `full-albums` (Artists.Views.ArtistsFullAlbumsView): Full-release albums associated with the artist.
+- `latest-release` (Artists.Views.ArtistsLatestReleaseView): The latest release for the artist deemed to still be recent.
+- `live-albums` (Artists.Views.ArtistsLiveAlbumsView): Albums associated with the artist categorized as live performances.
+- `similar-artists` (Artists.Views.ArtistsSimilarArtistsView): Other artists similar to this artist.
+- `singles` (Artists.Views.ArtistsSinglesView): Albums associated with the artist categorized as “singles.”
+- `top-music-videos` (Artists.Views.ArtistsTopMusicVideosView): Relevant music videos associated with the artist.
+- `top-songs` (Artists.Views.ArtistsTopSongsView): Songs associated with the artist based on popularity in the current storefront.
+
 ## See Also
 
 - [object Artists.Attributes](artists/attributes-data.dictionary.md)

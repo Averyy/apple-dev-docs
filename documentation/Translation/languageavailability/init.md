@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: init
 
-Creates a language availability.
+Creates an instance to check what languages are available.
 
 **Availability**:
 - iOS 18.0+
@@ -17,10 +17,16 @@ Creates a language availability.
 init()
 ```
 
+#### Discussion
+
+This initializer uses the default translation strategy based on the SDK version your app was built with. Apps built with iOS 26.4 or macOS 26.4 SDKs and later default to checking for Apple Intelligence models when available. Apps built with earlier SDKs default to traditional models.
+
+To explicitly specify which translation models to check for, use [`init(preferredStrategy:)`](languageavailability/init(preferredstrategy:).md).
+
 ## See Also
 
 - [init(preferredStrategy: TranslationSession.Strategy)](languageavailability/init(preferredstrategy:).md)
-  Creates a language availability, specifying what the preferred strategy is.
+  Creates an instance for checking language availability with a preferred translation strategy.
 
 
 ---

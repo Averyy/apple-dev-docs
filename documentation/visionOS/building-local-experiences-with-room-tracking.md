@@ -14,7 +14,7 @@ This sample allows your app to keep track of rooms as discrete, identifiable pla
 
 This sample demonstrates how to use room tracking by enabling a person to place spheres in a space and continuously query the framework as to whether those spheres are in the same room as the person. As someone moves into, through, and out of the room, ARKit delivers [`RoomAnchor`](https://developer.apple.com/documentation/ARKit/RoomAnchor) updates that represent the latest knowledge of the current room. This structure provides a [`contains(_:)`](https://developer.apple.com/documentation/ARKit/RoomAnchor/contains(_:)) query method that you use to determine if the spheres are in the current room, and highlight them accordingly.
 
-The app has an , in which the room geometry the framework renders is a transparent occluder that hides virtual objects outside the room. It also has a , in which someone may select a specific wall for the purpose of replacing it with a video or virtual portal.
+The app has an *occlusion mode*, in which the room geometry the framework renders is a transparent occluder that hides virtual objects outside the room. It also has a *wall selection mode*, in which someone may select a specific wall for the purpose of replacing it with a video or virtual portal.
 
 > **Note**: This app requires Xcode 16 and visionOS 2 or later, and an Apple Vision Pro. ARKit room tracking isn’t supported in Simulator.
 
@@ -111,7 +111,7 @@ The second phase allows a person to place the sphere (a [`WorldAnchor`](https://
 
 As a person places spheres in the room, they appear in green to indicate they’re anchors in the current room. If a person leaves the room, all of the room anchors in the previous room dim and become red to indicate a person has left the room. If there are anchors in the room a person enters into, they change color to indicate the person is currently in the room.
 
-This changing state and the property of a room being  is what allows an app to make decisions about what actions, animations, or other processes make sense in a specific location.
+This changing state and the property of a room being *current* is what allows an app to make decisions about what actions, animations, or other processes make sense in a specific location.
 
 #### Check the Current Room and Respond to Updates
 
@@ -165,7 +165,7 @@ func processRoomTrackingUpdates() async {
 
 #### Find and Select Walls
 
-Room tracking also enables someone to find and select walls in the current room. You can use this as an additional interaction surface, such as creating a “portal” to another virtual space. The process of selecting a wall in a room is split into two modes: an  where actively looking at a specific wall causes ARKit to highlight it in blue, and  where a person has selected a wall and it receives continuous updates from the `RoomTrackingProvider`. The  requires performing a ray cast query in the direction of the a person’s head, which returns the first wall that it hits, as shown here:
+Room tracking also enables someone to find and select walls in the current room. You can use this as an additional interaction surface, such as creating a “portal” to another virtual space. The process of selecting a wall in a room is split into two modes: an *unlocked mode* where actively looking at a specific wall causes ARKit to highlight it in blue, and *locked mode* where a person has selected a wall and it receives continuous updates from the `RoomTrackingProvider`. The *unlocked mode* requires performing a ray cast query in the direction of the a person’s head, which returns the first wall that it hits, as shown here:
 
 ```swift
 /// Updates the wall in front of the person when a wall isn't in a selected state.

@@ -12,6 +12,10 @@
 object ScmRepository.Relationships.PullRequests
 ```
 
+## Properties
+
+- `links` (RelationshipLinks)
+
 
 ---
 

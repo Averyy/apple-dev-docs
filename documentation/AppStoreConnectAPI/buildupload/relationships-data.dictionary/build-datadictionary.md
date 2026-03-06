@@ -20,6 +20,10 @@ object BuildUpload.Relationships.Build
 - [object BuildUpload.Relationships.Build.Data](buildupload/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BuildUpload.Relationships.Build.Data)
+
 
 ---
 

@@ -6,7 +6,7 @@
 The three-letter code that represents the country or region associated with the App Store storefront of the purchase.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 

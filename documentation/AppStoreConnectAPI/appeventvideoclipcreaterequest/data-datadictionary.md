@@ -18,6 +18,12 @@ object AppEventVideoClipCreateRequest.Data
 - [object AppEventVideoClipCreateRequest.Data.Attributes](appeventvideoclipcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object AppEventVideoClipCreateRequest.Data.Relationships](appeventvideoclipcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (AppEventVideoClipCreateRequest.Data.Attributes) *(required)*
+- `relationships` (AppEventVideoClipCreateRequest.Data.Relationships) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

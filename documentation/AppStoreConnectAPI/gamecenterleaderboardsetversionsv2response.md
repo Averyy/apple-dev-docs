@@ -21,6 +21,13 @@ object GameCenterLeaderboardSetVersionsV2Response
 - links:
 - meta:
 
+## Properties
+
+- `data` ([GameCenterLeaderboardSetVersionV2]) *(required)*
+- `included` ([*])
+- `links` (PagedDocumentLinks) *(required)*
+- `meta` (PagingInformation)
+
 ## See Also
 
 - [object GameCenterLeaderboardSetVersionV2](gamecenterleaderboardsetversionv2.md)

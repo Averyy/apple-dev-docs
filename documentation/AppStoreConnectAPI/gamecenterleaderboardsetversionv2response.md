@@ -20,6 +20,12 @@ object GameCenterLeaderboardSetVersionV2Response
 - included:
 - links:
 
+## Properties
+
+- `data` (GameCenterLeaderboardSetVersionV2) *(required)*
+- `included` ([*])
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardSetVersionV2](gamecenterleaderboardsetversionv2.md)

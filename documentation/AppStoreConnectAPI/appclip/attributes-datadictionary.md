@@ -14,6 +14,10 @@ The attributes that describe an App Clips resource.
 object AppClip.Attributes
 ```
 
+## Properties
+
+- `bundleId` (string): The related Bundle IDs resource.
+
 ## See Also
 
 - [object AppClip.Relationships](appclip/relationships-data.dictionary.md)

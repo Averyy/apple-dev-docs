@@ -14,6 +14,18 @@ The data your app provides to change an item of an auto-renewable subscription.
 object SubscriptionModifyChangeItem
 ```
 
+## Properties
+
+- `SKU` (SKU) *(required)*
+- `currentSKU` (SKU) *(required)*
+- `description` (description) *(required)*
+- `displayName` (displayName) *(required)*
+- `effective` (effective) *(required)*
+- `offer` (Offer)
+- `price` (price) *(required)*
+- `proratedPrice` (proratedPrice)
+- `reason` (string) *(required)*
+
 ## See Also
 
 - [object SubscriptionModifyInAppRequest](subscriptionmodifyinapprequest.md)

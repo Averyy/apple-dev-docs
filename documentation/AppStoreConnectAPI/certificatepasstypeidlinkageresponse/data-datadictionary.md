@@ -14,6 +14,11 @@ The data structure that represents a certificate pass type id linkage response r
 object CertificatePassTypeIdLinkageResponse.Data
 ```
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

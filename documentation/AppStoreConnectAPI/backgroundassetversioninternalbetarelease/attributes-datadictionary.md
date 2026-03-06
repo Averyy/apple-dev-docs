@@ -14,6 +14,10 @@ Attributes that describe a background asset version internal beta release resour
 object BackgroundAssetVersionInternalBetaRelease.Attributes
 ```
 
+## Properties
+
+- `state` (string)
+
 
 ---
 

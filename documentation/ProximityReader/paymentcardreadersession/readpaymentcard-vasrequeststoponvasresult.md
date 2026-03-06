@@ -44,7 +44,7 @@ When the `stopOnVasResult` parameter is `false`:
 ## Parameters
 
 - `request`: The transaction object you provide with the payment amount and currency details.
-- `vasRequest`: The object that you use to specify the loyalty card request details,   such as the list of supported merchants.
+- `vasRequest`: The object that you use to specify the loyalty card request details, such as the list of supported merchants.
 - `stopOnVASResult`: A Boolean that indicates what type of result to return. See the discussion for details of how this parameter affects the return value.
 
 ## See Also

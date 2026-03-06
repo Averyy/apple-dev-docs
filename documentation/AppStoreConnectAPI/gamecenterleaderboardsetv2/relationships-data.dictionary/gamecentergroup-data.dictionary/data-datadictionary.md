@@ -17,6 +17,11 @@ object GameCenterLeaderboardSetV2.Relationships.GameCenterGroup.Data
 - id:
 - type:
 
+## Properties
+
+- `id` (string) *(required)*
+- `type` (string) *(required)*
+
 
 ---
 

@@ -22,7 +22,7 @@ init<W, C1, C2, C3, C4, C5, C6>(_ component: some RegexComponent) where Output =
 
 ## Parameters
 
-- `component`: The regex component to wrap in an atomic   group.
+- `component`: The regex component to wrap in an atomic group.
 
 
 ---

@@ -22,8 +22,8 @@ init<W, C1, C2, C3, C4, C5>(count: Int, @RegexComponentBuilder _ componentBuilde
 
 ## Parameters
 
-- `count`: The number of times to repeat  .   must   be greater than or equal to zero.
-- `componentBuilder`: A builder closure that creates the regex   component to repeat.
+- `count`: The number of times to repeat `component`. `count` must be greater than or equal to zero.
+- `componentBuilder`: A builder closure that creates the regex component to repeat.
 
 
 ---

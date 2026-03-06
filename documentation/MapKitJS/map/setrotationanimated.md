@@ -25,7 +25,7 @@ By default, MapKit JS animates the rotation change. This function changes the ma
 ## Parameters
 
 - `degrees`: The map’s rotation, in degrees.
-- `animate`: A Boolean value that determines whether the rotation change animates. The default value is  .
+- `animate`: A Boolean value that determines whether the rotation change animates. The default value is `true`.
 
 ## See Also
 

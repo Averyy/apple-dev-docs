@@ -14,6 +14,11 @@ The data structure representing the results of a match request.
 object GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults
 ```
 
+## Properties
+
+- `requestName` (string): A unique identifier for the request.
+- `teamAssignments` ([GameCenterMatchmakingTeamAssignment]): The assignments of players to teams.
+
 
 ---
 

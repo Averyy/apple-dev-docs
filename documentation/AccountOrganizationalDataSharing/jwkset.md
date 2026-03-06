@@ -20,6 +20,10 @@ object JWKSet
 - [object JWKSet.Keys](jwkset/jwkset.keys.md)
   An object that defines a single JSON Web Key.
 
+## Properties
+
+- `keys` ([JWKSet.Keys])
+
 ## See Also
 
 - [object TokenResponse](tokenresponse.md)

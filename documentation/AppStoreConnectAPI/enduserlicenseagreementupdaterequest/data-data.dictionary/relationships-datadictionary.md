@@ -20,6 +20,10 @@ object EndUserLicenseAgreementUpdateRequest.Data.Relationships
 - [object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories](enduserlicenseagreementupdaterequest/data-data.dictionary/relationships-data.dictionary/territories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
+## Properties
+
+- `territories` (EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories)
+
 ## See Also
 
 - [object EndUserLicenseAgreementUpdateRequest.Data.Attributes](enduserlicenseagreementupdaterequest/data-data.dictionary/attributes-data.dictionary.md)

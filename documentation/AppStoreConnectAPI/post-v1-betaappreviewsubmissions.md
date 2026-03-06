@@ -12,6 +12,10 @@ Submit an app for beta app review to allow external testing.
 
 > ❗ **Important**:  Before submitting to beta app review, you need to add a description for all `betaAppLocalizations`. To add a description, use [`Modify a Beta App Localization`](patch-v1-betaapplocalizations-_id_.md).
 
+## Endpoint
+
+`POST https://api.appstoreconnect.apple.com/v1/betaAppReviewSubmissions`
+
 
 ---
 

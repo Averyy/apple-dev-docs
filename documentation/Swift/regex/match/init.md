@@ -26,7 +26,7 @@ You can use this initializer to convert a `Regex.Match` with strongly-typed capt
 
 ## Parameters
 
-- `match`: A regular expression match to convert to a match with   type-erased captures.
+- `match`: A regular expression match to convert to a match with type-erased captures.
 
 
 ---

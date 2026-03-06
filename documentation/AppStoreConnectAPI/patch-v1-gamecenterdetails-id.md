@@ -13,6 +13,14 @@ Edit challenge state, default leaderboards, and groups.
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/gameCenterDetails/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md) response.
+
 ## See Also
 
 - [Enable Game Center for an app](post-v1-gamecenterdetails.md)

@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/apps/{id}/relationships/appInfos`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)

@@ -22,6 +22,10 @@ object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships
 - [object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships.Version](gamecenterleaderboardlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
   The data that describes the version of the Game Center leaderboard localization.
 
+## Properties
+
+- `version` (GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships.Version) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Attributes](gamecenterleaderboardlocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)

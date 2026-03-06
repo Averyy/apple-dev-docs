@@ -6,6 +6,14 @@
 **Availability**:
 - App Store Connect API 3.6+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/{id}/relationships/territories`
+
+## Parameters
+
+- `limit` (integer)
+
 ## See Also
 
 - [List Territories](get-v1-territories.md)

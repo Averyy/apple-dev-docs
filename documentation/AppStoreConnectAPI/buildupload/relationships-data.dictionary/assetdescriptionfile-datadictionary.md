@@ -20,6 +20,10 @@ object BuildUpload.Relationships.AssetDescriptionFile
 - [object BuildUpload.Relationships.AssetDescriptionFile.Data](buildupload/relationships-data.dictionary/assetdescriptionfile-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
+## Properties
+
+- `data` (BuildUpload.Relationships.AssetDescriptionFile.Data)
+
 
 ---
 

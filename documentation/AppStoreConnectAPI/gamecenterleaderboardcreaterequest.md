@@ -19,6 +19,10 @@ object GameCenterLeaderboardCreateRequest
 ### Objects and Types
 - [object GameCenterLeaderboardCreateRequest.Data](gamecenterleaderboardcreaterequest/data-data.dictionary.md)
 
+## Properties
+
+- `data` (GameCenterLeaderboardCreateRequest.Data) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

@@ -17,6 +17,11 @@ object GameCenterLeaderboardImageV2CreateRequest.Data.Attributes
 - fileName:
 - fileSize:
 
+## Properties
+
+- `fileName` (string) *(required)*
+- `fileSize` (integer) *(required)*
+
 ## See Also
 
 - [object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships](gamecenterleaderboardimagev2createrequest/data-data.dictionary/relationships-data.dictionary.md)

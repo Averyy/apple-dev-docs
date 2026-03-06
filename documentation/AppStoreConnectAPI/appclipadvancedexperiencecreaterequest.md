@@ -22,6 +22,11 @@ object AppClipAdvancedExperienceCreateRequest
 - [object AppClipAdvancedExperienceCreateRequest.Data](appclipadvancedexperiencecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
+## Properties
+
+- `data` (AppClipAdvancedExperienceCreateRequest.Data) *(required)*: The resource data.
+- `included` ([AppClipAdvancedExperienceLocalizationInlineCreate]): The relationship data to include in the response.
+
 ## See Also
 
 - [object AppClipAdvancedExperience](appclipadvancedexperience.md)

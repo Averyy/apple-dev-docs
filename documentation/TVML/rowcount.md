@@ -10,6 +10,8 @@ Items inside of the shelf fill up a column before moving to the next column.
 
 ##### Values for Rowcount
 
+- **Integer**: The number of rows contained inside of a shelf.
+
 ##### Values That Use Rowcount
 
 - [`shelf`](shelf.md)

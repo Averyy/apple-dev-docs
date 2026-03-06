@@ -14,6 +14,10 @@ The attributes for the view.
 object Albums.Views.AlbumsAppearsOnView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title to display for the view.
+
 
 ---
 

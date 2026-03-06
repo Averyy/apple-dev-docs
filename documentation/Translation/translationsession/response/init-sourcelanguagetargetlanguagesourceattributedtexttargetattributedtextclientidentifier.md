@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: init
 
-Creates an instance of a translation response.
+Creates an instance of a translation response with formatted text.
 
 **Availability**:
 - iOS 26.4+ (Beta)

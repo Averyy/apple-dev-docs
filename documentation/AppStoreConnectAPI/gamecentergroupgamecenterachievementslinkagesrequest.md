@@ -20,6 +20,10 @@ object GameCenterGroupGameCenterAchievementsLinkagesRequest
 - [object GameCenterGroupGameCenterAchievementsLinkagesRequest.Data](gamecentergroupgamecenterachievementslinkagesrequest/data-data.dictionary.md)
   The data structure that represents a group resource.
 
+## Properties
+
+- `data` ([GameCenterGroupGameCenterAchievementsLinkagesRequest.Data]) *(required)*
+
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)

@@ -27,7 +27,7 @@ After you revoke authorization, your app no longer provides parental controls, a
 
 ## Parameters
 
-- `completionHandler`: A closure the system calls after   it completes the authorization request.   The system passes the following parameters:
+- `completionHandler`: A closure the system calls after it completes the authorization request. The system passes the following parameters: - **`result`**: A value that represents either a success or a failure, including an associated [`Error`](https://developer.apple.com/documentation/Swift/Error) object for failures.
 
 ## See Also
 

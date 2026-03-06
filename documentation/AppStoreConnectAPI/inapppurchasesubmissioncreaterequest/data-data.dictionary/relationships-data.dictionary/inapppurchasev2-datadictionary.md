@@ -17,6 +17,10 @@ object InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2
 ### Objects
 - [object InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2.Data](inapppurchasesubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
 
+## Properties
+
+- `data` (InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2.Data) *(required)*
+
 
 ---
 

@@ -8,6 +8,17 @@ Get details about a one-time use code for a specific subscription offer for an a
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptionOfferCodes/{id}/oneTimeUseCodes`
+
+## Parameters
+
+- `fields[subscriptionOfferCodeOneTimeUseCodes]` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)

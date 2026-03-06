@@ -14,6 +14,11 @@ A mapping of locale to translations for the specific pronunciation-name translat
 object Song.NamePronunciation
 ```
 
+## Properties
+
+- `locale` (string): A locale in the IETF language tag format. An empty value indicates fallback to `default`.
+- `name` (string): A localized pronunciation of the song name.
+
 ## See Also
 
 - [object Song.ArtistRole](song/artistrole.md)

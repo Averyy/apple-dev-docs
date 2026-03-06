@@ -6,7 +6,7 @@ Add a scene to your article to create special effects.
 
 #### Overview
 
-Apple News Format provides animations (see [`About Component Animations`](about-component-animations.md)) and behaviors (see [`About Component Behaviors`](about-component-behaviors.md)) to use with individual components in your article, but you can also use a  — a combination of animations and behaviors — to control how a section or chapter of your article comes into view.
+Apple News Format provides animations (see [`About Component Animations`](about-component-animations.md)) and behaviors (see [`About Component Behaviors`](about-component-behaviors.md)) to use with individual components in your article, but you can also use a *scene* — a combination of animations and behaviors — to control how a section or chapter of your article comes into view.
 
 A scene combines animations and behaviors to create special effects that you can use with the headers in `section` and `chapter` components. Apple News Format has two scenes you can use to add interest to your article:
 

@@ -8,6 +8,8 @@ Build a URL and article body for the publish-article request.
 
 To publish an article to your channel, you make a multipart POST request consisting of at least one MIME part named `article.json`. You provide additional parts for each resource that uses a URL in the format `bundle:// URL`. See [`Create an Article`](https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles).
 
+**On this page, you’ll learn how to:**
+
 - Build a publish-article URL.
 - Build the article body.
 - (Optional) Include a `metadata.json` file.

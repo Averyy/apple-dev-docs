@@ -20,7 +20,7 @@ class MarkerAnnotation extends Annotation
 
 #### Overview
 
-A  is a balloon-shaped annotation that contains a glyph or text. On the map, the marker appears when its coordinate is in view.
+A *marker* is a balloon-shaped annotation that contains a glyph or text. On the map, the marker appears when its coordinate is in view.
 
 The following example shows a customized marker that specifies a color for the balloon background and the glyph, and provides custom glyph images. Color properties accept either a color name, here “brown” and “green”, or the equivalent hexadecimal color value such as “`#A52A2A`” and “`#008000`”, respectively. Or, you can use a specific color that matches your app’s specific design. For more information on standardized colors, see the CSS working group’s list of [`common color names and values`](https://developer.apple.comhttps://drafts.csswg.org/css-color/#named-colors).
 
@@ -55,6 +55,8 @@ const annotation = new mapkit.MarkerAnnotation(new mapkit.Coordinate(40.6892, -7
     callout: calloutDelegate
 });
 ```
+
+---
 
 ## Topics
 

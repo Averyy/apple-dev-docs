@@ -20,6 +20,10 @@ object BetaAppLocalizationCreateRequest.Data.Relationships
 - [object BetaAppLocalizationCreateRequest.Data.Relationships.App](betaapplocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
+## Properties
+
+- `app` (BetaAppLocalizationCreateRequest.Data.Relationships.App) *(required)*
+
 ## See Also
 
 - [object BetaAppLocalizationCreateRequest.Data.Attributes](betaapplocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)

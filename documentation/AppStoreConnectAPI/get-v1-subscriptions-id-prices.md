@@ -8,6 +8,20 @@ Get a list of prices for an auto-renewable subscription, by territory.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/prices`
+
+## Parameters
+
+- `fields[subscriptionPricePoints]` ([string])
+- `fields[subscriptionPrices]` ([string])
+- `fields[territories]` ([string])
+- `filter[subscriptionPricePoint]` ([string])
+- `filter[territory]` ([string])
+- `include` ([string])
+- `limit` (integer)
+
 ## See Also
 
 - [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)

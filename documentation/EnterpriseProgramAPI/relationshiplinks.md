@@ -11,6 +11,11 @@ The links to the related data and the relationship’s self-link.
 object RelationshipLinks
 ```
 
+## Properties
+
+- `related` (uri-reference)
+- `self` (uri-reference)
+
 ## See Also
 
 - [object Profile.Relationships.Devices.Data](profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md)

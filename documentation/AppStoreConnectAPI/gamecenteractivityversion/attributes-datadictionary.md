@@ -14,6 +14,12 @@ Attributes that describe an activity resource.
 object GameCenterActivityVersion.Attributes
 ```
 
+## Properties
+
+- `fallbackUrl` (string)
+- `state` (GameCenterVersionState)
+- `version` (integer)
+
 
 ---
 

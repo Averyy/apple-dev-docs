@@ -8,6 +8,16 @@ Get an app’s primary App Store category.
 **Availability**:
 - App Store Connect API 1.2+
 
+## Endpoint
+
+`GET https://api.appstoreconnect.apple.com/v1/appInfos/{id}/primaryCategory`
+
+## Parameters
+
+- `fields[appCategories]` ([string]): Fields to return for included related types.
+- `limit[subcategories]` (integer)
+- `include` ([string])
+
 ## See Also
 
 - [Read the Secondary Category Information of an App Info](get-v1-appinfos-_id_-secondarycategory.md)

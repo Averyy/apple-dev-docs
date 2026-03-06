@@ -14,6 +14,10 @@ Attribute metadata for the playlist featured artists view.
 object Playlists.Views.PlaylistsFeaturedArtistsView.Attributes
 ```
 
+## Properties
+
+- `title` (string) *(required)*: A localized title for this view
+
 
 ---
 

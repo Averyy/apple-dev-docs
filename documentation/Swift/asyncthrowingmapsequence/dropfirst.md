@@ -26,7 +26,7 @@ An asynchronous sequence that drops the first `count` elements from the base seq
 
 #### Discussion
 
-Use `dropFirst(_:)` when you want to drop the first  elements from the base sequence and pass through the remaining elements.
+Use `dropFirst(_:)` when you want to drop the first *n* elements from the base sequence and pass through the remaining elements.
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `dropFirst(_:)` method causes the modified sequence to ignore the values `1` through `3`, and instead emit `4` through `10`:
 
@@ -41,7 +41,7 @@ If the number of elements to drop exceeds the number of elements in the sequence
 
 ## Parameters
 
-- `count`: The number of elements to drop from the beginning of   the sequence.   must be greater than or equal to zero.
+- `count`: The number of elements to drop from the beginning of the sequence. `count` must be greater than or equal to zero.
 
 
 ---

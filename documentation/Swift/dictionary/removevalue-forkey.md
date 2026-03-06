@@ -48,7 +48,7 @@ if let value = hues.removeValue(forKey: "Cerise") {
 // Prints "No value found for that key."
 ```
 
-> **Note**: O(), where  is the number of key-value pairs in the dictionary.
+> **Note**: O(*n*), where *n* is the number of key-value pairs in the dictionary.
 
 ## Parameters
 

@@ -20,6 +20,10 @@ string BundleIdPlatform
 
 ##### Possible Values
 
+- **`IOS`**: A string that represents iOS.
+- **`MAC_OS`**: A string that represents macOS.
+- **`UNIVERSAL`**: A string that represents all possible platforms.
+
 ## See Also
 
 - [object BundleId](bundleid.md)

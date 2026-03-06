@@ -30,6 +30,10 @@ The following listing shows the main elements of the `menuBarTemplate` element i
 
 ###### Element Descriptions
 
+- **[`menuBar`](menubar.md)**: Menu items associated with the menu bar.
+- **[`menuItem`](menuitem.md)**: Information about a single menu item.
+- **[`title`](title.md)**: The text that describes the menu item.
+
 ##### Example
 
 The following listing shows the TVML for a `menuBarTemplate` example. The example shows the menu bar along the top of the screen. Expand the controlling JavaScript file in order to show content for each item in the menu bar. For more information, see [`TVMLKit JS`](https://developer.apple.com/documentation/tvmljs).

@@ -17,6 +17,11 @@ object BetaGroupBetaRecruitmentCriteriaLinkageResponse
 ### Dictionaries
 - [object BetaGroupBetaRecruitmentCriteriaLinkageResponse.Data](betagroupbetarecruitmentcriterialinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (BetaGroupBetaRecruitmentCriteriaLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object BetaGroup](betagroup.md)

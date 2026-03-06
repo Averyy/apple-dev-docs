@@ -17,6 +17,10 @@ object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId
 - [object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId.Data](bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
+## Properties
+
+- `data` (BundleIdCapabilityCreateRequest.Data.Relationships.BundleId.Data) *(required)*
+
 
 ---
 

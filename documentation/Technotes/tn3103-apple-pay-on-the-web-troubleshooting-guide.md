@@ -20,7 +20,7 @@ After you have created your Merchant Identifier you will need to create a Paymen
 
 1. On your Mac, launch Keychain Access to create a [`certificate signing request`](https://developer.apple.comhttps://help.apple.com/developer-account/#/devbfa00fef7?sub=devf31990e3f) (CSR).
 2. Upload this CSR to the Merchant Configuration page to generate a Payment Processing Certificate.
-3. Create a Payment Processing Identity (p12 / key and cert) by downloading the generated Payment Processing Certificate and installing it into the Keychain on the same Mac used to create the initial CSR.  If you created the CSR outside of a Mac then the key and certificate will need to be stored on the device the CSR was created. : Do not lose this Payment Processing Identity, because it will be used by your Payment Processor.
+3. Create a Payment Processing Identity (p12 / key and cert) by downloading the generated Payment Processing Certificate and installing it into the Keychain on the same Mac used to create the initial CSR.  If you created the CSR outside of a Mac then the key and certificate will need to be stored on the device the CSR was created. **Important**: Do not lose this Payment Processing Identity, because it will be used by your Payment Processor.
 
 > **Note**: The process described here details a situation where you, as the Developer, are setting up the Merchant Assets. It could also be the case that your Payment Service Provider creates the CSR and gives it to you, the Merchant, to upload to the Merchant ID Configuration page to generate a Payment Certificate. The benefit of this workflow is you would not need to export your Payment Processing Identity from your Keychain to provide it to the Payment Processor, they would already have the required private key from the CSR that they had previously generated.
 
@@ -54,7 +54,7 @@ https://example.com/.well-known/apple-developer-merchantid-domain-association.tx
 
 This file above will need to be placed at the root level of your server.
 
-> ❗ **Important**: The domain verification file expires after , so if you are not able to verify your domain after 7 days you will need to regenerate this file and replace it on your server.
+> ❗ **Important**: The domain verification file expires after **7 days**, so if you are not able to verify your domain after 7 days you will need to regenerate this file and replace it on your server.
 
 To perform domain verification, click the Verify button in the Merchant ID Configuration page to verify the domain. If all goes well, your domain should be verified and show up as “Verified” in the Merchant ID Configuration page. If you experience issues, please read further to resolve common reasons domain verification fails.
 
@@ -163,7 +163,7 @@ After the transaction is authorized you will receive the complete shipping infor
 After the payment request is created your application will need to go through the [`Merchant Validation process`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation) to authenticate itself as a valid Merchant to process a transaction. Upon successful authentication, your server will receive a payment session to submit with your payment request to the Apple Pay SDK. This process is where most Apple Pay on the Web issues take place because there are a lot of moving parts. Here is an overview of that process as well as suggestions on how to resolve common errors in this workflow:
 
 1. Call your server with the URL that your client side application received in [`validationURL`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/applepayvalidatemerchantevent/1778026-validationurl). In this step your JavaScript client application will send an HTTPS request to your server side application passing it the validationURL.
-2. Your server side application will receive the HTTPS request from step one, and use the validationURL to create a POST request to obtain a payment session from the server to Apple’s servers. This is where your application uses the Merchant Identity Certificate to identify itself as a valid Merchant to the Apple Pay Servers.  make this request from your client side JavaScript application as it will expose your private key. Make sure this request utilizes the correct format of your p12/PEM to perform client authentication with the Apple Pay servers. If you receive a TLS or SSL failure while making this request then examine the format of the p12/PEM in this payment session request.
+2. Your server side application will receive the HTTPS request from step one, and use the validationURL to create a POST request to obtain a payment session from the server to Apple’s servers. This is where your application uses the Merchant Identity Certificate to identify itself as a valid Merchant to the Apple Pay Servers. **DO NOT** make this request from your client side JavaScript application as it will expose your private key. Make sure this request utilizes the correct format of your p12/PEM to perform client authentication with the Apple Pay servers. If you receive a TLS or SSL failure while making this request then examine the format of the p12/PEM in this payment session request.
 3. Once the Apple Pay server has a payment session it should respond to your server with this session and your client application should pass the session into `completeMerchantValidation(paymentSession);`.
 
 Step two above is where a lot of issues take place. To validate that your server side APIs are not causing an issue, you can test a payment session request using CURL. Assuming that your Merchant Identity Certificate is in your Keychain, export that as a p12 and extract the certificate/key in PEM format.
@@ -250,10 +250,10 @@ For a complete overview of how to decrypt the Apple Pay Payment token and how th
 
 #### Revision History
 
--  Made minor editorial changes.
--  Made minor editorial changes.
--  Republished as TN3103.
--  First published as “Apply Pay on the Web Debugging Guide” on the Apple Developer Forums.
+- **2022-05-24** Made minor editorial changes.
+- **2022-03-29** Made minor editorial changes.
+- **2022-02-08** Republished as TN3103.
+- **2021-09-13** First published as “Apply Pay on the Web Debugging Guide” on the Apple Developer Forums.
 
 ## See Also
 

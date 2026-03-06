@@ -14,6 +14,12 @@ A list of users, with a token for pagination.
 object Users
 ```
 
+## Properties
+
+- `moreToFollow` (boolean): A flag that indicates whether there are more users. If `true`, use the `nextPageToken` to request another list from the remaining users.
+- `nextPageToken` (string): A token to request additional users, if any. Use this as the `nextPageToken` parameter for the [`List users`](returns-a-list-of-users-in-an-apple-school-manager-organization.md) request.
+- `users` ([User]): A list of [`User`](user.md) objects.
+
 ## See Also
 
 - [Read a user](returns-a-specific-user-in-an-apple-school-manager-organization.md)

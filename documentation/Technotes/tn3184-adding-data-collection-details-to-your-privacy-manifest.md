@@ -186,11 +186,84 @@ To add the `NSPrivacyCollectedDataTypes` key to your privacy manifest:
 
 The following example declares the contacts information collected from the user in an app named `Sample`:
 
+**Source code**:
+
+```xml
+<plist>
+<dict>
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array>
+        <!-- Collects the user's contacts in the `Sample` app. -->
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>NSPrivacyCollectedDataTypeContacts</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <true/>
+            <key>NSPrivacyCollectedDataTypeTracking</key>
+            <false/>
+            <key>NSPrivacyCollectedDataTypePurposes</key>
+            <array>
+                <string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
+```
+
+**Property list**:
+
+![A privacy manifest that declares the contacts information collected from the user.](https://docs-assets.developer.apple.com/published/0955bed912c666a76d2a8717d595fdff/tn3184-privacy_collected_data_entry%402x.png)
+
 Repeat step 5 for each additional data type your app or third-party SDK collects. In the following example, `Sample` additionally collects user ID information from the user:
+
+**Source code**:
+
+```xml
+<plist>
+<dict>
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array>
+        <!-- Collects the user's contacts in the `Sample` app. -->
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>NSPrivacyCollectedDataTypeContacts</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <true/>
+            <key>NSPrivacyCollectedDataTypeTracking</key>
+            <false/>
+            <key>NSPrivacyCollectedDataTypePurposes</key>
+            <array>
+                <string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+            </array>
+        </dict>
+        <!-- Collects and tracks the user's user ID in the `Sample` app. -->
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>NSPrivacyCollectedDataTypeUserID</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <false/>
+            <key>NSPrivacyCollectedDataTypeTracking</key>
+            <true/>
+            <key>NSPrivacyCollectedDataTypePurposes</key>
+            <array>
+                <string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+                <string>NSPrivacyCollectedDataTypePurposeOther</string>
+                <string>NSPrivacyCollectedDataTypePurposeProductPersonalization</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
+```
+
+**Property list**:
+
+![A privacy manifest that declares the contacts and user ID information collected from the user.](https://docs-assets.developer.apple.com/published/d834756af5aa5c7f636af610a68e5562/tn3184-privacy_collected_data_entries%402x.png)
 
 #### Revision History
 
--  First published.
+- **2024-12-17** First published.
 
 ## See Also
 

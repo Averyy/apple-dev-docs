@@ -20,6 +20,10 @@ object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships.AppC
 - [object AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships.AppClipDefaultExperience.Data](appclipdefaultexperiencelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperience-data.dictionary/data-data.dictionary.md)
   The type and ID of the Default App Clip Experiences resource that you’re relating with the Default App Clip Experience Localizations resource you’re creating.
 
+## Properties
+
+- `data` (AppClipDefaultExperienceLocalizationCreateRequest.Data.Relationships.AppClipDefaultExperience.Data) *(required)*: The ID and type of the related Default App Clip Experiences resource.
+
 
 ---
 

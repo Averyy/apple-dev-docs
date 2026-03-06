@@ -8,6 +8,14 @@ Update the visibility of a promoted in-app purchase.
 **Availability**:
 - App Store Connect API 2.0+
 
+## Endpoint
+
+`PATCH https://api.appstoreconnect.apple.com/v1/promotedPurchases/{id}`
+
+## Parameters
+
+- `id` (string) *(required)*
+
 ## See Also
 
 - [Promote a Purchase](post-v1-promotedpurchases.md)

@@ -17,6 +17,11 @@ object SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse
 ### Dictionaries
 - [object SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse.Data](subscriptionoffercodeonetimeusecodevalueslinkageresponse/data-data.dictionary.md)
 
+## Properties
+
+- `data` (SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse.Data) *(required)*
+- `links` (DocumentLinks) *(required)*
+
 ## See Also
 
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)

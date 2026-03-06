@@ -20,6 +20,10 @@ object BetaAppClipInvocation.Relationships
 - [object BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations](betaappclipinvocation/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Beta App Clip Invocations and the Beta App Clip Invocation Localizations resources.
 
+## Properties
+
+- `betaAppClipInvocationLocalizations` (BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations): The related Beta App Clip Invocation Localizations resource.
+
 ## See Also
 
 - [object BetaAppClipInvocation.Attributes](betaappclipinvocation/attributes-data.dictionary.md)

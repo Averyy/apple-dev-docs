@@ -26,7 +26,12 @@ See [`Fetching Zones by Identifier (zones/lookup)`](https://developer.apple.comh
 
 ## Parameters
 
-- `zones`: Possible values are:
+- `zones`: Possible values are: | Type | Description |
+| --- | --- |
+| [`CloudKit.ZoneID`](cloudkit.zoneid.md) | A zone in the database to fetch. |
+| `CloudKit.ZoneID[]` | An array of zones to fetch. |
+| `String` | The name of a zone to fetch. |
+| `String[]` | An array of names of zones to fetch. |
 
 ## See Also
 
