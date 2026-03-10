@@ -43,12 +43,11 @@ protocol PhotosEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s photo and video functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
-  Assistant schema conformance for app intents that offer photo and video functionality.
-- [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
-  Assistant schema conformance for types you use to describe photos and videos.
+- [var album: some AssistantSchemas.Entity](assistantschemas/photosentity/album.md)
+  The app entity describes an album.
+- [var asset: some AssistantSchemas.Entity](assistantschemas/photosentity/asset.md)
+- [var recognizedPerson: some AssistantSchemas.Entity](assistantschemas/photosentity/recognizedperson.md)
+  The app entity describes a person who appears in an asset.
 
 
 ---

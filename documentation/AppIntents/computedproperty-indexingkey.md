@@ -21,6 +21,10 @@ A macro that creates a computed property for an AppEntity that allows for provid
 (peer, names: prefixed(`$`), prefixed(`_`)) @attached(accessor, names: named(get), named(set)) macro ComputedProperty(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)
 ```
 
+## Mentions
+
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
+
 #### Overview
 
 Deferred properties have a few trade offs to consider:

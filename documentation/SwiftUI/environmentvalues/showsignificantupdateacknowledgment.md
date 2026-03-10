@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-An action that shows a system sheet for significant update acknowledgments.
+Presents a system interface to inform people about significant app changes and request their acknowledgment.
 
 **Availability**:
 - iOS 26.4+ (Beta)

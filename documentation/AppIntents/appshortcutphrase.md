@@ -37,6 +37,9 @@ struct AppShortcutPhrase<Intent> where Intent : AppIntent
 
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
+- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
+  Dynamic values you can include in the spoken phrases that run your shortcut.
 - [struct NegativeAppShortcutPhrase](negativeappshortcutphrase.md)
   An object that represents a negative phrase.
 - [struct NegativeAppShortcutPhrases](negativeappshortcutphrases.md)

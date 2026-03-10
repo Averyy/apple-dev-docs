@@ -15,6 +15,10 @@ A protocol that enables the communication of notification responses to the syste
 protocol AccessoryNotificationManaging
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 The [`AccessoryNotificationManagerFactory`](accessorynotificationmanagerfactory.md) class provides access to a system-provided object that implements this protocol through [`defaultManager`](accessorynotificationmanagerfactory/defaultmanager.md).

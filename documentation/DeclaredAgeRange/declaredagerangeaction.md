@@ -25,7 +25,7 @@ Use `DeclaredAgeRangeAction` in SwiftUI views to request a person’s age range.
 
 ### Requesting the age range
 - [func callAsFunction(ageGates: Int, Int?, Int?) async throws -> AgeRangeService.Response](declaredagerangeaction/callasfunction(agegates:_:_:).md)
-  Returns a response indicating whether the person has set their age range.
+  Returns a response indicating whether the person shared their age range.
 
 ## See Also
 

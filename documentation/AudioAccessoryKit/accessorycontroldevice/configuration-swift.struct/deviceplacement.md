@@ -21,7 +21,7 @@ var devicePlacement: AccessoryControlDevice.Placement?
 
 #### Discussion
 
-Update this property when your accessory detects a change in its position.
+Update this property when your accessory detects a change in its position. If the accessory doesn’t support the [`placement`](accessorycontroldevice/capabilities/placement.md) capability, the value of this property is always `nil`.
 
 ## See Also
 

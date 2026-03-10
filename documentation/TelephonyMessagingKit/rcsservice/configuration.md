@@ -8,7 +8,6 @@ A structure that contains RCS configuration parameters, such as timing and size 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

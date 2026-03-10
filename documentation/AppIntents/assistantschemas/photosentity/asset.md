@@ -63,6 +63,15 @@ struct PhotoEntity: CollaborativeEntity {
 }
 ```
 
+## See Also
+
+- [var album: some AssistantSchemas.Entity](assistantschemas/photosentity/album.md)
+  The app entity describes an album.
+- [var recognizedPerson: some AssistantSchemas.Entity](assistantschemas/photosentity/recognizedperson.md)
+  The app entity describes a person who appears in an asset.
+- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
+  Assistant schema conformance for app entities that describe media assets.
+
 
 ---
 

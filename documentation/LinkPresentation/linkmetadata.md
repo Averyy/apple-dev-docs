@@ -31,6 +31,7 @@ Fetch metadata using [`LPMetadataProvider`](lpmetadataprovider.md). For remote U
 
 ### Structures
 - [LinkMetadata.Attachment](linkmetadata/attachment.md)
+  Describes a kind of attachment to the metadata.
 ### Initializers
 - [init?(sending LPLinkMetadata)](linkmetadata/init(_:).md)
   Creates a [`LinkMetadata`](linkmetadata.md) value from a [`LPLinkMetadata`](lplinkmetadata.md) instance.
@@ -38,7 +39,6 @@ Fetch metadata using [`LPMetadataProvider`](lpmetadataprovider.md). For remote U
   Creates a [`LinkMetadata`](linkmetadata.md) value from the specified properties by fetching the specified URL.
 - [init(fetching: URLRequest, timeout: Duration, includeSubresources: Bool) async throws](linkmetadata/init(fetching:timeout:includesubresources:)-7rkd9.md)
   Creates a [`LinkMetadata`](linkmetadata.md) value from the specified properties by fetching the URL using the specified request.
-- [init<A, B, C>(originalURL: URL?, title: String?, image: A?, icon: B?, video: C?)](linkmetadata/init(originalurl:title:image:icon:video:).md)
 - [init(url: URL)](linkmetadata/init(url:).md)
   Creates a new [`LinkMetadata`](linkmetadata.md) value for the specified URL.
 ### Instance Properties

@@ -183,19 +183,6 @@ The example above initializes each representation with a string literal. To help
 
 For more information, see [`DisplayRepresentation`](displayrepresentation.md).
 
-## See Also
-
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-  Enable people to configure app intents with their custom input values.
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
-- [Resolvers](resolvers.md)
-  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
-
 
 ---
 

@@ -8,7 +8,6 @@ An optional reason to report the message as spam.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

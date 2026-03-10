@@ -1,4 +1,4 @@
-# macOS Tahoe 26.4 Beta 3 Release Notes
+# macOS Tahoe 26.4 Beta 4 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.4 SDK provides support to develop apps for Mac computers running Tahoe 26.4 beta 3. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The macOS 26.4 SDK provides support to develop apps for Mac computers running Tahoe 26.4 beta 4. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+
+##### Address Sanitizer
+
+###### Known Issues
+
+- Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
 
 ##### Appkit
 
@@ -21,10 +27,10 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 - You can now check the status of an asset pack while offline by calling `localStatus(ofAssetPackWithID:)` or `assetPackIsAvailableLocally(withID:)` on the shared asset pack manager. The former method returns all available status information. The latter returns only a Boolean value but can be called synchronously. Not all status information is available offline.  (164498466)
 - You can make the latest version of an asset pack available locally by calling `ensureLocalAvailability(of:requireLatestVersion:)` on the shared asset pack manager and passing `true` to the `shouldUpdate` parameter.  (166237389)
 
-###### Known Issues
+###### Resolved Issues
 
-- Setting a URL override could break apps from the App Store that use Apple-Hosted Background Assets.  (169558509) **Workaround:** Remove any URL override that you previously set before installing or using an app from the App Store.
-- Apps might crash when downloading asset packs.  (169648111) **Workaround:** If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
+- Fixed: Setting a URL override could break apps from the App Store that use Apple-Hosted Background Assets.  (169558509)
+- Fixed: Apps might crash when downloading asset packs.  (169648111)
 
 ##### Coremidi
 
@@ -40,15 +46,21 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 ##### External Media
 
+###### Resolved Issues
+
+- Fixed: HFS external media might fail to mount automatically.  (168672160)
+
+##### Fskit
+
 ###### Known Issues
 
-- HFS external media might fail to mount automatically.  (168672160) **Workaround:** For macOS only, use CLI tool `diskutil mount` to attach the relevant disk device.
+- The availability version for `FSVolume.MountOptions` and for the property `FSVolume.requestedMountOptions` is incorrect. These symbols are available starting in macOS 26.4.  (171914656)
 
 ##### Installation
 
-###### Known Issues
+###### Resolved Issues
 
-- Install macOS Tahoe Beta.app does not work on versions of macOS prior to 15.0.  (170997618) **Workaround:** Update to macOS 15.0 or later before running Install macOS Tahoe Beta.app, or use software update instead.
+- Fixed: Install macOS Tahoe Beta.app does not work on versions of macOS prior to 15.0.  (170997618)
 
 ##### Internet Accounts
 
@@ -73,6 +85,12 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 ###### Resolved Issues
 
 - Fixed: Multiple processes leak `CFRunLoopSource` objects when Automatic proxy configuration (PAC) or Auto proxy discovery are configured. For clients of the `CFNetworkExecuteProxyAutoConfigurationURL` and `CFNetworkExecuteProxyAutoConfigurationScript` API, please check to make sure your process is not working around the leak by overreleasing the `CFRunLoopSourceRef` returned by those functions or the `CFArrayRef` and `CFErrorRef` passed to the completion.  (166839810) (FB21376045)
+
+##### Printing
+
+###### Known Issues
+
+- Jobs and Printer Status might not be reflected in Print Center.  (171264258)
 
 ##### Resource Fork
 

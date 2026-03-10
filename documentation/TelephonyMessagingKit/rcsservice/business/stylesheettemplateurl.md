@@ -8,7 +8,6 @@ URL referring to a CSS template to be used in rich cards sent by business.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

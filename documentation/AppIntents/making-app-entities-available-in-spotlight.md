@@ -2,32 +2,17 @@
 
 **Framework**: App Intents
 
-Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
+Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
 
 #### Overview
 
-With Spotlight, people access information from within apps and the web, and use it to launch apps and perform actions. When you adopt the App Intents framework and create App Shortcuts, people can perform your app’s actions from Spotlight. Additionally, you can donate your [`AppEntity`](appentity.md) objects to Spotlight, allowing people to find your content and launch your app to view more information. For example, people might search nearby landmarks in Spotlight, find a travel app’s content, and tap it to launch the app for detailed information.
+Spotlight provides systemwide search capabilities and integrates with Apple Intelligence, Siri, and other system technologies. To make your app’s content findable by Spotlight, you need to add information about your content to the Spotlight indexes. If your app defines [`AppEntity`](appentity.md) types, index them so that Spotlight can use them to open your app and display that content.
 
-##### Create an Intent That Displays Your Entity in Your App
+During the indexing process, you provide Spotlight with information about your app’s content. The standard indexing process entails building a [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) for each type. However, the App Intents framework offers a more declarative approach for specifying that information. This approach requires less code because it leverages existing code you use to create your entities.
 
-When an app entity appears in Spotlight, people can tap it to open your app to the scene that shows detailed information matching the entity. For example, the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) sample app makes landmarks available to Spotlight. When someone taps a landmark in Spotlight, the app opens to display detailed information about that landmark.
+##### Add Support for Indexing Your Entity Types
 
-For each entity type that you want to make available to Spotlight, create an app intent that conforms to [`OpenIntent`](openintent.md) and takes the entity as a parameter, as in the following example:
-
-```swift
-import AppIntents
-
-struct OpenLandmarkIntent: OpenIntent {
-    static let title: LocalizedStringResource = "Open Landmark"
-
-    @Parameter(title: "Landmark", requestValueDialog: "Which landmark?")
-    var target: LandmarkEntity
-}
-```
-
-##### Make Your App Entity Indexable
-
-To donate your app entities to the semantic index of Spotlight, they need to conform to the [`IndexedEntity`](indexedentity.md) protocol. For example, the sample app for [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) extends its `LandmarkEntity` to add the protocol conformance.
+To index your app’s entities, each [`AppEntity`](appentity.md) type you define needs to conform to the [`IndexedEntity`](indexedentity.md) protocol. The following example shows the `LandmarkEntity` type from [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md), which includes this protocol in its declaration:
 
 ```swift
 struct LandmarkEntity: IndexedEntity {
@@ -37,36 +22,25 @@ struct LandmarkEntity: IndexedEntity {
 }
 ```
 
-By stating that your entity conforms to `IndexedEntity`, you can then donate it to Spotlight. By default, the title, subtitle, and image of the entity’s [`DisplayRepresentation`](displayrepresentation.md) become indexed attributes in Spotlight, and Spotlight shows your entity if a search matches one of those attributes.
+The [`IndexedEntity`](indexedentity.md) protocol provides default implementations of its properties, so you don’t need to add any code by default. However, you can override the implementations of those properties to customize the information you pass to Spotlight during indexing.
 
-However, your entity likely contains additional information that you want to be searchable and findable in Spotlight. To declare additional attributes that are searchable in Spotlight, implement a custom attribute set for your entity:
+##### Specify Which Properties of Your Entity to Index
 
-- Use the `@Property` or `@ComputedProperty` Swift property wrappers to add your entity’s variables to the Spotlight index.
-- In iOS 18, provide an [`attributeSet`](indexedentity/attributeset.md) for your indexed entities that contains attributes for Spotlight indexing.
-- If you already use [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), associate your app entities with a matching [`CSSearchableItem`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem).
+Conformance to the [`IndexedEntity`](indexedentity.md) protocol unlocks support for indexing entities, but you need to take additional steps to specify what content to index. When you create an entity, you add certain properties to your type and annotate other properties with macros the App Intents framework requires. Spotlight uses this same information when indexing your type. For example, Spotlight automatically indexes the contents of your entity’s [`displayRepresentation`](instancedisplayrepresentable/displayrepresentation.md) property, including the title, subtitle, and image values you provide.
 
-For more information about each option, refer to the applicable section below.
+If you adorn properties with the [`AppEntity.Property`](appentity/property.md) or [`ComputedProperty(indexingKey:)`](computedproperty(indexingkey:).md) property wrappers, you can use those same wrappers to tell Spotlight what content to index. When you include an indexing key with those property wrappers, Spotlight automatically adds the data in that property to your app’s index. Specify an indexing key using Swift key paths and one of the property names in the [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) type. To create this path, specify a slash and period (`\.`) followed by the property name. You can also use this approach to specify key paths for your app’s custom indexing keys.
 
-##### Mark Your Entitys Variables As Indexable Properties
-
-The system can automatically extract the keys for Spotlight indexing at compile time and store them in the App Intents metadata that Xcode generates as part of your app’s bundle. As a result, Spotlight indexing is faster and can find your app entities without launching your app, and without you having to explicitly donate the entities to Spotlight. You also don’t need to manually update or remove entities from the Spotlight index when your app’s data changes.
-
-To add your indexed entity’s variables to the Spotlight index, use the `@Property` or `@ComputedProperty` Swift macro as follows:
-
-- Map the indexed entity’s variable to an indexing key that [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) defines, and use `@ComputedProperty(indexingKey:` or `@Property(indexingKey:)`.
-- If an indexed entity’s variable doesn’t fit any of the indexing keys that `CSSearchableItemAttributeSet` defines, use `@ComputedProperty(customIndexingKey:)`  or `@Property(customIndexingKey:)` to match the variable to a custom Spotlight indexing key.
-
-> **Note**: If your app entities conform to a schema and domain in [`App intent domains`](app-intent-domains.md), donate them to the system without defining an indexing key mapping. Entities that conform to a schema use a fixed shape that maps to Spotlight indexing keys. You can’t provide your own mapping for its variables.
-
-The following example shows how the `LandmarkEntity` of the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) sample app uses the different `@ComputedProperty` Swift macros to the entity’s variables as searchable attributes to the Spotlight index:
+The following code from the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample shows the `LandmarkEntity` type, which makes the app’s landmark data available to the system. The property wrapper for `description` tells Spotlight to index the property using the Spotlight-provided [`contentDescription`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet/contentDescription) key. The property wrapper for `continent` tells Spotlight to index the property using the provided custom key.
 
 ```swift
 struct LandmarkEntity: IndexedEntity {
     // ...
+
 
     // Maps the description variable to the Spotlight indexing key `contentDescription`.
     @ComputedProperty(indexingKey: \.contentDescription)
     var description: String { landmark.description }
+
 
     // Maps the continent variable to a custom Spotlight indexing key. 
     @ComputedProperty(
@@ -76,111 +50,106 @@ struct LandmarkEntity: IndexedEntity {
     )
     var continent: String { landmark.continent }
 
+
     // ...
 }
 ```
 
-On app launch, donate your app entities to the Spotlight index using [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) and its [`indexAppEntities(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/indexAppEntities(_:priority:)).
-
-The following example shows the implementation of the donation in the `AppIntentsTravelTracking` app:
+If your entity doesn’t have a declared property for data you want to index, specify that data in your entity’s [`attributeSet`](indexedentity/attributeset.md) property. The [`IndexedEntity`](indexedentity.md) protocol provides the default implementation of this property, but you can implement it yourself and return a custom [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) with additional data to index. The following example shows how you might use this property to return additional information related to a landmark that the entity doesn’t expose directly:
 
 ```swift
-import AppIntents
-import CoreSpotlight
-
-enum EntityDonator {
-    static func donateLandmarks(modelData: ModelData) async throws {
-        let landmarkEntities = await modelData.landmarkEntities
-        try await CSSearchableIndex.default().indexAppEntities(landmarkEntities)
-    }
-}
-```
-
-If your app’s data changes, delete app entities that no longer exist from the Spotlight index using [`deleteAppEntities(identifiedBy:ofType:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAppEntities(identifiedBy:ofType:)) or [`deleteAppEntities(ofType:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAppEntities(ofType:)).
-
-##### Implement the Optional Searchable Attribute Set for Your Indexed Entity
-
-In iOS 18, you can’t donate your app entities and their attributes to the Spotlight index using the `@ComputedProperty` or `@Property` Swift macros. Instead, your app entity needs to provide the [`attributeSet`](indexedentity/attributeset.md) property. You need to manually donate each entity to the index, and then update the index when your data changes.
-
-The following example shows how the sample app for [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) creates the [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet):
-
-```swift
-var searchableAttributes: CSSearchableItemAttributeSet {
+extension LandmarkEntity {
+    var attributeSet: CSSearchableItemAttributeSet {
         let attributes = CSSearchableItemAttributeSet()
-        
-        attributes.title = name
-        attributes.namedLocation = regionDescription
-        attributes.keywords = activities.localizedElements
-        
-        attributes.latitude = NSNumber(value: coordinate.latitude)
-        attributes.longitude = NSNumber(value: coordinate.longitude)
+                
+        attributes.latitude = NSNumber(value: landmark.latitude)
+        attributes.longitude = NSNumber(value: landmark.longitude)
         attributes.supportsNavigation = true
         
         return attributes
     }
+}
 ```
 
-On launch of your app, add your entities to the Spotlight index using [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) and its [`indexAppEntities(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/indexAppEntities(_:priority:)). If your app’s data changes, delete app entities that no longer exist from the Spotlight index using [`deleteAppEntities(identifiedBy:ofType:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAppEntities(identifiedBy:ofType:)) or [`deleteAppEntities(ofType:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAppEntities(ofType:)).
+> **Note**: Core Spotlight combines the keys from your entity’s wrapped properties with the contents of its [`displayRepresentation`](instancedisplayrepresentable/displayrepresentation.md) and [`attributeSet`](indexedentity/attributeset.md) properties to create the complete set of indexable keys. If you use the same indexing key in multiple places, Spotlight prefers values from wrapped properties over others. It also prefers data from the [`displayRepresentation`](instancedisplayrepresentable/displayrepresentation.md) property over data from the [`attributeSet`](indexedentity/attributeset.md) property.
 
-##### Associate Existing Core Spotlight Indexable Items with App Entities
+##### Add Your Entities to a Spotlight Index
 
-If your app already supports Spotlight or uses [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight) for its search functionality, follow these steps to create app entities and associate them with the [`CSSearchableItem`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem) that represents the entity in the Spotlight index:
-
-1. Create the `CSSearchabileItem` that represents the entity in the Spotlight index.
-2. Set the searchable attributes for `CSSearchableItem`.
-3. Associate the searchable item with the app entity it represents with [`associateAppEntity(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem/associateAppEntity(_:priority:)). Alternatively, initialize `CSSearchabileItem` using one of its initializers that takes an [`IndexedEntity`](indexedentity.md) as a parameter. Make sure to associate the app entity with the searchable item before adding the item to the Spotlight index.
-4. Add all items to the index using [`indexSearchableItems(_:completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/indexSearchableItems(_:completionHandler:)).
-
-The following code example from [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) shows how the sample app’s `TrailDataManager` creates searchable items, associates each item with the matching app entity, and then donates them to the Spotlight index:
+When your app runs, you must deliver instances of your [`AppEntity`](appentity.md) types to Spotlight so it can index them. If your app doesn’t yet support Spotlight, index your entities directly by calling the [`indexAppEntities(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/indexAppEntities(_:priority:)) method of a named [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) object. This method passes the entities to Spotlight, which processes them and adds them to your app’s index. The following example donates entities containing landmark data to an app-specific index:
 
 ```swift
-func updateSpotlightIndex() async {
-    guard CSSearchableIndex.isIndexingAvailable() else {
-        Logger.spotlightLogging.info("[Spotlight] Indexing is unavailable")
-        return
-    }
-    
-    // Create an array of the searchable information for each `Trail`.
-    let searchableItems = trails.map { trail in
-        let item = CSSearchableItem(uniqueIdentifier: String(trail.id),
-                                    domainIdentifier: nil,
-                                    attributeSet: trail.searchableAttributes)
-        
-        let isFavorite = favoritesCollection.members.contains(trail.id)
-        let weight = isFavorite ? 10 : 1
-        let intent = TrailEntity(trail: trail)
-        
-        /**
-         Associate `TrailEntity` with the data that the `Trail` structure provides so the system recognizes that
-         both types represent the same data. You need to create this association before adding `CSSearchableItem`
-         to `CSSearchableIndex`.
-         */
-        item.associateAppEntity(intent, priority: weight)
-        return item
-    }
-    
-    do {
-        // Add the trails to the search index so people can find them through Spotlight.
-        // You need to do this as part of the app's initial setup on launch.
-        let index = CSSearchableIndex.default()
-        try await index.indexSearchableItems(searchableItems)
-        Logger.spotlightLogging.info("[Spotlight] Trails indexed by Spotlight")
-    } catch let error {
-        Logger.spotlightLogging.error("[Spotlight] Trails were not indexed by Spotlight. Reason: \(error.localizedDescription)")
-    }
+static func donateLandmarks(modelData: ModelData) async throws {
+    let landmarkEntities = await modelData.landmarkEntities
+    try await CSSearchableIndex(name: "AppIntentsTravelTracking_Landmarks").indexAppEntities(landmarkEntities)
+}
+```
+
+> **Note**: When indexing your app’s content, use a named [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) type, not the default index. Use the default index only for prototyping and testing your code during development.
+
+If your app already indexes its content using [`CSSearchableItem`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem) objects, associate your entities with those items before passing them to the indexer. For information on how to do that, see [`Integrate entities into your existing Spotlight code`](making-app-entities-available-in-spotlight#Integrate-entities-into-your-existing-Spotlight-code.md). For additional information about the Spotlight indexing process, see [`Adding your app’s content to Spotlight indexes`](https://developer.apple.com/documentation/CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes).
+
+##### Integrate Entities Into Your Existing Spotlight Code
+
+If you already index your app’s content using [`CSSearchableItem`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem) objects, attach matching entities to those items to improve the search experience. When you attach an entity to one of your searchable items, Spotlight can use that entity to display the search result in your app, if you also have an open intent for the entity. The following steps explain the process for how to associate an entity with a searchable item:
+
+1. Populate the [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) of your searchable item with the data you want Spotlight to index.
+2. Create or locate the matching app entity for the item.
+3. Call the [`associateAppEntity(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet/associateAppEntity(_:priority:)) method to add the entity to the attribute set.
+4. Create the [`CSSearchableItem`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem) using the attribute set.
+5. Index the item with the rest of your content.
+
+The following example creates an array of searchable items for an app that manages hiking trails. For each trail, the code creates an app entity for the trail and associates it with the trail’s search attributes. When calling the [`associateAppEntity(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet/associateAppEntity(_:priority:)) method, the code also specifies a priority value to indicate the importance of that trail to the person. Spotlight elevates items with higher priority values in suggestions and search results to make them more visible.
+
+```swift
+let searchableItems = trails.map { trail in
+    let attributes = trail.searchableAttributes
+            
+    let isFavorite = favoritesCollection.members.contains(trail.id)
+    let weight = isFavorite ? 10 : 1
+    let entity = TrailEntity(trail: trail)
+    attributes.associateAppEntity(entity, priority: weight)
+
+    let item = CSSearchableItem(uniqueIdentifier: String(trail.id),
+                                        domainIdentifier: nil,
+                                        attributeSet: attributes)
+                        
+    return item
+}
+```
+
+After running the preceding code, create a named [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) object and use it to index the items. For information about how to index content using the Core Spotlight APIs, see [`Adding your app’s content to Spotlight indexes`](https://developer.apple.com/documentation/CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes).
+
+##### Provide an Intent to Open Your App From Search Results
+
+For each [`AppEntity`](appentity.md) type that you define and donate to Spotlight, create an [`OpenIntent`](openintent.md) type that opens that entity in your app. When Spotlight returns one of your app’s entities in a search result, you want people to be able to tap that result and navigate to the associated content in your app. When an open intent is present, Spotlight can use it to provide that behavior. The following example from [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) shows the open intent for the app’s `LandmarkEntity` type. When someone taps a landmark in search results, Spotlight uses the intent to open the app and display the chosen landmark.
+
+```swift
+struct OpenLandmarkIntent: OpenIntent {
+    static let title: LocalizedStringResource = "Open Landmark"
+
+    @Parameter(title: "Landmark", requestValueDialog: "Which landmark?")
+    var target: LandmarkEntity
 }
 ```
 
 ## See Also
 
-- [Focus](focus.md)
-  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
-- [Action button on iPhone and Apple Watch](actionbutton.md)
-  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
   Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
-  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [Siri](siri.md)
+  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
+- [Visual intelligence](visual-intelligence.md)
+  Integrate your app with visual intelligence and include your content in its search results.
+- [App Shortcuts](app-shortcuts.md)
+  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
+  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
+- [Action button on iPhone and Apple Watch](actionbutton.md)
+  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Focus](focus.md)
+  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
 
 ---

@@ -8,7 +8,6 @@ The time interval after which the receiver can expect an update from the compose
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -1,88 +1,88 @@
 {
   "metadata": {
-    "last_updated": "2026-03-06T07:32:45.717780",
+    "last_updated": "2026-03-10T07:34:24.936141",
     "total_pages": 10,
-    "session_id": "2026-03-06T07:32:44.847087"
+    "session_id": "2026-03-10T07:34:23.995025"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications.json": {
-      "hash": "e1999bd2f16c8800ddfc4bb351002875bdaab86f954d105f9406d6ae68ef68e3",
-      "last_checked": "2026-03-06T07:32:45.180458",
+      "hash": "c426f35b0683ac041ea5000dde52e929a88456c3c678a8c06935d0cd42592ca4",
+      "last_checked": "2026-03-10T07:34:24.381475",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"0c2c69a143fa127a2226ae7ebd249464\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"c0dc14acf7891dcffc6b6d9088594aab\"",
       "file_path": "documentation/professional_video_applications/professional_video_applications.md"
     },
     "https://developer.apple.com/documentation/professional_video_applications": {
-      "hash": "e1999bd2f16c8800ddfc4bb351002875bdaab86f954d105f9406d6ae68ef68e3",
-      "last_checked": "2026-03-06T07:32:45.094484",
+      "hash": "c426f35b0683ac041ea5000dde52e929a88456c3c678a8c06935d0cd42592ca4",
+      "last_checked": "2026-03-10T07:34:24.307981",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"0c2c69a143fa127a2226ae7ebd249464\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"c0dc14acf7891dcffc6b6d9088594aab\"",
       "file_path": "documentation/professional_video_applications/professional_video_applications.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpropertykey_changesoutputsize.json": {
-      "hash": "61ccaab2a9312f111b0db0bd2106052a3edc5468bde80ca66a3e979d416ea910",
-      "last_checked": "2026-03-06T07:32:45.488500",
+      "hash": "dd8989f48efb73b4ed5a1d14bd752895c463ae144cb997fb4220ceba1fbcc7c2",
+      "last_checked": "2026-03-10T07:34:24.629264",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"e151d5827c0417b95b1e9175b5c60a3f\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"5d87e3f9fce2e69fa06be39cece6f220\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-changesoutputsize.md"
     },
     "https://developer.apple.com/documentation/professional_video_applications/kfxpropertykey_changesoutputsize": {
-      "hash": "61ccaab2a9312f111b0db0bd2106052a3edc5468bde80ca66a3e979d416ea910",
-      "last_checked": "2026-03-06T07:32:45.488589",
+      "hash": "dd8989f48efb73b4ed5a1d14bd752895c463ae144cb997fb4220ceba1fbcc7c2",
+      "last_checked": "2026-03-10T07:34:24.629377",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"e151d5827c0417b95b1e9175b5c60a3f\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"5d87e3f9fce2e69fa06be39cece6f220\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-changesoutputsize.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpropertykey_desiredprocessingcolorinfo.json": {
-      "hash": "3bc870721129e67f6219cf748b852d534a3c6d0fa15fa98e83e314dfd3fa496e",
-      "last_checked": "2026-03-06T07:32:45.562770",
+      "hash": "04697c374fc473aa845143451f08aa4aecdbc351f1104e671a97337b8501b73b",
+      "last_checked": "2026-03-10T07:34:24.708526",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"31c1ebbcb087305782f266edc41ba298\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"6e970f47669446338f60b18e01422776\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-desiredprocessingcolorinfo.md"
     },
     "https://developer.apple.com/documentation/professional_video_applications/kfxpropertykey_desiredprocessingcolorinfo": {
-      "hash": "3bc870721129e67f6219cf748b852d534a3c6d0fa15fa98e83e314dfd3fa496e",
-      "last_checked": "2026-03-06T07:32:45.562871",
+      "hash": "04697c374fc473aa845143451f08aa4aecdbc351f1104e671a97337b8501b73b",
+      "last_checked": "2026-03-10T07:34:24.708633",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"31c1ebbcb087305782f266edc41ba298\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"6e970f47669446338f60b18e01422776\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-desiredprocessingcolorinfo.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpropertykey_needsfullbuffer.json": {
-      "hash": "7403abfb2caa3909e328a2038d28446743ec0911eeb124d09f58b3707bcad8e1",
-      "last_checked": "2026-03-06T07:32:45.636044",
+      "hash": "c51d45c5c6fce84691b1a9d5b1873e1e2a8ee8f96eef282e08c9c9ea1b1767c1",
+      "last_checked": "2026-03-10T07:34:24.818458",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"418f169788b4b785f593377e33c06ae5\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"d8e3fdb5aeae64e134f1362152ced0b9\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-needsfullbuffer.md"
     },
     "https://developer.apple.com/documentation/professional_video_applications/kfxpropertykey_needsfullbuffer": {
-      "hash": "7403abfb2caa3909e328a2038d28446743ec0911eeb124d09f58b3707bcad8e1",
-      "last_checked": "2026-03-06T07:32:45.636151",
+      "hash": "c51d45c5c6fce84691b1a9d5b1873e1e2a8ee8f96eef282e08c9c9ea1b1767c1",
+      "last_checked": "2026-03-10T07:34:24.818569",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"418f169788b4b785f593377e33c06ae5\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"d8e3fdb5aeae64e134f1362152ced0b9\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-needsfullbuffer.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional_video_applications/kfxpropertykey_varieswhenparamsarestatic.json": {
-      "hash": "41cfcdce3a62d3344000fea72cc9abafdf175d5770cb433abec7ff87faab2cf6",
-      "last_checked": "2026-03-06T07:32:45.716530",
+      "hash": "b805055c45d438c4843f4057978f163b49026f68ae1f01f998f36c2872459d07",
+      "last_checked": "2026-03-10T07:34:24.934973",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"5a157838e0be26f9c893b0078a06ff18\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"7e99871cc146a88fdab623ed40e39027\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-varieswhenparamsarestatic.md"
     },
     "https://developer.apple.com/documentation/professional_video_applications/kfxpropertykey_varieswhenparamsarestatic": {
-      "hash": "41cfcdce3a62d3344000fea72cc9abafdf175d5770cb433abec7ff87faab2cf6",
-      "last_checked": "2026-03-06T07:32:45.716649",
+      "hash": "b805055c45d438c4843f4057978f163b49026f68ae1f01f998f36c2872459d07",
+      "last_checked": "2026-03-10T07:34:24.935075",
       "status": "unchanged",
-      "session_id": "2026-03-06T07:32:44.847087",
-      "etag": "W/\"5a157838e0be26f9c893b0078a06ff18\"",
+      "session_id": "2026-03-10T07:34:23.995025",
+      "etag": "W/\"7e99871cc146a88fdab623ed40e39027\"",
       "file_path": "documentation/professional_video_applications/kfxpropertykey-varieswhenparamsarestatic.md"
     }
   }

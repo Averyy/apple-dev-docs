@@ -8,7 +8,6 @@ The attachment disposition, directing the receiving app to not automatically ren
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

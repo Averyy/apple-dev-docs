@@ -34,6 +34,8 @@ struct SourceLocation
   The file ID of the source file.
 - [var fileName: String](sourcelocation/filename.md)
   The name of the source file.
+- [var filePath: String](sourcelocation/filepath.md)
+  The path to the source file.
 - [var line: Int](sourcelocation/line.md)
   The line in the source file.
 - [var moduleName: String](sourcelocation/modulename.md)

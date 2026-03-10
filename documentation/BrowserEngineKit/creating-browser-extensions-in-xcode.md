@@ -84,7 +84,7 @@ Each of your browser app’s extensions need to add the the following entitlemen
 
 To use the extension entitlements, compile your host app and extensions with the `arm64e` instruction set.
 
-In Japan, browser apps are required to enable hardware memory tagging (see [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations)). To protect your users, Apple also strongly recommends that browser apps enable memory tagging in the European Union.
+In Japan, browser apps are required to enable hardware memory tagging (see [`com.apple.security.hardened-process.checked-allocations`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations)). To protect your users, Apple also strongly recommends that browser apps enable memory tagging in the European Union.
 
 In addition, you can optionally add the following entitlements:
 

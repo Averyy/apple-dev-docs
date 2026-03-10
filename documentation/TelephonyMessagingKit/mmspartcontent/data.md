@@ -8,7 +8,6 @@ The raw data used for the MMS content part.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

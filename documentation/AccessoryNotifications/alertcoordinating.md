@@ -15,6 +15,10 @@ A protocol that communicates whether the accessory completes the process of aler
 protocol AlertCoordinating : Sendable
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 > ❗ **Important**: The Accessory Notifications framework will support this feature in a future release.

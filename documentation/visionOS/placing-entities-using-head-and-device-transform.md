@@ -166,6 +166,8 @@ func startFollowMode() {
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 - [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in your app.
+- [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
+  Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 
 
 ---

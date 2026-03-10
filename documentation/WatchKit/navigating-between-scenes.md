@@ -30,7 +30,7 @@ Start by adding an interface controller for each page to the storyboard:
 
 ![A screenshot showing two interface controllers in the storyboard.](https://docs-assets.developer.apple.com/published/00f70e8e3361b6e0aafa221c556e4989/media-3148631%402x.png)
 
-Control-click the first interface controller and drag to the second interface controller. The second controller should highlights to indicate that a segue is possible.
+Control-click the first interface controller and drag to the second interface controller. The second controller should highlight to indicate that a segue is possible.
 
 ![A screenshot showing the control-drag operation between two interface controllers.](https://docs-assets.developer.apple.com/published/5710b12bad08cc03deb098b7d5ddec59/media-3148625%402x.png)
 

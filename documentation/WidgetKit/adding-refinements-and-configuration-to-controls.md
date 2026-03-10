@@ -172,7 +172,7 @@ ControlWidgetToggle(...) { isOn in
 }
 ```
 
-> **Note**: `controlsWidgetActionHint` takes precedence over custom value text `Label` provides.
+> **Note**: `controlWidgetActionHint` takes precedence over custom value text `Label` provides.
 
 ##### Add Control Center Status Text
 
@@ -217,7 +217,7 @@ extension TimerToggle {
 			return TimerState(timer: configuration.timer, isRunning: false)
 		}
 
-		func currentValue(configuration: SelectTimerIntent) async throws -> TimerState {b
+		func currentValue(configuration: SelectTimerIntent) async throws -> TimerState {
 			let timer = configuration.timer
 			let isRunning = try await TimerManager.shared.fetchTimerRunning(timer: timer)
 			

@@ -30,7 +30,7 @@ An `NSDateInterval` object consists of a [`startDate`](nsdateinterval/startdate.
 
 You can use the [`DateIntervalFormatter`](dateintervalformatter.md) class to create string representations of `NSDateInterval` objects that are suitable for display in the current locale.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`DateInterval`](dateinterval.md) structure, which bridges to the `NSDateInterval` class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`DateInterval`](dateinterval.md) structure, which bridges to the `NSDateInterval` class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

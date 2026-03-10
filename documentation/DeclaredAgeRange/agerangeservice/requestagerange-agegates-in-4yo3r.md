@@ -24,16 +24,16 @@ An [`AgeRangeService.Response`](agerangeservice/response.md) value indicating wh
 
 This method presents a system-provided interface that allows people to share their age information with your app. The interface explains what information will be shared and gives people control over whether to provide this information.
 
-The system may return geo-specific age ranges that override your provided age gates based on the person’s location and applicable regulations. When geo-specific ranges are required, the returned age range reflects regulatory requirements rather than the bounds of your age gates.
+The system may return age ranges that override the age gates you specify based on the person’s location and applicable regulations. When local regulations require specific age gates, the returned age range reflects regulatory requirements rather than the bounds of your age gates.
 
 > **Note**: An [`AgeRangeService.Error`](agerangeservice/error.md) when the request fails.
 
 ## Parameters
 
-- `threshold1`: The primary age gate for your app.
-- `threshold2`: An optional second age gate for additional content tiers.
-- `threshold3`: An optional third age gate for further content differentiation.
-- `window`: The window that anchors the system UI presentation. The system UI appears as a sheet or popover attached to this window.
+- `threshold1`: The primary age threshold for your app.
+- `threshold2`: An optional second age threshold that creates an additional age range.
+- `threshold3`: An optional third age threshold that creates a final age range.
+- `window`: The window that anchors the system UI presentation. The system UI appears as an interface or popover attached to this window.
 
 ## See Also
 

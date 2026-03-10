@@ -43,7 +43,7 @@ try await session.activate()
 
 This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [`Figure 2`](storyboard_support/playing_background_audio#3016837.md)).
 
-![A screenshot of the audio rout picker, showing two different Bluetooth headphones.](https://docs-assets.developer.apple.com/published/4624fc8a1f4add47a3a8bb5a395d48a8/media-3016837%402x.png)
+![A screenshot of the audio route picker, showing two different Bluetooth headphones.](https://docs-assets.developer.apple.com/published/4624fc8a1f4add47a3a8bb5a395d48a8/media-3016837%402x.png)
 
 In general, if the user has previously selected a Bluetooth route or if AirPods or other W1-equipped Bluetooth headphones are nearby, the system picks the audio route automatically without displaying a picker view to the user. If no applicable Bluetooth route is selected (either automatically or by the user), the system passes an error to the completion handler.
 

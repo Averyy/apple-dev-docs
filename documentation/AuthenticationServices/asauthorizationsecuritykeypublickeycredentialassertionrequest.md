@@ -32,6 +32,8 @@ Use this class to sign in with an existing credential on a security key.
   An array of allowed credentials.
 ### Instance Properties
 - [var appID: String?](asauthorizationsecuritykeypublickeycredentialassertionrequest/appid.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](asauthorizationsecuritykeypublickeycredentialassertionrequest/prf-7pp6b.md)
+- [var prf: __ASAuthorizationPublicKeyCredentialPRFAssertionInput?](asauthorizationsecuritykeypublickeycredentialassertionrequest/prf-99zke.md)
 
 ## Relationships
 

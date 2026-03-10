@@ -24,7 +24,7 @@ To update your widget to support Liquid Glass:
 1. Add the [`widgetRenderingMode`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetRenderingMode) environment variable and conditionally update your widget layout for each rendering mode as explained in the previous section.
 2. Display full-color images, page, or partially transparent content only for the [`fullColor`](widgetrenderingmode/fullcolor.md) rendering mode.
 3. Adjust your widget’s layout as needed for the [`accented`](widgetrenderingmode/accented.md) rendering mode.
-4. Group your views into a primary and an accent group using the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetAccentable(_:)) view modifier. Views you don’t mark as acceptable are part of the primary group.
+4. Group your views into a primary and an accent group using the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetAccentable(_:)) view modifier. Views you don’t mark as accentable are part of the primary group.
 5. Configure the rendering of any image using the [`WidgetAccentedRenderingMode`](widgetaccentedrenderingmode.md) view modifier.
 
 ##### Choose Rendering Modes for Images and Views
@@ -36,7 +36,7 @@ Using the `WidgetAccentedRenderingMode` view modifier, conditionally render imag
 - **[`accentedDesaturated`](widgetaccentedrenderingmode/accenteddesaturated.md)**: Combines [`accented`](widgetaccentedrenderingmode/accented.md) and [`desaturated`](widgetaccentedrenderingmode/desaturated.md) accented rendering modes. In iOS and macOS, the image appears a little whiter compared to the `desaturated` rendering. In watchOS, the desaturated image takes on the color of the watch face.
 - **[`fullColor`](widgetaccentedrenderingmode/fullcolor.md)**: Renders the image in full color, without modifications in iOS and macOS. In watchOS, the system ignores this rendering mode to make sure the widget blends in with the watch face.
 
-> 💡 **Tip**: Using `accented`, `desaturated`, or `accentedDesaturated` rendering modes helps the widget fit the system’s cohesive look on the Home Screen. Reserve the `fullColor` rendering mode for images that represent media content, such as album artwork or a book over.
+> 💡 **Tip**: Using `accented`, `desaturated`, or `accentedDesaturated` rendering modes helps the widget fit the system’s cohesive look on the Home Screen. Reserve the `fullColor` rendering mode for images that represent media content, such as album artwork or a book cover.
 
 To learn more about Liquid Glass and how to design and develop interfaces that work well with the material, refer to [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) and [`Adopting Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass).
 

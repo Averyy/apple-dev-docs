@@ -19,7 +19,7 @@ static let communicationLimits: AgeRangeService.ParentalControls
 
 #### Discussion
 
-When this option is present, the minor has communication restrictions turned on in Screen Time or Family Controls.
+When this option is present, the parent or guardian has enabled communication restrictions in Screen Time on behalf of their child or teen.
 
 ## See Also
 

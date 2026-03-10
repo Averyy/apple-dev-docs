@@ -40,12 +40,8 @@ protocol ReaderEnum : AssistantSchemas.Model
 
 ## See Also
 
-- [Making document reader actions available to Siri and Apple Intelligence](making-document-reader-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s document viewing and editing functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.ReaderIntent](assistantschemas/readerintent.md)
-  Assistant schema conformance for app intents that offer document viewing and editing functionality.
-- [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
-  Assistant schema conformance for app entities that describe documents.
+- [var documentKind: some AssistantSchemas.Enum](assistantschemas/readerenum/documentkind.md)
+  The file type for a document.
 
 
 ---

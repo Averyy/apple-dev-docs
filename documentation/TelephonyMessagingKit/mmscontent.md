@@ -8,7 +8,6 @@ A structure that holds the content of an MMS message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

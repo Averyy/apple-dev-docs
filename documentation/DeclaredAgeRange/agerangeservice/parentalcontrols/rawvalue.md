@@ -20,7 +20,7 @@ let rawValue: Int
 ## See Also
 
 - [var description: String](agerangeservice/parentalcontrols/description.md)
-  A list of parental controls that are turned on, for debugging purposes.
+  A list of active parental controls, for debugging purposes.
 
 
 ---

@@ -8,7 +8,6 @@ Initializes an SMS Message for sending to a receipient.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Persistent menu with a nested collection of suggested replies and suggested acti
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

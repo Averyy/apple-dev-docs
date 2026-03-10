@@ -48,6 +48,8 @@ With physically based rendering (PBR), you can give entities in RealityKit the a
 
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.
 - [PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.struct.md)
@@ -74,8 +76,6 @@ With physically based rendering (PBR), you can give entities in RealityKit the a
   An object that defines the degree to which an entity reflects light to create stretched or oblong highlights.
 - [PhysicallyBasedMaterial.AnisotropyAngle](physicallybasedmaterial/anisotropyangle-swift.struct.md)
   An object used to define a material’s anisotropy angle.
-- [PhysicallyBasedMaterial.TextureCoordinateTransform](physicallybasedmaterial/texturecoordinatetransform-swift.typealias.md)
-  An alias for the texture coordinate transform that’s appropriate for this material class.
 
 
 ---

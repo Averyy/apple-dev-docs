@@ -6,7 +6,7 @@
 The request body for notification history.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

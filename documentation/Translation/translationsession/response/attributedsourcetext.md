@@ -3,7 +3,7 @@
 **Framework**: Translation  
 **Kind**: property
 
-The original formatted text that was translated.
+The original translated text, including style formatting and links.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -16,6 +16,10 @@ The original formatted text that was translated.
 ```swift
 let attributedSourceText: AttributedString?
 ```
+
+#### Discussion
+
+When translating attributed strings using any translation method, the framework makes a best effort to preserve both visual formatting and defined attributes. This enables use cases like timestamp synchronization for captions or lyrics. For examples of translating text with preserved attributes, see [`attributedSourceText`](translationsession/request/attributedsourcetext.md).
 
 ## See Also
 

@@ -305,7 +305,7 @@ struct LibraryView: View {
 
 By default, reading an object from the environment returns a non-optional object when using the object type as the key. This default behavior assumes that a view in the current hierarchy previously stored a non-optional instance of the type using the [`environment(_:)`](view/environment(_:).md) modifier. If a view attempts to retrieve an object using its type and that object isn’t in the environment, SwiftUI throws exception.
 
-In cases where there is no guarantee that an object is in the environment, retrieve an optional version of the object as shown in the following code. If the object isn’t available the environment, SwiftUI returns `nil` instead of throwing an exception.
+In cases where there is no guarantee that an object is in the environment, retrieve an optional version of the object as shown in the following code. If the object isn’t available in the environment, SwiftUI returns `nil` instead of throwing an exception.
 
 ```swift
 @Environment(Library.self) private var library: Library?

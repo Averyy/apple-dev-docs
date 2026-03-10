@@ -15,6 +15,10 @@ A protocol that defines methods for handling notification lifecycle events in yo
 protocol AccessoryNotificationsHandler : Sendable
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 Implement this protocol in your app’s [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension to receive, update, and remove notifications forwarded to your accessory.

@@ -6,7 +6,7 @@
 The three-letter ISO 4217 currency code for the price of the product.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.10+
 
 ## Declaration
 

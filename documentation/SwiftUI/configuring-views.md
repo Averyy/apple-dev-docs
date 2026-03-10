@@ -18,11 +18,11 @@ Because view modifiers are Swift methods with behavior provided by the [`View`](
 
 ##### Configure a View with a Modifier
 
-Like other Swift methods, a modifier operates on an instance — a view of some kind in this case — and can optionally take input parameters. For example, you can apply the [`foregroundColor(_:)`](view/foregroundcolor(_:).md) modifier to set the color of a [`Text`](text.md) view:
+Like other Swift methods, a modifier operates on an instance — a view of some kind in this case — and can optionally take input parameters. For example, you can apply the [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) modifier to set the color of a [`Text`](text.md) view:
 
 ```swift
 Text("Hello, World!")
-    .foregroundColor(.red) // Display red text.
+    .foregroundStyle(.red) // Display red text.
 ```
 
 Modifiers return a view that wraps the original view and replaces it in the view hierarchy. You can think of the two lines in the example above as resolving to a single view that displays red text.

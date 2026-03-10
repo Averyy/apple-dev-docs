@@ -93,15 +93,6 @@ enum AssetType: String, AppEnum {
 
 For a list of available app enumeration schemas in the `.photos` domain, see [`AssistantSchemas.PhotosEnum`](assistantschemas/photosenum.md).
 
-## See Also
-
-- [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
-  Assistant schema conformance for app intents that offer photo and video functionality.
-- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
-  Assistant schema conformance for app entities that describe media assets.
-- [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
-  Assistant schema conformance for types you use to describe photos and videos.
-
 
 ---
 

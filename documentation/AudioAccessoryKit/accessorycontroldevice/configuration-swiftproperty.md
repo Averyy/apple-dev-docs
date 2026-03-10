@@ -12,7 +12,7 @@ The current configuration of the device.
 ## Declaration
 
 ```swift
-var configuration: AccessoryControlDevice.Configuration { get }
+final var configuration: AccessoryControlDevice.Configuration { get }
 ```
 
 ## See Also

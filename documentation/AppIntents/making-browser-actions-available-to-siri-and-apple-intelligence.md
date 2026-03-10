@@ -72,15 +72,6 @@ static var caseDisplayRepresentations: [ClearHistoryTimeFrame: DisplayRepresenta
 
 For a list of available app enumeration schemas in the `.browser` domain, see [`AssistantSchemas.BrowserEnum`](assistantschemas/browserenum.md).
 
-## See Also
-
-- [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
-  Assistant schema conformance for app intents that offer web browsing functionality.
-- [AssistantSchemas.BrowserEntity](assistantschemas/browserentity.md)
-  Assistant schema conformance for app entities that describe data for web browsing functionality.
-- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
-  Assistant schema conformance for types you use for web browsing functionality.
-
 
 ---
 

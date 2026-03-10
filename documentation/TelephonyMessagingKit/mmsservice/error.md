@@ -8,7 +8,6 @@ Enumeration for errors that can occur when performing MMS operations.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

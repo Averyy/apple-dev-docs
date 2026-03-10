@@ -6,7 +6,7 @@
 A response that includes the order lookup status and an array of signed transactions for the in-app purchases in the order.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

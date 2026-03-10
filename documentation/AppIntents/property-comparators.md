@@ -33,18 +33,20 @@ Specify the type of comparison to perform during a property-matched query.
 
 ## See Also
 
-- [protocol EntityPropertyQuery](entitypropertyquery.md)
-  An interface for locating entities by matching values against one or more of their properties.
-- [struct EntityQueryProperties](entityqueryproperties.md)
-  A type that provides the properties to include in a property-matched query.
-- [class EntityQueryProperty](entityqueryproperty.md)
-  An object that provides the supported comparators you use to describe the different ways users can query against a property of an app entity.
-- [struct EntityQuerySortingOptions](entityquerysortingoptions.md)
-  The potential properties you can use to sort the results of a query.
-- [struct EntityQuerySortableByProperty](entityquerysortablebyproperty.md)
-  Details about a specific property you use to sort the query results.
-- [struct EntityQuerySort](entityquerysort.md)
-  The properties to use to sort the results when the query runs.
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
+- [Parameter resolution](parameter-resolution.md)
+  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+- [Common data types](common-data-types.md)
+  Specify common types that your app supports, including currencies, files, and contacts.
+- [App entities](app-entities.md)
+  Make core types or concepts discoverable to the system by declaring them as app entities.
+- [Static parameter types](app-enums.md)
+  Types that represent an enumerable list of static parameter values.
+- [Entity queries](entity-queries.md)
+  Help the system find the entities your app defines and use them to resolve parameters.
 
 
 ---

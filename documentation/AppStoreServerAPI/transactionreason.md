@@ -6,7 +6,7 @@
 The cause of a purchase transaction, which indicates whether it’s a customer’s purchase or a renewal for an auto-renewable subscription that the system initiates.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

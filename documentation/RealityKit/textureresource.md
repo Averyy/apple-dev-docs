@@ -167,6 +167,10 @@ Assign texture resources to material parameters to provide color and fine surfac
 
 ## See Also
 
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+  Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [TextureResource.CreateOptions](textureresource/createoptions.md)
   An object that holds texture resource creation options.
 - [TextureResource.SamplingQuality](textureresource/samplingquality.md)

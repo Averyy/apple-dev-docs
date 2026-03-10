@@ -23,7 +23,6 @@ struct DisplayRepresentation
 ## Mentions
 
 - [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 
 ## Topics
 

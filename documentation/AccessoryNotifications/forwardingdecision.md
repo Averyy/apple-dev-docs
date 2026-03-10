@@ -15,6 +15,10 @@ Possible decisions in response to the notification forwarding permission prompt.
 enum ForwardingDecision
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 When your app calls [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(for:).md), the system prompts the person to choose which apps can forward notifications to your accessory.

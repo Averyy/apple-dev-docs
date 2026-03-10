@@ -48,7 +48,7 @@ A utility object for managing a recyclable set of pixel buffer objects.
   An interface for managing different types of image data.
 - [CVPixelBuffer](cvpixelbuffer-q2e.md)
   An image buffer that holds pixels in main memory.
-- [CVPixelFormatDescription](cvpixelformatdescription.md)
+- [CVPixelFormatDescription](cvpixelformatdescription-42p.md)
   An API that provides functions and types for defining custom pixel formats.
 
 

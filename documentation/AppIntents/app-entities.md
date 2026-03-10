@@ -12,9 +12,10 @@ Define app entities for core types and concepts that you want to make available 
 
 ## Topics
 
-### Entities
+### Essentials
 - [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
   Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
+### App entity types
 - [protocol AppEntity](appentity.md)
   An interface for exposing a custom type or app-specific concept to system experiences like Siri and the Shortcuts app.
 - [protocol FileEntity](fileentity.md)
@@ -27,6 +28,7 @@ Define app entities for core types and concepts that you want to make available 
   An entity that will only ever have one value, such as global settings.
 - [protocol URLRepresentableEntity](urlrepresentableentity.md)
   An app entity with a URL representation.
+- [macro UnionValue()](unionvalue().md)
 ### Entity identity
 - [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
   Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
@@ -34,17 +36,16 @@ Define app entities for core types and concepts that you want to make available 
   A type that uniquely identifies a specific instance of an app entity.
 - [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
+- [struct FileEntityIdentifier](fileentityidentifier.md)
+  An identifier for an app entity that refers to a document or other file.
 ### Entity content
 - [class EntityProperty](entityproperty.md)
   A property wrapper that exposes the associated property to the system.
+- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
 - [protocol AppValue](appvalue.md)
   An interface that describes conceptual types you use in app intents.
 - [protocol AnyIntentValue](anyintentvalue.md)
   A type the system uses to access a parameter or property value.
-- [protocol AppEnum](appenum.md)
-  An interface to express that a custom type has a predefined, static set of valid values to display.
-- [protocol URLRepresentableEnum](urlrepresentableenum.md)
-  An app enum with a URL representation.
 ### Entity property macros
 - [macro ComputedProperty()](computedproperty().md)
   A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
@@ -82,14 +83,18 @@ Define app entities for core types and concepts that you want to make available 
 
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
   Enable people to configure app intents with their custom input values.
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 - [Parameter resolution](parameter-resolution.md)
   Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
 - [Resolvers](resolvers.md)
   Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+- [Common data types](common-data-types.md)
+  Specify common types that your app supports, including currencies, files, and contacts.
+- [Static parameter types](app-enums.md)
+  Types that represent an enumerable list of static parameter values.
+- [Entity queries](entity-queries.md)
+  Help the system find the entities your app defines and use them to resolve parameters.
+- [Property comparators](property-comparators.md)
+  Specify the type of comparison to perform during a property-matched query.
 
 
 ---

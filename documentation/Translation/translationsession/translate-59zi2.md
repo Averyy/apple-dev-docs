@@ -23,15 +23,13 @@ The response that contains the text translation with formatting preserved.
 
 #### Discussion
 
-Use this method to translate text that includes formatting like bold text or links, and preserve that formatting in the translated result. The framework aligns formatting between the source and target languages so that formatted words in the source remain formatted in the translation.
+Use this method to translate text that includes formatting like bold text or links, and preserve that formatting in the translated result. The framework aligns formatting between the source and target languages so that formatted words in the source remain formatted in the translation. Custom attributes, such as timestamps for synchronized captions or lyrics, are also preserved. For examples of translating attributed strings, see [`attributedSourceText`](translationsession/request/attributedsourcetext.md).
 
-This function translates a single line of text and might display different UI depending on the state of the translation. The required languages for translation don’t have to be installed before calling this method.
+This function translates a single line of text and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method. The function handles translation based on language availability:
 
-If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the person.
-
-If the source or target language aren’t installed, the framework asks the person for permission to download the languages. During the download a progress indicator displays. After it completes, the framework performs the translation.
-
-If the [`sourceLanguage`](translationsession/sourcelanguage.md) is `nil` and the framework can’t detect it from the content, the framework prompts the person to choose the source language.
+- If the required languages are already downloaded and the source language is clear, the function returns results without showing any UI to the person.
+- If the source or target language aren’t installed, the framework asks the person for permission to download the languages. During the download a progress indicator displays. After it completes, the framework performs the translation.
+- If the [`sourceLanguage`](translationsession/sourcelanguage.md) is `nil` and the framework can’t detect it from the content, the framework prompts the person to choose the source language.
 
 This function throws an `Error` if:
 

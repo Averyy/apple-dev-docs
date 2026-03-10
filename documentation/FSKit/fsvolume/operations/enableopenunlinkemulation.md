@@ -22,6 +22,13 @@ Implement this property to return `true` (Swift) or `YES` (Objective-C) to allow
 
 FSKit reads this value after the file system replies to the `loadResource` message. Changing the returned value during the runtime of the volume has no effect.
 
+## See Also
+
+- [var requestedMountOptions: FSVolume.MountOptions](fsvolume/operations/requestedmountoptions.md)
+  A property that allows the file system to request for specific mount options from FSKit.
+- [FSVolume.MountOptions](fsvolume/mountoptions.md)
+  Mount options to be requested from FSKit using the `requestedMountOptions` property.
+
 
 ---
 

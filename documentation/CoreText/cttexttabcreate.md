@@ -30,6 +30,11 @@ A reference to a CTTextTab object if the call was successful; otherwise, `NULL`.
 - `location`: The tab’s ruler location, relative to the back margin.
 - `options`: Options to pass in when the tab is created. Currently, the only option available is [`kCTTabColumnTerminatorsAttributeName`](kcttabcolumnterminatorsattributename.md). This parameter is optional and can be set to `NULL` if not needed.
 
+## See Also
+
+- [let kCTTabColumnTerminatorsAttributeName: CFString](kcttabcolumnterminatorsattributename.md)
+  Specifies the terminating character for a tab column.
+
 
 ---
 

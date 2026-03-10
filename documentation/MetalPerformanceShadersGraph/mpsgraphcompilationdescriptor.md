@@ -37,8 +37,8 @@ class MPSGraphCompilationDescriptor
 - [var waitForCompilationCompletion: Bool](mpsgraphcompilationdescriptor/waitforcompilationcompletion.md)
   Flag that makes the compile or specialize call blocking till the entire compilation is complete, defaults to NO.
 ### Instance Methods
-- [func disableAutoLayoutConversion()](mpsgraphcompilationdescriptor/disableautolayoutconversion.md)
-  Turns off Automatic Layout Conversion (for conv like operations) for GPU.
+- [func convertLayoutToNHWC()](mpsgraphcompilationdescriptor/convertlayouttonhwc.md)
+  Turns on Automatic Layout Conversion (for conv like operations) for GPU.
 - [func disableTypeInference()](mpsgraphcompilationdescriptor/disabletypeinference.md)
   Turns off type inference and relies on type inference during runtime.
 

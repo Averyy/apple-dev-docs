@@ -15,6 +15,10 @@ A structure that provides guidance for how to alert for a notification.
 struct AlertingContext
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 To alert for a notification, present it on screen, play a sound, or trigger a haptic effect that uses touch to give users feedback.

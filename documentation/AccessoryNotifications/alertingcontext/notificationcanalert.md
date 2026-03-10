@@ -15,6 +15,10 @@ A Boolean value that indicates whether the accessory can alert the person for th
 var notificationCanAlert: Bool
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Discussion
 
 A `true` value indicates that the notification includes sound and alert permissions, and the person allows alerts. The system might set this property to `false` if the notification already alerted on another device or if device settings disable alerting for the notification. This property doesn’t account for Focus state; see [`isSuppressedByFocus`](alertingcontext/issuppressedbyfocus.md) and [`shouldAlert`](alertingcontext/shouldalert.md).

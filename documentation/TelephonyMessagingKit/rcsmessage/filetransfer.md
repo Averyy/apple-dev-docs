@@ -8,7 +8,6 @@ A structure that represents file transfer content in an RCS message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

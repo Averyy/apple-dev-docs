@@ -25,6 +25,7 @@ The security key creates an assertion when signing in with an existing credentia
 
 ### Instance Properties
 - [var appID: Bool](asauthorizationsecuritykeypublickeycredentialassertion/appid.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](asauthorizationsecuritykeypublickeycredentialassertion/prf-8ylo.md)
 
 ## Relationships
 

@@ -8,7 +8,6 @@ An enumeration of errors that can result from operations on a messaging session.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

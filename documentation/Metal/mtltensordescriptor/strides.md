@@ -22,12 +22,13 @@ var strides: MTLTensorExtents? { get set }
 
 #### Discussion
 
-This property only applies to tensors you create from a buffer, otherwise it is nil. You are responsible for ensuring `strides` meets the following requirements:
+You are responsible for ensuring `strides` meets the following requirements:
 
-- Elements of `strides`are in monotonically non-decreasing order.
 - The first element of `strides` is one.
-- For any `i` larger than zero, `strides[i]` is greater than or equal to `strides[i-1] * dimensions[i-1]`.
-- If `usage` contains [`machineLearning`](mtltensorusage/machinelearning.md), the second element of `strides` is aligned to 64 bytes, and for any `i` larger than one, `strides[i]` is equal to `strides[i-1] * dimensions[i-1]`.
+- If [`usage`](mtltensordescriptor/usage.md) contains [`machineLearning`](mtltensorusage/machinelearning.md), the second element of `strides` is aligned to 64 bytes, and for any `i` larger than one, `strides[i]` is equal to `strides[i-1] * dimensions[i-1]`.
+- If [`dataType`](mtltensordescriptor/datatype.md) is a sub-byte [`MTLTensorDataType`](mtltensordatatype.md), for any `i` greater than or equal to 1, `strides[i]` is aligned to 128 bytes. This is not a requirement for non-sub-byte data types, but following this convention improves performance.
+
+Only set this property when creating tensors from a buffer.
 
 
 ---

@@ -32,15 +32,10 @@ Use an `IntentProjection` to create an app intent that returns non-optional valu
 
 ## See Also
 
-- [protocol AppIntentsPackage](appintentspackage.md)
-  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
-- [struct IntentDescription](intentdescription.md)
-  The human-readable description and metadata for an app intent.
-- [struct IntentDialog](intentdialog.md)
-  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [struct IntentDeprecation](intentdeprecation.md)
-- [struct IntentSystemContext](intentsystemcontext.md)
-  Information that the system makes available to an app intent while it performs its action.
+- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+  An interface for providing a dynamic list of options for a parameter of your app intent.
+- [protocol AppEnum](appenum.md)
+  An interface to express that a custom type has a predefined, static set of valid values to display.
 
 
 ---

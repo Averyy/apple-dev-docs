@@ -2,7 +2,7 @@
 
 **Framework**: App Intents
 
-Define the custom actions your app exposes to the system, and incorporate support for existing SiriKit intents.
+Define the custom actions your app exposes to the system using specialized intents.
 
 #### Overview
 
@@ -10,21 +10,18 @@ Use app intents to express your app’s capabilities to the system. An app inten
 
 To define an action, create a type that adopts the [`AppIntent`](appintent.md) protocol, or a related protocol that provides the specific behavior you need. Annotate any key properties with the `@Parameter` property wrapper to let the system know you need the associated information to perform the action.
 
+The system uses intent attributes like [`title`](appintent/title.md) and [`description`](appintent/description.md) to inform people about your intent’s functionality in the Shortcuts app. Supplement this information with [`IntentDescription`](intentdescription.md) metadata, and provide additional context through human-readable explanations of your intent’s functionality, including category information and search keywords. This metadata helps your intents appear in interfaces like the Shortcuts app and improves their discoverability.
+
 For more information about features App Intents enables, see [`Making actions and content discoverable and widely available`](making-actions-and-content-discoverable-and-widely-available.md).
 
 ## Topics
 
-### Actions
+### General actions
 - [protocol AppIntent](appintent.md)
   An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
-- [protocol AudioPlaybackIntent](audioplaybackintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol AudioRecordingIntent](audiorecordingintent.md)
-  An app intent that starts, stops or otherwise modifies audio recording state.
-- [protocol AudioStartingIntent](audiostartingintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol CameraCaptureIntent](cameracaptureintent.md)
-  Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
+- [struct IntentDescription](intentdescription.md)
+  The human-readable description and metadata for an app intent.
+### Specialized actions
 - [protocol DeleteIntent](deleteintent.md)
   Delete the associated entity(s).
 - [protocol DeprecatedAppIntent](deprecatedappintent.md)
@@ -35,20 +32,34 @@ For more information about features App Intents enables, see [`Making actions an
   Open the associated item.
 - [struct OpenURLIntent](openurlintent.md)
   An intent that opens a universal link.
-- [protocol PlayVideoIntent](playvideointent.md)
-  An intent that looks for videos based on a search term, then plays the content.
 - [protocol ProgressReportingIntent](progressreportingintent.md)
   An intent that reports progress to the system during its execution
-- [protocol PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
-  An intent that begins or ends an audio transmission with the Push to Talk framework.
-- [protocol URLRepresentableIntent](urlrepresentableintent.md)
-  An app intent with a URL representation.
 - [protocol SetValueIntent](setvalueintent.md)
   An intent that contains a value which can be set.
 - [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
   An app intent that takes a person to search results for a specified search term.
+- [protocol SnippetIntent](snippetintent.md)
+  An app intent that presents an interactive snippet onscreen.
 - [protocol SystemIntent](systemintent.md)
   Designates intent types provided by App Intents.
+- [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
+- [protocol UISceneAppIntent](uisceneappintent.md)
+- [protocol URLRepresentableIntent](urlrepresentableintent.md)
+  An app intent with a URL representation.
+### Media actions
+- [protocol AudioPlaybackIntent](audioplaybackintent.md)
+  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
+- [protocol AudioRecordingIntent](audiorecordingintent.md)
+  An app intent that starts, stops or otherwise modifies audio recording state.
+- [protocol AudioStartingIntent](audiostartingintent.md)
+  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
+- [protocol CameraCaptureIntent](cameracaptureintent.md)
+  Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
+- [protocol PlayVideoIntent](playvideointent.md)
+  An intent that looks for videos based on a search term, then plays the content.
+### Communication actions
+- [protocol PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
+  An intent that begins or ends an audio transmission with the Push to Talk framework.
 ### Controls, widgets, and Live Activities
 - [protocol ControlConfigurationIntent](controlconfigurationintent.md)
   An interface for configuring a Control Center module.
@@ -58,56 +69,20 @@ For more information about features App Intents enables, see [`Making actions an
   An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
 - [protocol WidgetConfigurationIntent](widgetconfigurationintent.md)
   An interface for configuring a WidgetKit widget.
-### Siri and Apple Intelligence
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-  Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
-- [App intent domains](app-intent-domains.md)
-  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 ### SiriKit intent migration
 - [protocol CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
   An interface for replacing a custom SiriKit intent that allows existing shortcuts and donations to continue working.
-### Dependency management
-- [class AppDependencyManager](appdependencymanager.md)
-  An object that manages the registration and initialization of an app intent’s dependencies.
-- [class AppDependency](appdependency.md)
-  A property wrapper that resolves a registered dependency at runtime.
-### Supplementary content
-- [protocol AppIntentsPackage](appintentspackage.md)
-  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
-- [struct IntentDescription](intentdescription.md)
-  The human-readable description and metadata for an app intent.
-- [struct IntentDialog](intentdialog.md)
-  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [struct IntentDeprecation](intentdeprecation.md)
-- [class IntentProjection](intentprojection.md)
-  Projections for an app intent that returns non-optional values for parameters.
-- [struct IntentSystemContext](intentsystemcontext.md)
-  Information that the system makes available to an app intent while it performs its action.
-### Results
-- [protocol IntentResult](intentresult.md)
-  A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
-- [struct IntentResultContainer](intentresultcontainer.md)
-  An object that represents the output of a completed intent.
-- [protocol OpensIntent](opensintent.md)
-  The result of performing an action that delivers an app intent back to the initiator of the action.
-- [protocol ProvidesDialog](providesdialog.md)
-  The result of performing an action that delivers a dialog back to the initiator of the action.
-- [protocol ReturnsValue](returnsvalue.md)
-  The result of performing an action that delivers a value back to the initiator.
-- [protocol ShowsSnippetView](showssnippetview.md)
-  The result of performing an action that delivers a view back to the initiator of the action.
-- [protocol ResultsCollection](resultscollection.md)
-  A protocol representing a collection of returned items with support for sectioning.
-### Extensions
-- [protocol AppIntentsExtension](appintentsextension.md)
-  An interface for managing an extension’s configuration.
 
 ## See Also
 
-- [Intent discovery](intent-discovery.md)
-  Donate your app’s intents to the system to help it identify trends and predict future behaviors.
-- [App Shortcuts](app-shortcuts.md)
-  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
+  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
+- [Creating your first app intent](creating-your-first-app-intent.md)
+  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [App intent domains](app-intent-domains.md)
+  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
+- [Intent infrastructure](intent-infrastructure.md)
+  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
 
 
 ---

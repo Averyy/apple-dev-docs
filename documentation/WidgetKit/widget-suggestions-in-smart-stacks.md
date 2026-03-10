@@ -6,7 +6,7 @@ Provide contextual information and donate intents to the system to make sure you
 
 #### Overview
 
-Smart Stacks efficiently organize multiple widgets to show useful content at just the right time. With input from your app and on-device intelligence, the system can identify patterns and determine a widget’s relevance to a person, making sure a Smart Stack shows your widget at the right moment. Context helps the system increase your widget’s visibility and gives people an quick, intelligent way to view content or perform an action. For example, if a person checks the daily weather forecast every morning or their calendar on the commute to work every morning, the system can suggest the corresponding widgets at the right moments.
+Smart Stacks efficiently organize multiple widgets to show useful content at just the right time. With input from your app and on-device intelligence, the system can identify patterns and determine a widget’s relevance to a person, making sure a Smart Stack shows your widget at the right moment. Context helps the system increase your widget’s visibility and gives people a quick, intelligent way to view content or perform an action. For example, if a person checks the daily weather forecast every morning or their calendar on the commute to work every morning, the system can suggest the corresponding widgets at the right moments.
 
 On iPhone and iPad, people create Smart Stacks on their Home Screen with options for surfacing widgets in a Smart Stack:
 
@@ -219,7 +219,7 @@ struct EmojiRangerWidget: Widget {
 @available(watchOS 12, *)
 struct EmojiRangerRelevanceProvider: RelevanceEntriesProvider {
     // Provide all contextual clues.
-    func relevance() async -> WidgetRelevance<EmojiRangertConfigurationIntent> {
+    func relevance() async -> WidgetRelevance<EmojiRangerConfigurationIntent> {
         let healingUpdates = ... // Code to retrieve healing update information
         let attributes = healingUpdates.map { update in
             // Create relevant contexts objects.
@@ -228,7 +228,7 @@ struct EmojiRangerRelevanceProvider: RelevanceEntriesProvider {
                 kind: .scheduled
             )
             WidgetRelevanceAttribute(
-                configuration: EmojiRangertConfigurationIntent(update: update),
+                configuration: EmojiRangerConfigurationIntent(update: update),
                 context: context
             )
         }

@@ -29,6 +29,13 @@ protocol CustomURLRepresentationParameterConvertible
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [URLRepresentableEnum](urlrepresentableenum.md)
 
+## See Also
+
+- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
+  Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
+- [struct IntentModes](intentmodes.md)
+  A set of options that describe an app intent’s behavior.
+
 
 ---
 

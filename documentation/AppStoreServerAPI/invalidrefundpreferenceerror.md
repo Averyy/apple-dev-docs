@@ -6,7 +6,7 @@
 An error that indicates an invalid refund preference value.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.11+
 
 ## Declaration
 

@@ -58,7 +58,7 @@ The app goes to the background when it’s running onscreen in the [`WKApplicati
 2. *The app* transitions to the [`WKApplicationState.inactive`](wkapplicationstate/inactive.md) state. The app remains in this state as long as it’s the frontmost app (by default, 2 minutes).
 3. *The app* transitions to the [`WKApplicationState.background`](wkapplicationstate/background.md) state. *The system* calls the extension delegate’s [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method.
 4. *The system* calls the presented interface controller’s [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method.
-5. *The system* suspends the app.****
+5. *The system* suspends the app.
 
 The app resumes when the app is running in the background, or is suspended, and the user activates the app, for example, by tapping its complication on the active watch face.
 

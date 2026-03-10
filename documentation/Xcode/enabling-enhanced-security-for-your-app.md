@@ -16,17 +16,11 @@ Enhanced Security compiler settings and runtime checks are available for apps an
 
 ##### Adopt the Enhanced Security Capability
 
-Navigate to the Signing and Capabilities editor for your Xcode target, and click the Add Capability button. From the list of capabilities, select Enhanced Security. Xcode adds the following entitlements to your app’s provisioning profile:
-
-- [`Enhanced Security`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.enhanced-security-version): Xcode sets the value to `1`.
-- [`Hardened Process`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process): Xcode sets the value to `true`.
-- [`Hardened Heap`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.hardened-heap): Xcode sets the value to `true`.
-- [`Additional Runtime Platform Restrictions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.platform-restrictions): Xcode sets the value to `2`.
-- [`Enable Read-Only Platform Memory`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.dyld-ro): Xcode sets the value to `true`.
-
-When you add the Enhanced Security capability to your target, use the checkboxes in the Enhanced Security capability of the Signing and Capabilities editor to adopt specific hardening features. Additionally, click Enable Build Settings to add security-related build settings to all targets in your project, which turns on certain hardening features.
+Navigate to the Signing and Capabilities editor for your Xcode target, and click the Add Capability button. From the list of capabilities, select Enhanced Security. After you add the Enhanced Security capability to your target, use the checkboxes in the Enhanced Security capability of the Signing and Capabilities editor to adopt specific hardening features. Additionally, click Enable Build Settings to add security-related build settings to all targets in your project, which turns on certain hardening features.
 
 The sections below describe the individual entitlements and build settings that comprise Enhanced Security, and the steps you can take to adopt the hardening features in your code. Additionally, the sections describe how you can turn off any individual hardening setting, in case you need to do so while you prepare your code to support the additional protections.
+
+> ❗ **Important**:  The Signing and Capabilities editor enforces dependencies between individual entitlements, but if you edit the `.entitlements` file directly, make sure that you add all the necessary entitlements. Any entitlements that begin with `com.apple.security.hardened-process.` require both the `com.apple.security.hardened-process` entitlement and the `com.apple.security.hardened-process.enhanced-security-version-string` entitlement. Additionally, any entitlements that begin with `com.apple.security.hardened-process.checked-allocations.` require the `com.apple.security.hardened-process.checked-allocations` entitlement.
 
 ##### Prepare Your App for Pointer Authentication
 
@@ -50,13 +44,13 @@ To turn off typed allocator support for your target, uncheck the Enable Typed Al
 
 When you enable hardware memory tagging, each new memory allocation and any pointers to that memory include an embedded value called a *tag*. Accessing to memory through a pointer requires that the pointer’s tag matches the allocation’s tag. If the tags don’t match — for example, because of a use-after-free error or out-of-bounds access — the app crashes instead of performing the unsafe access.
 
-To enable memory tagging, navigate to the Signing and Capabilities editor for your Xcode target. Enable the Enhanced Security capability, then, under Memory Safety, click Enable Hardware Memory Tagging. Xcode adds the [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations) entitlement to your app.
+To enable memory tagging, navigate to the Signing and Capabilities editor for your Xcode target. Enable the Enhanced Security capability, then, under Memory Safety, click Enable Hardware Memory Tagging. Xcode adds the [`com.apple.security.hardened-process.checked-allocations`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations) entitlement to your app.
 
 To enable additional diagnostics while debugging, navigate to the Scheme Editor and select the Run action, then select the Diagnostics pane and enable Hardware Memory Tagging.
 
-When you enable memory tagging in Xcode, it also adds the [`Enable Soft Mode for Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode) entitlement. This entitlement makes hardware memory tagging operate in *soft mode*, where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
+When you enable memory tagging in Xcode, it also adds the [`com.apple.security.hardened-process.checked-allocations.soft-mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode) entitlement. This entitlement makes hardware memory tagging operate in *soft mode*, where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
 
-You can also enable the [`Memory Tag Pure Data`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data) and [`Prevent Receiving Tagged Memory`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive) entitlements.
+You can also enable the [`com.apple.security.hardened-process.checked-allocations.enable-pure-data`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data) and [`com.apple.security.hardened-process.checked-allocations.no-tagged-receive`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive) entitlements.
 
 > **Note**:  This setting is available on iOS 26 and later on iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max, or iPhone Air.
 
@@ -118,7 +112,7 @@ For more information on C++ standard library hardening, see [`Hardening Modes`](
 
 ##### Adopt Additional Run Time Restrictions
 
-When you enable the Enhanced Security capability for your target, Xcode adds the [`Additional Runtime Platform Restrictions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.platform-restrictions) entitlement to your app. This entitlement informs the system to perform additional checks on dynamic libraries your app or extension loads, and on Mach messages your app or extension receives from other processes.
+When you enable the Enhanced Security capability for your target, Xcode adds the [`com.apple.security.hardened-process.platform-restrictions-string`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.platform-restrictions-string) entitlement to your app. This entitlement informs the system to perform additional checks on dynamic libraries your app or extension loads, and on Mach messages your app or extension receives from other processes.
 
 If you use [`XPC`](https://developer.apple.com/documentation/XPC) for inter-process communication (IPC) and don’t use Mach IPC traps, or don’t have any explicit IPC mechanism in your app or extension, enabling additional run-time restrictions turns on protections that are unlikely to require you to make any code changes.
 
@@ -128,7 +122,7 @@ To turn off additional run-time restrictions for your target, uncheck the Enable
 
 ##### Adopt Read Only Memory for Internal Platform State
 
-When you enable the Enhanced Security capability for your target, Xcode adds the [`Enable Read-Only Platform Memory`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.dyld-ro) entitlement to your app. This entitlement informs the system to mark regions of memory in your process that the platform uses for its internal state as read-only.
+When you enable the Enhanced Security capability for your target, Xcode adds the [`com.apple.security.hardened-process.dyld-ro`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.dyld-ro) entitlement to your app. This entitlement informs the system to mark regions of memory in your process that the platform uses for its internal state as read-only.
 
 In most situations, this additional protection doesn’t require you to make any changes. If your app modifies data in the protected regions — for example, it modifies the value of `const` data sections — the system crashes your app when you adopt this entitlement. To fix the crash, remove the code that modifies the read-only memory regions.
 

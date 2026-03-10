@@ -15,6 +15,10 @@ An identifier that groups notifications that belong to the same thread.
 let threadIdentifier: String?
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [let identifier: AccessoryNotification.Identifier](accessorynotification/identifier-swift.property.md)

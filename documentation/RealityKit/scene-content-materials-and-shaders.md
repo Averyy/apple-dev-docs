@@ -13,6 +13,8 @@ RealityKit includes a few material types to help you get started, including [`Si
 ## Topics
 
 ### Simple materials
+- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 - [struct SimpleMaterial](simplematerial.md)
   A basic material that responds to lights in the scene.
 - [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
@@ -39,6 +41,8 @@ RealityKit includes a few material types to help you get started, including [`Si
 ### Realistic materials
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.
 - [PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.struct.md)
@@ -87,6 +91,10 @@ RealityKit includes a few material types to help you get started, including [`Si
 - [struct PortalCrossingComponent](portalcrossingcomponent.md)
   A component that allows entities to cross portal boundaries.
 ### Texture resources
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+  Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [class TextureResource](textureresource.md)
   A representation of a texture.
 - [TextureResource.CreateOptions](textureresource/createoptions.md)
@@ -113,6 +121,10 @@ RealityKit includes a few material types to help you get started, including [`Si
 - [TextureResource.DrawableQueue.Descriptor](textureresource/drawablequeue-swift.class/descriptor.md)
   Describes the texture managed by the drawable queue
 ### Shaders
+- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
+  Update the adjustable parameters of a 3D model in visionOS.
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+  Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
@@ -135,6 +147,8 @@ RealityKit includes a few material types to help you get started, including [`Si
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
 - [enum CustomShaderStage](customshaderstage.md)
 ### Object occlusion
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+  Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [struct OcclusionMaterial](occlusionmaterial.md)
   An invisible material that hides objects rendered behind it.
 - [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)

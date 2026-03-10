@@ -30,6 +30,7 @@ Use this class to verify a successful security key authorization request in [`au
 ### Instance Properties
 - [var transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](asauthorizationsecuritykeypublickeycredentialregistration/transports.md)
   An array of transport types.
+- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](asauthorizationsecuritykeypublickeycredentialregistration/prf-2p2lg.md)
 
 ## Relationships
 

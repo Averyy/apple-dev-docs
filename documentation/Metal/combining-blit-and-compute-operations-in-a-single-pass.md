@@ -10,7 +10,7 @@ Run concurrent blit commands and then a compute dispatch in a single pass with a
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
-- Xcode 26.2+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

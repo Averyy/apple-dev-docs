@@ -22,7 +22,7 @@ let targetText: String
 - [let sourceText: String](translationsession/response/sourcetext.md)
   The original text to translate from.
 - [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
-  The original formatted text that was translated.
+  The original translated text, including style formatting and links.
 - [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
   The translated formatted text.
 

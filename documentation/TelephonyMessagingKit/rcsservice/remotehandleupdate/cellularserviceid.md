@@ -8,7 +8,6 @@ The cellular service ID associated with message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -15,6 +15,10 @@ An array of possible interactions that a person can have with the notification.
 let actions: [AccessoryNotification.Action]
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [AccessoryNotification.Action](accessorynotification/action.md)

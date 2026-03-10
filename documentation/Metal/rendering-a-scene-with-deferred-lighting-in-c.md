@@ -5,12 +5,12 @@
 Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- tvOS 13.0+
-- Xcode 16.4+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

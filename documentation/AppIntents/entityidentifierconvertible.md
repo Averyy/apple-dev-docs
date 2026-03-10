@@ -64,6 +64,8 @@ extension MusicItemID: EntityIdentifierConvertible {
   Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
 - [struct EntityIdentifier](entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
+- [struct FileEntityIdentifier](fileentityidentifier.md)
+  An identifier for an app entity that refers to a document or other file.
 
 
 ---

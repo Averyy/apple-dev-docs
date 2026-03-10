@@ -3,7 +3,7 @@
 **Framework**: SecureElementCredential  
 **Kind**: property
 
-Clients should always check if this variable returns true to dynamically determine if the current device and user configuration can utilize this service before starting a session with this client
+A Boolean value that indicates whether the app or app extension is eligible to start a credential session.
 
 **Availability**:
 - iOS 18.1+
@@ -18,6 +18,10 @@ static var isEligible: Bool { get async throws }
 ## Mentions
 
 - [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
+
+#### Discussion
+
+Always check the value of this property before calling [`startSession()`](credentialsession/startsession().md) to dynamically determine if the current device and user configuration can use the Secure Element credential service.
 
 
 ---

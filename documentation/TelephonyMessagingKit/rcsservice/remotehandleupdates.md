@@ -8,7 +8,6 @@ An asynchronous sequence of remote handle updates produced by this service.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

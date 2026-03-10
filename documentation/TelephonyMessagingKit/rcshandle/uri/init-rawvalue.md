@@ -8,7 +8,6 @@ Creates a new instance with the specified raw value.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

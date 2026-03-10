@@ -32,7 +32,7 @@ Use this method to see whether the user can make payments using a card from one 
 ## Parameters
 
 - `supportedNetworks`: An array of payment networks, as listed in Payment Networks.
-- `capabilties`: A bitmask of capability values. For a list of possible values, see [`PKPaymentMethodType`](pkpaymentmethodtype.md).
+- `capabilties`: A bitmask of capability values. For a list of possible values, see [`PKMerchantCapability`](pkmerchantcapability.md).
 
 ## See Also
 

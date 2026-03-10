@@ -8,7 +8,6 @@ The message conteined one or more unknown or malformed parts.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

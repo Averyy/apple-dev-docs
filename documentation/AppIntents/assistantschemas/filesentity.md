@@ -40,10 +40,8 @@ protocol FilesEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making file management actions available to Siri and Apple Intelligence](making-file-management-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s file management functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.FilesIntent](assistantschemas/filesintent.md)
-  Assistant schema conformance for app intents that offer file management functionality.
+- [var file: some AssistantSchemas.Entity](assistantschemas/filesentity/file.md)
+  The app entity describes a file.
 
 
 ---

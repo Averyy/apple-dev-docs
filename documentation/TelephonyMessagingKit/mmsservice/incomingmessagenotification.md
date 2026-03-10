@@ -8,7 +8,6 @@ A structure that contains information about an incoming MMS message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

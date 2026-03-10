@@ -8,7 +8,6 @@ The carrier isn’t currently configured to handle MMS.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

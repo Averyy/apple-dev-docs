@@ -8,7 +8,6 @@ An enumeration of spam types, for use while reporting an RCS message as spam.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

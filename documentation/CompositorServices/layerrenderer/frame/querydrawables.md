@@ -15,6 +15,10 @@ Returns the array of drawables expected to be used for the given frame. These dr
 func queryDrawables() -> [LayerRenderer.Drawable]
 ```
 
+## Mentions
+
+- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+
 #### Return Value
 
 The drawable array, if the layer is in the `LayerRenderer.State.paused` or `LayerRenderer.State.invalidated` states the array will have a count of 0 and frame is invalid.

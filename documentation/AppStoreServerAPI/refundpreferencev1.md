@@ -6,7 +6,7 @@
 A value that indicates your preferred outcome for the refund request.
 
 **Availability**:
-- App Store Server API 1.11+ - Deprecated
+- App Store Server API 1.11+
 
 ## Declaration
 

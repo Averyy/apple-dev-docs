@@ -18,6 +18,8 @@ nonisolated
 
 #### Discussion
 
+> ❗ **Important**: Call this method only from your container app.
+
 To activate audio features like automatic switching, call this method after pairing your accessory using AccessorySetupKit.
 
 This method throws an error if registration fails.

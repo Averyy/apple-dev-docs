@@ -48,6 +48,15 @@ struct FileEntityIdentifier
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+  Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
+- [struct EntityIdentifier](entityidentifier.md)
+  A type that uniquely identifies a specific instance of an app entity.
+- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+  An interface for converting between an entity’s identifier and its string representation.
+
 
 ---
 

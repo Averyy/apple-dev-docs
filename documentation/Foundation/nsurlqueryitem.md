@@ -26,7 +26,7 @@ In Swift, this object bridges to [`URLQueryItem`](urlqueryitem.md); use [`NSURLQ
 
 You use query items with the [`queryItems`](nsurlcomponents/queryitems.md) property of an [`NSURLComponents`](nsurlcomponents.md) object.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLQueryItem`](urlqueryitem.md) structure, which bridges to the [`NSURLQueryItem`](nsurlqueryitem.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLQueryItem`](urlqueryitem.md) structure, which bridges to the [`NSURLQueryItem`](nsurlqueryitem.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

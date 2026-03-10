@@ -83,28 +83,28 @@ Key-value pairs that grant an executable access to secure resources, or enable h
 - [Debugging tool entitlement](entitlements/com.apple.security.cs.debugger.md)
   A Boolean value that indicates whether the app is a debugger and may attach to other processes or get task ports.
 ### Hardened process
-- [Hardened Process](entitlements/com.apple.security.hardened-process.md)
+- [com.apple.security.hardened-process](entitlements/com.apple.security.hardened-process.md)
   A Boolean value that indicates whether the executable opts in to additional security checks.
-- [Enhanced Security](entitlements/com.apple.security.hardened-process.enhanced-security-version.md)
+- [com.apple.security.hardened-process.enhanced-security-version](entitlements/com.apple.security.hardened-process.enhanced-security-version.md)
   The entitlement required for an executable to opt in to enhanced security protections.
-- [Enhanced Security](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
+- [com.apple.security.hardened-process.enhanced-security-version-string](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
   The entitlement required for an executable to opt in to enhanced security protections.
-- [Hardened Heap](entitlements/com.apple.security.hardened-process.hardened-heap.md)
+- [com.apple.security.hardened-process.hardened-heap](entitlements/com.apple.security.hardened-process.hardened-heap.md)
   A Boolean value that indicates whether the process opts in to type-aware memory allocations.
-- [Additional Runtime Platform Restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions.md)
+- [com.apple.security.hardened-process.platform-restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions.md)
   An integer value that indicates the level of additional runtime security protections your app or extension opts in to.
-- [Additional Runtime Platform Restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions-string.md)
+- [com.apple.security.hardened-process.platform-restrictions-string](entitlements/com.apple.security.hardened-process.platform-restrictions-string.md)
   A string value that indicates the level of additional runtime security protections your app or extension opts in to.
-- [Enable Read-Only Platform Memory](entitlements/com.apple.security.hardened-process.dyld-ro.md)
+- [com.apple.security.hardened-process.dyld-ro](entitlements/com.apple.security.hardened-process.dyld-ro.md)
   An entitlement that marks memory used for internal platform state as read-only.
 ### Hardware memory tagging
-- [Enable Hardware Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.md)
+- [com.apple.security.hardened-process.checked-allocations](entitlements/com.apple.security.hardened-process.checked-allocations.md)
   A Boolean value that enables tagging of pointers and memory allocations.
-- [Enable Soft Mode for Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
+- [com.apple.security.hardened-process.checked-allocations.soft-mode](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
   A Boolean value that indicates whether to log memory-tagging faults as a simulated crash, instead of terminating the process.
-- [Memory Tag Pure Data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
+- [com.apple.security.hardened-process.checked-allocations.enable-pure-data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
   A Boolean value that indicates whether to tag memory that contains only data.
-- [Prevent Receiving Tagged Memory](entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md)
+- [com.apple.security.hardened-process.checked-allocations.no-tagged-receive](entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md)
   A Boolean value that indicates whether to prevent receiving tagged memory from other processes.
 ### Application groups
 - [App Groups Entitlement](entitlements/com.apple.security.application-groups.md)

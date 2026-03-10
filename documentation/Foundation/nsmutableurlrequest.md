@@ -30,7 +30,7 @@ In Swift, this object bridges to [`NSURLRequest`](nsurlrequest.md) and you use w
 
 Classes that create a network operation based on a request make a deep copy of that request. Thus, changing the request after creating a network operation has no effect on the ongoing operation. For example, if you use [`dataTask(with:completionHandler:)`](urlsession/datatask(with:completionhandler:)-e6xv.md) to create a data task from a request, and then later change the request, the data task continues using the original request.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSMutableURLRequest`](nsmutableurlrequest.md) class and its immutable superclass, [`NSURLRequest`](nsurlrequest.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSMutableURLRequest`](nsmutableurlrequest.md) class and its immutable superclass, [`NSURLRequest`](nsurlrequest.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

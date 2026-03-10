@@ -51,13 +51,6 @@ The assistant schema for the `PresentationEntity` consists of the `.spreadsheet`
 
 For a list of available app entity schemas in the `.spreadsheet` domain, see [`AssistantSchemas.SpreadsheetEntity`](assistantschemas/spreadsheetentity.md).
 
-## See Also
-
-- [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
-  Assistant schema conformance for app intents that offer spreadsheet functionality.
-- [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
-  Assistant schema conformance for app entities that describe spreadsheet data.
-
 
 ---
 

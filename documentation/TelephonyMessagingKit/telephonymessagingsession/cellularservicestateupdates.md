@@ -8,7 +8,6 @@ An asynchronous sequence of cellular service state updates produced by this sess
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

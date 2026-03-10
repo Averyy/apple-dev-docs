@@ -3,7 +3,7 @@
 **Framework**: SecureElementCredential  
 **Kind**: case
 
-The presentment intent assertion is invalid, and does not provide exclusive use of contactless features.
+The presentment intent assertion is invalid, and doesn’t provide exclusive use of contactless features.
 
 **Availability**:
 - iOS 18.1+

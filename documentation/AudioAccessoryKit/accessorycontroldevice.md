@@ -12,7 +12,7 @@ A configuration object that manages audio accessory capabilities and state.
 ## Declaration
 
 ```swift
-class AccessoryControlDevice
+final class AccessoryControlDevice
 ```
 
 ## Mentions
@@ -26,7 +26,7 @@ This class registers your paired audio accessory with the system and provides up
 ## Topics
 
 ### Accessing the current configuration
-- [static func current(ASAccessory) throws -> AccessoryControlDevice](accessorycontroldevice/current(_:).md)
+- [static func current(for: ASAccessory) throws -> AccessoryControlDevice](accessorycontroldevice/current(for:).md)
   Retrieves the accessory’s current configuration.
 ### Registering the device
 - [static func register(ASAccessory, AccessoryControlDevice.Configuration) async throws](accessorycontroldevice/register(_:_:).md)

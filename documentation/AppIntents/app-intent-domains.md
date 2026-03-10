@@ -14,6 +14,37 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 
 ## Topics
 
+### Domains
+- [Assistant](app-intent-domain-assistant.md)
+  An app intent schema that lets people in Japan configure the side button of iPhone to launch your voice-based conversational app.
+- [Books](app-intent-domain-books.md)
+  App intent schemas you use for ebook reader functionality and content.
+- [Browser](app-intent-domain-browser.md)
+  App intent schemas you use for web browsing functionality and content.
+- [Camera](app-intent-domain-camera.md)
+  App intent schemas you use for camera functionality and content.
+- [File management](app-intent-domain-file-management.md)
+  App intent schemas you use for file management functionality and content.
+- [Journaling](app-intent-domain-journaling.md)
+  App intent schemas you use for journaling functionality and content.
+- [Mail](app-intent-domain-mail.md)
+  App intent schemas you use for email clients.
+- [Photos](app-intent-domain-photos.md)
+  App intent schemas you use for photo and video functionality and content.
+- [Presentations](app-intent-domain-presentation.md)
+  App intent schemas you use for presentation functionality and content.
+- [Reader](app-intent-domain-reader.md)
+  App intent schemas you use for document reading functionality and content.
+- [Spreadsheet](app-intent-domain-spreadsheet.md)
+  App intent schemas you use for spreadsheet functionality and content.
+- [System and in-app search](app-intent-domain-system-and-search.md)
+  App intent schemas you use for in-app search functionality and content.
+- [Visual intelligence](app-intent-domain-visual-intelligence.md)
+  An app intent schema that lets you integrate your app with visual intelligence.
+- [Whiteboard](app-intent-domain-whiteboard.md)
+  App intent schemas you use for whiteboard functionality and content.
+- [Word proccessor](app-intent-domain-wordprocessor.md)
+  App intent schemas you use for text editing functionality and content.
 ### Macros
 - [macro AppIntent<T>(schema: T)](appintent(schema:).md)
   A Swift macro you use to make sure your app intent conforms to an schema.
@@ -21,114 +52,10 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
   A Swift macro you use to make sure your app entity conforms to a schema.
 - [macro AppEnum<T>(schema: T)](appenum(schema:).md)
   A Swift macro you use to make sure your app enum conforms to a schema.
-### Books
-- [Making ebook actions available to Siri and Apple Intelligence](making-ebook-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s ebook and audiobook functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
-  Assistant schema conformance for app intents that offer ebook and audiobook functionality.
-- [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
-  Assistant schema conformance for app entities that describe ebooks or audiobooks.
-- [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
-  Assistant schema conformance for types you use to describe ebooks or audiobooks.
-### Browser
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s web browsing functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
-  Assistant schema conformance for app intents that offer web browsing functionality.
-- [AssistantSchemas.BrowserEntity](assistantschemas/browserentity.md)
-  Assistant schema conformance for app entities that describe data for web browsing functionality.
-- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
-  Assistant schema conformance for types you use for web browsing functionality.
-### Camera
-- [Making camera actions available to Siri and Apple Intelligence](making-camera-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and enumerations to integrate your app’s camera functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.CameraIntent](assistantschemas/cameraintent.md)
-  Assistant schema conformance for app intents that offer camera functionality.
-- [AssistantSchemas.CameraEnum](assistantschemas/cameraenum.md)
-  Assistant schema conformance for types you use for camera functionality.
-### Document reader
-- [Making document reader actions available to Siri and Apple Intelligence](making-document-reader-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s document viewing and editing functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.ReaderIntent](assistantschemas/readerintent.md)
-  Assistant schema conformance for app intents that offer document viewing and editing functionality.
-- [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
-  Assistant schema conformance for app entities that describe documents.
-- [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)
-  Assistant schema conformance for types you use to describe documents.
-### File management
-- [Making file management actions available to Siri and Apple Intelligence](making-file-management-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s file management functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.FilesIntent](assistantschemas/filesintent.md)
-  Assistant schema conformance for app intents that offer file management functionality.
-- [AssistantSchemas.FilesEntity](assistantschemas/filesentity.md)
-  Assistant schema conformance for app entities that describe files.
-### iPhone side button access (only in Japan)
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
-  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
-  Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
-### Journaling
-- [Making journaling actions available to Siri and Apple Intelligence](making-journaling-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s journaling functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.JournalIntent](assistantschemas/journalintent.md)
-  Assistant schema conformance for app intents that offer journaling functionality.
-- [AssistantSchemas.JournalEntity](assistantschemas/journalentity.md)
-  Assistant schema conformance for app entities that describe journaling data.
-### Email
-- [Making email actions available to Siri and Apple Intelligence](making-email-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s email functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.MailIntent](assistantschemas/mailintent.md)
-  Assistant schema conformance for app intents that offer email functionality.
-- [AssistantSchemas.MailEntity](assistantschemas/mailentity.md)
-  Assistant schema conformance for app entities that describe email.
-### Photos and videos
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s photo and video functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
-  Assistant schema conformance for app intents that offer photo and video functionality.
-- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
-  Assistant schema conformance for app entities that describe media assets.
-- [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
-  Assistant schema conformance for types you use to describe photos and videos.
-### Presentations
-- [Making presentation actions available to Siri and Apple Intelligence](making-presentation-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s presentation functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
-  Assistant schema conformance for app intents that offer presentation functionality.
-- [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
-  Assistant schema conformance for app entities that describe presentation data.
-### Spreadsheets
-- [Making spreadsheet actions available to Siri and Apple Intelligence](making-spreadsheet-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s spreadsheet functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
-  Assistant schema conformance for app intents that offer spreadsheet functionality.
-- [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
-  Assistant schema conformance for app entities that describe spreadsheet data.
-### System and in-app search
-- [Making in-app search actions available to Siri and Apple Intelligence](making-in-app-search-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s search functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-  Assistant schema conformance for types you use for system functionality.
-### Whiteboard
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities that make your app’s whiteboard functionality available to Siri and Apple Intelligence.
-- [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
-  Assistant schema conformance for app intents that offer whiteboard functionality.
-- [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
-  Assistant schema conformance for app entities that describe data for whiteboard functionality.
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
-  Assistant schema conformance for whiteboard types.
-### Word processor and text editing
-- [Making word processor actions available to Siri and Apple Intelligence](making-word-processor-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities that make your app’s word processor functionality available to Siri and Apple Intelligence.
-- [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
-  Assistant schema conformance for app intents that offer word processing functionality.
-- [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
-  Assistant schema conformance for app entities that describe text documents.
 ### Base protocols
 - [Assistant schema base protocols](assistant-schema-base-protocols.md)
   Protocols that provide the underlying functionality for assistant schemas.
-### Deprecated symbols
+### Deprecated macros
 - [macro AssistantIntent<T>(schema: T)](assistantintent(schema:).md)
   A Swift macro you use to make sure your app intent conforms to an assistant schema.
 - [macro AssistantEntity<T>(schema: T)](assistantentity(schema:).md)
@@ -138,12 +65,14 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 
 ## See Also
 
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-  Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
-- [Making onscreen content available to Siri and Apple Intelligence](making-onscreen-content-available-to-siri-and-apple-intelligence.md)
-  Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
-- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
+  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
+- [Creating your first app intent](creating-your-first-app-intent.md)
+  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [App intents](app-intents.md)
+  Define the custom actions your app exposes to the system using specialized intents.
+- [Intent infrastructure](intent-infrastructure.md)
+  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
 
 
 ---

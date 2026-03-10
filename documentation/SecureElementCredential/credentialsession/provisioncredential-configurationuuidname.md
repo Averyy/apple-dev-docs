@@ -27,6 +27,8 @@ A [`CredentialSession.Credential`](credentialsession/credential.md), initialized
 
 This method installs into the Secure Element an applet bundle that you’ve submitted through the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com/login) portal.
 
+> **Note**: If there is not enough space in the Secure Element to provision the new credential, the system shows a space management UI over the current app. A person using the device can use this interface to remove other credentials to free up space or cancel the provisioning attempt.
+
 ## Parameters
 
 - `configurationUUID`: A UUID corresponding to an applet bundle configured on the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com/login) portal. The system uses the corresponding applet bundle to provision the instance associated with the created credential. The UUID is opaque to the device.

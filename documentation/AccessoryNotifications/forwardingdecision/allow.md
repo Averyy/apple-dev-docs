@@ -15,6 +15,10 @@ An option that indicates the person allows notifications from all applicable app
 case allow
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [ForwardingDecision.deny](forwardingdecision/deny.md)

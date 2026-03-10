@@ -42,12 +42,10 @@ protocol WhiteboardEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities that make your app’s whiteboard functionality available to Siri and Apple Intelligence.
-- [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
-  Assistant schema conformance for app intents that offer whiteboard functionality.
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
-  Assistant schema conformance for whiteboard types.
+- [var board: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/board.md)
+  The app entity describes a whiteboard canvas.
+- [var item: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/item.md)
+  The app entity describes an item on a whiteboard canvas.
 
 
 ---

@@ -36,6 +36,7 @@ class CPListImageRowItemImageGridElement
 ### Inherits From
 - [CPListImageRowItemElement](cplistimagerowitemelement.md)
 ### Conforms To
+- [CPPlayableItem](cpplayableitem.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

@@ -8,7 +8,6 @@ Metadata for the uploaded file.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

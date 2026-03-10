@@ -285,14 +285,22 @@ For more information about integrating your app with visual intelligence, refer 
 
 ## See Also
 
-- [App Intents updates](../Updates/AppIntents.md)
-  Learn about important changes in App Intents.
-- [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
-  Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
-- [Creating your first app intent](creating-your-first-app-intent.md)
-  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
-- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
-  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
+  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
+- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
+- [Siri](siri.md)
+  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
+- [Visual intelligence](visual-intelligence.md)
+  Integrate your app with visual intelligence and include your content in its search results.
+- [App Shortcuts](app-shortcuts.md)
+  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
+  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
+- [Action button on iPhone and Apple Watch](actionbutton.md)
+  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Focus](focus.md)
+  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
 
 ---

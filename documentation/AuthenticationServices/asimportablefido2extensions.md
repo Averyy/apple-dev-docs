@@ -21,9 +21,9 @@ struct ASImportableFIDO2Extensions
 ## Topics
 
 ### Initializers
-- [init(hmacCredential: ASImportableFIDO2HMACCredential?, largeBlob: ASImportableFIDO2LargeBlob?)](asimportablefido2extensions/init(hmaccredential:largeblob:).md)
+- [init(hmacCredentials: ASImportableFIDO2HMACCredential?, largeBlob: ASImportableFIDO2LargeBlob?)](asimportablefido2extensions/init(hmaccredentials:largeblob:).md)
 ### Instance Properties
-- [var hmacCredential: ASImportableFIDO2HMACCredential?](asimportablefido2extensions/hmaccredential.md)
+- [var hmacCredentials: ASImportableFIDO2HMACCredential?](asimportablefido2extensions/hmaccredentials.md)
   PRF extension.
 - [var largeBlob: ASImportableFIDO2LargeBlob?](asimportablefido2extensions/largeblob.md)
   Large blob extension.

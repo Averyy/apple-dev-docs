@@ -18,7 +18,7 @@ case active
 ## See Also
 
 - [CredentialSession.PresentmentIntentAssertion.State.invalid](credentialsession/presentmentintentassertion/state-swift.enum/invalid.md)
-  The presentment intent assertion is invalid, and does not provide exclusive use of contactless features.
+  The presentment intent assertion is invalid, and doesn’t provide exclusive use of contactless features.
 
 
 ---

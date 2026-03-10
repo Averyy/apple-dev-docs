@@ -44,10 +44,12 @@ protocol SpreadsheetEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making spreadsheet actions available to Siri and Apple Intelligence](making-spreadsheet-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s spreadsheet functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
-  Assistant schema conformance for app intents that offer spreadsheet functionality.
+- [var document: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/document.md)
+  The app entity describes a spreadsheet.
+- [var sheet: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/sheet.md)
+  The app entity describes a sheet in a spreadsheet.
+- [var template: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/template.md)
+  The app entity describes a template for a spreadsheet.
 
 
 ---

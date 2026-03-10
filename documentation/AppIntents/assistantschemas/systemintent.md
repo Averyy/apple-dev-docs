@@ -35,8 +35,7 @@ protocol SystemIntent : AssistantSchemas.Model
 
 ## See Also
 
-- [Making in-app search actions available to Siri and Apple Intelligence](making-in-app-search-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s search functionality with Siri and Apple Intelligence.
+- [var search: some AssistantSchemas.Intent](assistantschemas/systemintent/search.md)
 
 
 ---

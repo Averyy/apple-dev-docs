@@ -54,104 +54,96 @@ For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://
   Learn about important changes in App Intents.
 - [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
   Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
-- [Creating your first app intent](creating-your-first-app-intent.md)
-  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+### System experiences
 - [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
   Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
-- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
-  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-### Siri and Apple Intelligence
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-  Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
-- [Making onscreen content available to Siri and Apple Intelligence](making-onscreen-content-available-to-siri-and-apple-intelligence.md)
-  Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
-- [App intent domains](app-intent-domains.md)
-  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
-### Visual intelligence
-- [Integrating your app with visual intelligence](../VisualIntelligence/integrating-your-app-with-visual-intelligence.md)
-  Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
-- [Visual Intelligence](../VisualIntelligence/VisualIntelligence.md)
-  Include your app’s content in search results that visual intelligence provides.
-- [protocol IntentValueQuery](intentvaluequery.md)
-  A query that provides entity values to the system; for example, for visual intelligence search.
-### Interactive Snippets
-- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
-  Enable people to view the outcome of an app intent and immediately perform follow-up actions.
-- [protocol SnippetIntent](snippetintent.md)
-  An app intent that presents an interactive snippet onscreen.
-### Other system experiences
 - [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-  Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
-- [Focus](focus.md)
-  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
-- [Action button on iPhone and Apple Watch](actionbutton.md)
-  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
 - [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
   Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
-  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [Siri](siri.md)
+  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
+- [Visual intelligence](visual-intelligence.md)
+  Integrate your app with visual intelligence and include your content in its search results.
+- [App Shortcuts](app-shortcuts.md)
+  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
+  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
+- [Action button on iPhone and Apple Watch](actionbutton.md)
+  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+- [Focus](focus.md)
+  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
+### Actions
+- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
+  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
+- [Creating your first app intent](creating-your-first-app-intent.md)
+  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [App intents](app-intents.md)
+  Define the custom actions your app exposes to the system using specialized intents.
+- [App intent domains](app-intent-domains.md)
+  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
+- [Intent infrastructure](intent-infrastructure.md)
+  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
+### Parameters and data types
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
+- [Parameter resolution](parameter-resolution.md)
+  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+- [Common data types](common-data-types.md)
+  Specify common types that your app supports, including currencies, files, and contacts.
+- [App entities](app-entities.md)
+  Make core types or concepts discoverable to the system by declaring them as app entities.
+- [Static parameter types](app-enums.md)
+  Types that represent an enumerable list of static parameter values.
+- [Entity queries](entity-queries.md)
+  Help the system find the entities your app defines and use them to resolve parameters.
+- [Property comparators](property-comparators.md)
+  Specify the type of comparison to perform during a property-matched query.
+### Outcomes
+- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+  Enable people to view the outcome of an app intent and immediately perform follow-up actions.
+- [struct IntentDialog](intentdialog.md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [protocol IntentResult](intentresult.md)
+  A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
+- [struct IntentResultContainer](intentresultcontainer.md)
+  An object that represents the output of a completed intent.
+- [protocol OpensIntent](opensintent.md)
+  The result of performing an action that delivers an app intent back to the initiator of the action.
+- [protocol ProvidesDialog](providesdialog.md)
+  The result of performing an action that delivers a dialog back to the initiator of the action.
+- [protocol ReturnsValue](returnsvalue.md)
+  The result of performing an action that delivers a value back to the initiator.
+- [protocol ShowsSnippetIntent](showssnippetintent.md)
+  The result of performing an action that present a snippet generated by a `SnippetIntent`-conforming type.
+- [protocol ShowsSnippetView](showssnippetview.md)
+  The result of performing an action that delivers a view back to the initiator of the action.
+- [protocol ResultsCollection](resultscollection.md)
+  A protocol representing a collection of returned items with support for sectioning.
+### Choices and confirmation
+- [struct IntentChoiceOption](intentchoiceoption.md)
+  A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
+- [struct ConfirmationConditions](confirmationconditions.md)
+  Conditions for a confirmation request.
+### Navigation and app launch
+- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
+  Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
+- [struct IntentModes](intentmodes.md)
+  A set of options that describe an app intent’s behavior.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
 ### SiriKit migration
 - [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
-### Actions
-- [App intents](app-intents.md)
-  Define the custom actions your app exposes to the system, and incorporate support for existing SiriKit intents.
-- [Intent discovery](intent-discovery.md)
-  Donate your app’s intents to the system to help it identify trends and predict future behaviors.
-- [App Shortcuts](app-shortcuts.md)
-  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
-### Parameters, custom data types, and queries
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-  Enable people to configure app intents with their custom input values.
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
-- [Resolvers](resolvers.md)
-  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
-### Utility types
-- [Common types](common-data-types.md)
-  Specify common types that your app supports, including currencies, files, and contacts.
+- [protocol CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
+  An interface for replacing a custom SiriKit intent that allows existing shortcuts and donations to continue working.
 ### Errors
 - [struct AppIntentError](appintenterror.md)
   Errors that your intent-handling code can return to indicate problems while interpreting or executing an app intent.
 ### Protocols
-- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
-  Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
-- [protocol AppShortcutsContent](appshortcutscontent.md)
-- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
-- [protocol ShowsSnippetIntent](showssnippetintent.md)
-  The result of performing an action that present a snippet generated by a `SnippetIntent`-conforming type.
-- [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
-- [protocol UISceneAppIntent](uisceneappintent.md)
 - [protocol UndoableIntent](undoableintent.md)
-### Structures
-- [struct ConfirmationConditions](confirmationconditions.md)
-  Conditions for a confirmation request.
-- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
-- [struct EntityURLRepresentation](entityurlrepresentation.md)
-  The URL representation of an app entity.
-- [struct EnumURLRepresentation](enumurlrepresentation.md)
-  The URL representation of an app enum.
-- [struct FileEntityIdentifier](fileentityidentifier.md)
-  An identifier for an app entity that refers to a document or other file.
-- [struct IntentChoiceOption](intentchoiceoption.md)
-  A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
-- [struct IntentModes](intentmodes.md)
-  A set of options that describe an app intent’s behavior.
-- [struct IntentURLRepresentation](intenturlrepresentation.md)
-  The URL representation of an app intent.
-### Macros
-- [macro UnionValue()](unionvalue().md)
 ### Enumerations
-- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
-  Dynamic values you can include in the spoken phrases that run your shortcut.
 - [enum VideoCategory](videocategory.md)
 
 

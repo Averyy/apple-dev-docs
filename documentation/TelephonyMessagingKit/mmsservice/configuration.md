@@ -8,7 +8,6 @@ A structure that provides information about MMS messages sent and received using
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

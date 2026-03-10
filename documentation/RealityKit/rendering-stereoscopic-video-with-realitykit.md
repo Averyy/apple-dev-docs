@@ -92,7 +92,7 @@ RealityView { content in
 Finally, the sample applies these modifiers to initialize the player, and to begin and end playback:
 
 - [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:initial:_:))
-- doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:)
+- [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:))
 
 ```swift
 // Begin playback when ready.
@@ -147,7 +147,7 @@ func load() async throws {
     let duration = try await asset.load(.duration)
 
     // Use the asset duration as the boundary period with which to loop.
-    synchronizer.addBoundaryTimeObserver(forTimes: [NSValue(time: duration)], queue: nil) {
+    timeObserver = synchronizer.addBoundaryTimeObserver(forTimes: [NSValue(time: duration)], queue: nil) {
         Task { @MainActor [weak self] in
             guard let self else { return }
             self.loop(rate: self.synchronizer.rate)
@@ -166,6 +166,7 @@ The app begins playback by calling `loop(rate:)` for the first time. The initial
 ```swift
 /// Begin playback by starting the loop.
 func play() {
+    guard !isLooping else { return }
     isLooping = true
     loop(rate: 1)
 }
@@ -198,8 +199,17 @@ func stop() {
     nextProcessor = nil
     isLooping = false
     loopCount = 0
+    
     synchronizer.rate = 0
-    videoRenderer.stopRequestingMediaData()
+    if let timeObserver {
+        synchronizer.removeTimeObserver(timeObserver)
+        self.timeObserver = nil
+    }
+
+    if let loopingTask {
+        loopingTask.cancel()
+        self.loopingTask = nil
+    }
 }
 ```
 
@@ -281,26 +291,26 @@ else {
 To begin processing, the processor waits for the video renderer to indicate that it is ready to begin rendering. The private `untilReadyForMoreMediaData()` function achieves this with a call to [`requestMediaDataWhenReady(on:using:)`](https://developer.apple.com/documentation/AVFoundation/AVQueuedSampleBufferRendering/requestMediaDataWhenReady(on:using:)). As the sample reads the asset, the `videoTrackOutputProvider` supplies a stream of sample buffers for processing. As the sample receives these sample buffers, the processor calls `transform(from:with:in:)` to convert the side-by-side frame input into stereo-encoded output. The sample then enqueues the stereo-encoded frames to the video renderer. Processing concludes once the stream of sample buffers is exhausted.
 
 ```swift
-Task {
-    // Prepare the renderer for processing.
-    await untilReadyForMoreMediaData()
-    isProcessing = true
-
-    // Process all read frames from the input video track.
-    while videoRenderer.isReadyForMoreMediaData && isProcessing {
-        while let sampleBuffer = try await videoTrackOutputProvider.next() {
-            if let transformedBuffer = try transform(from: sampleBuffer, with: pixelBufferPool, in: transferSession) {
-                videoRenderer.enqueue(transformedBuffer)
-            }
-        }
-
-        // Indicate that processing is substantially complete.
-        isProcessing = false
-    }
-
-    // Conclude processing.
+// Explicitly tear down resources when processing concludes.
+defer {
+    videoRenderer.stopRequestingMediaData()
     assetReader.cancelReading()
     VTPixelTransferSessionInvalidate(transferSession)
+}
+
+// Monitor & process frames while renderer is ready.
+for await _ in mediaDataReadyStream() {
+    try Task.checkCancellation()
+
+    while videoRenderer.isReadyForMoreMediaData {
+        guard let sampleBuffer = try await videoTrackOutputProvider.next() else {
+            return
+        }
+
+        if let transformedBuffer = try transform(from: sampleBuffer, with: pixelBufferPool, in: transferSession) {
+            videoRenderer.enqueue(transformedBuffer)
+        }
+    }
 }
 ```
 

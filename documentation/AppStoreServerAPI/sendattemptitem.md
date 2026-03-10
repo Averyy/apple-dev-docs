@@ -6,7 +6,7 @@
 The success or error information and the date the App Store server records when it attempts to send a server notification to your server.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

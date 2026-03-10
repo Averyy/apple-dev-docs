@@ -44,12 +44,12 @@ protocol BooksEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making ebook actions available to Siri and Apple Intelligence](making-ebook-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s ebook and audiobook functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
-  Assistant schema conformance for app intents that offer ebook and audiobook functionality.
-- [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
-  Assistant schema conformance for types you use to describe ebooks or audiobooks.
+- [var book: some AssistantSchemas.Entity](assistantschemas/booksentity/book.md)
+  The app entity describes an ebook.
+- [var audiobook: some AssistantSchemas.Entity](assistantschemas/booksentity/audiobook.md)
+  The app entity describes an audiobook.
+- [var settings: some AssistantSchemas.Entity](assistantschemas/booksentity/settings.md)
+  The app entity describes settings for an audiobook or ebook.
 
 
 ---

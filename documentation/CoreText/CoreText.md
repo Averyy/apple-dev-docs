@@ -62,6 +62,10 @@ Core Text provides a low-level programming interface for laying out text and han
 - [class CTRubyAnnotation](ctrubyannotation.md)
 ### Protocols
 - [protocol CTAdaptiveImageProviding](ctadaptiveimageproviding.md)
+### Variables
+- [let kCTFontDescriptorLanguageAttribute: CFString](kctfontdescriptorlanguageattribute.md)
+### Functions
+- [func CTFontGetUIFontType(CTFont) -> CTFontUIFontType](ctfontgetuifonttype(_:).md)
 
 ## See Also
 

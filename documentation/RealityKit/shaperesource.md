@@ -77,6 +77,8 @@ A representation of a shape.
   Create entities that behave and react like physical objects in a RealityKit view.
 - [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
+- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+  Display an interactive car model using gestures in a reality view.
 - [struct CollisionComponent](collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.
 - [CollisionComponent.Mode](collisioncomponent/mode-swift.enum.md)

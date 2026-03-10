@@ -31,6 +31,8 @@ For example, tabbed text is always positioned to the left of a right-aligned tab
 ### Creating Text Tabs
 - [func CTTextTabCreate(CTTextAlignment, Double, CFDictionary?) -> CTTextTab](cttexttabcreate(_:_:_:).md)
   Creates and initializes a new text tab object.
+- [let kCTTabColumnTerminatorsAttributeName: CFString](kcttabcolumnterminatorsattributename.md)
+  Specifies the terminating character for a tab column.
 ### Getting Text Tab Data
 - [func CTTextTabGetAlignment(CTTextTab) -> CTTextAlignment](cttexttabgetalignment(_:).md)
   Returns the text alignment of the tab.
@@ -41,9 +43,6 @@ For example, tabbed text is always positioned to the left of a right-aligned tab
 ### Getting the Type Identifier
 - [func CTTextTabGetTypeID() -> CFTypeID](cttexttabgettypeid().md)
   Returns the Core Foundation type identifier of the text tab object.
-### Constants
-- [kCTTabColumnTerminatorsAttributeName](kcttabcolumnterminatorsattributename.md)
-  Specifies the terminating character for a tab column.
 
 ## Relationships
 

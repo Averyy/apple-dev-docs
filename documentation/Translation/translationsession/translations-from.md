@@ -23,9 +23,9 @@ An array of responses containing the text translations matching the order they w
 
 #### Discussion
 
-This function translates multiple strings as a batch and might display different UI depending on the state of the translation. The languages the framework requires for the translation don’t have to be installed before calling this method.
+This function translates multiple strings as a batch and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method.
 
-Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](translationsession/request.md) type. This method takes longer to return than [`translate(batch:)`](translationsession/translate(batch:).md), but it has the advantage of not having to map translation requests to responses. The responses return in the same order the requests are sent.
+Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](translationsession/request.md) type. To create requests for attributed strings, use `Request/init(sourceText:clientIdentifier:)-(AttributedString)`. This method takes longer to return than [`translate(batch:)`](translationsession/translate(batch:).md), but it has the advantage of not mapping translation requests to responses. The responses return in the same order the requests are sent.
 
 If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any further prompts to the person.
 

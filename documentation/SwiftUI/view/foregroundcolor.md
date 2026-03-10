@@ -21,10 +21,6 @@ nonisolated
 func foregroundColor(_ color: Color?) -> some View
 ```
 
-## Mentions
-
-- [Configuring views](configuring-views.md)
-
 #### Return Value
 
 A view that uses the foreground color you supply.

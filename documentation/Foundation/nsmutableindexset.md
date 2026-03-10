@@ -30,7 +30,7 @@ The values in a mutable index set are always sorted, so the order in which value
 
 Do not subclass the [`NSMutableIndexSet`](nsmutableindexset.md) class.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSMutableIndexSet`](nsmutableindexset.md) class and its immutable superclass, [`NSIndexSet`](nsindexset.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSMutableIndexSet`](nsmutableindexset.md) class and its immutable superclass, [`NSIndexSet`](nsindexset.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

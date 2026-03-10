@@ -1,4 +1,4 @@
-# Xcode 26.4 Beta 2 Release Notes
+# Xcode 26.4 Beta 3 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,29 +6,59 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.4 beta 2 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, macOS 26.4, and visionOS 26.4. Xcode 26.4 beta 2 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.4 beta 2 requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, macOS 26.4, and visionOS 26.4. Xcode 26.4 beta 3 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.4 beta 3 requires a Mac running macOS Tahoe 26.2 or later.
 
-##### Apple Clang Compiler
-
-###### New Features
-
-- The following C++26 features have been implemented: - Structured Bindings can introduce a Pack ([`P1061R10 `](https://developer.apple.comhttps://wg21.link/P1061R10))
-- Structured binding declaration as a condition ([`P0963R3`](https://developer.apple.comhttps://wg21.link/P0963R3))
-- Variadic Friends ([`P2893R3`](https://developer.apple.comhttps://wg21.link/P2893R3))
-- constexpr placement new ([`P2747R2`](https://developer.apple.comhttps://wg21.link/P2747R2))
-- The Oxford variadic comma ([`P3176R1`](https://developer.apple.comhttps://wg21.link/P3176R1))  (169138392)
-
-##### Coding Intelligence
+##### Address Sanitizer
 
 ###### Known Issues
 
-- When using external development tools that connect to Xcode, you may see multiple “Allow Connection?” dialogs during normal usage.  (170721057)
+- Address Sanitizer and Thread Sanitizer may hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
 
-##### Instruments
+##### C++ Standard Library
 
 ###### New Features
 
-- Added a new instrument to help developers track bandwidth and latencies in the Foveated Streaming system.  (169292516)
+- The following C++ papers have been implemented: - Cleaning-up `noexcept` in the Library ([`N4258`](https://developer.apple.comhttps://wg21.link/N4258))
+- Deprecate POD ([`P0767R1`](https://developer.apple.comhttps://wg21.link/P0767R1))
+- Integration of `chrono` with text formatting ([`P1361R2`](https://developer.apple.comhttps://wg21.link/P1361R2))
+- A type trait to detect reference binding to temporary (implemented the type traits only) ([`P2255R2`](https://developer.apple.comhttps://wg21.link/P2255R2))
+- Fixing locale handling in `chrono` formatters ([`P2372R3`](https://developer.apple.comhttps://wg21.link/P2372R3))
+- `constexpr` Stable Sorting ([`P2562R1`](https://developer.apple.comhttps://wg21.link/P2562R1))
+- Put `std::monostate` in `<utility>` ([`P0472R3`](https://developer.apple.comhttps://wg21.link/P0472R3))
+- A Standard `flat_set` ([`P1222R4`](https://developer.apple.comhttps://wg21.link/P1222R4))
+- `aligned_accessor`: An `mdspan` accessor expressing pointer over-alignment ([`P2897R7`](https://developer.apple.comhttps://wg21.link/P2897R7))
+- Deprecate the notion of trivial types ([`P3247R2`](https://developer.apple.comhttps://wg21.link/P3247R2))
+- `constexpr` containers and adaptors (`forward_list`, `list`, `priority_queue`, `flat_map`, and `flat_set` are implemented) ([`P3372R3`](https://developer.apple.comhttps://wg21.link/P3372R3))
+- `views::join_with` ([`P2441R2`](https://developer.apple.comhttps://wg21.link/P2441R2))
+- Making multi-param constructors of views explicit ([`P2711R1`](https://developer.apple.comhttps://wg21.link/P2711R1))
+- Stashing stashing iterators for proper flattening ([`P2770R0`](https://developer.apple.comhttps://wg21.link/P2770R0))
+- `common_reference_t` of `reference_wrapper` Should Be a Reference Type ([`P2655R3`](https://developer.apple.comhttps://wg21.link/P2655R3)) Performance improvements: - The `std::ranges::{copy, copy_n, copy_backward, move, move_backward, rotate}` algorithms have been optimized for `std::vector<bool>::iterator`, resulting in a performance improvement of up to 2000x.
+- The `std::ranges::equal` algorithm has been optimized for `std::vector<bool>::iterator`, resulting in a performance improvement of up to 188x.
+- The `std::ranges::swap_ranges` algorithm has been optimized for `std::vector<bool>::iterator`, resulting in a performance improvement of up to 611x.
+- The `num_put::do_put` integral overloads have been optimized, resulting in a performance improvement of up to 2.4x.
+- The `std::stable_sort` algorithm uses radix sort for floating-point types now, which can improve the performance up to 10x, depending on type of sorted elements and the initial state of the sorted array.
+- The segmented iterator optimization for `std::for_each` has been backported to C++11. It was previously only available in C++23 and later.
+- The `std::for_each_n`, `std::ranges::for_each` and `std::ranges::for_each_n` algorithms have been optimized for segmented iterators, resulting in major improvements for `std::deque` and `std::join_view`.
+- The `bitset::to_string` function has been optimized, resulting in a performance improvement of up to 8.3x for bitsets with uniformly distributed zeros and ones, and up to 13.5x and 16.1x for sparse and dense bitsets, respectively.
+- The `flat_map::insert` and flat_set::insert_range have been optimized, resulting in a performance improvement of up to 10x for inserting elements into a flat_map when the input range is a flat_map or a zip_view.
+- `ctype::tolower` and `ctype::toupper` have been optimized, resulting in a 2x performance improvement. Miscellaneous improvements: - As an experimental feature, Hardening now supports assertion semantics that allow customizing how a hardening assertion failure is handled. The four available semantics, modeled on C++26 Contracts, are `ignore`, `observe`, `quick-enforce` and `enforce`. The `observe` semantic is intended to make it easier to adopt Hardening in production but should not be used outside of this scenario. Please refer to the Hardening documentation for details.
+- Updated formatting library to Unicode 16.0.0.  (171666816)
+
+###### Known Issues
+
+- The following items have been deprecated or removed: - `std::is_pod` and `std::is_pod_v` are deprecated in C++20 and later.
+- `std::is_trivial` and `std::is_trivial_v` are deprecated in C++26 and later.
+- The `_LIBCPP_VERBOSE_ABORT_NOT_NOEXCEPT` macro has been removed, making `std::__libcpp_verbose_abort` unconditionally `noexcept`.
+- libc++ no longer adds `constexpr` to `std::hash<std::vector<bool, A>>::operator()`, as the `constexpr` addition since C++20 was an unintended extension.
+- The non-conforming extension `packaged_task::result_type` has been removed. Potentially breaking changes: - The implementation of `num_put::do_put` has been replaced to improve the performance, which can lead to different output when printing pointers.
+- User-defined specializations of `std::common_reference` are diagnosed now. To customize the common reference type, use `std::basic_common_reference` instead.
+- `std::function` used to have allocator support, which was removed from the Standard by [`P0302R1`](https://developer.apple.comhttp://wg21.link/p0302r1) due to issues with its design and inconsistent support across implementations. Previously, libc++ would provide allocator-aware APIs in `std::function` in C++11 and C++14, but otherwise ignore the allocator argument. Starting in this release, the allocator argument is always ignored. ABI Affecting Changes: - The Known Issue mentioned in the Xcode 26 release notes relating to ABI break in `std::unordered_{map,set,multimap,multiset}` (159096032), expected to happen in rare cases, has been resolved, reverting to the ABI used in Xcode versions before 26.  (171666856)
+
+##### Coding Intelligence
+
+###### Resolved Issues
+
+- Fixed: When using external development tools that connect to Xcode, you may see multiple “Allow Connection?” dialogs during normal usage.  (170721057)
 
 ##### Localization
 
@@ -36,29 +66,59 @@ Xcode 26.4 beta 2 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 
 - When removing a language from a String Catalog in a Swift Package, it could re-appear.  (169263836)
 
-##### Source Editor
-
-###### New Features
-
-- Improved editor-tab retention behavior when an external program, such as git, removes and/or adds files while Xcode is running.  (144153298)
-
-##### Storekit
+##### Swift Standard Library
 
 ###### Resolved Issues
 
-- Fixed: The StoreKit configuration file does not autosave some changes causing undo commands to fail, and spuriously presenting a prompt stating that the file has been changed by another application.  (169182677)
+- Fixed: The raw span accessor properties of `Span` and `MutableSpan` (`bytes` and `mutableBytes`) as well as the two generic `append()` methods of `OutputRawSpan` are newly marked with `@unsafe`. These changes are corrections for omissions in the SE-0458, SE-0467 and SE-0485 proposals or their implementations. These `@unsafe` annotations are required because of a permissible compiler optimization involving values of types that contain padding. When the compiler stores such a value to addressable memory, it is free to skip any padding bytes. This can potentially leave those bytes uninitialized. This optimization is safe when the memory is only ever read as the same type as the value stored. However, when reinterpreting the memory as raw bytes, the potentially uninitialized bytes violate the prerequisite that `RawSpan` and `MutableRawSpan` represent fully initialized memory. In the case of `OutputRawSpan`, they violate the postcondition that the memory it has written is fully initialized. It is safe to use `bytes` when the `Element` type of `Span` or `MutableSpan` has neither internal nor trailing padding bytes, as every byte is then known to be initialized. The same constraint applies to the type parameter of `OutputSpan.append(_:as:)`. To safely use `MutableSpan`’s `mutableBytes`, an additional safety constraint applies when the memory is to later be used again as `Element`. In that case, the non-padding bytes of `Element` must allow every bit pattern to be permissible in a valid value of `Element`.  (168547924)
 
 ##### Testing
 
 ###### Resolved Issues
 
-- Fixed: When an issue occurs in a Swift Testing test in a detached task or background thread, it may be recorded as a warning instead of as an error.  (170161483)
+- Fixed: Interoperability between XCTest and Swift Testing is no longer enabled by default. To enable this experimental feature, set the environment variable `SWIFT_TESTING_XCTEST_INTEROP_MODE` to `limited` in your test plan. ([`ST-0021`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0021-targeted-interoperability-swift-testing-and-xctest.md))  (171360625)
 
 ###### Known Issues
 
 - When an XCTest class has the property `continueAfterFailure` set to false, a failure in an test method, `setUp`, or `tearDown` that is also declared `async` will skip any remaining retries for the current test. For example, if an affected test uses the “retry on failure” repetition mode, it will not attempt to re-run the test after failing.  (108565878) **Workaround:** In your test plan, set “Relaunch Tests for Each Repetition” to on.
 - Instances of `UIImage` cannot be attached to tests when testing a Mac Catalyst app.  (168320788) **Workaround:** Use the `UIImage.cgImage` property to get the underlying `CGImage` and attach it instead.
 - When using Xcode for Apple silicon, tests which use Swift Testing may crash at launch when using a Rosetta run destination.  (170347005) **Workaround:** Use Xcode Universal.
+
+#### Updates in Xcode 264 Beta 2
+
+##### Apple Clang Compiler
+
+###### New Features in Xcode 264 Beta 2
+
+- The following C++26 features have been implemented: - Structured Bindings can introduce a Pack ([`P1061R10 `](https://developer.apple.comhttps://wg21.link/P1061R10))
+- Structured binding declaration as a condition ([`P0963R3`](https://developer.apple.comhttps://wg21.link/P0963R3))
+- Variadic Friends ([`P2893R3`](https://developer.apple.comhttps://wg21.link/P2893R3))
+- constexpr placement new ([`P2747R2`](https://developer.apple.comhttps://wg21.link/P2747R2))
+- The Oxford variadic comma ([`P3176R1`](https://developer.apple.comhttps://wg21.link/P3176R1))  (169138392)
+
+##### Instruments
+
+###### New Features in Xcode 264 Beta 2
+
+- Added a new instrument to help developers track bandwidth and latencies in the Foveated Streaming system.  (169292516)
+
+##### Source Editor
+
+###### New Features in Xcode 264 Beta 2
+
+- Improved editor-tab retention behavior when an external program, such as git, removes and/or adds files while Xcode is running.  (144153298)
+
+##### Storekit
+
+###### Resolved Issues in Xcode 264 Beta 2
+
+- Fixed: The StoreKit configuration file does not autosave some changes causing undo commands to fail, and spuriously presenting a prompt stating that the file has been changed by another application.  (169182677)
+
+##### Testing
+
+###### Resolved Issues in Xcode 264 Beta 2
+
+- Fixed: When an issue occurs in a Swift Testing test in a detached task or background thread, it may be recorded as a warning instead of as an error.  (170161483)
 
 #### Updates in Xcode 264 Beta
 

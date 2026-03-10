@@ -196,7 +196,6 @@ print(allowedMoves.rawValue & Directions.right.rawValue)
 ### Inherited By
 - [OptionSet](optionset.md)
 ### Conforming Types
-- [ClockTraits](clocktraits.md)
 - [CodingUserInfoKey](codinguserinfokey.md)
 - [FloatingPointSign](floatingpointsign.md)
 - [String.Encoding](string/encoding.md)

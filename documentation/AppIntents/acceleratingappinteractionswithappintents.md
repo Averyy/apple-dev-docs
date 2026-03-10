@@ -275,14 +275,14 @@ To leverage the app’s existing code for handling a universal link, the app con
 
 ## See Also
 
-- [App Intents updates](../Updates/AppIntents.md)
-  Learn about important changes in App Intents.
-- [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
-  Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
 - [Creating your first app intent](creating-your-first-app-intent.md)
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
-- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
+- [App intents](app-intents.md)
+  Define the custom actions your app exposes to the system using specialized intents.
+- [App intent domains](app-intent-domains.md)
+  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
+- [Intent infrastructure](intent-infrastructure.md)
+  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
 
 
 ---

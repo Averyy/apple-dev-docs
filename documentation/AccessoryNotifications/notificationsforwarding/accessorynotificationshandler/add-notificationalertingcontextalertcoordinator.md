@@ -16,6 +16,10 @@ Provides a new notification for display on your accessory.
 func add(notification: AccessoryNotification, alertingContext: AlertingContext, alertCoordinator: any AlertCoordinating)
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Discussion
 
 Parse the notification details, select the information to display on your accessory, and convert it to data for transmission.

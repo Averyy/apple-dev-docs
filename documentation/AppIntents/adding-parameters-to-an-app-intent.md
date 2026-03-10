@@ -36,7 +36,7 @@ You can use the `@Parameter` property wrapper with common Swift and Foundation t
 
 Additionally:
 
-- Use framework-specific types such as [`IntentPerson`](intentperson.md) and [`IntentFile`](intentfile.md). For additional types, see [`Common types`](common-data-types.md).
+- Use framework-specific types such as [`IntentPerson`](intentperson.md) and [`IntentFile`](intentfile.md). For additional types, see [`Common data types`](common-data-types.md).
 - Use enumerable types that conform to the [`AppEnum`](appenum.md) protocol for parameters that have known static values at build time.
 - Use custom types that adopt the [`AppEntity`](appentity.md) protocol and that the system can request at runtime.
 
@@ -132,16 +132,20 @@ For more information about expressing your app’s data as entities, see [`Integ
 
 ## See Also
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 - [Parameter resolution](parameter-resolution.md)
   Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
 - [Resolvers](resolvers.md)
   Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+- [Common data types](common-data-types.md)
+  Specify common types that your app supports, including currencies, files, and contacts.
+- [App entities](app-entities.md)
+  Make core types or concepts discoverable to the system by declaring them as app entities.
+- [Static parameter types](app-enums.md)
+  Types that represent an enumerable list of static parameter values.
+- [Entity queries](entity-queries.md)
+  Help the system find the entities your app defines and use them to resolve parameters.
+- [Property comparators](property-comparators.md)
+  Specify the type of comparison to perform during a property-matched query.
 
 
 ---

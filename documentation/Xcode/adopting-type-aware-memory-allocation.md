@@ -18,7 +18,7 @@ Xcode automatically configures your target to use the type-aware memory allocato
 
 To enable the type-aware memory allocator without adding the Enhanced Security capability, in your target:
 
-- Add the [`Hardened Heap`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.hardened-heap) entitlement with the value `YES`
+- Add the [`com.apple.security.hardened-process.hardened-heap`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.hardened-heap) entitlement with the value `YES`
 - Set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting with the value `YES`
 - Set the `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` build setting with the value to `YES`
 

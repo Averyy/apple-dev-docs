@@ -114,6 +114,8 @@ entity.spatialAudio?.distanceAttenuation = .rolloff(factor: 2)
 
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
+- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
+  Create and adjust spatial audio in visionOS with RealityKit.
 - [struct AmbientAudioComponent](ambientaudiocomponent.md)
   A component that configures the ambient rendering of sounds from an entity.
 - [struct ChannelAudioComponent](channelaudiocomponent.md)

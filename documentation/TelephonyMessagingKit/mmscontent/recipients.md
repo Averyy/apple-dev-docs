@@ -8,7 +8,6 @@ The recipients of the MMS message, as an array of MMS handles.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

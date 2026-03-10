@@ -8,7 +8,6 @@ The operation isn’t supported.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

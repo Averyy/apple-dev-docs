@@ -15,6 +15,10 @@ An icon that represents the app that sent the notification.
 let sourceIcon: AccessoryNotification.File?
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [let attachments: [AccessoryNotification.File]](accessorynotification/attachments.md)

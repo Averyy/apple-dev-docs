@@ -22,11 +22,6 @@ protocol Executor : AnyObject, Sendable
 
 ## Topics
 
-### Instance Properties
-- [var asSchedulingExecutor: (any SchedulingExecutor)?](executor/asschedulingexecutor.md)
-  Return this executable as a SchedulingExecutor, or nil if that is unsupported.
-- [var isMainExecutor: Bool](executor/ismainexecutor.md)
-  `true` if this is the main executor.
 ### Instance Methods
 - [func enqueue(consuming Job)](executor/enqueue(_:)-2sc5t.md)
 - [func enqueue(consuming ExecutorJob)](executor/enqueue(_:)-55qpq.md)
@@ -38,7 +33,6 @@ protocol Executor : AnyObject, Sendable
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 ### Inherited By
-- [SchedulingExecutor](schedulingexecutor.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
 
@@ -50,7 +44,6 @@ protocol Executor : AnyObject, Sendable
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

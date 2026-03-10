@@ -8,7 +8,6 @@ Creates a file transfer content instance with the given metadata.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -220,8 +220,6 @@ To validate your work, follow the process described in [`Build and validate`](em
   Integrate package dependencies to share code between projects, or leverage code from other developers.
 - [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
-- [Setting up a watchOS project](../WatchKit/setting-up-a-watchos-project.md)
-  Create a new watchOS project or add a watch target to an existing iOS project.
 
 
 ---

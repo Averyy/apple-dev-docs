@@ -28,7 +28,7 @@ An `NSPersonNameComponents` object encapsulates the components of a person’s n
 
 `NSPersonNameComponents` objects can be used by an instance of [`PersonNameComponentsFormatter`](personnamecomponentsformatter.md) to create string representations suitable for display in the current locale.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ##### Working with Names
 

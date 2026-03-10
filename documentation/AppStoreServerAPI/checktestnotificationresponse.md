@@ -6,7 +6,7 @@
 A response that contains the contents of the App Store server’s test notification and the result from your server.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

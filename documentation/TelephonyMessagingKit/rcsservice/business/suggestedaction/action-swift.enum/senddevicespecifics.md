@@ -8,7 +8,6 @@ Request specifics about the user’s device.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

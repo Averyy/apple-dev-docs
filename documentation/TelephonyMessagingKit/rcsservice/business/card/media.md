@@ -8,7 +8,6 @@ Structure containing information about media in a card.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

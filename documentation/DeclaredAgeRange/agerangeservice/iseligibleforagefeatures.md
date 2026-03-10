@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: property
 
-A boolean value that indicates whether an adult, teen, or child is eligible for age gated features.
+A Boolean value that indicates whether an adult, teen, or child is eligible for age-gated features.
 
 **Availability**:
 - iOS 26.2+
@@ -19,15 +19,13 @@ var isEligibleForAgeFeatures: Bool { get async throws }
 
 #### Return Value
 
-`true` if your app is eligible for age gated features; otherwise, `false`.
+`true` if your app is eligible for age-gated features; otherwise, `false`.
 
 #### Discussion
 
-Use this property to determine whether a person using your app is in an applicable region that requires additional age-related obligations for when you distribute apps on the App Store. For more information, refer to [`Next steps for apps distributed in Texas`](https://developer.apple.comhttps://developer.apple.com/news/?id=2ezb6jhj).
+Before implementing age-gated features in your app, check whether the person using your app is in a region that requires Age Assurance. For more information, refer to [`Next steps for apps distributed in Texas`](https://developer.apple.comhttps://developer.apple.com/news/?id=2ezb6jhj). Use [`isEligibleForAgeFeatures`](AgeRangeService/isEligibleForAgeFeatures.md) to determine whether associated laws or regulations may apply to your app based on the person’s location and account settings. This property returns `true` when your app needs to support Age Assurance for the current user. In macOS, [`isEligibleForAgeFeatures`](AgeRangeService/isEligibleForAgeFeatures.md) returns `false` because the system doesn’t require Age Assurance for the person or device. However, you can still call `requestAgeRange` in macOS to get the declared age range.
 
-This flag returns `true` on iOS and iPadOS based on a person’s eligibility and always returns `false` on macOS.
-
-> **Note**: [`AgeRangeService.Error.notAvailable`](agerangeservice/error/notavailable.md) if the age gate service is unavailable.
+> **Note**: [`AgeRangeService.Error.notAvailable`](agerangeservice/error/notavailable.md) if it’s unavailable.
 
 
 ---

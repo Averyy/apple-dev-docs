@@ -20,14 +20,17 @@ Creates a tensor that shares storage with this buffer.
 func makeTensor(descriptor: MTLTensorDescriptor, offset: Int) throws -> any MTLTensor
 ```
 
+#### Return Value
+
+The created [`MTLTensor`](mtltensor.md) instance, or `nil` if the function failed.
+
 #### Discussion
 
-If the descriptor specifies `MTLTensorUsageMachineLearning` usage, you need to observe the following restrictions:
+`offset` must be 0 when [`usage`](mtltensordescriptor/usage.md) contains [`machineLearning`](mtltensorusage/machinelearning.md).
 
-- pass in `0` for the `offset` parameter
-- set the element stride the descriptor to `1`
-- ensure that number of bytes per row is a multiple of `64`
-- for dimensions greater than `2`, make sure `strides[dim] = strides[dim -1] * dimensions[dim - 1]`
+When [`dataType`](mtltensordescriptor/datatype.md) is a sub-byte [`MTLTensorDataType`](mtltensordatatype.md), `offset` must be aligned to 128 bytes. Although only required for sub-byte types, applying 128-byte alignment for all [`MTLTensorDataType`](mtltensordatatype.md) values improves performance.
+
+See [`MTLTensorDescriptor`](mtltensordescriptor.md) for more information.
 
 ## Parameters
 

@@ -5,12 +5,12 @@
 Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 11.0+
-- tvOS 13.0+
-- Xcode 14.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

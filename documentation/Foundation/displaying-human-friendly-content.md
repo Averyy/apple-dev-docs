@@ -15,6 +15,11 @@ Convert data into readable strings or Swift objects using formatters.
 
 > **Note**: This sample code project is associated with WWDC20 session [`10160: Formatters: Make Data Human-Friendly`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10160/)
 
+## See Also
+
+- [Building a Localized Food-Ordering App](building-a-localized-food-ordering-app.md)
+  Format, style, and localize your app’s text for use in multiple languages with string formatting, attributed strings, and automatic grammar agreement.
+
 
 ---
 

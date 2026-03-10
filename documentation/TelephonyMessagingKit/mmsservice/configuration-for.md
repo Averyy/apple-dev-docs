@@ -8,7 +8,6 @@ Retrieves the MMS configuration for the carrier.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

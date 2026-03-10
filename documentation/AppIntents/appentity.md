@@ -24,9 +24,9 @@ protocol AppEntity : AppValue, DisplayRepresentable, Identifiable where Self == 
 
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
 - [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 
 #### Overview
 
@@ -94,6 +94,9 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 - [associatedtype DefaultQuery : EntityQuery](appentity/defaultquery-swift.associatedtype.md)
 - [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](appentity/defaultresolverspecification-2dpf2.md)
 - [static var defaultResolverSpecification: some ResolverSpecification](appentity/defaultresolverspecification-589eq.md)
+### URL representation
+- [struct EntityURLRepresentation](entityurlrepresentation.md)
+  The URL representation of an app entity.
 ### Default Implementations
 - [Identifiable Implementations](appentity/identifiable-implementations.md)
 
@@ -120,8 +123,6 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 
 ## See Also
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 - [protocol FileEntity](fileentity.md)
   An entity that refers to a document or other file.
 - [protocol IndexedEntity](indexedentity.md)
@@ -132,6 +133,7 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
   An entity that will only ever have one value, such as global settings.
 - [protocol URLRepresentableEntity](urlrepresentableentity.md)
   An app entity with a URL representation.
+- [macro UnionValue()](unionvalue().md)
 
 
 ---

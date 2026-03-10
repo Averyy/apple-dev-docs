@@ -99,7 +99,7 @@ The app goes to the background when it is running on screen in the [`WKApplicati
 1. *The system* calls the extension delegate’s [`applicationWillResignActive()`](wkextensiondelegate/applicationwillresignactive().md) method.
 2. *The app* transitions to the [`WKApplicationState.inactive`](wkapplicationstate/inactive.md) state, calls the view’s [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) method, and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.inactive`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/inactive). The app may continue to run in an inactive state as long as the app is the frontmost app. For more information, see [`Taking advantage of frontmost app state`](taking-advantage-of-frontmost-app-state.md).
 3. *The app* transitions to the [`WKApplicationState.background`](wkapplicationstate/background.md) state. *The system* calls the extension delegate’s [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.background`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/background).
-4. *The system* suspends the app.****
+4. *The system* suspends the app.
 
 The app resumes when the app is running in the background, or is suspended, and the user activates the app, for example, by tapping its complication on the active watch face.
 

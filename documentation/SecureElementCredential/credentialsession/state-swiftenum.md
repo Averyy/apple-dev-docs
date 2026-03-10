@@ -17,7 +17,7 @@ enum State
 
 ## Topics
 
-### Card session states
+### Credential session states
 - [CredentialSession.State.management](credentialsession/state-swift.enum/management.md)
   The state for managing the credential session.
 - [case wired(credential: CredentialSession.Credential)](credentialsession/state-swift.enum/wired(credential:).md)

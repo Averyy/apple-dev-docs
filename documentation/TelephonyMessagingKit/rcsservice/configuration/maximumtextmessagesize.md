@@ -8,7 +8,6 @@ The maximum size of a text chat message that a person can enter in a 1-to-1 chat
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

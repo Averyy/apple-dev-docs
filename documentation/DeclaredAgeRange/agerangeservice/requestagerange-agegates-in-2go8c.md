@@ -23,19 +23,19 @@ An [`AgeRangeService.Response`](agerangeservice/response.md) value containing ei
 
 #### Discussion
 
-Use [`requestAgeRange(ageGates:_:_:in:)`](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md) to implement age-range based restrictions to your app’s content. People who meet the minimum age requirements that you specify can access age appropriate features and content.
+Use [`requestAgeRange(ageGates:_:_:in:)`](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md) to implement age-appropriate experiences in your app. People who meet the minimum age requirements that you specify can access age-appropriate features and content.
 
 This method presents a system-provided interface that explains what information a person shares with your app and allows people to make an informed decision about providing their age range information to your app.
 
-The system may return age ranges that override the age gates you specify based on the person’s location and applicable regulations. When geo-specific ranges are required, the returned age range reflects regulatory requirements rather than the bounds of your age gates.
+The system may return age ranges that override the age gates you specify based on the person’s location and applicable regulations. When local regulations require specific age gates, the returned age range reflects regulatory requirements rather than the bounds of your age gates.
 
 > **Note**: An [`AgeRangeService.Error`](agerangeservice/error.md) when the request fails.
 
 ## Parameters
 
-- `threshold1`: The primary minimum age requirement for your app.
-- `threshold2`: An optional second age threshold for additional content tiers.
-- `threshold3`: An optional third age threshold for further content differentiation.
+- `threshold1`: The primary age threshold for your app.
+- `threshold2`: An optional second age threshold that creates an additional age range.
+- `threshold3`: An optional third age threshold that creates a final age range.
 - `viewController`: The view controller that anchors the system UI presentation. The system UI appears modally over this view controller.
 
 ## See Also

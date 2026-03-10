@@ -8,7 +8,6 @@ Enumeration representing the type of name specified by the business.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -74,15 +74,6 @@ enum WhiteboardColor: String, AppEnum {
 
 For a list of available app enums in the `.whiteboard` domain, refer to [`AssistantSchemas.WhiteboardEnum`](assistantschemas/whiteboardenum.md).
 
-## See Also
-
-- [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
-  Assistant schema conformance for app intents that offer whiteboard functionality.
-- [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
-  Assistant schema conformance for app entities that describe data for whiteboard functionality.
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
-  Assistant schema conformance for whiteboard types.
-
 
 ---
 

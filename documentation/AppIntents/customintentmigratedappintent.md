@@ -34,6 +34,11 @@ protocol CustomIntentMigratedAppIntent : AppIntent
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+  Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
+
 
 ---
 

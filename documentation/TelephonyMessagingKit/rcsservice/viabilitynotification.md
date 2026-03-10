@@ -8,7 +8,6 @@ A notification that indicates whether RCS is viable for a given cellular service
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

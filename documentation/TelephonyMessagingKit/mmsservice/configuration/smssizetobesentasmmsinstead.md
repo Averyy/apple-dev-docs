@@ -8,7 +8,6 @@ The maximum size of an SMS message, beyond which the client needs to use MMS ins
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

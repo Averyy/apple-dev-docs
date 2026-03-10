@@ -16,6 +16,10 @@ Notifies the system that alerting for a notification failed.
 func fail(_ error: any Error)
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## Parameters
 
 - `error`: The error that caused coordination to fail.

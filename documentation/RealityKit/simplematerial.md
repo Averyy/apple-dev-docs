@@ -90,6 +90,8 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 
 ## See Also
 
+- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 - [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
   The type used to represent base color.
 - [SimpleMaterial.Texture](simplematerial/texture.md)

@@ -23,6 +23,8 @@ typealias Texture = MaterialParameters.Texture
 
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.
 - [PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.struct.md)
@@ -49,8 +51,6 @@ typealias Texture = MaterialParameters.Texture
   An object that defines the degree to which an entity reflects light to create stretched or oblong highlights.
 - [PhysicallyBasedMaterial.AnisotropyAngle](physicallybasedmaterial/anisotropyangle-swift.struct.md)
   An object used to define a material’s anisotropy angle.
-- [PhysicallyBasedMaterial.EmissiveColor](physicallybasedmaterial/emissivecolor-swift.struct.md)
-  An object that defines the color of the light an entity emits.
 
 
 ---

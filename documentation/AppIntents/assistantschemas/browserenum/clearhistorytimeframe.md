@@ -50,6 +50,11 @@ enum ClearHistoryTimeFrame: AppEnum {
 
 For more information about the `.browser` app intent domain, see [`Making browser actions available to Siri and Apple Intelligence`](making-browser-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
 
+## See Also
+
+- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
+  Assistant schema conformance for types you use for web browsing functionality.
+
 
 ---
 

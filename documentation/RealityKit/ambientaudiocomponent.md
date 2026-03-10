@@ -64,6 +64,8 @@ Ambient audio sources are well suited to play back multichannel content which ca
 
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
+- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
+  Create and adjust spatial audio in visionOS with RealityKit.
 - [struct SpatialAudioComponent](spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.
 - [struct ChannelAudioComponent](channelaudiocomponent.md)

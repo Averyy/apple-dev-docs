@@ -8,7 +8,6 @@ An asynchronous sequence of service viability notifications produced by this ser
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

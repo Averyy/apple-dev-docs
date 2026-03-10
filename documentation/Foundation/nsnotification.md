@@ -28,7 +28,7 @@ A notification contains a name, an object, and an optional dictionary, and is br
 
 You don’t usually create your own notifications directly, but instead call the [`NotificationCenter`](notificationcenter.md) methods [`post(name:object:)`](notificationcenter/post(name:object:).md) and [`post(name:object:userInfo:)`](notificationcenter/post(name:object:userinfo:).md).
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Notification`](notification.md) structure, which bridges to the [`NSNotification`](nsnotification.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Notification`](notification.md) structure, which bridges to the [`NSNotification`](nsnotification.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ##### Object Comparison
 

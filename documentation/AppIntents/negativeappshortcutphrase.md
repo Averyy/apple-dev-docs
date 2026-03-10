@@ -44,8 +44,11 @@ Each negative phrase will be used to populate an app-level negative training set
 
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [struct AppShortcutPhrase](appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
+- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
+  Dynamic values you can include in the spoken phrases that run your shortcut.
 - [struct NegativeAppShortcutPhrases](negativeappshortcutphrases.md)
   This is a set of negative phrases, which will all be added to the app-level negative training set. All the training data specified here, will be used to completely bypass your app
 - [NSAppIconActionTintColorName](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconActionTintColorName.md)

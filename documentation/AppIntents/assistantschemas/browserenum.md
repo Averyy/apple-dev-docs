@@ -40,12 +40,8 @@ protocol BrowserEnum : AssistantSchemas.Model
 
 ## See Also
 
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s web browsing functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
-  Assistant schema conformance for app intents that offer web browsing functionality.
-- [AssistantSchemas.BrowserEntity](assistantschemas/browserentity.md)
-  Assistant schema conformance for app entities that describe data for web browsing functionality.
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](assistantschemas/browserenum/clearhistorytimeframe.md)
+  The time frame for clearing the browser history
 
 
 ---

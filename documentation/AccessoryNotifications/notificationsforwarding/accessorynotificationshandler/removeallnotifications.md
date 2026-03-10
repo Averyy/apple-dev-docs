@@ -16,6 +16,10 @@ Removes all notifications from the user interface.
 func removeAllNotifications()
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [func remove(notification: AccessoryNotification)](notificationsforwarding/accessorynotificationshandler/remove(notification:).md)

@@ -5,11 +5,11 @@
 Use advanced Metal features such as indirect command buffers, sparse textures, and variable rate rasterization to implement complex rendering techniques.
 
 **Availability**:
-- iOS 14.1+
-- iPadOS 14.1+
-- Mac Catalyst 14.1+
-- macOS 11.0+
-- Xcode 13.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

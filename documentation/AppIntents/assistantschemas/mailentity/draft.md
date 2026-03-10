@@ -66,6 +66,17 @@ struct MailDraftEntity: AppEntity {
 
 For more information about the `.mail` app intent domain, see [`Making email actions available to Siri and Apple Intelligence`](making-email-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
 
+## See Also
+
+- [var account: some AssistantSchemas.Entity](assistantschemas/mailentity/account.md)
+  The app entity describes an email account.
+- [var mailbox: some AssistantSchemas.Entity](assistantschemas/mailentity/mailbox.md)
+  The app entity describes an email mailbox.
+- [var message: some AssistantSchemas.Entity](assistantschemas/mailentity/message.md)
+  The app entity describes an email message.
+- [AssistantSchemas.MailEntity](assistantschemas/mailentity.md)
+  Assistant schema conformance for app entities that describe email.
+
 
 ---
 

@@ -6,7 +6,7 @@
 An error that indicates the transaction identifier represents an unsupported In-App Purchase type.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.11+
 
 ## Declaration
 

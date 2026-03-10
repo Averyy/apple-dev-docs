@@ -35,8 +35,8 @@ Functionality provided by `AssistantIntent` and the [`activate`](assistantschema
 
 ## See Also
 
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
-  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
+- [var activate: some AssistantSchemas.Intent](assistantschemas/assistantintent/activate.md)
+  The app intent conforms to the schema for launching your voice-based conversational app from the side button on iPhone in Japan.
 
 
 ---

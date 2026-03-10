@@ -88,6 +88,7 @@ The `PKPassLibrary` isn’t thread-safe. Use instances of this class only on a s
 ### Instance Methods
 - [func authorizationStatus(for: PKPassLibrary.Capability) -> PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus(for:).md)
 - [func encryptedServiceProviderData(for: PKSecureElementPass, completion: ([AnyHashable : Any]?, (any Error)?) -> Void)](pkpasslibrary/encryptedserviceproviderdata(for:completion:).md)
+- [func openPaymentSetup(merchantIdentifier: String)](pkpasslibrary/openpaymentsetup(merchantidentifier:).md)
 - [func passes(withReaderIdentifier: String) -> Set<PKSecureElementPass>](pkpasslibrary/passes(withreaderidentifier:).md)
 - [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](pkpasslibrary/requestauthorization(for:completion:).md)
 ### Enumerations

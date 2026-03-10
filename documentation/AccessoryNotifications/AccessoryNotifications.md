@@ -33,6 +33,9 @@ Your accessory receives the encrypted notification data and implements [`HPKE (R
 
 ## Topics
 
+### Essentials
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage notifications for your accessory.
 ### Authorization
 - [class AccessoryNotificationCenter](accessorynotificationcenter.md)
   A class that enables an app to request permission for notification forwarding.

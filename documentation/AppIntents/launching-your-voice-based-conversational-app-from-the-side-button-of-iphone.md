@@ -40,14 +40,22 @@ If you’re new to the AppIntents framework, refer to [`Creating your first app 
 
 ## See Also
 
+- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-  Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
-- [Focus](focus.md)
-  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
+  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
+- [Siri](siri.md)
+  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
+- [Visual intelligence](visual-intelligence.md)
+  Integrate your app with visual intelligence and include your content in its search results.
+- [App Shortcuts](app-shortcuts.md)
+  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
+  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
 - [Action button on iPhone and Apple Watch](actionbutton.md)
   Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
-- [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
-  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [Focus](focus.md)
+  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
 
 ---

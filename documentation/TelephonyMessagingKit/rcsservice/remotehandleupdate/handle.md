@@ -8,7 +8,6 @@ The old value of the handle that updated.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

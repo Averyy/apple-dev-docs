@@ -8,7 +8,6 @@ The render disposition, directing the receiving app to render the file automatic
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

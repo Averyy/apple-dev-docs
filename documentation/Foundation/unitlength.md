@@ -52,7 +52,7 @@ The [`UnitLength`](unitlength.md) class defines its [`baseUnit()`](dimension/bas
 | Nautical Miles | [`nauticalMiles`](unitlength/nauticalmiles.md) | NM | `1852` |
 | Fathoms | [`fathoms`](unitlength/fathoms.md) | ftm | `1.8288` |
 | Furlongs | [`furlongs`](unitlength/furlongs.md) | fur | `201.168` |
-| Astronomical Units | [`astronomicalUnits`](unitlength/astronomicalunits.md) | ua | `1.496e+11` |
+| Astronomical Units | [`astronomicalUnits`](unitlength/astronomicalunits.md) | au | `1.496e+11` |
 | Parsecs | [`parsecs`](unitlength/parsecs.md) | pc | `3.086e+16` |
 
 ## Topics

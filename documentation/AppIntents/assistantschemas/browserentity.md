@@ -44,12 +44,12 @@ protocol BrowserEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s web browsing functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
-  Assistant schema conformance for app intents that offer web browsing functionality.
-- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
-  Assistant schema conformance for types you use for web browsing functionality.
+- [var bookmark: some AssistantSchemas.Entity](assistantschemas/browserentity/bookmark.md)
+  The app entity describes a bookmark.
+- [var tab: some AssistantSchemas.Entity](assistantschemas/browserentity/tab.md)
+  The app entity describes a browser tab.
+- [var window: some AssistantSchemas.Entity](assistantschemas/browserentity/window.md)
+  The app entity describes a browser window.
 
 
 ---

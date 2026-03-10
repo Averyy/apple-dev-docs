@@ -57,7 +57,7 @@ In a UIKit app, use the following approach:
   An enumeration of possible states of a presentment intent assertion.
 ### Relinquishing presentment intent
 - [func relinquish() async throws](credentialsession/presentmentintentassertion/relinquish.md)
-  End the presentment intent assertion.
+  Ends the presentment intent assertion.
 
 ## See Also
 

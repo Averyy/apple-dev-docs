@@ -8,7 +8,6 @@ The Short Message Service (SMS) service associated with this session.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

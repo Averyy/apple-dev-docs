@@ -5,11 +5,11 @@
 Implement ray traced rendering using GPU-based parallel processing.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- Xcode 15.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

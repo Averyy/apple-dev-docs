@@ -8,7 +8,6 @@ Enumeration that represents a height to apply when opening a URL.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

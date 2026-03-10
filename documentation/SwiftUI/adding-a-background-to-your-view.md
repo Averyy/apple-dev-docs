@@ -6,11 +6,11 @@ Compose a background behind your view and extend it beyond the safe area insets.
 
 #### Overview
 
-You can add a view as a background with the [`background(_:alignment:)`](view/background(_:alignment:).md) view modifier. To add a background under multiple views, or to have a background larger than an existing view, you can layer the views by placing them within a [`ZStack`](zstack.md), and place the view you want to be in the background at the bottom of the view stack. You can specify that a background view should ignore the safe area insets to extend the background to some or all edges.
+You can add a view as a background with the [`background(alignment:content:)`](view/background(alignment:content:).md) view modifier. To add a background under multiple views, or to have a background larger than an existing view, you can layer the views by placing them within a [`ZStack`](zstack.md), and place the view you want to be in the background at the bottom of the view stack. You can specify that a background view should ignore the safe area insets to extend the background to some or all edges.
 
 ##### Add a Background
 
-If your design calls for a background, you can use the [`background(_:alignment:)`](view/background(_:alignment:).md) modifier to add it underneath an existing view. The following example adds a gradient to the vertical stack using the [`background(_:alignment:)`](view/background(_:alignment:).md) view modifier:
+If your design calls for a background, you can use the [`background(alignment:content:)`](view/background(alignment:content:).md) modifier to add it underneath an existing view. The following example adds a gradient to the vertical stack using the [`background(alignment:content:)`](view/background(alignment:content:).md) view modifier:
 
 ```swift
 let backgroundGradient = LinearGradient(
@@ -34,12 +34,14 @@ struct SignInView: View {
             }
             .padding()
         }
-        .background(backgroundGradient)
+        .background {
+            backgroundGradient
+        }
     }
 }
 ```
 
-The [`background(_:alignment:)`](view/background(_:alignment:).md) view modifier constrains the size of the background view to be the same size as the view to which it’s attached:
+The [`background(alignment:content:)`](view/background(alignment:content:).md) view modifier constrains the size of the background view to be the same size as the view to which it’s attached:
 
 ![A screenshot of an iPhone showing a gradient background for the welcome title, text field, and button in the horizontal stack, not filling in the rest of the phone’s background.](https://docs-assets.developer.apple.com/published/0bf57a769f3fffece6ad3746e6189c9b/Adding-a-Background-to-Your-View-1%402x.png)
 

@@ -47,6 +47,8 @@ struct Issue
   Record a new issue when a running test unexpectedly catches an error.
 - [static func record(Comment?, severity: Issue.Severity, sourceLocation: SourceLocation) -> Issue](issue/record(_:severity:sourcelocation:).md)
   Records an issue that a test encounters while it’s running.
+- [static func record(Comment?, sourceLocation: SourceLocation) -> Issue](issue/record(_:sourcelocation:).md)
+  Records an issue that a test encounters while it’s running.
 ### Enumerations
 - [Issue.Kind](issue/kind-swift.enum.md)
   Kinds of issues which may be recorded.

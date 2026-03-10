@@ -8,7 +8,6 @@ Array of category names which can be used to filter a list of businesses.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

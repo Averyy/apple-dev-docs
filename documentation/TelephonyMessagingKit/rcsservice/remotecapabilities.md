@@ -8,7 +8,6 @@ Structure representing the capabilities of a remote handle.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -57,6 +57,8 @@ Requires Xcode 16.2, iOS 18, and an iOS device with an A9 or later processor. AR
 
 - [Simulating physics with collisions in your visionOS app](simulating-physics-with-collisions-in-your-visionos-app.md)
   Create entities that behave and react like physical objects in a RealityKit view.
+- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+  Display an interactive car model using gestures in a reality view.
 - [struct CollisionComponent](collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.
 - [CollisionComponent.Mode](collisioncomponent/mode-swift.enum.md)

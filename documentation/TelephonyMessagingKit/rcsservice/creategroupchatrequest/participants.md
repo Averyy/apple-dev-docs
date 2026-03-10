@@ -8,7 +8,6 @@ List of participants in the group chat.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

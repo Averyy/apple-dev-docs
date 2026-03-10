@@ -8,7 +8,6 @@ A Boolean value that indicates whether the handle is a business handle.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

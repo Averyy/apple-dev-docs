@@ -30,9 +30,9 @@ enum MTLTensorDataType
 - [MTLTensorDataType.int4](mtltensordatatype/int4.md)
 - [MTLTensorDataType.int8](mtltensordatatype/int8.md)
 - [MTLTensorDataType.none](mtltensordatatype/none.md)
-- [MTLTensorDataType.uInt4](mtltensordatatype/uint4.md)
 - [MTLTensorDataType.uint16](mtltensordatatype/uint16.md)
 - [MTLTensorDataType.uint32](mtltensordatatype/uint32.md)
+- [MTLTensorDataType.uint4](mtltensordatatype/uint4.md)
 - [MTLTensorDataType.uint8](mtltensordatatype/uint8.md)
 ### Initializers
 - [init?(rawValue: Int)](mtltensordatatype/init(rawvalue:).md)

@@ -40,6 +40,9 @@ You use a session configuration to determine any user interface limits the vehic
   A bit mask value that indicates the user interface limits.
 - [struct CPLimitableUserInterface](cplimitableuserinterface.md)
   The types of limitable user interface elements.
+### Instance Properties
+- [var supportsVideoPlayback: Bool](cpsessionconfiguration/supportsvideoplayback.md)
+  The connected CarPlay system supports video playback.
 
 ## Relationships
 

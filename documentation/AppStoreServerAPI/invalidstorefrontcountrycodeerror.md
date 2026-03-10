@@ -6,7 +6,7 @@
 An error that indicates a storefront code is invalid.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.7+
 
 ## Declaration
 

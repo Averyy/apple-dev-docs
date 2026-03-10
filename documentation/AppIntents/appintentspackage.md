@@ -49,15 +49,12 @@ The app intents package `MyFrameworkPackage` in the example above doesn’t depe
 
 ## See Also
 
-- [struct IntentDescription](intentdescription.md)
-  The human-readable description and metadata for an app intent.
-- [struct IntentDialog](intentdialog.md)
-  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [struct IntentDeprecation](intentdeprecation.md)
-- [class IntentProjection](intentprojection.md)
-  Projections for an app intent that returns non-optional values for parameters.
-- [struct IntentSystemContext](intentsystemcontext.md)
-  Information that the system makes available to an app intent while it performs its action.
+- [class AppDependencyManager](appdependencymanager.md)
+  An object that manages the registration and initialization of an app intent’s dependencies.
+- [class AppDependency](appdependency.md)
+  A property wrapper that resolves a registered dependency at runtime.
+- [protocol AppIntentsExtension](appintentsextension.md)
+  An interface for managing an extension’s configuration.
 
 
 ---

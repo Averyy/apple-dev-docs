@@ -8,7 +8,6 @@ Suggested action to open a URL.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

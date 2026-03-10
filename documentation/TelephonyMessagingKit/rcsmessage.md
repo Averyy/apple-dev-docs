@@ -8,7 +8,6 @@ A structure that contains an RCS message’s content and metadata.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

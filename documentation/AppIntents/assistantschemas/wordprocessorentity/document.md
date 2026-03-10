@@ -52,6 +52,15 @@ struct WordProcessorDocumentEntity: AppEntity {
 }
 ```
 
+## See Also
+
+- [var page: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/page.md)
+  The app entity describes a page in a text document.
+- [var template: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/template.md)
+  The app entity describes a text document template.
+- [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
+  Assistant schema conformance for app entities that describe text documents.
+
 
 ---
 

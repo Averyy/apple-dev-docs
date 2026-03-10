@@ -8,7 +8,6 @@ Compose a draft message with a media recording.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

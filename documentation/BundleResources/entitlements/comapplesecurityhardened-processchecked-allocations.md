@@ -1,4 +1,4 @@
-# Enable Hardware Memory Tagging
+# com.apple.security.hardened-process.checked-allocations
 
 **Framework**: Bundle Resources  
 **Kind**: typealias
@@ -23,13 +23,18 @@ If your code stores data in those bits of pointers, store than data elsewhere to
 
 For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
 
+Hardware memory tagging and other memory-related features have dependencies on specific keys. If you are manually adding entitlements, be sure to add all necessary keys.
+
+> **Note**: This entitlement requires the following entitlements: - [`com.apple.security.hardened-process`](entitlements/com.apple.security.hardened-process.md)
+- [`com.apple.security.hardened-process.enhanced-security-version-string`](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
+
 ## See Also
 
-- [Enable Soft Mode for Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
+- [com.apple.security.hardened-process.checked-allocations.soft-mode](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
   A Boolean value that indicates whether to log memory-tagging faults as a simulated crash, instead of terminating the process.
-- [Memory Tag Pure Data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
+- [com.apple.security.hardened-process.checked-allocations.enable-pure-data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
   A Boolean value that indicates whether to tag memory that contains only data.
-- [Prevent Receiving Tagged Memory](entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md)
+- [com.apple.security.hardened-process.checked-allocations.no-tagged-receive](entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive.md)
   A Boolean value that indicates whether to prevent receiving tagged memory from other processes.
 
 

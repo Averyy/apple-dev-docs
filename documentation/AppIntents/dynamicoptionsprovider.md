@@ -79,6 +79,8 @@ struct CreateBook: AppIntent {
 
 - [protocol AppEnum](appenum.md)
   An interface to express that a custom type has a predefined, static set of valid values to display.
+- [class IntentProjection](intentprojection.md)
+  Projections for an app intent that returns non-optional values for parameters.
 
 
 ---

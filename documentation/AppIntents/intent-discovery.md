@@ -34,10 +34,14 @@ Donate intents only when someone uses your app’s interface directly. You don�
 
 ## See Also
 
-- [App intents](app-intents.md)
-  Define the custom actions your app exposes to the system, and incorporate support for existing SiriKit intents.
-- [App Shortcuts](app-shortcuts.md)
-  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
+  Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
+- [Making onscreen content available to Siri and Apple Intelligence](making-onscreen-content-available-to-siri-and-apple-intelligence.md)
+  Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
+- [App intent domains](app-intent-domains.md)
+  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 
 
 ---

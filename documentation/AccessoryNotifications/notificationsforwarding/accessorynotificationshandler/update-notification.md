@@ -16,6 +16,10 @@ Updates a notification with new content.
 func update(notification: AccessoryNotification)
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Discussion
 
 Accessories don’t need to alert the person for notification updates.

@@ -1,4 +1,4 @@
-# Prevent Receiving Tagged Memory
+# com.apple.security.hardened-process.checked-allocations.no-tagged-receive
 
 **Framework**: Bundle Resources  
 **Kind**: typealias
@@ -21,13 +21,17 @@ To enable this entitlement for your app or extension in Xcode, first add the Enh
 
 For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
 
+> **Note**: This entitlement requires the following entitlements: - [`com.apple.security.hardened-process`](entitlements/com.apple.security.hardened-process.md)
+- [`com.apple.security.hardened-process.enhanced-security-version-string`](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
+- [`com.apple.security.hardened-process.checked-allocations`](entitlements/com.apple.security.hardened-process.checked-allocations.md)
+
 ## See Also
 
-- [Enable Hardware Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.md)
+- [com.apple.security.hardened-process.checked-allocations](entitlements/com.apple.security.hardened-process.checked-allocations.md)
   A Boolean value that enables tagging of pointers and memory allocations.
-- [Enable Soft Mode for Memory Tagging](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
+- [com.apple.security.hardened-process.checked-allocations.soft-mode](entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode.md)
   A Boolean value that indicates whether to log memory-tagging faults as a simulated crash, instead of terminating the process.
-- [Memory Tag Pure Data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
+- [com.apple.security.hardened-process.checked-allocations.enable-pure-data](entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data.md)
   A Boolean value that indicates whether to tag memory that contains only data.
 
 

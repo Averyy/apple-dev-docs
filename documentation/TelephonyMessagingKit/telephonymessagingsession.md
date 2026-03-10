@@ -8,7 +8,6 @@ An object that coordinates interaction with the TelephonyMessagingKit framework.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

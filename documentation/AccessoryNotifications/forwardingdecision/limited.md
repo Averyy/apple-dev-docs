@@ -15,6 +15,10 @@ An option that indicates the person allows notifications from a selected subset 
 case limited
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [ForwardingDecision.allow](forwardingdecision/allow.md)

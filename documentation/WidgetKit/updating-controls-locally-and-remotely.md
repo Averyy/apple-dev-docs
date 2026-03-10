@@ -15,7 +15,7 @@ Reload controls when their state changes after someone interacts with them, such
 The following code shows reloading a garage door control toggle from within the app:
 
 ```swift
-func toggleGarageDoor {
+func toggleGarageDoor() {
 	//Open or close a garage door.
 	
 	ControlCenter.shared.reloadControls(ofKind: "com.example.myApp.garageDoorToggle")

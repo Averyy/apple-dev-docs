@@ -104,6 +104,10 @@ Create dynamic materials without Metal.
 
 ## See Also
 
+- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
+  Update the adjustable parameters of a 3D model in visionOS.
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+  Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

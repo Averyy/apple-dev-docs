@@ -33,7 +33,7 @@ On iPhone, the search field in the bottom toolbar can be configured to appear as
 NavigationStack {
     RecipeList()
         .searchable($searchText)
-        .searchToolbarBehavior(.minimized)
+        .searchToolbarBehavior(.minimize)
 }
 ```
 

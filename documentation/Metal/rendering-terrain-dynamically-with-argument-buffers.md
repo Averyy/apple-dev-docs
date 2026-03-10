@@ -5,11 +5,11 @@
 Use argument buffers to render terrain in real time with a GPU-driven pipeline.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.13+
-- Xcode 13.1+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

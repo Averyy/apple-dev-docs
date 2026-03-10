@@ -29,6 +29,15 @@ protocol AppIntentsExtension : AppExtension
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
 
+## See Also
+
+- [class AppDependencyManager](appdependencymanager.md)
+  An object that manages the registration and initialization of an app intent’s dependencies.
+- [class AppDependency](appdependency.md)
+  A property wrapper that resolves a registered dependency at runtime.
+- [protocol AppIntentsPackage](appintentspackage.md)
+  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
+
 
 ---
 

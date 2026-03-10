@@ -87,7 +87,7 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
   Synchronizes the volume with its underlying resource.
 - [enum FSSyncFlags](fssyncflags.md)
   Behavior flags for use with synchronization calls.
-### Inspecting volume properties
+### Inspecting required volume properties
 - [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/operations/supportedvolumecapabilities.md)
   A property that provides the supported capabilities of the volume.
 - [FSVolume.SupportedCapabilities](fsvolume/supportedcapabilities.md)
@@ -96,11 +96,13 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
   A property that provides up-to-date statistics of the volume.
 - [class FSStatFSResult](fsstatfsresult.md)
   A type used to report a volume’s statistics.
-### Instance Properties
-- [var enableOpenUnlinkEmulation: Bool](fsvolume/operations/enableopenunlinkemulation.md)
-  A property that allows the file system to use open-unlink emulation.
+### Inspecting optional volume properties
 - [var requestedMountOptions: FSVolume.MountOptions](fsvolume/operations/requestedmountoptions.md)
   A property that allows the file system to request for specific mount options from FSKit.
+- [FSVolume.MountOptions](fsvolume/mountoptions.md)
+  Mount options to be requested from FSKit using the `requestedMountOptions` property.
+- [var enableOpenUnlinkEmulation: Bool](fsvolume/operations/enableopenunlinkemulation.md)
+  A property that allows the file system to use open-unlink emulation.
 
 ## Relationships
 

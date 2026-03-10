@@ -5,11 +5,11 @@
 Implement a forward plus renderer using the latest features on Apple GPUs.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- Xcode 12.4+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

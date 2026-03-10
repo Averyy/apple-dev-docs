@@ -38,6 +38,10 @@ struct Descriptor
 
 ## See Also
 
+- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
+  Update the adjustable parameters of a 3D model in visionOS.
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+  Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)

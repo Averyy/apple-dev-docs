@@ -33,6 +33,7 @@ A message that tells people why the app is requesting access to the device’s c
 - [NSAudioCaptureUsageDescription](information-property-list/nsaudiocaptureusagedescription.md)
   A message that tells people why your app is requesting access to capture system audio on macOS.
 - [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
+  A message that tells people why the app is requesting access to the device’s main camera.
 - [NSMicrophoneUsageDescription](information-property-list/nsmicrophoneusagedescription.md)
   A message that tells people why the app is requesting access to the device’s microphone.
 

@@ -34,6 +34,11 @@ protocol VisualIntelligenceIntent : AssistantSchemas.Model
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
 
+## See Also
+
+- [var semanticContentSearch: some AssistantSchemas.Intent](assistantschemas/visualintelligenceintent/semanticcontentsearch.md)
+  The app intent conforms to the schema for visual search functionality.
+
 
 ---
 

@@ -5,12 +5,12 @@
 Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 12.0+
-- macOS 12.0+
-- tvOS 12.0+
-- Xcode 26.2+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

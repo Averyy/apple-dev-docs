@@ -1,4 +1,4 @@
 Completed scraping WatchKit!
-Total pages scraped: 725
+Total pages scraped: 724
 Pages skipped (unchanged): 1
 Pages failed: 0

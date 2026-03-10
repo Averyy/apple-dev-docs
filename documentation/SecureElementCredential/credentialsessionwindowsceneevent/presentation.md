@@ -3,7 +3,7 @@
 **Framework**: SecureElementCredential  
 **Kind**: case
 
-The user performs a gesture, such as double-pressing the side button, to present an NFC display.
+User has perform gesture on device to request for app presentation
 
 **Availability**:
 - iOS 17.4+
@@ -18,7 +18,7 @@ case presentation
 ## See Also
 
 - [CredentialSessionWindowSceneEvent.readerDetected](credentialsessionwindowsceneevent/readerdetected.md)
-  The eligible device detects the RF field of an NFC reader.
+  External NFC reader is detected, i.e. presence of a NFC field
 
 
 ---

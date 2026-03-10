@@ -23,7 +23,7 @@ var allowsCaptureOfClearKeyVideo: Bool { get set }
 
 #### Discussion
 
-When set to YES, and the video being played by AVPlayer is Clear Key Encrypted, Video Output can be captured. This applies to user functionality like Screenshots as well as APIs like AVPlayerItemVideoOutput. If NO, any capture of the video output of any encrypted content is blacked out. This property has no effect on DRM protected content e.g. FairPlay / Pastis encrypted content. Default is NO
+When set to YES, and the video being played by AVPlayer is Clear Key encrypted, allows video to be captured in screenshots and screen recordings, and via APIs like AVPlayerItemVideoOutput and ScreenCaptureKit. When NO, Clear Key encrypted video will not be included in such captured video. This property has no effect on content protected by FairPlay Streaming. Default is NO.
 
 
 ---

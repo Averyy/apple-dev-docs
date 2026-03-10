@@ -46,6 +46,11 @@ Each option includes display text and an optional style that influences its visu
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 
+## See Also
+
+- [struct ConfirmationConditions](confirmationconditions.md)
+  Conditions for a confirmation request.
+
 
 ---
 

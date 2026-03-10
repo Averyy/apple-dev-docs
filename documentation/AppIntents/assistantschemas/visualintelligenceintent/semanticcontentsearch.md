@@ -35,6 +35,11 @@ struct SemanticContentSearchIntent: AppIntent {
 }
 ```
 
+## See Also
+
+- [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
+  Assistant schema conformance for app intents that match visual intelligence intents.
+
 
 ---
 

@@ -79,7 +79,6 @@ The `Sendable` protocol inherits from `SendableMetatype`, so any generic type `T
 - [Error](error.md)
 - [Executor](executor.md)
 - [InstantProtocol](instantprotocol.md)
-- [SchedulingExecutor](schedulingexecutor.md)
 - [Sendable](sendable.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)

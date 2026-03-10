@@ -32,7 +32,7 @@ Mutable character sets are less efficient to use than immutable character sets. 
 
 `NSMutableCharacterSet` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableCharacterSet`](https://developer.apple.com/documentation/CoreFoundation/CFMutableCharacterSet). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`CharacterSet`](characterset.md) structure, which bridges to the [`NSMutableCharacterSet`](nsmutablecharacterset.md) class and its immutable superclass, [`NSCharacterSet`](nscharacterset.md).  For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`CharacterSet`](characterset.md) structure, which bridges to the [`NSMutableCharacterSet`](nsmutablecharacterset.md) class and its immutable superclass, [`NSCharacterSet`](nscharacterset.md).  For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

@@ -28,7 +28,7 @@ You can call this method in any session state. If successful, the state transiti
 - [func performWiredTransaction(using: CredentialSession.Credential, over: UIScene, instanceAID: Data) async throws](credentialsession/performwiredtransaction(using:over:instanceaid:).md)
   Enters wired mode with user authentication.
 - [func transceive(Data) async throws -> Data](credentialsession/transceive(_:).md)
-  Send a wired command Application Protocol Data Unit (APDU) to the credential.
+  Send a wired command Application Protocol Data Unit (APDU) to the credential to complete a transaction or a card content management task.
 - [func endWiredMode() async throws](credentialsession/endwiredmode.md)
   Ends wired mode and returns to management state.
 

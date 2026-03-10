@@ -24,11 +24,12 @@ protocol IndexedEntity : AppEntity
 
 ## Topics
 
-### Instance Properties
+### Specifying entity-related attributes
 - [var attributeSet: CSSearchableItemAttributeSet](indexedentity/attributeset.md)
-  Provide a customized attribute set for improved search accuracy.
+  The custom Spotlight attributes to associate with the entity.
 - [var defaultAttributeSet: CSSearchableItemAttributeSet](indexedentity/defaultattributeset.md)
-  Custom attributes that improve search accuracy in Spotlight.
+  The default Spotlight attributes to associate with an entity.
+### Hiding an entity from search results
 - [var hideInSpotlight: Bool](indexedentity/hideinspotlight.md)
   Controls whether this entity will be displayed in search results in the Spotlight UI.
 
@@ -48,8 +49,6 @@ protocol IndexedEntity : AppEntity
 
 ## See Also
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 - [protocol AppEntity](appentity.md)
   An interface for exposing a custom type or app-specific concept to system experiences like Siri and the Shortcuts app.
 - [protocol FileEntity](fileentity.md)
@@ -60,6 +59,7 @@ protocol IndexedEntity : AppEntity
   An entity that will only ever have one value, such as global settings.
 - [protocol URLRepresentableEntity](urlrepresentableentity.md)
   An app entity with a URL representation.
+- [macro UnionValue()](unionvalue().md)
 
 
 ---

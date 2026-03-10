@@ -6,7 +6,7 @@
 A Boolean value that indicates whether the App Store completed the request to extend a subscription renewal date to active subscribers.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.7+
 
 ## Declaration
 

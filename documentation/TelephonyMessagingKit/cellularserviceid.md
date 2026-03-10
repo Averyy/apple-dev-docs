@@ -8,7 +8,6 @@ An opaque identifier that represents the cellular service for which to provide o
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

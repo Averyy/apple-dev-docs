@@ -47,6 +47,10 @@ struct MeshAnchor
 
 - [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
+- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
+  Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+  Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [class SceneReconstructionProvider](scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
 

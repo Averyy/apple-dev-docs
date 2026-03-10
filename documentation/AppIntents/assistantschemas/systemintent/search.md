@@ -41,6 +41,11 @@ func perform() async throws -> some IntentResult {
 }
 ```
 
+## See Also
+
+- [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
+  Assistant schema conformance for types you use for system functionality.
+
 
 ---
 

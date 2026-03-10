@@ -21,7 +21,7 @@ func performWiredTransaction(using credential: CredentialSession.Credential, ove
 
 #### Discussion
 
-If the user chooses to authorize, the specified instance will first have an auth token delivered by the broker interface on the Secure Element as described in the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com) Secure Element documents. Otherwise the session throws `userDeclined`.
+If the person using the app chooses to authorize, the specified instance will first have an auth token delivered by the broker interface on the Secure Element as described in the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com) Secure Element documents. Otherwise the session throws `userDeclined`.
 
 Use the following flow to call this method:
 
@@ -32,7 +32,9 @@ Use the following flow to call this method:
 
 The credential session can be in any state when calling this method. If the call succeeds, the state transitions to [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md). The state transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 
-> ❗ **Important**: Calling this method may generate a billable event to the credential provider.
+An app extension calling this method needs to have the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement.
+
+> ❗ **Important**:  Calling this method may generate a billable event to the credential provider.
 
 ## Parameters
 
@@ -45,7 +47,7 @@ The credential session can be in any state when calling this method. If the call
 - [func enterWiredMode(using: CredentialSession.Credential) async throws](credentialsession/enterwiredmode(using:).md)
   Enters wired mode to perform maintenance operations with the given credential.
 - [func transceive(Data) async throws -> Data](credentialsession/transceive(_:).md)
-  Send a wired command Application Protocol Data Unit (APDU) to the credential.
+  Send a wired command Application Protocol Data Unit (APDU) to the credential to complete a transaction or a card content management task.
 - [func endWiredMode() async throws](credentialsession/endwiredmode.md)
   Ends wired mode and returns to management state.
 

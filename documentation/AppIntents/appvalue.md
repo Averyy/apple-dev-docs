@@ -52,12 +52,9 @@ This protocol serves as the base type for conceptual interfaces like [`AppEntity
 
 - [class EntityProperty](entityproperty.md)
   A property wrapper that exposes the associated property to the system.
+- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
 - [protocol AnyIntentValue](anyintentvalue.md)
   A type the system uses to access a parameter or property value.
-- [protocol AppEnum](appenum.md)
-  An interface to express that a custom type has a predefined, static set of valid values to display.
-- [protocol URLRepresentableEnum](urlrepresentableenum.md)
-  An app enum with a URL representation.
 
 
 ---

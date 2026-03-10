@@ -42,6 +42,10 @@ final class AppDependencyManager
 
 - [class AppDependency](appdependency.md)
   A property wrapper that resolves a registered dependency at runtime.
+- [protocol AppIntentsExtension](appintentsextension.md)
+  An interface for managing an extension’s configuration.
+- [protocol AppIntentsPackage](appintentspackage.md)
+  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
 
 
 ---

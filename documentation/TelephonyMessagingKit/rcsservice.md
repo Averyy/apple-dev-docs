@@ -8,7 +8,6 @@ A class that provides an interface for performing RCS operations.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

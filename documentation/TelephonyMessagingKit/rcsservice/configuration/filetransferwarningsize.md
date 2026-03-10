@@ -8,7 +8,6 @@ The size for issuing a warning about file transfers and Rich Card media objects.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

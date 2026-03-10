@@ -26,7 +26,7 @@ struct Date
 
 #### Overview
 
-A [`Date`](date.md) value encapsulate a single point in time, independent of any particular calendrical system or time zone. Date values represent a time interval relative to an absolute reference date.
+A [`Date`](date.md) value encapsulates a single point in time, independent of any particular calendrical system or time zone. Date values represent a time interval relative to an absolute reference date.
 
 The [`Date`](date.md) structure provides methods for comparing dates, calculating the time interval between two dates, and creating a new date from a time interval relative to another date. Use date values in conjunction with [`DateFormatter`](dateformatter.md) instances to create localized representations of dates and times and with [`Calendar`](calendar.md) instances to perform calendar arithmetic.
 

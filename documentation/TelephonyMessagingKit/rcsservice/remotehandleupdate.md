@@ -8,7 +8,6 @@ A structure that contains information about an update to a remote handle.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

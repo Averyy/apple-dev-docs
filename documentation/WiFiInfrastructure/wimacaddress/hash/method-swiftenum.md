@@ -19,7 +19,7 @@ enum Method
 
 ### Enumeration Cases
 - [WIMACAddress.Hash.Method.sha256](wimacaddress/hash/method-swift.enum/sha256.md)
-  Hash using `SHA256(macAddress, salt)`.
+  Hash using `SHA256(salt, macAddress)`.
 
 ## Relationships
 

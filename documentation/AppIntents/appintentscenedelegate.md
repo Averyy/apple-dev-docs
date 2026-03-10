@@ -41,6 +41,12 @@ func windowScene(_ scene: UIScene, willPerformAppIntent appIntent: any AppIntent
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [UISceneDelegate](../UIKit/UISceneDelegate.md)
 
+## See Also
+
+- [struct IntentModes](intentmodes.md)
+  A set of options that describe an app intent’s behavior.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+
 
 ---
 

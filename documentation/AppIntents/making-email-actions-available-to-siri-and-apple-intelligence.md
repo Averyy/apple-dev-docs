@@ -61,13 +61,6 @@ The assistant schema for the `MailDraftEntity` consists of the `.mail` domain an
 
 For a list of available app entity schemas in the `.mail` domain, see [`AssistantSchemas.MailEntity`](assistantschemas/mailentity.md).
 
-## See Also
-
-- [AssistantSchemas.MailIntent](assistantschemas/mailintent.md)
-  Assistant schema conformance for app intents that offer email functionality.
-- [AssistantSchemas.MailEntity](assistantschemas/mailentity.md)
-  Assistant schema conformance for app entities that describe email.
-
 
 ---
 

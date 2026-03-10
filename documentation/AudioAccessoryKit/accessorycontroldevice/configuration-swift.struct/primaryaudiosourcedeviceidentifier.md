@@ -17,7 +17,7 @@ var primaryAudioSourceDeviceIdentifier: Data?
 
 #### Discussion
 
-If the accessory is connected to only one device, set it as the primary device. If the accessory doesn’t support the `.audioSwitching` capability, the value of this property is always `nil`.
+If the accessory is connected to only one device, set it as the primary device. If the accessory doesn’t support the [`audioSwitching`](accessorycontroldevice/capabilities/audioswitching.md) capability, the value of this property is always `nil`.
 
 ## See Also
 

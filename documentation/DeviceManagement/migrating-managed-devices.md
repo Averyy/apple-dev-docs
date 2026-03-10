@@ -23,10 +23,14 @@ The Apple School Manager and Apple Business Manager migration process simplifies
 7. When the user triggers migration, or when the device reaches the deadline, it starts the migration flow, and displays progress as it unenrolls from the original service and reenrolls with the destination service.
 8. When migration is complete, the device is ready to use and the destination service manages it.
 
+#### Requirements
+
 The requirements for Apple School Manager and Apple Business Manager migration are:
 
-- The device needs to have iOS 26 or later, or macOS 26 or later.
-- The admin needs to assign the device to Apple School Manager or Apple Business Manager.
+- The device needs to run iOS 26 or later, or macOS 26 or later.
+- The device needs to be actively registered in Apple School Manager or Apple Business Manager and not be released.
+- If the device was added using Apple Configurator, it needs to be past the 30-days provisional enrollment period.
+- The device isn’t configured for Shared iPad or Return to Service (`is_multi_user` and `is_return_to_service` are not set to `true` in the [`Profile`](profile.md)).
 - The device needs to use Automated Device Enrollment.
 - An iOS device can migrate only if the device management service specified by Automated Device Enrollment still manages it. If the device unenrolls and then reenrolls in the same or a different service, it can’t use the migration flow.
 - A macOS device can migrate if any device management service manages it, including when it unenrolls from the original Automated Device Enrollment service and reenrolls with the same or a different service, provided the new enrollment is a profile-driven device enrollment.

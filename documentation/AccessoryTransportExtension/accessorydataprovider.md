@@ -33,7 +33,7 @@ In your extension’s target properties, include the `_EXExtensionCapabilities` 
         <dict>
             <key>EXExtensionPointIdentifier</key>
             <string>com.apple.accessory-data-provider</string>
-            <key>_EXExtensionCapabilities</key>
+            <key>EXCapabilities</key>
             <array>
                 <string>AccessoryNotifications.NotificationsForwarding</string>
             </array>
@@ -51,7 +51,7 @@ struct DataProvider: AccessoryDataProvider {
     var extensionPoint: AppExtensionPoint {
         Identifier("com.apple.accessory-data-provider")
         Implementing {
-            AccessoryNotifications.NotificationsForwarding {
+            NotificationsForwarding {
                 MyNotificationsHandler()
             }
         }
@@ -63,6 +63,8 @@ class MyNotificationsHandler: AccessoryNotificationsHandler {
 }
 ```
 
+For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryNotifications/receiving-ios-notifications-on-an-accessory).
+
 ## Relationships
 
 ### Inherits From
@@ -72,6 +74,8 @@ class MyNotificationsHandler: AccessoryNotificationsHandler {
 
 ## See Also
 
+- [Receiving iOS notifications on an accessory](../AccessoryNotifications/receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage notifications for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)

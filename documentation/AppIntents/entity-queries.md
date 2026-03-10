@@ -45,14 +45,18 @@ The system can sometimes determine which entities it needs and provide you with 
 
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
   Enable people to configure app intents with their custom input values.
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 - [Parameter resolution](parameter-resolution.md)
   Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
 - [Resolvers](resolvers.md)
   Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+- [Common data types](common-data-types.md)
+  Specify common types that your app supports, including currencies, files, and contacts.
+- [App entities](app-entities.md)
+  Make core types or concepts discoverable to the system by declaring them as app entities.
+- [Static parameter types](app-enums.md)
+  Types that represent an enumerable list of static parameter values.
+- [Property comparators](property-comparators.md)
+  Specify the type of comparison to perform during a property-matched query.
 
 
 ---

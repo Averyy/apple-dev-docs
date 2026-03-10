@@ -40,7 +40,6 @@ A credential is an abstraction of the cryptographic elements of your applet bund
   An enumeration of possible values of a credential’s installation state.
 ### Hashing
 - [func hash(into: inout Hasher)](credentialsession/credential/hash(into:).md)
-  Hashes the essential components of the value by feeding them into the given hasher.
 ### Supporting types
 - [CredentialSession.Credential.InstanceInfo](credentialsession/credential/instanceinfo.md)
   Information about an applet instance associated with a specific credential.

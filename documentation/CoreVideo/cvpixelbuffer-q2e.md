@@ -90,7 +90,7 @@ A Core Video pixel buffer is an image buffer that holds pixels in main memory. A
   An interface for managing different types of image data.
 - [CVPixelBufferPool](cvpixelbufferpool-77o.md)
   A utility object for managing a recyclable set of pixel buffer objects.
-- [CVPixelFormatDescription](cvpixelformatdescription.md)
+- [CVPixelFormatDescription](cvpixelformatdescription-42p.md)
   An API that provides functions and types for defining custom pixel formats.
 
 

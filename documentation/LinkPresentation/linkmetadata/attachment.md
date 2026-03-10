@@ -3,6 +3,8 @@
 **Framework**: Link Presentation  
 **Kind**: struct
 
+Describes a kind of attachment to the metadata.
+
 **Availability**:
 - iOS 26.4+ (Beta)
 - iPadOS 26.4+ (Beta)

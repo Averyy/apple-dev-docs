@@ -5,12 +5,12 @@
 Use fences to synchronize access to resources allocated on a heap.
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 11.3+
-- macOS 15.0+
-- tvOS 10.0+
-- Xcode 11.3+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

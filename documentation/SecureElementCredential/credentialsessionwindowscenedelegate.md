@@ -3,7 +3,7 @@
 **Framework**: SecureElementCredential  
 **Kind**: protocol
 
-A protocol to notify a UIKit scene that a credential session event occurred.
+Delegate to notify your `UIWindowScene` that a CredentialSession event has occurred.
 
 **Availability**:
 - iOS 17.4+
@@ -21,15 +21,14 @@ protocol CredentialSessionWindowSceneDelegate
 
 #### Overview
 
-> ⚠️ **Warning**: Don’t import SwiftUI in any files that refer to symbols defined in this protocol. Importing SwiftUI and UIKit in the same file results in ambiguity during compilation.
+All files that refer to symbols defined here should never `import SwiftUI` Importing SwiftUI with UIKit will result in ambiguous symbols during compilation.
 
 ## Topics
 
 ### Handling events
 - [func windowScene(UIWindowScene, didReceiveCredentialSessionWindowSceneEvent: CredentialSessionWindowSceneEvent)](credentialsessionwindowscenedelegate/windowscene(_:didreceivecredentialsessionwindowsceneevent:).md)
-  Informs your app that a credential session event initiated a UIKit scene creation.
 - [enum CredentialSessionWindowSceneEvent](credentialsessionwindowsceneevent.md)
-  An event that a credential session sends to a UIKit scene.
+  A CredentialSession event send to a `UIScene` or `UIWindowScene`.
 
 
 ---

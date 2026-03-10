@@ -21,7 +21,7 @@ When you use the App Intents framework to express your app’s actions and data,
 - Using the Shortcuts app, people create custom shortcuts with your app’s functionality and entirely new workflows across apps.
 - People reduce distractions with Focus, and you use the App Intents framework to respond to Focus changes.
 
-On supported devices, the App Intents framework will provide integration with Apple Intelligence, a personal intelligence system that deeply integrates powerful generative models into the core of iPhone, iPad, and Mac. Siri will draw on the capabilities of Apple Intelligence to deliver assistance that’s natural, contextually relevant, and personal for everyone, including in the apps they use every day. The App Intents framework will enable you to express your app’s capabilities and content, giving the system access to this context and integrating your app with Siri and Apple Intelligence, and unlocking new ways for people to interact with it from anywhere on their device. For more information, refer to [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md) and [`Making onscreen content available to Siri and Apple Intelligence`](making-onscreen-content-available-to-siri-and-apple-intelligence.md).
+On supported devices, the App Intents framework will provide integration with Apple Intelligence, a personal intelligence system that deeply integrates powerful generative models into the core of iPhone, iPad, and Mac. Siri will draw on the capabilities of Apple Intelligence to deliver assistance that’s natural, contextually relevant, and personal for everyone, including in the apps they use every day. The App Intents framework will enable you to express your app’s capabilities and content, giving the system access to this context and integrating your app with Siri and Apple Intelligence, and unlocking new ways for people to interact with it from anywhere on their device. For more information, refer to [`Siri`](siri.md).
 
 ##### Understand Experiences That Use App Intents Api
 
@@ -61,12 +61,6 @@ For more information about migrating your SiriKit code to App Intents, see [`Sou
 
 - [App Intents updates](../Updates/AppIntents.md)
   Learn about important changes in App Intents.
-- [Creating your first app intent](creating-your-first-app-intent.md)
-  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
-- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
-- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
-  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
 
 
 ---

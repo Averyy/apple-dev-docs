@@ -8,7 +8,6 @@ The content of the file attachment message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

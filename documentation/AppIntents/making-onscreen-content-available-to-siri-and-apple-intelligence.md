@@ -79,12 +79,14 @@ To enable Siri and Apple Intelligence to further process the provided onscreen c
 
 ## See Also
 
+- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
   Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
 - [App intent domains](app-intent-domains.md)
   Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+- [Intent discovery](intent-discovery.md)
+  Donate your app’s intents to the system to help it identify trends and predict future behaviors.
 
 
 ---

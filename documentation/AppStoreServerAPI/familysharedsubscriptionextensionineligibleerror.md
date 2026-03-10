@@ -6,7 +6,7 @@
 An error that indicates a subscription isn’t directly eligible for a renewal date extension because the customer obtained it through Family Sharing.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

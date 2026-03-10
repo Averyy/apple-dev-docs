@@ -51,7 +51,7 @@ A [`CVBuffer`](cvbuffer.md) serves as an abstract base class that defines how to
   An image buffer that holds pixels in main memory.
 - [CVPixelBufferPool](cvpixelbufferpool-77o.md)
   A utility object for managing a recyclable set of pixel buffer objects.
-- [CVPixelFormatDescription](cvpixelformatdescription.md)
+- [CVPixelFormatDescription](cvpixelformatdescription-42p.md)
   An API that provides functions and types for defining custom pixel formats.
 
 

@@ -8,7 +8,6 @@ Whether remote end supports file transfer.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

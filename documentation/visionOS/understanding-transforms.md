@@ -262,6 +262,8 @@ The order of these transforms is `translation` followed by `rotation` then `scal
   Create engaging interactions by training models to recognize and track real-world objects in your app.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
+  Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 
 
 ---

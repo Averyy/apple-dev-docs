@@ -73,15 +73,6 @@ enum ReaderDocumentKind: String, AppEnum, Codable {
 
 For a list of available app enumeration schemas in the `.reader` domain, see [`AssistantSchemas.ReaderEnum`](assistantschemas/readerenum.md).
 
-## See Also
-
-- [AssistantSchemas.ReaderIntent](assistantschemas/readerintent.md)
-  Assistant schema conformance for app intents that offer document viewing and editing functionality.
-- [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
-  Assistant schema conformance for app entities that describe documents.
-- [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)
-  Assistant schema conformance for types you use to describe documents.
-
 
 ---
 

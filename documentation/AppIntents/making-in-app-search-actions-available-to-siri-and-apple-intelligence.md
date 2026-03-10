@@ -34,11 +34,6 @@ struct ExampleSearchIntent: ShowInAppSearchResultsIntent {
 
 To learn more about assistant schemas, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
 
-## See Also
-
-- [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-  Assistant schema conformance for types you use for system functionality.
-
 
 ---
 

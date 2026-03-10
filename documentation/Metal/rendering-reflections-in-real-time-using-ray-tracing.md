@@ -5,11 +5,11 @@
 Implement realistic real-time lighting by dynamically generating reflection maps by encoding a ray-tracing compute pass.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- Xcode 15.3+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

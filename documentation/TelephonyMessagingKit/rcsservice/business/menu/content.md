@@ -8,7 +8,6 @@ Enumeration defining the contents of menu.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -36,19 +36,11 @@ For more information about specific clocks see `ContinuousClock` and `Suspending
 ### Instance Properties
 - [var minimumResolution: Self.Duration](clock/minimumresolution.md)
 - [var now: Self.Instant](clock/now.md)
-- [var traits: ClockTraits](clock/traits.md)
 ### Instance Methods
-- [func convert(from: Duration) -> Self.Duration?](clock/convert(from:)-37htx.md)
-- [func convert(from: Self.Duration) -> Duration?](clock/convert(from:)-8sz7z.md)
-- [func convert<OtherClock>(instant: OtherClock.Instant, from: OtherClock) -> Self.Instant?](clock/convert(instant:from:).md)
-- [func enqueue(consuming ExecutorJob, on: some Executor, at: Self.Instant, tolerance: Self.Duration?)](clock/enqueue(_:on:at:tolerance:).md)
-  Enqueue the given job on the specified executor at some point after the given instant.
 - [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](clock/measure(_:).md)
   Measure the elapsed time to execute a closure.
 - [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(isolation:_:).md)
   Measure the elapsed time to execute an asynchronous closure.
-- [func run(consuming ExecutorJob, at: Self.Instant, tolerance: Self.Duration?)](clock/run(_:at:tolerance:).md)
-  Run the given job on an unspecified executor at some point after the given instant.
 - [func sleep(for: Self.Instant.Duration, tolerance: Self.Instant.Duration?) async throws](clock/sleep(for:tolerance:).md)
   Suspends for the given duration.
 - [func sleep(until: Self.Instant, tolerance: Self.Instant.Duration?) async throws](clock/sleep(until:tolerance:).md)
@@ -69,7 +61,6 @@ For more information about specific clocks see `ContinuousClock` and `Suspending
 
 ## See Also
 
-- [struct ClockTraits](clocktraits.md)
 - [struct ContinuousClock](continuousclock.md)
   A clock that measures time that always increments and does not stop incrementing while the system is asleep.
 - [struct SuspendingClock](suspendingclock.md)

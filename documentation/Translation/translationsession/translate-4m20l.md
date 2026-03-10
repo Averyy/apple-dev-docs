@@ -23,7 +23,7 @@ The response containing the text translation.
 
 #### Discussion
 
-This function translates a single line of text and might display different UI depending on the state of the translation. The required languages for translation don’t have to be installed before calling this method.
+This function translates a single line of text and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method.
 
 If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the person.
 

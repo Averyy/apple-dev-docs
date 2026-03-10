@@ -89,11 +89,15 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 - [protocol CPListTemplateDelegate](cplisttemplatedelegate.md)
   The interface an object implements to serve as the delegate for a list template.
 ### Initializers
+- [init(title: String?, listHeader: CPListTemplateDetailsHeader?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)](cplisttemplate/init(title:listheader:sections:assistantcellconfiguration:).md)
+  Initialize a list template with a details list header.
 - [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?, headerGridButtons: [CPGridButton]?)](cplisttemplate/init(title:sections:assistantcellconfiguration:headergridbuttons:).md)
   Initialize a list template with one or more grid buttons to displayed in a list header.
 ### Instance Properties
 - [var headerGridButtons: [CPGridButton]?](cplisttemplate/headergridbuttons.md)
   Assigning to this property will dynamically update the List Template and show the new header.
+- [var listHeader: CPListTemplateDetailsHeader?](cplisttemplate/listheader.md)
+  An optional details header displayed at the top of the list template.
 - [var showsSpinnerWhileEmpty: Bool](cplisttemplate/showsspinnerwhileempty.md)
   If YES, a spinning activity indicator will be displayed while the list template contains no items. The activity indicator will be displayed in addition to any @c emptyViewTitleVariants or
 ### Type Properties

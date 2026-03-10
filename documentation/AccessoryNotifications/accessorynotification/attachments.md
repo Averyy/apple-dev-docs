@@ -15,6 +15,10 @@ An array of files sent with the notification.
 let attachments: [AccessoryNotification.File]
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [let sourceIcon: AccessoryNotification.File?](accessorynotification/sourceicon.md)

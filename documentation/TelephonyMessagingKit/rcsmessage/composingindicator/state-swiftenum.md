@@ -8,7 +8,6 @@ An enumeration that represents the state of the indicator.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

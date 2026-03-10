@@ -21,6 +21,10 @@ nonisolated
 func background<V>(alignment: Alignment = .center, @ViewBuilder content: () -> V) -> some View where V : View
 ```
 
+## Mentions
+
+- [Adding a background to your view](adding-a-background-to-your-view.md)
+
 #### Return Value
 
 A view that uses the specified content as a background.

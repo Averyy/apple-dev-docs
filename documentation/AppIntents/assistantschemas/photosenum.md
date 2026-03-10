@@ -46,12 +46,14 @@ protocol PhotosEnum : AssistantSchemas.Model
 
 ## See Also
 
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s photo and video functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
-  Assistant schema conformance for app intents that offer photo and video functionality.
-- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
-  Assistant schema conformance for app entities that describe media assets.
+- [var albumType: some AssistantSchemas.Enum](assistantschemas/photosenum/albumtype.md)
+  The type of photo album.
+- [var assetType: some AssistantSchemas.Enum](assistantschemas/photosenum/assettype.md)
+  The type of asset.
+- [var filterType: some AssistantSchemas.Enum](assistantschemas/photosenum/filtertype.md)
+  The filter effect for a photo or video.
+- [var rotationDirection: some AssistantSchemas.Enum](assistantschemas/photosenum/rotationdirection.md)
+  The direction for rotating a photo or video.
 
 
 ---

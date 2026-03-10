@@ -181,7 +181,6 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 - [var attributionIdentifier: String?](pkpaymentrequest/attributionidentifier.md)
 - [var isDelegatedRequest: Bool](pkpaymentrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this payment request is being made by a delegated entity on behalf of a merchant.
-- [var issuerRegions: [String : [AnyHashable : Any]]?](pkpaymentrequest/issuerregions.md)
 - [var merchantCategoryCode: PKPaymentRequest.MerchantCategoryCode?](pkpaymentrequest/merchantcategorycode-9kcn6.md)
 
 ## Relationships

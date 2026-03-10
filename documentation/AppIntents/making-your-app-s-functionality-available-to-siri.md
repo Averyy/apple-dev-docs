@@ -134,6 +134,8 @@ For more information about making onscreen content available to Siri and Apple I
   Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
 - [App intent domains](app-intent-domains.md)
   Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
+- [Intent discovery](intent-discovery.md)
+  Donate your app’s intents to the system to help it identify trends and predict future behaviors.
 
 
 ---

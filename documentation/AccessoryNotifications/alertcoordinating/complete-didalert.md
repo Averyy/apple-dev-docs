@@ -16,6 +16,10 @@ Notifies the system of whether your accessory successfully alerted the person fo
 func complete(didAlert: Bool)
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## Parameters
 
 - `didAlert`: A Boolean value that indicates whether the accessory alerted the person. Pass `true` if the accessory alerted; otherwise, `false`.

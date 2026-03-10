@@ -8,7 +8,6 @@ Service identifier to use for this request.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -46,7 +46,7 @@ enum BlendMode
 - [BlendMode.saturation](blendmode/saturation.md)
 - [BlendMode.color](blendmode/color.md)
 - [BlendMode.luminosity](blendmode/luminosity.md)
-### Accessing porter-duff modes
+### Accessing Porter-Duff modes
 - [BlendMode.sourceAtop](blendmode/sourceatop.md)
 - [BlendMode.destinationOver](blendmode/destinationover.md)
 - [BlendMode.destinationOut](blendmode/destinationout.md)

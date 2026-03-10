@@ -30,7 +30,7 @@ This function instantiates the application object and the specified delegate (if
 
 ## See Also
 
-- [Setting up a watchOS project](setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.

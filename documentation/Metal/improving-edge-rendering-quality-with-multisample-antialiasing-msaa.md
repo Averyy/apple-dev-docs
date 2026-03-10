@@ -5,12 +5,12 @@
 Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 11.0+
-- tvOS 14.5+
-- Xcode 14.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

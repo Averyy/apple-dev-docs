@@ -8,7 +8,6 @@ Additional headers in a received MMS message, as a key-value dictionary of strin
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

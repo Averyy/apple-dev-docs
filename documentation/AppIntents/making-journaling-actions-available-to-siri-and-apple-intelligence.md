@@ -61,13 +61,6 @@ The assistant schema for the `JournalEntity` consists of the `.journal` domain a
 
 For a list of available app entity schemas in the `.journal` domain, see [`AssistantSchemas.JournalEntity`](assistantschemas/journalentity.md).
 
-## See Also
-
-- [AssistantSchemas.JournalIntent](assistantschemas/journalintent.md)
-  Assistant schema conformance for app intents that offer journaling functionality.
-- [AssistantSchemas.JournalEntity](assistantschemas/journalentity.md)
-  Assistant schema conformance for app entities that describe journaling data.
-
 
 ---
 

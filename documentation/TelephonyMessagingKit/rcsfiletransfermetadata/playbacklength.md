@@ -8,7 +8,6 @@ Playback length of RCS Recorded Audio Message (RRAM).
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

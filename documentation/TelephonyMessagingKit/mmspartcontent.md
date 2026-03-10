@@ -8,7 +8,6 @@ A structure that defines custom headers within MMS content.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

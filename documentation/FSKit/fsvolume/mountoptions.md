@@ -16,11 +16,11 @@ struct MountOptions
 
 ## Topics
 
-### Initializers
-- [init(rawValue: UInt)](fsvolume/mountoptions/init(rawvalue:).md)
-### Type Properties
+### Inspecting mount options
 - [static var readOnly: FSVolume.MountOptions](fsvolume/mountoptions/readonly.md)
   An option to request a read-only mount.
+### Working with raw values
+- [init(rawValue: UInt)](fsvolume/mountoptions/init(rawvalue:).md)
 
 ## Relationships
 
@@ -33,6 +33,13 @@ struct MountOptions
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [var requestedMountOptions: FSVolume.MountOptions](fsvolume/operations/requestedmountoptions.md)
+  A property that allows the file system to request for specific mount options from FSKit.
+- [var enableOpenUnlinkEmulation: Bool](fsvolume/operations/enableopenunlinkemulation.md)
+  A property that allows the file system to use open-unlink emulation.
 
 
 ---

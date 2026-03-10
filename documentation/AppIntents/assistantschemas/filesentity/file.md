@@ -52,6 +52,11 @@ struct ExampleFileEntity: FileEntity {
 
 For more information about the `.files` app intent domain, see [`Making file management actions available to Siri and Apple Intelligence`](making-file-management-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
 
+## See Also
+
+- [AssistantSchemas.FilesEntity](assistantschemas/filesentity.md)
+  Assistant schema conformance for app entities that describe files.
+
 
 ---
 

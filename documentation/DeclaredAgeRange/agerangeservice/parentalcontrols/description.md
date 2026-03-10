@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: property
 
-A list of parental controls that are turned on, for debugging purposes.
+A list of active parental controls, for debugging purposes.
 
 **Availability**:
 - iOS 26.0+
@@ -19,7 +19,7 @@ var description: String { get }
 
 #### Discussion
 
-Returns a comma separated list of the parental control options that are currently turned on.
+Returns a comma separated list of the parental control options currently enabled.
 
 ## See Also
 

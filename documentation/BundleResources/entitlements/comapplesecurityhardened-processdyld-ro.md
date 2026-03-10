@@ -1,4 +1,4 @@
-# Enable Read-Only Platform Memory
+# com.apple.security.hardened-process.dyld-ro
 
 **Framework**: Bundle Resources  
 **Kind**: typealias
@@ -25,19 +25,22 @@ When you add this entitlement to your app or extension with the value `true`, th
 
 Xcode adds this entitlement to your app or extension when you add the Enhanced Security capability. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
 
+> **Note**: This entitlement requires the following entitlements: - [`com.apple.security.hardened-process`](entitlements/com.apple.security.hardened-process.md)
+- [`com.apple.security.hardened-process.enhanced-security-version-string`](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
+
 ## See Also
 
-- [Hardened Process](entitlements/com.apple.security.hardened-process.md)
+- [com.apple.security.hardened-process](entitlements/com.apple.security.hardened-process.md)
   A Boolean value that indicates whether the executable opts in to additional security checks.
-- [Enhanced Security](entitlements/com.apple.security.hardened-process.enhanced-security-version.md)
+- [com.apple.security.hardened-process.enhanced-security-version](entitlements/com.apple.security.hardened-process.enhanced-security-version.md)
   The entitlement required for an executable to opt in to enhanced security protections.
-- [Enhanced Security](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
+- [com.apple.security.hardened-process.enhanced-security-version-string](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)
   The entitlement required for an executable to opt in to enhanced security protections.
-- [Hardened Heap](entitlements/com.apple.security.hardened-process.hardened-heap.md)
+- [com.apple.security.hardened-process.hardened-heap](entitlements/com.apple.security.hardened-process.hardened-heap.md)
   A Boolean value that indicates whether the process opts in to type-aware memory allocations.
-- [Additional Runtime Platform Restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions.md)
+- [com.apple.security.hardened-process.platform-restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions.md)
   An integer value that indicates the level of additional runtime security protections your app or extension opts in to.
-- [Additional Runtime Platform Restrictions](entitlements/com.apple.security.hardened-process.platform-restrictions-string.md)
+- [com.apple.security.hardened-process.platform-restrictions-string](entitlements/com.apple.security.hardened-process.platform-restrictions-string.md)
   A string value that indicates the level of additional runtime security protections your app or extension opts in to.
 
 

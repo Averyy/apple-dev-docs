@@ -73,15 +73,6 @@ enum BookContentType: String, AppEnum {
 
 For a list of available app enumeration schemas in the `.books` domain, see [`AssistantSchemas.BooksEnum`](assistantschemas/booksenum.md).
 
-## See Also
-
-- [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
-  Assistant schema conformance for app intents that offer ebook and audiobook functionality.
-- [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
-  Assistant schema conformance for app entities that describe ebooks or audiobooks.
-- [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
-  Assistant schema conformance for types you use to describe ebooks or audiobooks.
-
 
 ---
 

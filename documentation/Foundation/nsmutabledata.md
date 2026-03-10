@@ -38,7 +38,7 @@ When called, the bytes are immediately copied and then the buffer is freed.
 
 `NSMutableData` is “toll-free bridged” with its Core Foundation counterpart, [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Data`](data.md) structure, which bridges to the [`NSMutableData`](nsmutabledata.md) class and its immutable superclass [`NSData`](nsdata.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Data`](data.md) structure, which bridges to the [`NSMutableData`](nsmutabledata.md) class and its immutable superclass [`NSData`](nsdata.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

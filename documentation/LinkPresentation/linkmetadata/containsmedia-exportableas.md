@@ -30,7 +30,7 @@ func containsMedia(_ attachment: LinkMetadata.Attachment, exportableAs type: (so
 Use this function to immediately determine if metadata has some specific kind of media that can be coerced into a given type:
 
 ```swift
-    /// if metadata.containsMedia(.image, exportableAs: SwiftUI.Image.self) {
+if metadata.containsMedia(.image, exportableAs: SwiftUI.Image.self) {
     // Load the image, and while waiting, display some loading indicator.
 } else {
     // The metadata contains no image, so omit any UI for it.

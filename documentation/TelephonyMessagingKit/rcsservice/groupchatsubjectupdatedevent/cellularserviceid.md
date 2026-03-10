@@ -8,7 +8,6 @@ Cellular service identifier associated with this event.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A cryptographically signed payload, in JSON Web Signature (JWS) format, containing the response body for a version 2 notification.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

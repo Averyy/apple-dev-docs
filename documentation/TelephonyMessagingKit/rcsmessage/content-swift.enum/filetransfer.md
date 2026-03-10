@@ -8,7 +8,6 @@ A content type for file transfer content.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

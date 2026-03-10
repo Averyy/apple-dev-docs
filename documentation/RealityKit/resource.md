@@ -45,6 +45,8 @@ Resources can be costly to load or create. Share and reuse resources as much as 
 
 ## See Also
 
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [Loading entities from a file](loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Stored entities](stored-entities.md)

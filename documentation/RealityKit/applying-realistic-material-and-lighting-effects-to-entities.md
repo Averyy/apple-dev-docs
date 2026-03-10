@@ -203,6 +203,8 @@ if let anisoAngleResource = try? TextureResource.load(named: "entity_aniso_angle
 
 ## See Also
 
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.
 - [PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.struct.md)
@@ -231,8 +233,6 @@ if let anisoAngleResource = try? TextureResource.load(named: "entity_aniso_angle
   An object used to define a material’s anisotropy angle.
 - [PhysicallyBasedMaterial.EmissiveColor](physicallybasedmaterial/emissivecolor-swift.struct.md)
   An object that defines the color of the light an entity emits.
-- [PhysicallyBasedMaterial.TextureCoordinateTransform](physicallybasedmaterial/texturecoordinatetransform-swift.typealias.md)
-  An alias for the texture coordinate transform that’s appropriate for this material class.
 
 
 ---

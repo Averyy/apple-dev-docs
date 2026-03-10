@@ -8,7 +8,6 @@ The cellular service identifier associated with this instance.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

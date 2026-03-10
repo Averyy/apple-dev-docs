@@ -161,12 +161,14 @@ After some time, you can remove the  `isAssistantOnly` code and remove your old 
 
 ## See Also
 
+- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
+  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 - [Making onscreen content available to Siri and Apple Intelligence](making-onscreen-content-available-to-siri-and-apple-intelligence.md)
   Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
 - [App intent domains](app-intent-domains.md)
   Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Making your app’s functionality available to Siri](making-your-app-s-functionality-available-to-siri.md)
-  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
+- [Intent discovery](intent-discovery.md)
+  Donate your app’s intents to the system to help it identify trends and predict future behaviors.
 
 
 ---

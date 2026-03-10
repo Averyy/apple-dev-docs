@@ -47,15 +47,8 @@ struct IntentDescription
 
 ## See Also
 
-- [protocol AppIntentsPackage](appintentspackage.md)
-  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
-- [struct IntentDialog](intentdialog.md)
-  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [struct IntentDeprecation](intentdeprecation.md)
-- [class IntentProjection](intentprojection.md)
-  Projections for an app intent that returns non-optional values for parameters.
-- [struct IntentSystemContext](intentsystemcontext.md)
-  Information that the system makes available to an app intent while it performs its action.
+- [protocol AppIntent](appintent.md)
+  An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
 
 
 ---

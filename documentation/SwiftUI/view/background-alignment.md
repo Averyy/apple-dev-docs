@@ -23,7 +23,6 @@ func background<Background>(_ background: Background, alignment: Alignment = .ce
 
 ## Mentions
 
-- [Adding a background to your view](adding-a-background-to-your-view.md)
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 
 #### Discussion

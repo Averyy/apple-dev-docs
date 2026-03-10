@@ -37,7 +37,7 @@ To complete your Apple Pay set up, create the two certificates associated with y
 - A payment processing certificate that Apple Pay servers use to encrypt payment data
 - A merchant identity certificate that you use to authenticate communication with Apple Pay servers
 
-To create the certificates, log in to your Apple developer account using the Account Holder or Admin roles. For the payment processing certificate, see [`Create a payment processing certificate`](https://developer.apple.comhttps://help.apple.com/developer-account/#/devb2e62b839?sub=devf31990e3f). For the merchant identity certificate, see [`Create a merchant identity certificate`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev1731126fb).
+To create the certificates, log in to your Apple developer account using the Account Holder or Admin roles. For the payment processing certificate, see [`Create a payment processing certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/capabilities/configure-apple-pay#create-a-payment-processing-certificate). For the merchant identity certificate, see [`Create a merchant identity certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/capabilities/configure-apple-pay-on-the-web).
 
 
 ---

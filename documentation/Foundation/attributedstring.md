@@ -79,7 +79,7 @@ do {
 
 Localized strings that you load from strings files with initializers like [`init(localized:options:table:bundle:locale:comment:)`](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md) can also contain Markdown to add styling. In addition, these localized attributed string initializers can apply the [`replacementIndex`](attributescopes/foundationattributes/replacementindex.md) attribute, which allows you to determine the range of replacement strings, whose order may vary between languages.
 
-By declaring new attributes that conform to [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md), you can add attributes that you invoke by using Apple’s Markdown extension syntax: `^[text](name:value, name:value, …)`. See the sample code project doc:building-a-localized-food-ordering-app for an example of creating custom attributes and using them with Markdown.
+By declaring new attributes that conform to [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md), you can add attributes that you invoke by using Apple’s Markdown extension syntax: `^[text](name:value, name:value, …)`. See the sample code project [`Building a Localized Food-Ordering App`](building-a-localized-food-ordering-app.md) for an example of creating custom attributes and using them with Markdown.
 
 Localized attributed strings can also use the extension syntax to indicate parts of the string where the system can apply automatic grammar agreement. See the initializers that take a `localized:` parameter for examples of this extension syntax, as used with automatic grammar agreement.
 

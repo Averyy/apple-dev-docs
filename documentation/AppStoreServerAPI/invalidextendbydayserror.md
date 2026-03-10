@@ -6,7 +6,7 @@
 An error that indicates an invalid extend-by-days value.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

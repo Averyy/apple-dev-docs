@@ -27,6 +27,8 @@ An array of credentials to which the calling app has access rights. The order of
 
 When you call this method, the framework caches a snapshot of these credentials. Because credentials can change, refresh your data models whenever your app performs any kind of write operation using the [`SecureElementCredential`](SecureElementCredential.md) framework. Also update whenever your app returns to the foreground.
 
+> **Note**: When you call this method from an app extension that has the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement, the returned array contains only credentials configured as Government ID credentials on the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com/login) (ABR) portal.
+
 ## See Also
 
 - [CredentialSession.Credential](credentialsession/credential.md)

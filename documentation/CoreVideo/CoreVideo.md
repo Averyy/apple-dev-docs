@@ -29,7 +29,7 @@ Core Video provides a pipeline model for digital video. It simplifies working wi
   An image buffer that holds pixels in main memory.
 - [CVPixelBufferPool](cvpixelbufferpool-77o.md)
   A utility object for managing a recyclable set of pixel buffer objects.
-- [CVPixelFormatDescription](cvpixelformatdescription.md)
+- [CVPixelFormatDescription](cvpixelformatdescription-42p.md)
   An API that provides functions and types for defining custom pixel formats.
 ### Time Management
 - [CVTime](cvtime-q1e.md)
@@ -90,8 +90,6 @@ Core Video provides a pipeline model for digital video. It simplifies working wi
   Padding pixels around the CVPixelBuffer
 - [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
   Properties of a plane of pixels in pixel buffer
-- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
-  Defines a pixel format which can be used to create custom pixel buffer types.
 - [struct CVPixelFormatType](cvpixelformattype.md)
   Identifier for a pixel format type
 ### Variables

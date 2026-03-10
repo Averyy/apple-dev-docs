@@ -50,7 +50,7 @@ Xcode 26.3 includes Swift 6.2.3 and SDKs for iOS 26.2, iPadOS 26.2, tvOS 26.2, m
 
 ## See Also
 
-- [Xcode 26.4 Beta 2 Release Notes](xcode-26_4-release-notes.md)
+- [Xcode 26.4 Beta 3 Release Notes](xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

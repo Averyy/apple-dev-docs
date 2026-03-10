@@ -8,7 +8,6 @@ Structure representing the result of a request to remove participants from a gro
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

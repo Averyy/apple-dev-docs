@@ -5,11 +5,11 @@
 Determine which pixels are visible in a scene by using a depth texture.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 12.0+
-- macOS 10.13+
-- Xcode 12.3+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

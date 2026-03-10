@@ -8,7 +8,6 @@ The maximum MMS size for a sent text message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

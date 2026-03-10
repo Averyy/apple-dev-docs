@@ -6,9 +6,9 @@
 Sends feature data to the system from the accessory.
 
 **Availability**:
-- iOS 26.3+
-- iPadOS 26.3+
-- Mac Catalyst 26.3+
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
+- Mac Catalyst 26.4+ (Beta)
 
 ## Declaration
 

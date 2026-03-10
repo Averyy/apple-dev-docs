@@ -25,6 +25,8 @@ Manage your app’s work and how it interacts with system services like Handoff 
 - [class Timer](timer.md)
   A timer that fires after a certain time interval has elapsed, sending a specified message to a target object.
 ### Activity Sharing
+- [Increasing App Usage with Suggestions Based on User Activities](increasing-app-usage-with-suggestions-based-on-user-activities.md)
+  Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 - [Continuing User Activities with Handoff](continuing-user-activities-with-handoff.md)
   Define and manage which of your app’s activities can be continued between devices.
 - [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)

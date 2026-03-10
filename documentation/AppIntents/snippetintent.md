@@ -80,8 +80,28 @@ If your intent does more than just returning a snippet; for example, if you exte
 
 ## See Also
 
-- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
-  Enable people to view the outcome of an app intent and immediately perform follow-up actions.
+- [protocol DeleteIntent](deleteintent.md)
+  Delete the associated entity(s).
+- [protocol DeprecatedAppIntent](deprecatedappintent.md)
+  An app intent that marks an action as deprecated and informs people which action to use instead.
+- [protocol ForegroundContinuableIntent](foregroundcontinuableintent.md)
+  A protocol you use for app intents which begin their work with the app in the background but may request to continue in the foreground.
+- [protocol OpenIntent](openintent.md)
+  Open the associated item.
+- [struct OpenURLIntent](openurlintent.md)
+  An intent that opens a universal link.
+- [protocol ProgressReportingIntent](progressreportingintent.md)
+  An intent that reports progress to the system during its execution
+- [protocol SetValueIntent](setvalueintent.md)
+  An intent that contains a value which can be set.
+- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+  An app intent that takes a person to search results for a specified search term.
+- [protocol SystemIntent](systemintent.md)
+  Designates intent types provided by App Intents.
+- [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
+- [protocol UISceneAppIntent](uisceneappintent.md)
+- [protocol URLRepresentableIntent](urlrepresentableintent.md)
+  An app intent with a URL representation.
 
 
 ---

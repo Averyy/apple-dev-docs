@@ -8,7 +8,6 @@ Sends device specifics in response to a suggested action to send device specific
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

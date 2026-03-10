@@ -192,7 +192,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [WWDC22 Challenge: Learn Switch Control through gaming](../Accessibility/wwdc22_challenge_learn_switch_control_through_gaming.md)
   Play a card-matching game using Switch Control.
 ### App frameworks
-- [Building a Localized Food-Ordering App](../foundation/building_a_localized_food-ordering_app.md)
+- [Building a Localized Food-Ordering App](../Foundation/building-a-localized-food-ordering-app.md)
   Format, style, and localize your app’s text for use in multiple languages with string formatting, attributed strings, and automatic grammar agreement.
 - [Building a resumable upload server with SwiftNIO](../Foundation/building-a-resumable-upload-server-with-swiftnio.md)
   Support HTTP resumable upload protocol in SwiftNIO by translating resumable uploads to regular uploads.
@@ -202,7 +202,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Convert data into readable strings or Swift objects using formatters.
 - [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
-- [Increasing App Usage with Suggestions Based on User Activities](../foundation/task_management/increasing_app_usage_with_suggestions_based_on_user_activities.md)
+- [Increasing App Usage with Suggestions Based on User Activities](../Foundation/increasing-app-usage-with-suggestions-based-on-user-activities.md)
   Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 - [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.

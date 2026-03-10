@@ -45,7 +45,7 @@ SecureElementCredential supports transactions for in-store payments, car keys, c
   A transaction object for performing wired and contactless operations in SwiftUI views.
 ### UIKit scene delegate
 - [protocol CredentialSessionWindowSceneDelegate](credentialsessionwindowscenedelegate.md)
-  A protocol to notify a UIKit scene that a credential session event occurred.
+  Delegate to notify your `UIWindowScene` that a CredentialSession event has occurred.
 
 
 ---

@@ -8,7 +8,6 @@ Structure representing the result of a request to add participants to a group ch
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

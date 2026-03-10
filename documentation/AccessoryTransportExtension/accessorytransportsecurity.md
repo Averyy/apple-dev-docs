@@ -47,7 +47,7 @@ In your extension’s Swift code, implement the protocol and provide an event ha
 struct TransportSecurity: AccessoryTransportSecurity {
     @AppExtensionPoint.Bind
     static var boundExtensionPoint: AppExtensionPoint {
-        AppExtensionPoint.Identifier("com.apple.accessory-transport-security")
+        Identifier("com.apple.accessory-transport-security")
     }
     
     func accept(sessionRequest: AccessorySecuritySession.Request) -> AccessorySecuritySession.Request.Decision {
@@ -62,6 +62,8 @@ class MySecurityEventHandler: AccessorySecuritySession.EventHandler {
 }
 ```
 
+For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryNotifications/receiving-ios-notifications-on-an-accessory).
+
 ## Topics
 
 ### Accepting session requests
@@ -75,6 +77,8 @@ class MySecurityEventHandler: AccessorySecuritySession.EventHandler {
 
 ## See Also
 
+- [Receiving iOS notifications on an accessory](../AccessoryNotifications/receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage notifications for your accessory.
 - [protocol AccessoryDataProvider](accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)

@@ -8,7 +8,6 @@ The content type of the thumbnail.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

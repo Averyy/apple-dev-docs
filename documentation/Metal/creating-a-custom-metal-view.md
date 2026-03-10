@@ -5,12 +5,12 @@
 Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 12.0+
-- macOS 10.13+
-- tvOS 12.0+
-- Xcode 12.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

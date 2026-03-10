@@ -1,4 +1,4 @@
-# MTLTensorDataType.uInt4
+# MTLTensorDataType.uint4
 
 **Framework**: Metal  
 **Kind**: case
@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-case uInt4
+case uint4
 ```
 
 

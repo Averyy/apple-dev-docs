@@ -69,6 +69,8 @@ Alternatively, you can also use existing serial executor implementations, such a
 
 ## Topics
 
+### Instance Properties
+- [var isMainExecutor: Bool](serialexecutor/ismainexecutor.md)
 ### Instance Methods
 - [func asUnownedSerialExecutor() -> UnownedSerialExecutor](serialexecutor/asunownedserialexecutor.md)
   Convert this executor value to the optimized form of borrowed executor references.
@@ -101,7 +103,6 @@ Alternatively, you can also use existing serial executor implementations, such a
   A unit of schedulable work.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [protocol SchedulingExecutor](schedulingexecutor.md)
 - [typealias PartialAsyncTask](partialasynctask.md)
 - [struct UnownedJob](unownedjob.md)
   A unit of schedulable work.

@@ -8,7 +8,6 @@ Enumeration indicating the availability of the remote end.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

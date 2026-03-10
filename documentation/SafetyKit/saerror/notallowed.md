@@ -10,7 +10,7 @@ The system currently restricts the feature on this device.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 9.0+
+- watchOS 10.1+
 
 ## Declaration
 

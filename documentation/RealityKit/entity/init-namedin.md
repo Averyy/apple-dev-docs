@@ -68,6 +68,8 @@ struct SomeRealityView: View {
 
 ## See Also
 
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Loading entities from a file](loading-entities-from-a-file.md)

@@ -8,7 +8,6 @@ An enumeration that represents the disposition of an RCS message, such as whethe
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

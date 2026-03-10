@@ -54,6 +54,13 @@ struct CanvasEntity: AppEntity {
 
 For more information about the `.whiteboard` app intent domain, see [`Making whiteboard actions available to Siri and Apple Intelligence`](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
 
+## See Also
+
+- [var item: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/item.md)
+  The app entity describes an item on a whiteboard canvas.
+- [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
+  Assistant schema conformance for app entities that describe data for whiteboard functionality.
+
 
 ---
 

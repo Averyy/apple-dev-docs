@@ -23,9 +23,9 @@ An `AsyncSequence` of responses containing the text translations.
 
 #### Discussion
 
-This function translates multiple strings of text incrementally and might display different UI depending on the state of the translation. The required languages for translation don’t have to be installed before calling this method.
+This function translates multiple strings of text incrementally and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method.
 
-Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](translationsession/request.md) type. Set the [`clientIdentifier`](translationsession/request/clientidentifier.md) on each request so you can match the request with the response as the translations incrementally return.
+Pass in the strings of text you want to translate as an array of the [`TranslationSession.Request`](translationsession/request.md) type. To create requests for attributed strings, use `Request/init(sourceText:clientIdentifier:)-(AttributedString)`. Set the [`clientIdentifier`](translationsession/request/clientidentifier.md) on each request so you can match the request with the response as the translations incrementally return.
 
 If the required languages for translation have already downloaded and the source language is clear, this function returns results without showing any UI to the person.
 

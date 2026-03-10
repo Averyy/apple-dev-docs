@@ -6,7 +6,7 @@
 A response that indicates whether an individual renewal-date extension succeeded, and related details.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

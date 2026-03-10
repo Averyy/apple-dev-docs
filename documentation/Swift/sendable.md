@@ -105,7 +105,6 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Error](error.md)
 - [Executor](executor.md)
 - [InstantProtocol](instantprotocol.md)
-- [SchedulingExecutor](schedulingexecutor.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
 - [UnsafeSendable](unsafesendable.md)

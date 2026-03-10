@@ -8,7 +8,6 @@ An enumeration that represents the disposition of the file, indicating how a rec
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

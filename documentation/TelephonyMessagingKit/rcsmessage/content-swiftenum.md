@@ -8,7 +8,6 @@ An enumeration of the RCS message content types supported by the system.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

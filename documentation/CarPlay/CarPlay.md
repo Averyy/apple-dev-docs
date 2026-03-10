@@ -122,6 +122,8 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [CarPlay Enumerations](carplay-enumerations.md)
 - [CarPlay Constants](carplay-constants.md)
 ### Classes
+- [class CPImageOverlay](cpimageoverlay.md)
+  An overlay that displays information over an image.
 - [class CPListImageRowItemCardElement](cplistimagerowitemcardelement.md)
 - [class CPListImageRowItemCondensedElement](cplistimagerowitemcondensedelement.md)
 - [class CPListImageRowItemElement](cplistimagerowitemelement.md)
@@ -129,6 +131,8 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [class CPListImageRowItemGridElement](cplistimagerowitemgridelement.md)
 - [class CPListImageRowItemImageGridElement](cplistimagerowitemimagegridelement.md)
 - [class CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
+- [class CPListTemplateDetailsHeader](cplisttemplatedetailsheader.md)
+  A header for list templates that displays rich media content with action buttons.
 - [class CPMapTemplateWaypoint](cpmaptemplatewaypoint.md)
   CPMapTemplateWaypoint represents a waypoint with associated travel estimates
 - [class CPMessageGridItemConfiguration](cpmessagegriditemconfiguration.md)
@@ -145,8 +149,14 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
   A representation of a sports team for the now playing screen, in sports that have exactly two teams.
 - [class CPNowPlayingSportsTeamLogo](cpnowplayingsportsteamlogo.md)
   A logo image or, if no image is available, an abbreviation or initialism for this team.
+- [class CPPlaybackConfiguration](cpplaybackconfiguration.md)
 - [class CPRouteSegment](cproutesegment.md)
   CPRouteSegment describes information pertaining to a segment of a route.
+- [class CPSportsOverlay](cpsportsoverlay.md)
+  A sports overlay that displays left and right team information.
+- [class CPThumbnailImage](cpthumbnailimage.md)
+### Protocols
+- [protocol CPPlayableItem](cpplayableitem.md)
 ### Structures
 - [struct CPLocationCoordinate3D](cplocationcoordinate3d.md)
   CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.

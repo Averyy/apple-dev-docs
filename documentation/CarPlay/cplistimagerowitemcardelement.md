@@ -20,11 +20,15 @@ class CPListImageRowItemCardElement
 ### Initializers
 - [init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(image:showsimagefullheight:title:subtitle:tintcolor:).md)
   Initialize a card element with an image.
+- [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(thumbnail:title:subtitle:tintcolor:).md)
+  Initialize an element with a thumbnail, title, subtitle, and tint color.
 ### Instance Properties
 - [var showsImageFullHeight: Bool](cplistimagerowitemcardelement/showsimagefullheight.md)
   A Boolean value indicating whether the element should be fill with the image.
 - [var subtitle: String?](cplistimagerowitemcardelement/subtitle.md)
   The subtitle associated with this element.
+- [var thumbnail: CPThumbnailImage?](cplistimagerowitemcardelement/thumbnail.md)
+  The thumbnail associated with this element.
 - [var tintColor: UIColor?](cplistimagerowitemcardelement/tintcolor.md)
   A UIColor used to tint the element. When @c showsImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
 - [var title: String](cplistimagerowitemcardelement/title.md)
@@ -40,6 +44,7 @@ class CPListImageRowItemCardElement
 ### Inherits From
 - [CPListImageRowItemElement](cplistimagerowitemelement.md)
 ### Conforms To
+- [CPPlayableItem](cpplayableitem.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
@@ -48,8 +53,6 @@ class CPListImageRowItemCardElement
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

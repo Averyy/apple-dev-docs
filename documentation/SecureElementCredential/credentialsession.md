@@ -33,11 +33,22 @@ You can read the current state at any time from the [`state`](credentialsession/
 
 An app can have only one active session at a time. When your app no longer needs the credential session, call [`invalidate()`](credentialsession/invalidate().md). If your app goes into the background, the system automatically invalidates your session after a short delay. In wired mode, the system invalidates the session if it goes 15 seconds without performing a [`transceive(_:)`](credentialsession/transceive(_:).md) call.
 
+##### Use a Session in an App Extension
+
+Certain methods in [`CredentialSession`](credentialsession.md) are only appropriate for use in apps. If you’re writing an app extension, such as for an identity service provider, use only the following methods:
+
+- [`startSession()`](credentialsession/startsession().md)
+- [`listCredentials()`](credentialsession/listcredentials().md)
+- [`performWiredTransaction(using:over:instanceAID:)`](credentialsession/performwiredtransaction(using:over:instanceaid:).md)
+- [`transceive(_:)`](credentialsession/transceive(_:).md)
+- [`endWiredMode()`](credentialsession/endwiredmode().md)
+- [`invalidate()`](credentialsession/invalidate().md)
+
 ## Topics
 
 ### Verifying eligibility
 - [static var isEligible: Bool](credentialsession/iseligible.md)
-  Clients should always check if this variable returns true to dynamically determine if the current device and user configuration can utilize this service before starting a session with this client
+  A Boolean value that indicates whether the app or app extension is eligible to start a credential session.
 ### Accessing hardware information
 - [var secureElementInfo: CredentialSession.SecureElementInfo](credentialsession/secureelementinfo-swift.property.md)
   A property that provides information about the Secure Element hardware.
@@ -79,7 +90,7 @@ An app can have only one active session at a time. When your app no longer needs
 - [func enterWiredMode(using: CredentialSession.Credential) async throws](credentialsession/enterwiredmode(using:).md)
   Enters wired mode to perform maintenance operations with the given credential.
 - [func transceive(Data) async throws -> Data](credentialsession/transceive(_:).md)
-  Send a wired command Application Protocol Data Unit (APDU) to the credential.
+  Send a wired command Application Protocol Data Unit (APDU) to the credential to complete a transaction or a card content management task.
 - [func endWiredMode() async throws](credentialsession/endwiredmode.md)
   Ends wired mode and returns to management state.
 ### Performing card emulation

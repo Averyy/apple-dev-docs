@@ -8,7 +8,6 @@ Handle of device that performed the operation.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

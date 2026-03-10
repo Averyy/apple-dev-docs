@@ -43,6 +43,11 @@ For more information about defining a custom pixel format, see [`Pixel Format De
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 
+## See Also
+
+- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+  Defines a pixel format which can be used to create custom pixel buffer types.
+
 
 ---
 

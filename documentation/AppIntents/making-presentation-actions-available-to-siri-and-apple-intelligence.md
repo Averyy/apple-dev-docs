@@ -50,13 +50,6 @@ The assistant schema for the `PresentationEntity` consists of the `.presentation
 
 For a list of available app entity schemas in the `.presentation` domain, see [`AssistantSchemas.PresentationEntity`](assistantschemas/presentationentity.md).
 
-## See Also
-
-- [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
-  Assistant schema conformance for app intents that offer presentation functionality.
-- [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
-  Assistant schema conformance for app entities that describe presentation data.
-
 
 ---
 

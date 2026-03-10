@@ -40,10 +40,8 @@ protocol JournalEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making journaling actions available to Siri and Apple Intelligence](making-journaling-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s journaling functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.JournalIntent](assistantschemas/journalintent.md)
-  Assistant schema conformance for app intents that offer journaling functionality.
+- [var entry: some AssistantSchemas.Entity](assistantschemas/journalentity/entry.md)
+  The app entity describes a journal entry.
 
 
 ---

@@ -8,7 +8,6 @@ The file name of the MMS part.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

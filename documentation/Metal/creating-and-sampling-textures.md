@@ -5,12 +5,12 @@
 Load image data into a texture and apply it to a quadrangle.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 12.0+
-- macOS 10.12+
-- tvOS 12.0+
-- Xcode 12.3+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

@@ -8,7 +8,6 @@ A type to define errors that can occur when performing SMS operations.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

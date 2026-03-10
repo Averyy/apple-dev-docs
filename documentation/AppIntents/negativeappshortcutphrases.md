@@ -29,8 +29,11 @@ struct NegativeAppShortcutPhrases
 
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [struct AppShortcutPhrase](appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
+- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
+  Dynamic values you can include in the spoken phrases that run your shortcut.
 - [struct NegativeAppShortcutPhrase](negativeappshortcutphrase.md)
   An object that represents a negative phrase.
 - [NSAppIconActionTintColorName](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconActionTintColorName.md)

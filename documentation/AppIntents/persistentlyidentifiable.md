@@ -94,6 +94,8 @@ protocol PersistentlyIdentifiable
   A type that uniquely identifies a specific instance of an app entity.
 - [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
+- [struct FileEntityIdentifier](fileentityidentifier.md)
+  An identifier for an app entity that refers to a document or other file.
 
 
 ---

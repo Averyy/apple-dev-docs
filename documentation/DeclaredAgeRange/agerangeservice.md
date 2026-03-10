@@ -19,33 +19,71 @@ struct AgeRangeService
 
 #### Overview
 
-Use `AgeRangeService` to request a person’s age range and manage their access to content on your app.
-
-This service enables you to create age-range restricted experiences while respecting people’s privacy and meeting regulatory requirements. The system presents a standardized interface that people can use to share their age information with your app, and you receive the information necessary to make content decisions.
+Use `AgeRangeService` to request a person’s age range and manage their access to content on your app. This service enables you to create age-appropriate experiences while respecting people’s privacy and meeting regulatory requirements. The system presents an interface that describes the data you’re requesting and asks people to grant permission to share their age range with your app.
 
 The following code demonstrates how to request a person’s age range and determine what content to display on your app’s landing page based on their age group:
 
+**SwiftUI**:
+
 ```swift
-do {
-   let response = try await AgeRangeService.shared.requestAgeRange(ageGates: 13, 15, 18)
-   guard let lowerBound = response.lowerBound else {
-       // Allow access to under 13 features.
-       return
-   }
-   if lowerBound >= 18 {
-      // Allow access to 18+ features.
-   } else if lowerBound >= 15 {
-       // Allow access to 15+ features.
-   } else if lowerBound >= 13 {
-       // Allow access to 13+ features.
-   }
-} catch AgeRangeService.Error.notAvailable {
-   // No age range provided.
-   return
+import SwiftUI
+import DeclaredAgeRange
+
+@Environment(\.requestAgeRange) var requestAgeRange
+
+func checkAgeRange() async {
+    guard let response = try? await requestAgeRange(ageGates: 13, 15, 18),
+    case let .sharing(ageRange) = response else {
+        return // Person declined sharing, or other error.
+    }
+
+    guard let lowerBound = ageRange.lowerBound else {
+        // Person is under 13; enable age-appropriate experience.
+        return
+    }
+
+    if lowerBound >= 18 {
+        // Enable features for age 18 and older.
+    } else if lowerBound >= 15 {
+        // Enable features for ages 15-17.
+    } else {
+        // Enable features for ages 13-14.
+    }
 }
 ```
 
-The system may override your age-range restrictions based on regulations and the person’s geographic location. Age ranges are designed to provide the minimum information necessary for content decisions while protecting privacy. Parental controls and family sharing settings may affect the availability and accuracy of age information.
+**UIKit and AppKit**:
+
+```swift
+// import UIKit for iOS and iPadOS.
+// import AppKit for macOS.
+import DeclaredAgeRange
+
+func checkAgeRange() async {
+    guard let response = try? await requestAgeRange(
+        ageGates: 13, 15, 18,
+        in: viewControllerOrWindow // Use UIViewController in UIKit or NSWindow in AppKit.
+    ),
+    case let .sharing(ageRange) = response else {
+        return // Person declined sharing, or other error.
+    }
+
+    guard let lowerBound = ageRange.lowerBound else {
+        // Person is under 13; enable age-appropriate experience.
+        return
+    }
+
+    if lowerBound >= 18 {
+        // Enable features for age 18 and older.
+    } else if lowerBound >= 15 {
+        // Enable features for ages 15-17.
+    } else {
+        // Enable features for ages 13-14.
+    }
+}
+```
+
+The system may override your age gates based on the local regulations of the person’s geographic location. Age ranges provide the minimum information necessary for content decisions while protecting privacy. Parental controls and family sharing settings may affect the availability and accuracy of age information.
 
 ## Topics
 
@@ -67,21 +105,18 @@ The system may override your age-range restrictions based on regulations and the
   An option set to define parental controls enabled and shared as a part of age range declaration.
 ### Accessing regulatory features
 - [var isEligibleForAgeFeatures: Bool](agerangeservice/iseligibleforagefeatures.md)
-  A boolean value that indicates whether an adult, teen, or child is eligible for age gated features.
+  A Boolean value that indicates whether an adult, teen, or child is eligible for age-gated features.
 ### Defining regulatory features
 - [AgeRangeService.RegulatoryFeature](agerangeservice/regulatoryfeature.md)
   Defines the regulatory features that your app may need to support.
 - [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](agerangeservice/requiredregulatoryfeatures.md)
   A set of regulatory features that are required for the person.
-### Displaying update acknowledgments
-- [func showSignificantUpdateAcknowledgement(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgement(in:updatedescription:).md)
-  Displays a system-provided interface for people to acknowledge a significant app update.
 ### Handling errors
 - [AgeRangeService.Error](agerangeservice/error.md)
   An error that occurs when an age range request fails.
 ### Instance Methods
 - [func showSignificantUpdateAcknowledgment(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgment(in:updatedescription:).md)
-  Displays a system-provided sheet for people to acknowledge a significant app update.
+  Displays a system-provided interface for people to acknowledge a significant app update.
 
 ## See Also
 

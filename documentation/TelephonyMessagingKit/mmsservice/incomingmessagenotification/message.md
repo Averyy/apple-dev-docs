@@ -8,7 +8,6 @@ The incoming message.
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
-- Mac Catalyst ?+
 
 ## Declaration
 

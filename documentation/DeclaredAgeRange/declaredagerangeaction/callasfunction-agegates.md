@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: method
 
-Returns a response indicating whether the person has set their age range.
+Returns a response indicating whether the person shared their age range.
 
 **Availability**:
 - iOS 26.0+
@@ -30,18 +30,22 @@ Use [`requestAgeRange`](https://developer.apple.com/documentation/SwiftUI/Enviro
 ```swift
 struct ContentView: View {
     @Environment(\.requestAgeRange) var requestAgeRange
-    @State var ageRange: AgeRange?
 
     var body: some View {
-        Button("Declare Age Range") {
+        Button("Check Age Range") {
             Task {
                 do {
                     let response = try await requestAgeRange(ageGates: 13, 16, 18)
-                    if case let .sharing(range) = response {
-                        ageRange = range
+                    switch response {
+                    case let .sharing(ageRange):
+                        // Person shared their age range.
+                        break
+.                    case .declinedSharing:
+                        // In regulated regions, the system automatically provides the person's age range — the person can't decline sharing.
+                        break
                     }
                 } catch {
-                    // Handle error
+                    // Handle error.
                 }
             }
         }
@@ -53,9 +57,9 @@ struct ContentView: View {
 
 ## Parameters
 
-- `threshold1`: The primary age gate threshold for your app.
-- `threshold2`: An optional second age threshold for additional content tiers.
-- `threshold3`: An optional third age threshold for further content differentiation.
+- `threshold1`: The primary age threshold for your app.
+- `threshold2`: An optional second age threshold that creates an additional age range.
+- `threshold3`: An optional third age threshold that creates a final age range.
 
 
 ---

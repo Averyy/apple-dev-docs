@@ -52,13 +52,6 @@ The assistant schema for the `DocumentEntity` consists of the `.wordProcessor` d
 
 For a list of available app entity schemas in the `.wordProcessor` domain, see [`AssistantSchemas.WordProcessorEntity`](assistantschemas/wordprocessorentity.md).
 
-## See Also
-
-- [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
-  Assistant schema conformance for app intents that offer word processing functionality.
-- [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
-  Assistant schema conformance for app entities that describe text documents.
-
 
 ---
 

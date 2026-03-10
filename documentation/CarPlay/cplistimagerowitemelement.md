@@ -20,6 +20,7 @@ class CPListImageRowItemElement
 ## Topics
 
 ### Instance Properties
+- [var accessibilityLabel: String?](cplistimagerowitemelement/accessibilitylabel.md)
 - [var image: UIImage](cplistimagerowitemelement/image.md)
   The image associated with this element.
 - [var isEnabled: Bool](cplistimagerowitemelement/isenabled.md)
@@ -39,10 +40,13 @@ class CPListImageRowItemElement
 - [CPListImageRowItemImageGridElement](cplistimagerowitemimagegridelement.md)
 - [CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
 ### Conforms To
+- [CPPlayableItem](cpplayableitem.md)
 - [CVarArg](../Swift/CVarArg.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)

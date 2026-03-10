@@ -8,7 +8,6 @@ A structure representing a request to retrieve information about a business.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

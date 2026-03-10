@@ -42,12 +42,9 @@ protocol AnyIntentValue : Sendable
 
 - [class EntityProperty](entityproperty.md)
   A property wrapper that exposes the associated property to the system.
+- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
 - [protocol AppValue](appvalue.md)
   An interface that describes conceptual types you use in app intents.
-- [protocol AppEnum](appenum.md)
-  An interface to express that a custom type has a predefined, static set of valid values to display.
-- [protocol URLRepresentableEnum](urlrepresentableenum.md)
-  An app enum with a URL representation.
 
 
 ---

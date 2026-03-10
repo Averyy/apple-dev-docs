@@ -8,7 +8,6 @@ An enumeration that represents an RCS destination or sender.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

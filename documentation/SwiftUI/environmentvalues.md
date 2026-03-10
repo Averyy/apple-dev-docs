@@ -339,6 +339,8 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
   The active appearance expected of controls in a window.
 ### Instance Properties
+- [var accessibilityReduceHighlightingEffects: Bool](environmentvalues/accessibilityreducehighlightingeffects.md)
+  Whether the system preference for Reduce Highlighting Effects is enabled.
 - [var accessibilityShowBorders: Bool](environmentvalues/accessibilityshowborders.md)
   Whether the system preference for Show Borders is enabled. On macOS this is true when Increased Contrast is enabled.
 - [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
@@ -379,10 +381,8 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var requestAgeRange: DeclaredAgeRangeAction](environmentvalues/requestagerange.md)
   An action that presents a system interface to request a person’s age range.
 - [var requestAppDeletion: RequestAppDeletionAction](environmentvalues/requestappdeletion.md)
-- [var showSignificantUpdateAcknowledgement: SignificantUpdateAction](environmentvalues/showsignificantupdateacknowledgement.md)
-  An action that shows a system sheet for significant update acknowledgments.
 - [var showSignificantUpdateAcknowledgment: SignificantUpdateAction](environmentvalues/showsignificantupdateacknowledgment.md)
-  An action that shows a system sheet for significant update acknowledgments.
+  Presents a system interface to inform people about significant app changes and request their acknowledgment.
 - [var supportedActivityFamilies: Set<ActivityFamily>](environmentvalues/supportedactivityfamilies.md)
   An environment value that that indicates potential rendered family for a Live Activity.
 - [var supportsImagePlayground: Bool](environmentvalues/supportsimageplayground.md)

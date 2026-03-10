@@ -41,6 +41,11 @@ If any of the conditions are met, confirmation will be requested.
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
+## See Also
+
+- [struct IntentChoiceOption](intentchoiceoption.md)
+  A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
+
 
 ---
 

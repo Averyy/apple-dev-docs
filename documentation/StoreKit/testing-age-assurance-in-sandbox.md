@@ -24,8 +24,6 @@ In the Sandbox environment you can test how your app responds to various age ran
 2. In the Sandbox Apple Account modal, select Manage.
 3. Scroll down and select Age Assurance or Revoke App Consent.
 
-You can also change these settings in App Store Connect.
-
 When you select a scenario, the Declared Age Range API returns the corresponding [`upperBound`](https://developer.apple.com/documentation/DeclaredAgeRange/AgeRangeService/AgeRange/upperBound), [`lowerBound`](https://developer.apple.com/documentation/DeclaredAgeRange/AgeRangeService/AgeRange/lowerBound), and [`ageRangeDeclaration`](https://developer.apple.com/documentation/DeclaredAgeRange/AgeRangeService/AgeRange/ageRangeDeclaration) values, and PermissionKit returns the associated response status. Refer to the following table to check the specific values returned for each test case.
 
 > **Note**: The age ranges in the test case are inclusive, meaning that all the ages between and including that age qualify as valid inputs in the test case.

@@ -54,6 +54,8 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [func didClone(from: Entity)](entity/didclone(from:).md)
   Tells a newly cloned entity that cloning is complete.
 ### Loading an entity from a file
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Loading entities from a file](loading-entities-from-a-file.md)

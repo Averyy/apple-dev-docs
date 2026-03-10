@@ -8,7 +8,6 @@ A structure that represents RFC 3994 composing indicator content in an RCS messa
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

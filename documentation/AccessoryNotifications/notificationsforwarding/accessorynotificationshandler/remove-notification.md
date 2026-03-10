@@ -16,6 +16,10 @@ Removes a previously posted notification from your accessory.
 func remove(notification: AccessoryNotification)
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## Parameters
 
 - `notification`: A notification to remove from the accessory’s display.

@@ -5,11 +5,11 @@
 Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 11.3+
-- Xcode 13.3+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- Xcode 26.3+ (Beta)
 
 #### Overview
 

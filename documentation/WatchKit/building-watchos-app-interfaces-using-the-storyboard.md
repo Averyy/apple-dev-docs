@@ -22,8 +22,8 @@ You can fine-tune an interface element’s size and layout using the Attributes 
 
 - **Horizontal**: Configures the horizontal position of the item within the space provided by its container.
 - **Vertical**: Configures the vertical position of the item within the space provided by its container.
-- **Width**: Determines how the system calculate’s the object’s width. This attribute has three possible values: Size to Fit Content, Relative to Container, and Fixed. Size to Fit Content sets the width based on the object’s content. Relative to Container sets the width to a percentage of the container’s width. Fixed sets the width to the specified size in points.
-- **Height**: Determines how the system calculate’s the object’s height. This attribute has three possible values: Size to Fit Content, Relative to Container, and Fixed. Size to Fit Content sets the height based on the object’s content. Relative to Container sets the height to a percentage of the container’s height. Fixed sets the height to the specified size in points.
+- **Width**: Determines how the system calculates the object’s width. This attribute has three possible values: Size to Fit Content, Relative to Container, and Fixed. Size to Fit Content sets the width based on the object’s content. Relative to Container sets the width to a percentage of the container’s width. Fixed sets the width to the specified size in points.
+- **Height**: Determines how the system calculates the object’s height. This attribute has three possible values: Size to Fit Content, Relative to Container, and Fixed. Size to Fit Content sets the height based on the object’s content. Relative to Container sets the height to a percentage of the container’s height. Fixed sets the height to the specified size in points.
 
 Groups provide additional options to manage their content:
 

@@ -30,7 +30,7 @@ The credential session state must be [`CredentialSession.State.wired(credential:
 - [func enterWiredMode(using: CredentialSession.Credential) async throws](credentialsession/enterwiredmode(using:).md)
   Enters wired mode to perform maintenance operations with the given credential.
 - [func transceive(Data) async throws -> Data](credentialsession/transceive(_:).md)
-  Send a wired command Application Protocol Data Unit (APDU) to the credential.
+  Send a wired command Application Protocol Data Unit (APDU) to the credential to complete a transaction or a card content management task.
 
 
 ---

@@ -15,6 +15,10 @@ A primary text for the notification.
 let title: String?
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Discussion
 
 This property contains the notification’s main display text. For supplementary text, see [`subtitle`](accessorynotification/subtitle.md).

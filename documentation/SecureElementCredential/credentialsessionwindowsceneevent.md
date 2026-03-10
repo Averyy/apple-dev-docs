@@ -3,7 +3,7 @@
 **Framework**: SecureElementCredential  
 **Kind**: enum
 
-An event that a credential session sends to a UIKit scene.
+A CredentialSession event send to a `UIScene` or `UIWindowScene`.
 
 **Availability**:
 - iOS 17.4+
@@ -19,13 +19,17 @@ enum CredentialSessionWindowSceneEvent
 
 - [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
 
+#### Overview
+
+All files that refer to symbols defined here should never `import SwiftUI` Importing SwiftUI with UIKit will result in ambiguous symbols during compilation.
+
 ## Topics
 
 ### Events
 - [CredentialSessionWindowSceneEvent.presentation](credentialsessionwindowsceneevent/presentation.md)
-  The user performs a gesture, such as double-pressing the side button, to present an NFC display.
+  User has perform gesture on device to request for app presentation
 - [CredentialSessionWindowSceneEvent.readerDetected](credentialsessionwindowsceneevent/readerdetected.md)
-  The eligible device detects the RF field of an NFC reader.
+  External NFC reader is detected, i.e. presence of a NFC field
 
 ## Relationships
 
@@ -39,7 +43,6 @@ enum CredentialSessionWindowSceneEvent
 ## See Also
 
 - [func windowScene(UIWindowScene, didReceiveCredentialSessionWindowSceneEvent: CredentialSessionWindowSceneEvent)](credentialsessionwindowscenedelegate/windowscene(_:didreceivecredentialsessionwindowsceneevent:).md)
-  Informs your app that a credential session event initiated a UIKit scene creation.
 
 
 ---

@@ -37,6 +37,10 @@ struct CreateOptions
 
 ## See Also
 
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+  Display a 3D model that generates procedural textures in a reality view.
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+  Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [class TextureResource](textureresource.md)
   A representation of a texture.
 - [TextureResource.SamplingQuality](textureresource/samplingquality.md)

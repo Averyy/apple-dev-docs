@@ -8,7 +8,6 @@ A string that represents the conversation identifier for this group.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

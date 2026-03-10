@@ -47,13 +47,6 @@ struct CameraCaptureMode: String, AppEnum {
 
 For a list of available app enumeration schemas in the `.camera` domain, see [`AssistantSchemas.CameraEnum`](assistantschemas/cameraenum.md).
 
-## See Also
-
-- [AssistantSchemas.CameraIntent](assistantschemas/cameraintent.md)
-  Assistant schema conformance for app intents that offer camera functionality.
-- [AssistantSchemas.CameraEnum](assistantschemas/cameraenum.md)
-  Assistant schema conformance for types you use for camera functionality.
-
 
 ---
 

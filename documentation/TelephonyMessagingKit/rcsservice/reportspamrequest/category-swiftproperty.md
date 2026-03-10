@@ -8,7 +8,6 @@ An optional category to classify the spam type of the message.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

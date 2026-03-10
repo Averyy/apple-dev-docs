@@ -44,10 +44,12 @@ protocol PresentationEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making presentation actions available to Siri and Apple Intelligence](making-presentation-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s presentation functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
-  Assistant schema conformance for app intents that offer presentation functionality.
+- [var document: some AssistantSchemas.Entity](assistantschemas/presentationentity/document.md)
+  The app entity describes a presentation.
+- [var slide: some AssistantSchemas.Entity](assistantschemas/presentationentity/slide.md)
+  The app entity describes a slide.
+- [var template: some AssistantSchemas.Entity](assistantschemas/presentationentity/template.md)
+  The app entity describes a template for a presentation.
 
 
 ---

@@ -6,7 +6,7 @@
 An error that indicates the request is invalid because it has too many applied constraints.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

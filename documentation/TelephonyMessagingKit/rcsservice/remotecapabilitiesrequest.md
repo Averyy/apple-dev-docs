@@ -8,7 +8,6 @@ A structure representing a request to retrieve the capabilities of a remote hand
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A handle that represents the originator of an incoming message or the destinatio
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

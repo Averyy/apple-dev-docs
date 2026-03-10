@@ -29,6 +29,8 @@ The [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol uses 
 
 ## See Also
 
+- [Receiving iOS notifications on an accessory](../AccessoryNotifications/receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage notifications for your accessory.
 - [protocol AccessoryDataProvider](accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)

@@ -8,7 +8,6 @@ The disposition of the MMS part, indicating whether the part renders inline or a
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

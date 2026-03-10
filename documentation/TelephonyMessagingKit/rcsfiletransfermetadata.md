@@ -8,7 +8,6 @@ A structure that contains metadata about an RCS file transfer.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

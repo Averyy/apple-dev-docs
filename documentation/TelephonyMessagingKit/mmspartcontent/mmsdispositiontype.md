@@ -8,7 +8,6 @@ A structure that defines the disposition of the content part when rendered.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Group handle indicating the group from which to remove participants.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

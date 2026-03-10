@@ -65,6 +65,8 @@ For example, on the left is a case of two cubes, the larger red cube is slightly
 
 ## See Also
 
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+  Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 

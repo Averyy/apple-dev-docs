@@ -37,6 +37,9 @@ Because this type conforms to the [`StaticDisplayRepresentable`](staticdisplayre
 
 ### Resolving the type
 - [static var defaultResolverSpecification: some ResolverSpecification](appenum/defaultresolverspecification.md)
+### URL representation
+- [struct EnumURLRepresentation](enumurlrepresentation.md)
+  The URL representation of an app enum.
 
 ## Relationships
 
@@ -63,12 +66,6 @@ Because this type conforms to the [`StaticDisplayRepresentable`](staticdisplayre
 
 ## See Also
 
-- [class EntityProperty](entityproperty.md)
-  A property wrapper that exposes the associated property to the system.
-- [protocol AppValue](appvalue.md)
-  An interface that describes conceptual types you use in app intents.
-- [protocol AnyIntentValue](anyintentvalue.md)
-  A type the system uses to access a parameter or property value.
 - [protocol URLRepresentableEnum](urlrepresentableenum.md)
   An app enum with a URL representation.
 

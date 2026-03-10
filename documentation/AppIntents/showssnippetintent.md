@@ -33,6 +33,27 @@ protocol ShowsSnippetIntent : IntentResult where Self.Snippet == _SnippetIntentC
 ### Conforming Types
 - [IntentResultContainer](intentresultcontainer.md)
 
+## See Also
+
+- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+  Enable people to view the outcome of an app intent and immediately perform follow-up actions.
+- [struct IntentDialog](intentdialog.md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [protocol IntentResult](intentresult.md)
+  A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
+- [struct IntentResultContainer](intentresultcontainer.md)
+  An object that represents the output of a completed intent.
+- [protocol OpensIntent](opensintent.md)
+  The result of performing an action that delivers an app intent back to the initiator of the action.
+- [protocol ProvidesDialog](providesdialog.md)
+  The result of performing an action that delivers a dialog back to the initiator of the action.
+- [protocol ReturnsValue](returnsvalue.md)
+  The result of performing an action that delivers a value back to the initiator.
+- [protocol ShowsSnippetView](showssnippetview.md)
+  The result of performing an action that delivers a view back to the initiator of the action.
+- [protocol ResultsCollection](resultscollection.md)
+  A protocol representing a collection of returned items with support for sectioning.
+
 
 ---
 

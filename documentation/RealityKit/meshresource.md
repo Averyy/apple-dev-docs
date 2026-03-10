@@ -159,6 +159,18 @@ A high-level representation of a collection of vertices and edges that define a 
 
 ## See Also
 
+- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
+- [Creating 3D models as movable windows](../visionOS/creating-a-volumetric-window-in-visionos.md)
+  Display 3D content with a volumetric window that people can move.
+- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
+  Implement a painting canvas entity, and update its mesh to represent a stroke.
+- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
+  Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
+- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
+  Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+  Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [struct ModelComponent](modelcomponent.md)
   A component that contains a mesh and materials for the visual appearance of an entity.
 - [class ModelEntity](modelentity.md)

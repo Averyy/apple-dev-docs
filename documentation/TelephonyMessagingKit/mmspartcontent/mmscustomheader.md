@@ -8,7 +8,6 @@ A structure that defines a custom header as a key-value pair.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

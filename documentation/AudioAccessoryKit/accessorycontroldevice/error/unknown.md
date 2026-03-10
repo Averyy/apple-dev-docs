@@ -17,12 +17,8 @@ case unknown
 
 ## See Also
 
-- [AccessoryControlDevice.Error.connectionFailed](accessorycontroldevice/error/connectionfailed.md)
-  An error indicating the Bluetooth connection to the device failed.
-- [AccessoryControlDevice.Error.deviceNotCapable](accessorycontroldevice/error/devicenotcapable.md)
-  An error indicating the device doesn’t support the requested capability.
-- [AccessoryControlDevice.Error.fatal](accessorycontroldevice/error/fatal.md)
-  An error indicating a fatal system error.
+- [AccessoryControlDevice.Error.accessoryNotCapable](accessorycontroldevice/error/accessorynotcapable.md)
+  An error indicating the accessory doesn’t support the requested capability.
 - [AccessoryControlDevice.Error.invalidRequest](accessorycontroldevice/error/invalidrequest.md)
   An error indicating an invalid request.
 - [AccessoryControlDevice.Error.invalidated](accessorycontroldevice/error/invalidated.md)

@@ -15,6 +15,10 @@ A structure that uniquely identifies the notification.
 let identifier: AccessoryNotification.Identifier
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Discussion
 
 This structure combines the source app’s bundle identifier ([`sourceIdentifier`](accessorynotification/identifier-swift.struct/sourceidentifier.md)) with an app-provided notification identifier ([`notificationIdentifier`](accessorynotification/identifier-swift.struct/notificationidentifier.md)).

@@ -1,4 +1,4 @@
-# tvOS 26.4 Beta 3 Release Notes
+# tvOS 26.4 Beta 4 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.4 beta 3. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.4 beta 4. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+
+##### Address Sanitizer
+
+###### Known Issues
+
+- Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
 
 ##### Background Assets
 
@@ -15,9 +21,9 @@ The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices run
 - You can now check the status of an asset pack while offline by calling `localStatus(ofAssetPackWithID:)` or `assetPackIsAvailableLocally(withID:)` on the shared asset pack manager. The former method returns all available status information. The latter returns only a Boolean value but can be called synchronously. Not all status information is available offline.  (164498466)
 - You can make the latest version of an asset pack available locally by calling `ensureLocalAvailability(of:requireLatestVersion:)` on the shared asset pack manager and passing `true` to the `shouldUpdate` parameter.  (166237389)
 
-###### Known Issues
+###### Resolved Issues
 
-- Apps might crash when downloading asset packs.  (169648111) **Workaround:** If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
+- Fixed: Apps might crash when downloading asset packs.  (169648111)
 
 ##### Networking
 

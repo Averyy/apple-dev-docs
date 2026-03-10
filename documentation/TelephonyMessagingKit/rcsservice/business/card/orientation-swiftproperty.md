@@ -8,7 +8,6 @@ The orientation to use when displaying the card.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.1+
 
 ## Declaration
 

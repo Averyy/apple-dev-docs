@@ -8,7 +8,6 @@ Enumeration representing the cache policy to use in requests.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

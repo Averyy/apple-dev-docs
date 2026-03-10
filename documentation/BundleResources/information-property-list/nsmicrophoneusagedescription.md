@@ -36,6 +36,7 @@ A message that tells people why the app is requesting access to the device’s m
 - [NSCameraUsageDescription](information-property-list/nscamerausagedescription.md)
   A message that tells people why the app is requesting access to the device’s camera.
 - [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
+  A message that tells people why the app is requesting access to the device’s main camera.
 
 
 ---

@@ -8,6 +8,10 @@ Learn about important changes to Foundation Models.
 
 Browse notable changes in [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels).
 
+#### March 2026
+
+- Use the [`Foundation Models SDK for Python`](https://developer.apple.comhttps://github.com/apple/python-apple-fm-sdk) to access the on-device foundation model at the core of Apple Intelligence.
+
 #### February 2026
 
 - Use the latest on-device large language model that improves instruction-following and tool-calling abilities. Because the model changes when a person updates to iOS 26.4, iPadOS 26.4, macOS 26.4, and visionOS 26.4, test your prompts with the new model to verify your app’s behavior. If necessary, update and maintain prompts for each model version.

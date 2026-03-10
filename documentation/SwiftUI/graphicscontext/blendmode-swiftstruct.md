@@ -69,7 +69,7 @@ Use one of these values to set the [`blendMode`](graphicscontext/blendmode-swift
   A mode that uses the luminance values of the background with the hue and saturation values of the source image.
 - [static var luminosity: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/luminosity.md)
   A mode that uses the hue and saturation of the background with the luminance of the source image.
-### Accessing porter-duff modes
+### Accessing Porter-Duff modes
 - [static var clear: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/clear.md)
   A mode that clears any pixels that the source image overwrites.
 - [static var copy: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/copy.md)

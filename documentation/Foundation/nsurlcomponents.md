@@ -28,7 +28,7 @@ The [`NSURLComponents`](nsurlcomponents.md) class is a class that is designed to
 
 You create a URL components object in one of three ways: from an [`NSString`](nsstring.md) object that contains a URL, from an [`NSURL`](nsurl.md) object, or from scratch by using the default initializer. From there, you can modify the URL’s individual components and subcomponents by modifying various properties, either in unencoded form or in URL-encoded form. If you set the unencoded property, you can then obtain the encoded equivalent by reading the encoded property value and vice versa.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLComponents`](urlcomponents.md) structure, which bridges to the [`NSURLComponents`](nsurlcomponents.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLComponents`](urlcomponents.md) structure, which bridges to the [`NSURLComponents`](nsurlcomponents.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
 
 ## Topics
 

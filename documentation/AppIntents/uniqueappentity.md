@@ -36,8 +36,6 @@ protocol UniqueAppEntity : AppEntity where Self.DefaultQuery : UniqueAppEntityQu
 
 ## See Also
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-  Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 - [protocol AppEntity](appentity.md)
   An interface for exposing a custom type or app-specific concept to system experiences like Siri and the Shortcuts app.
 - [protocol FileEntity](fileentity.md)
@@ -48,6 +46,7 @@ protocol UniqueAppEntity : AppEntity where Self.DefaultQuery : UniqueAppEntityQu
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
 - [protocol URLRepresentableEntity](urlrepresentableentity.md)
   An app entity with a URL representation.
+- [macro UnionValue()](unionvalue().md)
 
 
 ---

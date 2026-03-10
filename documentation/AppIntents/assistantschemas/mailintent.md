@@ -56,13 +56,6 @@ protocol MailIntent : AssistantSchemas.Model
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
 
-## See Also
-
-- [Making email actions available to Siri and Apple Intelligence](making-email-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities to integrate your app’s email functionality with Siri and Apple Intelligence.
-- [AssistantSchemas.MailEntity](assistantschemas/mailentity.md)
-  Assistant schema conformance for app entities that describe email.
-
 
 ---
 

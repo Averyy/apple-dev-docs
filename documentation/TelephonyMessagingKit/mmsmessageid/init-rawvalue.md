@@ -8,7 +8,6 @@ Initializes an message identifier with the given raw value.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

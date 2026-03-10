@@ -14,11 +14,24 @@ When creating fully immersive content using Metal, you draw everything the perso
 
 For information about how to draw content with Metal, see [`Metal`](https://developer.apple.com/documentation/Metal).
 
-##### Add an Immersive Space for Your Content
+#### Add an Immersive Space for Your Content
 
 To present your fully immersive experience, configure your app with an `ImmersiveSpace` scene that gets its content from a [`CompositorLayer`](compositorlayer.md) type. This type provides the [`LayerRenderer`](layerrenderer.md) type you need to set up and run your app’s custom rendering loop. The following example shows how to set up the space and your app’s content. In the closure for the [`CompositorLayer`](compositorlayer.md) type, create a new thread to configure and start your app’s render loop.
 
 ```swift
+final class RendererTaskExecutor: TaskExecutor {
+    private let queue = DispatchQueue(label: "RenderThreadQueue", qos: .userInteractive)
+    func enqueue(_ job: UnownedJob) {
+        queue.async {
+            job.runSynchronously(on: self.asUnownedSerialExecutor())
+        }
+    }
+    nonisolated func asUnownedSerialExecutor() -> UnownedTaskExecutor {
+        return UnownedTaskExecutor(ordinary: self)
+    }
+    static var shared: RendererTaskExecutor = RendererTaskExecutor()
+}
+
 @main
 struct MyApp: App {
     var body: some Scene {
@@ -27,12 +40,10 @@ struct MyApp: App {
         ImmersiveSpace(id: "MyContent") {
             CompositorLayer { layerRenderer in
                 // Set up and run the Metal render loop.
-                let renderThread = Thread {
+                Task(executorPreference: RendererTaskExecutor.shared) {
                     let engine = myEngineCreate(layerRenderer)
                     myEngineRenderLoop(engine)
                 }
-                renderThread.name = "Render Thread"
-                renderThread.start()
             }
         }
 
@@ -45,11 +56,13 @@ struct MyApp: App {
 
 ```
 
+> **Note**:  `RendererTaskExecutor` shows an example of a [`TaskExecutor`](https://developer.apple.com/documentation/Swift/TaskExecutor) implementation suitable for use in a render loop.
+
 Don’t include any style modifiers on a space that contains a [`CompositorLayer`](compositorlayer.md) type. The system automatically configures a space with [`CompositorLayer`](compositorlayer.md) content as fully immersive, and ignores any style modifiers.
 
 Typically, apps don’t display an immersive space immediately at launch. Transitioning to a fully immersive experience can be jarring if someone isn’t ready for it, so it’s preferable to display a window first and let someone enter the space when they’re ready. However, if you need to display a space first, add the `UIApplicationPreferredDefaultSceneSessionRole` key to the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) in your app’s `Info.plist` file. Set the value of this key to `CPSceneSessionRoleImmersiveSpaceApplication`. When this key is present, the system displays the first space it finds in your app’s list of scenes.
 
-##### Customize the Configuration of Your Layer
+#### Customize the Configuration of Your Layer
 
 If your Metal rendering engine requires specific texture layouts, pixel formats, or rendering options, specify those details when you configure your [`CompositorLayer`](compositorlayer.md) type. In your scene creation code, pass a type that adopts [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) as a parameter to your scene content. The system uses that information to configure the Metal textures your [`LayerRenderer`](layerrenderer.md) provides. If you don’t provide a custom configuration, Compositor Services uses a set of default configuration values.
 
@@ -61,18 +74,17 @@ struct MyContentConfiguration: CompositorLayerConfiguration {
         capabilities: LayerRenderer.Capabilities, 
         configuration: inout LayerRenderer.Configuration
     ) {
-        let supportsFoveation = layerCapabilites.supportsFoveation
-        let supportedLayouts = supportedLayouts(options: supportsFoveation ?
-                                                [.foveationEnabled] : [])
+        let supportsFoveation = capabilities.supportsFoveation
+        let supportedLayouts = capabilities.supportedLayouts(options: supportsFoveation ?
+                                                             [.foveationEnabled] : [])
 
         configuration.layout = supportedLayouts.contains(.layered) ? .layered : .dedicated
         configuration.isFoveationEnabled = supportsFoveation
 
         // HDR support
         configuration.colorFormat = .rgba16Float
-
     }
-
+}
 ```
 
 > **Note**:  Apple Vision Pro uses the P3 color space for all pixel color values.
@@ -85,14 +97,12 @@ struct MyApp: App {
     var body: some Scene {
         
         ImmersiveSpace(id: "MyContent") {
-            CompositorLayer (configuration: MyContentConfiguration()) { layerRenderer in
+            CompositorLayer(configuration: MyContentConfiguration()) { layerRenderer in
                 // Set up and run the Metal render loop.
-                let renderThread = Thread {
+                Task(executorPreference: RendererTaskExecutor.shared) {
                     let engine = myEngineCreate(layerRenderer)
                     myEngineRenderLoop(engine)
                 }
-                renderThread.name = "Render Thread"
-                renderThread.start()
             }
         }
         // Other scenes...
@@ -101,7 +111,7 @@ struct MyApp: App {
 
 ```
 
-##### Configure Your Apps Rendering Loop
+#### Configure Your Apps Rendering Loop
 
 When your app displays a space with a [`CompositorLayer`](compositorlayer.md), the system runs the code you provide. Use that code to configure your Metal rendering engine and spawn a thread for your rendering loop, but don’t start rendering your content immediately. Instead, check the state of the [`LayerRenderer`](layerrenderer.md) type to see if the scene is actually running. The system might leave a scene in the [`LayerRenderer.State.paused`](layerrenderer/state-swift.enum/paused.md) state while it confirms the person wants to enter the fully immersive experience. The system changes the state to [`LayerRenderer.State.running`](layerrenderer/state-swift.enum/running.md) only when it’s ready to display your scene’s content.
 
@@ -141,7 +151,7 @@ Creating Metal pipeline state information is potentially expensive, so use the s
 
 Until your scene is visible, you can’t fetch new frames from the [`LayerRenderer`](layerrenderer.md) and use them to configure your rendering code. If you need information about the configuration of textures, create a [`LayerRenderer.Properties`](layerrenderer/properties-swift.struct.md) type using the same [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) information you used to configure your scene. The [`LayerRenderer.Properties`](layerrenderer/properties-swift.struct.md) type contains the number of views to draw and the organization of textures for each frame.
 
-##### Update and Encode a Single Frame of Content
+#### Update and Encode a Single Frame of Content
 
 While your layer is in the [`LayerRenderer.State.running`](layerrenderer/state-swift.enum/running.md) state, fetch a new frame and fill it with content each time through your render loop. The layer manages a finite number of frames, so render only one frame at a time and submit it. Compositor Services provides timing information with each frame to help you start work on the frame at the appropriate time and submit your changes before the system needs them.
 
@@ -155,13 +165,14 @@ The following sequence shows the steps to create a single frame of content. Perf
 6. Call [`endUpdate()`](layerrenderer/frame/endupdate().md) to mark the end of the update phase.
 7. Call [`wait(until:tolerance:)`](layerrenderer/clock/wait(until:tolerance:).md) (or [`cp_time_wait_until`](cp_time_wait_until.md)) to pause your render loop until the optimal rendering time.
 8. Call [`startSubmission()`](layerrenderer/frame/startsubmission().md) to mark the start of submission phase.
-9. Fetch the predicted device anchor from ARKit using the [`frameTiming`](layerrenderer/drawable/frametiming.md) information, and apply that anchor to your frame.
-10. Encode any drawing commands that depend on the device position or orientation.
-11. Call [`encodePresent(commandBuffer:)`](layerrenderer/drawable/encodepresent(commandbuffer:).md) to encode a presentation event into your command buffer.
-12. Commit your command buffer.
-13. Call [`endSubmission()`](layerrenderer/frame/endsubmission().md) to mark the end of your GPU submission.
+9. Call [`queryDrawables()`](layerrenderer/frame/querydrawables().md) to query all the drawables from your frame, then perform the steps 10-13 for each drawable. This function usually returns one drawable, but can return multiple in some situations. For example, it returns two drawables if you’re performing a Reality Composer Pro capture (see [`Capturing screenshots and video from Apple Vision Pro for 2D viewing`](https://developer.apple.com/documentation/visionOS/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)).
+10. Fetch the predicted device anchor from ARKit using the [`frameTiming`](layerrenderer/drawable/frametiming.md) information, and apply that anchor to your drawables.
+11. Encode any drawing commands that depend on the device position or orientation.
+12. Call [`encodePresent(commandBuffer:)`](layerrenderer/drawable/encodepresent(commandbuffer:).md) to encode a presentation event into your command buffer.
+13. Commit your command buffer.
+14. Call [`endSubmission()`](layerrenderer/frame/endsubmission().md) to mark the end of your GPU submission.
 
-The system uses data from the [`startUpdate()`](layerrenderer/frame/startupdate().md), [`endUpdate()`](layerrenderer/frame/endupdate().md), [`startSubmission()`](layerrenderer/frame/startsubmission().md), and [`endSubmission()`](layerrenderer/frame/endsubmission().md) functions to improve the timing information for subsequent frames. Call these functions to ensure your app has accurate timing information, and to help the system manage CPU and GPU resources efficiently.
+The system uses data from the [`startUpdate()`](layerrenderer/frame/startupdate().md), [`endUpdate()`](layerrenderer/frame/endupdate().md), [`startSubmission()`](layerrenderer/frame/startsubmission().md), and [`endSubmission()`](layerrenderer/frame/endsubmission().md) functions to improve the timing information for subsequent frames. Call these functions to give your app accurate timing information, and to help the system manage CPU and GPU resources efficiently.
 
 The following example shows the structure of the drawing code for rendering one frame of content. The custom `my_engine_gather_inputs`, `my_engine_update_frame`, and `my_engine_draw_and_submit_frame` functions perform custom tasks the app needs to update its data structures and render the content of the frame. The code also fetches the current device anchor from ARKit using the custom `my_engine_get_ar_device_anchor` function and associates that information with the frame.
 
@@ -187,24 +198,30 @@ void my_engine_render_new_frame(my_engine *engine) {
     // Wait until the optimal time for querying the input.
     cp_time_wait_until(cp_frame_timing_get_optimal_input_time(timing));
 
-    // Submit the frame...
+    // Start the frame submission...
     cp_frame_start_submission(frame);
-    cp_drawable_t drawable = cp_frame_query_drawable(frame);
-    if (drawable == nullptr) { return; }
 
-    cp_frame_timing_t timing = cp_drawable_get_frame_timing(frame);
-    ar_device_anchor_t anchor = my_engine_get_ar_device_anchor(engine, timing);
-    cp_drawable_set_ar_device_anchor(drawable, anchor);
+    // Query and render to the drawables...
+    cp_drawable_array_t drawables = cp_frame_query_drawables(frame);
+    size_t drawable_count = cp_drawable_array_get_count(drawables);
+    if (drawable_count == 0) { return; }
+    
+    for (int drawable_idx; drawable_idx < drawable_count; drawable_idx++) {
+        cp_drawable_t drawable = cp_drawable_array_get_drawable(drawables, drawable_idx);
+        cp_frame_timing_t timing = cp_drawable_get_frame_timing(frame);
+        ar_device_anchor_t anchor = my_engine_get_ar_device_anchor(engine, timing);
+        cp_drawable_set_ar_device_anchor(drawable, anchor);
+        my_engine_draw_and_present_drawable(engine, frame, drawable);
+    }
 
-    my_engine_draw_and_submit_frame(engine, frame, drawable);
-
+    // End the frame submission...
     cp_frame_end_submission(frame);
  }
 ```
 
 For information about how to set up Metal command buffers and command encoders, see [`Setting up a command structure`](https://developer.apple.com/documentation/Metal/setting-up-a-command-structure).
 
-##### Configure the Render Pass Descriptor for the Frame
+#### Configure the Render Pass Descriptor for the Frame
 
 During drawing, add the textures from your frame’s [`LayerRenderer.Drawable`](layerrenderer/drawable.md) to your render pass descriptor. The render pass descriptor tells Metal where to deliver the output of your rendering commands. Because each frame of content relies on different textures, you must create and configure a render pass descriptor with the current frame’s textures each time through your render loop.
 
@@ -232,9 +249,9 @@ MTLRenderPassDescriptor* my_renderer_create_render_descriptor(my_renderer *rende
 
 For a [`LayerRenderer.Layout.dedicated`](layerrenderer/layout/dedicated.md) layout, you must perform two render passes on your content and create a separate render pass descriptor for each one. Configure each render pass descriptor with the texture at a different index in the arrays of the [`LayerRenderer.Drawable`](layerrenderer/drawable.md) type.
 
-##### Retrieve Device Anchor Information and Attach It to the Frame
+#### Retrieve Device Anchor Information and Attach It to the Frame
 
-To prevent the person viewing your content from experiencing disorientation or physical discomfort, it’s essential to match the position of the camera in your scene to the location of the person’s head. Matching the person’s head movements ensures that what they see doesn’t conflict with the input their body receives from the real world.
+To prevent the person viewing your content from experiencing disorientation or physical discomfort, it’s essential to match the position of the camera in your scene to the location of the person’s head. Matching the person’s head movements results in that what they see doesn’t conflict with the input their body receives from the real world.
 
 Because you render your app’s content in advance, you also need to know the position and orientation of the device in advance. To retrieve this information, use ARKit to call [`ar_world_tracking_provider_query_device_anchor_at_timestamp`](https://developer.apple.com/documentation/ARKit/ar_world_tracking_provider_query_device_anchor_at_timestamp) during the encoding process for your frame. ARKit provides this function to deliver the expected device anchor at the time you specify. Use this information to configure any camera positions during rendering.
 
@@ -259,7 +276,7 @@ When it displays your frame, the system checks for a discrepancy between the pre
 
 For more information about how to track the device anchor, see [`ARKit`](https://developer.apple.com/documentation/ARKit).
 
-##### Render Each View with the Correct Perspective
+#### Render Each View with the Correct Perspective
 
 The goal of your Metal rendering engine is to produce 2D textures to display to the viewer. When your content is 3D, you need to map points in your scene to the 2D texture in a way that makes the content look realistically 3D to someone viewing it. This process requires you to create a projection matrix that maps points in your 3D content to points on the texture for each view. For stereoscopic rendering, you also have to account for the positional differences between the device anchor and the position of the person’s eyes.
 
@@ -306,7 +323,7 @@ static const NSUInteger MaxBuffersInFlight = 3;
 
 ```
 
-##### Respond to Interactions with Your Custom Content
+#### Respond to Interactions with Your Custom Content
 
 When your scene is visible, you’re responsible for managing all interactions with your custom content. Because you render everything yourself using Metal, you can’t rely on view-based events or gesture recognizers for input. Instead, use one of the following techniques:
 
@@ -322,23 +339,22 @@ struct MyApp: App {
         
         // Create a fully immersive scene.
         ImmersiveSpace(id: "MyContent") {
-            CompositorLayer (configuration: MyContentConfiguration()) { layerRenderer in
+            CompositorLayer(configuration: MyContentConfiguration()) { layerRenderer in
                 // Set up and run the Metal render loop.
-                let renderThread = Thread {
+                Task(executorPreference: RendererTaskExecutor.shared) {
                     let engine = myEngineCreate(layerRenderer)
-                    myEngineRenderLoop(engine)
-                }
-                renderThread.name = "Render Thread"
-                renderThread.start()
 
-                // Handle any events in the scene.
-                layerRenderer.onSpatialEvent = { eventCollection in
-                    var events = eventCollection.map { mySpatialEvent($0) }
-                    myEnginePushSpatialEvents(engine, &events, events.count)
+                    // Set up event handler.
+                    layerRenderer.onSpatialEvent = { eventCollection in
+                        var events = eventCollection.map { mySpatialEvent($0) }
+                        myEnginePushSpatialEvents(engine, &events, events.count)
+                    }
+
+                    myEngineRenderLoop(engine)
                 }
             }
         }
-         // Other scenes...
+        // Other scenes...
     }
 }
 

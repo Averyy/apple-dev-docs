@@ -61,10 +61,10 @@ Widgets, watch complications, controls, and Live Activities use a widget extensi
 
 Depending on the context, a widget or Live Activity changes its appearance to best fit its context. For example, a [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget appears as follows:
 
-- On the Home Screen of iPhone and iPad, it uses it uses the  [`accented`](widgetrenderingmode/accented.md) rendering mode for light and dark appearances, and [`fullColor`](widgetrenderingmode/fullcolor.md) on devices that run iOS and iPad 18 or older.
+- On the Home Screen of iPhone and iPad, it uses the [`accented`](widgetrenderingmode/accented.md) rendering mode for light and dark appearances, and [`fullColor`](widgetrenderingmode/fullcolor.md) on devices running iOS and iPadOS 18 or older.
 - On the Lock Screen of iPad and iPhone, it uses the [`vibrant`](widgetrenderingmode/vibrant.md) rendering mode that provides a vibrant, blurred appearance. On the Lock Screen of iPhone in StandBy and StandBy in Night Mode, it renders scaled up in size using the [`vibrant`](widgetrenderingmode/vibrant.md) rendering mode.
 - In CarPlay, it renders scaled-up in size using the [`fullColor`](widgetrenderingmode/fullcolor.md) rendering mode with the background removed.
-- On Mac, it uses the [`accented`](widgetrenderingmode/accented.md) rendering mode. On older versions of macOS, it uses the  [`fullColor`](widgetrenderingmode/fullcolor.md) or [`vibrant`](widgetrenderingmode/vibrant.md) modes.
+- On Mac, it uses the [`accented`](widgetrenderingmode/accented.md) rendering mode. On older versions of macOS, it uses the [`fullColor`](widgetrenderingmode/fullcolor.md) or [`vibrant`](widgetrenderingmode/vibrant.md) modes.
 
 Similarly, the [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrectangular.md) widget appears as follows:
 
@@ -75,7 +75,7 @@ With each feature you add to your app, make sure your widget, watch complication
 
 ##### Animate Content Updates
 
-Widgets and Live Activities can use animations to draw a person’s attention to data updates, inclusing custom animations. For more information, refer to [`Animating data updates in widgets and Live Activities`](animating-data-updates-in-widgets-and-live-activities.md).
+Widgets and Live Activities can use animations to draw a person’s attention to data updates, including custom animations. For more information, refer to [`Animating data updates in widgets and Live Activities`](animating-data-updates-in-widgets-and-live-activities.md).
 
 ##### Provide Up to Date Information
 

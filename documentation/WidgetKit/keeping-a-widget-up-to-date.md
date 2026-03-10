@@ -8,7 +8,7 @@ Plan your widget’s timeline to show timely, relevant information using dynamic
 
 Widgets use SwiftUI views to display their content. WidgetKit renders the views on your behalf in a separate process. As a result, your widget extension is not continually active, even if the widget is onscreen. Despite your widget not always being active, there are several ways you can keep its content up to date:
 
-- Create a timeline that updates your widget for for regular, predictable events.
+- Create a timeline that updates your widget for regular, predictable events.
 - Tell the system to reload all timelines when data changes; for example, when your app receives new data.
 - Use WidgetKit push notifications in addition to timelines to update your widget.
 
@@ -39,7 +39,7 @@ Cases in which WidgetKit doesn’t count reloads against your widget’s budget 
 - The system locale changes.
 - Dynamic Type or Accessibility settings change.
 
-For cases such as system appearance changes or system locale changes, don’t request a timeline reload from your app. The system updates your widgets automatically. In StandBy, the system refreshes your widget’s display at a system-defined rate that doesn’t count against the its budget.
+For cases such as system appearance changes or system locale changes, don’t request a timeline reload from your app. The system updates your widgets automatically. In StandBy, the system refreshes your widget’s display at a system-defined rate that doesn’t count against its budget.
 
 Although your widget timeline provider drives your reload schedule, WidgetKit sometimes reloads your widget to help keep its content fresh. Some common scenarios include:
 
@@ -54,7 +54,7 @@ Many widgets have predictable points in time where it makes sense to update thei
 
 When you define your widget, you implement a custom [`TimelineProvider`](timelineprovider.md). WidgetKit gets a timeline from your provider, and uses it to track when to update your widget. A timeline is an array of [`TimelineEntry`](timelineentry.md) objects. Each entry in the timeline has a date and time, and additional information the widget needs to display its view. In addition to the timeline entries, the timeline specifies a refresh policy that tells WidgetKit when to request a new timeline.
 
-The following is an example of a game widget that displays a character’s health level. When the health level is less then 100 percent, the character recovers at a rate of 25 percent per hour. For example, when the character’s health level is 25 percent, it takes 3 hours to fully recover to 100 percent. The following diagram shows how WidgetKit requests the timeline from the provider, rendering the widget at each time specified in the timeline entries.
+The following is an example of a game widget that displays a character’s health level. When the health level is less than 100 percent, the character recovers at a rate of 25 percent per hour. For example, when the character’s health level is 25 percent, it takes 3 hours to fully recover to 100 percent. The following diagram shows how WidgetKit requests the timeline from the provider, rendering the widget at each time specified in the timeline entries.
 
 ![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and the progression of time for 3 hours after which WidgetKit requests a new timeline](https://docs-assets.developer.apple.com/published/98d04d83e50d24aa56ec117d99d76a94/WidgetKit-Timeline-At-End%402x.png)
 

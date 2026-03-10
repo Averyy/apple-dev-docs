@@ -52,6 +52,12 @@ The`IntentModes` structure provides values that describe an app intent’s behav
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
+## See Also
+
+- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
+  Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+
 
 ---
 

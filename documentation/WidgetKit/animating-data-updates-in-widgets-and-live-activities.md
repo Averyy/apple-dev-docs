@@ -71,7 +71,7 @@ struct LastDrinkView: View {
         VStack(alignment: .leading) {
             Text(log.drink.name)
                 .bold()
-            Text ("\(log.date, format: .dateformatStyle) • \(log.drink.caffeine.formatCaffeine())")
+            Text ("\(log.date, format: .dateFormatStyle) • \(log.drink.caffeine.formatCaffeine())")
         }
         .font (.caption)
         .id(log) // Associate the view with the data model.

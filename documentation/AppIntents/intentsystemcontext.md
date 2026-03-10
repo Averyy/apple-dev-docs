@@ -34,15 +34,7 @@ Access information the system provides to your app intent while it performs its 
 
 ## See Also
 
-- [protocol AppIntentsPackage](appintentspackage.md)
-  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
-- [struct IntentDescription](intentdescription.md)
-  The human-readable description and metadata for an app intent.
-- [struct IntentDialog](intentdialog.md)
-  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
 - [struct IntentDeprecation](intentdeprecation.md)
-- [class IntentProjection](intentprojection.md)
-  Projections for an app intent that returns non-optional values for parameters.
 
 
 ---

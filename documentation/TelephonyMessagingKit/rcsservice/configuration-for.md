@@ -8,7 +8,6 @@ Retrieves the RCS configuration for the specified cellular service.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

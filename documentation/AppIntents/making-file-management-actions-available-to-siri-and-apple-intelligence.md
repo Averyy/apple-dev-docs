@@ -52,13 +52,6 @@ The assistant schema for the `FileEntity` consists of the `.files` domain and th
 
 For a list of available app entity schemas in the `.files` domain, see [`AssistantSchemas.FilesEntity`](assistantschemas/filesentity.md).
 
-## See Also
-
-- [AssistantSchemas.FilesIntent](assistantschemas/filesintent.md)
-  Assistant schema conformance for app intents that offer file management functionality.
-- [AssistantSchemas.FilesEntity](assistantschemas/filesentity.md)
-  Assistant schema conformance for app entities that describe files.
-
 
 ---
 

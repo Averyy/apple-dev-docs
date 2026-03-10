@@ -15,6 +15,8 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
 ### Audio source components
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
+- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
+  Create and adjust spatial audio in visionOS with RealityKit.
 - [struct SpatialAudioComponent](spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.
 - [struct AmbientAudioComponent](ambientaudiocomponent.md)

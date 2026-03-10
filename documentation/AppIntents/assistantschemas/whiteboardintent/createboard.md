@@ -42,6 +42,23 @@ struct CreateCanvasBoardIntent: AppIntent {
 
 For more information about the `.whiteboard` app intent domain, see [`Making whiteboard actions available to Siri and Apple Intelligence`](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
 
+## See Also
+
+- [var createItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/createitem.md)
+  The app intent conforms to the schema for creating an item on a whiteboard canvas.
+- [var deleteBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/deleteboard.md)
+  The app intent conforms to the schema for deleting a whiteboard canvas.
+- [var deleteItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/deleteitem.md)
+  The app intent conforms to the schema for deleting an item on a whiteboard canvas.
+- [var openBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/openboard.md)
+  The app intent conforms to the schema for opening a new whiteboard canvas.
+- [var updateBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/updateboard.md)
+  The app intent conforms to the schema for updating a whiteboard canvas.
+- [var updateItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/updateitem.md)
+  The app intent conforms to the schema for updating an item on a whiteboard canvas.
+- [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
+  Assistant schema conformance for app intents that offer whiteboard functionality.
+
 
 ---
 

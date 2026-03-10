@@ -8,7 +8,6 @@ A structure that contains upload metadata from the content server.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

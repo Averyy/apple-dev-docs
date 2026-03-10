@@ -29,14 +29,22 @@ For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://
 
 ## See Also
 
+- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-  Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
-- [Focus](focus.md)
-  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
+  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
 - [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
   Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
-  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
+- [Siri](siri.md)
+  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
+- [Visual intelligence](visual-intelligence.md)
+  Integrate your app with visual intelligence and include your content in its search results.
+- [App Shortcuts](app-shortcuts.md)
+  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
+  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
+- [Focus](focus.md)
+  Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
 
 ---

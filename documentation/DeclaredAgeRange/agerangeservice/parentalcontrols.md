@@ -24,7 +24,7 @@ struct ParentalControls
   Creates a parental controls option set with the specified raw value.
 ### Accessing the raw value
 - [var description: String](agerangeservice/parentalcontrols/description.md)
-  A list of parental controls that are turned on, for debugging purposes.
+  A list of active parental controls, for debugging purposes.
 - [let rawValue: Int](agerangeservice/parentalcontrols/rawvalue.md)
   The raw value of the option set.
 ### Defining parental control options

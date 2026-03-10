@@ -6,7 +6,7 @@
 The payment mode for a discount offer on an In-App Purchase.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.10+
 
 ## Declaration
 

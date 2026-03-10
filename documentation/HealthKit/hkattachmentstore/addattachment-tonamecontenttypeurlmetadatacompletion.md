@@ -16,6 +16,7 @@ Adds an attachment to the specified object.
 ## Declaration
 
 ```swift
+@preconcurrency
 func addAttachment(to object: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any] = [:], completion: @escaping @Sendable (HKAttachment?, (any Error)?) -> Void)
 ```
 

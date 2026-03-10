@@ -15,6 +15,10 @@ A timestamp that indicates when the system received the notification.
 let deliveryDate: Date
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 ## See Also
 
 - [let displayDate: AccessoryNotification.DisplayDate](accessorynotification/displaydate-swift.property.md)

@@ -8,7 +8,6 @@ Enumeration representing the target to open the URL in.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
 
 ## Declaration
 

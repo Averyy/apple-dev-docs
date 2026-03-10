@@ -44,10 +44,12 @@ protocol WordProcessorEntity : AssistantSchemas.Model
 
 ## See Also
 
-- [Making word processor actions available to Siri and Apple Intelligence](making-word-processor-actions-available-to-siri-and-apple-intelligence.md)
-  Create app intents and entities that make your app’s word processor functionality available to Siri and Apple Intelligence.
-- [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
-  Assistant schema conformance for app intents that offer word processing functionality.
+- [var document: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/document.md)
+  The app entity describes a text document.
+- [var page: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/page.md)
+  The app entity describes a page in a text document.
+- [var template: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/template.md)
+  The app entity describes a text document template.
 
 
 ---
