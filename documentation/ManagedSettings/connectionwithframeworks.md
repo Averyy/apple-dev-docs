@@ -1,4 +1,4 @@
-# Manage Settings on Devices in a Family Sharing Group
+# Manage settings on devices in a Family Sharing group
 
 **Framework**: ManagedSettings
 
@@ -35,7 +35,7 @@ Device Activity tracks and notifies your app about device usage, according to co
 
 ## See Also
 
-- [Confirming the Effective TV and Movie Ratings](readingmedia.md)
+- [Confirming the effective TV and movie ratings](readingmedia.md)
   Read the media rating on a device and determine what media to display on your app.
 
 

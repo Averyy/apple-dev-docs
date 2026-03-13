@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/install.html
 
 **
 
+**
+**
+**
+
+**
+
 # Build and Install
 
  Table of contents 
@@ -95,6 +101,7 @@ way to do this is with [Conda](https://stackoverflow.com/q/65415996).
 
 ### Build Requirements
 
+- `libblas-dev`, `liblapack-dev`, and `liblapacke-dev` (Linux)
 - A C++ compiler with C++20 support (e.g. Clang >= 15.0)
 - [cmake](https://cmake.org/) – version 3.25 or later, and `make`
 - Xcode >= 15.0 and macOS SDK >= 14.0

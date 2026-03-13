@@ -24,7 +24,7 @@ object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data
 
 ## Properties
 
-- `dataPoints` (GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints)
+- `dataPoints` ([GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints])
 - `dimensions` (GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions)
 - `granularity` (string): The granularity of the data using the ISO 8601 format for durations.
 

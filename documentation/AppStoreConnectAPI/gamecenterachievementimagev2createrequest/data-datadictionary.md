@@ -22,7 +22,7 @@ object GameCenterAchievementImageV2CreateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementImageV2CreateRequest.Data.Attributes](gamecenterachievementimagev2createrequest/data-data.dictionary/attributes-data.dictionary.md)
 - [object GameCenterAchievementImageV2CreateRequest.Data.Relationships](gamecenterachievementimagev2createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.

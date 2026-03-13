@@ -22,7 +22,7 @@ object GameCenterAchievementV2VersionsLinkagesResponse
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2VersionsLinkagesResponse.Data](gamecenterachievementv2versionslinkagesresponse/data-data.dictionary.md)
 
 ## Properties

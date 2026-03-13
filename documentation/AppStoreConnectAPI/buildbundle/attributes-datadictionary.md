@@ -45,6 +45,7 @@ object BuildBundle.Attributes
 - `usesLocationServices` (boolean): A Boolean value that indicates whether the app or App Clip included in the build bundle uses location services.
 - `baDownloadAllowance` (integer)
 - `baMaxInstallSize` (integer)
+- `minimumOsVersion` (string)
 
 ## See Also
 

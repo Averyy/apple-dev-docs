@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/indexing.html
 
 **
 
+**
+**
+**
+
+**
+
 # Indexing Arrays
 
  Table of contents 

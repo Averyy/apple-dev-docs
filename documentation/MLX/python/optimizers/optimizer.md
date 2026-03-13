@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/optimizer.htm
 
 **
 
+**
+**
+**
+
+**
+
 # Optimizer
 
  Table of contents 

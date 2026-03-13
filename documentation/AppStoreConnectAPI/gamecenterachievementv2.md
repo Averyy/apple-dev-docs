@@ -24,7 +24,7 @@ object GameCenterAchievementV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2.Attributes](gamecenterachievementv2/attributes-data.dictionary.md)
   Attributes that describe a Game Center achievement v2 resource.
 - [object GameCenterAchievementV2.Relationships](gamecenterachievementv2/relationships-data.dictionary.md)

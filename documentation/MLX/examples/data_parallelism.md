@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/examples/data_parallelism.html
 
 **
 
+**
+**
+**
+
+**
+
 # Data Parallelism
 
  Table of contents 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Profiles  resource.
+The data structure that represents a Profiles resource.
 
 **Availability**:
 - App Store Connect API 1.1+

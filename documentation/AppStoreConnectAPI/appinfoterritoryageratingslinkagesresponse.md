@@ -31,7 +31,6 @@ object AppInfoTerritoryAgeRatingsLinkagesResponse
   A response that contains a single Age Rating Declarations resource.
 - [object AgeRatingDeclarationUpdateRequest](ageratingdeclarationupdaterequest.md)
   The request body you use to update an Age Rating Declaration.
-- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
 - [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 - [type AppStoreAgeRating](appstoreagerating.md)
   String that represents the app’s age rating as it appears on the App Store for all platforms.

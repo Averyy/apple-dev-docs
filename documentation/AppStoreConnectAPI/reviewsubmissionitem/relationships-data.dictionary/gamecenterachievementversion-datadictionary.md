@@ -16,7 +16,7 @@ object ReviewSubmissionItem.Relationships.GameCenterAchievementVersion
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object ReviewSubmissionItem.Relationships.GameCenterAchievementVersion.Data](reviewsubmissionitem/relationships-data.dictionary/gamecenterachievementversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

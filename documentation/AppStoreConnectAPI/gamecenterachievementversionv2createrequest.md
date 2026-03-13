@@ -20,7 +20,7 @@ object GameCenterAchievementVersionV2CreateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementVersionV2CreateRequest.Data](gamecenterachievementversionv2createrequest/data-data.dictionary.md)
   The data structure that represents a Game Center achievement version create request resource.
 

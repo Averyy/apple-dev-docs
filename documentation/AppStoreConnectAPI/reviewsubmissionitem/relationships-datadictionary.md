@@ -22,7 +22,7 @@ object ReviewSubmissionItem.Relationships
 - [object ReviewSubmissionItem.Relationships.AppStoreVersion](reviewsubmissionitem/relationships-data.dictionary/appstoreversion-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.AppStoreVersionExperiment](reviewsubmissionitem/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.AppStoreVersionExperimentV2](reviewsubmissionitem/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
-### Dictionaries - generated
+### Dictionaries
 - [object ReviewSubmissionItem.Relationships.BackgroundAssetVersion](reviewsubmissionitem/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
 - [object ReviewSubmissionItem.Relationships.GameCenterAchievementVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
   The data that describes the Game Center achievement version of the review submission item.

@@ -30,7 +30,6 @@ object AgeRatingDeclarationUpdateRequest
   The data structure that represents an Age Rating Declarations resource.
 - [object AgeRatingDeclarationResponse](ageratingdeclarationresponse.md)
   A response that contains a single Age Rating Declarations resource.
-- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
 - [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 - [object AppInfoTerritoryAgeRatingsLinkagesResponse](appinfoterritoryageratingslinkagesresponse.md)
 - [type AppStoreAgeRating](appstoreagerating.md)

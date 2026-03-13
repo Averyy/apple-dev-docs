@@ -18,7 +18,7 @@ object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships.Version](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
   The data that describes the version of the Game Center achievement localization.
 

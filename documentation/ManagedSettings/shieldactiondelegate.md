@@ -8,7 +8,7 @@ A class for an extension that handles shield actions.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -23,20 +23,20 @@ Subclass `ShieldActionDelegate` to allow client extensions to respond to user ac
 
 ## Topics
 
-### Handling Shield Actions
+### Handling shield actions
 - [enum ShieldAction](shieldaction.md)
   Constants that describe a user’s action for your extension to handle.
 - [enum ShieldActionResponse](shieldactionresponse.md)
   Constants your extension that handles shield actions can use to tell the system how to respond to an action.
-### Initializers
-- [init()](shieldactiondelegate/init.md)
-### Instance Methods
+### Responding to someone’s action
 - [func handle(action: ShieldAction, for: ApplicationToken, completionHandler: (ShieldActionResponse) -> Void)](shieldactiondelegate/handle(action:for:completionhandler:)-4jgek.md)
   Allows the extension to respond to a user action when the system displays a shield over an application.
-- [func handle(action: ShieldAction, for: WebDomainToken, completionHandler: (ShieldActionResponse) -> Void)](shieldactiondelegate/handle(action:for:completionhandler:)-4tqna.md)
-  Allows the extension to respond to a user action when the system displays a shield over a website.
 - [func handle(action: ShieldAction, for: ActivityCategoryToken, completionHandler: (ShieldActionResponse) -> Void)](shieldactiondelegate/handle(action:for:completionhandler:)-9hcqc.md)
   Allows the extension to respond to a user action when the system displays a shield over an application or website because of its category.
+- [func handle(action: ShieldAction, for: WebDomainToken, completionHandler: (ShieldActionResponse) -> Void)](shieldactiondelegate/handle(action:for:completionhandler:)-4tqna.md)
+  Allows the extension to respond to a user action when the system displays a shield over a website.
+### Initializers
+- [init()](shieldactiondelegate/init.md)
 
 ## Relationships
 
@@ -49,6 +49,11 @@ Subclass `ShieldActionDelegate` to allow client extensions to respond to user ac
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [enum ShieldAction](shieldaction.md)
+  Constants that describe a user’s action for your extension to handle.
 
 
 ---

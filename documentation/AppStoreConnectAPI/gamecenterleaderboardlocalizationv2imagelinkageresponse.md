@@ -21,7 +21,7 @@ object GameCenterLeaderboardLocalizationV2ImageLinkageResponse
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data](gamecenterleaderboardlocalizationv2imagelinkageresponse/data-data.dictionary.md)
 
 ## Properties

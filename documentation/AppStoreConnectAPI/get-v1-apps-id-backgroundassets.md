@@ -21,6 +21,8 @@ Get information about the Apple-hosted background assets for a specific app.
 - `limit` (integer)
 - `fields[apps]` ([string])
 - `filter[archived]` ([string])
+- `filter[versions.platforms]` ([string])
+- `sort` ([string])
 
 ## See Also
 

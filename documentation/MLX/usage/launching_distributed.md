@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/launching_distributed.htm
 
 **
 
+**
+**
+**
+
+**
+
 # Launching Distributed Programs
 
  Table of contents 

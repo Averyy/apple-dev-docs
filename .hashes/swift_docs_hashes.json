@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T08:58:07.554035",
+    "last_updated": "2026-03-13T08:47:26.200499",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -42,10 +42,10 @@
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/LexicalStructure.md": "3b383eb0e7b58b8acee7f6935a1309592183b43b64d03b086f457a409e57819e",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Patterns.md": "89002b2c5e02f6aa8e177f48e41aa1f6b7205648c35053b15cd3ce4a65328067",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Statements.md": "e4232168fc5cad0eac98b5d2b291d7d2f238dda5ee941d3e3e9b0a84d2d9cd5d",
-    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Types.md": "72b3c973fed10a35edd49097fcde874b69ebb65ff4b16f03a420a11b31e85af2",
+    "swiftlang/swift-book:TSPL.docc/ReferenceManual/Types.md": "e2cf59ebd60caca12da39b1004e5eff92d3ec294e48c257216d2548d5667c030",
     "swiftlang/swift-book:TSPL.docc/GuidedTour/AboutSwift.md": "e87bf7bc9bebfbd2c73b0d8b3af32cd808111a00c2520c9ca1543a1a36be401d",
-    "swiftlang/swift-book:TSPL.docc/GuidedTour/Compatibility.md": "c9c81fe83fc081a7f654b1bb56e06f74d907c5456253e5e34f9ecb1170186b83",
-    "swiftlang/swift-book:TSPL.docc/GuidedTour/GuidedTour.md": "e673dbc662595eb10ee49fadcd497b0e31134a7687a6be19b20a3308f5a0d704",
+    "swiftlang/swift-book:TSPL.docc/GuidedTour/Compatibility.md": "83bc6c1850faaf5c9dcb33d4b65a8dc640451539c229deb0dfa1f904818c95e9",
+    "swiftlang/swift-book:TSPL.docc/GuidedTour/GuidedTour.md": "0becd1b48ee0baab2fd3432c70448f0c5edfa5fd1d36fa242aa08c4191391261",
     "swiftlang/swift-org-website:documentation/api-design-guidelines/index.md": "71f3853c08ac1a8e9df4a071bd6e819aee70e4e8cc7f4ab5901d380154308389",
     "swiftlang/swift-org-website:documentation/cxx-interop/index.md": "58cac8c3df9e3e0393d9f8a28cbe87cba7199315efcfad4b1bc3666719eed4e1",
     "swiftlang/swift-org-website:documentation/cxx-interop/project-build-setup/index.md": "29827b8511437f85a8deaed828e858fd6f2c97e05b94bfd8c340751ddf8a141b",

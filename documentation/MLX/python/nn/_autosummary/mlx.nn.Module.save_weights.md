@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.Module.save_weights
 
  Table of contents 

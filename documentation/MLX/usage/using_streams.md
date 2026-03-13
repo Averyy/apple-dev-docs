@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/using_streams.html
 
 **
 
+**
+**
+**
+
+**
+
 # Using Streams
 
  Table of contents 

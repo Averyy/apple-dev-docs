@@ -20,7 +20,7 @@ object GameCenterAchievementLocalizationV2UpdateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementLocalizationV2UpdateRequest.Data](gamecenterachievementlocalizationv2updaterequest/data-data.dictionary.md)
   The data element of the request body.
 

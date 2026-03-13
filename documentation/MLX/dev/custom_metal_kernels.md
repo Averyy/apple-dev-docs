@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/dev/custom_metal_kernels.html
 
 **
 
+**
+**
+**
+
+**
+
 # Custom Metal Kernels
 
  Table of contents 

@@ -23,7 +23,7 @@ object GameCenterLeaderboardV2CreateRequest.Data.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center leaderboard.
 - [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterGroup](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)

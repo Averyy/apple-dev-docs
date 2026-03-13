@@ -15,7 +15,7 @@ object GameCenterDetail.Attributes
 ## Properties
 
 - `arcadeEnabled` (boolean)
-- `challengeEnabled` (boolean): This attribue is deprecated.
+- `challengeEnabled` (boolean): This attribute is deprecated.
 
 ## See Also
 

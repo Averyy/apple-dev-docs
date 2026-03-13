@@ -8,7 +8,7 @@ Creates a new instance with the specified string.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

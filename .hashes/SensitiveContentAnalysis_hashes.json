@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:34:17.335071",
+    "last_updated": "2026-03-13T07:41:48.213629",
     "total_pages": 70,
-    "session_id": "2026-03-10T07:34:13.575470"
+    "session_id": "2026-03-13T07:41:42.759362"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SensitiveContentAnalysis.json": {
       "hash": "59f54e0dbe81007ccc0e64dbd55ccd6f29bcd1901cbf124dc2175c7489f072f8",
-      "last_checked": "2026-03-10T07:34:13.870889",
+      "last_checked": "2026-03-13T07:41:43.009239",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"5994525064ceb040e940432e185086d7\"",
       "file_path": "documentation/SensitiveContentAnalysis/SensitiveContentAnalysis.md"
     },
     "https://developer.apple.com/documentation/SensitiveContentAnalysis": {
       "hash": "59f54e0dbe81007ccc0e64dbd55ccd6f29bcd1901cbf124dc2175c7489f072f8",
-      "last_checked": "2026-03-10T07:34:13.757663",
+      "last_checked": "2026-03-13T07:41:42.893646",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"5994525064ceb040e940432e185086d7\"",
       "file_path": "documentation/SensitiveContentAnalysis/SensitiveContentAnalysis.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/detecting-nudity-in-media-and-providing-intervention-options.json": {
       "hash": "1aa874dbdcd3687739033a598721615575b6541117973829851fc44a61177d9b",
-      "last_checked": "2026-03-10T07:34:14.106198",
+      "last_checked": "2026-03-13T07:41:43.243505",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"8fbde0f2f93dc82c6830eea9a0aecc83\"",
       "file_path": "documentation/SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer.json": {
       "hash": "c6b24d5c271adac4a3d0691bfe535e9392717a518f95bee0de5c91aa83fbba0d",
-      "last_checked": "2026-03-10T07:34:14.216966",
+      "last_checked": "2026-03-13T07:41:43.407767",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"392b3b05571b6c05f8d17ea3c5f823e6\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy.json": {
       "hash": "2dd2a5ae2a507890579253a30e15f6be084cff5c92fd3898d8fb453e2e0da864",
-      "last_checked": "2026-03-10T07:34:14.341183",
+      "last_checked": "2026-03-13T07:41:43.696044",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"ff9f4b12b840108ca488b6a207ed508c\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysispolicy.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer.json": {
       "hash": "83fcf27aa4c32166b460c2d19b0f975fad93dc640dc7b7097bd2b258dc22640f",
-      "last_checked": "2026-03-10T07:34:14.475796",
+      "last_checked": "2026-03-13T07:41:43.998633",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"7c879a05966f340d0f32b47013935145\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis.json": {
       "hash": "0842693c6161d019f857d53f0cd0abe8100124407b360ce11d3a5b2ca7ed39d4",
-      "last_checked": "2026-03-10T07:34:14.559153",
+      "last_checked": "2026-03-13T07:41:44.143203",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"af257e7e0268ae9eca392fa7c77d8c31\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysis.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/testing-your-app-s-response-to-sensitive-media.json": {
       "hash": "71972d5ad109a7e5e429f54740196b9c8a31baf3d28ffe8a901898a2fe7c2bc4",
-      "last_checked": "2026-03-10T07:34:14.629943",
+      "last_checked": "2026-03-13T07:41:44.298626",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"881343da8ff4d734d3f32e9baa988fe1\"",
       "file_path": "documentation/SensitiveContentAnalysis/testing-your-app-s-response-to-sensitive-media.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/init().json": {
       "hash": "b336e0766a2c7a1c7d8bb4ee1b93697a45d6be69ed6df094974a848ca59d445a",
-      "last_checked": "2026-03-10T07:34:14.766411",
+      "last_checked": "2026-03-13T07:41:44.456414",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"a6f1c5f446bb00cada9e9a3cf0473bca\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/init.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analysispolicy.json": {
       "hash": "bd4efcc8d23f47fcad5d8967fb11e4855b3854e06efa067e67f5f444cde811b0",
-      "last_checked": "2026-03-10T07:34:14.879340",
+      "last_checked": "2026-03-13T07:41:44.599197",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"221a5b5a0e6430e2f2446b63fb388918\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/analysispolicy.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analyzeimage(_:completionhandler:).json": {
       "hash": "1d237b627b555febd714296429af440deb032ff37e4ab7bf36da8098d646b3df",
-      "last_checked": "2026-03-10T07:34:14.964543",
+      "last_checked": "2026-03-13T07:41:44.752872",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"7a355f25cbe2df8d5332ab7f443a57db\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/analyzeimage-completionhandler.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analyzeimage(at:completionhandler:).json": {
       "hash": "e4166bccd15a399cdc76f6c5304595a12d3cd0f2ab6307be489fc275d1cec374",
-      "last_checked": "2026-03-10T07:34:15.118421",
+      "last_checked": "2026-03-13T07:41:44.904587",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"837761bc26b2544a103b29e7f929ffee\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/analyzeimage-atcompletionhandler.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysis(forfileat:).json": {
       "hash": "95f63222fde244bd408a8d829cda109e80bb9d6adbece9cf2482ea6e39c3592d",
-      "last_checked": "2026-03-10T07:34:15.190885",
+      "last_checked": "2026-03-13T07:41:45.095300",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"9c10feb35477d0baa9fd3d9c60ca3f68\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/videoanalysis-forfileat.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler.json": {
       "hash": "f3db9819e614894e75dfe3df5efb7712ac24563f0c38f4eb49437f38306e4281",
-      "last_checked": "2026-03-10T07:34:15.306439",
+      "last_checked": "2026-03-13T07:41:45.222591",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"f47f3763427edbe9ad2e9d9f2a2730e0\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/videoanalysishandler.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/disabled.json": {
       "hash": "f878cb59d699c397592d9714997bc26e58142ffe11733551a91e7adca5114fec",
-      "last_checked": "2026-03-10T07:34:15.383493",
+      "last_checked": "2026-03-13T07:41:45.336795",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"f9ff227049abf38cc198104369b1910f\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysispolicy/disabled.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/simpleinterventions.json": {
       "hash": "5cc9a4272b080681ba017faed99107f8b2365f89f2acf6e63061e22e3a8323dd",
-      "last_checked": "2026-03-10T07:34:15.461391",
+      "last_checked": "2026-03-13T07:41:45.451448",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"1a0f7052d82553c07623dc48c9bedc98\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysispolicy/simpleinterventions.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/descriptiveinterventions.json": {
       "hash": "dcfacea0e4ae3bcee7d8234edbced86e6ed69cc7009debd74859fa41a2dbd574",
-      "last_checked": "2026-03-10T07:34:15.542949",
+      "last_checked": "2026-03-13T07:41:45.611101",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"c34bb5c17a41aa12d40fa728a06fedb8\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysispolicy/descriptiveinterventions.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/init(rawvalue:).json": {
       "hash": "02bc579256c780733c1f52adb3672094ceaa2cc421b786729a7371d4a0657e07",
-      "last_checked": "2026-03-10T07:34:15.633900",
+      "last_checked": "2026-03-13T07:41:45.812911",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"e8472633842dfcf1691f0a708be4f429\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysispolicy/init-rawvalue.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/init(participantuuid:streamdirection:).json": {
       "hash": "83eb30bcf6d536c6573f6960816c427ca406872b85f7f55d4081d4fc125f0818",
-      "last_checked": "2026-03-10T07:34:15.720448",
+      "last_checked": "2026-03-13T07:41:45.928712",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"759ca3c1e5144f86aab865e33a9f4149\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/init-participantuuidstreamdirection.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/streamdirection.json": {
       "hash": "83c6be087f528ec418c667bc4374adf93e2a4fbfd0f268f60e0a47c01ff5cb48",
-      "last_checked": "2026-03-10T07:34:15.851743",
+      "last_checked": "2026-03-13T07:41:46.103149",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"ffb6e4965a2f5563aeeda55a95280be6\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/streamdirection.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/analyze(_:).json": {
       "hash": "8c93dce6d604f597679ec9948dd5c305563d36311a54434613e19f3ff2df900b",
-      "last_checked": "2026-03-10T07:34:15.925033",
+      "last_checked": "2026-03-13T07:41:46.215722",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"106075ac481ba47febc41509153708a1\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/analyze.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/beginanalysis(of:)-78qm.json": {
       "hash": "3e39939986449ad203239662b16f7f1dac9200f76c6a1d8e1d007feb1f7a49fc",
-      "last_checked": "2026-03-10T07:34:15.997278",
+      "last_checked": "2026-03-13T07:41:46.354605",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"9cdb0509311a2421d881623e4a7e0030\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/beginanalysis-of-78qm.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/beginanalysis(of:)-9ehkx.json": {
       "hash": "e17277c09a877fd031cd77489bf9fadd6bb2722d971794d25ee29079b547c932",
-      "last_checked": "2026-03-10T07:34:16.102933",
+      "last_checked": "2026-03-13T07:41:46.479739",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"941e6b58228973269b510c835a0f5c0d\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/beginanalysis-of-9ehkx.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/analysischanges.json": {
       "hash": "71bb149803911e27d47f03789a6b3cfe54d8816f5ac59c035771a9439881add6",
-      "last_checked": "2026-03-10T07:34:16.208778",
+      "last_checked": "2026-03-13T07:41:46.608534",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"018e60a54a91cf5fc8863cbb02d7792b\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/analysischanges.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/endanalysis().json": {
       "hash": "2b8cb72aef5934bbdf012c7bba38162f60ba34def83f24ac4cc0bf6e9abb3ce7",
-      "last_checked": "2026-03-10T07:34:16.295876",
+      "last_checked": "2026-03-13T07:41:46.725325",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"75270c6b057a93edef0e23ba627b28a0\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/endanalysis.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/analysis.json": {
       "hash": "a164cfc21e2760c24b62bbbe728d168022ce5e2ed80427da068a2e2b212dd756",
-      "last_checked": "2026-03-10T07:34:16.440802",
+      "last_checked": "2026-03-13T07:41:46.844341",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"41fe470fbd1e9bc7a8b0b689d341d580\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/analysis.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/continuestream().json": {
       "hash": "39ed7359ba8185fde7bca80e398da80fc4ee7df6ef638b817464da3bea3acda4",
-      "last_checked": "2026-03-10T07:34:16.540175",
+      "last_checked": "2026-03-13T07:41:47.025696",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"8c4d59777348abaf518d0589f0ba6ca2\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/continuestream.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis/issensitive.json": {
       "hash": "b41f4179e0f42cd0e7c8a6184862c01703ca04904b1d4da97f820b91d260c386",
-      "last_checked": "2026-03-10T07:34:16.651172",
+      "last_checked": "2026-03-13T07:41:47.155939",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"68ec5cad9216d1cbd2bb425166eade18\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysis/issensitive.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis/shouldindicatesensitivity.json": {
       "hash": "69c14e5a43d43a7e76c382f64094748edb1ad9f080b57b2bea5081fc3a6a1a08",
-      "last_checked": "2026-03-10T07:34:16.722226",
+      "last_checked": "2026-03-13T07:41:47.265142",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"061fc1c4701fd6566c36f83394fbfc6a\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysis/shouldindicatesensitivity.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis/shouldinterruptvideo.json": {
       "hash": "4345e0445258f6e9583cc875e2f943ab55dd6888e1b7845cb0e693eadce35817",
-      "last_checked": "2026-03-10T07:34:16.798868",
+      "last_checked": "2026-03-13T07:41:47.414920",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"3e3a78c23064637bf9b60abcef823580\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysis/shouldinterruptvideo.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis/shouldmuteaudio.json": {
       "hash": "74012a8707b2acb9fc56372eda34567739d6470c3d89117d6eae72dccc2f3a59",
-      "last_checked": "2026-03-10T07:34:16.917254",
+      "last_checked": "2026-03-13T07:41:47.563093",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"2495f07af86903391f4cf669bc74ee3a\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalysis/shouldmuteaudio.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler/progress.json": {
       "hash": "254f36618041917d2741c204d2cebf3863784a967489b3aef157ee65109f7072",
-      "last_checked": "2026-03-10T07:34:17.015978",
+      "last_checked": "2026-03-13T07:41:47.663586",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"4084d2fbf541b4360d8b2ccc8a079025\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/videoanalysishandler/progress.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler/hassensitivecontent().json": {
       "hash": "dafb3dd5c96df84c8afbe1331aa99ed991c26e219db4febe90ba6e75f83e0d34",
-      "last_checked": "2026-03-10T07:34:17.097041",
+      "last_checked": "2026-03-13T07:41:47.788705",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"a0960b22b16463432fa36609ec8ba04c\"",
       "file_path": "documentation/SensitiveContentAnalysis/scsensitivityanalyzer/videoanalysishandler/hassensitivecontent.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/streamdirection/incoming.json": {
       "hash": "e9f4dee807cd91c1588383e7d64651c3551a5de20640180e402c5cdec6fcfdb1",
-      "last_checked": "2026-03-10T07:34:17.170802",
+      "last_checked": "2026-03-13T07:41:47.952156",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"c6226a39d3639643ddccd24ab504b9bf\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/streamdirection/incoming.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/streamdirection/outgoing.json": {
       "hash": "76953996eb0943ea584893a36296dd8d1e68fe4c3e381b4016790452142dd922",
-      "last_checked": "2026-03-10T07:34:17.251379",
+      "last_checked": "2026-03-13T07:41:48.059585",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"1c8b14af62da57219e9f8e7596449200\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/streamdirection/outgoing.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scvideostreamanalyzer/streamdirection/init(rawvalue:).json": {
       "hash": "f53c584e50737cda9e37889b4ad23aff3384c3bac5037c297957f78b390913df",
-      "last_checked": "2026-03-10T07:34:17.332692",
+      "last_checked": "2026-03-13T07:41:48.207287",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:34:13.575470",
+      "session_id": "2026-03-13T07:41:42.759362",
       "etag": "W/\"22f870ffe7e57aa07d874db0c5d1e4f9\"",
       "file_path": "documentation/SensitiveContentAnalysis/scvideostreamanalyzer/streamdirection/init-rawvalue.md"
     },

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a challenge.
+
 **Availability**:
 - App Store Connect API 4.0+
 
@@ -18,6 +20,7 @@ object GameCenterChallengeUpdateRequest.Data
 - [object GameCenterChallengeUpdateRequest.Data.Attributes](gamecenterchallengeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
 - [object GameCenterChallengeUpdateRequest.Data.Relationships](gamecenterchallengeupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

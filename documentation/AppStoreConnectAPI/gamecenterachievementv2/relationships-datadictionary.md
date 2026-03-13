@@ -23,7 +23,7 @@ object GameCenterAchievementV2.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2.Relationships.Activity](gamecenterachievementv2/relationships-data.dictionary/activity-data.dictionary.md)
   The data and links that describe the activity of the Game Center achievement v2.
 - [object GameCenterAchievementV2.Relationships.GameCenterDetail](gamecenterachievementv2/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)

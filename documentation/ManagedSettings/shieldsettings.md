@@ -8,7 +8,7 @@ Constraints that indicate what apps and websites to cover with a shielding view.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct ShieldSettings
 
 ## Topics
 
-### Blocking Apps and Websites
+### Blocking apps and websites
 - [var applications: Set<ApplicationToken>?](shieldsettings/applications-swift.property.md)
   Applications for the system to cover with a shielding view.
 - [static let applications: SettingMetadata<Set<ApplicationToken>>](shieldsettings/applications-swift.type.property.md)
@@ -27,7 +27,7 @@ struct ShieldSettings
   Websites for the system to cover with a shielding view.
 - [static let webDomains: SettingMetadata<Set<WebDomainToken>>](shieldsettings/webdomains-swift.type.property.md)
   The metadata for the configuration that specifies websites for the system to shield.
-### Blocking Categories of Apps and Websites
+### Blocking categories of apps and websites
 - [ShieldSettings.ActivityCategoryPolicy](shieldsettings/activitycategorypolicy.md)
   Policies available for shielding activities based on their category.
 - [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](shieldsettings/applicationcategories-swift.property.md)

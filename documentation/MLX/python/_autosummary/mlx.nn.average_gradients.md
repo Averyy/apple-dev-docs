@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.aver
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.average_gradients
 
  Table of contents 
@@ -23,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.aver
 
 # mlx.nn.average_gradients
 
-**average_gradients(*gradients: Any*, *group: Group | None = None*, *all_reduce_size: int = 33554432*, *communication_type: Dtype | None = None*, *communication_stream: Stream | None = None*)**
+**average_gradients(*gradients: Any*, *group: Group | None = None*, *all_reduce_size: int = 33554432*, *communication_stream: Stream | None = None*)**
 : Average the gradients across the distributed processes in the passed group.
 This helper enables concatenating several gradients of small arrays to one
 big all reduce call for better networking performance.
@@ -38,10 +44,7 @@ Default: `None`.
 **all_reduce_size** ([int](https://docs.python.org/3/library/functions.html#int)) – Group arrays until their size in bytes exceeds
 this number. Perform one communication step per group of arrays. If
 less or equal to 0 array grouping is disabled. Default: `32MiB`.
-**communication_type** (*Optional**[*[Dtype](mlx.core.Dtype.html#mlx.core.Dtype)*]*) – If provided cast to this
-type before performing the communication. Typically cast to a
-smaller float to reduce the communication size. Default: `None`.
-**communication_stream** (*Optional**[*[Stream](stream_class.html#mlx.core.Stream)*]*) – The stream to usse
+**communication_stream** (*Optional**[*[Stream](stream_class.html#mlx.core.Stream)*]*) – The stream to use
 for the communication. If unspecified the default communication
 stream is used which can vary by back-end. Default: `None`.
 

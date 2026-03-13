@@ -25,7 +25,7 @@ object ProfileBundleIdLinkageResponse
 ## See Also
 
 - [object Profile](profile.md)
-  The data structure that represents a Profiles  resource.
+  The data structure that represents a Profiles resource.
 - [object ProfileCreateRequest](profilecreaterequest.md)
   The request body you use to create a Profile.
 - [object ProfileResponse](profileresponse.md)

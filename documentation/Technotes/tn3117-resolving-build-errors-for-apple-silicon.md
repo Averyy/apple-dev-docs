@@ -17,9 +17,14 @@ Xcode’s default architecture build settings provide the recommended combinatio
 
 For an overview of each of these build settings, see the [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference).
 
-By keeping your architecture build settings set to these default values, you’ll automatically build with the latest recommended CPU architectures, which change as Apple’s platforms evolve. For example, a Mac app using the default architecture build settings automatically gains support for both Apple silicon and Intel-based Macs once built with Xcode 12.2.
+By keeping your architecture build settings set to these default values, you’ll automatically build with the latest recommended CPU architectures, which change as Apple’s platforms evolve. For example, a Mac app using the default architecture build settings automatically gains support for both Apple silicon and Intel-based Macs once built with Xcode 12.2 or later.
 
 When you add a Mac with Apple silicon to your development team, you may find that your app builds with errors due to deviations from the default architecture build settings, or due to pre-built libraries that haven’t been updated to support Apple silicon. Some examples of these errors:
+
+```None
+error: The armv7 architecture is deprecated. You should update your ARCHS build
+setting to remove the armv7 architecture. 
+```
 
 ```None
 warning: None of the architectures in ARCHS (arm64) are valid. Consider setting
@@ -39,11 +44,8 @@ No architectures to compile for
 ```
 
 ```None
-Missing 64-bit support. iOS apps submitted to the App Store must include 64-bit
-support and be built with the iOS 8 SDK or later. We recommend using the
-default "Standard Architectures" build setting for "Architectures" in Xcode,
-to build a single binary with both 32-bit and 64-bit support. With error code
-STATE_ERROR.VALIDATION_ERROR.90086
+Missing 64-bit support. iOS apps uploaded to App Store Connect must
+include 64-bit support.
 ```
 
 If you receive any of those error messages, the combination of values set in `ARCHS`, `VALID_ARCHS`, and `EXCLUDED_ARCHS` prevented the build from having the necessary architectures. The first step in resolving the build error is to reset each of these build settings back to their default value for every target in your app. See [`Configuring the build settings of a target`](https://developer.apple.com/documentation/Xcode/configuring-the-build-settings-of-a-target) for how to modify build settings, and [`Unset Valid Architectures`](tn3117-resolving-build-errors-for-apple-silicon#Unset-Valid-Architectures.md) for special considerations when resetting `VALID_ARCHS`.
@@ -103,6 +105,7 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
 
 #### Revision History
 
+- **2026-03-11** Updated the text of the error messages.
 - **2023-04-11** Added information about the Destination Architectures menu in Xcode 14.3.
 - **2022-10-11** Updated link about creating XCFrameworks.
 - **2022-07-12** Added additional information on excluding architectures.
@@ -111,6 +114,8 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
 
 ## See Also
 
+- [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
+  Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
   Learn how local network privacy affects your software.
 - [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
@@ -139,8 +144,6 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
   Verify your In-App Purchases are approved and available for sale in the App Store.
 - [TN3186: Troubleshooting In-App Purchases availability in the sandbox](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md)
   Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
-- [TN3185: Troubleshooting In-App Purchases availability in Xcode](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md)
-  Inspect your active StoreKit configuration file for unexpected configurations.
 
 
 ---

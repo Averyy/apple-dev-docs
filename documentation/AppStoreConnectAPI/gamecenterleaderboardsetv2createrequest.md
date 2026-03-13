@@ -21,7 +21,7 @@ object GameCenterLeaderboardSetV2CreateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetV2CreateRequest.Data](gamecenterleaderboardsetv2createrequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard set create request resource.
 

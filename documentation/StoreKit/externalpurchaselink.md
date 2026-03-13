@@ -22,7 +22,7 @@ enum ExternalPurchaseLink
 
 #### Overview
 
-This functionality is only available to apps with the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.allowed-regions entitlement or the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
+This functionality is only available to apps with the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
 
 For more information, see:
 

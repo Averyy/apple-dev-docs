@@ -20,7 +20,7 @@ object GameCenterLeaderboardLocalizationV2UpdateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardLocalizationV2UpdateRequest.Data](gamecenterleaderboardlocalizationv2updaterequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard localization update request resource.
 

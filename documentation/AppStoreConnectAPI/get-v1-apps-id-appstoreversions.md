@@ -43,12 +43,6 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/appStoreVersions
         "createdDate": "2022-08-31T09:28:28-07:00"
       },
       "relationships": {
-        "ageRatingDeclaration": {
-          "links": {
-            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/2395b439-fccd-4645-95bc-97afbe9e379e/relationships/ageRatingDeclaration",
-            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/2395b439-fccd-4645-95bc-97afbe9e379e/ageRatingDeclaration"
-          }
-        },
         "appStoreVersionLocalizations": {
           "links": {
             "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/2395b439-fccd-4645-95bc-97afbe9e379e/relationships/appStoreVersionLocalizations",
@@ -134,13 +128,12 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/appStoreVersions
 ## Parameters
 
 - `limit` (integer): Number of resources to return.
-- `include` ([string]): Relationship data to include in the response. Note: `ageRatingDeclaration` is deprecated.
+- `include` ([string]): Relationship data to include in the response.
 - `fields[apps]` ([string]): Fields to return for included related types.
 - `fields[appStoreVersionSubmissions]` ([string]): Fields to return for included related types.
 - `fields[builds]` ([string]): Fields to return for included related types.
-- `fields[appStoreVersions]` ([string]): Fields to return for included related types. Note: `ageRatingDeclaration` is deprecated.
+- `fields[appStoreVersions]` ([string]): Fields to return for included related types.
 - `fields[appStoreReviewDetails]` ([string]): Fields to return for included related types.
-- `fields[ageRatingDeclarations]` ([string]): Deprecated. To get age rating declarations, use [`Read age rating declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md) instead.
 - `fields[appStoreVersionPhasedReleases]` ([string]): Fields to return for included related types.
 - `fields[routingAppCoverages]` ([string]): Fields to return for included related types.
 - `fields[appStoreVersionLocalizations]` ([string]): Fields to return for included related types.

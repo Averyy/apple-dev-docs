@@ -24,7 +24,7 @@ object GameCenterLeaderboardSetVersionV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetVersionV2.Attributes](gamecenterleaderboardsetversionv2/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetVersionV2.Relationships](gamecenterleaderboardsetversionv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-An object that  represents a capability setting for an app.
+An object that represents a capability setting for an app.
 
 **Availability**:
 - App Store Connect API 1.1+

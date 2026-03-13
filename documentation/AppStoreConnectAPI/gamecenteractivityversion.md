@@ -20,6 +20,7 @@ object GameCenterActivityVersion
 - [object GameCenterActivityVersion.Attributes](gamecenteractivityversion/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
 - [object GameCenterActivityVersion.Relationships](gamecenteractivityversion/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -45,6 +46,8 @@ object GameCenterActivityVersion
   The request body you use to create a link betweeen a leaderboard and an activity resource.
 - [object GameCenterActivityCreateRequest](gamecenteractivitycreaterequest.md)
   The request body you use to create an activity resource.
+- [object GameCenterActivityVersionInlineCreate](gamecenteractivityversioninlinecreate.md)
+  The data structure you use to configure an activity version while creating an activity.
 - [object GameCenterActivityResponse](gamecenteractivityresponse.md)
   A response that contains a single activity resource.
 - [object GameCenterActivityUpdateRequest](gamecenteractivityupdaterequest.md)

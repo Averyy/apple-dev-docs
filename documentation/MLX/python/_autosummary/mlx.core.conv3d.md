@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.conv3d
 
  Table of contents 

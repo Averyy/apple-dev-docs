@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.A
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.ALiBi
 
  Table of contents 

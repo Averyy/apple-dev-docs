@@ -21,7 +21,7 @@ object GameCenterAchievementLocalizationV2.Relationships.Image
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementLocalizationV2.Relationships.Image.Data](gamecenterachievementlocalizationv2/relationships-data.dictionary/image-data.dictionary/data-data.dictionary.md)
 
 ## Properties

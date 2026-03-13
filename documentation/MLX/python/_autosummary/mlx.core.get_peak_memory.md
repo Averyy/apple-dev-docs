@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ge
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.get_peak_memory
 
  Table of contents 

@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.log10
 
  Table of contents 

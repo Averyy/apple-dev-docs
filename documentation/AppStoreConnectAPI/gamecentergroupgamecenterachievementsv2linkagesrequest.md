@@ -20,7 +20,7 @@ object GameCenterGroupGameCenterAchievementsV2LinkagesRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest.Data](gamecentergroupgamecenterachievementsv2linkagesrequest/data-data.dictionary.md)
 
 ## Properties

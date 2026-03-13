@@ -8,7 +8,7 @@ Constants your extension that handles shield actions can use to tell the system 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

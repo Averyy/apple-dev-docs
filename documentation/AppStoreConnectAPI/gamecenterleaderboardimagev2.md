@@ -24,7 +24,7 @@ object GameCenterLeaderboardImageV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardImageV2.Attributes](gamecenterleaderboardimagev2/attributes-data.dictionary.md)
   Attributes that describe a Game Center leaderboard image v2 resource.
 - [object GameCenterLeaderboardImageV2.Relationships](gamecenterleaderboardimagev2/relationships-data.dictionary.md)

@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
+  Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
   Learn how local network privacy affects your software.
 - [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)

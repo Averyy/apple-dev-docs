@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.utils.t
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.utils.tree_map_with_path
 
  Table of contents 

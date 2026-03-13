@@ -24,7 +24,7 @@ object GameCenterLeaderboardSetLocalizationV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetLocalizationV2.Attributes](gamecenterleaderboardsetlocalizationv2/attributes-data.dictionary.md)
 - [object GameCenterLeaderboardSetLocalizationV2.Relationships](gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.

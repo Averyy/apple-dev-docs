@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/metal.html
 
 **
 
+**
+**
+**
+
+**
+
 # Metal
 
  Table of contents 

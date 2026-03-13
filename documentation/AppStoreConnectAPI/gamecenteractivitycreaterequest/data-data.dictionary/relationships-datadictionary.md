@@ -17,11 +17,13 @@ object GameCenterActivityCreateRequest.Data.Relationships
 ### Dictionaries
 - [object GameCenterActivityCreateRequest.Data.Relationships.GameCenterDetail](gamecenteractivitycreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 - [object GameCenterActivityCreateRequest.Data.Relationships.GameCenterGroup](gamecenteractivitycreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterActivityCreateRequest.Data.Relationships.Versions](gamecenteractivitycreaterequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary.md)
 
 ## Properties
 
 - `gameCenterDetail` (GameCenterActivityCreateRequest.Data.Relationships.GameCenterDetail)
 - `gameCenterGroup` (GameCenterActivityCreateRequest.Data.Relationships.GameCenterGroup)
+- `versions` (GameCenterActivityCreateRequest.Data.Relationships.Versions)
 
 
 ---

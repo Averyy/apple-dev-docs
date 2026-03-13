@@ -8,7 +8,7 @@ Constraints on a user’s ability to change their device’s passcode.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct PasscodeSettings
 
 ## Topics
 
-### Blocking Passcode Changes
+### Blocking passcode changes
 - [var lockPasscode: Bool?](passcodesettings/lockpasscode-swift.property.md)
   A Boolean value that indicates whether to prevent changing the device passcode.
 - [static let lockPasscode: SettingMetadata<Bool>](passcodesettings/lockpasscode-swift.type.property.md)

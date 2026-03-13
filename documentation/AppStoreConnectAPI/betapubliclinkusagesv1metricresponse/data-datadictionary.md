@@ -19,7 +19,7 @@ object BetaPublicLinkUsagesV1MetricResponse.Data
 
 ## Properties
 
-- `dataPoints` (BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints)
+- `dataPoints` ([BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints])
 
 
 ---

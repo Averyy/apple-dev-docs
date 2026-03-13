@@ -34,7 +34,7 @@ Provisioning profiles include signing certificates, device identifiers, and a bu
 - [GET /v1/profiles/{id}/relationships/devices](get-v1-profiles-_id_-relationships-devices.md)
 ### Objects
 - [object Profile](profile.md)
-  The data structure that represents a Profiles  resource.
+  The data structure that represents a Profiles resource.
 - [object ProfileCreateRequest](profilecreaterequest.md)
   The request body you use to create a Profile.
 - [object ProfileResponse](profileresponse.md)

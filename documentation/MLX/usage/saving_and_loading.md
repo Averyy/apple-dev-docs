@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/saving_and_loading.html
 
 **
 
+**
+**
+**
+
+**
+
 # Saving and Loading Arrays
 
  Table of contents 

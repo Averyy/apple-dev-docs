@@ -1,4 +1,4 @@
 Completed scraping Core Data!
-Total pages scraped: 1031
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 1032
 Pages failed: 0

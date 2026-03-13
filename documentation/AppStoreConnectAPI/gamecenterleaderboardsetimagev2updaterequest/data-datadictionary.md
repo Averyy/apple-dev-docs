@@ -22,7 +22,7 @@ object GameCenterLeaderboardSetImageV2UpdateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetImageV2UpdateRequest.Data.Attributes](gamecenterleaderboardsetimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
 ## Properties

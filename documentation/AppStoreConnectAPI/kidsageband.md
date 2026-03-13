@@ -28,7 +28,6 @@ string KidsAgeBand
   A response that contains a single Age Rating Declarations resource.
 - [object AgeRatingDeclarationUpdateRequest](ageratingdeclarationupdaterequest.md)
   The request body you use to update an Age Rating Declaration.
-- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
 - [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 - [object AppInfoTerritoryAgeRatingsLinkagesResponse](appinfoterritoryageratingslinkagesresponse.md)
 - [type AppStoreAgeRating](appstoreagerating.md)

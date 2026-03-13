@@ -24,7 +24,7 @@ object GameCenterAchievementVersionV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementVersionV2.Attributes](gamecenterachievementversionv2/attributes-data.dictionary.md)
 - [object GameCenterAchievementVersionV2.Relationships](gamecenterachievementversionv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.

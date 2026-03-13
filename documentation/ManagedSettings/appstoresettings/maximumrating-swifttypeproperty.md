@@ -8,7 +8,7 @@ The metadata associated with the maximum app rating setting.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

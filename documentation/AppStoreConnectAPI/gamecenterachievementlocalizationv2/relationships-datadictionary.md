@@ -20,7 +20,7 @@ object GameCenterAchievementLocalizationV2.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementLocalizationV2.Relationships.Image](gamecenterachievementlocalizationv2/relationships-data.dictionary/image-data.dictionary.md)
   The data and links that describe the image of the Game Center achievement localization v2.
 - [object GameCenterAchievementLocalizationV2.Relationships.Version](gamecenterachievementlocalizationv2/relationships-data.dictionary/version-data.dictionary.md)

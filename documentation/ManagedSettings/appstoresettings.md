@@ -8,7 +8,7 @@ Constraints on a user’s App Store settings.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -27,12 +27,12 @@ Use `AppStoreSettings` to manage a user’s App Store settings. You can set a ma
   A Boolean value that indicates whether to deny the user permission to make in-app purchases.
 - [static let denyInAppPurchases: SettingMetadata<Bool>](appstoresettings/denyinapppurchases-swift.type.property.md)
   The metadata associated with the setting to deny in-app purchases.
-### Setting an App Rating Limit
+### Setting an app rating limit
 - [var maximumRating: Int?](appstoresettings/maximumrating-swift.property.md)
   The maximum app rating the user can download.
 - [static let maximumRating: BoundedSettingMetadata<Int>](appstoresettings/maximumrating-swift.type.property.md)
   The metadata associated with the maximum app rating setting.
-### Requiring a Password
+### Requiring a password
 - [var requirePasswordForPurchases: Bool?](appstoresettings/requirepasswordforpurchases-swift.property.md)
   A Boolean value that indicates whether to require the user’s password to make App Store transactions.
 - [static let requirePasswordForPurchases: SettingMetadata<Bool>](appstoresettings/requirepasswordforpurchases-swift.type.property.md)

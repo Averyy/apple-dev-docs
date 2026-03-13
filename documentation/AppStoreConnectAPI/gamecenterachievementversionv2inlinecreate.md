@@ -22,7 +22,7 @@ object GameCenterAchievementVersionV2InlineCreate
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementVersionV2InlineCreate.Relationships](gamecenterachievementversionv2inlinecreate/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 

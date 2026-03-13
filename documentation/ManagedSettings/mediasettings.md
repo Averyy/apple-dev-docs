@@ -8,7 +8,7 @@ Constraints on the media content the user can access.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct MediaSettings
 
 ## Topics
 
-### Limiting Movie and TV Show Ratings
+### Limiting movie and TV show ratings
 - [var maximumMovieRating: Int?](mediasettings/maximummovierating-swift.property.md)
   The maximum movie rating the user may view.
 - [var maximumTVShowRating: Int?](mediasettings/maximumtvshowrating-swift.property.md)
@@ -27,7 +27,7 @@ struct MediaSettings
   The metadata for the setting that controls the maximum movie rating.
 - [static let maximumTVShowRating: BoundedSettingMetadata<Int>](mediasettings/maximumtvshowrating-swift.type.property.md)
   The metadata for the setting that controls the maximum TV show rating.
-### Denying Explicit Media
+### Denying explicit media
 - [var denyExplicitContent: Bool?](mediasettings/denyexplicitcontent-swift.property.md)
   A Boolean value that indicates whether to prevent the user from accessing explicit content.
 - [static let denyExplicitContent: SettingMetadata<Bool>](mediasettings/denyexplicitcontent-swift.type.property.md)
@@ -37,7 +37,7 @@ struct MediaSettings
   A Boolean value that indicates whether to prevent the user from accessing Apple Music’s streaming content.
 - [static let denyMusicService: SettingMetadata<Bool>](mediasettings/denymusicservice-swift.type.property.md)
   The metadata associated with denying access to Apple Music.
-### Constraining Content in the Books App
+### Constraining content in the Books app
 - [var denyBookstoreErotica: Bool?](mediasettings/denybookstoreerotica-swift.property.md)
   A Boolean value that indicates whether to deny media categorized as erotica in the Books store.
 - [static let denyBookstoreErotica: SettingMetadata<Bool>](mediasettings/denybookstoreerotica-swift.type.property.md)

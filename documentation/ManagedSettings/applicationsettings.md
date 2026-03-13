@@ -8,7 +8,7 @@ Constraints on the apps and categories of apps a user can run on their device.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,12 +18,12 @@ struct ApplicationSettings
 
 ## Topics
 
-### Blocking Applications
+### Blocking applications
 - [var blockedApplications: Set<Application>?](applicationsettings/blockedapplications-swift.property.md)
   A set of applications for the system to block.
 - [static let blockedApplications: SettingMetadata<Set<Application>>](applicationsettings/blockedapplications-swift.type.property.md)
   A description of the setting that controls which apps a user can launch on their device.
-### Preventing App Installation and Removal
+### Preventing app installation and removal
 - [var denyAppInstallation: Bool?](applicationsettings/denyappinstallation-swift.property.md)
   A Boolean value that indicates whether to prevent the user from installing applications.
 - [static let denyAppInstallation: SettingMetadata<Bool>](applicationsettings/denyappinstallation-swift.type.property.md)

@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ta
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.take_along_axis
 
  Table of contents 

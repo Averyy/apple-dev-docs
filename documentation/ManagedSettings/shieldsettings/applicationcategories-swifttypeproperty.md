@@ -8,7 +8,7 @@ The metadata for the configuration that specifies categories of apps for the sys
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

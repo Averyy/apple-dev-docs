@@ -23,6 +23,8 @@ Update your server-side code to use new features, and test your code against API
 
 ## See Also
 
+- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
@@ -50,8 +52,6 @@ Update your server-side code to use new features, and test your code against API
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.1 release notes](app-store-connect-api-2-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

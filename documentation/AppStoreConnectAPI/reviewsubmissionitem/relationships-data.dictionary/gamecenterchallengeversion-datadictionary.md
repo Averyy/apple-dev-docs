@@ -16,7 +16,7 @@ object ReviewSubmissionItem.Relationships.GameCenterChallengeVersion
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object ReviewSubmissionItem.Relationships.GameCenterChallengeVersion.Data](reviewsubmissionitem/relationships-data.dictionary/gamecenterchallengeversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

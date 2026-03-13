@@ -14,7 +14,7 @@ object GameCenterDetailCreateRequest.Data.Attributes
 
 ## Properties
 
-- `challengeEnabled` (boolean): This attribue is deprecated.
+- `challengeEnabled` (boolean): This attribute is deprecated.
 
 ## See Also
 

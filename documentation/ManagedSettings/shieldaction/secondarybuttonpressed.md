@@ -8,7 +8,7 @@ The user pressed the optional secondary button underneath the primary button of 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,8 +18,12 @@ case secondaryButtonPressed
 
 ## See Also
 
-- [ShieldAction.primaryButtonPressed](shieldaction/primarybuttonpressed.md)
-  The user pressed the top button of the buttons on a shield.
+- [ShieldAction.firstSecondarySubmenuItemPressed](shieldaction/firstsecondarysubmenuitempressed.md)
+  An action that occurs when someone selects the first item in the secondary button’s submenu.
+- [ShieldAction.secondSecondarySubmenuItemPressed](shieldaction/secondsecondarysubmenuitempressed.md)
+  An action that occurs when someone selects the second item in the secondary button’s submenu.
+- [ShieldAction.thirdSecondarySubmenuItemPressed](shieldaction/thirdsecondarysubmenuitempressed.md)
+  An action that occurs when someone selects the third item in the secondary button’s submenu.
 
 
 ---

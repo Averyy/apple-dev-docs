@@ -22,7 +22,7 @@ object GameCenterLeaderboardLocalizationV2UpdateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardLocalizationV2UpdateRequest.Data.Attributes](gamecenterleaderboardlocalizationv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center leaderboard localization update request.
 

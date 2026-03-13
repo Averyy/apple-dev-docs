@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/dev/extensions.html
 
 **
 
+**
+**
+**
+
+**
+
 # Custom Extensions in MLX
 
  Table of contents 

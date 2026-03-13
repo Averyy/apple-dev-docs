@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:32:31.373311",
+    "last_updated": "2026-03-13T07:39:34.360115",
     "total_pages": 510,
-    "session_id": "2026-03-10T07:32:09.316003"
+    "session_id": "2026-03-13T07:38:57.723631"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MetalFX.json": {
       "hash": "3eeb436669b2bd79c5a636dfc8711680747e618fc7e24519ea2c84431741c2c2",
-      "last_checked": "2026-03-10T07:32:09.776750",
+      "last_checked": "2026-03-13T07:38:58.118147",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bb5ba84d0967012c10c63c17daee2e2d\"",
       "file_path": "documentation/MetalFX/MetalFX.md"
     },
     "https://developer.apple.com/documentation/MetalFX": {
       "hash": "3eeb436669b2bd79c5a636dfc8711680747e618fc7e24519ea2c84431741c2c2",
-      "last_checked": "2026-03-10T07:32:09.681492",
+      "last_checked": "2026-03-13T07:38:58.000392",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bb5ba84d0967012c10c63c17daee2e2d\"",
       "file_path": "documentation/MetalFX/MetalFX.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/applying-temporal-antialiasing-and-upscaling-using-metalfx.json": {
       "hash": "5be1acac2826c0cb2b6a0fc5795ad4c7bd9d7b232f0774ec18f82b4b427e7ed1",
-      "last_checked": "2026-03-10T07:32:10.057062",
+      "last_checked": "2026-03-13T07:38:58.529728",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"36e2b20a8dfcac6a1d845e9b6e39aa0c\"",
       "file_path": "documentation/MetalFX/applying-temporal-antialiasing-and-upscaling-using-metalfx.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscaler.json": {
       "hash": "2b3608b7bc222b2942ecb886ec10b3f5eec22491c81d4a90949e4754917172c0",
-      "last_checked": "2026-03-10T07:32:10.313631",
+      "last_checked": "2026-03-13T07:38:58.695302",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9a7ba34d42a40fba4f8537b626bebfd8\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscaler.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor.json": {
       "hash": "33f33d36335fd4c964f9178681e4db5b198a2409e74c73dba73ed94c101a0bae",
-      "last_checked": "2026-03-10T07:32:10.436555",
+      "last_checked": "2026-03-13T07:38:59.003884",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"90fc183e07408cc38cddef4eaf8ecb38\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscaler.json": {
       "hash": "145203c9026f53ab585f888b80993a3f6b9845a698d0c281a2f0947e2eb609e6",
-      "last_checked": "2026-03-10T07:32:10.554027",
+      "last_checked": "2026-03-13T07:38:59.179732",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"15476b80209e9065fdae0d7ac8572a20\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscaler.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor.json": {
       "hash": "f5c52a559543916a7507c44c41fb8cab1f093da0867041ce07b3e14918a2688d",
-      "last_checked": "2026-03-10T07:32:10.627791",
+      "last_checked": "2026-03-13T07:38:59.340284",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"d33ba8a4ae91b6f5c02576aaae9ba2e1\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode.json": {
       "hash": "3fe20db4b9581dd1333aaaf3056e1b747944065d200a9853285ceba51d68ca69",
-      "last_checked": "2026-03-10T07:32:10.754842",
+      "last_checked": "2026-03-13T07:38:59.636930",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"c8e7d6ad116a49424f10d2cddfdc5838\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor.json": {
       "hash": "432eb9b550b8a4f824695354e14dd447b8d5d53fbd93a7bc27be1a0f36a70ed9",
-      "last_checked": "2026-03-10T07:32:10.879252",
+      "last_checked": "2026-03-13T07:38:59.787579",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"706c7db9e464540e7726eee50256811a\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor.json": {
       "hash": "3dff564f63ce4acb05f4e0fc5725b1d1e319ca2ad5ccd88b75c81a1d522e27b4",
-      "last_checked": "2026-03-10T07:32:11.019687",
+      "last_checked": "2026-03-13T07:38:59.962967",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bfc915ded65e46bbe7207d15c79aefa8\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxframeinterpolator.json": {
       "hash": "bde78938881e6124e384f7d7cf673b5cbd8c5681f26400e7aaef9d3352fec7f4",
-      "last_checked": "2026-03-10T07:32:11.104021",
+      "last_checked": "2026-03-13T07:39:00.070189",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"19aa4747a795a50ea59427eafe53cab6\"",
       "file_path": "documentation/MetalFX/mtl4fxframeinterpolator.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxspatialscaler.json": {
       "hash": "9bd0498068b45cfee5c62642aac3aa0d733fa6515533a3154f5001fa5e255f4e",
-      "last_checked": "2026-03-10T07:32:11.180742",
+      "last_checked": "2026-03-13T07:39:00.189960",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ffa1d57862c5187f49ad87ffb0ccee11\"",
       "file_path": "documentation/MetalFX/mtl4fxspatialscaler.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporaldenoisedscaler.json": {
       "hash": "01feaaa95b119ed9cd534e4a24e82d3c7cecbe04f495319d31fb89a1f2f3f36f",
-      "last_checked": "2026-03-10T07:32:11.314892",
+      "last_checked": "2026-03-13T07:39:00.358368",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"28d1798017284ef4d5d2057b19c14113\"",
       "file_path": "documentation/MetalFX/mtl4fxtemporaldenoisedscaler.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporalscaler.json": {
       "hash": "889f41cd15e03b7b823e596acb19653ff938797a89d84e052cf784f8da00d354",
-      "last_checked": "2026-03-10T07:32:11.392134",
+      "last_checked": "2026-03-13T07:39:00.506008",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0533e007d7a360ce7ae99150506a068d\"",
       "file_path": "documentation/MetalFX/mtl4fxtemporalscaler.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolator.json": {
       "hash": "df9bd7ade88143760bc9bf3bea91edca4fd711c13a7be0f0f7b2d2891921b7ff",
-      "last_checked": "2026-03-10T07:32:11.596394",
+      "last_checked": "2026-03-13T07:39:00.924381",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ab4146792f51f0b6b681d115012f8ec1\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolator.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase.json": {
       "hash": "9296634309e38b00cc4923bc6234598083be6d3cae8a9a1c0a2c339a2f494202",
-      "last_checked": "2026-03-10T07:32:11.723360",
+      "last_checked": "2026-03-13T07:39:01.080001",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6d6cf73b869f42ed4f0ed17215136073\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase.json": {
       "hash": "3de8a8ba57802022eae3c1d6a112989c62f2a9f8b929f2abd652eb38ee5093bc",
-      "last_checked": "2026-03-10T07:32:11.847747",
+      "last_checked": "2026-03-13T07:39:01.225952",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"fb8aeb56e31f75fc2dab1c697546cf5a\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscaler.json": {
       "hash": "39a5d757b7a94ed02cbf4d6475b8a6241717e9357515c9ee45129bbed343f748",
-      "last_checked": "2026-03-10T07:32:11.972677",
+      "last_checked": "2026-03-13T07:39:01.363332",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ef6ffffdf12ed81b55ab73fb8e7dbef5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscaler.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase.json": {
       "hash": "0d032c5a6351e3b09511fb5ea95025defe60dda7bafca426751d1f5a8fd9034a",
-      "last_checked": "2026-03-10T07:32:12.108337",
+      "last_checked": "2026-03-13T07:39:01.552759",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"4e0069c124cb72135999c6da3c165055\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase.json": {
       "hash": "b6d617ed182821ad0907fd51774814959f797bc42f4554f09e8d22fb04dce669",
-      "last_checked": "2026-03-10T07:32:12.243699",
+      "last_checked": "2026-03-13T07:39:01.845848",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e695b5648ba9e65285a6f4067f244c69\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscaler/encode(commandbuffer:).json": {
       "hash": "c322467f6d755da0f1b4ba9b3365690fed5f6590530f4f3855138548007fb4d6",
-      "last_checked": "2026-03-10T07:32:12.361877",
+      "last_checked": "2026-03-13T07:39:01.956782",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e17cd226765a0a826d42a30984f3b853\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscaler/encode-commandbuffer.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportsdevice(_:).json": {
       "hash": "dc5f1916e1fe7b207bcdc40284e4019b0008e8ef13e2ad0db5017d965820671f",
-      "last_checked": "2026-03-10T07:32:12.439751",
+      "last_checked": "2026-03-13T07:39:02.092173",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"619131f1a0f388bc19a0449763be2390\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsdevice.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale(device:).json": {
       "hash": "30b81b9f1f61bc6e894cfaa0cc8eb13af210c139b87bea48a00ff109d224457c",
-      "last_checked": "2026-03-10T07:32:12.704165",
+      "last_checked": "2026-03-13T07:39:02.396422",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"4452cf7753e6fc0a220d60b4022c48a5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale-device.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale(device:).json": {
       "hash": "230c081b4938474df04905aa0855eabec9a88e736d1268b9309a320b7dd773af",
-      "last_checked": "2026-03-10T07:32:12.822358",
+      "last_checked": "2026-03-13T07:39:02.524386",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3af2ab7c6ae98189ea5d9e19ad480841\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale-device.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/inputwidth.json": {
       "hash": "22b10ad3868c9fb89a6eee4c9ccdbd13badf9dec50cb923c96d68aa1be3b856e",
-      "last_checked": "2026-03-10T07:32:12.953188",
+      "last_checked": "2026-03-13T07:39:02.665936",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3a6ef3502ad6085222713cde306f6d7a\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/inputwidth.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/inputheight.json": {
       "hash": "a68fa41fb9aacb50ddcb9de7259a9c0b7031579a60f6be454ebc1bfb7f924be0",
-      "last_checked": "2026-03-10T07:32:13.034475",
+      "last_checked": "2026-03-13T07:39:02.855479",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"70bd00725a75796b16f84b1ccefbe21c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/inputheight.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/isinputcontentpropertiesenabled.json": {
       "hash": "630974fd67bcfab500cc771a1c9d4f56cd17d9aade9f10c466ed39e2f1fa7c78",
-      "last_checked": "2026-03-10T07:32:13.112160",
+      "last_checked": "2026-03-13T07:39:03.017097",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"d22c773d8444431e5b5631187793ce50\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/isinputcontentpropertiesenabled.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/inputcontentminscale.json": {
       "hash": "9aa7e0109ec1b4fedfd569176575141804de0bd69ceb4fdd180f6eaef4e3eda2",
-      "last_checked": "2026-03-10T07:32:13.234454",
+      "last_checked": "2026-03-13T07:39:03.160374",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"625d70ec4dc7348edacd6b6bb2cd2bb9\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/inputcontentminscale.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/inputcontentmaxscale.json": {
       "hash": "959809fce291be78446a053f9ab520935806f94a1763f4efbb28bdef51532af7",
-      "last_checked": "2026-03-10T07:32:13.315487",
+      "last_checked": "2026-03-13T07:39:03.465493",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"26b592be75554861ea1c24214680b628\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/inputcontentmaxscale.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/colortextureformat.json": {
       "hash": "a0bc3fef8f426736e078fe66fed022a051bbe7de9e96a2b11a8b82b1af7bc104",
-      "last_checked": "2026-03-10T07:32:13.459727",
+      "last_checked": "2026-03-13T07:39:03.631634",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b3834913ce6748eb3cc79c27001a2898\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/colortextureformat.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/motiontextureformat.json": {
       "hash": "3c433b6d660de3c852c7cbbf19c89a3ddfb0a07380c0a7aded5b3a0eb1f61dbb",
-      "last_checked": "2026-03-10T07:32:13.537509",
+      "last_checked": "2026-03-13T07:39:03.782129",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"c4e09187a843f39b3d8977a6fad3c81e\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/motiontextureformat.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/depthtextureformat.json": {
       "hash": "2328b4a3c5b690e18aed3b5a921136a365405fe2baca8372dab4b9fc4ae34588",
-      "last_checked": "2026-03-10T07:32:13.657606",
+      "last_checked": "2026-03-13T07:39:03.886905",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ded5988d13280b9ed6eae3cd17a15738\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/depthtextureformat.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/isautoexposureenabled.json": {
       "hash": "df6b94255838985ec91c1ab898d25db345cc3a0cf3b7167b6a2a8f753c3a6b38",
-      "last_checked": "2026-03-10T07:32:13.749752",
+      "last_checked": "2026-03-13T07:39:04.016111",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6582dc2397207e27810252c6b6c2d742\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/isautoexposureenabled.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/requiressynchronousinitialization.json": {
       "hash": "2336d3eb573f21848d41106ae766dd02051dfb9ae9dc9773a18d562029c46a9f",
-      "last_checked": "2026-03-10T07:32:13.875405",
+      "last_checked": "2026-03-13T07:39:04.228566",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"35406571c5ed2b21e46f01ff79aa7047\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/requiressynchronousinitialization.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/isreactivemasktextureenabled.json": {
       "hash": "aaeb4e6f1c1c29b8e7e40a22f8630ae3bee2504475502696551d9205dd78e03f",
-      "last_checked": "2026-03-10T07:32:13.955069",
+      "last_checked": "2026-03-13T07:39:04.375620",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"7d957a895349576633c72ed6e2fb29db\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/isreactivemasktextureenabled.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/reactivemasktextureformat.json": {
       "hash": "6268619674e00b02adf952c7a5b66102dab71ecd204554a3990df5f315da35aa",
-      "last_checked": "2026-03-10T07:32:14.030074",
+      "last_checked": "2026-03-13T07:39:04.552990",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f6828d47acb907e951bb34e07d6ae1fe\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/reactivemasktextureformat.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/outputwidth.json": {
       "hash": "46016c4e182b6c4babf3618d039a1ab19fdfb6a065b00fdcdeafd92b75693a34",
-      "last_checked": "2026-03-10T07:32:14.102638",
+      "last_checked": "2026-03-13T07:39:04.731821",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"63583e5699b5d84a005c0c81f1a114b7\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/outputwidth.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/outputheight.json": {
       "hash": "1fa8548338535f1acf911e13ac656143ad44191ebf58fc8684a14a8cfc9b850a",
-      "last_checked": "2026-03-10T07:32:14.237260",
+      "last_checked": "2026-03-13T07:39:04.855132",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a0d1effbce5d604bda974ec80f6ccbdf\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/outputheight.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/outputtextureformat.json": {
       "hash": "3eb87eef2471254be9d590a9d4d078bd5963a94673a3f52b576be3141aedab69",
-      "last_checked": "2026-03-10T07:32:14.318081",
+      "last_checked": "2026-03-13T07:39:05.046994",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"953a61ac24c8f8cb18602dd8b2e1d979\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/outputtextureformat.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/maketemporalscaler(device:).json": {
       "hash": "2951d31b297b5f2a38c36f0d8c716b279b7c2816301db56c5c185a14abf4c7ba",
-      "last_checked": "2026-03-10T07:32:14.397121",
+      "last_checked": "2026-03-13T07:39:05.203008",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"88e090196675f5954ebc844501022d56\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler-device.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportsmetal4fx(_:).json": {
       "hash": "5257ca92cdd93bcdd9e60f7b47d5de14b289c204b43902e50127239fa7199aae",
-      "last_checked": "2026-03-10T07:32:14.557698",
+      "last_checked": "2026-03-13T07:39:05.527325",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a1be258b4ce57c8137524221a9f2121a\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsmetal4fx.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscaler/encode(commandbuffer:).json": {
       "hash": "3d98596e309e12e033c93bbbcdd759c04ef0b7f519e527416d80313514cfdaaf",
-      "last_checked": "2026-03-10T07:32:14.639342",
+      "last_checked": "2026-03-13T07:39:05.643010",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9e1f1475a7813ba5f0179a4282325bd4\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscaler/encode-commandbuffer.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/supportsdevice(_:).json": {
       "hash": "24b984315d9225ed125dce06c87d6b1cca7eb971fe5f3628518cef677fa0302e",
-      "last_checked": "2026-03-10T07:32:14.713245",
+      "last_checked": "2026-03-13T07:39:05.827903",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"2e95061c9bdf3c3b5fd758d37dc274cd\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsdevice.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/inputwidth.json": {
       "hash": "178141ed6dd699cc96efdb36bc49ee3b0800baf241413cac1e22bf264a39a7bd",
-      "last_checked": "2026-03-10T07:32:14.857107",
+      "last_checked": "2026-03-13T07:39:05.942585",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0a8d8fe02d6a2d9e12044fc9251d9427\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/inputwidth.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/inputheight.json": {
       "hash": "46d8a294f8b975c21903281578a641e394e3b59c9521644fccdd94d6275daaeb",
-      "last_checked": "2026-03-10T07:32:14.931638",
+      "last_checked": "2026-03-13T07:39:06.091766",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ea1144f4cb8bbd69a3192f4b5b60ea64\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/inputheight.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/colortextureformat.json": {
       "hash": "2591a7a8112ec477c58a9d1c4e25131039e5cf268b7b50e817b05f4156193cf8",
-      "last_checked": "2026-03-10T07:32:15.003355",
+      "last_checked": "2026-03-13T07:39:06.209613",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9fad844175220545f6a91c4ecf190ad4\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/colortextureformat.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/colorprocessingmode.json": {
       "hash": "9539866ef547c59d4ef25b3f5146a2870b4d64940b52f0c217f5b65bbcdcf7a3",
-      "last_checked": "2026-03-10T07:32:15.156697",
+      "last_checked": "2026-03-13T07:39:06.337887",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e5e5d94962677db24cec8d39294499e0\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/colorprocessingmode.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/outputwidth.json": {
       "hash": "bc36743309a6fa91c26bc5a69642229ee13c059e2efa73be26a930789aebe4c3",
-      "last_checked": "2026-03-10T07:32:15.240316",
+      "last_checked": "2026-03-13T07:39:06.532965",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3133c2cc93a402cd8abce2d8d07d2ca8\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/outputwidth.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/outputheight.json": {
       "hash": "7e72f43b9a7c6d68f3fa878926a414fb73f267c6c1e63cd620bd154de4177026",
-      "last_checked": "2026-03-10T07:32:15.361829",
+      "last_checked": "2026-03-13T07:39:06.666456",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"18d01ec7a59e38396020989ca7967bad\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/outputheight.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/outputtextureformat.json": {
       "hash": "23ab7417f755440a6ae8e88dea366bfa12590d73ad8a663c9e1b614108ab17b6",
-      "last_checked": "2026-03-10T07:32:15.442585",
+      "last_checked": "2026-03-13T07:39:06.765328",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"56de342bb4977f7776a1135c480f66d2\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/outputtextureformat.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/makespatialscaler(device:).json": {
       "hash": "0900ba68024f3b25318006c1cdce79e1c641a0fe2a21995c8664f557e26f69f0",
-      "last_checked": "2026-03-10T07:32:15.521423",
+      "last_checked": "2026-03-13T07:39:06.932360",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ede0b98e5a3f1ab365761db5eb9f4ee7\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler-device.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/supportsmetal4fx(_:).json": {
       "hash": "009bc212d3193d9b88ee556b9d419d1a6a73c793ca58cc77692c22c806122590",
-      "last_checked": "2026-03-10T07:32:15.750796",
+      "last_checked": "2026-03-13T07:39:07.205823",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9a9e07ab5c765c8ded8ef4bc3bc03c77\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsmetal4fx.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/linear.json": {
       "hash": "35c9eeda21fbba57b37b1bd15cfb1df3eac3e767e979912f28a81dd5a9fb39c3",
-      "last_checked": "2026-03-10T07:32:15.825609",
+      "last_checked": "2026-03-13T07:39:07.322641",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a3eceaec545995cdb9d3d9a2b1b84652\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/linear.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/perceptual.json": {
       "hash": "c6bd93b5840c92ff1cad5a0f9cb91d71dd97db7c23f5b2110f5f4a50d3990b96",
-      "last_checked": "2026-03-10T07:32:15.950262",
+      "last_checked": "2026-03-13T07:39:07.553010",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e0cb3fd74bcd2bd1f06555cdfec844dd\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/perceptual.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/hdr.json": {
       "hash": "80b6bfc3b2ac2db192dabd66a49cd3beb12f2e4a632e2ebb353cda134bc63283",
-      "last_checked": "2026-03-10T07:32:16.026091",
+      "last_checked": "2026-03-13T07:39:07.706351",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b1380850f2b3a39e128e34007c384526\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/hdr.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/init(rawvalue:).json": {
       "hash": "3adab3b088e415e4a9506d16c664fea519dd4f45807fcde4c9a286c4626fc6e2",
-      "last_checked": "2026-03-10T07:32:16.142958",
+      "last_checked": "2026-03-13T07:39:07.819254",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e6d5a07d9cd36cdb93623714c0640d7a\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/init-rawvalue.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/colortextureformat.json": {
       "hash": "0cedef4e220bf1e31bafa1951c90c7e84a206ae2b2a35c42fd7a3e1eaf5ca6e3",
-      "last_checked": "2026-03-10T07:32:16.215399",
+      "last_checked": "2026-03-13T07:39:07.992771",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8f1bd3fe2d3894f4e1a6e0ee00b38eea\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/colortextureformat.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/depthtextureformat.json": {
       "hash": "edb6e26b836b8ffc7f72b4d9900ed2348516d97a620cacae00fb43560799f51d",
-      "last_checked": "2026-03-10T07:32:16.295289",
+      "last_checked": "2026-03-13T07:39:08.164770",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"939e57e20e26d874bdc27b8bf8994088\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/depthtextureformat.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/inputheight.json": {
       "hash": "3cf33aaa90260cf14947aeb1dad27c23f11c906778c260484a072855acef0737",
-      "last_checked": "2026-03-10T07:32:16.371867",
+      "last_checked": "2026-03-13T07:39:08.338387",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"68a0202b18fb2467e13a4b563979eab4\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/inputheight.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/inputwidth.json": {
       "hash": "473d7ffeec703ff645d30b168840ea09b8c1d65caab8239e5ca1c93d5ecb41b1",
-      "last_checked": "2026-03-10T07:32:16.446261",
+      "last_checked": "2026-03-13T07:39:08.459982",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b1d28e24571daff34384231360534a30\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/inputwidth.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/motiontextureformat.json": {
       "hash": "3067d949d2ead9b388787431ec2b7a7f703b1d6007db8712f3206b5e97867074",
-      "last_checked": "2026-03-10T07:32:16.516740",
+      "last_checked": "2026-03-13T07:39:08.622568",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"683433f1006ac1cdf58abec81065a187\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/motiontextureformat.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/outputheight.json": {
       "hash": "bf7d859ee41b8928fb74fe197d8173d29e227e447f34a367823bdc0dc63d6b99",
-      "last_checked": "2026-03-10T07:32:16.631104",
+      "last_checked": "2026-03-13T07:39:08.734157",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"7016082b604aca07439ebcebf731a369\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/outputheight.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/outputtextureformat.json": {
       "hash": "34bfaec652274d2486a40efaff4b44ea4e567a77217d8a3f3816397042af805a",
-      "last_checked": "2026-03-10T07:32:16.701488",
+      "last_checked": "2026-03-13T07:39:08.934898",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"c1cf7996e248ebe153da3c713e9c96e4\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/outputtextureformat.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/outputwidth.json": {
       "hash": "8cc42d4f041f7975877a70abf7176b42eb584ee6469ce49f9f6396c6f7f205c8",
-      "last_checked": "2026-03-10T07:32:16.778832",
+      "last_checked": "2026-03-13T07:39:09.072788",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"46a49511392d575c6ffd1f0a49e6af23\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/outputwidth.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/scaler.json": {
       "hash": "03e2a383160d6398bdc89b7a985273a9cc5da35f463b1dbd87436e5afd7c983f",
-      "last_checked": "2026-03-10T07:32:16.848464",
+      "last_checked": "2026-03-13T07:39:09.232456",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"4d713d7ac45112dc27005809f0a0308c\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/scaler.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/uitextureformat.json": {
       "hash": "5be43544d5ce81608ada0e94b15a1715f2229372afc4dcf5250c0a62eebf8608",
-      "last_checked": "2026-03-10T07:32:16.961015",
+      "last_checked": "2026-03-13T07:39:09.410377",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f95d902b7ff1d881cfc10ee4fa6bc6ec\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/uitextureformat.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/supportsdevice(_:).json": {
       "hash": "b7c48b0b86326e7ba417195f836b70a4926ddd3eef1d5fe92d19f148a5d304bb",
-      "last_checked": "2026-03-10T07:32:17.255354",
+      "last_checked": "2026-03-13T07:39:09.840909",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3b7b40cbbe0ccf06ff2ff655ec88a0da\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsdevice.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/supportsmetal4fx(_:).json": {
       "hash": "470347f7694acd2c76ce21659a8eb1c7932556b4b6152f7d9fece77f409ad4a6",
-      "last_checked": "2026-03-10T07:32:17.331974",
+      "last_checked": "2026-03-13T07:39:09.973209",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0cac969bd1131f23ad4897ab97f8ff73\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsmetal4fx.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/colortextureformat.json": {
       "hash": "fe4d8f767bf091e92f0f783013a8832c2efa50fb1f630cdf8b0bc8582ee5da46",
-      "last_checked": "2026-03-10T07:32:17.409844",
+      "last_checked": "2026-03-13T07:39:10.154578",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f88783af1759b021e284af648ded7d0c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/colortextureformat.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/denoisestrengthmasktextureformat.json": {
       "hash": "f14bb22873036d94d4b9f4a5becbc06bf4fb5295a93939cfc47cb8745253eea9",
-      "last_checked": "2026-03-10T07:32:17.484532",
+      "last_checked": "2026-03-13T07:39:10.266322",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e3a0d9d4fd7b39c7aae75ebe6eeb589c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/denoisestrengthmasktextureformat.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/depthtextureformat.json": {
       "hash": "eeca18a529162e59af89f719b65ebe28771cc6beb0d5ca33bf3841e7a7a6f7bb",
-      "last_checked": "2026-03-10T07:32:17.562624",
+      "last_checked": "2026-03-13T07:39:10.421576",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e059e7e90d46d5e4d792ac1fdec8a5d9\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/depthtextureformat.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/diffusealbedotextureformat.json": {
       "hash": "e7c76e55445b6b24b4a34a233f6dc02181c760b3f3695e3db57167bcd616d110",
-      "last_checked": "2026-03-10T07:32:17.661001",
+      "last_checked": "2026-03-13T07:39:10.540325",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8e32ab732faf2b158346927f1fa48fd9\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/diffusealbedotextureformat.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/inputheight.json": {
       "hash": "e941a8c9f017d22edfe15d5f16220ee6d6dae04d8701c826422a764be3efde4d",
-      "last_checked": "2026-03-10T07:32:17.736810",
+      "last_checked": "2026-03-13T07:39:10.667882",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"221cd46bd8f796b14c67ff62edc8f7ea\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/inputheight.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/inputwidth.json": {
       "hash": "7661563ba5a7a59c6995604e1f3b0b90881fd06c9cac04f877f1c2397cc22fb4",
-      "last_checked": "2026-03-10T07:32:17.814420",
+      "last_checked": "2026-03-13T07:39:10.797138",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b064c2a90b2eda1b47efd6c1a8446dd6\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/inputwidth.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/isautoexposureenabled.json": {
       "hash": "746ca75adf1f4de11d815fa64c24c9d05bebb10c336d2561a59c12e59a7b1c22",
-      "last_checked": "2026-03-10T07:32:17.892119",
+      "last_checked": "2026-03-13T07:39:10.918479",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f379e01d2ebce179a40a74ad58d5abd0\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/isautoexposureenabled.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/isdenoisestrengthmasktextureenabled.json": {
       "hash": "3a41c9d5517e037328707b9234883504fb583d3b05f390d0ad6b6d19f16caca2",
-      "last_checked": "2026-03-10T07:32:18.003401",
+      "last_checked": "2026-03-13T07:39:11.109065",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0b0bb0d41e1ddf66753547f217b39495\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/isdenoisestrengthmasktextureenabled.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/isreactivemasktextureenabled.json": {
       "hash": "3ade015987bf8424dc13210611ef3ed8163741231b1e6d0e4d4d8f5c1bfa9533",
-      "last_checked": "2026-03-10T07:32:18.089657",
+      "last_checked": "2026-03-13T07:39:11.257538",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3ea90edb04a6c097aee73f362ea0e5ad\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/isreactivemasktextureenabled.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/isspecularhitdistancetextureenabled.json": {
       "hash": "06e6ebcb7e8dcc01872c7845462a63210fbbe01bd91c88d2c2a33cf6bb93c87b",
-      "last_checked": "2026-03-10T07:32:18.175398",
+      "last_checked": "2026-03-13T07:39:11.366888",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e91858863208bc42976378e045a89483\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/isspecularhitdistancetextureenabled.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/istransparencyoverlaytextureenabled.json": {
       "hash": "e464f8d87dae622c0af61c9c710f76d87c9c20039e3a3bc1f6191e3154e91038",
-      "last_checked": "2026-03-10T07:32:18.248073",
+      "last_checked": "2026-03-13T07:39:11.536173",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ebdd83fa39aea52c3c88789082ce6ee3\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/istransparencyoverlaytextureenabled.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/motiontextureformat.json": {
       "hash": "0fa9b7ecea568d99fd9cf72c9d1e7de796de4a4355de2388fae5002c3542b639",
-      "last_checked": "2026-03-10T07:32:18.329986",
+      "last_checked": "2026-03-13T07:39:11.662792",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"7839e1b963bcf4d8879aeaf47376b7d2\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/motiontextureformat.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/normaltextureformat.json": {
       "hash": "1cd5d94458f5a6f0deab51532b7e23e52f66a4b9853e18d069ae2cbbd6bf025e",
-      "last_checked": "2026-03-10T07:32:18.410552",
+      "last_checked": "2026-03-13T07:39:11.831330",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0aef7c0c07438872dad6730ba656ef47\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/normaltextureformat.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/outputheight.json": {
       "hash": "bf8209f950e6c181cc08708b4cbf45e3cdbedcf59ef55cc659860c3e50402cb1",
-      "last_checked": "2026-03-10T07:32:18.482607",
+      "last_checked": "2026-03-13T07:39:11.951800",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a585d4e69e8e42e935f3c49d413961a9\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/outputheight.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/outputtextureformat.json": {
       "hash": "0819eabfa66167159eecd5e40ca3ca9253a4b13aee52a6739921d47627c0a749",
-      "last_checked": "2026-03-10T07:32:18.565499",
+      "last_checked": "2026-03-13T07:39:12.080941",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6f0e070cf63f677802a164f74000a772\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/outputtextureformat.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/outputwidth.json": {
       "hash": "5dbbe32ff0e4acea3022837ee38f85fda7b51fe77199575740834bccdf937204",
-      "last_checked": "2026-03-10T07:32:18.639903",
+      "last_checked": "2026-03-13T07:39:12.207194",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"fd519c09ae14e3e7350b9bbdda8fcbe5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/outputwidth.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/reactivemasktextureformat.json": {
       "hash": "2ce2b783e1a6f414bf9a559c7f56be82f95b86c35f7f418c230450c3a3d0cd5f",
-      "last_checked": "2026-03-10T07:32:18.720987",
+      "last_checked": "2026-03-13T07:39:12.326263",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"522a12afa2bf47bad599e0d094bf1a96\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/reactivemasktextureformat.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/requiressynchronousinitialization.json": {
       "hash": "c0acd4f85cf8623f9d8315e5c0e949b0e1ac970e54679e2df971305bb9ea847c",
-      "last_checked": "2026-03-10T07:32:18.796634",
+      "last_checked": "2026-03-13T07:39:12.489413",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8ab3f79a63888368113edc23c15c3ff2\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/requiressynchronousinitialization.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/roughnesstextureformat.json": {
       "hash": "d660f7b0b045ba4aa2e6beeb94f174abd523f81d2fdff8726dd4d4812b46df78",
-      "last_checked": "2026-03-10T07:32:18.910658",
+      "last_checked": "2026-03-13T07:39:12.608116",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b52f9312a7aa9f1486b0c1d6ebee717e\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/roughnesstextureformat.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/specularalbedotextureformat.json": {
       "hash": "52922f84d5b79a49f394ff08a988304e0e130e8c3b087e62319b123b394e18bb",
-      "last_checked": "2026-03-10T07:32:18.991749",
+      "last_checked": "2026-03-13T07:39:12.735950",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b0e7644e21c6e23140765136934a7862\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/specularalbedotextureformat.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/specularhitdistancetextureformat.json": {
       "hash": "cd4cfec9527246551bc76240155d76e8e096f087bf2ff768e2e9c0b9b73fc156",
-      "last_checked": "2026-03-10T07:32:19.072659",
+      "last_checked": "2026-03-13T07:39:12.863807",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b88b18ff156ef6c515c1584a3645a08a\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/specularhitdistancetextureformat.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/transparencyoverlaytextureformat.json": {
       "hash": "a3ee9cae024a1fc3612a2db22d0dbfa782babaaace454c46d94911fadb454a0f",
-      "last_checked": "2026-03-10T07:32:19.155350",
+      "last_checked": "2026-03-13T07:39:12.995272",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"100470d782a30f82bd9b8d7e06c61521\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/transparencyoverlaytextureformat.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice(_:).json": {
       "hash": "bd4cb92100d357731b2ff547b94bcde5b2301407050b3c9e84d32aa4008ecc5d",
-      "last_checked": "2026-03-10T07:32:19.562057",
+      "last_checked": "2026-03-13T07:39:13.680955",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"67f42f189251e8e71977e9a9626f3ca0\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx(_:).json": {
       "hash": "5478d2f7246445e283dceaa37f0c9e76253dd7fc873e981b9821cdfec72a2f76",
-      "last_checked": "2026-03-10T07:32:19.646169",
+      "last_checked": "2026-03-13T07:39:13.851390",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8e1ba94ae9d623a86d3115e567fc81d4\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/aspectratio.json": {
       "hash": "04637387c527c25d1d5d672c1b75c8536c89e27e1621f4b46ef735bf654e04a5",
-      "last_checked": "2026-03-10T07:32:20.134379",
+      "last_checked": "2026-03-13T07:39:14.640165",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0f65e6eea087fab5a4df6bcc2afb18aa\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/aspectratio.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/colortexture.json": {
       "hash": "b7c8dbd2d8d5aca33ec1a9f59287f2467dd4c9f8a1eb50ef50f9b73ca1d22ae5",
-      "last_checked": "2026-03-10T07:32:20.216779",
+      "last_checked": "2026-03-13T07:39:14.770967",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"34fe39ac44638403fd1d9b1b9415490c\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/colortexture.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/colortextureformat.json": {
       "hash": "45c78b7675fb74df427c0875e072ccc65e6f2443cd656d5e00bcc69fe6a50b1e",
-      "last_checked": "2026-03-10T07:32:20.293864",
+      "last_checked": "2026-03-13T07:39:14.974173",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"362d8c574e4bd92763820e84007a25a1\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/colortextureformat.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/colortextureusage.json": {
       "hash": "5d153dde70c5c93b50f91d84d5010f5491737d887cc8ea28b8646800125f9792",
-      "last_checked": "2026-03-10T07:32:20.445399",
+      "last_checked": "2026-03-13T07:39:15.155328",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b8f0edf8f79bc21a17e3a1355d861dee\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/colortextureusage.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/deltatime.json": {
       "hash": "3b889f059928b3385113d180479c6b11c6aa1923fdb757df463dbf96fe2a9283",
-      "last_checked": "2026-03-10T07:32:20.524888",
+      "last_checked": "2026-03-13T07:39:15.279714",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e1a7b78d595f0a8a59e1947896679399\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/deltatime.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/depthtexture.json": {
       "hash": "f59c8e8e9b4b2c49a663f18d0c4a81617b41d7dd479fe089f174e8db8873379d",
-      "last_checked": "2026-03-10T07:32:20.608979",
+      "last_checked": "2026-03-13T07:39:15.442925",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ac5b2f38a2ee4757d5a5b4a1adbca07e\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/depthtexture.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/depthtextureformat.json": {
       "hash": "153c21968ae99044d43139d4ac52a1196fe854c6aed7643b7c4782175e06c97a",
-      "last_checked": "2026-03-10T07:32:20.680725",
+      "last_checked": "2026-03-13T07:39:15.720742",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"056ed4bb3b4d489d4f28c3165a3995fe\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/depthtextureformat.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/depthtextureusage.json": {
       "hash": "b448e8b6cfef4177c57e6a05bc768b1530db2107aed0df0e1263b62675840a76",
-      "last_checked": "2026-03-10T07:32:20.762453",
+      "last_checked": "2026-03-13T07:39:15.946438",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"950e2bc44ce41f7ae3c3d3d8b4e60476\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/depthtextureusage.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/farplane.json": {
       "hash": "71754bd426c6f94739055e8f1c85355c63d48deb5c0beaebb8a22057f4b53697",
-      "last_checked": "2026-03-10T07:32:20.838268",
+      "last_checked": "2026-03-13T07:39:16.136080",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"88a82481f2dd23b3091ea03c52ac95f0\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/farplane.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/fence.json": {
       "hash": "afea45725827e681060a5ee8d6d402e26a2c13ce486f487713995c6c5e323b8f",
-      "last_checked": "2026-03-10T07:32:20.917074",
+      "last_checked": "2026-03-13T07:39:16.242014",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9b06d3e6f56527606156593e2f13e19f\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/fence.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/fieldofview.json": {
       "hash": "4bf993a8a595d7fc35545a7765e77bd061112be246cedd0442d65610ff1ec33e",
-      "last_checked": "2026-03-10T07:32:20.990282",
+      "last_checked": "2026-03-13T07:39:16.472407",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"844abf70ab156878622b8014a4cf6fd5\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/fieldofview.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/inputheight.json": {
       "hash": "1d023d328ef80536c1cb098b460d8d663d16c0eb11ca27c6827adb829bdba89b",
-      "last_checked": "2026-03-10T07:32:21.108704",
+      "last_checked": "2026-03-13T07:39:16.782667",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"252dbd31f0216a2ae9725b581e6fa77a\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/inputheight.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/inputwidth.json": {
       "hash": "5dde63804adcd43bbfcd81f2d7676bcaaf3d29f92723919792a0cba5e0e02944",
-      "last_checked": "2026-03-10T07:32:21.185941",
+      "last_checked": "2026-03-13T07:39:16.891204",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"da874c0fad985dd0fdcbebe41f211564\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/inputwidth.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/isdepthreversed.json": {
       "hash": "8f117d4509324afbe9a899c11b5b85eb749d607c7c4a846053eb7431e7523311",
-      "last_checked": "2026-03-10T07:32:21.254642",
+      "last_checked": "2026-03-13T07:39:17.036492",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"32440e9b0ea8cdb8416089f3107fccbc\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/isdepthreversed.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/isuitexturecomposited.json": {
       "hash": "1b672acce4b934e8560c3d25cd57ea7488e7106b9476a4438055427ee5aa46ea",
-      "last_checked": "2026-03-10T07:32:21.335528",
+      "last_checked": "2026-03-13T07:39:17.163745",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bb3f682d6fdbaf09273d23b43254f31b\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/isuitexturecomposited.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/jitteroffsetx.json": {
       "hash": "425fa3a5135f82e34f533c79b2ea7303a19a9d3e1bf723216274c7fe867b1498",
-      "last_checked": "2026-03-10T07:32:21.431713",
+      "last_checked": "2026-03-13T07:39:17.281890",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9da37069a09d2eb227b3d4f1b330ad66\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/jitteroffsetx.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/jitteroffsety.json": {
       "hash": "0413432478b98a853ea378559701398dd0fd5207fe01e5f34dbf6fac4eb2573b",
-      "last_checked": "2026-03-10T07:32:21.506527",
+      "last_checked": "2026-03-13T07:39:17.401807",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"84b7ca0600b4e339dd09d74ad0be83b1\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/jitteroffsety.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/motiontexture.json": {
       "hash": "6a266ee79d6b0cd1cc596e1722db3016288fa08788718075be522c324fc55bf5",
-      "last_checked": "2026-03-10T07:32:21.584768",
+      "last_checked": "2026-03-13T07:39:17.514353",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"aaeecec2eb6ef6b9e073c9442f3a7c5d\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/motiontexture.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/motiontextureformat.json": {
       "hash": "af28cb33662c4e9ffd6fa5d9192f1480728f58e4550c6bf3985c3525307677de",
-      "last_checked": "2026-03-10T07:32:21.667552",
+      "last_checked": "2026-03-13T07:39:17.697817",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"cd58d8d8e4caf82f9a0b00e03daa1b03\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/motiontextureformat.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/motiontextureusage.json": {
       "hash": "7e8306a4bf01059ebe6e3404ae26f7d2f8a5bad2f8455d15db564d8e76918c39",
-      "last_checked": "2026-03-10T07:32:21.987740",
+      "last_checked": "2026-03-13T07:39:17.829527",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"733bf41930e0d13040475ba7a4c255a7\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/motiontextureusage.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/motionvectorscalex.json": {
       "hash": "8446c90a5e17bc793bf30f6e2cfc6dcc47391a8bc5506c5dc7a9e621305ae1fe",
-      "last_checked": "2026-03-10T07:32:22.064272",
+      "last_checked": "2026-03-13T07:39:17.957322",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8ce5e482c5503540fc7157c87632dee3\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/motionvectorscalex.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/motionvectorscaley.json": {
       "hash": "0332468b5a6d8dab446a7bd9372a6e814f8ab4b72517644499ff8ebd87517262",
-      "last_checked": "2026-03-10T07:32:22.166154",
+      "last_checked": "2026-03-13T07:39:18.060860",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e694760b4ace7417ebfec6f84ab5a381\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/motionvectorscaley.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/nearplane.json": {
       "hash": "9160be893c2d0c8010aa48184dc53cb95e8be59282b04dacbb5053095e1465f1",
-      "last_checked": "2026-03-10T07:32:22.251299",
+      "last_checked": "2026-03-13T07:39:18.238476",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"501b55d836bc09e7d2ea1b67b31b85c5\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/nearplane.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/outputheight.json": {
       "hash": "227d551c388c040bbdc4e655c18d21900787afeb914f194ea37e8a50e51c3181",
-      "last_checked": "2026-03-10T07:32:22.319370",
+      "last_checked": "2026-03-13T07:39:18.382352",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e4b08d527cafb62f44733054977c0482\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/outputheight.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/outputtexture.json": {
       "hash": "541000d4d62272a89c79afbe0432757a1d7b52127674639912a94f32f4798d82",
-      "last_checked": "2026-03-10T07:32:22.395530",
+      "last_checked": "2026-03-13T07:39:18.490801",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"60e9e1355ba6b53c419ebf6630a1e9f1\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/outputtexture.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/outputtextureformat.json": {
       "hash": "4aa28d43b7a1ba927e090fd00f91e2f4f8768ac92b7089e44ddc81e1c478d85e",
-      "last_checked": "2026-03-10T07:32:22.488766",
+      "last_checked": "2026-03-13T07:39:18.873480",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9938b93bfde70886e43c56601b627896\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/outputtextureformat.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/outputtextureusage.json": {
       "hash": "e1c71bf459945f04c9a37b8cb9c5af66f522586e85e5199d91f381c027b8bc3e",
-      "last_checked": "2026-03-10T07:32:22.560792",
+      "last_checked": "2026-03-13T07:39:19.029576",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"84b87d35068463d5235fe36c76e6a161\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/outputtextureusage.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/outputwidth.json": {
       "hash": "30ec95a70883819e81673d296b8452c240ddf41c87218c4a3ee95cc69deefe4f",
-      "last_checked": "2026-03-10T07:32:22.645842",
+      "last_checked": "2026-03-13T07:39:19.224285",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bd4a88850e25de03f72941cfc8fdefff\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/outputwidth.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/prevcolortexture.json": {
       "hash": "22385ea5716c66176c583612b504f75af12758524a84f3d1be5448ecefa8f3df",
-      "last_checked": "2026-03-10T07:32:22.723336",
+      "last_checked": "2026-03-13T07:39:19.348767",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"d01751adc74f61ab9b9d2cba22e92dea\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/prevcolortexture.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/shouldresethistory.json": {
       "hash": "ba72c83bcbfdfb5ee32fa5468edd6c975c778038e225e45f6c40b93039c30cae",
-      "last_checked": "2026-03-10T07:32:22.810671",
+      "last_checked": "2026-03-13T07:39:19.652097",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9355b9d616ea0be7d99f72406a681bfd\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/shouldresethistory.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/uitexture.json": {
       "hash": "05715f62822e4ea867b2cda733326bbdd7f822c3ec1e59817c60756254ea9cb4",
-      "last_checked": "2026-03-10T07:32:22.890927",
+      "last_checked": "2026-03-13T07:39:19.772142",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"aa5b515ced4b03053940f99c6730027f\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/uitexture.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/uitextureformat.json": {
       "hash": "8a3b037e58b2d6d2822dbfcdba24660dc80519482111c752591dd446c99d519f",
-      "last_checked": "2026-03-10T07:32:22.970751",
+      "last_checked": "2026-03-13T07:39:19.934650",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"06a5ca2c52f9329090ab5bf3f1972b58\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/uitextureformat.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase/uitextureusage.json": {
       "hash": "b23b44ac6eedfb6900ce544deee38de41e9252c5e9de424b4e4b75a7e738d189",
-      "last_checked": "2026-03-10T07:32:23.043624",
+      "last_checked": "2026-03-13T07:39:20.049480",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"14532b630dd648f8d9ef491d136c5424\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatorbase/uitextureusage.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/colorprocessingmode.json": {
       "hash": "21e833f01f39f60d702d90f42d98115b9ff235362de4e231e18879a3e67aa234",
-      "last_checked": "2026-03-10T07:32:23.146783",
+      "last_checked": "2026-03-13T07:39:20.156278",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8dbdd969608354c6729c5f0886a41fce\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/colorprocessingmode.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/colortexture.json": {
       "hash": "6e03532c16224c26037e1aeedc39f019d9a8152d0d3cdef3e96431743030b57c",
-      "last_checked": "2026-03-10T07:32:23.235309",
+      "last_checked": "2026-03-13T07:39:20.287565",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"868b75affe3de597bc4801b3b1d2c517\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/colortexture.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/colortextureformat.json": {
       "hash": "9bc96b5103aa28c94c030a62fa62109ec7f8f00f8482eacdbfeae2196994f358",
-      "last_checked": "2026-03-10T07:32:23.308001",
+      "last_checked": "2026-03-13T07:39:20.405182",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"13690b85dffab6629a2b71690d521feb\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/colortextureformat.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/colortextureusage.json": {
       "hash": "fad9eb67ff8f67dc35ef785c405723356a9ad747a844f6f09cd7ae8c65c33f2a",
-      "last_checked": "2026-03-10T07:32:23.378157",
+      "last_checked": "2026-03-13T07:39:20.561902",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"096cf437fb585cb744f9082c10a4488b\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/colortextureusage.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/fence.json": {
       "hash": "1ac507797f3be83652ebdf8a4e2b0f50f6a6c8c515e9edf708627aa23f88aecf",
-      "last_checked": "2026-03-10T07:32:23.466853",
+      "last_checked": "2026-03-13T07:39:20.697419",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"75b5bf2c95a2baaab95c2e48f2634657\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/fence.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/inputcontentheight.json": {
       "hash": "b0c02e7dcf8c9fe41703354dba2d5819a233b813af4d467854fff46ed7ab6804",
-      "last_checked": "2026-03-10T07:32:23.551587",
+      "last_checked": "2026-03-13T07:39:20.840613",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8c8c6538d646761a4cbea0a13e5b64f5\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/inputcontentheight.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/inputcontentwidth.json": {
       "hash": "67e94aac9f2e3acfe8e5b33c610c9699ced180dbc3acf886ed727ac4e33f0a70",
-      "last_checked": "2026-03-10T07:32:23.624214",
+      "last_checked": "2026-03-13T07:39:21.019321",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"429d6c62d57d055c7736aced5dd98725\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/inputcontentwidth.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/inputheight.json": {
       "hash": "48de4c54d3a93340f0b769ae8dc6c850398f7298aacae8e47253d1fd8e3f5379",
-      "last_checked": "2026-03-10T07:32:23.698087",
+      "last_checked": "2026-03-13T07:39:21.188197",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"cb3fab0980226759b977f2c012b99f10\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/inputheight.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/inputwidth.json": {
       "hash": "d58e35b0b10b4faf1f799f6e114ce571e5a56132619a30a4ed1632cf318d1061",
-      "last_checked": "2026-03-10T07:32:23.785483",
+      "last_checked": "2026-03-13T07:39:21.296745",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3cc3e388cde5299ed05bdc495f9ff470\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/inputwidth.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/outputheight.json": {
       "hash": "dd8633d4b6fa61e7b3437e452776c7e0cfc408cbff438bcdc899bbaa7b939787",
-      "last_checked": "2026-03-10T07:32:23.855918",
+      "last_checked": "2026-03-13T07:39:21.425306",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e93e08cbe9755fe8ac4eb2dc6f5a5879\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/outputheight.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/outputtexture.json": {
       "hash": "212a76575febf063b8a338182c5cebd11a8aa6c448b8b858422c9593360c7911",
-      "last_checked": "2026-03-10T07:32:23.950734",
+      "last_checked": "2026-03-13T07:39:21.542391",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"4e27a1279f4c1c6445efddd8e17ba75e\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/outputtexture.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/outputtextureformat.json": {
       "hash": "a817b8eecea171dcfb9e3f668f402538602d8fa20da0968c7213e69acba08bf5",
-      "last_checked": "2026-03-10T07:32:24.064022",
+      "last_checked": "2026-03-13T07:39:21.706504",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b13d6f1e87e864792044e4e5bdc68c3c\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/outputtextureformat.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/outputtextureusage.json": {
       "hash": "f464e0bdbdd1c30e531899a263fa05b2e1767e15e1c66dec11358bb38c09ec75",
-      "last_checked": "2026-03-10T07:32:24.147188",
+      "last_checked": "2026-03-13T07:39:21.857190",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f2a8ef31d6d7c10843caf80852fe7083\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/outputtextureusage.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase/outputwidth.json": {
       "hash": "4b2454a4a5c846dc65583268f62badd511b2db9c803bcb6c9d42daca209cf115",
-      "last_checked": "2026-03-10T07:32:24.217353",
+      "last_checked": "2026-03-13T07:39:21.958001",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"84dedf789b84d07c62ccc19b404c284f\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerbase/outputwidth.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/colortexture.json": {
       "hash": "fd627f118aa64eba63088730fafe2b6c99266b39831abaf0e57084c5f279e131",
-      "last_checked": "2026-03-10T07:32:24.369968",
+      "last_checked": "2026-03-13T07:39:22.272290",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"05c922f2157f7a2e0daca7f5e9477077\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/colortexture.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/colortextureformat.json": {
       "hash": "f9c3b77c722fcde9de70659db03aa7aed06bb46b83efc41a15152c1fdffdfabf",
-      "last_checked": "2026-03-10T07:32:24.442526",
+      "last_checked": "2026-03-13T07:39:22.432203",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"cb1efc26ce026bfc7a0c5dec2f8d4d2a\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/colortextureformat.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/colortextureusage.json": {
       "hash": "efec9783a7521faf3a77c8ea912abc0eb837d393fe05a04591e44afe7989a2cd",
-      "last_checked": "2026-03-10T07:32:24.520747",
+      "last_checked": "2026-03-13T07:39:22.537021",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"95dbbffe68509be776f6b50446bd9272\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/colortextureusage.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/denoisestrengthmasktexture.json": {
       "hash": "0ba30b5e9a2036be21a531c589c1c116180d6c37cac1cea4df824afb2c8c940d",
-      "last_checked": "2026-03-10T07:32:24.602139",
+      "last_checked": "2026-03-13T07:39:22.663959",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"48f751d9764f9d4387c7596d20aa1dfc\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/denoisestrengthmasktexture.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/denoisestrengthmasktextureformat.json": {
       "hash": "746a6ba718d462d271a5cacdee4459f1849e92db74256f8df6468f8f8a20e9a3",
-      "last_checked": "2026-03-10T07:32:24.677640",
+      "last_checked": "2026-03-13T07:39:22.775796",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e268787b3c9f8954bbc87b11ad6d416f\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/denoisestrengthmasktextureformat.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/denoisestrengthmasktextureusage.json": {
       "hash": "a632ebfb302499870d076c9346659dfbdb196b6455dcf319d82f83775fab1298",
-      "last_checked": "2026-03-10T07:32:24.795449",
+      "last_checked": "2026-03-13T07:39:22.978440",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b0b7bcf8bdc2d9ad7f3b6572a4c4df7e\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/denoisestrengthmasktextureusage.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/depthtexture.json": {
       "hash": "7a806c31a1a37228d00e4ab2650c6661808bd53f99dc1322db69ba45b2060323",
-      "last_checked": "2026-03-10T07:32:24.894849",
+      "last_checked": "2026-03-13T07:39:23.100289",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"5404c8b676d35acc9eb47d27244b2d7c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/depthtexture.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/depthtextureformat.json": {
       "hash": "2bdf13428a0532fd095f003c5f09489146fea263229a54903b04557c342e0d68",
-      "last_checked": "2026-03-10T07:32:24.976408",
+      "last_checked": "2026-03-13T07:39:23.226066",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"83050487ba80111e70df9d2a15d96f15\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/depthtextureformat.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/depthtextureusage.json": {
       "hash": "85bff3b8642720d917a418466f1573a0b1a1c7c3f95aee40f08c2844ac411dfd",
-      "last_checked": "2026-03-10T07:32:25.054501",
+      "last_checked": "2026-03-13T07:39:23.453916",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f49d0709b2414d2cb52da3c881fe6e7e\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/depthtextureusage.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/diffusealbedotexture.json": {
       "hash": "5b94619b6da472ad906a217741b1bdd820435ae0c51a62f86b0e9b091dd47ab5",
-      "last_checked": "2026-03-10T07:32:25.131178",
+      "last_checked": "2026-03-13T07:39:23.591035",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"db27573ffc0332a36f2a61e08b9bb5ee\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/diffusealbedotexture.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/diffusealbedotextureformat.json": {
       "hash": "583264ea8fbbdd23c1e16584ec3ae889a619e8c788ce6e20a8c23713064133d6",
-      "last_checked": "2026-03-10T07:32:25.202925",
+      "last_checked": "2026-03-13T07:39:23.703133",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b5f2c8bb416038fda31f218deb134c02\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/diffusealbedotextureformat.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/diffusealbedotextureusage.json": {
       "hash": "724fc4049c3dd4d75fd2c497c1e7d400c6b6ef36ae55a1f4288870b760c9c524",
-      "last_checked": "2026-03-10T07:32:25.272980",
+      "last_checked": "2026-03-13T07:39:23.853493",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"381e23d0a498d06cdab9977556f1ab97\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/diffusealbedotextureusage.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/exposuretexture.json": {
       "hash": "4a434c1c6dd89649e3a0943e4d4dcb1ff599f32a7e8fa44a2ff7b8847dbd0095",
-      "last_checked": "2026-03-10T07:32:25.350127",
+      "last_checked": "2026-03-13T07:39:24.008784",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"fab097a60f85f942d46238c2e87de38c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/exposuretexture.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/fence.json": {
       "hash": "8b65af07c6eab25dbc305d0966d8adbfca555ae8e91b00fd1a5b544b010eae4a",
-      "last_checked": "2026-03-10T07:32:25.451996",
+      "last_checked": "2026-03-13T07:39:24.190127",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"52eb37b3549b7c804c2e7ef0edb4bdb4\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/fence.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/inputcontentmaxscale.json": {
       "hash": "60511d9c7a31f8864bafff0f27297cb095ff06ac112d031690d9026c5f360ecb",
-      "last_checked": "2026-03-10T07:32:25.528773",
+      "last_checked": "2026-03-13T07:39:24.305335",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"c4f142bca2736852c1c82b00be8d24bc\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/inputcontentmaxscale.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/inputcontentminscale.json": {
       "hash": "d04115946dfb4d9738bc5e1e3184f9aa1afdee81ad4f44fd3c920d33286dae2a",
-      "last_checked": "2026-03-10T07:32:25.613402",
+      "last_checked": "2026-03-13T07:39:24.504664",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6a05f618396cf8ed629663ab300fc93b\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/inputcontentminscale.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/inputheight.json": {
       "hash": "cf28fbc09add9fbd0133b588b01979569170fe1ba1bb711f67c5597ff6ac6335",
-      "last_checked": "2026-03-10T07:32:25.696911",
+      "last_checked": "2026-03-13T07:39:24.625366",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"fa4f387257e629b74fdf721f83dd8bb8\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/inputheight.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/inputwidth.json": {
       "hash": "e068493f727686a0bcaa4911fb10cb54e3ec9f230620678c6819db5979c0aba3",
-      "last_checked": "2026-03-10T07:32:25.785763",
+      "last_checked": "2026-03-13T07:39:24.798109",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"1454fc0c8ed70ceb72aae3e20a1c17f2\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/inputwidth.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/isdepthreversed.json": {
       "hash": "ee75be1fbc218a2ab148e89f473ad9cc12e40bc81a9aa3bf2e8962b907f59e35",
-      "last_checked": "2026-03-10T07:32:25.884864",
+      "last_checked": "2026-03-13T07:39:24.960597",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"c5613cf574d1a7121cf0262644d9f7a6\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/isdepthreversed.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/jitteroffsetx.json": {
       "hash": "cf4c4a33f7a3da499643c6675378d4e452c582622754b07c1cc7e094d55d904b",
-      "last_checked": "2026-03-10T07:32:25.967554",
+      "last_checked": "2026-03-13T07:39:25.110740",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8a03f0b15359812561e4a59b1e277e1c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/jitteroffsetx.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/jitteroffsety.json": {
       "hash": "4910f039918782b57edf8198b9722e7c033a65d14fc4f100c156a9835410e7d3",
-      "last_checked": "2026-03-10T07:32:26.039451",
+      "last_checked": "2026-03-13T07:39:25.300928",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"5edb86223ae2735d0b8987c87f82bb89\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/jitteroffsety.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/motiontexture.json": {
       "hash": "cb4f18bb21212417887915f22209c7a0fb83f145079bef7785eecb62f6b651b6",
-      "last_checked": "2026-03-10T07:32:26.134810",
+      "last_checked": "2026-03-13T07:39:25.606733",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6033fdeeb5700274bf585395b5ad7940\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/motiontexture.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/motiontextureformat.json": {
       "hash": "36874ca7956410c14707b0e570428339fdfb3703312bc0a520457ba99faaeeef",
-      "last_checked": "2026-03-10T07:32:26.213268",
+      "last_checked": "2026-03-13T07:39:25.708519",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"49e059f37090924b77f89f824771ff1b\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/motiontextureformat.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/motiontextureusage.json": {
       "hash": "8c3946ae43c4abb82a82be3100d3fede3db258a6cdef7cd76318924bff22f276",
-      "last_checked": "2026-03-10T07:32:26.280539",
+      "last_checked": "2026-03-13T07:39:25.871793",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"599f3d5b4a80c8e1af002747fbbb4614\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/motiontextureusage.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/motionvectorscalex.json": {
       "hash": "6192059ff3c260c5494965f76ad97d792fb7ecb3065ab9cd705ae1b5e7eb828c",
-      "last_checked": "2026-03-10T07:32:26.362516",
+      "last_checked": "2026-03-13T07:39:25.981066",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"95828cab9bb05e08d7b9fbe57efca81c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/motionvectorscalex.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/motionvectorscaley.json": {
       "hash": "dc16a0bbfe4028517cbce7d73eed4d0d90aea433aa54111c62d43fe303b41ce5",
-      "last_checked": "2026-03-10T07:32:26.435847",
+      "last_checked": "2026-03-13T07:39:26.155821",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"5a127bc95d65459b946f464e205de098\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/motionvectorscaley.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/normaltexture.json": {
       "hash": "427b51ca09fbf9fa565b09d551ae9a9fded15de334f6f57eebdd4afe57802900",
-      "last_checked": "2026-03-10T07:32:26.509644",
+      "last_checked": "2026-03-13T07:39:26.280112",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f622ef85b937b25e256078661270b7a9\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/normaltexture.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/normaltextureformat.json": {
       "hash": "33ec8dc0a233ae1cc4fdc3af12947180266d7cc86fe9aee9483e48f0f91d7b9a",
-      "last_checked": "2026-03-10T07:32:26.586166",
+      "last_checked": "2026-03-13T07:39:26.456899",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"76f666ae066972f1077934d992f83bb1\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/normaltextureformat.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/normaltextureusage.json": {
       "hash": "da676acf699593a45b22039315d02197951c1e078cbcfd9d238680022e1d84e3",
-      "last_checked": "2026-03-10T07:32:26.680805",
+      "last_checked": "2026-03-13T07:39:26.561382",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"dfc2e8a2eb4e4890a7ad3849c4486e0a\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/normaltextureusage.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/outputheight.json": {
       "hash": "b36ca130d3765704490a76030ab053cedb1d5f0325f4f9200c099ca857891c74",
-      "last_checked": "2026-03-10T07:32:26.752922",
+      "last_checked": "2026-03-13T07:39:26.692505",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"4905a8ec11c9e6c2f56eb531a8df4ffe\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/outputheight.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/outputtexture.json": {
       "hash": "5f3ba56458b569b3236cf94ea7bb3d4d169bb1695541a63790dd6d2179575c65",
-      "last_checked": "2026-03-10T07:32:26.828292",
+      "last_checked": "2026-03-13T07:39:26.840989",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"c0987f266965e95bc71e5846f52c13fd\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/outputtexture.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/outputtextureformat.json": {
       "hash": "24b8b70bae7edc984504ce8dca4aa3badb2ddab440a7377852b28bdf997b1e06",
-      "last_checked": "2026-03-10T07:32:26.902396",
+      "last_checked": "2026-03-13T07:39:27.006343",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"efc5b59bafa71efa40f8ea876e56cbf5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/outputtextureformat.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/outputtextureusage.json": {
       "hash": "a5a86b38fa7b81c37f7d21180d7762d9e6af0c6e294b190d64c5504c96d3a550",
-      "last_checked": "2026-03-10T07:32:26.972160",
+      "last_checked": "2026-03-13T07:39:27.171570",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"7e0e81f5f855f98e4123f06b4593e007\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/outputtextureusage.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/outputwidth.json": {
       "hash": "282820dd7abda8a2399f5f55f1b56a5c5c162d710e6b1f1bdfa6729367f36451",
-      "last_checked": "2026-03-10T07:32:27.061556",
+      "last_checked": "2026-03-13T07:39:27.290785",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0f26d06b90b07baa06fe4a5307343fc5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/outputwidth.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/preexposure.json": {
       "hash": "8261160efbfbf02fb99f87f39f9d91f2cf07b6c05d74979179c34d6646dcefa2",
-      "last_checked": "2026-03-10T07:32:27.149148",
+      "last_checked": "2026-03-13T07:39:27.456819",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e8e4c8f230ddc2ca0e03a75b2c2f76ed\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/preexposure.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/reactivemasktexture.json": {
       "hash": "cc730c5f3c401dee799af4a4843c5860202c243efca04d339e289d792ca3629d",
-      "last_checked": "2026-03-10T07:32:27.226789",
+      "last_checked": "2026-03-13T07:39:27.604944",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"1a5a463ca07c0c5a8c469e96419f721e\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/reactivemasktexture.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/reactivemasktextureformat.json": {
       "hash": "c73f84efeef446a372a287437c0b853791fb751031ec3c0b26ef260eaf4731c3",
-      "last_checked": "2026-03-10T07:32:27.307824",
+      "last_checked": "2026-03-13T07:39:27.762281",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b4cc8169ae4564dbb25f2234d5ecd281\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/reactivemasktextureformat.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/reactivetextureusage.json": {
       "hash": "569c2e9e3a8fcb883364b684282d9a951d474afc7695feaa72e796905c5eb0ba",
-      "last_checked": "2026-03-10T07:32:27.380585",
+      "last_checked": "2026-03-13T07:39:27.888379",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"db9f94ca7023861a4b9f5f2f360e1154\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/reactivetextureusage.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/roughnesstexture.json": {
       "hash": "bf0ed6e4c30a2a85e241250b07385f389c06522b58d77cc4ecd0f9a9c532fd6c",
-      "last_checked": "2026-03-10T07:32:27.453412",
+      "last_checked": "2026-03-13T07:39:28.099317",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8200c2509f55ed721e0677054e61b07f\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/roughnesstexture.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/roughnesstextureformat.json": {
       "hash": "2142dee8935d6ba7d06a41c80128b908682b744c15ff10904c7f577a71da917d",
-      "last_checked": "2026-03-10T07:32:27.540197",
+      "last_checked": "2026-03-13T07:39:28.218764",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"392adc44bb9ada34527ed7236fe9fd96\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/roughnesstextureformat.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/roughnesstextureusage.json": {
       "hash": "e7c49399d62ac9ea8f19df1eeae794f44a4da150d370ceda712cae1bb7fa0e50",
-      "last_checked": "2026-03-10T07:32:27.610263",
+      "last_checked": "2026-03-13T07:39:28.364566",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"37df67baaa89d7354b7cd5db21c100fe\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/roughnesstextureusage.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/shouldresethistory.json": {
       "hash": "d572bba7e5e2d7949d8e8845ae902c19615a652c938b1074f62cddf0765904a1",
-      "last_checked": "2026-03-10T07:32:27.689259",
+      "last_checked": "2026-03-13T07:39:28.529418",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"459a13684064b7ae5e3dbc2b24905d97\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/shouldresethistory.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/specularalbedotexture.json": {
       "hash": "c7a3d317ff0386e3019079123a989a113927c9f9cb5b4a202af8be320d20c3ca",
-      "last_checked": "2026-03-10T07:32:27.766382",
+      "last_checked": "2026-03-13T07:39:28.640632",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ae774f6a7443109ddb674cb9bba866fb\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/specularalbedotexture.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/specularalbedotextureformat.json": {
       "hash": "76cad6528916976ede59069dcc2ff998aaa9d50e2e59710ba9cc1bfcd29438af",
-      "last_checked": "2026-03-10T07:32:27.838932",
+      "last_checked": "2026-03-13T07:39:28.762666",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a4016e1be022ab1727ee022449790ec3\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/specularalbedotextureformat.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/specularalbedotextureusage.json": {
       "hash": "a2f72f21ca9a0ffd4d5c2bb77e846153ec0e02df04577b4debd2d0aa7e9f0d72",
-      "last_checked": "2026-03-10T07:32:27.922106",
+      "last_checked": "2026-03-13T07:39:28.925814",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"1e100a22e63bfea6a706d49ac6a0a04f\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/specularalbedotextureusage.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/specularhitdistancetexture.json": {
       "hash": "5cf4451d0ef34a459a76245725e273ebb9f699f90a7b08a9c576b6b2716e7864",
-      "last_checked": "2026-03-10T07:32:28.035958",
+      "last_checked": "2026-03-13T07:39:29.081149",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"02a3733d57815c07eedd33c627b97d41\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/specularhitdistancetexture.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/specularhitdistancetextureformat.json": {
       "hash": "6378f483a91eb143bd953357da4c7daf7b6b73634bed00d8c898109c565e8f1a",
-      "last_checked": "2026-03-10T07:32:28.107730",
+      "last_checked": "2026-03-13T07:39:29.197825",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"9acd7e365a96e7ac1d913b424e908449\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/specularhitdistancetextureformat.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/specularhitdistancetextureusage.json": {
       "hash": "7f07d7d7bbf365ed7d929a462a1ff378ffecdca953e34a56ab29f524354d3466",
-      "last_checked": "2026-03-10T07:32:28.183535",
+      "last_checked": "2026-03-13T07:39:29.373642",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f31760d5e84353f3cdc4fa75243a747b\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/specularhitdistancetextureusage.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/transparencyoverlaytexture.json": {
       "hash": "cb43d12ce44bfa97a7d44c8ca32ecbe1cec6d0807f8d45c3ea9f4d3b6cd11713",
-      "last_checked": "2026-03-10T07:32:28.259165",
+      "last_checked": "2026-03-13T07:39:29.540283",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ebf3ed160c0433157405b1185b2603c3\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/transparencyoverlaytexture.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/transparencyoverlaytextureformat.json": {
       "hash": "ef5029a276ec8fdd09947834924d1be806b0c46019d00a3628f1798d3fc10085",
-      "last_checked": "2026-03-10T07:32:28.330544",
+      "last_checked": "2026-03-13T07:39:29.643020",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"14eca96906736eae7ebb13b34898f7ac\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/transparencyoverlaytextureformat.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/transparencyoverlaytextureusage.json": {
       "hash": "564894b4c541605294c465108ee4faba7dccacd37df04043551d5974198327fe",
-      "last_checked": "2026-03-10T07:32:28.411906",
+      "last_checked": "2026-03-13T07:39:29.777767",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"324519c7ff5aed61196d0a172f02159d\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/transparencyoverlaytextureusage.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/viewtoclipmatrix.json": {
       "hash": "2f0642a168ef6413ea6dadf16b955e7c297ecb7b11c4a062c2124e5fd9a10f3b",
-      "last_checked": "2026-03-10T07:32:28.483010",
+      "last_checked": "2026-03-13T07:39:29.900306",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b7238cc2aa683d7fe64a13e3616091aa\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/viewtoclipmatrix.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase/worldtoviewmatrix.json": {
       "hash": "f7cb0b03b42c3e710129eb871bc8f5c08d2a8d922352197654613d67f8343f6f",
-      "last_checked": "2026-03-10T07:32:28.561527",
+      "last_checked": "2026-03-13T07:39:30.013930",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f195a4e9d6247358a40beb6d0a16c3c5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerbase/worldtoviewmatrix.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/colortexture.json": {
       "hash": "f929bc8be51bbddc30e84753d60525437ea05f6f8d5d9d4cf0b36be19a36e885",
-      "last_checked": "2026-03-10T07:32:28.638844",
+      "last_checked": "2026-03-13T07:39:30.150698",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"41d12bc0e93d4562ab8d4ab7fd6f7c4d\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/colortexture.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/colortextureformat.json": {
       "hash": "4e06f8b6ce59e524e8c47db00bdca5404d308be2f86e76f4bc4ae8b740c0301f",
-      "last_checked": "2026-03-10T07:32:28.779580",
+      "last_checked": "2026-03-13T07:39:30.325983",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0038040d0617d713577659aeeca19057\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/colortextureformat.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/colortextureusage.json": {
       "hash": "2c8c64e66965f58f265a3562123c49ec10a3c5b6465419d9cb92e0ae23938f5e",
-      "last_checked": "2026-03-10T07:32:28.855623",
+      "last_checked": "2026-03-13T07:39:30.489491",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3961e1d59b642be12b476a92f16d6e0f\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/colortextureusage.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/depthtexture.json": {
       "hash": "830743fc8c0f4e86867622a2ea60d1db4c1b46f167169ffe3e598016aedf2596",
-      "last_checked": "2026-03-10T07:32:28.933466",
+      "last_checked": "2026-03-13T07:39:30.599958",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b102724898356b47e9a04d71524bac4b\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/depthtexture.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/depthtextureformat.json": {
       "hash": "1f61955370c93dbae35e06ee3c00c1eccd40d2e715c48239c867c27cac2b2da2",
-      "last_checked": "2026-03-10T07:32:29.009697",
+      "last_checked": "2026-03-13T07:39:30.783066",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"331ce636964f88af8576d198ef79aa13\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/depthtextureformat.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/depthtextureusage.json": {
       "hash": "0105ccd0c92317ec14f8465f730d7233fed4a71475992b45eb719b8b40b8c6af",
-      "last_checked": "2026-03-10T07:32:29.087536",
+      "last_checked": "2026-03-13T07:39:30.888929",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"12bf82d85f12f21e947bd841f886d532\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/depthtextureusage.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/exposuretexture.json": {
       "hash": "36dbcbd350b6ffd963dd7cd3862eaa34b4409690a7c27fd1bec50aa29ea19f75",
-      "last_checked": "2026-03-10T07:32:29.160269",
+      "last_checked": "2026-03-13T07:39:31.078045",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"cfb6cfd0ec6b9b1f300493218712114c\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/exposuretexture.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/fence.json": {
       "hash": "db698401d068dcb5919811502fc0ee7ed15d8539864820baa87e2183f036ea1c",
-      "last_checked": "2026-03-10T07:32:29.233316",
+      "last_checked": "2026-03-13T07:39:31.179315",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"26d13deab3cd1a8d07543117d9fb659a\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/fence.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/inputcontentheight.json": {
       "hash": "b2083e69522f5b6c73cb1d3a978c235f791eaa050bf753f9a24b1772fbad8e6e",
-      "last_checked": "2026-03-10T07:32:29.472589",
+      "last_checked": "2026-03-13T07:39:31.352966",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f067445dbbe3a2efac9ea3f5f4db8bcc\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/inputcontentheight.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/inputcontentmaxscale.json": {
       "hash": "4252b29293a4da516fc3e50f74bcdc7230a36a21df12b3b910bb871e24f269a1",
-      "last_checked": "2026-03-10T07:32:29.569010",
+      "last_checked": "2026-03-13T07:39:31.461694",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a2d94fabe7affe3f926debbfb029efec\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/inputcontentmaxscale.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/inputcontentminscale.json": {
       "hash": "7bf6f9ce2652c74c2c663527e202ee8cf5210cdc582cb1bf3cfb6786f21626ed",
-      "last_checked": "2026-03-10T07:32:29.659474",
+      "last_checked": "2026-03-13T07:39:31.646589",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a2b729653e0e393f03af457b61d10bdb\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/inputcontentminscale.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/inputcontentwidth.json": {
       "hash": "259ad9962dde32bc1738224573a941f8cc1157989a66ffd2f9cbbcb74ecaf7b7",
-      "last_checked": "2026-03-10T07:32:29.733109",
+      "last_checked": "2026-03-13T07:39:31.778642",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8af9d08f4220893a0206a3b744b459bd\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/inputcontentwidth.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/inputheight.json": {
       "hash": "08b505647ad7ccffd399073728559be31a1b8bacfe7b67c0b101d30bdf3bed1f",
-      "last_checked": "2026-03-10T07:32:29.802709",
+      "last_checked": "2026-03-13T07:39:31.891478",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"ffee96a562e1cc98ab833a423ecac075\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/inputheight.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/inputwidth.json": {
       "hash": "0ae6472b9b98f4903d4884d4a58f4529b1d5729f442c2c2b1b3d31551f901bb7",
-      "last_checked": "2026-03-10T07:32:29.899613",
+      "last_checked": "2026-03-13T07:39:32.007369",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"4ad5ca99bb2f543afe9087a4c8dac9b7\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/inputwidth.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/isdepthreversed.json": {
       "hash": "da30e54303a21bf188c4e1541e5d04298d7bfced3e364fdc0d66d672c8d12e61",
-      "last_checked": "2026-03-10T07:32:29.971457",
+      "last_checked": "2026-03-13T07:39:32.123748",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0b88a0b5db3583e7d0798d3e54827518\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/isdepthreversed.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/jitteroffsetx.json": {
       "hash": "e72920773133d07db9205bc066d2c27377344d2ff30f79d6c9e3b8dcd7903e37",
-      "last_checked": "2026-03-10T07:32:30.047680",
+      "last_checked": "2026-03-13T07:39:32.267176",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6784fc44a3106edeac27a3e530af28ee\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/jitteroffsetx.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/jitteroffsety.json": {
       "hash": "c0a6128ec796fb057e1c0933e3b3e8f7089d4256ba5ba2cfecd292f5bb19ee75",
-      "last_checked": "2026-03-10T07:32:30.147170",
+      "last_checked": "2026-03-13T07:39:32.433101",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"865bb49a381986452a450e5ce04e3e4b\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/jitteroffsety.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/motiontexture.json": {
       "hash": "0f8fd62a7dc4323edf2bdffbd6de0754fd8fb5775464c0fc12edfd4668ff7764",
-      "last_checked": "2026-03-10T07:32:30.270746",
+      "last_checked": "2026-03-13T07:39:32.558704",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"91e251a7ca44c0351767168026244506\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/motiontexture.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/motiontextureformat.json": {
       "hash": "8d5672fb092246a1aa274104bce2402a5a11f748d49656c8cb235fff9c4715da",
-      "last_checked": "2026-03-10T07:32:30.366661",
+      "last_checked": "2026-03-13T07:39:32.678979",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"404eec5ef8f33419f2eace13a2fcfd17\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/motiontextureformat.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/motiontextureusage.json": {
       "hash": "9a2d3df15bc2bc12c7f301d46f16b3a2e454779b25d111e822d05d544cfe64f4",
-      "last_checked": "2026-03-10T07:32:30.454806",
+      "last_checked": "2026-03-13T07:39:32.790558",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"71321e81d11020a6426be9ddc5316b05\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/motiontextureusage.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/motionvectorscalex.json": {
       "hash": "db3c800dc96509cd5739aa2d4bb49328f9383a06e01a9d840431cad038f1d129",
-      "last_checked": "2026-03-10T07:32:30.534208",
+      "last_checked": "2026-03-13T07:39:32.905440",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b214e36fa224c136377e9019855082a2\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/motionvectorscalex.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/motionvectorscaley.json": {
       "hash": "f9e89b669d2bae21ccdf74af2a4049afcec68d0f28c74d8103c94a48fe105178",
-      "last_checked": "2026-03-10T07:32:30.608363",
+      "last_checked": "2026-03-13T07:39:33.025037",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0f3a10ca9ed87c5f61a774c189d08eb1\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/motionvectorscaley.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/outputheight.json": {
       "hash": "5f171aea86994de8e4c7dc33aa9a85e978bc742daff400889364f2beb2e63d93",
-      "last_checked": "2026-03-10T07:32:30.682795",
+      "last_checked": "2026-03-13T07:39:33.195498",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"b64f73deee3c07c679f46cd1134c96ff\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/outputheight.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/outputtexture.json": {
       "hash": "02ef38bf1b2aac96a147681e4d03dcc2641f9bcbbb86ef0f5439e681c2f63b0c",
-      "last_checked": "2026-03-10T07:32:30.755967",
+      "last_checked": "2026-03-13T07:39:33.366494",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"0db9678fc1a4859e56868580467de56e\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/outputtexture.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/outputtextureformat.json": {
       "hash": "a8cdc39d676fff0c629d66ff196cde7a467d3d58fcb9f717aee2b07d027ae9fd",
-      "last_checked": "2026-03-10T07:32:30.840396",
+      "last_checked": "2026-03-13T07:39:33.469131",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"95c893a690a0285e0f2d309d7444232f\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/outputtextureformat.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/outputtextureusage.json": {
       "hash": "f6b1ad54e8d74b2ad95cfda668335cca1ad0b176cc68805e67c09b4e58962339",
-      "last_checked": "2026-03-10T07:32:30.914705",
+      "last_checked": "2026-03-13T07:39:33.632928",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"dd015b7e5eb60baa30011795e4c00ad1\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/outputtextureusage.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/outputwidth.json": {
       "hash": "64138128117dd24a86cdf19942640b3e019ba441f5c8b724464f8d9b2ae01d64",
-      "last_checked": "2026-03-10T07:32:30.993377",
+      "last_checked": "2026-03-13T07:39:33.736969",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"8f4be695e93eba7bf0656ef568ce3c35\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/outputwidth.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/preexposure.json": {
       "hash": "322960eed0d621e0f0a3e86c7c741b8e5d0068022f1a002b276a6d1efae5ef44",
-      "last_checked": "2026-03-10T07:32:31.073568",
+      "last_checked": "2026-03-13T07:39:33.861670",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3379fe896e7814f073079180613773c5\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/preexposure.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/reactivemasktexture.json": {
       "hash": "7875472ec024f0a64c6beb329a47e4841499f990fb74a026d377d640b24f7e47",
-      "last_checked": "2026-03-10T07:32:31.149012",
+      "last_checked": "2026-03-13T07:39:33.961902",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"f75f0da2a3fb18d08ce4488396167a04\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/reactivemasktexture.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/reactivemasktextureformat.json": {
       "hash": "195c6152f275591ae3667a2c5c2cf263538904756ba36d61dbc7a19e8a0d0d7c",
-      "last_checked": "2026-03-10T07:32:31.228076",
+      "last_checked": "2026-03-13T07:39:34.076405",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"3fc4763fed1f9289a3a92a333e09ebb8\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/reactivemasktextureformat.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/reactivetextureusage.json": {
       "hash": "306e33614cd475202ab9b40e7b06ba35746cac805d386863b7780753e0342ebc",
-      "last_checked": "2026-03-10T07:32:31.300783",
+      "last_checked": "2026-03-13T07:39:34.237061",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"d129ff2b7294ae59c2c9e786d26d0f43\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/reactivetextureusage.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase/reset.json": {
       "hash": "f0f7606ce6826c5dd684dbbca1a3359687fe91adf778a45ae39029cf025251b7",
-      "last_checked": "2026-03-10T07:32:31.372250",
+      "last_checked": "2026-03-13T07:39:34.342958",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"295302ff62e8ecdf00f14764e84257b4\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerbase/reset.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatablescaler.json": {
       "hash": "641bac24c94f4727039ce71d1a0ab216b0bc7c52582848cddd93d3cec6e9e223",
-      "last_checked": "2026-03-10T07:32:11.465605",
+      "last_checked": "2026-03-13T07:39:00.630290",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"6d18474b7367c1284e276f2e3d1498b1\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatablescaler.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/maketemporalscaler(device:compiler:).json": {
       "hash": "33c4c261962c4248db71ddaf821c6436d9713b4e37224d6a6eaa4ceaab6e5760",
-      "last_checked": "2026-03-10T07:32:14.473798",
+      "last_checked": "2026-03-13T07:39:05.361392",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"789b29cea64de2622de2b4a8afabe7ae\"",
       "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler-devicecompiler.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/makespatialscaler(device:compiler:).json": {
       "hash": "0fa8fc4ff2f7e07c5cebb69cce591e4bd3ada2babaf16c5c3050048068102344",
-      "last_checked": "2026-03-10T07:32:15.678298",
+      "last_checked": "2026-03-13T07:39:07.087779",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"380b99c811d421d51af8992ae8d22435\"",
       "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler-devicecompiler.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:).json": {
       "hash": "c1bfc0049b261b66920238e6de89b773605d0809563ec5341b7d1d1675ad3948",
-      "last_checked": "2026-03-10T07:32:17.086805",
+      "last_checked": "2026-03-13T07:39:09.509278",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"81500955a8fd00b8b8e12c117e794abb\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator-device.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:compiler:).json": {
       "hash": "2b64752e877cccb349919b31b006e192de4ae4190751b7030dcfee12486b758e",
-      "last_checked": "2026-03-10T07:32:17.176469",
+      "last_checked": "2026-03-13T07:39:09.715713",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"63828188136a68d7231c5c9d21328476\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator-devicecompiler.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:).json": {
       "hash": "4c301c9450297b6f4db6833dfb9973cfb81e871417b7c3feb9efe97e16a17ad5",
-      "last_checked": "2026-03-10T07:32:19.228591",
+      "last_checked": "2026-03-13T07:39:13.170827",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"a9f3c138a27f105836af8431abe12294\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler-device.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:compiler:).json": {
       "hash": "8f79f77e6e1995e15f3abef940d25b5a936f08ab82f69ede673e11b7a2d2cf9a",
-      "last_checked": "2026-03-10T07:32:19.312275",
+      "last_checked": "2026-03-13T07:39:13.286598",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"5f5c7d3be5442e252d3693ecf9de0ccc\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler-devicecompiler.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(device:).json": {
       "hash": "61fb2b5eb1498213133272a52a1361d98ee6cff26a38e93c4f38704232c75998",
-      "last_checked": "2026-03-10T07:32:19.401904",
+      "last_checked": "2026-03-13T07:39:13.411650",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bf3351ea3505b38cd4bfeacea487d6cc\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale-device.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(device:).json": {
       "hash": "061acb8bff78dd7f7c635b6800fe8c39aa683780c8e231cd0a16dd0c0cfa08a5",
-      "last_checked": "2026-03-10T07:32:19.482285",
+      "last_checked": "2026-03-13T07:39:13.546653",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"d94d9eb95e3e96f08bfdae880d1e86f7\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale-device.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxframeinterpolator/encode(commandbuffer:).json": {
       "hash": "d35b4abcfb48a4d1cf1a251b2500b1d82ff8f2c1e832d5038bbc0a52a3470ae3",
-      "last_checked": "2026-03-10T07:32:19.725174",
+      "last_checked": "2026-03-13T07:39:14.001826",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"35e3cb996a57f5c3617b34c5f824fa6f\"",
       "file_path": "documentation/MetalFX/mtl4fxframeinterpolator/encode-commandbuffer.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxspatialscaler/encode(commandbuffer:).json": {
       "hash": "265aa44749a83cfba7660f4bcafbe08b08636deb513ca9838863adf737090d44",
-      "last_checked": "2026-03-10T07:32:19.812671",
+      "last_checked": "2026-03-13T07:39:14.116597",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"771a407fe1f3220206854f80a7a34202\"",
       "file_path": "documentation/MetalFX/mtl4fxspatialscaler/encode-commandbuffer.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporaldenoisedscaler/encode(commandbuffer:).json": {
       "hash": "adb751789d85071a3cfc65f376c4ad291d1acfbb007ff2f82e61352f0a1786fa",
-      "last_checked": "2026-03-10T07:32:19.883973",
+      "last_checked": "2026-03-13T07:39:14.237787",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"d1ba7858096ade2ca8f9d9917768f221\"",
       "file_path": "documentation/MetalFX/mtl4fxtemporaldenoisedscaler/encode-commandbuffer.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporalscaler/encode(commandbuffer:).json": {
       "hash": "8aae32a82de4a61302275e8d77cd9e09cf3ace7d9652859dbc94f761a9bcd3a7",
-      "last_checked": "2026-03-10T07:32:19.973058",
+      "last_checked": "2026-03-13T07:39:14.381146",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"e89fe9710a635cb374f9524f73515fae\"",
       "file_path": "documentation/MetalFX/mtl4fxtemporalscaler/encode-commandbuffer.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolator/encode(commandbuffer:).json": {
       "hash": "e005679255ec78d20cf4e2c23a287401e612c04267637585829c5acbb83898cd",
-      "last_checked": "2026-03-10T07:32:20.059366",
+      "last_checked": "2026-03-13T07:39:14.492872",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"bd05cc758ed54d4bf90514367f64f4b3\"",
       "file_path": "documentation/MetalFX/mtlfxframeinterpolator/encode-commandbuffer.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscaler/encode(commandbuffer:).json": {
       "hash": "d54b95c0186600357539f08c93e576d84ed92df74dc5e7934ff9fefa8d0aa191",
-      "last_checked": "2026-03-10T07:32:24.293061",
+      "last_checked": "2026-03-13T07:39:22.085582",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:09.316003",
+      "session_id": "2026-03-13T07:38:57.723631",
       "etag": "W/\"2141517d820945fd28ff436684fc1228\"",
       "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscaler/encode-commandbuffer.md"
     },

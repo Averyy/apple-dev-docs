@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update an activity.
+
 **Availability**:
 - App Store Connect API 4.0+
 
@@ -18,6 +20,7 @@ object GameCenterActivityVersionCreateRequest.Data
 - [object GameCenterActivityVersionCreateRequest.Data.Attributes](gamecenteractivityversioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
 - [object GameCenterActivityVersionCreateRequest.Data.Relationships](gamecenteractivityversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

@@ -21,7 +21,7 @@ object GameCenterLeaderboardSetVersionV2CreateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetVersionV2CreateRequest.Data.Relationships](gamecenterleaderboardsetversionv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 

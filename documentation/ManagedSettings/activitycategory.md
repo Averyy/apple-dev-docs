@@ -8,7 +8,7 @@ An activity’s category, such as Entertainment or Social.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -19,10 +19,10 @@ struct ActivityCategory
 
 ## Topics
 
-### Creating a Category
+### Creating a category
 - [init(token: ActivityCategoryToken)](activitycategory/init(token:).md)
   Initializes the representation with the provided token.
-### Accessing Category Identifiers
+### Accessing category identifiers
 - [let localizedDisplayName: String?](activitycategory/localizeddisplayname.md)
   A localized display name for the category.
 - [let token: ActivityCategoryToken?](activitycategory/token.md)

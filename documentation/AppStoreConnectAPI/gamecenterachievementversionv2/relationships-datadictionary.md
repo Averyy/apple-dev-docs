@@ -21,7 +21,7 @@ object GameCenterAchievementVersionV2.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementVersionV2.Relationships.Achievement](gamecenterachievementversionv2/relationships-data.dictionary/achievement-data.dictionary.md)
   The data that describes the achievement of the Game Center achievement version v2.
 - [object GameCenterAchievementVersionV2.Relationships.Localizations](gamecenterachievementversionv2/relationships-data.dictionary/localizations-data.dictionary.md)

@@ -20,7 +20,7 @@ object GameCenterAchievementImageV2CreateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementImageV2CreateRequest.Data](gamecenterachievementimagev2createrequest/data-data.dictionary.md)
   The data element of the request body.
 

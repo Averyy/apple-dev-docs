@@ -8,7 +8,7 @@ Constraints on the user’s Game Center settings.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -22,12 +22,12 @@ Use `GameCenterSettings` to prevent the user from changing Game Center’s setti
 
 ## Topics
 
-### Denying the Ability to Join Multiplayer Games
+### Denying the ability to join multiplayer games
 - [var denyMultiplayerGaming: Bool?](gamecentersettings/denymultiplayergaming-swift.property.md)
   A Boolean value that indicates whether your app prevents the user joining multiplayer games.
 - [static let denyMultiplayerGaming: SettingMetadata<Bool>](gamecentersettings/denymultiplayergaming-swift.type.property.md)
   The metadata associated with the setting that prevents users from joining multiplayer games.
-### Denying the Ability to Add Friends
+### Denying the ability to add friends
 - [var denyAddingFriends: Bool?](gamecentersettings/denyaddingfriends-swift.property.md)
   A Boolean value that indicates whether to prevent the user from adding Game Center friends.
 - [static let denyAddingFriends: SettingMetadata<Bool>](gamecentersettings/denyaddingfriends-swift.type.property.md)

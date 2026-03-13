@@ -20,7 +20,7 @@ object BetaTesterUsagesV1MetricResponse.Data
 
 ## Properties
 
-- `dataPoints` (BetaTesterUsagesV1MetricResponse.Data.DataPoints)
+- `dataPoints` ([BetaTesterUsagesV1MetricResponse.Data.DataPoints])
 - `dimensions` (BetaTesterUsagesV1MetricResponse.Data.Dimensions)
 
 

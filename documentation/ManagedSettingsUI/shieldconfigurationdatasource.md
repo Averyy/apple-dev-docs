@@ -8,7 +8,7 @@ The base class for the principal object of an app extension that configures a sh
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -23,12 +23,12 @@ You can create an extension to customize the appearance of the shields that the 
 
 ## Topics
 
-### Styling an Application Shield
+### Styling an application shield
 - [func configuration(shielding: Application) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:)-5uqm1.md)
   Requests a configuration to use for a shield that covers an application.
 - [func configuration(shielding: Application, in: ActivityCategory) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:in:)-ia14.md)
   Requests a configuration to use for a shield that covers an application because of its category.
-### Styling a Website Shield
+### Styling a website shield
 - [func configuration(shielding: WebDomain) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:)-18i24.md)
   Requests a configuration to use for a shield that covers a website.
 - [func configuration(shielding: WebDomain, in: ActivityCategory) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:in:)-6n6rd.md)

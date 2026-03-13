@@ -8,7 +8,7 @@ A representation of an activity, such as an app or website, that doesn’t revea
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - visionOS 1.0+
 
 ## Declaration

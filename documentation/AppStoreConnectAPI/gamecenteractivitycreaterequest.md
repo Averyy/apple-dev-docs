@@ -22,6 +22,7 @@ object GameCenterActivityCreateRequest
 ## Properties
 
 - `data` (GameCenterActivityCreateRequest.Data) *(required)*
+- `included` ([GameCenterActivityVersionInlineCreate])
 
 ## See Also
 
@@ -37,6 +38,8 @@ object GameCenterActivityCreateRequest
   The request body you use to create a link betweeen an achievement and an activity resource.
 - [object GameCenterActivityLeaderboardsLinkagesRequest](gamecenteractivityleaderboardslinkagesrequest.md)
   The request body you use to create a link betweeen a leaderboard and an activity resource.
+- [object GameCenterActivityVersionInlineCreate](gamecenteractivityversioninlinecreate.md)
+  The data structure you use to configure an activity version while creating an activity.
 - [object GameCenterActivityResponse](gamecenteractivityresponse.md)
   A response that contains a single activity resource.
 - [object GameCenterActivityUpdateRequest](gamecenteractivityupdaterequest.md)

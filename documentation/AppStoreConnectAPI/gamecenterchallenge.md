@@ -20,6 +20,7 @@ object GameCenterChallenge
 - [object GameCenterChallenge.Attributes](gamecenterchallenge/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
 - [object GameCenterChallenge.Relationships](gamecenterchallenge/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -41,6 +42,8 @@ object GameCenterChallenge
   The request body you use to update a challenge.
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
+- [object GameCenterChallengeVersionInlineCreate](gamecenterchallengeversioninlinecreate.md)
+  The data structure you use to configure a challenge version while creating a challenge.
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
 - [object GameCenterChallengeLeaderboardV2LinkageRequest](gamecenterchallengeleaderboardv2linkagerequest.md)

@@ -17,6 +17,7 @@ object GameCenterPlayerAchievementSubmissionCreateRequest.Data.Attributes
 - `bundleId` (string) *(required)*
 - `challengeIds` ([string])
 - `percentageAchieved` (integer) *(required)*
+- `preReleased` (boolean)
 - `scopedPlayerId` (string) *(required)*
 - `submittedDate` (date-time)
 - `vendorIdentifier` (string) *(required)*

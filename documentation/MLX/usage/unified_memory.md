@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/unified_memory.html
 
 **
 
+**
+**
+**
+
+**
+
 # Unified Memory
 
  Table of contents 

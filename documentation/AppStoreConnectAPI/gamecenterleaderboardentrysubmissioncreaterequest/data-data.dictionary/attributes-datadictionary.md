@@ -23,6 +23,7 @@ object GameCenterLeaderboardEntrySubmissionCreateRequest.Data.Attributes
 - `bundleId` (string) *(required)*
 - `challengeIds` ([string])
 - `context` (number)
+- `preReleased` (boolean)
 - `scopedPlayerId` (string) *(required)*
 - `score` (number) *(required)*
 - `submittedDate` (date-time)

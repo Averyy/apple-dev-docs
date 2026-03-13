@@ -20,8 +20,9 @@ object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data](gamecenterchallengecreaterequest/data-data.dictionary/relationships-data.dictionary/leaderboardv2-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related resource.
 
 ## Properties
 

@@ -8,7 +8,7 @@ Constraints on the device’s Siri settings.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct SiriSettings
 
 ## Topics
 
-### Restricting Siri Usage
+### Restricting Siri usage
 - [var denySiri: Bool?](sirisettings/denysiri-swift.property.md)
   A Boolean value that indicates whether to prevent access to Siri.
 - [static let denySiri: SettingMetadata<Bool>](sirisettings/denysiri-swift.type.property.md)

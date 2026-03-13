@@ -20,8 +20,9 @@ object GameCenterChallengeLeaderboardV2LinkageRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterChallengeLeaderboardV2LinkageRequest.Data](gamecenterchallengeleaderboardv2linkagerequest/data-data.dictionary.md)
+  The data structure that represents a challenge resource.
 
 ## Properties
 
@@ -41,6 +42,8 @@ object GameCenterChallengeLeaderboardV2LinkageRequest
   The request body you use to update a challenge.
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
+- [object GameCenterChallengeVersionInlineCreate](gamecenterchallengeversioninlinecreate.md)
+  The data structure you use to configure a challenge version while creating a challenge.
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
 - [object GameCenterChallengeLeaderboardLinkageRequest](gamecenterchallengeleaderboardlinkagerequest.md)

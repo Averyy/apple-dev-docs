@@ -16,7 +16,7 @@ object AppAndroidToIosAppMappingDetailsLinkagesResponse
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object AppAndroidToIosAppMappingDetailsLinkagesResponse.Data](appandroidtoiosappmappingdetailslinkagesresponse/data-data.dictionary.md)
   The data structure that represents an Android to iOS app mapping details linkages response resource.
 

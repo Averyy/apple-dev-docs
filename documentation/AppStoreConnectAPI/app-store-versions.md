@@ -66,9 +66,6 @@ For more information about versions, see [`Create a new version`](https://develo
   Read the phased release status and configuration for a version with phased release enabled.
 - [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionPhasedRelease](get-v1-appstoreversions-_id_-relationships-appstoreversionphasedrelease.md)
 ### Reading Declarations
-- [Read the Age Rating Declaration Information of an App Store Version](get-v1-appstoreversions-_id_-ageratingdeclaration.md)
-  Get the age-related information declared for your app.
-- [GET /v1/appStoreVersions/{id}/relationships/ageRatingDeclaration](get-v1-appstoreversions-_id_-relationships-ageratingdeclaration.md)
 - [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)
   Get the routing app coverage file that is associated with a specific App Store version
 - [GET /v1/appStoreVersions/{id}/relationships/routingAppCoverage](get-v1-appstoreversions-_id_-relationships-routingappcoverage.md)
@@ -89,7 +86,6 @@ For more information about versions, see [`Create a new version`](https://develo
   The request body you use to update an App Store Version.
 - [object AgeRatingDeclaration](ageratingdeclaration.md)
   The data structure that represents an Age Rating Declarations resource.
-- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
 - [object AppStoreVersion](appstoreversion.md)
   The data structure that represent an App Store Versions resource.
 - [object AppStoreVersionResponse](appstoreversionresponse.md)
@@ -110,7 +106,6 @@ For more information about versions, see [`Create a new version`](https://develo
   String that represents the state of an app version in the App Store.
 - [type AppVersionState](appversionstate.md)
   String that represents the state of an app version.
-- [object AppStoreVersionAgeRatingDeclarationLinkageResponse](appstoreversionageratingdeclarationlinkageresponse.md)
 - [object AppStoreVersionAlternativeDistributionPackageLinkageResponse](appstoreversionalternativedistributionpackagelinkageresponse.md)
 - [object AppStoreVersionAppStoreReviewDetailLinkageResponse](appstoreversionappstorereviewdetaillinkageresponse.md)
 - [object AppStoreVersionAppStoreVersionExperimentsLinkagesResponse](appstoreversionappstoreversionexperimentslinkagesresponse.md)

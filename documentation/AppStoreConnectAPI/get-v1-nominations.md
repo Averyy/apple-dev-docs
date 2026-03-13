@@ -14,7 +14,9 @@ Get all featuring nominations.
 
 ## Parameters
 
+- `exists[inAppEvents]` (boolean)
 - `fields[nominations]` ([string])
+- `filter[hasInAppEvents]` ([string])
 - `filter[relatedApps]` ([string])
 - `filter[state]` ([string]) *(required)*
 - `filter[type]` ([string])

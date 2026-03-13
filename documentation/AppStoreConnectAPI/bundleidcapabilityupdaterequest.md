@@ -38,7 +38,7 @@ object BundleIdCapabilityUpdateRequest
 - [object CapabilityOption](capabilityoption.md)
   An option within a capability setting.
 - [object CapabilitySetting](capabilitysetting.md)
-  An object that  represents a capability setting for an app.
+  An object that represents a capability setting for an app.
 - [type CapabilityType](capabilitytype.md)
   String that represents an app’s capability type.
 

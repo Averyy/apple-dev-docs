@@ -21,7 +21,7 @@ object GameCenterLeaderboardVersionV2.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardVersionV2.Relationships.Leaderboard](gamecenterleaderboardversionv2/relationships-data.dictionary/leaderboard-data.dictionary.md)
   The data that describes the leaderboard of the Game Center leaderboard version v2.
 - [object GameCenterLeaderboardVersionV2.Relationships.Localizations](gamecenterleaderboardversionv2/relationships-data.dictionary/localizations-data.dictionary.md)

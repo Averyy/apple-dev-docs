@@ -8,7 +8,7 @@ Constraints on Safari’s AutoFill and cookie behaviors.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -22,14 +22,14 @@ Use `SafariSettings` to manage Safari settings for cookies and AutoFill. You can
 
 ## Topics
 
-### Specifying a Cookie Policy
+### Specifying a cookie policy
 - [var cookiePolicy: SafariSettings.CookiePolicy?](safarisettings/cookiepolicy-swift.property.md)
   Defines the conditions under which Safari accepts cookies.
 - [static let cookiePolicy: SettingMetadata<SafariSettings.CookiePolicy>](safarisettings/cookiepolicy-swift.type.property.md)
   The metadata for the setting that configures Safari’s policy for cookies.
 - [SafariSettings.CookiePolicy](safarisettings/cookiepolicy-swift.enum.md)
   The conditions under which Safari accepts cookies.
-### Denying AutoFill
+### Denying autofill
 - [var denyAutoFill: Bool?](safarisettings/denyautofill-swift.property.md)
   A Boolean value that indicates whether Safari’s AutoFill feature is active.
 - [static let denyAutoFill: SettingMetadata<Bool>](safarisettings/denyautofill-swift.type.property.md)

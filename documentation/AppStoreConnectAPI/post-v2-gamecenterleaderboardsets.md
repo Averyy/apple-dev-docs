@@ -18,6 +18,16 @@ Create a Game Center leaderboard set.
 - 422:
 - 429:
 
+##### Discussion
+
+Create a leaderboard set with a relationship to one of the following:
+
+- `gameCenterDetail`
+- `gameCenterGroup`
+- `gameCenterLeaderboards`
+
+If you create a leaderboard set with `gameCenterLeaderboards`, any leaderboards you attach are in the same app. If you create a leaderboard set with `gameCenterGroup`, any leaderboards you attach are in the same group.
+
 ## Endpoint
 
 `POST https://api.appstoreconnect.apple.com/v2/gameCenterLeaderboardSets`

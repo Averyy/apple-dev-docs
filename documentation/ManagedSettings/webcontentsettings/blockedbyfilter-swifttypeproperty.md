@@ -8,7 +8,7 @@ A description of the setting that controls which websites a user can access.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

@@ -16,6 +16,7 @@ object GameCenterChallenge.Relationships.Leaderboard
 
 ### Dictionaries
 - [object GameCenterChallenge.Relationships.Leaderboard.Data](gamecenterchallenge/relationships-data.dictionary/leaderboard-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a challenge.
 
 ## Properties
 

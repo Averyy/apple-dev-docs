@@ -8,7 +8,7 @@ A data store that applies settings to the current user or device.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - tvOS 26.0+
 
 ## Declaration
@@ -19,7 +19,7 @@ class ManagedSettingsStore
 
 ## Mentions
 
-- [Confirming the Effective TV and Movie Ratings](readingmedia.md)
+- [Confirming the effective TV and movie ratings](readingmedia.md)
 
 #### Overview
 
@@ -35,13 +35,13 @@ In a few cases, you can also access the effective settings. For example, a media
 
 ## Topics
 
-### Creating the Store
+### Creating the store
 - [init()](managedsettingsstore/init.md)
   Creates a new instance of a store.
-### Managing a Settings Group
+### Managing a settings group
 - [protocol ManagedSettingsGroup](managedsettingsgroup.md)
   A group of settings to manage.
-### Restricting Device Settings
+### Restricting device settings
 - [var account: AccountSettings](managedsettingsstore/account.md)
   Settings that affect accounts.
 - [struct AccountSettings](accountsettings.md)
@@ -66,7 +66,7 @@ In a few cases, you can also access the effective settings. For example, a media
   Settings that affect Siri.
 - [struct SiriSettings](sirisettings.md)
   Constraints on the device’s Siri settings.
-### Filtering Media Content
+### Filtering media content
 - [var appStore: AppStoreSettings](managedsettingsstore/appstore.md)
   Settings that affect the App Store.
 - [struct AppStoreSettings](appstoresettings.md)
@@ -87,7 +87,7 @@ In a few cases, you can also access the effective settings. For example, a media
   Settings that affect media.
 - [struct MediaSettings](mediasettings.md)
   Constraints on the media content the user can access.
-### Restricting Web Content
+### Restricting web content
 - [var safari: SafariSettings](managedsettingsstore/safari.md)
   Settings that affect Safari’s search results and cookie policies.
 - [struct SafariSettings](safarisettings.md)
@@ -96,16 +96,15 @@ In a few cases, you can also access the effective settings. For example, a media
   Settings that affect web content.
 - [struct WebContentSettings](webcontentsettings.md)
   An object that configures which websites a user can access.
-### Accessing Metadata
+### Accessing metadata
 - [struct BoundedSettingMetadata](boundedsettingmetadata.md)
   Additional information about a bounded setting.
 - [struct SettingMetadata](settingmetadata.md)
   Additional information about a configurable setting.
-### Observing Current Settings
-- [var $effectiveMaximumMovieRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximummovierating.md)
+### Observing current settings
+- [var effectiveMaximumMovieRating: Int](managedsettingsstore/effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
 - [var $effectiveMaximumTVShowRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximumtvshowrating.md)
-  The television show rating constraint that is active on this device.
 ### Structures
 - [ManagedSettingsStore.Name](managedsettingsstore/name.md)
   The unique name of a store.
@@ -114,6 +113,7 @@ In a few cases, you can also access the effective settings. For example, a media
   Creates a new instance of a store with a custom name.
 ### Instance Properties
 - [var $effectiveDenyExplicitContent: Published<Bool>.Publisher](managedsettingsstore/$effectivedenyexplicitcontent.md)
+- [var $effectiveMaximumMovieRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximummovierating.md)
 - [var effectiveDenyExplicitContent: Bool](managedsettingsstore/effectivedenyexplicitcontent.md)
   The deny explicit content constraint that is active on this device.
 ### Instance Methods

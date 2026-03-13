@@ -8,7 +8,7 @@ The policies available for filtering web content based on specific web domains.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ enum FilterPolicy
 
 ## Topics
 
-### Providing Filters and Exceptions
+### Providing filters and exceptions
 - [WebContentSettings.FilterPolicy.all(except:)](webcontentsettings/filterpolicy/all(except:).md)
   The system blocks all websites except the ones you specify.
 - [case auto(Set<WebDomain>, except: Set<WebDomain>)](webcontentsettings/filterpolicy/auto(_:except:).md)
@@ -27,7 +27,7 @@ enum FilterPolicy
   The policy doesn’t affect any domains.
 - [WebContentSettings.FilterPolicy.specific(_:)](webcontentsettings/filterpolicy/specific(_:).md)
   The policy blocks the specified domains.
-### Comparing Policies
+### Comparing policies
 - [static func == (WebContentSettings.FilterPolicy, WebContentSettings.FilterPolicy) -> Bool](webcontentsettings/filterpolicy/==(_:_:).md)
   Returns a Boolean value that indicates whether two values are equal.
 

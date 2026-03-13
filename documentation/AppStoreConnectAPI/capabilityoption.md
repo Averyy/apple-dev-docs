@@ -37,7 +37,7 @@ object CapabilityOption
   A response that contains a list of Bundle ID Capability resources.
 - [object BundleIdCapabilitiesWithoutIncludesResponse](bundleidcapabilitieswithoutincludesresponse.md)
 - [object CapabilitySetting](capabilitysetting.md)
-  An object that  represents a capability setting for an app.
+  An object that represents a capability setting for an app.
 - [type CapabilityType](capabilitytype.md)
   String that represents an app’s capability type.
 

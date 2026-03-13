@@ -21,7 +21,6 @@ Get the App Store version of a specific build.
 - `limit[appStoreVersionExperiments]` (integer)
 - `include` ([string])
 - `fields[appClipDefaultExperiences]` ([string])
-- `fields[ageRatingDeclarations]` ([string])
 - `fields[appStoreVersionSubmissions]` ([string])
 - `fields[appStoreReviewDetails]` ([string])
 - `fields[apps]` ([string])

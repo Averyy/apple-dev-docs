@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ce
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.ceil
 
  Table of contents 

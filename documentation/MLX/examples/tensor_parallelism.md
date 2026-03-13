@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/examples/tensor_parallelism.htm
 
 **
 
+**
+**
+**
+
+**
+
 # Tensor Parallelism
 
  Table of contents 

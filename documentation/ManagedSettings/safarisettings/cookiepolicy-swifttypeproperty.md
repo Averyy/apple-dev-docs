@@ -8,7 +8,7 @@ The metadata for the setting that configures Safari’s policy for cookies.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

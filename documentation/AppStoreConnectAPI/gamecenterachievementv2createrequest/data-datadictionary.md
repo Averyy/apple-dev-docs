@@ -22,7 +22,7 @@ object GameCenterAchievementV2CreateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2CreateRequest.Data.Attributes](gamecenterachievementv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to create a Game Center achievement create request.
 - [object GameCenterAchievementV2CreateRequest.Data.Relationships](gamecenterachievementv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

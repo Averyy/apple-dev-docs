@@ -22,7 +22,7 @@ object GameCenterAchievementV2UpdateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2UpdateRequest.Data.Attributes](gamecenterachievementv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center achievement update request.
 

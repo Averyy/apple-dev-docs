@@ -16,6 +16,8 @@ This REST API provides resources that enable you to automate actions you take in
 
 ## See Also
 
+- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
@@ -43,8 +45,6 @@ This REST API provides resources that enable you to automate actions you take in
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

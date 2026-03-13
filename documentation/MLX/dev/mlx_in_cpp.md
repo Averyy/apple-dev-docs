@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/dev/mlx_in_cpp.html
 
 **
 
+**
+**
+**
+
+**
+
 # Using MLX in C++
 
  Table of contents 

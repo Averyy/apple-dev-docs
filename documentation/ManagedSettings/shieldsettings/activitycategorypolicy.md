@@ -8,7 +8,7 @@ Policies available for shielding activities based on their category.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,14 +18,14 @@ enum ActivityCategoryPolicy<Activity>
 
 ## Topics
 
-### Shielding Categories
+### Shielding categories
 - [ShieldSettings.ActivityCategoryPolicy.none](shieldsettings/activitycategorypolicy/none.md)
   A policy that indicates the device doesn’t shield any content.
 - [ShieldSettings.ActivityCategoryPolicy.all(except:)](shieldsettings/activitycategorypolicy/all(except:).md)
   A policy that indicates the device shields all apps and websites, except content that you specify.
 - [case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>>)](shieldsettings/activitycategorypolicy/specific(_:except:).md)
   A policy that indicates the device shields specific categories of activity, with some exceptions.
-### Getting the Range
+### Comparing category policies
 - [static func == (ShieldSettings.ActivityCategoryPolicy<Activity>, ShieldSettings.ActivityCategoryPolicy<Activity>) -> Bool](shieldsettings/activitycategorypolicy/==(_:_:).md)
   Returns a Boolean value that indicates whether two values are equal.
 

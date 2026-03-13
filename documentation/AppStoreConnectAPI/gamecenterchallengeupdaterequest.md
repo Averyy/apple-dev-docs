@@ -18,6 +18,7 @@ object GameCenterChallengeUpdateRequest
 
 ### Dictionaries
 - [object GameCenterChallengeUpdateRequest.Data](gamecenterchallengeupdaterequest/data-data.dictionary.md)
+  The request body you use to update a challenge.
 
 ## Properties
 
@@ -35,6 +36,8 @@ object GameCenterChallengeUpdateRequest
   A response that contains a single challenge resource.
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
+- [object GameCenterChallengeVersionInlineCreate](gamecenterchallengeversioninlinecreate.md)
+  The data structure you use to configure a challenge version while creating a challenge.
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
 - [object GameCenterChallengeLeaderboardV2LinkageRequest](gamecenterchallengeleaderboardv2linkagerequest.md)

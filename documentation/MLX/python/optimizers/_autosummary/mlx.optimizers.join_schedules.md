@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.optimizers.join_schedules
 
  Table of contents 

@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/stream_clas
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.Stream
 
  Table of contents 

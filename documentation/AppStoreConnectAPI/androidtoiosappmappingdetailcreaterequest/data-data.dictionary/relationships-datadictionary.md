@@ -16,7 +16,7 @@ object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
   The data that describes the app related to an Android to iOS app mapping detail.
 

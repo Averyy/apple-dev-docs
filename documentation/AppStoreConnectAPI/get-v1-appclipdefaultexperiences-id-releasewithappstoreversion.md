@@ -20,7 +20,6 @@ Get App Store Version information for a default App Clip experience.
 - `limit[appStoreVersionLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the App Store version localizations relationship is included.
 - `fields[appStoreVersionExperiments]` ([string])
 - `limit[appStoreVersionExperiments]` (integer)
-- `fields[ageRatingDeclarations]` ([string])
 - `fields[appStoreVersionSubmissions]` ([string])
 - `fields[appStoreReviewDetails]` ([string])
 - `fields[apps]` ([string])

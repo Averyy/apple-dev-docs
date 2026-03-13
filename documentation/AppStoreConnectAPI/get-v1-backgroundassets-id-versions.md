@@ -28,6 +28,7 @@ Get details about a specific background asset version.
 - `sort` ([string])
 - `fields[backgroundAssetUploadFiles]` ([string])
 - `fields[backgroundAssets]` ([string])
+- `filter[platforms]` ([string])
 
 ## See Also
 

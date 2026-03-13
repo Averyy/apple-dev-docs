@@ -20,7 +20,7 @@ object GameCenterAchievementV2.Relationships.GameCenterDetail
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2.Relationships.GameCenterDetail.Data](gamecenterachievementv2/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
 
 ## Properties

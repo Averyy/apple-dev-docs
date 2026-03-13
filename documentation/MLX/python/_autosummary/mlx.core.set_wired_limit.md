@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.set_wired_limit
 
  Table of contents 

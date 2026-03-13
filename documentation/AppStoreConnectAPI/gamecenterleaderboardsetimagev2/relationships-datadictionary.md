@@ -20,7 +20,7 @@ object GameCenterLeaderboardSetImageV2.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetImageV2.Relationships.Localization](gamecenterleaderboardsetimagev2/relationships-data.dictionary/localization-data.dictionary.md)
   The data that describes the localization of the Game Center leaderboard set image v2.
 

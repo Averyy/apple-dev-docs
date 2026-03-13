@@ -24,7 +24,7 @@ object GameCenterLeaderboardLocalizationV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardLocalizationV2.Attributes](gamecenterleaderboardlocalizationv2/attributes-data.dictionary.md)
   Attributes that describe a Game Center leaderboard localization v2 resource.
 - [object GameCenterLeaderboardLocalizationV2.Relationships](gamecenterleaderboardlocalizationv2/relationships-data.dictionary.md)

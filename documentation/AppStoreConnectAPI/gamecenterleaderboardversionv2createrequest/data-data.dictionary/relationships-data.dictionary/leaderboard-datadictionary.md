@@ -20,7 +20,7 @@ object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboar
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard.Data](gamecenterleaderboardversionv2createrequest/data-data.dictionary/relationships-data.dictionary/leaderboard-data.dictionary/data-data.dictionary.md)
 
 ## Properties

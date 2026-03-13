@@ -8,7 +8,7 @@ An object that configures which websites a user can access.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct WebContentSettings
 
 ## Topics
 
-### Filtering Web Domains
+### Filtering web domains
 - [var blockedByFilter: WebContentSettings.FilterPolicy?](webcontentsettings/blockedbyfilter-swift.property.md)
   The current policy for filtering websites.
 - [static let blockedByFilter: SettingMetadata<WebContentSettings.FilterPolicy>](webcontentsettings/blockedbyfilter-swift.type.property.md)

@@ -20,7 +20,7 @@ object GameCenterAchievementImageV2CreateRequest.Data.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization](gamecenterachievementimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary.md)
   The data that describes the localization of the Game Center achievement image.
 

@@ -3,12 +3,10 @@
 **Framework**: ManagedSettings  
 **Kind**: property
 
-The television show rating constraint that is active on this device.
-
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - tvOS 26.0+
 
 ## Declaration
@@ -19,15 +17,11 @@ var $effectiveMaximumTVShowRating: Published<Int>.Publisher { get }
 
 ## Mentions
 
-- [Confirming the Effective TV and Movie Ratings](readingmedia.md)
-
-#### Discussion
-
-An authorized app can use the Family Controls framework to apply a [`maximumTVShowRating`](mediasettings/maximumtvshowrating-swift.property.md) to the device. If no `maximumTVShowRating` settings are active, then the value of this property is the default value of [`maximumTVShowRating`](mediasettings/maximumtvshowrating-swift.type.property.md). The system publishes changes dynamically.
+- [Confirming the effective TV and movie ratings](readingmedia.md)
 
 ## See Also
 
-- [var $effectiveMaximumMovieRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximummovierating.md)
+- [var effectiveMaximumMovieRating: Int](managedsettingsstore/effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
 
 

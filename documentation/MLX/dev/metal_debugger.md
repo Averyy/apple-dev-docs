@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/dev/metal_debugger.html
 
 **
 
+**
+**
+**
+
+**
+
 # Metal Debugger
 
  Table of contents 

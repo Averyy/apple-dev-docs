@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:33:57.865356",
+    "last_updated": "2026-03-13T07:41:19.653755",
     "total_pages": 160,
-    "session_id": "2026-03-10T07:33:46.238105"
+    "session_id": "2026-03-13T07:41:05.825340"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ExternalAccessory.json": {
       "hash": "3cad77a9267644f79d5fa68253d371936fd9a4c6b0e8c02e3728efb9832057a6",
-      "last_checked": "2026-03-10T07:33:46.681517",
+      "last_checked": "2026-03-13T07:41:06.077629",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"8def783512a094b2b0506ed12037f727\"",
       "file_path": "documentation/ExternalAccessory/ExternalAccessory.md"
     },
     "https://developer.apple.com/documentation/ExternalAccessory": {
       "hash": "3cad77a9267644f79d5fa68253d371936fd9a4c6b0e8c02e3728efb9832057a6",
-      "last_checked": "2026-03-10T07:33:46.583303",
+      "last_checked": "2026-03-13T07:41:05.958576",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"8def783512a094b2b0506ed12037f727\"",
       "file_path": "documentation/ExternalAccessory/ExternalAccessory.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorymanager.json": {
       "hash": "7b35006fb7be2c6bf8eaa8efac43b6cdd14c2b5aeb624839b1acb66329b57f6c",
-      "last_checked": "2026-03-10T07:33:46.960777",
+      "last_checked": "2026-03-13T07:41:06.316887",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"7edeb3383ab1fd693bddd6f6f1000e7a\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorymanager.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory.json": {
       "hash": "88bfd4311d0656cdfaecc38e9106f7a48d1ee1e9abca7e0e030d11947a6524a3",
-      "last_checked": "2026-03-10T07:33:47.039755",
+      "last_checked": "2026-03-13T07:41:06.483753",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"1209c107d97bd83485c29988722013fd\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/easession.json": {
       "hash": "331529d3e6515ab3edc504f20f9adbc8c9819f8b9589d5d553d429a077dbb1a3",
-      "last_checked": "2026-03-10T07:33:47.306566",
+      "last_checked": "2026-03-13T07:41:06.627554",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"bf51f6b4e3202cbe92edf8acf6a3e12b\"",
       "file_path": "documentation/ExternalAccessory/easession.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser.json": {
       "hash": "923a0cf215fa6b47909360f8c8b226d6ec537e6cd399c17063e0fa101ea515c8",
-      "last_checked": "2026-03-10T07:33:47.451056",
+      "last_checked": "2026-03-13T07:41:06.744255",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"719cba4da3e4fdaa5fcd0fb4c47f94a2\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory.json": {
       "hash": "325f8602f97ecbaf29761fe961de261da6e77184c415688567b400d6050409dd",
-      "last_checked": "2026-03-10T07:33:47.523898",
+      "last_checked": "2026-03-13T07:41:06.883849",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"6915f98939f83462a6af6f325a8ce320\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorymanager/shared().json": {
       "hash": "b6b37690c8237193adb580762e53dba364e3c4950288bbc707e5581ee62489df",
-      "last_checked": "2026-03-10T07:33:47.765209",
+      "last_checked": "2026-03-13T07:41:07.042500",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"d4f9f703e3ec514377cea9cce530f9a9\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorymanager/shared.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorymanager/registerforlocalnotifications().json": {
       "hash": "8febf6f7a6090debd97db92feb646f78fec59a6fee18d52268e94cc6aa7d8070",
-      "last_checked": "2026-03-10T07:33:48.016904",
+      "last_checked": "2026-03-13T07:41:07.192958",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"a4fe8a8432db72ed2028a30e78523f06\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorymanager/registerforlocalnotifications.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorymanager/unregisterforlocalnotifications().json": {
       "hash": "80d87d711563b1d5ec3cbbc4cd77faa5521a7f8507e3305c06437b0d5ec3b29f",
-      "last_checked": "2026-03-10T07:33:48.138186",
+      "last_checked": "2026-03-13T07:41:07.310942",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"2db6f904a9465e3aeb51407bbef90e66\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorymanager/unregisterforlocalnotifications.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorykey.json": {
       "hash": "ce028f651490824d6c908c6c2b707d46ca62bad512af432cb010755bbcc4ca99",
-      "last_checked": "2026-03-10T07:33:48.390865",
+      "last_checked": "2026-03-13T07:41:07.452657",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"094d42ca3a29ec55507d2da34e8fc8aa\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorykey.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessoryselectedkey.json": {
       "hash": "37b0cff95a49e59d6427060ca1d6038b15eb2fcf1f2261241d3b51723bff1a98",
-      "last_checked": "2026-03-10T07:33:48.691898",
+      "last_checked": "2026-03-13T07:41:07.568122",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0cb978ac45a1d09d2967866ae5dd50e9\"",
       "file_path": "documentation/ExternalAccessory/eaaccessoryselectedkey.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorymanager/showbluetoothaccessorypicker(withnamefilter:completion:).json": {
       "hash": "71f8e8a4a1e037bb3b7afa160239280aa6d79e6448c8a764574ae37905086926",
-      "last_checked": "2026-03-10T07:33:48.962867",
+      "last_checked": "2026-03-13T07:41:07.729601",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0cd2acb001190ddf896f843e164052dc\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorymanager/showbluetoothaccessorypicker-withnamefiltercompletion.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickercompletion.json": {
       "hash": "7d6a0edb642d5babc88c87270ec365c23ad0f6056721de0fe77b40e8576d069a",
-      "last_checked": "2026-03-10T07:33:49.229070",
+      "last_checked": "2026-03-13T07:41:07.870958",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"30b2eb0f1a53fc8351a6d1effed8a157\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickercompletion.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror.json": {
       "hash": "75bd9785fc548108e3554c2622ed993db3195818678d7c443702b1ac4e40d4b4",
-      "last_checked": "2026-03-10T07:33:49.482587",
+      "last_checked": "2026-03-13T07:41:08.142053",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"7fc89f0300d4b5463b3f9282927146de\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/code.json": {
       "hash": "e3cacd5d37b4bf8af6bbf666f779ffebba80bd4d210ae61d86b52f0b259a837f",
-      "last_checked": "2026-03-10T07:33:49.603534",
+      "last_checked": "2026-03-13T07:41:08.252694",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"3cdd61c41ea75b6126f175770c687bdc\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/code.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererrordomain.json": {
       "hash": "96c1a4a11f2f6280f9f45ecbf30b03eaa59ef66f56a356bc648fa1705f1ac9be",
-      "last_checked": "2026-03-10T07:33:49.721301",
+      "last_checked": "2026-03-13T07:41:08.357568",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"43b5568ed9aa5438cb08f6ff1c2fa16f\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererrordomain.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorymanager/connectedaccessories.json": {
       "hash": "f8e6471fc6762f1c6d9b96077ff9c7ae14a764825c043e93c16d06314226794d",
-      "last_checked": "2026-03-10T07:33:49.969823",
+      "last_checked": "2026-03-13T07:41:08.552712",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"e880065e784e0d31b93817c1fd1b2ad8\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorymanager/connectedaccessories.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/delegate.json": {
       "hash": "a4c835cfbf58097748e7c6599fdb1fd668d4fc8883f923afab6e645325a2268c",
-      "last_checked": "2026-03-10T07:33:50.038689",
+      "last_checked": "2026-03-13T07:41:08.676221",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"aaa1268b838b1009c9c9280b470ea761\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/delegate.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorydelegate.json": {
       "hash": "4fdf7d572708f2908f338a21a9129da6bd383b163e8ebb8c87edabb1d959f276",
-      "last_checked": "2026-03-10T07:33:50.302692",
+      "last_checked": "2026-03-13T07:41:08.833740",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"4adf7dc9d22aa0282ac455fbae6d1ec6\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorydelegate.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/isconnected.json": {
       "hash": "8078c36937afa911d3b88b86eb0ec40d0e4ce299e08becb906d23bc6b5a75db0",
-      "last_checked": "2026-03-10T07:33:50.426297",
+      "last_checked": "2026-03-13T07:41:08.980290",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"d73f0bca45ba49ffb68b77e361167bfa\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/isconnected.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/connectionid.json": {
       "hash": "c063fd56b70c3a8f09935e7553bc338c7f0d4d30156bc56632712fbd94d4cd1f",
-      "last_checked": "2026-03-10T07:33:50.549999",
+      "last_checked": "2026-03-13T07:41:09.089980",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"e73271856d072ddddff2b791c6fe774d\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/connectionid.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/null-connection-id.json": {
       "hash": "d05e893064cf372b1a043dc27791e904f47672320cc86e3f6fa64945561e1428",
-      "last_checked": "2026-03-10T07:33:50.798400",
+      "last_checked": "2026-03-13T07:41:09.234064",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"381f0b5549c908b6821ca73516155da5\"",
       "file_path": "documentation/ExternalAccessory/null-connection-id.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/name.json": {
       "hash": "c1a58fa8a5cd919be0be8dc205883fe7db65ded780fd52ceaf8d3969e26929bf",
-      "last_checked": "2026-03-10T07:33:50.936695",
+      "last_checked": "2026-03-13T07:41:09.350602",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"6ce203aa76a1b5e2348c7b1e19dae2ec\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/name.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/manufacturer.json": {
       "hash": "693c0858dba9a5e344bfd6d30670eb340039fd1425274965e83e5e93575bc612",
-      "last_checked": "2026-03-10T07:33:51.011811",
+      "last_checked": "2026-03-13T07:41:09.481797",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"11501b520d07c9948e985e40a546afd5\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/manufacturer.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/modelnumber.json": {
       "hash": "5ef3b3348c89878daf0115bb616d7c5e312e22f53f1b3c98d251fdb07b0f8478",
-      "last_checked": "2026-03-10T07:33:51.134590",
+      "last_checked": "2026-03-13T07:41:09.602301",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0da1372f00c7114dcc69067033d0fec6\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/modelnumber.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/serialnumber.json": {
       "hash": "2f71c28aa0ffd5304f99818f62aae4f5b1d4022d4830299221f8eb0659a9ec8d",
-      "last_checked": "2026-03-10T07:33:51.233828",
+      "last_checked": "2026-03-13T07:41:09.725373",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"73b2e471b64a267d541d18cbe0cf73c7\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/serialnumber.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/firmwarerevision.json": {
       "hash": "24d53e398a05ce7ec981afb53b386a02276894ca3bf08eb5ea1e8d6cb56acb20",
-      "last_checked": "2026-03-10T07:33:51.382829",
+      "last_checked": "2026-03-13T07:41:09.868542",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"42d84518a0afa3507129c80fa68dd514\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/firmwarerevision.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/hardwarerevision.json": {
       "hash": "d627cbd3e474f7d444e6f4e96872f8704a4555945d838871f8b3380c3019b0bd",
-      "last_checked": "2026-03-10T07:33:51.648132",
+      "last_checked": "2026-03-13T07:41:09.991868",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0279eff430774be8db848f79f37b5885\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/hardwarerevision.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/protocolstrings.json": {
       "hash": "ea797d5ce294e15ff5d9d8579b65c5c1f4e1a30c51d440ac5e278c697380644a",
-      "last_checked": "2026-03-10T07:33:51.742640",
+      "last_checked": "2026-03-13T07:41:10.119534",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"c960c36944f2a62c3d2e9caf7a2f48f2\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/protocolstrings.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessory/docktype.json": {
       "hash": "d28f2a2db7f97d2ea5452fe4d6bf2eb0fbd52bb68e0ea3f3da735f23e0411a5e",
-      "last_checked": "2026-03-10T07:33:51.817740",
+      "last_checked": "2026-03-13T07:41:10.248649",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"1d1c81f64cb3bf6a0be1ac1a22b5f0e7\"",
       "file_path": "documentation/ExternalAccessory/eaaccessory/docktype.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/easession/init(accessory:forprotocol:).json": {
       "hash": "82889ca01af3a0aab627101f582888aa1859bafe5d83b46d18f605f14dac6565",
-      "last_checked": "2026-03-10T07:33:51.935374",
+      "last_checked": "2026-03-13T07:41:10.363023",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0f19b57126b626478ebe71382ab721f5\"",
       "file_path": "documentation/ExternalAccessory/easession/init-accessoryforprotocol.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/easession/accessory.json": {
       "hash": "03f6679516971be8ae569cec7434f7bd0d740dfb0a343948625d30b5055503dd",
-      "last_checked": "2026-03-10T07:33:52.057412",
+      "last_checked": "2026-03-13T07:41:10.507974",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"7e2f88853605e26567099d3bce651639\"",
       "file_path": "documentation/ExternalAccessory/easession/accessory.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/easession/protocolstring.json": {
       "hash": "c3506bb72497af4a8c20a6004b3677a33aeee771a8f31d337918f2f53758df3d",
-      "last_checked": "2026-03-10T07:33:52.173136",
+      "last_checked": "2026-03-13T07:41:10.619095",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"edab23d1e5599feb210b97f0c5a078e3\"",
       "file_path": "documentation/ExternalAccessory/easession/protocolstring.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/easession/inputstream.json": {
       "hash": "d4bca855f4df4893ca8c46f9856dbf6d6e36bfb888cef242c99b4a2541981c60",
-      "last_checked": "2026-03-10T07:33:52.292805",
+      "last_checked": "2026-03-13T07:41:10.745289",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"f3a2444a7c51406951d58e81abb4249a\"",
       "file_path": "documentation/ExternalAccessory/easession/inputstream.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/easession/outputstream.json": {
       "hash": "09b5d6355a691493c7e55c2115a2da9e0d0d188c03802678d31ed67f39d9ae17",
-      "last_checked": "2026-03-10T07:33:52.368876",
+      "last_checked": "2026-03-13T07:41:10.891196",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"d8f22b9d71ad0dcc843caebceb6896d0\"",
       "file_path": "documentation/ExternalAccessory/easession/outputstream.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser/init(delegate:queue:).json": {
       "hash": "a1b5ead4217bb60600918fccd3b3efc9bfec0d27a6dff8fc6800b13f6671f508",
-      "last_checked": "2026-03-10T07:33:52.482902",
+      "last_checked": "2026-03-13T07:41:11.019297",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"8923e85ca207e64661cbb8db324e504a\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser/init-delegatequeue.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser/delegate.json": {
       "hash": "1ec5d4354cb5cbca8f36bd2d3b88a2335ad4795ca76fd27e39124b1c6bfe9cb0",
-      "last_checked": "2026-03-10T07:33:52.559759",
+      "last_checked": "2026-03-13T07:41:11.136378",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"13193cf78fde976a3ad5a2a39a00b503\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser/delegate.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserdelegate.json": {
       "hash": "21dc9c338807d6bdf67fa91e6c66e4cbb02863acf3b5a67b22c12fe1eb41fc7a",
-      "last_checked": "2026-03-10T07:33:52.691637",
+      "last_checked": "2026-03-13T07:41:11.270545",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"028e9b94c4635c205c9b78848f365a8a\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserdelegate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser/configureaccessory(_:withconfigurationuion:).json": {
       "hash": "13606729ee33d7f50f13f657f01b39d0c1aa493f201e2ba5b9f5e7b4b0fe3598",
-      "last_checked": "2026-03-10T07:33:52.810834",
+      "last_checked": "2026-03-13T07:41:11.376871",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"4c63f6d6a6444dd220be9b5837ec14a8\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser/configureaccessory-withconfigurationuion.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser/startsearchingforunconfiguredaccessories(matching:).json": {
       "hash": "8331f8b3ee35c209008c61df076d548671ffc9cc65a370a6dc755b47de8efda2",
-      "last_checked": "2026-03-10T07:33:52.932186",
+      "last_checked": "2026-03-13T07:41:11.526781",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"bb886f56ad2f2f0d874a7a548678880f\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser/startsearchingforunconfiguredaccessories-matching.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser/stopsearchingforunconfiguredaccessories().json": {
       "hash": "1c2b25dec05352c7fb76046e9351ce193dcbfed5eb826c29f994d8877dfec511",
-      "last_checked": "2026-03-10T07:33:53.048770",
+      "last_checked": "2026-03-13T07:41:11.641865",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"ab8f898930c9015125fda6f78074490e\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser/stopsearchingforunconfiguredaccessories.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.json": {
       "hash": "b2df6c01161636dad0ee4d141160478bc59e23f592db1ac952de89631394c4c2",
-      "last_checked": "2026-03-10T07:33:53.210529",
+      "last_checked": "2026-03-13T07:41:11.773313",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"617c47f96cd2bed5ae311e9eca96608e\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory/name.json": {
       "hash": "b6e4f849cef993fdbbf034e80f5c52e703c28058e05a07442c839c7e2b9c0411",
-      "last_checked": "2026-03-10T07:33:53.284359",
+      "last_checked": "2026-03-13T07:41:11.932264",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"2181e4a549c5a489136a8a7b74462837\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory/name.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory/manufacturer.json": {
       "hash": "3701a73f42cbdf618694a64a89e7907c96e7694a48e571aeb5b18c7bef8b4329",
-      "last_checked": "2026-03-10T07:33:53.405876",
+      "last_checked": "2026-03-13T07:41:12.073959",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"de0c87e286008b2e544e40b1f7a5b46f\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory/manufacturer.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory/model.json": {
       "hash": "704277fe90f5b4d10c858b78e48aa9321b4ea098bf239593ca0ae749a4090732",
-      "last_checked": "2026-03-10T07:33:53.548127",
+      "last_checked": "2026-03-13T07:41:12.245102",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0d5c3c4115f495307bf9d7a5beef0c69\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory/model.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory/ssid.json": {
       "hash": "089503ffc97fcc5eb7df3d4da11494093449dca8e2187515fad49211605c54c0",
-      "last_checked": "2026-03-10T07:33:53.629360",
+      "last_checked": "2026-03-13T07:41:12.355387",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"2f10676a7f8e9badafd0cf8673a32ba9\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory/ssid.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory/macaddress.json": {
       "hash": "e2f5a49266960ccfb43bd23e39bbc2762812ae4e93222522e517c4260812f2e4",
-      "last_checked": "2026-03-10T07:33:53.752104",
+      "last_checked": "2026-03-13T07:41:12.489266",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"75ffce3a5b9fee5e5daf8b406b9bab3b\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory/macaddress.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessory/properties.json": {
       "hash": "9d0c29f94180a427344dbc5e1652cbdc9e9c144d5389a4b7c9f17daa20a01b05",
-      "last_checked": "2026-03-10T07:33:53.874258",
+      "last_checked": "2026-03-13T07:41:12.630441",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"ba678b3881fdfb4f1b0a512aa5f480a2\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessory/properties.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryproperties.json": {
       "hash": "2c646f02f020d424cf71b3fc1f240265800ba06087d54ac5003ef7bfab3113b3",
-      "last_checked": "2026-03-10T07:33:53.954609",
+      "last_checked": "2026-03-13T07:41:12.765869",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"90c861e2eef310663f756982d237574e\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryproperties.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/alreadyconnected.json": {
       "hash": "5437c628037c441ba6d639bbd64ea294475d517b08722d92d7da55d0b6b75980",
-      "last_checked": "2026-03-10T07:33:54.081878",
+      "last_checked": "2026-03-13T07:41:12.872992",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"d1f137951cd3eaef3fa021b451d4d1c9\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/alreadyconnected.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/resultcancelled.json": {
       "hash": "2dcd8e4f0cd5f642d5816074c9905a418b25e1dc632c971aaf329f46cd935493",
-      "last_checked": "2026-03-10T07:33:54.334092",
+      "last_checked": "2026-03-13T07:41:13.028379",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"13d8bd386a76ac6ef849bca6ffcc1ac2\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/resultcancelled.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/resultfailed.json": {
       "hash": "178f282f477163dd72ee27dcb4fc4aa7182d46c9cef8f1ce83e97e3621a0e959",
-      "last_checked": "2026-03-10T07:33:54.421095",
+      "last_checked": "2026-03-13T07:41:13.339037",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"9e323cce302bbe5fe5c1138f430e8864\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/resultfailed.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/resultnotfound.json": {
       "hash": "f35c0cb237ef84c6581f9a1917c22e291b8ce55d3e58adaf784c90bf703f9063",
-      "last_checked": "2026-03-10T07:33:54.543214",
+      "last_checked": "2026-03-13T07:41:13.625723",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"a6fe082e930c153cd5103d1859205e38\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/resultnotfound.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/errordomain.json": {
       "hash": "ddd9324a0481e88d081db3f178c381f6eb0c0cae251d59c60da4da05ac5c0060",
-      "last_checked": "2026-03-10T07:33:54.669018",
+      "last_checked": "2026-03-13T07:41:13.908666",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"b44689bdd968e6f72adf7311fedc2798\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/errordomain.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/code/alreadyconnected.json": {
       "hash": "b325abc44cefeea37b9272c43763765111091fd47305010acb3d6f09a4bf5ca7",
-      "last_checked": "2026-03-10T07:33:54.783653",
+      "last_checked": "2026-03-13T07:41:14.092285",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"74a91c3c8cfda28ae76e015d9ccdc4ec\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/code/alreadyconnected.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/code/resultnotfound.json": {
       "hash": "ded1355e70da98f25782a043ef3ef6a474e8cd10a6b4c040dfa8db4d18b3e2a0",
-      "last_checked": "2026-03-10T07:33:54.905760",
+      "last_checked": "2026-03-13T07:41:14.249635",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"3e3257f0e26a78b54b9f6ce752f776c3\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/code/resultnotfound.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/code/resultcancelled.json": {
       "hash": "416ff36598acd9a712b5228ae43a550e671cc42780168e88848dd443aac94437",
-      "last_checked": "2026-03-10T07:33:55.160512",
+      "last_checked": "2026-03-13T07:41:14.538866",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"6d745fd5383d799902dff91d8ef3b838\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/code/resultcancelled.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/code/resultfailed.json": {
       "hash": "fb1a65517932275664cc7aaf914364ff0e10f85e6e79412f829c7f8c97afc041",
-      "last_checked": "2026-03-10T07:33:55.235151",
+      "last_checked": "2026-03-13T07:41:14.649785",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"8d2b9cfb9d513a6efa27f83f500af922\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/code/resultfailed.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eabluetoothaccessorypickererror/code/init(rawvalue:).json": {
       "hash": "3b7283f87268a3b8109ca909c5e58f555e45ea38ca85965d74fd00a70dfc17d8",
-      "last_checked": "2026-03-10T07:33:55.359037",
+      "last_checked": "2026-03-13T07:41:14.817376",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"ce98b832affb18df9dc4566b16ffacec\"",
       "file_path": "documentation/ExternalAccessory/eabluetoothaccessorypickererror/code/init-rawvalue.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaaccessorydelegate/accessorydiddisconnect(_:).json": {
       "hash": "e392de3cb66b1d44110970410409d447abbdca3004a6eb77344ba4c13ee28aaa",
-      "last_checked": "2026-03-10T07:33:55.477088",
+      "last_checked": "2026-03-13T07:41:15.147724",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"985388412b46ac8fce69d7b8667cb603\"",
       "file_path": "documentation/ExternalAccessory/eaaccessorydelegate/accessorydiddisconnect.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eaconnectionidnone.json": {
       "hash": "926a8d996fb327d7cefbbf6553a0c76bb95a959bcaff6b8faae56c7833857eeb",
-      "last_checked": "2026-03-10T07:33:55.604516",
+      "last_checked": "2026-03-13T07:41:15.430062",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"a109cc16c1ad24d05848ac2e2ee0ef8c\"",
       "file_path": "documentation/ExternalAccessory/eaconnectionidnone.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didupdate:).json": {
       "hash": "91ec3613286af07618f3c41e0410e73f33fcbea92da6ce2960f6ec05df67d2a5",
-      "last_checked": "2026-03-10T07:33:55.683520",
+      "last_checked": "2026-03-13T07:41:15.592312",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"082f4f1a2059b0bd269e03e34fcea521\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser-didupdate.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserstate.json": {
       "hash": "e5a44c0a92cca9204a5cdc694c0b490c70f72885acc6f72d9929de22c8283b1b",
-      "last_checked": "2026-03-10T07:33:55.806442",
+      "last_checked": "2026-03-13T07:41:15.902093",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"ba73442899b2cb6795d4b03b77984180\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserstate.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didfinishconfiguringaccessory:with:).json": {
       "hash": "24dafb384c2f81e4ad1595169c44cd075a1a7b78fe8f393923661af05b29c7d0",
-      "last_checked": "2026-03-10T07:33:55.926525",
+      "last_checked": "2026-03-13T07:41:16.200044",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"25001f50d81ce68aefe8617b66566abd\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser-didfinishconfiguringaccessorywith.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryconfigurationstatus.json": {
       "hash": "e41665a232eae367eb14affb9a0b17d3e1ec742264e693dc33e48014ddeed3a8",
-      "last_checked": "2026-03-10T07:33:56.005345",
+      "last_checked": "2026-03-13T07:41:16.371288",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"7a6f7713bc3f6dcee9d332534500b33b\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryconfigurationstatus.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didfindunconfiguredaccessories:).json": {
       "hash": "68d35e35741c8ca7b2a2c6460534ef60164573828740bee87407145703bb3698",
-      "last_checked": "2026-03-10T07:33:56.081946",
+      "last_checked": "2026-03-13T07:41:16.672322",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"e38c911fb38f9711f1fd51ccc2cf8941\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser-didfindunconfiguredaccessories.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didremoveunconfiguredaccessories:).json": {
       "hash": "65c46efa042cf03a2dde749bd9982b3dcb5c7aac24e7b3c5fcb9207d310771f4",
-      "last_checked": "2026-03-10T07:33:56.220336",
+      "last_checked": "2026-03-13T07:41:16.954083",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"417e3570dfd6bfda5d88932d7ccbd17b\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser-didremoveunconfiguredaccessories.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryproperties/propertysupportsairplay.json": {
       "hash": "b1cedf811fefb75b2a39501dde2115d9f48afd503db4e95440754a60ae5b8c89",
-      "last_checked": "2026-03-10T07:33:56.332113",
+      "last_checked": "2026-03-13T07:41:17.283269",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"a620c78efc7df443bcdbe1f8328cb10e\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryproperties/propertysupportsairplay.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryproperties/propertysupportsairprint.json": {
       "hash": "a5ad2f2d2c568b01d4323ebb31d9ac18135b7b93a762b27e6bd4eef820ed4b0e",
-      "last_checked": "2026-03-10T07:33:56.449084",
+      "last_checked": "2026-03-13T07:41:17.453513",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"416c96de0d03105a937e90c56a525a41\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryproperties/propertysupportsairprint.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryproperties/propertysupportshomekit.json": {
       "hash": "7d27fcd00772a94f6daa0829594929878a8ff6992a98e7f5978bd12d1c2bc50f",
-      "last_checked": "2026-03-10T07:33:56.529012",
+      "last_checked": "2026-03-13T07:41:17.623892",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"0c4c0f6ba36020430730d56f8f9275d1\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryproperties/propertysupportshomekit.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryproperties/init(rawvalue:).json": {
       "hash": "f06d7c7b5409feeed36b6557c5a9b34687ae5de4db2c3d9c3e567b625a7689c2",
-      "last_checked": "2026-03-10T07:33:56.683157",
+      "last_checked": "2026-03-13T07:41:17.905820",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"cb9da0c10059f2c761da98edd930c985\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryproperties/init-rawvalue.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserstate/wifiunavailable.json": {
       "hash": "6923a4cce007a755560f6641588ff922d43f6ab553234bc1957d9f13034964a0",
-      "last_checked": "2026-03-10T07:33:56.760850",
+      "last_checked": "2026-03-13T07:41:18.060948",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"9864c1578a59f1679e9d9030b037f9b2\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserstate/wifiunavailable.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserstate/stopped.json": {
       "hash": "a934bcd17592bf4a0991b871377cf956258c3bfad5aca424e190e09523ecb225",
-      "last_checked": "2026-03-10T07:33:56.910176",
+      "last_checked": "2026-03-13T07:41:18.328720",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"b6402717421ce03949a5ef76e5d5ec43\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserstate/stopped.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserstate/searching.json": {
       "hash": "a2e6156c7087a3b933f219c598c2fb87a7ae0f6200e76b1570fe74feffe22a7b",
-      "last_checked": "2026-03-10T07:33:57.050649",
+      "last_checked": "2026-03-13T07:41:18.498085",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"cafd5cb3005fbaa259c1ab5c97ca246a\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserstate/searching.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserstate/configuring.json": {
       "hash": "590bbcddc512f5e48019883d8c8c3c7d4acc58f495376e4c55923c3b87d51436",
-      "last_checked": "2026-03-10T07:33:57.173419",
+      "last_checked": "2026-03-13T07:41:18.661308",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"2a72e94a2046eb113d80331381a8dc9a\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserstate/configuring.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessorybrowserstate/init(rawvalue:).json": {
       "hash": "2a7b930aab905b6beea0f4e7c80d194a37bfb567a014a8e15f3fc430500899d2",
-      "last_checked": "2026-03-10T07:33:57.297928",
+      "last_checked": "2026-03-13T07:41:18.815710",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"3d66c5f18a13b576dcc30b8dea225d8c\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessorybrowserstate/init-rawvalue.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryconfigurationstatus/success.json": {
       "hash": "7f4bc7554f93e583de9b0f830cdf21888fa6a9d65bbb39cc255add6ce85f75f1",
-      "last_checked": "2026-03-10T07:33:57.549035",
+      "last_checked": "2026-03-13T07:41:18.989231",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"31d43fc47329892735717d2ded3e34f4\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryconfigurationstatus/success.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryconfigurationstatus/usercancelledconfiguration.json": {
       "hash": "9f37ce993d5a478a7d39719710631cea7f6ff9c3e410eedac94e4b5dfe95b25a",
-      "last_checked": "2026-03-10T07:33:57.669238",
+      "last_checked": "2026-03-13T07:41:19.288946",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"134e9bb635b0a9cc86985867aab90341\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryconfigurationstatus/usercancelledconfiguration.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryconfigurationstatus/failed.json": {
       "hash": "51cc08926560cd589f1499a90b2de54f7db4f08676e61c956e592be3d7ef765b",
-      "last_checked": "2026-03-10T07:33:57.744584",
+      "last_checked": "2026-03-13T07:41:19.482477",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"5e1faeea709e1e70f2b0d1af8374901c\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryconfigurationstatus/failed.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/externalaccessory/eawifiunconfiguredaccessoryconfigurationstatus/init(rawvalue:).json": {
       "hash": "5e6c563b0b9bc80ddcf43e69fd8f701dbc0ea3291123d6743d1a2e0c199f1d0c",
-      "last_checked": "2026-03-10T07:33:57.864311",
+      "last_checked": "2026-03-13T07:41:19.649710",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:46.238105",
+      "session_id": "2026-03-13T07:41:05.825340",
       "etag": "W/\"f4c308f98ba8e1034e4e0382f9e2c018\"",
       "file_path": "documentation/ExternalAccessory/eawifiunconfiguredaccessoryconfigurationstatus/init-rawvalue.md"
     },

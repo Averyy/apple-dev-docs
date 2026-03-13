@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:31:36.633546",
+    "last_updated": "2026-03-13T07:37:57.842084",
     "total_pages": 744,
-    "session_id": "2026-03-10T07:31:14.909796"
+    "session_id": "2026-03-13T07:37:26.529337"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/FinanceKit.json": {
       "hash": "9cb696e4ae1efbc29cc3a7387d21a48fbca779d3ac42f6f6b3f92071e4cb363c",
-      "last_checked": "2026-03-10T07:31:15.271744",
+      "last_checked": "2026-03-13T07:37:26.893794",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"09b030d1a6a8901755b9f469260c5e6e\"",
       "file_path": "documentation/FinanceKit/FinanceKit.md"
     },
     "https://developer.apple.com/documentation/FinanceKit": {
       "hash": "9cb696e4ae1efbc29cc3a7387d21a48fbca779d3ac42f6f6b3f92071e4cb363c",
-      "last_checked": "2026-03-10T07:31:15.163078",
+      "last_checked": "2026-03-13T07:37:26.777607",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"09b030d1a6a8901755b9f469260c5e6e\"",
       "file_path": "documentation/FinanceKit/FinanceKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/implementing-a-background-delivery-extension.json": {
       "hash": "fe19276ea947a258c7ec9f7123d7930422bdf07e3701d2844a79cd63daeaf03a",
-      "last_checked": "2026-03-10T07:31:15.544996",
+      "last_checked": "2026-03-13T07:37:27.268782",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ff146e2675443d65f5792522e189a71f\"",
       "file_path": "documentation/FinanceKit/implementing-a-background-delivery-extension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore.json": {
       "hash": "84c30d7f8c9ee1bc2d023eae8296d6e842f990270ba7fbb42fcd0677af37d927",
-      "last_checked": "2026-03-10T07:31:15.668911",
+      "last_checked": "2026-03-13T07:37:27.563003",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"98a23f6e46e857c808abc1c0543b5dc5\"",
       "file_path": "documentation/FinanceKit/financestore.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/authorizationstatus().json": {
       "hash": "45ff5f8df3b6829c360d4790aa9953a150561b1356088b79f04f869cc78900c0",
-      "last_checked": "2026-03-10T07:31:15.790344",
+      "last_checked": "2026-03-13T07:37:27.824996",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"192e63609cbd36c4de012ff72badffae\"",
       "file_path": "documentation/FinanceKit/financestore/authorizationstatus.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/requestauthorization().json": {
       "hash": "2962e16d1cfab63694a5d53d97b3154ef5f09e25610fb1279a6c08c10e7b7600",
-      "last_checked": "2026-03-10T07:31:15.904851",
+      "last_checked": "2026-03-13T07:37:27.992215",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b3ad9fa6216d644bdbd9e06519ca3e7d\"",
       "file_path": "documentation/FinanceKit/financestore/requestauthorization.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/authorizationstatus.json": {
       "hash": "f0aa9573302051087fc62bb558f8e27707ddb788acf9ee678fddf2486c2565d1",
-      "last_checked": "2026-03-10T07:31:16.000680",
+      "last_checked": "2026-03-13T07:37:28.266108",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"306dcd23ed7e4f86398a157376b84983\"",
       "file_path": "documentation/FinanceKit/authorizationstatus.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/accounts(query:).json": {
       "hash": "74fdbc52d8c4bac934b7263b0126a01877f0e2e22f73d61d4dd44d3b2b1f04ec",
-      "last_checked": "2026-03-10T07:31:16.075775",
+      "last_checked": "2026-03-13T07:37:28.551035",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"e98a1b68681d4112f191d462df2deb77\"",
       "file_path": "documentation/FinanceKit/financestore/accounts-query.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/accounthistory(since:ismonitoring:).json": {
       "hash": "df125268777da369918150eee844570cd93290f5891e26c8ff8e7de88212036d",
-      "last_checked": "2026-03-10T07:31:16.182365",
+      "last_checked": "2026-03-13T07:37:28.706529",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"58f336d9847e9d55ff283343d1cf7808\"",
       "file_path": "documentation/FinanceKit/financestore/accounthistory-sinceismonitoring.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount.json": {
       "hash": "8874615eca7cbcd51181495225bb6e4fff3bf4d93d49d9d2356a26391103d312",
-      "last_checked": "2026-03-10T07:31:16.343360",
+      "last_checked": "2026-03-13T07:37:28.866623",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b058702c0bd0d693b33108cd7bc56480\"",
       "file_path": "documentation/FinanceKit/assetaccount.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount.json": {
       "hash": "09c04bb8afb574f715dfc30f73d88c37ff70778417cffbb861acc27da203d0b8",
-      "last_checked": "2026-03-10T07:31:16.456052",
+      "last_checked": "2026-03-13T07:37:29.157268",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"899b2f477e8aa7a5dff20368d7579881\"",
       "file_path": "documentation/FinanceKit/liabilityaccount.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account.json": {
       "hash": "a2c1e979ec9fabceb59270beac0e26b5ad55b8683d834f49d5a06e9128ad17d2",
-      "last_checked": "2026-03-10T07:31:16.588374",
+      "last_checked": "2026-03-13T07:37:29.319845",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a695aa0a8094e4f47c10e04fe3f8ff6e\"",
       "file_path": "documentation/FinanceKit/account.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/accountbalances(query:).json": {
       "hash": "4a4cf7dda32c8814f3adfb924d11c45b213905ef626a98e2bc7e54c8a0d977cc",
-      "last_checked": "2026-03-10T07:31:16.660483",
+      "last_checked": "2026-03-13T07:37:29.480276",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"56f9d0a5e72297826d106307aede086b\"",
       "file_path": "documentation/FinanceKit/financestore/accountbalances-query.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/accountbalancehistory(foraccountid:since:ismonitoring:).json": {
       "hash": "3046f1e5c44c192701db1875834153e3217c24e567e316f1406dee657e70a2a8",
-      "last_checked": "2026-03-10T07:31:16.788424",
+      "last_checked": "2026-03-13T07:37:29.646184",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"6f56f5f868d1e2dab36eba30529b5b21\"",
       "file_path": "documentation/FinanceKit/financestore/accountbalancehistory-foraccountidsinceismonitoring.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance.json": {
       "hash": "b6c3d3539f5cae4e8acacb168713c62a690b9a550c7266c23db8e372293671fc",
-      "last_checked": "2026-03-10T07:31:16.940002",
+      "last_checked": "2026-03-13T07:37:29.914633",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"8d93412b14174b648e35a4181c1a2b48\"",
       "file_path": "documentation/FinanceKit/accountbalance.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalancequery.json": {
       "hash": "91922ae4ee1c074b89f9545f6b56e029095909e97a8860e709aa65b812ad061a",
-      "last_checked": "2026-03-10T07:31:17.035506",
+      "last_checked": "2026-03-13T07:37:30.113700",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a25bf80e41f37f95d006de0e414fb88f\"",
       "file_path": "documentation/FinanceKit/accountbalancequery.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/balance.json": {
       "hash": "94749cb45de426edcad7b8ac6a77d91d5d6224f32f2c6ac4a74040cb49471d40",
-      "last_checked": "2026-03-10T07:31:17.158368",
+      "last_checked": "2026-03-13T07:37:30.378637",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"85c78a264bacd50261ab13e13edffe44\"",
       "file_path": "documentation/FinanceKit/balance.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/creditdebitindicator.json": {
       "hash": "4a924cc3da65cda0cda8b824f038eeb9630e6825e94ba5f92dd3885aafe9c4b9",
-      "last_checked": "2026-03-10T07:31:17.248229",
+      "last_checked": "2026-03-13T07:37:30.539654",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"eee56557d37a41ff8e98c2813dc64d2b\"",
       "file_path": "documentation/FinanceKit/creditdebitindicator.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currentbalance.json": {
       "hash": "86f2b316a72e948cbe3135b328b90d13ddf0eb69f537ed75970db9ca2c5f0493",
-      "last_checked": "2026-03-10T07:31:17.360070",
+      "last_checked": "2026-03-13T07:37:30.805258",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"2b4a2730eb6db49eea97e7960254642c\"",
       "file_path": "documentation/FinanceKit/currentbalance.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/fullyqualifiedorderidentifier.json": {
       "hash": "150ec213f5bdeb3bb8d54049b244e2cad73b3f4d515655b8a3e2f36a838276e9",
-      "last_checked": "2026-03-10T07:31:17.436788",
+      "last_checked": "2026-03-13T07:37:30.979602",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"763674c8dbb395ff73b4a4d24caa982f\"",
       "file_path": "documentation/FinanceKit/fullyqualifiedorderidentifier.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/saveorder(signedarchive:).json": {
       "hash": "8fc0fe3e491fa8f410c7e4087b948c0419e7a33636abbc0cee0b4941f35384c3",
-      "last_checked": "2026-03-10T07:31:17.560697",
+      "last_checked": "2026-03-13T07:37:31.143138",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"98ade66d8d76970b8cdf4c46f15f4cf8\"",
       "file_path": "documentation/FinanceKit/financestore/saveorder-signedarchive.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/transactionhistory(foraccountid:since:ismonitoring:).json": {
       "hash": "eaeb94fdebda75806592010839422c2259a19dd0cf9776fff8e45294bb3e5c21",
-      "last_checked": "2026-03-10T07:31:17.639515",
+      "last_checked": "2026-03-13T07:37:31.326385",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b0c7556b20d84c1daae731cdc1e30894\"",
       "file_path": "documentation/FinanceKit/financestore/transactionhistory-foraccountidsinceismonitoring.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/transactions(query:).json": {
       "hash": "d636280b486e7cec66a18dbca394e18fa15aafb53fe2114a766492c68bea7345",
-      "last_checked": "2026-03-10T07:31:17.716344",
+      "last_checked": "2026-03-13T07:37:31.493504",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ec66c1c0aa138b1d55cc7f7024477278\"",
       "file_path": "documentation/FinanceKit/financestore/transactions-query.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountquery.json": {
       "hash": "59a7c49c20b963e8eb50e208bb9941b0601c500b0728c61ef78a685189d500c0",
-      "last_checked": "2026-03-10T07:31:17.815275",
+      "last_checked": "2026-03-13T07:37:31.662217",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"aaaf8b8b744c3b6652fb9fba5b72fa2a\"",
       "file_path": "documentation/FinanceKit/accountquery.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountcreditinformation.json": {
       "hash": "2fa45b07d3149afab37c5371256a8b76a7b392b2bc780a205a9f13fc923d62d2",
-      "last_checked": "2026-03-10T07:31:17.932801",
+      "last_checked": "2026-03-13T07:37:31.957616",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a3f42b3f3b96d43301f4cc74aab841e6\"",
       "file_path": "documentation/FinanceKit/accountcreditinformation.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currencyamount.json": {
       "hash": "3e92efb4c07e1603403c4362389250d0c763f922301e3bad5150219b09bdeb26",
-      "last_checked": "2026-03-10T07:31:18.007750",
+      "last_checked": "2026-03-13T07:37:32.132349",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"32f8acc386da135156603cdec2a78638\"",
       "file_path": "documentation/FinanceKit/currencyamount.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction.json": {
       "hash": "54247c6283e6a1d67d7ed6a5299f86caffeb935898fdc04edc90ee46e7a62b67",
-      "last_checked": "2026-03-10T07:31:18.079901",
+      "last_checked": "2026-03-13T07:37:32.289454",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"805d69444769d721b8aaf23c426f7eb8\"",
       "file_path": "documentation/FinanceKit/transaction.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionquery.json": {
       "hash": "65674a097b35925cd3de7d0c59160f945915d42c3ff45f4d07718de1b0b88d4a",
-      "last_checked": "2026-03-10T07:31:18.193950",
+      "last_checked": "2026-03-13T07:37:32.587087",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a5794277d7c9ff8c06fc0578dce83525\"",
       "file_path": "documentation/FinanceKit/transactionquery.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype.json": {
       "hash": "73b20720d729e6a339ba9cc2eb9dae9b4e552db0235e229bd8542f154b714df8",
-      "last_checked": "2026-03-10T07:31:18.273531",
+      "last_checked": "2026-03-13T07:37:32.754636",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"2b2080fc242f5203e2019d520f153dd5\"",
       "file_path": "documentation/FinanceKit/transactiontype.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionstatus.json": {
       "hash": "a70b651d064f9a712d78fe6c10b9441ee2fe194ea755bd6da0379a020c7fd468",
-      "last_checked": "2026-03-10T07:31:18.351198",
+      "last_checked": "2026-03-13T07:37:32.910291",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"6306099ce3fa78a123b9b42447ece43c\"",
       "file_path": "documentation/FinanceKit/transactionstatus.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/historytoken.json": {
       "hash": "dfa3e049015c7e6861db3353127cbe0c265ae399d45a792ed487f6f447679738",
-      "last_checked": "2026-03-10T07:31:18.426781",
+      "last_checked": "2026-03-13T07:37:33.055668",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"7bf5186d7069284b7ef2a23b0391c40e\"",
       "file_path": "documentation/FinanceKit/financestore/historytoken.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode.json": {
       "hash": "90889f06368ee4dc29d69d7b15b88441ea123eca58a2dfec80db53681df022f2",
-      "last_checked": "2026-03-10T07:31:18.534722",
+      "last_checked": "2026-03-13T07:37:33.261100",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"56dfed30aa8014e232fb932b742e7876\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror.json": {
       "hash": "22dab3c0845e7b1d0f0f8447a5920a51762921a5cb5351714f49f2d254eec0c5",
-      "last_checked": "2026-03-10T07:31:18.616368",
+      "last_checked": "2026-03-13T07:37:33.432902",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d31945d7946f642e5183263cfa8183d1\"",
       "file_path": "documentation/FinanceKit/financeerror.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/backgrounddeliveryextension.json": {
       "hash": "518a2f2a0d0543d798793acb2bdc5c7aae68972bdc325e489515a35ea4b73c3a",
-      "last_checked": "2026-03-10T07:31:18.874303",
+      "last_checked": "2026-03-13T07:37:33.584855",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b0511ce8d3883c17e44da99887de3f50\"",
       "file_path": "documentation/FinanceKit/backgrounddeliveryextension.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/backgrounddeliveryextensionproviding.json": {
       "hash": "3076cb722b257af40c1312171ff09d5227295cf61dd3ce228b7372a6368ca615",
-      "last_checked": "2026-03-10T07:31:18.954705",
+      "last_checked": "2026-03-13T07:37:33.734875",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"db1b5e1001efd09c902c31d0d7e4b5e1\"",
       "file_path": "documentation/FinanceKit/backgrounddeliveryextensionproviding.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/shared.json": {
       "hash": "bbccb67b02af99217433d575913bbb07af1fc2cdb6fa4620c52ec1f99157962e",
-      "last_checked": "2026-03-10T07:31:19.034446",
+      "last_checked": "2026-03-13T07:37:33.885587",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"abf6cc33709ee1ac3f4d9483388aa0d3\"",
       "file_path": "documentation/FinanceKit/financestore/shared.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/isdataavailable(_:).json": {
       "hash": "70db79889ea66cbf094dddc3a11958a46a369f275e72bba7b0a90425b9d207f0",
-      "last_checked": "2026-03-10T07:31:19.141091",
+      "last_checked": "2026-03-13T07:37:34.029433",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"f3481a59d99099f36da05d5bb0918ac7\"",
       "file_path": "documentation/FinanceKit/financestore/isdataavailable.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/containsorder(matching:updateddate:).json": {
       "hash": "04cfaf09f8ae354a7f9cb35c81343a150a27bfda50ae26b072ce1ce175f18688",
-      "last_checked": "2026-03-10T07:31:19.213057",
+      "last_checked": "2026-03-13T07:37:34.200578",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"397cede631dab41eb9b01bdbbcf517d7\"",
       "file_path": "documentation/FinanceKit/financestore/containsorder-matchingupdateddate.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/containsorderresult.json": {
       "hash": "b85a6a808f300b57ee05a3c3419314d37220eadf1e6e9393757861d496a14f66",
-      "last_checked": "2026-03-10T07:31:19.477969",
+      "last_checked": "2026-03-13T07:37:34.512802",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"dafb3100f0f0427c5226a0de7aa45c9c\"",
       "file_path": "documentation/FinanceKit/financestore/containsorderresult.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/datatype.json": {
       "hash": "620d00441a16dac87014083de96e1db7033b2aaf028fca935f49f2362333f55e",
-      "last_checked": "2026-03-10T07:31:19.604479",
+      "last_checked": "2026-03-13T07:37:34.677943",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"4c4dcf89e029ec433f4b51ddcfa676b6\"",
       "file_path": "documentation/FinanceKit/financestore/datatype.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/saveorderresult.json": {
       "hash": "bc09bba2cd158d2d3435e77bbc2ca948f1d90918f7c87c7bd008ea82a5ca5e62",
-      "last_checked": "2026-03-10T07:31:19.860043",
+      "last_checked": "2026-03-13T07:37:34.845338",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"27fddbb31b13e11f62524142efc30db1\"",
       "file_path": "documentation/FinanceKit/financestore/saveorderresult.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/backgrounddatatype.json": {
       "hash": "7364d3c8591ff4a2770ca83529a5f4289456e50c7b4a1dab5e3152422271f14f",
-      "last_checked": "2026-03-10T07:31:19.979400",
+      "last_checked": "2026-03-13T07:37:35.012437",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ec10706c0899a01b26bdf04c3fdd4943\"",
       "file_path": "documentation/FinanceKit/financestore/backgrounddatatype.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/updatefrequency.json": {
       "hash": "0bd0e37910f8c837e057c2144a5d98012683a3e03e7a9e57b5c0b19c9bcfac5b",
-      "last_checked": "2026-03-10T07:31:20.341875",
+      "last_checked": "2026-03-13T07:37:35.160448",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"86eb78aa043f4a74b8008f21dd6f6eda\"",
       "file_path": "documentation/FinanceKit/financestore/updatefrequency.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/changes.json": {
       "hash": "9c12d9cfbbebd7e7dac193cff8548bcc5d8f508cbcaf3fff672d65f0333da744",
-      "last_checked": "2026-03-10T07:31:20.414229",
+      "last_checked": "2026-03-13T07:37:35.321646",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"0ae430042dbd3fd26b8353260053da6c\"",
       "file_path": "documentation/FinanceKit/financestore/changes.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/history.json": {
       "hash": "2e0a8b1cffb49f6c0568169642d5f59d02da476bb160288e5c86dd21473a6e31",
-      "last_checked": "2026-03-10T07:31:20.538506",
+      "last_checked": "2026-03-13T07:37:35.485311",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"955c13453f3e0e8b4a0827850612535c\"",
       "file_path": "documentation/FinanceKit/financestore/history.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/disableallbackgrounddelivery().json": {
       "hash": "ffb4745e5331e4687b242d77fe991b1893916c7295bc6c07961fc6a04a4a2087",
-      "last_checked": "2026-03-10T07:31:20.790061",
+      "last_checked": "2026-03-13T07:37:35.789452",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ec2ea9954a5e4fddc8f0f14e2dea4668\"",
       "file_path": "documentation/FinanceKit/financestore/disableallbackgrounddelivery.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/disablebackgrounddelivery(for:).json": {
       "hash": "a7a4df51754fc2607fa73d607ddc78692c05ee886cc6f1000635752332c56206",
-      "last_checked": "2026-03-10T07:31:21.048011",
+      "last_checked": "2026-03-13T07:37:35.957395",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"95eb495550a8ec644039f6624a2bae6b\"",
       "file_path": "documentation/FinanceKit/financestore/disablebackgrounddelivery-for.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/enablebackgrounddelivery(for:frequency:).json": {
       "hash": "13bc7dc80429e97db3277ebd7dd649f01bf2e41299b51350c4f74725dfdc217f",
-      "last_checked": "2026-03-10T07:31:21.170942",
+      "last_checked": "2026-03-13T07:37:36.244428",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"53841912720c9b7f94846c6b8e7e0a84\"",
       "file_path": "documentation/FinanceKit/financestore/enablebackgrounddelivery-forfrequency.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/authorizationstatus/authorized.json": {
       "hash": "bd3afd2552662aa6b590a1973dff1c0797efc5fdf8ba002c03d00105fa5a883a",
-      "last_checked": "2026-03-10T07:31:21.295440",
+      "last_checked": "2026-03-13T07:37:36.395550",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c9f2fc5ad3eea1d8642555875a885c73\"",
       "file_path": "documentation/FinanceKit/authorizationstatus/authorized.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/authorizationstatus/denied.json": {
       "hash": "446130471a8f79adbede63726d5f12f695ad24cb1f087fe6d9dd02801395c5ff",
-      "last_checked": "2026-03-10T07:31:21.414988",
+      "last_checked": "2026-03-13T07:37:36.557037",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"47adeb9d2e0f1d546e9f2aaad2c1a733\"",
       "file_path": "documentation/FinanceKit/authorizationstatus/denied.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/authorizationstatus/notdetermined.json": {
       "hash": "5c06bf7012fc56beaceef6918270559ab7d281a35b728344aea72d7eef880a69",
-      "last_checked": "2026-03-10T07:31:21.667980",
+      "last_checked": "2026-03-13T07:37:36.722205",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"35ccab1b71525d5f5e7abe1318d1dacb\"",
       "file_path": "documentation/FinanceKit/authorizationstatus/notdetermined.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount/accountdescription.json": {
       "hash": "509e29c8ded39e203dac360257641cbd6c4397794d50774f02ab4bedc67f6703",
-      "last_checked": "2026-03-10T07:31:21.797541",
+      "last_checked": "2026-03-13T07:37:36.911101",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d9d9c07370e015b0d03a262887903705\"",
       "file_path": "documentation/FinanceKit/assetaccount/accountdescription.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount/currencycode.json": {
       "hash": "a61adb37f11aa5c3675c7d7d2ed7495db06f469508645e35f7eb67b19475e289",
-      "last_checked": "2026-03-10T07:31:21.897420",
+      "last_checked": "2026-03-13T07:37:37.074476",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"1ed74d41d6c3d7e5e2eb5e6f46ae3f20\"",
       "file_path": "documentation/FinanceKit/assetaccount/currencycode.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount/displayname.json": {
       "hash": "5c71ea942cae7c8c5318c1bd35b7532d54bd56c3cb2bff6de66e6de148e906d5",
-      "last_checked": "2026-03-10T07:31:21.966304",
+      "last_checked": "2026-03-13T07:37:37.231053",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"2d9d80d0ebd8356f97aa157f68b9423e\"",
       "file_path": "documentation/FinanceKit/assetaccount/displayname.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount/institutionname.json": {
       "hash": "aee1608b9538310448f31c8cfcefbd78049faf0e4a87998894fd56cc362dae9d",
-      "last_checked": "2026-03-10T07:31:22.157190",
+      "last_checked": "2026-03-13T07:37:37.558089",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"f458e5bec406932d05f2de2bc6066ba8\"",
       "file_path": "documentation/FinanceKit/assetaccount/institutionname.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount/openingdate.json": {
       "hash": "373ac87b31cdc889cc37cf98f94cf65858a7910096e42aa86f8d42515de9e327",
-      "last_checked": "2026-03-10T07:31:22.278019",
+      "last_checked": "2026-03-13T07:37:37.743051",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"5ef14229a45f8beb114ea91cae3ecb92\"",
       "file_path": "documentation/FinanceKit/assetaccount/openingdate.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/accountdescription.json": {
       "hash": "a4fea1a980a8fecfc7c6c2836e3e72dc88fe8d53e388c563bbacb76e9c2b0145",
-      "last_checked": "2026-03-10T07:31:22.529919",
+      "last_checked": "2026-03-13T07:37:37.898430",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"34b24754dfea15e9861237a3846ac361\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/accountdescription.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/creditinformation.json": {
       "hash": "5f09ba00382c5f171f77a53295579c7d6b2110c315ad38f0d846667a7e500d1f",
-      "last_checked": "2026-03-10T07:31:22.619074",
+      "last_checked": "2026-03-13T07:37:38.052529",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"8c1bb913f3bc3df7ce6bec1aba6fd415\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/creditinformation.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/currencycode.json": {
       "hash": "635ef0246951690d4d1c36f3655425b75801cd046bb27bc5610b575776343d9f",
-      "last_checked": "2026-03-10T07:31:22.693497",
+      "last_checked": "2026-03-13T07:37:38.221529",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a5a6cd0c63d75431ee1fdfdd7846ed96\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/currencycode.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/displayname.json": {
       "hash": "1957a7f04cfe48dc02a224d9f4671ffe2f49e9b1c2e6f6ede98aee939fe369ec",
-      "last_checked": "2026-03-10T07:31:22.945741",
+      "last_checked": "2026-03-13T07:37:38.401941",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d752b0f62834885e1a7cbd96b53475d5\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/displayname.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/institutionname.json": {
       "hash": "6cd520fc31286cb5566b0f4d12534a99446a60016a2a166bd9c9a697d1c86d34",
-      "last_checked": "2026-03-10T07:31:23.115938",
+      "last_checked": "2026-03-13T07:37:38.730529",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"06fd3d388990068db6f291fc298cfbc8\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/institutionname.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/openingdate.json": {
       "hash": "4245934c0030819b84198437b2b7653c203730a65a2dba891738cda9c1f2c2c4",
-      "last_checked": "2026-03-10T07:31:23.241864",
+      "last_checked": "2026-03-13T07:37:38.903121",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"35f1b220442fd2da266e9ddd0747c90c\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/openingdate.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/asset(_:).json": {
       "hash": "8c5d7400db957da12b2e13f955c118dca994a4681a5a250804aaef8723dbb30e",
-      "last_checked": "2026-03-10T07:31:23.495781",
+      "last_checked": "2026-03-13T07:37:39.052929",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"f2e8c74a0cdb39487d7641ce65a53bfd\"",
       "file_path": "documentation/FinanceKit/account/asset.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/liability(_:).json": {
       "hash": "cf83ca18445b86f0253f8d8b7ef3fa14bdabc866ee1263837055d7005c6df37c",
-      "last_checked": "2026-03-10T07:31:23.621515",
+      "last_checked": "2026-03-13T07:37:39.199595",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c2212944cb444ccbcb5540ccd8a81e04\"",
       "file_path": "documentation/FinanceKit/account/liability.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/accountdescription.json": {
       "hash": "e6933a7fca7629de00d816c1dd2118ec8a3a299f073db580eda394d348b988e0",
-      "last_checked": "2026-03-10T07:31:23.739595",
+      "last_checked": "2026-03-13T07:37:39.355436",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"eb6b5b52f267b6ad3fec24ce122f54d7\"",
       "file_path": "documentation/FinanceKit/account/accountdescription.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/assetaccount.json": {
       "hash": "a42e0b011b9e09c9100c3783f3e12d81e7f7a23419d43e44784e3c518c0a96f9",
-      "last_checked": "2026-03-10T07:31:23.997476",
+      "last_checked": "2026-03-13T07:37:39.511767",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"5c21e192b3745260d46bfcb696055031\"",
       "file_path": "documentation/FinanceKit/account/assetaccount.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/currencycode.json": {
       "hash": "47a825e349ab5ae3b70a11879828d616a04a4302c7f03879e685a738ebdc8377",
-      "last_checked": "2026-03-10T07:31:24.111813",
+      "last_checked": "2026-03-13T07:37:39.672347",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b6c071c0670d11137314c6b5b9d1f56f\"",
       "file_path": "documentation/FinanceKit/account/currencycode.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/displayname.json": {
       "hash": "d712114b7122cac9e45649f24bdee719679b7a4fea28580e1cec1dbab5f19d3a",
-      "last_checked": "2026-03-10T07:31:24.192773",
+      "last_checked": "2026-03-13T07:37:39.870004",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"914a0320d7b1ec4478ffedd38ead22ba\"",
       "file_path": "documentation/FinanceKit/account/displayname.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/institutionname.json": {
       "hash": "b29e895641aad896655df1b6bcfc3ffc36af0ad301433a5eea90e4de3a51a9ab",
-      "last_checked": "2026-03-10T07:31:24.391990",
+      "last_checked": "2026-03-13T07:37:40.185362",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"73fac10bbc90931596e6cd3332209daf\"",
       "file_path": "documentation/FinanceKit/account/institutionname.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/liabilityaccount.json": {
       "hash": "d614c63495bd7f536695ac8395264b77cadfd07fcd0a206901b3926d97a9d91d",
-      "last_checked": "2026-03-10T07:31:24.501442",
+      "last_checked": "2026-03-13T07:37:40.335071",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"9949bb2b531aebca8ae2a882c5b568b6\"",
       "file_path": "documentation/FinanceKit/account/liabilityaccount.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/openingdate.json": {
       "hash": "474ff84b9c20259bcb42ad01247a7361cc4d76b74cc86f47f9fd8c50da7d0be4",
-      "last_checked": "2026-03-10T07:31:24.617784",
+      "last_checked": "2026-03-13T07:37:40.622985",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ec922dddd11dfaaf245684259f3a2e6c\"",
       "file_path": "documentation/FinanceKit/account/openingdate.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance/accountid.json": {
       "hash": "26ec4f96852821d011cca2c6b40e709631e0d45db3a5ea8fc533e28b5c253e7a",
-      "last_checked": "2026-03-10T07:31:24.753064",
+      "last_checked": "2026-03-13T07:37:40.789643",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"96ed7851f4cb08d396857b6b7315c4e9\"",
       "file_path": "documentation/FinanceKit/accountbalance/accountid.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance/available.json": {
       "hash": "701cd884955a103c609bfac19ddca508bd6cea8bbe151e9820968cdd7667b331",
-      "last_checked": "2026-03-10T07:31:24.878596",
+      "last_checked": "2026-03-13T07:37:40.948522",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"94cf5b12b393a811e8d819a533e09c45\"",
       "file_path": "documentation/FinanceKit/accountbalance/available.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance/booked.json": {
       "hash": "5dee59bf17f4f4884170edb33c43ec31cf4b8b2d2ae18929b34f48dc3843404c",
-      "last_checked": "2026-03-10T07:31:25.128752",
+      "last_checked": "2026-03-13T07:37:41.119904",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"5d9f15821bc667d41a0900b92f7e67f6\"",
       "file_path": "documentation/FinanceKit/accountbalance/booked.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance/currencycode.json": {
       "hash": "695ac9787703893bbe9bdc1b679d6e062a4b5f259dc8cc8505f72b963c471bc1",
-      "last_checked": "2026-03-10T07:31:25.205423",
+      "last_checked": "2026-03-13T07:37:41.267192",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"04760d4e0f12673206ccc0d7721c80da\"",
       "file_path": "documentation/FinanceKit/accountbalance/currencycode.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance/currentbalance.json": {
       "hash": "48d64e81d1122e5d34d53523d9bdf4b980bd56faf864aec5b3469e0ca6944173",
-      "last_checked": "2026-03-10T07:31:25.333721",
+      "last_checked": "2026-03-13T07:37:41.437014",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d6f145b0a117665aeaad0825643530b6\"",
       "file_path": "documentation/FinanceKit/accountbalance/currentbalance.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalancequery/init(sortdescriptors:predicate:limit:offset:).json": {
       "hash": "1a45dbff3e79ef82dfccf0d289faa5878f945fc2a8eb657ec3114400baeb320a",
-      "last_checked": "2026-03-10T07:31:25.482506",
+      "last_checked": "2026-03-13T07:37:41.745821",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"e015e984526d43bc567e7d9d97f6fbbe\"",
       "file_path": "documentation/FinanceKit/accountbalancequery/init-sortdescriptorspredicatelimitoffset.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalancequery/predicate(availablesince:until:).json": {
       "hash": "449df69fe9febff9146ae034eeed8f2b827b81b1126bbbfc8699869abb604fae",
-      "last_checked": "2026-03-10T07:31:25.561472",
+      "last_checked": "2026-03-13T07:37:41.914756",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d30d0641c48909dd966b350a78468bd8\"",
       "file_path": "documentation/FinanceKit/accountbalancequery/predicate-availablesinceuntil.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalancequery/predicate(bookedsince:until:).json": {
       "hash": "401c757f5252a0075164c7455495e0c680ad7e66fe7c9f9d9028901155103715",
-      "last_checked": "2026-03-10T07:31:25.645436",
+      "last_checked": "2026-03-13T07:37:42.096231",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d3677dc90ebed73f081b6e095436f699\"",
       "file_path": "documentation/FinanceKit/accountbalancequery/predicate-bookedsinceuntil.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/balance/amount.json": {
       "hash": "a1ab93b5e306025b1dc90bdcf9e5c5e56cecde2cea3fb770b5b2a4f7afd4b502",
-      "last_checked": "2026-03-10T07:31:25.770839",
+      "last_checked": "2026-03-13T07:37:42.244154",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c6c3a39fb3a0b03c0141083183f9347f\"",
       "file_path": "documentation/FinanceKit/balance/amount.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/balance/asofdate.json": {
       "hash": "d76ce9ed9633a67a7f21b6b5e912a3fac39bb69324fa80402c6cf5b6c0aea8fd",
-      "last_checked": "2026-03-10T07:31:25.899783",
+      "last_checked": "2026-03-13T07:37:42.407058",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c19f45ff6892e86b5b575fc883a79b31\"",
       "file_path": "documentation/FinanceKit/balance/asofdate.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/balance/creditdebitindicator.json": {
       "hash": "423f408021a7ca50bee4d7161c122b2f819c9fb65b96428cd812beff7ad99cae",
-      "last_checked": "2026-03-10T07:31:26.060355",
+      "last_checked": "2026-03-13T07:37:42.563090",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b5d1779d2e337faea6c427ad4c6840c0\"",
       "file_path": "documentation/FinanceKit/balance/creditdebitindicator.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/creditdebitindicator/credit.json": {
       "hash": "063bd42cee9cc607951b42d308b142d26afdf33f41d9362b6f427d152e5f5be4",
-      "last_checked": "2026-03-10T07:31:26.143571",
+      "last_checked": "2026-03-13T07:37:42.718943",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"55e292714f85cfd6c6e781fb83a11275\"",
       "file_path": "documentation/FinanceKit/creditdebitindicator/credit.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/creditdebitindicator/debit.json": {
       "hash": "065a3572802decbffdad000be20c39e91e2a3aa4957db6f3471b1be4460ef9d2",
-      "last_checked": "2026-03-10T07:31:26.212576",
+      "last_checked": "2026-03-13T07:37:42.903417",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"7b4ff846277d5cfd6cd75169e2d2a0ce\"",
       "file_path": "documentation/FinanceKit/creditdebitindicator/debit.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currentbalance/available(_:).json": {
       "hash": "b7de309fc055aa554aa49ce79a9dde56997eca3c3cbfddc76c78e4b0e04bcd31",
-      "last_checked": "2026-03-10T07:31:26.281619",
+      "last_checked": "2026-03-13T07:37:43.061128",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"523cc430d516da7e19985641a2c60f77\"",
       "file_path": "documentation/FinanceKit/currentbalance/available.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currentbalance/availableandbooked(available:booked:).json": {
       "hash": "9b482ac43ac61bd723e51e9b69c271e166b2359ceeeac96732606353106bed83",
-      "last_checked": "2026-03-10T07:31:26.398547",
+      "last_checked": "2026-03-13T07:37:43.212656",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"5ca7fe8fde2ded8a409a34b1993602ea\"",
       "file_path": "documentation/FinanceKit/currentbalance/availableandbooked-availablebooked.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currentbalance/booked(_:).json": {
       "hash": "ce34dcbda3a953e13124b7384b40d825d4e9da4970d0ebbb28b3ff2774c1204b",
-      "last_checked": "2026-03-10T07:31:26.511705",
+      "last_checked": "2026-03-13T07:37:43.366961",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"218ac77f87bc87e71d4528e223893045\"",
       "file_path": "documentation/FinanceKit/currentbalance/booked.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/fullyqualifiedorderidentifier/init(ordertypeidentifier:orderidentifier:).json": {
       "hash": "732c89f5d66d967d715645ab2cc5998fbe9347032fe645fe8bd3db65eca0b71a",
-      "last_checked": "2026-03-10T07:31:26.629528",
+      "last_checked": "2026-03-13T07:37:43.583270",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"9ed6a81f2eeb9fe476d5cad91b0798f7\"",
       "file_path": "documentation/FinanceKit/fullyqualifiedorderidentifier/init-ordertypeidentifierorderidentifier.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/fullyqualifiedorderidentifier/orderidentifier.json": {
       "hash": "20a320218f103cde3cf4e665036d6da59086c70f57940d7b405781e118fd0375",
-      "last_checked": "2026-03-10T07:31:26.752732",
+      "last_checked": "2026-03-13T07:37:43.767629",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"608b86d0b18b7cdfe5bb1a2b92218c9a\"",
       "file_path": "documentation/FinanceKit/fullyqualifiedorderidentifier/orderidentifier.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/fullyqualifiedorderidentifier/ordertypeidentifier.json": {
       "hash": "67c8113144a73cb459caa3869f3ff43e7814ef78fdba33d218e201c9f565bc77",
-      "last_checked": "2026-03-10T07:31:26.831565",
+      "last_checked": "2026-03-13T07:37:43.925163",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"7f4a8d3f70c99698c7fc97fce5274f26\"",
       "file_path": "documentation/FinanceKit/fullyqualifiedorderidentifier/ordertypeidentifier.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountquery/init(sortdescriptors:predicate:limit:offset:).json": {
       "hash": "808068f2eafbb5b8eb123d433a49a8656495c59f4e54166544e70da10a53b030",
-      "last_checked": "2026-03-10T07:31:26.951509",
+      "last_checked": "2026-03-13T07:37:44.086282",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"896ca44ed5462a6c7cc784fdb2949d6e\"",
       "file_path": "documentation/FinanceKit/accountquery/init-sortdescriptorspredicatelimitoffset.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountcreditinformation/creditlimit.json": {
       "hash": "2042756bec21d49cef51e173d2d9275b8fc0c7d01ac8712f1ec5abaca06c55e0",
-      "last_checked": "2026-03-10T07:31:27.077823",
+      "last_checked": "2026-03-13T07:37:44.255425",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"aa05b20ba315f8934bbd8e3680b54d7b\"",
       "file_path": "documentation/FinanceKit/accountcreditinformation/creditlimit.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountcreditinformation/minimumnextpaymentamount.json": {
       "hash": "55fda128dbe78715a3ac3c4fe100ce2e71a9ccb9d50a63c23c09f9a90b9180ca",
-      "last_checked": "2026-03-10T07:31:27.192188",
+      "last_checked": "2026-03-13T07:37:44.414577",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b39aca64f90d5fc46ccdb3aa67ec3e02\"",
       "file_path": "documentation/FinanceKit/accountcreditinformation/minimumnextpaymentamount.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountcreditinformation/nextpaymentduedate.json": {
       "hash": "d5c96552f13d10714d576c54b5c3d82906b66f2ca1b0a57c37a955ed7c018c6b",
-      "last_checked": "2026-03-10T07:31:27.360544",
+      "last_checked": "2026-03-13T07:37:44.577266",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"df599f6c60aac7b7c2d20eb24a65dab8\"",
       "file_path": "documentation/FinanceKit/accountcreditinformation/nextpaymentduedate.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountcreditinformation/overduepaymentamount.json": {
       "hash": "414df63c8d6f4eaaef1890f778f325c923b62363b3b992ed4dc7b1c7e41e5027",
-      "last_checked": "2026-03-10T07:31:27.507873",
+      "last_checked": "2026-03-13T07:37:44.741146",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ecea712a4bcce8842bca23a2c62d16df\"",
       "file_path": "documentation/FinanceKit/accountcreditinformation/overduepaymentamount.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currencyamount/amount.json": {
       "hash": "81a72c6ffba85201959abf1cc391034e476b5e8ebc1f4fbee3d32cf0b01efbed",
-      "last_checked": "2026-03-10T07:31:27.651413",
+      "last_checked": "2026-03-13T07:37:44.912022",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"3afacf77db82b650f85d028ac71d1b29\"",
       "file_path": "documentation/FinanceKit/currencyamount/amount.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/currencyamount/currencycode.json": {
       "hash": "304cd2d9d35846f2c23888156610457d547a857892a8a8f9200839214164e2f7",
-      "last_checked": "2026-03-10T07:31:27.747702",
+      "last_checked": "2026-03-13T07:37:45.113030",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"7488cbf233f7325eac1adcafef375da4\"",
       "file_path": "documentation/FinanceKit/currencyamount/currencycode.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/accountid.json": {
       "hash": "4bcb8898954a355e37877570945551d1e7ed68c73bba18ce98b19ac172e18758",
-      "last_checked": "2026-03-10T07:31:27.869609",
+      "last_checked": "2026-03-13T07:37:45.280517",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ca4a90bebdf9d29d2ad24b0f451e0413\"",
       "file_path": "documentation/FinanceKit/transaction/accountid.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/creditdebitindicator.json": {
       "hash": "26e0be32badcbaaf0ff6037beb15ca0fa3c76e14d156ee41093c5c9139e38dcb",
-      "last_checked": "2026-03-10T07:31:27.990549",
+      "last_checked": "2026-03-13T07:37:45.429723",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"23f102c5321089888d2e8bb2ce7009bb\"",
       "file_path": "documentation/FinanceKit/transaction/creditdebitindicator.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/foreigncurrencyamount.json": {
       "hash": "c672ca1712ca5496a12369ec23bac32aa4f6fc45033a812dcfcd2ad221067df3",
-      "last_checked": "2026-03-10T07:31:28.065296",
+      "last_checked": "2026-03-13T07:37:45.583938",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a2144a560f3e3d8f506a33ebe59ecf50\"",
       "file_path": "documentation/FinanceKit/transaction/foreigncurrencyamount.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/foreigncurrencyexchangerate.json": {
       "hash": "87620da05201621dd7c5c58a84318d4e2b0d01af2a19f3bcce867cb2cbe2b092",
-      "last_checked": "2026-03-10T07:31:28.317784",
+      "last_checked": "2026-03-13T07:37:45.735419",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"96e901b05c4868ea16c92cfbfe5efa8b\"",
       "file_path": "documentation/FinanceKit/transaction/foreigncurrencyexchangerate.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/merchantcategorycode.json": {
       "hash": "4933ba302c310885867f5510b9a5afb4b7be77a64079574b59afe91862dd01ac",
-      "last_checked": "2026-03-10T07:31:28.532097",
+      "last_checked": "2026-03-13T07:37:46.061202",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"ab91943322bb25cd6488ca336c26e3c0\"",
       "file_path": "documentation/FinanceKit/transaction/merchantcategorycode.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/merchantname.json": {
       "hash": "62b1b0538d2c0ad57a6b225d2024622cc187e26bdc3ac8c44beb5f54c36e6e21",
-      "last_checked": "2026-03-10T07:31:28.658235",
+      "last_checked": "2026-03-13T07:37:46.208446",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"5c30aa181da241aeaaf63d84e4549cb5\"",
       "file_path": "documentation/FinanceKit/transaction/merchantname.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/originaltransactiondescription.json": {
       "hash": "11f8a16a40dae4296f1f232c769fee2b6e40faa169011dec9ea8850adfe2b24b",
-      "last_checked": "2026-03-10T07:31:28.790181",
+      "last_checked": "2026-03-13T07:37:46.388452",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"38bd92a7805f96a8c2f3d3c63c4eb3fd\"",
       "file_path": "documentation/FinanceKit/transaction/originaltransactiondescription.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/posteddate.json": {
       "hash": "6ee80b1e859b6133aca06d45eb4fd5e544fcd66794482ea2ab53a6b8fbd176ab",
-      "last_checked": "2026-03-10T07:31:28.871828",
+      "last_checked": "2026-03-13T07:37:46.538405",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"9c8c45b0ab348fcea0b8cc776474cc62\"",
       "file_path": "documentation/FinanceKit/transaction/posteddate.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/status.json": {
       "hash": "30a6193c2c56a7ee88676149317b9b4d5b53b109f6849581c06f0c36b980dc01",
-      "last_checked": "2026-03-10T07:31:28.991122",
+      "last_checked": "2026-03-13T07:37:46.707102",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"7ae1ef5774f9c9b93ea129155a785f4e\"",
       "file_path": "documentation/FinanceKit/transaction/status.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/transactionamount.json": {
       "hash": "352fcd3b81c35a5c7b2737532fd45f7710c32f914eda5ed99a0c42dd16734fcc",
-      "last_checked": "2026-03-10T07:31:29.118585",
+      "last_checked": "2026-03-13T07:37:46.854810",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"738a1efc0f7e42c96499ab74156c1e8e\"",
       "file_path": "documentation/FinanceKit/transaction/transactionamount.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/transactiondate.json": {
       "hash": "a43736f554703d38ff0bf22bf08d25640f0a72ddbfe9416ce93385330cb0c014",
-      "last_checked": "2026-03-10T07:31:29.232246",
+      "last_checked": "2026-03-13T07:37:47.026286",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"59ef469f71ac8f3724f0cdf08bc582f8\"",
       "file_path": "documentation/FinanceKit/transaction/transactiondate.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/transactiondescription.json": {
       "hash": "5058dd51ee7e7c2e53cd77019e1151321920cdb84d84d68d020130cd47699d7d",
-      "last_checked": "2026-03-10T07:31:29.352240",
+      "last_checked": "2026-03-13T07:37:47.199585",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"545a8ad12230b3ad979ed0d18916ccee\"",
       "file_path": "documentation/FinanceKit/transaction/transactiondescription.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/transactiontype.json": {
       "hash": "dd4821e91e0f3537b8b5b22a4a02ac5a098aceec29bf41166f9b7c3c5fe408b6",
-      "last_checked": "2026-03-10T07:31:29.493128",
+      "last_checked": "2026-03-13T07:37:47.351913",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"43546338e36434d8214dcf45437500a8\"",
       "file_path": "documentation/FinanceKit/transaction/transactiontype.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionquery/init(sortdescriptors:predicate:limit:offset:).json": {
       "hash": "bb6c604ef7815d0bb955fcd52f86c4977a9e8ca3895cc7f4d5de8fd4a7e73258",
-      "last_checked": "2026-03-10T07:31:29.648859",
+      "last_checked": "2026-03-13T07:37:47.534214",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"3240d8f79eaf22950793fe681e7ffa4d\"",
       "file_path": "documentation/FinanceKit/transactionquery/init-sortdescriptorspredicatelimitoffset.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionquery/predicate(formerchantcategorycodes:).json": {
       "hash": "f5b265e46ba5240d69e2f4b3e6f707257c92cf5fb7b5934f7ef6b51d079c47e2",
-      "last_checked": "2026-03-10T07:31:29.776613",
+      "last_checked": "2026-03-13T07:37:47.683059",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"9f67096bd0c2c22c22eb700d46840699\"",
       "file_path": "documentation/FinanceKit/transactionquery/predicate-formerchantcategorycodes.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionquery/predicate(forstatuses:).json": {
       "hash": "db37c6f503dbe3146940c81a3e239457544899bb81c3224dee3fc01c489a282c",
-      "last_checked": "2026-03-10T07:31:29.847455",
+      "last_checked": "2026-03-13T07:37:47.854898",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"94c22c0f58378fd316cae50cdbc0c469\"",
       "file_path": "documentation/FinanceKit/transactionquery/predicate-forstatuses.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionquery/predicate(fortransactiontypes:).json": {
       "hash": "c53e8157d9cc241ec3e7081896b14c880e78b6f3721c2140caa389307922b2b1",
-      "last_checked": "2026-03-10T07:31:29.964707",
+      "last_checked": "2026-03-13T07:37:48.018135",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"3340bbbff73a1356fa2772fd579feb4f\"",
       "file_path": "documentation/FinanceKit/transactionquery/predicate-fortransactiontypes.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/adjustment.json": {
       "hash": "0734070de792d31685bfb0494708e3ed9b6a8d9c3f6e7aacac8304316fdeb06b",
-      "last_checked": "2026-03-10T07:31:30.122793",
+      "last_checked": "2026-03-13T07:37:48.187185",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"fb32a8c0b32b3e97258d20348fcccea9\"",
       "file_path": "documentation/FinanceKit/transactiontype/adjustment.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/atm.json": {
       "hash": "568a074a336c696aa4c3c5af10bed2fb068da91257533c4c77f5aacd08edbab2",
-      "last_checked": "2026-03-10T07:31:30.289724",
+      "last_checked": "2026-03-13T07:37:48.310873",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"2afd2aad666750556af8bfb0c2894a82\"",
       "file_path": "documentation/FinanceKit/transactiontype/atm.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/billpayment.json": {
       "hash": "34d7efa89be442131b9e95852311057bbc6997a34ca1ac75ac9a64ed7e84f374",
-      "last_checked": "2026-03-10T07:31:30.363233",
+      "last_checked": "2026-03-13T07:37:48.471640",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"6ec4b1157893a044bf4e7e4e727d6ecb\"",
       "file_path": "documentation/FinanceKit/transactiontype/billpayment.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/check.json": {
       "hash": "c095a2e67fbd56dee63ba92245b5c9054e369cf47c414565f5354b4c7a30c867",
-      "last_checked": "2026-03-10T07:31:30.492843",
+      "last_checked": "2026-03-13T07:37:48.616548",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"48f271a7a34482928e3f0ea8e8861e26\"",
       "file_path": "documentation/FinanceKit/transactiontype/check.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/deposit.json": {
       "hash": "ec225339c2ba292699822f89a16cd5642de41201682f8ec15eba7c34c90ef097",
-      "last_checked": "2026-03-10T07:31:30.568950",
+      "last_checked": "2026-03-13T07:37:48.787736",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"e1786f8004f11d61a6b5c4af7e643089\"",
       "file_path": "documentation/FinanceKit/transactiontype/deposit.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/directdebit.json": {
       "hash": "f77f1d96f5c689031e34386391e5a30cdda70c73249ca70d0c206d5e4a4d75f0",
-      "last_checked": "2026-03-10T07:31:30.651143",
+      "last_checked": "2026-03-13T07:37:48.941764",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"65233650908027357a0e8c3813e0ca52\"",
       "file_path": "documentation/FinanceKit/transactiontype/directdebit.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/directdeposit.json": {
       "hash": "f33085dbf6ac9748d8b897430a33dd55df038d424afe26546684c79786cd7288",
-      "last_checked": "2026-03-10T07:31:30.731101",
+      "last_checked": "2026-03-13T07:37:49.097553",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"1f1f3e2e31e48b804579fc184970fef7\"",
       "file_path": "documentation/FinanceKit/transactiontype/directdeposit.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/dividend.json": {
       "hash": "0f1231d809da6a5cc964539ceae8aab7b640cc83bafbb9d35c3ca2743dbf61d0",
-      "last_checked": "2026-03-10T07:31:30.803435",
+      "last_checked": "2026-03-13T07:37:49.267469",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d1af89cbd080133c86ed5ff453b37e03\"",
       "file_path": "documentation/FinanceKit/transactiontype/dividend.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/fee.json": {
       "hash": "27e88547d8c11d98539e55f3b1de370da9929ef9325477d0a2ed18345aa811cd",
-      "last_checked": "2026-03-10T07:31:30.878606",
+      "last_checked": "2026-03-13T07:37:49.428267",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"af7cc6984b05e667ca822dc425ab420d\"",
       "file_path": "documentation/FinanceKit/transactiontype/fee.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/interest.json": {
       "hash": "0bbabcbeaaee3a6cb2d4878ba5114a52c9fa6ef816654218fc31fd5c0d02e2d2",
-      "last_checked": "2026-03-10T07:31:30.952266",
+      "last_checked": "2026-03-13T07:37:49.588703",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c890b2a8901fa24faf5ac07b09d2c481\"",
       "file_path": "documentation/FinanceKit/transactiontype/interest.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/loan.json": {
       "hash": "55d8c9166223f93e1d57190d8e324a80cc8cd0b9687d49bdb1104363360222af",
-      "last_checked": "2026-03-10T07:31:31.071938",
+      "last_checked": "2026-03-13T07:37:49.702761",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a1f821ce807e0931c06e5ef9e3b42a65\"",
       "file_path": "documentation/FinanceKit/transactiontype/loan.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/pointofsale.json": {
       "hash": "07f20b85b04c024611e15a0e5344ad4b395bfd0dc88a6f59147cebd3ae48e190",
-      "last_checked": "2026-03-10T07:31:31.196503",
+      "last_checked": "2026-03-13T07:37:49.875309",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"4dd4ec184e1280f562f6b57721eec25b\"",
       "file_path": "documentation/FinanceKit/transactiontype/pointofsale.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/refund.json": {
       "hash": "36cd007cef9bcb0916aefa68bd41d036fe0ac1164d72a9ebc5756a236eb7b676",
-      "last_checked": "2026-03-10T07:31:31.323314",
+      "last_checked": "2026-03-13T07:37:50.037625",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"867c34ce514c2ae1252dda1a54b8ac33\"",
       "file_path": "documentation/FinanceKit/transactiontype/refund.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/standingorder.json": {
       "hash": "9660264f9ef26a3e7433add3a3aa0aa06b4fe94a81b6bf1c3948408279c3478f",
-      "last_checked": "2026-03-10T07:31:31.411639",
+      "last_checked": "2026-03-13T07:37:50.210666",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"bf359bca497a6e85fd8222a5a42feb31\"",
       "file_path": "documentation/FinanceKit/transactiontype/standingorder.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/transfer.json": {
       "hash": "bd831603401257fbf6876fb8d7c19f73186edac83c398d0d82458b6b3da46597",
-      "last_checked": "2026-03-10T07:31:31.487868",
+      "last_checked": "2026-03-13T07:37:50.402166",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c22d9c57a217a5151838283794c80841\"",
       "file_path": "documentation/FinanceKit/transactiontype/transfer.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/unknown.json": {
       "hash": "28bce5ee5939acc23c1294e62da25f29a150b14a1cdd144a0b8c1042455b2946",
-      "last_checked": "2026-03-10T07:31:31.632873",
+      "last_checked": "2026-03-13T07:37:50.519612",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"2030ccdc945bd07fdd8eceb149f47bfc\"",
       "file_path": "documentation/FinanceKit/transactiontype/unknown.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactiontype/withdrawal.json": {
       "hash": "a9f4b5922bb07cc018a02072566413d464f16278286d34218914c56fe1a01317",
-      "last_checked": "2026-03-10T07:31:31.719628",
+      "last_checked": "2026-03-13T07:37:50.712702",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"194b54885312c27fb92636ae1c2278ec\"",
       "file_path": "documentation/FinanceKit/transactiontype/withdrawal.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionstatus/authorized.json": {
       "hash": "8ffb9ce3267de8187322adf376671ea4a9cb5f2e26ab674957779dbdbe606b73",
-      "last_checked": "2026-03-10T07:31:31.841882",
+      "last_checked": "2026-03-13T07:37:50.889530",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c786935289eaba574a480ff1db2c835f\"",
       "file_path": "documentation/FinanceKit/transactionstatus/authorized.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionstatus/booked.json": {
       "hash": "3add491203dbc735c61bab4154316b23d426f82624a250e925f57de22f9c5300",
-      "last_checked": "2026-03-10T07:31:31.914500",
+      "last_checked": "2026-03-13T07:37:51.045417",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"760ce448a0e9cfe5e225baceb33b88b3\"",
       "file_path": "documentation/FinanceKit/transactionstatus/booked.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionstatus/memo.json": {
       "hash": "34218f8fada2a7e8b4d37e78f62b88b392a9f213706b12e27247052c6a54e8ac",
-      "last_checked": "2026-03-10T07:31:31.991079",
+      "last_checked": "2026-03-13T07:37:51.213729",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b5403362318977eadb010126124fbdf1\"",
       "file_path": "documentation/FinanceKit/transactionstatus/memo.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionstatus/pending.json": {
       "hash": "315af7e1e544ab2a2110f635c2f3d7247a5f813e1007e89214cfc55040c5ed55",
-      "last_checked": "2026-03-10T07:31:32.107556",
+      "last_checked": "2026-03-13T07:37:51.352598",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"94d31b283abdc420a559840eef953977\"",
       "file_path": "documentation/FinanceKit/transactionstatus/pending.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transactionstatus/rejected.json": {
       "hash": "71ecd538033b0da92e56184c3a284484363e9c311939e2c4866ae438209c1af6",
-      "last_checked": "2026-03-10T07:31:32.225111",
+      "last_checked": "2026-03-13T07:37:51.498615",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"df47f7e8f35a4160e21f41cc06d2e665\"",
       "file_path": "documentation/FinanceKit/transactionstatus/rejected.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/historytoken/init(from:).json": {
       "hash": "e6fb66b69e98e5019eb7c35c2e77c59366c3091c0c020055772c5eb66a617b22",
-      "last_checked": "2026-03-10T07:31:32.305194",
+      "last_checked": "2026-03-13T07:37:51.679564",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"698a27903b027b978adbf0fec941c67f\"",
       "file_path": "documentation/FinanceKit/financestore/historytoken/init-from.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/historytoken/encode(to:).json": {
       "hash": "3a6e783d2c15986106734f19e8bbd95a69d34bd778ae26848aa1c23c43d3a997",
-      "last_checked": "2026-03-10T07:31:32.399368",
+      "last_checked": "2026-03-13T07:37:51.847975",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"0f89cd5da74046de3187ea392fa88601\"",
       "file_path": "documentation/FinanceKit/financestore/historytoken/encode-to.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode/init(rawvalue:).json": {
       "hash": "f8157a2edd85e5ffe23c3bd2422264ce5c45152f466e74e6128e33bff740e738",
-      "last_checked": "2026-03-10T07:31:32.476699",
+      "last_checked": "2026-03-13T07:37:52.002518",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"73db6a47cfb9b9b4e55f6b2c6bfe2548\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode/init-rawvalue.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode/customstringconvertible-implementations.json": {
       "hash": "701692f28149a6e35a8f7702375b69b7ba2bca572f508adb669c3d3cf602b394",
-      "last_checked": "2026-03-10T07:31:32.645443",
+      "last_checked": "2026-03-13T07:37:52.323480",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"54a7766237cfb9dc676f03319861feba\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode/customstringconvertible-implementations.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode/losslessstringconvertible-implementations.json": {
       "hash": "92641b594d5019ced4e7ad7ec777534cb5d2309b77a7701318d06ed18d6bee49",
-      "last_checked": "2026-03-10T07:31:32.767397",
+      "last_checked": "2026-03-13T07:37:52.471486",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"96d13dafaa9d1cd619e3c89b264842a8\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode/losslessstringconvertible-implementations.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/datarestricted(_:).json": {
       "hash": "78c962136b2b3f1d573261f928d018083ccbe9a581623054be75cf573a98cc43",
-      "last_checked": "2026-03-10T07:31:32.884809",
+      "last_checked": "2026-03-13T07:37:52.626843",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"40db6e4e246d506e472330c54e4059eb\"",
       "file_path": "documentation/FinanceKit/financeerror/datarestricted.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/historytokeninvalid.json": {
       "hash": "008d14ad56b53a3ed46655dbad3fc0983837bcb96dcf764889df5e370535de16",
-      "last_checked": "2026-03-10T07:31:33.005024",
+      "last_checked": "2026-03-13T07:37:52.743401",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c2c242d948a406693cc0fd14c6ca5c85\"",
       "file_path": "documentation/FinanceKit/financeerror/historytokeninvalid.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/unknown.json": {
       "hash": "bcadf7bc1eed4188aa6810b11bbe1a455e6f6a33af88b73746f7d4508d778786",
-      "last_checked": "2026-03-10T07:31:33.124895",
+      "last_checked": "2026-03-13T07:37:52.929886",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"f2dfc2270609820407e08f0a69fba4b5\"",
       "file_path": "documentation/FinanceKit/financeerror/unknown.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/errorcode.json": {
       "hash": "dd8eb3e20baab222c8d4e40024cad2c502e49b86c7affe2b5b4ad3db8e47754e",
-      "last_checked": "2026-03-10T07:31:33.243292",
+      "last_checked": "2026-03-13T07:37:53.101034",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"e6398d392ac6b41a44e2d12f891e3679\"",
       "file_path": "documentation/FinanceKit/financeerror/errorcode.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/errordescription.json": {
       "hash": "5981b7527e2cdafe92956cd4f7f17a468ba54d618b07b77d52a90a18b57da6a3",
-      "last_checked": "2026-03-10T07:31:33.363884",
+      "last_checked": "2026-03-13T07:37:53.214041",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"f01296f4006b4586e8d8a1d8f700dfcb\"",
       "file_path": "documentation/FinanceKit/financeerror/errordescription.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/erroruserinfo.json": {
       "hash": "642b968b7e60924fc63adae789975ca0c48a279ca2e26cfba2b88a14da80ac15",
-      "last_checked": "2026-03-10T07:31:33.484763",
+      "last_checked": "2026-03-13T07:37:53.400993",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"489b7eda0262885c7987cb2b085f82d8\"",
       "file_path": "documentation/FinanceKit/financeerror/erroruserinfo.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/failurereason.json": {
       "hash": "fe0c530b24efc42c176966881d36d45cfa5d838e5c2988841ca2b908e113024a",
-      "last_checked": "2026-03-10T07:31:33.600614",
+      "last_checked": "2026-03-13T07:37:53.560532",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"966880b32fa541dcc1f2a3a1b6a7cdb9\"",
       "file_path": "documentation/FinanceKit/financeerror/failurereason.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financeerror/errordomain.json": {
       "hash": "429dcda65aa13961d0ad5a6d0fccebdae2524d5ff6f0665a84541d21f5f177e8",
-      "last_checked": "2026-03-10T07:31:33.675801",
+      "last_checked": "2026-03-13T07:37:53.678982",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d979e4934c9571d6f53b2a036ba2d878\"",
       "file_path": "documentation/FinanceKit/financeerror/errordomain.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/backgrounddeliveryextensionproviding/didreceivedata(for:).json": {
       "hash": "8e1ddcdb6dda923957a07562f0515b314ec7339e5ce74fbe7b040159ff89cd5d",
-      "last_checked": "2026-03-10T07:31:33.795680",
+      "last_checked": "2026-03-13T07:37:53.863900",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b09970254d5549f6dc57c07708c53ce5\"",
       "file_path": "documentation/FinanceKit/backgrounddeliveryextensionproviding/didreceivedata-for.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/backgrounddeliveryextensionproviding/willterminate().json": {
       "hash": "0ee7c15934568ff4df797643f27659dd596759cf7599588c9bae67935d147171",
-      "last_checked": "2026-03-10T07:31:33.917638",
+      "last_checked": "2026-03-13T07:37:54.026837",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"4f6829f6342cfd84238613bd6ce0ad83\"",
       "file_path": "documentation/FinanceKit/backgrounddeliveryextensionproviding/willterminate.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/containsorderresult/exists.json": {
       "hash": "e29a272c6886fe13200a06be20dbc3c3acfe1bcbc39fa2442e8c290088c8fc09",
-      "last_checked": "2026-03-10T07:31:34.037570",
+      "last_checked": "2026-03-13T07:37:54.188654",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"9adde307c4f074166c5f9af0ebb5d374\"",
       "file_path": "documentation/FinanceKit/financestore/containsorderresult/exists.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/containsorderresult/newerexists.json": {
       "hash": "614c1cbf25daecaa1cb8d2a3b8ddaf70962ed9d8cb560c620ce548362cc825a0",
-      "last_checked": "2026-03-10T07:31:34.128672",
+      "last_checked": "2026-03-13T07:37:54.327703",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"8678641a9df23f1788a157ea08b49ed2\"",
       "file_path": "documentation/FinanceKit/financestore/containsorderresult/newerexists.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/containsorderresult/notfound.json": {
       "hash": "5442420a3497dd5f3657a9a0ca7eba4ade186c0dafea6bbfecdf7e1f832e6027",
-      "last_checked": "2026-03-10T07:31:34.202664",
+      "last_checked": "2026-03-13T07:37:54.440213",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"0ef0358b0b4bcc5494223674376232a2\"",
       "file_path": "documentation/FinanceKit/financestore/containsorderresult/notfound.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/containsorderresult/olderexists.json": {
       "hash": "79ccae1d242e68faa37ad7edbb9a9971e1f20680373c4839cf5e7cf6e008b800",
-      "last_checked": "2026-03-10T07:31:34.320285",
+      "last_checked": "2026-03-13T07:37:54.587822",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"857ed07a5df2c5050717d33d2b87282f\"",
       "file_path": "documentation/FinanceKit/financestore/containsorderresult/olderexists.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/datatype/financialdata.json": {
       "hash": "e6660e6999db3cfad61f8c61d3108476185443f3ae623db6c4195a45ad6dc3b0",
-      "last_checked": "2026-03-10T07:31:34.474497",
+      "last_checked": "2026-03-13T07:37:54.741510",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"b4e8365417741cc14c5ebe239feb746f\"",
       "file_path": "documentation/FinanceKit/financestore/datatype/financialdata.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/datatype/orders.json": {
       "hash": "68fffd251464b41bde7c5dc7332e35e37da6ee2a3e86a8e7ac26543f2bd1aa4a",
-      "last_checked": "2026-03-10T07:31:34.549349",
+      "last_checked": "2026-03-13T07:37:54.857152",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"4b541a2b88ca3d67f719bdcab494dedf\"",
       "file_path": "documentation/FinanceKit/financestore/datatype/orders.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/saveorderresult/added.json": {
       "hash": "898196899f65b641a4f3556070fc696b918d7d0226456093d15fa90fe6d1883e",
-      "last_checked": "2026-03-10T07:31:34.643001",
+      "last_checked": "2026-03-13T07:37:55.025093",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d16960f312b59615efa2da100a710e96\"",
       "file_path": "documentation/FinanceKit/financestore/saveorderresult/added.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/saveorderresult/cancelled.json": {
       "hash": "66aae1fdd56db0b273825507a2efc3bed31c5aa754b79a67c9e1d0bf39e8ac35",
-      "last_checked": "2026-03-10T07:31:34.762221",
+      "last_checked": "2026-03-13T07:37:55.204197",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"11e9518e340e10c4afde76f3621522d0\"",
       "file_path": "documentation/FinanceKit/financestore/saveorderresult/cancelled.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/saveorderresult/newerexisting.json": {
       "hash": "b20ff712a8ea96d3c9da5eb4b23440209624f703900a8a0ed6771139e2cf550d",
-      "last_checked": "2026-03-10T07:31:34.846208",
+      "last_checked": "2026-03-13T07:37:55.353156",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"991f4f58e599096f0ad9fbca03c744bc\"",
       "file_path": "documentation/FinanceKit/financestore/saveorderresult/newerexisting.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/backgrounddatatype/accountbalances.json": {
       "hash": "a36a87deadbc85b2938a5edd1215ea353d30ef3afad66f5bc93b9a88271742fb",
-      "last_checked": "2026-03-10T07:31:34.946202",
+      "last_checked": "2026-03-13T07:37:55.513265",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"f71020c2f4db3c43d3325576c76179b2\"",
       "file_path": "documentation/FinanceKit/financestore/backgrounddatatype/accountbalances.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/backgrounddatatype/accounts.json": {
       "hash": "787f6165f4713da4d2eb8cb34e94a06f484169e48df0c455c06d0a5d9207c3b0",
-      "last_checked": "2026-03-10T07:31:35.018451",
+      "last_checked": "2026-03-13T07:37:55.676533",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"a4638f798b5caf5ab60125fad98b12a2\"",
       "file_path": "documentation/FinanceKit/financestore/backgrounddatatype/accounts.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/backgrounddatatype/transactions.json": {
       "hash": "83264ea6d12367d23147aefcac5573cd42b900ade6c2358ed56413f8b944ab4b",
-      "last_checked": "2026-03-10T07:31:35.095572",
+      "last_checked": "2026-03-13T07:37:55.826338",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d11f40f1f44608d15bff9c0995c9eb32\"",
       "file_path": "documentation/FinanceKit/financestore/backgrounddatatype/transactions.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/updatefrequency/daily.json": {
       "hash": "f5db353caba38b70869843ea9a6d6da9f6de31cf2d7215e09547f58cb4f79015",
-      "last_checked": "2026-03-10T07:31:35.177402",
+      "last_checked": "2026-03-13T07:37:55.946005",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"93cdbb8e4a307c48be6984e351201850\"",
       "file_path": "documentation/FinanceKit/financestore/updatefrequency/daily.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/updatefrequency/hourly.json": {
       "hash": "a462826fcfa8bcba4daf52991efef0eb8a1a48b3075a9f11374cd04277f0d474",
-      "last_checked": "2026-03-10T07:31:35.309372",
+      "last_checked": "2026-03-13T07:37:56.114697",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"fe8d5dac8a63c4ad9547c5150556e663\"",
       "file_path": "documentation/FinanceKit/financestore/updatefrequency/hourly.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/updatefrequency/weekly.json": {
       "hash": "2fa1f0de6e9b801d5dd27d7e3bd4434d58e174ade96228675befd2fa85f5f220",
-      "last_checked": "2026-03-10T07:31:35.387282",
+      "last_checked": "2026-03-13T07:37:56.213876",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"22551d217f72acc21a387b99751f63ef\"",
       "file_path": "documentation/FinanceKit/financestore/updatefrequency/weekly.md"
     },
@@ -4631,9 +4631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/changes/deleted.json": {
       "hash": "eaa460e0af00f2fe601698e27621b11ef58fb1e6f2313d2e4b1fa42b80b6b4f7",
-      "last_checked": "2026-03-10T07:31:35.505997",
+      "last_checked": "2026-03-13T07:37:56.348027",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"190eecab724bef8e296a0b34ad737eb4\"",
       "file_path": "documentation/FinanceKit/financestore/changes/deleted.md"
     },
@@ -4647,9 +4647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/changes/inserted.json": {
       "hash": "e47bb5fe198241302f2f4fe567aa6c60d30ab4baa1f58e8bb1093ab77ba1fbbe",
-      "last_checked": "2026-03-10T07:31:35.593421",
+      "last_checked": "2026-03-13T07:37:56.481921",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"08ffbe4ff082cb17929d118ef4a59d87\"",
       "file_path": "documentation/FinanceKit/financestore/changes/inserted.md"
     },
@@ -4663,9 +4663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/changes/newtoken.json": {
       "hash": "71c4dcc1a78019a5b84432c83e74b84db545db8f6127b3ac7aae09a6b0d27e99",
-      "last_checked": "2026-03-10T07:31:35.715856",
+      "last_checked": "2026-03-13T07:37:56.652647",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"6b2b2402c8f2cee9841e5945de617f37\"",
       "file_path": "documentation/FinanceKit/financestore/changes/newtoken.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/changes/updated.json": {
       "hash": "85d806293d753edc3fd0d1a5346dcb207e143f5fde223f29178cc086df25c3ab",
-      "last_checked": "2026-03-10T07:31:35.834715",
+      "last_checked": "2026-03-13T07:37:56.810523",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"32928bb2d56f68b10a9175e899f9abc2\"",
       "file_path": "documentation/FinanceKit/financestore/changes/updated.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/history/iterator.json": {
       "hash": "1c5a23473d7a045b2ee4ed09fe98b15669faa82c14627ce5b16e6030aaf2fc42",
-      "last_checked": "2026-03-10T07:31:35.950558",
+      "last_checked": "2026-03-13T07:37:56.977424",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"caa11ac1649ca966ed1c2987f5704a3f\"",
       "file_path": "documentation/FinanceKit/financestore/history/iterator.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/history/makeasynciterator().json": {
       "hash": "a69fb6eabf186476382c8b8836de9e5023eec6b1782e91cf3fd38f293bca9097",
-      "last_checked": "2026-03-10T07:31:36.068004",
+      "last_checked": "2026-03-13T07:37:57.097780",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"d89cadf08e1144262996d699391ff9a8\"",
       "file_path": "documentation/FinanceKit/financestore/history/makeasynciterator.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/history/asynciterator.json": {
       "hash": "1817dddf27eb398040645593fbfdb3036335390e60a048c069bb9ae601c24cdd",
-      "last_checked": "2026-03-10T07:31:36.142266",
+      "last_checked": "2026-03-13T07:37:57.268877",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c6948147e692814d455a9de33e678d99\"",
       "file_path": "documentation/FinanceKit/financestore/history/asynciterator.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/history/element.json": {
       "hash": "2ae31b7be171f73ff126699eab9ecd511bec9b35186c67dd82ffececb1bf7c61",
-      "last_checked": "2026-03-10T07:31:36.260202",
+      "last_checked": "2026-03-13T07:37:57.388841",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"c89f6fd04e7eac5622ce46b2d498e78e\"",
       "file_path": "documentation/FinanceKit/financestore/history/element.md"
     },
@@ -5207,9 +5207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode/description.json": {
       "hash": "1fbc4074d1d7f26c5d7fc859febd16140285ba95cbed49801c363e7eb8b62fad",
-      "last_checked": "2026-03-10T07:31:36.380070",
+      "last_checked": "2026-03-13T07:37:57.542164",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"efe11196fd05d0f7d63fbb67525f2aa8\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode/description.md"
     },
@@ -5239,9 +5239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode/init(_:).json": {
       "hash": "17e5ab7b43d05ba39a0c477ad1ccdda6e283deb7202948f6dfc379ed53f93957",
-      "last_checked": "2026-03-10T07:31:36.505929",
+      "last_checked": "2026-03-13T07:37:57.715391",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"e93c0d90c8afac342d2fc67760b6b7d4\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode/init.md"
     },
@@ -5479,9 +5479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/financestore/history/iterator/next().json": {
       "hash": "448177814f9dc0450588b7bef2331349114b603acbb95aa51eecb8235a1ee9b6",
-      "last_checked": "2026-03-10T07:31:36.632503",
+      "last_checked": "2026-03-13T07:37:57.834034",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"21e446a82d95fe03f29fd1fe5b4ff925\"",
       "file_path": "documentation/FinanceKit/financestore/history/iterator/next.md"
     },
@@ -5863,9 +5863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/assetaccount/id.json": {
       "hash": "4151c5d1bc5de8bc47be49f3b842c89a8cc16f1b821f1cb44a060d8b0cc2a22b",
-      "last_checked": "2026-03-10T07:31:22.035598",
+      "last_checked": "2026-03-13T07:37:37.395234",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"888dc5df008e6bff190f86191ca7c3eb\"",
       "file_path": "documentation/FinanceKit/assetaccount/id.md"
     },
@@ -5879,9 +5879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/liabilityaccount/id.json": {
       "hash": "2abc7b3f0de38568fe2f22f95476978ddd6877d1941fe5f1b301def2e0c4b9b5",
-      "last_checked": "2026-03-10T07:31:23.043314",
+      "last_checked": "2026-03-13T07:37:38.563085",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"18824c8ea4a4f79492721d16bbb0c22f\"",
       "file_path": "documentation/FinanceKit/liabilityaccount/id.md"
     },
@@ -5895,9 +5895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/account/id.json": {
       "hash": "7f8050803a1bed495653f44cda5ace2e0cbe712003836065dd1410396e53a6d5",
-      "last_checked": "2026-03-10T07:31:24.277156",
+      "last_checked": "2026-03-13T07:37:40.026998",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"4fa11a46b0584ae6e2eb14feb4ed5896\"",
       "file_path": "documentation/FinanceKit/account/id.md"
     },
@@ -5911,9 +5911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/accountbalance/id.json": {
       "hash": "5e89a1a86c167f6db877a4fd406883f94306a9958d5cf5a3a1ce33437c017717",
-      "last_checked": "2026-03-10T07:31:25.406992",
+      "last_checked": "2026-03-13T07:37:41.590005",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"0405fefb1e4272c7a989adc2477c3359\"",
       "file_path": "documentation/FinanceKit/accountbalance/id.md"
     },
@@ -5927,9 +5927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/transaction/id.json": {
       "hash": "ce49226b3c1af09fb0a22803cb955fa002089b82b9c8bda6a8f17cd4c774e6ea",
-      "last_checked": "2026-03-10T07:31:28.441218",
+      "last_checked": "2026-03-13T07:37:45.904265",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"37ff05a0535feaa289a46a99752d1443\"",
       "file_path": "documentation/FinanceKit/transaction/id.md"
     },
@@ -5943,9 +5943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekit/merchantcategorycode/rawvalue.json": {
       "hash": "ed8e937686db6ee4894ee39367298237d9421a5adb2720590a206d7274ee7844",
-      "last_checked": "2026-03-10T07:31:32.562737",
+      "last_checked": "2026-03-13T07:37:52.170725",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:31:14.909796",
+      "session_id": "2026-03-13T07:37:26.529337",
       "etag": "W/\"17bacba1386e99d47c0d7d54074fbf8d\"",
       "file_path": "documentation/FinanceKit/merchantcategorycode/rawvalue.md"
     },

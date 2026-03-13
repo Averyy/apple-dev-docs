@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:26:39.356052",
+    "last_updated": "2026-03-13T07:31:07.958625",
     "total_pages": 1882,
-    "session_id": "2026-03-10T07:26:22.221863"
+    "session_id": "2026-03-13T07:30:51.524591"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/JournalingSuggestions.json": {
       "hash": "c647f85fac97841c567936c97f068015397e34b458790107ebd2d69ac5d83479",
-      "last_checked": "2026-03-10T07:26:22.689010",
+      "last_checked": "2026-03-13T07:30:51.790711",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"de9b23681696694083371134159e7b3d\"",
       "file_path": "documentation/JournalingSuggestions/JournalingSuggestions.md"
     },
     "https://developer.apple.com/documentation/JournalingSuggestions": {
       "hash": "c647f85fac97841c567936c97f068015397e34b458790107ebd2d69ac5d83479",
-      "last_checked": "2026-03-10T07:26:22.577492",
+      "last_checked": "2026-03-13T07:30:51.675025",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"de9b23681696694083371134159e7b3d\"",
       "file_path": "documentation/JournalingSuggestions/JournalingSuggestions.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/presenting-the-suggestions-picker-and-processing-a-selection.json": {
       "hash": "a550fcdb570cc1b32a87ae86176e2f21910c9c2f56e9b18ca5cf2c28edda9886",
-      "last_checked": "2026-03-10T07:26:23.119468",
+      "last_checked": "2026-03-13T07:30:52.052496",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"a003ca4bd7e86ba114c59e6e82d15893\"",
       "file_path": "documentation/JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker.json": {
       "hash": "b6539c004ee21dd62bebe339ab1bd9adf3ec4579b32e7e440052aefcfccfc76a",
-      "last_checked": "2026-03-10T07:26:23.369508",
+      "last_checked": "2026-03-13T07:30:52.193546",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"b28575832bf046f5715f90febe448fc4\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion.json": {
       "hash": "2bc23de4af4e4c4869e3d67f6ead06906fba6d647c6714405b951b2963dad2db",
-      "last_checked": "2026-03-10T07:26:23.623995",
+      "last_checked": "2026-03-13T07:30:52.483754",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"912da904d1a1cbb658b3778f548fd4f5\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration.json": {
       "hash": "92a291e773e8516d97f30a36d784e87ae8dca95cf1f7d6d1003ddc1169fd7f5e",
-      "last_checked": "2026-03-10T07:26:24.530990",
+      "last_checked": "2026-03-13T07:30:53.057347",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"6e3e2d4455d55c60d353c5339d2958c2\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionasset.json": {
       "hash": "c15023aa4927268ffcc4310cfbd83b5b502ce4e4f835410758ac0b32bf3f357f",
-      "last_checked": "2026-03-10T07:26:23.748040",
+      "last_checked": "2026-03-13T07:30:52.606849",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"35a11d475a85b95cf292043886007a52\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionasset.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionpresentationtoken.json": {
       "hash": "77aa7a1b61bf3796a1fee852b9d2fd3209b679506bcb403ffe72f07f40f9a6f7",
-      "last_checked": "2026-03-10T07:26:24.269310",
+      "last_checked": "2026-03-13T07:30:52.911012",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"a23117256415a8212f3e3042144c8e00\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionpresentationtoken.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker/init(label:oncompletion:).json": {
       "hash": "e284fdea139b61711f9d8e64f93cdd935573c15d598b5854f4f49a8dcb85f811",
-      "last_checked": "2026-03-10T07:26:24.788153",
+      "last_checked": "2026-03-13T07:30:53.162375",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"95d10e18255767003e5625e0c1bb9bd4\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-labeloncompletion.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker/init(_:oncompletion:)-7uxov.json": {
       "hash": "cf0da2c2e4a46ad6ebeb3ff0d4534947314279eef5f645b4d7bf7027460acaad",
-      "last_checked": "2026-03-10T07:26:24.908082",
+      "last_checked": "2026-03-13T07:30:53.501548",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"27e4ba1b3dcbf9044b9aa079b6cfc356\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-oncompletion-7uxov.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker/init(_:oncompletion:)-4e82p.json": {
       "hash": "0437263feed2eddb91254e46d80338db8afb89f029398c59f08978ab81ec7d1d",
-      "last_checked": "2026-03-10T07:26:25.165693",
+      "last_checked": "2026-03-13T07:30:53.671319",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"1ae96404e54acdf860e58b9d1fc5779f\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-oncompletion-4e82p.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/date.json": {
       "hash": "0ed104c4e11b220a3d27b3f266938d8cbbdc267fe72ddcd36ad6d677591b9a25",
-      "last_checked": "2026-03-10T07:26:25.282910",
+      "last_checked": "2026-03-13T07:30:53.780643",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"fae45738a4d73c83c9d642a6573c81be\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/date.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/title.json": {
       "hash": "de62c12ebc882276855b08b6693eb8392c52f2859851c57f2d62a2c24f7e7599",
-      "last_checked": "2026-03-10T07:26:25.401623",
+      "last_checked": "2026-03-13T07:30:53.918191",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"eb8e07cb18e0a32faf86f100c70ea67c\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/title.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/items.json": {
       "hash": "35a07b36e8a28dec8d8975cd71eb9bb0f15d91641efcf8be9c88c8c0472ff5e9",
-      "last_checked": "2026-03-10T07:26:25.519011",
+      "last_checked": "2026-03-13T07:30:54.045987",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"590c3a564c6da0d37fd0e7d00ab8d457\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/items.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent.json": {
       "hash": "8908d33a3998d510a29e78e849751f9ca2860a9428d5e05a55cd3535ab57ee39",
-      "last_checked": "2026-03-10T07:26:25.636790",
+      "last_checked": "2026-03-13T07:30:54.169584",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"1ada51d74bbacd65fd40207275a10d95\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/content(fortype:).json": {
       "hash": "2f9cbb2bc7cbbbc9ec50024a5e5a82153fe318d66ea80f3f494e0073cfdccfc3",
-      "last_checked": "2026-03-10T07:26:25.756035",
+      "last_checked": "2026-03-13T07:30:54.311099",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"4e30332ca0818fa1dcf5226e9ba8d7fd\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/content-fortype.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/contact.json": {
       "hash": "95989faac78620d24b9776a9fbb23856f3ec96d4cf530852c908fdf690680211",
-      "last_checked": "2026-03-10T07:26:26.017627",
+      "last_checked": "2026-03-13T07:30:54.430762",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"d357e2bacc22f717eb52f73d78f4f372\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/contact.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/genericmedia.json": {
       "hash": "f0e9b681d6cc1958e81b23c064c75a195a47868c40689001d21468a503d5b838",
-      "last_checked": "2026-03-10T07:26:26.537446",
+      "last_checked": "2026-03-13T07:30:54.864232",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"05f0ddc8ac96693ef88f55638544db45\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/genericmedia.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/livephoto.json": {
       "hash": "bf9b9c5e4d3eb47851d73b5c4370a1a4c813da74b9e215e361d3547287e8da08",
-      "last_checked": "2026-03-10T07:26:26.786555",
+      "last_checked": "2026-03-13T07:30:55.015046",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"36cd64e349d112a4e57cc06fd4f38424\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/livephoto.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location.json": {
       "hash": "2d7bd526c802b5f2641e6dfc74fc48fc4b932827ff7bf9acb0e33feb88721da5",
-      "last_checked": "2026-03-10T07:26:27.041097",
+      "last_checked": "2026-03-13T07:30:55.149243",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"0aa0780c999ba78996b18d47c638dfbb\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/locationgroup.json": {
       "hash": "050d9ba3b51827705acaa8273760dcdfb65b0bb83187e1638dd4cca85b85223e",
-      "last_checked": "2026-03-10T07:26:27.298826",
+      "last_checked": "2026-03-13T07:30:55.419796",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"5984ed36e9c40a9820d9a97b0a26696c\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/locationgroup.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity.json": {
       "hash": "2d8fba4d0e9ed02c819ebdcef61cefd0b28b82c46c0db7c712c63ac749f70fda",
-      "last_checked": "2026-03-10T07:26:27.415624",
+      "last_checked": "2026-03-13T07:30:55.572438",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"5b588d63053a5e9592baa5bfdb61d16d\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/photo.json": {
       "hash": "4c788636393939275fe21de9bdf6caabb8a7c7506f8a7748f1a938c61949102c",
-      "last_checked": "2026-03-10T07:26:27.701981",
+      "last_checked": "2026-03-13T07:30:55.855915",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"9d673d9aa18808da952f47c3d9b360ad\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/photo.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/podcast.json": {
       "hash": "185a68cd13c2f099f15e21bde3a8e91cddb0f6cd1446b64dbb677c28e6e6fbd5",
-      "last_checked": "2026-03-10T07:26:27.831006",
+      "last_checked": "2026-03-13T07:30:56.014336",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"18166353d133b0b30bc5133eac3a15a1\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/podcast.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/reflection.json": {
       "hash": "7401e2b218d4be6b3167969ffbf0df63fc091e75acb14e31b553b7c193f8fb0f",
-      "last_checked": "2026-03-10T07:26:28.087859",
+      "last_checked": "2026-03-13T07:30:56.151700",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"0abb52926c7e9895e73e864637e38c51\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/reflection.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/stateofmind.json": {
       "hash": "d1ce2b37ac1971a614ab82896c205a908f35cd74dc380de844f1b2ebc002ca63",
-      "last_checked": "2026-03-10T07:26:28.204214",
+      "last_checked": "2026-03-13T07:30:56.310752",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"a0974882c80f6c2bb67d870ed7947d29\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/stateofmind.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/song.json": {
       "hash": "fcb72c3313d00164afed0830d70befdca1f5d8d66c3d6f8e4cc53c164356129b",
-      "last_checked": "2026-03-10T07:26:28.322393",
+      "last_checked": "2026-03-13T07:30:56.458481",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"1f41a8493f433a4bcff9032abf5fc1bb\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/song.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/video.json": {
       "hash": "cde214b54195a0baa5911a0285dc5771b3b5c8ec2025a3a3aaab45af29f798ff",
-      "last_checked": "2026-03-10T07:26:28.439777",
+      "last_checked": "2026-03-13T07:30:56.563514",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"405a41f1eee3dff99ad886df246ebe73\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/video.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout.json": {
       "hash": "d2d8bba81bb8c140e5fb2e355df5fc3f27eaed7f54783090df996c6641365464",
-      "last_checked": "2026-03-10T07:26:28.560072",
+      "last_checked": "2026-03-13T07:30:56.687934",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"06534bda6b4173f4502ff59233f75586\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workoutgroup.json": {
       "hash": "8411328122544a603c23f3aab7825c42bfe8a68205a1373cad98614489ff0cec",
-      "last_checked": "2026-03-10T07:26:28.675557",
+      "last_checked": "2026-03-13T07:30:56.866615",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"6d4911bce1e42f4c9284c2f97cbbbea6\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workoutgroup.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter.json": {
       "hash": "5c2c426874e8168ed00ea936b9141f64ca533b46765bb91e206069511c11e58e",
-      "last_checked": "2026-03-10T07:26:26.283226",
+      "last_checked": "2026-03-13T07:30:54.721839",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"2b61cd4022233b3178b4c83eb1f09009\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/init().json": {
       "hash": "93f3215caa09b53d41891ff885c234e9c55e5238360e0c79af0d64939a3f33ad",
-      "last_checked": "2026-03-10T07:26:29.323264",
+      "last_checked": "2026-03-13T07:30:57.433616",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"08b5c1b8feb19d5e4bde360164e1a1e6\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/init.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.property.json": {
       "hash": "ee4ef66f572a1b86010502195a5a61399332738bb5c58bf48ac4648193156b68",
-      "last_checked": "2026-03-10T07:26:29.440056",
+      "last_checked": "2026-03-13T07:30:57.535902",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"45965cc6dcb1c11728c9dbcfeff736dc\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swiftproperty.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum.json": {
       "hash": "52980a93bc0659dfb8d7339b9f164e4b08903e0e3a075d45fa5bb8c2593a8e62",
-      "last_checked": "2026-03-10T07:26:29.561792",
+      "last_checked": "2026-03-13T07:30:57.667840",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"f32b65967e3bd936baf196725dfe2b7e\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swiftenum.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionasset/journalingsuggestioncontent.json": {
       "hash": "1664c800a7d035d3af44ebc5bb362fabf0e069ce84b9b5f26a67b466d37bd9a9",
-      "last_checked": "2026-03-10T07:26:28.796695",
+      "last_checked": "2026-03-13T07:30:57.014650",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"64fa02b8d3d22546ab52a7dbe4a9bda8\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionasset/journalingsuggestioncontent.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct.json": {
       "hash": "12fcc389ea4adcb31a88ba11ac498f88d134ff0c020576b7b1ae329ab72487c3",
-      "last_checked": "2026-03-10T07:26:28.918261",
+      "last_checked": "2026-03-13T07:30:57.161530",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"f882e06fe4c6f0ece530059560060da5\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swiftstruct.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionpresentationtoken/init(suggestionidentifier:).json": {
       "hash": "634942af7103957609db83edec05f2ed562e9ffd864f7c36a4e4a7a4b211de81",
-      "last_checked": "2026-03-10T07:26:29.068496",
+      "last_checked": "2026-03-13T07:30:57.297242",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"38a6fa6e7740f55d2a47ecd97c5fea26\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionpresentationtoken/init-suggestionidentifier.md"
     },
@@ -13383,9 +13383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent/representations.json": {
       "hash": "eb7cff289c87f7255d226b6bf99dbe6f1d9956e9cd540d2426f4196d10ba8fa7",
-      "last_checked": "2026-03-10T07:26:29.817627",
+      "last_checked": "2026-03-13T07:30:57.786976",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"517499a39ff98426025b5fc27d6f5f65\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/representations.md"
     },
@@ -13399,9 +13399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent/content(fortype:).json": {
       "hash": "08c486275059f5cbfe6d36cf1657d806b1bc1012e6f7b5f985440d4c6fe20cda",
-      "last_checked": "2026-03-10T07:26:29.942148",
+      "last_checked": "2026-03-13T07:30:57.926736",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"c97be67df7a8b758017e7608a002d1ba\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/content-fortype.md"
     },
@@ -13415,9 +13415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent/hascontent(oftype:).json": {
       "hash": "f2fa7a8d232ab9448df1b9cbd5dd25f649c638f1b81a0b87e020dc790204ac29",
-      "last_checked": "2026-03-10T07:26:30.065019",
+      "last_checked": "2026-03-13T07:30:58.217284",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"011d59baee1d23ad1a1c593d1f1bcdc2\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/hascontent-oftype.md"
     },
@@ -13447,9 +13447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/contact/name.json": {
       "hash": "6296aa8b98e76a6bfae029833cd4b0ceb450518df92fe9a7929669b4783216a3",
-      "last_checked": "2026-03-10T07:26:30.186543",
+      "last_checked": "2026-03-13T07:30:58.336799",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"a4a39a956bf24d005787b143fc1c27d9\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/contact/name.md"
     },
@@ -13463,9 +13463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/contact/photo.json": {
       "hash": "7e099d45427d36a26ce4e2f456153027295531edf1a4b008cba3bc862731fb66",
-      "last_checked": "2026-03-10T07:26:30.306728",
+      "last_checked": "2026-03-13T07:30:58.527148",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"9c07601a2c529351ffd7736631616df1\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/contact/photo.md"
     },
@@ -13495,9 +13495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/genericmedia/album.json": {
       "hash": "9aa6e363cf25fddb639328b6616ecd941ed435770820382da25d485a97b609fe",
-      "last_checked": "2026-03-10T07:26:31.132749",
+      "last_checked": "2026-03-13T07:30:59.433389",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"9c32c22f7e814b084852e2d81659a82a\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/genericmedia/album.md"
     },
@@ -13511,9 +13511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/genericmedia/appicon.json": {
       "hash": "5c6994399edde0b3b4f94a8900d78f4d652dad265200c4a7ded4b0798924cf14",
-      "last_checked": "2026-03-10T07:26:31.253168",
+      "last_checked": "2026-03-13T07:30:59.552461",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"545d57b3891edb4dd537c7968c0cb8d6\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/genericmedia/appicon.md"
     },
@@ -13527,9 +13527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/genericmedia/artist.json": {
       "hash": "a6d02b5a1d9067ea8836cf6105b6a50127d689f9fddfd5970aa8ae08abf883bb",
-      "last_checked": "2026-03-10T07:26:31.391968",
+      "last_checked": "2026-03-13T07:30:59.712393",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"d18ced0ec838c95cc5c1ff800393e6c3\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/genericmedia/artist.md"
     },
@@ -13543,9 +13543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/genericmedia/date.json": {
       "hash": "30767c9cac88d09915dce43eb3aaf27ccb45f024faba9c831fe6b41bc59498bf",
-      "last_checked": "2026-03-10T07:26:31.522314",
+      "last_checked": "2026-03-13T07:30:59.937618",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"235d46113b96b01dba0d5da90bdcac76\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/genericmedia/date.md"
     },
@@ -13559,9 +13559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/genericmedia/title.json": {
       "hash": "31231a2d2e8512fcbd931c5f05d0e2fb7e799987ff66709a45df289acf78b86c",
-      "last_checked": "2026-03-10T07:26:31.668344",
+      "last_checked": "2026-03-13T07:31:00.143365",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"023d36902c51be1703cdca392094b018\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/genericmedia/title.md"
     },
@@ -13591,9 +13591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/livephoto/image.json": {
       "hash": "273a100c0b6d79184e93c6983218e1ff6711bbd7ee28af2e94322d8c0706ff0b",
-      "last_checked": "2026-03-10T07:26:31.787579",
+      "last_checked": "2026-03-13T07:31:00.257918",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"f184a0479ccaef684681ef99f423e083\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/livephoto/image.md"
     },
@@ -13607,9 +13607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/livephoto/video.json": {
       "hash": "c7197c22cd7d58c678155845a4f21e134ccbb3ef0e152d328e1fcac7f8357ec5",
-      "last_checked": "2026-03-10T07:26:31.909141",
+      "last_checked": "2026-03-13T07:31:00.394927",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"c368bc41a00b7685a4bcaf0960b01741\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/livephoto/video.md"
     },
@@ -13623,9 +13623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/livephoto/date.json": {
       "hash": "9417eae5b6878f7b23708b332766ffa31a835d19741e6ec21df6c25784a99296",
-      "last_checked": "2026-03-10T07:26:32.026685",
+      "last_checked": "2026-03-13T07:31:00.512079",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"52bac2586fc98b485a66ff7feaf666d3\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/livephoto/date.md"
     },
@@ -13655,9 +13655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location/city.json": {
       "hash": "3b17516856a9dc4183e93cdb6010855ed11af0c64d5c6919f14a4f77e2022d66",
-      "last_checked": "2026-03-10T07:26:32.145643",
+      "last_checked": "2026-03-13T07:31:00.685005",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"dbafc927420a5ac00af23154774b81ae\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location/city.md"
     },
@@ -13671,9 +13671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location/place.json": {
       "hash": "d74b6a53727f419a4cf4e0dff5700616c4d7bdea2306c3b861f0cd0528b7e73e",
-      "last_checked": "2026-03-10T07:26:32.264450",
+      "last_checked": "2026-03-13T07:31:00.786735",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"b0e16bc05afed7fa374041a62fc1592e\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location/place.md"
     },
@@ -13687,9 +13687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location/location.json": {
       "hash": "4a4148ff8f1a52dc3f66d90ab285b1c7a52fe20c6a778b415714e78309cbae07",
-      "last_checked": "2026-03-10T07:26:32.380738",
+      "last_checked": "2026-03-13T07:31:00.962469",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"b2a0e48e97c24761466d43ec34ce036a\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location/location.md"
     },
@@ -13703,9 +13703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location/date.json": {
       "hash": "a3000cd4fdce4421a76c00756f006f3f8098b854cb64f17f8e0a166d5575acd8",
-      "last_checked": "2026-03-10T07:26:32.503811",
+      "last_checked": "2026-03-13T07:31:01.123283",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"58055a2589a060298c27fb89228a7d87\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location/date.md"
     },
@@ -13719,9 +13719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location/isworklocation.json": {
       "hash": "cfcd7305df40712a9bfeacde8531ed50b2196a1627e5544cb894811c7f974f5f",
-      "last_checked": "2026-03-10T07:26:32.656220",
+      "last_checked": "2026-03-13T07:31:01.237518",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"5485f084ff06855c0793d396847b1b1e\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location/isworklocation.md"
     },
@@ -13735,9 +13735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/location/mapkititemidentifier.json": {
       "hash": "5da1332be386865862183e6979502cb8f60fcc51da5eeab18c4d2228dca29e70",
-      "last_checked": "2026-03-10T07:26:32.776548",
+      "last_checked": "2026-03-13T07:31:01.370289",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"84bfabe909fc94140af69fe30e65b11e\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/location/mapkititemidentifier.md"
     },
@@ -13767,9 +13767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/locationgroup/locations.json": {
       "hash": "b403b14bc6692fece480d77f2268c6778a299d239523d4c7afeb0b28ebecb0b1",
-      "last_checked": "2026-03-10T07:26:32.896079",
+      "last_checked": "2026-03-13T07:31:01.559924",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"4f27f49fb51289640fe33c9951c048b1\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/locationgroup/locations.md"
     },
@@ -13799,9 +13799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/icon.json": {
       "hash": "39be4bf7316c4c19331c2e638b2cf91fcdb3dd2fa81275ff459f3240c088e685",
-      "last_checked": "2026-03-10T07:26:33.130244",
+      "last_checked": "2026-03-13T07:31:01.688249",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"7f5afba814eaf7e3d5c83c9c5db86ca7\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/icon.md"
     },
@@ -13815,9 +13815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/date.json": {
       "hash": "93383ccd38b10bf8fb551c556b257ac15a2c0a0758b40a36c64206473c011f1e",
-      "last_checked": "2026-03-10T07:26:33.394282",
+      "last_checked": "2026-03-13T07:31:01.835343",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"9aae52f73fd9dd4ab8ff4092d345ce51\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/date.md"
     },
@@ -13831,9 +13831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/steps.json": {
       "hash": "f6508458dd6e96ea88f70eac38cf859ddb22b7bf8e4861053b3963ad8fb1aa3a",
-      "last_checked": "2026-03-10T07:26:33.708139",
+      "last_checked": "2026-03-13T07:31:01.978805",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"982d57e0b723b5f8d64fd550c99cf417\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/steps.md"
     },
@@ -13847,9 +13847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct.json": {
       "hash": "b42302a8480c6770e25fc982326a32d4f84a138d10a34444e19430741fd9fb66",
-      "last_checked": "2026-03-10T07:26:33.843149",
+      "last_checked": "2026-03-13T07:31:02.094983",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"b7875ad69755f56019032cd6a888ba28\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swiftstruct.md"
     },
@@ -13863,9 +13863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.property.json": {
       "hash": "7b710dfb8f006bc5fa9c3d8c9645c4715a38f74f55c7a967720f485a644af05c",
-      "last_checked": "2026-03-10T07:26:33.962873",
+      "last_checked": "2026-03-13T07:31:02.258393",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"38251d3b03b18904cd6c54646e2e28b4\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swiftproperty.md"
     },
@@ -13895,9 +13895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/photo/photo.json": {
       "hash": "63c98c4f2323a402b2a01b2e7e172645899576cd790fd1629e8fbf3ecf0d5170",
-      "last_checked": "2026-03-10T07:26:34.089518",
+      "last_checked": "2026-03-13T07:31:02.368867",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"b9b960d5898add7a00299e1506d6ffb8\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/photo/photo.md"
     },
@@ -13911,9 +13911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/photo/date.json": {
       "hash": "81bb2e3759a3f9777f3c2bb3ac7348cbe59fd346d99561f213695eccc45bd12e",
-      "last_checked": "2026-03-10T07:26:34.207222",
+      "last_checked": "2026-03-13T07:31:02.563953",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"8475fb6545a0aad06d7d13b317767cd4\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/photo/date.md"
     },
@@ -13943,9 +13943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/podcast/show.json": {
       "hash": "d1d55cfc76df98391dc4bc616ae768308ccf8f3ca7c6e370133bdb21ba6f052e",
-      "last_checked": "2026-03-10T07:26:34.466586",
+      "last_checked": "2026-03-13T07:31:02.674140",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"762c0a98d70155fba452fbfc0ec18742\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/podcast/show.md"
     },
@@ -13959,9 +13959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/podcast/episode.json": {
       "hash": "15c2aa62afe6d5a724cb695401df78de20ac8b8fbd955eea5567fd2f234b53ce",
-      "last_checked": "2026-03-10T07:26:34.587749",
+      "last_checked": "2026-03-13T07:31:02.787778",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"176b76177e0641caef4e91d603f90bda\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/podcast/episode.md"
     },
@@ -13975,9 +13975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/podcast/artwork.json": {
       "hash": "be8a578afadd6d72443ac75913502f78d956c3fd2b3fadd59bf4545518ea4cf5",
-      "last_checked": "2026-03-10T07:26:34.838628",
+      "last_checked": "2026-03-13T07:31:03.102586",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"357558a18ce24564db4415d3dc9a281d\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/podcast/artwork.md"
     },
@@ -13991,9 +13991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/podcast/date.json": {
       "hash": "638bdd077c2a759525c612bab84d59fcc8011fae2086f7ffab4f75ef249fe5d8",
-      "last_checked": "2026-03-10T07:26:34.993577",
+      "last_checked": "2026-03-13T07:31:03.212142",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"3e03277f7f5706f71c8275c5ac901275\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/podcast/date.md"
     },
@@ -14023,9 +14023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/reflection/color.json": {
       "hash": "e2b9449effce934367b5b122e46216eaffcb4738a2d7417731812f2889a31759",
-      "last_checked": "2026-03-10T07:26:35.111868",
+      "last_checked": "2026-03-13T07:31:03.360950",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"80e5a12387fa00043a66908aa7c2fd2d\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/reflection/color.md"
     },
@@ -14039,9 +14039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/reflection/prompt.json": {
       "hash": "152e2528f060033844b787b96c5a8421dff4a4f2c1b1e32def4ab4ffe240ea24",
-      "last_checked": "2026-03-10T07:26:35.228695",
+      "last_checked": "2026-03-13T07:31:03.471266",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"babe62e138a2bf69f3775be3a6f499cf\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/reflection/prompt.md"
     },
@@ -14071,9 +14071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/stateofmind/darkbackground.json": {
       "hash": "3e08bb07008fc6b2314958ab30bdda08a2ee1e97fe9acde06d67fff842408b38",
-      "last_checked": "2026-03-10T07:26:35.346385",
+      "last_checked": "2026-03-13T07:31:03.667271",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"3ea4799a336c6bf6503b3b37c8f19545\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/stateofmind/darkbackground.md"
     },
@@ -14087,9 +14087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/stateofmind/lightbackground.json": {
       "hash": "60ffac74087bb3c154b0360c006e85f820b8e87f9f78571477d52691e5be3bab",
-      "last_checked": "2026-03-10T07:26:35.479909",
+      "last_checked": "2026-03-13T07:31:03.775464",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"c0847a21408ac2c487f2a12d6009a920\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/stateofmind/lightbackground.md"
     },
@@ -14103,9 +14103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/stateofmind/icon.json": {
       "hash": "9b0535017d153bc9ceaad06c04193fa704e8b51fb31c0dc4b35c94ab461dc906",
-      "last_checked": "2026-03-10T07:26:35.597268",
+      "last_checked": "2026-03-13T07:31:03.884358",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"d2961976b71407a799f3bf1a96815102\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/stateofmind/icon.md"
     },
@@ -14119,9 +14119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/stateofmind/state.json": {
       "hash": "0767b996fdf2aee1bf1d1fae885a6e4349bcd50621ad445ef29f5a302016334b",
-      "last_checked": "2026-03-10T07:26:35.715930",
+      "last_checked": "2026-03-13T07:31:04.004773",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"513a2053e54f155a2a310f555583c98f\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/stateofmind/state.md"
     },
@@ -14151,9 +14151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/song/song.json": {
       "hash": "ddcc5b341325cd416c8391565921c5f143b282dc90f84d578e5188132fcba91a",
-      "last_checked": "2026-03-10T07:26:35.829280",
+      "last_checked": "2026-03-13T07:31:04.141922",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"bffd71cb16a30e8bc6e04ef475954e17\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/song/song.md"
     },
@@ -14167,9 +14167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/song/artist.json": {
       "hash": "b6772d6723edaac4ba33d4a838d8a8ce0785fd2f1ffd4f1c8e6031ef5296d6b0",
-      "last_checked": "2026-03-10T07:26:36.091795",
+      "last_checked": "2026-03-13T07:31:04.320541",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"0a7fc9c6478ac7268a7a13937eefbe23\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/song/artist.md"
     },
@@ -14183,9 +14183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/song/album.json": {
       "hash": "4b78ea435216de78ae33c17dda54fbb0964416bcdc1b0d73d90c3d97c7056267",
-      "last_checked": "2026-03-10T07:26:36.212412",
+      "last_checked": "2026-03-13T07:31:04.476602",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"c82488904cd48d51f7d423f3ed8c97c2\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/song/album.md"
     },
@@ -14199,9 +14199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/song/artwork.json": {
       "hash": "179327d85e8b9196ba9906567476866c0c1a9c803a96869f935a133b2e40a7a0",
-      "last_checked": "2026-03-10T07:26:36.330883",
+      "last_checked": "2026-03-13T07:31:04.588914",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"1447040154317ab73165c2af76761a61\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/song/artwork.md"
     },
@@ -14215,9 +14215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/song/date.json": {
       "hash": "32854fc7cf384c06f6deb52fcd19bb165abf61b0fc6733992b55c43b630d883f",
-      "last_checked": "2026-03-10T07:26:36.453582",
+      "last_checked": "2026-03-13T07:31:04.769486",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"76545b0d5305d035994660e6da8bbcb6\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/song/date.md"
     },
@@ -14247,9 +14247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/video/url.json": {
       "hash": "adf8e737b457672e3ed958891160b8921b1a4bfa965ea4e370294d9ea3d8315f",
-      "last_checked": "2026-03-10T07:26:36.569890",
+      "last_checked": "2026-03-13T07:31:04.885191",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"949143e9f4c9fa5913f84554c3f6d1cb\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/video/url.md"
     },
@@ -14263,9 +14263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/video/date.json": {
       "hash": "5300472291cc19cbbd8ce9b94bc7eb698fb8b513831cefdf801c3bf9ed9b8fd1",
-      "last_checked": "2026-03-10T07:26:36.688430",
+      "last_checked": "2026-03-13T07:31:05.021031",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"850df50c0c76907d31e31c3da3f22263\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/video/date.md"
     },
@@ -14295,9 +14295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/icon.json": {
       "hash": "f0fb622850dde0a2cb1500560ed10c771946c27f34d41d8458c6b0d9c8a1257e",
-      "last_checked": "2026-03-10T07:26:36.803562",
+      "last_checked": "2026-03-13T07:31:05.160377",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"dad3ea812a8c50397ff58a1d8666ed1b\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/icon.md"
     },
@@ -14311,9 +14311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/route.json": {
       "hash": "ca914ac39ccff426fd4503d3830c33860f4db03c7ac55b467ce96600f6d369b6",
-      "last_checked": "2026-03-10T07:26:36.916152",
+      "last_checked": "2026-03-13T07:31:05.317248",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"90feb9383ab1358cc1790ffbc5748c3c\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/route.md"
     },
@@ -14327,9 +14327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.property.json": {
       "hash": "5ffd3d8bfb262d5dcad6a17cfbfd44191f3908bf55c7b053cb87c441c1634bc4",
-      "last_checked": "2026-03-10T07:26:37.029704",
+      "last_checked": "2026-03-13T07:31:05.435705",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"0f9daa1024bde24cf126dbddef9d9436\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swiftproperty.md"
     },
@@ -14359,9 +14359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workoutgroup/icon.json": {
       "hash": "114d2f9c722ae52f8348f25e2868122666e4a6d0fc5304e587beb554bf6e0317",
-      "last_checked": "2026-03-10T07:26:37.277128",
+      "last_checked": "2026-03-13T07:31:05.569995",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"1ab21766b691134d804ca286cfd4cdc9\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workoutgroup/icon.md"
     },
@@ -14375,9 +14375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workoutgroup/duration.json": {
       "hash": "26cd1e5d6309dfa26378708a614f0535c4800cc4e2a7941196decb4a11c95793",
-      "last_checked": "2026-03-10T07:26:37.391539",
+      "last_checked": "2026-03-13T07:31:05.903420",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"b202eb144fce0a36f4fbf14d401ded77\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workoutgroup/duration.md"
     },
@@ -14391,9 +14391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workoutgroup/activeenergyburned.json": {
       "hash": "3dd925dba35484b93298ee00649df65bb5c8351c046283aa06b8ce16a90aad4e",
-      "last_checked": "2026-03-10T07:26:37.508194",
+      "last_checked": "2026-03-13T07:31:06.022423",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"e927ae3464db6dd14ea3e9d1d5e743d7\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workoutgroup/activeenergyburned.md"
     },
@@ -14407,9 +14407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workoutgroup/averageheartrate.json": {
       "hash": "c0f89330b5620fed5635734d5722aa2f99b5a05249648029b467ce1cfa4ffef3",
-      "last_checked": "2026-03-10T07:26:37.623364",
+      "last_checked": "2026-03-13T07:31:06.159642",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"604d592b3c5d106cc37fb2bddfae090c\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workoutgroup/averageheartrate.md"
     },
@@ -14423,9 +14423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workoutgroup/workouts.json": {
       "hash": "2dbadaa3bbd336f1bfcde921d24fc351023aac6072b9bac3ac3d207ef8f703d9",
-      "last_checked": "2026-03-10T07:26:37.870786",
+      "last_checked": "2026-03-13T07:31:06.286007",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"83011019254f54b0d1d8f6623d9cc0e9\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workoutgroup/workouts.md"
     },
@@ -14455,9 +14455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter/eventend.json": {
       "hash": "7eb66360cc8aaecb2d9974e36be66c0356379db5751940af64d7912ed40e73df",
-      "last_checked": "2026-03-10T07:26:30.776416",
+      "last_checked": "2026-03-13T07:30:59.093239",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"a161191560a88f26c0070a4949f57770\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter/eventend.md"
     },
@@ -14471,9 +14471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter/eventstart.json": {
       "hash": "951e3db15748f6a5b4986ae9fda3c0b647777f7ad958cad5b48f7dfbd7ada605",
-      "last_checked": "2026-03-10T07:26:30.892597",
+      "last_checked": "2026-03-13T07:30:59.200640",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"81365f6c3efad91b3eae2f9edc76bc9a\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter/eventstart.md"
     },
@@ -14487,9 +14487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter/image.json": {
       "hash": "06c65cc9cc139903651c5eeb412576cfe1bece4822a6cee3bb91a50dd7fdfa1d",
-      "last_checked": "2026-03-10T07:26:30.661615",
+      "last_checked": "2026-03-13T07:30:58.948255",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"e69855964b72a8c47f76ae33b5f873a9\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter/image.md"
     },
@@ -14503,9 +14503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter/ishost.json": {
       "hash": "6db66f623d0761f2b5729072d73bc1ab7d78395810cd56e69198e4fc4602c50f",
-      "last_checked": "2026-03-10T07:26:31.010500",
+      "last_checked": "2026-03-13T07:30:59.325038",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"0a2870923decfcfe5901890da20b660c\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter/ishost.md"
     },
@@ -14519,9 +14519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter/placename.json": {
       "hash": "6138ef41119f7032e1bdfbc5ddcf76a9a0a65089bc3b211cc8ef06487e2cbf22",
-      "last_checked": "2026-03-10T07:26:30.546930",
+      "last_checked": "2026-03-13T07:30:58.811304",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"252f3a59936a13879105ae0f5158de1f\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter/placename.md"
     },
@@ -14535,9 +14535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/eventposter/title.json": {
       "hash": "938762bc4cd53b5e4b5d47d42a64fd259812305912b89a9434a4bb76dfa2378f",
-      "last_checked": "2026-03-10T07:26:30.422875",
+      "last_checked": "2026-03-13T07:30:58.634502",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"727619d96134e0f865546d35b8c9d931\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/eventposter/title.md"
     },
@@ -14631,9 +14631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.json": {
       "hash": "db2735668239421da48d1dfdeb96e7b62f10a7c0031f2ff6e8d1c44c4073df37",
-      "last_checked": "2026-03-10T07:26:38.864770",
+      "last_checked": "2026-03-13T07:31:07.387393",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"30216728850f194b3e08215a88a181b4\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md"
     },
@@ -14647,9 +14647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.json": {
       "hash": "99fa5faa922dea9cd74e6dfa841d15c91212ef28d9e821235d3cd9d9667b3099",
-      "last_checked": "2026-03-10T07:26:38.989837",
+      "last_checked": "2026-03-13T07:31:07.550559",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"47856d8b30b0fb6a7cedc816d6e6dd02\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md"
     },
@@ -14663,9 +14663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.json": {
       "hash": "fd0bf7fb846cdac2f49f482745d987a07a6553c48948f9f342aee737a5da2272",
-      "last_checked": "2026-03-10T07:26:38.747210",
+      "last_checked": "2026-03-13T07:31:07.249420",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"fa4a531e52054ef8e7e3b52a77243dc6\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md"
     },
@@ -14727,9 +14727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/activeenergyburned.json": {
       "hash": "e3c9d14dbcb776c76e116139098e75ad067f8ba70308214e6e80b2ccac61051c",
-      "last_checked": "2026-03-10T07:26:38.026799",
+      "last_checked": "2026-03-13T07:31:06.434758",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"85e7a6717048f70088dcf1b67396269b\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/activeenergyburned.md"
     },
@@ -14743,9 +14743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/activitytype.json": {
       "hash": "121d186bebaa777ddfe4eac5a39f191658acf9dc3c321307f93074c00ebe0ec9",
-      "last_checked": "2026-03-10T07:26:38.146135",
+      "last_checked": "2026-03-13T07:31:06.598406",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"a5c045a6e33e06e4893ee9dbab7204f7\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/activitytype.md"
     },
@@ -14759,9 +14759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/averageheartrate.json": {
       "hash": "aea430d13ba142e32d21e47c9bca12c30408640c9cdb5d17ee30135a51b04f9d",
-      "last_checked": "2026-03-10T07:26:38.271124",
+      "last_checked": "2026-03-13T07:31:06.697433",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"cbad47ee15852805b8cb8f1b29aeea23\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/averageheartrate.md"
     },
@@ -14775,9 +14775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/date.json": {
       "hash": "40038567b7270d513949dfd0d03e5a1774f8b724f1f4bf3c2242bde2516be3db",
-      "last_checked": "2026-03-10T07:26:38.386916",
+      "last_checked": "2026-03-13T07:31:06.829006",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"bd2c0292bf0e81cad4286bb93374831e\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/date.md"
     },
@@ -14791,9 +14791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/distance.json": {
       "hash": "1320acc26dbe9c26ffcaa4067d7df10af5f135d161fc2314436cbc1390a07e23",
-      "last_checked": "2026-03-10T07:26:38.501399",
+      "last_checked": "2026-03-13T07:31:07.011266",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"4ba87a5472d854bc7e73c4f59feedad2\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/distance.md"
     },
@@ -14807,9 +14807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/localizedname.json": {
       "hash": "7827dc62ac2788925ba0e99cb04b41c34e92276d87607c3a06d6749a66f31dc9",
-      "last_checked": "2026-03-10T07:26:38.614709",
+      "last_checked": "2026-03-13T07:31:07.131587",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"61c30afd2f42bb7fdf07a341c81985b6\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct/localizedname.md"
     },
@@ -14855,9 +14855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/running.json": {
       "hash": "fd576dbd65322fd9a751cef5fbb03565242e501f9203590dc89dcfe77087fb2e",
-      "last_checked": "2026-03-10T07:26:39.110602",
+      "last_checked": "2026-03-13T07:31:07.672851",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"aa0801c30de8129919ea4ba7d585fb50\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/running.md"
     },
@@ -14871,9 +14871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/runningwalking.json": {
       "hash": "41854ea1720d3152e9f5465561708c2310193d7a51ebadaab99ff994bd041a79",
-      "last_checked": "2026-03-10T07:26:39.234173",
+      "last_checked": "2026-03-13T07:31:07.789698",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"6cc8e89ac4390ee2cd8d700f20553b8b\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/runningwalking.md"
     },
@@ -14887,9 +14887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/walking.json": {
       "hash": "80d4f543a67cc6810fb16089e24793c0f3108f49c2616a95f641d4d445605005",
-      "last_checked": "2026-03-10T07:26:39.353750",
+      "last_checked": "2026-03-13T07:31:07.936723",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"c468e7a5debc2b4a42e89d7afebc1f16\"",
       "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/walking.md"
     },
@@ -15047,9 +15047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/receiving-journaling-suggestions-from-system-notifications.json": {
       "hash": "e2648e87391b94f0ac4be7572305ee96fec30ca98e317098c04e95d78d17444e",
-      "last_checked": "2026-03-10T07:26:24.005734",
+      "last_checked": "2026-03-13T07:30:52.776991",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:26:22.221863",
+      "session_id": "2026-03-13T07:30:51.524591",
       "etag": "W/\"9cf4ef4721c609eb7df740cc490b41f2\"",
       "file_path": "documentation/JournalingSuggestions/receiving-journaling-suggestions-from-system-notifications.md"
     },

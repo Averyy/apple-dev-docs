@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:34:05.810149",
+    "last_updated": "2026-03-13T07:41:31.808980",
     "total_pages": 122,
-    "session_id": "2026-03-10T07:33:59.292375"
+    "session_id": "2026-03-13T07:41:20.732154"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/FoveatedStreaming.json": {
       "hash": "7b4c244797cd410dbcfa8dfacf440650b55a8acdee948adfd2252fd40fa1109c",
-      "last_checked": "2026-03-10T07:33:59.586048",
+      "last_checked": "2026-03-13T07:41:21.088233",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"07262a3b1bc99f5f3cb02104d2b8a2d3\"",
       "file_path": "documentation/FoveatedStreaming/FoveatedStreaming.md"
     },
     "https://developer.apple.com/documentation/FoveatedStreaming": {
       "hash": "7b4c244797cd410dbcfa8dfacf440650b55a8acdee948adfd2252fd40fa1109c",
-      "last_checked": "2026-03-10T07:33:59.487152",
+      "last_checked": "2026-03-13T07:41:20.988539",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"07262a3b1bc99f5f3cb02104d2b8a2d3\"",
       "file_path": "documentation/FoveatedStreaming/FoveatedStreaming.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.json": {
       "hash": "86917d6124b68ba1d3a1c45edc8c6cddf59b163448190bd738d4368ab07c4600",
-      "last_checked": "2026-03-10T07:33:59.860692",
+      "last_checked": "2026-03-13T07:41:21.555834",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"28e46d6d72c70dfe786dd7dc1ef44bad\"",
       "file_path": "documentation/FoveatedStreaming/streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/establishing-foveated-streaming-sessions-with-apple-vision-pro.json": {
       "hash": "5896767d3c77b2b51f0a7d8d8ec0312875d2bcc01f759d9ea2aeeb827fca7b36",
-      "last_checked": "2026-03-10T07:33:59.936839",
+      "last_checked": "2026-03-13T07:41:21.855158",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"7554a05d579d6c5958cf775182b4ce9e\"",
       "file_path": "documentation/FoveatedStreaming/establishing-foveated-streaming-sessions-with-apple-vision-pro.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/creating-a-foveated-streaming-client-on-visionos.json": {
       "hash": "207da29c75c667634371dbf36a8c0fd85ea90af52e20bcc084a2ef80d0f21968",
-      "last_checked": "2026-03-10T07:34:00.340963",
+      "last_checked": "2026-03-13T07:41:22.148753",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"23661a82be38680f16ea95c7a5829f91\"",
       "file_path": "documentation/FoveatedStreaming/creating-a-foveated-streaming-client-on-visionos.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession.json": {
       "hash": "5fd6e420b0a89c9c024821c6b3b9fe445bc0abc9fa6e482df5713cd496647ebc",
-      "last_checked": "2026-03-10T07:34:00.466103",
+      "last_checked": "2026-03-13T07:41:22.438390",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"d13a6f9ec5a8be366ab9bf0f2b182997\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel.json": {
       "hash": "54e9d091dcc45ba83240a2c18f400356edebf7a38b044d8c6cc73bb40060c218",
-      "last_checked": "2026-03-10T07:34:00.753524",
+      "last_checked": "2026-03-13T07:41:22.958355",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"39d062024350ed4bfd4212ded2bfbed2\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/disconnectreason.json": {
       "hash": "6595dc34e82be875dc474264d5877d61db211d66b3ed1a820292abb9e40f70d3",
-      "last_checked": "2026-03-10T07:34:00.876287",
+      "last_checked": "2026-03-13T07:41:23.117998",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"dda9facbedea973263061d91e5759128\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/disconnectreason.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/endpoint.json": {
       "hash": "699eb3f84e7b1509881a0edb501f68b5de71c56881262ae476ffacc2abbf4dd5",
-      "last_checked": "2026-03-10T07:34:00.997872",
+      "last_checked": "2026-03-13T07:41:23.301070",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"f5b8b413d7643a82433e37222671c878\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/endpoint.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct.json": {
       "hash": "03f92bb775159e7769c1a7c61265cc294b3f8df81c199dfe7da0c4b6ccf900da",
-      "last_checked": "2026-03-10T07:34:01.083888",
+      "last_checked": "2026-03-13T07:41:23.589836",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"aa7f283f399834857b4d7beb7dd1c255\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swiftstruct.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/init().json": {
       "hash": "b8194c9ce15300e390e224ae8424e3a128c04d5c291f70f1f13a3b6b056bbefa",
-      "last_checked": "2026-03-10T07:34:01.157362",
+      "last_checked": "2026-03-13T07:41:23.866108",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"e0b37d1da47d8b792637b59c0fb326cc\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/init.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/availablemessagechannels.json": {
       "hash": "5742884eea963f9cc86eb3ac98ffe4736d52ad0a9928df1718f9ba77754868f4",
-      "last_checked": "2026-03-10T07:34:01.229219",
+      "last_checked": "2026-03-13T07:41:24.179105",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"5bcb02ba9db37b2a066c6571fb846e7a\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/availablemessagechannels.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.property.json": {
       "hash": "7b25eaca6e75f28bfa95d403d1c250d8ec93cb3bf3b9bbd4345086832144fb48",
-      "last_checked": "2026-03-10T07:34:01.304760",
+      "last_checked": "2026-03-13T07:41:24.482800",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"bb85d22078cc82c4673a92e7d2163e80\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swiftproperty.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivespacefromremotescenetransform.json": {
       "hash": "1a993928e74939400f44d704133e55ab2a0dd1c544c29208bdb7dbf0fce598b4",
-      "last_checked": "2026-03-10T07:34:01.380760",
+      "last_checked": "2026-03-13T07:41:24.648195",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"9f2c2d4932f8d436327ea6e753b77587\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivespacefromremotescenetransform.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.property.json": {
       "hash": "b73e2b14c939f0396a3efa29f5588070d4eaf4b21d66850187eb5a7e7d2dfe02",
-      "last_checked": "2026-03-10T07:34:01.499834",
+      "last_checked": "2026-03-13T07:41:24.947776",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"a6b9af2bcdd9b534e1b230e671498dd6\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swiftproperty.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/connect(endpoint:).json": {
       "hash": "d8f3557050bacf4308a91a0f34721822168f07fa7dfc90dd185010fdbe7e2d4d",
-      "last_checked": "2026-03-10T07:34:01.579602",
+      "last_checked": "2026-03-13T07:41:25.244340",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"87898f8971e71800ed44371aaefb4826\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/connect-endpoint.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/disconnect().json": {
       "hash": "8495ec7603cee26d7a3c6e4c92af90f4c7816a44b5e8897eddbf084fb14c2158",
-      "last_checked": "2026-03-10T07:34:01.656355",
+      "last_checked": "2026-03-13T07:41:25.540003",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"bc77d9bbf0a770893440dc38feeb4a6e\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/disconnect.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/pause().json": {
       "hash": "bdc44dfe675b003f9a31500cf8bdd4ad3feec6c680baa4fb63458822566663a1",
-      "last_checked": "2026-03-10T07:34:01.899254",
+      "last_checked": "2026-03-13T07:41:25.997220",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"fa9b89a63993d44038632d5e1c028003\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/pause.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/resume().json": {
       "hash": "62e5ec1d9ce58b02baa4d432ff63f5c56129bc3508987fb6bd7384b0e04f785c",
-      "last_checked": "2026-03-10T07:34:02.053138",
+      "last_checked": "2026-03-13T07:41:26.168511",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"0509de3b636dd48a9935d29acafdbdc3\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/resume.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum.json": {
       "hash": "015b018d37fc7b66ea2ccbdd4f6ed85da6d67152dfa16a80f1c09556846a280a",
-      "last_checked": "2026-03-10T07:34:02.178773",
+      "last_checked": "2026-03-13T07:41:26.446231",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"add3e41ac7f8a0f620502eaccbefe9ba\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swiftenum.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/id-swift.struct.json": {
       "hash": "dffc146d77f59125d917b58e18d6b61066d0209d090d1be35fe0cfe1fb7017b7",
-      "last_checked": "2026-03-10T07:34:02.297873",
+      "last_checked": "2026-03-13T07:41:26.591328",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"d3ce086d2e93812a0b26d82300a1bf66\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/id-swiftstruct.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/channelstatus-swift.property.json": {
       "hash": "d633092d40745f90dffeef039c1f6bb10831de83225df8f3126da9bb7c12b88c",
-      "last_checked": "2026-03-10T07:34:02.437153",
+      "last_checked": "2026-03-13T07:41:26.886606",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"52f75dc1c96624310ee189549f8cfeaf\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/channelstatus-swiftproperty.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/id-swift.property.json": {
       "hash": "6da2ec34165b8f6f8abb1c6cd0cace46daaada80209a7998012fef2279e5110a",
-      "last_checked": "2026-03-10T07:34:02.556118",
+      "last_checked": "2026-03-13T07:41:27.055726",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"bf01171c2b69c16ce076978b8c0d5303\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/id-swiftproperty.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/receivedmessagestream.json": {
       "hash": "4b930ea1c2541d00bbf9419c715ecbd3f566576bd60a2c2048ff2d3c00558f38",
-      "last_checked": "2026-03-10T07:34:02.632295",
+      "last_checked": "2026-03-13T07:41:27.219437",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"c396d977d9287251be3ddf96a3bb3703\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/receivedmessagestream.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/disconnect().json": {
       "hash": "a16ae00a1265ee5050170bbf9349a380f713ad5043eb7cf408b7fab6fd78c54e",
-      "last_checked": "2026-03-10T07:34:02.893920",
+      "last_checked": "2026-03-13T07:41:27.370859",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"57f7f99f3298b49bcbfce7627ec3aee0\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/disconnect.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/channelstatus-swift.enum.json": {
       "hash": "0361d6090048c21e5768411f58889a5cd97306b5e83f13fed7d5c1215b2ffec9",
-      "last_checked": "2026-03-10T07:34:03.109478",
+      "last_checked": "2026-03-13T07:41:27.684759",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"6b55d1d0b169a9fe8e8787f988101186\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/channelstatus-swiftenum.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/disconnectreason/appinitiateddisconnect.json": {
       "hash": "c7e720b71ac7b31de54ddee36fc5356382d83aecb005c6d956b1f9fd08d85b1e",
-      "last_checked": "2026-03-10T07:34:03.194746",
+      "last_checked": "2026-03-13T07:41:27.864457",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"7697b99845b2883cd2a5ace23fbe0245\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/disconnectreason/appinitiateddisconnect.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/disconnectreason/unauthorized.json": {
       "hash": "f779384051f44bea1a508e816e298c1c9315f378d56c220161d4f9090b18d897",
-      "last_checked": "2026-03-10T07:34:03.438589",
+      "last_checked": "2026-03-13T07:41:28.290359",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"57fe89176cc69ed41630106024ad898b\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/disconnectreason/unauthorized.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/endpoint/systemdiscovered.json": {
       "hash": "003abca88bc5da7173ad4356f1aa72175a48226883f1a3ef7e929f6e26fe2281",
-      "last_checked": "2026-03-10T07:34:03.693770",
+      "last_checked": "2026-03-13T07:41:28.615854",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"5ddc34741e93e97cefd4ec44cbe6f186\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/endpoint/systemdiscovered.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/endpoint/local(ipaddress:port:).json": {
       "hash": "d5528611dcf38dd3632bb999244eaa75edddc5e6642f04320ae6167f9a520f42",
-      "last_checked": "2026-03-10T07:34:03.765937",
+      "last_checked": "2026-03-13T07:41:28.786372",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"dc43ff7350b1b770f50a9233c5249d7d\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/endpoint/local-ipaddressport.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/init().json": {
       "hash": "6a41a5c093bce66cc4f654d80cae238c7771e492226ed5242e52f9786788c450",
-      "last_checked": "2026-03-10T07:34:04.024965",
+      "last_checked": "2026-03-13T07:41:29.214428",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"3307eb6d8600916f432ba879491d4daa\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/init.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/automatic(_:_:).json": {
       "hash": "3cdc5b962b935cc13ec7b4ea1f0f02b994aa8e836f6f6d893a2dd3aedaf98b8c",
-      "last_checked": "2026-03-10T07:34:04.146917",
+      "last_checked": "2026-03-13T07:41:29.375888",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"813dcd94d515c087a3532542049731d2\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/automatic.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissondisconnect(_:).json": {
       "hash": "ff192762d065fe5d181475973784460080576bfbeb0128ce6b7d29af365f74fd",
-      "last_checked": "2026-03-10T07:34:04.266634",
+      "last_checked": "2026-03-13T07:41:29.543937",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"96ac94e846959aefbcfcbefe85f0741d\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissondisconnect.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissonpause(_:).json": {
       "hash": "12c9bb77d1b5e5620607fcd87ba370d85dbd51cc3e8ff5d5bf12139aba51f4e7",
-      "last_checked": "2026-03-10T07:34:04.388447",
+      "last_checked": "2026-03-13T07:41:29.702524",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"eff4d5b5886a6c0d2eec3b93050b351b\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissonpause.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonconnect(_:).json": {
       "hash": "d550e7da7db804a8cd24f6fc2b67548fe0c15e259d2297b03dff84185faeefa0",
-      "last_checked": "2026-03-10T07:34:04.499838",
+      "last_checked": "2026-03-13T07:41:29.869027",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"cdd5ca55eadaf4ece0875abdd2995e19\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonconnect.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonresume(_:).json": {
       "hash": "2c3006d4980cf6f23d05249f1219a06df7aa2677f3cd84163ecfb28b82e92f75",
-      "last_checked": "2026-03-10T07:34:04.619822",
+      "last_checked": "2026-03-13T07:41:30.032259",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"f5dc021a76421a93a42913a3140ca303\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonresume.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/connected.json": {
       "hash": "cad2a5341b5fe01c1848b0b1090b9ceeddde929f093dab172b607a91c86f6c62",
-      "last_checked": "2026-03-10T07:34:04.740853",
+      "last_checked": "2026-03-13T07:41:30.185630",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"d5175ff9fcccae2ccfdfa00bf6cfe817\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/connected.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/connecting.json": {
       "hash": "c805d3a487257110477185fbf77f2e6c2b4c319726c8c06de6f7e59448a49ecf",
-      "last_checked": "2026-03-10T07:34:04.854872",
+      "last_checked": "2026-03-13T07:41:30.351966",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"b238ecf591cfa3ce97da371abbb7ec7f\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/connecting.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/disconnected(_:).json": {
       "hash": "f8899a5570536e3d55e04895b274d39b30a2014cffbce7a909abd376f5ced57f",
-      "last_checked": "2026-03-10T07:34:04.956883",
+      "last_checked": "2026-03-13T07:41:30.515029",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"d531f158f1b8f931972ab70060fd29b4\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/disconnected.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/disconnecting.json": {
       "hash": "972ce9ebd7abfc8653cd4167f2dcbe8fdff55479742c2797134101ffb421de54",
-      "last_checked": "2026-03-10T07:34:05.073996",
+      "last_checked": "2026-03-13T07:41:30.683985",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"3635eb95eb22ac96f222ec19586bf647\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/disconnecting.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/initialized.json": {
       "hash": "3786c5816a1760e61f3da40b97387a34cb883265660905e0997475a8cdb4ac8d",
-      "last_checked": "2026-03-10T07:34:05.193786",
+      "last_checked": "2026-03-13T07:41:30.848180",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"ec17159cde15093c8079bde1218d079a\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/initialized.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/paused.json": {
       "hash": "cfea7853c9558786a4afcfea5e452a576cfb432a4f8fc2f017c6b5ef933b3a03",
-      "last_checked": "2026-03-10T07:34:05.268650",
+      "last_checked": "2026-03-13T07:41:31.005550",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"7b36ad903677fff9a4782a82a013b619\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/paused.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/pausing.json": {
       "hash": "c9fc9bc972a9469391aedf44f50ff86dccab8986792870bb806884d03fab0025",
-      "last_checked": "2026-03-10T07:34:05.346714",
+      "last_checked": "2026-03-13T07:41:31.166941",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"7e31d212f5cfa965e378372b50066c4d\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/pausing.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/status-swift.enum/resuming.json": {
       "hash": "bc6b8a4037797ccf4672bc6ae83708e92e7b3a18c67c975ea19b24f49479ad79",
-      "last_checked": "2026-03-10T07:34:05.461175",
+      "last_checked": "2026-03-13T07:41:31.323291",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"72a76242d173ebd1ca0334916e565efe\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/status-swift.enum/resuming.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/id-swift.struct/init(_:).json": {
       "hash": "10e71fbc2e94b0b180e4924b8c624a7ed9b1747ff4bc926de776fbb666a9aec0",
-      "last_checked": "2026-03-10T07:34:05.614488",
+      "last_checked": "2026-03-13T07:41:31.477455",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"2d474163f29a98272286bcc2b456a0a5\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/id-swift.struct/init.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/channelstatus-swift.enum/closed.json": {
       "hash": "03dd7a0dad0d29957e29feb1ff2a5a303d9c79d4774da0997b18ec257c13586e",
-      "last_checked": "2026-03-10T07:34:05.732002",
+      "last_checked": "2026-03-13T07:41:31.634784",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"d9d964e79544c2bf738305bd4279a003\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/channelstatus-swift.enum/closed.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/channelstatus-swift.enum/ready.json": {
       "hash": "2ff80f44067e458360317e5bf6ffd5901b813daec4ff71a794bc4a18b7ba7969",
-      "last_checked": "2026-03-10T07:34:05.809143",
+      "last_checked": "2026-03-13T07:41:31.805558",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"f9018e7a13c736cf3636eb38ebc7255a\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/channelstatus-swift.enum/ready.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingspacecontent.json": {
       "hash": "97854f6fc2d46e6bc8b210ea7ed7fd315ae96446540c5714c15cab7faa67daf3",
-      "last_checked": "2026-03-10T07:34:00.626523",
+      "last_checked": "2026-03-13T07:41:22.727443",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"2c7222ce10133e5d916fdcc23d10e558\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingspacecontent.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel(for:).json": {
       "hash": "afdb0a497f46398f2dd8d934f8ec503ab2d453bfad85268bb1008806e5378d6d",
-      "last_checked": "2026-03-10T07:34:01.773537",
+      "last_checked": "2026-03-13T07:41:25.714255",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"41f9c7317986865ecd633b07832db6af\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel-for.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/messagechannel/sendmessage(_:).json": {
       "hash": "8b4af8b3d63389596fda507ead1e0c510b63fc7c664862cfa2e6f859aff731b9",
-      "last_checked": "2026-03-10T07:34:03.027596",
+      "last_checked": "2026-03-13T07:41:27.535163",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"1a60020c54e12f607a9fdf272797c52b\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/messagechannel/sendmessage.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/disconnectreason/endpointinitiateddisconnect.json": {
       "hash": "5907c6daf37f8853027e871217d1e3be368df7e39c346cf63d4c8d6c56e98f33",
-      "last_checked": "2026-03-10T07:34:03.317028",
+      "last_checked": "2026-03-13T07:41:28.136084",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"fc48ec232501317d42d12dabf3b35762\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/disconnectreason/endpointinitiateddisconnect.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/disconnectreason/unavailable.json": {
       "hash": "db93e27f357e4674bd5dba6ae183dd8f45327bacc180329ca14390e7e61d58d6",
-      "last_checked": "2026-03-10T07:34:03.562120",
+      "last_checked": "2026-03-13T07:41:28.453313",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"1bcc8990ced03bba0f566ea048fdb55a\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/disconnectreason/unavailable.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/foveatedstreaming/foveatedstreamingsession/endpoint/remote(servername:signalingheaders:).json": {
       "hash": "e21d4532e17c85d303ab83feef2c3a938fb79fdcb3c7bddd809425437c2238f9",
-      "last_checked": "2026-03-10T07:34:03.905969",
+      "last_checked": "2026-03-13T07:41:28.932454",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:59.292375",
+      "session_id": "2026-03-13T07:41:20.732154",
       "etag": "W/\"84ebac5a080eae630800952de5ad1556\"",
       "file_path": "documentation/FoveatedStreaming/foveatedstreamingsession/endpoint/remote-servernamesignalingheaders.md"
     },

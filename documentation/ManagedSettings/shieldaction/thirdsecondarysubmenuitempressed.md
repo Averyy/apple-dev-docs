@@ -3,18 +3,31 @@
 **Framework**: ManagedSettings  
 **Kind**: case
 
-The user pressed the third item in the secondary button sub menu
+An action that occurs when someone selects the third item in the secondary button’s submenu.
 
 **Availability**:
 - iOS 26.4+ (Beta)
 - iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- Mac Catalyst ?+
 
 ## Declaration
 
 ```swift
 case thirdSecondarySubmenuItemPressed
 ```
+
+#### Discussion
+
+The system invokes this callback on your app’s [`ShieldActionDelegate`](shieldactiondelegate.md) for the third item in the submenu when your app defines the [`secondaryButtonSubmenuItems`](https://developer.apple.com/documentation/managedsettingsui/shieldconfiguration/secondarybuttonsubmenuitems) array with three elements.
+
+## See Also
+
+- [ShieldAction.secondaryButtonPressed](shieldaction/secondarybuttonpressed.md)
+  The user pressed the optional secondary button underneath the primary button of a shield.
+- [ShieldAction.firstSecondarySubmenuItemPressed](shieldaction/firstsecondarysubmenuitempressed.md)
+  An action that occurs when someone selects the first item in the secondary button’s submenu.
+- [ShieldAction.secondSecondarySubmenuItemPressed](shieldaction/secondsecondarysubmenuitempressed.md)
+  An action that occurs when someone selects the second item in the secondary button’s submenu.
 
 
 ---

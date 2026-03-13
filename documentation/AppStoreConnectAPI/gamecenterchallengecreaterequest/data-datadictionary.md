@@ -20,6 +20,7 @@ object GameCenterChallengeCreateRequest.Data
 - [object GameCenterChallengeCreateRequest.Data.Attributes](gamecenterchallengecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new challenge resource.
 - [object GameCenterChallengeCreateRequest.Data.Relationships](gamecenterchallengecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

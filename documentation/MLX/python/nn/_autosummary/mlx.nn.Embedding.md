@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.E
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.Embedding
 
  Table of contents 

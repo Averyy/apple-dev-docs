@@ -91,6 +91,8 @@ When you edit In-App Purchase information in App Store Connect, it can take up t
 
 ## See Also
 
+- [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
+  Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
   Learn how local network privacy affects your software.
 - [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
@@ -119,8 +121,6 @@ When you edit In-App Purchase information in App Store Connect, it can take up t
   Verify your In-App Purchases are approved and available for sale in the App Store.
 - [TN3185: Troubleshooting In-App Purchases availability in Xcode](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md)
   Inspect your active StoreKit configuration file for unexpected configurations.
-- [TN3182: Adding privacy tracking keys to your privacy manifest](tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md)
-  Declare the tracking domains you use in your app or third-party SDK in a privacy manifest.
 
 
 ---

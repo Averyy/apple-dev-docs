@@ -21,7 +21,7 @@ object GameCenterLeaderboardV2.Relationships.Challenge
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardV2.Relationships.Challenge.Data](gamecenterleaderboardv2/relationships-data.dictionary/challenge-data.dictionary/data-data.dictionary.md)
 
 ## Properties

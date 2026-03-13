@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/data_types.html
 
 **
 
+**
+**
+**
+
+**
+
 # Data Types
 
  Table of contents 

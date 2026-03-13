@@ -8,7 +8,7 @@ Requests a configuration to use for a shield that covers a website.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

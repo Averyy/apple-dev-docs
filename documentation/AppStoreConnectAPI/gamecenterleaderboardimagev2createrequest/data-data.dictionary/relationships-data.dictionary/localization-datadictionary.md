@@ -20,7 +20,7 @@ object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization.Data](gamecenterleaderboardimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
 
 ## Properties

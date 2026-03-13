@@ -11,6 +11,7 @@ Get the age rating declaration for the app info.
 ## Mentions
 
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
 
 #### Discussion
 

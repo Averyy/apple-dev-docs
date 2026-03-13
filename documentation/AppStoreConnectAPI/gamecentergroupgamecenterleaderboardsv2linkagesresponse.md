@@ -22,7 +22,7 @@ object GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse.Data](gamecentergroupgamecenterleaderboardsv2linkagesresponse/data-data.dictionary.md)
 
 ## Properties

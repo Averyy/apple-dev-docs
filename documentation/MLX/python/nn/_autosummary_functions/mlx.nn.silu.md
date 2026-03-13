@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.silu
 
  Table of contents 

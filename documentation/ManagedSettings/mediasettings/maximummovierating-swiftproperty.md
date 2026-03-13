@@ -8,7 +8,7 @@ The maximum movie rating the user may view.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ var maximumMovieRating: Int? { get set }
 
 ## Mentions
 
-- [Confirming the Effective TV and Movie Ratings](readingmedia.md)
+- [Confirming the effective TV and movie ratings](readingmedia.md)
 
 #### Discussion
 

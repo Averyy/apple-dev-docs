@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.bl
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.block_masked_mm
 
  Table of contents 

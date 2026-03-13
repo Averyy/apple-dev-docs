@@ -14,7 +14,6 @@ Read the app store version and related information for an app version.
 
 ## Parameters
 
-- `fields[ageRatingDeclarations]` ([string])
 - `fields[appClipDefaultExperiences]` ([string])
 - `fields[appStoreReviewDetails]` ([string])
 - `fields[appStoreVersionExperiments]` ([string])

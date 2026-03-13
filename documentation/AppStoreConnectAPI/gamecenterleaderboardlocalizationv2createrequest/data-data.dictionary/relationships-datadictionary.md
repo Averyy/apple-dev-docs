@@ -18,7 +18,7 @@ object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships.Version](gamecenterleaderboardlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
   The data that describes the version of the Game Center leaderboard localization.
 

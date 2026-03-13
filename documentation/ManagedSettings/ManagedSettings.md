@@ -1,4 +1,4 @@
-# ManagedSettings
+# Managed Settings
 
 **Framework**: ManagedSettings  
 **Kind**: module
@@ -21,17 +21,19 @@ Managed Settings works together with [`ManagedSettingsUI`](https://developer.app
 ## Topics
 
 ### Essentials
-- [Manage Settings on Devices in a Family Sharing Group](connectionwithframeworks.md)
+- [Manage settings on devices in a Family Sharing group](connectionwithframeworks.md)
   Empower parents and guardians to configure constraints on other devices while preserving the family’s privacy.
-- [Confirming the Effective TV and Movie Ratings](readingmedia.md)
+- [Confirming the effective TV and movie ratings](readingmedia.md)
   Read the media rating on a device and determine what media to display on your app.
 ### Settings
 - [class ManagedSettingsStore](managedsettingsstore.md)
   A data store that applies settings to the current user or device.
-### Shield Actions
+### Shield actions
+- [enum ShieldAction](shieldaction.md)
+  Constants that describe a user’s action for your extension to handle.
 - [class ShieldActionDelegate](shieldactiondelegate.md)
   A class for an extension that handles shield actions.
-### Family Privacy
+### Family privacy
 - [struct Token](token.md)
   A representation of an activity, such as an app or website, that doesn’t reveal its identity.
 ### Apps

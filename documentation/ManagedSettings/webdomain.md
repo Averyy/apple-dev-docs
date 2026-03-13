@@ -8,7 +8,7 @@ An object that represents a website.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -19,12 +19,12 @@ struct WebDomain
 
 ## Topics
 
-### Creating a Web Domain
+### Creating a web domain
 - [init(domain: String)](webdomain/init(domain:).md)
   Creates an object that represents the specified web domain.
 - [init(token: WebDomainToken)](webdomain/init(token:).md)
   Creates an object that represents the provided domain.
-### Identifying a Web Domain
+### Identifying a web domain
 - [let domain: String?](webdomain/domain.md)
   A string that identifies a specific web domain.
 - [let token: WebDomainToken?](webdomain/token.md)

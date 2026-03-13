@@ -8,7 +8,7 @@ The conditions under which Safari accepts cookies.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ enum CookiePolicy
 
 ## Topics
 
-### Accepting Cookies
+### Accepting cookies
 - [SafariSettings.CookiePolicy.always](safarisettings/cookiepolicy-swift.enum/always.md)
   A policy that indicates the device accepts cookies from all websites.
 - [SafariSettings.CookiePolicy.currentWebsite](safarisettings/cookiepolicy-swift.enum/currentwebsite.md)

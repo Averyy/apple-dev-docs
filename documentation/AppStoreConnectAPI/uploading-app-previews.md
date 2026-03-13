@@ -46,11 +46,11 @@ On the command line, run this command, replacing the parameters with actual valu
 The command-line parameters are:
 
 - `{bundle id}`—Your app’s bundle ID.
-- `{platform}`—Your app’s platform. See [`Platform`](platform.md) for valid values.
-- `{version}`—The version of your app to which the preview applies.
-- `{locale}`—The locale to which the preview applies. See [`Create an App Info Localization`](post-v1-appinfolocalizations.md) for valid values.
-- `{preview type}`—The type of preview. See [`PreviewType`](previewtype.md) for valid values.
-- `{path to video file}`—The path to the video file on your computer.
+- `{platform}` — Your app’s platform. See [`Platform`](platform.md) for valid values.
+- `{version}` — The version of your app to which the preview applies.
+- `{locale}` — The locale to which the preview applies. See [`Create an App Info Localization`](post-v1-appinfolocalizations.md) for valid values.
+- `{preview type}` — The type of preview. See [`PreviewType`](previewtype.md) for valid values.
+- `{path to video file}` — The path to the video file on your computer.
 
 The following example replaces `{bundle id}` with `com.mycompany.MyApp`; `{platform}` with `IOS`; `{version}` with `1.0`; `{locale}` with `en-US`;  `{preview type}` with `IPHONE_65`; and `{path to video file}` with`../my-video.mp4`.
 

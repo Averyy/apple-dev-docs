@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sl
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.slice_update
 
  Table of contents 

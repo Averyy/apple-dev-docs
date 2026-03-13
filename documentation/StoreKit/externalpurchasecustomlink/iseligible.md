@@ -28,7 +28,6 @@ static var isEligible: Bool { get async }
 Check this value if your app configures any of the following entitlements:
 
 - [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions)
-- doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming.allowed-regions
 - [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link)
 - [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link-streaming)
 

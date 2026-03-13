@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/lazy_evaluation.html
 
 **
 
+**
+**
+**
+
+**
+
 # Lazy Evaluation
 
  Table of contents 

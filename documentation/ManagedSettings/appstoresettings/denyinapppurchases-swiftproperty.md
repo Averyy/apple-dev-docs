@@ -8,7 +8,7 @@ A Boolean value that indicates whether to deny the user permission to make in-ap
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

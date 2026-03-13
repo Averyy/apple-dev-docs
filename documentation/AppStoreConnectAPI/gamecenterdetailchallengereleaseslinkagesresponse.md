@@ -6,7 +6,7 @@
 A response that contains a list of IDs of related resources.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API ?+ - Deprecated
 
 ## Declaration
 

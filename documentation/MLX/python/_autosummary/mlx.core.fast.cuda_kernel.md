@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.core.fast.cuda_kernel
 
  Table of contents 

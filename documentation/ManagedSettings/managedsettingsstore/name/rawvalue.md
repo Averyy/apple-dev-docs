@@ -8,7 +8,7 @@ The name of the store as a `String`.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

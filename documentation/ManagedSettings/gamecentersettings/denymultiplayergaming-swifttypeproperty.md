@@ -8,7 +8,7 @@ The metadata associated with the setting that prevents users from joining multip
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

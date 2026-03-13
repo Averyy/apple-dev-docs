@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.Dropout
 
  Table of contents 

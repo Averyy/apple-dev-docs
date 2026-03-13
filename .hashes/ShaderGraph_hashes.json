@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:32:42.543859",
+    "last_updated": "2026-03-13T07:39:45.763805",
     "total_pages": 496,
-    "session_id": "2026-03-10T07:32:19.934488"
+    "session_id": "2026-03-13T07:39:07.351490"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ShaderGraph.json": {
       "hash": "0c055ed82a6c1c7ac61b1d9bb63aef1a222c3ee73a886618a9ec6d3a2a73de62",
-      "last_checked": "2026-03-10T07:32:20.241250",
+      "last_checked": "2026-03-13T07:39:07.583080",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"fb57358f31d6f9a1de5ad2c49364a0b5\"",
       "file_path": "documentation/ShaderGraph/ShaderGraph.md"
     },
     "https://developer.apple.com/documentation/ShaderGraph": {
       "hash": "0c055ed82a6c1c7ac61b1d9bb63aef1a222c3ee73a886618a9ec6d3a2a73de62",
-      "last_checked": "2026-03-10T07:32:20.153808",
+      "last_checked": "2026-03-13T07:39:07.494613",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"fb57358f31d6f9a1de5ad2c49364a0b5\"",
       "file_path": "documentation/ShaderGraph/ShaderGraph.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural.json": {
       "hash": "3f914b9d4d5e332ce755b07a90c82abb7ca6ee48051811cc8ba3d9cab06af05d",
-      "last_checked": "2026-03-10T07:32:20.518302",
+      "last_checked": "2026-03-13T07:39:08.012278",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b27989682c7f3114576785eeb352bd26\"",
       "file_path": "documentation/ShaderGraph/api-2d-procedural.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture.json": {
       "hash": "a48f4f71f732d4873a81c92e65f35febf83ae29bf197b995ecac8f34af92d511",
-      "last_checked": "2026-03-10T07:32:20.635496",
+      "last_checked": "2026-03-13T07:39:08.178666",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ad2cc7063573bffda3016869ac8194fc\"",
       "file_path": "documentation/ShaderGraph/api-2d-texture.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural.json": {
       "hash": "c7a81b7df94aa917d36fbd276dff6c2ecd92cbe5d7480efc2123270c30f716b6",
-      "last_checked": "2026-03-10T07:32:20.744239",
+      "last_checked": "2026-03-13T07:39:08.332166",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4fcff4298c0ca51cdbd80a888c30b7f1\"",
       "file_path": "documentation/ShaderGraph/api-3d-procedural.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-texture.json": {
       "hash": "ea01d3e8cada6c40c1dc66357f7882c050fec3744b449133d7df28e3d3727f8b",
-      "last_checked": "2026-03-10T07:32:20.852657",
+      "last_checked": "2026-03-13T07:39:08.451749",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"79b51d997fde891b7dabae0af5daf81e\"",
       "file_path": "documentation/ShaderGraph/api-3d-texture.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment.json": {
       "hash": "bc414d7f81d3cd1ae56c19c3384a50097033ef6afb40b55c2b26ec781579d33b",
-      "last_checked": "2026-03-10T07:32:20.930170",
+      "last_checked": "2026-03-13T07:39:08.610352",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d3182e2eaf71a05b7401a6717ff11a00\"",
       "file_path": "documentation/ShaderGraph/adjustment.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/application.json": {
       "hash": "8bd0495227a894bf2a884ddbac3c36c3cf1fddd2810e76aabd4effde7d19613c",
-      "last_checked": "2026-03-10T07:32:21.008804",
+      "last_checked": "2026-03-13T07:39:08.783447",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"65558dbd48a7b4b54bf33c9f11941d06\"",
       "file_path": "documentation/ShaderGraph/application.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing.json": {
       "hash": "707cef054426fb7dc94f627ed48ef84dc0b829ab82c92f885603d864fcd7682f",
-      "last_checked": "2026-03-10T07:32:21.134018",
+      "last_checked": "2026-03-13T07:39:08.944252",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4a86fbc48d0b55150089f696dd14f799\"",
       "file_path": "documentation/ShaderGraph/compositing.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data.json": {
       "hash": "226f00b0bb7e356b4001ed97995c02936e432cfaab23806a74b8ef32e0bbd345",
-      "last_checked": "2026-03-10T07:32:21.280124",
+      "last_checked": "2026-03-13T07:39:09.097987",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"52da6da850a8c0b0e6e87e5fa872b637\"",
       "file_path": "documentation/ShaderGraph/data.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric.json": {
       "hash": "8ffbfec47729be0166bf15da9d24689ad08bf1e9a1b0ed03b6250974bfcd1994",
-      "last_checked": "2026-03-10T07:32:21.360741",
+      "last_checked": "2026-03-13T07:39:09.264895",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c836b73e6db6556cd3fe7eba2d46278b\"",
       "file_path": "documentation/ShaderGraph/geometric.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic.json": {
       "hash": "b00128938065250febeadd584a90b0efa47e58581ffe416af054772b3cc6b588",
-      "last_checked": "2026-03-10T07:32:21.503589",
+      "last_checked": "2026-03-13T07:39:09.542749",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"1a57bbae9497f972a22f033f0f075bc6\"",
       "file_path": "documentation/ShaderGraph/logic.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/material.json": {
       "hash": "bc4f5f831ddfe9d07f3a18cfe6f6a384fd96aed7b1c36a42f1a81e9088b936c5",
-      "last_checked": "2026-03-10T07:32:21.616045",
+      "last_checked": "2026-03-13T07:39:09.656360",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a7ab0723f650c0352fa9fda0832dc608\"",
       "file_path": "documentation/ShaderGraph/material.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math.json": {
       "hash": "6c5fabfe2b51ddc3401d48bad7688ca1d08be01504f1a7bfab11dc6f7c561210",
-      "last_checked": "2026-03-10T07:32:21.698999",
+      "last_checked": "2026-03-13T07:39:09.853411",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6adc023695167ff616e5d1a799b1f159\"",
       "file_path": "documentation/ShaderGraph/math.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/organization.json": {
       "hash": "3413b9fe7d466748759f93e6678d18dfe49e132f9b28c0d816ab77c795dfc2b1",
-      "last_checked": "2026-03-10T07:32:21.783632",
+      "last_checked": "2026-03-13T07:39:09.998138",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"128607cd8e4cf6f311d64a08d3b00f36\"",
       "file_path": "documentation/ShaderGraph/organization.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural.json": {
       "hash": "7a9aec8d83e01fd15611afb4bea444f776a23e8568bb96eaa191ea6f924ffdbc",
-      "last_checked": "2026-03-10T07:32:21.871501",
+      "last_checked": "2026-03-13T07:39:10.165410",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"551b8e86b689eeb2a380791bec843bcd\"",
       "file_path": "documentation/ShaderGraph/procedural.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit.json": {
       "hash": "bb4bdfd100b937098260612e258740eabecf89b619adbe88e0eac13ec856619e",
-      "last_checked": "2026-03-10T07:32:22.070463",
+      "last_checked": "2026-03-13T07:39:10.300887",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c872404e50b68fa65f10e8ca84cbef25\"",
       "file_path": "documentation/ShaderGraph/realitykit.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/surface.json": {
       "hash": "ff71a59f1f8432919e2126d1de322123c6baf26657bd59700ac4bb3855fdddce",
-      "last_checked": "2026-03-10T07:32:22.185075",
+      "last_checked": "2026-03-13T07:39:10.467429",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"fd38cdcd7e172484abe96c1e250dd057\"",
       "file_path": "documentation/ShaderGraph/surface.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/ramp-horizontal.json": {
       "hash": "ccd70e6bde5af78269718964a5d55415e7a6bda629a859cc2eb4c60a3d184ae0",
-      "last_checked": "2026-03-10T07:32:22.273993",
+      "last_checked": "2026-03-13T07:39:10.580388",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8bd6974bef28661e7aca70e53267052c\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/ramp-horizontal.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/ramp-vertical.json": {
       "hash": "12b2143b45f518136807d60657bac264ff3216da3348afcefbb9b5c0045fb5bf",
-      "last_checked": "2026-03-10T07:32:22.354836",
+      "last_checked": "2026-03-13T07:39:10.710594",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"717ba2019a7cf06417ab2ded08782731\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/ramp-vertical.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/ramp-4-corners.json": {
       "hash": "caa7acd95b15dfc6346d9ebcca7c18f64050d8c6cb982a7aee7ef07007e69d75",
-      "last_checked": "2026-03-10T07:32:22.435317",
+      "last_checked": "2026-03-13T07:39:10.905973",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6df1cfd8be434067f2ff14ed57d38945\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/ramp-4-corners.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/split-horizontal.json": {
       "hash": "4c3e86a6226bac6935dd1bbd7acc7eb405b8d5b2409e5dd4fe0c9630645cc0f0",
-      "last_checked": "2026-03-10T07:32:22.542417",
+      "last_checked": "2026-03-13T07:39:11.019570",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"9d708d2f9427f681b722b2c342859aae\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/split-horizontal.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/split-vertical.json": {
       "hash": "b1470a009f950317d48a0d5c89ce60d6063241f4ba4974aec6195faedb094f53",
-      "last_checked": "2026-03-10T07:32:22.677872",
+      "last_checked": "2026-03-13T07:39:11.337466",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d2c45da2a39e795ad60495601ce1521a\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/split-vertical.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/noise-2d.json": {
       "hash": "143395ac6de6ca70eff5331a5f6566e5f99e070b384272d5eabe1bc9f57c5bfb",
-      "last_checked": "2026-03-10T07:32:22.781557",
+      "last_checked": "2026-03-13T07:39:11.504123",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4e4a67b441275c00da60343909029bf5\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/noise-2d.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/cellular-noise-2d.json": {
       "hash": "6e6db306bd1cb8fac5dc2b130b3fb333e999cdcbb9b6f978dafb7a63ca7925b0",
-      "last_checked": "2026-03-10T07:32:22.867835",
+      "last_checked": "2026-03-13T07:39:11.623561",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"55f5a926c13a8fe38b0d68946544ecfa\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/cellular-noise-2d.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/worley-noise-2d.json": {
       "hash": "339dff28c443bb6143f5756f5f91c55b2c58572b487873e508d2b40ed1392373",
-      "last_checked": "2026-03-10T07:32:22.941120",
+      "last_checked": "2026-03-13T07:39:11.731837",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"bc20a7144ff4ac682fcec005f9f97b5e\"",
       "file_path": "documentation/ShaderGraph/2d-procedural/worley-noise-2d.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/image.json": {
       "hash": "2b378324d5c51d43f7c6a563dea468141fe4873af3c9edab679ee8d991088702",
-      "last_checked": "2026-03-10T07:32:23.061637",
+      "last_checked": "2026-03-13T07:39:12.020272",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"1f418c247829bfe2e295ebe05527c2b5\"",
       "file_path": "documentation/ShaderGraph/2d-texture/image.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/tiled-image.json": {
       "hash": "380690d704f4c574d6848ca608f6ce65061637910d8fe5b03aa49c2508403e2c",
-      "last_checked": "2026-03-10T07:32:23.158408",
+      "last_checked": "2026-03-13T07:39:12.145135",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8b23e9c20906c908d1eb5858e650b0c3\"",
       "file_path": "documentation/ShaderGraph/2d-texture/tiled-image.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/uv-texture.json": {
       "hash": "469820a591b8f4d26b9d084a635a05dbb468cb0c51adf17e054acd77b6c02461",
-      "last_checked": "2026-03-10T07:32:23.301258",
+      "last_checked": "2026-03-13T07:39:12.311461",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"2e780d9063c07ce102ff5d76494b00a3\"",
       "file_path": "documentation/ShaderGraph/2d-texture/uv-texture.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/transform-2d.json": {
       "hash": "79795f34c0c4aacaa3121fcc1eb29108435b3b1060b10a2bd43034ccaa07bd36",
-      "last_checked": "2026-03-10T07:32:23.372294",
+      "last_checked": "2026-03-13T07:39:12.423875",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0fa6dba24c2a1d7335c316732ee07cd7\"",
       "file_path": "documentation/ShaderGraph/2d-texture/transform-2d.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/noise-3d.json": {
       "hash": "667f0d2e02252206e4c1e98b47e64b7afea9c40791de137c6505f98fe43ec9e6",
-      "last_checked": "2026-03-10T07:32:23.464637",
+      "last_checked": "2026-03-13T07:39:12.551431",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5065ed1709bf957ebc7cadf1b03eeb1d\"",
       "file_path": "documentation/ShaderGraph/3d-procedural/noise-3d.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/fractal-noise-3d.json": {
       "hash": "74e03b1a8768e60d34dec68d7de719822acde2efa475be4d63a073e603112ff4",
-      "last_checked": "2026-03-10T07:32:23.583011",
+      "last_checked": "2026-03-13T07:39:12.691451",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"7a2b0ae4a68d52e3569d0affb0669a65\"",
       "file_path": "documentation/ShaderGraph/3d-procedural/fractal-noise-3d.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/cellular-noise-3d.json": {
       "hash": "8e1568b6056f43a6f75e8a45e322e2457e35165d1eb8507a5c5f27497a123cc1",
-      "last_checked": "2026-03-10T07:32:23.657742",
+      "last_checked": "2026-03-13T07:39:12.811333",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"fadaa27450921c2bdc1c9ca8906b7cde\"",
       "file_path": "documentation/ShaderGraph/3d-procedural/cellular-noise-3d.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/worley-noise-3d.json": {
       "hash": "d88829ac9d4e7eb5dabb8acef101230931b1c3747af757ec5c254a2f1a005904",
-      "last_checked": "2026-03-10T07:32:23.745777",
+      "last_checked": "2026-03-13T07:39:12.945353",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8ed347bc2e1f041059835c9325319fc4\"",
       "file_path": "documentation/ShaderGraph/3d-procedural/worley-noise-3d.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-texture/triplanar-projection.json": {
       "hash": "8cb93fa8286bf4802ec8bd4c564b6a81f9ac12cdea9d327e4d6b62b460552225",
-      "last_checked": "2026-03-10T07:32:23.829737",
+      "last_checked": "2026-03-13T07:39:13.131529",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"370437903b7847d983a1e367e62fb617\"",
       "file_path": "documentation/ShaderGraph/3d-texture/triplanar-projection.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/remap.json": {
       "hash": "a03b53428f53c2433b40c797747198cdc66826f56cf1f0bb53193eba2528712f",
-      "last_checked": "2026-03-10T07:32:23.923197",
+      "last_checked": "2026-03-13T07:39:13.422981",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"39eb360751c3b30ae03d735979e06e64\"",
       "file_path": "documentation/ShaderGraph/adjustment/remap.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/smooth-step.json": {
       "hash": "54fc6a8bc2cd16efe2630889e7447e046e900edb40f78562cd3b931f8af8c2ea",
-      "last_checked": "2026-03-10T07:32:24.042882",
+      "last_checked": "2026-03-13T07:39:13.711481",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"bb0c5e979c1a2c797b7213a56c39f58a\"",
       "file_path": "documentation/ShaderGraph/adjustment/smooth-step.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/luminance.json": {
       "hash": "034b9b6144cb0a88f8923d8e38405e8fe36a58fc8edfa0bde9aa576e9bfa8681",
-      "last_checked": "2026-03-10T07:32:24.116107",
+      "last_checked": "2026-03-13T07:39:13.812028",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"75d82145d7708a80032564a18cc7fb0c\"",
       "file_path": "documentation/ShaderGraph/adjustment/luminance.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/rgb-to-hsv.json": {
       "hash": "53302d2dd19afe68c23ad1e73e85b17cf35cd61ee61060a8ec3e670396b71465",
-      "last_checked": "2026-03-10T07:32:24.192240",
+      "last_checked": "2026-03-13T07:39:13.938067",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4ed861b7b979ad9fdedbc2b4c76547f5\"",
       "file_path": "documentation/ShaderGraph/adjustment/rgb-to-hsv.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/hsv-to-rgb.json": {
       "hash": "76e7c869f9419e68bfdb214ca4462620be1d911b46865521f37ce877235ea36a",
-      "last_checked": "2026-03-10T07:32:24.267772",
+      "last_checked": "2026-03-13T07:39:14.063657",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cbebc8abe6f1e09a868af92b21fc4dd8\"",
       "file_path": "documentation/ShaderGraph/adjustment/hsv-to-rgb.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/contrast.json": {
       "hash": "0f0df7dacbc11c96838f0e6e2b51d41d03c2160aacf56150842b7178178965bb",
-      "last_checked": "2026-03-10T07:32:24.394908",
+      "last_checked": "2026-03-13T07:39:14.241470",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"69b30ac730256d89e7e469285f9761df\"",
       "file_path": "documentation/ShaderGraph/adjustment/contrast.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/range.json": {
       "hash": "4c039ab9468f6da26720774b24749479c19901d1082fc18e270c8befba01aac0",
-      "last_checked": "2026-03-10T07:32:24.476866",
+      "last_checked": "2026-03-13T07:39:14.399820",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"58ac341fbe86d6f08dc684a8c3b0678d\"",
       "file_path": "documentation/ShaderGraph/adjustment/range.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/hsv-adjust.json": {
       "hash": "005641fc7da7da8ceba36680af311f16e51b210a318e02ee75e26f2bb9d77f20",
-      "last_checked": "2026-03-10T07:32:24.599659",
+      "last_checked": "2026-03-13T07:39:14.533233",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"344307144347c6f901997af4cffaa401\"",
       "file_path": "documentation/ShaderGraph/adjustment/hsv-adjust.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/saturate.json": {
       "hash": "a896c89f0c847ecf4631031a771f22621fb818dfc6a6c6a7bf47ca7666c3b041",
-      "last_checked": "2026-03-10T07:32:24.682641",
+      "last_checked": "2026-03-13T07:39:14.694810",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0124886eb8d90530ca2218bb6eb1a873\"",
       "file_path": "documentation/ShaderGraph/adjustment/saturate.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/step-(realitykit).json": {
       "hash": "ba13045e6427f1d1186652a60d3847bb729d2f007ad28e11862bb3285186fc6f",
-      "last_checked": "2026-03-10T07:32:24.786159",
+      "last_checked": "2026-03-13T07:39:14.968507",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"9fab3c9f8fdbc1a452cedfb209c8644b\"",
       "file_path": "documentation/ShaderGraph/adjustment/step-realitykit.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/application/time-(float).json": {
       "hash": "50260ae8375fe415745e2b9cd5f24c73fcd791811fd7672270185480cef12856",
-      "last_checked": "2026-03-10T07:32:24.879960",
+      "last_checked": "2026-03-13T07:39:15.132108",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5278f655f833111d0d1bd1711c4324bd\"",
       "file_path": "documentation/ShaderGraph/application/time-float.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/application/up-direction.json": {
       "hash": "46ce9363c7c71af8d6554ddf275df1d710fb9df5d99d87720f4f2855b02caa0d",
-      "last_checked": "2026-03-10T07:32:24.969493",
+      "last_checked": "2026-03-13T07:39:15.290085",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0a1b1889e47fa6845c0ea3ff9717b5bd\"",
       "file_path": "documentation/ShaderGraph/application/up-direction.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/premultiply.json": {
       "hash": "23d8ff5d95e7c096555c3327cbc5e2acfa533fe5efecf6761c36dc965f3a4cd4",
-      "last_checked": "2026-03-10T07:32:25.042687",
+      "last_checked": "2026-03-13T07:39:15.464919",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"00c573d02f8b39d185319d2789e6e688\"",
       "file_path": "documentation/ShaderGraph/compositing/premultiply.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/unpremultiply.json": {
       "hash": "963e8dda3840f393359cd7411f8d9a07b38b47aef073f049ecead0495949c066",
-      "last_checked": "2026-03-10T07:32:25.118626",
+      "last_checked": "2026-03-13T07:39:15.616490",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e48cb07c4ec8f8dbde6d26edffe1a4d2\"",
       "file_path": "documentation/ShaderGraph/compositing/unpremultiply.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/additive-mix.json": {
       "hash": "89cfc77f5bad70f1d1184ff23e49489e830fbce5f0878daa454e09de9b94d51d",
-      "last_checked": "2026-03-10T07:32:25.220151",
+      "last_checked": "2026-03-13T07:39:15.729557",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4bb694df393c9b830e303513356df410\"",
       "file_path": "documentation/ShaderGraph/compositing/additive-mix.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/subtractive-mix.json": {
       "hash": "aa1d6339ddbb6d840e6e150539b0b77e3076a168c80cdbaa3d442352cd699700",
-      "last_checked": "2026-03-10T07:32:25.293625",
+      "last_checked": "2026-03-13T07:39:15.861407",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5758f7b2c26e8863ae1ef18d754605db\"",
       "file_path": "documentation/ShaderGraph/compositing/subtractive-mix.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/difference.json": {
       "hash": "3891eca8bf3545f4e6ec447148c5ba47c118460da368937262dae7adb2fd956b",
-      "last_checked": "2026-03-10T07:32:25.434816",
+      "last_checked": "2026-03-13T07:39:15.997786",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8af003600d5f61c54b32891880edc93e\"",
       "file_path": "documentation/ShaderGraph/compositing/difference.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/burn.json": {
       "hash": "fc3bdbbf3ed96c029a5ceee49851d32fe5696736841d9fad588164930eeb6637",
-      "last_checked": "2026-03-10T07:32:25.522833",
+      "last_checked": "2026-03-13T07:39:16.159219",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"468d2d386779caa3aef4ff0645c84fd6\"",
       "file_path": "documentation/ShaderGraph/compositing/burn.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/dodge.json": {
       "hash": "f50852adf82f86b8d3946c63e1bbd4993e2a78e9ffc6ee32e60a7d9e16eb31fe",
-      "last_checked": "2026-03-10T07:32:25.608163",
+      "last_checked": "2026-03-13T07:39:16.438967",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6f0617d888e56e31079d265d79950dc1\"",
       "file_path": "documentation/ShaderGraph/compositing/dodge.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/screen.json": {
       "hash": "f9b2e8d15239161659f0ed7579c05d0f466210a5c7203643d2e6121ff2e9580c",
-      "last_checked": "2026-03-10T07:32:25.687965",
+      "last_checked": "2026-03-13T07:39:16.595784",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cbc5e174c5cb7ac772d84d506055c1f2\"",
       "file_path": "documentation/ShaderGraph/compositing/screen.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/overlay.json": {
       "hash": "d25ea1238e035e15cf25a5a162aa83ac9d86b29b0dfb9952fff7de23248f4aaa",
-      "last_checked": "2026-03-10T07:32:25.778230",
+      "last_checked": "2026-03-13T07:39:16.710103",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"995953e8ec142e57287af0c25448d089\"",
       "file_path": "documentation/ShaderGraph/compositing/overlay.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/disjoint-over.json": {
       "hash": "815063a4ff414dde381fd76fe6c4400826d753b220d2516309c1685708819eb0",
-      "last_checked": "2026-03-10T07:32:25.915300",
+      "last_checked": "2026-03-13T07:39:16.852422",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"39ff58e87315d812a28c7fb5cd12f0b3\"",
       "file_path": "documentation/ShaderGraph/compositing/disjoint-over.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/in.json": {
       "hash": "6dcc6b512318981089344e206ad275cf76e0b294b23acf7d638088a439a682df",
-      "last_checked": "2026-03-10T07:32:25.992360",
+      "last_checked": "2026-03-13T07:39:16.993588",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"528af8a6b8e4e6e278ffcf9c8a23a00a\"",
       "file_path": "documentation/ShaderGraph/compositing/in.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/mask.json": {
       "hash": "5be0163079cc46d717e04213de7884abc0f9460f7c121d92a99da4606d376b75",
-      "last_checked": "2026-03-10T07:32:26.074510",
+      "last_checked": "2026-03-13T07:39:17.123661",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a87e8370bc2c6639e2e94a3b8074d71d\"",
       "file_path": "documentation/ShaderGraph/compositing/mask.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/matte.json": {
       "hash": "2b94d48f1e3175a64025c5d6d7ff89bf2358936271977d8dfd7da285c7385096",
-      "last_checked": "2026-03-10T07:32:26.157542",
+      "last_checked": "2026-03-13T07:39:17.300560",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cd22952d16b0adbbb683f7aea3b5e44c\"",
       "file_path": "documentation/ShaderGraph/compositing/matte.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/out.json": {
       "hash": "5255a438cfb73f6f1c0268764a0d7859e69b6325ffde676720dcd65264dd7b2f",
-      "last_checked": "2026-03-10T07:32:26.238105",
+      "last_checked": "2026-03-13T07:39:17.413447",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6b17158ad54c52c6ef4cea8e2f338387\"",
       "file_path": "documentation/ShaderGraph/compositing/out.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/over.json": {
       "hash": "7e8f995cf8b38775f9cd862eedd1fedd2d338ddcbc2e9bb61158546a082c2661",
-      "last_checked": "2026-03-10T07:32:26.311459",
+      "last_checked": "2026-03-13T07:39:17.548545",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e02ab542932ecd768b101fba17a81f6e\"",
       "file_path": "documentation/ShaderGraph/compositing/over.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/inside.json": {
       "hash": "a9103251ba34f2f1f3127378ec2d6dd82129c0dcfa102c9a96fa45e5df814ee1",
-      "last_checked": "2026-03-10T07:32:26.393826",
+      "last_checked": "2026-03-13T07:39:17.847926",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b6d362fe7460e5fad1695eeea6379f91\"",
       "file_path": "documentation/ShaderGraph/compositing/inside.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/outside.json": {
       "hash": "69310d51f7cbb6a84a827a9badfeebbb973266bcf4ac9c180ebde15ec34286f0",
-      "last_checked": "2026-03-10T07:32:26.467011",
+      "last_checked": "2026-03-13T07:39:17.971886",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"05d44b1ee709c7d2ea1fb7acc3c4c1af\"",
       "file_path": "documentation/ShaderGraph/compositing/outside.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/mix.json": {
       "hash": "9bd6d9720fa32361a1e61a7df4ea8c69627d833c3891bbb3e40516b62546ab8a",
-      "last_checked": "2026-03-10T07:32:26.550662",
+      "last_checked": "2026-03-13T07:39:18.105943",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"9507e536a59f8cf554f5d4b817d95969\"",
       "file_path": "documentation/ShaderGraph/compositing/mix.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/convert.json": {
       "hash": "d237509ac236d99e9d434fffbb02a79d7787975f9c9e1dfad59865c1f9a0d0ce",
-      "last_checked": "2026-03-10T07:32:26.653681",
+      "last_checked": "2026-03-13T07:39:18.271767",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e66cfac3614b4d199d7dcfdca1b71308\"",
       "file_path": "documentation/ShaderGraph/data/convert.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/swizzle.json": {
       "hash": "78ceaad789d159ff870052435cab2723803b77d6408d0b1b5486a4fc035a019c",
-      "last_checked": "2026-03-10T07:32:26.736883",
+      "last_checked": "2026-03-13T07:39:18.452160",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4b3c5d5ab2f5cf789e9e5810918a4317\"",
       "file_path": "documentation/ShaderGraph/data/swizzle.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/combine-2.json": {
       "hash": "85996ad9ad15c4f7420cd232af17e5be15546b601b7fe7903a4930f8e83df364",
-      "last_checked": "2026-03-10T07:32:26.842621",
+      "last_checked": "2026-03-13T07:39:18.773550",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"15d76d14e1dad0d8866042fadb825b3c\"",
       "file_path": "documentation/ShaderGraph/data/combine-2.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/combine-3.json": {
       "hash": "e6221b04c2b699e95b91340218ffc815e59fcbf6e2db746715cbd2118a086806",
-      "last_checked": "2026-03-10T07:32:26.925121",
+      "last_checked": "2026-03-13T07:39:18.936534",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"24322937cb9325b23d19dc4644d2556b\"",
       "file_path": "documentation/ShaderGraph/data/combine-3.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/combine-4.json": {
       "hash": "942aca4802457d85217c7ae0afa8d25c7ce4ffea18861aae6d4433bb54d20f6b",
-      "last_checked": "2026-03-10T07:32:27.006017",
+      "last_checked": "2026-03-13T07:39:19.071099",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"92f11c4501139ae588fc50b9d592196a\"",
       "file_path": "documentation/ShaderGraph/data/combine-4.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/extract.json": {
       "hash": "a83a9f411cbe7404bbab152c2e47e3af9cb35f11b9094fb9823962235ab60af4",
-      "last_checked": "2026-03-10T07:32:27.134153",
+      "last_checked": "2026-03-13T07:39:19.180108",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"54841cfc0dcedb2c085b4e437e970610\"",
       "file_path": "documentation/ShaderGraph/data/extract.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/separate-2.json": {
       "hash": "dd42b43c360db48750a26eefff755aa1a2e4e0c06bda8e2cd29ab3b9da0778cf",
-      "last_checked": "2026-03-10T07:32:27.247130",
+      "last_checked": "2026-03-13T07:39:19.303969",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e74b49b1f822563f997c40038c1ec7d8\"",
       "file_path": "documentation/ShaderGraph/data/separate-2.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/separate-3.json": {
       "hash": "aa7ad0ab5266a0b568b0a509024ddde6377a8e14a6c3e5c59d6420d2b5a04711",
-      "last_checked": "2026-03-10T07:32:27.323003",
+      "last_checked": "2026-03-13T07:39:19.499395",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"9621fc32ca9c12f61848eaf8c17097a3\"",
       "file_path": "documentation/ShaderGraph/data/separate-3.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/separate-4.json": {
       "hash": "32bddc8beb17e0e55ce82dbe9992f445775c53026daf38a57f608263c5ae7a83",
-      "last_checked": "2026-03-10T07:32:27.420462",
+      "last_checked": "2026-03-13T07:39:19.680859",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b30fe2f8c0823675da2c137016aef8e0\"",
       "file_path": "documentation/ShaderGraph/data/separate-4.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/primvar-reader.json": {
       "hash": "a22e445db8acbaa2dfaaa8cf496933733eef6210b2bcc76186340e73f0cf6c3c",
-      "last_checked": "2026-03-10T07:32:27.492453",
+      "last_checked": "2026-03-13T07:39:19.801813",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f1610fe5f499e5fae58a75bdbad8a7e9\"",
       "file_path": "documentation/ShaderGraph/data/primvar-reader.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/position.json": {
       "hash": "698d3f843f27abdfd40109680e7d496648d398a0067ed108936a8756ead553c9",
-      "last_checked": "2026-03-10T07:32:27.624090",
+      "last_checked": "2026-03-13T07:39:20.121404",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cf433da5394e7a329af7b54febc7281c\"",
       "file_path": "documentation/ShaderGraph/geometric/position.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/normal.json": {
       "hash": "83c023d0d436d8565e035620a5a30fc51a97c852bdb8d942753d586198dec82d",
-      "last_checked": "2026-03-10T07:32:27.697158",
+      "last_checked": "2026-03-13T07:39:20.277493",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"214a47b535f1662fec1dd03f180395f5\"",
       "file_path": "documentation/ShaderGraph/geometric/normal.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/tangent.json": {
       "hash": "c885909d012e8265635311692ac519bbad3f39e63e5815a66ac8c91ae1a379db",
-      "last_checked": "2026-03-10T07:32:27.768509",
+      "last_checked": "2026-03-13T07:39:20.396958",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"87b6de08ee5a02f18de8cefb6c730c20\"",
       "file_path": "documentation/ShaderGraph/geometric/tangent.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/bitangent.json": {
       "hash": "3e568d626fd2fcb0624530f7c0efdb9f527b64bca7a4d1527fdf3cc552cc833e",
-      "last_checked": "2026-03-10T07:32:27.842018",
+      "last_checked": "2026-03-13T07:39:20.538712",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"aecfa02c89d402ba1799ca552a10bd84\"",
       "file_path": "documentation/ShaderGraph/geometric/bitangent.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/texture-coordinates.json": {
       "hash": "9d162558849f268a8abfa6ff8b47732135512e656c5976be2f3ca4abd73ddfe3",
-      "last_checked": "2026-03-10T07:32:27.920446",
+      "last_checked": "2026-03-13T07:39:20.683068",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"7a4265b9a9486c59583e837afdc5edbb\"",
       "file_path": "documentation/ShaderGraph/geometric/texture-coordinates.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/geometry-color.json": {
       "hash": "81953ee3c8ac00429e946613d6380ffb958e700e22be4211449d56f96aeadc51",
-      "last_checked": "2026-03-10T07:32:27.997168",
+      "last_checked": "2026-03-13T07:39:20.999319",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5e3d799f8b3d1f7a89ae3e3fa07fa084\"",
       "file_path": "documentation/ShaderGraph/geometric/geometry-color.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/geometric-property.json": {
       "hash": "3822a876e3b56f6545d584fab1cab12f50a04002f4b4be63812177a38c20e742",
-      "last_checked": "2026-03-10T07:32:28.077094",
+      "last_checked": "2026-03-13T07:39:21.153205",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"26370157017860931f14ea3a04b8d7e8\"",
       "file_path": "documentation/ShaderGraph/geometric/geometric-property.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/reflect-(realitykit).json": {
       "hash": "3fd7c39b7a7461b4abd639f4ae8689320f5da20524e7417f78a59180e2f2fb73",
-      "last_checked": "2026-03-10T07:32:28.174970",
+      "last_checked": "2026-03-13T07:39:21.270936",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e83aac9ea5e7a87805cc04fbf2615afd\"",
       "file_path": "documentation/ShaderGraph/geometric/reflect-realitykit.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/refract-(realitykit).json": {
       "hash": "8251140a127faeb656410d94f366283b3987b504df9c0b4f7195b588f0eb0e30",
-      "last_checked": "2026-03-10T07:32:28.277894",
+      "last_checked": "2026-03-13T07:39:21.415064",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5421ac12bd1bc3decd4793b8e6c923bf\"",
       "file_path": "documentation/ShaderGraph/geometric/refract-realitykit.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/if-greater.json": {
       "hash": "c2d4ba6c2b1d990d1f89b8303b3723772d0caea13385e286f01761ceaa9419d2",
-      "last_checked": "2026-03-10T07:32:28.459231",
+      "last_checked": "2026-03-13T07:39:21.543195",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a0f7be8773f859c94d22c86697e55282\"",
       "file_path": "documentation/ShaderGraph/logic/if-greater.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/if-greater-or-equal.json": {
       "hash": "200f7fe1813ce0d9008749b43d8f94f2bc95b7d38d7e5067bc99a88b9482755c",
-      "last_checked": "2026-03-10T07:32:28.573594",
+      "last_checked": "2026-03-13T07:39:21.699028",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a3048c99332f403b3c598578ee026d9a\"",
       "file_path": "documentation/ShaderGraph/logic/if-greater-or-equal.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/if-equal.json": {
       "hash": "dede1935d79395b0a4085021c3790112dfd64bf9b52a6b3aaa707f7e7dcee9c8",
-      "last_checked": "2026-03-10T07:32:28.659719",
+      "last_checked": "2026-03-13T07:39:21.847648",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4127466070a2a5cc10bf34656fb36ef4\"",
       "file_path": "documentation/ShaderGraph/logic/if-equal.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/switch.json": {
       "hash": "b6e8742afb85ae8c927952d6d134dee158dadbe8065a63d563dbf553f76a4f89",
-      "last_checked": "2026-03-10T07:32:28.745092",
+      "last_checked": "2026-03-13T07:39:21.958904",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"13b34b37d23135fbd5efebe009c95828\"",
       "file_path": "documentation/ShaderGraph/logic/switch.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/and-(realitykit).json": {
       "hash": "680f8410869394900938162ce9f3ac06ef761cead8c69615a0d92a75c5fb2633",
-      "last_checked": "2026-03-10T07:32:28.825766",
+      "last_checked": "2026-03-13T07:39:22.102472",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5db3551616032ca775721ee2bd866c14\"",
       "file_path": "documentation/ShaderGraph/logic/and-realitykit.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/or-(realitykit).json": {
       "hash": "c92ff52ada07b050d8db3077321b2e329484dc86f0431638e430bf19de3ff16a",
-      "last_checked": "2026-03-10T07:32:28.903510",
+      "last_checked": "2026-03-13T07:39:22.236812",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cdaf12f944d08a37b0d4dcd8fd46b132\"",
       "file_path": "documentation/ShaderGraph/logic/or-realitykit.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/xor-(realitykit).json": {
       "hash": "a9683dac9a22ce9a2c924437f0ae08cf679da11979a97e81ca4fb83f74db90e1",
-      "last_checked": "2026-03-10T07:32:28.974825",
+      "last_checked": "2026-03-13T07:39:22.419585",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"95322fc71aa6f34a90d112809e286293\"",
       "file_path": "documentation/ShaderGraph/logic/xor-realitykit.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/not-(realitykit).json": {
       "hash": "1c0670775325a4a8117d6c0358a1103c23301b661a5ad5f838ab8c7fb96f89c0",
-      "last_checked": "2026-03-10T07:32:29.050923",
+      "last_checked": "2026-03-13T07:39:22.592200",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a555db5985e3832e9c9286947a30457f\"",
       "file_path": "documentation/ShaderGraph/logic/not-realitykit.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/select-(realitykit).json": {
       "hash": "9d4dcc676381b6a7e7a89c636e121d403d9b810f210964bcef28da981ee50930",
-      "last_checked": "2026-03-10T07:32:29.162581",
+      "last_checked": "2026-03-13T07:39:22.754649",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"01fa2c92b47c9509aac040088fa2f260\"",
       "file_path": "documentation/ShaderGraph/logic/select-realitykit.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/multiply-add-24-(realitykit).json": {
       "hash": "391377586b2b07634e20d7410bb73895a98b272dba2b395eea29b33c43e33aca",
-      "last_checked": "2026-03-10T07:32:29.244260",
+      "last_checked": "2026-03-13T07:39:22.866480",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"693dbf3e81a0a281f772de0633249053\"",
       "file_path": "documentation/ShaderGraph/realitykit/multiply-add-24-realitykit.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/multiply-24-(realitykit).json": {
       "hash": "62a9cf154387e986c6899dcda0415703172e917fb4792a793ceefc0f92a94f67",
-      "last_checked": "2026-03-10T07:32:29.480718",
+      "last_checked": "2026-03-13T07:39:23.022214",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f6fad0ded62c135f1a087e4336addbb8\"",
       "file_path": "documentation/ShaderGraph/realitykit/multiply-24-realitykit.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/material/node-graph.json": {
       "hash": "f8f005d2c81ae29cdeaec2a8851e881d39bc95dfed4209d1e8203a5a22ff997e",
-      "last_checked": "2026-03-10T07:32:29.596841",
+      "last_checked": "2026-03-13T07:39:23.151258",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"50474a032a94b4d7e20e1476be0b125d\"",
       "file_path": "documentation/ShaderGraph/material/node-graph.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/add.json": {
       "hash": "35c2793821caa71c3054240892275523a4c7a7d1b5761899563839632db8bd63",
-      "last_checked": "2026-03-10T07:32:29.716413",
+      "last_checked": "2026-03-13T07:39:23.326751",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0508aaa712476df85cb89704279d95c8\"",
       "file_path": "documentation/ShaderGraph/math/add.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/subtract.json": {
       "hash": "b577ca3dd15f955e449116a34780ad8b324059961d5c1b3ce8674229a169be45",
-      "last_checked": "2026-03-10T07:32:29.842657",
+      "last_checked": "2026-03-13T07:39:23.453131",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"427c5600d8703bf56a5e1ee2edb8ffd7\"",
       "file_path": "documentation/ShaderGraph/math/subtract.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/multiply.json": {
       "hash": "1195cb82dbce9dcaf2c565552b2697aefa452cefae50edb63f49802b404b1d61",
-      "last_checked": "2026-03-10T07:32:29.934897",
+      "last_checked": "2026-03-13T07:39:23.645970",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a04e73aaee99421a9958c0ad3d5df4e6\"",
       "file_path": "documentation/ShaderGraph/math/multiply.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/divide.json": {
       "hash": "24db751cde939aa6fcd7bca3231f2bd388a445ef4d8322e0d4c83d2551e93ddb",
-      "last_checked": "2026-03-10T07:32:30.038294",
+      "last_checked": "2026-03-13T07:39:23.759590",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"729512b796f6763feabaffa43179fe80\"",
       "file_path": "documentation/ShaderGraph/math/divide.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/modulo.json": {
       "hash": "281a05d3d77b8c02ce7ed8b2dd0fa62a3a042b051f3268d60094e5e572355343",
-      "last_checked": "2026-03-10T07:32:30.118115",
+      "last_checked": "2026-03-13T07:39:23.868728",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d9a119f3a54c29a0acb048f3a9020266\"",
       "file_path": "documentation/ShaderGraph/math/modulo.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/abs.json": {
       "hash": "2f55bf7a3b3d37189e4ab5b0525c443b70b1d1cd54146f6fe9543b63758393a3",
-      "last_checked": "2026-03-10T07:32:30.237306",
+      "last_checked": "2026-03-13T07:39:24.010257",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"aaebf6f1894c12d84a5431fbebbe30e5\"",
       "file_path": "documentation/ShaderGraph/math/abs.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/floor.json": {
       "hash": "e087211a77a9107053028d34ac19df65618bcba068a7fd11b9591faf567b3e6a",
-      "last_checked": "2026-03-10T07:32:30.324571",
+      "last_checked": "2026-03-13T07:39:24.130900",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"af4f081522a02c046931c52379d86637\"",
       "file_path": "documentation/ShaderGraph/math/floor.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/ceiling.json": {
       "hash": "d03ba36e7d3899814ae75b6c30c43a4113ca553ce7732234dfa62ae2a4877013",
-      "last_checked": "2026-03-10T07:32:30.450187",
+      "last_checked": "2026-03-13T07:39:24.435648",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"63c0115a38778739431b6841ec0cdfdb\"",
       "file_path": "documentation/ShaderGraph/math/ceiling.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/power.json": {
       "hash": "83f2f761dd2eab5630cb48b000a1a6dcf6d9034b801be8251a8539dc3e5e61d5",
-      "last_checked": "2026-03-10T07:32:30.531590",
+      "last_checked": "2026-03-13T07:39:24.555123",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"7a3c4288a63fe6b2601dc02c86a21b29\"",
       "file_path": "documentation/ShaderGraph/math/power.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/sin.json": {
       "hash": "f0a0edbc24ed34399722f6d8186b183284789d896ab59d8d3f1263486ea2e661",
-      "last_checked": "2026-03-10T07:32:30.629316",
+      "last_checked": "2026-03-13T07:39:24.726541",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ad78b8a8379e0787b3541aa2126a79d6\"",
       "file_path": "documentation/ShaderGraph/math/sin.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/cos.json": {
       "hash": "a109bca7bb2092ad1d11f23b18ea14546182fc30e10231ba4ae3f8c93b3995c7",
-      "last_checked": "2026-03-10T07:32:30.713735",
+      "last_checked": "2026-03-13T07:39:24.907437",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"7fe79b862389f6fe290dee52e5c94184\"",
       "file_path": "documentation/ShaderGraph/math/cos.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/tan.json": {
       "hash": "579b1d394a2a7fa014c82eea84e0707d6a6dce52d10b4d7ba39214e352e600dd",
-      "last_checked": "2026-03-10T07:32:30.793638",
+      "last_checked": "2026-03-13T07:39:25.009934",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a0006926c86e8e2551ba8382b692b8a9\"",
       "file_path": "documentation/ShaderGraph/math/tan.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/asin.json": {
       "hash": "19090c73333d328b484fea7d852caf792e874da136a3eee5ebdb9aa90db5ed60",
-      "last_checked": "2026-03-10T07:32:30.877465",
+      "last_checked": "2026-03-13T07:39:25.130621",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f2e8cdc81ce50ba492d31ebe348b8c1f\"",
       "file_path": "documentation/ShaderGraph/math/asin.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/acos.json": {
       "hash": "1a9cc704f7a142017c7e6a13c666a895b58a10b2069992d230df7e940ee782b2",
-      "last_checked": "2026-03-10T07:32:30.947622",
+      "last_checked": "2026-03-13T07:39:25.263813",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"afdf1c44fb8ccf654b2a57ef6e423d1d\"",
       "file_path": "documentation/ShaderGraph/math/acos.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/atan2.json": {
       "hash": "9877b1f37cfdd0b1812b34147e8d56c4044b764645f90bee7f25efb0fa1c6279",
-      "last_checked": "2026-03-10T07:32:31.022667",
+      "last_checked": "2026-03-13T07:39:25.380170",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"2af7f16bd633f96d04e0bd6b04f15a90\"",
       "file_path": "documentation/ShaderGraph/math/atan2.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/square-root.json": {
       "hash": "3908014d4cc9d9bf085c685aae160d7a6ff9a0b0d6375f5d5b36e332845c6cc5",
-      "last_checked": "2026-03-10T07:32:31.096830",
+      "last_checked": "2026-03-13T07:39:25.545821",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"df8c6e8b995e4822297878250d6b4f6a\"",
       "file_path": "documentation/ShaderGraph/math/square-root.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/natural-log.json": {
       "hash": "e8b32de55fbf7cb7e8d959c7b504cc4592e836247634b0d4cef3b10f0e0f1347",
-      "last_checked": "2026-03-10T07:32:31.168088",
+      "last_checked": "2026-03-13T07:39:25.704308",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"025e5f3078dea14e26c25f7df4fde04c\"",
       "file_path": "documentation/ShaderGraph/math/natural-log.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/exp.json": {
       "hash": "34c350c3780ac643acbd0417d65ffb062724bca0922180fe7e7036be5b63f5e7",
-      "last_checked": "2026-03-10T07:32:31.243719",
+      "last_checked": "2026-03-13T07:39:25.812710",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"19f9fafdfedef428f03ee92d50394a95\"",
       "file_path": "documentation/ShaderGraph/math/exp.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/sign.json": {
       "hash": "4cab3d5b37a2c52768cd7c2f3e129e070ee7eb03b3061ba8a92e7d12246e0f60",
-      "last_checked": "2026-03-10T07:32:31.325246",
+      "last_checked": "2026-03-13T07:39:25.984316",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"36314805de5bdfc752a0037af053fb27\"",
       "file_path": "documentation/ShaderGraph/math/sign.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/clamp.json": {
       "hash": "213dbdd8eac6c1ebecdb015f5e2e41203d5ed9c452cc3ed4f25cb139146d7f6c",
-      "last_checked": "2026-03-10T07:32:31.420982",
+      "last_checked": "2026-03-13T07:39:26.157259",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d3f445640006b5a0c538f7f1029e01fa\"",
       "file_path": "documentation/ShaderGraph/math/clamp.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/min.json": {
       "hash": "6c62226ff885dd620168ed2facbc0dee5db23ad9560ad173b88b89ad6c6d149e",
-      "last_checked": "2026-03-10T07:32:31.534894",
+      "last_checked": "2026-03-13T07:39:26.289387",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"df905dc8f253a7fbc06f3101e4e509a4\"",
       "file_path": "documentation/ShaderGraph/math/min.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/max.json": {
       "hash": "4cb173a23346649e5262a7c01fb41ec8329b591de1d2d6b41dff40437ee62cc6",
-      "last_checked": "2026-03-10T07:32:31.626102",
+      "last_checked": "2026-03-13T07:39:26.410093",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6b2717eff36f77b012359a9cd352b6ba\"",
       "file_path": "documentation/ShaderGraph/math/max.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/normalize.json": {
       "hash": "d478fb39edef39d022466719df6a30bf17c44726fb32877e8b50b2edc138b9fa",
-      "last_checked": "2026-03-10T07:32:31.703480",
+      "last_checked": "2026-03-13T07:39:26.550817",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"eef790b06520944ce50b15d3668331e6\"",
       "file_path": "documentation/ShaderGraph/math/normalize.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/magnitude.json": {
       "hash": "4830e7ca99cd6de3f0210d12306cbb5800069121e4f6eb8dca6e7b89f1d707c9",
-      "last_checked": "2026-03-10T07:32:31.791905",
+      "last_checked": "2026-03-13T07:39:26.707612",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c7829fe14bdaa4701bd291927c571dc4\"",
       "file_path": "documentation/ShaderGraph/math/magnitude.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/dot-product.json": {
       "hash": "b96a4bcbdd68931be5eb12ba630f0c688b37a8211cc30423d9ef281638fa6793",
-      "last_checked": "2026-03-10T07:32:31.867019",
+      "last_checked": "2026-03-13T07:39:26.994224",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b11fc6baa8f0dcd91ed77fd593eb19b4\"",
       "file_path": "documentation/ShaderGraph/math/dot-product.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/cross-product.json": {
       "hash": "0e7c53e9810f5e69f78742715edf99e22a5024b1e5c63649fc9ea3a27a852785",
-      "last_checked": "2026-03-10T07:32:31.936874",
+      "last_checked": "2026-03-13T07:39:27.153182",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cd6d31310acf08bbbbfd4563f9af7c65\"",
       "file_path": "documentation/ShaderGraph/math/cross-product.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-point.json": {
       "hash": "eab48d434f90037ab95d1ebe6239aeed11f54515bc5f58c0748b80242fc8d738",
-      "last_checked": "2026-03-10T07:32:32.013892",
+      "last_checked": "2026-03-13T07:39:27.268503",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"58757fdf7d0999bc9fde22c2e9fef8cd\"",
       "file_path": "documentation/ShaderGraph/math/transform-point.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-vector.json": {
       "hash": "cccf045c5ab0930fb1f696a3dc76165778d6c7cddc4792fafc94a17ee32cd8ad",
-      "last_checked": "2026-03-10T07:32:32.096643",
+      "last_checked": "2026-03-13T07:39:27.397589",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c0ea3a0b1d5cd728dcd58bdb516ab025\"",
       "file_path": "documentation/ShaderGraph/math/transform-vector.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-normal.json": {
       "hash": "6c04b3d478059afb3970ee109d56371b8633f2a9047af9b9dc82efb8ab15d3b5",
-      "last_checked": "2026-03-10T07:32:32.173437",
+      "last_checked": "2026-03-13T07:39:27.509992",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"69a6a4e981d063916ed83bb1b19eeecf\"",
       "file_path": "documentation/ShaderGraph/math/transform-normal.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-matrix.json": {
       "hash": "f0ea9f11eeae661a890243a1ff87916103a468745d8b99b6deaddec435c3b052",
-      "last_checked": "2026-03-10T07:32:32.263052",
+      "last_checked": "2026-03-13T07:39:27.691135",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c2b7cb063ae503df884be9ef36456ba9\"",
       "file_path": "documentation/ShaderGraph/math/transform-matrix.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transpose.json": {
       "hash": "ae4cc6ef2525362a2ddcab421c61b94bb2174ffabcf956872b0d3d64e1ca33d3",
-      "last_checked": "2026-03-10T07:32:32.352605",
+      "last_checked": "2026-03-13T07:39:27.833423",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b6257bf857ac567434a477e690ae4bcf\"",
       "file_path": "documentation/ShaderGraph/math/transpose.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/determinant.json": {
       "hash": "85239caed669b1abfff7ac30c0859c75986376cdfda89556cfee083886a11e08",
-      "last_checked": "2026-03-10T07:32:32.436006",
+      "last_checked": "2026-03-13T07:39:27.997775",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"89334b9a31fe4bafd6e95fe62bc1b464\"",
       "file_path": "documentation/ShaderGraph/math/determinant.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/invert-matrix.json": {
       "hash": "427fc1ba87c82fb4c9713af8f2c897df6abeafef104710c8ea695746a955a499",
-      "last_checked": "2026-03-10T07:32:32.555523",
+      "last_checked": "2026-03-13T07:39:28.161805",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5c8cc3191b922da5eb76e953f03d50bf\"",
       "file_path": "documentation/ShaderGraph/math/invert-matrix.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/rotate-2d.json": {
       "hash": "74c95fe5774dd9dc3b15be1b0c1240f20beaa83963fbadd8793e104ef1680ce6",
-      "last_checked": "2026-03-10T07:32:32.636558",
+      "last_checked": "2026-03-13T07:39:28.319989",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"02e1356a2c1a856e9ffad8a47a5149de\"",
       "file_path": "documentation/ShaderGraph/math/rotate-2d.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/rotate-3d.json": {
       "hash": "cb7b3b7f07bd22076fa27b4decb8451ec5b9ce81904e605c734b26f919be95b5",
-      "last_checked": "2026-03-10T07:32:32.716604",
+      "last_checked": "2026-03-13T07:39:28.423373",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"606e90d1bfa941bbb703255e14b13206\"",
       "file_path": "documentation/ShaderGraph/math/rotate-3d.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/place-2d.json": {
       "hash": "f3f3519b6482658284be0ea4d4f5f3c4585cf56b12720858f143e9e7453b4546",
-      "last_checked": "2026-03-10T07:32:32.796153",
+      "last_checked": "2026-03-13T07:39:28.604115",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5d6c5092d55f9744cdd7060f3dc35c85\"",
       "file_path": "documentation/ShaderGraph/math/place-2d.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/round.json": {
       "hash": "dc99d2e81cfd973760b259338ba34ae40978cb59e2d5754ee86e33c8586d5aca",
-      "last_checked": "2026-03-10T07:32:32.910477",
+      "last_checked": "2026-03-13T07:39:28.726053",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d06a8cf81dd4952d3e4f2fa9d03a90b7\"",
       "file_path": "documentation/ShaderGraph/math/round.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/safe-power.json": {
       "hash": "af24d04ad498e669200c6229a8637d14cbbf0cae5cf2bceb697cabee8949efcd",
-      "last_checked": "2026-03-10T07:32:32.986202",
+      "last_checked": "2026-03-13T07:39:28.850479",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c2a7c23302f8b41c0b66af34e882f6e2\"",
       "file_path": "documentation/ShaderGraph/math/safe-power.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/normal-map.json": {
       "hash": "0f13e7801ce88df29939aa36e31f678be9f59c57b3773333bce0afdd89665bb9",
-      "last_checked": "2026-03-10T07:32:33.102545",
+      "last_checked": "2026-03-13T07:39:28.965890",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"30f9578399ad50159b42f8123af75d26\"",
       "file_path": "documentation/ShaderGraph/math/normal-map.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/fractional-(realitykit).json": {
       "hash": "aab84a1619f90cc7f79bfef7bbd8ed9c102c603c54782ba9c97eb75513af0ccb",
-      "last_checked": "2026-03-10T07:32:33.178880",
+      "last_checked": "2026-03-13T07:39:29.162180",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a4d49c6025ebb24b4aeaaca059451810\"",
       "file_path": "documentation/ShaderGraph/math/fractional-realitykit.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/one-minus-(realitykit).json": {
       "hash": "8e2d6a1999499c5ef55c96781a4fba79b4f9628f4c71c7a7c1beafeab9b1fff7",
-      "last_checked": "2026-03-10T07:32:33.249883",
+      "last_checked": "2026-03-13T07:39:29.280321",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f93170680586cddb90de1ad845f97697\"",
       "file_path": "documentation/ShaderGraph/math/one-minus-realitykit.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/normal-map-decode.json": {
       "hash": "873b1c1b23c6af44ead098a7676357fe5085f7118cec66af0e4b94e112f9fd9e",
-      "last_checked": "2026-03-10T07:32:33.385390",
+      "last_checked": "2026-03-13T07:39:29.423253",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d9ec068ab100735bcd5816f84a1a4219\"",
       "file_path": "documentation/ShaderGraph/math/normal-map-decode.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/max3-(realitykit).json": {
       "hash": "c655074c5f782d14f1d494814ebb7702c3a1a804056bafa8a9ebe685dec97bb6",
-      "last_checked": "2026-03-10T07:32:33.470115",
+      "last_checked": "2026-03-13T07:39:29.550657",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6f1b1143e9a214c5c768ffee50157693\"",
       "file_path": "documentation/ShaderGraph/math/max3-realitykit.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/min3-(realitykit).json": {
       "hash": "44da48a7fbc953ba0d5e5d0238f3ed863af8d089480fd7b43c15861e1abf8de8",
-      "last_checked": "2026-03-10T07:32:33.548835",
+      "last_checked": "2026-03-13T07:39:29.694127",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"1a35a9fa37816e0f903fa0e727901a85\"",
       "file_path": "documentation/ShaderGraph/math/min3-realitykit.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/inverse-hyperbolic-cos.json": {
       "hash": "bd63aaa447b1a813059b72dfdd68645d96d9db831994a4569a0f00d4d1332ddc",
-      "last_checked": "2026-03-10T07:32:33.623436",
+      "last_checked": "2026-03-13T07:39:29.850489",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"60fc4a70be08e2103f5e19db07fa7b4b\"",
       "file_path": "documentation/ShaderGraph/math/inverse-hyperbolic-cos.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/inverse-hyperbolic-sin.json": {
       "hash": "08974fbb6e7a1491f72112f5f313b90166236ccc5b77f48024de3319c2955053",
-      "last_checked": "2026-03-10T07:32:33.706726",
+      "last_checked": "2026-03-13T07:39:29.964515",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"906ebd571f90a0707c9b2c863998bd59\"",
       "file_path": "documentation/ShaderGraph/math/inverse-hyperbolic-sin.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/atan.json": {
       "hash": "8f90b3ff9407010c35a3f21efe51dce0ac53995fd44becd25d95c0afdc4881a2",
-      "last_checked": "2026-03-10T07:32:33.787739",
+      "last_checked": "2026-03-13T07:39:30.111253",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"7375822a837473aafe886cf1cad77422\"",
       "file_path": "documentation/ShaderGraph/math/atan.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/inverse-hyperbolic-tan.json": {
       "hash": "afe2923b6809c0fbdfd731a0e9d8407e6ba90086fc01a858aded143624135031",
-      "last_checked": "2026-03-10T07:32:33.874066",
+      "last_checked": "2026-03-13T07:39:30.239737",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"fb552a4a350ad3e36068c048cb3ebd09\"",
       "file_path": "documentation/ShaderGraph/math/inverse-hyperbolic-tan.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/copy-sign-(realitykit).json": {
       "hash": "80449608a77b6e605a3be36262a6107e7169ee5b6e290aa9be8aeedbbcd6c0a6",
-      "last_checked": "2026-03-10T07:32:33.945850",
+      "last_checked": "2026-03-13T07:39:30.370038",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"dc4f20a96dcddb071141278b8818d913\"",
       "file_path": "documentation/ShaderGraph/math/copy-sign-realitykit.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/hyperbolic-cos.json": {
       "hash": "0121ef41d7f0bdbe256320b76debfffdcd044f9fe57d5c14a84301957c89ddd1",
-      "last_checked": "2026-03-10T07:32:34.034222",
+      "last_checked": "2026-03-13T07:39:30.483868",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b3bbb948aa3e15c9e30a0525c9c8b0f0\"",
       "file_path": "documentation/ShaderGraph/math/hyperbolic-cos.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/cos-pi-(realitykit).json": {
       "hash": "ff13807e7bed7a74b82d449ac985319cfc1c356bb781294e4afeb162c6caa218",
-      "last_checked": "2026-03-10T07:32:34.125261",
+      "last_checked": "2026-03-13T07:39:30.622583",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a5caa9e6524eac470a71b2c2bbc6eec0\"",
       "file_path": "documentation/ShaderGraph/math/cos-pi-realitykit.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/exponential-2-(realitykit).json": {
       "hash": "b5a25ffddef859abc08b2152eee6500953910f0abb2c0fa00a7c3d077f636853",
-      "last_checked": "2026-03-10T07:32:34.208650",
+      "last_checked": "2026-03-13T07:39:30.811424",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6e88f0214048885fa75e60979ba712fc\"",
       "file_path": "documentation/ShaderGraph/math/exponential-2-realitykit.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/exponential-10-(realitykit).json": {
       "hash": "91588e6f585bbbef64a96372a9cfa4c41454698af56020cac597f3ac5589aff9",
-      "last_checked": "2026-03-10T07:32:34.292805",
+      "last_checked": "2026-03-13T07:39:30.927205",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6278209cbaa3ef35804157b3e9c20b36\"",
       "file_path": "documentation/ShaderGraph/math/exponential-10-realitykit.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/distance-(realitykit).json": {
       "hash": "4b9385de8f985234f0b2b08279d1d081fbe0216faf841cc3b67ff4765362d864",
-      "last_checked": "2026-03-10T07:32:34.416385",
+      "last_checked": "2026-03-13T07:39:31.056984",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e19a90c5c6f538411a3cff1c0e70c027\"",
       "file_path": "documentation/ShaderGraph/math/distance-realitykit.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/distance-square-(realitykit).json": {
       "hash": "f9366e289bd91448fcc1dba7720ded231c61883d20c3f3184faf7c446657a5c6",
-      "last_checked": "2026-03-10T07:32:34.529055",
+      "last_checked": "2026-03-13T07:39:31.181403",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"2bd898381235c401baf17341100351f2\"",
       "file_path": "documentation/ShaderGraph/math/distance-square-realitykit.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/fused-multiply-add-(realitykit).json": {
       "hash": "7396d2fe7df33821db00f8ab46fa24d82fab4fe7e76b6d07f53b72f8a92259c7",
-      "last_checked": "2026-03-10T07:32:34.600016",
+      "last_checked": "2026-03-13T07:39:31.301445",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ede3da8c2194525c5cc81a2f4eb50fcd\"",
       "file_path": "documentation/ShaderGraph/math/fused-multiply-add-realitykit.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/hyperbolic-sin.json": {
       "hash": "7ad966e32bdb2256bc2fe64cba9f907f91dfe8d9be145ed4bfccd075f865de8f",
-      "last_checked": "2026-03-10T07:32:34.685787",
+      "last_checked": "2026-03-13T07:39:31.426319",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b4cefce41e868989bb66de78e4da4734\"",
       "file_path": "documentation/ShaderGraph/math/hyperbolic-sin.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/hyperbolic-tan.json": {
       "hash": "cbd2ae106d192acc9db7df6b4753d956d681799a5c297ec6a328c149bcc22dae",
-      "last_checked": "2026-03-10T07:32:34.757879",
+      "last_checked": "2026-03-13T07:39:31.553977",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"dfef848a3e06cde39ccc9186ecec93e8\"",
       "file_path": "documentation/ShaderGraph/math/hyperbolic-tan.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/log-10.json": {
       "hash": "23f1b3166b4814196d81bc56aefd49419cd9962a4058f86fd74f4a8dd9754eec",
-      "last_checked": "2026-03-10T07:32:34.864661",
+      "last_checked": "2026-03-13T07:39:31.694646",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4df5668388a2b95c4e77a72212e6da49\"",
       "file_path": "documentation/ShaderGraph/math/log-10.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/log-2.json": {
       "hash": "a10d7be89c1f8a6a49d9359571d21acb42178f719da4f3f73594200c60ab0e48",
-      "last_checked": "2026-03-10T07:32:34.943935",
+      "last_checked": "2026-03-13T07:39:31.816541",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"79d4913831820f96e6b2b8f80112b719\"",
       "file_path": "documentation/ShaderGraph/math/log-2.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/magnitude-square-(realitykit).json": {
       "hash": "11543597ba5e8704da60edd7e348b55519576d11322ee066f2d97fbf36a7cff3",
-      "last_checked": "2026-03-10T07:32:35.014286",
+      "last_checked": "2026-03-13T07:39:32.001854",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b73b14d83f0969a47e2765ae2f22a93e\"",
       "file_path": "documentation/ShaderGraph/math/magnitude-square-realitykit.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/median3-(realitykit).json": {
       "hash": "24f1a8faec0073b315cf57d9d14cb007522875eba94fe4a3ce4ea36aeed45b28",
-      "last_checked": "2026-03-10T07:32:35.098612",
+      "last_checked": "2026-03-13T07:39:32.159760",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ea2e0ca1a6bc6b6acb47389984717b7e\"",
       "file_path": "documentation/ShaderGraph/math/median3-realitykit.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/modulo-(realitykit).json": {
       "hash": "c804786ba56a7e4f7487b8247101d31c6f37cb085e64af398e1812f7178b337b",
-      "last_checked": "2026-03-10T07:32:35.176875",
+      "last_checked": "2026-03-13T07:39:32.311143",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c7a751717c9baa3c38e1b7dc669b700b\"",
       "file_path": "documentation/ShaderGraph/math/modulo-realitykit.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/reciprocal-square-root-(realitykit).json": {
       "hash": "50179154d72419782081723158ea2e52e60a8c43d272eeecb207a5c5594bf9d3",
-      "last_checked": "2026-03-10T07:32:35.254657",
+      "last_checked": "2026-03-13T07:39:32.486730",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"cd13db5853efa2f7edc752a7abdf2434\"",
       "file_path": "documentation/ShaderGraph/math/reciprocal-square-root-realitykit.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/sin-pi-(realitykit).json": {
       "hash": "294253b69af5816cfaeeb9458168f0fb5d587795e04f3b05c6bf2dec915dc899",
-      "last_checked": "2026-03-10T07:32:35.327338",
+      "last_checked": "2026-03-13T07:39:32.608439",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"9602f0c838966b13e2b9eaedfa4098f0\"",
       "file_path": "documentation/ShaderGraph/math/sin-pi-realitykit.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/tan-pi-(realitykit).json": {
       "hash": "62bf06936b4b514d3d3de5891d2ee58fe711c602cc7e89232f75c52ca4730025",
-      "last_checked": "2026-03-10T07:32:35.444593",
+      "last_checked": "2026-03-13T07:39:32.761150",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"fe14dbd01f0902cfb14bb5983729db6f\"",
       "file_path": "documentation/ShaderGraph/math/tan-pi-realitykit.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/truncate-(realitykit).json": {
       "hash": "ac81fdd317d2463777f57d1cd9d0029e60457587327bed1b259c818d3f3ee891",
-      "last_checked": "2026-03-10T07:32:35.516625",
+      "last_checked": "2026-03-13T07:39:32.876904",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c29cfdd074e733d0898bdb727e9ba029\"",
       "file_path": "documentation/ShaderGraph/math/truncate-realitykit.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/organization/dot.json": {
       "hash": "9276774e329450332f91284b86dc777aca347188339adf7cbcad80562dfa5dda",
-      "last_checked": "2026-03-10T07:32:35.607714",
+      "last_checked": "2026-03-13T07:39:33.054041",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f69e78f0db1616dd7711b09d61ae9717\"",
       "file_path": "documentation/ShaderGraph/organization/dot.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/float.json": {
       "hash": "12cccecc0c995116d8c788651615490e2412303a6e6f10c4c4b24281b9e2fac8",
-      "last_checked": "2026-03-10T07:32:35.688940",
+      "last_checked": "2026-03-13T07:39:33.222778",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"199e03d13cc02cb1bb3fc630b8998cac\"",
       "file_path": "documentation/ShaderGraph/procedural/float.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/color3-(float).json": {
       "hash": "9ffb26c7818da5a50c9f0750e57ab76964c3fff249d390e25de424ff5818cc90",
-      "last_checked": "2026-03-10T07:32:35.772851",
+      "last_checked": "2026-03-13T07:39:33.330260",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0f9b0925cec365954954ff1b1d4dd805\"",
       "file_path": "documentation/ShaderGraph/procedural/color3-float.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/color4-(float).json": {
       "hash": "d48eb73548331e7d6faa927008c5ed23d75e7fb39d5397a47f3078dceadc60a8",
-      "last_checked": "2026-03-10T07:32:35.850715",
+      "last_checked": "2026-03-13T07:39:33.453603",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"7bb88e67ba1c4f2384957747ee46bd50\"",
       "file_path": "documentation/ShaderGraph/procedural/color4-float.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector2-(float).json": {
       "hash": "1b4ae9d2533f8cbf47cab8170acb138d6f0be10904bfddd83c6ae102e3af5132",
-      "last_checked": "2026-03-10T07:32:35.930799",
+      "last_checked": "2026-03-13T07:39:33.584300",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"b318fcf280505cb835a4223827624796\"",
       "file_path": "documentation/ShaderGraph/procedural/vector2-float.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector3-(float).json": {
       "hash": "70c19a1967b6729f66f2aee64261d280e98fb80afdd878582cb4eaf53d1ad017",
-      "last_checked": "2026-03-10T07:32:35.999600",
+      "last_checked": "2026-03-13T07:39:33.715509",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f7a6108e80d9d2a456d2c910c9bb17bf\"",
       "file_path": "documentation/ShaderGraph/procedural/vector3-float.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector4-(float).json": {
       "hash": "898d85182ea1303a98e3e4cb5cc1fbaf1a1adcec811e3c0bb2cb73e54eac2f37",
-      "last_checked": "2026-03-10T07:32:36.081148",
+      "last_checked": "2026-03-13T07:39:33.849607",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"247b5e783d18691341798979b0d93a56\"",
       "file_path": "documentation/ShaderGraph/procedural/vector4-float.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/boolean.json": {
       "hash": "c34822fcee5d7d76a5bb047ed73705578dfa54e39c2e7ece2c194c42ae533953",
-      "last_checked": "2026-03-10T07:32:36.154963",
+      "last_checked": "2026-03-13T07:39:33.978631",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"61c9beb70741cf56eea39280d3caa00f\"",
       "file_path": "documentation/ShaderGraph/procedural/boolean.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer.json": {
       "hash": "04341734006e1453d5cbbf1477336b47edfefad68d97da85d53b6744cbd4bb0a",
-      "last_checked": "2026-03-10T07:32:36.223554",
+      "last_checked": "2026-03-13T07:39:34.141564",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6c2e9a77e03ed201e7ae29d2862fd336\"",
       "file_path": "documentation/ShaderGraph/procedural/integer.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/matrix3x3-(float).json": {
       "hash": "7b64c42244171a664d48594bb72c797a5f81839923d2cf70515c1df14316a59a",
-      "last_checked": "2026-03-10T07:32:36.293533",
+      "last_checked": "2026-03-13T07:39:34.312994",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"bccb827beb291bee9c25328ef6d810a9\"",
       "file_path": "documentation/ShaderGraph/procedural/matrix3x3-float.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/matrix4x4-(float).json": {
       "hash": "0bba0c992d8f2152f1e2f8e1e5cab1a401b75d49b8a8d301d01caf7140ed0def",
-      "last_checked": "2026-03-10T07:32:36.370203",
+      "last_checked": "2026-03-13T07:39:34.492319",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"77328ec29eee4e29938fed3ab06e093b\"",
       "file_path": "documentation/ShaderGraph/procedural/matrix4x4-float.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/string.json": {
       "hash": "9748bafec39561412c5098fdaac98b22419c50e903aaf9126900e0217e17d024",
-      "last_checked": "2026-03-10T07:32:36.461995",
+      "last_checked": "2026-03-13T07:39:34.600400",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8db7c66fae210d04dca55ba69cbf9713\"",
       "file_path": "documentation/ShaderGraph/procedural/string.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/image-file.json": {
       "hash": "509ecff75bb3e0ec6a20d7e0e29b2329fd23f0765915a831d0fe4bb74e9dc75a",
-      "last_checked": "2026-03-10T07:32:36.549206",
+      "last_checked": "2026-03-13T07:39:34.756335",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a64a7b70122d99781e94d7188a0638ee\"",
       "file_path": "documentation/ShaderGraph/procedural/image-file.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/half.json": {
       "hash": "ef59bc058c9d3403bc302a1ad5cf829482f60f13eb5efba2e2f8f4a87d2a93cb",
-      "last_checked": "2026-03-10T07:32:36.628436",
+      "last_checked": "2026-03-13T07:39:34.903911",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6b814f257035e6535e614ee737013218\"",
       "file_path": "documentation/ShaderGraph/procedural/half.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector2-(half).json": {
       "hash": "ff1e57462af7e71dd1f50ecff01048aac2d37646d1f85a13f8a4604cd83f5c75",
-      "last_checked": "2026-03-10T07:32:36.705871",
+      "last_checked": "2026-03-13T07:39:35.066839",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e13542f25ce7d264c70c2f1577f051f9\"",
       "file_path": "documentation/ShaderGraph/procedural/vector2-half.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector3-(half).json": {
       "hash": "d059cef2beba8a17faea577f5ea8aa74e2f154bb9895fdf1688ece0f389d433f",
-      "last_checked": "2026-03-10T07:32:36.790992",
+      "last_checked": "2026-03-13T07:39:35.165158",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8c70d0f0a68e5c1e15b05e11018a2874\"",
       "file_path": "documentation/ShaderGraph/procedural/vector3-half.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector4-(half).json": {
       "hash": "899b2c8e3066492cd733c59edad313166e2a08610f8fe8a41910408029d0b271",
-      "last_checked": "2026-03-10T07:32:36.872582",
+      "last_checked": "2026-03-13T07:39:35.359489",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"2bbe40a1223a76929925749dec845059\"",
       "file_path": "documentation/ShaderGraph/procedural/vector4-half.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/matrix2x2-(float).json": {
       "hash": "4c2ca585fb6a7d257946f5d048caaf66eef3e8e9b6cbb13517501cdc60ff25f9",
-      "last_checked": "2026-03-10T07:32:36.969215",
+      "last_checked": "2026-03-13T07:39:35.467662",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a6205eb7a4d7e14bf976151b5565338a\"",
       "file_path": "documentation/ShaderGraph/procedural/matrix2x2-float.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer2.json": {
       "hash": "84b662bce0fc7698f3770117eebd4ae92aad372f2a1852e01cd342cff4c2c2ed",
-      "last_checked": "2026-03-10T07:32:37.047773",
+      "last_checked": "2026-03-13T07:39:35.686630",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a5c9185fa515a15190c3df05ceadd280\"",
       "file_path": "documentation/ShaderGraph/procedural/integer2.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer3.json": {
       "hash": "e7690e1bd1cbd4a5ca71845398289235cf6953cd640bbe900e77c8bc28151db0",
-      "last_checked": "2026-03-10T07:32:37.123042",
+      "last_checked": "2026-03-13T07:39:35.819054",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"af15b5be70ddc9c1a2086edab45de62b\"",
       "file_path": "documentation/ShaderGraph/procedural/integer3.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer4.json": {
       "hash": "d020b161971fa660c8e29bfc76e50075cb4379f8ad2ea84ae605b6ea17c51dfb",
-      "last_checked": "2026-03-10T07:32:37.199281",
+      "last_checked": "2026-03-13T07:39:35.987368",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"bfca709e4e0b369f0821b321d5f3da11\"",
       "file_path": "documentation/ShaderGraph/procedural/integer4.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/unlit-surface-(realitykit).json": {
       "hash": "a8ecf2f4a7189deb960fbdb89bc99de143b1aff5160afa9a905dc204aec8385e",
-      "last_checked": "2026-03-10T07:32:37.274556",
+      "last_checked": "2026-03-13T07:39:36.152256",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"833fa5ddb968ff61124f3a774c2066f5\"",
       "file_path": "documentation/ShaderGraph/realitykit/unlit-surface-realitykit.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/pbr-surface-(realitykit).json": {
       "hash": "dbc08e8876529ba8a3cd7a675faf22397ea0afd155c7a23cbd2d574a4b86649e",
-      "last_checked": "2026-03-10T07:32:37.358550",
+      "last_checked": "2026-03-13T07:39:36.281761",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c35e38327e56bbe4de5ac8c25a3e1556\"",
       "file_path": "documentation/ShaderGraph/realitykit/pbr-surface-realitykit.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/occlusion-surface-(realitykit).json": {
       "hash": "432dd5a6ec9c5bcb51551c0a87e1f72643f609d06eed67329f616bafdd6d90a4",
-      "last_checked": "2026-03-10T07:32:37.435460",
+      "last_checked": "2026-03-13T07:39:36.450693",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8acc4d6e03db8f1b7f893c238aa5e1d2\"",
       "file_path": "documentation/ShaderGraph/realitykit/occlusion-surface-realitykit.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/shadow-receiving-occlusion-surface-(realitykit).json": {
       "hash": "d237245bf8e46e812d55ed80064e128344b3500d5da96b68a2ccc3bfb0348c1e",
-      "last_checked": "2026-03-10T07:32:37.514520",
+      "last_checked": "2026-03-13T07:39:36.597295",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"96906d5f01a13fdecbd0ea740e78943d\"",
       "file_path": "documentation/ShaderGraph/realitykit/shadow-receiving-occlusion-surface-realitykit.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/view-direction-(realitykit).json": {
       "hash": "e6a3db214340a87524ab41c351fccf7b8d6ef88283cc5ddabb1f624bea65a25b",
-      "last_checked": "2026-03-10T07:32:37.597067",
+      "last_checked": "2026-03-13T07:39:36.706919",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"857f669c13ea34225855483b827ec52c\"",
       "file_path": "documentation/ShaderGraph/realitykit/view-direction-realitykit.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/camera-position-(realitykit).json": {
       "hash": "27de88f872b393df174c0595c156a1da03461bef8b15a7114a470397c89987ba",
-      "last_checked": "2026-03-10T07:32:37.677626",
+      "last_checked": "2026-03-13T07:39:36.832267",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5507b540ab04420f58f45372208836c3\"",
       "file_path": "documentation/ShaderGraph/realitykit/camera-position-realitykit.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-model-to-world-(realitykit).json": {
       "hash": "29f540492d5faa134a48ef3b2abc1f42b75d612896cd55df9e1d8178bbbcf310",
-      "last_checked": "2026-03-10T07:32:37.752933",
+      "last_checked": "2026-03-13T07:39:36.946148",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0139e9adda9d298cc00435ca46e7bf35\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-model-to-world-realitykit.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-world-to-model-(realitykit).json": {
       "hash": "5bc0e73e6647d341d549fe99bb2afb6b315e4beb169b8f9553562766e8bee126",
-      "last_checked": "2026-03-10T07:32:37.828348",
+      "last_checked": "2026-03-13T07:39:37.067339",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"899a84c43687523fe026a5d1f3087178\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-world-to-model-realitykit.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-normal-to-world-(realitykit).json": {
       "hash": "b43546e18a7292e5fb7d447a4a77a352dcb3ae7ed3a2643c787e2471e93a032c",
-      "last_checked": "2026-03-10T07:32:37.907378",
+      "last_checked": "2026-03-13T07:39:37.254336",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"64675ff37430f425f444d5ab11024b1f\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-normal-to-world-realitykit.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-model-to-view-(realitykit).json": {
       "hash": "654f1c84509e798260cf42b16a2d9f08b6a330990623760436f224040d0586b3",
-      "last_checked": "2026-03-10T07:32:37.982644",
+      "last_checked": "2026-03-13T07:39:37.363902",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6e4a4fe36f2c4b1f38eb03e2713b2317\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-model-to-view-realitykit.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-view-to-projection-(realitykit).json": {
       "hash": "408ebf0e3b9e42d93bf7876521c9eb975654560c01129a86d95f12bb4cc3804a",
-      "last_checked": "2026-03-10T07:32:38.055666",
+      "last_checked": "2026-03-13T07:39:37.559072",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"735ab27927b15b8c1d76aedcfa973257\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-view-to-projection-realitykit.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-projection-to-view-(realitykit).json": {
       "hash": "319b29ca2d1aca4e30f54393b325d4275b616308ad1d5c460a2814e86b81c887",
-      "last_checked": "2026-03-10T07:32:38.132832",
+      "last_checked": "2026-03-13T07:39:37.686833",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"68da43469759590a74189346f41e359d\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-projection-to-view-realitykit.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-vertex-id-(realitykit).json": {
       "hash": "762c6655e6ac2e53aa417d61a49817633010c8f0d3631bc6bd03b0c0f569e73c",
-      "last_checked": "2026-03-10T07:32:38.206853",
+      "last_checked": "2026-03-13T07:39:37.847240",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"113b86c351f338d0dcfe514dc0cd4c1d\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-vertex-id-realitykit.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-model-to-world-(realitykit).json": {
       "hash": "bcadeb28d52f3d7007fb3aa9536adbd7c413d691c0aea0be7c45842b022c297f",
-      "last_checked": "2026-03-10T07:32:38.297243",
+      "last_checked": "2026-03-13T07:39:38.023264",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6013336eb913f19a087b29dc90375013\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-model-to-world-realitykit.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-model-to-view-(realitykit).json": {
       "hash": "781987b53c3a5bbd0c348a7aa777bb49021add619ae6191803d0fc87b8142a67",
-      "last_checked": "2026-03-10T07:32:38.368977",
+      "last_checked": "2026-03-13T07:39:38.187379",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"eb7ed5453f0da85ad2ab7fce6cac0ac4\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-model-to-view-realitykit.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-world-to-view-(realitykit).json": {
       "hash": "bf26d0095bbd31222149435d6c6cd487365057d4f2a62b4116e1c4b2ff3d7559",
-      "last_checked": "2026-03-10T07:32:38.441606",
+      "last_checked": "2026-03-13T07:39:38.305801",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c94df3a4c4e0cb13e813e20feba0945b\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-world-to-view-realitykit.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-view-to-projection-(realitykit).json": {
       "hash": "64c92dde1d2309fae9d3c38a019e8b2f32b89ed2d1b7177471b8e68638e3ee36",
-      "last_checked": "2026-03-10T07:32:38.518241",
+      "last_checked": "2026-03-13T07:39:38.439769",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"de4494ca9b1f32d7eceeaac1d43510e4\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-view-to-projection-realitykit.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-projection-to-view-(realitykit).json": {
       "hash": "66455b2a7033e181775caa274dc3b1c52beac363ba8f3e96d99c2f09622721df",
-      "last_checked": "2026-03-10T07:32:38.613467",
+      "last_checked": "2026-03-13T07:39:38.604876",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ae36daa21e42e781109cf2906a924157\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-projection-to-view-realitykit.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-screen-position-(realitykit).json": {
       "hash": "23d1a0feeeffe87ba5c486db3454dbb5a4fd913159e2e8a94f816dc2b19b9049",
-      "last_checked": "2026-03-10T07:32:38.716621",
+      "last_checked": "2026-03-13T07:39:38.724972",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"98b3b7bcea3e6bc308906f4ef0a09cd8\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-screen-position-realitykit.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-view-direction-(realitykit).json": {
       "hash": "33adac114337bd430c159c3e3642c4f71644968251ac5a81c62c463c5f0807dd",
-      "last_checked": "2026-03-10T07:32:38.796745",
+      "last_checked": "2026-03-13T07:39:38.864298",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d6d02b43a321e9d709ef0422c6582ae5\"",
       "file_path": "documentation/ShaderGraph/realitykit/surface-view-direction-realitykit.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/environment-radiance-(realitykit).json": {
       "hash": "8ec20c35554da330e433f3249148f5685199bb5771328fee4dbf42cdae8d9035",
-      "last_checked": "2026-03-10T07:32:38.877681",
+      "last_checked": "2026-03-13T07:39:39.054372",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"5d5088b8a02e617ed4bd7ec8b5c52e2b\"",
       "file_path": "documentation/ShaderGraph/realitykit/environment-radiance-realitykit.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/hover-state-(realitykit).json": {
       "hash": "00ee6661722ed3be89a508040ce28ccd6b285a2800558f236f1e649ec9691025",
-      "last_checked": "2026-03-10T07:32:38.953581",
+      "last_checked": "2026-03-13T07:39:39.174186",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"69b9942fbfac67162fd5cd37d755478e\"",
       "file_path": "documentation/ShaderGraph/realitykit/hover-state-realitykit.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/blurred-background-(realitykit).json": {
       "hash": "91b63a81021f14189748a816b235f2d26e802c990784288653f9813dde5a753c",
-      "last_checked": "2026-03-10T07:32:39.042947",
+      "last_checked": "2026-03-13T07:39:39.381416",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"3b5969b6c0e8627874795341b20faf80\"",
       "file_path": "documentation/ShaderGraph/realitykit/blurred-background-realitykit.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-(realitykit).json": {
       "hash": "bc9dd3b6b03891739df0d2cda81112beb252c7357420d76b3d191b82b924b507",
-      "last_checked": "2026-03-10T07:32:39.128387",
+      "last_checked": "2026-03-13T07:39:39.538495",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f1b9702a52c95b667c676788aaa362ef\"",
       "file_path": "documentation/ShaderGraph/realitykit/geometry-modifier-realitykit.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/camera-index-switch-(realitykit).json": {
       "hash": "5bee3f21c659858536d6115dea6f6fe129183988f9c06a0968003e88ed1feada",
-      "last_checked": "2026-03-10T07:32:39.209285",
+      "last_checked": "2026-03-13T07:39:39.654698",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"9d1d8aded9f07075ba9d48c0402fa825\"",
       "file_path": "documentation/ShaderGraph/realitykit/camera-index-switch-realitykit.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-(realitykit).json": {
       "hash": "0751c48f20b2dc549095e4fb3321b480a33a7add6aef12da3f896413fabf8d2d",
-      "last_checked": "2026-03-10T07:32:39.291371",
+      "last_checked": "2026-03-13T07:39:39.834164",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"91259d4e94ff46566d068df6eb4fa213\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-realitykit.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-lod-(realitykit).json": {
       "hash": "5e243b397944d3dd2e43a94e00d9b80b740222cb3120e352452ad4c1743ab90e",
-      "last_checked": "2026-03-10T07:32:39.374363",
+      "last_checked": "2026-03-13T07:39:39.941215",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"810319b88396cd1bf9580fbbd211a339\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-lod-realitykit.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-gradient-(realitykit).json": {
       "hash": "b9e7bb290e2e8d2ee24132f215020f461f131771e2b6187477ae0d7b13540573",
-      "last_checked": "2026-03-10T07:32:39.461794",
+      "last_checked": "2026-03-13T07:39:40.062916",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e5b2ac9963db402f8b148bb182a14ebc\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-gradient-realitykit.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-pixel-(realitykit).json": {
       "hash": "b48184960623acbc6c3a0a22b49cb3428c59a5feca67836fd43b7c4d68fd8834",
-      "last_checked": "2026-03-10T07:32:39.554464",
+      "last_checked": "2026-03-13T07:39:40.223212",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"2266924ba29449fb06ef3768f9315687\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-pixel-realitykit.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-lod-pixel-(realitykit).json": {
       "hash": "2ec0798b0277cc39d5c733fd60f793ad2315f08e3f3926368e114b24ce8a1669",
-      "last_checked": "2026-03-10T07:32:39.650941",
+      "last_checked": "2026-03-13T07:39:40.349695",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ce8b2b21dcc228198646c431ba9dfa7e\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-lod-pixel-realitykit.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-gradient-pixel-(realitykit).json": {
       "hash": "e5eb7d947ed23536f83a90b8772939fed2515bca5d7e5372f0ddfc3b0b392526",
-      "last_checked": "2026-03-10T07:32:39.732411",
+      "last_checked": "2026-03-13T07:39:40.518461",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"389834b1fc48c357d0c1b0e732ff2b37\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-gradient-pixel-realitykit.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/cube-image-(realitykit).json": {
       "hash": "6dc79619f1c2117704acc7ad57c83d861048ebe57b383cc6571c46e803f4bcb8",
-      "last_checked": "2026-03-10T07:32:39.817874",
+      "last_checked": "2026-03-13T07:39:40.644080",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"533645b13fcb25990bf867a47f2ce7ba\"",
       "file_path": "documentation/ShaderGraph/realitykit/cube-image-realitykit.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/cube-image-lod-(realitykit).json": {
       "hash": "8ce6e17bd6d72a26c5891129801768a4e292b80b178d0e071187bb995db09928",
-      "last_checked": "2026-03-10T07:32:39.898364",
+      "last_checked": "2026-03-13T07:39:40.809966",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"dab25defd54ad0cf905602ce4ac235ad\"",
       "file_path": "documentation/ShaderGraph/realitykit/cube-image-lod-realitykit.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/cube-image-gradient-(realitykit).json": {
       "hash": "62627b37e5cf2efff1d11f0cda044d66fd3978a2f435d0182732b03c5e21dbfe",
-      "last_checked": "2026-03-10T07:32:39.976285",
+      "last_checked": "2026-03-13T07:39:40.928351",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"a1d99d7eb4e48c9113923353d57af566\"",
       "file_path": "documentation/ShaderGraph/realitykit/cube-image-gradient-realitykit.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-read-(realitykit).json": {
       "hash": "8b81a1c3415ee8d55cb1f8cfef94e687f378d75ee6c8197238483bb004849d6c",
-      "last_checked": "2026-03-10T07:32:40.080974",
+      "last_checked": "2026-03-13T07:39:41.135651",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"4ba5d5ae750a81823fefdd55f45c0ca1\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-read-realitykit.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-(realitykit).json": {
       "hash": "786d81d22671cf7e527efe2ae0584146d90147eb53583919248e159075bd1f2c",
-      "last_checked": "2026-03-10T07:32:40.167226",
+      "last_checked": "2026-03-13T07:39:41.235883",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"3d5c65a99cd69ceb6f2be680e02cfce2\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-realitykit.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-lod-(realitykit).json": {
       "hash": "fe44cadc335e17675bcca750a48b8e0d6075e5fe470def3e425011a943ce0cd1",
-      "last_checked": "2026-03-10T07:32:40.244253",
+      "last_checked": "2026-03-13T07:39:41.366525",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"49fd7ec56e3a2a6b2ddb6ceeb1f05721\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-lod-realitykit.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-gradient-(realitykit).json": {
       "hash": "a641b91ad2ea19b8a9131e3e8a290dade356b51b913afb5b8837079b969b8736",
-      "last_checked": "2026-03-10T07:32:40.315395",
+      "last_checked": "2026-03-13T07:39:41.543989",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8792f3d76c492377e3d10671df2c294a\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-gradient-realitykit.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-pixel-(realitykit).json": {
       "hash": "c2ae014cb4450561627fa46f98c3cf6166bf92956392b9aa78fdba9ae53f5d6f",
-      "last_checked": "2026-03-10T07:32:40.390974",
+      "last_checked": "2026-03-13T07:39:41.667306",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"df91de7c6e10b4d11c4babe1c2871abc\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-pixel-realitykit.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-lod-pixel-(realitykit).json": {
       "hash": "33873cede12a788ae46a93afa2a435c9f567531462c7cb3f183238e2c2f06ce7",
-      "last_checked": "2026-03-10T07:32:40.467725",
+      "last_checked": "2026-03-13T07:39:41.786668",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"36e88eb847708833c973bd331e019295\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-lod-pixel-realitykit.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-gradient-pixel-(realitykit).json": {
       "hash": "619026592f4fefec817f87fb3be4e21c63ed851aa04efc6817256b92351e94e9",
-      "last_checked": "2026-03-10T07:32:40.554121",
+      "last_checked": "2026-03-13T07:39:41.902864",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"f2b3dda1495b5e8fab8638da8de8fced\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-gradient-pixel-realitykit.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-(realitykit).json": {
       "hash": "5e7b5041b899bec9896954a2d09c11d026c36f42ba1d0a6f61026d0c82d69dc6",
-      "last_checked": "2026-03-10T07:32:40.651842",
+      "last_checked": "2026-03-13T07:39:42.080002",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"786111f6d01a3fd15e0496c20e992f3e\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-realitykit.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-lod-(realitykit).json": {
       "hash": "f60b19aa4f2d1a4eea45c284623f347b139f4741ba97ee2ebbd66def24f64b89",
-      "last_checked": "2026-03-10T07:32:40.731762",
+      "last_checked": "2026-03-13T07:39:42.203047",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"e31b1a8977cd16fd3749ed91d31dd798\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-lod-realitykit.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-gradient-(realitykit).json": {
       "hash": "e080109d8055837bceeea62ba1ebeb4f5a5be9cdb4c830955965200b4806c54c",
-      "last_checked": "2026-03-10T07:32:40.812692",
+      "last_checked": "2026-03-13T07:39:42.356336",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"161bda33517663df3cef27b4c1c853f0\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-gradient-realitykit.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-pixel-(realitykit).json": {
       "hash": "4a67dbfe99fb4677f52c178b51f45ee670a3ee0ace6304805b02bdc584d77cd6",
-      "last_checked": "2026-03-10T07:32:40.889847",
+      "last_checked": "2026-03-13T07:39:42.533088",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8fede0c4f658aefaf2175a4b82f9a965\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-pixel-realitykit.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-lod-pixel-(realitykit).json": {
       "hash": "93bbe5965eaf498865db7ef41eb9ecf73b4807c0f55d81199782a1bd4d3ae9fc",
-      "last_checked": "2026-03-10T07:32:40.961654",
+      "last_checked": "2026-03-13T07:39:42.653288",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"6a335defe68fd3f560dee0a1eda8c0ae\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-lod-pixel-realitykit.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-gradient-pixel-(realitykit).json": {
       "hash": "e1e24e0e2e77f521e9c18f438a14c27276477d530638ee82c487a46c533af3f7",
-      "last_checked": "2026-03-10T07:32:41.042389",
+      "last_checked": "2026-03-13T07:39:42.830356",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"277e0f60bf9c844836038249b3cef38e\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-gradient-pixel-realitykit.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-read-(realitykit).json": {
       "hash": "cc00cdc25e51a76816383ee6a83b9c4e2c590f9b256b443b978798b1b7a71864",
-      "last_checked": "2026-03-10T07:32:41.134923",
+      "last_checked": "2026-03-13T07:39:42.979572",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"3d553560ef3a3f4c339d30bf8ee287b4\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-2d-array-read-realitykit.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-read-(realitykit).json": {
       "hash": "14b4e6a26c8824f2163d468a5a76b832b5723df108661b3077c6b6530f45078e",
-      "last_checked": "2026-03-10T07:32:41.215159",
+      "last_checked": "2026-03-13T07:39:43.082707",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"300be33b94c4a96438a50bd7084514ea\"",
       "file_path": "documentation/ShaderGraph/realitykit/image-3d-read-realitykit.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/screen-space-x-partial-derivative-(realitykit).json": {
       "hash": "60a4f8dead9c1aa40ef0150831ae187920d9fbf80a9c5d74e1ff36cafa9323fd",
-      "last_checked": "2026-03-10T07:32:41.290059",
+      "last_checked": "2026-03-13T07:39:43.280426",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"0e73d228123231e330946874f6050056\"",
       "file_path": "documentation/ShaderGraph/realitykit/screen-space-x-partial-derivative-realitykit.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/screen-space-y-partial-derivative-(realitykit).json": {
       "hash": "d98fa8a987acfcb3d80f6620317857078f9c4865de28cee97b8d80912b60606e",
-      "last_checked": "2026-03-10T07:32:41.371565",
+      "last_checked": "2026-03-13T07:39:43.398101",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"78ed63beb716fd7e5b71af043ce57a5a\"",
       "file_path": "documentation/ShaderGraph/realitykit/screen-space-y-partial-derivative-realitykit.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/absolute-derivatives-sum-(realitykit).json": {
       "hash": "2da41d8330b41bcaefed8ed443978fba314b5fbf3272942259fcd2cc13d7eb78",
-      "last_checked": "2026-03-10T07:32:41.454988",
+      "last_checked": "2026-03-13T07:39:43.526399",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"864ec0c9a23b3b19d7242eaa1796a252\"",
       "file_path": "documentation/ShaderGraph/realitykit/absolute-derivatives-sum-realitykit.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/power-positive-(realitykit).json": {
       "hash": "cad71f0fae085565012b7be66a01075ba244039a5c2b091b352df04aead5db51",
-      "last_checked": "2026-03-10T07:32:41.548872",
+      "last_checked": "2026-03-13T07:39:43.714806",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"35cc1568c89f35cd4475964b85146018\"",
       "file_path": "documentation/ShaderGraph/realitykit/power-positive-realitykit.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/round-integral-(realitykit).json": {
       "hash": "8d8720817affe8aa096d90b8cf69351a93aa059c92b34b515f43a05d16c01c24",
-      "last_checked": "2026-03-10T07:32:41.639684",
+      "last_checked": "2026-03-13T07:39:43.905254",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"56e119d3348eb881da26993680e5e61b\"",
       "file_path": "documentation/ShaderGraph/realitykit/round-integral-realitykit.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/reflection-diffuse-(realitykit).json": {
       "hash": "27fac759b8f21e6be68e86f4f2206ddb2c05569e107095fa74bf332e541630b8",
-      "last_checked": "2026-03-10T07:32:41.743744",
+      "last_checked": "2026-03-13T07:39:44.014146",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"c4a70b3f96621cfebbdb833c735cd00d\"",
       "file_path": "documentation/ShaderGraph/realitykit/reflection-diffuse-realitykit.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/reflection-specular-(realitykit).json": {
       "hash": "4c89f0f0cb97ba5299b3a3ed502aa61c4c75a168640f4466f242c03095caadb9",
-      "last_checked": "2026-03-10T07:32:41.835214",
+      "last_checked": "2026-03-13T07:39:44.190994",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ff8027c6d3be6ae000bfa72b4756f4ba\"",
       "file_path": "documentation/ShaderGraph/realitykit/reflection-specular-realitykit.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/fortran-difference-and-minimum-(realitykit).json": {
       "hash": "3d1b3db3815227f04c5f62f76f461405587725c3ae3a0238778575109829c589",
-      "last_checked": "2026-03-10T07:32:41.921099",
+      "last_checked": "2026-03-13T07:39:44.317477",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"8fbb874442704ee94b4edc02a537a795\"",
       "file_path": "documentation/ShaderGraph/realitykit/fortran-difference-and-minimum-realitykit.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/is-finite-(realitykit).json": {
       "hash": "404e76f746b7f453b06cd43cc0f7efb00b664987d29aad69df655ddd9ecf88cb",
-      "last_checked": "2026-03-10T07:32:41.992309",
+      "last_checked": "2026-03-13T07:39:44.498742",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"ac8b9336fe1c36fafb076f7ed208a34a\"",
       "file_path": "documentation/ShaderGraph/realitykit/is-finite-realitykit.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/is-infinite-(realitykit).json": {
       "hash": "8acab5de46b27de8fb1f9824de778ed624d764dafd18996252aa26e017c8481b",
-      "last_checked": "2026-03-10T07:32:42.066469",
+      "last_checked": "2026-03-13T07:39:44.656561",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"3ab9d58f0720bfc3c031729bbbb4e530\"",
       "file_path": "documentation/ShaderGraph/realitykit/is-infinite-realitykit.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/is-not-a-number-(realitykit).json": {
       "hash": "eae6003a47b8e01ce49c4b0da003a38a3728922d80ce30b617d293605f590dcc",
-      "last_checked": "2026-03-10T07:32:42.144583",
+      "last_checked": "2026-03-13T07:39:44.810497",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"49409229703ed7872fcc2d2ba5676d3b\"",
       "file_path": "documentation/ShaderGraph/realitykit/is-not-a-number-realitykit.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/is-normal-(realitykit).json": {
       "hash": "0a62bb67edf1ef93861569db72ed03df94c39c0da622d1a104d28e3aac3497e5",
-      "last_checked": "2026-03-10T07:32:42.216396",
+      "last_checked": "2026-03-13T07:39:44.977235",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"61b125d6f86e2a2b3857b0552c861673\"",
       "file_path": "documentation/ShaderGraph/realitykit/is-normal-realitykit.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/is-ordered-(realitykit).json": {
       "hash": "570c6e7448abcc453d02d1e0b65a02562a2c3ee0be0979125a80d3ed21526af1",
-      "last_checked": "2026-03-10T07:32:42.292630",
+      "last_checked": "2026-03-13T07:39:45.135738",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"dd72024b1c6c9472247a332a84468b44\"",
       "file_path": "documentation/ShaderGraph/realitykit/is-ordered-realitykit.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/is-unordered-(realitykit).json": {
       "hash": "f397df21165e67de3bf9f7aeea4470dcda6a765941b3e08648117dd441af6684",
-      "last_checked": "2026-03-10T07:32:42.368795",
+      "last_checked": "2026-03-13T07:39:45.304726",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"d9e01e0d9596e0c68c07121a4d3ba9cf\"",
       "file_path": "documentation/ShaderGraph/realitykit/is-unordered-realitykit.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/sign-bit-(realitykit).json": {
       "hash": "ec73ef38dc8b0ef4fad936bb376b0062379c456e3cf5d8ea00a24b743c921184",
-      "last_checked": "2026-03-10T07:32:42.442898",
+      "last_checked": "2026-03-13T07:39:45.590238",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"17c87f0c5d32c313999b834f6a48fb51\"",
       "file_path": "documentation/ShaderGraph/realitykit/sign-bit-realitykit.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shadergraph/surface/preview-surface.json": {
       "hash": "283b9a9f7bce6fd64ab8f178f234b7da090d7808d6e5ecbc24826fd43ab64970",
-      "last_checked": "2026-03-10T07:32:42.542663",
+      "last_checked": "2026-03-13T07:39:45.756295",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:32:19.934488",
+      "session_id": "2026-03-13T07:39:07.351490",
       "etag": "W/\"15ace35cb4f5c9f54286bab40ef453d5\"",
       "file_path": "documentation/ShaderGraph/surface/preview-surface.md"
     },

@@ -8,7 +8,7 @@ A representation of an application on the user’s device.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -23,12 +23,12 @@ Managed Settings represents apps with tokens to preserve user privacy and contro
 
 ## Topics
 
-### Creating an Application
+### Creating an application
 - [init(bundleIdentifier: String)](application/init(bundleidentifier:).md)
   Creates an object that represents the app with the specified bundle identifier.
 - [init(token: ApplicationToken)](application/init(token:).md)
   Creates an object that represents the app with the specified token.
-### Accessing Application Information
+### Accessing application information
 - [let bundleIdentifier: String?](application/bundleidentifier.md)
   The unique string that identifies this app.
 - [let token: ApplicationToken?](application/token.md)

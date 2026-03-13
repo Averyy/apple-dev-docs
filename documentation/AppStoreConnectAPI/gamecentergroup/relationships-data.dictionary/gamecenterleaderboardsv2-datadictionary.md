@@ -22,7 +22,7 @@ object GameCenterGroup.Relationships.GameCenterLeaderboardsV2
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardsV2.Data](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary/data-data.dictionary.md)
 
 ## Properties

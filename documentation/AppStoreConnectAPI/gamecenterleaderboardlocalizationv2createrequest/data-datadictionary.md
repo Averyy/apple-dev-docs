@@ -22,7 +22,7 @@ object GameCenterLeaderboardLocalizationV2CreateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Attributes](gamecenterleaderboardlocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to create a Game Center leaderboard localization create request.
 - [object GameCenterLeaderboardLocalizationV2CreateRequest.Data.Relationships](gamecenterleaderboardlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)

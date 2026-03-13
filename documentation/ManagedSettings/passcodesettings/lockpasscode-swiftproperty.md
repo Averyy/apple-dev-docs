@@ -8,7 +8,7 @@ A Boolean value that indicates whether to prevent changing the device passcode.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

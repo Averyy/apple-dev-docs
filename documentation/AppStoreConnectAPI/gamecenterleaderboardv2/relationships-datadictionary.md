@@ -25,7 +25,7 @@ object GameCenterLeaderboardV2.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardV2.Relationships.Activity](gamecenterleaderboardv2/relationships-data.dictionary/activity-data.dictionary.md)
   The data and links that describe the activity of the Game Center leaderboard v2.
 - [object GameCenterLeaderboardV2.Relationships.Challenge](gamecenterleaderboardv2/relationships-data.dictionary/challenge-data.dictionary.md)

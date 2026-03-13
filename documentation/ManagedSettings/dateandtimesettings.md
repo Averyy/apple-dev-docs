@@ -8,7 +8,7 @@ Constraints on the device’s date and time settings.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -22,7 +22,7 @@ Use `DateAndTimeSettings` to prevent the user from changing their device’s dat
 
 ## Topics
 
-### Requiring Automatic Date and Time
+### Requiring automatic date and time
 - [var requireAutomaticDateAndTime: Bool?](dateandtimesettings/requireautomaticdateandtime-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing their device’s date and time.
 - [static let requireAutomaticDateAndTime: SettingMetadata<Bool>](dateandtimesettings/requireautomaticdateandtime-swift.type.property.md)

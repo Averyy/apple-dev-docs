@@ -21,7 +21,7 @@ object GameCenterLeaderboardSetLocalizationV2.Relationships.Image
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetLocalizationV2.Relationships.Image.Data](gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary/image-data.dictionary/data-data.dictionary.md)
 
 ## Properties

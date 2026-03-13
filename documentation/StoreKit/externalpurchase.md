@@ -22,7 +22,7 @@ enum ExternalPurchase
 
 #### Overview
 
-This functionality is only available to and required by apps with the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) or doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase.allowed-regions entitlement. For more information, see:
+This functionality is only available to and required by apps with the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see:
 
 - [`Distributing apps using alternative payment providers in the European Union`](https://developer.apple.comhttps://developer.apple.com/go/?id=storekit-external-purchase-eu)
 - [`Distributing dating apps in the Netherlands`](https://developer.apple.comhttps://developer.apple.com/support/storekit-external-entitlement/)

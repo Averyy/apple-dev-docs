@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/quick_start.html
 
 **
 
+**
+**
+**
+
+**
+
 # Quick Start Guide
 
  Table of contents 

@@ -8,7 +8,7 @@ Additional information about a bounded setting.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct BoundedSettingMetadata<Value> where Value : Comparable
 
 ## Topics
 
-### Getting Metadata
+### Getting metadata
 - [let bounds: ClosedRange<Value>](boundedsettingmetadata/bounds.md)
   The range of values that a setting can accomodate.
 - [let defaultValue: Value](boundedsettingmetadata/defaultvalue.md)

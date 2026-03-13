@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/devices_and_streams.html
 
 **
 
+**
+**
+**
+
+**
+
 # Devices and Streams
 
  Table of contents 

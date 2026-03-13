@@ -18,6 +18,7 @@ object GameCenterActivityVersionsLinkagesResponse
 
 ### Dictionaries
 - [object GameCenterActivityVersionsLinkagesResponse.Data](gamecenteractivityversionslinkagesresponse/data-data.dictionary.md)
+  The data structure that represents an activity resource.
 
 ## Properties
 

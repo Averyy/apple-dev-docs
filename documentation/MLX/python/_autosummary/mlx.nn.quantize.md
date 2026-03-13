@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.quan
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.quantize
 
  Table of contents 

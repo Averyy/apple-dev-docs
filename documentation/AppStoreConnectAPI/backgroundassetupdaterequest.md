@@ -16,7 +16,7 @@ object BackgroundAssetUpdateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object BackgroundAssetUpdateRequest.Data](backgroundassetupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 

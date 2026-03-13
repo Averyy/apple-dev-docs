@@ -27,7 +27,7 @@ object ProfileCreateRequest
 ## See Also
 
 - [object Profile](profile.md)
-  The data structure that represents a Profiles  resource.
+  The data structure that represents a Profiles resource.
 - [object ProfileResponse](profileresponse.md)
   A response that contains a single Profiles resource.
 - [object ProfilesResponse](profilesresponse.md)

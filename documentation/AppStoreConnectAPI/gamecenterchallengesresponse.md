@@ -33,6 +33,8 @@ object GameCenterChallengesResponse
   The request body you use to update a challenge.
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
+- [object GameCenterChallengeVersionInlineCreate](gamecenterchallengeversioninlinecreate.md)
+  The data structure you use to configure a challenge version while creating a challenge.
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
 - [object GameCenterChallengeLeaderboardV2LinkageRequest](gamecenterchallengeleaderboardv2linkagerequest.md)

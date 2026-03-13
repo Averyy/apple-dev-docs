@@ -36,6 +36,8 @@ object GameCenterActivityResponse
   The request body you use to create a link betweeen a leaderboard and an activity resource.
 - [object GameCenterActivityCreateRequest](gamecenteractivitycreaterequest.md)
   The request body you use to create an activity resource.
+- [object GameCenterActivityVersionInlineCreate](gamecenteractivityversioninlinecreate.md)
+  The data structure you use to configure an activity version while creating an activity.
 - [object GameCenterActivityUpdateRequest](gamecenteractivityupdaterequest.md)
   The request body you use to update an activity.
 - [object GameCenterActivityVersion](gamecenteractivityversion.md)

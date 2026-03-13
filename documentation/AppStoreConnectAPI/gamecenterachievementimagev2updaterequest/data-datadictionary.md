@@ -22,7 +22,7 @@ object GameCenterAchievementImageV2UpdateRequest.Data
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementImageV2UpdateRequest.Data.Attributes](gamecenterachievementimagev2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
 
 ## Properties

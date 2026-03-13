@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-10T07:34:00.345754",
+    "last_updated": "2026-03-13T07:41:20.730181",
     "total_pages": 158,
-    "session_id": "2026-03-10T07:33:49.798892"
+    "session_id": "2026-03-13T07:41:07.676664"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/visionOS.json": {
       "hash": "261178b6f7ea08e90f850e821677466f7eac0da04f0ce8fc4ff9c3cfbbf58f9e",
-      "last_checked": "2026-03-10T07:33:50.312474",
+      "last_checked": "2026-03-13T07:41:07.939488",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3a73d87c3ce27ed9de5668cd516a66d6\"",
       "file_path": "documentation/visionOS/visionOS.md"
     },
     "https://developer.apple.com/documentation/visionOS": {
       "hash": "261178b6f7ea08e90f850e821677466f7eac0da04f0ce8fc4ff9c3cfbbf58f9e",
-      "last_checked": "2026-03-10T07:33:50.183283",
+      "last_checked": "2026-03-13T07:41:07.843844",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3a73d87c3ce27ed9de5668cd516a66d6\"",
       "file_path": "documentation/visionOS/visionOS.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-your-first-visionos-app.json": {
       "hash": "2a1bc0199fb24bdd376df56f1b47b6022656c7b0db9112c34c160a0c8b1a1d1a",
-      "last_checked": "2026-03-10T07:33:50.615629",
+      "last_checked": "2026-03-13T07:41:08.211347",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"509b31bac31b528ee5326726cbeb689b\"",
       "file_path": "documentation/visionOS/creating-your-first-visionos-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/adding-3d-content-to-your-app.json": {
       "hash": "494bb1217e359ae26927f147197c5b33899a848472d3880e152944fe1d6f99fa",
-      "last_checked": "2026-03-10T07:33:50.898435",
+      "last_checked": "2026-03-13T07:41:08.332238",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"13de25763c872ab7fe72455cae6afee9\"",
       "file_path": "documentation/visionOS/adding-3d-content-to-your-app.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-fully-immersive-experiences.json": {
       "hash": "a875516d880f89666bb29da6924c338ee6bb35541fe0af617137cd41456885b4",
-      "last_checked": "2026-03-10T07:33:51.015511",
+      "last_checked": "2026-03-13T07:41:08.449315",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"d690d346664be4a412cb4239e139fa28\"",
       "file_path": "documentation/visionOS/creating-fully-immersive-experiences.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/drawing-sharp-layer-based-content.json": {
       "hash": "e519a2967f5e0ae1bbe35fad740e529db2667e341cf308ea59427674e66ad02f",
-      "last_checked": "2026-03-10T07:33:51.323052",
+      "last_checked": "2026-03-13T07:41:08.590817",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"ff6a36aee747731e70de2fa3d53eabd4\"",
       "file_path": "documentation/visionOS/drawing-sharp-layer-based-content.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/introductory-visionos-samples.json": {
       "hash": "ec7e0a4f07e3bf55543b3f668a0f6c6d65df6830dfb745da1d4a9d8e877ee214",
-      "last_checked": "2026-03-10T07:33:51.481245",
+      "last_checked": "2026-03-13T07:41:08.706693",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"9e6631d5b10081578989abea49938b4f\"",
       "file_path": "documentation/visionOS/introductory-visionos-samples.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/adopting-best-practices-for-privacy.json": {
       "hash": "e9322114d239ab8a3516f7560bc9648a542729e7ead4d85bac9b4fcb278ce19f",
-      "last_checked": "2026-03-10T07:33:51.857218",
+      "last_checked": "2026-03-13T07:41:09.102906",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"0663f2d640b80eab83aafbd2602fac04\"",
       "file_path": "documentation/visionOS/adopting-best-practices-for-privacy.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/improving-accessibility-support-in-your-app.json": {
       "hash": "1ab52ade2564b92347cc8c89eb503dace6aad5c4eb97e2d0e277ed201b5d4ec9",
-      "last_checked": "2026-03-10T07:33:52.028861",
+      "last_checked": "2026-03-13T07:41:09.287172",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"cba37580218281083d236f9212ca0acc\"",
       "file_path": "documentation/visionOS/improving-accessibility-support-in-your-app.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/canyon-crosser-building-a-volumetric-hike-planning-app.json": {
       "hash": "888f0251b660f4f3132fd76e482c3bcbd744486b51d182aaee00ebd421eeba3f",
-      "last_checked": "2026-03-10T07:33:52.108787",
+      "last_checked": "2026-03-13T07:41:09.410317",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c544b8c063e0af6d3427e626a86d46ee\"",
       "file_path": "documentation/visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/world.json": {
       "hash": "9d97e3755923575a127d1ec29b5ec29cc38789fc9033b8c0e22123370db0ffc4",
-      "last_checked": "2026-03-10T07:33:52.261861",
+      "last_checked": "2026-03-13T07:41:09.540311",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"f3dba971290e33148d63a7985d36f347\"",
       "file_path": "documentation/visionOS/world.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/presenting-windows-and-spaces.json": {
       "hash": "be4407e1eee3a1fde25fff75d63054cfd92c8ea12c03f33b08daf68a6079edb7",
-      "last_checked": "2026-03-10T07:33:52.347935",
+      "last_checked": "2026-03-13T07:41:09.711875",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c7268df7f13cf5d3a8dd009fea5d9fd9\"",
       "file_path": "documentation/visionOS/presenting-windows-and-spaces.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/positioning-and-sizing-windows.json": {
       "hash": "6a204df695d58c1b72608dc78ecc35b9f65ddd0422632c16e130c2581005a4e9",
-      "last_checked": "2026-03-10T07:33:52.432074",
+      "last_checked": "2026-03-13T07:41:09.840170",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3f29b999806e3bc75a0fa443e2eab28d\"",
       "file_path": "documentation/visionOS/positioning-and-sizing-windows.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/adopting-best-practices-for-scene-restoration.json": {
       "hash": "9af801012d3c54f98a2d38e7285c7ae388cae6b93187e47e2b0e1c11d2bd600c",
-      "last_checked": "2026-03-10T07:33:52.562412",
+      "last_checked": "2026-03-13T07:41:09.955107",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c8648523d9cf11b72f78e42595869151\"",
       "file_path": "documentation/visionOS/adopting-best-practices-for-scene-restoration.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/petite-asteroids-building-a-volumetric-visionos-game.json": {
       "hash": "d692aa2e7b98e113688a043ac46de2a418131617cd36bc569fb3f27371c34cee",
-      "last_checked": "2026-03-10T07:33:52.772908",
+      "last_checked": "2026-03-13T07:41:10.134396",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"6dc7ce045dc579037ad66e6827ef0bdd\"",
       "file_path": "documentation/visionOS/petite-asteroids-building-a-volumetric-visionos-game.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/bot-anist.json": {
       "hash": "4ea0aea37158992332de7ed327c9140e762720437b6838a3a42618ecfa0c3d80",
-      "last_checked": "2026-03-10T07:33:52.994288",
+      "last_checked": "2026-03-13T07:41:10.296021",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"029983db0aabf1977e020bf8b230df81\"",
       "file_path": "documentation/visionOS/bot-anist.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/swift-splash.json": {
       "hash": "df7f16052925863fbe9240e0a7758e8ebcce6e6714a0ef943f270ed17208f31b",
-      "last_checked": "2026-03-10T07:33:53.127962",
+      "last_checked": "2026-03-13T07:41:10.415070",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"7cad1bb47c1864563e839b0f0439911b\"",
       "file_path": "documentation/visionOS/swift-splash.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/diorama.json": {
       "hash": "028a37fd3c1334e4533ad167c78fd93eaf0903461d8e5f8648acf81d6b5c831a",
-      "last_checked": "2026-03-10T07:33:53.218414",
+      "last_checked": "2026-03-13T07:41:10.575386",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"6dda8afaf79e5bb50300830d0e399570\"",
       "file_path": "documentation/visionOS/diorama.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/building-an-immersive-media-viewing-experience.json": {
       "hash": "d795fa3f0e2e6d5ae3ad9c56e669ef16039df679dd29503cdb8e5cb068874158",
-      "last_checked": "2026-03-10T07:33:53.346355",
+      "last_checked": "2026-03-13T07:41:10.690846",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"69e540d0a9688c2eadf67c1fee159a0b\"",
       "file_path": "documentation/visionOS/building-an-immersive-media-viewing-experience.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/enabling-video-reflections-in-an-immersive-environment.json": {
       "hash": "7e0578ccdd3c36e6a383109ae1278c29f3b82d0ca64e2e88accc14d06762c1c1",
-      "last_checked": "2026-03-10T07:33:53.423609",
+      "last_checked": "2026-03-13T07:41:10.821045",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"9e55ec59cc6181ff49d42780956b1377\"",
       "file_path": "documentation/visionOS/enabling-video-reflections-in-an-immersive-environment.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/understanding-the-realitykit-modular-architecture.json": {
       "hash": "f57e88a13929675d8974b874df87dff0642d0f891946dde43a77f5f00d618e51",
-      "last_checked": "2026-03-10T07:33:53.495778",
+      "last_checked": "2026-03-13T07:41:10.972889",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"b764870ca44c00170edb1f259d67158b\"",
       "file_path": "documentation/visionOS/understanding-the-realitykit-modular-architecture.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/understanding-transforms.json": {
       "hash": "6522c1f570d7b84caa9176773a835e9705144612e2bd23427ede0b14c4061014",
-      "last_checked": "2026-03-10T07:33:53.789151",
+      "last_checked": "2026-03-13T07:41:11.147183",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"9ef2a9755a0c7e1718d2c3c98222fa08\"",
       "file_path": "documentation/visionOS/understanding-transforms.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.json": {
       "hash": "fd880e777b2a83f3f6235084573e75aad239d44a6c0b51f029ef6e98b28c2a9a",
-      "last_checked": "2026-03-10T07:33:53.921493",
+      "last_checked": "2026-03-13T07:41:11.285254",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"359ef80eb3b11424d21597395084dcfb\"",
       "file_path": "documentation/visionOS/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/implementing-object-tracking-in-your-visionos-app.json": {
       "hash": "e52e247dee30f8994001413048ea8e7191283dcbe2cc68af9ea78fae6507ae3d",
-      "last_checked": "2026-03-10T07:33:54.071104",
+      "last_checked": "2026-03-13T07:41:11.386900",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"69bbf79824f8362217f64cf02708e7f7\"",
       "file_path": "documentation/visionOS/implementing-object-tracking-in-your-visionos-app.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/placing-entities-using-head-and-device-transform.json": {
       "hash": "53569037f849d54ad485a20c9701e5a67bc23c582c97d3b7d5a1c6301c976654",
-      "last_checked": "2026-03-10T07:33:54.158317",
+      "last_checked": "2026-03-13T07:41:11.500090",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"b69875f922676c1367a93e50d9410cf9\"",
       "file_path": "documentation/visionOS/placing-entities-using-head-and-device-transform.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/happybeam.json": {
       "hash": "95ba4e6c3620cd56219f8415dc880d3771c74cd3b272a7d0af4a2902f5696f47",
-      "last_checked": "2026-03-10T07:33:54.414668",
+      "last_checked": "2026-03-13T07:41:11.782791",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"f4f06efd7295d5a66e508c4c6c8cc5f6\"",
       "file_path": "documentation/visionOS/happybeam.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/setting-up-access-to-arkit-data.json": {
       "hash": "3e5683f12d36568f8e1cca57e776adf856823fc7518078ce4d5492de11860ffc",
-      "last_checked": "2026-03-10T07:33:54.489542",
+      "last_checked": "2026-03-13T07:41:11.901986",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"22e1992e94f5f64af1f381ea2040349b\"",
       "file_path": "documentation/visionOS/setting-up-access-to-arkit-data.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/incorporating-real-world-surroundings-in-an-immersive-experience.json": {
       "hash": "e3c1e1c3f034bb052784a2e44bbbe67a26ab4d3808c112987d921f079dece7a8",
-      "last_checked": "2026-03-10T07:33:54.614501",
+      "last_checked": "2026-03-13T07:41:12.021691",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"1c7a14adc331c78b696c4c3f18d8e28d\"",
       "file_path": "documentation/visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/placing-content-on-detected-planes.json": {
       "hash": "19ee65378800cc9e39a29c15023685579b023e39edb68b9227bc68e7fb9b8017",
-      "last_checked": "2026-03-10T07:33:54.737336",
+      "last_checked": "2026-03-13T07:41:12.189155",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"5e14c64c5ea4e70fab1e9fb8b49d1631\"",
       "file_path": "documentation/visionOS/placing-content-on-detected-planes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/tracking-points-in-world-space.json": {
       "hash": "4d1314cb21d1d976a9791c57f9f92913147af32e2981ca5f71c2e225eb452cdf",
-      "last_checked": "2026-03-10T07:33:54.856984",
+      "last_checked": "2026-03-13T07:41:12.350896",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"4039289fdde762b6dbad815ddb56add2\"",
       "file_path": "documentation/visionOS/tracking-points-in-world-space.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/tracking-images-in-3d-space.json": {
       "hash": "2beba4f32a0230499eb6d5c4d8d03525aacbad96f2840f9bcd5acae79429931b",
-      "last_checked": "2026-03-10T07:33:54.978911",
+      "last_checked": "2026-03-13T07:41:12.457851",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"209465a77a475a4ed35d7bc636aba237\"",
       "file_path": "documentation/visionOS/tracking-images-in-3d-space.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/exploring_object_tracking_with_arkit.json": {
       "hash": "5c1bcbef3c13a1f400d34a72e51d5ebc67af8f7e265353a293d886d0f726333e",
-      "last_checked": "2026-03-10T07:33:55.101832",
+      "last_checked": "2026-03-13T07:41:12.599051",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c45c9867c511d51c3e42cfad44e2e2ef\"",
       "file_path": "documentation/visionOS/exploring-object-tracking-with-arkit.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/object-tracking-with-reality-composer-pro-experiences.json": {
       "hash": "6ff80aa572d1a10cdf00855bc63e857f345102f2b9fdbeb5071e1c5bbe9274cb",
-      "last_checked": "2026-03-10T07:33:55.224316",
+      "last_checked": "2026-03-13T07:41:12.712154",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"37a4a27c9e61138aa8d3e9239b9c9e8f\"",
       "file_path": "documentation/visionOS/object-tracking-with-reality-composer-pro-experiences.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/destination-video.json": {
       "hash": "b827f7134397c35c6374ddc90b4730f56fd5df52862f7cdaf6c731423ea419b4",
-      "last_checked": "2026-03-10T07:33:55.811132",
+      "last_checked": "2026-03-13T07:41:13.402556",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"f757592927ebf3fca99b0c00940a573b\"",
       "file_path": "documentation/visionOS/destination-video.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/playing-immersive-media-with-realitykit.json": {
       "hash": "d3e6e9798cd2ccdd652c9c321ef789aea971e8db2ed7f482d674e1243b422a15",
-      "last_checked": "2026-03-10T07:33:56.066866",
+      "last_checked": "2026-03-13T07:41:13.868255",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"8747fa595fcea1c760808ef9f977ee4f\"",
       "file_path": "documentation/visionOS/playing-immersive-media-with-realitykit.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-a-performance-plan-for-visionos-app.json": {
       "hash": "211a4f0ed8a66618f37746c8bd55b21de565452a1dd636dcbc17e35a13428027",
-      "last_checked": "2026-03-10T07:33:56.192185",
+      "last_checked": "2026-03-13T07:41:14.030621",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3de86edf875e3393b75d3ada0a59b0aa\"",
       "file_path": "documentation/visionOS/creating-a-performance-plan-for-visionos-app.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/analyzing-the-performance-of-your-visionos-app.json": {
       "hash": "c51880139728e4f6caed84b1625e9689f284db66ad1e4a55e543627198cf84b7",
-      "last_checked": "2026-03-10T07:33:56.353162",
+      "last_checked": "2026-03-13T07:41:14.314537",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"90648681a8df563a734d1534735cd011\"",
       "file_path": "documentation/visionOS/analyzing-the-performance-of-your-visionos-app.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/reducing-the-rendering-cost-of-your-ui-on-visionos.json": {
       "hash": "9d61226890a4f4bb3968c543c8135051e9fdf2b97e3177c9bc168b3113f76f8d",
-      "last_checked": "2026-03-10T07:33:56.482140",
+      "last_checked": "2026-03-13T07:41:14.597035",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"ac08b2969c9916a11244ae5012b97194\"",
       "file_path": "documentation/visionOS/reducing-the-rendering-cost-of-your-ui-on-visionos.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/reducing-the-rendering-cost-of-realitykit-content-on-visionos.json": {
       "hash": "67b682f67d743c0e3dac5a79e151a9a503e495560e69d67485d20b6f13cf93f0",
-      "last_checked": "2026-03-10T07:33:56.649542",
+      "last_checked": "2026-03-13T07:41:14.770242",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3f2801f64c3132b997b4dcae365d69c2\"",
       "file_path": "documentation/visionOS/reducing-the-rendering-cost-of-realitykit-content-on-visionos.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/understanding-the-visionos-render-pipeline.json": {
       "hash": "14012e05ea9eac0312f4a5a3ca31549ab08ac2759e616a7da0bcfccd8bb9d540",
-      "last_checked": "2026-03-10T07:33:56.780382",
+      "last_checked": "2026-03-13T07:41:15.063519",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"0811e050f694947c671238dad2c193b2\"",
       "file_path": "documentation/visionOS/understanding-the-visionos-render-pipeline.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/determining-whether-to-bring-your-app-to-visionos.json": {
       "hash": "d99047dda8e61c207e23d86a6f33a756580ecfd01af487e5ec545ee593966df3",
-      "last_checked": "2026-03-10T07:33:56.922209",
+      "last_checked": "2026-03-13T07:41:15.242527",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"b3bd362dc8e66dc110b87cc121ca8a6c\"",
       "file_path": "documentation/visionOS/determining-whether-to-bring-your-app-to-visionos.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/bringing-your-app-to-visionos.json": {
       "hash": "147b6f87fc0b8ca80d98891d11db180a64f53ec464691d711f6162595f522857",
-      "last_checked": "2026-03-10T07:33:57.048956",
+      "last_checked": "2026-03-13T07:41:15.414336",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c462053a18718b383db24c29f900074e\"",
       "file_path": "documentation/visionOS/bringing-your-app-to-visionos.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/bringing-your-arkit-app-to-visionos.json": {
       "hash": "766b40492ef3d2836310d5100ff77d8a8b0e2bbaf7b19af6e8911915d5df4631",
-      "last_checked": "2026-03-10T07:33:57.176421",
+      "last_checked": "2026-03-13T07:41:15.716731",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"70be216c8cf36f903945f48588436886\"",
       "file_path": "documentation/visionOS/bringing-your-arkit-app-to-visionos.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/making-your-app-compatible-with-visionos.json": {
       "hash": "23be37693a37d1836786a98145631689ce59e4193dd5d8b14c49c2852ade5c99",
-      "last_checked": "2026-03-10T07:33:57.308940",
+      "last_checked": "2026-03-13T07:41:15.917114",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c8fe002a5c2c2e45f9caf2d8e8487160\"",
       "file_path": "documentation/visionOS/making-your-app-compatible-with-visionos.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/accessing-the-main-camera.json": {
       "hash": "6bf402028d8f92862f9f5c8cf7614901b873db74c38804c39c870233f3566843",
-      "last_checked": "2026-03-10T07:33:57.433572",
+      "last_checked": "2026-03-13T07:41:16.082384",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"e8f100c72707769c84db57186ad6d300\"",
       "file_path": "documentation/visionOS/accessing-the-main-camera.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/building-spatial-experiences-for-business-apps-with-enterprise-apis.json": {
       "hash": "84bf52eca1a32bf885c8213e4076682e13a09bf9e9ddc32ce31b5ef3e9a6199d",
-      "last_checked": "2026-03-10T07:33:57.569094",
+      "last_checked": "2026-03-13T07:41:16.372391",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"5fd7a9808653029db53546208c4d60eb\"",
       "file_path": "documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-video-from-connected-devices.json": {
       "hash": "8c59c5d346d4f3bcb2f5f0d51ddd92ddf75ce7284e289ebb5c2b0fcade99df29",
-      "last_checked": "2026-03-10T07:33:55.987800",
+      "last_checked": "2026-03-13T07:41:13.714599",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"855e8268b338983bfac1c9bd42d0ec91\"",
       "file_path": "documentation/visionOS/displaying-video-from-connected-devices.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/locating-and-decoding-barcodes-in-3d-space.json": {
       "hash": "c94a28546f6d839d4ac5539adeba6a2ce332f65cf07e168c09d625c1083823ae",
-      "last_checked": "2026-03-10T07:33:57.693530",
+      "last_checked": "2026-03-13T07:41:16.539329",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"050098c728d99054319015fe8bd6d2cb\"",
       "file_path": "documentation/visionOS/locating-and-decoding-barcodes-in-3d-space.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-2d-shapes-in-visionos-with-swiftui.json": {
       "hash": "d03dac86e8a76a6579c4e27ce705f29e86323cb585e464c756e7e962482ec9a2",
-      "last_checked": "2026-03-10T07:33:57.823487",
+      "last_checked": "2026-03-13T07:41:16.844895",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"efe0d7c7a4d65233cf1cc50d38151a7d\"",
       "file_path": "documentation/visionOS/creating-2d-shapes-in-visionos-with-swiftui.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-a-new-swiftui-window-in-visionos.json": {
       "hash": "2a9b3ff3a2a80a5ce5ace3b139399fe7888c15e96ccc0d7585e1291445b1338c",
-      "last_checked": "2026-03-10T07:33:58.199508",
+      "last_checked": "2026-03-13T07:41:17.306467",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"46375cb4a43c191291c46f14dd4f1787\"",
       "file_path": "documentation/visionOS/creating-a-new-swiftui-window-in-visionos.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-a-volumetric-window-in-visionos.json": {
       "hash": "e2458efdeec51f3f3e0434dbb342aff57799d6727b213e0f81cf6d88bc089c8c",
-      "last_checked": "2026-03-10T07:33:58.321614",
+      "last_checked": "2026-03-13T07:41:17.465981",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"acb74151125302e38a665a3324741cca\"",
       "file_path": "documentation/visionOS/creating-a-volumetric-window-in-visionos.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-text-in-visionos.json": {
       "hash": "57b4c544d43039dcde33a0ad59fb39cb1eb0651e294c42fd191fc7dc911e5378",
-      "last_checked": "2026-03-10T07:33:58.446488",
+      "last_checked": "2026-03-13T07:41:17.635536",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"a0ac1438222ba13ea4504aced488798d\"",
       "file_path": "documentation/visionOS/displaying-text-in-visionos.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/adding-a-depth-effect-to-text-in-visionos.json": {
       "hash": "20f33bbc3765314436579a61a72ab929645d4cb1a0c789f44edeaa58ecd7db7f",
-      "last_checked": "2026-03-10T07:33:58.523494",
+      "last_checked": "2026-03-13T07:41:17.927167",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"eb58fbe7258f802498f466030745a9c6\"",
       "file_path": "documentation/visionOS/adding-a-depth-effect-to-text-in-visionos.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-an-interactable-3d-model-in-visionos.json": {
       "hash": "2307162c05b30bbb50511a0d4c953179ac6bca2e6840a5086ab3e9f4a55de802",
-      "last_checked": "2026-03-10T07:33:58.602041",
+      "last_checked": "2026-03-13T07:41:18.077957",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"9df097134261377cd17bf3872cd65863\"",
       "file_path": "documentation/visionOS/creating-an-interactable-3d-model-in-visionos.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-immersive-spaces-in-visionos-with-swiftui.json": {
       "hash": "2c94bb08bd1febc9b3dc2efb9643e654fa06fc23f115d2b866d57efea20f2a7d",
-      "last_checked": "2026-03-10T07:33:58.691357",
+      "last_checked": "2026-03-13T07:41:18.248887",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"a2a0e87ce4aa484dd412598ce6a0fb4b\"",
       "file_path": "documentation/visionOS/creating-immersive-spaces-in-visionos-with-swiftui.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-a-painting-space-in-visionos.json": {
       "hash": "f43127a64e68aa15ede008fb512232616f45df2ad0faaa2d490151753b5d09a6",
-      "last_checked": "2026-03-10T07:33:58.937957",
+      "last_checked": "2026-03-13T07:41:18.557640",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"bcf22ca9e0df2178e9622b6f0997a792\"",
       "file_path": "documentation/visionOS/creating-a-painting-space-in-visionos.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/tracking-and-visualizing-hand-movement.json": {
       "hash": "2b56d6e92aae79d5e272f736cabc7d682d1a5778c8328a317ffec94fc62fced1",
-      "last_checked": "2026-03-10T07:33:59.018815",
+      "last_checked": "2026-03-13T07:41:18.739176",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"7e3b9f57ee07715e213d2e7fd981a140\"",
       "file_path": "documentation/visionOS/tracking-and-visualizing-hand-movement.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.json": {
       "hash": "dac059f15b24c3ad254664e2074c56d5c9e3cb17e3392b6c7ff4f2dcd900b131",
-      "last_checked": "2026-03-10T07:33:59.140588",
+      "last_checked": "2026-03-13T07:41:18.887559",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"a69b6d129b87b2c5a86209b1495fd53a\"",
       "file_path": "documentation/visionOS/displaying-a-3d-object-that-moves-to-stay-in-a-persons-view.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/applying-mesh-to-real-world-surroundings.json": {
       "hash": "6914f6a4e17edbe374308a4d8480d567ec5ffb538c65733a5f9e310fc7452eb6",
-      "last_checked": "2026-03-10T07:33:59.272030",
+      "last_checked": "2026-03-13T07:41:19.182197",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3cecd79be8b9769b87430bda1a161469\"",
       "file_path": "documentation/visionOS/applying-mesh-to-real-world-surroundings.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.json": {
       "hash": "110dd56d48565810b95e6d40502dceb69c30b2d43aca538c10e77fa70ef6ffe5",
-      "last_checked": "2026-03-10T07:33:59.359222",
+      "last_checked": "2026-03-13T07:41:19.339255",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"541fa590496b4aa03701fd19db2ccf63\"",
       "file_path": "documentation/visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/generating-procedural-textures-in-visionos.json": {
       "hash": "fde63f17fba5ea2ce2f1732f4c533fff756714d1c369ab564247faa2d1c1f76e",
-      "last_checked": "2026-03-10T07:33:59.439837",
+      "last_checked": "2026-03-13T07:41:19.548255",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"37c0e789d9747b170880e284eca0fa0c\"",
       "file_path": "documentation/visionOS/generating-procedural-textures-in-visionos.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/implementing-adjustable-material-in-visionos.json": {
       "hash": "eaab4ffd747db09f372d7ad3292bf59675484596f4ca565997cbeb0774533482",
-      "last_checked": "2026-03-10T07:33:59.563683",
+      "last_checked": "2026-03-13T07:41:19.716789",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c9e4e73dfbfe5983c69866f969d2fecf\"",
       "file_path": "documentation/visionOS/implementing-adjustable-material-in-visionos.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-a-stereoscopic-image-in-visionos.json": {
       "hash": "7824ef97a155d69a2713648a140d08e2f640b9b79cdd79a973c81b327d63035e",
-      "last_checked": "2026-03-10T07:33:59.681626",
+      "last_checked": "2026-03-13T07:41:19.879405",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c6ce16b7b35e9b449731b830abaefa15\"",
       "file_path": "documentation/visionOS/displaying-a-stereoscopic-image-in-visionos.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/playing-spatial-audio-in-visionos.json": {
       "hash": "1ddee1ea008f781215d44ba5987de0b11cb281dccab71ae1ee8473ed19552705",
-      "last_checked": "2026-03-10T07:33:59.768514",
+      "last_checked": "2026-03-13T07:41:20.059884",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"c7368997097225e05996488a018895c8\"",
       "file_path": "documentation/visionOS/playing-spatial-audio-in-visionos.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/displaying-a-3d-environment-through-a-portal.json": {
       "hash": "5bef7fd504f75c75b18470965f47f382e644ab3833082251ef5fafc6b9a9f32d",
-      "last_checked": "2026-03-10T07:33:59.889272",
+      "last_checked": "2026-03-13T07:41:20.214940",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"d9406e38e45887e63173e595b68fc0af\"",
       "file_path": "documentation/visionOS/displaying-a-3d-environment-through-a-portal.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/using-a-reference-object-with-reality-composer-pro.json": {
       "hash": "4cdfc3a8ba953b0ec2fe9a7bf8fd4be12181747ff025169736ed8207a45230f1",
-      "last_checked": "2026-03-10T07:33:59.960565",
+      "last_checked": "2026-03-13T07:41:20.382747",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"4bdef539b86a5bf910633fcd7bcb2924\"",
       "file_path": "documentation/visionOS/using-a-reference-object-with-reality-composer-pro.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/using-a-reference-object-with-realitykit.json": {
       "hash": "458f3b7a2861d41ba7f208ae561e6646a44bc994c1ba36689489a546ed963bac",
-      "last_checked": "2026-03-10T07:34:00.160647",
+      "last_checked": "2026-03-13T07:41:20.551823",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"2390c482d7c511159de3ca8302c3aa3e\"",
       "file_path": "documentation/visionOS/using-a-reference-object-with-realitykit.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/using-a-reference-object-with-arkit.json": {
       "hash": "c01207a2c34a0036ec887623ce7f04436536576299fd9b7e1fc91ca26d5682f1",
-      "last_checked": "2026-03-10T07:34:00.344595",
+      "last_checked": "2026-03-13T07:41:20.726473",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"4cd0f74eba190f1b72bb1e29affe46ff\"",
       "file_path": "documentation/visionOS/using-a-reference-object-with-arkit.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/creating-3d-entities-with-realitykit.json": {
       "hash": "64bf0940ac8bf2b6bb6c6a19bfa4929ae6b13893882d51102d6b92592456ea32",
-      "last_checked": "2026-03-10T07:33:58.079443",
+      "last_checked": "2026-03-13T07:41:17.143157",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"a6ebe84e4d6dceaf9b1c120a0ff31d06\"",
       "file_path": "documentation/visionOS/creating-3d-entities-with-realitykit.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/combining-spatial-support-from-multiple-frameworks.json": {
       "hash": "dce04f6155e331c5a2a3205aa1cc5b9972be623ecd0e243f1dbb4f39c968e652",
-      "last_checked": "2026-03-10T07:33:51.609562",
+      "last_checked": "2026-03-13T07:41:08.824034",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"ab8f6232c74721848bb5f779dd6c7141\"",
       "file_path": "documentation/visionOS/combining-spatial-support-from-multiple-frameworks.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/connecting-ipados-and-visionos-apps-over-the-local-network.json": {
       "hash": "920b9377fb40eb405e51cbd39343cf309c08ec75ce3d408f734bfd77379de94b",
-      "last_checked": "2026-03-10T07:33:51.724104",
+      "last_checked": "2026-03-13T07:41:08.989668",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"06fd41c882711c2ae40faceded78be6b\"",
       "file_path": "documentation/visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/building-local-experiences-with-room-tracking.json": {
       "hash": "5d92445c620e6078fb6ab027de849e2f147d29d4520ece4c5671ffebf560902d",
-      "last_checked": "2026-03-10T07:33:55.351602",
+      "last_checked": "2026-03-13T07:41:12.852806",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"d385ad6656242f4ab020583c4616e235\"",
       "file_path": "documentation/visionOS/building-local-experiences-with-room-tracking.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.json": {
       "hash": "db457ca11b92c471d0c2b5ad5eb9df79efad872fc814b1de94cdcdb1e1058721",
-      "last_checked": "2026-03-10T07:33:55.445986",
+      "last_checked": "2026-03-13T07:41:12.982817",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"dffeeee7badfeb38af9843368b3bc4b6\"",
       "file_path": "documentation/visionOS/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/animating-hand-models-in-visionos.json": {
       "hash": "c2861d1e66a915c94ac9040b7c6011c60689ce87b3ce9c0cd55f850ff326f01e",
-      "last_checked": "2026-03-10T07:33:58.820087",
+      "last_checked": "2026-03-13T07:41:18.396597",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"f098fd84e6ea4ebe87f61ea61ef9877d\"",
       "file_path": "documentation/visionOS/animating-hand-models-in-visionos.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/implementing-shareplay-for-immersive-spaces-in-visionos.json": {
       "hash": "53005846ead847d01f1a6d44a763063f8d009a3333ff32c42eae014b2674ba96",
-      "last_checked": "2026-03-10T07:33:55.572749",
+      "last_checked": "2026-03-13T07:41:13.271657",
       "status": "unchanged",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"3d8f464410d06ce2cf1d3d1cc1c4aa39\"",
       "file_path": "documentation/visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/manipulating-entities-with-solid-collisions.json": {
       "hash": "e217120e34c41f1fc2431827c3a88fd78ebf5ccf6930c963cd08c385b73c2571",
-      "last_checked": "2026-03-10T07:33:54.283557",
+      "last_checked": "2026-03-13T07:41:11.662654",
       "status": "new",
-      "session_id": "2026-03-10T07:33:49.798892",
+      "session_id": "2026-03-13T07:41:07.676664",
       "etag": "W/\"51ff94b40e3f4d6f0c91f55ccae8445e\"",
       "file_path": "documentation/visionOS/manipulating-entities-with-solid-collisions.md"
     },

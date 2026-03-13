@@ -30,7 +30,7 @@ This method returns [`ExternalPurchase.NoticeResult`](externalpurchase/noticeres
 
 #### Discussion
 
-This method is only available to apps with the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase.allowed-regions or [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see [`ExternalPurchase`](externalpurchase.md).
+This method is only available to apps with the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see [`ExternalPurchase`](externalpurchase.md).
 
 Call this method each time your app is ready to present an external purchase. To use this method, follow these steps:
 

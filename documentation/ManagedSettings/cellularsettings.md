@@ -8,7 +8,7 @@ Constraints on the user’s cellular networking settings.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -22,17 +22,17 @@ Use `CellularSettings` to constrain the user’s ability to modify cellular sett
 
 ## Topics
 
-### Locking App Access to Cell Data
+### Locking app access to cell data
 - [var lockAppCellularData: Bool?](cellularsettings/lockappcellulardata-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing cellular data settings.
 - [static let lockAppCellularData: SettingMetadata<Bool>](cellularsettings/lockappcellulardata-swift.type.property.md)
   The metadata associated with the constraint that locks the cellular data setting.
-### Locking the Device’s Cell Plan
+### Locking the device’s cell plan
 - [var lockCellularPlan: Bool?](cellularsettings/lockcellularplan-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing their cellular plan.
 - [static let lockCellularPlan: SettingMetadata<Bool>](cellularsettings/lockcellularplan-swift.type.property.md)
   The metadata associated with the constraint that locks the user’s cellular plan.
-### Locking the Device’s eSIM Settings
+### Locking the device’s eSIM settings
 - [var lockESIM: Bool?](cellularsettings/lockesim-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing their eSIM settings.
 - [static let lockESIM: SettingMetadata<Bool>](cellularsettings/lockesim-swift.type.property.md)

@@ -8,7 +8,7 @@ Constants that describe a user’s action for your extension to handle.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,18 +18,18 @@ enum ShieldAction
 
 ## Topics
 
-### Buttons
+### Responding to primary button actions
 - [ShieldAction.primaryButtonPressed](shieldaction/primarybuttonpressed.md)
   The user pressed the top button of the buttons on a shield.
+### Responding to secondary button actions
 - [ShieldAction.secondaryButtonPressed](shieldaction/secondarybuttonpressed.md)
   The user pressed the optional secondary button underneath the primary button of a shield.
-### Enumeration Cases
 - [ShieldAction.firstSecondarySubmenuItemPressed](shieldaction/firstsecondarysubmenuitempressed.md)
-  The user pressed the first item in the secondary button sub menu
+  An action that occurs when someone selects the first item in the secondary button’s submenu.
 - [ShieldAction.secondSecondarySubmenuItemPressed](shieldaction/secondsecondarysubmenuitempressed.md)
-  The user pressed the second item in the secondary button sub menu
+  An action that occurs when someone selects the second item in the secondary button’s submenu.
 - [ShieldAction.thirdSecondarySubmenuItemPressed](shieldaction/thirdsecondarysubmenuitempressed.md)
-  The user pressed the third item in the secondary button sub menu
+  An action that occurs when someone selects the third item in the secondary button’s submenu.
 
 ## Relationships
 
@@ -42,8 +42,8 @@ enum ShieldAction
 
 ## See Also
 
-- [enum ShieldActionResponse](shieldactionresponse.md)
-  Constants your extension that handles shield actions can use to tell the system how to respond to an action.
+- [class ShieldActionDelegate](shieldactiondelegate.md)
+  A class for an extension that handles shield actions.
 
 
 ---

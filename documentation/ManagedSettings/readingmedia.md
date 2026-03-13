@@ -1,4 +1,4 @@
-# Confirming the Effective TV and Movie Ratings
+# Confirming the effective TV and movie ratings
 
 **Framework**: ManagedSettings
 
@@ -52,9 +52,9 @@ case 300:
 
 ##### Monitor the Effective Rating
 
-The parental controls app can change the effective rating at any time. To reflect the changes, make sure to incorporate them into your media app. Use publishers to subscribe to updates on changes to a rating. Managed Settings uses [`$effectiveMaximumMovieRating`](managedsettingsstore/$effectivemaximummovierating.md) and [`$effectiveMaximumTVShowRating`](managedsettingsstore/$effectivemaximumtvshowrating.md) to publish to media changes.
+The parental controls app can change the effective rating at any time. To reflect the changes, make sure to incorporate them into your media app. Use publishers to subscribe to updates on changes to a rating. Managed Settings uses [`effectiveMaximumMovieRating`](managedsettingsstore/effectivemaximummovierating.md) and [`$effectiveMaximumTVShowRating`](managedsettingsstore/$effectivemaximumtvshowrating.md) to publish to media changes.
 
-The following code example shows how to subscribe for changes to `$effectiveMaximumMovieRating`:
+The following code example shows how to subscribe for changes to [`effectiveMaximumMovieRating`](managedsettingsstore/effectivemaximummovierating.md):
 
 ```swift
 let maximumMovieRating = store.effectiveMaximumMovieRating
@@ -70,7 +70,7 @@ self.movieRatingCancellable = store.$effectiveMaximumMovieRating.sink { effectiv
 
 ## See Also
 
-- [Manage Settings on Devices in a Family Sharing Group](connectionwithframeworks.md)
+- [Manage settings on devices in a Family Sharing group](connectionwithframeworks.md)
   Empower parents and guardians to configure constraints on other devices while preserving the family’s privacy.
 
 

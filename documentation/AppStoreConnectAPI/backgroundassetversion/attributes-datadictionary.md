@@ -16,7 +16,7 @@ object BackgroundAssetVersion.Attributes
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object BackgroundAssetVersion.Attributes.StateDetails](backgroundassetversion/attributes-data.dictionary/statedetails-data.dictionary.md)
   Details about errors, warnings, and informational messages related to the state.
 

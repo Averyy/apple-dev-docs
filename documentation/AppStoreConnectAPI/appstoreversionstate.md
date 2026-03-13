@@ -43,7 +43,6 @@ string AppStoreVersionState
   The request body you use to update an App Store Version.
 - [object AgeRatingDeclaration](ageratingdeclaration.md)
   The data structure that represents an Age Rating Declarations resource.
-- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
 - [object AppStoreVersion](appstoreversion.md)
   The data structure that represent an App Store Versions resource.
 - [object AppStoreVersionResponse](appstoreversionresponse.md)
@@ -62,9 +61,10 @@ string AppStoreVersionState
   A response that contains the ID of a single related Default App Clip Experiences resource.
 - [type AppVersionState](appversionstate.md)
   String that represents the state of an app version.
-- [object AppStoreVersionAgeRatingDeclarationLinkageResponse](appstoreversionageratingdeclarationlinkageresponse.md)
 - [object AppStoreVersionAlternativeDistributionPackageLinkageResponse](appstoreversionalternativedistributionpackagelinkageresponse.md)
 - [object AppStoreVersionAppStoreReviewDetailLinkageResponse](appstoreversionappstorereviewdetaillinkageresponse.md)
+- [object AppStoreVersionAppStoreVersionExperimentsLinkagesResponse](appstoreversionappstoreversionexperimentslinkagesresponse.md)
+- [object AppStoreVersionAppStoreVersionExperimentsV2LinkagesResponse](appstoreversionappstoreversionexperimentsv2linkagesresponse.md)
 
 
 ---

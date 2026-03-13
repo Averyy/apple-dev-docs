@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/examples/linear_regression.html
 
 **
 
+**
+**
+**
+
+**
+
 # Linear Regression
 
  Table of contents 

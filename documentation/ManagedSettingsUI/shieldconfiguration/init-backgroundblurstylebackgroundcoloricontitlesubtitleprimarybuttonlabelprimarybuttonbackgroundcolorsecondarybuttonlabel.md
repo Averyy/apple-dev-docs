@@ -8,7 +8,7 @@ Creates a shield configuration with the specified values.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -30,6 +30,11 @@ The system provides a default for any options that you don’t specify.
 - `primaryButtonLabel`: A label for the shield’s main button.
 - `primaryButtonBackgroundColor`: A background color for the shield’s main button.
 - `secondaryButtonLabel`: An additional button to display on the shield.
+
+## See Also
+
+- [init(backgroundBlurStyle: UIBlurEffect.Style?, backgroundColor: UIColor?, icon: UIImage?, title: ShieldConfiguration.Label?, subtitle: ShieldConfiguration.Label?, primaryButtonLabel: ShieldConfiguration.Label?, primaryButtonBackgroundColor: UIColor?, secondaryButtonLabel: ShieldConfiguration.Label?, secondaryButtonSubmenuItems: [String]?)](shieldconfiguration/init(backgroundblurstyle:backgroundcolor:icon:title:subtitle:primarybuttonlabel:primarybuttonbackgroundcolor:secondarybuttonlabel:secondarybuttonsubmenuitems:).md)
+  Initializes a shield configuration with optional submenu items for the secondary button.
 
 
 ---

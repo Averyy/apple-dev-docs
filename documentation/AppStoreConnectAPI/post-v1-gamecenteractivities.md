@@ -10,6 +10,7 @@ Create an activity for your Game Center detail or Game Center group.
 
 ## Mentions
 
+- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
 - [Configuring Game center activities](configuring-game-center-activities.md)
 
 ## Endpoint

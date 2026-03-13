@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/cpp/ops.html
 
 **
 
+**
+**
+**
+
+**
+
 # Operations
 
  Table of contents 
@@ -510,6 +516,9 @@ An output value is true if any of the corresponding inputs are true.
 
 **array hamming(int M, StreamOrDevice s = {})**
 : Returns the Hamming window of size M.
+
+**array bartlett(int M, StreamOrDevice s = {})**
+: Returns the bartlett window of size M.
 
 **array blackman(int M, StreamOrDevice s = {})**
 : Returns the Blackmann window of size M.

@@ -20,7 +20,7 @@ object GameCenterAchievementLocalizationV2.Relationships.Version
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementLocalizationV2.Relationships.Version.Data](gamecenterachievementlocalizationv2/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
 
 ## Properties

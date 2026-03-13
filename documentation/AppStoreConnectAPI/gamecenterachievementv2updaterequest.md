@@ -20,7 +20,7 @@ object GameCenterAchievementV2UpdateRequest
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterAchievementV2UpdateRequest.Data](gamecenterachievementv2updaterequest/data-data.dictionary.md)
   The data structure that represents a Game Center achievement update request resource.
 

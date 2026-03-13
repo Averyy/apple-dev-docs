@@ -16,6 +16,7 @@ object GameCenterChallenge.Relationships.Versions
 
 ### Dictionaries
 - [object GameCenterChallenge.Relationships.Versions.Data](gamecenterchallenge/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a challenge.
 
 ## Properties
 

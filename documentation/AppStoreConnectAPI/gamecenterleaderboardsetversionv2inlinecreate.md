@@ -22,7 +22,7 @@ object GameCenterLeaderboardSetVersionV2InlineCreate
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships](gamecenterleaderboardsetversionv2inlinecreate/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 

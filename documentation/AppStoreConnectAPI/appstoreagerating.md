@@ -30,7 +30,6 @@ For more information about app ratings, see [`Age ratings`](https://developer.ap
   A response that contains a single Age Rating Declarations resource.
 - [object AgeRatingDeclarationUpdateRequest](ageratingdeclarationupdaterequest.md)
   The request body you use to update an Age Rating Declaration.
-- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
 - [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 - [object AppInfoTerritoryAgeRatingsLinkagesResponse](appinfoterritoryageratingslinkagesresponse.md)
 - [type BrazilAgeRating](brazilagerating.md)

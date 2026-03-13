@@ -8,7 +8,7 @@ An object that configures whether a user can modify their device’s account set
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 
 ## Declaration
 
@@ -18,7 +18,7 @@ struct AccountSettings
 
 ## Topics
 
-### Constraining Accounts
+### Constraining accounts
 - [var lockAccounts: Bool?](accountsettings/lockaccounts-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing their account information.
 - [static let lockAccounts: SettingMetadata<Bool>](accountsettings/lockaccounts-swift.type.property.md)

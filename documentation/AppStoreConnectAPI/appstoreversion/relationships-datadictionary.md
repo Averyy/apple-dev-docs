@@ -17,8 +17,8 @@ object AppStoreVersion.Relationships
 ## Topics
 
 ### Objects
-- [object AppStoreVersion.Relationships.AgeRatingDeclaration](appstoreversion/relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)
-  The data and links that describe the relationship between the resources.
+- [object AgeRatingDeclaration](ageratingdeclaration.md)
+  The data structure that represents an Age Rating Declarations resource.
 - [object AppStoreVersion.Relationships.App](appstoreversion/relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 - [object AppStoreVersion.Relationships.AppClipDefaultExperience](appstoreversion/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
@@ -45,7 +45,6 @@ object AppStoreVersion.Relationships
 ## Properties
 
 - `app` (AppStoreVersion.Relationships.App)
-- `ageRatingDeclaration` (AppStoreVersion.Relationships.AgeRatingDeclaration)
 - `appStoreReviewDetail` (AppStoreVersion.Relationships.AppStoreReviewDetail)
 - `appStoreVersionLocalizations` (AppStoreVersion.Relationships.AppStoreVersionLocalizations)
 - `appStoreVersionPhasedRelease` (AppStoreVersion.Relationships.AppStoreVersionPhasedRelease)

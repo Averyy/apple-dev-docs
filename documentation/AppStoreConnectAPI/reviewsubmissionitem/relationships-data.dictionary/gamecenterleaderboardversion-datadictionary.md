@@ -16,7 +16,7 @@ object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion.Data](reviewsubmissionitem/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

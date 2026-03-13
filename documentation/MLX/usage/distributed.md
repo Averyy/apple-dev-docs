@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/distributed.html
 
 **
 
+**
+**
+**
+
+**
+
 # Distributed Communication
 
  Table of contents 

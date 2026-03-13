@@ -20,12 +20,11 @@ Get information for a specific app store version.
 ## Parameters
 
 - `limit[appStoreVersionLocalizations]` (integer): Number of resources to return.
-- `include` ([string]): Relationship data to include in the response. Note: `ageRatingDeclaration` is deprecated.
-- `fields[appStoreVersions]` ([string]): Fields to return for included related types. Note: `ageRatingDeclaration` is deprecated.
+- `include` ([string]): Relationship data to include in the response.
+- `fields[appStoreVersions]` ([string]): Fields to return for included related types.
 - `fields[appStoreVersionSubmissions]` ([string]): Fields to return for included related types.
 - `fields[builds]` ([string]): Fields to return for included related types.
 - `fields[appStoreReviewDetails]` ([string]): Fields to return for included related types.
-- `fields[ageRatingDeclarations]` ([string]): Deprecated. To get age rating declarations, use  [`Read age rating declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md) instead.
 - `fields[appStoreVersionPhasedReleases]` ([string]): Fields to return for included related types.
 - `fields[routingAppCoverages]` ([string]): Fields to return for included related types.
 - `fields[appStoreVersionLocalizations]` ([string]): Fields to return for included related types.

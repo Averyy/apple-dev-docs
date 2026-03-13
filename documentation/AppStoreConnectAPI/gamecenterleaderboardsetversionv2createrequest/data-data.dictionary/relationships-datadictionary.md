@@ -20,7 +20,7 @@ object GameCenterLeaderboardSetVersionV2CreateRequest.Data.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetVersionV2CreateRequest.Data.Relationships.LeaderboardSet](gamecenterleaderboardsetversionv2createrequest/data-data.dictionary/relationships-data.dictionary/leaderboardset-data.dictionary.md)
   The data that describes the leaderboard set of the Game Center leaderboard set version.
 

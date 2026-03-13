@@ -20,7 +20,7 @@ object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships
 
 ## Topics
 
-### Dictionaries - generated
+### Dictionaries
 - [object GameCenterLeaderboardSetVersionV2InlineCreate.Relationships.LeaderboardSet](gamecenterleaderboardsetversionv2inlinecreate/relationships-data.dictionary/leaderboardset-data.dictionary.md)
   The data that describes the leaderboard set of the Game Center leaderboard set version v2 inline create.
 

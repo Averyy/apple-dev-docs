@@ -15,6 +15,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 **
 
+**
+**
+**
+
+**
+
 # mlx.nn.losses.binary_cross_entropy
 
  Table of contents 
