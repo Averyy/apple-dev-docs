@@ -3,7 +3,7 @@
 **Framework**: Device Activity  
 **Kind**: init
 
-Creates a new monitor implemented by subclasses.
+Creates a new monitor instance implemented by subclasses.
 
 **Availability**:
 - iOS 15.0+

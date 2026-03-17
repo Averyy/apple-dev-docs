@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T07:41:54.921298",
+    "last_updated": "2026-03-17T07:44:05.550291",
     "total_pages": 34,
-    "session_id": "2026-03-13T07:41:52.229751"
+    "session_id": "2026-03-17T07:44:02.522098"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon.json": {
       "hash": "ee9e9a7ade69df61497f4804aa14db64135a4abd8b9fda540e1d692c57c95cbe",
-      "last_checked": "2026-03-13T07:41:52.506378",
+      "last_checked": "2026-03-17T07:44:02.963867",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"47a7f598c967d16ef656852a21a761c7\"",
       "file_path": "documentation/apple-silicon/apple-silicon.md"
     },
     "https://developer.apple.com/documentation/apple-silicon": {
       "hash": "ee9e9a7ade69df61497f4804aa14db64135a4abd8b9fda540e1d692c57c95cbe",
-      "last_checked": "2026-03-13T07:41:52.378318",
+      "last_checked": "2026-03-17T07:44:02.857248",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"47a7f598c967d16ef656852a21a761c7\"",
       "file_path": "documentation/apple-silicon/apple-silicon.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon.json": {
       "hash": "6913fc3f5b3c9054cf60b9ececcf398ac5d885c8734a48fe24926522a84a8fd9",
-      "last_checked": "2026-03-13T07:41:52.753853",
+      "last_checked": "2026-03-17T07:44:03.206542",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"bd5e8b4068a21ffb3a62b84542122f32\"",
       "file_path": "documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/building-a-universal-macos-binary.json": {
       "hash": "d6472204d8c8d7f3d2774dbdb11c447b293f720ee49104e3f51c66795919f932",
-      "last_checked": "2026-03-13T07:41:52.927413",
+      "last_checked": "2026-03-17T07:44:03.355125",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"c81df9a6e522610135d1d72a20185b2b\"",
       "file_path": "documentation/apple-silicon/building-a-universal-macos-binary.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/addressing-architectural-differences-in-your-macos-code.json": {
       "hash": "8842f5afea56610de3036963d50fb5d221f5c9b852e91bd42c4cb06c0635e74c",
-      "last_checked": "2026-03-13T07:41:53.059226",
+      "last_checked": "2026-03-17T07:44:03.519902",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"4b2a4d2f8a5ed71d05631dcb955ae8e2\"",
       "file_path": "documentation/apple-silicon/addressing-architectural-differences-in-your-macos-code.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-your-audio-code-to-apple-silicon.json": {
       "hash": "7b975ac469ef5312f53f7818f2dfa0c07634a823efc6a4d43307cea0d2c378e0",
-      "last_checked": "2026-03-13T07:41:53.127803",
+      "last_checked": "2026-03-17T07:44:03.656021",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"2017207e8f04480b2602bc596518c418\"",
       "file_path": "documentation/apple-silicon/porting-your-audio-code-to-apple-silicon.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon.json": {
       "hash": "a81d84cdebcc1684f1b969f876c804f65a35cace2e1250bf26b5e3f9631c4fcc",
-      "last_checked": "2026-03-13T07:41:53.301980",
+      "last_checked": "2026-03-17T07:44:03.844724",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"fc5493511da8fc07db2014d84c3acb49\"",
       "file_path": "documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/porting-your-metal-code-to-apple-silicon.json": {
       "hash": "7c1cdbdeccacf696e06f0bfedb156aa0a2017bccf2c3251184bf17b9eeaf8071",
-      "last_checked": "2026-03-13T07:41:53.418101",
+      "last_checked": "2026-03-17T07:44:03.971011",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"440fcd1cd50ad84dbc61e3923c863fe4\"",
       "file_path": "documentation/apple-silicon/porting-your-metal-code-to-apple-silicon.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon.json": {
       "hash": "b8f632f39131b3c19b4c25abf5c4688f62a407ae31defd4bebf5c869fdf0b797",
-      "last_checked": "2026-03-13T07:41:53.595886",
+      "last_checked": "2026-03-17T07:44:04.118215",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"e7807c49ad739d12633a9af049ae5304\"",
       "file_path": "documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/cpu-optimization-guide.json": {
       "hash": "985704ad9f96187c003ed489effda62616483b6a0da6cccc55108cf6cb8bafc1",
-      "last_checked": "2026-03-13T07:41:53.733850",
+      "last_checked": "2026-03-17T07:44:04.243678",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"22977c5d6f22540a019516b7b316226a\"",
       "file_path": "documentation/apple-silicon/cpu-optimization-guide.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/about-the-rosetta-translation-environment.json": {
       "hash": "5646d760d619af90414118c25e166906877ec0598e82ba4701fed4de7abbadf5",
-      "last_checked": "2026-03-13T07:41:53.889949",
+      "last_checked": "2026-03-17T07:44:04.459762",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"c1d3de822e51610e007dad30a3d1ac10\"",
       "file_path": "documentation/apple-silicon/about-the-rosetta-translation-environment.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/running-your-ios-apps-in-macos.json": {
       "hash": "5673875a143a436f4269d73efc1fbdc4537590c0faf6f0568e758292dad11f03",
-      "last_checked": "2026-03-13T07:41:53.994373",
+      "last_checked": "2026-03-17T07:44:04.592508",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"10360d33ded442a914dd68504770458e\"",
       "file_path": "documentation/apple-silicon/running-your-ios-apps-in-macos.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/adapting-ios-code-to-run-in-the-macos-environment.json": {
       "hash": "c14e12159a1b2c3cd5fb5d4df064c336d889ee99db2842876ba8383b63482123",
-      "last_checked": "2026-03-13T07:41:54.131555",
+      "last_checked": "2026-03-17T07:44:04.744680",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"27cb3f81dde13db57f8d066bcd4a7a18\"",
       "file_path": "documentation/apple-silicon/adapting-ios-code-to-run-in-the-macos-environment.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/providing-touch-gesture-equivalents-using-touch-alternatives.json": {
       "hash": "6d40d098e639e293e27999ae7b2cdc1001025716d439e14f19076bf112e47ccc",
-      "last_checked": "2026-03-13T07:41:54.290967",
+      "last_checked": "2026-03-17T07:44:04.887350",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"27a351f556682aa3ce82f5cad2db314b\"",
       "file_path": "documentation/apple-silicon/providing-touch-gesture-equivalents-using-touch-alternatives.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.json": {
       "hash": "e8c610facb4dbd895b475a6abfa2bd36143c070caa836f3f9e820dc28df19ba0",
-      "last_checked": "2026-03-13T07:41:54.430223",
+      "last_checked": "2026-03-17T07:44:05.070760",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"fb88402f2c301e2495b440f079efad5a\"",
       "file_path": "documentation/apple-silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/installing-a-custom-kernel-extension.json": {
       "hash": "3616701c40c5d573391da29cf918376bc294a501bcb24529731bbe5274cbf7bc",
-      "last_checked": "2026-03-13T07:41:54.569114",
+      "last_checked": "2026-03-17T07:44:05.235247",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"68aaa7320709aaa22f41e97de2839eba\"",
       "file_path": "documentation/apple-silicon/installing-a-custom-kernel-extension.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/debugging-a-custom-kernel-extension.json": {
       "hash": "446fe2fe9d1ea19f69b6be8d64fb75d96843bca08b18d4d00777ecb3bc64049a",
-      "last_checked": "2026-03-13T07:41:54.685716",
+      "last_checked": "2026-03-17T07:44:05.386449",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"249528a3091eef289853b2e9d54c621f\"",
       "file_path": "documentation/apple-silicon/debugging-a-custom-kernel-extension.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication.json": {
       "hash": "fbefafd0c10cf79438d3321152d2bc0f4c942ca777c6cc75cf0d44eda43fbb01",
-      "last_checked": "2026-03-13T07:41:54.911232",
+      "last_checked": "2026-03-17T07:44:05.526216",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:52.229751",
+      "session_id": "2026-03-17T07:44:02.522098",
       "etag": "W/\"ac8d714e60f111bbd87689d8fb79d2ac\"",
       "file_path": "documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication.md"
     },

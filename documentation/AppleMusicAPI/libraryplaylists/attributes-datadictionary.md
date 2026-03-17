@@ -25,6 +25,7 @@ object LibraryPlaylists.Attributes
 - `playParams` (PlayParameters): The value map may be used to initiate playback of available tracks in the playlist.
 - `isPublic` (boolean) *(required)*: A flag to indicate whether the library playlist is a public playlist.
 - `trackTypes` ([string]): **(Extended)** The resource types that are present in the tracks of the library playlist.
+- `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
 
 ## See Also
 

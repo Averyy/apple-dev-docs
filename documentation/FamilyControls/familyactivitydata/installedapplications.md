@@ -3,7 +3,7 @@
 **Framework**: Family Controls  
 **Kind**: property
 
-An array of applications installed by the current user.
+Applications someone installs on a device.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -17,9 +17,18 @@ var installedApplications: [Application] { get async throws }
 
 #### Discussion
 
-The applications will have both the `bundleIdentifier` and `token` populated.
+Each application contains both a `bundleIdentifier` and a `token`.
 
-> ❗ **Important**: Your app must be authorized via [`AuthorizationCenter`](authorizationcenter.md) and data access must be available before attempting to access this variable or it will always throw.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](AuthorizationCenter.md) and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
+
+## See Also
+
+- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+  A shared instance for accessing a person’s family activity data.
+- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+  The set of all possible activity categories.
+- [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
+  Web domains someone visits on their device.
 
 
 ---

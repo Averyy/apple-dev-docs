@@ -18,9 +18,11 @@ case notDetermined
 ## See Also
 
 - [AuthorizationStatus.denied](authorizationstatus/denied.md)
-  The user, parent, or guardian denied the request for authorization.
+  The person, parent, or guardian denied the request for authorization.
 - [AuthorizationStatus.approved](authorizationstatus/approved.md)
-  The user, parent, or guardian approved the request for authorization.
+  The person, parent, or guardian approved the request for authorization.
+- [AuthorizationStatus.approvedWithDataAccess](authorizationstatus/approvedwithdataaccess.md)
+  The person, parent, or guardian approved the request for authorization with access to non-tokenized family activity data.
 
 
 ---

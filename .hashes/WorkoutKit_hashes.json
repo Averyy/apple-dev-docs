@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T07:39:08.984467",
+    "last_updated": "2026-03-17T07:41:09.814599",
     "total_pages": 628,
-    "session_id": "2026-03-13T07:38:24.859605"
+    "session_id": "2026-03-17T07:40:13.212366"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/WorkoutKit.json": {
       "hash": "ac7a73c43727de0df91da09237e7c8b70afee1f365481008b241d4f5e5af5cc9",
-      "last_checked": "2026-03-13T07:38:25.118137",
+      "last_checked": "2026-03-17T07:40:13.526472",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6abf60ed7679f82ff59788135033da0c\"",
       "file_path": "documentation/WorkoutKit/WorkoutKit.md"
     },
     "https://developer.apple.com/documentation/WorkoutKit": {
       "hash": "ac7a73c43727de0df91da09237e7c8b70afee1f365481008b241d4f5e5af5cc9",
-      "last_checked": "2026-03-13T07:38:25.019216",
+      "last_checked": "2026-03-17T07:40:13.412033",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6abf60ed7679f82ff59788135033da0c\"",
       "file_path": "documentation/WorkoutKit/WorkoutKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customizing-workouts-with-workoutkit.json": {
       "hash": "9e15ec758148706f4b966d2a57dbacc54c2c7e227eeea69b31476ce8a3e23601",
-      "last_checked": "2026-03-13T07:38:25.362564",
+      "last_checked": "2026-03-17T07:40:13.767939",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"94456b4f7e8f90fa4416cb97a0f3ba38\"",
       "file_path": "documentation/WorkoutKit/customizing-workouts-with-workoutkit.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout.json": {
       "hash": "5d3b9018e9aecfbbb14141fd93ac55a4e656a92db94f00e4c9dc0a90ee74c40d",
-      "last_checked": "2026-03-13T07:38:25.551747",
+      "last_checked": "2026-03-17T07:40:13.970066",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"839e878119359e11ac403f0cb19cb0ae\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout.json": {
       "hash": "e44552d723596d63734be766349c272bb7c969b66323a3b327fb2431c906eedc",
-      "last_checked": "2026-03-13T07:38:25.677532",
+      "last_checked": "2026-03-17T07:40:14.147208",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f9014064f36967b9942dd7731e6ba641\"",
       "file_path": "documentation/WorkoutKit/pacerworkout.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout.json": {
       "hash": "29d984d81f1d26a76dd9e61d0cdeaf0a37e91848e4a99064a8112e8256fc4a26",
-      "last_checked": "2026-03-13T07:38:25.816909",
+      "last_checked": "2026-03-17T07:40:14.291875",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6c01a021dc0555789f3ec88c3a7c2e29\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout.json": {
       "hash": "9df142135e65e4e4e07e7ecbba2be0a78afd59b0d79d67d96cd5edd2b43d9e07",
-      "last_checked": "2026-03-13T07:38:26.097832",
+      "last_checked": "2026-03-17T07:40:14.609234",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a9703ede6ba50dd0c311abdcd8e14138\"",
       "file_path": "documentation/WorkoutKit/customworkout.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep.json": {
       "hash": "5eaffb4734b5e6b0fd43f0a56d244ef4f0714295df0a54fbab8df516780d5258",
-      "last_checked": "2026-03-13T07:38:26.204285",
+      "last_checked": "2026-03-17T07:40:14.802667",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7dfd1e1401c859c3201ffb60186fe31a\"",
       "file_path": "documentation/WorkoutKit/workoutstep.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock.json": {
       "hash": "39d5c52d56f4a18f2d733b7e8c369a01a9135383819e8189a4ad1d40777db48e",
-      "last_checked": "2026-03-13T07:38:26.377587",
+      "last_checked": "2026-03-17T07:40:15.025793",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ad0c02bcd21a76c2ad7012ec7944e5f2\"",
       "file_path": "documentation/WorkoutKit/intervalblock.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep.json": {
       "hash": "9495cd13ba89637cd825bd92987f9a952515ec0e6b4357890d8476523cead52b",
-      "last_checked": "2026-03-13T07:38:26.499532",
+      "last_checked": "2026-03-17T07:40:15.146323",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"804f67715fbb30aca516a70366a06ab2\"",
       "file_path": "documentation/WorkoutKit/intervalstep.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal.json": {
       "hash": "a683bd912337102a2006844aa67db5e4b3dedf15e6487267fdd2d928e75d811f",
-      "last_checked": "2026-03-13T07:38:26.635342",
+      "last_checked": "2026-03-17T07:40:15.273456",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e493021a9ba2331494b0312013becebe\"",
       "file_path": "documentation/WorkoutKit/workoutgoal.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert.json": {
       "hash": "f0abf8da006d693e6846f8b4cdca2b972fa9a161268ae94f2a083b4388cdf307",
-      "last_checked": "2026-03-13T07:38:26.770173",
+      "last_checked": "2026-03-17T07:40:15.403000",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c837ebe35c453ce3e8b027d78e7ac34f\"",
       "file_path": "documentation/WorkoutKit/workoutalert.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan.json": {
       "hash": "d457ce92f2d8d865ad9092d453e4cf8fa54720cb4386327648c188abea3fc65d",
-      "last_checked": "2026-03-13T07:38:26.890635",
+      "last_checked": "2026-03-17T07:40:15.685381",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9d3bcf62efda6e14784f891bcb581ab6\"",
       "file_path": "documentation/WorkoutKit/workoutplan.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan.json": {
       "hash": "92d742c357fd3c4b16825ee9ec414246a41a2bd6dbb296abf7749c06ce301ff0",
-      "last_checked": "2026-03-13T07:38:27.045451",
+      "last_checked": "2026-03-17T07:40:16.061797",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e9fc0e294f0fa111fffe996d0d87ecf4\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler.json": {
       "hash": "077c78170be7ab3f60b82605fb21e14d61e3599fb1c597bb99415a8ea304ef86",
-      "last_checked": "2026-03-13T07:38:27.169386",
+      "last_checked": "2026-03-17T07:40:16.384212",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"53eff61d11fca342cf66dc4af58acaac\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror.json": {
       "hash": "6a2a5bb1375a182a7f36c64438d08575327961bc1e1fe4dd205f68b300e393fe",
-      "last_checked": "2026-03-13T07:38:27.303910",
+      "last_checked": "2026-03-17T07:40:16.517333",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"23617ffca0adbdae57b606ebfb92ae82\"",
       "file_path": "documentation/WorkoutKit/stateerror.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/init(activity:location:swimminglocation:goal:).json": {
       "hash": "688e3e159d11d01f91d0db18e311b04d74421746cb145ef92d4eef0f0472db44",
-      "last_checked": "2026-03-13T07:38:27.469908",
+      "last_checked": "2026-03-17T07:40:16.699682",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"95fd4e72685cb71d95e932c588c0bfef\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/init-activitylocationswimminglocationgoal.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/supportsactivity(_:).json": {
       "hash": "a0dbdb112e1e7fa783d0cb03912ad5ddf3527df707cfe2f92868713d4371294d",
-      "last_checked": "2026-03-13T07:38:27.576348",
+      "last_checked": "2026-03-17T07:40:16.831317",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8b1fd8e4df07665b5eb7ec581e0cb38f\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/supportsactivity.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/supportsgoal(_:activity:location:).json": {
       "hash": "4a70093d6e0ffe24963f0855f2eee439e70273340d267d1708cb4228095927a7",
-      "last_checked": "2026-03-13T07:38:27.711286",
+      "last_checked": "2026-03-17T07:40:17.145906",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d6adce1161246282a5f77c3d3ded2041\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/supportsgoal-activitylocation.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/activity.json": {
       "hash": "986ee627bc3a2c839c10a0b659d722b8b877c880a2ccf408e8b769c70fc189cd",
-      "last_checked": "2026-03-13T07:38:27.884055",
+      "last_checked": "2026-03-17T07:40:17.323757",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ec2f826f770d340a266c700c5f47a8bd\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/activity.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/location.json": {
       "hash": "0c83256a869b13d7dde42751561770533c125b7e09e3da76d4b5bb3f381f139a",
-      "last_checked": "2026-03-13T07:38:27.997438",
+      "last_checked": "2026-03-17T07:40:17.619493",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"347aa6bab0c12a2d3b5ebc45ab8a6c29\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/location.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/swimminglocation.json": {
       "hash": "7f2c8817a512b3d095c7d07fd5dc59cc67b8167f72df43a9b60a9976e8cec9a6",
-      "last_checked": "2026-03-13T07:38:28.134119",
+      "last_checked": "2026-03-17T07:40:17.792080",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"32b8421be6028ee97a3bc5a5c5c52393\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/swimminglocation.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/goal.json": {
       "hash": "807f3aa058e5714c062fc37fa90e4edec4b08dd393093dda9004798c79e8749c",
-      "last_checked": "2026-03-13T07:38:28.300749",
+      "last_checked": "2026-03-17T07:40:17.976646",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"eff2afcd6ee304e62e0c7e21750b12d2\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/goal.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/hashvalue.json": {
       "hash": "ddfc438d5fc11ecbbd278ec051424a24261f66ce62cd3627a4539e69277cb224",
-      "last_checked": "2026-03-13T07:38:28.432773",
+      "last_checked": "2026-03-17T07:40:18.288806",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"70104e2951f555542761eccbaec78f58\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/hashvalue.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/hash(into:).json": {
       "hash": "2df81d6bfa9121917459fb5fff91ae4e773dba2980bb80d2dcbd2be377f0246d",
-      "last_checked": "2026-03-13T07:38:28.575071",
+      "last_checked": "2026-03-17T07:40:18.588673",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"aaef5474cf2504dda2a9f56163d2511c\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/hash-into.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/!=(_:_:).json": {
       "hash": "2f29b3ed71d0f2a74ee00f7408ed16a97c3898be1d60ca669683665ad13cd6c1",
-      "last_checked": "2026-03-13T07:38:28.681196",
+      "last_checked": "2026-03-17T07:40:18.890917",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"82218037c1b44023381588a8b55d7ac4\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/notequal.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/==(_:_:).json": {
       "hash": "8819f2a5e454ace7682d3c14d8624b76ad414742a7de72e26edde70befd3b1cb",
-      "last_checked": "2026-03-13T07:38:28.835059",
+      "last_checked": "2026-03-17T07:40:19.221128",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"28c65afdaddb3f7f886252af92effda8\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/equal.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/singlegoalworkout/equatable-implementations.json": {
       "hash": "7ac7ddbfcfc817c5f29a50e56a175d06af693a0bf270f4c2443598391abbd193",
-      "last_checked": "2026-03-13T07:38:28.988426",
+      "last_checked": "2026-03-17T07:40:19.382596",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8d8210fb2661f17f6dcb545b2c1e70c2\"",
       "file_path": "documentation/WorkoutKit/singlegoalworkout/equatable-implementations.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/init(activity:location:distance:time:).json": {
       "hash": "0a2091dd8542654e7494a35892ddc8e3482c303cf1935c7c8233306afb935640",
-      "last_checked": "2026-03-13T07:38:29.095506",
+      "last_checked": "2026-03-17T07:40:19.552109",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"1acae5a2bfce7dae3e09606db59e0f24\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/init-activitylocationdistancetime.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/supportsactivity(_:).json": {
       "hash": "6a0ee58e738df8a4a6d6e1372d54eceb92c340bef645fc11c1b44fe5a9af6ca0",
-      "last_checked": "2026-03-13T07:38:29.264293",
+      "last_checked": "2026-03-17T07:40:19.682364",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"93a03dd19ce22ab197f99c2043b11e6e\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/supportsactivity.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/activity.json": {
       "hash": "378af821e22f7d712298283f1eda85ec48515081fc3159e173b4224b4fdfc286",
-      "last_checked": "2026-03-13T07:38:29.362338",
+      "last_checked": "2026-03-17T07:40:19.844468",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7d00dd6fcb9492bebfbbc69a59ef3f8d\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/activity.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/location.json": {
       "hash": "d7f4ec8bef3e71acf76bf74f9a4720507cc52d509ffd57cf816830be0e56c9fb",
-      "last_checked": "2026-03-13T07:38:29.491417",
+      "last_checked": "2026-03-17T07:40:20.033598",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7455d04e8c3f950a1af03428ee85bb37\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/location.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/distance.json": {
       "hash": "9f554d01f26feb51d539ceaaca315b47e6e94416e1c6269f523d638741f19328",
-      "last_checked": "2026-03-13T07:38:29.671732",
+      "last_checked": "2026-03-17T07:40:20.212173",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"13fbee1811f3c750c27765d51d32dbf3\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/distance.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/time.json": {
       "hash": "6b2b4693410c01c1f7b5ff4e1c8f0b3b37328d089a82e5e7079f4f49d6857477",
-      "last_checked": "2026-03-13T07:38:29.778735",
+      "last_checked": "2026-03-17T07:40:20.403789",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"5f36ba92624772ed056660ba0297cffe\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/time.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/hashvalue.json": {
       "hash": "57fa09eb4b6d1e2f0abbfc3cd8810de74b240e06ef953d20ac84fbd64f904e47",
-      "last_checked": "2026-03-13T07:38:29.894661",
+      "last_checked": "2026-03-17T07:40:20.529057",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e3142be0cf73fae29434b6aeb0945125\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/hashvalue.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/hash(into:).json": {
       "hash": "ad6ee0dcd74610b2030144030f1212e11e683fcd9d1267dc998a0bcf6b5c7c9a",
-      "last_checked": "2026-03-13T07:38:30.077159",
+      "last_checked": "2026-03-17T07:40:20.691640",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7f33fc907441ef5e9d6ab37f67ecbbd1\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/hash-into.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/!=(_:_:).json": {
       "hash": "ce485ae3628860f1387315a295674c00d32fa0969a56f1e0595679120f355dac",
-      "last_checked": "2026-03-13T07:38:30.198642",
+      "last_checked": "2026-03-17T07:40:20.869593",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c90ee5946b43f1a179a241971c8a2772\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/notequal.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/==(_:_:).json": {
       "hash": "cb4cc9712ae170d29b684960630766836ce19d1c3173cfe76575dd264d7e328f",
-      "last_checked": "2026-03-13T07:38:30.305772",
+      "last_checked": "2026-03-17T07:40:20.991269",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d63ec12020948a51a1e7d5a55c18b292\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/equal.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/pacerworkout/equatable-implementations.json": {
       "hash": "8b59e84c991d9b0cc9371b714ab186259bb0d62acdc8087a19d0f599d7a7ae79",
-      "last_checked": "2026-03-13T07:38:30.430737",
+      "last_checked": "2026-03-17T07:40:21.163312",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"70163b0d5e4ceb44eb12b9edd39466b5\"",
       "file_path": "documentation/WorkoutKit/pacerworkout/equatable-implementations.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/init(activities:displayname:).json": {
       "hash": "d46d011bbeb7ea264baac9aba439c407f3ab2f139ca6d28b052ee59e64d2ffbe",
-      "last_checked": "2026-03-13T07:38:30.545313",
+      "last_checked": "2026-03-17T07:40:21.465580",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"880425f5e870e60c8839ec400f929099\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/init-activitiesdisplayname.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity.json": {
       "hash": "cea1472a1f66c642ac1ed9c4d5f08c83f77b4c86ed2ca3e605ee2dbff8805238",
-      "last_checked": "2026-03-13T07:38:30.674521",
+      "last_checked": "2026-03-17T07:40:21.766239",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3c58b448b42a3535bfacc25c5ebe5a42\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/supportsactivityordering(_:).json": {
       "hash": "d266c5bd9c7e9e14fb4bac41d1ac173f7f7eb8bf4a404e036f9657b30bd55831",
-      "last_checked": "2026-03-13T07:38:30.797900",
+      "last_checked": "2026-03-17T07:40:21.931585",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b9f4905b429fda33fa7f463c1a6755af\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/supportsactivityordering.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activities.json": {
       "hash": "2d83b78e05bda48b71a97cd9d6a11a7904ce24878cb9878c00e5e2c673df3903",
-      "last_checked": "2026-03-13T07:38:30.915328",
+      "last_checked": "2026-03-17T07:40:22.236296",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"75bc267ca8fd4eff5fc6f808c35d5e0d\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activities.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/displayname.json": {
       "hash": "bb57b39ceded5328a8321e6a3d3b8eb37fa9b95310a6ab4ea18c607a924e94a9",
-      "last_checked": "2026-03-13T07:38:31.046175",
+      "last_checked": "2026-03-17T07:40:22.366750",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f264b4b5cfae92e42a4b7311eb9c66f0\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/displayname.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/hashvalue.json": {
       "hash": "8e8e8b3b577370dac68eea7b30653db5b31c7d0d126f91e236b84318356ad4a0",
-      "last_checked": "2026-03-13T07:38:31.170306",
+      "last_checked": "2026-03-17T07:40:22.558955",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"82bdb3437b695862f6fa0bb7dbf61ce2\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/hashvalue.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/hash(into:).json": {
       "hash": "25acd8fa4fb668b72c33d9911a2f3b314b062ebd86d0b107096d79f88a46d044",
-      "last_checked": "2026-03-13T07:38:31.312017",
+      "last_checked": "2026-03-17T07:40:22.861320",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0d44b439942ad6075a4e33c92e6cd9f9\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/hash-into.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/==(_:_:).json": {
       "hash": "027bdbcf5b0e183cbf84de5851ce7c33381854e02f669c9eb41f2fac1a25ee08",
-      "last_checked": "2026-03-13T07:38:31.419937",
+      "last_checked": "2026-03-17T07:40:23.018866",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"033a0c83e82f8a0b54212b2008b5c615\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/equal.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/!=(_:_:).json": {
       "hash": "34aaaccc6f4a6517ec7f13b95a1a463944a42273777f9aad54d010240b9644c2",
-      "last_checked": "2026-03-13T07:38:31.547335",
+      "last_checked": "2026-03-17T07:40:23.139821",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"90e0117d2ceae88c8022905d0f197ac5\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/notequal.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/equatable-implementations.json": {
       "hash": "1e3893644a1fa618ce9d477458f22c0cd9c5a44c33783944c63f1cedf5d1c231",
-      "last_checked": "2026-03-13T07:38:31.664358",
+      "last_checked": "2026-03-17T07:40:23.324584",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"77cf4711b276b9b58bad7e72e648eea3\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/equatable-implementations.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/init(activity:location:displayname:warmup:blocks:cooldown:).json": {
       "hash": "64f4f2005510e3e71b908936d5e4c7d116d899a1736bac9acce2c0741b497212",
-      "last_checked": "2026-03-13T07:38:31.785624",
+      "last_checked": "2026-03-17T07:40:23.499606",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7ea0e10b06075b9dd92b1c003375e793\"",
       "file_path": "documentation/WorkoutKit/customworkout/init-activitylocationdisplaynamewarmupblockscooldown.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/supportsactivity(_:).json": {
       "hash": "d46881683069a71e20a8ff633c8244ad87d13bf05d01b60a04fd3389f98a5bdb",
-      "last_checked": "2026-03-13T07:38:31.904453",
+      "last_checked": "2026-03-17T07:40:23.719505",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8ee100cf8bc821b9e84d202ee3692f16\"",
       "file_path": "documentation/WorkoutKit/customworkout/supportsactivity.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/supportsalert(_:activity:location:).json": {
       "hash": "cfe1536153cd1f8b2ff8c154dd0e0ba1de1c6ea6357ac81413e4b6ea6c2ed3df",
-      "last_checked": "2026-03-13T07:38:32.023388",
+      "last_checked": "2026-03-17T07:40:24.047445",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2b9299f33a6335319181f2ea86ceb05c\"",
       "file_path": "documentation/WorkoutKit/customworkout/supportsalert-activitylocation.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/supportsgoal(_:activity:location:).json": {
       "hash": "64d26ac056ca94cdf16a65a1133020c287a276ce5d467a944f302c0e8dbae5c9",
-      "last_checked": "2026-03-13T07:38:32.143348",
+      "last_checked": "2026-03-17T07:40:24.230220",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"77890cdc08aad12cae1018c14d04f230\"",
       "file_path": "documentation/WorkoutKit/customworkout/supportsgoal-activitylocation.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/displayname.json": {
       "hash": "9231653b84b239930d686eb08b0d9bd4565bb94390b8ccd992fcb98b7ccb515d",
-      "last_checked": "2026-03-13T07:38:32.266019",
+      "last_checked": "2026-03-17T07:40:24.407258",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b0aaca9c57ee083774b6470df2b8f8e5\"",
       "file_path": "documentation/WorkoutKit/customworkout/displayname.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/activity.json": {
       "hash": "bff2ba58a7cbe02da1876ec55d934abfdaa388e757b37443b59d198a4dfd3d82",
-      "last_checked": "2026-03-13T07:38:32.392586",
+      "last_checked": "2026-03-17T07:40:24.873204",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0fa29e7f7976cd7c487e9b8933182f08\"",
       "file_path": "documentation/WorkoutKit/customworkout/activity.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/location.json": {
       "hash": "7e54851fa4e1086ac32fb0aef0130f29b0eb5f677fc4261c221447b84421f8b4",
-      "last_checked": "2026-03-13T07:38:32.510499",
+      "last_checked": "2026-03-17T07:40:25.056885",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"63e820b9f8ac4dda52b62555680cca89\"",
       "file_path": "documentation/WorkoutKit/customworkout/location.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/warmup.json": {
       "hash": "50cb4bff300fede2a6cc840b94fd7824c87a5e242a6a0c04660db75854984317",
-      "last_checked": "2026-03-13T07:38:32.630557",
+      "last_checked": "2026-03-17T07:40:25.229405",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3a95b5d91880baa61088fa779097a73d\"",
       "file_path": "documentation/WorkoutKit/customworkout/warmup.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/blocks.json": {
       "hash": "349708eafb620cec496cec91b07c8e8d407ab75834244b2f02994189a1c5ec80",
-      "last_checked": "2026-03-13T07:38:32.767584",
+      "last_checked": "2026-03-17T07:40:25.409147",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3c90309a1bb3115575e1c9b93f2027fd\"",
       "file_path": "documentation/WorkoutKit/customworkout/blocks.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/cooldown.json": {
       "hash": "c1a0b2728e60488b4c3b1648d93c162acfb991b1d01de50bfd88e72bcc822adc",
-      "last_checked": "2026-03-13T07:38:32.910855",
+      "last_checked": "2026-03-17T07:40:25.626927",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6157c17ab1d918a1308b2fa7a80b73b3\"",
       "file_path": "documentation/WorkoutKit/customworkout/cooldown.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/hashvalue.json": {
       "hash": "8bd341df938f4785c745d9a2478526b50d0ae8bc1db5070c7075f2ebb8ff954f",
-      "last_checked": "2026-03-13T07:38:33.026243",
+      "last_checked": "2026-03-17T07:40:25.812443",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"aa919bb73be4f75727ecc1c325f042fa\"",
       "file_path": "documentation/WorkoutKit/customworkout/hashvalue.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/hash(into:).json": {
       "hash": "64e94a6c444214426be3492bfe617a0d8b9dd839ce40d0a8cdda4f1074d2e8c5",
-      "last_checked": "2026-03-13T07:38:33.152842",
+      "last_checked": "2026-03-17T07:40:25.942732",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8463bb28b5f6b971ca2f2467d04b02ff\"",
       "file_path": "documentation/WorkoutKit/customworkout/hash-into.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/!=(_:_:).json": {
       "hash": "65bf2b444d43bfa89abe455c3a385a66f63804676a84102bd74b874c81294fd4",
-      "last_checked": "2026-03-13T07:38:33.282447",
+      "last_checked": "2026-03-17T07:40:26.113026",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"01780e0c5fa80c80e869a6eef0f121dd\"",
       "file_path": "documentation/WorkoutKit/customworkout/notequal.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/==(_:_:).json": {
       "hash": "c50e407dd5d45840dda9f503fd703db0b654c3d603895ca21b5b7991010d7d0d",
-      "last_checked": "2026-03-13T07:38:33.400915",
+      "last_checked": "2026-03-17T07:40:26.230732",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7442f98f6cd931741e162fde8095752d\"",
       "file_path": "documentation/WorkoutKit/customworkout/equal.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/customworkout/equatable-implementations.json": {
       "hash": "34caa665f8f7cc516833f8f588be59ba727956c444252d2aeacc330c63a77662",
-      "last_checked": "2026-03-13T07:38:33.536926",
+      "last_checked": "2026-03-17T07:40:26.371248",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9aec426660d982bf7d72848c90146fde\"",
       "file_path": "documentation/WorkoutKit/customworkout/equatable-implementations.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/init(goal:alert:).json": {
       "hash": "067e0d7428b8e616448e5397d9d5cac69ab4a535b5d1f16f2b7181a54bdbd495",
-      "last_checked": "2026-03-13T07:38:33.653757",
+      "last_checked": "2026-03-17T07:40:26.497908",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d62f057930ed0a09c07f792aac29092a\"",
       "file_path": "documentation/WorkoutKit/workoutstep/init-goalalert.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/alert.json": {
       "hash": "16545d8a1202730683b82e87812b3f903ec36b23d4ff2b0e24fbfbcd5fec8f25",
-      "last_checked": "2026-03-13T07:38:33.782534",
+      "last_checked": "2026-03-17T07:40:26.668724",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"cc2d20ff3e7ce250268ca1ea492ddf07\"",
       "file_path": "documentation/WorkoutKit/workoutstep/alert.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/goal.json": {
       "hash": "689ecf0914dfbcf4396d10776b5f11788832e6168a2e0ab394b82f7a4aa458c9",
-      "last_checked": "2026-03-13T07:38:33.906662",
+      "last_checked": "2026-03-17T07:40:26.852405",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"52a8002a102b36a837aa37afbddf31e2\"",
       "file_path": "documentation/WorkoutKit/workoutstep/goal.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/hashvalue.json": {
       "hash": "56114826142e4f13f3c00809b3891f38f24248986c85a39a2e5dba659d315e3c",
-      "last_checked": "2026-03-13T07:38:34.044076",
+      "last_checked": "2026-03-17T07:40:27.022629",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3956cd92ebe38427bfeebec733f46b55\"",
       "file_path": "documentation/WorkoutKit/workoutstep/hashvalue.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/hash(into:).json": {
       "hash": "37eeea16883125322df38fb5c9fd6a17b8798cc0103e12f2b7d8767adc58f069",
-      "last_checked": "2026-03-13T07:38:34.182874",
+      "last_checked": "2026-03-17T07:40:27.210348",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d6bff5a53a4edd9260dddd7f746442ab\"",
       "file_path": "documentation/WorkoutKit/workoutstep/hash-into.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/!=(_:_:).json": {
       "hash": "530381a8a667aad2c6282d1e5950a6c2843852e188793da4cc42ca4469ea432c",
-      "last_checked": "2026-03-13T07:38:34.310019",
+      "last_checked": "2026-03-17T07:40:27.400881",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b9b4708548ca1c17db1dbdb76155fb28\"",
       "file_path": "documentation/WorkoutKit/workoutstep/notequal.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/==(_:_:).json": {
       "hash": "243688bdd3c78b3ae085e71cb9833e070d5bd2531d507066ee8b6aadf4367980",
-      "last_checked": "2026-03-13T07:38:34.463031",
+      "last_checked": "2026-03-17T07:40:27.542940",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9fa48862ad0e9d2ad12005fd6e38315c\"",
       "file_path": "documentation/WorkoutKit/workoutstep/equal.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/init(goal:alert:displayname:).json": {
       "hash": "3a53c2720d9d44173b9542ed50cff83842a1551558221514021e24d21c441342",
-      "last_checked": "2026-03-13T07:38:34.612644",
+      "last_checked": "2026-03-17T07:40:27.739829",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"40ed99a68ada6955ac345825b08c3ce8\"",
       "file_path": "documentation/WorkoutKit/workoutstep/init-goalalertdisplayname.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/displayname.json": {
       "hash": "ed966b73e5c9e64a5cc0b525e8a1adaaf85315a7bd83b899afbb41ef1e9d613f",
-      "last_checked": "2026-03-13T07:38:34.725296",
+      "last_checked": "2026-03-17T07:40:27.904162",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"337b1bdf6eb9fe03583c17d7d26d21e1\"",
       "file_path": "documentation/WorkoutKit/workoutstep/displayname.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutstep/equatable-implementations.json": {
       "hash": "0e5f2ed7d0ee7877499cb71671d3595484532d0b2c828857640f12cb6d260f4c",
-      "last_checked": "2026-03-13T07:38:34.839275",
+      "last_checked": "2026-03-17T07:40:28.106849",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"1da773f53f9b746efdcf102beb51ea17\"",
       "file_path": "documentation/WorkoutKit/workoutstep/equatable-implementations.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/init(steps:iterations:).json": {
       "hash": "330dbe3332e3bb22831a5900b152609245682826d3cb11ff009b66a7f9d60910",
-      "last_checked": "2026-03-13T07:38:34.997584",
+      "last_checked": "2026-03-17T07:40:28.345223",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a891dca58c2abdd15ac71bf6c95204e4\"",
       "file_path": "documentation/WorkoutKit/intervalblock/init-stepsiterations.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/steps.json": {
       "hash": "bc74e3a2365549398ce85e8998aec8bf019b9084f7d76d63bc4a24a20ca4698c",
-      "last_checked": "2026-03-13T07:38:35.119634",
+      "last_checked": "2026-03-17T07:40:28.463520",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"293ed07f58773aaf247a4646dd9da0bc\"",
       "file_path": "documentation/WorkoutKit/intervalblock/steps.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/iterations.json": {
       "hash": "9844544629db11d4b8e3b61d0d2ffeaaf27e079b3614559c62f3672dc6358f65",
-      "last_checked": "2026-03-13T07:38:35.236265",
+      "last_checked": "2026-03-17T07:40:28.645360",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6397c99dc1c73954aa6b3d7e223a113f\"",
       "file_path": "documentation/WorkoutKit/intervalblock/iterations.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/hashvalue.json": {
       "hash": "63000982599115359d032606ad14651f695066f60a5c7bd5f435232c1f9ae1b0",
-      "last_checked": "2026-03-13T07:38:35.376167",
+      "last_checked": "2026-03-17T07:40:28.775344",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b3561b0df1a91cc96267583338d57f2d\"",
       "file_path": "documentation/WorkoutKit/intervalblock/hashvalue.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/hash(into:).json": {
       "hash": "84238344857acb935a3b762d4e44bbef2d5c307b6c4cdaf8123704c043349661",
-      "last_checked": "2026-03-13T07:38:35.539476",
+      "last_checked": "2026-03-17T07:40:28.939031",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"868fa4645581b562a1a7b322fb9da6d1\"",
       "file_path": "documentation/WorkoutKit/intervalblock/hash-into.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/!=(_:_:).json": {
       "hash": "763a9738685eb43c5c74a6a958fd4a83325b876f1250de0e5d0c4abbe1b049aa",
-      "last_checked": "2026-03-13T07:38:35.650431",
+      "last_checked": "2026-03-17T07:40:29.117342",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a121314dcedd2f1411ee090e23d47023\"",
       "file_path": "documentation/WorkoutKit/intervalblock/notequal.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/==(_:_:).json": {
       "hash": "0d2cc4117362007585e6bb72ae75bd3f5a007f228a56a146d5df8f3e7ec3bac8",
-      "last_checked": "2026-03-13T07:38:35.782746",
+      "last_checked": "2026-03-17T07:40:29.315707",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0749f43daea21fd03767783613cfc134\"",
       "file_path": "documentation/WorkoutKit/intervalblock/equal.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalblock/equatable-implementations.json": {
       "hash": "dcefd70e2ee4ab35a954aa1e835b30a0cfef28ec958b9a87aae701ecabaa4ad8",
-      "last_checked": "2026-03-13T07:38:35.897750",
+      "last_checked": "2026-03-17T07:40:29.501008",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a8033aba07764679efd1eec406ea8915\"",
       "file_path": "documentation/WorkoutKit/intervalblock/equatable-implementations.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/init(_:goal:alert:).json": {
       "hash": "07cf9f72343cb8df7d1499026e13d8db096d3bf4aba23b1a2bc5fc7186231372",
-      "last_checked": "2026-03-13T07:38:36.033217",
+      "last_checked": "2026-03-17T07:40:29.685636",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b4d843ac044f00774d62e9fd2194b3dc\"",
       "file_path": "documentation/WorkoutKit/intervalstep/init-goalalert.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/init(_:step:).json": {
       "hash": "063cc9981d008aee4ac5de7536e919a1b0926350a423e8b2327e930bb448f136",
-      "last_checked": "2026-03-13T07:38:36.153578",
+      "last_checked": "2026-03-17T07:40:29.881029",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e452b3753bc2683fac8adf0c5a6fae3c\"",
       "file_path": "documentation/WorkoutKit/intervalstep/init-step.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.property.json": {
       "hash": "f8091971b74225d229205056264184efd103287dacc4d80d16b9b82fbe8d9d8b",
-      "last_checked": "2026-03-13T07:38:36.291247",
+      "last_checked": "2026-03-17T07:40:30.046410",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"34a67de1e84f9523c030b5c4afeb1403\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swiftproperty.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/step.json": {
       "hash": "cb47ab3b0af93b0a525a253d5cfa9a5a3d39720de70149218308e8d500ef4948",
-      "last_checked": "2026-03-13T07:38:36.422462",
+      "last_checked": "2026-03-17T07:40:30.225885",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"64a7b67111c0ed31da41f44a00330295\"",
       "file_path": "documentation/WorkoutKit/intervalstep/step.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/hashvalue.json": {
       "hash": "1ef98e7f72711ae743cec056ddd56a9cb0fe48ad028bccfb5a6c9d40a22dd831",
-      "last_checked": "2026-03-13T07:38:36.584818",
+      "last_checked": "2026-03-17T07:40:30.395134",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a97a9802195fb331c78c55814a632761\"",
       "file_path": "documentation/WorkoutKit/intervalstep/hashvalue.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/hash(into:).json": {
       "hash": "90090e399ea71fb2a47440f1fd8126749fcc46519a3e7893d1882c47905adea5",
-      "last_checked": "2026-03-13T07:38:36.704763",
+      "last_checked": "2026-03-17T07:40:30.585270",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d0f794132905932e87251757918cec96\"",
       "file_path": "documentation/WorkoutKit/intervalstep/hash-into.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/!=(_:_:).json": {
       "hash": "ab4c40ac8772fe8048c3f1c1620e206f5d2283bb312f6b81293c325feeb4f911",
-      "last_checked": "2026-03-13T07:38:36.836065",
+      "last_checked": "2026-03-17T07:40:30.749764",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d32b99304353f560eb123002bc596e7c\"",
       "file_path": "documentation/WorkoutKit/intervalstep/notequal.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/==(_:_:).json": {
       "hash": "b0bb8d70a70cd7088ff1a78d3e42a16a68ed29ba461d75ea5c14836d27b4dfc1",
-      "last_checked": "2026-03-13T07:38:36.971347",
+      "last_checked": "2026-03-17T07:40:30.926869",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2d005dd0330ae11934adffbafa8671ab\"",
       "file_path": "documentation/WorkoutKit/intervalstep/equal.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum.json": {
       "hash": "4072fc7184ed0486795bc0a9dfb4f2914cf089edaf82d34f66965fb2e39e7b82",
-      "last_checked": "2026-03-13T07:38:37.094716",
+      "last_checked": "2026-03-17T07:40:31.112499",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"97671d564a113b331a54555066602f3a\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swiftenum.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/equatable-implementations.json": {
       "hash": "8a9250ceca4d0f1d6b6f2cc95cc9c085526d01e005ce5f03583a46eeff33a70d",
-      "last_checked": "2026-03-13T07:38:37.221734",
+      "last_checked": "2026-03-17T07:40:31.297068",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"caaea0d7c0a1461a83b3e8cc209cce0e\"",
       "file_path": "documentation/WorkoutKit/intervalstep/equatable-implementations.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/open.json": {
       "hash": "0468fa0b0847ef7190aa98d9f2f48b23d31cf9c2c6794d99004f645a2fae1973",
-      "last_checked": "2026-03-13T07:38:37.352152",
+      "last_checked": "2026-03-17T07:40:31.486159",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7c94e75bde2b5454dfbbd2482c7b3c54\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/open.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/distance(_:_:).json": {
       "hash": "d1da8149d1f8e0b9bc3ad236d072828feadfbcb87b7438b261310cf897e6405a",
-      "last_checked": "2026-03-13T07:38:37.475912",
+      "last_checked": "2026-03-17T07:40:31.665653",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0fb21eed06c0dae7b1c87084f904ae32\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/distance.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/energy(_:_:).json": {
       "hash": "5ec5b91c37efb0b212ce7027c16d3a1125fadd537c55ab9a209dbbbc9a0b2f29",
-      "last_checked": "2026-03-13T07:38:37.618155",
+      "last_checked": "2026-03-17T07:40:31.801748",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"923404804559aed2f2f604d30b92e1f4\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/energy.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/time(_:_:).json": {
       "hash": "d1279091c91eaf94e7dbd170f8ed4663cc06dfa50ff6750837a360f6af88f7e4",
-      "last_checked": "2026-03-13T07:38:37.734770",
+      "last_checked": "2026-03-17T07:40:31.993238",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e15a7843bf444386afef27c32a8c6f14\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/time.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/hashvalue.json": {
       "hash": "de83670dcf91a56571362cceee93175353a72d3997d0427f3ad3875985a67cff",
-      "last_checked": "2026-03-13T07:38:37.852035",
+      "last_checked": "2026-03-17T07:40:32.172252",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7cb17961b94602a8bbd1da312df44b35\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/hashvalue.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/hash(into:).json": {
       "hash": "87fd29af18b9e7d35e2ff1fe88e3a5d9a05655f825ebb39bb66f6747fda55c69",
-      "last_checked": "2026-03-13T07:38:37.974416",
+      "last_checked": "2026-03-17T07:40:32.376030",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9f4038135878a12e5e12a95b718c6c33\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/hash-into.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/!=(_:_:).json": {
       "hash": "6bbf26a3ae76f151c5df179bbe5f0bc7b6d2d535195eaaa07c5021c62cbeca1e",
-      "last_checked": "2026-03-13T07:38:38.102040",
+      "last_checked": "2026-03-17T07:40:32.514754",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"4dab202a4f0678ace06831094023f228\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/notequal.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/==(_:_:).json": {
       "hash": "afe4ebbd46eb2dc17090d490270391411052d07ffa532264e9a196dce273b364",
-      "last_checked": "2026-03-13T07:38:38.214904",
+      "last_checked": "2026-03-17T07:40:32.754520",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"abbaa3d1f19ec926b0a8d34fe60e62cd\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/equal.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/poolswimdistancewithtime(_:_:).json": {
       "hash": "0501cf5a1d0c9dff26fa7adf66dff547eea175d87df315c1b97aa4b1b0e8609d",
-      "last_checked": "2026-03-13T07:38:38.349827",
+      "last_checked": "2026-03-17T07:40:32.948672",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"cda8c01ce554454568128568ceea8fdc\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/poolswimdistancewithtime.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutgoal/equatable-implementations.json": {
       "hash": "2570a880f527fb600c3b38d599f58cc79bcb5a97030203554ba3335c5b6d8230",
-      "last_checked": "2026-03-13T07:38:38.471842",
+      "last_checked": "2026-03-17T07:40:33.128300",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a8ceb49a0ca9f9b073e5b03110eecbfa\"",
       "file_path": "documentation/WorkoutKit/workoutgoal/equatable-implementations.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/supports(activity:location:).json": {
       "hash": "c291ff578512f8a9ca9bd5392743cca3451925d43d4c6f3031501d33f3965217",
-      "last_checked": "2026-03-13T07:38:38.596837",
+      "last_checked": "2026-03-17T07:40:33.303370",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e93d7e1588fc728a9cb319f2bca9ff09\"",
       "file_path": "documentation/WorkoutKit/workoutalert/supports-activitylocation.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/metric.json": {
       "hash": "1f2b7192c3c66aac7df127458bd7e0ea28cc0940c8f5dce536c9014e3eb72a74",
-      "last_checked": "2026-03-13T07:38:38.756206",
+      "last_checked": "2026-03-17T07:40:33.600667",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2a545d31fad6a68ed1be93f1fe95bb24\"",
       "file_path": "documentation/WorkoutKit/workoutalert/metric.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric.json": {
       "hash": "f27e153c79b5e280007540efdcadc0c34fae5f1f5ab480181908a395b858268b",
-      "last_checked": "2026-03-13T07:38:38.862077",
+      "last_checked": "2026-03-17T07:40:33.733407",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3b6e119c306989d8fec610177bf515c5\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/cadence(_:unit:)-y8da.json": {
       "hash": "6095bd345313a960a74e72a4c4dde76815e144b8e4bc3d2a69b6d4911f4dd50b",
-      "last_checked": "2026-03-13T07:38:38.968376",
+      "last_checked": "2026-03-17T07:40:33.859917",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"76d532331e265c74473c5cef64003622\"",
       "file_path": "documentation/WorkoutKit/workoutalert/cadence-unit-y8da.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert.json": {
       "hash": "7346e2b92afd096039e53e3ed75177bf0f4683cf772ce423b001e1cdc89b6fe8",
-      "last_checked": "2026-03-13T07:38:39.107656",
+      "last_checked": "2026-03-17T07:40:34.063995",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"beaacc659be2a8736dd7cc0afacc62a0\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/cadence(_:unit:)-3fnpg.json": {
       "hash": "39de9f44d52686c9173b24a5711997bdf908ebbb76ecd27c278cd7ba2f1a2e95",
-      "last_checked": "2026-03-13T07:38:39.239154",
+      "last_checked": "2026-03-17T07:40:34.252259",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0857dc44d691eba0bcd440d11f19424a\"",
       "file_path": "documentation/WorkoutKit/workoutalert/cadence-unit-3fnpg.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert.json": {
       "hash": "427ad991861d52dab8f0e70993651b8838e364581b7177d2efc85666f904169c",
-      "last_checked": "2026-03-13T07:38:39.382976",
+      "last_checked": "2026-03-17T07:40:34.419379",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ce578fe7cdd0ec95d69df34962afda47\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/heartrate(_:unit:).json": {
       "hash": "ac7cc8b64a2be4d2773e49b5847ef394148c691063e4ba54298b34521876d9c5",
-      "last_checked": "2026-03-13T07:38:39.484399",
+      "last_checked": "2026-03-17T07:40:34.562187",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"5ff512e78f1234965cc4c00e90f936ee\"",
       "file_path": "documentation/WorkoutKit/workoutalert/heartrate-unit.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert.json": {
       "hash": "358753c33a15f295237b6da6d6eed2a82c2093995e58e95017ebf5c76fc18d60",
-      "last_checked": "2026-03-13T07:38:39.623608",
+      "last_checked": "2026-03-17T07:40:34.700635",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"dde3491caaa8ff11087293c8158a1765\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/heartrate(zone:).json": {
       "hash": "573769e3d114e0f8f1634c71b665cac5d4282139e2efc84337021e3734167f01",
-      "last_checked": "2026-03-13T07:38:39.820167",
+      "last_checked": "2026-03-17T07:40:34.901385",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"30a95f07dae6938befb1b1c6d98a5c18\"",
       "file_path": "documentation/WorkoutKit/workoutalert/heartrate-zone.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert.json": {
       "hash": "56f5e84c6b6c2361664b464ad895be3f2873c8b4b9ab85899e667af39d820a29",
-      "last_checked": "2026-03-13T07:38:39.983722",
+      "last_checked": "2026-03-17T07:40:35.036507",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a50df96342c0e418138e455a638d8ac9\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/power(_:unit:)-57ekz.json": {
       "hash": "b205a45c4583e794ab22262017b041c53ca86b05a1a98a01d86703cdbce77f14",
-      "last_checked": "2026-03-13T07:38:40.104912",
+      "last_checked": "2026-03-17T07:40:35.216749",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ab817edb9fd9f645cc1b6bac496d2a47\"",
       "file_path": "documentation/WorkoutKit/workoutalert/power-unit-57ekz.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert.json": {
       "hash": "718fc7b3a7fc3aa21042bcef6bb1cc7910fd7afc8dbbd956bd302db585602bd8",
-      "last_checked": "2026-03-13T07:38:40.225078",
+      "last_checked": "2026-03-17T07:40:35.405607",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ecd372b8fa6da9ac589d9cd5894df480\"",
       "file_path": "documentation/WorkoutKit/powerrangealert.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/power(_:unit:)-289mz.json": {
       "hash": "cc7617162594c7d496c7ac0e8f489a7ead20460d10a4035161f95710a13a3851",
-      "last_checked": "2026-03-13T07:38:40.341258",
+      "last_checked": "2026-03-17T07:40:35.576929",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d6e5c3db44b220f4cbb75895dbaa2bb4\"",
       "file_path": "documentation/WorkoutKit/workoutalert/power-unit-289mz.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert.json": {
       "hash": "cd725a519b0eaf689a2c460abaaa646dad6acbb76892605a7e6fb944c96ff1dd",
-      "last_checked": "2026-03-13T07:38:40.520470",
+      "last_checked": "2026-03-17T07:40:35.718601",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c22766db704b90d9d005cdab1fd6e7e8\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/power(zone:).json": {
       "hash": "c0fc8ab982001ad4253c3fb22c2540b2e855f549d7d41ef68913db0869d10701",
-      "last_checked": "2026-03-13T07:38:40.625521",
+      "last_checked": "2026-03-17T07:40:35.909064",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"5536096aeac85aaf6844085a90a2c75e\"",
       "file_path": "documentation/WorkoutKit/workoutalert/power-zone.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert.json": {
       "hash": "6790f9349c47e2b13b8cdeb36d41dc75aae725c190809d7b2f56d5af16922da7",
-      "last_checked": "2026-03-13T07:38:40.753871",
+      "last_checked": "2026-03-17T07:40:36.048204",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"768e4a12920ea7900b63f08368de5553\"",
       "file_path": "documentation/WorkoutKit/powerzonealert.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/speed(_:unit:metric:)-1o2j.json": {
       "hash": "3b45d750c30ba8e31437c8693a8eaafdc556a2a99702236809fb55655d718bf9",
-      "last_checked": "2026-03-13T07:38:40.872051",
+      "last_checked": "2026-03-17T07:40:36.177209",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"70660ede66f92dad96f9babcf71ce6df\"",
       "file_path": "documentation/WorkoutKit/workoutalert/speed-unitmetric-1o2j.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert.json": {
       "hash": "a485416667a24d73da80b0e508fd5504e1defe5f8940584b874a02e53c2b7c29",
-      "last_checked": "2026-03-13T07:38:41.025952",
+      "last_checked": "2026-03-17T07:40:36.418410",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c24fbaecb883bf640badf977a40e4438\"",
       "file_path": "documentation/WorkoutKit/speedrangealert.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/speed(_:unit:metric:)-4zald.json": {
       "hash": "830bf15ec36ccdc8c87be934ac7fd44b958d4b2a0175301caa2b917ab7e7a205",
-      "last_checked": "2026-03-13T07:38:41.127116",
+      "last_checked": "2026-03-17T07:40:36.560990",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"aa61cbd9df63720fa8a884474b455f5f\"",
       "file_path": "documentation/WorkoutKit/workoutalert/speed-unitmetric-4zald.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert.json": {
       "hash": "9e97350b87caa68666d17374e10cb8419fe5bd291278e4ecde749e8d86c25b5c",
-      "last_checked": "2026-03-13T07:38:41.255284",
+      "last_checked": "2026-03-17T07:40:36.766793",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"02dd6d0a90f131fcd07dcd3c35e262bd\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/power(_:unit:metric:)-2847m.json": {
       "hash": "8117ff59693c80df4c9625af54e08425dd3f2663636690845da0eb4b5eba34f0",
-      "last_checked": "2026-03-13T07:38:41.407419",
+      "last_checked": "2026-03-17T07:40:36.941078",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"690bb8a9af134e0184f9c162531e0985\"",
       "file_path": "documentation/WorkoutKit/workoutalert/power-unitmetric-2847m.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalert/power(_:unit:metric:)-5c94p.json": {
       "hash": "31a9e6cc916ab0ff0cd8c69677c2b443cd8ccb51412838e94dc2e4e4980eaa4d",
-      "last_checked": "2026-03-13T07:38:41.523545",
+      "last_checked": "2026-03-17T07:40:37.079566",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3f45b28c26fd2e2b52abc8b24e349075\"",
       "file_path": "documentation/WorkoutKit/workoutalert/power-unitmetric-5c94p.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/init(_:id:).json": {
       "hash": "64cc4fe5ab83c10ad17a06af891ca0d129e4e8f2990ae9eaebbc72f863d679d3",
-      "last_checked": "2026-03-13T07:38:41.661244",
+      "last_checked": "2026-03-17T07:40:37.260843",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d8f5f51a5f312718214184352ec998b3\"",
       "file_path": "documentation/WorkoutKit/workoutplan/init-id.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum.json": {
       "hash": "c4281f2b6b9aac5778570acd9a2e201a16e0db6bc6cb835536e9abb58dd37946",
-      "last_checked": "2026-03-13T07:38:41.762822",
+      "last_checked": "2026-03-17T07:40:37.433370",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0446bb0341295caa6a2bf2423dbeeea4\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swiftenum.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/id-swift.property.json": {
       "hash": "95f06a634f71c4307aa59496d23a0b3e7c3319ff56e6d93c42e781fdf8ae4c5f",
-      "last_checked": "2026-03-13T07:38:41.909156",
+      "last_checked": "2026-03-17T07:40:37.556370",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ff7b9627ab4af12a3f5cd6d045620d25\"",
       "file_path": "documentation/WorkoutKit/workoutplan/id-swiftproperty.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/id-swift.typealias.json": {
       "hash": "3de9c8984df5547e41ae575d4c3ec82740dc282f16e2afec96095cd762884079",
-      "last_checked": "2026-03-13T07:38:42.054174",
+      "last_checked": "2026-03-17T07:40:37.739109",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fae24d218e2ce865f9edc2ea27cfeaa1\"",
       "file_path": "documentation/WorkoutKit/workoutplan/id-swifttypealias.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.property.json": {
       "hash": "f0b2a5fd451cd719cf1f0834b73dad473d6f377e0f10724a0f6761fa4dafb354",
-      "last_checked": "2026-03-13T07:38:42.159439",
+      "last_checked": "2026-03-17T07:40:37.943123",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a847694ccae60ddee34dd046fee91cf1\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swiftproperty.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/openinworkoutapp().json": {
       "hash": "eb67fea70ee7210e1718dab068cd031667e92a56987e42936cd8ccf36ddff0a5",
-      "last_checked": "2026-03-13T07:38:42.295405",
+      "last_checked": "2026-03-17T07:40:38.146079",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"cf6b8a8c6ee09e60f67a8eb26fd5230c\"",
       "file_path": "documentation/WorkoutKit/workoutplan/openinworkoutapp.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/init(from:).json": {
       "hash": "3df0753fef57d49173633d34232eb04f506811d9becbb1abe8e2c4c13b99a3dc",
-      "last_checked": "2026-03-13T07:38:42.493853",
+      "last_checked": "2026-03-17T07:40:38.324117",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d6eb4bd9fa2f04a10c98c1061f977b46\"",
       "file_path": "documentation/WorkoutKit/workoutplan/init-from.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/datarepresentation.json": {
       "hash": "75c0a40c7c3577c41358117242443da9de82035a0d60ae35672de6cf27c678b6",
-      "last_checked": "2026-03-13T07:38:42.593562",
+      "last_checked": "2026-03-17T07:40:38.505313",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2fabdb9b9d40187ef8d4e07f13a10d4d\"",
       "file_path": "documentation/WorkoutKit/workoutplan/datarepresentation.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/hashvalue.json": {
       "hash": "50ad1b4a1687d7f8eab6a249bda4ef273d1ccab732ce6af4d9f1813f04756beb",
-      "last_checked": "2026-03-13T07:38:42.720170",
+      "last_checked": "2026-03-17T07:40:38.672840",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"5ca3b58d03f15b021d8ec129aec1490c\"",
       "file_path": "documentation/WorkoutKit/workoutplan/hashvalue.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/hash(into:).json": {
       "hash": "02ad2b250f8c0adbb152d82eb415f65f263092f699c74201741f0737f84eda24",
-      "last_checked": "2026-03-13T07:38:42.828456",
+      "last_checked": "2026-03-17T07:40:38.856429",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f3706190cb13bc96a046af01f6183440\"",
       "file_path": "documentation/WorkoutKit/workoutplan/hash-into.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/!=(_:_:).json": {
       "hash": "98cf32a063458c75ffd524189cd5d6e7237b250690b781e3be51161eb2d0f070",
-      "last_checked": "2026-03-13T07:38:42.952746",
+      "last_checked": "2026-03-17T07:40:38.990160",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"61b74be7976c25d3dec32f6e5f1aac01\"",
       "file_path": "documentation/WorkoutKit/workoutplan/notequal.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/==(_:_:).json": {
       "hash": "142a182d3d8cd91dc2e623846b10d2908143dddee28cbcf5d18709a91987f32a",
-      "last_checked": "2026-03-13T07:38:43.082400",
+      "last_checked": "2026-03-17T07:40:39.158438",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"56161f941af5047780728a3285e952f2\"",
       "file_path": "documentation/WorkoutKit/workoutplan/equal.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/equatable-implementations.json": {
       "hash": "c39d3ecef48c2c95e7ceb117f06fbcfd6ab8373401cc46c90e98589576ebd17b",
-      "last_checked": "2026-03-13T07:38:43.208124",
+      "last_checked": "2026-03-17T07:40:39.337637",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"98f4b504fdf3e7a812562dc01e95c08f\"",
       "file_path": "documentation/WorkoutKit/workoutplan/equatable-implementations.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/init(_:date:).json": {
       "hash": "2805c7510c61068474f50628c2089fa91e763f7273cb7886b6428ba773f340e5",
-      "last_checked": "2026-03-13T07:38:43.333080",
+      "last_checked": "2026-03-17T07:40:39.509498",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"223cc51db9edbde58a224af80fbc64e7\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/init-date.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/plan.json": {
       "hash": "759355b7a91c17ea590e3ae568c10ec987d13cadc485d2a906923c91d271d24f",
-      "last_checked": "2026-03-13T07:38:43.470529",
+      "last_checked": "2026-03-17T07:40:39.686126",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fc2c3fc6668ab1a2438b30ad56630647\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/plan.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/date.json": {
       "hash": "b55dc8de5203f774a32bff97e322f198d7dfa077d5142159d92d59141f56eea0",
-      "last_checked": "2026-03-13T07:38:43.592707",
+      "last_checked": "2026-03-17T07:40:39.847722",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e8b926d637366c9801e8052a7e498d93\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/date.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/complete.json": {
       "hash": "6326324df0af576980b33cc6f640d0079b3a355405c0029fab844c7f3910a256",
-      "last_checked": "2026-03-13T07:38:43.702833",
+      "last_checked": "2026-03-17T07:40:40.031982",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7677536ea72c244e6dda1c4643a306f4\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/complete.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/hashvalue.json": {
       "hash": "5d0c6d79754a4b238f98a61f41baaade4c83930e9249b44e5ff113b8d5f871e7",
-      "last_checked": "2026-03-13T07:38:43.841488",
+      "last_checked": "2026-03-17T07:40:40.211909",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"daeaf928fc820eff0805c06c4c8e5753\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/hashvalue.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/hash(into:).json": {
       "hash": "278cc4e5bb653d141d3c0855724a7dea75034c0f365e29ece4e20f737578d010",
-      "last_checked": "2026-03-13T07:38:43.964554",
+      "last_checked": "2026-03-17T07:40:40.335509",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"381cf808e1313fe97a6b8efb4af1b0f2\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/hash-into.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/!=(_:_:).json": {
       "hash": "d46caa2a9eb8f89ee450a1dd8d5faecfc4b6749f6c1ab1b23bb2bfc35aeecc33",
-      "last_checked": "2026-03-13T07:38:44.071784",
+      "last_checked": "2026-03-17T07:40:40.457614",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e34311c506c93d4d3b2659de6430cbc8\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/notequal.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/==(_:_:).json": {
       "hash": "a4db4be360ebd145365b41445133598fc5877c9277d634fb2599c34d1e4e840f",
-      "last_checked": "2026-03-13T07:38:44.198393",
+      "last_checked": "2026-03-17T07:40:40.633233",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"4b761c53d4b5a6aed0b469b30a093887\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/equal.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/scheduledworkoutplan/equatable-implementations.json": {
       "hash": "4d2b9c64d03c731faf793ddd3976b578af279de9d4d72c9384ec6013557d7138",
-      "last_checked": "2026-03-13T07:38:44.303630",
+      "last_checked": "2026-03-17T07:40:40.828874",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"bc46711fa1ae12237547fd54303cc5f1\"",
       "file_path": "documentation/WorkoutKit/scheduledworkoutplan/equatable-implementations.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/shared.json": {
       "hash": "7141af3156eae2edc32559ce21612a4e95795ae41d6f2308c16ff23c7c20860b",
-      "last_checked": "2026-03-13T07:38:44.425362",
+      "last_checked": "2026-03-17T07:40:41.008753",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b3665cfcdfe3546eebc1869c1a56e4d8\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/shared.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/issupported.json": {
       "hash": "be3d3eb4b1a0733273cb4929467a370e14505f6a870ea693a494bb04ad6726cc",
-      "last_checked": "2026-03-13T07:38:44.553095",
+      "last_checked": "2026-03-17T07:40:41.169990",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2c9f1035d8997f9a90a885dc16251659\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/issupported.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/requestauthorization().json": {
       "hash": "0ad02cc435d315919fb29e019a26b03d70ccbfd82a1bf78ce7e17fed20a65045",
-      "last_checked": "2026-03-13T07:38:44.696814",
+      "last_checked": "2026-03-17T07:40:41.344055",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fc8cf17193c5e441aabb7d59dd689c0f\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/requestauthorization.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.property.json": {
       "hash": "89260195d2c4b7af3e62f7782774c25719557eb443c823e112a29f2cd414599c",
-      "last_checked": "2026-03-13T07:38:44.822086",
+      "last_checked": "2026-03-17T07:40:41.531137",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"93dac7d90f45b6ec4e4a786f24ba8d8e\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swiftproperty.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum.json": {
       "hash": "5c20784bd841117571dbe0f46b52fec07a57e53d5f36731216e2276ed1d80991",
-      "last_checked": "2026-03-13T07:38:44.962516",
+      "last_checked": "2026-03-17T07:40:41.725987",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6f0ce2df044717375d5b181167e884cb\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swiftenum.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/schedule(_:at:).json": {
       "hash": "66b153e96a3bc8da4984e2be4e115abe8d7f416984fddf8180c2ac3ca65491d4",
-      "last_checked": "2026-03-13T07:38:45.092554",
+      "last_checked": "2026-03-17T07:40:41.919604",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b2084d6cec29d0e54e6f63630d32373d\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/schedule-at.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/scheduledworkouts.json": {
       "hash": "3365f4e3e030b5fa8b4a1816968e104d0eba7494c69d0e0a7d7bdce82ed914db",
-      "last_checked": "2026-03-13T07:38:45.234112",
+      "last_checked": "2026-03-17T07:40:42.110644",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"47db8ccfea5fb2fd2db4d2b6e35c0b20\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/scheduledworkouts.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/maxallowedscheduledworkoutcount.json": {
       "hash": "a7d77ec3d7ba2352b0c6e0d9701cfdfd9408114064fbef1acb5c15bb306b48fc",
-      "last_checked": "2026-03-13T07:38:45.358765",
+      "last_checked": "2026-03-17T07:40:42.253228",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3ec41f00370a2361b480413da89f2502\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/maxallowedscheduledworkoutcount.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/markcomplete(_:at:).json": {
       "hash": "ebf25e7c667e55092536a302eb2114189a902a42dac0fc3deda963e7f84ac315",
-      "last_checked": "2026-03-13T07:38:45.474562",
+      "last_checked": "2026-03-17T07:40:42.422919",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"4dbd223d78b5e498dfe66f7c9394c016\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/markcomplete-at.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/remove(_:at:).json": {
       "hash": "afb2a040a05d28313f533f79de8d4687f627b213730695a11476c9e3afe7a9b4",
-      "last_checked": "2026-03-13T07:38:45.618221",
+      "last_checked": "2026-03-17T07:40:42.582741",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"db4ad83eb00afd1ba13529f7c6b3024c\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/remove-at.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/removeallworkouts().json": {
       "hash": "29c84085582798c712392ab3e207241d30edeafc0b3fcd729e7fbf156ebb15be",
-      "last_checked": "2026-03-13T07:38:45.740653",
+      "last_checked": "2026-03-17T07:40:42.919918",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fd477b46a160c2538bd5182e469ce409\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/removeallworkouts.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/watchnotpaired.json": {
       "hash": "7463bd161712df5dd5740b30c994f399328bf3f03dbe2d96e74e7c0c61b55f68",
-      "last_checked": "2026-03-13T07:38:45.862462",
+      "last_checked": "2026-03-17T07:40:43.097309",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7c9834b4e3b25a8b2e3a59388addca14\"",
       "file_path": "documentation/WorkoutKit/stateerror/watchnotpaired.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/workoutapplicationnotinstalled.json": {
       "hash": "27773ca9aaf78963d18fb9a3f8bcde2a97eb952bdface0497e7eca4bdd73774c",
-      "last_checked": "2026-03-13T07:38:46.004869",
+      "last_checked": "2026-03-17T07:40:43.274053",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9f9e616ff1526d17aea93fcabb4de37e\"",
       "file_path": "documentation/WorkoutKit/stateerror/workoutapplicationnotinstalled.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/localizeddescription.json": {
       "hash": "98f7f26a0b6fda71190b1f08e216098e22a690b45cad1d52337367febbebda58",
-      "last_checked": "2026-03-13T07:38:46.130952",
+      "last_checked": "2026-03-17T07:40:43.454729",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0ffd7406da57e2570d72cd87ff8a20db\"",
       "file_path": "documentation/WorkoutKit/stateerror/localizeddescription.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/hashvalue.json": {
       "hash": "0fc151e64e2be2c18e3db751fb807ddc800e21ab2a9264d0b40fb4a7e9680d4d",
-      "last_checked": "2026-03-13T07:38:46.270362",
+      "last_checked": "2026-03-17T07:40:43.636927",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e45069f2e56ce6b77a223bdac644da7b\"",
       "file_path": "documentation/WorkoutKit/stateerror/hashvalue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/hash(into:).json": {
       "hash": "12ddda80813f254613304c67267599fbe073dfea06696282b53abc4490bd813a",
-      "last_checked": "2026-03-13T07:38:46.384292",
+      "last_checked": "2026-03-17T07:40:43.766332",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"de8378230e0793e3d33473bb0e5e1d05\"",
       "file_path": "documentation/WorkoutKit/stateerror/hash-into.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/!=(_:_:).json": {
       "hash": "c0af519d46b7a610bcd49b125986369815a907e354e46570ac4e24e09f82cee0",
-      "last_checked": "2026-03-13T07:38:46.515138",
+      "last_checked": "2026-03-17T07:40:43.936939",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b82560660b5c847910c38bfb19527a48\"",
       "file_path": "documentation/WorkoutKit/stateerror/notequal.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/==(_:_:).json": {
       "hash": "e6ab0124a753503716c6011e960f074f8949f6feb6441041015391cacfd33149",
-      "last_checked": "2026-03-13T07:38:46.634814",
+      "last_checked": "2026-03-17T07:40:44.115142",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fdb141bdee741e5703775c4876334a17\"",
       "file_path": "documentation/WorkoutKit/stateerror/equal.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/equatable-implementations.json": {
       "hash": "46d39be6b52e00e83cb2a60a926b8f03ac04802a30988e5e2b6ff253a47def95",
-      "last_checked": "2026-03-13T07:38:46.810223",
+      "last_checked": "2026-03-17T07:40:44.290591",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"cf0548b98102fe83c6da6cd43efd2673\"",
       "file_path": "documentation/WorkoutKit/stateerror/equatable-implementations.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/stateerror/error-implementations.json": {
       "hash": "fbf329afc32f9157d4b9350556ac82a1332b54cf9154d48ae4ccd3bbf21209b1",
-      "last_checked": "2026-03-13T07:38:46.918850",
+      "last_checked": "2026-03-17T07:40:44.463461",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"556b5e30a87fe6b8be0d6cc2a72fd6e7\"",
       "file_path": "documentation/WorkoutKit/stateerror/error-implementations.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/cycling(_:).json": {
       "hash": "4509a5c8d3f5b319e89b864039c8f9ca13884cb5d0102ae4db0e6fb57fde36e0",
-      "last_checked": "2026-03-13T07:38:47.069860",
+      "last_checked": "2026-03-17T07:40:44.656226",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c4f337b714749982e4782e1f52ed9e80\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/cycling.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/running(_:).json": {
       "hash": "9776653c2e59737d0550741915bc870bb0d19cc0b3e737b095cecda61ae048a8",
-      "last_checked": "2026-03-13T07:38:47.174135",
+      "last_checked": "2026-03-17T07:40:44.833929",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"5e7c47adbd70f536914a90b2954cade9\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/running.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/swimming(_:).json": {
       "hash": "33c3af6647decb593cd3d521ea4de95a1ccb841d1b204e474cc5f8b210b204df",
-      "last_checked": "2026-03-13T07:38:47.302856",
+      "last_checked": "2026-03-17T07:40:45.005277",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"788fcbf9525637213c84d1eafdaa0b85\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/swimming.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/hashvalue.json": {
       "hash": "3f61c05ee0c767559b43d17a80367ee0bab91ceb2ca65189a7a7e71b73054b89",
-      "last_checked": "2026-03-13T07:38:47.419557",
+      "last_checked": "2026-03-17T07:40:45.207135",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fa423e49bc11836a643be40b2f77a10e\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/hashvalue.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/hash(into:).json": {
       "hash": "dc5ec3d034bd2b74831e6b297e44ed3ffec6d2de6b9eb47e7482d5e625eb3de8",
-      "last_checked": "2026-03-13T07:38:47.542587",
+      "last_checked": "2026-03-17T07:40:45.383238",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9fd990a054625cd7f6c37be7198108ae\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/hash-into.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/!=(_:_:).json": {
       "hash": "5e066b85439382e11c249daf8e61194a159855102b2ff3b02cc52bf22d2eb3f7",
-      "last_checked": "2026-03-13T07:38:47.676451",
+      "last_checked": "2026-03-17T07:40:45.566334",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d4535a067fefc3d8897f053cab1a2779\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/notequal.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/==(_:_:).json": {
       "hash": "4bd158daa44504f63e2ee39e829b0e34074c2a1e0d84e077516aa84f9dd8f9ce",
-      "last_checked": "2026-03-13T07:38:47.866440",
+      "last_checked": "2026-03-17T07:40:45.747886",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"70e7a89cf3ddc79d1b89c1f3b7ce7492\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/equal.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/swimbikerunworkout/activity/equatable-implementations.json": {
       "hash": "6d1658e6d40fb1ff0b5c78e52f4250041b79e095b6e9a35e6cfcbcb5ae974003",
-      "last_checked": "2026-03-13T07:38:47.995816",
+      "last_checked": "2026-03-17T07:40:45.926833",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"28aab88e62e46b443bc86f9cc0275964\"",
       "file_path": "documentation/WorkoutKit/swimbikerunworkout/activity/equatable-implementations.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/recovery.json": {
       "hash": "d0f6b0fa62fd4d123bed33653ba74126206e08a33e1a950c7386d26e70f9cd72",
-      "last_checked": "2026-03-13T07:38:48.296123",
+      "last_checked": "2026-03-17T07:40:46.094097",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"948a1baefae88fb527ac3a82b5ad4bfb\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/recovery.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/work.json": {
       "hash": "37b75c9a6591f2f640fe7c4ad4ba9140ab146b9438cde99b09e863b6a68c93df",
-      "last_checked": "2026-03-13T07:38:48.404761",
+      "last_checked": "2026-03-17T07:40:46.222419",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ad29ee2c7637c84de9988f63b6e166b4\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/work.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/hashvalue.json": {
       "hash": "e51fd394fbbeed1f063700d9ecf4768dc8379a60525adf0c5e2c4cdc4712b597",
-      "last_checked": "2026-03-13T07:38:48.518237",
+      "last_checked": "2026-03-17T07:40:46.393290",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a245c88532e9ae1dbe2cfbe5793ed401\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/hashvalue.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/hash(into:).json": {
       "hash": "80b1453cfe1020f5cd7dc1c611041f85637614daa247fd334766f70927e6ae53",
-      "last_checked": "2026-03-13T07:38:48.635533",
+      "last_checked": "2026-03-17T07:40:46.533599",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"40ed840880651d337d7ce5a14c994cfd\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/hash-into.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/!=(_:_:).json": {
       "hash": "c4a7c2b6a6b90aadc39527fd67ca8f4f8ccf08b8c528091e36bb00e232bf4220",
-      "last_checked": "2026-03-13T07:38:48.808490",
+      "last_checked": "2026-03-17T07:40:46.726298",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"7715e2fd0ee8a8210e5672c8721462ca\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/notequal.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/==(_:_:).json": {
       "hash": "6dbccf1fe45a8ca4f477ffe3a54f725145ffb08608bcd833c3f01d2495b266a5",
-      "last_checked": "2026-03-13T07:38:48.910872",
+      "last_checked": "2026-03-17T07:40:46.855770",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b847112d09a0172c7a3c97bdb81e553a\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/equal.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/intervalstep/purpose-swift.enum/equatable-implementations.json": {
       "hash": "24c1ef3b5cb2818a4f82173d4e228db843d82b7793688e63769604a237338767",
-      "last_checked": "2026-03-13T07:38:49.034127",
+      "last_checked": "2026-03-17T07:40:47.024481",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c223353b3a2f3cb179ee853de62ec085\"",
       "file_path": "documentation/WorkoutKit/intervalstep/purpose-swift.enum/equatable-implementations.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/average.json": {
       "hash": "78e284c3dd63b500d8d6be45aec1be46264bae5a89c0f375fda1b93ed9d0d301",
-      "last_checked": "2026-03-13T07:38:49.338901",
+      "last_checked": "2026-03-17T07:40:47.166747",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"76ad5f846f6e5eb10b853ff229918a01\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/average.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/current.json": {
       "hash": "45576b4794371867b2da2aeb4d05e817679866c80645bce1c75ecf7ef9cf04e1",
-      "last_checked": "2026-03-13T07:38:49.509309",
+      "last_checked": "2026-03-17T07:40:47.304949",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"5387ca036a944e5142e2ab977e61a013\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/current.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/countperminute.json": {
       "hash": "e96a72c421cb28a761e9d77acde6ec26fff455db461a8732222061cc0c2e38e1",
-      "last_checked": "2026-03-13T07:38:49.674934",
+      "last_checked": "2026-03-17T07:40:47.440227",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e18c1eb74e769bd86c3ec50486697040\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/countperminute.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/==(_:_:).json": {
       "hash": "66665924baa30aafa3cf3523e718cbbc46e08176c9815af48991772cb4900494",
-      "last_checked": "2026-03-13T07:38:49.782540",
+      "last_checked": "2026-03-17T07:40:47.618774",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"beb0b2206ea383386ceea85ad29f3397\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/equal.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/!=(_:_:).json": {
       "hash": "e0c4853d74b7c7eb8c98301520fdbf8025665663b1bc5f8cb1c57e79b152b214",
-      "last_checked": "2026-03-13T07:38:49.917377",
+      "last_checked": "2026-03-17T07:40:47.780589",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e7f0f33e07660debc5c37e3fbbecfd42\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/notequal.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/hashvalue.json": {
       "hash": "b74f315b55ff1a65336de6e72f7937230e99798ba7c62e4a879eb699e734b9d3",
-      "last_checked": "2026-03-13T07:38:50.120379",
+      "last_checked": "2026-03-17T07:40:47.913815",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2f69eed1efc6f64e318e98e539dbc10e\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/hashvalue.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/hash(into:).json": {
       "hash": "f01e94e4de56bfae2566ff173f003f5244ca77cee516c1a317892f7655732747",
-      "last_checked": "2026-03-13T07:38:50.225611",
+      "last_checked": "2026-03-17T07:40:48.103457",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"86dc690f7b6da27a5222f45517dd2e2c\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/hash-into.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutalertmetric/equatable-implementations.json": {
       "hash": "986e05297e0a409923fd2a467047200bdc751db53760e6c6b13af94784b83e02",
-      "last_checked": "2026-03-13T07:38:50.406368",
+      "last_checked": "2026-03-17T07:40:48.230452",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"574f0db956a4620ea7887347d09201cd\"",
       "file_path": "documentation/WorkoutKit/workoutalertmetric/equatable-implementations.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/cadence(_:unit:).json": {
       "hash": "9a9ae77ff965d522e13c1f9c14b6f9036c4686cfc5d99a9e1fa0ca02ceaf0425",
-      "last_checked": "2026-03-13T07:38:50.522102",
+      "last_checked": "2026-03-17T07:40:48.405181",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ff45b4b4f20032fee20adab672173062\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/cadence-unit.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/init(target:).json": {
       "hash": "39a9f5cf41ca304508011eef62013c62f2250f12bb675cea71f593162e2052ee",
-      "last_checked": "2026-03-13T07:38:50.697159",
+      "last_checked": "2026-03-17T07:40:48.584149",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0ccf16299b323eadba507fe021b567d8\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/init-target.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/metric.json": {
       "hash": "819041de9b4b563a02586674842e29c2d47f18a41c9c5587b8f3e657c519e845",
-      "last_checked": "2026-03-13T07:38:50.810256",
+      "last_checked": "2026-03-17T07:40:48.704599",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9bee3adc45ffd1c75c8dc12330f282fc\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/metric.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/target.json": {
       "hash": "e1d68f2592fd22f5722caae253c5d042ea2c4451d409545bd6c4adbaa8918c65",
-      "last_checked": "2026-03-13T07:38:51.000968",
+      "last_checked": "2026-03-17T07:40:48.894921",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b9616dc756c18c3f4f69ccea7a83a253\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/target.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/targetquantitylowerbound.json": {
       "hash": "e24db5ad771d8b078408b0cd7c14cb3195806acf511ae55b58e9b60ef251dc3b",
-      "last_checked": "2026-03-13T07:38:51.176043",
+      "last_checked": "2026-03-17T07:40:49.027298",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c58b896a125a8df4ae87de746c7aee08\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/targetquantitylowerbound.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/targetquantityupperbound.json": {
       "hash": "2aa6ab3be78b45120412a6f0f5521a5246cf54613b73d8c8c8c226dafecec1c0",
-      "last_checked": "2026-03-13T07:38:51.336452",
+      "last_checked": "2026-03-17T07:40:49.168403",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8713eef9fa730a7d77b2a3f9ec034c57\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/targetquantityupperbound.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/hashvalue.json": {
       "hash": "30188223523d6dc2bcdd003b32a57d3d64cb1e54ce0a5b87cb23c7dca08d124e",
-      "last_checked": "2026-03-13T07:38:51.438473",
+      "last_checked": "2026-03-17T07:40:49.367622",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"79608ebe2258e719aa08e220b91e0450\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/hashvalue.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/hash(into:).json": {
       "hash": "ea014130150199ddff8303a275ca08ec744d147ebe3459fcc942d76df7e9ac5f",
-      "last_checked": "2026-03-13T07:38:51.586522",
+      "last_checked": "2026-03-17T07:40:49.502206",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"75ce8226e50b501f7f16c27d811b2891\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/hash-into.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/!=(_:_:).json": {
       "hash": "f9f426afe04381b5f062ca6831fd0fa06aa5c042bcba0e6ef34ee6d6d64274b9",
-      "last_checked": "2026-03-13T07:38:51.765184",
+      "last_checked": "2026-03-17T07:40:49.666755",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"55c1b958cfab7c1694ddc69989b9ba21\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/notequal.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/==(_:_:).json": {
       "hash": "564d4c92b9d6660bdc8cbfe7b0528f6dd727d37c13e3305b0152670f07692541",
-      "last_checked": "2026-03-13T07:38:51.963023",
+      "last_checked": "2026-03-17T07:40:49.839477",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"678e499c322159cf8ca906b579be190d\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/equal.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/equatable-implementations.json": {
       "hash": "7e2bda6709ada2b58aad5de2c932078271d717656fac23b8fedd1eadcb4a8714",
-      "last_checked": "2026-03-13T07:38:52.286021",
+      "last_checked": "2026-03-17T07:40:49.985074",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f7ca964083ef48c3a0b8b02ae02da569\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/equatable-implementations.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencerangealert/workoutalert-implementations.json": {
       "hash": "36d627d09623957f133a061873f153c2054a051bcab35d8265e055f654e9b521",
-      "last_checked": "2026-03-13T07:38:52.404257",
+      "last_checked": "2026-03-17T07:40:50.168122",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"94aa97a23c54f405c644d7178ecb2a48\"",
       "file_path": "documentation/WorkoutKit/cadencerangealert/workoutalert-implementations.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/cadence(_:unit:).json": {
       "hash": "952b6f66e8f088a882b2be7a095d3b7c4f39f26c170ea597883c39e2176c2c26",
-      "last_checked": "2026-03-13T07:38:52.588031",
+      "last_checked": "2026-03-17T07:40:50.331358",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"abb5b1c27edd79bc1fa65170f16df13a\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/cadence-unit.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/init(target:).json": {
       "hash": "34e8f1cb676e7901e6f70357a984d3f11b149d13097fc8c52cffc57bf11ff1f3",
-      "last_checked": "2026-03-13T07:38:52.771433",
+      "last_checked": "2026-03-17T07:40:50.517622",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d1f5eee85340e198210d98674f720c94\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/init-target.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/metric.json": {
       "hash": "e92a73a10927585e9c000ebeca96c1072d9d544b5d34b70fe294271b66607ce4",
-      "last_checked": "2026-03-13T07:38:52.940889",
+      "last_checked": "2026-03-17T07:40:50.694973",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"1827ed9cdc6e51d45f3cbb3abc460f48\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/metric.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/target.json": {
       "hash": "d1721d298098e9316776ce370a1b88612f9fff2db1e838491f9305f189891a77",
-      "last_checked": "2026-03-13T07:38:53.055288",
+      "last_checked": "2026-03-17T07:40:50.893269",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d70285f6d6bd302bc950bc5039c22817\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/target.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/targetquantity.json": {
       "hash": "e4cabdbf059527b6f260c557ec4b0260f32bbddff0b384ada375f024926e1cac",
-      "last_checked": "2026-03-13T07:38:53.243228",
+      "last_checked": "2026-03-17T07:40:51.075929",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"57b57f003fccdfe56e71530a0805e410\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/targetquantity.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/hashvalue.json": {
       "hash": "5ad0f4ed3cd4258dc275237e4363eea0e6c9f6b2d8729973131051093e37c7bc",
-      "last_checked": "2026-03-13T07:38:53.351916",
+      "last_checked": "2026-03-17T07:40:51.249641",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ed5251d42f4f723f06c09cc40f8d1495\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/hashvalue.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/hash(into:).json": {
       "hash": "91b78b56c19374b99fb0f801d704320e7011d901b740313d610f26337563141b",
-      "last_checked": "2026-03-13T07:38:53.483505",
+      "last_checked": "2026-03-17T07:40:51.430074",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8e2c1088986bec6524526ef5895487be\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/hash-into.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/!=(_:_:).json": {
       "hash": "2d317173179a8c0eab5783f54e23b529aa8efcadd4c219c0f8eca73c7184062c",
-      "last_checked": "2026-03-13T07:38:53.591761",
+      "last_checked": "2026-03-17T07:40:51.610963",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"139f206bdb70ea46db244b35a084e6f2\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/notequal.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/==(_:_:).json": {
       "hash": "02efc43f5451894305bb0a1e7403bd4e418d846c38255e7c5b9d0aeaf5b9cad7",
-      "last_checked": "2026-03-13T07:38:53.765157",
+      "last_checked": "2026-03-17T07:40:51.801194",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f873aadf4269efce6fa5751a195d9cf2\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/equal.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/equatable-implementations.json": {
       "hash": "34ac110d37279974196c51017e0c2c87ec114bbe492f4d344b72880f2d06e6f2",
-      "last_checked": "2026-03-13T07:38:53.909485",
+      "last_checked": "2026-03-17T07:40:51.989018",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"498420904784049beb5c2eb3106c9d13\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/equatable-implementations.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/cadencethresholdalert/workoutalert-implementations.json": {
       "hash": "ee8a9eacf20c5fb858475e853c2b86a019a8ebb6dd7aa68f3966f9701c396db5",
-      "last_checked": "2026-03-13T07:38:54.017051",
+      "last_checked": "2026-03-17T07:40:52.158317",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ca36ce20f5eb5374d0c3f32ab6efb2b8\"",
       "file_path": "documentation/WorkoutKit/cadencethresholdalert/workoutalert-implementations.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/heartrate(_:unit:).json": {
       "hash": "3f650b76f3653d0e035a3669643606590b3c182577a9c4cd0a80dbfc1d1eafae",
-      "last_checked": "2026-03-13T07:38:54.135003",
+      "last_checked": "2026-03-17T07:40:52.348125",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8f6dab3266cd804f622aef15d302eb6c\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/heartrate-unit.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/init(target:).json": {
       "hash": "7d89de3033c3ba663f132d365a4a497783481d3b8de4ecf9a4e0389752980fde",
-      "last_checked": "2026-03-13T07:38:54.304980",
+      "last_checked": "2026-03-17T07:40:52.496758",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b66bdca1d978ebec06c08d6ed9db7945\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/init-target.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/metric.json": {
       "hash": "0bbfe54fffab9609829df93d5258dff8b471dba819f430fd8bf25f30ea4b9b8c",
-      "last_checked": "2026-03-13T07:38:54.404288",
+      "last_checked": "2026-03-17T07:40:52.647421",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"abc97ac642002aff85e0f181abba074c\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/metric.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/target.json": {
       "hash": "cebf25e3bc88391df4271170ab2155343740079f1ff2e7d8268c7a3be2fdf573",
-      "last_checked": "2026-03-13T07:38:54.592865",
+      "last_checked": "2026-03-17T07:40:52.882023",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d41e8d2536e98faa69d696bd4c9e0c86\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/target.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/targetquantitylowerbound.json": {
       "hash": "c937cba0bacb44affee12c3c80c2ded9d3b24c80733c896e072e4b2919d1ea22",
-      "last_checked": "2026-03-13T07:38:54.707388",
+      "last_checked": "2026-03-17T07:40:53.030586",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0198677a2a0c7428a89fb1bff041314f\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/targetquantitylowerbound.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/targetquantityupperbound.json": {
       "hash": "3828f11013aef74f2a345d084446cdd2234a6e87d5ca1b075ba9d0b9bfccc528",
-      "last_checked": "2026-03-13T07:38:54.874723",
+      "last_checked": "2026-03-17T07:40:53.224126",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"feaaf498a878ae2f76d0e14bd47babeb\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/targetquantityupperbound.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/hashvalue.json": {
       "hash": "f6609fc74d1e0949269f2eb0e775ab775ae10405ff43fa18f8208d8d6e7b0f78",
-      "last_checked": "2026-03-13T07:38:55.026047",
+      "last_checked": "2026-03-17T07:40:53.404034",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ae92523ff5814b2546156259db34b9d4\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/hashvalue.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/hash(into:).json": {
       "hash": "c3eb0a948dd7401778efc674517be300af34736b1302ec124768ebc5bcf34f5c",
-      "last_checked": "2026-03-13T07:38:55.205128",
+      "last_checked": "2026-03-17T07:40:53.632859",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2de3448b063648733d278b95dd5b9684\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/hash-into.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/!=(_:_:).json": {
       "hash": "6cddd8d3e119e217e54b348aa5f1cdb55e55bf68067a7c06aa2e74c450e75e7f",
-      "last_checked": "2026-03-13T07:38:55.350374",
+      "last_checked": "2026-03-17T07:40:53.812802",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"84ccf9b0989089d886dddc56f01a1ed2\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/notequal.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/==(_:_:).json": {
       "hash": "8cc2b74d754cc269b0ab37a259d8b8af38c8504ee487128950c46e20271b836c",
-      "last_checked": "2026-03-13T07:38:55.504021",
+      "last_checked": "2026-03-17T07:40:53.992586",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"87282418f757e9b8a9a0f8d4d87a3888\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/equal.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/equatable-implementations.json": {
       "hash": "0445e90cbcc3d9b9b791c261d25d6886a228f701a033e663c2319c4089072531",
-      "last_checked": "2026-03-13T07:38:55.625935",
+      "last_checked": "2026-03-17T07:40:54.123715",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"4e08cb90f417fe5266ef4ac617555f23\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/equatable-implementations.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartraterangealert/workoutalert-implementations.json": {
       "hash": "87745ef06c32852177d034509f9ee0888aa452073619505398d825b32a6f1915",
-      "last_checked": "2026-03-13T07:38:55.763457",
+      "last_checked": "2026-03-17T07:40:54.311269",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"28b8e7840cb97d48db4dc0b2da418119\"",
       "file_path": "documentation/WorkoutKit/heartraterangealert/workoutalert-implementations.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/heartrate(zone:).json": {
       "hash": "2e4d09b54be87ccb8ef53fd2b180dd9d3eff0d3a02790f8f9f5f5bd9629239bf",
-      "last_checked": "2026-03-13T07:38:55.896756",
+      "last_checked": "2026-03-17T07:40:54.495053",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"16eb088552fbf008bb7ca0b1f61f4c62\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/heartrate-zone.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/init(zone:).json": {
       "hash": "016301839042a275a595e8b3597ce561722ea88574523ec791cb21e3246a3f8d",
-      "last_checked": "2026-03-13T07:38:56.040664",
+      "last_checked": "2026-03-17T07:40:54.681834",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6a9e0775294ca58c1b8162cac2b78d76\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/init-zone.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/metric.json": {
       "hash": "d25f4c87c4fa18c1a0d1d2044e17d2c7eb1c407297791091d7e42045d1f598ab",
-      "last_checked": "2026-03-13T07:38:56.213841",
+      "last_checked": "2026-03-17T07:40:54.873612",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"a7ef5f7b79bab01eb9c303c8cc9e202c\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/metric.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/zone.json": {
       "hash": "7125f7b32f31cf3f0acf2e180af9758a4ddabe436a419660390cf427c025e072",
-      "last_checked": "2026-03-13T07:38:56.368309",
+      "last_checked": "2026-03-17T07:40:55.025793",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"592c2f4f37a4b16201aab4ecfcbc8ccd\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/zone.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/hashvalue.json": {
       "hash": "b351289e19a23a7934cb372fc1473d9dae6e81aab4594e3604874db82545099a",
-      "last_checked": "2026-03-13T07:38:56.487553",
+      "last_checked": "2026-03-17T07:40:55.197995",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b421f1e0c9582aeb818f694fc73c2635\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/hashvalue.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/hash(into:).json": {
       "hash": "5a2737f97308dcebe648d8b4d1a9cd66bc81114b1c352bcf4871aba55eacfb47",
-      "last_checked": "2026-03-13T07:38:56.602261",
+      "last_checked": "2026-03-17T07:40:55.389821",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"20f33a165d2713c72bb98784e34bfc68\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/hash-into.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/!=(_:_:).json": {
       "hash": "ae2c17aabaaa3cc3e9d2a56c74f3423b582e22b299d92f1f0c20c2e83fa89478",
-      "last_checked": "2026-03-13T07:38:56.783104",
+      "last_checked": "2026-03-17T07:40:55.565612",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d924ac475a0918e083433bc891b82f46\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/notequal.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/==(_:_:).json": {
       "hash": "58f5651d8a91ff61fb2427414dc18afb7dc1c8bbce25b601b82a8113cca8b391",
-      "last_checked": "2026-03-13T07:38:56.954150",
+      "last_checked": "2026-03-17T07:40:55.714219",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"810085c7ec4b4267475b6dfd1d533c14\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/equal.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/equatable-implementations.json": {
       "hash": "3e62769c1cbba202866e15c52ec5d3e92de85097a9a091b33234011f94239fd6",
-      "last_checked": "2026-03-13T07:38:57.076062",
+      "last_checked": "2026-03-17T07:40:55.885961",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"cec34381ad606490d601c85a8797103d\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/equatable-implementations.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/heartratezonealert/workoutalert-implementations.json": {
       "hash": "3d3f6c2c7d5f615fe8bab0a199922a58e7e128e4cfb76e8495959530cd5e99bf",
-      "last_checked": "2026-03-13T07:38:57.239729",
+      "last_checked": "2026-03-17T07:40:56.088997",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"74c87ec815e3c9a81fc9876170dce489\"",
       "file_path": "documentation/WorkoutKit/heartratezonealert/workoutalert-implementations.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/power(_:unit:).json": {
       "hash": "420741415734b628d446384a14cfb46a562c434438b83f655cd0da0c57bd5a57",
-      "last_checked": "2026-03-13T07:38:57.344558",
+      "last_checked": "2026-03-17T07:40:56.269129",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ef67dbcf5db45f3f904c727fdb576784\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/power-unit.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/init(target:).json": {
       "hash": "76977107762ba08c8552bae9b81355cd475833b62e10f9fe0954a6271f9db087",
-      "last_checked": "2026-03-13T07:38:57.532374",
+      "last_checked": "2026-03-17T07:40:56.427941",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"1b84b271f50eec7c06197ce082c342e5\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/init-target.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/metric.json": {
       "hash": "7ce749e4c6151b8b413e75604d74db61d9e95cc71ad141da22ee9341291345eb",
-      "last_checked": "2026-03-13T07:38:57.671731",
+      "last_checked": "2026-03-17T07:40:56.616518",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b598f8c6a7aa4a73049c393f12e88258\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/metric.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/target.json": {
       "hash": "6aa8e03108adba0376d2a44c5fe7a84a86ea9a8a3b37859e6e01d62f0aa24870",
-      "last_checked": "2026-03-13T07:38:57.849974",
+      "last_checked": "2026-03-17T07:40:56.798590",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"45b0f9079cf50bac7c5b89d32fb6561e\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/target.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/targetquantitylowerbound.json": {
       "hash": "53593e134dac8e88f061b0d57c098162895b5af552ecd3894a2fc38efbe1b264",
-      "last_checked": "2026-03-13T07:38:58.040870",
+      "last_checked": "2026-03-17T07:40:56.920877",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3f6212001da7f8feca2774f8798e9d13\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/targetquantitylowerbound.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/targetquantityupperbound.json": {
       "hash": "9ae1fdcc39c62c6574ed93638ef19cd228a8dd7d8f9031fb3f292bac3483d525",
-      "last_checked": "2026-03-13T07:38:58.141186",
+      "last_checked": "2026-03-17T07:40:57.120210",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"bd0598a62f98ffc1bfdddfffb4687a3c\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/targetquantityupperbound.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/hashvalue.json": {
       "hash": "f9e86ba570e6dcaefce6d4ebd5967898a864f265ecebb879827d5b547a5140c6",
-      "last_checked": "2026-03-13T07:38:58.289666",
+      "last_checked": "2026-03-17T07:40:57.308822",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2c4fd25903e6d88fd341ffca0a4d175c\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/hashvalue.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/hash(into:).json": {
       "hash": "e12e2c2d84b5de3388e1afb44f6612a404105bdeb2f512711a646cf8b21af740",
-      "last_checked": "2026-03-13T07:38:58.459411",
+      "last_checked": "2026-03-17T07:40:57.498081",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"531e7ac0ac83026a5a5e7e99714013ad\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/hash-into.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/!=(_:_:).json": {
       "hash": "edf125f4d9004dd7d8aaafe809529a1195e0bcfb2fc1fb45e4f55f688a4b9a11",
-      "last_checked": "2026-03-13T07:38:58.583165",
+      "last_checked": "2026-03-17T07:40:57.663756",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d3678738a4499217ea784440026dc420\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/notequal.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/==(_:_:).json": {
       "hash": "5be410a5a3512d0b226cedfbd24c2d66070c38235f8e6dc062c841d77ca1ea0d",
-      "last_checked": "2026-03-13T07:38:58.745079",
+      "last_checked": "2026-03-17T07:40:57.845372",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ecb7e157784bbcd3038e502d7901de8c\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/equal.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/init(target:metric:).json": {
       "hash": "fc1a0aa2f9b43519fd64a1f65efd273cbf6f31eeac148de985ae02da769ce1cb",
-      "last_checked": "2026-03-13T07:38:58.901456",
+      "last_checked": "2026-03-17T07:40:58.020053",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8cd27ebc940ae984668a8d48c827367f\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/init-targetmetric.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/equatable-implementations.json": {
       "hash": "9867f1345319d07d14858fa92e1a67665f49f8c98b0f671378f85c84a5702ceb",
-      "last_checked": "2026-03-13T07:38:59.069861",
+      "last_checked": "2026-03-17T07:40:58.152991",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b2955290389aaaab0190e0d9cb944fe3\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/equatable-implementations.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerrangealert/workoutalert-implementations.json": {
       "hash": "f3f6a64c7f272ff8e220fcb1944391d4bc70d9b70d2e2c0d1ff683f76226574e",
-      "last_checked": "2026-03-13T07:38:59.193073",
+      "last_checked": "2026-03-17T07:40:58.329569",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2071bb35fdb2bed94ae99d994a274c20\"",
       "file_path": "documentation/WorkoutKit/powerrangealert/workoutalert-implementations.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/power(_:unit:).json": {
       "hash": "db34ee4989cd7ad68021b761d7e049b935595dc183e0da86c5fef81455e7d89a",
-      "last_checked": "2026-03-13T07:38:59.327647",
+      "last_checked": "2026-03-17T07:40:58.482445",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"182ca6a615df4fd68c54c74216d6b53d\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/power-unit.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/init(target:).json": {
       "hash": "b00ff2888d2fff66cd58281df9beab2aab071caa0a70a994d0f38b9ab541bcd1",
-      "last_checked": "2026-03-13T07:38:59.432625",
+      "last_checked": "2026-03-17T07:40:58.657576",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f12a2ff5a1489622fb9f55928cd64671\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/init-target.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/metric.json": {
       "hash": "72be818bcacac8cfad449e0a8548fdf74523b498c0de926ba60904dc95f5aacb",
-      "last_checked": "2026-03-13T07:38:59.711350",
+      "last_checked": "2026-03-17T07:40:58.835380",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"149fa9198cbb23b86e9ce95f61d9da90\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/metric.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/target.json": {
       "hash": "3f4b0337081b6a527e41d7cabfe5cb8b2daccfd49d633aa3312e3314cf5c405a",
-      "last_checked": "2026-03-13T07:38:59.817434",
+      "last_checked": "2026-03-17T07:40:59.000345",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"aded419b1558b026f3d982c41f6edf78\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/target.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/targetquantity.json": {
       "hash": "4409ca9ca15db7d731757dc929c6a79023e95382331a8acddb2c0f3f1722173c",
-      "last_checked": "2026-03-13T07:38:59.935990",
+      "last_checked": "2026-03-17T07:40:59.129115",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"52899bc788fd1e728decfdf1b9e2450f\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/targetquantity.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/hashvalue.json": {
       "hash": "56d302c02f3ce3572715c523e410713c7ae96759288eeba956e587d4b49a2786",
-      "last_checked": "2026-03-13T07:39:00.205106",
+      "last_checked": "2026-03-17T07:40:59.269771",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"88b36e3e363c3624e3d33110515a67b6\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/hashvalue.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/hash(into:).json": {
       "hash": "5a893d5725b9f690d9be432e4119a9340e0dc66b871337d19694edf7f458b598",
-      "last_checked": "2026-03-13T07:39:00.355904",
+      "last_checked": "2026-03-17T07:40:59.402061",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6b91ae9827beaa40a4d2a36f94953975\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/hash-into.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/!=(_:_:).json": {
       "hash": "fb2d7c8e07556eebd01d43de3501b9356bae84a7904088c93fd269b3f0d27dfd",
-      "last_checked": "2026-03-13T07:39:00.513831",
+      "last_checked": "2026-03-17T07:40:59.534142",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"1a438c5f1ba612ef98dd778373510691\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/notequal.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/==(_:_:).json": {
       "hash": "1f8f83d01182409d32a8ba1c4510e99e876ec1f14473f2d66fbcb40e6c264286",
-      "last_checked": "2026-03-13T07:39:00.624364",
+      "last_checked": "2026-03-17T07:40:59.708659",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"846a9d9d10ebc61332b4df1bb288761c\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/equal.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/init(target:metric:).json": {
       "hash": "7534939e6f55b325bd55a9647be98d71c6329373dd89522c8ac211f9ac42cbb3",
-      "last_checked": "2026-03-13T07:39:00.811048",
+      "last_checked": "2026-03-17T07:40:59.836033",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e793bb730d3993ff620e274438bb7263\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/init-targetmetric.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/equatable-implementations.json": {
       "hash": "5bc58c897ebbd9276c3430abd6249f8ff3b11fba72adbe349cfc0f0ce7f146c0",
-      "last_checked": "2026-03-13T07:39:00.922357",
+      "last_checked": "2026-03-17T07:41:00.002205",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"619b4f3cdcdcfc8f409ee07671f34a38\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/equatable-implementations.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerthresholdalert/workoutalert-implementations.json": {
       "hash": "0dd423a1a35317304759a495d15e32b60914333845451edbb6f6f973c2c28735",
-      "last_checked": "2026-03-13T07:39:01.081389",
+      "last_checked": "2026-03-17T07:41:00.255718",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e379c7bad02004407065e12aa708e781\"",
       "file_path": "documentation/WorkoutKit/powerthresholdalert/workoutalert-implementations.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/power(zone:).json": {
       "hash": "48527b9d6d8fef7cf77f5d32f6db3f4346b1d705c3b0863ae3423c4edb3b9770",
-      "last_checked": "2026-03-13T07:39:01.244541",
+      "last_checked": "2026-03-17T07:41:00.440169",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"257a85f771e56a618989e9c9e37ead0b\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/power-zone.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/init(zone:).json": {
       "hash": "e3e017911072ab2d80f08e16eb62ceb9a5d9a26cedc63912a2415bff5a1cb8a5",
-      "last_checked": "2026-03-13T07:39:01.354085",
+      "last_checked": "2026-03-17T07:41:00.582600",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"46d498ce24234a2186cb16df379ab81f\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/init-zone.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/metric.json": {
       "hash": "32a37cb6e1d87fa8f2e42247f05eeb775e830df7d1430442fcc5ff61f919ed4d",
-      "last_checked": "2026-03-13T07:39:01.470487",
+      "last_checked": "2026-03-17T07:41:00.770208",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8dc41c3ea308081badc6d28de6e13118\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/metric.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/zone.json": {
       "hash": "dc8172467fab5006fd389b6032eea699a0f2f1607619168094c143c44ec0229b",
-      "last_checked": "2026-03-13T07:39:01.649411",
+      "last_checked": "2026-03-17T07:41:00.912567",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"93039f9305a60d8133f2f11e1e0b2499\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/zone.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/hashvalue.json": {
       "hash": "cb8e0534960290dee686ee53d47522ae591b835b569a61fb7507aa10b81ff321",
-      "last_checked": "2026-03-13T07:39:01.825278",
+      "last_checked": "2026-03-17T07:41:01.093236",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"fc7aa330ea7003cde079f6c963155b15\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/hashvalue.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/hash(into:).json": {
       "hash": "58de9418dc4235b78f814ddab743d1948f36b83d4456adc7b7d7f39e1ebc5ee3",
-      "last_checked": "2026-03-13T07:39:01.996245",
+      "last_checked": "2026-03-17T07:41:01.269990",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"65a514c76702a871aace7799dc144be2\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/hash-into.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/!=(_:_:).json": {
       "hash": "83e2241236c611a4afc14930b0d70a87535191003cbecbae542f03f9b223f545",
-      "last_checked": "2026-03-13T07:39:02.160486",
+      "last_checked": "2026-03-17T07:41:01.477166",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b20b1777393f4470f5d66a73ba4b35bb\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/notequal.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/==(_:_:).json": {
       "hash": "bb3311bedf9b02e3d7edad0af54186ad52028ee1750acf0d0b015f8841f5a3cd",
-      "last_checked": "2026-03-13T07:39:02.371797",
+      "last_checked": "2026-03-17T07:41:01.658750",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"616892db2a4af78952a8ce3fc37f8ff7\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/equal.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/equatable-implementations.json": {
       "hash": "a5a8f0f600a34865b1c8c528e6d3fb9577f8a75c10375116a38a690634323b49",
-      "last_checked": "2026-03-13T07:39:02.502913",
+      "last_checked": "2026-03-17T07:41:01.831593",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"85043e0f346f99ea6ac74cf5c69e2ef8\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/equatable-implementations.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/powerzonealert/workoutalert-implementations.json": {
       "hash": "dbd2214724ee743f568a98df9a599408d3534202143577c6fe9e0640b5b3343b",
-      "last_checked": "2026-03-13T07:39:02.637652",
+      "last_checked": "2026-03-17T07:41:02.015273",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"add89255b45874c1f59d5e3f416cc55b\"",
       "file_path": "documentation/WorkoutKit/powerzonealert/workoutalert-implementations.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/speed(_:unit:metric:).json": {
       "hash": "1d95e64fe475738561352ebc187062f1ed535f2e9e83955004642013c3ec1e83",
-      "last_checked": "2026-03-13T07:39:02.761548",
+      "last_checked": "2026-03-17T07:41:02.160037",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"ff166aeb3d7da9721594305a2b39da78\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/speed-unitmetric.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/init(target:metric:).json": {
       "hash": "d06b0016c5c01550db6336d60c2e5bb9cf9915d3260b054bffa259ebb30dd692",
-      "last_checked": "2026-03-13T07:39:02.870773",
+      "last_checked": "2026-03-17T07:41:02.346983",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"bc5c55d56d4cba5788a179131bb26717\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/init-targetmetric.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/target.json": {
       "hash": "9627b480ba9b971fcdb69cc572ea60ac5b0ed8449014f1bb7ebce4d3acb6964e",
-      "last_checked": "2026-03-13T07:39:03.028991",
+      "last_checked": "2026-03-17T07:41:02.525958",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"da4f39046f35faf0c8395b8f57958f00\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/target.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/targetquantitylowerbound.json": {
       "hash": "a84dd93a8b8039b0baaa73c7d091f21e328ec341e3f7c4192d84991d136bca8e",
-      "last_checked": "2026-03-13T07:39:03.141353",
+      "last_checked": "2026-03-17T07:41:02.721018",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3f1646d052c2701e5cb4a0613f242e3d\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/targetquantitylowerbound.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/targetquantityupperbound.json": {
       "hash": "afc38bba773f4450abf62a251ba6dd7e878ab6e22c3e9452ff30e1acafe8e30e",
-      "last_checked": "2026-03-13T07:39:03.333384",
+      "last_checked": "2026-03-17T07:41:02.923456",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f272107dd13889811b7b29f6018bc684\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/targetquantityupperbound.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/metric.json": {
       "hash": "fe57eae7a91a5e5336567bd0050bd8fb55be86abd413510bff7b99d81cc40c2f",
-      "last_checked": "2026-03-13T07:39:03.504231",
+      "last_checked": "2026-03-17T07:41:03.155446",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"429aa8995838edeaf719864a36df0940\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/metric.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/hashvalue.json": {
       "hash": "4e02e169fb8c30a5515b9cd1de0a27ded475b669d32a5329cfedf9340363acd1",
-      "last_checked": "2026-03-13T07:39:03.663143",
+      "last_checked": "2026-03-17T07:41:03.287793",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c2678e4f51ca92cfe889875ad00473ec\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/hashvalue.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/hash(into:).json": {
       "hash": "7037ad1ca669a169e4af1b43a88bf97ea1fe77c009e86b8b699f0ecb67159d89",
-      "last_checked": "2026-03-13T07:39:03.764098",
+      "last_checked": "2026-03-17T07:41:03.467713",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b5ad996c2fcfe44bcdd354919f96510a\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/hash-into.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/!=(_:_:).json": {
       "hash": "35b0444ae4e58277dc69c8866659eff5f0fff97c1f2b3761f6518fa2a29e9654",
-      "last_checked": "2026-03-13T07:39:03.901225",
+      "last_checked": "2026-03-17T07:41:03.657848",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"0f02d6cd4807661b8825bd2692d30fa4\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/notequal.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/==(_:_:).json": {
       "hash": "674bb3fb0b4e26143da5285a8826037d59c19415fedc6b80a8dc4f3e4cae371d",
-      "last_checked": "2026-03-13T07:39:04.075526",
+      "last_checked": "2026-03-17T07:41:03.845833",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"490908e1a176702b44d56291b58a469e\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/equal.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/equatable-implementations.json": {
       "hash": "0d203804a4bc96f9af122e0acfb47f4aaa0265fbe79daaaae35bfca1b347295c",
-      "last_checked": "2026-03-13T07:39:04.244081",
+      "last_checked": "2026-03-17T07:41:04.017587",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"2657341d494ff15dcf94e1cb161dd7fb\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/equatable-implementations.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedrangealert/workoutalert-implementations.json": {
       "hash": "e413c450553732e98a9714a0a1211521ebd127e5df153d8c644656652b46837e",
-      "last_checked": "2026-03-13T07:39:04.415169",
+      "last_checked": "2026-03-17T07:41:04.232254",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f1b2e2949158f5ccab114ab47c97b644\"",
       "file_path": "documentation/WorkoutKit/speedrangealert/workoutalert-implementations.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/speed(_:unit:metric:).json": {
       "hash": "4f7911ee00d95a9f6265bb8222b75a329e20124b8d31436bccdd2c10aee6b379",
-      "last_checked": "2026-03-13T07:39:04.524488",
+      "last_checked": "2026-03-17T07:41:04.412854",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"9832ebec746918e641667646b62ccf61\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/speed-unitmetric.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/init(target:metric:).json": {
       "hash": "fb5c6733cf8698e5a6f5303893c112a1784a3d7a4ea68a358aaf78a755e4f225",
-      "last_checked": "2026-03-13T07:39:04.662717",
+      "last_checked": "2026-03-17T07:41:04.555249",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"f5a823f9e71ee5653af892488a2e5684\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/init-targetmetric.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/target.json": {
       "hash": "090f6c85b7f34260528cef5bf65e88879c84d05995cba19c2a735f71436042ff",
-      "last_checked": "2026-03-13T07:39:04.795494",
+      "last_checked": "2026-03-17T07:41:04.762890",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e27bf61ec5b4480555e787cac7e19b88\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/target.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/targetquantity.json": {
       "hash": "c03c5a6afd5a5c4a2cffedbfe90fd703799b19e13cc02cc5a0265afaed492360",
-      "last_checked": "2026-03-13T07:39:04.940100",
+      "last_checked": "2026-03-17T07:41:04.899118",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"1bed5da2e0f3296200758365d7e763a0\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/targetquantity.md"
     },
@@ -4567,9 +4567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/metric.json": {
       "hash": "3c901681476de3742a35cdb9dd5a2885b4076689dc58c1fc961c5502860650fd",
-      "last_checked": "2026-03-13T07:39:05.073398",
+      "last_checked": "2026-03-17T07:41:05.018698",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c970bce7b8eb27d8369e8c4387c845e2\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/metric.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/hashvalue.json": {
       "hash": "ef2672adbb1b8ef3f7046ebacdd255100123f02d9892be9fd8bb16197670aa61",
-      "last_checked": "2026-03-13T07:39:05.196355",
+      "last_checked": "2026-03-17T07:41:05.188997",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"be24d01fc5bd09ce6d1461bca9eb05fe\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/hashvalue.md"
     },
@@ -4599,9 +4599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/hash(into:).json": {
       "hash": "8253247a6c2cb20dc7bb28415530ac57bc6405d2ec5d8f39d81f742f5173b70b",
-      "last_checked": "2026-03-13T07:39:05.384976",
+      "last_checked": "2026-03-17T07:41:05.334178",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"8fe129c60714afcdc832ce70af2e920d\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/hash-into.md"
     },
@@ -4615,9 +4615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/!=(_:_:).json": {
       "hash": "8cce8ff72226be21caf7cddf698027b07f29525dd795bf693d35e7e32dff4567",
-      "last_checked": "2026-03-13T07:39:05.501446",
+      "last_checked": "2026-03-17T07:41:05.506878",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"75716b3626e730605ce22632ca39e621\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/notequal.md"
     },
@@ -4631,9 +4631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/==(_:_:).json": {
       "hash": "6cd2b299d739ffc1607bd42ac3b40beb37a72779289ff5abf88f48c3795fc67c",
-      "last_checked": "2026-03-13T07:39:05.668477",
+      "last_checked": "2026-03-17T07:41:05.650734",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"eae803e75a069b57f0ed7e99071b8ce0\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/equal.md"
     },
@@ -4647,9 +4647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/equatable-implementations.json": {
       "hash": "1cd7b1f5cf8aab925bc57cde20d4d51e1a0ea1f2b8370011b44c766e233932fc",
-      "last_checked": "2026-03-13T07:39:05.851990",
+      "last_checked": "2026-03-17T07:41:05.791896",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"782c2167ace0473d942bd44f74d097df\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/equatable-implementations.md"
     },
@@ -4663,9 +4663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/speedthresholdalert/workoutalert-implementations.json": {
       "hash": "187ff00a7aa6e776d7e997ec1efdabd5e0dd5784278584356eca15599aec9d67",
-      "last_checked": "2026-03-13T07:39:06.005773",
+      "last_checked": "2026-03-17T07:41:05.967773",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"18015c4183f2573748a871559e1cf6e5\"",
       "file_path": "documentation/WorkoutKit/speedthresholdalert/workoutalert-implementations.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/custom(_:).json": {
       "hash": "3025a9c791ee22e15a0b22fe4fc7ddf2e785fd125b0342ff00684ef5fd0b7afb",
-      "last_checked": "2026-03-13T07:39:06.106129",
+      "last_checked": "2026-03-17T07:41:06.148761",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"bbe4ae974cefcc2e84850015ac66e1e2\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/custom.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/goal(_:).json": {
       "hash": "1bb10eee0bf2325455cb5573ca6e0b88304af9356978e464f1c20ed91ffb6a8c",
-      "last_checked": "2026-03-13T07:39:06.279099",
+      "last_checked": "2026-03-17T07:41:06.344400",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"62520761636643e61cfcc6fbfc050fba\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/goal.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/pacer(_:).json": {
       "hash": "33f9e2a44714c49401f3e17f77c889ea954ce7b689e2afe2288c71fa1f2197d7",
-      "last_checked": "2026-03-13T07:39:06.395985",
+      "last_checked": "2026-03-17T07:41:06.485511",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"10cfa2762a1dfc99712059bded62048b\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/pacer.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/swimbikerun(_:).json": {
       "hash": "8d0708c0248d43d7952a2238bef3914f99b3d3c0d9d6973591735341908f91d8",
-      "last_checked": "2026-03-13T07:39:06.528345",
+      "last_checked": "2026-03-17T07:41:06.661852",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"caab33b2277222d41e3130d6d9f3639a\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/swimbikerun.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/activity.json": {
       "hash": "b854b95178d2572ec7d01012468530da78389201f665c83cf1966794209be32f",
-      "last_checked": "2026-03-13T07:39:06.640017",
+      "last_checked": "2026-03-17T07:41:06.841198",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"acddca22c674d675b07744bd79a6f307\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/activity.md"
     },
@@ -4759,9 +4759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/hashvalue.json": {
       "hash": "1e86d0be35fed2443ee00e6328af4f4f4befe0aaaeb88d72875b39af2231ac1d",
-      "last_checked": "2026-03-13T07:39:06.823596",
+      "last_checked": "2026-03-17T07:41:07.028023",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"32eb2a986f61c82a936c8b17af06f7ee\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/hashvalue.md"
     },
@@ -4775,9 +4775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/hash(into:).json": {
       "hash": "ad52095246f73794400dc200e2776a6607ba2b67a17209c1a1f632c4ee6c2c9e",
-      "last_checked": "2026-03-13T07:39:06.934934",
+      "last_checked": "2026-03-17T07:41:07.208367",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"3ec1bbbd93f32bc20124f41e71ab954e\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/hash-into.md"
     },
@@ -4791,9 +4791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/!=(_:_:).json": {
       "hash": "be482710b9f7f0bdb24bd2ce8534b75d323f06f1ec31f6fc52433d879e08d6fa",
-      "last_checked": "2026-03-13T07:39:07.062978",
+      "last_checked": "2026-03-17T07:41:07.388876",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"d228c7232f2fefe9a0ffc756ac1c96aa\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/notequal.md"
     },
@@ -4807,9 +4807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/==(_:_:).json": {
       "hash": "918040dbd714227e847b19da00a6d8f42c458684efd9ae23cc5f6f407a45b8f9",
-      "last_checked": "2026-03-13T07:39:07.200563",
+      "last_checked": "2026-03-17T07:41:07.513946",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"98e068c9836e10d2cf96df58ff46a5ed\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/equal.md"
     },
@@ -4823,9 +4823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutplan/workout-swift.enum/equatable-implementations.json": {
       "hash": "f10cf9300293880bf84621ee917de071493fc5d712357b5fe1033cba53a20093",
-      "last_checked": "2026-03-13T07:39:07.311382",
+      "last_checked": "2026-03-17T07:41:07.686929",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"6901328960d94095e453fda398045d17\"",
       "file_path": "documentation/WorkoutKit/workoutplan/workout-swift.enum/equatable-implementations.md"
     },
@@ -4839,9 +4839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/authorized.json": {
       "hash": "9883be4dc8e23602bc6c8f470af855087934b6868a60384ffddd9f221db16f3e",
-      "last_checked": "2026-03-13T07:39:07.492792",
+      "last_checked": "2026-03-17T07:41:07.854606",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c39b0910f1d2994d492b79c21b2d99ba\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/authorized.md"
     },
@@ -4855,9 +4855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/denied.json": {
       "hash": "7b393235daf130c5e4d5de219ca715b881806508f254e8afec4d994016676836",
-      "last_checked": "2026-03-13T07:39:07.661364",
+      "last_checked": "2026-03-17T07:41:08.037445",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e3753c472d24926acce8a37bd72fc0a2\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/denied.md"
     },
@@ -4871,9 +4871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/notdetermined.json": {
       "hash": "eed0e2e86dba3fe1b2e751f5e1faf52564fcd95d6c1fee873e06edb800086209",
-      "last_checked": "2026-03-13T07:39:07.775955",
+      "last_checked": "2026-03-17T07:41:08.214920",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"4f2c33fea7b709db188d75b9b4734b18\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/notdetermined.md"
     },
@@ -4887,9 +4887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/restricted.json": {
       "hash": "0447a39a53388a03ec522759004a4e5b57aa14ed2dda8b21a5a806649f89304d",
-      "last_checked": "2026-03-13T07:39:07.895720",
+      "last_checked": "2026-03-17T07:41:08.408729",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"487f650550dd5f8127b5c25b4b992680\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/restricted.md"
     },
@@ -4903,9 +4903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/init(rawvalue:).json": {
       "hash": "fbfa4f42e78bd7f9df2d5dd0b6fb47cee759cfde262c93b0b7d443e0ef21cfaa",
-      "last_checked": "2026-03-13T07:39:08.025502",
+      "last_checked": "2026-03-17T07:41:08.603565",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"cb1921370981f68d639e3578ff36b160\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/init-rawvalue.md"
     },
@@ -4919,9 +4919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/rawvalue-swift.typealias.json": {
       "hash": "1d6628c0e3a017c0564389b3822052298ff3179289d19f33b10a649650a7a518",
-      "last_checked": "2026-03-13T07:39:08.160882",
+      "last_checked": "2026-03-17T07:41:08.790063",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c5230730a266998baacac9c391c664dd\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/rawvalue-swifttypealias.md"
     },
@@ -4935,9 +4935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/!=(_:_:).json": {
       "hash": "6e71fae6f56eab1d50ba8dda26dedb22620446acebe2aca3e26e13f7c36db1eb",
-      "last_checked": "2026-03-13T07:39:08.283439",
+      "last_checked": "2026-03-17T07:41:08.986504",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"e5e528e87b5c85d82b17fdb99ec77ae5\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/notequal.md"
     },
@@ -4951,9 +4951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/hashvalue.json": {
       "hash": "158fb494ce6cd09b43b0c2161e9d4d139ed08b14285b3951dc9d22db658ab5e8",
-      "last_checked": "2026-03-13T07:39:08.407104",
+      "last_checked": "2026-03-17T07:41:09.114844",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"efd6f56c28ea6de32fc68df61e975b32\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/hashvalue.md"
     },
@@ -4967,9 +4967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/hash(into:).json": {
       "hash": "5dffdb6cd543d4ec051b6768efff5ed45d077ad5a67a99fe60e846e9188884bc",
-      "last_checked": "2026-03-13T07:39:08.522866",
+      "last_checked": "2026-03-17T07:41:09.345282",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"48d764eb55b7e0e484ff37de2612360c\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/hash-into.md"
     },
@@ -4983,9 +4983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/rawvalue-swift.property.json": {
       "hash": "ed4e4dc76989c8d31ddc513d39ef0cffcd2efa01045d0dbb15b2763aca34137f",
-      "last_checked": "2026-03-13T07:39:08.699719",
+      "last_checked": "2026-03-17T07:41:09.471741",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"602dbc7b7f7996b7a69a8503681479ad\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/rawvalue-swiftproperty.md"
     },
@@ -4999,9 +4999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/equatable-implementations.json": {
       "hash": "1cce23e93b3dc2198f2b24e34e81173e3c346de8e866da961ae3dd2499e43a9e",
-      "last_checked": "2026-03-13T07:39:08.813071",
+      "last_checked": "2026-03-17T07:41:09.619718",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"b24e9a9d57554873c467cfe74c0b4fe5\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/equatable-implementations.md"
     },
@@ -5015,9 +5015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/workoutkit/workoutscheduler/authorizationstate-swift.enum/rawrepresentable-implementations.json": {
       "hash": "e347756fe32e779a1c09511a1bf02f56a3b88f6d316a8d4b080bc3883f94fe14",
-      "last_checked": "2026-03-13T07:39:08.980379",
+      "last_checked": "2026-03-17T07:41:09.790910",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:38:24.859605",
+      "session_id": "2026-03-17T07:40:13.212366",
       "etag": "W/\"c178d2aecff11215ac86c2b0647bf448\"",
       "file_path": "documentation/WorkoutKit/workoutscheduler/authorizationstate-swift.enum/rawrepresentable-implementations.md"
     },

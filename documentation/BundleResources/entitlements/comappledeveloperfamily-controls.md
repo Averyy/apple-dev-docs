@@ -21,6 +21,11 @@ You must add the Family Controls entitlement to your app before you call the [`A
 
 Adding the Family Controls capability to your app automatically sets this entitlement. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
+## See Also
+
+- [Family Controls App and Website Usage](entitlements/com.apple.developer.family-controls.app-and-website-usage.md)
+  A Boolean value that indicates whether the app may, with the person’s permission, access app and website usage information from the current device.
+
 
 ---
 

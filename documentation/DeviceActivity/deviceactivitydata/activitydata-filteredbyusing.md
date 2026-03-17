@@ -21,7 +21,15 @@ A sequence of device activity data for the given filter.
 
 #### Discussion
 
-> ❗ **Important**:  You must add the Family Controls User Data capability to your app before you attempt to use this function. This capability adds the doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_family-controls-user-data to your app. In a compatible iPad or iPhone app running on visionOS or macOS, using this function will always throw. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). Additionally, your app must be authorized and data access must be available before using this function, or it will always throw. See [`AuthorizationCenter`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter) for more details.
+Use this method to export family activity data, for use in another app or platform.
+
+##### Region Support Authorization and Entitlement
+
+You can develop and test an app that uses this method on devices in any region. Customer installations of your app can only use the method on devices located in the EU that are signed in with an Apple Account with an EU country or region. Otherwise, it throws an error.
+
+Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](https://developer.apple.com/documentation/FamilyControls/AuthorizationStatus/approvedWithDataAccess) to use this method.
+
+Your app needs the  [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls.app-and-website-usage) entitlement to use this method. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 ## Parameters
 

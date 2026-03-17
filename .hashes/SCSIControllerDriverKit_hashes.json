@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T07:41:11.222040",
+    "last_updated": "2026-03-17T07:43:27.332988",
     "total_pages": 192,
-    "session_id": "2026-03-13T07:40:57.889641"
+    "session_id": "2026-03-17T07:43:13.473932"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SCSIControllerDriverKit.json": {
       "hash": "ebb8dab78e55aa3906cdb440e8893644f5c402bfa0e009f9b1a184e85d8dfca2",
-      "last_checked": "2026-03-13T07:40:58.206503",
+      "last_checked": "2026-03-17T07:43:13.755052",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"1a53df1f26ddf9197b69bc302923a7da\"",
       "file_path": "documentation/SCSIControllerDriverKit/SCSIControllerDriverKit.md"
     },
     "https://developer.apple.com/documentation/SCSIControllerDriverKit": {
       "hash": "ebb8dab78e55aa3906cdb440e8893644f5c402bfa0e009f9b1a184e85d8dfca2",
-      "last_checked": "2026-03-13T07:40:58.068734",
+      "last_checked": "2026-03-17T07:43:13.647465",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"1a53df1f26ddf9197b69bc302923a7da\"",
       "file_path": "documentation/SCSIControllerDriverKit/SCSIControllerDriverKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller.json": {
       "hash": "7eff13cc772cc1732337226663f59089cf47c2a511264b8e500f4245b57761bd",
-      "last_checked": "2026-03-13T07:40:58.458546",
+      "last_checked": "2026-03-17T07:43:14.026248",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"0b64aebc3c2550c756f59618065b9ef7\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsicontrollerdriverkit-macros.json": {
       "hash": "cb621a79fe7499989d5b76911ed640d5e51c835f48ac6e734ab1941effa64d64",
-      "last_checked": "2026-03-13T07:40:58.564250",
+      "last_checked": "2026-03-17T07:43:14.174380",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"f7a8d8d7514c82c3f5dcf9c9d2c5eebb\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsicontrollerdriverkit-macros.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/kmaxbundledparalleltasks.json": {
       "hash": "e820d9e2b86950142ec315d845a9c21e22dc9bf8302892118eb8ba998231baf4",
-      "last_checked": "2026-03-13T07:40:58.683406",
+      "last_checked": "2026-03-17T07:43:14.291728",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"3f930d817a5c79f3127427767cc0bf34\"",
       "file_path": "documentation/SCSIControllerDriverKit/kmaxbundledparalleltasks.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userinitializecontroller.json": {
       "hash": "4dd0846bde5e64feff428e1f4a53216c3ca8d845195b09e0f51e01b41ab76994",
-      "last_checked": "2026-03-13T07:40:58.811257",
+      "last_checked": "2026-03-17T07:43:14.427379",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"ca5cf0158c1b2680796c7154baf2c0b8\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userinitializecontroller.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userstartcontroller.json": {
       "hash": "e6237557e6ca2eb6baf59003d2122cc849421dc721cd0dcdc83d9c8ae8e32ecc",
-      "last_checked": "2026-03-13T07:40:59.088590",
+      "last_checked": "2026-03-17T07:43:14.587179",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"621f0245aaf78593c0ab9af0ee4737b4\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userstartcontroller.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userprocessparalleltask.json": {
       "hash": "2f2fac05a013747d871aa26ceb6b9953ac4343ce03cffc2f14d1972fdd856676",
-      "last_checked": "2026-03-13T07:40:59.220091",
+      "last_checked": "2026-03-17T07:43:14.707901",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"42b96671c4f409fd8ed4e4b36c1053b6\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userprocessparalleltask.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask.json": {
       "hash": "a45333d80268d0921a6db03ce53e6cdff38423118b3d8f7622d54d477f2ebc6d",
-      "last_checked": "2026-03-13T07:40:59.337140",
+      "last_checked": "2026-03-17T07:43:14.880714",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"d9b472e494a524431fdf6044f966758f\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/paralleltaskcompletion.json": {
       "hash": "0e9180451350e913d5cd18f2d18445bb5fa3820802691d315c85edc48c671f75",
-      "last_checked": "2026-03-13T07:40:59.462221",
+      "last_checked": "2026-03-17T07:43:15.004018",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"7624a7a193aee5bb51c889d774a68f51\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/paralleltaskcompletion.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse.json": {
       "hash": "d39a776ad70c4e920f64d49966aafe52ceb988063b70984ed6a9c6e18d577d51",
-      "last_checked": "2026-03-13T07:40:59.607417",
+      "last_checked": "2026-03-17T07:43:15.127461",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"edcedd612922545e044e202c14e6b736\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.json": {
       "hash": "c3c614a8e35ba99c1c5e0c7ebd8c96cd262918f57a80e3a35114c702cd3c9a16",
-      "last_checked": "2026-03-13T07:40:59.747737",
+      "last_checked": "2026-03-17T07:43:15.339134",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"8cb78159175a4946c1a5b20fc1163878\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usermapbundledparalleltaskcommandandresponsebuffers.json": {
       "hash": "c95a1677dffe0b1d0367df627d7f40cf4c67fe4a0e4f64db0988aca3ce619830",
-      "last_checked": "2026-03-13T07:40:59.913739",
+      "last_checked": "2026-03-17T07:43:15.479934",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"7923a74a55958243927dac3264f33a49\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usermapbundledparalleltaskcommandandresponsebuffers.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.json": {
       "hash": "ca7d4bdaa72667c5dba020dc460d1f38477de9998411e54a002dffb689288aa4",
-      "last_checked": "2026-03-13T07:41:00.052269",
+      "last_checked": "2026-03-17T07:43:15.621281",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"e9e90ed60662a3fe8d8ec4bd0a3c4530\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userinitializetargetforid.json": {
       "hash": "e7ee3d9468e528faecfd40a3ee79175c37f0cc9081b43f5c2287b2d61c2da360",
-      "last_checked": "2026-03-13T07:41:00.168070",
+      "last_checked": "2026-03-17T07:43:15.748548",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"b5ce5ba00eb02036990bcdc07d548828\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userinitializetargetforid.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usercreatetargetforid.json": {
       "hash": "6d9c374ac95349530561492fbfdf970d1686c41651e139e19ea5877508078e52",
-      "last_checked": "2026-03-13T07:41:00.291239",
+      "last_checked": "2026-03-17T07:43:15.879323",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"64df385e6f7c11580792e2078b7ed7b4\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usercreatetargetforid.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userdestroytargetforid.json": {
       "hash": "901683c3d4dce84f0d571c5f02ca790787ee02454f155c873a89f26992a97318",
-      "last_checked": "2026-03-13T07:41:00.416776",
+      "last_checked": "2026-03-17T07:43:16.045253",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"777763c8d5952c13896d4907320c5cb0\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userdestroytargetforid.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usertargetpresentforid.json": {
       "hash": "437cc793eb15c56df6bf61f4d3a672f53f361cbad03ce0429e7ef04c306fb43f",
-      "last_checked": "2026-03-13T07:41:00.541190",
+      "last_checked": "2026-03-17T07:43:16.209945",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"887ea51ebf35043abf127aba22e505d7\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usertargetpresentforid.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usersettargetproperties.json": {
       "hash": "f7a18092a9b3c9130571b5bc6dc223dc01eaafa835f2dd315c0046adf217f92a",
-      "last_checked": "2026-03-13T07:41:00.657234",
+      "last_checked": "2026-03-17T07:43:16.369031",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"5e36a062f17831346e5cb6f233f2b09d\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usersettargetproperties.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userremovetargetproperties.json": {
       "hash": "4e53af69d27df0e5487eedefa88d583a58f7103354526b7bb6172e79b229251e",
-      "last_checked": "2026-03-13T07:41:00.964471",
+      "last_checked": "2026-03-17T07:43:16.532088",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"8e42220f2418679dc46b4565b33b8856\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userremovetargetproperties.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/useraborttaskrequest.json": {
       "hash": "df4cbf05ec630c303e4bdd9a63b20a7b656f91250cf56b3fe318d982a4923b35",
-      "last_checked": "2026-03-13T07:41:01.092925",
+      "last_checked": "2026-03-17T07:43:16.675145",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"315b88d909df1166a8f9238edd6c7fdf\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/useraborttaskrequest.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/useraborttasksetrequest.json": {
       "hash": "17b50660768973c873d275e8a0168fc5257b6c8884354521d6c46754ebfdffbd",
-      "last_checked": "2026-03-13T07:41:01.225879",
+      "last_checked": "2026-03-17T07:43:16.795696",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"84ae19e7fad83355cf2a995dc051c59e\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/useraborttasksetrequest.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userclearacarequest.json": {
       "hash": "20237683713fedaae3ad71abaf522d5e2ab6b1d07097975c9b663a3d5bd6e9ba",
-      "last_checked": "2026-03-13T07:41:01.382118",
+      "last_checked": "2026-03-17T07:43:16.960872",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"c88c2d25b82e8aaf8240193843d377d4\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userclearacarequest.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usercleartasksetrequest.json": {
       "hash": "eb05b1b4d8f8102c68ae6b7608323917bd89e68999e595ae170d63b6a1ff1f12",
-      "last_checked": "2026-03-13T07:41:01.556103",
+      "last_checked": "2026-03-17T07:43:17.090217",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"27b032bc291dff0d2baae320ee2931c2\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usercleartasksetrequest.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userlogicalunitresetrequest.json": {
       "hash": "2efb329bba00136a4d410da5786956f6f60ead5ff875e949a76dd4f8eb6b21fc",
-      "last_checked": "2026-03-13T07:41:01.685306",
+      "last_checked": "2026-03-17T07:43:17.242201",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"d772e2c8d8fca9b2f9a57e6221950659\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userlogicalunitresetrequest.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usertargetresetrequest.json": {
       "hash": "03299dfb57b79304714bcc9175ef200e546467513216fd5c3fca860793457d77",
-      "last_checked": "2026-03-13T07:41:01.807955",
+      "last_checked": "2026-03-17T07:43:17.373382",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"0b973a69e6d11fa575757eb2964603d0\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usertargetresetrequest.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userreportinitiatoridentifier.json": {
       "hash": "b2bbb6bb07f107e8600f5be60256ff84fc226b22af3c2bb37ec901b4d9a9f8bc",
-      "last_checked": "2026-03-13T07:41:02.021375",
+      "last_checked": "2026-03-17T07:43:17.523899",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"6f6033e2a52507a48ae267a108844be8\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userreportinitiatoridentifier.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userreporthighestsupporteddeviceid.json": {
       "hash": "bb06cadcc26dbe12ad9d15bd4641b72b1f5dab06c9f09b6ad664e7da8f4be866",
-      "last_checked": "2026-03-13T07:41:02.128105",
+      "last_checked": "2026-03-17T07:43:17.698745",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"dcd38a60d73fe56dab72f5ad253c46f7\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userreporthighestsupporteddeviceid.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userreportmaximumtaskcount.json": {
       "hash": "86b72b62436b07bcba4821babec58a08ee349e3f3d307b81dc3a55658e0e1ce0",
-      "last_checked": "2026-03-13T07:41:02.270076",
+      "last_checked": "2026-03-17T07:43:17.820414",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"e16f9c71f70b835ceedd475c55012af3\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userreportmaximumtaskcount.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userdoeshbaperformdevicemanagement.json": {
       "hash": "a93886b03baaa55ff92a1b1be1b8b4f703c4ffe27be20a27df715a0ae6735533",
-      "last_checked": "2026-03-13T07:41:02.385712",
+      "last_checked": "2026-03-17T07:43:18.027587",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"f4b5855bed4b1d216276d330e9496835\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userdoeshbaperformdevicemanagement.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userreporthbahighestlogicalunitnumber.json": {
       "hash": "6f5b54f4e848794a396ddaad93850e994c4d7a235dedbd7e4bacfe54674428b5",
-      "last_checked": "2026-03-13T07:41:02.503243",
+      "last_checked": "2026-03-17T07:43:18.201560",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"bac498f2d884b5c00270f589dd160ff2\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userreporthbahighestlogicalunitnumber.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userdoeshbaperformautosense.json": {
       "hash": "2b5171be49e91287a44bc9520e049501e58835e4c4edfa37187a7e2d19c1e344",
-      "last_checked": "2026-03-13T07:41:02.691201",
+      "last_checked": "2026-03-17T07:43:18.321606",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"2942ba75d4858bba96fdb20a177a3bb4\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userdoeshbaperformautosense.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userdoeshbasupportmultipathing.json": {
       "hash": "e02984a5af9d52fc47bfd17a9ab61c574cee98f8e5f8803b0d3e0b606d41ec13",
-      "last_checked": "2026-03-13T07:41:02.816635",
+      "last_checked": "2026-03-17T07:43:18.461516",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"2fe1def10bb27e9d7a0fd37a2750c61a\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userdoeshbasupportmultipathing.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.json": {
       "hash": "15d7519158321962b4ff35ec878c0a6d3bc8119dfb828e48bd1b97618b0741e6",
-      "last_checked": "2026-03-13T07:41:02.950614",
+      "last_checked": "2026-03-17T07:43:18.598708",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"9509e8415ce8317abd607ae110a3b5a5\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature.json": {
       "hash": "c8de8c03eb5c66bc53d4f4a727addd38817f39b7449855ab0d3dc8b7feae9bed",
-      "last_checked": "2026-03-13T07:41:03.064205",
+      "last_checked": "2026-03-17T07:43:18.715916",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"1785598d538d93d9c461c712d531f5cc\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usermaphbadata.json": {
       "hash": "80821c0f28a5e6a67e440d56b0a8aac2bf5de72ba5cd80486c325c0c7b50346f",
-      "last_checked": "2026-03-13T07:41:03.169263",
+      "last_checked": "2026-03-17T07:43:18.847911",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"ed93d8e7216c8add0c0a0a95550c8764\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usermaphbadata.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usersethbaproperties.json": {
       "hash": "0ffc67c23fb82444165963f52dd266934f0265a0ca5b5bde569e17a329ca0bb7",
-      "last_checked": "2026-03-13T07:41:03.301632",
+      "last_checked": "2026-03-17T07:43:18.975240",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"ba2b0af287721691a54f5c5c47513a58\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usersethbaproperties.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userremovehbaproperties.json": {
       "hash": "bf630fe692361c9df6580050d14187146d8c4d1a3ac4515863d5464eef2f8b45",
-      "last_checked": "2026-03-13T07:41:03.409098",
+      "last_checked": "2026-03-17T07:43:19.110849",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"3ca5aa7eb2ea961bf4f5a0e94968c08a\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userremovehbaproperties.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/userreporthbaconstraints.json": {
       "hash": "df7f9e7e68f418f3422a6f8a1c949b155b2479168ee15391e352b9eb5c97945a",
-      "last_checked": "2026-03-13T07:41:03.527790",
+      "last_checked": "2026-03-17T07:43:19.240930",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"80fb0592516e35e0f2bdec31c423827e\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/userreporthbaconstraints.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usergetdmaspecification.json": {
       "hash": "49673cfc1ed5781b3b308e0b8816b26f67e3131b95a51987f2f25e653e90db9d",
-      "last_checked": "2026-03-13T07:41:03.667207",
+      "last_checked": "2026-03-17T07:43:19.463003",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"f66253cb30d849c1449bfe4c90a416c1\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usergetdmaspecification.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype.json": {
       "hash": "4a6e3e35a91c65b800dfcd3b3b107fa84468398b8c2e2308bff758f06ae69235",
-      "last_checked": "2026-03-13T07:41:03.800866",
+      "last_checked": "2026-03-17T07:43:19.594207",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"b371764977580e0c5aeb0cbe833b247f\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/kioservicepowercapabilitypause.json": {
       "hash": "f99e380843e8b4d2b978eae0a7cd5c51c45048f824c6ccab34f9ad40f2212090",
-      "last_checked": "2026-03-13T07:41:03.914535",
+      "last_checked": "2026-03-17T07:43:19.724551",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"1464f4ce6edf1a5acd920aa5a72f6f3c\"",
       "file_path": "documentation/SCSIControllerDriverKit/kioservicepowercapabilitypause.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usercallmediaparametershavechanged.json": {
       "hash": "e6b5e3d705b994a9ebf4913da14cf52a9721241a386718cd68b4849586e266d5",
-      "last_checked": "2026-03-13T07:41:04.049799",
+      "last_checked": "2026-03-17T07:43:19.856786",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"d7b877efa70e44fb7829be43f959a95b\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usercallmediaparametershavechanged.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/iouserscsiparallelinterfacecontroller/usergetdatabuffer.json": {
       "hash": "1af75557a5361dc7b912ec7ca5cc63b81274edfc72cbf6324b2310e68be2f4f8",
-      "last_checked": "2026-03-13T07:41:04.171257",
+      "last_checked": "2026-03-17T07:43:19.990598",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"658905d3400e5b29d5311cc16c5d4c3f\"",
       "file_path": "documentation/SCSIControllerDriverKit/iouserscsiparallelinterfacecontroller/usergetdatabuffer.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/kiohierarchicallogicalunitsupportkey.json": {
       "hash": "c0950bd4ab626c6d94c15003fd7f2ac421b3b132774661335689f2fc51a7842f",
-      "last_checked": "2026-03-13T07:41:04.290261",
+      "last_checked": "2026-03-17T07:43:20.124796",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"0af742ca687a8de3028250dd594a579c\"",
       "file_path": "documentation/SCSIControllerDriverKit/kiohierarchicallogicalunitsupportkey.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/kiominimumhbadataalignmentmaskkey.json": {
       "hash": "9a0223518458702c1ebe8242b05c84569ad7781c7603b2800201bd54de06d2cc",
-      "last_checked": "2026-03-13T07:41:04.433303",
+      "last_checked": "2026-03-17T07:43:20.258232",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"49f6a5dc2bb33b65e17964a8e72a61ee\"",
       "file_path": "documentation/SCSIControllerDriverKit/kiominimumhbadataalignmentmaskkey.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/kmaxsensebuffersize.json": {
       "hash": "9783014143ec0560aa6a3c776348e8811b2ae13c68e6253ba26a6bec8d95b098",
-      "last_checked": "2026-03-13T07:41:04.541255",
+      "last_checked": "2026-03-17T07:43:20.389861",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"6cf2967e1e98c13afa5666abfe195ebb\"",
       "file_path": "documentation/SCSIControllerDriverKit/kmaxsensebuffersize.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/version.json": {
       "hash": "e1d49248eaea6edc6ae54584613c7a6a04a3309d0a78af03077b42dd7419a93c",
-      "last_checked": "2026-03-13T07:41:04.705462",
+      "last_checked": "2026-03-17T07:43:20.562171",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"e397e380349dbb329a6056396b94c204\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/version.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltaskversion.json": {
       "hash": "7432f95ec126bb68661ad5889d56293597e8b62db901d4928e7c995d78779c7f",
-      "last_checked": "2026-03-13T07:41:04.807525",
+      "last_checked": "2026-03-17T07:43:20.698892",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"a72893d983955e7ee19fa14f6248c1bc\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltaskversion.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/ftargetid.json": {
       "hash": "881179fa19d0a02f23d0658681a7acb35ef29857ce014e7c756e9a273884e4b9",
-      "last_checked": "2026-03-13T07:41:04.965765",
+      "last_checked": "2026-03-17T07:43:20.827423",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"fb4342048223b983184704d4c63045ea\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/ftargetid.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/fscsiparallelfeaturerequest.json": {
       "hash": "67bc87fe24c7698d1183136612ab9f881a028e95110c290164ea0ba5f0dc4e57",
-      "last_checked": "2026-03-13T07:41:05.083251",
+      "last_checked": "2026-03-17T07:43:20.959936",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"37980e39a13434344101349533d53473\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/fscsiparallelfeaturerequest.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeaturerequest.json": {
       "hash": "12b257b18b6ce14b04fdee9139aeaa51d2497cf630e663c331d9062b943e0741",
-      "last_checked": "2026-03-13T07:41:05.205993",
+      "last_checked": "2026-03-17T07:43:21.092718",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"b11cc2f909a5e5fb56aa6ba0e1d69516\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeaturerequest.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/fscsiparallelfeaturerequestcount.json": {
       "hash": "4d70998e3b5a8067efcd798bc5bf97825b7116b4f475b9af40f2d5150e06f6ca",
-      "last_checked": "2026-03-13T07:41:05.342816",
+      "last_checked": "2026-03-17T07:43:21.216147",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"8b82afe94145c0d72c9c39a65975abf9\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/fscsiparallelfeaturerequestcount.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/fcontrollertaskidentifier.json": {
       "hash": "0693b3a4a7b45cee5c74c0b44e644426718cbabc8f0e2421c281cb206857c624",
-      "last_checked": "2026-03-13T07:41:05.453794",
+      "last_checked": "2026-03-17T07:43:21.357790",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"14cddbad26ba612d2d64e45fa918d8ef\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/fcontrollertaskidentifier.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/frequestedtransfercount.json": {
       "hash": "4fa7e91f00d8f2ab78f529a51ce54de7768aa677418c1d54e031efd5279247d9",
-      "last_checked": "2026-03-13T07:41:05.572855",
+      "last_checked": "2026-03-17T07:43:21.484307",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"e93408648de02fa3f771b322ffdb3a25\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/frequestedtransfercount.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/fbufferiovmaddr.json": {
       "hash": "9251ea5c710b13536ce9f9196e1aa14a7e1cfc9b65b47f5bcdc7d72f86e07c3e",
-      "last_checked": "2026-03-13T07:41:05.700968",
+      "last_checked": "2026-03-17T07:43:21.606354",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"d486a404c6d0240022288bbb110a2510\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/fbufferiovmaddr.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/ftaskattribute.json": {
       "hash": "d76b21983e4a5e793951002da417fb304151f8f6bb3c21228974b88310719833",
-      "last_checked": "2026-03-13T07:41:05.859968",
+      "last_checked": "2026-03-17T07:43:21.730705",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"40715332773ca705f0c6290c5d9ba9f6\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/ftaskattribute.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/ftasktagidentifier.json": {
       "hash": "3e8860a83a8111092a3c658c89264d98cba5b001a94846651caf85ab510d97e1",
-      "last_checked": "2026-03-13T07:41:06.017207",
+      "last_checked": "2026-03-17T07:43:21.868022",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"f002ef185c8efb43029bb1ae7478cfd0\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/ftasktagidentifier.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/flogicalunitbytes.json": {
       "hash": "028960234e8b06189b8397f70df49caa599e3619a59333d34239a0d36d465291",
-      "last_checked": "2026-03-13T07:41:06.136637",
+      "last_checked": "2026-03-17T07:43:22.016069",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"4061547bf5f9fea8b278d31a91c17343\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/flogicalunitbytes.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/fcommanddescriptorblock.json": {
       "hash": "f0ae7bac88a7f614de310c52a06500e2190cedfdfd760e80357c8b6247938416",
-      "last_checked": "2026-03-13T07:41:06.238931",
+      "last_checked": "2026-03-17T07:43:22.144427",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"cab46d1d30b544e90371fb2b355c6724\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/fcommanddescriptorblock.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/fcommandsize.json": {
       "hash": "1d7952ff4b936d1614b73cd2cb4bfba9384c57b9d5b9d4bacd520b68242545af",
-      "last_checked": "2026-03-13T07:41:06.370017",
+      "last_checked": "2026-03-17T07:43:22.274641",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"716e15de6c2e306bdb65cee4e2e84e6e\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/fcommandsize.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/ftransferdirection.json": {
       "hash": "162f5e2833e3dbca58076cf40fc4c5a9f8918662b0cbe67e03a4b939bb31d769",
-      "last_checked": "2026-03-13T07:41:06.482754",
+      "last_checked": "2026-03-17T07:43:22.417586",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"6db549afa86e71f7b6b2ff8acec525c4\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/ftransferdirection.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/reserved.json": {
       "hash": "a635fe9083ebff8a9a78f2dde79bab3a5077f80a66e6c1e7a2c2c91a8b40b39a",
-      "last_checked": "2026-03-13T07:41:06.659316",
+      "last_checked": "2026-03-17T07:43:22.540533",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"a88959abac2d2a0847e9a1066b3244b6\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/reserved.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltask/ftimeoutinmillisec.json": {
       "hash": "f1c42233c5d5011aee33b972a4b2a9e2aa34a65dc2d843ce40ba681101f0a745",
-      "last_checked": "2026-03-13T07:41:06.813245",
+      "last_checked": "2026-03-17T07:43:22.681771",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"f85255823ffe17e15a02c66355d48ad4\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltask/ftimeoutinmillisec.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/version.json": {
       "hash": "12fbf4bf6cc5ab5715bb3023fc75808a74137ec2e0a07756357203711271d60c",
-      "last_checked": "2026-03-13T07:41:06.935300",
+      "last_checked": "2026-03-17T07:43:22.819115",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"511587b0e26fdf1c6c950f79f9ed9a92\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/version.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponseversion.json": {
       "hash": "1752b445237baa65ba606baf5baa26b16dbe37eedbc5d6bd428dd4b4699ca281",
-      "last_checked": "2026-03-13T07:41:07.067411",
+      "last_checked": "2026-03-17T07:43:22.973813",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"d5cd01dbb84c49e5c2e751745d82297e\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponseversion.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/ftargetid.json": {
       "hash": "eb767164424215f443b0515bc6139b07ce7a0c8ad0d0f3029532b1347fd3d514",
-      "last_checked": "2026-03-13T07:41:07.185291",
+      "last_checked": "2026-03-17T07:43:23.117798",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"2a4dd339902664fba1f68e322ca89c0c\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/ftargetid.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fscsiparallelfeatureresult.json": {
       "hash": "ef097e2b8d1da3bd04bac141d7ce61222730d06d2f9e70b78d994f0ad69f653c",
-      "last_checked": "2026-03-13T07:41:07.326491",
+      "last_checked": "2026-03-17T07:43:23.244916",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"b6f6e01414c76fd9e7b25259cfd2e1b4\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fscsiparallelfeatureresult.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeatureresult.json": {
       "hash": "e102f97d37595cc582aa8cb68db5045cec028cc2075c345a58f23ea643c52954",
-      "last_checked": "2026-03-13T07:41:07.453435",
+      "last_checked": "2026-03-17T07:43:23.385889",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"b9fc5e17606d3ac3a1c397d30d8edbe0\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeatureresult.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fscsiparallelfeaturerequestresultcount.json": {
       "hash": "0c408b0872453054c1659ed2e8ae5b5db623b213926ba34172324977672565d8",
-      "last_checked": "2026-03-13T07:41:07.563557",
+      "last_checked": "2026-03-17T07:43:23.510904",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"fb5c01237dd7b398344b98e787a8fdcf\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fscsiparallelfeaturerequestresultcount.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fcontrollertaskidentifier.json": {
       "hash": "e0f7ea44da436179162c279ddfb9cda5aa4331a8fe6946251e87d1de0f9b7b09",
-      "last_checked": "2026-03-13T07:41:07.703557",
+      "last_checked": "2026-03-17T07:43:23.641103",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"001603ef8a5a6fb4cd2a3cbf9ae80542\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fcontrollertaskidentifier.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fcompletionstatus.json": {
       "hash": "f898ee3e35bd9d0a85554006878310c4fbd554567c9d1e09a0cd06372ffcd97a",
-      "last_checked": "2026-03-13T07:41:07.818225",
+      "last_checked": "2026-03-17T07:43:23.759654",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"15178f65a3cd339ae207025b32803b7d\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fcompletionstatus.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fserviceresponse.json": {
       "hash": "c5b5cced57a3fb219046ba2fe1195f06d1513da3ec38b4d7366f89aa056d3b87",
-      "last_checked": "2026-03-13T07:41:07.940808",
+      "last_checked": "2026-03-17T07:43:23.886856",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"a7f4a53706e13dbf6188a911cc7ed4ac\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fserviceresponse.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fbytestransferred.json": {
       "hash": "f6bcb11d7c32d581e811aa1f618e0952397376da284844e58f0aa4f0f8e1e8ad",
-      "last_checked": "2026-03-13T07:41:08.053865",
+      "last_checked": "2026-03-17T07:43:24.021394",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"f694cf7549fd110b0c83fc029ae3372a\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fbytestransferred.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fsensebuffer.json": {
       "hash": "41873a775d9b846bcb228e8679954174d9b3b27045f74ec85f988c52aa4969bf",
-      "last_checked": "2026-03-13T07:41:08.182365",
+      "last_checked": "2026-03-17T07:43:24.174975",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"7078f08d10a06f61ae4049469681b2bf\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fsensebuffer.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/fsenselength.json": {
       "hash": "c9d260f84b77a461b2d69b9ab62f3aa4892756d199e7b18bcc172e0417c41cee",
-      "last_checked": "2026-03-13T07:41:08.299204",
+      "last_checked": "2026-03-17T07:43:24.301150",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"d92b84e39679db462b0d87ec9b22b679\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/fsenselength.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponse/reserved.json": {
       "hash": "048e9d1da6b30531d4f0140dafa892ec3b03ab32434606ea9bf8cd3bdda1cc62",
-      "last_checked": "2026-03-13T07:41:08.422303",
+      "last_checked": "2026-03-17T07:43:24.437866",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"722e8c3849690a97461e3bd282587d32\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponse/reserved.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature/kscsiparallelfeature_widedatatransfer.json": {
       "hash": "d6f74fdddab95164133c7dbc57c7c7331d44804d103e57a70a0e1ddf55594c8c",
-      "last_checked": "2026-03-13T07:41:08.564016",
+      "last_checked": "2026-03-17T07:43:24.565378",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"1e655094397fc984e9b1d4cdc8a421ef\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature/kscsiparallelfeature-widedatatransfer.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature/kscsiparallelfeature_synchronousdatatransfer.json": {
       "hash": "d070335c2d25126dd1c4576fc978e7fc638556a080470e060df3d1ffa3c2aa1c",
-      "last_checked": "2026-03-13T07:41:08.697151",
+      "last_checked": "2026-03-17T07:43:24.692519",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"cf630c48b73b9d966a40a9ac5dfa4497\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature/kscsiparallelfeature-synchronousdatatransfer.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature/kscsiparallelfeature_quickarbitrationandselection.json": {
       "hash": "677fe9d3f2706df031933c49a57423b588031001b851587c9d344b21480a90d0",
-      "last_checked": "2026-03-13T07:41:08.826206",
+      "last_checked": "2026-03-17T07:43:24.883888",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"8342b55ec3045d6ef99331670cc03fa3\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature/kscsiparallelfeature-quickarbitrationandselection.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature/kscsiparallelfeature_doubletransitiondatatransfers.json": {
       "hash": "4bc4fcb96eb1dc9321f7b24d0ea0cba4dde8e7db0fffe15ae90b84df193239a9",
-      "last_checked": "2026-03-13T07:41:08.969388",
+      "last_checked": "2026-03-17T07:43:25.031383",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"32c9d268c328e8fe955a2da4f2bbde4e\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature/kscsiparallelfeature-doubletransitiondatatransfers.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature/kscsiparallelfeature_informationunittransfers.json": {
       "hash": "9daa7cee9ba2a17d347567f74de647e06834611d68ad88a6f298526ebdffb21b",
-      "last_checked": "2026-03-13T07:41:09.087106",
+      "last_checked": "2026-03-17T07:43:25.157339",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"0d82474cd9c001a2c3b66a6d7228b36d\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature/kscsiparallelfeature-informationunittransfers.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeature/kscsiparallelfeature_totalfeaturecount.json": {
       "hash": "5804c47451cccf4a0a792ab740cd201f93afdc1aa3f4d198b03172991d1dfbfc",
-      "last_checked": "2026-03-13T07:41:09.254312",
+      "last_checked": "2026-03-17T07:43:25.328903",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"804dea1933067b53b927d473f8767221\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeature/kscsiparallelfeature-totalfeaturecount.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype/kdmaoutputsegmentbig32.json": {
       "hash": "1866400124696dca846cbcd1fd4a8559be691a4f0cce04e52622724479229393",
-      "last_checked": "2026-03-13T07:41:09.379348",
+      "last_checked": "2026-03-17T07:43:25.444093",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"32439119931482022214940f45ad2318\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype/kdmaoutputsegmentbig32.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype/kdmaoutputsegmentbig64.json": {
       "hash": "24a146cd4362de75dd17c131358f99212c510bbd00eeeb386d13b3e7aa20cd24",
-      "last_checked": "2026-03-13T07:41:09.528646",
+      "last_checked": "2026-03-17T07:43:25.576164",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"5d1e074b7e758b538ea381c0e76b99cb\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype/kdmaoutputsegmentbig64.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype/kdmaoutputsegmenthost32.json": {
       "hash": "898231d943642d4aa4b9b4f4a1694dd00bed476112fbcc6d8e415b69f4a76caa",
-      "last_checked": "2026-03-13T07:41:09.713210",
+      "last_checked": "2026-03-17T07:43:25.710932",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"2439d29d02e323615216353efdd3f434\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype/kdmaoutputsegmenthost32.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype/kdmaoutputsegmenthost64.json": {
       "hash": "6aaf75b0b49ac4498e38bb54d7feb153707963fff81fc1f644d1cf2bcf66606f",
-      "last_checked": "2026-03-13T07:41:09.888082",
+      "last_checked": "2026-03-17T07:43:25.832561",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"44cdfb36cfbc6a1a343a7ad90e381083\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype/kdmaoutputsegmenthost64.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype/kdmaoutputsegmentlittle32.json": {
       "hash": "470b3513f767ef1dfc2f05f416435272a18f124bcfb352a17462550c223da93e",
-      "last_checked": "2026-03-13T07:41:09.998420",
+      "last_checked": "2026-03-17T07:43:25.978449",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"fd7b898e86084e38267216e45ed2b999\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype/kdmaoutputsegmentlittle32.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/dmaoutputsegmenttype/kdmaoutputsegmentlittle64.json": {
       "hash": "1ad8ec110624506f99afa28264e7ea1ae5943d8927ea92cf26f9adaf895dbe58",
-      "last_checked": "2026-03-13T07:41:10.133286",
+      "last_checked": "2026-03-17T07:43:26.102866",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"fe8adf93d594f8968e6eeecf5925316e\"",
       "file_path": "documentation/SCSIControllerDriverKit/dmaoutputsegmenttype/kdmaoutputsegmentlittle64.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparalleltaskversion/kscsiuserparalleltaskcurrentversion1.json": {
       "hash": "d68bde3e92abf71de1a054fff77fdeba75300fddbe4b02c394a67897348565e3",
-      "last_checked": "2026-03-13T07:41:10.270333",
+      "last_checked": "2026-03-17T07:43:26.264501",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"7a59a7ab613d08e725babaa334256193\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparalleltaskversion/kscsiuserparalleltaskcurrentversion1.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeaturerequest/kscsiparallelfeature_nonegotiation.json": {
       "hash": "8f7528236422028c5921681b0cb05b734c6aade423941c8342cde67f048f89b3",
-      "last_checked": "2026-03-13T07:41:10.414096",
+      "last_checked": "2026-03-17T07:43:26.439638",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"3e239577d7f04a9f7d55e34c5cb482c6\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeaturerequest/kscsiparallelfeature-nonegotiation.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeaturerequest/kscsiparallelfeature_attemptnegotiation.json": {
       "hash": "a6726d3d89d7754372a3ff709f1d86fdda34c9f7c7e1a0d24d59044939934041",
-      "last_checked": "2026-03-13T07:41:10.526827",
+      "last_checked": "2026-03-17T07:43:26.638820",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"8f9ca3534142956d2d2879b9b6e63a89\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeaturerequest/kscsiparallelfeature-attemptnegotiation.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeaturerequest/kscsiparallelfeature_clearnegotiation.json": {
       "hash": "507f62c9db7adc6e2e058ba22c7a4e57a4bba115ee661abdb2a7db44354affd9",
-      "last_checked": "2026-03-13T07:41:10.661767",
+      "last_checked": "2026-03-17T07:43:26.786587",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"ac578e26b562bb6e2d5df88e4b28272e\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeaturerequest/kscsiparallelfeature-clearnegotiation.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiuserparallelresponseversion/kscsiuserparalleltaskresponsecurrentversion1.json": {
       "hash": "95b04e18039c1c28d767bbcb8eb996827ab71112593e203d854aaa0f3881b878",
-      "last_checked": "2026-03-13T07:41:10.787379",
+      "last_checked": "2026-03-17T07:43:26.906945",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"e8043929ad059777b8835047768a9800\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiuserparallelresponseversion/kscsiuserparalleltaskresponsecurrentversion1.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeatureresult/kscsiparallelfeature_negotitiationsuccess.json": {
       "hash": "04345ad2df2e3a3de008daad10c1e960a2f787a6c3137895c6c655977c2e4ae0",
-      "last_checked": "2026-03-13T07:41:10.929476",
+      "last_checked": "2026-03-17T07:43:27.035285",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"26cdf169075cbc00969243d9729731cc\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeatureresult/kscsiparallelfeature-negotitiationsuccess.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeatureresult/kscsiparallelfeature_negotitiationcleared.json": {
       "hash": "b3daa231979af74786cf888ef4963ee228b35033698ab46bb1aa2f4e97524d5f",
-      "last_checked": "2026-03-13T07:41:11.066349",
+      "last_checked": "2026-03-17T07:43:27.166491",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"04e3fa00668c5be6c689127f3695f2da\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeatureresult/kscsiparallelfeature-negotitiationcleared.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsicontrollerdriverkit/scsiparallelfeatureresult/kscsiparallelfeature_negotitiationunchanged.json": {
       "hash": "77c71961f657b763dc4e048c0fe05216ada4e01ffce3df8c6fb60f604845ba6c",
-      "last_checked": "2026-03-13T07:41:11.202920",
+      "last_checked": "2026-03-17T07:43:27.314454",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:40:57.889641",
+      "session_id": "2026-03-17T07:43:13.473932",
       "etag": "W/\"52ef91c6ed81bbe6baec0d8a0129bb2a\"",
       "file_path": "documentation/SCSIControllerDriverKit/scsiparallelfeatureresult/kscsiparallelfeature-negotitiationunchanged.md"
     },

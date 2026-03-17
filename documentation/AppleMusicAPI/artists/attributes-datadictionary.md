@@ -19,6 +19,7 @@ object Artists.Attributes
 - `artwork` (Artwork): The artwork for the artist image.
 - `editorialNotes` (EditorialNotes): The notes about the artist that appear in the Apple Music catalog.
 - `genreNames` ([string]) *(required)*: The names of the genres associated with this artist.
+- `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
 - `name` (string) *(required)*: The localized name of the artist.
 - `url` (string) *(required)*: The URL for sharing the artist in Apple Music.
 

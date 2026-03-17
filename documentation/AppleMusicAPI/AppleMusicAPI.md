@@ -69,6 +69,12 @@ Use this API to retrieve information about albums, songs, artists, playlists, mu
   Get information about the person who curated a playlist or station.
 - [Record Labels](record-labels-api.md)
   Get information on record labels in the Apple Music Catalog.
+### Adding a resource to favorites
+- [Add resource to favorites](add-resource-to-favorites.md)
+  Add the user’s resource to favorites.
+### Getting a user’s replay data
+- [Get the user's replay data](get-the-user's-replay-data.md)
+  Fetch the user’s replay data for the latest eligible year.
 ### Recommendations and history
 - [Recommendations](recommendations.md)
   Get music recommendations based on the user’s library and purchase history.
@@ -84,6 +90,10 @@ Use this API to retrieve information about albums, songs, artists, playlists, mu
 - [Get a User's Storefront](get-a-user's-storefront.md)
   Fetch a storefront for a specific user.
 ### Dictionaries
+- [object AlbumPeriodSummaries](albumperiodsummaries.md)
+  The album for the period summary.
+- [object ArtistPeriodSummaries](artistperiodsummaries.md)
+  The artist for the period summary.
 - [object Artwork](artwork.md)
   An object that represents artwork.
 - [object DescriptionAttribute](descriptionattribute.md)
@@ -92,6 +102,9 @@ Use this API to retrieve information about albums, songs, artists, playlists, mu
   An object that represents a notes attribute.
 - [object LangageTagResponse](langagetagresponse.md)
   The response to a language tag request.
+- [object MusicSummaries](musicsummaries.md)
+  The music for the period summary.
+- [object MusicSummariesResponse](musicsummariesresponse.md)
 - [object PaginatedResourceCollectionResponse](paginatedresourcecollectionresponse.md)
   A response object composed of paginated resource objects for the request.
 - [object PlayParameters](playparameters.md)
@@ -102,6 +115,8 @@ Use this API to retrieve information about albums, songs, artists, playlists, mu
   The response for a direct resource relationship fetch.
 - [object RelationshipViewResponse](relationshipviewresponse.md)
   The response for a direct resource view fetch.
+- [object SongPeriodSummaries](songperiodsummaries.md)
+  The song for the period summary.
 - [object StorefrontsResponse](storefrontsresponse.md)
   The response to a storefront request.
 - [object View](view.md)

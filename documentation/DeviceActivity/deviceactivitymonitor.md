@@ -44,7 +44,7 @@ class MyMonitorExtension: DeviceActivityMonitor {
 
 ### Configuring a Monitor
 - [init()](deviceactivitymonitor/init.md)
-  Creates a new monitor implemented by subclasses.
+  Creates a new monitor instance implemented by subclasses.
 ### Monitoring Scheduled Intervals
 - [func intervalDidEnd(for: DeviceActivityName)](deviceactivitymonitor/intervaldidend(for:).md)
   Indicates that the device activity interval ended.

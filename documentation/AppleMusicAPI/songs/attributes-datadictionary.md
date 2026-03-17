@@ -29,6 +29,7 @@ object Songs.Attributes
 - `editorialNotes` (EditorialNotes): The notes about the song that appear in the Apple Music catalog.
 - `genreNames` ([string]) *(required)*: The genre names the song is associated with.
 - `hasLyrics` (boolean) *(required)*: Indicates whether the song has lyrics available in the Apple Music catalog. If `true`, the song has lyrics available; otherwise, it doesn’t.
+- `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
 - `isAppleDigitalMaster` (boolean) *(required)*: Indicates whether the response delivered the song as an [`Apple Digital Master`](https://developer.apple.comhttps://www.apple.com/apple-music/apple-digital-masters/).
 - `isrc` (string): The International Standard Recording Code (ISRC) for the song.
 - `movementCount` (integer): (Classical music only) The movement count of the song.

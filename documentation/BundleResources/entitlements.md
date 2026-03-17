@@ -157,6 +157,8 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Family controls
 - [Family Controls](entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
+- [Family Controls App and Website Usage](entitlements/com.apple.developer.family-controls.app-and-website-usage.md)
+  A Boolean value that indicates whether the app may, with the person’s permission, access app and website usage information from the current device.
 ### File provider
 - [com.apple.developer.fileprovider.testing-mode](entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.

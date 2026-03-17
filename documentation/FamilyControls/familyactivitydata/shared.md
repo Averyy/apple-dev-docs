@@ -3,7 +3,7 @@
 **Framework**: Family Controls  
 **Kind**: property
 
-The shared Family Activity Data instance.
+A shared instance for accessing a person’s family activity data.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -14,6 +14,15 @@ The shared Family Activity Data instance.
 ```swift
 static let shared: FamilyActivityData
 ```
+
+## See Also
+
+- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+  The set of all possible activity categories.
+- [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
+  Applications someone installs on a device.
+- [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
+  Web domains someone visits on their device.
 
 
 ---

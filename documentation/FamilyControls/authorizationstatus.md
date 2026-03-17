@@ -21,15 +21,14 @@ enum AuthorizationStatus
 - [AuthorizationStatus.notDetermined](authorizationstatus/notdetermined.md)
   The app hasn’t requested authorization.
 - [AuthorizationStatus.denied](authorizationstatus/denied.md)
-  The user, parent, or guardian denied the request for authorization.
+  The person, parent, or guardian denied the request for authorization.
 - [AuthorizationStatus.approved](authorizationstatus/approved.md)
-  The user, parent, or guardian approved the request for authorization.
+  The person, parent, or guardian approved the request for authorization.
+- [AuthorizationStatus.approvedWithDataAccess](authorizationstatus/approvedwithdataaccess.md)
+  The person, parent, or guardian approved the request for authorization with access to non-tokenized family activity data.
 ### Debugging
 - [var description: String](authorizationstatus/description.md)
   A nonlocalized description of the authorization value, suitable for debugging.
-### Enumeration Cases
-- [AuthorizationStatus.approvedWithDataAccess](authorizationstatus/approvedwithdataaccess.md)
-  The user, parent, or guardian approved the request for authorization with data access.
 
 ## Relationships
 

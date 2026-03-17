@@ -48,12 +48,12 @@ In a compatible iPad or iPhone app running in visionOS, authorization attempts a
 ### Activity labels
 - [Displaying Activity Labels](displayingactivitylabels.md)
   Provide users with a read-only, visual representation of an application, category, or web domain.
+### Activity data
+- [class FamilyActivityData](familyactivitydata.md)
+  An interface to a person’s family activity data.
 ### Errors
 - [enum FamilyControlsError](familycontrolserror.md)
   Errors the Family Controls framework reports.
-### Classes
-- [class FamilyActivityData](familyactivitydata.md)
-  An interface to the user’s family activity data.
 
 
 ---

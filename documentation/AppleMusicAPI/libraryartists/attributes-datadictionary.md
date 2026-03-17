@@ -16,6 +16,7 @@ object LibraryArtists.Attributes
 
 ## Properties
 
+- `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
 - `name` (string) *(required)*: The artist’s name.
 
 ## See Also

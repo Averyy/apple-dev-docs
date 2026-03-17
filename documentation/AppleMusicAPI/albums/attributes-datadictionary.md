@@ -24,6 +24,7 @@ object Albums.Attributes
 - `copyright` (string): The copyright text.
 - `editorialNotes` (EditorialNotes): The notes about the album that appear in the iTunes Store.
 - `genreNames` ([string]) *(required)*: The names of the genres associated with the album.
+- `inFavorites` (boolean)
 - `isCompilation` (boolean) *(required)*: Indicates whether the album is marked as a compilation. If `true`, the album is a compilation; otherwise, it’s not.
 - `isComplete` (boolean) *(required)*: Indicates whether the album is complete. If `true`, the album is complete; otherwise, it’s not. An album is complete if it contains all its tracks and songs.
 - `isMasteredForItunes` (boolean) *(required)*: Indicates whether the response delivered the album as an [`Apple Digital Master`](https://developer.apple.comhttps://www.apple.com/itunes/mastered-for-itunes/).

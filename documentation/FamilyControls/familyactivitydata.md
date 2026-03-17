@@ -3,7 +3,7 @@
 **Framework**: Family Controls  
 **Kind**: class
 
-An interface to the user’s family activity data.
+An interface to a person’s family activity data.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -17,22 +17,27 @@ class FamilyActivityData
 
 #### Overview
 
-To fetch a user’s family activity data, use [`installedApplications`](familyactivitydata/installedapplications.md), [`visitedWebDomains`](familyactivitydata/visitedwebdomains.md) or [`activityCategories`](familyactivitydata/activitycategories.md) based on the type of data you’re interested in.
+To fetch a person’s family activity data, use [`installedApplications`](FamilyActivityData/installedApplications.md), [`visitedWebDomains`](FamilyActivityData/visitedWebDomains.md), or [`activityCategories`](FamilyActivityData/activityCategories.md) based on the type of data you need.
 
-> ❗ **Important**: You must add the Family Controls App & Website Usage capability to your app before you attempt to access variables on this class. This capability adds the doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_family-controls_app-and-website-usage to your app. In a compatible iPad or iPhone app running in visionOS or macOS, attempts to fetch user data always fail. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). Additionally, your app must be authorized with data access via [`AuthorizationCenter`](authorizationcenter.md) before attempting to fetch data. If your app is not authorized with data access, the attempt will always fail.
+##### Region Support Authorization and Entitlement
+
+You can develop and test an app that uses this class on devices in any region. Customer installations of your app can only use the class on devices located in the EU that are signed in with an Apple Account with an EU country or region.
+
+Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](AuthorizationStatus/approvedWithDataAccess.md) to use this class.
+
+Your app needs the  doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage entitlement to use this class. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 ## Topics
 
-### Instance Properties
+### Accessing activity data
+- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+  A shared instance for accessing a person’s family activity data.
 - [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
   The set of all possible activity categories.
 - [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
-  An array of applications installed by the current user.
+  Applications someone installs on a device.
 - [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
-  An array of web domains visited by the current user.
-### Type Properties
-- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
-  The shared Family Activity Data instance.
+  Web domains someone visits on their device.
 
 
 ---

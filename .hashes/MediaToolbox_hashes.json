@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T07:41:47.417670",
+    "last_updated": "2026-03-17T07:43:56.293557",
     "total_pages": 74,
-    "session_id": "2026-03-13T07:41:42.330039"
+    "session_id": "2026-03-17T07:43:50.982835"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MediaToolbox.json": {
       "hash": "cbcfd6516064aeb0c8d384f2f7df2036d34c085d1136e2f7b0c77186bdaca36f",
-      "last_checked": "2026-03-13T07:41:42.686717",
+      "last_checked": "2026-03-17T07:43:51.255809",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"7c17ac50d9e28904d6ded5192f78cf7c\"",
       "file_path": "documentation/MediaToolbox/MediaToolbox.md"
     },
     "https://developer.apple.com/documentation/MediaToolbox": {
       "hash": "cbcfd6516064aeb0c8d384f2f7df2036d34c085d1136e2f7b0c77186bdaca36f",
-      "last_checked": "2026-03-13T07:41:42.596922",
+      "last_checked": "2026-03-17T07:43:51.144217",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"7c17ac50d9e28904d6ded5192f78cf7c\"",
       "file_path": "documentation/MediaToolbox/MediaToolbox.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtregisterprofessionalvideoworkflowformatreaders().json": {
       "hash": "5f0c7119d815825c945db683d8428d489899e58fb437b418ff4e63abf625efa6",
-      "last_checked": "2026-03-13T07:41:43.004820",
+      "last_checked": "2026-03-17T07:43:51.477413",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"f5967a221db8ec9b0ccc3b255ed24d80\"",
       "file_path": "documentation/MediaToolbox/mtregisterprofessionalvideoworkflowformatreaders.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcreate(_:_:_:_:).json": {
       "hash": "2248c856451721300220ba1dce774a7c513c2d8e3aeca28eec3041ff19a1d17a",
-      "last_checked": "2026-03-13T07:41:43.295301",
+      "last_checked": "2026-03-17T07:43:51.602727",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"fb05a07faa644d316042ad5e2131b58c\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcreate.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapgetsourceaudio(_:_:_:_:_:_:).json": {
       "hash": "2317f7211737533a2a211c3a735133f2e3d2ad2f86286b7eabd0f1d369c88ba3",
-      "last_checked": "2026-03-13T07:41:43.437454",
+      "last_checked": "2026-03-17T07:43:51.819988",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"63258cf5f6f7fe1d2c922d74dc3a1aec\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapgetsourceaudio.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapgetstorage(_:).json": {
       "hash": "3993d488bd1d1467f84d43b9af9899197e4caccd2d78c9506f9e180fc3591d8f",
-      "last_checked": "2026-03-13T07:41:43.609410",
+      "last_checked": "2026-03-17T07:43:51.950013",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"95c0ac018d6cb644370f296ea10deb83\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapgetstorage.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapgettypeid().json": {
       "hash": "7194596aa9235a61b8733873e98bec4ff0f7140da1f57ff738af75a3db1128e8",
-      "last_checked": "2026-03-13T07:41:43.738233",
+      "last_checked": "2026-03-17T07:43:52.121028",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"effc64d13a6877786e59489521ea82eb\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapgettypeid.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapflags.json": {
       "hash": "1bd656aad2acaed4a3c9038f98c96391bd92e4f8a3d0f43508d3a2c8b44119c6",
-      "last_checked": "2026-03-13T07:41:43.916458",
+      "last_checked": "2026-03-17T07:43:52.253356",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"598f3df0b5e0603df746a2854adc994b\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapflags.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtap.json": {
       "hash": "8100a06ae9fb8aafbf134c01b7d93839eab7958e3c52b4e5152f433869f70276",
-      "last_checked": "2026-03-13T07:41:44.050801",
+      "last_checked": "2026-03-17T07:43:52.461203",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"94f7b6a8dd26519bc87c5b7b8f71a14d\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtap.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtcopylocalizednameformediatype(_:).json": {
       "hash": "383e96ddd33c85e40e9c18fd5ad29dc0c93760307d165cb35f789ca639c95562",
-      "last_checked": "2026-03-13T07:41:44.218128",
+      "last_checked": "2026-03-17T07:43:52.584410",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"cc57ae38c46b181812b93c87c7e23538\"",
       "file_path": "documentation/MediaToolbox/mtcopylocalizednameformediatype.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtcopylocalizednameformediasubtype(_:_:).json": {
       "hash": "1ba9e202cb9b1e4c3bc78bd13323a42eb49b54849b9f5d4fe85ae77017f6ff6c",
-      "last_checked": "2026-03-13T07:41:44.372449",
+      "last_checked": "2026-03-17T07:43:52.704003",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"9c8159414c85e615f56db86778c4cf6e\"",
       "file_path": "documentation/MediaToolbox/mtcopylocalizednameformediasubtype.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/anonymous-enums.json": {
       "hash": "877df7185fee6b9c940304e8741bcfb59cbecaf6dea005e79270c095203c3aca",
-      "last_checked": "2026-03-13T07:41:44.505224",
+      "last_checked": "2026-03-17T07:43:52.988893",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"6d40029dae3d3f660fe730e8922b17a0\"",
       "file_path": "documentation/MediaToolbox/anonymous-enums.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcreationflags.json": {
       "hash": "755312e5c069226ce4cb296922a7196a5c264947cf4ea61b918df65fd706a708",
-      "last_checked": "2026-03-13T07:41:44.664080",
+      "last_checked": "2026-03-17T07:43:53.294693",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"0a070125b378665b3c561e8b60997a21\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcreationflags.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks.json": {
       "hash": "9872c59fec50cea1bd589fa071aab39cd1b0f2f496a291ffb49a0215ca5eecd9",
-      "last_checked": "2026-03-13T07:41:44.786207",
+      "last_checked": "2026-03-17T07:43:53.456748",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"50f9c1ac9ede254e9485a5d6b6737583\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/kmtaudioprocessingtapflag_endofstream.json": {
       "hash": "2520dffc67abcf6527ba54bbda54d794288a55a006f2ed27ce011a6d0527244e",
-      "last_checked": "2026-03-13T07:41:44.959304",
+      "last_checked": "2026-03-17T07:43:53.577909",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"6794ed3f4c2e84f80ea2b34162d49729\"",
       "file_path": "documentation/MediaToolbox/kmtaudioprocessingtapflag-endofstream.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/kmtaudioprocessingtapflag_startofstream.json": {
       "hash": "0ec759c7d6004e02bd2394338cdae5288342b24a9a0bf91bd7afcec6b4c9ccb5",
-      "last_checked": "2026-03-13T07:41:45.124365",
+      "last_checked": "2026-03-17T07:43:53.874250",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"8ab75c7a96a9fbe7cec3fedcb247d2fd\"",
       "file_path": "documentation/MediaToolbox/kmtaudioprocessingtapflag-startofstream.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/kmtaudioprocessingtapcreationflag_preeffects.json": {
       "hash": "5e7f920cab032ba023bbec2c14a6624678ba851bb46770cfd9820a8d076cdbd3",
-      "last_checked": "2026-03-13T07:41:45.251353",
+      "last_checked": "2026-03-17T07:43:54.004843",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"c4e0d2648eaacbb78508376503ddf53f\"",
       "file_path": "documentation/MediaToolbox/kmtaudioprocessingtapcreationflag-preeffects.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/kmtaudioprocessingtapcreationflag_posteffects.json": {
       "hash": "fa3e611a8532439dba1ea5b2aad96c86d62786ce1a2384f1fae04bf68a996155",
-      "last_checked": "2026-03-13T07:41:45.376343",
+      "last_checked": "2026-03-17T07:43:54.141339",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"d9c21b435baba0dc6260602a46c90481\"",
       "file_path": "documentation/MediaToolbox/kmtaudioprocessingtapcreationflag-posteffects.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/version.json": {
       "hash": "55a3a6078b60e0cc3758a0c489b6a74c4996de6ae46302aca38ee250eb966c04",
-      "last_checked": "2026-03-13T07:41:45.487501",
+      "last_checked": "2026-03-17T07:43:54.275251",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"ae3206d510d3b2badc1f69b2c46ec2ca\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/version.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/clientinfo.json": {
       "hash": "1b84287e2d28075ab31aa921b34b89d37d33d21bf68ba478541a6e02c0457cef",
-      "last_checked": "2026-03-13T07:41:45.674438",
+      "last_checked": "2026-03-17T07:43:54.404127",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"77d14cbcab243fd62e68c6c219c2ee9e\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/clientinfo.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/init.json": {
       "hash": "d6ffa1ead2208a8946c246aedcc3b4d115f268a4801d1c0d8a872958eed2b25c",
-      "last_checked": "2026-03-13T07:41:45.817879",
+      "last_checked": "2026-03-17T07:43:54.577107",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"0fbaf7693757c1e015b8eaeee6a47116\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/init.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/finalize.json": {
       "hash": "3283e000e552cb7d0b59ffa4c6a06b90c18f82b1c6379649b3d289b9bfe3de4a",
-      "last_checked": "2026-03-13T07:41:45.983103",
+      "last_checked": "2026-03-17T07:43:54.756365",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"37e45c82eb3343b03dfb23ef0339bb06\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/finalize.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/prepare.json": {
       "hash": "c2a8c3c3197d151b6925967d9ca74571a9aa55827b0dfd79bb730e8d5acc4f38",
-      "last_checked": "2026-03-13T07:41:46.142573",
+      "last_checked": "2026-03-17T07:43:54.900036",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"64af94f5204b17e1f83c7f6a52c87364\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/prepare.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/unprepare.json": {
       "hash": "fe49e675f08f50083f58e851ea078db2f2a75f434a3a67874ff85272b3f0cac6",
-      "last_checked": "2026-03-13T07:41:46.298501",
+      "last_checked": "2026-03-17T07:43:55.061512",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"4d30a3a2149be6d71a15973815d1cadf\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/unprepare.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/process.json": {
       "hash": "915e529397de35e48cc2237f8f864c4a2da4a62e5a80236b01e6af2e4b532ec1",
-      "last_checked": "2026-03-13T07:41:46.440426",
+      "last_checked": "2026-03-17T07:43:55.190503",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"a84c14c8f8fa14939a588a0a90841a65\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/process.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapinitcallback.json": {
       "hash": "409695fd4aa7c1fb3d6b04eb5873298faccc1664f9663187347e0cbd83f60b52",
-      "last_checked": "2026-03-13T07:41:46.568982",
+      "last_checked": "2026-03-17T07:43:55.364121",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"125781743be12dc6c1722b5c70f4d179\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapinitcallback.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtappreparecallback.json": {
       "hash": "aa45aeef6746724855f9b10f536093d297d448a3e708ced4c5d5f5439a634236",
-      "last_checked": "2026-03-13T07:41:46.678739",
+      "last_checked": "2026-03-17T07:43:55.499735",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"b272e7ad575a2d2dc862951e3c8da746\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtappreparecallback.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapprocesscallback.json": {
       "hash": "981e903d43e30963c43f40bb7c06b6abdeff0063ef4e587b3a8405737f8875c1",
-      "last_checked": "2026-03-13T07:41:46.832235",
+      "last_checked": "2026-03-17T07:43:55.679172",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"f9efdb963bc4279a3d8ad4836b7656bd\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapprocesscallback.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapunpreparecallback.json": {
       "hash": "695d0ea1bec7f7a20dc2b522490d17d83ff28ca86ea95be3fb6c7a6c73088c64",
-      "last_checked": "2026-03-13T07:41:46.986831",
+      "last_checked": "2026-03-17T07:43:55.819478",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"34f07ded7cf75f221b82d43341b868ab\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapunpreparecallback.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapfinalizecallback.json": {
       "hash": "8d0017fe7276a54eb885615b14031d413a3e8c804facdfe4d85482563e2b57f0",
-      "last_checked": "2026-03-13T07:41:47.111003",
+      "last_checked": "2026-03-17T07:43:55.948508",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"738bb3c6fc2aa209420ce8307f3d75b9\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapfinalizecallback.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/kmtaudioprocessingtapcallbacksversion_0.json": {
       "hash": "6a158c2abf8c8c255bb5953aae38185ba0bf1c4cbc0b9a5eb673b17a4614b830",
-      "last_checked": "2026-03-13T07:41:47.272859",
+      "last_checked": "2026-03-17T07:43:56.160205",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"181dcbb94ffe5082e75fbb00923578a9\"",
       "file_path": "documentation/MediaToolbox/kmtaudioprocessingtapcallbacksversion-0.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediatoolbox/mtaudioprocessingtapcallbacks/init(version:clientinfo:init:finalize:prepare:unprepare:process:).json": {
       "hash": "246f60843dcb739afd88c6e958dc90db3140a38e3290b1b8e3b2f2cf9ce81c80",
-      "last_checked": "2026-03-13T07:41:47.412788",
+      "last_checked": "2026-03-17T07:43:56.276309",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:42.330039",
+      "session_id": "2026-03-17T07:43:50.982835",
       "etag": "W/\"74d8b14e1445264ecf502a71fb4c527c\"",
       "file_path": "documentation/MediaToolbox/mtaudioprocessingtapcallbacks/init-versionclientinfoinitfinalizeprepareunprepareprocess.md"
     },

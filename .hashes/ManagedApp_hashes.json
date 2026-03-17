@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T07:41:35.577379",
+    "last_updated": "2026-03-17T07:43:46.970982",
     "total_pages": 112,
-    "session_id": "2026-03-13T07:41:28.021623"
+    "session_id": "2026-03-17T07:43:40.577784"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ManagedApp.json": {
       "hash": "bfac4c8f24df81fe9664dfbad617dda21893752f41bfb9a5a3f3995296bfbd5f",
-      "last_checked": "2026-03-13T07:41:28.400178",
+      "last_checked": "2026-03-17T07:43:40.840845",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"03ff18c83ed97c8f8d058acb869daab1\"",
       "file_path": "documentation/ManagedApp/ManagedApp.md"
     },
     "https://developer.apple.com/documentation/ManagedApp": {
       "hash": "bfac4c8f24df81fe9664dfbad617dda21893752f41bfb9a5a3f3995296bfbd5f",
-      "last_checked": "2026-03-13T07:41:28.298291",
+      "last_checked": "2026-03-17T07:43:40.752069",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"03ff18c83ed97c8f8d058acb869daab1\"",
       "file_path": "documentation/ManagedApp/ManagedApp.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/specifying-and-decoding-a-configuration.json": {
       "hash": "fe60c4b6dc7c8a6b36f857c60e739c29aaf2f467fe10e31cffd0e13b0ccef933",
-      "last_checked": "2026-03-13T07:41:28.817074",
+      "last_checked": "2026-03-17T07:43:41.046596",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"a2e3345d465627c46ef12338fbb9828e\"",
       "file_path": "documentation/ManagedApp/specifying-and-decoding-a-configuration.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationprovider.json": {
       "hash": "170b10785e3f6ad02547ea4deafa0d2c50f61b79a4073cfcbe3852bb0cbc700c",
-      "last_checked": "2026-03-13T07:41:28.992619",
+      "last_checked": "2026-03-17T07:43:41.185698",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"8e7d695b33ee5546e6472bb9765cfd15\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationprovider.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/accessing-provisioned-secrets-with-identifiers.json": {
       "hash": "0475d21478cfd514038a7465f4a70bdd8807a3d528d3bc9bc8f5abaf76202d88",
-      "last_checked": "2026-03-13T07:41:29.158607",
+      "last_checked": "2026-03-17T07:43:41.318158",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"3935a89ad64b523bcab7892e5350a14f\"",
       "file_path": "documentation/ManagedApp/accessing-provisioned-secrets-with-identifiers.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider.json": {
       "hash": "d3a178768c10336f82e90622d2b9c287253014e26188361630370232db03e03d",
-      "last_checked": "2026-03-13T07:41:29.421146",
+      "last_checked": "2026-03-17T07:43:41.456121",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"d1855653b5689529b230cde2d6088ad1\"",
       "file_path": "documentation/ManagedApp/managedappcertificatesprovider.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider.json": {
       "hash": "e5b99d71ede2155839da2db4eb2820a22a09ac282b12dd3882313ab21ff0f9a5",
-      "last_checked": "2026-03-13T07:41:29.582575",
+      "last_checked": "2026-03-17T07:43:41.579462",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"b4c275918bdc802124e6b5fd7d7b11e3\"",
       "file_path": "documentation/ManagedApp/managedappidentitiesprovider.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider.json": {
       "hash": "08075429194f9bdf5bb054ce0e5ed88098ed5ec26b15dde9cca6cdcb5e981926",
-      "last_checked": "2026-03-13T07:41:29.865365",
+      "last_checked": "2026-03-17T07:43:41.747884",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"c040b1c91b8b724ad1713795955f7134\"",
       "file_path": "documentation/ManagedApp/managedapppasswordsprovider.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror.json": {
       "hash": "865ca8e4f0c75ef3aecb11addbdeee95655195424f13e562ab6a9d66e7a40fa7",
-      "last_checked": "2026-03-13T07:41:30.181425",
+      "last_checked": "2026-03-17T07:43:42.063488",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"05b8ac6a2972fc20885a37d92ae54570\"",
       "file_path": "documentation/ManagedApp/managedapperror.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerror.json": {
       "hash": "237ba88978a7a9c1bd8f16000415d3b5e9654613fbb8e3d62b019127f118fc9d",
-      "last_checked": "2026-03-13T07:41:30.341818",
+      "last_checked": "2026-03-17T07:43:42.236936",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"4c38454f13a9ee049b919c34c66e1e3d\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerror.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode.json": {
       "hash": "6e5d249867a3407e4e137703f735350b18082de79ed5a4f3e4730c68f4db2e55",
-      "last_checked": "2026-03-13T07:41:30.642839",
+      "last_checked": "2026-03-17T07:43:42.551669",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"7b42af975319120718d01261f255691d\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationprovider/init().json": {
       "hash": "dccb85d2e72729db4a5e4b5fafdcbf963c87ffe53374316101a51abcba9cdba8",
-      "last_checked": "2026-03-13T07:41:30.800074",
+      "last_checked": "2026-03-17T07:43:42.728918",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"f6594e9783e3f9e64c41a1e7c1c2b856\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationprovider/init.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationprovider/configurations(_:).json": {
       "hash": "b8b281384ff79eee28219e2b5759dd40ebc86307206b64f50fae711714af1d19",
-      "last_checked": "2026-03-13T07:41:31.088520",
+      "last_checked": "2026-03-17T07:43:42.927190",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"b61822cb34716a70f6808ca66d058083\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationprovider/configurations.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider/init().json": {
       "hash": "63b3cb18dc84de7b17a634c92ec254a9ad8ea7d2f27147ff9e5455087bbb57bf",
-      "last_checked": "2026-03-13T07:41:31.251492",
+      "last_checked": "2026-03-17T07:43:43.070044",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"155459658b8016ab73e66db4d9951cee\"",
       "file_path": "documentation/ManagedApp/managedappcertificatesprovider/init.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider/identifiers.json": {
       "hash": "f58a4791088fc5afe2fbba46d9ac008e4892fac04585a972351cef0108b96a0d",
-      "last_checked": "2026-03-13T07:41:31.395961",
+      "last_checked": "2026-03-17T07:43:43.204710",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"bdd6247f19b0cf3f147d5b955a0cdb17\"",
       "file_path": "documentation/ManagedApp/managedappcertificatesprovider/identifiers.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider/certificate(withidentifier:).json": {
       "hash": "e02b30edfb2ccb66f992878e9630de68f1641bd3f5662deaf8b0cef57f784fe8",
-      "last_checked": "2026-03-13T07:41:31.568341",
+      "last_checked": "2026-03-17T07:43:43.367707",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"528db82f206ca7b3bc5c9cf7ac8cdb89\"",
       "file_path": "documentation/ManagedApp/managedappcertificatesprovider/certificate-withidentifier.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/init().json": {
       "hash": "12fa728b262a5bca74effdcf59b212b06d85f81379711dd4d3e68044de33371e",
-      "last_checked": "2026-03-13T07:41:31.848445",
+      "last_checked": "2026-03-17T07:43:43.531784",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"74d8905661984362d91f6c1e967089b4\"",
       "file_path": "documentation/ManagedApp/managedappidentitiesprovider/init.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/identifiers.json": {
       "hash": "db48eec884ee2c3fb903483851d3cc2d1b80fcc91322c8a59b6941f25b00490d",
-      "last_checked": "2026-03-13T07:41:32.006212",
+      "last_checked": "2026-03-17T07:43:43.649678",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"aa55192db709e070b81190a80534dc86\"",
       "file_path": "documentation/ManagedApp/managedappidentitiesprovider/identifiers.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/identity(withidentifier:).json": {
       "hash": "eeba1f14950f981a9719b0ff6b54dadbfcca3a8e588493f3135704fb4859c0e7",
-      "last_checked": "2026-03-13T07:41:32.328600",
+      "last_checked": "2026-03-17T07:43:43.962074",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"2d5bf9ac3b03225b287ad4680acae780\"",
       "file_path": "documentation/ManagedApp/managedappidentitiesprovider/identity-withidentifier.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/init().json": {
       "hash": "91e03aadd502af1faebb67f9b627c76e0555544f0ee30ef924886b4196f305e5",
-      "last_checked": "2026-03-13T07:41:32.486635",
+      "last_checked": "2026-03-17T07:43:44.107017",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"9e7c862ad80478c252318e0f926d9645\"",
       "file_path": "documentation/ManagedApp/managedapppasswordsprovider/init.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/identifiers.json": {
       "hash": "24a9f5674446c34c19eb05233f6a1a42cd1079bc36e642ac7919f3ba296d6205",
-      "last_checked": "2026-03-13T07:41:32.681195",
+      "last_checked": "2026-03-17T07:43:44.233853",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"d35e3fe2955d5eaaf375d84980e56e1f\"",
       "file_path": "documentation/ManagedApp/managedapppasswordsprovider/identifiers.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/password(withidentifier:).json": {
       "hash": "21b14fd93f1bc60b7ea61b57f03ac43a5ef5d5fa5dcffdc18361648a878d7c7a",
-      "last_checked": "2026-03-13T07:41:32.832879",
+      "last_checked": "2026-03-17T07:43:44.366542",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"9a037a437979df1f1048eefc41c5c9f1\"",
       "file_path": "documentation/ManagedApp/managedapppasswordsprovider/password-withidentifier.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/invalididentifier.json": {
       "hash": "fb9dc37480b14c840b582b24fa6399467eb71edee7f29fceacfe6a0c13b3bddf",
-      "last_checked": "2026-03-13T07:41:33.139443",
+      "last_checked": "2026-03-17T07:43:44.518729",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"85e9beb1a887ca40ce6e04586bf4977b\"",
       "file_path": "documentation/ManagedApp/managedapperror/invalididentifier.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/internalerror.json": {
       "hash": "566bfefa1de146d18eb8c6f352ed30be805d6d19f09a4a4aebb96b8dd0850172",
-      "last_checked": "2026-03-13T07:41:33.313072",
+      "last_checked": "2026-03-17T07:43:44.667795",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"4bc66155faebe6af0476f4de242cbcea\"",
       "file_path": "documentation/ManagedApp/managedapperror/internalerror.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/servererror.json": {
       "hash": "656e268fe3a3e00790c043b9f66e27f7a5825144518689f88dcffe74ef0c6875",
-      "last_checked": "2026-03-13T07:41:33.601150",
+      "last_checked": "2026-03-17T07:43:44.959457",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"8e53508680266cf22348373778ddebeb\"",
       "file_path": "documentation/ManagedApp/managedapperror/servererror.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerror/code.json": {
       "hash": "f9f5c9f5c4463bac1a66a91b710246f76df0e9cd7dbd827cc8d839077bf73d6c",
-      "last_checked": "2026-03-13T07:41:33.766399",
+      "last_checked": "2026-03-17T07:43:45.094185",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"e27499287537ff18cf047956b32866ed\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerror/code.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerror/message.json": {
       "hash": "663fccdbe6a69be6bba419eafafc8b89aa87dfe08475dcab7c9a54c512f580a5",
-      "last_checked": "2026-03-13T07:41:33.926214",
+      "last_checked": "2026-03-17T07:43:45.263028",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"dad126ea58f9dd7e1926e7d30121d699\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerror/message.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/init(rawvalue:).json": {
       "hash": "11b8ddba65afa2c35e5435cbb06e6d75929095260b3622b78b69f4c294ecddea",
-      "last_checked": "2026-03-13T07:41:34.095658",
+      "last_checked": "2026-03-17T07:43:45.440684",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"e33bd004aba3c2457d5f7835f8245b1b\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/init-rawvalue.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/datacorrupted.json": {
       "hash": "4d10613f93b25630991b6c4ddbd5f35de5279ca6e18160eb927b093d4fc24e4f",
-      "last_checked": "2026-03-13T07:41:34.418484",
+      "last_checked": "2026-03-17T07:43:45.902322",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"a092153326bf82edacde49011a8a002d\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/datacorrupted.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/firstreserved.json": {
       "hash": "14e3bf245f8237f8e59bb6b7e14286b1113d8f57bdb9a87af6e5506c7227a41b",
-      "last_checked": "2026-03-13T07:41:34.594075",
+      "last_checked": "2026-03-17T07:43:46.207482",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"d2f7661f6ab067b27fd199cce8d2f544\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/firstreserved.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/generic.json": {
       "hash": "8587036179caf3b398b49f444680672f4854ec900968e4b1a91e8d9e00e9cf40",
-      "last_checked": "2026-03-13T07:41:34.926253",
+      "last_checked": "2026-03-17T07:43:46.374689",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"7b215b9de9f20e7c4520b0b6f26fce3a\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/generic.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/keynotfound.json": {
       "hash": "dbecd5855c77d44b119d624224d4cb1bbc1f4e8ffcd76d2bbcf1b605c93de62a",
-      "last_checked": "2026-03-13T07:41:35.084721",
+      "last_checked": "2026-03-17T07:43:46.496573",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"879beffc820ffb721d37e0d133517690\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/keynotfound.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/timeout.json": {
       "hash": "fd8c03c4b940d8353755337dadb3ce77563ae72b5502219b4f05736f63075b6a",
-      "last_checked": "2026-03-13T07:41:35.251494",
+      "last_checked": "2026-03-17T07:43:46.670283",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"a9fe4c8e905ce1de267e39c91b9cac59\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/timeout.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/typemismatch.json": {
       "hash": "7443a3229b6ae5c24394ba78dbd48b5cbd862ed8ee6e9700fd935e46d9c369ac",
-      "last_checked": "2026-03-13T07:41:35.416397",
+      "last_checked": "2026-03-17T07:43:46.803225",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"4373c6727ef9fbaafb6d1a182b501bca\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/typemismatch.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/valuenotfound.json": {
       "hash": "25b046aa46d0449d63e078b7593fa2dfeb0be067a21fceb9a49c8a2dd6877ddf",
-      "last_checked": "2026-03-13T07:41:35.572668",
+      "last_checked": "2026-03-17T07:43:46.949425",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"828362b82c295a8d5260a73c02f5aed6\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/valuenotfound.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawvalue.json": {
       "hash": "b0cee0e72315a85f4351a3970a4e4715845ccd085dcb6255eab36bfa57dc0817",
-      "last_checked": "2026-03-13T07:41:34.247260",
+      "last_checked": "2026-03-17T07:43:45.600220",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:28.021623",
+      "session_id": "2026-03-17T07:43:40.577784",
       "etag": "W/\"fcad647d4676c8734ca09e13e464b326\"",
       "file_path": "documentation/ManagedApp/managedappconfigurationdecodingerrorcode/rawvalue.md"
     },

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T07:41:53.696205",
+    "last_updated": "2026-03-17T07:44:04.258198",
     "total_pages": 50,
-    "session_id": "2026-03-13T07:41:49.959987"
+    "session_id": "2026-03-17T07:44:00.017221"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/NotaryAPI.json": {
       "hash": "81bb0eb4b33c4a466e761493f9c8c698f8917b83f3bed865799cdeed6bd5793e",
-      "last_checked": "2026-03-13T07:41:50.177411",
+      "last_checked": "2026-03-17T07:44:00.327976",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"d627836254af3366cd4779f89348a8a5\"",
       "file_path": "documentation/NotaryAPI/NotaryAPI.md"
     },
     "https://developer.apple.com/documentation/NotaryAPI": {
       "hash": "81bb0eb4b33c4a466e761493f9c8c698f8917b83f3bed865799cdeed6bd5793e",
-      "last_checked": "2026-03-13T07:41:50.082198",
+      "last_checked": "2026-03-17T07:44:00.209861",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"d627836254af3366cd4779f89348a8a5\"",
       "file_path": "documentation/NotaryAPI/NotaryAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submitting-software-for-notarization-over-the-web.json": {
       "hash": "bea1302a5567a295b5423aa99878b2f854f1883b6e4a5d270caf6c50e8277d45",
-      "last_checked": "2026-03-13T07:41:50.423083",
+      "last_checked": "2026-03-17T07:44:00.562162",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"8b924c668670a56fa167e64dc08b25a8\"",
       "file_path": "documentation/NotaryAPI/submitting-software-for-notarization-over-the-web.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submit-software.json": {
       "hash": "c37830acc7bbbacabf34e38a9c0e7642503135e56e136b8c6d8aa64ab117d4d3",
-      "last_checked": "2026-03-13T07:41:50.568323",
+      "last_checked": "2026-03-17T07:44:00.696334",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"52228cd6d112b437a1a41caebff62b5a\"",
       "file_path": "documentation/NotaryAPI/submit-software.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionrequest.json": {
       "hash": "77fc476e3dd5c1ccd2536bc9250fbb6a59891f1274610060a55b86ccad280fe4",
-      "last_checked": "2026-03-13T07:41:50.735593",
+      "last_checked": "2026-03-17T07:44:00.819171",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"041164b11190d26d0b5305419a9bf2ea\"",
       "file_path": "documentation/NotaryAPI/newsubmissionrequest.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse.json": {
       "hash": "535868a0ccf21fb1d25009a5899c9327a36586bc51cc59cfdfe7ddaad160977f",
-      "last_checked": "2026-03-13T07:41:50.868080",
+      "last_checked": "2026-03-17T07:44:01.013250",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"571e5503977a95536e2bedb4e71207c7\"",
       "file_path": "documentation/NotaryAPI/newsubmissionresponse.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/get-submission-status.json": {
       "hash": "35ceb907ecb489b78875ed00527fd985169702cf8d4d8d0f8eda7f81b3143718",
-      "last_checked": "2026-03-13T07:41:50.995108",
+      "last_checked": "2026-03-17T07:44:01.148281",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"90cee28c4007b9eca1727f226a52e682\"",
       "file_path": "documentation/NotaryAPI/get-submission-status.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse.json": {
       "hash": "d2d0b6bea54a32d3d8986feaef06026ff28bc7bdaae333aeddd726a71fd29580",
-      "last_checked": "2026-03-13T07:41:51.133122",
+      "last_checked": "2026-03-17T07:44:01.289319",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"20342698d06b26c2f28ae59392621b87\"",
       "file_path": "documentation/NotaryAPI/submissionresponse.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/get-submission-log.json": {
       "hash": "c65eafcaef3b7a0fe30fa2509561712ca9cef0cad21d8a7b87079469f7d7bed8",
-      "last_checked": "2026-03-13T07:41:51.276548",
+      "last_checked": "2026-03-17T07:44:01.457793",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"d79c6ad3e9bba52237bd408736cd008f\"",
       "file_path": "documentation/NotaryAPI/get-submission-log.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse.json": {
       "hash": "fe829fdda683c5a8d168b1aa424e0327e6a98fcd1431b48dbd3a70fbf8533880",
-      "last_checked": "2026-03-13T07:41:51.385943",
+      "last_checked": "2026-03-17T07:44:01.640986",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"de93f95ad32e3c1b23217666aaa1a2a2\"",
       "file_path": "documentation/NotaryAPI/submissionlogurlresponse.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/get-previous-submissions.json": {
       "hash": "5770bf1670fa2028a57aae4c2305e8fa86e99326d3c4cd07b59a3344dc47b6bb",
-      "last_checked": "2026-03-13T07:41:51.532770",
+      "last_checked": "2026-03-17T07:44:01.781937",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"b04f9c95ca1bbf770b68f4ce5113c31b\"",
       "file_path": "documentation/NotaryAPI/get-previous-submissions.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse.json": {
       "hash": "ea97ea9099845fce7ec6de8e1d7787ad5d116a8cd5365d109c0534536837b61b",
-      "last_checked": "2026-03-13T07:41:51.636850",
+      "last_checked": "2026-03-17T07:44:01.940794",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"aa791ae389f8eb153f0b7742bad69302\"",
       "file_path": "documentation/NotaryAPI/submissionlistresponse.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/errorresponse.json": {
       "hash": "900a1e276ec5a94a88f785ae4012b6fd6526ad84ff4850c2002a8e8b7a2330fa",
-      "last_checked": "2026-03-13T07:41:51.766500",
+      "last_checked": "2026-03-17T07:44:02.088504",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"75cc7cf047e8cf99e85e298c388ea2e8\"",
       "file_path": "documentation/NotaryAPI/errorresponse.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionrequest/notifications-data.dictionary.json": {
       "hash": "967144850c3609038b45fe3d0afbf7c9ac999cab74d26868237ffa9c65534b3b",
-      "last_checked": "2026-03-13T07:41:51.970997",
+      "last_checked": "2026-03-17T07:44:02.253626",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"d8feb073883990c8708a6507b9c1a261\"",
       "file_path": "documentation/NotaryAPI/newsubmissionrequest/notifications-datadictionary.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse/data-data.dictionary.json": {
       "hash": "c51e64c3b20f0c7e7ed62a12f8cc4ab1cc618ea0e4dfa043c3b1e2fa1e6064fb",
-      "last_checked": "2026-03-13T07:41:52.079768",
+      "last_checked": "2026-03-17T07:44:02.439199",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"7e41f871f814be78c028b43d8bf9cd1f\"",
       "file_path": "documentation/NotaryAPI/newsubmissionresponse/data-datadictionary.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse/meta-data.dictionary.json": {
       "hash": "f809d682bcc3ede5e6cbdd41d59e7045edfbcf48e6c39081763a15664c162de6",
-      "last_checked": "2026-03-13T07:41:52.268755",
+      "last_checked": "2026-03-17T07:44:02.575862",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"6ba2346ac6429d6bd1cc94ae5ba1d4fd\"",
       "file_path": "documentation/NotaryAPI/newsubmissionresponse/meta-datadictionary.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse/data-data.dictionary.json": {
       "hash": "3940ed44d43ae062db3698b774bf81571d14fbf28b2e8c4b1748eed11c4e9db7",
-      "last_checked": "2026-03-13T07:41:52.409961",
+      "last_checked": "2026-03-17T07:44:02.709787",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"89d418ecef4636a1def5bf12cc150f97\"",
       "file_path": "documentation/NotaryAPI/submissionresponse/data-datadictionary.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse/meta-data.dictionary.json": {
       "hash": "09650c31a079e105a69deda619af3e0c1219bb547e760021a56661a94fbf155a",
-      "last_checked": "2026-03-13T07:41:52.545627",
+      "last_checked": "2026-03-17T07:44:02.838759",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"f4c2efa1ae6ee5ab8655abd2839bfd0f\"",
       "file_path": "documentation/NotaryAPI/submissionresponse/meta-datadictionary.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse/data-data.dictionary.json": {
       "hash": "86c2c13764e06202e5d217fd7fd82b834c982771cd71edc50ac0ea59d7cef9cb",
-      "last_checked": "2026-03-13T07:41:52.693838",
+      "last_checked": "2026-03-17T07:44:03.134823",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"f4fa0a842b9e6d73f2bb19959e63f23b\"",
       "file_path": "documentation/NotaryAPI/submissionlogurlresponse/data-datadictionary.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse/meta-data.dictionary.json": {
       "hash": "9398a5dca297e5261b160b75df5d5137908882190f7341858812669b4215984d",
-      "last_checked": "2026-03-13T07:41:52.842999",
+      "last_checked": "2026-03-17T07:44:03.274945",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"c24ad32dba6595e547beca6b598fabae\"",
       "file_path": "documentation/NotaryAPI/submissionlogurlresponse/meta-datadictionary.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse/data-data.dictionary.json": {
       "hash": "a96e44c0d500f3e1d2805f53afef3f8d817d538f79996980ecda4a2b8375091e",
-      "last_checked": "2026-03-13T07:41:52.990955",
+      "last_checked": "2026-03-17T07:44:03.409850",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"944098d8d349d9df865a799834cffba3\"",
       "file_path": "documentation/NotaryAPI/submissionlistresponse/data-datadictionary.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse/meta-data.dictionary.json": {
       "hash": "21512cd5334537895c34676537afa3e3e041ce6046d87956ae835cffb20b7d5f",
-      "last_checked": "2026-03-13T07:41:53.128803",
+      "last_checked": "2026-03-17T07:44:03.598752",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"5d80cfbb8687160753908ee8ddce38aa\"",
       "file_path": "documentation/NotaryAPI/submissionlistresponse/meta-datadictionary.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "6b563776d8ff982f69b82e88b7f37b8216bc45eaba6b8a407c6e706dc5e57787",
-      "last_checked": "2026-03-13T07:41:53.241117",
+      "last_checked": "2026-03-17T07:44:03.742846",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"59eaab4204f894cbbc13064cb47fdbfe\"",
       "file_path": "documentation/NotaryAPI/newsubmissionresponse/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "03546cc735650102d137fc464cfde2bb6ef2036cc7e901e1c684f31324fbaad1",
-      "last_checked": "2026-03-13T07:41:53.369193",
+      "last_checked": "2026-03-17T07:44:03.911339",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"490f9bd185052280347e68630a4fef32\"",
       "file_path": "documentation/NotaryAPI/submissionresponse/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "02ca238cae3ccf9127b8f81bf139641fd94702fe1b4641ebc49dea8114faa782",
-      "last_checked": "2026-03-13T07:41:53.511713",
+      "last_checked": "2026-03-17T07:44:04.060178",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"c4e949ae36740f247d6d7e7ab9d9902b\"",
       "file_path": "documentation/NotaryAPI/submissionlogurlresponse/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "67d35c41b893548c926d84f5ad7627e79958f490239d53d9c04a0f2541089976",
-      "last_checked": "2026-03-13T07:41:53.635655",
+      "last_checked": "2026-03-17T07:44:04.239785",
       "status": "unchanged",
-      "session_id": "2026-03-13T07:41:49.959987",
+      "session_id": "2026-03-17T07:44:00.017221",
       "etag": "W/\"e67a055e764bf26240cc2bb90039cdfd\"",
       "file_path": "documentation/NotaryAPI/submissionlistresponse/data-data.dictionary/attributes-datadictionary.md"
     },

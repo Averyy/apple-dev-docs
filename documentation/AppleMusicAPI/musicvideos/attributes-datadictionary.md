@@ -26,6 +26,7 @@ object MusicVideos.Attributes
 - `genreNames` ([string]) *(required)*: The music video’s associated genres.
 - `has4K` (boolean) *(required)*: Whether the music video has 4K content.
 - `hasHDR` (boolean) *(required)*: Whether the music video has HDR10-encoded content.
+- `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
 - `isrc` (string): The International Standard Recording Code (ISRC) for the music video.
 - `name` (string) *(required)*: The localized name of the music video.
 - `playParams` (PlayParameters): When present, indicates that the music video is available to play with an Apple Music subscription. The value map may be used to initiate playback. Previews of the music video may be available with or without an Apple Music subscription.

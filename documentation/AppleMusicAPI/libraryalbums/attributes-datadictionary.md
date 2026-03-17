@@ -25,6 +25,7 @@ object LibraryAlbums.Attributes
 - `releaseDate` (string): The release date of the album, when known, in YYYY-MM-DD or YYYY format. Prerelease albums may have an expected release date in the future.
 - `trackCount` (integer) *(required)*: The number of tracks.
 - `genreNames` ([string]) *(required)*: The names of the genres associated with this album.
+- `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
 
 ## See Also
 

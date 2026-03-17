@@ -26,6 +26,7 @@ object Playlists.Attributes
 - `playParams` (PlayParameters): The value map may be used to initiate playback of available tracks in the playlist.
 - `url` (string) *(required)*: The URL for sharing the playlist in Apple Music.
 - `trackTypes` ([string]): **(Extended)** The resource types that are present in the tracks of the playlists.
+- `inFavorites` (boolean)
 
 ## See Also
 

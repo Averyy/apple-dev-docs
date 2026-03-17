@@ -3,7 +3,7 @@
 **Framework**: Family Controls  
 **Kind**: property
 
-An array of web domains visited by the current user.
+Web domains someone visits on their device.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -17,9 +17,18 @@ var visitedWebDomains: [WebDomain] { get async throws }
 
 #### Discussion
 
-The web domains will have both the `domain` and `token` populated.
+Each web domain contains both a `domain` and a `token`.
 
-> ❗ **Important**: Your app must be authorized via [`AuthorizationCenter`](authorizationcenter.md) and data access must be available before attempting to access this variable or it will always throw.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](AuthorizationCenter.md) and ensure data access is available before accessing this variable. Otherwise, it will always throw an error.
+
+## See Also
+
+- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+  A shared instance for accessing a person’s family activity data.
+- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+  The set of all possible activity categories.
+- [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
+  Applications someone installs on a device.
 
 
 ---
