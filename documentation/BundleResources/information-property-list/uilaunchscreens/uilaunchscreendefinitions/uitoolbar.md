@@ -11,7 +11,7 @@ Toolbar visibility and configuration during launch.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

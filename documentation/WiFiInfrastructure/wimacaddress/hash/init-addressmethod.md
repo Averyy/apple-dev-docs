@@ -6,8 +6,8 @@
 Creates a new `Hash` from the given MAC Address, using a randomly-generated salt.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

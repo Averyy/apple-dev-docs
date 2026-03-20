@@ -29,7 +29,7 @@ To create a privacy manifest file, select the App Privacy template from the Reso
 
 To add a property to a property list file, open the file in the Xcode editor, hover over the title of the file, and click the Add button (+) that appears next to the title. Type the name of the key and press Enter, or click outside of the text field.
 
-You can also add an entry at any level of the property list file by hovering over an existing entry and clicking on the Add button (+) that appears.
+You can also add an entry at any level of the property list file by hovering over an existing entry and clicking on the Add button that appears.
 
 ![A screenshot of Xcode adding a key to a dictionary in a property list file.](https://docs-assets.developer.apple.com/published/115cda3e3af9d20ac184d8316cbb5031/editing-property-list-files-1%402x.png)
 
@@ -45,7 +45,7 @@ Use the pop-up menu in the Value column of the editor to set the value for a Boo
 
 ##### Remove a Property From the File
 
-To remove a key from a property list file, or an element from an array, hover over the element and click the Remove (-) button that appears.
+To remove a key from a property list file, or an element from an array, hover over the element and click the Remove button (-) that appears.
 
 ##### View Raw Keys and Values
 

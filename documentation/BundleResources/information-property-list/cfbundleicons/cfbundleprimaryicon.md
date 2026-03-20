@@ -14,7 +14,7 @@ The app’s primary icon for display on the Home Screen, in the Settings app, an
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

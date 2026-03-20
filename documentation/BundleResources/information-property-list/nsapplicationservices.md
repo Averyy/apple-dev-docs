@@ -13,7 +13,7 @@ A list of service providers and the devices that they support.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

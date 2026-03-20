@@ -10,7 +10,7 @@ One or more groups of interfaces supported by the plug-in for static registratio
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

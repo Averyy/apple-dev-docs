@@ -6,8 +6,8 @@
 A representation of a library of managed packages.
 
 **Availability**:
-- Mac Catalyst 26.4+ (Beta)
-- macOS 26.4+ (Beta)
+- Mac Catalyst 26.4+
+- macOS 26.4+
 
 ## Declaration
 

@@ -107,7 +107,7 @@ The `passengerInformationSSRs` semantic tag supports the following SSR codes as 
 
 | SSR code | Description |
 | --- | --- |
-| `INFT` | The passenger is a lap infant or seat infant (if assigned a seat). |
+| `INFT` | The passenger is a seat infant (if assigned a seat); otherwise, if the passenger is a parent of a seat infant, add `PKPassengerCapabilityLapInfant` to the `passengerCapabilities` semantic tag. For a list of supported passenger capabilities, see [`SemanticTags`](semantictags.md). |
 
 The `passengerServiceSSRs` semantic tag supports the following SSR codes as array values:
 
@@ -120,7 +120,7 @@ The `passengerServiceSSRs` semantic tag supports the following SSR codes as arra
 | `WCBW` | The passenger has a wet cell battery-powered wheelchair. |
 | `WCHC` | The passenger requires a wheelchair. |
 | `WCHR` | The passenger requires wheelchair assistance, and can walk short distances up or down stairs. |
-| `WCHS` | The passenger requires wheelchair assitance, and can walk short distances, but not up or down stairs. |
+| `WCHS` | The passenger requires wheelchair assistance, and can walk short distances, but not up or down stairs. |
 | `WCLB` | The passenger has a lithium ion battery-powered wheelchair. |
 | `WCMP` | The passenger has a manual wheelchair. |
 

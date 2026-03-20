@@ -16,7 +16,7 @@ class var secondarySelectedControlColor: NSColor { get }
 
 #### Return Value
 
-The system color used for selected controls in non-key views. For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+The system color used for selected controls in non-key views. For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@
 Disconnects from the remote streaming endpoint, ending the streaming session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

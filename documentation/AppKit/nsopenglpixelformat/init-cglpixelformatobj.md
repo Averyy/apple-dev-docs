@@ -30,7 +30,6 @@ Your application should not call `CGLDestroyPixelFormat(_:)` to dispose of the C
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](nsopenglpixelformat/init(attributes:).md)
   Returns an OpenGL pixel format object initialized with specified pixel format attributes.
 

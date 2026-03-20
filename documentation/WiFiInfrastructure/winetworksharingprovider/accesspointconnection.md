@@ -6,8 +6,8 @@
 A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

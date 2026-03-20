@@ -89,6 +89,8 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
 
 ## See Also
 
+- [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
+  Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 - [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
   Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
@@ -117,8 +119,6 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
   Verify your In-App Purchases are approved and available for sale in the App Store.
 - [TN3186: Troubleshooting In-App Purchases availability in the sandbox](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md)
   Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
-- [TN3185: Troubleshooting In-App Purchases availability in Xcode](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md)
-  Inspect your active StoreKit configuration file for unexpected configurations.
 
 
 ---

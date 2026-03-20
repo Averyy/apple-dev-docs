@@ -26,7 +26,6 @@ The screen containing the menu bar is always the first object (index `0`) in the
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [class var deepest: NSScreen?](nsscreen/deepest.md)
   Returns a screen object representing the screen that can best represent color.
 - [class var screens: [NSScreen]](nsscreen/screens.md)

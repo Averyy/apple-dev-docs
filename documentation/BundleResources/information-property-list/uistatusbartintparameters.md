@@ -14,7 +14,7 @@ The status bar tint.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

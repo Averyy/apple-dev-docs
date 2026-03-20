@@ -8,7 +8,7 @@ Encode a representation of this image in a given image format.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

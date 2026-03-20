@@ -10,7 +10,7 @@ Environment variables to set before launching the app.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

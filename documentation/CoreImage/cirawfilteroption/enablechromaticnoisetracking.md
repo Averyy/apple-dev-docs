@@ -21,7 +21,7 @@ static let enableChromaticNoiseTracking: CIRAWFilterOption
 
 #### Discussion
 
-The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a `BOOL` value ([`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false)). The default is [`true`](https://developer.apple.com/documentation/Swift/true). This option has no effect if the image used for initialization is not RAW.
+The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a `BOOL` value (`true` or `false`). The default is `true`. This option has no effect if the image used for initialization is not RAW.
 
 ## See Also
 

@@ -20,7 +20,7 @@ The system color used for an unselected slider knob.
 
 #### Discussion
 
-The knob’s beveled edges, which set it in relief, are drawn in highlighted and shadowed versions of the face color. When a knob is selected, its color changes to [`selectedKnobColor`](nscolor/selectedknobcolor.md). For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+The knob’s beveled edges, which set it in relief, are drawn in highlighted and shadowed versions of the face color. When a knob is selected, its color changes to [`selectedKnobColor`](nscolor/selectedknobcolor.md). For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

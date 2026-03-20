@@ -13,7 +13,7 @@ The semantic data types that a Share or Action extension supports.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

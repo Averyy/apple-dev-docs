@@ -9,7 +9,7 @@
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

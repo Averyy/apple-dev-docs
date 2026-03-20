@@ -6,9 +6,9 @@
 The current camera ID string of the immersive camera to use when rendering playback for the PTS specified in the last call to the update method.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 - macOS 26.0+
 - visionOS 26.0+
 

@@ -6,7 +6,7 @@
 An entitlement that allows a visionOS app to initiate real-time streaming of spatial content from a cloud streaming endpoint via the Foveated Streaming framework.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 
 

@@ -72,6 +72,8 @@ The fully qualified domain in the `alternateDistributionPackage` value needs to 
   An identifier that represents an app.
 - [typealias AppleVersionID](appleversionid.md)
   An identifier that represents a single app version.
+- [struct RequestAppDeletionAction](requestappdeletionaction.md)
+  A SwiftUI environment action that requests the deletion of an app.
 
 
 ---

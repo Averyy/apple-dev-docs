@@ -11,7 +11,7 @@ The launch storyboard to use to generate a launch image when your app opens from
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

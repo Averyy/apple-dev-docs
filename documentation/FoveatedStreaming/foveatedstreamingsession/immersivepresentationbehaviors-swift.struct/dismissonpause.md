@@ -6,7 +6,7 @@
 Dismisses the immersive space when the session pauses.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

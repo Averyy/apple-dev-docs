@@ -27,7 +27,6 @@ An initialized `NSOpenGLView` object, or `nil` if the object could not be initia
 
 - [class func defaultPixelFormat() -> NSOpenGLPixelFormat](nsopenglview/defaultpixelformat.md)
   Returns a default [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object.
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 
 
 ---

@@ -6,7 +6,7 @@
 Creates an immersive space to display foveated streaming content.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

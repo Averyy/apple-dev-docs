@@ -6,8 +6,8 @@
 Derive a shared secret to bootstrap TLS, using the resulting shared secret as a TLS Pre-Shared Key.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

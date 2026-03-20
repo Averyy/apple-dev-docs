@@ -57,7 +57,7 @@ To set up a device to gather a performance trace that contains power metrics:
 4. Change the tracing mode to Power Profiler.
 5. Tap the switch next to your app’s name in the list of monitored apps to turn on tracing for your app. If you don’t turn on tracing for any apps, Performance Trace only records overall system power metrics.
 6. Swipe down from the top-right of the screen to open Control Center.
-7. Tap the Add (+) button.
+7. Tap the Add button (+).
 8. Tap Add a Control.
 9. Choose the Performance Trace control.
 

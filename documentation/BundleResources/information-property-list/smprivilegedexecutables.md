@@ -10,7 +10,7 @@ The Service Management tools owned by the app.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

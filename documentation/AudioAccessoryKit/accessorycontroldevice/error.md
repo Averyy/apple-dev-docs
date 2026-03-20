@@ -6,8 +6,8 @@
 An error that occurs during audio accessory configuration operations.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

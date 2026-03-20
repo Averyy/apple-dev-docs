@@ -6,8 +6,8 @@
 An object that uniquely identifies a particular network protocol and the pairing hanshake it uses for authentication.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

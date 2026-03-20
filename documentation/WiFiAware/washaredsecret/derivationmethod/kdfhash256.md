@@ -6,8 +6,8 @@
 Derive a shared secret using the KDF-HASH-256 method defined in the WiFi Aware 5.0 draft standard.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

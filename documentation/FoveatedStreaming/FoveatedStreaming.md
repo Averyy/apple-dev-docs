@@ -6,7 +6,7 @@
 Foveated Streaming enables visionOS apps to display high-resolution, low-latency immersive content from streaming endpoints.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 #### Overview
 

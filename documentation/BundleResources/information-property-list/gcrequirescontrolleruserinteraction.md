@@ -12,7 +12,7 @@ The platforms for which your app requires or you recommend a game controller.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

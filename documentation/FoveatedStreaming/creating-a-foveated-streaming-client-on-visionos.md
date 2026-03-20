@@ -5,8 +5,8 @@
 Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
-- Xcode 26.4+ (Beta)
+- visionOS 26.4+
+- Xcode 26.4+
 
 #### Overview
 

@@ -10,8 +10,8 @@ An object that renders captions for display at a particular time.
 - iPadOS 18.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- tvOS 26.4+ (Beta)
-- visionOS 26.4+ (Beta)
+- tvOS 26.4+
+- visionOS 26.4+
 
 ## Declaration
 

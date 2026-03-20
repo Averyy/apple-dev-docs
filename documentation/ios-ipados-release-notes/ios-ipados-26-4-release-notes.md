@@ -1,4 +1,4 @@
-# iOS & iPadOS 26.4 Beta 4 Release Notes
+# iOS & iPadOS 26.4 RC Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,13 +6,25 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4 beta 4. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4 RC. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+
+##### Accessory Notifications
+
+###### Known Issues
+
+- The Accessory Notifications Framework allows accessory companion apps to request notification forwarding and receive notification content from the system through an extension model. It is only available for developer testing on iPhone in this release, and will be available to customers in the EU in a future iOS 26 release.  (172227787)
 
 ##### Address Sanitizer
 
 ###### Known Issues
 
 - Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
+
+##### Audioaccessorykit
+
+###### Known Issues
+
+- `AudioAccessoryKit` allows third-party audio accessory manufacturers to provide headphone information to the system to support automatic audio switching. This framework is only available for developer testing on iPhone and iPad in this release, and will be available to customers in the EU in a future iOS 26 and iPadOS 26 release.  (172228589)
 
 ##### Background Assets
 

@@ -6,7 +6,7 @@
 Establishes a streaming connection at the provided endpoint.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

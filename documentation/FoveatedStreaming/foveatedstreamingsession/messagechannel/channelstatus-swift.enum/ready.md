@@ -6,7 +6,7 @@
 The message channel is ready to send and receive messages.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

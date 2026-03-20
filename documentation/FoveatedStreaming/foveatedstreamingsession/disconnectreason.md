@@ -6,7 +6,7 @@
 A description of why a foveated streaming session’s status is in the disconnected state.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

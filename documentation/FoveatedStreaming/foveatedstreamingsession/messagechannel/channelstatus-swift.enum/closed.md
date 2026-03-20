@@ -6,7 +6,7 @@
 The message channel is closed and can no longer send or receive messages.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

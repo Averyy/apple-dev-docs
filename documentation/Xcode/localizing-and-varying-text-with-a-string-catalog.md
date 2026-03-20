@@ -154,7 +154,7 @@ When the app runs on the selected device, the system displays the new message fo
 
 To support multiple languages in your app, add additional languages to your project. For each language, select the string catalog in the Project navigator, click the Add button (+) near the bottom of the string catalog editor, and select a language from the pop-up menu.
 
-You can also add and remove languages using the Info pane in the project editor. Under Localizations, click the Add button (+), or select a language and click the Remove button (-).
+You can also add and remove languages using the Info pane in the project editor. Under Localizations, click the Add button, or select a language and click the Remove button (-).
 
 ##### Add Your Translations Using the String Catalog Editor
 

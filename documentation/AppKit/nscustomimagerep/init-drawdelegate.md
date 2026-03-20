@@ -33,7 +33,6 @@ When the receiver is asked to draw the image, it sends the specified message to 
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [func draw() -> Bool](nsimagerep/draw.md)
   Implemented by subclasses to draw the image in the current coordinate system.
 - [init(size: NSSize, flipped: Bool, drawingHandler: (NSRect) -> Bool)](nscustomimagerep/init(size:flipped:drawinghandler:).md)

@@ -6,7 +6,7 @@
 The status of a message channel.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

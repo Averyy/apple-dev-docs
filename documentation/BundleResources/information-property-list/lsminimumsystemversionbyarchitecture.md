@@ -10,7 +10,7 @@ The minimum version of macOS required for the app to run on a set of architectur
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

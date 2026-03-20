@@ -11,7 +11,7 @@ The mapping of URL schemes to launch screen configurations.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

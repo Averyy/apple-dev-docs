@@ -10,7 +10,7 @@ Render a colorful, rotating 2D triangle by running draw commands with a render p
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

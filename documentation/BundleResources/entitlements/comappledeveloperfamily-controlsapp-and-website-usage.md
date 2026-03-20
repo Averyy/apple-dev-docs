@@ -6,8 +6,8 @@
 A Boolean value that indicates whether the app may, with the person’s permission, access app and website usage information from the current device.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 
 

@@ -11,7 +11,7 @@ A dictionary that includes keys for the specific information your app collects.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

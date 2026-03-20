@@ -10,7 +10,7 @@ A dictionary that maps Team IDs to an array of signing (bundle) IDs that the sys
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

@@ -9,7 +9,7 @@ Define custom shader behavior at runtime by creating functions from existing one
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

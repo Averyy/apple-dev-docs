@@ -6,7 +6,7 @@
 The presentation behaviors describing when the immersive space that hosts the streamed content is presented and dismissed.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

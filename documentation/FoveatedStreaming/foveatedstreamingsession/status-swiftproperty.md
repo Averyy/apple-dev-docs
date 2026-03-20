@@ -6,7 +6,7 @@
 The connection status of the session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

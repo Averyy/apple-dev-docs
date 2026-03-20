@@ -16,7 +16,7 @@ A dictionary that contains an array of URLs to websites where people using your 
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

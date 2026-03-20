@@ -6,9 +6,9 @@
 Called when the built-in navigation system sends a waypoint to the device for a specific segment.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

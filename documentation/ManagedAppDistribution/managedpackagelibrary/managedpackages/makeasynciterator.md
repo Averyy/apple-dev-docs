@@ -6,8 +6,8 @@
 Creates the asynchronous iterator that produces results from this asynchronous sequence.
 
 **Availability**:
-- Mac Catalyst 26.4+ (Beta)
-- macOS 26.4+ (Beta)
+- Mac Catalyst 26.4+
+- macOS 26.4+
 
 ## Declaration
 

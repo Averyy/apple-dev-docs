@@ -11,6 +11,8 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
+  Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 - [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
   Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)

@@ -16,7 +16,7 @@ class var controlAlternatingRowBackgroundColors: [NSColor] { get }
 
 #### Return Value
 
-An array of `NSColor` objects specifying the system colors used for rows in tables and lists. You should not assume the array will contain only two colors. For general information on system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+An array of `NSColor` objects specifying the system colors used for rows in tables and lists. You should not assume the array will contain only two colors. For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

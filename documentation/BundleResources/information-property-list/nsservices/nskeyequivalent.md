@@ -10,7 +10,7 @@ A keyboard shortcut that invokes the service menu command.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

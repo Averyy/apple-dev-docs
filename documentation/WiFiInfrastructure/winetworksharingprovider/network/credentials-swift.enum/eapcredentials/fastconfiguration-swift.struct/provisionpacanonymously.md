@@ -6,8 +6,8 @@
 A Boolean value that indicates whether to provision the device anonymously.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

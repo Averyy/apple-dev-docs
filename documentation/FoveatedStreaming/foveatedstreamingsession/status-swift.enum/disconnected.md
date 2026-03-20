@@ -6,7 +6,7 @@
 The session has disconnected or failed to connect to a streaming endpoint.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

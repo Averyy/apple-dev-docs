@@ -19,10 +19,10 @@ enum SSReadingListErrorCode
 
 ## Topics
 
-### Constants
-- [SSReadingListError.Code.urlSchemeNotAllowed](ssreadinglisterror/code/urlschemenotallowed.md)
+### Enumeration Cases
+- [SSReadingListError.Code.urlSchemeNotAllowed](ssreadinglisterrorcode/urlschemenotallowed.md)
 ### Initializers
-- [init?(rawValue: Int)](ssreadinglisterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](ssreadinglisterrorcode/init(rawvalue:).md)
 
 ## Relationships
 

@@ -7,7 +7,7 @@ An enumeration representing the level of severity of a recorded issue.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

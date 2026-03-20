@@ -24,7 +24,7 @@ typealias hv_capability_t = UInt64
 
 ## See Also
 
-- [func hv_vm_create(hv_vm_config_t?) -> hv_return_t](hv_vm_create(_:).md)
+- [func hv_vm_create(hv_vm_options_t) -> hv_return_t](hv_vm_create(_:).md)
   Creates a VM instance for the current process.
 - [func hv_vm_destroy() -> hv_return_t](hv_vm_destroy().md)
   Destroys the VM instance associated with the current process.

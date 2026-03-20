@@ -35,6 +35,8 @@ typealias AppleVersionID = UInt64
   An identifier that represents an app.
 - [let MarketplaceKitURIScheme: String](marketplacekiturischeme.md)
   A URI scheme that defines an alternative distribution app installation link.
+- [struct RequestAppDeletionAction](requestappdeletionaction.md)
+  A SwiftUI environment action that requests the deletion of an app.
 
 
 ---

@@ -16,7 +16,7 @@ class var controlHighlightColor: NSColor { get }
 
 #### Return Value
 
-Of the two light borders that run along the top and left of controls, representing reflections from a light source in the upper left, the color of the inner, duller border.  For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+Of the two light borders that run along the top and left of controls, representing reflections from a light source in the upper left, the color of the inner, duller border. For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

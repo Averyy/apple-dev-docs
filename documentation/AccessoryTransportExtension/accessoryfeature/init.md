@@ -7,9 +7,9 @@
 Initializes a feature with a handler factory closure.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

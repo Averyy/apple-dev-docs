@@ -34,11 +34,11 @@ AppKit handles most of your app’s [`NSView`](nsview.md) management. Unless you
 - [`window`](nsview/window.md) returns the [`NSWindow`](nswindow.md) object that contains the [`NSView`](nsview.md) object.
 - [`draw(_:)`](nsview/draw(_:).md) draws the [`NSView`](nsview.md) object. (All subclasses must implement this method, but it’s rarely invoked explicitly.) An alternative to drawing is to update the layer directly using the [`updateLayer()`](nsview/updatelayer().md) method.
 
-For more information on how `NSView` instances handle event and action messages, see [`Cocoa Event Handling Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/Introduction/Introduction.html#//apple_ref/doc/uid/10000060i). For more information on displaying tooltips and contextual menus, see [`Displaying Contextual Menus`](nsmenu#Displaying-Contextual-Menus.md) and [`Managing Tooltips`](nswindow#Managing-Tooltips.md).
+For more information on how `NSView` instances handle event and action messages, see [`Event Handling`](event-handling.md). For more information on displaying tooltips and contextual menus, see [`Displaying Contextual Menus`](nsmenu#Displaying-Contextual-Menus.md) and [`Managing Tooltips`](nswindow#Managing-Tooltips.md).
 
 ##### Subclassing Notes
 
-`NSView` is perhaps the most important class in AppKit when it comes to subclassing and inheritance. Most user-interface objects you see in a Cocoa application are objects that inherit from `NSView`. If you want to create an object that draws itself in a special way, or that responds to mouse clicks in a special way, you would create a custom subclass of `NSView` (or of a class that inherits from `NSView`). Subclassing `NSView` is such a common and important procedure that several technical documents describe how to both draw in custom subclasses and respond to events in custom subclasses. See [`Cocoa Drawing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290) and [`Cocoa Event Handling Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/Introduction/Introduction.html#//apple_ref/doc/uid/10000060i) (especially “[`Handling Mouse Events`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingMouseEvents/HandlingMouseEvents.html#//apple_ref/doc/uid/10000060i-CH6)” and “[`Mouse Events`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/EventObjectsTypes/EventObjectsTypes.html#//apple_ref/doc/uid/10000060i-CH4-SW10)”).
+`NSView` is perhaps the most important class in AppKit when it comes to subclassing and inheritance. Most user-interface objects you see in a Cocoa application are objects that inherit from `NSView`. If you want to create an object that draws itself in a special way, or that responds to mouse clicks in a special way, you would create a custom subclass of `NSView` (or of a class that inherits from `NSView`).
 
 ###### Handling Events in Your Subclass
 
@@ -162,8 +162,6 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -6,8 +6,8 @@
 Requests that the system display the browsing-data transfer sheet to export data to another browser.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

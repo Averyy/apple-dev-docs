@@ -1,4 +1,4 @@
-# Xcode 26.4 Beta 3 Release Notes
+# Xcode 26.4 RC Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,13 +6,40 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, macOS 26.4, and visionOS 26.4. Xcode 26.4 beta 3 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.4 beta 3 requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.4 RC includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, macOS 26.4, and visionOS 26.4. Xcode 26.4 RC supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.4 RC requires a Mac running macOS Tahoe 26.2 or later.
+
+##### General
+
+###### New Features
+
+- Xcode source editor extensions display the localized name via the CFBundleName from the Info.plist of the extension bundle.  (139574330) (FB15741224)
+- Added the ability to enable package traits on dependencies from the Package Dependencies view.  (141748785)
+
+###### Resolved Issues
+
+- Fixed: In the project editor, holding the Option key while selecting an xcconfig file affects every build configuration.  (139901429)
 
 ##### Address Sanitizer
 
 ###### Known Issues
 
-- Address Sanitizer and Thread Sanitizer may hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
+- Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808) **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
+
+##### Apple Clang Compiler
+
+###### New Features
+
+- The following C++26 features have been implemented: - Structured Bindings can introduce a Pack ([`P1061R10 `](https://developer.apple.comhttps://wg21.link/P1061R10))
+- Structured binding declaration as a condition ([`P0963R3`](https://developer.apple.comhttps://wg21.link/P0963R3))
+- Variadic Friends ([`P2893R3`](https://developer.apple.comhttps://wg21.link/P2893R3))
+- constexpr placement new ([`P2747R2`](https://developer.apple.comhttps://wg21.link/P2747R2))
+- The Oxford variadic comma ([`P3176R1`](https://developer.apple.comhttps://wg21.link/P3176R1))  (169138392)
+
+##### Build System
+
+###### New Features
+
+- Mergeable libraries that do not need to access resources via standard Bundle APIs can set `SKIP_MERGEABLE_LIBRARY_BUNDLE_HOOK` to avoid extra launch time overhead.  (162620119)
 
 ##### C++ Standard Library
 
@@ -44,7 +71,7 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - `ctype::tolower` and `ctype::toupper` have been optimized, resulting in a 2x performance improvement. Miscellaneous improvements: - As an experimental feature, Hardening now supports assertion semantics that allow customizing how a hardening assertion failure is handled. The four available semantics, modeled on C++26 Contracts, are `ignore`, `observe`, `quick-enforce` and `enforce`. The `observe` semantic is intended to make it easier to adopt Hardening in production but should not be used outside of this scenario. Please refer to the Hardening documentation for details.
 - Updated formatting library to Unicode 16.0.0.  (171666816)
 
-###### Known Issues
+###### Deprecations
 
 - The following items have been deprecated or removed: - `std::is_pod` and `std::is_pod_v` are deprecated in C++20 and later.
 - `std::is_trivial` and `std::is_trivial_v` are deprecated in C++26 and later.
@@ -58,96 +85,12 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 
 ###### Resolved Issues
 
+- Fixed issue where externally configured MCP servers were being overwritten during Codex initialization.  (169570663)
 - Fixed: When using external development tools that connect to Xcode, you may see multiple “Allow Connection?” dialogs during normal usage.  (170721057)
 
-##### Localization
-
-###### Known Issues
-
-- When removing a language from a String Catalog in a Swift Package, it could re-appear.  (169263836)
-
-##### Swift Standard Library
-
-###### Resolved Issues
-
-- Fixed: The raw span accessor properties of `Span` and `MutableSpan` (`bytes` and `mutableBytes`) as well as the two generic `append()` methods of `OutputRawSpan` are newly marked with `@unsafe`. These changes are corrections for omissions in the SE-0458, SE-0467 and SE-0485 proposals or their implementations. These `@unsafe` annotations are required because of a permissible compiler optimization involving values of types that contain padding. When the compiler stores such a value to addressable memory, it is free to skip any padding bytes. This can potentially leave those bytes uninitialized. This optimization is safe when the memory is only ever read as the same type as the value stored. However, when reinterpreting the memory as raw bytes, the potentially uninitialized bytes violate the prerequisite that `RawSpan` and `MutableRawSpan` represent fully initialized memory. In the case of `OutputRawSpan`, they violate the postcondition that the memory it has written is fully initialized. It is safe to use `bytes` when the `Element` type of `Span` or `MutableSpan` has neither internal nor trailing padding bytes, as every byte is then known to be initialized. The same constraint applies to the type parameter of `OutputSpan.append(_:as:)`. To safely use `MutableSpan`’s `mutableBytes`, an additional safety constraint applies when the memory is to later be used again as `Element`. In that case, the non-padding bytes of `Element` must allow every bit pattern to be permissible in a valid value of `Element`.  (168547924)
-
-##### Testing
-
-###### Resolved Issues
-
-- Fixed: Interoperability between XCTest and Swift Testing is no longer enabled by default. To enable this experimental feature, set the environment variable `SWIFT_TESTING_XCTEST_INTEROP_MODE` to `limited` in your test plan. ([`ST-0021`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0021-targeted-interoperability-swift-testing-and-xctest.md))  (171360625)
-
-###### Known Issues
-
-- When an XCTest class has the property `continueAfterFailure` set to false, a failure in an test method, `setUp`, or `tearDown` that is also declared `async` will skip any remaining retries for the current test. For example, if an affected test uses the “retry on failure” repetition mode, it will not attempt to re-run the test after failing.  (108565878) **Workaround:** In your test plan, set “Relaunch Tests for Each Repetition” to on.
-- Instances of `UIImage` cannot be attached to tests when testing a Mac Catalyst app.  (168320788) **Workaround:** Use the `UIImage.cgImage` property to get the underlying `CGImage` and attach it instead.
-- When using Xcode for Apple silicon, tests which use Swift Testing may crash at launch when using a Rosetta run destination.  (170347005) **Workaround:** Use Xcode Universal.
-
-#### Updates in Xcode 264 Beta 2
-
-##### Apple Clang Compiler
-
-###### New Features in Xcode 264 Beta 2
-
-- The following C++26 features have been implemented: - Structured Bindings can introduce a Pack ([`P1061R10 `](https://developer.apple.comhttps://wg21.link/P1061R10))
-- Structured binding declaration as a condition ([`P0963R3`](https://developer.apple.comhttps://wg21.link/P0963R3))
-- Variadic Friends ([`P2893R3`](https://developer.apple.comhttps://wg21.link/P2893R3))
-- constexpr placement new ([`P2747R2`](https://developer.apple.comhttps://wg21.link/P2747R2))
-- The Oxford variadic comma ([`P3176R1`](https://developer.apple.comhttps://wg21.link/P3176R1))  (169138392)
-
 ##### Instruments
 
-###### New Features in Xcode 264 Beta 2
-
-- Added a new instrument to help developers track bandwidth and latencies in the Foveated Streaming system.  (169292516)
-
-##### Source Editor
-
-###### New Features in Xcode 264 Beta 2
-
-- Improved editor-tab retention behavior when an external program, such as git, removes and/or adds files while Xcode is running.  (144153298)
-
-##### Storekit
-
-###### Resolved Issues in Xcode 264 Beta 2
-
-- Fixed: The StoreKit configuration file does not autosave some changes causing undo commands to fail, and spuriously presenting a prompt stating that the file has been changed by another application.  (169182677)
-
-##### Testing
-
-###### Resolved Issues in Xcode 264 Beta 2
-
-- Fixed: When an issue occurs in a Swift Testing test in a detached task or background thread, it may be recorded as a warning instead of as an error.  (170161483)
-
-#### Updates in Xcode 264 Beta
-
-##### General
-
-###### New Features in Xcode 264 Beta
-
-- Xcode source editor extensions display the localized name via the CFBundleName from the Info.plist of the extension bundle.  (139574330) (FB15741224)
-- Added the ability to enable package traits on dependencies from the Package Dependencies view.  (141748785)
-
-###### Resolved Issues in Xcode 264 Beta
-
-- Fixed: In the project editor, holding the Option key while selecting an xcconfig file affects every build configuration.  (139901429)
-
-##### Build System
-
-###### New Features in Xcode 264 Beta
-
-- Mergeable libraries that do not need to access resources via standard Bundle APIs can set `SKIP_MERGEABLE_LIBRARY_BUNDLE_HOOK` to avoid extra launch time overhead.  (162620119)
-
-##### Coding Intelligence
-
-###### Resolved Issues in Xcode 264 Beta
-
-- Fixed issue where externally configured MCP servers were being overwritten during Codex initialization.  (169570663)
-
-##### Instruments
-
-###### New Features in Xcode 264 Beta
+###### New Features
 
 - New Run Comparison feature allows to compare call trees with other runs using View → Detail Area → Compare With… or the ⇆ button in the jump bar. After selecting which run you want to compare with, the comparison view allows you to view which functions took more or less time between the runs. Call tree filtering operations like “Charge to callers” allow you to focus in on the functions that are faster or slower.  (160223363)
 - Top Functions is a new, top-level mode of a Call Tree view allowing to quickly identify the most expensive functions in the trace, no matter where they’re called from. To access Top Functions, select rightmost button in the Call Tree navigation bar.  (123702178)
@@ -160,8 +103,9 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - `xctrace import` now allows for importing multiple files into the same trace document by using –append-run argument and specifying existing trace path.  (160231771)
 - When pasting text to token fields, new lines can be used to separate tokens.  (167801826)
 - The context path control has been redesigned to increase discoverability of click areas.  (167877589)
+- Added a new instrument to help developers track bandwidth and latencies in the Foveated Streaming system.  (169292516)
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed an issue where adding instrument for a next recording would cause empty instrument track to be visible for previous precordings.  (60606472)
 - Fixed: Double-clicking a function in the flame graph did not open the source viewer.  (118585471)
@@ -185,13 +129,13 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - Fixed: Resolved an issue where the source viewer may not show disassembly when the selected function was inlined into a different function in several ranges.  (166330190)
 - Fixed: Plot titles now utilize all available space instead of being aggressively truncated.  (167625819)
 
-###### Deprecations in Xcode 264 Beta
+###### Deprecations
 
 - The “Compress Run Data” setting has been removed. Trace files now always compress their data to reduce disk usage.  (166901106)
 
 ##### Localization
 
-###### New Features in Xcode 264 Beta
+###### New Features
 
 - You can now remove languages from the String Catalog editor. When doing so, you can choose between removing the language from just that catalog or from the entire project.  (16787816)
 - When adding a new supported language in the Project Editor, you can now pre-fill your project’s String Catalogs with translations from an existing language.  (101444725)
@@ -201,7 +145,7 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - When removing a supported language from the Project Editor, you now have the option of either removing all localized content in that language or only from the language list. When choosing the former, translations in all String Catalogs will also be removed for that language. You may want to choose the latter if you are using the `BUILD_ONLY_KNOWN_LOCALIZATIONS` build setting.  (161249725)
 - Strings will no longer be extracted from code comments by default. If your project relies on this, you can re-enable by setting `LOCALIZED_STRING_CODE_COMMENTS` to `YES`.  (166593358)
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed: Xcode and `xcstringstool` no longer extract strings from source code when it can prove that they are DEBUG-only or otherwise would never be compiled into a customer product. This also applies to NSLocalizedString extraction in both Swift and Objective-C.  (102888380)
 - Fixed: Export Localizations will now wait for any ongoing comment generation to complete so that these comments make it into the exported Localization Catalog.  (119735093)
@@ -211,9 +155,13 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - Fixed: Generated code for String Catalog symbol generation will no longer produce a compiler error for projects that default to MainActor isolation.  (165481673) (FB21179782)
 - Fixed: String Catalog refactor operations for converted to and from generated symbols are now more reliable for multi-line string literals.  (168202035)
 
+###### Known Issues
+
+- When removing a language from a String Catalog in a Swift Package, it could re-appear.  (169263836)
+
 ##### Signing and Capabilities
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed: Applications with the Enhanced Security Capability no longer crash on OS versions prior to 26.0. Applications that have already adopted the capability should remove the following existing entitlements from their entitlements file. - `com.apple.security.hardened-process.enhanced-security-version`
 - `com.apple.security.hardened-process.platform-restrictions` And add new variants with string values: - `com.apple.security.hardened-process.enhanced-security-version-string` with value `”1”`
@@ -221,7 +169,7 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 
 ##### Simulator
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed: When exporting simulator runtimes through xcodebuild, Xcode will now save them out as a .exportBundle to included metadata to help with secure importing. That bundle can be directly imported with xcodebuild’s importPlatform command. ```None
  xcodebuild -downloadPlatform iOS -exportPath /tmp/mySimRuntimes/
@@ -230,31 +178,49 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
  xcodebuild -importPlatform /tmp/mySimRuntimes/iossimulator_<version>.exportedBundle
 ``` (166834291)
 
+##### Source Editor
+
+###### New Features
+
+- Improved editor-tab retention behavior when an external program, such as git, removes and/or adds files while Xcode is running.  (144153298)
+
+##### Storekit
+
+###### Resolved Issues
+
+- Fixed: The StoreKit configuration file does not autosave some changes causing undo commands to fail, and spuriously presenting a prompt stating that the file has been changed by another application.  (169182677)
+
 ##### Swift Package Manager
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed: `swift test` can now successfully include sanitizers via the `--sanitize` flag when selecting specific tests to run via the `--filter` flag.  (168234231)
 
+##### Swift Standard Library
+
+###### Resolved Issues
+
+- Fixed: The raw span accessor properties of `Span` and `MutableSpan` (`bytes` and `mutableBytes`) as well as the two generic `append()` methods of `OutputRawSpan` are newly marked with `@unsafe`. These changes are corrections for omissions in the SE-0458, SE-0467 and SE-0485 proposals or their implementations. These `@unsafe` annotations are required because of a permissible compiler optimization involving values of types that contain padding. When the compiler stores such a value to addressable memory, it is free to skip any padding bytes. This can potentially leave those bytes uninitialized. This optimization is safe when the memory is only ever read as the same type as the value stored. However, when reinterpreting the memory as raw bytes, the potentially uninitialized bytes violate the prerequisite that `RawSpan` and `MutableRawSpan` represent fully initialized memory. In the case of `OutputRawSpan`, they violate the postcondition that the memory it has written is fully initialized. It is safe to use `bytes` when the `Element` type of `Span` or `MutableSpan` has neither internal nor trailing padding bytes, as every byte is then known to be initialized. The same constraint applies to the type parameter of `OutputSpan.append(_:as:)`. To safely use `MutableSpan`’s `mutableBytes`, an additional safety constraint applies when the memory is to later be used again as `Element`. In that case, the non-padding bytes of `Element` must allow every bit pattern to be permissible in a valid value of `Element`.  (168547924)
+
 ##### Swiftc++ Interoperability
 
-###### New Features in Xcode 264 Beta
+###### New Features
 
 - Warnings are re-enabled for functions annotated with SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED but do not return a SWIFT_SHARED_REFERENCE type  (154261051)
 - You can now use the `SWIFT_COPYABLE_IF(...)` macro to import a type as copyable or non-copyable depending on its template arguments.  (158852663)
 - You can now initialize a Swift `String` from a C++ `std::wstring` and vice versa.  (159272493)
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed: Swift compiler no longer emits extraneous warnings about functions returning a template type variable that are annotated with SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED  (160862498)
 
-###### Deprecations in Xcode 264 Beta
+###### Deprecations
 
 - Initializing `std::string` with an optional Swift `String?` has been deprecated.  (148041893)
 
 ##### Testing
 
-###### New Features in Xcode 264 Beta
+###### New Features
 
 - Swift Testing now supports attaching images directly to tests. You can attach instances of `CGImage`, `NSImage`, `UIImage`, and `CIImage`.  (154869058)
 - Swift Testing adds support for specifying a Severity when recording an Issue.  (164426789)
@@ -262,7 +228,7 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - Crashes from applications that were interacted XCUIApplications(bundleIdentifier:) or XCUIApplications(url:) are reported as warnings with attached crashlog  (166401942)
 - When you call an XCTest or Swift Testing assert within a test from the opposite framework, you will see a runtime issue with warning severity if the assertion failed.  (169220281)
 
-###### Resolved Issues in Xcode 264 Beta
+###### Resolved Issues
 
 - Fixed: When adding or removing test targets in an Xcode test plan, the file contents maintain a stable sort order.  (132043612)
 - Fixed: Attachments are not recorded from within the bodies of exit tests when using Swift Testing.  (149242118)
@@ -272,6 +238,14 @@ Xcode 26.4 beta 3 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26
 - Fixed: Xcode now reports tests as skipped when the `XCTSkip` API is used with an Objective-C override of the class-level `+setUp` method on an XCTestCase subclass.  (159894325)
 - Fixed: When running unit test targets with no host application, the test runner is now consistently launched with a default working directory of `/tmp`, from both Xcode and xcodebuild.  (162549425)
 - Fixed: XCTest now clears expectations that were created but not waited upon by the end of a test. Previously, an unwaited notification expectation could be invoked in unrelated tests.  (167529925)
+- Fixed: When an issue occurs in a Swift Testing test in a detached task or background thread, it may be recorded as a warning instead of as an error.  (170161483)
+- Fixed: Interoperability between XCTest and Swift Testing is no longer enabled by default. To enable this experimental feature, set the environment variable `SWIFT_TESTING_XCTEST_INTEROP_MODE` to `limited` in your test plan. ([`ST-0021`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/testing/0021-targeted-interoperability-swift-testing-and-xctest.md))  (171360625)
+
+###### Known Issues
+
+- When an XCTest class has the property `continueAfterFailure` set to false, a failure in an test method, `setUp`, or `tearDown` that is also declared `async` will skip any remaining retries for the current test. For example, if an affected test uses the “retry on failure” repetition mode, it will not attempt to re-run the test after failing.  (108565878) **Workaround:** In your test plan, set “Relaunch Tests for Each Repetition” to on.
+- Instances of `UIImage` cannot be attached to tests when testing a Mac Catalyst app.  (168320788) **Workaround:** Use the `UIImage.cgImage` property to get the underlying `CGImage` and attach it instead.
+- When using Xcode for Apple silicon, tests which use Swift Testing may crash at launch when using a Rosetta run destination.  (170347005) **Workaround:** Use Xcode Universal.
 
 ## See Also
 

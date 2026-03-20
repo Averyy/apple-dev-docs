@@ -6,7 +6,7 @@
 A disconnect reason indicating the foveated streaming service is currently unavailable.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

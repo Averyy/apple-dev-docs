@@ -9,7 +9,7 @@ Choose and render meshes with several levels of detail using object and mesh sha
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

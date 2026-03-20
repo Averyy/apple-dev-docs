@@ -60,7 +60,7 @@ In `LandmarkDetailView`, the sample adds toolbar items for:
 
 The system applies Liquid Glass to toolbar items automatically:
 
-![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/5074257308473e4332f64b4f188098de/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/d57c72c1a92b1dcdd763b4a22670a4db/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
 
 The sample also organizes the toolbar into related groups, instead of having all the buttons in one group. For more information, see [`Landmarks: Refining the system provided Liquid Glass effect in toolbars`](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md).
 

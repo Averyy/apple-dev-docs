@@ -25,7 +25,7 @@ An autoreleased [`CIImage`](ciimage.md).
 
 ## Parameters
 
-- `cache`: Controls if Core Image caches the returned image. If [`true`](https://developer.apple.com/documentation/Swift/true), this intermediate will be cacheable even if [`cacheIntermediates`](cicontextoption/cacheintermediates.md) is false. If [`false`](https://developer.apple.com/documentation/Swift/false), the intermediate will be not be cached if [`cacheIntermediates`](cicontextoption/cacheintermediates.md) is false.
+- `cache`: Controls if Core Image caches the returned image. If `true`, this intermediate will be cacheable even if [`cacheIntermediates`](cicontextoption/cacheintermediates.md) is false. If `false`, the intermediate will be not be cached if [`cacheIntermediates`](cicontextoption/cacheintermediates.md) is false.
 
 ## See Also
 

@@ -6,9 +6,9 @@
 An array of all the immersive cameras contained in the venue descriptor.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 - macOS 26.0+
 - visionOS 26.0+
 

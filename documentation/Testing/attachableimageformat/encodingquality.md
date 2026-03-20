@@ -7,7 +7,7 @@ The encoding quality to use for this image format.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

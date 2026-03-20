@@ -6,7 +6,7 @@
 Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

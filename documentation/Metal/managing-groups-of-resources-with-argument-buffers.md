@@ -9,7 +9,7 @@ Create argument buffers to organize related resources.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

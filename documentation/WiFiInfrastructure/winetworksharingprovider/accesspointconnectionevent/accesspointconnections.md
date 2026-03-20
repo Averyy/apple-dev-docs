@@ -6,8 +6,8 @@
 A list of access points to which the host connects for networks someone authorized to share to the device.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

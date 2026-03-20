@@ -6,8 +6,8 @@
 The person, parent, or guardian approved the request for authorization with access to non-tokenized family activity data.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ Only one app at a time can hold this authorization status on a given device. If 
 
 You may develop and test an app that achieves this status on devices in all regions by using an Apple-provided provisioning profile. Customer installations of your app can only achieve this status on devices located in the EU that are signed in with an Apple Account with an EU country or region. On devices outside the EU, [`authorizationStatus`](authorizationcenter/authorizationstatus.md) never returns `approvedWithDataAccess`, and any attempt to access [`FamilyActivityData`](familyactivitydata.md)properties fails with [`FamilyControlsError.unavailable`](familycontrolserror/unavailable.md).
 
-> ❗ **Important**: Add the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage capability to your app before accessing [`FamilyActivityData`](familyactivitydata.md). For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: Add the [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls.app-and-website-usage) capability to your app before accessing [`FamilyActivityData`](familyactivitydata.md). For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

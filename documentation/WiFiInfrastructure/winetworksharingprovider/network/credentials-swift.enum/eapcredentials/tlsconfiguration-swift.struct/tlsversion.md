@@ -6,8 +6,8 @@
 Values that define the version of the Transport Layer Security (TLS) protocol to use with EAP authentication.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

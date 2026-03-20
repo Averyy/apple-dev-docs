@@ -34,7 +34,7 @@ If the canvas isn’t open, choose Editor > Canvas to display the canvas. Then c
 
 In the canvas, use the controls under each line of code to see the details. For example, click the disclosure triangle under a variable name to show or hide its value.
 
-If a line of code contains a viewable object — such as an image, color, or location — Xcode displays it in the canvas. To collapse the view, toggle the eye button to off. For example, if a line of code prints a value, Xcode displays that value. If a line of code sets a `CLLocationCoordinate2D` variable, Xcode displays the location on a map.
+If a line of code contains a viewable object — such as an image, color, or location — Xcode displays it in the canvas. To collapse the view, toggle the eye button to off. For example, if a line of code prints a value, Xcode displays that value. If a line of code sets a [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) variable, Xcode displays the location on a map.
 
 ![A screenshot of the canvas showing a viewable CLLocationCoordinate2D variable displayed on a map with the disclosure triangle under the variable name open and the eye button on.](https://docs-assets.developer.apple.com/published/25772e77c023c7a5f6689521b7c563aa/running-playgrounds-line-of-code%402x.png)
 

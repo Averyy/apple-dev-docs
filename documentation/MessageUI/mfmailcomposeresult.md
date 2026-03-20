@@ -46,7 +46,7 @@ enum MFMailComposeResult
 
 ## See Also
 
-- [func mailComposeController(MFMailComposeViewController, didFinishWith: MFMailComposeResult, error: Error?)](mfmailcomposeviewcontrollerdelegate/mailcomposecontroller(_:didfinishwith:error:).md)
+- [func mailComposeController(MFMailComposeViewController, didFinishWith: MFMailComposeResult, error: (any Error)?)](mfmailcomposeviewcontrollerdelegate/mailcomposecontroller(_:didfinishwith:error:).md)
   Tells the delegate that the user wants to dismiss the mail composition view.
 
 

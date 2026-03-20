@@ -12,7 +12,7 @@ A collection of properties that explains your app’s need to observe the device
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

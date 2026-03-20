@@ -79,6 +79,8 @@ In addition to alternative app marketplaces, this framework also serves:
   An identifier that represents a single app version.
 - [let MarketplaceKitURIScheme: String](marketplacekiturischeme.md)
   A URI scheme that defines an alternative distribution app installation link.
+- [struct RequestAppDeletionAction](requestappdeletionaction.md)
+  A SwiftUI environment action that requests the deletion of an app.
 ### Background services
 - [protocol MarketplaceAppExtension](marketplaceappextension.md)
   An extension that facilitates authentication, installation, and launch of a marketplace with deep links.
@@ -116,8 +118,6 @@ In addition to alternative app marketplaces, this framework also serves:
 ### Deprecations
 - [protocol MarketplaceExtension](marketplaceextension.md)
 - [protocol MarketplaceExtensionConfiguration](marketplaceextensionconfiguration.md)
-### Structures
-- [struct RequestAppDeletionAction](requestappdeletionaction.md)
 
 
 ---

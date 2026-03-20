@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias CLongDouble = Double
+typealias CLongDouble = Float80
 ```
 
 ## See Also

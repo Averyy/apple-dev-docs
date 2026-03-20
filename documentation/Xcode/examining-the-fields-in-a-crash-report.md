@@ -45,7 +45,7 @@ The fields in the header can contain the following information. No single crash 
 - `AppStoreTools`: The version of Xcode used to compile your app’s bitcode and to thin your app to device specific variants.
 - `AppVariant`: The specific variant of your app produced by app thinning. This field contains multiple values, described later in this section.
 - `Code Type`: The CPU architecture of the process that crashed. The value is one of `ARM-64`, `ARM`, `X86-64`, or `X86`.
-- `Role`: The [`task_role`](https://developer.apple.comhttps://opensource.apple.com/source/xnu/xnu-3248.60.10/osfmk/mach/task_policy.h) assigned to the process at the time it crashes. This field is generally not helpful when you analyze a crash report.
+- `Role`: The [task_role][https://developer.apple.com/documentation/kernel/task_role_t] assigned to the process at the time it crashes. This field is generally not helpful when you analyze a crash report.
 - `Parent Process`: The name and process ID (in square brackets) of the process that launched the crashed process.
 - `Coalition`: The name of the process coalition containing the app. Process coalitions track resource usage among groups of related processes, such as an operating system process supporting a specific API’s functionality in an app. Most processes, including app extensions, form their own coalition.
 - `Date/Time`: The date and time of the crash.

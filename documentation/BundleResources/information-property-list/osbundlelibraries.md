@@ -10,7 +10,7 @@ The drivers that the system must load before your driver.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

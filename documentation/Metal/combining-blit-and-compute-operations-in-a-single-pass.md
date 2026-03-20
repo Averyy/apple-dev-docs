@@ -10,7 +10,7 @@ Run concurrent blit commands and then a compute dispatch in a single pass with a
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 
@@ -417,7 +417,7 @@ id<MTL4RenderCommandEncoder> renderEncoder =
 
 Before the renderer encodes any draw commands, it needs to resolve a potential access conflict between the render pass it’s encoding and the preceding compute pass. The conflict comes from the dispatch command in the compute pass that stores data `compositeColorTexture` and `compositeGrayscaleTexture` and the fragment shader in the render pass because it loads data from the same texture with a sampler.
 
-The renderer resolves this access conflict by encoding a consumer barrier between the `MTLStageDispatch` and `MTLStageFragment` stages:
+The renderer resolves this access conflict by encoding a consumer barrier between the [`dispatch`](mtlstages/dispatch.md) and [`fragment`](mtlstages/fragment.md) stages:
 
 ```objective-c
 [renderEncoder barrierAfterQueueStages:MTLStageDispatch
@@ -425,7 +425,7 @@ The renderer resolves this access conflict by encoding a consumer barrier betwee
                      visibilityOptions:MTL4VisibilityOptionDevice];
 ```
 
-The `afterQueueStages` parameter refers to stages in earlier passes, whereas the `beforeStages` parameter refers to stages in the current and later passes. The app passes `MTLStageFragment` to `beforeStages` because only the fragment stage accesses the texture, which means the GPU can run the vertex stage (`MTLStageVertex`) before the compute pass finishes.
+The `afterQueueStages` parameter refers to stages in earlier passes, whereas the `beforeStages` parameter refers to stages in the current and later passes. The app passes [`fragment`](mtlstages/fragment.md) to `beforeStages` because only the fragment stage accesses the texture, which means the GPU can run the vertex stage ([`vertex`](mtlstages/vertex.md)) before the compute pass finishes.
 
 > ❗ **Important**: To minimize the runtime performance of a barrier, carefully choose only the stages that need to wait for another stage.
 

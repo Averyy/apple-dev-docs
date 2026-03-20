@@ -36,7 +36,6 @@ If the cached version of the image uses less memory than the original image data
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [convenience init(byReferencing: URL)](nsimage/init(byreferencing:).md)
   Initializes and returns an image object using the specified URL.
 - [convenience init?(contentsOfFile: String)](nsimage/init(contentsoffile:).md)

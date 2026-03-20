@@ -9,7 +9,7 @@ Use a compute pass to encode an argument buffer and access its arguments in a su
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

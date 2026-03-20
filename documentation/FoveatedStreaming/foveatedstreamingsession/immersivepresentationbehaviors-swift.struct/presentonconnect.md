@@ -6,7 +6,7 @@
 Opens the immersive space when the session connects.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

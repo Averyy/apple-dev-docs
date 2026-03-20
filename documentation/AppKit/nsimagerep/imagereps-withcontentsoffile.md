@@ -38,7 +38,6 @@ The `NSImageRep` subclass is initialized by creating an `NSData` object based on
 
 - [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
   Returns the file types supported by the image representation class or one of its subclasses.
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [class func imageReps(with: NSPasteboard) -> [NSImageRep]?](nsimagerep/imagereps(with:).md)
   Creates and returns an array of image representation objects initialized using the contents of the pasteboard.
 - [class func imageReps(withContentsOf: URL) -> [NSImageRep]?](nsimagerep/imagereps(withcontentsof:).md)

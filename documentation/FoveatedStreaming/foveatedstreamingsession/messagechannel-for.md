@@ -6,7 +6,7 @@
 Creates or retrieves a message channel for the given message channel ID.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

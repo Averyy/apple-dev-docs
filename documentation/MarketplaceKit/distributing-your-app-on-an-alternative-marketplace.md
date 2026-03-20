@@ -39,6 +39,8 @@ In apps that people install from alternative marketplaces, use APIs that vary fr
 
 API availability varies depending on the source, so your app needs to check the current source at each launch — not just at the first launch — and adjust the APIs it uses accordingly.
 
+In addition, for apps that aren’t marketplaces, use [`eligibilityRegion`](appdistributor/eligibilityregion.md) to determine if an Apple Account is signed in that has a region eligible for transaction reporting.
+
 #### Enable Your App to Run on Other Platforms
 
 Apps can run on platforms that MarketplaceKit doesn’t support, including macOS using Mac Catalyst or as-is on Apple silicon, and visionOS. To check the platform, use `#if canImport(MarketplaceKit)`, which returns `false` for Mac apps built with Mac Catalyst and visionOS. Avoid importing MarketplaceKit on unsupported platforms, as follows:

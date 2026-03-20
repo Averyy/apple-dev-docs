@@ -13,7 +13,7 @@ Custom App Transport Security (ATS) configurations for named domains.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

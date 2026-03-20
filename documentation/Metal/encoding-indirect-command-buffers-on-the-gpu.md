@@ -9,7 +9,7 @@ Maximize CPU to GPU parallelization by generating render commands on the GPU.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

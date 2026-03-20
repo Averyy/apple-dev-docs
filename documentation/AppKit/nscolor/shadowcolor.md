@@ -20,7 +20,7 @@ The system color for the virtual shadows case by raised objects on the screen.
 
 #### Discussion
 
-This method is invoked by [`shadow(withLevel:)`](nscolor/shadow(withlevel:).md). For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+This method is invoked by [`shadow(withLevel:)`](nscolor/shadow(withlevel:).md). For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

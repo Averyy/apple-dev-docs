@@ -84,7 +84,7 @@ To set up the entitlement in your app, open the target’s Signing & Capabilitie
 
 > ❗ **Important**: For a single-target watchOS apps, add the Associated Domains capability to the watchOS app target. For watchOS apps with separate WatchKit extensions, you must add the Associated Domains capability to the WatchKit Extension target.
 
-To add your domain to the entitlement, click Add (+) at the bottom of the Domains table to add a placeholder domain. Replace the placeholder with the appropriate prefix for the service your app supports and your site’s domain. Make sure to only include the desired subdomain and the top-level domain. Don’t include path and query components or a trailing slash (`/)`.
+To add your domain to the entitlement, click the Add button (+) at the bottom of the Domains table to add a placeholder domain. Replace the placeholder with the appropriate prefix for the service your app supports and your site’s domain. Make sure to only include the desired subdomain and the top-level domain. Don’t include path and query components or a trailing slash (`/)`.
 
 ![A screenshot of the Associated Domains table in Xcode with two domains listed.](https://docs-assets.developer.apple.com/published/3c16a5146cb1de5e57b632dce38b5553/supporting-associated-domains-1%402x.png)
 

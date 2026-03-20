@@ -10,7 +10,7 @@ A dictionary that specifies the minimum size of the floating window in which Fin
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

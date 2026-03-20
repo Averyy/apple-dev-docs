@@ -246,6 +246,12 @@ A list of components being built during this action.
 
 Ensures that your libraries are built for distribution. For Swift, this enables support for library evolution and generation of a module interface file.
 
+##### Build Known Localizations Only
+
+**Setting name:** `BUILD_ONLY_KNOWN_LOCALIZATIONS`
+
+When enabled, only builds content for languages explicitly supported by the project.
+
 ##### Build Variants
 
 **Setting name:** `BUILD_VARIANTS`
@@ -562,6 +568,12 @@ Compiles Objective-C code to enable weak references for code compiled with manua
 **Setting name:** `CLANG_ENABLE_STACK_ZERO_INIT`
 
 Automatically initializes stack variables to zero as a security protection.
+
+##### Do Not Index C Macros
+
+**Setting name:** `CLANG_INDEX_STORE_IGNORE_MACROS`
+
+Do not emit entries for C macros into the Index Store.
 
 ##### Implicitly Link Objective C Runtime Support
 
@@ -1083,13 +1095,19 @@ The name of the active architecture being processed.
 
 This setting defines the current version of the project. The value must be a integer or floating point number, such as `57` or `365.8`.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleversion) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) key in the `Info.plist` file to the value of this build setting.
 
 ##### Currentvariant
 
 **Setting name:** `CURRENT_VARIANT`
 
 The name of the active variant being processed.
+
+##### Compiler Launcher
+
+**Setting name:** `C_COMPILER_LAUNCHER`
+
+The path to a compiler launcher. This build setting causes the build system to invoke the launcher tool with the original compiler path and arguments. Examples include `distcc` and `ccache`. Don’t use the `CC`, `CPLUSPLUS`, `OBJCC`, or `OBJCPLUSPLUS` build settings to specify a compiler launcher.
 
 ##### Dead Code Stripping
 
@@ -1517,7 +1535,7 @@ Identifies the directory that contains the binary the target builds.
 
 Specifies the name of the binary the target produces.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleExecutable`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleexecutable) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleExecutable`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleexecutable) key in the `Info.plist` file to the value of this build setting.
 
 ##### Executablepath
 
@@ -1796,7 +1814,7 @@ Reuse string literals.
 
 Make enums only as large as needed for the range of possible values.
 
-This setting generates code that may not binary compatible with code generated without this setting or with macOS frameworks.
+This setting generates code that may not be binary compatible with code generated without this setting or with macOS frameworks.
 
 ##### Enforce Strict Aliasing
 
@@ -2146,6 +2164,12 @@ Specifies whether the header map contains a framework-name/path entry for every 
 
 Specifies whether the header map contains a name/path entry for every header in the project, regardless of the headers’ target membership.
 
+##### Header Dependencies
+
+**Setting name:** `HEADER_DEPENDENCIES`
+
+Header files this target depends on.
+
 ##### Header Search Paths
 
 **Setting name:** `HEADER_SEARCH_PATHS`
@@ -2290,6 +2314,18 @@ This is a list of `fnmatch()`-style patterns of file or directory names to inclu
 
 A list of patterns (as defined by `fnmatch(3)`) specifying the names of source files to explicitly *include* when processing the files in the target’s build phases. This setting is only useful when combined with `EXCLUDED_SOURCE_FILE_NAMES`, and can be used to define complex filters for which files from the phase should be built in response to other build settings.
 
+##### Compress Index Store
+
+**Setting name:** `INDEX_STORE_COMPRESS`
+
+Compress the index store, reducing its size on disk.
+
+##### Index Only Project Files
+
+**Setting name:** `INDEX_STORE_ONLY_PROJECT_FILES`
+
+Only index the source files that are being compiled within this project. Do not emit data into the index store for system modules.
+
 ##### Expand Build Settings in Infoplist File
 
 **Setting name:** `INFOPLIST_EXPAND_BUILD_SETTINGS`
@@ -2304,19 +2340,19 @@ The project-relative path to the property list file that contains the `Info.plis
 
 The build system merges the values you specify in this file with other values it generates during the build process. The product type, target platform, App Privacy manifests, input from other build tools, and other built-in logic impact the contents of the final `Info.plist` file it produces. When `GENERATE_INFOPLIST_FILE` is enabled, the build system also includes content from build settings in the merge process.
 
-For details on information property list files, see [`Information Property List`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list).
+For details on information property list files, see [`Information Property List`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list).
 
 ##### Bundle Display Name
 
 **Setting name:** `INFOPLIST_KEY_CFBundleDisplayName`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleDisplayName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/cfbundledisplayname) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleDisplayName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledisplayname) key in the `Info.plist` file to the value of this build setting.
 
 ##### Complication Principal Class
 
 **Setting name:** `INFOPLIST_KEY_CLKComplicationPrincipalClass`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CLKComplicationPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/clkcomplicationprincipalclass) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CLKComplicationPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/clkcomplicationprincipalclass) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Game Controller User Interaction
 
@@ -2334,37 +2370,37 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the GCSupportsGameM
 
 **Setting name:** `INFOPLIST_KEY_ITSAppUsesNonExemptEncryption`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`ITSAppUsesNonExemptEncryption`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/itsappusesnonexemptencryption) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`ITSAppUsesNonExemptEncryption`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/itsappusesnonexemptencryption) key in the `Info.plist` file to the value of this build setting.
 
 ##### App Encryption Export Compliance Code
 
 **Setting name:** `INFOPLIST_KEY_ITSEncryptionExportComplianceCode`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`ITSEncryptionExportComplianceCode`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/itsencryptionexportcompliancecode) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`ITSEncryptionExportComplianceCode`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/itsencryptionexportcompliancecode) key in the `Info.plist` file to the value of this build setting.
 
 ##### Application Category
 
 **Setting name:** `INFOPLIST_KEY_LSApplicationCategoryType`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSApplicationCategoryType`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/lsapplicationcategorytype) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSApplicationCategoryType`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lsapplicationcategorytype) key in the `Info.plist` file to the value of this build setting.
 
 ##### Application Is Background Only
 
 **Setting name:** `INFOPLIST_KEY_LSBackgroundOnly`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSBackgroundOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/lsbackgroundonly) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSBackgroundOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lsbackgroundonly) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Opening Documents in Place
 
 **Setting name:** `INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSSupportsOpeningDocumentsInPlace`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/lssupportsopeningdocumentsinplace) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSSupportsOpeningDocumentsInPlace`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lssupportsopeningdocumentsinplace) key in the `Info.plist` file to the value of this build setting.
 
 ##### Application Is Agent Uielement
 
 **Setting name:** `INFOPLIST_KEY_LSUIElement`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSUIElement`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/lsuielement) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSUIElement`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lsuielement) key in the `Info.plist` file to the value of this build setting.
 
 ##### Metal Capture Enabled
 
@@ -2376,43 +2412,43 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the MetalCaptureEna
 
 **Setting name:** `INFOPLIST_KEY_NFCReaderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NFCReaderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nfcreaderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NFCReaderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nfcreaderusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Accessory Tracking Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAccessoryTrackingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAccessoryTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsaccessorytrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAccessoryTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsaccessorytrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Other Application Data Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAppDataUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppDataUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsappdatausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppDataUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsappdatausagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Appleevents Sending Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAppleEventsUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppleEventsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsappleeventsusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppleEventsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsappleeventsusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Media Library Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAppleMusicUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppleMusicUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsapplemusicusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppleMusicUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Bluetooth Always Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSBluetoothAlwaysUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsbluetoothalwaysusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSBluetoothAlwaysUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsbluetoothalwaysusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Bluetooth Peripheral Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSBluetoothPeripheralUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsbluetoothperipheralusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSBluetoothPeripheralUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsbluetoothperipheralusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Bluetooth While in Use Usage Description
 
@@ -2424,73 +2460,73 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSBluetoothWhil
 
 **Setting name:** `INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsFullAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nscalendarsfullaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsFullAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsfullaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Calendars Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCalendarsUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nscalendarsusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Calendars Write Only Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsWriteOnlyAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nscalendarswriteonlyaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsWriteOnlyAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarswriteonlyaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Camera Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCameraUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nscamerausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Contacts Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSContactsUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSContactsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nscontactsusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSContactsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscontactsusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Critical Messaging Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCriticalMessagingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCriticalMessagingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nscriticalmessagingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCriticalMessagingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscriticalmessagingusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Desktop Folder Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSDesktopFolderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDesktopFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsdesktopfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDesktopFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsdesktopfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Documents Folder Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSDocumentsFolderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDocumentsFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsdocumentsfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDocumentsFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsdocumentsfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Downloads Folder Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSDownloadsFolderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDownloadsFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsdownloadsfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDownloadsFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsdownloadsfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Face Id Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFaceIDUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFaceIDUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsfaceidusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFaceIDUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfaceidusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Fall Detection Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFallDetectionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFallDetectionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsfalldetectionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFallDetectionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfalldetectionusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Access to a File Provide Domain Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFileProviderDomainUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFileProviderDomainUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsfileproviderdomainusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFileProviderDomainUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfileproviderdomainusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy File Provider Presence Usage Description
 
@@ -2502,7 +2538,7 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSFileProviderP
 
 **Setting name:** `INFOPLIST_KEY_NSFinancialDataUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFinancialDataUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsfinancialdatausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFinancialDataUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfinancialdatausagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Focus Status Usage Description
 
@@ -2514,193 +2550,193 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSFocusStatusUs
 
 **Setting name:** `INFOPLIST_KEY_NSGKFriendListUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsgkfriendlistusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Hands Tracking Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHandsTrackingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHandsTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nshandstrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHandsTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshandstrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Health Records Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthClinicalHealthRecordsShareUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nshealthclinicalhealthrecordsshareusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthClinicalHealthRecordsShareUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Health Share Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHealthShareUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthShareUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nshealthshareusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthShareUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Health Update Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHealthUpdateUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthUpdateUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nshealthupdateusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthUpdateUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Homekit Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHomeKitUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHomeKitUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nshomekitusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHomeKitUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshomekitusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Copyright Human Readable
 
 **Setting name:** `INFOPLIST_KEY_NSHumanReadableCopyright`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHumanReadableCopyright`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nshumanreadablecopyright) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHumanReadableCopyright`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshumanreadablecopyright) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Identity Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSIdentityUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSIdentityUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsidentityusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSIdentityUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsidentityusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Local Network Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocalNetworkUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocalNetworkUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocalnetworkusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocalNetworkUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Location Always and When in Use Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Location Always Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationAlwaysUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationAlwaysUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationalwaysusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationAlwaysUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Location Temporary Usage Description Dictionary
 
 **Setting name:** `INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationtemporaryusagedescriptiondictionary) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationtemporaryusagedescriptiondictionary) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Location Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Location When in Use Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationWhenInUseUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Main Camera Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSMainCameraUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsmaincamerausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmaincamerausagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Main Nib File Base Name
 
 **Setting name:** `INFOPLIST_KEY_NSMainNibFile`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainNibFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsmainnibfile) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainNibFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmainnibfile) key in the `Info.plist` file to the value of this build setting.
 
 ##### Appkit Main Storyboard File Base Name
 
 **Setting name:** `INFOPLIST_KEY_NSMainStoryboardFile`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainStoryboardFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsmainstoryboardfile) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainStoryboardFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmainstoryboardfile) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Microphone Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSMicrophoneUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMicrophoneUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsmicrophoneusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMicrophoneUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Motion Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSMotionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMotionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsmotionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMotionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Nearby Interaction Allow Once Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNearbyInteractionAllowOnceUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsnearbyinteractionallowonceusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNearbyInteractionAllowOnceUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionallowonceusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Nearby Interaction Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSNearbyInteractionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNearbyInteractionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsnearbyinteractionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNearbyInteractionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Network Volumes Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSNetworkVolumesUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNetworkVolumesUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsnetworkvolumesusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNetworkVolumesUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsnetworkvolumesusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Photo Library Additions Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsphotolibraryaddusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Photo Library Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSPhotoLibraryUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsphotolibraryusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Principal Class
 
 **Setting name:** `INFOPLIST_KEY_NSPrincipalClass`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsprincipalclass) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsprincipalclass) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Reminders Full Access Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSRemindersFullAccessUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemindersFullAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsremindersfullaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemindersFullAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsremindersfullaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Reminders Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSRemindersUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemindersUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsremindersusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemindersUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsremindersusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Removable Volumes Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSRemovableVolumesUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemovableVolumesUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsremovablevolumesusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemovableVolumesUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsremovablevolumesusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Sensorkit Privacy Policy Url
 
 **Setting name:** `INFOPLIST_KEY_NSSensorKitPrivacyPolicyURL`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSensorKitPrivacyPolicyURL`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nssensorkitprivacypolicyurl) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSensorKitPrivacyPolicyURL`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitprivacypolicyurl) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Sensorkit Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSensorKitUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSensorKitUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nssensorkitusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSensorKitUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Siri Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSiriUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSiriUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nssiriusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSiriUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssiriusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Speech Recognition Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSpeechRecognitionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsspeechrecognitionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Sticker Sharing Level
 
@@ -2712,19 +2748,19 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSStickerSharin
 
 **Setting name:** `INFOPLIST_KEY_NSSupportsLiveActivities`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSupportsLiveActivities`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nssupportsliveactivities) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSupportsLiveActivities`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivities) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Frequent Updates of Live Activities
 
 **Setting name:** `INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSupportsLiveActivitiesFrequentUpdates`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nssupportsliveactivitiesfrequentupdates) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSupportsLiveActivitiesFrequentUpdates`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy System Administration Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSystemAdministrationUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSystemAdministrationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nssystemadministrationusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSystemAdministrationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssystemadministrationusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy System Extension Usage Description
 
@@ -2736,13 +2772,13 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSSystemExtensi
 
 **Setting name:** `INFOPLIST_KEY_NSUserTrackingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSUserTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSUserTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Tv Provider Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSVideoSubscriberAccountUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSVideoSubscriberAccountUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsvideosubscriberaccountusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSVideoSubscriberAccountUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsvideosubscriberaccountusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Voip Usage Description
 
@@ -2754,7 +2790,7 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSVoIPUsageDesc
 
 **Setting name:** `INFOPLIST_KEY_NSWorldSensingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSWorldSensingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsworldsensingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSWorldSensingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsworldsensingusagedescription) key in the `Info.plist` file to the value of this build setting.
 
 ##### Privacy Driver Extension Usage Description
 
@@ -2766,103 +2802,103 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the OSBundleUsageDe
 
 **Setting name:** `INFOPLIST_KEY_UIApplicationSceneManifest_Generation`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIApplicationSceneManifest`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uiapplicationscenemanifest) key in the Info.plist file to an entry suitable for a multi-window application.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIApplicationSceneManifest`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key in the Info.plist file to an entry suitable for a multi-window application.
 
 ##### Supports Indirect Events
 
 **Setting name:** `INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uiapplicationsupportsindirectinputevents) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationsupportsindirectinputevents) key in the `Info.plist` file to the value of this build setting.
 
 ##### Launch Screen Generation
 
 **Setting name:** `INFOPLIST_KEY_UILaunchScreen_Generation`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UILaunchScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uilaunchscreen) key in the Info.plist file to an empty dictionary.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UILaunchScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchscreen) key in the Info.plist file to an empty dictionary.
 
 ##### Launch Screen Interface File Base Name
 
 **Setting name:** `INFOPLIST_KEY_UILaunchStoryboardName`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UILaunchStoryboardName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uilaunchstoryboardname) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UILaunchStoryboardName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchstoryboardname) key in the `Info.plist` file to the value of this build setting.
 
 ##### Uikit Main Storyboard File Base Name
 
 **Setting name:** `INFOPLIST_KEY_UIMainStoryboardFile`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIMainStoryboardFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uimainstoryboardfile) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIMainStoryboardFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uimainstoryboardfile) key in the `Info.plist` file to the value of this build setting.
 
 ##### Required Device Capabilities
 
 **Setting name:** `INFOPLIST_KEY_UIRequiredDeviceCapabilities`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIRequiredDeviceCapabilities`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uirequireddevicecapabilities) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIRequiredDeviceCapabilities`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) key in the `Info.plist` file to the value of this build setting.
 
 ##### Requires Full Screen
 
 **Setting name:** `INFOPLIST_KEY_UIRequiresFullScreen`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIRequiresFullScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uirequiresfullscreen) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIRequiresFullScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreen) key in the `Info.plist` file to the value of this build setting.
 
 ##### Status Bar Initially Hidden
 
 **Setting name:** `INFOPLIST_KEY_UIStatusBarHidden`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIStatusBarHidden`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uistatusbarhidden) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIStatusBarHidden`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uistatusbarhidden) key in the `Info.plist` file to the value of this build setting.
 
 ##### Status Bar Style
 
 **Setting name:** `INFOPLIST_KEY_UIStatusBarStyle`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIStatusBarStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uistatusbarstyle) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIStatusBarStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uistatusbarstyle) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supported Interface Orientations
 
 **Setting name:** `INFOPLIST_KEY_UISupportedInterfaceOrientations`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supported Interface Orientations Ipad
 
 **Setting name:** `INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supported Interface Orientations Iphone
 
 **Setting name:** `INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Document Browser
 
 **Setting name:** `INFOPLIST_KEY_UISupportsDocumentBrowser`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportsDocumentBrowser`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uisupportsdocumentbrowser) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportsDocumentBrowser`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsdocumentbrowser) key in the `Info.plist` file to the value of this build setting.
 
 ##### User Interface Style
 
 **Setting name:** `INFOPLIST_KEY_UIUserInterfaceStyle`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIUserInterfaceStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/uiuserinterfacestyle) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIUserInterfaceStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uiuserinterfacestyle) key in the `Info.plist` file to the value of this build setting.
 
 ##### Watchkit Companion App Bundle Identifier
 
 **Setting name:** `INFOPLIST_KEY_WKCompanionAppBundleIdentifier`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKCompanionAppBundleIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/wkcompanionappbundleidentifier) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKCompanionAppBundleIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkcompanionappbundleidentifier) key in the `Info.plist` file to the value of this build setting.
 
 ##### Watchkit Extension Delegate Class Name
 
 **Setting name:** `INFOPLIST_KEY_WKExtensionDelegateClassName`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKExtensionDelegateClassName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/wkextensiondelegateclassname) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKExtensionDelegateClassName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkextensiondelegateclassname) key in the `Info.plist` file to the value of this build setting.
 
 ##### App Can Run Independently of Companion Iphone App
 
 **Setting name:** `INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/wkrunsindependentlyofcompanionapp) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkrunsindependentlyofcompanionapp) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Launch for Live Activity Attribute Types
 
@@ -2874,7 +2910,7 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the WKSupportsLiveA
 
 **Setting name:** `INFOPLIST_KEY_WKWatchOnly`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKWatchOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/wkwatchonly) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKWatchOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkwatchonly) key in the `Info.plist` file to the value of this build setting.
 
 ##### Infoplist Other Preprocessor Flags
 
@@ -3164,6 +3200,12 @@ When enabled, localizable content in this target/project can be exported.
 
 When enabled, string tables generated in a localization export will prefer the String Catalog format.
 
+##### Localized Strings in Code Comments
+
+**Setting name:** `LOCALIZED_STRING_CODE_COMMENTS`
+
+When enabled, localizable strings wrapped in NSLocalizedString and similar string macros will be extracted even if commented out or wrapped in `#if 0`.
+
 ##### Localized String Macro Names
 
 **Setting name:** `LOCALIZED_STRING_MACRO_NAMES`
@@ -3200,7 +3242,7 @@ Compile `.xcmappingmodel` files into `.cdm` without reporting warnings.
 
 This setting defines the user-visible version of the project.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleShortVersionString`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleShortVersionString`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) key in the `Info.plist` file to the value of this build setting.
 
 ##### Alternative Distribution Marketplaces
 
@@ -3250,6 +3292,12 @@ Specifies the directory that contains the product’s Clang module maps and Swif
 **Setting name:** `MODULE_CACHE_DIR`
 
 Absolute path of folder in which compiler stores its cached modules—this cache is a performance improvement.
+
+##### Module Dependencies
+
+**Setting name:** `MODULE_DEPENDENCIES`
+
+Other modules this target depends on.
 
 ##### Module Identifier
 
@@ -3676,7 +3724,7 @@ Path of the per-architecture, per-variant intermediate Info.plist after C prepro
 
 A string that uniquely identifies the bundle. The string should be in reverse DNS format using only alphanumeric characters (`A-Z`, `a-z`, `0-9`), the dot (`.`), and the hyphen (`-`).
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleidentifier) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) key in the `Info.plist` file to the value of this build setting.
 
 ##### Productdefinitionplist
 
@@ -3696,7 +3744,7 @@ The name to use for the source code module constructed for this target, and whic
 
 This is the basename of the product generated by the target.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/cfbundlename) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundlename) key in the `Info.plist` file to the value of this build setting.
 
 ##### Project Name
 
@@ -3960,6 +4008,14 @@ The path where precompiled prefix header files are placed during a build. Defaul
 
 If enabled, don’t install built products even if deployment locations are active.
 
+##### Skip Mergeable Library Bundle Hook
+
+**Setting name:** `SKIP_MERGEABLE_LIBRARY_BUNDLE_HOOK`
+
+For mergeable libraries, skips adding a hook into the library’s resource bundle. This will prevent `Bundle(for:)` from returning this library’s resource bundle.
+
+For more information on mergeable libraries, see [`Configuring your project to use mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries).
+
 ##### Srcroot
 
 **Setting name:** `SRCROOT`
@@ -4072,6 +4128,12 @@ A list of compilation conditions to enable for conditional compilation expressio
 
 Enables upcoming features that aim to provide a more approachable path to Swift Concurrency: DisableOutwardActorInference, GlobalActorIsolatedTypesUsability, InferIsolatedConformances, InferSendableFromCaptures, and NonisolatedNonsendingByDefault.
 
+##### Bridging Header Is Internal to the Module
+
+**Setting name:** `SWIFT_BRIDGING_HEADER_IS_INTERNAL`
+
+When there is a bridging header, this setting indicates whether the contents of that bridging header should be imported as-if they came from an internal import. This is necessary when using bridging headers with Swift modules that are imported into other modules.
+
 ##### Compilation Mode
 
 **Setting name:** `SWIFT_COMPILATION_MODE`
@@ -4153,11 +4215,11 @@ For frameworks, install the C++/Objective-C generated header describing bridged 
 
 Automatically link frameworks and libraries that are referenced using `import`.
 
-##### Objective C Bridging Header
+##### Bridging Header
 
 **Setting name:** `SWIFT_OBJC_BRIDGING_HEADER`
 
-Path to the header defining the Objective-C interfaces to be exposed in Swift.
+Path to the header defining the C interfaces to be exposed in Swift.
 
 ##### Generated Header Name
 

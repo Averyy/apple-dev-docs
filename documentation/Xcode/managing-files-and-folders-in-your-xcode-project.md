@@ -41,7 +41,7 @@ The final step is to save your file to the file system. When Xcode prompts you f
 Xcode offers several ways to add existing files and folders to your project. You can:
 
 - Drag the files from the Finder into the Project navigator.
-- Click the Add button (+) in the Project navigator’s filter bar, and choose Add Files to “*projectName*”.
+- Click the Add button in the Project navigator’s filter bar, and choose Add Files to “*projectName*”.
 - Choose File > Add Files to “*projectName*”.
 
 Xcode prompts you to select the files and folders to add and configure how you want to add them to your project. If the file you’re adding requires a target, select at least one target. Then, select one of the following options from the Action picker:

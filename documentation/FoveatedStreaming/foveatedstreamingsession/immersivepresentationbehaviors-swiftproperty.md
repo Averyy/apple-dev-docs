@@ -6,7 +6,7 @@
 An optional set of behaviors which assist in automatically presenting the session’s immersive space.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

@@ -10,7 +10,7 @@ Draw a scene without rendering hidden geometry by checking whether each object i
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

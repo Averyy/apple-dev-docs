@@ -6,7 +6,7 @@
 Sends data to the streaming endpoint on this channel.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

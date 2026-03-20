@@ -6,8 +6,8 @@
 Returns an async sequence of access point events containing the currently connected access point(s) and future updates.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

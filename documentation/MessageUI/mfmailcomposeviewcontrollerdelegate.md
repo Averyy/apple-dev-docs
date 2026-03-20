@@ -26,7 +26,7 @@ Your delegate object is responsible for dismissing the picker when the operation
 ## Topics
 
 ### Responding to Email Completion
-- [func mailComposeController(MFMailComposeViewController, didFinishWith: MFMailComposeResult, error: Error?)](mfmailcomposeviewcontrollerdelegate/mailcomposecontroller(_:didfinishwith:error:).md)
+- [func mailComposeController(MFMailComposeViewController, didFinishWith: MFMailComposeResult, error: (any Error)?)](mfmailcomposeviewcontrollerdelegate/mailcomposecontroller(_:didfinishwith:error:).md)
   Tells the delegate that the user wants to dismiss the mail composition view.
 - [enum MFMailComposeResult](mfmailcomposeresult.md)
   Result codes returned when the mail composition interface is dismissed.
@@ -38,7 +38,7 @@ Your delegate object is responsible for dismissing the picker when the operation
 
 ## See Also
 
-- [var mailComposeDelegate: MFMailComposeViewControllerDelegate?](mfmailcomposeviewcontroller/mailcomposedelegate.md)
+- [var mailComposeDelegate: (any MFMailComposeViewControllerDelegate)?](mfmailcomposeviewcontroller/mailcomposedelegate.md)
   The mail composition view controller’s delegate.
 
 

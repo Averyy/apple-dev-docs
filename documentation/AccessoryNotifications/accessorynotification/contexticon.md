@@ -6,8 +6,8 @@
 A secondary icon that provides additional contextual information about the notification.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

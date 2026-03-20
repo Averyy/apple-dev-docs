@@ -22,7 +22,7 @@ When you want two (or more) targets to share common keychain items, make the sam
 2. Select the app’s target from the Targets list.
 3. Click the Signing & Capabilities tab in the project editor.
 4. Find the Keychain Sharing capability.
-5. Click the Add (+) button below the Keychain Groups list.
+5. Click the Add button (+) below the Keychain Groups list.
 6. Double-click the inserted keychain group to edit it.
 7. Enter a name for the keychain group: either the name of an existing group that’s already in use by your other apps, or a brand new group. For new groups, use reverse DNS notation for the name.
 8. Press the Return key to save the updated keychain group.

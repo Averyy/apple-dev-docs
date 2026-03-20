@@ -10,7 +10,7 @@ Text for a Services menu item.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

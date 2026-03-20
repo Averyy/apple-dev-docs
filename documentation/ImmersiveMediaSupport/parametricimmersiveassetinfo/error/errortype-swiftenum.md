@@ -6,9 +6,9 @@
 A type of an error that may occur when converting the original wide field of view video asset to a parametric immersive asset.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 - macOS 26.0+
 - visionOS 26.0+
 

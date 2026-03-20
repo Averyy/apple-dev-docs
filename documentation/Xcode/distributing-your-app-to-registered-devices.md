@@ -123,7 +123,7 @@ To install iOS, iPadOS, tvOS, visionOS, or watchOS apps with Apple Configurator 
 
 1. Attach the device to your Mac, or attach the paired phone for a watchOS device.
 2. Select the attached device.
-3. Click the Add button (+).
+3. Click the Add button.
 4. Select the iOS App file to install the app.
 
 > ❗ **Important**: Every time you run your `.ipa`-based app on an iOS or watchOS device, you need to enable Developer Mode on that device. See [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md) for more information.

@@ -11,7 +11,7 @@ A collection of properties that explain your app’s need to observe the locatio
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

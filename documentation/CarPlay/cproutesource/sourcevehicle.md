@@ -6,9 +6,9 @@
 Route and destination(s) being used by the vehicle is from the vehicle’s system.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

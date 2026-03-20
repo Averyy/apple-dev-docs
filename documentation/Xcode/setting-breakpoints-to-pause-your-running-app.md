@@ -66,7 +66,7 @@ When an unhandled Swift error causes a crash, the debugger shows a fatal error o
 
 ![Xcode displaying an app crashed with an uncaught Swift error.](https://docs-assets.developer.apple.com/published/36ed0fd739771f57f0e06b5b785e4405/setting-breakpoints-to-pause-your-running-app-6%402x.png)
 
-If the thrown error has a helpful error message, that may be enough information to resolve the problem. If not, add a Swift error breakpoint to pause on the line that throws the error. In the Breakpoint navigator, click the Add button (+) in the lower-left corner, and choose Swift Error Breakpoint. The app then pauses on the thrown error instead of the `try!`.
+If the thrown error has a helpful error message, that may be enough information to resolve the problem. If not, add a Swift error breakpoint to pause on the line that throws the error. In the Breakpoint navigator, click the Add button in the lower-left corner, and choose Swift Error Breakpoint. The app then pauses on the thrown error instead of the `try!`.
 
 ![Xcode displaying an app paused at a Swift error breakpoint, showing a line of code throwing a Swift error.](https://docs-assets.developer.apple.com/published/78b461c0ead40074865f1390ff73aadc/setting-breakpoints-to-pause-your-running-app-7%402x.png)
 
@@ -74,7 +74,7 @@ When an uncaught Objective-C error causes a crash, the debugger shows the crash 
 
 ![Xcode displaying an app crashed due to an uncaught Objective-C exception, with an error message describing a problem dequeueing a table view cell.](https://docs-assets.developer.apple.com/published/304c61cfdc887b277265ad35ac35bdd3/setting-breakpoints-to-pause-your-running-app-8%402x.png)
 
-Add an Objective-C exception breakpoint to pause on the line where the crash occurs instead of `main`. In the Breakpoint navigator, click the Add button (+) in the lower-left corner, and choose Exception Breakpoint.
+Add an Objective-C exception breakpoint to pause on the line where the crash occurs instead of `main`. In the Breakpoint navigator, click the Add button in the lower-left corner, and choose Exception Breakpoint.
 
 ![Xcode displaying an app paused on a line of code that dequeues a reusable cell for a table view with an invalid identifier, generating an Objective-C exception.](https://docs-assets.developer.apple.com/published/d485505f90a9c5c3b472b5dfc9359451/setting-breakpoints-to-pause-your-running-app-9%402x.png)
 
@@ -86,7 +86,7 @@ Xcode has tools called *sanitizers* to detect several different types of runtime
 
 ![Xcode displaying an app crashed due to a main thread runtime issue.](https://docs-assets.developer.apple.com/published/c116f770ce869e3713a69387f090ac48/setting-breakpoints-to-pause-your-running-app-10%402x.png)
 
-To pause your app and investigate, click the Add button (+) in the lower-left corner of the Breakpoint navigator,  choose Runtime Issue Breakpoint, and select the type of runtime issue for the breakpoint.
+To pause your app and investigate, click the Add button in the lower-left corner of the Breakpoint navigator,  choose Runtime Issue Breakpoint, and select the type of runtime issue for the breakpoint.
 
 ![Xcode displaying an app paused on a line of code that updates the user interface from a background thread.](https://docs-assets.developer.apple.com/published/4bcb34b738e31a681d15e095f8187a8d/setting-breakpoints-to-pause-your-running-app-11%402x.png)
 
@@ -102,7 +102,7 @@ To perform an action with a breakpoint, Control-click the breakpoint, either in 
 
 ![Xcode displaying a breakpoint with a debugger command action. The debugger command is “po indexPath”.](https://docs-assets.developer.apple.com/published/f6ac0431871e13b8fe9ede7c698b989b/setting-breakpoints-to-pause-your-running-app-12%402x.png)
 
-To perform more than one action at a breakpoint, click the Add button (+) to the right of an existing action to add another action. To continue executing your app without pausing after performing your action, select the “Automatically continue after evaluating actions” option.
+To perform more than one action at a breakpoint, click the Add button to the right of an existing action to add another action. To continue executing your app without pausing after performing your action, select the “Automatically continue after evaluating actions” option.
 
 ## See Also
 

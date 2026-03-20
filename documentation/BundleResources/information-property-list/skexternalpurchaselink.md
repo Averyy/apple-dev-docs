@@ -16,7 +16,7 @@ A dictionary that contains URLs to websites where people using your app can make
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

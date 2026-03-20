@@ -6,7 +6,7 @@
 Pauses a session without ending it.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

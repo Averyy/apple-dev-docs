@@ -11,7 +11,7 @@ The user interface to show while an app launches.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

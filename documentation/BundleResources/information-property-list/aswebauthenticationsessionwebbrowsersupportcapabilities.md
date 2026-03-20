@@ -10,7 +10,7 @@ A collection of keys that a browser app uses to declare its ability to handle au
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

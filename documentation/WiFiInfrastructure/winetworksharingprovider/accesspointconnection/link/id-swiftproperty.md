@@ -6,8 +6,8 @@
 A stable per-link ID that can be used to uniquely identify this link. ID will be stable for the lifetime of a given App launch.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

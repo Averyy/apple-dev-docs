@@ -18,7 +18,7 @@ class var alternateSelectedControlTextColor: NSColor { get }
 
 This color is the table and list view equivalent to the [`selectedControlTextColor`](nscolor/selectedcontroltextcolor.md) color, which is used for controls in other views.
 
-For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

@@ -18,8 +18,6 @@ var windingRule: NSBezierPath.WindingRule { get set }
 
 This value may be either [`NSNonZeroWindingRule`](nsnonzerowindingrule.md) or [`NSEvenOddWindingRule`](nsevenoddwindingrule.md). This value overrides the default value returned by the [`defaultWindingRule`](nsbezierpath/defaultwindingrule.md) method.
 
-For more information on how winding rules affect the appearance of filled paths, see [`Cocoa Drawing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290).
-
 ## See Also
 
 - [func fill()](nsbezierpath/fill.md)

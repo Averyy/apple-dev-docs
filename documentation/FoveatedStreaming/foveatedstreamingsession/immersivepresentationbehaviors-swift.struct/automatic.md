@@ -6,7 +6,7 @@
 Opens the immersive space when the session connects or resumes and dismisses the immersive space when the session pauses or disconnects.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

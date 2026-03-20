@@ -25,10 +25,10 @@ When an `NSAnimation` object reaches the end of its planned duration, it has a p
 
 ## See Also
 
+- [protocol NSAnimationDelegate](nsanimationdelegate.md)
+  A set of optional methods implemented by delegates of [`NSAnimation`](nsanimation.md) objects.
 - [var currentProgress: NSAnimation.Progress](nsanimation/currentprogress.md)
   The current progress of the animation.
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
-- [Animation Programming Guide for Cocoa](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AnimationGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003592)
 - [func animationDidStop(NSAnimation)](nsanimationdelegate/animationdidstop(_:).md)
   Sent to the delegate when the specified animation is stopped before it completes its run.
 - [func animationShouldStart(NSAnimation) -> Bool](nsanimationdelegate/animationshouldstart(_:).md)

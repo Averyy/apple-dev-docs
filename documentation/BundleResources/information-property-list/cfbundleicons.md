@@ -14,7 +14,7 @@ Information about all of the icons used by the app.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

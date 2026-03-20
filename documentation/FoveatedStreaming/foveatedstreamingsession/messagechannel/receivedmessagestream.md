@@ -6,7 +6,7 @@
 An async stream that yields data objects each time the channel receives a message.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

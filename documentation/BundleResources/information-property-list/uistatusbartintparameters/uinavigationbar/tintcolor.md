@@ -14,7 +14,7 @@ The tint color to apply to the background of the navigation bar.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

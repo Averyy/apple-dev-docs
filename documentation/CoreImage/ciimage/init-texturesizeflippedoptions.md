@@ -33,7 +33,7 @@ Core Image ignores the texture filtering and wrap modes (`GL_TEXTURE_FILTER` and
 
 - `name`: An OpenGL texture. Because [`CIImage`](ciimage.md) objects are immutable, the texture  must remain unchanged for the life of the image object. See the discussion for more information.
 - `size`: The dimensions of the texture.
-- `flipped`: [`true`](https://developer.apple.com/documentation/Swift/true) to have Core Image flip the coordinates of the texture vertically to convert between OpenGL and Core Image coordinate systems.
+- `flipped`: `true` to have Core Image flip the coordinates of the texture vertically to convert between OpenGL and Core Image coordinate systems.
 - `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also

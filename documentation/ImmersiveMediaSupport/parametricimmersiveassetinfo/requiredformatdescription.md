@@ -6,9 +6,9 @@
 A result format descriptor for overriding a mutable video track that’s used to convert the asset to parametric immersive asset. Use `replaceFormatDescription` to replace the format description on the `AVMutableMovieTrack`.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
 - macOS 26.0+
 - visionOS 26.0+
 

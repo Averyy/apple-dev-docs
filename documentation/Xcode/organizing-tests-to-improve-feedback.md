@@ -123,7 +123,7 @@ The values you can specify in a test plan configuration are:
 
 For more information on the address sanitizer, thread sanitizer, undefined behavior sanitizer, and main thread checker, see [`Diagnosing memory, thread, and crash issues early`](diagnosing-memory-thread-and-crash-issues-early.md).
 
-To create additional test plan configurations, click the Add button. Xcode runs the tests specified in a test plan once for each of that plan’s configurations.
+To create additional test plan configurations, click the Add button (+). Xcode runs the tests specified in a test plan once for each of that plan’s configurations.
 
 ##### Add a Test Plan to a Scheme
 

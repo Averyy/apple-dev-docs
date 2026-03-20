@@ -6,8 +6,8 @@
 Makes additional network connections over a preexisting Wi-Fi Aware data path without publishing or advertising services over Wi-Fi Aware.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

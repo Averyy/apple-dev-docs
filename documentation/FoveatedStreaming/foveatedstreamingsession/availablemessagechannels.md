@@ -6,7 +6,7 @@
 A list of all available message channels in this session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

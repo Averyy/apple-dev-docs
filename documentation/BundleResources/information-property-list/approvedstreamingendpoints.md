@@ -3,14 +3,14 @@
 **Framework**: Bundle Resources  
 **Kind**: dictionary
 
-A dictionary of streaming endpoints in visionOS to which [`connect(endpoint:)`](https://developer.apple.com/documentation/FoveatedStreaming/FoveatedStreamingSession/connect(endpoint:)) may connect.
+A dictionary of streaming endpoints in visionOS to which Foveated Streaming clients may connect.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Properties
 

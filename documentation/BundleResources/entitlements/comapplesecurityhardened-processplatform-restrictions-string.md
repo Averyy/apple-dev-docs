@@ -6,10 +6,10 @@
 A string value that indicates the level of additional runtime security protections your app or extension opts in to.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- macOS 26.4+ (Beta)
-- visionOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- macOS 26.4+
+- visionOS 26.4+
 
 
 

@@ -10,7 +10,7 @@ Describes the files or directories the app installs on the system.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

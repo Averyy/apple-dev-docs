@@ -6,7 +6,7 @@
 The session is paused and has temporarily stopped streaming from a streaming endpoint.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

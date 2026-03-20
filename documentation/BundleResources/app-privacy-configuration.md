@@ -16,7 +16,7 @@ A data structure that represents the root object in a privacy manifest file.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Overview
 

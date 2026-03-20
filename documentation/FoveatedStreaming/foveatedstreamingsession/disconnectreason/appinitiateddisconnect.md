@@ -6,7 +6,7 @@
 A disconnect reason indicating the disconnect was initiated by the application.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

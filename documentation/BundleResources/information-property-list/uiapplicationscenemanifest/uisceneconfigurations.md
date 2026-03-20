@@ -13,7 +13,7 @@ The default configuration details the system uses to create new scenes.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

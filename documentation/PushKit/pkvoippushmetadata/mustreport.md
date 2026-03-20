@@ -6,12 +6,12 @@
 A boolean indicating whether a VoIP app must report a call or live conversation in response to receiving this VoIP notification.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
-- macOS 26.4+ (Beta)
-- visionOS 26.4+ (Beta)
-- watchOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
+- macOS 26.4+
+- visionOS 26.4+
+- watchOS 26.4+
 
 ## Declaration
 

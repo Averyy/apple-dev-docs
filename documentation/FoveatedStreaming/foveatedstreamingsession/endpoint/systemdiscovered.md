@@ -6,7 +6,7 @@
 Connects to an endpoint the person selects from a list of endpoints the system discovers and presents.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

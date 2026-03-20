@@ -15,7 +15,7 @@ The restrictions that apply to the set of assets that download immediately after
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

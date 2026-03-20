@@ -40,6 +40,8 @@ To observe API differences, check the value of the app distributor’s static ([
 
 API availability varies depending on the source, so your app needs to check the current source at each launch — not just at the first launch — and adjust the APIs it uses accordingly.
 
+In addition, for apps that aren’t marketplaces, use [`eligibilityRegion`](appdistributor/eligibilityregion.md) to determine if an Apple Account is signed in that has a region eligible for transaction reporting.
+
 For more information, see [`Distributing your app on an alternative app marketplace`](distributing-your-app-on-an-alternative-marketplace.md).
 
 ## Topics
@@ -54,6 +56,7 @@ For more information, see [`Distributing your app on an alternative app marketpl
 - [static var current: AppDistributor](appdistributor/current.md)
   The source from which the app installs.
 - [static var eligibilityRegion: String?](appdistributor/eligibilityregion.md)
+  A country code for the device’s current region.
 
 
 ---

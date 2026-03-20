@@ -69,6 +69,18 @@ To access a device’s console logs:
 5. Look for logs that pertain to the issue from around the time you reproduced the issue.
 6. Use information from the log as clues to further guide your investigation of the issue.
 
+##### Share Crash Reports to Receive Help
+
+If you need assistance debugging a crash, extract crash reports from the Xcode organizer to share. In the Xcode organizer, Control-click the crash and choose Show in Finder to reveal the Xcode crashpoint document (`.xccrashpoint`) in Finder. Then, Control-click on that document and choose Show Package Contents. In the resulting Finder window, find a crash report (`.crash`) that matches the crash you’re investigating.
+
+When you post to the [`Developer Forums`](https://developer.apple.comhttps://developer.apple.com/forums/), include the complete crash report as a text attachment. This preserves all diagnostic information while avoiding cluttered discussion threads. If you want to highlight a specific section, include that snippet in the main body using a code block with triple backticks (```).
+
+Use Apple crash reports whenever possible, as third-party crash reports may omit necessary information. Always symbolicate your crash report before sharing it, otherwise the report shows hexadecimal addresses instead of function names and line numbers, making diagnosis more difficult. For symbolication information, see [`Adding identifiable symbol names to a crash report`](adding-identifiable-symbol-names-to-a-crash-report.md).
+
+Crash reports commonly have `.crash` and `.ips` file extensions. If you have an `.ips` file, post that instead of a `.crash` file when available. Some forums allow `.crash` files but not `.ips` files. To ensure your crash report posts, change the `.ips` extension to `.txt` before uploading. If the forum alerts you about having “sensitive language” in your crash report, attach it to a reply instead of your initial post. If you still can’t post your crash report directly, upload it to a file sharing service and include the URL in your post.
+
+Always look for and redact sensitive information in your shared crash reports. Replace your app name and bundle ID throughout the crash report with redacted characters that maintain the original length of the text to keep text properly aligned, while maintaining the distinction between them. For example, replace `MyApp` with `MmVvv` and `com.company.myapp` with `com.ccccccc.mmmm`.
+
 ## See Also
 
 - [Adding identifiable symbol names to a crash report](adding-identifiable-symbol-names-to-a-crash-report.md)

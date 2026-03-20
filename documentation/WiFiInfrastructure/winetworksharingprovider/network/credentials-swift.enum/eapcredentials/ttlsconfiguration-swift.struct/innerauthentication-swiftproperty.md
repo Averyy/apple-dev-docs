@@ -6,8 +6,8 @@
 The inner authentication type to use for the Tunneled Transport Layer Security (TTLS) configuration.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

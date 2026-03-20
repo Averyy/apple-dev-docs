@@ -16,7 +16,7 @@ class var controlShadowColor: NSColor { get }
 
 #### Return Value
 
-Of the two dark borders that run along the bottom and right of controls, representing shadows, the color of the inner, lighter border.  For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+Of the two dark borders that run along the bottom and right of controls, representing shadows, the color of the inner, lighter border. For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@
 The connection state of a foveated streaming session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 Connects to a local endpoint by IP address and port number.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

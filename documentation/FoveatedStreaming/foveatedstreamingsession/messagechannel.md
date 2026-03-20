@@ -6,7 +6,7 @@
 A bidirectional channel for sending and receiving custom data.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 The value that represents the Microsoft Challenge Handshake Authentication Protocol version 2 (MSCHAPV2).
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

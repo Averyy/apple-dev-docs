@@ -11,7 +11,7 @@ The user-defined storyboard identifiers that associate with supported schemes.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

@@ -11,7 +11,7 @@ A collection of properties that explain your app’s need to analyze the user’
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

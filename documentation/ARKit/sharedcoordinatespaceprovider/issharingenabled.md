@@ -6,7 +6,7 @@
 Returns true if coordinate space sharing is enabled, false otherwise.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

@@ -10,7 +10,7 @@ Apply MSAA to enhance the rendering of edges with custom resolve options and imm
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

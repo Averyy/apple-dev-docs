@@ -10,6 +10,8 @@ Participating in alternative distribution has different requirements depending o
 
 An alternative app marketplace can reference [`catalogRegion`](applibrary/catalogregion.md) and adjust the apps the marketplace offers for installation according to the country in which the device resides.
 
+An app that installs from an alternative app marketplace can reference [`eligibilityRegion`](appdistributor/eligibilityregion.md) to determine if it needs to report transactions for the Core Technology Commission.
+
 #### Develop for Alternative Distribution in Japan
 
 In Japan, you can distribute your app on an alternative app marketplace—or create one—according to the following region-specific criteria.

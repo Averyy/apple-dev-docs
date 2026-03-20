@@ -6,8 +6,8 @@
 A hash of the Access Point’s BSSID, which can be used to find this access point link in the environment.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

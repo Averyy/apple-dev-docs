@@ -16,19 +16,20 @@ class var alternateSelectedControlColor: NSColor { get }
 
 #### Return Value
 
-The system color used for the face of a selected control—a control being clicked or dragged. This color is used in lists and tables. For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+The system color used for the face of a selected control—a control being clicked or dragged. This color is used in lists and tables.
 
 #### Discussion
 
 This color is the table and list view equivalent to the [`selectedControlColor`](nscolor/selectedcontrolcolor.md) color, which is used for controls in other views.
 
-For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 
 - [class var alternateSelectedControlTextColor: NSColor](nscolor/alternateselectedcontroltextcolor.md)
   The color to use for text in a selected control.
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [Color](https://developer.apple.com/design/Human-Interface-Guidelines/color)
+  Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
 - [class var selectedControlColor: NSColor](nscolor/selectedcontrolcolor.md)
   The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.
 - [class var controlAlternatingRowBackgroundColors: [NSColor]](nscolor/controlalternatingrowbackgroundcolors.md)

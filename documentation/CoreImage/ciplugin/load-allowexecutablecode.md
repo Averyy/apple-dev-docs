@@ -16,12 +16,12 @@ class func load(_ url: URL!, allowExecutableCode: Bool)
 
 #### Discussion
 
-You need to call this method only once to load a specific image unit. The behavior of this method is not defined for multiple calls for the same image unit. If you pass [`false`](https://developer.apple.com/documentation/Swift/false) for the `allowExecutableCode` parameter, Core Image will load only pure kernel filters that run entirely on the GPU, ignoring filters implemented using compiled Objective-C code.
+You need to call this method only once to load a specific image unit. The behavior of this method is not defined for multiple calls for the same image unit. If you pass `false` for the `allowExecutableCode` parameter, Core Image will load only pure kernel filters that run entirely on the GPU, ignoring filters implemented using compiled Objective-C code.
 
 ## Parameters
 
 - `url`: The location of the image unit to load.
-- `allowExecutableCode`: [`true`](https://developer.apple.com/documentation/Swift/true) to load all filters from the image unit, or [`false`](https://developer.apple.com/documentation/Swift/false) to load only those filters without CPU executable code.
+- `allowExecutableCode`: `true` to load all filters from the image unit, or `false` to load only those filters without CPU executable code.
 
 ## See Also
 

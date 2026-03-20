@@ -9,7 +9,7 @@ Compile a library of shaders and write it to a file as a dynamically linked libr
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

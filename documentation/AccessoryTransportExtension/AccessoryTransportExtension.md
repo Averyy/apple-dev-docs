@@ -14,6 +14,8 @@ Transfer data securely to connected accessories that you develop.
 
 Use the Accessory Transport Extension framework to securely transfer information to an accessory that you develop. First, establish a connection with your accessory using [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit). Then, you can share Wi-Fi networks with your accessory using [`Wi-Fi Infrastructure`](https://developer.apple.com/documentation/WiFiInfrastructure), or forward iOS system notifications to your accessory using [`Accessory Notifications`](https://developer.apple.com/documentation/AccessoryNotifications).
 
+For information about automatic routing of audio to accessories, see [`AudioAccessoryKit`](https://developer.apple.com/documentation/AudioAccessoryKit).
+
 > ❗ **Important**: This framework is available only for iOS. The framework ignores calls for apps built with Mac Catalyst, and iOS apps that run on visionOS or on Macs with Apple silicon. You can develop and test an app that uses this framework on devices in any region. Customer installations of your app can only use the framework on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
 #### Share a Wi Fi Network with an Accessory

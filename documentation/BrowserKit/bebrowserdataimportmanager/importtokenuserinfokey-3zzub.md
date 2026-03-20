@@ -6,8 +6,8 @@
 A key for accessing the data transfer token in the import launch activity’s info dictionary.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

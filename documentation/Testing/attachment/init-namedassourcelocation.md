@@ -7,7 +7,7 @@ Initialize an instance of this type that encloses the given image.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

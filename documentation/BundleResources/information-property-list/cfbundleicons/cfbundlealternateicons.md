@@ -14,7 +14,7 @@ A list of alternate icons for the Home screen and Settings app.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

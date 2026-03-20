@@ -11,7 +11,7 @@ A collection of properties that explain your app’s need to observe light level
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

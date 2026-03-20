@@ -16,7 +16,7 @@ Key-value pairs that grant an executable permission to use a service or technolo
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

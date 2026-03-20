@@ -7,7 +7,7 @@ The severity level for an issue which represents an error in a test.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

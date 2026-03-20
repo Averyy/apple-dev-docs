@@ -10,7 +10,7 @@ Reduce CPU overhead by using arrays inside argument buffers and combining them w
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

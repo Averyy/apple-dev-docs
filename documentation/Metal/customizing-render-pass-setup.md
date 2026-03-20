@@ -10,7 +10,7 @@ Render into an offscreen texture by creating a custom render pass.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

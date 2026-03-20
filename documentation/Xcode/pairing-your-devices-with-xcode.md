@@ -28,7 +28,7 @@ To discover tvOS and visionOS devices using Wi-Fi, ensure that the device is on 
 
 On the Devices pane in the Devices and Simulators window, select the device you want to pair under Discovered, and follow the instructions that appear in the detail area or yellow box in the detail area. Xcode automatically starts pairing a device with a physical connection to your Mac.
 
-For tvOS and visionOS devices connected using Wi-Fi, click Pair in the detail area. Then enter the PIN that appears on your device and click Connect. On the device, your Mac should appear in Remote App and Devices settings under Devices. In Xcode, select the device in the sidebar of the Devices and Simulators window.
+For tvOS and visionOS devices connected using Wi-Fi with IPv6 enabled, click Pair in the detail area. Then enter the PIN that appears on your device and click Connect. On the device, your Mac appears in Remote App and Devices settings under Devices. In Xcode, select the device in the sidebar of the Devices and Simulators window.
 
 As part of the pairing process, click Trust in the Trust This Computer dialog that appears on the device. If you accidentally dismiss the trust dialog, try reconnecting the cable or restarting the device. After you trust your Mac, Xcode shows the device under Connected on the Devices pane in the Devices and Simulators window.
 
@@ -38,7 +38,7 @@ Before a device is available as a run destination, you may need to wait until Xc
 
 ![A screenshot of the Devices pane of the Devices and Simulators window showing a connected device selected in the sidebar and a message that Xcode is copying shared cache symbols in the detail area on the right.](https://docs-assets.developer.apple.com/published/4410c841cc4e481a192fb3e06e49f7d5/devices-window-copying-cache%402x.png)
 
-When a device appears under Connected in the sidebar without any issues, you can disconnect the physical cable and run apps on the device through Xcode using Wi-Fi on the same network as your Mac.
+When a device appears under Connected in the sidebar without any issues, you can disconnect the physical cable and run apps on the device through Xcode using Wi-Fi with IPv6 enabled on the same network as your Mac.
 
 To unpair a device, Control-click the device under Connected and choose Unpair Device.
 

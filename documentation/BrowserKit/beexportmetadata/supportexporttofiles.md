@@ -6,8 +6,8 @@
 A Boolean value that determines whether the sheet offers the option to export the data to files.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

@@ -23,7 +23,7 @@ For apps with simple user interfaces, using the information property list in you
 1. In the settings for your target, select the Info tab.
 2. In the Custom iOS Target Properties section, expand the Launch Screen key.
 3. Click the Add button (+), type in `UILaunchScreen`, and press Return to add the launch screen key to the property list. If the `UILaunchScreen` key is already present, you can skip this step.
-4. Select the `UILaunchScreen` key, click the Add button (+), and add additional keys to specify configuration options for your launch screen.
+4. Select the `UILaunchScreen` key, click the Add button, and add additional keys to specify configuration options for your launch screen.
 
 ![Screenshot of the information property list section named Launch Screen. The UILaunchScreen key is nested under Launch Screen. A new row is nested under UILaunchScreen to indicate where to add additional keys.](https://docs-assets.developer.apple.com/published/3417cef9027059fb04c67da2580e88ec/specifying-your-apps-launch-screen-2%402x.png)
 

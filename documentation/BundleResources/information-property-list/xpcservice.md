@@ -13,7 +13,7 @@
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

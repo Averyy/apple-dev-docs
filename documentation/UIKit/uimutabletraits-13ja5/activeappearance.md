@@ -20,7 +20,7 @@ var activeAppearance: UIUserInterfaceActiveAppearance { get set }
 
 #### Discussion
 
-In macOS, the active appearance varies according to window activation state. On other platforms, this value is always [`UIApplication.State.active`](uiapplication/state/active.md).
+The active appearance varies by platform and window management mode. On macOS, Stage Manager on iPad, and Windowed mode on iPad, the value is `.active` when at least one window is in the foreground and `.inactive` when no windows are in the foreground. On iOS and Full Screen mode on iPad, the value reflects whether the app itself is in the foreground (`.active`) or not (`.inactive`).
 
 ## See Also
 

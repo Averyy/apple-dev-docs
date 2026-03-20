@@ -6,7 +6,7 @@
 Presents the immersive space that your app defines for the specified foveated streaming session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

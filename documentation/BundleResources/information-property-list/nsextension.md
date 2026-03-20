@@ -13,7 +13,7 @@ The properties of an app extension.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

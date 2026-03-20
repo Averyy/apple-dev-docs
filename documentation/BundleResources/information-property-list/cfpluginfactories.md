@@ -10,7 +10,7 @@ The interfaces supported by the plug-in for static registration.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

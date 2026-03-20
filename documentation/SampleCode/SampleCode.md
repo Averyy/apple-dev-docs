@@ -931,6 +931,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Show changes to data in your app’s user interface by using observable objects.
 - [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
+- [Wishlist: Planning travel in a SwiftUI app](../SwiftUI/wishlist-planning-travel-in-a-swiftui-app.md)
+  Build a travel planning app that organizes trips into collections and tracks activity completion.
 ### System
 - [Building a custom peer-to-peer protocol](../Network/building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
@@ -1234,6 +1236,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create an immersive experience by making your app’s content respond to the local shape of the world.
 - [Locating and decoding barcodes in 3D space](../visionOS/locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
+- [Manipulating entities with solid collisions](../visionOS/manipulating-entities-with-solid-collisions.md)
+  Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 - [Object tracking with Reality Composer Pro experiences](../visionOS/object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)

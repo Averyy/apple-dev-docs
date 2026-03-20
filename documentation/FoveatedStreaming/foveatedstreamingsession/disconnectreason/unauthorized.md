@@ -6,7 +6,7 @@
 A disconnect reason indicating the person denied authorization of the foveated streaming session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

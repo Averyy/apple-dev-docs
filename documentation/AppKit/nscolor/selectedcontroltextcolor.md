@@ -16,7 +16,7 @@ class var selectedControlTextColor: NSColor { get }
 
 #### Discussion
 
-For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

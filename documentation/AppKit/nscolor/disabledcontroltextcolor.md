@@ -16,7 +16,7 @@ class var disabledControlTextColor: NSColor { get }
 
 #### Return Value
 
-The color used for text on disabled controls.  For general information about system colors, see [`Accessing System Colors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/SystemColors.html#//apple_ref/doc/uid/20000790).
+The color used for text on disabled controls. For more information, see [`NSColor`](nscolor.md).
 
 ## See Also
 

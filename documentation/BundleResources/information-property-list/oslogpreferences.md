@@ -10,7 +10,7 @@ A dictionary that defines the logging configuration profile for the app.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

@@ -34,7 +34,8 @@ The delegate can do one of the following:
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
+- [class NSImage](nsimage.md)
+  A high-level interface for manipulating image data.
 
 
 ---

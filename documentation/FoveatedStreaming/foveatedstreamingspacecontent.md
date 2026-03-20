@@ -6,7 +6,7 @@
 A type that defines the content of an immersive space displaying a foveated stream.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

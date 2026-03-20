@@ -6,7 +6,7 @@
 The current migration state of the system.
 
 **Availability**:
-- macOS 26.4+ (Beta)
+- macOS 26.4+
 
 ## Declaration
 

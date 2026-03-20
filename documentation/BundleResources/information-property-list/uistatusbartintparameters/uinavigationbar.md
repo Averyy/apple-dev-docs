@@ -14,7 +14,7 @@ The initial navigation bar’s style and translucency.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

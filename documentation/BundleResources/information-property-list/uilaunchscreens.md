@@ -11,7 +11,7 @@ The user interfaces to show while an app launches in response to different URL s
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 Reports the status of a completed migration.
 
 **Availability**:
-- macOS 26.4+ (Beta)
+- macOS 26.4+
 
 ## Declaration
 

@@ -29,8 +29,10 @@ You can always later change the duration of an `NSAnimation` object by changing 
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
-- [Animation Programming Guide for Cocoa](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AnimationGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003592)
+- [Drawing](drawing.md)
+  Draw shapes, images, and other content on the screen.
+- [class NSAnimation](nsanimation.md)
+  An object that manages the timing and progress of animations in the user interface.
 
 
 ---

@@ -20,7 +20,7 @@ A resource containing key-value pairs that identify and configure a bundle.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 
@@ -58,7 +58,7 @@ To access values in an information property list programmatically, you use an in
   A Boolean value that indicates if a person can configure a microphone mode regardless of whether the microphone is in an active state.
 ### Vision
 - [ApprovedStreamingEndpoints](information-property-list/approvedstreamingendpoints.md)
-  A dictionary of streaming endpoints in visionOS to which [`connect(endpoint:)`](https://developer.apple.com/documentation/FoveatedStreaming/FoveatedStreamingSession/connect(endpoint:)) may connect.
+  A dictionary of streaming endpoints in visionOS to which Foveated Streaming clients may connect.
 ### Dictionaries
 - [IOParentMatch](information-property-list/ioparentmatch.md)
 - [IOPropertyMatch](information-property-list/iopropertymatch.md)

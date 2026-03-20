@@ -6,8 +6,8 @@
 A Boolean value that indicates whether the visit is an HTTP GET request.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

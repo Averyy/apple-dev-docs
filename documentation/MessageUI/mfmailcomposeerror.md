@@ -21,7 +21,7 @@ struct MFMailComposeError
 
 ### Errors
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
-  The domain of the error.
+  The domain for errors related to mail composition.
 - [static var saveFailed: MFMailComposeError.Code](mfmailcomposeerror/savefailed.md)
   An error occurred while trying to save the email message to the drafts folder.
 - [static var sendFailed: MFMailComposeError.Code](mfmailcomposeerror/sendfailed.md)
@@ -30,7 +30,7 @@ struct MFMailComposeError
   Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
 ### Error Configuration
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
-  The domain of the error.
+  The domain for errors related to mail composition.
 - [var localizedDescription: String](mfmailcomposeerror/localizeddescription.md)
   Retrieve the localized description for this error.
 ### Default Implementations

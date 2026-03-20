@@ -10,7 +10,7 @@ One or more groups of attributes that tell the system about the devices your dri
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

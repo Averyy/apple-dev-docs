@@ -13,7 +13,7 @@ A collection of certificates that App Transport Security expects when connecting
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

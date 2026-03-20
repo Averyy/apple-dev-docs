@@ -6,7 +6,7 @@
 Creates a menu item for assigned document submission.
 
 **Availability**:
-- macOS 26.4+ (Beta)
+- macOS 26.4+
 
 ## Declaration
 

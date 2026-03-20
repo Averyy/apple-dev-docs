@@ -104,6 +104,8 @@ The class is observable (through [`SwiftUI`](https://developer.apple.com/documen
   An identifier that represents a single app version.
 - [let MarketplaceKitURIScheme: String](marketplacekiturischeme.md)
   A URI scheme that defines an alternative distribution app installation link.
+- [struct RequestAppDeletionAction](requestappdeletionaction.md)
+  A SwiftUI environment action that requests the deletion of an app.
 
 
 ---

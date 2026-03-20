@@ -11,7 +11,7 @@ Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Overview
 

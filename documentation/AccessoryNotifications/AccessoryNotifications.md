@@ -6,8 +6,8 @@
 Receive forwarded iOS system notifications on an accessory that you develop.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 #### Overview
 

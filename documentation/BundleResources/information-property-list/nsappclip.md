@@ -11,7 +11,7 @@ A collection of keys that an App Clip uses to get additional capabilities.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

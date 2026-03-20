@@ -6,8 +6,8 @@
 A structure containing the credentials for a Wi-Fi network with 802.1x enterprise authentication.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

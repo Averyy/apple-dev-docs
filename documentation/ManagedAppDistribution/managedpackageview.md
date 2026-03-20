@@ -6,8 +6,8 @@
 A view that displays information and controls for a managed software package.
 
 **Availability**:
-- Mac Catalyst 26.4+ (Beta)
-- macOS 26.4+ (Beta)
+- Mac Catalyst 26.4+
+- macOS 26.4+
 
 ## Declaration
 

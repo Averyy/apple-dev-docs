@@ -165,9 +165,9 @@ A report includes termination information in an object that can contain the foll
 | `byPid` | Number | The identifier of the terminating process.  This appears in a translated report under Terminating Process as the number in brackets after the terminating process name. |
 | `byProc` | String | The name of the terminating process.  This appears in a translated report under Terminating Process before the PID in brackets. |
 | `code` | Number | A code the system uses to identify the reason for termination or a BSD termination signal the system used. For a list of possible reason codes, see [`Understanding the exception types in a crash report`](understanding-the-exception-types-in-a-crash-report.md). This appears in a translated report under Termination Reason. |
-| `flags` | Number | Options set by the terminating process for how the process should terminate; see [`reason_flags`](https://developer.apple.comhttps://opensource.apple.com/source/xnu/xnu-3789.21.4/bsd/sys/reason.h.auto.html). |
+| `flags` | Number | Options set by the terminating process for how the process terminates. |
 | `indicator` | String | Human-readable description of the termination code, if available. This appears in a translated report under Termination Reason. |
-| `namespace` | String | A namespace the system uses to categorize the reason for termination; see [`reason_flags`](https://developer.apple.comhttps://opensource.apple.com/source/xnu/xnu-3789.21.4/bsd/sys/reason.h.auto.html). This appears in a translated report under Termination Reason. |
+| `namespace` | String | A namespace the system uses to categorize the reason for termination. This appears in a translated report under Termination Reason. |
 
 For details on how to use this information, see [`Exception information`](examining-the-fields-in-a-crash-report#Exception-information.md).
 

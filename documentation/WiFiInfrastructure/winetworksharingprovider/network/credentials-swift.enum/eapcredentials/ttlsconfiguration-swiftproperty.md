@@ -6,8 +6,8 @@
 The configuration to use for Tunneled Transport Layer Security (TTLS).
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

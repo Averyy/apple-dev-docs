@@ -20,7 +20,8 @@ If the clip view is contained in an [`NSScrollView`](nsscrollview.md), you shoul
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
+- [class NSClipView](nsclipview.md)
+  An object that clips a document view to a scroll view’s frame.
 
 
 ---

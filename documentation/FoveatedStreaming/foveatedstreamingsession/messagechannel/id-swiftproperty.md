@@ -6,7 +6,7 @@
 An identifier for the message channel.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

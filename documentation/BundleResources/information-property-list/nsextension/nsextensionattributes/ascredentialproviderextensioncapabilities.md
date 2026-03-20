@@ -13,7 +13,7 @@ The credential types supported by a credential provider extension, and whether i
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

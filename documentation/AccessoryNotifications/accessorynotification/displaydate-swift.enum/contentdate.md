@@ -6,8 +6,8 @@
 An option to display a date that includes a specific moment to which the notification refers.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

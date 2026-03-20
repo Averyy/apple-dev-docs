@@ -16,7 +16,7 @@ enum WindingRule
 
 #### Overview
 
-These constants are described in more detail in [`Paths`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Paths/Paths.html#//apple_ref/doc/uid/TP40003290-CH206).
+For more information, see [`NSBezierPath`](nsbezierpath.md).
 
 ## Topics
 

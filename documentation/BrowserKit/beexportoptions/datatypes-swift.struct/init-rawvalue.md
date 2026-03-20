@@ -6,8 +6,8 @@
 Initializes a browser data export option with a value that represents the underlying type.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

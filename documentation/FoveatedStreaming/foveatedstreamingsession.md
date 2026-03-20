@@ -6,7 +6,7 @@
 A session that manages a foveated streaming connection to a local or remote streaming endpoint.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

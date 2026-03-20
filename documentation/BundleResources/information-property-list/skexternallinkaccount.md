@@ -12,7 +12,7 @@ A dictionary that contains localized URLs to an external website for account cre
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

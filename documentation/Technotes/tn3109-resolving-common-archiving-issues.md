@@ -45,6 +45,8 @@ If the Archives organizer offers to distribute your archive’s built product or
 
 ## See Also
 
+- [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
+  Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 - [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
   Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 - [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
@@ -73,8 +75,6 @@ If the Archives organizer offers to distribute your archive’s built product or
   Update your app to receive scene-based life-cycle events and manage your user interface using scene objects and methods.
 - [TN3188: Troubleshooting In-App Purchases availability in the App Store](tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md)
   Verify your In-App Purchases are approved and available for sale in the App Store.
-- [TN3186: Troubleshooting In-App Purchases availability in the sandbox](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md)
-  Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
 
 
 ---

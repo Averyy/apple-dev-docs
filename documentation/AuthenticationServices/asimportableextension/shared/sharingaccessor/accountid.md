@@ -6,11 +6,11 @@
 The ID of the account that has been granted access to this shared entity.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
-- Mac Catalyst 26.4+ (Beta)
-- macOS 26.4+ (Beta)
-- visionOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
+- macOS 26.4+
+- visionOS 26.4+
 
 ## Declaration
 

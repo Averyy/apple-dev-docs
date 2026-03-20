@@ -6,10 +6,10 @@
 Adds a task to perform before this view appears or when the specified source or target languages change.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 - Mac Catalyst 26.0+
-- macOS 26.4+ (Beta)
+- macOS 26.4+
 
 ## Declaration
 

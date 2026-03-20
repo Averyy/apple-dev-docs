@@ -11,7 +11,7 @@ A collection of properties that explains your appâ€™s need to observe the userâ€
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

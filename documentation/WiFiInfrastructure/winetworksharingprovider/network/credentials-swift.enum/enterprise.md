@@ -6,8 +6,8 @@
 The credentials to login to a network using 802.1x Enterprise authentication.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

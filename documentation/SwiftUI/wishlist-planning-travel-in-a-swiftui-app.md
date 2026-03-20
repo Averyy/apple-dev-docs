@@ -8,7 +8,7 @@ Build a travel planning app that organizes trips into collections and tracks act
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 #### Overview
 

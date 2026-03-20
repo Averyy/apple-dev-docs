@@ -9,7 +9,7 @@ Draw overlapping, transparent surfaces in any order by using tile shaders and im
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

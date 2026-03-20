@@ -107,6 +107,8 @@ To remove a package dependency from your Xcode project:
   Customize the information property list values for your app using Xcode.
 - [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
+- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+  Create a new watchOS project or add a watch target to an existing iOS project.
 - [Embedding a command-line tool in a sandboxed app](embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
 

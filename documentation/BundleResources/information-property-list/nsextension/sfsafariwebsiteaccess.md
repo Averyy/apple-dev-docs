@@ -10,7 +10,7 @@ The webpages a Safari extension can access.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

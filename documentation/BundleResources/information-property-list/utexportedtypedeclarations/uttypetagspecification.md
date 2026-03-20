@@ -13,7 +13,7 @@ A dictionary defining one or more equivalent type identifiers.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## See Also
 

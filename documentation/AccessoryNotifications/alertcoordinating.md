@@ -6,8 +6,8 @@
 A protocol that communicates whether the accessory completes the process of alerting for a notification.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

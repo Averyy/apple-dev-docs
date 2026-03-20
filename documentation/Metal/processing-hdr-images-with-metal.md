@@ -10,7 +10,7 @@ Implement a post-processing pipeline using the latest features on Apple GPUs.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

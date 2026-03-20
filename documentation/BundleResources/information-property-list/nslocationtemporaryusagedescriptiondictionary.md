@@ -13,7 +13,7 @@ A collection of messages that explain why the app is requesting temporary access
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

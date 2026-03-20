@@ -13,7 +13,7 @@ The information about the app’s scene-based life-cycle support.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

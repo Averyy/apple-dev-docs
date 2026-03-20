@@ -38,7 +38,7 @@ Specify input and output files in one of two ways:
 - Specify individual files as path strings. Typically, you use path strings only when you know the input or output files in advance and you’re sure they won’t change.
 - Specify files in a file list, which is a text file with an `.xcfilelist` filename extension. File lists make it easier to edit the set of files, and are particularly useful if you change the list of files frequently or want to annotate the list with comments.
 
-To add files or file lists to your script, click the Add button (+) in the appropriate section of your Run Script build phase. For each entry, specify the path to the file or file list, which can include build variables. For example, the string `$(PROJECT_DIR)/myFileList` specifies a file list in the root directory of the current project.
+To add files or file lists to your script, click the Add button in the appropriate section of your Run Script build phase. For each entry, specify the path to the file or file list, which can include build variables. For example, the string `$(PROJECT_DIR)/myFileList` specifies a file list in the root directory of the current project.
 
 If you periodically change the set of input or output files, specify them using a file list. A file list contains a list of path strings separated by newline characters. Each path string represents a single input or output file for the script. Path strings can include build variables such as `$(PROJECT_DIR)`.
 

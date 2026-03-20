@@ -13,7 +13,7 @@ A description of changes made to the default security for HTTP connections.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

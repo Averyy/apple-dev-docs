@@ -9,7 +9,7 @@ Access texture data from the CPU by copying it to a buffer.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Xcode 26.3+ (Beta)
+- Xcode 26.3+
 
 #### Overview
 

@@ -35,7 +35,6 @@ Pixel formats are incompatible if they use different renderers; this can happen 
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [init?(cglContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:).md)
   Initializes and returns an OpenGL context object using an existing CGL context.
 

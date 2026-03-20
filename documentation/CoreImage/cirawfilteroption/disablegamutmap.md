@@ -21,7 +21,7 @@ static let disableGamutMap: CIRAWFilterOption
 
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/Swift/true) disables gamut mapping.  The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+A value of `true` disables gamut mapping.  The default is `false`.
 
 ## See Also
 

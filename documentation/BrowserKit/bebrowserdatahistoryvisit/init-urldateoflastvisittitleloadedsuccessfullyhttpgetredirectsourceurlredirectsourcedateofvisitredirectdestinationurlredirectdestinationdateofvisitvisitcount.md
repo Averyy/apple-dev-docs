@@ -6,8 +6,8 @@
 Creates a record of a page visit that includes metadata and redirect information.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 

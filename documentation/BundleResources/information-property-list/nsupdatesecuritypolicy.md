@@ -11,7 +11,7 @@ A dictionary that identifies which apps or installer packages the operating syst
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

@@ -11,7 +11,7 @@ An entitlement that verifies age or identity.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

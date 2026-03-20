@@ -6,7 +6,7 @@
 Resumes a previously paused session.
 
 **Availability**:
-- visionOS 26.4+ (Beta)
+- visionOS 26.4+
 
 ## Declaration
 

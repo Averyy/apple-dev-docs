@@ -340,6 +340,8 @@ You can also extend WebKit by implementing your own document view and representa
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

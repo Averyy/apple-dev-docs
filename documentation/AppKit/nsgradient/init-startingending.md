@@ -25,7 +25,6 @@ The initialized `NSGradient` object.
 
 ## See Also
 
-- [Cocoa Drawing Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 - [convenience init?(colors: [NSColor])](nsgradient/init(colors:).md)
   Initializes a newly allocated gradient object with an array of colors.
 - [convenience init?(colorsAndLocations: (NSColor, CGFloat)...)](nsgradient/init(colorsandlocations:).md)

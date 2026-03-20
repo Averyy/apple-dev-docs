@@ -1,4 +1,4 @@
 Completed scraping AudioAccessoryKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 28
+Total pages scraped: 27
+Pages skipped (unchanged): 1
 Pages failed: 0

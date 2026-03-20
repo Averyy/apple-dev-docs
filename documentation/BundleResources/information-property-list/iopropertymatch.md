@@ -10,7 +10,7 @@ The device-specific keys the system must match in order to use your driver.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 #### Discussion
 

@@ -6,7 +6,7 @@
 The declaration to configure Migration Assistant settings.
 
 **Availability**:
-- macOS 26.4+ (Beta)
+- macOS 26.4+
 
 ## Declaration
 

@@ -6,8 +6,8 @@
 An interface to a person’s family activity data.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 
@@ -25,7 +25,7 @@ You can develop and test an app that uses this class on devices in any region. C
 
 Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](AuthorizationStatus/approvedWithDataAccess.md) to use this class.
 
-Your app needs the  doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage entitlement to use this class. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+Your app needs the  [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls.app-and-website-usage) entitlement to use this class. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 ## Topics
 

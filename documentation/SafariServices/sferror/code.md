@@ -21,18 +21,18 @@ enum SFErrorCode
 ## Topics
 
 ### Error Codes
-- [SFError.Code.loadingInterrupted](sferror/code/loadinginterrupted.md)
+- [SFError.Code.loadingInterrupted](sferrorcode/loadinginterrupted.md)
   There was an error loading the content blocker extension.
-- [SFError.Code.noAttachmentFound](sferror/code/noattachmentfound.md)
+- [SFError.Code.noAttachmentFound](sferrorcode/noattachmentfound.md)
   The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/Foundation/NSExtensionItem) that did not include an attachment.
-- [SFError.Code.noExtensionFound](sferror/code/noextensionfound.md)
+- [SFError.Code.noExtensionFound](sferrorcode/noextensionfound.md)
   A Content Blocker or Safari app extension with the specified bundle identifier was not found, or the bundle identifier specified an extension that was not owned by you.
 ### Enumeration Cases
-- [SFError.Code.internalError](sferror/code/internalerror.md)
-- [SFError.Code.maximumAttemptsExceeded](sferror/code/maximumattemptsexceeded.md)
-- [SFError.Code.missingEntitlement](sferror/code/missingentitlement.md)
+- [SFError.Code.internalError](sferrorcode/internalerror.md)
+- [SFError.Code.maximumAttemptsExceeded](sferrorcode/maximumattemptsexceeded.md)
+- [SFError.Code.missingEntitlement](sferrorcode/missingentitlement.md)
 ### Initializers
-- [init?(rawValue: Int)](sferror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](sferrorcode/init(rawvalue:).md)
 
 ## Relationships
 

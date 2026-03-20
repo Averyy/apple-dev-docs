@@ -10,7 +10,7 @@ The items to add to the toolbar for a Safari extension.
 
 
 
-**Type**: object
+**Type**: dictionary
 
 ## Topics
 

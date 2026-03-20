@@ -6,8 +6,8 @@
 Initializes an extension with its identifying information and App Store reference.
 
 **Availability**:
-- iOS 26.4+ (Beta)
-- iPadOS 26.4+ (Beta)
+- iOS 26.4+
+- iPadOS 26.4+
 
 ## Declaration
 
