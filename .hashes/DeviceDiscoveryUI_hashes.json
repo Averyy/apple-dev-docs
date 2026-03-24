@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:37.404734",
+    "last_updated": "2026-03-24T07:43:41.163766",
     "total_pages": 68,
-    "session_id": "2026-03-20T07:32:33.392430"
+    "session_id": "2026-03-24T07:43:36.362602"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DeviceDiscoveryUI.json": {
       "hash": "0bce5869f70cd851de6c7dfa26a54ec21059fa40d77e3925ba4844a8eebe4929",
-      "last_checked": "2026-03-20T07:32:33.714992",
+      "last_checked": "2026-03-24T07:43:36.732594",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"9e3b66469c4281739b68b0c2cdd20555\"",
       "file_path": "documentation/DeviceDiscoveryUI/DeviceDiscoveryUI.md"
     },
     "https://developer.apple.com/documentation/DeviceDiscoveryUI": {
       "hash": "0bce5869f70cd851de6c7dfa26a54ec21059fa40d77e3925ba4844a8eebe4929",
-      "last_checked": "2026-03-20T07:32:33.635082",
+      "last_checked": "2026-03-24T07:43:36.646256",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"9e3b66469c4281739b68b0c2cdd20555\"",
       "file_path": "documentation/DeviceDiscoveryUI/DeviceDiscoveryUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/connecting-a-tvos-app-to-other-devices-over-the-local-network.json": {
       "hash": "879ffdd96c0be433c0fe9b085859b2ba95014ab88e6c3c532b0d471c7506b5b4",
-      "last_checked": "2026-03-20T07:32:34.004298",
+      "last_checked": "2026-03-24T07:43:37.010775",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"727f11522064d9005b99a5cdd11fbbaf\"",
       "file_path": "documentation/DeviceDiscoveryUI/connecting-a-tvos-app-to-other-devices-over-the-local-network.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepicker.json": {
       "hash": "cb030661cb4676dfbc7313ff4b9668970046c1ba49bd534100e4a8ee41beceb4",
-      "last_checked": "2026-03-20T07:32:34.249406",
+      "last_checked": "2026-03-24T07:43:37.321732",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"6eaa10b9c82cd79cef8f2244e0ba27eb\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepicker.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller.json": {
       "hash": "af4a1920c64eb0bf90a569168ee323e053bf17a3ad45c24bcc58a1431acf3b38",
-      "last_checked": "2026-03-20T07:32:34.373276",
+      "last_checked": "2026-03-24T07:43:37.616633",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"2a04fd059b05a5fba0bcad8ec9bcc18b\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepickersupportedaction.json": {
       "hash": "b5674aa5bf148c5931573e3269edb2e521e3c962653e63ef6123097498ef288c",
-      "last_checked": "2026-03-20T07:32:34.622228",
+      "last_checked": "2026-03-24T07:43:37.817402",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"b132fa01ca16f0272b8acac6fa8a8b89\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepickersupportedaction.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingviewcontroller.json": {
       "hash": "0f27cf0e3a868c007d75eadf79763a216e32e08e1a8c19bc5e8da9849875a1cb",
-      "last_checked": "2026-03-20T07:32:34.697437",
+      "last_checked": "2026-03-24T07:43:37.951029",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"022308c84db20baed86010b33f5e0abe\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingviewcontroller.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingaccess.json": {
       "hash": "14c3f6ce3ddd12251a9db5afb1608116da1767d09fd355dea4d7cdf7d7ee0055",
-      "last_checked": "2026-03-20T07:32:34.957202",
+      "last_checked": "2026-03-24T07:43:38.106697",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"3fa167a10dc24c2237432c8d32db787e\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingaccess.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepairingview.json": {
       "hash": "2e3e0c79cbaea5ccdb91039cc3d0856dd0e292ecc2261e46b05c468d571d84e6",
-      "last_checked": "2026-03-20T07:32:35.198346",
+      "last_checked": "2026-03-24T07:43:38.217253",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"f7ba1d09df8e5714a35028c8e9d195e2\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepairingview.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepicker/init(_:onselect:label:fallback:parameters:).json": {
       "hash": "1f5bca865c152c74760277364ffc0745c2c1d8f9ffceca12bc92bf6056290d38",
-      "last_checked": "2026-03-20T07:32:35.444879",
+      "last_checked": "2026-03-24T07:43:38.531949",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"087ee1b6cd825f843d089ff624226dec\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepicker/init-onselectlabelfallbackparameters.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepicker/init(_:access:onselect:label:fallback:parameters:).json": {
       "hash": "3dafebcb80fbb78da73e842eabb8f2a1940f752c31616bdc78805412707df946",
-      "last_checked": "2026-03-20T07:32:35.519913",
+      "last_checked": "2026-03-24T07:43:38.830230",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"38a8489f471f6bed5de2b9deaacce02b\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepicker/init-accessonselectlabelfallbackparameters.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/issupported(_:using:).json": {
       "hash": "cc2d1bd19afce43bfae6c3e17536d08ef9a31b1a9bd3c277e02d25947b85b7c0",
-      "last_checked": "2026-03-20T07:32:35.685156",
+      "last_checked": "2026-03-24T07:43:39.013125",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"243affccc93ebc2123c635ebb6d57f62\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/issupported-using.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/init(browsedescriptor:parameters:).json": {
       "hash": "aa4b5510f77046d93a97f55b4d7a8f5cba85b69ab875929557fff2e7129d1c03",
-      "last_checked": "2026-03-20T07:32:35.927591",
+      "last_checked": "2026-03-24T07:43:39.190583",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"7ddcc658a0834aea6421fe36f04c7ce2\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/init-browsedescriptorparameters.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/endpoint.json": {
       "hash": "56f4d16e5fc06b4ca122fe187eb6d21dae9e022b4f9250ea2f25df460617d07e",
-      "last_checked": "2026-03-20T07:32:36.153734",
+      "last_checked": "2026-03-24T07:43:39.308836",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"4ccc49726d63d54882644345d32ef48d\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/endpoint.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).json": {
       "hash": "8ad0ded6598e766bcd0427f3567591f27931b842a106ec695d0d008c2a4d8170",
-      "last_checked": "2026-03-20T07:32:36.391551",
+      "last_checked": "2026-03-24T07:43:39.593614",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"9f03c0e6de187bd0d36b2018428986bf\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepickerviewcontroller/init-browsedescriptorparametersaccess.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepickersupportedaction/callasfunction(_:parameters:).json": {
       "hash": "4fa109609867742188913512f6d41ce06bd7a9fdb38843abc96fbb0b5374b796",
-      "last_checked": "2026-03-20T07:32:36.552265",
+      "last_checked": "2026-03-24T07:43:39.891647",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"844f916cdb7a03d932d0b832c7c8b5b5\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepickersupportedaction/callasfunction-parameters.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingviewcontroller/init(listenerprovider:access:).json": {
       "hash": "6f7b59c04574bbecefff2cfa2debc0b43820eec047671e7dd936accd9857cc17",
-      "last_checked": "2026-03-20T07:32:36.668210",
+      "last_checked": "2026-03-24T07:43:40.053824",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"7d08b2647c9bc32aedcf689c1e565423\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingviewcontroller/init-listenerprovideraccess.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingviewcontroller/viewdidload().json": {
       "hash": "57069ff0b9944e788b7510e4b637549141089e310309f0f326cd96e0a627ee83",
-      "last_checked": "2026-03-20T07:32:36.828396",
+      "last_checked": "2026-03-24T07:43:40.239740",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"699dfe1554b1740a773266c9549ad622\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingviewcontroller/viewdidload.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingviewcontroller/issupported(_:).json": {
       "hash": "0d184b2123c0f83dc8920af72533344f4cf43b2c6e035293c193be1310cc78ca",
-      "last_checked": "2026-03-20T07:32:36.944388",
+      "last_checked": "2026-03-24T07:43:40.468849",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"c3e6e81eadf27fc7d09d90d862222686\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingviewcontroller/issupported.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingaccess/default.json": {
       "hash": "ba0639a244a9507ff51b7f1f9b28dc7d39c30994d3bb025fd569068d8fc94594",
-      "last_checked": "2026-03-20T07:32:37.061166",
+      "last_checked": "2026-03-24T07:43:40.830442",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"62da377ad3bb2e872dfb2819f0e27564\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingaccess/default.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/dddevicepairingaccess/permanent.json": {
       "hash": "c46f8891b66c009e88b8ac01c12075b832bebfc1fcc03c80c986d01e4b00aa71",
-      "last_checked": "2026-03-20T07:32:37.291989",
+      "last_checked": "2026-03-24T07:43:40.990059",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"09379ec6f10edffa8a0c80680b683d7a\"",
       "file_path": "documentation/DeviceDiscoveryUI/dddevicepairingaccess/permanent.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/devicepairingview/init(_:access:label:fallback:).json": {
       "hash": "ef7c76fcb7cca70d64baa6c1bc1137fee5a67058c1b756e44180c30c03a224e7",
-      "last_checked": "2026-03-20T07:32:37.403755",
+      "last_checked": "2026-03-24T07:43:41.160295",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:33.392430",
+      "session_id": "2026-03-24T07:43:36.362602",
       "etag": "W/\"a4a6c52f9bf2724c405e3cd759690262\"",
       "file_path": "documentation/DeviceDiscoveryUI/devicepairingview/init-accesslabelfallback.md"
     },

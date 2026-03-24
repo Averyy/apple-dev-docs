@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:39.025254",
+    "last_updated": "2026-03-24T07:43:43.171188",
     "total_pages": 70,
-    "session_id": "2026-03-20T07:32:32.949053"
+    "session_id": "2026-03-24T07:43:35.724520"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/TechnologyOverviews.json": {
       "hash": "cecd8fd951daac0dd66de336ff38a60903ca5059de05b8cab9de25db59f0985c",
-      "last_checked": "2026-03-20T07:32:33.196234",
+      "last_checked": "2026-03-24T07:43:35.956229",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"e9ba01408c87131dfdd6e7a9569243bb\"",
       "file_path": "documentation/TechnologyOverviews/TechnologyOverviews.md"
     },
     "https://developer.apple.com/documentation/TechnologyOverviews": {
       "hash": "cecd8fd951daac0dd66de336ff38a60903ca5059de05b8cab9de25db59f0985c",
-      "last_checked": "2026-03-20T07:32:33.105985",
+      "last_checked": "2026-03-24T07:43:35.847700",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"e9ba01408c87131dfdd6e7a9569243bb\"",
       "file_path": "documentation/TechnologyOverviews/TechnologyOverviews.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/app-design-and-ui.json": {
       "hash": "c59c4242356d64a313c69aab5374473d6dbe3525be07b206384dfec85af5ef5e",
-      "last_checked": "2026-03-20T07:32:33.421691",
+      "last_checked": "2026-03-24T07:43:36.224688",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"5b5555fb27218e8bb0cc9dc2443adb92\"",
       "file_path": "documentation/TechnologyOverviews/app-design-and-ui.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/games.json": {
       "hash": "c9b253980fbf33acfda461b494f93d91fd12c4fd826abbf6158240d309dcd519",
-      "last_checked": "2026-03-20T07:32:33.568426",
+      "last_checked": "2026-03-24T07:43:36.385411",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"388573cc4590d6135dfdc6f1fc04e0da\"",
       "file_path": "documentation/TechnologyOverviews/games.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/data-management.json": {
       "hash": "8b175f78a298c1d66e1e86adb97cf81a15a99886261cd1b562756c952f8a82c6",
-      "last_checked": "2026-03-20T07:32:33.695168",
+      "last_checked": "2026-03-24T07:43:36.670602",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"7830c0e32412c0210ca2da472c2e5051\"",
       "file_path": "documentation/TechnologyOverviews/data-management.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/core-experiences.json": {
       "hash": "98b78c4b2945395ca3a7b5f862b2fcf6b746265a6ba53484b5e117cf6f93c645",
-      "last_checked": "2026-03-20T07:32:33.769809",
+      "last_checked": "2026-03-24T07:43:36.983954",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"05b4efd04c88e815958737dfdfc6bb2b\"",
       "file_path": "documentation/TechnologyOverviews/core-experiences.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/ai-machine-learning.json": {
       "hash": "cc30755d1e9e723e4b0de97d4325fe0e67d823de096f3e8a00c416530298179b",
-      "last_checked": "2026-03-20T07:32:34.008632",
+      "last_checked": "2026-03-24T07:43:37.154069",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"aa9a73cde61060b9fe1bf2876c3e0512\"",
       "file_path": "documentation/TechnologyOverviews/ai-machine-learning.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/audio-and-video.json": {
       "hash": "cb046a512e9173f8bcec5094e2338194ab3284356ef0f3abee91bf1656b1198e",
-      "last_checked": "2026-03-20T07:32:34.030867",
+      "last_checked": "2026-03-24T07:43:37.457396",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"f84abb5c982286f54f98f0ca15260b60\"",
       "file_path": "documentation/TechnologyOverviews/audio-and-video.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/swiftui.json": {
       "hash": "8a9c00571fd2676d5a3dc35fda3098c8d835dfc155577d4a4ecf4904405bc1eb",
-      "last_checked": "2026-03-20T07:32:34.402339",
+      "last_checked": "2026-03-24T07:43:37.931446",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"f4c5973a4d920aa6d240168b0deb7b6a\"",
       "file_path": "documentation/TechnologyOverviews/swiftui.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/uikit-appkit.json": {
       "hash": "a1fdf77da79f3aa2806cb36c1778f579de09b8041c734d0adbc434af9cc2facf",
-      "last_checked": "2026-03-20T07:32:34.653455",
+      "last_checked": "2026-03-24T07:43:38.241352",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"d64342186cff11d2a9cd79ff2f040873\"",
       "file_path": "documentation/TechnologyOverviews/uikit-appkit.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface-fundamentals.json": {
       "hash": "311e186a54fc92b1ab7319143064ffece9217e8aafd137f8539a3d0baabc6342",
-      "last_checked": "2026-03-20T07:32:34.917296",
+      "last_checked": "2026-03-24T07:43:38.374952",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"1ee3730bb5917b43c43c02aa46b0ae7c\"",
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/liquid-glass.json": {
       "hash": "e4fe56eb4be16b17a980b54d2a59d67b9a9cd8672896d4a4148ddd2c8b2453cb",
-      "last_checked": "2026-03-20T07:32:35.165976",
+      "last_checked": "2026-03-24T07:43:38.501995",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"a30011923089d720100328f92deedc2d\"",
       "file_path": "documentation/TechnologyOverviews/liquid-glass.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/games-technologies.json": {
       "hash": "a75665e9896fc79c46d6ba51bfc1ddbe529fe74426800dd6eec1f53cddadb590",
-      "last_checked": "2026-03-20T07:32:35.290757",
+      "last_checked": "2026-03-24T07:43:38.647381",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"cdf957df3997561ba901ce97d44a47d1\"",
       "file_path": "documentation/TechnologyOverviews/games-technologies.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/building-your-macos-game-remotely-from-your-pc.json": {
       "hash": "ccc85be97e6a65df3368c61011c8fdc2baf586540f160c51486357ffea64d74a",
-      "last_checked": "2026-03-20T07:32:35.427009",
+      "last_checked": "2026-03-24T07:43:38.944027",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"0502c3673fc7ebff21af877d45923667\"",
       "file_path": "documentation/TechnologyOverviews/building-your-macos-game-remotely-from-your-pc.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/standard-data-types-and-processes.json": {
       "hash": "9b1ef3f17e4c9095f17fda7c84c78116b3792c982e28c92a3eb77ca96b8f001c",
-      "last_checked": "2026-03-20T07:32:35.702200",
+      "last_checked": "2026-03-24T07:43:39.078935",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"9dab42435a876740e7666091bd506045\"",
       "file_path": "documentation/TechnologyOverviews/standard-data-types-and-processes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/structured-data-models.json": {
       "hash": "d63fa06440a4cebb2e04ccedce96a11693ce75509e189b34f03579fe59b47023",
-      "last_checked": "2026-03-20T07:32:35.822092",
+      "last_checked": "2026-03-24T07:43:39.191611",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"26bc05759c473b6c7284e3ac7bad38fb\"",
       "file_path": "documentation/TechnologyOverviews/structured-data-models.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/files-and-directories.json": {
       "hash": "7fdd7f43bf5f945e58bf221d3a3485e34052534b99e6148d32fd3df1763e82c4",
-      "last_checked": "2026-03-20T07:32:36.083889",
+      "last_checked": "2026-03-24T07:43:39.372259",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"e8817179cd611ff721056828bcb30086\"",
       "file_path": "documentation/TechnologyOverviews/files-and-directories.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/shared-data.json": {
       "hash": "fb76123f6227c2e13951ea8e8b2adc6e4245e636eda9247978b8bb7c2868e525",
-      "last_checked": "2026-03-20T07:32:36.209036",
+      "last_checked": "2026-03-24T07:43:39.728996",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"ddd07766277f0cb2bd414b5ed18d641a\"",
       "file_path": "documentation/TechnologyOverviews/shared-data.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/personal-data.json": {
       "hash": "996c08c5b5d2b92669fb00689a1b5ca2d263ed1f4f0d8a61179278b219237f89",
-      "last_checked": "2026-03-20T07:32:36.521271",
+      "last_checked": "2026-03-24T07:43:39.899577",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"744eb1826646f6b1888ffae5b60633fd\"",
       "file_path": "documentation/TechnologyOverviews/personal-data.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/convenience.json": {
       "hash": "d577d48c0c5d139a1eed8e205cdc6ea42d78fb62fb143884308495ffa1e982fb",
-      "last_checked": "2026-03-20T07:32:36.783316",
+      "last_checked": "2026-03-24T07:43:40.237846",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"e718dad511585af68b0def35545e1373\"",
       "file_path": "documentation/TechnologyOverviews/convenience.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/communication-and-connection.json": {
       "hash": "4258306e963384f9d5b63f781766d5c4b98587fc22cda9e54555653bda09d178",
-      "last_checked": "2026-03-20T07:32:36.906561",
+      "last_checked": "2026-03-24T07:43:40.408754",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"07d2f95d60abcce0fc233e8890f91507\"",
       "file_path": "documentation/TechnologyOverviews/communication-and-connection.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/information.json": {
       "hash": "b0827a7a208df340d93e0773ea7259a6bbd4d9653b42627add1c32095d53e993",
-      "last_checked": "2026-03-20T07:32:37.159490",
+      "last_checked": "2026-03-24T07:43:40.716834",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"b8f76464f5382cc4995f0b135e818b78\"",
       "file_path": "documentation/TechnologyOverviews/information.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/app-extensions.json": {
       "hash": "9415492e0d48ac31a4684e44023d0514a863f1504c1fb582c82f1570cd09b067",
-      "last_checked": "2026-03-20T07:32:37.187146",
+      "last_checked": "2026-03-24T07:43:40.989543",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"7976d03fb872a94f707eed411c88351b\"",
       "file_path": "documentation/TechnologyOverviews/app-extensions.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/apple-intelligence.json": {
       "hash": "3aa49dc086104ce4e19290f1edde6de20abdbe9a617215e24d1e49ea88e891d8",
-      "last_checked": "2026-03-20T07:32:37.359792",
+      "last_checked": "2026-03-24T07:43:41.107482",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"005ac135a519f68c5b0df016f9216e7d\"",
       "file_path": "documentation/TechnologyOverviews/apple-intelligence.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/intelligent-frameworks.json": {
       "hash": "0741dd34097f69f2a8dbcf8f6b1ed03f1722db5da97f83694c5bdcfc0cb8af80",
-      "last_checked": "2026-03-20T07:32:37.609909",
+      "last_checked": "2026-03-24T07:43:41.458661",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"ed0ac9352848b0527f55c736c1612cd9\"",
       "file_path": "documentation/TechnologyOverviews/intelligent-frameworks.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/foundation-models.json": {
       "hash": "5e2787d76952be2ea9b389deebec4e25f969db13c42581f95021d5cf8d2019d9",
-      "last_checked": "2026-03-20T07:32:37.739706",
+      "last_checked": "2026-03-24T07:43:41.761550",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"a356a36a875b405f81ab4b0b7f57aa0d\"",
       "file_path": "documentation/TechnologyOverviews/foundation-models.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/machine-learning.json": {
       "hash": "908c3fb381fdfdbaaafa6bd042c34accf2c32a6a4949742dd3d8b44a6a592fea",
-      "last_checked": "2026-03-20T07:32:37.861798",
+      "last_checked": "2026-03-24T07:43:41.913216",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"32323331c7ef3f9fc1d9c9dcf7370f57\"",
       "file_path": "documentation/TechnologyOverviews/machine-learning.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/video.json": {
       "hash": "1dd156aef45a5723fe56647690c5aeabf2af50161a6408cd09087eb18b67319e",
-      "last_checked": "2026-03-20T07:32:37.993334",
+      "last_checked": "2026-03-24T07:43:42.041604",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"c39a06742d25c5e12c843a71627e2c05\"",
       "file_path": "documentation/TechnologyOverviews/video.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/audio-and-music.json": {
       "hash": "7837c5060a565eec99f8056b7457e74beb571af5b4e849c1adc88d5669f99df0",
-      "last_checked": "2026-03-20T07:32:38.116075",
+      "last_checked": "2026-03-24T07:43:42.237433",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"701f03fd3c3c1eece37a8abc9e2040a8\"",
       "file_path": "documentation/TechnologyOverviews/audio-and-music.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/immersive-media.json": {
       "hash": "6dc4b54ca7477c904534ad4523278e14c6ee15d07a3a3ae62a08ec2a8ddce762",
-      "last_checked": "2026-03-20T07:32:38.232021",
+      "last_checked": "2026-03-24T07:43:42.360488",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"18ebaaf4ef046ee3f74bf9acbde82bb3\"",
       "file_path": "documentation/TechnologyOverviews/immersive-media.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/streaming.json": {
       "hash": "04138c102ebef568ea128836370e123519aea2335179f60612e7c629a388effa",
-      "last_checked": "2026-03-20T07:32:38.351374",
+      "last_checked": "2026-03-24T07:43:42.497402",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"a5266c22469a3b2b19267f20c3d32d27\"",
       "file_path": "documentation/TechnologyOverviews/streaming.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/adopting-liquid-glass.json": {
       "hash": "e6bf32e2de94baeefea9a6e71b612eecce1927b6f0e61e196a7d2bb2b7d4beff",
-      "last_checked": "2026-03-20T07:32:39.017967",
+      "last_checked": "2026-03-24T07:43:43.166343",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"493fdbdad05aafb995f8c8b1d64a46a2\"",
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/hardware-networking-sensors.json": {
       "hash": "00b8efe672390a2a536e9088729687f3d6e850b69e171d467134d69b70105e56",
-      "last_checked": "2026-03-20T07:32:34.153984",
+      "last_checked": "2026-03-24T07:43:37.637809",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"a5da82bb9abc76ed5a86b1e4c377fde7\"",
       "file_path": "documentation/TechnologyOverviews/hardware-networking-sensors.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/device-sensors.json": {
       "hash": "5c1cd8fed3dfeda56ce2550aa7b3e67b76b2ead3aa5dcd7da0538995017f4828",
-      "last_checked": "2026-03-20T07:32:38.613381",
+      "last_checked": "2026-03-24T07:43:42.672502",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"335044a89a0fd2f3cfa333151930992f\"",
       "file_path": "documentation/TechnologyOverviews/device-sensors.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/networking-and-communication.json": {
       "hash": "401f6e04ef21036e4761f36c4274bf1ea69259ef2ef0b7188b847a2796c444f2",
-      "last_checked": "2026-03-20T07:32:38.745928",
+      "last_checked": "2026-03-24T07:43:42.848058",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"8081cf09e30c9abe9e2a8e2d8bb1eede\"",
       "file_path": "documentation/TechnologyOverviews/networking-and-communication.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/hardware-level-interactions.json": {
       "hash": "b469fe7884c9d97b1fcb3fc5cb41146de99576b175a20c39c2f694a36fcf83ad",
-      "last_checked": "2026-03-20T07:32:38.867223",
+      "last_checked": "2026-03-24T07:43:42.977512",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:32.949053",
+      "session_id": "2026-03-24T07:43:35.724520",
       "etag": "W/\"62c14b65f6f86ab359f602d99265f296\"",
       "file_path": "documentation/TechnologyOverviews/hardware-level-interactions.md"
     },

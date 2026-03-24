@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:13.852999",
+    "last_updated": "2026-03-24T07:43:00.521076",
     "total_pages": 196,
-    "session_id": "2026-03-20T07:32:03.519809"
+    "session_id": "2026-03-24T07:42:42.888384"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/vmnet.json": {
       "hash": "4edff63244bf83dbbdd4e4a4528a7fb9dad5861d14c0c3ec2cfdc9ab3b0aa34b",
-      "last_checked": "2026-03-20T07:32:03.876391",
+      "last_checked": "2026-03-24T07:42:43.135718",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"65f83347fb570fe91d9eca35420bbfa0\"",
       "file_path": "documentation/vmnet/vmnet.md"
     },
     "https://developer.apple.com/documentation/vmnet": {
       "hash": "4edff63244bf83dbbdd4e4a4528a7fb9dad5861d14c0c3ec2cfdc9ab3b0aa34b",
-      "last_checked": "2026-03-20T07:32:03.766987",
+      "last_checked": "2026-03-24T07:42:43.036337",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"65f83347fb570fe91d9eca35420bbfa0\"",
       "file_path": "documentation/vmnet/vmnet.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_start_interface(_:_:_:).json": {
       "hash": "8298d239df795c7e67fe29e8175b95f0a024222a6d3f80ef61f6a21b3013bfb5",
-      "last_checked": "2026-03-20T07:32:04.140785",
+      "last_checked": "2026-03-24T07:42:43.388210",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"a88fd6a161bb51240edac78b0dc2c4bd\"",
       "file_path": "documentation/vmnet/vmnet-start-interface.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_set_event_callback(_:_:_:_:).json": {
       "hash": "7b5f01e940bfcd3d2639751356804d2661786d3d841a08ef078de15343b2a3de",
-      "last_checked": "2026-03-20T07:32:04.256945",
+      "last_checked": "2026-03-24T07:42:43.681090",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"6b8f879ce56a6be6ed7a8f04b90e5be7\"",
       "file_path": "documentation/vmnet/vmnet-interface-set-event-callback.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_stop_interface(_:_:_:).json": {
       "hash": "6afe2fcdfeebf234d4306502c3d140b42fa31d09ac30664c660bed6d2dbcce55",
-      "last_checked": "2026-03-20T07:32:04.376665",
+      "last_checked": "2026-03-24T07:42:43.856093",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"c45ba7ea848553d100ed69254f39fa42\"",
       "file_path": "documentation/vmnet/vmnet-stop-interface.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_read(_:_:_:).json": {
       "hash": "58354da958c047594bd8f768ca76d0a9b11eb59f184ec7e871fb96d48b5f87f1",
-      "last_checked": "2026-03-20T07:32:04.557890",
+      "last_checked": "2026-03-24T07:42:44.016406",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"1cb2b46c5e23435c628de9d98af3d4fb\"",
       "file_path": "documentation/vmnet/vmnet-read.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_write(_:_:_:).json": {
       "hash": "b687275555fd8ed1d56058988218ef0c3ebb2a5f8ca733667fd2a3e051b95ea8",
-      "last_checked": "2026-03-20T07:32:04.688417",
+      "last_checked": "2026-03-24T07:42:44.199906",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"edf3d31085b971abcfaef96642e78701\"",
       "file_path": "documentation/vmnet/vmnet-write.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t.json": {
       "hash": "b7a46d6bc54a9d7c52a68f157893959cc3244615c13359577761e5cb9978e94e",
-      "last_checked": "2026-03-20T07:32:04.790524",
+      "last_checked": "2026-03-24T07:42:44.377549",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"e11e633ad390012e9766939ede53bae7\"",
       "file_path": "documentation/vmnet/vmnet-return-t.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmpktdesc.json": {
       "hash": "8d1b2aa203f05ed1d3d26150a49f332f422b81e2bc8744e2de8c2120d04870f4",
-      "last_checked": "2026-03-20T07:32:05.086302",
+      "last_checked": "2026-03-24T07:42:44.728593",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"4db8a1bb8d523c1db3e4a771b17a5366\"",
       "file_path": "documentation/vmnet/vmpktdesc.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/interface_ref.json": {
       "hash": "81f4065e1b7b83c6a80a8d9283a637fbd57da72f3af17f34fc8fc5948c45df00",
-      "last_checked": "2026-03-20T07:32:05.189448",
+      "last_checked": "2026-03-24T07:42:44.884582",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"c2e5af6e1326220b5fc815a384af9e9a\"",
       "file_path": "documentation/vmnet/interface-ref.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/interface_event_t.json": {
       "hash": "138c4132ff6e12b322a65092073b1b8d0a840204f8f65b36acb9e4e77c296dfa",
-      "last_checked": "2026-03-20T07:32:05.446066",
+      "last_checked": "2026-03-24T07:42:45.210887",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"6ffc7d66aae5d34a0b016fba352a6320\"",
       "file_path": "documentation/vmnet/interface-event-t.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/operating_modes_t.json": {
       "hash": "c1f311c9f654e049c5f50a081e7a86dd938ec78e34dfa25f5fe22487b7b95203",
-      "last_checked": "2026-03-20T07:32:05.566175",
+      "last_checked": "2026-03-24T07:42:45.505626",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"19bff20ee9a445a62c16318247a92906\"",
       "file_path": "documentation/vmnet/operating-modes-t.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/interface_desc_xpc_dictionary_keys.json": {
       "hash": "53a09b4e85fd7c9495e2d5d7c78f8f5bf679d1c1f9e78bd83be051b761cda89c",
-      "last_checked": "2026-03-20T07:32:05.666085",
+      "last_checked": "2026-03-24T07:42:45.665765",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"e1f4ebc5270e6702ff1a61427648ff99\"",
       "file_path": "documentation/vmnet/interface-desc-xpc-dictionary-keys.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/interface_param_xpc_dictionary_keys.json": {
       "hash": "e4c6dd06667bb1de065da2194bf2fa4b304dcc6f0b0b2503bb2f921ba4fa335a",
-      "last_checked": "2026-03-20T07:32:05.772275",
+      "last_checked": "2026-03-24T07:42:45.819927",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"425dd6d78ef5d093c6743d1efe72b1ec\"",
       "file_path": "documentation/vmnet/interface-param-xpc-dictionary-keys.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/event_xpc_dictionary.json": {
       "hash": "cb49e0ea7e7870103e1e42a6797c053b3e1ef437a6dd3dd689af8a3bc2999e88",
-      "last_checked": "2026-03-20T07:32:05.888777",
+      "last_checked": "2026-03-24T07:42:45.981648",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"27177b529357bffeb110a8bf48b4a5a9\"",
       "file_path": "documentation/vmnet/event-xpc-dictionary.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_constants.json": {
       "hash": "bec506e795da6e19477bf9672cade3b318e924187bedf1e0e0ab27abd838344d",
-      "last_checked": "2026-03-20T07:32:05.961318",
+      "last_checked": "2026-03-24T07:42:46.088300",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"7c796b6d7f7819d433e07b8c3c09a4b5\"",
       "file_path": "documentation/vmnet/vmnet-constants.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_functions.json": {
       "hash": "081ed1310bd33bbebfef78d20d25380df3e79fb1244f1da7c7e8a74b2665e537",
-      "last_checked": "2026-03-20T07:32:06.079705",
+      "last_checked": "2026-03-24T07:42:46.263074",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"49e59c2225e2fc8bd55f43545f11dcaf\"",
       "file_path": "documentation/vmnet/vmnet-functions.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_data_types.json": {
       "hash": "e7efbc683f5e349312080af0e7573eef5d8a0c3ca2fdc104c3ed438600c65451",
-      "last_checked": "2026-03-20T07:32:06.315024",
+      "last_checked": "2026-03-24T07:42:46.561434",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"d447665add08943bc59a99296e650318\"",
       "file_path": "documentation/vmnet/vmnet-data-types.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_enable_virtio_header_key-swift.var.json": {
       "hash": "a763759fe60f0b4f85124d851b2ddea4b1eab75bf87598623304e4f8ef007ec7",
-      "last_checked": "2026-03-20T07:32:06.437910",
+      "last_checked": "2026-03-24T07:42:46.859405",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"39b85fd5ed5ad31821396ab69a93b589\"",
       "file_path": "documentation/vmnet/vmnet-enable-virtio-header-key-swiftvar.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_read_max_packets_key.json": {
       "hash": "15d6a83ba70f7c745a5b8280ca343e8a654817bcd4d974b00092a7b1c55ba4c0",
-      "last_checked": "2026-03-20T07:32:06.511950",
+      "last_checked": "2026-03-24T07:42:47.013780",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"0b5ef2c12f3ea3c2f66d04e71d249359\"",
       "file_path": "documentation/vmnet/vmnet-read-max-packets-key.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_write_max_packets_key.json": {
       "hash": "bd8e5884e81efba7d89ef891321996a096e521a399ef3b56e89f51aef5aaf1dd",
-      "last_checked": "2026-03-20T07:32:06.635195",
+      "last_checked": "2026-03-24T07:42:47.185792",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"5728415b5daa15e6432263a5f8f0354e\"",
       "file_path": "documentation/vmnet/vmnet-write-max-packets-key.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_start_with_network(_:_:_:_:).json": {
       "hash": "01b91ad7551f00eb02528f1a334dbe9416dab497556e80a22fbd3a51ae79b4a0",
-      "last_checked": "2026-03-20T07:32:06.708324",
+      "last_checked": "2026-03-24T07:42:47.328239",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"67533cc5980e9241ac468dcde07855a8\"",
       "file_path": "documentation/vmnet/vmnet-interface-start-with-network.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_add_dhcp_reservation(_:_:_:).json": {
       "hash": "88ee00448e071df78ebb47faef8b198d16ebc77d46af1c2039795b7c65b53856",
-      "last_checked": "2026-03-20T07:32:06.807154",
+      "last_checked": "2026-03-24T07:42:47.483888",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"ce232c7477a5fb36f746552240f3874c\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-add-dhcp-reservation.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_add_port_forwarding_rule(_:_:_:_:_:_:).json": {
       "hash": "5737dd2d6feda72cf59f467cf5c53882f545b7bfc642dca2571f5723d41b2241",
-      "last_checked": "2026-03-20T07:32:06.891135",
+      "last_checked": "2026-03-24T07:42:47.660641",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"368249d1fde44fac28af22b106d26904\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-add-port-forwarding-rule.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_create(_:_:).json": {
       "hash": "0bea14b6f1fc404449b65d24991c0d7310c62a7f332b6850a304106a595c71c9",
-      "last_checked": "2026-03-20T07:32:06.996376",
+      "last_checked": "2026-03-24T07:42:47.954893",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"e4533bf6d0bf6fd0670a7ae52c2c8eb7\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-create.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_disable_dhcp(_:).json": {
       "hash": "6046e278bb4ad887c776eaa602843e4147002ae838edbbafde810f8b6cd4d267",
-      "last_checked": "2026-03-20T07:32:07.069316",
+      "last_checked": "2026-03-24T07:42:48.113860",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"0e33efe095a3e41eec59e3221f7ee940\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-disable-dhcp.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_disable_dns_proxy(_:).json": {
       "hash": "3ec0b343b2e5339d3d199942ec4074c308c6ac2ffee81457c9ef115515a6027a",
-      "last_checked": "2026-03-20T07:32:07.179415",
+      "last_checked": "2026-03-24T07:42:48.240180",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"fba6313ecc8b3132a9086b3bc22069ee\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-disable-dns-proxy.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_disable_nat44(_:).json": {
       "hash": "ed3c5a084dd19f741f774205ba7b5ab49412737d4590133b58e3413b22e448f3",
-      "last_checked": "2026-03-20T07:32:07.333666",
+      "last_checked": "2026-03-24T07:42:48.404989",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"f9695223203b319fc21fb9b9467b79be\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-disable-nat44.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_disable_nat66(_:).json": {
       "hash": "6414adbfbb22460c419227a75f10d9eb775fec525fa60984be71b10db3c37a83",
-      "last_checked": "2026-03-20T07:32:07.487475",
+      "last_checked": "2026-03-24T07:42:48.703426",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"64e9e51e5b83b8a218889bca22f4ae16\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-disable-nat66.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_disable_router_advertisement(_:).json": {
       "hash": "ea0910ec0a9ef5d9c57eeead9d9fc35beac392cc815cd24e492282f28d6fdcda",
-      "last_checked": "2026-03-20T07:32:07.582035",
+      "last_checked": "2026-03-24T07:42:48.855303",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"aa89691629320d097d3eb2b913b024fd\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-disable-router-advertisement.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_set_external_interface(_:_:).json": {
       "hash": "278e7ce16828fdeca41cc4c05707cb904dd1910958063344e0d00ed8005d71e3",
-      "last_checked": "2026-03-20T07:32:07.661251",
+      "last_checked": "2026-03-24T07:42:49.014559",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"3d1f9018839b969db576606c7448c63a\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-set-external-interface.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_set_ipv4_subnet(_:_:_:).json": {
       "hash": "68c52cb461b563491ae437595fbe1c92f6c9c06ff46ef29bf06579d49474a3fc",
-      "last_checked": "2026-03-20T07:32:07.920936",
+      "last_checked": "2026-03-24T07:42:49.179002",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"32d8051cb11372d182676ed94af0cdd0\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-set-ipv4-subnet.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_set_ipv6_prefix(_:_:_:).json": {
       "hash": "546994c11cc6efe6002c3d2616bc349d12a2f7427b3a4580e149b17f61e229cd",
-      "last_checked": "2026-03-20T07:32:07.992264",
+      "last_checked": "2026-03-24T07:42:49.303023",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"c26729963c8ce1f0dd2d3ae188f1ca3f\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-set-ipv6-prefix.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_set_mtu(_:_:).json": {
       "hash": "d889ed2eb699cf046041ecd05574c0966bc0c67e84e0a9bf9d2b206d73b13fdf",
-      "last_checked": "2026-03-20T07:32:08.061235",
+      "last_checked": "2026-03-24T07:42:49.471927",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"6d17f374f1bab466bb549977e91ccd19\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-set-mtu.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_copy_serialization(_:_:).json": {
       "hash": "75b36f7c9c5beada4a4e687c617ba89073bb7633909c7a50947e9466b44bf87c",
-      "last_checked": "2026-03-20T07:32:08.164560",
+      "last_checked": "2026-03-24T07:42:49.660165",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"7c2a59f70a784c1510d80d1e48b2538f\"",
       "file_path": "documentation/vmnet/vmnet-network-copy-serialization.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_create(_:_:).json": {
       "hash": "d22bdd4ce8d927b551b42e44ba5d6e2c14bcdbb44936f1b1d9f56616b0cd997e",
-      "last_checked": "2026-03-20T07:32:08.253414",
+      "last_checked": "2026-03-24T07:42:49.799926",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"ba69d9db8e9ca2c570075adfb94c29a9\"",
       "file_path": "documentation/vmnet/vmnet-network-create.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_create_with_serialization(_:_:).json": {
       "hash": "fa051e29b06ccaa2d85addbf81eda3aa575a080a760ccfae93bcf2e01681ceba",
-      "last_checked": "2026-03-20T07:32:08.316686",
+      "last_checked": "2026-03-24T07:42:49.925687",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"3b35a61f14d8f5007bdf52acb71ee0d3\"",
       "file_path": "documentation/vmnet/vmnet-network-create-with-serialization.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_get_ipv4_subnet(_:_:_:).json": {
       "hash": "23042fb983d53781f2e637f22ee53d42b3e607b1925adfddc6cbd274082d4beb",
-      "last_checked": "2026-03-20T07:32:08.440816",
+      "last_checked": "2026-03-24T07:42:50.114331",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"eb740cec5352aa1df882e7282d5b1fb6\"",
       "file_path": "documentation/vmnet/vmnet-network-get-ipv4-subnet.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_get_ipv6_prefix(_:_:_:).json": {
       "hash": "4c3f2b005a740608e1ff236f99eb755cb1941ed14693df1362c8ea06cf3c7dd9",
-      "last_checked": "2026-03-20T07:32:08.520691",
+      "last_checked": "2026-03-24T07:42:50.279306",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"92a54fb08e29146cdd09472e3eb404cd\"",
       "file_path": "documentation/vmnet/vmnet-network-get-ipv6-prefix.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_configuration_ref.json": {
       "hash": "6e0ec11ea4db8c69839aa111a3ef7e05a4964eafc6ff6c64f7b7d1b09b56e4a2",
-      "last_checked": "2026-03-20T07:32:08.663781",
+      "last_checked": "2026-03-24T07:42:50.562089",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"a3fd41549c0498297b8ed48f71f67c9a\"",
       "file_path": "documentation/vmnet/vmnet-network-configuration-ref.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_ref.json": {
       "hash": "dd3909d9a2edd28744dba8822d74eb90545d5593a2db0bdcea6e75e8a339686a",
-      "last_checked": "2026-03-20T07:32:08.730218",
+      "last_checked": "2026-03-24T07:42:50.728131",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"446719817cdf43bcdfa958ae3b770b5c\"",
       "file_path": "documentation/vmnet/vmnet-network-ref.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_success.json": {
       "hash": "0bcddcb2242e6b49b22bd01c7446796ed4752b0701259729d383b2019ca20348",
-      "last_checked": "2026-03-20T07:32:08.797054",
+      "last_checked": "2026-03-24T07:42:50.908500",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"05c4237944270aa4bca7dc6208f0d338\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-success.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_failure.json": {
       "hash": "1cc19d0424bf85793be92efd3be13c740305a580fe3b363ebd430284bb8300c8",
-      "last_checked": "2026-03-20T07:32:08.907551",
+      "last_checked": "2026-03-24T07:42:51.070083",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"1902ed62b15ec4d68bb9fdf2ea5290bc\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-failure.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_mem_failure.json": {
       "hash": "45b82ea9d1680bb8517c592aedebfebeb4ce81df0184b12e01b3c525767dc3a3",
-      "last_checked": "2026-03-20T07:32:09.042620",
+      "last_checked": "2026-03-24T07:42:51.255320",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"5c3f38bff8f839f249bcacb15e3ff3d9\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-mem-failure.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_invalid_argument.json": {
       "hash": "c301259bc93af677525a731972e567a351be85300d47ae2cbcfb892aa5308556",
-      "last_checked": "2026-03-20T07:32:09.177199",
+      "last_checked": "2026-03-24T07:42:51.420295",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"d3605eb433dbd4ab10265660dabc6e68\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-invalid-argument.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_setup_incomplete.json": {
       "hash": "642cb4598200d6ccd6791479ca35ba72f7a6868e18d4c4c2cc776a9b148d61fc",
-      "last_checked": "2026-03-20T07:32:09.241945",
+      "last_checked": "2026-03-24T07:42:51.550870",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"83d961c3428780511b30d7b29fe2bef0\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-setup-incomplete.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_invalid_access.json": {
       "hash": "c81d8ce7785028ecabcc401755fd4952c8a5a62eab2cb28932a90eb5e016f376",
-      "last_checked": "2026-03-20T07:32:09.313906",
+      "last_checked": "2026-03-24T07:42:51.671847",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"ea77796549e34529f3aa7e4cded3c787\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-invalid-access.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_packet_too_big.json": {
       "hash": "400a37016c387d6eb5fb4ed2ee97e28d4c9afc5477dd3bb97499602107c607ab",
-      "last_checked": "2026-03-20T07:32:09.383124",
+      "last_checked": "2026-03-24T07:42:51.873148",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"9f07f715df9364582148373dc83c6eaf\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-packet-too-big.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_buffer_exhausted.json": {
       "hash": "626002acb88b08175782541c18acc2a13f449ac79c80c1254d1e19b6f05a4539",
-      "last_checked": "2026-03-20T07:32:09.447401",
+      "last_checked": "2026-03-24T07:42:51.998509",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"24a3150ee12ac7bdb080f936503003fb\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-buffer-exhausted.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_too_many_packets.json": {
       "hash": "a302c4002e15b7ac54992bab9ca16ddc8e701914c5355fc6db8cf32f6e2b949c",
-      "last_checked": "2026-03-20T07:32:09.542333",
+      "last_checked": "2026-03-24T07:42:52.163023",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"aa6374d7b24df4d7e0b6e1a3a4afeebc\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-too-many-packets.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_not_authorized.json": {
       "hash": "1ed5b9bab6767333ad791ea4a522d1b3505d8dd5dc79b80dd7f6fdeb16606641",
-      "last_checked": "2026-03-20T07:32:09.627444",
+      "last_checked": "2026-03-24T07:42:52.314689",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"fd008dd285719fe3a1c6913e7173d6aa\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-not-authorized.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/vmnet_sharing_service_busy.json": {
       "hash": "5702d4c12c5072812828d9e25f09c71a64913b9d27f5ab7cab29c5c9b092ea1f",
-      "last_checked": "2026-03-20T07:32:09.695534",
+      "last_checked": "2026-03-24T07:42:52.608918",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"c24ef12ab601e94c7e8a49b9850699bb\"",
       "file_path": "documentation/vmnet/vmnet_return_t/vmnet-sharing-service-busy.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_return_t/init(rawvalue:).json": {
       "hash": "bd3538db4d19a5dd2102993cb393a78f143def015aa1f6c489dd965c777de71c",
-      "last_checked": "2026-03-20T07:32:09.768558",
+      "last_checked": "2026-03-24T07:42:52.725860",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"932c44b28a325e805f32eb482624ad95\"",
       "file_path": "documentation/vmnet/vmnet_return_t/init-rawvalue.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmpktdesc/vm_flags.json": {
       "hash": "143c36670968386b7a0ae373a4d93988469076fe78c961c8ef245dd4cc7981e5",
-      "last_checked": "2026-03-20T07:32:09.837888",
+      "last_checked": "2026-03-24T07:42:52.861998",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"540c5f2d778236852e331c378d430633\"",
       "file_path": "documentation/vmnet/vmpktdesc/vm-flags.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmpktdesc/vm_pkt_iov.json": {
       "hash": "0cdd4e7dc5da69882a9ea1fdbbc7cf60e62e4700338391d894a15647f1480cd5",
-      "last_checked": "2026-03-20T07:32:09.984304",
+      "last_checked": "2026-03-24T07:42:53.025394",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"fafa68d4ec66b3476555b895c32c4a18\"",
       "file_path": "documentation/vmnet/vmpktdesc/vm-pkt-iov.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmpktdesc/vm_pkt_iovcnt.json": {
       "hash": "2dd3f314a86bd6bad9e5921e75b82cc04e5ccc42cc16abd51ab5a96132e78e4c",
-      "last_checked": "2026-03-20T07:32:10.080509",
+      "last_checked": "2026-03-24T07:42:53.152408",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"b8639c6659f59422bfd01a580cfd1658\"",
       "file_path": "documentation/vmnet/vmpktdesc/vm-pkt-iovcnt.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmpktdesc/vm_pkt_size.json": {
       "hash": "bfeed35f9bdb337c6f07e060e14607c5f8efcc666385b915a8b9005055638937",
-      "last_checked": "2026-03-20T07:32:10.173277",
+      "last_checked": "2026-03-24T07:42:53.324489",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"c96619ca103f5d5b7347be0892df2851\"",
       "file_path": "documentation/vmnet/vmpktdesc/vm-pkt-size.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmpktdesc/init(vm_pkt_size:vm_pkt_iov:vm_pkt_iovcnt:vm_flags:).json": {
       "hash": "0ee18d2d305c129f37396f63b12182892bf3519dbe335da59c550dd1c3ccac91",
-      "last_checked": "2026-03-20T07:32:10.237037",
+      "last_checked": "2026-03-24T07:42:53.444394",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"25a20d0fca0c3cf2f7b0c023a52a5f1c\"",
       "file_path": "documentation/vmnet/vmpktdesc/init-vm-pkt-sizevm-pkt-iovvm-pkt-iovcntvm-flags.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/interface_event_t/vmnet_interface_packets_available.json": {
       "hash": "54b20510dc23334a9d1b3682bba942503ef17607e9a539951464fe4f5906e7ca",
-      "last_checked": "2026-03-20T07:32:10.299764",
+      "last_checked": "2026-03-24T07:42:53.581876",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"9969a73c3300b6bbca6e6b125bc17f2e\"",
       "file_path": "documentation/vmnet/interface_event_t/vmnet-interface-packets-available.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/interface_event_t/init(rawvalue:).json": {
       "hash": "40b1d79a74b87f13832404e012dbc6aac827c953bcbbcdb0baa7e1ae0bec4e32",
-      "last_checked": "2026-03-20T07:32:10.364599",
+      "last_checked": "2026-03-24T07:42:53.711405",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"a643047b1c1ff4cf7c58b785b8a9e3ca\"",
       "file_path": "documentation/vmnet/interface_event_t/init-rawvalue.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/operating_modes_t/vmnet_host_mode.json": {
       "hash": "e8931b070248e90d2a63be932e37f57ac468a3529bfbad822a8c497d67b4264e",
-      "last_checked": "2026-03-20T07:32:10.445078",
+      "last_checked": "2026-03-24T07:42:53.842205",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"c8c5aab4cb2749bb76bb1e56ecfd7370\"",
       "file_path": "documentation/vmnet/operating_modes_t/vmnet-host-mode.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/operating_modes_t/vmnet_shared_mode.json": {
       "hash": "d2cfe5a8e6e3520e79536c643783daf79c2237d25c57840efc6aabfe2610153f",
-      "last_checked": "2026-03-20T07:32:10.526221",
+      "last_checked": "2026-03-24T07:42:53.958236",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"75084ae85b662aac7615d72197bd2ee6\"",
       "file_path": "documentation/vmnet/operating_modes_t/vmnet-shared-mode.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/operating_modes_t/vmnet_bridged_mode.json": {
       "hash": "53647154252afd336335b94f2020c358e1c31a4b7efe2d30080ab1476e3cf520",
-      "last_checked": "2026-03-20T07:32:10.626536",
+      "last_checked": "2026-03-24T07:42:54.148884",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"9a59b904792ca63d3208ec60ea56a587\"",
       "file_path": "documentation/vmnet/operating_modes_t/vmnet-bridged-mode.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/operating_modes_t/init(rawvalue:).json": {
       "hash": "21d13336e9cf8b453831cae8ff68d40ca7e1797ddad17135a25f3777750b019b",
-      "last_checked": "2026-03-20T07:32:10.707286",
+      "last_checked": "2026-03-24T07:42:54.280864",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"e9cab3ecdcc43b7bc3d595d2f9f7c59a\"",
       "file_path": "documentation/vmnet/operating_modes_t/init-rawvalue.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_operation_mode_key.json": {
       "hash": "f1de37afa3c39b44881eea1c1b19ab6b0186b71e3fc004c0d052dfc163c1e12d",
-      "last_checked": "2026-03-20T07:32:10.770739",
+      "last_checked": "2026-03-24T07:42:54.623352",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"ba07e9f04960b34b4991db2dcee2c3a7\"",
       "file_path": "documentation/vmnet/vmnet-operation-mode-key.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_id_key.json": {
       "hash": "20d0dcdc82087ed0c3b838c13b8b96f7b37495471e5058da21354e33ec187de1",
-      "last_checked": "2026-03-20T07:32:10.875858",
+      "last_checked": "2026-03-24T07:42:54.815873",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"87357ccd4e147a07a5dfe6773f6d0696\"",
       "file_path": "documentation/vmnet/vmnet-interface-id-key.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_mac_address_key.json": {
       "hash": "3e4b4ac64a1dd547da4f0b80f471ea48fd478764045315d0e0ca703790c845d7",
-      "last_checked": "2026-03-20T07:32:10.943327",
+      "last_checked": "2026-03-24T07:42:55.116909",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"db1e25954c77efc33c05e644baeeeb63\"",
       "file_path": "documentation/vmnet/vmnet-mac-address-key.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_mtu_key.json": {
       "hash": "b7bc451e7d863ccc8c790eb4c8e6f2fd20a078ade092e10d67dea43a7f0e7086",
-      "last_checked": "2026-03-20T07:32:11.006203",
+      "last_checked": "2026-03-24T07:42:55.277917",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"9ee65be0da6f74c75837bd7f733bce1f\"",
       "file_path": "documentation/vmnet/vmnet-mtu-key.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_max_packet_size_key.json": {
       "hash": "fae53c8d29d263dc8f75f025104c9a210895383e957874099bf9e3356be4786e",
-      "last_checked": "2026-03-20T07:32:11.076922",
+      "last_checked": "2026-03-24T07:42:55.567597",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"42c9dcacc6fc52d73f22f81886fba60e\"",
       "file_path": "documentation/vmnet/vmnet-max-packet-size-key.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_estimated_packets_available_key.json": {
       "hash": "f69fade5ce760b9355fa08b6e4b3188931c4feaa683d9fb76e63cd72bf72bbe7",
-      "last_checked": "2026-03-20T07:32:11.158180",
+      "last_checked": "2026-03-24T07:42:55.699527",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"84f57c2e19c4e2e43f01ced5d941ecde\"",
       "file_path": "documentation/vmnet/vmnet-estimated-packets-available-key.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_allocate_mac_address_key.json": {
       "hash": "5afc61added10739afc53c07f349a505a0fdf2b3b2e2d5b452906f9f54fb3ed7",
-      "last_checked": "2026-03-20T07:32:11.386326",
+      "last_checked": "2026-03-24T07:42:55.890704",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"01cd6f197b189eca403507417d2c9244\"",
       "file_path": "documentation/vmnet/vmnet-allocate-mac-address-key.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_enable_checksum_offload_key.json": {
       "hash": "e00c232a228a5d9f41f0f205e78d46d648c8aff2eb30336cc4c273ee11dfea17",
-      "last_checked": "2026-03-20T07:32:11.489830",
+      "last_checked": "2026-03-24T07:42:56.179297",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"a2bb72cb4e2915bb06a5b0fd17adf673\"",
       "file_path": "documentation/vmnet/vmnet-enable-checksum-offload-key.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_enable_isolation_key.json": {
       "hash": "2a7f5da6111ef21c5f9dd1e35222bd6a19aeb3725d470069559a2533bf5dd567",
-      "last_checked": "2026-03-20T07:32:11.611517",
+      "last_checked": "2026-03-24T07:42:56.340465",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"cee157a0bc61a9af17856e2824c13eab\"",
       "file_path": "documentation/vmnet/vmnet-enable-isolation-key.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_enable_tso_key.json": {
       "hash": "d49f0b0f47747e704626bed0df462e5c9045a9089557b8ffa5d71c63a9a3b0cd",
-      "last_checked": "2026-03-20T07:32:11.710137",
+      "last_checked": "2026-03-24T07:42:56.512164",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"9f2d20764a2a476581b34c73644196a5\"",
       "file_path": "documentation/vmnet/vmnet-enable-tso-key.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_end_address_key.json": {
       "hash": "660553755949b8ea49c8c512e7216a0a841188c9bed3f6936a6eb89c19c5d50f",
-      "last_checked": "2026-03-20T07:32:11.794656",
+      "last_checked": "2026-03-24T07:42:56.634778",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"fb298a279ddc9cbc8d24e7c98b9e34b9\"",
       "file_path": "documentation/vmnet/vmnet-end-address-key.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_host_ip_address_key.json": {
       "hash": "bfeae91c24843748327a3daccea1d30d506bb5c3f98bdc75a9b40439cee51e26",
-      "last_checked": "2026-03-20T07:32:11.873525",
+      "last_checked": "2026-03-24T07:42:56.784734",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"bf110d4862a1320057cfc4524381f5de\"",
       "file_path": "documentation/vmnet/vmnet-host-ip-address-key.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_host_ipv6_address_key.json": {
       "hash": "32bc19324b6d63cc47f366928cce3e1535547d8b04484883779e3568935ca58c",
-      "last_checked": "2026-03-20T07:32:11.943154",
+      "last_checked": "2026-03-24T07:42:56.945837",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"18c734067595026048967e10193e1506\"",
       "file_path": "documentation/vmnet/vmnet-host-ipv6-address-key.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_host_subnet_mask_key.json": {
       "hash": "6952101fa4ddbba543ad10a92fd2d2d54460aa0233c7cf4ae75b6db10b1b34b2",
-      "last_checked": "2026-03-20T07:32:12.013066",
+      "last_checked": "2026-03-24T07:42:57.114598",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"b12337c09a695492c1014ed27b20410a\"",
       "file_path": "documentation/vmnet/vmnet-host-subnet-mask-key.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_nat66_prefix_key.json": {
       "hash": "070f37005492c0c27569f631daf6db82cb3f735172c04781739a40180fce0508",
-      "last_checked": "2026-03-20T07:32:12.105942",
+      "last_checked": "2026-03-24T07:42:57.291898",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"b2ab8c617a6c9892c1c6c72cea1a9e7f\"",
       "file_path": "documentation/vmnet/vmnet-nat66-prefix-key.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_nat66_prefix_length_key.json": {
       "hash": "601068677915c01b15f439df1ebf3b8abdb85d9a71e04ed500d6c10550bbec11",
-      "last_checked": "2026-03-20T07:32:12.182201",
+      "last_checked": "2026-03-24T07:42:57.490268",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"636cd9279e3aece60d14e472f8139494\"",
       "file_path": "documentation/vmnet/vmnet-nat66-prefix-length-key.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_network_identifier_key.json": {
       "hash": "605cd003d953e12787ce02507cd620a4769d6784f4bfd0a3aefb247121d38c5d",
-      "last_checked": "2026-03-20T07:32:12.515750",
+      "last_checked": "2026-03-24T07:42:57.663485",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"6d444f9bd9303de01d5dbb39321ac110\"",
       "file_path": "documentation/vmnet/vmnet-network-identifier-key.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_shared_interface_name_key.json": {
       "hash": "d55f8299876abd718b5147e96ed4e825e3358c8932922f7859c411e62f2c4245",
-      "last_checked": "2026-03-20T07:32:12.580598",
+      "last_checked": "2026-03-24T07:42:57.827805",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"1fd9e6323630f3ee0f27e10a4ca2b2c7\"",
       "file_path": "documentation/vmnet/vmnet-shared-interface-name-key.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_start_address_key.json": {
       "hash": "7a2cd2c82297f3b382746777626313668e9bc09e1a500d7eecf79467847d642c",
-      "last_checked": "2026-03-20T07:32:12.655940",
+      "last_checked": "2026-03-24T07:42:58.005485",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"a70e67ce230e72b9715738869d7f98ce\"",
       "file_path": "documentation/vmnet/vmnet-start-address-key.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_subnet_mask_key.json": {
       "hash": "cf375d28cb13e873af178bf3cc5f8e4d2a786d645d727ad7d699b5b87620c346",
-      "last_checked": "2026-03-20T07:32:12.730981",
+      "last_checked": "2026-03-24T07:42:58.160153",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"e4101d4354a4e8b9fe84629e9e540e24\"",
       "file_path": "documentation/vmnet/vmnet-subnet-mask-key.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_copy_shared_interface_list().json": {
       "hash": "33953ae3b845a262828d028cdf3bc2e761459883d545dd7c0f9470f940dd0635",
-      "last_checked": "2026-03-20T07:32:12.799705",
+      "last_checked": "2026-03-24T07:42:58.327958",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"ed564fcf24b6f74bdb4b2ef918652dd2\"",
       "file_path": "documentation/vmnet/vmnet-copy-shared-interface-list.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_add_ip_port_forwarding_rule(_:_:_:_:_:_:_:).json": {
       "hash": "d90e4179ea63d655744e6af487892422eca3d7e9a83b9b5be011efc4125d6826",
-      "last_checked": "2026-03-20T07:32:12.870572",
+      "last_checked": "2026-03-24T07:42:58.500746",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"6a4f48c3b0addead963fcfea005ce09d\"",
       "file_path": "documentation/vmnet/vmnet-interface-add-ip-port-forwarding-rule.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_add_port_forwarding_rule(_:_:_:_:_:_:).json": {
       "hash": "8b49e7f0df7cf1b2b55ba24454ba8218cdd9ead1e1a7b810a0d73843d9f2a365",
-      "last_checked": "2026-03-20T07:32:12.945179",
+      "last_checked": "2026-03-24T07:42:58.660477",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"ba094a9be1dbbb28230caeee48c253ef\"",
       "file_path": "documentation/vmnet/vmnet-interface-add-port-forwarding-rule.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_get_ip_port_forwarding_rules(_:_:_:).json": {
       "hash": "1c49d0b62a67c39108f81564fb824fc696cb19746b8f60ce4e22d6ef683f3016",
-      "last_checked": "2026-03-20T07:32:13.016135",
+      "last_checked": "2026-03-24T07:42:58.842711",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"a6bd5044d94e3c2b7b862cc764ef40ce\"",
       "file_path": "documentation/vmnet/vmnet-interface-get-ip-port-forwarding-rules.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_get_port_forwarding_rules(_:_:).json": {
       "hash": "5a2939de3901421b43db7b570b916bb677459325ac06c93f22a2401b4016b8b8",
-      "last_checked": "2026-03-20T07:32:13.097143",
+      "last_checked": "2026-03-24T07:42:59.007934",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"6155294e9a0b93365756d1aa362fc1b8\"",
       "file_path": "documentation/vmnet/vmnet-interface-get-port-forwarding-rules.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_remove_ip_port_forwarding_rule(_:_:_:_:_:).json": {
       "hash": "916a8b25e83777cc401140d7530e6bf3dbf17477863b2bd3ebbcc3600ed1f604",
-      "last_checked": "2026-03-20T07:32:13.171686",
+      "last_checked": "2026-03-24T07:42:59.169840",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"699dbb714bd3d56724692152a94b2dd5\"",
       "file_path": "documentation/vmnet/vmnet-interface-remove-ip-port-forwarding-rule.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_remove_port_forwarding_rule(_:_:_:_:).json": {
       "hash": "60cd5228b1b6554ab20f49e45bd6431dc825d12bfba63a4a384f2345e9146fcd",
-      "last_checked": "2026-03-20T07:32:13.326740",
+      "last_checked": "2026-03-24T07:42:59.332501",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"84a44d8c9dbb1253bcacb087dafc9c85\"",
       "file_path": "documentation/vmnet/vmnet-interface-remove-port-forwarding-rule.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_ip_port_forwarding_rule_get_details(_:_:_:_:_:_:).json": {
       "hash": "ff91c083f365c3665bf36f4cc245533cd8293594c8a4a4b0d782d9722b4fa699",
-      "last_checked": "2026-03-20T07:32:13.390897",
+      "last_checked": "2026-03-24T07:42:59.489402",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"bc83410fdc9ca5d934bc1952a6dbf3b1\"",
       "file_path": "documentation/vmnet/vmnet-ip-port-forwarding-rule-get-details.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_port_forwarding_rule_get_details(_:_:_:_:_:).json": {
       "hash": "b116f5e0f623ebddc3fc11f63bae718db23ddc8f04cd0767238f8ededf94df0c",
-      "last_checked": "2026-03-20T07:32:13.460268",
+      "last_checked": "2026-03-24T07:42:59.644387",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"868d7f0a391f9436319305d4377dc91f\"",
       "file_path": "documentation/vmnet/vmnet-port-forwarding-rule-get-details.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_completion_handler_t.json": {
       "hash": "7fae05850a1ec7a267cde9cde7c80c25e1eb148e05559eb521badd5626e841ba",
-      "last_checked": "2026-03-20T07:32:13.540324",
+      "last_checked": "2026-03-24T07:42:59.814831",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"bb23a193e1fda9110cab55fb6758b104\"",
       "file_path": "documentation/vmnet/vmnet-interface-completion-handler-t.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_event_callback_t.json": {
       "hash": "58d536c7f49fbf6efb6b285cf9353b8770a1470d5c5b77c6e363a5981d7c9216",
-      "last_checked": "2026-03-20T07:32:13.634765",
+      "last_checked": "2026-03-24T07:42:59.955381",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"42ab58f3768b1604317ad1ec98d1f17b\"",
       "file_path": "documentation/vmnet/vmnet-interface-event-callback-t.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_get_ip_port_forwarding_rules_handler_t.json": {
       "hash": "fed824e4a0709f8c7dae577d34e5c0a22763027c7f9a35ab0bea3ee660af7dca",
-      "last_checked": "2026-03-20T07:32:13.718658",
+      "last_checked": "2026-03-24T07:43:00.173222",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"45782edc0f527dd48a674f2b95941e9a\"",
       "file_path": "documentation/vmnet/vmnet-interface-get-ip-port-forwarding-rules-handler-t.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_interface_get_port_forwarding_rules_handler_t.json": {
       "hash": "234e9d0ecd70cc43097e385638cdec7715bd456e9aa72020e2b08267a678b356",
-      "last_checked": "2026-03-20T07:32:13.786593",
+      "last_checked": "2026-03-24T07:43:00.352216",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"bc430721c2a50cccaa691066f23e2e44\"",
       "file_path": "documentation/vmnet/vmnet-interface-get-port-forwarding-rules-handler-t.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_start_interface_completion_handler_t.json": {
       "hash": "3ba48a82a8c599e1d1cf809d40dd5036e5537362073049484d5050a63ba3bf4e",
-      "last_checked": "2026-03-20T07:32:13.851707",
+      "last_checked": "2026-03-24T07:43:00.517600",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"488dc2bf73657e514f76e128591dbee0\"",
       "file_path": "documentation/vmnet/vmnet-start-interface-completion-handler-t.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/vmnet/vmnet_mode_t.json": {
       "hash": "b8e388a68d8603982e76c41e371249d8ef449e8610636520f3120142c96487a5",
-      "last_checked": "2026-03-20T07:32:08.583874",
+      "last_checked": "2026-03-24T07:42:50.442943",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:03.519809",
+      "session_id": "2026-03-24T07:42:42.888384",
       "etag": "W/\"f1292353f5d3a37eae6de6251cbd3a39\"",
       "file_path": "documentation/vmnet/vmnet-mode-t.md"
     },

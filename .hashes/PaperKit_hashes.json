@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:31:16.637733",
+    "last_updated": "2026-03-24T07:41:27.964558",
     "total_pages": 454,
-    "session_id": "2026-03-20T07:31:03.570568"
+    "session_id": "2026-03-24T07:41:02.673627"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/PaperKit.json": {
       "hash": "24c5c6fe3bd196e60c27ace6aa95d1f1b6b3f4ea59b05e8003240b3cd1c95762",
-      "last_checked": "2026-03-20T07:31:03.988773",
+      "last_checked": "2026-03-24T07:41:02.908608",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"350bc0130f950124c0b5f62ec22693ac\"",
       "file_path": "documentation/PaperKit/PaperKit.md"
     },
     "https://developer.apple.com/documentation/PaperKit": {
       "hash": "24c5c6fe3bd196e60c27ace6aa95d1f1b6b3f4ea59b05e8003240b3cd1c95762",
-      "last_checked": "2026-03-20T07:31:03.906323",
+      "last_checked": "2026-03-24T07:41:02.796419",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"350bc0130f950124c0b5f62ec22693ac\"",
       "file_path": "documentation/PaperKit/PaperKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller.json": {
       "hash": "c4bc33936fb7bb683c3e59263970571e6310d23d47553f3f3625c82d89cdd38e",
-      "last_checked": "2026-03-20T07:31:04.372932",
+      "last_checked": "2026-03-24T07:41:03.340517",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"dc9b78b4597b3200fc6d3453c62cfec4\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller.json": {
       "hash": "d9d58c79086faa1f60abf48478368f3f75f5553271b7d351ee8fa5dcff46364e",
-      "last_checked": "2026-03-20T07:31:04.622732",
+      "last_checked": "2026-03-24T07:41:03.457606",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"17d0c5c6e3e047f24f04845600b7c4da\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller.json": {
       "hash": "2d02687ac4b5a7ab596176f3e3fbe3b03881216cb688b2ba97952066ac65f9f0",
-      "last_checked": "2026-03-20T07:31:04.868783",
+      "last_checked": "2026-03-24T07:41:03.595530",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"9973c2214581f70aeb7332aa3febd629\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset.json": {
       "hash": "ac426b720a5395bba8e0853b6012ccffc1365d0155acef0beb8905a2716c07e2",
-      "last_checked": "2026-03-20T07:31:05.124090",
+      "last_checked": "2026-03-24T07:41:03.736569",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"ef738c69f45a1bd73a51a3da4460297b\"",
       "file_path": "documentation/PaperKit/featureset.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration.json": {
       "hash": "36a3ad6b7afb75ecb648588ed9a85ab042dc512758fb99e9e434c325ecbc0e03",
-      "last_checked": "2026-03-20T07:31:05.241490",
+      "last_checked": "2026-03-24T07:41:03.853407",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"04ce39e8046c941a52431b111f199e38\"",
       "file_path": "documentation/PaperKit/shapeconfiguration.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/renderingoptions.json": {
       "hash": "7303587556860b38551a76853be70b7bfca4e47c7ca9ea125de186bee0b30c0b",
-      "last_checked": "2026-03-20T07:31:05.339980",
+      "last_checked": "2026-03-24T07:41:03.991272",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"653b90a7cb0d66aeb481db8c7b61221d\"",
       "file_path": "documentation/PaperKit/renderingoptions.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup.json": {
       "hash": "5e9434defb0d54cc95aaf49d4a9cfad9f3a86ab7020f832f3cd1e277737f520a",
-      "last_checked": "2026-03-20T07:31:05.412860",
+      "last_checked": "2026-03-24T07:41:04.148504",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"121c3cd02c7c098eb8d8ce825424eef7\"",
       "file_path": "documentation/PaperKit/papermarkup.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuperror.json": {
       "hash": "f06148402250b54a46975355e856a4d50d212debbd816c06989c972fcf97dd04",
-      "last_checked": "2026-03-20T07:31:05.674198",
+      "last_checked": "2026-03-24T07:41:04.321681",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4ad7692f910f896ca98578eb1f58d79b\"",
       "file_path": "documentation/PaperKit/markuperror.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol.json": {
       "hash": "112a1a267e9515d3a8fcebabf68e87227269dd3f9c835bec3733cb75fc57759f",
-      "last_checked": "2026-03-20T07:31:05.778426",
+      "last_checked": "2026-03-24T07:41:04.611866",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"a3146c4137c6abd3b343fe901045aa30\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swiftprotocol.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/init(markup:supportedfeatureset:).json": {
       "hash": "24d65a9f19fc8f267c4c302bd0b2c2c1fa1a811e89c9466b7d7a570468d65789",
-      "last_checked": "2026-03-20T07:31:05.874810",
+      "last_checked": "2026-03-24T07:41:04.786642",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"655eb1815a62737818362713e04b0046\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/init-markupsupportedfeatureset.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/contentview-4aeda.json": {
       "hash": "4bc442b796217f5112fc39ab371e14b7ad2e21299710063a3614f4bdfbf179a7",
-      "last_checked": "2026-03-20T07:31:06.334399",
+      "last_checked": "2026-03-24T07:41:05.336955",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"fc4c9002a08d3f3d4c23554f949021b1\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/contentview-4aeda.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/contentview-4hbkf.json": {
       "hash": "d05a1658d061df20dc200de173f880a33f44b98f4adfc08308710e9d6deb3875",
-      "last_checked": "2026-03-20T07:31:06.408247",
+      "last_checked": "2026-03-24T07:41:05.448662",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"851406afe9b317cff973f92a8cd9feba\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/contentview-4hbkf.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/contentvisibleframe.json": {
       "hash": "5b91e73b9421d1e07950f4effabf9ecb11fd0c22c0a71134493f2807418fed75",
-      "last_checked": "2026-03-20T07:31:06.504231",
+      "last_checked": "2026-03-24T07:41:05.616237",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"33e5071c901d99b552683243539dc768\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/contentvisibleframe.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.property.json": {
       "hash": "682faec3a10140346cd837824ec87f4f31c4ccad8f2aca414736b58df3942510",
-      "last_checked": "2026-03-20T07:31:06.615226",
+      "last_checked": "2026-03-24T07:41:05.736954",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"df2415779976bba9bf9b89d298fed71f\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swiftproperty.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/directtouchautomaticallydraws.json": {
       "hash": "fb4a34be34c56fbc5a6ef998e3174666eaba73df66048761df0373e90073a0da",
-      "last_checked": "2026-03-20T07:31:06.704262",
+      "last_checked": "2026-03-24T07:41:05.877853",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"fa0c91d5805a4ba54bb7d35ca4572b9d\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/directtouchautomaticallydraws.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/directtouchmode.json": {
       "hash": "03327d85eed4886cc24e3c1e369c477293e9365b20250039c604879b5dea9105",
-      "last_checked": "2026-03-20T07:31:06.767123",
+      "last_checked": "2026-03-24T07:41:05.988648",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"5be082d3444407f10c407d6897222162\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/directtouchmode.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/drawingtool.json": {
       "hash": "95305e592a2b232ca9b1eed0ef15b9c95548ee9017db8cfa0ab08993dec8c044",
-      "last_checked": "2026-03-20T07:31:06.843329",
+      "last_checked": "2026-03-24T07:41:06.114306",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"c664f1f5e0b361a75f048c40de3b90d3\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/drawingtool.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/indirectpointertouchmode.json": {
       "hash": "12ffd0554b171b2b6a0408a5c34228358a9af43dc57983287252eac789d2605f",
-      "last_checked": "2026-03-20T07:31:06.912157",
+      "last_checked": "2026-03-24T07:41:06.272856",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"0b182897f5baf9843ff811d36561d8f5\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/indirectpointertouchmode.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/iseditable.json": {
       "hash": "a5bcadea27d49e21bb2bf5b14ffd207182a793c0ea9661c0cce9a246c075d28f",
-      "last_checked": "2026-03-20T07:31:07.003854",
+      "last_checked": "2026-03-24T07:41:06.385736",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"73769a7cf056449b25eb17893f4b13b2\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/iseditable.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/isruleractive.json": {
       "hash": "a0f4756caa8575bb9fca52c10867d76b4ee92a98ba2e3fda096bbd643a50ef2f",
-      "last_checked": "2026-03-20T07:31:07.115743",
+      "last_checked": "2026-03-24T07:41:06.576546",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"192493a9bdf106c1cf4be54e78ec0221\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/isruleractive.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/markup.json": {
       "hash": "030912559e81f83533c4bfebe9c22ec197cf32ca317b8ff567ed1286d6918eaa",
-      "last_checked": "2026-03-20T07:31:07.213336",
+      "last_checked": "2026-03-24T07:41:06.700159",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"600db6a0ca228dcd450c76cecf890ed9\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/markup.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/selectedmarkup.json": {
       "hash": "54496c6253ae1c44c0c704abf0f816044ad9cd56c279db1e93c6768b4d13fa93",
-      "last_checked": "2026-03-20T07:31:07.312237",
+      "last_checked": "2026-03-24T07:41:06.864982",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"d86a803869fc4c030d5cbc95ded72f9e\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/selectedmarkup.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/supportedfeatureset.json": {
       "hash": "1129e519a94f02bb8196230cf55551389e489b892d84f07bd85a8e61f8609a3b",
-      "last_checked": "2026-03-20T07:31:07.563305",
+      "last_checked": "2026-03-24T07:41:07.416644",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"36110f1ed0cb52746162387c4d92dc45\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/supportedfeatureset.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/zoomrange.json": {
       "hash": "34ab6fb0527c91d26e69e1870c53d52add592a2b1157e7fc89fec714059311db",
-      "last_checked": "2026-03-20T07:31:07.713934",
+      "last_checked": "2026-03-24T07:41:07.677815",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"bba8f15a6b0142dee7a7b182370eb774\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/zoomrange.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/loadview().json": {
       "hash": "60e8d580e36e633161ca377f4e8083f120218ccef1947722351c2597c3427128",
-      "last_checked": "2026-03-20T07:31:07.804193",
+      "last_checked": "2026-03-24T07:41:07.838398",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"2dab32f24ad2d778bc0afdd7535c3eee\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/loadview.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/setcontentvisibleframe(_:animated:).json": {
       "hash": "7f8e4a8a9049069e414d381d7a30766d62870a747d8d30bfe62b14a5f735e860",
-      "last_checked": "2026-03-20T07:31:07.936385",
+      "last_checked": "2026-03-24T07:41:07.975937",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"9c00b15364fa4004f4d08c189a265805\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/setcontentvisibleframe-animated.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).json": {
       "hash": "45cda6d7e5a13a51dadf90d49f9fe2c30a54ae1800748728a31d8f6330796379",
-      "last_checked": "2026-03-20T07:31:08.008115",
+      "last_checked": "2026-03-24T07:41:08.106247",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"cb82bb832e32774c6d8b4bdcbddd47e0\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/suggestedframeforinserting-contentinframe.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/viewdidload().json": {
       "hash": "cb1f9537c8122cfb4b634a67b6608d53232a25f6428d69a9c769d2ed12b1e332",
-      "last_checked": "2026-03-20T07:31:08.222934",
+      "last_checked": "2026-03-24T07:41:08.580203",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"bc182c495b203a6c01c9027e69150ae3\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/viewdidload.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/touchmode.json": {
       "hash": "d44ab76ec4f60439279659d6e4e3dde41ca51b3c8401ab43c5fb73810ef44af8",
-      "last_checked": "2026-03-20T07:31:08.303976",
+      "last_checked": "2026-03-24T07:41:08.699591",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"62e6f44ac2e4513729617d19351e01f4\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/touchmode.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol.json": {
       "hash": "d093adb72bc9e7d0b50922e2ec22a2ba1f8cfc7450d2650c924e294a0f7f679a",
-      "last_checked": "2026-03-20T07:31:08.442995",
+      "last_checked": "2026-03-24T07:41:09.002362",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"b45775ca84ec7aa02cd2f4772527b3ee\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swiftprotocol.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/delegate-swift.protocol.json": {
       "hash": "b328ac1506d26e581aa85517c17bf6f48a9668b9c7949af715e0c7476f245d8c",
-      "last_checked": "2026-03-20T07:31:08.371256",
+      "last_checked": "2026-03-24T07:41:08.831943",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"95ec0559c291173c81184be0a8de567c\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/delegate-swiftprotocol.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/init(supportedfeatureset:additionalactions:).json": {
       "hash": "1765ac868611b5f2f5dd13270203db6dd944245bd7ac4f01048d9ec78f1b1012",
-      "last_checked": "2026-03-20T07:31:08.527371",
+      "last_checked": "2026-03-24T07:41:09.138319",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"2858fb9e8678ba0be107133ee495d612\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/init-supportedfeaturesetadditionalactions.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/delegate-swift.property.json": {
       "hash": "3a3f6072c2b2c0b33184da97575516aad922772936c286492e14707b2a617a16",
-      "last_checked": "2026-03-20T07:31:08.592117",
+      "last_checked": "2026-03-24T07:41:09.256124",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"c60b2e7446d5c7315aa0fabac2c9e8c2\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/delegate-swiftproperty.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/supportedfeatureset.json": {
       "hash": "3279b2ed5632bbb305c1ae1d9e8fbf6eea90ae4e959d6133760eea4a3cf6611d",
-      "last_checked": "2026-03-20T07:31:08.673948",
+      "last_checked": "2026-03-24T07:41:09.380517",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"15518c8b7ebbb0e20ae0d3807f645ac5\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/supportedfeatureset.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/viewdidload().json": {
       "hash": "79f99b651ede70ceef0a9e68a4e5eb6faf9c49d1fe6aac5da0806fb296aa5081",
-      "last_checked": "2026-03-20T07:31:08.749581",
+      "last_checked": "2026-03-24T07:41:09.522204",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4a48b0d2013ad2c920edcedd6761dee9\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/viewdidload.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/init(coder:).json": {
       "hash": "7985cc571ed027b1e895ddcb05a88cfda41470256ebfab42f6555b08ca231fc4",
-      "last_checked": "2026-03-20T07:31:08.814344",
+      "last_checked": "2026-03-24T07:41:09.675515",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"6f436b16b99d49e4642212000b503be7\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/init-coder.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/init(supportedfeatureset:).json": {
       "hash": "36a585efe6b1b6a48e2db3d145802a4ba63a5642e38752c399f61409e5a9c9dc",
-      "last_checked": "2026-03-20T07:31:08.883660",
+      "last_checked": "2026-03-24T07:41:09.795814",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4774564356f0e70c963a24bc182d4d03\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/init-supportedfeatureset.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.property.json": {
       "hash": "c5c8bb52dbe1a7ec56ddbe614e92a78214a0eb2be25090c91cdc1ad092d28426",
-      "last_checked": "2026-03-20T07:31:08.957071",
+      "last_checked": "2026-03-24T07:41:10.117813",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"2f979963ab0328c605eb5e992e8bf5d8\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swiftproperty.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/indirectpointertouchmodes.json": {
       "hash": "37ce53c9169f501a6ed7c2a588036ef6539ba7d5b8b30d21b3a09737828134cc",
-      "last_checked": "2026-03-20T07:31:09.026222",
+      "last_checked": "2026-03-24T07:41:10.232405",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"e8d6b0235cc3094363a2349e5b9692f0\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/indirectpointertouchmodes.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/selecteddrawingtool.json": {
       "hash": "b2f5c31839996829f412a829e6f832931c85b858a46f11869aa9672b72b15355",
-      "last_checked": "2026-03-20T07:31:09.089850",
+      "last_checked": "2026-03-24T07:41:10.422294",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"b9bce00ca696a0bcda9307519169357c\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/selecteddrawingtool.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/selecteddrawingtoolitem.json": {
       "hash": "59e5171f44d604b48469407a4daa68dd99854b86ecbd4460fff92dc4b79bc01a",
-      "last_checked": "2026-03-20T07:31:09.152886",
+      "last_checked": "2026-03-24T07:41:10.528307",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"50cb8d664beb9882a0c89df4c263e079\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/selecteddrawingtoolitem.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/selectedindirectpointertouchmode.json": {
       "hash": "22d185b392c0a4caf3db5152c58761339e1fc12c72a34ecbcecab21586b0e409",
-      "last_checked": "2026-03-20T07:31:09.222470",
+      "last_checked": "2026-03-24T07:41:10.652573",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"79a3e9cf67d275055a134c73a717dc84\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/selectedindirectpointertouchmode.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/supportedfeatureset.json": {
       "hash": "d63842e5aa6ca54f9cf9a1df845f75a61189b6f7b29a23e56e8dffa2f87f0e40",
-      "last_checked": "2026-03-20T07:31:09.338315",
+      "last_checked": "2026-03-24T07:41:10.764011",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"dc02241981639882a1e3d2442f3e62df\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/supportedfeatureset.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/viewdidload().json": {
       "hash": "fdf053315cd5d1b9358e11f147b0c7e7e8157f2cc86cc7e5397ceca713fa24f2",
-      "last_checked": "2026-03-20T07:31:09.414573",
+      "last_checked": "2026-03-24T07:41:11.075921",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"a896c3f833fc0f1826811653c21ae7c8\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/viewdidload.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/linemarkerpositions-swift.struct.json": {
       "hash": "7e64ac17f2d800e2e722406dc1e38402635b3dc75e32cd2cc99c42e660800c40",
-      "last_checked": "2026-03-20T07:31:09.474873",
+      "last_checked": "2026-03-24T07:41:11.236725",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"d66dccb4d3f801186ec9382395eac164\"",
       "file_path": "documentation/PaperKit/featureset/linemarkerpositions-swiftstruct.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/colormaximumlinearexposure.json": {
       "hash": "3f6692b6d8fc9d4f27d4844d24e34b005bc5ea66eabe6bc0de90d18ce4fe2973",
-      "last_checked": "2026-03-20T07:31:09.574392",
+      "last_checked": "2026-03-24T07:41:11.546410",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"6ef76c02e840d62403ee9969f0cc98fe\"",
       "file_path": "documentation/PaperKit/featureset/colormaximumlinearexposure.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/contentversion-swift.property.json": {
       "hash": "256b05acdf084d861315c469022603c4880464e236ae8a77d26645c5210cfd7f",
-      "last_checked": "2026-03-20T07:31:09.650912",
+      "last_checked": "2026-03-24T07:41:11.708479",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"e0b167d2dbcf2dc4febfe2ab10d67b92\"",
       "file_path": "documentation/PaperKit/featureset/contentversion-swiftproperty.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/features.json": {
       "hash": "aed77153032ffc5cad71d261113997c243198e2a6f1597b6b68ad50631a76e36",
-      "last_checked": "2026-03-20T07:31:09.727902",
+      "last_checked": "2026-03-24T07:41:11.823848",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"de5a8bdfdab5254a490c5cb948767150\"",
       "file_path": "documentation/PaperKit/featureset/features.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/inks.json": {
       "hash": "1454a228b030f0499095d7207ace938d973e408e14d6c5046d072343758cc19d",
-      "last_checked": "2026-03-20T07:31:09.847162",
+      "last_checked": "2026-03-24T07:41:12.131454",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4e0d6273e7798bc3e389bdbedda26471\"",
       "file_path": "documentation/PaperKit/featureset/inks.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/linemarkerpositions-swift.property.json": {
       "hash": "c355b14e816564f1697058f2c302031e2a74cba215eb2db7b8a9033c905fc5d6",
-      "last_checked": "2026-03-20T07:31:09.920458",
+      "last_checked": "2026-03-24T07:41:12.428783",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"bd878030a1b1f12b2284a4b3de67b86d\"",
       "file_path": "documentation/PaperKit/featureset/linemarkerpositions-swiftproperty.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/shapes.json": {
       "hash": "5cbf990284aa172cbfeccba2f31534dce9794e21fc2eecde5f40f5116d61793f",
-      "last_checked": "2026-03-20T07:31:10.021274",
+      "last_checked": "2026-03-24T07:41:12.710875",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"650315be49c16132d5dd22b5f54b9f07\"",
       "file_path": "documentation/PaperKit/featureset/shapes.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/contains(_:).json": {
       "hash": "a104b1b56b4f91549e3a6316abffb4bee5936e6d79e43f194019e4dbb0f4f930",
-      "last_checked": "2026-03-20T07:31:10.084630",
+      "last_checked": "2026-03-24T07:41:12.870109",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"8deba1b33acc4549971fa2b5be340164\"",
       "file_path": "documentation/PaperKit/featureset/contains.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/insert(_:).json": {
       "hash": "a1708f0e23442922170a1b26eea492ce43cf8e5f63cfd32cb37509783578b91d",
-      "last_checked": "2026-03-20T07:31:10.218047",
+      "last_checked": "2026-03-24T07:41:13.171627",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"f0eb5ee8fb230c668528087bab451e16\"",
       "file_path": "documentation/PaperKit/featureset/insert.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/issubset(of:).json": {
       "hash": "0ea22b1764a654717752ab2e48fb56521c363282e5ccf64069d1014d6533a99e",
-      "last_checked": "2026-03-20T07:31:10.324200",
+      "last_checked": "2026-03-24T07:41:13.494030",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"d1b80904eeba1dcbb360fcf7f7212344\"",
       "file_path": "documentation/PaperKit/featureset/issubset-of.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/remove(_:).json": {
       "hash": "84c52fae5ae79fefa0bed8c5d303094a507b79d2f42cdb7a25a8461b07d631e6",
-      "last_checked": "2026-03-20T07:31:10.386599",
+      "last_checked": "2026-03-24T07:41:13.792394",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"58f9211dfdf49ce2d2c6f4b59e764e0c\"",
       "file_path": "documentation/PaperKit/featureset/remove.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/empty.json": {
       "hash": "3d656836e117b5d0a3a4bc312a05bd1e57ad5afda2fe5c34af7e1df3f6983d7a",
-      "last_checked": "2026-03-20T07:31:10.453943",
+      "last_checked": "2026-03-24T07:41:13.949490",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"07e32ba58246f9ad39c8756ee4ea3326\"",
       "file_path": "documentation/PaperKit/featureset/empty.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/latest.json": {
       "hash": "aa9de6f9f2ff26f008c08ddba1b39ff03efb7c7f7d8bcf6752986bb8b2692307",
-      "last_checked": "2026-03-20T07:31:10.539073",
+      "last_checked": "2026-03-24T07:41:14.113158",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"36edd3d6e474926fa1772c0666324b83\"",
       "file_path": "documentation/PaperKit/featureset/latest.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/version1.json": {
       "hash": "9bff02de3c302e451db5a83bdde4c69908756b2008bab52b91cb14ac0c67cbe4",
-      "last_checked": "2026-03-20T07:31:10.620169",
+      "last_checked": "2026-03-24T07:41:14.265572",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"5ea38eac29fd6989ac0b98189e96a578\"",
       "file_path": "documentation/PaperKit/featureset/version1.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/contentversion-swift.enum.json": {
       "hash": "949648e98c1e6aef3569e405d0be7043fcc2d5680f0cce7fdd5579feeafea8d7",
-      "last_checked": "2026-03-20T07:31:10.737998",
+      "last_checked": "2026-03-24T07:41:14.537326",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"928ac6e93b0402925306c395b1951555\"",
       "file_path": "documentation/PaperKit/featureset/contentversion-swiftenum.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature.json": {
       "hash": "abed391a3ca36af0cf6db826de913194cf61c75bc47f41ec7f365915464d1b94",
-      "last_checked": "2026-03-20T07:31:10.813609",
+      "last_checked": "2026-03-24T07:41:14.724795",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"cde66fdbcb68f90adf2bd1ee114cbd27\"",
       "file_path": "documentation/PaperKit/featureset/feature.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/init(type:fillcolor:strokecolor:linewidth:).json": {
       "hash": "7740b352bb97b103ea73e4e01ca348f4f43d492e1d1aa015fd50bfdceee4c43c",
-      "last_checked": "2026-03-20T07:31:10.906060",
+      "last_checked": "2026-03-24T07:41:14.876271",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"e18f53648b3a7b13b43f7848035992bc\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/init-typefillcolorstrokecolorlinewidth.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/fillcolor.json": {
       "hash": "5700c836e4723810e6ac6dd4448cc4d5fc91941d64112afb5432b793f121d4a8",
-      "last_checked": "2026-03-20T07:31:10.972808",
+      "last_checked": "2026-03-24T07:41:15.045904",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"43a89956d97f634daeaa418bc9aaa841\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/fillcolor.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/linewidth.json": {
       "hash": "17760e329317005d88a2139a1c520344d4e4485462fcf25ba28a12a25984a2c2",
-      "last_checked": "2026-03-20T07:31:11.047960",
+      "last_checked": "2026-03-24T07:41:15.354682",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"21ed2e586c4924f2c936a7164b944473\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/linewidth.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/strokecolor.json": {
       "hash": "bccdf4954d7e0c2c8f25500b41fce859456dd15b7fa15e6f72e6b6fc0e7e5632",
-      "last_checked": "2026-03-20T07:31:11.115564",
+      "last_checked": "2026-03-24T07:41:15.660191",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"1dd2bef1ecea5f5411af147a18169728\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/strokecolor.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/type.json": {
       "hash": "51deb92f321effff81d318802291487890e17f1432d53a1f8b44da5809c34604",
-      "last_checked": "2026-03-20T07:31:11.182553",
+      "last_checked": "2026-03-24T07:41:15.995012",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"d1188d8d835ed8b806fcf231055edb2c\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/type.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape.json": {
       "hash": "9ffb014da774914dec21599d25b7d3e6d27ebd3e84a889512f7e9291ef413b49",
-      "last_checked": "2026-03-20T07:31:11.268514",
+      "last_checked": "2026-03-24T07:41:16.163173",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"8dcfdab2dfd54bdea0fb587078cf11f7\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/renderingoptions/init(darkuserinterfacestyle:layoutrighttoleft:).json": {
       "hash": "3e308548d7e3d2d8b7400c618da15811cc1b1be317d2aae8e0fe53367dd2d04d",
-      "last_checked": "2026-03-20T07:31:11.333662",
+      "last_checked": "2026-03-24T07:41:16.316780",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"13945b401f9ea6ac3804f1ae19995d3e\"",
       "file_path": "documentation/PaperKit/renderingoptions/init-darkuserinterfacestylelayoutrighttoleft.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/renderingoptions/init(traitcollection:).json": {
       "hash": "c4e3831d8bd5531ffcf6676b60029cf8246a85c435bae5ebf43a32d805289e76",
-      "last_checked": "2026-03-20T07:31:11.404776",
+      "last_checked": "2026-03-24T07:41:16.597934",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"a01f56cfe36168618cdf5e41b23f8e38\"",
       "file_path": "documentation/PaperKit/renderingoptions/init-traitcollection.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/renderingoptions/darkuserinterfacestyle.json": {
       "hash": "f3e482229ce0a539b646b49a48c30c1f5a90859f8694ce1176cb905df97337e1",
-      "last_checked": "2026-03-20T07:31:11.474151",
+      "last_checked": "2026-03-24T07:41:16.757757",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"946727698ebe8700faa3c2d847fc7d43\"",
       "file_path": "documentation/PaperKit/renderingoptions/darkuserinterfacestyle.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/renderingoptions/righttoleftlayoutdirection.json": {
       "hash": "b545a7a1f1be0ba40236226cab8a332b5d9db4bcb6e46252a340bb7ecb5daed0",
-      "last_checked": "2026-03-20T07:31:11.540859",
+      "last_checked": "2026-03-24T07:41:17.091087",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"b6773ae02770180f6808c9bf9244a9e1\"",
       "file_path": "documentation/PaperKit/renderingoptions/righttoleftlayoutdirection.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/init(bounds:).json": {
       "hash": "1d683f3f77bcdbfe1884686279f159a54ba66a57ba7eecb781baea0266a45301",
-      "last_checked": "2026-03-20T07:31:11.629759",
+      "last_checked": "2026-03-24T07:41:17.264634",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"a8d8991fe5bba269cc6095d4216bc4f7\"",
       "file_path": "documentation/PaperKit/papermarkup/init-bounds.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/init(datarepresentation:).json": {
       "hash": "385d09a320e86e300b0a16381265aee21a4902c965f4e0251574654f6ca67d4b",
-      "last_checked": "2026-03-20T07:31:11.713690",
+      "last_checked": "2026-03-24T07:41:17.430849",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"d45f22d5c8ff3bbed7d29a74a9d201bb\"",
       "file_path": "documentation/PaperKit/papermarkup/init-datarepresentation.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/bounds.json": {
       "hash": "881e6c8a842c042e410f0baeedaffe7dfc9dd8f839e1d27033a486cedd16dfb0",
-      "last_checked": "2026-03-20T07:31:11.781027",
+      "last_checked": "2026-03-24T07:41:17.618559",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"8188268819ce2cfa37c2464551e1608c\"",
       "file_path": "documentation/PaperKit/papermarkup/bounds.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/contentsrenderframe.json": {
       "hash": "45233401c65b70bc123041efeeae77594d9e1dfb0275d3dea313a648c0628510",
-      "last_checked": "2026-03-20T07:31:11.867841",
+      "last_checked": "2026-03-24T07:41:17.800523",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"2e50d548d15b2caca6090f1f4b144c7f\"",
       "file_path": "documentation/PaperKit/papermarkup/contentsrenderframe.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/featureset.json": {
       "hash": "4a55ca7fbeea05c51b49ab0442e377b4ddc46af8ec1805139887d337ecef91c9",
-      "last_checked": "2026-03-20T07:31:11.937451",
+      "last_checked": "2026-03-24T07:41:17.957743",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"f02a5155b9c7f5882ba9939523714bed\"",
       "file_path": "documentation/PaperKit/papermarkup/featureset.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/datarepresentation().json": {
       "hash": "9ce100556d1f15999df655da92065c2157eef9b6f316f7ee67be88a33494c61d",
-      "last_checked": "2026-03-20T07:31:12.276091",
+      "last_checked": "2026-03-24T07:41:18.735796",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"5003ae6602ffde79afbc3131f1fb40e0\"",
       "file_path": "documentation/PaperKit/papermarkup/datarepresentation.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/draw(in:frame:options:).json": {
       "hash": "0420dc9894b3336da74bbe2f236c30be21dfc5f2c5d9cc0e0c30edfa5eb1775d",
-      "last_checked": "2026-03-20T07:31:12.388148",
+      "last_checked": "2026-03-24T07:41:18.897760",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"f145a868319f9fe4f18177552dd1086f\"",
       "file_path": "documentation/PaperKit/papermarkup/draw-inframeoptions.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/insertnewimage(_:frame:rotation:).json": {
       "hash": "ff63108866d92182460e18f2f3fc1ca4a72d71b0349b429636148199a4581b74",
-      "last_checked": "2026-03-20T07:31:12.453483",
+      "last_checked": "2026-03-24T07:41:19.203159",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"fd66c3f1661b49e19b0fbf903f31b43f\"",
       "file_path": "documentation/PaperKit/papermarkup/insertnewimage-framerotation.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/insertnewline(configuration:from:to:startmarker:endmarker:).json": {
       "hash": "81eddc0d1d25bafe9d65b07867a7f69a899665adb0b42da3ff9b1ded1c1a2c8f",
-      "last_checked": "2026-03-20T07:31:12.520038",
+      "last_checked": "2026-03-24T07:41:19.510091",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"1483167776825c4d33cdaf83ff388bc0\"",
       "file_path": "documentation/PaperKit/papermarkup/insertnewline-configurationfromtostartmarkerendmarker.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/insertnewshape(configuration:frame:rotation:).json": {
       "hash": "63f0e096d6ebcd3a99b2bc7b72bf6104523e0b64342594c4b6fbba344d6e259c",
-      "last_checked": "2026-03-20T07:31:12.601522",
+      "last_checked": "2026-03-24T07:41:19.692776",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"f1bf929de19719251d1d1356e0bb962e\"",
       "file_path": "documentation/PaperKit/papermarkup/insertnewshape-configurationframerotation.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/insertnewtextbox(attributedtext:frame:rotation:)-53rs.json": {
       "hash": "5bb3697e9c82cd2287380403610ce28e39677b70726b479e7d28c50ab44cddfd",
-      "last_checked": "2026-03-20T07:31:12.674943",
+      "last_checked": "2026-03-24T07:41:19.872597",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"fee35cb197d13133851c79db68b7c09d\"",
       "file_path": "documentation/PaperKit/papermarkup/insertnewtextbox-attributedtextframerotation-53rs.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/insertnewtextbox(attributedtext:frame:rotation:)-67igk.json": {
       "hash": "d9ab03e9c27b4399997a792c8875a38a296fb04069794cc67d1cd019fa4aea61",
-      "last_checked": "2026-03-20T07:31:12.752102",
+      "last_checked": "2026-03-24T07:41:20.173103",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"28d81f7dd3d94bee7623a55163b4311e\"",
       "file_path": "documentation/PaperKit/papermarkup/insertnewtextbox-attributedtextframerotation-67igk.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/removecontentunsupported(by:).json": {
       "hash": "b73a00e374e4d48d6881279028ce5aca86b78822fcc9b3a3f754d10d80215c95",
-      "last_checked": "2026-03-20T07:31:12.874484",
+      "last_checked": "2026-03-24T07:41:20.356430",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"f9706c098f299f8f5c959d8c8b73c3f1\"",
       "file_path": "documentation/PaperKit/papermarkup/removecontentunsupported-by.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/transformcontent(_:).json": {
       "hash": "adfdb34ffcbfae20f98aa126dfdbfc7802380de4a57a598bdaa0beb8103feb96",
-      "last_checked": "2026-03-20T07:31:12.967484",
+      "last_checked": "2026-03-24T07:41:20.513515",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"b54c1df1bd1cdfbca4a17acb1a86f798\"",
       "file_path": "documentation/PaperKit/papermarkup/transformcontent.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuperror/incompatibleformattoonew.json": {
       "hash": "d7512030f183656b25001ac6b3d6d4e93fa414e72c4c5535f0759ee653bed489",
-      "last_checked": "2026-03-20T07:31:13.060027",
+      "last_checked": "2026-03-24T07:41:20.679892",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"2f430d3446fa558a5b5532ae589f8223\"",
       "file_path": "documentation/PaperKit/markuperror/incompatibleformattoonew.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuperror/incorrectformat.json": {
       "hash": "7679ffc687f0615f037f28e738471b1d4ca976bdc2a225f294fa29db5620585b",
-      "last_checked": "2026-03-20T07:31:13.130293",
+      "last_checked": "2026-03-24T07:41:20.851453",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"91f98a6df1e953dfd14ff785e7bf5825\"",
       "file_path": "documentation/PaperKit/markuperror/incorrectformat.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuperror/malformeddata.json": {
       "hash": "c06f5e125cfc22bbf7b8e16098b6a440599f3b9b555d848c4622e3a0af8b19fd",
-      "last_checked": "2026-03-20T07:31:13.258793",
+      "last_checked": "2026-03-24T07:41:21.021084",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"654a1953eeba27257d141ee096b4c405\"",
       "file_path": "documentation/PaperKit/markuperror/malformeddata.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:).json": {
       "hash": "495afeb44e6648672545f638ab63cd763185bc50022cdcc5a60933a65d4b73eb",
-      "last_checked": "2026-03-20T07:31:13.327579",
+      "last_checked": "2026-03-24T07:41:21.183833",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"f8b03a58a5f805cdaf6203cffcbda502\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:).json": {
       "hash": "ad88a5e26eba5e239c8e751497ae9efc8a47fecd895af4afea798aebba9c589a",
-      "last_checked": "2026-03-20T07:31:13.399060",
+      "last_checked": "2026-03-24T07:41:21.340402",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4faa184ba55481201877459331671f59\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:).json": {
       "hash": "540acc2eb62fd291f3d38c43ad235e4950e3a0ad82f9a279775154ea1ee3d378",
-      "last_checked": "2026-03-20T07:31:13.474240",
+      "last_checked": "2026-03-24T07:41:21.494312",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"b43c43de9404a9a0008b7c5660281ead\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:).json": {
       "hash": "6005c3a9242630f1b8c2ae7e34e462df6e98f75c7d5d4497e2ccb704110b6b97",
-      "last_checked": "2026-03-20T07:31:13.540090",
+      "last_checked": "2026-03-24T07:41:21.662218",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"a7c41d9bc3c1e8d43838d2649f2749c0\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/touchmode/drawing.json": {
       "hash": "33b345da575f17e82a3d7b96a4861db7362a6b13ac2bffc607934e861be74cba",
-      "last_checked": "2026-03-20T07:31:13.611420",
+      "last_checked": "2026-03-24T07:41:21.833277",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4928ebbad352605ba2222192e3138c0e\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/touchmode/drawing.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/touchmode/selection.json": {
       "hash": "31e83292c2ddd29c645bfa880d17a7802528930b615513fd3cfe5c6bd19ce9c3",
-      "last_checked": "2026-03-20T07:31:13.741379",
+      "last_checked": "2026-03-24T07:41:21.999355",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"fbcb054fcba3e506cbc974fcedd324b1\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/touchmode/selection.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewcontents:).json": {
       "hash": "69185bb33e43faca71bdbb2e4a977ffd858b89c60a8b792f1005d9f38e073006",
-      "last_checked": "2026-03-20T07:31:14.134919",
+      "last_checked": "2026-03-24T07:41:22.818983",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"32ec348038e69046729dd84fb1a028a3\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller-insertnewcontents.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewlinewithstartmarker:endmarker:).json": {
       "hash": "420b23b2190f067e5c480b39c984aec282b0a15eed028abda5f7cfded13c7da3",
-      "last_checked": "2026-03-20T07:31:14.254034",
+      "last_checked": "2026-03-24T07:41:22.989230",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"42ab0cd8c04003dfaf4bcc286f972a86\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller-insertnewlinewithstartmarkerendmarker.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewshape:).json": {
       "hash": "c3f55752784a62941e24484def20eaa0f0b6fbce60594561bce22d617e62e263",
-      "last_checked": "2026-03-20T07:31:14.317288",
+      "last_checked": "2026-03-24T07:41:23.142697",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"75e211464d7a68630e63815458025f41\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller-insertnewshape.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerinsertnewtextbox(_:).json": {
       "hash": "19d56fe6f1e6ac3e388ea39e741880eda990ae9cde264fbe4cf865751e6b35e9",
-      "last_checked": "2026-03-20T07:31:14.387024",
+      "last_checked": "2026-03-24T07:41:23.295845",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"a367c607485acf4832c274e7d23cca92\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerinsertnewtextbox.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselecteddrawingtoolchanged(_:).json": {
       "hash": "8c46113d8363196eaa55a15fb2b323a8b823f4417f373bef93bca8f3df8a5610",
-      "last_checked": "2026-03-20T07:31:14.450918",
+      "last_checked": "2026-03-24T07:41:23.470105",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"41755a2bab2416bea2a9bfd3178fed58\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselecteddrawingtoolchanged.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselectedindirectpointertouchmodechanged(_:).json": {
       "hash": "a80c841898867ee9d15d469ac1b567b7c017fa422d9ea4b6f55fcea3096f812f",
-      "last_checked": "2026-03-20T07:31:14.537078",
+      "last_checked": "2026-03-24T07:41:23.632830",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"8efc915a347b8652da3a9b998ac7aeed\"",
       "file_path": "documentation/PaperKit/markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselectedindirectpointertouchmodechanged.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewcontents:).json": {
       "hash": "21ca053c9d4831ef36b39196508c55aaf15ab5fa13eaff42b06eea683f6d084a",
-      "last_checked": "2026-03-20T07:31:13.819353",
+      "last_checked": "2026-03-24T07:41:22.163591",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"70c3c9b8d909325562b84210379d1551\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller-insertnewcontents.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewlinewithstartmarker:endmarker:).json": {
       "hash": "7b7f22d032611d4d49d215636b17ef2c182efb61a4a62315ba1fecac41280224",
-      "last_checked": "2026-03-20T07:31:13.923192",
+      "last_checked": "2026-03-24T07:41:22.333951",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"dedba83130fad266daf5ca70106df22e\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller-insertnewlinewithstartmarkerendmarker.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewshape:).json": {
       "hash": "b0f60d47824acc0e3b735e0c9c6b2facf04a1ed94a0bc6c407cf9728c70d1389",
-      "last_checked": "2026-03-20T07:31:13.985920",
+      "last_checked": "2026-03-24T07:41:22.500114",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"758ecb077f4508cebfdf8188da9b2b96\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller-insertnewshape.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox(_:).json": {
       "hash": "cc5a796f4929a81fadb84e753098870a5cd0566072921788c6177ccba8788e20",
-      "last_checked": "2026-03-20T07:31:14.060326",
+      "last_checked": "2026-03-24T07:41:22.654107",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"9e17fca83e6532cb32ae35db0520162c\"",
       "file_path": "documentation/PaperKit/markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/linemarkerpositions-swift.struct/all.json": {
       "hash": "a49284da531fbee6dbcdad6674c783fa1d0ade951661d106310b5d0af9730c9e",
-      "last_checked": "2026-03-20T07:31:14.597354",
+      "last_checked": "2026-03-24T07:41:23.797867",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"62e51530aaeec15d46ed9fed1805e8f9\"",
       "file_path": "documentation/PaperKit/featureset/linemarkerpositions-swift.struct/all.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/linemarkerpositions-swift.struct/double.json": {
       "hash": "41a7543ecbf2815bd5220c0b7d2bf98be826e3789d5014558debcf52654fa650",
-      "last_checked": "2026-03-20T07:31:14.691984",
+      "last_checked": "2026-03-24T07:41:24.093895",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"1dc9a5ccfb84ff5f421de3205bead3c8\"",
       "file_path": "documentation/PaperKit/featureset/linemarkerpositions-swift.struct/double.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/linemarkerpositions-swift.struct/plain.json": {
       "hash": "bbf508674a8187941e60a4f1aa838bab562c586ee94b984b5ea5ef54a45af714",
-      "last_checked": "2026-03-20T07:31:14.759408",
+      "last_checked": "2026-03-24T07:41:24.384856",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"0130a397f25a7a64efbd7f42dcbe1865\"",
       "file_path": "documentation/PaperKit/featureset/linemarkerpositions-swift.struct/plain.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/linemarkerpositions-swift.struct/single.json": {
       "hash": "c68fc388f9a76717b8371bc36e53f9fc4ec81b4ec807fcc49a5a8862c45b6b8f",
-      "last_checked": "2026-03-20T07:31:14.821992",
+      "last_checked": "2026-03-24T07:41:24.550752",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"c33b5cbe354b5ff124f3069c74306a09\"",
       "file_path": "documentation/PaperKit/featureset/linemarkerpositions-swift.struct/single.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/contentversion-swift.enum/version1.json": {
       "hash": "fae0858b2b03ee8038f8cdd32f62ecf33317fdefad61608c5b4260abb0ca864c",
-      "last_checked": "2026-03-20T07:31:14.910341",
+      "last_checked": "2026-03-24T07:41:24.710531",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"26fbd050786c3af771585d142a01b86c\"",
       "file_path": "documentation/PaperKit/featureset/contentversion-swift.enum/version1.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/contentversion-swift.enum/pencilkitcontentversion.json": {
       "hash": "42c912ed77466664f31509fcd7e6316d0ba545a05e0860652eb67a606b9caccd",
-      "last_checked": "2026-03-20T07:31:14.999892",
+      "last_checked": "2026-03-24T07:41:25.006247",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"75aea554c54549be3eb4e58076dda6a1\"",
       "file_path": "documentation/PaperKit/featureset/contentversion-swift.enum/pencilkitcontentversion.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/contentversion-swift.enum/latest.json": {
       "hash": "b1e08664f4f5bef6c6df08a4489cc95112b7b9b8e8063a7ba833a6e5231d9504",
-      "last_checked": "2026-03-20T07:31:15.121418",
+      "last_checked": "2026-03-24T07:41:25.168304",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"eb1f424a7debc765868aa12eec0bf208\"",
       "file_path": "documentation/PaperKit/featureset/contentversion-swift.enum/latest.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/drawing.json": {
       "hash": "e006c5225bd48b56802b8cdfa622bfce407553cc944b8ebf14443f3f128c2064",
-      "last_checked": "2026-03-20T07:31:15.215250",
+      "last_checked": "2026-03-24T07:41:25.345331",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"942b63f660127007b69d33d884705d2b\"",
       "file_path": "documentation/PaperKit/featureset/feature/drawing.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/images.json": {
       "hash": "2dd83fee3dc02e8753f85ce857d3451ef6177537eb683daaeb167ea74a47baf9",
-      "last_checked": "2026-03-20T07:31:15.284371",
+      "last_checked": "2026-03-24T07:41:25.514146",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"0471a500be48c5ff5640189f01aab5f9\"",
       "file_path": "documentation/PaperKit/featureset/feature/images.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/links.json": {
       "hash": "64dc1e524d64b3e847d625a0de13fd9313779b7fe062c17b76e8a5961eada2bd",
-      "last_checked": "2026-03-20T07:31:15.416156",
+      "last_checked": "2026-03-24T07:41:25.667643",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4bf064f41597d4e5bc09321588042748\"",
       "file_path": "documentation/PaperKit/featureset/feature/links.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/loupes.json": {
       "hash": "bafcbff185a7ee1c43a6b918e63d7dad2395263f3eef14c2d70f71b297c5078e",
-      "last_checked": "2026-03-20T07:31:15.501994",
+      "last_checked": "2026-03-24T07:41:25.833734",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"eca0c7c072ac21356f4d0f403aa3f957\"",
       "file_path": "documentation/PaperKit/featureset/feature/loupes.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/shapefills.json": {
       "hash": "96756799de1179b9080988392811de846728118880218c04ce57fc413d86dd61",
-      "last_checked": "2026-03-20T07:31:15.570010",
+      "last_checked": "2026-03-24T07:41:25.984094",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"c754f037d8d0b2f8ee69ecfdc5702cce\"",
       "file_path": "documentation/PaperKit/featureset/feature/shapefills.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/shapeopacity.json": {
       "hash": "f14e530ab588f81c43806883c6a07db7d86be76b13b4f53b34471536db70cb51",
-      "last_checked": "2026-03-20T07:31:15.701562",
+      "last_checked": "2026-03-24T07:41:26.144158",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"7c0a5c04bef4f41d6f6fa9d78974fab5\"",
       "file_path": "documentation/PaperKit/featureset/feature/shapeopacity.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/shapestrokes.json": {
       "hash": "e2bed338c122533f776382c68b01e84b9e9388110f9bb69d3fa57e0a7bce4fc4",
-      "last_checked": "2026-03-20T07:31:15.772813",
+      "last_checked": "2026-03-24T07:41:26.314903",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"64070322ec2beeb2778fcc75d427aa10\"",
       "file_path": "documentation/PaperKit/featureset/feature/shapestrokes.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/stickers.json": {
       "hash": "0993289e83f91b8cb3476d3e16c5dc7532298a17a906f8030155b6cfad34683c",
-      "last_checked": "2026-03-20T07:31:16.022901",
+      "last_checked": "2026-03-24T07:41:26.471303",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"65b8e318f5bcd8152b401ccbfa551fe0\"",
       "file_path": "documentation/PaperKit/featureset/feature/stickers.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset/feature/text.json": {
       "hash": "97b2bbd17dc7c1d2c5ec45795d0676c0225b14a4929ebbb2bb269a0db2399bf1",
-      "last_checked": "2026-03-20T07:31:16.091721",
+      "last_checked": "2026-03-24T07:41:26.622592",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"e1f15f05bfc22aeabc6a50a3ee252bc8\"",
       "file_path": "documentation/PaperKit/featureset/feature/text.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/arrowshape.json": {
       "hash": "d7ddc9b51d35d43d3b36c787cbfeb9063a03465f518a7a6b19cf8afb3870ac8c",
-      "last_checked": "2026-03-20T07:31:16.155200",
+      "last_checked": "2026-03-24T07:41:26.791843",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"dc08b4f87a3afabbfbddbd3d48bac6b2\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/arrowshape.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/chatbubble.json": {
       "hash": "6ab8b1a6ae107b631500dc2b3714aad883a7eb23ca14c717ee415e9183a171c5",
-      "last_checked": "2026-03-20T07:31:16.221299",
+      "last_checked": "2026-03-24T07:41:26.955677",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"415e765569c64aa9edfb84c27591f631\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/chatbubble.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/ellipse.json": {
       "hash": "e987d7f482c988e7c638e5085bbeb68ae5cebabc27b1b04d440356449a8fe3b8",
-      "last_checked": "2026-03-20T07:31:16.286467",
+      "last_checked": "2026-03-24T07:41:27.122507",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"4e4e8d4007443bbd12329dbdcc21f427\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/ellipse.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/line.json": {
       "hash": "22969429d1a0cd21f4cb55a1727ec5b398899c6ae08610aef12754c8f05ad5a0",
-      "last_checked": "2026-03-20T07:31:16.366225",
+      "last_checked": "2026-03-24T07:41:27.288896",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"af37976fee3d0fb3b0c220a0e467d835\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/line.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/rectangle.json": {
       "hash": "9a36754d72713d74fb070a559d2d7cd7c4bcf4b6c2939d65fdbba688e6c0fc15",
-      "last_checked": "2026-03-20T07:31:16.437031",
+      "last_checked": "2026-03-24T07:41:27.470065",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"5eb0e8d9466ad76aa604496f1831aba4\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/rectangle.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/regularpolygon.json": {
       "hash": "8f27ec66fe6249bea9482d4b7934cc9a5e9a5468b6fa58fda45faf8d548b535f",
-      "last_checked": "2026-03-20T07:31:16.500021",
+      "last_checked": "2026-03-24T07:41:27.623914",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"3c514e5e47f8171ea84521975211b17f\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/regularpolygon.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/roundedrectangle.json": {
       "hash": "f196967fc6b7cc2400ff371e26469c749a578eb0dec1cbf7e3ca18d07166c600",
-      "last_checked": "2026-03-20T07:31:16.572149",
+      "last_checked": "2026-03-24T07:41:27.802791",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"ebec6ee62a13a2df5112a8bc377f16c3\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/roundedrectangle.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/shapeconfiguration/shape/star.json": {
       "hash": "44665e0adb461093b4e026122160653750a5963be7b95350db1b3ab78b2be30a",
-      "last_checked": "2026-03-20T07:31:16.636664",
+      "last_checked": "2026-03-24T07:41:27.961674",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"b8d78ae64ef494c61005af63211141f2\"",
       "file_path": "documentation/PaperKit/shapeconfiguration/shape/star.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/acceptsfirstresponder.json": {
       "hash": "4b6c89367a5b1cc2be7608d4de7ea3211283e4ff3704f0be23f2590c9c11e916",
-      "last_checked": "2026-03-20T07:31:06.000956",
+      "last_checked": "2026-03-24T07:41:04.914977",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"c2aab4e2022772c076945c13f3cc4109\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/acceptsfirstresponder.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/canbecomefirstresponder.json": {
       "hash": "48c5b2b3d80dbadaf0e26e409a51342c3e4d08eb9e93490e16d306baafefad68",
-      "last_checked": "2026-03-20T07:31:06.237238",
+      "last_checked": "2026-03-24T07:41:05.064861",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"e9c26fbacd6326d76517bbfa95000731\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/canbecomefirstresponder.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/showshorizontalscrollindicator.json": {
       "hash": "9cc731343c6250c58e63eaf8fabb05701d1fb133a10cef6e9641d207572a748e",
-      "last_checked": "2026-03-20T07:31:07.434036",
+      "last_checked": "2026-03-24T07:41:07.155111",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"964693f18ca6aa4fab8468a586789594\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/showshorizontalscrollindicator.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/showsverticalscrollindicator.json": {
       "hash": "e974d0337b49b473d41f7a22884269c08940508933ae0c3700f4eca74f2f2a39",
-      "last_checked": "2026-03-20T07:31:07.500412",
+      "last_checked": "2026-03-24T07:41:07.283083",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"cff6c075f853e0e3ced6be84cd879f4e\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/showsverticalscrollindicator.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/undomanager.json": {
       "hash": "650c4bb53acd52a2945f6160b9b1f191283b55df9133f9ad9fcce431defd043f",
-      "last_checked": "2026-03-20T07:31:07.642380",
+      "last_checked": "2026-03-24T07:41:07.541446",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"d38d4356785a876e9564769d501a5ade\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/undomanager.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/viewdidappear().json": {
       "hash": "defb2d4ab1b23af6f95a7553c3028da3d3f3385d394438c8945b135bd9e755ee",
-      "last_checked": "2026-03-20T07:31:08.083780",
+      "last_checked": "2026-03-24T07:41:08.294978",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"068eaeb463def37450604911456ba429\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/viewdidappear.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkupviewcontroller/viewdidlayout().json": {
       "hash": "5105c8cef31a67e4e6415c51a1eca70583548e8be8d9862dd8b36047cb55f6c0",
-      "last_checked": "2026-03-20T07:31:08.152344",
+      "last_checked": "2026-03-24T07:41:08.406092",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"796bc8e759308b659ba1aafda1ec108b\"",
       "file_path": "documentation/PaperKit/papermarkupviewcontroller/viewdidlayout.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/indexablecontent.json": {
       "hash": "fd941bd5e18a67456f7db0b8d0df125685118807f1d0f4ea83719de76ef96fd5",
-      "last_checked": "2026-03-20T07:31:12.066492",
+      "last_checked": "2026-03-24T07:41:18.121287",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"84bf35222d5d5a10dd49bb6bdea3ada7\"",
       "file_path": "documentation/PaperKit/papermarkup/indexablecontent.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/append(contentsof:)-5668.json": {
       "hash": "744b6f791e280a669043d070b1a58c746d5d99d07c125ed3b858ebd9a201eb07",
-      "last_checked": "2026-03-20T07:31:12.136018",
+      "last_checked": "2026-03-24T07:41:18.278929",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"6bee5e3cba618ec2f598602f2da1fa75\"",
       "file_path": "documentation/PaperKit/papermarkup/append-contentsof-5668.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/papermarkup/append(contentsof:)-5tgti.json": {
       "hash": "475d0ca258c560e3b57644e0436b49b5221d60c0aae61c26208f340c68613e9d",
-      "last_checked": "2026-03-20T07:31:12.214870",
+      "last_checked": "2026-03-24T07:41:18.435791",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"77ceabadf702f7d665e2d1b8ae02581e\"",
       "file_path": "documentation/PaperKit/papermarkup/append-contentsof-5tgti.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/getting-started-with-paperkit.json": {
       "hash": "3fd7679bcd858f7fd531ec1f2f4497e2947514e658d10745aff9412cb9191464",
-      "last_checked": "2026-03-20T07:31:04.214246",
+      "last_checked": "2026-03-24T07:41:03.167506",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:03.570568",
+      "session_id": "2026-03-24T07:41:02.673627",
       "etag": "W/\"6a3907ed8d214c8b6de6a935574b24f2\"",
       "file_path": "documentation/PaperKit/getting-started-with-paperkit.md"
     },

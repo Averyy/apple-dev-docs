@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:44.990116",
+    "last_updated": "2026-03-24T07:43:49.610986",
     "total_pages": 38,
-    "session_id": "2026-03-20T07:32:41.326453"
+    "session_id": "2026-03-24T07:43:46.279651"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools.json": {
       "hash": "7dfe77063d9454c1df87d6bf36653e812c42e896bda6c069b1490bf31f77857e",
-      "last_checked": "2026-03-20T07:32:41.787410",
+      "last_checked": "2026-03-24T07:43:46.526847",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"a9ac9e865ba768a0ebc40aedaa030911\"",
       "file_path": "documentation/safari-developer-tools/safari-developer-tools.md"
     },
     "https://developer.apple.com/documentation/safari-developer-tools": {
       "hash": "7dfe77063d9454c1df87d6bf36653e812c42e896bda6c069b1490bf31f77857e",
-      "last_checked": "2026-03-20T07:32:41.677348",
+      "last_checked": "2026-03-24T07:43:46.414871",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"a9ac9e865ba768a0ebc40aedaa030911\"",
       "file_path": "documentation/safari-developer-tools/safari-developer-tools.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/enabling-developer-features.json": {
       "hash": "5362a2c881383761736edd9ced59ff38faf4bfab1e28fe46b1fdb2f899065800",
-      "last_checked": "2026-03-20T07:32:42.167411",
+      "last_checked": "2026-03-24T07:43:46.834612",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"538fe6024080e2c91a2463f1ae2cdba1\"",
       "file_path": "documentation/safari-developer-tools/enabling-developer-features.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/develop-menu.json": {
       "hash": "c13ab1bf3e8c7088b533130cba698276ddbbdfd94d04c769361d98808b865f51",
-      "last_checked": "2026-03-20T07:32:42.291368",
+      "last_checked": "2026-03-24T07:43:47.021498",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"7fea345a392927a34531362f46dca6fc\"",
       "file_path": "documentation/safari-developer-tools/develop-menu.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/web-inspector.json": {
       "hash": "0112c4bd3fb75c10e9aee833c333e671047754bd671e4329f415e7aa158b391b",
-      "last_checked": "2026-03-20T07:32:42.407393",
+      "last_checked": "2026-03-24T07:43:47.144662",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"69e4288675fd6c68e9b8e869c51e2a1c\"",
       "file_path": "documentation/safari-developer-tools/web-inspector.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/responsive-design-mode.json": {
       "hash": "d2de295c849626d9fffecbc2d4a77c47f7d231d78329123e7db74f844828f78a",
-      "last_checked": "2026-03-20T07:32:42.523039",
+      "last_checked": "2026-03-24T07:43:47.308867",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"c32dd3cee41097b9cd10e3785de233d5\"",
       "file_path": "documentation/safari-developer-tools/responsive-design-mode.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/webdriver.json": {
       "hash": "e2077b47fbe916672d81c077cf88534c1d6b7138e6f5c6249aa44057c27a2569",
-      "last_checked": "2026-03-20T07:32:42.918922",
+      "last_checked": "2026-03-24T07:43:47.660027",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"588378a1caf91ff9756ff5086680ff67\"",
       "file_path": "documentation/safari-developer-tools/webdriver.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/inspecting-safari-macos.json": {
       "hash": "e76b59af6f8646b191b8fbb1ef5655a6a46a926242a022990ac3eb1762e8a983",
-      "last_checked": "2026-03-20T07:32:43.159608",
+      "last_checked": "2026-03-24T07:43:47.791504",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"3211fed6bfdf279313b802f27aeb3ebe\"",
       "file_path": "documentation/safari-developer-tools/inspecting-safari-macos.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/inspecting-ios.json": {
       "hash": "060abb96aefed4093f582458925b7d20f7964ac40e6f90635598825ceb1cfb47",
-      "last_checked": "2026-03-20T07:32:43.322391",
+      "last_checked": "2026-03-24T07:43:47.918100",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"77a2b955c375ab2663ade00265834b75\"",
       "file_path": "documentation/safari-developer-tools/inspecting-ios.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/inspecting-visionos.json": {
       "hash": "998686f26766b6cca02b0e57d99b8b980ff6d9ac79b228f90f336c55f88d56f9",
-      "last_checked": "2026-03-20T07:32:43.578373",
+      "last_checked": "2026-03-24T07:43:48.101192",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"06f8743b0985c18a2dfb72f221e5f7e4\"",
       "file_path": "documentation/safari-developer-tools/inspecting-visionos.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/inspecting-tvos.json": {
       "hash": "44409ae94b6fc373ad26fdf57ceeb3160235c85b6c5b0ec26189dd111e92e2ef",
-      "last_checked": "2026-03-20T07:32:43.858129",
+      "last_checked": "2026-03-24T07:43:48.270315",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"2eff2465b398750d77e72cbacf6b15d2\"",
       "file_path": "documentation/safari-developer-tools/inspecting-tvos.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/enabling-inspecting-content-in-your-apps.json": {
       "hash": "b4f03959401777a33a7247ae02a8f38583ddaf9dd94f2864f62732b067620f25",
-      "last_checked": "2026-03-20T07:32:43.975219",
+      "last_checked": "2026-03-24T07:43:48.464527",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"e1474d5e5f3254e4f0bec98a029d6c2a\"",
       "file_path": "documentation/safari-developer-tools/enabling-inspecting-content-in-your-apps.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/installing-xcode-and-simulators.json": {
       "hash": "c03dacdf975fbcd5219ddb14925be7eaa4bb44111e067f3687abe86f4b513395",
-      "last_checked": "2026-03-20T07:32:44.098919",
+      "last_checked": "2026-03-24T07:43:48.654711",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"bb8af8116f3c1781ce7ee1d99722bc3e\"",
       "file_path": "documentation/safari-developer-tools/installing-xcode-and-simulators.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/adding-additional-simulators.json": {
       "hash": "b73d72f44219b98d25c1e2187f4f4f5d640c89546087c2456fe278f9f4b33494",
-      "last_checked": "2026-03-20T07:32:44.219609",
+      "last_checked": "2026-03-24T07:43:48.815954",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"8db5b68dcaba59b484e95cbd40aacbbd\"",
       "file_path": "documentation/safari-developer-tools/adding-additional-simulators.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/developer-settings.json": {
       "hash": "216e7ec09353095ce8a60cfdca53165e6d305f1cd7e26042d50acb676f54d284",
-      "last_checked": "2026-03-20T07:32:44.460144",
+      "last_checked": "2026-03-24T07:43:48.983460",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"b9bd514da236eb9b5f817c08681141c9\"",
       "file_path": "documentation/safari-developer-tools/developer-settings.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/feature-flag-settings.json": {
       "hash": "ea3a352daedbb351f1f819d008a282c6393146d44cfa858d5c47335294905a67",
-      "last_checked": "2026-03-20T07:32:44.580329",
+      "last_checked": "2026-03-24T07:43:49.121158",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"74c65fce5c6bc97537f89b14f725de09\"",
       "file_path": "documentation/safari-developer-tools/feature-flag-settings.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/macos-enabling-webdriver.json": {
       "hash": "d41a9b29bb12f3de983219c7de79a4b0c96f0f563f611c2f9e1a0383cec3d78c",
-      "last_checked": "2026-03-20T07:32:44.835260",
+      "last_checked": "2026-03-24T07:43:49.484244",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"8061a973f6ea226a1654a2f7e36ae561\"",
       "file_path": "documentation/safari-developer-tools/macos-enabling-webdriver.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/ios-enabling-webdriver.json": {
       "hash": "dc4f7ad471bc72e5e429aa3ea74b487c699f098317fb5e060f2852e1ae34a3a9",
-      "last_checked": "2026-03-20T07:32:44.980908",
+      "last_checked": "2026-03-24T07:43:49.600899",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"74129f84bef74751587740533a63a7b9\"",
       "file_path": "documentation/safari-developer-tools/ios-enabling-webdriver.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/inspect-apps-and-devices.json": {
       "hash": "3e14730d0876c177b253e0a5cee754efc56cc7af5ba91c515f03a1068c0dbea9",
-      "last_checked": "2026-03-20T07:32:42.631134",
+      "last_checked": "2026-03-24T07:43:47.486241",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"073daf891d3842d02ac64d8c81413265\"",
       "file_path": "documentation/safari-developer-tools/inspect-apps-and-devices.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-developer-tools/autofill.json": {
       "hash": "e295327b3fa2b6803dd3fc951fa80afbdd462cbee1a45fee100a632aca44573a",
-      "last_checked": "2026-03-20T07:32:44.698627",
+      "last_checked": "2026-03-24T07:43:49.304671",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:41.326453",
+      "session_id": "2026-03-24T07:43:46.279651",
       "etag": "W/\"c7eed3c7448af5b5fe91f56dea31d028\"",
       "file_path": "documentation/safari-developer-tools/autofill.md"
     },

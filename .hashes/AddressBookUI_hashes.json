@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:24.162471",
+    "last_updated": "2026-03-24T07:43:16.772223",
     "total_pages": 136,
-    "session_id": "2026-03-20T07:32:17.047465"
+    "session_id": "2026-03-24T07:43:04.305944"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AddressBookUI.json": {
       "hash": "e0b6d4eb7bd8295e1852e4b3eb39d8f67795817901d87241179d6d67b24b05be",
-      "last_checked": "2026-03-20T07:32:17.468853",
+      "last_checked": "2026-03-24T07:43:04.574224",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"6d6651bb9a1c0101c3f3b57c09c57ec2\"",
       "file_path": "documentation/AddressBookUI/AddressBookUI.md"
     },
     "https://developer.apple.com/documentation/AddressBookUI": {
       "hash": "e0b6d4eb7bd8295e1852e4b3eb39d8f67795817901d87241179d6d67b24b05be",
-      "last_checked": "2026-03-20T07:32:17.373232",
+      "last_checked": "2026-03-24T07:43:04.457571",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"6d6651bb9a1c0101c3f3b57c09c57ec2\"",
       "file_path": "documentation/AddressBookUI/AddressBookUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller.json": {
       "hash": "bce93fd73eb376e7c7ff0ab333242490b9f726f7f301cdb623a85ed641bb00ab",
-      "last_checked": "2026-03-20T07:32:17.852141",
+      "last_checked": "2026-03-24T07:43:04.878020",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"bf1f238ee553f40d4f85754381d8dbcf\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontroller.json": {
       "hash": "1c542bcde90a7c34c709999be24237eaa91add2e601a1140d11ed21a288fa036",
-      "last_checked": "2026-03-20T07:32:17.932158",
+      "last_checked": "2026-03-24T07:43:05.006277",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"0174dee122d544c9f8117fe08987915d\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller.json": {
       "hash": "e95ef66504948aa0e84f6958a36e792a5ea503164e5043b88d74a2eeea937588",
-      "last_checked": "2026-03-20T07:32:18.044390",
+      "last_checked": "2026-03-24T07:43:05.311694",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"55d406e11913a3324b6a8c74580da42a\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller.json": {
       "hash": "2c38a9edbd65bbe051159de6200b7959ae8164f23ee9bd525afda95e6063233d",
-      "last_checked": "2026-03-20T07:32:18.155131",
+      "last_checked": "2026-03-24T07:43:05.479569",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"247a65196f2893b3c6fb71401d871a0d\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abcreatestringwithaddressdictionary(_:_:).json": {
       "hash": "a014b81191e87b387907975c6e0e50ad774e624ddb98414908b7450d9496063b",
-      "last_checked": "2026-03-20T07:32:18.247047",
+      "last_checked": "2026-03-24T07:43:05.676878",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"84b3b5b0e40f39f25ea74970ca3ac871\"",
       "file_path": "documentation/AddressBookUI/abcreatestringwithaddressdictionary.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller/peoplepickerdelegate.json": {
       "hash": "b6a36425e0ed427142e5bbdbc1e3eb5f9903bf08117de04c63625ac2b67b85e6",
-      "last_checked": "2026-03-20T07:32:18.326297",
+      "last_checked": "2026-03-24T07:43:05.990782",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"752b94697d1734d2ca352102b085154c\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller/peoplepickerdelegate.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontrollerdelegate.json": {
       "hash": "23f5f007b5e66b8cd17e84e26742cfaa71bff21caecca5329ab62a06179d1823",
-      "last_checked": "2026-03-20T07:32:18.396487",
+      "last_checked": "2026-03-24T07:43:06.160772",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"58e696af29c0a2ed577c1a125e5becb5\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontrollerdelegate.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller/displayedproperties.json": {
       "hash": "6f37107e48baf12539c51747644e1ec2e8e97af37d732dcca1f834f19365d907",
-      "last_checked": "2026-03-20T07:32:18.469904",
+      "last_checked": "2026-03-24T07:43:06.278258",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"317de5e0695a16708a6bf41ea8d57c8c\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller/displayedproperties.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller/addressbook.json": {
       "hash": "87966d7e61b92a56914edc25140e97f113fcc4ed8ee4859b990f8985773119b6",
-      "last_checked": "2026-03-20T07:32:18.568243",
+      "last_checked": "2026-03-24T07:43:06.444916",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"7bb2273a7dfd415e0635574e902ba86e\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller/addressbook.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller/predicateforenablingperson.json": {
       "hash": "0d031fcfeaeee03c8f0a68963697589c0f963cc6c655da22d4ca4ef9dd5f1486",
-      "last_checked": "2026-03-20T07:32:18.660176",
+      "last_checked": "2026-03-24T07:43:06.624365",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"21803da22fee8c226353293397dad7fb\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller/predicateforenablingperson.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller/predicateforselectionofperson.json": {
       "hash": "4e5cea113c04ba8e37837c5d91e51676f1e1557675842ce2fd9228ca0e405cbd",
-      "last_checked": "2026-03-20T07:32:18.767591",
+      "last_checked": "2026-03-24T07:43:06.953324",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"fda2863918261fb82a2309e8c72d1cc8\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller/predicateforselectionofperson.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontroller/predicateforselectionofproperty.json": {
       "hash": "7836979930cbd1df0a4f6f00522cc055dbed64ffc3611eecca8d4c5543830eb6",
-      "last_checked": "2026-03-20T07:32:18.836705",
+      "last_checked": "2026-03-24T07:43:07.071563",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"f963fbfd230bdad96c1a97872459d1fa\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontroller/predicateforselectionofproperty.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/address-book-properties.json": {
       "hash": "67b46ada24f5865818660391972bd9f322fe22f7e67bcb620a752b028272e728",
-      "last_checked": "2026-03-20T07:32:18.915788",
+      "last_checked": "2026-03-24T07:43:07.220229",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"4497ddee2f3b330039bf8fa60b60ca5e\"",
       "file_path": "documentation/AddressBookUI/address-book-properties.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontroller/newpersonviewdelegate.json": {
       "hash": "2e75247673e22af4e111973498f6fbf82f2363a611d2a1c189854407ab7da62d",
-      "last_checked": "2026-03-20T07:32:18.981493",
+      "last_checked": "2026-03-24T07:43:07.394239",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"4fd98ed9cec2d2facc6e73cf8116312a\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontroller/newpersonviewdelegate.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontrollerdelegate.json": {
       "hash": "dd47992458496f71c754a611ba45e179ff7314ae69375ab0786b2c3d9e031a3f",
-      "last_checked": "2026-03-20T07:32:19.242221",
+      "last_checked": "2026-03-24T07:43:07.562457",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"a1e1501e237bbb6b44be7d98ed327a04\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontrollerdelegate.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontroller/displayedperson.json": {
       "hash": "05920490fdf7d1c0400bf61daded93d9be012a6f9a03c441b14fcfe547830c2c",
-      "last_checked": "2026-03-20T07:32:19.313346",
+      "last_checked": "2026-03-24T07:43:07.859195",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"431781051ff1200950a0e1f9fca19f8b\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontroller/displayedperson.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontroller/addressbook.json": {
       "hash": "e8c2c1d1c81bb2a7bf1b0c066f25d2cdf2a1d75edb6e064fb2fc7f7584dde0a3",
-      "last_checked": "2026-03-20T07:32:19.386480",
+      "last_checked": "2026-03-24T07:43:07.989279",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"e53462802c8f80ad46df86f7ef3e751f\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontroller/addressbook.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontroller/parentgroup.json": {
       "hash": "1abccfeccedf234a330ed672d4c7456226663404d78a2532771c6b700620862c",
-      "last_checked": "2026-03-20T07:32:19.513178",
+      "last_checked": "2026-03-24T07:43:08.149949",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"81c96934a0a4b9396063e396b806f894\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontroller/parentgroup.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/personviewdelegate.json": {
       "hash": "4494ad14337c6b11f4746d8888960613378490343a377dfc3ba59661b242662e",
-      "last_checked": "2026-03-20T07:32:19.607563",
+      "last_checked": "2026-03-24T07:43:08.305803",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"81af6ad589e5aa8420a184354c413f9c\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/personviewdelegate.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontrollerdelegate.json": {
       "hash": "3bf1d9ca9fac0f67af47220e09860245a7af846704297ff1c0b3d43faec99063",
-      "last_checked": "2026-03-20T07:32:19.853467",
+      "last_checked": "2026-03-24T07:43:08.478326",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"07471ab3cbae6ddba7d8657ed6a8e063\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontrollerdelegate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/displayedperson.json": {
       "hash": "415bee5307dc5e6117c1f543b17eda712954e06944af85b5ef3ff047e8ab9ef9",
-      "last_checked": "2026-03-20T07:32:19.958855",
+      "last_checked": "2026-03-24T07:43:08.606956",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"fd6a9cb19cc6a71bfb519bd4398ede6b\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/displayedperson.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/displayedproperties.json": {
       "hash": "b8d539b0fb84ad6374b2fd18b7edfd37b87f77b70bb0aa37d5b47876e2ae4c19",
-      "last_checked": "2026-03-20T07:32:20.086895",
+      "last_checked": "2026-03-24T07:43:08.744952",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"7276852979847b87cd6a5e3751a929fd\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/displayedproperties.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/shouldshowlinkedpeople.json": {
       "hash": "c07a0a5c65fddec5a2cee64d7b315b562359ec954b2c21a1aef501e47f418eef",
-      "last_checked": "2026-03-20T07:32:20.161725",
+      "last_checked": "2026-03-24T07:43:08.903136",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"2cf3903d6797fb7937af649709a0f0d1\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/shouldshowlinkedpeople.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/addressbook.json": {
       "hash": "7d0202d78a5b6fa93b0cb2efe1465432ac6dcf3d8c85ee643e50ebcc996884cd",
-      "last_checked": "2026-03-20T07:32:20.260505",
+      "last_checked": "2026-03-24T07:43:09.206658",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"71a71679b71bb717bb372a0571dd8fd5\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/addressbook.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/allowsactions.json": {
       "hash": "b61aeca77c938de0eb8f85376b9518ab741dcfb3f80fbba8c1179e775a42380b",
-      "last_checked": "2026-03-20T07:32:20.333684",
+      "last_checked": "2026-03-24T07:43:09.521669",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"54521c726fd481d0b9822829995afd28\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/allowsactions.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/allowsediting.json": {
       "hash": "325f393fb3986571e5cf94c97594bf78a20fb9754aa46643245199a80d9d8a56",
-      "last_checked": "2026-03-20T07:32:20.450114",
+      "last_checked": "2026-03-24T07:43:09.662097",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"a4ea15434e31d9ac6a646b8c68e9f28d\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/allowsediting.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/sethighlighteditemforproperty(_:withidentifier:).json": {
       "hash": "6a6bab88fea013097b1aeb4d11a24fa2c109d1b7a4f01353cd26059313ce2c62",
-      "last_checked": "2026-03-20T07:32:20.519460",
+      "last_checked": "2026-03-24T07:43:09.788029",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"9f9d8dac3ee2e29392efc9082cd10e9f\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller/sethighlighteditemforproperty-withidentifier.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/unknownpersonviewdelegate.json": {
       "hash": "5f8b207afa40d3efa7e9715b1f29be900f6702b6a66b0511ade4d4b8a9e8da72",
-      "last_checked": "2026-03-20T07:32:20.590007",
+      "last_checked": "2026-03-24T07:43:10.094248",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"51ae257e1385b842a7bc6b99d4d36fbe\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/unknownpersonviewdelegate.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontrollerdelegate.json": {
       "hash": "9d0e8e969a585b7e200b7b2b77d626c18a7d8427f2721ba1f5eea2024a72c991",
-      "last_checked": "2026-03-20T07:32:20.669869",
+      "last_checked": "2026-03-24T07:43:10.264693",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"e47656d151cc48d39ba5f30890227402\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontrollerdelegate.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/alternatename.json": {
       "hash": "03e90546596d4ac3a27c86a6f3acae264b70fc89f30a0f475ea7f6aad005923c",
-      "last_checked": "2026-03-20T07:32:20.741368",
+      "last_checked": "2026-03-24T07:43:10.393480",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"953de832e5f24a468da7c66d57b1c4dc\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/alternatename.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/message.json": {
       "hash": "03ac1034712e9013afd1ab0cca081e6f6df18469b002e7f71e8bbf67e1bd627d",
-      "last_checked": "2026-03-20T07:32:20.805101",
+      "last_checked": "2026-03-24T07:43:10.594627",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"d703fb6e641ddadd0bf0ef8506b9071f\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/message.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/displayedperson.json": {
       "hash": "ec3ef188b1c2f5eb33b08e1f973899e2cac3735d6619ecc3e38f34f9ffd9705f",
-      "last_checked": "2026-03-20T07:32:20.883977",
+      "last_checked": "2026-03-24T07:43:10.706275",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"55958142f73cbb0d750af5e5cd49abf1\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/displayedperson.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/addressbook.json": {
       "hash": "bbfd6cf428cd32a9de0dda60d6e3ff55cc4798cd487e32eb07d7068e17445308",
-      "last_checked": "2026-03-20T07:32:20.996970",
+      "last_checked": "2026-03-24T07:43:10.848727",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"0e9574e9494ef336dd9b3215c6e07611\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/addressbook.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/allowsactions.json": {
       "hash": "7917f6348237baf255808958c03720d30e0a2516f7bb9a29b371fcd5082e4831",
-      "last_checked": "2026-03-20T07:32:21.132067",
+      "last_checked": "2026-03-24T07:43:10.974404",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"1b112f2d8fe5965635cd73429249fa58\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/allowsactions.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontroller/allowsaddingtoaddressbook.json": {
       "hash": "48352dac21e1f6ddad910468b03c9463865bca1580caf58d7f0180d3293cd36d",
-      "last_checked": "2026-03-20T07:32:21.223562",
+      "last_checked": "2026-03-24T07:43:11.167252",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"e593bfbfbd0e93ef1269b61e9cc23457\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontroller/allowsaddingtoaddressbook.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:shouldcontinueafterselectingperson:).json": {
       "hash": "a6778f5034defc6cee64105423008dae4a67d1802abd222008fe26c26859a2f8",
-      "last_checked": "2026-03-20T07:32:21.397415",
+      "last_checked": "2026-03-24T07:43:11.465771",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"c121ce23baf0968081547c19d11a2ae2\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller-shouldcontinueafterselectingperson.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:shouldcontinueafterselectingperson:property:identifier:).json": {
       "hash": "2d277028a0abacc6f356dda83d4e3748261e27da70b64a6b4e9a58f9ed0b68fd",
-      "last_checked": "2026-03-20T07:32:21.474870",
+      "last_checked": "2026-03-24T07:43:11.607116",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"07c71ce7c3feacbd22a3e17c107530fe\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller-shouldcontinueafterselectingpersonpropertyidentifier.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontrollerdidcancel(_:).json": {
       "hash": "31fa6385feda364bd76af4a054b66a09e4c892b213e3be98731b552ece88b47a",
-      "last_checked": "2026-03-20T07:32:21.548910",
+      "last_checked": "2026-03-24T07:43:11.754634",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"62f582a77047e068a79d2a93424d254c\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontrollerdidcancel.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:didselectperson:).json": {
       "hash": "ffc86f8a07b0042a9e02befd3d9de2d0445dbd40c1f6f6aaab60bc09b8dd4cbd",
-      "last_checked": "2026-03-20T07:32:21.674863",
+      "last_checked": "2026-03-24T07:43:11.874143",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"c93f34a24162edabd3d88b9f399396be\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller-didselectperson.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:didselectperson:property:identifier:).json": {
       "hash": "9cfdca521a9e7635c1638d30aa368258ec557189baadb55655d564b308ecebb1",
-      "last_checked": "2026-03-20T07:32:21.752450",
+      "last_checked": "2026-03-24T07:43:12.174065",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"71aadb08f9fc262d9d6036e1a00bc7d7\"",
       "file_path": "documentation/AddressBookUI/abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller-didselectpersonpropertyidentifier.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonnameprefixproperty.json": {
       "hash": "6708f2b6c3e8dc2f83046426f47d5030b0851145d7a728fe07e9bd310e12fbad",
-      "last_checked": "2026-03-20T07:32:21.937187",
+      "last_checked": "2026-03-24T07:43:12.305166",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"ed150161560fe8222e76ebe2ed166872\"",
       "file_path": "documentation/AddressBookUI/abpersonnameprefixproperty.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersongivennameproperty.json": {
       "hash": "1d1c52546d5d991bc76e6cb41de8d2c2d9f76571bab17d77ecde3095be391f19",
-      "last_checked": "2026-03-20T07:32:22.008038",
+      "last_checked": "2026-03-24T07:43:12.440508",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"67fbaa0100628a35ec0bb054abd6ab2c\"",
       "file_path": "documentation/AddressBookUI/abpersongivennameproperty.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonmiddlenameproperty.json": {
       "hash": "548640ce4c0a794d017cbf84587b1e1e4bc72bf47e2fe6ea0f030c84a44a59f9",
-      "last_checked": "2026-03-20T07:32:22.087391",
+      "last_checked": "2026-03-24T07:43:12.586259",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"1c448d38a82dbe543e16ae11e007e922\"",
       "file_path": "documentation/AddressBookUI/abpersonmiddlenameproperty.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonfamilynameproperty.json": {
       "hash": "f4ec250add5b731ae28542873613abf37841b524636545ae2587540f354d3116",
-      "last_checked": "2026-03-20T07:32:22.151585",
+      "last_checked": "2026-03-24T07:43:12.719217",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"d99d13fe9c72a0b1d59c1e71ec86defb\"",
       "file_path": "documentation/AddressBookUI/abpersonfamilynameproperty.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonnamesuffixproperty.json": {
       "hash": "ce0fdaff6265c79f8d9e4cf43f6f833428f687aebffc78bf67202e8d1a46af26",
-      "last_checked": "2026-03-20T07:32:22.264078",
+      "last_checked": "2026-03-24T07:43:12.887941",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"06b3c83c071daf3afbb5af0d9d1bbd85\"",
       "file_path": "documentation/AddressBookUI/abpersonnamesuffixproperty.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonpreviousfamilynameproperty.json": {
       "hash": "d6665a0f39cfc62db12ddd68bdb6ebe46c592d7e41d7c5f05662741f5d4d82b6",
-      "last_checked": "2026-03-20T07:32:22.338099",
+      "last_checked": "2026-03-24T07:43:13.072098",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"2722e7422d4b396f774a4c036a0d072e\"",
       "file_path": "documentation/AddressBookUI/abpersonpreviousfamilynameproperty.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonnicknameproperty.json": {
       "hash": "11b61cf21e95d1c85aa3247420a0ee7aac87cd1b52bc297760f8c771a78dc515",
-      "last_checked": "2026-03-20T07:32:22.455495",
+      "last_checked": "2026-03-24T07:43:13.231336",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"2fbacbc23801e146ba017106e869bea2\"",
       "file_path": "documentation/AddressBookUI/abpersonnicknameproperty.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonphoneticgivennameproperty.json": {
       "hash": "ab1696256d420c99a27a105aabe0d703482b5bba35ba92979fa53a677bb8f699",
-      "last_checked": "2026-03-20T07:32:22.537003",
+      "last_checked": "2026-03-24T07:43:13.346573",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"bb7fc150e0002e100aedf7623bb8e570\"",
       "file_path": "documentation/AddressBookUI/abpersonphoneticgivennameproperty.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonphoneticmiddlenameproperty.json": {
       "hash": "3fdbf73dffc79966e56bef9952b3bf295905f555a2e8a7a0a426ff2fa5682de7",
-      "last_checked": "2026-03-20T07:32:22.610615",
+      "last_checked": "2026-03-24T07:43:13.532139",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"be8d324de227509d39102c9648509a73\"",
       "file_path": "documentation/AddressBookUI/abpersonphoneticmiddlenameproperty.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonphoneticfamilynameproperty.json": {
       "hash": "7d6c6d036b5e62cd7617a72371ee3633ab758475d7e97c6916d6ec89e4b2a6ab",
-      "last_checked": "2026-03-20T07:32:22.681721",
+      "last_checked": "2026-03-24T07:43:13.697786",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"743f50058a40b29f7b61ab386035ad4a\"",
       "file_path": "documentation/AddressBookUI/abpersonphoneticfamilynameproperty.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonorganizationnameproperty.json": {
       "hash": "8b699abadc09274c84fcec9253a5ed94d57fad88a541086b673740f9136381a4",
-      "last_checked": "2026-03-20T07:32:22.775072",
+      "last_checked": "2026-03-24T07:43:13.873709",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"8ecc97d9b0c956c3447cd56ef597b0e1\"",
       "file_path": "documentation/AddressBookUI/abpersonorganizationnameproperty.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersondepartmentnameproperty.json": {
       "hash": "305282ceaa6533be661e493fd80812592a547c75888eec4c8fedddd42045ceff",
-      "last_checked": "2026-03-20T07:32:22.843354",
+      "last_checked": "2026-03-24T07:43:14.028490",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"965c18c5b4bd1921efb16c13d78838a6\"",
       "file_path": "documentation/AddressBookUI/abpersondepartmentnameproperty.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonjobtitleproperty.json": {
       "hash": "00a5b8db60f332ad0e64d6db09f087353c53c134687a213d92cb32ec29ccd8f6",
-      "last_checked": "2026-03-20T07:32:22.920488",
+      "last_checked": "2026-03-24T07:43:14.198230",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"64697ae4d238ca5bf643db40516de646\"",
       "file_path": "documentation/AddressBookUI/abpersonjobtitleproperty.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonbirthdayproperty.json": {
       "hash": "c407dc3942574d5c19fc0928158e7e8c7f4ceebc810c8d49b6340a809a434070",
-      "last_checked": "2026-03-20T07:32:23.052260",
+      "last_checked": "2026-03-24T07:43:14.362373",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"6a23fa8a5ae8d417cbfe580d8e235758\"",
       "file_path": "documentation/AddressBookUI/abpersonbirthdayproperty.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonnoteproperty.json": {
       "hash": "f07b4137d43219ebdf7402e4962f42815cd4acdc2994c79b7fdf40c4aa014c42",
-      "last_checked": "2026-03-20T07:32:23.125840",
+      "last_checked": "2026-03-24T07:43:14.534748",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"f1645bf6c655e5be27a4fe53400bfea3\"",
       "file_path": "documentation/AddressBookUI/abpersonnoteproperty.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonphonenumbersproperty.json": {
       "hash": "6cbc8f9596befc8878ca289d6f596e66d25daf52799faa8c6ea4222a18acfd94",
-      "last_checked": "2026-03-20T07:32:23.242019",
+      "last_checked": "2026-03-24T07:43:14.665622",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"641956a80772190cbdf170ec2a3e727b\"",
       "file_path": "documentation/AddressBookUI/abpersonphonenumbersproperty.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonemailaddressesproperty.json": {
       "hash": "28257bce061ca7559ca32cdfb295429f781fb369eb62fc4ca73daa88e32ba195",
-      "last_checked": "2026-03-20T07:32:23.314596",
+      "last_checked": "2026-03-24T07:43:14.860460",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"0d49221910faaf2a256df3a292bf8f97\"",
       "file_path": "documentation/AddressBookUI/abpersonemailaddressesproperty.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonurladdressesproperty.json": {
       "hash": "394a42114db6758f95162f3f80ae777d45c07faf8e37247c0dfe5c586f31ce37",
-      "last_checked": "2026-03-20T07:32:23.391713",
+      "last_checked": "2026-03-24T07:43:15.049831",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"809d272dff172cc82b5f6b9920875e93\"",
       "file_path": "documentation/AddressBookUI/abpersonurladdressesproperty.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersondatesproperty.json": {
       "hash": "f2022a00cba033f089e37512be79c29e60713f2660f2b8c3fda3101dd7be78a0",
-      "last_checked": "2026-03-20T07:32:23.487872",
+      "last_checked": "2026-03-24T07:43:15.202090",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"fda0db32868163ff35e9a8a7053186b9\"",
       "file_path": "documentation/AddressBookUI/abpersondatesproperty.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersoninstantmessageaddressesproperty.json": {
       "hash": "89db793bcdcf8408b8f35f781c2a935daa8bf7ecda257a7712c3b726b9c933a7",
-      "last_checked": "2026-03-20T07:32:23.572044",
+      "last_checked": "2026-03-24T07:43:15.399294",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"76a2a004fc2cd76451e497a7f40df734\"",
       "file_path": "documentation/AddressBookUI/abpersoninstantmessageaddressesproperty.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonrelatednamesproperty.json": {
       "hash": "832b23ca3f4bb8964fb56a350aac6e15c9079cece89669a56123690feb2ac7bb",
-      "last_checked": "2026-03-20T07:32:23.661625",
+      "last_checked": "2026-03-24T07:43:15.717000",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"de8eb8eb4f2de701bbc8469081665f42\"",
       "file_path": "documentation/AddressBookUI/abpersonrelatednamesproperty.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonsocialprofilesproperty.json": {
       "hash": "b5f7823645de8233de87017117202052fac97b8a4051c62f630882a492de1bb7",
-      "last_checked": "2026-03-20T07:32:23.743149",
+      "last_checked": "2026-03-24T07:43:15.877580",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"def00da2e2b82a24fb98f23a1b6eee2a\"",
       "file_path": "documentation/AddressBookUI/abpersonsocialprofilesproperty.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonpostaladdressesproperty.json": {
       "hash": "7989b19af5e280f66949bfe0beeee84c1a23bd1c08655fb6024338d03bd7bc83",
-      "last_checked": "2026-03-20T07:32:23.817275",
+      "last_checked": "2026-03-24T07:43:16.001378",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"1536794e0f98a86f5054d4c08e2ac157\"",
       "file_path": "documentation/AddressBookUI/abpersonpostaladdressesproperty.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abnewpersonviewcontrollerdelegate/newpersonviewcontroller(_:didcompletewithnewperson:).json": {
       "hash": "378cd08b7e35ee64bcbcbdad4629e8f417c06ff7dadf7e5c174dfa542a60a7c8",
-      "last_checked": "2026-03-20T07:32:23.904047",
+      "last_checked": "2026-03-24T07:43:16.160213",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"21f93f97e9455360a26887a5f613991b\"",
       "file_path": "documentation/AddressBookUI/abnewpersonviewcontrollerdelegate/newpersonviewcontroller-didcompletewithnewperson.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontrollerdelegate/personviewcontroller(_:shouldperformdefaultactionforperson:property:identifier:).json": {
       "hash": "3ec3f9f8316d49237204a0cb58a89053281051500de2f432717d3ffe733b06ec",
-      "last_checked": "2026-03-20T07:32:24.025238",
+      "last_checked": "2026-03-24T07:43:16.303070",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"7c5d56d4e0eac6a353a135c0e3335b94\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontrollerdelegate/personviewcontroller-shouldperformdefaultactionforpersonpropertyidentifier.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontrollerdelegate/unknownpersonviewcontroller(_:didresolvetoperson:).json": {
       "hash": "6a75f1a219369872cd11fcea8c08b6168d1dffc8543bf909bc4d892cb32d621e",
-      "last_checked": "2026-03-20T07:32:24.094518",
+      "last_checked": "2026-03-24T07:43:16.472438",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"11d2df41179748e451edcff1811540bb\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontrollerdelegate/unknownpersonviewcontroller-didresolvetoperson.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abunknownpersonviewcontrollerdelegate/unknownpersonviewcontroller(_:shouldperformdefaultactionforperson:property:identifier:).json": {
       "hash": "7c9fa5c85cfd031c21a560e07d2a9eff0c42ddc34bbd35b81f2ccd4c278e5d00",
-      "last_checked": "2026-03-20T07:32:24.161251",
+      "last_checked": "2026-03-24T07:43:16.768835",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.047465",
+      "session_id": "2026-03-24T07:43:04.305944",
       "etag": "W/\"9a0379ac461fd6c1ab799029e42fb087\"",
       "file_path": "documentation/AddressBookUI/abunknownpersonviewcontrollerdelegate/unknownpersonviewcontroller-shouldperformdefaultactionforpersonpropertyidentifier.md"
     },

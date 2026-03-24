@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:31:01.236901",
+    "last_updated": "2026-03-24T07:41:01.816152",
     "total_pages": 562,
-    "session_id": "2026-03-20T07:30:28.126673"
+    "session_id": "2026-03-24T07:40:21.120108"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ScreenCaptureKit.json": {
       "hash": "9ad6d46692786531fe92f3e21128566c2c623e4af8381e62377a7bc01e5308ec",
-      "last_checked": "2026-03-20T07:30:28.404701",
+      "last_checked": "2026-03-24T07:40:21.391074",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a2c73af6918c5b6c9e12eac54c747a16\"",
       "file_path": "documentation/ScreenCaptureKit/ScreenCaptureKit.md"
     },
     "https://developer.apple.com/documentation/ScreenCaptureKit": {
       "hash": "9ad6d46692786531fe92f3e21128566c2c623e4af8381e62377a7bc01e5308ec",
-      "last_checked": "2026-03-20T07:30:28.297561",
+      "last_checked": "2026-03-24T07:40:21.270070",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a2c73af6918c5b6c9e12eac54c747a16\"",
       "file_path": "documentation/ScreenCaptureKit/ScreenCaptureKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/capturing-screen-content-in-macos.json": {
       "hash": "ec56ebb1aad644e8198233ed6ef5a8aa60fc0eb1aa1404aeb16533562756f305",
-      "last_checked": "2026-03-20T07:30:28.686515",
+      "last_checked": "2026-03-24T07:40:21.651916",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b724f807f033baae8420bde9e988c63c\"",
       "file_path": "documentation/ScreenCaptureKit/capturing-screen-content-in-macos.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent.json": {
       "hash": "3f19cccbf7f11e72af90a0ad7911dfadfcfea5747aa7666a80c2099a3ee600c2",
-      "last_checked": "2026-03-20T07:30:28.820551",
+      "last_checked": "2026-03-24T07:40:21.798998",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"201ce990452b1e4602993ddbd1006bd4\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentinfo.json": {
       "hash": "8dd91bcbf6251ae3dabc5d1dfe2a4e5671dbe1a50d7b5656a62957ee3888622d",
-      "last_checked": "2026-03-20T07:30:28.940713",
+      "last_checked": "2026-03-24T07:40:21.951750",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0faa79e44bb58659d42eadad61e6d632\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentinfo.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentstyle.json": {
       "hash": "e808e77b15e24be4d3226f0d2a6ce7c419049f54e60a2af2aef8868df905628f",
-      "last_checked": "2026-03-20T07:30:29.011006",
+      "last_checked": "2026-03-24T07:40:22.112009",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8d34778259868c69462036417dd9bd92\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentstyle.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scdisplay.json": {
       "hash": "6c30702fb6e51a13626a965d719033128e970f50681a55631f753e3e6737860c",
-      "last_checked": "2026-03-20T07:30:29.127388",
+      "last_checked": "2026-03-24T07:40:22.292946",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"42db9565b48f570d68d0985815dbf25b\"",
       "file_path": "documentation/ScreenCaptureKit/scdisplay.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scrunningapplication.json": {
       "hash": "3d09a54cf80a59eea3fb79bfdea8d6ff6f1bc2fd9716ed5960560b75b4d7b812",
-      "last_checked": "2026-03-20T07:30:29.245582",
+      "last_checked": "2026-03-24T07:40:22.413717",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"aada857af790f259756c066d0e20f022\"",
       "file_path": "documentation/ScreenCaptureKit/scrunningapplication.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow.json": {
       "hash": "aac407012ecc1ab17b788a581a6bbee3dc73bd73ce14f78caeae0432125632fc",
-      "last_checked": "2026-03-20T07:30:29.317473",
+      "last_checked": "2026-03-24T07:40:22.553760",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1897c845ae68cad9136d5ebdc5b43ad3\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream.json": {
       "hash": "17a012ef406989d191002c182a8900896c09316f1287bc492a8c10755ef5a9d7",
-      "last_checked": "2026-03-20T07:30:29.440384",
+      "last_checked": "2026-03-24T07:40:22.675491",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d374b630d6f113cec76c8c97d9959d7c\"",
       "file_path": "documentation/ScreenCaptureKit/scstream.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration.json": {
       "hash": "8f0099305e1060195c7eb2a44dda1545b5804048c4b81b604abba56a1c436fb3",
-      "last_checked": "2026-03-20T07:30:29.597590",
+      "last_checked": "2026-03-24T07:40:22.843739",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2a26df701977c28b2c0b27ae71583bdb\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter.json": {
       "hash": "8baf7d092c14ac6adcc3fd6b421e9da95f58459a22bb9d9a3d5c7293641ee747",
-      "last_checked": "2026-03-20T07:30:29.728022",
+      "last_checked": "2026-03-24T07:40:23.005613",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b0bed00268b031b66ce9a9788f745b1e\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamdelegate.json": {
       "hash": "4f384466d3cb72b1af11b4e62d47fbe1cbe516cbfa9f364cac1960fcff93c422",
-      "last_checked": "2026-03-20T07:30:29.813436",
+      "last_checked": "2026-03-24T07:40:23.214366",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7224a6b905e68f2b57ec03a528e71a70\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamdelegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotmanager.json": {
       "hash": "1f963d3fbc72d11f4232984e3483c5ff21be0212d713b47a17e08bde3f607f2a",
-      "last_checked": "2026-03-20T07:30:29.945690",
+      "last_checked": "2026-03-24T07:40:23.382229",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b86d9efe7d46d86d45e67a9c23a0c350\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotmanager.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration.json": {
       "hash": "f11bf03915fec4837bf8bf51cb3b9401581f3e70127ed650ae44816467b53e3c",
-      "last_checked": "2026-03-20T07:30:30.017738",
+      "last_checked": "2026-03-24T07:40:23.554972",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"cf8bbe7463c70e2b4344de3c0b70137b\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotoutput.json": {
       "hash": "d3944f2c99bc7271075b4b1b04685781f063fe9be94639a1567258b30c891eb2",
-      "last_checked": "2026-03-20T07:30:30.139341",
+      "last_checked": "2026-03-24T07:40:23.718667",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"067306438fa37bcbe9270d09ef29928c\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotoutput.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutput.json": {
       "hash": "4b854d3d28fcc84633cba386c99c65d5a78f54197ca633aabb20cb1305776433",
-      "last_checked": "2026-03-20T07:30:30.266010",
+      "last_checked": "2026-03-24T07:40:23.843734",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"5927c71494f8d4a562630433aa1e3adf\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutput.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutputtype.json": {
       "hash": "1dea22ba0452b695e5642b5996598c748cb299fcc72a56a52f843cd32c4630fd",
-      "last_checked": "2026-03-20T07:30:30.329287",
+      "last_checked": "2026-03-24T07:40:23.962972",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"cf579c7c058bc9bdf8a32d0f8edfbf0b\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutputtype.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo.json": {
       "hash": "2ee00f412f6115115995dfc8766d4f7e6a3dbfb5f92a40bca59d485526bbd530",
-      "last_checked": "2026-03-20T07:30:30.406150",
+      "last_checked": "2026-03-24T07:40:24.128728",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"728217f461b28762e2e43ef720f55211\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus.json": {
       "hash": "25977fd991d4d1958aa314398cadfc37c6fdab16436febd14ca10519547434fe",
-      "last_checked": "2026-03-20T07:30:30.555016",
+      "last_checked": "2026-03-24T07:40:24.283154",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1d0a6801317a88adcd39f23e4deefbe6\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker.json": {
       "hash": "98e7831ed0f0728da2bf916f7702cc7389f7558e81fffb281ace4464acf8238b",
-      "last_checked": "2026-03-20T07:30:30.678681",
+      "last_checked": "2026-03-24T07:40:24.403907",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"87f638e5df5a061ae05a6582a6356894\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct.json": {
       "hash": "1ab35a634454fa2707045ccfcabeb44ee9fe71c7c364df98f0068c0ea695de9e",
-      "last_checked": "2026-03-20T07:30:30.794083",
+      "last_checked": "2026-03-24T07:40:24.576648",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a55a824493e212bed85a4c2bfacda458\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-swiftstruct.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode.json": {
       "hash": "6b3504bc6948e09d9809d294e19f19e75cb02d5b9091bf376f8c922889055897",
-      "last_checked": "2026-03-20T07:30:30.916469",
+      "last_checked": "2026-03-24T07:40:24.703902",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8d74cc46a4bbf29fce36555382d0efa8\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerobserver.json": {
       "hash": "230d75747901dcbfd6e35f2a6eebb6873a65b53c8b52b15c50a470b640a6f282",
-      "last_checked": "2026-03-20T07:30:31.036354",
+      "last_checked": "2026-03-24T07:40:24.867792",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0d1b35743231d09e759d9aab12be1e70\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerobserver.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerrordomain.json": {
       "hash": "90b73218dd3f39d7ffb243b71bf161596a5c5cadcf4a9079382d6dc817aba6c5",
-      "last_checked": "2026-03-20T07:30:31.129880",
+      "last_checked": "2026-03-24T07:40:25.001277",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1134c09e8a55b95a6db934e4c96850f1\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerrordomain.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror.json": {
       "hash": "0782e389fda58134b6cec0795951aaba451109f800ae09dd1fd6b38ec3d668cf",
-      "last_checked": "2026-03-20T07:30:31.198859",
+      "last_checked": "2026-03-24T07:40:25.130645",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1dc6d04c3ba23e670ee6080f3594f387\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/getwithcompletionhandler(_:).json": {
       "hash": "c6e71961a1a26051475de16f1ac41af0b247f12d8fab4d1f408245322b791890",
-      "last_checked": "2026-03-20T07:30:31.273229",
+      "last_checked": "2026-03-24T07:40:25.267163",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"11bb47ac9d8d3e099d0d9f89316a8823\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/getwithcompletionhandler.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/getexcludingdesktopwindows(_:onscreenwindowsonly:completionhandler:).json": {
       "hash": "5e87b14d2ff3240202580186ea5048cb49b5e2ef8d449be89848dec2a200bf16",
-      "last_checked": "2026-03-20T07:30:31.400162",
+      "last_checked": "2026-03-24T07:40:25.417283",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"68a127f21480f150dcff3f994ae8d948\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/getexcludingdesktopwindows-onscreenwindowsonlycompletionhandler.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/getexcludingdesktopwindows(_:onscreenwindowsonlyabove:completionhandler:).json": {
       "hash": "dc3f61ba0adc4ed5efa2a69bee12d05344116fc1ff34fb085a22b1a7d768307f",
-      "last_checked": "2026-03-20T07:30:31.526432",
+      "last_checked": "2026-03-24T07:40:25.552570",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"58c743e4784d478da9a927a7959959dc\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/getexcludingdesktopwindows-onscreenwindowsonlyabovecompletionhandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/getexcludingdesktopwindows(_:onscreenwindowsonlybelow:completionhandler:).json": {
       "hash": "af6ee628042e5109c46bde4e9d9be6f66ffacbd72abafc6977a87dab7ae8bf04",
-      "last_checked": "2026-03-20T07:30:31.602704",
+      "last_checked": "2026-03-24T07:40:25.734401",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c5a60b6d654a7712147cd8e1084b702d\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/getexcludingdesktopwindows-onscreenwindowsonlybelowcompletionhandler.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/info(for:).json": {
       "hash": "ac60ed7ca6fe79061e9f2997a327171f678a96c05e2ea1fee6a6ca7c5bc74cf1",
-      "last_checked": "2026-03-20T07:30:31.750841",
+      "last_checked": "2026-03-24T07:40:25.903607",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"3fc089797cd837aff80208f5ce846a9d\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/info-for.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/windows.json": {
       "hash": "8deba0009983d3c4224699a703aadc8c5766d0ac50019b2f361537a45efa4428",
-      "last_checked": "2026-03-20T07:30:31.819523",
+      "last_checked": "2026-03-24T07:40:26.024060",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0302bae415ac7b5c7ed6359fa3829476\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/windows.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/displays.json": {
       "hash": "0f36ef11df73b071adfd77f8ae3f87110a278e13c3ab298f1992f577805ad79b",
-      "last_checked": "2026-03-20T07:30:31.943980",
+      "last_checked": "2026-03-24T07:40:26.156803",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"6da76867c32fd5cdcda0ac076ec15f0a\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/displays.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/applications.json": {
       "hash": "73fb9671a2ae24d9d2ddd895688fee25dc7b5e5f7a3cd9202daa06da5707ef6a",
-      "last_checked": "2026-03-20T07:30:32.068258",
+      "last_checked": "2026-03-24T07:40:26.343729",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"208fb25761b679907a2fc19497d5c7f5\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/applications.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontent/getcurrentprocessshareablecontent(completionhandler:).json": {
       "hash": "de9a4683d607e80829956d709d748b5da90b9e8c7d5148ebddc8c8ec849c08e4",
-      "last_checked": "2026-03-20T07:30:32.146445",
+      "last_checked": "2026-03-24T07:40:26.476158",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4da2cd98b809b88870e75d3df31edd2f\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontent/getcurrentprocessshareablecontent-completionhandler.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentinfo/contentrect.json": {
       "hash": "949b3701539b39129809991db9310b400ffc492f9e935081be5679ee1069747c",
-      "last_checked": "2026-03-20T07:30:32.217783",
+      "last_checked": "2026-03-24T07:40:26.644483",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a219db4fc12c10dbe53a5ccb313bff05\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentinfo/contentrect.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentinfo/pointpixelscale.json": {
       "hash": "63fa3be470468b949dbf23e2113360e78962ad77243d0e9760030dae6d9ce4d2",
-      "last_checked": "2026-03-20T07:30:32.342017",
+      "last_checked": "2026-03-24T07:40:26.811753",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d8ca2ffdde023ca648aed09c8610cbc1\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentinfo/pointpixelscale.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentinfo/style.json": {
       "hash": "a31630bcc32baf66e4fcac17241f13dadbb75860ea79d7048cf1b25db76b900d",
-      "last_checked": "2026-03-20T07:30:32.459608",
+      "last_checked": "2026-03-24T07:40:26.939247",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"49c1ac2cc4c538d6e72b953926d17ad5\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentinfo/style.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentstyle/application.json": {
       "hash": "d080f5d42eb3a85c0e6319e9803b07a6b5e833171fd35e2bf28536d4fe325ab4",
-      "last_checked": "2026-03-20T07:30:32.526121",
+      "last_checked": "2026-03-24T07:40:27.058227",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"630712891c33be75b6a43290c1bcd11b\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentstyle/application.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentstyle/display.json": {
       "hash": "8d41742c32f90eda0d5479ff7f75937beb0d322b1fd32000580edfbb3980b72c",
-      "last_checked": "2026-03-20T07:30:32.636893",
+      "last_checked": "2026-03-24T07:40:27.247233",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c908a9fa560a34441efe67d15471ff1b\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentstyle/display.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentstyle/none.json": {
       "hash": "07758faea431f35cd0a2162e2c57738315a26636b71448ed86a75794ca972839",
-      "last_checked": "2026-03-20T07:30:32.703891",
+      "last_checked": "2026-03-24T07:40:27.389814",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"e425a07a036fdfa11a0c478fcb0539f3\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentstyle/none.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentstyle/window.json": {
       "hash": "063457e89e88e84b9937604ffd4bc94b8c2b1537ec30f33009ac36a5f34c1acb",
-      "last_checked": "2026-03-20T07:30:32.772217",
+      "last_checked": "2026-03-24T07:40:27.553369",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8a511a4e42ff6d2e10f22c8230bd2ba7\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentstyle/window.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scshareablecontentstyle/init(rawvalue:).json": {
       "hash": "2c9b042c00ccceaa8511255a8b1c0ca37236be371c012d9434efd633125cc507",
-      "last_checked": "2026-03-20T07:30:32.893939",
+      "last_checked": "2026-03-24T07:40:27.712261",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a8b1fd1c039d18792bd91050935511d8\"",
       "file_path": "documentation/ScreenCaptureKit/scshareablecontentstyle/init-rawvalue.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scdisplay/displayid.json": {
       "hash": "0946966b0ed11bef0c7a3f9c6909d35804c41731bd384a251d8ac968cf5334b8",
-      "last_checked": "2026-03-20T07:30:33.005710",
+      "last_checked": "2026-03-24T07:40:27.847611",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2ddff1b5ff95cb7f83316e2175e3ab64\"",
       "file_path": "documentation/ScreenCaptureKit/scdisplay/displayid.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scdisplay/frame.json": {
       "hash": "b25ed7ee40c544195f2fd2120720c7228f4a6304ea83220b2337d0f6bdef58c5",
-      "last_checked": "2026-03-20T07:30:33.071112",
+      "last_checked": "2026-03-24T07:40:28.029240",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a60f2ed9d7e6479c11b250f18cc10b99\"",
       "file_path": "documentation/ScreenCaptureKit/scdisplay/frame.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scdisplay/width.json": {
       "hash": "e1b8d7b2768d55157e1882e5d8436651676cc3ef31abd193f14d30c660d9405c",
-      "last_checked": "2026-03-20T07:30:33.137722",
+      "last_checked": "2026-03-24T07:40:28.197287",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d8d9e103939d15c736545e308c77afbc\"",
       "file_path": "documentation/ScreenCaptureKit/scdisplay/width.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scdisplay/height.json": {
       "hash": "f3bc387c05ee4264dc5a75fd2536b0ac27f7d8b450aa7a22bbd5d1b08c5f564c",
-      "last_checked": "2026-03-20T07:30:33.211066",
+      "last_checked": "2026-03-24T07:40:28.348643",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4893ac723b7c26e87bfc26c1d7e2e228\"",
       "file_path": "documentation/ScreenCaptureKit/scdisplay/height.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scrunningapplication/processid.json": {
       "hash": "477849bc516ca3114f9dfde30a7778a171565defddf080a40de5cb85523e9fdd",
-      "last_checked": "2026-03-20T07:30:33.378970",
+      "last_checked": "2026-03-24T07:40:28.543496",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d16e9609bb5f7063fa76526fad05b06b\"",
       "file_path": "documentation/ScreenCaptureKit/scrunningapplication/processid.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scrunningapplication/bundleidentifier.json": {
       "hash": "6c4c42023440fa92eba4f004ace41c78bbc3a5b8588fd55fe3c032351939acad",
-      "last_checked": "2026-03-20T07:30:33.440374",
+      "last_checked": "2026-03-24T07:40:28.663287",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b497dac3e84361d6488c4ee6ee1e4680\"",
       "file_path": "documentation/ScreenCaptureKit/scrunningapplication/bundleidentifier.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scrunningapplication/applicationname.json": {
       "hash": "7902bea04d13008a647d9b427f5f73daed1ccc5b3e9ab31e26ba81a9138dd2f7",
-      "last_checked": "2026-03-20T07:30:33.512314",
+      "last_checked": "2026-03-24T07:40:28.847631",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"36d52a0058051f05d30b3e7b5b4a077e\"",
       "file_path": "documentation/ScreenCaptureKit/scrunningapplication/applicationname.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/windowid.json": {
       "hash": "99072bf5c29aa2bf8796f53797c77247c0e2a50f300ef77f22cac1e98dfda21c",
-      "last_checked": "2026-03-20T07:30:33.581500",
+      "last_checked": "2026-03-24T07:40:29.037430",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"51ab43f809eee5cd3359f0924d04c371\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/windowid.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/title.json": {
       "hash": "11c830c04cbb2638e251c08bda1b6ed3331f59d4a70b588ffd78d83392c148b9",
-      "last_checked": "2026-03-20T07:30:33.646874",
+      "last_checked": "2026-03-24T07:40:29.218580",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0546a6b7316ab649d19b82bb3911a631\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/title.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/owningapplication.json": {
       "hash": "c8a61fd884c2a4c21ab041f9a30c2ba6a915c3024b818bf4e542ea036b5f7128",
-      "last_checked": "2026-03-20T07:30:33.784415",
+      "last_checked": "2026-03-24T07:40:29.348936",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"14027833278e9409bedd94123ea077c4\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/owningapplication.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/windowlayer.json": {
       "hash": "90930fa6a46091eef3266bdd69e7a149ae5803d62f012674d928bf7c55b86974",
-      "last_checked": "2026-03-20T07:30:33.895855",
+      "last_checked": "2026-03-24T07:40:29.484787",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"90bbb4f4545e33bdca1ab9c916c61f81\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/windowlayer.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/frame.json": {
       "hash": "ae6ed942bc34ca32d058b9c84067d284ddcfcf7dd6082eb177e4e52682c5850e",
-      "last_checked": "2026-03-20T07:30:33.958513",
+      "last_checked": "2026-03-24T07:40:29.634895",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2a69d840873e1202afb6d67035e3699f\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/frame.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/isonscreen.json": {
       "hash": "94bcbaece7983e4688e20f4367367d85c85eaf821ae9574d8dbb5cfe00f8519e",
-      "last_checked": "2026-03-20T07:30:34.079576",
+      "last_checked": "2026-03-24T07:40:29.811483",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8c08900a2054d32ddb2c49159c66ffd7\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/isonscreen.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scwindow/isactive.json": {
       "hash": "f39582b3e85158a2be95a370be288b89112bc36c3e939b14a8e8955d0d997c6e",
-      "last_checked": "2026-03-20T07:30:34.199604",
+      "last_checked": "2026-03-24T07:40:29.983683",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1040c4b84561b4c8b0f2ba383b15195b\"",
       "file_path": "documentation/ScreenCaptureKit/scwindow/isactive.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/init(filter:configuration:delegate:).json": {
       "hash": "feaa52260190c8ed92a779d8a95dbcecf76409214bfa5c29c601831561171288",
-      "last_checked": "2026-03-20T07:30:34.271984",
+      "last_checked": "2026-03-24T07:40:30.110482",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1b1577f3ef17d713c471219c155be3ad\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/init-filterconfigurationdelegate.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/updateconfiguration(_:completionhandler:).json": {
       "hash": "d8523335cb0b9fa30f433b14924262f1895e626ce457497a534302b2d695f42d",
-      "last_checked": "2026-03-20T07:30:34.387885",
+      "last_checked": "2026-03-24T07:40:30.277675",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"11c14682065ab9168f7eaaf95424ea94\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/updateconfiguration-completionhandler.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/updatecontentfilter(_:completionhandler:).json": {
       "hash": "fac7be4b06be809e86a39e0de0ac48857d720ab00886dc268b58f1559c5822ed",
-      "last_checked": "2026-03-20T07:30:34.459949",
+      "last_checked": "2026-03-24T07:40:30.396100",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"07331bb6350415b841b83eeb11809d67\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/updatecontentfilter-completionhandler.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/addstreamoutput(_:type:samplehandlerqueue:).json": {
       "hash": "80a2a57c1a030592bbf926a5917d8a4f6f356939e8ef7ea13b3ee5a4dabd86f9",
-      "last_checked": "2026-03-20T07:30:34.587668",
+      "last_checked": "2026-03-24T07:40:30.563019",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"388605eae198e0a6496b512ca38ab541\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/addstreamoutput-typesamplehandlerqueue.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/removestreamoutput(_:type:).json": {
       "hash": "a218602325b15ea960df1bf0f873b968f1d41b427009d8d96a55eccc290ef5f5",
-      "last_checked": "2026-03-20T07:30:34.715470",
+      "last_checked": "2026-03-24T07:40:30.726617",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f959062f82f31d27e5a98f315969c3ee\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/removestreamoutput-type.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/addrecordingoutput(_:).json": {
       "hash": "b3a6a4d0ade68133cb54c6db1fc6bb222268ca924709a18b0df3277abc49dcbb",
-      "last_checked": "2026-03-20T07:30:34.831494",
+      "last_checked": "2026-03-24T07:40:30.884737",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"08dec27eb5dadb03e3286624ae8db487\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/addrecordingoutput.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/removerecordingoutput(_:).json": {
       "hash": "e74f00a01ada0cd4fa35db81fd8668b9da55c307d5f7fa0cd777e373e570e813",
-      "last_checked": "2026-03-20T07:30:34.954849",
+      "last_checked": "2026-03-24T07:40:31.049529",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d838b613e06f09a969740e2f616f104a\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/removerecordingoutput.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutput.json": {
       "hash": "7243a75efef5dd2c2f6f794abdfcbbeaee4b84dc029a612a7ea02f4a0f0bc2eb",
-      "last_checked": "2026-03-20T07:30:35.025500",
+      "last_checked": "2026-03-24T07:40:31.224522",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4100c7b93387b868abcddff918aea060\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutput.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/startcapture(completionhandler:).json": {
       "hash": "b115412da1792c326117a7b268d00e86729d464fe63fd58cefb9029760f155a2",
-      "last_checked": "2026-03-20T07:30:35.154447",
+      "last_checked": "2026-03-24T07:40:31.353362",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ca78ebcf8db29e9f567e1507d4e301ac\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/startcapture-completionhandler.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/stopcapture(completionhandler:).json": {
       "hash": "d1a48f51f297e4f62a81473969081980dd4f8fe5e23a7b7457227987bd6a29c3",
-      "last_checked": "2026-03-20T07:30:35.275913",
+      "last_checked": "2026-03-24T07:40:31.533623",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7b2286e2f6f698eb0074f92e6a30a685\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/stopcapture-completionhandler.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstream/synchronizationclock.json": {
       "hash": "7ffa7d1cb8bf45b4879d0b2536f57d532196e6129fccfa256761c1861a60a5e7",
-      "last_checked": "2026-03-20T07:30:35.386303",
+      "last_checked": "2026-03-24T07:40:31.653525",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f9b39e74444157a2b18537c5aa269f8f\"",
       "file_path": "documentation/ScreenCaptureKit/scstream/synchronizationclock.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/width.json": {
       "hash": "d4f7a992e08946d76ba8ab182a1d503dbab0c994ddaa994557ad67f4f2052928",
-      "last_checked": "2026-03-20T07:30:35.451723",
+      "last_checked": "2026-03-24T07:40:31.831851",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4c86d4907a5be22a690b3bf48c9dec35\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/width.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/height.json": {
       "hash": "6ff276f03b5193dcec161b1010a644d745a0ff1af44e1763ab7bebfcdc088fd3",
-      "last_checked": "2026-03-20T07:30:35.519701",
+      "last_checked": "2026-03-24T07:40:32.117616",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"917b83a7a4d4f4b0bc0f313cbbc82f76\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/height.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/scalestofit.json": {
       "hash": "59a822758f0415c8d771debf9191b6c3992e801ac56ae9bfd83ee84c47b2cde9",
-      "last_checked": "2026-03-20T07:30:35.584013",
+      "last_checked": "2026-03-24T07:40:32.435648",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"67ed820ca30fcd7f5037a0d82a06a600\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/scalestofit.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/sourcerect.json": {
       "hash": "ae70c9c9bd53f084590efe6af2b7caa826105ef4d3a1bda77eb7c96b8c7cc2fd",
-      "last_checked": "2026-03-20T07:30:35.657118",
+      "last_checked": "2026-03-24T07:40:32.597354",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"9fc26957d33553965e0f3561bb5f5b17\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/sourcerect.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/destinationrect.json": {
       "hash": "65001cd8f20f528fd6b36a3f787a7a7e803a8ce94e4a5f8da773f5730ecc69af",
-      "last_checked": "2026-03-20T07:30:35.776414",
+      "last_checked": "2026-03-24T07:40:32.768345",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"31e3e45fb7e56e333c26fd505caafae7\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/destinationrect.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preservesaspectratio.json": {
       "hash": "4d7c9a33f4028f9eefbf5283070be3ef35c033a882aba5ce527a3e2874feaf92",
-      "last_checked": "2026-03-20T07:30:35.896979",
+      "last_checked": "2026-03-24T07:40:32.934571",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"9787f8fa8868ab8f0e12a20e52c5ef43\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preservesaspectratio.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/pixelformat.json": {
       "hash": "eac52a20d9b0b515a56d8b464ca3846e3cdf3b7683491d17abac207207ff5b6d",
-      "last_checked": "2026-03-20T07:30:36.010200",
+      "last_checked": "2026-03-24T07:40:33.065428",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b54ce48bd1e0f9ab4d62b7f3c76b05c5\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/pixelformat.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/colormatrix.json": {
       "hash": "fb738db66e12f4d8206c520f7dcdc5cd0f18a7cb6465c6db811b4a3b5b0fab5d",
-      "last_checked": "2026-03-20T07:30:36.120847",
+      "last_checked": "2026-03-24T07:40:33.244697",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b7b9c3a99bf184b0d1142e1aa3ef0f8c\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/colormatrix.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/colorspacename.json": {
       "hash": "a431c11fca2b814d62246a96f088c99b045cc21b8dc788524513145fd47a224c",
-      "last_checked": "2026-03-20T07:30:36.236230",
+      "last_checked": "2026-03-24T07:40:33.555407",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"714e169ec1cf75f70c0ecde23d2816e5\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/colorspacename.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/backgroundcolor.json": {
       "hash": "a8ff2f84815735514bfcd44a850a9ebc30466c747c34c0a775f5336014cac078",
-      "last_checked": "2026-03-20T07:30:36.359867",
+      "last_checked": "2026-03-24T07:40:33.732632",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"cd1bc7d9c267d0a92a73a6dcb09a510a\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/backgroundcolor.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/showscursor.json": {
       "hash": "03e27c3fa17d4346b61f05ff37adaaa794b0a74491e585cec674f488ce6bfece",
-      "last_checked": "2026-03-20T07:30:36.474555",
+      "last_checked": "2026-03-24T07:40:33.869433",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f5d54a0da9c75fa3c1ad9c38995be29a\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/showscursor.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/shouldbeopaque.json": {
       "hash": "caefdcda9b02f0cb3eaaad6de179bdaa196fbf0471e2c2f94fedc623086a4171",
-      "last_checked": "2026-03-20T07:30:36.592089",
+      "last_checked": "2026-03-24T07:40:34.039162",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"47d2009bcc06b8a4fd4493bdc93819f7\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/shouldbeopaque.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/capturesshadowsonly.json": {
       "hash": "7a0eb2b8986e4cd6ba70b253aa91d85a4c0edf7bdb74469a24f6c56d222e9ad5",
-      "last_checked": "2026-03-20T07:30:36.704994",
+      "last_checked": "2026-03-24T07:40:34.194663",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"77b5bb01c221e30990c52fc49448c4b5\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/capturesshadowsonly.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/ignoreshadowsdisplay.json": {
       "hash": "294df46a38cfabbe662b875230fb59f507284477e082d46db5a948896ebd39c2",
-      "last_checked": "2026-03-20T07:30:36.822450",
+      "last_checked": "2026-03-24T07:40:34.316061",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"842438973ac9728d78da43e65c3c8932\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/ignoreshadowsdisplay.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/ignoreshadowssinglewindow.json": {
       "hash": "6cc94537e4a504d7107f858cb487568553efbe2844fca6db9c46cfa08a2aaf1d",
-      "last_checked": "2026-03-20T07:30:37.107852",
+      "last_checked": "2026-03-24T07:40:34.444940",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0959d72ca40e4904977c5cffa652ce5a\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/ignoreshadowssinglewindow.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/ignoreglobalclipdisplay.json": {
       "hash": "5e64665150c0e1afa5915f654f8b77397978cc7f82c6ab1976e2dd61c7de1698",
-      "last_checked": "2026-03-20T07:30:37.229155",
+      "last_checked": "2026-03-24T07:40:34.630743",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8015a6159f991a4fa333fb6026a4b1a3\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/ignoreglobalclipdisplay.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/ignoreglobalclipsinglewindow.json": {
       "hash": "673e339149718117cec1ac64dbfdf4ef19182b6d818c3c4211b12048d408ab87",
-      "last_checked": "2026-03-20T07:30:37.469436",
+      "last_checked": "2026-03-24T07:40:34.788764",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4488c0a83c28f0f9e431e89ad6a66ea7\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/ignoreglobalclipsinglewindow.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/queuedepth.json": {
       "hash": "1597dc1ab5451a1a70f8fb25ec93052144043b1f51482af948ab67e0bb4f968f",
-      "last_checked": "2026-03-20T07:30:37.585834",
+      "last_checked": "2026-03-24T07:40:34.920428",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"11837f8da48972beffdf5596982da0cf\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/queuedepth.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/minimumframeinterval.json": {
       "hash": "f783ea97df23542a950dac5fcb63460a151c213a5b3ae1d5b147052f0c0a8acb",
-      "last_checked": "2026-03-20T07:30:37.822274",
+      "last_checked": "2026-03-24T07:40:35.099416",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d188a2f94073eedb24fc012945c25bc5\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/minimumframeinterval.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/captureresolution.json": {
       "hash": "96e114428ce7df83820eb4b0add0f57fc1dd696b350e31e3a54bf53b35627b3f",
-      "last_checked": "2026-03-20T07:30:37.940308",
+      "last_checked": "2026-03-24T07:40:35.207228",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"bab662d64ea200a04e72f88a11ffe0c0\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/captureresolution.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccaptureresolutiontype.json": {
       "hash": "0141160ca3b7705db1d9dede5eb118795547a4b6a1532f8bd71dad7e5cafdce4",
-      "last_checked": "2026-03-20T07:30:38.184485",
+      "last_checked": "2026-03-24T07:40:35.384813",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f48df4db828330d95a07f5402bfa2767\"",
       "file_path": "documentation/ScreenCaptureKit/sccaptureresolutiontype.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/capturesaudio.json": {
       "hash": "5e49593c2d3f7982f1a083f07f92aef1419a5b8355b3d6ad705e48b6afc17dfc",
-      "last_checked": "2026-03-20T07:30:38.303918",
+      "last_checked": "2026-03-24T07:40:35.554300",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"59638b9b69d2d34b116b25b5118a9333\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/capturesaudio.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/samplerate.json": {
       "hash": "7b21c3da05f78aa6a630a7acaead5ba7e750495f86055386970108910a6cf8fe",
-      "last_checked": "2026-03-20T07:30:38.417496",
+      "last_checked": "2026-03-24T07:40:35.725700",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0a61aa11d67dd0f21678912c014c07a8\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/samplerate.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/channelcount.json": {
       "hash": "eb64ba6e09b27d68348446af16ab4a51fe8acee37d337305f93aaa964225a68b",
-      "last_checked": "2026-03-20T07:30:38.532839",
+      "last_checked": "2026-03-24T07:40:35.895771",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d104597e50607d57a9d43057f0b44063\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/channelcount.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/excludescurrentprocessaudio.json": {
       "hash": "50ac49edaf629065177cd82956b8c5cc0c17ebb9f6feeda02c462616bf1ec3de",
-      "last_checked": "2026-03-20T07:30:38.670269",
+      "last_checked": "2026-03-24T07:40:36.058171",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"dfd3a08731ed8a279bf27c0a7342d499\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/excludescurrentprocessaudio.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/streamname.json": {
       "hash": "2d89a853aad44dde6900ab5f64b4e7874263ed64f57582b37dbb9389c563a0e9",
-      "last_checked": "2026-03-20T07:30:38.794812",
+      "last_checked": "2026-03-24T07:40:36.212725",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"57664796407fac9550ba4aec52260a40\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/streamname.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/presenteroverlayprivacyalertsetting.json": {
       "hash": "aa82a685e1b3c6e9f03b239f888e85e9417c13c2e1ba496ee38d8431b4bd7ee8",
-      "last_checked": "2026-03-20T07:30:38.908966",
+      "last_checked": "2026-03-24T07:40:36.332157",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"de237f8e83a59bcf0f2891631c35023b\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/presenteroverlayprivacyalertsetting.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scpresenteroverlayalertsetting.json": {
       "hash": "6fbdd45ee78f68448d6879b1cc632c2fdbe99915351bfbfed0c1652330ad4444",
-      "last_checked": "2026-03-20T07:30:39.046480",
+      "last_checked": "2026-03-24T07:40:36.513489",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"cd7594951f11a23d9c8d3572fac8a16b\"",
       "file_path": "documentation/ScreenCaptureKit/scpresenteroverlayalertsetting.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccapturedynamicrange.json": {
       "hash": "17579040ff5a372fc9ecb867d3415cc3a35153b2d7db9371a2ce5fed10377685",
-      "last_checked": "2026-03-20T07:30:39.284808",
+      "last_checked": "2026-03-24T07:40:36.682896",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"faa6054c015c7736376d2a1e3b9e1b6d\"",
       "file_path": "documentation/ScreenCaptureKit/sccapturedynamicrange.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset.json": {
       "hash": "7c10ad26e1335b8046117fe0dfb1bcaa087d13e72a6f55ce7c31c125c0d7c5c8",
-      "last_checked": "2026-03-20T07:30:39.408935",
+      "last_checked": "2026-03-24T07:40:36.840950",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c7f5ed834859c86017cefea87d45569d\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/init(preset:).json": {
       "hash": "7ee81979a0f3e4c870c0b2aad73152d18ae5cb05e44612500d5bfbd45af32477",
-      "last_checked": "2026-03-20T07:30:39.527065",
+      "last_checked": "2026-03-24T07:40:36.993091",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"982da48912b1b96fa976e421e28e10b5\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/init-preset.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/capturedynamicrange.json": {
       "hash": "512ee0f55ccd471fa71efe3485e4a53076ae78944647a9185074af3a8b4b0bf7",
-      "last_checked": "2026-03-20T07:30:39.638183",
+      "last_checked": "2026-03-24T07:40:37.166264",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"57cd7697a9fe47422954b5239fadd6d6\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/capturedynamicrange.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/capturemicrophone.json": {
       "hash": "ccda224e88c7398c05b3bc6c06d318d23e4a34a883078247951d804a002ab281",
-      "last_checked": "2026-03-20T07:30:39.751594",
+      "last_checked": "2026-03-24T07:40:37.323637",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"dc6f1ee97eb647f2a802daa5e589348d\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/capturemicrophone.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/includechildwindows.json": {
       "hash": "4e51effac384df7d0e6b7dd86520c3240d518d0c9ba33c1070b0313c304cf5bb",
-      "last_checked": "2026-03-20T07:30:39.890087",
+      "last_checked": "2026-03-24T07:40:37.434294",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c4616fe949e82491b3b0994dd0d988ec\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/includechildwindows.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/microphonecapturedeviceid.json": {
       "hash": "47a63a25dab40e07eb613ee78e844a30655633975afba57caa1c237e0f70d38b",
-      "last_checked": "2026-03-20T07:30:40.005017",
+      "last_checked": "2026-03-24T07:40:37.587965",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"05ac06118fdda9d98a409f96a87bfcbb\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/microphonecapturedeviceid.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/showmouseclicks.json": {
       "hash": "87881e5a7b9c58e3a0a669bb5de40fe3584a3ce632b5cf1ae3aa8ef37c3cf9fc",
-      "last_checked": "2026-03-20T07:30:40.135948",
+      "last_checked": "2026-03-24T07:40:37.763793",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"16b5b693512022ae917f9b7907187638\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/showmouseclicks.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/init(desktopindependentwindow:).json": {
       "hash": "c47c53502b317d9ee1a5d86e86bdd9eb5a94876d6189af0954df45354dfee78e",
-      "last_checked": "2026-03-20T07:30:40.251417",
+      "last_checked": "2026-03-24T07:40:37.881523",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"cefb159cbd3a1517045a58bc616928ab\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/init-desktopindependentwindow.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/init(display:including:).json": {
       "hash": "38056acbcb33e113455417203e52d86891c24336022886f3edc913cf87682462",
-      "last_checked": "2026-03-20T07:30:40.366964",
+      "last_checked": "2026-03-24T07:40:38.057092",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"301ce08bd2a336aee48e33575f7ded1e\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/init-displayincluding.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/init(display:excludingwindows:).json": {
       "hash": "01a97f7f57475e02a6b2e0543d875b9183b1157821382871d2764d32ccbff7d6",
-      "last_checked": "2026-03-20T07:30:40.501092",
+      "last_checked": "2026-03-24T07:40:38.166146",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"59cd8b14020769e2a12c169b53880dae\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/init-displayexcludingwindows.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/init(display:including:exceptingwindows:).json": {
       "hash": "217fe9d55862da37f97e4aab9a1b8c07cd430fca2b0b74f9a70f85b8d8f1886d",
-      "last_checked": "2026-03-20T07:30:40.639120",
+      "last_checked": "2026-03-24T07:40:38.292620",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"00bb11675fa2c09a11769ce75bcc6870\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/init-displayincludingexceptingwindows.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/init(display:excludingapplications:exceptingwindows:).json": {
       "hash": "5d08c200e28eb8c279d14b85da501d84daba67c18dcedec4935bb147e6318a63",
-      "last_checked": "2026-03-20T07:30:40.790434",
+      "last_checked": "2026-03-24T07:40:38.455277",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c0fbe8892358e527ea3dc21d306811f5\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/init-displayexcludingapplicationsexceptingwindows.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/contentrect.json": {
       "hash": "bd06edde8dff822106563a864dbe51d9b7174d4609313f8b643cfd9e2c93b10c",
-      "last_checked": "2026-03-20T07:30:40.899948",
+      "last_checked": "2026-03-24T07:40:38.576957",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"044528eeab4d070537e2f9cefb0a3383\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/contentrect.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/pointpixelscale.json": {
       "hash": "677e3c7fb75e58c181c183fa2830f6e9da99acfa0a6c3e6dc6e1fba05b55ecd8",
-      "last_checked": "2026-03-20T07:30:41.149018",
+      "last_checked": "2026-03-24T07:40:38.742069",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ae24b4179c2a0a9b87f419f3bad229f1\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/pointpixelscale.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/streamtype.json": {
       "hash": "8e144f4d1d7b3be4aa85a36e046d0eabf6fcd2b96ea4b8c429e38524b28a2581",
-      "last_checked": "2026-03-20T07:30:41.259318",
+      "last_checked": "2026-03-24T07:40:39.022554",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"da79cede2f73af8c486b7cc6d3de7584\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/streamtype.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamtype.json": {
       "hash": "a768bbd43270479f99db002efa29e5a899bc9313c7ccd643c1414b2a8522a200",
-      "last_checked": "2026-03-20T07:30:41.359801",
+      "last_checked": "2026-03-24T07:40:39.161315",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4b21a8ff45cfda9222600d958ab676bc\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamtype.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/style.json": {
       "hash": "7ef18e11604afb9bf1d2ac2fadebb91565ad70ff41b145b38608203162b5c004",
-      "last_checked": "2026-03-20T07:30:41.469755",
+      "last_checked": "2026-03-24T07:40:39.279732",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"af12b8e6a756d0a7a5b37e48c91898ef\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/style.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/includemenubar.json": {
       "hash": "a127660631e56dd7ff083f505376369204afa9dac11c344a9c98e37f8f0cdef1",
-      "last_checked": "2026-03-20T07:30:41.578695",
+      "last_checked": "2026-03-24T07:40:39.414436",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"fff4690462111e452d7c96067f3c9675\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/includemenubar.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/includedapplications.json": {
       "hash": "db63aa814a5bec187b981b5314b7967aeb0bd36ad5859a41d952cd99d8e8bd29",
-      "last_checked": "2026-03-20T07:30:41.781266",
+      "last_checked": "2026-03-24T07:40:39.536434",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"33d5ffe6106cb24e2c1d221a09a97890\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/includedapplications.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/includeddisplays.json": {
       "hash": "c524a13daadd8c885d484d3fc0b8619bf8eb21b90c81be0ff623107ef4c456e4",
-      "last_checked": "2026-03-20T07:30:41.848677",
+      "last_checked": "2026-03-24T07:40:39.699037",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8dfa698ed73e89f2667ac49c87836d7d\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/includeddisplays.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentfilter/includedwindows.json": {
       "hash": "cc6e40852bad8f5a9c111ecead8afef9ea4ccce476b0b17cc53e27be7325a772",
-      "last_checked": "2026-03-20T07:30:41.960365",
+      "last_checked": "2026-03-24T07:40:39.864503",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ecb9b9f6e9d2407e8046b8431e9170af\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentfilter/includedwindows.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamdelegate/outputvideoeffectdidstart(for:).json": {
       "hash": "a0119bb669c16bc6b935a627ae6a66c52e5843acaafc2b84ab31cbe00cc4a54e",
-      "last_checked": "2026-03-20T07:30:42.027463",
+      "last_checked": "2026-03-24T07:40:39.981157",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"76e10598377a688fd4128b5b222bc2ae\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamdelegate/outputvideoeffectdidstart-for.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamdelegate/outputvideoeffectdidstop(for:).json": {
       "hash": "1b99c5b7301a94e72839bbfd0b27c3b923021a61cef844d3586f24af33d2886c",
-      "last_checked": "2026-03-20T07:30:42.097483",
+      "last_checked": "2026-03-24T07:40:40.105738",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1173ac9edbf10f26489a2eec28b4a0d8\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamdelegate/outputvideoeffectdidstop-for.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamdelegate/stream(_:didstopwitherror:).json": {
       "hash": "46054533ec889d5ca5606265c5f88b815c9a51409234904c6bd7727ff965d63a",
-      "last_checked": "2026-03-20T07:30:42.212828",
+      "last_checked": "2026-03-24T07:40:40.268759",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"3d8d20b436e93968e7af7d817beed314\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamdelegate/stream-didstopwitherror.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamdelegate/streamdidbecomeactive(_:).json": {
       "hash": "334fc1aa3e9ecf7a7c7b68691973c7d9a26ee31eb95705a58629f59fb682dddd",
-      "last_checked": "2026-03-20T07:30:42.332095",
+      "last_checked": "2026-03-24T07:40:40.435495",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"48988aa2757d27d46add45ae3d33a134\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamdelegate/streamdidbecomeactive.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamdelegate/streamdidbecomeinactive(_:).json": {
       "hash": "37192ede049719b1d5a9359a6f8a3babb4e57068fad0e59c202ee209f953a07c",
-      "last_checked": "2026-03-20T07:30:42.452945",
+      "last_checked": "2026-03-24T07:40:40.609906",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f9bd832b678803006d039d40e59e242d\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamdelegate/streamdidbecomeinactive.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotmanager/captureimage(contentfilter:configuration:completionhandler:).json": {
       "hash": "822c31510987fa6a6055c22c7287177bffb49fc8159138eb0e9d2764d4b3604b",
-      "last_checked": "2026-03-20T07:30:42.567651",
+      "last_checked": "2026-03-24T07:40:40.760429",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"817fc58b5243e009664d0e2943d55a2f\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotmanager/captureimage-contentfilterconfigurationcompletionhandler.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotmanager/capturesamplebuffer(contentfilter:configuration:completionhandler:).json": {
       "hash": "420d38ca2130d8349b938ed3ad77e27a38603b24c5b7ba57a82307fb594de15e",
-      "last_checked": "2026-03-20T07:30:42.639765",
+      "last_checked": "2026-03-24T07:40:40.893725",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"061e005d3d9f687c6b42704502c6fe43\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotmanager/capturesamplebuffer-contentfilterconfigurationcompletionhandler.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotmanager/captureimage(in:completionhandler:).json": {
       "hash": "a718ea9477733a11ba3641489a116ec838d887fe942b86389a6fb00a0c35a0ee",
-      "last_checked": "2026-03-20T07:30:42.767201",
+      "last_checked": "2026-03-24T07:40:41.060731",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b35a1b913373a6a28f217ef812ec5bbb\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotmanager/captureimage-incompletionhandler.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotmanager/capturescreenshot(contentfilter:configuration:completionhandler:).json": {
       "hash": "5175abe250032d8e67f7cbbc1a2451801c7fbcbac077f4a9c429804dbb101ec1",
-      "last_checked": "2026-03-20T07:30:43.047945",
+      "last_checked": "2026-03-24T07:40:41.176509",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7c68637139c4cb858436a601097d9de4\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotmanager/capturescreenshot-contentfilterconfigurationcompletionhandler.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotmanager/capturescreenshot(rect:configuration:completionhandler:).json": {
       "hash": "3c34c028ac0351aa69cffa30a8fb8c05f3ff362cc52ae2769772aea9921a93bc",
-      "last_checked": "2026-03-20T07:30:43.162969",
+      "last_checked": "2026-03-24T07:40:41.321094",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"bad00b154205d36cd4965d8d98403eec\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotmanager/capturescreenshot-rectconfigurationcompletionhandler.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/contenttype.json": {
       "hash": "adac65c9dbab41196641d66e2f64647cd3b9c789e7fc35b0ac12f4e00ab7e775",
-      "last_checked": "2026-03-20T07:30:43.400765",
+      "last_checked": "2026-03-24T07:40:41.485445",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"bc6723338c7bb5ab7bb6b5da3fa73704\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/contenttype.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/destinationrect.json": {
       "hash": "032062cfc0d3cb472bdeacd0614d9c465039c47efe4a0f6a15d1932a2349fa21",
-      "last_checked": "2026-03-20T07:30:43.514829",
+      "last_checked": "2026-03-24T07:40:41.611772",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"91d34542a640a9de458092bf3611d39b\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/destinationrect.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/displayintent-swift.property.json": {
       "hash": "566e2320cd9c976235db5c316ff974f03fa29bfd42a0e37fb89f5db8e2881168",
-      "last_checked": "2026-03-20T07:30:43.643418",
+      "last_checked": "2026-03-24T07:40:41.776952",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"46d5d3db267dbd0d82dd3753140d2974\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/displayintent-swiftproperty.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/dynamicrange-swift.property.json": {
       "hash": "45c65f0e2955c8d0bae01ef85bfa67ee08827246ad394d7a67d32234c4c0d719",
-      "last_checked": "2026-03-20T07:30:43.759250",
+      "last_checked": "2026-03-24T07:40:41.957251",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"5542497ed949e0f20d9ad096eaa79864\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/dynamicrange-swiftproperty.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/fileurl.json": {
       "hash": "c29551e1024217869026594f86dad5d05ff8a547c2bc853984ba2be702e4b18a",
-      "last_checked": "2026-03-20T07:30:43.870789",
+      "last_checked": "2026-03-24T07:40:42.069356",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1141ac4e48276d067a450ea1af3cc1d2\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/fileurl.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/height.json": {
       "hash": "ffd67da98361c74fc2dc3bc7848a413c07cd3879cb4499c16f35677969b5d1a6",
-      "last_checked": "2026-03-20T07:30:43.934226",
+      "last_checked": "2026-03-24T07:40:42.188925",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"64b89cf804889f64aa14f2125d87bd11\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/height.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/ignoreclipping.json": {
       "hash": "6bf4cccdb5066deb82e1e1a974ebf168d0d9e23ba0c08bffd33c7b67f33baa0c",
-      "last_checked": "2026-03-20T07:30:44.050239",
+      "last_checked": "2026-03-24T07:40:42.359293",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b9b1bf263b09e1e35fc8fdfb3ed572e5\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/ignoreclipping.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/ignoreshadows.json": {
       "hash": "48f301afac965f17264b1f10eddd146148c9abc5aa92303b9b508d16c308c9e8",
-      "last_checked": "2026-03-20T07:30:44.164287",
+      "last_checked": "2026-03-24T07:40:42.501260",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2c748dbcb185e58fae72420ec076ef8b\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/ignoreshadows.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/includechildwindows.json": {
       "hash": "fba959a5e4cbee8de1f0fbb79ef6af1f986ca8d3e7b79bd59c41164f28a50558",
-      "last_checked": "2026-03-20T07:30:44.258945",
+      "last_checked": "2026-03-24T07:40:42.648264",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b8dc063f13b6440a921f1d11aa84d99c\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/includechildwindows.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/showscursor.json": {
       "hash": "f370b106cd2d0b66a502cdab6dd985532244c3bb8b8e5d06b49888dec890010c",
-      "last_checked": "2026-03-20T07:30:44.324953",
+      "last_checked": "2026-03-24T07:40:42.787036",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"5bdcd1338326996152c051a8ab3372f6\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/showscursor.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/sourcerect.json": {
       "hash": "2d98057c19384da0381f9bd56a2a960df066a18061eed4050dfde0efae76c253",
-      "last_checked": "2026-03-20T07:30:44.562731",
+      "last_checked": "2026-03-24T07:40:42.958433",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"58afadd7530128a5bbbcb18c7621a6f3\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/sourcerect.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/width.json": {
       "hash": "a794a53104f82027343ec56032e55879bf60a416db12dca4fc7e48772a84a2c5",
-      "last_checked": "2026-03-20T07:30:44.726543",
+      "last_checked": "2026-03-24T07:40:43.081270",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7544e6bacef347a9aca1a40ce62aaac3\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/width.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/supportedcontenttypes.json": {
       "hash": "05a8c3e9b506f49505adbd332f0ca0d262e94fafecc98e237074c72df4294b59",
-      "last_checked": "2026-03-20T07:30:44.842257",
+      "last_checked": "2026-03-24T07:40:43.247598",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d5267310483d8eacbec7cea55a69b1da\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/supportedcontenttypes.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/displayintent-swift.enum.json": {
       "hash": "1b8468866d62c60e2d133a3f55d8ab0facb45b3c159489f729b32313ae03407c",
-      "last_checked": "2026-03-20T07:30:44.959255",
+      "last_checked": "2026-03-24T07:40:43.388100",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ef52047aad82d71eb41ab17ab2e8eaf5\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/displayintent-swiftenum.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/dynamicrange-swift.enum.json": {
       "hash": "3241766ad0559119e8ff958262bebd50c741ed0f7ecdf782d5f48fb78e833b06",
-      "last_checked": "2026-03-20T07:30:45.077920",
+      "last_checked": "2026-03-24T07:40:43.515516",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"9ed406e83728aefca89006e183bd611d\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/dynamicrange-swiftenum.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotoutput/fileurl.json": {
       "hash": "f55cb190cae4e2053fb8ea74950a8127e6ef55389e726584e7a171f333dcf387",
-      "last_checked": "2026-03-20T07:30:45.146581",
+      "last_checked": "2026-03-24T07:40:43.631599",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c01735943c04c06d1e6891a97922b713\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotoutput/fileurl.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotoutput/hdrimage.json": {
       "hash": "d3858cc8ef8ca228b6f6d4370e08cfe73bea84014efb239d2a8477ecef8812b5",
-      "last_checked": "2026-03-20T07:30:45.261809",
+      "last_checked": "2026-03-24T07:40:43.820620",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"5c3ee0cf460b2216eb321a8a447606e7\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotoutput/hdrimage.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotoutput/sdrimage.json": {
       "hash": "c740dc579aa7f2c370243378ee67222ce5b6d8fc40071ababfa025df436d8db8",
-      "last_checked": "2026-03-20T07:30:45.396803",
+      "last_checked": "2026-03-24T07:40:43.952511",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"70da9f12a785740b3e9e60a5203e8347\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotoutput/sdrimage.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutput/stream(_:didoutputsamplebuffer:of:).json": {
       "hash": "5e7742af563e57ea20df536de167f47503e1d7daf6ce4d70f8285a9c7fb5b89f",
-      "last_checked": "2026-03-20T07:30:45.516961",
+      "last_checked": "2026-03-24T07:40:44.075168",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1f8496a6b60fd524784f66c1efc5b88e\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutput/stream-didoutputsamplebufferof.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutputtype/screen.json": {
       "hash": "e2282905ca60e704acffdc49deb93e0b7e968c2fb73dcc7dd275ae9548d8a6b6",
-      "last_checked": "2026-03-20T07:30:45.586028",
+      "last_checked": "2026-03-24T07:40:44.218082",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"6a4be091a94092a615295c6b5288664f\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutputtype/screen.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutputtype/audio.json": {
       "hash": "106c9db9f9adc64fbcc4171b8f641489c2fa66767e6fbec2f8839181e3ad65ba",
-      "last_checked": "2026-03-20T07:30:45.698947",
+      "last_checked": "2026-03-24T07:40:44.355788",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1bd7c6d08d9c12b64a60609bfb6ebcfe\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutputtype/audio.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutputtype/microphone.json": {
       "hash": "1b643b83d0bcee6b268496a9dd113d2156221aad2acaa71b32a36a70b96eb75a",
-      "last_checked": "2026-03-20T07:30:45.829443",
+      "last_checked": "2026-03-24T07:40:44.459743",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"726e172749fdc04d41a068994684dd5a\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutputtype/microphone.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamoutputtype/init(rawvalue:).json": {
       "hash": "1778ebc843b726a3a33db2c62b1bbc2337ad54140a61c9b36e12af64e7e18a4e",
-      "last_checked": "2026-03-20T07:30:45.945933",
+      "last_checked": "2026-03-24T07:40:44.613151",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"17ea0d624df03a9b2d91ac345a00680e\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamoutputtype/init-rawvalue.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/status.json": {
       "hash": "96a3ad06d2599bb91df100e3dd560aa3b936c1557ed66dd9084ad83566b756ae",
-      "last_checked": "2026-03-20T07:30:46.063220",
+      "last_checked": "2026-03-24T07:40:44.724135",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"19861090209dff54d52d02f2af4572b6\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/status.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/displaytime.json": {
       "hash": "1e07c8ad2d875ac66ed94f14fafe88b2060c55cdc37c4c10141a3d8cab6ff4cf",
-      "last_checked": "2026-03-20T07:30:46.207406",
+      "last_checked": "2026-03-24T07:40:44.925252",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"537f8172e40fed1db63d5b4e9e1d56ff\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/displaytime.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/scalefactor.json": {
       "hash": "5cf16eeb2a45d97babe4b4fed2f2779c1a4b8afe4c7a651f0289861c0691e8c2",
-      "last_checked": "2026-03-20T07:30:46.323072",
+      "last_checked": "2026-03-24T07:40:45.093877",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4ad592c091d06f73d5f999090833ed18\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/scalefactor.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/contentscale.json": {
       "hash": "96947162ec4164bd049a5c4f163280492bd7a9e5fa9fbcea116348c2a5dabd6f",
-      "last_checked": "2026-03-20T07:30:46.432492",
+      "last_checked": "2026-03-24T07:40:45.213976",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"951ed351ab5c39ad6a3288e33326f2f8\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/contentscale.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/contentrect.json": {
       "hash": "c9be23ad35478134715a4036fa8ef167df011d4688a04c46444a165ecefca748",
-      "last_checked": "2026-03-20T07:30:46.591455",
+      "last_checked": "2026-03-24T07:40:45.352831",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"93c7852db5366a25f917553147b5d37c\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/contentrect.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/boundingrect.json": {
       "hash": "2498a30f6b33807a782796557c0ee096f825e06cb86f06f4d1822703ee1a4872",
-      "last_checked": "2026-03-20T07:30:46.689337",
+      "last_checked": "2026-03-24T07:40:45.492974",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a1ed008b41610af5425fb92c3d84b943\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/boundingrect.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/screenrect.json": {
       "hash": "24d82a434ae3aa7c8260784b1c18d60896f20445b43f619c4319910889a93e2b",
-      "last_checked": "2026-03-20T07:30:46.801409",
+      "last_checked": "2026-03-24T07:40:45.607775",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d8805f37a386ccfa206adf12aca1a3e4\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/screenrect.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/dirtyrects.json": {
       "hash": "672bfe07f1911ac6ef43c02977ce300efd458477211655d80b9708d02f6d2c0d",
-      "last_checked": "2026-03-20T07:30:46.961162",
+      "last_checked": "2026-03-24T07:40:45.736658",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"559cc4631e94226e907889055282c624\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/dirtyrects.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/presenteroverlaycontentrect.json": {
       "hash": "1b2d09b86e7ed81c8842fee769c357a8b5c840c81d8df20f75f6de76f8a29b4d",
-      "last_checked": "2026-03-20T07:30:47.076853",
+      "last_checked": "2026-03-24T07:40:45.858282",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"632531435fc4d68374ee227cae9e93dc\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/presenteroverlaycontentrect.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamframeinfo/init(rawvalue:).json": {
       "hash": "6e2e551f4bb418c8e7bc73cd6f61f114d7cbd872c974af37e580ab583fddce59",
-      "last_checked": "2026-03-20T07:30:47.187261",
+      "last_checked": "2026-03-24T07:40:45.986614",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"94726ce8d8cb36bac87acec0aea34bb7\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamframeinfo/init-rawvalue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/complete.json": {
       "hash": "61e9c7d170f7912ec31e6a6543b2d9a5b44b65908d5e00a6751f5d94eaabf735",
-      "last_checked": "2026-03-20T07:30:47.295723",
+      "last_checked": "2026-03-24T07:40:46.117760",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"777176e04190a7f91c9b35d4c23193a7\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/complete.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/idle.json": {
       "hash": "0cf914f6867671fa296830ac4888666d539e071fd288d422ee7d20746472ce6e",
-      "last_checked": "2026-03-20T07:30:47.409347",
+      "last_checked": "2026-03-24T07:40:46.257844",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"08512735cf6187fed573bf0f385d7ba3\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/idle.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/blank.json": {
       "hash": "b43b36376a4497ced09312086cf22070254660aeb8ecc45bce94d0a7b77b92a0",
-      "last_checked": "2026-03-20T07:30:47.526277",
+      "last_checked": "2026-03-24T07:40:46.365971",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a35054d59e03efe66319aa502edb27b9\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/blank.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/started.json": {
       "hash": "ea28755148757d2c3c112b3c54626ff069de9f42b3551e049e049004dcab697f",
-      "last_checked": "2026-03-20T07:30:47.620366",
+      "last_checked": "2026-03-24T07:40:46.487395",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2d6f8815870e17aa2dfa6d1cfdfbabb7\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/started.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/suspended.json": {
       "hash": "ab8e1aa46f1f8ab629b183b1ff9b157553421c0f4e7b48c9b4b46d5f88d24f0e",
-      "last_checked": "2026-03-20T07:30:47.857699",
+      "last_checked": "2026-03-24T07:40:46.628150",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0710c4fd54366cf18df230f6fabc6bb3\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/suspended.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/stopped.json": {
       "hash": "723e968b6485c06ba8dd6c62f0f4f0a2cfb6ecba3e0b99a1152b4cbbae553331",
-      "last_checked": "2026-03-20T07:30:47.974977",
+      "last_checked": "2026-03-24T07:40:46.762096",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f3c34668e9bbf9dd614310f10e6eac3d\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/stopped.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scframestatus/init(rawvalue:).json": {
       "hash": "071d469fe6bae33e8060fe878069f61c67466c7eb3b993c3fa185195f2887f9d",
-      "last_checked": "2026-03-20T07:30:48.052537",
+      "last_checked": "2026-03-24T07:40:46.870578",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"847272b47db9c0b9819aa5fa794f295d\"",
       "file_path": "documentation/ScreenCaptureKit/scframestatus/init-rawvalue.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/shared.json": {
       "hash": "b2181206fe9c19e18fa0d7cb1edab534461f2913ac9a830f75587a4a6d23c6ae",
-      "last_checked": "2026-03-20T07:30:48.174725",
+      "last_checked": "2026-03-24T07:40:47.022654",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"e21fef048228728e5ff26de4d9e549e9\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/shared.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/isactive.json": {
       "hash": "b09a480befcc378dafeb5143c7648f4f3c1f8bba1f4f84e7c4a8521e30da796c",
-      "last_checked": "2026-03-20T07:30:48.294262",
+      "last_checked": "2026-03-24T07:40:47.175300",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d42b4f4f5114e3d3e312e593c7afc817\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/isactive.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/setconfiguration(_:for:).json": {
       "hash": "a8659e64c737414310316a9ec026e734bd9545ed6a549da851a4a28e2d9199a7",
-      "last_checked": "2026-03-20T07:30:48.438024",
+      "last_checked": "2026-03-24T07:40:47.315200",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7ae3a4bbd34422f8d7902c611c0d22a7\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/setconfiguration-for.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/configuration.json": {
       "hash": "31503a49608b308315f5b4662c5ddc1ade79f65b6316751ece0e2096a96a2be0",
-      "last_checked": "2026-03-20T07:30:48.553255",
+      "last_checked": "2026-03-24T07:40:47.442130",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f1beff1ae8f0ee98b80eaa9f8fdb6f04\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/configuration.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/defaultconfiguration-94q2b.json": {
       "hash": "f36b4c20831c1cac707429b4a9b6ffb182559b0a0f40ceb7e015b44c04dd5adb",
-      "last_checked": "2026-03-20T07:30:48.668045",
+      "last_checked": "2026-03-24T07:40:47.567415",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0049a8389c66967c793009a4940e4cc3\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/defaultconfiguration-94q2b.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/maximumstreamcount-2kuaa.json": {
       "hash": "1723708a35ad61ecb7701be9de67a56a07608722b59ca0b805965ccf67d6bfd2",
-      "last_checked": "2026-03-20T07:30:48.786667",
+      "last_checked": "2026-03-24T07:40:47.692134",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"86ac1afb78927821f81abcab92ced489\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/maximumstreamcount-2kuaa.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/add(_:).json": {
       "hash": "91dc0d02f1939349fa061d8fc5688e63859b8906a76582a9317be87ab7b19d5b",
-      "last_checked": "2026-03-20T07:30:48.860835",
+      "last_checked": "2026-03-24T07:40:47.832548",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b0ece6bda71328242c60ae6b90277f52\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/add.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/remove(_:).json": {
       "hash": "f8d51bc43f6505050cdc1dbf225fbc88636f173a3c97071eae84105f2773f0c4",
-      "last_checked": "2026-03-20T07:30:48.979016",
+      "last_checked": "2026-03-24T07:40:47.975832",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2b0a7004d96377f6040890a9640232af\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/remove.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/present().json": {
       "hash": "ae81124b90fa852a08991c87b85e32e6b9130938f6ea3925744d8597264db1b4",
-      "last_checked": "2026-03-20T07:30:49.044607",
+      "last_checked": "2026-03-24T07:40:48.094787",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"92f94255af1d8464b85eeb29c341cdc4\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/present.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/present(for:).json": {
       "hash": "19e12a05b8f39f1e12829cb03524f6fd1eed5b2f9059e4cc7a22bc6ed0a2a865",
-      "last_checked": "2026-03-20T07:30:49.164214",
+      "last_checked": "2026-03-24T07:40:48.223394",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"05ef95f0d51c2377e756333b583a7678\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/present-for.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/present(using:).json": {
       "hash": "20af3a06f0e091da13dd879dcd85664971497fc209c45647cd96ae82c265e7ee",
-      "last_checked": "2026-03-20T07:30:49.280442",
+      "last_checked": "2026-03-24T07:40:48.359336",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"89d115e3ba69af4a2809a98e0851cbd2\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/present-using.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpicker/present(for:using:).json": {
       "hash": "858fb2081086c14050df2f3d8c49db8f4ae92dca5e92ed544d0f3a8b1b287dea",
-      "last_checked": "2026-03-20T07:30:49.346300",
+      "last_checked": "2026-03-24T07:40:48.513406",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d81598ab8317b966f32396058fc1de1d\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpicker/present-forusing.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct/init().json": {
       "hash": "6be33463e7abe0c96676b39f28e2ebb15e7416416b82db62787d079de5f6b50e",
-      "last_checked": "2026-03-20T07:30:49.499333",
+      "last_checked": "2026-03-24T07:40:48.638481",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"966b19f37643b0f17115f71e5f8fdc33\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-swift.struct/init.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct/allowedpickermodes.json": {
       "hash": "020fc870dd2dfd96a4846bbf2e1844b58e1fda1a9b8559f6b7adec016237f68f",
-      "last_checked": "2026-03-20T07:30:49.619332",
+      "last_checked": "2026-03-24T07:40:48.756166",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d2a50155e6d6d5955283bfdddc59abfa\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-swift.struct/allowedpickermodes.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct/allowschangingselectedcontent.json": {
       "hash": "2317bb08db7c74cd472b06909634baba43ea04eea2bcd0f991e9daafcdb12a05",
-      "last_checked": "2026-03-20T07:30:49.735201",
+      "last_checked": "2026-03-24T07:40:48.901856",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1b29df190c1b90fae55e6624b4af01c1\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-swift.struct/allowschangingselectedcontent.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct/excludedbundleids.json": {
       "hash": "6b8374c53218e17ff7ee3bf15423c1e3f82ae07e9a69ab53da928c95f0393727",
-      "last_checked": "2026-03-20T07:30:49.801120",
+      "last_checked": "2026-03-24T07:40:49.017949",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8bf8833a2c74300108eab729b01ee4c5\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-swift.struct/excludedbundleids.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerconfiguration-swift.struct/excludedwindowids.json": {
       "hash": "4639f9917f78b00e4dd20a6aea13793f8f20268247b791ed4e0d9bb91f97eb84",
-      "last_checked": "2026-03-20T07:30:49.932313",
+      "last_checked": "2026-03-24T07:40:49.146555",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a52e5c5bc3b963f71415873595df2c91\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerconfiguration-swift.struct/excludedwindowids.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode/init(rawvalue:).json": {
       "hash": "7f97d8dfc63a3f1cb9da75e56f7da04a16e173481a385fe36ad592320d63c9d1",
-      "last_checked": "2026-03-20T07:30:50.043542",
+      "last_checked": "2026-03-24T07:40:49.293677",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"74cfe7cca5f21fa9e776dd5adfc4d416\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode/init-rawvalue.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode/multipleapplications.json": {
       "hash": "e016e6b9657c7f434d82a210291c3326561c8039b7f615b6a01449c06cc7c04c",
-      "last_checked": "2026-03-20T07:30:50.155184",
+      "last_checked": "2026-03-24T07:40:49.412436",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"6cadfe1e988c6565d1b2165baf6be185\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode/multipleapplications.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode/multiplewindows.json": {
       "hash": "75354e4f775174eba25866d396588c40ff05095130d66030be34d56dc3c42268",
-      "last_checked": "2026-03-20T07:30:50.277847",
+      "last_checked": "2026-03-24T07:40:49.594404",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"87d9af0c7311cd169966f7fd66373fe1\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode/multiplewindows.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode/singleapplication.json": {
       "hash": "e7502d80f4e33a287ee29ced8fa84a231fd6b2f74b324303cdd90171cb874d99",
-      "last_checked": "2026-03-20T07:30:50.389961",
+      "last_checked": "2026-03-24T07:40:49.727035",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"9a5f04e3e45d13c4d191184d7e280890\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode/singleapplication.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode/singledisplay.json": {
       "hash": "ee44fe71e0b6b17314cb05ac1966fd2fe57c3d6169c3c6ddc5c8c42cf29f6510",
-      "last_checked": "2026-03-20T07:30:50.505228",
+      "last_checked": "2026-03-24T07:40:49.851605",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"675c8c01969bf38e118b30179fb4ba0d\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode/singledisplay.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickermode/singlewindow.json": {
       "hash": "49bfbaf2b8bf12ec3e03af9b315978a1379959f73e563971573d6d2c3de99713",
-      "last_checked": "2026-03-20T07:30:50.618919",
+      "last_checked": "2026-03-24T07:40:49.983461",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"e72f19001a164c078729c0c9fb5e01d1\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickermode/singlewindow.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerobserver/contentsharingpicker(_:didcancelfor:).json": {
       "hash": "d1dd990cc3b142b589e6466407873bfae99f7645d9e25034884c334ea344edff",
-      "last_checked": "2026-03-20T07:30:50.742078",
+      "last_checked": "2026-03-24T07:40:50.111789",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"6afd337cb369ccb149dab4f157a16619\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerobserver/contentsharingpicker-didcancelfor.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerobserver/contentsharingpicker(_:didupdatewith:for:).json": {
       "hash": "aed4bba58825f0984bf67fe44ed6538f0d19849f68187fd24734c3c9fda7787d",
-      "last_checked": "2026-03-20T07:30:50.818806",
+      "last_checked": "2026-03-24T07:40:50.255092",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2e0ca2a7ce7767a1635bcface48c715c\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerobserver/contentsharingpicker-didupdatewithfor.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccontentsharingpickerobserver/contentsharingpickerstartdidfailwitherror(_:).json": {
       "hash": "a2f7bb978d22d3d7b3e5792946dc7470cdb11856a7f377bb00238bc20d2a25b6",
-      "last_checked": "2026-03-20T07:30:50.932437",
+      "last_checked": "2026-03-24T07:40:50.371263",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"39713d51cf0eb7d7c4ce9e514cc89a5a\"",
       "file_path": "documentation/ScreenCaptureKit/sccontentsharingpickerobserver/contentsharingpickerstartdidfailwitherror.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/error-constants.json": {
       "hash": "2feef0dfdf943e30fba7ebd7db10cc958879d2a2fb9c361be5230590be8755ad",
-      "last_checked": "2026-03-20T07:30:51.080153",
+      "last_checked": "2026-03-24T07:40:50.504473",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"107fc4d9f63212be15f75ab3a3a9dd1d\"",
       "file_path": "documentation/ScreenCaptureKit/error-constants.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code.json": {
       "hash": "eac502f35474dd0ea0eb4550b4bbd8551c5a102b55bcbdc7328928b38742b5a9",
-      "last_checked": "2026-03-20T07:30:51.209766",
+      "last_checked": "2026-03-24T07:40:50.632512",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b7267aa40ffec05e2112f94a2f49ca44\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/errordomain.json": {
       "hash": "aa5ddb660c58a526744a294f9231d79918251d5fac01714ac74322b4fbf3d6e7",
-      "last_checked": "2026-03-20T07:30:51.328330",
+      "last_checked": "2026-03-24T07:40:50.755309",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"8a644aebccf534d64cb2276d1f00cda0\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/errordomain.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutput/init(configuration:delegate:).json": {
       "hash": "1b10f0e4979a9ea7f39506f8d8f61cae485112682b3e5763b674803c26f43e50",
-      "last_checked": "2026-03-20T07:30:51.454283",
+      "last_checked": "2026-03-24T07:40:50.901034",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4ba89338edb17cd96032c08fc9228db0\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutput/init-configurationdelegate.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputconfiguration.json": {
       "hash": "30ac7fc6d79ada8ff9a47816c575a58f8dc2c79e2dc0f4a50f2c4dbc2ff71535",
-      "last_checked": "2026-03-20T07:30:51.519727",
+      "last_checked": "2026-03-24T07:40:51.026907",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b464095598222ec18c6a4bfb19a5049e\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputconfiguration.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputdelegate.json": {
       "hash": "2f1473b04c726982bfdf27c9a966dd14d916eb57717393ec02e247d7cdaca9ac",
-      "last_checked": "2026-03-20T07:30:51.585535",
+      "last_checked": "2026-03-24T07:40:51.143683",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"6f0724ae0552bfc82835c44f85552b4f\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputdelegate.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutput/recordedduration.json": {
       "hash": "fcb851bb427efc391cbf68e5d285d253b0be1f80c2c078f611a98921c6c97e82",
-      "last_checked": "2026-03-20T07:30:51.700984",
+      "last_checked": "2026-03-24T07:40:51.281213",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2030c896beb0b44b8f42e993cc648081\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutput/recordedduration.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutput/recordedfilesize.json": {
       "hash": "04a4612a84f4f198df2d424a073084c2af3ea452a51ec60a331782da38ac2fd0",
-      "last_checked": "2026-03-20T07:30:51.814424",
+      "last_checked": "2026-03-24T07:40:51.395876",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a75755543b1a509890160bcd64d9cc40\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutput/recordedfilesize.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccaptureresolutiontype/automatic.json": {
       "hash": "409ed3f98617110a9ed636039a63c4e877238a85505550cd88557f596d40b0a8",
-      "last_checked": "2026-03-20T07:30:51.933057",
+      "last_checked": "2026-03-24T07:40:51.511210",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"e4f10cd8d7604c16e7aa7923988d1134\"",
       "file_path": "documentation/ScreenCaptureKit/sccaptureresolutiontype/automatic.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccaptureresolutiontype/best.json": {
       "hash": "599702dac97c94f65a9c8d0e3d794d699dd3eeeaf3e71a8cc40eead2a13fd68c",
-      "last_checked": "2026-03-20T07:30:52.071138",
+      "last_checked": "2026-03-24T07:40:51.636059",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"86f0f954eff70d8fbb57b43cee94f126\"",
       "file_path": "documentation/ScreenCaptureKit/sccaptureresolutiontype/best.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccaptureresolutiontype/nominal.json": {
       "hash": "e7a1b4c9adfa0d8b7fe003a6bec8a893986244fd63d59fda29a84119fa1dff53",
-      "last_checked": "2026-03-20T07:30:52.206898",
+      "last_checked": "2026-03-24T07:40:51.792882",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"5e51deb7b13dabe9eeeb6038f4ea602a\"",
       "file_path": "documentation/ScreenCaptureKit/sccaptureresolutiontype/nominal.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccaptureresolutiontype/init(rawvalue:).json": {
       "hash": "3c843972369cf02deeb0615a1cd556b3d6f37bbb4095a651b722bdb4f52b80e3",
-      "last_checked": "2026-03-20T07:30:52.321475",
+      "last_checked": "2026-03-24T07:40:51.913287",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"706e7b672be03c722f1e6e3150c22f6a\"",
       "file_path": "documentation/ScreenCaptureKit/sccaptureresolutiontype/init-rawvalue.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scpresenteroverlayalertsetting/always.json": {
       "hash": "289abf8cf8d23a57afd41eb4fa0d533ce7cb304fefa280504380eaa4edd5617b",
-      "last_checked": "2026-03-20T07:30:52.447165",
+      "last_checked": "2026-03-24T07:40:52.052444",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"09cf2f38f636748f87aeb889c131267f\"",
       "file_path": "documentation/ScreenCaptureKit/scpresenteroverlayalertsetting/always.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scpresenteroverlayalertsetting/never.json": {
       "hash": "e23d3c1a5ba47ba55975e563038027816cfffa5fb7ef5fa964fee95e94ca4a68",
-      "last_checked": "2026-03-20T07:30:52.564143",
+      "last_checked": "2026-03-24T07:40:52.178800",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7a34ee5f03ceaefba832086ca3308684\"",
       "file_path": "documentation/ScreenCaptureKit/scpresenteroverlayalertsetting/never.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scpresenteroverlayalertsetting/system.json": {
       "hash": "7cea8008a57eaeaf2b778d8854b457e62f16a1b8f8a27b620686a5ba273463fd",
-      "last_checked": "2026-03-20T07:30:52.674844",
+      "last_checked": "2026-03-24T07:40:52.314571",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"61445e11d635467b337c7b2532599883\"",
       "file_path": "documentation/ScreenCaptureKit/scpresenteroverlayalertsetting/system.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scpresenteroverlayalertsetting/init(rawvalue:).json": {
       "hash": "99b9ef2b67bf110222878293e91a8d90d17c2f24a0ed70573eeec7f57fc2048a",
-      "last_checked": "2026-03-20T07:30:52.786312",
+      "last_checked": "2026-03-24T07:40:52.434132",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c0622a74ece95584b6ca53fd79596329\"",
       "file_path": "documentation/ScreenCaptureKit/scpresenteroverlayalertsetting/init-rawvalue.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccapturedynamicrange/sdr.json": {
       "hash": "39e66f49c8c23399aefdcad5001480bbc4aba15e5c3847e8e043d0746826155f",
-      "last_checked": "2026-03-20T07:30:52.850722",
+      "last_checked": "2026-03-24T07:40:52.558452",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a228b8ce055730b72e1905d2709627df\"",
       "file_path": "documentation/ScreenCaptureKit/sccapturedynamicrange/sdr.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccapturedynamicrange/hdrcanonicaldisplay.json": {
       "hash": "5c033b85908d9fd16d66b312144e3e33e3823c528cfe1b6dbaa29bc85ffcbe33",
-      "last_checked": "2026-03-20T07:30:53.012593",
+      "last_checked": "2026-03-24T07:40:52.692107",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"522495e582c2bdc6df72d50e4222a5c3\"",
       "file_path": "documentation/ScreenCaptureKit/sccapturedynamicrange/hdrcanonicaldisplay.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccapturedynamicrange/hdrlocaldisplay.json": {
       "hash": "117623bf2377aac0f659b43648050b42b9ef2fcbd1e8082f5445f263d9d9ce7c",
-      "last_checked": "2026-03-20T07:30:53.139729",
+      "last_checked": "2026-03-24T07:40:52.802108",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ffd4ba4f7bd9ac549236a6ce7c7e9534\"",
       "file_path": "documentation/ScreenCaptureKit/sccapturedynamicrange/hdrlocaldisplay.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/sccapturedynamicrange/init(rawvalue:).json": {
       "hash": "a499e091f04519d04ab81c1646daae65a5af6617dcefa81121afb242652eb5b2",
-      "last_checked": "2026-03-20T07:30:53.252813",
+      "last_checked": "2026-03-24T07:40:52.938838",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"80e83f89e85fe91f715cfe3a917a0981\"",
       "file_path": "documentation/ScreenCaptureKit/sccapturedynamicrange/init-rawvalue.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset/capturehdrrecordingpreservedsdrhdr10.json": {
       "hash": "9f48c49ae4a5e5444d373fa5e5118f07c82f76994f8c7bfa2e6b590c4c64af65",
-      "last_checked": "2026-03-20T07:30:53.363791",
+      "last_checked": "2026-03-24T07:40:53.054164",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b8069000e2cf7fe059c39545cfc9add4\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset/capturehdrrecordingpreservedsdrhdr10.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset/capturehdrscreenshotcanonicaldisplay.json": {
       "hash": "7073c83c9d689ce60cfa90ec000bf1ca6c56b2362c3cd2611424581695d3a4e7",
-      "last_checked": "2026-03-20T07:30:53.482936",
+      "last_checked": "2026-03-24T07:40:53.175610",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c8e41b734e3f9fabca2b52100fafb4ea\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset/capturehdrscreenshotcanonicaldisplay.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset/capturehdrscreenshotlocaldisplay.json": {
       "hash": "762d08e93e713c62ed5660e9c7fc47ede93fdbdcd9269a139f58974321aa42a2",
-      "last_checked": "2026-03-20T07:30:53.600489",
+      "last_checked": "2026-03-24T07:40:53.299564",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"10ff19f5c863b9d7892399b9c304db0d\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset/capturehdrscreenshotlocaldisplay.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset/capturehdrstreamcanonicaldisplay.json": {
       "hash": "ef205c92b14e9f5919b017fa140a7df3c318daf9cd293986cd8108a6680bf31e",
-      "last_checked": "2026-03-20T07:30:53.777985",
+      "last_checked": "2026-03-24T07:40:53.471006",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"22877dba89cf96b2543a977273a014eb\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset/capturehdrstreamcanonicaldisplay.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset/capturehdrstreamlocaldisplay.json": {
       "hash": "24520ec4a5062c4a6f87e8155ed2bf39f9276309c4c7b099c272bdf40e8a857b",
-      "last_checked": "2026-03-20T07:30:53.891807",
+      "last_checked": "2026-03-24T07:40:53.586969",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"467d36ecc0beab0aa631a9687de194bc\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset/capturehdrstreamlocaldisplay.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamconfiguration/preset/init(rawvalue:).json": {
       "hash": "540e28a074491c78ab9c4a4100ece09ef9e1ded7a34035ebf7c5b59c2cb2aa61",
-      "last_checked": "2026-03-20T07:30:54.039325",
+      "last_checked": "2026-03-24T07:40:53.764741",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f9a9263f30ec1fc0c05c200cc1ca4310\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamconfiguration/preset/init-rawvalue.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamtype/display.json": {
       "hash": "50d397c75492a6f02e9ee325239ca59857318cf2e911a9a98cb3b798b9ef7bc5",
-      "last_checked": "2026-03-20T07:30:54.155529",
+      "last_checked": "2026-03-24T07:40:53.924589",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"337cc3eea948f9f17e3907256fc9b11f\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamtype/display.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamtype/window.json": {
       "hash": "3493250ca0b5a7769613e8821179d532de23bd5061457f5d69d483d9e8dd6c84",
-      "last_checked": "2026-03-20T07:30:54.276320",
+      "last_checked": "2026-03-24T07:40:54.055005",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"6805a772fb70b9d518e21c90b931036c\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamtype/window.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamtype/init(rawvalue:).json": {
       "hash": "e50cbd0a61681bdd1ac956051dde2f5c953639964f04f4f6396bc885123b836a",
-      "last_checked": "2026-03-20T07:30:54.431006",
+      "last_checked": "2026-03-24T07:40:54.181917",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b0ed7c8d85fe2d77cc7fcfecc540037e\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamtype/init-rawvalue.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/displayintent-swift.enum/canonical.json": {
       "hash": "09b5592958c08519a815450aa7e71957f3066674d928808e2202f8249c2f3c49",
-      "last_checked": "2026-03-20T07:30:54.589580",
+      "last_checked": "2026-03-24T07:40:54.310302",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"855a054dae3fe657e18c6aaa33769816\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/displayintent-swift.enum/canonical.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/displayintent-swift.enum/local.json": {
       "hash": "b76e8887ed7b7a25085de4da442d2ed85e51b6f3077233f94184571c8cb37277",
-      "last_checked": "2026-03-20T07:30:54.705434",
+      "last_checked": "2026-03-24T07:40:54.447665",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d6279637f82def400363199862f996d4\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/displayintent-swift.enum/local.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/displayintent-swift.enum/init(rawvalue:).json": {
       "hash": "892eb3a53618a8ee2487691b4264ea11c5e8e69efb8ea6c8af83db2bcef0d814",
-      "last_checked": "2026-03-20T07:30:54.843905",
+      "last_checked": "2026-03-24T07:40:54.566479",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"4f59aab83dc63a7baf86de6f188780db\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/displayintent-swift.enum/init-rawvalue.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/dynamicrange-swift.enum/bothsdrandhdr.json": {
       "hash": "61db084c63b43b4ac659fceef0eeb9e54af40459c2eb2e11edde5626010a91e6",
-      "last_checked": "2026-03-20T07:30:54.957297",
+      "last_checked": "2026-03-24T07:40:54.704821",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"472ca2ceae3c6ed3fa81bc824c08600d\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/dynamicrange-swift.enum/bothsdrandhdr.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/dynamicrange-swift.enum/hdr.json": {
       "hash": "5aa66295982e47e89c7f6646670612ce2218251e1bb325d42be5755b0f5bdab2",
-      "last_checked": "2026-03-20T07:30:55.070480",
+      "last_checked": "2026-03-24T07:40:54.815553",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a2f4ccd7216f52ab4c64fd7616fad48f\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/dynamicrange-swift.enum/hdr.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/dynamicrange-swift.enum/sdr.json": {
       "hash": "4aa7ec1122eb5783081265513c3fd24724b343d1ca6510c4ece5cdb480a3d743",
-      "last_checked": "2026-03-20T07:30:55.183236",
+      "last_checked": "2026-03-24T07:40:54.947335",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1c60a898980eaee89dedf4381e82341c\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/dynamicrange-swift.enum/sdr.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scscreenshotconfiguration/dynamicrange-swift.enum/init(rawvalue:).json": {
       "hash": "17c2ce2d240f55c0bb927cb039dc7ebf7ad3712ea93cd1de7be511e52561913b",
-      "last_checked": "2026-03-20T07:30:55.309035",
+      "last_checked": "2026-03-24T07:40:55.062033",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d0e0f589f0159d1f350b1edfa5be12a0\"",
       "file_path": "documentation/ScreenCaptureKit/scscreenshotconfiguration/dynamicrange-swift.enum/init-rawvalue.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/userstopped.json": {
       "hash": "8c4c607138f3982ac491b0b731135ded34a53860c0c668017663ad207d327cf2",
-      "last_checked": "2026-03-20T07:30:55.376116",
+      "last_checked": "2026-03-24T07:40:55.185847",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"2ed8291c53e7f6206b92464491bbcf63\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/userstopped.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/userdeclined.json": {
       "hash": "8780ba2dd6626a404edadfb66e7c1b9126a34444a686af2c33b04df2041889d9",
-      "last_checked": "2026-03-20T07:30:55.494911",
+      "last_checked": "2026-03-24T07:40:55.305121",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b1f073f0b0073685985419752c20cfb3\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/userdeclined.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/missingentitlements.json": {
       "hash": "b2a5927d3008d4cdc800102c4cd650a6326a5a4a6c0dcbfb056210733ae56d30",
-      "last_checked": "2026-03-20T07:30:55.654032",
+      "last_checked": "2026-03-24T07:40:55.444055",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7367d2a59be4d238fa1dfe4fc1953ec2\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/missingentitlements.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/attempttostartstreamstate.json": {
       "hash": "93844d2c4aa939b7d7069dddf00b244a8aa5c059bf8868547518f78cb892d8ca",
-      "last_checked": "2026-03-20T07:30:55.717469",
+      "last_checked": "2026-03-24T07:40:55.571637",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"65cd4bfb296402559f4cb9d1832d50e2\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/attempttostartstreamstate.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/attempttostopstreamstate.json": {
       "hash": "a2602c84e345ad5f2a38b8ce9919ae9adc0e01a50fed22bf3874ffcca53ee067",
-      "last_checked": "2026-03-20T07:30:55.841286",
+      "last_checked": "2026-03-24T07:40:55.686411",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"20b9f0f898f7d659205f762d101c9c3b\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/attempttostopstreamstate.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/attempttoupdatefilterstate.json": {
       "hash": "1acc1f31efe8c012ad24bd8579e8db0aa251dfef14db7d2bf8ebbebafe333057",
-      "last_checked": "2026-03-20T07:30:55.956709",
+      "last_checked": "2026-03-24T07:40:55.811166",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"46b7c98cb1b4b6794764d6796e66cf9b\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/attempttoupdatefilterstate.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/attempttoconfigstate.json": {
       "hash": "56d2aa33303afaffce25cff48fe191f4999b06b247348e506fc743e7ae9b271a",
-      "last_checked": "2026-03-20T07:30:56.077124",
+      "last_checked": "2026-03-24T07:40:55.933407",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d3a662244f16f87ed785a613f396abe6\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/attempttoconfigstate.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failedtostart.json": {
       "hash": "f92b2feef63c8e56899b5ce1852f448c09af6c490915460891cf42de189c6bb4",
-      "last_checked": "2026-03-20T07:30:56.185731",
+      "last_checked": "2026-03-24T07:40:56.052845",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"505e1deb3b6ba0452c8320dac0db2ee4\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failedtostart.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failedtostartaudiocapture.json": {
       "hash": "504be1cf39c7b0b2ac751bc08971dee15a17adb296627e36dc93ae2824b9ec1a",
-      "last_checked": "2026-03-20T07:30:56.268496",
+      "last_checked": "2026-03-24T07:40:56.198247",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ac7b6317adcda040bf06edd97e8b0262\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failedtostartaudiocapture.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failedtostopaudiocapture.json": {
       "hash": "497e70f8113e7662cd199ea871a543bddabb6b259f5075152200027c5656009a",
-      "last_checked": "2026-03-20T07:30:56.382197",
+      "last_checked": "2026-03-24T07:40:56.333059",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"686532bfd05c27f631e61c89197595ca\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failedtostopaudiocapture.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failedtostartmicrophonecapture.json": {
       "hash": "05cbe3df1b538d3e60d826d0c0da7449ae5588e1605764d6d93ad6856bd40f86",
-      "last_checked": "2026-03-20T07:30:56.508454",
+      "last_checked": "2026-03-24T07:40:56.450667",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"3c4b2c84d9ea1ba506380950eca75ef4\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failedtostartmicrophonecapture.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/systemstoppedstream.json": {
       "hash": "f0912cc2bf2860624c201183a06ae9c542c06ee80eecb1e56dec5fcb8da16a12",
-      "last_checked": "2026-03-20T07:30:56.631565",
+      "last_checked": "2026-03-24T07:40:56.592685",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"b179dd8a85647c0e3e86518c14d555d0\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/systemstoppedstream.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/internalerror.json": {
       "hash": "0623dbe63a0a07836e4cfb8b7746ffa838f6ac9109c26d422e9e03efb803d896",
-      "last_checked": "2026-03-20T07:30:56.752805",
+      "last_checked": "2026-03-24T07:40:56.721151",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1eb5965da877b5a19113e77954832576\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/internalerror.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/removingstream.json": {
       "hash": "898f4298771e506104d06fa14fdc9681ce561141c226f19c611ceb7eef974859",
-      "last_checked": "2026-03-20T07:30:56.892730",
+      "last_checked": "2026-03-24T07:40:56.844539",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"888411634745388b6ff3b6eb57fe5cbd\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/removingstream.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/nocapturesource.json": {
       "hash": "eee6caef1f850c971e0c893163898ab92fd81f5e7a43166b77a1bff246cc0909",
-      "last_checked": "2026-03-20T07:30:57.001991",
+      "last_checked": "2026-03-24T07:40:56.973082",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ebe4240fdb9433b7d1f883a890bababd\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/nocapturesource.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/nodisplaylist.json": {
       "hash": "ca1929fc466b6d78ab7e611a700b3d909a98897584c2ad3cd459454e1d443260",
-      "last_checked": "2026-03-20T07:30:57.119082",
+      "last_checked": "2026-03-24T07:40:57.100384",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"d2e9ffb7d11fd6b3f100b2be46f6241e\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/nodisplaylist.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/nowindowlist.json": {
       "hash": "ff2f43306562e740b6078c441b919326c30cb7052e5c2b87d16766b09553c8b4",
-      "last_checked": "2026-03-20T07:30:57.226753",
+      "last_checked": "2026-03-24T07:40:57.225764",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1ac32069f50836e6b753bf9c46a2c3fe\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/nowindowlist.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failedapplicationconnectioninvalid.json": {
       "hash": "615eee8b5e18a10c39e13b4e4050b003b313631cba8903a671553fcc33253bfa",
-      "last_checked": "2026-03-20T07:30:57.350665",
+      "last_checked": "2026-03-24T07:40:57.338407",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"21359dd2b680f90d6a845c0939a40b3a\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failedapplicationconnectioninvalid.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failedapplicationconnectioninterrupted.json": {
       "hash": "3c341f2c47a0e07641a07a77481b6dceb45510bdecaedf3477bc7ab64cd20b39",
-      "last_checked": "2026-03-20T07:30:57.427215",
+      "last_checked": "2026-03-24T07:40:57.511951",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"0950e7db011c36acfaaa6aef82dcba7f\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failedapplicationconnectioninterrupted.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/failednomatchingapplicationcontext.json": {
       "hash": "14cc11bef4925f6a3d9b79ca74f67155298d3d486cceac97f01fa6f0faca4c1b",
-      "last_checked": "2026-03-20T07:30:57.546012",
+      "last_checked": "2026-03-24T07:40:57.635101",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f73bc691a50349a15c875f12c64fc3a9\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/failednomatchingapplicationcontext.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/invalidparameter.json": {
       "hash": "ecd0a2f12c0a1ad69f088a3ddfbbfb09ba2203b7e7d01947532886111a64eac7",
-      "last_checked": "2026-03-20T07:30:57.661878",
+      "last_checked": "2026-03-24T07:40:57.778729",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1df29532ba6be6eb747bd96b15d88b54\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/invalidparameter.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/userstopped.json": {
       "hash": "fbdf0ed0fa167dab351d23995bf9348b0a574083442734442dc33bdd3d092589",
-      "last_checked": "2026-03-20T07:30:57.780809",
+      "last_checked": "2026-03-24T07:40:57.913031",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"79cdd95239f09f132d171bba2b0216fe\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/userstopped.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/userdeclined.json": {
       "hash": "bf0962361dd7a6c0bbf8199a5865744cb6e69b0d64ab8dc250cd954bcbeeacf9",
-      "last_checked": "2026-03-20T07:30:57.915253",
+      "last_checked": "2026-03-24T07:40:58.036546",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"64e8b29d8ee3e09c8ed11d11bffd69f4\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/userdeclined.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/missingentitlements.json": {
       "hash": "c18c9cf0b36e0118522444f6ec019c44ace9279c8856775f64f457dd562759e8",
-      "last_checked": "2026-03-20T07:30:58.034875",
+      "last_checked": "2026-03-24T07:40:58.170229",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c82d0c40b2192cb0a7659f0f513c7dc2\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/missingentitlements.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/attempttostartstreamstate.json": {
       "hash": "2112d086d8970d0a6f11bfe0631b2fee176118184d9669cedc785261d2268f14",
-      "last_checked": "2026-03-20T07:30:58.170282",
+      "last_checked": "2026-03-24T07:40:58.315209",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f673a7ed907b66aba1bf521b901fa789\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/attempttostartstreamstate.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/attempttostopstreamstate.json": {
       "hash": "aa00f9416abc6490a6e67e3dd63a67ff8d4231e3c527607be893f0ff32e9f3c2",
-      "last_checked": "2026-03-20T07:30:58.282956",
+      "last_checked": "2026-03-24T07:40:58.426227",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"1f36076f47e67d6c6c15d92ea30511f6\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/attempttostopstreamstate.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/attempttoupdatefilterstate.json": {
       "hash": "ac9c2e4a701ba55cb4b68a84f438e85828a2226444f1c8555cd91beb6c7017f8",
-      "last_checked": "2026-03-20T07:30:58.408311",
+      "last_checked": "2026-03-24T07:40:58.569370",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"18d594701296f47d361073a5c98301da\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/attempttoupdatefilterstate.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/attempttoconfigstate.json": {
       "hash": "0a51ab8165ddce6c58a6c0617add6c3d23a3169b2e86d863269addb72c716717",
-      "last_checked": "2026-03-20T07:30:58.530090",
+      "last_checked": "2026-03-24T07:40:58.704771",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ab7d617196f4005012d27fd856847b3e\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/attempttoconfigstate.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failedtostart.json": {
       "hash": "6e653340954b393cb977e670a981369e1121fc065887b743426ef615de17ce1e",
-      "last_checked": "2026-03-20T07:30:58.649321",
+      "last_checked": "2026-03-24T07:40:58.840674",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f077fe4964314e5e4a11673bef2dcda4\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failedtostart.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/removingstream.json": {
       "hash": "2a9f280e5c1b114d33d87b8fd0ba97eb2ed86abc8df95a0eb9a35f409c59ff42",
-      "last_checked": "2026-03-20T07:30:58.713061",
+      "last_checked": "2026-03-24T07:40:58.998633",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"78c3b8ca0c7551325dc20cad2f35d19e\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/removingstream.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failedtostartaudiocapture.json": {
       "hash": "73f950af75cda16f109ee2d15f635c0f27e6cacd00ee32b0112ef2721a4ea4d8",
-      "last_checked": "2026-03-20T07:30:58.834632",
+      "last_checked": "2026-03-24T07:40:59.142522",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c1a8895cbda09dcb36d14f5884055699\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failedtostartaudiocapture.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failedtostopaudiocapture.json": {
       "hash": "5224eeee102bdd3f56a2f5507d6a28aeea7cb25c341e836e5771da512892ccef",
-      "last_checked": "2026-03-20T07:30:58.949082",
+      "last_checked": "2026-03-24T07:40:59.255463",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"75ea237b407c687f1324a702f593aeb6\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failedtostopaudiocapture.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failedtostartmicrophonecapture.json": {
       "hash": "2db4a97fe35cc804b030e4d04951ad2b47f86c6a8da2372195f543a1cc18c036",
-      "last_checked": "2026-03-20T07:30:59.071515",
+      "last_checked": "2026-03-24T07:40:59.388016",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"7f290cbcb18676a9436b97ac9248b4ff\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failedtostartmicrophonecapture.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/systemstoppedstream.json": {
       "hash": "4a6aa0f4cac321c00cce4108a1f034b130f5b2893d1b53c4a73b149fd6e8fd3f",
-      "last_checked": "2026-03-20T07:30:59.196911",
+      "last_checked": "2026-03-24T07:40:59.502063",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"e78c722c4416915a5a6be792b1cb4a27\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/systemstoppedstream.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/internalerror.json": {
       "hash": "1332e1e01db08b021cbc4ab8347de0f66ab0aee6e8d0210af219f3ada639bd6a",
-      "last_checked": "2026-03-20T07:30:59.318723",
+      "last_checked": "2026-03-24T07:40:59.635576",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"50df95926ef9d104b60148a81a5cceec\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/internalerror.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/nocapturesource.json": {
       "hash": "4d899539409f0dfe2976df72829083dcecd8bc342b9461a6ca16f937a72d55e6",
-      "last_checked": "2026-03-20T07:30:59.446782",
+      "last_checked": "2026-03-24T07:40:59.752428",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"fce437ec6a194e9897d3a9369289de02\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/nocapturesource.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/nodisplaylist.json": {
       "hash": "810c76e719a1fb1e885b150807c21aa71ed40f3208b463e5b96bdba2a8123c48",
-      "last_checked": "2026-03-20T07:30:59.562453",
+      "last_checked": "2026-03-24T07:40:59.902629",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"ead67f2dce32fd4a3f51c67149a661f9\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/nodisplaylist.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/nowindowlist.json": {
       "hash": "c375c937a4c8eca72f7f8d707e5d2da38a8b5e00070d3d05c8358445585f9ef2",
-      "last_checked": "2026-03-20T07:30:59.676587",
+      "last_checked": "2026-03-24T07:41:00.011669",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c5fdd74dd90f658aa919e6cd95607666\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/nowindowlist.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failedapplicationconnectioninvalid.json": {
       "hash": "67249c169936fb89cc9496f962850d004f83722548ddf7ed1b0f8c6d0a2f2e88",
-      "last_checked": "2026-03-20T07:30:59.787779",
+      "last_checked": "2026-03-24T07:41:00.249061",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"92ba002d3836091857b4bdef79262a6d\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failedapplicationconnectioninvalid.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failedapplicationconnectioninterrupted.json": {
       "hash": "51ed48694ea0489ffe67a8b4931084a46419f0d9ce22c0061de420e990d061e9",
-      "last_checked": "2026-03-20T07:30:59.911365",
+      "last_checked": "2026-03-24T07:41:00.373643",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a1feac1a4c317451d243efac4fcde5e6\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failedapplicationconnectioninterrupted.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/failednomatchingapplicationcontext.json": {
       "hash": "24532fbfd7610b68e1d848a9f14e584e94bde50b971bdaf4ef0fa2d6072c47af",
-      "last_checked": "2026-03-20T07:31:00.037518",
+      "last_checked": "2026-03-24T07:41:00.496516",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"371690fb0d93981d8175a9f749de0448\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/failednomatchingapplicationcontext.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/invalidparameter.json": {
       "hash": "5cec3ae38b6047f1dc8206af413faeefeac3ac78640ae3eb1db470ab87cc0eda",
-      "last_checked": "2026-03-20T07:31:00.141863",
+      "last_checked": "2026-03-24T07:41:00.636080",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"da633a582e07e1289adefd380126acfb\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/invalidparameter.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/scstreamerror/code/init(rawvalue:).json": {
       "hash": "1f1fcdc988053e6c5c7c059693ff7139897ad48a79772b0e4a0d7500e9a3935b",
-      "last_checked": "2026-03-20T07:31:00.252389",
+      "last_checked": "2026-03-24T07:41:00.748844",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"c59e35af8e44f54307401a1c998b75e3\"",
       "file_path": "documentation/ScreenCaptureKit/scstreamerror/code/init-rawvalue.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputconfiguration/availableoutputfiletypes.json": {
       "hash": "3e508d537bbaef321f82f763cc4715269255b680613720458204cc56544f7b1d",
-      "last_checked": "2026-03-20T07:31:00.377818",
+      "last_checked": "2026-03-24T07:41:00.862486",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"551015bba3a2a18fa031b7c715b62c38\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputconfiguration/availableoutputfiletypes.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputconfiguration/availablevideocodectypes.json": {
       "hash": "b1bac588543aef0e3181193536b125406535069c223ea75c024ec778b483d759",
-      "last_checked": "2026-03-20T07:31:00.494389",
+      "last_checked": "2026-03-24T07:41:01.013229",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"63b9b6f37205f1488e668a092f41f82e\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputconfiguration/availablevideocodectypes.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputconfiguration/outputfiletype.json": {
       "hash": "825d82d5a32114fe2b586bed0d066349ce617276b3cb7125df64466b94147ef5",
-      "last_checked": "2026-03-20T07:31:00.613652",
+      "last_checked": "2026-03-24T07:41:01.151349",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"f91e8f41fe50cc68558879c1ce134c7e\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputconfiguration/outputfiletype.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputconfiguration/outputurl.json": {
       "hash": "2e4ab290b98828f0a3e99b8f1c85454f5c2ebfbb2660875c1fc98f69fe88586d",
-      "last_checked": "2026-03-20T07:31:00.728215",
+      "last_checked": "2026-03-24T07:41:01.266765",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"29a8bf4a8ee642e3d6b59fe2d9967f36\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputconfiguration/outputurl.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputconfiguration/videocodectype.json": {
       "hash": "22b435f02039214334de863ea36a1d0ce59a6fd4a890465e8d0c905391313150",
-      "last_checked": "2026-03-20T07:31:00.862037",
+      "last_checked": "2026-03-24T07:41:01.398854",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"33a3cd539f7a03373380f7f73f09ee73\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputconfiguration/videocodectype.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputdelegate/recordingoutput(_:didfailwitherror:).json": {
       "hash": "874f54ce1fb327d37d0ae3a864d590ef82d486197c20f2af289ce9001866a25d",
-      "last_checked": "2026-03-20T07:31:01.001414",
+      "last_checked": "2026-03-24T07:41:01.544951",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"93255a9635a7bb701f90a4895809b202\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputdelegate/recordingoutput-didfailwitherror.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputdelegate/recordingoutputdidfinishrecording(_:).json": {
       "hash": "944e39aa4ae151059defabdbdfaa16eed42621f09ec9c40f0ea8af848d5baf2b",
-      "last_checked": "2026-03-20T07:31:01.120709",
+      "last_checked": "2026-03-24T07:41:01.688461",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"a7ac336a4e7add3bd29c018d64294511\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputdelegate/recordingoutputdidfinishrecording.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screencapturekit/screcordingoutputdelegate/recordingoutputdidstartrecording(_:).json": {
       "hash": "cc1e83cd588ae6b7ee675748770b7a374a126918c3ffca3bd10d7edc0332418b",
-      "last_checked": "2026-03-20T07:31:01.235770",
+      "last_checked": "2026-03-24T07:41:01.812456",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:30:28.126673",
+      "session_id": "2026-03-24T07:40:21.120108",
       "etag": "W/\"22b1b6a0c9d8d432db7555936d08957a\"",
       "file_path": "documentation/ScreenCaptureKit/screcordingoutputdelegate/recordingoutputdidstartrecording.md"
     },

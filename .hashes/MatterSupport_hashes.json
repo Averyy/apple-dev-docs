@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:23.430437",
+    "last_updated": "2026-03-24T07:43:19.509523",
     "total_pages": 136,
-    "session_id": "2026-03-20T07:32:17.165986"
+    "session_id": "2026-03-24T07:43:07.025621"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MatterSupport.json": {
       "hash": "73bf641b9abd0f5b6b366f2ff20ab30b7c66c887ed7fb6c147978f01551843a7",
-      "last_checked": "2026-03-20T07:32:17.457675",
+      "last_checked": "2026-03-24T07:43:07.307765",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"842d8be74353e8e4bd3f311ed5c0d562\"",
       "file_path": "documentation/MatterSupport/MatterSupport.md"
     },
     "https://developer.apple.com/documentation/MatterSupport": {
       "hash": "73bf641b9abd0f5b6b366f2ff20ab30b7c66c887ed7fb6c147978f01551843a7",
-      "last_checked": "2026-03-20T07:32:17.348520",
+      "last_checked": "2026-03-24T07:43:07.188304",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"842d8be74353e8e4bd3f311ed5c0d562\"",
       "file_path": "documentation/MatterSupport/MatterSupport.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/adding-matter-support-to-your-ecosystem.json": {
       "hash": "446b9d7b1ed91e7a759b2225853e863094eede6a5041f4a57cfaf134eddc3960",
-      "last_checked": "2026-03-20T07:32:17.701211",
+      "last_checked": "2026-03-24T07:43:07.588771",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"5c9265496aa7e1b87b11cbaddf6742a0\"",
       "file_path": "documentation/MatterSupport/adding-matter-support-to-your-ecosystem.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest.json": {
       "hash": "854cefd966684e01aba4787084bb77b581cc9007e8fc705106130696fe757178",
-      "last_checked": "2026-03-20T07:32:17.811666",
+      "last_checked": "2026-03-24T07:43:07.768460",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"3d097dfd0b45555f709b400a9f1cffad\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler.json": {
       "hash": "7f0542d3a26fef21856b590ec2351c41288830f1e338a84e5f03dbdb9bf24079",
-      "last_checked": "2026-03-20T07:32:17.884006",
+      "last_checked": "2026-03-24T07:43:07.885671",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"9e1dbc22890409acb658a46c72b668b8\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/init(from:).json": {
       "hash": "5f342dd85cece66b0ee99e6eea1004ec42bb0ac45f5a732a45f1774601d98fa6",
-      "last_checked": "2026-03-20T07:32:17.964400",
+      "last_checked": "2026-03-24T07:43:08.040133",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"aa7dc5039db762962d84a2e58615a9a3\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/init-from.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/init(topology:setuppayload:showing:).json": {
       "hash": "910e4aaa12619b51c7b6955a2732d7c7e8e0aab7def8d0a6b3b86914bacc7dce",
-      "last_checked": "2026-03-20T07:32:18.048689",
+      "last_checked": "2026-03-24T07:43:08.166398",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"5aba9c0045ad02a96b84ca057720e913\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/init-topologysetuppayloadshowing.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/init(topology:setuppayload:showing:shouldscannetworks:).json": {
       "hash": "6118406ece8348bf5edfc0956ecdc054e4ae339f16c535fcc66e10873c040644",
-      "last_checked": "2026-03-20T07:32:18.135886",
+      "last_checked": "2026-03-24T07:43:08.487489",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"045a9a932b7298e7bc70d765afd122eb\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/init-topologysetuppayloadshowingshouldscannetworks.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/home.json": {
       "hash": "66c50c4ce76bacc903e0a1cb0214e73a45dfb1dbd161045f1d32db83d5fb5acb",
-      "last_checked": "2026-03-20T07:32:18.203682",
+      "last_checked": "2026-03-24T07:43:08.619926",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"20740439ce7797a145971e8d68b89013\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/home.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/room.json": {
       "hash": "65979dd0807c14f9d463e265ff265bae849c59014ad8315875373a931bb973c1",
-      "last_checked": "2026-03-20T07:32:18.302851",
+      "last_checked": "2026-03-24T07:43:08.906922",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"1578e6d79d695cbff312ad0069af5f3c\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/room.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct.json": {
       "hash": "639f2f1455243e727f6ae638b898de4ee318461d832669d81d536d5761896414",
-      "last_checked": "2026-03-20T07:32:18.381874",
+      "last_checked": "2026-03-24T07:43:09.060900",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"de39f49eebc55629f804b32311ada646\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swiftstruct.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/setuppayload.json": {
       "hash": "1a99246f332c3ec1014a03a2cfbe104a990c222a8339f89357608ed3d5c82fa2",
-      "last_checked": "2026-03-20T07:32:18.444477",
+      "last_checked": "2026-03-24T07:43:09.170371",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"439f1bfaa4fc61bd5c545adc4a8f514c\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/setuppayload.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.property.json": {
       "hash": "17393a5cdddda92e34a1e65ddf8a1ea5fc02e3e198ba521101934bd078a5a3ea",
-      "last_checked": "2026-03-20T07:32:18.539278",
+      "last_checked": "2026-03-24T07:43:09.473664",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"bb6ddec6f48df082fcd22357f4a2fd30\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swiftproperty.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria.json": {
       "hash": "9788013ff00473d372ca58cc13b7073bf60787be9a08311ffdb9cb670648f527",
-      "last_checked": "2026-03-20T07:32:18.614696",
+      "last_checked": "2026-03-24T07:43:09.652334",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"60f9d07bcdeceb299a71293177eba551\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/showdevicecriteria.json": {
       "hash": "225a4e7d280350da1c1f701e469949bbfb9d5eb4cb48eedabfbfa7736e2c2426",
-      "last_checked": "2026-03-20T07:32:18.685337",
+      "last_checked": "2026-03-24T07:43:09.956475",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"c79e532d8381c9e7c016357c0514ebeb\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/showdevicecriteria.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/shouldscannetworks.json": {
       "hash": "f9ff2696687e0b62cc6bb5463d954dc5bca3262d21b9fb6bb3f0a865da2ec5e9",
-      "last_checked": "2026-03-20T07:32:18.928999",
+      "last_checked": "2026-03-24T07:43:10.136591",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"9f99929462d15564a2eeb380b5afad87\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/shouldscannetworks.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/perform().json": {
       "hash": "84c745dc9035873ba02a471da2fef125ffde8e4fed1aad549d69ad0c0760cb92",
-      "last_checked": "2026-03-20T07:32:18.994474",
+      "last_checked": "2026-03-24T07:43:10.429859",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"5d20e8422f24fd91841981f1ce54c998\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/perform.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/issupported.json": {
       "hash": "08873ae99a6df7d55362e82d683926cd0406dc8fd0234387be540fa5b730c4be",
-      "last_checked": "2026-03-20T07:32:19.085997",
+      "last_checked": "2026-03-24T07:43:10.736032",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"af3f3d1ac1ea075f0e8356866cf95c59\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/issupported.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/decodable-implementations.json": {
       "hash": "272cfa3090aba7d9461c34bb69e3c1dbc6d702ad7c0f2d8178c63604a1c02f44",
-      "last_checked": "2026-03-20T07:32:19.144108",
+      "last_checked": "2026-03-24T07:43:10.870090",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"d0c21e0f2521e38c5b8ba7896e2c2aef\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/decodable-implementations.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/init().json": {
       "hash": "07904228ecc7bf0d72fdb7613b2fd32d4a4c85536fbb3c99bfd87f55947aa65b",
-      "last_checked": "2026-03-20T07:32:19.240509",
+      "last_checked": "2026-03-24T07:43:11.011340",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"c51b6060d2a8e3daaa93af03ead6234d\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/init.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/configuredevice(named:in:).json": {
       "hash": "31d0d5c718e3a57fd9f787c70f437a7ecf191a5caf4e95c268103d4e1261c6b3",
-      "last_checked": "2026-03-20T07:32:19.311278",
+      "last_checked": "2026-03-24T07:43:11.153293",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"ab15fc8b729dbfb65aac1cff7ed1ec49\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/configuredevice-namedin.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/validatedevicecredential(_:).json": {
       "hash": "c8b7c9e1bbfcab5db65cc071e01e87687de3330468e005118802423a55c48b3a",
-      "last_checked": "2026-03-20T07:32:19.378215",
+      "last_checked": "2026-03-24T07:43:11.319381",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"f2ff8880c9229bbca3e60b240d1d9df1\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/validatedevicecredential.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential.json": {
       "hash": "c139b6646805388c7946126a1c92184401e813c0e81fc57be0ea76465c9e04bd",
-      "last_checked": "2026-03-20T07:32:19.440687",
+      "last_checked": "2026-03-24T07:43:11.479299",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"bf224f9e55217b43a3512e7e5f5904d0\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/rooms(in:).json": {
       "hash": "903b590b84ab675bd2d07ad698ec3e1bda02ab6e8c49a2e9f782cd8cf672e2ee",
-      "last_checked": "2026-03-20T07:32:19.535731",
+      "last_checked": "2026-03-24T07:43:11.607876",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"6dbf50d8eea49019601bd62583db5ece\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/rooms-in.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/commissiondevice(in:onboardingpayload:commissioningid:).json": {
       "hash": "5864473439ce9d6f2264290ebf63068f7c025e3bac9fe70f909983f36b2a67c1",
-      "last_checked": "2026-03-20T07:32:19.616556",
+      "last_checked": "2026-03-24T07:43:11.781026",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"d3a75b16db969f4e2174c2272c7210f8\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice-inonboardingpayloadcommissioningid.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/selectthreadnetwork(from:).json": {
       "hash": "286c8f4b057eacb14bc6894ac08f30e2d2b584a9d2487c1d80f5b7191791f646",
-      "last_checked": "2026-03-20T07:32:19.745298",
+      "last_checked": "2026-03-24T07:43:11.921951",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"2234b2c037cd00760c1f10ef96e2a5f9\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectthreadnetwork-from.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult.json": {
       "hash": "5174a037a29fb0d0b575f3b10f3e027669b91be98fa1d2a8ad3d1360f6b473e2",
-      "last_checked": "2026-03-20T07:32:19.882559",
+      "last_checked": "2026-03-24T07:43:12.219878",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"43837da156e9b94b276b1ffd4b844443\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation.json": {
       "hash": "d65dca17307d5c8805caad838e632b58aa9d677f44f4a49cc2125e2fd46fa295",
-      "last_checked": "2026-03-20T07:32:20.000430",
+      "last_checked": "2026-03-24T07:43:12.405644",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"8568857efb3f0ddcfbba147f3b985569\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/selectwifinetwork(from:).json": {
       "hash": "c0289542ab7d0436d080ba41e78c09fb916d2eeca1d24694ffbbdee9992a9282",
-      "last_checked": "2026-03-20T07:32:20.079763",
+      "last_checked": "2026-03-24T07:43:12.595780",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"c89459a665e8dce5b37e4d93601891dc\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectwifinetwork-from.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult.json": {
       "hash": "b97d8ad838ae98dc800e7270ce25dff47f05491d4b07cc145a3b7f74c13fb4e2",
-      "last_checked": "2026-03-20T07:32:20.145584",
+      "last_checked": "2026-03-24T07:43:12.765787",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"03b4571e6e9457cb0452c95806b4a67c\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation.json": {
       "hash": "f1cfd8f9b87e9e3c5ab7dd061775bf88c673b98271b7f4675072038b226e3f7c",
-      "last_checked": "2026-03-20T07:32:20.214016",
+      "last_checked": "2026-03-24T07:43:12.899391",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"64a11ec8e191101f0a5da826bd69ce69\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/home/init(displayname:).json": {
       "hash": "eb021ad20456a354af7157c2a1b1b670e711e88f4fd3ca07e18b7834e1320376",
-      "last_checked": "2026-03-20T07:32:20.275057",
+      "last_checked": "2026-03-24T07:43:13.019493",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"2ed2e18d6ad188aa858fe1ccb38a24cb\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/home/init-displayname.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/home/displayname.json": {
       "hash": "f1525d858c83aab3900567cf5cf899c0eb9f53560b14cb1b40d704259b5ea886",
-      "last_checked": "2026-03-20T07:32:20.343856",
+      "last_checked": "2026-03-24T07:43:13.202231",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"dc62aea271673951fd4a5695615a1b70\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/home/displayname.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/room/init(displayname:).json": {
       "hash": "f924281666dd6c494e821395d05a515bd2d1368efbe618d8586e7293897d4432",
-      "last_checked": "2026-03-20T07:32:20.409919",
+      "last_checked": "2026-03-24T07:43:13.361919",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"1c55c9e786deaac93a238d0397fbca68\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/room/init-displayname.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/room/displayname.json": {
       "hash": "ffbe4e8f803c789857394a36430ce07a0d07f9eba58bc962773826b2832c208a",
-      "last_checked": "2026-03-20T07:32:20.525158",
+      "last_checked": "2026-03-24T07:43:13.531160",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"102341898d59e58272011643aaa09571\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/room/displayname.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/init(ecosystemname:homes:).json": {
       "hash": "3096370aef14d13b16af6fcd2aa7339ad5f5b2e6100153339d63971f1c3b81bf",
-      "last_checked": "2026-03-20T07:32:20.595264",
+      "last_checked": "2026-03-24T07:43:13.841126",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"fbb087e8090194b8a30e373a8644a36c\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/init-ecosystemnamehomes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/ecosystemname.json": {
       "hash": "21077b3d137ac229c20e80686990f6171b0bc7c1bf3625497ee6ef67bef73361",
-      "last_checked": "2026-03-20T07:32:20.660743",
+      "last_checked": "2026-03-24T07:43:14.007787",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"014221916bf78213977156339c5e1fa3\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/ecosystemname.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/homes.json": {
       "hash": "d34eb5605e7755d817e51624a7a31a724ec7abe4c0b547f7bc84bbca32914300",
-      "last_checked": "2026-03-20T07:32:20.730490",
+      "last_checked": "2026-03-24T07:43:14.177075",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"2bb6003d1ac0c69e7ee864a79ca9a163\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/homes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/alldevices.json": {
       "hash": "112f2bf8f6102ea0d193a76e55be5e1b3070180365994ec6d63eb27dfe352b8c",
-      "last_checked": "2026-03-20T07:32:20.829171",
+      "last_checked": "2026-03-24T07:43:14.477416",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"626112d1b7f9686f23811857c9bc8369\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/alldevices.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/all(_:).json": {
       "hash": "a1f5206f063a988279873a1ede74ea4be95861c60a1c29807af2a35e0d85bd43",
-      "last_checked": "2026-03-20T07:32:20.925179",
+      "last_checked": "2026-03-24T07:43:14.682442",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"097d6a45ba142b39ba82ba98b63a3195\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/all.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/any(_:).json": {
       "hash": "cda883a7bc83f23a550ed060cfff29040fb27788626a892dec45d40169186121",
-      "last_checked": "2026-03-20T07:32:20.988256",
+      "last_checked": "2026-03-24T07:43:14.859925",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"b10d6e39dcfa113e7dc457ef3cb94570\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/any.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/commissioningid(_:).json": {
       "hash": "0fb50311ca8ab9455c27b963c98a28c5c57c426fa886931699e3d093b904bc10",
-      "last_checked": "2026-03-20T07:32:21.135205",
+      "last_checked": "2026-03-24T07:43:15.000104",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"9bc61c2cf90fc91c4bd7b0ae8b1c67d4\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/commissioningid.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/fabricnode(rootpublickey:nodeid:).json": {
       "hash": "7631f3046b97c0eb3ddc21e6d692de9c034b6571b9a20f4db6cda3dbb2b5427a",
-      "last_checked": "2026-03-20T07:32:21.204316",
+      "last_checked": "2026-03-24T07:43:15.204958",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"14ebb58f1f7449a5286f922068b0f440\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/fabricnode-rootpublickeynodeid.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/not(_:).json": {
       "hash": "9452e74261888ae6dc1e63a44af176d6a2a79cc0b2e76f16250745a4f791a3dc",
-      "last_checked": "2026-03-20T07:32:21.298789",
+      "last_checked": "2026-03-24T07:43:15.406585",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"4642c5613857b877966f411a86b7ea7e\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/not.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/productid(_:).json": {
       "hash": "1d74de612f25b5a23082e8fcb4db054021cc5c3772f5eefeb05d6a97492a24f7",
-      "last_checked": "2026-03-20T07:32:21.386475",
+      "last_checked": "2026-03-24T07:43:15.536218",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"32e85d114882c26a5811bd6d0d788373\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/productid.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/serialnumber(_:).json": {
       "hash": "c9afb973ad7537433d01a771cbc5ba2469d8193b159e101a1bea20e08328b1d2",
-      "last_checked": "2026-03-20T07:32:21.459289",
+      "last_checked": "2026-03-24T07:43:15.718009",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"602463119c6b9c9ad509528559225df4\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/serialnumber.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/vendorid(_:).json": {
       "hash": "b0567b1095138be984203c64b9b25ed7a91f53584846bdd3e043f88d3cd2e142",
-      "last_checked": "2026-03-20T07:32:21.569969",
+      "last_checked": "2026-03-24T07:43:15.914774",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"368af1825076e63666a924e32bdcbf11\"",
       "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/vendorid.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/init(certificationdeclaration:deviceattestationcertificate:productattestationintermediatecertificate:).json": {
       "hash": "f6a28f628ff1661d891b649f5f351dbca447308f917ebb8ef59b89629d311db7",
-      "last_checked": "2026-03-20T07:32:21.636353",
+      "last_checked": "2026-03-24T07:43:16.214298",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"c1ba07c260aaa93015622f5a95a8958b\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/init-certificationdeclarationdeviceattestationcertificateproductattestationintermediatecertificate.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/certificationdeclaration.json": {
       "hash": "a5089d0a0a4968efe13a25eeb3cfc290b056af7850497cf26f3cd8e382a35c10",
-      "last_checked": "2026-03-20T07:32:21.718351",
+      "last_checked": "2026-03-24T07:43:16.338234",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"3c7ef4b6e5dd34570cfebd294b481a6a\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/certificationdeclaration.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/deviceattestationcertificate.json": {
       "hash": "4763aebf68c875677cc303a1bb6b067038b1f18f5066c1d72081017d981936cc",
-      "last_checked": "2026-03-20T07:32:21.833326",
+      "last_checked": "2026-03-24T07:43:16.490411",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"ec62bb9b146ccf0ecc91c98921aa8c7a\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/deviceattestationcertificate.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/productattestationintermediatecertificate.json": {
       "hash": "563ed56c994259fbc0216e53297fb9efd78b8a54af546f6b0aeee20396c79152",
-      "last_checked": "2026-03-20T07:32:21.918901",
+      "last_checked": "2026-03-24T07:43:16.802592",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"8166736fd5df697275962d00605de36d\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/productattestationintermediatecertificate.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/init(networkname:panid:extendedpanid:channel:extendedaddress:rssi:version:linkqualityindicator:).json": {
       "hash": "57377a1f70ae6479a0e37f1e6696c10acb0c5278d83c73791d29e45d461f19cd",
-      "last_checked": "2026-03-20T07:32:21.988360",
+      "last_checked": "2026-03-24T07:43:16.974853",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"68ef8e3f1c88ddf1a0d73c9717218cbd\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/init-networknamepanidextendedpanidchannelextendedaddressrssiversionlinkqualityindicator.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/channel.json": {
       "hash": "3f9099c06d4a40a1372ad594316a32d068403223bc6def5c8dda1b21dab41951",
-      "last_checked": "2026-03-20T07:32:22.052484",
+      "last_checked": "2026-03-24T07:43:17.109497",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"382486923f83687379a47e6b33a05d52\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/channel.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/extendedaddress.json": {
       "hash": "8e4cdaa1abc3ed09b1c3c1ef40d0a28bb9ffc2d16a4952323c859aedc947a007",
-      "last_checked": "2026-03-20T07:32:22.129969",
+      "last_checked": "2026-03-24T07:43:17.244363",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"8b3799021e2bc7c73578fd39f4988886\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/extendedaddress.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/extendedpanid.json": {
       "hash": "28436e2d50c441d15d55c869c0c09aba258c5c4343143c5342d2705f7aeb5696",
-      "last_checked": "2026-03-20T07:32:22.199671",
+      "last_checked": "2026-03-24T07:43:17.390786",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"c1d7f14bce3755f548940b785404ab7f\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/extendedpanid.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/linkqualityindicator.json": {
       "hash": "42e7c7dec8394d03faafb7f2538a3ac9f3ea56dcfb9d84ce069deb987070fdd1",
-      "last_checked": "2026-03-20T07:32:22.320283",
+      "last_checked": "2026-03-24T07:43:17.522645",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"4c197bd1cc08c06d86ded9d36704a908\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/linkqualityindicator.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/networkname.json": {
       "hash": "6fe307347dde1c1df3b59a36b8352f00904533d7d8d1e500b660365f8eacfbbf",
-      "last_checked": "2026-03-20T07:32:22.450161",
+      "last_checked": "2026-03-24T07:43:17.650275",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"cf895b9d7f9efceb3ab4dfd4450ea263\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/networkname.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/panid.json": {
       "hash": "eb028e6b5fddff64d27fb51568123f91139655053f4c35575352bea3691949c4",
-      "last_checked": "2026-03-20T07:32:22.529400",
+      "last_checked": "2026-03-24T07:43:17.833213",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"016e770a6088bac0787b0333da95d374\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/panid.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/rssi.json": {
       "hash": "63735816bbcccea0c7a20ea5bd1e9b8278e9f14a1383706421457699e1d0e5f7",
-      "last_checked": "2026-03-20T07:32:22.594107",
+      "last_checked": "2026-03-24T07:43:17.962657",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"9ce5b0f63c2c23e71b9413552c4ede0d\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/rssi.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/version.json": {
       "hash": "5873c0e1a18aa2bcee1a9d98eeff068e6c319477536d25814d7b2e3d5e044216",
-      "last_checked": "2026-03-20T07:32:22.726457",
+      "last_checked": "2026-03-24T07:43:18.093835",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"6ab758eb6092200bcc036cee99c87c2f\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/version.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/defaultsystemnetwork.json": {
       "hash": "d1477d967540b6177a4d2ef61fe83fbd7ab42c1147fd118a701861c3a494acee",
-      "last_checked": "2026-03-20T07:32:22.797003",
+      "last_checked": "2026-03-24T07:43:18.234703",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"704df0978fbf88632d93c079cc0c5e48\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/defaultsystemnetwork.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network(extendedpanid:).json": {
       "hash": "ba2679c8b4b0afcadaece69e649667a95301da496be72c9074166412315f6632",
-      "last_checked": "2026-03-20T07:32:22.888318",
+      "last_checked": "2026-03-24T07:43:18.420789",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"3a05f17c5750f49cc32c4d31fcd76082\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network-extendedpanid.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/init(ssid:rssi:security:band:).json": {
       "hash": "7c88a094b4e0382b2ba3d687d3c95a5d83d1d9bf177d893bad35b090b0df428e",
-      "last_checked": "2026-03-20T07:32:22.968989",
+      "last_checked": "2026-03-24T07:43:18.541025",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"f6da17a80a39cfc4df2c21a81c5e2960\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/init-ssidrssisecurityband.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/band.json": {
       "hash": "7f3149dcf52ad1aba667b3270f1281f55e1f11cd26433d86f373f191836cd5c3",
-      "last_checked": "2026-03-20T07:32:23.047609",
+      "last_checked": "2026-03-24T07:43:18.686451",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"710b943b213cb3c86da5cbcf82c04984\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/band.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/rssi.json": {
       "hash": "7c5710850ad7c604cce27a278cae14df8ce4174ff91b542472789a2b305d01b9",
-      "last_checked": "2026-03-20T07:32:23.117811",
+      "last_checked": "2026-03-24T07:43:18.864199",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"0f48b00223b078453c52bd39d754cc0b\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/rssi.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/security.json": {
       "hash": "441f8033303ffa9e80595395b5eed3ea4786a28f7ae9c0320eb64aa8b53eaad3",
-      "last_checked": "2026-03-20T07:32:23.192194",
+      "last_checked": "2026-03-24T07:43:19.038772",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"d21c210b23aaacdfd3939144abfdfbd0\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/security.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/ssid.json": {
       "hash": "f003999b0f626995e4363f7809d12c38cbef63e109193ba9490fe89e93e726fe",
-      "last_checked": "2026-03-20T07:32:23.287533",
+      "last_checked": "2026-03-24T07:43:19.194397",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"482f43b4bda85f7ff8522fa07ac39611\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/ssid.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/defaultsystemnetwork.json": {
       "hash": "864910cca8c339f6cb7168f29e89d303d2cff331c21ae402a944bbc7ea5bd450",
-      "last_checked": "2026-03-20T07:32:23.348629",
+      "last_checked": "2026-03-24T07:43:19.347363",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"87cafb31984afded685c4157dde38ffd\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/defaultsystemnetwork.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network(ssid:credentials:).json": {
       "hash": "dbd9d1574bcf250ac440b470418298b2ffa82eeb54ecec3d1f38587ae847e7e4",
-      "last_checked": "2026-03-20T07:32:23.429294",
+      "last_checked": "2026-03-24T07:43:19.504517",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:17.165986",
+      "session_id": "2026-03-24T07:43:07.025621",
       "etag": "W/\"dc4f6d8b860d442ab34ee0bb9ac5e8ac\"",
       "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network-ssidcredentials.md"
     },

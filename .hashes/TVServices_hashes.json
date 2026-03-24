@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:31:51.302907",
+    "last_updated": "2026-03-24T07:42:23.267187",
     "total_pages": 278,
-    "session_id": "2026-03-20T07:31:34.885769"
+    "session_id": "2026-03-24T07:41:57.055094"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/TVServices.json": {
       "hash": "28bebd146e32f97277f326ffa95b6c51720780c9f1db59e9b9b585828033888d",
-      "last_checked": "2026-03-20T07:31:35.212889",
+      "last_checked": "2026-03-24T07:41:57.285341",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"804ee906498ba4a2d4a6890d06546b90\"",
       "file_path": "documentation/TVServices/TVServices.md"
     },
     "https://developer.apple.com/documentation/TVServices": {
       "hash": "28bebd146e32f97277f326ffa95b6c51720780c9f1db59e9b9b585828033888d",
-      "last_checked": "2026-03-20T07:31:35.093134",
+      "last_checked": "2026-03-24T07:41:57.186172",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"804ee906498ba4a2d4a6890d06546b90\"",
       "file_path": "documentation/TVServices/TVServices.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/building-a-full-screen-top-shelf-extension.json": {
       "hash": "584a42b4868fd3d72151d8f1d3988f187f087052132f0c60d5a54533a619c8fa",
-      "last_checked": "2026-03-20T07:31:35.497340",
+      "last_checked": "2026-03-24T07:41:57.495840",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"19fc5d13e2da03fc51e16a83059ffab7\"",
       "file_path": "documentation/TVServices/building-a-full-screen-top-shelf-extension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentprovider.json": {
       "hash": "a2a2d8c326c4418fef3d8714184bbd20654eac8679f27312880f790eef03d6e2",
-      "last_checked": "2026-03-20T07:31:35.571566",
+      "last_checked": "2026-03-24T07:41:57.688942",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"a2a596c18029117ac7d0b44339d97758\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentprovider.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/legacy-extension.json": {
       "hash": "c6b3fbebc6191e8cd3670431688bce7f096847f476b384b30c4720227f5f5535",
-      "last_checked": "2026-03-20T07:31:35.832388",
+      "last_checked": "2026-03-24T07:41:57.804797",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"9c38070c1c2c771e1b3cdec1791238cb\"",
       "file_path": "documentation/TVServices/legacy-extension.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem.json": {
       "hash": "433d71edb38610f6f3c97cf5b7b1fcc0f8263b1bd98f8d1092cb2d6f09fe37c0",
-      "last_checked": "2026-03-20T07:31:35.988392",
+      "last_checked": "2026-03-24T07:41:57.932991",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"8d6592425941d71661fd31f0cfd1f417\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent.json": {
       "hash": "87cb161783db12f433ddc26c691292b2a7ededf574abbe4e1c1af92d438c200c",
-      "last_checked": "2026-03-20T07:31:36.271600",
+      "last_checked": "2026-03-24T07:41:58.042640",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"397331841efa234087c8614af365964e\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem.json": {
       "hash": "1e0f56930f1446542ca02a77996ab4a8157aad2f83be7a59840913ff7872d1af",
-      "last_checked": "2026-03-20T07:31:36.409013",
+      "last_checked": "2026-03-24T07:41:58.196846",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"df44bf1382a2aa36d3f27b160ecb8031\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitemcollection.json": {
       "hash": "0709f6ec218903bc2425218523c97230b797222d730b8b8ad36908e905a60931",
-      "last_checked": "2026-03-20T07:31:36.655279",
+      "last_checked": "2026-03-24T07:41:58.374332",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"391eee1f8f0604603221fca7cce9ead6\"",
       "file_path": "documentation/TVServices/tvtopshelfitemcollection.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectionedcontent.json": {
       "hash": "f42b4896f64f71dab06ba8a22c744d0ffe752ea359a38b89a63a7d32f1a19c6e",
-      "last_checked": "2026-03-20T07:31:36.915151",
+      "last_checked": "2026-03-24T07:41:58.493388",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"9b76c42743e1ca5404380f1b5f7b921b\"",
       "file_path": "documentation/TVServices/tvtopshelfsectionedcontent.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfinsetcontent.json": {
       "hash": "a884430e1d8fa01ad7cf1849b6b0e314587567f4dd7bc2d31fe37b3b588da00b",
-      "last_checked": "2026-03-20T07:31:37.203408",
+      "last_checked": "2026-03-24T07:41:58.620036",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"325c2653a43125cf9f03314ce17bd48f\"",
       "file_path": "documentation/TVServices/tvtopshelfinsetcontent.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/personalizing-your-app-for-each-user-on-apple-tv.json": {
       "hash": "943530db7cd9600170c7dcc35e78c501c1922fd8433ed87a4b01557c0f2d9037",
-      "last_checked": "2026-03-20T07:31:37.294985",
+      "last_checked": "2026-03-24T07:41:58.750672",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1a925ab9d6f25bd618508de73b8f5025\"",
       "file_path": "documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/supporting-multiple-users-in-your-tvos-app.json": {
       "hash": "8e6b07ee844ec715254dc43fe537d132b697301fb93f244d4bc4d7a603af8ef7",
-      "last_checked": "2026-03-20T07:31:37.372893",
+      "last_checked": "2026-03-24T07:41:58.890184",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"42993bdee93c15e9b4d69279d046f4b0\"",
       "file_path": "documentation/TVServices/supporting-multiple-users-in-your-tvos-app.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/mapping-apple-tv-users-to-app-profiles.json": {
       "hash": "41f53243d3cd0b69be390b77222ca1ab27251ab58ed77e991cd025349e8f16ed",
-      "last_checked": "2026-03-20T07:31:37.440980",
+      "last_checked": "2026-03-24T07:41:59.016588",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"12ef879ac4fe25ac99afa22f5e35d2b2\"",
       "file_path": "documentation/TVServices/mapping-apple-tv-users-to-app-profiles.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager.json": {
       "hash": "d5a9036c1049d3e80cb9a42959158e930cf1be87f41ccef453c1211a1c8e0e43",
-      "last_checked": "2026-03-20T07:31:37.698427",
+      "last_checked": "2026-03-24T07:41:59.141266",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"c986223aac651e12de67574b9d69b2d6\"",
       "file_path": "documentation/TVServices/tvusermanager.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/providing-channel-navigation.json": {
       "hash": "47c96ef3b70864d042406fdffcf906172673684d8e73b15bdba39c602fdd1603",
-      "last_checked": "2026-03-20T07:31:37.945873",
+      "last_checked": "2026-03-24T07:41:59.291162",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"2ec03e4df0b3be4664d4ee13283c63a8\"",
       "file_path": "documentation/TVServices/providing-channel-navigation.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvuseractivitytypebrowsingchannelguide.json": {
       "hash": "e249d9430876028bd914ef5232975938b4abcdf8e3616a87ca65ee5a0e3b3c4f",
-      "last_checked": "2026-03-20T07:31:38.064367",
+      "last_checked": "2026-03-24T07:41:59.410904",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d4bcabb9f9b6e97a68a1b6187f0f8700\"",
       "file_path": "documentation/TVServices/tvuseractivitytypebrowsingchannelguide.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem.json": {
       "hash": "ff0739476cf9c3813f118297e86a8e322bca1c62d7a16680fe578af062d97472",
-      "last_checked": "2026-03-20T07:31:38.181621",
+      "last_checked": "2026-03-24T07:41:59.547530",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"314d0fc0fc6ac1636a2f9b57f2cfad6b\"",
       "file_path": "documentation/TVServices/tvtopshelfitem.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfaction.json": {
       "hash": "118894aa33883c4f6901b2c11f2f501e33a533d9be646b67de17ae50ccdd110f",
-      "last_checked": "2026-03-20T07:31:38.429439",
+      "last_checked": "2026-03-24T07:41:59.683876",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"248ee36b3511cf4d9d34aa6c49897be1\"",
       "file_path": "documentation/TVServices/tvtopshelfaction.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontent.json": {
       "hash": "8ff4386fa984a203f5a6dda420c91d117463452832558c293004ac09828d8173",
-      "last_checked": "2026-03-20T07:31:38.510886",
+      "last_checked": "2026-03-24T07:41:59.819814",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"4e4cf55242178f92be8bb3f1fc2f191e\"",
       "file_path": "documentation/TVServices/tvtopshelfcontent.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfobject.json": {
       "hash": "5f8ae80cab94ae201e97e263991724e6cbd3207c6fa3f5b29b5ecf039168ca7b",
-      "last_checked": "2026-03-20T07:31:38.762826",
+      "last_checked": "2026-03-24T07:41:59.973638",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"adce18d1d325d1134ae38ede022709e0\"",
       "file_path": "documentation/TVServices/tvtopshelfobject.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvuseractivitytypebrowsingentertainmentcontent.json": {
       "hash": "24c28b258f664eb30bd9531e166d7a14df993fd615bb6b325b4e79857da00efa",
-      "last_checked": "2026-03-20T07:31:38.996659",
+      "last_checked": "2026-03-24T07:42:00.096336",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"2c689245c47f3e146369a540a54e7f41\"",
       "file_path": "documentation/TVServices/tvuseractivitytypebrowsingentertainmentcontent.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentprovider/loadtopshelfcontent(completionhandler:).json": {
       "hash": "fe58ea7aa992dd5737ad934a5852aa13195536b5a5846ef4a26ddbc856bb2ffa",
-      "last_checked": "2026-03-20T07:31:39.107899",
+      "last_checked": "2026-03-24T07:42:00.225581",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"abd81dce8cf3dd5cfa9bfbeef676fe54\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentprovider/loadtopshelfcontent-completionhandler.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentprovider/topshelfcontentdidchange().json": {
       "hash": "9d4d40e27cc451d956a61dfacfa6411ed2b3ccd0107ae801a46876c7070d2252",
-      "last_checked": "2026-03-20T07:31:39.222860",
+      "last_checked": "2026-03-24T07:42:00.354594",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1f0bd3d16c0ea78ec278d2b5d56cae51\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentprovider/topshelfcontentdidchange.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfprovider.json": {
       "hash": "67c3d3c29602ec7e91ad39a7eda1673005e1bf3f4f36d5e33d20420c66f919cb",
-      "last_checked": "2026-03-20T07:31:39.293539",
+      "last_checked": "2026-03-24T07:42:00.533757",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"56e36b8e51d0163f87a6a777edd1063a\"",
       "file_path": "documentation/TVServices/tvtopshelfprovider.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem.json": {
       "hash": "579cedc5780c012a24832fdde5ce34b0f7b619e1987631b976e7a4a9e56963f8",
-      "last_checked": "2026-03-20T07:31:39.395426",
+      "last_checked": "2026-03-24T07:42:00.674688",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"81c6674769ce91f28d28f22862b37a20\"",
       "file_path": "documentation/TVServices/tvcontentitem.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentidentifier.json": {
       "hash": "b03dfc403bddb8a0b3b9a7eae78732427ae3f5f30d403e69e329d2e77d8df758",
-      "last_checked": "2026-03-20T07:31:39.518009",
+      "last_checked": "2026-03-24T07:42:00.790723",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1343cc8c408a2de8414b1003b1a6938d\"",
       "file_path": "documentation/TVServices/tvcontentidentifier.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfimagesize(shape:style:).json": {
       "hash": "5991fec128cc1c7de333852616f06ce7ea3cbc455d0aa46960371a3cd37085ee",
-      "last_checked": "2026-03-20T07:31:39.637231",
+      "last_checked": "2026-03-24T07:42:00.933419",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"24228f3325af713ba80352461e1d4eb6\"",
       "file_path": "documentation/TVServices/tvtopshelfimagesize-shapestyle.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/contexttitle.json": {
       "hash": "00c66558f51466666eab3f38983fd29e4a3338a960635c6e97b2bc519b4efd5a",
-      "last_checked": "2026-03-20T07:31:39.756924",
+      "last_checked": "2026-03-24T07:42:01.102887",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"59e8392d83700d5fd1dee34e1c33167d\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/contexttitle.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/summary.json": {
       "hash": "3c836e8d6b1768e2133cfda368096dd6700861c496fa7086b073a2026137e5a7",
-      "last_checked": "2026-03-20T07:31:39.825990",
+      "last_checked": "2026-03-24T07:42:01.231627",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"f70901e26e29914fe270d9a0a6067a10\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/summary.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/genre.json": {
       "hash": "be25f0f3cb06d1f1610909afb6e0987fdfa9e2d54d37e47a5e563f834a2b3b21",
-      "last_checked": "2026-03-20T07:31:39.920396",
+      "last_checked": "2026-03-24T07:42:01.360847",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1e69aeeac394e50b85249f47e6369ca2\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/genre.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/duration.json": {
       "hash": "c0ee660a522011d74eb0ca4b30ec5725805b55a1cbb8d4f7dc7e4e3fb2e46219",
-      "last_checked": "2026-03-20T07:31:40.030070",
+      "last_checked": "2026-03-24T07:42:01.492096",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"959a5e0b3a9781b3aa9640099232a45a\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/duration.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/creationdate.json": {
       "hash": "b6047f4c1e268a87b3445378005cb55449cedd3a714d7e6bd8700203009dcf0c",
-      "last_checked": "2026-03-20T07:31:40.150727",
+      "last_checked": "2026-03-24T07:42:01.626781",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"5acaa14a5d0359a1a5b8b1fed0aa001c\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/creationdate.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/cinemagraphurl.json": {
       "hash": "5e1eee28460ccd83a4585232866f0bf658c0138981387ee0b3c20f7de36e4689",
-      "last_checked": "2026-03-20T07:31:40.264257",
+      "last_checked": "2026-03-24T07:42:01.759360",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"c429f9ac7d514d4709534312a45ea7e0\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/cinemagraphurl.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/previewvideourl.json": {
       "hash": "47d10ff3bbe376c451968217c9655551760473fd52d1b05c440d2f928b443101",
-      "last_checked": "2026-03-20T07:31:40.338485",
+      "last_checked": "2026-03-24T07:42:01.899084",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"23ca3611cef37bee27c8fad683026418\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/previewvideourl.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.property.json": {
       "hash": "8066ba36d93e964106ab5ce3756602ab60f0dff35d49d06f7f232bd4cf06ba88",
-      "last_checked": "2026-03-20T07:31:40.463762",
+      "last_checked": "2026-03-24T07:42:02.042834",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"13abd60bebf822d22d511df83462ad01\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swiftproperty.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct.json": {
       "hash": "39c93dd25d2d362d5f2d6859dd3d40dc01e972d3e8bed1c64850e10b2fc32c10",
-      "last_checked": "2026-03-20T07:31:40.582454",
+      "last_checked": "2026-03-24T07:42:02.206342",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"6a54ea91db97d5dd72bf3c3f607605b4\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swiftstruct.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/namedattributes.json": {
       "hash": "4832de178df2ac4d6711fea9b68b4bfe2cafaab57ab7be3ba54ceab10a621e91",
-      "last_checked": "2026-03-20T07:31:40.823035",
+      "last_checked": "2026-03-24T07:42:02.328991",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"dbe17cda813208674e789c50ce4971c9\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/namedattributes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfnamedattribute.json": {
       "hash": "9311c650ec672a44bd25e70afbce8e7d068b0b73dc770e3ab550fda0038874b3",
-      "last_checked": "2026-03-20T07:31:40.959529",
+      "last_checked": "2026-03-24T07:42:02.624756",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"fc63883aee99d9d4db78504c659f8453\"",
       "file_path": "documentation/TVServices/tvtopshelfnamedattribute.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/init(style:items:).json": {
       "hash": "d276fa353586d17c351992768bf51b4da53e148bd654cec356cd60e1994c8036",
-      "last_checked": "2026-03-20T07:31:41.073077",
+      "last_checked": "2026-03-24T07:42:02.916023",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"96eeed2a20628fdbc1b76f9b12ddd01a\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/init-styleitems.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/items.json": {
       "hash": "7a73411b6bb41ef6dfa140d377d845e26c73c514b4f4285eb67302d75f1edc17",
-      "last_checked": "2026-03-20T07:31:41.190663",
+      "last_checked": "2026-03-24T07:42:03.212632",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"84b1a2d3337a504baa03fcc7eef0e55f\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/items.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/style-swift.property.json": {
       "hash": "3be34ff815311caf6032de318387bdd069b9462f781380ff5216cc35c76a0305",
-      "last_checked": "2026-03-20T07:31:41.286182",
+      "last_checked": "2026-03-24T07:42:03.524007",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"104e380207c878bef5fe674fb7a69946\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/style-swiftproperty.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/style-swift.enum.json": {
       "hash": "c7ca97a6d1697b1e0102c787cc59caa35192befc439531db6bb1afb16d836c5b",
-      "last_checked": "2026-03-20T07:31:41.542251",
+      "last_checked": "2026-03-24T07:42:03.825531",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"fe345488c15d785ed8fbcaa9ae6e921c\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/style-swiftenum.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/imageshape-swift.property.json": {
       "hash": "8900e5d18f9398c176cf9281745e35b7214f00ce04471ffb28d1b4381738f553",
-      "last_checked": "2026-03-20T07:31:41.644185",
+      "last_checked": "2026-03-24T07:42:03.994028",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"8ed1f320a11767e97515513dcb75aac6\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/imageshape-swiftproperty.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/imageshape-swift.enum.json": {
       "hash": "d508b688b0df6f6161bd4f559affa7d972223e42e0d637b64750ba69b517fec3",
-      "last_checked": "2026-03-20T07:31:41.758309",
+      "last_checked": "2026-03-24T07:42:04.298521",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"9546d77827c4c7266f6a8a1e71a19b0f\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/imageshape-swiftenum.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/playbackprogress.json": {
       "hash": "8c35480f50f0eb4da82fe732af580e868daf26db4db749a66f9e8e446fecf890",
-      "last_checked": "2026-03-20T07:31:41.904575",
+      "last_checked": "2026-03-24T07:42:04.601911",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e3dab6a9746a652c6ba9b579b2e2473d\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/playbackprogress.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitemcollection/init(items:).json": {
       "hash": "a4de890468e2501d8a34f4757f67f12665427832bf148812af982fa2139dbb16",
-      "last_checked": "2026-03-20T07:31:42.021778",
+      "last_checked": "2026-03-24T07:42:04.772261",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"a105e443535bea8171740da85f2f246b\"",
       "file_path": "documentation/TVServices/tvtopshelfitemcollection/init-items.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitemcollection/items.json": {
       "hash": "5d0d5fd15e744c0777011f60f9ed3c13ad68101f7972238a2af0244d59206917",
-      "last_checked": "2026-03-20T07:31:42.096981",
+      "last_checked": "2026-03-24T07:42:04.924765",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"b2426a39d4cf3d3ad12ad9e166cba897\"",
       "file_path": "documentation/TVServices/tvtopshelfitemcollection/items.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectionedcontent/init(sections:).json": {
       "hash": "c81e0f6e1980d027783b6cf3778df73f814b86cc06c6219e9deedb1fdd11cd19",
-      "last_checked": "2026-03-20T07:31:42.163655",
+      "last_checked": "2026-03-24T07:42:05.240379",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"6dccfb940aa31529644488d7d4cc8861\"",
       "file_path": "documentation/TVServices/tvtopshelfsectionedcontent/init-sections.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectionedcontent/sections.json": {
       "hash": "76250f83533d6abb09a21e70e20cc88a556dca347cd5f050cc6fec9173a3305c",
-      "last_checked": "2026-03-20T07:31:42.275234",
+      "last_checked": "2026-03-24T07:42:05.543310",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"541ddb42bf9e5c6a947aad5aceaa614e\"",
       "file_path": "documentation/TVServices/tvtopshelfsectionedcontent/sections.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectionedcontent/imagesize(for:).json": {
       "hash": "91acb6e6fd67bdc7fff2da56df1732c8779a9b4b900fd824e6eb05d035757229",
-      "last_checked": "2026-03-20T07:31:42.340839",
+      "last_checked": "2026-03-24T07:42:05.832084",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"6c5f1f63044c91531bd49e755b9d3f13\"",
       "file_path": "documentation/TVServices/tvtopshelfsectionedcontent/imagesize-for.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfinsetcontent/init(items:).json": {
       "hash": "921cfc53b497ce9335dc3f1a32d786c9297cd340fc301c482ab10dce0dbb6da8",
-      "last_checked": "2026-03-20T07:31:42.407945",
+      "last_checked": "2026-03-24T07:42:06.145131",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1082ddd9bc9fa37905977394caa4ef87\"",
       "file_path": "documentation/TVServices/tvtopshelfinsetcontent/init-items.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfinsetcontent/items.json": {
       "hash": "0ef0c29d15c88bcc8841a5b335fca174bd6456206c8818269cfee0e8885ab762",
-      "last_checked": "2026-03-20T07:31:42.664020",
+      "last_checked": "2026-03-24T07:42:06.439010",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"fa63f08bcc149c9fa73ab9967ca0cd2d\"",
       "file_path": "documentation/TVServices/tvtopshelfinsetcontent/items.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfinsetcontent/imagesize.json": {
       "hash": "48e6877a3e7de0776a0b12e638f4c798bc92dc4e18f13fe0d6445d3b5567bc7a",
-      "last_checked": "2026-03-20T07:31:42.729969",
+      "last_checked": "2026-03-24T07:42:06.630476",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"df10c405b633818dacc523b9257a305f\"",
       "file_path": "documentation/TVServices/tvtopshelfinsetcontent/imagesize.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager/shouldstorepreferencesforcurrentuser.json": {
       "hash": "dd742636accfbb6fc5d5f9365bb32a619e837acf88c526c57b4953dda0009c4e",
-      "last_checked": "2026-03-20T07:31:42.799936",
+      "last_checked": "2026-03-24T07:42:06.924449",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"a9a0a824019e008d75ceebc056f46e18\"",
       "file_path": "documentation/TVServices/tvusermanager/shouldstorepreferencesforcurrentuser.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager/currentuseridentifier.json": {
       "hash": "fed40ac07d342a9d5468e8b2ed17a97450108dc750c9fa0cf8a988a2e627309e",
-      "last_checked": "2026-03-20T07:31:42.873397",
+      "last_checked": "2026-03-24T07:42:07.095123",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d14124de6a8e4b69e3711148d33cb4ff\"",
       "file_path": "documentation/TVServices/tvusermanager/currentuseridentifier.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager/currentuseridentifierdidchangenotification.json": {
       "hash": "785f256c591a9739e88a792b29ac9fe1769d0e4d6cfdcbd1ab9a1a924e474e3c",
-      "last_checked": "2026-03-20T07:31:42.941892",
+      "last_checked": "2026-03-24T07:42:07.301904",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"0616e05bf555d7d412f0810a7051f1e5\"",
       "file_path": "documentation/TVServices/tvusermanager/currentuseridentifierdidchangenotification.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager/presentprofilepreferencepanel(currentsettings:availableprofiles:completion:).json": {
       "hash": "fdc0dbb7bd6bf842fca98746ceb4ce18634af3f0d386dd4a2f51eead9c978159",
-      "last_checked": "2026-03-20T07:31:43.068626",
+      "last_checked": "2026-03-24T07:42:07.631250",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"cc87f574b31913805a21be1b8676bb3a\"",
       "file_path": "documentation/TVServices/tvusermanager/presentprofilepreferencepanel-currentsettingsavailableprofilescompletion.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager/shouldstorepreferenceforcurrentuser(to:completion:).json": {
       "hash": "676e5cc4eb5bc3c86382f684fd02602138adb3099fdcb04da2e4cf650bf6c7e7",
-      "last_checked": "2026-03-20T07:31:43.156655",
+      "last_checked": "2026-03-24T07:42:07.870086",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"455aca4386e5bdecaab747f954004db1\"",
       "file_path": "documentation/TVServices/tvusermanager/shouldstorepreferenceforcurrentuser-tocompletion.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvappprofiledescriptor.json": {
       "hash": "ab825c51bdd3c881698b5aec4d8a3a86a7b4c55a086c2cdc265db3743e7db5d0",
-      "last_checked": "2026-03-20T07:31:43.230284",
+      "last_checked": "2026-03-24T07:42:08.165391",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"5481ffb08bac9d807e2f9b3a1c1152e3\"",
       "file_path": "documentation/TVServices/tvappprofiledescriptor.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvuseridentifier.json": {
       "hash": "aa2ce402d098120531abddd585ff9e76ef3113b37019ddbb6f8657f71d0a5b2f",
-      "last_checked": "2026-03-20T07:31:43.292940",
+      "last_checked": "2026-03-24T07:42:08.344360",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e11490a2d6958a2e81f17552f56c9e56\"",
       "file_path": "documentation/TVServices/tvuseridentifier.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvusermanager/useridentifiersforcurrentprofile.json": {
       "hash": "c8831201ce9ad8343f0eda9dfefdac3bb3be5fb7675ee06fd8de69ed2e057091",
-      "last_checked": "2026-03-20T07:31:43.360372",
+      "last_checked": "2026-03-24T07:42:08.507358",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"061674980313be46cdbd0d116e111f98\"",
       "file_path": "documentation/TVServices/tvusermanager/useridentifiersforcurrentprofile.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/init(identifier:).json": {
       "hash": "1f01ba25a768bab1fc60fa15d2b762760c265c29e9770036dd1e33646c6b3926",
-      "last_checked": "2026-03-20T07:31:43.483248",
+      "last_checked": "2026-03-24T07:42:08.803224",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e070657724be9b0dd08683b2d05bb1c4\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/init-identifier.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/playaction.json": {
       "hash": "06ac39281f9edbe5bf1e0968b2c0ae54ee96cb82498feba81b188a7e6792a4ad",
-      "last_checked": "2026-03-20T07:31:43.555107",
+      "last_checked": "2026-03-24T07:42:08.965355",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"c23f10864f7b72d3ce60adfea4f604fe\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/playaction.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/displayaction.json": {
       "hash": "34b37b0f4fc7f677a7298b356486b5e7b585d16a7ac46a0b6f68cd3e34c61320",
-      "last_checked": "2026-03-20T07:31:43.669379",
+      "last_checked": "2026-03-24T07:42:09.118830",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"bbc8dcaf29f7574aeeb567b186245934\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/displayaction.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/imageurl(for:).json": {
       "hash": "eedb0c84c003c16d6e3a85b1264b8916488b8f75dc5f93e5f5ad73857532b60d",
-      "last_checked": "2026-03-20T07:31:43.732562",
+      "last_checked": "2026-03-24T07:42:09.297766",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e02e82c0c0c10d9c20c65f611cba8980\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/imageurl-for.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/setimageurl(_:for:).json": {
       "hash": "251f874f7a735b3f9c21308fd51330ef4fed0f26e65a5f05c03dfe19ef90b017",
-      "last_checked": "2026-03-20T07:31:43.811628",
+      "last_checked": "2026-03-24T07:42:09.476482",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7fc999ef016bfd3e6df703836b0f35b3\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/setimageurl-for.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/imagetraits.json": {
       "hash": "f606d355ecd432bc98c49641e333c3fa4defbdf534e185dee09b62624ee40e02",
-      "last_checked": "2026-03-20T07:31:43.928063",
+      "last_checked": "2026-03-24T07:42:09.646529",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"3a44556cfec21195a03b415c2b3e36b3\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/imagetraits.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/identifier.json": {
       "hash": "e3fd73ccba0aaa6d4d01d3c255c9ac31d6718acd11dd95d4625dc6af3a54c6d9",
-      "last_checked": "2026-03-20T07:31:43.997501",
+      "last_checked": "2026-03-24T07:42:09.806652",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e2938d993775a4a71548779f2348cbc9\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/identifier.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/expirationdate.json": {
       "hash": "a0a54104c0b780ace592ec899f14328c6539bfb5380a91a67d7b98f80b2339e8",
-      "last_checked": "2026-03-20T07:31:44.137386",
+      "last_checked": "2026-03-24T07:42:10.109105",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"43efa8853f0fd3364f7e416d0934cb96\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/expirationdate.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfaction/init(url:).json": {
       "hash": "18b0e4a6dc2108a358cb88f4a377079ae0dc3c9372c1e46168d7403a6947f5f5",
-      "last_checked": "2026-03-20T07:31:44.204390",
+      "last_checked": "2026-03-24T07:42:10.266557",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"47d8d951b789b5471a218389f6fce36f\"",
       "file_path": "documentation/TVServices/tvtopshelfaction/init-url.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfaction/url.json": {
       "hash": "b37812abd124622ae321ebf6f1c48c7c43f3e8e54691c303770ef4d609ac7695",
-      "last_checked": "2026-03-20T07:31:44.296862",
+      "last_checked": "2026-03-24T07:42:10.442759",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"482ffa43605c31d47bd635346c002607\"",
       "file_path": "documentation/TVServices/tvtopshelfaction/url.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfobject/title.json": {
       "hash": "44bca0d3b1d9c73ef8717e5d168c0d40476921a1dd6469b4fd14e383ef56d39b",
-      "last_checked": "2026-03-20T07:31:44.425844",
+      "last_checked": "2026-03-24T07:42:10.611406",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"a5f87be4cffe0fd21bb046399e529184\"",
       "file_path": "documentation/TVServices/tvtopshelfobject/title.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfprovider/topshelfitems.json": {
       "hash": "7245f302e3d37d6388ac1be49f8032a54007432218ef97331b71deef828766d3",
-      "last_checked": "2026-03-20T07:31:44.489118",
+      "last_checked": "2026-03-24T07:42:10.781876",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"4b510b7ba98016576401b6535b656fec\"",
       "file_path": "documentation/TVServices/tvtopshelfprovider/topshelfitems.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfprovider/topshelfstyle.json": {
       "hash": "15513e9f28682e1596d32a14286b0cc578a0bfc483e239beb4a211821a1ad34b",
-      "last_checked": "2026-03-20T07:31:44.603695",
+      "last_checked": "2026-03-24T07:42:11.124349",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"14c6097e56ca180637a06df68161dcba\"",
       "file_path": "documentation/TVServices/tvtopshelfprovider/topshelfstyle.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentstyle.json": {
       "hash": "64c8b9414de7121d634c152dd6dc7338e8e05f120e3f40b88142ccb3c2566ccf",
-      "last_checked": "2026-03-20T07:31:44.671922",
+      "last_checked": "2026-03-24T07:42:11.288950",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7a4c03fe96f37debf96dcffe43b2ff39\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentstyle.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/init(contentidentifier:).json": {
       "hash": "cf5751757fd07e3e853c15487622f2291f0b7c340e65cfd6a5018a240b158ead",
-      "last_checked": "2026-03-20T07:31:44.742883",
+      "last_checked": "2026-03-24T07:42:11.452131",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7052819226eb3a9c511b99a3f5abcebd\"",
       "file_path": "documentation/TVServices/tvcontentitem/init-contentidentifier.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/init(coder:).json": {
       "hash": "9c2675ba49c655e43edffa1b06e381d37f550dd98735e873b7be502c85571241",
-      "last_checked": "2026-03-20T07:31:44.859259",
+      "last_checked": "2026-03-24T07:42:11.636971",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"580e4733bc4d9fafcaa9c164268eea5f\"",
       "file_path": "documentation/TVServices/tvcontentitem/init-coder.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/contentidentifier.json": {
       "hash": "db3b5e2b6523be3a2f782601a6bbdc1bb77aff6dad88724d9d8388e4ac086b35",
-      "last_checked": "2026-03-20T07:31:44.931306",
+      "last_checked": "2026-03-24T07:42:11.788503",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"ebadcb6b73a7cb5b8c8216bc4842b1cf\"",
       "file_path": "documentation/TVServices/tvcontentitem/contentidentifier.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/badgecount.json": {
       "hash": "e825e6c664cd91e7d3241558424eae45bafb4c20a05f82768f5022ea3545c350",
-      "last_checked": "2026-03-20T07:31:44.991784",
+      "last_checked": "2026-03-24T07:42:12.114589",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"2644e02b111734c0b3048affbc28e2cd\"",
       "file_path": "documentation/TVServices/tvcontentitem/badgecount.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/title.json": {
       "hash": "8f1438c3fea4d68fe1e27155c0f321f512ccb20189c5343a55976a2e77e20331",
-      "last_checked": "2026-03-20T07:31:45.082879",
+      "last_checked": "2026-03-24T07:42:12.289472",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"06505f6635bec39752799a47c39b3431\"",
       "file_path": "documentation/TVServices/tvcontentitem/title.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/topshelfitems.json": {
       "hash": "3aa0d02de85ce0a7b52c1352752ee0d99cfb83a74a0919dd64e63193d6cf128c",
-      "last_checked": "2026-03-20T07:31:45.217178",
+      "last_checked": "2026-03-24T07:42:12.587955",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"13c614d0936f27dfb26fccba636d4b49\"",
       "file_path": "documentation/TVServices/tvcontentitem/topshelfitems.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/imageurl.json": {
       "hash": "12c93720c2d0da952c2b50567b0ee297458932754c3779e2533b74d6425b39dd",
-      "last_checked": "2026-03-20T07:31:45.354813",
+      "last_checked": "2026-03-24T07:42:12.779671",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7d65acbb96e90d7798007311a6a9c103\"",
       "file_path": "documentation/TVServices/tvcontentitem/imageurl.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/imageurl(fortraits:).json": {
       "hash": "0a273655392057a350b3ea8bc9059b2507adb72a659d363ee3b6934e487f631f",
-      "last_checked": "2026-03-20T07:31:45.432721",
+      "last_checked": "2026-03-24T07:42:12.942491",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"9d6df4b5bc2fe351be6cb3f2df27d681\"",
       "file_path": "documentation/TVServices/tvcontentitem/imageurl-fortraits.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/setimageurl(_:fortraits:).json": {
       "hash": "a62987a1fd9b735c61cfc5d73810fc0aff7be1742d38c8fdb1ccada63535aaf7",
-      "last_checked": "2026-03-20T07:31:45.505168",
+      "last_checked": "2026-03-24T07:42:13.105717",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"04b11ec8e9fb2101f0e4457f3b4f66e3\"",
       "file_path": "documentation/TVServices/tvcontentitem/setimageurl-fortraits.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimagetrait.json": {
       "hash": "771e8556afcef510efee119231931c95068062e8ce451e9ad0e155cb8e72702d",
-      "last_checked": "2026-03-20T07:31:45.622934",
+      "last_checked": "2026-03-24T07:42:13.276739",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"41bbd18b35852686a338ad3f3830bd33\"",
       "file_path": "documentation/TVServices/tvcontentitemimagetrait.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/creationdate.json": {
       "hash": "9cd6f3f07e0b070ddb9a03b68692401cad63206f071e5a4dff93c14d9e35ff91",
-      "last_checked": "2026-03-20T07:31:45.735744",
+      "last_checked": "2026-03-24T07:42:13.484073",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"b7375aad2c31a90d5141bd7ecce329d1\"",
       "file_path": "documentation/TVServices/tvcontentitem/creationdate.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/duration.json": {
       "hash": "de2a9fa56c19440ffbb95d8cd9e80e0d56c8ac3fede4397aeb9fcf0cedf5efa9",
-      "last_checked": "2026-03-20T07:31:45.809071",
+      "last_checked": "2026-03-24T07:42:13.653316",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"6ad94e4c2b9fcd8548cea95fec0bb308\"",
       "file_path": "documentation/TVServices/tvcontentitem/duration.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/expirationdate.json": {
       "hash": "29806c8a5f8365602ef7df998012b0ed67d606a7b369f7c3e4e45eb626c24f91",
-      "last_checked": "2026-03-20T07:31:45.920210",
+      "last_checked": "2026-03-24T07:42:13.826954",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"2530e4f82a205ee5d95982e416007222\"",
       "file_path": "documentation/TVServices/tvcontentitem/expirationdate.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/imageshape.json": {
       "hash": "48ac3a1aaa4f904f090d0b75f9f130dbca205e8d966bcf439682cf1f99f8084e",
-      "last_checked": "2026-03-20T07:31:46.039419",
+      "last_checked": "2026-03-24T07:42:14.053375",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"f91c66c4449892e2fee310ba9d61f773\"",
       "file_path": "documentation/TVServices/tvcontentitem/imageshape.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape.json": {
       "hash": "582722a13fd268321e7720abd30e87d5fe0f14860c409899a72ef4e6ada1d5c9",
-      "last_checked": "2026-03-20T07:31:46.190658",
+      "last_checked": "2026-03-24T07:42:14.228480",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"fbcedba8790cc1a19c0c02f44e66866c\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/currentposition.json": {
       "hash": "b9d1bdd41f290002cf3151878f2c35de86dcf8b19fe202bfb11d0189a968c517",
-      "last_checked": "2026-03-20T07:31:46.279310",
+      "last_checked": "2026-03-24T07:42:14.403909",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"8d850c6ec31d7139e614157e995f255b\"",
       "file_path": "documentation/TVServices/tvcontentitem/currentposition.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/hasplayedtoend.json": {
       "hash": "b87f371619180e0bbd9f48bf23cfca0b4ce5e34f7d0b2f9667b422fb65d32553",
-      "last_checked": "2026-03-20T07:31:46.352100",
+      "last_checked": "2026-03-24T07:42:14.584438",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7cacbb4615cb737fe1c3126166b49a55\"",
       "file_path": "documentation/TVServices/tvcontentitem/hasplayedtoend.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/lastaccesseddate.json": {
       "hash": "9134b4ac9436b084d514b0c32d714f92199ba22e1a3f4041a15c2ff035b81151",
-      "last_checked": "2026-03-20T07:31:46.467156",
+      "last_checked": "2026-03-24T07:42:14.747428",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"116ac91adeef8b34cd5bb3bbea9dc19f\"",
       "file_path": "documentation/TVServices/tvcontentitem/lastaccesseddate.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/displayurl.json": {
       "hash": "e368fdb85f7ced2cc1b5f408ab50c27be6da579019a0e5ede3da19aa98148749",
-      "last_checked": "2026-03-20T07:31:46.586960",
+      "last_checked": "2026-03-24T07:42:14.928056",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1607fb3d76ae3ba25710155b97fca551\"",
       "file_path": "documentation/TVServices/tvcontentitem/displayurl.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitem/playurl.json": {
       "hash": "58053f6250449238a3d9cf6832432c47d7df8a1bbdab5754d8beb3b5eb1d73e5",
-      "last_checked": "2026-03-20T07:31:46.698384",
+      "last_checked": "2026-03-24T07:42:15.086348",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e0177acddb57add0ff9539cae9b763b7\"",
       "file_path": "documentation/TVServices/tvcontentitem/playurl.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentidentifier/init(identifier:container:).json": {
       "hash": "68d4af059c67648c520edb53506bce4ae077a3fe77c9b8dd0db924346d563974",
-      "last_checked": "2026-03-20T07:31:46.763732",
+      "last_checked": "2026-03-24T07:42:15.255238",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"102e335b766db4e56170c9dd3be71c88\"",
       "file_path": "documentation/TVServices/tvcontentidentifier/init-identifiercontainer.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentidentifier/init(coder:).json": {
       "hash": "d58ea6783cf1528dda8029add3b19e46c419a46744987bb347811ff1ccc40f2f",
-      "last_checked": "2026-03-20T07:31:46.891045",
+      "last_checked": "2026-03-24T07:42:15.419063",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"3cef9e066fab28c0f4e7a985b2f9c283\"",
       "file_path": "documentation/TVServices/tvcontentidentifier/init-coder.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentidentifier/identifier.json": {
       "hash": "82570c05b1ca12ef413ea316b19b916cfe639d4d5df13621d6ea56e2db6fd97b",
-      "last_checked": "2026-03-20T07:31:47.009726",
+      "last_checked": "2026-03-24T07:42:15.590287",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"be65fd3d2ef6409d79d1c30612601131\"",
       "file_path": "documentation/TVServices/tvcontentidentifier/identifier.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentidentifier/container.json": {
       "hash": "0eaeabd8758aaa18a931ced93ee47d93fe4496b0521a789ac3ecd21b82f3bc57",
-      "last_checked": "2026-03-20T07:31:47.158809",
+      "last_checked": "2026-03-24T07:42:15.965465",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"b582a3c4721a1b789007887f3782250a\"",
       "file_path": "documentation/TVServices/tvcontentidentifier/container.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolutionhd.json": {
       "hash": "2d3a67dd9f51b051663a57adc5a17d5a4b2b47993d19414e5000437e14ee86a4",
-      "last_checked": "2026-03-20T07:31:47.277984",
+      "last_checked": "2026-03-24T07:42:16.137358",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7e6cb2aeb17509689f3e0d38b053a8e1\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolutionhd.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolution4k.json": {
       "hash": "af12c1d5e5bc1cc2215dd242a9b0603863bef45812fa34a371e532c512ee182e",
-      "last_checked": "2026-03-20T07:31:47.532722",
+      "last_checked": "2026-03-24T07:42:16.298305",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1071c440c9a42afc863ce8330bb79ccc\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolution4k.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacehdr.json": {
       "hash": "fcd74056a7b5568d3e1f5454d001cc2ccd85695be3aa6bab142c56439a60f247",
-      "last_checked": "2026-03-20T07:31:47.600881",
+      "last_checked": "2026-03-24T07:42:16.455062",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"8e8658cbb4a9c3da93b90e5224645c1f\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacehdr.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacedolbyvision.json": {
       "hash": "84c66beaab9d91cfdb793588926066bef7b7c671d6246df30147966e1e44c5d1",
-      "last_checked": "2026-03-20T07:31:47.755937",
+      "last_checked": "2026-03-24T07:42:16.611780",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"bbbf9a4e80366b1d700e48c6c8e2bc5f\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacedolbyvision.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodolbyatmos.json": {
       "hash": "6a513a3e5e64145222ac3cb1d990dddb10964a3cbc8db0c26867f1b82b3ffa38",
-      "last_checked": "2026-03-20T07:31:47.868117",
+      "last_checked": "2026-03-24T07:42:16.781509",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"0ed9fd97e493e50d8b38530c175675a0\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodolbyatmos.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionclosedcaptioning.json": {
       "hash": "ee0f658d65fac6e9ee5c292b8b65dade2cf1f67ef3c39168b7205d0251eb4ec1",
-      "last_checked": "2026-03-20T07:31:47.931029",
+      "last_checked": "2026-03-24T07:42:16.957625",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"203f917ce4ffaa0acb20c4cfc68c3459\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionclosedcaptioning.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionsdh.json": {
       "hash": "971d0a4a3636a58da9f9097d7a340aa6a9ee3f5a638b31d141ee726dea115cca",
-      "last_checked": "2026-03-20T07:31:48.069122",
+      "last_checked": "2026-03-24T07:42:17.246339",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1fc419a132b5c6f5f6573218fb97ffff\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionsdh.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodescription.json": {
       "hash": "7f47cf28ba4eb8f8066dc1eb4fdd4c395f8612800151af25ca318b400d3bd564",
-      "last_checked": "2026-03-20T07:31:48.190391",
+      "last_checked": "2026-03-24T07:42:17.408750",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"312cb1eaa69316eedc81392bfce9573c\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodescription.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselitem/mediaoptions-swift.struct/init(rawvalue:).json": {
       "hash": "f61b310e4a4dc81682249306a5f01af7562616e0ae51b74dac4f43f86aa6c4da",
-      "last_checked": "2026-03-20T07:31:48.261578",
+      "last_checked": "2026-03-24T07:42:17.579285",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1ff1b9b94c17dd75716b597b72a806ae\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselitem/mediaoptions-swift.struct/init-rawvalue.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfnamedattribute/init(name:values:).json": {
       "hash": "161500b209b3bacdc77f507298e82c313a1031600c54f269e67dd83d67452b58",
-      "last_checked": "2026-03-20T07:31:48.327798",
+      "last_checked": "2026-03-24T07:42:17.858855",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d5eeb2bedd1a4e7494315753a8406d17\"",
       "file_path": "documentation/TVServices/tvtopshelfnamedattribute/init-namevalues.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfnamedattribute/name.json": {
       "hash": "6b7655ce173e1a8255053b33f0b3394fca589761628cff28433839551b592140",
-      "last_checked": "2026-03-20T07:31:48.409367",
+      "last_checked": "2026-03-24T07:42:18.023763",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e9c6bb73136aad7d6b829699ec91eeaa\"",
       "file_path": "documentation/TVServices/tvtopshelfnamedattribute/name.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfnamedattribute/values.json": {
       "hash": "5d9e14d79d60227ef5f4dc40d49c6d5782ad5e0dc32875c6e32349cca112e1a4",
-      "last_checked": "2026-03-20T07:31:48.478788",
+      "last_checked": "2026-03-24T07:42:18.182280",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e6a0d489186e07ef106808787b7376fe\"",
       "file_path": "documentation/TVServices/tvtopshelfnamedattribute/values.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/style-swift.enum/actions.json": {
       "hash": "bbb1b837718b1cfbf9cfc6ac4a09c6ee2a4d83acc323edce91cd638c1e6a3b5b",
-      "last_checked": "2026-03-20T07:31:48.595235",
+      "last_checked": "2026-03-24T07:42:18.354300",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"293d3b07cb5a19f9412449bbe8461bf2\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/style-swift.enum/actions.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/style-swift.enum/details.json": {
       "hash": "5e729f7dcdce9727287976c84332f5df042bba9c91dcc381ff9cde9712e02962",
-      "last_checked": "2026-03-20T07:31:48.663410",
+      "last_checked": "2026-03-24T07:42:18.517718",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"37966f740cb20543251322ba0eb09117\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/style-swift.enum/details.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcarouselcontent/style-swift.enum/init(rawvalue:).json": {
       "hash": "d1c8cd8319c757afd5ead3f229e99307e25da8a7aced8cf72bb4a7774111273f",
-      "last_checked": "2026-03-20T07:31:48.743304",
+      "last_checked": "2026-03-24T07:42:18.678219",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"242f8b4558d54776cb680a23a4a7af86\"",
       "file_path": "documentation/TVServices/tvtopshelfcarouselcontent/style-swift.enum/init-rawvalue.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/imageshape-swift.enum/square.json": {
       "hash": "0acd34cbbc3f337a43c29eda57d1568a0ecae0c495e2b419e390566c22a15aaf",
-      "last_checked": "2026-03-20T07:31:48.863801",
+      "last_checked": "2026-03-24T07:42:18.851848",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"eb141bf3c8f4d6d73953cd30598498e5\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/imageshape-swift.enum/square.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/imageshape-swift.enum/poster.json": {
       "hash": "a217e7d1c91462758f794abe2f1819a1c54a791a53af78b74609f99e8b460792",
-      "last_checked": "2026-03-20T07:31:48.980338",
+      "last_checked": "2026-03-24T07:42:19.024463",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"389d3ca3227d2bffdcc3bf45a98f281c\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/imageshape-swift.enum/poster.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/imageshape-swift.enum/hdtv.json": {
       "hash": "6464f14767854af0d986b14b3be60006743f5cb7f73c8dad4681603d82ae5513",
-      "last_checked": "2026-03-20T07:31:49.048297",
+      "last_checked": "2026-03-24T07:42:19.196391",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"5ed5227634062b9036e1379910cb2092\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/imageshape-swift.enum/hdtv.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfsectioneditem/imageshape-swift.enum/init(rawvalue:).json": {
       "hash": "3d19c411114eab3dc9c6c1d644aaac1d123f60ff0598d2f21433b492d19a60bc",
-      "last_checked": "2026-03-20T07:31:49.172863",
+      "last_checked": "2026-03-24T07:42:19.476802",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"a61651649e1367a4257201996e94a73e\"",
       "file_path": "documentation/TVServices/tvtopshelfsectioneditem/imageshape-swift.enum/init-rawvalue.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvappprofiledescriptor/init(name:).json": {
       "hash": "b3bb5ffb61ac101663361a389220fc72c5f88ec60481df37d7273401f680620d",
-      "last_checked": "2026-03-20T07:31:49.285256",
+      "last_checked": "2026-03-24T07:42:19.646057",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"9337d29c7c1172aa33c65760dd68bd61\"",
       "file_path": "documentation/TVServices/tvappprofiledescriptor/init-name.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvappprofiledescriptor/name.json": {
       "hash": "84a7ae28ebc585357860c529f410e71e3369d21309d7cf71b0356d5a079671e9",
-      "last_checked": "2026-03-20T07:31:49.401270",
+      "last_checked": "2026-03-24T07:42:19.883791",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"f01c0c409b2fb58f43a637baf8038c69\"",
       "file_path": "documentation/TVServices/tvappprofiledescriptor/name.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/imagetraits/screenscale1x.json": {
       "hash": "e320ede8b555a4e67d18f7b60e1fe012a339314a226410c0518164ad1858359e",
-      "last_checked": "2026-03-20T07:31:49.522661",
+      "last_checked": "2026-03-24T07:42:20.044309",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"36634afd67df61586bebe214e5a521fb\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/imagetraits/screenscale1x.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/imagetraits/screenscale2x.json": {
       "hash": "ce4bcff334f2dfd54cbcc589d101bdd2dfb604e716f6d070f4d2a8575be926c3",
-      "last_checked": "2026-03-20T07:31:49.597981",
+      "last_checked": "2026-03-24T07:42:20.354443",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d6d2f67f5ce13923d2ae7914b12f8e12\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/imagetraits/screenscale2x.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfitem/imagetraits/init(rawvalue:).json": {
       "hash": "74cd5a2047f588f9ed7d611fc2306cfdc0ca6f7e74e1b6a3d83cf5bafb1e1248",
-      "last_checked": "2026-03-20T07:31:49.660725",
+      "last_checked": "2026-03-24T07:42:20.517418",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"0bb5c8348a719b2b89428f7f6da6ebca\"",
       "file_path": "documentation/TVServices/tvtopshelfitem/imagetraits/init-rawvalue.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentstyle/inset.json": {
       "hash": "f0f412b8c4adc3ee4aa450117c32e5329be5c7462d3696a170850021b67b9c06",
-      "last_checked": "2026-03-20T07:31:49.809439",
+      "last_checked": "2026-03-24T07:42:20.683139",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"2229e1998e0d1675e35de0b5a0cef838\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentstyle/inset.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentstyle/sectioned.json": {
       "hash": "b739684fab8eaca1887c7c2cb5614844b759a438fa61942d0d66ee99893ea74b",
-      "last_checked": "2026-03-20T07:31:49.871831",
+      "last_checked": "2026-03-24T07:42:20.892684",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d9f411b2d83313c340e42c8a6e4c5034\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentstyle/sectioned.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvtopshelfcontentstyle/init(rawvalue:).json": {
       "hash": "427b90b9ab468152a220ddd02f6c96218bb1ac29cf9fdaffd2f24c374aa5d855",
-      "last_checked": "2026-03-20T07:31:49.995601",
+      "last_checked": "2026-03-24T07:42:21.067422",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d4a904cdb1cb4080681117c10b18a804\"",
       "file_path": "documentation/TVServices/tvtopshelfcontentstyle/init-rawvalue.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimagetrait/screenscale1x.json": {
       "hash": "6f29d80efc328f47d6b51d6ebb9bc9e39a2e8fa1f7596ab5243e7090ef0cd563",
-      "last_checked": "2026-03-20T07:31:50.115302",
+      "last_checked": "2026-03-24T07:42:21.243079",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"46d9534bf113d96f55c57494f99ab0d5\"",
       "file_path": "documentation/TVServices/tvcontentitemimagetrait/screenscale1x.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimagetrait/screenscale2x.json": {
       "hash": "e0dfb86dcf3a6678c1f67f70494bed490bfe4df236a4ce55591496e4713d0a85",
-      "last_checked": "2026-03-20T07:31:50.236771",
+      "last_checked": "2026-03-24T07:42:21.398244",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"e4d05dec7bc93ef1c19364309719e34d\"",
       "file_path": "documentation/TVServices/tvcontentitemimagetrait/screenscale2x.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimagetrait/userinterfacestyledark.json": {
       "hash": "64ea7603221e92993d62db56b5b5ff24103e84aa74615eec4933e9a7ab8f7591",
-      "last_checked": "2026-03-20T07:31:50.307121",
+      "last_checked": "2026-03-24T07:42:21.563420",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"9d10fc72ea8a34ea5f12f2a82ceea0b9\"",
       "file_path": "documentation/TVServices/tvcontentitemimagetrait/userinterfacestyledark.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimagetrait/userinterfacestylelight.json": {
       "hash": "6709a4b93a09d353ce4acff3c5305b9af346f96d01c9001befd7b24e8ed6a1ae",
-      "last_checked": "2026-03-20T07:31:50.429736",
+      "last_checked": "2026-03-24T07:42:21.742748",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"cbdd1575762ecf3d69623e95185a33a0\"",
       "file_path": "documentation/TVServices/tvcontentitemimagetrait/userinterfacestylelight.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimagetrait/init(rawvalue:).json": {
       "hash": "d1e99d92282f7fc2b0a6d3730c62d782495d9adad15142385263c8c7258c4c08",
-      "last_checked": "2026-03-20T07:31:50.499749",
+      "last_checked": "2026-03-24T07:42:21.901450",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"d2a5bfdabd60e030f0719ef60ff379ee\"",
       "file_path": "documentation/TVServices/tvcontentitemimagetrait/init-rawvalue.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/none.json": {
       "hash": "c18b4264fbe26067a24dafb15fa20b8bf9ff66914418f65362e55c33513eb33a",
-      "last_checked": "2026-03-20T07:31:50.611472",
+      "last_checked": "2026-03-24T07:42:22.071845",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"c9f24b66a421fdaf5140544c1ff310c6\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/none.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/poster.json": {
       "hash": "b282c99c72dd076555f3a3644cae0b2f45104e93b92048a08dcc37f0d87e1405",
-      "last_checked": "2026-03-20T07:31:50.675210",
+      "last_checked": "2026-03-24T07:42:22.303343",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"60265ecafee8cf79a20e6b4c0a66db6a\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/poster.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/square.json": {
       "hash": "e38e81278c852488384ccc7a79e0c267c72423207a0a2b3967cc32c7f45ec0d0",
-      "last_checked": "2026-03-20T07:31:50.791207",
+      "last_checked": "2026-03-24T07:42:22.474812",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"71046c4c6dd412a8343c4bc6adaf11d4\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/square.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/sdtv.json": {
       "hash": "24c1dfe6d8234789662b7fd6b74e7e3e0bbc853776b7cb62910cc8bc5a69c5c8",
-      "last_checked": "2026-03-20T07:31:50.885452",
+      "last_checked": "2026-03-24T07:42:22.627765",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"1d2116ec2c5e5522ebde18665e68b1dd\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/sdtv.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/hdtv.json": {
       "hash": "e6fbde5876364d4bfc5ea95dcb6f8859f9ec95017618b5f03ce261a134672151",
-      "last_checked": "2026-03-20T07:31:51.001687",
+      "last_checked": "2026-03-24T07:42:22.791679",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"a571c5044d5f43792b0f08db7364d01b\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/hdtv.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/wide.json": {
       "hash": "af7a60f0def483fca03c3a7516520032ca9f5d32d7cea555e730decd23e7eaf0",
-      "last_checked": "2026-03-20T07:31:51.152624",
+      "last_checked": "2026-03-24T07:42:22.949337",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"7a41f364d11ae72ae017eb35cdb12efe\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/wide.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/extrawide.json": {
       "hash": "f9ba46467ab8ad5051da2f8324432cf2c0a5f7368da84ea9a45a1737bf0bae76",
-      "last_checked": "2026-03-20T07:31:51.220582",
+      "last_checked": "2026-03-24T07:42:23.113540",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"ab0eeb1c63066fabff5cf7181e7c80fd\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/extrawide.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvservices/tvcontentitemimageshape/init(rawvalue:).json": {
       "hash": "e18ec7fee69d1b0bab062c43443d8aad0cd0552eeb4ad38c95e5f0d590a008cd",
-      "last_checked": "2026-03-20T07:31:51.301093",
+      "last_checked": "2026-03-24T07:42:23.264011",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:34.885769",
+      "session_id": "2026-03-24T07:41:57.055094",
       "etag": "W/\"bc61ca99847d7bc9d7b546c9328c9943\"",
       "file_path": "documentation/TVServices/tvcontentitemimageshape/init-rawvalue.md"
     },

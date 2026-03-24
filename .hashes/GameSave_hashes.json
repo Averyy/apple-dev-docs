@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:09.499952",
+    "last_updated": "2026-03-24T07:42:54.123268",
     "total_pages": 194,
-    "session_id": "2026-03-20T07:32:04.285703"
+    "session_id": "2026-03-24T07:42:44.703091"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/GameSave.json": {
       "hash": "66bd5ee6284cddbd58213adeb55d1c194b8b8acd0d72fa321101ef7b74f67d2e",
-      "last_checked": "2026-03-20T07:32:04.564759",
+      "last_checked": "2026-03-24T07:42:44.956813",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"9ca837bed45de82cec02cad3df0c2988\"",
       "file_path": "documentation/GameSave/GameSave.md"
     },
     "https://developer.apple.com/documentation/GameSave": {
       "hash": "66bd5ee6284cddbd58213adeb55d1c194b8b8acd0d72fa321101ef7b74f67d2e",
-      "last_checked": "2026-03-20T07:32:04.465732",
+      "last_checked": "2026-03-24T07:42:44.868824",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"9ca837bed45de82cec02cad3df0c2988\"",
       "file_path": "documentation/GameSave/GameSave.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory.json": {
       "hash": "d68264688e90f440cbd272502d428208bad987d0acb0eec522bfe4be36a34c4b",
-      "last_checked": "2026-03-20T07:32:05.065081",
+      "last_checked": "2026-03-24T07:42:45.804123",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"db042b19d151fcf00e558a440f239877\"",
       "file_path": "documentation/GameSave/gssynceddirectory.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesaveerrordomain.json": {
       "hash": "1383947565177b7b7032639dffd4460a038062f2ff88087986fa8f001ce23d8f",
-      "last_checked": "2026-03-20T07:32:04.959684",
+      "last_checked": "2026-03-24T07:42:45.623236",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"5f61ca0bfdd919251ee70bc0d106872f\"",
       "file_path": "documentation/GameSave/gamesaveerrordomain.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/open(forcontaineridentifier:).json": {
       "hash": "e7d67878acb57c6fe96fb058bec36808adcd1ed36a181a571e67160b779c3122",
-      "last_checked": "2026-03-20T07:32:06.035912",
+      "last_checked": "2026-03-24T07:42:48.231520",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"334a451aaafca82a3a5ef1a4b67e4b42\"",
       "file_path": "documentation/GameSave/gssynceddirectory/open-forcontaineridentifier.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/directorystate.json": {
       "hash": "73300b2ca3beecda4f2036b47921aed9db6fbce7299d60787619b0825c5516ec",
-      "last_checked": "2026-03-20T07:32:06.105151",
+      "last_checked": "2026-03-24T07:42:48.347735",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"33914b88e5c6b749ad96425b568d8e2d\"",
       "file_path": "documentation/GameSave/gssynceddirectory/directorystate.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectorystate.json": {
       "hash": "6e2d6cc0ee065e4e3006ab07717f3053862c93760068fd6fb9d619e5d1fcf5ca",
-      "last_checked": "2026-03-20T07:32:06.172293",
+      "last_checked": "2026-03-24T07:42:48.467583",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"199dc505ba2641362799344cc57edf1e\"",
       "file_path": "documentation/GameSave/gssynceddirectorystate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/finishsyncing(_:completionhandler:).json": {
       "hash": "efb609783c4d091084bf9508fd2785623f983a8747bd6f1f632f8c34876827af",
-      "last_checked": "2026-03-20T07:32:06.253064",
+      "last_checked": "2026-03-24T07:42:48.643783",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"6661b848e0b464dee026aef51a28ebe9\"",
       "file_path": "documentation/GameSave/gssynceddirectory/finishsyncing-completionhandler.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/finishsyncing(completionhandler:).json": {
       "hash": "d4090874e34d21577a1d841e46c7fa60de1695862462e7acf5b43a1022941076",
-      "last_checked": "2026-03-20T07:32:06.328987",
+      "last_checked": "2026-03-24T07:42:48.759305",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"30b906194e2f46c19fba9acb15291ba1\"",
       "file_path": "documentation/GameSave/gssynceddirectory/finishsyncing-completionhandler.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectoryversion.json": {
       "hash": "8cd6697fa8ececcc7dc73c86aed596791550e7afc5a3b4a39beb213273cf3196",
-      "last_checked": "2026-03-20T07:32:06.394874",
+      "last_checked": "2026-03-24T07:42:48.935285",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"9c7d10bb95991161e140cd90b9c53fc8\"",
       "file_path": "documentation/GameSave/gssynceddirectoryversion.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/resolveconflicts(with:).json": {
       "hash": "eb2a5c98b16ebbe3ec6c78348103d31fe6cd736c6a183ab161869fb99248cecf",
-      "last_checked": "2026-03-20T07:32:06.500830",
+      "last_checked": "2026-03-24T07:42:49.073590",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"bfbc6fa2887145c9c491d097b2f1b376\"",
       "file_path": "documentation/GameSave/gssynceddirectory/resolveconflicts-with.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/triggerpendingupload(completionhandler:).json": {
       "hash": "49c9d3d9ba77f2b20fc843e09d98688ce16c56d6615334c1699c24b3559916bf",
-      "last_checked": "2026-03-20T07:32:06.580326",
+      "last_checked": "2026-03-24T07:42:49.186252",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"8b3916ef8cb97681da44ef12610fe29b\"",
       "file_path": "documentation/GameSave/gssynceddirectory/triggerpendingupload-completionhandler.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectory/close().json": {
       "hash": "d39c98a40bc386007c1fb1835fb06e67e135860e9bd3bebf54eaa855eb454696",
-      "last_checked": "2026-03-20T07:32:06.656726",
+      "last_checked": "2026-03-24T07:42:49.316729",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"3c582e81037c1242ebfdda6b296acffc\"",
       "file_path": "documentation/GameSave/gssynceddirectory/close.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate.json": {
       "hash": "1ffa2df697a5270b2272f85af7180a461578f2d44c0497fce1114e7c476bbd2d",
-      "last_checked": "2026-03-20T07:32:07.896425",
+      "last_checked": "2026-03-24T07:42:51.409424",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"cd012f5f669e3ea600e3a4bd76733017\"",
       "file_path": "documentation/GameSave/gssyncstate.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectorystate/state.json": {
       "hash": "8b94c3243dff9ee8cad7d3ec4e018b16111eedf489a1786bcabad63d3907f91f",
-      "last_checked": "2026-03-20T07:32:07.964666",
+      "last_checked": "2026-03-24T07:42:51.523937",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"3f48ee9a5a588f733d5c2ed6961f56bb\"",
       "file_path": "documentation/GameSave/gssynceddirectorystate/state.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectorystate/conflictedversions.json": {
       "hash": "e291c563d87ed2ed8ba27c6a1a89831869784395216c7e233fb70e5421170fb7",
-      "last_checked": "2026-03-20T07:32:08.031750",
+      "last_checked": "2026-03-24T07:42:51.652639",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"6443b667e84c8efc8a088a19b170486b\"",
       "file_path": "documentation/GameSave/gssynceddirectorystate/conflictedversions.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectorystate/error.json": {
       "hash": "16b5e066cb94ef2982fd2a56ff32c14a14b84feaf0cf6e7e19e36b578f6623be",
-      "last_checked": "2026-03-20T07:32:08.105944",
+      "last_checked": "2026-03-24T07:42:51.791841",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"a20058cef2183064ee6d103c1e758cc3\"",
       "file_path": "documentation/GameSave/gssynceddirectorystate/error.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectorystate/url.json": {
       "hash": "6ff96da62e2d43fd992ce232cdcf34d1e66c059b25a40a00519d6c7e72b1e836",
-      "last_checked": "2026-03-20T07:32:08.167757",
+      "last_checked": "2026-03-24T07:42:51.925875",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"7b45a0be5803545c641fd5bcc3a7dcf3\"",
       "file_path": "documentation/GameSave/gssynceddirectorystate/url.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectoryversion/description.json": {
       "hash": "1a5aa80d1ce11f4c856aabfdddc7575796a3b84170b1002dda2f2b19fc291a58",
-      "last_checked": "2026-03-20T07:32:08.248221",
+      "last_checked": "2026-03-24T07:42:52.131553",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"7ffb9efa6bae6f1d8818ec1fedc2fb1f\"",
       "file_path": "documentation/GameSave/gssynceddirectoryversion/description.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectoryversion/islocal.json": {
       "hash": "6654b8d0dc2e4d470f933bb9ff2bf5c748650138f63172664f459c495bee98d1",
-      "last_checked": "2026-03-20T07:32:08.325474",
+      "last_checked": "2026-03-24T07:42:52.253659",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"30ff76b8abf38705172d68937e954c4e\"",
       "file_path": "documentation/GameSave/gssynceddirectoryversion/islocal.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectoryversion/localizednameofsavingcomputer.json": {
       "hash": "d983c9e77eaff3c50d918567506123f0fe6d2c7a0295ce1c1b31f9fab71255d2",
-      "last_checked": "2026-03-20T07:32:08.466194",
+      "last_checked": "2026-03-24T07:42:52.432009",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"f0c74daf9e9bdde801f1bf15d7ed8478\"",
       "file_path": "documentation/GameSave/gssynceddirectoryversion/localizednameofsavingcomputer.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectoryversion/modifieddate.json": {
       "hash": "fed322bdbe4222ec7d79967fdf7b1244d3bcf6d3fc09e7b138aeb4b3de69be7b",
-      "last_checked": "2026-03-20T07:32:08.552386",
+      "last_checked": "2026-03-24T07:42:52.550700",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"a7249a89ce87c5c06b619dfc2e9afbab\"",
       "file_path": "documentation/GameSave/gssynceddirectoryversion/modifieddate.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssynceddirectoryversion/url.json": {
       "hash": "3a761623a45dbbba6ec0e2a731855a14fe9a3c490eadb5cf40c3f92e822d2e4b",
-      "last_checked": "2026-03-20T07:32:08.613949",
+      "last_checked": "2026-03-24T07:42:52.672752",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"d1f49c3afbb33d2d5a5bf4ad69ca6e8c\"",
       "file_path": "documentation/GameSave/gssynceddirectoryversion/url.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/closed.json": {
       "hash": "d101d148fe322456e634f15915dfd37b4dce5e3f86c84b227906318c5f32b4ec",
-      "last_checked": "2026-03-20T07:32:08.695040",
+      "last_checked": "2026-03-24T07:42:52.865633",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"5c06f6097f793a3077c1fb1f6dbcbbf0\"",
       "file_path": "documentation/GameSave/gssyncstate/closed.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/conflicted.json": {
       "hash": "d7e35178160e825d20ff61a41ad579314db826a99ffccf7c34e226e20a2c6031",
-      "last_checked": "2026-03-20T07:32:08.934096",
+      "last_checked": "2026-03-24T07:42:53.038903",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"410b7f82d2ef0a315897583b461710aa\"",
       "file_path": "documentation/GameSave/gssyncstate/conflicted.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/error.json": {
       "hash": "f171cbf613339d0c840fd1b9ab22ce6856e9b231f7c85aa3238909fcabf36386",
-      "last_checked": "2026-03-20T07:32:09.001227",
+      "last_checked": "2026-03-24T07:42:53.212407",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"c1e87df6b86651d480be2a6321d7261e\"",
       "file_path": "documentation/GameSave/gssyncstate/error.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/local.json": {
       "hash": "33cc1db9f3fe031e48a00d5f43c0b7f4acce4b30c806dc60b1c457e792d738c6",
-      "last_checked": "2026-03-20T07:32:09.095017",
+      "last_checked": "2026-03-24T07:42:53.508816",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"73b89f499f6a8a34f1ae5864fe5fcaf4\"",
       "file_path": "documentation/GameSave/gssyncstate/local.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/offline.json": {
       "hash": "76acc68ef28c2633d7d7045c6d1d782f92270dc06f44d38c1e0be05cd508a6d6",
-      "last_checked": "2026-03-20T07:32:09.163804",
+      "last_checked": "2026-03-24T07:42:53.675253",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"a1b6cbf3ca9dd4d6fa411348e462e519\"",
       "file_path": "documentation/GameSave/gssyncstate/offline.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/ready.json": {
       "hash": "a0c89f22416b9ad3bd9f9665cafd9248612965a402b097d2fb0eeb36f17161fa",
-      "last_checked": "2026-03-20T07:32:09.250835",
+      "last_checked": "2026-03-24T07:42:53.788543",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"c82d85c056913ec0272e1c5fc83b6dce\"",
       "file_path": "documentation/GameSave/gssyncstate/ready.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/syncing.json": {
       "hash": "48b4b715d4e14357938a3262ca2c21c1a7885946b6d9cd6e4a353fdc86c5ebc0",
-      "last_checked": "2026-03-20T07:32:09.352851",
+      "last_checked": "2026-03-24T07:42:53.957033",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"502d85347f68828a213d303c16e43266\"",
       "file_path": "documentation/GameSave/gssyncstate/syncing.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gssyncstate/init(rawvalue:).json": {
       "hash": "d0c5c888bec33c0c6fa4ce95e11d59492a98d2dacf2d69c84c769a258a2696bf",
-      "last_checked": "2026-03-20T07:32:09.475928",
+      "last_checked": "2026-03-24T07:42:54.119192",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"39cffbb38b6d4eaa6910d6960f8abf31\"",
       "file_path": "documentation/GameSave/gssyncstate/init-rawvalue.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory.json": {
       "hash": "939f9aee45c33cd22f2f643be6773257669219573b2f1566c6bf52fe2570c706",
-      "last_checked": "2026-03-20T07:32:04.861571",
+      "last_checked": "2026-03-24T07:42:45.451669",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"bf99c80ca20f5c5320a43b19e5bc9cd2\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/version.json": {
       "hash": "4d444a4dda456182ca01a06d0909de06cc02f96c144704394fb0d9beca1d2a27",
-      "last_checked": "2026-03-20T07:32:05.719454",
+      "last_checked": "2026-03-24T07:42:47.368133",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"4308ece3d5a5a6f980dd96b7bb9b07b1\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.property.json": {
       "hash": "f7789df41213a0e4ecc4ff02d4f453c558773e7e045e13a3eb1a87280c0148a7",
-      "last_checked": "2026-03-20T07:32:05.366284",
+      "last_checked": "2026-03-24T07:42:46.418937",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"2b706f9770ac9bf60ff597bc031129ac\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swiftproperty.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/close().json": {
       "hash": "db78356da2538a7cf76298a0664d1f84f23b75e8484b37e03ae0e6d56c822b66",
-      "last_checked": "2026-03-20T07:32:05.970706",
+      "last_checked": "2026-03-24T07:42:48.102885",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"979bc0c7bba425241c5b8987c378c286\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/close.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/finishsyncing().json": {
       "hash": "b826b5f622b43457706a0facbf3d23d71f3e569e3fb478f09096236870ba7343",
-      "last_checked": "2026-03-20T07:32:05.429181",
+      "last_checked": "2026-03-24T07:42:46.740470",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"e10686edafca0a47c35632228cb87133\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/finishsyncing.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/finishsyncing(statusdisplay:)-309nq.json": {
       "hash": "6639ee460146b85e401235bd4c32f1ff9126035f01d76ba93f18afdeb7d99b6c",
-      "last_checked": "2026-03-20T07:32:05.523058",
+      "last_checked": "2026-03-24T07:42:46.911858",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"61f83b5cce48350effd4b97ac65e8b71\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/finishsyncing-statusdisplay-309nq.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/finishsyncing(statusdisplay:)-500el.json": {
       "hash": "57afefc6b87316bff6410e27eb4bc539f958baf0a3a892bba70a477fc5bc0537",
-      "last_checked": "2026-03-20T07:32:05.623216",
+      "last_checked": "2026-03-24T07:42:47.199637",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"fec3220c16ef11731695eaf072cec2b0\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/finishsyncing-statusdisplay-500el.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/resolveconflicts(with:).json": {
       "hash": "567f7ef9e1925a67cfee5edff3ab82198773ffb985c857fc5df3f959a5718dfb",
-      "last_checked": "2026-03-20T07:32:05.781727",
+      "last_checked": "2026-03-24T07:42:47.528014",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"87687e2a82b5fda87640b65d155f166d\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/resolveconflicts-with.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/triggerpendingupload().json": {
       "hash": "8abe04d9b51bbb0f22c3a2b6a9fac53e2748d5b134bacc1a83b842e1ffda9282",
-      "last_checked": "2026-03-20T07:32:05.854173",
+      "last_checked": "2026-03-24T07:42:47.813895",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"858ad3361758a02c3f91d24d24d46711\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/triggerpendingupload.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/opendirectory(containeridentifier:).json": {
       "hash": "f5bfcbc29672348ae69651a40b005b7ac527e0c2e2847f62748f3c0e025f84b6",
-      "last_checked": "2026-03-20T07:32:05.145281",
+      "last_checked": "2026-03-24T07:42:46.089210",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"7dc4b3be6519883680d3b4b551631bf7\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/opendirectory-containeridentifier.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum.json": {
       "hash": "ba63e52a57d0916cecce44b73aa6953f8db91328e1972a396e097b2faa57f860",
-      "last_checked": "2026-03-20T07:32:05.242250",
+      "last_checked": "2026-03-24T07:42:46.244689",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"7d8e8e0cb79a55a221da4f4e4785fdd5\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swiftenum.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/version/islocal.json": {
       "hash": "9c23e6db5a8c9b613a82b549e64a9e4dd376a23f877352446504d0829a3ce822",
-      "last_checked": "2026-03-20T07:32:07.641547",
+      "last_checked": "2026-03-24T07:42:50.796399",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"c67d28e7ca7d07e0ee24a14a772977db\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version/islocal.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/version/localizednameofsavingcomputer.json": {
       "hash": "b471baf3ac59cb1dc088425c428af95ebdfa603e2b6be4fcce187ee0d502f936",
-      "last_checked": "2026-03-20T07:32:07.714501",
+      "last_checked": "2026-03-24T07:42:50.952848",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"31155a2f6e7276f04168e0bafd4e1d2f\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version/localizednameofsavingcomputer.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/version/modifieddate.json": {
       "hash": "2f2d87a5d6304b62372490d337a8e5a63522b1c88569f5c6635ccf883b762f20",
-      "last_checked": "2026-03-20T07:32:07.795057",
+      "last_checked": "2026-03-24T07:42:51.123223",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"ec2a9af1be9cdfd91f8bbac49979754e\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version/modifieddate.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/version/url.json": {
       "hash": "8c01f4c6c77f7e1565e84f6bd48d991c873b366a575073804fbfe039fde1e831",
-      "last_checked": "2026-03-20T07:32:07.404302",
+      "last_checked": "2026-03-24T07:42:50.636466",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"dec978676c715cfb9b87faba64ce2a34\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/version/url.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/closed.json": {
       "hash": "fe8f08d2a176ac1d0171989528c276784d3449386aa6d25b0d189d6dab47e9ec",
-      "last_checked": "2026-03-20T07:32:06.727574",
+      "last_checked": "2026-03-24T07:42:49.428945",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"86674ed1d5e53e397d9ad5ec9fc09863\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/closed.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/conflicted(versions:).json": {
       "hash": "a80ab6217a9bde5208fd41e3db0ab4555ff45c12f96a7c70275ca36367d95a48",
-      "last_checked": "2026-03-20T07:32:06.810435",
+      "last_checked": "2026-03-24T07:42:49.736304",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"c4e7040b6b78234acab81b6a66bd3ca2\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/conflicted-versions.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/error(_:).json": {
       "hash": "16265b0cecc15545834a1e815e13cf6b9ba6deb04ced80d9ec2f8a0d69a0e20f",
-      "last_checked": "2026-03-20T07:32:06.909773",
+      "last_checked": "2026-03-24T07:42:49.890455",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"b657070a488fc79558caae1615feb68b\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/error.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/local(_:).json": {
       "hash": "9cf2b4cf8a7d718818395fdb03ddb5e975883ae14afc3a842870f355df1bee92",
-      "last_checked": "2026-03-20T07:32:06.975725",
+      "last_checked": "2026-03-24T07:42:50.016346",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"579a86967b84eeae12e1b40a722ffb45\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/local.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/offline(_:).json": {
       "hash": "ea741073a09cf3b2fd4ab12c0bee0dd134a8a6108faf2a06e8583f12aa590541",
-      "last_checked": "2026-03-20T07:32:07.048118",
+      "last_checked": "2026-03-24T07:42:50.174157",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"7c3e3574b86a54adf977378dc9d3183b\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/offline.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/ready(_:).json": {
       "hash": "26f4e827ad78587a3db76475615c58ebd08b2b7221ee224cde6658920562983f",
-      "last_checked": "2026-03-20T07:32:07.240663",
+      "last_checked": "2026-03-24T07:42:50.334839",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"6ad221df6f5093819c25c575b0c5891e\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/ready.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamesave/gamesavesynceddirectory/state-swift.enum/syncing.json": {
       "hash": "6f6ae4867113cf2aefc127a1b8497ca41d2b3ff12857824b565222690d8b008f",
-      "last_checked": "2026-03-20T07:32:07.338947",
+      "last_checked": "2026-03-24T07:42:50.464899",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:04.285703",
+      "session_id": "2026-03-24T07:42:44.703091",
       "etag": "W/\"5c7f6250331a0d8cf96d5bee4d6515f1\"",
       "file_path": "documentation/GameSave/gamesavesynceddirectory/state-swift.enum/syncing.md"
     },

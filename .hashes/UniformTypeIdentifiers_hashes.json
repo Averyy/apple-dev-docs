@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:31:34.704928",
+    "last_updated": "2026-03-24T07:41:56.144871",
     "total_pages": 388,
-    "session_id": "2026-03-20T07:31:17.120173"
+    "session_id": "2026-03-24T07:41:27.969368"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/UniformTypeIdentifiers.json": {
       "hash": "f1affa16a80f9cc046e584accd969c7370f389deea3d8f43e6bae49db596a5d2",
-      "last_checked": "2026-03-20T07:31:17.377352",
+      "last_checked": "2026-03-24T07:41:28.205530",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"bc8f6d866cee8052e3a3c22d281c374b\"",
       "file_path": "documentation/UniformTypeIdentifiers/UniformTypeIdentifiers.md"
     },
     "https://developer.apple.com/documentation/UniformTypeIdentifiers": {
       "hash": "f1affa16a80f9cc046e584accd969c7370f389deea3d8f43e6bae49db596a5d2",
-      "last_checked": "2026-03-20T07:31:17.295454",
+      "last_checked": "2026-03-24T07:41:28.110805",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"bc8f6d866cee8052e3a3c22d281c374b\"",
       "file_path": "documentation/UniformTypeIdentifiers/UniformTypeIdentifiers.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app.json": {
       "hash": "ed3033a6891f8f893ad1f272143d1fbc8fb2780c15d4d9b2e872aa229be2d81d",
-      "last_checked": "2026-03-20T07:31:17.615825",
+      "last_checked": "2026-03-24T07:41:28.585543",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"76bd96bac1750812c48216702348b38f\"",
       "file_path": "documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/system-declared-uniform-type-identifiers.json": {
       "hash": "3acc213c1ad6c050604a7562640c11a06f1504bcc9d8975bedbfed2a93020e28",
-      "last_checked": "2026-03-20T07:31:17.751481",
+      "last_checked": "2026-03-24T07:41:28.769650",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"d3741aea22dd43743852ea92ecc11a3c\"",
       "file_path": "documentation/UniformTypeIdentifiers/system-declared-uniform-type-identifiers.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct.json": {
       "hash": "34ffa66cd724c20768a3b7d933e06d98882206ac903b1a9f9d781cae8b68aac9",
-      "last_checked": "2026-03-20T07:31:17.917093",
+      "last_checked": "2026-03-24T07:41:29.098729",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"71eff8fe42bf1e73455493ede87a1e53\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swiftstruct.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttagclass.json": {
       "hash": "54c9067b3aab77479bf1d58d6c9afc4b01c2578b7f1e19f7a24f2c95503688fe",
-      "last_checked": "2026-03-20T07:31:17.992939",
+      "last_checked": "2026-03-24T07:41:29.270549",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"dbb128544dc9f972f605f9cb295a62db\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttagclass.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference.json": {
       "hash": "579fffb54b04259d7f9dc6659c16dc60593798e212f587ac0131a8e1bbe3b0b0",
-      "last_checked": "2026-03-20T07:31:18.099420",
+      "last_checked": "2026-03-24T07:41:29.523724",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"5201eeb30f7f8e2d4fc43fbe9c36685b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uniformtypeidentifiers-constants.json": {
       "hash": "46e271fde67f4614a22dc4a203a237d1492d47b4e88a7378394a1944661e2071",
-      "last_checked": "2026-03-20T07:31:18.194722",
+      "last_checked": "2026-03-24T07:41:29.699623",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"4bf36a80370597adf9e28b2e7589a1b4\"",
       "file_path": "documentation/UniformTypeIdentifiers/uniformtypeidentifiers-constants.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/threedcontent.json": {
       "hash": "7e96f618d1a1756d69930899ae6d2404cfc91f973894e401a837b5ba03120908",
-      "last_checked": "2026-03-20T07:31:18.263126",
+      "last_checked": "2026-03-24T07:41:29.857355",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f510b45b08e327629e5729f16e5e661a\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/threedcontent.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/usd.json": {
       "hash": "06961358104ab8579958701b030a98241b8636d4b83d9f8f531543d6b769f9ce",
-      "last_checked": "2026-03-20T07:31:18.341529",
+      "last_checked": "2026-03-24T07:41:30.013641",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"54cdc0952478abc0221be7c71997e9d5\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/usd.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/usdz.json": {
       "hash": "a0339783f86b7425996439378e27c3d30de98cf9fdad86a2382b54ae525ca9e3",
-      "last_checked": "2026-03-20T07:31:18.439431",
+      "last_checked": "2026-03-24T07:41:30.167588",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f487e546f3ce9f5bad01e41095edfba1\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/usdz.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/realityfile.json": {
       "hash": "6456f1e07c6396d52326e5263ca90a34c80e706fd53f27688a0b59d035e53d7b",
-      "last_checked": "2026-03-20T07:31:18.506107",
+      "last_checked": "2026-03-24T07:41:30.328242",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"fbcfe1fb83a9a85b932f6fb9e9525481\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/realityfile.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/scenekitscene.json": {
       "hash": "c908c6bb095bef8b8ea9c55723b740b45b8d13deb77e7cded87ef1aadfb42085",
-      "last_checked": "2026-03-20T07:31:18.587257",
+      "last_checked": "2026-03-24T07:41:30.617602",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"226941752fc9f793cd76058d53d0aa92\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/scenekitscene.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/arreferenceobject.json": {
       "hash": "b4c601d7a8125ebe83d18fd7ee9d8cc0d18f1425d448e3566590dff6e65cd089",
-      "last_checked": "2026-03-20T07:31:18.699681",
+      "last_checked": "2026-03-24T07:41:30.916993",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"3ec946ed155df8989d4a37779bdc7afa\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/arreferenceobject.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/directory.json": {
       "hash": "5e6d0eef6f014ce58dca446d168c89249e37d2ac4918323bcbb5050050f6df59",
-      "last_checked": "2026-03-20T07:31:18.777502",
+      "last_checked": "2026-03-24T07:41:31.238490",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b424eb784bd1a2c3142e50feec74f59f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/directory.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/symboliclink.json": {
       "hash": "d7f06d42a64e17c19c8ee1f989ea03c1c73a71d76980fa84917b38089fb9eb8d",
-      "last_checked": "2026-03-20T07:31:18.848136",
+      "last_checked": "2026-03-24T07:41:31.399822",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"fe7fa62fb8477a483fbb44ac870411e2\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/symboliclink.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mountpoint.json": {
       "hash": "6283ca944f9afb48789a9ca38dea4f52e557c765bbaca5c90cc4da75319a46fa",
-      "last_checked": "2026-03-20T07:31:18.925681",
+      "last_checked": "2026-03-24T07:41:31.574860",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"666181cdd92e935e5a996193f158293e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mountpoint.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/aliasfile.json": {
       "hash": "a84d3548233fd7d50eecbef88a11ac55c05138cf369bff52b5bc3f91895b0e08",
-      "last_checked": "2026-03-20T07:31:19.182696",
+      "last_checked": "2026-03-24T07:41:31.744819",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"50b642928f86e4afd2eb6a1386dd3523\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/aliasfile.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/folder.json": {
       "hash": "a1ad84edc2530a2824fdd5af07b911949f92816d13dbc39b3e5ebdf76332b56a",
-      "last_checked": "2026-03-20T07:31:19.296055",
+      "last_checked": "2026-03-24T07:41:32.038594",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b393a6431ea048b2189f43cd54808e98\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/folder.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/volume.json": {
       "hash": "4ae6754e89ac8078524589b3e611d9fdc4ae4ade7a6ecce63c3b0e616bfbdd32",
-      "last_checked": "2026-03-20T07:31:19.367956",
+      "last_checked": "2026-03-24T07:41:32.200691",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"5a03c695c02cec8b87bb486ec6839852\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/volume.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/diskimage.json": {
       "hash": "a3253b80b007de675d7751e5295164eb76f4e7188a33714e6534ce2996e5c520",
-      "last_checked": "2026-03-20T07:31:19.463455",
+      "last_checked": "2026-03-24T07:41:32.367068",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"83a312fc581117ca80a94acd2ea0848c\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/diskimage.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/heic.json": {
       "hash": "c566381c86f8574257bcc61998220690a6a42f88deb31e468ab16bf49b3fd05a",
-      "last_checked": "2026-03-20T07:31:19.534628",
+      "last_checked": "2026-03-24T07:41:32.659994",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"542e1861810b9862cfae1aaac8926163\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/heic.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/heif.json": {
       "hash": "d7a4dbe3d4331787d58c6523a1b3c758b8b44f5c6a679b3c32415d07c504bb9a",
-      "last_checked": "2026-03-20T07:31:19.616018",
+      "last_checked": "2026-03-24T07:41:32.824112",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"cf13b4928a00af33412a0ced61134a27\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/heif.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/livephoto.json": {
       "hash": "c40fd0bab435a14944afe924dca54431c9670d382818eff83237d1a034a806d6",
-      "last_checked": "2026-03-20T07:31:19.732582",
+      "last_checked": "2026-03-24T07:41:32.986275",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"a0ea89893f98739c5751cc2752c28776\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/livephoto.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/framework.json": {
       "hash": "b0ee9e6dfe55307152973520cb9178301e39427ed9488897cc615a889842cb5c",
-      "last_checked": "2026-03-20T07:31:19.850893",
+      "last_checked": "2026-03-24T07:41:33.115572",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"91c925493bf57dc1c16759b0811f2787\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/framework.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/applicationbundle.json": {
       "hash": "9e9d5b4cd1d1414aaf0ad2d8bb96fc4194220f2258a33ebb61d59c86325e4b10",
-      "last_checked": "2026-03-20T07:31:19.924029",
+      "last_checked": "2026-03-24T07:41:33.242343",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f8da2c4c29c685d14805ddeb8dd19cd4\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/applicationbundle.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/applicationextension.json": {
       "hash": "91740b6ecf5ad07c41e3762a1be31967d3040d63fbd43308d3822a8f203bfa32",
-      "last_checked": "2026-03-20T07:31:20.004839",
+      "last_checked": "2026-03-24T07:41:33.377539",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"03b8778ceaaebc76187f9704fab45104\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/applicationextension.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/spotlightimporter.json": {
       "hash": "c9ea562a6efb7c0bbb9615b8f185f3e333954a3feeb97ca9f84477e7038a8704",
-      "last_checked": "2026-03-20T07:31:20.101062",
+      "last_checked": "2026-03-24T07:41:33.488569",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"a5725bce98e688591564c0ec80b04c0f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/spotlightimporter.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/quicklookgenerator.json": {
       "hash": "d26c1c7b87941a9b88b6ae039a24e8198ddf492cd43600d5b17d623e6c458923",
-      "last_checked": "2026-03-20T07:31:20.199964",
+      "last_checked": "2026-03-24T07:41:33.634846",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"baf239b636cac56d90ff24baf0a03e8f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/quicklookgenerator.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/xpcservice.json": {
       "hash": "fb5ae7f76cf7b4361bd3c3f86ec603f43ecc801c51468dcc0d7b1aa20a1799a0",
-      "last_checked": "2026-03-20T07:31:20.274160",
+      "last_checked": "2026-03-24T07:41:33.757932",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"0bf406dc4d52abf616a0e8d297da268a\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/xpcservice.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/systempreferencespane.json": {
       "hash": "8a560ba92816d50d9e06156a535c86bcea4fcba322d518e17bad64b0dccaf9ef",
-      "last_checked": "2026-03-20T07:31:20.375311",
+      "last_checked": "2026-03-24T07:41:33.890648",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c0e0ea7dcb542ebf5f5b8081b957f818\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/systempreferencespane.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/pdf.json": {
       "hash": "2c3ab8f311194c4575081872e3826bd6e2d6d4234ddf3bd216cb7adc5208599c",
-      "last_checked": "2026-03-20T07:31:20.445694",
+      "last_checked": "2026-03-24T07:41:34.024409",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e1490a12f819ff312dfbd77ede646f7d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/pdf.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/rtfd.json": {
       "hash": "81146a84f91c5c94b4ba8e4e7c7f9e535347f0078981e3a317a1e4841b0d5529",
-      "last_checked": "2026-03-20T07:31:20.512349",
+      "last_checked": "2026-03-24T07:41:34.168001",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b52c08025c62445db57fef17403137c6\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/rtfd.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/flatrtfd.json": {
       "hash": "d0bc5c524595a9623f79076e8b7343c3bfeefdfb58d74dc484b7b96968aadd17",
-      "last_checked": "2026-03-20T07:31:20.647734",
+      "last_checked": "2026-03-24T07:41:34.299893",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"88ee08b9785a4dbd309675a3389ffc81\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/flatrtfd.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/epub.json": {
       "hash": "e22f59af91b8005d253dd84ffc5d0a6a7eac343efed2d785dee18820c5105bc3",
-      "last_checked": "2026-03-20T07:31:20.791421",
+      "last_checked": "2026-03-24T07:41:34.428840",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"3316fbc699eb99787d1ad1f46d7426f7\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/epub.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mp3.json": {
       "hash": "80c6585eea5a5daea1f621e80dea340b34478b76faa930d6b7c68f43a5858b1b",
-      "last_checked": "2026-03-20T07:31:20.872234",
+      "last_checked": "2026-03-24T07:41:34.565135",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e301dea144b28a0c371ff5e2ef393919\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mp3.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/aiff.json": {
       "hash": "09c92f8dd8466959fd9ac2e8049c6e47e4485de904b371f7fe93aa56ef0fe541",
-      "last_checked": "2026-03-20T07:31:20.949930",
+      "last_checked": "2026-03-24T07:41:34.704829",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b29dce1bca476d56aff09fb1af4ab76e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/aiff.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/wav.json": {
       "hash": "df7adb063ee4b1e31b6c10c741209eb234f263d5c7c7684ca1d6c00c8af21a94",
-      "last_checked": "2026-03-20T07:31:21.026571",
+      "last_checked": "2026-03-24T07:41:34.862067",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"181bde059e637a8fc8d60fd780644eb7\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/wav.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/midi.json": {
       "hash": "47150f58eace7cdfef51367b27a01b8b22e6cb352fed799e140a2992dc635761",
-      "last_checked": "2026-03-20T07:31:21.167158",
+      "last_checked": "2026-03-24T07:41:35.002689",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"993199e450354a9961ea8182f3ab5528\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/midi.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/playlist.json": {
       "hash": "f8debbbfdf1ad5ea2f6e6f84958aca0ed1da7b64af2f9be43563648031723415",
-      "last_checked": "2026-03-20T07:31:21.245211",
+      "last_checked": "2026-03-24T07:41:35.158725",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"4878da17abe50f177f84c35b9bc9e3eb\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/playlist.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/m3uplaylist.json": {
       "hash": "16f56e317d7e6a47a2728cab88412f1b369c6f0c00dd728a1f4e6c66d07c1121",
-      "last_checked": "2026-03-20T07:31:21.324924",
+      "last_checked": "2026-03-24T07:41:35.278727",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"77a333d093641a14de470ecf39f4e582\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/m3uplaylist.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/quicktimemovie.json": {
       "hash": "5d638fd21064531c39d0bc8b4379836c1652e2cd4b8879971ef0b45e4fc04ccb",
-      "last_checked": "2026-03-20T07:31:21.422232",
+      "last_checked": "2026-03-24T07:41:35.412340",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"253e934f177e36aefbf49e5d3de416b1\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/quicktimemovie.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mpeg.json": {
       "hash": "2e4d2cb97a3d99c5eeaeb2c03f0e011ec4550dcdd0798181cb3ca58a03f797b2",
-      "last_checked": "2026-03-20T07:31:21.498668",
+      "last_checked": "2026-03-24T07:41:35.552897",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"8f9c1bb6b65d333ea7b8c0735a297dac\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mpeg.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mpeg2video.json": {
       "hash": "613bf0c7c09a79df6587cf6810d1bcd3cf86b245d2e208bdaa3ff2f2fa71de22",
-      "last_checked": "2026-03-20T07:31:21.575113",
+      "last_checked": "2026-03-24T07:41:35.673060",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"23fe5059c3b716c9f17d938b916f31b9\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mpeg2video.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mpeg2transportstream.json": {
       "hash": "e079279f6b1cb3b030941f83339ba9d7ac619e54e3893f931e8c6e35bd68f7d4",
-      "last_checked": "2026-03-20T07:31:21.683237",
+      "last_checked": "2026-03-24T07:41:35.838491",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"10dfac5df21bea6b0a85f1f1d116f947\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mpeg2transportstream.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mpeg4movie.json": {
       "hash": "057a2b2ed8d23542c4a23c7189904e5a77ace76d84d38fba71e0a8928d3206f2",
-      "last_checked": "2026-03-20T07:31:21.795241",
+      "last_checked": "2026-03-24T07:41:36.001927",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b0f1f8f9f16e43031e9babaa1027cba9\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mpeg4movie.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/mpeg4audio.json": {
       "hash": "b700ca53f955954300cbcd52b6d6b7faf63b54f57a8faed459eecf25d20d3eca",
-      "last_checked": "2026-03-20T07:31:21.889319",
+      "last_checked": "2026-03-24T07:41:36.118723",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e0fff3ab32315312653393e9dc112560\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/mpeg4audio.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/appleprotectedmpeg4video.json": {
       "hash": "ffa66fb546b4db968d4e4a48ba4a77121c5e1c23d33f1e1821a92513fa35516f",
-      "last_checked": "2026-03-20T07:31:21.961865",
+      "last_checked": "2026-03-24T07:41:36.240366",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"ee53be9a7df4b1409c66dbc0899d6111\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/appleprotectedmpeg4video.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/appleprotectedmpeg4audio.json": {
       "hash": "2ba2f10d967896906af1ee56594db289d60ebf6bf8e594880bdb220df649e742",
-      "last_checked": "2026-03-20T07:31:22.034265",
+      "last_checked": "2026-03-24T07:41:36.440547",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"ab831c4e0b5c795388ceb98980cc4d1e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/appleprotectedmpeg4audio.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/avi.json": {
       "hash": "0c57b40238afd16cce18f240d802cc0319b7b5077f660fe4b75f3cb7d7693f40",
-      "last_checked": "2026-03-20T07:31:22.159996",
+      "last_checked": "2026-03-24T07:41:36.564944",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2269542854e6ca8bcf37c260392fe284\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/avi.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/assemblylanguagesource.json": {
       "hash": "5056914d78c69ecbd92258f4224d25faea39d9658e48350961e4c236c1b893b4",
-      "last_checked": "2026-03-20T07:31:22.233160",
+      "last_checked": "2026-03-24T07:41:36.727668",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"4feb3a1e971f5307162f05aabc6facdb\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/assemblylanguagesource.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/cheader.json": {
       "hash": "f5aafe6d7a925846b6656876ea29c47e053fd4be7766aec55a8a8f68401b93d1",
-      "last_checked": "2026-03-20T07:31:22.303520",
+      "last_checked": "2026-03-24T07:41:36.836574",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"6ac7370f5281a37d9db9326b442ee140\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/cheader.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/csource.json": {
       "hash": "9386b4c62128d75b2e37518dacf78a1d27805dfde1222863d582e53d380aa6b2",
-      "last_checked": "2026-03-20T07:31:22.544311",
+      "last_checked": "2026-03-24T07:41:37.025151",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"5cc13e56fc894b39360528ab36f1a5ff\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/csource.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/cplusplusheader.json": {
       "hash": "e9079dd4ee5c3de8fd1780c75ffa3af3344e4c4e09f957abd6f7f96b664538fa",
-      "last_checked": "2026-03-20T07:31:22.616319",
+      "last_checked": "2026-03-24T07:41:37.166354",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f1e0dec98bb27bc67b12c5cf2007caff\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/cplusplusheader.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/cplusplussource.json": {
       "hash": "dc9c3664cac5da7262da69be283adbcd00da60fa73d095c5ea809507c1f7148b",
-      "last_checked": "2026-03-20T07:31:22.714711",
+      "last_checked": "2026-03-24T07:41:37.305112",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"8e7cff319fe23a253464a1dfe0b9f9a8\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/cplusplussource.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/objectivecplusplussource.json": {
       "hash": "1fc5032c1b9d71d82f8ce8a4ebc5e059af57efb4392ef4214b9ae0f5d5f74551",
-      "last_checked": "2026-03-20T07:31:22.784274",
+      "last_checked": "2026-03-24T07:41:37.431160",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"8315456588fbc83600a083c51c1c0c16\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/objectivecplusplussource.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/objectivecsource.json": {
       "hash": "ad5e6a7f708cce6a9046e2bbe26451d49e5229f1abaa05e73d63e702edeb880b",
-      "last_checked": "2026-03-20T07:31:22.854947",
+      "last_checked": "2026-03-24T07:41:37.628889",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"91d518d1ca6f29111ec7d9375b4e2ce5\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/objectivecsource.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/swiftsource.json": {
       "hash": "e86d1108d2d7061aaafac904dfbfb95ba9382e7fa013340384fb3421f143e828",
-      "last_checked": "2026-03-20T07:31:22.929186",
+      "last_checked": "2026-03-24T07:41:37.760999",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e3f5cd3308557ba0b61f1e3df89e89e5\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/swiftsource.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/archive.json": {
       "hash": "17b4799af5d1c0d01eda0238b2b5bfcfb973cb3a77aa975759faf697467c7b11",
-      "last_checked": "2026-03-20T07:31:23.002663",
+      "last_checked": "2026-03-24T07:41:37.902692",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"800ec8b0ce276e7bc07f3b91cec18d99\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/archive.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/zip.json": {
       "hash": "49445a9dfa6888045c3192c6ee6c4e5edf93a2ce2acd10c399195d51ab37374f",
-      "last_checked": "2026-03-20T07:31:23.072688",
+      "last_checked": "2026-03-24T07:41:38.070585",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"084c86cd50cd9a924d430be223bf933c\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/zip.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/gzip.json": {
       "hash": "d4935ec71a9c4cf530e7b150dc896cf4cfee390efd9a1e6ce4894c7a59388265",
-      "last_checked": "2026-03-20T07:31:23.139262",
+      "last_checked": "2026-03-24T07:41:38.179778",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b6b77ad0446085115c39b5ae736224e3\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/gzip.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/bz2.json": {
       "hash": "19b9f28e6f94eb633af4441a21dc9431015f121b564f549e34f448e3a0443bac",
-      "last_checked": "2026-03-20T07:31:23.220315",
+      "last_checked": "2026-03-24T07:41:38.304971",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"76c74af5ccae9955a2cc7b361ee1320f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/bz2.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/applearchive.json": {
       "hash": "af42e7dd0d7310b0f55e7abb128b7769ede5987c2666fcfc1f88e62e970493dc",
-      "last_checked": "2026-03-20T07:31:23.292952",
+      "last_checked": "2026-03-24T07:41:38.432513",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"45afc47648847b58b7fa5593f8ecab38\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/applearchive.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/pkcs12.json": {
       "hash": "15694d16fc1abf9d165d55ced3d5bbcf7d26c473d3a87a22640e70736be8ef18",
-      "last_checked": "2026-03-20T07:31:23.364823",
+      "last_checked": "2026-03-24T07:41:38.577393",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"6c93cebb8caa5e2cdef7e2fee19f7781\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/pkcs12.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/x509certificate.json": {
       "hash": "a02fd248be205a8ebd98b7bf79c851cbbb86594cb0962584dfbb3a1a6688b2ca",
-      "last_checked": "2026-03-20T07:31:23.443239",
+      "last_checked": "2026-03-24T07:41:38.690630",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"6caffa6ac664d798d93941a0b64b775a\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/x509certificate.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/delimitedtext.json": {
       "hash": "9a31b1afef2f61b160c25188aae68e7887b7b8b0d7fb03b162fc8e346ae7acde",
-      "last_checked": "2026-03-20T07:31:23.565698",
+      "last_checked": "2026-03-24T07:41:38.800987",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"47cee557264139e80111c315336a0287\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/delimitedtext.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/commaseparatedtext.json": {
       "hash": "d597a7a1f0d16d64415cc0bddfb006e490e8b1560711ed358269eb055d9fb299",
-      "last_checked": "2026-03-20T07:31:23.660801",
+      "last_checked": "2026-03-24T07:41:38.971174",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"6cb575467415c05d87f09c3f62c48977\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/commaseparatedtext.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/tabseparatedtext.json": {
       "hash": "e330be44cb0710cee63caf3ccd3f0ddd595f153e82ed6df2f6269209e2303c42",
-      "last_checked": "2026-03-20T07:31:23.789134",
+      "last_checked": "2026-03-24T07:41:39.095066",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"53d4889fd6ba70c4605f6602db6aaf9e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/tabseparatedtext.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/utf8tabseparatedtext.json": {
       "hash": "db335d6844cc6a75521b032b695ef42e8aa0242168c960db8f11a46aeaafe645",
-      "last_checked": "2026-03-20T07:31:23.855015",
+      "last_checked": "2026-03-24T07:41:39.233345",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"67ad490229b3bf1ac4605413fac4fe01\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/utf8tabseparatedtext.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/rtf.json": {
       "hash": "cc89f96169679dacd9824ca4869d4d71befe2dc8504ee2e31e83e1bbb4e0f3cf",
-      "last_checked": "2026-03-20T07:31:23.933445",
+      "last_checked": "2026-03-24T07:41:39.376013",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"ca88c1c418f29cae5be79d8a2de0b271\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/rtf.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/xml.json": {
       "hash": "1efee0c0053272798f9cccdbc2fc486a5c9497f7768d876063f75151c22bcba9",
-      "last_checked": "2026-03-20T07:31:24.050142",
+      "last_checked": "2026-03-24T07:41:39.490531",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e236d2e15ea2670aa9cad6061bf1cfb0\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/xml.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/yaml.json": {
       "hash": "215ee2600be9d299f7e029a0aec277a831ea6d30e6e5c00f95273db4a8c95add",
-      "last_checked": "2026-03-20T07:31:24.135834",
+      "last_checked": "2026-03-24T07:41:39.617106",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2371c865840899bb2c1d8ae4144b7e3a\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/yaml.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/json.json": {
       "hash": "0983d8cefb6500e8418c366f9ea4038255e7e8f7a5558730bd4efbe0eb606a31",
-      "last_checked": "2026-03-20T07:31:24.222069",
+      "last_checked": "2026-03-24T07:41:39.778182",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"326b65c19c7a10066a76f8f62552bd9d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/json.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/vcard.json": {
       "hash": "fb54c940cba7535baba57753f802fb90f91dda142c871bfc5e36f595fc124cc4",
-      "last_checked": "2026-03-20T07:31:24.300602",
+      "last_checked": "2026-03-24T07:41:39.945006",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"61a96785cd72ea09f2cf91e2dd2fe5eb\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/vcard.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/executable.json": {
       "hash": "332f12b36a22ffa932f6576ca17ed4cc5d2d3375b40e1491c4d6eec01ec71bec",
-      "last_checked": "2026-03-20T07:31:24.372079",
+      "last_checked": "2026-03-24T07:41:40.067117",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"92de52c80749d879261350f0861127f2\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/executable.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/unixexecutable.json": {
       "hash": "4fb8ca1f03fd86ec32975eb2dfba6504760cf39a6c8e40629b166b3820c6b491",
-      "last_checked": "2026-03-20T07:31:24.444684",
+      "last_checked": "2026-03-24T07:41:40.201188",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c7bb15f497242b48185d1fc08705c838\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/unixexecutable.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/exe.json": {
       "hash": "2cf95b8e8bfd53deee32b417a88ae067d9ccfe8201799e85309b061e93fac54e",
-      "last_checked": "2026-03-20T07:31:24.518455",
+      "last_checked": "2026-03-24T07:41:40.357594",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c102e9652b9d08923843820bbeb51a0a\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/exe.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/ico.json": {
       "hash": "d4a72845143f20665c0ac38b60ef956456956972cfa0dbf2f88a9a5de35dec9f",
-      "last_checked": "2026-03-20T07:31:24.591768",
+      "last_checked": "2026-03-24T07:41:40.481389",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"90e672b426f3092450c766cd74396715\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/ico.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/icns.json": {
       "hash": "6a546ffa03a9195e1aa0145ba65b3dc2dc4b3beb3ec06ccd0f71a634754ff62a",
-      "last_checked": "2026-03-20T07:31:24.691256",
+      "last_checked": "2026-03-24T07:41:40.640008",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f17b8002135bcd11ca84496055976f9b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/icns.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/png.json": {
       "hash": "8a60de03b7c54439ebf6ce276b119a75d32027ee5a1cb1c5bf7c76fea975ecf4",
-      "last_checked": "2026-03-20T07:31:24.775881",
+      "last_checked": "2026-03-24T07:41:40.787073",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"11f2d84a573a1277531ad426243ef2da\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/png.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/gif.json": {
       "hash": "dfa1a0a67eb53c0db9048154380b5ae298fcc61d9f8a04ea17aacfee942214b6",
-      "last_checked": "2026-03-20T07:31:24.853223",
+      "last_checked": "2026-03-24T07:41:40.918058",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e0f6731385bba826483d0727f68b787e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/gif.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/jpeg.json": {
       "hash": "d7a01c78432d4de94a42cf10caae50c6f9a4305bdf091b2d1e9cbf9efff9b358",
-      "last_checked": "2026-03-20T07:31:24.926294",
+      "last_checked": "2026-03-24T07:41:41.040154",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"3e3acefed3703c8e9aef79916aeb9e85\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/jpeg.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/webp.json": {
       "hash": "312817a2da205f8d0c569864bd0d83781f3192690235e5fc04d0bfbf0967fa44",
-      "last_checked": "2026-03-20T07:31:24.996713",
+      "last_checked": "2026-03-24T07:41:41.223855",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"bd8195592f0db7f8466774894c7beb32\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/webp.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/tiff.json": {
       "hash": "0ed5709c5a1caf77bb1daa3a3132ef269108909ba7c644f69ade447240d7044b",
-      "last_checked": "2026-03-20T07:31:25.067814",
+      "last_checked": "2026-03-24T07:41:41.388624",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7044bed5fc0b4932661b03e5f012ace1\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/tiff.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/bmp.json": {
       "hash": "2134b8fc719638921f42040384472a300797f1aa90e9db510abaa75709826a00",
-      "last_checked": "2026-03-20T07:31:25.140376",
+      "last_checked": "2026-03-24T07:41:41.510426",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"4622d1953f0f3ed3f98e3c74bb8aaf34\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/bmp.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/svg.json": {
       "hash": "ca108a6e7e8cdd29bf4403ad91fc06ef5e270d322ddacc6fc15c95a4d6be6dbf",
-      "last_checked": "2026-03-20T07:31:25.219710",
+      "last_checked": "2026-03-24T07:41:41.627823",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"95e172dba620be9d9fb5eac544805a4b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/svg.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/rawimage.json": {
       "hash": "1574715cb4c4ccab298c6cfb0ea5827947cf062a748f948afd323099fb58f931",
-      "last_checked": "2026-03-20T07:31:25.295748",
+      "last_checked": "2026-03-24T07:41:41.741763",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"9f343ebb3caf383e0cffe21cfea69b33\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/rawimage.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/html.json": {
       "hash": "a62efcd166185cdaffebf449ede87c39ebe8635f9cfee9ec21df704cd28ff3d4",
-      "last_checked": "2026-03-20T07:31:25.381824",
+      "last_checked": "2026-03-24T07:41:41.877337",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"5bf34b4c1072be33ae145e6b5357a821\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/html.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/webarchive.json": {
       "hash": "b37504ee547165c98dcb63421baf155dc3deb0fed0b4945a35343180778c707c",
-      "last_checked": "2026-03-20T07:31:25.451381",
+      "last_checked": "2026-03-24T07:41:41.997972",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7559b134363d28a3f5789e07c78ccdda\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/webarchive.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/internetlocation.json": {
       "hash": "893de1c5a79d3bcc8f0b11663db09bfdf76f25de2b9a4207b6aa44b5faffa20d",
-      "last_checked": "2026-03-20T07:31:25.521193",
+      "last_checked": "2026-03-24T07:41:42.127956",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"888efd90942d52966a157822ca8370c9\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/internetlocation.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/internetshortcut.json": {
       "hash": "1af9394667a99460aa41128662a58a523196e41ad2a0b62a48f991a87f6cb96c",
-      "last_checked": "2026-03-20T07:31:25.592479",
+      "last_checked": "2026-03-24T07:41:42.258184",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f820086d4082b55b0e52a1057e0a8abf\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/internetshortcut.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/propertylist.json": {
       "hash": "2162552dc7552cac77a9b5bcb9d1328342238c6abb8c8eeb965e1a671d4d91de",
-      "last_checked": "2026-03-20T07:31:25.712254",
+      "last_checked": "2026-03-24T07:41:42.367948",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"56200f3c7390b7084db67fe9af9cfffb\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/propertylist.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/xmlpropertylist.json": {
       "hash": "60527bbe4fcb4ce2127ad8269f35029ca6442269970a1ced5c1c259b7a83c07a",
-      "last_checked": "2026-03-20T07:31:25.789336",
+      "last_checked": "2026-03-24T07:41:42.498636",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f08f4770b5d42928580fe43e2d8a9e55\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/xmlpropertylist.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/binarypropertylist.json": {
       "hash": "08abf8e7eff2085e0099a0c99c243b64990fe9a0b4a7381e6999cacad0e96df5",
-      "last_checked": "2026-03-20T07:31:25.968439",
+      "last_checked": "2026-03-24T07:41:42.604211",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7ad3ba8ddeac8e0049a42cd57727ab77\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/binarypropertylist.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/shazamsignature.json": {
       "hash": "a862665b1e6310546c6853b851d049ca7d0f0f52cda2ff97936ec0300d51c957",
-      "last_checked": "2026-03-20T07:31:26.044746",
+      "last_checked": "2026-03-24T07:41:42.750285",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"dd3b1c2d3117060d529d15147d94bf8e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/shazamsignature.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/shazamcustomcatalog.json": {
       "hash": "db11c04a816229cfaef340fcb6bb7377f00d03c77964ed94cd01ccab0baf7134",
-      "last_checked": "2026-03-20T07:31:26.120472",
+      "last_checked": "2026-03-24T07:41:42.868894",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7a438f8c9cdf69e2cf9d2a6a3920e858\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/shazamcustomcatalog.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/script.json": {
       "hash": "b83f9f807e9b88761a0795fa9aaaffe80a0bef72754cf78f60e858f8265057f1",
-      "last_checked": "2026-03-20T07:31:26.190390",
+      "last_checked": "2026-03-24T07:41:43.046164",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"cdc67fe6f748bb5ef1bbad588953d644\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/script.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/applescript.json": {
       "hash": "3180fae61f88ea0401ddc5d3f122c31d68bc788e345dc6ab9cd3576547269fc9",
-      "last_checked": "2026-03-20T07:31:26.261921",
+      "last_checked": "2026-03-24T07:41:43.165683",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"8bc1449dab2fb49f112707f8c0f76d2f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/applescript.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/javascript.json": {
       "hash": "da26df492d003ec98f22f3358ce520cf34e93866c226e462d65ae28ea9fd43e1",
-      "last_checked": "2026-03-20T07:31:26.339475",
+      "last_checked": "2026-03-24T07:41:43.288552",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"377f4adaaf51c29eb3c7d4ca38e3dc1f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/javascript.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/osascript.json": {
       "hash": "e2544bf63e132bce61a4fb85117bc859479970ad5aa1e8cfbc0ec6c890c1b590",
-      "last_checked": "2026-03-20T07:31:26.491093",
+      "last_checked": "2026-03-24T07:41:43.420995",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2c5454854680cc66c51a28c8801b100d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/osascript.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/osascriptbundle.json": {
       "hash": "e6a4dd70baa33be8bda37196fdb9aa739a7fc325845a8331e28ccff74f35f75d",
-      "last_checked": "2026-03-20T07:31:26.587813",
+      "last_checked": "2026-03-24T07:41:43.580079",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b4438f483c86fee77c4bd746a6232e77\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/osascriptbundle.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/makefile.json": {
       "hash": "62026cf36b467b79f1b98ac3e839c0af0b175b841cfde985eb8244d4f24c80fe",
-      "last_checked": "2026-03-20T07:31:26.671372",
+      "last_checked": "2026-03-24T07:41:43.696437",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"cc51ae44ed814e9beae7aee312137fc7\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/makefile.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/shellscript.json": {
       "hash": "8b943c939f09cdecbf50c1ab782b51e850007ece3f0a7087cc4006bc211b64b2",
-      "last_checked": "2026-03-20T07:31:26.745455",
+      "last_checked": "2026-03-24T07:41:43.815580",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c96a62176dc0a4fbecbab80a4cea68bc\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/shellscript.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/pythonscript.json": {
       "hash": "f370948a4c75e3f7012f866e13ca7150813ae34a73ef92ca81eb2d969c1f3a78",
-      "last_checked": "2026-03-20T07:31:26.828095",
+      "last_checked": "2026-03-24T07:41:43.928450",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7cd30f7f4ecaa6ccc2f3a4eca7068b36\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/pythonscript.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/rubyscript.json": {
       "hash": "c8902092b286058ac2c5ccd07bcf92b6a31236050c120ecde6bc63794bf71ae6",
-      "last_checked": "2026-03-20T07:31:26.951762",
+      "last_checked": "2026-03-24T07:41:44.058752",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"3f51a5c2252e8920662b68e1645d6356\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/rubyscript.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/perlscript.json": {
       "hash": "33931e078b6cbee9a02351538dbe40e6f195184186612ea3b357686a4a8deb91",
-      "last_checked": "2026-03-20T07:31:27.029845",
+      "last_checked": "2026-03-24T07:41:44.229012",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e55c5782c862f1e7d186ed3140b885fb\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/perlscript.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/phpscript.json": {
       "hash": "7f960a879b04c3e666ac8aa4f0765de68f7599b26075d049ca24deb0641cc804",
-      "last_checked": "2026-03-20T07:31:27.120036",
+      "last_checked": "2026-03-24T07:41:44.359625",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"fe5ddb4cd1280cc5b3f3e5ebf4b85441\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/phpscript.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/text.json": {
       "hash": "d99a2d8c1a88ff44071911b9428ae28bf1bf2ae99c2bd9acaa905c36218d9212",
-      "last_checked": "2026-03-20T07:31:27.198876",
+      "last_checked": "2026-03-24T07:41:44.481489",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"a07eadaae0d402c20153e64a5647eb19\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/text.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/plaintext.json": {
       "hash": "5989fc8033abedbebe685c7ca433bfc80166dc73db63e45baa952f25cbbef8e2",
-      "last_checked": "2026-03-20T07:31:27.272139",
+      "last_checked": "2026-03-24T07:41:44.615370",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e632d448bd0b4a0261414bc469ddbe0f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/plaintext.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/utf8plaintext.json": {
       "hash": "b1b152cef4be8caa9cfb242a2be5236174501697e1e32b58f3145dedef121b33",
-      "last_checked": "2026-03-20T07:31:27.353066",
+      "last_checked": "2026-03-24T07:41:44.742216",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"6060b6273538279ca826fb1f83173b98\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/utf8plaintext.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/utf16plaintext.json": {
       "hash": "d9228e5b0583104cc5b330ca77302957f9ba531f0778261c7b5f621b68b5cd42",
-      "last_checked": "2026-03-20T07:31:27.421291",
+      "last_checked": "2026-03-24T07:41:44.885071",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c277aed9695ba59e2b0822cd9648380c\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/utf16plaintext.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/utf16externalplaintext.json": {
       "hash": "9c7beaa6d15885cb2cf8587bb0bb36064b30a6e3356aa2804e60984bf276f28f",
-      "last_checked": "2026-03-20T07:31:27.489986",
+      "last_checked": "2026-03-24T07:41:45.032875",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"36a3c86f3d1406d5722da7360bcf3c5b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/utf16externalplaintext.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/url.json": {
       "hash": "dc92fd205fafc296b1e9bb43020d73b7b0b156aa0928afe33f6daf00892b91b4",
-      "last_checked": "2026-03-20T07:31:27.612422",
+      "last_checked": "2026-03-24T07:41:45.152496",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2e400a96b8654e4255e801da5a108ce4\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/url.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/fileurl.json": {
       "hash": "56720e08e79550ae9ea2daae94c555e70735ddf0c6b134551bb1e02f536c2c23",
-      "last_checked": "2026-03-20T07:31:27.692275",
+      "last_checked": "2026-03-24T07:41:45.290808",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"1b46d962d5451cafaf3d3da9c096f889\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/fileurl.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/urlbookmarkdata.json": {
       "hash": "411c9be74d4f34d8ca4257ad2b81ed6b90d40b69171fa24477342e3b41d7856c",
-      "last_checked": "2026-03-20T07:31:27.764285",
+      "last_checked": "2026-03-24T07:41:45.433406",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"195a33252719f3a6e17f7e84cbe908e6\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/urlbookmarkdata.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/item.json": {
       "hash": "25ad173ae6399d1ac1f914bf5869662d07c5c861c27655aad1e5fc6713d787ce",
-      "last_checked": "2026-03-20T07:31:27.835631",
+      "last_checked": "2026-03-24T07:41:45.560689",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"568bafa821313c06f5ffab6e8fad3a0d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/item.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/content.json": {
       "hash": "4e8854abdee859fbe4d108519eef878f35da20d845134f8f086f60d86eb0699e",
-      "last_checked": "2026-03-20T07:31:27.962400",
+      "last_checked": "2026-03-24T07:41:45.689702",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"58c4296b94d23aee62d55f8a42e7143c\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/content.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/compositecontent.json": {
       "hash": "b9c4d75b3da58cc02e187ef6d2496b836718cd57110d6f65d2411d8c805c57cd",
-      "last_checked": "2026-03-20T07:31:28.075860",
+      "last_checked": "2026-03-24T07:41:45.825196",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2dc7d1f7dedaaffad1172310d13f4248\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/compositecontent.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/data.json": {
       "hash": "fafc9060396b77d69a9323a92e41aff01e7cdb5bb5c7ea2eb81719f2784702df",
-      "last_checked": "2026-03-20T07:31:28.145148",
+      "last_checked": "2026-03-24T07:41:45.972542",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e3b90dc18e699da77ad0c6166237fc98\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/data.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/resolvable.json": {
       "hash": "b7d12a6bc66dbdb792b54a2abd2100377dcc2cdb5883677c6c621d8ac65b0013",
-      "last_checked": "2026-03-20T07:31:28.219094",
+      "last_checked": "2026-03-24T07:41:46.129134",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"58cfc77cc83a2e758a64dc3997bb1af2\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/resolvable.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/package.json": {
       "hash": "cfe039717074b6ee9128bd006ed355e13fba0a3dee3707271e88208b65428019",
-      "last_checked": "2026-03-20T07:31:28.295824",
+      "last_checked": "2026-03-24T07:41:46.256979",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b1140843437f860003b85f6296fc396b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/package.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/bundle.json": {
       "hash": "7c9a08f94bacdcf546668717b6d2f0d75be635828315a479340370e9b429a632",
-      "last_checked": "2026-03-20T07:31:28.367258",
+      "last_checked": "2026-03-24T07:41:46.382066",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"230af6595f78d27b1587b88639f9ebb5\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/bundle.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/pluginbundle.json": {
       "hash": "f14ff9b775985abb00d5e9b51e65883cb3c2fc123706ebee0fffeab83fe25c37",
-      "last_checked": "2026-03-20T07:31:28.452512",
+      "last_checked": "2026-03-24T07:41:46.515623",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f64b545b274a36b5b7fa869ca0aecb64\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/pluginbundle.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/application.json": {
       "hash": "148befbbf94ab9352e8714ce43d69ac9e026856eabeaf79ed25335791998e55b",
-      "last_checked": "2026-03-20T07:31:28.523768",
+      "last_checked": "2026-03-24T07:41:46.648663",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"11aa3a39f78e0e0dc4efffb097700754\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/application.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/sourcecode.json": {
       "hash": "b0274ad1423fff917ca95cb767db826ba7a2b931cf9e33c1cf9abb27430fd01b",
-      "last_checked": "2026-03-20T07:31:28.594627",
+      "last_checked": "2026-03-24T07:41:46.822139",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"af21a5515bfc7190e3018cfb83b861fe\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/sourcecode.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/bookmark.json": {
       "hash": "780ded06edfbdbaa747035023e748c8c7d1ddb1252ee1457f189537914c5ab77",
-      "last_checked": "2026-03-20T07:31:28.670033",
+      "last_checked": "2026-03-24T07:41:46.934633",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"74c46d6f9f4b93fea3452a238a3e3ea2\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/bookmark.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/log.json": {
       "hash": "9fc7f3822ed63cc7ee1cffdc986213d46e18383fd6c177d547ae34d7af0914d2",
-      "last_checked": "2026-03-20T07:31:28.741009",
+      "last_checked": "2026-03-24T07:41:47.075937",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"78703bf40a94d54a7b904910d3cad1c3\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/log.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/spreadsheet.json": {
       "hash": "2fe2cca9101c2b72422c495727e79e27b75549759ab20450af24b6216fdec5f6",
-      "last_checked": "2026-03-20T07:31:28.823263",
+      "last_checked": "2026-03-24T07:41:47.203923",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"ec94f5c2ae8a96a94055f9dd261472fa\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/spreadsheet.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/presentation.json": {
       "hash": "043cf350e6158c3bc4117bfdaed9fdea6fb04c3ba5a28990e2dd6e6756df1fa1",
-      "last_checked": "2026-03-20T07:31:28.960191",
+      "last_checked": "2026-03-24T07:41:47.340572",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7268e1c3a31634087847f16d73327128\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/presentation.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/database.json": {
       "hash": "401b2fd6b9c2e35b65a604e48d6c2be2418cd2c05b4d39db3385644b74a201e0",
-      "last_checked": "2026-03-20T07:31:29.035014",
+      "last_checked": "2026-03-24T07:41:47.463922",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"a4cf36f42efd45f2c6d6f79d2fecb7ad\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/database.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/message.json": {
       "hash": "4f8c2cf63e1f9dd796d33fcfbe5bbcee575357f208b81771896a9a98b27bfef5",
-      "last_checked": "2026-03-20T07:31:29.109112",
+      "last_checked": "2026-03-24T07:41:47.584897",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b8a7d25297d86054632e1d7a9d151234\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/message.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/contact.json": {
       "hash": "b29c6abbdddc96211c81bdd025e956029f48a74179da5a87bd4e2b3d542703c7",
-      "last_checked": "2026-03-20T07:31:29.180141",
+      "last_checked": "2026-03-24T07:41:47.718645",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e33e5050cbe0e08c227e1f38796bd695\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/contact.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/calendarevent.json": {
       "hash": "fc69c9862b58809c85a197c997c5dabe98832febb3e0819c8abce42c4a5e47b2",
-      "last_checked": "2026-03-20T07:31:29.269789",
+      "last_checked": "2026-03-24T07:41:47.853288",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c6804502f1a97d500da66c29119637cf\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/calendarevent.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/todoitem.json": {
       "hash": "814880920d5d21bf7a4eadb3a48f82be0c2e499ebc37aff7f3bf7aa5552aaf81",
-      "last_checked": "2026-03-20T07:31:29.346803",
+      "last_checked": "2026-03-24T07:41:47.976114",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"9a39e2e8c0f58a595265b94aa33bbb0b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/todoitem.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/emailmessage.json": {
       "hash": "c078cd2c4b0e5fb95ec953a653660ce4391b82b08709e886672cc1c8efebce23",
-      "last_checked": "2026-03-20T07:31:29.420069",
+      "last_checked": "2026-03-24T07:41:48.101763",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f29b4dc1c0dc152c94b9ac6bf9018340\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/emailmessage.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/font.json": {
       "hash": "ef40689c55cda7e9666aa97310e98f29f3e13852617ffff7ecc71f27abb46e5f",
-      "last_checked": "2026-03-20T07:31:29.536604",
+      "last_checked": "2026-03-24T07:41:48.239184",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"6631a318974394687a42670ea9be0e8e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/font.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/image.json": {
       "hash": "5184b9f3c599e842479c2b41b4d41dde39aba43532c6fd8cfe0affecd2db3195",
-      "last_checked": "2026-03-20T07:31:29.616710",
+      "last_checked": "2026-03-24T07:41:48.389858",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"75a24fb16f4b8f5c8ba277dc4b247668\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/image.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/audio.json": {
       "hash": "ec8c4b48ba621446b4156e1a4efbffeb85cf7a626add76628bc15ecb96a2c847",
-      "last_checked": "2026-03-20T07:31:29.687716",
+      "last_checked": "2026-03-24T07:41:48.503144",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"3b011006f5b00f62bbd640f5f46f1a0b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/audio.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/audiovisualcontent.json": {
       "hash": "d392bc124336f0be62d6a0e33b0761ae6d612a4d85af2cf6e7173070a969230c",
-      "last_checked": "2026-03-20T07:31:29.757816",
+      "last_checked": "2026-03-24T07:41:48.646149",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"1297c3dd97d2fd53994a933ce2a19218\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/audiovisualcontent.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/movie.json": {
       "hash": "3bc8f8e77dc48318b98a39279f033888c0567ed5bfa7d1c5de69c1ca0dc6171b",
-      "last_checked": "2026-03-20T07:31:29.830882",
+      "last_checked": "2026-03-24T07:41:48.763124",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"0a9f70ef0a00f2b49aecbfcf4c9fdd52\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/movie.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/video.json": {
       "hash": "6ce77b545059fd0b84eba052da54dab84bc135b94df1776e84088e615e5835df",
-      "last_checked": "2026-03-20T07:31:29.898659",
+      "last_checked": "2026-03-24T07:41:48.915416",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"eca8310c621fe35c8fd1834071dce38a\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/video.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttagclass/filenameextension.json": {
       "hash": "61db969864187904335211111e90bf6907a951c336af0f42f096ca589a25b6f7",
-      "last_checked": "2026-03-20T07:31:29.972330",
+      "last_checked": "2026-03-24T07:41:49.025506",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"02dad71b176e65c624c22eb1f6e90ee8\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttagclass/filenameextension.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttagclass/mimetype.json": {
       "hash": "025d9fc259b2df9fac86b419cfb45e0132b79bb981707323c263d91b3671a674",
-      "last_checked": "2026-03-20T07:31:30.046324",
+      "last_checked": "2026-03-24T07:41:49.135250",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"0aa06881a92813482a5169bdf9947bbe\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttagclass/mimetype.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/types(tag:tagclass:conformingto:).json": {
       "hash": "116bd16e476d2b97211f65d63ea694645d52566c752f6bbfb038875469ddd14a",
-      "last_checked": "2026-03-20T07:31:30.128533",
+      "last_checked": "2026-03-24T07:41:49.257859",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"c1b625a254d569b87616b1652ee0a387\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/types-tagtagclassconformingto.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/init(_:).json": {
       "hash": "cf9de2b9a38226e9e8b62feeab6609d343cfc7556f76e1441be68a0e39f62c94",
-      "last_checked": "2026-03-20T07:31:30.204985",
+      "last_checked": "2026-03-24T07:41:49.389660",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"dbaa9d3a761c1a26c55eb8d84f3705ae\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/init.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/init(mimetype:conformingto:).json": {
       "hash": "ed3f70aa5386c12ac739835b0a9d9222c976794e59844328d0a7e240355038a5",
-      "last_checked": "2026-03-20T07:31:30.364431",
+      "last_checked": "2026-03-24T07:41:49.522609",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2cded10cc288af930f83eaee6ff0f7fd\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/init-mimetypeconformingto.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/init(filenameextension:conformingto:).json": {
       "hash": "d779833ac4d9309f623c1459816752bb21783fd24c4e22792aa20dcd2741d1a1",
-      "last_checked": "2026-03-20T07:31:30.433672",
+      "last_checked": "2026-03-24T07:41:49.641562",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"901552cccb989a5d8d2c78cbd563517f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/init-filenameextensionconformingto.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/init(tag:tagclass:conformingto:).json": {
       "hash": "5991d6e4b4fdcfa1e2816fec0d59b892a93d117edbcbce85333d1c1c43739087",
-      "last_checked": "2026-03-20T07:31:30.505765",
+      "last_checked": "2026-03-24T07:41:49.819262",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e72364f7bf4638e5f6603178a8bccf82\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/init-tagtagclassconformingto.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/init(exportedas:conformingto:).json": {
       "hash": "128d99c05502fbebaad404391043b839949c97a0d4e0b3121782da87fd81d9cc",
-      "last_checked": "2026-03-20T07:31:30.576090",
+      "last_checked": "2026-03-24T07:41:49.951610",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"367cf1a7c441dc09f72f6fde4bfd8ef9\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/init-exportedasconformingto.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/init(importedas:conformingto:).json": {
       "hash": "0bbdbb8ee746825cd2f9d92945cd73b998ea9489c6df5f39f96cd9e8a648fcf3",
-      "last_checked": "2026-03-20T07:31:30.648762",
+      "last_checked": "2026-03-24T07:41:50.080993",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"561e06c13b405f9304dc345349c92565\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/init-importedasconformingto.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/referencetype.json": {
       "hash": "da6d28883932c52a55ae6eecd8c8571aced2482bd55ceb582525d7a9b12d5c76",
-      "last_checked": "2026-03-20T07:31:30.717755",
+      "last_checked": "2026-03-24T07:41:50.230138",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"254f9102cad1d463b58d25f71d827612\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/referencetype.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/identifier.json": {
       "hash": "5a3002d687b8cf0f4d727f1fa9744546169e9835ed308814635069d05f786c85",
-      "last_checked": "2026-03-20T07:31:30.784266",
+      "last_checked": "2026-03-24T07:41:50.351254",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e1940ba83f5f020e6ee06836a9f793ac\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/identifier.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/preferredfilenameextension.json": {
       "hash": "73ba7c9fc7983aeebb9e3d04321f04ec157e343c5983b1dc41d1e17ccd228061",
-      "last_checked": "2026-03-20T07:31:30.860160",
+      "last_checked": "2026-03-24T07:41:50.499280",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"34114cf2eac97d3bf070c25f3da42ec8\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/preferredfilenameextension.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/preferredmimetype.json": {
       "hash": "fe56924e30d7494593030cd5f3d4568a94354fe54799e710db3e862ce2583ded",
-      "last_checked": "2026-03-20T07:31:30.954959",
+      "last_checked": "2026-03-24T07:41:50.626294",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"4938ba518202cea776a91fcf2b9d94dc\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/preferredmimetype.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/tags.json": {
       "hash": "da76c18c6d26dc82bd709974261c5bdf6bb98a270abc4f0ed761d3fd3ad74d3c",
-      "last_checked": "2026-03-20T07:31:31.027296",
+      "last_checked": "2026-03-24T07:41:50.757778",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"4951e7a368892772fb6483e04759c37c\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/tags.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/isdeclared.json": {
       "hash": "8344bf071a85766497c20d3858b570682f4624516f6abb24d91a83962f798473",
-      "last_checked": "2026-03-20T07:31:31.151534",
+      "last_checked": "2026-03-24T07:41:50.911439",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"00d116ef16a79532ff6c13d5baf8058e\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/isdeclared.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/isdynamic.json": {
       "hash": "cc9732bda56831ed4220c3516f08e05f69c7490b34bd16155e642437654fbe61",
-      "last_checked": "2026-03-20T07:31:31.234521",
+      "last_checked": "2026-03-24T07:41:51.055382",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"b4599f69664bb6527c3980c3147b4072\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/isdynamic.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/ispublic.json": {
       "hash": "a14ee276e0595f4dae4c1cfb8ecf9ffffafb48d0e8530e13b6e027f034ccfa60",
-      "last_checked": "2026-03-20T07:31:31.356742",
+      "last_checked": "2026-03-24T07:41:51.177684",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"a105cd4a1d7bf62e90885368f73d6f98\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/ispublic.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/referenceurl.json": {
       "hash": "7979aeb9a4a2cbfbc7797810c7c5c23fe0cd41679b27f6a70b0ab1edd43b1fc1",
-      "last_checked": "2026-03-20T07:31:31.435190",
+      "last_checked": "2026-03-24T07:41:51.292553",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"416e6bad93ea760fecc0f2104814c6b5\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/referenceurl.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/version.json": {
       "hash": "c981bbf72d35801d5e5f562ae7da8ee21dca6e864bd80dc6bb82a8ba17201b0c",
-      "last_checked": "2026-03-20T07:31:31.564600",
+      "last_checked": "2026-03-24T07:41:51.425840",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7761506fe7de90b4b2fe09a92c3c46ea\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/version.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/supertypes.json": {
       "hash": "ec621aa1e131bdf5a1591e00b9e58c0f7c5de74e698fdcaeea02b7c9040099e8",
-      "last_checked": "2026-03-20T07:31:31.629913",
+      "last_checked": "2026-03-24T07:41:51.562937",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"839cc267ae92eab1e0f0e5adc1048872\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/supertypes.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/conforms(to:).json": {
       "hash": "32eba193458b08a57830b74589156e768de8aeef9925e26b3475fa8650c5988b",
-      "last_checked": "2026-03-20T07:31:31.714768",
+      "last_checked": "2026-03-24T07:41:51.684926",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"74cdf944af1f2333a5cbc5dd7f6d2f25\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/conforms-to.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/issubtype(of:).json": {
       "hash": "20428af4a6e1e7fb469d81ffb9353a70b1cfa0c1783ee112557177bf5abf55ec",
-      "last_checked": "2026-03-20T07:31:31.793246",
+      "last_checked": "2026-03-24T07:41:51.843793",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"3784f7f5b75a710f6f7ed52c1fdf647d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/issubtype-of.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/issupertype(of:).json": {
       "hash": "fec75ba9885bd6fbe587dfe5933a0144feec8c27b4374d52677c4b812f8286cc",
-      "last_checked": "2026-03-20T07:31:31.863467",
+      "last_checked": "2026-03-24T07:41:51.954885",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"afebffc17e4489201e7db5e54c1dc11b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/issupertype-of.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/localizeddescription.json": {
       "hash": "a31db73a8d95727f287e8b31545690f2ecd44eba220f1d6077f1d9d00a316112",
-      "last_checked": "2026-03-20T07:31:31.982082",
+      "last_checked": "2026-03-24T07:41:52.075642",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"d88db4dbb21f0acff8cba5931485a18f\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/localizeddescription.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/ahap.json": {
       "hash": "919368a3794c2378ce10f097ef552aecb20236032107e133a70f1d602a3c1e87",
-      "last_checked": "2026-03-20T07:31:32.049964",
+      "last_checked": "2026-03-24T07:41:52.207392",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"44515b27b1564805951812350ef95665\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/ahap.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/css.json": {
       "hash": "cf09ec08d796e297a6f01c4f4774a9933b1506553e276fafd49cefbd97f23bf2",
-      "last_checked": "2026-03-20T07:31:32.180713",
+      "last_checked": "2026-03-24T07:41:52.343817",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2898bdd9175e4234402095ebdee81176\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/css.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/dng.json": {
       "hash": "2a1187cfa58f0020471a7f441eb2df2159047e966625660c8b0263cbd2d56f52",
-      "last_checked": "2026-03-20T07:31:32.331997",
+      "last_checked": "2026-03-24T07:41:52.450531",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"ccc9909f04c60f42265cb1f1f354a94d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/dng.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/exr.json": {
       "hash": "1feaf33247b7fb90fa097c4bfd291bf33ac71e8629ea2e4e856c427f91c8638d",
-      "last_checked": "2026-03-20T07:31:32.409850",
+      "last_checked": "2026-03-24T07:41:52.611085",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"33b3bccac10e6fceb3d8339f0ef4d9d2\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/exr.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/geojson.json": {
       "hash": "aebfcd5ec1668c244f6c0ff6d83e530b5d0db719be24c43fef9352fa97c747b7",
-      "last_checked": "2026-03-20T07:31:32.490080",
+      "last_checked": "2026-03-24T07:41:52.736382",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"87919c4901e666234ec73381e3ef22ee\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/geojson.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/heics.json": {
       "hash": "efa4b923772758dcc2e8de5ab11ec588e1de55eb3663d51ef7a6700df845586f",
-      "last_checked": "2026-03-20T07:31:32.553854",
+      "last_checked": "2026-03-24T07:41:52.858212",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7203df629a50d0ab7c654cde6d9d5e53\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/heics.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/jpegxl.json": {
       "hash": "a8df83a29620f82f57f200f626595f0c94a5397837a4531aba298dc2d5e2f64c",
-      "last_checked": "2026-03-20T07:31:32.628891",
+      "last_checked": "2026-03-24T07:41:52.978695",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"07d9eaf6ccac33347e60ff25034278c9\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/jpegxl.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/linkpresentationmetadata.json": {
       "hash": "34fdbb69d80ce3461d68b3ee9f4f89fcce6451c1e009dabfebcf8399ed4ec2bb",
-      "last_checked": "2026-03-20T07:31:32.694389",
+      "last_checked": "2026-03-24T07:41:53.116686",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f406e26a3f1bbd4aad0156a791f6f0ee\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/linkpresentationmetadata.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/tararchive.json": {
       "hash": "39f603c7aecaf3b5d010bcf3abf4d536636006fa6ee7c1dad5cc5d5342eb0370",
-      "last_checked": "2026-03-20T07:31:32.853223",
+      "last_checked": "2026-03-24T07:41:53.386356",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"524e3b30530cbb8be78585067527b8aa\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/tararchive.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/referenceconvertible-implementations.json": {
       "hash": "235fd55c3e57e3c619497bd05a8ba077cb1f714a24e6162f4938cad9be96cd91",
-      "last_checked": "2026-03-20T07:31:33.042629",
+      "last_checked": "2026-03-24T07:41:53.512839",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"465006c70e6dbcc7db942e0939796f81\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/referenceconvertible-implementations.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/types(tag:tagclass:conformingto:).json": {
       "hash": "4ca6d8b3ec3241b062dd0d2e1567be9ada487311221dd5feabe1b18a531aa71e",
-      "last_checked": "2026-03-20T07:31:33.126333",
+      "last_checked": "2026-03-24T07:41:53.641238",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"918cd379302aff43f7bcc15230230c09\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/types-tagtagclassconformingto.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(_:).json": {
       "hash": "d0150b8a7e04aa84fa1dc941188b08d67fd3eb0691d3189749d74b5f535b9c9f",
-      "last_checked": "2026-03-20T07:31:33.229407",
+      "last_checked": "2026-03-24T07:41:53.778565",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"92342252ea792c1990ec80fd6b81f770\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(mimetype:).json": {
       "hash": "325fc1f0b037de7bd32be05c71d014e801c0c34163b46d76853560512afa89f3",
-      "last_checked": "2026-03-20T07:31:33.315925",
+      "last_checked": "2026-03-24T07:41:53.906458",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"bdd4e275b4a718ff5710656767c55b6b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-mimetype.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(mimetype:conformingto:).json": {
       "hash": "60683f3654a28c099528cc8fc56fb45ef2d6d29769a2a9735eddc988da580a16",
-      "last_checked": "2026-03-20T07:31:33.387361",
+      "last_checked": "2026-03-24T07:41:54.028421",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"bf68f7bd457b63891bed54931f564352\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-mimetypeconformingto.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(filenameextension:).json": {
       "hash": "ce29ccb0b94d8c3b557e47f9140b3b78c8d9488072e13dfb9d9452c925dbefce",
-      "last_checked": "2026-03-20T07:31:33.467048",
+      "last_checked": "2026-03-24T07:41:54.164076",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"7861099018d2b5299d7263a633c61cf3\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-filenameextension.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(filenameextension:conformingto:).json": {
       "hash": "9937769959c22a32fa62e6f0c80ade0dd917da9fe74f42c3e4290c43332f8365",
-      "last_checked": "2026-03-20T07:31:33.549271",
+      "last_checked": "2026-03-24T07:41:54.300618",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"d14141389c55eb00f09f38dd4d5bf647\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-filenameextensionconformingto.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(tag:tagclass:conformingtotype:).json": {
       "hash": "8ef94b6a295156c8aaff9b54a3469e995c1790bdafd1531b830e8b2ff400f745",
-      "last_checked": "2026-03-20T07:31:33.626571",
+      "last_checked": "2026-03-24T07:41:54.436773",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"138705f1635509046099b9ea58134ec0\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-tagtagclassconformingtotype.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(exportedas:).json": {
       "hash": "f3aa6376c08c0d476cab8cc7299fe93f5e07a97549fa1da5929cbbfdc4d2ea29",
-      "last_checked": "2026-03-20T07:31:33.743126",
+      "last_checked": "2026-03-24T07:41:54.563059",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"207142e93478133af604e4231437c242\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-exportedas.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(exportedas:conformingto:).json": {
       "hash": "f524d1c425d6dbd052fa87ec6c6f7fb64972e54bcec5e135c09a7676203a2870",
-      "last_checked": "2026-03-20T07:31:33.913379",
+      "last_checked": "2026-03-24T07:41:54.695911",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"e6b4fb220602f38b13d2abf2acb0885d\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-exportedasconformingto.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(importedas:).json": {
       "hash": "d2f230d77d3f654b45c0a06fc0c213a9f8efe34e02f0f6f6d2bca3c83d8e943d",
-      "last_checked": "2026-03-20T07:31:33.987740",
+      "last_checked": "2026-03-24T07:41:54.822094",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"75770abcee2f905af8951bc2a9c147ca\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-importedas.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(importedas:conformingto:).json": {
       "hash": "899566d3a1062e1d49cacef51d583473ba37057fc5159d0e7a031edef1840e2f",
-      "last_checked": "2026-03-20T07:31:34.070399",
+      "last_checked": "2026-03-24T07:41:54.950700",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"2dcbf2cf9305203d8f9fe7d6e1175de0\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-importedasconformingto.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/isdeclared.json": {
       "hash": "c43fae22df18a3a2c017368bc87fabc6b0ed364af2fb4fa16492db7ed4485209",
-      "last_checked": "2026-03-20T07:31:34.153078",
+      "last_checked": "2026-03-24T07:41:55.099212",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f3ab5db00c7967a83389c479d28a158c\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/isdeclared.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/isdynamic.json": {
       "hash": "e8e4e948498b60c95c4c6c2a530be2b7c3c12c9c41573dd6ae6fd242d1ce6e3c",
-      "last_checked": "2026-03-20T07:31:34.227155",
+      "last_checked": "2026-03-24T07:41:55.222639",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"348a15e295856e92ac7f3282efca55fc\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/isdynamic.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/ispublic.json": {
       "hash": "d9c808d6c59add3de6bb842d20b5eb1a23898eec70e64229469ba4d2df45a513",
-      "last_checked": "2026-03-20T07:31:34.309446",
+      "last_checked": "2026-03-24T07:41:55.357734",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"d036daa4ffd05ba27b7d2f2ea30042ce\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/ispublic.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/conforms(to:).json": {
       "hash": "cc0170f438f64b3a3225e47f1bb8d94539818286f19fc63f57f97726588d158f",
-      "last_checked": "2026-03-20T07:31:34.392053",
+      "last_checked": "2026-03-24T07:41:55.481666",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"9c8db46e26e1f55b14687799c2a0e4f1\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/conforms-to.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/issubtype(of:).json": {
       "hash": "4d2f8149f6b734cfd20bb237e80ac85621c4749fcd62d33789c6ce90a46dc366",
-      "last_checked": "2026-03-20T07:31:34.467214",
+      "last_checked": "2026-03-24T07:41:55.608086",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"f35640623514e65b372773bc4b4a3dec\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/issubtype-of.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/issupertype(of:).json": {
       "hash": "575ee9d59e289854e752613e05e0b2826d859ddf42ca3c9b9dad0ef45df704d5",
-      "last_checked": "2026-03-20T07:31:34.541791",
+      "last_checked": "2026-03-24T07:41:55.717215",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"9bdb2f2e4574277fd8599c114590f7a4\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/issupertype-of.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttype-swift.struct/paperkit.json": {
       "hash": "b5d6c45ec1795dae66b5309f7cf294f0be9f55df03fea00b4d67c773f76bd0aa",
-      "last_checked": "2026-03-20T07:31:32.781018",
+      "last_checked": "2026-03-24T07:41:53.243728",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"84715a0eb8c773e4d69ee75ec9d0ca43\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttype-swift.struct/paperkit.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/init(tag:tagclass:conformingto:).json": {
       "hash": "2b019ee90bc59c6e5b9e4154e95a0ab218c9e744e975a17691a2c219d62d115b",
-      "last_checked": "2026-03-20T07:31:34.630552",
+      "last_checked": "2026-03-24T07:41:55.860979",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"eabea8b14e731f578c7064668ca9920b\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/init-tagtagclassconformingto.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/uniformtypeidentifiers/uttypereference/uttypereference-implementations.json": {
       "hash": "304a41fdc5ee1b3d58174e8826b1032106682566cf726a1d0f550a3b91cbaca1",
-      "last_checked": "2026-03-20T07:31:34.703364",
+      "last_checked": "2026-03-24T07:41:56.135559",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:31:17.120173",
+      "session_id": "2026-03-24T07:41:27.969368",
       "etag": "W/\"691f517119ecaf61cac9df7db33ee1f3\"",
       "file_path": "documentation/UniformTypeIdentifiers/uttypereference/uttypereference-implementations.md"
     },

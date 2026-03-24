@@ -37,7 +37,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Pre-Order Start Date | The date the app became available for pre-order. | `date` | ✔ | ✔ |
 | Pre-Order End Date | The last date the app is available for pre-order. | `date` | ✔ | ✔ |
 | Pre-Orders Placed | The total number of pre-orders placed. | `integer` | ✔ | ✔ |
-| Pre-Order Canceled | The total number of pre-orders canceled. | `integer` | ✔ | ✔ |
+| Pre-Orders Canceled | The total number of pre-orders canceled. | `integer` | ✔ | ✔ |
 
 #### Glossary
 

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:24.261210",
+    "last_updated": "2026-03-24T07:43:22.214579",
     "total_pages": 130,
-    "session_id": "2026-03-20T07:32:18.013176"
+    "session_id": "2026-03-24T07:43:10.103543"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SerialDriverKit.json": {
       "hash": "22c5f180383674b36296dc04f44f5aa18e6ccfe50ff899ea37970289784720fd",
-      "last_checked": "2026-03-20T07:32:18.331175",
+      "last_checked": "2026-03-24T07:43:10.485637",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"841e33b49d7668f1ec3d28a848ef1888\"",
       "file_path": "documentation/SerialDriverKit/SerialDriverKit.md"
     },
     "https://developer.apple.com/documentation/SerialDriverKit": {
       "hash": "22c5f180383674b36296dc04f44f5aa18e6ccfe50ff899ea37970289784720fd",
-      "last_checked": "2026-03-20T07:32:18.229561",
+      "last_checked": "2026-03-24T07:43:10.386699",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"841e33b49d7668f1ec3d28a848ef1888\"",
       "file_path": "documentation/SerialDriverKit/SerialDriverKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial.json": {
       "hash": "c04c85334a3783a2e876e698a461ab87c1c8374a2fee016fc09dc9e60ff769a3",
-      "last_checked": "2026-03-20T07:32:18.630087",
+      "last_checked": "2026-03-24T07:43:10.776450",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"a9f4342352d4b448731ab59e9130e933\"",
       "file_path": "documentation/SerialDriverKit/iouserserial.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/serialdriverkit-enumerations.json": {
       "hash": "81e6496a236be6265d137a2bd02d06b12d5c00cd9396c0a0896df4b52a1c78f7",
-      "last_checked": "2026-03-20T07:32:18.693489",
+      "last_checked": "2026-03-24T07:43:10.943943",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"5480b0786336c811ed7521ede030967a\"",
       "file_path": "documentation/SerialDriverKit/serialdriverkit-enumerations.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/serialdriverkit-data-types.json": {
       "hash": "d0bfadc279483262289fcdee5d4f1bb72707313c8eb75b380f579a6dc329a57b",
-      "last_checked": "2026-03-20T07:32:18.757994",
+      "last_checked": "2026-03-24T07:43:11.243285",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"0488cb33cef9ee1a739944172347f16d\"",
       "file_path": "documentation/SerialDriverKit/serialdriverkit-data-types.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit.json": {
       "hash": "84a5ad97520bd11c650f0e6fd419a775c9a7beba072c2b924d986449295c741f",
-      "last_checked": "2026-03-20T07:32:18.827887",
+      "last_checked": "2026-03-24T07:43:11.402989",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"e07836939368afce3bf00d22c786d5f7\"",
       "file_path": "documentation/SerialDriverKit/driverkit.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_le.json": {
       "hash": "bcd8f8a8cf981576888a087d46ccf66469dd698a0ce2d3ccedf31627f14f0255",
-      "last_checked": "2026-03-20T07:32:18.950532",
+      "last_checked": "2026-03-24T07:43:11.700999",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"c41a07011d1efcb13793898e2521e656\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-le.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_rng.json": {
       "hash": "3aa8bcea1282c926959d4e097c0c4027a0ab336e5339405278da68cbc208f9b3",
-      "last_checked": "2026-03-20T07:32:19.070909",
+      "last_checked": "2026-03-24T07:43:11.869060",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"f0427b87db078982810b607bf2a8002b\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-rng.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kiottybasenamekey.json": {
       "hash": "f3d7a7b51f63011a1b123ab6b9f0f7e6db704d07b67491eb94be840cb642ff03",
-      "last_checked": "2026-03-20T07:32:19.189323",
+      "last_checked": "2026-03-24T07:43:12.162155",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"878573195f5186d5a9f4be241b5825dd\"",
       "file_path": "documentation/SerialDriverKit/kiottybasenamekey.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kiottysuffixkey.json": {
       "hash": "c60d76f3a68c0ce5a148d31233f6aad5ea237ddb71eb4665322f26bf88698b71",
-      "last_checked": "2026-03-20T07:32:19.303946",
+      "last_checked": "2026-03-24T07:43:12.325881",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"ac8fcf11b23a7fbd0a6f44a0d2f773b6\"",
       "file_path": "documentation/SerialDriverKit/kiottysuffixkey.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialmemoryarena.json": {
       "hash": "d73f32f1e55f502d34ada556571baed3c9329c2f23440f030ffe582e87353a6a",
-      "last_checked": "2026-03-20T07:32:19.434009",
+      "last_checked": "2026-03-24T07:43:12.487644",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"8fe254f3cd1bdc5b63265860601c6189\"",
       "file_path": "documentation/SerialDriverKit/kioserialmemoryarena.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialmemoryrxbuf.json": {
       "hash": "283d153accd8cdf6d18a80031a0fabdee6f6c6e23776b57422912a682b8ec14e",
-      "last_checked": "2026-03-20T07:32:19.516196",
+      "last_checked": "2026-03-24T07:43:12.669289",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"987491cdc7ba94a4ba71e9d20b308164\"",
       "file_path": "documentation/SerialDriverKit/kioserialmemoryrxbuf.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialmemorytxbuf.json": {
       "hash": "ca441a65617d3288cff85807f96f078901d037130f8eb68556eb8e0b98cb70bc",
-      "last_checked": "2026-03-20T07:32:19.592179",
+      "last_checked": "2026-03-24T07:43:12.855775",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"03a1f2da36beed3e3a77808814485f33\"",
       "file_path": "documentation/SerialDriverKit/kioserialmemorytxbuf.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialptymaster.json": {
       "hash": "48803d287f3be50b37e86968e1d68069e0d52c25d9da4e66de9107563697f926",
-      "last_checked": "2026-03-20T07:32:19.711002",
+      "last_checked": "2026-03-24T07:43:13.009979",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"da26e6bcaaa9b4fa3ea46bc6f11de3d4\"",
       "file_path": "documentation/SerialDriverKit/kioserialptymaster.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialuserclient.json": {
       "hash": "0cc98a6105ee5649fa0ea086a030e0dbdb4d48fa856a9a1f2e5c6661d737ddd2",
-      "last_checked": "2026-03-20T07:32:19.777322",
+      "last_checked": "2026-03-24T07:43:13.171515",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"7f2b5a11765375b42ba057a734e14313\"",
       "file_path": "documentation/SerialDriverKit/kioserialuserclient.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialuserclientioctl.json": {
       "hash": "4bd979213030b4e797135579c80690953f6e4b022c62fec2de2e1d2e0ba4122b",
-      "last_checked": "2026-03-20T07:32:19.898311",
+      "last_checked": "2026-03-24T07:43:13.309412",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"4f4caf7d148b29214e87993815f36251\"",
       "file_path": "documentation/SerialDriverKit/kioserialuserclientioctl.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialuserclientopen.json": {
       "hash": "0c5944fee8a1c5e8d795b4f154f31d084d0cd95498044d8c8aca9ee068cbdcf6",
-      "last_checked": "2026-03-20T07:32:20.038207",
+      "last_checked": "2026-03-24T07:43:13.612586",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"86259f263051aff50fc6e7610fddf339\"",
       "file_path": "documentation/SerialDriverKit/kioserialuserclientopen.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/kioserialuserclientpoll.json": {
       "hash": "5677093142a95ec57721acadd8a2bfdf9b764d96815960ace7c805e882c89a66",
-      "last_checked": "2026-03-20T07:32:20.101286",
+      "last_checked": "2026-03-24T07:43:13.940025",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b875dc9ac3d2ad0818287dd8bfb2207c\"",
       "file_path": "documentation/SerialDriverKit/kioserialuserclientpoll.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/init.json": {
       "hash": "8695235cdebfc7b8dff1582f045f9cfd41f1feb64d363ed447c38cc09acc387e",
-      "last_checked": "2026-03-20T07:32:20.167978",
+      "last_checked": "2026-03-24T07:43:14.253330",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"bbc3fc8b0aa281c27529da78c35f8b15\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/init.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/start.json": {
       "hash": "e6a7e84d8730cc5f6ff3479e20987e682969cfc7f71199fffbba152ec2094a9f",
-      "last_checked": "2026-03-20T07:32:20.242873",
+      "last_checked": "2026-03-24T07:43:14.379607",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"755d8745bdb368bb64aeb63500388674\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/start.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/stop.json": {
       "hash": "7ceffd536bf5e6d717f380c369d8d61c22dede16604c2f642d3a80b659868869",
-      "last_checked": "2026-03-20T07:32:20.322396",
+      "last_checked": "2026-03-24T07:43:14.678778",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"cea33fd8721dfc1602569b8e9ce3d888\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/stop.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/free.json": {
       "hash": "9d5ad058af01cbeaf2dd157929d9d9625cb01800eeee5a272f33c864e94056f8",
-      "last_checked": "2026-03-20T07:32:20.401179",
+      "last_checked": "2026-03-24T07:43:14.980111",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"c29f7176c1e7ddcd45a165bb3e06d1d7\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/free.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/initwith.json": {
       "hash": "186118b6a81f723a8f95152b659ee04e1287298b98d8f9f8386228a020d6b0de",
-      "last_checked": "2026-03-20T07:32:20.470936",
+      "last_checked": "2026-03-24T07:43:15.155515",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"bc51c85c7ece1968ef0e9651371e93b2\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/initwith.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwactivate.json": {
       "hash": "aac08ccfefa17456069b84854bb79f5e06dd842f147994cffcfcaf327dabf785",
-      "last_checked": "2026-03-20T07:32:20.592369",
+      "last_checked": "2026-03-24T07:43:15.295067",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b5d9a988a956a7b9ee42b7a1fb570d47\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwactivate.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwdeactivate.json": {
       "hash": "9fdc1857f1065d9d0ddb7d470cb178864354d322d446c4b6465a6f964c139f72",
-      "last_checked": "2026-03-20T07:32:20.732841",
+      "last_checked": "2026-03-24T07:43:15.405842",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"ee305694c8284d3bde93ba02d4d82f15\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwdeactivate.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/connectqueues.json": {
       "hash": "b25b4fa61e9978958643c31bdbfc9bca19364e87fc048a82cbfd04d34f7d9d56",
-      "last_checked": "2026-03-20T07:32:20.826730",
+      "last_checked": "2026-03-24T07:43:15.576803",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"c39abfb17ebe481b1a9427e5341f8240\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/connectqueues.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/disconnectqueues.json": {
       "hash": "984925face7b06f404a3b2a80475c8421ab2b5f0f2dff55f7f2b98439c279051",
-      "last_checked": "2026-03-20T07:32:20.914601",
+      "last_checked": "2026-03-24T07:43:15.856131",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"0826b35b9a1338d88e6f1e939e26583d\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/disconnectqueues.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwgetmodemstatus.json": {
       "hash": "12a1c405b6016e430edc3945df0cb32dc94d157edafab03ea3d6e2cf6329556a",
-      "last_checked": "2026-03-20T07:32:20.992352",
+      "last_checked": "2026-03-24T07:43:16.021953",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b528bec2630784eed47eacf133f2bdea\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwgetmodemstatus.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/setmodemstatus.json": {
       "hash": "ff1092039397a7e8700facf9554775a14e0f6dc241e4671f897e79d7bdd3592e",
-      "last_checked": "2026-03-20T07:32:21.129538",
+      "last_checked": "2026-03-24T07:43:16.191857",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"84302c17164b2a6cf0a93184ce8bdb34\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/setmodemstatus.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwresetfifo.json": {
       "hash": "eb0dd0311aeb739ef6d38b1da9f55cecaaf2bf3dd967c3645967acf3c2ab1893",
-      "last_checked": "2026-03-20T07:32:21.217600",
+      "last_checked": "2026-03-24T07:43:16.313605",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"d8943f9b9db63049d26364a026611fea\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwresetfifo.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwsendbreak.json": {
       "hash": "fdc9e61572f10d1b4959c79e5be835132933a625ed7caf3ae4795db083a8a020",
-      "last_checked": "2026-03-20T07:32:21.302158",
+      "last_checked": "2026-03-24T07:43:16.511480",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b6a70f9dc5d97671fe629bf0f2833217\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwsendbreak.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwprogrambaudrate.json": {
       "hash": "4e34338be50f2c9d1db53b814ab576b6c68d1dd32118d00a5f58871facfde55c",
-      "last_checked": "2026-03-20T07:32:21.389860",
+      "last_checked": "2026-03-24T07:43:16.674482",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"d1361a52c07362e997b4dc1cdc28c7a6\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwprogrambaudrate.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwprogramlatencytimer.json": {
       "hash": "eeda7e2dda7950b6c482331047f5dd13b3bfbdf5aa80e2d48de4a1062c37f7e5",
-      "last_checked": "2026-03-20T07:32:21.478363",
+      "last_checked": "2026-03-24T07:43:16.842730",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"dd9384841c2729e25e1cd86b0235f37a\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwprogramlatencytimer.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwprogrammcr.json": {
       "hash": "31625afeeb786451e3550fefc3860318110f243c1f6d2c444cc71532979da6cc",
-      "last_checked": "2026-03-20T07:32:21.580529",
+      "last_checked": "2026-03-24T07:43:16.973772",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"8465dc7e309a07baa5cb99606ac91e81\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwprogrammcr.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwprogramuart.json": {
       "hash": "31057e4b1439825578222f7a3a9d31551301641677316d912aff1c364519a350",
-      "last_checked": "2026-03-20T07:32:21.652906",
+      "last_checked": "2026-03-24T07:43:17.145832",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"02116cedb7bb2c91a18aedd47e4aa165\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwprogramuart.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/hardware-constants.json": {
       "hash": "97f3da6ec946c092dd740ea34810eda26aa76e9f45f93fdd3692d7c762518760",
-      "last_checked": "2026-03-20T07:32:21.726811",
+      "last_checked": "2026-03-24T07:43:17.305405",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"e914f3d8ee75f706ee56d2d8fe7a7cda\"",
       "file_path": "documentation/SerialDriverKit/hardware-constants.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/rxdataavailable.json": {
       "hash": "9bc39cc82cfff28467ed820f19119b9f87fe6ed1f2a9025a5776a62abc4ed2f2",
-      "last_checked": "2026-03-20T07:32:21.795554",
+      "last_checked": "2026-03-24T07:43:17.420649",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"19a44497038ed92078f7cea655cbccd0\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/rxdataavailable.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/rxfreespaceavailable.json": {
       "hash": "8c5ee9f9c6a10acf4fcc25a880a14c10ed4aedfe4e6ca2a8b473f0e418d06a3a",
-      "last_checked": "2026-03-20T07:32:21.863245",
+      "last_checked": "2026-03-24T07:43:17.553849",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b4c53814e7dab13019bbe9a2116f8d4e\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/rxfreespaceavailable.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/txdataavailable.json": {
       "hash": "0aa9c31b8ec85e44dd6ee9344d61db6596067fc98a0ba95e8a23ba4ca5790edb",
-      "last_checked": "2026-03-20T07:32:21.942741",
+      "last_checked": "2026-03-24T07:43:17.726318",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"8c8a72e522387302855cd8ed03678fe5\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/txdataavailable.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/txfreespaceavailable.json": {
       "hash": "ab45a623580158c51f280d6b3d27c1d26fbd9077b95a1bb7ef8e6f32d72beab5",
-      "last_checked": "2026-03-20T07:32:22.024220",
+      "last_checked": "2026-03-24T07:43:18.025588",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b5cdb660ecf917bc0fb2d5bafc08bf6b\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/txfreespaceavailable.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/rxerror.json": {
       "hash": "e6de9c62d8b3d1ab597b4e0a153d0d2af089828ee2ab22e9400f37ac77df3e2d",
-      "last_checked": "2026-03-20T07:32:22.099436",
+      "last_checked": "2026-03-24T07:43:18.180120",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"4823568628390768190be3ae7157160f\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/rxerror.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/iouserserial/hwprogramflowcontrol.json": {
       "hash": "10fc4f1f484055d7760a75c707e509b9b353a55ed8856ae25438f211c5358c07",
-      "last_checked": "2026-03-20T07:32:22.169544",
+      "last_checked": "2026-03-24T07:43:18.316326",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"c348090c6b71c3cfe6f30d6896f9505d\"",
       "file_path": "documentation/SerialDriverKit/iouserserial/hwprogramflowcontrol.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface.json": {
       "hash": "ce28bc427919ff50acde2ee77decdfe02c710b0b5b4465be5563c8d6d48a8ae6",
-      "last_checked": "2026-03-20T07:32:22.250419",
+      "last_checked": "2026-03-24T07:43:18.473394",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"6fa6086bacba999e5112d22b59e9315f\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial.json": {
       "hash": "050fed9b29bb386090aae73eba203bd4e08a054b0be61bba8258c0ee3b197242",
-      "last_checked": "2026-03-20T07:32:22.318111",
+      "last_checked": "2026-03-24T07:43:18.644150",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"54cf3934990fd00c1d2bf8079025a8ab\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_dtr.json": {
       "hash": "9758508f5b37625bff89601922f5d5a0b314bf6b3a4392c8e6583acce37187ef",
-      "last_checked": "2026-03-20T07:32:22.406314",
+      "last_checked": "2026-03-24T07:43:18.824098",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"88d60f95794fe5cdb6a8acf89777a77e\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-dtr.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_dsr.json": {
       "hash": "b4bcf3457363a564d9c3bf8721c7d9782668fb964dd79bcea23083ceafd37299",
-      "last_checked": "2026-03-20T07:32:22.480720",
+      "last_checked": "2026-03-24T07:43:18.991233",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"24cc912324abe4aa348e0acc71c6312f\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-dsr.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_rts.json": {
       "hash": "7cec00b65324bbd3cba87d935613fc6ab9e5e8d6f6e054ae42c79916933e7422",
-      "last_checked": "2026-03-20T07:32:22.579594",
+      "last_checked": "2026-03-24T07:43:19.117771",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"f89c44ac10b47002544a8898ea49e28e\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-rts.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_cts.json": {
       "hash": "c70b3628d6bf308904b7dba6fa8bab765220ae86abe92f6d26db10863c04e407",
-      "last_checked": "2026-03-20T07:32:22.649836",
+      "last_checked": "2026-03-24T07:43:19.298022",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"94f881a64e21d4e111d09337d9b49cb0\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-cts.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_rxo.json": {
       "hash": "1451165eb51719cabef9d7c60978cce144825d0e0c123b58701e21796569b3cd",
-      "last_checked": "2026-03-20T07:32:22.724139",
+      "last_checked": "2026-03-24T07:43:19.419733",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"738f833082b3e14490e8e5412e399493\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-rxo.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_txo.json": {
       "hash": "3a3d9cede1385bbe725ed35623b973974e494c67b80cc7e90cebeb8e9927ba77",
-      "last_checked": "2026-03-20T07:32:22.792611",
+      "last_checked": "2026-03-24T07:43:19.606151",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"1c214a3476ca82bbfdf5827b32120d21\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-txo.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_dcd.json": {
       "hash": "33847c7d2e1f8005e25010494c3963d4e548ca7014a2bd90b545878a43da979d",
-      "last_checked": "2026-03-20T07:32:22.897897",
+      "last_checked": "2026-03-24T07:43:19.730618",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"7132684eaea0ad99939dc8acf5e1942d\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-s-dcd.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_default.json": {
       "hash": "582807c300905731205f92a597cc7fe23a86e83dee5b795be90f40842293db91",
-      "last_checked": "2026-03-20T07:32:23.027428",
+      "last_checked": "2026-03-24T07:43:19.855902",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"f233a3178927ccaa6c7e0bbfda45f4af\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-default.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_none.json": {
       "hash": "1b3ccd3c5e6537c682d0fab19741f0c92063f0082fba225074d58adf1d994c9e",
-      "last_checked": "2026-03-20T07:32:23.140077",
+      "last_checked": "2026-03-24T07:43:20.001210",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"b1701d76c0890adee25a032df91d3ece\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-none.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_odd.json": {
       "hash": "d8fa6626a9737a63a6cebad4821db8de68fce90b91e178ac0a99600a42a4dd62",
-      "last_checked": "2026-03-20T07:32:23.209462",
+      "last_checked": "2026-03-24T07:43:20.164721",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"32ad4807ec479995727d3df22c9828cc\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-odd.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_even.json": {
       "hash": "36ddd202fb4626c4d5cd065bb364a9e73970bd4df5f5539f76ebc9106af4a0ea",
-      "last_checked": "2026-03-20T07:32:23.284687",
+      "last_checked": "2026-03-24T07:43:20.332403",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"95fbdaecbb4353b0b6a0ce8435540206\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-even.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_mark.json": {
       "hash": "b40e071379bfa12168420a1b7f6034c81a442c3fc29f9b7294935b19ab545c96",
-      "last_checked": "2026-03-20T07:32:23.354500",
+      "last_checked": "2026-03-24T07:43:20.485114",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"f8cab6627a3c24e1efb281cc2a7b1a33\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-mark.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_space.json": {
       "hash": "3200696d095123d0c9e8f7bd63d1912f9dbd7b97cc261e5966c28a2ab271c619",
-      "last_checked": "2026-03-20T07:32:23.419955",
+      "last_checked": "2026-03-24T07:43:20.666995",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"dd222e64afde25f9d034e5134859d366\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-space.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_any.json": {
       "hash": "67fcf08193aca29178fd921de8fb968199ed22ca3e39581094247e86f5441512",
-      "last_checked": "2026-03-20T07:32:23.497591",
+      "last_checked": "2026-03-24T07:43:20.830321",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"05fd7f29738971670f8128abc9d90331\"",
       "file_path": "documentation/SerialDriverKit/pd-rs232-parity-any.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/rxci.json": {
       "hash": "376ca5fa02d5e4d65a52b9e0a14b665e5104068dbfe739d0b2e95fb127903074",
-      "last_checked": "2026-03-20T07:32:23.582831",
+      "last_checked": "2026-03-24T07:43:20.996944",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"0bdbc9fa3b1136bd8748b307e3eaf5c8\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/rxci.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/rxpi.json": {
       "hash": "e0d9ecbd85e0f1e36ea3f7170e8e894ff0e0d56f081530128fe4c893342ff86d",
-      "last_checked": "2026-03-20T07:32:23.667271",
+      "last_checked": "2026-03-24T07:43:21.164972",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"1f39999f2b367219a8f0ecdec250feb0\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/rxpi.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/rxqlogsz.json": {
       "hash": "b1e2158e3d1bc746ef363be39f66a37777af2e229383ffe1fa96bba0566a4671",
-      "last_checked": "2026-03-20T07:32:23.756397",
+      "last_checked": "2026-03-24T07:43:21.336986",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"825cf1998ef8ddb1716d0cbf2f3f5492\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/rxqlogsz.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/rxqoffset.json": {
       "hash": "34aaa4779fc7ab3912d3ca09faf0d9194077ec34ca5616587bca2f595df4d1fa",
-      "last_checked": "2026-03-20T07:32:23.846765",
+      "last_checked": "2026-03-24T07:43:21.497514",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"f63b5735841767228b18d77f6daf023a\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/rxqoffset.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/txci.json": {
       "hash": "8d8b5f11fec857c71a76bbdd2fe58ef21521eb489a7b195a0d97d60bdbf97bbd",
-      "last_checked": "2026-03-20T07:32:23.968404",
+      "last_checked": "2026-03-24T07:43:21.786372",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"3bb47ea56185ab5f788e06eac1aa2e27\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/txci.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/txpi.json": {
       "hash": "c81e63fcc9f9312f2dad4e8e049b8348a3bdfcfea869b01f452abe26e18642b3",
-      "last_checked": "2026-03-20T07:32:24.092088",
+      "last_checked": "2026-03-24T07:43:21.938903",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"29d90f762b536aa69cc28825bce5a196\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/txpi.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/txqlogsz.json": {
       "hash": "9c2371d6c7a272387430c506153b1ddd9c959154e4fe3d335bf57189ae2a35ac",
-      "last_checked": "2026-03-20T07:32:24.189430",
+      "last_checked": "2026-03-24T07:43:22.048131",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"060371f9bb2151ea9ec23fecbbb2c0bb\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/txqlogsz.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/driverkit/serial/serialportinterface/txqoffset.json": {
       "hash": "a722ff46255b03824e6de294a0c7142e33e563c37f4599d0821511ce1eb6930a",
-      "last_checked": "2026-03-20T07:32:24.259964",
+      "last_checked": "2026-03-24T07:43:22.211708",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:18.013176",
+      "session_id": "2026-03-24T07:43:10.103543",
       "etag": "W/\"3170335ea3cb775475bec170e77a0dd3\"",
       "file_path": "documentation/SerialDriverKit/driverkit/serial/serialportinterface/txqoffset.md"
     },

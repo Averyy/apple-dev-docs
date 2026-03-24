@@ -1,43 +1,43 @@
 {
   "metadata": {
-    "last_updated": "2026-03-20T07:32:36.276788",
+    "last_updated": "2026-03-24T07:43:40.515118",
     "total_pages": 76,
-    "session_id": "2026-03-20T07:32:30.769576"
+    "session_id": "2026-03-24T07:43:32.313228"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SiriKit.json": {
       "hash": "9d0293624eb8ce42804928fe2b65a9caa731a95e07acf5b41a61e12b894bc1b2",
-      "last_checked": "2026-03-20T07:32:31.060459",
+      "last_checked": "2026-03-24T07:43:32.689709",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"887806ed93040d1883afe3efb615b2ab\"",
       "file_path": "documentation/SiriKit/SiriKit.md"
     },
     "https://developer.apple.com/documentation/SiriKit": {
       "hash": "9d0293624eb8ce42804928fe2b65a9caa731a95e07acf5b41a61e12b894bc1b2",
-      "last_checked": "2026-03-20T07:32:30.970616",
+      "last_checked": "2026-03-24T07:43:32.595229",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"887806ed93040d1883afe3efb615b2ab\"",
       "file_path": "documentation/SiriKit/SiriKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/intents.json": {
       "hash": "",
-      "last_checked": "2026-03-20T07:32:31.377723",
+      "last_checked": "2026-03-24T07:43:33.039843",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/intentsui.json": {
       "hash": "",
-      "last_checked": "2026-03-20T07:32:31.639751",
+      "last_checked": "2026-03-24T07:43:33.410930",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/adding-shortcuts-for-wind-down.json": {
       "hash": "7945daaab5c371211757eefd39928cb04737777f2774434b46a330856b574d9b",
-      "last_checked": "2026-03-20T07:32:31.711535",
+      "last_checked": "2026-03-24T07:43:33.645978",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"93a420bcfb6a786f9f4b1ea043edc8ab\"",
       "file_path": "documentation/SiriKit/adding-shortcuts-for-wind-down.md"
     },
@@ -51,9 +51,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/booking-rides-with-sirikit.json": {
       "hash": "5ef4e2621f7f8ebc865656f62fd37fb33340893f71ff829a965f7a4262d244fe",
-      "last_checked": "2026-03-20T07:32:31.788416",
+      "last_checked": "2026-03-24T07:43:33.799603",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"687e5db9c824380e35055bc0929cb6da\"",
       "file_path": "documentation/SiriKit/booking-rides-with-sirikit.md"
     },
@@ -67,9 +67,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/handling-payment-requests-with-sirikit.json": {
       "hash": "25fd9ae392a17b53253c86f466c632d3f2cffc8de0fcc7fb47e8d2afe5b0072e",
-      "last_checked": "2026-03-20T07:32:31.866560",
+      "last_checked": "2026-03-24T07:43:34.119646",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"4560632b130ad367e276452b3f8ca116\"",
       "file_path": "documentation/SiriKit/handling-payment-requests-with-sirikit.md"
     },
@@ -83,9 +83,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/handling-workout-requests-with-sirikit.json": {
       "hash": "d54cc5a00e08c3a73b8c0cab73dc74cd86678ee38a9cae559bfa0b8f88cce36f",
-      "last_checked": "2026-03-20T07:32:32.129773",
+      "last_checked": "2026-03-24T07:43:34.419891",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"4d50e9ee4595d31e7dcc8495b510ea3a\"",
       "file_path": "documentation/SiriKit/handling-workout-requests-with-sirikit.md"
     },
@@ -99,9 +99,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/integrating-your-app-with-siri-event-suggestions.json": {
       "hash": "5d69ffc14ebf6c052b3e1601d1356a028f988fcff6178c9e8c86561454036a20",
-      "last_checked": "2026-03-20T07:32:32.202026",
+      "last_checked": "2026-03-24T07:43:34.712361",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"3cedeb785a678d244a5c4bcd3f4d0421\"",
       "file_path": "documentation/SiriKit/integrating-your-app-with-siri-event-suggestions.md"
     },
@@ -115,9 +115,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/managing-audio-with-sirikit.json": {
       "hash": "3c3ab9137105676348d1597ff92d01f9496d957d433916732466af2b774ec5c2",
-      "last_checked": "2026-03-20T07:32:32.316173",
+      "last_checked": "2026-03-24T07:43:35.004814",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"38f6543bfd39cd1f782714b7c24728fc\"",
       "file_path": "documentation/SiriKit/managing-audio-with-sirikit.md"
     },
@@ -131,9 +131,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/providing-hands-free-app-control-with-intents.json": {
       "hash": "919102015859bcd383a1c4ba29b45c96e39da751516b49b59cc12d3aabc2e532",
-      "last_checked": "2026-03-20T07:32:32.398268",
+      "last_checked": "2026-03-24T07:43:35.303820",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"2c775423d7406f91ab777129d39918b0\"",
       "file_path": "documentation/SiriKit/providing-hands-free-app-control-with-intents.md"
     },
@@ -147,9 +147,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/soup-chef-accelerating-app-interactions-with-shortcuts.json": {
       "hash": "595f1f5d69a23abce69bc735788b15bb90dfa9f015791ba3ca5c329f51c7439c",
-      "last_checked": "2026-03-20T07:32:32.498871",
+      "last_checked": "2026-03-24T07:43:35.472398",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"45faf13c6110d27cc483a3c5ee6942f1\"",
       "file_path": "documentation/SiriKit/soup-chef-accelerating-app-interactions-with-shortcuts.md"
     },
@@ -163,9 +163,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/soup-chef-with-app-intents-migrating-custom-intents.json": {
       "hash": "8c49a0c28683abd69929d469e868c1e76d0a2810e4e3054813f84cf3d4971324",
-      "last_checked": "2026-03-20T07:32:32.654378",
+      "last_checked": "2026-03-24T07:43:35.648400",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"3fc8e21577aa9c1f22f36df7c815b2a4\"",
       "file_path": "documentation/SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md"
     },
@@ -179,9 +179,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.json": {
       "hash": "668db38e4021705f472163502625685fe606865e461d09ca51ad1e1abb9d6caf",
-      "last_checked": "2026-03-20T07:32:32.775404",
+      "last_checked": "2026-03-24T07:43:35.807954",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"00e3bb251bd349bf630f39aa062cff4d\"",
       "file_path": "documentation/SiriKit/adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md"
     },
@@ -195,9 +195,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/defining-relevant-shortcuts-for-the-siri-watch-face.json": {
       "hash": "f8b1ca470fa149bd8612253d47c45aa7f1909e9aedeebba3d88d023ec3f04584",
-      "last_checked": "2026-03-20T07:32:32.847180",
+      "last_checked": "2026-03-24T07:43:35.989499",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"a6f2345f4e220d797ef61be2d24158e3\"",
       "file_path": "documentation/SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face.md"
     },
@@ -211,9 +211,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/deleting-donated-shortcuts.json": {
       "hash": "44b330a65abc5019119010345d22fef69861c3343f737be851897e6b176bf3a9",
-      "last_checked": "2026-03-20T07:32:32.922480",
+      "last_checked": "2026-03-24T07:43:36.275161",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"9a60a7071580afcec7b2e9dbfffa6e3f\"",
       "file_path": "documentation/SiriKit/deleting-donated-shortcuts.md"
     },
@@ -227,9 +227,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/dispatching-intents-to-handlers.json": {
       "hash": "d08e49fac95d9e61e3274f8db0bf6666afacd66c9c435c7c749d99b2eb779b2f",
-      "last_checked": "2026-03-20T07:32:33.000844",
+      "last_checked": "2026-03-24T07:43:36.482517",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"8611040512919836f8f1bd52cf6ceb7c\"",
       "file_path": "documentation/SiriKit/dispatching-intents-to-handlers.md"
     },
@@ -243,9 +243,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/improving-siri-media-interactions-and-app-selection.json": {
       "hash": "3d2f029792f9140b5a35fabaa1e814f0748187d2ee8521891b8c3f00adb28a74",
-      "last_checked": "2026-03-20T07:32:33.113351",
+      "last_checked": "2026-03-24T07:43:36.800342",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"db9e41a4b057b74dc737279c514f8bad\"",
       "file_path": "documentation/SiriKit/improving-siri-media-interactions-and-app-selection.md"
     },
@@ -259,9 +259,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/improving-interactions-between-siri-and-your-messaging-app.json": {
       "hash": "7719a3047e8610cdc57e693ef540224763372f456b30487ff72311610b01e3a1",
-      "last_checked": "2026-03-20T07:32:33.212092",
+      "last_checked": "2026-03-24T07:43:36.972167",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"4b191810b56e01bb5b77c81d74b53c21\"",
       "file_path": "documentation/SiriKit/improving-interactions-between-siri-and-your-messaging-app.md"
     },
@@ -275,9 +275,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/registering-custom-vocabulary-with-sirikit.json": {
       "hash": "cebad13a5409a425e1472d23eaa0646816faee25203fba1a435314bb7629b8ee",
-      "last_checked": "2026-03-20T07:32:33.319653",
+      "last_checked": "2026-03-24T07:43:37.146828",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"c436f69c55de217a1b56e289956f5013\"",
       "file_path": "documentation/SiriKit/registering-custom-vocabulary-with-sirikit.md"
     },
@@ -291,9 +291,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/confirming-the-details-of-an-intent.json": {
       "hash": "8ec91365b2143c18e535f6f27b95243bc7ab238f093a13e1c2506ea81af840e2",
-      "last_checked": "2026-03-20T07:32:33.415469",
+      "last_checked": "2026-03-24T07:43:37.439568",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"b2d294d7963ea617eb6836c83571dfaf\"",
       "file_path": "documentation/SiriKit/confirming-the-details-of-an-intent.md"
     },
@@ -307,9 +307,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/handling-an-intent.json": {
       "hash": "e571e59ccd46973bbac332d7f8d43a1d15fe47f13f226a8746395284606641ea",
-      "last_checked": "2026-03-20T07:32:33.533713",
+      "last_checked": "2026-03-24T07:43:37.615116",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"039c900584ac5f271c4c1f645919eab9\"",
       "file_path": "documentation/SiriKit/handling-an-intent.md"
     },
@@ -323,9 +323,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/resolving-the-parameters-of-an-intent.json": {
       "hash": "3dfff86fc1c7d6edfa02a997522a4fdbecd293bdbea1ed0fafc6b7fe42223369",
-      "last_checked": "2026-03-20T07:32:33.631134",
+      "last_checked": "2026-03-24T07:43:37.729290",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"03f2c600ee4dd802ea2c46aadfc42d46\"",
       "file_path": "documentation/SiriKit/resolving-the-parameters-of-an-intent.md"
     },
@@ -339,9 +339,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/generating-a-list-of-ride-options.json": {
       "hash": "64f65f867623ba3f5a3115ffab8b9c4076d2fecc46fcd8155987e95645e4a740",
-      "last_checked": "2026-03-20T07:32:33.704309",
+      "last_checked": "2026-03-24T07:43:37.859359",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"36bc14bbd797cf272684071ec74aa442\"",
       "file_path": "documentation/SiriKit/generating-a-list-of-ride-options.md"
     },
@@ -355,9 +355,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/handling-the-ride-booking-intents.json": {
       "hash": "220f61f5cfd1b9f7e10566825fed4753ad8860445eb9f7637af29bc75eead8ea",
-      "last_checked": "2026-03-20T07:32:33.860741",
+      "last_checked": "2026-03-24T07:43:38.025583",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"06b8e94dcd71c77092cee18b404161f6\"",
       "file_path": "documentation/SiriKit/handling-the-ride-booking-intents.md"
     },
@@ -387,9 +387,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/donating-reservations.json": {
       "hash": "a9819997d89465e6f70a7ab4712511589ba529eb807c253a5cc5580dec6bfdb8",
-      "last_checked": "2026-03-20T07:32:34.090861",
+      "last_checked": "2026-03-24T07:43:38.201811",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"efb246a742fff5cf807e77b6497c0b35\"",
       "file_path": "documentation/SiriKit/donating-reservations.md"
     },
@@ -403,9 +403,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/specifying-synonyms-for-your-app-name.json": {
       "hash": "d32f80a48b1b4cb927ec861635f988a80fea9b1a8051827976690555c47885e8",
-      "last_checked": "2026-03-20T07:32:34.196427",
+      "last_checked": "2026-03-24T07:43:38.369088",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"bf93c6895b3dc21c517cc57e4a3138ff\"",
       "file_path": "documentation/SiriKit/specifying-synonyms-for-your-app-name.md"
     },
@@ -419,9 +419,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/intent-phrases.json": {
       "hash": "8ba38531271dd40ba6905b0c493569fa7b5f4340234c0161f132d84aa4bbe01c",
-      "last_checked": "2026-03-20T07:32:34.447123",
+      "last_checked": "2026-03-24T07:43:38.677137",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"93a21816bc83e6f84d8a9f10fae90987\"",
       "file_path": "documentation/SiriKit/intent-phrases.md"
     },
@@ -435,9 +435,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/localizing-your-vocabulary-for-chinese-dialects.json": {
       "hash": "aef6ac29fb8bb1cbeb6934a80d4ec8155d5f6f673c8138adaf5dbdac84993d49",
-      "last_checked": "2026-03-20T07:32:34.688464",
+      "last_checked": "2026-03-24T07:43:38.810943",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"dd837cd28a6d29203d37b17c6bfcc06f\"",
       "file_path": "documentation/SiriKit/localizing-your-vocabulary-for-chinese-dialects.md"
     },
@@ -451,9 +451,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/parameter-vocabularies.json": {
       "hash": "4881a4930bd75576d599f9343ca2af83042718f313346add68b957d1a56d8d50",
-      "last_checked": "2026-03-20T07:32:34.937682",
+      "last_checked": "2026-03-24T07:43:38.990276",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"d2e627d7f87c70039fae7fafb5d2f4d9\"",
       "file_path": "documentation/SiriKit/parameter-vocabularies.md"
     },
@@ -467,9 +467,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/offering-actions-in-the-shortcuts-app.json": {
       "hash": "d771c0828dabdd6c51c363c901fe98ff0956c20105deedf12ebcf8adcb8ac98b",
-      "last_checked": "2026-03-20T07:32:35.057621",
+      "last_checked": "2026-03-24T07:43:39.177272",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"f81f48aa283526380cf75b2988eeb429\"",
       "file_path": "documentation/SiriKit/offering-actions-in-the-shortcuts-app.md"
     },
@@ -483,9 +483,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/creating-an-intents-app-extension.json": {
       "hash": "472a546be6c07fedd8f013a05d8e165b2ad12cc24a24e11761f64f5975c1bc05",
-      "last_checked": "2026-03-20T07:32:35.160928",
+      "last_checked": "2026-03-24T07:43:39.339980",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"1b2332218aab83d7b0887cc4fd50eea8\"",
       "file_path": "documentation/SiriKit/creating-an-intents-app-extension.md"
     },
@@ -499,9 +499,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/requesting-authorization-to-use-siri.json": {
       "hash": "2dfd6840dca80b3cd2800972051e96700848cdc2ff79ada5a67bcb38dbe11b64",
-      "last_checked": "2026-03-20T07:32:35.431785",
+      "last_checked": "2026-03-24T07:43:39.558360",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"341709ff5982263fdccc1868bbd68a64\"",
       "file_path": "documentation/SiriKit/requesting-authorization-to-use-siri.md"
     },
@@ -515,9 +515,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/structuring-your-code-to-support-app-extensions.json": {
       "hash": "699e15e237ecc53da11d803a37527b71df934a449b776589ad28bf1d6c4f91ce",
-      "last_checked": "2026-03-20T07:32:35.504394",
+      "last_checked": "2026-03-24T07:43:39.723451",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"46ca37e3cd7d335365d628372039e55a\"",
       "file_path": "documentation/SiriKit/structuring-your-code-to-support-app-extensions.md"
     },
@@ -531,9 +531,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/providing-live-status-updates.json": {
       "hash": "e5c968f66733428614e7a5632d701dc339f0aef0989aaf1c4990705312ecac1f",
-      "last_checked": "2026-03-20T07:32:35.757807",
+      "last_checked": "2026-03-24T07:43:39.837946",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"98ac18803ba2f791a488dbaa8919508b\"",
       "file_path": "documentation/SiriKit/providing-live-status-updates.md"
     },
@@ -547,9 +547,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/donating-shortcuts.json": {
       "hash": "8239be26eca125814bdf6c9c3cc066fafac51ba886624757304becb6ce20320a",
-      "last_checked": "2026-03-20T07:32:35.876869",
+      "last_checked": "2026-03-24T07:43:39.982616",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"f49bf99cf08a7f5225b4c4ce3c86b5b2\"",
       "file_path": "documentation/SiriKit/donating-shortcuts.md"
     },
@@ -563,9 +563,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/configuring-the-view-controller-for-your-custom-interface.json": {
       "hash": "32141d31f9206c03369709b0415cd505f4239dcd4dd886d8f5786e208def8c39",
-      "last_checked": "2026-03-20T07:32:36.036247",
+      "last_checked": "2026-03-24T07:43:40.153745",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"d293d924c0cde1b903855deaf5ad5e2d\"",
       "file_path": "documentation/SiriKit/configuring-the-view-controller-for-your-custom-interface.md"
     },
@@ -579,9 +579,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/configuring-your-intents-ui-app-extension-target.json": {
       "hash": "e18836e9be450b26b2ba16f6e844c94f50d22f911d466078f0583701d214e028",
-      "last_checked": "2026-03-20T07:32:36.211561",
+      "last_checked": "2026-03-24T07:43:40.348821",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"550fd3be7e01111a5415e2a6933d45bd\"",
       "file_path": "documentation/SiriKit/configuring-your-intents-ui-app-extension-target.md"
     },
@@ -595,9 +595,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikit/global-vocabulary-reference.json": {
       "hash": "59118d4c9f5400b9c3af118dc44c4c4613251b2da17a905d549a9a31514edc6e",
-      "last_checked": "2026-03-20T07:32:36.275488",
+      "last_checked": "2026-03-24T07:43:40.511921",
       "status": "unchanged",
-      "session_id": "2026-03-20T07:32:30.769576",
+      "session_id": "2026-03-24T07:43:32.313228",
       "etag": "W/\"540144f8e15dae2910fa079db074340e\"",
       "file_path": "documentation/SiriKit/global-vocabulary-reference.md"
     },
