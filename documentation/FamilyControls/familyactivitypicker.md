@@ -69,7 +69,7 @@ struct ExampleView: View {
 
 When you present the `FamilyActivityPicker`, the system displays a view where the user can select categories, applications, and web domains. As soon as the user confirms their selection, the system updates the `FamilyActivitySelection` binding with the user’s selections. To protect the user’s privacy, the system uses opaque values to represent the selections.
 
-Your app passes the selected values to the appropriate instances and methods from the [`ManagedSettings`](https://developer.apple.com/documentation/ManagedSettings) and [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity) frameworks.
+Your app passes the selected values to the appropriate instances and methods from the [`Managed Settings`](https://developer.apple.com/documentation/ManagedSettings) and [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity) frameworks.
 
 ## Topics
 

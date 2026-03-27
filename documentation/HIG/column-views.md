@@ -11,7 +11,7 @@ framework: HIG
 
 A column view — also called a *browser* — lets people view and navigate a data hierarchy using a series of vertical columns.
 
-![A stylized representation of three columns containing a list of folders, images, and file information. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d973e1642dca7c1cd174da31f71e23e2/components-column-view-intro~dark%402x.png)
+![A stylized representation of three columns containing a list of folders, images, and file information. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/58d169a528523497121284002be4668a/components-column-view-intro~dark%402x.png)
 Each column represents one level of the hierarchy and contains horizontal rows of data items. Within a column, any parent item that contains nested child items is marked with a triangle icon. When people select a parent, the next column displays its children. People can continue navigating in this way until they reach an item with no children, and can also navigate back up the hierarchy to explore other branches of data.
 
 > **Note:** If you need to manage the presentation of hierarchical content in your iPadOS or visionOS app, consider using a [Split views](split-views.md).

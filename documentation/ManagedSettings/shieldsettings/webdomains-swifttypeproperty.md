@@ -1,6 +1,6 @@
 # webDomains
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the configuration that specifies websites for the system to shield.

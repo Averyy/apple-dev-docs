@@ -11,7 +11,7 @@ framework: HIG
 
 A status bar appears along the upper edge of the screen and displays information about the device’s current state, like the time, cellular carrier, and battery level.
 
-![A stylized representation of an iPhone status bar with labels showing the time and cellular, Wi-Fi, and battery levels. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/4142cf0fefe5682f27c5c5c6affe4cb1/components-status-bar-intro~dark%402x.png)
+![A stylized representation of an iPhone status bar with labels showing the time and cellular, Wi-Fi, and battery levels. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a98e051d26f39ac2a6fc9ac357976d6c/components-status-bar-intro~dark%402x.png)
 
 ## Best practices
 **Obscure content under the status bar.** By default, the background of the status bar is transparent, allowing content beneath to show through. This transparency can make it difficult to see information presented in the status bar. If controls are visible behind the status bar, people may attempt to interact with them and be unable to do so. Be sure to keep the status bar readable, and don’t imply that content behind it is interactive. Prefer using a scroll edge effect to place a blurred view behind the status bar. For developer guidance, see [ScrollEdgeEffectStyle](../SwiftUI/ScrollEdgeEffectStyle.md) and [UIScrollEdgeEffect](../UIKit/UIScrollEdgeEffect.md).

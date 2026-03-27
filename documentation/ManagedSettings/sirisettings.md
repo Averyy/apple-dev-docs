@@ -1,6 +1,6 @@
 # SiriSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on the device’s Siri settings.

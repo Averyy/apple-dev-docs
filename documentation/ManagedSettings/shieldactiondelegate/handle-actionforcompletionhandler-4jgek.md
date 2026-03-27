@@ -1,6 +1,6 @@
 # handle(action:for:completionHandler:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: method
 
 Allows the extension to respond to a user action when the system displays a shield over an application.

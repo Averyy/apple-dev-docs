@@ -1,6 +1,6 @@
 # WebContentSettings.FilterPolicy.none
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 The policy doesn’t affect any domains.

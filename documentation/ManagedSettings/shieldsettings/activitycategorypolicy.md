@@ -1,6 +1,6 @@
 # ShieldSettings.ActivityCategoryPolicy
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: enum
 
 Policies available for shielding activities based on their category.

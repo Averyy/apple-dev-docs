@@ -11,7 +11,7 @@ framework: HIG
 
 A box creates a visually distinct group of logically related information and components.
 
-![A stylized representation of a group of interface elements within a rounded rectangle. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5bb27442fab3a3bddc6f5949f1f343d9/components-box-intro~dark%402x.png)
+![A stylized representation of a group of interface elements within a rounded rectangle. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/13f1f682eb5fc6ed6cfbb846c9402d8f/components-box-intro~dark%402x.png)
 By default, a box uses a visible border or background color to separate its contents from the rest of the interface. A box can also include a title.
 
 ## Best practices

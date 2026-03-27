@@ -1,6 +1,6 @@
 # ApplicationSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on the apps and categories of apps a user can run on their device.

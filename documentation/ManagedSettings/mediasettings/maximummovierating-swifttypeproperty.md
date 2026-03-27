@@ -1,6 +1,6 @@
 # maximumMovieRating
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the setting that controls the maximum movie rating.

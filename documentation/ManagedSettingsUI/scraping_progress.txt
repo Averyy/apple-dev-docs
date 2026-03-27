@@ -1,4 +1,4 @@
-Completed scraping ManagedSettingsUI!
-Total pages scraped: 0
-Pages skipped (unchanged): 24
+Completed scraping Managed Settings UI!
+Total pages scraped: 23
+Pages skipped (unchanged): 1
 Pages failed: 0

@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: init
 
 Creates a new instance of a store.

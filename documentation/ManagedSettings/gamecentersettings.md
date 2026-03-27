@@ -1,6 +1,6 @@
 # GameCenterSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on the user’s Game Center settings.

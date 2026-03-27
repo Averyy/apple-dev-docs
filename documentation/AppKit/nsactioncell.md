@@ -69,8 +69,6 @@ The `NSActionCell` implementation of [`setFloatingPointFormat:left:right:`](nsce
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

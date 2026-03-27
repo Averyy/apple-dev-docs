@@ -6,7 +6,7 @@
 Get information about a single transaction for your app.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Mentions
 

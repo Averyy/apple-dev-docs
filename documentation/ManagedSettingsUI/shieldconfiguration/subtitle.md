@@ -1,6 +1,6 @@
 # subtitle
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The subtitle for a shield to display below the title.

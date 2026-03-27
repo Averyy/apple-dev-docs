@@ -6,7 +6,7 @@
 An error that indicates an invalid request identifier.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 

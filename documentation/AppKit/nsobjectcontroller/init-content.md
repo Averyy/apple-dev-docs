@@ -24,9 +24,12 @@ The initialized object controller, with its content object set to `content`.
 
 ## See Also
 
-- [Predicate Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789)
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [Cocoa Bindings Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i)
+- [class NSPredicate](../Foundation/NSPredicate.md)
+  A definition of logical conditions for constraining a search for a fetch or for in-memory filtering.
+- [Core Data](../CoreData/CoreData.md)
+  Persist or cache data on a single device, or sync data to multiple devices with CloudKit.
+- [Cocoa Bindings](cocoa-bindings.md)
+  Automatically synchronize your data model with your app’s interface using Cocoa Bindings.
 
 
 ---

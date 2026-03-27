@@ -11,7 +11,7 @@ framework: HIG
 
 A gauge displays a specific numerical value within a range of values.
 
-![A stylized representation of a circular numeric gauge above a linear percentage gauge. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/38865aa7d5f5e7571eccf5496d15ff12/components-gauges-intro~dark%402x.png)
+![A stylized representation of a circular numeric gauge above a linear percentage gauge. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e11c37d9383e457f6f6ac510db66a257/components-gauges-intro~dark%402x.png)
 In addition to indicating the current value in a range, a gauge can provide more context about the range itself. For example, a temperature gauge can use text to identify the highest and lowest temperatures in the range and display a spectrum of colors that visually reinforce the changing values.
 
 ## Anatomy

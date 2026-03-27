@@ -1,6 +1,6 @@
 # secondaryButtonSubmenuItems
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 An array of strings that define the items to display in the secondary button’s submenu.

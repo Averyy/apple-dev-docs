@@ -6,7 +6,7 @@
 A response that contains the App Store Server Notifications history for your app.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

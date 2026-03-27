@@ -1,6 +1,6 @@
 # domain
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A string that identifies a specific web domain.

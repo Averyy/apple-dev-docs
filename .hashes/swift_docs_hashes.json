@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-03-13T08:47:26.200499",
+    "last_updated": "2026-03-27T08:52:27.437860",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -29,7 +29,7 @@
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/OpaqueTypes.md": "c139890c22385d59d8ba1e663ccd707c8e285e9cbe4d2bdfe25fcd59420a1f3b",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/OptionalChaining.md": "d67c0a49b54100c2bd2fd9356ed9f8d6af6ff5997da6e7cd7df7916a40006711",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Properties.md": "875c5268895f3abe65b67d73ac9950b603ca68edb25e6e890ad613df08f6c7e0",
-    "swiftlang/swift-book:TSPL.docc/LanguageGuide/Protocols.md": "06e6b9cce869cd9986e0780741eb01c8143dc79763c31190f7dcf130027c694a",
+    "swiftlang/swift-book:TSPL.docc/LanguageGuide/Protocols.md": "9b4b61d89e965d2a2733729b935bd69f214be52dbd62c0a135554e45f16d19a4",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/StringsAndCharacters.md": "2bd491271377eedabedfddebb2cece8f292009759ba9836bc43d43ee44634385",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Subscripts.md": "54844cf530c3325708028e1cf88d94f885c3658ec6316f869421d5cbba9b939a",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "040d4e572b03d1470bf5a0fe199cae13e2c1c679bc1ab577b35056d5b6ae3a96",
@@ -49,7 +49,7 @@
     "swiftlang/swift-org-website:documentation/api-design-guidelines/index.md": "71f3853c08ac1a8e9df4a071bd6e819aee70e4e8cc7f4ab5901d380154308389",
     "swiftlang/swift-org-website:documentation/cxx-interop/index.md": "58cac8c3df9e3e0393d9f8a28cbe87cba7199315efcfad4b1bc3666719eed4e1",
     "swiftlang/swift-org-website:documentation/cxx-interop/project-build-setup/index.md": "29827b8511437f85a8deaed828e858fd6f2c97e05b94bfd8c340751ddf8a141b",
-    "swiftlang/swift-org-website:documentation/cxx-interop/safe-interop/index.md": "fd517b2de7a17e4dfd8f095f6db0d761a1d30c9c4e8d2abfc67027420b5a5f39",
+    "swiftlang/swift-org-website:documentation/cxx-interop/safe-interop/index.md": "7c1a76732d89b9001c911fb0742fb168f4fb91c9a4de1ff36b1d3937fb00b9b3",
     "swiftlang/swift-org-website:documentation/cxx-interop/status/index.md": "b1e5e65f931b9cf6dd8a17a21e535ebedce5ba08442cc3012cf98ca36286e9d7"
   }
 }

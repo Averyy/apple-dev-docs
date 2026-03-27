@@ -13,7 +13,7 @@ framework: HIG
 
 A search field lets people search a collection of content for specific terms they enter.
 
-![A stylized representation of a search field containing placeholder text and a dictation icon. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/ede91ac63e44ba25ed032cd669e340ef/components-search-field-intro~dark%402x.png)
+![A stylized representation of a search field containing placeholder text and a dictation icon. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/2730ac3879c754815472c33c6c8ba671/components-search-field-intro~dark%402x.png)
 A search field is an editable text field that displays a Search icon, a Clear button, and placeholder text where people can enter what they are searching for. Search fields can use a [Scope controls and tokens](search-fields.md#Scope-controls-and-tokens) as well as [Scope controls and tokens](search-fields.md#Scope-controls-and-tokens) to help filter and refine the scope of their search. Across each platform, there are different patterns for accessing search based on the goals and design of your app.
 For developer guidance, see [Adding a search interface to your app](../SwiftUI/Adding-a-search-interface-to-your-app.md); for guidance related to systemwide search, see [Searching](searching.md).
 

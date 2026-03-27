@@ -90,6 +90,8 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
 - [SCNTechniqueSupport](../SceneKit/SCNTechniqueSupport.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

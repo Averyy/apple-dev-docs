@@ -13,7 +13,7 @@ framework: HIG
 
 A context menu provides access to functionality that’s directly related to an item, without cluttering the interface.
 
-![A stylized representation of a contextual menu beneath a clicking pointer. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/505ecbb7617a49592ea382bcd845c36a/components-context-menu-intro~dark%402x.png)
+![A stylized representation of a contextual menu beneath a clicking pointer. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9f6b0259748a5692f6f43edc9a8e9ebf/components-context-menu-intro~dark%402x.png)
 Although a context menu provides convenient access to frequently used items, it’s hidden by default, so people might not know it’s there. To reveal a context menu, people generally choose a view or select some content and then perform an action, using the input modes their current configuration supports. For example:
 - The system-defined touch or pinch and hold gesture in visionOS, iOS, and iPadOS
 - Pressing the Control key while clicking a pointing device in macOS and iPadOS

@@ -1,6 +1,6 @@
 # ShieldConfiguration.Label
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: struct
 
 The appearance of text labels within a shield.

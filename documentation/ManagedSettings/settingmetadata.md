@@ -1,6 +1,6 @@
 # SettingMetadata
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Additional information about a configurable setting.

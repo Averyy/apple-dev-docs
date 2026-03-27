@@ -6,7 +6,7 @@
 The App Store server notification history record, including the signed notification payload and the result of the server’s first send attempt.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

@@ -8,23 +8,23 @@ Generate code, fix bugs fast, and learn as you go with intelligence built direct
 
 The coding intelligence features in Xcode help you write code, navigate unfamiliar codebases, find opportunities for new features, fix or refactor existing code, and generate documentation along the way.
 
-![A screenshot of the project editor with the coding assistant in the sidebar on the left and a source file open in the source editor on the right. The coding assistant shows a prompt that asks to change the code and a response from the model.](https://docs-assets.developer.apple.com/published/7c7f365c800f882e51d6b54781ca9750/coding-assistant-hero%402x.png)
+![A screenshot of the project editor with the coding assistant in the sidebar on the left and a source file open in the source editor on the right. The coding assistant shows a prompt that asks to change the code and a response from the model.](https://docs-assets.developer.apple.com/published/72dd2e05eb8eef5a33564b47de89ce1e/coding-assistant-hero%402x.png)
 
 You interact with a large language model using natural language prompts to ask questions and give instructions. The model refines the responses to your prompts based on your previous interactions and project context. You stay in control over changes to your project by applying suggestions automatically or reviewing and applying them selectively yourself. Xcode maintains a history of your conversations with the model so that you can review past responses, track changes, and return to any previous state of your project.
 
 If you use an agentic coding tool, Xcode can refine and iterate on a goal with less guidance and perform actions, such as fixing build errors after writing code.
 
-##### Display the Coding Assistant and Choose a Third Party Product
+##### Display the Coding Assistant and Choose a Third Party Provider or Model
 
 In the upper-left corner of the toolbar, click the button to the right of the navigator button to open the coding assistant area in the sidebar or press Command-0. Here, you can enter prompts, see responses, start and navigate between conversations, rollback changes, and more.
 
-![A screenshot that shows the coding assistant sidebar cropped with a sample prompt and response displayed. The screenshot is annotated with callouts for the buttons, menus, and areas of the coding assistant.](https://docs-assets.developer.apple.com/published/4e3978f7682165585db1c31df848d35c/coding-assistant-anatomy%402x.png)
+![A screenshot that shows the coding assistant sidebar cropped with a sample prompt and response displayed. The screenshot is annotated with callouts for the buttons, menus, and areas of the coding assistant.](https://docs-assets.developer.apple.com/published/7e3c37554de11991643531caf363e166/coding-assistant-anatomy%402x.png)
 
-If a Set Up button appears in the sidebar, click the button and enable a coding intelligence product in Xcode > Settings > Intelligence, as described in [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
+If a Set Up button appears in the coding assistant, click the button and enable a coding intelligence provider in Xcode > Settings > Intelligence, as described in [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
 
-In the coding assistant, click the button on the right of the Start New Conversation button on the toolbar and choose a product from the pop-up menu. The product that you choose appears in the message text field.
+In the coding assistant, click the button on the right of the Start New Conversation button on the toolbar and choose a provider or model that you enabled in Intelligence settings from the pop-up menu. The provider or model that you choose appears in the message text field.
 
-If you choose an agentic coding tool that you enable in Intelligence settings, it automatically has access to Xcode capabilities, such as building your app, searching Apple documentation, adding entitlements, and more.
+If you choose an agent that you enable in Intelligence settings, it automatically has access to Xcode capabilities, such as building your app, searching Apple documentation, adding entitlements, and more.
 
 ##### Explore Unfamiliar Code
 
@@ -32,7 +32,7 @@ At any time, you can ask Xcode to explain code and find files to implement a new
 
 - *What does this app do?*
 
-![A screenshot of the coding assistant in the sidebar and a source file open in the source editor on the right. The coding assistant shows the results of entering the prompt, What does this app do? in the conversation area.](https://docs-assets.developer.apple.com/published/d60a98921926d3202f1326eea1e1fa44/coding-assistant-explore-code-question%402x.png)
+![A screenshot of the coding assistant in the sidebar and a source file open in the source editor on the right. The coding assistant shows the results of entering the prompt, What does this app do? in the conversation area.](https://docs-assets.developer.apple.com/published/4385874ee0ffa46e9f3d100168b07e84/coding-assistant-explore-code-question%402x.png)
 
 Xcode responds under your prompt in the conversation area of the coding assistant. The response may contain content that you can interact with. For example, if the response references a filename, click the arrow button next to the filename to open it in the source editor. To continue the conversation with the coding assistant, enter follow-up prompts, like:
 
@@ -44,13 +44,13 @@ When you enter another prompt, the coding assistant appends your prompt and resp
 
 In the source editor, Control-click a symbol or code selection and press Command-Option-0 or choose Show Coding Tools > Show Coding Tools from the contextual menu. Then click Explain, or enter a more specific prompt in the coding tools popover. The coding assistant displays the prompt and its response in the conversation area.
 
-![A screenshot that shows the Project navigator in the sidebar and the source editor on the right with a code snippet selected and the Show Coding Tools popover displayed with the Explain button.](https://docs-assets.developer.apple.com/published/94e8450853a7c2c1b71f5840591d2427/coding-assistant-show-coding-tools%402x.png)
+![A screenshot that shows the Project navigator in the sidebar and the source editor on the right with a code snippet selected and the Show Coding Tools popover displayed with the Explain button.](https://docs-assets.developer.apple.com/published/ccd05451353f6d7bf5002534801635e8/coding-assistant-show-coding-tools%402x.png)
 
 Alternatively, click the coding assistant button in the source editor gutter to display the coding tools popover.
 
-##### Generate or Modify Code
+##### Prompt Iteratively to Reach Your Goal
 
-Give Xcode specific instructions on how to generate or modify code. If you aren’t getting the result you expected, try breaking down your question or adding more detailed instruction. Between each prompt, review and validate the code changes with a preview or playground, and continue iterating on your app by adjusting your prompts to get the behavior you’re looking for.
+Give Xcode specific instructions on how to generate or modify your code. If you aren’t getting results that you expect, try breaking down your question or adding more detailed instructions.
 
 For example, if you’re new to Swift and SwiftUI, you can code along with the modifications that Xcode makes. Start with a Swift app that you create from a template and instruct Xcode to make incremental changes, such as:
 
@@ -59,29 +59,35 @@ For example, if you’re new to Swift and SwiftUI, you can code along with the m
 - *Add the ability to edit the properties of items in the list view*
 - *Change the list view to a table view showing all the properties*
 
-While working on a response, Xcode displays progress messages in the message text field before posting its response in the conversation area. The response may contain a description of the changes, including some steps or code changes.
+Between each prompt, review and validate the code changes, and continue iterating on your app by adjusting your prompts to get the results you want.
 
-![A screenshot of the coding assistant in the sidebar on the left and a file opened in the source editor on the right. The coding assistant shows the prompt, a code snippet, and a description of the changes.](https://docs-assets.developer.apple.com/published/1d35b1e06e006254417f967322b38501/coding-assistant-write-code%402x.png)
+The response may contain next steps and ask you follow-up questions. You can either answer the questions (continue the conversation with the assistant) or enter a new prompt.
 
-The changes may go beyond what you asked for or build on your previous prompts. The response may contain next steps and ask you a follow-up question. Xcode puts you in control, where you lead and redirect the conversation as needed to steer the model in the direction you’d like to go.
+##### Generate or Modify Code
 
-You can either answer the question (continue the conversation with the assistant) or enter a new prompt.
+Enter your prompts in the message text field at the bottom of the coding assistant or press Command-Option-0 in the source editor and enter a prompt in the Show Coding Tools popover.
 
-To generate code about specific symbols while in the source editor, you can use the coding tools popover. Control-click a symbol and choose Show Coding Tools > Show Coding Tools from the contextual menu, then enter a prompt in the coding tools popover.
+While working on a response, Xcode displays progress messages in the text field before posting its response in the conversation area. The response may contain a description of the changes, including some steps or code changes.
+
+![A screenshot of the coding assistant in the sidebar on the left and a file opened in the source editor on the right. The coding assistant shows the prompt, a code snippet, and a description of the changes.](https://docs-assets.developer.apple.com/published/331261641b0d654a5a83dda3e70d5bdf/coding-assistant-write-code%402x.png)
+
+If you choose an agent, Xcode may iterate on a response, build your app to verify the code, and fix build warnings and errors automatically.
+
+The response may contain content that you can interact with. For example, click a code change to open it in the source editor. Xcode uses multicolor change bars to highlight changes made using intelligence.
+
+To undo changes, click the Undo Changes button to the right of the message text field.
 
 ##### Apply Changes to Your Code
 
-You can see code changes that Xcode automatically applies to your files as file *snippets* in the conversation. These snippets show the modified or added file, and clicking on them takes you to that specific change in the source editor.
+If you use a non-agentic model, you can control whether Xcode modifies your code.
 
-> 💡 **Tip**: Use snippets to navigate through all of the changes that Xcode applies and review them in the source editor.
+The “Automatically apply code changes” button at the lower-right corner of the sidebar is on by default. If you turn the “Automatically apply code changes” button off, Xcode proposes changes to your code instead of applying them and labels them as “Proposal” in the conversation area.
 
-If you want Xcode to automatically edit your code, turn on Automatically Apply Changes by clicking the button at the lower-right corner of the sidebar. The response may contain content that you can interact with. For example, click a code listing to open changes in the source editor. Xcode uses multicolor change bars to highlight the lines of code that it changes using coding intelligence.
+The response may describe the code changes that the assistant suggests and contain proposed code that you can selectively apply or paste into your files.
 
-To undo changes, click Revert above the message text field. To reapply the changes, click Reapply. Alternatively, click the History button in the upper-right corner of the sidebar, to see a history of changes and roll them back by prompt (see [`Rollback changes using the conversation history`](writing-code-with-intelligence-in-xcode#Rollback-changes-using-the-conversation-history.md)).
+To apply a proposed change, click the code snippet in the response and click Apply in the dialog that appears. If the change adds a new file, click Create New File in the dialog.
 
-If you turn the automatically apply button off, Xcode proposes changes to your code instead of applying them and labels them as “Proposed Changes” in the conversation. The response may describe the code changes that the assistant suggests and contain proposed code that you can selectively apply or paste into your files. To apply a proposed change, click the code in the response and click Apply. To apply all the suggested changes, click the Apply button above the message text field.
-
-![A screenshot that shows the coding assistant on the left containing a proposed changes response with the source code opened on the right highlighting the proposed changes with a multicolor change bar in the gutter.](https://docs-assets.developer.apple.com/published/797e32bb0f8dd484ab825a3c7f7be025/coding-assistant-propose-code%402x.png)
+![A screenshot that shows the coding assistant on the left containing a proposed changes response with the source code opened on the right highlighting the proposed changes with a multicolor change bar in the gutter.](https://docs-assets.developer.apple.com/published/510bad5a2a59dbc74af0b54a5883e4c9/coding-assistant-propose-code%402x.png)
 
 ##### Customize the Context of Your Prompts
 
@@ -93,9 +99,7 @@ You can add specific references to symbols and files by typing the `@` character
 
 To add additional files from outside your project, choose “Upload files” from the Attachments pop-up menu in the lower-left corner, under the message text field, and select the files to upload from the dialog.
 
-The Project Context button in the lower-right corner of the sidebar is on by default. This allows Xcode to share relevant code and other context from your project with the model. To see the files and search terms that Xcode used, click the information icon next to Project Context if it appears in the response. To narrow the scope of the project files, turn off the automatic search feature and add explicit references to files and symbols in your prompt.
-
-![A screenshot of the coding assistant in the sidebar on the left and the source editor on the right with the Project Context information popover overlaying both panes.](https://docs-assets.developer.apple.com/published/7365fdb55c49d91a314b404c0dc8686c/coding-assistant-project-context%402x.png)
+For non-agentic models, the Project Context button in the lower-right corner of the sidebar is on by default. This allows Xcode to share relevant code and other context from your project with the model. To narrow the scope of the project files, you can turn off the automatic search feature and add explicit references to files and symbols in your prompt instead.
 
 ##### Generate Playgrounds and Previews
 
@@ -119,13 +123,15 @@ The source editor highlights any issues with a red underline and presents an iss
 
 ![A screenshot that shows the issue navigator on the left with an issue selected and a file open in the source editor with a Fix-it dialog with the syntax error message and a Generate button.](https://docs-assets.developer.apple.com/published/0702ce2d359f75c21bfd3249242209bc/coding-assistant-generate-fix-it%402x.png)
 
+If you choose an agent, Xcode may fix errors and warnings in generated code for you.
+
 ##### Generate Documentation
 
 Let Xcode draft your API documentation for you. Select a symbol in the source editor and click the coding intelligence icon that appears. In the dialog, click Document.
 
 ![A screenshot of the Project navigator on the left, a file open in the source editor with generated DocC style comments above the structure name.](https://docs-assets.developer.apple.com/published/7316da7c55972c15a5a1f9957cf4a3fe/coding-assistant-generate-docs%402x.png)
 
-Xcode can add [`DocC`](https://developer.apple.com/documentation/DocC)-style comments to the source file above the symbol. For example, select a class and Xcode adds documentation for the class, its properties and methods, including the method parameters.
+Xcode can add [`DocC`](https://developer.apple.comhttps://www.swift.org/documentation/docc/)-style comments to the source file above the symbol. For example, select a class and Xcode adds documentation for the class, its properties and methods, including the method parameters.
 
 Xcode displays coding intelligence controls at the bottom of the source editor that summarizes the change. To see the response in the conversation area of the coding assistant, click the coding assistant button. To undo changes, click the Revert button.
 
@@ -140,13 +146,12 @@ At any time you can review the conversations you have with the coding assistant.
 You can manage your conversations in the conversation area or using the Conversation pop-up menu in the toolbar to:
 
 - Review prompts and responses in the same conversation by scrolling up or down in the list of prompts.
-- Show or hide a response by clicking the disclosure triangle to the right of the prompt.
 - Jump to a recent or previous conversation by choosing the conversation from the menu.
-- Remove previous conversations by choosing Clear All from the menu.
+- Remove previous conversations by choosing Clear Recents from the menu.
 - Start a new conversation by clicking the Start New Conversation button on the far left in the toolbar, then enter a prompt in the message text field below.
-- Choose a model by clicking the New Conversation With button on the left in the toolbar.
+- Choose a model by clicking the button on the right of the Start New Conversation button.
 
-![A screenshot that shows the coding assistant area with the conversation pop-up menu open and containing multiple conversations and previous conversations to choose from.](https://docs-assets.developer.apple.com/published/5ac292d3c2217557ca98157a43f913b2/coding-assistant-conversation-menu%402x.png)
+![A screenshot that shows the coding assistant area with the conversation pop-up menu open and containing multiple conversations and previous conversations to choose from.](https://docs-assets.developer.apple.com/published/7f2db36cb30793a764e8807702a53f8b/coding-assistant-conversation-menu%402x.png)
 
 ##### Rollback Changes Using the Conversation History
 

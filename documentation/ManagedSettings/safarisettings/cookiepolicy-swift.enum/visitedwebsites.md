@@ -1,6 +1,6 @@
 # SafariSettings.CookiePolicy.visitedWebsites
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 A policy that indicates the device only accepts cookies from websites in the user’s browsing history.

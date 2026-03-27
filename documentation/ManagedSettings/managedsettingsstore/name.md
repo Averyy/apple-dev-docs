@@ -1,6 +1,6 @@
 # ManagedSettingsStore.Name
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 The unique name of a store.

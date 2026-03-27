@@ -6,7 +6,7 @@
 An error that indicates the server didn’t find a subscription-renewal-date extension request for the request identifier and product identifier you provided.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 

@@ -13,7 +13,7 @@ framework: HIG
 
 A text view displays multiline, styled text content, which can optionally be editable.
 
-![A stylized representation of a field containing text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e39001cb17826d4c35aed0a5a8371d2a/components-text-view-intro~dark%402x.png)
+![A stylized representation of a field containing text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/7a55be05566e0365a6f370a163c33e56/components-text-view-intro~dark%402x.png)
 Text views can be any height and allow scrolling when the content extends outside of the view. By default, content within a text view is aligned to the leading edge and uses the system label color. In iOS, iPadOS, and visionOS, if a text view is editable, a keyboard appears when people select the view.
 
 ## Best practices

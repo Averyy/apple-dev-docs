@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The name of the store as a `String`.

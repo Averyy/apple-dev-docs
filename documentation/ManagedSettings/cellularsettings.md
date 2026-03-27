@@ -1,6 +1,6 @@
 # CellularSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on the user’s cellular networking settings.

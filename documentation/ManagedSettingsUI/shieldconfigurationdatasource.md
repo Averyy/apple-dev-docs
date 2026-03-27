@@ -1,6 +1,6 @@
 # ShieldConfigurationDataSource
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: class
 
 The base class for the principal object of an app extension that configures a shield’s appearance.

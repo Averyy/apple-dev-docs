@@ -21,10 +21,10 @@ struct WorkoutStep
 ## Topics
 
 ### Creating new workout steps
-- [init(goal: WorkoutGoal, alert: (WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
+- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
   Creates a new workout step with the provided goal and alerts.
 ### Accessing step data
-- [var alert: (WorkoutAlert)?](workoutstep/alert.md)
+- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
   Alerts used during the step.
 - [var goal: WorkoutGoal](workoutstep/goal.md)
   A goal that determines when the step ends.

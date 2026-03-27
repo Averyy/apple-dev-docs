@@ -1,6 +1,6 @@
 # init(token:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: init
 
 Creates an object that represents the provided domain.

@@ -1,6 +1,6 @@
 # WebContentSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 An object that configures which websites a user can access.

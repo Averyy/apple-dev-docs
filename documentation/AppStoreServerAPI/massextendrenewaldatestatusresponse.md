@@ -6,7 +6,7 @@
 A response that indicates the current status of a request to extend the subscription renewal date to all eligible subscribers.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 

@@ -13,7 +13,7 @@ framework: HIG
 
 A tab bar lets people navigate between top-level sections of your app.
 
-![A stylized representation of a tab bar containing four placeholder icons with names. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/956608063b39c0a8a6c0663cdcb31d61/components-tab-bar-intro~dark%402x.png)
+![A stylized representation of a tab bar containing four placeholder icons with names. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5c4ae5b313c8b5086890750d795c0d20/components-tab-bar-intro~dark%402x.png)
 Tab bars help people understand the different types of information or functionality that an app provides. They also let people quickly switch between sections of the view while preserving the current navigation state within each section.
 
 ## Best practices

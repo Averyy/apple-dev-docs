@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: init
 
 **Availability**:

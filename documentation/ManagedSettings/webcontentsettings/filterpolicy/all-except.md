@@ -1,6 +1,6 @@
 # WebContentSettings.FilterPolicy.all(except:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 The system blocks all websites except the ones you specify.

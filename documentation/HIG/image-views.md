@@ -13,7 +13,7 @@ framework: HIG
 
 An image view displays a single image — or in some cases, an animated sequence of images — on a transparent or opaque background.
 
-![A stylized representation of a photo. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b38ef3054b1d61b2a8f936cd81814d10/components-image-view-intro~dark%402x.png)
+![A stylized representation of a photo. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9b7bd4cdf8b0902c9432643236c14fec/components-image-view-intro~dark%402x.png)
 Within an image view, you can stretch, scale, size to fit, or pin the image to a specific location. Image views are typically not interactive.
 
 ## Best practices

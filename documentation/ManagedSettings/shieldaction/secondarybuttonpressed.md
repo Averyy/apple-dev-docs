@@ -1,6 +1,6 @@
 # ShieldAction.secondaryButtonPressed
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 The user pressed the optional secondary button underneath the primary button of a shield.

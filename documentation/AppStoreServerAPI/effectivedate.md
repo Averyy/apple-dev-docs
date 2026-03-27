@@ -6,7 +6,7 @@
 The new subscription expiration date for a subscription-renewal extension.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 

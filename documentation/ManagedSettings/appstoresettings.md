@@ -1,6 +1,6 @@
 # AppStoreSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on a user’s App Store settings.

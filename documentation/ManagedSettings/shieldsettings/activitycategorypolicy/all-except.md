@@ -1,6 +1,6 @@
 # ShieldSettings.ActivityCategoryPolicy.all(except:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 A policy that indicates the device shields all apps and websites, except content that you specify.

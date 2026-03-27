@@ -1,6 +1,6 @@
 # MediaSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on the media content the user can access.

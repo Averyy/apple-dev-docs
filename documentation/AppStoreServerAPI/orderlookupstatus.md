@@ -6,7 +6,7 @@
 A value that indicates whether the order ID in the request is valid for your app.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API 1.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: StoreKit  
 **Kind**: enum
 
-A value that enables qualifying apps to offer external purchases within the app.
+An enumeration that enables qualifying apps to offer external purchases within the app.
 
 **Availability**:
 - iOS 15.4+

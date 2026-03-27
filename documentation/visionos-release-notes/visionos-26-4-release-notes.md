@@ -1,4 +1,4 @@
-# visionOS 26.4 RC Release Notes
+# visionOS 26.4 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.4 RC. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.4. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
 
 ##### Address Sanitizer
 
@@ -38,6 +38,7 @@ The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro 
 ###### Known Issues
 
 - If the user takes off Apple Vision Pro while using the ‘FoveatedStreaming’ feature to stream CloudXR-enabled content, the steam will not pause as expected and the battery will drain.  (171672303) **Workaround:** Setup passcode in Vision Pro to avoid this issue
+- User input is unsupported for targets beyond 4 meters.   (172134620) **Workaround:** Ensure that your UI is within 4 meters from the streaming space origin. If you run into this issue and input stops working for the UI that was originally outside of the 4 meter distance, force quit the app to get it working again.
 
 ##### Managed App Distribution
 

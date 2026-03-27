@@ -1,6 +1,6 @@
 # icon
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 An icon to display in the center of the shield.

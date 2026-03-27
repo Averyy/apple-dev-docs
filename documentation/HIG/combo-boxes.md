@@ -11,7 +11,7 @@ framework: HIG
 
 A combo box combines a text field with a pull-down button in a single control.
 
-![A stylized representation of a combo box control displaying a list of cities. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b603487668d5ed2acb3754a6623b5914/components-combobox-intro~dark%402x.png)
+![A stylized representation of a combo box control displaying a list of cities. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/038d50f4709965e5f7339ab9a6ae3082/components-combobox-intro~dark%402x.png)
 People can enter a custom value into the field or click the button to choose from a list of predefined values. When people enter a custom value, it’s not added to the list of choices.
 
 ## Best practices

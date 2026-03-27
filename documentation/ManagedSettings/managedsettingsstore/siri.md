@@ -1,6 +1,6 @@
 # siri
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Settings that affect Siri.

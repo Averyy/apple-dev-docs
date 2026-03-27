@@ -13,7 +13,7 @@ framework: HIG
 
 A tab view presents multiple mutually exclusive panes of content in the same area, which people can switch between using a tabbed control.
 
-![A stylized representation of a view with two labeled tabs, the first of which is selected. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c685cba17efdddc2fea555bb9b7e648b/components-tab-view-intro~dark%402x.png)
+![A stylized representation of a view with three labeled tabs, the first of which is selected. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/91f9c53bf4c655720f8cf837508fa019/components-tab-view-intro~dark%402x.png)
 
 ## Best practices
 **Use a tab view to present closely related areas of content.** The appearance of a tab view provides a strong visual indication of enclosure. People expect each tab to display content that is in some way similar or related to the content in the other tabs.

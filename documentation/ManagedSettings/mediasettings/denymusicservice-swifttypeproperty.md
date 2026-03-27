@@ -1,6 +1,6 @@
 # denyMusicService
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata associated with denying access to Apple Music.

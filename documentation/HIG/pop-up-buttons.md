@@ -13,7 +13,7 @@ framework: HIG
 
 A pop-up button displays a menu of mutually exclusive options.
 
-![A stylized representation of a pop-up button displaying a set of options. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/13ce52f55d242fd8a857dc1d676f2ddb/components-pop-up-button-intro~dark%402x.png)
+![A stylized representation of a pop-up button displaying a set of options. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a02f34fe793c97f85fc15937c3ee5621/components-pop-up-button-intro~dark%402x.png)
 After people choose an item from a pop-up button’s menu, the menu closes, and the button can update its content to indicate the current selection.
 ![A screenshot of Calendar on iPhone, with a new calendar event open for editing. The editing screen contains controls for setting the details of the event, including its start and end dates, travel time, repeat interval, calendar, invitees, alert options, and attachments.](https://docs-assets.developer.apple.com/published/7d51cb5ed6c5cad811cfb8c505c983ff/pop-up-button-closed~dark%402x.png)
 ![A screenshot of Calendar on iPhone, with a new calendar event open for editing. A pop-up button menu emerges from the Repeat button, with options for choosing a repeat interval from a list of preset options, or creating a custom one.](https://docs-assets.developer.apple.com/published/cd2eb3bb204a5efde4f70704c53ff1e6/pop-up-button-open~dark%402x.png)

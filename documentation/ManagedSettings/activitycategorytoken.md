@@ -1,6 +1,6 @@
 # ActivityCategoryToken
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: typealias
 
 A token that represents a category of app or website activity.

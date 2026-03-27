@@ -1,6 +1,6 @@
 # requireAutomaticDateAndTime
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the constraint that configures the date and time setting.

@@ -1,6 +1,6 @@
 # bounds
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The range of values that a setting can accomodate.

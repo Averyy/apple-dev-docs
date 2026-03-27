@@ -1,6 +1,6 @@
 # lockAccounts
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A description of the setting that controls whether a user can modify their account information.

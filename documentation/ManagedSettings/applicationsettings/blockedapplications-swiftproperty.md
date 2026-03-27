@@ -1,6 +1,6 @@
 # blockedApplications
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A set of applications for the system to block.

@@ -6,7 +6,7 @@
 An error that indicates the customer consented field is invalid or doesn’t indicate that the customer consented.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 

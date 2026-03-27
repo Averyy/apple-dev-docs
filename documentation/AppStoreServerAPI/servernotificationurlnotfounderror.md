@@ -6,7 +6,7 @@
 An error that indicates the App Store server couldn’t find a notifications URL for your app in the environment.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # color
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The color of the text on a shield.

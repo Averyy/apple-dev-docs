@@ -20,7 +20,7 @@ var goal: WorkoutGoal
 
 ## See Also
 
-- [var alert: (WorkoutAlert)?](workoutstep/alert.md)
+- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
   Alerts used during the step.
 
 

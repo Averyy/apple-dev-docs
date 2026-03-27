@@ -13,7 +13,7 @@ framework: HIG
 
 A Live Activity lets people track the progress of an activity, event, or task at a glance.
 
-![A stylized representation of the Dynamic Island, in collapsed and expanded form, displaying the score of a live sporting event. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e18681a309e1ab5a2d4cd33b377a6a1f/components-live-activities-intro~dark%402x.png)
+![A stylized representation of the Dynamic Island, in collapsed and expanded form, displaying the score of a live sporting event. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/8ba0fe15117b6dd1d412da83a589dd69/components-live-activities-intro~dark%402x.png)
 Live Activities let people keep track of tasks and events in glanceable locations across devices.  They go beyond push notifications, delivering frequent content and status updates over a few hours and letting people interact with the displayed information.
 For example, a Live Activity might show the remaining time until a food delivery order arrives, live in-game information for a soccer match, or real-time fitness metrics and interactive controls to pause or cancel a workout.
 Live Activities start on iPhone or iPad and automatically appear in system locations across a person’s devices:

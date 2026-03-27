@@ -1,6 +1,6 @@
 # localizedDisplayName
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A localized display name for the category.

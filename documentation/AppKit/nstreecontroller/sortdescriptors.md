@@ -20,7 +20,8 @@ When the value of this property is an empty array, the tree controller has no so
 
 ## See Also
 
-- [Cocoa Bindings Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i)
+- [Cocoa Bindings](cocoa-bindings.md)
+  Automatically synchronize your data model with your app’s interface using Cocoa Bindings.
 
 
 ---

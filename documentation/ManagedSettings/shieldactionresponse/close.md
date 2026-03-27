@@ -1,6 +1,6 @@
 # ShieldActionResponse.close
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 An instruction for the system to close the current application or web browser.

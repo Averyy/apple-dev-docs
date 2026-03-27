@@ -1,6 +1,6 @@
 # WebDomain
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 An object that represents a website.

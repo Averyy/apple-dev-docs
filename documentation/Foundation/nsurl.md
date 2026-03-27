@@ -343,6 +343,8 @@ if (!success) {
 ### Deprecated
 - [convenience init?(scheme: String, host: String?, path: String)](nsurl/init(scheme:host:path:).md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

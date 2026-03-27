@@ -7,13 +7,13 @@ framework: HIG
 
 **Type:** article
 
-**Platforms:** ios, ipados
+**Platforms:** ios, ipados, macos
 
 > **Updated 2024-06-10:** New page.
 
-In iOS and iPadOS, a control provides quick access to a feature of your app from Control Center, the Lock Screen, or the Action button.
+A control provides quick access to a feature of your app from Control Center, the Lock Screen, or the Action button.
 
-![A partial screenshot of controls in Control Center, such as the Airplane Mode toggle, Wi-Fi toggle, and AirPlay button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9ccbbaa8ff6885d55e81ea95e9789192/components-controls-intro~dark%402x.png)
+![A partial screenshot of controls in Control Center, such as the Airplane Mode toggle, Wi-Fi toggle, and AirPlay button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/3eb51c82ce94c19b99ff18e912b90052/components-controls-intro~dark%402x.png)
 A control is a button or toggle that provides quick access to your app’s features from other areas of the system. Control buttons perform an action, link to a specific area of your app, or launch a [Camera experiences on a locked device](controls.md#Camera-experiences-on-a-locked-device). Control toggles switch between two states, such as on and off.
 People can add controls to Control Center by pressing and holding in an empty area of Control Center, to the Lock Screen by customizing their Lock Screen, and to the Action button by configuring the Action button in the Settings app.
 
@@ -24,7 +24,7 @@ Controls display their information differently depending on where they appear:
 - In Control Center, a control displays its symbol and, at larger sizes, its title and value.
 - On the Lock Screen, a control displays its symbol.
 - On iPhone devices with a control assigned to the Action button, pressing and holding it displays the control’s symbol in the Dynamic Island, as well as its value (if present).
-![A partial screenshot of Control Center on iPhone, highlighting that the Silent mode control is active, with a symbol of a bell with a line drawn through it and red tint.](https://docs-assets.developer.apple.com/published/afae9ffd9b47f7e3c4b1572fa70364f1/control-control-center~dark%402x.png)
+![A partial screenshot of Control Center on iPhone, highlighting that the Silent mode control is active, with a symbol of a bell with a line drawn through it and red tint.](https://docs-assets.developer.apple.com/published/414191a77f562b12876630f46e617663/control-control-center~dark%402x.png)
 ![A partial screenshot of the bottom of the Lock Screen on iPhone, highlighting that the Silent mode control is active on the right, with a symbol of a bell with a line drawn through it and red tint.](https://docs-assets.developer.apple.com/published/5816024fd99021045fb28d4679157794/control-lock-screen~dark%402x.png)
 ![A partial screenshot that displays the Dynamic Island at the top of the Home Screen on iPhone, showing that the Silent mode control is active with a red tinted symbol of a bell with a line drawn through it in the leading area and red tinted text that says Silent in the trailing area.](https://docs-assets.developer.apple.com/published/c31bf6beef4943fb92f43a81568f53fc/control-dynamic-island~dark%402x.png)
 
@@ -53,7 +53,7 @@ If your app supports camera capture, starting with iOS 18 you can create a contr
 **Provide instructions for adding the control.** Help people understand how to add the control that launches this camera experience.
 
 ## Platform considerations
-*No additional considerations for iOS or iPadOS. Not supported in macOS, watchOS, tvOS, or visionOS.*
+*No additional considerations for iOS, iPadOS, or macOS. Not supported in watchOS, tvOS, or visionOS.*
 
 ## Resources
 

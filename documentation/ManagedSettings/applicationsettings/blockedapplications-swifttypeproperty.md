@@ -1,6 +1,6 @@
 # blockedApplications
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A description of the setting that controls which apps a user can launch on their device.

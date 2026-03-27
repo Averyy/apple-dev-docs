@@ -1,6 +1,6 @@
 # SafariSettings.CookiePolicy
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: enum
 
 The conditions under which Safari accepts cookies.

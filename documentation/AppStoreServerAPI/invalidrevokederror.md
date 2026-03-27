@@ -6,7 +6,7 @@
 An error that indicates the revoked parameter contains an invalid value.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 

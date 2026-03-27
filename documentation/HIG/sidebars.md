@@ -13,7 +13,7 @@ framework: HIG
 
 A sidebar appears on the leading side of a view and lets people navigate between sections in your app or game.
 
-![A stylized representation of the top portion of a window's sidebar displaying a title, a section, and some folders. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/830b8f548645354ae5d1fd63e295b6eb/components-sidebar-intro~dark%402x.png)
+![A stylized representation of the top portion of a window's sidebar displaying a title, a section, and some folders. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5ca851737509d9f3f1cd943b0d116184/components-sidebar-intro~dark%402x.png)
 A sidebar floats above content without being anchored to the edges of the view. It provides a broad, flat view of an app’s information hierarchy, giving people access to several peer content areas or modes at the same time.
 A sidebar requires a large amount of vertical and horizontal space. When space is limited or you want to devote more of the screen to other information or functionality, a more compact control such as a [Tab bars](tab-bars.md) may provide a better navigation experience. For guidance, see [Layout](layout.md).
 

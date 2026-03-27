@@ -11,7 +11,7 @@ framework: HIG
 
 A watch face is a view that people choose as their primary view in watchOS.
 
-![A stylized representation of a series of Apple Watch faces. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/4641675c92e1d378367c3df5639bc1a4/components-faces-intro~dark%402x.png)
+![A stylized representation of a series of Apple Watch faces. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/8774d941bca52891ee8aa0b924f1c295/components-faces-intro~dark%402x.png)
 The watch face is at the heart of the watchOS experience. People choose a watch face they want to see every time they raise their wrist, and they customize it with their favorite complications. People can even customize different watch faces for different activities, so they can switch to the watch face that fits their current context.
 In watchOS 7 and later, people can share the watch faces they configure. For example, a fitness instructor might configure a watch face to share with their students by choosing the Gradient watch face, customizing the color, and adding their favorite health and fitness complications. When the students add the shared watch face to their Apple Watch or the Watch app on their iPhone, they get a custom experience without having to configure it themselves.
 You can also configure a watch face to share from within your app, on your website, or through Messages, Mail, or social media. Offering shareable watch faces can help you introduce more people to your complications and your app.

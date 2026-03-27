@@ -1,6 +1,6 @@
 # PasscodeSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on a user’s ability to change their device’s passcode.

@@ -1,6 +1,6 @@
 # <(_:_:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: op
 
 Returns a Boolean value that indicates whether the value of the first argument is less than that of the second argument.

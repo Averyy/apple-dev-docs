@@ -16,7 +16,7 @@ static let predicate: NSBindingName
 
 #### Discussion
 
-See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
 
 ## See Also
 

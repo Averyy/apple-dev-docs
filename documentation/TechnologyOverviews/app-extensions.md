@@ -62,7 +62,7 @@ iOS, iPadOS, macOS, tvOS, visionOS, and watchOS support app extensions for speci
 | [`Safari Services`](https://developer.apple.com/documentation/SafariServices) | Extend the web-browsing experience in Safari by leveraging web technologies and native code. | ✅ | ✅ |  | ✅ |  |
 | [`Share Extension`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html#//apple_ref/doc/uid/TP40014214-CH12-SW1) | Let users post to your social-network service from any app. | ✅ | ✅ |  |  |  |
 | [`ShieldActionDelegate`](https://developer.apple.com/documentation/ManagedSettings/ShieldActionDelegate) | Manage the system’s response to shield actions, which hide the content of apps and websites. | ✅ |  |  |  |  |
-| [`ManagedSettingsUI`](https://developer.apple.com/documentation/ManagedSettingsUI) | Customize the appearance of shields to match the style of your app. | ✅ |  |  |  |  |
+| [`Managed Settings UI`](https://developer.apple.com/documentation/ManagedSettingsUI) | Customize the appearance of shields to match the style of your app. | ✅ |  |  |  |  |
 | [`Authenticating Users with a Cryptographic Token`](https://developer.apple.com/documentation/CryptoTokenKit/authenticating-users-with-a-cryptographic-token) | Grant access to user accounts and the keychain using a hardware-based token. |  | ✅ |  |  |  |
 | [`CSImportExtension`](https://developer.apple.com/documentation/CoreSpotlight/CSImportExtension) | Make content in your app searchable in Spotlight, Safari, Siri, and more. | ✅ | ✅ |  | ✅ |  |
 | [`Messages`](https://developer.apple.com/documentation/Messages) | Add custom stickers to Messages. | ✅ |  |  |  |  |

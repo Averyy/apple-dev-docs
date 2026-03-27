@@ -1,6 +1,6 @@
 # blockedByFilter
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The current policy for filtering websites.

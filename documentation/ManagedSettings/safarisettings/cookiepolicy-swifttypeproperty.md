@@ -1,6 +1,6 @@
 # cookiePolicy
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the setting that configures Safari’s policy for cookies.

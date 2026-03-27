@@ -11,7 +11,7 @@ framework: HIG
 
 The Apple TV Home Screen provides an area called Top Shelf, which showcases your content in a rich, engaging way while also giving people access to their favorite apps in the Dock.
 
-![A stylized representation of a horizontal list of media previews above rows of Apple TV apps. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/00eeb1285c251f238a4719fbe1268056/components-top-shelf-intro~dark%402x.png)
+![A stylized representation of a horizontal list of media previews above rows of Apple TV apps. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/1a10068f9c4352bd02af05918db8de31/components-top-shelf-intro~dark%402x.png)
 When you support full-screen Top Shelf, people can swipe through multiple full-screen content views, play trailers and previews, and get more information about your content.
 Top Shelf is a unique opportunity to highlight new, featured, or recommended content and let people jump directly to your app or game to view it. For example, when people select Apple TV in the Dock, full-screen previews immediately begin playing and soon the Dock slides away. As people watch previews for the first show, they can swipe through previews of all other featured shows, stopping to select Play or More Info for a preview that interests them.
 The system defines several layout templates that you can use to give people a compelling Top Shelf experience when they select your app in the Dock. To help you position content, you can download these templates from [Apple Design Resources](https://developer.apple.com/design/resources/#tvos-apps).

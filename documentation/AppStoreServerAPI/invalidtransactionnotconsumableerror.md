@@ -6,7 +6,7 @@
 An error that indicates the transaction identifier doesn’t represent a consumable In-App Purchase.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API ?+
 
 ## Declaration
 

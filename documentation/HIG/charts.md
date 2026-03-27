@@ -11,7 +11,7 @@ framework: HIG
 
 Organize data in a chart to communicate information with clarity and visual appeal.
 
-![A stylized representation of a bar chart. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e459d47bf486ec41aa163a0923208828/components-charts-intro~dark%402x.png)
+![A stylized representation of a bar chart. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/6bb7599ca11e8ab3039e67cf6f4afba8/components-charts-intro~dark%402x.png)
 An effective chart highlights a few key pieces of information in a dataset, helping people gain insights and make decisions. For example, people might use a chart to:
 - Learn how upcoming weather conditions might affect their plans.
 - Analyze stock prices to understand past performance and discover trends.

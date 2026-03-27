@@ -30,9 +30,16 @@ Returns an external purchase token of the type you specify, or returns `nil` if 
 
 #### Discussion
 
-Use this method to request tokens when your app uses the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API. Request the `ACQUISITION` and `SERVICES` token types when your app launches and immediately associate the tokens with a customer account on your server. You can also call this method at any other time, such as before communicating or promoting offers. The method returns the token, of each type, until it expires.
+Use this method to request tokens when your app uses the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API.
 
-> 💡 **Tip**: Request a token before every potential transaction to ensure you have a current token.
+The token types you request depend on the region in which your app offers external purchases:
+
+- For external purchases in the European Union (EU), request the `ACQUISITION` and `SERVICES` token types when your app launches and immediately associate the tokens with a customer account on your server. You can also call this method at any other time, such as before communicating or promoting offers. The method returns the token, of each type, until it expires.
+- For external purchases in Japan, request the `IN_APP` or `LINK_OUT` token types. Request an `IN_APP` token type for flows that use an alternative payment provider inside the app.  Request a `LINK_OUT` token type for flows where customers can complete transactions on your website, outside of the app. For more information, see [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
+
+The `IN_APP` and `LINK_OUT` token types for Japan are available starting in iOS 26.4.
+
+> 💡 **Tip**: Request tokens before every potential transaction to ensure you have current tokens.
 
 ##### Read and Report Tokens
 
@@ -42,7 +49,7 @@ Report tokens and all transactions associated with the tokens from your server, 
 
 ## Parameters
 
-- `tokenType`: A string that indicates the token type. Valid string values are: `ACQUISITION`, `SERVICES`
+- `tokenType`: A string that indicates the token type. Valid string values are: `ACQUISITION`, `SERVICES`, `IN_APP`, `LINK_OUT`.
 
 ## See Also
 

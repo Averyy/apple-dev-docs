@@ -1,6 +1,6 @@
 # AccountSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 An object that configures whether a user can modify their device’s account settings.

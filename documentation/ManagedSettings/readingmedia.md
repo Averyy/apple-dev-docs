@@ -1,6 +1,6 @@
 # Confirming the effective TV and movie ratings
 
-**Framework**: ManagedSettings
+**Framework**: Managed Settings
 
 Read the media rating on a device and determine what media to display on your app.
 

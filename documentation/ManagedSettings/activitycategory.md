@@ -1,6 +1,6 @@
 # ActivityCategory
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 An activity’s category, such as Entertainment or Social.

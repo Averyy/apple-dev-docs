@@ -1,12 +1,12 @@
-# Safari 26.4 Beta Release Notes
+# Safari 26.4 Release Notes
 
 **Framework**: Safari Release Notes
 
-Released February 16, 2026 — 26.4 beta (20624.11.11)
+Released March 24, 2026 — 26.4 (20624.1.16)
 
 #### Overview
 
-Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4 beta, macOS 26.4 beta, macOS Sequoia, and macOS Sonoma.
+Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, macOS Sequoia, and macOS Sonoma.
 
 ##### Accessibility
 
@@ -14,6 +14,9 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 
 - Fixed an issue where Voice Control commands could cause Safari to hang. (168364189)
 - Fixed an issue where a button’s label would not update when a descendant’s `aria-hidden` attribute changed. (169012516)
+- Fixed elements with `aria-controls` or `aria-expanded` and the `hidden` attribute to no longer appear in VoiceOver’s Form Control menu. (169499630)
+- Fixed an issue where VoiceOver would announce with extra verbosity when moving onto the first item of a list on the webpage.  (169982730)
+- Fixed an issue where controls with `aria-labelledby` pointing to visually-hidden elements could not obtain proper bounding box geometry through accessibility APIs. (170639492)
 
 ##### Animations
 
@@ -31,24 +34,26 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 
 - Added Compact tabs back to Safari on macOS and iPadOS.  (148723398)
 
+###### Resolved Issues
+
+- Fixed Safari gesture support to prevent pages that should not be able to scroll, such as with explicit `overflow: hidden`, from unexpectedly scrolling.  (163660111)
+
 ##### Css
 
 ###### New Features
 
 - Added support for a new blocks-in-inline layout approach. (19534458)
-- Added support for allowing positioned boxes in scrollable containing blocks to overflow along scrollable directions. (162722820)
+- Updated absolutely positioned boxes in scrollable containing blocks to allow alignment overflow in scrollable directions, in accordance with a recent CSS spec change. (162722820)
 - Added support for `flow-tolerance` in CSS Grid Lanes. (164043151)
 - Added support for a new grid layout integration system resolving a number of grid layout issues. (164406235)
 - Added support for parsing and evaluating name-only `@container` queries that have no conditions, allowing named containers to match without explicit constraints. (164648718)
 - Added support for an automatic initial value for `grid-auto-flow` in CSS Grid Level 3 to switch flow orientation based on `grid-template-rows` and `grid-template-columns` for grid lane layouts. (164791817)
 - Added support for CSS `display: grid-lanes`. (164858227)
 - Added support for `math-depth`. (167332590)
-- Fixed performance and correctness issues with shadow DOM in the modern CSS Zoom implementation. (167715972)
-- Added support for the `cursor` property on the `::marker` pseudo-element to enable custom pointer behavior in list markers. (168362833)
+- Added support for the `cursor` property on the `::marker` pseudo-element. (168362833)
 
 ###### Resolved Issues
 
-- Fixed handling of padding and margins for flex and grid layouts across all writing modes. (71046552)
 - Fixed an issue where `display: list-item` was incorrectly supported on `fieldset`. (95638460)
 - Fixed an issue where `max-width` was not correctly applied to tables with fixed widths. (96554687)
 - Fixed incorrect sizing and fragment URL handling for SVG images used in `-webkit-cross-fade()`. (106633417)
@@ -72,7 +77,7 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed `margin` to apply CSS zoom at used-value time. (162907254)
 - Fixed evaluation of `calc()` expressions to correctly apply the used `zoom` factor to length values, ensuring properties like `line-height` and box dimensions scale properly. (163141549)
 - Fixed an issue where `calc(em)` values for unzoomed properties were incorrectly adjusted. (163267333)
-- Fixed `position-area` normal alignment to correctly align toward the non-auto inset when only one inset is auto. (163317238)
+- Fixed `position-area` normal alignment to align toward the non-auto inset when only one inset is auto, in accordance with recent CSS spec changes. (163317238)
 - Fixed an issue where `calc()`  incorrectly treated margins as present. (163605539)
 - Fixed `devicePixelRatio` so that page zoom now affects the main frame consistently with iframes, keeping their values synchronized. (163857955)
 - Fixed incorrect underline positioning for `text-decoration` when inline box sides are trimmed. (163858721)
@@ -85,7 +90,6 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed: Refactored the handling of block-level boxes inside inline boxes. (165523565)
 - Fixed table column width distribution when a `colspan` spans mixed percentage and auto-width columns to properly respect percentage constraints. (165561401)
 - Fixed an issue where `text-decoration: underline` appeared higher than expected when `text-box-trim` was applied to the root inline box. (165614136)
-- Fixed auto-placement cursor handling for spanning items in `grid-lanes` layouts to correctly wrap within the valid range. (165701659)
 - Fixed `::first-line` pseudo-element to always use `inline` display to match the CSS Display specification. (166068698)
 - Fixed an issue where `shape-outside` did not update correctly after web fonts loaded. (166336491)
 - Fixed incorrect text selection ranges for truncated right-to-left content. (166944754)
@@ -93,10 +97,17 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed `counter-*` properties serialization order. (167518994)
 - Fixed `outline-width` and `outline-offset` to follow updated computed style resolution rules. (167618367)
 - Fixed the computed style resolution for `border-*-width` properties. (167689519)
+- Fixed performance and correctness issues with inheritance in the modern CSS Zoom implementation. (167715972)
 - Fixed the computed style resolution for the `column-rule-width` property. (167725940)
 - Fixed `border-*-width`, `outline-width`, and `column-rule-width` so they now pixel snap correctly during CSS animations and transitions. (167763497)
 - Fixed the disclosure triangle in `<details>` elements to use the larger `system-ui` font variant, preventing it from rendering as an emoji and ensuring consistent display across writing directions. (168364553)
 - Fixed CSS rules within `@scope` not being applied to `<input>` and `<textarea>` elements. (169751338)
+- Fixed an issue where empty CSS rules sharing a selector with non-empty rules could prevent dynamic style updates from applying correctly. (170348749)
+- Fixed an issue where `padding-inline-end` was not included in the scrollable overflow for block containers. (170503510)
+- Fixed an issue where `position-area` for elements in scrollable containers only used the initial scrollport bounds instead of the entire scrollable area. (170503694)
+- Fixed an issue where CSS transitions were incorrectly triggered when `border-width` computed values did not change, causing unexpected layout shifts. (170657059)
+- Fixed an issue where absolutely-positioned elements inside inline containers did not correctly account for the margin of a preceding block when determining their static position. (170934098)
+- Fixed an issue where multi-column layout rendered columns at incorrect positions for some fonts. (171016194)
 
 ###### Deprecations
 
@@ -121,6 +132,7 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed incorrect text selection when dragging across pseudo elements. (142905243)
 - Fixed an issue on iOS 26 where the edit menu would not appear when tapping inside an already-focused text field that had a looping `content` animation. (164290305)
 - Fixed an issue where focusing a hidden editable element would incorrectly display the text cursor and selection at full opacity. (165489471)
+- Fixed a regression where dragging to select text would stop scrolling when the cursor left the window. (169983104)
 
 ##### Encoding
 
@@ -161,6 +173,10 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed image uploading to not transcode images when `accept="image/*"` is specified. (166124206)
 
 ##### Javascript
+
+###### New Features
+
+- Added support for iterator sequencing.  (167633152)
 
 ###### Resolved Issues
 
@@ -213,6 +229,7 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed `parseSequenceHeaderOBU` to return an `AV1CodecConfigurationRecord`, fully decode the Sequence Header OBU, and capture the complete color profile. (166439682)
 - Fixed an issue where the macOS inline media controls timeline scrubber overlapped the right container buttons. (167634241)
 - Fixed an issue where `WebCodecs VideoDecoder` could output H264 frames in the wrong order. (168046597)
+- Fixed an issue where the mute button and volume slider overlapped in the video player controls when using a right-to-left language. (170174446)
 
 ##### Networking
 
@@ -223,6 +240,12 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 ###### Resolved Issues
 
 - Fixed a regression where `fetch()` would throw a `TypeError` when using `targetAddressSpace: 'loopback'` for localhost requests. (166574523)
+
+##### Privacy
+
+###### Resolved Issues
+
+- Fixed an issue where cross-browser Private Click Measurement recorded attribution entries even when “Allow privacy-preserving measurement of ad effectiveness” was disabled.  (170669444)
 
 ##### Rendering
 
@@ -261,7 +284,7 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed tiling gaps in CSS reference filters using `<feDisplacementMap>`. (135448018)
 - Fixed `SVGLength` parsing to correctly return the initial value when encountering parser errors or invalid values. (136102554)
 - Fixed an issue where `SVGImage` did not respect system dark mode changes. (140661763)
-- Fixed breaking SVG resource referencing when removing a resource which shares its `id` with other resources, fixing activity indicators in Slack. (147015037)
+- Fixed breaking SVG resource referencing when removing a resource which shares its `id` with other resources. (147015037)
 - Fixed behavior to avoid incorrect pruning of SVG mask subtrees based on visibility. (157729389)
 - Fixed an issue where SVG `animateTransform` animations on hidden elements were triggering full-page rendering updates each frame. (159647563)
 - Fixed `SVGLength.prototype.valueAsString` to throw a `SyntaxError` when assigned an empty string. (165429393)
@@ -300,7 +323,7 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 
 ###### Resolved Issues
 
-- Fixed an issue where `WKWebView` apps with a toolbar would fail to display a top scroll pocket when relying on automatic content inset adjustments. (161370795)
+- Fixed an issue where `WKWebView` apps with a toolbar would fail to display a top scroll edge effect when relying on automatic content inset adjustments. (161370795)
 
 ##### Web Api
 
@@ -315,6 +338,7 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Added support for upgrading elements in `CustomElementRegistry.prototype.initialize`. (165045530)
 - Added support for the `customelementregistry` content attribute and handling of `null` `customElementRegistry` values in `document.createElement`, `document.createElementNS`, and `element.attachShadow`. (165096267)
 - Exposed the`MediaDeviceInfo` interface  in secure contexts only. per the web specification. (165318702)
+- Added support for Resource Timing Level 3 attributes `finalResponseHeadersStart` and `firstInterimResponseStart` to capture timing for both interim (1xx) and final HTTP response headers for proper measurement of events like 103 Early Hints. (167073003)
 
 ###### Resolved Issues
 
@@ -332,7 +356,8 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed `DigitalCredential` behavior to make user mediation implicitly required. (165597827)
 - Fixed an issue where the Big5 `TextDecoder` failed to recover and emit ASCII characters after encountering an invalid leading byte. (166672674)
 - Fixed `MouseEvent.offsetX` and `MouseEvent.offsetY` so they are now calculated relative to the padding edge of the target element. (168015965)
-- Fixed an issue where active pointers were not cleared when a parent view’s custom gesture recognizer blocked `touchesEnded` or `touchesCancelled`. (169109808)
+- Fixed an issue where pointer events would fail to dispatch after a parent view’s custom gesture recognizer blocked `touchesEnded:` or `touchesCancelled:`. (169109808)
+- Fixed an issue where JavaScript-to-native object serialization could fail entirely when any individual key-value pair could not be serialized, causing broken workflows in some apps. (171547386)
 
 ##### Web Authentication
 
@@ -381,7 +406,9 @@ Safari 26.4 beta is available for iOS 26.4 beta, iPadOS 26.4 beta, visionOS 26.4
 - Fixed an issue where the Sources navigation sidebar could be empty when reloading the page. (166141968)
 - Fixed timestamp formatting in the Web Inspector to remove unnecessary trailing `.0` values for readability. (166500013)
 - Fixed item order labels in the Web Inspector grid and flex overlays to remove the `#` symbol, changing from `Item #N` to `Item N`. (166767949)
+- Fixed an issue where the text filter in the Sources tab did not apply to the Local Overrides and Console Snippets sections. (169804196)
 - Fixed a performance issue in the Web Inspector search panel by limiting initial results to 100 per resource and adding UI controls to load more or all results, reducing unnecessary UI work for large queries. (169804865)
+- Fixed an issue where the search bar settings icon disappeared when the search field was focused. (169997100)
 
 ##### Webassembly
 

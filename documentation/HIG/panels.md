@@ -11,7 +11,7 @@ framework: HIG
 
 In a macOS app, a panel typically floats above other open windows providing supplementary controls, options, or information related to the active window or current selection.
 
-![A stylized representation of a panel floating above a window. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/abd000664b3a93fc273b2625b4181c7a/components-panel-intro~dark%402x.png)
+![A stylized representation of a panel floating above a window. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d7f533ec9504d74179c4d2e48a8a3e9b/components-panel-intro~dark%402x.png)
 In general, a panel has a less prominent appearance than an app’s [macOS window states](windows.md#macOS-window-states). When the situation calls for it, a panel can also use a dark, translucent style to support a heads-up display (or *HUD*) experience.
 When your app runs in other platforms, consider using a modal view to present supplementary content that’s relevant to the current task or selection. For guidance, see [Modality](modality.md).
 

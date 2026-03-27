@@ -11,7 +11,7 @@ framework: HIG
 
 Lockups combine multiple separate views into a single, interactive unit.
 
-![A stylized representation of a person icon above a line of headline text and a line of footnote text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/f3fef1aa129a89cf20704b8bab354e11/components-lockups-intro~dark%402x.png)
+![A stylized representation of a person icon above a line of headline text and a line of footnote text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/934b6f43607eaa5023d1b823e7801e62/components-lockups-intro~dark%402x.png)
 Each lockup consists of a content view, a header, and a footer. Headers appear above the main content for a lockup, and footers appear below the main content. All three views expand and contract together as the lockup gets focus.
 According to the needs of your app, you can combine four types of lockup: cards, caption buttons, monograms, and posters.
 

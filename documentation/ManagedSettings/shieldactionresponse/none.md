@@ -1,6 +1,6 @@
 # ShieldActionResponse.none
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 An instruction that the system doesn’t need to take any additional action on behalf of the extension.

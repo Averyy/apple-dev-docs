@@ -13,7 +13,7 @@ framework: HIG
 
 A widget provides quick access to essential information and focused interactions from your app or game in additional contexts.
 
-![A stylized representation of a set of different-sized widgets on an iPad Home Screen. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/839de767b66ee37916957391c87b91ac/components-widgets-intro~dark%402x.png)
+![A stylized representation of a set of different-sized widgets on an iPad Home Screen. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/bff97eb5bd4fb782145390ce6ae1a0ee/components-widgets-intro~dark%402x.png)
 Widgets help people organize and personalize their devices by displaying timely, glanceable content and offering specific functionality. They appear in various contexts for a consistent experience across platforms. For example, a person might place a Weather widget:
 - On the Home Screen and Lock Screen of their iPhone and iPad
 - On the desktop and Notification Center of their Mac

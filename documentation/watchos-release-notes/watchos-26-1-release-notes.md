@@ -23,7 +23,7 @@ The watchOS 26.1 SDK provides support to develop watchOS apps for Apple Watch de
 
 ## See Also
 
-- [watchOS 26.4 RC Release Notes](watchos-26_4-release-notes.md)
+- [watchOS 26.4 Release Notes](watchos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [watchOS 26.3 Release Notes](watchos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

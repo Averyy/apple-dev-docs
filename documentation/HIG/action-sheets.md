@@ -11,7 +11,7 @@ framework: HIG
 
 An action sheet is a modal view that presents choices related to an action people initiate.
 
-![A stylized representation of a set of action sheet buttons at the bottom of an iPhone. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/fc0b086137604dbce2701ce7532ddfca/components-action-sheet-intro~dark%402x.png)
+![A stylized representation of a set of action sheet buttons at the bottom of an iPhone. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/4c5dc85488c7fffadeab9ec3f2fcc7b0/components-action-sheet-intro~dark%402x.png)
 
 > **Note:** When you use SwiftUI, you can offer action sheet functionality in all platforms by specifying a [presentation modifier](https://developer.apple.com/documentation/swiftui/view-presentation) for a confirmation dialog. If you use UIKit, you use the [UIAlertController.Style.actionSheet](../UIKit/UIAlertController/Style/actionSheet.md) to display an action sheet in iOS, iPadOS, and tvOS.
 

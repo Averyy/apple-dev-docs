@@ -61,6 +61,7 @@ Error messages and codes for the Advanced Commerce API.
 - [object ItemLimitExceededError](itemlimitexceedederror.md)
 - [object MalformedPayloadError](malformedpayloaderror.md)
 - [object MisalignedBillingCycleError](misalignedbillingcycleerror.md)
+- [object MigrationNotAllowedWhenPriceIncreaseCommunicatedError](migrationnotallowedwhenpriceincreasecommunicatederror.md)
 - [object MismatchedStorefrontError](mismatchedstorefronterror.md)
 - [object MissingPricingConfigForStorefrontError](missingpricingconfigforstorefronterror.md)
 - [object MissingUpdatedItemsWithPeriodChangeError](missingupdateditemswithperiodchangeerror.md)

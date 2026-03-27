@@ -8,6 +8,10 @@ Learn about new features and updates in the Advanced Commerce API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Advanced Commerce API.
 
+#### Server Update March 26 2026
+
+- Added the following error code: [`MigrationNotAllowedWhenPriceIncreaseCommunicatedError`](migrationnotallowedwhenpriceincreasecommunicatederror.md).
+
 #### Server Update March 5 2026
 
 - Added additional tax codes for books in [`Choosing tax codes for your SKUs`](taxcodes.md).

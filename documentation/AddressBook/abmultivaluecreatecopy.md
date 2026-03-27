@@ -38,7 +38,7 @@ A copy of `multiValue`.
   Returns the number of entries in a multi-value list.
 - [func ABMultiValueCreate() -> Unmanaged<ABMultiValueRef>!](abmultivaluecreate().md)
   Returns a new ABMultiValue object.
-- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable().md)
+- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable(_:).md)
   Returns a newly created mutable multi-value list object.
 - [func ABMultiValueCreateMutableCopy(ABMultiValue!) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutablecopy(_:).md)
   Returns a mutable copy of a multi-value object.

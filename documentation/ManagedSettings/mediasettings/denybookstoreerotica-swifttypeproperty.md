@@ -1,6 +1,6 @@
 # denyBookstoreErotica
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata associated with the setting that denies access to content in the Books store categorized as erotica.

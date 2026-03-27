@@ -1,6 +1,6 @@
 # ShieldActionResponse
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: enum
 
 Constants your extension that handles shield actions can use to tell the system how to respond to an action.

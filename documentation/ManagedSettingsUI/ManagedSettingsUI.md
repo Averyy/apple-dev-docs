@@ -1,6 +1,6 @@
 # Managed Settings UI
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: module
 
 Define and configure the appearance of shielding views.

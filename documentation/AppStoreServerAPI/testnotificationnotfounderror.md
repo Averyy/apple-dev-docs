@@ -6,7 +6,7 @@
 An error that indicates the test notification token is expired or the test notification status isn’t available.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

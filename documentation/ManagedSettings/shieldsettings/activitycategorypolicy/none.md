@@ -1,6 +1,6 @@
 # ShieldSettings.ActivityCategoryPolicy.none
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 A policy that indicates the device doesn’t shield any content.

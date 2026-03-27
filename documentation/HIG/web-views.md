@@ -11,7 +11,7 @@ framework: HIG
 
 A web view loads and displays rich web content, such as embedded HTML and websites, directly within your app.
 
-![A stylized representation of a compass icon. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a1618ccbc27810d118d5d0930a92098b/components-web-view-intro~dark%402x.png)
+![A stylized representation of a compass icon. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c173ae37f21b7f0ea59e6a5b71e5f91c/components-web-view-intro~dark%402x.png)
 For example, Mail uses a web view to show HTML content in messages.
 
 ## Best practices

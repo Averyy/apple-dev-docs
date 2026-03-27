@@ -14,6 +14,10 @@ A streaming endpoint that a foveated streaming session can connect to.
 struct Endpoint
 ```
 
+## Mentions
+
+- [Streaming a CloudXR application to Apple Vision Pro with foveation](streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
+
 #### Overview
 
 Use this object to specify the local or cloud streaming endpoint your foveated streaming session connects to when you call [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md).

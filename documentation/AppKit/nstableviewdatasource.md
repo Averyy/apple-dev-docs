@@ -18,7 +18,7 @@ protocol NSTableViewDataSource : NSObjectProtocol
 
 Some of the methods in this protocol, such as [`tableView(_:objectValueFor:row:)`](nstableviewdatasource/tableview(_:objectvaluefor:row:).md) and [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) along with other methods that return data, are called frequently, so they must be efficient.
 
-> **Note**:  View-based table views must not use the [`tableView(_:setObjectValue:for:row:)`](nstableviewdatasource/tableview(_:setobjectvalue:for:row:).md) method for setting values. Instead the views must explicitly set the values for the fields, or use Cocoa bindings. Likewise, use target/action for editing. See [`Table View Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i) for more information on populating view-based and cell-based table views.
+> **Note**:  View-based table views must not use the [`tableView(_:setObjectValue:for:row:)`](nstableviewdatasource/tableview(_:setobjectvalue:for:row:).md) method for setting values. Instead the views must explicitly set the values for the fields, or use Cocoa bindings. Likewise, use target/action for editing. For more information, see [`NSTableView`](nstableview.md).
 
 If you’re not using Cocoa bindings to provide data to the table view, the following methods are required:
 
@@ -26,7 +26,7 @@ If you’re not using Cocoa bindings to provide data to the table view, the foll
 - [`tableView(_:objectValueFor:row:)`](nstableviewdatasource/tableview(_:objectvaluefor:row:).md)
 - [`tableView(_:setObjectValue:for:row:)`](nstableviewdatasource/tableview(_:setobjectvalue:for:row:).md) (cell-based tables only)
 
-To learn more about Cocoa bindings, see [`Cocoa Bindings Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i).
+For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
 
 ## Topics
 

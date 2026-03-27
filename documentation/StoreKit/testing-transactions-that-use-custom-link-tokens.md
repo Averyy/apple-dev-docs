@@ -35,7 +35,7 @@ To report transactions, you can use any token for the customer that’s active (
 ## See Also
 
 - [enum ExternalPurchaseCustomLink](externalpurchasecustomlink.md)
-  A value that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
+  An enumeration that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
   A token you use with the External Purchase custom link API.
 - [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)

@@ -13,7 +13,7 @@ framework: HIG
 
 A page control displays a row of indicator images, each of which represents a page in a flat list.
 
-![A stylized representation of a page control with an indicator denoting the active page. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/28735a6228f743520c0423fa9932049c/components-page-dots-intro~dark%402x.png)
+![A stylized representation of a page control with an indicator denoting the active page. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a422742d8b7bcabe60000ade69c3d88b/components-page-dots-intro~dark%402x.png)
 The scrolling row of indicators helps people navigate the list to find the page they want. Page controls can handle an arbitrary number of pages, making them particularly useful in situations where people can create custom lists.
 Page controls appear as a series of small indicator dots by default, representing the available pages. A solid dot denotes the current page. Visually, these dots are always equidistant, and are clipped if there are too many to fit in the window.
 

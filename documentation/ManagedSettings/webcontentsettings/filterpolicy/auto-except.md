@@ -1,6 +1,6 @@
 # WebContentSettings.FilterPolicy.auto(_:except:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 The system blocks adult content.

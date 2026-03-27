@@ -1,6 +1,6 @@
 # ApplicationToken
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: typealias
 
 A representation of an application.

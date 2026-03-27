@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: init
 
 **Availability**:

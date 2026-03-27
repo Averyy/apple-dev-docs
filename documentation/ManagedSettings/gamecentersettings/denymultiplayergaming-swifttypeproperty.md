@@ -1,6 +1,6 @@
 # denyMultiplayerGaming
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata associated with the setting that prevents users from joining multiplayer games.

@@ -1,6 +1,6 @@
 # init(domain:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: init
 
 Creates an object that represents the specified web domain.

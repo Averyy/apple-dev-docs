@@ -1,6 +1,6 @@
 # text
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The text of the label on a shield.

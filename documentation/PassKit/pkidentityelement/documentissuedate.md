@@ -37,6 +37,14 @@ class var documentIssueDate: PKIdentityElement { get }
   An element that represents the user’s issuing authority.
 - [class var portrait: PKIdentityElement](pkidentityelement/portrait.md)
   An element that represents the user’s photo.
+- [class var signatureUsualMark: PKIdentityElement](pkidentityelement/signatureusualmark.md)
+  The signature or usual mark of the mobile document holder.
+- [class var placeOfBirth: PKIdentityElement](pkidentityelement/placeofbirth.md)
+  The place where the mobile document holder was born.
+- [class var nationality: PKIdentityElement](pkidentityelement/nationality.md)
+  The mobile document holder’s nationality.
+- [class var dhsTemporaryLawfulStatus: PKIdentityElement](pkidentityelement/dhstemporarylawfulstatus.md)
+  Indicates whether the mobile document holder has temporary lawful status based on information from the U.S. Department of Homeland Security (DHS).
 
 
 ---

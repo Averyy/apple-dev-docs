@@ -25,12 +25,19 @@ The core workflow involves creating a [`FoveatedStreamingSession`](foveatedstrea
   Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
 - [Creating a foveated streaming client on visionOS](creating-a-foveated-streaming-client-on-visionos.md)
   Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
-### Classes
+- [Analyzing the performance of a foveated streaming session](analyzing-the-performance-of-a-foveated-streaming-session.md)
+  Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
 - [class FoveatedStreamingSession](foveatedstreamingsession.md)
   A session that manages a foveated streaming connection to a local or remote streaming endpoint.
-### Structures
 - [struct FoveatedStreamingSpaceContent](foveatedstreamingspacecontent.md)
   A type that defines the content of an immersive space displaying a foveated stream.
+### Presentation and control
+- [init(foveatedStreaming: FoveatedStreamingSession)](../SwiftUI/ImmersiveSpace/init(foveatedStreaming:).md)
+  Creates an immersive space to display foveated streaming content.
+- [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](../SwiftUI/ImmersiveSpace/init(foveatedStreaming:content:).md)
+  Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](../SwiftUI/View/foveatedStreamingPauseSheet(session:).md)
+  Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 
 ---

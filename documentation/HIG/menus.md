@@ -13,7 +13,7 @@ framework: HIG
 
 A menu reveals its options when people interact with it, making it a space-efficient way to present commands in your app or game.
 
-![A stylized representation of a menu containing a selected item and displaying a submenu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9ceee9d133da424bb71b41f17c14c0ff/components-menus-intro~dark%402x.png)
+![A stylized representation of a menu containing a selected item and displaying a submenu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/bb06a827ef4bd134efe7bfc3a83eaa0a/components-menus-intro~dark%402x.png)
 Menus are ubiquitous in apps and games, so most people already know how to use them. Whether you use system-provided components or custom ones, people expect menus to behave in familiar ways. For example, people understand that opening a menu reveals one or more *menu items*, each of which represents a command, option, or state that affects the current selection or context. The guidance for labeling and organizing menu items applies to all types of menus in all experiences.
 
 > **Note:** Several system-provided components also include menus that support specific use cases. For example, a [Pop-up buttons](pop-up-buttons.md) or [Pull-down buttons](pull-down-buttons.md) can reveal a menu of options directly related to its action; a [Context menus](context-menus.md) lets people access a small number of frequently used actions relevant to their current view or task; and in macOS and iPadOS, [The menu bar](the-menu-bar.md) menus contain all the commands people can perform in the app or game.

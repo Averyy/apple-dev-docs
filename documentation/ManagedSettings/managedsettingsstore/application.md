@@ -1,6 +1,6 @@
 # application
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Settings that affect applications.

@@ -231,6 +231,12 @@ Keep your streaming application running after it receives a `SessionStatusDidCha
   Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
 - [Creating a foveated streaming client on visionOS](creating-a-foveated-streaming-client-on-visionos.md)
   Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
+- [Analyzing the performance of a foveated streaming session](analyzing-the-performance-of-a-foveated-streaming-session.md)
+  Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
+- [class FoveatedStreamingSession](foveatedstreamingsession.md)
+  A session that manages a foveated streaming connection to a local or remote streaming endpoint.
+- [struct FoveatedStreamingSpaceContent](foveatedstreamingspacecontent.md)
+  A type that defines the content of an immersive space displaying a foveated stream.
 
 
 ---

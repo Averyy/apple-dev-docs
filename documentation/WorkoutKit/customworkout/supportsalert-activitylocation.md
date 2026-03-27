@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the system supports the specified
 ## Declaration
 
 ```swift
-static func supportsAlert(_ alert: any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType = .unknown) -> Bool
+static func supportsAlert(_ alert: WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType = .unknown) -> Bool
 ```
 
 ## Parameters

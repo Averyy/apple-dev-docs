@@ -11,7 +11,7 @@ framework: HIG
 
 A rating indicator uses a series of horizontally arranged graphical symbols — by default, stars — to communicate a ranking level.
 
-![A stylized representation of a rating indicator denoting a ranking of three out of five stars. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c15cacd461239b1e62a32fc3677a3ff7/components-rating-indicators-intro~dark%402x.png)
+![A stylized representation of a rating indicator denoting a ranking of three out of five stars. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5e8e6af5d03ecb1593a8a4ae3ad4a982/components-rating-indicators-intro~dark%402x.png)
 A rating indicator doesn’t display partial symbols; it rounds the value to display complete symbols only. Within a rating indicator, symbols are always the same distance apart and don’t expand or shrink to fit the component’s width.
 
 ## Best practices

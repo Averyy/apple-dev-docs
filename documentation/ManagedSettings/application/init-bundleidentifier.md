@@ -1,6 +1,6 @@
 # init(bundleIdentifier:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: init
 
 Creates an object that represents the app with the specified bundle identifier.

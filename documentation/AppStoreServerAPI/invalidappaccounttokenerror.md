@@ -6,7 +6,7 @@
 An error that indicates the value of the app account token field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 

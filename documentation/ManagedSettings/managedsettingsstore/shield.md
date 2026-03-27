@@ -1,6 +1,6 @@
 # shield
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Settings that affect what activities the system covers with a shielding view on this device.

@@ -13,7 +13,7 @@ framework: HIG
 
 A window presents UI views and components in your app or game.
 
-![A stylized representation of a window with close, minimize, and full-screen buttons. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/f48df0f138fdf6b13fd7a655f218b77d/components-window-intro~dark%402x.png)
+![A stylized representation of a window with close, minimize, and full-screen buttons. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/975ba346e0bf72b13571acd9233c90b4/components-window-intro~dark%402x.png)
 In iPadOS, macOS, and visionOS, windows help define the visual boundaries of app content and separate it from other areas of the system, and enable multitasking workflows both within and between apps. Windows include system-provided interface elements such as frames and window controls that let people open, close, resize, and relocate them.
 Conceptually, apps use two types of windows to display content:
 - A *primary* window presents the main navigation and content of an app, and actions associated with them.

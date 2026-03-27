@@ -82,6 +82,8 @@ As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontr
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

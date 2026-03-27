@@ -1,6 +1,6 @@
 # SafariSettings.CookiePolicy.always
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 A policy that indicates the device accepts cookies from all websites.

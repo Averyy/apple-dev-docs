@@ -11,7 +11,7 @@ framework: HIG
 
 A pull-down button displays a menu of items or actions that directly relate to the button’s purpose.
 
-![A stylized representation of a pull-down menu displaying a set of items. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e0c94efc6ec5e59a243f8163b028ad41/components-pull-down-button-intro~dark%402x.png)
+![A stylized representation of a pull-down menu displaying a set of items. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d06f595ac55eae126830291437775207/components-pull-down-button-intro~dark%402x.png)
 After people choose an item in a pull-down button’s menu, the menu closes, and the app performs the chosen action.
 
 ## Best practices

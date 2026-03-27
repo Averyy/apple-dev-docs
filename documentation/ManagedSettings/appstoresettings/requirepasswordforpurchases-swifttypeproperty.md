@@ -1,6 +1,6 @@
 # requirePasswordForPurchases
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata associated with the setting that requires a password for App Store purchases.

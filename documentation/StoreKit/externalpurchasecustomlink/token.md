@@ -40,7 +40,7 @@ StoreKit returns an external purchase token of this type when you call the [`tok
 ## See Also
 
 - [enum ExternalPurchaseCustomLink](externalpurchasecustomlink.md)
-  A value that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
+  An enumeration that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
 - [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 - [com.apple.developer.storekit.external-purchase-link](../BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link.md)

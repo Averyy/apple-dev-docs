@@ -1,6 +1,6 @@
 # title
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The title of the shield to display below the icon.

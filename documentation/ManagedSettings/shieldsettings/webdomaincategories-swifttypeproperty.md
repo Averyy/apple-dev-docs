@@ -1,6 +1,6 @@
 # webDomainCategories
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the configuration that specifies categories of websites for the system to shield.

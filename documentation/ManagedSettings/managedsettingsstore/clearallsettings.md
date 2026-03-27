@@ -1,6 +1,6 @@
 # clearAllSettings()
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: method
 
 Clears all settings for this store.

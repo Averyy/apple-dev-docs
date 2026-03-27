@@ -1,27 +1,24 @@
 # IMKModeDictionary
 
-**Framework**: InputMethodKit  
-**Kind**: var
+**Framework**: InputMethodKit
 
-**Availability**:
-- macOS 10.5+
+The input method mode dictionary key.
 
-## Declaration
+#### Overview
 
-```swift
-let IMKModeDictionary: String
-```
+For details on the contents of the input mode dictionary, see *Technical Note TN2128 Frequently Asked Text Services Manager (TSM) Questions* located in Technical Notes > Carbon > Events & Other Input.
 
-#### Discussion
+## Topics
 
-The key used to obtain an input method mode dictionary from the input method bundle.
+### Constants
+- [let IMKModeDictionary: String](imkmodedictionary.md)
 
 ## See Also
 
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](imkcandidatessendserverkeyeventfirst.md)
-- [let IMKControllerClass: String](imkcontrollerclass.md)
-- [let IMKDelegateClass: String](imkdelegateclass.md)
+- [IMKControllerClass](imkcontrollerclass.md)
+  The input method controller class key.
+- [IMKDelegateClass](imkdelegateclass.md)
+  The input method delegate class key.
 
 
 ---

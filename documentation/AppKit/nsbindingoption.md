@@ -16,7 +16,7 @@ struct NSBindingOption
 
 Values that are used as keys in the options dictionary passed to the [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/bind(_:to:withKeyPath:options:)) method.
 
-These keys are also used in the dictionary returned as the [`options`](nsbindinginfokey/options.md) value of [`infoForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/infoForBinding(_:)). See the [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+These keys are also used in the dictionary returned as the [`options`](nsbindinginfokey/options.md) value of [`infoForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/infoForBinding(_:)). For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # denyAutoFill
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether Safari’s AutoFill feature is active.

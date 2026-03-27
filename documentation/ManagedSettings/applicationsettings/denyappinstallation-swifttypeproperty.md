@@ -1,6 +1,6 @@
 # denyAppInstallation
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the setting to prevent app installation.

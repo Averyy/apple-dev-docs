@@ -1,6 +1,6 @@
 # ShieldSettings.ActivityCategoryPolicy.specific(_:except:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 A policy that indicates the device shields specific categories of activity, with some exceptions.

@@ -1,6 +1,6 @@
 # denyMusicService
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether to prevent the user from accessing Apple Music’s streaming content.

@@ -9,7 +9,7 @@ framework: HIG
 
 - [App Shortcuts](/design/human-interface-guidelines/app-shortcuts) - An App Shortcut gives people access to your app’s key functions or content throughout the system.
 - [Complications](/design/human-interface-guidelines/complications) - A complication displays timely, relevant information on the watch face, where people can view it each time they raise their wrist.
-- [Controls](/design/human-interface-guidelines/controls) - In iOS and iPadOS, a control provides quick access to a feature of your app from Control Center, the Lock Screen, or the Action button.
+- [Controls](/design/human-interface-guidelines/controls) - A control provides quick access to a feature of your app from Control Center, the Lock Screen, or the Action button.
 - [Live Activities](/design/human-interface-guidelines/live-activities) - A Live Activity lets people track the progress of an activity, event, or task at a glance.
 - [Notifications](/design/human-interface-guidelines/notifications) - A notification gives people timely, high-value information they can understand at a glance.
 - [Status bars](/design/human-interface-guidelines/status-bars) - A status bar appears along the upper edge of the screen and displays information about the device’s current state, like the time, cellular carrier, and battery level.
@@ -22,7 +22,7 @@ framework: HIG
 
 - [App Shortcuts](app-shortcuts.md) - An App Shortcut gives people access to your app’s key functions or content throughout the system.
 - [Complications](complications.md) - A complication displays timely, relevant information on the watch face, where people can view it each time they raise their wrist.
-- [Controls](controls.md) - In iOS and iPadOS, a control provides quick access to a feature of your app from Control Center, the Lock Screen, or the Action button.
+- [Controls](controls.md) - A control provides quick access to a feature of your app from Control Center, the Lock Screen, or the Action button.
 - [Live Activities](live-activities.md) - A Live Activity lets people track the progress of an activity, event, or task at a glance.
 - [Notifications](notifications.md) - A notification gives people timely, high-value information they can understand at a glance.
 - [Status bars](status-bars.md) - A status bar appears along the upper edge of the screen and displays information about the device’s current state, like the time, cellular carrier, and battery level.

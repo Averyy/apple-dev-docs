@@ -1,12 +1,12 @@
 # Manage settings on devices in a Family Sharing group
 
-**Framework**: ManagedSettings
+**Framework**: Managed Settings
 
 Empower parents and guardians to configure constraints on other devices while preserving the family’s privacy.
 
 #### Overview
 
-Use Managed Settings together with [`ManagedSettingsUI`](https://developer.apple.com/documentation/ManagedSettingsUI), [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity), and [`Family Controls`](https://developer.apple.com/documentation/FamilyControls) to manage a device’s settings while preserving the user’s privacy. Managed Settings can’t function without a parent or guardian in the same Family Sharing group authorizing your app using Family Controls. To help implement time-based settings, Device Activity executes your code on a schedule without a child running your app. The parent or guardian in the Family Sharing group makes the decisions about setting management, and no one outside of the group can see the apps the group uses or the activities they participate in on their devices.
+Use Managed Settings together with [`Managed Settings UI`](https://developer.apple.com/documentation/ManagedSettingsUI), [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity), and [`Family Controls`](https://developer.apple.com/documentation/FamilyControls) to manage a device’s settings while preserving the user’s privacy. Managed Settings can’t function without a parent or guardian in the same Family Sharing group authorizing your app using Family Controls. To help implement time-based settings, Device Activity executes your code on a schedule without a child running your app. The parent or guardian in the Family Sharing group makes the decisions about setting management, and no one outside of the group can see the apps the group uses or the activities they participate in on their devices.
 
 ##### Request Authorization for Your App
 

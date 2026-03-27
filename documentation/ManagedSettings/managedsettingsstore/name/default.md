@@ -1,6 +1,6 @@
 # default
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The default store name.

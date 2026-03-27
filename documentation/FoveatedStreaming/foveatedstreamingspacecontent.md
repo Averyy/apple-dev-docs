@@ -34,6 +34,19 @@ ImmersiveSpace(foveatedStreaming: session) {
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
+## See Also
+
+- [Streaming a CloudXR application to Apple Vision Pro with foveation](streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
+  Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
+- [Establishing foveated streaming sessions with Apple Vision Pro](establishing-foveated-streaming-sessions-with-apple-vision-pro.md)
+  Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
+- [Creating a foveated streaming client on visionOS](creating-a-foveated-streaming-client-on-visionos.md)
+  Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
+- [Analyzing the performance of a foveated streaming session](analyzing-the-performance-of-a-foveated-streaming-session.md)
+  Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
+- [class FoveatedStreamingSession](foveatedstreamingsession.md)
+  A session that manages a foveated streaming connection to a local or remote streaming endpoint.
+
 
 ---
 

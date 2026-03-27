@@ -13,7 +13,7 @@ framework: HIG
 
 A picker displays one or more scrollable lists of distinct values that people can choose from.
 
-![A stylized representation of a selected item in a scrollable list. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c7f4a07ea32c82d65a9b3196bdc92a53/components-pickers-intro~dark%402x.png)
+![A stylized representation of a selected item in a scrollable list. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/2d09e7756ddcb44959b734f46a87b465/components-pickers-intro~dark%402x.png)
 The system provides several styles of pickers, each of which offers different types of selectable values and has a different appearance. The exact values shown in a picker, and their order, depend on the device language.
 Pickers help people enter information by letting them choose single or multipart values. Date pickers specifically offer additional ways to choose values, like selecting a day in a calendar view or entering dates and times using a numeric keypad.
 

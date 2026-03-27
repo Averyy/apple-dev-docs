@@ -1,6 +1,6 @@
 # secondaryButtonLabel
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The label of the optional secondary button.

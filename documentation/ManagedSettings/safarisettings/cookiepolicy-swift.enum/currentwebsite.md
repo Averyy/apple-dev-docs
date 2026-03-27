@@ -1,6 +1,6 @@
 # SafariSettings.CookiePolicy.currentWebsite
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 A policy that indicates the device only accepts cookies from the current website.

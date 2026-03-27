@@ -13,7 +13,7 @@ framework: HIG
 
 Activity rings show an individual’s daily progress toward Move, Exercise, and Stand goals.
 
-![A stylized representation of a set of move, exercise, and stand activity rings denoting progress. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/55ddd7bd93a74a139123e4b238bf7a27/components-activity-ring-intro~dark%402x.png)
+![A stylized representation of a set of move, exercise, and stand activity rings denoting progress. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a4e9350cdde57b85e3a794556fb749e2/components-activity-ring-intro~dark%402x.png)
 In watchOS, the Activity ring element always contains three rings, whose colors and meanings match those the Activity app provides. In iOS, the Activity ring element contains either a single Move ring representing an approximation of activity, or all three rings if an Apple Watch is paired.
 
 ## Best practices

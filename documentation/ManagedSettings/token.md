@@ -1,6 +1,6 @@
 # Token
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 A representation of an activity, such as an app or website, that doesn’t reveal its identity.

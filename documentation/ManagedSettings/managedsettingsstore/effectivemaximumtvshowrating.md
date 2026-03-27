@@ -1,6 +1,6 @@
 # $effectiveMaximumTVShowRating
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 **Availability**:

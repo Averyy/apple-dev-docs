@@ -1,6 +1,6 @@
 # defaultValue
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The implicit value for a setting if your app doesn’t set a value.

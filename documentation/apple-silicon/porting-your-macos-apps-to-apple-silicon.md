@@ -128,7 +128,7 @@ Apple silicon runs all performance tools found on Intel-based Mac computers. Use
 Architectural differences between `arm64` and `x86_64` mean that techniques that work well on one system might not work well on the other. For example:
 
 - Don’t assume a discrete GPU means better performance. The integrated GPU in Apple processors is optimized for high performance graphics tasks. See [`Porting your Metal code to Apple silicon`](porting-your-metal-code-to-apple-silicon.md).
-- Don’t assume that all processor cores are equal. The processors on Apple silicon contain a mixture of performance cores (P-cores) and efficiency cores (E-cores), which execute tasks with different performance characteristics. Use Quality-of-Service (QoS) classes to help the system schedule your tasks on the right type of core.
+- Don’t assume that all processor cores are equal. The processors on Apple silicon contain a mixture of cores, code paths, and other technologies that that can prioritize speed or efficiency of your code, and process tasks with different performance characteristics. Use Quality-of-Service (QoS) classes to help the system schedule your tasks on the right type of core.
 
 During the porting process, measure your app’s performance on both Apple silicon and Intel-based Mac computers and investigate any discrepancies. Tasks that take longer to run on one platform may require additional tuning.
 

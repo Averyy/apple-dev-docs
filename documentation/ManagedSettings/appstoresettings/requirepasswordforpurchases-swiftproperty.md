@@ -1,6 +1,6 @@
 # requirePasswordForPurchases
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether to require the user’s password to make App Store transactions.

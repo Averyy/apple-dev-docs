@@ -1,6 +1,6 @@
 # backgroundBlurStyle
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 A blur style to apply to the background of the shield.

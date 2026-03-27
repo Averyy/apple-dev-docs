@@ -13,7 +13,7 @@ framework: HIG
 
 A slider is a horizontal track with a control, called a thumb, that people can adjust between a minimum and maximum value.
 
-![A stylized representation of a brightness slider. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/868a9f7583e3230c2db197d586c21ba1/components-slider-intro~dark%402x.png)
+![A stylized representation of a brightness slider. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/8cc1dd25449f5732b1b0e9c74db21cae/components-slider-intro~dark%402x.png)
 As a slider’s value changes, the portion of track between the minimum value and the thumb fills with color. A slider can optionally display left and right icons that illustrate the meaning of the minimum and maximum values.
 
 ## Best practices

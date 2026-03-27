@@ -1,6 +1,6 @@
 # lockAppCellularData
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata associated with the constraint that locks the cellular data setting.

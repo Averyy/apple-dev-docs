@@ -744,6 +744,12 @@ While this sample sends and receives messages as strings, consider utilizing a s
   Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
 - [Establishing foveated streaming sessions with Apple Vision Pro](establishing-foveated-streaming-sessions-with-apple-vision-pro.md)
   Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
+- [Analyzing the performance of a foveated streaming session](analyzing-the-performance-of-a-foveated-streaming-session.md)
+  Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
+- [class FoveatedStreamingSession](foveatedstreamingsession.md)
+  A session that manages a foveated streaming connection to a local or remote streaming endpoint.
+- [struct FoveatedStreamingSpaceContent](foveatedstreamingspacecontent.md)
+  A type that defines the content of an immersive space displaying a foveated stream.
 
 
 ---

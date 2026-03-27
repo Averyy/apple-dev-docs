@@ -1,6 +1,6 @@
 # ManagedSettingsStore
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: class
 
 A data store that applies settings to the current user or device.

@@ -49,7 +49,7 @@ For more information on the format and content of these messages, see [`Establis
 Display streamed content by building a visionOS app with the Foveated Streaming framework that does the following:
 
 - Initializes a [`FoveatedStreamingSession`](foveatedstreamingsession.md).
-- Connects to a `FoveatedStreamingSession.Endpoint`.
+- Connects to a [`FoveatedStreamingSession.Endpoint`](foveatedstreamingsession/endpoint.md).
 - Presents the streamed content in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
 - Manages the connection life cycle and handles errors.
 
@@ -67,6 +67,12 @@ Alternatively, start from the Foveated Streaming sample app. For more informatio
   Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
 - [Creating a foveated streaming client on visionOS](creating-a-foveated-streaming-client-on-visionos.md)
   Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
+- [Analyzing the performance of a foveated streaming session](analyzing-the-performance-of-a-foveated-streaming-session.md)
+  Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
+- [class FoveatedStreamingSession](foveatedstreamingsession.md)
+  A session that manages a foveated streaming connection to a local or remote streaming endpoint.
+- [struct FoveatedStreamingSpaceContent](foveatedstreamingspacecontent.md)
+  A type that defines the content of an immersive space displaying a foveated stream.
 
 
 ---

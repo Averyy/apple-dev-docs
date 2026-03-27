@@ -11,7 +11,7 @@ framework: HIG
 
 On a Mac, people can secondary click an app’s or game’s icon in the Dock to reveal a Dock menu, which presents both system-provided and custom items.
 
-![A stylized representation of a menu extending from an icon in the Dock. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/341dc237fb88a7cea94f8c4f0fbc5c56/components-dock-menu-intro~dark%402x.png)
+![A stylized representation of a menu extending from an icon in the Dock. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/8a9bbbe5548d75e3b9fea9f3d53f7f0e/components-dock-menu-intro~dark%402x.png)
 The system-provided Dock menu items can vary depending on whether the app is open. For example, the Dock menu for Safari includes menu items for actions like viewing a current window or creating a new window.
 
 > **Note:** Although iOS and iPadOS don’t support a Dock menu, people can reveal a similar menu of system-provided and custom items — called Home Screen quick actions — when they long press an app icon on the Home Screen or in the Dock. For guidance, see [Home Screen quick actions](home-screen-quick-actions.md).

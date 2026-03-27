@@ -6,7 +6,7 @@
 A response that contains an array of signed JSON Web Signature (JWS) refunded transactions, and paging information.
 
 **Availability**:
-- App Store Server API 1.6+
+- App Store Server API 1.0+
 
 ## Declaration
 

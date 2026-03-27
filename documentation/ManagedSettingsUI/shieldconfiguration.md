@@ -1,6 +1,6 @@
 # ShieldConfiguration
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: struct
 
 An object that defines the appearance of a shield to display over an application or website.

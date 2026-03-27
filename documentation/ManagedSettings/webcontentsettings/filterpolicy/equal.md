@@ -1,6 +1,6 @@
 # ==(_:_:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: op
 
 Returns a Boolean value that indicates whether two values are equal.

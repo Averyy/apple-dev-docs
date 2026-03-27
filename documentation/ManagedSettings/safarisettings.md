@@ -1,6 +1,6 @@
 # SafariSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints on Safari’s AutoFill and cookie behaviors.

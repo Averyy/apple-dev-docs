@@ -1,6 +1,6 @@
 # ShieldAction
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: enum
 
 Constants that describe a user’s action for your extension to handle.

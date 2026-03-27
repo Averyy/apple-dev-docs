@@ -180,8 +180,6 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Migrate your code away from using these symbols.
-### Initializers
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsattributedstring/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

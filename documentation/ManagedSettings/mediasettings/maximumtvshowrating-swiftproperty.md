@@ -1,6 +1,6 @@
 # maximumTVShowRating
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The maximum TV show rating that the user may view.

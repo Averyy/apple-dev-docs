@@ -1,6 +1,6 @@
 # denyMultiplayerGaming
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether your app prevents the user joining multiplayer games.

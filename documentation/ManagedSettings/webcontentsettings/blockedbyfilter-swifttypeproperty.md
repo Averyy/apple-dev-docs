@@ -1,6 +1,6 @@
 # blockedByFilter
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A description of the setting that controls which websites a user can access.

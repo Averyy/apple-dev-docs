@@ -1,6 +1,6 @@
 # effectiveDenyExplicitContent
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The deny explicit content constraint that is active on this device.

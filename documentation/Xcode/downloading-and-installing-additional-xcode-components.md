@@ -24,7 +24,7 @@ There are three types of components:
 
 To download and install a component in any of these sections, click the Get button next to the component.
 
-To remove or disable components you no longer use and recover their storage space, click the Info button next to the component. In the dialog that appears, click Delete or Turn Off depending on the component.
+To remove or disable components you no longer use and recover their storage space, click the information button next to the component. In the dialog that appears, click Delete or Turn Off depending on the component.
 
 You can also install platform support when you create a project by selecting a template and clicking the Get button that appears for platforms that aren’t installed. For more information, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md).
 

@@ -1,6 +1,6 @@
 # denyInAppPurchases
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether to deny the user permission to make in-app purchases.

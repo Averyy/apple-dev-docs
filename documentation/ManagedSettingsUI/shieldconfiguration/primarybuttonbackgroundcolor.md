@@ -1,6 +1,6 @@
 # primaryButtonBackgroundColor
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The color to fill the contents of the rounded rectangle primary button.

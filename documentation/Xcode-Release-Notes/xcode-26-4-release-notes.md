@@ -1,4 +1,4 @@
-# Xcode 26.4 RC Release Notes
+# Xcode 26.4 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.4 RC includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, macOS 26.4, and visionOS 26.4. Xcode 26.4 RC supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.4 RC requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.4 includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, macOS 26.4, and visionOS 26.4. Xcode 26.4 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.4 requires a Mac running macOS Tahoe 26.2 or later.
 
 ##### General
 
@@ -171,12 +171,14 @@ Xcode 26.4 RC includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, 
 
 ###### Resolved Issues
 
-- Fixed: When exporting simulator runtimes through xcodebuild, Xcode will now save them out as a .exportBundle to included metadata to help with secure importing. That bundle can be directly imported with xcodebuild’s importPlatform command. ```None
+- Fixed: When exporting simulator runtimes through xcodebuild, Xcode will save an “.exportBundle” directory. This bundle contains metadata for securely importing the simulator when using `xcodebuild --importPlatform`. Example: ```None
  xcodebuild -downloadPlatform iOS -exportPath /tmp/mySimRuntimes/
  // Saves an exported simulator runtime with a similar name: /tmp/mySimRuntimes/iossimulator_<version>.exportedBundle
  
  xcodebuild -importPlatform /tmp/mySimRuntimes/iossimulator_<version>.exportedBundle
 ``` (166834291)
+- Fixed: Simulator runtime dyld shared caches are once again being created automatically to improve boot time performance. Performance will be degraded while runtimes are being scanned and caches being built.  The `simctl runtime dyld_shared_cache update --all` command can be used to ensure that all caching has completed.  (170836966)
+- Fixed: Resolved an issue with simdiskimaged jetsam-looping which could manifest as `simctl` or `xcodebuild -runFirstLaunch` hanging or failures to install simulator runtimes from within Xcode.  (172343027)
 
 ##### Source Editor
 
@@ -246,6 +248,12 @@ Xcode 26.4 RC includes Swift 6.3 and SDKs for iOS 26.4, iPadOS 26.4, tvOS 26.4, 
 - When an XCTest class has the property `continueAfterFailure` set to false, a failure in an test method, `setUp`, or `tearDown` that is also declared `async` will skip any remaining retries for the current test. For example, if an affected test uses the “retry on failure” repetition mode, it will not attempt to re-run the test after failing.  (108565878) **Workaround:** In your test plan, set “Relaunch Tests for Each Repetition” to on.
 - Instances of `UIImage` cannot be attached to tests when testing a Mac Catalyst app.  (168320788) **Workaround:** Use the `UIImage.cgImage` property to get the underlying `CGImage` and attach it instead.
 - When using Xcode for Apple silicon, tests which use Swift Testing may crash at launch when using a Rosetta run destination.  (170347005) **Workaround:** Use Xcode Universal.
+
+##### Xcode Organizer
+
+###### Resolved Issues
+
+- Fixed: A backend issue affected Xcode Organizer metrics and diagnostics for iOS 26.3.1 users. This issue has been addressed. Developers with significant iOS iOS 26.3.1 user bases will see corrected metrics over the next few weeks.  (172773750)
 
 ## See Also
 

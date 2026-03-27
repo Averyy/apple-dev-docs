@@ -13,7 +13,7 @@ framework: HIG
 
 On a Mac or an iPad, the menu bar at the top of the screen displays the top-level menus in your app or game.
 
-![A stylized representation of the macOS menu bar displaying a selected menu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9d64cf34e4c0ffbfaa0cd6cfeeff9cdb/components-the-menu-bar-intro~dark%402x.png)
+![A stylized representation of the macOS menu bar displaying a selected menu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/94c104500838e2283f6f25ba36d54628/components-the-menu-bar-intro~dark%402x.png)
 Mac users are very familiar with the macOS menu bar, and they rely on it to help them learn what an app does and find the commands they need. To help your app or game feel at home in macOS, it’s essential to provide a consistent menu bar experience.
 Menu bar menus on iPad are similar to those on Mac, appearing in the same order and with familiar sets of menu items. When you adopt the menu structure that people expect from their experience on Mac, it helps them immediately understand and take advantage of the menu bar on iPad as well.
 Keyboard shortcuts in iPadOS use the same patterns as in macOS. For guidance, see [Standard keyboard shortcuts](keyboards.md#Standard-keyboard-shortcuts).

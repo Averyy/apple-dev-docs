@@ -1,6 +1,6 @@
 # bundleIdentifier
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The unique string that identifies this app.

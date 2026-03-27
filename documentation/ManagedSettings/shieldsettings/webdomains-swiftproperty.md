@@ -1,6 +1,6 @@
 # webDomains
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Websites for the system to cover with a shielding view.

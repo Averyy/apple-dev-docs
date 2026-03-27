@@ -1,6 +1,6 @@
 # BoundedSettingMetadata
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Additional information about a bounded setting.

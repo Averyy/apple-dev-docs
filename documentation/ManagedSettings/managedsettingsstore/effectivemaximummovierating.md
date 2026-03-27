@@ -1,6 +1,6 @@
 # $effectiveMaximumMovieRating
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 **Availability**:

@@ -6,7 +6,7 @@
 An error that indicates the value in the playtime field is invalid.
 
 **Availability**:
-- App Store Server API 1.9+
+- App Store Server API 1.0+
 
 ## Declaration
 

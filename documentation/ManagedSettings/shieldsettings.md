@@ -1,6 +1,6 @@
 # ShieldSettings
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: struct
 
 Constraints that indicate what apps and websites to cover with a shielding view.

@@ -13,7 +13,7 @@ framework: HIG
 
 A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
 
-![A stylized representation of a toolbar, with a Back control on the leading edge, and Compose, Share, and the More menu on the trailing edge. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/aa830ab53d610d6c87c1aeb0ae353f95/components-toolbar-intro~dark%402x.png)
+![A stylized representation of a toolbar, with a Back control on the leading edge, and Compose, Share, and the More menu on the trailing edge. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5951f0f78a4bd3fcb003a241f69d8247/components-toolbar-intro~dark%402x.png)
 A toolbar consists of one or more sets of controls arranged horizontally along the top or bottom edge of the view, grouped into logical sections.
 Toolbars act on content in the view, facilitate navigation, and help orient people in the app. They include three types of content:
 - The title of the current view

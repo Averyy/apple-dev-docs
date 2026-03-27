@@ -6,7 +6,7 @@
 An error that indicates a required storefront country code is empty.
 
 **Availability**:
-- App Store Server API 1.7+
+- App Store Server API 1.0+
 
 ## Declaration
 

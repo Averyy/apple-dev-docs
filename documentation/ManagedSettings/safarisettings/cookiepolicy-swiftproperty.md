@@ -1,6 +1,6 @@
 # cookiePolicy
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Defines the conditions under which Safari accepts cookies.

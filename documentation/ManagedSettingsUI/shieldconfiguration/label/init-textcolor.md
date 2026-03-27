@@ -1,6 +1,6 @@
 # init(text:color:)
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: init
 
 Creates a shield label with the provided text and color.

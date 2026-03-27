@@ -13,7 +13,7 @@ framework: HIG
 
 Progress indicators let people know that your app isn’t stalled while it loads content or performs lengthy operations.
 
-![A stylized representation of a spinning indeterminate activity indicator above a progress bar. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/60c0518d1e6608a1bf8fa8246ea73e02/components-progress-indicators-intro~dark%402x.png)
+![A stylized representation of a spinning indeterminate activity indicator above a progress bar. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a10a0246c422e48f019bb2c5c2d17391/components-progress-indicators-intro~dark%402x.png)
 Some progress indicators also give people a way to estimate how long they have to wait for something to complete. All progress indicators are transient, appearing only while an operation is ongoing and disappearing after it completes.
 Because the duration of an operation is either known or unknown, there are two types of progress indicators:
 - *Determinate*, for a task with a well-defined duration, such as a file conversion

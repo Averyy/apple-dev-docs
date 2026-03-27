@@ -6,7 +6,7 @@
 Get a list of notifications that the App Store server attempted to send to your server.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Mentions
 

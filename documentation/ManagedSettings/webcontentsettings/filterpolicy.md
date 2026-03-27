@@ -1,6 +1,6 @@
 # WebContentSettings.FilterPolicy
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: enum
 
 The policies available for filtering web content based on specific web domains.

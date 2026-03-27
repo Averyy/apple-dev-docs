@@ -13,7 +13,7 @@ framework: HIG
 
 An edit menu lets people make changes to selected content in the current view, in addition to offering related commands like Copy, Select, Translate, and Look Up.
 
-![A stylized representation of an edit menu extending from selected text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/7591e2f1d6dc3f6de38f293a0eaf06fc/components-edit-menu-intro~dark%402x.png)
+![A stylized representation of an edit menu extending from selected text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/bce8928c8f3ac503bfe241fd3de75263/components-edit-menu-intro~dark%402x.png)
 In addition to text, an edit menu’s commands can apply to many types of selectable content, such as images, files, and objects like contact cards, charts, or map locations. In iOS, iPadOS, and visionOS, the system automatically detects the data type of a selected item, which can result in the addition of a related action to the edit menu. For example, selecting an address can add an  item like *Get directions* to the edit menu.
 Edit menus can look and behave slightly differently in different platforms.
 - In iOS, the edit menu displays commands in a compact, horizontal list that appears when people touch and hold or double-tap to select content in a view. People can tap a chevron on the trailing edge to expand it into a [Context menus](context-menus.md).

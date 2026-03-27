@@ -6,7 +6,7 @@
 The start date of a timespan, expressed in UNIX time, in milliseconds.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

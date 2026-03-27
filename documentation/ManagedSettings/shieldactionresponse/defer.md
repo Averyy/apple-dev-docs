@@ -1,6 +1,6 @@
 # ShieldActionResponse.defer
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 An instruction to defer a response to the action.

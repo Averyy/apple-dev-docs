@@ -6,7 +6,7 @@
 An error that indicates an invalid in-app ownership type parameter.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Declaration
 

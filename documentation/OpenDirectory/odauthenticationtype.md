@@ -1,19 +1,32 @@
-# _ODAuthenticationType
+# ODAuthenticationType
 
-**Framework**: Open Directory
+**Framework**: Open Directory  
+**Kind**: typealias
 
 An Open Directory authentication type.
 
-#### Overview
+**Availability**:
+- Mac Catalyst ?+
+- macOS ?+
 
-This is an intermediary type. Use [`ODAuthenticationType`](odauthenticationtype.md) instead.
+## Declaration
+
+```swift
+typealias ODAuthenticationType = NSString
+```
+
+## Mentions
+
+- [_ODAuthenticationType](odauthenticationtype.md)
+
+#### Discussion
+
+See [`Authentication Types`](authentication-types.md) for recognized authentication type values.
 
 ## See Also
 
 - [typealias ODAttributeType](odattributetype.md)
   An Open Directory attribute type.
-- [typealias ODAuthenticationType](odauthenticationtype.md)
-  An Open Directory authentication type.
 - [class ODContext](odcontext.md)
   An Open Directory context type.
 - [class ODNodeRef](odnoderef.md)
@@ -34,6 +47,8 @@ This is an intermediary type. Use [`ODAuthenticationType`](odauthenticationtype.
   An Open Directory record type.
 - [_ODAttributeType](odattributetype.md)
   An Open Directory attribute type.
+- [_ODAuthenticationType](odauthenticationtype.md)
+  An Open Directory authentication type.
 - [_ODRecordType](odrecordtype.md)
   An Open Directory record type.
 

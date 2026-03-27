@@ -1,6 +1,6 @@
 # applicationCategories
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Categories of apps for the system to cover with a shielding view.

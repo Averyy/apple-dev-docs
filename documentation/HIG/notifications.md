@@ -13,7 +13,7 @@ framework: HIG
 
 A notification gives people timely, high-value information they can understand at a glance.
 
-![A stylized representation of a notification mockup. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/7ef6bfcc1c54ef987a0c2c99513fc75b/components-notification-intro~dark%402x.png)
+![A stylized representation of a notification mockup. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a91ef4486438f9d6ccaf9811fbe8f45c/components-notification-intro~dark%402x.png)
 Before you can send any notifications to people, you have to get their consent (for developer guidance, see [Asking permission to use notifications](../UserNotifications/asking-permission-to-use-notifications.md)). After agreeing, people generally use settings to specify the styles of notification they want to receive, and to specify delivery times for notifications that have different levels of urgency. To learn more about the ways people can customize the notification experience, see [Managing notifications](managing-notifications.md).
 
 ## Anatomy

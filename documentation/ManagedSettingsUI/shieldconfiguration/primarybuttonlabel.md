@@ -1,6 +1,6 @@
 # primaryButtonLabel
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 The label of the topmost rounded rectangle button.

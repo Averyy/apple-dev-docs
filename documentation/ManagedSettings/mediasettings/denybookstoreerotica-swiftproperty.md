@@ -1,6 +1,6 @@
 # denyBookstoreErotica
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether to deny media categorized as erotica in the Books store.

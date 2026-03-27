@@ -1,6 +1,6 @@
 # ShieldAction.secondSecondarySubmenuItemPressed
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 An action that occurs when someone selects the second item in the secondary button’s submenu.

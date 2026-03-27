@@ -70,6 +70,10 @@ The Analytics Reports framework delivers new portions of report content as insta
   Analyze how many times people download your app on the App Store.
 - [App Store Pre-orders](app-store-pre-order.md)
   Analyze details on the number of pre-orders that people place and cancel for your app on the App Store.
+- [App Store Subscription State](subscription-state.md)
+  Analyze your App Store subscription performance.
+- [App Store Subscription Event](subscription-event.md)
+  Analyze and track changes throughout your users’ subscription lifecycle.
 
 
 ---

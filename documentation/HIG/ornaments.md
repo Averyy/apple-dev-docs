@@ -13,7 +13,7 @@ framework: HIG
 
 In visionOS, an ornament presents controls and information related to a window, without crowding or obscuring the window’s contents.
 
-![A stylized representation of an ornament at the bottom of a window shown on top of a grid that suggests the canvas of a design tool. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/340340adfe0066b5fb0f77c1a8719062/components-ornaments-intro~dark%402x.png)
+![A stylized representation of an ornament at the bottom of a window shown on top of a grid that suggests the canvas of a design tool. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/bf508d6532878f101678051f222af596/components-ornaments-intro~dark%402x.png)
 An ornament floats in a plane that’s parallel to its associated window and slightly in front of it along the z-axis. If the associated window moves, the ornament moves with it, maintaining its relative position; if the window’s contents scroll, the controls or information in the ornament remain unchanged.
 Ornaments can appear on any edge of a window and can contain UI components like buttons, segmented controls, and other views. The system uses ornaments to create and manage components like [Toolbars](toolbars.md), [Tab bars](tab-bars.md), and video playback controls; you can use an ornament to create a custom component.
 

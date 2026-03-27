@@ -1,6 +1,6 @@
 # denySiri
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the constraint that configures access to Siri.

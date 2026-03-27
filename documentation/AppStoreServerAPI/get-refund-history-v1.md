@@ -6,7 +6,7 @@
 Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
 
 **Availability**:
-- App Store Server API 1.1+
+- App Store Server API ?+ - Deprecated
 
 ## Mentions
 

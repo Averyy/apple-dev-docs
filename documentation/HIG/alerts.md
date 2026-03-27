@@ -13,7 +13,7 @@ framework: HIG
 
 An alert gives people critical information they need right away.
 
-![A stylized representation of an alert mockup that includes a title, description, primary button, and secondary button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9b8ac5aad55c9cfa90eafdd129b6dfb7/components-alert-intro~dark%402x.png)
+![A stylized representation of an alert mockup that includes a title, description, primary button, and secondary button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9f361e2cc8036bdb6ad75ba5362a4a40/components-alert-intro~dark%402x.png)
 For example, an alert can tell people about a problem, warn them when their action might destroy data, and give them an opportunity to confirm a purchase or another important action they initiated.
 
 ## Best practices

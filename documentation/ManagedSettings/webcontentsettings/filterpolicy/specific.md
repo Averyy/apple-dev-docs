@@ -1,6 +1,6 @@
 # WebContentSettings.FilterPolicy.specific(_:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: case
 
 The policy blocks the specified domains.

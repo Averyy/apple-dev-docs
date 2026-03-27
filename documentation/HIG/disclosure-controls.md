@@ -11,7 +11,7 @@ framework: HIG
 
 Disclosure controls reveal and hide information and functionality related to specific controls or views.
 
-![A stylized representation of collapsed and expanded disclosure buttons. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b6a2092ec265c96415bae0602459aadd/components-disclosure-control-intro~dark%402x.png)
+![A stylized representation of collapsed and expanded disclosure buttons. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/f561b6ecd5f4ba1b8aa55742f2de7eeb/components-disclosure-control-intro~dark%402x.png)
 
 ## Best practices
 **Use a disclosure control to hide details until they’re relevant.** Place controls that people are most likely to use at the top of the disclosure hierarchy so they’re always visible, with more advanced functionality hidden by default. This organization helps people quickly find the most essential information without overwhelming them with too many detailed options.

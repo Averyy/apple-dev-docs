@@ -1,6 +1,6 @@
 # ShieldActionDelegate
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: class
 
 A class for an extension that handles shield actions.

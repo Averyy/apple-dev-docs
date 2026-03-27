@@ -1,6 +1,6 @@
 # requireAutomaticDateAndTime
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 A Boolean value that indicates whether to prevent the user from changing their device’s date and time.

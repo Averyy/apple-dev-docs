@@ -6,7 +6,7 @@
 An error that indicates the status parameter is invalid.
 
 **Availability**:
-- App Store Server API 1.8+
+- App Store Server API 1.0+
 
 ## Declaration
 

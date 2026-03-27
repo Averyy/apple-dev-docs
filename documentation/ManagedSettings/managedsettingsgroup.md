@@ -1,6 +1,6 @@
 # ManagedSettingsGroup
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: protocol
 
 A group of settings to manage.

@@ -1,6 +1,6 @@
 # init(token:)
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: init
 
 Initializes the representation with the provided token.

@@ -1,6 +1,6 @@
 # token
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 An opaque representation of a specific web domain.

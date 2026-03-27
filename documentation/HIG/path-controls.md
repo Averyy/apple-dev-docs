@@ -11,7 +11,7 @@ framework: HIG
 
 A path control shows the file system path of a selected file or folder.
 
-![A stylized representation of a path control for a HIG Design document showing its root disk, parent folder, and selected item. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/f31d9651a70048341138c29b85e0798e/components-path-control-intro~dark%402x.png)
+![A stylized representation of a path control for a HIG Design document showing its root disk, parent folder, and selected item. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/1adefc1e669520b497fb32e540b8509e/components-path-control-intro~dark%402x.png)
 For example, choosing View > Show Path Bar in the Finder displays a path bar at the bottom of the window. It shows the path of the selected item, or the path of the window’s folder if nothing is selected.
 There are two styles of path control.
 ![A screenshot of a Finder path bar that displays a hierarchy of four locations.](https://docs-assets.developer.apple.com/published/4636905a8e9c55b8178364465ec599e8/path-controls-standard~dark%402x.png)

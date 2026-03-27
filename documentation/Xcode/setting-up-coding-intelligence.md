@@ -12,7 +12,7 @@ You can enable ChatGPT in Xcode or Claude where these products are available, or
 
 First, choose Xcode > Settings and select Intelligence in the sidebar.  For more information about sharing your project files with third-party products and their models, click “About Intelligence in Xcode & Privacy.”
 
-![A screenshot of the Intelligence settings showing the About Intelligence and Privacy link, the OpenAI and Anthropic providers, and the Add a Provider button.](https://docs-assets.developer.apple.com/published/44d8e4614d891956a0f5462d593b31e5/intelligence-settings%402x.png)
+![A screenshot of the Intelligence settings showing the About Intelligence and Privacy link, the OpenAI and Anthropic providers, and the Add a Provider button.](https://docs-assets.developer.apple.com/published/bb5b02211e540f5d0602eaa21f5262a2/intelligence-settings%402x.png)
 
 To give agentic coding tools that you use outside of Xcode access to your project and Xcode capabilities, see [`Giving external agentic coding tools access to Xcode`](giving-agentic-coding-tools-access-to-xcode.md).
 
@@ -24,7 +24,7 @@ To use ChatGPT in Xcode (with or without an account):
 2. In the ChatGPT in Xcode row, click Turn On.
 3. In the dialogs that appear, click Next, and then click Turn On ChatGPT.
 
-![A screenshot of the OpenAI settings showing the ChatGPT in Xcode row and the Get button in the Codex row.](https://docs-assets.developer.apple.com/published/51a0c3964f44b4e5aa4a2f4f997b9fa6/intelligence-settings-openai%402x.png)
+![A screenshot of the OpenAI settings showing the ChatGPT in Xcode row and the Get button in the Codex row.](https://docs-assets.developer.apple.com/published/202595e7ba54338438efbca3753857fb/intelligence-settings-openai%402x.png)
 
 To sign in to a free ChatGPT account, or a paid account with higher limits:
 
@@ -47,7 +47,7 @@ When you choose Codex in the coding assistant, it automatically has access to Xc
 3. Choose Sign In With a ChatGPT Account or Provide an OpenAI API Key from the pop-up menu.
 4. In the browser window that appears, follow the instructions to enter your credentials, or in the dialog, enter your key and click Done.
 
-After you download Codex, Xcode automatically updates it.
+After you download Codex, Xcode automatically updates the download if possible. To manage the Codex download, click the information button next to Codex in Components settings (see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md)).
 
 ##### Enable Claude Agent
 
@@ -57,7 +57,7 @@ When you choose Claude Agent in the coding assistant, it automatically has acces
 2. In the Claude Agent row, click Get, and in the dialog that appears, click Install.
 3. Optionally, choose a model from the Model pop-up menu.
 
-![A screenshot of the Anthropic settings showing the Claude Agent and Claude rows.](https://docs-assets.developer.apple.com/published/6e7ab338d9f0ed16757346a6e11375c7/intelligence-settings-anthropic%402x.png)
+![A screenshot of the Anthropic settings showing the Claude Agent and Claude rows.](https://docs-assets.developer.apple.com/published/84d810783b809846e9b7c49afb3879e8/intelligence-settings-anthropic%402x.png)
 
 If you have an account, sign in:
 
@@ -65,9 +65,9 @@ If you have an account, sign in:
 2. Choose Sign In With a Claude.ai Account or Provide an Anthropic API Key from the pop-up menu.
 3. In the browser window that appears, follow the instructions to enter your credentials, or in the dialog, enter your key and click Done.
 
-Optionally, toggle Share Claude Agent Usage Data with Anthropic on. For more information, click “Anthropic Privacy Policy” at the bottom of the Anthropic settings.
+For more information, click “Anthropic Privacy Policy” at the bottom of the Anthropic settings.
 
-After you download Claude Agent, Xcode automatically updates it.
+After you download Claude Agent, Xcode automatically updates the download if possible. To manage the Claude Agent download, click the information button next to Claude Agent in Components settings (see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md)).
 
 ##### Enable Claude
 

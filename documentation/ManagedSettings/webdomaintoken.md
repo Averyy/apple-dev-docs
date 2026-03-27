@@ -1,6 +1,6 @@
 # WebDomainToken
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: typealias
 
 A representation of a web domain that preserves the user’s privacy.

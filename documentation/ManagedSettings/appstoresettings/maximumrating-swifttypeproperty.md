@@ -1,6 +1,6 @@
 # maximumRating
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata associated with the maximum app rating setting.

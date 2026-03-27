@@ -1,6 +1,6 @@
 # applications
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The metadata for the configuration that specifies apps for the system to cover with a shielding view.

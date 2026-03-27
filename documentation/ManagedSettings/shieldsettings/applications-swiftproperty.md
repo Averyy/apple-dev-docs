@@ -1,6 +1,6 @@
 # applications
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 Applications for the system to cover with a shielding view.

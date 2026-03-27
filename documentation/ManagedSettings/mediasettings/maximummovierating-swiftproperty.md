@@ -1,6 +1,6 @@
 # maximumMovieRating
 
-**Framework**: ManagedSettings  
+**Framework**: Managed Settings  
 **Kind**: property
 
 The maximum movie rating the user may view.

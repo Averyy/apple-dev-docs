@@ -6,7 +6,7 @@
 Check the status of the test App Store server notification sent to your server.
 
 **Availability**:
-- App Store Server API 1.5+
+- App Store Server API 1.0+
 
 ## Mentions
 

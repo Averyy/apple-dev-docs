@@ -13,7 +13,7 @@ framework: HIG
 
 A label is a static piece of text that people can read and often copy, but not edit.
 
-![A stylized representation of a text label. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/96bbd9cca40c156991117a5222d7c5a1/components-label-intro~dark%402x.png)
+![A stylized representation of a text label. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/af5711f5ac5d0122883a60c34e074724/components-label-intro~dark%402x.png)
 Labels display text throughout the interface, in buttons, menu items, and views, helping people understand the current context and what they can do next.
 The term *label* refers to uneditable text that can appear in various places. For example:
 - Within a button, a label generally conveys what the button does, such as Edit, Cancel, or Send.

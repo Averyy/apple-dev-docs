@@ -1,6 +1,6 @@
 # configuration(shielding:)
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: method
 
 Requests a configuration to use for a shield that covers an application.

@@ -13,7 +13,7 @@ framework: HIG
 
 A text field is a rectangular area in which people enter or edit small, specific pieces of text.
 
-![A stylized representation of a text field containing a value. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e2f6667acf478e3f852964a55b92c24e/components-text-field-intro~dark%402x.png)
+![A stylized representation of a text field containing a value. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b4aba3c9ab0964490725d16b9eb127a0/components-text-field-intro~dark%402x.png)
 
 ## Best practices
 **Use a text field to request a small amount of information, such as a name or an email address.** To let people input larger amounts of text, use a [Text views](text-views.md) instead.

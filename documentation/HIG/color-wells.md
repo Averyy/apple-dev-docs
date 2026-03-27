@@ -11,7 +11,7 @@ framework: HIG
 
 A color well lets people adjust the color of text, shapes, guides, and other onscreen elements.
 
-![A stylized representation of a color-selection popover extending down from an expanded button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/038e648813daf714a8ec09ac42d64f6b/components-color-well-intro~dark%402x.png)
+![A stylized representation of a color-selection popover extending down from an expanded button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/ee3511ca745702e7e244edfad9ae4831/components-color-well-intro~dark%402x.png)
 A color well displays a color picker when people tap or click it. This color picker can be the system-provided one or a custom interface that you design.
 
 ## Best practices

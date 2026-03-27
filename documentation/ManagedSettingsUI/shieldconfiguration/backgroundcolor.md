@@ -1,6 +1,6 @@
 # backgroundColor
 
-**Framework**: ManagedSettingsUI  
+**Framework**: Managed Settings UI  
 **Kind**: property
 
 A color for a shield to use in the background blur effect.
