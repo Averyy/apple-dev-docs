@@ -6,7 +6,7 @@
 An error that indicates the product ID parameter is invalid.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 An array of win-back offer identifiers that a customer is eligible to redeem, which sorts the identifiers with the best offers first.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.13+
 
 ## Declaration
 

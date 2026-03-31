@@ -6,14 +6,13 @@
 Rejects the session request with an optional error.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
-final func reject(error: (any Error)?) -> AccessorySecuritySession.Request.Decision
+final func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision
 ```
 
 ## Parameters

@@ -20,9 +20,9 @@ case significantAppChangeRequiresParentalConsent
 ## See Also
 
 - [AgeRangeService.RegulatoryFeature.declaredAgeRangeRequired](agerangeservice/regulatoryfeature/declaredagerangerequired.md)
-  Indicates that you must request the person’s age range for your app.
+  Indicates the person is required to share their age range with your app.
 - [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresAdultNotification](agerangeservice/regulatoryfeature/significantappchangerequiresadultnotification.md)
-  Indicates an adult must be notified of your app’s significant change.
+  Indicates that adult users must acknowledge your app’s significant change.
 
 
 ---

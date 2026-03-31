@@ -37,8 +37,6 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
 - [SwiftUI updates](../Updates/SwiftUI.md)
   Learn about important changes to SwiftUI.
-- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
-  Build a travel planning app that organizes trips into collections and tracks activity completion.
 - [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
   Enhance your app experience with system-provided and custom Liquid Glass.
 ### App structure
@@ -147,6 +145,9 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
+### Articles
+- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
+  Build a travel planning app that organizes trips into collections and tracks activity completion.
 
 
 ---

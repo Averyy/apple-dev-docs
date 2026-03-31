@@ -249,6 +249,7 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
   The identifier of the message that posts after a mouse stops being longer the most recently used mouse.
 - [static var didStopBeingCurrent: NotificationCenter.BaseMessageIdentifier<GCController.DidStopBeingCurrentMessage>](notificationcenter/messageidentifier/didstopbeingcurrent-9pdq9.md)
   The identifier of the message that posts after a game controller stops being longer the most recently used controller.
+- [static var tokensDidExpire: NotificationCenter.BaseMessageIdentifier<ManagedSettingsStore.TokenExpiryMessage>](notificationcenter/messageidentifier/tokensdidexpire.md)
 - [static var userPreferencesDidChange: NotificationCenter.BaseMessageIdentifier<HKHealthStore.HKUserPreferencesDidChangeMessage>](notificationcenter/messageidentifier/userpreferencesdidchange.md)
 
 ## Relationships

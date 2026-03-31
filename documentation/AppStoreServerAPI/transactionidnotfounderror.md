@@ -6,7 +6,7 @@
 An error that indicates a transaction identifier wasn’t found.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

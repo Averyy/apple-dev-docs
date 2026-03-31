@@ -6,8 +6,8 @@
 An error that indicates an invalid request.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

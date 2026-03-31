@@ -20,6 +20,9 @@ struct RCSGroupContext
 ### Accessing group context properties
 - [let handle: RCSHandle.Group](rcsgroupcontext/handle.md)
   The handle associated with the group.
+### Instance Properties
+- [let isEndToEndEncrypted: Bool](rcsgroupcontext/isendtoendencrypted.md)
+  A Boolean value that indicates whether the associated group is end-to-end encrypted.
 
 ## Relationships
 

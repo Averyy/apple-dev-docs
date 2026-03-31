@@ -6,7 +6,7 @@
 An error that indicates the subscription doesn’t qualify for a renewal-date extension due to its subscription state.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

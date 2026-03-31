@@ -126,12 +126,6 @@ This document describes the functions, constants, and data types used to interac
   A callback function called as results from a scheduled query are returned.
 - [typealias ODRecordType](odrecordtype.md)
   An Open Directory record type.
-- [_ODAttributeType](odattributetype.md)
-  An Open Directory attribute type.
-- [_ODAuthenticationType](odauthenticationtype.md)
-  An Open Directory authentication type.
-- [_ODRecordType](odrecordtype.md)
-  An Open Directory record type.
 ### Constants
 - [Session Keys](session-keys.md)
   Keys used when specifying session information.

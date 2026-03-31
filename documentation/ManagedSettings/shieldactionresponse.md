@@ -25,6 +25,9 @@ enum ShieldActionResponse
   An instruction to defer a response to the action.
 - [ShieldActionResponse.none](shieldactionresponse/none.md)
   An instruction that the system doesn’t need to take any additional action on behalf of the extension.
+### Enumeration Cases
+- [ShieldActionResponse.openParentalControlsApp](shieldactionresponse/openparentalcontrolsapp.md)
+  An instruction for the system to open your parental controls app that is responsible for shielding the application or web browser
 
 ## Relationships
 

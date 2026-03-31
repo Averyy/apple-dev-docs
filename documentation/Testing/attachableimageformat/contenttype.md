@@ -7,7 +7,7 @@ The content type corresponding to this image format.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+
+- Xcode 26.4+ (Beta)
 
 ## Declaration
 

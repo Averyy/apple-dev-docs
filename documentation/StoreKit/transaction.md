@@ -152,8 +152,11 @@ All In-App Purchases that customers make are equally available to your app in th
 - [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
   The string representation of the offer period applied to the subscription offer for this transaction.
 ### Structures
+- [Transaction.CommitmentInfo](transaction/commitmentinfo-swift.struct.md)
 - [Transaction.RevocationType](transaction/revocationtype-swift.struct.md)
 ### Instance Properties
+- [let billingPlanType: SubscriptionInfo.BillingPlanType?](transaction/billingplantype.md)
+- [let commitmentInfo: Transaction.CommitmentInfo?](transaction/commitmentinfo-swift.property.md)
 - [var revocationPercentage: Decimal?](transaction/revocationpercentage.md)
   The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
 - [let revocationType: Transaction.RevocationType?](transaction/revocationtype-swift.property.md)

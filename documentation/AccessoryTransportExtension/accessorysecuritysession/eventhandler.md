@@ -6,9 +6,8 @@
 A protocol that defines methods for handling security session events.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -22,12 +21,11 @@ Implement this protocol to respond to key exchange events and session invalidati
 
 ## Topics
 
-### Handling security events
-- [func securityEventHandler(event: AccessorySecurity.Event)](accessorysecuritysession/eventhandler/securityeventhandler(event:).md)
-  Handles security events that occur during the key exchange process.
-### Handling the session life cycle
-- [func invalidationHandler(error: (any Error)?)](accessorysecuritysession/eventhandler/invalidationhandler(error:).md)
-  Handles session invalidation.
+### Instance Methods
+- [func securityMessageReceived(SecurityMessage)](accessorysecuritysession/eventhandler/securitymessagereceived(_:).md)
+  Security message received.
+- [func sessionInvalidated(error: AccessorySecuritySession.Error?)](accessorysecuritysession/eventhandler/sessioninvalidated(error:).md)
+  Session has been invalidated.
 
 
 ---

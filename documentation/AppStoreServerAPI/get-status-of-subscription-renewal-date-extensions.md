@@ -6,7 +6,7 @@
 Checks whether a renewal date extension request completed, and provides the final count of successful or failed extensions.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.7+
 
 ## Mentions
 

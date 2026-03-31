@@ -6,9 +6,8 @@
 A class that manages a security session between the extension and the system.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -18,7 +17,7 @@ class AccessorySecuritySession
 
 #### Overview
 
-The security session handles a key exchange process (see [`AccessorySecurity.Event`](accessorysecurity/event.md)) that establishes encrypted communication with your accessory.
+The security session handles a key exchange process (see `AccessorySecurity/Event`) that establishes encrypted communication with your accessory.
 
 ## Topics
 
@@ -32,10 +31,13 @@ The security session handles a key exchange process (see [`AccessorySecurity.Eve
 - [var description: String](accessorysecuritysession/description.md)
   A textual representation of the session.
 ### Managing the session life cycle
-- [func cancel(error: (any Error)?)](accessorysecuritysession/cancel(error:).md)
+- [func cancel(error: AccessorySecuritySession.Error?)](accessorysecuritysession/cancel(error:).md)
   Cancels the security session.
-- [func sendSecurityEvent(AccessorySecurity.Event) throws](accessorysecuritysession/sendsecurityevent(_:).md)
-  Sends a security event to the system.
+### Instance Methods
+- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](accessorysecuritysession/sendsecuritymessage(_:).md)
+  Send security message to the host process.
+### Enumerations
+- [AccessorySecuritySession.Error](accessorysecuritysession/error.md)
 
 ## Relationships
 
@@ -46,12 +48,8 @@ The security session handles a key exchange process (see [`AccessorySecurity.Eve
 
 - [protocol AccessoryFeature](accessoryfeature.md)
   A protocol that defines a capability for an accessory data provider extension.
-- [protocol AccessoryFeatureSession](accessoryfeaturesession.md)
-  A protocol that manages a session for a specific feature capability.
 - [struct AccessoryMessage](accessorymessage.md)
   A structure that represents a message to send to an accessory.
-- [struct AccessorySecurity](accessorysecurity.md)
-  Types of security events and cryptography operations.
 
 
 ---

@@ -6,9 +6,8 @@
 A data object that contains the payload content.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -18,7 +17,7 @@ let data: Data
 
 ## See Also
 
-- [let transport: AccessoryMessage.Transport](accessorymessage/payload/transport.md)
+- [let transport: AccessoryTransport](accessorymessage/payload/transport.md)
   A transport method for delivering the payload.
 
 

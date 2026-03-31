@@ -6,14 +6,13 @@
 Builds an accessory message from one or more payload components.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
-static func buildBlock(_ components: AccessoryMessage.Payload...) -> AccessoryMessage
+static func buildBlock(_ components: AccessoryMessage...) -> AccessoryMessage
 ```
 
 ## Parameters

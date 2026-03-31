@@ -6,7 +6,7 @@
 An error that indicates the endpoint doesn’t support an app transaction ID.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.15+
 
 ## Declaration
 

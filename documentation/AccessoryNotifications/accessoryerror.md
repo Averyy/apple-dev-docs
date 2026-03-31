@@ -6,8 +6,8 @@
 Errors the Accessory Notifications framework can throw.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -39,6 +39,10 @@ enum AccessoryError
   An error that provides a custom message.
 - [init(customError: String)](accessoryerror/init(customerror:).md)
   Initializes an error with a custom message.
+### Enumeration Cases
+- [AccessoryError.accessoryNotificationsUnsupported](accessoryerror/accessorynotificationsunsupported.md)
+- [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
+- [AccessoryError.unableToPresentSettings](accessoryerror/unabletopresentsettings.md)
 
 ## Relationships
 

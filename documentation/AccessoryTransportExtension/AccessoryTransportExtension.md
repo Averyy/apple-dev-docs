@@ -56,14 +56,16 @@ Using the Accessory Transport Extension framework with [`Accessory Notifications
 ### Data and sessions
 - [protocol AccessoryFeature](accessoryfeature.md)
   A protocol that defines a capability for an accessory data provider extension.
-- [protocol AccessoryFeatureSession](accessoryfeaturesession.md)
-  A protocol that manages a session for a specific feature capability.
 - [struct AccessoryMessage](accessorymessage.md)
   A structure that represents a message to send to an accessory.
 - [class AccessorySecuritySession](accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
-- [struct AccessorySecurity](accessorysecurity.md)
-  Types of security events and cryptography operations.
+### Structures
+- [struct TransportMessage](transportmessage.md)
+### Enumerations
+- [enum AccessoryTransport](accessorytransport.md)
+  Supported transport types.
+- [enum SecurityMessage](securitymessage.md)
 
 
 ---

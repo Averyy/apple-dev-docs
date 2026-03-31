@@ -94,6 +94,9 @@ Safari is a web browser app and web technology platform available on iOS and mac
   Released March 25, 2019 — Version 12.1 (14607.1.40)
 - [Safari 12 Release Notes](safari-12-release-notes.md)
   Released September 17, 2018 — Version 12 (14606.1.36)
+### Articles
+- [Safari 26.5 Beta Release Notes](safari-26_5-release-notes.md)
+  Released March 30, 2026 — 26.5 beta (20624.2.1)
 
 
 ---

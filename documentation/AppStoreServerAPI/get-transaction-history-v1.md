@@ -6,7 +6,7 @@
 Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Mentions
 

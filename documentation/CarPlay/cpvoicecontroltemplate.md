@@ -48,7 +48,6 @@ CarPlay navigation apps must show a voice control indicator during audio input b
 ### Inherits From
 - [CPTemplate](cptemplate.md)
 ### Conforms To
-- [CPBarButtonProviding](cpbarbuttonproviding.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

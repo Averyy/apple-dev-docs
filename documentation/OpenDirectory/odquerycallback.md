@@ -41,12 +41,6 @@ Results from this function must be retained or copied. The results from any give
   An Open Directory node type.
 - [typealias ODRecordType](odrecordtype.md)
   An Open Directory record type.
-- [_ODAttributeType](odattributetype.md)
-  An Open Directory attribute type.
-- [_ODAuthenticationType](odauthenticationtype.md)
-  An Open Directory authentication type.
-- [_ODRecordType](odrecordtype.md)
-  An Open Directory record type.
 
 
 ---

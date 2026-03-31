@@ -6,7 +6,7 @@ Build a visionOS app that streams high-fidelity immersive content from a compute
 
 **Availability**:
 - visionOS 26.4+
-- Xcode 26.4+
+- Xcode 26.4+ (Beta)
 
 #### Overview
 

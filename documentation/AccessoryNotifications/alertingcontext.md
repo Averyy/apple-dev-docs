@@ -6,8 +6,8 @@
 A structure that provides guidance for how to alert for a notification.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -32,9 +32,13 @@ To alert for a notification, present it on screen, play a sound, or trigger a ha
   A Boolean value that indicates whether the accessory can alert the person for the notification.
 - [var isSuppressedByFocus: Bool](alertingcontext/issuppressedbyfocus.md)
   A Boolean value that indicates whether the device’s Focus state suppresses notification alerts.
-### Creating an alerting context
-- [init(notificationCanAlert: Bool, suppressedByFocus: Bool)](alertingcontext/init(notificationcanalert:suppressedbyfocus:).md)
-  Initializes an alerting context with the given alert conditions.
+### Structures
+- [AlertingContext.Sound](alertingcontext/sound-swift.struct.md)
+### Initializers
+- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, sound: AlertingContext.Sound?)](alertingcontext/init(notificationcanalert:suppressedbyfocus:sound:).md)
+### Instance Properties
+- [var sound: AlertingContext.Sound?](alertingcontext/sound-swift.property.md)
+  Indicates that this alert may play a sound. `nil` means there is no sound.
 
 ## Relationships
 
@@ -49,8 +53,6 @@ To alert for a notification, present it on screen, play a sound, or trigger a ha
 
 - [struct AccessoryNotification](accessorynotification.md)
   A structure that contains the details of a notification that iOS provides to your accessory.
-- [protocol AlertCoordinating](alertcoordinating.md)
-  A protocol that communicates whether the accessory completes the process of alerting for a notification.
 
 
 ---

@@ -35,7 +35,7 @@ ZStack {
     VStack {
         Text("MON")
             .font(.caption)
-            .widgetAccented()
+            .widgetAccentable()
         Text("6")
             .font(.title)
     }

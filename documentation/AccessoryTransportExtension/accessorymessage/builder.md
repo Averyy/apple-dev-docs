@@ -6,9 +6,8 @@
 A builder that constructs accessory messages declaratively.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -20,8 +19,13 @@ struct Builder
 ## Topics
 
 ### Building messages
-- [static func buildBlock(AccessoryMessage.Payload...) -> AccessoryMessage](accessorymessage/builder/buildblock(_:).md)
+- [static func buildBlock(AccessoryMessage...) -> AccessoryMessage](accessorymessage/builder/buildblock(_:).md)
   Builds an accessory message from one or more payload components.
+### Type Methods
+- [static func buildEither(first: AccessoryMessage) -> AccessoryMessage](accessorymessage/builder/buildeither(first:).md)
+- [static func buildEither(second: AccessoryMessage) -> AccessoryMessage](accessorymessage/builder/buildeither(second:).md)
+- [static func buildExpression(AccessoryMessage.Payload) -> AccessoryMessage](accessorymessage/builder/buildexpression(_:).md)
+- [static func buildOptional(AccessoryMessage?) -> AccessoryMessage](accessorymessage/builder/buildoptional(_:).md)
 
 ## See Also
 

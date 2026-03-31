@@ -8,7 +8,7 @@ Build a travel planning app that organizes trips into collections and tracks act
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- Xcode 26.4+
+- Xcode 26.0+
 
 #### Overview
 
@@ -248,17 +248,6 @@ The `@Namespace` property wrapper creates a unique identifier space that SwiftUI
 Each `TripCard` in the trip collection receives `matchedTransitionSource(id:in:)` with the trip’s ID as the identifier. When someone taps a card, SwiftUI captures its position, size, and corner radius as the transition’s starting point. The trip detail view applies `navigationTransition(.zoom(sourceID:in:))` with the matching identifier, declaring itself as the zoom target. SwiftUI interpolates between the two geometries, seamlessly morphing one into the other.
 
 Check out WWDC24 session [`10145: Enhance your UI animations and transitions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10145/) to explore how to adopt the zoom transition in navigation and presentations in your app.
-
-## See Also
-
-- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
-  Find out how to bring the new material to your app.
-- [Develop in Swift](https://developer.apple.com/tutorials/Develop-in-Swift#explore-xcode)
-  Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
-- [SwiftUI updates](../Updates/SwiftUI.md)
-  Learn about important changes to SwiftUI.
-- [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
-  Enhance your app experience with system-provided and custom Liquid Glass.
 
 
 ---

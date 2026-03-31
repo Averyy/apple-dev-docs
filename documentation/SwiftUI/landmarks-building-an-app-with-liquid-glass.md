@@ -104,8 +104,6 @@ For design guidance, see Human Interface Guidelines >  [`App icons`](https://dev
   Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
 - [SwiftUI updates](../Updates/SwiftUI.md)
   Learn about important changes to SwiftUI.
-- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
-  Build a travel planning app that organizes trips into collections and tracks activity completion.
 
 
 ---

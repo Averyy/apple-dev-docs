@@ -6,8 +6,8 @@
 An error that indicates the system is unable to handle a notification response.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

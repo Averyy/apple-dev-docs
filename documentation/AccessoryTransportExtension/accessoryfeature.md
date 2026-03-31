@@ -6,9 +6,8 @@
 A protocol that defines a capability for an accessory data provider extension.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -22,17 +21,9 @@ Implement this protocol to create a custom capability that your extension suppor
 
 ## Topics
 
-### Creating an accessory feature
-- [init(Self.HandlerFactory)](accessoryfeature/init(_:).md)
-  Initializes a feature with a handler factory closure.
 ### Identifying the feature
 - [static var featureID: String](accessoryfeature/featureid.md)
   A string identifier for the feature.
-### Creating a handler
-- [associatedtype Handler](accessoryfeature/handler.md)
-  An associated type that defines the handler for this feature.
-- [AccessoryFeature.HandlerFactory](accessoryfeature/handlerfactory.md)
-  A type alias for a factory closure that creates feature handlers.
 
 ## Relationships
 
@@ -44,14 +35,10 @@ Implement this protocol to create a custom capability that your extension suppor
 
 ## See Also
 
-- [protocol AccessoryFeatureSession](accessoryfeaturesession.md)
-  A protocol that manages a session for a specific feature capability.
 - [struct AccessoryMessage](accessorymessage.md)
   A structure that represents a message to send to an accessory.
 - [class AccessorySecuritySession](accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
-- [struct AccessorySecurity](accessorysecurity.md)
-  Types of security events and cryptography operations.
 
 
 ---

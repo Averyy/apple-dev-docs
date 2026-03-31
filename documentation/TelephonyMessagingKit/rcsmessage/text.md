@@ -25,6 +25,9 @@ struct Text
 ### Accessing text content
 - [var body: String](rcsmessage/text/body.md)
   The body of the text message, as a string.
+### Instance Properties
+- [var isEndToEndEncrypted: Bool](rcsmessage/text/isendtoendencrypted.md)
+  A Boolean value indicating whether this message is end-to-end encrypted.
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 Get a customer’s in-app purchases from a receipt using the order ID.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Mentions
 

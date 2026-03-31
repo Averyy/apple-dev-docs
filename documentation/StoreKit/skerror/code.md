@@ -66,6 +66,7 @@ enum Code
 - [SKError.Code.overlayTimeout](skerror/code/overlaytimeout.md)
 - [SKError.Code.unsupportedPlatform](skerror/code/unsupportedplatform.md)
   An error code that indicates the current platform doesn’t support overlays.
+- [SKError.Code.paymentMethodBindingConfigurationRequired](skerror/code/paymentmethodbindingconfigurationrequired.md)
 ### Initializers
 - [init?(rawValue: Int)](skerror/code/init(rawvalue:).md)
 

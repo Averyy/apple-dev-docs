@@ -64,6 +64,8 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [var ES_EVENT_TYPE_RESERVED_4: es_event_type_t](es_event_type_reserved_4.md)
 - [var ES_EVENT_TYPE_RESERVED_5: es_event_type_t](es_event_type_reserved_5.md)
 - [var ES_EVENT_TYPE_RESERVED_6: es_event_type_t](es_event_type_reserved_6.md)
+- [var ES_EVENT_TYPE_RESERVED_7: es_event_type_t](es_event_type_reserved_7.md)
+- [var ES_EVENT_TYPE_RESERVED_8: es_event_type_t](es_event_type_reserved_8.md)
 - [var ES_TCC_AUTHORIZATION_REASON_APP_TYPE_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_app_type_policy.md)
   A system process changed the authorization right
 - [var ES_TCC_AUTHORIZATION_REASON_ENTITLED: es_tcc_authorization_reason_t](es_tcc_authorization_reason_entitled.md)

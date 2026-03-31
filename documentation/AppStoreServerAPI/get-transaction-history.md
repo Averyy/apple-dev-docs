@@ -6,7 +6,7 @@
 Get a customer’s in-app purchase transaction history for your app.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.12+
 
 ## Mentions
 

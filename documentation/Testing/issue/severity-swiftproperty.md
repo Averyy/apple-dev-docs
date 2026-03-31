@@ -7,7 +7,7 @@ The severity of this issue.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+
+- Xcode 26.4+ (Beta)
 
 ## Declaration
 

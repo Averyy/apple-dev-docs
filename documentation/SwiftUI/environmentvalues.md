@@ -340,11 +340,13 @@ Clients of your value then access the value in the usual way, reading it with th
   The active appearance expected of controls in a window.
 ### Instance Properties
 - [var accessibilityReduceHighlightingEffects: Bool](environmentvalues/accessibilityreducehighlightingeffects.md)
-  Whether the system preference for Reduce Highlighting Effects is enabled.
+  Whether the system preference for Reduce Bright Effects is enabled.
 - [var accessibilityShowBorders: Bool](environmentvalues/accessibilityshowborders.md)
   Whether the system preference for Show Borders is enabled. On macOS this is true when Increased Contrast is enabled.
 - [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
   The size family of the current Live Activity.
+- [var askPermission: AskPermissionAction](environmentvalues/askpermission.md)
+  An action that sends a permission question to a parent or guardian.
 - [var buttonSizing: ButtonSizing](environmentvalues/buttonsizing.md)
   The preferred sizing behavior of buttons in the view hierarchy.
 - [var credentialDataManager: CredentialDataManager](environmentvalues/credentialdatamanager.md)

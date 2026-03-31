@@ -6,7 +6,7 @@
 The duration of the offer.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.15+
 
 ## Declaration
 

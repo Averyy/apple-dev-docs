@@ -3,7 +3,7 @@
 **Framework**: hvf  
 **Kind**: module
 
-Render Hierarchical Variation Font (HVF) glyph outlines, and support font editors and related tools.
+Render Hierarchical Variable Font (HVF) glyph outlines, and support font editors and related tools.
 
 **Availability**:
 - iOS 18.4+

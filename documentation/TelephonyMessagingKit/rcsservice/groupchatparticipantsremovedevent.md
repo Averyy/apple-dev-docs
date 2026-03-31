@@ -28,6 +28,9 @@ struct GroupChatParticipantsRemovedEvent
   Handle of device that performed the operation.
 - [let removedCurrentUser: Bool](rcsservice/groupchatparticipantsremovedevent/removedcurrentuser.md)
   Whether the current user was removed from the group.
+### Instance Properties
+- [let isEndToEndEncrypted: Bool](rcsservice/groupchatparticipantsremovedevent/isendtoendencrypted.md)
+  A Boolean value that indicates whether the associated group is end-to-end encrypted.
 
 ## Relationships
 

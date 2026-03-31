@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Whether the system preference for Reduce Highlighting Effects is enabled.
+Whether the system preference for Reduce Bright Effects is enabled.
 
 **Availability**:
 - iOS 26.4+

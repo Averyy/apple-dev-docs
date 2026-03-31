@@ -830,6 +830,8 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ## See Also
 
+- [iOS & iPadOS 26.5 Beta Release Notes](ios-ipados-26_5-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 26.4 Release Notes](ios-ipados-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 26.3 Release Notes](ios-ipados-26_3-release-notes.md)

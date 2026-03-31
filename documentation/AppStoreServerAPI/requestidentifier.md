@@ -6,7 +6,7 @@
 A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

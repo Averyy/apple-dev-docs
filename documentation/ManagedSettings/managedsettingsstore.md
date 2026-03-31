@@ -108,6 +108,8 @@ In a few cases, you can also access the effective settings. For example, a media
 ### Structures
 - [ManagedSettingsStore.Name](managedsettingsstore/name.md)
   The unique name of a store.
+- [ManagedSettingsStore.TokenExpiryMessage](managedsettingsstore/tokenexpirymessage.md)
+  A message that is posted in NotificationCenter when ManagedSettingsStore tokens are expired
 ### Initializers
 - [convenience init(named: ManagedSettingsStore.Name)](managedsettingsstore/init(named:).md)
   Creates a new instance of a store with a custom name.
@@ -116,9 +118,25 @@ In a few cases, you can also access the effective settings. For example, a media
 - [var $effectiveMaximumMovieRating: Published<Int>.Publisher](managedsettingsstore/$effectivemaximummovierating.md)
 - [var effectiveDenyExplicitContent: Bool](managedsettingsstore/effectivedenyexplicitcontent.md)
   The deny explicit content constraint that is active on this device.
+- [var isActive: Bool](managedsettingsstore/isactive.md)
+  Property that controls whether the store is active
 ### Instance Methods
 - [func clearAllSettings()](managedsettingsstore/clearallsettings.md)
   Clears all settings for this store.
+- [func deleteStore()](managedsettingsstore/deletestore.md)
+  Deletes this store
+### Type Properties
+- [static var stores: Set<ManagedSettingsStore.Name>](managedsettingsstore/stores.md)
+  Get the name of all the stores configured by your app
+### Type Methods
+- [static func deleteStores(Set<ManagedSettingsStore.Name>)](managedsettingsstore/deletestores(_:).md)
+  Deletes the given stores configured by your app if they exist
+- [static func refresh(inout [ActivityCategoryToken]) throws](managedsettingsstore/refresh(_:)-4v4xe.md)
+  Refresh expired ActivityCategoryTokens
+- [static func refresh(inout [ApplicationToken]) throws](managedsettingsstore/refresh(_:)-65mti.md)
+  Refresh expired ApplicationTokens
+- [static func refresh(inout [WebDomainToken]) throws](managedsettingsstore/refresh(_:)-s5s3.md)
+  Refresh expired WebDomainTokens
 
 ## Relationships
 

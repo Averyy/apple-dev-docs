@@ -6,7 +6,7 @@
 A response that indicates the server successfully received the subscription-renewal-date extension request.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.7+
 
 ## Declaration
 

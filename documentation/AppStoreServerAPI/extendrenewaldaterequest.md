@@ -6,7 +6,7 @@
 The request body that contains subscription-renewal-extension data for an individual subscription.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

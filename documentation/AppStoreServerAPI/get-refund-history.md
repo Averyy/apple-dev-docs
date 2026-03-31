@@ -6,7 +6,7 @@
 Get a paginated list of all of a customer’s refunded in-app purchases for your app.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.6+
 
 ## Mentions
 

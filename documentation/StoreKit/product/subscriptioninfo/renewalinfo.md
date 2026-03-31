@@ -113,6 +113,11 @@ struct RenewalInfo
 - [var offerPaymentModeStringRepresentation: String?](product/subscriptioninfo/renewalinfo/offerpaymentmodestringrepresentation.md)
 - [var offerPeriodStringRepresentation: String?](product/subscriptioninfo/renewalinfo/offerperiodstringrepresentation.md)
   The string representation of the subscription offer period applied to the next billing period.
+### Structures
+- [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct.md)
+### Instance Properties
+- [let commitmentInfo: Product.SubscriptionInfo.RenewalInfo.CommitmentInfo?](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.property.md)
+- [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType?](product/subscriptioninfo/renewalinfo/renewalbillingplantype.md)
 
 ## Relationships
 

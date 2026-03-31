@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias CMBaseClassVersion = UInt32
+typealias CMBaseClassVersion = UInt
 ```
 
 ## See Also

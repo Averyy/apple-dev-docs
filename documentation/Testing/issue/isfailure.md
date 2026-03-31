@@ -7,7 +7,7 @@ Whether or not this issue should cause the test it’s associated with to be con
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+
+- Xcode 26.4+ (Beta)
 
 ## Declaration
 

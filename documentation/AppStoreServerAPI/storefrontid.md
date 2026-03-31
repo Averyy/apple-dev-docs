@@ -6,7 +6,7 @@
 An Apple-defined value that uniquely identifies an App Store storefront.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

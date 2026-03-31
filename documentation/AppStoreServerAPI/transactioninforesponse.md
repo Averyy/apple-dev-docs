@@ -6,7 +6,7 @@
 A response that contains signed transaction information for a single transaction.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

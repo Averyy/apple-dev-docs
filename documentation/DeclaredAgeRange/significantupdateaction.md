@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: struct
 
-An action that presents a system sheet for significant app update acknowledgements.
+An action that presents a system sheet for significant app update acknowledgments.
 
 **Availability**:
 - iOS 26.4+
@@ -18,13 +18,13 @@ struct SignificantUpdateAction
 
 #### Overview
 
-Use this function to inform people about important changes to your app that require their acknowledgement and consent before proceeding.
+Use this function to inform people about important changes to your app that require their acknowledgment and consent before proceeding.
 
 ## Topics
 
-### Presenting acknowledgements
+### Presenting acknowledgments
 - [func callAsFunction(updateDescription: String) async throws](significantupdateaction/callasfunction(updatedescription:).md)
-  Shows the significant update acknowledgement interface.
+  Shows the significant update acknowledgment interface.
 
 
 ---

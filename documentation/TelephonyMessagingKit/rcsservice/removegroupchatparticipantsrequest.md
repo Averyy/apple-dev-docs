@@ -29,6 +29,9 @@ struct RemoveGroupChatParticipantsRequest
 ### Accessing the request result
 - [RCSService.RemoveGroupChatParticipantsRequest.Result](rcsservice/removegroupchatparticipantsrequest/result.md)
   Structure representing the result of a request to remove participants from a group chat.
+### Instance Properties
+- [var isEndToEndEncrypted: Bool](rcsservice/removegroupchatparticipantsrequest/isendtoendencrypted.md)
+  A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
 
 ## Relationships
 

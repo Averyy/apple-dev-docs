@@ -6,9 +6,8 @@
 A structure that represents the decision to accept or reject a session request.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -24,7 +23,7 @@ The [`accept(_:)`](accessorysecuritysession/request/accept(_:).md) and [`reject(
 
 - [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/accept(_:).md)
   Accepts the session request with an event handler.
-- [func reject(error: (any Error)?) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/reject(error:).md)
+- [func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/reject(error:).md)
   Rejects the session request with an optional error.
 
 

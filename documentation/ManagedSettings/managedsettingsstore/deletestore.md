@@ -1,0 +1,22 @@
+# deleteStore()
+
+**Framework**: Managed Settings  
+**Kind**: method
+
+Deletes this store
+
+**Availability**:
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
+- Mac Catalyst ?+
+
+## Declaration
+
+```swift
+func deleteStore()
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/managedsettings/managedsettingsstore/deletestore())*

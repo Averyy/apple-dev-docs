@@ -30,6 +30,9 @@ struct GroupChatEndedEvent
   Handle of device that performed the operation.
 - [RCSHandle.URI](rcshandle/uri.md)
   A structure that represents an RCS URI handle.
+### Instance Properties
+- [let isEndToEndEncrypted: Bool](rcsservice/groupchatendedevent/isendtoendencrypted.md)
+  A Boolean value that indicates whether the associated group is end-to-end encrypted.
 
 ## Relationships
 

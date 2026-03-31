@@ -7,7 +7,7 @@ The severity level for an issue which should be noted but is not necessarily an 
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+
+- Xcode 26.4+ (Beta)
 
 ## Declaration
 

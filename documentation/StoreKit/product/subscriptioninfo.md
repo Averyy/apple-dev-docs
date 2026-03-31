@@ -67,6 +67,14 @@ struct SubscriptionInfo
   The renewal information for an auto-renewable subscription.
 - [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
   The renewal states of auto-renewable subscriptions.
+### Structures
+- [Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype.md)
+- [Product.SubscriptionInfo.CommitmentInfo](product/subscriptioninfo/commitmentinfo.md)
+- [Product.SubscriptionInfo.PricingTerms](product/subscriptioninfo/pricingterms-swift.struct.md)
+### Instance Properties
+- [let pricingTerms: [Product.SubscriptionInfo.PricingTerms]](product/subscriptioninfo/pricingterms-swift.property.md)
+### Type Aliases
+- [Product.SubscriptionInfo.BillingPeriod](product/subscriptioninfo/billingperiod.md)
 
 ## Relationships
 

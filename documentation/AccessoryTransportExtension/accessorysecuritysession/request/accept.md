@@ -6,9 +6,8 @@
 Accepts the session request with an event handler.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -26,7 +25,7 @@ The system invokes the handler with security events throughout the key exchange 
 
 ## See Also
 
-- [func reject(error: (any Error)?) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/reject(error:).md)
+- [func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/reject(error:).md)
   Rejects the session request with an optional error.
 - [AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/decision.md)
   A structure that represents the decision to accept or reject a session request.

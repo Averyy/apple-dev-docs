@@ -6,7 +6,7 @@
 The code that represents the reason for the subscription-renewal-date extension.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

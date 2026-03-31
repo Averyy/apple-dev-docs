@@ -6,8 +6,8 @@
 A class for handling notification forwarding in your accessory’s data provider extension.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -27,9 +27,10 @@ Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notifica
 ### Handling notification events
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
   A protocol that defines methods for handling notification lifecycle events in your extension.
-### Creating handlers
-- [NotificationsForwarding.HandlerFactory](notificationsforwarding/handlerfactory.md)
-  A type alias for a factory that creates notification handlers.
+### Protocols
+- [NotificationsForwarding.AccessoryNotificationsSession](notificationsforwarding/accessorynotificationssession.md)
+### Initializers
+- [init(() -> any NotificationsForwarding.AccessoryNotificationsHandler)](notificationsforwarding/init(_:).md)
 
 ## Relationships
 
@@ -46,8 +47,6 @@ Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notifica
   A protocol that defines methods for handling notification lifecycle events in your extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
   A session object that enables communication between your extension and the system.
-- [NotificationsForwarding.HandlerFactory](notificationsforwarding/handlerfactory.md)
-  A type alias for a factory that creates notification handlers.
 
 
 ---

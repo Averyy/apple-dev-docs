@@ -6,7 +6,7 @@
 A Boolean value that indicates whether the response includes only notifications that failed to reach your server.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

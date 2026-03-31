@@ -70,6 +70,7 @@ struct SKError
   The error domain name for StoreKit errors.
 ### Type Properties
 - [static var errorDomain: String](skerror/errordomain.md)
+- [static var paymentMethodBindingConfigurationRequired: SKError.Code](skerror/paymentmethodbindingconfigurationrequired.md)
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 An error that indicates the query parameter exclude-revoked is invalid.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.5+
 
 ## Declaration
 

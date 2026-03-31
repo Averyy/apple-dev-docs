@@ -31,7 +31,7 @@ Use the Declared Age Range API to request that people share their age range with
   An action that requests a person’s age range.
 ### Significant change acknowledgment
 - [struct SignificantUpdateAction](significantupdateaction.md)
-  An action that presents a system sheet for significant app update acknowledgements.
+  An action that presents a system sheet for significant app update acknowledgments.
 
 
 ---

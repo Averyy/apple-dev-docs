@@ -6,7 +6,7 @@
 A unique identifier for a notification test that the App Store server sends to your server.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

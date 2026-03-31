@@ -84,8 +84,6 @@ The notification includes display elements, metadata, interactive components, an
 
 - [struct AlertingContext](alertingcontext.md)
   A structure that provides guidance for how to alert for a notification.
-- [protocol AlertCoordinating](alertcoordinating.md)
-  A protocol that communicates whether the accessory completes the process of alerting for a notification.
 
 
 ---

@@ -8,7 +8,6 @@ A class that manages a transport session between the extension and the system.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 ## Declaration
 
@@ -28,20 +27,22 @@ The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protoc
 ### Handling session events
 - [AccessoryTransportSession.EventHandler](accessorytransportsession/eventhandler.md)
   A protocol that defines methods for handling transport session events.
-- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
-  An enumeration of data events that the transport extension receives.
 ### Managing the session life cycle
 - [func cancel(error: AccessoryTransportSession.Error?)](accessorytransportsession/cancel(error:).md)
   Cancels the session.
 ### Accessing session properties
 - [var description: String](accessorytransportsession/description.md)
   A textual representation of the transport session.
-### Sending data
-- [func sendData(Data, featureID: String) throws(AccessoryTransportSession.Error)](accessorytransportsession/senddata(_:featureid:).md)
-  Sends feature data to the system from the accessory.
 ### Handling errors
 - [AccessoryTransportSession.Error](accessorytransportsession/error.md)
   Errors that can occur with an accessory transport session.
+### Instance Properties
+- [var transport: AccessoryTransport?](accessorytransportsession/transport.md)
+- [var transportStateRestoreIdentifier: String?](accessorytransportsession/transportstaterestoreidentifier.md)
+  State restoration identifier.
+### Instance Methods
+- [func sendMessageToDataProvider(TransportMessage) throws(AccessoryTransportSession.Error)](accessorytransportsession/sendmessagetodataprovider(_:).md)
+  Send message to the data provider.
 
 ## Relationships
 

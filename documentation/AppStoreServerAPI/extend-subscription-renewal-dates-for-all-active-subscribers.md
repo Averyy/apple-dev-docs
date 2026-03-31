@@ -6,7 +6,7 @@
 Uses a subscription’s product identifier to extend the renewal date for all of its eligible active subscribers.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.7+
 
 ## Mentions
 

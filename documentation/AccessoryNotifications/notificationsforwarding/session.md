@@ -6,8 +6,8 @@
 A session object that enables communication between your extension and the system.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -17,12 +17,12 @@ final class Session
 
 #### Overview
 
-This type conforms to the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework’s [`AccessoryFeatureSession`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryFeatureSession) protocol.
+This type conforms to the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework’s doc://com.apple.documentation/documentation/AccessoryTransportExtension/AccessoryFeatureSession protocol.
 
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeatureSession](../AccessoryTransportExtension/AccessoryFeatureSession.md)
+- [NotificationsForwarding.AccessoryNotificationsSession](notificationsforwarding/accessorynotificationssession.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
@@ -32,8 +32,6 @@ This type conforms to the [`Accessory Transport Extension`](https://developer.ap
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
   A protocol that defines methods for handling notification lifecycle events in your extension.
-- [NotificationsForwarding.HandlerFactory](notificationsforwarding/handlerfactory.md)
-  A type alias for a factory that creates notification handlers.
 
 
 ---

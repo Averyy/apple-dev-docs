@@ -42,6 +42,9 @@ The [`purchase(options:)`](product/purchase(options:).md) function may throw a p
   The quantity to purchase is invalid.
 - [Product.PurchaseError.missingOfferParameters](product/purchaseerror/missingofferparameters.md)
   The offer parameters are missing.
+### Enumeration Cases
+- [Product.PurchaseError.paymentMethodBindingConfigurationRequired](product/purchaseerror/paymentmethodbindingconfigurationrequired.md)
+  The customer needs to add a payment method to their Apple Account before making a purchase; use [`PaymentMethodBinding`](paymentmethodbinding.md) to prompt the customer and bind the payment method.
 
 ## Relationships
 

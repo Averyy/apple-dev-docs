@@ -6,7 +6,7 @@ Constants that identify transforms used with [`CFStringTransform(_:_:_:_:)`](cfs
 
 #### Overview
 
-In macOS 10.4 and later, with [`CFStringTransform(_:_:_:_:)`](cfstringtransform(_:_:_:_:).md) you can also use any valid ICU transform ID defined in the [`ICU User Guide for Transforms`](https://developer.apple.comhttp://icu.sourceforge.net/userguide/Transform.html).
+In macOS 10.4 and later, with [`CFStringTransform(_:_:_:_:)`](cfstringtransform(_:_:_:_:).md) you can also use any valid ICU transform ID defined in the [`ICU User Guide for Transforms`](https://developer.apple.comhttps://unicode-org.github.io/icu/userguide/transforms/general/).
 
 ## Topics
 

@@ -82,6 +82,7 @@ In the Xcode testing environment with [`StoreKit Test`](https://developer.apple.
 ### Type Methods
 - [static func promotionalOffer(String, compactJWS: String) -> [Product.PurchaseOption]](product/purchaseoption/promotionaloffer(_:compactjws:).md)
   Apply a promotional offer to a purchase.
+- [static func billingPlanType(Product.SubscriptionInfo.BillingPlanType) -> Product.PurchaseOption](product/purchaseoption/billingplantype(_:).md)
 
 ## Relationships
 

@@ -6,7 +6,7 @@
 The customer’s order ID from an App Store receipt for in-app purchases.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

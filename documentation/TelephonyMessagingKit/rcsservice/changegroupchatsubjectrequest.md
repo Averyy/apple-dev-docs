@@ -26,6 +26,9 @@ struct ChangeGroupChatSubjectRequest
   Group handle indicating the group for which to change the subject.
 - [var newSubject: String](rcsservice/changegroupchatsubjectrequest/newsubject.md)
   String specifying the new subject for the group.
+### Instance Properties
+- [var isEndToEndEncrypted: Bool](rcsservice/changegroupchatsubjectrequest/isendtoendencrypted.md)
+  A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
 
 ## Relationships
 

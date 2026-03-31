@@ -6,24 +6,18 @@
 Cancels the security session.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
-func cancel(error: (any Error)?)
+func cancel(error: AccessorySecuritySession.Error?)
 ```
 
 ## Parameters
 
 - `error`: An optional error that indicates the reason for cancellation.
-
-## See Also
-
-- [func sendSecurityEvent(AccessorySecurity.Event) throws](accessorysecuritysession/sendsecurityevent(_:).md)
-  Sends a security event to the system.
 
 
 ---

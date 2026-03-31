@@ -3,7 +3,7 @@
 **Framework**: Declared Age Range  
 **Kind**: method
 
-Shows the significant update acknowledgement interface.
+Shows the significant update acknowledgment interface.
 
 **Availability**:
 - iOS 26.4+
@@ -18,7 +18,7 @@ func callAsFunction(updateDescription: String) async throws
 
 #### Discussion
 
-Call this method when you need to inform people about significant changes to your app that require their acknowledgement and consent before proceeding. For a code example, refer to `EnvironmentValues/showSignificantUpdateAcknowledgement`.
+Call this method when you need to inform people about significant changes to your app that require their acknowledgment and consent before proceeding. For a code example, refer to [`showSignificantUpdateAcknowledgment`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/showSignificantUpdateAcknowledgment).
 
 > **Note**:  An error if the request fails.
 

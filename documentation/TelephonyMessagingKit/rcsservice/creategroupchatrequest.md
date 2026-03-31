@@ -29,6 +29,9 @@ struct CreateGroupChatRequest
 ### Accessing the request result
 - [RCSService.CreateGroupChatRequest.Result](rcsservice/creategroupchatrequest/result.md)
   Structure representing the result of a request to create a group chat.
+### Instance Properties
+- [var isEndToEndEncrypted: Bool](rcsservice/creategroupchatrequest/isendtoendencrypted.md)
+  A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
 
 ## Relationships
 

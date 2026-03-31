@@ -6,7 +6,7 @@
 A pagination token that you return to the endpoint on a subsequent call to receive the next set of results.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

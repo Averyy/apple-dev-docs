@@ -6,7 +6,7 @@
 The UNIX time, in milliseconds, that the App Store completes a request to extend a subscription renewal date for eligible subscribers.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.7+
 
 ## Declaration
 

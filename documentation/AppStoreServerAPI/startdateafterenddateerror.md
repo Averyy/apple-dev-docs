@@ -6,7 +6,7 @@
 An error that indicates the end date precedes the start date, or the two dates are equal.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Declaration
 

@@ -41,12 +41,6 @@ See [`Match Types`](match-types.md) for recognized match type values.
   A callback function called as results from a scheduled query are returned.
 - [typealias ODRecordType](odrecordtype.md)
   An Open Directory record type.
-- [_ODAttributeType](odattributetype.md)
-  An Open Directory attribute type.
-- [_ODAuthenticationType](odauthenticationtype.md)
-  An Open Directory authentication type.
-- [_ODRecordType](odrecordtype.md)
-  An Open Directory record type.
 
 
 ---

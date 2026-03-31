@@ -16,8 +16,6 @@ Edit your source files, locate issues, and make necessary changes using the sour
   Enable third-party coding tools that you want to use in the coding assistant.
 - [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
   Generate code, fix bugs fast, and learn as you go with intelligence built directly into Xcode.
-- [Giving external agentic coding tools access to Xcode](giving-agentic-coding-tools-access-to-xcode.md)
-  Let agentic coding tools access your project and Xcode capabilities using the Model Context Protocol.
 ### Issue detection
 - [Fixing issues in your code as you type](fixing-issues-in-your-code-as-you-type.md)
   Minimize typing-related errors using code completion, and let Xcode fix common mistakes for you.

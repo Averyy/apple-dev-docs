@@ -111,12 +111,12 @@ The system may override your age gates based on the local regulations of the per
   Defines the regulatory features that your app may need to support.
 - [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](agerangeservice/requiredregulatoryfeatures.md)
   A set of regulatory features that are required for the person.
+### Displaying update acknowledgments
+- [func showSignificantUpdateAcknowledgment(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgment(in:updatedescription:).md)
+  Displays a system-provided interface for people to acknowledge a significant app update.
 ### Handling errors
 - [AgeRangeService.Error](agerangeservice/error.md)
   An error that occurs when an age range request fails.
-### Instance Methods
-- [func showSignificantUpdateAcknowledgment(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgment(in:updatedescription:).md)
-  Displays a system-provided interface for people to acknowledge a significant app update.
 
 ## See Also
 

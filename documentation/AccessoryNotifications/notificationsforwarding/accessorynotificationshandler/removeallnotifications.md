@@ -7,8 +7,8 @@
 Removes all notifications from the user interface.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -19,11 +19,6 @@ func removeAllNotifications()
 ## Mentions
 
 - [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
-## See Also
-
-- [func remove(notification: AccessoryNotification)](notificationsforwarding/accessorynotificationshandler/remove(notification:).md)
-  Removes a previously posted notification from your accessory.
 
 
 ---

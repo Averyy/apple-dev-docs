@@ -6,9 +6,8 @@
 A structure that represents a message to send to an accessory.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -18,7 +17,7 @@ struct AccessoryMessage
 
 #### Overview
 
-Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension and send them using [`sendMessage(_:)`](accessoryfeaturesession/sendmessage(_:).md). The system encrypts the message before delivering it to the transport extension.
+Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension and send them using `AccessoryFeatureSession/sendMessage(_:)`. The system encrypts the message before delivering it to the transport extension.
 
 ## Topics
 
@@ -32,11 +31,6 @@ Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydat
   An array of payload objects that comprise the message.
 - [AccessoryMessage.Payload](accessorymessage/payload.md)
   A structure that represents a single data payload within an accessory message.
-### Specifying transport options
-- [AccessoryMessage.Transport](accessorymessage/transport.md)
-  Options for transporting message payloads.
-- [AccessoryMessage.Size](accessorymessage/size.md)
-  Options to specify sizes of accessory messages.
 
 ## Relationships
 
@@ -49,12 +43,8 @@ Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydat
 
 - [protocol AccessoryFeature](accessoryfeature.md)
   A protocol that defines a capability for an accessory data provider extension.
-- [protocol AccessoryFeatureSession](accessoryfeaturesession.md)
-  A protocol that manages a session for a specific feature capability.
 - [class AccessorySecuritySession](accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
-- [struct AccessorySecurity](accessorysecurity.md)
-  Types of security events and cryptography operations.
 
 
 ---

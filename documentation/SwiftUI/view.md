@@ -372,6 +372,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
   Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
 - [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View](view/preferredsubscriptionoffer(_:).md)
   Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
+- [func preferredSubscriptionPricingTerms((Product, SubscriptionInfo) -> SubscriptionInfo.PricingTerms?) -> some View](view/preferredsubscriptionpricingterms(_:).md)
 - [func preferredWindowClippingMargins(_:_:)](view/preferredwindowclippingmargins(_:_:).md)
   Requests additional margins for drawing beyond the bounds of the window.
 - [func presentationBreakthroughEffect(BreakthroughEffect) -> some View](view/presentationbreakthrougheffect(_:).md)

@@ -29,8 +29,6 @@ The Contacts UI framework contains user interface objects that provide access to
 ### Contact access
 - [struct ContactAccessButton](contactaccessbutton.md)
   A SwiftUI button that you use to add to the set of contacts someone shares with your app.
-### Classes
-- [class CNHostingRemovePhotoButton](cnhostingremovephotobutton.md)
 
 
 ---

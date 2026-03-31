@@ -6,7 +6,7 @@
 The number of days to extend the subscription renewal date.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.1+
 
 ## Declaration
 

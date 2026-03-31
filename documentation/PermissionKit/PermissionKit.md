@@ -56,6 +56,9 @@ Use `PermissionKit` in your app to adjust communication rules for a child accoun
 ### Deprecated APIs
 - [struct CommunicationLimitsButton](communicationlimitsbutton.md)
   A button that presents a system UI to a parent or guardian to ask for an exception to a child’s communication limits.
+### Structures
+- [struct AskPermissionAction](askpermissionaction.md)
+  An action that sends a permission question to a parent or guardian.
 
 
 ---

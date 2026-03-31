@@ -6,8 +6,8 @@
 An error that indicates the system doesn’t support notification forwarding for the provided accessory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

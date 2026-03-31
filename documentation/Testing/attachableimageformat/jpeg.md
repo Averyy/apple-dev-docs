@@ -7,7 +7,7 @@ The JPEG image format with maximum encoding quality.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+
+- Xcode 26.4+ (Beta)
 
 ## Declaration
 

@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-init(_ purpose: IntervalStep.Purpose, goal: WorkoutGoal = .open, alert: (WorkoutAlert)? = nil)
+init(_ purpose: IntervalStep.Purpose, goal: WorkoutGoal = .open, alert: (any WorkoutAlert)? = nil)
 ```
 
 ## See Also

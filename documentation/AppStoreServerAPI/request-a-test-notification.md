@@ -6,7 +6,7 @@
 Ask App Store Server Notifications to send a test notification to your server.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.5+
 
 ## Mentions
 

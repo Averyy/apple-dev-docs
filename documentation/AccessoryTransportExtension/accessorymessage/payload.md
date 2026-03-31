@@ -6,9 +6,8 @@
 A structure that represents a single data payload within an accessory message.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -23,12 +22,12 @@ The [`AccessoryMessage`](accessorymessage.md) structure’s [`payloads`](accesso
 ## Topics
 
 ### Creating a payload
-- [init(transport: AccessoryMessage.Transport, data: Data)](accessorymessage/payload/init(transport:data:).md)
+- [init(transport: AccessoryTransport, data: Data)](accessorymessage/payload/init(transport:data:).md)
   Initializes a payload with a transport method and data.
 ### Accessing payload content
 - [let data: Data](accessorymessage/payload/data.md)
   A data object that contains the payload content.
-- [let transport: AccessoryMessage.Transport](accessorymessage/payload/transport.md)
+- [let transport: AccessoryTransport](accessorymessage/payload/transport.md)
   A transport method for delivering the payload.
 
 ## Relationships

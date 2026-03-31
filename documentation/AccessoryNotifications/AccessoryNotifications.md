@@ -23,7 +23,7 @@ Call [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(f
 
 To receive notifications, implement [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) in an [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension of the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework. The system calls your handler’s methods for notification arrivals, updates, or removals. Curate just the notification information that your accessory needs from the [`AccessoryNotification`](accessorynotification.md) structure, which includes content for display, icons, related file attachments, and interactions.
 
-Return the curated data to the system using the session’s [`sendMessage(_:)`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryFeatureSession/sendMessage(_:)) method. The system encrypts the data using keys you provide through your app’s [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSecurity) extension. Then, the system delivers the encrypted data to your app’s [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension) for transmission to the accessory.
+Return the curated data to the system using the session’s doc://com.apple.documentation/documentation/accessorytransportextension/AccessoryFeatureSession/sendMessage(_:) method. The system encrypts the data using keys you provide through your app’s [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSecurity) extension. Then, the system delivers the encrypted data to your app’s [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension) for transmission to the accessory.
 
 #### Decrypt and Display Notifications
 
@@ -48,15 +48,11 @@ Your accessory receives the encrypted notification data and implements [`HPKE (R
   A protocol that defines methods for handling notification lifecycle events in your extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
   A session object that enables communication between your extension and the system.
-- [NotificationsForwarding.HandlerFactory](notificationsforwarding/handlerfactory.md)
-  A type alias for a factory that creates notification handlers.
 ### Data curation and alerting
 - [struct AccessoryNotification](accessorynotification.md)
   A structure that contains the details of a notification that iOS provides to your accessory.
 - [struct AlertingContext](alertingcontext.md)
   A structure that provides guidance for how to alert for a notification.
-- [protocol AlertCoordinating](alertcoordinating.md)
-  A protocol that communicates whether the accessory completes the process of alerting for a notification.
 ### Interactive support
 - [protocol AccessoryNotificationManaging](accessorynotificationmanaging.md)
   A protocol that enables the communication of notification responses to the system.

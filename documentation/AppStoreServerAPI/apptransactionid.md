@@ -6,7 +6,7 @@
 The unique identifier of the app download transaction.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.15+
 
 ## Declaration
 

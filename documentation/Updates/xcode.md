@@ -15,7 +15,7 @@ The latest version of Xcode includes the following new features.
 ##### Intelligence
 
 - In the coding assistant, choose agentic coding tools from OpenAI and Anthropic to autonomously complete tasks, including building and testing your app. For more information, see [`Setting up coding intelligence`](https://developer.apple.com/documentation/Xcode/setting-up-coding-intelligence).
-- In Intelligence settings, you can give other agentic coding tools access to Xcode capabilities that use the Model Context Protocol (MCP) service. For more information, see [`Giving external agentic coding tools access to Xcode`](https://developer.apple.com/documentation/Xcode/giving-agentic-coding-tools-access-to-xcode).
+- In Intelligence settings, you can give other agentic coding tools access to Xcode capabilities that use the Model Context Protocol (MCP) service. For more information, see [`Giving external agents access to Xcode`](https://developer.apple.com/documentation/Xcode/giving-external-agents-access-to-xcode).
 
 #### June 2025
 

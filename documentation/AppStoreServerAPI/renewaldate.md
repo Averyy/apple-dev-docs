@@ -6,7 +6,7 @@
 The UNIX time, in milliseconds, when the most recent auto-renewable subscription purchase expires.
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.8+
 
 ## Declaration
 

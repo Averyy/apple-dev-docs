@@ -15,11 +15,11 @@ A string value that indicates the level of additional runtime security protectio
 
 **Type**: string
 
-**Default**: `*`
+**Default**: `2`
 
 #### Discussion
 
-The default value for this entitlement is the `*` wildcard.
+Add this entitlement with the value “2” to your app or extension to instruct the system to protect against particular attacks that target the dynamic loader and Mach messaging.
 
 Xcode adds this entitlement to your app or extension when you add the Enhanced Security capability. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
 

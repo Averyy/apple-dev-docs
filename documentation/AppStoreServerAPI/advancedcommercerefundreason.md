@@ -4,7 +4,7 @@
 **Kind**: typealias
 
 **Availability**:
-- App Store Server API 1.0+
+- App Store Server API 1.14+
 
 ## Declaration
 
