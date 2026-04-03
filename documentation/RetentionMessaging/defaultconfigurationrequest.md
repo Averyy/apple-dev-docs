@@ -20,14 +20,18 @@ This is the request body for the [`Configure Default Message`](configure-default
 
 ## Properties
 
-- `messageIdentifier` (messageIdentifier): **(Required)** The message identifier of the message to configure as a default message.
+- `messageIdentifier` (messageIdentifier) *(required)*: The message identifier of the message to configure as a default message.
 
 ## See Also
 
 - [Configure Default Message](configure-default-message.md)
-  Configure a default message for a specific product in a specific locale.
+  Configures a default message for a specific product in a specific locale.
+- [Get Default Message](get-default-message.md)
+  Gets the default message for a specific product in a specific locale, if it’s configured.
 - [Delete Default Message](delete-default-message.md)
-  Delete a default message for a product in a locale.
+  Deletes a default message for a product in a locale.
+- [object DefaultConfigurationResponse](defaultconfigurationresponse.md)
+  The response body that contains the default configuration information.
 
 
 ---

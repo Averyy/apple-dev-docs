@@ -36,7 +36,7 @@ Apple checks the images and messages that you upload, and sets their states. Cal
 
 You can start using a message and image when its [`messageState`](messagestate.md) or [`imageState`](imagestate.md), respectively, is `APPROVED`. Use these messages when you configure default messages and in real-time responses to your `Get Retention Message` endpoint.
 
-> 💡 **Tip**: Keep a record of the images and messages on your system, including their identifiers, their purpose, and their state.
+> 💡 **Tip**: Keep a record of the images and messages on your system, including their identifiers, their purpose, and their state. Call [`Get Default Message`](get-default-message.md) to check the default message you configured for a specific product and locale.
 
 ##### Configure Default Messages
 

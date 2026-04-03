@@ -14,7 +14,7 @@ After you enable coding tools in the Intelligence settings and begin entering pr
 
 When you use agents, you have control over the Xcode capabilities that they have when modifying your project and performing actions through the Model Context Protocol (MCP). You can also customize agents for your specific development needs.
 
-To give agents that you use outside of Xcode access to your project and Xcode capabilities, see doc:giving-agentic-coding-tools-access-to-xcode.
+To give agents that you use outside of Xcode access to your project and Xcode capabilities, see [`Giving external agents access to Xcode`](giving-external-agents-access-to-xcode.md).
 
 ##### Enable Claude Agent
 
@@ -122,6 +122,8 @@ If you want to turn off the coding assistant for managed devices, set the `Codin
 
 - [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
   Generate code, fix bugs fast, and learn as you go with intelligence built directly into Xcode.
+- [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
+  Let agents access your project and Xcode capabilities using the Model Context Protocol.
 
 
 ---

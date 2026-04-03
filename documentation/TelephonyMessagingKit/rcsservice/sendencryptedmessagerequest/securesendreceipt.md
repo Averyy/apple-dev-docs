@@ -19,6 +19,11 @@ var secureSendReceipt: RCSMessage.SecureSendReceipt?
 
 Set this after receiving an [`RCSMessage.DispositionNotification`](rcsmessage/dispositionnotification.md) message whose disposition is [`RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure`](rcsmessage/disposition/deliveryfailedduetodecryptionfailure.md).
 
+## See Also
+
+- [RCSMessage.SecureSendReceipt](rcsmessage/securesendreceipt.md)
+  A structure that contains the security context of an end-to-end encrypted message.
+
 
 ---
 

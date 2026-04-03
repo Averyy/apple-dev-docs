@@ -18,15 +18,21 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 
 ##### Css
 
+###### New Features
+
+- Added support for the `:open` pseudo-class for `<details>`, `<dialog>`, `<select>`, and `<input>` elements. (173253012)
+
 ###### Resolved Issues
 
 - Fixed an issue where a `display: grid` subgrid inside a `grid-lanes` container incorrectly contributed its items’ intrinsic sizes to the parent’s track sizing algorithm. (171230544)
 - Fixed an issue in collapsed border tables where the border style of a cell adjacent to a `rowspan` cell was incorrectly applied across the full length of the spanning cell’s border. (171634786)
 - Fixed a layout regression where absolutely positioned elements inside block-in-inline containers were incorrectly overlapping adjacent content. (171732203)
+- Fixed a regression where content with `column-count: 1` could fail to display text.  (172306151)
 - Fixed an issue where `@font-face` rules with different styles could incorrectly fall back to glyphs from other faces in the same family, rather than proceeding to the next family as specified by the font matching algorithm. (172390840)
 - Fixed `hanging-punctuation` to correctly treat U+0027 (apostrophe) and U+0022 (quotation mark) as hangable quote characters. (172668971)
 - Fixed an issue where ideographic space did not hang when using `hanging-punctuation: first`. (172669250)
 - Fixed an issue where media queries failed to re-evaluate during viewport resizing when CSS anchor positioning and viewport units were both in use. (172864699)
+- Fixed an issue where chains of three or more anchor-positioned elements didn’t resolve correctly. (173357622)
 
 ##### Editing
 
@@ -34,6 +40,7 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 
 - Fixed an issue where pressing backspace on a line below an image in a `contenteditable` region could place the cursor in the wrong position. (171850465)
 - Fixed an issue where emoji images copied from websites and pasted into other sites appeared broken due to cross-origin resource policy blocking the SVG image sources. (172775070)
+- Fixed an issue where pasting text into an empty list item created an extra blank bullet. (173275372)
 
 ##### Forms
 
@@ -74,6 +81,7 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 - Fixed an issue where images could appear stretched inside certain flex and grid layout configurations. (172224411)
 - Fixed an issue where images inside transformed containers were not properly centered. (172475726)
 - Fixed an issue where pinch-to-zoom could cause web content to jump or disappear on some websites. (172507916)
+- Fixed an issue where user-installed font variants could interfere with system font matching, causing incorrect fonts to be selected. (173345107)
 
 ##### Svg
 
@@ -118,6 +126,12 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 
 - Fixed an issue where extensions with a trailing comma in `manifest.json` failed to load in Safari. (172120877)
 
+##### Webgl
+
+###### Resolved Issues
+
+- Fixed WebGL shader compilation to properly handle `NaN` and `infinity` values.  (166699074)
+
 ##### Webrtc
 
 ###### Resolved Issues
@@ -127,6 +141,19 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 - Fixed `RTCRtpSynchronizationSource.timestamp` to use the correct time base. (172689387)
 - Fixed an issue where remote audio and video track IDs were incorrectly derived from SDP. (172689452)
 - Fixed `RTCRtpTransceiver.setCodecPreferences()` to accept codecs with case-insensitive `mimeType` matching. (172689477)
+
+## See Also
+
+- [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
+  Released March 24, 2026 — 26.4 (20624.1.16)
+- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+  Released February 11, 2026 — 26.3 (20623.2.7)
+- [Safari 26.2 Release Notes](safari-26_2-release-notes.md)
+  Released December 12, 2025 — 26.2 (20623.1.14)
+- [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
+  Released November 3, 2025 — 26.1 (20622.2.11)
+- [Safari 26.0 Release Notes](safari-26-release-notes.md)
+  Released September 15, 2025 — 26.0 (20622.1.22)
 
 
 ---

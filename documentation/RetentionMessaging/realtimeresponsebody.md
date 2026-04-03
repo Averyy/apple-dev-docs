@@ -40,12 +40,8 @@ For more information on the Advanced Commerce API, see [`Advanced Commerce API`]
 
 ## See Also
 
-- [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)
-  Choose retention messages for customers in real time by implementing an endpoint on your server that responds to requests from the App Store server.
 - [Responding to real-time retention messaging requests](responding-to-realtime-retention-messaging-requests.md)
   Select retention messages for customers in real time by responding to requests on your Get Retention Message endpoint.
-- [object RealtimeRequestBody](realtimerequestbody.md)
-  The request body the App Store server sends to your Get Retention Message endpoint.
 - [object DecodedRealtimeRequestBody](decodedrealtimerequestbody.md)
   The decoded request body the App Store sends to your server to request a real-time retention message.
 

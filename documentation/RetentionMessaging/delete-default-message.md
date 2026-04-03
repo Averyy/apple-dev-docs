@@ -3,7 +3,7 @@
 **Framework**: Retention Messaging API  
 **Kind**: httpRequest
 
-Delete a default message for a product in a locale.
+Deletes a default message for a product in a locale.
 
 **Availability**:
 - Retention Messaging API 1.0+
@@ -30,9 +30,13 @@ This endpoint is idempotent. If the product has no configured default message fo
 ## See Also
 
 - [Configure Default Message](configure-default-message.md)
-  Configure a default message for a specific product in a specific locale.
+  Configures a default message for a specific product in a specific locale.
+- [Get Default Message](get-default-message.md)
+  Gets the default message for a specific product in a specific locale, if it’s configured.
 - [object DefaultConfigurationRequest](defaultconfigurationrequest.md)
   The request body that contains the default configuration information.
+- [object DefaultConfigurationResponse](defaultconfigurationresponse.md)
+  The response body that contains the default configuration information.
 
 
 ---

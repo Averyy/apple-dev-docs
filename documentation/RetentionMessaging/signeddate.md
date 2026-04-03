@@ -6,7 +6,7 @@
 The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature data.
 
 **Availability**:
-- Retention Messaging 1.1+
+- Retention Messaging API 1.1+
 
 ## Declaration
 

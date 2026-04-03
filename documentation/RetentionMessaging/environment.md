@@ -6,7 +6,7 @@
 The server environment, either sandbox or production.
 
 **Availability**:
-- Retention Messaging 1.1+
+- Retention Messaging API 1.1+
 
 ## Declaration
 

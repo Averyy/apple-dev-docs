@@ -54,14 +54,14 @@ POST https://api.searchads.apple.com/api/v5/custom-reports
     "startTime": "2024-01-20",
     "endTime": "2024-01-29",
     "granularity": "DAILY",
-    "downloadUri": "https://blobstore.apple.com...",
+    "downloadUri": "https://ads-...us-west-2.amazonaws.com/ext-sov-reports/",
     "dimensions": [
       "appName",
       "adamId",
       "countryOrRegion",
       "searchTerm"
     ],
-    “metrics”: [
+    "metrics": [
       "lowImpressionShare",
       "highImpressionShare",
       "rank",

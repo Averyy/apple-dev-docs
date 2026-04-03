@@ -24,6 +24,8 @@ Provide the `altText` as a UTF-8-encoded string. The maximum string length for `
   A unique identifier for an image that you provide when you upload the image.
 - [type imageState](imagestate.md)
   The approval state of an image.
+- [type imageSize](imagesize.md)
+  The size of an image.
 
 
 ---

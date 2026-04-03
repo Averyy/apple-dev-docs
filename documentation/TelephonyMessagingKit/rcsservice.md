@@ -110,6 +110,13 @@ Task {
   An opaque identifier that represents the cellular service for which to provide operations.
 - [struct RCSMessageID](rcsmessageid.md)
   A structure that represents an RCS message identifier.
+### Sending encrypted messages
+- [func sendEncryptedMessageRequest(RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest(_:).md)
+  Sends an encrypted message to a specified destination.
+- [RCSService.SendEncryptedMessageRequest](rcsservice/sendencryptedmessagerequest.md)
+  A structure that represents a request to send an encrypted message.
+- [RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest/result.md)
+  A structure that represents the result of sending an encrypted message.
 ### Receiving messages
 - [var incomingMessageNotifications: some AsyncSequence<RCSService.IncomingMessageNotification, Never>](rcsservice/incomingmessagenotifications.md)
   An asynchronous sequence of incoming message notifications produced by this service.
@@ -182,6 +189,8 @@ Task {
   Sends a response for a business suggestion.
 - [RCSService.SuggestionResponse](rcsservice/suggestionresponse.md)
   Structure representing a response to a business suggestion.
+- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
+  Sends device specifics in response to a suggested action to send device specifics.
 ### Retrieving business information
 - [func businessInformation(for: RCSService.BusinessInformationRequest) async throws -> RCSService.Business?](rcsservice/businessinformation(for:).md)
   Requests business information for a specified handle.
@@ -203,14 +212,6 @@ Task {
   Event triggered when group chat is started.
 - [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
-### Structures
-- [RCSService.SendEncryptedMessageRequest](rcsservice/sendencryptedmessagerequest.md)
-  A structure that represents a request to send an encrypted message.
-### Instance Methods
-- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
-  Sends device specifics in response to a suggested action to send device specifics.
-- [func sendEncryptedMessageRequest(RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest(_:).md)
-  Sends an encrypted message to a specified destination.
 
 ## Relationships
 

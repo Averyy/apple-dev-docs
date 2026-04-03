@@ -23,6 +23,8 @@ final func sendSuggestionResponse(_ response: RCSService.SuggestionResponse) asy
 
 - [RCSService.SuggestionResponse](rcsservice/suggestionresponse.md)
   Structure representing a response to a business suggestion.
+- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
+  Sends device specifics in response to a suggested action to send device specifics.
 
 
 ---

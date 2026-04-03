@@ -22,14 +22,15 @@ struct GeolocationPush
   The latitude of the location.
 - [var longitude: Double](rcsmessage/geolocationpush/longitude.md)
   The longitude of the location.
+### Supporting RCS encryption
+- [var isEndToEndEncrypted: Bool](rcsmessage/geolocationpush/isendtoendencrypted.md)
+  A Boolean value indicating whether this message is end-to-end encrypted.
 ### Initializers
 - [init(latitude: Double, longitude: Double, description: String?)](rcsmessage/geolocationpush/init(latitude:longitude:description:).md)
   Creates a geolocation push content instance with the given latitude and longitude.
 ### Instance Properties
 - [var description: String?](rcsmessage/geolocationpush/description.md)
   A textual description of the location.
-- [var isEndToEndEncrypted: Bool](rcsmessage/geolocationpush/isendtoendencrypted.md)
-  A Boolean value indicating whether this message is end-to-end encrypted.
 
 ## Relationships
 

@@ -32,22 +32,18 @@ For more information, see [`Responding to real-time retention messaging requests
 
 ## Properties
 
-- `originalTransactionId` (originalTransactionId): **(Required)** The original transaction identifier of the customer’s subscription.
-- `appAppleId` (appAppleId): **(Required)** The unique identifier of the app in the App Store.
-- `productId` (productId): **(Required)** The unique identifier of the auto-renewable subscription.
-- `userLocale` (locale): **(Required)** The device’s locale.
-- `requestIdentifier` (requestIdentifier): **(Required)** A UUID the App Store server creates to uniquely identify each request.
-- `environment` (environment): **(Required)** The server environment, either sandbox or production.
-- `signedDate` (signedDate): **(Required)** The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
+- `originalTransactionId` (originalTransactionId) *(required)*: The original transaction identifier of the customer’s subscription.
+- `appAppleId` (appAppleId) *(required)*: The unique identifier of the app in the App Store.
+- `productId` (productId) *(required)*: The unique identifier of the auto-renewable subscription.
+- `userLocale` (locale) *(required)*: The device’s locale.
+- `requestIdentifier` (requestIdentifier) *(required)*: A UUID the App Store server creates to uniquely identify each request.
+- `environment` (environment) *(required)*: The server environment, either sandbox or production.
+- `signedDate` (signedDate) *(required)*: The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
 
 ## See Also
 
-- [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)
-  Choose retention messages for customers in real time by implementing an endpoint on your server that responds to requests from the App Store server.
 - [Responding to real-time retention messaging requests](responding-to-realtime-retention-messaging-requests.md)
   Select retention messages for customers in real time by responding to requests on your Get Retention Message endpoint.
-- [object RealtimeRequestBody](realtimerequestbody.md)
-  The request body the App Store server sends to your Get Retention Message endpoint.
 - [object RealtimeResponseBody](realtimeresponsebody.md)
   A response you provide to choose, in real time, a retention message the system displays to the customer.
 

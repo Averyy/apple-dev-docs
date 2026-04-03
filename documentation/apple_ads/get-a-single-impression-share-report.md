@@ -28,7 +28,7 @@ HTTP GET https://api.searchads.apple.com/api/v5/custom-reports/{reportId}
     "startTime": "2024-06-01",
     "endTime": "2024-06-30",
     "granularity": "DAILY",
-    "downloadUri": "https://blobstore.apple.com...",
+    "downloadUri": "https://ads-...us-west-2.amazonaws.com/ext-sov-reports/",
     "dimensions": [
       "appName",
       "adamId",

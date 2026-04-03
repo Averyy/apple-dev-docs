@@ -20,6 +20,8 @@ struct FileDownloadRequest
 ### Creating a download request
 - [init(cellularServiceID: CellularServiceID, fileURL: URL, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:fileurl:destinationfileurl:).md)
   Creates a download request instance.
+- [init(cellularServiceID: CellularServiceID, fileMetadata: RCSFileTransferMetadata, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:filemetadata:destinationfileurl:).md)
+  Creates a download request instance.
 ### Accessing download request properties
 - [var cellularServiceID: CellularServiceID](rcsservice/filedownloadrequest/cellularserviceid.md)
   The service identifier associated with this request.
@@ -30,9 +32,6 @@ struct FileDownloadRequest
 ### Accessing download metadata
 - [RCSService.FileDownloadRequest.Metadata](rcsservice/filedownloadrequest/metadata.md)
   A structure that contains download metadata from the content server.
-### Initializers
-- [init(cellularServiceID: CellularServiceID, fileMetadata: RCSFileTransferMetadata, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:filemetadata:destinationfileurl:).md)
-  Creates a download request instance.
 
 ## Relationships
 

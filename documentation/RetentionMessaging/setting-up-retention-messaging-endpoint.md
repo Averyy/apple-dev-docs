@@ -9,13 +9,15 @@ Choose retention messages for customers in real time by implementing an endpoint
 To receive requests from the App Store so that you can provide retention messages in real time, complete the following:
 
 1. On your server, implement a `Get Retention Message` endpoint to the specifications described below.
-2. Share your endpoint URL with Apple by using the form [`Request access to the Retention Messaging API`](https://developer.apple.comhttps://developer.apple.com/contact/request/retention-messaging-api/).
+2. Configure your endpoint for the sandbox environment by calling the [`Configure Realtime URL`](configure-realtime-url.md) endpoint.
+3. Call the [`Initiate Performance Test`](initiate-performance-test.md), which runs in the sandbox environment. Your server needs to pass the test before you can configure your endpoint for the production environment.
+4. Configure your endpoint for the production environment by calling the [`Configure Realtime URL`](configure-realtime-url.md) endpoint.
 
-When you set up this endpoint, the App Store server delivers real-time requests when customers view a subscription detail page where they may choose to cancel the subscription. You respond to the request by choosing a retention message for the system to display to the customer. You set up the retention messages in advance. The system displays only messages where both the message and optional image have an `APPROVED` state.
+After you set up the `Get Retention Message` endpoint, the App Store server delivers real-time requests when customers view a subscription detail page where they may choose to cancel the subscription. You respond to the request by choosing a retention message for the system to display to the customer. You set up the retention messages in advance. The system only displays messages that have an `APPROVED` state. If the message includes an image, the image also needs to have an `APPROVED` state.
 
 Your server is responsible for parsing, interpreting, and responding to all server-to-server posts. For information about responding to requests, see [`Responding to real-time retention messaging requests`](responding-to-realtime-retention-messaging-requests.md).
 
-##### Set Up Your Endpoint
+##### Implement Your Endpoint
 
 Implement this endpoint on your server to the following specifications:
 
@@ -23,7 +25,7 @@ Implement this endpoint on your server to the following specifications:
 
 **URL:** `POST https://example.com/<your URL>`
 
-You determine the HTTPS URL on your server to receive the requests. Share this URL with Apple.
+You determine the HTTPS URL(s) on your server to receive the requests for the sandbox and production environments. Share your URLs with Apple by calling the [`Configure Realtime URL`](configure-realtime-url.md) endpoint.
 
 **HTTP body:** [`RealtimeRequestBody`](realtimerequestbody.md)
 
@@ -40,18 +42,32 @@ Set up secure communications with the App Store server by meeting the following 
 
 - Your domain must have a valid SSL certificate.
 - Your endpoint must implement TLS 1.2.
-- Your endpoint needs to respond within 700 ms; otherwise, the App Store server times out and the request fails.
+- Your endpoint needs to respond within 700 ms in the production environment; otherwise, the App Store server times out and the request fails.
+
+##### Configure Your Endpoint for Real Time Use
+
+To configure your `Get Retention Message` endpoint with this API’s server, call the [`Configure Realtime URL`](configure-realtime-url.md) endpoint. Set up the endpoint in the sandbox environment first.
+
+> **Note**: Your server must pass the performance test in the sandbox environment before you can configure your real-time endpoint for the production environment. For more information, including response-time requirements in the sandbox environment, see [`Initiate Performance Test`](initiate-performance-test.md).
+
+To check the URL you configured, call the [`Get Realtime URL`](get-realtime-url.md) endpoint.
+
+To remove your endpoint from real-time use, call the [`Delete Realtime URL`](delete-realtime-url.md) endpoint.
 
 ## See Also
 
-- [Responding to real-time retention messaging requests](responding-to-realtime-retention-messaging-requests.md)
-  Select retention messages for customers in real time by responding to requests on your Get Retention Message endpoint.
+- [Configure Realtime URL](configure-realtime-url.md)
+  Configures the URL for your Get Retention Message endpoint in the sandbox and production environments.
+- [Get Realtime URL](get-realtime-url.md)
+  Gets the URL for real-time messages that points to your Get Retention Message endpoint, which you previously configured.
+- [Delete Realtime URL](delete-realtime-url.md)
+  Deletes the URL for your Get Retention Message endpoint, in the sandbox or production environments.
+- [object RealtimeUrlRequest](realtimeurlrequest.md)
+  The request body for configuring the URL of your Get Retention Message endpoint.
 - [object RealtimeRequestBody](realtimerequestbody.md)
   The request body the App Store server sends to your Get Retention Message endpoint.
-- [object DecodedRealtimeRequestBody](decodedrealtimerequestbody.md)
-  The decoded request body the App Store sends to your server to request a real-time retention message.
-- [object RealtimeResponseBody](realtimeresponsebody.md)
-  A response you provide to choose, in real time, a retention message the system displays to the customer.
+- [object RealtimeUrlResponse](realtimeurlresponse.md)
+  The response body that contains the URL for your Get Retention Message endpoint.
 
 
 ---

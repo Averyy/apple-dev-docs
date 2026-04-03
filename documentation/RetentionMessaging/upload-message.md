@@ -3,7 +3,7 @@
 **Framework**: Retention Messaging API  
 **Kind**: httpRequest
 
-Upload a message to use for retention messaging.
+Uploads a message to use for retention messaging.
 
 **Availability**:
 - Retention Messaging API 1.0+
@@ -15,16 +15,18 @@ Upload a message to use for retention messaging.
 
 #### Discussion
 
-Call this endpoint to upload the text for retention messages. You provide a unique `messageIdentifier` to identify each message you upload. You can optionally include a reference to an image and its alternative text.
+Call this endpoint to upload the text for retention messages. You provide a unique `messageIdentifier` to identify each message you upload. You can optionally include an image and bullet points with the message.
 
-A message consists of four string fields:
+You define a message by providing the following strings and objects in the [`UploadMessageRequestBody`](uploadmessagerequestbody.md):
 
-- The header, which contains text to display above the body.
 - The body, which contains the main text of the message.
-- An optional [`imageIdentifier`](imageidentifier.md) that represents an image you upload. Note: This option is only for text-based messages with images.
-- Alternative text for the optional image.
+- A header, which contains text to display above the message body or above the image.
+- An optional [`UploadMessageImage`](uploadmessageimage.md) that represents an image you upload with alternative text.
+- An optional array of [`BulletPoint`](bulletpoint.md) text, along with images to use as the bullet point icons.
 
 > ❗ **Important**: Only text-based retention messages can include images. If you’re uploading text for a promotional-offer message or a switch-plan message, don’t include an image.
+
+To change the position of the header text in a retention message, use [`headerPosition`](headerposition.md) to indicate whether to place the header above the message body or above the image.
 
 Each string needs to be a UTF-8-encoded value with a maximum length as indicated below:
 
@@ -33,6 +35,7 @@ Each string needs to be a UTF-8-encoded value with a maximum length as indicated
 | [`header`](header.md) | 66 | [`HeaderTooLongError`](headertoolongerror.md) |
 | [`body`](body.md) | 144 | [`BodyTooLongError`](bodytoolongerror.md) |
 | [`altText`](alttext.md) | 150 | [`AltTextTooLongError`](alttexttoolongerror.md) |
+| [`bulletPointText`](bulletpointtext.md) | 66 | [`BadRequestBulletPointTextTooLongError`](badrequestbulletpointtexttoolongerror.md) |
 
 The maximum number of messages you can configure for each app is 2000. For example, you may choose to upload a message for a product identifier for each locale your app supports. The endpoint returns a `MaximumNumberOfMessagesReachedError` response if you exceed the maximum limit. Call [`Delete Message`](delete-message.md) to delete messages.
 
@@ -61,11 +64,11 @@ The message text to upload.
 ## See Also
 
 - [Delete Message](delete-message.md)
-  Delete a previously uploaded message.
+  Deletes a previously uploaded message.
 - [Get Message List](get-message-list.md)
-  Get the message identifier and state of all uploaded messages.
+  Gets the message identifier and state of all uploaded messages.
 - [object UploadMessageRequestBody](uploadmessagerequestbody.md)
-  The request body for uploading a message, which includes the message text and an optional image reference.
+  The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
 - [object UploadMessageImage](uploadmessageimage.md)
   The definition of an image with its alternative text.
 - [object GetMessageListResponse](getmessagelistresponse.md)

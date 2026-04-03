@@ -170,6 +170,8 @@ Xcode retains all the edits it made after that state in case you decide to roll 
 
 - [Setting up coding intelligence](setting-up-coding-intelligence.md)
   Enable third-party coding tools that you want to use in the coding assistant.
+- [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
+  Let agents access your project and Xcode capabilities using the Model Context Protocol.
 
 
 ---

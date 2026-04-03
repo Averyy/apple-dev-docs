@@ -24,7 +24,7 @@ struct Result
   Array of participants in group chat.
 - [let subject: String?](rcsservice/creategroupchatrequest/result/subject.md)
   The group chat’s subject.
-### Instance Properties
+### Supporting RCS encryption
 - [let isEndToEndEncrypted: Bool](rcsservice/creategroupchatrequest/result/isendtoendencrypted.md)
   A Boolean value indicating whether the associated group is end-to-end encrypted.
 

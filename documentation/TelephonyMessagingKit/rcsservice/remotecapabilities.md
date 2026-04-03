@@ -39,7 +39,7 @@ struct RemoteCapabilities
 ### Determining capability validity
 - [let validUntil: Date?](rcsservice/remotecapabilities/validuntil.md)
   Expiration date for the contained capabilities.
-### Instance Properties
+### Supporting RCS encryption
 - [let supportsEndToEndEncryption: Bool](rcsservice/remotecapabilities/supportsendtoendencryption.md)
   A Boolean value indicating whether the remote end supports end-to-end encryption.
 

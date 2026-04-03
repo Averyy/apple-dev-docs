@@ -27,6 +27,8 @@ let handle: RCSHandle
   A message identifier for the message.
 - [struct RCSMessageID](rcsmessageid.md)
   A structure that represents an RCS message identifier.
+- [let originalID: RCSMessageID?](rcsmessage/originalid.md)
+  The original message ID of this message.
 
 
 ---

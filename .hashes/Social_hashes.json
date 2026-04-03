@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-31T07:30:11.874188",
+    "last_updated": "2026-04-03T07:46:04.829242",
     "total_pages": 124,
-    "session_id": "2026-03-31T07:30:05.990618"
+    "session_id": "2026-04-03T07:45:52.671765"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Social.json": {
       "hash": "c7744b59d6ea73763b5ada9064e54d347f037274ff099015b2a7574ced2b35a6",
-      "last_checked": "2026-03-31T07:30:06.244283",
+      "last_checked": "2026-04-03T07:45:52.946708",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"a049c719de3211b4eb7e05b87b7e3c0b\"",
       "file_path": "documentation/Social/Social.md"
     },
     "https://developer.apple.com/documentation/Social": {
       "hash": "c7744b59d6ea73763b5ada9064e54d347f037274ff099015b2a7574ced2b35a6",
-      "last_checked": "2026-03-31T07:30:06.136346",
+      "last_checked": "2026-04-03T07:45:52.832179",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"a049c719de3211b4eb7e05b87b7e3c0b\"",
       "file_path": "documentation/Social/Social.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller.json": {
       "hash": "bf2e164e02967cc4b1ec77a134f2ba8fa321783ecce5f8a7d1a53791893dba40",
-      "last_checked": "2026-03-31T07:30:06.553416",
+      "last_checked": "2026-04-03T07:45:53.358812",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"cd12258f76c0ea026d63545906a27355\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller.json": {
       "hash": "6e8be2ea3675a34937beb41cce34999c980a20c0c4bed829210062b30cc13288",
-      "last_checked": "2026-03-31T07:30:06.666989",
+      "last_checked": "2026-04-03T07:45:53.540625",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"2e413cbbbc9f0c3346505b7d114bf190\"",
       "file_path": "documentation/Social/slcomposeviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest.json": {
       "hash": "36e1c0cb9d9d468b1aa38d89c44c7516dfec903d3af652013bcb5d83415eecfb",
-      "last_checked": "2026-03-31T07:30:06.721225",
+      "last_checked": "2026-04-03T07:45:53.730017",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"99e47aed6ecfa1b65e4aaf2a83679333\"",
       "file_path": "documentation/Social/slrequest.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/configurationitems().json": {
       "hash": "c055883f0d79e15ef7e5e8eb5ac7755906dafb82e8a7d1c179d620b428cf3c4e",
-      "last_checked": "2026-03-31T07:30:06.785824",
+      "last_checked": "2026-04-03T07:45:53.903422",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"fa982a9f25aedf091d5ced15d784c988\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/configurationitems.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem.json": {
       "hash": "ce07ee9176fc1cb0017a4b43316f87435d31009569d12c22d991725d255a0e2f",
-      "last_checked": "2026-03-31T07:30:06.858095",
+      "last_checked": "2026-04-03T07:45:54.228828",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"ce2563c0d520777808d2419b437099b5\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/reloadconfigurationitems().json": {
       "hash": "8526fd2c62daf182d4f2a46467f6c18e711ca6106537f0ec47120a4280c32945",
-      "last_checked": "2026-03-31T07:30:07.004297",
+      "last_checked": "2026-04-03T07:45:54.385275",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"429fa4854a2027e9cc12fa0efbdbf898\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/reloadconfigurationitems.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/contenttext.json": {
       "hash": "22549900f102d4f4e43b94218f7e9c29fc52a90a329f8ebcec42d64e87191eee",
-      "last_checked": "2026-03-31T07:30:07.111200",
+      "last_checked": "2026-04-03T07:45:54.738331",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"f74c4e7086bcc70c302cc9e781be39f0\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/contenttext.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/placeholder.json": {
       "hash": "c18c4c594d4a9ec445b4456b2135621c59bb47dcd3e45ece8941b60b54b5a6ea",
-      "last_checked": "2026-03-31T07:30:07.348661",
+      "last_checked": "2026-04-03T07:45:54.971421",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"664c19608632f7371f34442b64ec709e\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/placeholder.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/textview.json": {
       "hash": "c769491645ce88a22cd4149f55a49c6fe57325989b3c343e3e96eead9036d17c",
-      "last_checked": "2026-03-31T07:30:07.413061",
+      "last_checked": "2026-04-03T07:45:55.170720",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"424921540501924d14d6ca7a13e6b85d\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/textview.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/pushconfigurationviewcontroller(_:).json": {
       "hash": "bef6d28ca1bc6a037db0657ca845631ea908c61fae3272839e667d80eef01b6e",
-      "last_checked": "2026-03-31T07:30:07.480722",
+      "last_checked": "2026-04-03T07:45:55.485325",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"72dcb57bca5b87dd444dc7f0e2f7463c\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/pushconfigurationviewcontroller.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/popconfigurationviewcontroller().json": {
       "hash": "e15157f4f6caae448d233f8c7ab7ddd0d44c5c45e8c0255c2d399d91f8cb9ddb",
-      "last_checked": "2026-03-31T07:30:07.565968",
+      "last_checked": "2026-04-03T07:45:55.672233",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"95aba1840fac57aca3940c83701216d0\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/popconfigurationviewcontroller.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/presentationanimationdidfinish().json": {
       "hash": "a23f9f9c228f5a533c78ba81b8e7019ec2bd1b6103502f6d3a725e627286156f",
-      "last_checked": "2026-03-31T07:30:07.620524",
+      "last_checked": "2026-04-03T07:45:55.802145",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"ddb24f824de6ada31b8bbe039323e501\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/presentationanimationdidfinish.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/didselectcancel().json": {
       "hash": "dbe52f381c1bd74a2be7910177add29b06b9fe857d3a0a72be3c107f9a5c1a68",
-      "last_checked": "2026-03-31T07:30:07.715660",
+      "last_checked": "2026-04-03T07:45:56.026704",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"3b77a3397aa817de4e8ca4a1b92a1e06\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/didselectcancel.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/didselectpost().json": {
       "hash": "17f08cb96cf9234d2ca913d96609aab332e39d8705b8d48dbb19274888990023",
-      "last_checked": "2026-03-31T07:30:07.775070",
+      "last_checked": "2026-04-03T07:45:56.154470",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"9e1fad361fdd9c4b77481105a7c011e9\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/didselectpost.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/cancel().json": {
       "hash": "3ae7d3a1cb96715fa17255f6d1a7ac34fa59b5e594a1c51330a7bb70d2d17d9c",
-      "last_checked": "2026-03-31T07:30:07.842684",
+      "last_checked": "2026-04-03T07:45:56.309141",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"2810c5fc7402613164f12580621f8ee7\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/cancel.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/charactersremaining.json": {
       "hash": "bf9b8ce90f340761965db6d4eb03ae9f626f96687138a68242b0a63c35d8eeef",
-      "last_checked": "2026-03-31T07:30:07.906272",
+      "last_checked": "2026-04-03T07:45:56.627446",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"b2e81f539baabbf699006b927678b2a3\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/charactersremaining.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/iscontentvalid().json": {
       "hash": "5ee15af0880dc83ecd37f367b102e2c7b78749972210808097ed0ed11ee0266e",
-      "last_checked": "2026-03-31T07:30:07.977232",
+      "last_checked": "2026-04-03T07:45:56.938548",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"fd2dcb59a12c311d45e56ee44e9abfe0\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/iscontentvalid.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/validatecontent().json": {
       "hash": "ac0685e03c53e7eaa63bffffc08f73c3760f89493260885c19e2c4b768cb09d5",
-      "last_checked": "2026-03-31T07:30:08.041191",
+      "last_checked": "2026-04-03T07:45:57.108648",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"51bf5ef0681c43f633db9d81c55ffd6e\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/validatecontent.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/loadpreviewview().json": {
       "hash": "067b54152224b48a922b25435a990777993bd3e4cea8739bf18ac9d37d2b9e4a",
-      "last_checked": "2026-03-31T07:30:08.170865",
+      "last_checked": "2026-04-03T07:45:57.411770",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"2ebd55879338c95132b39e8769506315\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/loadpreviewview.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/autocompletionviewcontroller.json": {
       "hash": "4d70beb18c1155ecc0d0bf8dab9923f7f07e015c532d38a4985a2cc827a25a2f",
-      "last_checked": "2026-03-31T07:30:08.277732",
+      "last_checked": "2026-04-03T07:45:57.553668",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"af26a2e53b53a9c2a512ed1694909b7b\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/autocompletionviewcontroller.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/init(forservicetype:).json": {
       "hash": "38c2c3509e183c41ad16a97d894435cafa32ac0b963dc2c35fa8b7c146abc452",
-      "last_checked": "2026-03-31T07:30:08.408564",
+      "last_checked": "2026-04-03T07:45:57.680630",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"1f1804ec5bd7b5f67edfca180485e28e\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/init-forservicetype.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/isavailable(forservicetype:).json": {
       "hash": "aa434de39c402268a6f1a555ad4e6365270679b02a873d6bcc592b175c500594",
-      "last_checked": "2026-03-31T07:30:08.476853",
+      "last_checked": "2026-04-03T07:45:57.857649",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"4fcec4d8215dc05fa9144577beb66a86\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/isavailable-forservicetype.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/servicetype.json": {
       "hash": "bfa6cc4fdc82222c40ee47373c2291df3fa230e8c86e890604ba3ccf4240428a",
-      "last_checked": "2026-03-31T07:30:08.605223",
+      "last_checked": "2026-04-03T07:45:58.042919",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"893fd907cac4f8ff7557a90de6621fb1\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/servicetype.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/setinitialtext(_:).json": {
       "hash": "518106b8fb341b4e7bd66f5ec400945f98844165de2958d05baab792bf4fcb06",
-      "last_checked": "2026-03-31T07:30:08.688728",
+      "last_checked": "2026-04-03T07:45:58.218040",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"1f5ac1bef09fd8f284ae8776ccbd40f2\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/setinitialtext.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/add(_:)-1z68a.json": {
       "hash": "717f7ad767df2f731106b4ec872f3afe5abe6ae1bcf05a58bb7689eab5237eb8",
-      "last_checked": "2026-03-31T07:30:08.804114",
+      "last_checked": "2026-04-03T07:45:58.537453",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"2eac2ebe3f029c718a98eaa0951dc6a0\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/add-1z68a.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/add(_:)-3mn1w.json": {
       "hash": "8952e10e76191ada8f173309d66e4ee78b372b569d3af5e5c81d7698a4b75357",
-      "last_checked": "2026-03-31T07:30:08.916835",
+      "last_checked": "2026-04-03T07:45:58.732742",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"d30de5ffd17905bdd000d909f1443b09\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/add-3mn1w.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/removeallimages().json": {
       "hash": "c9a211b08fba93f92d8784f87c6351b364350f44c82eaf9775b007ef172fecdd",
-      "last_checked": "2026-03-31T07:30:08.990947",
+      "last_checked": "2026-04-03T07:45:58.861365",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"df1eafa25306c2e6bd20ee18c0be0ddb\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/removeallimages.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/removeallurls().json": {
       "hash": "be5a03c749ee70110745f1a221f197bc28791dd12ef4336a116b60aebe42c27d",
-      "last_checked": "2026-03-31T07:30:09.090705",
+      "last_checked": "2026-04-03T07:45:59.032801",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"c7ad22ea290a83170e94d7643b8ed068\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/removeallurls.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/completionhandler.json": {
       "hash": "a759705fbc71cead556666ee741c1175dbb05e101c5ea8473602de046986439e",
-      "last_checked": "2026-03-31T07:30:09.160703",
+      "last_checked": "2026-04-03T07:45:59.211360",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"adb421a5eddc4e2c5035b49009b3616d\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/completionhandler.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollercompletionhandler.json": {
       "hash": "1c363ea9ca107f9b572e8cbd45afcc8a4e893d7bf5554a4703707a29b6b7f842",
-      "last_checked": "2026-03-31T07:30:09.214831",
+      "last_checked": "2026-04-03T07:45:59.355545",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"e69b5070cd3b0f169ae73653776b65ad\"",
       "file_path": "documentation/Social/slcomposeviewcontrollercompletionhandler.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult.json": {
       "hash": "7e6efbd75810baf96c62deb34374aaca63a247855cde9d8d3ea6995d31b2a198",
-      "last_checked": "2026-03-31T07:30:09.324470",
+      "last_checked": "2026-04-03T07:45:59.500936",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"50255b8dbb84be23dacfbd26b87e7d90\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/init(forservicetype:requestmethod:url:parameters:).json": {
       "hash": "8873be482ba153cfad883fc276812a62f623a72cbeb14dfcc7bca62349559867",
-      "last_checked": "2026-03-31T07:30:09.385461",
+      "last_checked": "2026-04-03T07:45:59.650187",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"985b09214c42bc48a790a421e8bf09bb\"",
       "file_path": "documentation/Social/slrequest/init-forservicetyperequestmethodurlparameters.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypefacebook.json": {
       "hash": "184b378c37785d96679d6732ad5a4c88aa05b21610632a250ea8b6459c0f5458",
-      "last_checked": "2026-03-31T07:30:09.439414",
+      "last_checked": "2026-04-03T07:45:59.840757",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"8e7ee7d7d0e932fc0d00d5a850effb22\"",
       "file_path": "documentation/Social/slservicetypefacebook.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypetwitter.json": {
       "hash": "45b0ff985d0b6251819cdfe300c945f4491198d005e7992957dc5c5c22d82919",
-      "last_checked": "2026-03-31T07:30:09.499229",
+      "last_checked": "2026-04-03T07:46:00.021055",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"6048ad2ff1087b52ae4267032f7cbf39\"",
       "file_path": "documentation/Social/slservicetypetwitter.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypesinaweibo.json": {
       "hash": "d501c2e189cede75846714cf9bb93a05e7a6f89ce4a55b3baf37f008eb956d44",
-      "last_checked": "2026-03-31T07:30:09.562099",
+      "last_checked": "2026-04-03T07:46:00.200393",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"99ab82b9e4ab7694fc82a0c0f2fc9466\"",
       "file_path": "documentation/Social/slservicetypesinaweibo.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypelinkedin.json": {
       "hash": "e3fe42464c0af212d3ee47919b334ae5a47b1cd91863a6dc60aac184b7a03cfe",
-      "last_checked": "2026-03-31T07:30:09.810158",
+      "last_checked": "2026-04-03T07:46:00.380963",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"caeec47cca54a2720efe25e72efafc0b\"",
       "file_path": "documentation/Social/slservicetypelinkedin.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypetencentweibo.json": {
       "hash": "88dbb98fdbe99cdf640aecc59be4fea82144cfcd3e5f2f58199b3c8e8c46b43d",
-      "last_checked": "2026-03-31T07:30:09.864861",
+      "last_checked": "2026-04-03T07:46:00.698759",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"80b222ff2b306dbf2089a4a6d10ae8f3\"",
       "file_path": "documentation/Social/slservicetypetencentweibo.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/perform(handler:).json": {
       "hash": "21fe9ba16c5b684da5b31e0efac870d85334aa5f0cf41996159b88de75f73430",
-      "last_checked": "2026-03-31T07:30:09.939130",
+      "last_checked": "2026-04-03T07:46:00.893940",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"92e7b046eb32de4c1578d7ab35e5b803\"",
       "file_path": "documentation/Social/slrequest/perform-handler.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequesthandler.json": {
       "hash": "7f6508363db0c7717b7926ae9e54f8f0455754cf469ad5ddfe5e3c5464ff548a",
-      "last_checked": "2026-03-31T07:30:09.993906",
+      "last_checked": "2026-04-03T07:46:01.035518",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"353d057d89d54554816a8f2d151d04a7\"",
       "file_path": "documentation/Social/slrequesthandler.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/account.json": {
       "hash": "f44636688561dd4b36ce2986415005857d4059bb04bbb63e8f6474ad28ba255a",
-      "last_checked": "2026-03-31T07:30:10.130146",
+      "last_checked": "2026-04-03T07:46:01.159449",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"236689ab9f532788e1cf350309f8b872\"",
       "file_path": "documentation/Social/slrequest/account.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/preparedurlrequest().json": {
       "hash": "36e8ae816c10e16ffcc87c80b22cdda331aaf99c3038413462ee9877457fbc87",
-      "last_checked": "2026-03-31T07:30:10.188943",
+      "last_checked": "2026-04-03T07:46:01.318269",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"d92c36d4631983a3910d9f3fd20eee02\"",
       "file_path": "documentation/Social/slrequest/preparedurlrequest.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/requestmethod.json": {
       "hash": "9077a7f4be3cf7307453e2b06b787bc825c8c1ee03e993b87f8530e10e84ccb2",
-      "last_checked": "2026-03-31T07:30:10.243751",
+      "last_checked": "2026-04-03T07:46:01.444432",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"233d09704b2af9fac3713016881e22a2\"",
       "file_path": "documentation/Social/slrequest/requestmethod.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod.json": {
       "hash": "7f63430d7b9897cb5271f08fbaf2c06f8652691d2db181e07e0aabb533402a18",
-      "last_checked": "2026-03-31T07:30:10.315315",
+      "last_checked": "2026-04-03T07:46:01.623831",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"3d65db09b070eb03796a41cd4362e63a\"",
       "file_path": "documentation/Social/slrequestmethod.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/url.json": {
       "hash": "bfb58aa6281290578b4a5ae31f50c026ea27c7f7368b177d3d9dc09e173db67b",
-      "last_checked": "2026-03-31T07:30:10.374176",
+      "last_checked": "2026-04-03T07:46:01.820226",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"dcd6a3b481c3dc0e33f553a8bc9babb2\"",
       "file_path": "documentation/Social/slrequest/url.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/parameters.json": {
       "hash": "446cf7aeb364ca55497469a5d1c0d6cba7fec11ba025848d924cdadfdaf8da33",
-      "last_checked": "2026-03-31T07:30:10.445399",
+      "last_checked": "2026-04-03T07:46:01.960277",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"2f440f025b73ba6d06100962123ce8b3\"",
       "file_path": "documentation/Social/slrequest/parameters.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/addmultipartdata(_:withname:type:filename:).json": {
       "hash": "d9e23e458f2485e339b8ad1d09fd3b847c1c7fd7d14a9a2fd9b0907e8cc86804",
-      "last_checked": "2026-03-31T07:30:10.551831",
+      "last_checked": "2026-04-03T07:46:02.093491",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"f74505a0f871d3b920466c37b674f446\"",
       "file_path": "documentation/Social/slrequest/addmultipartdata-withnametypefilename.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/addmultipartdata(_:withname:type:).json": {
       "hash": "e1b67ae5c8b22f13a62feb262c98adba3c46f4f365cdd432a2e3072219725009",
-      "last_checked": "2026-03-31T07:30:10.781560",
+      "last_checked": "2026-04-03T07:46:02.457779",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"04e8e406f1a9f094123918b876a45045\"",
       "file_path": "documentation/Social/slrequest/addmultipartdata-withnametype.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/init().json": {
       "hash": "8a21a3c80fa5307fa2eb743582f423cd9551aae18393e8971bc664e3e1fcffc6",
-      "last_checked": "2026-03-31T07:30:10.832846",
+      "last_checked": "2026-04-03T07:46:02.623563",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"36cd2c3da8c1b472248d20c53179296e\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/init.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/taphandler.json": {
       "hash": "352c17faf18783fc07db81031033437141df343599172fb08564abdfeca2ae67",
-      "last_checked": "2026-03-31T07:30:10.938379",
+      "last_checked": "2026-04-03T07:46:02.766062",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"31838222dba0c2888f470aa67771dbe5\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/taphandler.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitemtaphandler.json": {
       "hash": "23e6aac84539d2a156ecc86640389b898bfca2357c5fb2f42ed3edcbc117997d",
-      "last_checked": "2026-03-31T07:30:11.006928",
+      "last_checked": "2026-04-03T07:46:02.938454",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"9f371c5d3e2dc76db6a3ed329f9ad52b\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitemtaphandler.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/title.json": {
       "hash": "37dcdd0fc10ce36a7ca2db8cd7dcfd837e92d2b2fb4257c13a245058f3af720a",
-      "last_checked": "2026-03-31T07:30:11.067765",
+      "last_checked": "2026-04-03T07:46:03.110858",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"f307da21ba18ae800457670088e3f804\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/title.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/value.json": {
       "hash": "983658337c380b0541b9a83eabbdb8a791829a28f55b20bf68bd0743d8eddb63",
-      "last_checked": "2026-03-31T07:30:11.130328",
+      "last_checked": "2026-04-03T07:46:03.293047",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"63bac2a9c703fcf6641306e24024b5d1\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/value.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/valuepending.json": {
       "hash": "b134e6912a7f24cbcfd2a7c1d9a40025fdc68c371b771d88963ad36f49c41004",
-      "last_checked": "2026-03-31T07:30:11.243196",
+      "last_checked": "2026-04-03T07:46:03.469932",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"d98b7bc7755520ff5d6ada44e4b5edc9\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/valuepending.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult/cancelled.json": {
       "hash": "b8d92dedfb71bcc5b830d07e82f0d9759dd098ac0da76dde474c78a7e6088648",
-      "last_checked": "2026-03-31T07:30:11.298751",
+      "last_checked": "2026-04-03T07:46:03.606510",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"35ac3c490fc4f335d52d791462bcc916\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/cancelled.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult/done.json": {
       "hash": "4fefc53f52eee36632d17120996c4eb099bf08aa0e7ac13d44cbbc4f95835365",
-      "last_checked": "2026-03-31T07:30:11.425337",
+      "last_checked": "2026-04-03T07:46:03.767092",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"b0ca192c9401d4769e59d055040bbdb9\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/done.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult/init(rawvalue:).json": {
       "hash": "c56e9572c4a65b5472736b378196c03bd5f461f788969cfd855b0a871600790c",
-      "last_checked": "2026-03-31T07:30:11.478630",
+      "last_checked": "2026-04-03T07:46:03.953197",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"f610c2ff196098acb0dea25f26c5e923\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/init-rawvalue.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/get.json": {
       "hash": "ac41d1abe30c35ec40277f5dba426b62eb876ab0a0f09178f05abbbaf915c076",
-      "last_checked": "2026-03-31T07:30:11.542038",
+      "last_checked": "2026-04-03T07:46:04.141474",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"8b19efd28489575ac2bec9fd283244cb\"",
       "file_path": "documentation/Social/slrequestmethod/get.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/post.json": {
       "hash": "d519c702c45125e61c58a7287397c5a4042053189285b9b4302430b17198298f",
-      "last_checked": "2026-03-31T07:30:11.597337",
+      "last_checked": "2026-04-03T07:46:04.327712",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"a9679a06a2fe63b81c91a4ee52dfa9a4\"",
       "file_path": "documentation/Social/slrequestmethod/post.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/delete.json": {
       "hash": "483ba47ac4e15a9038fd56a48293a476d075c29f47a3d31b2de0f739a8a7a752",
-      "last_checked": "2026-03-31T07:30:11.677959",
+      "last_checked": "2026-04-03T07:46:04.517646",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"5c7a4ea4ad656f18ddc1b131e5f5ec49\"",
       "file_path": "documentation/Social/slrequestmethod/delete.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/put.json": {
       "hash": "edc3a0b1f6dc4bd849571bcc641b2c7e3d06715ec5b8d0a4e52f94537cdf8538",
-      "last_checked": "2026-03-31T07:30:11.787016",
+      "last_checked": "2026-04-03T07:46:04.651318",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"c865ea26089a15c4757002f3ab0338a5\"",
       "file_path": "documentation/Social/slrequestmethod/put.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/init(rawvalue:).json": {
       "hash": "781c4cc24262e5e8cb2db35b042bbfd397f0691b0dc1528692c2ba6876bf0057",
-      "last_checked": "2026-03-31T07:30:11.871833",
+      "last_checked": "2026-04-03T07:46:04.806586",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:30:05.990618",
+      "session_id": "2026-04-03T07:45:52.671765",
       "etag": "W/\"11e9a344a9150f8152cabd6e096d92f9\"",
       "file_path": "documentation/Social/slrequestmethod/init-rawvalue.md"
     },

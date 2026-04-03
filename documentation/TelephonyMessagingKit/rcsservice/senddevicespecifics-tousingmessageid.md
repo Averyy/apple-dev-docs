@@ -27,6 +27,13 @@ Call this method after the person using the app selects a [`RCSService.Business.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.
 
+## See Also
+
+- [func sendSuggestionResponse(RCSService.SuggestionResponse) async throws](rcsservice/sendsuggestionresponse(_:).md)
+  Sends a response for a business suggestion.
+- [RCSService.SuggestionResponse](rcsservice/suggestionresponse.md)
+  Structure representing a response to a business suggestion.
+
 
 ---
 

@@ -38,12 +38,16 @@ The three components of the string are a header, a payload, and a signature, in 
 
 - [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)
   Choose retention messages for customers in real time by implementing an endpoint on your server that responds to requests from the App Store server.
-- [Responding to real-time retention messaging requests](responding-to-realtime-retention-messaging-requests.md)
-  Select retention messages for customers in real time by responding to requests on your Get Retention Message endpoint.
-- [object DecodedRealtimeRequestBody](decodedrealtimerequestbody.md)
-  The decoded request body the App Store sends to your server to request a real-time retention message.
-- [object RealtimeResponseBody](realtimeresponsebody.md)
-  A response you provide to choose, in real time, a retention message the system displays to the customer.
+- [Configure Realtime URL](configure-realtime-url.md)
+  Configures the URL for your Get Retention Message endpoint in the sandbox and production environments.
+- [Get Realtime URL](get-realtime-url.md)
+  Gets the URL for real-time messages that points to your Get Retention Message endpoint, which you previously configured.
+- [Delete Realtime URL](delete-realtime-url.md)
+  Deletes the URL for your Get Retention Message endpoint, in the sandbox or production environments.
+- [object RealtimeUrlRequest](realtimeurlrequest.md)
+  The request body for configuring the URL of your Get Retention Message endpoint.
+- [object RealtimeUrlResponse](realtimeurlresponse.md)
+  The response body that contains the URL for your Get Retention Message endpoint.
 
 
 ---

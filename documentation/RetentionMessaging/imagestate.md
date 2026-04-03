@@ -26,6 +26,8 @@ Call [`Get Image List`](get-image-list.md) to get the list of images and their c
 
 - [type imageIdentifier](imageidentifier.md)
   A unique identifier for an image that you provide when you upload the image.
+- [type imageSize](imagesize.md)
+  The size of an image.
 - [type altText](alttext.md)
   The alternative text for a corresponding image.
 

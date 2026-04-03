@@ -25,6 +25,8 @@ case deliveryFailed
   The carrier used a non-CPM technology to deliver the message.
 - [RCSMessage.Disposition.interworkingFailed](rcsmessage/disposition/interworkingfailed.md)
   The carrier attempted to use a non-CPM technology to deliver the message, but failed.
+- [RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure](rcsmessage/disposition/deliveryfailedduetodecryptionfailure.md)
+  The recipient device was unable to decrypt the encrypted message.
 
 
 ---

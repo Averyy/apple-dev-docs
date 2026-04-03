@@ -6,7 +6,7 @@
 An object that enumerates the test configuration parameters.
 
 **Availability**:
-- Retention Messaging 1.3+
+- Retention Messaging API 1.3+
 
 ## Declaration
 
@@ -14,10 +14,16 @@ An object that enumerates the test configuration parameters.
 object PerformanceTestConfig
 ```
 
+#### Overview
+
+The [`Initiate Performance Test`](initiate-performance-test.md) endpoint returns the `PerformanceTestConfig` object in the [`PerformanceTestResponse`](performancetestresponse.md) response.
+
+When you call the [`Initiate Performance Test`](initiate-performance-test.md) endpoint to start a performance test, the test sends multiple requests and runs for a period of time. To calculate the time when the test concludes, add the `totalDuration` to the time, in milliseconds, you initiated the test.
+
 ## Properties
 
 - `maxConcurrentRequests` (int64) *(required)*: The maximum number of concurrent requests the API allows.
-- `responseTimeThreshold` (int64) *(required)*: The response time threshold in milliseconds.
+- `responseTimeThreshold` (int64) *(required)*: The maximum time your server has to respond when the system calls your `Get Retention Message` endpoint in the sandbox environment.
 - `successRateThreshold` (int32) *(required)*: The success rate threshold percentage.
 - `totalDuration` (int64) *(required)*: The total duration of the test in milliseconds.
 - `totalRequests` (integer) *(required)*: The total number of requests to make during the test.
@@ -25,7 +31,7 @@ object PerformanceTestConfig
 ## See Also
 
 - [object PerformanceTestRequest](performancetestrequest.md)
-  The object you provide to a performance test request that contains the test’s transaction identifier.
+  The request object you provide for a performance test that contains an original transaction identifier.
 - [object PerformanceTestResponse](performancetestresponse.md)
   The performance test response object.
 - [object PerformanceTestResponseTimes](performancetestresponsetimes.md)

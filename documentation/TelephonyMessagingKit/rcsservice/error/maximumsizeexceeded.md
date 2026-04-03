@@ -35,6 +35,8 @@ case maximumSizeExceeded
   The framework encountered an unknown internal error.
 - [RCSService.Error.notFound](rcsservice/error/notfound.md)
   A required resource wasn’t found.
+- [RCSService.Error.endToEndEncryptionNotSupported](rcsservice/error/endtoendencryptionnotsupported.md)
+  The operation does not support end-to-end encryption.
 
 
 ---

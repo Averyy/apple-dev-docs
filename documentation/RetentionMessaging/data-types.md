@@ -11,6 +11,8 @@ Refer to these data types for request and response payloads.
   A unique identifier for an image that you provide when you upload the image.
 - [type imageState](imagestate.md)
   The approval state of an image.
+- [type imageSize](imagesize.md)
+  The size of an image.
 - [type altText](alttext.md)
   The alternative text for a corresponding image.
 ### Messages
@@ -20,8 +22,14 @@ Refer to these data types for request and response payloads.
   The approval state of the message.
 - [type body](body.md)
   The body text you provide for a message.
+- [object BulletPoint](bulletpoint.md)
+  The text and its bullet-point image to include in a retention message’s bulleted list.
+- [type bulletPointText](bulletpointtext.md)
+  The text you provide for an individual bullet-list item.
 - [type header](header.md)
-  The header text you provide for a message.
+  The header text you provide that appears above the body text in a message.
+- [type headerPosition](headerposition.md)
+  The position where the header text appears in a message.
 ### Default message configuration
 - [type locale](locale.md)
   A string that represents a locale short code.
@@ -56,14 +64,14 @@ Refer to these data types for request and response payloads.
   A promotional offer and message you provide in a real-time response to your Get Retention Message endpoint.
 - [object advancedCommerceInfo](advancedcommerceinfo.md)
   A response object you provide to present an offer or switch-plan recommendation message.
-### Advanced commerce information
-- [type advancedCommerceData](advancedcommercedata.md)
-  A Base64-encoded JSON object which contains a JWS with information describing an offer or switch-plan recommendation.
+### Real-time URL
+- [type realtimeURL](realtimeurl.md)
+  A string that contains the URL you provide for your Get Retention Message endpoint.
 ### Performance testing
 - [object PerformanceTestConfig](performancetestconfig.md)
   An object that enumerates the test configuration parameters.
 - [object PerformanceTestRequest](performancetestrequest.md)
-  The object you provide to a performance test request that contains the test’s transaction identifier.
+  The request object you provide for a performance test that contains an original transaction identifier.
 - [object PerformanceTestResponse](performancetestresponse.md)
   The performance test response object.
 - [object PerformanceTestResponseTimes](performancetestresponsetimes.md)
@@ -83,7 +91,10 @@ Refer to these data types for request and response payloads.
   The promotional-offer signature you generate in a JSON Web Signature (JWS) format.
 ### Promotional offer signature V1
 - [object promotionalOfferSignatureV1](promotionaloffersignaturev1.md)
-  The promotional offer signature you generate using an earlier signature version.
+  The promotional-offer signature you generate using an earlier signature version.
+### Advanced commerce information
+- [type advancedCommerceData](advancedcommercedata.md)
+  A Base64-encoded JSON object which contains a JWS with information describing an offer or switch-plan recommendation.
 
 
 ---

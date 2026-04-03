@@ -33,7 +33,7 @@ HTTP GET https://api.searchads.apple.com/api/v5/custom-reports
       "startTime": "2024-10-14",
       "endTime": "2024-11-12",
       "granularity": "DAILY",
-      "downloadUri": "http://blobstore.apple.com...",
+      "downloadUri": "https://ads-...us-west-2.amazonaws.com/ext-sov-reports/",
       "dimensions": [
         "appName",
         "adamId",

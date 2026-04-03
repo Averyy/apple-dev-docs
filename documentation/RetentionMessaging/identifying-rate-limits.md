@@ -12,16 +12,20 @@ The following table lists the rate limits for each endpoint in the production en
 
 | Endpoint | Rate limit (per second) |
 | --- | --- |
-| [`Configure Default Message`](configure-default-message.md) | 1 |
+| [`Configure Default Message`](configure-default-message.md) | 10 |
+| [`Configure Realtime URL`](configure-realtime-url.md) | 1 |
 | [`Delete Default Message`](delete-default-message.md) | 1 |
-| [`Upload Image`](upload-image.md) | 1 |
 | [`Delete Image`](delete-image.md) | 1 |
-| [`Get Image List`](get-image-list.md) | 1 |
-| [`Upload Message`](upload-message.md) | 1 |
 | [`Delete Message`](delete-message.md) | 1 |
+| [`Delete Realtime URL`](delete-realtime-url.md) | 1 |
+| [`Get Default Message`](get-default-message.md) | 1 |
+| [`Get Image List`](get-image-list.md) | 1 |
 | [`Get Message List`](get-message-list.md) | 1 |
-| [`Initiate Performance Test`](initiate-performance-test.md) | 1 |
 | [`Get Performance Test Results`](get-performance-test-results.md) | 1 |
+| [`Get Realtime URL`](get-realtime-url.md) | 1 |
+| [`Initiate Performance Test`](initiate-performance-test.md) | 1 |
+| [`Upload Image`](upload-image.md) | 1 |
+| [`Upload Message`](upload-message.md) | 1 |
 
 The rate limits in the sandbox environment are 10% of the limits in the table above.
 

@@ -27,7 +27,7 @@ struct DispositionNotification
   An enumeration that represents the disposition of an RCS message, such as whether delivery succeeded or failed.
 - [let disposedMessageID: RCSMessageID](rcsmessage/dispositionnotification/disposedmessageid.md)
   The message identifier of the message.
-### Instance Properties
+### Supporting RCS encryption
 - [var isEndToEndEncrypted: Bool](rcsmessage/dispositionnotification/isendtoendencrypted.md)
   A Boolean value indicating whether this message is end-to-end encrypted.
 

@@ -29,8 +29,12 @@ The [`Upload Message`](upload-message.md) endpoint returns this error when the [
   An error that indicates the alternative text for an image is too long.
 - [object BodyTooLongError](bodytoolongerror.md)
   An error that indicates the body text is too long.
+- [object DefaultMessageNotFoundError](defaultmessagenotfounderror.md)
+  An error that indicates a default message isn’t configured.
 - [object ExistingPerformanceTestRunError](existingperformancetestrunerror.md)
   An error that indicates an error with an existing test.
+- [object ForbiddenNoPassingTestError](forbiddennopassingtesterror.md)
+  An error that indicates that passing a performance test is required before you can set a URL for the production environment.
 - [object HeaderTooLongError](headertoolongerror.md)
   An error that indicates the header text is too long.
 - [object ImageAlreadyExistsError](imagealreadyexistserror.md)
@@ -51,10 +55,6 @@ The [`Upload Message`](upload-message.md) endpoint returns this error when the [
   An error that indicates the product ID is invalid.
 - [object InvalidRequestIdError](invalidrequestiderror.md)
   An error that indicates the request ID is invalid.
-- [object MaximumNumberOfImagesReachedError](maximumnumberofimagesreachederror.md)
-  An error that indicates when you reach the maximum number of uploaded images.
-- [object MaximumNumberOfMessagesReachedError](maximumnumberofmessagesreachederror.md)
-  An error that indicates when you reach the maximum number of uploaded messages.
 
 
 ---

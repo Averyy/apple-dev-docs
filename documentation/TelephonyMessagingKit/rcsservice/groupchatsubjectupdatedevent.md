@@ -26,7 +26,7 @@ struct GroupChatSubjectUpdatedEvent
   The new subject for the group.
 - [let changedBy: RCSHandle.URI](rcsservice/groupchatsubjectupdatedevent/changedby.md)
   Handle of device that performed the operation.
-### Instance Properties
+### Supporting RCS encryption
 - [let isEndToEndEncrypted: Bool](rcsservice/groupchatsubjectupdatedevent/isendtoendencrypted.md)
   A Boolean value that indicates whether the associated group is end-to-end encrypted.
 

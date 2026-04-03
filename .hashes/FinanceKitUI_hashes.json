@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-03-31T07:20:03.875816",
+    "last_updated": "2026-04-03T07:28:11.891409",
     "total_pages": 3168,
-    "session_id": "2026-03-31T07:20:01.231011"
+    "session_id": "2026-04-03T07:28:06.083525"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/FinanceKitUI.json": {
       "hash": "821a93725433d26561573c6d0d30f549968d54712c02d29d2097287ab801bb9d",
-      "last_checked": "2026-03-31T07:20:01.500744",
+      "last_checked": "2026-04-03T07:28:06.396254",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"e3825fb6bca03b8bc1381bf50d4ce036\"",
       "file_path": "documentation/FinanceKitUI/FinanceKitUI.md"
     },
     "https://developer.apple.com/documentation/FinanceKitUI": {
       "hash": "821a93725433d26561573c6d0d30f549968d54712c02d29d2097287ab801bb9d",
-      "last_checked": "2026-03-31T07:20:01.399374",
+      "last_checked": "2026-04-03T07:28:06.290571",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"e3825fb6bca03b8bc1381bf50d4ce036\"",
       "file_path": "documentation/FinanceKitUI/FinanceKitUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/addordertowalletbutton.json": {
       "hash": "d0576762bceee63000661db3780e0059ab8e8b80677b8abadf7e4a9629cc3b3b",
-      "last_checked": "2026-03-31T07:20:01.718237",
+      "last_checked": "2026-04-03T07:28:06.617637",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"9f1497a66ebb3cbe5e578ebdd8762a43\"",
       "file_path": "documentation/FinanceKitUI/addordertowalletbutton.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/addordertowalletbuttonstyle.json": {
       "hash": "5bacda3c4f2bf946a1edf2a89c81e712727145741d230e5d01667e68909b4a30",
-      "last_checked": "2026-03-31T07:20:01.825162",
+      "last_checked": "2026-04-03T07:28:06.802019",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"6fe71c75f64594b758a4488744f86447\"",
       "file_path": "documentation/FinanceKitUI/addordertowalletbuttonstyle.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextension.json": {
       "hash": "29d191045310ab4f7066068e8f5f75cd619d12aad48e02c4d969c279e0caa29a",
-      "last_checked": "2026-03-31T07:20:01.923654",
+      "last_checked": "2026-04-03T07:28:06.975096",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"5722c99dc923807635f6230806de0024\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextension.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextensionproviding.json": {
       "hash": "b5c69e4106d4fa282d0875a467ca9ceb6f773ced5e7e45c53d0f609ce10609b7",
-      "last_checked": "2026-03-31T07:20:02.005203",
+      "last_checked": "2026-04-03T07:28:07.291888",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"e7ff257eff8cd65da7fe56aa3bf54f60\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextensionproviding.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextensionscene.json": {
       "hash": "93f24d471e5c53072236a23f633166d337408f1b58a4ceb6d3671e1641229f6e",
-      "last_checked": "2026-03-31T07:20:02.099124",
+      "last_checked": "2026-04-03T07:28:07.483344",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"0e30c3416885d8079013dc03a888ad7d\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextensionscene.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationrequest.json": {
       "hash": "a729486d80f6c8d007a42e4e6844ce7d3ddb570a300da1704aeb2c188b42a26e",
-      "last_checked": "2026-03-31T07:20:02.175960",
+      "last_checked": "2026-04-03T07:28:07.666464",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"fd05d4485c3dddd58adfc3c6b87d42ce\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationrequest.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationresult.json": {
       "hash": "47fa2dfe50ee0ed0fe1d23775b5e7e469eee4019f0dfa4f700f5426a8a91cc9f",
-      "last_checked": "2026-03-31T07:20:02.256510",
+      "last_checked": "2026-04-03T07:28:07.990099",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"886003aba46cea7d6441d74e6e090969\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationresult.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextensionauthorizationscene.json": {
       "hash": "f64416221f6c1244b7065d8e7b5dd39f6e4377ca58fa51880827b2287b4b20e8",
-      "last_checked": "2026-03-31T07:20:02.345036",
+      "last_checked": "2026-04-03T07:28:08.341761",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"004015ee4cd8188063dc973ca2cd8e3a\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextensionauthorizationscene.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/transactionpicker.json": {
       "hash": "62b3d2751179d08ea76434092a61586c75e179bef1d23a788ccdd4928c29f8f3",
-      "last_checked": "2026-03-31T07:20:02.440541",
+      "last_checked": "2026-04-03T07:28:08.486177",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"c1718bdab0eafc0584dfd7f573c856d8\"",
       "file_path": "documentation/FinanceKitUI/transactionpicker.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationparams.json": {
       "hash": "fea443a3911611c3751561a185af721f9985f581ccbe507f30c1bf474ccd8a66",
-      "last_checked": "2026-03-31T07:20:02.508552",
+      "last_checked": "2026-04-03T07:28:08.623211",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"3726f9baa0e4df2f43e69409e12f7d2d\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationparams.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/addordertowalletbutton/init(signedarchive:oncompletion:).json": {
       "hash": "955e7b3a1d516d1b667d06e15dc6901d31587280b90ccdeb4daae98571584499",
-      "last_checked": "2026-03-31T07:20:02.615905",
+      "last_checked": "2026-04-03T07:28:08.810379",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"d4f6848c3a1a4280d73042ee9b5df041\"",
       "file_path": "documentation/FinanceKitUI/addordertowalletbutton/init-signedarchiveoncompletion.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/addordertowalletbuttonstyle/black.json": {
       "hash": "ade86f1db08610d73a03792d232bf6ffd656478da61004887509f092073923a4",
-      "last_checked": "2026-03-31T07:20:02.845459",
+      "last_checked": "2026-04-03T07:28:08.992159",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"9e5ef60fdaf8adb91fb5674a7f8325a1\"",
       "file_path": "documentation/FinanceKitUI/addordertowalletbuttonstyle/black.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/addordertowalletbuttonstyle/blackoutline.json": {
       "hash": "f3319d6d03f1ffc3aa7e366dc424d4123773a48424e0a5b03e8a9b1f9bb7b0e7",
-      "last_checked": "2026-03-31T07:20:02.899656",
+      "last_checked": "2026-04-03T07:28:09.121839",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"a85920337dd7cdb9e8851065ad863c22\"",
       "file_path": "documentation/FinanceKitUI/addordertowalletbuttonstyle/blackoutline.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextension/body-swift.associatedtype.json": {
       "hash": "dc468a178e2146705e395a4391493df11e1c83c642c66946c31cc1a791a66bad",
-      "last_checked": "2026-03-31T07:20:02.969052",
+      "last_checked": "2026-04-03T07:28:09.299673",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"711a5447aef0ec3307fd77642bd6aa54\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextension/body-swiftassociatedtype.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextension/body-swift.property.json": {
       "hash": "c7bb6c13d7283b5e21d1e0591fad6ab7d238464a83664150b0e98405938260ac",
-      "last_checked": "2026-03-31T07:20:03.069672",
+      "last_checked": "2026-04-03T07:28:09.597200",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"14b185fa7c83972b61f5d8c14ca1917b\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextension/body-swiftproperty.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextensionproviding/authorize(_:).json": {
       "hash": "09eef81814978b71d7ac76e35e922a5b2fe385732fb2f5adad2efc4baf69e718",
-      "last_checked": "2026-03-31T07:20:03.122409",
+      "last_checked": "2026-04-03T07:28:09.747372",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"0b0aaaac52fb9494fd788cb21187e57d\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextensionproviding/authorize.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationrequest/params.json": {
       "hash": "f2428399ca3374f2e68bc59e3414aded0ef0953789e57362c96ca74cafafa6e7",
-      "last_checked": "2026-03-31T07:20:03.252831",
+      "last_checked": "2026-04-03T07:28:09.912228",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"8caadee6ffe4736063061ebd9872aa43\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationrequest/params.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationrequest/complete(authorizationresult:).json": {
       "hash": "7137529fad0ea2ca829a6e585955c40d187fdc68bb6fbec748d37c11267c63ed",
-      "last_checked": "2026-03-31T07:20:03.348853",
+      "last_checked": "2026-04-03T07:28:10.245233",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"88e54db447257710ef3706e63c3c7990\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationrequest/complete-authorizationresult.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationrequest/complete(error:).json": {
       "hash": "12807ee4fc6623eaf15d894c510238a0f7d9743d60cf8ec73a7e2996013d3a0e",
-      "last_checked": "2026-03-31T07:20:03.415023",
+      "last_checked": "2026-04-03T07:28:10.388413",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"cf7c5036e194b968a1a598c849984bbe\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationrequest/complete-error.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationrequest/completionhandler.json": {
       "hash": "1a7643969d48be229d30af3cd002c1750f6875e6ab23fd08b5fff9090f5c0d88",
-      "last_checked": "2026-03-31T07:20:03.506051",
+      "last_checked": "2026-04-03T07:28:10.572034",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"b7bcfa00556d4181f86c1a534d22ae4c\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationrequest/completionhandler.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationrequest/completionhandlerresult.json": {
       "hash": "612ff68e3bc4e3fbe7db4061fb90f1676ff4f062319cde6754ae8130bcf5017a",
-      "last_checked": "2026-03-31T07:20:03.595344",
+      "last_checked": "2026-04-03T07:28:10.888525",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"ab7459644ee13e9acf23d8154e04a815\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationrequest/completionhandlerresult.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationresult/init(params:).json": {
       "hash": "77ab28750c98bf3bd41d52b6247199eb1b6d3258d6498bb34dda7000ce250aae",
-      "last_checked": "2026-03-31T07:20:03.648080",
+      "last_checked": "2026-04-03T07:28:11.067287",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"e6d4e6b335ba071e01589b769afcd7ae\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationresult/init-params.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionextensionauthorizationresult/params.json": {
       "hash": "971d805bca5933ef26be887840e87f4de09fbbc0a5bd697a9585a94db7ce2479",
-      "last_checked": "2026-03-31T07:20:03.734737",
+      "last_checked": "2026-04-03T07:28:11.253110",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"cbc1d846e2119ced6555098e70b9a3d5\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionextensionauthorizationresult/params.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/financialconnectionuiextensionauthorizationscene/init(content:).json": {
       "hash": "a3065184f713cf9a16b295a8bf82d34ec5c45580e53ba4a2cd23ff48c6405e65",
-      "last_checked": "2026-03-31T07:20:03.816647",
+      "last_checked": "2026-04-03T07:28:11.561402",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"dc36f6bb93d89928080e9dceb14cec94\"",
       "file_path": "documentation/FinanceKitUI/financialconnectionuiextensionauthorizationscene/init-content.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/financekitui/transactionpicker/init(selection:label:).json": {
       "hash": "36e3c5cc3a1caeb14532e5456768fa2905ed8b03d07d6e112d6a91a029bc1f01",
-      "last_checked": "2026-03-31T07:20:03.874874",
+      "last_checked": "2026-04-03T07:28:11.874401",
       "status": "unchanged",
-      "session_id": "2026-03-31T07:20:01.231011",
+      "session_id": "2026-04-03T07:28:06.083525",
       "etag": "W/\"96f4e986830287c7ed40b160a87fbaad\"",
       "file_path": "documentation/FinanceKitUI/transactionpicker/init-selectionlabel.md"
     },

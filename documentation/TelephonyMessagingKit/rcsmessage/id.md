@@ -27,6 +27,8 @@ let id: RCSMessageID
   An enumeration that represents an RCS destination or sender.
 - [struct RCSMessageID](rcsmessageid.md)
   A structure that represents an RCS message identifier.
+- [let originalID: RCSMessageID?](rcsmessage/originalid.md)
+  The original message ID of this message.
 
 
 ---

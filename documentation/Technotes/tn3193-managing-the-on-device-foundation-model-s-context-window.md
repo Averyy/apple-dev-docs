@@ -20,6 +20,8 @@ When you interact with a LLM, the model converts your input to a token sequence,
 
 With the Foundation Models framework, you interact with the model using [`Instructions`](https://developer.apple.com/documentation/FoundationModels/Instructions), [`Prompt`](https://developer.apple.com/documentation/FoundationModels/Prompt), [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool), and [`Generable`](https://developer.apple.com/documentation/FoundationModels/Generable) types, which are passed to the model as part of the input. All the input and response in the generation process contribute tokens to the context window of the current language model session, including instructions, all prompts, the information of tools (schemas, input, and output), `Generable` schemas, and all the model’s responses.
 
+To understand how your input consumes tokens, use [`tokenCount(for:)`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/tokenCount(for:)) to retrieve the token count for your instructions, prompts, tools, [`schema`](https://developer.apple.comhttps://developer.apple.com/documentation/foundationmodels/generationschema), and [`transcript entries`](https://developer.apple.comhttps://developer.apple.com/documentation/foundationmodels/transcript/entry).
+
 The Foundation Models instrument allows you to profile your app to observe token consumption while your app is running. To use the instrument:
 
 1. In Xcode, open your project and click Product > Profile to launch Instruments.
@@ -125,6 +127,7 @@ For an example that includes instructions and tool calling, see [`Generate dynam
 
 #### Revision History
 
+- **2026-03-31** Updated with the new API introduced in iOS, iPadOS, macOS, visionOS 26.4.
 - **2025-10-06** First published.
 
 ## See Also

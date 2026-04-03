@@ -3,7 +3,7 @@
 **Framework**: Retention Messaging API  
 **Kind**: httpRequest
 
-Delete a previously uploaded image.
+Deletes a previously uploaded image.
 
 **Availability**:
 - Retention Messaging API 1.0+
@@ -31,9 +31,9 @@ This endpoint isn’t idempotent. If the system doesn’t find the image, this e
 ## See Also
 
 - [Upload Image](upload-image.md)
-  Upload an image to use for retention messaging.
+  Uploads an image to use for retention messaging.
 - [Get Image List](get-image-list.md)
-  Get the image identifier and state for all uploaded images.
+  Gets the image identifier and state for all uploaded images.
 - [object GetImageListResponse](getimagelistresponse.md)
   A response that contains status information for all images.
 - [object GetImageListResponseItem](getimagelistresponseitem.md)

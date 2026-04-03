@@ -22,6 +22,8 @@ You create a UUID to identify an image when you call [`Upload Image`](upload-ima
 
 - [type imageState](imagestate.md)
   The approval state of an image.
+- [type imageSize](imagesize.md)
+  The size of an image.
 - [type altText](alttext.md)
   The alternative text for a corresponding image.
 

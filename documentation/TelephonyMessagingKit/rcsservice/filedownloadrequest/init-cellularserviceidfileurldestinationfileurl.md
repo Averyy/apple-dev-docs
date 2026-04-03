@@ -21,6 +21,11 @@ init(cellularServiceID: CellularServiceID, fileURL: URL, destinationFileURL: URL
 - `fileURL`: The URL of the file to download.
 - `destinationFileURL`: The destination path, including the file name, of the downloaded file.
 
+## See Also
+
+- [init(cellularServiceID: CellularServiceID, fileMetadata: RCSFileTransferMetadata, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:filemetadata:destinationfileurl:).md)
+  Creates a download request instance.
+
 
 ---
 

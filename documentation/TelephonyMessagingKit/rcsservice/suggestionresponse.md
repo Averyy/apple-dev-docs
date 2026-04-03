@@ -47,6 +47,8 @@ struct SuggestionResponse
 
 - [func sendSuggestionResponse(RCSService.SuggestionResponse) async throws](rcsservice/sendsuggestionresponse(_:).md)
   Sends a response for a business suggestion.
+- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
+  Sends device specifics in response to a suggested action to send device specifics.
 
 
 ---

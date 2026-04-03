@@ -6,7 +6,7 @@
 The status of the performance test.
 
 **Availability**:
-- Retention Messaging 1.3+
+- Retention Messaging API 1.3+
 
 ## Declaration
 
@@ -14,18 +14,12 @@ The status of the performance test.
 string PerformanceTestStatus
 ```
 
-#### Discussion
-
-- Possible Values - PENDING: The test is still pending.
-- PASS:  The test passed. For additional details, see the specific [`PerformanceTestResponse`](performancetestresponse.md) results.
-- FAIL: The test failed. For additional details, see the specific [`PerformanceTestResponse`](performancetestresponse.md) results.
-
 ## See Also
 
 - [object PerformanceTestConfig](performancetestconfig.md)
   An object that enumerates the test configuration parameters.
 - [object PerformanceTestRequest](performancetestrequest.md)
-  The object you provide to a performance test request that contains the test’s transaction identifier.
+  The request object you provide for a performance test that contains an original transaction identifier.
 - [object PerformanceTestResponse](performancetestresponse.md)
   The performance test response object.
 - [object PerformanceTestResponseTimes](performancetestresponsetimes.md)

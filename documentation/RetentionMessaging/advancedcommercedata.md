@@ -6,7 +6,7 @@
 A Base64-encoded JSON object which contains a JWS with information describing an offer or switch-plan recommendation.
 
 **Availability**:
-- Retention Messaging 1.2+
+- Retention Messaging API 1.2+
 
 ## Declaration
 

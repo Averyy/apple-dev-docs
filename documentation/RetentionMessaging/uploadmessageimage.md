@@ -20,19 +20,19 @@ object UploadMessageImage
 
 ## Properties
 
-- `imageIdentifier` (imageIdentifier): **(Required)** The unique identifier of an image.
-- `altText` (altText): **(Required)** The alternative text you provide for the corresponding image.
+- `imageIdentifier` (imageIdentifier) *(required)*: The unique identifier of an image.
+- `altText` (altText) *(required)*: The alternative text you provide for the corresponding image.
 
 ## See Also
 
 - [Upload Message](upload-message.md)
-  Upload a message to use for retention messaging.
+  Uploads a message to use for retention messaging.
 - [Delete Message](delete-message.md)
-  Delete a previously uploaded message.
+  Deletes a previously uploaded message.
 - [Get Message List](get-message-list.md)
-  Get the message identifier and state of all uploaded messages.
+  Gets the message identifier and state of all uploaded messages.
 - [object UploadMessageRequestBody](uploadmessagerequestbody.md)
-  The request body for uploading a message, which includes the message text and an optional image reference.
+  The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
 - [object GetMessageListResponse](getmessagelistresponse.md)
   A response that contains status information for all messages.
 - [object GetMessageListResponseItem](getmessagelistresponseitem.md)

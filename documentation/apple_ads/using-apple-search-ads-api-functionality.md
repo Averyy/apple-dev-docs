@@ -33,7 +33,7 @@ The following is an example POST request to [`Create a Campaign`](create-a-campa
 {
     "orgId": 40669820,
     "adChannelType": "SEARCH",
-    "supplySources": ["APPSTORE_SEARCH_RESULTS”],
+    "supplySources": ["APPSTORE_SEARCH_RESULTS"],
     "billingEvent": "TAPS",  
     "name": "campaign 1",
     "budgetAmount": {

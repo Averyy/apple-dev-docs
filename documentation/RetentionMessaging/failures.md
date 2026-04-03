@@ -6,7 +6,7 @@
 A map of server-to-server notification failure reasons and counts that represent the number of failures during a performance test.
 
 **Availability**:
-- Retention Messaging 1.3+
+- Retention Messaging API 1.3+
 
 ## Declaration
 
@@ -23,7 +23,7 @@ object Failures
 - [object PerformanceTestConfig](performancetestconfig.md)
   An object that enumerates the test configuration parameters.
 - [object PerformanceTestRequest](performancetestrequest.md)
-  The object you provide to a performance test request that contains the test’s transaction identifier.
+  The request object you provide for a performance test that contains an original transaction identifier.
 - [object PerformanceTestResponse](performancetestresponse.md)
   The performance test response object.
 - [object PerformanceTestResponseTimes](performancetestresponsetimes.md)

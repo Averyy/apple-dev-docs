@@ -25,6 +25,11 @@ Use this initializer when downloading end-to-end encrypted files.
 - `fileMetadata`: The file metadata containing the URL of the file to download.
 - `destinationFileURL`: The destination path, including the file name, of the downloaded file.
 
+## See Also
+
+- [init(cellularServiceID: CellularServiceID, fileURL: URL, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:fileurl:destinationfileurl:).md)
+  Creates a download request instance.
+
 
 ---
 

@@ -83,9 +83,6 @@ Xcode also includes several tools to help you rapidly develop and test your app:
   Get the resources you need to create software for Macs with Apple silicon.
 - [Application binary interfaces](application-binary-interfaces.md)
   Write assembly instructions that adhere to the application binary interfaces of Apple platforms.
-### Articles
-- [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
-  Let agents access your project and Xcode capabilities using the Model Context Protocol.
 
 
 ---

@@ -41,9 +41,16 @@ codex mcp add xcode -- xcrun mcpbridge
 
 To verify the configuration, enter `claude mcp list` or `codex mcp list` in Terminal.
 
-Optionally, add hints about Xcode and your project to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, in the location that the external agent uses. For more information on configuring agents that run inside Xcode, see doc:setting-up-coding-intelligence#Customize-the-Codex-and-Claude-Agent-environments.
+Optionally, add hints about Xcode and your project to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, in the location that the external agent uses. For more information on configuring agents that run inside Xcode, see [`Customize the Claude Agent and Codex environments`](setting-up-coding-intelligence#Customize-the-Claude-Agent-and-Codex-environments.md).
 
 Before prompting an external agent (outside of Xcode), be sure to open your project in Xcode.
+
+## See Also
+
+- [Setting up coding intelligence](setting-up-coding-intelligence.md)
+  Enable third-party coding tools that you want to use in the coding assistant.
+- [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
+  Generate code, fix bugs fast, and learn as you go with intelligence built directly into Xcode.
 
 
 ---

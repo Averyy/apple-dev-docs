@@ -34,7 +34,7 @@ struct FileUploadRequest
 ### Accessing upload metadata
 - [RCSService.FileUploadRequest.Metadata](rcsservice/fileuploadrequest/metadata.md)
   A structure that contains upload metadata from the content server.
-### Instance Properties
+### Supporting RCS encryption
 - [var isEndToEndEncrypted: Bool](rcsservice/fileuploadrequest/isendtoendencrypted.md)
   A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
 

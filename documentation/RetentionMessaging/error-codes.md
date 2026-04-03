@@ -11,8 +11,12 @@ Understand the error codes that Retention Messaging API responses return.
   An error that indicates the alternative text for an image is too long.
 - [object BodyTooLongError](bodytoolongerror.md)
   An error that indicates the body text is too long.
+- [object DefaultMessageNotFoundError](defaultmessagenotfounderror.md)
+  An error that indicates a default message isn’t configured.
 - [object ExistingPerformanceTestRunError](existingperformancetestrunerror.md)
   An error that indicates an error with an existing test.
+- [object ForbiddenNoPassingTestError](forbiddennopassingtesterror.md)
+  An error that indicates that passing a performance test is required before you can set a URL for the production environment.
 - [object HeaderTooLongError](headertoolongerror.md)
   An error that indicates the header text is too long.
 - [object ImageAlreadyExistsError](imagealreadyexistserror.md)
@@ -47,6 +51,27 @@ Understand the error codes that Retention Messaging API responses return.
   An error the API returns if the service can’t find the specified test run.
 - [object RateLimitExceededError](ratelimitexceedederror.md)
   An error that indicates the request exceeded the rate limit.
+- [object RealtimeUrlNotFoundError](realtimeurlnotfounderror.md)
+  An error that indicates that the URL for your endpoint isn’t configured.
+### Errors for bad requests
+- [object BadRequestAboveImageRequiresAnImageError](badrequestaboveimagerequiresanimageerror.md)
+  An error that indicates that no image object is included, but the request indicates that the header should be placed above the image.
+- [object BadRequestAppTransactionIdForUnsupportedEndpointError](badrequestapptransactionidforunsupportedendpointerror.md)
+  An error that indicates the endpoint doesn’t support app transaction identifiers instead of transaction identifiers.
+- [object BadRequestBulletPointTextTooLongError](badrequestbulletpointtexttoolongerror.md)
+  An error that indicates the text for a bullet point is too long.
+- [object BadRequestImageSizeError](badrequestimagesizeerror.md)
+  An error that indicates the image size provided is invalid.
+- [object BadRequestRealtimeUrlError](badrequestrealtimeurlerror.md)
+  An error that indicates the URL is invalid.
+- [object BadRequestTooManyBulletPointsError](badrequesttoomanybulletpointserror.md)
+  An error that indicates there are too many bullet points.
+- [object BadRequestTransactionIdError](badrequesttransactioniderror.md)
+  An error that indicates the transaction ID is invalid.
+- [object BadRequestTransactionIdNotOtidError](badrequesttransactionidnototiderror.md)
+  An error that indicates the transaction ID provided is not an original transaction ID.
+- [object BadRequestTransactionIdNotSupportedForFamilySharingError](badrequesttransactionidnotsupportedforfamilysharingerror.md)
+  An error that indicates that the endpoint doesn’t support transactions for products the customer receives through Family Sharing.
 ### Errors to retry
 - [object GeneralInternalError](generalinternalerror.md)
   An error that indicates a general internal error.

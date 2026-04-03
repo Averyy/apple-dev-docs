@@ -17,7 +17,7 @@ struct SecureSendReceipt
 
 ## Topics
 
-### Instance Properties
+### Inspecting receipt properties
 - [let id: UUID](rcsmessage/securesendreceipt/id.md)
   The identifier for the sent receipt.
 

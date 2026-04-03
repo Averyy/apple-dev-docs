@@ -28,7 +28,7 @@ struct GroupChatStartedEvent
   Creator of group.
 - [let subject: String](rcsservice/groupchatstartedevent/subject.md)
   The group’s subject.
-### Instance Properties
+### Supporting RCS encryption
 - [let isEndToEndEncrypted: Bool](rcsservice/groupchatstartedevent/isendtoendencrypted.md)
   A Boolean value that indicates whether the associated group is end-to-end encrypted.
 

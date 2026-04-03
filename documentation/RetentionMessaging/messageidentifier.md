@@ -24,8 +24,14 @@ You create the UUID to identify a message when you call [`Upload Message`](uploa
   The approval state of the message.
 - [type body](body.md)
   The body text you provide for a message.
+- [object BulletPoint](bulletpoint.md)
+  The text and its bullet-point image to include in a retention message’s bulleted list.
+- [type bulletPointText](bulletpointtext.md)
+  The text you provide for an individual bullet-list item.
 - [type header](header.md)
-  The header text you provide for a message.
+  The header text you provide that appears above the body text in a message.
+- [type headerPosition](headerposition.md)
+  The position where the header text appears in a message.
 
 
 ---

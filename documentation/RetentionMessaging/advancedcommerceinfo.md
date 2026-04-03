@@ -6,7 +6,7 @@
 A response object you provide to present an offer or switch-plan recommendation message.
 
 **Availability**:
-- Retention Messaging 1.2+
+- Retention Messaging API 1.2+
 
 ## Declaration
 
